@@ -22,13 +22,33 @@ jobs:
         echo "$PRIVATE_KEY" > private_key.pem
         chmod 600 private_key.pem
         
-        ssh -o StrictHostKeyChecking=no -i private_key.pem ${USER}@${HOST} << 'ENDSSH'
-          cd ~/Mytutor
-          git pull origin main
-          docker-compose down
+        ssh -o StrictHostKeyChecking=no -i private_key.pem ${USER}@${HOST} "
+          # Ensure directory exists
+          if [ ! -d ~/Mytutor ]; then
+            echo 'Directory missing. Cloning repo...'
+            git clone https://github.com/${{ github.repository }}.git ~/Mytutor
+          fi
+          
+          # Force fix ownership if needed (just in case)
+          # sudo chown -R ubuntu:ubuntu ~/Mytutor
+
+          # Go to directory
+          cd ~/Mytutor || exit 1
+          
+          # Reset and Pull
+          echo 'Updating code...'
+          git fetch origin
+          git reset --hard origin/main
+          
+          # Write Env File
+          echo 'Writing .env file...'
+          echo 'OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}' > backend/.env
+
+          # Restart Docker
+          echo 'Restarting containers...'
+          docker-compose down || true
           docker-compose up --build -d
-          echo "Deployment completed!"
           docker-compose ps
-        ENDSSH
+        "
         
         rm -f private_key.pem
