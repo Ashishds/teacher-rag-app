@@ -255,7 +255,7 @@ function App() {
           )}
           <div ref={messagesEndRef} />
         </div>
-      </div>
+      </main>
 
       {/* Input Area */}
       <div className="border-t border-teal-500/10 bg-gradient-to-r from-slate-900/95 via-gray-900/95 to-slate-900/95 backdrop-blur-xl shadow-2xl">
