@@ -6,7 +6,7 @@ function App() {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: "Hello! I'm your AI Tutor 🎓\n\nAsk me anything about the lecture, and I'll explain it just like Shudhansu Sir would!",
+      content: "Hello! I'm your AI Tutor 🎓\n\nAsk me anything about GenAI, and I'll explain it just like Sudhanshu Sir would!",
       sources: []
     }
   ])
@@ -141,7 +141,7 @@ function App() {
               />
             </div>
             <h1 className="text-3xl sm:text-5xl font-bold bg-gradient-to-r from-teal-300 via-cyan-300 to-teal-300 bg-clip-text text-transparent drop-shadow-lg">
-              Learn GenAI With Shudhansu Sir
+              Learn GenAI With Sudhanshu Sir
             </h1>
           </div>
           <div className="flex justify-center">
@@ -156,7 +156,7 @@ function App() {
       </header>
 
       {/* Chat Area */}
-      <div className="flex-1 overflow-y-auto">
+      <main className="flex-1 overflow-y-auto">
         <div className="max-w-5xl mx-auto px-4 sm:px-8 py-8 sm:py-10 space-y-8">
           {messages.map((msg, index) => (
             <div

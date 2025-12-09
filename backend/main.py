@@ -154,9 +154,9 @@ async def query_lecture(request: QueryRequest):
             # Handle casual conversation without RAG
             async def generate_casual():
                 casual_responses = {
-                    'greeting': "Hello! I'm your AI Tutor, here to help you learn from Shudhansu Sir's lectures. Feel free to ask me anything about Generative AI, RAG, Fine-tuning, or any topic from the courses!",
+                    'greeting': "Hello! I'm your AI Tutor, here to help you learn from Sudhanshu Sir's lectures. Feel free to ask me anything about Generative AI, RAG, Fine-tuning, or any topic from the courses!",
                     'how_are_you': "I'm doing great, thank you for asking! I'm ready to help you understand any concepts from the lectures. What would you like to learn about today?",
-                    'who_are_you': "I'm an AI-powered tutor based on Shudhansu Sir's teaching style. I can help you understand concepts from the Generative AI courses by answering your questions using the lecture transcripts. How can I assist you?",
+                    'who_are_you': "I'm an AI-powered tutor based on Sudhanshu Sir's teaching style. I can help you understand concepts from the Generative AI courses by answering your questions using the lecture transcripts. How can I assist you?",
                     'thanks': "You're very welcome! If you have more questions, I'm always here to help. Keep learning!",
                     'bye': "Goodbye! Feel free to come back anytime you have questions. Happy learning!",
                     'ok': "Great! If you have any questions about the course material, just ask away!"
