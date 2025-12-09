@@ -1,0 +1,34 @@
+name: Deploy to AWS EC2
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Deploy to EC2
+      env:
+        PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
+        HOST: ${{ secrets.EC2_HOST }}
+        USER: ubuntu
+      run: |
+        echo "$PRIVATE_KEY" > private_key.pem
+        chmod 600 private_key.pem
+        
+        ssh -o StrictHostKeyChecking=no -i private_key.pem ${USER}@${HOST} << 'ENDSSH'
+          cd ~/Mytutor
+          git pull origin main
+          docker-compose down
+          docker-compose up --build -d
+          echo "Deployment completed!"
+          docker-compose ps
+        ENDSSH
+        
+        rm -f private_key.pem

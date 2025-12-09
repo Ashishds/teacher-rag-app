@@ -1,0 +1,6230 @@
+WEBVTT
+
+00:04:43.250 --> 00:04:46.230
+Okay, so hi everyone. Good evening. I think I'm audible and
+
+00:04:46.230 --> 00:04:48.610
+visible to all of you. Yeah, so please confirm in chat guys
+
+00:04:48.610 --> 00:04:52.330
+if I'm audible and visible to all of you. So that we can
+
+00:04:52.330 --> 00:04:52.970
+start with the class.
+
+00:04:59.710 --> 00:05:03.430
+Jatin is saying not visible. Is it? Am I audible and visible
+
+00:05:03.430 --> 00:05:03.650
+guys?
+
+00:05:08.940 --> 00:05:10.560
+Okay, visible now. Fine.
+
+00:05:13.530 --> 00:05:17.390
+Okay, so basically we'll try to understand and we'll try to
+
+00:05:17.390 --> 00:05:20.010
+talk about rest of the questions. So I believe we talked
+
+00:05:20.010 --> 00:05:26.010
+about question till 1.30. I believe in last class. So we'll
+
+00:05:26.010 --> 00:05:28.630
+try to start from 1.31 question.
+
+00:05:31.770 --> 00:05:35.470
+And I'll try to give my version of an answer. Apart from
+
+00:05:35.470 --> 00:05:38.510
+that, so I have already prepared write-ups for each and
+
+00:05:38.510 --> 00:05:41.830
+every question. So I'm just trying to, you know, realign all
+
+00:05:41.830 --> 00:05:44.650
+those write-ups. Starting from question number 1 till
+
+00:05:44.650 --> 00:05:50.390
+question number 200. So maybe soon, like in next like 2-3
+
+00:05:50.390 --> 00:05:53.410
+days. Once I will end up doing my vetting and polygamy.
+
+00:05:53.430 --> 00:05:57.070
+Placing of those questions and answer in write-ups. Because
+
+00:05:57.070 --> 00:05:59.590
+in write-ups I'm trying to add couple of more things. Couple
+
+00:05:59.590 --> 00:06:03.590
+of more examples. So I will be sharing those answers with
+
+00:06:03.590 --> 00:06:05.710
+all of you inside the dashboard. As well as inside your
+
+00:06:05.710 --> 00:06:09.350
+WhatsApp group. So that will be available. So that in an
+
+00:06:09.350 --> 00:06:12.130
+emergency, whenever you are going for an interview. And if
+
+00:06:12.130 --> 00:06:14.850
+you're looking for a quick revision. So you all can do a
+
+00:06:14.850 --> 00:06:17.970
+quick revision from your side. That's a part number 1. Part
+
+00:06:17.970 --> 00:06:21.930
+number 2. So even like last week, so many people have sent
+
+00:06:21.930 --> 00:06:27.730
+me their. Resume for verifications and just to do a cross
+
+00:06:27.730 --> 00:06:30.170
+-check. So almost all this resume verification is done.
+
+00:06:30.610 --> 00:06:35.950
+Those who have not sent it to me on my personal DM. Feel
+
+00:06:35.950 --> 00:06:39.510
+free to send me your resume. So that, you know, I can guide
+
+00:06:39.510 --> 00:06:42.110
+you. I can try to advise you. We can try to make a
+
+00:06:42.110 --> 00:06:44.430
+correction inside your resume. And then we can try to
+
+00:06:44.430 --> 00:06:49.910
+finalize it. Part number 2. Part number 3. So those who are
+
+00:06:49.910 --> 00:06:55.490
+available for a mock interview. You can DM me. So that we
+
+00:06:55.490 --> 00:06:59.470
+can go ahead with the mock interview. I have seen like many
+
+00:06:59.470 --> 00:07:02.810
+people are, you know, afraid of like doing a mock interview.
+
+00:07:04.190 --> 00:07:07.070
+They, they were, I was, I was talking to so many people. And
+
+00:07:07.070 --> 00:07:11.130
+they said that, that maybe I need some time. Or maybe my
+
+00:07:11.130 --> 00:07:13.990
+preparation is not done. Maybe I'm not confident. Maybe I
+
+00:07:13.990 --> 00:07:18.590
+have to go through all the questions. And a topic and the
+
+00:07:18.590 --> 00:07:23.410
+chapters for a revision. I think. We all have to do a mock
+
+00:07:23.410 --> 00:07:24.910
+interview. We all should go ahead with a mock interview. So
+
+00:07:24.910 --> 00:07:26.570
+that, you know, you will be able to get some sort of
+
+00:07:26.570 --> 00:07:30.590
+experience. Maybe not with me. If you want. Maybe with
+
+00:07:30.590 --> 00:07:33.290
+Avani. You can try to go ahead with the interview first.
+
+00:07:33.670 --> 00:07:36.890
+Right. Because it's a system. So, again, system is not going
+
+00:07:36.890 --> 00:07:40.390
+to judge you. There is a high possibility that as a human, I
+
+00:07:40.390 --> 00:07:43.050
+will end up judging you. But system will not do that. Right.
+
+00:07:43.590 --> 00:07:45.910
+So, and, and you can, you can try to go ahead with the
+
+00:07:45.910 --> 00:07:50.710
+interview anytime you want. Maybe at 4am. Like, it's
+
+00:07:50.710 --> 00:07:53.190
+completely fine. Because Avani is a system. And it will be
+
+00:07:53.190 --> 00:07:56.690
+available. And if you want me to take your mock interview,
+
+00:07:56.970 --> 00:08:02.490
+then DM me. Yeah. Just DM me. And I think I'm a part of your
+
+00:08:02.490 --> 00:08:06.070
+group. So, you have my number. You can just DM me that I'm
+
+00:08:06.070 --> 00:08:09.530
+interested in giving a mock interview. And I will be
+
+00:08:09.530 --> 00:08:12.250
+available at this time. So, whatever time you are going to
+
+00:08:12.250 --> 00:08:16.630
+choose. So, we'll try to check my own calendar. And if we
+
+00:08:16.630 --> 00:08:20.010
+are able to find out some slots. So, obviously, we can try
+
+00:08:20.010 --> 00:08:23.530
+to go ahead with the mock interview. Fine, guys. Anyone?
+
+00:08:24.210 --> 00:08:27.910
+Anyone who would like to go for the mock interview? Yeah.
+
+00:08:28.110 --> 00:08:31.010
+Anil, Laseed, Bharat, Vishwi, Dhaneshwar, Gahla, Jatin,
+
+00:08:31.170 --> 00:08:40.900
+Jitender, Sumit, Visala and all. Yeah. Okay. Let's see. I
+
+00:08:40.900 --> 00:08:44.380
+know it's a tough call for most of us to go ahead with the
+
+00:08:44.380 --> 00:08:47.460
+mock interview. But yeah. I believe you should plan for
+
+00:08:47.460 --> 00:08:52.300
+that. It will be fun. Okay. Now, let me share my screen. And
+
+00:08:52.300 --> 00:08:58.860
+let's start talking about question and answer. Okay. So,
+
+00:09:08.200 --> 00:09:15.620
+we have discussed till 1 30th. Okay. Fine. So, here again,
+
+00:09:15.740 --> 00:09:19.980
+we have 70 questions left and most probably all the
+
+00:09:19.980 --> 00:09:23.480
+questions we will end up discussing today itself because in
+
+00:09:23.480 --> 00:09:28.160
+these sections, so two sections are tech sections and rest
+
+00:09:28.160 --> 00:09:31.240
+of the sections are technically a kind of a non-tech or you
+
+00:09:31.240 --> 00:09:35.380
+can say a managerial or decision making kind of a section
+
+00:09:35.380 --> 00:09:39.200
+you will be able to find out. So, again, if I'll talk about
+
+00:09:39.200 --> 00:09:42.060
+these questions, so these questions are for senior people
+
+00:09:42.060 --> 00:09:45.680
+and mostly it's an experience-based question. So, when you
+
+00:09:45.680 --> 00:09:48.020
+are a manager, when you are director or when you are like
+
+00:09:48.020 --> 00:09:53.420
+trying to maybe handle some of the COEs inside a company, so
+
+00:09:53.420 --> 00:09:56.720
+in that case, people are going to ask you this question and
+
+00:09:56.720 --> 00:10:01.580
+mostly they will try to not check your expertise in AI but
+
+00:10:01.580 --> 00:10:06.420
+yes, your expertise as a manager or maybe as a stakeholder.
+
+00:10:06.540 --> 00:10:09.820
+Okay. So, that is something that is given over here. So, the
+
+00:10:09.820 --> 00:10:12.740
+very first question says that how do you lead a generative
+
+00:10:12.740 --> 00:10:16.900
+AI transformation in Fortune 500 company? Maybe not Fortune
+
+00:10:16.900 --> 00:10:19.660
+500 company, that's okay. Maybe like a big four or something
+
+00:10:19.660 --> 00:10:23.040
+like that or maybe some product-based companies. So, how you
+
+00:10:23.040 --> 00:10:25.920
+are going to lead this generative AI transformation? So, as
+
+00:10:25.920 --> 00:10:29.680
+we all know that every company is trying to adopt AI, right?
+
+00:10:29.840 --> 00:10:34.680
+And maybe whatever whatsoever is the result but yeah, many
+
+00:10:34.680 --> 00:10:39.120
+companies are trying to adopt AI in their own domain and
+
+00:10:39.120 --> 00:10:42.060
+maybe for a client, maybe for their own product. So,
+
+00:10:42.120 --> 00:10:47.140
+whenever you have to do this kind of a transformation, AI
+
+00:10:47.140 --> 00:10:49.720
+transformation or more precisely a generative AI
+
+00:10:49.720 --> 00:10:54.740
+transformation, then what should be your roadmap or what
+
+00:10:54.740 --> 00:10:58.820
+will be like the things that you are going to start with
+
+00:10:58.820 --> 00:11:02.900
+basically. So, let's suppose there is no AI concept inside
+
+00:11:02.900 --> 00:11:06.320
+your company and there is no team which is available to do
+
+00:11:06.320 --> 00:11:10.020
+this kind of implementation and management has given you a
+
+00:11:10.020 --> 00:11:14.000
+charge of this entire COE, a center of excellence
+
+00:11:14.000 --> 00:11:18.380
+establishment. So, what you are going to do or what you have
+
+00:11:18.380 --> 00:11:21.480
+done because many of you as a manager are going to mention
+
+00:11:21.480 --> 00:11:25.460
+that I was the very first one who have done this AI
+
+00:11:25.460 --> 00:11:28.460
+transformation in my company and obviously as a senior, we
+
+00:11:28.460 --> 00:11:32.220
+does that, right? We all do that. So, anyone and everyone
+
+00:11:32.220 --> 00:11:34.940
+who is having more than 10, 12 years of experience, your
+
+00:11:34.940 --> 00:11:37.980
+company may ask you that okay, so we are looking for a AI
+
+00:11:37.980 --> 00:11:41.460
+adoption, we are looking for a gen AI adoption maybe. So,
+
+00:11:41.580 --> 00:11:44.340
+it's your responsibility. So, let's try to create a plan,
+
+00:11:44.540 --> 00:11:46.980
+let's try to build a team for that, let's try to do a
+
+00:11:46.980 --> 00:11:51.780
+budgeting for that, let's try to identify the loopholes,
+
+00:11:51.940 --> 00:11:55.140
+let's try to identify what we can do best for our customer
+
+00:11:55.140 --> 00:11:58.260
+so that at the end of the day, company will be able to
+
+00:11:58.260 --> 00:12:02.440
+increase their businesses, right? So, this is a kind of a
+
+00:12:02.440 --> 00:12:05.820
+responsibility you all will be able to get. Now, whenever
+
+00:12:05.820 --> 00:12:08.940
+you have to lead this kind of a transformation, so again,
+
+00:12:08.960 --> 00:12:12.220
+there is no thumb rule that okay, I will just go ahead in
+
+00:12:12.220 --> 00:12:15.700
+that way. So, the very first part is let's suppose if
+
+00:12:15.700 --> 00:12:19.000
+someone has given me this responsibility, what I will do in
+
+00:12:19.000 --> 00:12:22.440
+a very first place. So, in a very first place, I will try to
+
+00:12:22.440 --> 00:12:25.120
+understand my business or maybe I already have understanding
+
+00:12:25.120 --> 00:12:28.200
+about a business because I am a part of company. So, I will
+
+00:12:28.200 --> 00:12:31.580
+try to understand my client because see, at the end of the
+
+00:12:31.580 --> 00:12:35.040
+day, it's not about building a fancy use cases. Fancy use
+
+00:12:35.040 --> 00:12:38.380
+cases, why we all can build, end up doing or we all can end
+
+00:12:38.380 --> 00:12:41.160
+up building maybe a thousands of fancy use cases which is of
+
+00:12:41.160 --> 00:12:44.760
+no use maybe, right? And everyone can do it, right? Because
+
+00:12:44.760 --> 00:12:47.540
+it's very easy to build those fancy use cases and burn
+
+00:12:47.540 --> 00:12:50.500
+money. When you are not burning your own money, basically
+
+00:12:50.500 --> 00:12:53.260
+it's a company's money. So, it's very easy. But again, at
+
+00:12:53.260 --> 00:12:55.540
+the end of the day, company will not be able to get any kind
+
+00:12:55.540 --> 00:12:58.400
+of advantage. So, first of all, what I will do, I can try to
+
+00:12:58.400 --> 00:13:01.080
+understand deeper and deeper about my client, about my
+
+00:13:01.080 --> 00:13:05.820
+product. Basically, it's called as. Identifying basically a
+
+00:13:05.820 --> 00:13:11.400
+high value use cases and then based on those high value use
+
+00:13:11.400 --> 00:13:15.420
+cases, I will try to assemble a team. I will try to assemble
+
+00:13:15.420 --> 00:13:18.240
+maybe a junior developer, maybe I will try to assemble a big
+
+00:13:18.240 --> 00:13:21.400
+data engineer, maybe a data scientist, maybe some of the
+
+00:13:21.400 --> 00:13:24.080
+geni engineer because I am going for experimentation, right?
+
+00:13:24.140 --> 00:13:26.540
+So, I need every kind of a people in my team, maybe one,
+
+00:13:26.620 --> 00:13:29.840
+one, one, one, one. So, every kind of expertise inside my
+
+00:13:29.840 --> 00:13:33.120
+team, a small team, maybe a team of 8 to 10 people, this.
+
+00:13:33.900 --> 00:13:37.000
+So, any kind of a COE generally we try to start, a center of
+
+00:13:37.000 --> 00:13:39.980
+excellence in any company we try to start. So, maybe I will
+
+00:13:39.980 --> 00:13:45.540
+try to build a team of 8 to 10 people. So, some are coming
+
+00:13:45.540 --> 00:13:47.940
+from a product development background, some of them are
+
+00:13:47.940 --> 00:13:49.940
+coming from a big data background, some of them are coming
+
+00:13:49.940 --> 00:13:52.640
+from a core data science background, some of them are coming
+
+00:13:52.640 --> 00:13:55.200
+from a core generative AI background. So, this kind of a
+
+00:13:55.200 --> 00:13:59.420
+mixture of the team I am going to build after identifying
+
+00:13:59.420 --> 00:14:02.100
+the high value use cases with respect to my client, with
+
+00:14:02.100 --> 00:14:05.740
+respect to my product. And then obviously I will try to
+
+00:14:05.740 --> 00:14:10.700
+design or I will try to create a road map for some of the
+
+00:14:10.700 --> 00:14:14.740
+pilots. Again, this is something that we all do in a next
+
+00:14:14.740 --> 00:14:17.640
+step. So, we will try to define some sort of a pilots or
+
+00:14:17.640 --> 00:14:21.420
+maybe some sort of MVPs we can say, a minimum viable product
+
+00:14:21.420 --> 00:14:25.720
+which is aligned with my company's motto or maybe with my
+
+00:14:25.720 --> 00:14:28.900
+client's product or service which I am trying to sell it to
+
+00:14:28.900 --> 00:14:33.520
+them. Because, for me. For me, my existing customer will be
+
+00:14:33.520 --> 00:14:36.760
+my first customer, again, my first customer for my new
+
+00:14:36.760 --> 00:14:40.060
+experimentation. So, maybe I can go to them and I can try to
+
+00:14:40.060 --> 00:14:42.940
+show them that, okay, so maybe this is the new approach
+
+00:14:42.940 --> 00:14:45.600
+which we are planning to adopt for your product and we are
+
+00:14:45.600 --> 00:14:49.140
+going to charge XYZ amount for this one. Will you be
+
+00:14:49.140 --> 00:14:52.320
+interested in terms of like, you know, taking a demo or
+
+00:14:52.320 --> 00:14:55.080
+maybe if I can give you, if I can talk about maybe a benefit
+
+00:14:55.080 --> 00:14:59.720
+about it, maybe we are going to cut down a cost by 10%, 20%.
+
+00:14:59.720 --> 00:15:03.300
+Maybe we are going to, you know. Increase your revenue by
+
+00:15:03.300 --> 00:15:06.220
+implementing these things or maybe we will be able to
+
+00:15:06.220 --> 00:15:10.160
+decrease our time. So, always it's not about a revenue. So,
+
+00:15:10.240 --> 00:15:13.780
+sometime we try to cut short even an effort. Sometime we try
+
+00:15:13.780 --> 00:15:16.980
+to, you know, cut short expenses. Sometime we try to
+
+00:15:16.980 --> 00:15:20.940
+generate more revenue. Sometime we will end up giving a more
+
+00:15:20.940 --> 00:15:25.380
+beautiful or better user experience to the user. Sometime we
+
+00:15:25.380 --> 00:15:27.740
+try to decrease the complete timeline in terms of a
+
+00:15:27.740 --> 00:15:30.320
+delivery. Again, all of these things are basically a USP.
+
+00:15:30.320 --> 00:15:33.080
+And you can play on all of, any of these things, right. So
+
+00:15:33.080 --> 00:15:36.760
+you can just go and convince people. So first part, identify
+
+00:15:36.760 --> 00:15:39.800
+the high value targets. Second, build a team, maybe team of
+
+00:15:39.800 --> 00:15:42.660
+Avengers, 8 to 10 people, right. Not more than that. And
+
+00:15:42.660 --> 00:15:45.920
+third thing, so build some sort of a pilot or maybe like
+
+00:15:45.920 --> 00:15:49.720
+some sort of a MVPs or POCs. Again that should be aligned
+
+00:15:49.720 --> 00:15:53.880
+with respect to your client and company's goal. And then
+
+00:15:53.880 --> 00:15:58.420
+maybe a fourth one. So when your MVPs are successful. When
+
+00:15:58.420 --> 00:16:02.400
+your entire like a pilot. It is done. Then you are supposed
+
+00:16:02.400 --> 00:16:06.640
+to build a governance around it. And then this COE. So
+
+00:16:06.640 --> 00:16:10.320
+basically you have to expand this COE now across all the
+
+00:16:10.320 --> 00:16:14.340
+other team member or other other team or other product that
+
+00:16:14.340 --> 00:16:16.140
+you have inside your company. So this is something that I
+
+00:16:16.140 --> 00:16:20.020
+will do if someone is going to ask me for a generative AI
+
+00:16:20.020 --> 00:16:23.140
+transformation. Now next question says that what is your
+
+00:16:23.140 --> 00:16:25.760
+approach of building a generative AI center of excellence?
+
+00:16:25.960 --> 00:16:28.700
+It's the same, the previous one, right. So basically. Like.
+
+00:16:29.160 --> 00:16:32.740
+I'll try to identify the problem statement, build a team and
+
+00:16:32.740 --> 00:16:37.420
+then maybe like go ahead with some sort of a pilot basically
+
+00:16:37.420 --> 00:16:40.040
+over there, which is aligned with my clients and company's
+
+00:16:40.040 --> 00:16:44.120
+product. And then like if I'm able to successfully build it,
+
+00:16:44.160 --> 00:16:47.480
+if my client, one client is happy, maybe I'll try to go for
+
+00:16:47.480 --> 00:16:49.960
+the scale that, okay, fine. So if one client is happy, maybe
+
+00:16:49.960 --> 00:16:52.840
+I can try to propose the same thing to my other clients as
+
+00:16:52.840 --> 00:16:56.320
+well, or maybe in my other product line as well. So this is
+
+00:16:56.320 --> 00:17:00.060
+something that I'm going to do it. Now. One of the 133rd
+
+00:17:00.060 --> 00:17:02.460
+number questions says that, that how do you develop a
+
+00:17:02.460 --> 00:17:06.960
+generic strategy for a different business unit? Okay. So
+
+00:17:06.960 --> 00:17:10.820
+again, not a kind of a thumb rule. So maybe I'll, I'll try
+
+00:17:10.820 --> 00:17:13.520
+to like, you know, uh, give some sort of example over here
+
+00:17:13.520 --> 00:17:16.940
+that how I have done that. So here, a question simply states
+
+00:17:16.940 --> 00:17:20.200
+that how do you develop a generic strategy for a different
+
+00:17:20.200 --> 00:17:25.460
+business unit? Right. So, uh, let's, let's suppose, uh, in
+
+00:17:25.460 --> 00:17:28.900
+my company. So I have a sales team. Then I have a marketing
+
+00:17:28.900 --> 00:17:32.800
+team and then maybe I have a product team, right? And then
+
+00:17:32.800 --> 00:17:37.380
+maybe I have a team who try to manage a client or who try to
+
+00:17:37.380 --> 00:17:40.120
+discover a new business opportunity into a different,
+
+00:17:40.180 --> 00:17:43.080
+different reason into a different, different, like a domain.
+
+00:17:43.280 --> 00:17:47.720
+Right? So if I have to develop a generative strategy across
+
+00:17:47.720 --> 00:17:51.180
+our different, different team, or this is a team label right
+
+00:17:51.180 --> 00:17:53.680
+now, there will be, there could be another label on a
+
+00:17:53.680 --> 00:17:55.800
+product label basically. So I have a multiple product line
+
+00:17:55.800 --> 00:17:58.900
+and maybe across a product line. If I have to, uh, like, uh,
+
+00:17:58.920 --> 00:18:01.760
+you know, introduce some sort of a generative AI strategy,
+
+00:18:01.860 --> 00:18:05.560
+um, even for HR, even for finance. If I have to introduce a
+
+00:18:05.560 --> 00:18:09.800
+generative AI strategy and, uh, if someone has given me a
+
+00:18:09.800 --> 00:18:12.900
+responsibility, so maybe let's suppose I'll, I'll go to HR,
+
+00:18:13.100 --> 00:18:15.660
+right? I'll go to HR head. I'll go to my finance head.
+
+00:18:15.780 --> 00:18:18.340
+Basically, I'll go to my sales head. I'll go to my marketing
+
+00:18:18.340 --> 00:18:21.260
+head because in every company, these people will be there,
+
+00:18:21.300 --> 00:18:24.340
+right? These units will be there and that too in a massive
+
+00:18:24.340 --> 00:18:27.200
+manner, you will be able to see because, uh, when we talk
+
+00:18:27.200 --> 00:18:30.460
+about a company, so companies, uh, backbones are basically
+
+00:18:30.460 --> 00:18:33.120
+these departments, your HR, your sales, your marketing, your
+
+00:18:33.120 --> 00:18:36.080
+finance, maybe your product. In every company you will be
+
+00:18:36.080 --> 00:18:40.340
+able to find out. So here, uh, if someone has given me to
+
+00:18:40.340 --> 00:18:43.420
+drive this AI initiative or generative AI initiative in my
+
+00:18:43.420 --> 00:18:47.000
+company, I'll just go to HR head and I know that, uh, they
+
+00:18:47.000 --> 00:18:50.320
+must be using their legacy things, right? Because HR will
+
+00:18:50.320 --> 00:18:53.100
+never care about the generative AI, right? So they know
+
+00:18:53.100 --> 00:18:55.040
+that, that, okay, fine. So I have to close the hiring. I
+
+00:18:55.040 --> 00:18:56.780
+have to onboard a people. Right? So my little sales team
+
+00:18:56.780 --> 00:18:58.940
+knows that, okay, fine, so I'll get a lead and then I'll
+
+00:18:58.940 --> 00:19:02.460
+have to like make a sales in a B2B mode or maybe into a D2C
+
+00:19:02.460 --> 00:19:05.860
+mode. Uh, my finance team, again, they will keep on like
+
+00:19:05.860 --> 00:19:10.000
+using their existing tool. So if my company has asked me to
+
+00:19:10.000 --> 00:19:13.300
+initiate these things across a different, different team
+
+00:19:13.300 --> 00:19:15.660
+member, so obviously I'll just try to connect with all the
+
+00:19:15.660 --> 00:19:17.880
+business head. I'll say that, that, okay, so maybe in a
+
+00:19:17.880 --> 00:19:20.620
+finance, so maybe we can do some sort of a cost cutting.
+
+00:19:20.720 --> 00:19:23.820
+Maybe we can try to like fast track the process, maybe we
+
+00:19:23.820 --> 00:19:26.500
+can try to like, uh, you know, initiate a best and robust
+
+00:19:26.500 --> 00:19:30.400
+process for your entire finance or maybe a approval, uh,
+
+00:19:30.640 --> 00:19:33.700
+that, that you guys are doing as of now in terms of our
+
+00:19:33.700 --> 00:19:37.660
+finance. And then I can, I can just discuss their problems
+
+00:19:37.660 --> 00:19:40.900
+basically that what is the problem that you solve and uh,
+
+00:19:41.080 --> 00:19:45.340
+what is your flow in terms of giving approval in terms of
+
+00:19:45.340 --> 00:19:47.700
+making a payment in terms of, you know, maintaining the
+
+00:19:47.700 --> 00:19:50.980
+invoices and many more things, right? And many more things.
+
+00:19:51.140 --> 00:19:55.360
+And then I can try to propose a solution that, okay. So this
+
+00:19:55.360 --> 00:19:57.900
+is a solution which we can try to build for our finance
+
+00:19:57.900 --> 00:20:00.980
+team. Now this is the advantages I will be able to do. And
+
+00:20:00.980 --> 00:20:03.240
+in every company you will be able to find out that people
+
+00:20:03.240 --> 00:20:06.420
+are doing it. See finance guy will never talk about the AI,
+
+00:20:06.560 --> 00:20:10.340
+right? Or maybe any technological advancement, right? It's a
+
+00:20:10.340 --> 00:20:15.080
+COE, it's a business head who always try to drive this kind
+
+00:20:15.080 --> 00:20:18.100
+of a process and says that that, okay, I'll like initiate
+
+00:20:18.100 --> 00:20:21.280
+this process and maybe I'll try to do a cost cutting. And
+
+00:20:21.280 --> 00:20:24.660
+obviously if we are talking about cost cutting, or maybe we
+
+00:20:24.660 --> 00:20:28.320
+are talking about, uh, something which is going to reduce a
+
+00:20:28.320 --> 00:20:31.180
+timeline, that is again, eventually get converted into a
+
+00:20:31.180 --> 00:20:34.800
+cost cutting itself. Company will be very happy with me. So
+
+00:20:34.800 --> 00:20:37.560
+I'll just go to finance guy and I'll try to smoothen up the
+
+00:20:37.560 --> 00:20:41.160
+process. Same I'll do with HR, right? See HR, HR will never
+
+00:20:41.160 --> 00:20:44.460
+talk about, uh, ATS kind of a system, right? But every
+
+00:20:44.460 --> 00:20:46.820
+company has introduced it. So there must be some guy. So
+
+00:20:46.820 --> 00:20:51.260
+who, who, you know, who has, uh, like done something with
+
+00:20:51.260 --> 00:20:53.680
+respect to this HR department. And they said, okay, let's do
+
+00:20:53.680 --> 00:20:55.460
+this. So I said that, okay, so you guys are spending a lot
+
+00:20:55.460 --> 00:20:58.460
+of time in terms of screening the resume and maybe that too
+
+00:20:58.460 --> 00:21:01.240
+in a biased way sometime. So let's do one thing. So let's
+
+00:21:01.240 --> 00:21:04.080
+try to induce a ATS system in between, right? Let's try to
+
+00:21:04.080 --> 00:21:06.300
+smoothen up the entire hiring process. Maybe you are not
+
+00:21:06.300 --> 00:21:08.980
+even supposed to take a couple of round of interview system
+
+00:21:08.980 --> 00:21:12.480
+itself. We can do it. Any kind of a system, right? So which
+
+00:21:12.480 --> 00:21:14.520
+will go and which will try to take a candidate's interview
+
+00:21:14.520 --> 00:21:17.880
+so that, you know, we'll be able to save a lots and lots of
+
+00:21:17.880 --> 00:21:22.000
+man hours, right? Because if someone is going to take an
+
+00:21:22.000 --> 00:21:25.160
+interview from any teams. We are spending money, companies
+
+00:21:25.160 --> 00:21:27.740
+spending money, right? Because even if like one hour,
+
+00:21:27.820 --> 00:21:30.940
+someone, some, some of the person is just spending from any
+
+00:21:30.940 --> 00:21:35.560
+team across a company. It's a huge, huge loss for a company
+
+00:21:35.560 --> 00:21:38.200
+or it's, it's not a loss I would say, but yeah, it gives a
+
+00:21:38.200 --> 00:21:41.780
+cost. And eventually if we are not able to get a return ROI
+
+00:21:41.780 --> 00:21:45.260
+of that, so it's, it's a loss for me. So I can, I can go
+
+00:21:45.260 --> 00:21:47.280
+ahead and I can try to introduce it. Same thing will go with
+
+00:21:47.280 --> 00:21:49.620
+the sales that, okay, let's automate the entire process,
+
+00:21:49.720 --> 00:21:53.520
+right? Let's try to introduce some of the initial sales.
+
+00:21:53.680 --> 00:21:55.780
+Let's try to introduce a sales chat agent or maybe a sales
+
+00:21:55.780 --> 00:21:59.400
+voice agent. If I'll go to a marketing team, I'll simply say
+
+00:21:59.400 --> 00:22:01.880
+that, that why you're keeping maybe a hundred people, right?
+
+00:22:01.940 --> 00:22:04.560
+In terms of running a campaigns in terms of, you know, uh,
+
+00:22:04.640 --> 00:22:07.880
+creating a collaterals or maybe a assets for the marketing
+
+00:22:07.880 --> 00:22:11.200
+campaigns, what I can do, or maybe connecting with the other
+
+00:22:11.200 --> 00:22:14.480
+marketing guy from outside the company, or maybe giving a
+
+00:22:14.480 --> 00:22:16.500
+contract to someone because this is what happens in a
+
+00:22:16.500 --> 00:22:20.340
+marketing. So maybe we can try to, you know, uh, streamline
+
+00:22:20.340 --> 00:22:23.420
+the process and uh, maybe we can try to fast track the
+
+00:22:23.420 --> 00:22:26.040
+process with the help of AI. So my AI is going to create the
+
+00:22:26.040 --> 00:22:29.940
+entire funnel for you and then nowadays you will be able to
+
+00:22:29.940 --> 00:22:33.940
+find out that every company without any doubts, right? Every
+
+00:22:33.940 --> 00:22:38.960
+company is doing it on a massive level across a team because
+
+00:22:38.960 --> 00:22:43.000
+if you have to like a, you know, uh, like increase the
+
+00:22:43.000 --> 00:22:45.800
+profitability, so it's not just about making a more
+
+00:22:45.800 --> 00:22:50.600
+revenues, but even saving something that, that you can do it
+
+00:22:50.600 --> 00:22:53.980
+in a existing process itself. So this is what, uh, I will be
+
+00:22:53.980 --> 00:22:56.620
+like, uh, this is how I will be doing, uh, you know, uh,
+
+00:22:56.800 --> 00:22:59.880
+development start. I will be like, uh, defining the strategy
+
+00:22:59.880 --> 00:23:02.720
+for a different, different business unit inside my company.
+
+00:23:03.000 --> 00:23:05.680
+And whenever you are giving this example, so just take an
+
+00:23:05.680 --> 00:23:09.420
+example of at least one team that, okay. Uh, so a company
+
+00:23:09.420 --> 00:23:11.900
+has given me a responsibility for this finance task, right?
+
+00:23:12.100 --> 00:23:16.920
+So to identify all these frauds and then like a company was
+
+00:23:16.920 --> 00:23:19.260
+taking maybe three or four days of time in terms of
+
+00:23:19.260 --> 00:23:24.580
+processing those invoices or maybe a claim. Okay. So I have
+
+00:23:24.580 --> 00:23:28.720
+basically built on my team has basically built a generative
+
+00:23:28.720 --> 00:23:32.620
+AI or AI based solution. So which has streamlined the entire
+
+00:23:32.620 --> 00:23:34.800
+process. So previously there was a hundred people who was
+
+00:23:34.800 --> 00:23:37.500
+working now only two, three people are just maintaining it
+
+00:23:37.500 --> 00:23:40.960
+and my system is up and running like a hundred percent 24 by
+
+00:23:40.960 --> 00:23:44.380
+seven, right? So this is a kind of example you can try to
+
+00:23:44.380 --> 00:23:47.200
+give and obviously your interviewer, whoever is taking your
+
+00:23:47.200 --> 00:23:49.180
+interview, obviously some business people will be taking
+
+00:23:49.180 --> 00:23:52.100
+your interview who just understand the business. Not like a
+
+00:23:52.100 --> 00:23:55.200
+tech, uh, they will be very happy. Believe me, they will be
+
+00:23:55.200 --> 00:23:58.980
+very happy. Now what is the approach of, for securing a
+
+00:23:58.980 --> 00:24:05.680
+executive, um, buy-ins for, uh, generative AI? Sorry, what
+
+00:24:05.680 --> 00:24:10.160
+was that? Yeah. What is the approach for securing executive
+
+00:24:10.160 --> 00:24:16.620
+buy-in for gen AI? Okay. So executive buying means, uh,
+
+00:24:16.680 --> 00:24:18.600
+let's suppose if I'm trying to propose something to my
+
+00:24:18.600 --> 00:24:22.000
+management, uh, right. And they should say yes, right? All
+
+00:24:22.000 --> 00:24:25.000
+the executives would say yes. So obviously I'll just try to
+
+00:24:25.000 --> 00:24:27.020
+start with the storytelling story is the best way to
+
+00:24:27.020 --> 00:24:30.720
+convince anyone. And obviously, uh, we all sell the stories.
+
+00:24:30.920 --> 00:24:33.680
+So I'll just go ahead, I'll say that, that, okay, we have
+
+00:24:33.680 --> 00:24:36.960
+done this small MVPs and it was very much successful, uh,
+
+00:24:37.060 --> 00:24:40.300
+with maybe a 90% result, we were able to reduce a cost by
+
+00:24:40.300 --> 00:24:44.360
+20, 30% over there. Uh, we were able to even like, uh, we
+
+00:24:44.360 --> 00:24:46.640
+have seen some sort of a feedback from a customer, which was
+
+00:24:46.640 --> 00:24:50.060
+amazing. And maybe you can, you can just talk about the real
+
+00:24:50.060 --> 00:24:55.220
+story and this is how we all, you know, uh, impresses
+
+00:24:55.220 --> 00:24:59.300
+anyone, any, any like a board basically. Right. Uh, then how
+
+00:24:59.300 --> 00:25:01.540
+do you manage generative AI project with the multiple
+
+00:25:01.540 --> 00:25:04.400
+stakeholder? Yeah. So on this level, so let's suppose if
+
+00:25:04.400 --> 00:25:06.480
+you're on an executive position or maybe on a manager
+
+00:25:06.480 --> 00:25:08.660
+position, so it's not like you will be running only one
+
+00:25:08.660 --> 00:25:10.480
+project, so you will be running multiple projects
+
+00:25:10.480 --> 00:25:14.820
+parallelly. And again, so multiple leads are going to report
+
+00:25:14.820 --> 00:25:17.040
+you. So how do you manage? How do you manage generative AI
+
+00:25:17.040 --> 00:25:21.500
+project with the multiple stake holder? So basically, uh,
+
+00:25:21.840 --> 00:25:24.600
+uh, the very first question, which I have already answered,
+
+00:25:24.740 --> 00:25:27.360
+right? So here we are going to build a team, right? A small
+
+00:25:27.360 --> 00:25:30.900
+team by the way. And once I'm going to like, uh, do the
+
+00:25:30.900 --> 00:25:34.060
+experimentation, uh, maybe my MVPs or maybe my pilot
+
+00:25:34.060 --> 00:25:37.000
+project, if I'm able to do it. So obviously I have to spread
+
+00:25:37.000 --> 00:25:39.340
+across a different, different, different, different team
+
+00:25:39.340 --> 00:25:46.000
+member, right? So if, uh, this entire COE is new, right?
+
+00:25:46.000 --> 00:25:49.080
+Center of excellence is new in my company, what I will do,
+
+00:25:49.160 --> 00:25:52.220
+maybe I can try to do some sort of a training and
+
+00:25:52.220 --> 00:25:55.040
+retraining. Every company does that, right? You must have
+
+00:25:55.040 --> 00:25:58.840
+seen that, that, uh, TCS has, you know, uh, trained, uh,
+
+00:25:59.080 --> 00:26:03.540
+one, uh, black people. Maybe, uh, this was the news. Uh, and
+
+00:26:03.540 --> 00:26:05.720
+every day you will be able to see that, that, uh, these
+
+00:26:05.720 --> 00:26:08.980
+companies have trained maybe their 10,000 employees or maybe
+
+00:26:08.980 --> 00:26:12.760
+like, uh, they're one lakh employees and, uh, something like
+
+00:26:12.760 --> 00:26:15.420
+that. Right? So basically everything starts from COEs. One
+
+00:26:15.420 --> 00:26:18.720
+division, one core division in every, uh, such kind of a
+
+00:26:18.720 --> 00:26:22.840
+companies. And then they try to spread across all the other
+
+00:26:22.840 --> 00:26:28.100
+domain and across all the other stake holdings. So here,
+
+00:26:28.180 --> 00:26:30.480
+what I will do, first of all, I'll try to organize a
+
+00:26:30.480 --> 00:26:33.880
+training. I'll try to give them a demo. I'll try to give
+
+00:26:33.880 --> 00:26:37.540
+them a clear idea that, okay, this is what we have done. Now
+
+00:26:37.540 --> 00:26:40.960
+you guys can go and you guys can try to identify that, uh,
+
+00:26:41.000 --> 00:26:43.780
+what can be, what can be done in your department with
+
+00:26:43.780 --> 00:26:45.980
+respect to your clients. With respect to the product that
+
+00:26:45.980 --> 00:26:49.360
+you are building with respect to the services that you are
+
+00:26:49.360 --> 00:26:54.160
+trying to, uh, deliver. Now once this part is done, right,
+
+00:26:54.240 --> 00:26:56.820
+once this part will be done because you have to go on a
+
+00:26:56.820 --> 00:26:59.360
+scale and you can't jump into every project as a, as a
+
+00:26:59.360 --> 00:27:03.380
+manager, right? Uh, or maybe as a director. So basically you
+
+00:27:03.380 --> 00:27:06.160
+can't be a part of like a thousands of project. You can't go
+
+00:27:06.160 --> 00:27:09.380
+and say that, that, okay, I'm a Superman and then I can, uh,
+
+00:27:09.440 --> 00:27:12.640
+handle all the projects on all the clients altogether. No,
+
+00:27:12.740 --> 00:27:17.660
+not going to work. Right? So I have to build people first in
+
+00:27:17.660 --> 00:27:20.840
+a company and I think this should be the answer that you
+
+00:27:20.840 --> 00:27:24.080
+should give that you always believe in a people. So you
+
+00:27:24.080 --> 00:27:27.000
+always follow a people first approach and you just go
+
+00:27:27.000 --> 00:27:30.600
+outside, go out and then build a people based on your
+
+00:27:30.600 --> 00:27:33.200
+experiences, based on your team experiences and obviously
+
+00:27:33.200 --> 00:27:36.820
+based on their experiences, right? So you build a team, you
+
+00:27:36.820 --> 00:27:39.760
+train the team, you transform the entire team across a
+
+00:27:39.760 --> 00:27:42.540
+different, different COEs, center of excellence or like a
+
+00:27:42.540 --> 00:27:47.120
+departments. And then you ask them to identify the problem
+
+00:27:47.120 --> 00:27:50.000
+in their department, in their domain, maybe in their
+
+00:27:50.000 --> 00:27:52.060
+product, maybe the services that they're trying to deliver.
+
+00:27:52.300 --> 00:27:56.300
+And then once they will come up with the plan, right, we'll
+
+00:27:56.300 --> 00:27:58.160
+discuss with the board and we try to go ahead with the
+
+00:27:58.160 --> 00:28:00.380
+approval or maybe a disapproval or maybe with the
+
+00:28:00.380 --> 00:28:05.420
+enhancement. So this is how I used to manage a multiple
+
+00:28:05.420 --> 00:28:11.460
+stake holder on a COE label right now there can be a
+
+00:28:11.460 --> 00:28:15.020
+multiple stakeholder. Okay. So even from a client side. So
+
+00:28:15.020 --> 00:28:17.780
+again, it's just one of the example on a COE label as we are
+
+00:28:17.780 --> 00:28:21.760
+talking about building a new department from this side, from
+
+00:28:21.760 --> 00:28:24.460
+question number 131 itself. So I'm just trying to give you
+
+00:28:24.460 --> 00:28:27.000
+an answer with respect to that. Again when we talk about a
+
+00:28:27.000 --> 00:28:29.400
+multiple stakeholder, so there can be a multiple stakeholder
+
+00:28:29.400 --> 00:28:32.940
+even in a single project, right, there can be a multiple
+
+00:28:32.940 --> 00:28:36.560
+stakeholder even across a service region or maybe across
+
+00:28:36.560 --> 00:28:40.920
+different countries, simple, but yeah, from this
+
+00:28:40.920 --> 00:28:44.540
+perspective, from building a new excellence. This is how I
+
+00:28:44.540 --> 00:28:47.160
+will do train, transform, believe on the people and then
+
+00:28:47.160 --> 00:28:50.860
+just forward the entire work that you have done as an
+
+00:28:50.860 --> 00:28:54.560
+experience to other people and let them do their job and
+
+00:28:54.560 --> 00:28:58.020
+they will just try to give you a reports and yeah, you have
+
+00:28:58.020 --> 00:29:00.760
+to present that report to your seniors. That's it. This is
+
+00:29:00.760 --> 00:29:04.580
+what we do. Now, what are the consideration for gen AI
+
+00:29:04.580 --> 00:29:09.260
+talent acquisition? A very important part, right, a very,
+
+00:29:09.300 --> 00:29:11.700
+very important part, I would say, because at the end of the
+
+00:29:11.700 --> 00:29:14.580
+day, you are building a company. You are building a team and
+
+00:29:14.580 --> 00:29:17.860
+the only thing which matters is the people. If you don't
+
+00:29:17.860 --> 00:29:20.480
+have a right people at right time in right place in right
+
+00:29:20.480 --> 00:29:24.380
+project, obviously projects are going to fail and you must
+
+00:29:24.380 --> 00:29:28.080
+be a part of many companies, right, or maybe it's your first
+
+00:29:28.080 --> 00:29:31.180
+company and as you will progress in a life, you will see
+
+00:29:31.180 --> 00:29:35.420
+that that many projects fails actually in a big, big
+
+00:29:35.420 --> 00:29:37.720
+companies as well. Even I have seen many projects, right,
+
+00:29:37.800 --> 00:29:41.240
+there was a very interesting like things which I have seen
+
+00:29:41.240 --> 00:29:44.540
+in my life. Yeah. When I was a part of Deloitte, so
+
+00:29:44.540 --> 00:29:48.400
+basically we have received a project from a Daimler. So
+
+00:29:48.400 --> 00:29:51.000
+Daimler Japan, basically Mercedes Benz, Mercedes Benz
+
+00:29:51.000 --> 00:29:53.140
+parents companies, basically Daimler, right, Daimler Japan.
+
+00:29:53.420 --> 00:29:57.300
+So basically what happened is back then, I think in 2016,
+
+00:29:57.540 --> 00:30:03.900
+2017 that that project went to Deloitte Germany, right? So
+
+00:30:03.900 --> 00:30:07.020
+we have a Deloitte Germany, we have a Deloitte USI, we have
+
+00:30:07.020 --> 00:30:11.220
+a Deloitte India. I was a part of Deloitte USI and I was
+
+00:30:11.220 --> 00:30:13.640
+working in that company. You know, different, different
+
+00:30:13.640 --> 00:30:17.620
+projects, but out of sudden what happened is that, that we
+
+00:30:17.620 --> 00:30:21.800
+have received a new project from Daimler Japan and the story
+
+00:30:21.800 --> 00:30:25.600
+behind that project was that that we were not the very first
+
+00:30:25.600 --> 00:30:29.040
+one who was supposed to implement that project. So people
+
+00:30:29.040 --> 00:30:31.460
+were trying to implement even from a Deloitte itself, but
+
+00:30:31.460 --> 00:30:34.220
+different division, right? Deloitte Germany was trying to
+
+00:30:34.220 --> 00:30:37.820
+implement that project since a very, very long time. But
+
+00:30:37.820 --> 00:30:41.060
+yeah, they have burnt a lot of money, time, everything and
+
+00:30:41.060 --> 00:30:43.400
+they were not able to deliver that project. It was a supply
+
+00:30:43.400 --> 00:30:46.120
+chain project, a big one, a very, very big one. And we all
+
+00:30:46.120 --> 00:30:49.700
+know that, that for any automobile industry or maybe like a
+
+00:30:49.700 --> 00:30:54.200
+supply chain industry basically, how crucial these kinds of
+
+00:30:54.200 --> 00:30:57.560
+projects are. So they have failed it and then we have
+
+00:30:57.560 --> 00:31:00.000
+received that project and then in a record time because we
+
+00:31:00.000 --> 00:31:02.660
+had a pressure, we had a lot of pressure when we have
+
+00:31:02.660 --> 00:31:06.380
+received because that project has already failed. So we have
+
+00:31:06.380 --> 00:31:09.320
+given our day and night, we were like eight to 10 people
+
+00:31:09.320 --> 00:31:12.580
+only in that project, right? We have given day and night and
+
+00:31:12.580 --> 00:31:15.840
+then we have like delivered that project. So somewhere,
+
+00:31:16.020 --> 00:31:21.720
+right, somewhere when we went into a deep that why that
+
+00:31:21.720 --> 00:31:26.140
+project has failed in a Germany, like a Germany division of
+
+00:31:26.140 --> 00:31:29.240
+Deloitte, the simple reason was a correct people mapping,
+
+00:31:29.400 --> 00:31:32.120
+right? If you don't have a correct people at a correct place
+
+00:31:32.120 --> 00:31:34.740
+in a correct project at the correct time, obviously your
+
+00:31:34.740 --> 00:31:36.620
+projects are going to fail because at the end of the day,
+
+00:31:36.700 --> 00:31:39.740
+robots are not going to do a project. It's a people. It's a
+
+00:31:39.740 --> 00:31:41.920
+person who is going to do a project and you must have
+
+00:31:41.920 --> 00:31:44.660
+experienced a similar kind of things even in your life if
+
+00:31:44.660 --> 00:31:47.240
+you're a senior or maybe if you're on a mid-senior level. So
+
+00:31:47.240 --> 00:31:51.400
+we all see this kind of a failure across our industry. It's
+
+00:31:51.400 --> 00:31:55.600
+nothing new, right? It's nothing new. But if I'm a senior,
+
+00:31:55.740 --> 00:31:58.580
+if I'm on a manager label, so obviously I have to follow an
+
+00:31:58.580 --> 00:32:02.580
+approach where I will end up mitigating things as much as I
+
+00:32:02.580 --> 00:32:06.080
+can, right? Maybe not a hundred percent, but yeah, maybe
+
+00:32:06.080 --> 00:32:09.920
+like a 90% I think that will be a win-win situation. And all
+
+00:32:09.920 --> 00:32:13.260
+of these depends upon the correct people. If I have a
+
+00:32:13.260 --> 00:32:16.160
+correct people in my team, obviously I'm going to win,
+
+00:32:16.260 --> 00:32:20.600
+right? So when I'm going to build a generative AI team, so
+
+00:32:20.600 --> 00:32:24.900
+it's not like I will just hire a guy personally if you're
+
+00:32:24.900 --> 00:32:26.940
+going to ask me, right? That if I have to build a generative
+
+00:32:26.940 --> 00:32:30.380
+AI team, so personally I will not just go and hire a guy so
+
+00:32:30.380 --> 00:32:34.060
+who understand just a generative AI or maybe who has used
+
+00:32:34.060 --> 00:32:37.560
+some tool, maybe Langchain, Langraph or any kind of a tool.
+
+00:32:37.560 --> 00:32:40.620
+No. Yeah. That kind of a person will be a part of my team.
+
+00:32:40.700 --> 00:32:44.280
+That's completely fine. But along with that, I'll try to
+
+00:32:44.280 --> 00:32:48.300
+even onboard some of the data scientists who is having a
+
+00:32:48.300 --> 00:32:51.320
+core understanding and who's having a very strong
+
+00:32:51.320 --> 00:32:55.080
+understanding about our core philosophies. I'll even try to
+
+00:32:55.080 --> 00:32:59.020
+like onboard a guy in my team who understands our data
+
+00:32:59.020 --> 00:33:03.280
+because a big data guy basically, right? A big data guy. So
+
+00:33:03.280 --> 00:33:05.920
+who can, who can build a system and robust system for me?
+
+00:33:05.960 --> 00:33:10.500
+So. So the entire game is all about the data, right? I'll
+
+00:33:10.500 --> 00:33:13.380
+try to even onboard a guy. So who understands our
+
+00:33:13.380 --> 00:33:16.580
+operational ops part, right? Maybe you can say like a dev
+
+00:33:16.580 --> 00:33:21.120
+ops, right? Eventually ML ops or LLM ops. So again, all of
+
+00:33:21.120 --> 00:33:23.520
+these ops are coming from the core part, which is a dev ops.
+
+00:33:23.640 --> 00:33:26.820
+So I'll try to hire that kind of a person as well in my
+
+00:33:26.820 --> 00:33:31.140
+team. Basically I'll try to hire a product manager who has
+
+00:33:31.140 --> 00:33:34.080
+worked in at least two to three projects and that too in a
+
+00:33:34.080 --> 00:33:37.280
+diversified manner, not just in one single similar kind of a
+
+00:33:37.280 --> 00:33:42.160
+project. So this is how I am going to build my team. So
+
+00:33:42.160 --> 00:33:44.940
+whenever you are going to give an answer that how you are
+
+00:33:44.940 --> 00:33:47.960
+going to do a talent acquisition for maybe this particular
+
+00:33:47.960 --> 00:33:50.800
+unit, I'll never say that, that, okay, I'll go and pick a
+
+00:33:50.800 --> 00:33:53.900
+one junior generative guy, one lead generative guy, one
+
+00:33:53.900 --> 00:33:56.580
+manager generative guy, all guy will be in generative and no
+
+00:33:56.580 --> 00:34:02.020
+diversity matters a lot inside a team. Their experience
+
+00:34:02.020 --> 00:34:05.740
+matters a lot at the end of the day, just a technology if
+
+00:34:05.740 --> 00:34:08.380
+you have a good people. So even big data guy will end up
+
+00:34:08.380 --> 00:34:10.680
+implementing your generative AI application, not a big deal
+
+00:34:10.680 --> 00:34:15.860
+at all. I've seen that, right? That happens. But yeah, so if
+
+00:34:15.860 --> 00:34:18.900
+you are going to create a diverse team from a day zero
+
+00:34:18.900 --> 00:34:22.840
+itself, there will be a balance inside a team and you will
+
+00:34:22.840 --> 00:34:26.300
+be in a position to find out a solution easily because if
+
+00:34:26.300 --> 00:34:29.420
+you just have a generative AI guy, they will just think in a
+
+00:34:29.420 --> 00:34:32.920
+linear direction, not in a diversified direction. So I
+
+00:34:32.920 --> 00:34:35.820
+always prefer a kind of a person in my team. Generally. When
+
+00:34:35.820 --> 00:34:38.520
+I build a team, even in my company, this one, previous one,
+
+00:34:38.580 --> 00:34:41.160
+previous to previous one or previous to previous to previous
+
+00:34:41.160 --> 00:34:45.140
+one. So when I, I have built a team, so I have always went
+
+00:34:45.140 --> 00:34:48.960
+for a diversified approach, not with the singular approach.
+
+00:34:49.100 --> 00:34:52.720
+And I believe this is what we all are supposed to do. Is it
+
+00:34:52.720 --> 00:34:55.720
+fine if you want in a chat? Yes, no, don't know anything.
+
+00:34:57.660 --> 00:35:00.540
+Yeah. All these things are like just a managerial round
+
+00:35:00.540 --> 00:35:02.160
+means you just have to talk about the story.
+
+00:35:05.760 --> 00:35:09.840
+Yeah. Okay. Only one person. There are so many people I can
+
+00:35:09.840 --> 00:35:12.320
+see in a, like, uh, they have joined me. I don't know
+
+00:35:12.320 --> 00:35:16.000
+whether they are celebrating for Steve festival and they're
+
+00:35:16.000 --> 00:35:22.040
+not replying in a chat or maybe they are sleeping. So Jenny,
+
+00:35:22.080 --> 00:35:27.300
+I ML and DL also important as, uh, the sigh, I'm not able to
+
+00:35:27.300 --> 00:35:32.140
+get the last word. Uh, submit, of
+
+00:35:32.140 --> 00:35:32.880
+course. Yes. Okay.
+
+00:35:35.720 --> 00:35:40.120
+Hmm. How do you build, uh, build and lead a generative team?
+
+00:35:40.380 --> 00:35:43.820
+I think I have already given an answer here itself. What is
+
+00:35:43.820 --> 00:35:46.300
+the approach of your DDI team development and training? I
+
+00:35:46.300 --> 00:35:48.940
+have already given an answer for that as well. How do you
+
+00:35:48.940 --> 00:35:53.660
+manage in a vendor, uh, relations? Okay. So, uh, basically
+
+00:35:53.660 --> 00:35:59.080
+by, you know, um, uh, giving them a good product, uh, by,
+
+00:35:59.200 --> 00:36:01.760
+uh, by black, putting them in some, uh, win-win kind of a
+
+00:36:01.760 --> 00:36:05.500
+situation. So where, uh, even, uh, they will be able to
+
+00:36:05.500 --> 00:36:08.200
+enjoy us. Miss. They will be able to enjoy the whole
+
+00:36:08.200 --> 00:36:11.480
+partnership. So basically if, if I'm able to save someone's
+
+00:36:11.480 --> 00:36:16.340
+time or maybe a money or, uh, uh, maybe they are like a user
+
+00:36:16.340 --> 00:36:19.540
+experience. If I'm going to make better, obviously I'm going
+
+00:36:19.540 --> 00:36:24.140
+to like, uh, when, and that vendor will be with me for a
+
+00:36:24.140 --> 00:36:27.660
+very, very long time. And whenever guys, whenever you are
+
+00:36:27.660 --> 00:36:30.000
+giving an answer, right. Always try to talk about the story
+
+00:36:30.000 --> 00:36:34.460
+that, okay, how you have done in one of the cases. Yeah. Uh,
+
+00:36:34.620 --> 00:36:38.680
+that, that will like, uh. Theoretically anyone can say, and
+
+00:36:38.680 --> 00:36:41.220
+anyone can talk about the sugar-coated words. That's okay.
+
+00:36:41.760 --> 00:36:45.160
+But, uh, these kinds of questions you should always answer
+
+00:36:45.160 --> 00:36:47.080
+and it's a managerial round question, right? So you should
+
+00:36:47.080 --> 00:36:50.740
+always answer with respect to your past experience that what
+
+00:36:50.740 --> 00:36:54.120
+you have done so that people will be able to trust you in an
+
+00:36:54.120 --> 00:36:57.040
+interview that, okay, this is not a guy who just talk about
+
+00:36:57.040 --> 00:37:00.200
+something in theory. This is a guy who has done something in
+
+00:37:00.200 --> 00:37:04.640
+their past and, uh, yeah, like, uh, same thing again, if you
+
+00:37:04.640 --> 00:37:08.140
+have done that. Yeah. You will be doing it once again, but
+
+00:37:08.140 --> 00:37:10.500
+again, no one is going to cross check that whether you have
+
+00:37:10.500 --> 00:37:13.100
+done that or not. So you are supposed to be a very, very
+
+00:37:13.100 --> 00:37:17.980
+good storyteller in this kind of a questions. So that's a,
+
+00:37:17.980 --> 00:37:25.420
+that's a whole thing. Yeah. Okay. And now, uh, what are the
+
+00:37:25.420 --> 00:37:29.760
+consideration for gen AI partnership strategies? Okay. So
+
+00:37:29.760 --> 00:37:33.440
+when we talk about a partnership, right. Uh, it depends upon
+
+00:37:33.440 --> 00:37:37.160
+many things. Uh, you must have seen, uh, recent partnership
+
+00:37:37.160 --> 00:37:40.060
+with respect to a multiple companies. For example, uh,
+
+00:37:40.160 --> 00:37:42.980
+reliance has done partnership with open AI or maybe with a
+
+00:37:42.980 --> 00:37:46.680
+Google Nvidia has done a partnership with maybe a open AI
+
+00:37:46.680 --> 00:37:51.320
+for, uh, even like a open AI has done partnership with the
+
+00:37:51.320 --> 00:37:54.860
+article cloud, $300 billion of a deal. So you will be able
+
+00:37:54.860 --> 00:37:59.040
+to see a lot of partnership among big companies and even
+
+00:37:59.040 --> 00:38:02.680
+among a small companies. Even we do a partnership. We do a
+
+00:38:02.680 --> 00:38:04.500
+lot of like a partnership. We do a partnership with respect
+
+00:38:04.500 --> 00:38:06.680
+to our different, different companies because it's not like
+
+00:38:06.680 --> 00:38:10.000
+when I'm building a company, so I will end up building a
+
+00:38:10.000 --> 00:38:14.300
+solution, all the solution by myself. No, it will take time,
+
+00:38:14.300 --> 00:38:17.260
+right? Uh, to build any kind of a solution. So obviously to
+
+00:38:17.260 --> 00:38:21.400
+run my company, I need a lot of plugins inside my company
+
+00:38:21.400 --> 00:38:25.660
+and obviously I will just go ahead with the, uh, like a lot
+
+00:38:25.660 --> 00:38:29.920
+of like a partnership. So when people are going to ask you a
+
+00:38:29.920 --> 00:38:32.440
+question that when you do a partnership, so what are all
+
+00:38:32.440 --> 00:38:36.320
+things? What are your partners? Right? The very first, uh,
+
+00:38:36.400 --> 00:38:39.940
+things which I generally look into my partners is a ethical
+
+00:38:39.940 --> 00:38:43.280
+alignment because there are many people, right, who will,
+
+00:38:43.360 --> 00:38:46.440
+there are many, not people I will say, but a company who
+
+00:38:46.440 --> 00:38:49.800
+will never hesitate to, you know, go unethical in terms of,
+
+00:38:49.800 --> 00:38:53.060
+uh, security in terms of our compliances in terms of our
+
+00:38:53.060 --> 00:38:56.420
+transactions, uh, they, they can, they can go ahead and
+
+00:38:56.420 --> 00:38:58.860
+maybe they have, they have done that hundreds of times and
+
+00:38:58.860 --> 00:39:01.980
+they will never hesitate to do that. But, uh, as a, as a
+
+00:39:01.980 --> 00:39:03.460
+comp, as a, as a stakeholder. So, uh, so, so, so, so, so,
+
+00:39:03.460 --> 00:39:03.760
+so, so, so, so, so, so, so, so, so, so, so, so, so, so. So
+
+00:39:03.760 --> 00:39:07.300
+obviously it's my responsibility to protect my company or to
+
+00:39:07.300 --> 00:39:11.220
+protect my division from those kind of, uh, unethical
+
+00:39:11.220 --> 00:39:14.860
+alignments. So obviously I'll try to evaluate my partners on
+
+00:39:14.860 --> 00:39:17.800
+a very first day based on the ethics. It's completely fine
+
+00:39:17.800 --> 00:39:20.420
+because we have, we have to go for a very, very long, uh,
+
+00:39:20.500 --> 00:39:24.200
+like a run, maybe for a, like a five year of partnership or
+
+00:39:24.200 --> 00:39:26.260
+three year of partnership or a year of partnership we are,
+
+00:39:26.280 --> 00:39:28.960
+we are planning to explore. So ethical alignment is
+
+00:39:28.960 --> 00:39:32.340
+something that always comes into a first place. That's the
+
+00:39:32.340 --> 00:39:36.440
+first part. Second, basically, uh, data security and IP
+
+00:39:36.440 --> 00:39:38.960
+ownership. And here you will be able to see a lot of fights,
+
+00:39:39.140 --> 00:39:42.940
+right? Even company tried to file a lawsuit. So when you are
+
+00:39:42.940 --> 00:39:45.920
+trying to do a partnership, so with collaboration, so
+
+00:39:45.920 --> 00:39:48.080
+obviously maybe you will build something, you will try to
+
+00:39:48.080 --> 00:39:50.980
+develop something, you will try to innovate something. So
+
+00:39:50.980 --> 00:39:55.120
+there should be a very, very like a, you know, a strong line
+
+00:39:55.120 --> 00:39:59.480
+you should draw in terms of a intellectual property or IP
+
+00:39:59.480 --> 00:40:03.640
+ownership. Because that creates a lot of pain. In a later
+
+00:40:03.640 --> 00:40:05.720
+stage for a company, and believe me, from my experience, I'm
+
+00:40:05.720 --> 00:40:08.440
+telling you, and if you will just go and read out the
+
+00:40:08.440 --> 00:40:11.800
+stories of other partners, if you will be able to find out
+
+00:40:11.800 --> 00:40:15.960
+the exact same thing, right? That with our collaboration, we
+
+00:40:15.960 --> 00:40:18.940
+have built something, we have developed something. And then
+
+00:40:18.940 --> 00:40:21.560
+other people will come and then maybe after two years, after
+
+00:40:21.560 --> 00:40:23.600
+three years, once management had changed, our person has
+
+00:40:23.600 --> 00:40:26.600
+replaced and they will start claiming that that, okay, fine.
+
+00:40:26.680 --> 00:40:30.260
+This was my IP. So why, why you have claimed it, right? Why
+
+00:40:30.260 --> 00:40:32.120
+you are using it? If you're using it, you have to pay me for
+
+00:40:32.120 --> 00:40:35.580
+that. And again, it creates a lot of long term legal battle
+
+00:40:35.580 --> 00:40:40.720
+plus it creates a lot of monetary pressure on any clients
+
+00:40:40.720 --> 00:40:44.720
+and companies. And again, it like creates a lot of risk even
+
+00:40:44.720 --> 00:40:48.840
+on your brand name, basically. So ethical alignment is one
+
+00:40:48.840 --> 00:40:52.160
+thing, data security and intellectual property ownership. So
+
+00:40:52.160 --> 00:40:55.260
+I will try to like, you know, draft each and everything in
+
+00:40:55.260 --> 00:40:58.760
+my contract, not I. So in every company, you will be able to
+
+00:40:58.760 --> 00:41:02.860
+find out a strong legal team, a corporate legal team. So who
+
+00:41:02.860 --> 00:41:05.900
+take care of the compliances and who knows each and every
+
+00:41:05.900 --> 00:41:09.220
+policy of the company as well as they will try to explore
+
+00:41:09.220 --> 00:41:12.580
+the policies of other partners as well, a partner with whom
+
+00:41:12.580 --> 00:41:15.640
+you are doing the collaboration. And once your legal team is
+
+00:41:15.640 --> 00:41:18.880
+going to give a sign off, once you will end up taking enough
+
+00:41:18.880 --> 00:41:22.660
+consultation with everyone, then I believe you should go
+
+00:41:22.660 --> 00:41:24.880
+ahead with the partnership and service terms and agreement
+
+00:41:24.880 --> 00:41:29.360
+again, right? Because let's suppose if, if I'm going with
+
+00:41:29.360 --> 00:41:33.920
+some company, so who is providing me a GPU? Right? GPU. So
+
+00:41:33.920 --> 00:41:37.380
+maybe we have done a partnership for like a two year, right?
+
+00:41:37.460 --> 00:41:41.680
+But in my service terms and my service agreements, so I have
+
+00:41:41.680 --> 00:41:45.140
+not defined that what will happen to my data after two year,
+
+00:41:45.240 --> 00:41:48.960
+right? Or what would will happen like to our data even
+
+00:41:48.960 --> 00:41:51.560
+between two years. So if I would like to like take out all
+
+00:41:51.560 --> 00:41:54.000
+the data, if I would like to like wipe out all the data from
+
+00:41:54.000 --> 00:41:57.480
+all the reasons of their hosting, are they going to allow
+
+00:41:57.480 --> 00:42:01.520
+how they are managing and maintaining this data transfer
+
+00:42:01.520 --> 00:42:03.260
+from one place? This is rather busy because it's their
+
+00:42:03.260 --> 00:42:06.500
+machine, right? Their system. So even if they say, so they
+
+00:42:06.500 --> 00:42:08.920
+are supposed to be very, very transparent, right?
+
+00:42:09.120 --> 00:42:11.140
+Transparent in terms of our processes, in terms of our
+
+00:42:11.140 --> 00:42:15.320
+policies. So I have to draft each and everything into my
+
+00:42:15.320 --> 00:42:17.700
+service agreement that what will happen during this tenure,
+
+00:42:17.820 --> 00:42:20.540
+what will happen after this tenure, what will happen is this
+
+00:42:20.540 --> 00:42:23.940
+kind of edge cases which will come into a picture. And then
+
+00:42:23.940 --> 00:42:27.440
+only you are supposed to design the partnership strategies.
+
+00:42:27.820 --> 00:42:30.580
+So ethics, compliances, data security, IP ownership.
+
+00:42:30.580 --> 00:42:35.760
+Partnership and your like co-innovation potential. So based
+
+00:42:35.760 --> 00:42:39.280
+on that, you should frame the entire partnership strategies.
+
+00:42:39.700 --> 00:42:44.320
+Then next question says that how do you handle generative AI
+
+00:42:44.320 --> 00:42:50.800
+project failure and recovery? Okay. So again, failure and
+
+00:42:50.800 --> 00:42:54.340
+recovery, most time you will say that if project has failed,
+
+00:42:54.400 --> 00:42:59.140
+it has failed. So like there are very few people, few
+
+00:42:59.140 --> 00:43:04.940
+projects. So who gets recovered by the way. But yeah, so you
+
+00:43:04.940 --> 00:43:09.040
+can, you can say that, that in my entire like a lifetime. So
+
+00:43:09.040 --> 00:43:12.460
+I have handled multiple projects, but I have never seen a
+
+00:43:12.460 --> 00:43:16.080
+failure. So maybe in that, that way you can try to give an
+
+00:43:16.080 --> 00:43:20.500
+answer that yes, there is a very high possibility that any
+
+00:43:20.500 --> 00:43:24.660
+project is going to fail. But if we are going to do a proper
+
+00:43:24.660 --> 00:43:27.900
+planning, if we are going to do a proper budgeting, if we
+
+00:43:27.900 --> 00:43:30.660
+are going to align a proper plan. Then number of people and
+
+00:43:30.660 --> 00:43:35.300
+the stakeholders in between and if we are able to see that
+
+00:43:35.300 --> 00:43:38.560
+what is going to happen tomorrow and even try to mitigate
+
+00:43:38.560 --> 00:43:42.780
+all those things beforehand, maybe we can try to mitigate
+
+00:43:42.780 --> 00:43:45.640
+those failures and you can try to give an example. For
+
+00:43:45.640 --> 00:43:47.980
+example, in my case I was talking about the Deloitte
+
+00:43:47.980 --> 00:43:52.800
+project, right, which has failed in Germany. So if we have,
+
+00:43:52.820 --> 00:43:55.400
+we have started that project from the scratch. Right. But
+
+00:43:55.400 --> 00:43:58.700
+first of all, we have investigated into the story. That
+
+00:43:58.700 --> 00:44:02.700
+what? that project has failed, right, same company, so
+
+00:44:02.700 --> 00:44:07.880
+Deloitte, but division was different, USI versus Germany, so
+
+00:44:07.880 --> 00:44:11.340
+why that project has failed there and if that project has
+
+00:44:11.340 --> 00:44:15.140
+failed over there, then what we are not supposed to do,
+
+00:44:15.280 --> 00:44:18.080
+right, what we are not supposed to do, so sometime we can
+
+00:44:18.080 --> 00:44:21.220
+learn from the other failures, this is what everyone says,
+
+00:44:21.400 --> 00:44:24.980
+right, and this is what we did, that what was the problem
+
+00:44:24.980 --> 00:44:27.560
+over there, right, so maybe there was a problem from the
+
+00:44:27.560 --> 00:44:30.340
+customer side, from a functional side, from a technical
+
+00:44:30.340 --> 00:44:34.500
+side, from a delivery side, right, and then we have
+
+00:44:34.500 --> 00:44:39.580
+mitigated all of those things on a day zero itself, so maybe
+
+00:44:39.580 --> 00:44:43.060
+you can say this kind of a story, that instead of getting,
+
+00:44:43.180 --> 00:44:47.300
+going for a failure, so maybe we can try to learn first that
+
+00:44:47.300 --> 00:44:51.180
+where in all places or it is called as risk management,
+
+00:44:51.560 --> 00:44:54.420
+right, so every company does that, right, every company does
+
+00:44:54.420 --> 00:44:57.300
+that, so risk calculation or risk management. And then like
+
+00:44:57.300 --> 00:45:00.660
+we can try to mitigate those kind of a situation. I think
+
+00:45:00.660 --> 00:45:03.100
+that's the next question, what is your approach for Gen AI
+
+00:45:03.100 --> 00:45:08.040
+risk management? So nothing related specific to like a Gen
+
+00:45:08.040 --> 00:45:11.500
+AI risk management, risk will be involved in every project,
+
+00:45:11.600 --> 00:45:16.400
+right, if I will talk about a Gen AI, right, especially in
+
+00:45:16.400 --> 00:45:21.100
+terms of a Gen AI, that where my Gen AI project can fail on
+
+00:45:21.100 --> 00:45:24.220
+a technical label specifically, not on a people label, not
+
+00:45:24.220 --> 00:45:28.220
+on a process label. So obviously. I can create a project, I
+
+00:45:28.220 --> 00:45:30.520
+can, I can deliver the project, but there is a possibility
+
+00:45:30.520 --> 00:45:34.100
+that my project will hallucinate, yeah, means it will not be
+
+00:45:34.100 --> 00:45:37.220
+able to give the answer or like output, which was expected,
+
+00:45:37.620 --> 00:45:42.000
+maybe I have not implemented a guardrails, right, I have not
+
+00:45:42.000 --> 00:45:46.060
+mitigated all those risks, basically over there, maybe I
+
+00:45:46.060 --> 00:45:50.220
+have not implemented a core like a monitoring technique over
+
+00:45:50.220 --> 00:45:53.960
+there, maybe I have not built that project for a scale,
+
+00:45:54.100 --> 00:45:58.520
+right, I have just like a, you know. Under estimated or over
+
+00:45:58.520 --> 00:46:02.720
+estimated something, so these are the technical failure that
+
+00:46:02.720 --> 00:46:05.800
+you will end up getting and I think in terms of technical
+
+00:46:05.800 --> 00:46:09.440
+failure, if you are experienced person, you must be aware
+
+00:46:09.440 --> 00:46:12.680
+about it beforehand, right, you must be aware about it. So
+
+00:46:12.680 --> 00:46:15.080
+these are the things, these are something that we try to
+
+00:46:15.080 --> 00:46:20.260
+plan beforehand itself. In terms of operational risk, right,
+
+00:46:20.320 --> 00:46:22.540
+because there can be a operational risk as well, operational
+
+00:46:22.540 --> 00:46:27.440
+risk wise, a cost, right, a cost. Maybe client has given me
+
+00:46:27.440 --> 00:46:34.500
+a budget of maybe 500k dollar, right, and I have ended
+
+00:46:34.500 --> 00:46:38.740
+burning maybe 800k dollar, which is huge and as compared to
+
+00:46:38.740 --> 00:46:42.020
+500k dollar, it's a huge one, right. So obviously my client
+
+00:46:42.020 --> 00:46:45.260
+will not be happy for that, right, because money is
+
+00:46:45.260 --> 00:46:51.000
+something which matters in top by the way. So cost overrun
+
+00:46:51.000 --> 00:46:55.520
+can be one thing. Maybe I will end up, another risk factor.
+
+00:46:55.560 --> 00:46:57.560
+Another risk factor. So this part is a compliances risk,
+
+00:46:57.760 --> 00:47:02.740
+right, a data breach, privacy, biasness into a data. So all
+
+00:47:02.740 --> 00:47:07.020
+of this risk we try to calculate beforehand. We try to draft
+
+00:47:07.020 --> 00:47:11.180
+a proper like a documentation for that and then when we try
+
+00:47:11.180 --> 00:47:14.360
+to hand over the project or even during building this
+
+00:47:14.360 --> 00:47:18.480
+project, we will try to keep a check on each and everything
+
+00:47:18.480 --> 00:47:20.520
+because this is what you will do, right. This is how you
+
+00:47:20.520 --> 00:47:23.560
+will build a trust with the client or maybe you will try to
+
+00:47:23.560 --> 00:47:27.220
+build a trust with your team. Because as a director, as a
+
+00:47:27.220 --> 00:47:30.040
+manager, you will not be writing a code. Then what you will
+
+00:47:30.040 --> 00:47:34.140
+be doing, 9 to 5, right, and as a manager, it's not 9 to 5,
+
+00:47:34.220 --> 00:47:38.120
+it's like 12 hour, 13 hour, 14 hour a day. So you will do
+
+00:47:38.120 --> 00:47:40.820
+something, right. So this will be your task. This will be
+
+00:47:40.820 --> 00:47:44.600
+your job that you will keep on doing it to make sure that
+
+00:47:44.600 --> 00:47:47.640
+whatever you are delivering, whatever you are building, it's
+
+00:47:47.640 --> 00:47:51.260
+robust, it's risk free, it's compliance free. Basically
+
+00:47:51.260 --> 00:47:54.520
+there is no technical one. Basically there is no technical
+
+00:47:54.520 --> 00:47:57.100
+one. So you will just deliver. My customer should say wow,
+
+00:47:57.280 --> 00:48:00.860
+right, so that I will be able to gain a trust of the market
+
+00:48:00.860 --> 00:48:05.020
+plus I will be able to get revenue out of it plus I should
+
+00:48:05.020 --> 00:48:10.040
+not give a cost overburden. Yeah, we do that. We do that as
+
+00:48:10.040 --> 00:48:13.380
+well. So we do that in terms of like developing a new
+
+00:48:13.380 --> 00:48:16.260
+feature. So we just deliver something and then we say to our
+
+00:48:16.260 --> 00:48:19.500
+customer that okay, so can we add this feature as well,
+
+00:48:19.560 --> 00:48:22.880
+right, and if my customer was happy, already a happy
+
+00:48:22.880 --> 00:48:26.580
+customer, so a client. So in that case obviously like they
+
+00:48:26.580 --> 00:48:29.340
+are going to say yes, they will not say no, right. So this
+
+00:48:29.340 --> 00:48:31.500
+is how we keep on increasing our budget of the project.
+
+00:48:31.660 --> 00:48:34.300
+Everyone does that. Every manager, every delivery manager
+
+00:48:34.300 --> 00:48:36.540
+does the same thing because at the end of the day they have
+
+00:48:36.540 --> 00:48:40.500
+to bring more and more businesses, right. But yeah, by
+
+00:48:40.500 --> 00:48:44.040
+making my clients happy or by building a good product, not
+
+00:48:44.040 --> 00:48:49.120
+like a substandard one. Then okay.
+
+00:48:51.820 --> 00:48:54.060
+Risk management is done. How do you manage generic risk
+
+00:48:54.060 --> 00:48:58.140
+management? So basically
+
+00:48:58.140 --> 00:49:02.560
+GDPR is something that we try to implement or HIPAA or maybe
+
+00:49:02.560 --> 00:49:06.840
+any AI act which has been created by a particular country,
+
+00:49:07.080 --> 00:49:09.920
+right, because nowadays everyone is trying to create some
+
+00:49:09.920 --> 00:49:13.580
+sort of a law, some sort of a rule across AI or not just
+
+00:49:13.580 --> 00:49:16.620
+across AI, across a data sharing, across a technology,
+
+00:49:16.860 --> 00:49:20.560
+right, because it's a quite new thing for many countries. In
+
+00:49:20.560 --> 00:49:23.060
+many countries still you will not be able to find out any
+
+00:49:23.060 --> 00:49:26.500
+kind of a law. In terms of even a data privacy and security.
+
+00:49:26.840 --> 00:49:31.000
+So there are very few country, right, so who have actually
+
+00:49:31.000 --> 00:49:34.840
+implemented it and who actually monitors it, right, who
+
+00:49:34.840 --> 00:49:39.240
+actually monitors it. If I will talk about maybe India, so
+
+00:49:39.240 --> 00:49:44.360
+there are some rules, there are some law on paper but I
+
+00:49:44.360 --> 00:49:48.180
+don't know how implementation happens because I don't know
+
+00:49:48.180 --> 00:49:51.520
+like when I go to Google and when I search something where
+
+00:49:51.520 --> 00:49:56.560
+my data goes, right. And who is using it and I think when I
+
+00:49:56.560 --> 00:50:01.340
+go online, right, even when I do a WhatsApp chat or maybe a
+
+00:50:01.340 --> 00:50:06.600
+Telegram chat, so I have a firm belief that my data is
+
+00:50:06.600 --> 00:50:10.260
+universal. So anyone and everyone is having my data access.
+
+00:50:10.320 --> 00:50:13.320
+This is what I believe in general because I am not aware
+
+00:50:13.320 --> 00:50:17.460
+about the actual law and its implementation. And likewise
+
+00:50:17.460 --> 00:50:20.020
+there are many other countries, right, so there are very few
+
+00:50:20.020 --> 00:50:22.900
+countries who have like, you know, created a very strict
+
+00:50:22.900 --> 00:50:24.780
+law. There are very strict guidelines and law and they
+
+00:50:24.780 --> 00:50:28.800
+actually, they have actually implemented it, yeah, they have
+
+00:50:28.800 --> 00:50:34.280
+actually implemented it. So yeah, in terms of regulatory and
+
+00:50:34.280 --> 00:50:37.680
+compliances, if you are building some product for some
+
+00:50:37.680 --> 00:50:40.460
+country, for some community, so obviously you should
+
+00:50:40.460 --> 00:50:43.820
+understand their law, their regulations which your legal
+
+00:50:43.820 --> 00:50:46.420
+team will help you out obviously. You don't have to do it.
+
+00:50:46.480 --> 00:50:50.720
+You just have to like, you know, come into a picture and you
+
+00:50:50.720 --> 00:50:52.660
+just have to ask your team to do the implementation. The
+
+00:50:52.660 --> 00:50:54.720
+implementation of that, right, and make sure that this
+
+00:50:54.720 --> 00:50:58.620
+happens but yeah, your legal team is going to give you the
+
+00:50:58.620 --> 00:51:03.020
+guidelines. Generally we heard about this GDPR and HIPPA and
+
+00:51:03.020 --> 00:51:07.960
+all those things or some other AI acts and mostly it will be
+
+00:51:07.960 --> 00:51:11.920
+around data privacy and maybe like a consent of the user if
+
+00:51:11.920 --> 00:51:14.900
+you are taking a data, right, or like some sort of
+
+00:51:14.900 --> 00:51:18.160
+explanation in terms of you are using their data set. So you
+
+00:51:18.160 --> 00:51:21.120
+can say that okay, I connect with my legal team and they
+
+00:51:21.120 --> 00:51:24.480
+advises me, they try to investigate, they advises me with
+
+00:51:24.480 --> 00:51:27.200
+respect to all the compliances. You should not say that I go
+
+00:51:27.200 --> 00:51:30.500
+and I read out all those like laws and everything, right. No
+
+00:51:30.500 --> 00:51:33.280
+one does that. That's the reason we have a legal team. They
+
+00:51:33.280 --> 00:51:36.620
+understand legality better than you. So you can say that
+
+00:51:36.620 --> 00:51:39.040
+okay, fine, so we have advisory team, we have a legal team
+
+00:51:39.040 --> 00:51:42.960
+and who does this kind of things for me and yeah, I just,
+
+00:51:43.060 --> 00:51:45.720
+whatever like points they used to like give it to me with
+
+00:51:45.720 --> 00:51:47.720
+respect to my client or maybe with respect to the reason,
+
+00:51:47.920 --> 00:51:52.620
+just I have to enforce those things. Okay. So this is how I
+
+00:51:52.620 --> 00:51:55.340
+do it across entire product line. This is what I do and this
+
+00:51:55.340 --> 00:51:59.320
+is how I try to maintain the compliance and regulatory
+
+00:51:59.320 --> 00:52:03.600
+requirements. Now next question says that what are the
+
+00:52:03.600 --> 00:52:06.860
+consideration for gen AI intellectual property, IP
+
+00:52:06.860 --> 00:52:12.240
+basically, right. So generally what happens is that many
+
+00:52:12.240 --> 00:52:15.260
+company try to do a lot of research, right. Even in India,
+
+00:52:15.320 --> 00:52:17.700
+even outside you will be able to find out that many company
+
+00:52:17.700 --> 00:52:20.740
+are doing a research. They try to even publish a paper,
+
+00:52:20.860 --> 00:52:23.820
+right, a research paper. Okay. And they try to build some
+
+00:52:23.820 --> 00:52:27.520
+sort of a prototyping and they go for a patent. So this is
+
+00:52:27.520 --> 00:52:30.040
+what happens. There is a possibility that you have hired
+
+00:52:30.040 --> 00:52:32.620
+some sort of a vendor and they are doing some sort of a
+
+00:52:32.620 --> 00:52:35.740
+research. They have like found out some breakthrough, right.
+
+00:52:36.980 --> 00:52:45.740
+And so to protect anything, the very first step that we all
+
+00:52:45.740 --> 00:52:49.180
+used to take is bind under the agreement when you are
+
+00:52:49.180 --> 00:52:52.720
+onboarding them. That as long as. And as far as you are a
+
+00:52:52.720 --> 00:52:57.080
+part of my company, your heart, soul, your time, everything
+
+00:52:57.080 --> 00:53:00.860
+is mine. So whatever you are doing during this tenure,
+
+00:53:01.160 --> 00:53:04.500
+right, a productive or unproductive, this is what you will
+
+00:53:04.500 --> 00:53:06.620
+be able to see in an employer agreement. So I don't know
+
+00:53:06.620 --> 00:53:09.840
+whether you have read out some employment agreement or not,
+
+00:53:09.920 --> 00:53:12.980
+but just go and check the last employment agreement and
+
+00:53:12.980 --> 00:53:15.540
+terms and condition that you have received. Or maybe it must
+
+00:53:15.540 --> 00:53:18.440
+be of level in your company's portal, right. Just upload it
+
+00:53:18.440 --> 00:53:30.380
+in a chat GPTs. Okay. I think,
+
+00:53:30.380 --> 00:53:32.000
+maybe this is really important. So let me just leave that.
+
+00:53:32.000 --> 00:53:37.720
+So, you will be able to like, consider this as more of a
+
+00:53:37.720 --> 00:53:43.160
+strategy, but this is how the company could be designed. You
+
+00:53:43.160 --> 00:53:48.180
+see, I mean, the company is going to be able to give you a
+
+00:53:48.180 --> 00:53:48.860
+very good result, you know, a positive result, but you don't
+
+00:53:48.860 --> 00:53:48.860
+have to do the best you can, you know, you can So you are
+
+00:53:48.860 --> 00:53:49.300
+just going to be. It is not a time to be, say you are going
+
+00:53:49.300 --> 00:53:51.000
+to work for Amazon. You are going to be working for Amazon.
+
+00:53:51.000 --> 00:53:51.560
+You are not going to be going on a business that I can get
+
+00:53:51.560 --> 00:53:51.560
+out and make money on. You can just do the rest of your
+
+00:53:51.560 --> 00:53:54.740
+work. So the very first part is agreement right because
+
+00:53:54.740 --> 00:53:58.420
+whenever there will be a conflict you will not go and fight
+
+00:53:58.420 --> 00:54:02.080
+right. So we are not a wrestler. So obviously you will go
+
+00:54:02.080 --> 00:54:05.480
+ahead with the legal approach or even employees or vendors
+
+00:54:05.480 --> 00:54:08.860
+will go ahead with the legal approach and in terms of a
+
+00:54:08.860 --> 00:54:12.520
+legal approach you need a proof of that right. So unless you
+
+00:54:12.520 --> 00:54:15.020
+don't have a proof or you don't have some signed agreement
+
+00:54:15.020 --> 00:54:19.160
+you can't enforce anyone. So if some person has developed
+
+00:54:19.160 --> 00:54:22.520
+some IPs and if they are claiming that that it's mine it's
+
+00:54:22.520 --> 00:54:25.520
+not yours right or maybe a patent it's mine it's not yours
+
+00:54:25.520 --> 00:54:28.900
+unless and until you have not binded that person beforehand
+
+00:54:28.900 --> 00:54:32.300
+under the agreement you will not be able to claim it and
+
+00:54:32.300 --> 00:54:36.180
+many many such kind of you know legal suits you will be able
+
+00:54:36.180 --> 00:54:39.280
+to find out across a world. Again that is very much common
+
+00:54:39.280 --> 00:54:42.680
+pretty much common right. So you have to fill the gap you
+
+00:54:42.680 --> 00:54:46.900
+have to basically like you know bind that particular person
+
+00:54:46.900 --> 00:54:50.240
+under the agreement. So that if anyone is developing and
+
+00:54:50.240 --> 00:54:53.100
+delivering anything because at the end of the day you as a
+
+00:54:53.100 --> 00:54:55.460
+manager you as a director you have to protect the right of
+
+00:54:55.460 --> 00:54:58.620
+the company in the very first place right. That's a that's a
+
+00:54:58.620 --> 00:55:02.380
+reason so company is going to hire you right not to do a
+
+00:55:02.380 --> 00:55:05.600
+charity but to protect our company's interest at the end of
+
+00:55:05.600 --> 00:55:08.220
+the day. Yeah sounds sometimes harsh but that's a reality
+
+00:55:08.220 --> 00:55:12.880
+right. That's the reason company is paying you. So this is
+
+00:55:12.880 --> 00:55:16.200
+what you should do by the way and this is how you should
+
+00:55:16.200 --> 00:55:18.660
+answer that I'll just try to bind a person under the
+
+00:55:18.660 --> 00:55:22.220
+agreement. How do you handle a Gen AI competitive analysis.
+
+00:55:23.020 --> 00:55:28.240
+Okay okay so basically let's suppose if I'm working into
+
+00:55:28.240 --> 00:55:31.920
+some domain maybe into a finance domain I'm building some
+
+00:55:31.920 --> 00:55:35.160
+product or delivering some services. So obviously I'll keep
+
+00:55:35.160 --> 00:55:38.380
+eye on all the competitors. Everyone does that. So generally
+
+00:55:38.380 --> 00:55:42.620
+what what I do so we try to keep one analyst or maybe one
+
+00:55:42.620 --> 00:55:46.800
+junior person one analyst. So we'll keep on looking over the
+
+00:55:46.800 --> 00:55:51.000
+internet. That what someone is building what like someone is
+
+00:55:51.000 --> 00:55:54.620
+trying to develop what someone has launched even as an MVP's
+
+00:55:54.620 --> 00:56:00.240
+sometime we even try to create a deep connect with other
+
+00:56:00.240 --> 00:56:04.240
+companies team members so that you know before they will
+
+00:56:04.240 --> 00:56:06.600
+launch we'll be having some sort of idea and every company
+
+00:56:06.600 --> 00:56:09.400
+does that right. Every company does that so they try to
+
+00:56:09.400 --> 00:56:11.200
+create that's the reason so you must be able to see some
+
+00:56:11.200 --> 00:56:16.200
+sort of a news even before the product release. So
+
+00:56:16.200 --> 00:56:21.540
+basically. If I have to like take a competitive advantage so
+
+00:56:21.540 --> 00:56:25.420
+keeping eye on a competition is a very very first part
+
+00:56:25.420 --> 00:56:30.160
+right. So we always try to like keep an analyst under us and
+
+00:56:30.160 --> 00:56:33.180
+they will keep on like you know investigating that what my
+
+00:56:33.180 --> 00:56:36.760
+competitors are doing what new competitors are emerging into
+
+00:56:36.760 --> 00:56:40.320
+a market and then based on their inputs based on their
+
+00:56:40.320 --> 00:56:43.020
+research based on their guidelines we try to align our team
+
+00:56:43.020 --> 00:56:46.820
+or maybe my entire businesses. Basically. That's what we do.
+
+00:56:47.160 --> 00:56:50.880
+What is the approach for Gen AI market research question
+
+00:56:50.880 --> 00:56:55.400
+number 146. So approach for generative AI market research.
+
+00:56:55.800 --> 00:57:00.620
+So again I will not be like doing everything generative AI
+
+00:57:00.620 --> 00:57:04.320
+like or in a AI itself millions of product can be developed
+
+00:57:04.320 --> 00:57:06.960
+but I should not go ahead and develop everything. So as a
+
+00:57:06.960 --> 00:57:09.200
+manager as a director so obviously I will be aligned towards
+
+00:57:09.200 --> 00:57:14.240
+my product line right. So here also what I will do. So I'll
+
+00:57:14.240 --> 00:57:18.720
+try to keep a small team. Maybe two three person senior
+
+00:57:18.720 --> 00:57:21.620
+junior or maybe the existing team but I'll try to give them
+
+00:57:21.620 --> 00:57:26.500
+generally will not we don't hire the new team member. So
+
+00:57:26.500 --> 00:57:31.420
+what we do is generally we try to you know utilize existing
+
+00:57:31.420 --> 00:57:34.900
+team member itself maybe a lead maybe some developer. So who
+
+00:57:34.900 --> 00:57:38.160
+is having some sort of an intention of doing some sort of
+
+00:57:38.160 --> 00:57:42.600
+you know market research to understand someone else product
+
+00:57:42.600 --> 00:57:45.160
+or maybe my product manager and I'll give them some
+
+00:57:45.160 --> 00:57:47.620
+additional tasks. That okay so whatever you're doing do it.
+
+00:57:47.700 --> 00:57:51.380
+That's not an issue but along with that right along with
+
+00:57:51.380 --> 00:57:55.920
+that. So try to basically do market research in this product
+
+00:57:55.920 --> 00:57:58.880
+line. Maybe I'm working for a finance or maybe for a sales.
+
+00:57:59.020 --> 00:58:02.500
+So in a sales line. So what is the new product which is
+
+00:58:02.500 --> 00:58:06.420
+coming up into a market. What what what is the approach of
+
+00:58:06.420 --> 00:58:09.580
+like building their product. What kind of a customer they
+
+00:58:09.580 --> 00:58:13.100
+are able to acquire all all of these things you have to read
+
+00:58:13.100 --> 00:58:16.540
+out you have to research. And then maybe present it to me on
+
+00:58:16.540 --> 00:58:20.100
+a weekly basis or maybe twice in a week. Right. So in this
+
+00:58:20.100 --> 00:58:23.560
+way without like you know investing much of time because as
+
+00:58:23.560 --> 00:58:25.480
+a director as a manager you will be having so many other
+
+00:58:25.480 --> 00:58:28.520
+tasks as well so many other works as well. This will be
+
+00:58:28.520 --> 00:58:32.500
+again one of your work. So on a weekly basis on a monthly
+
+00:58:32.500 --> 00:58:35.560
+basis you will keep on getting a lot of inputs. They will do
+
+00:58:35.560 --> 00:58:37.880
+the hard work. They will do a genuine research and you will
+
+00:58:37.880 --> 00:58:42.120
+be having a summary of it. And yeah. So based on that you
+
+00:58:42.120 --> 00:58:45.360
+will be able to take your decision. Okay. So this is what we
+
+00:58:45.360 --> 00:58:49.760
+all do in terms of doing a market like a research or
+
+00:58:49.760 --> 00:58:53.400
+competitor research you can say. Another one is how do you
+
+00:58:53.400 --> 00:58:57.440
+manage a customer relationship. Everywhere I have mentioned
+
+00:58:57.440 --> 00:59:00.100
+generative AI but yeah so this is something which is like
+
+00:59:00.100 --> 00:59:03.980
+not just with generative AI with respect to all the product
+
+00:59:03.980 --> 00:59:09.080
+line. Right. So how do I. What was the question. Yeah.
+
+00:59:10.180 --> 00:59:12.720
+Customer relationship. So how do I manage a customer
+
+00:59:12.720 --> 00:59:19.060
+relationship. So obviously not just by doing a party with my
+
+00:59:19.060 --> 00:59:23.820
+customer or like you know bringing my customers for a treat
+
+00:59:23.820 --> 00:59:28.040
+or something that happens obviously in terms of like that is
+
+00:59:28.040 --> 00:59:31.060
+also part of customer relationship. No doubt about it.
+
+00:59:31.140 --> 00:59:35.200
+Right. But at the end of the day everything will go for a
+
+00:59:35.200 --> 00:59:40.000
+very long time based on the trust and the actual revenue
+
+00:59:40.000 --> 00:59:45.020
+based business. If you are able to build. So a good product
+
+00:59:45.020 --> 00:59:49.700
+a good team right aligned with a good intention for a very
+
+00:59:49.700 --> 00:59:53.740
+very long time. Right. And creating a small impact at a
+
+00:59:53.740 --> 00:59:57.160
+time. So this will be my philosophy in terms of building a
+
+00:59:57.160 --> 01:00:01.340
+customer relationship. Right. So that will be my philosophy.
+
+01:00:01.580 --> 01:00:03.480
+What are the considerations for generative AI product
+
+01:00:03.480 --> 01:00:10.240
+management. Okay. Product management. Same thing. I think I
+
+01:00:10.240 --> 01:00:12.440
+have already answered so many times. How do you handle
+
+01:00:12.440 --> 01:00:18.160
+generative AI sales and marketing. Okay. So whenever any
+
+01:00:18.160 --> 01:00:21.600
+anyone is like creating a generative AI like a product. So
+
+01:00:21.600 --> 01:00:24.400
+the very first part right. Let's suppose if I am a big
+
+01:00:24.400 --> 01:00:27.180
+company as we are talking about fortune 500 over here. So
+
+01:00:27.180 --> 01:00:30.420
+obviously I will be I will not be new for the market. People
+
+01:00:30.420 --> 01:00:32.600
+are already aware about it. I have I must be having a
+
+01:00:32.600 --> 01:00:36.800
+multiple clients across all the different verticals. So if I
+
+01:00:36.800 --> 01:00:39.600
+have to like if I have built something something even a
+
+01:00:39.600 --> 01:00:42.200
+small. Maybe I have built something. For a sales automation
+
+01:00:42.200 --> 01:00:47.220
+or maybe for a finance automation what I will do. So I'll
+
+01:00:47.220 --> 01:00:49.940
+try to connect with all the business heads. I'll just tell
+
+01:00:49.940 --> 01:00:52.100
+them I'll just explain them that okay. So this is the
+
+01:00:52.100 --> 01:00:56.380
+product that I built. So maybe we can try to approach to
+
+01:00:56.380 --> 01:00:58.900
+your clients. Right. Because every business head will be
+
+01:00:58.900 --> 01:01:02.600
+having their own client base. So I can I can approach to all
+
+01:01:02.600 --> 01:01:06.140
+of them and then we can try to you know give a demo. We'll
+
+01:01:06.140 --> 01:01:08.800
+try to take their feedback. We'll try to convince them that
+
+01:01:08.800 --> 01:01:12.580
+how this can be implemented. Okay. And in this way right
+
+01:01:12.580 --> 01:01:16.580
+this will be my very first approach in terms of doing a
+
+01:01:16.580 --> 01:01:20.640
+sales and marketing so that word will go to everyone. Right.
+
+01:01:20.680 --> 01:01:24.140
+It should float to everyone. Right. Everyone should be aware
+
+01:01:24.140 --> 01:01:26.240
+about that. We have done something. We have built something
+
+01:01:26.240 --> 01:01:31.320
+as a company. Once they will be happy then we can try to
+
+01:01:31.320 --> 01:01:34.040
+take some sort of our testimony some sort of our feedbacks.
+
+01:01:34.040 --> 01:01:38.200
+Right. And then I'll go out in terms of finding a new
+
+01:01:38.200 --> 01:01:41.380
+customer in terms of finding a new client. So. So this is my
+
+01:01:41.380 --> 01:01:45.460
+approach in sort for us sales and marketing apart from like
+
+01:01:45.460 --> 01:01:47.840
+budget planning team and everything and even sometime.
+
+01:01:48.120 --> 01:01:52.020
+Right. So sometime events sometime we try to even like on
+
+01:01:52.020 --> 01:01:55.520
+board some sort of a celebrity and they just do a sales and
+
+01:01:55.520 --> 01:02:00.120
+marketing for us. But yeah, my first approach will be reach
+
+01:02:00.120 --> 01:02:04.260
+out to the existing and then look out for the outer world.
+
+01:02:05.320 --> 01:02:08.800
+Next, what is the approach for generative AI business
+
+01:02:08.800 --> 01:02:09.600
+development?
+
+01:02:12.000 --> 01:02:15.560
+Same. Identify the problem. The very first question which I
+
+01:02:15.560 --> 01:02:17.860
+have answered. So identify the problem in a very first
+
+01:02:17.860 --> 01:02:21.940
+place. If I am doing a new business development, build a
+
+01:02:21.940 --> 01:02:26.460
+team, right people at a right time in a right place with a
+
+01:02:26.460 --> 01:02:31.140
+right budget and then once they will be able to build some
+
+01:02:31.140 --> 01:02:36.920
+sort of MVPs or some sort of a product, then go for a scale,
+
+01:02:37.060 --> 01:02:40.660
+go for a robust governance and start spreading that product
+
+01:02:40.660 --> 01:02:43.780
+across our different. Different COEs, different, different
+
+01:02:43.780 --> 01:02:48.400
+excellence. So that's my answer guys. So hope it's fine.
+
+01:02:48.540 --> 01:02:52.600
+Yeah. All of you are able to get some idea. Mostly it's for
+
+01:02:52.600 --> 01:02:56.020
+senior people, not for like a junior people on a developer
+
+01:02:56.020 --> 01:03:00.400
+label. People are not going to ask you this question. Yeah.
+
+01:03:00.560 --> 01:03:04.180
+But someday you will become a lead. Someday you will become
+
+01:03:04.180 --> 01:03:08.440
+a manager and then this these questions will be pretty much
+
+01:03:08.440 --> 01:03:09.360
+relevant for you.
+
+01:03:12.700 --> 01:03:16.520
+Yes. Yes. Fine. Anyone hope people are not sleeping. If you
+
+01:03:16.520 --> 01:03:19.580
+can like ping me in a chat. Yeah.
+
+01:03:22.940 --> 01:03:28.360
+Okay. So 50 questions out of that, I think some 20, 20, 30
+
+01:03:28.360 --> 01:03:30.900
+questions are technical. Okay. Very few questions are left
+
+01:03:30.900 --> 01:03:31.160
+now.
+
+01:03:38.870 --> 01:03:41.170
+Okay. Let's start with one 51 now.
+
+01:03:51.960 --> 01:03:56.640
+Okay. So here, a question says that, that, uh, how, uh, do
+
+01:03:56.640 --> 01:04:00.920
+you, uh, implement, uh, advanced prompt engineering? It's a
+
+01:04:00.920 --> 01:04:03.260
+tech question. Now it's a tech section. A complete section
+
+01:04:03.260 --> 01:04:06.880
+is like a tech. So one 50 till one 70, it's a 20 question,
+
+01:04:07.000 --> 01:04:10.180
+right? 20 questions set. Okay. And plus, like I said, so I'm
+
+01:04:10.180 --> 01:04:14.160
+preparing the writeups basically for all of these, for most
+
+01:04:14.160 --> 01:04:16.440
+of the question I have already prepared with the help of AI,
+
+01:04:16.560 --> 01:04:19.360
+I'm just trying to read out all of these things so that, you
+
+01:04:19.360 --> 01:04:22.340
+know, I can, I can try to put my flavor. It should not be
+
+01:04:22.340 --> 01:04:26.140
+just an AI. It should even come with the human feedback. So
+
+01:04:26.140 --> 01:04:29.960
+I'm just doing it from my side. And, uh, mostly by this
+
+01:04:29.960 --> 01:04:33.400
+week. Uh, it will be ready from my side because the 200
+
+01:04:33.400 --> 01:04:37.960
+questions, uh, easy to talk about it. Uh, but yeah, so when
+
+01:04:37.960 --> 01:04:40.040
+you have to type, so you have to type it, right? So you
+
+01:04:40.040 --> 01:04:42.040
+should not make grammatical mistake and a spelling mistake
+
+01:04:42.040 --> 01:04:45.100
+and many more things. And then vetting and all those things
+
+01:04:45.100 --> 01:04:46.900
+come into picture. That's the reason it's taking time for
+
+01:04:46.900 --> 01:04:49.860
+me. Uh, but yeah, so whatever answer, which I'm giving you
+
+01:04:49.860 --> 01:04:52.700
+almost similar kind of answer, you will be able to find out
+
+01:04:52.700 --> 01:04:55.580
+even in those lighters, because again, it's coming from my
+
+01:04:55.580 --> 01:04:59.260
+site with my flavor, uh, basically with some sort of, uh,
+
+01:04:59.360 --> 01:05:05.780
+additions over here. Yeah. So, uh, here question says that,
+
+01:05:05.800 --> 01:05:09.380
+that, uh, how do you implement a advanced prompt engineering
+
+01:05:09.380 --> 01:05:11.960
+technique? We all know about prompting, right? Few sort
+
+01:05:11.960 --> 01:05:15.860
+prompting, or maybe like a zero sort prompting. We all have
+
+01:05:15.860 --> 01:05:20.620
+discussed that a lot, right? Uh, basically what we do, so
+
+01:05:20.620 --> 01:05:23.160
+whenever we try to talk about the prompting, so obviously we
+
+01:05:23.160 --> 01:05:27.700
+have to break down our prompts as a correct instruction. So
+
+01:05:27.700 --> 01:05:30.240
+whether we are trying to give a user prompt or maybe a
+
+01:05:30.240 --> 01:05:31.020
+system prompt. So, uh, if you are trying to give a user
+
+01:05:31.020 --> 01:05:35.240
+prompt, breaking down things, uh, is pretty much important.
+
+01:05:35.440 --> 01:05:39.420
+Like how, uh, you should think, what kind of a data format
+
+01:05:39.420 --> 01:05:43.020
+that you should generate, what you should not generate, what
+
+01:05:43.020 --> 01:05:45.580
+you should like, uh, do it, what should you not do it?
+
+01:05:45.860 --> 01:05:48.740
+Everything you should mention inside the prompt, because,
+
+01:05:48.780 --> 01:05:52.860
+uh, LMS are nothing but just like your junior, right? And if
+
+01:05:52.860 --> 01:05:55.000
+you're a senior and if you're giving an instruction, you
+
+01:05:55.000 --> 01:05:57.600
+have to be very clear in terms of giving instruction.
+
+01:05:57.900 --> 01:06:00.720
+Because same instruction. Your juniors are going to follow.
+
+01:06:00.780 --> 01:06:03.240
+Okay. And, uh, by following that instruction, juniors are
+
+01:06:03.240 --> 01:06:06.400
+going to deliver something. So this is what happens with
+
+01:06:06.400 --> 01:06:08.780
+respect to a prompt. Many times we have already discussed
+
+01:06:08.780 --> 01:06:12.440
+about it, right? So always try to use a few short, a few
+
+01:06:12.440 --> 01:06:16.100
+short prompting. I would say, uh, chain of thought, right?
+
+01:06:16.880 --> 01:06:20.820
+Always try to provide a proper role that you are an
+
+01:06:20.820 --> 01:06:24.420
+assistant, you are a scientist, you are a researcher, or
+
+01:06:24.420 --> 01:06:27.840
+maybe you are just a student, right? Maybe you are a senior
+
+01:06:27.840 --> 01:06:30.840
+grad. So that, you know, your LLM will try to generate a
+
+01:06:30.840 --> 01:06:33.840
+prompt. So you have to generate it with that capability. So
+
+01:06:33.840 --> 01:06:37.420
+roles assignment is pretty much important. Breaking down a
+
+01:06:37.420 --> 01:06:40.820
+prompt is again, pretty much important. Giving a example,
+
+01:06:40.980 --> 01:06:44.360
+maybe one example at a minimum, right? This is something
+
+01:06:44.360 --> 01:06:47.460
+called as few short prompting. So when you give an example
+
+01:06:47.460 --> 01:06:50.260
+that, okay, I'm looking for an answer in this manner, or
+
+01:06:50.260 --> 01:06:52.180
+whenever you are generating an answer, generate in this
+
+01:06:52.180 --> 01:06:55.420
+manner so that your system will be able to take some sort of
+
+01:06:55.420 --> 01:06:58.360
+inspiration out of it. And then it is going to generate some
+
+01:06:58.360 --> 01:07:00.820
+answers. So this is what we do. Okay.
+
+01:07:04.120 --> 01:07:08.220
+So this will be the implementation from the problem. Digging
+
+01:07:08.220 --> 01:07:12.580
+technique now 152 questions says that, that, uh, what is the
+
+01:07:12.580 --> 01:07:16.540
+approach for building a custom language model? Okay. So
+
+01:07:16.540 --> 01:07:20.200
+basically if I have to, you know, build a custom language
+
+01:07:20.200 --> 01:07:23.960
+model, I have to approach one approaches. So take the
+
+01:07:23.960 --> 01:07:27.160
+transformer architecture and then like, you know, prepare
+
+01:07:27.160 --> 01:07:30.980
+the dataset and go ahead with the training. I have. already
+
+01:07:30.980 --> 01:07:35.320
+shown that part as well right but again so you will not end
+
+01:07:35.320 --> 01:07:38.480
+up generating a very good model because the very first part
+
+01:07:38.480 --> 01:07:41.080
+is you don't have a world's data you don't have a world's
+
+01:07:41.080 --> 01:07:44.360
+information maybe you just have a data with respect to your
+
+01:07:44.360 --> 01:07:48.500
+own domain which is a very like a small data set as compared
+
+01:07:48.500 --> 01:07:52.680
+to the world's data right to build actually a good model
+
+01:07:52.680 --> 01:07:56.960
+second part is that you don't have a compute power right so
+
+01:07:56.960 --> 01:08:01.040
+having hundreds of GPUs is not even called as a compute
+
+01:08:01.040 --> 01:08:04.440
+power in real to train such kind of a model so you have a
+
+01:08:04.440 --> 01:08:07.260
+very limited compute power you have a very limited budget so
+
+01:08:07.260 --> 01:08:09.660
+even one million dollar of budget is not enough for that
+
+01:08:09.660 --> 01:08:13.080
+maybe like seven to eight crore Indian currency is not even
+
+01:08:13.080 --> 01:08:15.760
+enough for building such kind of a model so you need
+
+01:08:15.760 --> 01:08:19.880
+hundreds of crores or like millions hundred millions kind of
+
+01:08:19.880 --> 01:08:23.980
+a dollar plus you need a team of the research research
+
+01:08:23.980 --> 01:08:28.120
+developer everyone right a data labeler right data labeler
+
+01:08:28.120 --> 01:08:31.500
+again big team is required for that so if I'm trying to
+
+01:08:31.500 --> 01:08:36.200
+build or develop my own custom model I'll not follow a more
+
+01:08:36.200 --> 01:08:38.980
+like building a model from the scratch because I know my
+
+01:08:38.980 --> 01:08:42.240
+company can't do it right so what I will do I'll try to
+
+01:08:42.240 --> 01:08:46.240
+adopt a fine tuning approach all the time right and we I
+
+01:08:46.240 --> 01:08:48.760
+think we talked about a fine tuning a lot even in previous
+
+01:08:48.760 --> 01:08:52.900
+questions right we talked about like a full fine tuning we
+
+01:08:52.900 --> 01:08:53.820
+talked about a lot of fine tuning and we talked about fine
+
+01:08:53.820 --> 01:08:54.260
+tuning and we talked about a lot of fine tuning we talked
+
+01:08:54.260 --> 01:08:57.500
+about a Quora, we talked about a DPO or we talked about a
+
+01:08:57.500 --> 01:09:00.200
+reinforcement learning with a human feedback, right. All
+
+01:09:00.200 --> 01:09:02.700
+these terms I think we all are aware about, right guys,
+
+01:09:02.860 --> 01:09:10.370
+yeah, okay, Jithin is saying even a chat GPT cannot answer
+
+01:09:10.370 --> 01:09:12.690
+like the way you asked, thank you sir, thank you for your
+
+01:09:12.690 --> 01:09:17.970
+positive feedback and words. So I think, I think, yeah, Asit
+
+01:09:17.970 --> 01:09:22.410
+has written a very good, he is very senior to me, I know, so
+
+01:09:22.410 --> 01:09:24.950
+he has written a very good article on LinkedIn. I think I
+
+01:09:24.950 --> 01:09:28.490
+have already shared that article. Even today he has
+
+01:09:28.490 --> 01:09:31.310
+published a very good one, right, but with respect to a fine
+
+01:09:31.310 --> 01:09:33.850
+tuning technique, so he has, I remember and even I read that
+
+01:09:33.850 --> 01:09:37.110
+one, so he has like articulated a various like a, you know,
+
+01:09:37.110 --> 01:09:41.250
+beautiful one, so maybe you can, I think I have already
+
+01:09:41.250 --> 01:09:44.450
+shared and even he has shared in a group, so maybe you can
+
+01:09:44.450 --> 01:09:47.070
+take out some 2-3 minutes of your time and then you can read
+
+01:09:47.070 --> 01:09:50.510
+out. But yeah, even in class I have already discussed about
+
+01:09:50.510 --> 01:09:53.610
+it, right, this is like a fine tuning technique. But yeah.
+
+01:09:53.610 --> 01:09:57.130
+So yeah, do read his LinkedIn article, it's a very good one.
+
+01:09:57.310 --> 01:10:00.510
+You will get a very great idea and knowledge and again a
+
+01:10:00.510 --> 01:10:05.130
+kind of a revision, right. Because see, doing something is
+
+01:10:05.130 --> 01:10:08.570
+different, but in an interview, right, presence of mind
+
+01:10:08.570 --> 01:10:11.770
+matters a lot or you can say presence of mind matters the
+
+01:10:11.770 --> 01:10:15.190
+most. It's not like interviewer will ask you a question and
+
+01:10:15.190 --> 01:10:18.710
+he will say, okay, let me give 5 minutes of time and then
+
+01:10:18.710 --> 01:10:21.610
+I'll answer, I'm just thinking, I'm just processing, no, you
+
+01:10:21.610 --> 01:10:24.830
+don't have that much of time, right. It should always comes
+
+01:10:24.830 --> 01:10:28.730
+in a conversational way that, okay, two like, you know,
+
+01:10:28.750 --> 01:10:32.550
+intellectuals are interviews is all about like conversation
+
+01:10:32.550 --> 01:10:36.330
+between two people, right. And again, at the end of the day,
+
+01:10:36.350 --> 01:10:39.330
+you will get hired or they will like, they will be able to
+
+01:10:39.330 --> 01:10:42.490
+onboard you if they will be able to find some sort of a
+
+01:10:42.490 --> 01:10:45.310
+click inside you. If they are able to find out a click in 5
+
+01:10:45.310 --> 01:10:48.390
+minutes, believe me, you will be hired. This is how easy
+
+01:10:48.390 --> 01:10:53.410
+like interview is, right. Otherwise, it will look tough.
+
+01:10:53.610 --> 01:10:56.790
+Believe me, like 45 or like 60 minutes, you will end up
+
+01:10:56.790 --> 01:11:00.350
+sweating again and again. And that happens, that happens,
+
+01:11:00.450 --> 01:11:03.010
+right, if you're not confident enough. So it's more about,
+
+01:11:03.230 --> 01:11:07.810
+you know, interview is more about things on fingertips,
+
+01:11:08.110 --> 01:11:13.550
+right. That okay, so even in my like sleep, I can come and I
+
+01:11:13.550 --> 01:11:18.630
+can talk about it, just like I'm doing as of now, right. So
+
+01:11:18.630 --> 01:11:21.990
+it's and that will come from the multiple iterations, right.
+
+01:11:21.990 --> 01:11:26.650
+Not for knowing things but from a multiple iterations. So I
+
+01:11:26.650 --> 01:11:29.750
+think, I talked about like a moral building, right. So
+
+01:11:29.750 --> 01:11:34.330
+obviously, I will not go ahead with like a scratch moral
+
+01:11:34.330 --> 01:11:37.450
+building approach. And people may ask you a question that
+
+01:11:37.450 --> 01:11:40.330
+why not a scratch moral building approach. You can simply
+
+01:11:40.330 --> 01:11:43.450
+say that, are you going to give me a 100 million dollar? Are
+
+01:11:43.450 --> 01:11:45.730
+you going to give me a team of researcher? Are you going to
+
+01:11:45.730 --> 01:11:48.470
+give me a team of like a developer? Are you going to give me
+
+01:11:48.470 --> 01:11:51.470
+a team of like a labelers, data labelers by the way? Are you
+
+01:11:51.470 --> 01:11:54.150
+going to give me this data? me a world's data even in your
+
+01:11:54.150 --> 01:11:56.070
+domain let's suppose I'm talking about healthcare domain
+
+01:11:56.070 --> 01:11:58.470
+right so again in healthcare domain itself maybe your
+
+01:11:58.470 --> 01:12:01.290
+company is having data but that is not data is not enough to
+
+01:12:01.290 --> 01:12:04.210
+train a good model right so maybe you need a world's data
+
+01:12:04.210 --> 01:12:07.450
+and first of all your models to understand a general English
+
+01:12:07.450 --> 01:12:10.610
+or maybe French German whatever it is right a general
+
+01:12:10.610 --> 01:12:13.670
+conversation your model is supposed to understand if your
+
+01:12:13.670 --> 01:12:16.050
+model don't understand your general conversation doesn't
+
+01:12:16.050 --> 01:12:18.270
+matter what kind of a specialized like a training you are
+
+01:12:18.270 --> 01:12:21.030
+trying to do your model will end up generating some random
+
+01:12:21.030 --> 01:12:24.770
+XYZ things right means I will not even say hallucination
+
+01:12:24.770 --> 01:12:29.310
+it's like generating some something right so that there
+
+01:12:29.310 --> 01:12:31.230
+should be a question that yeah if you are going to provide
+
+01:12:31.230 --> 01:12:35.270
+me that I will train a model from scratch if not then I will
+
+01:12:35.270 --> 01:12:38.510
+try to follow the fine tuning approach again in fine tuning
+
+01:12:38.510 --> 01:12:40.850
+so I will not go ahead with the full fine tuning because
+
+01:12:40.850 --> 01:12:43.650
+again that will be a cost less approach for me I will try to
+
+01:12:43.650 --> 01:12:45.750
+go ahead with the you know parameterized efficient fine
+
+01:12:45.750 --> 01:12:50.090
+tuning RLFH fine tuning. Okay. RLHF yeah reinforcement
+
+01:12:50.090 --> 01:12:54.870
+learning human with a human feedback RLHF I always like you
+
+01:12:54.870 --> 01:12:59.850
+know interchange these characters in between sometime I will
+
+01:12:59.850 --> 01:13:02.350
+go ahead with the DPO so I will go ahead with the LoRa I
+
+01:13:02.350 --> 01:13:05.670
+will go ahead with the Cora right so this is this is how
+
+01:13:05.670 --> 01:13:08.190
+your answer should be and then if someone is going to ask
+
+01:13:08.190 --> 01:13:10.210
+that can you please explain me DPO can you please explain me
+
+01:13:10.210 --> 01:13:13.650
+like RLHF how you prepared the data set what you have done
+
+01:13:13.650 --> 01:13:17.010
+in your previous one right which platform you have used for
+
+01:13:17.010 --> 01:13:20.570
+fine tuning. How many GPUs you have stacked basically how
+
+01:13:20.570 --> 01:13:25.110
+much time did it take what was your evaluation mechanism for
+
+01:13:25.110 --> 01:13:28.170
+the model that you have produced or the model that you have
+
+01:13:28.170 --> 01:13:32.050
+trained right what was the total cost on that then you can
+
+01:13:32.050 --> 01:13:34.990
+start breaking it down because after saying this obviously
+
+01:13:34.990 --> 01:13:37.970
+it is going to or there is a very high possibility that
+
+01:13:37.970 --> 01:13:41.210
+interviewer will start firing a sequence of the question an
+
+01:13:41.210 --> 01:13:43.870
+interesting one right that we have already discussed in our
+
+01:13:43.870 --> 01:13:46.190
+past so many times right so many times we have already
+
+01:13:46.190 --> 01:13:49.270
+discussed about those sequential questions. So this is this
+
+01:13:49.270 --> 01:13:52.650
+is how you know you are supposed to basically like answer
+
+01:13:52.650 --> 01:13:58.310
+then now next question says that that how do you implement
+
+01:13:58.310 --> 01:14:02.590
+an advanced fine tuning strategies same like nothing new
+
+01:14:02.590 --> 01:14:09.010
+LoRa Cora Prefet like DPO or ORPO is another term RLHF is
+
+01:14:09.010 --> 01:14:11.870
+another term so this is how I will do it right and then I
+
+01:14:11.870 --> 01:14:15.670
+will try to like you know so advanced fine tuning strategy
+
+01:14:15.670 --> 01:14:17.390
+so strategy wise. So strategy wise I will start from the
+
+01:14:17.390 --> 01:14:19.910
+data preparation so whenever I will try to give that answer
+
+01:14:19.910 --> 01:14:22.690
+so obviously everything will start with my data preparation
+
+01:14:22.690 --> 01:14:25.830
+so what kind of supervised training if I am trying to do or
+
+01:14:25.830 --> 01:14:28.710
+maybe unsupervised training I am trying to do then what code
+
+01:14:29.210 --> 01:14:31.990
+is the base model which I have considered right base model
+
+01:14:31.990 --> 01:14:34.610
+selection is again one of the things so what is the base
+
+01:14:34.610 --> 01:14:36.850
+model which I have selected basically because that is
+
+01:14:36.850 --> 01:14:39.910
+something that you will fine tune right if you are doing of
+
+01:14:39.910 --> 01:14:42.770
+talking about fine tuning so obviously you must be having a
+
+01:14:42.770 --> 01:14:45.290
+base model you have selected the base model right and that
+
+01:14:45.290 --> 01:14:46.990
+model. Similarly you are trying to do a fine tuning for
+
+01:14:46.990 --> 01:14:53.050
+maybe LLM maybe for multitask transformers anything and then
+
+01:14:53.050 --> 01:14:56.470
+how much data you have prepared what is the accuracy of your
+
+01:14:56.470 --> 01:14:58.730
+data how you have done the labeling part how you have
+
+01:14:58.730 --> 01:15:02.470
+maintained the labeling or authenticity of the labeling of
+
+01:15:02.470 --> 01:15:04.750
+your data set if you are going out with a supervised one
+
+01:15:04.750 --> 01:15:08.890
+supervised like a fine tuning so this will be the strategy.
+
+01:15:09.110 --> 01:15:12.470
+Then obviously hardware right so how you have decided that
+
+01:15:12.470 --> 01:15:15.270
+this much hardware is required then what was the time it
+
+01:15:15.270 --> 01:15:18.250
+took. Okay. What was the total cost on that one then how you
+
+01:15:18.250 --> 01:15:22.990
+have done the evaluation if your evaluation is like you know
+
+01:15:22.990 --> 01:15:28.350
+less than expected one then what you have done all this
+
+01:15:28.350 --> 01:15:33.490
+story fall in the same line in terms of planning the fine
+
+01:15:33.490 --> 01:15:37.590
+tuning strategies. Now 154 number question says that that
+
+01:15:37.590 --> 01:15:39.950
+what are the consideration for building a domain a specific
+
+01:15:39.950 --> 01:15:43.570
+model same answer right starting from the data preparation
+
+01:15:43.570 --> 01:15:47.970
+then team then a labeling of the data right and define the
+
+01:15:47.970 --> 01:15:50.990
+proper model model that I'm going to fine tune and then till
+
+01:15:50.990 --> 01:15:55.010
+evaluation how to implement advanced evaluation methodology
+
+01:15:55.010 --> 01:16:00.430
+see evaluation always depends upon you know task in my hand.
+
+01:16:00.590 --> 01:16:02.950
+So evaluation is not something called as like a thumb rule
+
+01:16:02.950 --> 01:16:06.710
+that okay I will just use same because you know evaluation
+
+01:16:06.710 --> 01:16:09.170
+strategy but yeah in terms of designing the strategy of
+
+01:16:09.170 --> 01:16:12.010
+methodology so there will be a unit test there will be a
+
+01:16:12.010 --> 01:16:14.710
+functional test there will be adversarial test. We try to do
+
+01:16:14.710 --> 01:16:17.290
+there will be an end to end simulation we try to do with the
+
+01:16:17.290 --> 01:16:20.230
+real scenario right again inside that there will be a
+
+01:16:20.230 --> 01:16:24.710
+multiple breakdowns and then we like try to like evaluate
+
+01:16:24.710 --> 01:16:29.130
+basically any kind of a model. Now what is the approach for
+
+01:16:29.130 --> 01:16:32.750
+building an automated evaluation system so depends upon the
+
+01:16:32.750 --> 01:16:36.290
+task right then I will try to like build a complete CI CD
+
+01:16:36.290 --> 01:16:41.190
+pipeline for that one. So that model will be trained and
+
+01:16:41.190 --> 01:16:44.150
+then it will go through my unit test it will go through my
+
+01:16:44.150 --> 01:16:47.150
+functional test it will go through my adversarial test it
+
+01:16:47.150 --> 01:16:51.630
+will go with my end to end evaluation it will go to go
+
+01:16:51.630 --> 01:16:55.010
+through my safety checks by the way right safety checks all
+
+01:16:55.010 --> 01:16:58.890
+the like guardrails and then it will try to deploy itself
+
+01:16:58.890 --> 01:17:02.870
+and somewhere all of these things you can try to attach
+
+01:17:02.870 --> 01:17:06.070
+inside your CI CD pipeline that you are going to create that
+
+01:17:06.070 --> 01:17:11.090
+we all do for any kind of a model next is that how do you
+
+01:17:11.090 --> 01:17:14.810
+implement advanced monitoring and observability. Okay kind
+
+01:17:14.810 --> 01:17:19.670
+of a MLOps part you can say right so basically we try to
+
+01:17:19.670 --> 01:17:24.730
+monitor model plus we try to monitor even infrastructure so
+
+01:17:24.730 --> 01:17:28.310
+it's basically a post deployment things right not pre
+
+01:17:28.310 --> 01:17:31.090
+deployment. Pre deployment is one and post deployment is
+
+01:17:31.090 --> 01:17:34.430
+this one or you can say hyper care generally we say hyper
+
+01:17:34.430 --> 01:17:38.430
+care in an industrial world that okay now project is in
+
+01:17:38.430 --> 01:17:40.790
+hyper care hyper care means we are trying to monitor it we
+
+01:17:40.790 --> 01:17:43.470
+are trying to observe it so if my model is going to drift if
+
+01:17:43.470 --> 01:17:47.830
+it is hallucinating more all these things we try to do it
+
+01:17:47.830 --> 01:17:51.610
+and again like I said it's a part of a ops basically second
+
+01:17:51.610 --> 01:17:57.450
+infra right infra so we try to even check that are we not
+
+01:17:57.450 --> 01:18:02.210
+like a have you not commenced like a something more than
+
+01:18:02.210 --> 01:18:04.970
+required or maybe less than required what is the traffic
+
+01:18:04.970 --> 01:18:07.970
+which I am receiving and what is the percentage of
+
+01:18:07.970 --> 01:18:11.070
+utilization of my entire infrastructure all of these things
+
+01:18:11.070 --> 01:18:15.930
+we try to observe. And then a security so anyone can do a
+
+01:18:15.930 --> 01:18:19.770
+DDoS attack maybe any kind of injections or something no one
+
+01:18:19.770 --> 01:18:23.230
+should be able to do it so this is something that we try to
+
+01:18:23.230 --> 01:18:25.470
+like a implement with respect to monitoring and
+
+01:18:25.470 --> 01:18:29.850
+observability and nowadays right nowadays let's talk about
+
+01:18:29.850 --> 01:18:33.490
+AWS let's talk about Azure let's talk about GCP everyone
+
+01:18:33.490 --> 01:18:37.730
+provides you this so it's not like we do it right we just
+
+01:18:37.730 --> 01:18:41.370
+plan it and my ops guy will do it this is the standard
+
+01:18:41.370 --> 01:18:44.990
+approach we try to follow not just in a GNI project but in
+
+01:18:44.990 --> 01:18:48.810
+every project it's a standard nowadays because we are
+
+01:18:48.810 --> 01:18:51.270
+developing software we as a world right are developing
+
+01:18:51.270 --> 01:18:55.290
+software since last 35 years especially from 1990s at least
+
+01:18:55.290 --> 01:18:58.550
+you can say 1980s 1990s so it's a 35 year 45 year of
+
+01:18:58.550 --> 01:19:02.530
+experience industry is having and now we are able to reach
+
+01:19:02.530 --> 01:19:05.430
+out to the place so where these things are pretty much
+
+01:19:05.430 --> 01:19:08.450
+normal right these things are so I just have to strategize
+
+01:19:08.450 --> 01:19:11.110
+it the rest will be done and if you have not strategize it
+
+01:19:11.110 --> 01:19:12.570
+because as I said you have to be a senior that would be your
+
+01:19:12.570 --> 01:19:15.950
+responsibility then obviously your developer will not do
+
+01:19:15.950 --> 01:19:21.090
+right what are the consideration for building a gen AI ML
+
+01:19:21.090 --> 01:19:28.870
+ops okay so consideration for building a gen AI ML ops I can
+
+01:19:28.870 --> 01:19:32.710
+try to use maybe ML ops kind of a tool for that one I can
+
+01:19:32.710 --> 01:19:35.550
+try to like you know maintain a worsening of the model I
+
+01:19:35.550 --> 01:19:37.730
+will try to maintain the prompts I will try to maintain the
+
+01:19:37.730 --> 01:19:41.550
+data set I will try to automate the evaluation. I'll try to
+
+01:19:41.550 --> 01:19:43.950
+maintain the data set. maintain my deployment so maybe CI CD
+
+01:19:43.950 --> 01:19:47.070
+based deployment green blue line kind of a deployment I will
+
+01:19:47.070 --> 01:19:51.270
+try to choose for how do you implement a advanced security
+
+01:19:51.270 --> 01:19:54.490
+measure so technically it's the same question but yeah
+
+01:19:54.490 --> 01:19:57.270
+everywhere there is a advance that's the only differences
+
+01:19:57.270 --> 01:20:01.690
+you will be able to find out so security measures basically
+
+01:20:01.690 --> 01:20:06.750
+first always start with the authentication that user should
+
+01:20:06.750 --> 01:20:09.950
+always get a privilege to access a system with their role
+
+01:20:09.950 --> 01:20:12.990
+everyone should not be able to access everything so role
+
+01:20:12.990 --> 01:20:15.670
+based access is a very first part for any system that we
+
+01:20:15.670 --> 01:20:21.770
+build right and then once this is done so whenever someone
+
+01:20:21.770 --> 01:20:25.190
+is trying to like you know send a input to your system to
+
+01:20:25.190 --> 01:20:28.950
+your server so input sanitization so we try to check that
+
+01:20:28.950 --> 01:20:32.790
+whether someone is sending a input which I was expecting or
+
+01:20:32.790 --> 01:20:36.630
+someone is trying to inject something with the input because
+
+01:20:36.630 --> 01:20:40.110
+input will go into your server right where you have. Your
+
+01:20:40.110 --> 01:20:43.470
+actual like you know software up and running or your actual
+
+01:20:43.470 --> 01:20:46.410
+code which is up and running so if someone is able to this
+
+01:20:46.410 --> 01:20:49.610
+is how injection happens right or DDoS attack happens so
+
+01:20:49.610 --> 01:20:53.890
+basically you have to like do a input sanitization from your
+
+01:20:53.890 --> 01:20:56.210
+side so you have to write a code for that you have to define
+
+01:20:56.210 --> 01:21:00.250
+the process for that one allow list right all of these
+
+01:21:00.250 --> 01:21:03.090
+things you have to implement in terms of a advanced security
+
+01:21:03.090 --> 01:21:08.270
+measure now next one is what is the approach for building a
+
+01:21:08.270 --> 01:21:13.870
+gen AI threat risk. Detection system so basically threat
+
+01:21:13.870 --> 01:21:17.150
+detection system is all about you know spotting a jail
+
+01:21:17.150 --> 01:21:22.190
+breaks right or maybe a data leaks or maybe a tool abuse now
+
+01:21:22.190 --> 01:21:24.550
+what will be the approach for building a gen AI threat
+
+01:21:24.550 --> 01:21:30.250
+detection system so here in terms of basically if I am
+
+01:21:30.250 --> 01:21:35.150
+building a threat detection system for my system so
+
+01:21:35.150 --> 01:21:37.450
+obviously first of all I will try to build maybe some sort
+
+01:21:37.450 --> 01:21:40.610
+of anomaly detection system right. Okay. Which will up and
+
+01:21:40.610 --> 01:21:42.750
+running for each and every input and each and every
+
+01:21:42.750 --> 01:21:46.050
+activities and it will try to pass a log that will be my
+
+01:21:46.050 --> 01:21:49.410
+first approach in the age of AI right instead of writing a
+
+01:21:49.410 --> 01:21:52.050
+rules so obviously I will try to build maybe a anomalies
+
+01:21:52.050 --> 01:21:55.350
+detection system for my security for the inputs for the log
+
+01:21:55.350 --> 01:21:59.430
+each and everything. Another thing is to prevent maybe a
+
+01:21:59.430 --> 01:22:02.890
+jail break to prevent a data leaks to prevent a tool abuses
+
+01:22:02.890 --> 01:22:07.370
+input sanitization is again one of the major part because
+
+01:22:07.370 --> 01:22:09.830
+that will be the entry point right. Right. Right. Right.
+
+01:22:09.830 --> 01:22:13.470
+Right. Right. Who will try to harm my system so I should
+
+01:22:13.470 --> 01:22:17.090
+always like a check recheck and write as many conditions as
+
+01:22:17.090 --> 01:22:20.670
+possible on an input sanitization because see I'm talking
+
+01:22:20.670 --> 01:22:24.790
+about LLM right and it's basically a generative system right
+
+01:22:24.790 --> 01:22:28.270
+it basically a generative system so maybe if I have not
+
+01:22:28.270 --> 01:22:32.270
+taught my model that this input or this word right is a
+
+01:22:32.270 --> 01:22:35.930
+harmful word my model will use it because for model it's not
+
+01:22:35.930 --> 01:22:39.330
+a word internally it's a vector it's basically like a
+
+01:22:39.330 --> 01:22:42.630
+numeric. Right. So my model will end up generating. It never
+
+01:22:42.630 --> 01:22:45.710
+understands a difference between abusive words, good words
+
+01:22:45.710 --> 01:22:49.210
+or bad words. I listen until I'm not going to label or I'm
+
+01:22:49.210 --> 01:22:52.270
+not going to tell to my models. Right. And many people can
+
+01:22:52.270 --> 01:22:55.190
+take advantage of that. Right. Maybe many people can inject
+
+01:22:55.190 --> 01:22:59.310
+some sort of input, which is not which they should not.
+
+01:22:59.450 --> 01:23:02.410
+Right. Which they should not and which may exploit the
+
+01:23:02.410 --> 01:23:06.930
+outcome of my model. Yeah. So you must have seen a lot of
+
+01:23:06.930 --> 01:23:10.610
+cases in last like two, three years that model is
+
+01:23:10.610 --> 01:23:13.790
+hallucinating. It is able to even give an answer which it is
+
+01:23:13.790 --> 01:23:18.030
+not supposed to. All those things. And we try to basically
+
+01:23:18.030 --> 01:23:21.270
+prevent it. So obviously, input sanitization is the very
+
+01:23:21.270 --> 01:23:26.110
+first part we'll try to do. Right. Apart from that, so human
+
+01:23:26.110 --> 01:23:30.690
+reviews comes into a picture or maybe refusal. So I'll not
+
+01:23:30.690 --> 01:23:33.150
+give this answer. So many people, many model, you must have
+
+01:23:33.150 --> 01:23:36.170
+seen that it refuses. That, OK, I'll not give this answer.
+
+01:23:36.310 --> 01:23:42.150
+Sorry. It's not like it's beyond my capability, by the way,
+
+01:23:42.190 --> 01:23:47.650
+or a rate limit. So how many user or how many times you will
+
+01:23:47.650 --> 01:23:52.050
+be able to access my system. Right. So that I'll just try to
+
+01:23:52.050 --> 01:23:55.210
+decrease your number of trials, basically. So if I'm
+
+01:23:55.210 --> 01:23:57.470
+decreasing the number of trials, somehow I'm decreasing the
+
+01:23:57.470 --> 01:24:01.190
+probability of injection as well. So this will be the system
+
+01:24:01.190 --> 01:24:05.210
+I am going to build if someone is going to. Ask me, how do
+
+01:24:05.210 --> 01:24:09.250
+you implement the advanced privacy protection? OK, so
+
+01:24:09.250 --> 01:24:12.370
+privacy protection first comes with the law. If there is no
+
+01:24:12.370 --> 01:24:16.790
+law, then there is no privacy. Simple. Right. So law. So
+
+01:24:16.790 --> 01:24:20.270
+basically, like in whatever reason, I'm going to publish my
+
+01:24:20.270 --> 01:24:25.010
+software or I'm going to publish my like models. So I have
+
+01:24:25.010 --> 01:24:27.790
+to read out the law where my legal team is going to help me
+
+01:24:27.790 --> 01:24:32.230
+out in that way. And then if they say that, OK, fine. So my
+
+01:24:32.230 --> 01:24:34.890
+data should be available in this server. I have to build my
+
+01:24:34.890 --> 01:24:38.050
+application in that way. If they say that this application
+
+01:24:38.050 --> 01:24:42.230
+should not be accessible under the age like who's having age
+
+01:24:42.230 --> 01:24:45.450
+less than 18 or 14, by the way, because, yeah, that some
+
+01:24:45.450 --> 01:24:48.030
+companies have some countries having that kind of a law as
+
+01:24:48.030 --> 01:24:52.050
+well. Dislike protection. So I'll have to implement a
+
+01:24:52.050 --> 01:24:56.250
+system. So which will be able to do the checks. Right. All
+
+01:24:56.250 --> 01:25:00.030
+these things. So basically, it basically like this technical
+
+01:25:00.030 --> 01:25:04.290
+things, we try to derive it from the law. Law, which is
+
+01:25:04.290 --> 01:25:07.850
+available in that particular reason. Now, this question is,
+
+01:25:07.870 --> 01:25:10.290
+what are the consideration for building a gen AI data
+
+01:25:10.290 --> 01:25:15.410
+protection? Yeah. So data protection, again, come from the
+
+01:25:15.410 --> 01:25:18.430
+policies. Same same answer. I'll try to give not very
+
+01:25:18.430 --> 01:25:22.570
+different. How do you implement advanced bias detection and
+
+01:25:22.570 --> 01:25:28.830
+mitigation? OK, so bias means so maybe my biased is biased
+
+01:25:28.830 --> 01:25:32.690
+towards a race, maybe some ethics, maybe towards some
+
+01:25:32.690 --> 01:25:36.770
+gender. Right. You just like a human being. So there is a
+
+01:25:36.770 --> 01:25:39.530
+possibility because model is what a generative model. And
+
+01:25:39.530 --> 01:25:44.290
+like I said, so for model, it's actually a vector means it's
+
+01:25:44.290 --> 01:25:47.850
+actually a numeric value. So you will it will take the input
+
+01:25:47.850 --> 01:25:51.190
+and based on its learning, it will end up generating the
+
+01:25:51.190 --> 01:25:55.910
+output. But but but if I'm trying to build a model, so
+
+01:25:55.910 --> 01:25:59.350
+obviously it should not be biased towards some gender. It
+
+01:25:59.350 --> 01:26:02.690
+should not be biased towards some like a ethnic group or
+
+01:26:02.690 --> 01:26:07.170
+somebody. Some sort of race, basically, I have to make sure
+
+01:26:07.170 --> 01:26:11.470
+about it. It should not be a toxic just like we as a human
+
+01:26:11.470 --> 01:26:14.950
+being. Right. When we get angry. So we start abusing
+
+01:26:14.950 --> 01:26:21.350
+someone. We start, you know, you know, saying some some or
+
+01:26:21.350 --> 01:26:24.930
+you start using some sort of foul languages. So my models
+
+01:26:24.930 --> 01:26:27.810
+would not do it. It doesn't matter how many times you are
+
+01:26:27.810 --> 01:26:31.450
+going to ask the same question to your model and to do that,
+
+01:26:31.570 --> 01:26:34.390
+obviously, there are human feedback. There are some toxic
+
+01:26:34.390 --> 01:26:37.690
+classification which is required even in our output. So when
+
+01:26:37.690 --> 01:26:40.890
+model will give the output, there should be some system that
+
+01:26:40.890 --> 01:26:46.630
+should do a checks that is this output ratio. Is this output
+
+01:26:46.630 --> 01:26:50.810
+like against some ethnics or is this output is toxic? There
+
+01:26:50.810 --> 01:26:53.610
+should be a system which check the output and then it should
+
+01:26:53.610 --> 01:26:56.890
+show to the user. So we have to build that guardrail and
+
+01:26:56.890 --> 01:26:59.790
+that classification as well. And we do that. Right. We do
+
+01:26:59.790 --> 01:27:03.970
+that a lot. We try to like, you know. So it's not like model
+
+01:27:03.970 --> 01:27:06.190
+will give me output and I'll try to show the output to the
+
+01:27:06.190 --> 01:27:09.370
+end user. No model will give the output and then it will
+
+01:27:09.370 --> 01:27:12.410
+filter through the system that I have built and then it will
+
+01:27:12.410 --> 01:27:15.450
+be shown to the user. So basically it's a double check.
+
+01:27:15.530 --> 01:27:18.350
+Right. So this is how I will be building a bias detection.
+
+01:27:18.610 --> 01:27:21.810
+So whenever someone is going to ask you a question, I simply
+
+01:27:21.810 --> 01:27:24.270
+say that that, OK, I have built the model. I have trained
+
+01:27:24.270 --> 01:27:27.390
+the model. I have fine tuned the model along with that.
+
+01:27:27.550 --> 01:27:30.490
+Right. So I have built another system. So where model will
+
+01:27:30.490 --> 01:27:34.910
+not give an answer directly to my. My end user, right. It
+
+01:27:34.910 --> 01:27:37.430
+will go through the system. Obviously, it will end up
+
+01:27:37.430 --> 01:27:42.230
+introducing a little bit of latency. Right. But still, I'm
+
+01:27:42.230 --> 01:27:45.670
+just trying to make sure because my business is a very
+
+01:27:45.670 --> 01:27:48.150
+sensitive business for me. Right. My clients are very
+
+01:27:48.150 --> 01:27:52.210
+sensitive. So obviously, I can't like unleash my model after
+
+01:27:52.210 --> 01:27:56.350
+doing a fine tuning to the entire world. So I have to keep a
+
+01:27:56.350 --> 01:27:59.490
+check on it because eventually it's a model. Right. It's a
+
+01:27:59.490 --> 01:28:04.050
+generative model. So, yeah. That will be my approach, by the
+
+01:28:04.050 --> 01:28:08.690
+way, attaching a parallel system to check the output. What
+
+01:28:08.690 --> 01:28:11.210
+is the approach for building a generative AI fairness
+
+01:28:11.210 --> 01:28:16.570
+system? This question. OK. So basically, fairness is nothing
+
+01:28:16.570 --> 01:28:20.390
+but governance, you can say. Right. So basically, my
+
+01:28:20.390 --> 01:28:25.870
+approach will be enforce the policies, audit the output on a
+
+01:28:25.870 --> 01:28:30.210
+regular basis, develop as many gates as possible, as I have
+
+01:28:30.210 --> 01:28:32.990
+already told you in a previous answer. Right. So develop a
+
+01:28:32.990 --> 01:28:35.530
+gate, so which will keep on filtering input as well as keep
+
+01:28:35.530 --> 01:28:38.930
+on filtering the output and then keep on checking, keep on
+
+01:28:38.930 --> 01:28:43.390
+like creating a logs that how many times system has actually
+
+01:28:43.390 --> 01:28:49.930
+generated something which my gate has blocked it and then
+
+01:28:49.930 --> 01:28:53.030
+again, like fine tune the model based on that. So this is
+
+01:28:53.030 --> 01:29:00.690
+something you can say. Yeah. Now, how do you implement an
+
+01:29:00.690 --> 01:29:03.510
+advanced explanatory? Explain. Explain. Explanability
+
+01:29:03.510 --> 01:29:08.310
+technique. So as vast explanatory technique, if I have to
+
+01:29:08.310 --> 01:29:13.070
+build it, it's not like basically like model will give me
+
+01:29:13.070 --> 01:29:15.450
+some sort of explanation, but that's completely fine. If I
+
+01:29:15.450 --> 01:29:18.870
+have to make my model better, my approach will be to
+
+01:29:18.870 --> 01:29:24.410
+implement RIG technique over here so that it will be aware
+
+01:29:24.410 --> 01:29:28.130
+about the local data set local when I say it simply means
+
+01:29:28.130 --> 01:29:31.350
+that the data related to a business or particular domain in
+
+01:29:31.350 --> 01:29:33.150
+which you are working and for which you are building RIG.
+
+01:29:35.050 --> 01:29:38.470
+And from there, model will be able to get a advanced
+
+01:29:38.470 --> 01:29:41.970
+explainability. Apart from that, this is one part that we
+
+01:29:41.970 --> 01:29:46.790
+should always do. And we do that. Apart from that, so give a
+
+01:29:46.790 --> 01:29:49.990
+search capability. Right. So whenever you are building a
+
+01:29:49.990 --> 01:29:52.970
+system, so give a real time search capability because we are
+
+01:29:52.970 --> 01:29:55.930
+living in a world where every day we are able to see a new
+
+01:29:55.930 --> 01:30:00.010
+information, new advancement. Right. And so maybe that you
+
+01:30:00.010 --> 01:30:02.550
+have not captured into your document. So you're even RIG
+
+01:30:02.550 --> 01:30:06.230
+will not be. Able to return. Right. So try to attach a
+
+01:30:06.230 --> 01:30:08.890
+search capability around it, a real time search capability
+
+01:30:08.890 --> 01:30:12.170
+in terms of giving an output. So RIG plus search capability
+
+01:30:12.170 --> 01:30:16.710
+plus LLM capability. Right. Plus, whenever you are doing a
+
+01:30:16.710 --> 01:30:20.190
+prompting. So always try to go ahead with the example and
+
+01:30:20.190 --> 01:30:25.490
+maybe try to, you know, don't try to cap the outcome like
+
+01:30:25.490 --> 01:30:29.410
+tokens. Maybe try to give as much as possible so that it
+
+01:30:29.410 --> 01:30:32.710
+will give a lot of examples, a lot of like interpretation. A
+
+01:30:32.710 --> 01:30:35.610
+lot of. You know, observation, it will try to give you and
+
+01:30:35.610 --> 01:30:38.530
+that you will be able to see as a final outcome. And that is
+
+01:30:38.530 --> 01:30:41.910
+something which I will be doing in terms of advanced
+
+01:30:41.910 --> 01:30:47.430
+explainability technique in terms of a model outcome. Now,
+
+01:30:47.550 --> 01:30:50.290
+next question says that that what what are the consideration
+
+01:30:50.290 --> 01:30:55.150
+for building a generative AI interoperability? OK, so
+
+01:30:55.150 --> 01:31:00.550
+interpretability is basically like interpreting basically
+
+01:31:00.550 --> 01:31:04.750
+some sort of answer with respect to. Some sort of a specific
+
+01:31:04.750 --> 01:31:09.030
+context, right. A specific context. So obviously for that, I
+
+01:31:09.030 --> 01:31:11.890
+will be doing a tool calling. Right. So tool calling for
+
+01:31:11.890 --> 01:31:15.750
+like doing a specialized basically like a task to do the
+
+01:31:15.750 --> 01:31:19.350
+interpretation. For example, maybe email access tool I can
+
+01:31:19.350 --> 01:31:21.790
+try to give Slack access tool I can try to give a Jira
+
+01:31:21.790 --> 01:31:25.250
+access tool I can try to give so that it will be able to,
+
+01:31:25.310 --> 01:31:28.370
+you know, access those tools and it will be more context
+
+01:31:28.370 --> 01:31:32.270
+specific in a real time. And then it will be able to fetch a
+
+01:31:32.270 --> 01:31:34.510
+data. And take some sort of action. So technically, I'm
+
+01:31:34.510 --> 01:31:38.090
+talking about the agents over here. Right. Agents over here.
+
+01:31:38.470 --> 01:31:42.670
+How do you implement an advanced human AI collaboration? So
+
+01:31:42.670 --> 01:31:46.690
+basically, in terms of like building this one, we'll go
+
+01:31:46.690 --> 01:31:48.970
+ahead with in terms of training, we'll go ahead with RLHF
+
+01:31:48.970 --> 01:31:51.750
+DPO kind of approach. What is the approach for building a
+
+01:31:51.750 --> 01:31:54.690
+human in loop system? Same. How do you implement an advanced
+
+01:31:54.690 --> 01:32:01.170
+agent architecture? OK. So framework wise, you can say maybe
+
+01:32:01.170 --> 01:32:04.030
+you can just choose one. One of the framework yesterday I
+
+01:32:04.030 --> 01:32:06.230
+talked about and I don't know whether you have attended that
+
+01:32:06.230 --> 01:32:08.690
+class or not. Yesterday and day before yesterday, two days,
+
+01:32:08.770 --> 01:32:11.850
+we had a very good discussion with respect to anything. So
+
+01:32:11.850 --> 01:32:15.410
+yesterday when Dhruv was saying showing the example, so he
+
+01:32:15.410 --> 01:32:18.710
+has shown a multi agent system as well, where we have like a
+
+01:32:18.710 --> 01:32:21.750
+sequence of agents and in our upcoming classes as well. So
+
+01:32:21.750 --> 01:32:25.450
+we are going to see a sequence of the agents. Plus, we have
+
+01:32:25.450 --> 01:32:29.290
+also created a multi agent in a crew AI multi agent into a
+
+01:32:29.290 --> 01:32:34.730
+land graph, multi agent into a land chain. So here agent
+
+01:32:34.730 --> 01:32:39.330
+architecture depends upon the problem in hand. Sometime only
+
+01:32:39.330 --> 01:32:42.770
+one agent is required, not more than that. Sometime. So we
+
+01:32:42.770 --> 01:32:45.230
+have to break down the problems and then in every step. So
+
+01:32:45.230 --> 01:32:48.670
+we have to introduce one or another agents. So that depends
+
+01:32:48.670 --> 01:32:51.530
+upon my problem in hand. So just try to take one of the
+
+01:32:51.530 --> 01:32:53.570
+example that we have already solved, maybe content
+
+01:32:53.570 --> 01:32:58.030
+generation example that we have already taken. Right. And
+
+01:32:58.030 --> 01:33:00.310
+you can you can try to talk about that when they're OK. I
+
+01:33:00.310 --> 01:33:03.010
+was trying to solve this and. And maybe the resume example,
+
+01:33:03.290 --> 01:33:06.090
+right. It is resume example. If you remember, we have we
+
+01:33:06.090 --> 01:33:08.890
+have written a code for that. We have implemented that part.
+
+01:33:09.910 --> 01:33:14.410
+So even we have, I think, implemented like an invoice
+
+01:33:14.410 --> 01:33:17.470
+processor. Right. So where it will take an invoice, it will
+
+01:33:17.470 --> 01:33:21.610
+do OCR. So one agent will do OCR. Then the next will try to,
+
+01:33:21.650 --> 01:33:24.490
+you know, clean it all, all those things. So again, you can
+
+01:33:24.490 --> 01:33:28.070
+you can try to talk about that example and then you can talk
+
+01:33:28.070 --> 01:33:30.450
+about the agent that, OK, I have built this product. I have
+
+01:33:30.450 --> 01:33:32.550
+used three agents. Four agents. Five agents. One was doing
+
+01:33:32.550 --> 01:33:34.970
+this. One was doing this. One was doing this in a sequential
+
+01:33:34.970 --> 01:33:39.290
+manner. And yeah. So and it was giving a fantastic output
+
+01:33:39.290 --> 01:33:41.770
+for me. Our next question says that that what are the
+
+01:33:41.770 --> 01:33:44.830
+considerations for building a gen AI autonomous system?
+
+01:33:46.750 --> 01:33:52.090
+Autonomous means it should like keep on working. Right. With
+
+01:33:52.090 --> 01:33:56.550
+its own accountability. So first consideration will be a
+
+01:33:56.550 --> 01:33:59.110
+framework. Right. A framework which supports it. So
+
+01:33:59.110 --> 01:34:04.630
+langchain, langgraph, crew AI. All of these. So all of these
+
+01:34:04.630 --> 01:34:08.630
+supports like this kind of things where I can build a gen AI
+
+01:34:08.630 --> 01:34:11.470
+automation autonomous system and then talk about some of the
+
+01:34:11.470 --> 01:34:14.570
+use cases. So that will be my answer for 170th question.
+
+01:34:16.490 --> 01:34:20.710
+Then research innovation. OK. Fine. Let's talk about this.
+
+01:34:21.050 --> 01:34:25.270
+So here the question says that that what are the latest
+
+01:34:25.270 --> 01:34:30.990
+advances in transformer architecture? OK. So I think we all
+
+01:34:30.990 --> 01:34:33.650
+are aware. About the transformer architecture. We all are
+
+01:34:33.650 --> 01:34:36.930
+aware about the formula of the transformer with respect to
+
+01:34:36.930 --> 01:34:43.110
+key Q and V KQV basically. Right. So and we know that that
+
+01:34:43.110 --> 01:34:48.710
+transformer architecture is nothing but it's something which
+
+01:34:48.710 --> 01:34:52.610
+can try to focus on a relation of one with others. Right.
+
+01:34:52.750 --> 01:34:55.850
+Others other work. And in this way it will try to do it for
+
+01:34:55.850 --> 01:34:59.110
+all the other whatever like tokens is available inside my
+
+01:34:59.110 --> 01:35:02.390
+data set. This is what. What a transformer architecture is
+
+01:35:02.390 --> 01:35:06.710
+going to do. Now what are the latest advancements. So recent
+
+01:35:06.710 --> 01:35:11.530
+latest one. If I'll talk about which I have an idea. So
+
+01:35:11.530 --> 01:35:16.690
+basically people are trying to give a sparse attention.
+
+01:35:17.170 --> 01:35:20.990
+Right. For and people are trying to implement some sort of a
+
+01:35:20.990 --> 01:35:26.170
+linear transformation so that it will be able to give or it
+
+01:35:26.170 --> 01:35:28.710
+will be able to handle a long long context. So this is one
+
+01:35:28.710 --> 01:35:33.290
+of the advancement which I am aware about. Then you must be
+
+01:35:33.290 --> 01:35:36.090
+able to see nowadays people are trying to build a more kind
+
+01:35:36.090 --> 01:35:40.970
+of a model a mixture of expert kind of a model where it will
+
+01:35:40.970 --> 01:35:44.430
+not be just one model system but a multiple model system and
+
+01:35:44.430 --> 01:35:47.450
+there will be an input layer. So input will go it will
+
+01:35:47.450 --> 01:35:50.430
+decide that it should go to which expert that expert will
+
+01:35:50.430 --> 01:35:53.610
+give the answer and then user will be able to get an answer.
+
+01:35:53.810 --> 01:35:58.210
+Our latest example I would say is a GPT-5 because it's kind
+
+01:35:58.210 --> 01:36:01.550
+of a combination of mixture of expert model. It's not a GPT
+
+01:36:01.550 --> 01:36:04.810
+-5 model only. It's many different different models. But
+
+01:36:04.810 --> 01:36:09.410
+yeah GPT-5 is just a layer umbrella. So input go to this
+
+01:36:09.410 --> 01:36:12.250
+umbrella and this umbrella will be having a layer which
+
+01:36:12.250 --> 01:36:15.130
+decides OK. So which model is going to give an answer. And
+
+01:36:15.130 --> 01:36:17.910
+that's the reason. So you must be able to see sometime that
+
+01:36:17.910 --> 01:36:21.070
+GPT is going to give you a response quickly. Sometime it
+
+01:36:21.070 --> 01:36:24.130
+says I'm thinking. Right. I'm thinking I'm trying to
+
+01:36:24.130 --> 01:36:27.610
+generate more reasoning over here. So it's called as MOE a
+
+01:36:27.610 --> 01:36:31.150
+mixture of expert where it won't be one single model. So
+
+01:36:31.150 --> 01:36:33.930
+maybe there will be a coding model. There will be a good
+
+01:36:33.930 --> 01:36:36.310
+model with respect to mathematics. There will be a very good
+
+01:36:36.310 --> 01:36:39.130
+model with respect to a world affairs or current affairs and
+
+01:36:39.130 --> 01:36:42.790
+system will decide that OK. My input should go to which
+
+01:36:42.790 --> 01:36:47.310
+expert. So MOE basically mixture of expert and many people
+
+01:36:47.310 --> 01:36:52.990
+are like trying to do this build this kind of a model. Then
+
+01:36:52.990 --> 01:36:58.530
+basically retrieval augmented transformer. So basically RAG
+
+01:36:58.530 --> 01:37:01.530
+kind of a concept. But inside a transformer. So this is
+
+01:37:01.530 --> 01:37:05.070
+again a latest advancement you will be able to find out a
+
+01:37:05.070 --> 01:37:08.290
+multimodal transformers like multimodal transform is one
+
+01:37:08.290 --> 01:37:11.470
+model can understand text can understand audio can
+
+01:37:11.470 --> 01:37:14.530
+understand a video. Right. So that is something called as
+
+01:37:14.530 --> 01:37:17.810
+multimodal transformers. So nowadays you must be able to see
+
+01:37:17.810 --> 01:37:22.130
+a lot again. Right. Multimodal transformer. So these are the
+
+01:37:22.130 --> 01:37:25.090
+latest advancement you will be able to find out is pass
+
+01:37:25.090 --> 01:37:28.190
+attention or inattention for a long context. And we make
+
+01:37:28.190 --> 01:37:31.170
+sure of expert. So not just one model but a multimodal. With
+
+01:37:31.170 --> 01:37:35.790
+a layered input and RIG based like a transformers and a
+
+01:37:35.790 --> 01:37:40.330
+multimodal transformers Gemini you can say right kind of a
+
+01:37:40.330 --> 01:37:43.890
+model. Now how do you contribute to a GNI research and
+
+01:37:43.890 --> 01:37:46.710
+development if you have done that say yes I have done that
+
+01:37:46.710 --> 01:37:49.630
+if you have not done that say like I was not able to get the
+
+01:37:49.630 --> 01:37:54.610
+time. So basically when we say that I have contributed into
+
+01:37:54.610 --> 01:37:57.150
+a GNI research development is a very specific question right
+
+01:37:57.150 --> 01:38:00.910
+and specific to a researcher I would say. So who just do a
+
+01:38:00.910 --> 01:38:03.670
+researcher or maybe a developer who is coming from some like
+
+01:38:03.670 --> 01:38:07.610
+a very good background right maybe a research background. So
+
+01:38:07.610 --> 01:38:10.730
+if someone will say how do you contribute or how you have
+
+01:38:10.730 --> 01:38:14.510
+contributed talk about it right talk about your past talk
+
+01:38:14.510 --> 01:38:17.110
+about like what kind of a problem that you have solved talk
+
+01:38:17.110 --> 01:38:19.430
+about your research paper if you have a link of that
+
+01:38:19.430 --> 01:38:22.210
+research paper many of my student have done that so they
+
+01:38:22.210 --> 01:38:25.110
+keep on publishing a lot of research paper. Research blogs
+
+01:38:25.110 --> 01:38:28.730
+basically so just let's try to like a present it because
+
+01:38:28.730 --> 01:38:30.290
+this is something if you have done that. If you have done
+
+01:38:30.290 --> 01:38:33.510
+that if you have not done that you can't talk about it so
+
+01:38:33.510 --> 01:38:36.890
+again not a generic question for everyone what is the
+
+01:38:36.890 --> 01:38:40.250
+approach for building a next generation language model okay.
+
+01:38:41.350 --> 01:38:45.290
+So language model if I'm trying to build so obviously I'll
+
+01:38:45.290 --> 01:38:50.570
+try to build a specific to a domain because almost general
+
+01:38:50.570 --> 01:38:54.630
+purpose models are available a very very good one which is
+
+01:38:54.630 --> 01:38:57.710
+good with not just with a good good with the text but also
+
+01:38:57.710 --> 01:39:00.890
+with the audio video and images yeah. Now beyond that
+
+01:39:00.890 --> 01:39:04.990
+nothing even exist we have seen like a group right so again
+
+01:39:04.990 --> 01:39:07.930
+very good with respect to a even like a text or image
+
+01:39:07.930 --> 01:39:13.290
+generation we have seen a like a view three from a Google
+
+01:39:13.290 --> 01:39:17.330
+recently which is literally amazing amazing with a realistic
+
+01:39:17.330 --> 01:39:21.150
+image by the way realistic image and even a video right
+
+01:39:21.150 --> 01:39:26.150
+again like we have basically a cloud is on it which is
+
+01:39:26.150 --> 01:39:29.770
+technically good with respect to a code. So we have a lot
+
+01:39:29.770 --> 01:39:33.410
+of. General purpose model I will not go and I'll not try to
+
+01:39:33.410 --> 01:39:36.550
+even like a build it build such kind of a model if I'm doing
+
+01:39:36.550 --> 01:39:41.090
+it I'm full very simple right because it like cost a lot so
+
+01:39:41.090 --> 01:39:43.930
+the very first part is not about talent but yeah about the
+
+01:39:43.930 --> 01:39:47.610
+costing which which no one is going to be a. So if I'm
+
+01:39:47.610 --> 01:39:50.150
+trying to build a next generation model I'll try to focus on
+
+01:39:50.150 --> 01:39:53.690
+one domain maybe one language maybe one problem statement
+
+01:39:53.690 --> 01:39:57.750
+and I'll try to build up best of best out of it by taking a
+
+01:39:57.750 --> 01:40:01.650
+general purpose model as a. base model because something has
+
+01:40:01.650 --> 01:40:03.990
+been trained something is very very expert in terms of
+
+01:40:03.990 --> 01:40:07.030
+understanding the language and relations on top of that so
+
+01:40:07.030 --> 01:40:11.870
+I'll just go ahead with the domain is specific. So that will
+
+01:40:11.870 --> 01:40:15.330
+my first approach the second approach is so maybe I'll not
+
+01:40:15.330 --> 01:40:18.610
+build just one model but a multiple one means a mixture of
+
+01:40:18.610 --> 01:40:22.030
+expert. And then I'll try to build a layer so which will try
+
+01:40:22.030 --> 01:40:25.070
+to direct my input to a different different expert as per
+
+01:40:25.070 --> 01:40:28.770
+the input maybe in one company itself I'll build a model for
+
+01:40:28.770 --> 01:40:33.450
+our finance for HR for. legal for all the other division but
+
+01:40:33.450 --> 01:40:36.530
+for user it's just one single interface when you have an
+
+01:40:36.530 --> 01:40:39.850
+input system will decide that okay it should go with here
+
+01:40:39.850 --> 01:40:43.290
+here or here this is how I can try to like you know do it.
+
+01:40:44.590 --> 01:40:49.490
+If I have to like build it maybe I'll try to like do a multi
+
+01:40:49.490 --> 01:40:52.610
+model integration right so where it will be able to take
+
+01:40:52.610 --> 01:40:57.030
+input as a video or maybe a live feed maybe audio maybe a
+
+01:40:57.030 --> 01:41:00.230
+code that is also possible that okay so based on the. live
+
+01:41:00.230 --> 01:41:04.330
+feed let's let's do something so this is something that I
+
+01:41:04.330 --> 01:41:07.450
+will try to do so which is going to balance research plus
+
+01:41:07.450 --> 01:41:11.190
+engineering both I will not just get into a research I'll
+
+01:41:11.190 --> 01:41:14.570
+not just jump into the engineering hundred percent I'll try
+
+01:41:14.570 --> 01:41:17.650
+to make. a balance one this is how I will be able to build a
+
+01:41:17.650 --> 01:41:21.210
+next generation model and I'll not try to reinvent the wheel
+
+01:41:21.210 --> 01:41:23.530
+so don't go and say that okay I'll build a model for you
+
+01:41:23.530 --> 01:41:26.010
+from the very scratch no one is going to buy that a
+
+01:41:26.010 --> 01:41:28.570
+statement at least in our current situation because we all
+
+01:41:28.570 --> 01:41:31.170
+know the reality. yeah. yeah two year back so many people
+
+01:41:31.170 --> 01:41:34.830
+have sold that story and many people was able to raise the
+
+01:41:34.830 --> 01:41:37.710
+fund but now no one is giving you a fund for that believe me
+
+01:41:37.710 --> 01:41:42.310
+as for the market then how do you implement a cutting edge
+
+01:41:42.310 --> 01:41:45.770
+gen ai technique now first of all what is this cutting edge
+
+01:41:45.770 --> 01:41:48.690
+technique by the way which is available in a market so
+
+01:41:48.690 --> 01:41:51.990
+obviously agents is a cutting edge technique a to a protocol
+
+01:41:51.990 --> 01:41:56.350
+mcb protocol is a cutting edge technique all this framework
+
+01:41:56.350 --> 01:42:01.850
+lang chain lang graph lama indexes auto gen. in it and
+
+01:42:01.850 --> 01:42:04.630
+basically likewise there are hundreds other platform which
+
+01:42:04.630 --> 01:42:07.870
+is like evolving every day so these are the cutting edge
+
+01:42:07.870 --> 01:42:10.910
+right model fine tuning is obviously a cutting edge things
+
+01:42:10.910 --> 01:42:15.310
+for all of us so these these are basically a cutting edge
+
+01:42:15.310 --> 01:42:19.730
+things in a world of ai mostly you will be able to find out
+
+01:42:19.730 --> 01:42:23.910
+a low code system a no code system kind of a things right
+
+01:42:23.910 --> 01:42:27.410
+for example a lovable kind of a system so you can just go
+
+01:42:27.410 --> 01:42:29.810
+over there and then try to give a prompt your requirement.
+
+01:42:29.830 --> 01:42:32.790
+and it will be able to create a beautiful back front end and
+
+01:42:32.790 --> 01:42:35.650
+back end as well so it will be able to do even a back end
+
+01:42:35.650 --> 01:42:38.610
+mapping with the super base or any other like a back end
+
+01:42:38.610 --> 01:42:42.030
+system if you have a database that you have so these are the
+
+01:42:42.030 --> 01:42:47.410
+cutting edge like things so just talk about one of your use
+
+01:42:47.410 --> 01:42:50.290
+cases that where you have used any of this you should not be
+
+01:42:50.290 --> 01:42:53.930
+like should not say that i okay i have used everything but
+
+01:42:53.930 --> 01:42:57.210
+yeah even if you have used anything just talk about it and i
+
+01:42:57.210 --> 01:42:59.310
+believe in my class this is something that i have discussed
+
+01:42:59.310 --> 01:43:02.010
+so. So take one example and explain that, that okay this is
+
+01:43:02.010 --> 01:43:04.550
+how I have used this cutting edge one and I am aware about
+
+01:43:04.550 --> 01:43:09.410
+other cutting edge things as well. Now so what are the
+
+01:43:09.410 --> 01:43:12.350
+consideration for generative AI research ethics, forget
+
+01:43:12.350 --> 01:43:14.350
+about it. How do you handle generative AI research
+
+01:43:14.350 --> 01:43:17.890
+collaboration, like just for the researcher. What is the
+
+01:43:17.890 --> 01:43:21.850
+approach for generative AI patent development, nothing so
+
+01:43:21.850 --> 01:43:25.390
+maybe just like try to do some sort of a breakthrough in
+
+01:43:25.390 --> 01:43:27.630
+terms of algorithm, in terms of architecture, in terms of
+
+01:43:27.630 --> 01:43:30.490
+some optimization or training something or maybe in terms of
+
+01:43:30.490 --> 01:43:33.210
+a security. This is what people are doing across the
+
+01:43:33.210 --> 01:43:37.590
+industry, right. So just just do it and then file the patent
+
+01:43:37.590 --> 01:43:39.810
+again when you are going to file the patent there will be an
+
+01:43:39.810 --> 01:43:42.890
+organization so who is going to check that they take six
+
+01:43:42.890 --> 01:43:45.990
+months of time in general, maybe sometime more. They try to
+
+01:43:45.990 --> 01:43:48.370
+check across the world that someone else has not filed the
+
+01:43:48.370 --> 01:43:50.290
+patent. They try to do a lot of matching. They have their
+
+01:43:50.290 --> 01:43:53.850
+own portal and accesses and based on that so your patent
+
+01:43:53.850 --> 01:43:55.830
+will be approved. This is how it happens. How do you
+
+01:43:55.830 --> 01:43:58.550
+implement? And again your company and your legal team is
+
+01:43:58.550 --> 01:44:00.910
+going to help you out or patent team is going to help you
+
+01:44:00.910 --> 01:44:05.370
+out. How do you implement gen AI research validation? So by
+
+01:44:05.370 --> 01:44:09.590
+publishing a like in terms of gen AI research validation, so
+
+01:44:09.590 --> 01:44:13.130
+maybe by doing some sort of a benchmarking with other
+
+01:44:13.130 --> 01:44:16.830
+existing like a matrixes, right. For example, maybe a glue
+
+01:44:16.830 --> 01:44:20.550
+matrix, maybe with respect to a Helm matrixes, maybe by
+
+01:44:20.550 --> 01:44:23.690
+checking some of the F1 score of the similar kind of a model
+
+01:44:23.690 --> 01:44:26.090
+and many more things depends upon the context in the task.
+
+01:44:26.110 --> 01:44:30.470
+In hand, now what are the consideration for generative AI
+
+01:44:30.470 --> 01:44:35.490
+research publication, okay. So consideration means basically
+
+01:44:35.490 --> 01:44:41.650
+places where you can try to like publish it basically. So
+
+01:44:41.650 --> 01:44:44.030
+there are so many organizations there is something called as
+
+01:44:44.030 --> 01:44:46.410
+neural IPS, there is something called as ICLR, there is
+
+01:44:46.410 --> 01:44:49.750
+something called as ICML, ACL. So these are basically like a
+
+01:44:49.750 --> 01:44:52.050
+places, these are basically a venues where you can go and
+
+01:44:52.050 --> 01:44:55.030
+you can try to publish your research. But yeah, if you have
+
+01:44:55.030 --> 01:44:58.030
+not done that. Let's not talk about it. Don't even mention
+
+01:44:58.030 --> 01:45:00.350
+inside your resume. If you have done that, you must be aware
+
+01:45:00.350 --> 01:45:03.470
+about it. Like you must be having a link for that, right. So
+
+01:45:03.470 --> 01:45:09.150
+we can just like attach that link. How do you handle a gen
+
+01:45:09.150 --> 01:45:10.550
+AI research funding? Okay.
+
+01:45:13.490 --> 01:45:17.290
+So research funding wise, obviously the governments used to
+
+01:45:17.290 --> 01:45:20.270
+give a grants, almost all the governments nowadays is
+
+01:45:20.270 --> 01:45:23.270
+giving. Yeah. That's another question. How much people are
+
+01:45:23.270 --> 01:45:26.090
+able to get it? How many genuine people are able to get it?
+
+01:45:26.090 --> 01:45:29.170
+That's still a question, especially in a country like India.
+
+01:45:29.310 --> 01:45:32.990
+But outside, yeah, there are like a genuine funding, which
+
+01:45:32.990 --> 01:45:36.190
+are genuine grants, which people are able to get, government
+
+01:45:36.190 --> 01:45:38.230
+support people are able to get, they are able to build it.
+
+01:45:39.010 --> 01:45:42.210
+Not true for all the country, right. But yeah, some of the
+
+01:45:42.210 --> 01:45:44.550
+country have taken these things in a very, very serious
+
+01:45:44.550 --> 01:45:46.930
+manner. And they are helping entrepreneur, they are helping
+
+01:45:46.930 --> 01:45:49.470
+researcher. And because of that, so they're able to build a
+
+01:45:49.470 --> 01:45:51.370
+best of best, right. Because without grant, without
+
+01:45:51.370 --> 01:45:54.710
+government support, or without a full financial backup, not
+
+01:45:54.710 --> 01:45:57.150
+full. I would say a massive financial backup, these kinds of
+
+01:45:57.150 --> 01:45:59.590
+breakthroughs are not possible. Believe me. It's not
+
+01:45:59.590 --> 01:46:03.830
+something like you will, you know, you won't sleep for five
+
+01:46:03.830 --> 01:46:06.570
+days, and then you will be able to do it. No, it requires a
+
+01:46:06.570 --> 01:46:09.190
+massive, massive, massive investment in terms of brain as
+
+01:46:09.190 --> 01:46:13.090
+well as in terms of, you know, resources. So yeah, some
+
+01:46:13.090 --> 01:46:15.810
+governments are like doing it, I believe you all are aware
+
+01:46:15.810 --> 01:46:20.090
+about it, we should not like talk much here. So basically,
+
+01:46:20.150 --> 01:46:24.010
+in terms of funding, we try to take a grant, we try to take
+
+01:46:24.010 --> 01:46:28.070
+a, we do a lot of corporate research, right, VC funding, you
+
+01:46:28.070 --> 01:46:30.350
+can try to go ahead with VCR angel funding, you can try to
+
+01:46:30.350 --> 01:46:35.090
+go ahead with and then, you know, and align your objective,
+
+01:46:35.230 --> 01:46:37.730
+your goal that I'm building this and this will be the
+
+01:46:37.730 --> 01:46:40.690
+societal impact or this is going to be the business impact,
+
+01:46:40.950 --> 01:46:43.930
+your pitch deck should say each and everything. And then,
+
+01:46:43.990 --> 01:46:48.070
+you know, go for the pitch. This is how we raise our
+
+01:46:48.070 --> 01:46:51.730
+funding, by the way, the Lord which goes behind the funding,
+
+01:46:51.790 --> 01:46:54.810
+when I was raising a funding for the very first time. Yeah.
+
+01:46:54.830 --> 01:46:57.870
+In a previous company. So yeah, there is there is like a
+
+01:46:57.870 --> 01:47:03.410
+almost six to nine months of story. So it is a very long
+
+01:47:03.410 --> 01:47:06.730
+story, maybe some someday I'll talk about it. But yeah, it's
+
+01:47:06.730 --> 01:47:10.070
+a completely different process. What is the approach for JNI
+
+01:47:10.070 --> 01:47:13.430
+research team building, hire a good brain, proven one,
+
+01:47:13.530 --> 01:47:17.530
+right, who have published the paper, who have done a
+
+01:47:17.530 --> 01:47:20.730
+breakthrough, a small one, at least, this is the only way of
+
+01:47:20.730 --> 01:47:24.690
+building a research team. How to implement a generative
+
+01:47:24.690 --> 01:47:24.990
+approach? What is the approach for JNI research
+
+01:47:24.990 --> 01:47:28.350
+infrastructure? So obviously, like, you must be having a
+
+01:47:28.350 --> 01:47:33.130
+sandbox with Nvidia H100, A100 kind of a GPU, you must be
+
+01:47:33.130 --> 01:47:36.790
+having an access of AWS, or maybe it's hyper stack kind of a
+
+01:47:36.790 --> 01:47:41.570
+cloud, right? So this is how you will build it. So you must
+
+01:47:41.570 --> 01:47:45.030
+be having us like, you know, a sizable amount of
+
+01:47:45.030 --> 01:47:48.430
+infrastructure. So this is this is what we do. And when we
+
+01:47:48.430 --> 01:47:52.750
+say generative AI, I'm talking about GPU more, right? CPU?
+
+01:47:52.750 --> 01:47:56.110
+GPU must be in a reserve. But yeah, I'm talking more about
+
+01:47:56.110 --> 01:48:01.450
+the GPU, like Nvidia H100 kind of a system access basically.
+
+01:48:03.880 --> 01:48:06.960
+What are the considerations for generative AI research data?
+
+01:48:07.180 --> 01:48:09.740
+So again, industry tie up, right? Industry tie up. So let's
+
+01:48:09.740 --> 01:48:11.340
+suppose if I'm building something for healthcare, so
+
+01:48:11.340 --> 01:48:14.420
+obviously, I'll go and I'll tie up with healthcare,
+
+01:48:14.540 --> 01:48:16.680
+pharmaceutical, or maybe with the hospitals or maybe with
+
+01:48:16.680 --> 01:48:19.440
+the healthcare researcher, which can like seamlessly provide
+
+01:48:19.440 --> 01:48:23.380
+me a data. And I can I can keep on building it. How do you
+
+01:48:23.380 --> 01:48:24.540
+handle JNI research? How do you handle research partnership?
+
+01:48:25.020 --> 01:48:27.920
+If you have done that, then it's fine, otherwise, no. So
+
+01:48:27.920 --> 01:48:30.760
+basically, like, in terms of doing a research partnership,
+
+01:48:30.940 --> 01:48:35.860
+generally universities and startups, and companies and NGO,
+
+01:48:36.040 --> 01:48:38.460
+so they did try to come together, they try to collaborate,
+
+01:48:38.580 --> 01:48:40.940
+and then they do a research. This is how like actual
+
+01:48:40.940 --> 01:48:43.800
+research happens. So basically, academic and industry
+
+01:48:43.800 --> 01:48:46.560
+collaboration, academic industry and the NGO collaboration
+
+01:48:46.560 --> 01:48:49.700
+on a company level. What is the approach of generative AI
+
+01:48:49.700 --> 01:48:54.080
+research commercialization? Okay. So if I'm talking about
+
+01:48:54.080 --> 01:48:55.940
+JNI. If I'm doing a research, so obviously, my research must
+
+01:48:55.940 --> 01:48:58.800
+be having some sort of a final goal, final end goal that I
+
+01:48:58.800 --> 01:49:02.260
+will end up building this, for example, OpenAI, who was the
+
+01:49:02.260 --> 01:49:04.780
+very first creator of this LLM, after that everyone has
+
+01:49:04.780 --> 01:49:08.940
+created, we know, right. So it was basically a NGO, right,
+
+01:49:09.020 --> 01:49:12.300
+or NPO, nonprofit organization, you know, first, and then
+
+01:49:12.300 --> 01:49:16.900
+they have like, converted that into a like, you know, kind
+
+01:49:16.900 --> 01:49:19.740
+of organization for a profit. But yeah, it has started
+
+01:49:19.740 --> 01:49:22.060
+actually as a research company, if you know the story,
+
+01:49:22.140 --> 01:49:25.460
+right. And majority of breakthroughs, you will be able to
+
+01:49:25.460 --> 01:49:28.680
+see that all of these started has been the open source with
+
+01:49:28.680 --> 01:49:32.380
+the like a research initiative itself, and then in a later
+
+01:49:32.380 --> 01:49:36.460
+stage, it become like a commercialized one. So this is how
+
+01:49:36.460 --> 01:49:40.720
+it is going to happen. Now this is the last question, 15
+
+01:49:40.720 --> 01:49:45.500
+one. Let's talk about this. Again it's a leadership question
+
+01:49:45.500 --> 01:49:49.480
+only. How do you save the JNI industry standard and best
+
+01:49:49.480 --> 01:49:54.040
+practices? Same thing, I think discussed, nothing to like
+
+01:49:54.040 --> 01:49:58.800
+discuss much here. What is the approach of JNI? What is the
+
+01:49:58.800 --> 01:50:01.760
+approach for JNI, thought leadership, okay, thought
+
+01:50:01.760 --> 01:50:08.000
+leadership. I mean like, you have to build a like a good
+
+01:50:08.000 --> 01:50:11.840
+relation, good team, good product, with a good pricing, then
+
+01:50:11.840 --> 01:50:15.980
+everything will fall into place. That's my answer. How do
+
+01:50:15.980 --> 01:50:20.320
+you influence a JNI policies and regulations? Policy depends
+
+01:50:20.320 --> 01:50:23.280
+upon two things. One is a company policy, another one is a
+
+01:50:23.280 --> 01:50:27.660
+country policy. And yeah, so whatever is the policy, which
+
+01:50:27.660 --> 01:50:30.760
+country has designed and company has designed. As a leader,
+
+01:50:30.840 --> 01:50:33.720
+you should not violate it, right. Maybe tomorrow you will
+
+01:50:33.720 --> 01:50:36.860
+not be in a place, but someone else will be and that person
+
+01:50:36.860 --> 01:50:39.500
+will get into a trouble. And eventually your company will
+
+01:50:39.500 --> 01:50:43.500
+get into a trouble, right. So just like follow the rule of
+
+01:50:43.500 --> 01:50:46.260
+the company and a country both. What are the considerations
+
+01:50:46.260 --> 01:50:49.700
+for JNI industry collaboration? I have. I think I've already
+
+01:50:49.700 --> 01:50:51.760
+given the answer, this is the repeated one. How do you
+
+01:50:51.760 --> 01:50:55.120
+handle JNI industry conference and event? So you can say
+
+01:50:55.120 --> 01:50:57.940
+that, yeah, we do it sometime for a marketing event,
+
+01:50:58.060 --> 01:51:01.620
+sometime for a client collaboration, sometime, you know,
+
+01:51:01.620 --> 01:51:03.900
+showcasing something because every country, every company
+
+01:51:03.900 --> 01:51:07.160
+does that, right. So they do even in my previous company, so
+
+01:51:07.160 --> 01:51:09.240
+we were doing a lot of hackathons, right. So obviously
+
+01:51:09.240 --> 01:51:11.940
+hackathons helped us in terms of reaching out to more and
+
+01:51:11.940 --> 01:51:16.340
+more youth, students, people, young people, I would say. So
+
+01:51:16.340 --> 01:51:19.060
+every company tried to do this kind of a conference back.
+
+01:51:19.080 --> 01:51:21.760
+And in every city, and if you're a part of maybe Bangalore,
+
+01:51:21.800 --> 01:51:28.120
+Pune, Hyderabad and Chennai and Noida, Delhi even outside,
+
+01:51:28.320 --> 01:51:31.080
+right. Every week if you would like to attend some sort of a
+
+01:51:31.080 --> 01:51:36.460
+conference in these like a genre, you will be able to find
+
+01:51:36.460 --> 01:51:40.380
+one. Yeah. Easily you will be able to find one, right. It's
+
+01:51:40.380 --> 01:51:43.320
+very, very easy. So even in Bangalore, Bangalore like is a
+
+01:51:43.320 --> 01:51:45.960
+IT hub, so obviously you will be able to find out hundreds
+
+01:51:45.960 --> 01:51:49.080
+of conferences. Yeah. Yeah. So if you want to attend those
+
+01:51:49.080 --> 01:51:52.640
+conferences, you can just go ahead with that. Generally, I
+
+01:51:52.640 --> 01:51:56.000
+don't like going to these events and conferences, but yeah,
+
+01:51:56.080 --> 01:52:00.860
+maybe as a newcomer, as a learner, you should attend couple
+
+01:52:00.860 --> 01:52:04.380
+of those conferences, right. What is the approach for Genia
+
+01:52:04.380 --> 01:52:07.520
+industry networking? These conferences, the above one, how
+
+01:52:07.520 --> 01:52:11.140
+do you implement a Genia industry partnership? So yeah, as a
+
+01:52:11.140 --> 01:52:15.480
+leader, so obviously I have to like, we can say that we try
+
+01:52:15.480 --> 01:52:17.840
+to host a lot of conferences, meetings and parties with
+
+01:52:17.840 --> 01:52:21.260
+respect to our CEOs, CFOs. From a small company, from a big
+
+01:52:21.260 --> 01:52:24.360
+company, from a stakeholder. Because as a director, again,
+
+01:52:24.440 --> 01:52:29.280
+that is your job, right? So your job is not just to, you
+
+01:52:29.280 --> 01:52:31.780
+know, build a product or manage a team, but as a director,
+
+01:52:31.920 --> 01:52:35.560
+even company's relationship will be on your shoulder, right?
+
+01:52:35.640 --> 01:52:38.680
+And you have to increase that relationship. So obviously you
+
+01:52:38.680 --> 01:52:42.340
+will keep on meeting with the other CEOs and other CTOs,
+
+01:52:42.340 --> 01:52:46.200
+other CXOs, I would say more precisely, other CXOs,
+
+01:52:46.220 --> 01:52:49.780
+stakeholders, or maybe a partners. Maybe a small startup
+
+01:52:49.780 --> 01:52:53.580
+owners. We keep on meeting, we keep on sharing the ideas, we
+
+01:52:53.580 --> 01:52:57.220
+keep on sharing the business goals. And this is how the
+
+01:52:57.220 --> 01:53:00.340
+entire collaboration happens and which establish a network
+
+01:53:00.340 --> 01:53:04.220
+for a very, very long time, even on a personal level, right?
+
+01:53:04.320 --> 01:53:07.760
+That helps so many people on a personal level across the
+
+01:53:07.760 --> 01:53:10.400
+industry. And those who don't do it, right, a networking,
+
+01:53:10.660 --> 01:53:14.080
+believe me, there will be a dead people after some time in
+
+01:53:14.080 --> 01:53:20.830
+industry. Because as you will grow into industry. More than
+
+01:53:20.830 --> 01:53:25.350
+your talent, your genuine network matters. Agree with me or
+
+01:53:25.350 --> 01:53:32.070
+not, guys, yeah, everyone, as, as we grow into industry, I
+
+01:53:32.070 --> 01:53:36.750
+believe more than talent. Your network matters genuine one,
+
+01:53:36.830 --> 01:53:39.410
+actually not, not those like a LinkedIn kind of a network,
+
+01:53:39.530 --> 01:53:42.610
+but yeah, social network is one social media network is one
+
+01:53:42.610 --> 01:53:46.730
+and the network that we try to build on a personal label by
+
+01:53:46.730 --> 01:53:50.670
+creating something valuable, right. By collaborating. It's
+
+01:53:50.670 --> 01:53:54.930
+not always about a creation. I would say it's about, you
+
+01:53:54.930 --> 01:53:58.470
+know, sometime giving a help in a professional manner,
+
+01:53:58.630 --> 01:54:01.490
+sometime on a personal label, right. That is also going to
+
+01:54:01.490 --> 01:54:05.470
+build a network for you. It's, it's also, you know, sometime
+
+01:54:05.470 --> 01:54:08.630
+helping them to build their team, getting some sort of a
+
+01:54:08.630 --> 01:54:12.370
+meeting, some sort of a calls or maybe a clients, right. On
+
+01:54:12.370 --> 01:54:15.370
+many levels, right. Many levels we do a networking and
+
+01:54:15.370 --> 01:54:19.970
+believe me, that always gives you a, like a very good return
+
+01:54:19.970 --> 01:54:23.310
+in a long term, right. In a long term. So I always advise
+
+01:54:23.310 --> 01:54:27.070
+everyone that we are, yes, we are trying to build AI. We are
+
+01:54:27.070 --> 01:54:29.650
+trying to build a robots. We are trying to build a machines,
+
+01:54:29.810 --> 01:54:33.550
+but still we are human, right. And even tomorrow, even after
+
+01:54:33.550 --> 01:54:37.490
+a hundred year, we need human. Yeah. So you should always
+
+01:54:37.490 --> 01:54:42.390
+find out a way by which you will be connected with a human,
+
+01:54:42.550 --> 01:54:45.630
+not just on social media. That's a virtual world, right?
+
+01:54:45.970 --> 01:54:49.210
+Maybe on social media, you have like a 1 million followers.
+
+01:54:49.450 --> 01:54:53.050
+Right. But when you will be in need or maybe all those 1
+
+01:54:53.050 --> 01:54:55.530
+million follower is going to come in that, okay, I will
+
+01:54:55.530 --> 01:54:57.730
+help. But no one will help. Believe me, no one will come for
+
+01:54:57.730 --> 01:55:01.490
+your help, right? The person who will be genuinely connected
+
+01:55:01.490 --> 01:55:04.570
+with you, a person who has done some sort of a collaboration
+
+01:55:04.570 --> 01:55:08.050
+with you in your past, only those person will come to you
+
+01:55:08.050 --> 01:55:11.290
+and come for you. Right. And again, you will do the same
+
+01:55:11.290 --> 01:55:13.390
+thing. I'm not saying that they will come for you. Even you
+
+01:55:13.390 --> 01:55:16.130
+will go for that kind of a person, not for like person over
+
+01:55:16.130 --> 01:55:20.790
+the social media. Right. So always try to build such kind of
+
+01:55:20.790 --> 01:55:24.570
+a network. It takes time. You should not keep like a very
+
+01:55:24.570 --> 01:55:28.430
+high expectation that today I said hello and then tomorrow
+
+01:55:28.430 --> 01:55:30.910
+I'll just ask for the help. No, things doesn't work in that
+
+01:55:30.910 --> 01:55:34.210
+way. We are smart. We can understand very easily and we can
+
+01:55:34.210 --> 01:55:37.910
+judge people within a fraction of second. Right. We start
+
+01:55:37.910 --> 01:55:40.730
+judging people. We all of us, we all as a human being is
+
+01:55:40.730 --> 01:55:43.270
+having that kind of a tendency. That's the nature. So again,
+
+01:55:43.310 --> 01:55:47.150
+nothing wrong in that. But yeah. I always advise everyone
+
+01:55:47.150 --> 01:55:50.050
+because as you will grow, maybe you're a junior, maybe you
+
+01:55:50.050 --> 01:55:52.990
+are having 10 year experience, 20 year experience, right? As
+
+01:55:52.990 --> 01:55:57.050
+you will go, believe me, network matters more than your
+
+01:55:57.050 --> 01:56:03.010
+talent. It was true 10, 20 years back. It is true even now,
+
+01:56:03.230 --> 01:56:08.170
+right? And it will be true even after 20 years. So it's not
+
+01:56:08.170 --> 01:56:10.870
+just about your talent. It's all about your network as well.
+
+01:56:10.910 --> 01:56:13.390
+And that will bring a luck or maybe whatever it is. Right.
+
+01:56:13.390 --> 01:56:16.750
+So start doing it. Start building it all across, maybe on
+
+01:56:16.750 --> 01:56:20.310
+social. So I'm not saying just on social media and I'm not
+
+01:56:20.310 --> 01:56:24.550
+even saying that you should leave social media. No, you
+
+01:56:24.550 --> 01:56:27.290
+should balance out and you should keep on working even on
+
+01:56:27.290 --> 01:56:30.450
+that. You should keep on investing some time even on those
+
+01:56:30.450 --> 01:56:35.030
+networking. Right. Always. Always. But again, at the same
+
+01:56:35.030 --> 01:56:38.230
+point of time, I never say that, you know, go for X, Y, G
+
+01:56:38.230 --> 01:56:40.490
+conference attend all these things. No, it's not required.
+
+01:56:40.710 --> 01:56:44.250
+Right. It's not required. So, you know, try to build
+
+01:56:44.250 --> 01:56:48.450
+something valuable, share it, do some like, you know, a
+
+01:56:48.450 --> 01:56:52.250
+productive talk with people, help each other. It will happen
+
+01:56:52.250 --> 01:56:55.810
+eventually. So you don't have to do much on that part. Yeah.
+
+01:56:56.030 --> 01:56:59.530
+But yes, you should take an initiative. And as you will
+
+01:56:59.530 --> 01:57:02.370
+grow, as you will like go older and older inside the
+
+01:57:02.370 --> 01:57:10.050
+industry, you should do more. So yeah, that's a network. For
+
+01:57:10.050 --> 01:57:12.910
+example, in my network. So obviously like so many people are
+
+01:57:12.910 --> 01:57:16.710
+there. Starting from a fresher, dropout, till a person who
+
+01:57:16.710 --> 01:57:22.590
+is in their 70s. Right. All across the world. So somewhere
+
+01:57:22.590 --> 01:57:25.450
+like talking to people, teaching to a bit, not just in
+
+01:57:25.450 --> 01:57:28.170
+class. Even I used to talk a lot, you know, with everyone
+
+01:57:28.170 --> 01:57:32.330
+over a WhatsApp, over a call, just an informal discussions.
+
+01:57:32.530 --> 01:57:36.670
+Right. Plus I'm coming from my industry. So again over
+
+01:57:36.670 --> 01:57:39.990
+there, I had a lot of like a good friends. We are still like
+
+01:57:39.990 --> 01:57:43.550
+a very much like a well connected. I would say. apart from
+
+01:57:43.550 --> 01:57:46.550
+that so i have done a startup so obviously a lot of investor
+
+01:57:46.550 --> 01:57:49.870
+relations forums and many things comes into a picture i have
+
+01:57:49.870 --> 01:57:53.530
+raised funding as well so again so all of these things is
+
+01:57:53.530 --> 01:57:56.270
+accumulating right and whenever you need a help obviously
+
+01:57:56.270 --> 01:58:00.570
+people will come for you or not just help i would say i say
+
+01:58:00.570 --> 01:58:02.750
+business right so whenever you will do a business obviously
+
+01:58:03.470 --> 01:58:07.490
+you you will be able to you know exercise all of your powers
+
+01:58:07.490 --> 01:58:11.150
+over there and things will be easy things will get easy for
+
+01:58:11.150 --> 01:58:13.770
+you otherwise every time you will keep on hustling so that's
+
+01:58:13.770 --> 01:58:17.950
+a power of a network right so always try to build it and
+
+01:58:17.950 --> 01:58:23.650
+yeah i guess keep on working on that part okay so industry
+
+01:58:23.650 --> 01:58:29.770
+cooperation fine what where were i so which question what
+
+01:58:31.240 --> 01:58:35.620
+leadership collaboration networking partnership okay what
+
+01:58:35.620 --> 01:58:37.620
+are the questions for general industry competition uh
+
+01:58:37.620 --> 01:58:40.980
+nothing just try to keep some analysts they will keep on
+
+01:58:40.980 --> 01:58:45.700
+watching you like uh basically your competitor and they will
+
+01:58:45.700 --> 01:58:48.580
+keep on reporting you on a weekly basis this is how i i do
+
+01:58:48.580 --> 01:58:52.500
+it even like i have i have handled multiple projects and
+
+01:58:52.500 --> 01:58:55.380
+everywhere we have to keep a check on competitions and we
+
+01:58:55.380 --> 01:58:59.060
+have to evolve with that speed right because speed matters
+
+01:58:59.060 --> 01:59:04.660
+so we do the same thing so instead of watching me everything
+
+01:59:04.660 --> 01:59:09.880
+so maybe my junior can do it 24 by 7 right that will not
+
+01:59:09.880 --> 01:59:12.840
+cost me much how do you handle junior industry disruptions
+
+01:59:12.840 --> 01:59:18.560
+uh disruption is a bad word i would say so uh you can say
+
+01:59:18.560 --> 01:59:21.840
+that it's not a disruption so anything will not come out of
+
+01:59:21.840 --> 01:59:25.820
+the boom automatically uh right so you can say that that uh
+
+01:59:25.820 --> 01:59:29.140
+yeah so basically every day we are trying to do some sort of
+
+01:59:29.140 --> 01:59:31.880
+a progress uh we are trying to build we are trying to study
+
+01:59:31.880 --> 01:59:36.000
+competitors we are trying to study the market uh so this is
+
+01:59:36.000 --> 01:59:39.300
+how we are we are able to handle the genii industry
+
+01:59:39.300 --> 01:59:42.420
+disruption so we have just aligned ourselves and then you
+
+01:59:42.420 --> 01:59:45.240
+can give an example that we have done same thing for other
+
+01:59:45.240 --> 01:59:48.260
+10 clients as well and we were able to generate this much of
+
+01:59:48.260 --> 01:59:54.080
+revenue so we are the part of this boom not a part of the
+
+01:59:54.080 --> 01:59:57.720
+disruption so this is how you can give an answer uh what is
+
+01:59:57.720 --> 02:00:01.000
+the approach of genii industry transformation what is the
+
+02:00:01.000 --> 02:00:03.860
+approach of genii industry transformation there is no
+
+02:00:03.860 --> 02:00:08.040
+approach it's like solve the problem how do you implement
+
+02:00:08.040 --> 02:00:12.020
+genii industry innovations yeah research paper to basically
+
+02:00:12.020 --> 02:00:15.260
+like a practical so you can say that okay so our team keep
+
+02:00:15.260 --> 02:00:18.920
+on doing a lot of like research papers and uh we we just try
+
+02:00:18.920 --> 02:00:22.180
+to convert that into mbps prototypes and then we check that
+
+02:00:22.180 --> 02:00:24.860
+whether it's like uh we can we can align that with the
+
+02:00:24.860 --> 02:00:27.400
+business or not what is the consideration for general
+
+02:00:27.400 --> 02:00:30.040
+industry sustainability again these are just a question i
+
+02:00:30.040 --> 02:00:31.920
+think anyone can answer how do you handle genii industry
+
+02:00:31.920 --> 02:00:35.960
+challenges by building a best team the best way to handle
+
+02:00:35.960 --> 02:00:39.720
+challenges is go and get a best team what is the approach
+
+02:00:39.720 --> 02:00:43.160
+for genii industry uh what is the approach for genii
+
+02:00:43.160 --> 02:00:47.420
+industry opportunity keep yourself updated right keep
+
+02:00:47.420 --> 02:00:50.420
+upskilling keep yourself updated that is the best how to
+
+02:00:50.420 --> 02:00:55.700
+implement genii industry vision and strategy again same
+
+02:00:55.700 --> 02:00:59.460
+thing like keep on upskilling keep on exploring keep an eye
+
+02:00:59.460 --> 02:01:06.400
+every time and then deliver fast right deliver fast as fast
+
+02:01:06.400 --> 02:01:09.500
+as possible so that you will be having a advantages some
+
+02:01:09.500 --> 02:01:11.320
+sort of advantages over there so this is the approach for
+
+02:01:11.320 --> 02:01:11.680
+genii industry opportunity keep yourself updated how we do
+
+02:01:11.680 --> 02:01:15.920
+it so that's all guys about this 200 questions right now
+
+02:01:15.920 --> 02:01:20.080
+what is the next step so next step is uh let me write it
+
+02:01:20.080 --> 02:01:27.180
+down here itself so next step is uh those who have not sent
+
+02:01:27.180 --> 02:01:41.240
+me your resume do it by this week those who have not sent me
+
+02:01:41.340 --> 02:01:52.540
+your dpr do it again by this week uh those who would like to
+
+02:01:52.540 --> 02:01:57.360
+go for a mock interview
+
+02:01:59.570 --> 02:02:09.550
+with me uh please ping me in my whatsapp with tentative date
+
+02:02:09.550 --> 02:02:13.530
+then we will schedule yeah so that's it for this week thank
+
+02:02:13.530 --> 02:02:13.570
+you so much for watching and i will see you in the next yeah
+
+02:02:13.570 --> 02:02:20.830
+public one uh public mock interview i'm not going to ask
+
+02:02:20.830 --> 02:02:23.310
+anything or we'll be having conversation right we'll be
+
+02:02:23.310 --> 02:02:26.070
+having conversation by the way even you can ask me a cross
+
+02:02:26.070 --> 02:02:28.690
+question i don't mind it's fine you can prepare your own
+
+02:02:28.690 --> 02:02:32.950
+question for me so i will be ready for like a answer by the
+
+02:02:32.950 --> 02:02:36.110
+way uh so yeah so these are the tasks guys these are the
+
+02:02:36.110 --> 02:02:40.550
+tasks uh that we have to do uh it's now you have to do
+
+02:02:40.550 --> 02:02:43.510
+basically right so dpr is pretty much important and i will
+
+02:02:43.510 --> 02:02:46.610
+see you resume is pretty much important and then uh if you
+
+02:02:46.610 --> 02:02:49.430
+are interested because i have seen people like people asking
+
+02:02:49.430 --> 02:02:52.130
+me for the time and then uh there is some sort of a
+
+02:02:52.130 --> 02:02:56.030
+hesitation right they are saying that i'm not ready maybe at
+
+02:02:56.030 --> 02:02:59.430
+least one round you can go with avani and then if you are
+
+02:02:59.430 --> 02:03:02.530
+comfortable come with me like let's have a mock interview
+
+02:03:02.530 --> 02:03:06.210
+believe me it will be fun it will be super fun so this is
+
+02:03:06.210 --> 02:03:09.930
+the task guys that you have to undo and
+
+02:03:12.130 --> 02:03:19.230
+end of the session for interview yeah where
+
+02:03:27.100 --> 02:03:29.660
+is your group let me ping inside your group
+
+02:03:52.380 --> 02:03:54.760
+yeah so i've just pinged you inside your group as well guys
+
+02:03:54.760 --> 02:03:58.280
+so that those who have not joined even they will be able to
+
+02:03:58.280 --> 02:04:02.360
+like you know see and they will be aware about it so hope
+
+02:04:02.360 --> 02:04:06.720
+all of you have liked the discussion yeah it was a mixture
+
+02:04:06.720 --> 02:04:09.600
+of you know tech non-tech uh all this and that was the whole
+
+02:04:09.600 --> 02:04:12.040
+idea that was a whole objective behind even in future i'll
+
+02:04:12.040 --> 02:04:12.360
+try to do it again in the future yeah so i'm just trying to
+
+02:04:12.360 --> 02:04:15.180
+bring a lot of sessions uh with respect to interview with
+
+02:04:15.180 --> 02:04:19.260
+respect to a you know uh dscr kind of uh things uh data
+
+02:04:19.260 --> 02:04:21.900
+science project architecture discussion kind of things uh
+
+02:04:21.900 --> 02:04:25.300
+which which you will enjoy because uh you will be able to
+
+02:04:25.300 --> 02:04:28.800
+find out that every time discussing just a core technical is
+
+02:04:28.800 --> 02:04:31.820
+not a solution sometime you should even do a discussion
+
+02:04:31.820 --> 02:04:35.400
+which can you know summarize the things summarize the things
+
+02:04:35.400 --> 02:04:38.720
+overall and i believe this is what the objective of this
+
+02:04:38.720 --> 02:04:42.340
+entire batch was and uh yeah successfully we are able to do
+
+02:04:42.340 --> 02:04:42.340
+that so thank you very much and i will see you in the next
+
+02:04:42.340 --> 02:04:44.920
+session bye bye to do it in case of any concern in case of
+
+02:04:44.920 --> 02:04:48.120
+any question we have a group just for this batch just like
+
+02:04:48.120 --> 02:04:52.040
+uh for any other batches so just feel free to ping me and
+
+02:04:52.040 --> 02:04:54.340
+again i'm the part of this group yeah it was a very good
+
+02:04:54.340 --> 02:04:57.500
+session no doubt thank you thanks everyone yeah so with that
+
+02:04:57.500 --> 02:05:00.600
+thank you so much everyone uh sir or a staff label or
+
+02:05:00.600 --> 02:05:03.040
+principal label what kind of a question expected other than
+
+02:05:03.040 --> 02:05:07.380
+once already shared uh believe me pk uh see if you are able
+
+02:05:07.380 --> 02:05:10.460
+to answer these 200 questions right plus regime plus dpr if
+
+02:05:10.460 --> 02:05:13.980
+you're able to do it you will cross the limit believe me no
+
+02:05:13.980 --> 02:05:16.880
+one from a tech side from a non-tech side from a research
+
+02:05:16.880 --> 02:05:20.260
+side no one will be able to cross this limit and you will be
+
+02:05:20.260 --> 02:05:23.540
+literally very very comfortable in any generic interview
+
+02:05:23.540 --> 02:05:26.660
+right you can you can just go and talk to you know anyone uh
+
+02:05:26.660 --> 02:05:30.000
+who have recently given an interview and then try to like
+
+02:05:30.000 --> 02:05:31.940
+ask some question that okay what was the question which was
+
+02:05:31.940 --> 02:05:35.440
+asked and just try to find those questions here you will be
+
+02:05:35.440 --> 02:05:37.480
+able to find it or in our discussion you will be able to
+
+02:05:37.480 --> 02:05:41.080
+find it right so no one will cross means literally no one
+
+02:05:41.080 --> 02:05:45.120
+will cross this is i think like a summary of everything
+
+02:05:45.120 --> 02:05:50.440
+right uh inside like one uh single set and plus the
+
+02:05:50.440 --> 02:05:52.420
+discussion that we have done with respect to projects and
+
+02:05:52.420 --> 02:05:58.060
+resume so please try to like a prepare try to summarize and
+
+02:05:58.060 --> 02:06:01.180
+then go for the interview you will be able to crack easily
+
+02:06:01.180 --> 02:06:06.340
+you will be able to crack is there any uh opening in january
+
+02:06:06.340 --> 02:06:11.340
+how the job is in uk uh i'm not sure about it how the job in
+
+02:06:11.340 --> 02:06:14.820
+uk maybe in your group there are some people from uk so
+
+02:06:14.820 --> 02:06:16.540
+maybe you can connect with them they will be able to help
+
+02:06:16.540 --> 02:06:21.160
+you out easily yeah just just kind of the people they are
+
+02:06:21.160 --> 02:06:26.850
+there in your group i think jitendra sir himself is from uk
+
+02:06:26.850 --> 02:06:29.890
+i believe so you can connect with him as well he's a very
+
+02:06:29.890 --> 02:06:31.890
+good person maybe he will give you like a good insights
+
+02:06:31.890 --> 02:06:37.690
+about uk systematic questions are tough when you you have a
+
+02:06:38.810 --> 02:06:44.290
+when you have to design the hypothetical nowadays none of
+
+02:06:44.290 --> 02:06:47.950
+the system is hypothetical uh nowadays it's not like a you
+
+02:06:47.950 --> 02:06:51.970
+know uh which is which we we don't know or like some
+
+02:06:51.970 --> 02:06:54.990
+component which we are not aware about nowadays it's like a
+
+02:06:54.990 --> 02:06:57.090
+easier easier than before thank you sir it was a wonderful
+
+02:06:57.090 --> 02:07:02.510
+last few weeks thank you sir okay but yeah i have also
+
+02:07:02.510 --> 02:07:05.070
+attached the system design so try to you know draw it try to
+
+02:07:05.070 --> 02:07:09.050
+design it uh you will be comfortable right so
+
+02:07:11.160 --> 02:07:14.240
+fine guys uh with that uh thank you so much you're gonna
+
+02:07:14.240 --> 02:07:18.540
+help you amazing discussion okay awesome thank you thanks
+
+02:07:18.540 --> 02:07:21.080
+everyone thank you yeah i'll try to bring more and more
+
+02:07:21.080 --> 02:07:23.400
+that's the reason so we have your own plus right so that you
+
+02:07:23.400 --> 02:07:27.160
+know we can bring more and you can consume more and in this
+
+02:07:27.160 --> 02:07:29.660
+way so we can we can have a discussion as much as we can
+
+02:07:29.660 --> 02:07:33.020
+without any kind of a limitation so fine guys thank you so
+
+02:07:33.020 --> 02:07:35.820
+much take care everyone we have a group and i have given the
+
+02:07:35.820 --> 02:07:39.820
+task in a hand uh so please try to complete that task anyhow
+
+02:07:39.820 --> 02:07:42.700
+we all are connected uh since a very long time and we will
+
+02:07:42.700 --> 02:07:45.480
+be connected so this is not just a final discussion there
+
+02:07:45.480 --> 02:07:48.440
+will be so many discussion uh which will come i don't i i
+
+02:07:48.440 --> 02:07:50.820
+want to grow through your company thank you thanks thank you
+
+02:07:50.820 --> 02:07:54.200
+so much thanks yeah thanks for your you know let's let's
+
+02:07:54.200 --> 02:07:58.780
+like uh do something on that then yeah thank you so thank
+
+02:07:58.780 --> 02:08:01.940
+you so much guys take care uh good night uh those who are
+
+02:08:01.940 --> 02:08:05.600
+from india those from outside so yeah uh maybe it's
+
+02:08:05.600 --> 02:08:08.480
+afternoon maybe it's morning for you but yeah thank you
+
+02:08:08.480 --> 02:08:10.360
+everyone thanks everyone take care have a great day night
+
+02:08:10.360 --> 02:08:11.180
+ahead thanks
+

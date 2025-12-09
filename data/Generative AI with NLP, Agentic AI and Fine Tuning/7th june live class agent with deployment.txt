@@ -1,0 +1,6326 @@
+WEBVTT
+
+00:00:00.020 --> 00:00:03.080
+so fine guys like i said so in today's class we are going to
+
+00:00:03.080 --> 00:00:05.980
+talk about basically a lang chain we are going to talk about
+
+00:00:05.980 --> 00:00:09.840
+a lang graph and we are going to talk about a lang serve now
+
+00:00:09.840 --> 00:00:14.240
+what we are going to achieve with all these three so with
+
+00:00:14.240 --> 00:00:18.060
+the help of lang chain so we are going to create a tools i
+
+00:00:18.060 --> 00:00:20.840
+think we all know what is the meaning of a tools i believe i
+
+00:00:20.840 --> 00:00:25.140
+talked about a tools a lot how we can try to create a tools
+
+00:00:25.140 --> 00:00:28.620
+in case of a lang chain in case of a lama indexes in case of
+
+00:00:28.620 --> 00:00:31.760
+a crew ai we have discussed about that even how to create a
+
+00:00:31.760 --> 00:00:34.460
+agents we have already talked about all of these things now
+
+00:00:34.460 --> 00:00:37.540
+it's time to combine couple of things together and then
+
+00:00:37.540 --> 00:00:42.380
+deploy it deploy it somewhere where it can work in a real
+
+00:00:42.380 --> 00:00:46.720
+time so everyone will be able to use my agents or tools that
+
+00:00:46.720 --> 00:00:50.460
+i'm going to create and maybe if they would like to create
+
+00:00:50.460 --> 00:00:53.760
+their own ui interface so they will be able to run it with
+
+00:00:53.760 --> 00:00:56.300
+the help of their own ui interface that is something that
+
+00:00:56.300 --> 00:00:58.980
+that we are going to see so a complete end to the lang chain
+
+00:00:58.980 --> 00:00:58.980
+so we are going to talk about a tools i believe we are going
+
+00:00:58.980 --> 00:01:03.240
+to end application till a deployment is something which i'm
+
+00:01:03.240 --> 00:01:06.540
+going to demonstrate in my today's class based on the
+
+00:01:06.540 --> 00:01:09.880
+previous class understanding because uh we talked about we
+
+00:01:09.880 --> 00:01:12.740
+all know that how to create an agent and in no time we all
+
+00:01:12.740 --> 00:01:16.040
+will be able to create an agent in no time we can try to
+
+00:01:16.040 --> 00:01:20.960
+pass a tools to my agent but it's time to like serve each
+
+00:01:20.960 --> 00:01:23.940
+and everything and this is where i'm going to use a lang
+
+00:01:23.940 --> 00:01:26.180
+serve framework again there are multiple ways there are
+
+00:01:26.180 --> 00:01:30.880
+multiple framework to do it but i have chosen these three
+
+00:01:30.880 --> 00:01:34.940
+things a lang chain lang graph and lang serve to build this
+
+00:01:34.940 --> 00:01:38.640
+entire end to end application so let me share my screen i
+
+00:01:38.640 --> 00:01:41.740
+believe my screen is visible to all of you so let me open up
+
+00:01:41.740 --> 00:01:45.640
+my scribble ink so that i can draw something for all of you
+
+00:01:45.640 --> 00:01:46.700
+okay
+
+00:01:51.980 --> 00:01:56.100
+so let's let's try to understand that what we are going to
+
+00:01:56.100 --> 00:02:01.780
+achieve in my today's class so first of all this is the
+
+00:02:01.780 --> 00:02:03.640
+project let me share my screen
+
+00:02:27.920 --> 00:02:30.120
+yeah so yeah
+
+00:02:39.460 --> 00:02:43.380
+so this is the project that we are going to do so ai driven
+
+00:02:43.380 --> 00:02:47.140
+medical diagnostic support system so where we are going to
+
+00:02:47.140 --> 00:02:49.800
+basically create a different different kind of a tools we
+
+00:02:49.800 --> 00:02:52.500
+are going to create a different different kind of agents the
+
+00:02:52.500 --> 00:02:56.020
+main part is a deployment and the main part is end to end
+
+00:02:56.020 --> 00:02:59.540
+application building so starting from your back end so which
+
+00:02:59.540 --> 00:03:03.500
+is going to activate your agents and a tools and then
+
+00:03:03.500 --> 00:03:06.820
+building a front end so which is going to consume which is
+
+00:03:06.820 --> 00:03:10.340
+running in a backend and again so whenever we try to do a
+
+00:03:10.340 --> 00:03:14.460
+real-time project we always try to create a backend server
+
+00:03:14.460 --> 00:03:18.460
+separately and a front-end server in a complete separate way
+
+00:03:18.460 --> 00:03:22.060
+so that my front-end server will be able to communicate with
+
+00:03:22.060 --> 00:03:26.000
+my back-end server so even this euron.one application or
+
+00:03:26.000 --> 00:03:29.080
+this portal that you are able to see so the things that you
+
+00:03:29.080 --> 00:03:31.800
+are able to see is basically a front-end but whenever you
+
+00:03:31.800 --> 00:03:34.620
+are going to click on any of these courses or whenever you
+
+00:03:34.620 --> 00:03:37.840
+are going to click on anything so it is trying to call an
+
+00:03:37.840 --> 00:03:40.860
+api from a backend and because of that so each and
+
+00:03:40.860 --> 00:03:42.960
+everything is up and running whether it's a internship
+
+00:03:42.960 --> 00:03:46.280
+portal or whether it's a yuri or anything so yeah coming to
+
+00:03:46.280 --> 00:03:49.780
+my international portal guys so like uh i told that by
+
+00:03:49.780 --> 00:03:52.420
+friday intensive portal will be available but yeah so we
+
+00:03:52.420 --> 00:03:54.580
+have released this intensive portal on a wednesday itself
+
+00:03:54.580 --> 00:03:58.060
+and in an intensive portal you will be able to find out a
+
+00:03:58.060 --> 00:04:00.460
+project based on the different different domain based on the
+
+00:04:00.460 --> 00:04:04.480
+different different technology so far we have loaded 570
+
+00:04:04.480 --> 00:04:07.420
+projects so you can go ahead and you can try to like uh you
+
+00:04:07.420 --> 00:04:10.900
+know select any of the project of your choice or maybe based
+
+00:04:10.900 --> 00:04:13.720
+on the domain you can try to filter out any of these
+
+00:04:13.720 --> 00:04:18.600
+projects and you can try to enroll into any of this project
+
+00:04:18.600 --> 00:04:22.200
+by looking into a prd by looking into a hld and by looking
+
+00:04:22.200 --> 00:04:26.400
+into a lld so in this prd document in this hld document in
+
+00:04:26.400 --> 00:04:30.040
+this ld document so very clearly we have defined all the
+
+00:04:30.040 --> 00:04:33.480
+requirement that you are supposed to fulfill now why we are
+
+00:04:33.480 --> 00:04:36.620
+keeping in this way the reason is very simple whenever you
+
+00:04:36.620 --> 00:04:39.720
+are going to join any organization even as a fresher or
+
+00:04:39.720 --> 00:04:43.340
+maybe as an experienced person so you will be able to see
+
+00:04:43.340 --> 00:04:46.760
+this kind of a prd almost a similar kind of a prd a project
+
+00:04:46.760 --> 00:04:49.460
+requirement documentation from your team maybe from your
+
+00:04:49.460 --> 00:04:52.780
+lead or maybe from your client and similarly you have to
+
+00:04:52.780 --> 00:04:56.220
+create a hld and you have to create a lld but here so we
+
+00:04:56.220 --> 00:04:58.340
+have already created a hld and we have to create a lld and
+
+00:04:58.340 --> 00:04:58.520
+we have to create a hld and we have to create we have
+
+00:04:58.520 --> 00:05:01.220
+already created a LLD in general from your client or from
+
+00:05:01.220 --> 00:05:03.900
+your lead you will be able to receive just a project
+
+00:05:03.900 --> 00:05:07.400
+requirement document so where like a with respect to a
+
+00:05:07.400 --> 00:05:11.500
+project a goals objective or maybe a feature maybe a user
+
+00:05:11.500 --> 00:05:14.300
+story that how user is going to navigate or maybe a
+
+00:05:14.300 --> 00:05:16.320
+functional requirement non-functional requirement everything
+
+00:05:16.320 --> 00:05:19.920
+will be mentioned everything will be mentioned inside a PID
+
+00:05:19.920 --> 00:05:22.960
+document and based on that you have to create your HLD and
+
+00:05:22.960 --> 00:05:26.500
+LLD but for every project we have given you HLD and LLD as
+
+00:05:26.500 --> 00:05:29.400
+well so that it will make your life little bit easier and
+
+00:05:29.400 --> 00:05:33.040
+based on this PRD HLD and LLD you will be able to build end
+
+00:05:33.040 --> 00:05:36.820
+-to-end project and you will be able to submit it now you
+
+00:05:36.820 --> 00:05:40.960
+can try to use it as a fresher you can try to use it even as
+
+00:05:40.960 --> 00:05:43.820
+an experienced person believe me even if you are going to
+
+00:05:43.820 --> 00:05:48.380
+complete one or two project right one or two project you
+
+00:05:48.380 --> 00:05:52.740
+will be able to get a complete real-time exposure this is
+
+00:05:52.740 --> 00:05:53.920
+how this entire project will be able to get a complete real
+
+00:05:53.920 --> 00:05:54.440
+-time exposure this is how this entire project will be built
+
+00:05:54.440 --> 00:05:58.020
+and this is how real-time event development happens right so
+
+00:05:58.020 --> 00:06:00.260
+whenever we say that okay fine so how real-time development
+
+00:06:00.260 --> 00:06:03.760
+happens so this is how real-time development happens at the
+
+00:06:03.760 --> 00:06:06.920
+end of the day so all of you are going to explore it all of
+
+00:06:06.920 --> 00:06:09.780
+you are going to enroll it and very soon we are going to
+
+00:06:09.780 --> 00:06:12.040
+even roll out the feature maybe by the end of this month
+
+00:06:12.040 --> 00:06:16.440
+where if you would like to work as a team right maybe you if
+
+00:06:16.440 --> 00:06:19.120
+you would like to work but like a with a two people three
+
+00:06:19.120 --> 00:06:22.440
+people or five people you will be able to work as of now as
+
+00:06:22.440 --> 00:06:24.460
+an individual you can come over here and here you can select
+
+00:06:24.460 --> 00:06:27.540
+one single project and then you can try to start so once you
+
+00:06:27.540 --> 00:06:31.580
+are going to click on enroll so here it is going to give you
+
+00:06:31.580 --> 00:06:34.440
+a onboarding later like this is just onboarding later we are
+
+00:06:34.440 --> 00:06:37.520
+giving you and this is official onboarding later anyone can
+
+00:06:37.520 --> 00:06:41.100
+come over here and anyone even can verify that whether this
+
+00:06:41.100 --> 00:06:44.520
+letter is a genuine or not so basically this later anyone
+
+00:06:44.520 --> 00:06:47.060
+can verify so even with the help of qr code or with the help
+
+00:06:47.060 --> 00:06:51.000
+of this id or just by clicking on the link so this is just a
+
+00:06:51.000 --> 00:06:53.880
+onboarding later not a completion later so this is just a
+
+00:06:53.880 --> 00:06:56.200
+onboarding later at all so completion later you will be able
+
+00:06:56.200 --> 00:06:58.820
+to get it once you are going to submit the project after
+
+00:06:58.820 --> 00:07:01.800
+doing it plus we have given you a kanban board kind of a
+
+00:07:01.800 --> 00:07:05.100
+structure so where you can try to you know list down all the
+
+00:07:05.100 --> 00:07:09.460
+tasks over here and then like a drag it from one place to
+
+00:07:09.460 --> 00:07:12.660
+other places so as it is going to complete so this is just
+
+00:07:12.660 --> 00:07:16.560
+for you so when you are trying to build a big project so
+
+00:07:16.560 --> 00:07:19.960
+obviously we try to use a kanban board kind of a things and
+
+00:07:19.960 --> 00:07:22.260
+this is where this kanban board is going to come into
+
+00:07:22.260 --> 00:07:25.720
+picture for a respective project you can try to enroll into
+
+00:07:25.720 --> 00:07:28.320
+one two or maybe a hundreds of project we don't have any
+
+00:07:28.320 --> 00:07:31.660
+kind of issues and yeah for majority of technology projects
+
+00:07:31.660 --> 00:07:34.340
+are already available for majority of domain projects are
+
+00:07:34.340 --> 00:07:37.040
+already available for whichever domain projects are not
+
+00:07:37.040 --> 00:07:40.300
+available for whichever tech projects are not available we
+
+00:07:40.300 --> 00:07:43.580
+have given an option to request so here you can come and you
+
+00:07:43.580 --> 00:07:46.460
+can even try to write your domain and just a technology my
+
+00:07:46.460 --> 00:07:49.700
+team is going to evaluate it so you have requested doesn't
+
+00:07:49.700 --> 00:07:53.400
+mean that project will be available for sure we are going to
+
+00:07:53.400 --> 00:07:53.880
+evaluate it and we are going to evaluate it so if you are
+
+00:07:53.880 --> 00:07:56.480
+making a project it the alignment with respect to this
+
+00:07:56.480 --> 00:07:59.460
+particular portal that we have created and then we are going
+
+00:07:59.460 --> 00:08:02.460
+to create a prd we are going to create a hld we are going to
+
+00:08:02.460 --> 00:08:05.200
+create a lld and we'll try to make those project available
+
+00:08:05.200 --> 00:08:10.080
+inside a internship portal so hope this entire portal is
+
+00:08:10.080 --> 00:08:13.460
+like a fine with all of you if you have any question please
+
+00:08:13.460 --> 00:08:16.740
+let me know this is nice will you be adding a legal area
+
+00:08:16.740 --> 00:08:20.860
+also soon uh yeah you can request it basically you can go
+
+00:08:20.860 --> 00:08:23.300
+ahead and you can request it so whatever project that we are
+
+00:08:23.300 --> 00:08:25.620
+going to upload so we are going to upload it with respect to
+
+00:08:25.620 --> 00:08:29.080
+a tech basically right with respect to our technology we are
+
+00:08:29.080 --> 00:08:32.000
+going to like do it so maybe if you can try to fill up a
+
+00:08:32.000 --> 00:08:35.980
+domain as a legal maybe technology as ai or maybe like a web
+
+00:08:35.980 --> 00:08:38.380
+development so we can try to build a project and we can try
+
+00:08:38.380 --> 00:08:41.180
+to make it available but yeah you can go ahead and request
+
+00:08:41.180 --> 00:08:44.340
+it will take some time maybe like a sometime week of time it
+
+00:08:44.340 --> 00:08:46.380
+is going to take some time maybe 10 days of time it is going
+
+00:08:46.380 --> 00:08:50.200
+to take but if the project or domain or technology is a
+
+00:08:50.200 --> 00:08:52.060
+feasible one we'll make it available
+
+00:08:55.060 --> 00:08:58.800
+can when for our work management yes so basically we all use
+
+00:08:58.800 --> 00:09:01.600
+this can be kind of a board right uh in terms of a task
+
+00:09:01.600 --> 00:09:05.040
+allocation in terms of a work allocation for example uh
+
+00:09:05.040 --> 00:09:08.200
+tomorrow you are going to basically like uh tomorrow you are
+
+00:09:08.200 --> 00:09:10.800
+going to work with a multiple person right so maybe you can
+
+00:09:10.800 --> 00:09:14.360
+create one of the tasks for you one of the tasks for your
+
+00:09:14.360 --> 00:09:17.820
+team members and then you can try to allocate those tasks on
+
+00:09:17.820 --> 00:09:20.540
+your team member and this is how even we do a project
+
+00:09:20.540 --> 00:09:22.960
+development right whenever we do a project development so we
+
+00:09:22.960 --> 00:09:25.420
+create a multiple different tasks technically you lead is
+
+00:09:25.420 --> 00:09:27.160
+going to create a multiple different different kind of a
+
+00:09:27.160 --> 00:09:29.780
+task they are going to assign it among a different different
+
+00:09:29.780 --> 00:09:33.180
+team members so in a can-ban board itself you will be able
+
+00:09:33.180 --> 00:09:36.660
+to see uh that particular option so where whoever you are
+
+00:09:36.660 --> 00:09:40.960
+going to on board right for a particular project uh so you
+
+00:09:40.960 --> 00:09:44.100
+can you can try to like do a project along with that and you
+
+00:09:44.100 --> 00:09:46.980
+can try to allocate a task that okay you do this i will do
+
+00:09:46.980 --> 00:09:50.220
+this something like this and then you can try to track your
+
+00:09:50.220 --> 00:09:54.120
+own progress but yeah so the only objective behind this
+
+00:09:54.120 --> 00:09:56.680
+intensive portal is to give you an experience and especially
+
+00:09:56.680 --> 00:10:01.220
+for a fresher and dropout. So every colleges nowadays in a
+
+00:10:01.220 --> 00:10:03.780
+final semester, or maybe even in a sixth semester, most of
+
+00:10:03.780 --> 00:10:07.580
+the colleges, it's a rule nowadays, right? They like a look
+
+00:10:07.580 --> 00:10:11.120
+for the internship. And generally what happens is a problem
+
+00:10:11.120 --> 00:10:13.280
+with the internship, I'll talk about even a reality of the
+
+00:10:13.280 --> 00:10:16.260
+internship. So the problem with the internship is that
+
+00:10:16.260 --> 00:10:21.960
+majority of interns ends up doing a low level task whenever
+
+00:10:21.960 --> 00:10:25.920
+they join as an intern and they will not end up learning
+
+00:10:25.920 --> 00:10:28.720
+anything. They will maybe just get some sort of a completion
+
+00:10:28.720 --> 00:10:31.520
+certificate for three months, for four months, for six
+
+00:10:31.520 --> 00:10:35.160
+months, max to max. And at the end of the day, they don't
+
+00:10:35.160 --> 00:10:38.520
+learn anything. They don't build anything, but this portal,
+
+00:10:38.720 --> 00:10:41.880
+make sure, always make sure that you are building, you are
+
+00:10:41.880 --> 00:10:46.180
+not just doing a low hanging task, basically generally like
+
+00:10:46.180 --> 00:10:49.420
+this is what like interns does, but yeah, not here, not, not
+
+00:10:49.420 --> 00:10:52.340
+in this one. And it is going to give you. A complete end to
+
+00:10:52.340 --> 00:10:54.860
+end understanding because when you are going to submit the
+
+00:10:54.860 --> 00:10:58.620
+project based on the project criteria, which means HLD, LLD
+
+00:10:58.620 --> 00:11:01.400
+and PRD that we have given to you. So we are going to
+
+00:11:01.400 --> 00:11:05.020
+evaluate and we are going to give you even a review if you
+
+00:11:05.020 --> 00:11:07.320
+are rejecting your project. So you will be able to get a
+
+00:11:07.320 --> 00:11:10.240
+review, a complete end to end review that, okay, this is
+
+00:11:10.240 --> 00:11:12.300
+something that you have to do. You have not done that. And
+
+00:11:12.300 --> 00:11:14.920
+based on the review, you can try to build a project once
+
+00:11:14.920 --> 00:11:18.480
+again, and then you are going to resubmit it. Now once you
+
+00:11:18.480 --> 00:11:21.560
+are going to resubmit it, then only. And once we are going
+
+00:11:21.560 --> 00:11:23.580
+to, you are going to resubmit it. And then once we are going
+
+00:11:23.580 --> 00:11:27.000
+to approve it, then only you will get a completion letter
+
+00:11:27.000 --> 00:11:30.480
+for that duration. Duration means the day you have enrolled,
+
+00:11:30.620 --> 00:11:32.340
+let's suppose today you have enrolled and you are submitting
+
+00:11:32.340 --> 00:11:34.300
+your project maybe after three months, four months or five
+
+00:11:34.300 --> 00:11:37.680
+months. So for that particular tenure, you will be able to
+
+00:11:37.680 --> 00:11:42.540
+get a letter, authentic letter from our side. And again, in
+
+00:11:42.540 --> 00:11:45.740
+every PRD, you will be able to find out that we have even
+
+00:11:45.740 --> 00:11:49.240
+given you a tentative milestone. That how much time in the
+
+00:11:49.240 --> 00:11:51.480
+general, this project should take. Okay. But yeah, you can
+
+00:11:51.480 --> 00:11:54.540
+take a, even a less time or even you can take maybe a more
+
+00:11:54.540 --> 00:11:56.860
+time. It's completely fine. At the end of the day, the
+
+00:11:56.860 --> 00:11:59.440
+later, the final internship completion later that you will
+
+00:11:59.440 --> 00:12:01.700
+be able to get or in terms of data that you are, you are
+
+00:12:01.700 --> 00:12:05.700
+going to receive is for a tenure of submission till approval
+
+00:12:05.700 --> 00:12:11.580
+is intensive accessible for all subscriber. I don't think
+
+00:12:11.580 --> 00:12:13.880
+so. Intensive is not available for the all subscriber. It's
+
+00:12:13.880 --> 00:12:16.600
+just available for a plus subscriber, whatever feature that
+
+00:12:16.600 --> 00:12:18.900
+we are building, whatever feature that we are launching, it
+
+00:12:18.900 --> 00:12:21.560
+is like a costing us a lot. So obviously like a, it's not
+
+00:12:21.560 --> 00:12:24.720
+available to like a, anyone except a plus subscriber
+
+00:12:24.720 --> 00:12:25.120
+basically.
+
+00:12:30.180 --> 00:12:34.380
+Okay. So I believe now internship portal is fine. Now coming
+
+00:12:34.380 --> 00:12:38.500
+back to our discussion. So like I said, a generative AI with
+
+00:12:38.500 --> 00:12:42.740
+NLP. So as I said that we are going to basically talk about
+
+00:12:42.740 --> 00:12:48.280
+this particular project in my today's class. So this, this,
+
+00:12:48.400 --> 00:12:52.620
+this, this, this label three project basically. Yeah. So AI
+
+00:12:52.620 --> 00:12:55.720
+driven medical diagnosis support system. Now. Intention is
+
+00:12:55.720 --> 00:12:58.360
+not to teach you how to build an agent. Intention is not to
+
+00:12:58.360 --> 00:13:01.920
+teach you how to build a tools. But intention is to teach
+
+00:13:01.920 --> 00:13:04.760
+you in this particular project, how to do it things end to
+
+00:13:04.760 --> 00:13:07.540
+end so that any given project, right? Any given project
+
+00:13:07.540 --> 00:13:10.660
+going forward that we are going to build. So we will go
+
+00:13:10.660 --> 00:13:13.220
+ahead with the end to end approach, not just like a running
+
+00:13:13.220 --> 00:13:16.220
+something in my local system. So today I will stop. I'll be
+
+00:13:16.220 --> 00:13:18.900
+showing you a deployment in a render, but tomorrow maybe
+
+00:13:18.900 --> 00:13:21.260
+I'll try to show you even a deployment with the AWS Azure
+
+00:13:21.260 --> 00:13:24.580
+and maybe other services. But yeah. So like to see a
+
+00:13:24.580 --> 00:13:26.720
+deployment or to do a deployment, you have to have that
+
+00:13:26.720 --> 00:13:29.520
+account unless you don't have an account, you will not be
+
+00:13:29.520 --> 00:13:31.620
+able to do a deployment. But yeah, from my side, obviously
+
+00:13:31.620 --> 00:13:32.620
+I'm going to show it to you.
+
+00:13:39.430 --> 00:13:40.610
+So shall we start guys?
+
+00:13:59.920 --> 00:14:04.820
+Yeah. Okay. So Joey is the first person who used to comment
+
+00:14:04.820 --> 00:14:09.100
+all the time. That's great. So fine. Let's get started. And
+
+00:14:09.100 --> 00:14:12.260
+let me show you a end to end this entire things. And today
+
+00:14:12.260 --> 00:14:14.500
+onwards, whatever you are going to build with respect to
+
+00:14:14.500 --> 00:14:17.540
+agent TKI, please make sure that you are doing end to end.
+
+00:14:17.640 --> 00:14:20.580
+Okay. Not just like something which is running in your local
+
+00:14:20.580 --> 00:14:24.240
+system, right? So we will like a leave that approach from
+
+00:14:24.240 --> 00:14:29.600
+today onwards. Okay. So now to do this, let me close this
+
+00:14:29.600 --> 00:14:34.880
+entire things. And here, what we are going to do is, so we
+
+00:14:34.880 --> 00:14:37.840
+are going to build basically,
+
+00:14:42.050 --> 00:14:45.250
+okay, what happened? So
+
+00:15:08.260 --> 00:15:10.780
+technically we are going to build a backend.
+
+00:15:13.460 --> 00:15:18.920
+Backend. Now in a backend. I am going to keep our tools and
+
+00:15:18.920 --> 00:15:23.260
+then I can try to keep my agents, right? I think we all know
+
+00:15:23.260 --> 00:15:25.280
+what is the meaning of a tools. I think we all know what is
+
+00:15:25.280 --> 00:15:28.760
+the meaning of agents. And then we are going to build our
+
+00:15:28.760 --> 00:15:31.820
+front end separately, right? So both the servers are going
+
+00:15:31.820 --> 00:15:35.640
+to be separate, like a backend will be called by my front
+
+00:15:35.640 --> 00:15:40.650
+end, front end. So obviously front end, I'm going to create
+
+00:15:40.650 --> 00:15:45.750
+a Streamlint app, Streamlint app. Now those who would like
+
+00:15:45.750 --> 00:15:48.590
+to like create this entire things with the help of maybe a
+
+00:15:48.590 --> 00:15:52.890
+react app, or maybe by using some other UI things, you can
+
+00:15:52.890 --> 00:15:55.670
+go a graduate or maybe like a react. If you would like to
+
+00:15:55.670 --> 00:15:58.430
+create or react native in which you would like to create it,
+
+00:15:58.510 --> 00:16:00.770
+you can go ahead and you can try to create it at the end of
+
+00:16:00.770 --> 00:16:03.330
+the day. My backend will be completely separate and this
+
+00:16:03.330 --> 00:16:06.470
+backend can be called by anyone. It will be a complete
+
+00:16:06.470 --> 00:16:09.190
+technology independent, right? It will be completely
+
+00:16:09.190 --> 00:16:11.890
+technology independent. So my backend will be called. So I'm
+
+00:16:11.890 --> 00:16:15.770
+going to expose my backend as an API and anyone and everyone
+
+00:16:15.770 --> 00:16:19.210
+will be able to call that API. Anyone. I'm going to do a
+
+00:16:19.210 --> 00:16:22.370
+testing for example. So even for a URI, right? Even for a
+
+00:16:22.370 --> 00:16:25.510
+URI. So we have released a endpoint and that's an
+
+00:16:25.510 --> 00:16:28.790
+authenticated authorized endpoint and something is running
+
+00:16:28.790 --> 00:16:31.530
+in a backend, right? So whenever you are going to call URI
+
+00:16:31.530 --> 00:16:35.330
+via API and whenever you are going to call a URI, even
+
+00:16:35.330 --> 00:16:39.230
+through a UI interface by the chat system, right? So URI is
+
+00:16:39.230 --> 00:16:42.650
+trying to hit some of the backend, right? Whether it's an
+
+00:16:42.650 --> 00:16:46.710
+API or whether it's a UI chat interface. So URI is trying to
+
+00:16:46.710 --> 00:16:50.410
+hit that backend. URI is trying to execute or do a
+
+00:16:50.410 --> 00:16:53.970
+inferencing. It is trying to do a complete latex operation
+
+00:16:53.970 --> 00:16:57.150
+in a backend so that you will be able to get an output in a
+
+00:16:57.150 --> 00:16:59.330
+formatted way, whether it's a formula, whether it's a table
+
+00:16:59.330 --> 00:17:02.090
+or whether it's any other things. And then you are able to
+
+00:17:02.090 --> 00:17:06.090
+see some of the responses. So generally, whenever we try to
+
+00:17:06.090 --> 00:17:08.990
+create a production grid application, we always try to keep
+
+00:17:08.990 --> 00:17:12.350
+my backend separate and always try to keep my frontend
+
+00:17:12.350 --> 00:17:16.010
+separate so that I can try to manage both of these things
+
+00:17:16.010 --> 00:17:19.090
+separately. Okay. I will be able to develop my backend
+
+00:17:19.090 --> 00:17:21.830
+independently. I will be able to develop my frontend and
+
+00:17:21.830 --> 00:17:25.090
+then whenever it is required, I'll just try to call the APIs
+
+00:17:25.090 --> 00:17:28.810
+and I will be able to stitch it together, right? Stitch it
+
+00:17:28.810 --> 00:17:31.630
+together. And this is something that I'm going to see. So
+
+00:17:31.630 --> 00:17:35.010
+I'll try to keep all my executable things, executable things
+
+00:17:35.010 --> 00:17:38.930
+means tools and the agents, because this is something that
+
+00:17:38.930 --> 00:17:41.310
+we try to execute and whatever agent that we are going to
+
+00:17:41.310 --> 00:17:44.750
+get, whatever tools that my agent is trying to call. So
+
+00:17:44.750 --> 00:17:47.470
+these are the executable things. These are the things. These
+
+00:17:47.470 --> 00:17:50.930
+are the things which is trying to do a real task, right? And
+
+00:17:50.930 --> 00:17:54.130
+the frontend is just a UI, which is giving you a complete
+
+00:17:54.130 --> 00:17:58.890
+user experience. And anyone without knowing about a tech in
+
+00:17:58.890 --> 00:18:02.990
+a backend, right? They will be able to use it. So similar
+
+00:18:02.990 --> 00:18:05.890
+kind of approach we are going to see in this particular
+
+00:18:05.890 --> 00:18:09.430
+class. Now API wise, I will be using a URI API so that you
+
+00:18:09.430 --> 00:18:11.690
+don't have to go anywhere because we all know that, that we
+
+00:18:11.690 --> 00:18:14.570
+are trying to build an agentic AI project or anything that
+
+00:18:14.570 --> 00:18:18.090
+you will build in a generative AI. Okay. So without API, you
+
+00:18:18.090 --> 00:18:20.450
+can't do anything, right? I believe we all have that
+
+00:18:20.450 --> 00:18:23.110
+understanding because we have taken a lot many classes and
+
+00:18:23.110 --> 00:18:28.510
+so many times we have already used a URI API. So and we are
+
+00:18:28.510 --> 00:18:31.290
+going to run this backend in a local system first of all,
+
+00:18:31.330 --> 00:18:33.550
+frontend in a local system first of all, even we are going
+
+00:18:33.550 --> 00:18:36.330
+to combine it and then we are going to run it in a local
+
+00:18:36.330 --> 00:18:40.050
+system first of all and then I will host backend separately
+
+00:18:40.050 --> 00:18:44.050
+on a separate server on a cloud and frontend on a separate
+
+00:18:44.050 --> 00:18:46.990
+server on a cloud and then we'll see that whether it is able
+
+00:18:46.990 --> 00:18:49.950
+to make an interaction or not in between frontend and a
+
+00:18:49.950 --> 00:18:53.130
+backend in between my tools, agents and my frontend UI
+
+00:18:53.130 --> 00:18:55.770
+interface, which has been built in a Streamlint. And then
+
+00:18:55.770 --> 00:18:57.910
+I'll keep on writing more and more things as we are going to
+
+00:18:57.910 --> 00:19:05.610
+progress. So let me open up our VS code, VS code, and
+
+00:19:15.370 --> 00:19:20.550
+then let's create a new folder for this project,
+
+00:19:24.440 --> 00:19:29.700
+medical project. Okay. I'm going to keep it as a name and
+
+00:19:29.700 --> 00:19:33.640
+then select a folder. So this is my folder, a simple raw
+
+00:19:33.640 --> 00:19:39.680
+blank folder I have created now inside this, inside this. So
+
+00:19:39.680 --> 00:19:43.000
+what I can do is, so we are trying to build a AI medical
+
+00:19:43.000 --> 00:19:47.240
+diagnostic system. Okay. So let's create a folder, AI
+
+00:19:47.240 --> 00:19:53.180
+underscore MEDI CL underscore DIG NOSTICS.
+
+00:19:53.440 --> 00:19:56.120
+So let's create another folder, AI medical diagnostic. This
+
+00:19:56.120 --> 00:19:59.480
+is my project folder by the way, main folder. And then I'm
+
+00:19:59.480 --> 00:20:03.120
+going to create basically another folder and I can name it
+
+00:20:03.120 --> 00:20:08.280
+as a Lang serve underscore backend. So Lang serve backend,
+
+00:20:08.440 --> 00:20:12.780
+I'm going to create, and then inside this folder, inside
+
+00:20:12.780 --> 00:20:16.940
+this Lang serve backend folder, I am going to create a
+
+00:20:16.940 --> 00:20:20.240
+folder called as tools so that I can keep all my tools in
+
+00:20:20.240 --> 00:20:24.340
+one place. So tools, and then I'm going to create another
+
+00:20:24.340 --> 00:20:27.300
+folder inside this Lang serve backend, and I'm going to keep
+
+00:20:27.300 --> 00:20:31.680
+it as a utility. So all the utility file, I'm going to keep
+
+00:20:31.680 --> 00:20:34.760
+it here. So means like a URI file, you can say, so I'm going
+
+00:20:34.760 --> 00:20:38.840
+to keep it here. So this is my product project structure by
+
+00:20:38.840 --> 00:20:44.180
+the way, inside the Lang serve. And then once you are going
+
+00:20:44.180 --> 00:20:48.180
+to like come, right, once you are going to like come here,
+
+00:20:48.360 --> 00:20:52.700
+so maybe I can try to create for a backend, I can try to
+
+00:20:52.700 --> 00:20:56.120
+create a file called as diagnostic
+
+00:20:58.260 --> 00:21:05.720
+graph. Where I will be keeping all my agents and then inside
+
+00:21:05.720 --> 00:21:11.600
+a Lang serve folder itself, I'm going to keep it my main
+
+00:21:11.600 --> 00:21:17.340
+file. So main.py file, which will be called eventually in
+
+00:21:17.340 --> 00:21:20.840
+Lang serve backend, I'll, I'll try to realign it. And then
+
+00:21:20.840 --> 00:21:24.920
+inside my Lang serve backend itself, let's keep
+
+00:21:26.290 --> 00:21:33.350
+requirements, R-E-Q-U-I-R-E-M-E-N-T-S.txt file. Okay. So
+
+00:21:33.350 --> 00:21:36.970
+this is the folder structure guys we have to create. So
+
+00:21:36.970 --> 00:21:42.030
+we're inside a Lang serve. I think there is something wrong
+
+00:21:42.030 --> 00:21:47.870
+with main.py file is available, requirement.dxt is
+
+00:21:47.870 --> 00:21:53.050
+available. Diagnostic is available. So requirement
+
+00:21:53.050 --> 00:21:56.110
+diagnostic main.py file, everything is available inside the
+
+00:21:56.110 --> 00:21:59.770
+Lang serve backend. Okay. Now, now it's aligned. So
+
+00:21:59.770 --> 00:22:02.210
+everything is available inside my Lang serve backend. Now,
+
+00:22:02.270 --> 00:22:04.470
+again, I'm going to click on my end. I'm going to create a
+
+00:22:04.470 --> 00:22:06.250
+folder called AI medical agent. So there is a one folder
+
+00:22:06.250 --> 00:22:09.230
+called as backend folder. And then here I'm going to click
+
+00:22:09.230 --> 00:22:12.750
+again, AI medical diagnostic main folder. And I'm going to
+
+00:22:12.750 --> 00:22:19.410
+create a folder called as S-T-R-E-A-M-L-I-T-T-U-U-I. So I'll
+
+00:22:19.410 --> 00:22:22.110
+try to keep, keep all my front end code inside my streamlit
+
+00:22:22.110 --> 00:22:25.090
+UI folder, this particular folder. Now what I'm going to
+
+00:22:25.090 --> 00:22:28.270
+keep inside my streamlit UI folder. So I'm going to keep my
+
+00:22:28.270 --> 00:22:33.510
+app.py file over here. And then a separate requirement.txt
+
+00:22:33.510 --> 00:22:36.590
+format.txt. So separate because I have to deploy separately.
+
+00:22:36.810 --> 00:22:39.570
+So keeping that in a mind, I'm going to keep a separate
+
+00:22:39.570 --> 00:22:45.510
+requirement.txt file, R-E-Q-U-I-R-E-M-E-N-T-S.txt. So here,
+
+00:22:45.630 --> 00:22:50.840
+this is my folder structure guys, close everything. This is
+
+00:22:50.840 --> 00:22:54.060
+my folder structure. So this is the main folder, as you can
+
+00:22:54.060 --> 00:22:57.420
+see, right? Then we have two folder inside the main folder.
+
+00:22:57.520 --> 00:23:00.700
+One is for backend. One is for front end. I have created now
+
+00:23:00.700 --> 00:23:03.780
+inside a backend folder because backend will be all about a
+
+00:23:03.780 --> 00:23:08.780
+tools and like a. Agents calling. So I'm going to create a
+
+00:23:08.780 --> 00:23:10.980
+tools folder over here. That is a utility folder. There is a
+
+00:23:10.980 --> 00:23:13.860
+diagnostic graph main and then requirement.txt file. And
+
+00:23:13.860 --> 00:23:17.020
+then on my UI side, there will be only one file, which where
+
+00:23:17.020 --> 00:23:19.460
+I'm going to create a basic UI and then requirement.txt
+
+00:23:19.460 --> 00:23:25.060
+file. Now what I will do is I'll try to deploy this backend
+
+00:23:25.060 --> 00:23:29.120
+separately. So this, and this will be independent of each
+
+00:23:29.120 --> 00:23:31.740
+other. So backend will be separated the way we try to deploy
+
+00:23:31.740 --> 00:23:34.340
+it in a real time. So I'm going to follow the exact same
+
+00:23:34.340 --> 00:23:37.600
+approach. Nothing different. And I'm going to deploy my like
+
+00:23:37.600 --> 00:23:41.640
+a UI in a completely separate way. And my front end is going
+
+00:23:41.640 --> 00:23:45.360
+to call my backend whenever someone is going to hit it means
+
+00:23:45.360 --> 00:23:49.360
+whenever someone is going to like a ask a question about a
+
+00:23:49.360 --> 00:23:52.980
+medical diagnosis based on the symptoms, it is going to hit
+
+00:23:52.980 --> 00:23:55.740
+my backend by the way. So this is the approach that we are
+
+00:23:55.740 --> 00:23:58.780
+going to follow. So hope this approach is clear. Everyone.
+
+00:24:01.800 --> 00:24:05.000
+Yeah. Is this clear to every one of us? So what we are going
+
+00:24:05.000 --> 00:24:05.700
+to do by the way.
+
+00:24:18.820 --> 00:24:21.100
+Yeah. Yeah. We are going to create a folder structure guys,
+
+00:24:21.200 --> 00:24:24.280
+just this folder structure, simple, right? Back end
+
+00:24:24.280 --> 00:24:27.220
+separate, front end separate. And in both the folder, we
+
+00:24:27.220 --> 00:24:30.100
+have a requirement.txt because deployment wise, although
+
+00:24:30.100 --> 00:24:32.220
+when you are running these things in a local system, it's
+
+00:24:32.220 --> 00:24:34.340
+not required because I will be using the exact same
+
+00:24:34.340 --> 00:24:37.680
+environment for both the, like both the run, UI and back,
+
+00:24:37.740 --> 00:24:40.800
+back end and front end. But yeah, so when you are going to
+
+00:24:40.800 --> 00:24:44.180
+deploy it, so obviously you need a separate requirement.txt
+
+00:24:44.180 --> 00:24:47.000
+file. Otherwise it is, it is not going to spin up the
+
+00:24:47.000 --> 00:24:47.280
+machine.
+
+00:25:05.450 --> 00:25:10.790
+Okay. Now let's get started now on my backend side. So we
+
+00:25:10.790 --> 00:25:13.730
+have a tools and we have a utilities. So what we are going
+
+00:25:13.730 --> 00:25:16.890
+to keep it inside our tools. So I'm going to create a one
+
+00:25:16.890 --> 00:25:19.510
+tool that I'm going to create one tool over here. So it
+
+00:25:19.510 --> 00:25:21.710
+means one Python file I'm going to create. So which is going
+
+00:25:21.710 --> 00:25:25.090
+to do a diagnosis of the symptoms. So I'm going to name it
+
+00:25:25.090 --> 00:25:33.630
+as a D I A G O G N O S I S diagnosis underscore T double O L
+
+00:25:33.630 --> 00:25:37.210
+tool dot PI file. So simple Python file diagnosis tool. And
+
+00:25:37.210 --> 00:25:39.730
+then I'm going to create another tool. So which is going to
+
+00:25:39.730 --> 00:25:43.870
+check the symptoms. So here S Y M P T O M symptom underscore
+
+00:25:43.870 --> 00:25:48.850
+checker dot PI file. So symptom checker. So these are the
+
+00:25:48.850 --> 00:25:50.970
+tools which I'm going to create a two tools. One will
+
+00:25:50.970 --> 00:25:54.130
+diagnose, one will try to check the symptoms and then there
+
+00:25:54.130 --> 00:25:56.650
+is a utility file I'm going to create. So utility file is
+
+00:25:56.650 --> 00:26:00.590
+nothing but a my URI client basically. So URI, URI
+
+00:26:00.590 --> 00:26:04.370
+underscore C L I E N T URI client dot PI file. So URI client
+
+00:26:04.370 --> 00:26:08.030
+is something that I'm going to create over here. Okay. Now,
+
+00:26:08.090 --> 00:26:11.950
+so inside tools, now we have two tools inside like a
+
+00:26:11.950 --> 00:26:15.290
+utility. We have a URI client by the way. So where I'm going
+
+00:26:15.290 --> 00:26:18.770
+to call a URI because I need an access of LLMs. Without
+
+00:26:18.770 --> 00:26:23.410
+LLMs, I can't do anything. So just create it and confirm me
+
+00:26:23.410 --> 00:26:27.350
+guys in a chat. Just create all the folder structure, file
+
+00:26:27.350 --> 00:26:29.670
+structure. Anyhow I'm going to share this entire project
+
+00:26:29.670 --> 00:26:30.790
+inside your like a DICT.
+
+00:26:35.330 --> 00:26:40.150
+You're on dashboard, but yeah, so as of now in a live class,
+
+00:26:40.350 --> 00:26:44.230
+you all have to do it. So please confirm me guys, once
+
+00:26:44.230 --> 00:26:44.970
+you're able to do it.
+
+00:27:24.530 --> 00:27:27.770
+Okay. So we are able to create it. So I'll try to start with
+
+00:27:27.770 --> 00:27:31.410
+the URI client and I'm going to use the exact same code that
+
+00:27:31.410 --> 00:27:35.650
+we have been using even before. So where I'm going to call
+
+00:27:35.650 --> 00:27:39.850
+this file. So let me show it to you. So where we are going
+
+00:27:39.850 --> 00:27:42.870
+to call this code. Right. We are going to call it, solution.
+
+00:27:43.010 --> 00:27:45.610
+So which is going to take some data side of a data content.
+
+00:27:45.770 --> 00:27:47.810
+And then accordingly, it is going to give you the response
+
+00:27:47.810 --> 00:27:51.570
+by taking the API. So this is something that I'm going to do
+
+00:27:51.570 --> 00:27:55.090
+it in a very first place. Same code in a little bit modified
+
+00:27:55.090 --> 00:28:00.190
+way. I'm going to use it. So let's try to like create a URI
+
+00:28:00.190 --> 00:28:04.770
+client. So here URI client wise. So this is my URI client.
+
+00:28:05.150 --> 00:28:08.730
+Here you have to pass your own API key by the way, your
+
+00:28:16.410 --> 00:28:20.650
+API key and code is same. Code is same. the code that we
+
+00:28:20.650 --> 00:28:23.990
+have already shared so it's the same code uh i have copy and
+
+00:28:23.990 --> 00:28:29.670
+pasted so it's not different at all so this is the code guys
+
+00:28:29.670 --> 00:28:32.510
+i have pinned you this code even inside your chat box so
+
+00:28:32.510 --> 00:28:35.430
+that you can use it now yuri api key from where i can get it
+
+00:28:35.430 --> 00:28:37.990
+i believe we all know the place go to authentication inside
+
+00:28:37.990 --> 00:28:43.350
+yuri and copy it right copy this api key and then paste it
+
+00:28:43.350 --> 00:28:47.750
+over here so simple to get my yuri api key what it is trying
+
+00:28:47.750 --> 00:28:51.070
+to do nothing uh as per the sample code so it is trying to
+
+00:28:51.070 --> 00:28:54.210
+take your like models so whatever model that you want you
+
+00:28:54.210 --> 00:28:56.730
+can try to pass this model over here and then you can try to
+
+00:28:56.730 --> 00:28:59.510
+pass temperature maximum token you can try to set and we
+
+00:28:59.510 --> 00:29:02.110
+have parameterized it so that you can try to pass these
+
+00:29:02.110 --> 00:29:05.730
+things even in a later stage and then you can try to pass
+
+00:29:05.730 --> 00:29:08.370
+your message and we all know that that whatever things that
+
+00:29:08.370 --> 00:29:10.810
+you are going to ask it is going to do it right it's a chat
+
+00:29:10.810 --> 00:29:13.650
+gpt model that we are using a chat completion model that we
+
+00:29:13.650 --> 00:29:16.450
+are using so this will go inside our yuri client now once
+
+00:29:16.450 --> 00:29:19.610
+yuri client is done which is available inside my yuri client
+
+00:29:19.610 --> 00:29:23.770
+dot pi five file close it right close it because we are
+
+00:29:23.770 --> 00:29:26.650
+going to use it inside the tools so we all know that that
+
+00:29:26.650 --> 00:29:30.030
+tools is nothing but a function right we all know that tools
+
+00:29:30.030 --> 00:29:33.210
+is nothing but a function at the end of the day a function
+
+00:29:33.210 --> 00:29:36.410
+which is going to perform a specific task and just by
+
+00:29:36.410 --> 00:29:40.910
+writing a like or just by doing some sort of annotation as a
+
+00:29:40.910 --> 00:29:45.770
+tools we can convert any function as a tools for a lang
+
+00:29:45.770 --> 00:29:49.050
+chain right guys everyone yes
+
+00:29:52.000 --> 00:29:54.900
+convert any function as a tool can i say that i can i can
+
+00:29:54.900 --> 00:29:57.940
+convert it so i think we have done a lot of a lot of these
+
+00:29:57.940 --> 00:30:06.150
+things so from lang chain lang c-h-a-i-n chain dot tools
+
+00:30:06.150 --> 00:30:10.810
+import tools and let's suppose if i'm going to create any
+
+00:30:10.810 --> 00:30:14.230
+function addition function and maybe it is taking two
+
+00:30:14.230 --> 00:30:19.250
+parameter a and b and it is going to return maybe a plus b
+
+00:30:19.250 --> 00:30:22.490
+over here so this is our normal simple function now if i
+
+00:30:22.490 --> 00:30:23.670
+have to convert this entire function to a function now i
+
+00:30:23.670 --> 00:30:25.270
+have to convert this entire function as a tool what i have
+
+00:30:25.270 --> 00:30:27.850
+to do i just have to do the annotation generation from this
+
+00:30:27.850 --> 00:30:30.590
+lang chain tool that we have called so at the rate of tool
+
+00:30:30.590 --> 00:30:33.930
+and now this will become a tool that this will be
+
+00:30:33.930 --> 00:30:37.030
+discoverable by the agents right so my agents will be able
+
+00:30:37.030 --> 00:30:39.810
+to discover this tool as and when it is required so this is
+
+00:30:39.810 --> 00:30:43.750
+how easy it is and we have already created our tools in lang
+
+00:30:43.750 --> 00:30:48.330
+chain in lang grab we have also created in lama indexes we
+
+00:30:48.330 --> 00:30:51.110
+have also created it and i believe even in crew ai
+
+00:30:54.710 --> 00:30:58.890
+thing agree everyone this is the way by which we try to
+
+00:30:58.890 --> 00:31:00.590
+create a tools okay
+
+00:31:05.460 --> 00:31:10.600
+now so my tool is going to use basically a URI so I can try
+
+00:31:10.600 --> 00:31:14.060
+to call utils utils is the folder inside this folder what I
+
+00:31:14.060 --> 00:31:16.880
+have I have a URI client and then I am going to import
+
+00:31:16.880 --> 00:31:21.220
+import what so import URI chat completion function URI chat
+
+00:31:21.220 --> 00:31:24.620
+commission function because this is available here right so
+
+00:31:24.620 --> 00:31:28.280
+inside utility folder I have this Python file as you can see
+
+00:31:28.280 --> 00:31:31.040
+inside little folder I have this Python file and then import
+
+00:31:31.040 --> 00:31:33.580
+URI chat completion so these are the only two things which
+
+00:31:33.580 --> 00:31:39.320
+is required for me and before that right before that as like
+
+00:31:39.320 --> 00:31:43.740
+environment conflicts gives you a lots and lots of issue so
+
+00:31:43.740 --> 00:31:46.700
+let's do one thing let's try to create one separate
+
+00:31:46.700 --> 00:31:51.020
+environments independent environment for this entire project
+
+00:31:51.020 --> 00:31:54.920
+so to do that what I will do is I'll try to write maybe a
+
+00:31:54.920 --> 00:32:00.360
+conda conda, create and then environment name hyphen n and
+
+00:32:00.360 --> 00:32:05.180
+this is a MIDI die so MIDI diagnostic so MIDI die I am going
+
+00:32:05.180 --> 00:32:09.120
+to give a name Python pytho in Python is equals to three
+
+00:32:09.120 --> 00:32:13.260
+point one zero I am going to keep and then install yes so
+
+00:32:14.820 --> 00:32:20.600
+now this is going to create my new Python environment okay
+
+00:32:27.800 --> 00:32:32.540
+so now once this new Python environment has been created now
+
+00:32:32.540 --> 00:32:36.260
+once it's done so maybe I can try to activate this Python
+
+00:32:36.260 --> 00:32:38.880
+environment so this Python environment is activated or maybe
+
+00:32:38.880 --> 00:32:41.500
+I can try to even go in a command prompt and then activate
+
+00:32:41.500 --> 00:32:44.520
+this environment so as you can see this environment is
+
+00:32:44.520 --> 00:32:46.840
+activated we have done those things hundred times in our
+
+00:32:46.840 --> 00:32:50.360
+class so nothing new so and then what we can do is we can
+
+00:32:50.360 --> 00:32:52.900
+try to install the requirements so whatever requirements
+
+00:32:52.900 --> 00:32:56.100
+that we have we can try to install it so that we can
+
+00:32:56.100 --> 00:32:59.820
+mitigate a conflict going going forward so what we are going
+
+00:32:59.820 --> 00:33:03.880
+to keep inside the requirement so here we are going to keep
+
+00:33:03.880 --> 00:33:09.100
+all of these things which we are going to use so these are
+
+00:33:09.100 --> 00:33:11.000
+something that we are going to keep it inside the
+
+00:33:11.000 --> 00:33:14.100
+requirement.txt so we are going to keep a fast api so which
+
+00:33:14.100 --> 00:33:17.060
+is going to help me out in terms of building a api uvconn
+
+00:33:17.060 --> 00:33:20.580
+just to like execute or just to expose this api lang serve
+
+00:33:20.580 --> 00:33:24.240
+so that i will be able to serve all the agents and all the
+
+00:33:24.240 --> 00:33:27.300
+tools lang graph so that i will be able to build a graph of
+
+00:33:27.300 --> 00:33:30.620
+the agents which can try to perform because i have to
+
+00:33:30.620 --> 00:33:32.940
+combine the multiple things together so i am going to use a
+
+00:33:32.940 --> 00:33:35.160
+graph approach so one after another it will try to connect
+
+00:33:35.160 --> 00:33:37.960
+lang chain help which you can help me out in terms of
+
+00:33:37.960 --> 00:33:40.540
+creating a tools and the agents request which can help me
+
+00:33:40.540 --> 00:33:43.920
+out in terms of like requesting to my uri or streamlint for
+
+00:33:43.920 --> 00:33:48.540
+a ui ssc basically which is required again to call your
+
+00:33:48.540 --> 00:33:50.840
+agents so this is something that you have to keep inside
+
+00:33:50.840 --> 00:33:55.040
+requirement.txt file and once you have all this things in
+
+00:33:55.040 --> 00:33:59.520
+your fresh created environment just install it so dir and
+
+00:33:59.520 --> 00:34:05.120
+just go to medical diagnostic so cd ai go to that folder
+
+00:34:05.120 --> 00:34:10.020
+where we have a requirement.txt so cd lang serve backend and
+
+00:34:10.020 --> 00:34:13.720
+then here we have a requirement.txt as you can see right we
+
+00:34:13.720 --> 00:34:16.880
+have a requirement.txt so i can simply run pip install
+
+00:34:16.880 --> 00:34:21.760
+hyphen r requirement.txt and everything it is going to
+
+00:34:21.760 --> 00:34:26.600
+execute so whatever library that i have given it will try to
+
+00:34:26.600 --> 00:34:29.440
+install each and everything in my system in this environment
+
+00:34:29.440 --> 00:34:33.280
+so just do it guys create your own environment and then try
+
+00:34:33.280 --> 00:34:36.460
+to install everything i have pinged you what will go inside
+
+00:34:36.460 --> 00:34:38.720
+the requirement.txt file okay
+
+00:34:47.010 --> 00:34:50.310
+so looks like almost everything is done without any kind of
+
+00:34:50.310 --> 00:34:54.050
+a major issue so we are able to prepare our environment and
+
+00:34:54.050 --> 00:34:57.270
+we should not be worried about anything now with respect to
+
+00:34:57.270 --> 00:35:02.430
+this environment okay now so once environment is done once
+
+00:35:02.430 --> 00:35:04.990
+environment is done nothing is going to go wrong so let's
+
+00:35:04.990 --> 00:35:08.150
+try to create our tools so first tool is for diagnosis
+
+00:35:08.150 --> 00:35:11.790
+second tool is for a second symptom checker so it's going to
+
+00:35:11.790 --> 00:35:14.550
+be a normal function but yeah at the end of the day i'm
+
+00:35:14.550 --> 00:35:17.630
+going to just annotate it with a with a tool so it will just
+
+00:35:17.630 --> 00:35:26.670
+try to behave as a tool now here right here file name is
+
+00:35:26.670 --> 00:35:29.370
+diagnosis so basically i have to write some function so
+
+00:35:29.370 --> 00:35:33.210
+which is going to take an input from the user and And it is
+
+00:35:33.210 --> 00:35:36.830
+supposed to diagnose that what kind of, you know, illness
+
+00:35:36.830 --> 00:35:39.370
+that you have, what kind of a problem or health problem that
+
+00:35:39.370 --> 00:35:45.690
+you have. Okay, so def AI underscore D I A G N O S diagnose.
+
+00:35:46.130 --> 00:35:53.010
+And then here symptom underscore description it is going to
+
+00:35:53.010 --> 00:35:57.330
+take. And as we are trying to convert something into a tool,
+
+00:35:57.450 --> 00:36:00.910
+so I have to give this doc string for each and every
+
+00:36:00.910 --> 00:36:06.390
+function. That's a standard approach, right? So use URI to
+
+00:36:06.390 --> 00:36:07.850
+provide
+
+00:36:09.740 --> 00:36:19.740
+the diagnosis suggestion based on the symptom given by
+
+00:36:19.740 --> 00:36:23.740
+users. Simple. So this is just a doc string, nothing much,
+
+00:36:23.820 --> 00:36:25.820
+right? This is not a functionality. This is just a doc
+
+00:36:25.820 --> 00:36:28.840
+string for this function that I have mentioned. Now, so what
+
+00:36:28.840 --> 00:36:32.560
+I will do is I'll try to return, return something from URI
+
+00:36:32.560 --> 00:36:35.640
+chat completion. Yep. I'll try to return something from a
+
+00:36:35.640 --> 00:36:37.920
+URI chat completion means I'm going to call this URI chat
+
+00:36:37.920 --> 00:36:41.900
+completion. Now, if you will go and check what is a input
+
+00:36:41.900 --> 00:36:45.280
+URI chat completion takes. So URI chat completion is taking
+
+00:36:45.280 --> 00:36:47.580
+a message, right? Whatever message that you are going to
+
+00:36:47.580 --> 00:36:50.380
+pass. So maybe if I'm saying that I'm not feeling well or
+
+00:36:50.380 --> 00:36:54.100
+today I have a headache or maybe a severe back pain I have.
+
+00:36:54.220 --> 00:36:57.300
+So that is a kind of a messages you are going to pass. You
+
+00:36:57.300 --> 00:37:00.100
+can try to pick and choose the model. So if you are not
+
+00:37:00.100 --> 00:37:03.480
+going to give a model by default GPT 4.1 nano, it is going
+
+00:37:03.480 --> 00:37:08.480
+to take. But in case of URI, you have 10 model access as
+
+00:37:08.480 --> 00:37:10.740
+simple as that. You have a deep thinking model access as
+
+00:37:10.740 --> 00:37:13.780
+well. You have a real time search model access as well in
+
+00:37:13.780 --> 00:37:16.780
+case of a URI, right? If you are trying to use OpenAI, so in
+
+00:37:16.780 --> 00:37:19.980
+that case, obviously one model, one task. So you can use
+
+00:37:19.980 --> 00:37:22.040
+that as well. But I don't have any kind of issue. But yeah,
+
+00:37:22.080 --> 00:37:24.860
+so here you have a multimodal access. You can use it
+
+00:37:24.860 --> 00:37:27.260
+temperature. I believe we all know what is the meaning of
+
+00:37:27.260 --> 00:37:29.700
+temperature. If you are not going to override this one, in
+
+00:37:29.700 --> 00:37:33.000
+that case, it will be 0.7, a maximum number of token. So a
+
+00:37:33.000 --> 00:37:36.180
+thousand. If you are not overriding it. So here message, it
+
+00:37:36.180 --> 00:37:39.300
+is going to take now, what kind of a message I'm going to
+
+00:37:39.300 --> 00:37:42.160
+pass, right? What kind of a messages I'm going to pass. So
+
+00:37:42.160 --> 00:37:45.380
+let's create a message, M E double S A G message, which I'm
+
+00:37:45.380 --> 00:37:48.980
+going to pass into my URI chat completion. So here I'm going
+
+00:37:48.980 --> 00:37:52.560
+to create a message in a LLM way, basically, right? I'm
+
+00:37:52.560 --> 00:37:57.860
+going to create a message in a LLM way now. So here, uh, I'm
+
+00:37:57.860 --> 00:38:01.640
+going to write it down that, uh, role. So what is the role
+
+00:38:01.640 --> 00:38:06.160
+of the LLM? So behave it. Like user role is user basically,
+
+00:38:06.260 --> 00:38:12.580
+and then content content. So content wise, what? So content
+
+00:38:12.580 --> 00:38:17.820
+wise formatted a string. Okay. It's coming outside. So
+
+00:38:17.820 --> 00:38:22.460
+content wise formatted a string and then here. So I can try
+
+00:38:22.460 --> 00:38:30.680
+to write down a patient, patient reports, basically this
+
+00:38:30.680 --> 00:38:33.880
+symptom, the symptom, which I'm trying to pass symptom
+
+00:38:33.880 --> 00:38:35.920
+description. So whatever. So whatever symptom that user is
+
+00:38:35.920 --> 00:38:40.920
+going to pass, uh, symptom. Now I can try to ask a question
+
+00:38:40.920 --> 00:38:46.400
+that what are the possible diagnosis
+
+00:38:48.040 --> 00:38:57.820
+and next step and even suggest me cure for this one. So this
+
+00:38:57.820 --> 00:39:00.980
+is the message which will go inside my URI LLM based on the
+
+00:39:00.980 --> 00:39:03.760
+symptom description that my user is going to pass whenever
+
+00:39:03.760 --> 00:39:06.820
+this will be called, whenever this tool will be called. And,
+
+00:39:06.980 --> 00:39:10.220
+uh, eventually my, uh, like a URI is going to give me a
+
+00:39:10.220 --> 00:39:13.700
+response. So here I'm going to pass. My message is equals to
+
+00:39:13.700 --> 00:39:16.960
+message, right? This particular message will come here
+
+00:39:16.960 --> 00:39:19.820
+inside my URI chat completion, and then it is going to call
+
+00:39:19.820 --> 00:39:22.940
+this entire things. My API call will be done by the way,
+
+00:39:23.000 --> 00:39:26.140
+and, uh, based on the API call. So it is going to perform
+
+00:39:26.140 --> 00:39:30.360
+each and everything. Okay. So that's, that's completely fine
+
+00:39:30.360 --> 00:39:35.020
+now. So here you have to change a URL. I believe I have
+
+00:39:35.020 --> 00:39:41.120
+given you a wrong URL. So this URL is going to be guys and
+
+00:39:46.110 --> 00:39:50.410
+the point, and, uh, can go to code example. So URL is going
+
+00:39:50.410 --> 00:39:53.850
+to be this one chat completion URL. So alpha chat
+
+00:39:53.850 --> 00:39:55.410
+completion, you
+
+00:39:59.250 --> 00:40:04.930
+can check that out even from a URI. So this is the chat
+
+00:40:04.930 --> 00:40:08.950
+completion URL, by the way, let me ping you this. So just,
+
+00:40:08.990 --> 00:40:12.150
+just make this correction, chat completion URL. And, uh,
+
+00:40:12.150 --> 00:40:14.850
+yeah. So based on this, this is going to perform this
+
+00:40:14.850 --> 00:40:17.290
+operation. Okay. This is going to call as of now, this is
+
+00:40:17.290 --> 00:40:20.290
+available just as a simple function. I will try to convert
+
+00:40:20.290 --> 00:40:23.950
+this as a tool so that my agents will be able to discover
+
+00:40:23.950 --> 00:40:27.850
+this particular tool automatically. So at the rate T double
+
+00:40:27.850 --> 00:40:31.210
+L tool, and now this became tool. So agent will be able to
+
+00:40:31.210 --> 00:40:34.550
+discover it in a easiest possible manner. And this is the
+
+00:40:34.550 --> 00:40:41.850
+complete code for all of you. Fine. Everyone done. Well,
+
+00:40:41.910 --> 00:40:42.230
+this point.
+
+00:41:06.650 --> 00:41:11.710
+Yeah. Done everyone. So easy. I don't think that. Uh, none
+
+00:41:11.710 --> 00:41:14.370
+of us, uh, any one of us are going to face any kind of a
+
+00:41:14.370 --> 00:41:16.930
+issue because this is not the first time we are doing it,
+
+00:41:16.990 --> 00:41:21.290
+right? We have done that multiple times already. Okay. So
+
+00:41:21.290 --> 00:41:24.310
+this tool is done. One diagnosis tool is done, and this is
+
+00:41:24.310 --> 00:41:26.290
+the message it will get. And then based on that, URI is
+
+00:41:26.290 --> 00:41:29.030
+going to give you some sort of a response. Close it, close
+
+00:41:29.030 --> 00:41:32.490
+everything. Now, now we have a second tool, which is a
+
+00:41:32.490 --> 00:41:35.270
+symptom checker tool. So again, I'm going to write a couple
+
+00:41:35.270 --> 00:41:42.180
+of function over there. So here from lang chain, I can write
+
+00:41:42.180 --> 00:41:44.480
+like all. If this tool in a single file, that's also fine,
+
+00:41:44.640 --> 00:41:47.300
+but yeah, I'm just trying to maintain the modularity so that
+
+00:41:47.300 --> 00:41:49.900
+anyone can come tomorrow and then try to add any number of
+
+00:41:49.900 --> 00:41:55.220
+tools in the respective section. So Lang chain, Lang, C H I
+
+00:41:55.220 --> 00:42:03.520
+N chain dot dot T double O L S tools import tool simple. So
+
+00:42:03.520 --> 00:42:08.960
+L A N G L A N G C H A I N yes, there should not be any kind
+
+00:42:08.960 --> 00:42:12.220
+of a spelling mistake. And then here I'm going to create a
+
+00:42:12.220 --> 00:42:18.560
+function. Call us check underscore S Y M P T S Y M P T O M
+
+00:42:18.560 --> 00:42:22.560
+symptom. So user symptom
+
+00:42:24.580 --> 00:42:28.420
+is a input, some string input I'm going to give, and then it
+
+00:42:28.420 --> 00:42:31.880
+is going to check the symptom. So what it is going to do,
+
+00:42:31.940 --> 00:42:35.300
+let me write it down in a doc string. So it is going to. So
+
+00:42:35.300 --> 00:42:47.440
+this tool will analyze the input. Symptom text and return
+
+00:42:48.880 --> 00:42:57.520
+the relevant medical category that, okay, the symptom
+
+00:42:57.520 --> 00:42:59.400
+belongs to which category this is what they're trying to do.
+
+00:42:59.480 --> 00:43:01.840
+So if I would like to like to do something more, it can do
+
+00:43:01.840 --> 00:43:05.240
+it now. User can try to input a symptom in a lower case in a
+
+00:43:05.240 --> 00:43:07.880
+upper case. So I'm going to normalize it. So whatever user
+
+00:43:07.880 --> 00:43:10.940
+is going to input, just try to convert it in a lower case.
+
+00:43:11.820 --> 00:43:14.640
+So just to normalize it. Because user. Is user, right? So
+
+00:43:14.640 --> 00:43:22.940
+user can try to like, uh, S Y M P T O M symptom is equal to
+
+00:43:22.940 --> 00:43:28.480
+this one. Okay. Now, so I'm just going to write a kind of a
+
+00:43:28.480 --> 00:43:30.860
+condition over here. I'm not going to call any kind of, uh,
+
+00:43:30.960 --> 00:43:34.680
+APIs as well, API, even inside this one. So here, what I'm
+
+00:43:34.680 --> 00:43:41.360
+going to do is that if user is going to input fever in
+
+00:43:41.360 --> 00:43:49.320
+symptom, right. Or user. Is going to input body ache in
+
+00:43:49.320 --> 00:44:01.710
+symptom or chills in symptom. So return, what return
+
+00:44:01.710 --> 00:44:07.350
+infection. Yeah. So simple. So based on the symptoms, it is
+
+00:44:07.350 --> 00:44:15.650
+going to do the return. Elif, T H R O A T throat in symptom.
+
+00:44:16.890 --> 00:44:20.670
+If user is going to say, or maybe. Maybe like a, if
+
+00:44:22.940 --> 00:44:26.700
+user is saying cuff, c u g h cuff symptom,
+
+00:44:29.630 --> 00:44:33.630
+then in that case, try to return it on what? So maybe you
+
+00:44:33.630 --> 00:44:40.030
+have a respiratory infection. R E S P I R A T O R Y T O R Y
+
+00:44:40.030 --> 00:44:45.450
+respiratory infection you have. Okay. Elif. If user is
+
+00:44:45.450 --> 00:44:51.730
+saying that you have a headache, H E A D A C H E in symptom.
+
+00:44:53.570 --> 00:44:57.730
+symptom or maybe user is feeling dizzy symptom
+
+00:45:00.420 --> 00:45:10.300
+then do one thing so return nostrilogical or neurological
+
+00:45:10.300 --> 00:45:11.760
+roll
+
+00:45:15.150 --> 00:45:21.890
+logical okay elif stomach
+
+00:45:25.280 --> 00:45:27.280
+in symptom or
+
+00:45:29.300 --> 00:45:30.480
+nausea in
+
+00:45:36.210 --> 00:45:39.990
+symptom then return basically
+
+00:45:48.560 --> 00:45:57.700
+gastrointestinal symptom okay else try to return
+
+00:46:03.590 --> 00:46:09.790
+general examination is required so this is a very basic
+
+00:46:09.790 --> 00:46:12.410
+function again i have created and i'm not doing much over
+
+00:46:12.410 --> 00:46:15.610
+here as you can see so a simple function which is going to
+
+00:46:15.610 --> 00:46:18.210
+work on e-fails e-fails e-fails e-fails kind of things and
+
+00:46:18.210 --> 00:46:20.970
+it is going to return you some sort of a symptom now i have
+
+00:46:20.970 --> 00:46:23.750
+to convert this one into as a tool so that my agent will be
+
+00:46:23.750 --> 00:46:26.090
+able to discover so i'm going to write it over here as a
+
+00:46:26.090 --> 00:46:29.350
+tools so now this entire function will become a tools and i
+
+00:46:29.350 --> 00:46:32.050
+can try to use it as a tools langchen tools right it will
+
+00:46:32.050 --> 00:46:36.690
+become a langchen tool by the way so again let me ping you
+
+00:46:36.690 --> 00:46:38.170
+this code so
+
+00:46:40.190 --> 00:46:43.150
+two tools we are able to create guys so one is basically a
+
+00:46:43.150 --> 00:46:45.530
+diagnosis tools and one is a symptom checker tool in a
+
+00:46:45.530 --> 00:46:48.090
+diagnosis tool i'm using llms in this one i'm not using llms
+
+00:46:48.090 --> 00:46:52.570
+if you would like to use the llms even over here do it not
+
+00:46:52.570 --> 00:46:55.370
+an issue even to find out the symptoms based on the user
+
+00:46:55.370 --> 00:46:58.970
+because llm will be more advanced and it will be able to you
+
+00:46:58.970 --> 00:47:02.530
+know understand the user input in a much much better way but
+
+00:47:02.530 --> 00:47:05.830
+yeah i'm not i'm just trying to show you the variations over
+
+00:47:05.830 --> 00:47:08.970
+here but you can you can feel free to use it and you can
+
+00:47:08.970 --> 00:47:11.350
+feel free to add more number of tools over here for
+
+00:47:11.350 --> 00:47:14.470
+diagnosis for our symptoms or maybe for anything else that
+
+00:47:14.470 --> 00:47:17.790
+you want so making sense guys are we able to do it till this
+
+00:47:17.790 --> 00:47:23.390
+point yeah so tool is done utility we have already created
+
+00:47:23.390 --> 00:47:26.430
+so these two things are done yeah
+
+00:47:42.560 --> 00:47:45.880
+done till this point so two things is closed our tools is
+
+00:47:45.880 --> 00:47:51.760
+closed utility is closed utility is nothing but and tools is
+
+00:47:51.760 --> 00:47:56.280
+nothing but like two tools two separate separate tools that
+
+00:47:56.280 --> 00:48:02.660
+we have created in this place okay now so we are going to
+
+00:48:02.660 --> 00:48:05.600
+create or we are going to write something into a diagnostic
+
+00:48:05.600 --> 00:48:09.500
+graph diagnostic graph means so basically it is going to
+
+00:48:09.500 --> 00:48:13.160
+like a use or it is going to basically create a separate
+
+00:48:13.160 --> 00:48:16.780
+separate node so that it will be able to check the symptom
+
+00:48:16.780 --> 00:48:19.300
+term after checking the same term it will be able to do a
+
+00:48:19.300 --> 00:48:22.300
+diagnosis after doing a diagnosis it will be able to return
+
+00:48:22.300 --> 00:48:25.380
+me something right it will be able to return me something
+
+00:48:25.380 --> 00:48:27.900
+and eventually it is going to use the tools that i have
+
+00:48:27.900 --> 00:48:31.420
+already created so graph means what so we are going to
+
+00:48:31.420 --> 00:48:36.060
+create a multiple node you can see so one node we can try to
+
+00:48:36.060 --> 00:48:40.220
+create just for the symptom checker now this node is going
+
+00:48:40.220 --> 00:48:43.380
+to give a response to this one and it is going to do a
+
+00:48:43.380 --> 00:48:47.080
+diagnostic based on this you will be able to get the output
+
+00:48:47.080 --> 00:48:50.160
+right so this graph kind of a structure we are going to
+
+00:48:50.160 --> 00:48:54.720
+create so here we will be using a symptom tool and here we
+
+00:48:54.720 --> 00:48:57.720
+will be using basically a diagnostic tool so this is this is
+
+00:48:57.720 --> 00:49:01.060
+what i'm going to configure with the help of lang graph
+
+00:49:01.060 --> 00:49:05.680
+basically so lang chain is done i'm using lang chain just to
+
+00:49:05.680 --> 00:49:09.400
+create a two tools so this is the use of lang chain i can
+
+00:49:09.400 --> 00:49:11.680
+even use it for creating an agent that's completely fine if
+
+00:49:11.680 --> 00:49:15.000
+i have to create a single agent but yeah so i have to maybe
+
+00:49:15.000 --> 00:49:18.460
+like a create a complete flow so maybe i'm going to use a
+
+00:49:18.460 --> 00:49:22.080
+lang graph over here i can try to use maybe a llama indexes
+
+00:49:22.080 --> 00:49:24.720
+that is also fine we know that that we can try to call
+
+00:49:24.720 --> 00:49:27.880
+multiple things over here we can even try to use a crew ai
+
+00:49:27.880 --> 00:49:32.220
+in this particular place that is also going to work we can
+
+00:49:32.220 --> 00:49:35.340
+even try to use some sort of a ui based like a agent
+
+00:49:35.340 --> 00:49:39.400
+creation tool or tools creation tool like a lang flow we can
+
+00:49:39.400 --> 00:49:42.440
+try to use so anything is completely fine at the end of the
+
+00:49:42.440 --> 00:49:45.420
+day you are going to achieve the exact same thing so here i
+
+00:49:45.420 --> 00:49:45.580
+have a complete flow so this is a complete flow and i'm have
+
+00:49:45.580 --> 00:49:49.280
+to create a diagnostic graph now to create a diagnostic
+
+00:49:49.280 --> 00:49:53.140
+graph so what i am going to keep inside this one let's let's
+
+00:49:53.140 --> 00:49:57.980
+do it one by one so here the very first thing that i'm going
+
+00:49:57.980 --> 00:50:05.720
+to call is a typing import type dictionary why i'll tell you
+
+00:50:05.720 --> 00:50:13.160
+then from lang graph lang graph dot graph graph so import
+
+00:50:13.160 --> 00:50:16.860
+basically a state graph which will help me how to create the
+
+00:50:16.860 --> 00:50:22.000
+graph and then end okay so lang graph import is done from
+
+00:50:22.000 --> 00:50:32.160
+lang chain lang c-h-a-i-n chain a core dot runables so
+
+00:50:32.160 --> 00:50:35.360
+import runables
+
+00:50:36.920 --> 00:50:41.900
+and we have a runable lambda so call a runable lambda and
+
+00:50:41.900 --> 00:50:44.300
+then you have already created two tools right you have
+
+00:50:44.300 --> 00:50:46.700
+already created two tools inside the tool directory we have
+
+00:50:46.700 --> 00:50:49.240
+a two tools so diagnostic and symptom checker so let's call
+
+00:50:49.240 --> 00:50:54.260
+that one so from a tools directory we have a diagnosis so
+
+00:50:54.260 --> 00:51:00.570
+import basically import what so import what is the function
+
+00:51:00.570 --> 00:51:05.330
+that we have created so import that function ai diagnosis
+
+00:51:05.330 --> 00:51:09.850
+and then check symptom okay so diagnosis tool ai diagnosis
+
+00:51:09.850 --> 00:51:16.150
+call it and then from tools dot so diagnosis tool import
+
+00:51:16.150 --> 00:51:18.250
+check oh
+
+00:51:20.460 --> 00:51:26.810
+i've imported again same thing symptom checker import import
+
+00:51:26.810 --> 00:51:30.570
+what so check symptom okay so all the imports are done over
+
+00:51:30.570 --> 00:51:32.970
+here so we are able to import a lang graph we are able to
+
+00:51:32.970 --> 00:51:35.630
+import a lang chain which will help me how to invoke my
+
+00:51:35.630 --> 00:51:38.610
+tools whatever tools that i've created and then typing which
+
+00:51:38.610 --> 00:51:41.450
+is going to help me out in terms of creating a dictionary so
+
+00:51:41.450 --> 00:51:43.830
+dictionary means so we have to align these things with the
+
+00:51:43.830 --> 00:51:48.210
+pidentic so pidentic library that is there to to pass a data
+
+00:51:48.210 --> 00:51:54.350
+so here uh which is required to build a graph basically so
+
+00:51:54.350 --> 00:51:58.410
+here we are going to create a pidentic like a class so
+
+00:51:58.410 --> 00:52:07.750
+diagnostic d i a g n o s t i c diagnostic state so now this
+
+00:52:07.750 --> 00:52:10.330
+is the class this is going to take a type dictionary as an
+
+00:52:10.330 --> 00:52:14.110
+input so at the end of the day it is going to accept input
+
+00:52:14.110 --> 00:52:17.910
+input as str I'm just trying to give a type and the input it
+
+00:52:17.910 --> 00:52:23.510
+is going to take symptom underscore a r e a str
+
+00:52:27.800 --> 00:52:30.960
+so string it should be comma
+
+00:52:35.860 --> 00:52:40.240
+is not required in this pyrantic okay so input symptom area
+
+00:52:40.240 --> 00:52:41.420
+d
+
+00:52:44.170 --> 00:52:50.330
+i a g n o s i s diagnosis again it's going to be str okay so
+
+00:52:50.330 --> 00:52:53.610
+these are the input I'm going to basically pass at the end
+
+00:52:53.610 --> 00:52:55.930
+of the day these are the input it is going to take and I've
+
+00:52:55.930 --> 00:52:58.410
+just like defined it in a pyrantic way because at the end of
+
+00:52:58.410 --> 00:53:01.270
+the day lang serve and lang graph requires this format of
+
+00:53:01.270 --> 00:53:06.230
+the input and then I can start creating a graph basically
+
+00:53:06.230 --> 00:53:10.450
+means I will start creating a node at the end of the day and
+
+00:53:10.450 --> 00:53:16.750
+graph needs this kind of inputs so here def and I can try to
+
+00:53:16.750 --> 00:53:21.190
+call a function called as build underscore gra ph build
+
+00:53:21.190 --> 00:53:25.790
+graph now this function is just going to build the entire
+
+00:53:25.790 --> 00:53:29.870
+end-to-end graphs simple so graph is equals to a state graph
+
+00:53:29.870 --> 00:53:34.210
+I'm going to call the import that I have done in a top and
+
+00:53:34.210 --> 00:53:37.510
+then I'm going to say that that okay so basically I'm going
+
+00:53:37.510 --> 00:53:40.370
+to provide you input in this particular way to the graph and
+
+00:53:41.650 --> 00:53:45.510
+then what we are going to do is so we are going to create a
+
+00:53:45.510 --> 00:53:50.010
+node inside a graph and as I have already told you that we
+
+00:53:50.010 --> 00:53:53.370
+are going to create a two nodes so one is going to check the
+
+00:53:53.370 --> 00:53:56.850
+symptoms and one is going to basically do the diagnosis so a
+
+00:53:56.850 --> 00:54:00.130
+symptom node and then diagnosis mode we are going to create
+
+00:54:00.130 --> 00:54:04.490
+now to create these nodes a symptom node and a diagnosis
+
+00:54:04.490 --> 00:54:08.850
+mode so we have to define a function that what this node is
+
+00:54:08.850 --> 00:54:12.450
+going to technically do right so obviously these nodes are
+
+00:54:12.450 --> 00:54:15.710
+going to call my tools basically so whenever I'm going to
+
+00:54:15.710 --> 00:54:18.210
+call symptoms so symptom tool it is going to call and
+
+00:54:18.210 --> 00:54:20.590
+whenever I'm going to call maybe a diagnosis it should call
+
+00:54:20.590 --> 00:54:24.430
+my diagnosis tool right so these graphs mode is supposed to
+
+00:54:24.430 --> 00:54:27.250
+call my symptom tool and the diagnosis tool okay let's do it
+
+00:54:27.250 --> 00:54:31.690
+then so here so I'm going to define the function so def and
+
+00:54:31.690 --> 00:54:34.770
+symptom step
+
+00:54:36.660 --> 00:54:41.120
+is a function and state I'm
+
+00:54:45.050 --> 00:54:52.050
+going to say and here so state I'm going to like a input and
+
+00:54:52.050 --> 00:54:56.110
+it is going to return R E T U R N return so what it is going
+
+00:54:56.110 --> 00:55:00.030
+to return by the way so it is going to return all three
+
+00:55:00.030 --> 00:55:03.450
+things all three things it is supposed to return right so it
+
+00:55:03.450 --> 00:55:06.970
+is going to return basically a input let me copy the same
+
+00:55:06.970 --> 00:55:08.010
+and
+
+00:55:14.060 --> 00:55:16.660
+just keep it as a key value pair okay
+
+00:55:22.450 --> 00:55:24.890
+so it is going to return three things so it is going to
+
+00:55:24.890 --> 00:55:30.810
+return input in symptom area and diagnosis now here state is
+
+00:55:30.810 --> 00:55:38.070
+nothing but input and then here I'm going to call my check
+
+00:55:38.070 --> 00:55:44.990
+symptoms and check symptoms dot invoke and invoke with what
+
+00:55:44.990 --> 00:55:49.250
+so invoke with this state input so whatever input that I'm
+
+00:55:49.250 --> 00:55:52.730
+giving as of now so based on that invoke it okay now
+
+00:55:52.730 --> 00:56:05.110
+diagnosis state dot get and then get me the diagnosis simple
+
+00:56:05.110 --> 00:56:11.010
+so this is basically one of the function so which is going
+
+00:56:11.010 --> 00:56:13.450
+to take the current state and based on that so it is going
+
+00:56:13.450 --> 00:56:16.290
+to basically give me all of these things so input symptom
+
+00:56:16.290 --> 00:56:20.750
+area and the diagnosis now this is just a function which I
+
+00:56:20.750 --> 00:56:25.810
+have created now I have to add this function into a graph
+
+00:56:25.810 --> 00:56:29.150
+node node means this node right the node that I'm trying to
+
+00:56:29.150 --> 00:56:32.530
+create I have to add this one into this particular node and
+
+00:56:32.530 --> 00:56:35.810
+this is already calling check symptom which is my tool
+
+00:56:35.810 --> 00:56:38.530
+eventually right check symptom is what thing check symptom
+
+00:56:38.530 --> 00:56:42.350
+is my technically a tool over there I have already written a
+
+00:56:42.350 --> 00:56:45.990
+code so it is going to call my tool this one is going to
+
+00:56:45.990 --> 00:56:49.730
+call my tool and I have to attach this one with a graph node
+
+00:56:49.730 --> 00:56:53.170
+this is the like a process that we are going to follow so
+
+00:56:53.170 --> 00:56:58.310
+how I will be able to attach this basically with my node so
+
+00:56:58.310 --> 00:57:07.800
+simple graph dot node graph dot node or graph dot add edge
+
+00:57:07.800 --> 00:57:13.560
+add underscore node yeah so graph dot add node so this is my
+
+00:57:13.560 --> 00:57:16.340
+graph this is my graph object basically this is my draft
+
+00:57:16.340 --> 00:57:19.140
+object so I am trying to add a node so when I'm trying to
+
+00:57:19.140 --> 00:57:24.740
+add a node so what I am trying to add over here so here node
+
+00:57:24.740 --> 00:57:28.620
+wise I can try to give a name over here so node wise the
+
+00:57:28.620 --> 00:57:33.380
+name of the node is going to be symptom check basically this
+
+00:57:33.380 --> 00:57:36.980
+is the name of the node and what this node will be holding
+
+00:57:36.980 --> 00:57:40.260
+so runable lambda this node will be holding the enable
+
+00:57:40.260 --> 00:57:43.460
+lambda so means this particular function this node will be
+
+00:57:43.460 --> 00:57:47.820
+holding symptom steps this is something that it will be
+
+00:57:47.820 --> 00:57:52.560
+holding so now I am able to create one node let me draw that
+
+00:57:52.560 --> 00:58:00.560
+once again so here I had a graph now I am able to add this
+
+00:58:00.560 --> 00:58:06.840
+symptom step symptom step as a first node and I have named
+
+00:58:06.840 --> 00:58:10.400
+that node as a name of this node is basically a symptom
+
+00:58:10.400 --> 00:58:16.740
+check node symptom check node that's it this is the only
+
+00:58:16.740 --> 00:58:21.080
+thing that I'm trying to do now this symptom step so what it
+
+00:58:21.080 --> 00:58:24.780
+is trying to call so internally it is trying to call my tool
+
+00:58:24.780 --> 00:58:28.640
+this is my tool by the way so this graph node whenever this
+
+00:58:28.640 --> 00:58:32.360
+node will be executed eventually it is calling my tools
+
+00:58:32.360 --> 00:58:35.220
+whenever whenever you are going to invoke this one as we
+
+00:58:35.220 --> 00:58:37.680
+have written whenever we are going to invoke this one So it
+
+00:58:37.680 --> 00:58:41.200
+will try to take the input, whatever input currently user
+
+00:58:41.200 --> 00:58:46.000
+has given and it is going to call ultimately a tool. So node
+
+00:58:46.000 --> 00:58:49.820
+is technically calling my tool. Hope this is making sense to
+
+00:58:49.820 --> 00:58:51.800
+all of us. Yes guys, everyone.
+
+00:58:54.880 --> 00:58:58.800
+So one node we are able to create, someone is saying hello
+
+00:58:58.800 --> 00:59:04.900
+Danshu, hello. So one node we are able to create, right? One
+
+00:59:04.900 --> 00:59:07.260
+single node we are able to create, so which will be able to
+
+00:59:07.260 --> 00:59:11.980
+do a symptom check. Okay. Now we have to create another node
+
+00:59:11.980 --> 00:59:15.380
+and we have to bind it with a, like a, some other function
+
+00:59:15.380 --> 00:59:18.660
+over there and we have to call a tool inside it. So here
+
+00:59:18.660 --> 00:59:22.380
+what I will do is I'll try to create a diagnosis node or
+
+00:59:22.380 --> 00:59:24.820
+diagnosis function. I'll try to create and bind it with the
+
+00:59:24.820 --> 00:59:29.080
+diagnosis node. So likewise you can create hundreds of node
+
+00:59:29.080 --> 00:59:31.940
+now, right? Hundreds of node and we can try to bind it with
+
+00:59:31.940 --> 00:59:34.420
+any number of tools that you want that that's completely up
+
+00:59:34.420 --> 00:59:40.780
+to you. So here a diff diagnosis. D-I-A-G-N-O-S-I-S
+
+00:59:40.780 --> 00:59:45.200
+diagnosis underscore step. So this is the function I'm going
+
+00:59:45.200 --> 00:59:48.580
+to create for a node, which is going to execute in a current
+
+00:59:48.580 --> 00:59:53.500
+state. And then it is going to return me what? So it is R-E
+
+00:59:53.500 --> 00:59:58.940
+-T-U return. Return me what? By the way? Sorry. So return,
+
+00:59:59.040 --> 01:00:02.380
+return me what? By the way over here. So again, it is going
+
+01:00:02.380 --> 01:00:05.020
+to return the input symptom area and diagnosis as per the
+
+01:00:05.020 --> 01:00:07.980
+pidentic alignment. So I'm just going to copy the same. I'll
+
+01:00:07.980 --> 01:00:12.000
+just change the. Internal one. So it is going to return what
+
+01:00:12.000 --> 01:00:14.320
+it is going to return this one. Now it is going to take a
+
+01:00:14.320 --> 01:00:17.460
+input from the current state, right? Current estate so that
+
+01:00:17.460 --> 01:00:21.540
+you can do back and forth and then symptom area. So here it
+
+01:00:21.540 --> 01:00:27.660
+is going to like a symptom area. So here it is going to take
+
+01:00:27.660 --> 01:00:34.200
+not this one. So a state and whatever symptom area is
+
+01:00:34.200 --> 01:00:36.720
+available because before this node, this will be executed.
+
+01:00:36.940 --> 01:00:40.040
+So I will be having a symptom. By the way, right, I will be
+
+01:00:40.040 --> 01:00:42.480
+having a symptom. So from the state, from the current
+
+01:00:42.480 --> 01:00:45.840
+estate, from the current run, I am going to pass symptom
+
+01:00:46.260 --> 01:00:51.340
+area. So I'm going to pass basically a symptom area over
+
+01:00:51.340 --> 01:00:53.220
+here. So whatever will be available in a current estate,
+
+01:00:53.400 --> 01:00:56.540
+because before diagnosis, it is trying to check the symptom.
+
+01:00:56.860 --> 01:01:00.960
+And then at the time of diagnosis, I have, I'm going to call
+
+01:01:00.960 --> 01:01:04.580
+my tool. So symptom estate is their input is there. So means
+
+01:01:04.580 --> 01:01:07.060
+user input is there and based on user input, whatever
+
+01:01:07.060 --> 01:01:09.480
+symptom has been observed, that is already there. So now I
+
+01:01:09.480 --> 01:01:13.640
+can try to call my tool and a diagnosis, AI diagnosis,
+
+01:01:13.920 --> 01:01:16.520
+invoke it and
+
+01:01:18.630 --> 01:01:21.390
+here state a
+
+01:01:25.770 --> 01:01:28.630
+state and it will try to take an input from the current
+
+01:01:28.630 --> 01:01:33.950
+estate basically. So this is the only changes because at the
+
+01:01:33.950 --> 01:01:36.290
+time of diagnosis, I have to run this one, run this tool at
+
+01:01:36.290 --> 01:01:38.170
+the time of symptom checker. I have to run this particular
+
+01:01:38.170 --> 01:01:41.450
+tool. Okay. And like a, both of this input is going even
+
+01:01:41.450 --> 01:01:44.210
+inside the diagnosis a step. Now, this is the function. I
+
+01:01:44.210 --> 01:01:47.370
+have defined for one of the other node, which will be
+
+01:01:47.370 --> 01:01:49.850
+connected. So the node, which will come right after my
+
+01:01:49.850 --> 01:01:52.350
+symptom checker node. So I have just like a bind it. I have
+
+01:01:52.350 --> 01:01:57.330
+just connected it. Now in a graph, again, try to add node,
+
+01:01:57.550 --> 01:02:00.850
+again, try to add a node. This time I'm going to add this
+
+01:02:00.850 --> 01:02:04.570
+node. So I'm going to like a name, this node AI diagnosis.
+
+01:02:07.750 --> 01:02:11.070
+This is the name. And whenever I'm going to execute this one
+
+01:02:11.070 --> 01:02:13.930
+or enable Lambda. So it is going to call which one it is
+
+01:02:13.930 --> 01:02:17.510
+going to call my diagnosis. A step function. And ultimately
+
+01:02:17.510 --> 01:02:21.250
+the diagnosis of function is calling my tool simple. So now
+
+01:02:21.250 --> 01:02:26.110
+successfully, I'm able to create over here, two nodes, a two
+
+01:02:26.110 --> 01:02:29.470
+independent node. You can say, right. As of now, two
+
+01:02:29.470 --> 01:02:32.790
+independent node, I'm going to create one is for a symptom
+
+01:02:32.790 --> 01:02:36.410
+and one is for a diagnosis. Two nodes has been created now.
+
+01:02:36.730 --> 01:02:39.510
+Now I have to connect this node. Even I have to say that
+
+01:02:39.510 --> 01:02:43.170
+which one will be invoked. When? Yeah. So in a graph, I have
+
+01:02:43.170 --> 01:02:45.490
+already added it. Now I have to like a, even say that, that,
+
+01:02:45.490 --> 01:02:47.210
+okay. So from where did it come from? Which sequence you are
+
+01:02:47.210 --> 01:02:51.210
+supposed to start yourself. Let's do it. So here, graph, add
+
+01:02:51.210 --> 01:02:54.030
+a node. I am in this way. I can try to add a number of node
+
+01:02:54.030 --> 01:03:00.450
+that I want. So here in a graph, graph, graph dot, there is
+
+01:03:00.450 --> 01:03:03.250
+something called a set entry point. I believe I've already
+
+01:03:03.250 --> 01:03:07.030
+used it, right? I've already used it. Even my previous, uh,
+
+01:03:07.190 --> 01:03:10.810
+execution when I was showing you the, uh, like a graph. So
+
+01:03:10.810 --> 01:03:15.610
+entry point is going to be what? So entry point is going to
+
+01:03:15.610 --> 01:03:20.230
+be my. This name name. So symptom check node, right? What is
+
+01:03:20.230 --> 01:03:22.930
+the name of this node? So this is my entry point. So
+
+01:03:22.930 --> 01:03:25.070
+whenever you are going to start, start from my symptom
+
+01:03:25.070 --> 01:03:27.230
+checker first, you can try to start from diagnosis as well.
+
+01:03:27.470 --> 01:03:30.150
+So depends upon your configuration that you are going to do.
+
+01:03:30.330 --> 01:03:39.250
+And then like a graph graph dot add edge. So we were adding
+
+01:03:39.250 --> 01:03:42.370
+node, right? You were adding node means we have created an
+
+01:03:42.370 --> 01:03:45.390
+independent node. Now we have to create even an edge. Edge
+
+01:03:45.390 --> 01:03:48.650
+means. So I'm going to start from here, right? I'm going to
+
+01:03:48.650 --> 01:03:52.310
+start from here. Now I'm going to create the edge. This is
+
+01:03:52.310 --> 01:03:55.870
+basically edge EDGE edge, right? So a starting point,
+
+01:03:55.930 --> 01:04:00.310
+starting point I have already defined. So this is going to
+
+01:04:00.310 --> 01:04:02.550
+my starting point. This node, I have already defined it
+
+01:04:02.550 --> 01:04:06.090
+here. Now I'm going to create a edge over here. So edge
+
+01:04:06.090 --> 01:04:09.370
+between which one? So this to this edge I have to create. So
+
+01:04:09.370 --> 01:04:13.210
+let me write it down that part. So edge I'm going to create
+
+01:04:13.210 --> 01:04:17.030
+between this one. So edge. I'm going to create between this
+
+01:04:17.030 --> 01:04:23.790
+name, this node. So this is the name of one node and my
+
+01:04:23.790 --> 01:04:27.230
+second node. So this is my second node, right? So I'm going
+
+01:04:27.230 --> 01:04:30.330
+to create an edge between these two nodes. So add edge. I'm
+
+01:04:30.330 --> 01:04:32.430
+adding it, right? So in this way, you will be able to get
+
+01:04:32.430 --> 01:04:35.110
+any kind of a complex graph, three kinds of things, whatever
+
+01:04:35.110 --> 01:04:40.730
+you want. You can try to create it right now. So again, so
+
+01:04:40.730 --> 01:04:44.450
+once you are able to create this edge. So it means I'm able
+
+01:04:44.450 --> 01:04:47.810
+to like. Build this particular bridge. Then it is going to
+
+01:04:47.810 --> 01:04:51.630
+give me the output, right? And this output should lead to
+
+01:04:51.630 --> 01:04:53.790
+the end, right? Endpoint that. Okay, fine. This is the end
+
+01:04:53.790 --> 01:04:56.810
+of this further. I don't have to do anything. So fine. I
+
+01:04:56.810 --> 01:04:59.790
+have to create even this edge and bind it to the end. Let's
+
+01:04:59.790 --> 01:05:09.540
+do it. So now here again, graph dot graph dot add edge. I
+
+01:05:09.540 --> 01:05:13.100
+have to create an edge between what? So edge between this
+
+01:05:13.100 --> 01:05:20.240
+last node. And then dot what? So dot end, right? So end is a
+
+01:05:20.240 --> 01:05:22.100
+default parameter, which is available, which I have already
+
+01:05:22.100 --> 01:05:24.540
+done the import, as you can see from a line graph, right?
+
+01:05:24.640 --> 01:05:28.220
+And I have already done the import. So end. So now my graph
+
+01:05:28.220 --> 01:05:32.360
+is binded and this entire graph is ready for me. This entire
+
+01:05:32.360 --> 01:05:36.160
+graph is ready for me now. So once this entire graph is
+
+01:05:36.160 --> 01:05:40.120
+ready for me, I have to return what from this function. So
+
+01:05:40.120 --> 01:05:41.800
+everything I'm writing inside this function, build graph
+
+01:05:41.800 --> 01:05:45.100
+function. So this build graph function is going to return.
+
+01:05:45.240 --> 01:05:48.920
+Return what? So graph dot compile. So whenever you are going
+
+01:05:48.920 --> 01:05:51.360
+to call it, it is going to compile it. And then it is going
+
+01:05:51.360 --> 01:05:54.560
+to return you the graph. Is it making sense to all of us
+
+01:05:54.560 --> 01:05:57.860
+guys? How we are able to like a build a different, different
+
+01:05:57.860 --> 01:06:01.480
+node inside, uh, like a land graph. And then how we are able
+
+01:06:01.480 --> 01:06:04.680
+to bind it, how we are able to bind it with the tool that I
+
+01:06:04.680 --> 01:06:06.500
+have created inside a language chain.
+
+01:06:09.850 --> 01:06:15.590
+Yes, everyone. Is it tough? I don't think that it's, it's
+
+01:06:15.590 --> 01:06:19.830
+tough. It's just like a writing a plain English. Right. It's
+
+01:06:19.830 --> 01:06:21.930
+just like a feel like a writing a literature by the way.
+
+01:06:25.230 --> 01:06:29.270
+Yeah. So those saying yes, Joey saying clear. Okay. What
+
+01:06:29.270 --> 01:06:33.250
+about other guys? So you, you're coming to a class just to
+
+01:06:33.250 --> 01:06:35.310
+watch a movies or like you are, you're trying to execute
+
+01:06:35.310 --> 01:06:38.090
+something because see, uh, it doesn't matter how much, how
+
+01:06:38.090 --> 01:06:41.010
+many things I'm going to teach you. Uh, unless and until you
+
+01:06:41.010 --> 01:06:43.010
+are not going to execute, unless you are not going to run,
+
+01:06:43.090 --> 01:06:44.990
+because when you will run, right, for sure, you will get an
+
+01:06:44.990 --> 01:06:48.370
+issue for sure. Right. Or should you are going to get an
+
+01:06:48.370 --> 01:06:52.130
+issue for sure. You have to fix it. And, uh, even I used to
+
+01:06:52.130 --> 01:06:55.410
+get a issue and just because of that, like, you know, I used
+
+01:06:55.410 --> 01:06:58.090
+to get a lot of issues. I used to fix it because of that. I
+
+01:06:58.090 --> 01:07:00.290
+can come, I can come inside the class and I can teach you
+
+01:07:00.290 --> 01:07:03.490
+because I know I can fix the issue. Uh, but yeah. So even
+
+01:07:03.490 --> 01:07:07.510
+you have to face the exact same thing on your end. Okay. Now
+
+01:07:07.510 --> 01:07:09.750
+many people are saying, yes, there'll be a Sanjay, Eric,
+
+01:07:09.950 --> 01:07:17.250
+Assis, Vijay, uh, Dave Kumar. Okay. Okay. Okay. So, uh, now
+
+01:07:17.250 --> 01:07:19.790
+what, what we are able to achieve so far. So we are. So we
+
+01:07:19.790 --> 01:07:23.430
+are able to basically create a tools tool is calling my LLMs
+
+01:07:23.430 --> 01:07:26.770
+right now we are able to create a graph. So graph, which is
+
+01:07:26.770 --> 01:07:28.990
+going to combine the node and which is going to build my
+
+01:07:28.990 --> 01:07:32.890
+entire use case. So technically graph is the one where it is
+
+01:07:32.890 --> 01:07:35.570
+going to connect my entire node. I can say like multiple
+
+01:07:35.570 --> 01:07:40.330
+agents I'm trying to connect together over there. Yeah. And
+
+01:07:40.330 --> 01:07:47.190
+now, now next is what now next is that to call this graph,
+
+01:07:47.410 --> 01:07:51.670
+to call this graph, basically, right. To call this entire
+
+01:07:51.670 --> 01:07:55.310
+graph that we have created to execute this entire graph that
+
+01:07:55.310 --> 01:07:58.190
+we have created. I can do it in a multiple way. So call this
+
+01:07:58.190 --> 01:08:03.190
+graph basically, and this graph will be calling each and
+
+01:08:03.190 --> 01:08:05.810
+everything, right? This graph will be calling each and
+
+01:08:05.810 --> 01:08:10.170
+everything, but I have to call it, right. I have to
+
+01:08:10.170 --> 01:08:16.650
+basically, uh, like, uh, call this entire things in such a
+
+01:08:16.650 --> 01:08:22.050
+way that, uh, you know, I will be able to convert this
+
+01:08:22.050 --> 01:08:25.650
+entire things as an API, right. I will be able to convert
+
+01:08:25.650 --> 01:08:28.930
+this entire agent and tool that I've created or the graph
+
+01:08:28.930 --> 01:08:33.390
+that I've created as an API. Yeah. Now that is a place where
+
+01:08:33.390 --> 01:08:37.610
+I will be using Lang serve. Basically Lang serve means are
+
+01:08:37.610 --> 01:08:40.630
+things by which you will be able to serve. You will be able
+
+01:08:40.630 --> 01:08:44.050
+to host, you will be able to expose something as an API,
+
+01:08:44.230 --> 01:08:47.590
+right? You will be able to expose something as an API. So
+
+01:08:47.590 --> 01:08:51.510
+that is something. Yeah. That I'm going to show you now that
+
+01:08:51.510 --> 01:08:55.330
+how, with the help of Lang serve, I will be able to call my
+
+01:08:55.330 --> 01:08:59.670
+graph by the way, right. I will be able to call my graph. I
+
+01:08:59.670 --> 01:09:03.830
+will be able to convert eventually everything as an API so
+
+01:09:03.830 --> 01:09:07.130
+that, uh, at a particular end point, right. At a particular
+
+01:09:07.130 --> 01:09:11.830
+URL, anyone can hit, and then anyone will be able to access
+
+01:09:11.830 --> 01:09:14.390
+this entire graph. That is something that I'm going to tell
+
+01:09:14.390 --> 01:09:18.590
+you now, and that code I will be writing inside main. Right.
+
+01:09:18.970 --> 01:09:25.090
+Main. So here I'm going to call fast API API to expose that
+
+01:09:25.090 --> 01:09:34.710
+as an API. So import, import fast F A S T API, import F A S
+
+01:09:34.710 --> 01:09:42.770
+T API. Okay. So fast API, all caps F A S T API. Okay. Now
+
+01:09:42.770 --> 01:09:48.410
+I'm going to call Lang serve over here. Lang S C R L A N G S
+
+01:09:48.410 --> 01:09:55.010
+C R V A N G. Lang serve. And then import, import what? So
+
+01:09:55.010 --> 01:10:02.790
+add underscore R O U T S add routes, R O U T S R O U T S add
+
+01:10:02.790 --> 01:10:08.010
+routes, routes. And then I'm going to import basically this
+
+01:10:08.010 --> 01:10:09.930
+diagnostic graph because this is something that I have to
+
+01:10:09.930 --> 01:10:13.950
+run, right? So diagnostic graph. And inside that we have a
+
+01:10:13.950 --> 01:10:17.470
+function build graph that we have created just now. So these
+
+01:10:17.470 --> 01:10:20.370
+are the import that I'm going to do. Now, with the help of
+
+01:10:20.370 --> 01:10:24.130
+Lang serve, I will be able to execute each and everything.
+
+01:10:24.230 --> 01:10:27.370
+Basically I will be able to convert everything as a route.
+
+01:10:27.550 --> 01:10:30.850
+Route means anyone can come and hit that particular route
+
+01:10:30.850 --> 01:10:34.030
+and they will be able to get the result as simple as that.
+
+01:10:34.170 --> 01:10:39.290
+Now here to do that, I have to create basically like a
+
+01:10:39.290 --> 01:10:42.490
+object of fast API. I have to create an object of basically
+
+01:10:42.490 --> 01:10:45.690
+this build graph as well. Both the objects is required. So
+
+01:10:45.690 --> 01:10:48.910
+one is a app object. App object is nothing. But this fast
+
+01:10:48.910 --> 01:10:52.250
+API. Okay. I'm going to call, and then I need basically a
+
+01:10:52.250 --> 01:10:56.450
+graph, G R A P H graph object, and which I will be able to
+
+01:10:56.450 --> 01:11:01.030
+create from the graph simple. And then I'm going to call add
+
+01:11:01.030 --> 01:11:05.810
+routes and here, so I'm going to pass app, uh, like a fast
+
+01:11:05.810 --> 01:11:09.110
+API app, just an instance I'm going to pass so that it will
+
+01:11:09.110 --> 01:11:12.850
+be able to convert it into as an app. And then I'm going to
+
+01:11:12.850 --> 01:11:17.110
+pass a graph. Eventually this route Lang serve route will be
+
+01:11:17.110 --> 01:11:20.430
+able to execute it when this will be able to be called. And
+
+01:11:20.430 --> 01:11:23.950
+then I'm going to give even a route. So which path anyone
+
+01:11:23.950 --> 01:11:27.250
+will be able to access my application. So I can give my own
+
+01:11:27.250 --> 01:11:30.270
+path over here. I can write any name. I can write S U D H
+
+01:11:30.270 --> 01:11:35.010
+that's completely fine. So I'm going to write D I A G N O S
+
+01:11:35.010 --> 01:11:38.190
+E, Diagnose. You can write even my name. That's fine. Right?
+
+01:11:38.230 --> 01:11:40.970
+This is my custom path. So at this path, what I'm trying to
+
+01:11:40.970 --> 01:11:44.870
+say is that, that at this path, at this particular path, you
+
+01:11:44.870 --> 01:11:49.030
+will be able to access this graph. Right? Now, what is that?
+
+01:11:49.390 --> 01:11:52.430
+This graph. So this is there inside this graph. So this
+
+01:11:52.430 --> 01:11:56.210
+graph is going to execute all of these things. It is going
+
+01:11:56.210 --> 01:12:00.010
+to take this kind of the nomenclature that we have defined.
+
+01:12:00.110 --> 01:12:02.310
+So this kind of an input, this graph is going to take,
+
+01:12:02.470 --> 01:12:05.350
+right? That's this is how like we have called this one. This
+
+01:12:05.350 --> 01:12:07.530
+is the kind of input this graph is going to take, and then
+
+01:12:07.530 --> 01:12:09.610
+it is going to perform each and everything. And then finally
+
+01:12:09.610 --> 01:12:11.650
+it is going to return, right? It is going to return
+
+01:12:11.650 --> 01:12:14.750
+something out of the graph. So this is what it means by the
+
+01:12:14.750 --> 01:12:18.810
+way. So this is, this will go inside your main.py file guys.
+
+01:12:19.830 --> 01:12:24.450
+This will go inside your main.py file. Yeah. Now. So now
+
+01:12:24.450 --> 01:12:28.730
+it's time to run this entire application. Now how I'm going
+
+01:12:28.730 --> 01:12:33.070
+to run this entire application. Let's try to understand it.
+
+01:12:33.550 --> 01:12:37.170
+So first of all, I have to go inside a lang serve backend as
+
+01:12:37.170 --> 01:12:41.170
+it's a fast API. So I'll try to use a uvcon. So lang serve
+
+01:12:41.170 --> 01:12:43.990
+backend. I'm already there. Yeah. Lang serve backend. I'm
+
+01:12:43.990 --> 01:12:48.250
+already here. Right? Now inside this, right? If I'll write
+
+01:12:48.250 --> 01:12:52.810
+dir. So I have this diagnostic graph, main, requirement
+
+01:12:52.810 --> 01:12:56.430
+.file, tools, utils, each and everything. I have to access
+
+01:12:56.430 --> 01:13:00.270
+my main file as an app, main file as an app, right? And then
+
+01:13:00.270 --> 01:13:03.110
+I have to execute it on some of the port number that I'm
+
+01:13:03.110 --> 01:13:07.370
+going to give. So CLS, and here I'm going to write uvcon as
+
+01:13:07.370 --> 01:13:12.850
+it's a fast API app. So uvcon, main I have to execute as an
+
+01:13:12.850 --> 01:13:16.590
+app, main file I have to execute as an app, and then hyphen
+
+01:13:16.590 --> 01:13:21.210
+hyphen, I can try to give host. So execute it at 0.0.0.0,
+
+01:13:21.330 --> 01:13:25.330
+right? And then I can give up port number. So port number is
+
+01:13:25.330 --> 01:13:29.210
+basically 8,000. I can try to give some other port. If this
+
+01:13:29.210 --> 01:13:32.710
+port will be busy, maybe 8,001, 8,002, 8,005, I can try to
+
+01:13:32.710 --> 01:13:35.890
+give. So this is something that you have to execute from
+
+01:13:35.890 --> 01:13:38.410
+where, from lang serve backend. So wherever you can see main
+
+01:13:38.410 --> 01:13:41.790
+file, right? Main file. Now, if I'm going to hit and if
+
+01:13:41.790 --> 01:13:45.530
+everything is going to work, then it's fine. Otherwise it is
+
+01:13:45.530 --> 01:13:48.210
+telling me that lang chain tool is not working. Not
+
+01:13:48.210 --> 01:13:53.750
+available. Okay. So maybe I have missed something. Are you
+
+01:13:53.750 --> 01:13:55.030
+able to do it guys till this point?
+
+01:14:14.990 --> 01:14:16.450
+Yeah. Till this point it's clear.
+
+01:14:51.420 --> 01:14:55.480
+So let me check the library. This is the only place where it
+
+01:14:55.480 --> 01:15:00.560
+gives an issue most of the time. So it is giving me lang
+
+01:15:00.560 --> 01:15:05.320
+serve diagnostic tool.py, lang serve diagnostic tool.py. So
+
+01:15:05.320 --> 01:15:10.880
+lang chain, it's a S by the way. So that's a mistake. Lang
+
+01:15:10.880 --> 01:15:15.120
+chain tool. Basically it's not a T double O L tool. So save
+
+01:15:15.120 --> 01:15:21.660
+it. Now run again. Okay. So bingo. We are able to run it and
+
+01:15:21.660 --> 01:15:28.640
+my entire graph is live at this particular URL, right? And
+
+01:15:28.640 --> 01:15:33.260
+then at this URL, I will be able to even check as a
+
+01:15:33.260 --> 01:15:35.620
+playground because this playground will be provided by your
+
+01:15:35.620 --> 01:15:39.440
+lang serve as you can see, right? The only mistake that I
+
+01:15:39.440 --> 01:15:41.740
+have made was in a diagnostic where it was giving me issues.
+
+01:15:41.740 --> 01:15:44.660
+It should not be tool. It should be S basically. So just
+
+01:15:44.660 --> 01:15:48.560
+correct that mistake. And now everything is live. My lang
+
+01:15:48.560 --> 01:15:52.280
+serve is live guys, as you can see, right? In my local, by
+
+01:15:52.280 --> 01:15:54.920
+the way, as of now in my local, it's live, not in my global.
+
+01:15:55.100 --> 01:15:57.800
+I'll make it as a global as well, right? That's not a big
+
+01:15:57.800 --> 01:16:02.500
+deal. So it's live. Now I'll try to hit this URL and I'll
+
+01:16:02.500 --> 01:16:06.440
+try to see that what is there at this URL. So there is
+
+01:16:06.440 --> 01:16:10.540
+nothing at this URL. Okay, fine. Now I'll try to attach this
+
+01:16:10.540 --> 01:16:13.680
+diagnosis slash play. And hopefully you will be able to get
+
+01:16:13.680 --> 01:16:17.080
+something. So at this URL, there is nothing. So diagnosis.
+
+01:16:17.720 --> 01:16:20.440
+So diagnosis is the route, which I have given. If you
+
+01:16:20.440 --> 01:16:21.740
+remember, it's
+
+01:16:28.530 --> 01:16:38.630
+a 0.0.0, uh, okay. So local host, right? Let me change the
+
+01:16:38.630 --> 01:16:48.490
+port number here. Sorry. This one, 127.0.0.1. It's a local
+
+01:16:48.490 --> 01:16:50.970
+host, right? It's a local host. Even 0.0.0.0 should be a
+
+01:16:50.970 --> 01:16:53.690
+local host, but yeah, I don't know why it's giving me, not
+
+01:16:53.690 --> 01:16:54.470
+giving my application.
+
+01:16:57.140 --> 01:17:00.880
+So HTTPS and then, uh, not
+
+01:17:04.910 --> 01:17:13.260
+found. Okay. Slash slash 404. Okay. So I'm able to hit my,
+
+01:17:13.400 --> 01:17:18.940
+uh, LAN serve by the way, and then playground. So it, it
+
+01:17:18.940 --> 01:17:21.040
+provides you a playground option by the way. So where you
+
+01:17:21.040 --> 01:17:23.920
+can see each and everything. So this is my LAN serve
+
+01:17:23.920 --> 01:17:27.100
+playground guys. So by default. This is a diagnosis.
+
+01:17:27.380 --> 01:17:31.160
+Diagnosis is what diagnosis is technically my path, which I
+
+01:17:31.160 --> 01:17:33.800
+have given. If you remember, this is my diagnosis. I can
+
+01:17:33.800 --> 01:17:36.740
+give a name. My name is SUDH. It's going to work. So
+
+01:17:36.740 --> 01:17:41.100
+diagnosis. So basically it is reaching out to this URL. So
+
+01:17:41.100 --> 01:17:43.340
+which is a local host. Then it is reaching out to the port
+
+01:17:43.340 --> 01:17:46.200
+number, which is 8,000, which I have given. If your 8,000
+
+01:17:46.200 --> 01:17:48.600
+port number is occupied at the runtime, you can try to
+
+01:17:48.600 --> 01:17:50.760
+change your port number. You can try to make it 8,000, 1, 2,
+
+01:17:50.800 --> 01:17:53.660
+5, or whatever you want. You can just try to make it, uh, we
+
+01:17:53.660 --> 01:17:57.240
+don't have any kind of issue. And, uh, once it is able to
+
+01:17:57.240 --> 01:18:01.160
+reach out to my system with this one, now it is reaching out
+
+01:18:01.160 --> 01:18:04.500
+to this URL, by the way, diagnosis URL, which I have given
+
+01:18:04.500 --> 01:18:07.920
+at this URL, I have a graph and my app up and running with
+
+01:18:07.920 --> 01:18:10.840
+the help of lab app, my graph up and running. So this is
+
+01:18:10.840 --> 01:18:14.480
+something that you will be able to like, uh, find out here.
+
+01:18:14.800 --> 01:18:18.880
+Are you able to get it guys? And then at the diagnosis slash
+
+01:18:18.880 --> 01:18:22.100
+playground. So playground is something which by default LAN
+
+01:18:22.100 --> 01:18:27.600
+serve provides you, right? So where you will be able to give
+
+01:18:27.600 --> 01:18:30.640
+your input. Now how this, these things are coming by the
+
+01:18:30.640 --> 01:18:32.780
+way, right? How these things are coming. So basically this
+
+01:18:32.780 --> 01:18:36.020
+is coming from the class that I have created, right? So when
+
+01:18:36.020 --> 01:18:39.200
+I have like a created this graph, so if you remember, so
+
+01:18:39.200 --> 01:18:42.300
+this is the class and I was looking for input symptom area
+
+01:18:42.300 --> 01:18:44.880
+and diagnostic. So this is the input that I have mentioned
+
+01:18:44.880 --> 01:18:48.140
+in a pidentic way. And because of that, so it is giving me
+
+01:18:48.140 --> 01:18:50.660
+these three fields that there is nothing different, right?
+
+01:18:50.680 --> 01:18:52.780
+Input symptom area, same thing. You will be able to find
+
+01:18:52.780 --> 01:18:56.500
+out, right? Same thing. Uh, you will be able to find out and
+
+01:18:56.500 --> 01:18:58.020
+uh, yeah, so
+
+01:19:01.540 --> 01:19:03.600
+are you, are you able to get it guys? Are you able to see
+
+01:19:03.600 --> 01:19:03.820
+it?
+
+01:19:29.320 --> 01:19:32.660
+Yeah. Executed. Are you able to see the langs of playground?
+
+01:19:33.100 --> 01:19:35.840
+Now this is basically your backend. You don't have a UI by
+
+01:19:35.840 --> 01:19:38.420
+the way, this UI that you are able to see. So don't get
+
+01:19:38.420 --> 01:19:41.340
+confused. This is not a UI that you have created. This is a
+
+01:19:41.340 --> 01:19:44.220
+default one, which langs of provides you based on the input
+
+01:19:44.220 --> 01:19:46.340
+that you are going to give that. Okay, fine. So give this
+
+01:19:46.340 --> 01:19:48.700
+input and they'll see what, what I'm going to do it. Right?
+
+01:19:48.840 --> 01:19:51.680
+So this is a UI. Uh, basically, uh, will be provided by, uh,
+
+01:19:51.740 --> 01:19:54.740
+a playground. Okay. So till this point, this is my URL. This
+
+01:19:54.740 --> 01:19:56.960
+is my URL. This is my API by the way. Diagnosis. Only till
+
+01:19:56.960 --> 01:20:00.180
+diagnosis. Playground is coming by default from a langs of
+
+01:20:00.180 --> 01:20:02.660
+site itself for a testing purpose, basically. That's the
+
+01:20:02.660 --> 01:20:05.920
+reason. So it's named, name it as a playground. So I am
+
+01:20:05.920 --> 01:20:13.140
+going to mention that I have a fever and body, body ache. So
+
+01:20:13.140 --> 01:20:17.500
+this is something which I'm going to give over here. Uh,
+
+01:20:17.500 --> 01:20:22.540
+symptom area, nothing diagnosis, nothing. Now let me hit it.
+
+01:20:22.720 --> 01:20:28.720
+Right? So here, as you can see, so symptom check, right?
+
+01:20:28.940 --> 01:20:31.400
+Symptom check. It is trying to perform in a very first
+
+01:20:31.400 --> 01:20:34.260
+place. I believe symptom check is a graph note that we have
+
+01:20:34.260 --> 01:20:38.340
+given. So when I'm saying I have a fever and body ache, so
+
+01:20:38.340 --> 01:20:42.220
+it is trying to tell me symptom area is infection. So I've
+
+01:20:42.220 --> 01:20:45.160
+just given, I have a fever and a body ache. So it is trying
+
+01:20:45.160 --> 01:20:48.940
+to call my very first node by the way. Yeah. A very first
+
+01:20:48.940 --> 01:20:51.560
+node. It is trying to call and then fever and body ache.
+
+01:20:51.620 --> 01:20:52.660
+Now, what is the logic? What is the logic that we have
+
+01:20:52.660 --> 01:20:55.500
+written? What is the logic that we have written for a
+
+01:20:55.500 --> 01:20:59.620
+symptom checker? So if there is a body ache, right, if there
+
+01:20:59.620 --> 01:21:02.700
+is a body ache, not give me what return me infection. Yes,
+
+01:21:02.820 --> 01:21:06.220
+it is able to do it from one of the graph, right? It is able
+
+01:21:06.220 --> 01:21:10.760
+to perform that part. So symptom and a body ache now,
+
+01:21:13.140 --> 01:21:16.560
+now. So here I'm
+
+01:21:19.530 --> 01:21:23.030
+going to click on a, like a start once again.
+
+01:21:29.280 --> 01:21:35.620
+So it should call me a diagnosis. Diagnosis step, which it
+
+01:21:35.620 --> 01:21:38.400
+is not calling start
+
+01:21:57.020 --> 01:22:03.520
+and let me check. What is the issue? So diagnosis.ai
+
+01:22:03.520 --> 01:22:07.360
+diagnosis invoke fine. It is trying to invoke this one, but
+
+01:22:07.360 --> 01:22:12.060
+while invoking, so self run tool input. Okay. Run raise
+
+01:22:12.060 --> 01:22:16.380
+error. Okay. And then run this one. Then in this structure
+
+01:22:16.380 --> 01:22:20.660
+.py in line number 93. Medical project. Okay. Medical
+
+01:22:20.660 --> 01:22:24.680
+project. Diagnosis. So it is trying to call this one and
+
+01:22:24.680 --> 01:22:31.440
+return JSON or return response JSON choice fine. So it is
+
+01:22:31.440 --> 01:22:41.730
+returning me a wrong input. It seems okay. So
+
+01:22:45.280 --> 01:22:47.380
+that's a issue. We'll fix it.
+
+01:23:11.260 --> 01:23:18.320
+Let me give a wrong input, right? So input is equals to this
+
+01:23:18.320 --> 01:23:18.980
+start.
+
+01:23:59.080 --> 01:24:05.220
+Hmm. Now there is a format stake and
+
+01:24:10.750 --> 01:24:12.610
+put a diagnosis is null.
+
+01:24:17.450 --> 01:24:18.030
+It
+
+01:24:35.920 --> 01:24:39.360
+is able to call one of my tool, which is correct. So
+
+01:24:39.360 --> 01:24:42.720
+infection tool it is able to call now after infection tool.
+
+01:24:42.840 --> 01:24:47.660
+So it should call my diagnosis tool by the way. So let me
+
+01:24:47.660 --> 01:24:54.880
+check after this infection input fine. It is able to parse
+
+01:24:54.880 --> 01:24:59.920
+it. In this way as a list of the strings. So fine based on
+
+01:24:59.920 --> 01:25:04.580
+that infection, it is able to call it is so partially it is
+
+01:25:04.580 --> 01:25:14.040
+correct as of now and nothing, nothing. So here input, I
+
+01:25:14.040 --> 01:25:18.360
+have a fever symptom area.
+
+01:25:21.290 --> 01:25:24.590
+I should not pass a symptom area over here. Right? Have
+
+01:25:42.160 --> 01:25:45.380
+a fever. That's fine. That's fine. Symptom area diagnosis.
+
+01:25:45.940 --> 01:25:46.780
+Okay.
+
+01:25:49.430 --> 01:25:55.110
+And, uh, what is the issue once again? So 200 hit, okay, 200
+
+01:25:55.110 --> 01:25:57.290
+hit diagnosis. Expansion
+
+01:26:02.250 --> 01:26:05.170
+choice, content error choice, post
+
+01:26:23.470 --> 01:26:29.030
+diagnosis. It was able to call error was basically line four
+
+01:26:29.030 --> 01:26:33.330
+zero three. Then ignore exceptions
+
+01:26:35.440 --> 01:26:41.660
+and receive sender. Fine. Handle. As
+
+01:26:46.240 --> 01:26:48.860
+group once of exception. We
+
+01:27:28.060 --> 01:27:30.400
+enter this entire things are
+
+01:27:35.130 --> 01:27:40.040
+intermediate step diagnosis model that
+
+01:27:48.960 --> 01:27:51.100
+is giving me this error. Yes.
+
+01:28:06.180 --> 01:28:09.480
+So diagnosis messages
+
+01:28:19.140 --> 01:28:22.040
+is equals to message.
+
+01:28:42.450 --> 01:28:46.730
+Yeah, this is what I'm looking for. So there is a error with
+
+01:28:46.730 --> 01:28:51.890
+this one somewhere. Symptom description find. So message.
+
+01:28:51.950 --> 01:28:56.190
+I'm trying to pass. In a correct order. So URI is going to
+
+01:28:56.190 --> 01:28:58.910
+take a messages. Now this is the message symptom
+
+01:28:58.910 --> 01:28:59.610
+description.
+
+01:29:02.630 --> 01:29:07.470
+Okay. So symptom description, it is going to take.
+
+01:29:09.640 --> 01:29:10.280
+So
+
+01:29:24.390 --> 01:29:31.430
+there is no such correction. It was just like before and,
+
+01:29:33.550 --> 01:29:39.290
+uh, URI chat completion is returning me response choice. She
+
+01:29:39.290 --> 01:29:43.650
+wrote message and then content. Okay. So it is returning me
+
+01:29:43.650 --> 01:29:44.750
+just
+
+01:29:47.340 --> 01:29:52.540
+on data choice. Zero message content. Yeah, that's fine. Oh,
+
+01:29:52.540 --> 01:29:58.640
+let me check now. Once again, it's a minor issue guys. So
+
+01:29:58.640 --> 01:30:05.120
+anyhow, we'll be able to fix it. Okay. So now it's running
+
+01:30:05.120 --> 01:30:07.280
+once again, let me check.
+
+01:30:11.050 --> 01:30:13.130
+So input, I
+
+01:30:17.130 --> 01:30:20.690
+have a fever. Let's keep it blank. Let's keep it blank.
+
+01:30:20.730 --> 01:30:23.810
+Start. Infection. No,
+
+01:30:26.960 --> 01:30:29.420
+still getting this issue.
+
+01:30:42.300 --> 01:30:47.010
+E error choice. Why it is giving me again, this choice,
+
+01:30:49.570 --> 01:30:55.210
+it's a correct one, by the way. I don't think that because
+
+01:30:57.580 --> 01:31:02.300
+I've been using this multiple times API URI alpha chat
+
+01:31:02.300 --> 01:31:05.740
+completion. Okay.
+
+01:31:12.160 --> 01:31:17.880
+Because this format of the output is a completely correct.
+
+01:31:20.400 --> 01:31:23.330
+Even URI alpha. Then chat completion.
+
+01:31:26.890 --> 01:31:32.070
+Okay. Got the issue guys. This was the issue. So here base
+
+01:31:32.070 --> 01:31:35.610
+URL wise, I have mentioned this URL. And again, I have
+
+01:31:35.610 --> 01:31:37.790
+mentioned over here. This was the issue. That's the reason.
+
+01:31:37.910 --> 01:31:41.110
+So it was giving me the wrong. This one. Okay. Remove it
+
+01:31:41.110 --> 01:31:42.270
+from here. Alpha.
+
+01:31:44.980 --> 01:31:50.080
+Hmm. Terminated. Got the issue. Got the actual issue. CLS.
+
+01:31:50.080 --> 01:31:55.860
+And now run again. So backend up and running. Now is it
+
+01:31:55.860 --> 01:31:59.520
+coming? Let's try to execute and then try to give my input.
+
+01:32:00.400 --> 01:32:03.360
+I'll just try to keep it as a blank. I'll try to keep it.
+
+01:32:03.380 --> 01:32:07.640
+This is a blank. Now it's running. See now it's running.
+
+01:32:07.960 --> 01:32:11.820
+Yeah. So now it is able to give me a diagnosis. Okay. I have
+
+01:32:11.820 --> 01:32:14.600
+given too many things. Let me remove this part. I'll just
+
+01:32:14.600 --> 01:32:19.600
+get, I to give the input over here. Nothing much. So I have
+
+01:32:19.600 --> 01:32:27.100
+like a fever and cough. Okay. Now start. So now it is
+
+01:32:27.100 --> 01:32:31.320
+starting and now it is trying to invoke and see. So it is
+
+01:32:31.320 --> 01:32:34.620
+able to check the symptoms, which is like a infection. First
+
+01:32:34.620 --> 01:32:38.200
+of all, a diagnosis was zero. There is no diagnosis at this
+
+01:32:38.200 --> 01:32:42.000
+point of a time. And then, uh, this one, this two one is
+
+01:32:42.000 --> 01:32:44.820
+going into the second one, which is AI diagnosis, right? AI
+
+01:32:44.820 --> 01:32:47.660
+diagnosis node. So this is one of my node name, and this is
+
+01:32:47.660 --> 01:32:50.500
+another node name is going here. And diagnosis was, I'm
+
+01:32:50.500 --> 01:32:52.580
+sorry to hear you are experiencing the symptom fever and
+
+01:32:52.580 --> 01:32:55.780
+cough can be caused by variety of condition. Ranging from a
+
+01:32:55.780 --> 01:32:59.180
+mild to a more serious, here are some possible diagnosis and
+
+01:32:59.180 --> 01:33:02.620
+recommended a step possible diagnosis, common cold. So it
+
+01:33:02.620 --> 01:33:05.040
+has, it has given me the complete diagnosis as you can see.
+
+01:33:05.300 --> 01:33:08.440
+Right. And, uh, here, so intermediate a step wise, it is
+
+01:33:08.440 --> 01:33:11.460
+showing you will be able to see that what has been done in
+
+01:33:11.460 --> 01:33:13.900
+an intermediate. So first of all, it has executed this, uh,
+
+01:33:14.000 --> 01:33:17.500
+node basically, then it has included this one. Then it has
+
+01:33:17.500 --> 01:33:20.900
+included this one. Yeah. So this is how this entire things
+
+01:33:20.900 --> 01:33:23.180
+has been done. So what has happened in diagnosis? Step. And
+
+01:33:23.180 --> 01:33:26.280
+then what has happened in, uh, again, diagnosis step over
+
+01:33:26.280 --> 01:33:28.680
+here, everything, everything you will be able to find out
+
+01:33:28.680 --> 01:33:32.660
+and, uh, yeah. So now everything is green 200. So
+
+01:33:32.660 --> 01:33:36.860
+successfully we are able to create a backend and, uh, now
+
+01:33:36.860 --> 01:33:39.920
+anyone can call this URL, not playground, basically
+
+01:33:39.920 --> 01:33:42.380
+playground is just for testing purpose, right? They're going
+
+01:33:42.380 --> 01:33:45.220
+to just for testing purpose. Now anyone can call this URL by
+
+01:33:45.220 --> 01:33:49.880
+the way, and anyone will be able to, you know, consume my
+
+01:33:49.880 --> 01:33:53.580
+entire application. Anyone can try to pass this input,
+
+01:33:53.760 --> 01:33:56.900
+right? So whatever symptom that user have, so anyone can
+
+01:33:56.900 --> 01:34:00.080
+pass it and they will be able to get up complete in depth,
+
+01:34:00.140 --> 01:34:03.780
+in detail analysis in a formatted way here, we are not able
+
+01:34:03.780 --> 01:34:05.860
+to see in a formatted way. We'll, we'll try to create a UI
+
+01:34:05.860 --> 01:34:08.800
+where we can see everything in a formatted way. Making
+
+01:34:08.800 --> 01:34:09.300
+sense. Guys.
+
+01:34:13.120 --> 01:34:16.400
+Mohit is asking this project is AI agent or agentic AI.
+
+01:34:19.980 --> 01:34:25.240
+Uh, Mohit. Yeah. Yeah. So first try to focus in a class
+
+01:34:25.240 --> 01:34:30.660
+second, join all the classes with your open eyes. Don't try
+
+01:34:30.660 --> 01:34:34.540
+to sleep in between the class. If you are going to ask me
+
+01:34:34.540 --> 01:34:36.920
+this kind of a question, I'm not able to understand that
+
+01:34:36.920 --> 01:34:39.680
+whether I should answer or whether I should not write, we
+
+01:34:39.680 --> 01:34:43.300
+are almost on a verge of completing the entire batch by the
+
+01:34:43.300 --> 01:34:43.540
+way.
+
+01:34:47.090 --> 01:34:52.990
+Okay. Fine. Uh, okay. So my backend is running. My backend
+
+01:34:52.990 --> 01:34:55.870
+server is up and running by the way. So Mohit, I don't think
+
+01:34:55.870 --> 01:34:56.890
+that you have executed. Even I don't think that you have
+
+01:34:56.890 --> 01:34:58.770
+executed. A single thing that I've taught you in a past,
+
+01:34:58.950 --> 01:35:03.330
+right? Because from your like comments, I can get the sense
+
+01:35:03.330 --> 01:35:08.130
+of it. And I don't think that it's a, uh, like, uh, it's
+
+01:35:08.130 --> 01:35:11.650
+going in a good way, but yeah, I don't want to say anything.
+
+01:35:11.770 --> 01:35:17.390
+It's fine. Your wish. Okay. So Lang, the lines of backend,
+
+01:35:17.470 --> 01:35:20.770
+we are able to create. Now let's go and create a, like a UI
+
+01:35:20.770 --> 01:35:23.310
+by the way. Right. A simple UI we are going to create. So
+
+01:35:23.310 --> 01:35:25.870
+where it is going to take the input and then it is going to
+
+01:35:25.870 --> 01:35:29.890
+give me the output. So I have already created the input. So
+
+01:35:29.890 --> 01:35:35.190
+let me call this app without PI basic, a stimulant app,
+
+01:35:35.350 --> 01:35:40.350
+which is going to give you a interface. So see what we are
+
+01:35:40.350 --> 01:35:43.390
+doing. Nothing. So here we are trying to list, ask you to
+
+01:35:43.390 --> 01:35:46.350
+describe your symptom, right? And once you are going to
+
+01:35:46.350 --> 01:35:50.190
+describe your symptom, basically, so input the symptom area
+
+01:35:50.190 --> 01:35:52.550
+and diagnosis symptom area is going to be blank diagnosis is
+
+01:35:52.550 --> 01:35:54.870
+going to be blank. Just we are trying to give an input as a
+
+01:35:54.870 --> 01:35:58.010
+symptom. So this is the data that we are trying to. To
+
+01:35:58.010 --> 01:36:00.230
+prepare, right? This is the data that we are trying to
+
+01:36:00.230 --> 01:36:03.890
+prepare. And then this data, this data, basically whatever
+
+01:36:03.890 --> 01:36:06.710
+input that you have given, whatever input, whatever, like a
+
+01:36:06.710 --> 01:36:10.050
+lengthy text that you have written. So it will come over
+
+01:36:10.050 --> 01:36:13.910
+here and then it is going to hit my API. So localhost 8,000
+
+01:36:13.910 --> 01:36:16.850
+diagnosis diagnosis is a place. So where everything is
+
+01:36:16.850 --> 01:36:19.990
+available invoke. So by this, it will be able to invoke
+
+01:36:19.990 --> 01:36:23.530
+whatever is available at a diagnosis. And then I'm trying to
+
+01:36:23.530 --> 01:36:26.470
+give a JSON input. This is the only things that we are
+
+01:36:26.470 --> 01:36:28.690
+trying to do with respect to API. API testing. That's it.
+
+01:36:28.870 --> 01:36:31.430
+Nothing much guys. Right? That's the only thing. So this is
+
+01:36:31.430 --> 01:36:34.370
+my API, by the way. This is my API call, right? This is my
+
+01:36:34.370 --> 01:36:38.970
+API call, right? So leave your up, leave your server up and
+
+01:36:38.970 --> 01:36:41.470
+running. If you are going to close the server, so it is not
+
+01:36:41.470 --> 01:36:43.790
+going to work. So what you can do is you can try to create
+
+01:36:43.790 --> 01:36:45.810
+another terminal over here, leave your server up and
+
+01:36:45.810 --> 01:36:53.010
+running. And then maybe I can try to like change my, yeah,
+
+01:36:53.130 --> 01:36:57.870
+so medi diagnosis, DIA, this is my environment. Okay. So
+
+01:36:57.870 --> 01:37:03.210
+medi DIA, Conda activate medi
+
+01:37:06.800 --> 01:37:15.680
+DIA, sorry, DIA, Conda ACTIVAT,
+
+01:37:15.680 --> 01:37:18.420
+activate medi DIA. What happened?
+
+01:37:27.650 --> 01:37:34.350
+Not able to recognize why? Okay. COD I have written, C-O-N-D
+
+01:37:34.350 --> 01:37:39.210
+-A, yeah. So fine. Activate this environment and then we are
+
+01:37:39.210 --> 01:37:42.290
+going to execute my like a stream lint, by the way. This is
+
+01:37:42.290 --> 01:37:45.090
+my UI and this UI is not doing anything much. So whatever
+
+01:37:45.090 --> 01:37:47.770
+response it will give it to you, it is trying to show it to
+
+01:37:47.770 --> 01:37:51.070
+you. So this is the only three line of a code. So this is
+
+01:37:51.070 --> 01:37:54.270
+for input formatting. The way I have configured the input in
+
+01:37:54.270 --> 01:37:58.730
+my pidentic class, and this is just for calling the API. It
+
+01:37:58.730 --> 01:38:00.810
+is going to give you the response. I'm going to show you the
+
+01:38:00.810 --> 01:38:05.450
+response. Now let's execute this stream lint. So here DIR
+
+01:38:05.450 --> 01:38:10.190
+and CDI medical, I'll go inside this folder. Then again,
+
+01:38:10.270 --> 01:38:15.070
+DIR. I'll go inside the stream lint UI and now I'm going to
+
+01:38:15.070 --> 01:38:20.650
+call S-T-R-E-M-L-I-T, stream lint run, run what? So run app
+
+01:38:20.650 --> 01:38:25.930
+.py file. And yeah, it's running AI medical diagnostic
+
+01:38:25.930 --> 01:38:32.870
+assistance. So I am not feeling good. I have, I have some
+
+01:38:32.870 --> 01:38:38.550
+fever. I have given that get diagnosis. So it is going to
+
+01:38:38.550 --> 01:38:41.630
+call my get diagnosis. And if there is no, nothing wrong. So
+
+01:38:41.630 --> 01:38:45.450
+yeah, so now see it is going to give you the entire things
+
+01:38:45.450 --> 01:38:49.850
+into a complete formatted way. So input is I'm not feeling
+
+01:38:49.850 --> 01:38:53.390
+well, symptom area infection diagnosis. It is able to like
+
+01:38:53.390 --> 01:38:56.170
+give you viral infection, bacterial infection, other
+
+01:38:56.170 --> 01:38:58.810
+illness, inflammatory infection, steps that you should take.
+
+01:38:58.930 --> 01:39:03.110
+So monitor your symptom, rest and hydrate over the counter
+
+01:39:03.110 --> 01:39:06.350
+readiness, seek the medical attention. So in a detail,
+
+01:39:06.430 --> 01:39:08.990
+whatever prompt that you have given. So it is going to give
+
+01:39:08.990 --> 01:39:10.950
+you each and every one. Everything. Yeah. It is giving,
+
+01:39:10.970 --> 01:39:14.330
+going to give you everything. This, this is, this is all,
+
+01:39:14.350 --> 01:39:16.410
+this is already, I'm able to get it. So I just have to
+
+01:39:16.410 --> 01:39:19.830
+change my little bit of code. So this is the raw output that
+
+01:39:19.830 --> 01:39:25.110
+you are able to get it guys. Is it making sense? Yeah. So
+
+01:39:25.110 --> 01:39:28.070
+I'm not doing anything much. So once my backend is ready, so
+
+01:39:28.070 --> 01:39:31.250
+my front end will never give me a pain because I just have
+
+01:39:31.250 --> 01:39:34.530
+to call the APIs. Now when I'm going to deploy it, right?
+
+01:39:34.590 --> 01:39:36.710
+When I'm going to deploy my backend, for example, if I'm
+
+01:39:36.710 --> 01:39:39.250
+going to deploy my backend, what I will do is I'll just
+
+01:39:39.250 --> 01:39:42.470
+change this API endpoint. So instead of this local host,
+
+01:39:42.570 --> 01:39:46.690
+I'll try to give my server API. So this is the only changes
+
+01:39:46.690 --> 01:39:48.910
+which I'm going to make apart from that, there is no changes
+
+01:39:48.910 --> 01:39:52.770
+which is required, uh, to like, uh, consume this one. So now
+
+01:39:52.770 --> 01:39:56.750
+what I will do is that I will try to deploy my backend
+
+01:39:56.750 --> 01:39:59.330
+first, right? I'll try to deploy my backend first
+
+01:39:59.330 --> 01:40:02.390
+separately, as I have discussed in a beginning of the class
+
+01:40:02.390 --> 01:40:08.530
+itself. So I'll try to deploy a backend now. So. Okay. Okay.
+
+01:40:08.590 --> 01:40:11.670
+So now I'll try to test a backend deployed backend URL
+
+01:40:11.670 --> 01:40:15.490
+deployed backend API from my local. And then eventually I'll
+
+01:40:15.490 --> 01:40:18.670
+try to deploy even my front end. So shall we go ahead guys
+
+01:40:18.670 --> 01:40:19.950
+for a deployment?
+
+01:40:22.660 --> 01:40:23.840
+Yeah. Shall we go ahead?
+
+01:40:35.100 --> 01:40:37.900
+Okay. Jitendra is asking one very good question. The project
+
+01:40:37.900 --> 01:40:40.700
+is really great creating from a scratch, but one layman
+
+01:40:40.700 --> 01:40:44.180
+question, if a user can give a symptom in a chat GPT and get
+
+01:40:44.180 --> 01:40:47.860
+a detailed answer, obviously see, uh, you will be able to
+
+01:40:47.860 --> 01:40:50.540
+give an input into a chat GPT. But here, I'm not trying to
+
+01:40:50.540 --> 01:40:54.420
+teach you that. What is, what can be done with a chat GPT or
+
+01:40:54.420 --> 01:40:56.980
+what can't be done with a chat GPT here? What I'm trying to
+
+01:40:56.980 --> 01:41:01.120
+teach you is that, that how you can create your own custom
+
+01:41:01.120 --> 01:41:05.500
+agent, how you can try to call your own custom tool, how you
+
+01:41:05.500 --> 01:41:08.500
+can connect each and everything, how you can try to even
+
+01:41:08.500 --> 01:41:12.260
+host it. So that going forward, let's suppose there is a
+
+01:41:12.260 --> 01:41:15.000
+document which is available inside your folder, or maybe on
+
+01:41:15.000 --> 01:41:18.960
+a S3 or maybe in a blob. Right? Now you would like to read
+
+01:41:18.960 --> 01:41:21.260
+that document. So there is one tool, which is a reading
+
+01:41:21.260 --> 01:41:23.600
+those document. There is another tool, which is summarizing
+
+01:41:23.600 --> 01:41:26.200
+the document. There is another tool, which is going to even
+
+01:41:26.200 --> 01:41:29.840
+eventually like a, trying to generate a report out of it. So
+
+01:41:29.840 --> 01:41:33.780
+there can be a infinite number of tasks. You can say that
+
+01:41:33.780 --> 01:41:36.760
+we, as a human, we would like to perform and where we would
+
+01:41:36.760 --> 01:41:39.400
+like to like, uh, you know, involve a tooling, involve
+
+01:41:39.400 --> 01:41:43.000
+agents and involve our LLMs together. Obviously for this
+
+01:41:43.000 --> 01:41:46.160
+question, your chat GPT is going to give the answer, but if
+
+01:41:46.160 --> 01:41:49.060
+I'm going to change the scenario that let's suppose, uh, my
+
+01:41:49.060 --> 01:41:53.320
+entire things is available, my symptom, my health report,
+
+01:41:53.700 --> 01:41:56.300
+right? Let's suppose my health here, I'm trying to enter the
+
+01:41:56.300 --> 01:41:59.300
+symptom. I agree. Right? So I'm trying to enter the symptom,
+
+01:41:59.460 --> 01:42:02.520
+but let's suppose my entire health report is available in a
+
+01:42:02.520 --> 01:42:06.480
+S3 bucket, right? Or in my local system, or maybe it's
+
+01:42:06.480 --> 01:42:09.040
+available on a blob storage or maybe into some databases.
+
+01:42:09.340 --> 01:42:13.200
+Right? Will your chat GPT will be able to give an answer?
+
+01:42:15.130 --> 01:42:16.430
+Guys? Yes or no?
+
+01:42:19.820 --> 01:42:22.380
+You, you, you are not entering anything from here. You're
+
+01:42:22.380 --> 01:42:24.620
+not entering anything from here. Now you want a detailed
+
+01:42:24.620 --> 01:42:27.260
+response. You want a detailed diagnosis, just like a doctor,
+
+01:42:27.360 --> 01:42:29.140
+right? And everything is available, not in your system,
+
+01:42:29.220 --> 01:42:32.380
+maybe on a S3 bucket, maybe into some databases, right? So
+
+01:42:32.380 --> 01:42:37.740
+will you be able to like use just a chat GPT by prompting it
+
+01:42:37.740 --> 01:42:41.040
+and then say that, okay, fine. Like, uh, just give me the
+
+01:42:41.040 --> 01:42:45.920
+analysis. No. Inside a chat GPT, you have to call MCP tools.
+
+01:42:46.080 --> 01:42:48.540
+There is an MCP tool provision, which is available for us.
+
+01:42:49.640 --> 01:42:53.100
+Now, uh, or else you can try to create an agent. Now that
+
+01:42:53.100 --> 01:42:57.520
+agent is going to call the tools. Yeah. So what is the
+
+01:42:57.520 --> 01:42:59.400
+meaning of this agent? Agent is trying to perform some
+
+01:42:59.400 --> 01:43:01.700
+specific tasks, only a specific task, right? What is a tool
+
+01:43:01.700 --> 01:43:04.780
+again? A more specific one, the worker one, right? So it is
+
+01:43:04.780 --> 01:43:07.320
+trying to perform on a specific task. So there are millions
+
+01:43:07.320 --> 01:43:10.540
+of specific tasks that you will be able to find out in your
+
+01:43:10.540 --> 01:43:14.080
+day to day as well as inside the industry. Yeah. So we are
+
+01:43:14.080 --> 01:43:16.680
+not learning that what can't be done with a chat GPT because
+
+01:43:16.680 --> 01:43:18.640
+that, that is all something. That is something that we
+
+01:43:18.640 --> 01:43:21.960
+already know. Right. We're trying to learn that how we can
+
+01:43:21.960 --> 01:43:25.600
+try to customize it so that any number of tools which
+
+01:43:25.600 --> 01:43:28.600
+available in an entire universe, maybe my Gmail, maybe my
+
+01:43:28.600 --> 01:43:31.320
+WhatsApp, maybe my telegram, right? Maybe my, like a
+
+01:43:31.320 --> 01:43:33.920
+storage, maybe my, some other different kind of API, maybe
+
+01:43:33.920 --> 01:43:36.800
+my, my analytics dashboard. I will be able to access
+
+01:43:36.800 --> 01:43:39.360
+everything altogether sequentially. I will be able to
+
+01:43:39.360 --> 01:43:42.460
+attach. And then one after another AI will be able to take a
+
+01:43:42.460 --> 01:43:43.920
+decision and execute the task.
+
+01:43:47.080 --> 01:43:51.180
+Yeah. So that, that was a whole idea. That was a whole idea
+
+01:43:51.180 --> 01:43:53.960
+behind teaching you, or that is the whole idea behind even
+
+01:43:53.960 --> 01:43:57.040
+learning generative AI. Right. And inside generative AI. So
+
+01:43:57.040 --> 01:44:01.020
+learning agentic AI, or you can say a tool calling or all of
+
+01:44:01.020 --> 01:44:03.800
+this framework, whether it's a Lang chain or maybe a Lama
+
+01:44:03.800 --> 01:44:08.120
+indexes, maybe a Lang serve, maybe a Lang flow, maybe like a
+
+01:44:08.120 --> 01:44:10.100
+crew AI or maybe N8N.
+
+01:44:12.770 --> 01:44:15.510
+Yeah. And after some time, believe me, after execution
+
+01:44:15.510 --> 01:44:18.250
+couple of code, you will be able to find out that now give
+
+01:44:18.250 --> 01:44:22.310
+me any framework. I'll do it. Because the core framework.
+
+01:44:22.310 --> 01:44:25.150
+The core philosophy of most of the framework is exactly
+
+01:44:25.150 --> 01:44:28.150
+same. They have just created their own API because obviously
+
+01:44:28.150 --> 01:44:30.030
+they have to run the business, right? It's just a business.
+
+01:44:30.190 --> 01:44:34.250
+So, but yeah, someone is giving you some, just like a, some
+
+01:44:34.250 --> 01:44:38.010
+advantage. Someone is not. And tomorrow, even like that will
+
+01:44:38.010 --> 01:44:41.150
+be available in the, the other one, this is how this
+
+01:44:41.150 --> 01:44:43.590
+industry is growing. And every day we are able to heard
+
+01:44:43.590 --> 01:44:49.590
+about a new, new things basically. Yeah. Okay. So this is
+
+01:44:49.590 --> 01:44:52.250
+done. Now, what I can do is that. Yeah. So I'll try to,
+
+01:44:52.310 --> 01:44:55.870
+first of all, like a host, my backend, right? I'll try to
+
+01:44:55.870 --> 01:44:59.050
+push my backend and then I'll try to test it from my local.
+
+01:44:59.170 --> 01:45:01.270
+And even you guys will be able to test it from the local
+
+01:45:01.270 --> 01:45:04.190
+now. So the platform, which I'm going to use for a
+
+01:45:04.190 --> 01:45:10.320
+deployment is going to be a render platform. So hope all of
+
+01:45:10.320 --> 01:45:12.220
+you are enjoying guys, all of you are able to learn
+
+01:45:12.220 --> 01:45:14.500
+something in a real time. And I don't think that anyone will
+
+01:45:14.500 --> 01:45:19.640
+have a problem with respect to a agent or something. Yep. So
+
+01:45:19.640 --> 01:45:23.480
+just go to Google and try to search. If you search for
+
+01:45:23.480 --> 01:45:25.840
+render, I believe I have already used render platform in
+
+01:45:25.840 --> 01:45:30.520
+your class as well. So render just login, login with the
+
+01:45:30.520 --> 01:45:34.280
+Google sign in a simple one step. So render is basically a
+
+01:45:34.280 --> 01:45:37.280
+platform which is giving you a free, like a hosting
+
+01:45:37.280 --> 01:45:40.600
+solution. You can try to use Azure or AWS as well. I'll try
+
+01:45:40.600 --> 01:45:43.340
+to show you that part as well, that how you can try to host
+
+01:45:43.340 --> 01:45:45.640
+it. But yeah, even inside the render, you can try to make it
+
+01:45:45.640 --> 01:45:49.160
+scalable. If you are going with the paid one in a free one,
+
+01:45:49.260 --> 01:45:52.400
+they're not giving you that option by the way. Yeah. So here
+
+01:45:52.400 --> 01:45:56.680
+I have to deploy that on a render cloud platform. Now to
+
+01:45:56.680 --> 01:45:59.780
+deploy that, I have to keep my code inside a GitHub or I
+
+01:45:59.780 --> 01:46:03.660
+have to convert everything into my, into, into a Docker
+
+01:46:03.660 --> 01:46:05.600
+file, basically I have to convert everything into a Docker
+
+01:46:05.600 --> 01:46:08.280
+version of it. So what I will do is I'll try to push my
+
+01:46:08.280 --> 01:46:13.400
+code, right? I'll try to push my complete code inside a
+
+01:46:13.400 --> 01:46:16.820
+GitHub repository in a very first place. Yep. Inside a
+
+01:46:16.820 --> 01:46:21.180
+GitHub repository. So let's do it. So here. Yeah. So I can
+
+01:46:21.180 --> 01:46:24.380
+try to create two separate repository, one for front end,
+
+01:46:24.420 --> 01:46:27.380
+one for backend, or maybe I can try to create one
+
+01:46:27.380 --> 01:46:30.300
+repository, but two directory structure I can try to
+
+01:46:30.300 --> 01:46:32.320
+maintain the way I'm maintaining in my local. So either way,
+
+01:46:32.380 --> 01:46:35.260
+it's completely fine. I will be able to recognize it at the
+
+01:46:35.260 --> 01:46:37.200
+time of deployment. So let's see how we can deploy
+
+01:46:37.200 --> 01:46:40.520
+separately a front end and separately a backend. So
+
+01:46:40.520 --> 01:46:44.320
+repository, and I'm going to create a new repository over
+
+01:46:44.320 --> 01:46:50.880
+here, Medidiag, Medidiagnosis, Medidiag. Something like
+
+01:46:50.880 --> 01:46:54.460
+that. Create repository. So create it with your own name,
+
+01:46:54.580 --> 01:47:03.300
+and then let's start pushing up code. So here, let me open
+
+01:47:03.300 --> 01:47:09.200
+up a new command prompt. So dir, now cd ai-medical, okay,
+
+01:47:09.320 --> 01:47:13.960
+dir. So okay, front end, backend, the both are available. So
+
+01:47:13.960 --> 01:47:17.400
+I'll try to push both of this, right? In a later stage, if I
+
+01:47:17.400 --> 01:47:21.360
+have to update it, I'll update it. So here, git init, git
+
+01:47:21.360 --> 01:47:24.740
+init, initialize it. Git init. Now, as you can see, color
+
+01:47:24.740 --> 01:47:29.440
+has changed. So git init, and then I can write git add, add
+
+01:47:29.440 --> 01:47:31.920
+everything. So git add dot. That's the reason I have written
+
+01:47:31.920 --> 01:47:36.220
+git add. Now after that, so commit, basically. So git
+
+01:47:36.220 --> 01:47:41.400
+commit, or message. So git c-o-m-m-i-t, and then message. So
+
+01:47:41.400 --> 01:47:49.780
+message, message, my first agent
+
+01:47:52.060 --> 01:47:57.400
+deploy, okay. So these are the file. It is able to check in,
+
+01:47:57.480 --> 01:48:01.340
+and then once after that, so git branch main, it's a very,
+
+01:48:01.420 --> 01:48:04.600
+like a baby step that we are taking. So git is already
+
+01:48:04.600 --> 01:48:09.020
+providing you all those steps. Now git remote, done. Git
+
+01:48:09.020 --> 01:48:14.380
+push origin main, okay, done. So this is the only step, and
+
+01:48:14.380 --> 01:48:16.420
+anyhow, whenever you are going to create the repository, it
+
+01:48:16.420 --> 01:48:19.140
+is going to give you all the steps, as simple as that. Now
+
+01:48:19.140 --> 01:48:22.320
+refresh it, refresh your git, and now all these files are
+
+01:48:22.320 --> 01:48:24.500
+available. So langs of backend I have created, it's
+
+01:48:24.500 --> 01:48:28.760
+available over here, as you can see. And lang, streamlint
+
+01:48:28.760 --> 01:48:31.200
+ui, so this is the frontend which I have created, so it's
+
+01:48:31.200 --> 01:48:35.340
+available. Requirement.txt, it's blank, right. Okay let me
+
+01:48:35.340 --> 01:48:37.960
+keep something inside there. Streamlit is the only thing
+
+01:48:37.960 --> 01:48:43.160
+which I have to keep, or maybe I can, okay, leave it. Commit
+
+01:48:43.160 --> 01:48:45.360
+changes, commit, okay.
+
+01:48:47.540 --> 01:48:50.340
+So here, langs of backend, so first of all, I'll try to
+
+01:48:50.340 --> 01:48:52.780
+deploy the backend. So how I'm going to deploy the backend,
+
+01:48:52.940 --> 01:48:55.160
+let's try to understand that part. So all these things have
+
+01:48:55.160 --> 01:48:57.900
+been pushed. Are you able to push your code into a git hub?
+
+01:48:57.920 --> 01:49:00.900
+Git hub guys, it's just a two minute of job, yeah,
+
+01:49:05.790 --> 01:49:11.710
+are you able to like push it inside your git hub, everyone,
+
+01:49:11.990 --> 01:49:12.950
+okay.
+
+01:49:22.250 --> 01:49:25.690
+So once you are able to push it, come to render, now click
+
+01:49:25.690 --> 01:49:29.570
+on new, click on web services, yeah, click on new, click on
+
+01:49:29.570 --> 01:49:32.650
+web services. Now so here, if you are doing it for the very
+
+01:49:32.650 --> 01:49:34.950
+first time, so it is going to ask you to connect basically.
+
+01:49:35.130 --> 01:49:37.330
+So connect to the git hub and it is asking you for the
+
+01:49:37.330 --> 01:49:39.570
+authorization, so you can try to provide the authorization,
+
+01:49:39.790 --> 01:49:43.090
+user ID and password, and then you will be able to connect
+
+01:49:43.090 --> 01:49:45.350
+with your git hub. You can try to connect with a git lab as
+
+01:49:45.350 --> 01:49:47.310
+well, you can try to connect with a bit bucket. So these are
+
+01:49:47.310 --> 01:49:50.650
+basically a git, they try to provide you a version
+
+01:49:50.650 --> 01:49:52.710
+management with respect to a code, whether it's a git lab,
+
+01:49:52.790 --> 01:49:55.390
+whether it's a bit bucket, you can use any of these, that's
+
+01:49:55.390 --> 01:49:57.970
+completely fine. If you're not, if you're not keeping a code
+
+01:49:57.970 --> 01:50:00.150
+inside the git, then you can try to like go ahead with the
+
+01:50:00.150 --> 01:50:03.390
+docker file, docker container, so that is also fine. Now so
+
+01:50:03.390 --> 01:50:06.370
+git provider, I'm able to connect, now here I'm able to see
+
+01:50:06.370 --> 01:50:08.850
+my repository, right. Here I'm able to see my repository,
+
+01:50:08.910 --> 01:50:11.210
+which is a midi diag. This is the repository which I have
+
+01:50:11.210 --> 01:50:15.330
+created, right. Two things, one is my backend, one folder is
+
+01:50:15.330 --> 01:50:18.410
+holding my backend, one folder is holding my frontend. I'll
+
+01:50:18.410 --> 01:50:20.810
+not focus on frontend at all, I'll try to focus on backend
+
+01:50:20.810 --> 01:50:23.630
+first. I'll try to deploy backend separately and frontend
+
+01:50:23.630 --> 01:50:26.310
+separately. I could have done both together, that's also
+
+01:50:26.310 --> 01:50:29.870
+fine, but I just wanted to show you that how things happens
+
+01:50:29.870 --> 01:50:33.010
+in reality, right. In a backend, so we try to deploy and we
+
+01:50:33.010 --> 01:50:36.030
+try to host the APIs, then in a frontend, we try to consume
+
+01:50:36.030 --> 01:50:38.390
+it. So that's the reason, so I'm trying to show you like
+
+01:50:38.390 --> 01:50:42.250
+separately, otherwise I would have done that altogether. So
+
+01:50:42.250 --> 01:50:46.410
+not a big deal. It's like the same thing, but maybe you will
+
+01:50:46.410 --> 01:50:50.350
+not be able to get like a reality check over here. So that's
+
+01:50:50.350 --> 01:50:55.550
+the only reason I'm like doing this. Making sense guys?
+
+01:50:55.670 --> 01:50:56.350
+Shall we move ahead?
+
+01:51:09.930 --> 01:51:12.130
+Yeah everyone, yes
+
+01:52:06.050 --> 01:52:12.290
+okay, so here see, this is my main directory, midi diag,
+
+01:52:12.290 --> 01:52:16.690
+inside that so basically we have like, we have basically,
+
+01:52:16.750 --> 01:52:20.130
+like a file in two places. is one is a back end one is a
+
+01:52:20.130 --> 01:52:22.950
+front end. So I'll just have to deploy lang serve back end,
+
+01:52:23.030 --> 01:52:25.710
+what I can do is I can try to keep it in a separate separate
+
+01:52:25.710 --> 01:52:28.730
+repository or else as of now, it's available in my same
+
+01:52:28.730 --> 01:52:31.850
+repository. So I can copy this one. And then as a root
+
+01:52:31.850 --> 01:52:34.350
+directory, there is option so I can try to pass this to
+
+01:52:34.350 --> 01:52:36.850
+directory. So this root directory option is available that
+
+01:52:36.850 --> 01:52:40.330
+okay, for this app, what is the root directory, so it will
+
+01:52:40.330 --> 01:52:43.190
+not even look into your other directory, it will only look
+
+01:52:43.190 --> 01:52:46.270
+into this particular directory, although the repository is
+
+01:52:46.270 --> 01:52:50.130
+same, right. But here I can try to branch it here, I can try
+
+01:52:50.130 --> 01:52:52.530
+to separate it basically. So this is what I have done lang
+
+01:52:52.530 --> 01:52:55.110
+serve back end. So whatever is the name, keep it as it is.
+
+01:52:55.190 --> 01:52:58.030
+And here you will be able to see that things have changed.
+
+01:52:58.130 --> 01:53:00.070
+So build command is basically what people install
+
+01:53:00.070 --> 01:53:02.430
+requirement or txt, that is going to be the build command.
+
+01:53:02.830 --> 01:53:06.650
+Now you have to even give a start command. So if you
+
+01:53:06.650 --> 01:53:09.890
+remember, we have given a start command for a UV corn,
+
+01:53:10.030 --> 01:53:13.330
+right? What was the start command? So basically, for me, a
+
+01:53:13.330 --> 01:53:16.710
+start command was this one. Right? I'm not going to give a
+
+01:53:16.710 --> 01:53:19.870
+127 by the way over here. So start command was this one you
+
+01:53:19.870 --> 01:53:23.510
+will call main app and then here, so just try to give a
+
+01:53:23.510 --> 01:53:29.210
+global one. So 0.0 dot 0.0, port number 8000, it's
+
+01:53:29.210 --> 01:53:32.690
+completely fine, you can even try to change it. So this is
+
+01:53:32.690 --> 01:53:37.730
+something that you have to give as a start command. Follow
+
+01:53:37.730 --> 01:53:40.190
+along with me guys, you will be able to deploy it in no
+
+01:53:40.190 --> 01:53:43.790
+time. Right? Just follow along with me. So here I have just
+
+01:53:43.790 --> 01:53:46.190
+branched it. i have just selected the root directory why
+
+01:53:46.190 --> 01:53:48.830
+because i just have to deploy my lancer backend i don't have
+
+01:53:48.830 --> 01:53:51.990
+to buy my front end okay and then this is my start command
+
+01:53:51.990 --> 01:53:54.410
+the same start command which i have executed in my local
+
+01:53:54.410 --> 01:53:57.850
+machine same i am trying to give it over here 0.0.0.0 port
+
+01:53:57.850 --> 01:54:01.150
+number this one okay now here so you have to select a free
+
+01:54:01.150 --> 01:54:04.710
+right otherwise you have to go for the payment now here you
+
+01:54:04.710 --> 01:54:08.430
+will have to pass the environment variable as of now i have
+
+01:54:08.430 --> 01:54:11.810
+hardcoded right as of now i have hardcoded it but let's
+
+01:54:11.810 --> 01:54:14.730
+suppose if you are not hard coding it because hard the way i
+
+01:54:14.730 --> 01:54:17.850
+have i'm trying to like a save or i'm trying to keep my apis
+
+01:54:17.850 --> 01:54:21.570
+key is wrong we should not do it right we should keep it
+
+01:54:21.570 --> 01:54:25.110
+inside a dot env file or maybe somewhere secret so that i
+
+01:54:25.110 --> 01:54:28.250
+can pass it as a run time so here whenever you are going to
+
+01:54:28.250 --> 01:54:31.890
+like a you know deploy it you can try to pass it here uri
+
+01:54:31.890 --> 01:54:35.090
+api key and upi values simple and system will be able to
+
+01:54:35.090 --> 01:54:37.810
+call it automatically so how let me let me like do that as
+
+01:54:37.810 --> 01:54:41.610
+well so here i can go to you're on i can go to uri i can go
+
+01:54:41.610 --> 01:54:46.370
+to apis i can go to authenticate and then copy and values
+
+01:54:46.370 --> 01:54:49.890
+right and then advanced options so secret file if you have
+
+01:54:49.890 --> 01:54:52.150
+any kind of a secret file that we try to check or health
+
+01:54:52.150 --> 01:54:55.030
+check or pre-deployment command so before deployment you
+
+01:54:55.030 --> 01:54:58.070
+have to do it auto deployment command or build filter so
+
+01:54:58.070 --> 01:55:01.790
+it's a standard approach that we try to follow and
+
+01:55:01.790 --> 01:55:05.410
+everything is available even inside a render and even inside
+
+01:55:05.410 --> 01:55:07.430
+awc if you're going to deploy all the services are available
+
+01:55:07.430 --> 01:55:10.330
+azure same thing is available going forward i'm going to
+
+01:55:10.330 --> 01:55:13.310
+show you that part as well so here deploy a web service now
+
+01:55:13.310 --> 01:55:17.270
+if everything goes fine right if everything goes fine it
+
+01:55:17.270 --> 01:55:21.110
+will start deploying your services it is going to take some
+
+01:55:21.110 --> 01:55:24.690
+time as you can see it's building right it's building just
+
+01:55:24.690 --> 01:55:27.010
+wait for three to four minute or maybe five minute it will
+
+01:55:27.010 --> 01:55:31.970
+be able to deploy and then what i will do is once it will be
+
+01:55:31.970 --> 01:55:36.770
+able to deploy i will try to take my api key right i'll try
+
+01:55:36.770 --> 01:55:42.550
+to take my api key basically and then i'll try to deploy
+
+01:55:42.550 --> 01:55:47.110
+even a streamlint app both i'll deploy but first i'll try to
+
+01:55:47.110 --> 01:55:50.830
+test my apis and even you guys can test it so here i'm using
+
+01:55:50.830 --> 01:55:52.770
+a localhost i will not be using localhost
+
+01:55:55.210 --> 01:55:55.610
+yeah
+
+01:56:01.600 --> 01:56:04.440
+your key is there inside the code sir exactly my kid is
+
+01:56:04.440 --> 01:56:06.780
+already there this is the reason i told you that it's a
+
+01:56:06.780 --> 01:56:09.280
+wrong approach right we should not keep a key in a hard
+
+01:56:09.280 --> 01:56:12.240
+-coded way we should keep a key in a dot env file i believe
+
+01:56:12.240 --> 01:56:15.180
+in my previous like classes i have already shown you that
+
+01:56:15.180 --> 01:56:17.360
+how to like a create a dot env file you can do that as well
+
+01:56:17.380 --> 01:56:20.640
+and then try to call load underscore environment and then
+
+01:56:20.640 --> 01:56:24.740
+load it so that is the ideal approach by the way i've just
+
+01:56:24.740 --> 01:56:26.840
+shown you the placeholder that there is a placeholder render
+
+01:56:26.840 --> 01:56:29.940
+is giving you where you can try to place your key plus those
+
+01:56:29.940 --> 01:56:32.300
+who are worried about the scalability so like let's suppose
+
+01:56:32.300 --> 01:56:35.980
+uh 10 000 people are calling my uh like this system this api
+
+01:56:35.980 --> 01:56:38.880
+right 10 000 people are going to hit my apis so there is a
+
+01:56:38.880 --> 01:56:41.660
+scaling option which is available there is a disk there is a
+
+01:56:41.660 --> 01:56:43.740
+job option which is available there is a log you will be
+
+01:56:43.740 --> 01:56:47.480
+able to observe there is a matrix you will be able to see
+
+01:56:47.480 --> 01:56:49.280
+that the application is available in a paid version it's not
+
+01:56:49.280 --> 01:56:54.300
+available in a free version by the way so now you can see
+
+01:56:54.300 --> 01:56:57.400
+that whatever i have done in my local system step by step it
+
+01:56:57.400 --> 01:57:02.420
+is doing the exact same thing so basically whatever you do
+
+01:57:02.420 --> 01:57:07.070
+in a local system right this is also a system cloud is what
+
+01:57:07.070 --> 01:57:09.630
+cloud is also a system which you are able to access it from
+
+01:57:09.630 --> 01:57:09.930
+a remote
+
+01:57:18.220 --> 01:57:23.780
+so anyone who have started deploying this application okay
+
+01:57:23.780 --> 01:57:27.080
+so it's showing me build is successful but still it will
+
+01:57:27.080 --> 01:57:29.520
+take some time so it's still building as you can see so it
+
+01:57:29.520 --> 01:57:34.380
+will take some time and remember i have just deployed my
+
+01:57:34.380 --> 01:57:37.220
+back end not my front end i'll deploy a front end as a
+
+01:57:37.220 --> 01:57:40.580
+different app different so this is a midi app right this is
+
+01:57:40.580 --> 01:57:42.360
+for a back end let's suppose right i'll try to create a
+
+01:57:42.360 --> 01:57:44.480
+different app for my front end so both app is going to be
+
+01:57:44.480 --> 01:57:48.080
+different uh build successful and then deploying and this is
+
+01:57:48.080 --> 01:57:50.540
+how even in a real time deployment happens and if you are
+
+01:57:50.540 --> 01:57:54.460
+going to change anything in my git right in this git if you
+
+01:57:54.460 --> 01:57:57.340
+are going to change anything automatically it will start
+
+01:57:57.340 --> 01:58:01.140
+deploying once it you will be able to deploy for once so you
+
+01:58:01.140 --> 01:58:04.720
+can try to it on auto deploy as well auto deployments so by
+
+01:58:04.720 --> 01:58:07.980
+the time it will it will keep on observing your github so by
+
+01:58:07.980 --> 01:58:10.780
+the time you are going to push a new set of the code updated
+
+01:58:10.780 --> 01:58:14.360
+version it will call the deployment simple okay
+
+01:58:17.400 --> 01:58:21.660
+building this this this this and in progress yeah it will
+
+01:58:21.660 --> 01:58:23.680
+take some time especially for this one it will take some
+
+01:58:23.680 --> 01:58:26.320
+time for a ui it is not going to take some time because here
+
+01:58:26.320 --> 01:58:29.240
+installation is heavy right so we are trying to install a
+
+01:58:29.240 --> 01:58:32.700
+lot of things over here lang chain lang serve okay see guys
+
+01:58:32.700 --> 01:58:38.320
+so whatever we were able to see in my local system can i say
+
+01:58:38.320 --> 01:58:43.780
+that exact same thing i am able to see even over here yes
+
+01:58:43.780 --> 01:58:49.160
+everyone yeah this is something that i was able to see it
+
+01:58:49.160 --> 01:58:55.620
+right yes so successfully i am able to deploy just wait for
+
+01:58:55.620 --> 01:58:58.220
+some time it is still in progress i'll tell you how to
+
+01:58:58.220 --> 01:59:03.540
+access it yeah so now see it is giving you this binding port
+
+01:59:03.540 --> 01:59:06.160
+and url just wait for a couple of minutes this url that you
+
+01:59:06.160 --> 01:59:08.180
+are able to see it is going to work and this is a like a
+
+01:59:08.180 --> 01:59:10.920
+public one anyone can access it anyone can hit my system now
+
+01:59:10.920 --> 01:59:16.200
+yeah just just wait for a couple of more seconds so it's
+
+01:59:16.200 --> 01:59:20.900
+still in progress i'm starting the reply i'm waiting for the
+
+01:59:20.900 --> 01:59:23.800
+issues okay and don't worry i don't think that it will give
+
+01:59:23.800 --> 01:59:26.320
+you issue if it does not give you issue in my system then
+
+01:59:26.320 --> 01:59:29.860
+and if it is working fine locally then ideally it will not
+
+01:59:29.860 --> 01:59:34.260
+give yeah your service is live see and now tag has changed
+
+01:59:34.260 --> 01:59:38.120
+live live it is right now i'll try to hit this one uh detail
+
+01:59:38.120 --> 01:59:39.780
+not found now what i've been doing is i'm going to do is
+
+01:59:39.780 --> 01:59:45.500
+i'll try to hit my slash diagnose right see slash diagnose
+
+01:59:45.500 --> 01:59:49.520
+slash playground and we are able to see a playground and
+
+01:59:49.520 --> 01:59:52.720
+this playground is live yes this is not available in my
+
+01:59:52.720 --> 01:59:57.180
+local system this is running globally 200 okay now if i'm
+
+01:59:57.180 --> 02:00:02.660
+going to pass some sort of an input i am not feeling well i
+
+02:00:02.660 --> 02:00:11.560
+am not feeling well so yeah just try to pass something so
+
+02:00:11.560 --> 02:00:17.320
+intermediate step and now it is like running yeah
+
+02:00:19.460 --> 02:00:22.920
+see it is able to do the diagnosis and it is able to give me
+
+02:00:22.920 --> 02:00:26.560
+all the things now this is my api by the way guys this is my
+
+02:00:26.560 --> 02:00:28.980
+api the selected one playground is we know that playground
+
+02:00:28.980 --> 02:00:31.360
+is something that lang serve automatically provides so that
+
+02:00:31.360 --> 02:00:35.300
+you will be able to test it right so this is my api this is
+
+02:00:35.300 --> 02:00:39.200
+my api api without authentication so anyone can use it so
+
+02:00:39.200 --> 02:00:41.980
+the way you are using a yuri api right obviously we have
+
+02:00:41.980 --> 02:00:45.640
+given you what we have given you the url and at that url my
+
+02:00:45.640 --> 02:00:47.980
+yuri is up and running that's the reason so you are able to
+
+02:00:47.980 --> 02:00:51.860
+hit our api similarly we are able to create my api this is
+
+02:00:51.860 --> 02:00:55.660
+my api and again no authentication in yuri we have given the
+
+02:00:55.660 --> 02:00:58.620
+authentication we have attached the authentication so even
+
+02:00:58.620 --> 02:01:01.060
+with this one i can attach the authentication so that you
+
+02:01:01.060 --> 02:01:04.360
+will not be able to access it right even i can change this
+
+02:01:04.360 --> 02:01:07.500
+url in case of yuri so it's basically a your own url that we
+
+02:01:07.500 --> 02:01:11.720
+have given right at a urls but here so as you are using a
+
+02:01:11.720 --> 02:01:14.580
+free service in a paid they will allow you to bind the url
+
+02:01:14.580 --> 02:01:17.400
+so that this url will not be visible so you can try to bind
+
+02:01:17.400 --> 02:01:22.340
+it with your own url so okay i have tested it it's working
+
+02:01:22.340 --> 02:01:26.360
+it's up and running it's fine now i can test it even with my
+
+02:01:26.360 --> 02:01:30.920
+ui so even with my ui so where i was using a local host i
+
+02:01:30.920 --> 02:01:35.840
+can try to use what this one yeah i can try to use this one
+
+02:01:35.840 --> 02:01:41.160
+invoke and then if i am going to execute my streamlint app
+
+02:01:41.600 --> 02:01:45.740
+now i am going to terminate this one and i am going to
+
+02:01:45.740 --> 02:01:54.880
+execute my streamlint app once again now i have fever now
+
+02:01:54.880 --> 02:01:58.000
+obviously it is not going to call my local if you will come
+
+02:01:58.000 --> 02:02:01.840
+and check over here sorry if you will come and check over
+
+02:02:01.840 --> 02:02:06.200
+here so you will be able to find a 200 200 wins so someone
+
+02:02:06.200 --> 02:02:09.940
+is trying to hit my apis and someone is trying to get the
+
+02:02:09.940 --> 02:02:13.840
+result i have a fever and everything is like a and running
+
+02:02:13.840 --> 02:02:18.940
+and if you if you'll go and check see 200 right just not 200
+
+02:02:18.940 --> 02:02:23.060
+200 means it has invoked the diagnosis and 200 okay so now
+
+02:02:23.060 --> 02:02:28.260
+it is trying to hit my global api now it is not hitting my
+
+02:02:28.260 --> 02:02:32.320
+local one is it making sense to all of us guys yes
+
+02:02:35.360 --> 02:02:38.860
+everyone how many of you are able to deploy and test your
+
+02:02:38.860 --> 02:02:41.540
+apis and i believe you all are able to understand that how
+
+02:02:41.540 --> 02:02:48.040
+i'm trying to make my agent and this this ui in my local and
+
+02:02:48.040 --> 02:02:50.740
+i'm doing our api testing which i have already hosted right
+
+02:02:50.740 --> 02:02:58.440
+from my local yes so now my agent is live simple so if i can
+
+02:02:58.440 --> 02:03:01.380
+make one agent live i can make thousands of agent lives and
+
+02:03:01.380 --> 02:03:04.340
+then i can try to do any number of tool calling so my tools
+
+02:03:04.340 --> 02:03:07.280
+are live my agents my graph is live my entire things is live
+
+02:03:07.280 --> 02:03:12.260
+and even now the api which i have painted to you right so
+
+02:03:12.260 --> 02:03:18.300
+this one this one even you can test it all of you can test
+
+02:03:18.300 --> 02:03:24.830
+it yes so just do slash playground try to input your symptom
+
+02:03:24.830 --> 02:03:28.150
+you will be able to test it and i will be able to see a load
+
+02:03:28.150 --> 02:03:31.090
+over here that how many of you are testing it by the way how
+
+02:03:31.090 --> 02:03:35.110
+many of you are hitting it by the way yeah so this backend
+
+02:03:35.110 --> 02:03:40.270
+is live now it's time to make my front end live yeah it's
+
+02:03:40.270 --> 02:03:43.870
+time to make my front end live okay many people are trying
+
+02:03:43.870 --> 02:03:47.690
+to hit now i can see it yes many people are trying to hit it
+
+02:03:47.690 --> 02:03:51.690
+see in a real time i can see it now if i have to bring it on
+
+02:03:51.690 --> 02:03:54.030
+a scale i will be using a scaling feature so that even ten
+
+02:03:54.030 --> 02:03:55.790
+thousand people twenty thousand people will be able to hit
+
+02:03:55.790 --> 02:03:59.630
+it if i have to observe the logs right that someone is
+
+02:03:59.630 --> 02:04:02.370
+facing an issue someone is not facing an issue i can observe
+
+02:04:02.370 --> 02:04:06.170
+all the logs and those things and from where you are hitting
+
+02:04:06.170 --> 02:04:10.030
+it your ip address right your ip address your information i
+
+02:04:10.030 --> 02:04:13.330
+will be able to get it here see so from how many system i'm
+
+02:04:13.330 --> 02:04:15.570
+getting a hit see i'm not hitting it all this hate is coming
+
+02:04:15.570 --> 02:04:18.630
+from your side right my students who have who are live
+
+02:04:18.630 --> 02:04:23.090
+inside a class will be even able to observe the matrixes but
+
+02:04:23.090 --> 02:04:25.370
+this will be available with the paid version they are not
+
+02:04:25.370 --> 02:04:28.530
+making it available for a free so that i can observe my
+
+02:04:28.530 --> 02:04:31.810
+entire network traffic like based on that i can try to
+
+02:04:31.810 --> 02:04:34.930
+configure the scaling i can even try to maybe like trigger
+
+02:04:34.930 --> 02:04:38.310
+it as a jobs so in a particular interval it will keep on
+
+02:04:38.310 --> 02:04:41.070
+like running that job keep on checking something so there is
+
+02:04:41.070 --> 02:04:43.970
+there is lot that i can do right there is a lot of things
+
+02:04:43.970 --> 02:04:48.490
+that i can try to do over here at any point of a time okay
+
+02:04:48.490 --> 02:04:56.150
+so now As my backend is live, and my front end is running on
+
+02:04:56.150 --> 02:04:58.990
+a local host, I will try to do one thing. I'll try to even
+
+02:04:58.990 --> 02:05:02.090
+make my front end live. So that even my front end and back
+
+02:05:02.090 --> 02:05:04.430
+end, and separate obviously, I'm going to create a separate
+
+02:05:04.430 --> 02:05:07.850
+app. So let's go ahead and let's try to do it, where is my
+
+02:05:07.850 --> 02:05:10.930
+render, close this one.
+
+02:05:18.770 --> 02:05:22.450
+So I'm closing this, this is my local host by the way, and
+
+02:05:22.450 --> 02:05:25.050
+yeah, it's been tested on a playground, which is a global
+
+02:05:25.050 --> 02:05:28.710
+one. Now, so I
+
+02:05:30.410 --> 02:05:34.530
+have made a little bit of changes inside my app.py file. So
+
+02:05:34.530 --> 02:05:38.950
+I have to push a fresh app.py file, basically, unless and
+
+02:05:38.950 --> 02:05:41.050
+until I'm not pushing it. So it is not going to basically
+
+02:05:41.050 --> 02:05:44.170
+work. So let's push it then guys.
+
+02:05:47.970 --> 02:05:51.590
+Finally deployment has executed without any issue. Yeah, if
+
+02:05:51.590 --> 02:05:53.670
+there is an issue, we'll try to fix it.
+
+02:06:11.520 --> 02:06:16.780
+So how many of you are able to do it, anyone? They be saying
+
+02:06:16.780 --> 02:06:17.900
+that. He's able to do it.
+
+02:06:25.300 --> 02:06:27.820
+Okay so I'm into a medical diagnostic.
+
+02:06:35.800 --> 02:06:39.500
+Okay I think chat has been ended. Just a minute guys, I'm
+
+02:06:39.500 --> 02:06:43.280
+going to reactivate the chat, I think because of time.
+
+02:06:53.210 --> 02:06:56.490
+Just a minute guys, wait, I think chat has been deactivated,
+
+02:06:56.610 --> 02:07:01.290
+no it was, time was given till 5.30pm.
+
+02:07:07.300 --> 02:07:12.820
+Okay chat is live, I can see it. So now what we have to do
+
+02:07:12.820 --> 02:07:16.040
+is basically we have to push the updated code. Whatever like
+
+02:07:16.040 --> 02:07:18.820
+a updation that we have done and inside the requirement.txt,
+
+02:07:18.960 --> 02:07:24.960
+so I have to keep my streamlint, okay. So let me push this
+
+02:07:27.200 --> 02:07:36.700
+changes, so git add, git add. So okay, okay deployment done,
+
+02:07:36.840 --> 02:07:42.200
+great. So git add and then basically we can try to, we can
+
+02:07:42.200 --> 02:07:44.520
+try to add a specific file if you want, otherwise we can try
+
+02:07:44.520 --> 02:07:48.280
+to like add everything. So git c-o-m-m-i-t after add
+
+02:07:48.280 --> 02:07:55.600
+message. So this is my changes in UI side. Okay fine two
+
+02:07:55.600 --> 02:08:00.340
+file has changed and then we can try to basically push this
+
+02:08:00.340 --> 02:08:02.720
+code in this repository.
+
+02:08:07.720 --> 02:08:11.480
+Copy this one, okay.
+
+02:08:15.920 --> 02:08:23.580
+And then here, so we can try to do git remote add origin,
+
+02:08:26.030 --> 02:08:29.710
+although it's been added, i-g-i-n.
+
+02:08:33.500 --> 02:08:36.200
+Okay, so yeah, like I said, so it's already available, it's
+
+02:08:36.200 --> 02:08:40.000
+already added. Git push, here
+
+02:08:46.240 --> 02:08:52.000
+rejected, okay, maybe it has been rejected because of, ah,
+
+02:08:58.030 --> 02:09:01.170
+okay. So basically I haven't merged and because without
+
+02:09:01.170 --> 02:09:05.050
+merging, so I'm doing it and I have done some sort of a
+
+02:09:05.050 --> 02:09:06.590
+manual changes, that's the reason.
+
+02:09:09.690 --> 02:09:17.090
+So here what I can write. So git pull origin main and then
+
+02:09:17.090 --> 02:09:23.830
+rebase. Okay. So that, ah, everything will be r-e-b-a-s-c,
+
+02:09:23.970 --> 02:09:31.850
+git pull origin main hyphen hyphen rebase. Yeah. So we are
+
+02:09:31.850 --> 02:09:36.130
+rebasing it and then resolve in a merge edit, fine, complete
+
+02:09:36.130 --> 02:09:38.410
+merger, complete with conflict, complete with conflict,
+
+02:09:38.630 --> 02:09:49.530
+fine, continue, sync changes, okay. So if you remember guys,
+
+02:09:49.590 --> 02:09:52.290
+I have done one of the changes. Ah. So, ah, basically in a
+
+02:09:52.290 --> 02:09:55.730
+git directly, which was a requirement dot txt file and
+
+02:09:55.730 --> 02:09:58.650
+because of that it is giving me this issue, nothing else. So
+
+02:09:58.650 --> 02:10:03.670
+now it's a requirement dot txt, so it seems again blank.
+
+02:10:18.660 --> 02:10:27.820
+Streamlit, control s, git add, git commit, commit with a
+
+02:10:27.820 --> 02:10:34.080
+message, so changed requirement, okay. So one insertion, one
+
+02:10:34.080 --> 02:10:38.440
+file have changed. Okay. And then I can try to do
+
+02:10:40.970 --> 02:10:47.810
+git push origin main. So after rebasing it, origin main.
+
+02:10:49.630 --> 02:10:54.790
+Okay. It's done. So now if I'll go and check my git, so it
+
+02:10:54.790 --> 02:11:00.150
+should be up to date. Streamlit UI, requirement dot txt,
+
+02:11:00.210 --> 02:11:03.910
+there is a streamlit, which is available and then app dot py
+
+02:11:03.910 --> 02:11:08.210
+file. So there is a, my API available, right? My online API,
+
+02:11:08.250 --> 02:11:11.230
+which is available. Okay. Now I'll start deploying it guys.
+
+02:11:11.410 --> 02:11:15.250
+I'll just try to like a deploy this entire app. So just push
+
+02:11:15.250 --> 02:11:18.450
+it inside your GitHub once again, and then start deploying.
+
+02:11:18.730 --> 02:11:22.190
+So to deploy it, ah, you can go to a main dashboard. You can
+
+02:11:22.190 --> 02:11:25.850
+click on new again, web service, right? Ah, you have already
+
+02:11:25.850 --> 02:11:30.550
+attached your, like, ah, this one, GitHub. So select that
+
+02:11:30.550 --> 02:11:37.630
+one. And then name is medi dia, underscore UI. Okay. Under
+
+02:11:37.630 --> 02:11:40.790
+school. If his interface, this is the new name, which I have
+
+02:11:40.790 --> 02:11:43.290
+given, this is the new app, which I'm trying to create. And
+
+02:11:43.290 --> 02:11:46.490
+then now for this one, what is the root directory? So my
+
+02:11:46.490 --> 02:11:48.770
+root directory is going to be this one is streaming to UI.
+
+02:11:48.910 --> 02:11:51.330
+This is going to my router. So I'm saying that just look
+
+02:11:51.330 --> 02:11:55.290
+into this one. This is for my UI. So whatever changes I'm
+
+02:11:55.290 --> 02:11:58.070
+going to do it with respect to UI, I'll be keeping it. Yeah.
+
+02:11:58.470 --> 02:12:02.870
+Okay. So people saw requirement or txt, it is going to do.
+
+02:12:03.730 --> 02:12:09.570
+And then it is going to basically. Ah, run the streamlint
+
+02:12:09.570 --> 02:12:17.210
+app basically. So here is streamlit run app.py. And I can
+
+02:12:17.210 --> 02:12:20.430
+try to give basically a server port number, something like
+
+02:12:20.430 --> 02:12:25.330
+this so that it will be able to run the streamlint app. So
+
+02:12:25.330 --> 02:12:27.810
+this is the command guys. This is a start command. So
+
+02:12:27.810 --> 02:12:30.530
+generally in a local, we try to give this one here. I'm
+
+02:12:30.530 --> 02:12:32.610
+trying to give you in a server port, and then I'm trying to
+
+02:12:32.610 --> 02:12:38.910
+enable cross is equal to false. Now free environment, no
+
+02:12:38.910 --> 02:12:44.880
+environment is required, deploy. What happened? Yeah. This
+
+02:12:44.880 --> 02:12:50.180
+looks fine. pip install hyphen r requirement or txt. Let me
+
+02:12:50.180 --> 02:12:51.920
+re-execute media
+
+02:12:56.300 --> 02:13:01.400
+underscore UI, then main, then root directory, streamlit UI,
+
+02:13:01.620 --> 02:13:05.220
+fine. Streamlit app, this, this, this, this, this, this,
+
+02:13:05.220 --> 02:13:10.600
+okay, free deploy. There was no issue. So sometime what
+
+02:13:10.600 --> 02:13:15.800
+happens is it gives you like a field error. So just deploy
+
+02:13:15.800 --> 02:13:17.920
+your front end as well guys, but yeah, in a front end, so
+
+02:13:17.920 --> 02:13:22.440
+you should call your backend by the way, means you should
+
+02:13:22.440 --> 02:13:25.720
+call, you should change the API and this will be done in no
+
+02:13:25.720 --> 02:13:30.560
+time because it's a very light-witted application, right? A
+
+02:13:30.560 --> 02:13:35.100
+simple file, which is calling the API. So this is how guys
+
+02:13:35.100 --> 02:13:38.000
+I'm deploying my front end. And now you can go ahead, you
+
+02:13:38.000 --> 02:13:40.920
+can create a front end in any of the language or technology
+
+02:13:40.920 --> 02:13:41.880
+or framework that you know.
+
+02:13:48.340 --> 02:13:53.340
+So two separate app. I'm able to maintain with respect to
+
+02:13:53.340 --> 02:13:55.260
+the front end and with respect to the backend
+
+02:13:58.390 --> 02:14:01.030
+and those things. No, why? No. What happened?
+
+02:14:14.460 --> 02:14:17.340
+Okay. So build a successful, like I said, so it will be
+
+02:14:17.340 --> 02:14:19.920
+quick because there is nothing much to install and set up,
+
+02:14:19.960 --> 02:14:23.620
+uh, just a streamlit, uh, package, which it is going to
+
+02:14:23.620 --> 02:14:26.700
+install. So it will not take much time and
+
+02:14:30.380 --> 02:14:35.320
+successfully two separate application, the way we used to
+
+02:14:35.320 --> 02:14:37.980
+deploy it in real time. We are able to do it. And then now.
+
+02:14:38.740 --> 02:14:40.920
+Pay and scale it, scale it for any number of users that you
+
+02:14:40.920 --> 02:14:45.680
+want. Yeah. So now this is live. I can click it over here
+
+02:14:45.680 --> 02:14:50.780
+and even you guys can use it, right? Every one of us can use
+
+02:14:50.780 --> 02:14:57.620
+this one by the way. So I am not, or I have fewer, anything
+
+02:14:57.620 --> 02:15:01.380
+I can write good diagnosis and the way it was running in my
+
+02:15:01.380 --> 02:15:05.360
+local, in the similar manner, it is going to call my API,
+
+02:15:05.700 --> 02:15:09.520
+which is again hosting on a global server. And it is going
+
+02:15:09.520 --> 02:15:10.260
+to give me the response.
+
+02:15:19.760 --> 02:15:23.420
+Hmm. I'm able to get the response guys. Yeah. I'm able to
+
+02:15:23.420 --> 02:15:27.320
+get the response. So yes, I'm able to get the response. Even
+
+02:15:27.320 --> 02:15:29.740
+you guys can hit it and then you will be able to get the
+
+02:15:29.740 --> 02:15:32.640
+response. Now, if I'll go into my dashboard, I will be able
+
+02:15:32.640 --> 02:15:36.500
+to see that this immediate DAG. So, which is like, uh, my,
+
+02:15:36.660 --> 02:15:39.220
+uh, backend service, this is up and running and then media
+
+02:15:39.220 --> 02:15:41.220
+UI. So these are the two different, different services, two
+
+02:15:41.220 --> 02:15:43.980
+different, different app. Basically I'm running the way we
+
+02:15:43.980 --> 02:15:47.400
+try to run it in a global, uh, server, or maybe for any kind
+
+02:15:47.400 --> 02:15:49.760
+of application. Even you're on kind of application that we
+
+02:15:49.760 --> 02:15:53.300
+are running and, uh, yeah, so you can go and you can try to
+
+02:15:53.300 --> 02:15:55.560
+check the logs. You can try to check the metrics as who is
+
+02:15:55.560 --> 02:15:58.820
+hitting, when it is hitting. So just now someone has hit,
+
+02:15:58.940 --> 02:16:03.300
+right. So one has a hit on my like, uh, APIs and just now
+
+02:16:03.300 --> 02:16:05.860
+someone is trying to like, uh, you know, uh, hit my UI. So
+
+02:16:05.860 --> 02:16:09.360
+everything I will be able to maintain monitor separately and
+
+02:16:09.360 --> 02:16:11.720
+both the applications are completely separate. So I can try
+
+02:16:11.720 --> 02:16:14.440
+to develop both application in a separate, separate,
+
+02:16:14.560 --> 02:16:17.380
+separate, separate manner. If I have to bring it on a scale.
+
+02:16:17.880 --> 02:16:21.640
+Not an issue at all. So here is option scale option, which
+
+02:16:21.640 --> 02:16:24.100
+is available to me. And there are other configuration as
+
+02:16:24.100 --> 02:16:26.620
+well, which is available. So which will, uh, with the help
+
+02:16:26.620 --> 02:16:29.720
+of that, I will be able to like, you know, uh, make it
+
+02:16:29.720 --> 02:16:33.240
+available to millions of people, by the way, there are so
+
+02:16:33.240 --> 02:16:35.280
+many things which comes in between, but yeah, for now I
+
+02:16:35.280 --> 02:16:39.900
+think this is more than enough. So finally guys, we are able
+
+02:16:39.900 --> 02:16:45.400
+to do it and hope all of you are able to do it together. Now
+
+02:16:45.400 --> 02:16:54.130
+so here. Come to your own once again and, uh, generative AI
+
+02:16:54.130 --> 02:16:59.290
+with NLP and agentic AI, try to come here. Now similar kind
+
+02:16:59.290 --> 02:17:02.190
+of a project I have given you similar exact similar kind of
+
+02:17:02.190 --> 02:17:06.030
+a project I have given you in level three, level three. So
+
+02:17:06.030 --> 02:17:09.330
+one I have done right. And many other project agent creation
+
+02:17:09.330 --> 02:17:12.450
+and everything I have done. Now what I want you to do is
+
+02:17:12.450 --> 02:17:17.030
+before tomorrow's class, right before tomorrow's class, I
+
+02:17:17.030 --> 02:17:22.530
+want you to build this, this, this, and this all four
+
+02:17:22.530 --> 02:17:26.750
+project. You have to build it. I'm going to give you a demo
+
+02:17:26.750 --> 02:17:29.510
+of all of this for four project work because for me building
+
+02:17:29.510 --> 02:17:33.110
+these things are not at all a big deal. It's again, not to
+
+02:17:33.110 --> 02:17:37.250
+just for me, for any one of us now, now, so just try to
+
+02:17:37.250 --> 02:17:40.590
+complete this four project tomorrow. I'm going to give a
+
+02:17:40.590 --> 02:17:44.890
+demo with my code base, but whenever you are trying to build
+
+02:17:44.890 --> 02:17:47.890
+a project, make sure that you are following. The exact same
+
+02:17:47.890 --> 02:17:50.350
+thing, front end separate back end separate. You have to
+
+02:17:50.350 --> 02:17:53.350
+create the agent. You have to host the agent. You can try to
+
+02:17:53.350 --> 02:17:55.090
+use maybe something different. I don't have any kind of
+
+02:17:55.090 --> 02:17:57.530
+issue, right? Maybe you can use a Lama index. Maybe you can
+
+02:17:57.530 --> 02:18:00.750
+use a crew AI. I'm completely okay with it because we all
+
+02:18:00.750 --> 02:18:04.550
+know that now we can use it right at the end of the day. I
+
+02:18:04.550 --> 02:18:07.530
+want an application as simple as that.
+
+02:18:11.850 --> 02:18:12.250
+Yes.
+
+02:18:16.680 --> 02:18:17.900
+Fine guys making sense.
+
+02:18:48.520 --> 02:18:50.720
+So Ranjit is asking, do you have example of adding
+
+02:18:50.720 --> 02:18:54.500
+authentication used to this one? I can add authentication. I
+
+02:18:54.500 --> 02:18:55.440
+can add authentication. I can add authentication in no time
+
+02:18:55.440 --> 02:18:59.080
+by the way. So authentication is not at all a big deal. So
+
+02:18:59.080 --> 02:19:02.920
+we had a main.py right where we are exposing like a each,
+
+02:19:03.000 --> 02:19:06.440
+each and everything. Yeah. So what we can do is so we can
+
+02:19:06.440 --> 02:19:12.480
+try to, you know, create one simple file or simple like a,
+
+02:19:12.580 --> 02:19:15.400
+you know, a function over here and we can try to attach it.
+
+02:19:15.460 --> 02:19:18.720
+So the roles and responsibility of that function will be to
+
+02:19:18.720 --> 02:19:22.820
+first check the authentication. So here there is something
+
+02:19:22.820 --> 02:19:25.420
+called as whenever. We are trying to like make it public.
+
+02:19:25.640 --> 02:19:30.040
+There is something called as dependencies, D E P N D N C I E
+
+02:19:30.040 --> 02:19:34.040
+S dependencies. And here dependencies wise, we can try to
+
+02:19:34.040 --> 02:19:38.740
+call a function. For example, as you have asked, depends on
+
+02:19:38.740 --> 02:19:44.760
+depends upon what? So depends upon a API, API underscore
+
+02:19:44.760 --> 02:19:48.220
+key, the way you are dependent upon the URI API key, right?
+
+02:19:48.280 --> 02:19:52.260
+So dependencies. Now this API key is nothing but a function,
+
+02:19:52.380 --> 02:19:55.280
+which I can write. Okay. Basically API key is basically a
+
+02:19:55.280 --> 02:19:59.940
+function that I can write. So which is going to take the API
+
+02:19:59.940 --> 02:20:02.620
+key and then eventually it is going to give you the final
+
+02:20:02.620 --> 02:20:07.140
+authentication. So let me do it, do that as well. So here
+
+02:20:07.140 --> 02:20:11.720
+you have to write only this much of the code. See what I'm
+
+02:20:11.720 --> 02:20:16.520
+doing, just a fast API, HTTPS security. So security is a
+
+02:20:16.520 --> 02:20:19.600
+model which I'm trying to import and fast API security, API
+
+02:20:19.600 --> 02:20:23.260
+key auth header. Let me change this name. So verify API key
+
+02:20:23.260 --> 02:20:27.220
+should be the name. So in a easiest possible way, guys, you
+
+02:20:27.220 --> 02:20:31.060
+will be able to attach the authentication. So how? Create
+
+02:20:31.060 --> 02:20:33.440
+one simple function. Now this simple function is trying to
+
+02:20:33.440 --> 02:20:35.720
+use what? This simple function is trying to use the
+
+02:20:35.720 --> 02:20:38.820
+security. Security is a feature inside the fast API. We are
+
+02:20:38.820 --> 02:20:42.160
+already using fast API app over here, right? So which is
+
+02:20:42.160 --> 02:20:45.560
+going to ask for the key name and the authentication, and
+
+02:20:45.560 --> 02:20:48.100
+then you are going to provide the API key. The way you are
+
+02:20:48.100 --> 02:20:53.160
+providing it for the, like a URI, by the way. Right? So this
+
+02:20:53.160 --> 02:20:57.720
+is how easy it is. So unless you don't have this key, I
+
+02:20:57.720 --> 02:21:01.620
+don't have this key, you will not be able to use it. Yeah, I
+
+02:21:01.620 --> 02:21:04.580
+can even try to make this key dynamic the way we have made a
+
+02:21:04.580 --> 02:21:07.100
+key dynamic for a URI because URI key is different for
+
+02:21:07.100 --> 02:21:10.360
+everyone, right? So on. So this is the key, right? This is
+
+02:21:10.360 --> 02:21:12.760
+the key. So this key is going to be different for everyone
+
+02:21:12.760 --> 02:21:15.840
+till this bearer. Everything is same. Just like a URI. Now I
+
+02:21:15.840 --> 02:21:17.920
+have to make it dynamic. So what I can do is I can write
+
+02:21:17.920 --> 02:21:22.160
+another function. So which will try to generate a key. Okay.
+
+02:21:22.180 --> 02:21:26.720
+Basically the way I want, then problem will be solved. So
+
+02:21:26.720 --> 02:21:30.140
+for one user that there is a, like a key for other user,
+
+02:21:30.260 --> 02:21:32.700
+there will be a different key. So this is how even we are
+
+02:21:32.700 --> 02:21:34.140
+maintaining the entire authorization.
+
+02:21:46.640 --> 02:21:50.000
+Yeah. So know about child window clue is a very good with
+
+02:21:50.000 --> 02:21:52.060
+URI. It's a very good with code.
+
+02:21:55.950 --> 02:21:58.810
+Okay. So those who have asked me, I think Ranjit has asked
+
+02:21:58.810 --> 02:22:00.950
+me this question, right? So Ranjit, if you would like to
+
+02:22:00.950 --> 02:22:04.750
+like apply the authentication in no time, you can apply the
+
+02:22:04.750 --> 02:22:07.750
+authentication. As of now, this is your key, whoever is
+
+02:22:07.750 --> 02:22:10.630
+calling the URL. Yeah. This is the key. Whoever is calling
+
+02:22:10.630 --> 02:22:16.030
+the URL. You can try to even make it dynamic if you want. So
+
+02:22:16.030 --> 02:22:18.910
+this is all about today's class guys. So how many of you are
+
+02:22:18.910 --> 02:22:21.530
+going to give me a project, this four project before
+
+02:22:21.530 --> 02:22:24.990
+tomorrow or even today itself in next, like a five hour, max
+
+02:22:24.990 --> 02:22:29.550
+to max hub from how many of you I can expect the project
+
+02:22:29.550 --> 02:22:34.520
+guys up and running and deployed with the URL and the code,
+
+02:22:34.680 --> 02:22:37.920
+all four projects. So how many of you are going to do that?
+
+02:22:37.920 --> 02:22:38.460
+How many of you are going to give it to me?
+
+02:22:44.560 --> 02:22:45.460
+Yes. Everyone.
+
+02:23:01.570 --> 02:23:03.690
+I'm going to be asking question that how's the answer. Are
+
+02:23:03.690 --> 02:23:06.010
+there any metrics or evaluation method for an agent of this
+
+02:23:06.010 --> 02:23:08.630
+kind of interview question I have faced two days back,
+
+02:23:08.730 --> 02:23:12.050
+please give me your suggestion. Yeah. So there is something
+
+02:23:12.050 --> 02:23:15.490
+that we try to observe obviously, and that too, like a
+
+02:23:15.490 --> 02:23:18.810
+depends upon the task. So if you will ask me like about the,
+
+02:23:18.850 --> 02:23:23.810
+like agents, right? So basically, uh, we generally try to
+
+02:23:23.810 --> 02:23:27.790
+evaluate our agents in a way that how many number of steps?
+
+02:23:27.790 --> 02:23:30.150
+How many steps my agent is trying to take to complete a
+
+02:23:30.150 --> 02:23:34.090
+particular task, unless it will be better. And the second
+
+02:23:34.090 --> 02:23:36.990
+one is we are going to evaluate the agent based on its
+
+02:23:36.990 --> 02:23:39.250
+decision-making capability, because we all know that that
+
+02:23:39.250 --> 02:23:42.670
+agent is an entity, uh, which can try to call, right? So
+
+02:23:42.670 --> 02:23:47.270
+which can try to technically call, uh, I would say like a
+
+02:23:47.270 --> 02:23:50.490
+tools automatically, uh, with its own consent, right?
+
+02:23:50.590 --> 02:23:53.910
+Automatically it will be able to call it. So how good my
+
+02:23:53.910 --> 02:23:57.870
+agent is in terms of making that decision. Okay. What
+
+02:23:57.870 --> 02:24:01.190
+particular tool? And based on that, we can try to like, uh,
+
+02:24:01.350 --> 02:24:03.410
+observe the agent. So there is something called as agent
+
+02:24:03.410 --> 02:24:06.890
+workflow matrixes. We try to create basically, right. Uh,
+
+02:24:07.010 --> 02:24:10.750
+which we try to evaluate the number of steps. We start to
+
+02:24:10.750 --> 02:24:13.730
+evaluate a loop detection, basically, which try to even
+
+02:24:13.730 --> 02:24:17.610
+detect that tool uses that how, how good it is in terms of
+
+02:24:17.610 --> 02:24:21.510
+like, uh, using our tools. Uh, so this is, this is something
+
+02:24:21.510 --> 02:24:24.330
+which happens with respect to the agent. Now, uh, there is
+
+02:24:24.330 --> 02:24:26.570
+another, uh, like a matrixes, which we try to evaluate
+
+02:24:26.570 --> 02:24:29.470
+callers. Error and failure metrics. So how many times my
+
+02:24:29.470 --> 02:24:32.150
+agent is going to fail, fail to load the tools, fail to
+
+02:24:32.150 --> 02:24:36.870
+utilize a proper tool or miss using our tools. So these are
+
+02:24:36.870 --> 02:24:39.010
+the metrics that you should like, uh, observe and then
+
+02:24:39.010 --> 02:24:42.850
+output quality, obviously, right. That how, uh, like a less
+
+02:24:42.850 --> 02:24:46.690
+hallucinated your output is how faithful your output is. So
+
+02:24:46.690 --> 02:24:49.450
+we try to generate a faithful accuracy. And based on that,
+
+02:24:49.470 --> 02:24:51.510
+we try to evaluate it. So the other parameter, you can use
+
+02:24:51.510 --> 02:24:54.650
+it or not. And that should be your answer for
+
+02:24:57.470 --> 02:25:00.090
+maybe two, three. Yeah. Just let's, let's see how many of
+
+02:25:00.090 --> 02:25:04.750
+you are able to do it by the way. And uh, let me share this
+
+02:25:04.750 --> 02:25:14.340
+entire code inside your directories. So much of code by the
+
+02:25:14.340 --> 02:25:15.320
+way, what
+
+02:25:19.640 --> 02:25:22.400
+is my folder name for today? Medical project.
+
+02:25:42.580 --> 02:25:46.760
+Fine guys, I'm sharing my code, a full code with all of you,
+
+02:25:46.820 --> 02:25:47.640
+but
+
+02:26:02.270 --> 02:26:04.530
+yeah, let's see how many of you will be able to complete the
+
+02:26:04.530 --> 02:26:07.370
+task. So tomorrow, most probably what I'm going to do is.
+
+02:26:07.410 --> 02:26:10.650
+So. Uh, I'll give you a quick run of all the project because
+
+02:26:10.650 --> 02:26:12.910
+all the project will be almost similar if you will go and
+
+02:26:12.910 --> 02:26:16.230
+read out, right. And then I believe we all know how to
+
+02:26:16.230 --> 02:26:18.590
+deploy it. So no need to repeat the same process again and
+
+02:26:18.590 --> 02:26:21.470
+again, uh, we just wanted to see that how many different,
+
+02:26:21.530 --> 02:26:23.750
+different kinds of application as per the syllabus we can
+
+02:26:23.750 --> 02:26:26.170
+try to create, right? So starting from here, so tech
+
+02:26:26.170 --> 02:26:29.070
+summarization or opinion mining, personalized AI interview
+
+02:26:29.070 --> 02:26:31.910
+question generator, medical AI chat bot, symptom checkers,
+
+02:26:31.930 --> 02:26:35.250
+all, all these things we can do it. Then tomorrow I will try
+
+02:26:35.250 --> 02:26:37.910
+to give you, this is also a small application. So here I
+
+02:26:37.910 --> 02:26:40.430
+will be using a Gemini API. And then with the help of that,
+
+02:26:40.510 --> 02:26:44.690
+I'm going to pass a image and a plus I will be using a Lang
+
+02:26:44.690 --> 02:26:47.630
+chain. So here I will be using an agent plus our vision
+
+02:26:47.630 --> 02:26:51.630
+model so that it will be able to even understand what is
+
+02:26:51.630 --> 02:26:54.090
+like inside the image. And then it will be able to give you
+
+02:26:54.090 --> 02:26:57.050
+the full description. So this is again, one of the small
+
+02:26:57.050 --> 02:27:00.590
+project, it's a very, very small body that we have. And then
+
+02:27:00.590 --> 02:27:03.710
+we will move ahead. Almost this one we have completed.
+
+02:27:03.890 --> 02:27:08.090
+Right. Then we will move ahead with the fine tuning. So most
+
+02:27:08.090 --> 02:27:11.450
+probably tomorrow, we will try to complete most of the
+
+02:27:11.450 --> 02:27:16.350
+things and then whatever will be left, we'll try to complete
+
+02:27:16.350 --> 02:27:21.690
+it next weekend on Saturday itself, right? So I think by
+
+02:27:21.690 --> 02:27:24.630
+Saturday, we will close, we'll close the class, we'll close
+
+02:27:24.630 --> 02:27:28.450
+the lecture. So tomorrow, I believe I have already told you
+
+02:27:28.450 --> 02:27:30.810
+what we are going to do, but yeah, there is a task for you.
+
+02:27:30.870 --> 02:27:34.070
+So if you are serious enough, please do the task. And we
+
+02:27:34.070 --> 02:27:36.190
+will close the class. Ping me in a group whenever you are
+
+02:27:36.190 --> 02:27:39.070
+able to complete the task so that all of us can see it and
+
+02:27:39.070 --> 02:27:42.210
+hope all of you are able to enjoy and all of you are able to
+
+02:27:42.210 --> 02:27:44.250
+learn a lot with that. Thank you so much, everyone. Take
+
+02:27:44.250 --> 02:27:47.070
+care. And we are already available in a group so we can
+
+02:27:47.070 --> 02:27:47.910
+initiate a chat over there.
+

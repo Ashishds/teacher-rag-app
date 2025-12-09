@@ -1,0 +1,3989 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.420
+So in my last class, basically we were able to convert each
+
+00:00:05.420 --> 00:00:08.440
+and everything into embeddings. And then after converting
+
+00:00:08.440 --> 00:00:11.480
+things into embeddings, we were able to store it into a
+
+00:00:11.480 --> 00:00:15.580
+chroma db. And then we were able to even perform a search
+
+00:00:15.580 --> 00:00:19.040
+operation, right? So we have seen that, that whatever search
+
+00:00:19.040 --> 00:00:22.300
+that we are trying to do, so it will always try to bring a
+
+00:00:22.300 --> 00:00:25.480
+data based on the similarity, right? Based on the
+
+00:00:25.480 --> 00:00:28.860
+similarity, based on the cosine similarity or any other
+
+00:00:28.860 --> 00:00:32.560
+similarity, it will be able to basically like bring the
+
+00:00:32.560 --> 00:00:36.380
+data. Now in my today's class, I will be talking about a
+
+00:00:36.380 --> 00:00:39.720
+pinecone, baviot and fascia again. So all of these three
+
+00:00:39.720 --> 00:00:42.540
+databases are going to do the exact same thing. Nothing much
+
+00:00:42.540 --> 00:00:46.040
+difference, but yeah. So in, in terms of their architecture,
+
+00:00:46.180 --> 00:00:48.900
+in terms of the way they try to store the data. So there is
+
+00:00:48.900 --> 00:00:51.540
+some differences you will be able to find out, let me switch
+
+00:00:51.540 --> 00:00:52.260
+on my other light.
+
+00:01:00.260 --> 00:01:06.260
+Okay. So in terms of like the way this database stores our
+
+00:01:06.260 --> 00:01:08.660
+data, you will be able to find out a certain like a
+
+00:01:08.660 --> 00:01:11.320
+differences. But at the end of the day, all of these
+
+00:01:11.320 --> 00:01:14.840
+databases are basically embedding databases. So where you
+
+00:01:14.840 --> 00:01:17.420
+try to store our data in a vector format and then as and
+
+00:01:17.420 --> 00:01:19.580
+when it is required, so you will be able to pull the data.
+
+00:01:19.700 --> 00:01:23.360
+You will be able to search the data. Now why we are talking
+
+00:01:23.360 --> 00:01:26.480
+about these four databases. The reason is that, that going
+
+00:01:26.480 --> 00:01:29.980
+forward, right? Most probably from our next class onward
+
+00:01:29.980 --> 00:01:33.640
+itself. Right? We are going to discuss a land chain. We are
+
+00:01:33.640 --> 00:01:36.200
+going to discuss land graph. We are going to build a RIG
+
+00:01:36.200 --> 00:01:39.300
+based application, a retrieval, augmented generated based
+
+00:01:39.300 --> 00:01:42.480
+application as per your syllabus, right? Now everywhere,
+
+00:01:42.660 --> 00:01:45.500
+these kinds of our database is required. So I'm not just
+
+00:01:45.500 --> 00:01:48.080
+going to like give you the introduction, but you will be
+
+00:01:48.080 --> 00:01:52.020
+able to see going forward that we are heavily using all of
+
+00:01:52.020 --> 00:01:55.180
+these databases, right? And again, so whatever we are going
+
+00:01:55.180 --> 00:01:58.260
+to learn in this databases, obviously we have seen it's very
+
+00:01:58.260 --> 00:02:00.320
+much related to the things that we have already discussed.
+
+00:02:00.660 --> 00:02:03.380
+In my previous class. So let's try to understand the first
+
+00:02:03.380 --> 00:02:06.180
+of all pine cone, then move to a biviate and then move to a,
+
+00:02:06.260 --> 00:02:09.680
+again, we have to change this name. So it's basically
+
+00:02:09.680 --> 00:02:13.160
+Facebook AI SS. It's not IS. So it's a semantic search
+
+00:02:13.160 --> 00:02:16.440
+basically. So these are the three databases that we are
+
+00:02:16.440 --> 00:02:18.820
+going to discuss and it's a very simple, believe me, it's,
+
+00:02:18.880 --> 00:02:22.540
+it's very simple. So convert things into a, like a convert
+
+00:02:22.540 --> 00:02:25.680
+any database, any entry into the embeddings, store it,
+
+00:02:25.780 --> 00:02:29.140
+search it, delete it. So insert, update, delete, search all
+
+00:02:29.140 --> 00:02:30.800
+of these operations. That is very, very useful. Very common
+
+00:02:30.800 --> 00:02:33.680
+in any other databases. So we are going to perform the exact
+
+00:02:33.680 --> 00:02:37.420
+same thing, even with respect to these two, three databases.
+
+00:02:37.800 --> 00:02:40.740
+So for pine cone, there is a managed service, which is
+
+00:02:40.740 --> 00:02:43.520
+already available for biviate. There is again a managed
+
+00:02:43.520 --> 00:02:47.800
+service provider, which is already available for FAI SS. So
+
+00:02:47.800 --> 00:02:50.300
+basically you have to do a local installation. Maybe you can
+
+00:02:50.300 --> 00:02:52.860
+dockerize it and then you can put it on a cloud that is
+
+00:02:52.860 --> 00:02:55.800
+possible. And same, you can go with the chroma DV. So chroma
+
+00:02:55.800 --> 00:02:58.160
+DV. So they have listed the pricing and everything, but
+
+00:02:58.160 --> 00:03:01.220
+there is a waiting list. So we can't, we can't. Like we can
+
+00:03:01.220 --> 00:03:03.660
+log in, we can apply, but yeah, you will be in a waiting
+
+00:03:03.660 --> 00:03:06.420
+list. They're not going to give you a free access. So here,
+
+00:03:06.520 --> 00:03:10.520
+let's talk about a pine cone first of all. So what I can do
+
+00:03:10.520 --> 00:03:16.220
+is I can try to open up maybe a fresh new ID,
+
+00:03:25.620 --> 00:03:32.080
+pine cone. Now here, so pine cone, the vector database to
+
+00:03:32.080 --> 00:03:36.700
+build the knowledge graph. Now here, just try to copy, I'm
+
+00:03:36.700 --> 00:03:39.620
+going to copy ping this particular link. So this is the link
+
+00:03:39.620 --> 00:03:42.580
+for the pine cone, basically the vector database for a scale
+
+00:03:42.580 --> 00:03:46.040
+in production. And yeah, so you will be able to do the
+
+00:03:46.040 --> 00:03:48.320
+storing. You will be able to do a searching. You will be
+
+00:03:48.320 --> 00:03:51.320
+able to do all the other operations, which in general you
+
+00:03:51.320 --> 00:03:53.880
+are going to do with any other databases. So what we are
+
+00:03:53.880 --> 00:03:57.380
+going to do is, so we are going to connect with a pine cone,
+
+00:03:57.480 --> 00:04:00.520
+which is available over a cloud platform from our local
+
+00:04:00.520 --> 00:04:03.820
+system. So basically from our VS code, so we are going to
+
+00:04:03.820 --> 00:04:08.180
+connect with this one and then we will try to convert our
+
+00:04:08.180 --> 00:04:12.860
+data. Okay. By using a URI API, because at the end of the
+
+00:04:12.860 --> 00:04:15.100
+day, this is just a database, right? This is just a
+
+00:04:15.100 --> 00:04:19.120
+database. So we will try to use a URI API so that I will be
+
+00:04:19.120 --> 00:04:22.680
+able to convert it into a embedding. So I believe we all
+
+00:04:22.680 --> 00:04:27.300
+remember that how we can use a URI API, right? For embedding
+
+00:04:27.300 --> 00:04:30.900
+purposes. So if I'll talk about URI and then API and then
+
+00:04:30.900 --> 00:04:34.240
+code example. So I think we have already executed this code.
+
+00:04:34.380 --> 00:04:37.680
+This is going to give me basically embeddings. We have a
+
+00:04:37.680 --> 00:04:41.280
+model called. Text embedding three small from OpenAI itself
+
+00:04:41.280 --> 00:04:44.240
+that is already available on our Euron ecosystem, this
+
+00:04:44.240 --> 00:04:47.300
+model, right? So which is going to give you five, one, five,
+
+00:04:47.340 --> 00:04:50.340
+three, six dimension of the vector for every entry, whatever
+
+00:04:50.340 --> 00:04:53.260
+entry that you are going to give it into this one. And we
+
+00:04:53.260 --> 00:04:58.110
+have already used it last time, right guys, everyone. Any
+
+00:04:58.110 --> 00:05:01.530
+plan for LLM ops? I think we have like a recently published
+
+00:05:01.530 --> 00:05:04.510
+LLM ops on a YouTube, which is like a publicly available
+
+00:05:04.510 --> 00:05:07.970
+just for free, even with the material. So maybe Mr. Tunja
+
+00:05:07.970 --> 00:05:08.810
+can go ahead with that.
+
+00:05:13.550 --> 00:05:18.150
+Yeah. So LLM ops is already like available. So yeah, I
+
+00:05:18.150 --> 00:05:21.410
+believe we all remember that how to use this text embedding,
+
+00:05:21.430 --> 00:05:24.490
+how we can try to give an input as a text, and then we will
+
+00:05:24.490 --> 00:05:28.090
+be able to get a output as an embedding. So we are just
+
+00:05:28.090 --> 00:05:31.030
+going to like take one more step over here. We are going to
+
+00:05:31.030 --> 00:05:34.250
+connect with the databases last time. So we have taken a
+
+00:05:34.250 --> 00:05:36.570
+step. So we were able to run with the databases, but it was
+
+00:05:36.570 --> 00:05:39.470
+into my local this time. So we'll try to come with a pine
+
+00:05:39.470 --> 00:05:41.790
+cone and then we'll try to store it over there, which is a
+
+00:05:41.790 --> 00:05:46.170
+very, very, very, very easy. Believe me. It's kind of a no
+
+00:05:46.170 --> 00:05:51.110
+brainer game. It's literally no brainer. Right. Bokhtiyar
+
+00:05:51.110 --> 00:05:53.630
+has left your own. So yeah, he has left it on. He's having
+
+00:05:53.630 --> 00:05:56.610
+some, his own personal like aspiration. So he has left and
+
+00:05:56.610 --> 00:05:58.230
+he has started something different. So yeah.
+
+00:06:02.750 --> 00:06:06.590
+Okay. So here we have a pine cone. Maybe we can try to log
+
+00:06:06.590 --> 00:06:09.970
+in into a pine cone and I'll be using just a Google login
+
+00:06:09.970 --> 00:06:13.690
+over here. So Google login, just log into a pine cone.
+
+00:06:19.910 --> 00:06:22.670
+We are happy to finally enter Sanjogam University. Yeah. All
+
+00:06:22.670 --> 00:06:30.290
+tech I am going to finish for sure. So that's
+
+00:06:30.290 --> 00:06:33.190
+my long-term dream because teaching is one thing, but
+
+00:06:33.190 --> 00:06:37.830
+ultimately I'm a person who loved building a product. That's
+
+00:06:37.830 --> 00:06:40.110
+the reason. So you must be able to see like UD and all those
+
+00:06:40.110 --> 00:06:43.710
+other stuff and more and more I'll keep on building. So,
+
+00:06:43.770 --> 00:06:48.010
+okay. So just select anything. This is just a fill up form,
+
+00:06:48.150 --> 00:06:51.390
+nothing much. So maybe you can try to click on continue,
+
+00:06:51.550 --> 00:06:55.510
+continue. And then let's get started. So just try to log in
+
+00:06:55.510 --> 00:06:59.010
+into your pine cone guys, and they're going to show you your
+
+00:06:59.010 --> 00:07:02.630
+API key. You can try to store it somewhere. Even if you
+
+00:07:02.630 --> 00:07:06.550
+will, if, even if you forget to store it, not an issue, we
+
+00:07:06.550 --> 00:07:08.570
+have an option. We will be able to generate it once again.
+
+00:07:09.030 --> 00:07:12.170
+So this is my API key. I'm going to store it somewhere.
+
+00:07:12.550 --> 00:07:16.390
+Maybe I can try to keep it here inside my note or something,
+
+00:07:16.510 --> 00:07:19.490
+but yeah, even if you're not keeping it, not an issue at
+
+00:07:19.490 --> 00:07:24.390
+all. So close it. Close it now, except in continue. Okay. So
+
+00:07:24.390 --> 00:07:28.030
+this is basically a pine cone interface guys. Are you able
+
+00:07:28.030 --> 00:07:30.910
+to see the pine cone interface, everyone, how
+
+00:07:33.760 --> 00:07:36.140
+to find the best embedding model for our task as of now,
+
+00:07:36.160 --> 00:07:38.520
+just try to use one, five, three, six model from like a open
+
+00:07:38.520 --> 00:07:43.870
+AI. That's one of the best one. Yeah. That is that we have
+
+00:07:43.870 --> 00:07:44.690
+already given to you.
+
+00:07:51.380 --> 00:07:59.160
+Okay. So guys, uh, are you able to see this interface? This
+
+00:07:59.160 --> 00:08:00.100
+pine cone interface?
+
+00:08:04.260 --> 00:08:04.660
+Yeah.
+
+00:08:19.900 --> 00:08:22.540
+Yes. Okay. So they weren't saying yes. What about other
+
+00:08:22.540 --> 00:08:22.780
+guys?
+
+00:08:27.380 --> 00:08:29.060
+So these are saying also, yes. Okay.
+
+00:08:32.540 --> 00:08:36.500
+People are slow. It seems. Nice. So yeah, I know like today
+
+00:08:36.500 --> 00:08:40.580
+is Saturday, but, um, we are into class, right? Today's a
+
+00:08:40.580 --> 00:08:41.420
+weekends.
+
+00:08:44.740 --> 00:08:47.540
+Okay. Barty is saying yes. Okay. So we are able to see this
+
+00:08:47.540 --> 00:08:49.800
+pine cone. So this is basically your pine cone database
+
+00:08:49.800 --> 00:08:52.860
+interface that you will be able to find out. Let me give you
+
+00:08:52.860 --> 00:08:56.580
+a brief introduction. There is nothing much to understand
+
+00:08:56.580 --> 00:09:01.080
+here. Like I said, it's a no brainer job, right? Eventually
+
+00:09:01.080 --> 00:09:03.940
+we are, what we will try to do. So we'll try to take a data.
+
+00:09:04.040 --> 00:09:07.160
+I will try to convert those data into its embedding, into
+
+00:09:07.160 --> 00:09:10.660
+its vector space. We'll try to store it over here. And then
+
+00:09:10.660 --> 00:09:13.240
+at the time of search, we'll try to search it. That's it.
+
+00:09:13.380 --> 00:09:16.920
+Right. Even when I will be using into the application, for
+
+00:09:16.920 --> 00:09:20.940
+example, into my RAG. So I believe you all understand the
+
+00:09:20.940 --> 00:09:24.060
+definition of RAG. If not, I'm again going to explain, but
+
+00:09:24.060 --> 00:09:26.700
+yeah, very simple. It's very like a simple definition of
+
+00:09:26.700 --> 00:09:32.340
+RAG. I'll give you. So, um, here, uh, basically, uh, pine
+
+00:09:32.340 --> 00:09:34.840
+cone, if you'll come over here. So this is just a landing
+
+00:09:34.840 --> 00:09:37.740
+page. Then there is a tab called as databases. You will be
+
+00:09:37.740 --> 00:09:41.700
+able to find out now inside this pine cone. So your
+
+00:09:41.700 --> 00:09:45.880
+databases is technically called as indexes. So here you will
+
+00:09:45.880 --> 00:09:49.620
+be able to find out, uh, not so there is a database. And
+
+00:09:49.620 --> 00:09:52.120
+then inside that there is an indexes. For example, generally
+
+00:09:52.120 --> 00:09:56.220
+we try to create a tables, right? So if, if you are going to
+
+00:09:56.220 --> 00:09:58.540
+like do a relationship. So in that way, indexes are
+
+00:09:58.540 --> 00:10:02.200
+equivalent to a table. So you can say, so where you can try
+
+00:10:02.200 --> 00:10:05.420
+to like, uh, first of all, install a pine cone, call this
+
+00:10:05.420 --> 00:10:09.940
+APIs, pass your own key, and then you will be able to create
+
+00:10:09.940 --> 00:10:13.420
+the indexes, whatever indexes that you want to a store,
+
+00:10:13.560 --> 00:10:16.660
+whatever kind of data you want, you will be able to create
+
+00:10:16.660 --> 00:10:19.800
+the indexes. I'll show you that part as well. So how to
+
+00:10:19.800 --> 00:10:22.160
+create an indexes, everything I'm going to show you in a
+
+00:10:22.160 --> 00:10:24.840
+step-by-step manner. But first of all, I'm giving you the
+
+00:10:24.840 --> 00:10:27.540
+introduction of this entire interface. Okay. Backup is
+
+00:10:27.540 --> 00:10:29.700
+technically like, if you have to take a backup of your
+
+00:10:29.700 --> 00:10:32.740
+indexes for a long term, so you can try to do that. But
+
+00:10:32.740 --> 00:10:35.240
+yeah, the, for that you have to pay money. Basically you
+
+00:10:35.240 --> 00:10:37.740
+have to pay to the pine cones. We don't want to do that. So
+
+00:10:37.740 --> 00:10:40.580
+we are going to use our free version of it. As of now, there
+
+00:10:40.580 --> 00:10:42.800
+is something called assistance. So again, I don't want to
+
+00:10:42.800 --> 00:10:46.260
+assistance. I have my own assistance called as URI. So I'll
+
+00:10:46.260 --> 00:10:49.900
+be able to use that part, uh, here. So you will be able to
+
+00:10:49.900 --> 00:10:52.820
+find out, uh, inferences. So what is the meaning of this
+
+00:10:52.820 --> 00:10:56.320
+inferences? So simplify your stack with the model hosted by
+
+00:10:56.320 --> 00:11:00.720
+pine cones. And all of these models are basically, uh, like,
+
+00:11:00.800 --> 00:11:03.420
+uh, these models are basically going to help you out in
+
+00:11:03.420 --> 00:11:07.300
+terms of generating the embeddings. So whenever you will try
+
+00:11:07.300 --> 00:11:11.640
+to store the data, so you can try to use all of these
+
+00:11:11.640 --> 00:11:15.420
+models. So pine cone is giving you a multiple models. So the
+
+00:11:15.420 --> 00:11:17.780
+very first model they're giving you is Lama text bit
+
+00:11:17.780 --> 00:11:23.420
+embedded. So like a maximum input is 2048 tokens. Then there
+
+00:11:23.420 --> 00:11:26.920
+is something called a multilingual E5 large 507 token. Okay.
+
+00:11:26.940 --> 00:11:29.840
+Then pine cone is sparse English five, one, two token pine
+
+00:11:29.840 --> 00:11:35.780
+cone, uh, like a re-rank then then beg. And they have given
+
+00:11:35.780 --> 00:11:39.400
+you like a, some of this, uh, like a model introduction over
+
+00:11:39.400 --> 00:11:42.460
+here. I'm not going to use any of these. I have my own
+
+00:11:42.460 --> 00:11:46.220
+inside my URI. So I just have like a, my open AI embedding
+
+00:11:46.220 --> 00:11:49.800
+models. I'll be using that. If you are not going to use, use
+
+00:11:49.800 --> 00:11:51.940
+that one, then in that case, you can use these models,
+
+00:11:52.100 --> 00:11:54.720
+right? You can use these models. And if you're using these
+
+00:11:54.720 --> 00:11:57.480
+models, obviously they're going to charge you. Uh, so they
+
+00:11:57.480 --> 00:11:59.460
+are going to give you some free limit, but yeah, after that,
+
+00:11:59.520 --> 00:12:02.700
+obviously they are going to charge you to store any kind of
+
+00:12:02.700 --> 00:12:06.340
+data, but yeah, pine cone is giving you an option even for
+
+00:12:06.340 --> 00:12:11.000
+embedding models. Otherwise you can try to use even a models
+
+00:12:11.000 --> 00:12:13.220
+from a hugging face, right? There are, there are multiple
+
+00:12:13.220 --> 00:12:16.660
+options, which is available to you. And at least when we are
+
+00:12:16.660 --> 00:12:19.500
+the part of your own, so even inside a urine, we have that
+
+00:12:19.500 --> 00:12:22.960
+option, which is available. So I'll be using my urine model,
+
+00:12:23.160 --> 00:12:25.560
+but again, there is no hard and fast that you should always
+
+00:12:25.560 --> 00:12:28.940
+use that your own model, uh, the embedding model that, uh,
+
+00:12:29.000 --> 00:12:31.620
+we are giving you as an option. You can use any other, uh,
+
+00:12:31.720 --> 00:12:34.100
+like a one, uh, based on your task that you're going to
+
+00:12:34.100 --> 00:12:39.140
+complete. Okay. So here they have given you a complete code
+
+00:12:39.140 --> 00:12:42.640
+base as well. Like I said, it's a no brainer job, right?
+
+00:12:42.740 --> 00:12:45.200
+It's literally a no brainer job. Uh, you will be able to
+
+00:12:45.200 --> 00:12:48.140
+find out. So here they are giving you entire like a code
+
+00:12:48.140 --> 00:12:52.140
+base as well. Right. And then, uh, let's suppose if I forgot
+
+00:12:52.140 --> 00:12:55.500
+to create, save the API, then I can create an API. So here,
+
+00:12:55.500 --> 00:12:58.500
+there is again called as something called as managed. So you
+
+00:12:58.500 --> 00:13:02.320
+will be able to like manage the entire, uh, like a team and
+
+00:13:02.320 --> 00:13:05.480
+all those things. Uh, simple, right? So here, so this is
+
+00:13:05.480 --> 00:13:08.260
+just an introduction. Now coming to this again, get started
+
+00:13:08.260 --> 00:13:13.660
+part. There is a quick start guide I had to show you. So API
+
+00:13:13.660 --> 00:13:17.800
+references, this, this, this, where is a quick start guide,
+
+00:13:18.140 --> 00:13:25.930
+databases, indexes. Okay. Here. Uh, maybe, maybe I can.
+
+00:13:25.970 --> 00:13:29.510
+Yeah. So here you will be able to find out a step by step
+
+00:13:29.510 --> 00:13:33.350
+approach, uh, where like, uh, they have given you a code
+
+00:13:33.350 --> 00:13:36.650
+base and more or less we'll be using almost a similar kind
+
+00:13:36.650 --> 00:13:38.730
+of a code base for any kind of a task. So their
+
+00:13:38.730 --> 00:13:41.810
+documentation is very good. I would say even I have gone
+
+00:13:41.810 --> 00:13:44.350
+through their documentation personally, and, uh, it looks
+
+00:13:44.350 --> 00:13:48.930
+very like a structured one in terms of, uh, like doing every
+
+00:13:48.930 --> 00:13:52.050
+kind of operations that they have done. Even they have
+
+00:13:52.050 --> 00:13:55.610
+released basically this, uh, Jupiter notebook to all of us
+
+00:13:55.610 --> 00:13:59.210
+so that for the first time user, so maybe you can try to
+
+00:13:59.210 --> 00:14:01.470
+learn how to do an insert operation. How, what is the
+
+00:14:01.470 --> 00:14:04.310
+indexing operation? What is the name space over here?
+
+00:14:04.410 --> 00:14:06.990
+Everything, everything you will be able to learn. But like I
+
+00:14:06.990 --> 00:14:09.590
+said, there is nothing much to learn over here. It's simple.
+
+00:14:09.730 --> 00:14:11.910
+Like there is a database. I'll be able to do the insert,
+
+00:14:12.090 --> 00:14:14.710
+then update, then delete all those operations, which we
+
+00:14:14.710 --> 00:14:18.030
+regularly do in any other databases. So I'll be able to do
+
+00:14:18.030 --> 00:14:21.450
+the same thing. The only difference is that we are trying to
+
+00:14:21.450 --> 00:14:23.790
+convert something into its embeddings, and then we are
+
+00:14:23.790 --> 00:14:26.550
+trying to store it. And then at the time of search. Based on
+
+00:14:26.550 --> 00:14:29.110
+the similarity that we have given. So it is going to perform
+
+00:14:29.110 --> 00:14:31.950
+the search operation. That's our only differences. You all
+
+00:14:31.950 --> 00:14:37.170
+are going to get it making sense guys, everyone.
+
+00:14:40.210 --> 00:14:40.690
+Yeah.
+
+00:14:57.800 --> 00:15:02.540
+And as you can see, so a lot of, lot of notebook they have
+
+00:15:02.540 --> 00:15:06.040
+given to you, right? With a lot of like a use cases, but,
+
+00:15:06.140 --> 00:15:09.680
+uh, every use cases after today's class, I believe you all
+
+00:15:09.680 --> 00:15:13.880
+will be able to understand in a very, very easy way. So it's
+
+00:15:13.880 --> 00:15:18.200
+like that. Not a big deal to understand anything, uh, which,
+
+00:15:18.380 --> 00:15:21.640
+uh, like is given just simple plain databases where I'm
+
+00:15:21.640 --> 00:15:25.960
+going to store the data. That's it. Yeah. Okay.
+
+00:15:30.550 --> 00:15:34.250
+So a lot of like a documentation. So maybe I can try to like
+
+00:15:34.250 --> 00:15:37.270
+a ping you if you want these links, or maybe you can just go
+
+00:15:37.270 --> 00:15:40.330
+over here into a quick start into the example notebook as
+
+00:15:40.330 --> 00:15:43.690
+I'm showing you. Right. So you will be able to like, uh, see
+
+00:15:43.690 --> 00:15:46.010
+each and everything, which I'm showing you same thing. So
+
+00:15:46.010 --> 00:15:49.970
+everything is like technically public, or maybe I can try to
+
+00:15:49.970 --> 00:15:55.010
+ping you this link. So all of this on formations are public.
+
+00:15:55.110 --> 00:15:58.230
+So I'm not saying anything like, uh, which is just close to
+
+00:15:58.230 --> 00:16:02.130
+me. Okay. Now, so they have given you a quick start guide as
+
+00:16:02.130 --> 00:16:05.890
+well. And as you can see, so absurd, generally, uh, they
+
+00:16:05.890 --> 00:16:09.470
+call absurd to ins, uh, generally we try to say insert
+
+00:16:09.470 --> 00:16:13.270
+actually in terms of like a pine cone, they say absurd. So
+
+00:16:13.270 --> 00:16:16.250
+absurd is nothing new. It's actually insert. Operation that
+
+00:16:16.250 --> 00:16:19.130
+they are trying to do. So here, how you will be able to
+
+00:16:19.130 --> 00:16:23.050
+insert a data inside a pine cone, each and everything in a
+
+00:16:23.050 --> 00:16:26.530
+detail where they are given to you, then query the data. So
+
+00:16:26.530 --> 00:16:29.370
+how I'm going to query the information, query the data, how
+
+00:16:29.370 --> 00:16:32.410
+I'm going to fetch a data, how I'm going to update a data,
+
+00:16:32.550 --> 00:16:35.630
+how I'm going to delete a data, how I'm going to import the
+
+00:16:35.630 --> 00:16:40.350
+data and a list, a record ID is target the indexes of based
+
+00:16:40.350 --> 00:16:42.950
+on just an indexes, how I will be able to extract the data.
+
+00:16:43.830 --> 00:16:46.970
+Everything they have given to you then, uh, like integrated
+
+00:16:46.970 --> 00:16:50.030
+with the MCP server. So those who are not aware about the
+
+00:16:50.030 --> 00:16:52.950
+MCP, so please go through some of my project, which I have
+
+00:16:52.950 --> 00:16:56.510
+released recently, uh, in terms of MCPs, you will be able to
+
+00:16:56.510 --> 00:17:00.330
+understand. So MCP means giving an access of my, some closed
+
+00:17:00.330 --> 00:17:03.430
+system to some of the AIs. That's it. That's something
+
+00:17:03.430 --> 00:17:07.010
+called as MCP model context protocol, basically. So I've
+
+00:17:07.010 --> 00:17:09.690
+shown multiple examples with end-to-end integration, uh,
+
+00:17:09.750 --> 00:17:12.710
+basically, so maybe you can just try to go through that as
+
+00:17:12.710 --> 00:17:15.290
+well. Uh, complete up and running example I have given to
+
+00:17:15.290 --> 00:17:18.590
+you again, MCP is not a complex things. It's very easy
+
+00:17:18.590 --> 00:17:22.870
+things to implement and easy to learn. Okay. So this
+
+00:17:22.870 --> 00:17:26.910
+documentation is very, very like detailed. And again, in a
+
+00:17:26.910 --> 00:17:28.790
+step-by-step manner, they have given you each and
+
+00:17:28.790 --> 00:17:32.130
+everything. Plus they have given you a multiple examples as
+
+00:17:32.130 --> 00:17:35.970
+well. Now what we are going to do. So once we are like, we
+
+00:17:35.970 --> 00:17:39.150
+have logged in, let's do something over here. So let's try
+
+00:17:39.150 --> 00:17:42.410
+to create at least our indexes. Uh, let's try to take some
+
+00:17:42.410 --> 00:17:45.330
+data. And then let's try to store some data. Let's try to
+
+00:17:45.330 --> 00:17:47.650
+perform some sort of a search operation. So that practically
+
+00:17:47.650 --> 00:17:52.230
+we all will be able to explore it. Ready guys, everyone, are
+
+00:17:52.230 --> 00:17:57.870
+we ready? Yeah. So you all are able to understand that pine
+
+00:17:57.870 --> 00:18:01.590
+cone is nothing much like we all can do it easily.
+
+00:18:09.190 --> 00:18:09.990
+Yes. Everyone.
+
+00:18:13.280 --> 00:18:16.460
+So we start, uh, doing a little bit of practical over here.
+
+00:18:40.540 --> 00:18:45.180
+Hmm. Okay. So, uh, just do one thing. Open up your VS code.
+
+00:18:45.540 --> 00:18:49.000
+You can open up Colab VS code, whatever you want, and then
+
+00:18:49.000 --> 00:18:53.640
+try to create one folder. And maybe I'll create one, uh,
+
+00:18:53.700 --> 00:19:00.760
+directory over here. So pine cone or a vector DV, I'll just
+
+00:19:00.760 --> 00:19:05.540
+take to it in this way. So vector DV, okay.
+
+00:19:07.200 --> 00:19:11.580
+Vector DV. Okay. That folder is already available.
+
+00:19:14.700 --> 00:19:15.940
+Vector DV pine.
+
+00:19:18.740 --> 00:19:21.980
+Okay. So I have just created a folder guys, and, uh, inside
+
+00:19:21.980 --> 00:19:24.960
+this folder, maybe I'll try to create a new file. Uh, so
+
+00:19:24.960 --> 00:19:33.460
+today date is third. So third, uh, uh, vector dv
+
+00:19:33.460 --> 00:19:40.500
+.ipynb, vector dv.ipynb, okay, fine code. So I'll start
+
+00:19:40.500 --> 00:19:44.460
+doing a coding. Uh, so ultimately I have to store all of my
+
+00:19:44.460 --> 00:19:46.960
+data where, so I have to store all of my data into this
+
+00:19:46.960 --> 00:19:49.200
+database, which is like a global one, right? Which is
+
+00:19:49.200 --> 00:19:53.920
+already, uh, hosted one self-managed one, basically. So I
+
+00:19:53.920 --> 00:19:56.980
+have to, first of all, do what I have to install this client
+
+00:19:56.980 --> 00:20:00.540
+pine cone client so that I will be able to establish a
+
+00:20:00.540 --> 00:20:03.380
+relationship between my local system and this particular
+
+00:20:03.860 --> 00:20:06.980
+storage. And again, you can try to do a coding in node,
+
+00:20:07.020 --> 00:20:09.720
+Python, Java, go and sell. So for all these things they have
+
+00:20:09.720 --> 00:20:12.020
+given the SDK, but yeah, we are using Python. So I'll be
+
+00:20:12.020 --> 00:20:14.640
+going out with a Python. So first of all, pip install
+
+00:20:14.640 --> 00:20:18.720
+pinecone. So just try to do a pip install pinecone guys.
+
+00:20:18.780 --> 00:20:22.180
+Okay. Python environment. I can try to select some of the
+
+00:20:22.180 --> 00:20:25.900
+environment. Yeah. So pip install pinecone, just do this
+
+00:20:25.900 --> 00:20:26.640
+guys, everyone.
+
+00:20:36.380 --> 00:20:39.280
+And if you have any kind of a question, please ping me. So
+
+00:20:39.280 --> 00:20:41.040
+anytime you want.
+
+00:20:45.410 --> 00:20:54.040
+So today's topic is not like tough at all. It's kind of just
+
+00:20:54.040 --> 00:20:54.520
+execution.
+
+00:20:59.050 --> 00:21:04.890
+Okay. So I believe installation is done. Okay. So you
+
+00:21:04.890 --> 00:21:08.790
+suggestion like that UD API here to save the key in dot
+
+00:21:08.790 --> 00:21:08.930
+initialization.
+
+00:21:14.330 --> 00:21:19.390
+So I can save it in a dot environment file the way I was
+
+00:21:19.390 --> 00:21:22.190
+saving it in my last class, or maybe I can try to call it
+
+00:21:22.190 --> 00:21:29.150
+here itself. Okay. Then the next step is what? So the next
+
+00:21:29.150 --> 00:21:33.030
+step is basically this one. So initialize on use your API.
+
+00:21:33.490 --> 00:21:37.050
+So here we have to kind of with a pinecone, right? So here
+
+00:21:37.050 --> 00:21:40.710
+from pinecone import pinecone serverless specs. And then you
+
+00:21:40.710 --> 00:21:43.910
+have to remove this one. And then you have to replace it
+
+00:21:43.910 --> 00:21:46.770
+with your own API key, where you will be able to get your
+
+00:21:46.770 --> 00:21:49.010
+own API key. So if you have not stored in a beginning,
+
+00:21:49.190 --> 00:21:53.050
+that's fine. Click on this API key and then create a new API
+
+00:21:53.050 --> 00:21:55.490
+key. So maybe I'll try to create test and then create API
+
+00:21:55.490 --> 00:22:00.030
+key. So again, I'll try to copy it, close it, and then I can
+
+00:22:00.030 --> 00:22:03.990
+try to keep it here. So this is my API key from a pinecone.
+
+00:22:05.010 --> 00:22:08.750
+Okay, fine. Now execute this one. So maybe I can try to even
+
+00:22:08.750 --> 00:22:14.510
+like a print. So PC. So here it is giving me an object from
+
+00:22:14.510 --> 00:22:17.270
+the pinecone. It simply means that yes, everything is up and
+
+00:22:17.270 --> 00:22:19.750
+running. It is able to accept and it will be able to connect
+
+00:22:19.750 --> 00:22:23.930
+it as simple as that. Yeah. As simple as that. So here you
+
+00:22:23.930 --> 00:22:27.670
+will be having a pinecone. So now we are able to connect to
+
+00:22:27.670 --> 00:22:30.830
+a pinecone from my local system means I'm able to connect
+
+00:22:30.830 --> 00:22:34.850
+from this, which is a global one to my local system, but the
+
+00:22:34.850 --> 00:22:37.130
+things which I'm executing in my local, let me close my
+
+00:22:37.130 --> 00:22:38.130
+other. Okay.
+
+00:22:41.370 --> 00:22:45.910
+So this is basically a connection. This is basically a
+
+00:22:45.910 --> 00:22:48.430
+connection between my Jupiter notebook, which is running in
+
+00:22:48.430 --> 00:22:52.610
+my local system and this one, this entire system. Okay. So
+
+00:22:52.610 --> 00:22:56.150
+once we are done with this one, right? Once we are done with
+
+00:22:56.150 --> 00:23:00.230
+this, then what we are supposed to do. So we can try to
+
+00:23:00.230 --> 00:23:04.050
+create our indexes, right? We can try to create our indexes
+
+00:23:04.050 --> 00:23:07.510
+because inside the indexes, we try to store the data.
+
+00:23:07.730 --> 00:23:10.830
+Simple. So how we can try to create the indexes, even for
+
+00:23:10.830 --> 00:23:13.690
+that, they have given you the entire code in this particular
+
+00:23:13.690 --> 00:23:17.570
+place. Let's try to copy and paste this one. Now what is the
+
+00:23:17.570 --> 00:23:20.730
+meaning of this index name means table name. I'll keep it as
+
+00:23:20.730 --> 00:23:23.330
+a slanshu. So I'll, I would like to create the slanshu table
+
+00:23:23.330 --> 00:23:27.090
+basically. Now PC, PC is what PC is a connection, right?
+
+00:23:27.130 --> 00:23:30.310
+Pinecone connection PC. You can just change the name if you
+
+00:23:30.310 --> 00:23:33.650
+want that that's completely fine. Just a variable name,
+
+00:23:33.730 --> 00:23:37.330
+which is given over here. So nothing much now. So name is
+
+00:23:37.330 --> 00:23:40.890
+equal to index name. Dimension is equal to two. Now shall I
+
+00:23:40.890 --> 00:23:45.600
+change it guys or shall I keep it as it is? Shall I change
+
+00:23:45.600 --> 00:23:47.240
+the dimension or shall I keep it as it is?
+
+00:23:50.520 --> 00:23:52.300
+Yeah guys looking for advice.
+
+00:24:10.720 --> 00:24:13.600
+Yeah. So Mrityunjay is saying change it. Okay. Change it to
+
+00:24:13.600 --> 00:24:13.780
+what?
+
+00:24:19.180 --> 00:24:20.700
+Yes guys. Change it to what?
+
+00:24:24.130 --> 00:24:28.750
+So people are saying change it, but change it to what 1536
+
+00:24:28.750 --> 00:24:32.010
+change it as per the embedding model. Exactly. Sivanand. So
+
+00:24:32.010 --> 00:24:35.790
+basically whatever embedding model that I'm using. So I have
+
+00:24:35.790 --> 00:24:38.970
+to change it to that one. So here I'm going to use basically
+
+00:24:38.970 --> 00:24:42.910
+URI as we all know, we have already used it. So as per URI,
+
+00:24:43.030 --> 00:24:45.850
+so this embedding model I'm going to use and what is the
+
+00:24:45.850 --> 00:24:47.930
+dimension of this one? So basically I mentioned this one is
+
+00:24:47.930 --> 00:24:51.350
+1536. I'll be using 1536. If I'm going to use something
+
+00:24:51.350 --> 00:24:54.330
+different in that case, I'll be using that as simple as
+
+00:24:54.330 --> 00:24:59.410
+that. Yeah. So based on the model, not blindly. So my model
+
+00:24:59.410 --> 00:25:04.710
+will be like 1536. So I'll just try to change it to 1536. So
+
+00:25:04.710 --> 00:25:07.450
+here matrixes. You can try to change it to IP. You can try
+
+00:25:07.450 --> 00:25:11.090
+to change it to cosine or maybe like a liquid and distances.
+
+00:25:11.650 --> 00:25:14.430
+So there are multiple metrics as they have given to you and
+
+00:25:14.430 --> 00:25:16.370
+I believe we all understand what is the meaning of the
+
+00:25:16.370 --> 00:25:20.870
+matrixes, right? For similarity check. Then specs, a
+
+00:25:20.870 --> 00:25:24.110
+specification for the server, serverless, it's on AWS cloud
+
+00:25:24.110 --> 00:25:27.550
+US East. So I'm not taking care of this pinecone itself is
+
+00:25:27.550 --> 00:25:31.450
+taking care of this. Execute it guys. So execute it. So once
+
+00:25:31.450 --> 00:25:35.590
+you are going to execute it, you will be able to see that
+
+00:25:35.590 --> 00:25:37.850
+inside pinecone. So execute it. In pinecone, it will create
+
+00:25:37.850 --> 00:25:41.130
+a index name called Sudhanshu. So if it is going to execute
+
+00:25:41.130 --> 00:25:42.790
+it successfully, it's
+
+00:25:46.180 --> 00:25:49.220
+still executing 15, 16, 17, 13, okay.
+
+00:25:56.660 --> 00:26:00.460
+So just do it guys. Okay. So now it is telling me that name
+
+00:26:00.460 --> 00:26:03.300
+of the index is this similarity check matrix is basically
+
+00:26:03.300 --> 00:26:06.120
+cosine. Host is Sudhanshu. This, this, this, this, this
+
+00:26:06.120 --> 00:26:10.620
+pinecone.io. So this is my global host specification, AWS US
+
+00:26:10.620 --> 00:26:15.060
+East one, the status ready, status ready, true status ready.
+
+00:26:15.200 --> 00:26:17.980
+Vector type dense. Dimension for one, five, three, six
+
+00:26:17.980 --> 00:26:21.600
+deletion protection disabled for deletion protection. So you
+
+00:26:21.600 --> 00:26:24.100
+have to pay them otherwise they will not give you this
+
+00:26:24.100 --> 00:26:26.900
+option and the tags is equal to null. No tag I have given to
+
+00:26:26.900 --> 00:26:30.220
+this one. Okay. That's great. So we are able to create the
+
+00:26:30.220 --> 00:26:35.040
+indexes. Now just come over here, refresh it, come over
+
+00:26:35.040 --> 00:26:38.220
+here, refresh it. So you will be able to see your indexes.
+
+00:26:38.260 --> 00:26:40.640
+Can I say that this was my table name, which I have created.
+
+00:26:41.500 --> 00:26:45.480
+This is the indexes, which I have created, and you will be
+
+00:26:45.480 --> 00:26:46.600
+able to see all the detail here.
+
+00:26:50.570 --> 00:26:54.310
+Yeah. And if you have to connect with just this indexes,
+
+00:26:54.310 --> 00:26:57.950
+right? So you will be able to like a connected. So PC dot
+
+00:26:57.950 --> 00:27:00.990
+index. And then if you have to like store the data, you can
+
+00:27:00.990 --> 00:27:03.370
+try to store the data. If you want, they have just given you
+
+00:27:03.370 --> 00:27:06.510
+the sample, uh, with two dimension, only two dimension. Our
+
+00:27:06.510 --> 00:27:09.010
+dimension is one, five, three, six. They have given you just
+
+00:27:09.010 --> 00:27:11.130
+like a two dimension making
+
+00:27:16.280 --> 00:27:19.540
+sense, guys, are you able to see this one? Obviously you
+
+00:27:19.540 --> 00:27:21.580
+will not be able to see any record so far because we have
+
+00:27:21.580 --> 00:27:25.060
+not inserted any kind of a record. We will do it in some
+
+00:27:25.060 --> 00:27:28.280
+time. But, uh, yeah. Are you able to see this indexes?
+
+00:27:36.490 --> 00:27:39.410
+How to know what model metrics is used for the embedding?
+
+00:27:39.610 --> 00:27:43.170
+Basically this is not for like a based on the model. It's
+
+00:27:43.170 --> 00:27:46.270
+basically based on the similarity check. Hope you
+
+00:27:46.270 --> 00:27:49.270
+understand, uh, like what is the meaning of metrics is here.
+
+00:27:49.390 --> 00:27:53.490
+This is what I have explained. What is serverless, uh,
+
+00:27:53.590 --> 00:27:57.250
+capacity mode here? See serverless simple meaning is that
+
+00:27:57.250 --> 00:28:01.170
+there is a big system that they have taken and then they
+
+00:28:01.170 --> 00:28:04.770
+have like a. Uh. A given an access to a multiple people.
+
+00:28:04.890 --> 00:28:08.670
+This is called as serverless architecture, server dedicated
+
+00:28:08.670 --> 00:28:11.390
+server architecture means there is one single machine which
+
+00:28:11.390 --> 00:28:14.970
+is dedicated just for your task and serverless means there
+
+00:28:14.970 --> 00:28:17.870
+is a big cluster. There is a big machine and then everyone
+
+00:28:17.870 --> 00:28:20.270
+can use it as per the availability. That is something called
+
+00:28:20.270 --> 00:28:21.910
+a serverless again.
+
+00:28:25.520 --> 00:28:28.640
+So a read unit, write unit. As of now, I have not written,
+
+00:28:28.740 --> 00:28:31.420
+I'm not trying to read anything. So nothing namespace is
+
+00:28:31.420 --> 00:28:33.860
+equals to nothing configuration is equal to nothing. Okay.
+
+00:28:33.860 --> 00:28:36.580
+So if you're able to see this, it simply means that, that
+
+00:28:36.580 --> 00:28:41.200
+your indexes are created. Now you can try to store the data
+
+00:28:41.200 --> 00:28:44.540
+because unless and until your indexes are not available, you
+
+00:28:44.540 --> 00:28:50.520
+won't be able to store the data. Okay. So here let's go
+
+00:28:50.520 --> 00:28:56.100
+ahead and then do one thing. Uh, let's try to store some of
+
+00:28:56.100 --> 00:28:58.920
+the data, some of the information inside this one, and then
+
+00:28:58.920 --> 00:29:02.740
+we will try to like, uh, save each and everything. So. So
+
+00:29:02.740 --> 00:29:06.160
+here let's suppose, uh, before storing something. So let's
+
+00:29:06.160 --> 00:29:08.600
+suppose if I have to list all the indexes, which is
+
+00:29:08.600 --> 00:29:12.760
+available. So what I can do is pinecone.list list indexes.
+
+00:29:12.840 --> 00:29:16.100
+So this is going to give you list of all the indexes.
+
+00:29:17.020 --> 00:29:19.820
+Whatever indexes are available means whatever tables are
+
+00:29:19.820 --> 00:29:22.280
+available. This is going to give you, this is again, one of
+
+00:29:22.280 --> 00:29:25.540
+the inbuilt function. You will be able to find out one of
+
+00:29:25.540 --> 00:29:28.220
+the inbuilt function. Let's suppose there is an index called
+
+00:29:28.220 --> 00:29:31.120
+as the Hanshu, right? I have to delete that indexes. How I
+
+00:29:31.120 --> 00:29:35.700
+can delete it. Okay. So again, object dot delete indexes. I
+
+00:29:35.700 --> 00:29:38.520
+can try to call, I can try to give an index name, S U D H N
+
+00:29:38.520 --> 00:29:42.520
+S S U, and then execute. It is going to delete my indexes
+
+00:29:42.520 --> 00:29:45.520
+called as Sudhanshu, which I have created, like insert into
+
+00:29:45.520 --> 00:29:48.900
+table, delete table, similar kind of operation. We are going
+
+00:29:48.900 --> 00:29:54.300
+to do it. Please ping a previous code. Aman try to focus
+
+00:29:54.300 --> 00:29:57.460
+inside the class, uh, the code which I'm using, it's already
+
+00:29:57.460 --> 00:30:01.160
+available even to you inside a pinecone. So if you're not
+
+00:30:01.160 --> 00:30:03.040
+able to find that code, it simply means that you have not
+
+00:30:03.040 --> 00:30:05.220
+even logged into a pinecone. That, that, that will be my
+
+00:30:05.220 --> 00:30:05.420
+assumption.
+
+00:30:10.590 --> 00:30:14.650
+Yeah. So now if I'm going to refresh it once again, I think
+
+00:30:14.650 --> 00:30:17.650
+my Sudhanshu indexes will be, must have gone. Yeah. It's
+
+00:30:17.650 --> 00:30:20.790
+gone. Right. I have just deleted. So if you have to list the
+
+00:30:20.790 --> 00:30:23.870
+entire indexes, there is a function which is available. If I
+
+00:30:23.870 --> 00:30:26.470
+have to delete the indexes, this is the function which is
+
+00:30:26.470 --> 00:30:28.890
+available to me. So I will be able to list it. I will be
+
+00:30:28.890 --> 00:30:33.410
+able to delete it. I will be able to do whatever like, uh, I
+
+00:30:33.410 --> 00:30:37.990
+want, uh, like at, as per my need, as per my requirement. So
+
+00:30:37.990 --> 00:30:42.850
+one by one, one by one, uh, let's like, uh, try to, uh,
+
+00:30:42.970 --> 00:30:47.210
+perform some of the operations and then let's see. So how we
+
+00:30:47.210 --> 00:30:52.190
+can try to, uh, use it. So here I have created the indexes
+
+00:30:52.190 --> 00:30:55.750
+and, uh, I have even deleted the indexes. Let's create our
+
+00:30:55.750 --> 00:30:56.710
+indexes once again.
+
+00:31:00.240 --> 00:31:00.640
+So
+
+00:31:04.640 --> 00:31:06.940
+because of whatever indexes, which I have created, I have
+
+00:31:06.940 --> 00:31:08.540
+just deleted that indexes.
+
+00:31:12.750 --> 00:31:13.150
+Yeah.
+
+00:31:16.140 --> 00:31:18.400
+So these are just, I mean, function guys, I'm trying to show
+
+00:31:18.400 --> 00:31:23.260
+you nothing much. So again, I'm trying to create the
+
+00:31:23.260 --> 00:31:26.260
+indexes. Okay. Index creation done. I can go here, I can
+
+00:31:26.260 --> 00:31:30.220
+refresh it and I will be able to find out the indexes again.
+
+00:31:30.260 --> 00:31:34.480
+So indexes is like, uh, again, back. Now I have to store our
+
+00:31:34.480 --> 00:31:38.100
+data into this indexes. Fine. I will be able to store the
+
+00:31:38.100 --> 00:31:41.620
+data into this indexes, but before that, right? So before
+
+00:31:41.620 --> 00:31:45.540
+storing this data into the indexes, so I have to basically,
+
+00:31:45.700 --> 00:31:50.900
+uh, like, uh, create a data. I have to convert my data into
+
+00:31:50.900 --> 00:31:53.940
+its embeddings unless and until I'm not going to convert my
+
+00:31:53.940 --> 00:31:57.460
+data into its embeddings, I will not be able to store it. So
+
+00:31:57.460 --> 00:32:00.280
+I believe we have done that process. Even my last, even in
+
+00:32:00.280 --> 00:32:02.760
+my last class, we have converted the data into embeddings.
+
+00:32:03.100 --> 00:32:07.940
+So let's do it. So here I'll try to go to code example and
+
+00:32:07.940 --> 00:32:12.460
+embedding generation. I'll try to copy this code, right?
+
+00:32:12.560 --> 00:32:15.360
+This code is already available inside the URI or embedding
+
+00:32:15.360 --> 00:32:18.500
+generation. So this is the code. Let me ping you this code.
+
+00:32:19.840 --> 00:32:22.840
+Okay. So this is the code, which is already available. So
+
+00:32:22.840 --> 00:32:26.480
+where I'm trying to hit embedding endpoint. Now you have to
+
+00:32:26.480 --> 00:32:30.540
+replace this one, this static with your own key. So I'll
+
+00:32:30.540 --> 00:32:33.960
+just go over here and I'll try to replace it with my own
+
+00:32:33.960 --> 00:32:39.140
+key. I'll try to replace it with my own key simple so that I
+
+00:32:39.140 --> 00:32:42.720
+will be able to access the API and then payload payload
+
+00:32:42.720 --> 00:32:45.080
+wise. I can try to define whatever payload, which I'm
+
+00:32:45.080 --> 00:32:48.760
+looking for means whatever text, which I would like to
+
+00:32:48.760 --> 00:32:51.600
+collect. I convert into our embeddings. And in my previous
+
+00:32:51.600 --> 00:32:54.580
+class, I have shown you like a four loop kind of approach.
+
+00:32:54.800 --> 00:32:57.300
+So where I have a multiple text, and then I was able to
+
+00:32:57.300 --> 00:32:59.920
+convert those entire text into the embeddings, into the
+
+00:32:59.920 --> 00:33:02.940
+respective embeddings. Just in last class, I have shown you
+
+00:33:02.940 --> 00:33:06.240
+that one as well. So just like a loop, right? So I can try
+
+00:33:06.240 --> 00:33:08.780
+to convert only one data and then I can try to convert my
+
+00:33:08.780 --> 00:33:12.120
+like multiple data into its respective embeddings. So here,
+
+00:33:12.220 --> 00:33:16.420
+here input is basically this one. Maybe I can try to change
+
+00:33:16.420 --> 00:33:24.590
+it. I can say like. Okay. Name is, is Sudhanshu Kumar. I
+
+00:33:24.590 --> 00:33:33.870
+used to teach all the technology. Okay, fine. So this is my
+
+00:33:33.870 --> 00:33:37.490
+payload. This is my model as simple as that. So it is going
+
+00:33:37.490 --> 00:33:41.130
+to convert this entire things into embeddings by using this
+
+00:33:41.130 --> 00:33:43.950
+particular model that I have. So request dot post, like
+
+00:33:43.950 --> 00:33:47.990
+everything is like already given to me, right? So I will be
+
+00:33:47.990 --> 00:33:50.910
+able to convert everything into the embeddings. And this is
+
+00:33:50.910 --> 00:33:53.330
+going to just return the embedding. This function is going
+
+00:33:53.330 --> 00:33:56.430
+to return the embeddings. So embeddings of whatever text
+
+00:33:56.430 --> 00:33:59.430
+that we have given. Okay. No model name NumPy, not an issue.
+
+00:34:00.050 --> 00:34:05.350
+So pip install I N S T A double L N U M P Y. So the
+
+00:34:05.350 --> 00:34:08.430
+environment which I'm using in that NumPy is not installed.
+
+00:34:12.520 --> 00:34:13.580
+Fine guys, everyone.
+
+00:34:17.660 --> 00:34:18.060
+Yeah.
+
+00:34:23.310 --> 00:34:27.030
+Fine. So are we able to get this function and just replace
+
+00:34:27.030 --> 00:34:29.830
+it with your key? Otherwise, when you are going to call this
+
+00:34:29.830 --> 00:34:32.110
+function, it'll give you an issue. This is just a function,
+
+00:34:32.210 --> 00:34:34.150
+right? This is just a function. So we are going to call it.
+
+00:34:34.430 --> 00:34:37.790
+So now what we can do is so we can try to call this
+
+00:34:37.790 --> 00:34:43.690
+function. So E M E M B double D I N G S embeddings,
+
+00:34:43.710 --> 00:34:48.010
+underscore data, right? And then generate embeddings. I'm
+
+00:34:48.010 --> 00:34:53.210
+calling this function. So it is able to generate the
+
+00:34:53.210 --> 00:34:56.090
+embeddings. Basically it is able to generate the embeddings.
+
+00:34:56.390 --> 00:34:59.090
+So this is going to return me what it is going to return me
+
+00:34:59.090 --> 00:35:01.950
+embeddings. So basically. This embedding data, this
+
+00:35:01.950 --> 00:35:05.310
+embedding data is nothing but this embeddings of length,
+
+00:35:05.450 --> 00:35:08.470
+which equally one, five, three, six for a sentence, which
+
+00:35:08.470 --> 00:35:11.230
+one for this particular sentence. My name is Anshu Kumar. I
+
+00:35:11.230 --> 00:35:14.470
+used to teach technology. I can even try to parameterize it
+
+00:35:14.470 --> 00:35:17.450
+if I want. So maybe I can try to just replace it with the
+
+00:35:17.450 --> 00:35:24.310
+data data. And here I can try to give input as a data. So
+
+00:35:24.310 --> 00:35:26.970
+here, when I'm going to call it, I can try to pass my own
+
+00:35:26.970 --> 00:35:30.670
+data. So this is my own data for.
+
+00:35:36.660 --> 00:35:42.680
+Okay. So what has happened? I think there is a formatted a
+
+00:35:42.680 --> 00:35:45.300
+string I suppose to find
+
+00:36:02.320 --> 00:36:03.320
+guys, are we able to do it?
+
+00:36:14.940 --> 00:36:15.800
+Yes. Everyone.
+
+00:36:25.630 --> 00:36:28.430
+Yeah. So it will be able to generate the embeddings simple.
+
+00:36:28.630 --> 00:36:32.390
+So here, whatever text, which I'm going to pass. So for that
+
+00:36:32.390 --> 00:36:34.570
+text, it is going to give me the embedding. This is what
+
+00:36:34.570 --> 00:36:37.190
+this function is going to do. Now what I have supposed to do
+
+00:36:37.190 --> 00:36:40.090
+is I'm supposed to store this information. I'm supposed to
+
+00:36:40.090 --> 00:36:44.590
+store this data. Basically into my vector DB here. So inside
+
+00:36:44.590 --> 00:36:47.450
+this indexes, I would like to store this entire information.
+
+00:36:47.630 --> 00:36:50.430
+So how I'm going to store this entire information. Again,
+
+00:36:50.570 --> 00:36:53.030
+there is a function called an absurd pine cone, absurd
+
+00:36:53.030 --> 00:36:56.070
+function. So absurd is nothing but technically it's a insert
+
+00:36:56.070 --> 00:36:59.710
+operation that we are supposed to do. So here, what we can
+
+00:36:59.710 --> 00:37:02.470
+do is so pine cone, this is the connection. And then I can
+
+00:37:02.470 --> 00:37:04.950
+try to call absurd up.
+
+00:37:08.510 --> 00:37:15.580
+Uh, yeah. So here we have basically, uh, index name.
+
+00:37:22.110 --> 00:37:27.250
+So index dot absurd, I have to call. So yeah. Pine cone, dot
+
+00:37:27.250 --> 00:37:32.070
+I N D X, first of all, call pine cone, dot index. And then
+
+00:37:32.070 --> 00:37:36.030
+your index name is what your index name is on shoe. Let's
+
+00:37:36.030 --> 00:37:38.530
+suppose this is the index name. So try to store it inside
+
+00:37:38.530 --> 00:37:43.650
+our index. And with respect to this index, you can try to
+
+00:37:43.650 --> 00:37:48.970
+call I N D X index. Dot. Absurd. Now you will be able to
+
+00:37:48.970 --> 00:37:51.870
+find the function with respect to the index indexes absurd
+
+00:37:51.870 --> 00:37:55.550
+function. So here, this function I'm going to use. And with
+
+00:37:55.550 --> 00:37:57.870
+the help of this function, I will be basically storing
+
+00:37:57.870 --> 00:38:02.390
+information inside this particular index index Sudhanshu
+
+00:38:02.390 --> 00:38:06.970
+means I will be storing my data over here. So my embedding
+
+00:38:06.970 --> 00:38:09.910
+function, I'm able to call, as you can see, I'm able to
+
+00:38:09.910 --> 00:38:13.370
+convert any kind of a text information into its respective
+
+00:38:13.370 --> 00:38:16.070
+embeddings. So I'm able to generate the respective
+
+00:38:16.070 --> 00:38:20.070
+embeddings. Now I have to store this embeddings, uh, into
+
+00:38:20.070 --> 00:38:23.670
+the indexes, which I have created inside a pine cone, inside
+
+00:38:23.670 --> 00:38:27.490
+a pine cone, right again. So I can try to even take a help
+
+00:38:27.490 --> 00:38:31.250
+from here. So absurd data. So what kind of, uh, like a
+
+00:38:31.250 --> 00:38:35.750
+format, uh, which, uh, uh, it supports basically. So at the
+
+00:38:35.750 --> 00:38:39.650
+time of, uh, insertion of the data, there are multiple ways
+
+00:38:39.650 --> 00:38:42.610
+that they have given to you. Otherwise you can just try to
+
+00:38:42.610 --> 00:38:46.530
+follow my way. So here I'm going to absurd the data. So
+
+00:38:46.530 --> 00:38:49.990
+while up sorting our data over here, so maybe I can try to
+
+00:38:49.990 --> 00:38:54.090
+give a ID, a kind of a primary key, basically. So I can try
+
+00:38:54.090 --> 00:38:57.010
+to give item item
+
+00:38:58.960 --> 00:39:05.140
+ID 0 0 1. Let's suppose I'm going to give, and then I'm
+
+00:39:05.140 --> 00:39:10.760
+going to like, uh, call embedding data dot to list, convert
+
+00:39:10.760 --> 00:39:15.100
+it into a compatible format and then, uh, try to maybe like,
+
+00:39:15.160 --> 00:39:20.360
+uh, uh, give over here. Give me a lot of, uh, Meta
+
+00:39:20.360 --> 00:39:22.580
+information if you want, if you don't want a Meta
+
+00:39:22.580 --> 00:39:28.410
+information, then in that case, it's fine. Name. So the on
+
+00:39:28.410 --> 00:39:28.630
+shoe,
+
+00:39:39.920 --> 00:39:41.020
+info,
+
+00:39:44.120 --> 00:39:49.860
+personal info, let's suppose. So in this way, whatever
+
+00:39:49.860 --> 00:39:52.260
+embedding that I've created, I'm just trying to store it.
+
+00:39:52.340 --> 00:39:56.660
+I'll be talking about like a bad size must be a positive in
+
+00:39:56.660 --> 00:39:57.000
+teaser.
+
+00:40:12.360 --> 00:40:21.300
+Okay. So it is giving me this. One. for this because there
+
+00:40:21.300 --> 00:40:24.040
+are some embeddings which is so
+
+00:40:39.110 --> 00:40:42.010
+here absurd the
+
+00:40:45.880 --> 00:40:55.380
+function for absurd so as a list I can try to pass here list
+
+00:40:55.380 --> 00:40:59.320
+then as a list
+
+00:41:01.470 --> 00:41:06.070
+it's just a syntactical mistake guys let me correct it okay
+
+00:41:06.070 --> 00:41:14.190
+so this is list this is list this one this one is fine and
+
+00:41:25.680 --> 00:41:29.420
+repeat the type class string invalid vector value passed to
+
+00:41:33.260 --> 00:41:36.160
+list looks fine to me why
+
+00:41:47.160 --> 00:41:50.200
+it is giving me an issue because
+
+00:41:53.050 --> 00:41:55.450
+everything looks fine yeah
+
+00:42:02.520 --> 00:42:10.060
+so embedding data dot to list this is correct who's
+
+00:42:29.070 --> 00:42:37.530
+like this so santos has suggested me something let me check
+
+00:42:37.530 --> 00:42:42.170
+x laurium if some this this this even
+
+00:42:47.740 --> 00:42:53.780
+this one should work I don't think it will not work and I
+
+00:42:53.780 --> 00:42:59.380
+don't see any misinformation just let me let me like correct
+
+00:42:59.380 --> 00:43:03.240
+it if there is a mistake because I don't think that there is
+
+00:43:03.240 --> 00:43:07.840
+a mistake here invalid vector value passed cannot be
+
+00:43:07.840 --> 00:43:10.720
+interpreted class string there
+
+00:43:50.910 --> 00:43:56.270
+is a tuple issue so it's
+
+00:44:03.050 --> 00:44:04.750
+a minor mistake guys
+
+00:44:08.100 --> 00:44:11.820
+okay now it's done yeah the only mistake was basically it
+
+00:44:11.820 --> 00:44:15.140
+was expecting inside the list this as a tuple that's it
+
+00:44:15.140 --> 00:44:17.640
+means like inside the list we can try to keep a multiple
+
+00:44:17.640 --> 00:44:22.260
+item this is only one item so means for one item id I am
+
+00:44:22.260 --> 00:44:24.180
+trying to give basically a primary key I am trying to give
+
+00:44:24.180 --> 00:44:26.360
+embedding vector I am trying to give and this is just a meta
+
+00:44:26.360 --> 00:44:29.240
+information trying to attach yeah this is just a meta
+
+00:44:29.240 --> 00:44:31.720
+information which I am trying to attach along with this one
+
+00:44:31.720 --> 00:44:35.320
+as simple as that so here upserted record count is equal to
+
+00:44:35.320 --> 00:44:39.300
+one now if I'll go and check so it has upserted the record
+
+00:44:39.300 --> 00:44:44.740
+where is my pine cone so my pine cone and yeah as you can
+
+00:44:44.740 --> 00:44:49.340
+see that it has upserted this item id name is equal to the
+
+00:44:49.340 --> 00:44:51.260
+answer this is the meta information it is trying to showcase
+
+00:44:51.260 --> 00:44:55.660
+to me right and then if I'm going to click on fetch so you
+
+00:44:55.660 --> 00:44:58.280
+must be able to see the embed things so this is what it is
+
+00:44:58.280 --> 00:45:02.260
+trying to do so item id values and then meta information
+
+00:45:02.260 --> 00:45:04.880
+meta information is equals to name is equal to this is what
+
+00:45:04.880 --> 00:45:08.300
+I'm trying to save and whatever you want you will be able to
+
+00:45:08.300 --> 00:45:11.800
+save it you can try to even give a name space I'll talk
+
+00:45:11.800 --> 00:45:14.360
+about name space in some time so it's a like a very simple
+
+00:45:14.360 --> 00:45:17.760
+but amazing concept you will be able to find out and you can
+
+00:45:17.760 --> 00:45:20.560
+come over here you can try to even edit the record you can
+
+00:45:20.560 --> 00:45:23.300
+try to give a name space you can try to give an id over here
+
+00:45:23.300 --> 00:45:27.080
+you can try to add as many as like a meta value if you want
+
+00:45:27.080 --> 00:45:29.680
+you can try to give as many as pass value as you want so
+
+00:45:29.680 --> 00:45:33.560
+from if like this database itself you will be able to make a
+
+00:45:33.560 --> 00:45:37.040
+changes but yeah it shows that that I'm able to store my
+
+00:45:37.040 --> 00:45:41.160
+information so item id is equals to zero zero one uh meta
+
+00:45:41.160 --> 00:45:44.080
+information also and then I'm able to store this particular
+
+00:45:44.080 --> 00:45:48.700
+like a record over here is it making sense to all of us guys
+
+00:45:48.700 --> 00:45:54.840
+let me ping you this code yeah santosh
+
+00:46:08.630 --> 00:46:11.230
+has pinged me this code even this will work everything will
+
+00:46:11.230 --> 00:46:14.430
+work so what's on those is trying to do is so vector id id
+
+00:46:14.430 --> 00:46:17.370
+is equal to this value is equal to embedded to list it is
+
+00:46:17.370 --> 00:46:20.490
+trying to take and then metadata is equals to so meta wise
+
+00:46:20.490 --> 00:46:24.450
+you are trying to store the like I believe the text that you
+
+00:46:24.450 --> 00:46:27.950
+are trying to store and yeah so even this will this will
+
+00:46:27.950 --> 00:46:36.320
+work basically so maybe inside the same like a index I can
+
+00:46:36.320 --> 00:46:41.980
+try to store even this one my embedding is basically not
+
+00:46:41.980 --> 00:46:46.200
+just embedding data so I'll be using that and then I'll try
+
+00:46:46.200 --> 00:46:49.420
+to store even that information yeah so update count is
+
+00:46:49.420 --> 00:46:53.520
+equals to two and then maybe uh ankit has also pinged me
+
+00:46:53.520 --> 00:46:57.340
+something so let me check what ankit has done okay so ankit
+
+00:46:57.340 --> 00:47:02.520
+has done almost the same thing yeah so ankit has done the
+
+00:47:02.520 --> 00:47:06.840
+same thing uh even this is going to work so let me name it
+
+00:47:06.840 --> 00:47:09.860
+as a zero zero two so that there should not be any kind of a
+
+00:47:09.860 --> 00:47:13.180
+conflict email data is not defined embeddings data
+
+00:47:14.440 --> 00:47:19.600
+embeddings data okay so here is a record which I am able to
+
+00:47:19.600 --> 00:47:22.880
+insert now if I'll go and check so I must be having a
+
+00:47:22.880 --> 00:47:31.540
+multiple records now yeah so inside one indexes so I have
+
+00:47:31.540 --> 00:47:35.520
+basically multiple record as you can see so we have a record
+
+00:47:35.520 --> 00:47:39.320
+we have a record over here and then we have a record in this
+
+00:47:39.320 --> 00:47:43.480
+particular place I can try to check one by one all of these
+
+00:47:43.480 --> 00:47:47.920
+records so item info personal information ankit name this
+
+00:47:47.920 --> 00:47:52.180
+one so he has given that meta information so as per your
+
+00:47:52.180 --> 00:47:55.040
+information it is trying to store all of these information
+
+00:47:55.040 --> 00:47:59.980
+inside your databases making sense guys we are able to store
+
+00:47:59.980 --> 00:48:00.620
+some information
+
+00:48:46.680 --> 00:48:49.320
+how to retrieve information we stored I'll be talking about
+
+00:48:49.320 --> 00:48:50.940
+it just wait yeah
+
+00:48:54.650 --> 00:48:59.430
+so basically we are able to create indexes we are able to
+
+00:48:59.430 --> 00:49:04.670
+store the data into a particular indexes that that's
+
+00:49:04.670 --> 00:49:10.170
+completely fine right so now it's time to maybe like query
+
+00:49:10.170 --> 00:49:12.930
+the information right maybe it's time to query the
+
+00:49:12.930 --> 00:49:16.790
+information so here what we can do is so let's suppose if we
+
+00:49:16.790 --> 00:49:21.150
+have to fetch just based on the ids right the ids that we
+
+00:49:21.150 --> 00:49:24.910
+have given or by default system is going to give the ids so
+
+00:49:24.910 --> 00:49:27.650
+I can try to do one thing so I can try to write index dot
+
+00:49:27.650 --> 00:49:31.650
+fetch over here right fetch over here and And then over
+
+00:49:31.650 --> 00:49:35.090
+here, so I can try to pass basically inside this, I can try
+
+00:49:35.090 --> 00:49:38.650
+to pass basically IDs, right? I can try to pass over here
+
+00:49:38.650 --> 00:49:42.030
+IDs and then based on the IDs, it will be able to fetch the
+
+00:49:42.530 --> 00:49:45.370
+information. So for example, if I would like to fetch just
+
+00:49:45.370 --> 00:49:48.690
+this information, so I can just try to give the name of the
+
+00:49:48.690 --> 00:49:52.530
+IDs. I can even list down the IDs and I will be able to
+
+00:49:52.530 --> 00:49:54.930
+fetch the information that what kind of information which
+
+00:49:54.930 --> 00:49:58.650
+has been stored inside the pine cone. This is just based on
+
+00:49:58.650 --> 00:50:02.670
+the like IDs, simple search or simple, like any kind of
+
+00:50:02.670 --> 00:50:04.930
+operation that we try to perform with respect to any other
+
+00:50:04.930 --> 00:50:09.730
+databases. Now, if we have to do a search based on the
+
+00:50:09.730 --> 00:50:14.130
+similarity, then how I will be able to do a search based on
+
+00:50:14.130 --> 00:50:17.910
+the similarity. So yeah, it is able to fetch all this
+
+00:50:17.910 --> 00:50:21.030
+information, right? Fetch response. I'm able to get it. I'm
+
+00:50:21.030 --> 00:50:24.650
+able to get my vector values over here. Now, let's suppose I
+
+00:50:24.650 --> 00:50:27.870
+have to perform the search over here. So how I will be able
+
+00:50:27.870 --> 00:50:31.490
+to do a search, for example, so let's suppose I have a text
+
+00:50:31.490 --> 00:50:35.150
+information over here, right? I have a text information over
+
+00:50:35.150 --> 00:50:40.170
+here and the text says that, that my name is, my name is
+
+00:50:40.170 --> 00:50:44.730
+Sudhanshu, right? This is my text. Now I have to fetch
+
+00:50:44.730 --> 00:50:48.710
+information from my DB. So which is closer to this
+
+00:50:48.710 --> 00:50:51.070
+particular text. This is what we do in terms of vector
+
+00:50:51.070 --> 00:50:53.730
+search, right? That my name is Sudhanshu is one of the
+
+00:50:53.730 --> 00:50:56.790
+sentence. Now with this, with respect to this. This
+
+00:50:56.790 --> 00:51:00.370
+sentence, which sentence is closer inside my DB, right?
+
+00:51:00.430 --> 00:51:04.190
+Inside my pine cone. So how I will be able to do that. So to
+
+00:51:04.190 --> 00:51:07.410
+do that, first of all, I have to convert this input text.
+
+00:51:07.510 --> 00:51:10.450
+This is my input text, right? So I have to convert my input
+
+00:51:10.450 --> 00:51:13.570
+text basically in what? So I have to convert my input text
+
+00:51:13.570 --> 00:51:18.390
+into embeddings because, and again, inside your like a pine
+
+00:51:18.390 --> 00:51:21.530
+cone, it is trying to perform those operations, similarity
+
+00:51:21.530 --> 00:51:25.050
+check operation with respect to vector to vector. Yeah. So
+
+00:51:25.050 --> 00:51:28.370
+to convert this into a embedding. I'm going to use our same
+
+00:51:28.370 --> 00:51:31.470
+function, the function which I've used to for the storage.
+
+00:51:31.530 --> 00:51:34.270
+So text, now this is going to give me embeddings,
+
+00:51:37.110 --> 00:51:40.410
+embeddings to search,
+
+00:51:44.210 --> 00:51:46.830
+let's suppose, right? So this is going to give me embeddings
+
+00:51:46.830 --> 00:51:49.370
+for our searching purposes. So, okay, I, first of all, I'm
+
+00:51:49.370 --> 00:51:52.170
+converting this entire information into its embeddings. So
+
+00:51:52.170 --> 00:51:55.890
+embedding to search. And then what I can do is I can try to
+
+00:51:55.890 --> 00:52:02.430
+call my INDX index dot query over here now here. So query
+
+00:52:02.430 --> 00:52:05.230
+wise. I'm going to pass my vector. So based on the vector.
+
+00:52:05.310 --> 00:52:07.610
+So what's my vector embedding to search. This is my vector.
+
+00:52:07.990 --> 00:52:12.270
+So this is my vector and then how many result I'm looking
+
+00:52:12.270 --> 00:52:15.370
+for. So maybe I'm looking for a top case. So give me just
+
+00:52:15.370 --> 00:52:18.410
+top two result, which is matching to this one and then
+
+00:52:18.410 --> 00:52:22.750
+include metadata. There is a parameter I N C L U D E include
+
+00:52:22.750 --> 00:52:25.610
+underscore M E T A D A T A. So whenever you are showing me
+
+00:52:25.610 --> 00:52:28.550
+this record, show me it's metadata as well. So give me a
+
+00:52:28.550 --> 00:52:31.410
+true, otherwise you can skip this particular part. That's
+
+00:52:31.410 --> 00:52:34.930
+completely fine. Now, this is going to give you basically a
+
+00:52:34.930 --> 00:52:39.950
+result, R E S U L T result, R E S U L T result. And then you
+
+00:52:39.950 --> 00:52:44.290
+can try to maybe like, uh, put into this result or into this
+
+00:52:44.290 --> 00:52:49.050
+result. So this is our vector search making sense guys.
+
+00:52:49.630 --> 00:52:52.810
+Okay. There is some spelling mistake, unable to prepare the
+
+00:52:52.810 --> 00:52:58.170
+ND area for serialization. Okay, fine. So here I have made
+
+00:52:58.170 --> 00:53:01.770
+as very small mistake. Just do a two list.
+
+00:53:09.290 --> 00:53:12.930
+So this is basically a vector search, I believe same thing
+
+00:53:12.930 --> 00:53:15.090
+we have done even last time with respect to a chroma DB.
+
+00:53:24.180 --> 00:53:27.140
+Fine guys, how we can retrieve the information based on the
+
+00:53:27.140 --> 00:53:29.760
+vector. So based on the ID, I can try to retrieve based on
+
+00:53:29.760 --> 00:53:32.360
+the name space. I can try to retrieve based on the vector
+
+00:53:32.360 --> 00:53:36.320
+search. I will be able to retrieve it. It's very easy. So,
+
+00:53:36.380 --> 00:53:40.040
+yeah, as you can see that first five values. So like, uh, I,
+
+00:53:40.160 --> 00:53:44.440
+two, three. Item number, item ID two. So it's a matching a
+
+00:53:44.440 --> 00:53:47.860
+more closer to this one. And item number one is matching
+
+00:53:47.860 --> 00:53:51.440
+more close to this one. So item number one score is
+
+00:53:51.440 --> 00:53:56.420
+basically 62% and then 62.5566661. Both of them are like
+
+00:53:56.420 --> 00:53:59.640
+giving me similar kind of a score. So yeah, these are the
+
+00:53:59.640 --> 00:54:04.340
+top two, which I'm able to get. These two informations is
+
+00:54:04.340 --> 00:54:07.980
+very much closer to the data that I'm trying to search for.
+
+00:54:10.530 --> 00:54:14.710
+Yeah. So this is basically. A vector based search, and this
+
+00:54:14.710 --> 00:54:17.870
+is the search, which I will be using at the time of a RIG.
+
+00:54:18.470 --> 00:54:21.430
+So whenever I'll try to like a builder RIG system, I'll try
+
+00:54:21.430 --> 00:54:24.770
+to attach this one along with my search query, and then I'll
+
+00:54:24.770 --> 00:54:28.690
+try to search inside my query, inside my LLMs. Making sense
+
+00:54:28.690 --> 00:54:32.010
+guys, anyone who is having a doubt, question queries, please
+
+00:54:32.010 --> 00:54:32.530
+let me know.
+
+00:54:37.110 --> 00:54:38.510
+Yeah. Anil your doubt is clear.
+
+00:54:44.610 --> 00:54:47.410
+All right. So we are able to insert it. We are able to
+
+00:54:47.410 --> 00:54:47.970
+delete it.
+
+00:55:02.230 --> 00:55:06.030
+Yeah. There is something called as like a. Namespace. So
+
+00:55:06.030 --> 00:55:09.270
+whenever we try to like a store the data, so we can try to
+
+00:55:09.270 --> 00:55:13.310
+maybe create a namespace inside the namespace. Uh, we can
+
+00:55:13.310 --> 00:55:18.150
+try to basically create a indexes. So for example, again, so
+
+00:55:18.150 --> 00:55:22.050
+this will help, uh, like, uh, out a system to cluster the
+
+00:55:22.050 --> 00:55:24.650
+information into, uh, different, different, like, uh,
+
+00:55:24.710 --> 00:55:29.030
+namespaces. So here, if you will come, they must have given
+
+00:55:29.030 --> 00:55:32.610
+you one picture. Let me find out that.
+
+00:55:38.960 --> 00:55:46.930
+So what is. A namespace by the way. So. Yeah. So now this is
+
+00:55:46.930 --> 00:55:49.570
+the picture which has been given to you. So see guys, what
+
+00:55:49.570 --> 00:55:52.950
+happens is namespace helps you out to again, store a data
+
+00:55:52.950 --> 00:55:56.330
+into a optimized way and search our data into the optimized
+
+00:55:56.330 --> 00:55:58.570
+way. So this is the architecture of the namespace that you
+
+00:55:58.570 --> 00:56:03.370
+will be able to find out. So here inside like a index a.
+
+00:56:03.910 --> 00:56:06.410
+Right. So let's suppose I have created the index a, so I can
+
+00:56:06.410 --> 00:56:10.070
+try to divide this index a on all the information, which I'm
+
+00:56:10.070 --> 00:56:14.170
+trying to store into namespace. One, two, and three. means I
+
+00:56:14.170 --> 00:56:17.150
+can adjust like I'm giving ID ID is been attached to the
+
+00:56:17.150 --> 00:56:20.690
+record again on top of that so we can try to create another
+
+00:56:20.690 --> 00:56:23.050
+different different kind of a cluster or segment you can say
+
+00:56:23.050 --> 00:56:26.150
+and then inside a namespace I will be able to store this
+
+00:56:26.150 --> 00:56:28.210
+this this this this information this this this this
+
+00:56:28.210 --> 00:56:32.830
+information so maybe I can try to like do a absurd or maybe
+
+00:56:32.830 --> 00:56:36.430
+I can try to query one namespace at one point of a time so
+
+00:56:36.430 --> 00:56:39.110
+in this way things will be even more structure and things
+
+00:56:39.110 --> 00:56:44.330
+will be even more aligned now what does that mean by the way
+
+00:56:44.330 --> 00:56:48.130
+so it's nothing but let's suppose I have my PC so my PC is
+
+00:56:48.130 --> 00:56:50.510
+equal to let's suppose index my computer is all let's
+
+00:56:50.510 --> 00:56:53.410
+suppose I have a C drive right my C drive is equal to my
+
+00:56:53.410 --> 00:56:57.030
+index for example again this concept is very much like a
+
+00:56:57.030 --> 00:56:59.210
+popular with respect to any databases so let's suppose I
+
+00:56:59.210 --> 00:57:03.090
+have a C drive so my C drive is basically a index I'm going
+
+00:57:03.090 --> 00:57:07.930
+to consider this as a index okay this is like here yeah so
+
+00:57:07.930 --> 00:57:11.490
+this C drive is basically our index I have now inside a C
+
+00:57:11.490 --> 00:57:15.670
+drive I'm going to create a multiple directory right I'm
+
+00:57:15.670 --> 00:57:18.570
+going to create a multiple directory so directory number dir
+
+00:57:18.570 --> 00:57:23.390
+like one dir maybe a two then three and then four now inside
+
+00:57:23.390 --> 00:57:26.730
+this directory so I'm going to keep a file so excel file
+
+00:57:26.730 --> 00:57:29.710
+let's suppose excel sheet I'm trying to keep so a b and then
+
+00:57:29.710 --> 00:57:35.430
+c then d e f then e f g i j k and so on right so this is
+
+00:57:35.430 --> 00:57:38.410
+what a namespace works like so it just try to create the
+
+00:57:38.410 --> 00:57:42.010
+hierarchy right hierarchy so that my data segregation will
+
+00:57:42.010 --> 00:57:44.850
+be much better that's it this is where the namespace comes
+
+00:57:44.850 --> 00:57:48.930
+into a picture now so whenever you are trying to store the
+
+00:57:48.930 --> 00:57:51.990
+information so you can try to attach or you can try to give
+
+00:57:51.990 --> 00:57:55.830
+a namespace as a parameter so that all of that in that
+
+00:57:55.830 --> 00:57:59.950
+information will be stored in one of the namespace for
+
+00:57:59.950 --> 00:58:04.030
+example I'm going to show you just now right so let me show
+
+00:58:04.030 --> 00:58:06.450
+you a practical implementation of it I'll take one of the
+
+00:58:06.450 --> 00:58:06.550
+namespace in this case so let me show you a practical
+
+00:58:06.550 --> 00:58:06.590
+implementation of it
+
+00:58:10.110 --> 00:58:11.350
+I'll take one of the namespace so let's takes this data.
+
+00:58:11.450 --> 00:58:15.170
+Okay. I'll take this data itself. So let's suppose I'm
+
+00:58:15.170 --> 00:58:18.530
+trying to store this data, right? So this is one of the
+
+00:58:18.530 --> 00:58:25.150
+instance of this data control C now comma control V comma
+
+00:58:25.150 --> 00:58:28.990
+control V comma control V comma control V comma control V
+
+00:58:28.990 --> 00:58:33.270
+comma control V comma control V comma control V. Okay. So
+
+00:58:33.270 --> 00:58:38.250
+now how many records we have now? Let's see how many records
+
+00:58:38.250 --> 00:58:38.990
+we have now.
+
+00:58:45.040 --> 00:58:48.940
+Okay. So can I say that I have so many records over here and
+
+00:58:48.940 --> 00:58:51.920
+item ID I'm going to change. So item ID is equal to two
+
+00:58:51.920 --> 00:58:54.280
+everywhere. I'm storing the same data. For example, just
+
+00:58:54.280 --> 00:59:03.500
+assume for that four, then five, then six, then seven, then
+
+00:59:03.500 --> 00:59:08.520
+eight, then nine. Yeah. So total nine record I'm trying to
+
+00:59:08.520 --> 00:59:12.280
+store. Fine. Total nine record I am trying to store. Now as
+
+00:59:12.280 --> 00:59:15.660
+per this diagram, if you will go and check. So total nine
+
+00:59:15.660 --> 00:59:18.520
+records. As you can see, see records, right? So total nine
+
+00:59:18.520 --> 00:59:21.100
+records I'm trying to store. Index I have already defined.
+
+00:59:21.420 --> 00:59:24.180
+So whatever indexes, which I'm calling in that index, it is
+
+00:59:24.180 --> 00:59:26.320
+going to like, so downstream index, it is going to store
+
+00:59:26.320 --> 00:59:30.480
+each and everything. Now all the nine, like this record, I
+
+00:59:30.480 --> 00:59:36.400
+can tag to one name space, basically N A M E S P A C S P A C
+
+00:59:36.400 --> 00:59:41.260
+name space is equals to like S U D H. So the one name space.
+
+00:59:41.520 --> 00:59:45.820
+Fine. So now it is going to store this entire information.
+
+00:59:45.820 --> 00:59:49.260
+It is going to update this entire information into one of
+
+00:59:49.260 --> 00:59:52.520
+the name space. It is going to attach it. Now I'll go and
+
+00:59:52.520 --> 00:59:55.680
+I'll try to check. So whether it has attached it or not.
+
+01:00:00.810 --> 01:00:03.530
+Yeah. So as you can see now, one name space has been
+
+01:00:03.530 --> 01:00:07.910
+created. Okay. This is the default one by the way. No, I
+
+01:00:07.910 --> 01:00:10.330
+think it has not stored. What, what happened?
+
+01:00:17.910 --> 01:00:25.410
+Oh, it has converted into the C's file. Fine. Absorted count
+
+01:00:25.410 --> 01:00:28.850
+is equal to nine. Now if I'll go and check. So inside one
+
+01:00:28.850 --> 01:00:32.250
+name space, it must have a stored. So even if you are not
+
+01:00:32.250 --> 01:00:35.170
+going to create a name space, it will create a default name
+
+01:00:35.170 --> 01:00:37.910
+space. Now, as you can see, so aren't you? And then nine,
+
+01:00:37.990 --> 01:00:41.410
+then action, a delete, and then here. So you can try to
+
+01:00:41.410 --> 01:00:44.370
+browse all of these information and then you will be able to
+
+01:00:44.370 --> 01:00:47.470
+see it has even showing you the name space that, okay, fine.
+
+01:00:47.590 --> 01:00:51.290
+So this belongs to this one name space. So just like this,
+
+01:00:51.390 --> 01:00:54.630
+one name space, I have a stored nine number of records. Now,
+
+01:00:54.730 --> 01:00:58.170
+similarly, I can try to like, uh, take this record. I can
+
+01:00:58.190 --> 01:01:02.750
+take this one and then inside another bucket, I'm going to a
+
+01:01:02.750 --> 01:01:06.210
+store. So this will be a stored inside SUDH two. So this
+
+01:01:06.210 --> 01:01:10.370
+actually helps you out even to like a, instead of a store,
+
+01:01:10.490 --> 01:01:13.150
+instead of exploring the entire data. So maybe I can try to
+
+01:01:13.150 --> 01:01:16.970
+like do a search and I can try to optimize my search query.
+
+01:01:17.050 --> 01:01:19.890
+So where it is going to help me out by the way, guys. So it
+
+01:01:19.890 --> 01:01:22.670
+is going to help me out in terms of a search. For example,
+
+01:01:22.730 --> 01:01:28.190
+uh, maybe I have a millions of records, millions of records.
+
+01:01:28.190 --> 01:01:30.690
+And then I have a 10 name. I have a three name space, for
+
+01:01:30.690 --> 01:01:33.570
+example. So name space, number one, name space, number two,
+
+01:01:33.590 --> 01:01:35.690
+and name space, number three, and I have a millions of
+
+01:01:35.690 --> 01:01:40.630
+records now. So let's suppose like a, I have like a 3
+
+01:01:40.630 --> 01:01:43.730
+million record here, 3 million record here, 3 million record
+
+01:01:43.730 --> 01:01:47.650
+here. Now, whenever I'm trying to fire a query on this
+
+01:01:47.650 --> 01:01:52.050
+indexes. So inside this index, total number of record is
+
+01:01:52.050 --> 01:01:55.230
+equals to 9 million, right? Total number of records is equal
+
+01:01:55.230 --> 01:01:58.030
+to 9 million. So this query is supposed to do a matching
+
+01:01:58.190 --> 01:02:01.870
+with 9 million, right? 9 million basically. But let's
+
+01:02:01.870 --> 01:02:04.610
+suppose if I'm trying to give a name space, I'm trying to
+
+01:02:04.610 --> 01:02:06.830
+give a bucketing name space. I'm saying that, that, okay,
+
+01:02:06.890 --> 01:02:10.310
+no, don't search everywhere. Just try to search on this name
+
+01:02:10.310 --> 01:02:12.890
+space, this particular name space. So from 9 million,
+
+01:02:13.070 --> 01:02:15.770
+instead of doing a search on 9 million, I can try to do a
+
+01:02:15.770 --> 01:02:18.630
+search only on 3 million. So this is where name space is
+
+01:02:18.630 --> 01:02:21.130
+going to help you out. So this is just a, like a bucketing,
+
+01:02:21.150 --> 01:02:24.370
+I would say, right? So bucketing, I would say in this
+
+01:02:24.370 --> 01:02:26.870
+particular place, the bucketing concept that we used to
+
+01:02:26.870 --> 01:02:32.090
+like, uh, understand even in case of a SQL system, right? So
+
+01:02:32.090 --> 01:02:36.670
+hope all of you are able to understand like a name space. So
+
+01:02:36.670 --> 01:02:40.410
+name space is nothing but just a partition, uh, into the
+
+01:02:40.410 --> 01:02:45.090
+name space and all update, uh, query absurd queries and
+
+01:02:45.090 --> 01:02:48.470
+others data operation always target one name space. This has
+
+01:02:48.470 --> 01:02:51.950
+two main benefit. One is a multi tenancy and another one is
+
+01:02:51.950 --> 01:02:54.510
+a faster query. So this is the advantage that you will be
+
+01:02:54.510 --> 01:02:56.730
+able to get. And again, this concepts are nothing new. It's
+
+01:02:56.730 --> 01:02:59.190
+coming from the database. This is the data basis that we are
+
+01:02:59.190 --> 01:03:02.250
+using. Even the legacy one everywhere. So we try to like,
+
+01:03:02.290 --> 01:03:06.830
+uh, use the exact same. Is it making sense to all of us
+
+01:03:06.830 --> 01:03:07.010
+guys?
+
+01:03:10.280 --> 01:03:10.700
+Yes.
+
+01:03:14.400 --> 01:03:15.000
+Name space.
+
+01:03:25.160 --> 01:03:28.080
+Name space is similar to schema. No, basically it's an index
+
+01:03:28.080 --> 01:03:30.620
+is similar to schema. Name space is basically similar to a
+
+01:03:30.620 --> 01:03:30.940
+partition.
+
+01:03:36.940 --> 01:03:41.480
+Okay. Now moving ahead. And let's try to see something like
+
+01:03:41.480 --> 01:03:44.940
+a different over here. So I believe this pine cone is clear.
+
+01:03:45.040 --> 01:03:47.520
+Pine cone is clear to all of us. Now, let's move to the
+
+01:03:47.520 --> 01:03:50.880
+name. Next database. And that database is basically a baby.
+
+01:03:51.000 --> 01:03:54.400
+So as per your syllabus, let's try to understand baby.
+
+01:03:54.460 --> 01:03:57.040
+Again, baby, it is a managed one. I can try to log in first
+
+01:03:57.040 --> 01:04:00.420
+and then I can try to show it to you. So baby, it is again,
+
+01:04:00.500 --> 01:04:03.480
+not a big deal to handle. Uh, easily you will be able to
+
+01:04:03.480 --> 01:04:08.660
+handle it, but, but the homework for today from this pine
+
+01:04:08.660 --> 01:04:12.040
+cone is try to go through all of this update, insert, fetch,
+
+01:04:12.240 --> 01:04:15.960
+delete at least once executed in your system, the store, the
+
+01:04:15.960 --> 01:04:19.820
+information, and then forget about it. Right. Because there
+
+01:04:19.820 --> 01:04:23.480
+is nothing inside a pine cone or on any of this DB that it
+
+01:04:23.480 --> 01:04:26.740
+should go twice or thrice. It's like a very simple to
+
+01:04:26.740 --> 01:04:29.820
+implement. So nothing much, but at least once just go
+
+01:04:29.820 --> 01:04:32.580
+through it and then leave it because we are anyhow going to
+
+01:04:32.580 --> 01:04:33.160
+use this one.
+
+01:04:42.590 --> 01:04:48.600
+So database baby yet. So just try to log, just try to go to
+
+01:04:48.600 --> 01:04:52.180
+a baby at guys and a similar kind of operation. We all will
+
+01:04:52.180 --> 01:04:56.480
+be able to do even in case of a baby yet. So here allow,
+
+01:04:56.560 --> 01:04:56.900
+all.
+
+01:05:00.360 --> 01:05:06.530
+Now, so click on, try now. Now. So let's go ahead and this,
+
+01:05:06.550 --> 01:05:11.510
+try to create the account. So email ID is okay.
+
+01:05:22.090 --> 01:05:25.150
+First of all, let me do a sign up. I have an account with a
+
+01:05:25.150 --> 01:05:31.850
+different one. So email, I did this, then password sign
+
+01:05:36.300 --> 01:05:37.560
+up email
+
+01:05:40.400 --> 01:05:40.920
+verification.
+
+01:05:55.090 --> 01:06:00.470
+Okay. This is done. Right. This is done. Now what we can do.
+
+01:06:00.550 --> 01:06:03.090
+So again, we can try to go ahead with the, you're, similar
+
+01:06:03.090 --> 01:06:07.310
+kind of approach this is again another just a db that you
+
+01:06:07.310 --> 01:06:12.410
+will be able to find out and are you able to log in guys
+
+01:06:12.410 --> 01:06:14.830
+everyone so please say yes or no inside your chat
+
+01:06:32.010 --> 01:06:35.110
+yeah so are you able to log inside the like a waviot guys
+
+01:06:35.110 --> 01:06:36.250
+yeah
+
+01:06:46.970 --> 01:06:48.150
+amman is saying yes okay
+
+01:07:41.960 --> 01:07:45.400
+now so they have given you the documentation over here maybe
+
+01:07:45.400 --> 01:07:49.400
+i can try to click on read map more but before that so you
+
+01:07:49.400 --> 01:07:52.080
+have to do what so you have to create a cluster so unless i
+
+01:07:52.080 --> 01:07:54.940
+don't have a cluster so you will not be able to do anything
+
+01:07:54.940 --> 01:07:58.300
+and inside your cluster so everything will be like up and
+
+01:07:58.300 --> 01:08:00.640
+running so they are giving you a sandbox they are giving you
+
+01:08:00.640 --> 01:08:03.900
+a serverless and they are giving you enterprise so for
+
+01:08:03.900 --> 01:08:06.340
+enterprise you have to contact the sale for serverless you
+
+01:08:06.340 --> 01:08:09.700
+have to like add a billing information but sandbox is
+
+01:08:09.700 --> 01:08:12.020
+basically for the practice you will be able to get some
+
+01:08:12.020 --> 01:08:15.360
+limited space over here again a limited shared space you
+
+01:08:15.360 --> 01:08:18.580
+will be able to get and you can create a sandbox in this
+
+01:08:18.580 --> 01:08:22.300
+particular place with like a couple of clicks so just you
+
+01:08:22.320 --> 01:08:24.740
+click on this cluster create cluster and then otherwise you
+
+01:08:24.740 --> 01:08:28.260
+can come over here and then again you can start from here so
+
+01:08:28.260 --> 01:08:31.500
+create cluster and like i said serverless and for enterprise
+
+01:08:31.500 --> 01:08:34.020
+so you have to pay the price for sandbox you don't have to
+
+01:08:34.020 --> 01:08:37.680
+pay the price so here click and then create it so here i can
+
+01:08:37.680 --> 01:08:41.460
+try to give my cluster name so cluster name is basically a
+
+01:08:41.460 --> 01:08:44.560
+uran cluster i'm going to create so click on create guys
+
+01:08:44.560 --> 01:08:51.090
+okay so it is trying to make my uran cluster up and running
+
+01:08:51.090 --> 01:08:55.770
+as of now it's like a commencing this entire cluster so just
+
+01:08:55.770 --> 01:08:58.390
+wait for a couple of minute and it will be done then
+
+01:08:58.390 --> 01:09:03.250
+obviously i will be able to hit my entire cluster pinecone
+
+01:09:20.120 --> 01:09:23.900
+and baby-ate are doing the exact same job yes almost same
+
+01:09:23.900 --> 01:09:27.940
+job both we are trying to use even your like a chroma db
+
+01:09:27.940 --> 01:09:29.980
+that i have discussed my previous class that was doing the
+
+01:09:29.980 --> 01:09:33.480
+same job i was trying to store the embeddings even the fa
+
+01:09:33.480 --> 01:09:37.340
+iss facebook aic mouth that is going to do the same thing
+
+01:09:37.340 --> 01:09:40.540
+but there is a bit of like a difference as you will be able
+
+01:09:40.540 --> 01:09:40.540
+to like a lot of these things that's just for management of
+
+01:09:40.540 --> 01:09:40.540
+my code for example let's work on this everybody i objected
+
+01:09:40.540 --> 01:09:40.540
+to get to this j認 appears that it is a code but it will pass
+
+01:09:40.540 --> 01:09:40.540
+it to the projectами that will pass skills but you have to
+
+01:09:40.540 --> 01:09:40.540
+start with stinks in this one but the basis is that you have
+
+01:09:40.540 --> 01:09:42.660
+to like a不會 be able to find out not just in terms of
+
+01:09:42.660 --> 01:09:44.880
+implementation obviously in terms of syntaxes it's different
+
+01:09:44.880 --> 01:09:48.160
+but yeah even in terms of the way it stores the data and the
+
+01:09:48.160 --> 01:09:51.420
+philosophy down the line that they're trying to use it okay
+
+01:10:09.500 --> 01:10:14.760
+so it is taking some time to like uh create my cluster
+
+01:11:05.090 --> 01:11:08.910
+okay manju mirtyunja is saying set three seven sixty eight
+
+01:11:08.910 --> 01:11:12.270
+dimension is chosen here it would be one five three six yeah
+
+01:11:12.270 --> 01:11:14.630
+i have chosen the default one okay
+
+01:11:22.760 --> 01:11:26.020
+so now it seems that like uh my cluster is up and running
+
+01:11:26.020 --> 01:11:26.680
+and
+
+01:11:34.290 --> 01:11:39.630
+then i could try to click on correct now here so they have
+
+01:11:39.630 --> 01:11:45.550
+given you basically a complete like a documentation even for
+
+01:11:45.550 --> 01:11:49.510
+this one so this is going to help you out in terms of
+
+01:11:49.510 --> 01:11:52.670
+connecting with the baby in a very first place so with the
+
+01:11:52.670 --> 01:11:56.070
+help of these things you will be able to connect it now
+
+01:11:56.070 --> 01:12:00.930
+let's let's like try to connect each and like everything so
+
+01:12:00.930 --> 01:12:05.150
+with the baby it so here i can just try to copy this example
+
+01:12:05.150 --> 01:12:11.010
+python example and then i can try to paste it i can remove
+
+01:12:11.010 --> 01:12:14.590
+it here so baby at url and api key is required right so here
+
+01:12:14.590 --> 01:12:20.250
+i can directly like give a baby at uh url and then i can try
+
+01:12:20.250 --> 01:12:23.830
+to give a baby at api key so what is the baby at url so baby
+
+01:12:23.830 --> 01:12:26.570
+at url you can get it from here from your connector string
+
+01:12:26.570 --> 01:12:32.290
+so this is my baby at url i'm going to give a baby at url by
+
+01:12:32.290 --> 01:12:36.670
+the way and my api key so i can try to get my api's key from
+
+01:12:36.670 --> 01:12:43.530
+here so api keys and then copy admin api keys and i can try
+
+01:12:43.530 --> 01:12:47.390
+to give my api keys in this particular place for a baby at
+
+01:12:47.390 --> 01:12:50.870
+as simple as that now in this way right in this way i will
+
+01:12:50.870 --> 01:12:54.110
+be able to connect with the baby but before that so i have
+
+01:12:54.110 --> 01:12:56.290
+to do installation without installation i will not be able
+
+01:12:56.290 --> 01:12:59.710
+to touch my baby so to install do the installation you have
+
+01:12:59.710 --> 01:13:03.250
+to give a pip install bivyad client so you have to install
+
+01:13:03.250 --> 01:13:07.890
+this part so once you are going to like a install this one
+
+01:13:07.890 --> 01:13:12.270
+then obviously you will be able to call these things so
+
+01:13:12.270 --> 01:13:14.930
+let's execute this particular part and it's giving me true
+
+01:13:14.930 --> 01:13:18.690
+it's true means this is ready i am able to connect to the
+
+01:13:18.690 --> 01:13:21.590
+bivyad cluster this is what it means fine
+
+01:13:24.440 --> 01:13:26.680
+guys making sense yeah
+
+01:13:35.900 --> 01:13:37.360
+everyone so
+
+01:13:46.670 --> 01:13:47.850
+are we are we able to do it guys
+
+01:14:02.440 --> 01:14:05.440
+so are we able to cut it with the bivyad or
+
+01:14:29.990 --> 01:14:32.310
+Anjith asking me a question that is there any storage limit
+
+01:14:32.310 --> 01:14:36.070
+on these vector db's obviously if the pay per go so
+
+01:14:36.070 --> 01:14:39.770
+basically like depends how much you are using and as but
+
+01:14:39.770 --> 01:14:42.950
+that you will have to pay the price for the same thing
+
+01:14:48.830 --> 01:14:54.520
+so fine guys am i am audible to anyone guys not able to see
+
+01:14:54.520 --> 01:14:57.040
+anyone in a chat yeah
+
+01:15:08.630 --> 01:15:13.090
+so this is how I will be able to connect with the bivyad now
+
+01:15:13.090 --> 01:15:16.650
+once I am able to connect with the bivyad. I'll do the exact
+
+01:15:16.650 --> 01:15:20.010
+same thing. So I'll just try to like, you know, create the
+
+01:15:20.010 --> 01:15:24.610
+embeddings and I'll try to store the data inside those
+
+01:15:24.610 --> 01:15:27.410
+embeddings. Then I will be able to perform a search
+
+01:15:27.410 --> 01:15:33.170
+operation. How to install Baviot. This one. People install
+
+01:15:33.170 --> 01:15:33.790
+Baviot client.
+
+01:15:37.050 --> 01:15:41.030
+Yeah. So just do people install Baviot client and then you
+
+01:15:41.030 --> 01:15:44.150
+can just try to use your connect over here. So the connect
+
+01:15:44.150 --> 01:15:47.730
+cluster option which is given to you and remove this part
+
+01:15:47.730 --> 01:15:50.610
+directly copy and paste the Baviot URL. The URL is already
+
+01:15:50.610 --> 01:15:54.310
+given to you over here and your API key. So your API key is
+
+01:15:54.310 --> 01:15:56.890
+already given inside this one. So this is the admin API key.
+
+01:15:56.970 --> 01:15:59.430
+This is for just for the read only. So if you would like to
+
+01:15:59.430 --> 01:16:02.330
+share this API key with someone else. So now you will be
+
+01:16:02.330 --> 01:16:06.610
+able to like connect and then after connecting this one. So
+
+01:16:06.610 --> 01:16:11.390
+here you will be able to store now a data. So let's try to
+
+01:16:11.390 --> 01:16:14.330
+store some of the information. Let's try to store some of
+
+01:16:14.330 --> 01:16:18.850
+the data inside this Baviot. So to store the data, I'll be
+
+01:16:18.850 --> 01:16:23.350
+using first of all my generate embeddings. So this is the
+
+01:16:23.350 --> 01:16:26.730
+function I'm going to call which is a URI function and I'm
+
+01:16:26.730 --> 01:16:31.350
+going to store this is to test my Baviot
+
+01:16:34.870 --> 01:16:42.590
+database by Sudhanshu fine. So let's try to generate
+
+01:16:42.590 --> 01:16:45.890
+embeddings over here. So here. Like.
+
+01:16:48.520 --> 01:16:53.280
+Embeddings. So whatever embeddings that I will be able to
+
+01:16:53.280 --> 01:16:56.600
+generate out of this data for this particular data, I'll try
+
+01:16:56.600 --> 01:17:01.000
+to store those embeddings inside my Baviot. So here is a
+
+01:17:01.000 --> 01:17:04.040
+client which is already available to me. So I can try to
+
+01:17:04.040 --> 01:17:11.780
+call CLI CLI ENT client client. So I can try to call
+
+01:17:11.780 --> 01:17:16.240
+basically like a data. So I can call like a data underscore
+
+01:17:16.240 --> 01:17:23.000
+object dot create and then inside that I can try to give my
+
+01:17:23.000 --> 01:17:26.160
+entire information. I can try to give my entire data set. So
+
+01:17:26.160 --> 01:17:28.720
+whatever data which I would like to store so I can try to
+
+01:17:28.720 --> 01:17:32.820
+give it here and I will be able to store each and every kind
+
+01:17:32.820 --> 01:17:36.100
+of data. So here there is a parameter called as data object.
+
+01:17:37.780 --> 01:17:41.860
+There is a parameter called as data underscore OBJs OBJCT.
+
+01:17:43.440 --> 01:17:47.020
+Data object. object now inside this parameter so i can try
+
+01:17:47.020 --> 01:17:52.000
+to set my information so my text is basically what so my
+
+01:17:52.000 --> 01:17:58.560
+text is basically my like uh let's suppose i'm going to
+
+01:17:58.560 --> 01:18:04.280
+store it into some text data so
+
+01:18:21.110 --> 01:18:24.130
+this is my data right so basically i can try to write text
+
+01:18:24.130 --> 01:18:28.950
+is equals to my text data and let's suppose i am passing
+
+01:18:28.950 --> 01:18:36.070
+this text data into my embeddings fine so i have a text data
+
+01:18:36.070 --> 01:18:40.010
+over here and again so there is a parameter called as author
+
+01:18:40.010 --> 01:18:45.010
+a-u-t-h-o-r author so author is basically who so author is
+
+01:18:45.010 --> 01:18:47.950
+basically me let's suppose the meta information so s-u-d-h-n
+
+01:18:47.950 --> 01:18:53.510
+-s-h-u and then there is a another information called as
+
+01:18:53.510 --> 01:19:01.670
+class class underscore name class underscore name so class
+
+01:19:01.670 --> 01:19:05.830
+name let's suppose i'm trying to give as a meta document
+
+01:19:05.830 --> 01:19:09.070
+anything i can try to give and then i can try to like uh
+
+01:19:09.070 --> 01:19:16.330
+give a vector so vector the final things v-e-c-t-v-e-c-t-o-r
+
+01:19:16.330 --> 01:19:21.130
+vector so vector is nothing but the embeddings that we have
+
+01:19:21.130 --> 01:19:24.470
+generated so this is my embeddings so this is my embeddings
+
+01:19:24.470 --> 01:19:28.250
+dot to list as simple as that so same thing i was trying to
+
+01:19:28.250 --> 01:19:32.210
+store even inside my pine cone and same thing i'm trying to
+
+01:19:32.210 --> 01:19:35.750
+store even inside this one if everything goes well so in
+
+01:19:35.750 --> 01:19:38.390
+that case it will be able to store this particular
+
+01:19:38.390 --> 01:19:41.950
+information otherwise it will not be able to store the
+
+01:19:41.950 --> 01:19:44.490
+information so this is how i am going to store the
+
+01:19:44.490 --> 01:19:46.950
+information so beaver client object has no attribute called
+
+01:19:46.950 --> 01:19:56.130
+as data d-a-t-a-o-b-j-e-c-t data object okay so let me check
+
+01:19:56.130 --> 01:20:02.870
+i'll check its documentation they keep on changing this i'm
+
+01:20:02.870 --> 01:20:08.110
+going to follow the old material then so maybe i can try to
+
+01:20:08.110 --> 01:20:11.310
+follow along with their documentation install
+
+01:20:27.340 --> 01:20:29.940
+setup everything that we have done and they have they have
+
+01:20:29.940 --> 01:20:32.860
+created a beautiful like a again documentation as well guys
+
+01:20:32.860 --> 01:20:36.180
+so you don't have to like worry about anything but yeah so
+
+01:20:36.180 --> 01:20:43.660
+baviot define the collection so collection fine connect to
+
+01:20:43.660 --> 01:20:47.680
+baviot cloud baviot url api find collection action.create
+
+01:20:47.680 --> 01:20:51.980
+name question vectorized next to vector let
+
+01:20:57.360 --> 01:21:03.400
+me change this one so data they have changed the api data
+
+01:21:03.400 --> 01:21:12.960
+dot dot i n c r t insert text vector to list okay and they
+
+01:21:12.960 --> 01:21:20.180
+have changed even this one pro p r o p r t i e s properties
+
+01:21:20.180 --> 01:21:21.820
+let's
+
+01:21:25.210 --> 01:21:29.850
+see so data dot insert is not available okay
+
+01:21:32.470 --> 01:21:38.770
+so we have to call they have changed so client dot
+
+01:21:38.770 --> 01:21:47.740
+collection dot get and then here i can try to mention
+
+01:21:47.740 --> 01:21:51.400
+document collection
+
+01:21:54.980 --> 01:22:02.140
+so this will be collection object by the way so i can try to
+
+01:22:02.140 --> 01:22:04.300
+remove this part collection
+
+01:22:07.250 --> 01:22:10.390
+biviate failed object was not added okay
+
+01:22:20.400 --> 01:22:25.320
+i just have to check the documentation guys because last
+
+01:22:25.320 --> 01:22:28.140
+time when i was doing this it was working so maybe it
+
+01:22:28.140 --> 01:22:31.640
+depends upon the version basically so i'm using a latest
+
+01:22:31.640 --> 01:22:37.990
+version so i just have to check maybe llms and name
+
+01:22:45.450 --> 01:22:46.550
+of the collection
+
+01:22:57.850 --> 01:23:00.510
+connection connection vivid failed detail object was not
+
+01:23:00.510 --> 01:23:07.470
+added and failed because of what collection connection not
+
+01:23:07.470 --> 01:23:09.490
+available client
+
+01:23:16.880 --> 01:23:18.900
+is fine collection
+
+01:23:22.160 --> 01:23:24.280
+dot create
+
+01:23:26.460 --> 01:23:36.320
+let me check if that is available collection dot create yeah
+
+01:23:36.320 --> 01:23:38.720
+so this was the only issue collection not create so
+
+01:23:38.720 --> 01:23:40.680
+basically it is going to create the collection for me and
+
+01:23:40.680 --> 01:23:44.120
+then inside that i'm trying to store the information so this
+
+01:23:44.120 --> 01:23:47.640
+is how i'm just storing the information guys now let me go
+
+01:23:47.640 --> 01:23:53.660
+to my baviet and then try to check so this information is
+
+01:23:53.660 --> 01:23:59.220
+available or not in this place so maybe i can try to click
+
+01:23:59.220 --> 01:24:04.320
+on collections and it will bring me to the sandbox inside
+
+01:24:04.320 --> 01:24:08.200
+that there is a document name collection with the document
+
+01:24:08.200 --> 01:24:11.860
+which is available now i can try to click on properties okay
+
+01:24:40.050 --> 01:24:45.770
+so collection it is able to store and then where
+
+01:24:54.090 --> 01:24:57.210
+i can see my embeddings by the way explore
+
+01:24:59.420 --> 01:25:00.860
+so
+
+01:25:15.130 --> 01:25:18.650
+as you can see so here i am able to store the information
+
+01:25:18.650 --> 01:25:22.570
+right so i am able to store the information with this
+
+01:25:22.570 --> 01:25:25.610
+dimension and this is something that information that you
+
+01:25:25.610 --> 01:25:28.650
+are able to see so this is what baviet does guys so baviet
+
+01:25:28.650 --> 01:25:31.010
+is not doing anything different so whatever pine cone was
+
+01:25:31.010 --> 01:25:34.570
+able to do whatever chroma dv was able to do uh exact same
+
+01:25:34.570 --> 01:25:38.150
+thing even i am able to store in this particular place right
+
+01:25:38.150 --> 01:25:41.030
+so this was the text basically this is the test this is to
+
+01:25:41.030 --> 01:25:43.830
+test my baviet database by zanshu and then this is the
+
+01:25:43.830 --> 01:25:47.470
+dimension so default dimension size is equal to 1536 in
+
+01:25:47.470 --> 01:25:51.070
+which it is able to store the entire information is it
+
+01:25:51.070 --> 01:25:54.570
+making sense guys so this is basically your data this is
+
+01:25:54.570 --> 01:25:58.150
+your data now again if i am going to store it so maybe again
+
+01:25:58.150 --> 01:26:02.950
+if i am going to execute it uh so i i will be able to like
+
+01:26:02.970 --> 01:26:07.720
+uh do it again this is the duplicate one right collection
+
+01:26:07.720 --> 01:26:11.720
+may not have created properly and expected status collection
+
+01:26:14.090 --> 01:26:16.410
+document okay
+
+01:26:20.890 --> 01:26:25.070
+now not create now we have to call get otherwise it will
+
+01:26:25.070 --> 01:26:29.790
+give me an error so if you are doing for the first time just
+
+01:26:29.790 --> 01:26:33.750
+click on create if you are doing for the second time onwards
+
+01:26:33.750 --> 01:26:36.350
+with the same code because creation will happen only once
+
+01:26:36.350 --> 01:26:39.430
+collection creation will happen only once insertion you can
+
+01:26:39.430 --> 01:26:45.750
+do it as many times as possible get get get get get so now
+
+01:26:45.750 --> 01:26:49.130
+if i am going to come over here and if i am going to show
+
+01:26:49.130 --> 01:26:52.650
+you after refresh i will be able to find out not just one or
+
+01:26:52.650 --> 01:26:57.640
+two record but a multiple records making sense guys are we
+
+01:26:57.640 --> 01:27:00.500
+able to get the multiple records for the same data obviously
+
+01:27:00.500 --> 01:27:04.240
+i'm not i have not changed the data but yeah i'm able to get
+
+01:27:04.240 --> 01:27:06.840
+the multiple records so as you can see that we are able to
+
+01:27:06.840 --> 01:27:12.080
+successfully uh store our multiple records inside my baviet
+
+01:27:14.120 --> 01:27:17.340
+find everyone so we are able to connect and we are able to
+
+01:27:17.340 --> 01:27:23.460
+store the information let me ping you this code guys so like
+
+01:27:23.460 --> 01:27:25.980
+i said if you are using for the first time then use a create
+
+01:27:25.980 --> 01:27:29.960
+not get and then second time so you can try to use a get
+
+01:27:29.960 --> 01:27:33.160
+over here otherwise you can just don't execute this one
+
+01:27:33.160 --> 01:27:38.220
+again and again just execute insert query just do this one
+
+01:27:38.220 --> 01:27:42.020
+so we are able to perform the data insertion operation so
+
+01:27:42.020 --> 01:27:44.500
+anyone who is facing any kind of issue please let me know
+
+01:28:08.870 --> 01:28:13.290
+you change anything in the embedding how you changed
+
+01:28:13.290 --> 01:28:19.230
+anything in the embedding function which one where Temple
+
+01:28:19.230 --> 01:28:20.330
+where Akash I have changed
+
+01:28:26.440 --> 01:28:29.880
+embedding function i'm using the same so the same function
+
+01:28:29.880 --> 01:28:33.620
+which i was using in like uh at the time of pine con the
+
+01:28:33.620 --> 01:28:36.500
+embedding function which is available inside the uri so i'm
+
+01:28:36.500 --> 01:28:39.280
+using same embedding function i'm not using some anything
+
+01:28:39.280 --> 01:28:43.000
+different so i was using this generate embeddings and this
+
+01:28:43.000 --> 01:28:46.200
+generate embeddings is available here which I am trying to
+
+01:28:46.200 --> 01:28:48.880
+get from where, so which I am trying to get from URI, right.
+
+01:28:49.200 --> 01:28:52.660
+So I am using the same exact same embedding function without
+
+01:28:52.660 --> 01:28:53.540
+any kind of a changes.
+
+01:28:57.270 --> 01:29:00.290
+So once I am able to insert the information, now it's time
+
+01:29:00.290 --> 01:29:03.190
+to perform some sort of a search operation. So let's try to
+
+01:29:03.190 --> 01:29:06.050
+perform some sort of a search operation. So insertion is
+
+01:29:06.050 --> 01:29:09.250
+done. So I am able to see that in a cloud, I am able to
+
+01:29:09.250 --> 01:29:12.070
+insert the data, right. Insert the data. Now let's try to
+
+01:29:12.070 --> 01:29:14.370
+perform the search operation because insertion and search
+
+01:29:14.370 --> 01:29:17.130
+operation, these are the two operation I will be using most
+
+01:29:17.130 --> 01:29:20.270
+of the times for any kind of a use cases. So here to perform
+
+01:29:20.270 --> 01:29:25.070
+a search operation, maybe I'm going to search, my text
+
+01:29:25.070 --> 01:29:31.290
+underscore search is basically Sudhanshu is mentor, right.
+
+01:29:31.370 --> 01:29:34.750
+This is the, like a string, which I'm trying to search and
+
+01:29:34.750 --> 01:29:38.750
+equivalent embeddings I'm trying to search basically. So for
+
+01:29:38.750 --> 01:29:41.430
+this one, first of all, I'll try to generate the embeddings
+
+01:29:41.430 --> 01:29:45.890
+because whatever we are going to like a search, so obviously
+
+01:29:45.890 --> 01:29:49.030
+I have to generate the embeddings EMB, D I N G S embeddings,
+
+01:29:49.070 --> 01:29:54.790
+underscore search, underscore data, right. So I'm able to
+
+01:29:54.790 --> 01:29:57.530
+convert into the embeddings. Now I have to search into a
+
+01:29:57.530 --> 01:29:59.910
+baby yet, right. I have to search into a baby yet. So I'm
+
+01:29:59.910 --> 01:30:02.130
+already connected with the baby yet. So I can write
+
+01:30:02.130 --> 01:30:07.130
+collection dot query dot near, near, near, near, near text
+
+01:30:07.130 --> 01:30:12.130
+or near vector. So here near image, near media, near object,
+
+01:30:12.230 --> 01:30:15.050
+near text, and near vector, all of these options. Baby, it
+
+01:30:15.050 --> 01:30:17.830
+is giving you, so you can even try to do a image search. You
+
+01:30:17.830 --> 01:30:21.250
+can try to do a media search, like a media, like a audio and
+
+01:30:21.250 --> 01:30:23.810
+then video. You can try to do object search. You can try to
+
+01:30:23.810 --> 01:30:25.770
+do text search. You can try to do a vector search. I'm
+
+01:30:25.770 --> 01:30:28.490
+trying to do a vector search basically. So this is my
+
+01:30:28.490 --> 01:30:30.270
+objective. So near,
+
+01:30:35.500 --> 01:30:43.900
+near vector, we see vector is what? So near vector is
+
+01:30:43.900 --> 01:30:48.360
+basically this one, this particular one. So this to list.
+
+01:30:50.860 --> 01:30:54.020
+So this is my near vector by the way. And this is what I
+
+01:30:54.020 --> 01:30:57.500
+will try to basically like a search execute and whatever
+
+01:30:57.500 --> 01:31:00.860
+will be the near to this one, near to this data. So the
+
+01:31:00.860 --> 01:31:04.780
+answer is a mentor. It is going to give me the vector. So
+
+01:31:04.780 --> 01:31:08.120
+first five value by default, it is giving me five values. So
+
+01:31:08.120 --> 01:31:11.200
+this, this, this, this, this, now maybe I can try to like a
+
+01:31:11.200 --> 01:31:14.100
+restricted. I can say that just try to give me a limit of
+
+01:31:14.100 --> 01:31:18.420
+one means just give me the first nearest value. So it is
+
+01:31:18.420 --> 01:31:22.060
+giving you the first nearest value, right? It is giving you
+
+01:31:22.060 --> 01:31:24.380
+the. First nearest value vector normalization is equal to
+
+01:31:24.380 --> 01:31:28.020
+this, this, this. So this is how it is going to perform the
+
+01:31:28.020 --> 01:31:32.860
+searching operation guys at the end of the day. Yeah. So
+
+01:31:32.860 --> 01:31:35.720
+this is giving you this particular result. Now out of this
+
+01:31:35.720 --> 01:31:38.740
+result, I would like to see that text. So the, what is the
+
+01:31:38.740 --> 01:31:41.380
+text that it is trying to match? So maybe I can try to store
+
+01:31:41.380 --> 01:31:47.240
+it as a R E S U L T result result and out of this result. So
+
+01:31:47.240 --> 01:31:50.740
+I would like to like a fetch a textual information at the
+
+01:31:50.740 --> 01:31:53.880
+end of the day, I would like to fetch a textual information.
+
+01:31:54.100 --> 01:32:00.480
+So how I will be able to fetch it. So result result dot, uh,
+
+01:32:00.660 --> 01:32:06.740
+result dot, I can say objective dot result
+
+01:32:11.730 --> 01:32:14.610
+dot objective is giving me this
+
+01:32:17.300 --> 01:32:21.860
+entire text, right? So that it was, it was able to find a
+
+01:32:21.860 --> 01:32:25.800
+closest text as equals to this one. So maybe I can try to
+
+01:32:25.800 --> 01:32:31.440
+call dot properties. Oh, I can call. A proper piece or
+
+01:32:31.440 --> 01:32:33.740
+simple, like this
+
+01:32:46.630 --> 01:32:52.290
+is the object and there is a list inside a list. So this
+
+01:32:52.290 --> 01:32:56.130
+information is available.
+
+01:33:00.030 --> 01:33:03.130
+Okay. So object, maybe
+
+01:33:12.640 --> 01:33:21.900
+I can try to iterate through it for I in this one, I dot I
+
+01:33:25.840 --> 01:33:28.960
+dot properties, and then just print me next.
+
+01:33:36.130 --> 01:33:41.450
+Yeah. So, uh, here I'm able to even print the data that this
+
+01:33:41.450 --> 01:33:44.510
+was, this was matching with this data, although all the data
+
+01:33:44.510 --> 01:33:47.110
+was same. So I, whatever data I have inserted, I have
+
+01:33:47.110 --> 01:33:49.490
+inserted a copy of same data, but yeah, I'm just trying to
+
+01:33:49.490 --> 01:33:52.030
+show you the search part, search operation, part of this
+
+01:33:52.030 --> 01:33:54.690
+one, that how it is trying to perform the search operation,
+
+01:33:54.890 --> 01:33:57.470
+then how you will be able to see the complete result. So
+
+01:33:57.470 --> 01:34:00.450
+this is the procedure. A simple query is collection, not
+
+01:34:00.450 --> 01:34:03.950
+query near vector, and then try to pass your embeddings. It
+
+01:34:03.950 --> 01:34:06.070
+will try to do a matching. And then eventually you will be
+
+01:34:06.070 --> 01:34:09.590
+able to get it. You get your result making sense, guys.
+
+01:34:12.090 --> 01:34:15.950
+Yeah, everyone. So how I'm going to do the search operation.
+
+01:34:16.710 --> 01:34:20.230
+So we are able to perform a basically like a insert
+
+01:34:20.230 --> 01:34:24.490
+operation inside a baby yet. And we are able to even perform
+
+01:34:24.490 --> 01:34:28.070
+the search operation on top of this one. And then out of
+
+01:34:28.070 --> 01:34:30.110
+this search operation, I can try to extract whatever
+
+01:34:30.110 --> 01:34:33.410
+information I want from this result object. This is my
+
+01:34:33.410 --> 01:34:35.470
+result object. So I can get everything. I can get my
+
+01:34:35.470 --> 01:34:39.210
+metadata, distance, everything right. So what like it is
+
+01:34:39.210 --> 01:34:43.410
+trying to do and properties and whatever information that I
+
+01:34:43.410 --> 01:34:47.010
+have stored, everything it is going to give you inside this
+
+01:34:47.010 --> 01:34:51.350
+object. So any question for me, guys, I believe a baby is
+
+01:34:51.350 --> 01:34:56.330
+fine. And in real time, we are able to like, uh, create a
+
+01:34:56.330 --> 01:34:59.630
+baby yet. And then we are able to store the information now.
+
+01:35:02.950 --> 01:35:05.930
+So I will be using mostly this kind of, uh, I will be using
+
+01:35:05.930 --> 01:35:09.030
+either a pine cone or baby yet going forward when I will be
+
+01:35:09.030 --> 01:35:11.970
+teaching you, uh, RIG, because I have to put. My things into
+
+01:35:11.970 --> 01:35:16.850
+a production, it will be less hectic for me, uh, in terms of
+
+01:35:16.850 --> 01:35:19.270
+like, uh, putting these things into a production. Otherwise,
+
+01:35:19.370 --> 01:35:23.630
+uh, in case of, uh, uh, and then like, uh, in case of a
+
+01:35:23.630 --> 01:35:27.310
+chroma DB, I have to dockerize it and then I have to put it
+
+01:35:27.310 --> 01:35:30.310
+on a cloud. Otherwise this, this is very much easy. Like I
+
+01:35:30.310 --> 01:35:32.830
+can just try to call the APIs and then with the help of APIs
+
+01:35:32.830 --> 01:35:36.410
+and client, I will be able to connect. And, uh, finally I
+
+01:35:36.410 --> 01:35:40.650
+will be able to perform all the operations. Yeah. So this is
+
+01:35:40.650 --> 01:35:45.330
+all. Yeah. About, uh, baby yet guys. So I think we all are
+
+01:35:45.330 --> 01:35:48.710
+able to understand now only one vector DB is remaining,
+
+01:35:49.070 --> 01:35:52.730
+which is like a F a F a ISS. I'll, I'll teach you that part
+
+01:35:52.730 --> 01:35:55.090
+as well. That will take another 10 minutes of time, but not
+
+01:35:55.090 --> 01:35:57.690
+today. Uh, let's connect tomorrow and I'll be teaching you
+
+01:35:57.690 --> 01:36:01.210
+that. Plus I'll be showing you a couple of application and
+
+01:36:01.210 --> 01:36:04.890
+couple of operations, uh, in my tomorrow's class. So with
+
+01:36:04.890 --> 01:36:07.570
+that, uh, thank you so much for today. And if you have any
+
+01:36:07.570 --> 01:36:09.770
+questions, so please go ahead with your question. I'll try
+
+01:36:09.770 --> 01:36:11.810
+to answer. Otherwise. Otherwise I'll rest the class for
+
+01:36:11.810 --> 01:36:16.420
+today. Yeah. So anyone who is having any questions, so
+
+01:36:16.420 --> 01:36:17.960
+please go ahead and
+
+01:36:20.490 --> 01:36:24.450
+let me, it's like a share this entire things
+
+01:36:28.550 --> 01:36:29.550
+with all of you.
+
+01:36:51.690 --> 01:36:53.770
+Okay, fine guys. So if you don't have any kind of a
+
+01:36:53.770 --> 01:36:57.410
+quotient, so we'll try to, uh, like a close the class for
+
+01:36:57.410 --> 01:37:00.670
+today, uh, tomorrow. So I'll be talking about first, uh,
+
+01:37:00.690 --> 01:37:04.170
+Facebook semantic search and once Facebook has amended, so
+
+01:37:04.170 --> 01:37:07.030
+it will be done. Then I'll be talking about, uh, like a
+
+01:37:07.030 --> 01:37:10.570
+further topic for the chapter, but yeah, mostly it's. Uh, it
+
+01:37:10.570 --> 01:37:13.650
+will be based on that application building part where I will
+
+01:37:13.650 --> 01:37:14.770
+be using all of these things.
+
+01:37:18.840 --> 01:37:21.900
+Uh, baby, it can store the text and embeddings. Can we do
+
+01:37:21.900 --> 01:37:24.260
+the same in a pine cone as well? Obviously we can do the
+
+01:37:24.260 --> 01:37:26.100
+same thing in a pine cone. I believe someone has already
+
+01:37:26.100 --> 01:37:28.240
+done that, right? In a meta information, we were trying to
+
+01:37:28.240 --> 01:37:29.440
+store those information.
+
+01:37:31.710 --> 01:37:34.010
+So yeah, obviously pine cone is giving you the same option.
+
+01:37:34.130 --> 01:37:36.630
+All the DV is going to give you the same option. Uh,
+
+01:37:41.420 --> 01:37:43.280
+you mentioned that there is a difference between baby at
+
+01:37:43.280 --> 01:37:46.000
+pine cone and a chroma DV. Can you mention the high level,
+
+01:37:46.140 --> 01:37:50.200
+which one is to select when, uh, let me talk. Farsi as well.
+
+01:37:50.300 --> 01:37:52.940
+I'll give you a difference. And then remind me, I'll give
+
+01:37:52.940 --> 01:37:56.260
+you a difference altogether between all this for, there is a
+
+01:37:56.260 --> 01:37:58.840
+very minor differences. You will be able to find out in
+
+01:37:58.840 --> 01:38:02.740
+terms of hosting, in terms of fastestness, in terms of the
+
+01:38:02.740 --> 01:38:05.540
+search technique they are using, because everyone is not
+
+01:38:05.540 --> 01:38:09.000
+using the same technique for searching purposes. So
+
+01:38:09.000 --> 01:38:11.660
+tomorrow, all four, all four, I'll just try to prepare the
+
+01:38:11.660 --> 01:38:13.760
+table for you. And then I'll try to write down those
+
+01:38:13.760 --> 01:38:17.580
+differences and which one you should use in which scenario.
+
+01:38:18.520 --> 01:38:23.120
+Basically. So that I'll be talking about tomorrow when I'll
+
+01:38:23.120 --> 01:38:25.960
+end up talking about Facebook as semantic search as well. So
+
+01:38:25.960 --> 01:38:26.920
+one is still pending.
+
+01:38:29.860 --> 01:38:32.560
+Okay. So with that guys, thank you so much. See you again in
+
+01:38:32.560 --> 01:38:35.760
+my tomorrow's class, which is going to happen same time, 2
+
+01:38:35.760 --> 01:38:40.080
+30 PM IST until then take care. Everyone have a great
+
+01:38:40.080 --> 01:38:42.000
+weekend ahead. Yeah. Thank you.
+

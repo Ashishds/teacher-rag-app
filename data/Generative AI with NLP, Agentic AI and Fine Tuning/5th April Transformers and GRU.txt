@@ -1,0 +1,5369 @@
+WEBVTT
+
+00:00:30.610 --> 00:00:33.710
+for maybe like a two three minute and then we are going to
+
+00:00:33.710 --> 00:00:36.970
+start okay so that everyone can join
+
+00:00:45.400 --> 00:00:48.780
+so anyhow today we are going to talk about a gru so which is
+
+00:00:48.780 --> 00:00:52.100
+nothing but another variant of a rnn that you all will be
+
+00:00:52.100 --> 00:00:55.680
+able to find out and then eventually i'm going to talk about
+
+00:00:55.680 --> 00:01:01.440
+a most important right the most important and mother of all
+
+00:01:01.440 --> 00:01:04.560
+the lms all the architecture called as
+
+00:01:08.640 --> 00:01:14.240
+a business ground right so all of the people we always carry
+
+00:01:14.240 --> 00:01:15.260
+what we say on in the setting okay it doesn't always come
+
+00:01:15.260 --> 00:01:15.360
+from theление here we still have restrictions but we fix it
+
+00:01:15.360 --> 00:01:15.360
+for the lms i am happy whenever it is fit for you okay
+
+00:01:15.360 --> 00:01:17.660
+thanks for that which is which is such a filling yeah so
+
+00:01:17.660 --> 00:01:21.580
+begins is our gru but before
+
+00:01:21.580 --> 00:01:23.100
+we start we don't know the first of theノys aand then
+
+00:01:23.100 --> 00:01:29.920
+acontece the spray ins in the most important part and that
+
+00:01:29.920 --> 00:01:34.540
+so
+
+00:01:34.540 --> 00:01:37.060
+i transformer architecture there is a research paper called
+
+00:01:37.060 --> 00:01:40.800
+as attention is all you need so i'll be talking about that
+
+00:01:40.800 --> 00:01:45.080
+research paper we'll try to break it down into a very small
+
+00:01:45.080 --> 00:01:48.260
+small component so that we all can understand how training
+
+00:01:48.260 --> 00:01:52.720
+actually happens and then eventually you all will be able to
+
+00:01:52.720 --> 00:01:59.820
+understand that how this entire gpts are working so when i
+
+00:01:59.820 --> 00:02:04.420
+say gpt means all the lms models are working you all will be
+
+00:02:04.420 --> 00:02:08.380
+able to understand by tomorrow not maybe by today so all
+
+00:02:08.380 --> 00:02:10.480
+these things you will not be able to understand just in one
+
+00:02:10.480 --> 00:02:13.480
+single day but yeah maybe after tomorrow's class you all
+
+00:02:13.480 --> 00:02:15.920
+will be able to understand so today we are going to build a
+
+00:02:15.920 --> 00:02:18.980
+base and then tomorrow we are going to connect each and
+
+00:02:18.980 --> 00:02:22.200
+everything together and so that we can try to explore a
+
+00:02:22.200 --> 00:02:26.280
+different different kind of gpts architecture or any kind of
+
+00:02:26.280 --> 00:02:29.380
+lm models architecture because some of the models are only
+
+00:02:29.380 --> 00:02:32.960
+like an encoder only model decoder only model there are like
+
+00:02:32.960 --> 00:02:35.080
+a lot of different different kind of variants you all will
+
+00:02:35.080 --> 00:02:39.140
+be able to find out so that's a whole agenda for this entire
+
+00:02:39.140 --> 00:02:41.640
+week today and tomorrow how
+
+00:02:44.040 --> 00:02:47.860
+many months it may take to complete a jni excluding agents
+
+00:02:47.860 --> 00:02:55.480
+from here maybe three months more amarnath is saying hi
+
+00:02:55.480 --> 00:03:00.080
+zanshu hi amarnath okay so let's get started guys and let's
+
+00:03:00.080 --> 00:03:05.410
+start talking about this entire concept so let me share my
+
+00:03:05.410 --> 00:03:05.670
+screen
+
+00:03:08.950 --> 00:03:13.050
+i believe my screen is visible to all of you and let me
+
+00:03:13.050 --> 00:03:19.550
+choose a new page okay so first of all guys uh we'll try to
+
+00:03:19.550 --> 00:03:23.170
+understand a gru which is nothing but an extension of a lstm
+
+00:03:23.170 --> 00:03:25.990
+so again with some optimization a little bit of optimization
+
+00:03:25.990 --> 00:03:30.910
+not i will say much optimization which was helping a lstm to
+
+00:03:30.910 --> 00:03:34.490
+learn things in a better way and that model is called as gru
+
+00:03:34.490 --> 00:03:37.730
+gated recurrent unit and in my last class i believe we have
+
+00:03:37.730 --> 00:03:41.190
+already seen that how we can solve a problem so by taking
+
+00:03:41.190 --> 00:03:44.070
+one of the very very small examples so as we are going to
+
+00:03:44.070 --> 00:03:47.770
+progress inside a class we'll keep on taking a more complex
+
+00:03:47.770 --> 00:03:52.170
+example now at the end of today's class my objective is to
+
+00:03:52.170 --> 00:03:56.110
+explain you this kind of architecture so as you can see this
+
+00:03:56.110 --> 00:04:00.730
+entire architecture so how any kind of llm that we are using
+
+00:04:00.730 --> 00:04:05.130
+so it's trying to learn or it is able to generate a complete
+
+00:04:05.130 --> 00:04:09.310
+output like i said in the beginning itself that you will not
+
+00:04:09.310 --> 00:04:12.030
+be able to understand today so today we are going to like
+
+00:04:12.030 --> 00:04:15.010
+maybe work on a building blocks and then tomorrow we are
+
+00:04:15.010 --> 00:04:17.650
+going to connect each and everything and then we are going
+
+00:04:17.650 --> 00:04:21.210
+to summarize and eventually it will give you a complete very
+
+00:04:21.210 --> 00:04:26.090
+very clear picture that this is how my gpts are working or
+
+00:04:26.090 --> 00:04:30.470
+any other llm models are going to work maybe a gemini that
+
+00:04:30.470 --> 00:04:33.010
+you are using maybe a deep seek that you are using maybe a
+
+00:04:33.010 --> 00:04:37.350
+mistral that you are using uh maybe gpt for like a 4.5 or
+
+00:04:37.350 --> 00:04:41.090
+like a oro you are going to use anything anything and
+
+00:04:41.090 --> 00:04:43.710
+everything so you will be able to understand a working
+
+00:04:43.710 --> 00:04:46.690
+mechanism of each and everything uh like a down the line
+
+00:04:46.690 --> 00:04:51.850
+yeah so let's get started guys and yeah i'll come to this
+
+00:04:51.850 --> 00:04:54.410
+particular diagram so again initially you will not be able
+
+00:04:54.410 --> 00:04:56.050
+to understand this diagram because there are so many
+
+00:04:56.050 --> 00:04:59.110
+components which you will be able to find out called as kqv
+
+00:04:59.110 --> 00:05:02.990
+kind of a vector and it's words embedding and there is a
+
+00:05:02.990 --> 00:05:06.570
+attention layer and there is a embedding layer a lot of
+
+00:05:06.570 --> 00:05:08.610
+things a lot of things means literally a lot of things you
+
+00:05:08.610 --> 00:05:12.270
+all will be able to find out and today i will be talking
+
+00:05:12.270 --> 00:05:15.790
+about this architecture so actually this is nothing but the
+
+00:05:15.790 --> 00:05:20.870
+like the architecture or the like a this image or the
+
+00:05:20.870 --> 00:05:24.290
+animation that you are able to see technically it's this
+
+00:05:24.290 --> 00:05:27.030
+architecture which is coming from a research paper called as
+
+00:05:27.030 --> 00:05:31.830
+attention is all you need and the major function which goes
+
+00:05:31.830 --> 00:05:35.990
+behind everything is this particular function so everyone is
+
+00:05:35.990 --> 00:05:39.190
+trying to uh tune everyone is trying to do some sort of a
+
+00:05:39.190 --> 00:05:42.090
+permutation combination iterations and based on that they
+
+00:05:42.090 --> 00:05:44.530
+are able to build or they are able to come up with best of
+
+00:05:44.530 --> 00:05:48.390
+best model which we all are able to see nowadays so here
+
+00:05:48.390 --> 00:05:52.570
+before jumping into this research paper so and again believe
+
+00:05:52.570 --> 00:05:54.730
+me this research paper is not very difficult to understand
+
+00:05:54.730 --> 00:05:58.010
+it looks like in a beginning that uh it's a difficult
+
+00:05:58.010 --> 00:06:00.990
+research paper to understand but believe me uh as a story
+
+00:06:00.990 --> 00:06:04.590
+you will be able to find out that it's not at all a
+
+00:06:04.590 --> 00:06:08.190
+difficult research paper to understand in any sense but yeah
+
+00:06:08.190 --> 00:06:11.150
+you have to connect layer by layer layer by layer then only
+
+00:06:11.150 --> 00:06:14.290
+you will be able to understand the whole story behind it so
+
+00:06:14.290 --> 00:06:16.570
+i'll try to break it down everything into a layer by layer
+
+00:06:16.570 --> 00:06:19.130
+manner and this is how i'm going to explain you this entire
+
+00:06:19.130 --> 00:06:22.350
+architecture but before that like i said so let's try to
+
+00:06:22.350 --> 00:06:27.570
+understand a gru so how gru is going to work and how gru is
+
+00:06:27.570 --> 00:06:31.730
+a little bit better as compared to a lstm that you will be
+
+00:06:31.730 --> 00:06:35.010
+able to find out so again uh in my last class when i was
+
+00:06:35.010 --> 00:06:36.850
+talking about the layer by layer architecture so we have
+
+00:06:36.850 --> 00:06:39.490
+seen a three different different kind of a gate so there was
+
+00:06:39.490 --> 00:06:41.750
+something called as a forget gate there was an input gate
+
+00:06:41.750 --> 00:06:44.810
+and there was a output gate so again forget gate so it will
+
+00:06:44.810 --> 00:06:47.690
+always try to decide that what information we are supposed
+
+00:06:47.690 --> 00:06:50.970
+to hold and what information we are supposed to discard if
+
+00:06:50.970 --> 00:06:53.250
+i'll talk about input gate so input gate always try to
+
+00:06:53.250 --> 00:06:56.550
+decide that what new information that you are supposed to
+
+00:06:56.550 --> 00:06:59.810
+store and eventually output gate so it will try to decide
+
+00:06:59.810 --> 00:07:03.330
+that what kind of output or response that model is supposed
+
+00:07:03.330 --> 00:07:07.010
+to give this is what lstm does a long short term memory does
+
+00:07:07.010 --> 00:07:12.630
+now so there is a little bit of improvisation or little bit
+
+00:07:12.630 --> 00:07:15.730
+of modification you will be able to find out and people are
+
+00:07:15.730 --> 00:07:20.830
+calling that as a gru a gated recurrent unit let's try to
+
+00:07:20.830 --> 00:07:23.530
+understand that gated recurrent unit in the first place so
+
+00:07:23.530 --> 00:07:28.690
+there is something called as gru so g-a-t-e-d gated
+
+00:07:28.690 --> 00:07:30.030
+recurrent
+
+00:07:33.840 --> 00:07:39.280
+unit which is nothing not very different i would say again
+
+00:07:39.280 --> 00:07:42.900
+an extension of the lstm that we have already discussed so
+
+00:07:42.900 --> 00:07:46.840
+here instead of keeping our three gates so we are just
+
+00:07:46.840 --> 00:07:51.240
+trying to take a two gates inside a gru so like in case of a
+
+00:07:51.240 --> 00:07:55.040
+lstm if i'll be talking about so in case of a lstm so we
+
+00:07:55.040 --> 00:07:58.020
+were having three gates so the very first gate was a forget
+
+00:07:58.020 --> 00:08:03.360
+gate forget gate and then second gate was basically a input
+
+00:08:03.360 --> 00:08:06.260
+gate and a third gate was
+
+00:08:09.100 --> 00:08:11.020
+a gate and i believe we all understand that what is the
+
+00:08:11.020 --> 00:08:13.520
+meaning of a gate so if number of gates are going to
+
+00:08:13.520 --> 00:08:16.360
+increase means number of new networks are going to increase
+
+00:08:16.360 --> 00:08:19.600
+a number of parameters are going to increase so you have to
+
+00:08:19.600 --> 00:08:22.720
+train that much or that may number of the parameter so which
+
+00:08:22.720 --> 00:08:27.100
+is going to make my model bulkier now keeping that in mind
+
+00:08:27.100 --> 00:08:31.480
+so people come up with another architecture called as gru
+
+00:08:31.480 --> 00:08:34.860
+architecture which is somehow or somewhat it's a
+
+00:08:34.860 --> 00:08:40.720
+optimization of a lstm architecture that i can try to
+
+00:08:40.720 --> 00:08:43.740
+achieve almost exact same thing so maybe with the help of
+
+00:08:43.740 --> 00:08:48.440
+only two gate and they have named this two gate is as update
+
+00:08:48.440 --> 00:08:49.680
+gate
+
+00:08:52.240 --> 00:08:59.200
+and then the second gate is basically a reset gate so they
+
+00:08:59.200 --> 00:09:02.000
+have basically introduced a two new gates or two different
+
+00:09:02.000 --> 00:09:04.520
+kind of a gate which is nothing but more or less doing like
+
+00:09:04.520 --> 00:09:06.660
+a combination of all these three gate which we were having
+
+00:09:06.660 --> 00:09:10.060
+inside lstm and they have named it as a update gate and a
+
+00:09:10.060 --> 00:09:14.680
+reset gate making sense guys lstm i believe you all remember
+
+00:09:14.680 --> 00:09:18.360
+the lstm architecture that we have already discussed yeah so
+
+00:09:18.360 --> 00:09:21.540
+why they are coming up with gru so that it will be having a
+
+00:09:21.540 --> 00:09:24.200
+lesser number of gate lesser number of gate meaning is that
+
+00:09:24.200 --> 00:09:27.580
+lesser number of network i will be having a fewer parameters
+
+00:09:27.580 --> 00:09:30.880
+i will be having a simplistic architecture i will be having
+
+00:09:30.880 --> 00:09:36.360
+and it will be able to perform a task in an optimized way
+
+00:09:36.360 --> 00:09:41.840
+and it will be easier to tune and easier to implement at end
+
+00:09:41.840 --> 00:09:47.100
+of the day apart from that so it's not solving like a much
+
+00:09:47.100 --> 00:09:49.920
+problem i would say so whatever problem that lstm will be
+
+00:09:49.920 --> 00:09:53.900
+able to solve gru will be able to solve almost the exact
+
+00:09:53.900 --> 00:09:58.000
+similar kind of a problem not like a very different kind of
+
+00:09:58.000 --> 00:10:01.760
+things which my gru will be able to solve so now let's try
+
+00:10:01.760 --> 00:10:04.100
+to understand the architecture and based on the architecture
+
+00:10:04.100 --> 00:10:06.800
+so let's try to understand how my gru looks like
+
+00:10:06.800 --> 00:10:10.680
+architecture wise like it looks little bit like a you know
+
+00:10:11.660 --> 00:10:14.400
+complex but yeah it's it's a simple one that way like people
+
+00:10:14.400 --> 00:10:16.820
+have designed this architecture it actually looks complex
+
+00:10:16.820 --> 00:10:19.220
+but yeah there are only two gates that you will be able to
+
+00:10:19.220 --> 00:10:23.320
+find out inside a gated recurrent unit so architecture wise
+
+00:10:23.320 --> 00:10:26.560
+if i have to draw the architecture so again there will be a
+
+00:10:26.560 --> 00:10:30.620
+hidden layer so inside lstm we were having a memory layer
+
+00:10:30.620 --> 00:10:36.260
+but here so let's name it as a ht minus one and ht so we all
+
+00:10:36.260 --> 00:10:38.340
+know that it's nothing but it's a hidden layer that we have
+
+00:10:38.340 --> 00:10:43.780
+and then we are having basically a two different different
+
+00:10:43.780 --> 00:10:46.640
+kind of a gate so let me design these two different
+
+00:10:46.640 --> 00:10:51.160
+different kind of a gate so the very first gate maybe is a
+
+00:10:51.160 --> 00:10:55.300
+update or reset gate i can try to design so let me design a
+
+00:10:55.300 --> 00:10:58.980
+reset gate in a very first place so this is how my reset
+
+00:10:58.980 --> 00:11:05.220
+gate will looks like here it will do a multiplication and it
+
+00:11:05.220 --> 00:11:10.660
+will do a multiplication with my ht minus one and input wise
+
+00:11:10.660 --> 00:11:15.180
+so input will come from the previous state and input will
+
+00:11:15.180 --> 00:11:19.840
+come even from the current state so let's suppose x of t
+
+00:11:19.840 --> 00:11:24.220
+which is my current input and this will be combined and go
+
+00:11:24.220 --> 00:11:32.140
+inside this neural network and yes so fine this is getting
+
+00:11:32.140 --> 00:11:36.600
+combined and then this is my current input so my current
+
+00:11:36.600 --> 00:11:42.280
+input will go with this pipeline and share this with and let
+
+00:11:42.280 --> 00:11:46.540
+me and so let me extend this one so that it can go there and
+
+00:11:46.540 --> 00:11:53.120
+here break point and then it's getting combined here now so
+
+00:11:53.120 --> 00:11:57.760
+if i'll talk about maybe this particular unit this
+
+00:12:02.080 --> 00:12:07.460
+particular unit so this particular unit is called a reset
+
+00:12:10.910 --> 00:12:15.990
+gate this one is called as a reset gate now we have another
+
+00:12:15.990 --> 00:12:17.850
+gate called as update gate This vent is thank you all for
+
+00:12:17.850 --> 00:12:17.850
+watching this video, we hope that you enjoyed this video too
+
+00:12:17.850 --> 00:12:19.330
+and let's try to design some updates beside in the next
+
+00:12:19.330 --> 00:12:19.410
+videos so Apple know that we need to change the format for
+
+00:12:19.410 --> 00:12:19.410
+our system, so maybe next time we'll release some update Em
+
+00:12:19.410 --> 00:12:19.410
+있�illi in the future, do that as soon as we do, please leave
+
+00:12:19.410 --> 00:12:22.970
+a comment. date gate is going to take input from the current
+
+00:12:22.970 --> 00:12:27.590
+one so fine this is the flow so maybe i can try to take this
+
+00:12:27.590 --> 00:12:35.730
+flow design a network over here then it will go above and it
+
+00:12:35.730 --> 00:12:41.150
+will go for the output then we have let's suppose minus one
+
+00:12:41.150 --> 00:12:47.970
+arrow here and then we have a multiplication here and we
+
+00:12:47.970 --> 00:12:52.550
+will be having addition operation over here multiplication
+
+00:12:56.170 --> 00:12:57.990
+here okay
+
+00:13:00.070 --> 00:13:05.270
+and this is going to go ahead with the n
+
+00:13:08.280 --> 00:13:17.740
+of h this one okay h of t same so this is basically uh one
+
+00:13:17.740 --> 00:13:21.720
+other gate which we have designed and this particular gate
+
+00:13:21.720 --> 00:13:28.220
+this entire gate is actually called as update
+
+00:13:34.840 --> 00:13:36.280
+gate
+
+00:13:38.010 --> 00:13:42.750
+so we have two gates one is a reset gate and one is a update
+
+00:13:42.750 --> 00:13:47.150
+gate and then there is a third component you all will be
+
+00:13:47.150 --> 00:13:51.630
+able to find out which is this one and it's nothing but it's
+
+00:13:51.630 --> 00:13:55.430
+going to maintain a candidate for a hidden state means what
+
+00:13:55.430 --> 00:13:59.050
+will go as a output to the next one so this is what it is
+
+00:13:59.050 --> 00:14:01.650
+going to like uh basically maintain and manage so
+
+00:14:01.650 --> 00:14:04.130
+technically we had two gate over here so one gate is
+
+00:14:04.130 --> 00:14:07.830
+basically a reset gate and one gate is basically a update
+
+00:14:07.830 --> 00:14:11.250
+gate and again so it is going to perform a different
+
+00:14:11.250 --> 00:14:14.110
+different kind of operations depends upon the nature that we
+
+00:14:14.110 --> 00:14:16.830
+are going to design now input wise if you will see closely
+
+00:14:16.830 --> 00:14:21.130
+so input wise we are not changing much over here so input
+
+00:14:21.130 --> 00:14:24.590
+wise it's a completely same so from a previous hidden state
+
+00:14:24.590 --> 00:14:27.510
+means from a previous output so we are trying to consider
+
+00:14:27.510 --> 00:14:32.670
+some of the input h t minus one and then we have a xt xt is
+
+00:14:33.170 --> 00:14:36.370
+a current input that we are trying to provide and both of
+
+00:14:36.370 --> 00:14:40.330
+this input if you will follow along with this entire layer
+
+00:14:40.330 --> 00:14:43.790
+so you will be able to find out that both of this input
+
+00:14:43.790 --> 00:14:48.270
+combinedly going inside one gate and it is going inside
+
+00:14:48.270 --> 00:14:52.890
+another gate as well so it's getting into my recent gate as
+
+00:14:52.890 --> 00:14:56.530
+well as it is getting into my update gate technically i am
+
+00:14:56.530 --> 00:14:59.510
+trying to optimize or we are trying to work on the neural
+
+00:14:59.510 --> 00:15:02.030
+network means we are trying to change we are trying to
+
+00:15:02.030 --> 00:15:04.770
+reduce the number of the neural network that we are going to
+
+00:15:04.770 --> 00:15:07.030
+consider so here we have two and over there so we were
+
+00:15:07.030 --> 00:15:12.110
+having basically uh three in case of a lstm like i said so
+
+00:15:12.110 --> 00:15:14.830
+only it is going to give you a performance wise advantages
+
+00:15:14.830 --> 00:15:18.270
+as we have a lesser number of a parameter a lesser number of
+
+00:15:18.270 --> 00:15:21.970
+a gate apart from that it is not going to give you any other
+
+00:15:21.970 --> 00:15:25.530
+advantages so instead of taking gru you can consider lstm or
+
+00:15:25.530 --> 00:15:28.470
+vice versa depends so if you are not worried about a
+
+00:15:28.470 --> 00:15:30.630
+performance if you're not worried about the optimization in
+
+00:15:30.630 --> 00:15:34.510
+that case you can even go ahead with the lstm and there is
+
+00:15:34.510 --> 00:15:38.130
+no issue at all there is no issue that you all will be able
+
+00:15:38.130 --> 00:15:42.710
+to find out in any kind of a situation now so we have a
+
+00:15:42.710 --> 00:15:46.350
+reset get over here and then we have basically like a update
+
+00:15:46.350 --> 00:15:50.650
+gate over here you can write a equation the way you want so
+
+00:15:50.650 --> 00:15:53.210
+i think we all know that how i will be able to write the
+
+00:15:53.210 --> 00:15:57.510
+equation right so obviously sigmoid and then your input xt
+
+00:15:57.510 --> 00:16:01.590
+will go your ht minus one will go with weight and biases so
+
+00:16:01.590 --> 00:16:05.110
+at this point if i'm talking about the output of this
+
+00:16:05.110 --> 00:16:08.270
+network so i can clearly write it down that at this point
+
+00:16:08.270 --> 00:16:11.810
+right inside from a reset get i will be able to get what so
+
+00:16:11.810 --> 00:16:15.590
+let's suppose uh we have basically uh ht minus one as an
+
+00:16:15.590 --> 00:16:19.490
+input and xt minus as an input so i can try to rewrite that
+
+00:16:19.490 --> 00:16:24.490
+from a reset get at time t so i will be able to get maybe a
+
+00:16:24.490 --> 00:16:30.210
+weight of h so weight of basically this h over here into
+
+00:16:30.210 --> 00:16:32.330
+into
+
+00:16:33.670 --> 00:16:37.650
+sorry so weight of h i have written so into ht minus one
+
+00:16:37.650 --> 00:16:47.930
+plus weight of x into x t plus b of a reset gate bias of the
+
+00:16:47.930 --> 00:16:49.970
+reset gate so this is something that i will be able to
+
+00:16:49.970 --> 00:16:54.010
+receive over here if this is the neural network as simple as
+
+00:16:54.010 --> 00:16:55.790
+that so this is something that i will be able to receive
+
+00:16:55.790 --> 00:16:59.790
+over here now if i'll talk about this one so output from
+
+00:16:59.790 --> 00:17:01.850
+this particular point of our time so i will be able to
+
+00:17:01.850 --> 00:17:05.730
+receive what Maybe I can try to write down in this way that
+
+00:17:05.730 --> 00:17:10.170
+update gate at time T. So I will be able to receive sigmoid
+
+00:17:10.170 --> 00:17:19.290
+of weight of maybe like H for basically update gate into H T
+
+00:17:19.290 --> 00:17:23.130
+minus 1 plus weight of X
+
+00:17:25.300 --> 00:17:33.740
+for update gate into XT plus B for my update gate. I will be
+
+00:17:33.740 --> 00:17:37.540
+able to receive in this particular place. So I believe we
+
+00:17:37.540 --> 00:17:40.360
+have already written this kind of equation even in past. So
+
+00:17:40.360 --> 00:17:43.520
+again, this is just a mathematical representation at the end
+
+00:17:43.520 --> 00:17:46.540
+of the day. Nothing much it is trying to perform. Now, if I
+
+00:17:46.540 --> 00:17:48.920
+have to do a calculation for the hidden state, so I think we
+
+00:17:48.920 --> 00:17:51.640
+know what is the output that I am receiving here. So this is
+
+00:17:51.640 --> 00:17:54.100
+getting multiplied or dot product you can say with this one
+
+00:17:54.100 --> 00:17:58.340
+and then like a tan H of XT and HT will go inside this one
+
+00:17:58.340 --> 00:18:04.200
+as simple as that. So you can rewrite the. Entire equation
+
+00:18:04.200 --> 00:18:11.640
+one by one, one by one as per the need that you have at the
+
+00:18:11.640 --> 00:18:15.560
+end of the day. So this reset gate is going to reset the
+
+00:18:15.560 --> 00:18:19.060
+entire memory. So it is going to help you out to accommodate
+
+00:18:19.060 --> 00:18:22.060
+with the old data and the newer data. So it is going to help
+
+00:18:22.060 --> 00:18:25.360
+you out. Okay. How much we are supposed to retain and how
+
+00:18:25.360 --> 00:18:28.020
+much we are supposed to basically forget. So this is what we
+
+00:18:28.020 --> 00:18:30.100
+said it is going to do. Now, if I talk about the update
+
+00:18:30.100 --> 00:18:32.860
+gate, so update gate is going to help you out in terms of
+
+00:18:32.860 --> 00:18:35.220
+updating the entire layer of the. Memory. So this is the
+
+00:18:35.220 --> 00:18:37.280
+reason. So we are trying to do a multiplication over here
+
+00:18:37.280 --> 00:18:39.520
+and this is the reason. So we are trying to perform the
+
+00:18:39.520 --> 00:18:42.980
+addition operation in this particular place so that I will
+
+00:18:42.980 --> 00:18:46.100
+be able to update by hidden state, which is technically
+
+00:18:46.100 --> 00:18:49.460
+responsible for building the entire memory. So in a LSTM
+
+00:18:49.460 --> 00:18:51.740
+architecture, you must have seen the memory layer like a C
+
+00:18:51.740 --> 00:18:55.580
+on an above part, but here, so we are not trying to use that
+
+00:18:55.580 --> 00:18:57.980
+particular part. So here with the help of like esteem, we
+
+00:18:57.980 --> 00:19:02.080
+are trying to maintain the exact same thing. Yes. So Sachin
+
+00:19:02.080 --> 00:19:05.420
+is asking me that CT minus one is not. There. So no, in case
+
+00:19:05.420 --> 00:19:10.700
+of a GRU. So we don't have a C T minus one at all. Uh, maybe
+
+00:19:10.700 --> 00:19:14.280
+if this image is a little bit confusing in terms of a draw.
+
+00:19:14.460 --> 00:19:19.200
+So what I can do is I can try to pick some of the image from
+
+00:19:19.200 --> 00:19:22.260
+Google. I think that'll be much better because that will be
+
+00:19:22.260 --> 00:19:30.500
+like a clean. Uh, so let me pick some image guys. Uh, okay.
+
+00:19:31.980 --> 00:19:35.840
+Save image as, and then save. I have
+
+00:19:38.080 --> 00:19:43.570
+downloaded one of the image. Yeah. So this is one of the
+
+00:19:43.570 --> 00:19:46.310
+image, which I have downloaded from a Google now here. So
+
+00:19:46.310 --> 00:19:49.490
+clearly you will be able to see a comparison between the RNN
+
+00:19:49.490 --> 00:19:54.790
+LSTM and a GRU. So here, uh, if you are going to do a
+
+00:19:54.790 --> 00:19:57.610
+comparison, right? So we were having three gates very
+
+00:19:57.610 --> 00:20:01.150
+clearly, right? We were having three gates over here, but,
+
+00:20:01.250 --> 00:20:04.330
+uh, here you will be able to find out that we only have a
+
+00:20:04.330 --> 00:20:08.010
+two gate in this particular place. We were having a seven
+
+00:20:08.010 --> 00:20:09.930
+gate. We have a C layer, which is nothing but a context
+
+00:20:09.930 --> 00:20:12.730
+memory layer. So here we don't have any kind of a, any such
+
+00:20:12.730 --> 00:20:15.950
+kind of a C layer. So even that has been optimized and that
+
+00:20:15.950 --> 00:20:19.790
+was the overhead, which was removed, uh, ideal way. So we
+
+00:20:19.790 --> 00:20:22.730
+were trying to pass two records or two inputs. So one from
+
+00:20:22.730 --> 00:20:25.750
+the previous hidden estate and one from the current input,
+
+00:20:25.910 --> 00:20:29.110
+same thing we are trying to perform even over here. So input
+
+00:20:29.110 --> 00:20:32.010
+wise, there is no differences. You all will be able to find
+
+00:20:32.010 --> 00:20:35.010
+out the only differences that you will be able to find out
+
+00:20:35.010 --> 00:20:38.770
+over here is in terms of a number of gates. That's it. So
+
+00:20:38.770 --> 00:20:42.190
+one we have as a reset gate and one, we have a hidden gate
+
+00:20:42.190 --> 00:20:45.390
+making sense guys. So here you must be able to see a very
+
+00:20:45.390 --> 00:20:48.070
+clear comparison between all three, like base. This is the
+
+00:20:48.070 --> 00:20:51.250
+RNN. This is nothing but a vanilla RNN. I would say, right.
+
+00:20:51.310 --> 00:20:54.630
+A vanilla RNN. This is not nothing but the LSTM that we have
+
+00:20:54.630 --> 00:20:57.450
+discussed in my previous class. And then this is basically a
+
+00:20:57.450 --> 00:21:02.370
+GRU that I'm discussing as of now. Fine. Any question till
+
+00:21:02.370 --> 00:21:03.390
+this point, guys, anyone?
+
+00:21:07.800 --> 00:21:08.200
+Yes.
+
+00:21:23.680 --> 00:21:26.040
+Okay. So now if you don't. If you don't have any kind of a
+
+00:21:26.040 --> 00:21:29.200
+question, uh, now let me try to summarize it with respect to
+
+00:21:29.200 --> 00:21:33.360
+a LSTM now here, we have like a two gates in case of a LSTM
+
+00:21:33.360 --> 00:21:36.440
+and in case of a, sorry, in case of GRU, we have two gates
+
+00:21:36.440 --> 00:21:39.600
+in case of LSTM, we have three gates. So here the update
+
+00:21:39.600 --> 00:21:42.280
+gate that you are able to see guys, right? The update gate
+
+00:21:42.280 --> 00:21:44.340
+that you are able to see, this is technically update gate,
+
+00:21:44.480 --> 00:21:49.320
+right? So this update gate is actually combining a forget
+
+00:21:49.320 --> 00:21:54.220
+gate and a input gate. So if you are going to observe. It is
+
+00:21:54.220 --> 00:21:57.900
+actually combining. These two gates together. So this was
+
+00:21:57.900 --> 00:22:01.000
+basically a forget gate. And this was basically the input
+
+00:22:01.000 --> 00:22:03.860
+gate for me, right? This was basically the input gate for
+
+00:22:03.860 --> 00:22:07.420
+me. So here, if you are going to look closely, so what
+
+00:22:07.420 --> 00:22:10.120
+people have done is that, that they have clubbed, they have
+
+00:22:10.120 --> 00:22:13.500
+clubbed two gate together. So basically a forget gate,
+
+00:22:13.660 --> 00:22:20.920
+forget gate and input gate together. Right. And they have
+
+00:22:20.920 --> 00:22:29.040
+basically built up. Update. Gate inside a GRU and this like
+
+00:22:29.040 --> 00:22:33.140
+a reset gate, which we can talk about, right? So basically
+
+00:22:33.140 --> 00:22:36.360
+it tried to decide that how much past information that we
+
+00:22:36.360 --> 00:22:39.380
+are supposed to forget. So this is a new combination that
+
+00:22:39.380 --> 00:22:42.640
+they have introduced inside this entire layered
+
+00:22:42.640 --> 00:22:45.000
+architecture. So it is always going to help me out. It is
+
+00:22:45.000 --> 00:22:47.600
+always trying to multiply with the previous one and is
+
+00:22:47.600 --> 00:22:49.500
+trying to calculate the weight is that, okay, fine. So this
+
+00:22:49.500 --> 00:22:51.780
+much, I'm supposed to like a remember, or maybe propagate
+
+00:22:51.780 --> 00:22:53.960
+forward. And there's something that I'm supposed to do. I'm
+
+00:22:53.960 --> 00:22:55.380
+supposed to forget. Yep.
+
+00:22:58.520 --> 00:23:01.980
+Uh, so LT is asked at some, or someone with the number two,
+
+00:23:02.020 --> 00:23:04.340
+one, three, eight is asking in case of LSTM, what is the use
+
+00:23:04.340 --> 00:23:08.960
+of CT? Anyway, we are having HD in LSTM. No. So HD is
+
+00:23:08.960 --> 00:23:12.340
+basically a hidden estate and CT is nothing, but it's a
+
+00:23:12.340 --> 00:23:15.820
+contextual memory that it is trying to hold. So in case of a
+
+00:23:15.820 --> 00:23:17.960
+LSTM, when I was talking about LSTM, I have clearly
+
+00:23:17.960 --> 00:23:22.680
+discussed that the CT is always try to build a memory. And
+
+00:23:22.680 --> 00:23:26.280
+this was the additional layer that we had in case of a LSTM.
+
+00:23:26.480 --> 00:23:29.580
+Along with HDC ST, we are not removing because that is the
+
+00:23:29.580 --> 00:23:33.020
+major, like, uh, idea that people have introduced in case of
+
+00:23:33.020 --> 00:23:36.060
+our RNN layers, right? That it is not just going to take the
+
+00:23:36.060 --> 00:23:38.620
+current input. It is going to take our input even from the
+
+00:23:38.620 --> 00:23:42.200
+previous output. So HD, you can't remove it. You can't even
+
+00:23:42.200 --> 00:23:44.860
+remove it from LSTM. You can't even remove it from a GRDU.
+
+00:23:44.960 --> 00:23:47.460
+So what people have done is that to maintain a memory
+
+00:23:47.460 --> 00:23:50.680
+context, they have introduced a new layer, or maybe you can
+
+00:23:50.680 --> 00:23:54.080
+say for memory they have introduced so that LSTM will be
+
+00:23:54.080 --> 00:23:56.940
+able to remember something for a certain time. time period
+
+00:23:56.940 --> 00:24:00.740
+and then whatever update that we have to do so we can try to
+
+00:24:00.740 --> 00:24:03.960
+update that into that memory layer. This is the, this is
+
+00:24:03.960 --> 00:24:06.460
+where CT comes into a picture. Now while people were trying
+
+00:24:06.460 --> 00:24:09.640
+to modify this LSTM layer, so they said that, that why we
+
+00:24:09.640 --> 00:24:12.700
+are even considering a CT layer or why we are considering a
+
+00:24:12.700 --> 00:24:15.720
+additional contextual memory layer because whatever we are
+
+00:24:15.720 --> 00:24:17.920
+trying to modify, we are trying to modify with respect to
+
+00:24:17.920 --> 00:24:20.420
+the current input and the previous output that we have
+
+00:24:20.420 --> 00:24:22.940
+received from the previous layer. So, what we can do is
+
+00:24:22.940 --> 00:24:27.860
+maybe we can try to use this HT right, HT as a HT as, as
+
+00:24:27.860 --> 00:24:32.400
+well as, as a CT basically. So if HT itself is going to work
+
+00:24:32.400 --> 00:24:35.860
+for me and which is going to fulfill the role of CT and ST
+
+00:24:35.860 --> 00:24:39.040
+together, so maybe I can try to use that, that will be much
+
+00:24:39.040 --> 00:24:42.660
+better. So keeping that in mind, because even CT minus one,
+
+00:24:42.700 --> 00:24:44.840
+CT T minus one is coming from where? From the previous
+
+00:24:44.840 --> 00:24:47.200
+layer, right? From the previous layer, as you can see over
+
+00:24:47.200 --> 00:24:50.180
+here, they said that, that, okay, so it's technically a HT
+
+00:24:50.180 --> 00:24:52.640
+that we are talking about, right? It's technically a hidden
+
+00:24:52.640 --> 00:24:55.200
+state that we are talking about. So let's try to modify or
+
+00:24:55.200 --> 00:24:59.160
+let's try to use a same state for a next kind of an update
+
+00:24:59.160 --> 00:25:02.340
+or this kind of a forget. Keeping that in mind, people have
+
+00:25:02.340 --> 00:25:05.300
+even removed a CT and they're just trying to keep HT minus
+
+00:25:05.300 --> 00:25:13.740
+one. That's it. Fine. Yes, everyone. So there is no CT. You
+
+00:25:13.740 --> 00:25:17.520
+will be able to find out when to use LSTM, when to use GRU.
+
+00:25:17.620 --> 00:25:20.240
+I have clearly stated that, that GRU, whenever you are
+
+00:25:20.240 --> 00:25:22.360
+looking for the optimization. Now, if I'll talk about a use
+
+00:25:22.360 --> 00:25:25.180
+case, use case wise, there is no differences. You will be
+
+00:25:25.180 --> 00:25:29.020
+able to find out between LSTM and a GRU. The only advantage
+
+00:25:29.020 --> 00:25:32.680
+GRU is going to give you over LSTM is in terms of
+
+00:25:32.680 --> 00:25:33.860
+optimization. That's it.
+
+00:25:36.870 --> 00:25:38.690
+That's the only thing that it is going to give you.
+
+00:25:45.610 --> 00:25:48.210
+Puran is saying, so in the previous example of the word
+
+00:25:48.210 --> 00:25:51.390
+help, okay, help, I have taken help example. So H will be
+
+00:25:51.390 --> 00:25:54.670
+passed in a round one, E will be passed in round two, L will
+
+00:25:54.670 --> 00:25:57.670
+be passed in three, P will be passed in a round four. Same
+
+00:25:57.670 --> 00:26:00.750
+will go with the GRU. Same thing. And if I'm trying to talk
+
+00:26:00.750 --> 00:26:03.670
+about like a parallel one, maybe a multiple LSTM or multiple
+
+00:26:03.670 --> 00:26:06.250
+GRU, if I'm going to take, then parallely I can try to pass
+
+00:26:06.250 --> 00:26:09.450
+H, E, L, P, and then on the other end. So parallely I can
+
+00:26:09.450 --> 00:26:11.970
+try to get the generation, maybe a three word generation,
+
+00:26:12.150 --> 00:26:14.190
+maybe a two word generation, or maybe one word generation.
+
+00:26:14.450 --> 00:26:18.690
+Yeah. So use case wise or code wise, if I'll talk about, so
+
+00:26:18.690 --> 00:26:21.170
+code wise, you will not be able to find out any differences
+
+00:26:21.170 --> 00:26:25.090
+except changes into a library. So instead of calling my LSTM
+
+00:26:25.090 --> 00:26:27.930
+library, I'll try to call maybe a GRU library. That's it.
+
+00:26:28.670 --> 00:26:30.890
+I'm going to show you this example. So obviously I'm going
+
+00:26:30.890 --> 00:26:34.030
+to show you a practical example with GRU, the way I have
+
+00:26:34.030 --> 00:26:36.670
+shown you a practical example for LSTM. So you will be able
+
+00:26:36.670 --> 00:26:39.490
+to find out that I'm not changing much. So what I'm doing is
+
+00:26:39.490 --> 00:26:42.690
+I'm just changing the function over there. That's it. And
+
+00:26:42.690 --> 00:26:45.250
+with the help of same example, the example, which I have
+
+00:26:45.250 --> 00:26:47.870
+taken H, E, L, P help keyword, right? And then it's
+
+00:26:47.870 --> 00:26:52.470
+generation. So I will be showing you the same example with a
+
+00:26:52.470 --> 00:26:57.490
+same word help to generate E, L, P, the way I have done in
+
+00:26:57.490 --> 00:26:58.110
+my previous class.
+
+00:27:01.290 --> 00:27:04.090
+But how can it be parallel? So it's not going to be
+
+00:27:04.090 --> 00:27:07.350
+basically, I'm going to take a multiple unit. This is what
+
+00:27:07.350 --> 00:27:09.510
+we have done even in the past, right? So when I've shown you
+
+00:27:09.510 --> 00:27:12.330
+the previous example, so I was not taking only one, I was
+
+00:27:12.330 --> 00:27:15.410
+taking a multiple LSTM over there. This is how it is going
+
+00:27:15.410 --> 00:27:21.090
+to be parallel. Okay. Now, so moving ahead, uh, this is like
+
+00:27:21.090 --> 00:27:24.050
+a basic architecture. Now the major architecture that you
+
+00:27:24.050 --> 00:27:27.190
+all will be able to find out, and it's must to understand
+
+00:27:27.190 --> 00:27:30.470
+for anyone. Any one of us who is trying to learn agent TKI
+
+00:27:30.470 --> 00:27:35.890
+or generative AI is basically a research paper called as
+
+00:27:35.890 --> 00:27:39.710
+attention is all you need. And this is something that we are
+
+00:27:39.710 --> 00:27:44.770
+going to start now. Now this is going to give you a complete
+
+00:27:44.770 --> 00:27:49.250
+understanding and idea about whatever happens with a LSTM or
+
+00:27:49.250 --> 00:27:52.310
+how calculation happens, how it is able to understand even
+
+00:27:52.310 --> 00:27:55.810
+your very long contest, how it is able to generate a very
+
+00:27:55.810 --> 00:27:59.830
+long context of a data. How it is able to understand the
+
+00:27:59.830 --> 00:28:03.250
+entire word in a forward direction, in a backward direction,
+
+00:28:03.370 --> 00:28:06.530
+each and everything you will be able to understand if you're
+
+00:28:06.530 --> 00:28:10.070
+going to understand this entire architecture. So this paper
+
+00:28:10.070 --> 00:28:12.410
+was released, a very first version of this paper was
+
+00:28:12.410 --> 00:28:15.210
+released in 2018. And after that, you will be able to find
+
+00:28:15.210 --> 00:28:19.350
+out that there are a lot of reasons of this paper was
+
+00:28:19.350 --> 00:28:22.970
+released. And, uh, even the latest one is 2023, but yeah, it
+
+00:28:22.970 --> 00:28:26.190
+was the very first version was released by Google in 2018.
+
+00:28:26.610 --> 00:28:30.150
+Okay. Okay. So this research paper is a mother of everything
+
+00:28:30.150 --> 00:28:36.650
+that you are able to see now in this entire world, whatever
+
+00:28:36.650 --> 00:28:38.870
+model that you can talk about, right? Whatever like a
+
+00:28:38.870 --> 00:28:40.990
+improvement that you are able to see in terms of a
+
+00:28:40.990 --> 00:28:45.370
+generative AI or in terms of an NLP, everything is getting
+
+00:28:45.370 --> 00:28:48.850
+derived just from one single research paper called as
+
+00:28:48.850 --> 00:28:52.310
+attention is all you need now in this research paper. So
+
+00:28:52.310 --> 00:28:54.910
+what they are basically talking about. So in this research
+
+00:28:54.910 --> 00:28:57.850
+paper, they're talking about the complete architecture. So
+
+00:28:57.850 --> 00:29:01.050
+where system will be able to take a very, very long
+
+00:29:01.050 --> 00:29:05.010
+sequences, and it will be able to generate a very, very long
+
+00:29:05.010 --> 00:29:08.010
+sequences. So maybe if I'm trying to like, uh, give one
+
+00:29:08.010 --> 00:29:11.110
+question, it will be able to generate an answer. Maybe if
+
+00:29:11.110 --> 00:29:14.490
+I'm trying to give a one paragraph, I'm asking that that try
+
+00:29:14.490 --> 00:29:16.830
+to translate this in that paragraph into some different
+
+00:29:16.830 --> 00:29:20.290
+languages, it will be able to do it. Maybe if I'm trying to
+
+00:29:20.290 --> 00:29:22.970
+write some quotient, and if I'm saying that generate a code
+
+00:29:22.970 --> 00:29:26.730
+out of it, it will be able to do it. So for all of those
+
+00:29:26.730 --> 00:29:29.630
+things. Okay. So this, this is the base architecture. I'm
+
+00:29:29.630 --> 00:29:33.390
+not saying that all the tasks that we do follows the exact
+
+00:29:33.390 --> 00:29:36.650
+same architecture. No, this is actually a base architecture.
+
+00:29:37.010 --> 00:29:40.390
+Now with every task, you will be able to find out a little
+
+00:29:40.390 --> 00:29:43.150
+bit of modification or maybe a huge amount of modification,
+
+00:29:43.230 --> 00:29:46.310
+or maybe a number of layers people have attached or people
+
+00:29:46.310 --> 00:29:49.170
+have removed. And based on that, they're basically trying to
+
+00:29:49.170 --> 00:29:52.250
+solve a different, different kind of a task. So now it's
+
+00:29:52.250 --> 00:29:56.610
+time to understand this entire architecture in a step by a
+
+00:29:56.610 --> 00:29:59.090
+step manner. Just like a story. So I'll try to explain you
+
+00:29:59.090 --> 00:30:01.670
+this entire things, just like a story. So don't worry about
+
+00:30:01.670 --> 00:30:04.830
+it. This architecture looks scary, but it's not, it's a,
+
+00:30:04.850 --> 00:30:07.370
+it's a beautiful story. And at the end of this class, maybe
+
+00:30:07.370 --> 00:30:10.510
+next, like a one hour, you all will be able to understand
+
+00:30:10.510 --> 00:30:14.790
+each and everything with respect to this is paper service
+
+00:30:14.790 --> 00:30:19.290
+out guys. Yes. So we start attention
+
+00:30:21.850 --> 00:30:29.170
+is all you need. Even inside a class. Now.
+
+00:30:36.820 --> 00:30:37.300
+Yeah. So we start.
+
+00:30:42.570 --> 00:30:46.990
+Okay. Fine. So here, back and forth, back and forth. I'll do
+
+00:30:46.990 --> 00:30:50.110
+a lot with respect to this research paper, right? And then
+
+00:30:50.110 --> 00:30:53.730
+I'll try to draw the breakup of this entire things in my
+
+00:30:53.730 --> 00:30:56.990
+slides over here in my scribbling. So I'll try to draw a
+
+00:30:56.990 --> 00:31:00.430
+breakup of it. So now just look closely, this entire
+
+00:31:00.430 --> 00:31:02.910
+architecture, just try to look at, look at this architecture
+
+00:31:02.910 --> 00:31:06.630
+closely. Now what you are able to see over here. So I start
+
+00:31:06.630 --> 00:31:09.810
+looking into this architecture from here, right from here,
+
+00:31:09.870 --> 00:31:14.090
+from the input side. So here we are trying to pass some of
+
+00:31:14.090 --> 00:31:18.490
+the input. So maybe I'm trying to pass, my name is Sudhanshu
+
+00:31:18.490 --> 00:31:21.970
+Kumar. Some input, right? So my name is Sudhanshu Kumar.
+
+00:31:22.070 --> 00:31:25.270
+I'll try to pass over here. So obviously when I'm trying to
+
+00:31:25.270 --> 00:31:29.750
+pass, my name is Sudhanshu Kumar. So it's a English word
+
+00:31:29.750 --> 00:31:32.890
+system will not be able to understand that particular
+
+00:31:32.890 --> 00:31:37.610
+English word. Now what we will do, right? What I will do to
+
+00:31:37.610 --> 00:31:40.710
+make my system understands that what I'm trying to pass. So
+
+00:31:40.710 --> 00:31:45.310
+obviously I'll try to convert my entire data into its
+
+00:31:45.310 --> 00:31:51.850
+numerical representation. Yes. Everyone. Yeah. I'll, I'll
+
+00:31:51.850 --> 00:31:53.710
+give you all the research people link everything. Don't
+
+00:31:53.710 --> 00:31:55.950
+worry about it. Yeah. So all these things will be shared
+
+00:31:55.950 --> 00:31:58.670
+with all of you. So first of all, try to understand this
+
+00:31:58.670 --> 00:32:02.490
+part is transformer based on encoder and decoder. Everything
+
+00:32:02.490 --> 00:32:05.610
+will be cleared guys. What is encoder? What is decoder? What
+
+00:32:05.610 --> 00:32:09.150
+is a transformer? First, try to understand this by tomorrow
+
+00:32:09.150 --> 00:32:12.630
+evening, by tomorrow. At the end of the class. You all will
+
+00:32:12.630 --> 00:32:14.770
+be able to understand it. First of all, just try to
+
+00:32:14.770 --> 00:32:17.730
+understand this. Then we'll start combining. You will be
+
+00:32:17.730 --> 00:32:19.890
+able to understand what is the meaning of encoder? What is
+
+00:32:19.890 --> 00:32:22.050
+the meaning of decoder? What is the meaning of transformer?
+
+00:32:22.550 --> 00:32:25.210
+What is the meaning of attention? What is the meaning of
+
+00:32:25.210 --> 00:32:27.450
+mass multi-headed attention? What is the meaning of multi
+
+00:32:27.450 --> 00:32:31.830
+-headedness? Everything. Yes. So fast focus. If you're not
+
+00:32:31.830 --> 00:32:33.930
+going to focus, you will never be able to understand. But
+
+00:32:33.930 --> 00:32:37.670
+like I said, this is a base for the entire generative AI.
+
+00:32:38.030 --> 00:32:42.410
+Believe me, it's a base. Okay. So here I'm saying that, that
+
+00:32:42.410 --> 00:32:46.570
+my name is Dhanshu Kumar. Now it's a English word,
+
+00:32:46.670 --> 00:32:49.930
+obviously. My system will not be able to understand what I
+
+00:32:49.930 --> 00:32:53.890
+will do. So I'll try to convert my input, the input, which
+
+00:32:53.890 --> 00:32:57.230
+I'm trying to say, which is my name is Dhanshu Kumar, into
+
+00:32:57.230 --> 00:33:02.250
+its respective numerical representation. And I believe we
+
+00:33:02.250 --> 00:33:05.650
+have seen a lot of numerical representation. Yes. TFIDF, we
+
+00:33:05.650 --> 00:33:09.350
+have seen one hot encoding, label encoding, or maybe what to
+
+00:33:09.350 --> 00:33:12.630
+vector. Something like that. We can try to use it over here.
+
+00:33:12.690 --> 00:33:15.090
+Not exactly, but yeah, something like that. I can try to use
+
+00:33:15.090 --> 00:33:18.790
+it over here so that I will be able to convert my data into
+
+00:33:18.790 --> 00:33:22.090
+its numerical representation. Now this is something called
+
+00:33:22.090 --> 00:33:25.790
+as input embeddings. Now to do our input embeddings, we can
+
+00:33:25.790 --> 00:33:29.210
+try to use some of the pre-trained model. We can try to even
+
+00:33:29.210 --> 00:33:32.930
+train our own neural network, just like what to vector we
+
+00:33:32.930 --> 00:33:36.730
+have done practically inside our class, if you remember. So
+
+00:33:36.730 --> 00:33:39.650
+we can try to train our own model based on our own data. So
+
+00:33:39.650 --> 00:33:42.650
+that I will be able to generate our embeddings. Embedding
+
+00:33:42.650 --> 00:33:45.110
+simply means that numerical representation, and that is a
+
+00:33:45.110 --> 00:33:47.770
+reason. So before coming to this class, we have done those
+
+00:33:47.770 --> 00:33:50.770
+classes so that I should understand that what is the meaning
+
+00:33:50.770 --> 00:33:55.490
+of embeddings. Okay. Now, once you are going to convert your
+
+00:33:55.490 --> 00:33:59.850
+data into its numerical representation with some space,
+
+00:34:00.190 --> 00:34:03.790
+right? Maybe by using a hundred dimension over here, maybe
+
+00:34:03.790 --> 00:34:06.790
+by using a 200 dimension over here. And I believe we all
+
+00:34:06.790 --> 00:34:08.690
+understand what is the meaning of a hundred or 200
+
+00:34:08.690 --> 00:34:09.650
+dimension. Okay. So what is the meaning of a hundred
+
+00:34:09.650 --> 00:34:12.510
+dimension? Right. Dimension of the embeddings means we are
+
+00:34:12.510 --> 00:34:15.750
+trying to represent one single data by using that size of
+
+00:34:15.750 --> 00:34:19.370
+the vector. That's it. Okay. Now, once you are going to
+
+00:34:19.370 --> 00:34:22.710
+generate this input embeddings, then you are going to do
+
+00:34:22.710 --> 00:34:26.650
+this. There is something called as positional encoding. Now
+
+00:34:26.650 --> 00:34:29.110
+what is the meaning of this positional encoding? And we are
+
+00:34:29.110 --> 00:34:32.830
+trying to add it, right? We are trying to use a plus over
+
+00:34:32.830 --> 00:34:34.550
+here. Now what does the meaning of this positional encoding?
+
+00:34:34.770 --> 00:34:38.970
+The meaning of this positional encoding is very simple. So.
+
+00:34:39.470 --> 00:34:42.670
+You are trying to generate a input embedding. So one to one,
+
+00:34:42.770 --> 00:34:47.550
+if I'm saying that my name is
+
+00:34:50.940 --> 00:34:57.040
+Sudhanshu Kumar. So obviously for my, I will try to use one
+
+00:34:57.040 --> 00:35:00.300
+vector to represent it for name. Let's suppose I'm
+
+00:35:00.300 --> 00:35:02.740
+considering one word is equal to one token. Maybe I can
+
+00:35:02.740 --> 00:35:05.040
+consider one sentence is equal to one token. One paragraph
+
+00:35:05.040 --> 00:35:08.300
+is equal to one token. One character is equal to one token
+
+00:35:08.300 --> 00:35:11.540
+depends, depends. So what is the definition of a token? As
+
+00:35:11.540 --> 00:35:14.620
+per me? The system which I'm trying to build. So as of now,
+
+00:35:14.680 --> 00:35:17.640
+I'm considering that one word is equal to one token. That's
+
+00:35:17.640 --> 00:35:21.120
+my assumption. And that is my understanding. So I will try
+
+00:35:21.120 --> 00:35:24.360
+to use name and try to represent it into a vector space. So
+
+00:35:24.360 --> 00:35:28.660
+it will be able to generate its respective embeddings, means
+
+00:35:28.660 --> 00:35:31.540
+a respective numerical value. It will be able to generate
+
+00:35:31.540 --> 00:35:35.360
+into a multi dimension. That's completely fine. But it will
+
+00:35:35.360 --> 00:35:38.340
+not be able to understand that my should come before name or
+
+00:35:38.340 --> 00:35:41.220
+it should come after name. Sudhanshu should come after.
+
+00:35:41.220 --> 00:35:43.800
+Before Kumar, Kumar should come after Sudhanshu. So all
+
+00:35:43.800 --> 00:35:46.600
+these things system will not be able to understand. So we
+
+00:35:46.600 --> 00:35:49.220
+have to make sure that my system that I'm trying to build
+
+00:35:49.220 --> 00:35:54.020
+it, not just understand the word, right? It should also
+
+00:35:54.020 --> 00:35:58.040
+understand the relation between the data or the relation
+
+00:35:58.040 --> 00:36:01.940
+between the word if I'm trying to train it. So obviously to
+
+00:36:01.940 --> 00:36:05.200
+represent those relations, so what we do is so we try to do
+
+00:36:05.200 --> 00:36:08.220
+a positional encoding. I'll even try to talk about a
+
+00:36:08.220 --> 00:36:11.360
+positional encoding formula. Right? A positional encoding
+
+00:36:11.360 --> 00:36:13.380
+formula. That okay. So what is the formula? It's a very
+
+00:36:13.380 --> 00:36:15.360
+simple one for a positional encoding. It's a very simple,
+
+00:36:15.420 --> 00:36:17.680
+straightforward formula that people have used over there.
+
+00:36:17.780 --> 00:36:19.680
+And there are different, different kinds of a positional
+
+00:36:19.680 --> 00:36:22.880
+encoding. Also you will be able to find out. Now here, the
+
+00:36:22.880 --> 00:36:25.340
+meaning of positional encoding is very simple that try to
+
+00:36:25.340 --> 00:36:28.540
+use some technique by which you can try to say that, okay,
+
+00:36:28.620 --> 00:36:31.860
+my will come before name and name will come before is all
+
+00:36:31.860 --> 00:36:34.240
+these things. It means a relation. Right? To represent a
+
+00:36:34.240 --> 00:36:38.080
+relation. Now combine these two data. Now combine these two
+
+00:36:38.080 --> 00:36:40.680
+data means input embedding and a positional encoding.
+
+00:36:40.680 --> 00:36:43.620
+Eventually this is also going to be the number. Right? So
+
+00:36:43.620 --> 00:36:47.320
+combine these two data and then send this data inside a
+
+00:36:47.320 --> 00:36:53.300
+network. Right? Inside a network. Now, so when I say send
+
+00:36:53.300 --> 00:36:58.500
+this data inside a network, let me clean it a little bit.
+
+00:36:59.640 --> 00:37:02.860
+Yeah. So then I'm trying to say that, that, okay, combine
+
+00:37:02.860 --> 00:37:06.600
+these two data and then try to send this data inside my
+
+00:37:06.600 --> 00:37:10.900
+network. So I'm going to combine this data. The raw data and
+
+00:37:10.900 --> 00:37:12.860
+the positional encoding raw data means it's embeddings
+
+00:37:12.860 --> 00:37:16.380
+obviously. And then I'm sending this data into a network.
+
+00:37:16.620 --> 00:37:20.420
+Now here you will be able to find out a multi headed
+
+00:37:20.420 --> 00:37:26.000
+attention. This is the main component and it looks very
+
+00:37:26.000 --> 00:37:29.560
+simple, just like a box right over here. But once we will
+
+00:37:29.560 --> 00:37:33.520
+start unwrapping it, it will take approximately half an hour
+
+00:37:33.520 --> 00:37:37.040
+of time for me just to explain you this multi headed
+
+00:37:37.040 --> 00:37:42.180
+attention. Because this is the main unit. This is the main
+
+00:37:42.180 --> 00:37:46.140
+unit. And then you are going to do addition and
+
+00:37:46.140 --> 00:37:48.340
+normalization. I believe you all understand what is the
+
+00:37:48.340 --> 00:37:51.200
+meaning of a normalization of the data. And then we are
+
+00:37:51.200 --> 00:37:55.060
+going to send this data into a feed forward neural network,
+
+00:37:55.180 --> 00:37:58.120
+a simple basic neural network. We are going to send it then
+
+00:37:58.120 --> 00:38:00.840
+addition and normalization. Once again, we are trying to
+
+00:38:00.840 --> 00:38:04.860
+add, and then this entire thing is basically called as
+
+00:38:04.860 --> 00:38:09.520
+encoder. This name is encoder. Now I'll, I'll try to like
+
+00:38:09.520 --> 00:38:12.860
+generalize the definition of encoder going forward, but
+
+00:38:12.860 --> 00:38:15.800
+yeah, as of now, try to consider that this is basically
+
+00:38:15.800 --> 00:38:19.620
+called as encoder. As of now, in a layman way, you can say
+
+00:38:19.620 --> 00:38:22.980
+that that encoder is something which is helping me out to
+
+00:38:22.980 --> 00:38:27.880
+take a input as of now, just for now, right? Don't take it
+
+00:38:27.880 --> 00:38:30.180
+for granted. Don't say that, no, this is what I taught you
+
+00:38:30.180 --> 00:38:33.260
+because I'm going to change this particular version or the
+
+00:38:33.260 --> 00:38:35.480
+definition, which I'm trying to talk about with respect to
+
+00:38:35.480 --> 00:38:38.940
+encoder eventually in the future. Right? So this is
+
+00:38:38.940 --> 00:38:41.920
+basically called as encoder. Encoder means the kind of a
+
+00:38:41.920 --> 00:38:45.320
+unit, which is considering the input, which is helping me
+
+00:38:45.320 --> 00:38:47.740
+out to take the raw input. And then it is trying to give me
+
+00:38:47.740 --> 00:38:50.260
+some sort of a context vector, right? That is something
+
+00:38:50.260 --> 00:38:53.060
+called as an encoder. Now this is going to give me the
+
+00:38:53.060 --> 00:38:54.340
+input.
+
+00:38:56.310 --> 00:38:59.950
+Now let's suppose, let's suppose we are trying to solve one
+
+00:38:59.950 --> 00:39:02.330
+problem because obviously we are trying to build a network.
+
+00:39:02.490 --> 00:39:05.370
+So we are trying to build a network to solve a problem,
+
+00:39:05.470 --> 00:39:08.290
+right? Without solving a problem. So what is the reason?
+
+00:39:08.290 --> 00:39:10.010
+There is no reason of building this entire network. There is
+
+00:39:10.010 --> 00:39:12.550
+no meaning of building this entire network, right? So we are
+
+00:39:12.550 --> 00:39:14.890
+trying to build this network to solve a particular problem.
+
+00:39:15.030 --> 00:39:19.430
+Let's suppose I'm trying to like input. My name is Dhanshu
+
+00:39:19.430 --> 00:39:22.230
+and maybe I'm expecting that, that it will try to translate.
+
+00:39:23.130 --> 00:39:26.150
+I'm expecting that maybe it will try to like generate some
+
+00:39:26.150 --> 00:39:29.250
+of the sentences or some of the word after my name is
+
+00:39:29.250 --> 00:39:32.850
+Dhanshu, right? So I'm just trying to solve the multiple
+
+00:39:32.850 --> 00:39:35.570
+different, different kind of a problem. So here we will be
+
+00:39:35.570 --> 00:39:39.430
+having the output. We, so as per this particular network,
+
+00:39:39.570 --> 00:39:41.850
+right? As per this particular network. So we are trying to
+
+00:39:41.850 --> 00:39:44.430
+use a supervised learning, let's suppose, so obviously we'll
+
+00:39:44.430 --> 00:39:47.470
+be having a output, right? So we are trying to give a output
+
+00:39:47.470 --> 00:39:51.030
+and even last time. So when we have taken example of HELP
+
+00:39:51.030 --> 00:39:53.930
+help, so we have done a supervised learning, right? So we
+
+00:39:53.930 --> 00:39:57.950
+have like an input and we had the output. It was trying to
+
+00:39:57.950 --> 00:40:01.450
+adjust the loss based on the output expected and the output
+
+00:40:01.450 --> 00:40:04.590
+that it has actually received. So similar kind of a problem.
+
+00:40:04.710 --> 00:40:06.970
+Let's suppose I'm trying to solve even over here. Okay. So
+
+00:40:06.970 --> 00:40:10.250
+we are trying to, so inside this side of the network, inside
+
+00:40:10.250 --> 00:40:13.610
+this particular network. So we are trying to basically give
+
+00:40:13.610 --> 00:40:17.530
+the output and then again embeddings of the output. So for
+
+00:40:17.530 --> 00:40:21.170
+example, ELP was the output. So let's suppose ELP or my name
+
+00:40:21.170 --> 00:40:23.470
+is Dhanshu. So next word, which I have to generate is Kumar
+
+00:40:23.470 --> 00:40:27.930
+and I'm teaching data science with Euron. So maybe this is
+
+00:40:27.930 --> 00:40:30.750
+the next generation I have to do. So this is the output. So
+
+00:40:30.750 --> 00:40:33.850
+same embeddings and then positional embeddings I will try to
+
+00:40:33.850 --> 00:40:36.350
+create and then I'll try to send a data. I'll try to send a
+
+00:40:36.350 --> 00:40:41.210
+data into a multi headed attention, but this time masked
+
+00:40:41.210 --> 00:40:44.230
+multi headed attention. I'll try to even explain you that
+
+00:40:44.230 --> 00:40:46.850
+what is the meaning of a masked over here? Simple
+
+00:40:46.850 --> 00:40:50.530
+explanation, right? So this will go. So this is one layer of
+
+00:40:50.530 --> 00:40:55.470
+network now. So this same network is trying to even the same
+
+00:40:55.470 --> 00:41:00.930
+network is even trying to take a input from this one. So it
+
+00:41:00.930 --> 00:41:04.790
+is taking a output as an input. And then it is trying to
+
+00:41:04.790 --> 00:41:07.190
+take input. Even. Even from this one context vector from
+
+00:41:07.190 --> 00:41:11.330
+this one, and then it is trying to combine together and then
+
+00:41:11.330 --> 00:41:13.290
+it is trying to send it to the feed forward network. And
+
+00:41:13.290 --> 00:41:16.750
+finally I'm able to get the output. Basically our
+
+00:41:16.750 --> 00:41:20.030
+probability means occurrence of, or like a probability of
+
+00:41:20.030 --> 00:41:23.450
+occurrence of one particular word or instances. So this is
+
+00:41:23.450 --> 00:41:26.030
+how I'm able to get a next data and then next data and the
+
+00:41:26.030 --> 00:41:31.750
+next data. Okay. Now, so this looks very simple if you will
+
+00:41:31.750 --> 00:41:35.670
+try to like a look on this architecture overall, but the
+
+00:41:35.670 --> 00:41:39.630
+major component and the only component which is helping me
+
+00:41:39.630 --> 00:41:44.510
+out to learn and understand the entire complex data is
+
+00:41:44.510 --> 00:41:49.650
+called as multi headed attention. This one, this is the only
+
+00:41:49.650 --> 00:41:53.610
+one which is giving me a leverage so that I will be able to
+
+00:41:53.610 --> 00:41:56.850
+understand even a complex of complex of complex of complex
+
+00:41:56.850 --> 00:41:59.990
+data set. Now I will start explaining you and this
+
+00:41:59.990 --> 00:42:03.590
+architecture. So people have not like a, you know, unwrapped
+
+00:42:03.590 --> 00:42:07.330
+it. Well inside this research paper, it's been unwrapped,
+
+00:42:07.430 --> 00:42:10.890
+but yeah, it's a bit difficult to, you know, understand. I'm
+
+00:42:10.890 --> 00:42:13.150
+not saying that it's not been unwrapped. It's been unwrapped
+
+00:42:13.150 --> 00:42:15.930
+in a step by step manner, but it's not that easy to
+
+00:42:15.930 --> 00:42:18.410
+understand if you will go through this entire research
+
+00:42:18.410 --> 00:42:21.710
+paper. And this is where my roles and responsibility comes
+
+00:42:21.710 --> 00:42:25.510
+into a picture so that I can make you understand that what
+
+00:42:25.510 --> 00:42:27.930
+actually goes inside the multi-headed, because apart from
+
+00:42:27.930 --> 00:42:30.430
+that, there is only a neural network, right? There is only a
+
+00:42:30.430 --> 00:42:33.890
+neural network. Plus you will be able to find out. Next over
+
+00:42:33.890 --> 00:42:38.430
+here and next over here means any number of encoder and N
+
+00:42:38.430 --> 00:42:41.970
+number of decoder. So N number of this architecture and N
+
+00:42:41.970 --> 00:42:44.250
+number of that architecture, if you are going to pile up
+
+00:42:44.250 --> 00:42:48.110
+together and if you are going to connect together, so all
+
+00:42:48.110 --> 00:42:49.910
+these things will be connected. Let's suppose on an encoder
+
+00:42:49.910 --> 00:42:52.570
+layer. So this is the number of layers you are going to
+
+00:42:52.570 --> 00:42:55.070
+connect. It simply means that, that you are trying to
+
+00:42:55.070 --> 00:42:59.870
+increase a number of parameter, which will be having a
+
+00:42:59.870 --> 00:43:02.790
+flexibility to understand a complex relationship. Between
+
+00:43:02.790 --> 00:43:09.190
+the data set. So now let's go back to my scribble link and
+
+00:43:09.190 --> 00:43:12.370
+let's try to understand this multi-headed attention
+
+00:43:12.370 --> 00:43:16.510
+architecture, which is available inside my research paper
+
+00:43:16.510 --> 00:43:21.490
+called as attention is all we need making sense guys are
+
+00:43:24.370 --> 00:43:27.310
+basically encoded is also a deep neural network Arvindan. So
+
+00:43:27.310 --> 00:43:30.230
+no, it depends actually. So how I'm going to treat encoder
+
+00:43:30.230 --> 00:43:36.520
+encoder is a very generic keyword word actually. Yes. Okay.
+
+00:43:36.920 --> 00:43:40.020
+Now let's try to understand this one, like I said, so one by
+
+00:43:40.020 --> 00:43:42.100
+one, one by one, you will be able to understand. So don't
+
+00:43:42.100 --> 00:43:45.200
+try to understand everything in a single sort. So you will
+
+00:43:45.200 --> 00:43:49.480
+get confused. It's better. Try to like a take it in a easy
+
+00:43:49.480 --> 00:43:56.780
+way. Okay. Now. So here let's suppose we have an encoder
+
+00:43:56.780 --> 00:43:59.820
+architecture as we have like a, as I said, and as I shown
+
+00:43:59.820 --> 00:44:05.080
+you, so let's suppose I have a multiple layer of a encoder
+
+00:44:05.080 --> 00:44:09.680
+over here. Now inside one single layer, whatever I have
+
+00:44:09.680 --> 00:44:12.440
+shown it to you. So the entire architecture is comes under
+
+00:44:12.440 --> 00:44:19.040
+one single layer, for example, right? So let's suppose this
+
+00:44:19.040 --> 00:44:24.860
+is my encoder layer. So two, three, four, five, six.
+
+00:44:27.700 --> 00:44:32.500
+Okay. And then this is my decoder layer or layer
+
+00:44:32.500 --> 00:44:35.320
+responsible, giving me the output encoder layer is nothing
+
+00:44:35.320 --> 00:44:41.000
+but a layer responsible for giving me basically input one,
+
+00:44:41.100 --> 00:44:44.540
+two, three, four, five, six. Okay. Now all of these are
+
+00:44:44.540 --> 00:44:49.180
+basically connected to each other, connected to each other
+
+00:44:49.180 --> 00:44:56.260
+now encoder. So here I'm trying to give input is nothing but
+
+00:44:56.260 --> 00:44:57.520
+name
+
+00:44:59.470 --> 00:45:00.130
+is
+
+00:45:03.680 --> 00:45:11.070
+Sudhanshu Kumar. And then maybe on the other end, so I'm
+
+00:45:11.070 --> 00:45:16.770
+looking for some sort of a output. So I use two.
+
+00:45:26.650 --> 00:45:31.730
+So I'm trying
+
+00:45:31.730 --> 00:45:32.530
+to give input putting a few only, two and five over here. So
+
+00:45:32.530 --> 00:45:33.670
+input one, two, three, four, five, six. Now this was, this
+
+00:45:33.670 --> 00:45:37.650
+was my decoder layer. So that was my decoder layer.
+
+00:45:39.340 --> 00:45:41.160
+So I will put the output in the encoder layer, the output
+
+00:45:41.160 --> 00:45:50.880
+from my decoder layer. Now what I have to do is that I have
+
+00:45:50.880 --> 00:45:52.400
+to take the input and then I have to put the output over
+
+00:45:52.400 --> 00:45:55.580
+here. for a supervised learning. So we have, and that's the
+
+00:45:55.580 --> 00:45:58.580
+reason, so we were able to see over here NX. So what is the
+
+00:45:58.580 --> 00:46:01.940
+meaning of NX? NX is nothing but N number of such layer we
+
+00:46:01.940 --> 00:46:04.220
+are going to consider. As simple as that. That's the reason.
+
+00:46:04.340 --> 00:46:07.880
+So it was basically a NX. Now here, so encoder and
+
+00:46:07.880 --> 00:46:11.480
+everything is completely fine, but if you are going to break
+
+00:46:11.480 --> 00:46:14.980
+down into one single encoder layer, right? If you're going
+
+00:46:14.980 --> 00:46:18.260
+to break down into one single encoder layer, only this box
+
+00:46:18.260 --> 00:46:22.620
+on your left hand side. So let's suppose I'm going to name
+
+00:46:22.620 --> 00:46:34.760
+it as a encoder 1, encoder 2, encoder 3, encoder 4, encoder
+
+00:46:34.760 --> 00:46:46.320
+5, encoder 6, then decoder 6, decoder 5, decoder 4, decoder
+
+00:46:46.320 --> 00:46:50.700
+3, decoder 4, decoder 5, decoder 6, decoder 7, decoder 8,
+
+00:46:50.700 --> 00:46:52.200
+decoder 9, decoder 10, decoder 11. So, we have 6 encoder and
+
+00:46:52.200 --> 00:46:55.040
+we have 6 decoder as of now. That's the meaning of NX
+
+00:46:55.040 --> 00:46:59.140
+basically, right? Now what will happen inside one single
+
+00:46:59.140 --> 00:47:03.160
+encoder? We have to unwrap that part, right? We have to
+
+00:47:03.160 --> 00:47:07.080
+unwrap that particular part. So if I am trying to, if I have
+
+00:47:07.080 --> 00:47:12.280
+to represent a encoder 1, just a encoder 1, so I can try to
+
+00:47:12.280 --> 00:47:16.340
+unwrap it maybe in this way, I can try to unwrap it in this
+
+00:47:16.340 --> 00:47:19.380
+way. So what is the two major component that we have inside?
+
+00:47:19.380 --> 00:47:23.220
+the encoder guys so can i say that i have a multi-headed
+
+00:47:23.220 --> 00:47:26.420
+attention and a neural network forget about this addition
+
+00:47:26.420 --> 00:47:28.620
+normalization it's a simple mathematics right simple
+
+00:47:28.620 --> 00:47:31.660
+calculation matrix calculation so i can like remove this the
+
+00:47:31.660 --> 00:47:35.100
+major component that we have inside this layer is actually a
+
+00:47:35.100 --> 00:47:39.480
+multi-headed attention and a feed forward so if i'm going to
+
+00:47:39.480 --> 00:47:42.500
+break down this encoder one so i am having two major
+
+00:47:42.500 --> 00:47:49.000
+components so multi-headed attention and then i have a feed
+
+00:47:49.000 --> 00:47:53.020
+forward neural network these are the two component i have
+
+00:47:53.020 --> 00:47:58.100
+inside my encoder one and similarly i have such component
+
+00:47:58.100 --> 00:48:01.820
+inside my encoder two three four five six so on even though
+
+00:48:01.820 --> 00:48:04.520
+i have a hundred number of encoder these are the two major
+
+00:48:04.520 --> 00:48:08.300
+layer that i will be having okay fine so i am having
+
+00:48:08.300 --> 00:48:12.820
+basically these two things now so if i'll talk about maybe a
+
+00:48:12.820 --> 00:48:16.140
+decoder layer so if i have to represent maybe a decoder one
+
+00:48:17.080 --> 00:48:21.360
+decoder one so what are the component if i'm going to break
+
+00:48:21.360 --> 00:48:24.660
+it down a decoder so what are the component that we have so
+
+00:48:24.660 --> 00:48:27.480
+can i say that we have three layers over here so masked
+
+00:48:27.480 --> 00:48:30.800
+multi-head attention then multi-head attention and then a
+
+00:48:30.800 --> 00:48:33.600
+feed forward neural network these are the three major
+
+00:48:33.600 --> 00:48:36.360
+component i have on a decoder side as per this architecture
+
+00:48:36.360 --> 00:48:40.880
+diagram so okay if i am going to like break it down so
+
+00:48:40.880 --> 00:48:44.960
+basically i have three major component so
+
+00:48:51.420 --> 00:48:56.380
+basically we have a masked multi-head attention so masked
+
+00:48:56.380 --> 00:49:01.680
+multi-headed attention we have a multi-headed attention and
+
+00:49:01.680 --> 00:49:05.680
+we have feed forward neural network so these are the three
+
+00:49:05.680 --> 00:49:09.720
+major layer that we have on a decoder side okay that's
+
+00:49:09.720 --> 00:49:14.320
+completely fine now let's first because as you can see that
+
+00:49:14.320 --> 00:49:19.620
+we have mha right multi-headed attention encoder and decoder
+
+00:49:19.620 --> 00:49:22.480
+inside decoder so we have extension of a multi-headed
+
+00:49:22.480 --> 00:49:24.740
+attention which is called a mask it's not not a big deal to
+
+00:49:24.740 --> 00:49:27.120
+like understand this master if i'm able to understand the
+
+00:49:27.120 --> 00:49:30.960
+multi-headed attention because this is where like the entire
+
+00:49:30.960 --> 00:49:34.980
+architecture comes into a picture so what will happen inside
+
+00:49:34.980 --> 00:49:38.260
+this mha what will happen this inside this is like a multi
+
+00:49:38.260 --> 00:49:41.000
+-headed attention because i am trying to say that i am going
+
+00:49:41.000 --> 00:49:45.480
+to pass a data called as my name is sudhansu that is the
+
+00:49:45.480 --> 00:49:47.100
+data which i am going to pass that is the data that i am
+
+00:49:47.100 --> 00:49:48.160
+going to pass so first of all i'm giving a Now, what will
+
+00:49:48.160 --> 00:49:52.800
+happen with that data, basically? So here, let's unwrap this
+
+00:49:52.800 --> 00:49:56.700
+encoder layer. First of all, this one, multi-headed
+
+00:49:56.700 --> 00:49:59.280
+attention. Let's try to understand now this particular
+
+00:49:59.280 --> 00:50:02.800
+layer. This is the most complex part. Rest is like a neural
+
+00:50:02.800 --> 00:50:05.500
+network. So rest is not at all a big deal to understand. But
+
+00:50:05.500 --> 00:50:08.300
+yeah, only this part you have to understand. So what
+
+00:50:08.300 --> 00:50:13.980
+actually happens inside this multi-headed attention? Or in
+
+00:50:13.980 --> 00:50:17.220
+other words, it's also called as a self-attention. So what
+
+00:50:17.220 --> 00:50:20.760
+will happen inside this self-attention at the end of the
+
+00:50:20.760 --> 00:50:25.100
+day? So what will happen over here is that let's suppose I'm
+
+00:50:25.100 --> 00:50:29.180
+trying to pass a data, right? I'm trying to pass a data over
+
+00:50:29.180 --> 00:50:33.640
+here. So I'm trying to say that my name, I'll just try to
+
+00:50:33.640 --> 00:50:36.160
+take a small data over here so that it will be easy for me
+
+00:50:36.160 --> 00:50:39.480
+to do a calculation. So let's suppose I'm trying to pass a
+
+00:50:39.480 --> 00:50:45.760
+data called as my name, right? I'm trying to pass a data
+
+00:50:45.760 --> 00:50:49.940
+called as my. Name only to read up. So instead of my name is
+
+00:50:49.940 --> 00:50:52.120
+Dan shoe, maybe I can try to pass my name is not sure. Also,
+
+00:50:52.200 --> 00:50:56.240
+that's completely fine. Now, as per the architecture, as we
+
+00:50:56.240 --> 00:51:00.000
+have seen that it is going to convert my entire input into a
+
+00:51:00.000 --> 00:51:03.640
+input embeddings. Okay. That's completely fine. So it will
+
+00:51:03.640 --> 00:51:08.820
+try to convert my and name into our embeddings now here. So
+
+00:51:08.820 --> 00:51:12.900
+when it will try to convert this entire, my and name into
+
+00:51:12.900 --> 00:51:15.960
+our embeddings, it will try to maintain some context vector
+
+00:51:15.960 --> 00:51:19.180
+length. Right. Vector length, it is light to maintain. So
+
+00:51:19.180 --> 00:51:22.260
+in, as per this research paper, that length is basically
+
+00:51:22.260 --> 00:51:26.940
+512. So that length is basically 512. You can try to let,
+
+00:51:26.980 --> 00:51:29.560
+take it to a million. That's completely fine. But yeah. So
+
+00:51:29.560 --> 00:51:34.660
+to represent one single word embeddings. So we were using
+
+00:51:34.660 --> 00:51:41.140
+512 space means 512 numbers. We will be having over here,
+
+00:51:41.200 --> 00:51:48.640
+512 for my 512 for a name. Let's name it as a. X1 data and
+
+00:51:48.640 --> 00:51:51.620
+let's name it as a X2 data means this is the data number
+
+00:51:51.620 --> 00:51:53.660
+one. This is the data number two that we are trying to pass
+
+00:51:53.660 --> 00:51:57.960
+inside my network. So input embeddings. Okay. So input
+
+00:51:57.960 --> 00:52:00.300
+embedding size is equal to 512. If you'll go and check the
+
+00:52:00.300 --> 00:52:02.820
+research paper, you will be able to find out that 512 is a
+
+00:52:03.320 --> 00:52:05.780
+input length that people were taking. Now, this is the
+
+00:52:05.780 --> 00:52:07.940
+meaning of taking an input length. So I'm going to convert
+
+00:52:07.940 --> 00:52:12.340
+my into 512 and then name into a 512. So by taking a 512
+
+00:52:12.340 --> 00:52:16.580
+space, I'll try to convert this entire data set. Now, this
+
+00:52:16.580 --> 00:52:20.240
+data set will go where, so this data set will go into multi
+
+00:52:20.240 --> 00:52:22.920
+headed attention. I'm not talking about positional encoding
+
+00:52:22.920 --> 00:52:26.040
+as of now, forget about it. Uh, I'll talk about it, but
+
+00:52:26.040 --> 00:52:29.680
+yeah, so now this data set will go where? So this data set
+
+00:52:29.680 --> 00:52:34.780
+will go inside a multi headed attention. This data set will
+
+00:52:34.780 --> 00:52:40.100
+go inside this one. Okay, fine. Now what we will do. So once
+
+00:52:40.100 --> 00:52:43.620
+it will go inside a multi headed attention. So how this
+
+00:52:43.620 --> 00:52:45.660
+multi headed attention is going to. How it's going to do the
+
+00:52:45.660 --> 00:52:48.540
+math, how it is going to help me out to like understand the
+
+00:52:48.540 --> 00:52:53.300
+context. Let me break it down in a sequential manner. So as
+
+00:52:53.300 --> 00:52:57.220
+I said that we have a X one and we have a X two. Okay, fine.
+
+00:52:58.440 --> 00:53:03.520
+Now so input data wise, input data wise, we have my, and we
+
+00:53:03.520 --> 00:53:08.820
+have a name. Okay. Now embedding wise, embedding wise. So we
+
+00:53:08.820 --> 00:53:13.060
+have basically X one and we have a X two. So we have, let's
+
+00:53:13.060 --> 00:53:14.700
+suppose X one and we have X two.
+
+00:53:18.690 --> 00:53:23.450
+So we have X one and we have X two, then we are going to
+
+00:53:23.450 --> 00:53:28.090
+introduce something new over here. So inside, um, everything
+
+00:53:28.090 --> 00:53:30.210
+is happening inside a multi retention, right? So we have
+
+00:53:30.210 --> 00:53:33.190
+given the input. It is converting into the embeddings. Then
+
+00:53:33.190 --> 00:53:36.230
+there is a three different, different things, which was
+
+00:53:36.230 --> 00:53:40.050
+introduced inside a multi headed attention. There is
+
+00:53:40.050 --> 00:53:43.430
+something called as query. There is something called as key,
+
+00:53:43.530 --> 00:53:47.250
+and there is something called as values. So people, the
+
+00:53:47.250 --> 00:53:48.190
+social have introduced a multi headed attention. They have
+
+00:53:48.190 --> 00:53:51.050
+introduced a three major component inside a multi headed
+
+00:53:51.050 --> 00:53:55.150
+attention. They said that, that, okay, so let's try to find
+
+00:53:55.150 --> 00:53:59.150
+out a value of query. Let's try to find out a value of key.
+
+00:53:59.490 --> 00:54:04.030
+Let's try to find out a value of a value. So basically they
+
+00:54:04.030 --> 00:54:08.330
+have introduced a new mathematical equation, which is going
+
+00:54:08.330 --> 00:54:12.950
+to help me out to build the attention. So build the
+
+00:54:12.950 --> 00:54:15.370
+attention. So what, what kind of attention? So basically
+
+00:54:15.370 --> 00:54:19.610
+attention in such a way. So as you can see. Q K V. So query
+
+00:54:19.610 --> 00:54:22.770
+key and our values, they said that, that I have to build the
+
+00:54:22.770 --> 00:54:25.150
+attention. Attention means what? So attention means it
+
+00:54:25.150 --> 00:54:27.230
+should be able to understand something which is coming
+
+00:54:27.230 --> 00:54:29.090
+before it should be able to understand something which is
+
+00:54:29.090 --> 00:54:31.910
+coming after it will be able, it should be able to
+
+00:54:31.910 --> 00:54:34.150
+understand the relation and that too, for a very, very long
+
+00:54:34.150 --> 00:54:38.870
+contest, right? Very long contest. It is supposed to focus
+
+00:54:38.870 --> 00:54:42.070
+that, okay, so if I'm trying to generate this, so why I'm
+
+00:54:42.070 --> 00:54:44.530
+generating, for example, so if I'm trying to give you an
+
+00:54:44.530 --> 00:54:48.190
+example of a river bank and a financial bank. Now bank is
+
+00:54:48.190 --> 00:54:51.830
+same, right? If I'm giving you two example, if I'm trying to
+
+00:54:51.830 --> 00:54:55.030
+tell you that there is a two example, one is basically a
+
+00:54:55.030 --> 00:54:59.550
+river bank, river bank, right? And then another one is a
+
+00:54:59.550 --> 00:55:03.050
+financial bank in terms of embedding, in terms of conversion
+
+00:55:03.050 --> 00:55:05.830
+of this data into a numeric representation bank is same. So
+
+00:55:05.830 --> 00:55:08.990
+it will not be able to distinguish between like, whether I'm
+
+00:55:08.990 --> 00:55:11.350
+talking about a bank of the river, I'm talking about the
+
+00:55:11.350 --> 00:55:14.810
+financial bank where I can go and keep the money, but I'm
+
+00:55:14.810 --> 00:55:16.810
+trying to build the model, which will be able to understand.
+
+00:55:16.810 --> 00:55:19.610
+Even this kind of a relation, right? And that too, with the
+
+00:55:19.610 --> 00:55:23.730
+context with basically a positions so that it will be able
+
+00:55:23.730 --> 00:55:26.610
+to understand a grammar context, and it will be able to
+
+00:55:26.610 --> 00:55:29.510
+generate a very, very long sequences, keeping that in our
+
+00:55:29.510 --> 00:55:32.170
+mind. So people have introduced basically a three things so
+
+00:55:32.170 --> 00:55:35.570
+that it will help me out to build attention. Building
+
+00:55:35.570 --> 00:55:39.790
+attention means build up better relation between my data.
+
+00:55:40.010 --> 00:55:42.210
+That's that's the meaning of attention over here. So build
+
+00:55:42.210 --> 00:55:45.390
+up better relation between the data backend. So in a forward
+
+00:55:45.390 --> 00:55:47.230
+direction, in a backward direction. In both the direction.
+
+00:55:47.410 --> 00:55:50.810
+And this is where they said that that okay, so let's try to
+
+00:55:50.810 --> 00:55:54.550
+introduce a three parameter called as query key and a value
+
+00:55:54.550 --> 00:55:57.830
+and maybe with the help of that, I'll try to define a better
+
+00:55:57.830 --> 00:56:01.350
+relation. I'll try to define the better relation. So here,
+
+00:56:01.490 --> 00:56:10.250
+you will be able to find out query key value. Now what is
+
+00:56:10.250 --> 00:56:13.770
+this query? So again, this is nothing but a vector, right
+
+00:56:13.770 --> 00:56:16.830
+vector because everything which happens inside the network,
+
+00:56:16.950 --> 00:56:20.170
+so it happens with respect to a vector or like numbers. So
+
+00:56:20.170 --> 00:56:23.530
+basically, there is a query vector I will try to create for
+
+00:56:23.530 --> 00:56:26.750
+my input data x one, there will be a key vector I'll try to
+
+00:56:26.750 --> 00:56:30.610
+create for my data input data x x one. And for our value
+
+00:56:30.610 --> 00:56:33.370
+vector, I'll try to create for our input data x one
+
+00:56:33.370 --> 00:56:37.610
+similarly for input data x two name, right? So x one is my
+
+00:56:37.610 --> 00:56:41.690
+and x two is name, I'll try to create a query vector, I'll
+
+00:56:41.690 --> 00:56:44.810
+try to create a key vector and I'll try to create a value
+
+00:56:44.810 --> 00:56:48.910
+vector. Now, the question is how, how I will be able to
+
+00:56:48.910 --> 00:56:51.590
+create a query vector. It's not like I will just go and do
+
+00:56:51.590 --> 00:56:53.650
+some multiplication and division and then I'll be able to
+
+00:56:53.650 --> 00:56:56.790
+create it know how I will be able to create a key vector or
+
+00:56:56.790 --> 00:57:02.530
+how I will be able to create basically a value vector. So to
+
+00:57:02.530 --> 00:57:06.350
+create a query key and a value vector because at the end of
+
+00:57:06.350 --> 00:57:09.050
+the day, I have to achieve only one thing I have to achieve
+
+00:57:09.050 --> 00:57:14.110
+our relationship goal that how in a best possible way I will
+
+00:57:14.110 --> 00:57:17.150
+be able to build. The relation. So what they say that is
+
+00:57:17.150 --> 00:57:22.350
+that okay, so I can try to create a query key and a value.
+
+00:57:22.690 --> 00:57:27.010
+But I can try to make this entire things as a learnable
+
+00:57:27.010 --> 00:57:30.330
+parameter. So when I'm trying to establish the relationship
+
+00:57:30.330 --> 00:57:33.450
+between my and a name, that which one should come after what
+
+00:57:33.450 --> 00:57:36.810
+and like what it should be a sequence. So maybe I can try to
+
+00:57:36.810 --> 00:57:40.290
+make it as a learnable parameter. And again, so we all know
+
+00:57:40.290 --> 00:57:42.190
+that what is the meaning of a learnable parameter. So
+
+00:57:42.190 --> 00:57:45.210
+obviously, there will be a weight associated with it. If I'm
+
+00:57:45.210 --> 00:57:47.770
+going to pass q1 and then q2. So obviously, there will be a
+
+00:57:47.770 --> 00:57:50.270
+weight associated with it means there will be a network
+
+00:57:50.270 --> 00:57:54.030
+associated. So they said that that okay, try to take a
+
+00:57:54.030 --> 00:58:01.710
+weight wq for a query, try to take a weight wk for like a
+
+00:58:01.710 --> 00:58:07.110
+key and try to take a weight basically wv for a value so
+
+00:58:07.110 --> 00:58:13.450
+that you will be able to understand the relation or you will
+
+00:58:13.450 --> 00:58:15.510
+you will be having basically a total. A trainable parameter
+
+00:58:15.510 --> 00:58:19.070
+because I will be able to get a trainable parameter. Once I
+
+00:58:19.070 --> 00:58:21.450
+will be having these weights. So they said that that okay,
+
+00:58:21.530 --> 00:58:24.410
+so try to consider a weight for the query paid for the key
+
+00:58:24.410 --> 00:58:27.490
+and wait for the value. And then eventually what I will do
+
+00:58:27.490 --> 00:58:32.490
+is so I will try to write. So I'll try to basically find out
+
+00:58:32.490 --> 00:58:39.070
+the value of query key and a value is this making sense till
+
+00:58:39.070 --> 00:58:42.390
+this point, even now I'm not able to understand like now I
+
+00:58:42.390 --> 00:58:46.050
+have not explained you that. How we are able to find out q1
+
+00:58:46.050 --> 00:58:50.650
+q2 k1 k2 and v1 v2 just this part. So I'm just able to
+
+00:58:50.650 --> 00:58:53.870
+explain you clearly till embeddings that we are trying to
+
+00:58:53.870 --> 00:58:55.890
+insert a data and we are trying to create the embeddings and
+
+00:58:55.890 --> 00:58:58.550
+these are just a parameter that we are trying to create. So
+
+00:58:58.550 --> 00:59:00.350
+is this part clear to all of us?
+
+00:59:05.920 --> 00:59:10.400
+Yes. Okay, if this is clear, now moving to the step number
+
+00:59:10.400 --> 00:59:13.900
+two. Now what the step number two says, how I will be able
+
+00:59:13.900 --> 00:59:17.760
+to create this query vector, how I will be able to create
+
+00:59:17.760 --> 00:59:21.460
+this key vector. And how I will be able to create this value
+
+00:59:21.460 --> 00:59:26.020
+vector. So we have taken a weight over here, I think we all
+
+00:59:26.020 --> 00:59:29.400
+know that weights are nothing but a random data. Right.
+
+00:59:29.420 --> 00:59:31.360
+Initially, it is going to be the random data. This is the
+
+00:59:31.360 --> 00:59:34.440
+meaning of a parameter like a trainable parameter. So if it
+
+00:59:34.440 --> 00:59:37.480
+is a random, we are going to train it. So here what we are
+
+00:59:37.480 --> 00:59:42.080
+going to do is so we are going to multiply x1 right with a
+
+00:59:42.080 --> 00:59:47.180
+wq. So we are going to multiply x1 with a wq. And then we
+
+00:59:47.180 --> 00:59:50.460
+are going to create a q1. So what is the value of what will
+
+00:59:50.460 --> 00:59:54.380
+be the value of q1? So value of q1 is nothing but x1 and dot
+
+00:59:54.380 --> 00:59:59.920
+product of wq. How I will be able to produce a q2? This one
+
+00:59:59.920 --> 01:00:03.600
+I will be able to produce. So it is nothing but x2 this data
+
+01:00:03.600 --> 01:00:09.020
+right into wq. Now we all know that that this wq is
+
+01:00:09.020 --> 01:00:12.940
+technically a trainable parameter. Right. So obviously, I
+
+01:00:12.940 --> 01:00:15.300
+have taken, I am starting with the random one and then I
+
+01:00:15.300 --> 01:00:18.260
+will be able to train it. So my q1 and q2 is going to
+
+01:00:18.260 --> 01:00:21.900
+change. So this is my query. Now how I will be able to
+
+01:00:21.900 --> 01:00:24.500
+write. So once I'm able to let's suppose generate this
+
+01:00:24.500 --> 01:00:29.560
+query, right? So if I'm able to generate this query, then
+
+01:00:29.560 --> 01:00:33.920
+how I will be able to generate basically a key vector. So
+
+01:00:33.920 --> 01:00:36.240
+query vector, yes, I'm able to generate. So just multiply
+
+01:00:36.240 --> 01:00:39.300
+and then I will be able to generate it. Yep.
+
+01:00:45.740 --> 01:00:49.080
+Making sense guys, till this point, how I'm able to generate
+
+01:00:49.080 --> 01:00:50.400
+a query vector q1.
+
+01:01:01.490 --> 01:01:05.930
+Yes. Okay. It's a trainable parameter. Now how I will be
+
+01:01:05.930 --> 01:01:10.570
+able to generate a k1, same approach, right? So my k1 is
+
+01:01:10.570 --> 01:01:15.590
+nothing but my data into my wk. Another matrix, right?
+
+01:01:15.650 --> 01:01:18.830
+Another trainable parameter, my k2 is nothing but x2 into
+
+01:01:18.830 --> 01:01:26.770
+wk. Again my v1 is nothing but my x1 into wv and my v2 is
+
+01:01:26.770 --> 01:01:32.570
+nothing but my x1 into my wv, sorry, x2 into wv. Okay. So
+
+01:01:32.570 --> 01:01:37.850
+three additional weight we are trying to initialize, three
+
+01:01:37.850 --> 01:01:40.650
+additional relation, the relation which was not, doesn't
+
+01:01:40.650 --> 01:01:43.670
+even exist. So separate three different, different kind of a
+
+01:01:43.670 --> 01:01:48.030
+relation we are trying to initialize over here. As simple as
+
+01:01:48.030 --> 01:01:51.090
+that, right? So three separate different, different kind of
+
+01:01:51.090 --> 01:01:54.970
+a relation we are trying to initialize over here. Now once
+
+01:01:54.970 --> 01:01:57.450
+we will be able to initialize this three different,
+
+01:01:57.470 --> 01:01:59.990
+different relation, which is again based on the heavy
+
+01:01:59.990 --> 01:02:03.330
+trainable parameter. Okay. Then what we are going to do is
+
+01:02:03.330 --> 01:02:07.250
+there is a calculation that we are trying to perform. So we
+
+01:02:07.250 --> 01:02:10.870
+are trying to say that let's try to find out something
+
+01:02:10.870 --> 01:02:15.930
+called as S-C-O-R-E score. Let's try to find out the score.
+
+01:02:16.170 --> 01:02:20.210
+Now what is a score basically? So a score is nothing but
+
+01:02:20.210 --> 01:02:27.830
+let's suppose I have a query q1, right? So q1 and dot k1.
+
+01:02:28.390 --> 01:02:32.410
+And then I have like a, again. So when I'm trying to find
+
+01:02:32.410 --> 01:02:35.010
+out the score, so I'll try to find out the score for the
+
+01:02:35.010 --> 01:02:38.190
+very first data. So for my, I will try to find out the
+
+01:02:38.190 --> 01:02:43.890
+score. So for my score is q1, k1, and then it's going to be
+
+01:02:43.890 --> 01:02:49.190
+basically q1 and k2. So here I'm trying to basically build a
+
+01:02:49.190 --> 01:02:52.730
+relationship in between. So I'm trying to like do a scoring,
+
+01:02:52.790 --> 01:02:57.090
+scoring for what? My. Now it will try to give me, or it will
+
+01:02:57.090 --> 01:03:02.330
+like, like give me a power to relate this. My and name. So
+
+01:03:02.330 --> 01:03:07.910
+now I'm trying to relate my and name. So q1, k1 and q2, or
+
+01:03:07.910 --> 01:03:12.990
+q1 and k2 and q1 and k1 basically. So similarly, this is for
+
+01:03:12.990 --> 01:03:17.510
+my, this is for basically my. Now so maybe I can try to
+
+01:03:17.510 --> 01:03:22.110
+divide it. So this is basically for my. Now for name, for
+
+01:03:22.110 --> 01:03:30.270
+name it's going to be basically q2 and k1 and then q2 and
+
+01:03:30.270 --> 01:03:34.990
+k2. Now this is going to give me the score. So I'm just
+
+01:03:34.990 --> 01:03:37.010
+trying to do some mathematical calculation and then based on
+
+01:03:37.010 --> 01:03:39.730
+that, I'm trying to say that that, okay, fine. So this is
+
+01:03:39.730 --> 01:03:44.130
+basically a score now, obviously. So if like a, I'm trying
+
+01:03:44.130 --> 01:03:49.150
+to multiply q1 and k1, it will be having a highest score as
+
+01:03:49.150 --> 01:03:54.850
+compared to k1, q1 and k2 because q1 and k2. So I'll, I'll
+
+01:03:54.850 --> 01:03:57.490
+have to like maintain it in such a way, or I have to train
+
+01:03:57.490 --> 01:03:59.930
+it such a way that it should give me a highest score.
+
+01:03:59.930 --> 01:04:02.930
+Because it will be having more, will be having most of the
+
+01:04:02.930 --> 01:04:05.510
+relationship with my itself, right? And then a little bit
+
+01:04:05.510 --> 01:04:07.970
+less relationship with a next one and the next one and the
+
+01:04:07.970 --> 01:04:11.670
+next one. Then what we are going to do is, so just try to
+
+01:04:11.670 --> 01:04:19.170
+divide, divide. So divide by what? So divide by basically a
+
+01:04:19.170 --> 01:04:25.110
+root of d, right? So root of d. Now what is the meaning of a
+
+01:04:25.110 --> 01:04:28.010
+root of d? So if you will go and look into the research
+
+01:04:28.010 --> 01:04:32.430
+paper, right? So here. So here divide each by dk and what is
+
+01:04:32.430 --> 01:04:36.110
+basically a d. So the input consists of query and key
+
+01:04:36.110 --> 01:04:41.310
+dimension dk. So here they said that, that whatever
+
+01:04:41.310 --> 01:04:45.130
+dimension that you have for a query and a key vector. So in
+
+01:04:45.130 --> 01:04:47.350
+the research paper, they have taken dimension of this one is
+
+01:04:47.350 --> 01:04:51.990
+equal to 64, right? So dk means dimension of query
+
+01:04:51.990 --> 01:04:58.210
+basically. So divide this entire thing. So q1, k1. And try
+
+01:04:58.210 --> 01:05:00.030
+to divide it with dk.
+
+01:05:02.730 --> 01:05:08.170
+Now q1 and k2 and divide it by root of dk. Now from where we
+
+01:05:08.170 --> 01:05:12.210
+are getting a d. So d is nothing but a dimension of a query
+
+01:05:12.210 --> 01:05:15.590
+vector and a key vector. So here dk we are considering means
+
+01:05:15.590 --> 01:05:19.610
+we are trying to consider the k vector and then try to do
+
+01:05:19.610 --> 01:05:23.170
+one thing. So then once you are able to get this, once you
+
+01:05:23.170 --> 01:05:26.750
+are able to get this, then try to find out the softmax. Now
+
+01:05:26.750 --> 01:05:30.030
+we all know that what softmax does. So softmax will tell
+
+01:05:30.030 --> 01:05:32.210
+you. It will try to give you a probability of occurrence of
+
+01:05:32.210 --> 01:05:35.070
+this and this all together. So even though if we have like a
+
+01:05:35.070 --> 01:05:37.590
+hundreds of data, so it will try to give me the probability
+
+01:05:38.210 --> 01:05:42.830
+of occurrence of all the data. So here let's suppose like we
+
+01:05:42.830 --> 01:05:48.610
+are able to get q1 and k1 is equals to 100. And then here q1
+
+01:05:48.610 --> 01:05:52.710
+and k1, we are able to get, let's suppose a 90, right? So 90
+
+01:05:52.710 --> 01:05:55.970
+divided by root of eight and then 90 divided by, sorry,
+
+01:05:56.070 --> 01:06:00.170
+sorry, a hundred divided by. So here. A hundred. So 90
+
+01:06:00.170 --> 01:06:05.710
+divided by root of eight and then 90 divided by root of
+
+01:06:05.710 --> 01:06:11.550
+eight. And then we are trying to apply a softmax on top of
+
+01:06:11.550 --> 01:06:15.590
+it. So can anyone give me a probability guys that what will
+
+01:06:15.590 --> 01:06:18.410
+be the probability of occurrence of my with my, what will
+
+01:06:18.410 --> 01:06:22.750
+the probability of occurrence of my with name? Yeah. So this
+
+01:06:22.750 --> 01:06:26.510
+is a calculation we are trying to perform just for my as of
+
+01:06:26.510 --> 01:06:29.490
+now. Similarly, I'll try to do a calculation for a name. So
+
+01:06:29.490 --> 01:06:32.650
+I think we can do a math and then we can try to do even a
+
+01:06:32.650 --> 01:06:36.850
+softmax over here. And I will be able to find out the result
+
+01:06:36.850 --> 01:06:39.510
+that what is the probability of occurrence of my with my,
+
+01:06:39.610 --> 01:06:42.630
+and what is the probability of occurrence of this one now?
+
+01:06:43.610 --> 01:06:47.290
+So once you will be able to get this softmax value, right?
+
+01:06:47.330 --> 01:06:49.990
+Once you are able to get the softmax. Now if you remember,
+
+01:06:50.130 --> 01:06:54.110
+so we have used a query and key over here, we have used a
+
+01:06:54.110 --> 01:06:57.490
+query and key so far. We haven't used a value. Query and key
+
+01:06:57.490 --> 01:07:00.290
+to calculate the score. And then like we are dividing it, we
+
+01:07:00.290 --> 01:07:02.610
+are trying to find out the probability. So now what we are
+
+01:07:02.610 --> 01:07:04.930
+going to do is, so we are going to multiply basically
+
+01:07:04.930 --> 01:07:12.010
+softmax, softmax with value. So whatever softmax you are
+
+01:07:12.010 --> 01:07:15.490
+able to get for this, so you are going to multiply with
+
+01:07:15.490 --> 01:07:19.650
+basically a value. So here you, once you are going to apply,
+
+01:07:19.810 --> 01:07:25.070
+multiply it, so you will be able to find out a value V1 and
+
+01:07:25.070 --> 01:07:29.730
+V2 with our multiplication. Now, once you are able to get
+
+01:07:29.730 --> 01:07:32.410
+this, so obviously like we have two multiplication over
+
+01:07:32.410 --> 01:07:37.430
+here. So value one and dash and the value, sorry, value
+
+01:07:37.430 --> 01:07:42.890
+like, yeah, one of one, let's say, and value one of two, you
+
+01:07:42.890 --> 01:07:45.370
+will be able to get. So value of one of one and value one of
+
+01:07:45.370 --> 01:07:48.950
+two, you will be able to get. So now we have basically a two
+
+01:07:48.950 --> 01:07:53.370
+vector over here. We are going to sum it basically. So we
+
+01:07:53.370 --> 01:07:56.470
+are going to basically sum it. And then I will be able to
+
+01:07:56.470 --> 01:07:58.530
+get. I will be able to get only one vector and we are trying
+
+01:07:58.530 --> 01:08:01.470
+to call that vector as a, let's suppose Z vector. We are
+
+01:08:01.470 --> 01:08:05.930
+calling that vector as a Z vector. So here I will be having
+
+01:08:05.930 --> 01:08:11.210
+a final Z vector. So these are the, like now this entire
+
+01:08:11.210 --> 01:08:14.950
+process that we have done, right? Starting from my
+
+01:08:14.950 --> 01:08:18.670
+converting into embeddings, generating a query and key
+
+01:08:18.670 --> 01:08:22.770
+vector with the help of like a unknown parameter, or you can
+
+01:08:22.770 --> 01:08:26.750
+say a weights, then doing a calculation and then coming till
+
+01:08:26.750 --> 01:08:31.210
+this particular point of a time and generating this final Z
+
+01:08:31.210 --> 01:08:37.630
+vector. This is called as self attention. So we are trying
+
+01:08:37.630 --> 01:08:41.310
+to do this entire process. And if you remember, so we are,
+
+01:08:41.310 --> 01:08:45.250
+we are trying to like focus on itself as well as we are
+
+01:08:45.250 --> 01:08:48.090
+trying to focus on other word as well. We are trying to find
+
+01:08:48.090 --> 01:08:51.170
+out the relationship between like a data means my to my, and
+
+01:08:51.170 --> 01:08:54.190
+we are trying to find a relationship between my to name as
+
+01:08:54.190 --> 01:08:57.250
+well. So once. We are trying to start calculating a score
+
+01:08:57.250 --> 01:08:59.950
+and based on that, so obviously we are going to optimize or
+
+01:08:59.950 --> 01:09:03.130
+we are going to change the weights over there. And the
+
+01:09:03.130 --> 01:09:08.450
+entire sequence is connected with these two words, right?
+
+01:09:08.530 --> 01:09:13.130
+And finally the Z that we are trying to build. So if you are
+
+01:09:13.130 --> 01:09:15.970
+going to focus over here, so this Z is nothing but a
+
+01:09:15.970 --> 01:09:20.350
+combination of this value and this value, yes, combination
+
+01:09:20.350 --> 01:09:24.430
+of this value and this value. Now just for my, just for my,
+
+01:09:24.530 --> 01:09:28.090
+right? So Z is nothing but a combination of this one and
+
+01:09:28.090 --> 01:09:31.710
+this one. And basically this vector and this vector when I'm
+
+01:09:31.710 --> 01:09:34.190
+talking about, so we are considering my as well as name.
+
+01:09:34.290 --> 01:09:37.850
+Now, if I'll do this things for name for name and my both, I
+
+01:09:37.850 --> 01:09:40.590
+will end up considering over here now. So in this way, what
+
+01:09:40.590 --> 01:09:47.090
+I will do is so I end up creating a multiple Z, Z one, Z
+
+01:09:47.090 --> 01:09:52.010
+two, Z three and so on. So for my again for name, for a my
+
+01:09:52.010 --> 01:09:55.090
+name then is then Sudhanshu and then Kumar. Come on. for
+
+01:09:55.090 --> 01:09:59.190
+everything I will end up creating this Z, Z, Z, Z, Z and
+
+01:09:59.190 --> 01:10:02.170
+everything is related with all the other one. Everything,
+
+01:10:02.310 --> 01:10:04.970
+everything is related with all the other one, right? So this
+
+01:10:04.970 --> 01:10:08.930
+is something called as multi-headed attention at the end of
+
+01:10:08.930 --> 01:10:11.090
+the day. This is something called as multi-headed attention.
+
+01:10:11.310 --> 01:10:14.870
+So we are having, so this approach is called a self
+
+01:10:14.870 --> 01:10:18.070
+-attention, right? This actual approach is called a self
+
+01:10:18.070 --> 01:10:20.610
+-attention. So when I'm trying to focus just on my, this is
+
+01:10:20.610 --> 01:10:23.650
+called a self-attention. Now, when I'm going to combine, my
+
+01:10:23.650 --> 01:10:27.910
+name is Dhanushu, all the Z vector, Z1, Z2, Z3. Now it will
+
+01:10:27.910 --> 01:10:30.590
+become what? It will become basically a multi-headed
+
+01:10:30.590 --> 01:10:32.050
+attention. Is it making sense guys?
+
+01:10:37.850 --> 01:10:42.130
+Sorry, root of 64. So root of DK, right? Dimension 64. My,
+
+01:10:42.150 --> 01:10:45.430
+my bad. Yeah. Technically it's a eight. Like if you're going
+
+01:10:45.430 --> 01:10:47.030
+to remove the root, then it will be eight.
+
+01:10:50.480 --> 01:10:53.720
+Sorry, I was not looking into your chat guys. So yeah, I
+
+01:10:53.720 --> 01:10:57.320
+think it's a silly mistake. I have corrected it. Making
+
+01:10:57.320 --> 01:10:59.700
+sense? So what is it? What is the meaning of self-attention?
+
+01:10:59.860 --> 01:11:02.660
+So self-attention is nothing, but if I'm going to summarize,
+
+01:11:02.940 --> 01:11:06.420
+so what is the meaning of self-attention? Self-attention is
+
+01:11:06.420 --> 01:11:09.440
+nothing, but I'm going to take a data. So I'm going to
+
+01:11:09.440 --> 01:11:13.420
+consider basically a word. Then what? Then I'm going to find
+
+01:11:13.420 --> 01:11:16.580
+out its query vector. Then I'm going to find out its key
+
+01:11:16.580 --> 01:11:19.380
+vector. I'm going to find out its value vector. I'm going to
+
+01:11:19.380 --> 01:11:23.040
+calculate a score of it. Then I'm going to find out the
+
+01:11:23.040 --> 01:11:26.920
+probability of it with the help of softness function with
+
+01:11:26.920 --> 01:11:31.000
+other one, right? And then I'm going to basically like, uh,
+
+01:11:31.840 --> 01:11:35.960
+uh, like, uh, do a softness into a value multiplication. So
+
+01:11:35.960 --> 01:11:45.330
+softness into value, and then I'm going to add, and finally
+
+01:11:45.330 --> 01:11:50.610
+I will be able to create a vector. I'm calling it as a jet.
+
+01:11:50.690 --> 01:11:53.750
+I'm calling it as a jet, let's suppose. So finally, I will
+
+01:11:53.750 --> 01:11:56.370
+be able to create basically a vector. So now this is called
+
+01:11:56.370 --> 01:11:59.850
+as self-attention. So I'm just trying to focus on my, and
+
+01:11:59.850 --> 01:11:59.970
+then I'm going to add a vector. So I'm going to add a
+
+01:11:59.970 --> 01:12:01.910
+vector. So I'm going to do the sequence and then I'm going
+
+01:12:01.910 --> 01:12:05.050
+to focus on name. I'll try to do the sequence. And then I'm
+
+01:12:05.050 --> 01:12:08.150
+going to focus on is I'll do the sequence. Then I'm going to
+
+01:12:08.150 --> 01:12:11.350
+focus on. And then I'll do the sequence and not remember,
+
+01:12:11.450 --> 01:12:15.750
+right. And then just try to observe over here that when we
+
+01:12:15.750 --> 01:12:20.410
+are trying to focus just on my, right. Can I say that I'm
+
+01:12:20.410 --> 01:12:22.870
+trying to establish relationships with other data set as
+
+01:12:22.870 --> 01:12:29.100
+well? Is it making sense? Guys. Can I say that when I'm
+
+01:12:29.100 --> 01:12:31.660
+trying to focus on my, only my, forget about the name,
+
+01:12:31.700 --> 01:12:34.920
+forget the second word right so when i'm trying to like
+
+01:12:34.920 --> 01:12:38.780
+focus on my so i'm not just focusing on my yes indeed i'm
+
+01:12:38.780 --> 01:12:42.780
+focusing on my more but i'm trying to even establish
+
+01:12:42.780 --> 01:12:46.580
+relations with other data name that's the reason we are
+
+01:12:46.580 --> 01:12:49.040
+trying to calculate a score right so where we are not
+
+01:12:49.040 --> 01:12:51.520
+considering just a key one we are considering key two as
+
+01:12:51.520 --> 01:12:53.980
+well if we have key three key four key five we will be
+
+01:12:53.980 --> 01:12:56.440
+considering that and then we are going to divide and then we
+
+01:12:56.440 --> 01:12:58.500
+are going to find out the probability now when we are trying
+
+01:12:58.500 --> 01:13:00.740
+to find out the probability so we are trying to find out a
+
+01:13:00.740 --> 01:13:04.680
+probability of occurrence of my with respect to even a name
+
+01:13:04.680 --> 01:13:06.980
+component this is the name component so let's suppose i have
+
+01:13:06.980 --> 01:13:11.100
+a my name is dhanshu so i will be able to find out a softmax
+
+01:13:11.100 --> 01:13:14.980
+with my name is dhanshu all these five words together right
+
+01:13:14.980 --> 01:13:17.440
+and then i'm trying to multiply the softness with the value
+
+01:13:17.440 --> 01:13:22.340
+so when i'm trying to do a self-attention i'm trying to do
+
+01:13:22.340 --> 01:13:27.180
+it by relating it with some other data as well yes so this
+
+01:13:27.180 --> 01:13:30.560
+is called as self-attention now why it is called as multi
+
+01:13:30.560 --> 01:13:33.220
+-headed attention so when you are going to combine a
+
+01:13:33.220 --> 01:13:37.920
+multiple self-attention it will become what it will become a
+
+01:13:37.920 --> 01:13:42.720
+multi-headed self-attention is that making sense guys so
+
+01:13:44.670 --> 01:13:48.190
+when i'm going to combine a multiple self-attention so let's
+
+01:13:48.190 --> 01:13:53.690
+suppose if i'm going to like do this procedure for my name
+
+01:13:53.690 --> 01:13:54.590
+is
+
+01:13:57.980 --> 01:14:05.660
+dhanshu kumar right so for my i will generate z1 for name i
+
+01:14:05.660 --> 01:14:10.440
+will generate z2 for name i will generate z3 for this z4
+
+01:14:10.440 --> 01:14:14.980
+and for kumar i'm going to generate z5 now this is a self
+
+01:14:14.980 --> 01:14:17.200
+-attention this is a self-attention this is a self-attention
+
+01:14:17.200 --> 01:14:20.040
+this is a self-attention this is a self-attention right now
+
+01:14:20.040 --> 01:14:23.720
+if i'm going to combine all of these things together right
+
+01:14:23.720 --> 01:14:27.260
+so this is technically called as attention head one so this
+
+01:14:27.260 --> 01:14:29.460
+is called as head one head two head three head four head
+
+01:14:29.460 --> 01:14:32.860
+five right so when i'm going to combine all of these
+
+01:14:32.860 --> 01:14:36.380
+attentions together right i'm going to combine all of these
+
+01:14:36.380 --> 01:14:39.380
+attentions together this attention together and then right
+
+01:14:39.380 --> 01:14:45.700
+so i am going to like a combine z1 plus z2 plus z3 plus z4
+
+01:14:45.700 --> 01:14:50.540
+plus z5 z5 right till z5 we have combine it and then
+
+01:14:50.540 --> 01:14:54.300
+multiply that one with another weight another weight
+
+01:14:54.300 --> 01:14:58.080
+basically right another unknown weight just try to multiply
+
+01:14:58.080 --> 01:15:02.540
+it maybe i can write like a h weight right wh weight so
+
+01:15:02.540 --> 01:15:06.040
+combine this one so can i say that again i will be able to
+
+01:15:06.040 --> 01:15:11.420
+receive a learnable parameter yes so here what i am trying
+
+01:15:11.420 --> 01:15:17.660
+to prove is that we have a learnable parameter wq wk and wv
+
+01:15:17.660 --> 01:15:22.540
+for a particular data for a particular word we have a
+
+01:15:22.540 --> 01:15:24.560
+learnable parameter right for the individual word we have a
+
+01:15:24.560 --> 01:15:29.540
+learnable parameter now even for the combination of the data
+
+01:15:29.540 --> 01:15:33.300
+we have a learnable parameter so we are going to combine all
+
+01:15:33.300 --> 01:15:36.000
+of these heads we are going to combine and then we are going
+
+01:15:36.000 --> 01:15:39.000
+to multiply it with another weight so can i say that that i
+
+01:15:39.000 --> 01:15:41.480
+am not just trying to learn a relations between word or like
+
+01:15:41.480 --> 01:15:45.560
+some different word i am trying to even like a learn a
+
+01:15:45.560 --> 01:15:49.440
+relation one word with other and even as a whole i am trying
+
+01:15:49.440 --> 01:15:52.120
+to learn a relation that's the reason so we are like coming
+
+01:15:52.120 --> 01:15:57.050
+up with this particular weight so z1 is a huge vector no
+
+01:15:57.470 --> 01:16:00.270
+this one is a huge vector this in let's suppose if i am
+
+01:16:00.270 --> 01:16:03.370
+calling it as a z so z is nothing but combination of z1 z2
+
+01:16:03.370 --> 01:16:05.390
+z3 z4 z5 right
+
+01:16:09.230 --> 01:16:12.530
+guys yes so can i say that that i am trying to introduce
+
+01:16:12.530 --> 01:16:18.450
+another big weights over here a big learnable parameter over
+
+01:16:18.450 --> 01:16:22.650
+here right so even individually i am trying to focus and
+
+01:16:22.650 --> 01:16:26.670
+even as a whole i am trying to focus right so this is where
+
+01:16:26.670 --> 01:16:30.830
+a multi-headed attention comes into a picture which is which
+
+01:16:30.830 --> 01:16:35.830
+is going to like a solve a problem for us basically right so
+
+01:16:35.830 --> 01:16:41.210
+now if i'll go back to a research paper right now this is
+
+01:16:41.210 --> 01:16:43.950
+basically called as self attention can i say that we have
+
+01:16:43.950 --> 01:16:49.450
+done the same thing first multiply query with key yes so
+
+01:16:49.450 --> 01:16:54.630
+here first multiply focus on there right score so first
+
+01:16:54.630 --> 01:16:58.550
+multiply query with key so yes we are doing it query with
+
+01:16:58.550 --> 01:17:02.950
+key then divide it with the dimension of a key root of
+
+01:17:02.950 --> 01:17:06.330
+dimension of the key okay so we are doing it divided with
+
+01:17:06.330 --> 01:17:09.870
+the dimension of key as you can see over here then apply a
+
+01:17:09.870 --> 01:17:14.150
+soft max on top of it then apply a softness on top of it so
+
+01:17:14.150 --> 01:17:17.950
+can i say we are doing it yes and then whatever output that
+
+01:17:17.950 --> 01:17:21.470
+you are able to get multiply it with the value vector so can
+
+01:17:21.470 --> 01:17:24.070
+i say that whatever output that you are able to get multiply
+
+01:17:24.070 --> 01:17:27.070
+it with the value vector are you able to understand the
+
+01:17:27.070 --> 01:17:29.470
+equation mentioned inside the research paper the main
+
+01:17:29.470 --> 01:17:30.470
+equation of attention
+
+01:17:33.980 --> 01:17:36.180
+can i say that we have done just done this one
+
+01:17:42.820 --> 01:17:48.020
+Can I say that we are able to understand this equation now
+
+01:17:48.020 --> 01:17:51.360
+and each and everything that is like mentioned inside this
+
+01:17:51.360 --> 01:17:51.620
+equation.
+
+01:17:55.010 --> 01:17:59.250
+Yes, everyone. Yeah. It's not that tough, right? Now go
+
+01:17:59.250 --> 01:18:01.270
+ahead and read out the research paper. You will be able to
+
+01:18:01.270 --> 01:18:05.310
+find out multiple things now. So coming to a multi head now,
+
+01:18:05.450 --> 01:18:10.290
+right? Now what is written over here concatenate, what is
+
+01:18:10.290 --> 01:18:13.010
+written multi head means? I think we all understand the
+
+01:18:13.010 --> 01:18:14.890
+meaning of multi head now, right? What is the meaning of
+
+01:18:14.890 --> 01:18:18.190
+multi head? So what, for whatever, whatever word, my name is
+
+01:18:18.190 --> 01:18:20.590
+Sudhanshu. So we have basically my name is Sudhanshu, four
+
+01:18:20.590 --> 01:18:23.830
+word, right? So we will be having four head. We are trying
+
+01:18:23.830 --> 01:18:27.170
+to do what? We are trying to concatenate all the heads, all
+
+01:18:27.170 --> 01:18:29.530
+the heads. And then what we are doing, we are trying to
+
+01:18:29.530 --> 01:18:33.130
+multiply the new unknown parameter, which is technically a
+
+01:18:33.130 --> 01:18:38.140
+word, sorry, technically a weight. So a weight responsible
+
+01:18:38.140 --> 01:18:40.540
+for the entire network, right? So we are trying to multiply
+
+01:18:40.540 --> 01:18:43.840
+it with the network over here. So concatenate and then
+
+01:18:43.840 --> 01:18:46.720
+multiply. So can I say that? I think. I, we have written the
+
+01:18:46.720 --> 01:18:49.500
+same thing exactly over here, right? So we are trying to
+
+01:18:49.500 --> 01:18:53.720
+like combine all the heads, single self attention. We are
+
+01:18:53.720 --> 01:18:56.200
+trying to combine it, multiply it with the huge weight,
+
+01:18:56.340 --> 01:18:59.900
+simple. So a weight which will be responsible to learn the
+
+01:18:59.900 --> 01:19:03.480
+entire things together, because here the weight that we had.
+
+01:19:03.560 --> 01:19:05.680
+So it was trying to like helping me out, helping me out to
+
+01:19:05.680 --> 01:19:09.520
+learn individual things, complete thing over here, right? So
+
+01:19:09.520 --> 01:19:11.880
+I will be having a more learnable parameter and that
+
+01:19:11.880 --> 01:19:15.080
+particular place. So this is what you will be able to find
+
+01:19:15.080 --> 01:19:15.820
+out. I am going to go to the next one, which is the head,
+
+01:19:15.820 --> 01:19:19.460
+multihead. So where head I means, head i-th means head 1, 2,
+
+01:19:19.540 --> 01:19:22.220
+3 and so on is equal to this one. Same thing, which we are
+
+01:19:22.220 --> 01:19:24.500
+getting from the above.
+
+01:19:26.280 --> 01:19:30.140
+Making sense guys? Yes, everyone.
+
+01:19:41.070 --> 01:19:43.610
+It will be better if we do it with the example programmer.
+
+01:19:43.690 --> 01:19:47.130
+You can do it basically. We'll, we're calling a library and
+
+01:19:52.410 --> 01:19:55.810
+I'm assuming that we understand a numpy at least like we
+
+01:19:55.810 --> 01:19:58.770
+understand the basic of like a Python programming, because
+
+01:19:58.770 --> 01:20:01.450
+that is very much important to understand. and any such kind
+
+01:20:01.450 --> 01:20:05.990
+of things in depth otherwise everyone will ask again and
+
+01:20:05.990 --> 01:20:08.190
+again that please try to explain it from the ABCD which is
+
+01:20:08.190 --> 01:20:11.270
+practically impossible right every time I can't reinvent the
+
+01:20:11.270 --> 01:20:14.170
+wheel that's the reason so we have such kind of a classes
+
+01:20:14.170 --> 01:20:17.470
+for reinventing a wheel so where we talk about just a very
+
+01:20:17.470 --> 01:20:22.280
+very basic one Z vectors are concreted side by side yes
+
+01:20:22.280 --> 01:20:25.100
+that's true what is the difference between difference or
+
+01:20:25.100 --> 01:20:28.200
+meaning of Q K and V what is the difference or meaning so
+
+01:20:28.200 --> 01:20:30.800
+basically Q K and V is nothing but a separate vector that we
+
+01:20:30.800 --> 01:20:33.520
+are creating from by multiplying my input data with the
+
+01:20:33.520 --> 01:20:38.900
+different weights that's it a random weights I'm just trying
+
+01:20:38.900 --> 01:20:41.300
+to learn right I'm just trying to like establish the
+
+01:20:41.300 --> 01:20:44.080
+relationship so a kind of a relationship which my network
+
+01:20:44.080 --> 01:20:47.380
+doesn't even understand so what I need I need basically a
+
+01:20:47.380 --> 01:20:50.140
+weights and just I'm trying to multiply my input with the
+
+01:20:50.140 --> 01:20:53.800
+weights and this is where my query key one value V1 and key
+
+01:20:53.800 --> 01:20:55.860
+will come into a picture yes
+
+01:21:06.100 --> 01:21:06.880
+everyone
+
+01:21:11.860 --> 01:21:14.400
+so hope all of you are able to understand so someone is
+
+01:21:14.400 --> 01:21:15.040
+asking me what is the difference between two weights and
+
+01:21:15.040 --> 01:21:16.640
+what is the meaning of this T, T is nothing but a transpose
+
+01:21:16.640 --> 01:21:19.360
+I think in a matrix term so we all know what is the meaning
+
+01:21:19.360 --> 01:21:23.240
+of transpose rotate the matrix by 180 degree that's called
+
+01:21:23.240 --> 01:21:26.760
+as T over here so that's a transpose basically okay
+
+01:21:32.070 --> 01:21:35.210
+now moving ahead so this is basically called as guys a self
+
+01:21:35.210 --> 01:21:37.810
+-attention and now we are able to understand even a multi
+
+01:21:37.810 --> 01:21:41.930
+-headed attention yeah multi-headed attention so now if you
+
+01:21:41.930 --> 01:21:45.490
+will start looking into this architecture right start
+
+01:21:45.490 --> 01:21:48.510
+looking into architecture so till this point we are able to
+
+01:21:48.510 --> 01:21:52.310
+understand multi-headed attention. Fine multi-headed
+
+01:21:52.310 --> 01:21:54.710
+attention now what is the difference between this masked
+
+01:21:54.710 --> 01:21:58.450
+multi-headed attention and a multi-headed attention right so
+
+01:21:58.450 --> 01:22:01.750
+the difference between this masked and a simple one is again
+
+01:22:01.750 --> 01:22:05.050
+you will not just going to encounter a masked word over here
+
+01:22:05.050 --> 01:22:07.550
+so you are going to encounter this masked word in a multiple
+
+01:22:07.550 --> 01:22:10.630
+places what is the meaning of technically a masked sorry
+
+01:22:10.630 --> 01:22:13.890
+masked over here so let me explain you in a very like a
+
+01:22:13.890 --> 01:22:18.450
+basic by using a very simple approach so let's suppose I'm
+
+01:22:18.450 --> 01:22:32.780
+writing my name is SUDH I teach data science now so in
+
+01:22:32.780 --> 01:22:35.720
+during a training right during a training for some of the
+
+01:22:35.720 --> 01:22:38.660
+use cases for example I'm trying in a layman way just try to
+
+01:22:38.660 --> 01:22:41.440
+imagine that I'm trying to like a build a model so which
+
+01:22:41.440 --> 01:22:44.060
+will be able to do a fill in the blanks right fill in the
+
+01:22:44.060 --> 01:22:46.980
+blanks so what I will do is so while training a data so
+
+01:22:46.980 --> 01:22:50.240
+while training a model I will try to mask some of the data.
+
+01:22:50.300 --> 01:22:53.260
+I will try to mask some of the data. Right I will try to
+
+01:22:53.260 --> 01:22:55.840
+mask some of the data basically this is something called as
+
+01:22:55.840 --> 01:22:59.220
+masked multi-headed attention some of the data I will not
+
+01:22:59.220 --> 01:23:02.760
+show to the model so I'll be expecting model to generate
+
+01:23:02.760 --> 01:23:06.380
+this data and then reduce a loss a decrease a loss
+
+01:23:06.380 --> 01:23:09.040
+accordingly by generating a data so that is something called
+
+01:23:09.040 --> 01:23:14.600
+as masked attention not like a something very fancy it's one
+
+01:23:14.600 --> 01:23:17.080
+of the easiest thing to understand so this is what we do in
+
+01:23:17.080 --> 01:23:19.300
+case of a masked multi-headed attention so whenever we are
+
+01:23:19.300 --> 01:23:22.740
+sending a data we mask some of the data. We hide some of the
+
+01:23:22.740 --> 01:23:26.820
+data and like so that my system will be able to understand
+
+01:23:26.820 --> 01:23:32.580
+relation even in a better way okay so multi-headed attention
+
+01:23:32.580 --> 01:23:37.000
+is completely fine then addition and normalization we are
+
+01:23:37.000 --> 01:23:40.420
+going to do and then we are going to send this entire data
+
+01:23:40.420 --> 01:23:48.060
+into basically like a feed forward network so now let's try
+
+01:23:48.060 --> 01:23:51.620
+to understand further layer so here. Okay.
+
+01:23:55.680 --> 01:24:00.500
+So let's suppose I am able to build maybe a Z1 and Z2 so Z1
+
+01:24:00.500 --> 01:24:04.300
+is one of the attention and Z2 is one of the attention so Z1
+
+01:24:04.300 --> 01:24:07.860
+is for my I am able to build a self-attention and Z2 is
+
+01:24:07.860 --> 01:24:10.760
+basically for a name I am able to build the self-attention
+
+01:24:10.760 --> 01:24:14.000
+right Z1 and Z2 is nothing but self-attention if I am going
+
+01:24:14.000 --> 01:24:16.900
+to combine it it will become eventually a multi-headed
+
+01:24:16.900 --> 01:24:21.240
+attention simple right so I am able to build a like a
+
+01:24:21.240 --> 01:24:25.560
+attention over here. Then we are going to send this entire
+
+01:24:25.560 --> 01:24:32.140
+data set into maybe a layer normalization so there is
+
+01:24:32.140 --> 01:24:34.440
+something called as layer
+
+01:24:43.040 --> 01:24:44.900
+normalization now what is the meaning of this layer
+
+01:24:44.900 --> 01:24:48.760
+normalization so like a layer normalization is nothing but
+
+01:24:48.760 --> 01:24:53.040
+it's basically one of the functions of where we are going to
+
+01:24:53.040 --> 01:25:00.280
+concatenate your like a Z1 and Z2 so here you can say that
+
+01:25:00.280 --> 01:25:02.900
+we will be having a Z. And then here will be having
+
+01:25:02.900 --> 01:25:05.680
+basically a input data so input data means you can say that
+
+01:25:06.040 --> 01:25:10.080
+it's a X that will be having so X data that will be having
+
+01:25:10.080 --> 01:25:13.120
+so that's called as addition and normalization so we are
+
+01:25:13.120 --> 01:25:17.240
+trying to add a layer normalization over here and then
+
+01:25:17.240 --> 01:25:22.740
+eventually we are trying to send this Z1 to one of the
+
+01:25:22.740 --> 01:25:27.820
+neural network one of the neural network and then we are
+
+01:25:27.820 --> 01:25:32.600
+sending this Z2 in one of the neural network. Which we used
+
+01:25:32.600 --> 01:25:35.580
+to call as a feed forward neural network so this is the
+
+01:25:35.580 --> 01:25:38.760
+entire layer you will be able to find out then again we are
+
+01:25:38.760 --> 01:25:41.560
+trying to do a addition and normalization of this particular
+
+01:25:41.560 --> 01:25:45.960
+layer again another like just experimentation so you will
+
+01:25:45.960 --> 01:25:48.040
+not be able to find out the exact same thing everywhere but
+
+01:25:48.040 --> 01:25:50.640
+yeah so when people was writing this research paper so at
+
+01:25:50.640 --> 01:25:53.880
+that point of a time they have like added and normalize it
+
+01:25:53.880 --> 01:25:56.160
+and they were able to get a better result that's the reason
+
+01:25:56.160 --> 01:25:59.640
+they have done that there is like not a concrete logic
+
+01:25:59.640 --> 01:26:02.300
+behind it I would say. So the multi headed layer
+
+01:26:02.300 --> 01:26:04.640
+normalization feed forward layer normalization we are able
+
+01:26:04.640 --> 01:26:07.100
+to understand this entire things now here so if you are
+
+01:26:07.100 --> 01:26:10.140
+going to focus little bit you will be able to find out that
+
+01:26:10.140 --> 01:26:13.260
+this addition and normalization we are trying to do based on
+
+01:26:13.260 --> 01:26:16.800
+this data it's connected from here right just follow the
+
+01:26:16.800 --> 01:26:19.740
+connection so it's connected from here so when we are trying
+
+01:26:19.740 --> 01:26:22.460
+to call this addition and normalization so we are trying to
+
+01:26:22.460 --> 01:26:26.680
+do it based on this particular data so means whatever we are
+
+01:26:26.680 --> 01:26:28.780
+sending inside the multi headed based on that so we are
+
+01:26:28.780 --> 01:26:31.040
+trying to basically like a do a layer normalization.
+
+01:26:31.800 --> 01:26:33.720
+Similarly so when we are trying to do a layer normalization
+
+01:26:33.720 --> 01:26:36.640
+over here so we are trying to do it on this data the data
+
+01:26:36.640 --> 01:26:38.880
+that we are trying to input not based on that this data that
+
+01:26:38.880 --> 01:26:41.940
+we are trying to get as an output from the feed forward
+
+01:26:41.940 --> 01:26:44.680
+network this is what this entire architecture represents.
+
+01:26:45.180 --> 01:26:49.020
+Now once we are able to do that so we will be able to get a
+
+01:26:49.020 --> 01:26:53.640
+output from my encoder encoder on a decoder side so this is
+
+01:26:53.640 --> 01:26:59.260
+my encoder encoder now on my decoder side so I am trying to
+
+01:26:59.260 --> 01:27:02.700
+like a input the. I am doing a supervised learning so I am
+
+01:27:02.700 --> 01:27:05.000
+just trying to send the output data converting into
+
+01:27:05.000 --> 01:27:09.180
+embeddings and then here so I am trying to hide some of the
+
+01:27:09.180 --> 01:27:12.420
+data right so let's suppose I am trying to produce the
+
+01:27:12.420 --> 01:27:17.800
+result I am trying to give an input is equals to my name is
+
+01:27:17.800 --> 01:27:26.720
+sudh output wise I am expecting I use to teach data science
+
+01:27:26.720 --> 01:27:31.300
+right so I will try to hide some of these data. On the
+
+01:27:31.300 --> 01:27:34.780
+output layer so that it will be able to like optimize the
+
+01:27:34.780 --> 01:27:37.320
+loss and then based on that it will be able to learn
+
+01:27:37.320 --> 01:27:40.240
+something it will be able to build a better relation. So
+
+01:27:40.240 --> 01:27:43.260
+this is what inside the architecture I will try to like use
+
+01:27:43.260 --> 01:27:45.440
+the multi head attention means same one but yeah with the
+
+01:27:45.440 --> 01:27:48.420
+masking so with hiding some of the data and same addition
+
+01:27:48.420 --> 01:27:50.900
+normalization then entire things will go into the multi
+
+01:27:50.900 --> 01:27:54.080
+headed then again feed forward and then finally I will try
+
+01:27:54.080 --> 01:27:57.860
+to generate the possible result this is how this entire
+
+01:27:57.860 --> 01:28:02.620
+network architecture is been created. Now let's try to like
+
+01:28:02.620 --> 01:28:07.800
+understand this entire architecture even in this way. So
+
+01:28:07.800 --> 01:28:12.640
+this is a link guys I have pinned you this link inside your
+
+01:28:12.640 --> 01:28:17.500
+chat as you can see. So this is basically LLM visualization
+
+01:28:17.500 --> 01:28:21.140
+so it's a basic like that that I have shown it to you so
+
+01:28:21.140 --> 01:28:25.540
+same relation you all will be able to get it from here. So
+
+01:28:25.540 --> 01:28:29.040
+where we have like multiple layers number of parameters is
+
+01:28:29.040 --> 01:28:31.100
+equal to eighty five thousand parameter now these parameters
+
+01:28:31.100 --> 01:28:33.860
+are nothing but the weights that we are talking about. Now
+
+01:28:33.860 --> 01:28:37.480
+how this is going to propagate each and everything you will
+
+01:28:37.480 --> 01:28:44.360
+be able to observe it in a very very clear way. Let me
+
+01:28:44.360 --> 01:28:49.520
+expand a size for this one yeah. So here we are trying to
+
+01:28:49.520 --> 01:28:54.320
+give an input so we are trying to give CBA BBC right and
+
+01:28:54.320 --> 01:28:58.680
+then as you can see over here that it is trying to consider
+
+01:28:58.680 --> 01:29:02.900
+that as a token. So it is going as a token. Now it will try
+
+01:29:02.900 --> 01:29:06.960
+to do a input embeddings so it is trying to convert all the
+
+01:29:06.960 --> 01:29:09.960
+tokens all the token that we are trying to pass into a input
+
+01:29:09.960 --> 01:29:14.740
+embedding and it is trying to even add a positional encoding
+
+01:29:14.740 --> 01:29:18.220
+right positional encoding now positional encoding is what so
+
+01:29:18.220 --> 01:29:21.620
+positional encoding always helps us out to understand the
+
+01:29:21.620 --> 01:29:24.480
+position so which one is coming after what. Now if you are
+
+01:29:24.480 --> 01:29:26.760
+going to look into the research paper there is a very clear
+
+01:29:26.760 --> 01:29:29.880
+formula which has been given for a positional encoding. Over
+
+01:29:29.880 --> 01:29:31.440
+here position
+
+01:29:33.940 --> 01:29:36.720
+wise feed forward neural network this is fine embedding and
+
+01:29:36.720 --> 01:29:41.140
+softmax so for positional encoding this is the formula which
+
+01:29:41.140 --> 01:29:45.420
+has been given for each and every data set. So sign of
+
+01:29:45.420 --> 01:29:49.240
+whatever position of the data that we have so let's suppose
+
+01:29:49.240 --> 01:29:53.000
+data is available at 0th position or like nth position right
+
+01:29:53.000 --> 01:29:58.680
+by this 2i ith for the ith data and then divided by like a d
+
+01:29:58.680 --> 01:30:01.240
+of the model dimension of the model. So this is basically.
+
+01:30:01.240 --> 01:30:04.660
+The formula which has been given to you for calculating a
+
+01:30:04.660 --> 01:30:08.020
+positional encoding for a even and for the data which is
+
+01:30:08.020 --> 01:30:09.880
+available at the even position for the data which is
+
+01:30:09.880 --> 01:30:13.900
+available at the odd position right so this is how you will
+
+01:30:13.900 --> 01:30:16.120
+be able to calculate the positional encoding a simple
+
+01:30:16.120 --> 01:30:18.600
+straightforward formula is given and again every model is
+
+01:30:18.600 --> 01:30:21.080
+going to use a different different kind of a positional
+
+01:30:21.080 --> 01:30:24.860
+encoding. So here positional encoding now once I will be
+
+01:30:24.860 --> 01:30:29.260
+able to create this data what will happen is it will go
+
+01:30:29.260 --> 01:30:33.460
+inside the network. Now start looking into the network one
+
+01:30:33.460 --> 01:30:37.380
+by one one by one so here I am getting the input data as you
+
+01:30:37.380 --> 01:30:41.060
+can see this green layer I am getting the input data now
+
+01:30:41.060 --> 01:30:45.220
+once I am able to get the input data you will be able to
+
+01:30:45.220 --> 01:30:51.260
+find out that this entire data. So we have a query key and a
+
+01:30:51.260 --> 01:30:55.840
+value query key and a value again query key and a value
+
+01:30:55.840 --> 01:30:59.960
+again query key and a value depends upon the data right. So
+
+01:30:59.960 --> 01:31:03.720
+query key and a value and for every query key and a value
+
+01:31:03.720 --> 01:31:07.280
+you will be able to find out a weights right so for query we
+
+01:31:07.280 --> 01:31:10.200
+have a query weight for key we have a key weight for a value
+
+01:31:10.200 --> 01:31:13.860
+we have a value weight right for different different like a
+
+01:31:13.860 --> 01:31:18.000
+things we have this one so for different head basically
+
+01:31:18.000 --> 01:31:20.380
+right for different different kind of a data so we have
+
+01:31:20.380 --> 01:31:24.960
+these things so we are trying to generate a query vector we
+
+01:31:24.960 --> 01:31:27.280
+are trying to generate a key vector and we are trying to
+
+01:31:27.280 --> 01:31:31.040
+generate a value vector. Whatever I was trying to show you
+
+01:31:31.040 --> 01:31:36.100
+on this layer input we have so fine then we are trying to
+
+01:31:36.100 --> 01:31:39.520
+convert into embeddings that's fine so x1 and x2 embeddings.
+
+01:31:39.700 --> 01:31:44.140
+Now query key and value vector we have over here right how
+
+01:31:44.140 --> 01:31:46.880
+we are able to generate a query key and value vector so by
+
+01:31:46.880 --> 01:31:50.440
+multiplying this query key and value with its respective
+
+01:31:50.440 --> 01:31:54.540
+weight for a respective head. Now once you are able to do
+
+01:31:54.540 --> 01:31:58.800
+that once you are able to do that so basically you are now
+
+01:31:58.800 --> 01:32:03.860
+going to calculate basically it's
+
+01:32:05.270 --> 01:32:08.190
+very difficult to navigate by the way somehow I'm managing
+
+01:32:08.190 --> 01:32:16.020
+it out yeah so once you will be able to do that then what so
+
+01:32:16.020 --> 01:32:18.700
+then you are going to do our attention calculation so as you
+
+01:32:18.700 --> 01:32:20.380
+can see there is a attention calculation attention
+
+01:32:20.380 --> 01:32:25.220
+calculation which is happening over here okay let me refresh
+
+01:32:25.220 --> 01:32:25.580
+it.
+
+01:32:33.440 --> 01:32:37.080
+So this part and then what then there will be attention
+
+01:32:37.080 --> 01:32:40.000
+calculations as you can see attention matrixes right
+
+01:32:40.000 --> 01:32:42.780
+attention matrixes and if you are going to hover your mouse
+
+01:32:42.780 --> 01:32:45.320
+you will be able to see even a equation over here that how
+
+01:32:45.320 --> 01:32:49.000
+attention matrixes is getting calculated right how attention
+
+01:32:49.000 --> 01:32:51.480
+matrixes is basically getting calculated. So once attention
+
+01:32:51.480 --> 01:32:54.640
+matrixes will be getting calculated then what we are going
+
+01:32:54.640 --> 01:32:58.100
+to do is so then we are going to send it inside the multi
+
+01:32:58.100 --> 01:33:00.860
+layer perceptron which is nothing but a neural network I'm
+
+01:33:00.860 --> 01:33:03.500
+talking about right. So it is going to send inside the multi
+
+01:33:03.500 --> 01:33:08.060
+layer perceptron then again same layer whatever layer that
+
+01:33:08.060 --> 01:33:12.080
+we have discussed. Above guys right again same layer right
+
+01:33:12.080 --> 01:33:14.460
+again same layer we are talking about again same layer we
+
+01:33:14.460 --> 01:33:17.700
+are talking about yeah so it will go inside again same layer
+
+01:33:17.700 --> 01:33:19.600
+so basically this is a two layer architecture you will be
+
+01:33:19.600 --> 01:33:23.220
+able to find out so where we have like a two like a multi
+
+01:33:23.220 --> 01:33:26.720
+headed attention and then we are trying to like you know
+
+01:33:26.720 --> 01:33:31.880
+send a data finally into our softmax logit function and we
+
+01:33:31.880 --> 01:33:36.740
+are able to generate the response. So this is again like
+
+01:33:36.740 --> 01:33:40.380
+I'll not say that it's. It's very convenient to go through
+
+01:33:40.380 --> 01:33:43.740
+this one but yeah if you are able to understand this entire
+
+01:33:43.740 --> 01:33:45.960
+architecture which I have explained it to you so anywhere
+
+01:33:45.960 --> 01:33:47.900
+you will go whether it's a research paper or whether it's a
+
+01:33:47.900 --> 01:33:51.640
+like a 3D model you will be able to find out the exact same
+
+01:33:51.640 --> 01:33:54.100
+thing there won't be any kind of differences you can find
+
+01:33:54.100 --> 01:33:55.360
+out making
+
+01:33:59.170 --> 01:34:02.390
+sense guys all of us to all of us yes now
+
+01:34:05.200 --> 01:34:09.080
+this is the link for the research paper guys what
+
+01:34:11.100 --> 01:34:15.480
+will feed forward network do inside. So I think we are not
+
+01:34:15.480 --> 01:34:16.920
+new to the feed forward network. We are not new to the feed
+
+01:34:16.920 --> 01:34:18.180
+forward network. We all understand what is a neural network.
+
+01:34:19.080 --> 01:34:22.300
+It will try to build a relation just a neural network right.
+
+01:34:38.900 --> 01:34:45.550
+So this is it from this chapter called as attention is all
+
+01:34:45.550 --> 01:34:49.490
+you need and this architecture is called as basically a
+
+01:34:49.490 --> 01:34:54.390
+transformer architecture the transformer model architecture
+
+01:34:54.390 --> 01:34:57.850
+as you can see the title name. So if someone is going to ask
+
+01:34:57.850 --> 01:35:01.110
+you that what is a transformer architecture how it is going
+
+01:35:01.110 --> 01:35:04.010
+to work. I believe now we are in a situation. Where we will
+
+01:35:04.010 --> 01:35:06.950
+be able to explain what is basically a transformer
+
+01:35:06.950 --> 01:35:10.310
+architecture and how technically it is going to work right
+
+01:35:10.310 --> 01:35:15.230
+guys easy right I don't think that it's hard like what we
+
+01:35:15.230 --> 01:35:18.830
+have done nothing like we were having like an input we have
+
+01:35:18.830 --> 01:35:21.970
+converted those input into our embeddings like that we
+
+01:35:21.970 --> 01:35:25.570
+generally do for any kind of NLP task and then we are trying
+
+01:35:25.570 --> 01:35:28.290
+to like generate its query vector key vector and a value
+
+01:35:28.290 --> 01:35:31.250
+vector we are trying to generate a score by multiplying
+
+01:35:31.250 --> 01:35:33.350
+query and key. Then we are trying to generate a score by
+
+01:35:33.350 --> 01:35:34.170
+multiplying query and key. Then we are trying to like divide
+
+01:35:34.170 --> 01:35:38.430
+it by root of the dimension of the key and then we are
+
+01:35:38.430 --> 01:35:42.430
+trying to find out basically a softmax of that means
+
+01:35:42.430 --> 01:35:44.590
+probability of occurrence of one with respect to all the
+
+01:35:44.590 --> 01:35:47.790
+other and then eventually we are trying to multiply it with
+
+01:35:47.790 --> 01:35:52.630
+the values and that is something we are calling as a self
+
+01:35:52.630 --> 01:35:55.670
+attention. Likewise we are trying to calculate self
+
+01:35:55.670 --> 01:35:59.170
+attention for everything that is called as multi headed
+
+01:35:59.170 --> 01:36:01.750
+attention after concatenating and multiplying with the
+
+01:36:01.750 --> 01:36:03.570
+weight for the entire process. So let's say if we are trying
+
+01:36:03.570 --> 01:36:05.010
+to calculate the entire relation only
+
+01:36:07.280 --> 01:36:10.520
+feed forward yes so we have a feed forward network right we
+
+01:36:10.520 --> 01:36:12.960
+have a feed forward network on top of this multi headed
+
+01:36:12.960 --> 01:36:14.760
+attention which has been attached to it.
+
+01:36:18.030 --> 01:36:20.670
+Sanjiv is saying so there is no backward propagation in
+
+01:36:20.670 --> 01:36:24.310
+transform architecture see when I talk about a feed forward
+
+01:36:24.310 --> 01:36:28.550
+it simply means that it will reduce a loss so obviously it
+
+01:36:28.550 --> 01:36:31.230
+will try to do a backward propagation feed forward is just a
+
+01:36:31.230 --> 01:36:36.190
+name that has been given otherwise how it is going to learn.
+
+01:36:36.310 --> 01:36:38.130
+If it is not going to do a backward propagation.
+
+01:36:41.150 --> 01:36:42.670
+Learning is not possible, right?
+
+01:36:46.130 --> 01:36:49.790
+Okay. So now if you're going to click on this GPT-2
+
+01:36:49.790 --> 01:36:53.090
+architecture, GPT-3 architecture, right? So where people
+
+01:36:53.090 --> 01:36:55.810
+says that there are like a billions of parameter, those
+
+01:36:55.810 --> 01:36:58.450
+billion of parameter means what? What is those billions of
+
+01:36:58.450 --> 01:37:01.710
+parameter, right? Let's suppose I'm saying that Lama 7
+
+01:37:01.710 --> 01:37:03.990
+billion parameter. Now what does the meaning of that? So
+
+01:37:03.990 --> 01:37:06.630
+obviously those parameters are coming from where the feed
+
+01:37:06.630 --> 01:37:12.650
+forward layer, the like a multi headed weight layer and self
+
+01:37:12.650 --> 01:37:16.090
+attention weight layer. From there we are calculating the
+
+01:37:16.090 --> 01:37:18.710
+number of parameter because over there we have an unknown
+
+01:37:18.710 --> 01:37:22.710
+parameter, right? So if I'll talk about a GPT-2 excel, so we
+
+01:37:22.710 --> 01:37:25.190
+have like a, these may number of the parameter. I think it's
+
+01:37:25.190 --> 01:37:31.440
+a 15 billion parameter. Yeah. And these are the layers. So
+
+01:37:31.440 --> 01:37:34.140
+again, it's the same thing, right? Same thing you will be
+
+01:37:34.140 --> 01:37:37.300
+able to find out just a layer. We are trying to stack maybe
+
+01:37:37.300 --> 01:37:41.220
+a 96 layer together. And now if I'll talk about maybe a GPT
+
+01:37:41.220 --> 01:37:45.420
+-3. Right? GPT-3. So here you will be able to find out
+
+01:37:45.420 --> 01:37:47.940
+again, just a stacking of the layers,
+
+01:37:54.150 --> 01:37:59.570
+96 such layer. When you are going to stack it, we call it as
+
+01:37:59.570 --> 01:38:04.310
+a GPT-3, which was the early model, which has changed the
+
+01:38:04.310 --> 01:38:08.450
+entire world. So it's based on the architecture that we have
+
+01:38:08.450 --> 01:38:08.770
+discussed.
+
+01:38:11.870 --> 01:38:16.790
+Yes. Okay. But again, there is a, like a little bit of
+
+01:38:16.790 --> 01:38:20.890
+concept behind it that you should know. So all the models
+
+01:38:20.890 --> 01:38:24.310
+are not going to follow a encoder and decoder architecture.
+
+01:38:24.950 --> 01:38:28.490
+Some models will be having just a encoder only, and some
+
+01:38:28.490 --> 01:38:32.930
+models will be having a decoder only architecture. That I'm
+
+01:38:32.930 --> 01:38:35.690
+going to discuss in my tomorrow's class. So if someone is
+
+01:38:35.690 --> 01:38:39.850
+going to ask you about a GPT-3, 4, maybe a, a Cloudace,
+
+01:38:39.890 --> 01:38:43.410
+Sonnet or something like that, Gemini or DeepSeq, you should
+
+01:38:43.410 --> 01:38:47.410
+know that whether that my model is an encoder only, decoder
+
+01:38:47.410 --> 01:38:50.130
+only, or decoder only. It's going to be an encoder decoder
+
+01:38:50.130 --> 01:38:54.610
+architecture that is very much important because depends
+
+01:38:54.610 --> 01:38:57.450
+upon the task that we are going to solve in case of NLP,
+
+01:38:57.550 --> 01:39:00.450
+because in NLP, it's not like there is only one task that we
+
+01:39:00.450 --> 01:39:02.350
+try to solve, right? There are a variety of the tasks, which
+
+01:39:02.350 --> 01:39:06.330
+I'm going to talk about in my tomorrow's class. So based on
+
+01:39:06.330 --> 01:39:09.710
+that, we try to build an encoder only architecture, decoder
+
+01:39:09.710 --> 01:39:13.450
+only architecture and encoder decoder only architecture. So
+
+01:39:13.450 --> 01:39:17.170
+that is such people that you are able to see. So in the sum
+
+01:39:17.170 --> 01:39:20.430
+of the architecture. Again, the famous one, the GPT-1 or
+
+01:39:20.430 --> 01:39:23.990
+like BERT-1, you will be able to find out that somewhere
+
+01:39:23.990 --> 01:39:27.150
+people are using only this side of it, somewhere people are
+
+01:39:27.150 --> 01:39:30.750
+using this side of it only and somewhere both. So that
+
+01:39:30.750 --> 01:39:33.330
+clarity I'm going to give you model wise, which one is
+
+01:39:33.330 --> 01:39:36.170
+encoder only, which one is decoder only or what task and
+
+01:39:36.170 --> 01:39:42.790
+then like for like which one is encoded decoder both based
+
+01:39:42.790 --> 01:39:45.310
+on the task. Those who have attended my generative AI
+
+01:39:45.310 --> 01:39:48.130
+interview series, so I think over there, so I have even said
+
+01:39:48.130 --> 01:39:51.530
+a material for that one and I have already discussed in my
+
+01:39:51.530 --> 01:39:54.730
+those lectures, but yeah, so in your class, I have not
+
+01:39:54.730 --> 01:39:57.030
+discussed about it. So tomorrow I'll be talking about even
+
+01:39:57.030 --> 01:40:00.230
+that, that which, what is encoder only, what is decoder only
+
+01:40:00.230 --> 01:40:05.170
+all, all those things. Making sense guys, any question for
+
+01:40:05.170 --> 01:40:05.410
+me?
+
+01:40:11.420 --> 01:40:14.480
+In a mass multi-heated generation, how vector is generated
+
+01:40:14.480 --> 01:40:19.340
+for a mass? See dear doctor, right? So doctor, just to
+
+01:40:19.340 --> 01:40:22.420
+answer to your question. So we are generating a embeddings
+
+01:40:22.420 --> 01:40:24.900
+here. Before even sending into the mass multi-headed,
+
+01:40:25.080 --> 01:40:30.980
+generating a vector, masking it, hiding it. So we are
+
+01:40:30.980 --> 01:40:34.060
+generating before and then we are sending a data. Just see
+
+01:40:34.060 --> 01:40:36.800
+the architecture. Just see the like a flow of this one.
+
+01:40:42.080 --> 01:40:44.760
+Aswini is saying, did I understand the logic of sending both
+
+01:40:44.760 --> 01:40:48.300
+input and output? So Aswini, do you understand a supervised
+
+01:40:48.300 --> 01:40:53.720
+machine learning? Let's suppose I'm trying to train a Google
+
+01:40:53.720 --> 01:40:56.640
+translator. For example, I'll go to Google. I'll try to open
+
+01:40:56.640 --> 01:41:01.680
+up Google translator. Right? Google translate. Now. So you
+
+01:41:01.680 --> 01:41:05.600
+can try to enter a text over here and you can select a
+
+01:41:05.600 --> 01:41:07.240
+language. Otherwise it will be able to identify
+
+01:41:07.240 --> 01:41:10.480
+automatically. And then it is going to give you output in
+
+01:41:10.480 --> 01:41:14.940
+some other language. Agree? Everyone right now, if I have to
+
+01:41:14.940 --> 01:41:19.100
+build this kind of a system initially, how I will be able to
+
+01:41:19.100 --> 01:41:21.840
+train. So can I say that as a, when I will try to train the
+
+01:41:21.840 --> 01:41:24.720
+model. So I'll try to, let's suppose I'm trying to build a
+
+01:41:24.720 --> 01:41:27.600
+translator, which will try to translate from English.
+
+01:41:27.600 --> 01:41:32.840
+English to Hindi, right? English to Hindi. Now how I'm going
+
+01:41:32.840 --> 01:41:35.900
+to do a training. So can I say that I'm going to do a
+
+01:41:35.900 --> 01:41:39.280
+training by sending English data from one side and then
+
+01:41:39.280 --> 01:41:43.320
+Hindi data from other side, then only it will be able to
+
+01:41:43.320 --> 01:41:45.840
+calculate a loss in between. Right? So can I say that this
+
+01:41:45.840 --> 01:41:48.500
+is basically a supervised, even in machine learning, let's
+
+01:41:48.500 --> 01:41:50.800
+suppose you are talking about a logistic regression or maybe
+
+01:41:50.800 --> 01:41:52.880
+a linear regression. So how do you train this logistic
+
+01:41:52.880 --> 01:41:55.420
+regression, linear regression, or even decision tree for
+
+01:41:55.420 --> 01:41:57.960
+regression or classifier? How do you train it? So can I say
+
+01:41:57.960 --> 01:42:00.980
+that you send a X and Y and then it will try to find out the
+
+01:42:00.980 --> 01:42:03.100
+relationship between X and Y. This is what is called as
+
+01:42:03.100 --> 01:42:05.900
+training in case of machine learning. So even over here, so
+
+01:42:05.900 --> 01:42:08.520
+if I'm trying to build a translator, so obviously I have to
+
+01:42:08.520 --> 01:42:11.220
+give an English data and then similarly I have to give its
+
+01:42:11.220 --> 01:42:14.980
+translation into a Hindi data so that it will learn. Then
+
+01:42:14.980 --> 01:42:17.540
+only when you're, it will be able to learn, you're going to
+
+01:42:17.540 --> 01:42:19.440
+send a English. It will be able to give you Hindi, right?
+
+01:42:19.480 --> 01:42:20.860
+Otherwise how it will be able to give you Hindi.
+
+01:42:23.910 --> 01:42:30.350
+Making sense? Yeah. Yeah. So it is a part of only training,
+
+01:42:30.390 --> 01:42:32.310
+not an inferencing. Obviously I'm talking about that in
+
+01:42:32.310 --> 01:42:34.770
+like, I'm talking about the entire model architecture. So
+
+01:42:34.770 --> 01:42:38.730
+obviously I'll talk about the training part, right? Yeah.
+
+01:42:39.250 --> 01:42:41.150
+Because if you're able to understand the training part,
+
+01:42:41.210 --> 01:42:44.010
+inferencing part, anyone can do it. Fine.
+
+01:42:49.820 --> 01:42:52.200
+I didn't understand why feed forward is needed because
+
+01:42:52.200 --> 01:42:54.800
+training happens in attention, right? See training happens
+
+01:42:54.800 --> 01:43:00.320
+in attention, but I would like to add more parameter. I'm
+
+01:43:00.320 --> 01:43:02.440
+able to build that attention. That's completely fine. Even.
+
+01:43:02.440 --> 01:43:05.260
+I'm trying to like, uh, understand the relationship between
+
+01:43:05.260 --> 01:43:08.200
+it. That's completely fine, but I'm trying to add a added
+
+01:43:08.200 --> 01:43:11.500
+layer over here, a neural network layer over here so that
+
+01:43:11.500 --> 01:43:14.820
+whatever attention layer is able to produce, it will be able
+
+01:43:14.820 --> 01:43:18.260
+to even understand the relationship between that you can,
+
+01:43:18.260 --> 01:43:20.320
+you can just avoid it. That's completely fine. Even in that
+
+01:43:20.320 --> 01:43:22.620
+case, it will be able to generate some data, but just to
+
+01:43:22.620 --> 01:43:24.720
+refine it, just to make it better and better. So we are
+
+01:43:24.720 --> 01:43:29.110
+trying to add the neural network. Got it.
+
+01:43:38.900 --> 01:43:42.280
+Yeah. So I think you all has given the same answer, right?
+
+01:43:42.380 --> 01:43:45.100
+Right. While attention focus on relationship, building input
+
+01:43:45.100 --> 01:43:47.480
+tokens, feed forward layer apply a non linear
+
+01:43:47.480 --> 01:43:49.460
+transformation. This is what neural network does, right?
+
+01:43:49.520 --> 01:43:50.880
+That's the reason. So we are talking about neural network
+
+01:43:50.880 --> 01:43:53.960
+and it's like a fulfilling its objective. That's the reason.
+
+01:43:54.080 --> 01:43:57.100
+So we have a feed forward neural network on top of the
+
+01:43:57.100 --> 01:43:57.700
+attention layer,
+
+01:44:00.980 --> 01:44:03.780
+uh, to do is saying, please are the team is still working
+
+01:44:03.780 --> 01:44:08.000
+on, I can see make use of any, yeah, team is still working
+
+01:44:08.000 --> 01:44:10.460
+on it. And, uh, yeah, I think it's available to all of us.
+
+01:44:10.520 --> 01:44:13.180
+It's available to all the Euron plus user, I believe those
+
+01:44:13.180 --> 01:44:15.560
+who is having Euron plus access. So I think. I think it's,
+
+01:44:15.560 --> 01:44:18.160
+it's already available so people can start using it, but
+
+01:44:18.160 --> 01:44:20.260
+yeah, we are trying to refine it. I think it will take like
+
+01:44:20.260 --> 01:44:23.080
+another two to three week of time. Uh, we are like a facing
+
+01:44:23.080 --> 01:44:26.760
+some challenges, uh, with respect to scaling it and making
+
+01:44:26.760 --> 01:44:32.480
+it real time. So, but yeah, it is available. Fine guys. Uh,
+
+01:44:32.660 --> 01:44:35.840
+hope I'm able to explain you everything. Let me share this
+
+01:44:35.840 --> 01:44:40.740
+material with all of you by the way. So action export to PDF
+
+01:44:40.740 --> 01:44:48.340
+and attention. Attention is all you need. And I'm assuming
+
+01:44:48.340 --> 01:44:51.640
+that you will never be able to forget this concept ever.
+
+01:44:57.180 --> 01:45:00.060
+And hope all of you are able to understand it, not as a
+
+01:45:00.060 --> 01:45:03.440
+technical things, but as a story, this is what I was like
+
+01:45:03.440 --> 01:45:06.640
+expecting from all of you that to understand this entire
+
+01:45:06.640 --> 01:45:10.600
+concept, not just as a, like, uh, something technical, like
+
+01:45:10.600 --> 01:45:13.660
+something like a story, just like a story for that. If
+
+01:45:13.660 --> 01:45:17.600
+anyone is going to ask you, say the story, that's it. That's
+
+01:45:17.600 --> 01:45:20.880
+it. That's it. I mean like architecture itself is a
+
+01:45:20.880 --> 01:45:22.960
+beautiful thing. If you, if you're going to understand it in
+
+01:45:22.960 --> 01:45:25.820
+the depth, it will always feel like a story. So yeah.
+
+01:45:29.630 --> 01:45:34.190
+Okay. Fine guys. So I'm done for today by the way. And uh,
+
+01:45:34.310 --> 01:45:37.530
+let me check your syllabus. So even
+
+01:45:48.310 --> 01:45:52.850
+your search is way faster now. So generative AI with NLP,
+
+01:45:53.030 --> 01:45:55.450
+NLP.
+
+01:46:01.330 --> 01:46:05.210
+So now coming to your syllabus. So yeah. Attention.
+
+01:46:05.930 --> 01:46:08.450
+Transformer. Self-attention. Multi-headed. Mass self
+
+01:46:08.450 --> 01:46:12.250
+-attention. Fine. Positional encoding. Layer normalization.
+
+01:46:12.490 --> 01:46:14.410
+Yeah. Almost. We are able to discuss everything tomorrow.
+
+01:46:14.550 --> 01:46:18.370
+I'll try to refine this entire concept in a better way. Um,
+
+01:46:18.410 --> 01:46:20.810
+I have to talk about like, uh, these things with respect to
+
+01:46:20.810 --> 01:46:23.590
+our multiple models, like a GPT-3 or maybe some other
+
+01:46:23.590 --> 01:46:26.210
+models, which is I've labeled into a market. So I'll be
+
+01:46:26.210 --> 01:46:29.590
+talking about that in my tomorrow's class, plus those who is
+
+01:46:29.590 --> 01:46:32.710
+having a plus access. So please try this out. Uh, Yuri, you
+
+01:46:32.710 --> 01:46:35.430
+can try to go and we have added basically, uh, reality. So
+
+01:46:35.430 --> 01:46:39.330
+you can go and ask any kind of a question to a Yuri, for
+
+01:46:39.330 --> 01:46:43.350
+example, maybe I'm in Bangalore. So I can ask like, uh, tell
+
+01:46:43.350 --> 01:46:49.470
+me about, uh, whether of Bangalore. So it is, it is going to
+
+01:46:49.470 --> 01:46:53.550
+like search in a real time and, uh, uh, yeah. So April 5th,
+
+01:46:53.550 --> 01:46:56.430
+right today, April 5th, and, um, this is the temperature
+
+01:46:56.430 --> 01:46:59.390
+humidity, everything it is going to give. So you can try to
+
+01:46:59.390 --> 01:47:02.350
+use it as a Google search for research. We are even, we have
+
+01:47:02.350 --> 01:47:04.570
+even added a thinking model so that you can do a research.
+
+01:47:04.950 --> 01:47:09.110
+And, uh, soon we are going to add even a file upload option
+
+01:47:09.110 --> 01:47:13.350
+into this one. And soon, uh, we are going to add even, uh,
+
+01:47:13.450 --> 01:47:17.070
+API option because, uh, as per your syllabus, so we are
+
+01:47:17.070 --> 01:47:19.610
+going to use a lot of API. We are going to consume a lot of
+
+01:47:19.610 --> 01:47:22.270
+API to build an application. Now some of you are going to
+
+01:47:22.270 --> 01:47:25.370
+complain that, uh, I have to add a card on XYZ platform.
+
+01:47:25.590 --> 01:47:28.270
+Then only I will be able to access the API or keeping that
+
+01:47:28.270 --> 01:47:31.270
+in our mind. So for our, your own plus user, we are going to
+
+01:47:31.270 --> 01:47:35.190
+give you inside a Yuri API option. If you would like to
+
+01:47:35.190 --> 01:47:37.610
+build any kind of a RIG application, agent API application,
+
+01:47:37.790 --> 01:47:41.710
+or any application that you are building, build it. You
+
+01:47:41.710 --> 01:47:44.010
+have, don't have to go somewhere outside and then consume
+
+01:47:44.010 --> 01:47:47.750
+the API. Just use the API from here itself for all of these
+
+01:47:47.750 --> 01:47:51.090
+models, whatever model that we are giving you. So I believe
+
+01:47:51.090 --> 01:47:54.110
+that is like, that will be our level again. So by April end,
+
+01:47:54.190 --> 01:47:57.030
+so we are making sure that our, uh, like Android, our iOS,
+
+01:47:57.170 --> 01:48:01.690
+our URI, and our resume AI, our jobs. We are trying to fetch
+
+01:48:01.690 --> 01:48:05.290
+almost like a 1.5. Um. So we are giving you a job on a daily
+
+01:48:05.290 --> 01:48:08.030
+basis and that too, in a real time, uh, plus we are giving
+
+01:48:08.030 --> 01:48:10.330
+you an option for a tailored resume. So we are trying to
+
+01:48:10.330 --> 01:48:13.610
+make it more relevant as of now, uh, you will be able to get
+
+01:48:13.610 --> 01:48:16.970
+some hallucination over here, uh, but yeah, so by April end,
+
+01:48:17.050 --> 01:48:20.750
+it will be like a super amazing one single place for
+
+01:48:20.750 --> 01:48:25.130
+learning, uh, support like, uh, API is a search research
+
+01:48:25.130 --> 01:48:28.750
+resume. And then like, uh, Avani, we are going to like, uh,
+
+01:48:29.290 --> 01:48:31.950
+build it maybe in a future, like we have already mentioned a
+
+01:48:31.950 --> 01:48:34.090
+June 30th because it's one of the real time systems that we
+
+01:48:34.090 --> 01:48:37.970
+are trying to build. So all of you are going to like it and,
+
+01:48:38.050 --> 01:48:41.770
+uh, yeah. So soon we are going to announce a big series of,
+
+01:48:41.830 --> 01:48:45.990
+uh, courses. So almost we are like now going all in for all
+
+01:48:45.990 --> 01:48:48.650
+the courses. So we are trying to bring a lot of like, uh,
+
+01:48:48.690 --> 01:48:51.510
+courses, plus we have published so many projects. So maybe
+
+01:48:51.510 --> 01:48:54.370
+you can go over here and then you can like, uh, experience
+
+01:48:54.370 --> 01:48:56.930
+one 27 plus projects. A lot of projects we have uploaded.
+
+01:48:57.410 --> 01:49:00.250
+Uh, yeah. Uh, we have like a made couple of projects like a
+
+01:49:00.250 --> 01:49:02.950
+open on a YouTube, but yeah, for to access the resources.
+
+01:49:02.950 --> 01:49:06.270
+You need a plus access without that, you will not be able to
+
+01:49:06.270 --> 01:49:09.150
+like access the resources because it take a lot of like a
+
+01:49:09.150 --> 01:49:12.890
+hard work to build those things, uh, projects, yeah,
+
+01:49:12.910 --> 01:49:16.530
+projects over here. So a lot of project guys, you will be
+
+01:49:16.530 --> 01:49:19.270
+able to find out, maybe you can even apply the filter. So we
+
+01:49:19.270 --> 01:49:22.550
+have even made a filter better as compared to before, uh,
+
+01:49:22.630 --> 01:49:26.450
+plus working a lot on your mobile devices. So soon, uh, your
+
+01:49:26.450 --> 01:49:28.730
+mobile device will be having all the features, even URI
+
+01:49:28.730 --> 01:49:31.930
+resume, job, Avani, everything. So whatever you can see in
+
+01:49:31.930 --> 01:49:34.590
+Bev, uh, you will be able to see it even in a mobile device.
+
+01:49:35.350 --> 01:49:38.310
+So if you have any kind of feedback or something, so you can
+
+01:49:38.310 --> 01:49:41.790
+drop me a message, you can give me a feedback. I will be
+
+01:49:41.790 --> 01:49:42.410
+happy to implement.
+
+01:49:47.150 --> 01:49:49.730
+Okay. Potential encoding is not clear. Fine. Such in remind
+
+01:49:49.730 --> 01:49:52.390
+me tomorrow. I'll do the math and I'll try to show it to
+
+01:49:52.390 --> 01:49:52.850
+you. Yeah.
+
+01:50:12.550 --> 01:50:15.870
+Can we have some courses around a solution architect role?
+
+01:50:16.150 --> 01:50:19.070
+Oh, we'll see. We'll see. So we are just trying to adjust
+
+01:50:19.070 --> 01:50:24.670
+our bandwidth as much as we can on iPhone. So I think. The
+
+01:50:24.670 --> 01:50:27.870
+app that we have released for our iOS. So first of all, it's
+
+01:50:27.870 --> 01:50:31.350
+available just for India. And a second, uh, it's not a full
+
+01:50:31.350 --> 01:50:34.910
+scale app, which is available as of now. So like a full
+
+01:50:34.910 --> 01:50:37.570
+scale app by April and it will be available. We were facing
+
+01:50:37.570 --> 01:50:40.290
+a lot of problem. We have already built an app long back,
+
+01:50:40.330 --> 01:50:43.310
+but yeah. So as this app is not a basic one, there are a lot
+
+01:50:43.310 --> 01:50:46.190
+of things. So from our apples, from our app store sites, we
+
+01:50:46.190 --> 01:50:49.890
+are facing a lot of issues, uh, in terms of compliances. So
+
+01:50:49.890 --> 01:50:52.910
+now we are like, uh, releasing it one by one, one by one. So
+
+01:50:52.910 --> 01:50:56.010
+by the end of month. It will be available globally, just
+
+01:50:56.010 --> 01:50:58.990
+like an Android app and, uh, even in Android app. So we are
+
+01:50:58.990 --> 01:51:01.950
+trying to bring all the latest feature that we have. So that
+
+01:51:01.950 --> 01:51:05.010
+entire ecosystem will be available just inside your app,
+
+01:51:05.110 --> 01:51:07.990
+because even in apps like we are giving a download feature
+
+01:51:07.990 --> 01:51:10.530
+and all those things. So eventually that will be available
+
+01:51:10.530 --> 01:51:14.810
+in, uh, iOS, but yeah, as of now you can enjoy Android, but
+
+01:51:14.810 --> 01:51:17.830
+yeah, just a courses you will be able to enjoy. You will not
+
+01:51:17.830 --> 01:51:19.970
+be able to enjoy all the other things, all the other
+
+01:51:19.970 --> 01:51:23.250
+feature, but yeah, soon you all will be able to like very
+
+01:51:23.250 --> 01:51:24.630
+soon. We are working there. We are working there night for
+
+01:51:24.630 --> 01:51:24.830
+that.
+
+01:51:28.030 --> 01:51:31.270
+So with that guys, uh, thank you so much. And a doctor is
+
+01:51:31.270 --> 01:51:32.750
+saying, please add me to the WhatsApp group. Yeah. So
+
+01:51:32.750 --> 01:51:36.250
+doctor, you can go to like, uh, any, uh, first videos,
+
+01:51:36.410 --> 01:51:38.790
+right? You don't have to ask anyone to add you in any of the
+
+01:51:38.790 --> 01:51:41.610
+group, go to the first lecture that I've given inside that
+
+01:51:41.610 --> 01:51:43.490
+lecture resource section. You will be able to find out a
+
+01:51:43.490 --> 01:51:47.870
+resource link, WhatsApp link, click join. Yeah. It's very
+
+01:51:47.870 --> 01:51:49.910
+easy. So you don't have to ask anyone. You don't have to
+
+01:51:49.910 --> 01:51:52.150
+like, uh, take a help of anyone in our system. It's
+
+01:51:52.150 --> 01:51:54.330
+everything like, uh, we are trying to keep it very, very
+
+01:51:54.330 --> 01:51:56.650
+structured. So go to the induction session. You will be able
+
+01:51:56.650 --> 01:52:00.810
+to find a WhatsApp group link, click and join fine guys with
+
+01:52:00.810 --> 01:52:03.370
+that. Thank you so much. Uh, see you tomorrow. Same time, 2
+
+01:52:03.370 --> 01:52:07.170
+30 PM IST and uh, yeah, so I'll just follow along with the
+
+01:52:07.170 --> 01:52:09.650
+syllabus with that. Thank you so much, everyone. Uh, take
+
+01:52:09.650 --> 01:52:10.590
+care. See you tomorrow.
+

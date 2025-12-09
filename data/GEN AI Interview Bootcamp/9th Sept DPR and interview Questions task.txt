@@ -1,0 +1,2630 @@
+WEBVTT
+
+00:06:22.640 --> 00:06:24.940
+okay so good evening everyone i think i'm audible and
+
+00:06:24.940 --> 00:06:29.360
+visible to all of you yes uh please confirm in the chat if
+
+00:06:29.360 --> 00:06:31.680
+i'm audible and visible to all of you good
+
+00:06:36.670 --> 00:06:38.730
+evening good evening everyone okay
+
+00:07:10.000 --> 00:07:14.040
+so let's start today's discussion guys today i'm going to
+
+00:07:14.040 --> 00:07:19.140
+give you a huge task which you have to complete uh some of
+
+00:07:19.140 --> 00:07:21.780
+the tasks today and some of the tasks you have to complete
+
+00:07:21.780 --> 00:07:24.700
+maybe like a tomorrow and you have to send those tasks
+
+00:07:24.700 --> 00:07:27.960
+inside a group so that i can try to evaluate your task and
+
+00:07:27.960 --> 00:07:32.520
+then we will do a another level of discussion so shall we
+
+00:07:32.520 --> 00:07:39.200
+start guys everyone yep i think people are not that active
+
+00:07:39.200 --> 00:07:42.400
+in a chat i know it's tuesday maybe it's a working day for
+
+00:07:42.400 --> 00:07:48.440
+all of you but class is also important i believe yes okay so
+
+00:07:48.440 --> 00:07:51.180
+i believe my screen is visible to all of you so basically
+
+00:07:51.180 --> 00:07:56.520
+guys uh today i'm going to give you two tasks so one task is
+
+00:07:56.520 --> 00:08:01.300
+a dpr related task basically so i have created i think my
+
+00:08:01.300 --> 00:08:04.720
+screen is visible to all of you so the very first task which
+
+00:08:04.720 --> 00:08:10.480
+i have created for all of you is called as dpr so first of
+
+00:08:10.480 --> 00:08:13.540
+all whenever you will go for an interview so two things is
+
+00:08:13.540 --> 00:08:17.160
+important one is a storytelling of a project and second
+
+00:08:17.160 --> 00:08:20.760
+obviously a interview question and answer so obviously i'm
+
+00:08:20.760 --> 00:08:23.240
+going to discuss interview question and answer in very depth
+
+00:08:23.240 --> 00:08:28.040
+and detail and i'm going to give my version of an answer for
+
+00:08:28.040 --> 00:08:31.460
+all of the questions so obviously it's not just you who are
+
+00:08:31.460 --> 00:08:33.980
+supposed to prepare something but yeah so i'm going to give
+
+00:08:33.980 --> 00:08:36.420
+you all the answers and you have to you know mimic those
+
+00:08:36.420 --> 00:08:40.680
+answers uh in your own way but before starting ahead with
+
+00:08:40.680 --> 00:08:45.120
+the interview questions back to back uh two things right two
+
+00:08:45.120 --> 00:08:48.180
+things the very first thing is a detailed project report
+
+00:08:48.180 --> 00:08:52.040
+that you have to prepare so i have already discussed a three
+
+00:08:52.040 --> 00:08:57.000
+project one was a rag one was basically a fine tuning of an
+
+00:08:57.000 --> 00:09:00.120
+llms basically for a three chat completion or streaming and
+
+00:09:00.120 --> 00:09:03.420
+one was basically a fine tuning of a model with respect to
+
+00:09:03.420 --> 00:09:07.120
+embeddings and a re-ranking and i have already shared a two
+
+00:09:07.120 --> 00:09:09.480
+code base with all of you those code bases are already
+
+00:09:09.480 --> 00:09:13.200
+available inside your dashboard so that code base is already
+
+00:09:13.200 --> 00:09:15.920
+uploaded inside your dashboard yesterday itself now what you
+
+00:09:15.920 --> 00:09:19.280
+have to do and this task i want you to complete today itself
+
+00:09:19.280 --> 00:09:24.900
+no procrastination no delay with discipline today itself you
+
+00:09:24.900 --> 00:09:30.360
+have to complete this particular task that you have to write
+
+00:09:30.360 --> 00:09:34.380
+something inside your resume maybe as a fresher maybe as a
+
+00:09:34.380 --> 00:09:37.140
+working professional but yeah you have to write something
+
+00:09:37.140 --> 00:09:41.180
+inside your resume a project basically and then you have to
+
+00:09:41.180 --> 00:09:44.300
+prepare an explanation of that particular project and
+
+00:09:44.300 --> 00:09:47.640
+believe me this is a strategy which has worked in last like
+
+00:09:47.640 --> 00:09:51.100
+a seven to eight year and it is going to work for all of us
+
+00:09:51.100 --> 00:09:54.180
+even today right uh this is a new template which i have
+
+00:09:54.180 --> 00:09:56.820
+created by the way uh for a dpr i have added a couple of
+
+00:09:56.820 --> 00:10:00.680
+more things uh inside this one so detailed project report
+
+00:10:00.680 --> 00:10:04.300
+why i'm asking you to create this one so that when you will
+
+00:10:04.300 --> 00:10:07.200
+start writing each and everything this is just a template
+
+00:10:07.200 --> 00:10:09.440
+right so for example if you will start writing this project
+
+00:10:09.440 --> 00:10:13.100
+title then what was your role what was a duration of this
+
+00:10:13.100 --> 00:10:16.380
+project what was a team structure with respect to a project
+
+00:10:16.380 --> 00:10:19.780
+which i have already discussed inside your batch what was a
+
+00:10:19.780 --> 00:10:23.460
+technology that you have used basically and a link so maybe
+
+00:10:23.460 --> 00:10:27.240
+a github link maybe a live demo or anything that you have or
+
+00:10:27.240 --> 00:10:30.660
+maybe you are going to prepare impact that this project is
+
+00:10:30.660 --> 00:10:33.700
+going to create so each and everything you have to write it
+
+00:10:33.700 --> 00:10:36.880
+down at least for three projects so basically this is a
+
+00:10:36.880 --> 00:10:42.380
+template but you have to create three dpr at minimum a
+
+00:10:42.380 --> 00:10:46.260
+project which you are going to mention inside your resume so
+
+00:10:46.260 --> 00:10:49.720
+this is basically a cover block and then you have to write
+
+00:10:49.720 --> 00:10:53.900
+an executive summary of that particular project context and
+
+00:10:53.900 --> 00:10:57.100
+a business goal what you have built basically what was your
+
+00:10:57.100 --> 00:11:00.700
+role sense possibility key technical approach uh impact or
+
+00:11:00.700 --> 00:11:03.240
+maybe a key performance indicator which is technically a
+
+00:11:03.240 --> 00:11:07.720
+kpis which you have created scale and reliability how you
+
+00:11:07.720 --> 00:11:11.440
+were able to achieve what was a cost which was involved or
+
+00:11:11.440 --> 00:11:14.320
+latency which was involved or delay basically which was
+
+00:11:14.320 --> 00:11:18.500
+involved and how you have improved that and what is our next
+
+00:11:18.500 --> 00:11:22.540
+feature that you or your entire team has planned for a
+
+00:11:22.540 --> 00:11:26.000
+particular project that you are going to develop maybe in an
+
+00:11:26.000 --> 00:11:29.340
+upcoming month or maybe in an upcoming quarter basically
+
+00:11:29.340 --> 00:11:33.100
+right then uh business contest problem statement and contest
+
+00:11:33.100 --> 00:11:36.700
+so what was the actual problem in very very detail and what
+
+00:11:36.700 --> 00:11:40.300
+was the actual objective of that particular project what was
+
+00:11:40.300 --> 00:11:43.280
+uh like a constraint that you have faced with respect to
+
+00:11:43.280 --> 00:11:46.300
+this particular project means a hurdles basically that you
+
+00:11:46.300 --> 00:11:49.080
+have faced with respect to this project uh user and a
+
+00:11:49.080 --> 00:11:52.320
+stakeholder so who was a primary stakeholder maybe you were
+
+00:11:52.320 --> 00:11:54.880
+the primary stakeholder as a manager maybe as a project
+
+00:11:54.880 --> 00:11:58.960
+manager or maybe as a director or like uh who was a
+
+00:11:58.960 --> 00:12:02.300
+stakeholder if you were working as a developer over there so
+
+00:12:02.300 --> 00:12:05.080
+each and everything you have to write over there inside this
+
+00:12:05.080 --> 00:12:08.440
+particular section and then what was a functional
+
+00:12:08.440 --> 00:12:12.420
+requirement what was a non-functional requirement what was a
+
+00:12:12.420 --> 00:12:14.900
+key performance indicator i have just given couple of things
+
+00:12:14.900 --> 00:12:18.180
+over here just for your reference what was a compliance and
+
+00:12:18.180 --> 00:12:22.160
+security that you have handled or you have this what was
+
+00:12:22.160 --> 00:12:25.300
+your approach in terms of handling a compliance and security
+
+00:12:25.300 --> 00:12:28.420
+for that particular project that you are going to write then
+
+00:12:28.560 --> 00:12:31.400
+uh with respect to our data so what was your data source
+
+00:12:31.400 --> 00:12:34.720
+maybe one two or maybe 100 how you have handled it what was
+
+00:12:34.720 --> 00:12:37.460
+a volume of the data that you were handling what was a
+
+00:12:37.460 --> 00:12:40.840
+schema or maybe a type of the data maybe a structure maybe
+
+00:12:40.840 --> 00:12:44.240
+unstructured so you have to mention about those things in
+
+00:12:44.240 --> 00:12:47.540
+very very detail and then obviously what kind of a treatment
+
+00:12:47.540 --> 00:12:50.280
+of a data that you have done because obviously you are going
+
+00:12:50.280 --> 00:12:53.820
+to work in a gen ai project or in data science project and
+
+00:12:53.820 --> 00:12:56.060
+everything starts with the data i believe we have already
+
+00:12:56.060 --> 00:12:59.400
+talked about it right so what was a data governance that you
+
+00:12:59.400 --> 00:13:03.420
+have implemented and then architecture diagram so what was a
+
+00:13:03.420 --> 00:13:07.380
+solution architecture that you have designed in a group uh
+
+00:13:07.380 --> 00:13:11.560
+today itself so someone has uh not someone i would say so
+
+00:13:11.560 --> 00:13:16.380
+let me open it up so asit has basically like a shared one of
+
+00:13:16.380 --> 00:13:20.980
+his like a linkedin post so where he has based on the
+
+00:13:20.980 --> 00:13:23.640
+discussion based on our initial discussion so he has
+
+00:13:23.640 --> 00:13:26.760
+designed this entire layer layer by layer layer by layer so
+
+00:13:26.760 --> 00:13:29.880
+based on the very first project he has designed it so i want
+
+00:13:29.880 --> 00:13:33.400
+you to design this kind of architecture or architecture that
+
+00:13:33.400 --> 00:13:36.300
+i have already discussed layer by layer layer by layer layer
+
+00:13:36.300 --> 00:13:40.180
+by layer so that you will be able to refer and even you all
+
+00:13:40.180 --> 00:13:42.980
+will be able to share with each and everyone so architecture
+
+00:13:42.980 --> 00:13:46.260
+is very much important that you have to design with respect
+
+00:13:46.260 --> 00:13:50.460
+to your particular project so starting from a client ui this
+
+00:13:50.460 --> 00:13:53.780
+is just a example which i have given by the way so
+
+00:13:53.780 --> 00:13:56.160
+everything is going to start from the client side so
+
+00:13:56.160 --> 00:13:58.540
+basically maybe a mobile application maybe a web application
+
+00:13:58.560 --> 00:14:02.720
+maybe some sort of interfaces right and then how this entire
+
+00:14:02.720 --> 00:14:07.200
+project has been built and then why this particular design
+
+00:14:07.200 --> 00:14:11.300
+why not something else right so because basically there will
+
+00:14:11.300 --> 00:14:14.880
+be a lot of alternative for everything you will be able to
+
+00:14:14.880 --> 00:14:18.200
+find out now in a market not just one right so even if i
+
+00:14:18.200 --> 00:14:20.360
+talk about like a building an api so there are so many
+
+00:14:20.360 --> 00:14:23.400
+frameworks right so why you have chosen that framework for
+
+00:14:23.400 --> 00:14:26.060
+example if i'm talking about a model itself there are n
+
+00:14:26.060 --> 00:14:28.680
+number of models that we can tune that we can develop that
+
+00:14:28.680 --> 00:14:31.900
+we can use it for our reg application but why this
+
+00:14:31.900 --> 00:14:34.760
+particular model why not other because people are going to
+
+00:14:34.760 --> 00:14:37.340
+ask you this question yeah people are going to put up this
+
+00:14:37.340 --> 00:14:40.240
+question in front of you that why this what was a reason
+
+00:14:40.240 --> 00:14:43.400
+behind choosing only this one this particular vector
+
+00:14:43.400 --> 00:14:45.400
+database this particular framework this particular
+
+00:14:45.400 --> 00:14:48.560
+programming languages everything people are going to ask you
+
+00:14:48.560 --> 00:14:51.140
+or let's suppose if you are hosting some of the services so
+
+00:14:51.140 --> 00:14:53.880
+again for hosting there are multiple platform and in every
+
+00:14:53.880 --> 00:14:56.800
+platform there are multiple way to host it right in a
+
+00:14:56.800 --> 00:15:01.320
+serverless mode or just by using a dedicated server so and
+
+00:15:01.320 --> 00:15:03.520
+there are a lot of like a services you all are going to use
+
+00:15:03.520 --> 00:15:07.340
+so whenever you are trying to design it so why right and
+
+00:15:07.340 --> 00:15:10.400
+again so you should be aware about two or three alternative
+
+00:15:10.400 --> 00:15:13.860
+of each and every component not just like a one single
+
+00:15:13.860 --> 00:15:16.420
+component because when people will start asking you a
+
+00:15:16.420 --> 00:15:19.440
+question you will not be able to answer if you are not aware
+
+00:15:19.440 --> 00:15:24.080
+about two or three at minimum alternative then uh detailed
+
+00:15:24.080 --> 00:15:26.480
+design component then what was the pipeline that you have
+
+00:15:26.480 --> 00:15:29.420
+built by the way what was the basic logic that you have
+
+00:15:29.420 --> 00:15:32.960
+built and for a serving basically for a hosting so what kind
+
+00:15:32.960 --> 00:15:35.580
+of like hosting that you were using how data was uh
+
+00:15:35.580 --> 00:15:38.900
+transmitting from that one and then implementation timeline
+
+00:15:38.900 --> 00:15:41.360
+so i have already created a table a beautiful table for all
+
+00:15:41.360 --> 00:15:45.200
+of you so timeline the start and who was the owner and what
+
+00:15:45.200 --> 00:15:48.860
+was the key note basically and then experimentation and
+
+00:15:48.860 --> 00:15:51.980
+result so whenever you are going to build some model or
+
+00:15:51.980 --> 00:15:55.280
+maybe any kind of rag pipeline or any kind of agents if you
+
+00:15:55.280 --> 00:15:58.540
+are going to use so obviously we always try to evaluate and
+
+00:15:58.540 --> 00:15:59.900
+then we are going to evaluate it's not like we will just
+
+00:15:59.900 --> 00:16:02.640
+dump it inside the production because it's working for me no
+
+00:16:02.640 --> 00:16:06.960
+not like that so what was a matrix b and this matrix
+
+00:16:06.960 --> 00:16:10.380
+actually depends upon i've just given you the sample
+
+00:16:10.380 --> 00:16:13.840
+matrices over here but it actually depends upon the use case
+
+00:16:13.840 --> 00:16:17.360
+that you are going to solve so you have to write a matrix
+
+00:16:17.360 --> 00:16:21.500
+with respect to the particular use cases and then what was a
+
+00:16:21.500 --> 00:16:25.200
+ops pipeline that you have built because everywhere there
+
+00:16:25.200 --> 00:16:30.080
+will be an ops ml ops devops but technically it's ops i just
+
+00:16:30.080 --> 00:16:33.440
+consider everything as a ops so i don't categorize like
+
+00:16:33.440 --> 00:16:36.380
+something as a ml ops or lmops it's just ops because at the
+
+00:16:36.380 --> 00:16:39.160
+end of the day almost a similar kind of a pipeline of funnel
+
+00:16:39.160 --> 00:16:43.600
+we are going to build and then risk and mitigation so data
+
+00:16:43.600 --> 00:16:48.880
+drift or maybe a limit of from the vendor so this is a data
+
+00:16:48.880 --> 00:16:52.980
+leak and cost spike then alternative consideration so option
+
+00:16:52.980 --> 00:16:55.600
+a versus b versus c because whenever we design the
+
+00:16:55.600 --> 00:16:59.340
+architecture it's not like we just go we do a lot of
+
+00:16:59.340 --> 00:17:02.320
+discussion so like i said even above right so for every
+
+00:17:02.320 --> 00:17:05.580
+component there should be option a primary option option b
+
+00:17:05.580 --> 00:17:08.660
+and option c whatever component that you are going to
+
+00:17:08.660 --> 00:17:12.260
+include inside your project so for everything you should
+
+00:17:12.260 --> 00:17:15.940
+know that what is the alternative if you are not aware about
+
+00:17:15.940 --> 00:17:18.840
+it like i said you will not be able to answer majority of
+
+00:17:18.840 --> 00:17:23.000
+the question and then if you have a demo so try to attach
+
+00:17:23.000 --> 00:17:25.200
+those screen sort maybe you can try to attach a screenshot
+
+00:17:25.200 --> 00:17:28.960
+which uh i have the project which i have shared with all of
+
+00:17:28.960 --> 00:17:31.880
+you uh for that itself it's completely fine just to start
+
+00:17:31.880 --> 00:17:35.240
+with what was a lesson that you have learned and what was
+
+00:17:35.240 --> 00:17:40.240
+your next roadmap and then api contract schema infra these
+
+00:17:40.240 --> 00:17:45.700
+things so these are the things that you have to do it by the
+
+00:17:45.700 --> 00:17:50.760
+way right and then you have to write the entire story one by
+
+00:17:50.760 --> 00:17:56.000
+one one by one one by one so this is a dpr and i want you to
+
+00:17:56.000 --> 00:17:58.900
+write this story today itself and send it to me send it
+
+00:17:58.900 --> 00:18:01.520
+inside the group and as soon as you will start sending those
+
+00:18:01.520 --> 00:18:04.860
+things i will start evaluating it and i will start giving
+
+00:18:04.860 --> 00:18:07.640
+you a feedback or if some modification is required i'll do
+
+00:18:07.640 --> 00:18:10.300
+it from my side or maybe i'll ask you to do it simple as
+
+00:18:10.300 --> 00:18:14.120
+simple as that but believe me this dpr like i said so it has
+
+00:18:14.120 --> 00:18:18.760
+worked every time and once you will start writing it right
+
+00:18:18.760 --> 00:18:22.040
+maybe you can take a help of like a chat gpt yuri whatever
+
+00:18:22.040 --> 00:18:26.240
+you want that's completely fine but while writing this dpr
+
+00:18:26.240 --> 00:18:28.540
+believe me you will be doing a lot of work and you will be
+
+00:18:28.540 --> 00:18:28.560
+able to write it and you will be able to write it in a lot
+
+00:18:28.560 --> 00:18:31.880
+of brainstorming right you will be looking for a lot of
+
+00:18:31.880 --> 00:18:33.800
+different different kind of alternative and this is
+
+00:18:33.800 --> 00:18:36.020
+something which is required right this is something which is
+
+00:18:36.020 --> 00:18:41.440
+required and this is going to build a solid story for your
+
+00:18:41.440 --> 00:18:44.540
+entire project believe me when you will start writing each
+
+00:18:44.540 --> 00:18:48.380
+and every line you will get stuck at so many points right
+
+00:18:48.380 --> 00:18:52.740
+and this is the whole purpose behind creating this dpr so
+
+00:18:52.740 --> 00:18:56.340
+that you will not get stuck or you should not get stuck when
+
+00:18:56.340 --> 00:19:01.040
+you are going for a real time interview making sense to all
+
+00:19:01.040 --> 00:19:03.200
+of us guys yes yeah
+
+00:19:05.180 --> 00:19:07.280
+in a chat please so
+
+00:19:09.330 --> 00:19:14.650
+can i expect a dpr 3 dpr from everyone or from most of you
+
+00:19:14.650 --> 00:19:17.650
+today itself maybe by tonight maybe by late night maybe by
+
+00:19:17.650 --> 00:19:21.090
+late morning it's completely fine because this is once in a
+
+00:19:21.090 --> 00:19:25.010
+lifetime and believe me it always worked always means
+
+00:19:25.010 --> 00:19:29.110
+literally always worked and for we all know right we all
+
+00:19:29.110 --> 00:19:31.710
+know that whenever we are going for an interview obviously
+
+00:19:31.710 --> 00:19:32.570
+people are going to be going for an interview and we are
+
+00:19:32.570 --> 00:19:32.970
+going to be going for an interview and we are going to start
+
+00:19:32.970 --> 00:19:37.290
+my interview with my work so tell me something about
+
+00:19:37.290 --> 00:19:40.150
+yourself and then tell me something about your project and
+
+00:19:40.150 --> 00:19:43.430
+then they will start asking you a cross question based on
+
+00:19:43.430 --> 00:19:47.130
+the design the diagram the flow the story that you are going
+
+00:19:47.130 --> 00:19:51.690
+to talk about inside your interview so if you don't want to
+
+00:19:51.690 --> 00:19:55.290
+get stuck in that interview in that case you have to prepare
+
+00:19:55.290 --> 00:19:58.430
+this dpr and this is not going to help you out for this
+
+00:19:58.430 --> 00:20:00.910
+interview even if you are going to attend an interview after
+
+00:20:00.910 --> 00:20:04.690
+one year or two year believe me the same dpr is going to
+
+00:20:04.690 --> 00:20:09.070
+help you out in terms of preparing this end-to-end yes yeah
+
+00:20:09.070 --> 00:20:11.530
+it should be in an industry domain we are currently working
+
+00:20:11.530 --> 00:20:14.870
+exactly yeah let's suppose i'm working into a sales i'm
+
+00:20:14.870 --> 00:20:17.310
+working into a marketing i'm working into a supply chain i'm
+
+00:20:17.310 --> 00:20:19.330
+working into a finance i'm working into a healthcare
+
+00:20:19.330 --> 00:20:22.990
+industry right in whatever industry you are working because
+
+00:20:22.990 --> 00:20:26.370
+obviously uh that that you can't like remove from your
+
+00:20:26.370 --> 00:20:28.710
+resume right obviously you will go for an interview and
+
+00:20:28.710 --> 00:20:32.990
+you'll say that that okay my domain was x y g so based on
+
+00:20:32.990 --> 00:20:36.670
+your domain because see technology is going to be same only
+
+00:20:36.670 --> 00:20:40.130
+domain is going to change and as per domain your problem
+
+00:20:40.130 --> 00:20:43.470
+statement is going to change and so the component some of
+
+00:20:43.470 --> 00:20:46.370
+the component of this technology is going to change so with
+
+00:20:46.370 --> 00:20:51.270
+respect to your domain right whatever domain you are coming
+
+00:20:51.270 --> 00:20:54.130
+from so with respect to your domain you can try to write
+
+00:20:54.130 --> 00:20:58.390
+down this entire project if you are not able to figure out a
+
+00:20:58.390 --> 00:21:02.970
+domain in that case write a product based dpr product based
+
+00:21:02.970 --> 00:21:06.450
+dpr means i was building a product simple so which can serve
+
+00:21:06.450 --> 00:21:10.610
+maybe a entire like a sales entire sales industry or maybe
+
+00:21:10.610 --> 00:21:13.570
+entire like a healthcare industry so again domain will come
+
+00:21:13.570 --> 00:21:17.870
+into a picture but in a product based approach so if you are
+
+00:21:17.870 --> 00:21:20.790
+working for some sort of a client in that case service based
+
+00:21:20.790 --> 00:21:25.890
+approach but ultimately you have to write the story yeah so
+
+00:21:25.890 --> 00:21:29.350
+can i expect again i'm asking question guys i think some of
+
+00:21:29.350 --> 00:21:30.410
+you are going to be able to answer this question right so
+
+00:21:30.410 --> 00:21:33.890
+can i expect this dpr by tonight yeah
+
+00:21:37.640 --> 00:21:42.310
+i have created a small one but not that much good prepare
+
+00:21:42.310 --> 00:21:45.130
+this one so believe me no one will be able to cross this
+
+00:21:45.130 --> 00:21:48.390
+line believe me in an interview no one means literally no
+
+00:21:48.390 --> 00:21:51.390
+one no one will be able to cross this line with respect to
+
+00:21:51.390 --> 00:21:55.410
+project again with respect to a project if you have this dpr
+
+00:21:56.050 --> 00:21:59.250
+with you and if you have written this dpr at least once in
+
+00:21:59.250 --> 00:22:02.510
+your lifetime so i'm expecting three dpr and those three
+
+00:22:02.510 --> 00:22:04.950
+projects right those three projects you have to mention
+
+00:22:04.950 --> 00:22:08.990
+inside your resume as simple as that so whatever like for
+
+00:22:08.990 --> 00:22:11.690
+whatever project you are writing a dpr exactly same project
+
+00:22:11.690 --> 00:22:15.310
+because everywhere so i have given you a time timeline sheet
+
+00:22:15.310 --> 00:22:17.670
+as well right that okay when we have started this project
+
+00:22:17.670 --> 00:22:20.450
+and what when it has ended who was the owner each and
+
+00:22:20.450 --> 00:22:23.370
+everything so exact same thing you are going to mention
+
+00:22:23.370 --> 00:22:27.790
+inside your resume as simple as that so let me send this dpr
+
+00:22:27.790 --> 00:22:30.110
+inside your group yeah
+
+00:22:35.770 --> 00:22:39.410
+so again i will be uploading this inside our dashboard as
+
+00:22:39.410 --> 00:22:40.290
+well so once i'm going to upload this dpr i'm going to
+
+00:22:40.290 --> 00:22:40.590
+upload this dpr as well so once i'm going to upload the
+
+00:22:40.590 --> 00:22:42.830
+recording but that will take maybe like a couple of hours
+
+00:22:42.830 --> 00:22:46.290
+because the recording will not be available immediately so
+
+00:22:46.290 --> 00:22:49.370
+keeping that in mind it's available here inside your group
+
+00:22:49.370 --> 00:22:54.250
+itself so this is a task number one i want you to do it on
+
+00:22:54.250 --> 00:22:59.790
+priority zero now second task as i'm going to start with the
+
+00:22:59.790 --> 00:23:03.390
+interview questions right and i will be taking these
+
+00:23:03.390 --> 00:23:06.030
+questions and then i will be giving you the answer and
+
+00:23:06.030 --> 00:23:08.450
+believe me so here the question which i have prepared so
+
+00:23:08.450 --> 00:23:12.970
+it's not just a an answer the question which i have prepared
+
+00:23:12.970 --> 00:23:16.610
+again from a business side from architecture side from a
+
+00:23:16.610 --> 00:23:20.070
+stakeholder side from a team side from everywhere this
+
+00:23:20.070 --> 00:23:23.550
+question has been prepared plus i have also included lots of
+
+00:23:23.550 --> 00:23:26.770
+scenario based question as well because many people are
+
+00:23:26.770 --> 00:23:28.890
+going to ask you they are going to give you a scenario and
+
+00:23:28.890 --> 00:23:31.350
+they will say that okay how you will design this entire
+
+00:23:31.350 --> 00:23:34.250
+solution how you will design this entire system so many
+
+00:23:34.250 --> 00:23:37.230
+people are going to ask you a scenario based question as
+
+00:23:37.230 --> 00:23:40.410
+well now keeping that in a mind in mind that i have prepared
+
+00:23:40.410 --> 00:23:43.550
+200 set of the question not 200 actually i have like a
+
+00:23:43.550 --> 00:23:48.670
+another 10 set so approximately in that set i have 95 96
+
+00:23:48.670 --> 00:23:52.610
+question around 95 96 question with respect to hr round with
+
+00:23:52.610 --> 00:23:55.570
+respect to managerial round and all and some like
+
+00:23:55.570 --> 00:23:59.510
+architecture like around as well so before i will start
+
+00:23:59.510 --> 00:24:04.270
+giving an answer and you will just like a watch me giving an
+
+00:24:04.270 --> 00:24:08.590
+answer because many of you may have like a forgotten this
+
+00:24:08.590 --> 00:24:13.450
+some of this small small things uh where like uh you you
+
+00:24:13.450 --> 00:24:16.450
+have to like go for the revision so before i will start
+
+00:24:16.450 --> 00:24:22.530
+ahead with this answer right you have to prepare your own
+
+00:24:22.530 --> 00:24:26.370
+version take a help from any ai system i don't care that's
+
+00:24:26.370 --> 00:24:30.150
+completely fine with me uh but yeah so you have to prepare
+
+00:24:30.150 --> 00:24:35.330
+your own version first you have to go through one by one
+
+00:24:35.330 --> 00:24:39.010
+each and every question first and then when i'm going to
+
+00:24:39.010 --> 00:24:42.170
+give you an answer obviously you will be able to ask me a
+
+00:24:42.170 --> 00:24:45.450
+cross question this is what i want right because if i'll
+
+00:24:45.450 --> 00:24:49.410
+start answering or all of these questions directly maybe you
+
+00:24:49.410 --> 00:24:51.950
+will not be able to ask me a cross questions because many
+
+00:24:51.950 --> 00:24:54.550
+concepts maybe you are not aware about or maybe you have
+
+00:24:54.550 --> 00:24:57.810
+forgotten which is pretty much important for a revision and
+
+00:24:57.810 --> 00:25:03.110
+again for any position believe me starting from a junior
+
+00:25:03.110 --> 00:25:06.770
+label till a senior label or architect i would say no one
+
+00:25:06.770 --> 00:25:10.310
+will be able to cross this line again with respect to a
+
+00:25:10.310 --> 00:25:13.790
+interview question this is more than enough so interview
+
+00:25:13.790 --> 00:25:17.750
+questions plus dpr these two combos are more than enough to
+
+00:25:17.750 --> 00:25:23.610
+crack any interview in any company for any label so here
+
+00:25:23.610 --> 00:25:27.430
+from tomorrow onwards so i have given you 200 question and
+
+00:25:27.430 --> 00:25:30.730
+you will be having around uh five days i would say wednesday
+
+00:25:30.730 --> 00:25:33.130
+thursday friday saturday and sunday so in total you will be
+
+00:25:33.130 --> 00:25:37.510
+having five days so maybe every day just try to prepare 40
+
+00:25:37.510 --> 00:25:41.470
+question to 50 question yeah take a help of ai and again dig
+
+00:25:41.470 --> 00:25:44.830
+deeper why this why not this one in in that way right so
+
+00:25:44.830 --> 00:25:48.670
+just try to prepare your answer i'm not looking for uh your
+
+00:25:48.670 --> 00:25:51.590
+solution by the way i have my own solution i have my own
+
+00:25:51.590 --> 00:25:55.670
+version of this entire like answers of this entire questions
+
+00:25:55.670 --> 00:26:00.230
+so but yeah i just want you to do a revision first so that
+
+00:26:00.230 --> 00:26:02.690
+whenever i will start discussing whenever i'll start giving
+
+00:26:02.690 --> 00:26:05.990
+your answer you will be able to understand and you all will
+
+00:26:05.990 --> 00:26:09.250
+be able to ask me a cross question back to back making sense
+
+00:26:09.250 --> 00:26:10.390
+i'm
+
+00:26:12.470 --> 00:26:14.470
+not having such project experience suggest me how i can
+
+00:26:14.470 --> 00:26:17.370
+write a dpr so my uh i have already discussed a project
+
+00:26:17.370 --> 00:26:19.190
+that's the reason so first of all i have i have discussed
+
+00:26:19.190 --> 00:26:21.970
+the project and then i'm asking you to write a dpr i'm not
+
+00:26:21.970 --> 00:26:24.730
+asking you to write a dpr straight away yeah so i have
+
+00:26:24.730 --> 00:26:28.010
+already discussed three projects basically uh team structure
+
+00:26:28.010 --> 00:26:31.690
+architecture components even cost i have discussed right
+
+00:26:31.690 --> 00:26:35.530
+even pros and cons i have discussed over there so based on
+
+00:26:35.530 --> 00:26:40.590
+that i'm asking you to write a dpr yes yeah so
+
+00:26:44.370 --> 00:26:47.570
+with a 20-year experience obviously you will be going ahead
+
+00:26:47.570 --> 00:26:50.530
+with the stakeholder stakeholder can be an architect
+
+00:26:50.530 --> 00:26:53.650
+stakeholder can be a director the stakeholder can be a
+
+00:26:53.650 --> 00:26:57.470
+manager yes oh that i can do exactly this is what i want
+
+00:26:57.470 --> 00:26:59.950
+guys that's the reason so first i have discussed i have not
+
+00:26:59.950 --> 00:27:02.670
+asked you to write a dpr on day zero because i know we all
+
+00:27:02.670 --> 00:27:06.030
+will go blank if i'm going to ask you to write a dpr so
+
+00:27:06.030 --> 00:27:09.610
+whatever project that i have discussed just try to write it
+
+00:27:09.610 --> 00:27:13.610
+down whatever domain you are working or you have already
+
+00:27:13.610 --> 00:27:16.630
+worked recently right so maybe you have worked in a couple
+
+00:27:16.630 --> 00:27:19.670
+of domain that's completely fine but let's go ahead with the
+
+00:27:19.670 --> 00:27:22.670
+recent domain because your knowledge will be fresh with
+
+00:27:22.670 --> 00:27:26.250
+respect to that recent domain and based on that write a dpr
+
+00:27:26.250 --> 00:27:30.350
+send me inside a group let's have a discussion right for
+
+00:27:30.350 --> 00:27:34.730
+this entire week and then i'll be talking about couple of
+
+00:27:34.730 --> 00:27:37.350
+dprs so those who are going to write it down in a beautiful
+
+00:27:37.350 --> 00:27:41.490
+manner i'll be talking about that yes making sense to all of
+
+00:27:41.490 --> 00:27:44.650
+us are we going to complete this task guys so dpr today
+
+00:27:44.650 --> 00:27:50.090
+again i wanted to do it today no delays and then from
+
+00:27:50.090 --> 00:27:53.090
+tomorrow onwards 40 question 40 question 40 question 40
+
+00:27:53.090 --> 00:27:57.110
+question so that on monday and tuesday so we can start
+
+00:27:57.110 --> 00:28:00.090
+talking about these questions maybe i will be able to cover
+
+00:28:00.090 --> 00:28:03.890
+40 50 questions because on an average one question is going
+
+00:28:03.890 --> 00:28:07.370
+to take uh two to three minute of time right even in an
+
+00:28:07.370 --> 00:28:09.150
+interview so people are going to give you two to three
+
+00:28:09.150 --> 00:28:11.850
+minute of time to give an answer not more than that so i
+
+00:28:11.850 --> 00:28:15.270
+will try to follow the exact same same fashion so one by one
+
+00:28:15.270 --> 00:28:17.590
+one by one i'll pick the question i'll give the answer right
+
+00:28:17.590 --> 00:28:21.030
+so i believe approximately in two hour which is like a 120
+
+00:28:21.030 --> 00:28:25.110
+minute i will be able to discuss 40 to 45 questions so it is
+
+00:28:25.110 --> 00:28:29.330
+going to take approximately four to five uh like a days for
+
+00:28:29.330 --> 00:28:34.530
+me but before that you all will be ready if you don't have
+
+00:28:34.530 --> 00:28:37.730
+any project experience in generative how to write a dpr in
+
+00:28:37.730 --> 00:28:40.610
+that case that's the reason so i have discussed the project
+
+00:28:40.610 --> 00:28:44.730
+right use the project which i have discussed and write a dpr
+
+00:28:44.730 --> 00:28:49.170
+at least a start see this is where many of us like you know
+
+00:28:49.170 --> 00:28:53.010
+uh get stuck so we don't start at least start do it wrong
+
+00:28:53.010 --> 00:28:55.110
+it's completely fine no one is asking you to write it
+
+00:28:55.110 --> 00:28:57.210
+perfectly it's completely fine that's the reason i'm here
+
+00:28:57.210 --> 00:29:00.210
+right so i'm going to vet it i'm going to validate each and
+
+00:29:00.210 --> 00:29:03.690
+everything so this is the like a reason my roles comes into
+
+00:29:03.690 --> 00:29:06.390
+a picture yeah that's the reason so you can come and you can
+
+00:29:06.390 --> 00:29:08.870
+discuss with me that whether it's a right or whether it's a
+
+00:29:08.870 --> 00:29:12.210
+wrong yeah do it wrong but do it right so i have discussed
+
+00:29:12.230 --> 00:29:15.030
+it and i will tell you that you can do it at least so that
+
+00:29:15.030 --> 00:29:19.210
+you will not get crashed in an interview right you can go
+
+00:29:19.210 --> 00:29:21.790
+with the confidence and then you will be able to give an
+
+00:29:21.790 --> 00:29:24.230
+interview and this is also going to help you out to align
+
+00:29:24.230 --> 00:29:28.270
+your resume because that will be the entry point unless and
+
+00:29:28.270 --> 00:29:32.250
+until your resume is not perfect system is not going to
+
+00:29:32.250 --> 00:29:35.750
+select your resume and nowadays no human being is going to
+
+00:29:35.750 --> 00:29:38.570
+select a resume it's a system right it's an applicant
+
+00:29:38.570 --> 00:29:42.070
+tracking system which is going to parse your entire resume
+
+00:29:42.230 --> 00:29:47.410
+so that is an entry point and you should be very much sure
+
+00:29:47.410 --> 00:29:51.490
+about the things that you are writing into your resume yes
+
+00:29:51.490 --> 00:29:54.950
+we need to revise the project sir whatever you have to do it
+
+00:29:54.950 --> 00:30:03.090
+do it yeah but do it simple okay so let me send this
+
+00:30:03.090 --> 00:30:11.550
+question again inside your group and then okay where is this
+
+00:30:17.020 --> 00:30:20.240
+downloads okay let me save it once again interview
+
+00:30:23.020 --> 00:30:26.440
+batch okay so let me keep it inside downloads
+
+00:30:45.170 --> 00:30:50.070
+yeah so even this document is available yeah please can you
+
+00:30:50.070 --> 00:30:52.310
+share a group link i think i'm not the one who should share
+
+00:30:52.310 --> 00:30:54.090
+the group link it's already available inside your dashboard
+
+00:30:54.090 --> 00:30:58.130
+so please you can go and you can join from there yeah yeah
+
+00:30:58.130 --> 00:31:00.450
+it's it's everything is available inside your dashboard so
+
+00:31:00.450 --> 00:31:02.990
+don't worry you don't have to ask anyone so you can just go
+
+00:31:02.990 --> 00:31:06.910
+in a first lecture itself i have already attached whatsapp
+
+00:31:06.910 --> 00:31:09.270
+group link you can join like within a fraction of a second
+
+00:31:09.270 --> 00:31:13.470
+yeah okay so now raise your hand guys so that you can start
+
+00:31:13.470 --> 00:31:16.330
+working on this and i'll just take some questions and then
+
+00:31:16.330 --> 00:31:21.090
+i'll leave uh and i'm watching your entire group so start
+
+00:31:21.090 --> 00:31:24.350
+sending me your dpr wrong right it's completely fine right
+
+00:31:24.350 --> 00:31:27.410
+so at the end of the day we have to make it right based on
+
+00:31:27.410 --> 00:31:30.570
+my feedback so we'll do it so raise your hand guys everyone
+
+00:31:30.570 --> 00:31:33.450
+yeah jatin you have a question go ahead anyone
+
+00:31:37.960 --> 00:31:40.580
+who is having any question concern, confusion with respect
+
+00:31:40.580 --> 00:31:42.440
+to these two tasks which I have given you,
+
+00:31:49.740 --> 00:31:54.100
+not getting in the WhatsApp group, I mean like it is already
+
+00:31:54.100 --> 00:32:01.660
+available, let me show, so it is like here you have to go,
+
+00:32:03.830 --> 00:32:08.090
+generative air interview right, this one, so inside your
+
+00:32:08.090 --> 00:32:14.150
+dashboard, yes, introduction right, this is the chat
+
+00:32:14.150 --> 00:32:17.210
+.whatsapp.com, I think you all are able to see it, click and
+
+00:32:17.210 --> 00:32:20.870
+then you will be able to get into a group immediately, yes,
+
+00:32:20.930 --> 00:32:26.350
+it is already available, yes, Sumit go ahead. Hello sir,
+
+00:32:26.410 --> 00:32:29.010
+just a quick question sir, just like as per the experience,
+
+00:32:29.250 --> 00:32:33.230
+like what all we need to consider in a technological stack
+
+00:32:33.230 --> 00:32:35.890
+to mention, it is like I have around 12 years of experience
+
+00:32:35.890 --> 00:32:39.830
+in another domain, now we are switching, and like pressure
+
+00:32:39.830 --> 00:32:44.290
+for the journey I think, so what point we have to consider
+
+00:32:44.290 --> 00:32:47.330
+in our technology stacks and other things, so that, because
+
+00:32:47.330 --> 00:32:51.570
+it will be depend upon. As per experience, it should be more
+
+00:32:51.570 --> 00:32:55.750
+knowledge, but my experience is not relevant, so in that
+
+00:32:55.750 --> 00:32:58.950
+case how should we do it, so basically see the DPR that I
+
+00:32:58.950 --> 00:33:01.770
+have given you, so it is basically a generic DPR template,
+
+00:33:01.890 --> 00:33:04.630
+so where I am not considering any kind of experience, even
+
+00:33:04.630 --> 00:33:06.510
+if you are fresher or even if you are like experienced
+
+00:33:06.510 --> 00:33:09.190
+person, you have to write end to end, end to end means
+
+00:33:09.190 --> 00:33:10.890
+literally end to end, you have to explore and you have to
+
+00:33:10.890 --> 00:33:13.510
+write down each and everything. Now, so even if you have a
+
+00:33:13.510 --> 00:33:15.910
+12 years of experience, this DPR is going to work and if you
+
+00:33:15.910 --> 00:33:19.390
+are a fresher. So, obviously, this DPR will be too much for
+
+00:33:19.390 --> 00:33:22.710
+you, too much means like many things that you are not going
+
+00:33:22.710 --> 00:33:26.610
+to do it, but still I want you to explore at least, yeah,
+
+00:33:29.540 --> 00:33:32.540
+okay, start
+
+00:33:36.140 --> 00:33:38.320
+writing it, first of all, start writing it, because I know
+
+00:33:38.320 --> 00:33:41.880
+like many of you are like will get stuck in between and you
+
+00:33:41.880 --> 00:33:44.420
+will not be able to get the answer and this is the point
+
+00:33:44.420 --> 00:33:48.000
+where like you will be able to get some sort of idea that
+
+00:33:48.000 --> 00:33:51.320
+okay, I think I should ask this question, right. So, start
+
+00:33:51.320 --> 00:33:58.710
+doing it first. Yeah, sorry, go ahead, please. Yes, sir,
+
+00:33:58.710 --> 00:34:03.470
+good evening. Sir, am I audible now? Yeah, you are audible.
+
+00:34:04.470 --> 00:34:09.270
+Sir, I was saying that you did your homework and whatever
+
+00:34:09.270 --> 00:34:13.170
+you prepared from yourself, it was a great experience. Sir,
+
+00:34:13.310 --> 00:34:15.310
+I think your voice is getting cut in between. Speak a little
+
+00:34:15.310 --> 00:34:20.830
+louder or like it is not clear. Actually, sir, this is the
+
+00:34:20.830 --> 00:34:22.810
+problem. Now, I am going to ask you. Yes, sir, is it alright
+
+00:34:22.810 --> 00:34:27.090
+now? It is a little bit alright but then your voice is
+
+00:34:27.090 --> 00:34:30.070
+getting cracked in between. I am disconnecting the phone.
+
+00:34:34.570 --> 00:34:38.770
+Sir, is it alright now? Yes, it is perfect now. Sir, I am
+
+00:34:38.770 --> 00:34:43.110
+saying that you have told the experience and I have done it
+
+00:34:43.110 --> 00:34:47.050
+also and anyhow, there is a lot of difficulty in this. I am
+
+00:34:47.050 --> 00:34:50.790
+saying that if there are some companies like BGV, if our
+
+00:34:50.790 --> 00:34:55.450
+interviews went well, we will give some tasks, some things
+
+00:34:55.450 --> 00:34:56.410
+like this, then we will talk to you. round wise round wise
+
+00:34:56.410 --> 00:35:00.190
+so that too went well but in the last round when they do BGB
+
+00:35:00.190 --> 00:35:04.870
+background application there will be chances that if
+
+00:35:04.870 --> 00:35:10.270
+relevant experience no in BGB only your employment check is
+
+00:35:10.270 --> 00:35:12.370
+done with the previous company because BGB does not directly
+
+00:35:12.370 --> 00:35:16.010
+do the company it is a third party vendor like I have a lot
+
+00:35:16.010 --> 00:35:19.470
+of BGB till now right and even current employees also have
+
+00:35:19.470 --> 00:35:23.170
+BGB so there the question that is asked the third party
+
+00:35:23.170 --> 00:35:27.250
+company only asks 3-4 lines of question that this person was
+
+00:35:27.250 --> 00:35:31.510
+working from this day to this day or not so this much BGB is
+
+00:35:31.510 --> 00:35:34.470
+asked that much verification is done plus if you have some
+
+00:35:34.470 --> 00:35:38.610
+added feedback then you tell ok so don't worry about these
+
+00:35:38.610 --> 00:35:41.250
+things in which project you were working in which technology
+
+00:35:41.250 --> 00:35:45.870
+you were working basically in which team you were working
+
+00:35:45.870 --> 00:35:49.610
+all this is not disclosed anywhere in BGB and neither the
+
+00:35:49.610 --> 00:35:54.390
+question is asked and start up is not done no start up I
+
+00:35:54.390 --> 00:35:56.910
+have accepted it means the well-established start-up does it
+
+00:35:57.200 --> 00:36:00.090
+apart from that like because BGB is also money right for
+
+00:36:00.090 --> 00:36:03.250
+each person and like because this is third-party
+
+00:36:03.250 --> 00:36:05.870
+verification in third-party verification obviously company
+
+00:36:05.870 --> 00:36:08.670
+has to onboard them and they have to pay them based on like
+
+00:36:08.670 --> 00:36:14.390
+per verification but if any company is doing BGB then there
+
+00:36:14.390 --> 00:36:18.210
+ever your tech stack about your team about your client about
+
+00:36:18.210 --> 00:36:22.350
+your project never discloses just this much is asked that
+
+00:36:22.350 --> 00:36:25.790
+this person was working in this company or not it was not
+
+00:36:25.790 --> 00:36:30.310
+like he left and ran or absconded just this much is asked
+
+00:36:30.310 --> 00:36:32.850
+there are no questions apart from this so don't worry year
+
+00:36:32.850 --> 00:36:37.710
+of experience and all relevant suppose we applied somewhere
+
+00:36:38.290 --> 00:36:41.830
+four years experience or five years experience is asked so
+
+00:36:41.830 --> 00:36:45.650
+is there anything related to this no no no nothing there is
+
+00:36:45.650 --> 00:36:49.450
+no technology verification believe me that you your total
+
+00:36:49.450 --> 00:36:52.410
+industry experience is counted so let's suppose you have
+
+00:36:52.410 --> 00:36:55.250
+worked in four companies right so that four companies will
+
+00:36:55.250 --> 00:36:58.370
+go to BGV basically and many companies do this that only the
+
+00:36:58.370 --> 00:37:01.630
+previous company get verification with them because if four
+
+00:37:01.630 --> 00:37:04.950
+are doing then there also it takes into four cost right so
+
+00:37:04.950 --> 00:37:07.970
+in that case only your previous company will get
+
+00:37:07.970 --> 00:37:11.530
+verification and if four are also happening if you have
+
+00:37:11.530 --> 00:37:14.550
+worked then only you will write there but yes what work is
+
+00:37:14.550 --> 00:37:20.610
+done that is never disclosed never thank you sir yes yeah so
+
+00:37:20.610 --> 00:37:23.810
+I am saying just companies share a checklist duration pay
+
+00:37:23.810 --> 00:37:27.490
+slip issue document that's it yes exactly yeah so no one is
+
+00:37:27.490 --> 00:37:29.990
+going to talk about your project your clients your like a
+
+00:37:29.990 --> 00:37:32.970
+technology stack let's suppose you have been working into
+
+00:37:32.970 --> 00:37:36.830
+maybe sales right and then you are applying for a machine
+
+00:37:36.830 --> 00:37:39.930
+learning engineer so no one is going to ask you like what
+
+00:37:39.930 --> 00:37:43.310
+was like a profile that you had sir that too depends
+
+00:37:43.890 --> 00:37:50.350
+interview exactly BGV is just a formality that is management
+
+00:37:50.350 --> 00:37:51.170
+type formality
+
+00:37:54.530 --> 00:37:57.890
+that's just a procedure that every company try to follow
+
+00:37:57.890 --> 00:38:00.490
+that if we are onboard someone then that person should not
+
+00:38:00.490 --> 00:38:06.670
+be left and run away or he did wrong company or he blew the
+
+00:38:06.670 --> 00:38:11.490
+code base and left so if you haven't all this then in that
+
+00:38:11.490 --> 00:38:17.010
+case I don't think you should be worried about these things
+
+00:38:17.010 --> 00:38:23.530
+sir this is another case if I did small startup and if I
+
+00:38:23.530 --> 00:38:30.010
+show it like this that if do founder obviously if I founder
+
+00:38:30.010 --> 00:38:34.610
+then obviously it won't a good impact no no it does actually
+
+00:38:34.610 --> 00:38:38.330
+it does a lot of companies a lot of teams founders because
+
+00:38:38.910 --> 00:38:43.750
+startup it's not like every startup is going to be
+
+00:38:43.750 --> 00:38:48.630
+successful right its ratio is 99 to 1 all the time I will
+
+00:38:48.630 --> 00:38:51.930
+not even say 99 to 1 it's like out of 1000 100 startup
+
+00:38:51.930 --> 00:38:56.310
+that's the ratio so and we all are aware about it but yeah
+
+00:38:56.310 --> 00:38:59.770
+so if you have done a startup if you were a founder if you
+
+00:38:59.770 --> 00:39:02.630
+have worked for your startup maybe like for 1 year 6 month
+
+00:39:02.630 --> 00:39:06.050
+or whatever right so basically people will try to consider
+
+00:39:06.050 --> 00:39:12.010
+as a positive point that there was that did startup right he
+
+00:39:12.010 --> 00:39:17.230
+tried something so obviously a person who is only doing a
+
+00:39:17.230 --> 00:39:22.490
+and a person who did a startup so obviously the person did a
+
+00:39:22.490 --> 00:39:26.990
+startup will have a lot of knowledge so many teams have
+
+00:39:26.990 --> 00:39:29.250
+managers they
+
+00:39:31.470 --> 00:39:39.230
+always appreciate it basically if you ask about obviously it
+
+00:39:39.230 --> 00:39:44.770
+is not related to so how can you introduce AI you will
+
+00:39:44.770 --> 00:39:51.550
+introduce AI AI you, you can introduce agriculture what was
+
+00:39:51.550 --> 00:39:57.010
+the problem sir actually he used to work in TCS his
+
+00:39:57.010 --> 00:40:02.810
+experience was 15 years to 20 years so I discussed with him
+
+00:40:02.810 --> 00:40:07.570
+he said do this show startup that
+
+00:40:17.150 --> 00:40:20.490
+you mentioned it proudly if you were the founder it's fine
+
+00:40:20.490 --> 00:40:23.830
+what's wrong in that what's wrong in trying what's wrong in
+
+00:40:23.830 --> 00:40:33.650
+that in that BGV like BGV then come to you verify it yes
+
+00:40:35.290 --> 00:40:39.130
+simple yes and many companies will appreciate it like
+
+00:40:39.130 --> 00:40:42.010
+believe me many teams are going to appreciate it yes sir yes
+
+00:40:42.010 --> 00:40:46.330
+sir PK is saying trust yourself last 20 years I did it
+
+00:40:46.330 --> 00:40:51.190
+several times yes obviously we all did it right PF and bank
+
+00:40:51.190 --> 00:40:53.710
+statement yeah maybe they are going to ask you for the last
+
+00:40:53.710 --> 00:40:58.510
+three months of salary slip sometime right sometime they are
+
+00:40:58.510 --> 00:41:02.250
+going to ask you and maybe like a bank statement that salary
+
+00:41:02.250 --> 00:41:07.730
+slip and bank statement match or not yes sir my side is over
+
+00:41:07.730 --> 00:41:11.290
+you can come okay yeah Ranjit sir I think you have a
+
+00:41:11.290 --> 00:41:18.130
+question please yeah actually I hmm in my case for example
+
+00:41:18.810 --> 00:41:26.410
+for example I for the for about two years okay I am I was
+
+00:41:26.410 --> 00:41:29.450
+out of work okay let us say because I was retired or
+
+00:41:29.450 --> 00:41:34.810
+whatever and I opened my own start startup company and so
+
+00:41:34.810 --> 00:41:39.450
+that means I can put all my experience into that anyhow you
+
+00:41:39.450 --> 00:41:44.930
+are not going to apply for the job right? well believe me I
+
+00:41:44.930 --> 00:41:49.490
+will okay okay so in that case yes like see like any anyone
+
+00:41:49.490 --> 00:41:52.990
+is going to onboard you as a mentor by the way right anyhow
+
+00:41:52.990 --> 00:41:55.370
+your position will be very very different your position is
+
+00:41:55.370 --> 00:42:00.330
+not going to be like a regular one basically so yeah like
+
+00:42:00.330 --> 00:42:03.930
+you can so sir like I will suggest you if you are literally
+
+00:42:03.930 --> 00:42:07.670
+willing to work so maybe try to like you know represent
+
+00:42:07.670 --> 00:42:12.570
+yourself as a guide as a mentor in that manner so that you
+
+00:42:12.570 --> 00:42:15.830
+know company will be able to like onboard you as in that way
+
+00:42:16.610 --> 00:42:19.110
+basically because many company does that yeah many company
+
+00:42:19.110 --> 00:42:21.290
+does that actually especially if I talk about the startups
+
+00:42:21.290 --> 00:42:23.990
+right because startups majority of the founders will be like
+
+00:42:23.990 --> 00:42:27.030
+you know they will be having a very less experience in terms
+
+00:42:27.030 --> 00:42:29.350
+of market in terms of technology in terms of client even
+
+00:42:29.350 --> 00:42:33.770
+right obviously they are going to consider you as a like a
+
+00:42:33.770 --> 00:42:37.990
+reference who can come and fill in fill in those gaps so
+
+00:42:37.990 --> 00:42:42.510
+basically as a as a consultant so that as an advisor to a
+
+00:42:42.510 --> 00:42:46.470
+company exactly as an advisor as a mentor yes and almost
+
+00:42:46.470 --> 00:42:49.530
+almost every every startup like you know onboard some of the
+
+00:42:49.530 --> 00:42:55.330
+mentors yeah yeah I mean that's what I I intend most of the
+
+00:42:55.330 --> 00:43:00.270
+time when I talk to the company I talk as an advisor yeah
+
+00:43:00.270 --> 00:43:07.250
+exactly and now the I used to lead TCS teams okay but that
+
+00:43:07.250 --> 00:43:13.150
+was about maybe more than 10 11 years ago 2015 yeah means 10
+
+00:43:13.150 --> 00:43:20.630
+years ago so but then I left TCS because TCS was not obeying
+
+00:43:20.630 --> 00:43:26.690
+the law of the land basically United States okay so so then
+
+00:43:26.690 --> 00:43:31.090
+but I have been getting lots of calls from TCS okay to lead
+
+00:43:31.090 --> 00:43:31.990
+their projects okay
+
+00:43:34.790 --> 00:43:38.010
+so as far as for them and it is their I believe rule that
+
+00:43:38.010 --> 00:43:42.190
+they don't hire people who worked for them before so do you
+
+00:43:42.190 --> 00:43:45.570
+think I think I think that rule as far as I know because I
+
+00:43:45.570 --> 00:43:48.290
+am aware about these kind of rules so as far as I know I
+
+00:43:48.290 --> 00:43:50.310
+think it will be applicable just for a couple of years if
+
+00:43:50.310 --> 00:43:52.530
+it's been 10 years more than one ticket I don't think that's
+
+00:43:52.530 --> 00:43:57.190
+it will be applicable even legally Really? Yeah. Generally
+
+00:43:57.190 --> 00:43:59.150
+this is what happens because everything comes with the
+
+00:43:59.150 --> 00:44:01.490
+tenure, right? Everything comes with the expiry date, even
+
+00:44:01.490 --> 00:44:04.270
+these rules. And I think I'm well aware about these rules,
+
+00:44:04.410 --> 00:44:07.170
+right? So maybe you can check that with the, like a
+
+00:44:07.170 --> 00:44:09.550
+compliance team or maybe with the legal or HR team, right?
+
+00:44:09.570 --> 00:44:13.270
+Whoever will answer, but yeah, I think like after a couple
+
+00:44:13.270 --> 00:44:15.630
+of years and max to max for three to five years, they try to
+
+00:44:15.630 --> 00:44:20.130
+put up some sort of, you know, these kinds of regulations. I
+
+00:44:20.130 --> 00:44:24.390
+mean, it's, it's interesting with this TCS, what happened
+
+00:44:24.390 --> 00:44:29.230
+was like, I had a call from the government of the United
+
+00:44:29.230 --> 00:44:34.710
+States for this, for my green card, from green card. Yes.
+
+00:44:34.750 --> 00:44:38.330
+Yeah. Yeah. For the green card. But this TCS will not issue
+
+00:44:38.330 --> 00:44:43.030
+the job letter. Did they say we can, we can issue the job
+
+00:44:43.030 --> 00:44:45.490
+letter, we are working, but we will not write the salary.
+
+00:44:46.710 --> 00:44:51.950
+Okay. Okay. And the government needed this salary, okay,
+
+00:44:52.270 --> 00:44:55.670
+that how much they are paying me, but they, but they
+
+00:44:55.670 --> 00:44:59.030
+refused. They said, no, we will not write the salary. But
+
+00:44:59.030 --> 00:45:04.410
+then they, then I involved the vice-president of a bank
+
+00:45:04.410 --> 00:45:11.750
+where I was working for them. And TCS did one month for me,
+
+00:45:11.830 --> 00:45:15.510
+basically I went back and forth with their lawyers. But then
+
+00:45:15.510 --> 00:45:17.670
+when I complained to the bank where I was working for them,
+
+00:45:17.670 --> 00:45:17.970
+they said, no, we just going to hire so many lawyers. And
+
+00:45:17.970 --> 00:45:17.970
+then I ended up leaving the company because your bank
+
+00:45:17.970 --> 00:45:21.290
+manager is leading them and, and the bank VP said, okay,
+
+00:45:21.350 --> 00:45:24.870
+give me five minutes. Hmm. And, and, and it gets about
+
+00:45:24.870 --> 00:45:30.270
+within one hour, I got the job letter from from TCS because
+
+00:45:30.270 --> 00:45:33.150
+he called both of my boss of my boss of our boss basically
+
+00:45:33.150 --> 00:45:41.050
+said that, yeah, I mean, and then when they go the letter, I
+
+00:45:41.050 --> 00:45:45.630
+left the company the next day because they didn't follow the
+
+00:45:45.630 --> 00:45:48.970
+law of the land. That was very trusting. yeah that happens
+
+00:45:48.970 --> 00:45:53.010
+this kind of happens all the time in a company yeah but I
+
+00:45:53.010 --> 00:45:57.530
+love your projects the way you teach and I would provide the
+
+00:45:57.530 --> 00:46:00.810
+information also just believe me if anyone is going to
+
+00:46:00.810 --> 00:46:03.330
+follow whatever task which I am giving and whatever I am
+
+00:46:03.330 --> 00:46:06.590
+teaching right no one can stop you from any job role and if
+
+00:46:06.590 --> 00:46:08.770
+you are not doing it then obviously no one can help you at
+
+00:46:08.770 --> 00:46:13.650
+the same point of time so actually I will be looking for
+
+00:46:13.650 --> 00:46:18.030
+what not basically money main thing it is more for to keep
+
+00:46:18.030 --> 00:46:23.870
+myself busy and active so that's very important then there
+
+00:46:23.870 --> 00:46:30.030
+are many companies who can onboard you yeah and because I
+
+00:46:30.030 --> 00:46:36.050
+write programs on daily basis believe me I write lots of
+
+00:46:36.050 --> 00:46:43.490
+code myself also and I am all the time working on my so many
+
+00:46:43.490 --> 00:46:47.330
+different projects that I have I have got so many ideas and
+
+00:46:47.330 --> 00:46:54.570
+I want work on one believe me one is going to work it's more
+
+00:46:54.570 --> 00:47:00.830
+than enough yeah so question from thank you sir I am very
+
+00:47:00.830 --> 00:47:05.770
+much confused I should be targeting I worked on more than so
+
+00:47:05.770 --> 00:47:10.590
+PK if you can I think you are on like unmute by the way yeah
+
+00:47:10.590 --> 00:47:13.950
+we can talk so basically see you have worked in 15
+
+00:47:13.950 --> 00:47:16.590
+technology or 20 technology don't try to mention remove each
+
+00:47:16.590 --> 00:47:18.890
+and everything because obviously if you have like a 20 year
+
+00:47:18.890 --> 00:47:21.310
+of experience so you must have worked in a very very old one
+
+00:47:21.310 --> 00:47:26.390
+legacy and then must be to our latest one and it sometime we
+
+00:47:26.390 --> 00:47:30.130
+feel proud right that mention everything but the ATS system
+
+00:47:30.130 --> 00:47:32.490
+which is going to select your resume or the person who will
+
+00:47:32.490 --> 00:47:35.430
+be looking into your resume they will get confused they are
+
+00:47:35.430 --> 00:47:38.130
+looking for something which is relevant to their job
+
+00:47:38.130 --> 00:47:40.750
+description right because they are there trying to fill up
+
+00:47:40.750 --> 00:47:45.070
+that particular position so my sincere advice to everyone
+
+00:47:45.070 --> 00:47:48.310
+that it's completely fine you have worked into XYG you know
+
+00:47:48.310 --> 00:47:51.310
+hundreds of technology that's completely fine right but from
+
+00:47:51.310 --> 00:47:56.370
+an interview perspective try to confuse your interviewer or
+
+00:47:56.370 --> 00:48:00.590
+your HR as less as possible because if you are going to
+
+00:48:00.590 --> 00:48:03.050
+mention more it simply means that that you are confusing
+
+00:48:03.050 --> 00:48:07.950
+more and especially you are confusing more to an ATS system
+
+00:48:07.950 --> 00:48:11.090
+right there is a very high chance that no human will look
+
+00:48:11.090 --> 00:48:13.490
+into your resume for the very first time it's a system which
+
+00:48:13.490 --> 00:48:15.490
+will look into the resume and if system is not there then
+
+00:48:15.490 --> 00:48:15.510
+you are not going to be able to do anything and if the
+
+00:48:15.510 --> 00:48:18.130
+system is looking into the resume it is not going to accept
+
+00:48:18.130 --> 00:48:21.190
+it by the way it is not going to appreciate those like a
+
+00:48:21.190 --> 00:48:25.110
+legacy technologies so just a sincere advice PK ji for you
+
+00:48:25.110 --> 00:48:29.190
+right so that you know remove everything just mention our
+
+00:48:29.190 --> 00:48:31.490
+latest 3 to 4 and say that okay fine I have 20 years of
+
+00:48:31.490 --> 00:48:37.750
+experience crisp precise sort sir should I put 20 or 10 no
+
+00:48:37.750 --> 00:48:41.250
+no no you put 20 see if you have 20 years of experience then
+
+00:48:41.250 --> 00:48:44.070
+obviously put 20 okay there should not be any shortcoming in
+
+00:48:44.070 --> 00:48:45.490
+that it should also be a full double suck but that doesn't
+
+00:48:45.490 --> 00:48:49.210
+mean write a full project of 20 years you should not have a
+
+00:48:49.210 --> 00:48:52.170
+resume of 20 pages and it should not be about 4-5 pages make
+
+00:48:52.170 --> 00:48:55.070
+it crisp look I have 20 years of experience that is
+
+00:48:55.070 --> 00:48:59.150
+completely fine in a recent like last 3 to 4 year I have
+
+00:48:59.150 --> 00:49:02.130
+been walking into this like cutting edge technology and I am
+
+00:49:02.130 --> 00:49:04.430
+eligible for this position you have to prove only this much
+
+00:49:04.430 --> 00:49:09.170
+in your resume TechStack are you going to forward any of
+
+00:49:09.170 --> 00:49:13.850
+those it should be completely latest Data science AI ML NLP
+
+00:49:13.850 --> 00:49:15.770
+games and graphics analysisrée data revision, generative AI
+
+00:49:15.770 --> 00:49:18.610
+and all the tech stack that comes in it, some tech stack
+
+00:49:18.610 --> 00:49:21.110
+from a database side, some tech stack from a cloud side you
+
+00:49:21.110 --> 00:49:23.810
+have to mention, some tech stack from an agent side you have
+
+00:49:23.810 --> 00:49:26.030
+to mention, some tech stack from a vector side you have to
+
+00:49:26.030 --> 00:49:28.470
+mention, some tech stack you have to mention from an LLM
+
+00:49:28.470 --> 00:49:33.470
+side and a models. That's it. And the last tech stack, the
+
+00:49:33.470 --> 00:49:35.430
+last 10 years one, you don't have to put that. Absolutely.
+
+00:49:36.190 --> 00:49:39.030
+If it is not relevant or legacy, you don't have to put that
+
+00:49:39.030 --> 00:49:45.990
+at all because the system will stop your resume. Okay. Yeah.
+
+00:49:46.590 --> 00:49:50.990
+Makes sense. Yeah. Yeah. So Jatin is saying I'm having 10
+
+00:49:50.990 --> 00:49:52.790
+years experience. I was able to make a transition four years
+
+00:49:52.790 --> 00:49:54.490
+back in data science because of Ironman. Okay. That's
+
+00:49:54.490 --> 00:49:56.590
+amazing. Yeah. I know you Jatin by the way. Yeah. I think we
+
+00:49:56.590 --> 00:49:59.050
+are connected. How should I make my resume? First six years
+
+00:49:59.050 --> 00:50:03.550
+was Informatics developer. So when Jatin, when you are
+
+00:50:03.550 --> 00:50:05.630
+trying to make a resume now, right with the 10 years of
+
+00:50:05.630 --> 00:50:09.370
+experience. So in that case, try to convert four to five
+
+00:50:09.370 --> 00:50:11.150
+years of experience. You already have a data science
+
+00:50:11.150 --> 00:50:13.750
+experience. Right. So again, data, generative AI is nothing.
+
+00:50:13.890 --> 00:50:16.370
+So basically it's just an addition on top of it. So just try
+
+00:50:16.370 --> 00:50:18.830
+to showcase that since last like a one, one and a half year.
+
+00:50:18.930 --> 00:50:21.130
+So I've been working into Gen AI based project and
+
+00:50:21.130 --> 00:50:23.250
+technically in a data science, you have been working into
+
+00:50:23.250 --> 00:50:26.370
+data science. I think it will be very much easy for you. And
+
+00:50:26.370 --> 00:50:30.750
+it is just a, you know, uh, again, same thing you have to do
+
+00:50:30.750 --> 00:50:35.070
+that you have done like four years back. Yeah. Senior, mid
+
+00:50:35.070 --> 00:50:37.510
+-senior, principal. PK ji aapke liye toh principal hi hoga.
+
+00:50:37.590 --> 00:50:47.290
+I mean senior hoga aapke liye. Okay. Thank you. Okay. So if
+
+00:50:47.290 --> 00:50:50.270
+there is no question for me today, so I will be waiting
+
+00:50:50.270 --> 00:50:56.590
+inside a group and guys on a very, very serious note, do
+
+00:50:56.590 --> 00:51:00.990
+this, right? If you are serious about a next switch, it
+
+00:51:00.990 --> 00:51:03.210
+doesn't matter. Maybe you are, you are trying to do a switch
+
+00:51:03.210 --> 00:51:05.790
+maybe after six months. It's okay. Right. It's completely
+
+00:51:05.790 --> 00:51:11.030
+fine. But do these things now because many of us just keep
+
+00:51:11.030 --> 00:51:13.590
+on doing a procrastination. I'll do it tomorrow. I'll do it
+
+00:51:13.590 --> 00:51:15.290
+tomorrow. I'll do it tomorrow. And believe me, there is no
+
+00:51:15.290 --> 00:51:18.970
+tomorrow. Everything is today. Right. So do it. And then
+
+00:51:18.970 --> 00:51:24.990
+like, uh, send it to me. I will be able to verify if you are
+
+00:51:24.990 --> 00:51:27.610
+not sending. So obviously you will not be able to get a
+
+00:51:27.610 --> 00:51:30.590
+feedback from my side. So obviously you will not be able to
+
+00:51:30.590 --> 00:51:34.530
+make any kind of a connection. Yeah. I think solves iconic.
+
+00:51:36.610 --> 00:51:41.730
+Go ahead with the question. Yeah. So my question is that I
+
+00:51:41.730 --> 00:51:47.210
+read. I recently joined a company. So where I, I have been
+
+00:51:47.210 --> 00:51:50.630
+joined as software developer. So the tech stack is.net and
+
+00:51:50.630 --> 00:51:55.730
+the backend is C-sharp with the SQL server. So I'm very much
+
+00:51:55.730 --> 00:51:59.190
+confused between C-sharp and Python, like where to start
+
+00:51:59.190 --> 00:52:02.410
+with. And because I'm very much interested on the JNI side
+
+00:52:02.410 --> 00:52:06.810
+rather than on C-sharp. And even like a majority of
+
+00:52:06.810 --> 00:52:09.690
+companies will be looking for a Python in some of the JD,
+
+00:52:09.730 --> 00:52:12.010
+you will be able to see that there is a, you know,
+
+00:52:12.030 --> 00:52:14.890
+programmatically. You can try to mention C-sharp or you can
+
+00:52:14.890 --> 00:52:17.670
+try to mention other framework, but yeah, majority will be
+
+00:52:17.670 --> 00:52:19.910
+interested in a Python. So you are aware about Python or
+
+00:52:19.910 --> 00:52:25.210
+you're completely like a blank about Python. I'm aware about
+
+00:52:25.210 --> 00:52:28.390
+the Python. Like I'm clear with the fundamentals. Then,
+
+00:52:28.490 --> 00:52:30.930
+then, then go ahead with it. But yeah, please try to mention
+
+00:52:30.930 --> 00:52:35.190
+Python. No other like, uh, programming languages. But C
+
+00:52:35.190 --> 00:52:38.410
+-sharp is very new to me and my day to day work involves C
+
+00:52:38.410 --> 00:52:42.070
+-sharp. So how can I switch in between C-sharp and Python on
+
+00:52:42.070 --> 00:52:45.430
+my day to day? Like I want to enhance my Python skills very
+
+00:52:45.430 --> 00:52:49.830
+much in depth so that I can build Work on three to four
+
+00:52:49.830 --> 00:52:53.030
+project. Python will be done because again, Python is one of
+
+00:52:53.030 --> 00:52:55.190
+the easiest language. Easier than C-sharp I would say.
+
+00:52:55.290 --> 00:52:58.110
+Right. Very much easier than I think you are already aware
+
+00:52:58.110 --> 00:53:01.130
+about. Right. So just start working on three to four
+
+00:53:01.130 --> 00:53:03.810
+projects. But yeah, first of all, complete this DPR. For
+
+00:53:03.810 --> 00:53:05.330
+that, you don't have to write the code. You have to write
+
+00:53:05.330 --> 00:53:10.510
+some lines. Yeah. I think that will be the starting point.
+
+00:53:11.550 --> 00:53:15.710
+Yeah. Yeah. Okay. So yeah. Yeah. Nagendra, go ahead.
+
+00:53:18.860 --> 00:53:25.680
+Yeah, I should, I should. Yeah. I, I, I, uh, yeah, go ahead
+
+00:53:25.680 --> 00:53:25.900
+please.
+
+00:53:29.520 --> 00:53:36.580
+Uh, sorry, Nagendra, I think. Yeah, uh, actually, uh, I'm
+
+00:53:36.580 --> 00:53:40.460
+from the business and list background. Um, I do know Python.
+
+00:53:40.640 --> 00:53:45.960
+Um, I'm working on the XL report from the, um, and much not,
+
+00:53:45.960 --> 00:53:50.520
+not ever. I do know Python and from the statistics
+
+00:53:50.520 --> 00:53:57.080
+background, I have joined this Generate AI program and
+
+00:53:57.080 --> 00:54:01.240
+looking into these videos, how can I transform this into
+
+00:54:01.240 --> 00:54:07.840
+Generate AI, even I have placed my resume into the Nauka
+
+00:54:07.840 --> 00:54:13.360
+reporter and I'm not getting calls, even my current
+
+00:54:13.360 --> 00:54:17.620
+organization's notice period is three months, so due to
+
+00:54:17.620 --> 00:54:21.180
+that, might be that one of the reason I am unable to get the
+
+00:54:21.180 --> 00:54:24.820
+calls. Yeah, yeah, yeah, there is a huge possibility, so
+
+00:54:24.820 --> 00:54:26.880
+because you have recently joined a previous organization,
+
+00:54:27.060 --> 00:54:29.820
+right, so maybe system and again, there is a possibility
+
+00:54:29.820 --> 00:54:33.400
+that your resume is not aligned, so first of all, like write
+
+00:54:33.400 --> 00:54:37.160
+this one, yeah, work on this task, then let's talk about the
+
+00:54:37.160 --> 00:54:42.340
+next, yeah, one thing at a time, fine, just do it and again,
+
+00:54:42.420 --> 00:54:45.100
+if you have a question that what I will write. Write the
+
+00:54:45.100 --> 00:54:50.140
+exact same thing which I have discussed, simple, for now,
+
+00:54:50.260 --> 00:55:05.120
+yeah, okay, yeah, Mithun please go ahead. Yeah, I think your
+
+00:55:05.120 --> 00:55:08.940
+voice is not audible properly, maybe you can check your mic.
+
+00:55:12.740 --> 00:55:16.600
+Yeah, better, little better. Yeah, okay, so basically, I'm
+
+00:55:16.600 --> 00:55:19.880
+having four years of experience, so previously I was working
+
+00:55:19.880 --> 00:55:23.060
+on the computer vision field, so in the last two years, I'm
+
+00:55:23.060 --> 00:55:26.240
+not working due to some issue, I have to take the career
+
+00:55:26.240 --> 00:55:30.000
+break, how can I justify that one, and recently I've started
+
+00:55:30.000 --> 00:55:33.720
+the generative AI. Okay, okay. Yeah, that's my question.
+
+00:55:34.100 --> 00:55:37.180
+Sorry, can you repeat it once again? Yeah, so how can I
+
+00:55:37.180 --> 00:55:41.000
+justify my two years of gap, and recently I've started the
+
+00:55:41.000 --> 00:55:43.120
+generative AI. So I'm looking for a transition from the
+
+00:55:43.120 --> 00:55:46.700
+computer vision to generative AI. That's okay, computer
+
+00:55:46.700 --> 00:55:48.340
+vision and generative AI is not a big deal, it's not a
+
+00:55:48.340 --> 00:55:51.440
+transition, it's a next step. So anyone who is working into
+
+00:55:51.440 --> 00:55:53.320
+any of these fields like machine learning, deep learning,
+
+00:55:53.460 --> 00:55:56.420
+computer vision, NLP, generative AI is not a transition
+
+00:55:56.420 --> 00:56:00.920
+basically, it's just like going for like a next job, that's
+
+00:56:00.920 --> 00:56:03.960
+it. It's going to be like a normal job switch, this is how
+
+00:56:03.960 --> 00:56:07.300
+people are going to see it. Okay, so basically, how can I
+
+00:56:07.300 --> 00:56:10.920
+justify the two year gap, or career gap? Two year of career
+
+00:56:10.920 --> 00:56:13.880
+gap you had? So like, you have a recent gap or you have a
+
+00:56:13.880 --> 00:56:17.180
+gap before joining this current company? No, actually not
+
+00:56:17.180 --> 00:56:21.340
+working anywhere right now. Okay since last two year? Yeah,
+
+00:56:21.400 --> 00:56:23.660
+since last two year. So you must be involved into something,
+
+00:56:23.760 --> 00:56:30.620
+right? Not technically as involved, mostly ideal. Okay,
+
+00:56:30.620 --> 00:56:32.900
+okay, then it will be difficult.
+
+00:56:35.560 --> 00:56:40.720
+Okay, any suggestion from your side? Suggestion wise, you
+
+00:56:40.720 --> 00:56:43.180
+have to manage this two year because it will be tough for
+
+00:56:43.180 --> 00:56:46.740
+you. To you know, explain somehow you have to like, you
+
+00:56:46.740 --> 00:56:51.140
+know, you have to build a story, maybe you are not well,
+
+00:56:51.360 --> 00:56:55.580
+maybe you are taking care of maybe your like, parental
+
+00:56:55.580 --> 00:57:02.440
+things, or maybe like, as you are very young, so something,
+
+00:57:02.560 --> 00:57:04.540
+something like that you have to mention otherwise, like
+
+00:57:04.540 --> 00:57:09.820
+people, people will like, not allow you to join the company.
+
+00:57:11.020 --> 00:57:17.480
+So Okay. Okay. So, Go for the startups, right? Startups and
+
+00:57:17.480 --> 00:57:19.380
+say that, okay, fine. So I was working into my some of my
+
+00:57:19.380 --> 00:57:21.680
+personal product, the other part of which I was trying, it
+
+00:57:21.680 --> 00:57:24.740
+has not worked. And I tried a lot, I was able to get a
+
+00:57:24.740 --> 00:57:27.020
+couple of customers. And all those things I was doing a
+
+00:57:27.020 --> 00:57:29.100
+freelancing, freelancing is one of the best justification
+
+00:57:29.100 --> 00:57:32.800
+that you can do. Even I'm going to say for the freelancing,
+
+00:57:32.920 --> 00:57:35.220
+will they ask for the projects and the clients? No, no, no.
+
+00:57:35.300 --> 00:57:38.260
+So because in case of freelancing, they can't do a BGV, they
+
+00:57:38.260 --> 00:57:42.740
+can't do the verification. No one does that. Okay, great.
+
+00:57:42.900 --> 00:57:44.660
+So, I understand. So I had experience with the freelancing,
+
+00:57:44.760 --> 00:57:46.940
+one project I've done with the freelancing, so I can mention
+
+00:57:46.940 --> 00:57:49.660
+that one. Exactly. Yeah. So just try to mention that because
+
+00:57:49.660 --> 00:57:52.360
+there won't be any kind of a BGV for freelancing. Plus, you
+
+00:57:52.360 --> 00:57:54.900
+can say that, okay, I was working into some of my, I was
+
+00:57:54.900 --> 00:57:57.540
+trying simple, say that I was trying to build some of my
+
+00:57:57.540 --> 00:57:59.800
+product, I was working day and night for that. And
+
+00:57:59.800 --> 00:58:03.960
+parallelly, so I had some sort of a concern at my home, with
+
+00:58:03.960 --> 00:58:07.360
+respect to my parents, because my parents are old, and they
+
+00:58:07.360 --> 00:58:10.380
+need my attention. See at the end of the day, it's just a
+
+00:58:10.380 --> 00:58:13.640
+story, which you're going to sell, right? So try to like,
+
+00:58:13.680 --> 00:58:16.340
+you know, frame the story that, okay, my parents were old,
+
+00:58:16.460 --> 00:58:20.840
+and I had to take care of them, and they were going through
+
+00:58:20.840 --> 00:58:23.860
+some bad phases. So I was with them, and parallelly, I was
+
+00:58:23.860 --> 00:58:27.080
+trying to build my own startup, where I have done my time
+
+00:58:27.080 --> 00:58:29.540
+and money investment, everything, plus I have even done a
+
+00:58:29.540 --> 00:58:32.120
+freelancing. So in that bit, two year gap, you will be able
+
+00:58:32.120 --> 00:58:37.160
+to fill, but that story should look genuine. Genuine. So
+
+00:58:37.160 --> 00:58:40.940
+yeah, so just just try to, you know, re-iterate or rehearse
+
+00:58:40.940 --> 00:58:42.760
+those, that story again, because, again and again and again,
+
+00:58:42.900 --> 00:58:46.940
+at least like 10 times, before going for an interview. Yeah,
+
+00:58:46.940 --> 00:58:52.000
+got it. Thank you. Yeah. Sir ke paas har marji ki dava hai,
+
+00:58:52.040 --> 00:58:55.300
+storytelling top notch. Story kahaan hi bichti hai, duniya
+
+00:58:55.300 --> 00:58:57.640
+mein. You are going to sell the story, right? Interview is
+
+00:58:57.640 --> 00:59:00.640
+all about selling a story, selling yourself, right? So
+
+00:59:00.640 --> 00:59:02.940
+basically, everyone is supposed to be a salesman at the end
+
+00:59:02.940 --> 00:59:05.420
+of the day. And whenever you go and give an interview, you
+
+00:59:05.420 --> 00:59:08.100
+sell, right? Whenever I'm coming inside the class, I'm
+
+00:59:08.100 --> 00:59:10.720
+talking about topic, I used to sell my classes. Whenever I
+
+00:59:10.720 --> 00:59:14.640
+go for an investment, right? Whenever I'm raising a fund, I
+
+00:59:14.640 --> 00:59:17.540
+used to sell the story of my company, right? We all sell
+
+00:59:17.540 --> 00:59:20.460
+actually, we all sell. So technically, we all are salesmen,
+
+00:59:20.600 --> 00:59:22.560
+doesn't matter in which domain you are working, by the way.
+
+00:59:24.480 --> 00:59:29.760
+Right? Just if I say that I was making more money than full
+
+00:59:29.760 --> 00:59:32.860
+time job in a freelancing, so never felt working in the, and
+
+00:59:32.860 --> 00:59:36.180
+PK, if someone is going to give this answer, right? Your HR
+
+00:59:36.180 --> 00:59:38.680
+or anyone who is like, or your interview will feel offended,
+
+00:59:38.760 --> 00:59:42.000
+they will never hire you. So don't try to offend them.
+
+00:59:44.790 --> 00:59:50.030
+Okay. Yeah. Okay, fine, guys. So I'll be just waiting for
+
+00:59:50.030 --> 00:59:52.990
+you to write a DPR, start working on that on a serious note.
+
+00:59:53.090 --> 00:59:55.370
+And it's just once in a lifetime that you have to do right
+
+00:59:55.370 --> 00:59:57.950
+so that you can chillax for next couple of years. With that,
+
+00:59:57.970 --> 01:00:00.290
+thank you so much, everyone. Take care and see you again
+
+01:00:00.290 --> 01:00:05.270
+next Monday. But I have given you a task before coming to my
+
+01:00:05.270 --> 01:00:09.030
+class, look into each and every question which I have shared
+
+01:00:09.030 --> 01:00:13.450
+a 200 question, right? I have shared. Revise it. Come to the
+
+01:00:13.450 --> 01:00:15.950
+class. And then come back. And then discuss it with me when
+
+01:00:15.950 --> 01:00:18.310
+I'm going to give an answer for that particular question.
+
+01:00:18.770 --> 01:00:22.330
+Ask me a cross question as much as you can. I'm leaving it
+
+01:00:22.330 --> 01:00:25.870
+up to you, right? So you will be able to ask more question
+
+01:00:25.870 --> 01:00:28.870
+if you have done if you have done your homework. And if you
+
+01:00:28.870 --> 01:00:30.950
+have, if you're not going to do your homework, then
+
+01:00:30.950 --> 01:00:32.850
+obviously you will not be able to ask me a cross question,
+
+01:00:32.970 --> 01:00:36.350
+right? So be ready for like a cross question and then be
+
+01:00:36.350 --> 01:00:38.650
+ready for my answer with that thing. So how to handle career
+
+01:00:38.650 --> 01:00:41.310
+transition, but working with the ML for last two years. So
+
+01:00:41.310 --> 01:00:43.470
+those who are working into machine learning, deep learning,
+
+01:00:43.550 --> 01:00:46.470
+computer vision, all those things. You are technically not
+
+01:00:46.470 --> 01:00:50.350
+doing a transition. You are just switching a job. It's not
+
+01:00:50.350 --> 01:00:53.330
+called as transition, by the way. Yeah. So don't worry. You
+
+01:00:53.330 --> 01:00:56.910
+don't have to build some separate story. Sell the same story
+
+01:00:56.910 --> 01:01:01.310
+that the story that you are leaving as of now. Yeah. Fine.
+
+01:01:01.470 --> 01:01:03.810
+With that, thank you so much. If you have any kind of
+
+01:01:03.810 --> 01:01:07.790
+questions which needs my attention, put it inside the group.
+
+01:01:07.890 --> 01:01:10.490
+Yeah. Put it inside the group. Tag me. I'll try my best to
+
+01:01:10.490 --> 01:01:13.210
+give an answer inside the group itself. So thank you so
+
+01:01:13.210 --> 01:01:15.410
+much, everyone. Take care. Bye. See you again next Monday.
+

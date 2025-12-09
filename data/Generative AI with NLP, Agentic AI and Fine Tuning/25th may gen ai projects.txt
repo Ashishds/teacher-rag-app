@@ -1,0 +1,5375 @@
+WEBVTT
+
+00:00:01.650 --> 00:00:08.310
+okay so let's wait for two more minutes and then let's start
+
+00:00:08.310 --> 00:00:13.580
+the class yeah so I believe you all have liked the project
+
+00:00:13.580 --> 00:00:16.660
+that I have discussed yesterday and even today I am going to
+
+00:00:16.660 --> 00:00:19.960
+talk about the project so hopefully all of you are going to
+
+00:00:19.960 --> 00:00:24.580
+like it a lot even this particular project even today is
+
+00:00:24.580 --> 00:00:27.280
+going to be very useful so today I am going to talk about
+
+00:00:27.280 --> 00:00:35.380
+two good project and to a very very small project as per
+
+00:00:35.380 --> 00:00:39.440
+your syllabus so I'm going to talk about something with
+
+00:00:39.440 --> 00:00:43.560
+respect to our memory so like how we can try to like build a
+
+00:00:43.560 --> 00:00:47.620
+memory how we can try to pass a memory to a system so that
+
+00:00:47.620 --> 00:00:51.080
+based on the previous conversation and based on the memory
+
+00:00:51.080 --> 00:00:54.580
+that it has built it will be able to give you a response and
+
+00:00:54.580 --> 00:00:58.320
+reply so recently you must have seen that everyone is trying
+
+00:00:58.320 --> 00:01:00.880
+to implement our memory part right so whether it's a chat
+
+00:01:00.880 --> 00:01:04.640
+GPT or maybe someone else and even if you will go and chat
+
+00:01:04.640 --> 00:01:08.860
+with yuri so it try to like give your answers with respect
+
+00:01:08.860 --> 00:01:13.380
+to maybe your name and even it is able to memorize some of
+
+00:01:13.380 --> 00:01:17.720
+the things from your past conversation so how this memory
+
+00:01:17.720 --> 00:01:20.580
+system is going to work that is something that we are going
+
+00:01:20.580 --> 00:01:25.910
+to build we can we are going to test it i made a simple
+
+00:01:25.910 --> 00:01:28.970
+project with that yeah so then go and share with the entire
+
+00:01:28.970 --> 00:01:32.770
+world maybe into your group you can try to share maybe over
+
+00:01:32.770 --> 00:01:35.150
+a social media you can try to share maybe you can try to
+
+00:01:35.150 --> 00:01:39.290
+share your github repository yeah come in selvan okay
+
+00:01:43.770 --> 00:01:45.930
+shall we start now okay
+
+00:01:59.080 --> 00:02:01.920
+couple of people are asking in a group that is class started
+
+00:02:01.920 --> 00:02:04.600
+yeah it's already started okay
+
+00:02:18.400 --> 00:02:22.300
+so let's let's start guys uh so let me share my screen i
+
+00:02:22.300 --> 00:02:26.500
+believe my screen is visible to all of you and here it goes
+
+00:02:26.500 --> 00:02:37.730
+where is my browser okay so you run and generative ai this
+
+00:02:37.730 --> 00:02:46.450
+is your batch generative ai with nlp okay now so guys uh
+
+00:02:46.450 --> 00:02:50.210
+what we are going to do today is uh that let me show you
+
+00:02:50.210 --> 00:02:55.890
+first uh yeah so this memory enhanced chatbot we have
+
+00:02:55.890 --> 00:02:58.290
+already discussed right so we are we are going through a
+
+00:02:58.290 --> 00:03:00.970
+label one application as like like a small application
+
+00:03:00.970 --> 00:03:02.970
+basically so memory enhanced chatbot we have already
+
+00:03:02.970 --> 00:03:08.830
+discussed and then we have discussed this sql part so this
+
+00:03:08.830 --> 00:03:13.890
+this particular part is done and we have even talked about a
+
+00:03:13.890 --> 00:03:18.870
+basic rag system so where we have connected our uh like a
+
+00:03:18.870 --> 00:03:22.130
+vector databases so we have we have even gone through this
+
+00:03:22.130 --> 00:03:25.730
+particular part so in my today's class what we are going to
+
+00:03:25.730 --> 00:03:30.250
+do is so we'll try to complete this entire section so to
+
+00:03:30.250 --> 00:03:33.890
+complete this entire section this part is already discussed
+
+00:03:33.890 --> 00:03:39.970
+let me change my pain color yeah so this particular part i
+
+00:03:39.970 --> 00:03:42.710
+have already discussed sql powered we have already discussed
+
+00:03:42.710 --> 00:03:47.790
+rag we have already discussed right now so we have to talk
+
+00:03:47.790 --> 00:03:50.950
+about this one we have to talk about this one we have to
+
+00:03:50.950 --> 00:03:54.010
+talk about this one and we have to talk about this one now
+
+00:03:54.010 --> 00:03:58.450
+if i'm going to discuss all of these four in that case level
+
+00:03:58.450 --> 00:04:02.290
+one application will be finished right and uh obviously we
+
+00:04:02.290 --> 00:04:06.170
+all are able to learn something from our rag we all are able
+
+00:04:06.170 --> 00:04:10.550
+to learn something from a vector db we all know now that how
+
+00:04:10.550 --> 00:04:13.730
+we can communicate with the embedding models how we can try
+
+00:04:13.730 --> 00:04:17.210
+to communicate with even a real-time search model we now
+
+00:04:17.210 --> 00:04:20.650
+even know that how i will be able to communicate with any
+
+00:04:20.650 --> 00:04:24.170
+other llms right so the way we are consuming a uri api key
+
+00:04:24.170 --> 00:04:27.450
+in the similar manner i can just go out and i can try to
+
+00:04:27.450 --> 00:04:31.990
+consume an api key from anywhere and yeah so pass all those
+
+00:04:31.990 --> 00:04:35.570
+variables pass all those like required parameters it is it
+
+00:04:35.570 --> 00:04:38.730
+is going to give me a response so this fourth thing i am
+
+00:04:38.730 --> 00:04:44.150
+going to discuss out of this uh this one is very basic uh
+
+00:04:44.150 --> 00:04:47.550
+it's like uh extracting some sort of information from the
+
+00:04:47.550 --> 00:04:50.430
+unsearched data this one is also very basic you can just try
+
+00:04:50.430 --> 00:04:53.990
+to pass any kind of a line to a model and model is smart
+
+00:04:53.990 --> 00:04:56.510
+enough it will be able to like just the sentiment
+
+00:04:56.510 --> 00:05:00.890
+automatically without using any kind of a sentiment based or
+
+00:05:00.890 --> 00:05:03.590
+sentiment analyzer for models right don't have to use any
+
+00:05:03.590 --> 00:05:07.470
+external model just go ahead with the lms so in a very first
+
+00:05:07.470 --> 00:05:10.570
+place i'll be talking about this one so pdf knowledge
+
+00:05:10.570 --> 00:05:15.210
+extraction bot question and sync from a pdf document and
+
+00:05:15.210 --> 00:05:18.890
+here i'm going to show you a memory right which is not
+
+00:05:18.890 --> 00:05:21.370
+mentioned in the syllabus but yeah so i'm going to show you
+
+00:05:21.370 --> 00:05:24.550
+this application but inside this application so i have
+
+00:05:24.550 --> 00:05:27.310
+attached so when i was building this application for you
+
+00:05:27.310 --> 00:05:30.710
+like for this particular class so i have attached a memory
+
+00:05:30.710 --> 00:05:34.430
+part into this one and you all are going to love it
+
+00:05:34.430 --> 00:05:36.790
+basically because this is going to give you a lot of
+
+00:05:36.790 --> 00:05:41.590
+advantage so memory will be added over here even rag will be
+
+00:05:41.590 --> 00:05:45.570
+added over here and even vector database will be added over
+
+00:05:45.570 --> 00:05:49.270
+here in this particular project so memory retrieval
+
+00:05:49.270 --> 00:05:52.610
+augmented generation and a vector db obviously when i say
+
+00:05:52.610 --> 00:05:55.690
+rag so obviously i have to use some sort of a vector
+
+00:05:55.690 --> 00:05:58.850
+database so we are we are going to use it and then we are
+
+00:05:58.850 --> 00:06:02.850
+going to build this application and then even inside this
+
+00:06:02.850 --> 00:06:07.250
+one so we are going to use so this project is basically an
+
+00:06:07.250 --> 00:06:10.610
+extension of this particular project so here with one
+
+00:06:10.610 --> 00:06:14.130
+document we can go and chat and here with a multiple
+
+00:06:14.130 --> 00:06:17.390
+document we can go and chat that's the only difference
+
+00:06:17.390 --> 00:06:21.050
+between this project and this project so this project is
+
+00:06:21.050 --> 00:06:23.610
+going to be the extension of the previous one so first I'll
+
+00:06:23.610 --> 00:06:26.530
+be talking about this then I'll be talking about this and
+
+00:06:26.530 --> 00:06:29.550
+then I'll be talking about this and then I will be talking
+
+00:06:29.550 --> 00:06:32.650
+about this this too is not going to take much of time even
+
+00:06:32.650 --> 00:06:35.870
+you guys can do it but yeah so as it's a part of syllabus so
+
+00:06:35.870 --> 00:06:38.010
+it's my responsibility to talk about these things in a live
+
+00:06:38.010 --> 00:06:41.710
+class itself so I'm going to discuss all of these things so
+
+00:06:41.710 --> 00:06:44.670
+shall we start now guys I believe agenda is clear to all of
+
+00:06:44.670 --> 00:06:49.170
+us yeah so we are we are going to finish this particular
+
+00:06:49.170 --> 00:06:53.010
+portion in this class and then from next class so we are
+
+00:06:53.010 --> 00:06:56.610
+going to start with a lang chain or lang series you can say
+
+00:06:56.610 --> 00:07:00.310
+and then llama indexes all of those application that has
+
+00:07:00.310 --> 00:07:03.150
+been mentioned over here right so where we are going to use
+
+00:07:03.150 --> 00:07:06.830
+our existing knowledge but here I'm going to teach you that
+
+00:07:06.830 --> 00:07:09.950
+how you can try to build a different different kind of
+
+00:07:09.950 --> 00:07:14.030
+agents how you can try to connect one agent to another agent
+
+00:07:14.030 --> 00:07:17.370
+and then eventually how you will be able to complete a
+
+00:07:17.370 --> 00:07:20.950
+particular task so that is that is something that we are
+
+00:07:20.950 --> 00:07:24.850
+going to start from next week onwards. And all of these
+
+00:07:24.850 --> 00:07:27.230
+applications. Almost all of this application which I'm going
+
+00:07:27.230 --> 00:07:30.230
+to build and which I'm going to show you so I'll make sure
+
+00:07:30.230 --> 00:07:33.830
+that all of these applications should be agentic application
+
+00:07:33.830 --> 00:07:37.570
+in a nature because like people are talking about this
+
+00:07:37.570 --> 00:07:41.010
+agentic AI a lot right and it's not very difficult believe
+
+00:07:41.010 --> 00:07:43.770
+me because we have a framework right we are going to use a
+
+00:07:43.770 --> 00:07:45.950
+crew AI we are going to use a lang chain we are going to use
+
+00:07:45.950 --> 00:07:49.470
+a llama indexes or maybe a lang graph we are going to use
+
+00:07:49.470 --> 00:07:53.030
+and that too with the URI API for embedding and for a chat
+
+00:07:53.030 --> 00:07:57.410
+completion or maybe for a real time search. So it's not very
+
+00:07:57.410 --> 00:08:00.530
+difficult to like a build it but yes once you are going to
+
+00:08:00.530 --> 00:08:04.430
+build a couple of agents by yourself then you will be able
+
+00:08:04.430 --> 00:08:07.690
+to build any kind of agent whichever whichever comes in your
+
+00:08:07.690 --> 00:08:10.590
+plate or in whatever project that you are going to build so
+
+00:08:10.590 --> 00:08:15.790
+that will be the agenda and then we are going to talk about
+
+00:08:15.790 --> 00:08:19.450
+a fine tuning of a model based on the different different
+
+00:08:19.450 --> 00:08:23.170
+parameters right so as per the syllabus like I said so we
+
+00:08:23.170 --> 00:08:26.670
+are going to move as per the syllabus. As simple as that so
+
+00:08:26.670 --> 00:08:30.290
+let's get started with today's class let me close all of
+
+00:08:30.290 --> 00:08:37.600
+this window and let's open up a visual studio code now here
+
+00:08:37.600 --> 00:08:42.900
+file open folder and go to any folder and then here inside
+
+00:08:42.900 --> 00:08:49.860
+my code directory gen AI application is a folder for today I
+
+00:08:49.860 --> 00:08:55.440
+am going to create ok now. So
+
+00:09:11.960 --> 00:09:15.900
+the very first application as I said that we are going to
+
+00:09:15.900 --> 00:09:19.400
+build an application which is going to understand your
+
+00:09:19.400 --> 00:09:24.360
+entire PDF basically you will be able to chat with your PDF
+
+00:09:24.360 --> 00:09:27.320
+you can upload any kind of a document and then with PDF you
+
+00:09:27.320 --> 00:09:31.320
+will be able to chat that is one of the part but along with
+
+00:09:31.320 --> 00:09:35.400
+that so it is going to retain even a conversational memory
+
+00:09:35.840 --> 00:09:38.800
+right it is going to retain a conversational memory. And
+
+00:09:38.800 --> 00:09:42.720
+even from your conversation. So it is it is going to like
+
+00:09:42.720 --> 00:09:45.580
+give you a responses so that is something that we are going
+
+00:09:45.580 --> 00:09:49.720
+to build over here. So the very first part let me open up
+
+00:09:49.720 --> 00:09:56.560
+this scribble ink. So yeah, the very first part that we have
+
+00:09:56.560 --> 00:10:01.060
+to like build over here is that that there will be a client
+
+00:10:01.060 --> 00:10:06.260
+or there will be a UI or entry point you can say UI now from
+
+00:10:06.260 --> 00:10:11.820
+those UI you will be able to upload a PDF. You can upload
+
+00:10:11.820 --> 00:10:14.800
+basically a PDF, you can extend it for any other kind of a
+
+00:10:14.800 --> 00:10:18.160
+document as well maybe Excel sheet maybe for a Word document
+
+00:10:18.160 --> 00:10:20.880
+because at the end of the day, we just have to read out data
+
+00:10:20.880 --> 00:10:24.540
+out of this PDF and all those things, right. So this is
+
+00:10:24.540 --> 00:10:29.800
+something that we are like going to do. Let me Yeah.
+
+00:10:38.400 --> 00:10:43.180
+So there will be a UI which is a client which is going to be
+
+00:10:43.180 --> 00:10:47.040
+the entry point, then there will be like. like I'm going to
+
+00:10:47.040 --> 00:10:51.840
+upload a PDF basically. So upload basically a PDF from here.
+
+00:10:52.260 --> 00:10:57.660
+Now I'm going to read this PDF data, whatever data is
+
+00:10:57.660 --> 00:11:00.600
+available inside this PDF page by page, page by page, page
+
+00:11:00.600 --> 00:11:04.320
+by page, and extract all the information out of this PDF.
+
+00:11:04.520 --> 00:11:10.460
+And then I'm going to create a chunk, basically chunk out of
+
+00:11:10.460 --> 00:11:14.260
+the data, which I'm going to get it from a PDF. So in a
+
+00:11:14.260 --> 00:11:17.760
+small, small chunk, I'm going to basically break all of this
+
+00:11:17.760 --> 00:11:21.600
+data with some sort of a overlapping window so that, uh, you
+
+00:11:21.600 --> 00:11:24.860
+know, so all this chunk will be related to each other. And
+
+00:11:24.860 --> 00:11:28.780
+then once I will be able to do that, I'm going to convert
+
+00:11:28.780 --> 00:11:32.320
+this entire chunk, whatever chunk, which I will be able to
+
+00:11:32.320 --> 00:11:34.700
+build out of the data, which I'm going to read from the PDF
+
+00:11:34.700 --> 00:11:40.800
+into an embeddings, embeddings into an embeddings with the
+
+00:11:40.800 --> 00:11:43.880
+help of URI embedding, basically. So. We have a URI
+
+00:11:43.880 --> 00:11:47.040
+embedding API, and we have a small case model available over
+
+00:11:47.040 --> 00:11:50.160
+here. So we are going to use a URI embedding and we are
+
+00:11:50.160 --> 00:11:54.180
+going to create a embedding of this chunk one by one, one by
+
+00:11:54.180 --> 00:11:58.520
+one. And once my embedding will be available, so I'm going
+
+00:11:58.520 --> 00:12:04.340
+to store it into a vector data base. So VDB, I'm going to
+
+00:12:04.340 --> 00:12:08.400
+store it. Now, once this data will be stored inside of
+
+00:12:08.400 --> 00:12:13.320
+vector DB, right, vector DB. So then what we are going to
+
+00:12:13.320 --> 00:12:16.860
+do? I'm going to do is that whenever you are used again,
+
+00:12:17.020 --> 00:12:21.220
+again, so there will be a UI interface, my user UI interface
+
+00:12:21.220 --> 00:12:25.320
+where you can try to ask a question, same UI interface. I'm
+
+00:12:25.320 --> 00:12:28.000
+going to use this one UI interface so you can ask a
+
+00:12:28.000 --> 00:12:31.500
+question. Now, once you are going to ask a question, so
+
+00:12:31.500 --> 00:12:35.080
+basically a question with respect to the PDF that you have
+
+00:12:35.080 --> 00:12:39.020
+uploaded, simple, not a direct question to a model. So
+
+00:12:39.020 --> 00:12:42.920
+basically the question, which you have like a, whatever PDF,
+
+00:12:43.160 --> 00:12:45.600
+whatever data, which is available in the PDF. So we can try
+
+00:12:45.600 --> 00:12:50.440
+and go ahead with the multiple PDF at a time. So here we can
+
+00:12:50.440 --> 00:12:54.220
+try to ask a question. Now, once I'm going to ask a question
+
+00:12:54.220 --> 00:12:59.920
+system is going to perform a RAG operation plus system is
+
+00:12:59.920 --> 00:13:04.380
+going to build a conversational memory for me, which you
+
+00:13:04.380 --> 00:13:06.700
+will be able to even see that conversational memory, that
+
+00:13:06.700 --> 00:13:09.600
+what is getting inside a conversational memory, each and
+
+00:13:09.600 --> 00:13:13.040
+everything I'm going to show you. So RAG plus memory. So
+
+00:13:13.040 --> 00:13:14.860
+this is the implementation we are going to do. And finally,
+
+00:13:14.980 --> 00:13:21.040
+I will be able to get my response out of this PDF response
+
+00:13:21.040 --> 00:13:25.980
+out of this PDF, right? So this is the flow that we are
+
+00:13:25.980 --> 00:13:29.280
+going to build and around this flow. So we are going to see
+
+00:13:29.280 --> 00:13:33.040
+the code. So is it clear guys, anyone who is having any kind
+
+00:13:33.040 --> 00:13:37.000
+of a question with respect to this flow? Yeah. Anyone,
+
+00:13:37.080 --> 00:13:38.180
+anyone
+
+00:13:44.870 --> 00:13:47.850
+guys who is having like, uh, any, any kind of a question?
+
+00:13:48.550 --> 00:13:50.930
+Anyone? Who is having doubt now
+
+00:13:55.730 --> 00:13:58.950
+again? So this project that I'm going to discuss, so
+
+00:13:58.950 --> 00:14:02.410
+obviously you will be able to use this project in all the
+
+00:14:02.410 --> 00:14:05.150
+LLM based project that you are going to build, or maybe all
+
+00:14:05.150 --> 00:14:09.850
+the RAG based application by using the same context by
+
+00:14:09.850 --> 00:14:13.250
+modifying according to your need and according to your
+
+00:14:13.250 --> 00:14:17.870
+requirement. So now a code is not very difficult, uh, as we
+
+00:14:17.870 --> 00:14:21.530
+all know that, uh, it's a LLM, which is doing the job. So we
+
+00:14:21.530 --> 00:14:24.270
+just have to do the configuration most of the time. Right?
+
+00:14:24.570 --> 00:14:28.130
+So here, uh, first of all, you have to create a requirement
+
+00:14:28.130 --> 00:14:34.710
+dot TXT, R-E-Q-U-I-R-E-M-E-N-T-S dot, dot TXT file. So
+
+00:14:34.710 --> 00:14:37.150
+requirement dot TXT file, you have to create, and then
+
+00:14:37.150 --> 00:14:40.150
+couple of things you have to keep inside a requirement dot
+
+00:14:40.150 --> 00:14:43.790
+TXT. So you have to keep a PDF plumber basically, so that it
+
+00:14:43.790 --> 00:14:47.170
+can help me out in terms of reading out a PDF, right? So
+
+00:14:47.170 --> 00:14:49.990
+this is just a library. Then I'm going to use a vector
+
+00:14:49.990 --> 00:14:53.630
+database wise, a Facebook AI semantic search. Now you can go
+
+00:14:53.630 --> 00:14:56.870
+ahead with. Any other vector DB, if you want, maybe a chroma
+
+00:14:56.870 --> 00:14:59.310
+DB, maybe a pine cone. We have already done the discussion
+
+00:14:59.310 --> 00:15:02.290
+and you just have to call the connectors. You will be able
+
+00:15:02.290 --> 00:15:05.490
+to connect. And then instead of using this, uh, in-memory
+
+00:15:05.490 --> 00:15:08.510
+Facebook AI, semantic search vector DB, you can try to use
+
+00:15:08.510 --> 00:15:11.710
+any other one, right? A request just to request to my API
+
+00:15:11.710 --> 00:15:15.490
+numpy again, simple operation is streamlined for building a
+
+00:15:15.490 --> 00:15:19.470
+UI. So these are the libraries we are going to use it. So
+
+00:15:19.470 --> 00:15:22.470
+keep all of this library inside your requirement dot TXT
+
+00:15:22.470 --> 00:15:25.810
+file guys. Dr. Is asking question. What if we add a new
+
+00:15:25.810 --> 00:15:29.490
+file? Will it repeat the whole process or just add chunks
+
+00:15:29.490 --> 00:15:32.370
+and embeddings as of now, the project, which I'm going to
+
+00:15:32.370 --> 00:15:37.630
+show you. So basically it is going to like, uh, give you a
+
+00:15:37.630 --> 00:15:41.570
+response based on the current one single upload and the next
+
+00:15:41.570 --> 00:15:43.710
+project, which I'm going to show you, right? The next one
+
+00:15:43.710 --> 00:15:48.430
+over there, I'm showing you even a multiple file upload. So
+
+00:15:48.430 --> 00:15:51.970
+this one will be working with only one files. Next one will
+
+00:15:51.970 --> 00:15:54.890
+be working with the multiple files. And even I can, because
+
+00:15:54.890 --> 00:15:57.410
+see, at the end of the day, I'm trying to hold something
+
+00:15:57.410 --> 00:16:01.570
+into a embedded as a embedding into my vector DB, right? So
+
+00:16:01.570 --> 00:16:05.630
+as long as those data is available inside my vector DB, I'm
+
+00:16:05.630 --> 00:16:08.370
+good, right? Doesn't matter whether it is going to work with
+
+00:16:08.370 --> 00:16:10.470
+a current one or the next one, it will be able to work with
+
+00:16:10.470 --> 00:16:15.530
+everything in that situation. So I'll, I'll, I have that
+
+00:16:15.530 --> 00:16:17.790
+application as well. So, which I'm going to show you, that's
+
+00:16:17.790 --> 00:16:20.870
+the reason. So we have a multiple file, uh, search system.
+
+00:16:21.630 --> 00:16:25.130
+Okay. Now, once this one. One is done, then try to create
+
+00:16:25.130 --> 00:16:28.270
+one simple Python file where we are going to keep all the
+
+00:16:28.270 --> 00:16:33.590
+code. So PDF underscore RG underscore bought a dot PI file.
+
+00:16:33.930 --> 00:16:36.490
+You can give any other name if you want, uh, that's
+
+00:16:36.490 --> 00:16:39.150
+completely fine with me, but yeah, so just try to create one
+
+00:16:39.150 --> 00:16:43.810
+Python file. And before that, so just run your requirement
+
+00:16:43.810 --> 00:16:50.710
+.txt file. So pip install hyphen are requirements.txt file.
+
+00:16:50.890 --> 00:16:54.110
+Now, whatever will be. Like, uh, available inside the
+
+00:16:54.110 --> 00:16:57.550
+requirement.txt file in a single go, it will be able to
+
+00:16:57.550 --> 00:17:00.230
+install each and everything. So just run your requirement
+
+00:17:00.230 --> 00:17:05.370
+.txt file so that things will be installed and then, and
+
+00:17:05.370 --> 00:17:10.790
+then try to basically import all of these libraries. So
+
+00:17:10.790 --> 00:17:15.110
+plumber, Facebook, AI, semantic search, all of these things,
+
+00:17:15.190 --> 00:17:17.290
+try to import, sorry,
+
+00:17:19.560 --> 00:17:23.260
+if needed, we want to create this completely free. No URI.
+
+00:17:23.360 --> 00:17:27.520
+No open AI. I mean, like you need a LLM APIs without LLM
+
+00:17:27.520 --> 00:17:31.140
+APIs, how you will be able to create it. So in that is let's
+
+00:17:31.140 --> 00:17:34.080
+suppose there is a situation where you don't want to use any
+
+00:17:34.080 --> 00:17:38.160
+APIs, which is available out there. That's fine. There is an
+
+00:17:38.160 --> 00:17:42.180
+alternative even for that one. So all the big models are
+
+00:17:42.180 --> 00:17:45.740
+already available in a hugging face repository in a ulama
+
+00:17:45.740 --> 00:17:48.640
+repository. So you can just go over there, download those
+
+00:17:48.640 --> 00:17:51.960
+models. And instead of calling an API, call those models.
+
+00:17:52.500 --> 00:17:55.920
+Right. But again, so if you are doing that in a local
+
+00:17:55.920 --> 00:17:58.420
+system, or if you're doing that in a system, so where you
+
+00:17:58.420 --> 00:18:01.940
+have a very less computation and very less memory, those
+
+00:18:01.940 --> 00:18:06.300
+models are not going to support you. Right. I'm like, it
+
+00:18:06.300 --> 00:18:08.780
+will not give you error. I'm not saying that it will not, it
+
+00:18:08.780 --> 00:18:10.640
+will give you an error. No, it is not going to give you
+
+00:18:10.640 --> 00:18:15.220
+error. Basically your application will take time. So there
+
+00:18:15.220 --> 00:18:18.040
+is a cost event to it. Even if you are going ahead with the
+
+00:18:18.040 --> 00:18:22.680
+free, there is option obviously. Right. So again, this deep
+
+00:18:22.680 --> 00:18:25.400
+seek R1 model is already available. The entire llama series
+
+00:18:25.400 --> 00:18:27.900
+is available to you. Mistral is available to you. So there
+
+00:18:27.900 --> 00:18:30.340
+are so many models, which is already out there. You can
+
+00:18:30.340 --> 00:18:32.700
+download a physical file and just go ahead and interact with
+
+00:18:32.700 --> 00:18:36.340
+that. At the end of the day, I need a LLMs, right? This is
+
+00:18:36.340 --> 00:18:38.780
+the only requirement, even through a URI, even through a
+
+00:18:38.780 --> 00:18:42.420
+open AI. So I'm just trying to access what I'm just trying
+
+00:18:42.420 --> 00:18:45.680
+to access LLMs, right? So maybe, you know, in a physical
+
+00:18:45.680 --> 00:18:48.140
+system, you can try to access LLMs. I have already created a
+
+00:18:48.140 --> 00:18:51.320
+video. So like how you can try to configure. Okay. Maybe you
+
+00:18:51.320 --> 00:18:54.420
+can go and search. So how you will be able to configure
+
+00:18:54.420 --> 00:18:57.040
+these open source model is, I think I have created that for
+
+00:18:57.040 --> 00:18:59.820
+a deep seek. I don't remember, but yeah, I think this is
+
+00:18:59.820 --> 00:19:03.540
+what I have done. And I was using basically open AI, open
+
+00:19:03.540 --> 00:19:08.020
+web UI interface to chat with those models from a llama.
+
+00:19:12.020 --> 00:19:14.660
+So hugging face also providing you with tons of models.
+
+00:19:14.760 --> 00:19:18.000
+Llama is also providing you almost all the LLM models. Go
+
+00:19:18.000 --> 00:19:23.280
+ahead with that if you want. Okay. So. So these are the
+
+00:19:23.280 --> 00:19:26.360
+import that we have to do now. Next thing is, so we need a
+
+00:19:26.360 --> 00:19:30.980
+URI API key. We need a URI chat URL and we need a URI
+
+00:19:30.980 --> 00:19:35.520
+embedding URL. Yeah. So, uh, now
+
+00:19:39.200 --> 00:19:44.740
+let's try to create our variables for a URI API key and then
+
+00:19:44.740 --> 00:19:50.580
+URI chat URL, URI chat URL, and then URI embedding URL. So
+
+00:19:50.580 --> 00:19:53.460
+these are three variables I'm going to create where I'm
+
+00:19:53.460 --> 00:19:56.300
+going to keep like, uh, embedding, URL. So I'm going to
+
+00:19:56.300 --> 00:19:59.600
+create a chat URL API key and a chat URL. So what should be
+
+00:19:59.600 --> 00:20:07.540
+the chat URL? Let me go to URI and, uh, from here, URI APIs.
+
+00:20:08.560 --> 00:20:12.540
+Uh, I can go to code example itself and from anywhere I can
+
+00:20:12.540 --> 00:20:16.140
+just try to copy my chat URL.
+
+00:20:17.100 --> 00:20:21.560
+So this is my chat URL, by the way, this is my chat URL,
+
+00:20:21.620 --> 00:20:26.160
+chat completion, and then URL for embedding. Uh, embeddings
+
+00:20:26.160 --> 00:20:30.120
+is this one. So from anywhere I can go and I can try to copy
+
+00:20:30.120 --> 00:20:38.180
+my embeddings URL. So URL for embedding is this one pinging
+
+00:20:38.180 --> 00:20:40.180
+you once again now.
+
+00:20:50.870 --> 00:20:55.170
+So just try to copy your API key. So API key, I can try to
+
+00:20:55.170 --> 00:20:59.290
+copy from authentication tab. So copy the API key and keep
+
+00:20:59.290 --> 00:21:04.590
+it here. So my API key is done. Uh, embedding URL is done.
+
+00:21:04.590 --> 00:21:07.350
+Chat URL is done. These three things is required. So
+
+00:21:07.350 --> 00:21:10.570
+embedding to create a embedding. So, and, uh, chat URL to
+
+00:21:10.570 --> 00:21:17.620
+hit my models and this one, okay, now let's do one thing. So
+
+00:21:17.620 --> 00:21:20.800
+we have to create one variable and I'm going to print this
+
+00:21:20.800 --> 00:21:24.840
+variable and I'm going to show you that. So here, C O N V R
+
+00:21:24.840 --> 00:21:27.960
+S A T I O N conversation, underscore M E M O R Y
+
+00:21:27.960 --> 00:21:31.560
+conversation memory. I'm going to create a variable as an
+
+00:21:31.560 --> 00:21:34.640
+empty list, as you can see, so that I will keep on adding my
+
+00:21:34.640 --> 00:21:40.580
+conversation. So on
+
+00:21:40.580 --> 00:21:42.100
+that list, I'm going to call this variable. So I will write
+
+00:21:42.100 --> 00:21:46.180
+the example of, so, got my article times ever so order, say
+
+00:21:46.180 --> 00:21:47.040
+C O N V R S and I straight quote jeans value of one, then
+
+00:21:47.040 --> 00:21:47.100
+method of, okay. file as and when I have used, and when I
+
+00:21:47.100 --> 00:21:47.280
+have used, I'm going to insert cream V, but you So this is
+
+00:21:47.280 --> 00:21:48.760
+what I have described it hiyou. And this one will give me
+
+00:21:48.760 --> 00:21:53.120
+one, I can use file edit that. So here are my single putting
+
+00:21:53.120 --> 00:22:02.400
+method intuitively. So when I do this, as per what is
+
+00:22:02.400 --> 00:22:05.380
+called code, right? path, it is trying to open up a PDF.
+
+00:22:05.620 --> 00:22:08.380
+Everything is done by this PDF plumber, this library that we
+
+00:22:08.380 --> 00:22:11.460
+have installed, right? So PDF plumber, so PDF plumber, just
+
+00:22:11.460 --> 00:22:14.560
+try to open it up just like any other files and what it
+
+00:22:14.560 --> 00:22:18.060
+does. So it will try to go page by page, page by page, page
+
+00:22:18.060 --> 00:22:21.380
+by page, whatever number of the page that you have, and it
+
+00:22:21.380 --> 00:22:25.880
+will be able to extract a raw data, simple raw data from a
+
+00:22:25.880 --> 00:22:29.660
+PDF. It will be able to read. So this is what the system is
+
+00:22:29.660 --> 00:22:34.120
+doing, and I don't think that this code is like in any way
+
+00:22:34.120 --> 00:22:36.160
+difficult to understand. It's very, very easy to understand,
+
+00:22:36.320 --> 00:22:39.480
+right? So here we are going through our pages and then one
+
+00:22:39.480 --> 00:22:43.380
+by one we are trying to extract. So okay, first part, this
+
+00:22:43.380 --> 00:22:47.000
+part, basically this part, read PDF, right? So once I will
+
+00:22:47.000 --> 00:22:50.660
+be able to read a PDF, once I will be able to read the PDF,
+
+00:22:50.780 --> 00:22:53.940
+then what is the next part that we have to do? So we have to
+
+00:22:53.940 --> 00:22:57.360
+split it down into a small, small chunks. Because let's
+
+00:22:57.360 --> 00:23:01.460
+suppose. I have like a 50,000 or 50 millions token inside my
+
+00:23:01.460 --> 00:23:04.860
+PDF, I have a big, big PDFs, right? So I have to break it
+
+00:23:04.860 --> 00:23:07.900
+down into a small, small, small, small chunk so that I will
+
+00:23:07.900 --> 00:23:12.560
+be able to store those data into maybe like my vector DV. So
+
+00:23:12.560 --> 00:23:17.440
+here to do that, to split this entire things into a chunk, I
+
+00:23:17.440 --> 00:23:20.680
+can try to use this function. So a split text function, I'm
+
+00:23:20.680 --> 00:23:23.460
+going to use this function I've already written. So split
+
+00:23:23.460 --> 00:23:26.220
+text. Now what we are going to do. So this function is going
+
+00:23:26.220 --> 00:23:29.760
+to take an input. So whatever this function will return,
+
+00:23:29.960 --> 00:23:32.420
+right? Whatever this function will return means whatever
+
+00:23:32.420 --> 00:23:35.960
+this PDF will return. So I'm going to pass this one into
+
+00:23:35.960 --> 00:23:38.620
+this particular split text function. I'm trying to keep
+
+00:23:38.620 --> 00:23:42.780
+chunk size is equal to 500 and overlap is equal to 100.
+
+00:23:42.920 --> 00:23:46.460
+Simply means that, that let's suppose I'm trying to start
+
+00:23:46.460 --> 00:23:50.540
+from a pointer zero. I'll go till 500. Then I will just call
+
+00:23:50.540 --> 00:23:54.880
+that as a one chunk. Then the next chunk when I'll try to
+
+00:23:54.880 --> 00:23:58.800
+create, I'll start from the 400th index. Then, then, then
+
+00:23:58.800 --> 00:24:02.660
+again till 500, so 900 basically, then again, next chunk is
+
+00:24:02.660 --> 00:24:06.300
+going to start from a 800. So 800 plus five 1300, and then
+
+00:24:06.300 --> 00:24:09.140
+next chunk is going to start from 1200. So in this way, I'll
+
+00:24:09.140 --> 00:24:12.720
+try to keep some of the relative information right between
+
+00:24:12.720 --> 00:24:15.440
+one data and the other data. So this is what we are trying
+
+00:24:15.440 --> 00:24:18.960
+to do. So here, this is just a list. You can, you can even
+
+00:24:18.960 --> 00:24:21.800
+try to print it and then you will be able to see it and we
+
+00:24:21.800 --> 00:24:23.980
+are going to print it. Basically, you will be able to see
+
+00:24:23.980 --> 00:24:26.580
+that what is going inside the chunk, but yeah, as this this
+
+00:24:26.580 --> 00:24:29.520
+function is just a simple Pythonic function. So what we are
+
+00:24:29.520 --> 00:24:32.580
+trying to do, so while a start is lesser than length or
+
+00:24:32.580 --> 00:24:35.560
+whatever text, whatever text that we have. So a start plus
+
+00:24:35.560 --> 00:24:38.400
+chunk size, so a start plus chunk size. So let's suppose I'm
+
+00:24:38.400 --> 00:24:41.600
+starting from zero chunk size is 500. So I'll try to extract
+
+00:24:41.600 --> 00:24:45.160
+data till 500 and then I'll try to append it. Then again,
+
+00:24:45.280 --> 00:24:48.920
+I'll keep on doing the same repetitive process. My start
+
+00:24:48.920 --> 00:24:54.080
+will be what my start will be like a first 500 and then my
+
+00:24:54.080 --> 00:24:57.380
+start will be become a 400. Basically. So that's the reason.
+
+00:24:57.480 --> 00:25:00.580
+So here it's written a start is equal to a start plus chunk
+
+00:25:00.580 --> 00:25:04.300
+size minus overlap. Yeah. So start plus initially value of a
+
+00:25:04.300 --> 00:25:07.100
+start is equal to zero. Then chunk size is 500. Then overlap
+
+00:25:07.100 --> 00:25:10.980
+is a hundred total value of a start in the next iteration is
+
+00:25:10.980 --> 00:25:14.220
+going to be 400, right? Then into our next iteration is
+
+00:25:14.220 --> 00:25:16.940
+going to be 800. Then it is going to be 1200. So in this
+
+00:25:16.940 --> 00:25:20.520
+way, we will keep on extracting the data. You can try to
+
+00:25:20.520 --> 00:25:23.040
+manipulate this one. You can try to keep it maybe five lag,
+
+00:25:23.120 --> 00:25:26.780
+5,000 depends on depends, right? So you can, you can try to
+
+00:25:26.780 --> 00:25:32.130
+do the experimentation, but yeah, you are not using
+
+00:25:32.130 --> 00:25:35.430
+Langchain for reading and checking. No, I am not using
+
+00:25:35.430 --> 00:25:38.350
+Langchain because Langchain I'll be discussing in my next
+
+00:25:38.350 --> 00:25:41.350
+class with respect to agent. So I'm just using a simple
+
+00:25:41.350 --> 00:25:43.390
+Pythonic function. Langchain is also a Python library,
+
+00:25:43.550 --> 00:25:47.010
+right? Someone has written something inside a Langchain with
+
+00:25:47.010 --> 00:25:50.090
+the help of Python. Same thing, right? So here I'm using a
+
+00:25:50.090 --> 00:25:54.050
+raw coding, not a prebuilt APIs.
+
+00:25:56.060 --> 00:26:00.220
+I'll be using that in the next class. So I am using a new
+
+00:26:00.220 --> 00:26:03.680
+one. So this is done. Uh, so it is going to split my data
+
+00:26:03.680 --> 00:26:06.740
+into a small, small, small, small chunks, by the way. Now
+
+00:26:06.740 --> 00:26:13.280
+let me ping you this, uh, entire piece of code. Now next
+
+00:26:13.280 --> 00:26:17.180
+part. So checking is done, right? Checking is done. Now what
+
+00:26:17.180 --> 00:26:21.500
+is the next part? URI embeddings. So I have to pass this
+
+00:26:21.500 --> 00:26:25.940
+entire chunk into a URI so that it will be able to generate
+
+00:26:25.940 --> 00:26:30.460
+embedding for me. Okay. Because inside a URI, we have
+
+00:26:30.460 --> 00:26:34.960
+embedding models, right? So inside a URI, there is models,
+
+00:26:35.260 --> 00:26:40.220
+right? So inside URI, we have this text embeddings model,
+
+00:26:40.420 --> 00:26:45.760
+right? From OpenAI itself with a dimension of 1536, a good
+
+00:26:45.760 --> 00:26:48.940
+amount of dimension. So we have this particular one and
+
+00:26:48.940 --> 00:26:52.480
+yeah, so we are going to use this one with the help of URI.
+
+00:26:52.580 --> 00:26:58.140
+So let me put a code for that one. This code is all already
+
+00:26:58.140 --> 00:27:02.080
+available inside your URI. So this is nothing new. This is
+
+00:27:02.080 --> 00:27:04.100
+not something which I have written. So this is already
+
+00:27:04.100 --> 00:27:07.740
+available as a sample code inside URI as well. So here it is
+
+00:27:07.740 --> 00:27:10.420
+going to take a data. So whatever data that you are going to
+
+00:27:10.420 --> 00:27:13.460
+pass, in my case, I will be passing a chunk one by one, one
+
+00:27:13.460 --> 00:27:17.380
+by one, one by one, and then it is going to like call the
+
+00:27:17.380 --> 00:27:20.960
+URI API and then inside a payload, it is going to pass the
+
+00:27:20.960 --> 00:27:23.600
+data, text embedding through a small model it is going to
+
+00:27:23.600 --> 00:27:27.020
+use. And then. And then eventually it is going to give you a
+
+00:27:27.020 --> 00:27:31.360
+response, right? So for the in a response.json, it is going
+
+00:27:31.360 --> 00:27:35.540
+to give you a data and that is going to be the embedding. So
+
+00:27:35.540 --> 00:27:39.900
+this is something that I will be able to get. Okay. So this
+
+00:27:39.900 --> 00:27:43.980
+is for a URI embeddings. Now once embedding is done, right?
+
+00:27:44.080 --> 00:27:47.820
+Once embedding is done, then what you have to do, so you
+
+00:27:47.820 --> 00:27:51.700
+have to go to the next step, store those data into a vector
+
+00:27:51.700 --> 00:27:54.940
+databases. We have already seen that, right? So how to store
+
+00:27:54.940 --> 00:27:58.120
+our data into a vector DB, whether it's a pinecone, whether
+
+00:27:58.120 --> 00:28:00.480
+it's a Facebook AI semantic search, whether it's a chroma
+
+00:28:00.480 --> 00:28:05.580
+DB, we can, we can try to like a store this data anywhere,
+
+00:28:05.780 --> 00:28:09.260
+right? Anywhere means literally anywhere. Even on a managed
+
+00:28:09.260 --> 00:28:11.980
+platform, we can try to store the data. So here I'm trying
+
+00:28:11.980 --> 00:28:15.500
+to use my, like a in-memory Facebook AI semantic search. So
+
+00:28:15.500 --> 00:28:21.100
+here now what this will do is, so this is going to take a
+
+00:28:21.100 --> 00:28:24.800
+chunks, whatever, like a data that you have built. Now it is
+
+00:28:24.800 --> 00:28:27.520
+going to call URI embeddings. Now we know that URI
+
+00:28:27.520 --> 00:28:30.300
+embeddings is going to return the embeddings and I'm trying
+
+00:28:30.300 --> 00:28:34.940
+to just add. So index.add, add what? So add the embeddings,
+
+00:28:35.040 --> 00:28:38.020
+as simple as that. So I'm calling this URI embeddings inside
+
+00:28:38.020 --> 00:28:40.840
+this build vector store. It is going to return the
+
+00:28:40.840 --> 00:28:44.720
+embeddings and then it is going to store it simple, right?
+
+00:28:44.780 --> 00:28:47.880
+So here I'm using a Facebook AI semantic search index flat
+
+00:28:47.880 --> 00:28:55.160
+L2. So this is for your URI embeddings. Sorry. Storing.
+
+00:28:55.180 --> 00:28:58.540
+Storing data into a vector DV. So vector DV, we are able to
+
+00:28:58.540 --> 00:29:02.640
+store the data. Now once we are able to store a data inside
+
+00:29:02.640 --> 00:29:07.720
+a vector database, right? So once we are able to like store
+
+00:29:07.720 --> 00:29:12.340
+the data inside the vector databases, now let's suppose
+
+00:29:12.340 --> 00:29:16.080
+someone is going to ask a question. Someone is going to ask
+
+00:29:16.080 --> 00:29:21.120
+a question. So before generating an answer, right? If
+
+00:29:21.120 --> 00:29:24.160
+someone is going to ask a question. So before generating an
+
+00:29:24.160 --> 00:29:29.160
+answer. So we have to pass a question first, right? We have
+
+00:29:29.160 --> 00:29:32.420
+to look into the chunk indexes. We have to look into its
+
+00:29:32.420 --> 00:29:36.240
+embeddings and then top three embeddings we have to extract.
+
+00:29:36.840 --> 00:29:40.980
+So here, whenever someone is going to ask a question. So
+
+00:29:40.980 --> 00:29:43.740
+first of all, I'm trying to generate embeddings with the
+
+00:29:43.740 --> 00:29:46.500
+help of URI embeddings for any question, any question that
+
+00:29:46.500 --> 00:29:49.460
+you are going to ask after uploading a PDF. Let's suppose if
+
+00:29:49.460 --> 00:29:53.100
+I start asking a question. So to those question, I'll, I'll
+
+00:29:53.100 --> 00:29:55.600
+try to convert those questions. Into a numerical
+
+00:29:55.600 --> 00:29:58.600
+representation. Technically it's called as embedding. So Q
+
+00:29:58.600 --> 00:30:03.480
+embed basically, right? And then what we are going to do is,
+
+00:30:03.560 --> 00:30:06.760
+so we are going to do a index dot search. Now from where
+
+00:30:06.760 --> 00:30:10.300
+this index is going to come. My Facebook AI semantic search,
+
+00:30:10.460 --> 00:30:13.820
+my vector database is going to give me the index parameter
+
+00:30:13.820 --> 00:30:17.340
+or index object. So index dot search, and I'm going to
+
+00:30:17.340 --> 00:30:21.520
+search those questions, which user have asked, right? So
+
+00:30:21.520 --> 00:30:24.360
+which user have asked with respect to the PDF. Okay. From
+
+00:30:24.360 --> 00:30:30.440
+the vector DB. So here, if user is going to ask a question,
+
+00:30:30.660 --> 00:30:34.360
+so I'm going to do what the next step is. Next step is
+
+00:30:34.360 --> 00:30:37.680
+basically RAG retrieval augmented generation. Now what is
+
+00:30:37.680 --> 00:30:40.140
+the meaning of retrieval augmented generation? So whenever
+
+00:30:40.140 --> 00:30:43.760
+someone is asking a question, so first of all, it will try
+
+00:30:43.760 --> 00:30:48.080
+to search into a vector DB. This is something called as RAG,
+
+00:30:48.220 --> 00:30:50.580
+right? This is something called as RAG. I think we all
+
+00:30:50.580 --> 00:30:53.700
+understand what is the concept of philosophy behind the RAG.
+
+00:30:53.700 --> 00:30:56.280
+We have already seen an example and practical operations as
+
+00:30:56.280 --> 00:31:02.300
+well in my previous classes. So here, it is going to search
+
+00:31:02.300 --> 00:31:06.000
+those questions. It is going to do a matching with a vector
+
+00:31:06.000 --> 00:31:10.440
+DB, which is available. And technically it is trying to
+
+00:31:10.440 --> 00:31:14.420
+perform a retrieval augmented generation operation. Okay,
+
+00:31:14.500 --> 00:31:20.360
+fine. So here, this is what it is trying to do. So index dot
+
+00:31:20.360 --> 00:31:23.700
+search, search a question. Okay. And then try to fetch top
+
+00:31:23.700 --> 00:31:26.880
+K. Maybe I can try to give value of K is equal to five or
+
+00:31:26.880 --> 00:31:31.500
+three or maybe a 10. So those many top searches, it will try
+
+00:31:31.500 --> 00:31:34.500
+to bring, right? It will try to bring, and it is going to
+
+00:31:34.500 --> 00:31:38.740
+return you as a data and the nexus now. So here I'm just
+
+00:31:38.740 --> 00:31:41.700
+trying to iterate through it and returning it as simple as
+
+00:31:41.700 --> 00:31:44.620
+that. Yeah. So retrieve the context. Now in this way, this
+
+00:31:44.620 --> 00:31:48.820
+function will help me out to retrieve a context based on my
+
+00:31:48.820 --> 00:31:52.220
+question, the question, which I'm going to ask basically. So
+
+00:31:52.220 --> 00:31:52.860
+here, I'm going to ask a question. So it will be able to
+
+00:31:52.860 --> 00:31:57.100
+retrieve the context. Now once it will be able to retrieve a
+
+00:31:57.100 --> 00:32:02.800
+context, plus I have embeddings for my question, right? So
+
+00:32:02.800 --> 00:32:05.760
+once it will be able to retrieve the context basically, and
+
+00:32:05.760 --> 00:32:10.780
+I have a question, I will try to pass both, right? I will
+
+00:32:10.780 --> 00:32:14.220
+try to pass my question plus the context that I have
+
+00:32:14.220 --> 00:32:20.100
+retrieved from my vector DB to my LLMs basically. So that my
+
+00:32:20.100 --> 00:32:23.120
+LLMs will be able to give me the answer. Right? So that my
+
+00:32:23.120 --> 00:32:25.920
+LLM will be able to give me the answer. So now it's time to
+
+00:32:25.920 --> 00:32:31.900
+pass this entire things. So now it's time to pass this
+
+00:32:31.900 --> 00:32:38.720
+entire, like a quotient will go here, do RAG, retrieve a
+
+00:32:38.720 --> 00:32:45.800
+context. Now I have context plus quotient, right? I have
+
+00:32:45.800 --> 00:32:49.780
+context plus quotient over here. I will try to pass this
+
+00:32:49.780 --> 00:32:54.920
+entire things to my LLMs. Basically, so that I will be able
+
+00:32:54.920 --> 00:32:58.940
+to get a response LLMs, maybe like a 4-0 mini, I will try to
+
+00:32:58.940 --> 00:33:01.900
+pass or any other 10 of the LLMs that we have available. So
+
+00:33:01.900 --> 00:33:04.380
+to any of the LLMs, we are going to pass context plus
+
+00:33:04.380 --> 00:33:09.300
+quotient. Now not only this, we will try to pass even a
+
+00:33:09.300 --> 00:33:12.940
+memory over here, right? We'll try to pass even a memory.
+
+00:33:13.080 --> 00:33:17.780
+We'll try to add even a memory inside this one. So initially
+
+00:33:17.780 --> 00:33:21.060
+memory is going to be zero. As you can see that I have
+
+00:33:21.060 --> 00:33:28.380
+created. I have already created this memory, but this is
+
+00:33:28.380 --> 00:33:30.880
+empty as of now, right? So initially memory is, so when you
+
+00:33:30.880 --> 00:33:32.720
+are going to start your conversation for the very first
+
+00:33:32.720 --> 00:33:35.820
+time, so there is nothing inside the memory, but eventually
+
+00:33:35.820 --> 00:33:39.120
+I'll keep on building it. So whatever system is going to
+
+00:33:39.120 --> 00:33:42.180
+give as a response and whatever user is going to ask as a
+
+00:33:42.180 --> 00:33:45.280
+question or whatever things that I want, I can just try to
+
+00:33:45.280 --> 00:33:48.360
+keep it inside the memory. I can even decide that how much
+
+00:33:48.360 --> 00:33:51.840
+memory I should keep because memory is a costliest
+
+00:33:51.840 --> 00:33:54.020
+operation. Okay. So when you are trying to store something
+
+00:33:54.020 --> 00:33:56.840
+into a memory, it's a costliest operation. It's not like if
+
+00:33:56.840 --> 00:33:59.300
+user has done a chatting, maybe a hundred days back, or
+
+00:33:59.300 --> 00:34:03.020
+maybe user has ended up generating a tons or GBs of data, I
+
+00:34:03.020 --> 00:34:05.760
+will keep it, I will hold it inside the memory. No. So
+
+00:34:05.760 --> 00:34:08.540
+that's, that's a reason. So like, uh, in a production, in a
+
+00:34:08.540 --> 00:34:12.880
+real time, it, uh, we have to handle a lot of things before
+
+00:34:12.880 --> 00:34:17.740
+like, uh, allowing user to deal with the memories because,
+
+00:34:17.780 --> 00:34:22.140
+uh, again, if I'm going to like, uh, uh, uh, create a memory
+
+00:34:22.140 --> 00:34:24.660
+on a cloud. So if I'm going to build a memory on a client
+
+00:34:24.660 --> 00:34:27.060
+side, so if someone is using my system, for example, a URI,
+
+00:34:27.140 --> 00:34:29.780
+if someone is going to use the problem, uh, people are going
+
+00:34:29.780 --> 00:34:32.380
+to face is that, that after some chat, it will start
+
+00:34:32.380 --> 00:34:34.940
+crashing and will show that your system is out of memory.
+
+00:34:35.140 --> 00:34:38.520
+Right? If, if I'm trying to like, uh, build a memory on a
+
+00:34:38.520 --> 00:34:40.680
+client side, if I'm going to build a memory on a server
+
+00:34:40.680 --> 00:34:43.700
+side, again, it's a problem for a company. So in both the
+
+00:34:43.700 --> 00:34:46.540
+cases, it's a problem. So we try to split it and we try to
+
+00:34:46.540 --> 00:34:49.520
+design a memory system in a pretty much different way.
+
+00:34:49.660 --> 00:34:52.720
+Whenever we go for the production, but here. So as. Uh.
+
+00:34:52.720 --> 00:34:55.880
+Like, uh, we are trying to build, uh, MVP kind of a project.
+
+00:34:56.100 --> 00:34:59.760
+So we are not taking care of much, but yeah, in real time,
+
+00:34:59.860 --> 00:35:04.340
+it's a real pain basically. And uh, we are also building it.
+
+00:35:04.400 --> 00:35:08.960
+So we know the pain like, uh, because, uh, either user will
+
+00:35:08.960 --> 00:35:12.220
+complain or we will end up paying a lot of money to a cloud
+
+00:35:12.220 --> 00:35:17.520
+platform again. So now when everything is done, so we are
+
+00:35:17.520 --> 00:35:21.580
+going to call us URI with that context. Now what LLM is
+
+00:35:21.580 --> 00:35:24.080
+going to take as an input. So LLM is going to take
+
+00:35:24.080 --> 00:35:27.140
+questions, question that user has asked, and then LLM is
+
+00:35:27.140 --> 00:35:29.640
+going to take a context context, which I'm trying to
+
+00:35:29.640 --> 00:35:33.440
+retrieve, retrieve from where a vector database. So it is
+
+00:35:33.440 --> 00:35:38.140
+going to take that one simple as per this, right? So context
+
+00:35:38.140 --> 00:35:38.800
+plus question.
+
+00:35:56.740 --> 00:36:00.600
+Okay. So, uh, this one context plus question, and that will
+
+00:36:00.600 --> 00:36:05.540
+go inside by, uh, LLMs basically. So here, uh, question plus
+
+00:36:05.540 --> 00:36:08.900
+context plus memory, but as of now, uh, initially I don't
+
+00:36:08.900 --> 00:36:11.080
+have any kind of. I have a memory. Eventually I'm trying to
+
+00:36:11.080 --> 00:36:17.080
+extend it means we are trying to add those memories. Anyone
+
+00:36:17.080 --> 00:36:20.120
+guys who can tell me, uh, what is our difference between
+
+00:36:20.120 --> 00:36:22.360
+extend and append, can
+
+00:36:33.170 --> 00:36:36.590
+we expect your own monthly subscription? Not now. So not
+
+00:36:36.590 --> 00:36:40.030
+possible as of now, I anyhow, like, uh, go with the yearly
+
+00:36:40.030 --> 00:36:42.610
+one. It's like a little bit more affordable.
+
+00:36:45.740 --> 00:36:48.580
+Yup. So any, anyone who can tell me what is the difference
+
+00:36:48.580 --> 00:36:51.340
+between it's the list list functionality, right? So anyone
+
+00:36:51.340 --> 00:36:53.220
+who can tell me like, what is the difference between append
+
+00:36:53.220 --> 00:36:53.680
+and extend?
+
+00:37:10.270 --> 00:37:11.830
+It's a basic list concept guys.
+
+00:37:15.660 --> 00:37:21.520
+Yeah. So let's suppose I have a list and, uh, in almost all
+
+00:37:21.520 --> 00:37:23.780
+of my Python classes, I have already like, uh, discussed
+
+00:37:23.780 --> 00:37:26.920
+about this append means what list dot append means. So let's
+
+00:37:26.920 --> 00:37:29.460
+suppose if I'm going to like, uh, pass my name over here,
+
+00:37:29.520 --> 00:37:32.240
+then if I'm going to show you list, so basically append will
+
+00:37:32.240 --> 00:37:35.240
+try to append a data at the end, right? So whether it's a
+
+00:37:35.240 --> 00:37:37.500
+iterative data, whether it's a non iterative data, so at the
+
+00:37:37.500 --> 00:37:39.600
+end of the day, it is going to append it as it is. So even
+
+00:37:39.600 --> 00:37:42.340
+if I'm going to pass a numbers, it is going to append it at
+
+00:37:42.340 --> 00:37:45.960
+the last. Now, uh, let's suppose if I'm going to call, this
+
+00:37:45.960 --> 00:37:48.580
+is again a list function and I'm going to pass maybe a
+
+00:37:48.580 --> 00:37:51.920
+numbers. Now it is giving me an error. Yup. It is giving me
+
+00:37:51.920 --> 00:37:54.900
+an error. It says that, that I'm expecting a iterable
+
+00:37:54.900 --> 00:37:58.160
+object. I'm expecting a iterable object integer is not a
+
+00:37:58.160 --> 00:38:00.860
+iterable object. You can't iterate over to it. So extend is
+
+00:38:00.860 --> 00:38:03.660
+not going to work with this kind of object. Now list dot
+
+00:38:03.660 --> 00:38:06.600
+extend. If I'm going to call and if I'm going to pass my
+
+00:38:06.600 --> 00:38:10.280
+name over here, now see how it is going to append it. So it
+
+00:38:10.280 --> 00:38:13.400
+is going to split the data into a small, small chunk means
+
+00:38:13.400 --> 00:38:16.460
+it is going to iterate over to the data first, extract the
+
+00:38:16.460 --> 00:38:19.240
+data into a smaller label, and then it is going to append
+
+00:38:19.240 --> 00:38:22.340
+the data as you can see, right? So this is where extend
+
+00:38:22.340 --> 00:38:25.620
+works and this is where extend comes into a picture. So
+
+00:38:25.620 --> 00:38:27.700
+chunk by chunk, chunk by chunk, chunk by chunk, it is trying
+
+00:38:27.700 --> 00:38:31.860
+to append the data. Yeah. Now, so someone is saying extend
+
+00:38:31.860 --> 00:38:34.880
+is extending the feature of the next label child function.
+
+00:38:35.200 --> 00:38:35.640
+No.
+
+00:38:39.260 --> 00:38:43.540
+Yup. Uh. So I add the multiply item. I think guys, you
+
+00:38:43.540 --> 00:38:47.460
+should go and rewatch my entire Python series. Even now the
+
+00:38:47.460 --> 00:38:49.420
+Python series, which I'm uploading, right? So I have already
+
+00:38:49.420 --> 00:38:53.560
+discussed about these functions. So I'm not, we should go
+
+00:38:53.560 --> 00:38:56.020
+ahead with the entire lecture. Maybe you should like write
+
+00:38:56.020 --> 00:38:59.380
+more, more code extend. If I'm going to call, if I'm going
+
+00:38:59.380 --> 00:39:02.320
+to add some list item over here. So again, what it will do,
+
+00:39:02.320 --> 00:39:05.780
+it will try to extract a data first, and then it is going to
+
+00:39:05.780 --> 00:39:08.380
+append it as you can see one by one, one by one. So
+
+00:39:08.380 --> 00:39:11.180
+basically it's called as unraveling. So it will try to
+
+00:39:11.180 --> 00:39:14.880
+unravel. The data first, and then, uh, like, uh, it will try
+
+00:39:14.880 --> 00:39:17.920
+to add it. This is where extend comes into a picture. Yeah.
+
+00:39:18.400 --> 00:39:21.500
+So here, uh, what we are trying to do, so we are also like,
+
+00:39:21.580 --> 00:39:25.520
+uh, trying to call the extent. So message.extend. So
+
+00:39:25.520 --> 00:39:28.400
+initially message will be this inside a list, as you can
+
+00:39:28.400 --> 00:39:31.500
+see, right inside the list, we have a message, right? And
+
+00:39:31.500 --> 00:39:35.340
+then if memory, right? So if memory as of now, memory is
+
+00:39:35.340 --> 00:39:38.040
+equal to none, but yeah, so I'm going to pass that parameter
+
+00:39:38.040 --> 00:39:40.400
+conversation, memory parameter. When I'm going to call all
+
+00:39:40.400 --> 00:39:43.660
+of these functions. So at that point of a time, if memory,
+
+00:39:43.840 --> 00:39:46.840
+so if it is yes, means if I'm passing a conversational
+
+00:39:46.840 --> 00:39:49.940
+memory, uh, list, basically, this is the main part guys,
+
+00:39:50.080 --> 00:39:53.040
+right? So if I'm going to pass a conversational memory list
+
+00:39:53.040 --> 00:39:58.520
+over here, so what it will do. So whatever conversational
+
+00:39:58.520 --> 00:40:00.500
+memory, whatever I'm going to store inside the
+
+00:40:00.500 --> 00:40:04.200
+conversational memory, it will keep on extending inside this
+
+00:40:04.200 --> 00:40:07.440
+same message. One by one, one by one, one by one, chunk by
+
+00:40:07.440 --> 00:40:10.100
+chunk, chunk by chunk. It will keep on extending it. I'll
+
+00:40:10.100 --> 00:40:13.560
+even show you. So how does it look like, but yeah, it's a
+
+00:40:13.560 --> 00:40:15.740
+very basic list operation that we are trying to do nothing
+
+00:40:15.740 --> 00:40:19.600
+much then the message.append. So here we are doing a extend
+
+00:40:19.600 --> 00:40:22.500
+operation message.append, append as it is. So append what?
+
+00:40:22.660 --> 00:40:27.500
+So append basically a context and the question, yeah. So we
+
+00:40:27.500 --> 00:40:30.800
+are also attaching a black, uh, we are, we are trying to
+
+00:40:30.800 --> 00:40:33.560
+attach what, so we are trying to attach basically inside a
+
+00:40:33.560 --> 00:40:36.540
+message, but inside the message. So whenever we are trying
+
+00:40:36.540 --> 00:40:40.480
+to like, uh, send a next message, send the next messages. So
+
+00:40:40.480 --> 00:40:43.300
+we are trying to attach a context context, which I have
+
+00:40:43.300 --> 00:40:47.000
+received from vector DB. And then we are trying to even
+
+00:40:47.000 --> 00:40:50.760
+attach a question. So question will go, context will go and
+
+00:40:50.760 --> 00:40:54.140
+anyhow message.extend memory. So if there is a memory, even
+
+00:40:54.140 --> 00:40:57.080
+memory will go. So in total, there are three things which
+
+00:40:57.080 --> 00:41:01.500
+I'm sending to my NLMs making sense to all of us. So there
+
+00:41:01.500 --> 00:41:04.520
+are in total three things I'm trying to send as a payload.
+
+00:41:04.780 --> 00:41:10.300
+One is a context. One is a question from the user. Embedding
+
+00:41:10.300 --> 00:41:12.520
+of the question obviously. And then another part is
+
+00:41:12.520 --> 00:41:14.960
+basically a memory. So these are the three things which I'm
+
+00:41:14.960 --> 00:41:18.560
+trying to send if memory is available in that situation. Now
+
+00:41:18.560 --> 00:41:22.140
+so this will finally go as a message and I can try to like,
+
+00:41:22.200 --> 00:41:25.400
+uh, play with this temperature. I can try to play with the
+
+00:41:25.400 --> 00:41:28.300
+output tokens. So this is again from coming from the URI.
+
+00:41:28.380 --> 00:41:31.740
+This is going to give you a response. Now whatever response
+
+00:41:31.740 --> 00:41:34.680
+it is trying to give you, uh, we are just trying to like,
+
+00:41:34.720 --> 00:41:39.340
+uh, uh, return that as a reply. Right. And then inside a
+
+00:41:39.340 --> 00:41:43.300
+memory, we are trying to append a question as well as we are
+
+00:41:43.300 --> 00:41:48.100
+trying to append a reply. Now this is also a part of the
+
+00:41:48.100 --> 00:41:51.580
+memory, which you should know. So here, whenever we are
+
+00:41:51.580 --> 00:41:56.080
+trying to build a system, so inside a memory, I'm trying to
+
+00:41:56.080 --> 00:41:59.940
+keep a questions plus I'm trying to keep a reply so that
+
+00:41:59.940 --> 00:42:03.860
+from next time onwards, right? Next time onwards, my system
+
+00:42:03.860 --> 00:42:07.800
+is not supposed to hustle much. If user is going to ask. A
+
+00:42:07.800 --> 00:42:11.100
+similar kind of a question, plus it will be able to
+
+00:42:11.100 --> 00:42:13.400
+understand the context that, okay, so what was the question?
+
+00:42:13.620 --> 00:42:17.420
+What was the reply which was generated? And when it is
+
+00:42:17.420 --> 00:42:21.380
+trying to like, uh, generate the next one, it knows that
+
+00:42:21.380 --> 00:42:25.220
+where I have given or what kind of a reply I have given last
+
+00:42:25.220 --> 00:42:29.280
+time. Is it making sense? So why we are appending this reply
+
+00:42:29.280 --> 00:42:32.620
+into the memory. So we are appending your questions. We are
+
+00:42:32.620 --> 00:42:37.220
+appending your reply as well inside a memory. As simple as
+
+00:42:37.220 --> 00:42:42.880
+that. Making sense guys, then only system will be able to
+
+00:42:42.880 --> 00:42:45.540
+understand, right? That what question was asked and what was
+
+00:42:45.540 --> 00:42:48.260
+the answer which was given by the way. And then if you're
+
+00:42:48.260 --> 00:42:50.960
+going to ask a follow up question, it will be able to take
+
+00:42:50.960 --> 00:42:53.740
+some sort of inspiration from the previous one and which is
+
+00:42:53.740 --> 00:42:57.780
+part of the memory. So this is the function which is going
+
+00:42:57.780 --> 00:43:03.600
+to work for me and which is going to help me out in
+
+00:43:05.840 --> 00:43:08.020
+terms of building the memory. So I have just pinged you the
+
+00:43:08.020 --> 00:43:11.060
+code for this one. Okay. Now this, these are the only main
+
+00:43:11.060 --> 00:43:14.880
+part. Now the only calling part is pending. So we have all
+
+00:43:14.880 --> 00:43:18.020
+these functions. Simply means that, that all of these blocks
+
+00:43:18.020 --> 00:43:22.820
+we already have inside our code base. Now it's time to call
+
+00:43:22.820 --> 00:43:27.760
+a Stimulant UI. Let me ping you this code as well, right? So
+
+00:43:27.760 --> 00:43:32.400
+here Stimulant UI. So UI is going to give you one option for
+
+00:43:32.400 --> 00:43:36.440
+PDF upload, simple and one after PDF upload. So it is like
+
+00:43:36.440 --> 00:43:40.220
+going to allow you to ask a question. Now. Once you are
+
+00:43:40.220 --> 00:43:45.120
+going to upload a PDF in a very first place, right? So it is
+
+00:43:45.120 --> 00:43:50.100
+going to basically write all of these files. It is going to
+
+00:43:50.100 --> 00:43:53.820
+write, it is going to write all of this file now. So then
+
+00:43:53.820 --> 00:43:57.060
+when you are going to ask a question, right, when you are
+
+00:43:57.060 --> 00:44:00.580
+going to ask a question, then it is going to call all of
+
+00:44:00.580 --> 00:44:04.020
+these things one by one, one by one, one by one. Now how it
+
+00:44:04.020 --> 00:44:06.240
+is going to call, what it is going to call. Let's try to
+
+00:44:06.240 --> 00:44:08.660
+understand that. So first of all, it is going to store the
+
+00:44:08.660 --> 00:44:11.840
+PDF. First part. So let's suppose it has stored a PDF as a
+
+00:44:11.840 --> 00:44:15.840
+temp.pdf. Okay. Now, once this has been stored into a temp
+
+00:44:15.840 --> 00:44:20.020
+.pdf, I'm calling what I'm calling my PDF reader. Basically
+
+00:44:20.020 --> 00:44:23.100
+this one I'm calling the very first function, which we have
+
+00:44:23.100 --> 00:44:26.020
+written. We are calling that now, once that call will be
+
+00:44:26.020 --> 00:44:29.500
+done. So it is going to extract all the raw data. Then I'm
+
+00:44:29.500 --> 00:44:32.380
+trying to pass into a, for a chucking so that it will be
+
+00:44:32.380 --> 00:44:35.120
+able to create the chucking chucks basically. Now this
+
+00:44:35.120 --> 00:44:37.720
+chucks I'm trying to pass where inside my vector database.
+
+00:44:37.860 --> 00:44:40.260
+Now. So I'm going to call my embedding. I'm going to call my
+
+00:44:40.260 --> 00:44:42.660
+embedding. Then it will show you that. Okay. Your PDF upload
+
+00:44:42.660 --> 00:44:45.680
+is successful. So till this point, PDF upload will be done,
+
+00:44:45.760 --> 00:44:48.640
+means PDF uploading, chucking, and then converting it into
+
+00:44:48.640 --> 00:44:56.770
+the embeddings, converting into the embeddings. Now if user
+
+00:44:56.770 --> 00:44:59.650
+is going to ask a question, now PDF upload is done. My PDF
+
+00:44:59.650 --> 00:45:03.050
+is ready now. So once your question will be asked, so what
+
+00:45:03.050 --> 00:45:06.190
+it will try to do is, so it will try to, first of all, take
+
+00:45:06.190 --> 00:45:08.490
+a user question. So whatever question that you are going to
+
+00:45:08.490 --> 00:45:13.210
+put up. It is going to. Take a chunk. It is going to take a
+
+00:45:13.210 --> 00:45:17.090
+index and it is going to take the embeddings one by one, one
+
+00:45:17.090 --> 00:45:20.530
+by one, one by one. So Chuck, then Chuck for the PDF,
+
+00:45:20.610 --> 00:45:23.610
+basically indexes and then embeddings and then user
+
+00:45:23.610 --> 00:45:26.710
+questions. So which will be coming from here? It is going
+
+00:45:26.710 --> 00:45:30.090
+to, and based on that, it is going to retrieve the entire
+
+00:45:30.090 --> 00:45:33.070
+context. So technically I'm trying to perform RIG operation
+
+00:45:33.070 --> 00:45:37.270
+label one over here. Once it is going to give me the
+
+00:45:37.270 --> 00:45:40.450
+context, then what I'm going to do. So I'm going to call my
+
+00:45:40.450 --> 00:45:43.310
+ask URI with the context. So there I'm trying to pass user
+
+00:45:43.310 --> 00:45:46.230
+question, context and the conversational memory. Initially
+
+00:45:46.230 --> 00:45:49.330
+that conversational memory is going to be zero. Now let me,
+
+00:45:49.350 --> 00:45:52.610
+let me run this what, and then let me show you this entire
+
+00:45:52.610 --> 00:45:59.190
+application. So here, S T R E A M L I T streamlint run PDF
+
+00:45:59.190 --> 00:46:07.910
+RIG bot.py file S T R E A M S T R E A M L I T. Let run. And
+
+00:46:07.910 --> 00:46:13.590
+then PDF RIG bot. Yeah. So now my application is up and
+
+00:46:13.590 --> 00:46:16.450
+running as you can see, and it is giving me an option to
+
+00:46:16.450 --> 00:46:22.310
+upload the PDF. So I'll just try to upload some PDF where I
+
+00:46:22.310 --> 00:46:23.850
+have some sort of information.
+
+00:46:28.870 --> 00:46:32.790
+Okay. So I'll try to upload one of these PDF. I have other
+
+00:46:32.790 --> 00:46:37.730
+PDFs as well. My SQL installation guide I have. Okay. Python
+
+00:46:37.730 --> 00:46:40.150
+assignment modules. Okay, fine.
+
+00:46:42.840 --> 00:46:46.500
+So I'm going to upload one of the PDF from my system. Now
+
+00:46:46.500 --> 00:46:51.780
+PDF load loaded and indexed fine. Now I'll go and I'll check
+
+00:46:51.780 --> 00:46:57.780
+my console. So here, if I'll show you temp.pdf. So this is a
+
+00:46:57.780 --> 00:47:01.880
+PDF name that the system has given. And this is what I have,
+
+00:47:01.900 --> 00:47:04.580
+I had given basically, right. I had given temp.pdf. So in
+
+00:47:04.580 --> 00:47:10.120
+that way it is trying to store it. Right. And then once it
+
+00:47:10.120 --> 00:47:12.980
+is done, it is able to create a chunk. It is able to even
+
+00:47:12.980 --> 00:47:16.480
+store it into the vector DB, Facebook as semantic search.
+
+00:47:16.620 --> 00:47:21.200
+Now, if I'm going to ask a question that give me a summary
+
+00:47:21.200 --> 00:47:24.500
+of this document, yeah.
+
+00:47:31.680 --> 00:47:34.620
+So this is the summary that this document provides a step-by
+
+00:47:34.620 --> 00:47:36.900
+-step guide for installation of my SQL on windows. It
+
+00:47:36.900 --> 00:47:39.200
+includes instruction to download appropriate this, this,
+
+00:47:39.240 --> 00:47:41.400
+this, this, this, and this was available, right? This was
+
+00:47:41.400 --> 00:47:48.260
+available. How many pages? How many pages were there? In
+
+00:47:48.260 --> 00:47:50.260
+this document?
+
+00:48:01.050 --> 00:48:04.350
+So I don't think that it is going to hold up a number of
+
+00:48:04.350 --> 00:48:06.770
+page because we are now nowhere storing this information
+
+00:48:06.770 --> 00:48:10.530
+because we are trying to extract the raw information and
+
+00:48:10.530 --> 00:48:13.310
+then we are trying to convert that into a chunk. So I don't
+
+00:48:13.310 --> 00:48:16.030
+think that it should be able to answer. The provided
+
+00:48:16.030 --> 00:48:18.190
+document appeared to be brief installation guide for my SQL
+
+00:48:18.190 --> 00:48:20.890
+consisting of two main part with the number system, this,
+
+00:48:20.910 --> 00:48:22.910
+this, this, part one, part two. So it is able to understand
+
+00:48:22.910 --> 00:48:25.890
+that what is the part which was there inside the data, but
+
+00:48:25.890 --> 00:48:29.250
+yeah. So pages, obviously it will not be able to, uh, like,
+
+00:48:29.350 --> 00:48:36.950
+uh, understand. Okay. So now I have to show you one thing.
+
+00:48:38.330 --> 00:48:42.170
+Now see, I'm trying to print over here. If you have
+
+00:48:42.170 --> 00:48:45.350
+observed, I'm trying to print our conversational memory. So
+
+00:48:45.350 --> 00:48:48.610
+initially my conversational memory will be nothing. And then
+
+00:48:48.610 --> 00:48:52.170
+here, this is something that it is trying to hold inside the
+
+00:48:52.170 --> 00:48:55.330
+conversational memory in a first goal. Then into a second
+
+00:48:55.330 --> 00:48:58.530
+goal. This is something that it is trying to store now here.
+
+00:48:58.610 --> 00:49:00.850
+So what it is trying to store? Just go through it. So role
+
+00:49:00.850 --> 00:49:03.590
+user content gave me a summary of this document. So this is
+
+00:49:03.590 --> 00:49:06.310
+the user question, role assistance content, this document to
+
+00:49:06.310 --> 00:49:08.450
+provide a step-by-step guide. This, this, this, this, this
+
+00:49:08.450 --> 00:49:11.830
+run the installer, select this, this, this, this is the data
+
+00:49:12.210 --> 00:49:14.790
+which is coming. This is the data which is coming from the,
+
+00:49:14.830 --> 00:49:21.090
+uh, system basically, right? So as per our code successfully
+
+00:49:21.090 --> 00:49:25.570
+question and a reply, I'm able to add question and the reply
+
+00:49:25.570 --> 00:49:30.030
+now next time, right? So how many pages were there into this
+
+00:49:30.030 --> 00:49:33.990
+document? So here role assistance content, and this is the
+
+00:49:33.990 --> 00:49:37.790
+entire content. It is able to store entire content. It is
+
+00:49:37.790 --> 00:49:41.470
+able to store now. So you must be able to see that every
+
+00:49:41.470 --> 00:49:46.810
+time it is trying to store just one last conversation and
+
+00:49:46.810 --> 00:49:50.550
+it's one last question and it's reply any idea guys, why
+
+00:49:50.550 --> 00:49:56.350
+every time it is trying to store one last one. Last
+
+00:49:56.350 --> 00:49:56.770
+question.
+
+00:50:05.110 --> 00:50:07.890
+Okay. So which one you are asking me to share? Let me share
+
+00:50:07.890 --> 00:50:10.710
+this a complete one is starting from the conversational
+
+00:50:10.710 --> 00:50:10.950
+memory.
+
+00:50:15.710 --> 00:50:18.710
+Yeah. So any, my question is guys that, uh, it is, it is
+
+00:50:18.710 --> 00:50:21.190
+just trying to store maybe like a one single question. The
+
+00:50:21.190 --> 00:50:24.810
+last one, right. As of now, now, if I'm going to like upload
+
+00:50:24.810 --> 00:50:28.930
+or maybe like next PDF, where is my UI interface? Yeah.
+
+00:50:37.910 --> 00:50:41.750
+Let me check if I have some very, very long PDF or not.
+
+00:50:52.060 --> 00:50:57.840
+Okay. Loaded. How many? How many questions are there in this
+
+00:50:57.840 --> 00:50:59.320
+document?
+
+00:51:05.260 --> 00:51:08.400
+Okay. So document is having contained total 28 number of
+
+00:51:08.400 --> 00:51:12.420
+questions. Fine. So I believe, uh, my document, Python loop
+
+00:51:12.420 --> 00:51:16.820
+assignment, question number. So if I'm going to cross check
+
+00:51:16.820 --> 00:51:17.440
+and
+
+00:51:20.830 --> 00:51:27.370
+loop assignment, uh, there are 30 questions. So it has no,
+
+00:51:27.450 --> 00:51:29.670
+there are 50, I believe I have uploaded this one, right?
+
+00:51:29.710 --> 00:51:37.580
+Python loop assignment. Hmm. Now there was a 50 question. It
+
+00:51:37.580 --> 00:51:41.320
+is giving me just 28. Hmm.
+
+00:51:45.430 --> 00:51:46.850
+Contained total 28.
+
+00:51:50.680 --> 00:51:55.120
+Yeah. So again, uh, one issue, one big issue. So the
+
+00:51:55.120 --> 00:51:59.760
+response, which I'm able to get from this one is, uh, not
+
+00:51:59.760 --> 00:52:03.340
+that, uh, accurate. So maybe because of the chunk, I
+
+00:52:03.340 --> 00:52:07.320
+believe. So if I'm going to change my chunk size, I think it
+
+00:52:07.320 --> 00:52:09.780
+will start giving me a better response. Uh, I think it will
+
+00:52:09.780 --> 00:52:11.120
+start giving me a better response. Okay. Okay. So, uh, give
+
+00:52:11.120 --> 00:52:12.720
+me, give
+
+00:52:20.210 --> 00:52:21.630
+me, uh,
+
+00:52:25.480 --> 00:52:32.380
+pattern printing question from this assignment.
+
+00:52:39.810 --> 00:52:44.130
+Okay. So 33 number question is a pattern printing. Then, uh,
+
+00:52:44.190 --> 00:52:48.130
+46 number question. These are the two question where I had a
+
+00:52:48.130 --> 00:52:50.210
+pattern printing 36
+
+00:52:52.100 --> 00:52:58.080
+number question, but yeah, I have, uh, into 30 plus 31 plus
+
+00:52:58.080 --> 00:53:03.260
+32 plus 33. Okay. Plus 43 plus 46. So I have so many
+
+00:53:03.260 --> 00:53:06.000
+questions with respect to a pattern printing, but, uh, it
+
+00:53:06.000 --> 00:53:09.160
+is, it is not able to understand the way I'm trying to
+
+00:53:09.160 --> 00:53:12.620
+explain. So again, system failed now.
+
+00:53:14.760 --> 00:53:17.000
+So 33 and 46 only 33,
+
+00:53:20.200 --> 00:53:30.460
+31, 32, 33, 33 and then 46. Okay. But yeah. So, uh, give me
+
+00:53:30.460 --> 00:53:35.520
+all, give me all the patterns. Uh, pattern printing question
+
+00:53:35.520 --> 00:53:37.520
+from the assignment for
+
+00:53:44.280 --> 00:53:45.060
+the six and 33.
+
+00:53:50.040 --> 00:53:58.820
+So even here we have something like pattern, even 33, but
+
+00:53:58.820 --> 00:54:05.340
+still it is not giving me. So again, a field gave me
+
+00:54:05.340 --> 00:54:09.200
+somebody anyhow, somebody though is like not a big deal, uh,
+
+00:54:09.280 --> 00:54:11.900
+to take out from this inform, uh, take out the data from
+
+00:54:11.900 --> 00:54:16.660
+this one. Let me upload some, some
+
+00:54:27.480 --> 00:54:29.480
+results. You may have something, I
+
+00:54:34.880 --> 00:54:40.100
+don't think that, okay. I have some resume. Okay.
+
+00:54:43.740 --> 00:54:46.240
+I don't know who's resume is this one, but yeah, I'm, I'm,
+
+00:54:46.300 --> 00:54:50.100
+it's available in my system. So I'm just like, um, going to
+
+00:54:50.100 --> 00:54:57.360
+ask a question. Give me all the company name where, where
+
+00:54:59.410 --> 00:55:02.530
+this guy have worked.
+
+00:55:10.560 --> 00:55:14.300
+Okay. So net west group. This is the only one company. It is
+
+00:55:14.300 --> 00:55:23.060
+trying to give. Uh, how many year of experience this person
+
+00:55:23.060 --> 00:55:26.120
+have three
+
+00:55:31.240 --> 00:55:33.340
+year of experience as a data list. Okay. Then, then it's
+
+00:55:33.340 --> 00:55:37.040
+justified. Maybe I'll have to look into the resume and cross
+
+00:55:37.040 --> 00:55:46.130
+check, uh, extract, uh, get URL from this resume. If there
+
+00:55:46.130 --> 00:55:48.030
+is a GitHub URL, doesn't
+
+00:55:52.510 --> 00:55:53.710
+have any GitHub URL. Okay.
+
+00:55:56.500 --> 00:55:58.300
+Extract a LinkedIn ID.
+
+00:56:06.980 --> 00:56:09.360
+The LinkedIn ID is not as pretty as the LinkedIn ID
+
+00:56:09.360 --> 00:56:14.790
+mentioned that in the content information. Okay. Fine. So
+
+00:56:14.790 --> 00:56:18.930
+yeah, it's working fine for me. And now if I'll go and check
+
+00:56:18.930 --> 00:56:23.090
+my memory, so which is the main part. So it is trying to
+
+00:56:23.090 --> 00:56:26.950
+retain only one single memory. So every time it is trying to
+
+00:56:26.950 --> 00:56:30.550
+like update the memory and it is trying to, uh, like, uh,
+
+00:56:30.550 --> 00:56:34.150
+keep only one single conversation. Maybe what we can do is.
+
+00:56:34.150 --> 00:56:38.410
+So we can try to. Add everything into the memory one by one,
+
+00:56:38.430 --> 00:56:41.770
+one by one. So maybe we can try to say that, try to retain
+
+00:56:41.770 --> 00:56:45.490
+only like a last 10 conversation. Maybe try to retain only
+
+00:56:45.490 --> 00:56:49.650
+last, like a five conversation, or maybe like, uh, try to
+
+00:56:49.650 --> 00:56:53.550
+retain only a hundred conversation. So this is how we try to
+
+00:56:53.550 --> 00:56:57.690
+handle a memory in general. And then, uh, we even try to say
+
+00:56:57.690 --> 00:57:01.330
+that, try to store some of the information on a client side
+
+00:57:01.330 --> 00:57:04.290
+and then try to store some of the information on a server
+
+00:57:04.290 --> 00:57:07.890
+side. Okay. Basically. So this is how we try to deal with
+
+00:57:07.890 --> 00:57:11.110
+the memory. As of now, as you can see that I have created a
+
+00:57:11.110 --> 00:57:14.950
+global variable. So this variable is out, uh, basically. So
+
+00:57:14.950 --> 00:57:19.850
+every time it will like, uh, try to build a new memory out
+
+00:57:19.850 --> 00:57:22.250
+of this one, and then I'm just trying to print it, but yeah,
+
+00:57:22.350 --> 00:57:25.590
+I can, I can even make sure that, that I'm going to add
+
+00:57:25.590 --> 00:57:29.790
+basically, uh, like, uh, 10 of memory or 20 of memory or any
+
+00:57:29.790 --> 00:57:32.590
+number of memories that I want, but that is going to be a
+
+00:57:32.590 --> 00:57:35.550
+costly operation because I'm trying to keep it inside. Uh,
+
+00:57:35.690 --> 00:57:39.390
+like, uh, this particular, uh, list, which is going to
+
+00:57:39.390 --> 00:57:41.950
+occupy some of the space inside my main memory.
+
+00:57:44.910 --> 00:57:50.030
+So here, let me take some question. I was saying, can you
+
+00:57:50.030 --> 00:57:55.490
+upload again and check or maybe context issue, limited
+
+00:57:55.490 --> 00:57:59.210
+chunk. Yeah, actually it's a context issue. So the last
+
+00:57:59.210 --> 00:58:02.430
+issue that we were facing, right. If I'm going to increase a
+
+00:58:02.430 --> 00:58:05.670
+chunk over here because it's just a 500, so maybe I can say
+
+00:58:05.670 --> 00:58:09.070
+5,000. First of all, right. And then if I'm going to
+
+00:58:09.070 --> 00:58:13.390
+increase even a overlap, so the same system will start
+
+00:58:13.390 --> 00:58:17.270
+performing better basically. So where I was asking about,
+
+00:58:17.270 --> 00:58:21.350
+uh, like a number of quotient, right. So maybe I, I let me,
+
+00:58:21.410 --> 00:58:24.670
+let me change this one and then let me go and ask how many,
+
+00:58:24.710 --> 00:58:28.610
+uh, so chunk size is 5,000 overlap is thousand not control
+
+00:58:28.610 --> 00:58:28.930
+S.
+
+00:58:31.620 --> 00:58:36.960
+So here, let me restart once all that should work without
+
+00:58:36.960 --> 00:58:42.100
+restart. But yeah. Just to be the safer side. So this was
+
+00:58:42.100 --> 00:58:45.000
+basically a, for this, it was failing, right? So this was
+
+00:58:45.000 --> 00:58:48.420
+basically a Python loop assignment. I'm going to upload
+
+00:58:48.420 --> 00:58:51.120
+again, Python loop assignment and,
+
+00:59:02.630 --> 00:59:07.810
+uh, how many questions are there
+
+00:59:09.980 --> 00:59:12.040
+in this document?
+
+00:59:17.780 --> 00:59:21.420
+50 questions. Yeah. So see last time it was failing and this
+
+00:59:21.420 --> 00:59:24.600
+time it is able to recognize that there is a 50 quotient.
+
+00:59:24.660 --> 00:59:27.000
+And yes, there is actually a 50 quotient inside this
+
+00:59:27.000 --> 00:59:31.120
+particular document. So this is something that we all should
+
+00:59:31.120 --> 00:59:34.260
+know as a techie that, okay, so how, how I can try to make a
+
+00:59:34.260 --> 00:59:37.120
+system better by the way. So I know that, that if I'm going
+
+00:59:37.120 --> 00:59:39.200
+to increase a chunk size, if I'm going to increase the
+
+00:59:39.200 --> 00:59:43.160
+overlap by default, this problem will be fixed. So I'm able
+
+00:59:43.160 --> 00:59:46.320
+to fix it. Even I can try to fix a memory problem over here.
+
+00:59:46.400 --> 00:59:48.460
+So I can try to save some of the memory on a client side,
+
+00:59:48.540 --> 00:59:51.060
+some on the server side. This is what even we are doing
+
+00:59:51.060 --> 00:59:55.260
+inside the URI apart from that. So, uh, instead of saving
+
+00:59:55.260 --> 00:59:58.720
+only one last conversation question. And reply. So maybe I
+
+00:59:58.720 --> 01:00:03.180
+can try to, uh, like, uh, save a multiple one in a
+
+01:00:03.180 --> 01:00:05.840
+different, different way, right? Maybe some sort of a key
+
+01:00:05.840 --> 01:00:08.480
+information only I'm going to store, not all the information
+
+01:00:08.480 --> 01:00:10.760
+I'm going to store because maybe all these informations are
+
+01:00:10.760 --> 01:00:14.540
+not pretty much useful for me. So there are a lot of
+
+01:00:14.540 --> 01:00:17.180
+different, different way where we try to design this entire
+
+01:00:17.180 --> 01:00:20.140
+system as per the requirement. So they were saying, please
+
+01:00:20.140 --> 01:00:25.300
+define how chunk size effect the, uh, result in a brief. See
+
+01:00:25.300 --> 01:00:27.620
+chunk size. When you are saying. When you are saying a 5
+
+01:00:27.620 --> 01:00:31.980
+,000, right? So you are trying to create one big, uh,
+
+01:00:32.220 --> 01:00:37.480
+basically, uh, list on, then all together, you are trying to
+
+01:00:37.480 --> 01:00:40.720
+convert this one into a one single embedding. So obviously
+
+01:00:40.720 --> 01:00:44.020
+if Mike, so in that case, your context length itself is
+
+01:00:44.020 --> 01:00:46.420
+very, very big, right? And so obviously it is going to
+
+01:00:46.420 --> 01:00:50.380
+effect. It will be able to give you a pretty much good
+
+01:00:50.380 --> 01:00:53.800
+matching. If your chunk size itself is, if your data size
+
+01:00:53.800 --> 01:00:57.920
+itself is like a sufficient enough. If it is very small,
+
+01:00:58.100 --> 01:01:00.880
+then obviously it is, it is not going to fetch because all
+
+01:01:00.880 --> 01:01:03.740
+this information will not be available inside my embeddings.
+
+01:01:05.580 --> 01:01:10.040
+So this is one of the project guys, I think we all are able
+
+01:01:10.040 --> 01:01:13.640
+to do it. I hope you are liking this particular project. Now
+
+01:01:13.640 --> 01:01:19.840
+let's go ahead and let's try to, uh, like a look into next
+
+01:01:19.840 --> 01:01:22.920
+project. So next project is what? So next project is again
+
+01:01:22.920 --> 01:01:26.860
+somewhat related to this one, but the next project is
+
+01:01:26.860 --> 01:01:33.640
+basically going to. Uh, help me out in terms of, uh, passing
+
+01:01:33.640 --> 01:01:37.000
+a multiple document. And then with respect to multiple
+
+01:01:37.000 --> 01:01:40.360
+document, I will be able to perform a search operation. So
+
+01:01:40.360 --> 01:01:43.360
+the next project is going to be extension of this same
+
+01:01:43.360 --> 01:01:47.640
+project, but, uh, yeah, so I'm going to like, uh, build it
+
+01:01:47.640 --> 01:01:51.100
+in such a way that it will be able to do a multiple document
+
+01:01:51.100 --> 01:01:54.780
+search at a time, not just one, but a multiple document
+
+01:01:54.780 --> 01:01:58.140
+search at a time it will be able to perform. Almost. Uh,
+
+01:01:58.320 --> 01:02:01.220
+same thing we are going to use, uh, not to like a very
+
+01:02:01.220 --> 01:02:03.820
+different, but yeah, it is going to be a little bit
+
+01:02:03.820 --> 01:02:07.860
+different project that we are going to build. So here I'm
+
+01:02:07.860 --> 01:02:12.700
+going to create one more file in the same directory, multi
+
+01:02:12.700 --> 01:02:19.660
+underscore document underscore a C A R C A R C H search dot
+
+01:02:19.660 --> 01:02:22.120
+PI file. So this is going to help me out in terms of
+
+01:02:22.120 --> 01:02:25.360
+multiple document upload as well as multiple document search
+
+01:02:25.360 --> 01:02:30.800
+at a time. So here. Like I said, this one is just an
+
+01:02:30.800 --> 01:02:34.480
+extension of the previous project, nothing much. And let me
+
+01:02:34.480 --> 01:02:36.720
+copy my URLs
+
+01:02:39.700 --> 01:02:43.780
+and API key, same URL, same API key. I'm going to use a
+
+01:02:43.780 --> 01:02:46.800
+couple of more library now.
+
+01:03:05.040 --> 01:03:06.940
+So extract
+
+01:03:11.060 --> 01:03:14.380
+text from the PDF, same kind of function, extract data from
+
+01:03:14.380 --> 01:03:16.920
+the PDF. So whatever PDF file that you are going to upload,
+
+01:03:17.040 --> 01:03:20.080
+uh, basically it is going to extract the data out of this
+
+01:03:20.080 --> 01:03:23.680
+one. Now. Uh, same function we are going to use a chunk
+
+01:03:23.680 --> 01:03:27.080
+size. So same function, nothing different. Obviously we
+
+01:03:27.080 --> 01:03:29.420
+should increase the chunk size over here. We should increase
+
+01:03:29.420 --> 01:03:32.240
+the overlap over here, but exact same function, the function
+
+01:03:32.240 --> 01:03:36.620
+that I have used even before. Same thing, right? And then
+
+01:03:36.620 --> 01:03:40.680
+similar kind of a same function for my URI embeddings, get
+
+01:03:40.680 --> 01:03:46.260
+URI embeddings, same kind of function, then same function
+
+01:03:46.260 --> 01:03:49.820
+for building my vector DV. So build a FASI indexes, vector
+
+01:03:49.820 --> 01:03:52.200
+DV. So exact same function I'm using. Uh, it is going to be
+
+01:03:52.200 --> 01:03:53.200
+the same function. I'm going to return index and embeddings.
+
+01:03:53.480 --> 01:03:59.900
+That's it. And then search chunk, same function, get
+
+01:04:15.100 --> 01:04:18.620
+answer from the context URI API key.
+
+01:04:24.270 --> 01:04:27.170
+So little bit of modification has been done in this one, but
+
+01:04:27.170 --> 01:04:30.230
+yeah, so just calling my LLMs now.
+
+01:04:38.800 --> 01:04:42.680
+So from a UI side, the only changes that I have done in this
+
+01:04:42.680 --> 01:04:46.400
+project is except a multiple file true. So the previous one,
+
+01:04:46.500 --> 01:04:49.720
+so by default, except the multiple file was false. But here,
+
+01:04:49.840 --> 01:04:52.480
+so I have just enabled except multiple file is equal to
+
+01:04:52.480 --> 01:04:55.800
+true. So now you will be able to upload a multiple files,
+
+01:04:55.980 --> 01:05:00.860
+not just one single file. And then once you are going to
+
+01:05:00.860 --> 01:05:05.280
+upload a file, so we have to go through each and every file
+
+01:05:05.280 --> 01:05:09.120
+one by one, one by one, one by one, one by one. We have to
+
+01:05:09.120 --> 01:05:13.380
+extract a data out of those, all the files that you have
+
+01:05:13.380 --> 01:05:17.680
+uploaded so that I will be able to answer from all the
+
+01:05:17.680 --> 01:05:20.640
+files. The objective of this project is so multi-document
+
+01:05:20.640 --> 01:05:23.900
+you can upload, and then you can try to interact with a
+
+01:05:23.900 --> 01:05:27.160
+multiple document content at a time. So that's a, that's a
+
+01:05:27.160 --> 01:05:30.720
+whole idea. So the here, this
+
+01:05:35.360 --> 01:05:40.740
+is going to this simple Python is going to take all the
+
+01:05:40.740 --> 01:05:44.540
+files one by one, loop it through all the files, open up,
+
+01:05:44.540 --> 01:05:48.980
+extract a data, and then add it. And one single data, it is
+
+01:05:48.980 --> 01:05:52.860
+going to return out of the entire file as a. Part of this
+
+01:05:52.860 --> 01:05:55.760
+for loop, as you can see, right? So one single data, even
+
+01:05:55.760 --> 01:05:58.360
+though if I'm going to pass 10 files, but system is trying
+
+01:05:58.360 --> 01:06:03.140
+to consider only one data. So technically after this point,
+
+01:06:03.400 --> 01:06:07.160
+this project became this project. There is no difference,
+
+01:06:07.360 --> 01:06:09.960
+right? Right guys, everyone. That's the reason I told you
+
+01:06:09.960 --> 01:06:11.940
+it's a similar kind of a things that we are going to build.
+
+01:06:13.440 --> 01:06:17.140
+Can I say that after this step, right? Forget about all the
+
+01:06:17.140 --> 01:06:19.340
+other functions because all the other functions are exactly
+
+01:06:19.340 --> 01:06:21.920
+same. There is no difference at all. But can I say that?
+
+01:06:21.920 --> 01:06:27.160
+That after this step, this project and the previous project
+
+01:06:27.160 --> 01:06:30.060
+is actually same because at the end of the day, I'm trying
+
+01:06:30.060 --> 01:06:33.920
+to get only one text and with the help of one, like a single
+
+01:06:33.920 --> 01:06:37.040
+big one, I'm trying to split it. I'm trying to chunk it. I'm
+
+01:06:37.040 --> 01:06:40.780
+trying to like a story into the vector DB and the whole
+
+01:06:40.780 --> 01:06:42.700
+procedure is going to be same. There is, there is no
+
+01:06:42.700 --> 01:06:45.000
+difference in the procedure that you will be able to find
+
+01:06:45.000 --> 01:06:49.260
+out. So this is what it is going to like a do, and then it
+
+01:06:49.260 --> 01:06:53.800
+is going to like, uh, uh, give you the, uh, response. So
+
+01:06:53.800 --> 01:06:55.380
+here I
+
+01:06:58.380 --> 01:07:01.880
+have to show you a couple of more things, which, uh, I will
+
+01:07:01.880 --> 01:07:07.040
+show you if query make a proper indentation. Okay. So let
+
+01:07:07.040 --> 01:07:09.460
+me, let me give you a demo of this one, first of all. So
+
+01:07:09.460 --> 01:07:13.760
+this file name is a multi-document S T R E M L I T. Then you
+
+01:07:13.760 --> 01:07:18.680
+can execute it in your system. Streamlit run hyphen R and,
+
+01:07:18.680 --> 01:07:24.380
+uh, multi-document. Streamlit run not hyphen R. So let me
+
+01:07:24.380 --> 01:07:29.570
+give you a demo of this one first of all. Yeah. Okay. So now
+
+01:07:29.570 --> 01:07:33.950
+here, uh, this AI powered multiple PDF search engine, we can
+
+01:07:33.950 --> 01:07:37.730
+try to upload as many document as I want.
+
+01:07:52.540 --> 01:07:56.420
+So here I'm uploading and, uh, yeah,
+
+01:08:03.280 --> 01:08:08.770
+so many documents it is able to upload. Okay. There is some,
+
+01:08:08.770 --> 01:08:13.450
+uh, problem with this, showing one of three, two of three.
+
+01:08:13.530 --> 01:08:16.050
+Okay. So yeah, all the document, as you can see, it's been
+
+01:08:16.050 --> 01:08:19.730
+uploaded, right? So three. Then three and then two. So in
+
+01:08:19.730 --> 01:08:23.490
+total eight document has been uploaded. Now once it is going
+
+01:08:23.490 --> 01:08:25.770
+to upload, it simply means that, that everything is
+
+01:08:25.770 --> 01:08:30.990
+available into my vector DV. Now, uh, give me a summary of
+
+01:08:30.990 --> 01:08:32.350
+this or
+
+01:08:35.010 --> 01:08:45.050
+give me a loop based assignment question from document.
+
+01:08:54.260 --> 01:08:57.260
+What do you document will be duplicated by mistake? We are
+
+01:08:57.260 --> 01:09:00.980
+not taking care of that by the way. Okay. Not defined a plot
+
+01:09:00.980 --> 01:09:02.760
+vector, which
+
+01:09:11.780 --> 01:09:18.320
+line? So one 29 number line plot vector. Okay. One
+
+01:09:21.590 --> 01:09:23.930
+29 plot
+
+01:09:26.710 --> 01:09:28.450
+vector, not
+
+01:09:32.580 --> 01:09:33.140
+defined.
+
+01:09:39.910 --> 01:09:44.230
+I'm doing some sort of a visualization in this one. So there
+
+01:09:44.230 --> 01:09:48.350
+is a function which I have missed. Uh, let me keep this
+
+01:09:48.350 --> 01:09:51.390
+function here. All
+
+01:09:56.120 --> 01:09:56.840
+right. Once again.
+
+01:10:29.720 --> 01:10:30.840
+Yeah. Give me, uh,
+
+01:10:52.780 --> 01:10:55.940
+so loop assignment in the documents are print all the
+
+01:10:55.940 --> 01:10:57.860
+element, this, this, this, this, this loop through the
+
+01:10:57.860 --> 01:11:01.460
+matrixes. So this is basically like a, something that it is
+
+01:11:01.460 --> 01:11:03.940
+able to retrieve, which looks good to me. And again,
+
+01:11:04.060 --> 01:11:06.920
+formatting wise, it's looked pretty much good now, top
+
+01:11:06.920 --> 01:11:11.100
+relevant chunks. So it is trying to even, I'm trying to show
+
+01:11:11.100 --> 01:11:13.860
+you. So basically in a code, I have written that, that, uh,
+
+01:11:13.980 --> 01:11:19.540
+so try to showcase even a top relevant chunks to me. So if
+
+01:11:19.540 --> 01:11:21.940
+I'm saying like a three. So this is chunk. This is chunk
+
+01:11:21.940 --> 01:11:24.500
+number one. This is chunk number two, top K basically,
+
+01:11:24.640 --> 01:11:28.540
+right? So try to showcase even a chunk. Now those who are
+
+01:11:28.540 --> 01:11:31.280
+confused, right? So how chunk looks like and what is
+
+01:11:31.280 --> 01:11:34.260
+basically called as chunk. This is a chunk, which I was
+
+01:11:34.260 --> 01:11:37.440
+talking about, right? So we are printing even a chunk part
+
+01:11:37.440 --> 01:11:39.760
+over here and as you can see, it's not a complete one,
+
+01:11:39.820 --> 01:11:41.900
+right? Because wherever there will be a chunk size, it will
+
+01:11:41.900 --> 01:11:46.680
+chop off and it will try to send to the next one now. So a
+
+01:11:46.680 --> 01:11:51.100
+vector similarity visualization. So here, let me make it.
+
+01:11:53.020 --> 01:11:58.080
+Small, which I'm not able to do it. So here it is trying to
+
+01:11:58.080 --> 01:12:01.380
+even a, so you, I'm just trying to like use a matplotlib,
+
+01:12:01.560 --> 01:12:04.460
+which is one of the worst one to plot the graph, but yeah,
+
+01:12:04.540 --> 01:12:07.320
+I'm just trying to show you that the chucks that you have
+
+01:12:07.320 --> 01:12:10.440
+and the query that you are trying to pass, what is our
+
+01:12:10.440 --> 01:12:13.100
+distance between these two? So on this particular scale,
+
+01:12:13.220 --> 01:12:17.260
+plus here, I'm trying to even show you a conversational
+
+01:12:17.260 --> 01:12:20.320
+memory. I can show you maybe by printing it, which I was
+
+01:12:20.320 --> 01:12:22.740
+doing it last time. Yeah. It's all itself. So I was printing
+
+01:12:22.740 --> 01:12:26.760
+it and I was trying to like show it to you, but here there's
+
+01:12:28.300 --> 01:12:30.340
+something which I'm holding into the memory and I'm even
+
+01:12:30.340 --> 01:12:34.140
+able to like a printed in this particular place. The simple
+
+01:12:34.140 --> 01:12:38.580
+part of this entire thing is that yes, I'm able to upload as
+
+01:12:38.580 --> 01:12:42.560
+many document as I want and I will be able to do a
+
+01:12:42.560 --> 01:12:46.140
+conversation with this entire document that I have uploaded.
+
+01:12:46.580 --> 01:12:50.140
+So now let's do one thing.
+
+01:13:02.380 --> 01:13:05.520
+This is a code guys. So. So maybe you can try to execute it
+
+01:13:05.520 --> 01:13:08.580
+once and then let me know. Right?
+
+01:13:18.740 --> 01:13:21.340
+Now Ranjith has asked me a question. What if documents are
+
+01:13:21.340 --> 01:13:24.640
+duplicated by mistake? If documents are duplicated, we are
+
+01:13:24.640 --> 01:13:26.500
+not handling that by the way over here.
+
+01:13:30.510 --> 01:13:33.090
+Because at the end of the day, if you'll think logically, so
+
+01:13:33.090 --> 01:13:35.150
+we are trying to store something into the embeddings
+
+01:13:35.150 --> 01:13:39.550
+embeddings. And again, if documents are duplicate, it's
+
+01:13:39.550 --> 01:13:42.650
+embedding is going to be zero, but it's still, it's not
+
+01:13:42.650 --> 01:13:47.810
+advisable to discard those information. And if we have to
+
+01:13:47.810 --> 01:13:50.250
+prevent that, so basically I have to keep all the previous
+
+01:13:50.250 --> 01:13:53.470
+documents and then if someone is going to upload a new
+
+01:13:53.470 --> 01:13:56.490
+document, so I have to match the exact similarity between
+
+01:13:56.490 --> 01:13:59.830
+the previous one and the new one. So again, that is going to
+
+01:13:59.830 --> 01:14:03.070
+give me a lot of pain in terms of doing this kind of a two
+
+01:14:03.070 --> 01:14:06.750
+document matching and as document will grow, so it is going
+
+01:14:06.750 --> 01:14:11.610
+to be more painful. So it's document is a duplicate, leave
+
+01:14:11.610 --> 01:14:14.470
+it, let it be in that way. And let's try to create the
+
+01:14:14.470 --> 01:14:17.450
+embeddings and store it inside your system.
+
+01:14:24.630 --> 01:14:28.330
+So everything is same. Like I said, after this for loop that
+
+01:14:28.330 --> 01:14:31.030
+we are trying to run, right after this for loop. So this
+
+01:14:31.030 --> 01:14:33.450
+project and the previous project is exactly same. There is
+
+01:14:33.450 --> 01:14:35.510
+no difference. You will be able to find out because
+
+01:14:35.510 --> 01:14:38.990
+eventually we are trying to like take one single text
+
+01:14:38.990 --> 01:14:39.310
+information.
+
+01:14:53.540 --> 01:14:55.800
+Okay. So question for me, guys, anyone.
+
+01:15:18.820 --> 01:15:21.460
+So they're quite saying when usually we are working on this
+
+01:15:21.460 --> 01:15:24.540
+kind of a task in a Langchain framework. The chunk size does
+
+01:15:24.540 --> 01:15:29.740
+not affect much. Is chunk size affecting more for working
+
+01:15:29.740 --> 01:15:31.700
+only using the Python function without a Langchain
+
+01:15:31.700 --> 01:15:35.480
+framework? Yeah. See, so in case of Langchain, when we are
+
+01:15:35.480 --> 01:15:37.900
+talking about Langchain, right? So a lot of like things with
+
+01:15:37.900 --> 01:15:40.660
+respect to a chunk size, it will be able to handle
+
+01:15:40.660 --> 01:15:45.660
+automatically. Right. So basically something that we are
+
+01:15:45.660 --> 01:15:49.800
+trying to handle over here in Python, by writing a code in
+
+01:15:49.800 --> 01:15:53.820
+case of Langchain, it's a framework itself, which is trying
+
+01:15:53.820 --> 01:15:57.480
+to. Handle it. So basically try to apply some sort of a
+
+01:15:57.480 --> 01:16:01.660
+metadata filtering, which will be able to like give you data
+
+01:16:01.660 --> 01:16:05.720
+with respect to more relevant one. And then I believe there
+
+01:16:05.720 --> 01:16:07.860
+is something called as document combiner, which is available
+
+01:16:07.860 --> 01:16:12.180
+by default inside the Langchain. So yeah, Langchain handles
+
+01:16:12.180 --> 01:16:15.300
+this thing, this framework. But if we are writing our own
+
+01:16:15.300 --> 01:16:17.580
+Python code, then we have to handle it.
+
+01:16:49.640 --> 01:16:52.280
+Plus even in a Langchain function, right? So you will be
+
+01:16:52.280 --> 01:16:55.860
+able to get a control the way we have a control. In terms of
+
+01:16:55.860 --> 01:17:00.760
+basically a chunk size and in terms of the overlap, these
+
+01:17:00.760 --> 01:17:04.160
+two parameter. So just go and use any like a Langchain
+
+01:17:04.160 --> 01:17:07.020
+functionalities for like a checking, you will be able to
+
+01:17:07.020 --> 01:17:09.460
+find out same thing. Like you will be able to find out this
+
+01:17:09.460 --> 01:17:14.160
+parameters and you can try to like upgrade it or downgrade
+
+01:17:14.160 --> 01:17:16.700
+it means you can try to increase the chunk size, overlap
+
+01:17:16.700 --> 01:17:19.380
+size, or maybe decrease the chunk size, overlap size, or
+
+01:17:19.380 --> 01:17:23.520
+depends upon your experimentation. So if your chunk size is
+
+01:17:23.520 --> 01:17:25.600
+going to be very, very big. Obviously it is going to give
+
+01:17:25.600 --> 01:17:27.660
+you the memory error. So when it will start giving you a
+
+01:17:27.660 --> 01:17:30.900
+memory error, stop it. So beyond that, you should not keep a
+
+01:17:30.900 --> 01:17:34.380
+chunk size at all. And this feature is already available
+
+01:17:34.380 --> 01:17:38.400
+even inside a Langchain. But yeah, in a inbuilt function,
+
+01:17:38.600 --> 01:17:39.880
+these parameters are available.
+
+01:17:55.800 --> 01:17:59.900
+Okay. Doctor is asking how can we optimize our token uses
+
+01:17:59.900 --> 01:18:08.980
+without affecting the output? So in this situation. Oh. Here
+
+01:18:08.980 --> 01:18:09.960
+you're talking about.
+
+01:18:13.680 --> 01:18:18.020
+So see, try to send as less data as possible and try to
+
+01:18:18.020 --> 01:18:20.940
+retrieve as less data as possible. That's the only way by
+
+01:18:20.940 --> 01:18:23.900
+which you will be able to save some token. Because whenever
+
+01:18:23.900 --> 01:18:26.180
+you are sending a data, you are consuming a token. Whenever
+
+01:18:26.180 --> 01:18:30.780
+you are getting an output, you are like consuming tokens at
+
+01:18:30.780 --> 01:18:38.220
+the end of the day, right? So here, if I'll go to URI, a
+
+01:18:38.220 --> 01:18:38.940
+default code.
+
+01:18:44.820 --> 01:18:50.540
+Here. If I will go to this one and a code example. So here,
+
+01:18:50.620 --> 01:18:54.620
+maximum token is thousand. For example, thousand we have
+
+01:18:54.620 --> 01:18:58.420
+given over here and everywhere you will be able to find out
+
+01:18:58.420 --> 01:19:00.280
+the maximum token thousand thousand, we have given over
+
+01:19:00.280 --> 01:19:05.720
+there. So just try to clip this one, don't go ahead with
+
+01:19:05.720 --> 01:19:07.920
+like a thousand for all the tasks. Maybe for some of the
+
+01:19:07.920 --> 01:19:12.620
+tasks go ahead with the 200. And again, so try to work on
+
+01:19:12.620 --> 01:19:16.700
+your input as well. so better input smaller input if you are
+
+01:19:16.700 --> 01:19:20.060
+going to give with the smaller number of tokens if you can
+
+01:19:20.060 --> 01:19:23.840
+explain each and everything in that way you will be able to
+
+01:19:23.840 --> 01:19:26.960
+save the token otherwise there is no other way is
+
+01:19:35.850 --> 01:19:40.230
+there limit for a size of the file not at all so here this
+
+01:19:40.230 --> 01:19:44.770
+is the default one that i am using 200 mb basically so i can
+
+01:19:44.770 --> 01:19:48.290
+try to give or i can try to extend it as much as i want in
+
+01:19:48.290 --> 01:19:54.450
+terms of like a taking a file file one now someone has asked
+
+01:19:54.450 --> 01:19:58.550
+me a question that how to handle a tabular data into a pdf
+
+01:19:58.550 --> 01:20:02.230
+this pdf plumber will be able to handle that so for example
+
+01:20:02.230 --> 01:20:09.290
+if i have maybe a tabular data so here extract text from the
+
+01:20:09.290 --> 01:20:13.030
+pdf right so let's suppose if i have a tabular data so what
+
+01:20:13.030 --> 01:20:17.450
+i can do is i can try to call a function called as extract
+
+01:20:17.450 --> 01:20:21.330
+table for example so here extract text we are using right
+
+01:20:21.330 --> 01:20:28.250
+similarly so page dot extract trsct extract underscore table
+
+01:20:28.250 --> 01:20:31.950
+so this function is also available in the same pdf plumber
+
+01:20:31.950 --> 01:20:35.470
+now this will extract especially a tabular format of the
+
+01:20:35.470 --> 01:20:40.230
+data from your pdf so in this way you will be able to handle
+
+01:20:40.230 --> 01:20:46.340
+it from a pdf at least it's available inside this pdf
+
+01:20:46.340 --> 01:20:47.680
+plumber can
+
+01:21:07.360 --> 01:21:11.820
+we use a mix of local and api model in a same code you can
+
+01:21:11.820 --> 01:21:15.920
+try to use see at two places we are using basically api so
+
+01:21:15.920 --> 01:21:18.800
+one for the embedding and one for the llm these are the only
+
+01:21:18.800 --> 01:21:22.660
+two places if you would like to like remove the embedding at
+
+01:21:22.660 --> 01:21:25.780
+least and then use some sort of offline model for the
+
+01:21:25.780 --> 01:21:28.320
+embedding maybe there are a lot of models which is available
+
+01:21:28.320 --> 01:21:31.760
+on a hugging phase which is an open source model so maybe
+
+01:21:31.760 --> 01:21:35.420
+you go ahead and remove this particular url so don't use
+
+01:21:35.420 --> 01:21:38.420
+this embedding maybe you try to use just a llm out of this
+
+01:21:38.420 --> 01:21:41.060
+one so in that case it will be a combination of offline and
+
+01:21:41.060 --> 01:21:45.560
+online vice versa so even this llm this kind of llm models
+
+01:21:45.560 --> 01:21:48.940
+are available so you have to just download it and then you
+
+01:21:48.940 --> 01:21:52.900
+have to send all the llm request instead of sending to this
+
+01:21:52.900 --> 01:21:55.480
+one you have to send so format is going to be same just you
+
+01:21:55.480 --> 01:21:58.260
+have to like read the models format is going to be same just
+
+01:21:58.260 --> 01:22:00.280
+you have to read the model and then instead of like calling
+
+01:22:00.280 --> 01:22:03.880
+the apis means request dot post so you have to basically
+
+01:22:03.880 --> 01:22:07.840
+load the model and then send this same thing to your payload
+
+01:22:07.840 --> 01:22:09.180
+to the local model so you have to basically load the model
+
+01:22:09.180 --> 01:22:11.660
+that's it you will be able to get a similar kind of a
+
+01:22:11.660 --> 01:22:11.940
+response
+
+01:22:25.370 --> 01:22:30.150
+ok now moving to the next one guys so next project that we
+
+01:22:30.150 --> 01:22:32.950
+have which is a very very small one
+
+01:22:51.810 --> 01:22:55.230
+this done this one is done this one we have already done in
+
+01:22:55.230 --> 01:22:58.810
+my previous class so sentiment analysis dashboard build a
+
+01:22:58.810 --> 01:23:01.510
+real-time sentiment analysis tracker so this project is
+
+01:23:01.510 --> 01:23:05.190
+nothing by the way we are going to see a simple UI interface
+
+01:23:05.190 --> 01:23:09.930
+am I going to write something that will go to my llm
+
+01:23:10.050 --> 01:23:13.470
+basically and then it will be able to like tell me whether
+
+01:23:13.470 --> 01:23:18.230
+it's a positive or it's a negative that's it that's it about
+
+01:23:18.230 --> 01:23:21.250
+this project so this is one of the basic project right one
+
+01:23:21.250 --> 01:23:23.650
+of the basic one of the very very basic project and I
+
+01:23:23.650 --> 01:23:27.330
+believe the kind of a label that we have now in a class so
+
+01:23:27.330 --> 01:23:31.590
+obviously we all can do it in no time so let me create one
+
+01:23:31.590 --> 01:23:38.190
+simple oh so many pdf I have uploaded so so
+
+01:23:44.080 --> 01:23:50.380
+now here I'm going to create a file sentiment dot py file
+
+01:23:50.380 --> 01:23:54.420
+yeah sentiment dot py file and let's try to see that how we
+
+01:23:54.420 --> 01:23:58.960
+can try to build a sentiment application so
+
+01:24:07.920 --> 01:24:11.940
+like I said it's technically nothing means nothing so
+
+01:24:11.940 --> 01:24:16.020
+basically I'm going to this is the only thing which is which
+
+01:24:16.020 --> 01:24:19.200
+is going to work so basically I'm trying to like a send a
+
+01:24:19.200 --> 01:24:21.040
+prompt that you are a professional sentiment analysis system
+
+01:24:21.040 --> 01:24:24.460
+analyze the following following text classify its sentiment
+
+01:24:24.460 --> 01:24:29.040
+as one of the following so positive negative neutral maybe
+
+01:24:29.040 --> 01:24:32.240
+if if I'm going to say that a political
+
+01:24:34.500 --> 01:24:42.640
+po political or maybe like a racist something like that
+
+01:24:42.640 --> 01:24:47.400
+let's not write that part yeah so positive negative neutral
+
+01:24:49.120 --> 01:24:51.600
+whatever in in whatever segment you will you would like to
+
+01:24:51.600 --> 01:24:54.680
+like a divided you can just try to divide it so this is the
+
+01:24:54.680 --> 01:24:57.220
+only prompt which is going to work so it is going to take a
+
+01:24:57.220 --> 01:25:00.720
+data and then it is going to hit my model as simple as that
+
+01:25:00.720 --> 01:25:03.800
+so apart from that the system is not doing anything whatever
+
+01:25:03.800 --> 01:25:07.440
+response it will go it will give it to me it is it is going
+
+01:25:07.440 --> 01:25:10.300
+to like you know give you that as a response that's it
+
+01:25:10.300 --> 01:25:12.980
+nothing nothing much by the way so let me run this one
+
+01:25:12.980 --> 01:25:16.960
+quickly and then let me show you so this this is one of the
+
+01:25:17.480 --> 01:25:19.040
+like a childish
+
+01:25:22.440 --> 01:25:28.720
+project you can say s t r e a m l i t even the next one is
+
+01:25:28.720 --> 01:25:33.280
+same next one is also like a very simple one sentiment and
+
+01:25:34.880 --> 01:25:40.640
+here I am going to enter a text so I am not feeling well
+
+01:25:40.640 --> 01:25:42.760
+today simple
+
+01:25:45.480 --> 01:25:48.840
+so I have this is going to be passed inside so this is
+
+01:25:48.840 --> 01:25:51.620
+basically a negative and reason also it is trying to give
+
+01:25:51.620 --> 01:25:55.840
+you um donald trump
+
+01:26:03.960 --> 01:26:12.560
+have taken lots of decision with respect to tariff
+
+01:26:16.340 --> 01:26:22.610
+maybe political it is going to give complete uh neutral okay
+
+01:26:22.610 --> 01:26:25.950
+so maybe it is not able to understand our donald trump uh
+
+01:26:25.950 --> 01:26:30.450
+because it's not a real-time model so maybe I can go here
+
+01:26:30.450 --> 01:26:34.750
+and then I can try to change a model id there so code
+
+01:26:34.750 --> 01:26:40.590
+example and then available models and gemini flash so gemini
+
+01:26:40.590 --> 01:26:43.590
+flash is having a capability to do a real-time search right
+
+01:26:43.590 --> 01:26:48.790
+so instead of using this particular model uh maybe I can try
+
+01:26:48.790 --> 01:26:52.950
+to change my uh model id so
+
+01:26:57.200 --> 01:27:01.580
+my model should be gemini flash let's suppose yeah
+
+01:27:43.340 --> 01:27:48.260
+analysis complete unexpected token so
+
+01:27:56.580 --> 01:27:59.840
+it has crashed with my gemini
+
+01:28:02.280 --> 01:28:04.380
+flash model let
+
+01:28:23.000 --> 01:28:23.600
+me fix it
+
+01:28:52.410 --> 01:28:54.910
+so my text set
+
+01:28:59.200 --> 01:29:00.400
+page configuration
+
+01:29:06.040 --> 01:29:08.980
+input fine get
+
+01:29:15.760 --> 01:29:21.700
+sentiment is fine if response status code is 200 okay then
+
+01:29:21.700 --> 01:29:29.060
+try result response fine so it is going to give me so
+
+01:29:37.060 --> 01:29:40.320
+it's zero message content raw
+
+01:29:49.250 --> 01:29:52.050
+result so
+
+01:29:54.450 --> 01:29:57.290
+basically this is the error which I am receiving uh because
+
+01:29:57.290 --> 01:29:57.430
+if receiving a bit because if i select log in閉 in Facebook
+
+01:29:57.450 --> 01:30:00.690
+of I have changed the model and all the models gives a
+
+01:30:00.690 --> 01:30:07.770
+different kind of a like a responses import re yeah
+
+01:30:20.190 --> 01:30:23.830
+so json let's parse it parse
+
+01:30:39.990 --> 01:30:41.370
+result and
+
+01:30:49.050 --> 01:30:55.850
+return here in case of error just give me raw result
+
+01:30:55.850 --> 01:30:59.770
+whatever result whatever is the raw result just give me that
+
+01:30:59.770 --> 01:31:00.790
+get
+
+01:31:11.740 --> 01:31:14.620
+sentiment analysis okay text
+
+01:31:16.980 --> 01:31:22.540
+input sentiment output okay I think it should work this time
+
+01:31:22.540 --> 01:31:28.890
+because there was a minor fix which I have done sentiment
+
+01:31:28.890 --> 01:31:29.630
+dot pi
+
+01:31:55.970 --> 01:32:03.110
+json parser unexpected token error again
+
+01:32:25.540 --> 01:32:27.900
+parser error raw
+
+01:32:48.640 --> 01:32:50.500
+result clean
+
+01:32:53.890 --> 01:32:54.650
+result
+
+01:33:05.080 --> 01:33:08.200
+json loads
+
+01:33:15.050 --> 01:33:16.530
+cleaned
+
+01:33:32.010 --> 01:33:35.410
+import json this this this into
+
+01:33:59.090 --> 01:34:02.510
+some text so this looks good
+
+01:34:24.970 --> 01:34:29.230
+okay response looks good now I can ask questions so there
+
+01:34:29.230 --> 01:34:31.970
+was just a issue with the model response I have just
+
+01:34:31.970 --> 01:34:34.350
+switched the model right I was using gpt and then I have
+
+01:34:34.350 --> 01:34:38.110
+started using a gemini flash so that was the issue and
+
+01:34:38.110 --> 01:34:42.990
+because of that it was giving me an error trump have taken a
+
+01:34:42.990 --> 01:34:44.090
+yeah
+
+01:35:02.880 --> 01:35:06.260
+like it is trying to say neutral but this time if you see
+
+01:35:06.260 --> 01:35:11.740
+the response basically it is able to understand something
+
+01:35:11.740 --> 01:35:13.720
+from an internet as well because this model is having
+
+01:35:13.720 --> 01:35:18.020
+capability to understand something which is available on a
+
+01:35:18.020 --> 01:35:21.120
+like an internet gemini flash so that is the reason I was
+
+01:35:21.120 --> 01:35:24.360
+using this one because it will not be waiting for just for
+
+01:35:24.360 --> 01:35:28.240
+the like a trained data so this is one of the example guys a
+
+01:35:28.240 --> 01:35:32.160
+simple sentiment analysis nothing much I am just trying to
+
+01:35:32.160 --> 01:35:35.780
+take a data and passing it into the models and based on that
+
+01:35:35.780 --> 01:35:40.380
+it is like able to give me a sentiment of that previously if
+
+01:35:40.380 --> 01:35:43.400
+you will see and you must have done that maybe at some point
+
+01:35:43.400 --> 01:35:47.520
+of a time so previously we were like building a sentiment
+
+01:35:47.520 --> 01:35:49.800
+analysis system right guys how many of you have actually
+
+01:35:49.800 --> 01:35:51.100
+build it yeah
+
+01:35:53.430 --> 01:35:56.510
+I believe almost all of us as a part of machine learning
+
+01:35:56.510 --> 01:36:00.010
+project or as a part of like a beginning we all have built
+
+01:36:00.010 --> 01:36:03.450
+the sentiment analysis right but now it's not required now
+
+01:36:03.450 --> 01:36:06.470
+we have like a lms which will be able to understand the
+
+01:36:06.470 --> 01:36:09.810
+sentiment. And again. Okay. with any kind of a data, it will
+
+01:36:09.810 --> 01:36:12.750
+be able to understand the sentiment because my models are
+
+01:36:12.750 --> 01:36:15.810
+aware about all kind of a data set, right? And not just
+
+01:36:15.810 --> 01:36:18.210
+positive, negative or neutral, but yeah, so maybe other
+
+01:36:18.210 --> 01:36:21.770
+labels, other sentiment also we can do. Sandhu is saying I
+
+01:36:21.770 --> 01:36:25.390
+did. Almost all of us, right guys? Almost all of us have
+
+01:36:25.390 --> 01:36:28.890
+trained the model, sentiment analysis model for positive and
+
+01:36:28.890 --> 01:36:33.850
+negative. Maybe not in a company, but yeah, as a part of
+
+01:36:33.850 --> 01:36:37.350
+like a learning project, we all have done that, but it's not
+
+01:36:37.350 --> 01:36:41.750
+required now. We have LLMs, right? We have LLMs and the best
+
+01:36:41.750 --> 01:36:45.350
+one we have, which will be able to like tell you negative,
+
+01:36:45.470 --> 01:36:48.050
+positive because it understand the context and understand
+
+01:36:48.050 --> 01:36:51.050
+data in a better way. And you don't have to even like, you
+
+01:36:51.050 --> 01:36:55.450
+know, tag it with some industry. We generally try to like do
+
+01:36:55.450 --> 01:36:58.270
+a movie reviews, negative, positive or something like that.
+
+01:36:58.510 --> 01:37:01.390
+But yeah, it's not required. So that was the whole objective
+
+01:37:01.390 --> 01:37:04.750
+behind showing you this project. Objective was not to teach
+
+01:37:04.750 --> 01:37:09.410
+you how to use LLMs because that we already know. We are
+
+01:37:09.410 --> 01:37:12.450
+using it since a very, very long time now. I think since
+
+01:37:12.450 --> 01:37:15.470
+last three, four months in this class itself. So I think
+
+01:37:15.470 --> 01:37:19.430
+objective is fulfilled. Now I can close this part. Now let's
+
+01:37:19.430 --> 01:37:23.370
+go to the fourth project. Again, very simple one. I'm not
+
+01:37:23.370 --> 01:37:25.650
+going to create. I have not created the UI for this one. If
+
+01:37:25.650 --> 01:37:32.730
+you want, you can create it. So unstructured data underscore
+
+01:37:32.730 --> 01:37:40.410
+parsing dot IPYNB. Not IPYNB. Let's create a Python file,
+
+01:37:40.550 --> 01:37:51.220
+rename and then by file. Yeah. So this is again, one of the
+
+01:37:51.220 --> 01:37:54.640
+simplest one that you are going to find out.
+
+01:38:20.780 --> 01:38:24.400
+Yeah. So this project says that, that whatever information
+
+01:38:24.400 --> 01:38:26.760
+that you are going to pass, basically, this is the
+
+01:38:26.760 --> 01:38:31.060
+unstructured data night. As of now, I'm just like, I have
+
+01:38:31.060 --> 01:38:33.380
+given the data. Maybe you can try to take a user input.
+
+01:38:33.740 --> 01:38:36.860
+Maybe you can try to read. A document or maybe Excel sheet,
+
+01:38:36.980 --> 01:38:41.160
+and then you can give a input, uh, inside, uh, like this
+
+01:38:41.160 --> 01:38:44.520
+one. So as, as you wish, you can try to do it because we
+
+01:38:44.520 --> 01:38:47.500
+know that how to parse the files and everything. So this
+
+01:38:47.500 --> 01:38:52.320
+will be the data, which will go as an input, simple. And I
+
+01:38:52.320 --> 01:38:55.360
+have written a prompt over here, just a prompt, right? And
+
+01:38:55.360 --> 01:38:58.580
+it's all, all it's game of the prompt, basically. So you are
+
+01:38:58.580 --> 01:39:00.900
+an intelligent information extractor, extract the key
+
+01:39:00.900 --> 01:39:03.040
+entities from the following text and return the structure
+
+01:39:03.040 --> 01:39:05.800
+JSON format. This is what I'm asking. So I'm saying that,
+
+01:39:05.860 --> 01:39:08.840
+that whatever information, which I'm giving you, so try to
+
+01:39:08.840 --> 01:39:11.780
+extract a full name out of it, email ID out of it, a phone
+
+01:39:11.780 --> 01:39:14.240
+number out of it, a date out of it, address out of it,
+
+01:39:14.280 --> 01:39:16.440
+company out of it, designation out of it, a skill education
+
+01:39:16.440 --> 01:39:20.360
+experience, and all the other useful meta information. Now,
+
+01:39:20.440 --> 01:39:23.500
+why I'm showing you this a small demo, why we have included
+
+01:39:23.500 --> 01:39:26.360
+this as a part of you in a project. The reason is that
+
+01:39:26.360 --> 01:39:30.320
+generally we try to use a regex, right? RE package, regex
+
+01:39:30.320 --> 01:39:33.140
+package. We try to use, and with the help of regex package.
+
+01:39:33.280 --> 01:39:36.280
+So we try to like, uh, parse the information. So we try to
+
+01:39:36.280 --> 01:39:39.940
+write a regex. We try to handle all the edge cases for name.
+
+01:39:40.060 --> 01:39:42.260
+It's practically impossible, but yeah, for email ID, for
+
+01:39:42.260 --> 01:39:44.440
+phone number, then again, country wise, phone number
+
+01:39:44.440 --> 01:39:47.460
+parsing, then date parsing and date parsing that too in a
+
+01:39:47.460 --> 01:39:51.800
+MMDD, YYYY, MMDD, right? Address parsing, company name
+
+01:39:51.800 --> 01:39:54.500
+parsing. So a lot of like, uh, NER tagging, we try to like,
+
+01:39:54.520 --> 01:39:57.360
+uh, do over here, uh, designation, again, a lot of NER
+
+01:39:57.360 --> 01:40:00.620
+tagging that we try to do over here, a skill. So we try to
+
+01:40:00.620 --> 01:40:03.920
+create our own list and then match with the regex. So, so
+
+01:40:03.920 --> 01:40:08.540
+far. Perform all of these operation to extract this kind of
+
+01:40:08.540 --> 01:40:13.200
+information from, uh, data. We use write a lot of code and
+
+01:40:13.200 --> 01:40:16.100
+then again, so it's not like that code is going to be full
+
+01:40:16.100 --> 01:40:22.580
+proof in a very fast day. So that, that code, uh, will be
+
+01:40:22.580 --> 01:40:24.960
+having a lot of edge cases, right? A lot of edge cases, even
+
+01:40:24.960 --> 01:40:26.860
+with respect to email ID, right? If I'm going to write
+
+01:40:26.860 --> 01:40:29.420
+something for Gmail, it is going to fail for a Yahoo. It is
+
+01:40:29.420 --> 01:40:32.220
+going to fail for Rediff. Uh, we all have experienced those
+
+01:40:32.220 --> 01:40:35.480
+things, uh, in our past, uh, at least like people who is
+
+01:40:35.480 --> 01:40:38.380
+working, uh, in our industry since last couple of year,
+
+01:40:38.560 --> 01:40:41.440
+right? Uh, because as a part of our day to day job, when we
+
+01:40:41.440 --> 01:40:43.600
+build a system, so these are the normal thing that we try to
+
+01:40:43.600 --> 01:40:46.580
+do, right? Uh, functions we try to write or classes that we
+
+01:40:46.580 --> 01:40:50.240
+try to build. Now, the, uh, why I'm showing you over here
+
+01:40:50.240 --> 01:40:54.880
+that, that how easy it is now to do it with the help of
+
+01:40:54.880 --> 01:40:58.640
+LLMs, LLMs can do everything, right? Everything. You don't
+
+01:40:58.640 --> 01:41:00.420
+have to write a regex. You don't have to write a separate,
+
+01:41:00.480 --> 01:41:03.160
+separate functions for this one. You don't have to even go
+
+01:41:03.160 --> 01:41:05.640
+and handle, uh, edge cases. Uh, edge cases. Uh, for this
+
+01:41:05.640 --> 01:41:09.340
+one, right? Uh, even LLM will be able to distinguish between
+
+01:41:09.340 --> 01:41:14.280
+a person name and, uh, like, uh, uh, entity name. It will be
+
+01:41:14.280 --> 01:41:18.360
+able to understand. So LLM is way more powerful as compared
+
+01:41:18.360 --> 01:41:20.620
+to the things that we have been building and we have been
+
+01:41:20.620 --> 01:41:23.080
+doing. And this is what I'm going to demonstrate a very
+
+01:41:23.080 --> 01:41:27.020
+simple example. So what ever line that we have written over
+
+01:41:27.020 --> 01:41:29.940
+here, I'm just passing this line to the LLMs. Technically
+
+01:41:29.940 --> 01:41:33.460
+URI AI, it is going to extract all the information as per
+
+01:41:33.460 --> 01:41:37.460
+the, uh, like things that is given. So it's copy paste of
+
+01:41:37.460 --> 01:41:39.940
+the URI code itself. That's it. Nothing, nothing different.
+
+01:41:40.080 --> 01:41:42.740
+It's, it's basically a URI code, right? The URI code that
+
+01:41:42.740 --> 01:41:45.320
+you will be able to find out is the same thing, uh, that you
+
+01:41:45.320 --> 01:41:48.060
+will be able to find out. I have just like a tweaked a
+
+01:41:48.060 --> 01:41:51.360
+prompt a little bit. That's it. And so that it will be able
+
+01:41:51.360 --> 01:41:54.380
+to extract a data from the unstructured, uh, data as well.
+
+01:41:54.600 --> 01:41:58.020
+So here I can run this one, Python and then, uh,
+
+01:41:58.220 --> 01:42:00.380
+unstructured data
+
+01:42:04.130 --> 01:42:08.230
+parsing and, uh, yeah, so you must be able to see that. Full
+
+01:42:08.230 --> 01:42:11.350
+name, Rahul Sarma, email ID, able to extract phone number.
+
+01:42:11.410 --> 01:42:14.190
+It is able to extract date. It is able to extract, although
+
+01:42:14.190 --> 01:42:17.270
+I think date was not there, so it was able to extract at
+
+01:42:17.270 --> 01:42:20.110
+least a year automatically. Right? Yeah. See, date was not
+
+01:42:20.110 --> 01:42:22.190
+there. Right? So it is able to understand that. Okay, fine.
+
+01:42:22.230 --> 01:42:25.390
+So as a date, MM and DD is not there. Let's try to extract Y
+
+01:42:25.390 --> 01:42:29.630
+basically. So date, okay. Address, null, address, null,
+
+01:42:29.710 --> 01:42:32.750
+address it is not able to understand. That's fine. Uh, maybe
+
+01:42:32.750 --> 01:42:35.750
+I can try to write a prompt in a better way. IIT Delhi.
+
+01:42:35.950 --> 01:42:39.010
+Okay. So I can, I can say that. So if you're able to see
+
+01:42:39.010 --> 01:42:42.190
+some entity fetch their address, I can even do that. So my,
+
+01:42:42.310 --> 01:42:46.310
+uh, Gemini flask model can go and it can, it can try to
+
+01:42:46.310 --> 01:42:49.070
+fetch IIT Delhi address right over from the internet.
+
+01:42:50.890 --> 01:42:53.370
+Company enforces. Okay. It is able to understand company,
+
+01:42:53.470 --> 01:42:56.490
+digital software engineer, a skill, Python flask, NLP,
+
+01:42:56.630 --> 01:43:00.210
+right? Education, all those things, skill education. Okay.
+
+01:43:00.570 --> 01:43:04.770
+So some of this data is redundant data. Maybe I can like,
+
+01:43:04.810 --> 01:43:10.260
+uh, do a prompting in a little bit better way. Yeah. Okay.
+
+01:43:10.300 --> 01:43:13.060
+Okay. Beta computer science, this, this, this. So this is
+
+01:43:13.060 --> 01:43:16.620
+how amazing the LMS are basically. Right. Uh, and obviously
+
+01:43:16.620 --> 01:43:20.520
+we all understand now the capability of the LMS that how LMS
+
+01:43:20.520 --> 01:43:24.020
+actually works and then like, uh, uh, what, what LMS can do
+
+01:43:24.020 --> 01:43:27.700
+and what LMS can't do. So this is again, another project
+
+01:43:27.700 --> 01:43:32.980
+guys. Now let me wrap up the entire project and, uh, give it
+
+01:43:32.980 --> 01:43:34.320
+to you as
+
+01:43:36.980 --> 01:43:39.820
+a file. And now I'm open for any kind of a question.
+
+01:44:06.260 --> 01:44:09.600
+Okay. So yeah, I have just uploaded the file guys. Now tell
+
+01:44:09.600 --> 01:44:11.080
+me if you have any kind of a question.
+
+01:44:46.620 --> 01:44:49.380
+So no question for me or
+
+01:44:52.230 --> 01:44:54.290
+somebody for explanation. So with this saying, sir, I'm new
+
+01:44:54.290 --> 01:44:56.530
+to this batch, I was a part of, you know, skills, FSDs.
+
+01:44:56.570 --> 01:45:01.590
+Okay. You are from there. Okay. So I have gone through the,
+
+01:45:01.610 --> 01:45:03.990
+your own entry bootcamp, MLM scores, please, or how to move
+
+01:45:03.990 --> 01:45:07.790
+forward. A simple summit. So simple advice to all of you
+
+01:45:07.790 --> 01:45:11.290
+will be including like a summit. Uh, you will be that try to
+
+01:45:11.290 --> 01:45:14.830
+create an application, try to build a project. We all used
+
+01:45:14.830 --> 01:45:17.750
+to learn a lot. Again, learning is not going to give you an
+
+01:45:17.750 --> 01:45:21.690
+outcome, uh, build it, uh, mentioned inside the resume. We
+
+01:45:21.690 --> 01:45:25.150
+have a resume AI go over there, try to find tune your resume
+
+01:45:25.150 --> 01:45:30.070
+or even from a scratch, start creating a resume at list, go
+
+01:45:30.070 --> 01:45:34.850
+and give two to three interview. At least go and apply for a
+
+01:45:34.850 --> 01:45:39.050
+couple of jobs, right? Because a first two to two or two to
+
+01:45:39.050 --> 01:45:42.890
+three interviews, uh, will be just like a mock-up for all of
+
+01:45:42.890 --> 01:45:45.870
+you. you will be able to like get some sort of a grip over
+
+01:45:45.870 --> 01:45:49.190
+there so and then when you will go for the next to next
+
+01:45:49.190 --> 01:45:51.530
+interview so obviously you are going to perform better so
+
+01:45:51.530 --> 01:45:55.450
+here just go create a resume from a scratch if you have
+
+01:45:55.450 --> 01:45:59.370
+resume then you can try to just upload the resume and then
+
+01:45:59.370 --> 01:46:02.650
+try to tune the resume part number one it is even going to
+
+01:46:02.650 --> 01:46:04.810
+give you some sort of a question then come to the job part
+
+01:46:04.810 --> 01:46:08.530
+and then start searching so every day we are trying to bring
+
+01:46:08.530 --> 01:46:11.110
+a tons of job by default this is going to show you a
+
+01:46:11.110 --> 01:46:15.050
+recommended job now this recommendation comes based on your
+
+01:46:15.050 --> 01:46:17.690
+resume if something you have if you have not mentioned
+
+01:46:17.690 --> 01:46:21.430
+inside your resume this recommendation is not going to come
+
+01:46:21.430 --> 01:46:25.350
+simple right this recommendation is not going to come now so
+
+01:46:25.350 --> 01:46:28.830
+you can try to search over here so this search is given to
+
+01:46:28.830 --> 01:46:31.910
+you and just go over here and maybe you start searching
+
+01:46:31.910 --> 01:46:37.150
+machine learning i can just search yeah spelling mistake but
+
+01:46:37.150 --> 01:46:40.290
+still it's fine yeah so experience level wise contact type
+
+01:46:40.290 --> 01:46:43.950
+wise location wise and at least apply for a couple of jobs
+
+01:46:43.950 --> 01:46:47.930
+so there are enough number of jobs which even we are trying
+
+01:46:47.930 --> 01:46:53.250
+to bring on a daily basis if i'll show you so the number is
+
+01:46:53.250 --> 01:46:58.430
+a variable it's not same every day so if i'll show you how
+
+01:46:58.430 --> 01:47:01.870
+many job we have today so
+
+01:47:07.440 --> 01:47:14.140
+today we have 44,524 jobs in our system active location is
+
+01:47:14.140 --> 01:47:19.980
+2407 so we have like our own like a dashboard so where we
+
+01:47:19.980 --> 01:47:24.160
+can see each and everything so this is our own internal live
+
+01:47:24.160 --> 01:47:27.780
+dashboard as you can see right someday it will be 50,000
+
+01:47:27.780 --> 01:47:30.920
+someday it will be 55,000 or 60,000 but yeah it will be
+
+01:47:30.920 --> 01:47:34.920
+approximately plus or minus 50,000 so this is something and
+
+01:47:34.920 --> 01:47:37.260
+this is a real-time data guys i'm showing you right i'm
+
+01:47:37.260 --> 01:47:43.700
+showing you from like our dashboard basically so like jobs
+
+01:47:43.700 --> 01:47:45.680
+are available every day we have jobs available every day we
+
+01:47:45.680 --> 01:47:47.080
+have jobs available every day we are trying to bring a fresh
+
+01:47:47.080 --> 01:47:50.960
+jobs even people are coming and saying that try to bring a
+
+01:47:50.960 --> 01:47:53.940
+job for this location try to add this location so every day
+
+01:47:53.940 --> 01:47:57.920
+we are trying to add those locations as well so just go
+
+01:47:57.920 --> 01:48:02.580
+apply first of all first few interview you have to just give
+
+01:48:02.580 --> 01:48:05.660
+it for a practice right you will be able to understand the
+
+01:48:05.660 --> 01:48:09.960
+interviewer you will be able to understand that what is the
+
+01:48:09.960 --> 01:48:14.360
+expectation industry have from you and then obviously a next
+
+01:48:14.360 --> 01:48:17.040
+couple of interview you will be able to crack for sure but
+
+01:48:17.040 --> 01:48:20.180
+yeah if you will just sit and then think that i will do a
+
+01:48:20.180 --> 01:48:23.640
+preparation that preparation is never going to be over
+
+01:48:23.640 --> 01:48:27.700
+believe me preparation never ends and
+
+01:48:30.640 --> 01:48:34.620
+again the kind of a learning that we are into so there is no
+
+01:48:34.620 --> 01:48:36.840
+end to this learning you will keep on learning even after
+
+01:48:36.840 --> 01:48:40.640
+like a joining some sort of a companies they will probably
+
+01:48:40.640 --> 01:48:43.520
+give you guidance that after building a package how we can
+
+01:48:43.520 --> 01:48:48.200
+update the version day by day and add their our and add
+
+01:48:48.200 --> 01:48:51.160
+their or get a repository can you make our own page cycle
+
+01:48:51.160 --> 01:48:54.700
+and standard please make a new video for that one okay so if
+
+01:48:54.700 --> 01:48:58.480
+you have to update a pipe a package in my english video i
+
+01:48:58.480 --> 01:49:00.680
+believe i have already shown you in my hindi video i haven't
+
+01:49:00.680 --> 01:49:03.260
+shown like how to update because when i was recording my
+
+01:49:03.260 --> 01:49:05.800
+english video so even i have faced some issue i have i did
+
+01:49:05.800 --> 01:49:08.200
+some mistakes so because of that i was facing some issue and
+
+01:49:08.200 --> 01:49:11.260
+my package was not working so in that video if you'll go and
+
+01:49:11.260 --> 01:49:14.120
+check so i have even shown you that how to update a next
+
+01:49:14.120 --> 01:49:16.880
+version and next version next version even if that is your
+
+01:49:16.880 --> 01:49:18.220
+question yeah
+
+01:49:24.690 --> 01:49:28.670
+and the second part of your question is add their our github
+
+01:49:28.670 --> 01:49:32.070
+repos day by day and add their over github repository yeah
+
+01:49:32.070 --> 01:49:34.750
+so you can try to update your redmi file you can try to like
+
+01:49:34.750 --> 01:49:37.550
+a add the code inside our github repository so that people
+
+01:49:37.550 --> 01:49:40.810
+can directly even install from your github and you'll make
+
+01:49:40.810 --> 01:49:46.990
+oh maybe our pages as a and can can make the our pages as a
+
+01:49:46.990 --> 01:49:51.630
+our pages as a cicatype learn standard please make a new
+
+01:49:51.630 --> 01:49:54.670
+video for that one so you you are saying that the way how do
+
+01:49:54.670 --> 01:49:56.110
+you understand their page style way scikit-learn is having a
+
+01:49:56.110 --> 01:49:58.330
+documentation so basically you would like to do a
+
+01:49:58.330 --> 01:50:01.630
+documentation in that way this is what your question is yeah
+
+01:50:06.080 --> 01:50:09.580
+so I saying that like this kind of a documentation you would
+
+01:50:09.580 --> 01:50:11.320
+like to create yeah
+
+01:50:13.360 --> 01:50:15.840
+this this kind of a documentation you're talking about if
+
+01:50:15.840 --> 01:50:19.660
+you can reiterate your question Sumit is saying as I am a
+
+01:50:19.660 --> 01:50:23.160
+telecom domain should I do only apply telecom domain no not
+
+01:50:23.160 --> 01:50:26.460
+at all telecom should I do only telecom domain as your own
+
+01:50:26.460 --> 01:50:30.780
+as in the your own there is no telecom domain see these
+
+01:50:30.780 --> 01:50:33.840
+project that we are talking about right even now the project
+
+01:50:33.840 --> 01:50:36.160
+that we are talking about inside the class now these are the
+
+01:50:36.160 --> 01:50:39.120
+generic project this is independent like for example
+
+01:50:39.120 --> 01:50:43.420
+yesterday we have done SQL right SQL system project where
+
+01:50:43.420 --> 01:50:46.620
+with the help of LLM query you will be able to extract a SQL
+
+01:50:47.220 --> 01:50:49.700
+information when system will be able to write a complex SQL
+
+01:50:49.700 --> 01:50:53.240
+queries now that project was basically a domain independent
+
+01:50:53.240 --> 01:50:56.040
+project yeah. So you can even. You can even mention inside
+
+01:50:56.040 --> 01:50:57.980
+the resume and then when you are going for the interview you
+
+01:50:57.980 --> 01:50:59.980
+can say that that okay so I was working telecom domain
+
+01:50:59.980 --> 01:51:02.320
+project there are thousands of table there was like a
+
+01:51:02.320 --> 01:51:05.500
+multiple clients and what we have done so we have done this
+
+01:51:05.500 --> 01:51:09.900
+kind of automation right so where stakeholder based on their
+
+01:51:09.900 --> 01:51:13.160
+role and based on their access basically based on the
+
+01:51:13.160 --> 01:51:15.960
+department and based on the division in which they are
+
+01:51:15.960 --> 01:51:19.740
+working so we have automated the entire dashboard in such a
+
+01:51:19.740 --> 01:51:22.540
+way that just with the help of speech or just with the help
+
+01:51:22.540 --> 01:51:26.100
+of some textual like you know inputs. My manager and
+
+01:51:26.100 --> 01:51:28.880
+everyone will be able was able to get the report in a real
+
+01:51:28.880 --> 01:51:32.600
+time right talk about hundreds of thousands of reports over
+
+01:51:32.600 --> 01:51:36.680
+there so all this project that I am talking about and
+
+01:51:36.680 --> 01:51:39.020
+majority of the project that I used to discuss right inside
+
+01:51:39.020 --> 01:51:42.260
+a your own so I always make sure that these projects are
+
+01:51:42.260 --> 01:51:45.680
+basically a generic project it should not be a specific to a
+
+01:51:45.680 --> 01:51:48.180
+domain so that doesn't matter whether you are working into a
+
+01:51:48.180 --> 01:51:50.720
+health care domain telecom domain supply chain or maybe into
+
+01:51:50.720 --> 01:51:55.380
+a finance domain or maybe insurance domain you will be able
+
+01:51:55.380 --> 01:51:58.320
+to use all of this project but yes that the kind of a
+
+01:51:58.320 --> 01:52:03.040
+storytelling right so that you have to sit think peacefully
+
+01:52:03.040 --> 01:52:08.420
+point by point write it down then give it to Yuri Yuri will
+
+01:52:08.420 --> 01:52:11.440
+try to give you the beautiful story out of it yeah
+
+01:52:13.650 --> 01:52:18.050
+I let me let me help you out with even with that so that the
+
+01:52:18.050 --> 01:52:22.130
+story building part you have to do at the end of the day so
+
+01:52:22.130 --> 01:52:24.130
+let me close all of it.
+
+01:52:28.450 --> 01:52:39.930
+So I have. Okay. Walked into a sequel query automation for
+
+01:52:39.930 --> 01:52:41.570
+my one
+
+01:52:45.220 --> 01:52:55.620
+of the big client where client based on the department and
+
+01:52:55.620 --> 01:53:06.780
+access can access the data and. Dashboard in real time I
+
+01:53:06.780 --> 01:53:10.480
+have walked into
+
+01:53:12.170 --> 01:53:20.950
+this project end-to-end by using lots of tech stack I don't
+
+01:53:20.950 --> 01:53:25.770
+know what but yeah lots of tech stack I'm writing now today
+
+01:53:25.770 --> 01:53:34.850
+I am going for an interview and I have to. Convince my
+
+01:53:34.850 --> 01:53:44.930
+interviewer that I have worked in this project give me its
+
+01:53:44.930 --> 01:53:46.430
+HLD
+
+01:53:50.050 --> 01:53:53.690
+LLD tech
+
+01:53:55.640 --> 01:54:00.500
+architecture and complete
+
+01:54:00.500 --> 01:54:09.380
+a story that I can go and tell to my. Interview well okay
+
+01:54:09.380 --> 01:54:18.000
+so. See. Now go and explain this project. This is the
+
+01:54:18.000 --> 01:54:23.100
+architecture right this is the flow so to see in the in the
+
+01:54:23.100 --> 01:54:26.620
+age of the many people you might have like a scene or
+
+01:54:26.620 --> 01:54:29.640
+basically like you might have like gone through a course
+
+01:54:29.640 --> 01:54:33.880
+right so a person who is not using a so basically you will
+
+01:54:33.880 --> 01:54:37.040
+be replaced by a person who is using AI. So. and that's
+
+01:54:37.040 --> 01:54:40.880
+pretty much true right so we have a ai access we can try to
+
+01:54:40.880 --> 01:54:45.640
+get all the information we can try to modify it do it then i
+
+01:54:47.180 --> 01:54:49.660
+have just written a full line of things and it is able to
+
+01:54:49.660 --> 01:54:52.200
+give me this much now if i'm going to give more information
+
+01:54:52.200 --> 01:54:56.680
+more information so joke just go and talk to ai right just
+
+01:54:56.680 --> 01:54:59.900
+go and talk to ai give your context say that okay fine i've
+
+01:54:59.900 --> 01:55:03.500
+done this i have done that right now tell me uh in today's
+
+01:55:03.500 --> 01:55:07.380
+environment how i can explain so go and talk to ai ai will
+
+01:55:07.380 --> 01:55:10.580
+give you a response that's the reason so as a part of this
+
+01:55:10.580 --> 01:55:14.100
+entire ecosystem see when i was building yuri right i was
+
+01:55:14.100 --> 01:55:17.600
+already aware about the fact that uh there is a chat gpt
+
+01:55:17.600 --> 01:55:20.060
+there is a gemini uh even in your whatsapp there is
+
+01:55:20.060 --> 01:55:22.160
+something which is available but i was trying to build a
+
+01:55:22.160 --> 01:55:27.240
+ecosystem for an education right now in 2025 no one can
+
+01:55:27.240 --> 01:55:30.740
+imagine an education without ai that's the reason so we have
+
+01:55:30.740 --> 01:55:34.200
+given you yuri i'm into a tech upskilling so obviously
+
+01:55:34.200 --> 01:55:37.300
+everyone needs api because you have to develop something now
+
+01:55:37.300 --> 01:55:40.120
+again and again i can't ask my student that okay go and use
+
+01:55:40.120 --> 01:55:43.040
+a open ai api a group api then student will tell me that
+
+01:55:43.040 --> 01:55:46.020
+they are charging this they are charging this no we have
+
+01:55:46.020 --> 01:55:50.260
+built it so when we have built this ecosystem for you try to
+
+01:55:50.260 --> 01:55:54.200
+utilize this ecosystem believe me this ecosystem is more
+
+01:55:54.200 --> 01:55:58.260
+than enough to prepare you for any kind of a job part number
+
+01:55:58.260 --> 01:56:02.300
+one part number two is a resume part number three is a jobs
+
+01:56:02.300 --> 01:56:07.320
+yeah every day for you can do much for this industry has
+
+01:56:07.320 --> 01:56:11.320
+some industry is always a 얼� weekend my episode of solutions
+
+01:56:11.320 --> 01:56:14.500
+we have been talking now done so nice one update of featured
+
+01:56:14.500 --> 01:56:16.680
+in a newgle in delightful so you will be able to find out
+
+01:56:16.680 --> 01:56:18.800
+final recipe will be able to find or interior label you will
+
+01:56:18.800 --> 01:56:20.700
+be able able to find out remote you will be able to find out
+
+01:56:20.700 --> 01:56:23.700
+full-time part-time every kind of things right so at least
+
+01:56:23.700 --> 01:56:28.300
+now you have to take a step you can't just sit ideal and say
+
+01:56:28.300 --> 01:56:34.130
+that i'm not able to get an opportunity yeah you can't go
+
+01:56:34.130 --> 01:56:37.170
+and say because see if you assume it if you or anyone right
+
+01:56:37.170 --> 01:56:40.170
+uh it's not just applicable to one person it's applicable on
+
+01:56:40.170 --> 01:56:43.210
+everyone and as a teacher i believe it's my responsibility
+
+01:56:43.210 --> 01:56:47.230
+to tell you these things uh that if you will keep on asking
+
+01:56:47.230 --> 01:56:49.910
+question and if you'll keep on waiting for someone to give
+
+01:56:49.910 --> 01:56:53.410
+you a response that person is going to give you a response
+
+01:56:53.410 --> 01:56:56.770
+based on their knowledge right for example if you're asking
+
+01:56:56.770 --> 01:56:59.090
+me a question obviously i'm a human being right i have a
+
+01:56:59.090 --> 01:57:02.530
+limitation i don't have a kind of a knowledge that ai have
+
+01:57:02.530 --> 01:57:07.010
+in in all the domain right in all the domain uh so uh
+
+01:57:07.010 --> 01:57:12.520
+basically so instead of asking a question to me maybe you
+
+01:57:12.520 --> 01:57:16.060
+can ask to ai right day and night chat with ai nowadays this
+
+01:57:16.060 --> 01:57:17.980
+is what i do basically whenever i have to learn something
+
+01:57:17.980 --> 01:57:18.980
+right i keep on chatting you can ask to ai right day and
+
+01:57:18.980 --> 01:57:18.980
+night chat with ai nowadays this is what i do basically
+
+01:57:18.980 --> 01:57:21.420
+whenever i with ai i can say okay do this do that explain me
+
+01:57:21.420 --> 01:57:25.160
+this explain me that and that too the best part is as a
+
+01:57:25.160 --> 01:57:28.860
+human maybe when i feel tired so maybe i'll not try to
+
+01:57:28.860 --> 01:57:32.100
+explain you by giving that much amount of time but ai will
+
+01:57:32.100 --> 01:57:36.300
+never get tired right it will explain you in a like a best
+
+01:57:36.300 --> 01:57:39.620
+possible way in a deepest possible way so try to understand
+
+01:57:39.620 --> 01:57:45.140
+that you are not in 2023 you are in 2025 things has really
+
+01:57:45.140 --> 01:57:49.960
+changed you are a part of ai batch so obviously you should
+
+01:57:49.960 --> 01:57:53.700
+eat ai you should sleep ai you should do everything with ai
+
+01:57:53.700 --> 01:57:59.240
+right and if you're not doing it basically you are making a
+
+01:57:59.240 --> 01:58:03.060
+big big mistake and that will cost you and those who are not
+
+01:58:03.060 --> 01:58:04.900
+using it out there whether it's a student whether it's a
+
+01:58:04.900 --> 01:58:07.880
+professional believe me i have seen that in last like a
+
+01:58:07.880 --> 01:58:11.520
+couple of months i have seen that that it is it has costed a
+
+01:58:11.520 --> 01:58:17.460
+lot to a person to a people yeah hope hope you are you are
+
+01:58:17.460 --> 01:58:20.040
+able to understand this part at the end of the list uh from
+
+01:58:20.040 --> 01:58:25.240
+this particular class uh so go ahead make use of it right
+
+01:58:25.240 --> 01:58:30.400
+motivate others to use it don't wait for any person not even
+
+01:58:30.400 --> 01:58:33.400
+for me right not even for your batchmate don't have to wait
+
+01:58:33.400 --> 01:58:35.460
+for anyone to get an answer you don't have to wait for
+
+01:58:35.460 --> 01:58:39.160
+anyone to build anything now right yes there was a
+
+01:58:39.160 --> 01:58:42.560
+dependency two year back right where we were looking for a
+
+01:58:42.560 --> 01:58:45.000
+mentor we were looking for a guide we were looking for
+
+01:58:45.000 --> 01:58:50.520
+someone to give me a support to do a hand holding in 2025 ai
+
+01:58:50.520 --> 01:58:53.280
+is holding your hand and if you are not using it and still
+
+01:58:53.280 --> 01:58:55.880
+if you are looking for a human being right and yeah there
+
+01:58:55.880 --> 01:58:57.880
+are organization out there right who are who are just going
+
+01:58:57.880 --> 01:59:00.860
+to charge you for that maybe a lakhs of rupees but
+
+01:59:00.860 --> 01:59:04.060
+eventually believe me you will not be able to get a kind of
+
+01:59:04.060 --> 01:59:09.780
+a like a the response from any human being including me the
+
+01:59:09.780 --> 01:59:13.240
+kind of a response that you can get from ai hope you all
+
+01:59:13.240 --> 01:59:18.560
+understand that part so adopt ai again in india so i have
+
+01:59:18.560 --> 01:59:22.420
+seen one thing that most of us are talking about ai but when
+
+01:59:22.420 --> 01:59:27.260
+i go talk to a people personally right literally like
+
+01:59:27.260 --> 01:59:30.100
+everyone is aware about chat gpt everyone is aware about
+
+01:59:30.100 --> 01:59:33.060
+deep seek when china has launched deep seek uh everyone
+
+01:59:33.060 --> 01:59:36.580
+started talking about it but when i started talking to a
+
+01:59:36.580 --> 01:59:38.800
+people right a normal people are common people right those
+
+01:59:38.800 --> 01:59:42.120
+who are not in tech even i'll talk come to the tech part but
+
+01:59:42.120 --> 01:59:45.060
+yeah those who are not in a tech and i was surprised even
+
+01:59:45.060 --> 01:59:46.620
+nowadays i used to
+
+01:59:49.520 --> 01:59:52.320
+and then they are blaming they are complaining they're just
+
+01:59:52.320 --> 01:59:55.140
+talking about ai everyone knows about chat gpt right ghibli
+
+01:59:55.140 --> 01:59:58.000
+images everyone has created almost uh right after that i
+
+01:59:58.000 --> 01:59:59.900
+don't think that people have even logged into the account
+
+01:59:59.900 --> 02:00:05.140
+majority of the people uh right but that is not a way right
+
+02:00:05.140 --> 02:00:09.280
+if you're not using it as a child as a professional as a non
+
+02:00:09.280 --> 02:00:11.800
+-professional as a common person as a common man if you're
+
+02:00:11.800 --> 02:00:14.100
+not using it right let's suppose i don't have to do anything
+
+02:00:14.100 --> 02:00:18.800
+with tech at all still you should use ai on your day-to-day
+
+02:00:18.800 --> 02:00:20.480
+business so if you're not using it for everything every task
+
+02:00:20.480 --> 02:00:24.080
+that you are doing because that is a reality that is a not a
+
+02:00:24.080 --> 02:00:27.800
+future that is a present that we all are living into and in
+
+02:00:27.800 --> 02:00:34.600
+future it will become deeper and deeper and deeper yep so
+
+02:00:34.600 --> 02:00:37.980
+choice is yours system is available to all of you don't have
+
+02:00:37.980 --> 02:00:41.220
+to go and pay even for like chat gpt or something uh even
+
+02:00:41.220 --> 02:00:44.800
+for api or something so this is the this this was in my mind
+
+02:00:44.800 --> 02:00:47.360
+when i was trying to build a uran that build a ecosystem
+
+02:00:47.360 --> 02:00:50.200
+again i'm going to bring a very soon i'm going to release
+
+02:00:50.940 --> 02:00:53.580
+experience portal or intensive portal for you so where you
+
+02:00:53.580 --> 02:00:56.520
+guys will be able to get hld lld wireframe for thousands of
+
+02:00:56.520 --> 02:00:58.860
+project in almost all the domain right thousands of project
+
+02:00:58.860 --> 02:01:01.620
+in almost all the domain i think within two three week we
+
+02:01:01.620 --> 02:01:04.240
+are going to release it our target is to release by the end
+
+02:01:04.240 --> 02:01:06.780
+of this month but yeah so because of this development cycle
+
+02:01:06.780 --> 02:01:12.040
+so it's it may be like uh two three five days like uh plus
+
+02:01:12.040 --> 02:01:16.060
+minus right a plus obviously uh but yeah hopefully like uh
+
+02:01:16.060 --> 02:01:18.700
+in a first week or second week of next month uh it will be
+
+02:01:18.700 --> 02:01:22.720
+live again amazing portal so yeah yeah um you know i'm not
+
+02:01:22.720 --> 02:01:24.120
+sure what myмет where we will be able to do as many project
+
+02:01:24.120 --> 02:01:26.680
+as you want you will be able to get a later official letter
+
+02:01:26.680 --> 02:01:29.000
+from your own side so obviously which you are going to go
+
+02:01:29.000 --> 02:01:32.740
+and showcase and it will be having a values right because
+
+02:01:32.740 --> 02:01:35.660
+you have worked and then we are giving you a later it's not
+
+02:01:35.660 --> 02:01:38.320
+like you have not worked and we are giving you no so for
+
+02:01:38.320 --> 02:01:40.440
+that we are giving you a class course certificate course
+
+02:01:40.440 --> 02:01:42.480
+certificate is different and that later is different that
+
+02:01:42.480 --> 02:01:44.720
+will be a proper later into a later head that is something
+
+02:01:44.720 --> 02:01:48.480
+that we are bringing because now we understand that that for
+
+02:01:48.480 --> 02:01:51.740
+a fresher it's very difficult to get a job in a market, in
+
+02:01:51.740 --> 02:01:54.760
+any company, not even in TCS Infosys Bipro because we all
+
+02:01:54.760 --> 02:01:59.500
+know that what is going inside TCS Infosys Bipro. So it's
+
+02:01:59.500 --> 02:02:02.340
+very difficult for a fresher even to get a job. People are
+
+02:02:02.340 --> 02:02:06.040
+looking for someone who has worked into a project. Even
+
+02:02:06.040 --> 02:02:10.080
+today, when I go and I used to hire a fresher for my
+
+02:02:10.080 --> 02:02:13.680
+company, my expectation is not same. The expectation that I
+
+02:02:13.680 --> 02:02:19.140
+had 2-3 years back, even from a fresher, 2 or 3 years back
+
+02:02:19.140 --> 02:02:21.260
+fresher means okay fine. So that person don't know anything,
+
+02:02:21.380 --> 02:02:23.820
+fine, I'll onboard that person, a person will go through a
+
+02:02:23.820 --> 02:02:26.220
+training, he or she will work in some project, eventually
+
+02:02:26.220 --> 02:02:29.220
+they will learn and then they will be productive. That was a
+
+02:02:29.220 --> 02:02:32.480
+mindset that we as a business people used to hold 2 or 3
+
+02:02:32.480 --> 02:02:35.000
+years back or any company used to hold. But now the same
+
+02:02:35.000 --> 02:02:40.120
+perception has changed, completely changed. From day zero,
+
+02:02:40.180 --> 02:02:43.300
+you should be aware about anything and everything almost in
+
+02:02:43.300 --> 02:02:47.860
+a tech side, especially. You must have done the research,
+
+02:02:48.000 --> 02:02:50.160
+you must have done the very good amount of projects, you
+
+02:02:50.160 --> 02:02:50.880
+must have done the very good amount of projects into a
+
+02:02:50.880 --> 02:02:54.040
+different, different segment. Then only people are going to
+
+02:02:54.040 --> 02:02:58.220
+onboard you and then it will be very easy to get a job. And
+
+02:02:58.220 --> 02:03:02.400
+yes, there are jobs in a market and there will be a job in a
+
+02:03:02.400 --> 02:03:06.760
+market. But only for those who is having expertise, not for
+
+02:03:06.760 --> 02:03:10.200
+those who says that I just know one or two things and then
+
+02:03:10.200 --> 02:03:14.620
+like hire me and I'm very enthusiastic and I will do this, I
+
+02:03:14.620 --> 02:03:18.340
+will do that. Now those dialogues are not going to work.
+
+02:03:18.340 --> 02:03:23.180
+Because we are living into a very different reality now. So
+
+02:03:23.180 --> 02:03:25.580
+when things have changed, when market has changed
+
+02:03:25.580 --> 02:03:29.440
+completely, you have to adopt that sooner will be better.
+
+02:03:30.580 --> 02:03:34.280
+And now things are more accessible. Believe me, even before
+
+02:03:34.280 --> 02:03:36.320
+we had an internet, right, we had a YouTube and everything.
+
+02:03:36.500 --> 02:03:40.280
+But believe me, things are very, very easy now, as compared
+
+02:03:40.280 --> 02:03:42.940
+to before. Now with the help of these things, which is
+
+02:03:42.940 --> 02:03:46.700
+available easily to all of you build a bigger one. Right?
+
+02:03:46.700 --> 02:03:50.140
+Now that should be your target, solve a bigger problem
+
+02:03:50.140 --> 02:03:53.260
+because it's not like so when when technology was not that
+
+02:03:53.260 --> 02:03:56.820
+advanced, we had problems and we used to call that bigger
+
+02:03:56.820 --> 02:04:00.140
+problem as a problem. Now that bigger problem became a very
+
+02:04:00.140 --> 02:04:02.760
+small problem. And now the definition of the problem has
+
+02:04:02.760 --> 02:04:07.020
+changed. Now we have another bigger problem. And this is a
+
+02:04:07.020 --> 02:04:12.760
+never ending process. So hope enough of discussion for
+
+02:04:12.760 --> 02:04:17.980
+today, by the way. But yeah, I'm assuming that. You all are
+
+02:04:17.980 --> 02:04:23.300
+going to remember it. You all are going to use whatever I
+
+02:04:23.300 --> 02:04:28.280
+said. From today onwards, not from tomorrow, there is there
+
+02:04:28.280 --> 02:04:32.140
+is no tomorrow, by the way. So it's today only today. So
+
+02:04:32.140 --> 02:04:35.660
+from today onwards, you will be start using it. Euron has
+
+02:04:35.660 --> 02:04:39.160
+already given you an ecosystem, try to use it, we are
+
+02:04:39.160 --> 02:04:41.240
+building more and more. So obviously, we'll try to bring
+
+02:04:41.240 --> 02:04:44.980
+more and more things, whatever is necessary for my learners,
+
+02:04:45.060 --> 02:04:48.020
+for my students or for any professionals. Who would like to
+
+02:04:48.020 --> 02:04:50.440
+get into one field to another field or same field to same
+
+02:04:50.440 --> 02:04:54.260
+field, right? So obviously, from our side, it's a as a
+
+02:04:54.260 --> 02:04:57.040
+company, it's our responsibility. And we'll keep on doing
+
+02:04:57.040 --> 02:05:02.730
+that. But again, you have to go and give an interview, you
+
+02:05:02.730 --> 02:05:06.010
+have to crack a job, you have to like negotiate with the HR.
+
+02:05:08.790 --> 02:05:12.450
+So there is something that you can only do, we can't do it
+
+02:05:12.450 --> 02:05:14.850
+from our end, doesn't matter how many system we are going to
+
+02:05:14.850 --> 02:05:19.870
+give you. But that part, we can't do it. So take a charge,
+
+02:05:19.990 --> 02:05:23.570
+take a responsibility, start doing it. So Lily subscription
+
+02:05:23.570 --> 02:05:25.970
+is too expensive. I don't think that it's expensive, it's
+
+02:05:25.970 --> 02:05:31.210
+just like a 3499. Is it like expensive? And again, you're
+
+02:05:31.210 --> 02:05:33.450
+getting some discount 215% discount you are getting it's
+
+02:05:33.450 --> 02:05:38.430
+it's very, like just just tell me one single company name or
+
+02:05:38.430 --> 02:05:42.010
+one single competitor, which is giving you all of the system
+
+02:05:42.010 --> 02:05:46.090
+that you are able to access in a Euron, right, and that too
+
+02:05:46.090 --> 02:05:49.290
+by charging you. So the price that we are charging into 10
+
+02:05:49.290 --> 02:05:53.330
+times 30,000 40,000, even after taking 30,000 40,000 resume,
+
+02:05:53.430 --> 02:05:58.530
+I know, Yuri, no API, no jobs, no couple of courses, maybe
+
+02:05:58.530 --> 02:06:03.740
+yes. And some people are charging even 5000 6000 Yeah, there
+
+02:06:03.740 --> 02:06:06.320
+are courses available, just courses available in 5000 6000
+
+02:06:06.320 --> 02:06:10.460
+3000 as well, right. But when we say we say that as an
+
+02:06:10.460 --> 02:06:16.400
+ecosystem, yeah, so I think like 3400 400, right for the
+
+02:06:16.400 --> 02:06:21.000
+entire year. Tension free year. Yeah. Right. I think it's
+
+02:06:21.000 --> 02:06:24.220
+it's very small. Right? I don't think that anyone is
+
+02:06:24.220 --> 02:06:27.440
+providing it with this much affordability and this this many
+
+02:06:27.440 --> 02:06:31.280
+kinds of things. So we are not earning anything, don't
+
+02:06:31.280 --> 02:06:33.620
+believe me, I'm telling you, we are not earning anything.
+
+02:06:33.720 --> 02:06:37.040
+I'm just like investing my money. Maybe we'll earn after
+
+02:06:37.040 --> 02:06:40.980
+like a three, five year, I don't know, right. But as of now,
+
+02:06:41.020 --> 02:06:44.800
+we are not earning anything. But we are we are in a building
+
+02:06:44.800 --> 02:06:48.080
+phase of will will build I like building things. So this is
+
+02:06:48.080 --> 02:06:50.660
+what I've been doing since last 11 years. So I'll continue
+
+02:06:50.660 --> 02:06:54.560
+doing that. I love teaching people. So I'll continue doing
+
+02:06:54.560 --> 02:06:59.540
+that. I love tech a lot. So I'm building it, whatever comes
+
+02:06:59.540 --> 02:07:02.120
+to my mind. So I sit with my team and my team is amazing.
+
+02:07:02.820 --> 02:07:06.780
+They just like API access is the best part exactly, right?
+
+02:07:07.000 --> 02:07:09.200
+Everything in one single place going forward, I'm going to
+
+02:07:09.200 --> 02:07:12.520
+bring even a speech API. Believe me, like in some time, we
+
+02:07:12.520 --> 02:07:16.240
+have a target that after 2025, so this year, which is like
+
+02:07:16.240 --> 02:07:20.700
+seven months more. No learner. Especially in our upskilling
+
+02:07:20.700 --> 02:07:24.140
+segment should go to anywhere for anything like that. That's
+
+02:07:24.140 --> 02:07:26.160
+a target. And that is a kind of a system that we are trying
+
+02:07:26.160 --> 02:07:29.280
+to create. So obviously, like, I'm not saying that I will be
+
+02:07:29.280 --> 02:07:31.900
+able to get even a single person market that that depends
+
+02:07:31.900 --> 02:07:34.380
+upon the marketing stuff and everything. But yeah, system
+
+02:07:34.380 --> 02:07:36.600
+wise, I'm talking about that I'm going to build a system in
+
+02:07:36.600 --> 02:07:39.740
+such a way that that anyone who would like to like do
+
+02:07:39.740 --> 02:07:44.880
+anything, it's available inside your own. Okay, so with
+
+02:07:44.880 --> 02:07:47.500
+that, thank you so much, everyone. Take care and see you
+
+02:07:47.500 --> 02:07:51.840
+again next week, Saturday. With. A genetic AI discussion. So
+
+02:07:51.840 --> 02:07:54.780
+I'm going to start a genetic AI. So I will be using all
+
+02:07:54.780 --> 02:07:58.580
+those Lang chain, Lama indexes, Lang graph, crew AI, all of
+
+02:07:58.580 --> 02:08:02.080
+these framework and back to back. So we are going to see our
+
+02:08:02.080 --> 02:08:05.480
+practical project. I believe we have now an enough
+
+02:08:05.480 --> 02:08:08.640
+understanding with respect to a generative AI. We are able
+
+02:08:08.640 --> 02:08:12.540
+to do a lot of things. It's time to move and take one more
+
+02:08:12.540 --> 02:08:17.140
+step forward. And let's start learning a genetic AI and then
+
+02:08:17.140 --> 02:08:20.020
+obviously like a fine tuning, which is again one of the
+
+02:08:20.020 --> 02:08:22.880
+amazing part, one of my favorite part you can say. So with
+
+02:08:22.880 --> 02:08:25.660
+that, thank you so much. Take care and see you again next
+
+02:08:25.660 --> 02:08:27.120
+week, Saturday. Thank you everyone.
+

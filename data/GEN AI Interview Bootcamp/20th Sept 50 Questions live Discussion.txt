@@ -1,0 +1,5027 @@
+WEBVTT
+
+00:04:06.900 --> 00:04:10.580
+okay so shall we start guys i think i'm audible and visible
+
+00:04:10.580 --> 00:04:13.100
+to all of you right everyone okay
+
+00:04:23.880 --> 00:04:29.800
+fine uh so i'm audible and visible uh basically let's start
+
+00:04:29.800 --> 00:04:35.880
+with the uh session so today i'm expecting that that we all
+
+00:04:35.880 --> 00:04:40.660
+are going to participate and we all are going to you know uh
+
+00:04:40.660 --> 00:04:43.960
+talk about these questions and answers so i have already
+
+00:04:43.960 --> 00:04:48.020
+given you a questions and i'm assuming that uh most of you
+
+00:04:48.020 --> 00:04:50.960
+not all obviously but yeah so most of you have done some
+
+00:04:50.960 --> 00:04:54.580
+sort of a investigation maybe with the help of a gpt or
+
+00:04:54.580 --> 00:04:59.660
+something or maybe yuri and maybe you have gone through some
+
+00:04:59.660 --> 00:05:04.040
+of like questions and answers so anyone who have gone
+
+00:05:04.040 --> 00:05:09.580
+through 100 of the questions or let's say like uh 70 80
+
+00:05:09.580 --> 00:05:14.870
+percent 70 80 percent of the question anyone yeah i'm
+
+00:05:18.580 --> 00:05:21.520
+just like uh waiting for your in a chat by the way okay
+
+00:05:28.050 --> 00:05:33.970
+no okay that's strange okay
+
+00:05:43.860 --> 00:05:47.520
+so no one has gone through any uh like let's suppose okay
+
+00:05:47.520 --> 00:05:50.300
+let's say like a 20 30 percent any anyone who have gone
+
+00:05:50.300 --> 00:05:53.780
+through our 20 30 percent maybe like uh 40 or 60 questions
+
+00:05:53.780 --> 00:05:54.260
+anyone
+
+00:06:03.190 --> 00:06:08.950
+okay that's great anyone who have created a dpr of course
+
+00:06:08.950 --> 00:06:15.030
+some using chat gpt i mean like not some on a casual part i
+
+00:06:15.030 --> 00:06:17.530
+mean like i'm I'm just talking about on a serious note
+
+00:06:17.530 --> 00:06:20.630
+basically. Like at least you have in a sequence, you have
+
+00:06:20.630 --> 00:06:23.710
+gone through 40-50 questions because I believe I have given
+
+00:06:23.710 --> 00:06:27.310
+you this questions 10 days back, right? Not this Saturday,
+
+00:06:27.330 --> 00:06:30.550
+Sunday, sorry, not this Monday, Tuesday. Last to last
+
+00:06:30.550 --> 00:06:33.490
+Tuesday, I believe I have shared this question with all of
+
+00:06:33.490 --> 00:06:36.770
+you and I've just asked you that, okay, work on the DPR,
+
+00:06:36.910 --> 00:06:40.090
+work on the resume. Yeah, a couple of DPR I have already
+
+00:06:40.090 --> 00:06:43.690
+received. A couple of resume also I have received in my DM
+
+00:06:43.690 --> 00:06:48.070
+and I have already replied back, given my feedback and
+
+00:06:48.070 --> 00:06:52.310
+comments. Whoever has sent me a DPR and whoever has sent me
+
+00:06:52.310 --> 00:06:56.030
+a resume. And now it's time for this question and answer
+
+00:06:56.030 --> 00:06:56.370
+discussion.
+
+00:07:00.660 --> 00:07:03.580
+Somewhat 30 or so questions. It shows that we are not
+
+00:07:03.580 --> 00:07:06.260
+serious about, you know, making a transition. I can clearly
+
+00:07:06.260 --> 00:07:10.940
+see it. It's just like we have to join the batch and then
+
+00:07:10.940 --> 00:07:15.480
+sit ideal, watch as a movie and then do nothing. I don't
+
+00:07:15.480 --> 00:07:23.460
+know. I think, okay, most, not all. Be careful when you are
+
+00:07:23.460 --> 00:07:26.840
+saying this because I'll just ask you to unmute yourself and
+
+00:07:26.840 --> 00:07:29.100
+answer a couple of questions in that situation.
+
+00:07:32.890 --> 00:07:37.290
+Okay. People are not serious about their life, what I can
+
+00:07:37.290 --> 00:07:37.750
+do, nothing.
+
+00:07:41.070 --> 00:07:44.190
+If you are not serious, then don't say that you are not able
+
+00:07:44.190 --> 00:07:47.270
+to get the job or if you are going for an interview, you are
+
+00:07:47.270 --> 00:07:49.810
+not able to crack it because, yeah, if you are not serious,
+
+00:07:49.890 --> 00:07:52.990
+you will not be able to do it. And no one is going to give
+
+00:07:52.990 --> 00:07:55.170
+an interview. On behalf of you, right? No one is going to
+
+00:07:55.170 --> 00:07:58.970
+prepare a resume for you. No one is going to prepare a DPR
+
+00:07:58.970 --> 00:08:02.630
+for you. No one means literally no one, right? If you're not
+
+00:08:02.630 --> 00:08:05.310
+serious about these things in an interview batch, then
+
+00:08:05.310 --> 00:08:12.630
+obviously, like, okay, let's start. Let me do my job because
+
+00:08:12.630 --> 00:08:15.450
+now I can see people have not done their job at all.
+
+00:08:22.170 --> 00:08:24.970
+Okay. So these are the basically interview questions, which
+
+00:08:24.970 --> 00:08:27.850
+I have shared and one by one, one by one, let's start giving
+
+00:08:27.850 --> 00:08:31.530
+an answer of like these. And believe me, you will not be
+
+00:08:31.530 --> 00:08:34.830
+able to even ask a cross-question, right? Apart from like
+
+00:08:34.830 --> 00:08:37.650
+saying that how to do a transition, you will not be able to
+
+00:08:37.650 --> 00:08:40.830
+ask me literally any questions, any valid questions. If you
+
+00:08:40.830 --> 00:08:43.190
+have not gone through, you know, the answer of this
+
+00:08:43.190 --> 00:08:46.790
+question, whatever I'll say, you will just say, yes, got it.
+
+00:08:47.350 --> 00:08:51.190
+That's the only, like, you know, answer that you will be
+
+00:08:51.190 --> 00:08:53.870
+able to give. And I don't think that people are that busy
+
+00:08:53.870 --> 00:08:56.150
+that in 10 days, they're not able to go through 200
+
+00:08:56.150 --> 00:08:59.510
+questions, right? None of us are that much busy, by the way.
+
+00:08:59.750 --> 00:09:01.650
+If we are serious about our life, if you're serious about
+
+00:09:01.650 --> 00:09:06.910
+our career. Okay, one by one, I'll start answering to this
+
+00:09:06.910 --> 00:09:10.690
+question. So the very first question says that what is the
+
+00:09:10.690 --> 00:09:12.730
+generative AI and how it is different from traditional AI.
+
+00:09:12.910 --> 00:09:15.490
+So basically in case of a traditional AI, we generally talk
+
+00:09:15.490 --> 00:09:17.990
+about a machine learning, deep learning, computer vision,
+
+00:09:18.150 --> 00:09:21.850
+and generally we try to understand the algorithms, but in
+
+00:09:21.850 --> 00:09:26.030
+terms of a generative AI. So mostly we talk about LLMs or we
+
+00:09:26.030 --> 00:09:29.650
+talk about a transformer architecture, a kind of AI, which,
+
+00:09:29.750 --> 00:09:32.850
+will be able to generate some sort of a data for me and
+
+00:09:32.850 --> 00:09:36.690
+basically, which has been like a trained on a very, very big
+
+00:09:36.690 --> 00:09:39.810
+data set, or you can say a world's data set and majorly it
+
+00:09:39.810 --> 00:09:43.470
+follows a transformer architecture. So this is where this is
+
+00:09:43.470 --> 00:09:45.450
+the differences generally you will be able to get with
+
+00:09:45.450 --> 00:09:47.910
+respect to a generative AI versus a traditional AI.
+
+00:09:48.270 --> 00:09:50.430
+Obviously we know machine learning and machine learning,
+
+00:09:50.530 --> 00:09:53.050
+deep learning. We understand a lot of algorithms and we try
+
+00:09:53.050 --> 00:09:56.390
+to solve maybe a regression problem, classification problem,
+
+00:09:56.450 --> 00:09:59.650
+or maybe a clustering problem. We train the model. And then,
+
+00:09:59.750 --> 00:10:02.390
+we try to solve it again. So this classification regression
+
+00:10:02.390 --> 00:10:05.010
+and clustering problem, even we are trying to solve in case
+
+00:10:05.010 --> 00:10:08.150
+of a generative AI, the major differences is the
+
+00:10:08.150 --> 00:10:10.850
+architecture part, I would say, right? So over there, we
+
+00:10:10.850 --> 00:10:13.050
+were trying to use some of the mathematical model, which was
+
+00:10:13.050 --> 00:10:15.630
+very, very simple. But here, so we are talking about
+
+00:10:15.630 --> 00:10:19.190
+basically a transformer architecture. So which is not that
+
+00:10:19.190 --> 00:10:23.270
+simple. So basically it's like a kind of a layered parallel
+
+00:10:23.270 --> 00:10:26.670
+architecture. So which can understand a very, very huge
+
+00:10:26.670 --> 00:10:32.730
+sequence length. Yeah. I, I feel interviewer will not go
+
+00:10:32.730 --> 00:10:35.290
+beyond this question, but you have to go beyond this
+
+00:10:35.290 --> 00:10:37.690
+question, right? I know interviewer will never go beyond
+
+00:10:37.690 --> 00:10:40.590
+this question. Never means literally, it's not possible to
+
+00:10:40.590 --> 00:10:43.050
+go for anyone to go beyond this question. So once you will
+
+00:10:43.050 --> 00:10:45.690
+start reading out these questions, you will be able to
+
+00:10:45.690 --> 00:10:48.890
+understand, but yeah, you have to go through it once. Okay.
+
+00:10:48.970 --> 00:10:51.830
+Explain the concept of large language model. So technically
+
+00:10:51.830 --> 00:10:55.750
+a large language, whenever we say like a LLMs or whenever we
+
+00:10:55.750 --> 00:10:59.070
+say a large language model, technically we are talking about
+
+00:10:59.070 --> 00:11:02.090
+a transformer architecture. And inside the transform
+
+00:11:02.090 --> 00:11:05.050
+architecture, we are talking about a multi headed attention
+
+00:11:05.050 --> 00:11:10.130
+or a self headed attention along with a positional encoding
+
+00:11:10.130 --> 00:11:14.770
+that we have seen in case of our paper called as attention
+
+00:11:14.770 --> 00:11:20.170
+is all you need and every large language model is basically
+
+00:11:20.170 --> 00:11:24.670
+derived from that transformer architecture again inside
+
+00:11:24.670 --> 00:11:28.510
+that. So there can be a multiple segmentation you will be
+
+00:11:28.510 --> 00:11:33.210
+able to find out. So one is, is basically just a encoder
+
+00:11:33.210 --> 00:11:36.710
+based architecture. One is a decoder based architecture and
+
+00:11:36.710 --> 00:11:41.130
+one is a encoder and decoder based architecture. And again,
+
+00:11:41.230 --> 00:11:44.590
+so whenever we try to design any kind of a LLM, so we try to
+
+00:11:44.590 --> 00:11:47.890
+go through or we try to go ahead with either a encoder based
+
+00:11:47.890 --> 00:11:51.470
+or maybe a decoder based or maybe a encoder and decoder both
+
+00:11:51.470 --> 00:11:55.410
+based. But inside that encoder decoder or encoder plus
+
+00:11:55.410 --> 00:11:58.030
+decoder, you will be able to see technically it's a
+
+00:11:58.030 --> 00:12:01.430
+transformer architecture. We are basically talking about. So
+
+00:12:01.430 --> 00:12:05.550
+where it always tried to build or it will always try to
+
+00:12:05.550 --> 00:12:08.490
+learn from there. So it will try to learn from the attention
+
+00:12:08.490 --> 00:12:12.730
+and I believe we all know the research paper basically
+
+00:12:12.730 --> 00:12:16.990
+attention is all you need. It says that that and again, so
+
+00:12:16.990 --> 00:12:20.810
+people may ask you a formula when you say like attention is
+
+00:12:20.810 --> 00:12:23.670
+all you need whenever you're going to take a name. So they
+
+00:12:23.670 --> 00:12:25.630
+may say you that, okay, fine. So can you please write the
+
+00:12:25.630 --> 00:12:28.830
+formula for that one? So formula for attention, if I'll talk
+
+00:12:28.830 --> 00:12:33.970
+about, so formula, for attention is KQV by the way right or
+
+00:12:33.970 --> 00:12:39.150
+QKV query key and values. So query key and values is equals
+
+00:12:39.150 --> 00:12:46.010
+to softmax function, softmax function into query K of
+
+00:12:46.010 --> 00:12:51.770
+transpose key of transpose dimension of basically K into V.
+
+00:12:51.990 --> 00:12:55.050
+So this is basically a formula of attention. This is
+
+00:12:55.050 --> 00:12:57.630
+basically coming from a research paper called as attention
+
+00:12:57.630 --> 00:13:00.410
+is all you need. And again, this formula is important. By
+
+00:13:00.410 --> 00:13:02.430
+the way, there are people may ask you a question that, okay,
+
+00:13:02.450 --> 00:13:05.050
+fine. Can you please just to check the knowledge that
+
+00:13:05.050 --> 00:13:08.210
+whether you are serious candidate or you are not a serious
+
+00:13:08.210 --> 00:13:11.130
+candidate just to check that this particular part people may
+
+00:13:11.130 --> 00:13:13.570
+ask you this particular formula formula is very simple and I
+
+00:13:13.570 --> 00:13:16.350
+have I have already discussed about this entire architecture
+
+00:13:16.350 --> 00:13:19.290
+in one of a lot of my lectures. So if you are not able to
+
+00:13:19.290 --> 00:13:21.030
+understand, maybe you can try to follow that particular
+
+00:13:21.030 --> 00:13:23.290
+lecture. Believe me, you will be able to understand after
+
+00:13:23.290 --> 00:13:26.490
+spending one and a half hour just on that lecture. But yeah,
+
+00:13:26.530 --> 00:13:29.350
+that is important from a LLM perspective. People may ask you
+
+00:13:29.350 --> 00:13:33.390
+that question. Where query Q is nothing but a word that we
+
+00:13:33.390 --> 00:13:36.430
+are trying to analyze this Q part, right? The word we are
+
+00:13:36.430 --> 00:13:39.650
+trying to analyze or like the word we are trying to send key
+
+00:13:39.650 --> 00:13:43.310
+is nothing but another words. So there will be not just one
+
+00:13:43.310 --> 00:13:45.930
+single word. So other words will also be there. So basically
+
+00:13:45.930 --> 00:13:49.190
+this K represent other word inside a particular sequences
+
+00:13:49.190 --> 00:13:52.790
+and then we have a value over here. So value is nothing but
+
+00:13:52.790 --> 00:13:57.730
+the actual information carried through that particular word.
+
+00:13:58.110 --> 00:14:01.110
+So whatever information, that particular entire sentence or
+
+00:14:01.110 --> 00:14:03.430
+token is going to carry. So that is something represented by
+
+00:14:03.430 --> 00:14:06.850
+basically V over here. But yeah, so people will not focus
+
+00:14:06.850 --> 00:14:09.130
+much on that. They may ask you that. Okay, fine. So can you
+
+00:14:09.130 --> 00:14:12.130
+please tell me attention because this entire large language
+
+00:14:12.130 --> 00:14:15.670
+models base is this particular equation. Only this
+
+00:14:15.670 --> 00:14:18.090
+particular equation doesn't matter which model you are going
+
+00:14:18.090 --> 00:14:20.610
+to choose or like which model you are going to talk about.
+
+00:14:20.670 --> 00:14:22.850
+But yeah, this is something that you all will be able to
+
+00:14:22.850 --> 00:14:27.850
+see. So do remember this formula guys do remember. Yeah, do
+
+00:14:27.850 --> 00:14:31.370
+remember and again. So, on top of this formula remembering
+
+00:14:31.370 --> 00:14:34.070
+this formula is not just important other part which is
+
+00:14:34.070 --> 00:14:38.090
+important is basically that you have to go through the
+
+00:14:38.090 --> 00:14:42.790
+entire like architecture architecture of attention is all
+
+00:14:42.790 --> 00:14:48.470
+you need a research paper. Yeah. So this is it. Explain the
+
+00:14:48.470 --> 00:14:51.190
+concept of large model. So yeah, so large model is nothing
+
+00:14:51.190 --> 00:14:54.690
+but a kind of a model. So which will be able to understand a
+
+00:14:54.690 --> 00:14:58.650
+long long sequences which will be having a multi headed.
+
+00:14:58.650 --> 00:15:02.330
+Attention or you can say a self attention which is going to
+
+00:15:02.330 --> 00:15:05.390
+follow plus it will be having a positional encoding and
+
+00:15:05.390 --> 00:15:08.790
+eventually try to follow them attention formula or you can
+
+00:15:08.790 --> 00:15:11.310
+say it try to follow or you try to build the attention. So
+
+00:15:11.310 --> 00:15:14.650
+where it will try to focus on one word and its relation with
+
+00:15:14.650 --> 00:15:17.250
+respect to other word so that it will be able to understand
+
+00:15:17.250 --> 00:15:20.210
+the meaning and again people may ask you a question that can
+
+00:15:20.210 --> 00:15:23.670
+you please give me the example of this attention in a layman
+
+00:15:23.670 --> 00:15:27.070
+way. So you can say that yes, I can give an example of
+
+00:15:27.070 --> 00:15:30.210
+attention in a layman way. So for example, if I'm saying
+
+00:15:30.210 --> 00:15:35.010
+that Sudhanshu is teaching and then I say that he used to
+
+00:15:35.010 --> 00:15:37.970
+teach a data science. So basically when I say it's not so is
+
+00:15:37.970 --> 00:15:40.390
+teaching so obviously answer is a noun system will be able
+
+00:15:40.390 --> 00:15:43.910
+to understand that who is teaching but in a next line when
+
+00:15:43.910 --> 00:15:47.130
+you say he teaches data science. Let's suppose you're saying
+
+00:15:47.130 --> 00:15:51.770
+that so here it will be able to focus on he and it will be
+
+00:15:51.770 --> 00:15:54.990
+able to understand that with my say he he means Sudhanshu.
+
+00:15:55.150 --> 00:15:57.450
+So that is that is something called as attention. So we are
+
+00:15:57.450 --> 00:16:00.690
+trying to focus. On one and with respect to one we are able
+
+00:16:00.690 --> 00:16:03.390
+to derive the relationship with respect to other word. So
+
+00:16:03.390 --> 00:16:05.670
+this is the actual meaning of attention and this is where
+
+00:16:05.670 --> 00:16:09.510
+this task homework. So it always try to focus on one the
+
+00:16:09.510 --> 00:16:12.510
+single word and its relation with all the other word at the
+
+00:16:12.510 --> 00:16:15.650
+end of the day. Eventually it will be able to achieve a
+
+00:16:15.650 --> 00:16:18.610
+parallelism and it will be able to basically like a kind of
+
+00:16:18.610 --> 00:16:21.610
+a model which will be able to achieve a parallelism plus it
+
+00:16:21.610 --> 00:16:25.070
+will be able to achieve a long range dependency. And this is
+
+00:16:25.070 --> 00:16:29.170
+where this large language model, concept comes into a
+
+00:16:29.170 --> 00:16:32.190
+picture. Now what is the transform architecture again just
+
+00:16:32.190 --> 00:16:36.110
+same follow up question that a kind of architecture so where
+
+00:16:36.110 --> 00:16:41.850
+there will be a particular attention on a particular word.
+
+00:16:41.970 --> 00:16:44.290
+The example which I have given you that Sudhanshu is
+
+00:16:44.290 --> 00:16:47.650
+teaching and he used to teach data science or maybe a big
+
+00:16:47.650 --> 00:16:51.070
+data something like that. So here he means on the second
+
+00:16:51.070 --> 00:16:53.670
+line he means Sudhanshu it will be able to understand
+
+00:16:53.670 --> 00:16:56.250
+automatically because your system never understands the
+
+00:16:56.250 --> 00:16:58.330
+grammar. Right. It just. Understands based out of the
+
+00:16:58.330 --> 00:17:01.990
+relations are and ultimately it will be a numeric values.
+
+00:17:02.750 --> 00:17:08.130
+No. So define a prompt engineering and its significance. So
+
+00:17:08.130 --> 00:17:12.490
+I have already like given you the example of maybe prompt
+
+00:17:12.490 --> 00:17:16.050
+engineering when I was talking about a project by the way.
+
+00:17:16.550 --> 00:17:21.730
+So. Whenever we are talking about a prompt engineering the
+
+00:17:21.730 --> 00:17:24.550
+very. So again there is something called as few short
+
+00:17:24.550 --> 00:17:26.770
+learning of views or prompting. And there is something
+
+00:17:26.770 --> 00:17:30.190
+called. As zero short prompting. Few short means. So we are
+
+00:17:30.190 --> 00:17:32.530
+trying to ask a question but we are trying to give an
+
+00:17:32.530 --> 00:17:36.590
+example like that. OK. Try to give me an answer but try to
+
+00:17:36.590 --> 00:17:38.710
+follow this particular example and then only try to give me
+
+00:17:38.710 --> 00:17:41.870
+the example that is something called as a few short. Then
+
+00:17:41.870 --> 00:17:44.650
+zero short means we are not giving an example directly. We
+
+00:17:44.650 --> 00:17:47.370
+are asking the question. Right. So for example if I'm asking
+
+00:17:47.370 --> 00:17:51.970
+that give me the give me 10 examples of a for loop in
+
+00:17:51.970 --> 00:17:55.270
+Python. So again it's a zero sort. Right. It's a kind of a
+
+00:17:55.270 --> 00:17:58.610
+zero sort. But when we are saying that. OK. Take this piece
+
+00:17:58.610 --> 00:18:01.530
+of the code. This is the model code. I have already defined
+
+00:18:01.530 --> 00:18:04.770
+a class as an object for this one. Now just try to follow
+
+00:18:04.770 --> 00:18:07.970
+this particular format and then give me an example of a
+
+00:18:07.970 --> 00:18:10.990
+calculator. So we have already given a piece of the code and
+
+00:18:10.990 --> 00:18:14.570
+based on that I'm asking system to generate something for
+
+00:18:14.570 --> 00:18:17.710
+me. So that is something called as a few short. So this is
+
+00:18:17.710 --> 00:18:20.950
+the prompting technique by the way. But yeah. So whenever we
+
+00:18:20.950 --> 00:18:24.850
+are trying to do a prompt engineering clearly we have to
+
+00:18:24.850 --> 00:18:28.810
+define a set of the roles. And the objective of that
+
+00:18:28.810 --> 00:18:33.190
+particular prompt. For example if we are trying to you know
+
+00:18:33.190 --> 00:18:36.690
+do some sort of a research. So I should say that you are a
+
+00:18:36.690 --> 00:18:40.070
+researcher. Right. I should say these things just as a
+
+00:18:40.070 --> 00:18:43.490
+system. I should say that that you are a researcher or treat
+
+00:18:43.490 --> 00:18:46.230
+yourself as a researcher. So it will just try to get into
+
+00:18:46.230 --> 00:18:50.310
+that mode. Right. Maybe if I'm trying to do some sort of
+
+00:18:50.310 --> 00:18:54.790
+audit. So I should say that OK. Just try to treat yourself
+
+00:18:54.790 --> 00:18:58.630
+as an auditor. Or maybe a security auditor. So maybe try to
+
+00:18:58.630 --> 00:19:01.530
+treat yourself as a security auditor. Now take this point
+
+00:19:01.530 --> 00:19:05.790
+and then try to do the analysis. So roles and objectives are
+
+00:19:05.790 --> 00:19:09.610
+pretty much important whenever. Right. Whenever we are
+
+00:19:09.610 --> 00:19:14.370
+talking about a prompt. First part of first principle of the
+
+00:19:14.370 --> 00:19:17.230
+prompt engineering. Whether we are doing a zero short
+
+00:19:17.230 --> 00:19:19.890
+prompting or we are doing a few short prompting. In both the
+
+00:19:19.890 --> 00:19:23.990
+cases we have to like you know fix that particular part.
+
+00:19:23.990 --> 00:19:28.470
+Then there is something called as constraint output. Right.
+
+00:19:29.390 --> 00:19:32.630
+So whenever we are trying to give a prompt. We should always
+
+00:19:32.630 --> 00:19:36.490
+say that OK. Try to give me an output in this format or that
+
+00:19:36.490 --> 00:19:39.330
+format. Means define particularly that OK I am looking for
+
+00:19:39.330 --> 00:19:43.490
+this format in this particular way. Context always you
+
+00:19:43.490 --> 00:19:46.330
+should provide. Otherwise system will not be able to like
+
+00:19:46.330 --> 00:19:50.650
+you know give you a response in a better way. This is the
+
+00:19:50.650 --> 00:19:54.490
+third part. Fourth part is whenever. Because I have seen the
+
+00:19:54.490 --> 00:19:58.770
+people that whenever they try to chat. Right. They just dump
+
+00:19:58.770 --> 00:20:02.970
+some time and sometimes just write one line. Now both of
+
+00:20:02.970 --> 00:20:06.390
+this approach is not good. When I am writing one line. Means
+
+00:20:06.390 --> 00:20:09.090
+I am just trying to send the half of the information. As
+
+00:20:09.090 --> 00:20:13.090
+simple as that. And when I am dumping. I am like anything or
+
+00:20:13.090 --> 00:20:17.050
+just like picking up some sort of entire paragraph. And then
+
+00:20:17.050 --> 00:20:19.770
+dumping it and saying that OK fine do something on top of
+
+00:20:19.770 --> 00:20:24.950
+this one. Again that's not a good idea. Behave with chat GPT
+
+00:20:24.950 --> 00:20:28.750
+or any such LLMs. Just like you behave with your juniors.
+
+00:20:28.930 --> 00:20:33.830
+Right. So where you try to make them understand. You try to
+
+00:20:33.830 --> 00:20:38.090
+break down the task one by one. And then you are asking them
+
+00:20:38.090 --> 00:20:42.530
+to execute. So you should treat basically these LLMs in that
+
+00:20:42.530 --> 00:20:45.710
+way. And believe me in that way if you are treating LLMs. It
+
+00:20:45.710 --> 00:20:48.890
+will be able to solve majority of your problem with ease.
+
+00:20:49.030 --> 00:20:52.490
+And without any kind of a bug. But we say that OK maybe my
+
+00:20:52.490 --> 00:20:55.210
+system is not able to give me an answer. Maybe my AI is not
+
+00:20:55.210 --> 00:20:58.510
+working for me. Actually AI is not working. You are not able
+
+00:20:58.510 --> 00:21:00.830
+to break down the task. There is a difference. Right. There
+
+00:21:00.830 --> 00:21:05.650
+is a difference between what AI can do. And what you can do.
+
+00:21:05.870 --> 00:21:10.310
+And lot depends still on us. Believe me. It is still.
+
+00:21:10.390 --> 00:21:12.530
+Because see AI is having a world's knowledge. It can do
+
+00:21:12.530 --> 00:21:15.770
+anything that you want. Right. But it requires a
+
+00:21:15.770 --> 00:21:19.030
+instruction. It requires a breakdowns. And if you are not
+
+00:21:19.030 --> 00:21:21.950
+able to give it to that. It will not be able to generate the
+
+00:21:21.950 --> 00:21:25.870
+things. So as a part of prompt engineering. You have to
+
+00:21:25.870 --> 00:21:29.250
+decompose the task. So first set a proper role and
+
+00:21:29.250 --> 00:21:32.890
+objectives. Second define the output that you are looking
+
+00:21:32.890 --> 00:21:35.210
+for. If I am looking for into a JSON format. If I am looking
+
+00:21:35.210 --> 00:21:37.510
+for into a PDF format. If I am looking for into paragraph
+
+00:21:37.510 --> 00:21:42.430
+format. Define it. Right. Third provide a proper context. In
+
+00:21:42.430 --> 00:21:45.570
+which context. Context means examples by the way. Right. So
+
+00:21:45.570 --> 00:21:49.130
+in which context you are talking about. Fourth. Always try
+
+00:21:49.130 --> 00:21:53.170
+to decompose a task. Just like you try to give a task to
+
+00:21:53.170 --> 00:21:58.230
+your junior. At the end of the day. And yeah. So prompting
+
+00:21:58.230 --> 00:22:00.230
+technique wise. Maybe you can try to go ahead with a few
+
+00:22:00.230 --> 00:22:02.930
+shot. Or maybe you can go ahead with a zero shot kind of a
+
+00:22:02.930 --> 00:22:06.470
+prompting. But this is something called as like a prompt
+
+00:22:06.470 --> 00:22:09.350
+engineering. And whenever we try to design a prompt for a
+
+00:22:09.350 --> 00:22:12.090
+scalable system. Or for like a system that we should deploy
+
+00:22:12.090 --> 00:22:15.790
+for a general public. We always does that. For example the
+
+00:22:15.790 --> 00:22:19.630
+resume AI that we have deployed. It always works. But
+
+00:22:19.630 --> 00:22:23.730
+technically speaking. When you will see its actual code
+
+00:22:23.730 --> 00:22:27.530
+base. It's more like a prompt engineering. The resume AI
+
+00:22:27.530 --> 00:22:30.850
+that we have designed. It's very less like a engineering.
+
+00:22:31.050 --> 00:22:33.790
+It's more like a prompt engineering. And just based on the
+
+00:22:33.790 --> 00:22:37.290
+prompt engineering. We are able to build a resume AI
+
+00:22:37.290 --> 00:22:40.510
+application. That all of you are using it. To fine tune your
+
+00:22:40.510 --> 00:22:43.650
+resume. Or to build your resume from the scratch. That's a
+
+00:22:43.650 --> 00:22:46.670
+reality. That's a fact. Basically. So yes. Prompt
+
+00:22:46.670 --> 00:22:50.310
+engineering does matter. We do follow this prompt
+
+00:22:50.310 --> 00:22:52.570
+engineering strategy. Whenever we are trying to design such
+
+00:22:52.570 --> 00:22:56.690
+kind of a system. And it working right. You can go and check
+
+00:22:56.690 --> 00:23:01.290
+with your resume AI. It works. 99% of time. Or 99.9% of
+
+00:23:01.290 --> 00:23:04.970
+time. It works with everyone's resume AI. By the way. As per
+
+00:23:04.970 --> 00:23:07.750
+the prompt that we have given. And like I said. It's more
+
+00:23:07.750 --> 00:23:11.530
+like a prompt engineering. By the way. Yeah. And which is
+
+00:23:11.530 --> 00:23:14.430
+helping us out in terms of like. Working with any kind of a
+
+00:23:14.430 --> 00:23:19.270
+resume AI. Basically. Now. So this is this. What is the
+
+00:23:19.270 --> 00:23:21.550
+difference between supervised unsupervised learning in a
+
+00:23:21.550 --> 00:23:25.030
+generative AI. Again this definition is not different. It's
+
+00:23:25.030 --> 00:23:29.150
+again the same definition that we. Like you know. Keep on
+
+00:23:29.150 --> 00:23:32.710
+discussing since our data science days. Supervised means a
+
+00:23:32.710 --> 00:23:37.230
+labeled data. Right. Unsupervised means basically unlabeled
+
+00:23:37.230 --> 00:23:41.050
+data. As simple as that. So supervised means. So we are
+
+00:23:41.050 --> 00:23:43.410
+trying to label the data. And then we are trying to train
+
+00:23:43.410 --> 00:23:47.690
+our LLMs. Or generative AI models. Basically LLMs by the
+
+00:23:47.690 --> 00:23:52.210
+way. And supervised means. Sorry. Unsupervised means. So we
+
+00:23:52.210 --> 00:23:56.310
+have not labeled our data. But yeah. So we are basically
+
+00:23:56.310 --> 00:24:00.410
+trying to train the model. Maybe to understand our
+
+00:24:00.410 --> 00:24:04.530
+relationship between just our words and the languages. As
+
+00:24:04.530 --> 00:24:07.470
+simple as that. So this definition is not going to change.
+
+00:24:07.910 --> 00:24:12.510
+Now. Explain the concept of tokenization into a language
+
+00:24:12.510 --> 00:24:16.310
+model. Any idea? Tokenization? Token?
+
+00:24:19.180 --> 00:24:21.820
+Yes? Any idea guys?
+
+00:24:30.290 --> 00:24:33.610
+Can I say token is equal to word? Because this question you
+
+00:24:33.610 --> 00:24:37.670
+will get it in an interview. So generally like people think
+
+00:24:37.670 --> 00:24:41.310
+that one token is equal to one word. And again. So whenever
+
+00:24:41.310 --> 00:24:45.390
+we try to evaluate LLMs. Right. Or benchmark LLMs. So we say
+
+00:24:45.390 --> 00:24:49.630
+that. Okay. This is having a token length of 128K. Or maybe
+
+00:24:49.630 --> 00:24:53.010
+like a 4000. 400,000K. Something like that. We try to
+
+00:24:53.010 --> 00:24:56.250
+evaluate LLMs. We always discuss. Right. Can I say token is
+
+00:24:56.250 --> 00:25:00.370
+equals to a word? One single word? Can I make this
+
+00:25:00.370 --> 00:25:00.690
+statement?
+
+00:25:07.240 --> 00:25:07.680
+Yeah.
+
+00:25:11.390 --> 00:25:15.510
+Someone is saying. Santosh is saying. Yes. Okay. Yes. Token
+
+00:25:15.510 --> 00:25:20.370
+is equal to word. No. The big no. By the way. Token is not
+
+00:25:20.370 --> 00:25:22.970
+equal to word. Basically.
+
+00:25:26.460 --> 00:25:30.040
+I mean like. It looks like. See. It always gives you an
+
+00:25:30.040 --> 00:25:33.380
+intuition. I am not denying this fact. That yes. Yes. It
+
+00:25:33.380 --> 00:25:37.340
+could be. Means. There is a possibility. That token is equal
+
+00:25:37.340 --> 00:25:40.820
+to word. I am not denying. That possibility. At all. Yeah.
+
+00:25:41.440 --> 00:25:46.060
+There is a possibility. But. Definition wise. It is not
+
+00:25:46.060 --> 00:25:50.900
+correct. By the way. Yes. So. It is. It is. Not correct. So.
+
+00:25:51.020 --> 00:25:54.820
+As per definition. So token can be. A piece of the
+
+00:25:54.820 --> 00:25:58.200
+character. Or set of the character. It can be. A sub word.
+
+00:25:58.300 --> 00:26:04.460
+It can be. Even a byte. Basically. So. It is. Now. Whenever
+
+00:26:04.460 --> 00:26:08.680
+we try to design the architecture. LLMs. Right. So. We try
+
+00:26:08.680 --> 00:26:12.260
+to define that. That. Okay. You are going to process one
+
+00:26:12.260 --> 00:26:16.720
+token. And. This is the. Size of the token. So. That size of
+
+00:26:16.720 --> 00:26:20.020
+token. In terms of characters. We can try to define. Maybe.
+
+00:26:20.100 --> 00:26:23.700
+In terms of sub words. Or maybe. In terms of. Bytes. We try
+
+00:26:23.700 --> 00:26:27.800
+to. Define. But. Ideally. Speaking. It is not going to be. A
+
+00:26:27.800 --> 00:26:32.640
+one word. Is equal to. One token. Not means. No. Yes. So. It
+
+00:26:32.640 --> 00:26:35.060
+is not going to be. But yes. You can. You can. Say that.
+
+00:26:35.120 --> 00:26:37.160
+Okay. Fine. Token. Is equal to. One word. But. Whenever.
+
+00:26:37.500 --> 00:26:39.800
+Interviewer. Is going to. Ask you. A cross. Question. Don't
+
+00:26:39.800 --> 00:26:43.880
+say. This. As simple. As that. Fine. Now. So. Generally.
+
+00:26:44.320 --> 00:26:48.000
+The. Common. Schemes. That. We. Try. To. Use. To. Convert.
+
+00:26:48.080 --> 00:26:51.860
+Something. Into. A. Token. So. We. Try. To. Use. A. B. P. E.
+
+00:26:55.400 --> 00:26:55.720
+There. Is.
+
+00:27:08.660 --> 00:27:11.780
+Something. Similar. To. A. P. E. By. Like. You. Know. In.
+
+00:27:12.120 --> 00:27:14.980
+Coding. There. Is. Something. Called. As. Unigram. Lm.
+
+00:27:15.260 --> 00:27:19.220
+Again. We. Try. To. Use. It. For. Tokenization. There. Is.
+
+00:27:19.220 --> 00:27:22.160
+Something. Called. As. By. Label. B. P. E. Similar. To. The.
+
+00:27:22.200 --> 00:27:24.740
+First. Point. Like. A. B. P. Which. I. Said. By. Coding.
+
+00:27:24.860 --> 00:27:28.220
+Which. I. Said. So. These. Are. The. Different. Technique.
+
+00:27:28.260 --> 00:27:31.320
+Which. We. Try. To. Use. It. To. Understand. Or. To.
+
+00:27:31.400 --> 00:27:34.640
+Consider. Something. As. A. One. Single. Token. Now. That.
+
+00:27:34.700 --> 00:27:36.920
+Could. Be. Even. Emojis. There. Is. A.
+
+00:27:50.520 --> 00:27:52.640
+Possibility. And. My. Lms. Can. Understand. Multiple.
+
+00:27:52.900 --> 00:27:56.800
+Languages. So. It's. Not. Equal. To. One. Words. By. The.
+
+00:27:56.840 --> 00:28:01.100
+Way. It's. Always. Like. A. Depends. Upon. The. Like. A.
+
+00:28:01.620 --> 00:28:04.300
+Definition. That. We. Are. Going. To. Give. And. We. Can.
+
+00:28:04.380 --> 00:28:05.960
+Try. To. Give. It. With. The. Help. Of. These. Technique.
+
+00:28:05.960 --> 00:28:14.920
+Or. Maybe. A. By. Label. All. The. Time. So. Now. The.
+
+00:28:28.240 --> 00:28:33.280
+Next. We. Have. To. Flexibility. To. Define. A.
+
+00:28:33.840 --> 00:28:38.340
+Relationship. In. A. Big. Dimension. So. That. Is.
+
+00:28:38.400 --> 00:28:40.260
+Something. Called. As. Embedding. And. We. Have. Already.
+
+00:28:40.340 --> 00:28:43.140
+Seen. That. That. We. Have. A. Multiple. Different.
+
+00:28:43.240 --> 00:28:46.500
+Different. Kind. Of. Models. Which. Is. Responsive. For.
+
+00:28:46.540 --> 00:28:49.200
+Giving. Me. Just. As. A. Embedding. Output. Means. A.
+
+00:28:49.260 --> 00:28:51.860
+Numeric. Output. Basically. Intermediate. Output. Basically.
+
+00:28:52.200 --> 00:28:54.160
+So. Embeddings. Are. Nothing. But. Converting. Our. Data.
+
+00:28:54.240 --> 00:28:56.760
+Set. Into. A. Numeric. Representation. Into. A. Vector.
+
+00:28:56.860 --> 00:28:59.260
+Space. That. Is. Something. Called. As. Embedding. Maybe.
+
+00:28:59.380 --> 00:29:01.240
+You. Can. Try. To. Give. Some. Example. For. Example. Like.
+
+00:29:01.260 --> 00:29:04.220
+A. Open. AI. Small. Text. Model. So. That. Is. Going. To.
+
+00:29:04.240 --> 00:29:07.620
+Give. You. A. Final. Embedding. Size. Of. 1536. Right. That.
+
+00:29:07.680 --> 00:29:07.820
+We. Are.
+
+00:29:23.680 --> 00:29:26.560
+Using. Inside. And. A. Data. Matching. So. Whenever. I'm.
+
+00:29:26.640 --> 00:29:28.960
+Trying. To. Design. A. Recommendation. System. I'm. Trying.
+
+00:29:28.980 --> 00:29:31.480
+To. Design. A. Modern. Search. Engine. I'm. Trying. To.
+
+00:29:31.500 --> 00:29:35.820
+Design. Basically. A. Rag. System. Or. Anywhere. I'm. Doing.
+
+00:29:35.900 --> 00:29:38.500
+A. Document. Or. Data. Matching. So. Over. There. I. Can.
+
+00:29:38.600 --> 00:29:41.820
+Try. To. Use. This. Numeric. Representation. Basically. So.
+
+00:29:41.900 --> 00:29:45.240
+Which. Holds. Always. Not. Just. Information. About. The.
+
+00:29:45.420 --> 00:29:48.260
+Actual. Data. But. Also. Its. Relationship. In. Between.
+
+00:29:48.660 --> 00:29:50.800
+Because. It's. Been. Trained. On. A. Huge. Data. Set. And.
+
+00:29:50.840 --> 00:29:53.320
+Then. It. Is. Generating. Some. Sort. Of. Embedding. For.
+
+00:29:53.380 --> 00:29:57.640
+Me. Then. The. Next. Question. Says. That. That. Define. A.
+
+00:29:57.780 --> 00:30:01.220
+Fine. Tuning. In. Context. Of. Language. Model. So. Any.
+
+00:30:01.260 --> 00:30:03.820
+Idea. Guys. Fine. Tuning. I. Believe. Fine. Tuning. I.
+
+00:30:03.840 --> 00:30:05.380
+Already. Discussed. Yeah.
+
+00:30:09.460 --> 00:30:11.680
+So. Anyone. Who. Can. Give. Me. An. Answer. Fine. Tuning.
+
+00:30:15.480 --> 00:30:18.060
+I. Think. I. Talked. About. Multiple. Variety. Of. The.
+
+00:30:18.100 --> 00:30:20.540
+Fine. Tuning. Not. Just. One. Type. Of. The. Fine. Tuning.
+
+00:30:20.600 --> 00:30:23.500
+I. Believe. In. My. Last. To. Last. Class. Itself. I.
+
+00:30:23.600 --> 00:30:26.760
+Talked. About. A. Fine. Tuning. And. Plus. I. Given. You. A.
+
+00:30:26.780 --> 00:30:28.640
+Code. I. Don't. Know. Whether. You. Executed. That. Code.
+
+00:30:28.760 --> 00:30:31.660
+Or. Not. And. Even. Asked. You. That. Try. To. Use. This.
+
+00:30:31.700 --> 00:30:34.300
+Code. And. Keep. It. Inside. Your. Github. Repository. Part.
+
+00:30:34.400 --> 00:30:37.520
+Number. One. Second. I. Even. Asked. You. That. Everyone.
+
+00:30:37.880 --> 00:30:40.560
+Does. A. Fine. Tuning. So. You. Can. Mention. At. Least.
+
+00:30:40.560 --> 00:30:43.620
+One. Project. Inside. Your. Resume. Just. From. A. Fine.
+
+00:30:43.700 --> 00:30:45.660
+Tuning. Side. I. Believe. I. Already. Given. You. That.
+
+00:30:45.940 --> 00:30:50.360
+Instruction. So. Yeah. Laura. And. Q. Laura. Okay. So.
+
+00:30:50.400 --> 00:30:53.060
+Basically. It. Comes. Under. Laura. And. Q. Laura. Actually.
+
+00:30:53.120 --> 00:30:55.840
+Falls. Under. Prefet. Parameter. Efficient. Fine. Tuning.
+
+00:30:55.940 --> 00:30:58.380
+Right. Parameter. Efficient. Fine. Tuning. So. It. Falls.
+
+00:30:58.480 --> 00:31:00.640
+Under. That. Now. What. Is. This. Parameter. Efficient.
+
+00:31:00.780 --> 00:31:02.700
+Fine. Tuning. If. Someone. Is.
+
+00:31:06.020 --> 00:31:06.780
+Going. To.
+
+00:31:18.220 --> 00:31:20.860
+Ask. Me. A. Actually. Works. So. Basically. He. That. Guy.
+
+00:31:20.900 --> 00:31:24.100
+Is. In. A. Fin. Ops. And. He. Is. A. Of. Very. Big. Company.
+
+00:31:24.140 --> 00:31:29.040
+And. Is. A. Very. Serious. He. Yesterday. We. Were. Having.
+
+00:31:29.040 --> 00:31:31.960
+A. Of. Argument. On. A. I. Yesterday. Evening. Itself. So.
+
+00:31:32.020 --> 00:31:36.920
+I. Was. Like. A. Sitting. Ideal. And. Then. He. He. Came.
+
+00:31:37.000 --> 00:31:41.220
+To. My. House. And. Somehow. We. Got. Into. That. Kind. Of.
+
+00:31:41.280 --> 00:31:44.760
+A. Discussion. So. He. Has. You. Know. Started. Asking. Me.
+
+00:31:45.360 --> 00:31:48.700
+A. Lot. Of. Things. So. I. Was. Just. Trying. To. Convince.
+
+00:31:48.720 --> 00:31:51.820
+Him. That. How. I. Explain. Him. A. Fine. Tuning. Obviously.
+
+00:31:51.980 --> 00:31:54.280
+I. Can't. Say. That. Okay. There. Is. A. Parameter.
+
+00:31:54.440 --> 00:31:57.380
+Efficient. And. Then. This. That. Something. Like. That. So.
+
+00:31:57.680 --> 00:32:00.760
+Really. What. I. Was. What. I. Told. Him. That. That. Okay.
+
+00:32:01.020 --> 00:32:02.840
+So. Let's. Suppose. You. Have. A. Chat. GPT. Right. So.
+
+00:32:03.040 --> 00:32:03.240
+Whenever.
+
+00:32:17.600 --> 00:32:19.840
+I. To. Do. A. Fine. Tuning. Fine. Tuning. Simply. Means.
+
+00:32:19.900 --> 00:32:23.540
+That. That. It. Has. To. Learn. Something. From. My. Data.
+
+00:32:23.800 --> 00:32:26.940
+Right. So. Someone. Has. Already. Trained. It. And. And.
+
+00:32:26.940 --> 00:32:27.560
+I'll. Tell. You.
+
+00:32:40.780 --> 00:32:44.600
+One. Of. The. Real. Right. Real. Time. Data. And. Then. It.
+
+00:32:44.640 --> 00:32:47.400
+Is. Trying. To. Give. The. Output. So. Technically. He. Was.
+
+00:32:47.480 --> 00:32:51.180
+Not. A. Person. Who. Understands. The. Actual. AI. He. Is.
+
+00:32:51.400 --> 00:32:53.420
+Not. Even. The. Part. Of. This. Domain. But. Yeah. He. Was.
+
+00:32:53.480 --> 00:32:58.340
+Very. Much. Interested. In. The. AI. So. Let's. Consider.
+
+00:32:58.420 --> 00:33:00.840
+This. As. A. Black. Box. Right. One. Single. Box. Over.
+
+00:33:00.940 --> 00:33:04.820
+Here. And. I. Have. Trained. This. Box. Still. Maybe. Today.
+
+00:33:04.940 --> 00:33:07.820
+So. Today. Is. Let's. Suppose. Our. 20th. Of. September.
+
+00:33:08.580 --> 00:33:11.080
+September. And. I. Have. Even. Sewn. You. Example. By. The.
+
+00:33:11.100 --> 00:33:14.240
+Way. So. It's. Been. Trained. On. 20th. September. So. It.
+
+00:33:14.260 --> 00:33:16.620
+Will. Be. Able. To. Give. All. The. Answer. Only. Till.
+
+00:33:17.000 --> 00:33:19.140
+20th. Of. September. Because. It. Is. Having. A. Knowledge.
+
+00:33:19.300 --> 00:33:21.880
+After. That. No. One. Has. Trained. Or. No. One. Has. Given.
+
+00:33:21.960 --> 00:33:24.960
+Them. Any. Additional. Information. So. It. Will. Be. Able.
+
+00:33:25.020 --> 00:33:26.980
+To. Train. It. Will. Be. Able. To. Give. You. A. Response.
+
+00:33:27.160 --> 00:33:32.220
+On. Top. Of. That. Now. So. Let's. Suppose. If. I. Have. My.
+
+00:33:32.240 --> 00:33:34.360
+Own. Data. For. Example. He. Was. Having. A. Data. In. A.
+
+00:33:50.620 --> 00:33:51.460
+Fin. Business. So. I.
+
+00:33:55.900 --> 00:34:02.900
+Will. Able. To. Deliver. And. How. Much. It. Is. Going. To.
+
+00:34:02.900 --> 00:34:05.180
+So. I. Simply. Said. That. It's. Not. Going. To.
+
+00:34:08.180 --> 00:34:11.640
+Be. Too. Much. Right. Millions. Just. On. Compute. On.
+
+00:34:11.760 --> 00:34:15.560
+Research. A. Separate. Pipeline. On. Data. Acquisition. A.
+
+00:34:15.660 --> 00:34:18.680
+Separate. Pipeline. So. Basically. It. Is. Going. To. Be. A.
+
+00:34:18.720 --> 00:34:22.320
+Multi-Million. Dollar. Business. Game. In. That. Case. Not.
+
+00:34:22.420 --> 00:34:24.580
+Just. One. Or. Two. Million. It. Will. Be. Like. A. 500.
+
+00:34:24.740 --> 00:34:26.780
+600. Million. Kind. Of. A. Game. You. Will. End. Up.
+
+00:34:26.840 --> 00:34:29.200
+Playing. Which. That's. A. Genius. People. Are. Training.
+
+00:34:29.220 --> 00:34:31.020
+It. Not. What. People. Are. Doing. To. People. Are. Doing.
+
+00:34:31.360 --> 00:34:34.100
+Fine. Tuning. What. They. Do. So. We. Have. A. Box. Right.
+
+00:34:34.660 --> 00:34:34.860
+Final.
+
+00:34:39.060 --> 00:34:39.260
+Prediction.
+
+00:34:51.740 --> 00:34:55.500
+Scenic. Now whenever I will like you know do a final
+
+00:34:55.500 --> 00:34:59.280
+prediction so this time my data will go overall and then
+
+00:34:59.280 --> 00:35:02.960
+whatever like a response I will be able to get from this
+
+00:35:02.960 --> 00:35:06.100
+small box and the big box combined response I will be able
+
+00:35:06.100 --> 00:35:08.440
+to give it to you. So now it will be this model will be
+
+00:35:08.440 --> 00:35:11.980
+elusible enough to give you the final output and in a layman
+
+00:35:11.980 --> 00:35:15.320
+way it's called as like a fine tuning. So we try to do a
+
+00:35:15.320 --> 00:35:18.440
+fine tuning again he was not a technical guy so I can't like
+
+00:35:18.440 --> 00:35:23.260
+take a name like a prefet Cora and Laura over here or like
+
+00:35:23.260 --> 00:35:28.220
+RLHF even or SFT instruction based fine tuning or maybe a
+
+00:35:28.220 --> 00:35:32.400
+domain specific fine tuning. So I just give him like this
+
+00:35:32.400 --> 00:35:35.980
+analogy that okay there is a pre-trained box pilot to this
+
+00:35:35.980 --> 00:35:38.540
+attach another box send your data now whenever it will give
+
+00:35:38.540 --> 00:35:43.280
+output both the box is going to participate your big one and
+
+00:35:43.280 --> 00:35:45.520
+the previous one which you have not even trained and the
+
+00:35:45.520 --> 00:35:48.940
+small one which you have trained. So this is something. So
+
+00:35:48.940 --> 00:35:50.660
+this is something called as fine tuning fine tuning in a
+
+00:35:50.660 --> 00:35:55.760
+layman way that we are trying to like make our model to
+
+00:35:55.760 --> 00:35:58.880
+understand my data set to understand my relation that is
+
+00:35:58.880 --> 00:36:03.320
+something called as fine tuning right. Now so again when you
+
+00:36:03.320 --> 00:36:06.560
+will say that okay this is fine tuning so people will ask
+
+00:36:06.560 --> 00:36:09.360
+you question that okay what is the meaning of like what are
+
+00:36:09.360 --> 00:36:12.180
+the different kind of fine tuning. The very first one is a
+
+00:36:12.180 --> 00:36:15.920
+full fine tuning right change all the weights again very
+
+00:36:15.920 --> 00:36:18.600
+very expensive one. The second approach is basically. So
+
+00:36:18.600 --> 00:36:22.020
+basically a prefet parameter efficient fine tuning. So where
+
+00:36:22.020 --> 00:36:24.940
+you do not change the weight you just add the parallel layer
+
+00:36:24.940 --> 00:36:29.160
+and then you try to train just a small chunk of the weights
+
+00:36:29.160 --> 00:36:32.160
+right. A very small neural network you try to train it and
+
+00:36:32.160 --> 00:36:34.360
+then you give a response out of that. So that is something
+
+00:36:34.360 --> 00:36:37.520
+called as parameter efficient fine tuning prefet. Inside
+
+00:36:37.520 --> 00:36:41.960
+that again there is a two techniques one is a LoRa one is a
+
+00:36:41.960 --> 00:36:46.900
+Quora QLoRa basically. So LoRa means basically like we try
+
+00:36:46.900 --> 00:36:49.460
+to add like a parallel layer. That is something called as
+
+00:36:49.460 --> 00:36:53.340
+LoRa QLoRa is nothing but it is actually LoRa but quantized
+
+00:36:53.340 --> 00:36:56.360
+one. So we are like trying to convert maybe our 16 bit
+
+00:36:56.360 --> 00:37:00.060
+compute into a 4 bit or maybe a 8 bit compute. So space
+
+00:37:00.060 --> 00:37:03.840
+taken by this one will be less compute will be very very
+
+00:37:03.840 --> 00:37:06.600
+less. So that is something that we try to do in terms of
+
+00:37:06.600 --> 00:37:10.660
+LoRa and Quora. In terms of QLoRa so we try to do like so
+
+00:37:10.660 --> 00:37:13.020
+whenever we are saying quantization so we try to do a
+
+00:37:13.020 --> 00:37:16.760
+quantization of the big models the original one right. So
+
+00:37:16.760 --> 00:37:19.400
+this is how it will be able to you know. Retain all the
+
+00:37:19.400 --> 00:37:21.860
+properties and it will be able to give an answer but it will
+
+00:37:21.860 --> 00:37:25.460
+work even in a edge devices simple with the Quora and LoRa.
+
+00:37:25.640 --> 00:37:27.740
+Quora and LoRa I think I have already discussed even in your
+
+00:37:27.740 --> 00:37:30.220
+classes and even my previous classes in very detail
+
+00:37:30.220 --> 00:37:33.360
+mathematically. Then there is something called as
+
+00:37:33.360 --> 00:37:36.340
+instruction based fine tuning supervised fine tuning. So
+
+00:37:36.340 --> 00:37:38.940
+where we try to give a instruction we try to give like okay
+
+00:37:38.940 --> 00:37:42.060
+this is the response I am looking for and then we can try to
+
+00:37:42.060 --> 00:37:44.900
+do a fine tuning for that one. So these are the technique
+
+00:37:44.900 --> 00:37:47.620
+right. These are the techniques that we try to follow while
+
+00:37:47.620 --> 00:37:51.960
+doing a quantization. Fine tuning of the model and yeah make
+
+00:37:51.960 --> 00:37:54.660
+sure that you have gone through it because these are the
+
+00:37:54.660 --> 00:37:58.460
+very common question. Now what is the difference between GPT
+
+00:37:58.460 --> 00:38:02.300
+and BERT. So generally GPT and BERT both are transform based
+
+00:38:02.300 --> 00:38:04.860
+architecture right. Both are coming from the same research
+
+00:38:04.860 --> 00:38:09.420
+paper. Attention is all you need right. Attention is all you
+
+00:38:09.420 --> 00:38:13.620
+need. Initial version of GPT if I will talk about. So
+
+00:38:13.620 --> 00:38:18.060
+initial version of GPT was a 96 layer GPT. Means 96 layer of
+
+00:38:18.060 --> 00:38:19.400
+transform based architecture. Transformer was there. If I
+
+00:38:19.400 --> 00:38:23.240
+will talk about a GPT like a 1 I believe yeah 1 or 2 which
+
+00:38:23.240 --> 00:38:25.460
+was the initial version which was launched in the mid of
+
+00:38:25.460 --> 00:38:29.260
+2022 which has like a created a huge budge. It was a 96
+
+00:38:29.260 --> 00:38:32.560
+layer architecture transformer architecture by the way
+
+00:38:32.560 --> 00:38:38.820
+right. Even if I will talk about like a BERT so it's again a
+
+00:38:38.820 --> 00:38:42.840
+transform based architecture. GPT. GPT means generative pre
+
+00:38:42.840 --> 00:38:46.360
+-trained transformer. So transformer is there. BERT if I
+
+00:38:46.360 --> 00:38:48.400
+will talk about. So bidirectional encoder. BERT is an
+
+00:38:48.400 --> 00:38:50.300
+encoder representation from transformer. So again
+
+00:38:50.300 --> 00:38:52.300
+transformer is there. So both are technically transformer
+
+00:38:52.300 --> 00:38:56.060
+based architecture. But initial version of GPT was a decoder
+
+00:38:56.060 --> 00:38:59.280
+only architecture. Only decoder side. If you remember the
+
+00:38:59.280 --> 00:39:02.140
+research paper. So we had a picture. We had an encoder. We
+
+00:39:02.140 --> 00:39:05.940
+have a decoder. Right. Whereas if I will talk about a BERT.
+
+00:39:06.040 --> 00:39:10.180
+So BERT was technically an encoder based architecture. And
+
+00:39:10.180 --> 00:39:14.420
+GPT was actually trained right. GPT was actually trained to
+
+00:39:14.420 --> 00:39:18.380
+do a prediction in an autoregressive mode. Right. It means
+
+00:39:18.380 --> 00:39:21.340
+you give some line and then after that it will try to
+
+00:39:21.340 --> 00:39:24.120
+produce something. So that was a roles and responsibility of
+
+00:39:24.120 --> 00:39:27.800
+a GPT by the way. At the same point of time if I will talk
+
+00:39:27.800 --> 00:39:31.300
+about a BERT. So objective of BERT was not same. So
+
+00:39:31.300 --> 00:39:35.080
+objective of BERT was to understand a relation. And that is
+
+00:39:35.080 --> 00:39:39.020
+the reason. So it's called as masked language modeling. So
+
+00:39:39.020 --> 00:39:46.520
+basically if I will talk about GPT and this BERT. In terms
+
+00:39:46.520 --> 00:39:51.860
+of like. Maybe a practical example. So something like that
+
+00:39:51.860 --> 00:39:57.720
+you can you can say. So the answer is. Sud is a dash dash
+
+00:39:57.720 --> 00:40:01.100
+dash right. So Sud is a teacher. Sud is a father. Sud is a
+
+00:40:01.100 --> 00:40:03.480
+husband. Something like that. You can try to predict. So
+
+00:40:03.480 --> 00:40:05.280
+this is the prediction. This is the next completion you are
+
+00:40:05.280 --> 00:40:07.620
+trying to do. So basically this is called as GPT style.
+
+00:40:07.880 --> 00:40:10.740
+Yeah. Generatory pre-trained transformer style. So where it
+
+00:40:10.740 --> 00:40:13.600
+is trying to generate the next thing. At the same point of
+
+00:40:13.600 --> 00:40:17.440
+time if I will talk about a BERT. Right. BERT bi-directional
+
+00:40:17.440 --> 00:40:21.060
+encoder representation from transformer. So basically it was
+
+00:40:21.060 --> 00:40:31.680
+kind of a masking. That Sud is a dash dash dash. He used to
+
+00:40:31.680 --> 00:40:38.240
+teach data. Right. So it will learn even from this side. It
+
+00:40:38.240 --> 00:40:40.860
+will learn even from this side. In both the side it will try
+
+00:40:40.860 --> 00:40:43.560
+to learn and then it will try to fill this one. So let's
+
+00:40:43.560 --> 00:40:46.540
+suppose I have masked this one. Right. So it will try to.
+
+00:40:46.540 --> 00:40:51.240
+Learn the masked word over here. So in other words it's also
+
+00:40:51.240 --> 00:40:55.080
+called as MLM masked language modeling. So BERT always
+
+00:40:55.080 --> 00:40:58.060
+followed that kind of a style and it was technically
+
+00:40:58.060 --> 00:41:02.800
+designed to understand the relation in both the side in a bi
+
+00:41:02.800 --> 00:41:06.900
+-directional way. And GPT was ideally designed to like you
+
+00:41:06.900 --> 00:41:10.500
+know generate something new. So that's a major differences
+
+00:41:10.500 --> 00:41:14.320
+you will say you will be able to find out between a GPT. So
+
+00:41:14.320 --> 00:41:17.820
+GPT was generative. Right. And BERT was basically like a
+
+00:41:17.820 --> 00:41:21.340
+discriminative or you can say it was it was created for a
+
+00:41:21.340 --> 00:41:24.360
+understanding purposes that that's a major differences
+
+00:41:24.360 --> 00:41:27.020
+between these two architecture. But both the architectures
+
+00:41:27.020 --> 00:41:29.940
+are transformer based architecture. Initially one was
+
+00:41:29.940 --> 00:41:32.840
+decoder only architecture and one was an encoder only
+
+00:41:32.840 --> 00:41:37.260
+architecture. That's a difference as per me. Explain the
+
+00:41:37.260 --> 00:41:43.060
+concept of attention mechanism KQV simple or QKB. Right. So
+
+00:41:43.060 --> 00:41:46.000
+basically attention means focusing on one and finding out
+
+00:41:46.000 --> 00:41:49.420
+relationship. Of one word with other words. I have given the
+
+00:41:49.420 --> 00:41:53.800
+example Stan Sue is teaching and he uses to teach our data
+
+00:41:53.800 --> 00:41:57.020
+science. So it will try to understand what is the
+
+00:41:57.020 --> 00:42:01.200
+relationship of he with all the other words and it will be
+
+00:42:01.200 --> 00:42:05.180
+able to find out that OK. So he is related to the answer. So
+
+00:42:05.180 --> 00:42:08.160
+basically when I say he it is representing the answer
+
+00:42:08.160 --> 00:42:11.660
+automatically. So you don't have to again and again say that
+
+00:42:11.660 --> 00:42:14.800
+does not show is our teacher and also is teaching data. No
+
+00:42:14.800 --> 00:42:17.280
+you can say he is teaching data science it will be able to
+
+00:42:17.280 --> 00:42:19.760
+understand automatically. So basically it's like trying to
+
+00:42:19.760 --> 00:42:22.100
+focus and I have already given you the formula. So attention
+
+00:42:22.100 --> 00:42:27.020
+formula UKV. So QKV is nothing but softmax function inside
+
+00:42:27.020 --> 00:42:32.020
+that Q into transpose of key divided by dimension of key
+
+00:42:32.020 --> 00:42:37.180
+into value V. That is basically a attention formula by the
+
+00:42:37.180 --> 00:42:41.700
+way. Yeah. Now what is the next question. Next question says
+
+00:42:41.700 --> 00:42:44.860
+that what is the purpose of positional information. Encoding
+
+00:42:44.860 --> 00:42:48.540
+in a transformer. If you remember when I was teaching this
+
+00:42:48.540 --> 00:42:51.900
+attention is all you need. So this positional encoding comes
+
+00:42:51.900 --> 00:42:55.500
+over there and again two type of position encoding formula
+
+00:42:55.500 --> 00:42:58.900
+which is already mentioned even inside a research paper for
+
+00:42:58.900 --> 00:43:02.340
+even place and for order place. Yeah I don't know whether
+
+00:43:02.340 --> 00:43:04.980
+you remember that or not but yeah. So even if you'll go and
+
+00:43:04.980 --> 00:43:08.480
+search on a Google attention is all you need and if you'll
+
+00:43:08.480 --> 00:43:10.980
+open up the research paper you will see two two formula
+
+00:43:10.980 --> 00:43:14.800
+basically given over there in second or third page the third
+
+00:43:14.800 --> 00:43:19.720
+or fourth page I believe. Yeah. So even an odd. So basically
+
+00:43:19.720 --> 00:43:23.580
+this positional encoding is nothing but it always helps like
+
+00:43:23.580 --> 00:43:27.940
+a data to establish a relation that okay so which one is
+
+00:43:27.940 --> 00:43:30.680
+coming after what. Because because at the end of the day we
+
+00:43:30.680 --> 00:43:32.800
+are representing everything in a numeric value right
+
+00:43:32.800 --> 00:43:35.880
+everything in a numeric value. So how system will be able to
+
+00:43:35.880 --> 00:43:37.740
+establish the relation. It has to understand the relation.
+
+00:43:37.900 --> 00:43:40.260
+It never understands the grammar by the way. Right. System
+
+00:43:40.260 --> 00:43:42.220
+never understands the grammar. It just understands the
+
+00:43:42.220 --> 00:43:45.120
+numeric. So this positional encoding is going to help me out
+
+00:43:45.120 --> 00:43:47.820
+on an even number and an odd number or even position odd
+
+00:43:47.820 --> 00:43:52.340
+position like with the help of this positional encoding we
+
+00:43:52.340 --> 00:43:55.480
+can prepare a data set in such a way that it will be able to
+
+00:43:55.480 --> 00:43:59.320
+understand the relationship and eventually semantic meaning
+
+00:43:59.320 --> 00:44:03.180
+of the data it will be able to understand. That was the
+
+00:44:03.180 --> 00:44:08.060
+whole purpose behind a positional encoding. It's nothing
+
+00:44:08.060 --> 00:44:12.020
+new. Since R and N time we have been using this positional
+
+00:44:12.020 --> 00:44:16.040
+encoding. And we are using positional encoding even inside
+
+00:44:16.040 --> 00:44:20.460
+the research paper. Now define autoregressive language
+
+00:44:20.460 --> 00:44:24.520
+modeling right. So autoregressive is nothing but predicting
+
+00:44:24.520 --> 00:44:28.040
+our next token right predicting our next token. So whatever
+
+00:44:28.040 --> 00:44:31.360
+right whatever system whatever model which is going to
+
+00:44:31.360 --> 00:44:34.820
+predict our next token for me that is something called as
+
+00:44:34.820 --> 00:44:38.680
+autoregressive. So the example the best one is GPT right. So
+
+00:44:38.680 --> 00:44:42.860
+GPT was basically a autoregressive one. What it does. So it
+
+00:44:42.860 --> 00:44:46.320
+tried to predict a lot of words right. And then it tried to
+
+00:44:46.320 --> 00:44:48.820
+define the probability. Basically it's coming out of the
+
+00:44:48.820 --> 00:44:51.500
+softness function right. So layman meaning of
+
+00:44:51.500 --> 00:44:53.880
+autoregressiveness is nothing but predicting our next one.
+
+00:44:53.980 --> 00:44:57.320
+And the best example is GPT model. Now what is the
+
+00:44:57.320 --> 00:45:00.220
+difference between encoder only and decoder only
+
+00:45:00.220 --> 00:45:05.520
+architecture. I believe I have already like made sense of it
+
+00:45:05.520 --> 00:45:09.320
+right. So encoder only architecture if I'll talk about so
+
+00:45:09.320 --> 00:45:12.740
+but. So basically. Basically it will try to learn from both
+
+00:45:12.740 --> 00:45:16.020
+the side by masking the middle one by masking the random
+
+00:45:16.020 --> 00:45:18.400
+words or maybe some of the words. So basically it is going
+
+00:45:18.400 --> 00:45:22.900
+to be bi-directional and it will be good if you're training
+
+00:45:22.900 --> 00:45:25.020
+this kind of a transformer. So it will be good for
+
+00:45:25.020 --> 00:45:28.880
+understanding the relationship between the data set. Simple
+
+00:45:28.880 --> 00:45:32.860
+example is BERT right. It's not basically good for a
+
+00:45:32.860 --> 00:45:35.420
+generation right. It's not good for the regeneration but
+
+00:45:35.420 --> 00:45:37.460
+it's good for the understanding purposes. That's the
+
+00:45:37.460 --> 00:45:40.280
+responsibility of encoder. Now if I'll talk about a decoder.
+
+00:45:40.380 --> 00:45:44.640
+Decoder. Decoder is majorly like a move from left to right
+
+00:45:44.640 --> 00:45:47.960
+right. Means it will try to always produce the next next
+
+00:45:47.960 --> 00:45:51.540
+next one. Example is basically GPT and it's basically been
+
+00:45:51.540 --> 00:45:55.640
+used for the generation right. So all the model that we are
+
+00:45:55.640 --> 00:45:58.020
+able to see it's technically like on an outer layer we have
+
+00:45:58.020 --> 00:46:01.180
+a decoder. Now there is something called as encoder decoder
+
+00:46:01.180 --> 00:46:04.980
+architecture right. Also for example a sequence to sequence
+
+00:46:04.980 --> 00:46:09.960
+or T5 or there is a some model called as BRT BART not BERT.
+
+00:46:09.980 --> 00:46:14.340
+BART. So basically it's it's like a combine the capability
+
+00:46:14.340 --> 00:46:17.660
+of encoder and decoder both. So these kind of a model
+
+00:46:17.660 --> 00:46:20.960
+encoder decoder model has been used for translation. So for
+
+00:46:20.960 --> 00:46:23.400
+example we are trying to translate it from one language to
+
+00:46:23.400 --> 00:46:26.020
+other languages. So it has to understand back and forth
+
+00:46:26.020 --> 00:46:29.320
+means bidirectional plus it has to generate it has to do
+
+00:46:29.320 --> 00:46:32.060
+both the tasks right. So translation if I'll talk about
+
+00:46:32.060 --> 00:46:35.140
+right. So in that case we can try to use a combined model
+
+00:46:35.140 --> 00:46:38.200
+which is like a encoder and decoder type of the model. But
+
+00:46:38.200 --> 00:46:40.380
+here. Question has been asked. It has been asked just from
+
+00:46:40.380 --> 00:46:43.880
+the encoder side. So yeah. Encoder by BART decoder by GPT
+
+00:46:43.880 --> 00:46:46.420
+encoder means understanding the data bidirectional way
+
+00:46:46.420 --> 00:46:52.400
+decoder means generating the next one. Simple yeah. Now so
+
+00:46:52.400 --> 00:46:57.000
+there is a question called as explain the concept of few
+
+00:46:57.000 --> 00:47:04.840
+shot learning. Okay few shot learning. So basically in case
+
+00:47:04.840 --> 00:47:07.300
+of few shot I think I have already given an example when I
+
+00:47:07.300 --> 00:47:10.460
+was talking about this prompt engineering. So few shot a
+
+00:47:10.460 --> 00:47:13.980
+simple definition says that that I will give you example
+
+00:47:13.980 --> 00:47:18.880
+that's few shot right. So basically whenever I'm trying to
+
+00:47:18.880 --> 00:47:21.440
+give answer of any question I'm giving you some example that
+
+00:47:21.440 --> 00:47:23.940
+okay. So maybe this falls into this. So that is something
+
+00:47:23.940 --> 00:47:27.840
+called as a few short learning or maybe few short prompting
+
+00:47:27.840 --> 00:47:30.120
+whatever you say right in whatever context you are going to
+
+00:47:30.120 --> 00:47:33.280
+take it. So let's suppose when we are trying to you know
+
+00:47:33.280 --> 00:47:37.500
+train the model or maybe whenever we are trying to like ask
+
+00:47:37.500 --> 00:47:41.180
+a question. are saying that that okay so 2 plus 2 is equal
+
+00:47:41.180 --> 00:47:46.900
+to 4 one example 5 plus 3 is equal to 8 now give me 7 plus 6
+
+00:47:46.900 --> 00:47:51.020
+that is something called as fuse shot right because it will
+
+00:47:51.020 --> 00:47:54.660
+be able to give you that answer but yeah what I am trying to
+
+00:47:54.660 --> 00:47:58.460
+say over here that you are giving an example and you are
+
+00:47:58.460 --> 00:48:01.600
+saying that take this kind of an input give me this kind of
+
+00:48:01.600 --> 00:48:05.300
+output in this manner means you are defining even the type
+
+00:48:05.300 --> 00:48:07.780
+of the output that it will be able to give it so that is
+
+00:48:07.780 --> 00:48:11.260
+called as a fuse shot now what is the role of pre-training
+
+00:48:11.260 --> 00:48:18.760
+in large language model so the role of pre-training is to
+
+00:48:18.760 --> 00:48:25.600
+make my entire data visible and understandable to my element
+
+00:48:25.600 --> 00:48:29.440
+or my language model that is a meaning of a pre-training
+
+00:48:29.440 --> 00:48:33.900
+right means it should be able to adjust a weight it should
+
+00:48:33.900 --> 00:48:38.280
+be able to understand a relationship right between each and
+
+00:48:38.280 --> 00:48:41.100
+every token that is that is something called as role of a
+
+00:48:41.100 --> 00:48:48.600
+pre-training so here we have fundamental 15 question now
+
+00:48:48.600 --> 00:48:54.920
+let's like try to understand another 15 question any
+
+00:48:54.920 --> 00:48:58.260
+question for me guys anyone I know you have not done the
+
+00:48:58.260 --> 00:49:01.040
+preparation you have not done anything actually but yeah if
+
+00:49:01.040 --> 00:49:03.420
+you have any question you can go ahead with it but
+
+00:49:06.820 --> 00:49:09.240
+ideally speaking this is not a weight of like you know doing
+
+00:49:09.240 --> 00:49:12.020
+a discussion at all so you can do
+
+00:49:19.380 --> 00:49:22.880
+means it will not give you much of benefit any question for
+
+00:49:22.880 --> 00:49:26.180
+me yeah or salvi like a move ahead okay
+
+00:49:33.250 --> 00:49:37.150
+how would you use openai api to generate a text I believe
+
+00:49:37.150 --> 00:49:41.290
+you all know it right yes it's kind of a practical based
+
+00:49:41.290 --> 00:49:44.150
+question basic implementation based question I believe we
+
+00:49:44.150 --> 00:49:47.450
+all know right how to use even we all know because I have
+
+00:49:47.450 --> 00:49:49.530
+already seen this kind of example shown this kind of example
+
+00:49:49.530 --> 00:49:54.310
+that host your own model on your own gpu expose that as an
+
+00:49:54.310 --> 00:49:58.550
+api we are aware about that how many of you have done that
+
+00:49:58.550 --> 00:50:03.890
+guys that that gpu configuration yeah anyone from this class
+
+00:50:03.890 --> 00:50:10.610
+has done that the gpu h100 yeah joel joey joel has done that
+
+00:50:11.070 --> 00:50:16.730
+okay okay okay many I think in that batch generative a batch
+
+00:50:16.730 --> 00:50:21.530
+many people have already done that right yeah so that is
+
+00:50:21.530 --> 00:50:24.430
+also open ai model right and if I have to go and consume a
+
+00:50:24.430 --> 00:50:29.170
+open ai simple call the chat completion url pass basically
+
+00:50:29.170 --> 00:50:34.250
+your apis then pass a payload that's it this is how you can
+
+00:50:34.250 --> 00:50:37.890
+hit any apis right not just a open a api and I believe we
+
+00:50:37.890 --> 00:50:40.110
+all know how to create the api because that was the very
+
+00:50:40.110 --> 00:50:42.650
+first lecture which I have taken a fast api lectures so
+
+00:50:42.650 --> 00:50:46.010
+where I taught you that how to create the apis so it's very
+
+00:50:46.010 --> 00:50:50.270
+simple right open ai all of you are using yuri by the way
+
+00:50:50.270 --> 00:50:53.790
+yeah all of you are using yuri so technically it's the same
+
+00:50:53.790 --> 00:50:57.110
+thing it's it's nothing different right now what is
+
+00:50:57.110 --> 00:51:01.450
+langchain and what are its main purpose langchain is nothing
+
+00:51:01.450 --> 00:51:04.330
+but it's a library and like langchain there are other
+
+00:51:04.330 --> 00:51:08.230
+libraries called as llama indexes langgraph crewai autogen
+
+00:51:08.230 --> 00:51:12.150
+or initn so basically langchain is a platform so which is a
+
+00:51:12.150 --> 00:51:16.050
+code based platform right initn or crewai is a no code or
+
+00:51:16.050 --> 00:51:18.970
+low code kind of a platform so langchain is a code based
+
+00:51:18.970 --> 00:51:23.590
+platform so which helps me out to automate my task by
+
+00:51:23.590 --> 00:51:27.710
+creating a any kind of a agent I want now again people will
+
+00:51:27.710 --> 00:51:29.570
+ask you next question what is what do you understand by
+
+00:51:29.570 --> 00:51:33.430
+agents right so you can say that a agent is nothing but a
+
+00:51:33.430 --> 00:51:38.210
+function tool right or function you can say just in a safer
+
+00:51:38.210 --> 00:51:43.430
+side you can say as a function so which will be having a llm
+
+00:51:43.430 --> 00:51:46.390
+capabilities right and with the help of langchain I will be
+
+00:51:46.390 --> 00:51:49.950
+able to create such function or I will be able to convert
+
+00:51:49.950 --> 00:51:54.530
+such function as an agent technically that's a definition so
+
+00:51:54.530 --> 00:51:56.430
+langchain is nothing but it's a platform so which is going
+
+00:51:56.430 --> 00:51:58.650
+to help me out in terms of creating the agents in terms of
+
+00:51:58.650 --> 00:52:02.190
+building the rag application agentic rag application not
+
+00:52:02.190 --> 00:52:04.570
+just rag because just to build a rag application I don't
+
+00:52:04.570 --> 00:52:08.670
+need langchain right langchain is not required without even
+
+00:52:08.670 --> 00:52:11.670
+langchain I can without even any framework any library I can
+
+00:52:11.670 --> 00:52:14.250
+I can build rag because rag concept was different rag
+
+00:52:14.250 --> 00:52:17.330
+concept says that that there will be a query it will go to
+
+00:52:17.330 --> 00:52:21.570
+vector db pull a top k merge it send to llms that's the
+
+00:52:21.570 --> 00:52:25.570
+fundamentals of rag so over here no langchain application
+
+00:52:25.570 --> 00:52:32.310
+always but yeah so langchain is an agent based like
+
+00:52:32.310 --> 00:52:35.430
+framework which helps me out to like you know create an
+
+00:52:35.430 --> 00:52:38.850
+agents now people will ask you a next question that do you
+
+00:52:38.850 --> 00:52:43.830
+think we should use langchain in a production what will be
+
+00:52:43.830 --> 00:52:47.550
+your like a thought on this guys do you think langchain we
+
+00:52:47.550 --> 00:52:50.450
+should like we should use langchain in a production I mean
+
+00:52:50.450 --> 00:52:52.910
+like it's fine we can do experiment in local, we have done
+
+00:52:52.910 --> 00:52:56.030
+that. Genity way class, last week itself we have done lang
+
+00:52:56.030 --> 00:52:59.150
+chain. What is your thought?
+
+00:53:04.000 --> 00:53:07.420
+We use lang chain in a production? No, we should go with the
+
+00:53:07.420 --> 00:53:11.600
+lang smith or lang graph. Okay, he is giving an answer from
+
+00:53:11.600 --> 00:53:15.940
+today's discussion, believe me. Today itself I have
+
+00:53:15.940 --> 00:53:20.000
+discussed this in a class. No, it is not a stable version.
+
+00:53:20.260 --> 00:53:23.160
+See, lang chain is a stable version. It is not a question
+
+00:53:23.160 --> 00:53:26.220
+about the stability by the way. It is not a question about
+
+00:53:26.220 --> 00:53:30.460
+stability. It is all about the flexibility that we are
+
+00:53:30.460 --> 00:53:33.380
+getting from a framework. Stability means what? It is just a
+
+00:53:33.380 --> 00:53:36.280
+piece of function, piece of code. It is nothing more than
+
+00:53:36.280 --> 00:53:42.020
+that. Nothing beyond that you can say. But the thing is that
+
+00:53:42.020 --> 00:53:44.900
+flexibility that it tries to give me in terms of
+
+00:53:44.900 --> 00:53:47.900
+orchestration, in terms of building a security around it, in
+
+00:53:47.900 --> 00:53:51.200
+terms of doing a guard railing, in terms of building a
+
+00:53:51.200 --> 00:53:54.480
+solution. So it is somewhere it is not there. So even lang
+
+00:53:54.480 --> 00:53:57.140
+chain founders, the CEO, if you'll go and see his version,
+
+00:53:57.400 --> 00:54:00.180
+he himself says that, that see, we have built that as a tool
+
+00:54:00.180 --> 00:54:04.840
+wherever it is required. Use a particular tool and use it.
+
+00:54:05.360 --> 00:54:09.740
+Don't just rely on lang chain. He is simply saying that it
+
+00:54:09.740 --> 00:54:12.540
+is his statement, not my statement by the way. And you can
+
+00:54:12.540 --> 00:54:15.560
+go and check over the internet that see, I'm building this
+
+00:54:15.560 --> 00:54:19.400
+as a tool. So wherever it is required, just use a particular
+
+00:54:19.400 --> 00:54:23.000
+component and then use it in your solution. But just to
+
+00:54:23.000 --> 00:54:26.700
+build the entire solution. Okay. Don't depend upon me.
+
+00:54:28.520 --> 00:54:31.240
+Simple. So when CEO himself is saying this kind of things,
+
+00:54:31.420 --> 00:54:35.100
+so obviously you should not rely a hundred percent. Yeah.
+
+00:54:35.200 --> 00:54:38.860
+Use some of the component. That's okay. Right. You saw the
+
+00:54:38.860 --> 00:54:42.200
+component. So if you remember in my one of the REG class,
+
+00:54:42.400 --> 00:54:44.620
+not all, because I have talked multiple different, different
+
+00:54:44.620 --> 00:54:48.420
+kind of REG in one of my REG class to call my Facebook, a
+
+00:54:48.420 --> 00:54:51.020
+similarity search databases, I have used a lang chain
+
+00:54:51.020 --> 00:54:54.580
+library, just that part. Right. So basically that's one
+
+00:54:54.580 --> 00:54:55.380
+single component. I have built. Okay. So basically, I have
+
+00:54:55.380 --> 00:54:58.080
+used. So I was not dependent upon the entire like a link
+
+00:54:58.080 --> 00:55:01.340
+chain framework, just one single piece of code because it
+
+00:55:01.340 --> 00:55:03.940
+was making my life easy. Instead of writing 10 line of a
+
+00:55:03.940 --> 00:55:08.360
+code, I was able to do it just in one, two line. Yeah. So it
+
+00:55:08.360 --> 00:55:11.720
+was helping me out. So I have just used it, but should I
+
+00:55:11.720 --> 00:55:16.040
+like a rely on that? The answer is no simple.
+
+00:55:18.140 --> 00:55:20.960
+Yes. Yes. To convert to a chunk. Exactly. I think you are
+
+00:55:20.960 --> 00:55:24.180
+the serious student by the way, Ronak. So see, he's, he's
+
+00:55:24.180 --> 00:55:26.680
+remembers that. Right. So, okay. So, okay. So, okay. So,
+
+00:55:26.680 --> 00:55:29.400
+okay. So, okay. So, uh, this is, this is how we should, we
+
+00:55:29.400 --> 00:55:31.980
+should understand like where we should use, what we should
+
+00:55:31.980 --> 00:55:34.180
+use, when we should use. It's not like we should always,
+
+00:55:34.320 --> 00:55:37.540
+because I have seen over the internet that land chain, land
+
+00:55:37.540 --> 00:55:39.640
+chain, land chain, people are talking about land chain.
+
+00:55:39.700 --> 00:55:41.980
+Everyone's talking about land chain. Then land graph comes
+
+00:55:41.980 --> 00:55:44.060
+into picture. Now everyone started talking about land graph.
+
+00:55:44.200 --> 00:55:46.820
+Then crew AI comes into picture. Then everyone started
+
+00:55:46.820 --> 00:55:50.320
+talking about crew AI. Right. Every like influencer, every
+
+00:55:50.320 --> 00:55:53.520
+promoter, I mean like, and then they forgot about the land
+
+00:55:53.520 --> 00:55:55.980
+chain, the previous one, the land graph, the previous one.
+
+00:55:56.080 --> 00:55:59.520
+They forgot about it. I don't like to see, uh, and they
+
+00:55:59.520 --> 00:56:02.140
+never talk about the pros and cons that what is the
+
+00:56:02.140 --> 00:56:04.320
+limitation? What is the capability where we should use,
+
+00:56:04.500 --> 00:56:07.480
+where we should not use. I think that's bad. Right. So we
+
+00:56:07.480 --> 00:56:12.360
+should always learn the limitation that, okay. Um, I, uh, we
+
+00:56:12.360 --> 00:56:15.680
+should not like fully rely on that one. Maybe one or two
+
+00:56:15.680 --> 00:56:18.220
+function we can try to use just like a Python, just a
+
+00:56:18.220 --> 00:56:20.120
+Pythonic library. Right. So even in Python, there are
+
+00:56:20.120 --> 00:56:22.820
+thousands of libraries and it's not like, uh, let's suppose
+
+00:56:22.820 --> 00:56:25.520
+if I'm using Pandas, I will end up just using Pandas itself.
+
+00:56:25.660 --> 00:56:28.560
+No. No. For data processing, I just use Pandas for a piece
+
+00:56:28.560 --> 00:56:31.060
+of the work. And then I use another library, then I use
+
+00:56:31.060 --> 00:56:33.820
+another one. In a similar manner, you have to consume
+
+00:56:33.820 --> 00:56:38.940
+LandChain. Now the 18 number question says that how do you
+
+00:56:38.940 --> 00:56:45.060
+implement a simple chatara using GPT? I think we all have
+
+00:56:45.060 --> 00:56:45.780
+done that, right guys.
+
+00:56:52.520 --> 00:56:55.080
+So coming to this land chain major components, so basically
+
+00:56:55.080 --> 00:56:57.560
+it was having a model component, it is having a retrieval
+
+00:56:57.560 --> 00:56:59.780
+component, it is having a agent component. It is having a
+
+00:56:59.780 --> 00:57:02.120
+memory component. component, it is having a callback and
+
+00:57:02.120 --> 00:57:04.420
+tracing component, so these are the or you can say it is
+
+00:57:04.420 --> 00:57:06.840
+having a chaining component, L-C-E-L we used to say,
+
+00:57:06.980 --> 00:57:12.600
+lanchain basically like a expressive sorry, lanchain
+
+00:57:12.600 --> 00:57:15.600
+expression language, yeah L-C-E-L, lanchain expression
+
+00:57:15.600 --> 00:57:18.640
+language it is having, so these are the component, these are
+
+00:57:18.640 --> 00:57:21.680
+just like you know breakdown of the library you can say, you
+
+00:57:21.680 --> 00:57:25.120
+will be able to find out. Now how do you implement a simple
+
+00:57:25.120 --> 00:57:30.260
+chatbot using ChatGPT, can I say all of us can do it? If I
+
+00:57:30.260 --> 00:57:32.220
+am going to ask you or if someone is going to ask you that
+
+00:57:32.220 --> 00:57:37.380
+okay use ChatGPT API key and build a chatbot, I think we all
+
+00:57:37.380 --> 00:57:40.800
+can do it right, RAG is different, yeah we have done that,
+
+00:57:40.900 --> 00:57:43.780
+we have built a lot of like a chatbot with the help of RAG
+
+00:57:43.780 --> 00:57:46.920
+right, let's suppose I don't have to implement RAG, I don't
+
+00:57:46.920 --> 00:57:49.760
+have to you know deal with my private data, I just have to
+
+00:57:49.760 --> 00:57:53.960
+you know take the API key or maybe I have to host my model
+
+00:57:53.960 --> 00:57:59.180
+on my GPU and then build a chatbot. Okay. If you remember I
+
+00:57:59.180 --> 00:58:05.340
+have also like a hosted 120 billion parameter on GPU and
+
+00:58:05.340 --> 00:58:12.460
+then I was able to do inferencing inside ulama UI and open
+
+00:58:12.460 --> 00:58:18.920
+web UI, have you gone through that lecture by the way, yeah,
+
+00:58:19.040 --> 00:58:26.190
+so where I was not even relying upon the open AI, let
+
+00:58:31.440 --> 00:58:34.480
+me show you somewhere on YouTube, I
+
+00:58:36.680 --> 00:58:38.720
+don't know whether you have. Yeah and I have also uploaded a
+
+00:58:38.720 --> 00:58:39.780
+document for that one,
+
+00:58:43.160 --> 00:58:48.600
+so this, this, this, this, this, this, this, spark, uran,
+
+00:58:48.700 --> 00:58:54.540
+your own GPT, I think here, yeah, open web UI and ulama,
+
+00:58:54.760 --> 00:59:00.460
+yeah. So here we are not using basically, if you will see in
+
+00:59:00.460 --> 00:59:04.980
+a last, so I am, yeah, so here and then here and then here
+
+00:59:04.980 --> 00:59:10.300
+and now after login I am able to chat, see and my everything
+
+00:59:10.300 --> 00:59:14.280
+is public, my ulama is public, I am using what 120 billion
+
+00:59:14.280 --> 00:59:18.680
+parameter model, a big, big one and see the smoothness of
+
+00:59:18.680 --> 00:59:22.860
+the response because I am using H100, a GPU, not my local
+
+00:59:22.860 --> 00:59:26.540
+system, even in local I have shown that part, even in local
+
+00:59:26.540 --> 00:59:29.980
+it's available. So yeah, I can create a chat GPT, just give
+
+00:59:29.980 --> 00:59:34.280
+me 15 minute of time, only 15 minute, right and for the
+
+00:59:34.280 --> 00:59:37.300
+first time executor and if I am doing it for the second
+
+00:59:37.300 --> 00:59:40.280
+time, see the documentation, copy, paste, copy, paste, copy,
+
+00:59:40.280 --> 00:59:40.280
+paste, copy, paste, copy, paste, copy, paste, copy, paste,
+
+00:59:40.300 --> 00:59:41.680
+paste, copy, paste, copy, paste, copy, paste, copy, paste,
+
+00:59:41.700 --> 00:59:46.500
+done. Means five minutes. So I can, I can give you a, just,
+
+00:59:46.580 --> 00:59:49.680
+just give me the name of the model and I'll just try to like
+
+00:59:49.680 --> 00:59:52.400
+do the inferencing. If you're looking for inferencing in a
+
+00:59:52.400 --> 00:59:55.100
+chat mode, I can do that. If you're asking me that, okay,
+
+00:59:55.160 --> 00:59:59.040
+expose that as an API, so I will be using a VLM or maybe
+
+00:59:59.040 --> 01:00:03.840
+ONXS and I will be exposing as an API, consume it inside my
+
+01:00:03.840 --> 01:00:07.020
+chat application, right? But yeah, in both the way I can, I
+
+01:00:07.020 --> 01:00:11.400
+will be able to do it basically. Right. Most probably in
+
+01:00:11.400 --> 01:00:13.900
+five minutes next time, because now I have this like a
+
+01:00:13.900 --> 01:00:16.520
+documentation, everything is set. Just, I just have to do
+
+01:00:16.520 --> 01:00:18.240
+like copy, paste, copy, paste, copy, paste, copy, paste,
+
+01:00:18.300 --> 01:00:23.620
+done. Yeah. Only 12, 13 command I have to execute. So if you
+
+01:00:23.620 --> 01:00:25.960
+have not done that, at least for once do it. So this is
+
+01:00:25.960 --> 01:00:28.560
+basically on GPU, I'm doing it, right? So you have to spend
+
+01:00:28.560 --> 01:00:32.800
+maybe one or $2. If you don't want to do it, then I have
+
+01:00:32.800 --> 01:00:35.680
+other videos as well. Yeah. Running GPT in my local system,
+
+01:00:35.760 --> 01:00:39.120
+this one. So this, this you can try to follow. I think I
+
+01:00:39.120 --> 01:00:41.280
+have created two or three videos. So this is running in my
+
+01:00:41.280 --> 01:00:44.100
+local system and then with the help of ng rock, I'm exposing
+
+01:00:44.100 --> 01:00:47.620
+it to the entire world over the internet, basically HTTPS.
+
+01:00:48.180 --> 01:00:51.360
+So that is, that is also possible. So that depends upon you.
+
+01:00:51.780 --> 01:00:54.520
+You can just go ahead with your own preferred way.
+
+01:00:58.420 --> 01:01:01.240
+It should be your son. Okay. Someone has been in a group. Oh
+
+01:01:01.240 --> 01:01:05.140
+yeah. He used to like use a lot of like my keyboard, but
+
+01:01:05.140 --> 01:01:11.340
+he's just one year old on this 14th, six days back. They
+
+01:01:11.340 --> 01:01:15.920
+became my son and my daughter. They became one year just to
+
+01:01:15.920 --> 01:01:18.160
+give a response in a chat, like in a, in our group.
+
+01:01:27.700 --> 01:01:35.200
+Okay. The YouTube one now, so, okay, so yeah, it's, it's
+
+01:01:35.200 --> 01:01:38.060
+already available. So maybe in a free time, I think, uh, it
+
+01:01:38.060 --> 01:01:40.700
+will be fun. Believe me, it will be fun. It will give you a
+
+01:01:40.700 --> 01:01:44.180
+dopamine hit by the way, if you are doing it. So how do you,
+
+01:01:44.240 --> 01:01:49.000
+how do you implement a simple chat bot using GPT practically
+
+01:01:49.000 --> 01:01:52.260
+I have shown you that. But. What is the difference between
+
+01:01:52.260 --> 01:01:55.860
+temperature and top of P parameter? I think we all know
+
+01:01:55.860 --> 01:01:57.960
+temperature guys. Yes.
+
+01:02:03.310 --> 01:02:08.440
+Yes. The pressure, the pressure should be always between
+
+01:02:08.440 --> 01:02:12.240
+zero to one closer to one minutes, more randomness closer to
+
+01:02:12.240 --> 01:02:14.820
+zero minutes, less randomness means less hallucination.
+
+01:02:15.000 --> 01:02:17.840
+Basically. That's a meaning of a temperature by the way. And
+
+01:02:17.840 --> 01:02:22.340
+uh, whenever, uh, we are like, uh, trying to say top of P.
+
+01:02:22.480 --> 01:02:25.140
+So basically we are trying to talk about our limits.
+
+01:02:25.840 --> 01:02:30.120
+Sampling. We are sampling the smallest set of token, uh, so
+
+01:02:30.120 --> 01:02:32.480
+whose community probability value is maybe more than this
+
+01:02:32.480 --> 01:02:35.980
+simply means that, that, uh, basically top P means based on
+
+01:02:35.980 --> 01:02:38.240
+the probability. So I'm just trying to filter out some of
+
+01:02:38.240 --> 01:02:41.780
+the data, some of the unit. That's it. Uh, how would you
+
+01:02:41.780 --> 01:02:47.160
+handle API rate limit in gen AI application? Any idea how we
+
+01:02:47.160 --> 01:02:51.920
+can hit the, or how we can, you know, uh, handle the API
+
+01:02:51.920 --> 01:02:53.700
+rate limit in generative AI application?
+
+01:02:59.890 --> 01:03:01.150
+Yes. So
+
+01:03:09.630 --> 01:03:12.790
+basically to implement our rate limit, uh, basically we are
+
+01:03:12.790 --> 01:03:15.850
+trying to restrict a user that, uh, you should not use
+
+01:03:15.850 --> 01:03:19.910
+beyond this number of tokens in a particular interval. You
+
+01:03:19.910 --> 01:03:22.810
+must have seen that when you're using mostly a free version,
+
+01:03:23.030 --> 01:03:26.330
+uh, they apply a rate limit immediately. Just go and use
+
+01:03:26.330 --> 01:03:29.710
+cloud a right cloud is on it. Uh, believe me after one or
+
+01:03:29.710 --> 01:03:32.350
+two chat, uh, they will, they will apply the rate limit,
+
+01:03:32.430 --> 01:03:35.350
+right? That your limit is over. Maybe you can come after
+
+01:03:35.350 --> 01:03:37.850
+eight hour, then second time when your rate limit will be
+
+01:03:37.850 --> 01:03:40.450
+over, they will tell you that, okay, come after 16 hour or
+
+01:03:40.450 --> 01:03:43.990
+24 hour. That is something called as a rate limiting. So
+
+01:03:43.990 --> 01:03:46.570
+basically we try to implement a rate limiting by using
+
+01:03:46.570 --> 01:03:49.650
+something called as a token budgeting night. So we try to
+
+01:03:49.650 --> 01:03:53.890
+pre-estimate the token that, okay, uh, if this is the role
+
+01:03:53.890 --> 01:03:57.750
+of the user means free user paid user pro user pro max user,
+
+01:03:57.870 --> 01:04:01.770
+right? So if this is the role of the user, then this is the
+
+01:04:01.770 --> 01:04:07.270
+limit of the token that he or she will be able to get. Or he
+
+01:04:07.270 --> 01:04:10.370
+will be like, I'll just help them out to like, uh, in terms
+
+01:04:10.370 --> 01:04:14.070
+of doing a generation of those, uh, token, uh, there is
+
+01:04:14.070 --> 01:04:17.430
+something called as exponential backup plus jittering night
+
+01:04:17.430 --> 01:04:22.650
+on STP 429. So where we say that, okay, fine. So retry after
+
+01:04:22.650 --> 01:04:27.210
+some time, 429 minutes error code or status code 429 minutes
+
+01:04:27.210 --> 01:04:31.050
+retry after some time. So even in that way, so we try to,
+
+01:04:31.090 --> 01:04:34.570
+you know, uh, do a rate limiting. Uh, there is a technique,
+
+01:04:34.690 --> 01:04:38.590
+something called as a. Uh. Queue and batching by the way. So
+
+01:04:38.590 --> 01:04:41.270
+queues and batches. So again, we are saying that, okay,
+
+01:04:41.310 --> 01:04:44.630
+fine. So I'll just allow you to process only this much of
+
+01:04:44.630 --> 01:04:48.010
+token. There is something called as a streaming night. So
+
+01:04:48.010 --> 01:04:51.790
+even in case of a streaming, uh, basically we say that,
+
+01:04:51.830 --> 01:04:56.010
+okay, fine. So in one single stream, we'll send 10 token, 20
+
+01:04:56.010 --> 01:04:58.950
+token, 30 token. And then we say that, that, okay, one
+
+01:04:58.950 --> 01:05:02.290
+stream I'm sending you then after, uh, maybe, uh, like a
+
+01:05:02.290 --> 01:05:04.570
+five second kind of a polling. So I'll try to send you
+
+01:05:04.570 --> 01:05:07.770
+another set of the token. So in this way we try to implement
+
+01:05:07.770 --> 01:05:11.950
+basically a rate limiting, it's just a custom logic that we
+
+01:05:11.950 --> 01:05:16.030
+try to write. What is prompt chaining and how do you
+
+01:05:16.030 --> 01:05:22.500
+implement it? Chain of thought, right? Chain of thought,
+
+01:05:22.580 --> 01:05:26.140
+basically that, uh, whenever we are trying to perform some
+
+01:05:26.140 --> 01:05:29.140
+sort of a task, for example, I'm talking about, let's
+
+01:05:29.140 --> 01:05:32.460
+suppose a resume AI that we have built, right? So obviously
+
+01:05:32.460 --> 01:05:36.000
+there is a lot of, uh, prompt chaining that we have done
+
+01:05:36.000 --> 01:05:39.400
+over there. So we said that, that, okay. Uh, take an input
+
+01:05:39.400 --> 01:05:43.160
+of this resume. Now try to identify what is the file format
+
+01:05:43.160 --> 01:05:46.880
+of the resume. Second task. Uh, third task is after
+
+01:05:46.880 --> 01:05:50.320
+identifying the file type of the resume. So try to call a
+
+01:05:50.320 --> 01:05:52.840
+particular function, which will be able to scrap all the
+
+01:05:52.840 --> 01:05:55.220
+data from the particular file. Because if people are
+
+01:05:55.220 --> 01:05:57.740
+uploading resume, there's a possibility that it will be
+
+01:05:57.740 --> 01:06:00.360
+available in doc format, PDF format. If it is available into
+
+01:06:00.360 --> 01:06:03.080
+a PDF format, there will be a possibility that there will be
+
+01:06:03.080 --> 01:06:05.680
+an image component inside that, right? Which I will not be
+
+01:06:05.680 --> 01:06:08.860
+able to read. So we'll have to read out that as well in
+
+01:06:08.860 --> 01:06:11.500
+terms of modifying your resume in terms of recreating a
+
+01:06:11.500 --> 01:06:13.820
+resume. So we say that, okay, fine. So just try to call a
+
+01:06:13.820 --> 01:06:17.020
+particular function and then, uh, try to read or extract all
+
+01:06:17.020 --> 01:06:19.660
+the data. So once you are able to extract a data or raw
+
+01:06:19.660 --> 01:06:23.700
+data, then try to identify all the keywords, a person name,
+
+01:06:23.800 --> 01:06:26.640
+LinkedIn ID, or maybe a GitHub ID person, phone number
+
+01:06:26.640 --> 01:06:30.080
+person, email ID, uh, in which an all company person has
+
+01:06:30.080 --> 01:06:33.160
+worked for what to what year. So this is something that we
+
+01:06:33.160 --> 01:06:36.460
+have mentioned particularly in a resume AI. In terms of a
+
+01:06:36.460 --> 01:06:40.840
+prompt, right? And uh, so basically like, uh, identify the
+
+01:06:40.840 --> 01:06:43.800
+project. And then we say that, that, okay, fine. Regenerate
+
+01:06:43.800 --> 01:06:46.600
+the entire things, right? So starting from a person
+
+01:06:46.600 --> 01:06:49.480
+description, starting from the skillset, starting from the
+
+01:06:49.480 --> 01:06:52.900
+project definition, reproduce each and everything, and then
+
+01:06:52.900 --> 01:06:55.640
+map each and everything. And then give me the final data in
+
+01:06:55.640 --> 01:07:00.340
+my only format. So that is something called as chain of
+
+01:07:00.340 --> 01:07:05.900
+prompting or prompt chaining. Right? So. And, uh, this is
+
+01:07:05.900 --> 01:07:08.740
+something that you will be able to see in a multi agent
+
+01:07:08.740 --> 01:07:11.060
+system. So whenever we try to like create a multi agent
+
+01:07:11.060 --> 01:07:14.460
+system, so agent by agent, agent by agent, we try to create
+
+01:07:14.460 --> 01:07:16.860
+it. And we say that, that, okay, uh, so in a particular
+
+01:07:16.860 --> 01:07:20.300
+agent, do this step, then do this step, then do this step.
+
+01:07:20.780 --> 01:07:23.500
+This is something, uh, we achieved the prompt chaining. Now
+
+01:07:23.500 --> 01:07:25.980
+there's something called, how do you implement a
+
+01:07:25.980 --> 01:07:32.220
+conversation memory in a chat bot? Any idea? I believe this
+
+01:07:32.220 --> 01:07:35.400
+is also like I have showed you recently. I said, you know,
+
+01:07:35.420 --> 01:07:39.020
+you said this, any idea guys, anyone, how do we implement a
+
+01:07:39.020 --> 01:07:41.860
+conversation memory in a chat bot? I think in a MIDI chat
+
+01:07:41.860 --> 01:07:45.060
+bot pro we have done that. If I'm not wrong.
+
+01:07:50.620 --> 01:07:55.660
+Yeah. Any, any idea? How do we like, uh, you know, implement
+
+01:08:01.480 --> 01:08:02.560
+a conversation memory?
+
+01:08:10.730 --> 01:08:11.130
+Yes.
+
+01:08:20.830 --> 01:08:25.350
+So if you remember, I think in my last Sunday class itself,
+
+01:08:25.570 --> 01:08:29.770
+uh, when I was talking about, uh, Lang chain again, this is
+
+01:08:29.770 --> 01:08:31.470
+not just about Lang chain. Okay. You will be able to find
+
+01:08:31.470 --> 01:08:34.450
+out same thing in other framework as well. I talked about
+
+01:08:34.450 --> 01:08:37.490
+something called as conversational buffer memory. We have
+
+01:08:37.490 --> 01:08:40.610
+even used it with one of the agent. Then there was a
+
+01:08:40.610 --> 01:08:43.190
+conversation buffer window memory. Then there was a
+
+01:08:43.190 --> 01:08:46.170
+conversation summary memory. Then there was something called
+
+01:08:46.170 --> 01:08:52.630
+as conversation KG memory, right? So we try to implement a
+
+01:08:52.630 --> 01:08:57.310
+memory based on the case by case basis, for example, so if I
+
+01:08:57.310 --> 01:09:00.690
+have to store everything, right? Entire conversation, if I
+
+01:09:00.690 --> 01:09:03.470
+have to store, so we can try to use something called as
+
+01:09:03.470 --> 01:09:06.470
+conversation buffer memory, what it will do, it will store
+
+01:09:06.470 --> 01:09:09.290
+the entire conversation, whatever conversation which I have
+
+01:09:09.290 --> 01:09:12.410
+done second, there is something called as conversation
+
+01:09:12.410 --> 01:09:15.970
+buffer window memory. Now what is the meaning of that? So
+
+01:09:15.970 --> 01:09:18.550
+basically it will not try to store all the conversation, but
+
+01:09:18.550 --> 01:09:21.990
+just last window. Window means we can try to define the size
+
+01:09:21.990 --> 01:09:25.890
+of the window one, two, three, five, whatever, right? So it
+
+01:09:25.890 --> 01:09:29.670
+will try to store just that last window. Or just last five
+
+01:09:29.670 --> 01:09:31.650
+conversation. That is something called as conversation
+
+01:09:31.650 --> 01:09:34.310
+buffer window memory. There is again different, like another
+
+01:09:34.310 --> 01:09:36.630
+type of memory. Then there is something called as
+
+01:09:36.630 --> 01:09:39.370
+conversation summary memory. Summary means what? As its name
+
+01:09:39.370 --> 01:09:42.730
+suggests. So it will not store all the data, it will
+
+01:09:42.730 --> 01:09:45.370
+summarize it and then only summary it will try to store, not
+
+01:09:45.370 --> 01:09:48.690
+the actual raw data it is going to store. Whereas in case of
+
+01:09:48.690 --> 01:09:52.530
+a conversation buffer window memory and conversation buffer
+
+01:09:52.530 --> 01:09:55.970
+memory, it stores the raw data, the actual one, right? But
+
+01:09:55.970 --> 01:09:58.710
+in case of a summary, never the actual one. Only the actual
+
+01:09:58.710 --> 01:10:01.630
+data. Summary one, it is going to store it. Now there is
+
+01:10:01.630 --> 01:10:05.050
+something called as a KG memory, conversation KG memory, a
+
+01:10:05.050 --> 01:10:08.030
+knowledge graph based memory. So what it does, it will
+
+01:10:08.030 --> 01:10:11.010
+always try to store the entities and its relation. For
+
+01:10:11.010 --> 01:10:14.150
+example, I'm a person. So about me, person, maybe some
+
+01:10:14.150 --> 01:10:17.010
+places, it will be able to identify those entities and its
+
+01:10:17.010 --> 01:10:19.730
+relation. And then it is just going to store that particular
+
+01:10:19.730 --> 01:10:22.610
+part. He see it, this, that, something like that. It is
+
+01:10:22.610 --> 01:10:25.890
+going to store. So these are the memory you will be able to
+
+01:10:25.890 --> 01:10:29.310
+find out in general, right? In general, you will be able to
+
+01:10:29.310 --> 01:10:33.750
+find out and in almost all the system, I'm just talking
+
+01:10:33.750 --> 01:10:36.530
+about this conversation part or conversation library part
+
+01:10:36.530 --> 01:10:38.590
+with respect to a Lang chain, which I have discussed
+
+01:10:38.590 --> 01:10:42.070
+recently. I think last Sunday itself, I was like talking
+
+01:10:42.070 --> 01:10:44.970
+about that and we have also done the implementation of it.
+
+01:10:45.190 --> 01:10:48.550
+Yeah. Last Sunday. Yes. Last Sunday I have done that. Uh,
+
+01:10:48.850 --> 01:10:52.730
+but yeah, this, this kind of a memory, which exists like,
+
+01:10:52.750 --> 01:10:57.530
+uh, everywhere. So in the general, it's called as sort
+
+01:10:57.530 --> 01:11:00.070
+memory. Longterm memory, longterm memory, rolling based
+
+01:11:00.070 --> 01:11:02.030
+memory, the windowing one, which I talked about, right?
+
+01:11:02.070 --> 01:11:05.250
+Rolling based memory, or maybe like a, you know, entity
+
+01:11:05.250 --> 01:11:08.310
+based memory or knowledge graph based memory. So these are
+
+01:11:08.310 --> 01:11:12.330
+the memory that we try to implement based on the use case
+
+01:11:12.330 --> 01:11:19.640
+basis. Fine. Okay. So memory part is done. What is the
+
+01:11:19.640 --> 01:11:23.660
+purpose of a system prompt in a chat model? Just to give a
+
+01:11:23.660 --> 01:11:27.360
+role to the system, right? That you are auditor, you are a
+
+01:11:27.360 --> 01:11:31.080
+researcher. You are. You are a tutor. You are a senior
+
+01:11:31.080 --> 01:11:36.480
+lawyer. You are a PhD guy. So just to like, uh, uh, give an
+
+01:11:36.480 --> 01:11:39.500
+instruction that, okay, now you should follow this
+
+01:11:39.500 --> 01:11:43.600
+particular nature or this particular behavior, right? And
+
+01:11:43.600 --> 01:11:46.820
+then to make you understand that, what is your goal, right?
+
+01:11:46.900 --> 01:11:48.960
+So basically let's suppose if I'm saying that you are
+
+01:11:48.960 --> 01:11:52.960
+basically a senior data science tutor, right? So your goal
+
+01:11:52.960 --> 01:11:56.980
+is to give a precise in detail context based with analogy
+
+01:11:56.980 --> 01:11:59.440
+kind of an answer. That's, that's the goal. That's your
+
+01:11:59.440 --> 01:12:03.880
+goal. And you should not maybe like, uh, reveal any kind of
+
+01:12:03.880 --> 01:12:06.600
+a secrets. You should not even reveal any kind of unsafe
+
+01:12:06.600 --> 01:12:10.540
+instruction to anyone. So whoever is going to ask you a
+
+01:12:10.540 --> 01:12:14.400
+question, right? And then you should always give an answer
+
+01:12:14.400 --> 01:12:17.900
+in terms of a JSON or maybe a TXT format or X, Y, G format,
+
+01:12:18.020 --> 01:12:22.680
+right? And your style should be always like a theory plus
+
+01:12:22.680 --> 01:12:27.280
+technical, uh, plus real time example. Now this is called as
+
+01:12:27.280 --> 01:12:31.160
+what? A system prompt. It means I'm just telling a system
+
+01:12:31.160 --> 01:12:35.000
+that how you should behave. What should be your goal? What
+
+01:12:35.000 --> 01:12:38.140
+kind of a data output you are going to give it to me? What
+
+01:12:38.140 --> 01:12:44.000
+is a kind of a style that you are supposed to follow? Making
+
+01:12:44.000 --> 01:12:47.200
+sense to all of us? Yeah. The purpose of the system prompt.
+
+01:12:49.540 --> 01:12:52.960
+Okay. Raj. Okay. Sid was saying like a buffer memory. Yeah.
+
+01:12:54.160 --> 01:12:58.140
+How do we count a URI token limit? Okay. Go to a URI portal.
+
+01:12:59.600 --> 01:13:02.580
+Token limit. Uh, we have already, uh, token limit. Okay. So
+
+01:13:02.580 --> 01:13:04.980
+for chat you're talking about or for API you are talking
+
+01:13:04.980 --> 01:13:09.100
+about. So for a chat, we have not given you a limit in terms
+
+01:13:09.100 --> 01:13:11.800
+of token. We have given you a limit in terms of a number of
+
+01:13:11.800 --> 01:13:15.480
+chats. So daily 50 chats, uh, in terms of, uh, API access.
+
+01:13:15.800 --> 01:13:18.940
+So it's a one lakh per day, three to five lakh total.
+
+01:13:22.300 --> 01:13:26.880
+Okay. So this is the system prompt. Fine. How would you
+
+01:13:26.880 --> 01:13:30.580
+implement a text summarizer, a text summarization using a
+
+01:13:30.580 --> 01:13:33.700
+generative AI? I think it's very easy one, right? Text
+
+01:13:33.700 --> 01:13:37.120
+summarization. We don't have to do anything basically for
+
+01:13:37.120 --> 01:13:39.600
+like a text summarization. We just have to give a prompt
+
+01:13:39.600 --> 01:13:43.000
+that, okay, take this data and then like, uh, you know,
+
+01:13:43.020 --> 01:13:46.640
+summarize this one, behave in this way and then give me an
+
+01:13:46.640 --> 01:13:49.020
+output in this format or that format and then summarization
+
+01:13:49.020 --> 01:13:52.020
+will be done. One of the easiest tasks, right? One of the
+
+01:13:52.020 --> 01:13:54.860
+easiest tasks. Uh, what is the difference between a
+
+01:13:54.860 --> 01:14:00.100
+completion, between completion and chat completion API? Any
+
+01:14:00.100 --> 01:14:02.700
+idea guys? I believe you have, you all have used like so
+
+01:14:02.700 --> 01:14:03.180
+many times.
+
+01:14:08.650 --> 01:14:11.490
+Yeah. What is, what is, again, this is a very important
+
+01:14:11.490 --> 01:14:14.790
+question by the way, uh, this is something that people, you
+
+01:14:14.790 --> 01:14:18.410
+know, in a very first instance, uh, very few people will be
+
+01:14:18.410 --> 01:14:20.750
+able to understand that. Okay. What, what kind of a question
+
+01:14:20.750 --> 01:14:23.730
+is this? I've been using chat. Even if you're going to
+
+01:14:23.730 --> 01:14:26.590
+consume open AI API, right. You will see chat completion.
+
+01:14:26.890 --> 01:14:30.390
+Even in case of URI, you will see chat completion. What is
+
+01:14:30.390 --> 01:14:32.350
+the difference between completion and chat completion by the
+
+01:14:32.350 --> 01:14:33.070
+way? Any idea?
+
+01:14:42.750 --> 01:14:45.470
+Yeah. I'm just waiting for your answer by the way. I don't
+
+01:14:45.470 --> 01:14:47.110
+know whether you have observed this part or not. But yeah,
+
+01:14:47.190 --> 01:14:52.130
+this is like a very good question. Chat completion, maintain
+
+01:14:52.130 --> 01:14:56.510
+session. Is it? Chat completion, maintain session? Why? How
+
+01:14:56.510 --> 01:15:01.810
+did we maintain the session? Single raw prompt versus
+
+01:15:01.810 --> 01:15:06.270
+structure. Is it? No. That depends upon like how I'm
+
+01:15:06.270 --> 01:15:10.630
+handling the, uh, like a response in a client side, not on
+
+01:15:10.630 --> 01:15:14.850
+server side. Sorry. Context. Okay. API routes. No. API
+
+01:15:14.850 --> 01:15:17.430
+routes wise. We have seen completion. Chat completion, API
+
+01:15:17.430 --> 01:15:21.710
+routes wise. If you remember, even you can go now and you
+
+01:15:21.710 --> 01:15:28.610
+can check it out. So yeah, if you will go, you're on, right?
+
+01:15:29.090 --> 01:15:39.530
+So if you will go here, for example, the URL is what like
+
+01:15:39.530 --> 01:15:44.850
+completion. So chat slash completion, right? That's a URL.
+
+01:15:44.850 --> 01:15:48.090
+And even with respect to open AI, and even in case of a
+
+01:15:48.090 --> 01:15:51.150
+VLLM, right, a VLLM, we have seen that, that it was a
+
+01:15:51.150 --> 01:15:55.550
+similar kind of a URL. Yeah. Almost similar kind of a URL we
+
+01:15:55.550 --> 01:16:00.550
+have seen even over there. So what is the difference guys?
+
+01:16:11.140 --> 01:16:14.720
+Ah, Asid is saying that, that completion API generates a raw
+
+01:16:14.720 --> 01:16:17.140
+text from the prompt while chat completion API structures
+
+01:16:17.140 --> 01:16:21.140
+for multiple term dialogue with the role. Exactly. Yeah.
+
+01:16:21.160 --> 01:16:23.860
+That's a difference. See, I'll be like, you will be able to
+
+01:16:23.860 --> 01:16:27.140
+get like similar kind of responses, but yeah. With respect
+
+01:16:27.140 --> 01:16:29.620
+to a chat completion, what you can do, you can try to even
+
+01:16:29.620 --> 01:16:34.360
+like, you know, give input that, okay, behave like this, you
+
+01:16:34.360 --> 01:16:37.800
+are a system, you are a user, you are a smart or good or
+
+01:16:37.800 --> 01:16:40.660
+intelligent kind of assistance. In case of just a
+
+01:16:40.660 --> 01:16:44.180
+completion, just complete, it means generate it, generate
+
+01:16:44.180 --> 01:16:47.060
+the next data. See, in both the cases we are generating it.
+
+01:16:47.140 --> 01:16:49.380
+It's not like in one case we are generating, in one case we
+
+01:16:49.380 --> 01:16:51.760
+are not generating. No. In both the cases we are generating
+
+01:16:51.760 --> 01:16:55.520
+it, but in one cases, in case of a chat completion, so we
+
+01:16:55.520 --> 01:16:59.420
+are trying to give a control that, okay, behave like this.
+
+01:17:00.200 --> 01:17:03.100
+Maybe a system prompt I'm trying to give, right? That you
+
+01:17:03.100 --> 01:17:06.880
+are a smart, intelligent, like a, you know, PhD guy and you
+
+01:17:06.880 --> 01:17:08.800
+should like give me output in a JSON form, something like
+
+01:17:08.800 --> 01:17:11.780
+this, right? We are, we are trying to give an instruction as
+
+01:17:11.780 --> 01:17:14.580
+a user, we can give instruction that as a user, this is
+
+01:17:14.580 --> 01:17:16.820
+something that you have to do as an assistant. You can try
+
+01:17:16.820 --> 01:17:19.040
+to give the instruction, but in terms of completion, just a
+
+01:17:19.040 --> 01:17:21.520
+completion means, just generate the next one, you won't be
+
+01:17:21.520 --> 01:17:25.140
+having control. So that's a difference actually, that's a
+
+01:17:25.140 --> 01:17:28.940
+actual differences you will be able to find out. Now, next
+
+01:17:28.940 --> 01:17:32.260
+question is how do you implement a content filtering in
+
+01:17:32.260 --> 01:17:35.440
+generative AI application? Any idea?
+
+01:17:38.910 --> 01:17:43.090
+Yeah. Content filtering in terms of generating AI
+
+01:17:43.090 --> 01:17:45.670
+application. So see in terms of generative AI application,
+
+01:17:45.770 --> 01:17:48.950
+content filtration means what? Means the responses which I'm
+
+01:17:48.950 --> 01:17:51.910
+able to get. So how refined my responses are going to be.
+
+01:17:51.930 --> 01:17:53.170
+That is, that is something. Something called as content
+
+01:17:53.170 --> 01:17:57.550
+filtering, right? Now when we say a content filtering,
+
+01:17:57.650 --> 01:18:02.870
+obviously my task will start from a prompt that, okay, you
+
+01:18:02.870 --> 01:18:05.030
+are a system, you are a smart and intelligent one. You
+
+01:18:05.030 --> 01:18:08.070
+should, uh, just like, uh, take this example, uh,
+
+01:18:08.210 --> 01:18:10.510
+technically a few short kind of example I can try to give
+
+01:18:10.510 --> 01:18:13.090
+and say that, that always try to give me a response in this
+
+01:18:13.090 --> 01:18:16.250
+particular format. Uh, don't use this, don't use that. And
+
+01:18:16.250 --> 01:18:18.990
+you must have seen that in all the agents we are using it,
+
+01:18:19.050 --> 01:18:22.090
+right? Even with respect to RG, we are using it. Okay. So
+
+01:18:22.090 --> 01:18:26.770
+basically content filtration in case of a generative AI,
+
+01:18:26.950 --> 01:18:30.370
+right? In case of a generative AI, you will be able to
+
+01:18:30.370 --> 01:18:34.950
+achieve it by doing a input moderation, right? That always
+
+01:18:34.950 --> 01:18:40.070
+try to moderate or like try to look after the user input,
+
+01:18:40.190 --> 01:18:43.410
+maybe in terms of like a harmful content. If user is asking,
+
+01:18:43.490 --> 01:18:46.910
+right, if user is asking some sort of a prohibited content,
+
+01:18:47.090 --> 01:18:49.470
+you should not talk about it. For example, if you are going
+
+01:18:49.470 --> 01:18:52.290
+to give a slang, right? Uh, to chat. You should not talk
+
+01:18:52.290 --> 01:18:54.670
+about it. It will not be able to respond. It will simply say
+
+01:18:54.670 --> 01:18:57.050
+that, no, I don't understand this part, right? Because
+
+01:18:57.050 --> 01:19:00.250
+someone has done that content filtering, right? Someone has
+
+01:19:00.250 --> 01:19:02.590
+given that kind of instruction that you should not like, and
+
+01:19:02.590 --> 01:19:05.170
+it, it, it has already learned, right? Because of that, it
+
+01:19:05.170 --> 01:19:08.390
+is able to stop you or it is not able to give the answer. So
+
+01:19:08.390 --> 01:19:11.850
+technically it's been learned, right? It's been already
+
+01:19:11.850 --> 01:19:15.390
+learned. And on top of that, a content input moderation is
+
+01:19:15.390 --> 01:19:18.250
+already given. Uh, you should always try to implement a
+
+01:19:18.250 --> 01:19:20.970
+prompt ceiling that. Okay. So whenever you're trying to give
+
+01:19:20.970 --> 01:19:25.750
+a prompt, always try to give a prompt with, or I can say
+
+01:19:25.750 --> 01:19:29.550
+without using some sort of a hatred or harmful kind of a
+
+01:19:29.550 --> 01:19:32.910
+prompt over there and then output moderation. So in this
+
+01:19:32.910 --> 01:19:36.170
+way, you will be able to do a content filtering, which can
+
+01:19:36.170 --> 01:19:39.770
+be achieved in a multiple ways. So very first way is at the
+
+01:19:39.770 --> 01:19:43.070
+time of a training itself. And then at the time of giving a
+
+01:19:43.070 --> 01:19:48.030
+instruction for a chat completion, uh, so fine. What is the
+
+01:19:48.030 --> 01:19:51.750
+purpose? What is the purpose of max token parameter? Yeah.
+
+01:19:51.850 --> 01:19:55.990
+What is the purpose of a max token parameter? So basically a
+
+01:19:55.990 --> 01:19:58.910
+max token, uh, generally we don't use it. I don't know
+
+01:19:58.910 --> 01:20:01.370
+whether you have observed it or not, but, uh, let's suppose
+
+01:20:01.370 --> 01:20:05.950
+if some model, uh, like a maximum token output size is one
+
+01:20:05.950 --> 01:20:10.630
+22 K one 28 K taking a, we never use it actually, right?
+
+01:20:10.750 --> 01:20:15.370
+Because if we are going to increase the, uh, like a token
+
+01:20:15.370 --> 01:20:20.310
+length output. Okay. You will be able to observe that my
+
+01:20:20.310 --> 01:20:24.430
+computer has exponentially increased. So we, even though
+
+01:20:24.430 --> 01:20:27.290
+model will be able to give me a very, very long output, we
+
+01:20:27.290 --> 01:20:30.990
+prefer not to take it. Right. We prefer like, uh, to limit
+
+01:20:30.990 --> 01:20:33.390
+it so that my computer will be very, very less. But yeah,
+
+01:20:33.450 --> 01:20:37.570
+meaning of maximum token is that, that upper bound that it
+
+01:20:37.570 --> 01:20:41.670
+will be able to generate as simple as that. So fewer token
+
+01:20:41.670 --> 01:20:45.110
+means obviously cheaper, a faster one, right? If you have a
+
+01:20:45.110 --> 01:20:49.290
+fewer token, more token means more cost. Simple. And you can
+
+01:20:49.290 --> 01:20:52.150
+test it even in your GPUs. I think I, when I was like
+
+01:20:52.150 --> 01:20:55.090
+showing this example, H one hundred example, I've already
+
+01:20:55.090 --> 01:20:59.570
+shown you that part that, uh, the capacity of my model was
+
+01:20:59.570 --> 01:21:02.450
+very, very big in terms of generating output token, but I
+
+01:21:02.450 --> 01:21:05.990
+have not used it because by the time I'm going to use it, my
+
+01:21:05.990 --> 01:21:08.790
+entire H one hundred will be choked. It will not be able to
+
+01:21:08.790 --> 01:21:11.910
+generate any kind of output because that kind of a compute
+
+01:21:11.910 --> 01:21:15.910
+will be very, very less. So yeah, with the help of like a
+
+01:21:15.910 --> 01:21:18.110
+tokens. Uh, so if you're not hitting a maximum token, you're
+
+01:21:18.110 --> 01:21:18.850
+not going to be able to generate any maximum token. So in
+
+01:21:18.850 --> 01:21:21.250
+that case, your model will be faster. Your model will be
+
+01:21:21.250 --> 01:21:23.930
+very much cheaper, right? You are saving the world by the
+
+01:21:23.930 --> 01:21:28.930
+way, uh, CO2 emission, you are able to control, uh, yeah.
+
+01:21:33.590 --> 01:21:39.730
+Now so max token, how would you implement a simple RG
+
+01:21:39.730 --> 01:21:44.970
+system? I think now all of us can give this answer, not just
+
+01:21:44.970 --> 01:21:48.450
+for simple. I think even for the very, very complex one, we
+
+01:21:48.450 --> 01:21:51.410
+all can give an answer. We all have like a implemented that,
+
+01:21:51.470 --> 01:21:53.690
+right? Yeah. The RIG.
+
+01:22:00.810 --> 01:22:04.790
+Yes. Yeah. So with RIG, I don't think that it's even a
+
+01:22:04.790 --> 01:22:07.450
+question for us. Uh, we all, we all are very like a well
+
+01:22:07.450 --> 01:22:10.790
+versed with RIG kind of a system. Even in our dream, we can
+
+01:22:10.790 --> 01:22:14.190
+create RIG system. What is the difference between streaming
+
+01:22:14.190 --> 01:22:17.150
+and non streaming response? Streaming is nothing but, uh,
+
+01:22:17.350 --> 01:22:20.530
+see model will be having a particular size of the output
+
+01:22:20.530 --> 01:22:24.330
+that model can give, right? You can't control that part. But
+
+01:22:24.330 --> 01:22:29.110
+what happens in general? That. I will start taking a, you
+
+01:22:29.110 --> 01:22:32.110
+know, output or I will start taking this one on a client
+
+01:22:32.110 --> 01:22:36.070
+side, not one at a time, not as a complete output at a time,
+
+01:22:36.130 --> 01:22:39.110
+but in a chunks, right? So that it will look like a
+
+01:22:39.110 --> 01:22:42.170
+streaming. So that's a streaming streaming also we have
+
+01:22:42.170 --> 01:22:45.930
+done. So, so Chad completion model itself can be used for a
+
+01:22:45.930 --> 01:22:49.630
+streaming, any model, right? You just have to like, uh,
+
+01:22:49.670 --> 01:22:52.970
+enable the parameter stream is equals to true. So even the
+
+01:22:52.970 --> 01:22:55.390
+UD API that you are using, you can use it as a streaming
+
+01:22:55.390 --> 01:22:58.950
+API. You just have to add that parameter. And even in case
+
+01:22:58.950 --> 01:23:03.990
+of our H 100, we have done that. How do you handle, uh,
+
+01:23:04.150 --> 01:23:08.990
+error in gen AI API call similar manner? See, uh,
+
+01:23:09.170 --> 01:23:13.650
+practically, if you have to see error handling, these are
+
+01:23:13.650 --> 01:23:18.450
+the error code, right? So wherever we have implemented this,
+
+01:23:18.530 --> 01:23:20.810
+so we have implemented with this error code as well. And
+
+01:23:20.810 --> 01:23:22.830
+this is the standard one. It's not like just we are
+
+01:23:22.830 --> 01:23:25.690
+implementing it, but everyone is going to implement it. So
+
+01:23:25.690 --> 01:23:28.270
+we try to give a error code. And then with respect to error
+
+01:23:28.270 --> 01:23:30.990
+code, we try to give a definition to the user or like, uh,
+
+01:23:31.070 --> 01:23:33.130
+you know, we try to showcase something to the user that,
+
+01:23:33.230 --> 01:23:36.870
+okay, if this user means this, this error means this is the
+
+01:23:36.870 --> 01:23:38.070
+issue.
+
+01:23:41.390 --> 01:23:44.430
+So this was just an implementation based. I believe we all
+
+01:23:44.430 --> 01:23:50.590
+have done this kind of implementation a lot. Now what is a
+
+01:23:50.590 --> 01:23:56.060
+meaning of hallucination?
+
+01:24:02.740 --> 01:24:07.280
+Yeah. So hallucination means, uh, simply that, that, uh, it
+
+01:24:07.280 --> 01:24:09.780
+is able to. To produce some output, which is not even
+
+01:24:09.780 --> 01:24:16.000
+relevant to my, uh, query. That is something called as a
+
+01:24:16.000 --> 01:24:19.740
+hallucination, right? So here in terms of generative AI, so
+
+01:24:19.740 --> 01:24:21.860
+we can try to control it with the help of temperature
+
+01:24:21.860 --> 01:24:24.580
+control. So if we are able to reduce the temperature,
+
+01:24:24.740 --> 01:24:27.260
+hallucination will be less. If we are going to increase the
+
+01:24:27.260 --> 01:24:31.500
+temperature, hallucination will be more cooked up response,
+
+01:24:31.760 --> 01:24:34.020
+not a fractured on. Yeah. You can say that, but yeah, to
+
+01:24:34.020 --> 01:24:37.300
+control it, we can control it through the temperature. I
+
+01:24:37.300 --> 01:24:39.460
+explained the concept of bias. I explained the concept of
+
+01:24:39.460 --> 01:24:40.840
+bias in language model.
+
+01:24:44.000 --> 01:24:47.500
+So basically biasness is nothing but, uh, let's suppose if I
+
+01:24:47.500 --> 01:24:51.060
+have like a trained, uh, I have used our data by, uh, like
+
+01:24:51.060 --> 01:24:54.280
+to train some sort of a model, uh, training data, let's
+
+01:24:54.280 --> 01:24:57.400
+suppose. And when I'm trying to generate our responses, so
+
+01:24:57.400 --> 01:25:00.700
+it is not able to give me, so it's again closer to the
+
+01:25:00.700 --> 01:25:04.040
+definition of the hallucination. So in that case, we can say
+
+01:25:04.040 --> 01:25:07.620
+that my model is a biased or maybe, and again, the main
+
+01:25:07.620 --> 01:25:11.040
+reason is, uh, maybe I'm trying to ask some sort of a query.
+
+01:25:11.040 --> 01:25:14.560
+But with respect to that query, enough data was not
+
+01:25:14.560 --> 01:25:19.020
+available at the time of training possibility in the, for
+
+01:25:19.020 --> 01:25:22.080
+enough iteration, I have not trained it. That is also a
+
+01:25:22.080 --> 01:25:25.540
+possibility. The parameter may be a learning rate, maybe
+
+01:25:25.540 --> 01:25:29.060
+like a optimizer, which I'm supposed to use during a
+
+01:25:29.060 --> 01:25:33.340
+training. So maybe I have not used a balanced one. That is
+
+01:25:33.340 --> 01:25:37.520
+also be a problem, which will introduce finally a biasness.
+
+01:25:38.020 --> 01:25:40.800
+Now what is the difference between zero sort? And few short
+
+01:25:40.800 --> 01:25:44.440
+prompting? I believe we all are like aware about it. So zero
+
+01:25:44.440 --> 01:25:49.520
+sort means, uh, basically we are going to give just a direct
+
+01:25:49.520 --> 01:25:54.460
+query prompt. Generally we do it right. Zero sort, few short
+
+01:25:54.460 --> 01:25:58.520
+means we are giving a example that, okay, just follow this
+
+01:25:58.520 --> 01:26:01.900
+example based on that. Give me that answer. Define the COT
+
+01:26:01.900 --> 01:26:04.840
+chain of thought by the way. So chain of thought is nothing
+
+01:26:04.840 --> 01:26:08.440
+but a step by step thinking. So whenever you are giving
+
+01:26:08.440 --> 01:26:10.400
+instruction, whenever you're asking to. You generate a
+
+01:26:10.400 --> 01:26:14.020
+response. So you have already structured the output or you
+
+01:26:14.020 --> 01:26:17.080
+have already structured the input or maybe the processes
+
+01:26:17.080 --> 01:26:19.840
+that system is going to do. That is something called a COT
+
+01:26:19.840 --> 01:26:23.040
+chain of thought. For example, in case of a resume AI, I'll
+
+01:26:23.040 --> 01:26:26.580
+give you an example, right? So take an input of this doc
+
+01:26:26.580 --> 01:26:29.520
+file or maybe a PDF file. Then try to understand, try to
+
+01:26:29.520 --> 01:26:31.820
+take an input of file. First of all, then try to take the,
+
+01:26:31.820 --> 01:26:35.500
+uh, check, uh, what is the extension of the file? Then try
+
+01:26:35.500 --> 01:26:38.820
+to check inside the file. That whether all this file is
+
+01:26:38.820 --> 01:26:42.300
+scrapable or. There is an image. If there is an image, go
+
+01:26:42.300 --> 01:26:45.340
+with the OCR. If there is a non-email, then go with the
+
+01:26:45.340 --> 01:26:49.280
+normal, uh, maybe, maybe like a text scrapping kind of a
+
+01:26:49.280 --> 01:26:53.440
+things from a PDF and then try to identify name, then email
+
+01:26:53.440 --> 01:26:56.920
+ID, then phone number, then a GitHub account, then company
+
+01:26:56.920 --> 01:27:00.840
+name, company date and duration, regenerate the entire data
+
+01:27:00.840 --> 01:27:03.760
+once again, and then arrange it. So that is basically a
+
+01:27:03.760 --> 01:27:07.420
+chain of thought COT. So clearly I'm defining that, okay,
+
+01:27:07.460 --> 01:27:10.360
+how you should behave and how you should move. Okay. What is
+
+01:27:10.360 --> 01:27:14.420
+the purpose of role based prompting role based prompting
+
+01:27:14.420 --> 01:27:19.220
+simple. So, uh, just to like, uh, I can give a role is equal
+
+01:27:19.220 --> 01:27:21.680
+to admin. I can try to give a role is equal to principal
+
+01:27:21.680 --> 01:27:25.620
+role is equal to maybe a assistant role maybe is equal to a
+
+01:27:25.620 --> 01:27:29.580
+student maybe as an auditor. So in this way, uh, basically
+
+01:27:29.580 --> 01:27:33.540
+I'm trying to say that what should be your behavior, right?
+
+01:27:33.820 --> 01:27:36.620
+The nature that you are trying to follow. So what should be
+
+01:27:36.620 --> 01:27:39.780
+your nature? That is the, that is a purpose of role based
+
+01:27:39.780 --> 01:27:41.940
+prompting. We have already discussed about it. I think even
+
+01:27:41.940 --> 01:27:48.220
+before explain the concept of prompt injection attack, any,
+
+01:27:48.280 --> 01:27:54.400
+any idea guys, anyone. Yeah. Have you heard about this, uh,
+
+01:27:54.920 --> 01:27:59.060
+uh, prompt injection attack by the way, or this is a new
+
+01:27:59.060 --> 01:28:04.300
+word for all of you. Anyone who have heard about this prompt
+
+01:28:04.300 --> 01:28:06.100
+injection attack or
+
+01:28:09.910 --> 01:28:11.310
+details of the tag we have seen, right?
+
+01:28:21.230 --> 01:28:26.330
+Yeah. Prompt injection attack like a cyber attack. I'm like,
+
+01:28:26.490 --> 01:28:29.810
+okay. It sounds like a cyber attack. That's okay. But what
+
+01:28:29.810 --> 01:28:31.770
+does the meaning of this prompt injection attack?
+
+01:28:50.560 --> 01:28:54.200
+Yeah. So see prompt injection attack is nothing. It's like
+
+01:28:54.200 --> 01:28:57.160
+just like a definition I would say. So we all try to give a
+
+01:28:57.160 --> 01:28:59.040
+prompt, right? We, so let's suppose you are chatting with a
+
+01:28:59.040 --> 01:29:02.900
+chat GPT and a example, you are saying that, that, okay,
+
+01:29:02.940 --> 01:29:08.900
+forget about your, uh, policy or your guardrails, right. Uh,
+
+01:29:08.900 --> 01:29:16.730
+about maybe, uh, uh, like, uh, use of those, uh, foul words,
+
+01:29:16.810 --> 01:29:20.550
+right. Foul words. Foul sentences, right? So basically with
+
+01:29:20.550 --> 01:29:23.990
+the help of this prompt, I'm trying to attack, I'm trying to
+
+01:29:23.990 --> 01:29:27.570
+give an instruction that what should be your behavior. Yeah.
+
+01:29:27.710 --> 01:29:31.170
+That is technically called as basically our prompt. This
+
+01:29:31.170 --> 01:29:33.610
+this kind of a prompt is called as prompt injection attack.
+
+01:29:33.790 --> 01:29:36.290
+And many people does that whenever we try to like, uh,
+
+01:29:36.410 --> 01:29:40.510
+launch any kind of a models, right? So they, they used to
+
+01:29:40.510 --> 01:29:44.250
+test it rigorously. And uh, even as a part of their test
+
+01:29:44.250 --> 01:29:47.330
+prompt injection attack is a first test, even when you are
+
+01:29:47.330 --> 01:29:50.610
+going to build a model, it should not expose some of the
+
+01:29:50.610 --> 01:29:54.570
+private information to the public user, right? It should not
+
+01:29:54.570 --> 01:30:00.030
+entertain any other situation for which system or model was
+
+01:30:00.030 --> 01:30:05.330
+not a design. By the way, right. It should not expose any
+
+01:30:05.330 --> 01:30:09.470
+kind of a hidden specification of a particular model. So
+
+01:30:09.470 --> 01:30:12.710
+everything comes under a prompt injection attack. So
+
+01:30:12.710 --> 01:30:15.890
+basically we, we try to ask a question in a different,
+
+01:30:15.930 --> 01:30:18.470
+different manner. Okay. And we try to test it that whether
+
+01:30:18.470 --> 01:30:23.130
+model is changing its role or not. And if model is changing
+
+01:30:23.130 --> 01:30:27.090
+its role, it simply means that, that I'm able to attack it,
+
+01:30:27.150 --> 01:30:29.990
+right? I'm able to like, uh, you know, modify the actual
+
+01:30:29.990 --> 01:30:32.550
+nature of the model and I'm able to extract the information
+
+01:30:32.550 --> 01:30:34.390
+which I was not supposed to know. So that is something
+
+01:30:34.390 --> 01:30:39.430
+called as prompt injection attack. What is our difference
+
+01:30:39.430 --> 01:30:44.110
+between instruction tuning and a fine tuning? So instruction
+
+01:30:44.110 --> 01:30:47.550
+tuning as it simply says, right? So it's, it's a part of
+
+01:30:47.550 --> 01:30:50.050
+basically supervised fine tuning instruction. Tuning is
+
+01:30:50.050 --> 01:30:53.310
+nothing, but it's called as SFT, supervised fine tuning. Its
+
+01:30:53.310 --> 01:30:56.390
+full name is basically a supervised fine tuning. So where,
+
+01:30:56.410 --> 01:30:59.290
+what do we do? So we try to take a pre-trained model and
+
+01:30:59.290 --> 01:31:04.410
+then we try to like, uh, give a smaller chunk of the data.
+
+01:31:04.810 --> 01:31:07.970
+And we say that, that, okay, uh, maybe you should change
+
+01:31:07.970 --> 01:31:11.130
+your tone. Maybe you should change your behavior. Just try
+
+01:31:11.130 --> 01:31:13.950
+to take this data input and output, and then try to learn
+
+01:31:13.950 --> 01:31:16.970
+something that is something called us. Uh, instruction,
+
+01:31:17.250 --> 01:31:19.730
+right? So instruction wise, we are trying to change the
+
+01:31:19.730 --> 01:31:21.950
+behavior. I say that, okay, fine. So you should behave like
+
+01:31:21.950 --> 01:31:25.310
+a obedient student, right? I say that you should behave like
+
+01:31:25.310 --> 01:31:29.250
+a good lawyer or maybe a polite lawyer. So that is, that is
+
+01:31:29.250 --> 01:31:32.390
+something called as instruction fine tuning or SFT. We say
+
+01:31:32.390 --> 01:31:35.810
+supervised fine tuning. Uh, if I'll talk about a fine
+
+01:31:35.810 --> 01:31:39.530
+tuning, fine tuning means you are changing the entire
+
+01:31:39.530 --> 01:31:42.470
+knowledge of the, or entire knowledge, or maybe a partial
+
+01:31:42.470 --> 01:31:44.770
+knowledge of the model. That is something. That is something
+
+01:31:44.770 --> 01:31:48.390
+called as fine tuning. So inside a instruction fine tuning,
+
+01:31:48.530 --> 01:31:50.830
+there is something called SFT, supervised fine tuning. But
+
+01:31:50.830 --> 01:31:53.610
+if I'll talk about a fine tuning inside that, there is
+
+01:31:53.610 --> 01:31:55.530
+something called as full fine tuning. There is something
+
+01:31:55.530 --> 01:31:58.390
+called as PFIT, LoRa and Quora. There is something called as
+
+01:31:58.390 --> 01:32:01.490
+domain based fine tuning comes into a picture, or you can
+
+01:32:01.490 --> 01:32:05.230
+say RLHF, reinforcement learning, human based, uh, with the
+
+01:32:05.230 --> 01:32:07.710
+help of human based feedback. So that comes into a picture.
+
+01:32:09.370 --> 01:32:13.490
+Define few shot learning with a example. Okay. So few shot
+
+01:32:13.490 --> 01:32:17.750
+prompting is one thing. Right? A few shot learning. Few shot
+
+01:32:17.750 --> 01:32:19.770
+learning means whenever we are trying to train the model, so
+
+01:32:19.770 --> 01:32:23.230
+we are trying to create the data and we are trying to create
+
+01:32:23.230 --> 01:32:26.510
+the data with the, you know, examples, right? Examples. So
+
+01:32:26.510 --> 01:32:32.250
+that is something called as few shot learning. By the way,
+
+01:32:32.330 --> 01:32:39.240
+what is the purpose of human feedback loop RLHF? So as its
+
+01:32:39.240 --> 01:32:43.320
+name suggests, right? So we try to basically train the
+
+01:32:43.320 --> 01:32:49.380
+model. And then. Then we try to give a feedback for each and
+
+01:32:49.380 --> 01:32:52.120
+every instruction that we try to give. That is something
+
+01:32:52.120 --> 01:32:57.580
+called as RLHF. Explain the concept of model alignment. So
+
+01:32:57.580 --> 01:32:59.960
+basically model alignment is nothing but align the model
+
+01:32:59.960 --> 01:33:04.340
+with respect to the human values, policies, threats, right?
+
+01:33:04.720 --> 01:33:08.120
+And any kind of attacks. So that is something called as
+
+01:33:08.120 --> 01:33:12.440
+model alignment. Now, again, there is a 10 practical based
+
+01:33:12.440 --> 01:33:12.880
+question.
+
+01:33:15.500 --> 01:33:17.100
+How would you build a customer base? How would you build a
+
+01:33:17.100 --> 01:33:20.620
+customer service chat bot? So I believe we all can build it.
+
+01:33:20.740 --> 01:33:24.160
+So we all have seen, depends upon the use cases. What are
+
+01:33:24.160 --> 01:33:27.100
+the key considerations for building the content generation
+
+01:33:27.100 --> 01:33:31.080
+tool? So for building any kind of a content generation tool,
+
+01:33:31.240 --> 01:33:36.220
+obviously like content generation means content can be
+
+01:33:36.220 --> 01:33:41.040
+available in a image format, into a textual format, into a
+
+01:33:41.040 --> 01:33:45.100
+video format, into a audio format. If I'll talk about the
+
+01:33:45.100 --> 01:33:48.900
+content generation tool. Like a tool, right? So first of
+
+01:33:48.900 --> 01:33:52.500
+all, I have to understand the genre that in what genre I'm
+
+01:33:52.500 --> 01:33:55.400
+trying to create the content, basically a template and a
+
+01:33:55.400 --> 01:33:58.440
+brand. I have to understand. Once I will be able to
+
+01:33:58.440 --> 01:34:01.320
+understand the template and the brand, then I have to choose
+
+01:34:01.320 --> 01:34:05.060
+a specific framework, technology, and a tools, and obviously
+
+01:34:05.060 --> 01:34:09.100
+a model, right? Obviously a model because every model will
+
+01:34:09.100 --> 01:34:11.240
+not be able to generate a video. Every model will not be
+
+01:34:11.240 --> 01:34:13.620
+able to generate the images. Every model will not be able to
+
+01:34:13.620 --> 01:34:16.860
+do everything or even a market research. And that's it. And
+
+01:34:16.860 --> 01:34:20.640
+then we can try to build a content generation tool. How
+
+01:34:20.640 --> 01:34:24.500
+would you implement a code generation assistant? Just use
+
+01:34:24.500 --> 01:34:27.760
+ChatGPT. Simple. And you will be doing it. What is the best
+
+01:34:27.760 --> 01:34:32.480
+approach for building a document Q and A system? RAG? Follow
+
+01:34:32.480 --> 01:34:35.680
+the RAG. How would you create a text summarization tool?
+
+01:34:36.120 --> 01:34:39.600
+Just use any small LMS, right? Every small LMS can do a
+
+01:34:39.600 --> 01:34:43.040
+summarization. What are the steps to build a language
+
+01:34:43.040 --> 01:34:47.440
+translation system? Okay. So just use an encoder decoder
+
+01:34:47.440 --> 01:34:50.480
+based architecture because technically that was designed for
+
+01:34:50.480 --> 01:34:53.220
+like a translation based. So just use encoder decoder based
+
+01:34:53.220 --> 01:34:56.600
+architecture, maybe T5, maybe BART, maybe like a sequence to
+
+01:34:56.600 --> 01:34:59.900
+sequence and then you can design it. How would you implement
+
+01:34:59.900 --> 01:35:03.540
+the creative writing assistant? Use any GPT based model,
+
+01:35:03.700 --> 01:35:06.680
+right? Any GPT LLM based model and then give instruction as
+
+01:35:06.680 --> 01:35:10.100
+a system prompt. What is the approach for building a code
+
+01:35:10.100 --> 01:35:15.720
+reviewing tool? Okay. So. So if code reviewing tool comes
+
+01:35:15.720 --> 01:35:24.020
+into a picture, then I can try to like a build it maybe by
+
+01:35:24.020 --> 01:35:27.600
+breaking it down into a small, small pieces. So first of
+
+01:35:27.600 --> 01:35:31.120
+all, I'll try to define the complete low level design that
+
+01:35:31.120 --> 01:35:34.000
+what this tool is supposed to, or maybe HLD I can try to
+
+01:35:34.000 --> 01:35:37.360
+define first that what this tool is supposed to achieve. So
+
+01:35:37.360 --> 01:35:40.240
+let's suppose if I'm trying to like a design this tool.
+
+01:35:40.440 --> 01:35:45.300
+Okay. Not. Let's say that I want to review it, but also to
+
+01:35:45.300 --> 01:35:48.000
+do some sort of a rectification to do generate some sort of
+
+01:35:48.000 --> 01:35:52.380
+notification, then my approach would be that try to pull all
+
+01:35:52.380 --> 01:35:54.920
+the, first of all, I'll write the title for class or
+
+01:35:54.920 --> 01:35:57.900
+packages. So where it will go to my GitHub, authorize it,
+
+01:35:58.000 --> 01:36:00.800
+and then it will try to pull all the things, pull all the
+
+01:36:00.800 --> 01:36:04.000
+PRs. It will be able to access all the merge, all the PRs
+
+01:36:04.000 --> 01:36:06.660
+that I'm doing, or maybe some, some of my team member is
+
+01:36:06.660 --> 01:36:12.900
+doing. And then. Maybe it can refer to my organization.
+
+01:36:12.980 --> 01:36:15.820
+organization's previous code that's one of the approach or
+
+01:36:15.820 --> 01:36:18.860
+that's one of the technique of doing a code review because
+
+01:36:18.860 --> 01:36:21.320
+every organization is going to follow a different different
+
+01:36:21.320 --> 01:36:25.800
+templates or maybe I can just check with the internet for a
+
+01:36:25.800 --> 01:36:28.520
+standard approach and based on that I can line by line give
+
+01:36:28.520 --> 01:36:31.740
+a comment but yeah at the end of the day at the core it is
+
+01:36:31.740 --> 01:36:34.780
+going to be agents and LLMs. How do you create a personal
+
+01:36:34.780 --> 01:36:40.000
+assistant using a generative AI simple like a host it in
+
+01:36:40.000 --> 01:36:47.040
+some maybe using any UI interface just the way I have hosted
+
+01:36:47.040 --> 01:36:49.900
+it what are the consideration of for building a learning
+
+01:36:49.900 --> 01:36:53.140
+platform with generative AI what are the consideration for
+
+01:36:53.140 --> 01:36:57.540
+building a learning platform again that depends if I am
+
+01:36:57.540 --> 01:37:01.140
+building something like Avani which is a conversational
+
+01:37:01.140 --> 01:37:06.280
+system so in that case I have to first of all like create an
+
+01:37:06.280 --> 01:37:09.980
+interface by which user will be able to. Okay just a minute
+
+01:37:09.980 --> 01:37:10.240
+guys.
+
+01:37:35.680 --> 01:37:37.600
+Okay so what is the consideration of building a learning
+
+01:37:37.600 --> 01:37:40.160
+platform for generative AI so if you are building something
+
+01:37:40.160 --> 01:37:43.120
+like Avani conversational system so in that system what we
+
+01:37:43.120 --> 01:37:46.560
+have done so we are using like a speech to text and text to
+
+01:37:46.560 --> 01:37:51.600
+speech heavily plus let me explain it to you like what we
+
+01:37:51.600 --> 01:37:54.960
+are doing inside this Avani a little bit so that you can
+
+01:37:54.960 --> 01:38:01.220
+build maybe a next generation this kind of a tool so here in
+
+01:38:01.220 --> 01:38:04.660
+case of Avani we are trying to take on a very first step. We
+
+01:38:04.660 --> 01:38:10.660
+are taking your resume now so we have written an agent which
+
+01:38:10.660 --> 01:38:18.540
+will do a resume parsing parsing your resume means it will
+
+01:38:18.540 --> 01:38:21.440
+try to extract all the information raw information from your
+
+01:38:21.440 --> 01:38:25.860
+resume now after that so it will send to an agent and it
+
+01:38:25.860 --> 01:38:31.900
+says that okay schedule the round schedule rounds so for
+
+01:38:31.900 --> 01:38:34.800
+some of you it will schedule four round for some of you it
+
+01:38:34.800 --> 01:38:36.820
+will schedule five round. It depends upon the resume it
+
+01:38:36.820 --> 01:38:39.580
+depends upon the kind of experience that you have mentioned
+
+01:38:39.580 --> 01:38:42.740
+inside the resume so it will schedule the round. Now after
+
+01:38:42.740 --> 01:38:45.100
+scheduling a round so let us suppose it has scheduled five
+
+01:38:45.100 --> 01:38:48.240
+rounds right or maybe a four round it has like a scheduled
+
+01:38:48.240 --> 01:38:53.360
+so technically it has scheduled maybe like a four rounds
+
+01:38:56.360 --> 01:39:00.280
+it has scheduled four round so for every round generate let
+
+01:39:00.280 --> 01:39:02.660
+us suppose this is my round one this is my round two this is
+
+01:39:02.660 --> 01:39:06.460
+my round three this is my round four so for every round it
+
+01:39:06.460 --> 01:39:11.040
+is going to generate. A question even for this round it is
+
+01:39:11.040 --> 01:39:14.600
+going to generate basically a questions again we are using
+
+01:39:14.600 --> 01:39:18.220
+LLMs over here so it will try to generate a questions with
+
+01:39:18.220 --> 01:39:21.500
+the help of LLMs the way it was able to understand your
+
+01:39:21.500 --> 01:39:24.600
+resume based out of that so it is generating a question for
+
+01:39:24.600 --> 01:39:27.260
+round number one round number two round number three round
+
+01:39:27.260 --> 01:39:29.560
+number four now we have already given an instruction that
+
+01:39:29.560 --> 01:39:33.180
+when you are trying to go through this round so in a very
+
+01:39:33.180 --> 01:39:36.300
+first round always try to ask a question with respect to
+
+01:39:36.300 --> 01:39:40.560
+users resume a basic one. Right so just behave like a simple
+
+01:39:40.560 --> 01:39:44.020
+normal junior interviewer this is something which will
+
+01:39:44.020 --> 01:39:46.140
+happen in a round number one we have already given a system
+
+01:39:46.140 --> 01:39:49.600
+prompt over there then here we are saying that that okay now
+
+01:39:49.600 --> 01:39:53.240
+just try to behave as a senior interviewer now here we have
+
+01:39:53.240 --> 01:39:56.140
+given that that now try to behave as a coding interviewer
+
+01:39:56.140 --> 01:39:59.360
+and here we have given that that okay so try to behave as a
+
+01:39:59.360 --> 01:40:05.280
+HR manager or maybe a manager like a interviewer right so we
+
+01:40:05.280 --> 01:40:07.720
+have set already a behavior of all of these round
+
+01:40:07.720 --> 01:40:10.140
+accordingly. It will try to generate all of these questions
+
+01:40:10.140 --> 01:40:13.520
+now these behaviors will not be used just here obviously it
+
+01:40:13.520 --> 01:40:15.780
+is going to be used here in terms of generating the
+
+01:40:15.780 --> 01:40:19.400
+questions right in terms of generating the questions but we
+
+01:40:19.400 --> 01:40:25.020
+are also like using this behavior in terms of asking a back
+
+01:40:25.020 --> 01:40:28.320
+and forth questions because if you will come here it will
+
+01:40:28.320 --> 01:40:31.540
+ask more back and forth question from a coding round it will
+
+01:40:31.540 --> 01:40:34.300
+ask you the code you will code and then it will again back
+
+01:40:34.300 --> 01:40:36.200
+to back ask you question why you have written this piece of
+
+01:40:36.200 --> 01:40:39.000
+code that piece of code. Because that way we have given the
+
+01:40:39.000 --> 01:40:41.440
+instruction if we would have given a instruction over here
+
+01:40:41.440 --> 01:40:44.140
+itself in round number one it would have start asking you
+
+01:40:44.140 --> 01:40:47.440
+but no it is round number one so we have like kept it
+
+01:40:47.440 --> 01:40:50.420
+relaxed just like in a real time interview happens right so
+
+01:40:50.420 --> 01:40:53.900
+we have kept it relaxed and as round progresses so we have
+
+01:40:53.900 --> 01:40:57.060
+started increasing the intensity of this one okay so this
+
+01:40:57.060 --> 01:41:00.660
+round and everything will be fixed that's fine then what so
+
+01:41:00.660 --> 01:41:04.000
+then here what we are trying to do so round one will start
+
+01:41:04.000 --> 01:41:07.080
+let's suppose it will start asking this question. So
+
+01:41:07.080 --> 01:41:12.840
+obviously user is going to give a answer user is going to
+
+01:41:12.840 --> 01:41:16.580
+give an answer in a speech format right so basically we are
+
+01:41:16.580 --> 01:41:20.600
+trying to convert that speech into a text and then we are
+
+01:41:20.600 --> 01:41:24.120
+sending this again to the LLM so that it will be able to
+
+01:41:24.120 --> 01:41:27.340
+understand that text and then it because it has to evaluate
+
+01:41:27.340 --> 01:41:29.780
+right it has to evaluate each and every question and answer
+
+01:41:29.780 --> 01:41:32.480
+that you are trying to give and what we are trying to do so
+
+01:41:32.480 --> 01:41:36.180
+whenever we are trying to send this entire speech. So we are
+
+01:41:36.180 --> 01:41:37.700
+not sending like all the questions. All together five
+
+01:41:37.700 --> 01:41:40.460
+minutes of recording no in every 30 seconds let's imagine or
+
+01:41:40.460 --> 01:41:42.460
+because we are sending it from the client side right every
+
+01:41:42.460 --> 01:41:45.600
+30 seconds or 20 seconds so in a packets in a chunks we are
+
+01:41:45.600 --> 01:41:48.320
+sending the speech in a chunks we are converting into a text
+
+01:41:48.320 --> 01:41:51.500
+and then we are sending it to LLMs against this question
+
+01:41:51.500 --> 01:41:54.100
+that okay fine so with that this is like how much how much
+
+01:41:54.100 --> 01:41:57.240
+correct this is what is your score over here now once LLM
+
+01:41:57.240 --> 01:42:00.140
+will be able to evaluate so again we have to respond you
+
+01:42:00.140 --> 01:42:04.100
+back saying that okay so basically like your question is
+
+01:42:04.100 --> 01:42:06.680
+fine we can go for the next step or next step or next step.
+
+01:42:07.080 --> 01:42:11.080
+Now and during this entire period we are trying to maintain
+
+01:42:11.080 --> 01:42:14.780
+the state we are trying to maintain the session because it's
+
+01:42:14.780 --> 01:42:16.720
+basically a stateless process that we are talking about so
+
+01:42:16.720 --> 01:42:18.200
+we are trying to maintain the state we are trying to
+
+01:42:18.200 --> 01:42:23.660
+maintain the session now to do that whatever question we is
+
+01:42:23.660 --> 01:42:26.500
+been asked and whatever answer that you have given because I
+
+01:42:26.500 --> 01:42:30.000
+have to understand you better and better and better so here
+
+01:42:30.000 --> 01:42:34.120
+you can say that that conversation summary kind of a memory
+
+01:42:34.120 --> 01:42:38.260
+right. So. So here conversation conversation summary kind of
+
+01:42:38.260 --> 01:42:40.460
+a memory is been implemented so we are not storing the
+
+01:42:40.460 --> 01:42:44.620
+actual raw information that you are basically giving or
+
+01:42:44.620 --> 01:42:47.460
+whatever happens between your conversation but we are just
+
+01:42:47.460 --> 01:42:50.400
+trying to keep the summary so that I will be able to again
+
+01:42:50.400 --> 01:42:53.900
+send back an instruction to my agent saying that that now
+
+01:42:53.900 --> 01:42:57.300
+try to generate the follow up questions because someone has
+
+01:42:57.300 --> 01:42:59.640
+to generate the follow up question right system will not do
+
+01:42:59.640 --> 01:43:02.000
+it automatically it's not a human it's a system technically
+
+01:43:02.000 --> 01:43:06.840
+right so if it is a system. So keep on generating the follow
+
+01:43:06.840 --> 01:43:09.840
+up question on top of this one so this is how this entire
+
+01:43:10.520 --> 01:43:13.800
+resume AI is been designed now when I was designing this
+
+01:43:13.800 --> 01:43:16.620
+resume AI like when I was thinking about this resume AI
+
+01:43:16.620 --> 01:43:19.860
+right I had a very like a another kind of a thought with
+
+01:43:19.860 --> 01:43:22.860
+respect to resume AI I was not focusing on resume AI by the
+
+01:43:22.860 --> 01:43:27.180
+way I was focusing on designing the basically a kind of a
+
+01:43:27.180 --> 01:43:31.280
+system which I can use in a future to even deliver a
+
+01:43:31.280 --> 01:43:37.120
+lectures by AIs right. So. So let's suppose for a six class
+
+01:43:37.120 --> 01:43:40.420
+kids seven class kids or maybe like even you guys right so
+
+01:43:40.420 --> 01:43:42.700
+you are doing some sort of preparation I can schedule the
+
+01:43:42.700 --> 01:43:45.980
+chapters system will try to produce a complete content
+
+01:43:45.980 --> 01:43:47.940
+whether it's a theoretical practical each and everything it
+
+01:43:47.940 --> 01:43:49.880
+will take a decision automatically it will generate the
+
+01:43:49.880 --> 01:43:54.060
+content and then it will deliver those lecture after
+
+01:43:54.060 --> 01:43:56.180
+delivering two minute of lecture it will give you some task
+
+01:43:56.180 --> 01:43:58.960
+you will do that task it will evaluate it it will do it once
+
+01:43:58.960 --> 01:44:01.600
+again so means kind of a conversational system which can be
+
+01:44:01.600 --> 01:44:04.200
+used for the educational purposes that was the whole idea
+
+01:44:04.200 --> 01:44:07.560
+behind designing this Avni maybe in a future will I will
+
+01:44:07.560 --> 01:44:11.400
+release that system but yeah that was the whole intention
+
+01:44:11.400 --> 01:44:14.320
+behind creating this one that if I am able to create this
+
+01:44:14.320 --> 01:44:16.560
+conversational system then obviously I can go ahead and I
+
+01:44:16.560 --> 01:44:20.460
+can create that kind of a system itself I just had to tweak
+
+01:44:20.460 --> 01:44:23.300
+this system right and eventually it will start like a
+
+01:44:23.300 --> 01:44:26.640
+teaching to the people it will start doing a conversation
+
+01:44:26.640 --> 01:44:30.300
+back and forth back and forth and that way it will be
+
+01:44:30.300 --> 01:44:33.120
+personalized one a personalized teacher a personalized
+
+01:44:33.120 --> 01:44:36.700
+tutor. That was the whole idea but yeah this is how you can
+
+01:44:36.700 --> 01:44:39.060
+design it this is how we can like a design this one so
+
+01:44:39.060 --> 01:44:41.320
+that's the answer for building a learning platform with
+
+01:44:41.320 --> 01:44:42.940
+generative AI yeah
+
+01:44:48.790 --> 01:44:53.350
+mostly we are using open source over here okay
+
+01:44:55.720 --> 01:44:58.880
+mid-level question advanced architecture based 15 question
+
+01:44:58.880 --> 01:45:02.180
+explain the difference between GPT LAMA and a cloud
+
+01:45:02.180 --> 01:45:06.660
+architecture okay so till this point any question guys
+
+01:45:06.660 --> 01:45:09.080
+before jumping into this one yes
+
+01:45:13.050 --> 01:45:14.290
+so
+
+01:45:16.530 --> 01:45:20.610
+50 question. Okay. 50 questions are done shall
+
+01:45:23.620 --> 01:45:28.160
+we stop it for today or shall we continue well I can I can
+
+01:45:28.160 --> 01:45:33.880
+see like people are like feeling lazy I believe shall we
+
+01:45:33.880 --> 01:45:37.860
+continue from tomorrow you see for me giving an answer of
+
+01:45:37.860 --> 01:45:41.460
+200 question is not a big deal even if it is a 2000 question
+
+01:45:41.460 --> 01:45:46.740
+it's fine I can keep on giving an answer but it depends upon
+
+01:45:46.740 --> 01:45:49.820
+you as well right that how much you are able to you know
+
+01:45:49.820 --> 01:45:51.480
+digest. Okay. It's
+
+01:45:56.280 --> 01:45:59.120
+better to continue for tomorrow okay so I will start from 51
+
+01:45:59.120 --> 01:46:04.860
+number but guys spend some time see giving an answer from my
+
+01:46:04.860 --> 01:46:08.020
+side is fine but you will not be able to ask me you know
+
+01:46:08.020 --> 01:46:10.540
+across questions and if you are not asking cross question
+
+01:46:10.540 --> 01:46:12.560
+then there is no meaning of you know discussing these things
+
+01:46:12.560 --> 01:46:15.780
+I can just you know upload these questions on a social media
+
+01:46:15.780 --> 01:46:19.320
+and then everyone can use it everyone will like I know when
+
+01:46:19.320 --> 01:46:22.320
+we share this kind of things on a social media even you guys
+
+01:46:22.320 --> 01:46:24.920
+can share it believe me you will get a lot of likes. Share
+
+01:46:24.920 --> 01:46:28.900
+it. Share this entire interview questions 200 questions and
+
+01:46:28.900 --> 01:46:32.860
+then from tomorrow onwards I will give you an answer shall I
+
+01:46:32.860 --> 01:46:35.960
+give you a written answer for this one do you want written
+
+01:46:35.960 --> 01:46:42.760
+answer. You enjoy it so you know everything you know
+
+01:46:42.760 --> 01:46:50.140
+everything means that you sit, work, talk to people, make
+
+01:46:50.140 --> 01:46:54.420
+things, understand then it takes 11 years to understand
+
+01:46:54.420 --> 01:47:01.020
+everything. Yes. Yes. Yes. It's not the same as 1 year. It's
+
+01:47:01.020 --> 01:47:02.120
+11 years yes
+
+01:47:04.460 --> 01:47:07.780
+give a written answer. See people have started saying give a
+
+01:47:07.780 --> 01:47:10.800
+written answer. Because I know you guys will be happy that
+
+01:47:10.800 --> 01:47:13.480
+okay I am getting a written answer but I even know that
+
+01:47:13.480 --> 01:47:17.700
+hardly 1% or 2% people will go through those written
+
+01:47:17.700 --> 01:47:20.280
+answers. Okay let me do the preparation. I will give you the
+
+01:47:20.280 --> 01:47:23.040
+written answer as well. Yeah. Post it. Post it on social
+
+01:47:23.040 --> 01:47:26.020
+media. So if all of you are going to post it this one on
+
+01:47:26.020 --> 01:47:29.300
+social media tagging me I will give give you the written
+
+01:47:29.300 --> 01:47:32.320
+answer. So tomorrow I will give you written answer till 50,
+
+01:47:32.520 --> 01:47:36.980
+for 200 I have to sit for very very long time, so till 50 I
+
+01:47:36.980 --> 01:47:39.800
+will give you, whatever like I have discussed for this I
+
+01:47:39.800 --> 01:47:43.060
+will give you like written answer, share it, share it
+
+01:47:43.060 --> 01:47:47.580
+everywhere, we can compare with our answers.
+
+01:47:50.280 --> 01:47:53.780
+Just start posting it, because see on these kind of a
+
+01:47:53.780 --> 01:47:56.340
+content right, you will get a lot of traction on a social
+
+01:47:56.340 --> 01:47:58.120
+media, so do it, if you are looking for traction.
+
+01:48:01.320 --> 01:48:04.400
+What is the temperature value in case of ALM, generally you
+
+01:48:04.400 --> 01:48:09.220
+will say 0.7 but ideally I will say keep it between 0.3 to 0
+
+01:48:09.220 --> 01:48:14.980
+.4 or 0.5 max to max, yeah 0.345, that should be the ideal
+
+01:48:14.980 --> 01:48:21.060
+one. Why it is required, to control the hallucination, it is
+
+01:48:21.060 --> 01:48:24.460
+required, so that it should not give you the random answer,
+
+01:48:24.540 --> 01:48:30.260
+it should give you the more accurate answers. Ok. So with
+
+01:48:30.260 --> 01:48:33.640
+that, thank you so much everyone, take care, same time 4 pm
+
+01:48:33.640 --> 01:48:36.940
+IST tomorrow, let's join and I will start from question
+
+01:48:36.940 --> 01:48:41.100
+number 51, I will start giving answer. Before that, if you
+
+01:48:41.100 --> 01:48:44.960
+have a time, just do some sort of a investigation, just a
+
+01:48:44.960 --> 01:48:46.800
+random investigation, I am not talking about like some
+
+01:48:46.800 --> 01:48:50.840
+serious investigation, but yeah, do it, it will help you out
+
+01:48:50.840 --> 01:48:53.840
+a lot, believe me, it will help you out a lot, yeah. So with
+
+01:48:53.840 --> 01:48:56.060
+that, thank you so much everyone, take care, see you
+
+01:48:56.060 --> 01:48:57.460
+tomorrow, same time 4 pm IST.
+

@@ -1,0 +1,5666 @@
+WEBVTT
+
+00:00:38.260 --> 00:00:41.080
+there is something called as a subscription plan that we
+
+00:00:41.080 --> 00:00:45.640
+have released so now basically like when you guys have
+
+00:00:48.770 --> 00:00:51.950
+taken a course so basically you have paid for a complete
+
+00:00:51.950 --> 00:00:58.320
+year but let's suppose you don't need this entire platform
+
+00:00:58.320 --> 00:01:03.520
+access for the entire year maybe you are going to complete
+
+00:01:03.520 --> 00:01:07.040
+the courses in four to five months or maybe six months of
+
+00:01:07.040 --> 00:01:08.280
+time and you
+
+00:01:14.550 --> 00:01:17.570
+would like to pay only for that much amount of a time and
+
+00:01:17.570 --> 00:01:21.190
+again so we are trying to like launch or we have already
+
+00:01:21.190 --> 00:01:23.930
+launched so you will be able to find out a whatsapp group
+
+00:01:23.930 --> 00:01:25.970
+link so from there you can try to join so there is a
+
+00:01:25.970 --> 00:01:30.410
+whatsapp group and link is also available uh deepak is
+
+00:01:30.410 --> 00:01:33.010
+saying audible visible audio is clear and loud sir okay
+
+00:01:33.010 --> 00:01:36.750
+great uh yes audible visible sachina sees siam everyone is
+
+00:01:36.750 --> 00:01:40.350
+saying audible invisible so fine guys uh just wait for one
+
+00:01:40.350 --> 00:01:42.450
+or two minute uh then we are going to start the class so
+
+00:01:42.450 --> 00:01:45.530
+first of all um i'm just going to give you a today uh
+
+00:01:45.530 --> 00:01:49.230
+internal demo of something that we are trying to build uh
+
+00:01:49.230 --> 00:01:51.510
+right before this class so i have already given a you
+
+00:01:51.530 --> 00:01:55.090
+internal demo so some of you who have joined my uh data
+
+00:01:55.090 --> 00:01:57.110
+science class so they must be able to see the internal demo
+
+00:01:57.110 --> 00:02:00.570
+so please don't get bored over here and then i'm going to
+
+00:02:00.570 --> 00:02:03.510
+start with the topic which is basically uh like an extension
+
+00:02:03.510 --> 00:02:05.790
+of the previous topic that i was talking about which is a
+
+00:02:05.790 --> 00:02:08.210
+neural network right so today i'm going to talk about a
+
+00:02:08.210 --> 00:02:11.510
+recurrent neural network and its variant lstm and then if
+
+00:02:11.510 --> 00:02:14.330
+time allows then gru and then going forward as per the
+
+00:02:14.330 --> 00:02:20.490
+syllabus uh that that we have already mentioned okay so
+
+00:02:20.490 --> 00:02:26.830
+shall we start guys now yeah shall we start aditya
+
+00:02:35.060 --> 00:02:38.540
+okay audible sir fine thank you okay
+
+00:02:44.070 --> 00:02:50.030
+so let me share my screen and let me give you a demo guys
+
+00:02:50.030 --> 00:02:54.370
+that what we as a euron is like a building uh
+
+00:02:57.220 --> 00:03:00.800
+so basically uh let me log out from my system uh so
+
+00:03:00.800 --> 00:03:03.660
+basically what we have done guys so we have released a lot
+
+00:03:03.660 --> 00:03:06.260
+of things there is something called as yuri uh there is
+
+00:03:06.260 --> 00:03:08.900
+something called as resume ai there is something called as
+
+00:03:08.900 --> 00:03:12.280
+job that we have released and there is something called as a
+
+00:03:12.280 --> 00:03:16.860
+subscription plan that we have released so now uh basically
+
+00:03:16.860 --> 00:03:20.500
+like when you guys have taken a course so basically you have
+
+00:03:20.500 --> 00:03:24.440
+paid for a complete year but let's suppose uh you don't need
+
+00:03:24.440 --> 00:03:27.400
+this entire platform access for the entire year maybe you
+
+00:03:27.400 --> 00:03:30.800
+are going to complete uh the courses in four to five months
+
+00:03:30.800 --> 00:03:34.040
+or maybe six month of time and you would like to pay only
+
+00:03:34.040 --> 00:03:37.860
+for that much amount of a time and again so we are trying to
+
+00:03:37.860 --> 00:03:40.600
+like uh launch or we have already launched like we are
+
+00:03:40.600 --> 00:03:43.780
+trying to restructure the entire project part because we
+
+00:03:43.780 --> 00:03:48.180
+have more than 130 plus project now on your own platform so
+
+00:03:48.180 --> 00:03:50.600
+i think within two or three days team is already working on
+
+00:03:50.600 --> 00:03:53.220
+the content aggregation part and you will be able to find
+
+00:03:53.220 --> 00:03:55.920
+out a lot of project from a data science side generative ai
+
+00:03:55.920 --> 00:03:58.480
+side agentic ai side and many more things right you all will
+
+00:03:58.480 --> 00:04:01.360
+be able to find out the project and let's suppose uh if you
+
+00:04:01.360 --> 00:04:03.660
+would like to like access this platform for a couple of
+
+00:04:03.660 --> 00:04:07.860
+months keeping that in our mind so now just following the
+
+00:04:07.860 --> 00:04:11.620
+true att ott platform so where you can go and you can pay a
+
+00:04:11.620 --> 00:04:16.580
+subscription uh sachin is saying voice is low is it uh voice
+
+00:04:16.580 --> 00:04:19.400
+is low i don't think so because i was using the same voice
+
+00:04:19.400 --> 00:04:25.710
+uh setting in my previous class and uh yeah people were okay
+
+00:04:25.710 --> 00:04:30.300
+with that so basically if you would like to access a
+
+00:04:30.300 --> 00:04:34.560
+platform like uh for you know just a couple of months so in
+
+00:04:34.560 --> 00:04:37.160
+that case what you can go ahead what you can do is you can
+
+00:04:37.160 --> 00:04:41.280
+just go ahead with the 299 rupees per month or maybe if you
+
+00:04:41.280 --> 00:04:43.920
+are from outside india in that case 10 per month so you can
+
+00:04:43.920 --> 00:04:47.780
+now even try to go ahead with the subscription plan which is
+
+00:04:47.780 --> 00:04:52.680
+uh eventually integrated part of uh i would say any kind of
+
+00:04:52.680 --> 00:04:56.000
+ott platform all the otd platform in this entire world gives
+
+00:04:56.000 --> 00:04:58.820
+you this kind of a facility so keeping that in our mind so
+
+00:04:58.820 --> 00:05:01.480
+even we are giving you this kind of facilities where you
+
+00:05:01.480 --> 00:05:04.620
+will be able to access all the courses maybe hybrid maybe a
+
+00:05:04.620 --> 00:05:08.160
+paid sorry maybe a live maybe a sort based courses that we
+
+00:05:08.160 --> 00:05:10.880
+are going to come up with a new feature feature. So sorts
+
+00:05:10.880 --> 00:05:14.180
+based courses, plus like self based courses, projects,
+
+00:05:14.280 --> 00:05:17.000
+everything. So as we will keep on increasing the offerings,
+
+00:05:17.140 --> 00:05:19.780
+so you will be able to access each and everything. Apart
+
+00:05:19.780 --> 00:05:22.600
+from that, so a lot of like a premium career feature that we
+
+00:05:22.600 --> 00:05:25.040
+are trying to build and each and everything you all will be
+
+00:05:25.040 --> 00:05:27.840
+able to access without any kind of a disturbance without any
+
+00:05:27.840 --> 00:05:29.840
+kind of an event. But if you would like to go out with the
+
+00:05:29.840 --> 00:05:31.960
+yearly plan, you can go out with the yearly plan, you can
+
+00:05:31.960 --> 00:05:35.800
+try to cancel it anytime. And now we have given a feature
+
+00:05:35.800 --> 00:05:39.960
+just like any like a OTT platform, where you will be able to
+
+00:05:39.960 --> 00:05:43.380
+get a complete seven days of free trial. So without any kind
+
+00:05:43.380 --> 00:05:46.660
+of a foundation, you will be able to access each and
+
+00:05:46.660 --> 00:05:49.080
+everything seven days for free. So that is one of the major
+
+00:05:49.080 --> 00:05:52.820
+changes that we have done. Now let me log in and then let me
+
+00:05:52.820 --> 00:05:55.900
+show you one by one the major feature. This is just a minor
+
+00:05:55.900 --> 00:05:58.820
+feature price wise. But the major feature that we have
+
+00:05:58.820 --> 00:06:02.940
+launched is so we have renamed your own assist to URI. So we
+
+00:06:02.940 --> 00:06:07.060
+have given a proper name to URI and here so you will be able
+
+00:06:07.060 --> 00:06:11.860
+to find out a six different different models. See guys, so
+
+00:06:11.860 --> 00:06:16.040
+the thing is that most of us are not using Google search
+
+00:06:16.040 --> 00:06:20.340
+nowadays. And AI is an integrated part of everything. So
+
+00:06:20.340 --> 00:06:22.360
+whether we are trying to build something, whether we are
+
+00:06:22.360 --> 00:06:25.020
+trying to learn something, even if I'm working as a lawyer,
+
+00:06:25.100 --> 00:06:27.440
+if I'm working as a charter accountant, or maybe if I'm
+
+00:06:27.440 --> 00:06:30.480
+working just as a content guy, right, or maybe I'm working
+
+00:06:30.480 --> 00:06:35.640
+into a digital marketing, we need an access of LLM, a large
+
+00:06:35.640 --> 00:06:38.900
+language model like a chat GPT, maybe cloud, maybe Gemini,
+
+00:06:38.900 --> 00:06:41.920
+maybe a deep seek, something like that. We all need that
+
+00:06:41.920 --> 00:06:45.180
+kind of access. So that without any kind of a disturbance, I
+
+00:06:45.180 --> 00:06:49.260
+will be able to do my work, keeping that in our mind. So we
+
+00:06:49.260 --> 00:06:52.180
+have given you a six different different kind of a model
+
+00:06:52.180 --> 00:06:54.240
+access because every model will be having a different
+
+00:06:54.240 --> 00:06:57.700
+different kind of a caliber and capabilities. Now so yes,
+
+00:06:57.840 --> 00:07:01.260
+some of the models are open sourced. That's true, right? But
+
+00:07:01.260 --> 00:07:05.320
+it's difficult to do a setup of those model in a local
+
+00:07:05.320 --> 00:07:10.220
+system. Part number one. Now. By testing those models, open
+
+00:07:10.220 --> 00:07:14.420
+source model by using some API's, they are charging $20. If
+
+00:07:14.420 --> 00:07:17.580
+you are going ahead with chat GPT, cloud or popxlity, again
+
+00:07:17.580 --> 00:07:20.880
+$20 per month, just to access that model just to like work
+
+00:07:20.880 --> 00:07:24.420
+with those things. Now here, everything is integrated inside
+
+00:07:24.420 --> 00:07:27.860
+a 299 per month of a plan along with the courses. So
+
+00:07:27.860 --> 00:07:30.920
+starting from a learning journey till this one, now inside
+
+00:07:30.920 --> 00:07:33.900
+this one, so we have given you like all these features and
+
+00:07:33.900 --> 00:07:36.940
+facilities apart from that, so we have added now a search
+
+00:07:36.940 --> 00:07:39.980
+capabilities. For example. For example, if I'm going to give
+
+00:07:39.980 --> 00:07:48.000
+a search that give me a news about like Delhi, right? So it
+
+00:07:48.000 --> 00:07:51.240
+is going to do a search in a real time and it is going to
+
+00:07:51.240 --> 00:07:53.760
+give you a news as per the prompt, right? So if you're going
+
+00:07:53.760 --> 00:07:56.100
+to say that, give me a political news, give me a technology
+
+00:07:56.100 --> 00:08:04.840
+news, give me all the like, give me a news. Give me a news.
+
+00:08:07.540 --> 00:08:12.960
+Regarding AI. So it is going to do a search on a BEV and it
+
+00:08:12.960 --> 00:08:16.420
+is going to come up with that today's news, right? So again,
+
+00:08:16.500 --> 00:08:18.560
+you can try to mention the segment as per your, you know,
+
+00:08:18.580 --> 00:08:21.400
+like a prompt, it is going to fetch the data from a real
+
+00:08:21.400 --> 00:08:24.040
+time, from all of these newspaper. It is going to give you
+
+00:08:24.040 --> 00:08:27.560
+even a source that from where I'm going to face the data and
+
+00:08:27.560 --> 00:08:31.260
+with authenticity. So it is going to showcase the news. So
+
+00:08:31.260 --> 00:08:35.200
+even we have integrated now a real time search, but instead
+
+00:08:35.200 --> 00:08:38.660
+of going to a Google, come to URI. And then try to do a real
+
+00:08:38.660 --> 00:08:41.280
+time search about anything. So it's not like we are just
+
+00:08:41.280 --> 00:08:44.020
+trying to provide you some sort of a LLMs where you will be
+
+00:08:44.020 --> 00:08:48.520
+able to, you know, ask some question with respect to like a
+
+00:08:48.520 --> 00:08:51.740
+trained data with respect to like all the things on which
+
+00:08:51.740 --> 00:08:55.080
+this LLMs has been trained. No, not at all. So now even you
+
+00:08:55.080 --> 00:08:58.420
+will be able to do a search, which almost all the major
+
+00:08:58.420 --> 00:09:02.060
+providers are giving to you. No doubt. Right. But they're
+
+00:09:02.060 --> 00:09:06.260
+charging you $20 per month here. I think we all know the
+
+00:09:06.260 --> 00:09:09.880
+price, right? So this is a such feature that we have like a
+
+00:09:09.880 --> 00:09:12.860
+given to you apart from that. So we are giving you even a
+
+00:09:12.860 --> 00:09:17.000
+think feature with deep seek R1 and a Quinn, right? So deep
+
+00:09:17.000 --> 00:09:19.720
+seek has released V3. So soon we are going to integrate that
+
+00:09:19.720 --> 00:09:22.720
+part as well. But yeah, as of now, deep seek R1 and you will
+
+00:09:22.720 --> 00:09:26.580
+be able to even use a thinking capability of a model. Apart
+
+00:09:26.580 --> 00:09:28.840
+from that, we are giving you even a generate feature. So
+
+00:09:28.840 --> 00:09:32.700
+let's suppose if I'm going to ask that, okay, uh, give me,
+
+00:09:32.720 --> 00:09:37.280
+uh, not this one. So let's suppose. If I'm going to ask
+
+00:09:37.280 --> 00:09:42.960
+that, uh, with the generate model that give me, uh, image of
+
+00:09:42.960 --> 00:09:48.160
+cat, let's see. Right. So it will be able to, uh, generate,
+
+00:09:48.380 --> 00:09:52.100
+uh, hopefully the image part generate model is not that a
+
+00:09:52.100 --> 00:09:54.660
+stable, but yeah, it is working, right. It is working. So we
+
+00:09:54.660 --> 00:09:58.200
+are trying to improvise all of these feature. And I hope
+
+00:09:58.200 --> 00:10:01.200
+that within two week of time, the timeline that we have
+
+00:10:01.200 --> 00:10:04.580
+internally with our team. So within two week of timeline,
+
+00:10:04.880 --> 00:10:07.200
+you will be able to. Okay. You will be able to see a best
+
+00:10:07.200 --> 00:10:11.060
+formatted data, best formatted search, best formatted, I
+
+00:10:11.060 --> 00:10:13.880
+think capabilities and hopefully a generate capability
+
+00:10:13.880 --> 00:10:16.400
+generate capability. We are like not giving much of priority
+
+00:10:16.400 --> 00:10:20.900
+as of now, but yeah, so all these capabilities inside a URI
+
+00:10:20.900 --> 00:10:25.060
+so that while you are trying to study, while you are getting
+
+00:10:25.060 --> 00:10:27.680
+some sort of a error, when you are trying to do some sort of
+
+00:10:27.680 --> 00:10:31.400
+a research, when you are trying to keep yourself update with
+
+00:10:31.400 --> 00:10:35.500
+a new event, which has happened in a market on a daily
+
+00:10:35.500 --> 00:10:39.300
+basis. Okay. For each and every purposes, you will be able
+
+00:10:39.300 --> 00:10:43.140
+to use our system URI and URI is going to help you out. You
+
+00:10:43.140 --> 00:10:47.100
+don't have to go outside and then you have to pay a $20. We
+
+00:10:47.100 --> 00:10:49.800
+are, we are very new, obviously we are a very, very new
+
+00:10:49.800 --> 00:10:53.560
+startup. So things takes time to build a, we are working day
+
+00:10:53.560 --> 00:10:57.660
+and night, uh, just for that. Uh, so that, uh, like, uh, uh,
+
+00:10:57.660 --> 00:11:00.620
+within like a couple of weeks and within like a couple of
+
+00:11:00.620 --> 00:11:04.160
+months, the entire system, entire platform will be much,
+
+00:11:04.280 --> 00:11:06.840
+much better. Keeping that in mind. Okay. This is the release
+
+00:11:06.840 --> 00:11:09.580
+that we have done like, uh, yesterday itself. Uh, that's the
+
+00:11:09.580 --> 00:11:12.440
+reason. So I'm giving you a demo and again, we have not, uh,
+
+00:11:12.600 --> 00:11:16.440
+done a public demo so far. So just a close class demo. This
+
+00:11:16.440 --> 00:11:19.240
+is like a, which we are giving. This isn't available
+
+00:11:19.240 --> 00:11:23.480
+presently in a mobile app. No, in mobile app, it's not
+
+00:11:23.480 --> 00:11:26.400
+available. So I think, uh, first of all, it will be
+
+00:11:26.400 --> 00:11:29.840
+available in Android. So soon, I think within two weeks of
+
+00:11:29.840 --> 00:11:32.620
+time, you will be able to find out all the features. I'm not
+
+00:11:32.620 --> 00:11:34.660
+just talking about URI feature, I'm talking about resume AI
+
+00:11:34.660 --> 00:11:38.780
+feature, job feature, plus a new UI, right? A new UI. We are
+
+00:11:38.780 --> 00:11:41.820
+trying to release into a mobile device. Even I can show you,
+
+00:11:41.840 --> 00:11:46.660
+uh, the UI that we are going to like, uh, release, uh,
+
+00:11:46.740 --> 00:11:50.740
+basically. So this new UI update, you will be able to find
+
+00:11:50.740 --> 00:11:55.220
+out inside your mobile app and hope all of you are going to
+
+00:11:55.220 --> 00:12:00.380
+like this, uh, new UI that we are releasing. So this is the
+
+00:12:00.380 --> 00:12:04.140
+new UI guys, mobile UI I'm talking about, right? So this is
+
+00:12:04.140 --> 00:12:05.500
+the new UI. This is the new UI that we are going to release
+
+00:12:05.500 --> 00:12:08.420
+and over there in a phase wise manner. So we are going to
+
+00:12:08.420 --> 00:12:11.520
+release all of these features, basically all of this feature
+
+00:12:11.520 --> 00:12:13.720
+one by one, we are going to roll out. So in two weeks of
+
+00:12:13.720 --> 00:12:16.420
+time, Android app, it will be available and anyhow, our
+
+00:12:16.420 --> 00:12:19.260
+Android app is now available globally worldwide. So from any
+
+00:12:19.260 --> 00:12:21.760
+country you all will be able to access it, download it. Our
+
+00:12:21.760 --> 00:12:25.760
+iOS app, a basic version is available just in India. Now in
+
+00:12:25.760 --> 00:12:28.360
+couple of week of time, because iOS takes a little bit more
+
+00:12:28.360 --> 00:12:31.580
+time in terms of verification authorization from iOS app
+
+00:12:31.580 --> 00:12:34.840
+store itself. So even it will be available inside them. iOS.
+
+00:12:34.980 --> 00:12:36.720
+So we have a two month of timeline within two month of
+
+00:12:36.720 --> 00:12:38.940
+timeline, the complete system will be available everywhere.
+
+00:12:39.400 --> 00:12:42.900
+So this is URI. The second part is basically a most
+
+00:12:42.900 --> 00:12:46.600
+important part for any learning learner or anyone who is
+
+00:12:46.600 --> 00:12:48.760
+trying to do a upskilling. So there is something called as
+
+00:12:48.760 --> 00:12:53.760
+resume AI that we have released. Let me delete all the
+
+00:12:53.760 --> 00:12:56.380
+previous resume that I have used over here. So we have
+
+00:12:56.380 --> 00:13:00.200
+released a resume AI and here what you can do is you can
+
+00:13:00.200 --> 00:13:03.960
+come, you can try to build a resume from your existing
+
+00:13:03.960 --> 00:13:07.020
+resume. You can try to build a cover later from your
+
+00:13:07.020 --> 00:13:11.000
+existing resume. Part number one, part number two, you will
+
+00:13:11.000 --> 00:13:15.080
+be able to modify a resume with respect to a company and its
+
+00:13:15.080 --> 00:13:18.780
+job description. Part number three, if you would like to
+
+00:13:18.780 --> 00:13:21.740
+build a resume from a various scratch, let's suppose you
+
+00:13:21.740 --> 00:13:23.860
+don't have a resume at all. And you would like to build a
+
+00:13:23.860 --> 00:13:26.620
+resume from a scratch. You all will be able to build a
+
+00:13:26.620 --> 00:13:30.120
+resume from a scratch as well. So all three modes are
+
+00:13:30.120 --> 00:13:34.440
+supported resume to resume. Right. Company JD and company
+
+00:13:34.440 --> 00:13:39.140
+name to resume, and then scratch to resume, right? So apart
+
+00:13:39.140 --> 00:13:41.460
+from that, it is going to give you not just a resume, it is
+
+00:13:41.460 --> 00:13:44.100
+going to give you many more things, which I'm going to show
+
+00:13:44.100 --> 00:13:47.920
+you. So here, let's suppose if I'll go and if I'm trying to
+
+00:13:47.920 --> 00:13:50.580
+like a build a resume from my existing resume, so I can try
+
+00:13:50.580 --> 00:13:54.680
+to upload any of the resume that I have. I can try to attach
+
+00:13:54.680 --> 00:13:57.440
+my GitHub, LinkedIn, lead code profile, website URL, if I
+
+00:13:57.440 --> 00:14:01.900
+want, otherwise I can click on a skip. Right. And here. If I
+
+00:14:01.900 --> 00:14:04.940
+would like to modify this resume, right? If I would like to
+
+00:14:04.940 --> 00:14:06.880
+modify this resume with respect to company name, for
+
+00:14:06.880 --> 00:14:09.560
+example, I'm trying to apply for maybe a Google Atlassian or
+
+00:14:09.560 --> 00:14:12.940
+Adobe. I can try to give a company name. I can try to give a
+
+00:14:12.940 --> 00:14:15.420
+proper job description. So for whatever job you're going to
+
+00:14:15.420 --> 00:14:17.920
+apply, so job description, I can try to give and then
+
+00:14:17.920 --> 00:14:21.340
+continue. Otherwise I can skip. So means from company and JD
+
+00:14:21.340 --> 00:14:24.360
+also, you will be able to modify your current resume. I
+
+00:14:24.360 --> 00:14:26.800
+uploaded my current resume, so I'll just keep this one for
+
+00:14:26.800 --> 00:14:30.480
+the first time. Now it is trying to fetch the data. It will
+
+00:14:30.480 --> 00:14:33.320
+take a couple of minutes, two or three minutes of time it is
+
+00:14:33.320 --> 00:14:35.360
+going to take because it will face the data. It will try to
+
+00:14:35.360 --> 00:14:38.520
+build your resume. And I'll show you the difference between
+
+00:14:38.520 --> 00:14:41.800
+your previous resume and the next one, right? So what is the
+
+00:14:41.800 --> 00:14:45.060
+difference between the previous one and the next one? So
+
+00:14:45.060 --> 00:14:47.160
+whether it is able to do some sort of a changes or not,
+
+00:14:47.280 --> 00:14:50.460
+whether it is able to align your resume with respect to ATS
+
+00:14:50.460 --> 00:14:53.660
+or not, application tracking system or not, if it is able to
+
+00:14:53.660 --> 00:14:57.240
+do it so with how much percentage or, but how much accuracy
+
+00:14:57.240 --> 00:14:59.840
+it is able to do it each and everything. With the stats, you
+
+00:14:59.840 --> 00:15:02.400
+all will be able to see it. So just wait for a couple of
+
+00:15:02.400 --> 00:15:02.760
+minute guys.
+
+00:15:07.860 --> 00:15:10.680
+Can we attend a live courses and download a course in mobile
+
+00:15:10.680 --> 00:15:14.980
+app? Yeah. So that is already available. Okay. Just a minute
+
+00:15:14.980 --> 00:15:21.500
+guys. Yeah. So let me click. This is my original resume, by
+
+00:15:21.500 --> 00:15:27.850
+the way, and, and, and let me delete it. Sometime it
+
+00:15:27.850 --> 00:15:29.970
+crashes. This is the reason I'm telling you, we are fixing
+
+00:15:29.970 --> 00:15:35.670
+this issues, uh, so that it can go for a heavy load. And so
+
+00:15:39.030 --> 00:15:41.330
+within two weeks we are stabilizing it, like I said, so we
+
+00:15:41.330 --> 00:15:44.410
+are doing an internal demo as of now, but just wait.
+
+00:15:50.630 --> 00:15:53.050
+So Sumer, I was just trying to ask you, uh, answer your
+
+00:15:53.050 --> 00:15:54.970
+question, right? Can we attend the live course, download the
+
+00:15:54.970 --> 00:15:57.790
+course on mobile app? Yeah. So that feature is available. So
+
+00:15:57.790 --> 00:16:00.190
+during a live, obviously you can't download it, but after
+
+00:16:00.190 --> 00:16:02.590
+live, when we are going to upload the recorded, so that
+
+00:16:02.590 --> 00:16:04.670
+feature is already available in an Android device. As of
+
+00:16:04.670 --> 00:16:07.510
+now, iOS device, you will be able to find out in couple of
+
+00:16:07.510 --> 00:16:10.830
+weeks, uh, as of now, iOS is available only in India.
+
+00:16:10.930 --> 00:16:15.620
+Android is available globally. What is the app name in Apple
+
+00:16:15.620 --> 00:16:18.560
+app store? Same you're wrong, but yeah, it's not a complete
+
+00:16:18.560 --> 00:16:21.720
+one. So like you will not be able to find out like a much of
+
+00:16:21.720 --> 00:16:24.740
+features over there. So I'll recommend not to download as of
+
+00:16:24.740 --> 00:16:29.720
+now iOS app, but yeah, Android, you can go ahead. Okay.
+
+00:16:29.800 --> 00:16:32.380
+Error. So maybe a system is going through a heavy load on,
+
+00:16:32.440 --> 00:16:34.340
+maybe my team is doing some sort of a deployment because
+
+00:16:34.340 --> 00:16:36.500
+still work is going on, on this one,
+
+00:16:42.560 --> 00:16:46.660
+creating an interview preparation guide, developing a career
+
+00:16:46.660 --> 00:16:50.300
+roadmap. It will work. Don't worry. So we have built a
+
+00:16:50.300 --> 00:16:52.220
+system. So it is going to work. Sometime it is going to
+
+00:16:52.220 --> 00:16:54.920
+crash because of the continuous deployment that we are doing
+
+00:16:54.920 --> 00:16:57.640
+in a backend and we are like changing it every hour. So our
+
+00:16:57.640 --> 00:16:59.000
+team is working continuously on that.
+
+00:17:03.380 --> 00:17:06.200
+Can I use URI for an API for the project? As of now, we have
+
+00:17:06.200 --> 00:17:08.720
+not released the API module. Uh, we are thinking about it,
+
+00:17:08.800 --> 00:17:12.520
+uh, because, uh, if we are giving an API access, it is going
+
+00:17:12.520 --> 00:17:15.980
+to cost us a bit higher. So we are, we are thinking about
+
+00:17:15.980 --> 00:17:20.280
+that capability. I have used as you may yesterday. It is
+
+00:17:20.280 --> 00:17:21.980
+working. Yeah, it will work. Everything will work. Don't
+
+00:17:21.980 --> 00:17:26.620
+worry. Everything will work. And maybe for the next couple
+
+00:17:26.620 --> 00:17:29.540
+of days, it is going to give you some sort of issues. But
+
+00:17:29.540 --> 00:17:32.340
+after that, it is not within two weeks we are stabilizing.
+
+00:17:32.440 --> 00:17:34.560
+That's a timeline that we have taken internally. So within
+
+00:17:34.560 --> 00:17:37.360
+two weeks, anyhow, we are going to stabilize the entire
+
+00:17:37.360 --> 00:17:42.730
+system. We are working day and night for that. Use PDF
+
+00:17:42.730 --> 00:17:45.170
+resume only. I was trying with the word. Yeah. As of now, we
+
+00:17:45.170 --> 00:17:47.150
+have given you the instruction also. So in our beginning
+
+00:17:47.150 --> 00:17:50.350
+itself, so please upload the PDF as of now going forward. So
+
+00:17:50.350 --> 00:17:52.250
+we are going to give you option even for the word.
+
+00:17:55.200 --> 00:17:57.820
+Sameer is asking the resume. I can, I build a resume as per
+
+00:17:57.820 --> 00:18:01.180
+our LinkedIn profile. I'll show you some. I'll show you the
+
+00:18:08.380 --> 00:18:11.140
+thing is sound output changed again. I don't think so. Sound
+
+00:18:11.140 --> 00:18:11.780
+output is same.
+
+00:18:16.480 --> 00:18:18.960
+Adding recommended project. That's the last step actually.
+
+00:18:21.650 --> 00:18:26.290
+And in two weeks, you will see like the label of system
+
+00:18:26.290 --> 00:18:29.010
+basically, and hopefully it is going to help you out a lot.
+
+00:18:29.110 --> 00:18:31.570
+All the system that we are trying to create, starting from
+
+00:18:31.570 --> 00:18:34.150
+learning to support to a resume to an interview, too many
+
+00:18:34.150 --> 00:18:36.910
+more things. I'll show you that. And then you can give me a
+
+00:18:36.910 --> 00:18:39.470
+feedback. Plus you can give me your suggestions as well. So
+
+00:18:39.470 --> 00:18:42.270
+now it's done as you can see, right? So now it is able to
+
+00:18:42.270 --> 00:18:44.790
+build my resume. So this was my original resume, right? This
+
+00:18:44.790 --> 00:18:48.210
+is the original resume. And now this is the resume, which my
+
+00:18:48.210 --> 00:18:52.630
+system has built one pager resume, right? One pager resume.
+
+00:18:52.650 --> 00:18:56.030
+I haven't attached a LinkedIn when it has asked for. So it
+
+00:18:56.030 --> 00:18:58.730
+is not giving me LinkedIn URL or all those things. So it is
+
+00:18:58.730 --> 00:19:02.210
+able to build my resume as you can see, plus it is able to
+
+00:19:02.210 --> 00:19:05.650
+build my cover later as well. Right? It is able to build my
+
+00:19:05.650 --> 00:19:08.910
+cover later as well. Not just that. So click on the analysis
+
+00:19:08.910 --> 00:19:12.950
+part. So the previous score of the resume was 78%, right?
+
+00:19:13.010 --> 00:19:16.510
+And now the score of the resume is basically 88%. Not just
+
+00:19:16.510 --> 00:19:19.470
+that. So it is giving you even the area of improvement and
+
+00:19:19.470 --> 00:19:22.450
+then what kind of an improvement my system has done. So your
+
+00:19:22.450 --> 00:19:24.530
+own system has done resume AI system, what kind of an
+
+00:19:24.530 --> 00:19:27.110
+improvement it has done. So even it is giving you all those
+
+00:19:27.110 --> 00:19:29.210
+things and you can do the comparison that, okay, fine. So
+
+00:19:29.210 --> 00:19:32.550
+this improvement has been done or not now. So templates,
+
+00:19:32.750 --> 00:19:35.010
+template wise, so we are trying to add more and more
+
+00:19:35.010 --> 00:19:37.710
+templates. So in couple of days, you will be able to find
+
+00:19:37.710 --> 00:19:40.610
+out five to six more templates. So that all of you can
+
+00:19:40.610 --> 00:19:43.970
+download like a template with your own flavor, whatever
+
+00:19:43.970 --> 00:19:46.250
+template that you want. Maybe if you don't like this
+
+00:19:46.250 --> 00:19:48.470
+template, right? The template that we are generating. So
+
+00:19:48.470 --> 00:19:50.330
+maybe you can go with the next one. Maybe you can go with
+
+00:19:50.330 --> 00:19:54.470
+the next one, right? So in this way, like you can, you can
+
+00:19:54.470 --> 00:19:57.250
+just try to go ahead with that template. There is a section
+
+00:19:57.250 --> 00:20:00.670
+called as interview preparation section. So based on your
+
+00:20:00.670 --> 00:20:03.970
+resume. So even if you are a lawyer, even if you are a CA,
+
+00:20:04.150 --> 00:20:06.630
+you can try to come over here. Maybe let's suppose you're
+
+00:20:06.630 --> 00:20:08.950
+not a technical guy, right? Your resume is not at all
+
+00:20:08.950 --> 00:20:12.230
+technical. Even you can come over here and based on your
+
+00:20:12.230 --> 00:20:15.050
+resume, so based on tech and non-tech, it will try to
+
+00:20:15.050 --> 00:20:18.110
+schedule the entire interview preparation. So general
+
+00:20:18.110 --> 00:20:20.270
+question, tell me about yourself. People are going to ask
+
+00:20:20.270 --> 00:20:23.310
+you then, what is your, why you are interested in this role?
+
+00:20:23.450 --> 00:20:26.270
+Why you are technical skills area? What is your technical
+
+00:20:26.270 --> 00:20:30.590
+expertise? What are your most proud of in your career so
+
+00:20:30.590 --> 00:20:34.650
+far? So general question, now technical question, right? So
+
+00:20:34.650 --> 00:20:38.490
+based on the resume, right? Whatever resume it has built. So
+
+00:20:38.490 --> 00:20:41.970
+it is going to produce a technical question as well. For
+
+00:20:41.970 --> 00:20:45.130
+example, if DSA is important, it is going to give you a DSA
+
+00:20:45.130 --> 00:20:47.830
+question. It's optimal solution answer as well. So DSA
+
+00:20:47.830 --> 00:20:51.010
+question, it's solution, all those things. Then technical
+
+00:20:51.010 --> 00:20:53.250
+wise programming question, if people are going to ask you,
+
+00:20:53.290 --> 00:20:56.330
+so even it is going to give you that part. Then a system
+
+00:20:56.330 --> 00:20:58.430
+design question, if people are going to ask you, so it is
+
+00:20:58.430 --> 00:21:01.110
+going to give you a complete system design question and it's
+
+00:21:01.110 --> 00:21:03.930
+detailed answer. Now we are trying to do what, so we are
+
+00:21:03.930 --> 00:21:07.310
+trying to increase a number of questions inside it, because
+
+00:21:07.310 --> 00:21:10.990
+the agent that we have built, so it's working like a fine.
+
+00:21:11.130 --> 00:21:14.610
+And we are trying to just increase the capability of the AI
+
+00:21:14.610 --> 00:21:17.290
+agent that we have created in a backend so that it will be
+
+00:21:17.290 --> 00:21:21.010
+able to give you in detail, in depth, hundreds of questions,
+
+00:21:21.210 --> 00:21:25.190
+which people can ask possibly in any startup, any product
+
+00:21:25.190 --> 00:21:27.550
+based companies or any service based companies. And that is
+
+00:21:27.550 --> 00:21:30.010
+something that you are going to feel in next two weeks of
+
+00:21:30.010 --> 00:21:32.810
+time, right? So as of now, yes, it is able to generate it,
+
+00:21:32.850 --> 00:21:35.130
+but yeah, this generation is going to be way more advanced
+
+00:21:35.130 --> 00:21:37.570
+and way more powerful. Okay. So let's talk about the next
+
+00:21:37.570 --> 00:21:40.290
+two weeks of time. Then managerial question, whatever people
+
+00:21:40.290 --> 00:21:42.650
+are going to ask you in a managerial round. So it is going
+
+00:21:42.650 --> 00:21:45.870
+to give you that as well. HR related question, whatever
+
+00:21:45.870 --> 00:21:48.010
+people are going to ask you in HR round, it is going to give
+
+00:21:48.010 --> 00:21:50.450
+you that question and its answer. And then behavioral
+
+00:21:50.450 --> 00:21:53.210
+question. So whatever people are going to ask you again, it
+
+00:21:53.210 --> 00:21:55.270
+is going to give you questions as well as its respective
+
+00:21:55.270 --> 00:21:59.350
+answer. Now so there is a third, there is a fourth category
+
+00:21:59.350 --> 00:22:02.150
+called as career roadmap. So your weekly goal, it is going
+
+00:22:02.150 --> 00:22:04.510
+to give you your monthly goal. It is going to give you your
+
+00:22:04.510 --> 00:22:08.270
+quarterly goal. It is going to give you. Okay. Plus it is,
+
+00:22:08.270 --> 00:22:10.690
+it is not going to be the same for everyone. It is depends
+
+00:22:10.690 --> 00:22:13.170
+upon the resume. So everything is basically based out of
+
+00:22:13.170 --> 00:22:16.030
+your resume. So what skills you are supposed to learn from
+
+00:22:16.030 --> 00:22:18.290
+here? So whatever things which has been mentioned inside
+
+00:22:18.290 --> 00:22:20.750
+your resume now after that, what is something that you
+
+00:22:20.750 --> 00:22:23.590
+should learn? What is something that you should like a focus
+
+00:22:23.590 --> 00:22:26.350
+more and more on? And then if you would like to go for the
+
+00:22:26.350 --> 00:22:28.490
+certification, then what kind of a certification you can try
+
+00:22:28.490 --> 00:22:32.170
+to opt for? Plus it is going to give you a five year plan as
+
+00:22:32.170 --> 00:22:34.470
+well. That what should be your milestone for the year one,
+
+00:22:34.530 --> 00:22:37.070
+then year two, then year three, then year four, then year
+
+00:22:37.070 --> 00:22:40.250
+five. And so on. We are trying to make it more better and
+
+00:22:40.250 --> 00:22:43.570
+better, right? Again this one. And then it is going to give
+
+00:22:43.570 --> 00:22:45.930
+you a project suggestion that if you would like to do some
+
+00:22:45.930 --> 00:22:48.170
+sort of an additional project, then what kind of a project
+
+00:22:48.170 --> 00:22:50.750
+that you should do? And plus if you are doing a project,
+
+00:22:50.890 --> 00:22:52.630
+what should be the overview? What should be the technology
+
+00:22:52.630 --> 00:22:55.110
+overview? What should be the expected feature? What should
+
+00:22:55.110 --> 00:22:58.050
+be the core feature? What should be the user flow? What kind
+
+00:22:58.050 --> 00:23:00.550
+of a technology that you are supposed to use in that project
+
+00:23:00.550 --> 00:23:02.670
+that you are building? What should be your testing strategy?
+
+00:23:02.930 --> 00:23:05.050
+What should be your optimization strategy? What should be
+
+00:23:05.050 --> 00:23:07.850
+the functional wise requirement? Okay. What is a non
+
+00:23:07.850 --> 00:23:11.050
+-functional requirement, architecture? What should be a data
+
+00:23:11.050 --> 00:23:14.370
+flow? And finally, what should be the output as an API that
+
+00:23:14.370 --> 00:23:17.510
+you are supposed to give? So it is going to give you even a
+
+00:23:17.510 --> 00:23:21.090
+project. Like I said, we are trying to build it better and
+
+00:23:21.090 --> 00:23:23.890
+better. So in two weeks of time, a lot of changes you can
+
+00:23:23.890 --> 00:23:28.230
+expect even from here. But hope this entire system is going
+
+00:23:28.230 --> 00:23:31.810
+to help you out a lot in terms of starting from building a
+
+00:23:31.810 --> 00:23:36.130
+resume, multiple, multiple template, cover letter, analysis,
+
+00:23:36.390 --> 00:23:40.250
+integration, career roadmap, project, each and everything,
+
+00:23:40.370 --> 00:23:45.130
+whatever is required after study. Because once we have taken
+
+00:23:45.130 --> 00:23:47.370
+some courses, maybe not from here, maybe from somewhere
+
+00:23:47.370 --> 00:23:50.630
+else, but after that, whatever it is you need. So it's
+
+00:23:50.630 --> 00:23:54.170
+available over here, right? Same goes for URI. So maybe you
+
+00:23:54.170 --> 00:23:56.390
+are doing some sort of a courses from somewhere else, but
+
+00:23:56.390 --> 00:23:58.710
+yeah, you would like to like a use this kind of a system. We
+
+00:23:58.710 --> 00:24:01.690
+don't want to pay $20 separately. So you can go. Okay. You
+
+00:24:01.690 --> 00:24:04.450
+can go ahead with a URI. Then you can even try to create a
+
+00:24:04.450 --> 00:24:07.410
+resume from the scratch. So here one by one, just try to
+
+00:24:07.410 --> 00:24:09.850
+fill all the information and then eventually it is going to
+
+00:24:09.850 --> 00:24:12.690
+produce a resume for you. So even from a scratch, let's
+
+00:24:12.690 --> 00:24:15.190
+suppose you, if you don't have a resume at all, right? You
+
+00:24:15.190 --> 00:24:17.470
+don't have a resume format at all. So fill the data. And
+
+00:24:17.470 --> 00:24:19.650
+then based on that, it is going to give you the entire
+
+00:24:19.650 --> 00:24:24.630
+resume as simple as that. Now the third part is basically a
+
+00:24:24.630 --> 00:24:29.210
+job part. So whatever resume you are going to upload based
+
+00:24:29.210 --> 00:24:33.550
+on that. Every hour. Every hour, because majority of us,
+
+00:24:33.610 --> 00:24:36.290
+like there are so many, like a tons of job platform, right?
+
+00:24:36.350 --> 00:24:41.410
+LinkedIn, Naukri, Indeed, Monster, Sign, Times job. And then
+
+00:24:41.410 --> 00:24:43.470
+in every country, there will be a lot of different,
+
+00:24:43.530 --> 00:24:47.190
+different kind of a job portal. Again, in every company and
+
+00:24:47.190 --> 00:24:49.570
+in most of the company, they will be having their own career
+
+00:24:49.570 --> 00:24:52.050
+portal or career page, right? Where they used to publish
+
+00:24:52.050 --> 00:24:55.670
+their like a relevant opportunities and jobs. Now as of now,
+
+00:24:55.690 --> 00:24:59.190
+what we are doing is we are trying to fetch like a data,
+
+00:24:59.390 --> 00:25:02.990
+basically we are trying to fetch our data basically from
+
+00:25:02.990 --> 00:25:08.370
+like a LinkedIn mostly, right? But in 60 days of time, so we
+
+00:25:08.370 --> 00:25:10.770
+are trying to build a scrapper. So we are trying to like
+
+00:25:10.770 --> 00:25:13.450
+explore a lot of things. And since like a couple of months,
+
+00:25:13.530 --> 00:25:16.610
+so we are working on the scrapper part. So what, what is the
+
+00:25:16.610 --> 00:25:18.670
+theme of like a building the scrapper? So theme of building
+
+00:25:18.670 --> 00:25:22.850
+a scrapper is such a way that it will go to the entire like
+
+00:25:22.850 --> 00:25:26.270
+internet. So whatever is available on the internet, whether
+
+00:25:26.270 --> 00:25:28.410
+it's a company, whether it's a career portal, whatever it
+
+00:25:28.410 --> 00:25:31.810
+is, right? Whatever. It will go over there. Based on your
+
+00:25:31.810 --> 00:25:37.110
+resume with 80% plus relevancy, right? Not now in 60 days of
+
+00:25:37.110 --> 00:25:41.710
+time. So with 80% plus relevancy, it will try to fetch a job
+
+00:25:41.710 --> 00:25:45.550
+by the time job will be published in every one hour or maybe
+
+00:25:45.550 --> 00:25:48.250
+in every three to four hour, right? So it will go over
+
+00:25:48.250 --> 00:25:51.770
+there. It will try to fetch a job and then it is going to
+
+00:25:51.770 --> 00:25:55.770
+show you a job inside a job portal. You will be able to see
+
+00:25:55.770 --> 00:25:58.790
+it. You will be able to go over there and you will be able
+
+00:25:58.790 --> 00:26:03.010
+to apply. Right? So this job was posted on 27th, 27th day
+
+00:26:03.010 --> 00:26:04.990
+before yesterday. So I'm just trying to check my 20th
+
+00:26:04.990 --> 00:26:09.070
+schedule. So this is the job which was posted and now you
+
+00:26:09.070 --> 00:26:12.050
+can go ahead and apply. So whether it's a full time job,
+
+00:26:12.170 --> 00:26:14.690
+part time job, contract job, whether it's an internship,
+
+00:26:15.050 --> 00:26:17.250
+doesn't matter which platform, which portal it is available.
+
+00:26:17.410 --> 00:26:20.650
+But yeah, most of the portal, it will be able to scrap most
+
+00:26:20.650 --> 00:26:22.970
+of the company pages that will be able to scrap. And then
+
+00:26:22.970 --> 00:26:25.830
+from there it is going to show you a job immediately so that
+
+00:26:25.830 --> 00:26:28.770
+you will be able to get an upper hand. So by the time job is
+
+00:26:28.770 --> 00:26:33.290
+available, go ahead and apply. Simple plus by evening. So we
+
+00:26:33.290 --> 00:26:36.150
+are like a launching one more small feature inside this one.
+
+00:26:36.270 --> 00:26:39.650
+So for every job, it is going to give you one option over
+
+00:26:39.650 --> 00:26:42.090
+here in this section. So it is going to give you option for
+
+00:26:42.090 --> 00:26:45.310
+a tailored resume. So it's specific to this job. If you
+
+00:26:45.310 --> 00:26:48.410
+would like to generate a resume and with that resume, if you
+
+00:26:48.410 --> 00:26:52.230
+would like to apply, just click just a specific to this job,
+
+00:26:52.370 --> 00:26:54.350
+it will be able to produce a resume. So one resume is
+
+00:26:54.350 --> 00:26:58.190
+already here. Resume AI. Right? Apart from that. So another
+
+00:26:58.190 --> 00:27:01.090
+resume. It will be able to produce just with respect to the
+
+00:27:01.090 --> 00:27:04.670
+job, right? So for every job you will be able to, if you
+
+00:27:04.670 --> 00:27:07.670
+want, if you want, if you don't want to use, because many of
+
+00:27:07.670 --> 00:27:10.590
+us are basically a struggles. Many of us basically try to
+
+00:27:10.590 --> 00:27:13.430
+apply for 200 job, 500 job. And we say that we are not able
+
+00:27:13.430 --> 00:27:17.150
+to get the call. The reason is very simple. System is
+
+00:27:17.150 --> 00:27:21.390
+rejecting a resume, right? Why? Because of a irrelevancy
+
+00:27:21.390 --> 00:27:24.890
+between a content of your resume and the JD. This is where a
+
+00:27:24.890 --> 00:27:27.510
+radius system comes into picture. So it is trying to filter
+
+00:27:27.510 --> 00:27:30.390
+out your resume. It is rejecting your resume. We are trying
+
+00:27:30.390 --> 00:27:33.230
+to align that part, right? That. Okay. So this is the
+
+00:27:33.230 --> 00:27:35.570
+resume. Preparation wise. Anyhow, we are giving you
+
+00:27:35.570 --> 00:27:37.750
+interview question, technical, non-technical HR, each and
+
+00:27:37.750 --> 00:27:39.950
+everything. We are trying to increase more and more over
+
+00:27:39.950 --> 00:27:42.790
+there. So here it will be able to give you are even a
+
+00:27:42.790 --> 00:27:46.570
+tailored resume. So like I said, in 60 days of time, as of
+
+00:27:46.570 --> 00:27:49.530
+now, we are giving you a job just from a LinkedIn, right? We
+
+00:27:49.530 --> 00:27:52.950
+have integrated only that APIs, but yeah, so we are building
+
+00:27:52.950 --> 00:27:55.730
+a scrapper as well. So which will be able to scrap all over
+
+00:27:55.730 --> 00:27:59.710
+the world. And. With the help of your, who am I right? So
+
+00:27:59.710 --> 00:28:02.830
+with the help of who am I? So whatever like a is there here,
+
+00:28:02.910 --> 00:28:05.730
+you can go and even check. So how system is giving you a
+
+00:28:05.730 --> 00:28:07.990
+job. So system is giving you a job based on these
+
+00:28:07.990 --> 00:28:10.990
+information, right? Based on basically this information
+
+00:28:10.990 --> 00:28:14.510
+system is trying to give me the job, whatever information we
+
+00:28:14.510 --> 00:28:16.950
+are keeping inside, who am I? And it will keep on
+
+00:28:16.950 --> 00:28:19.150
+recommending it and automatically it will keep on refreshing
+
+00:28:19.150 --> 00:28:22.390
+it in every one hour. Most of you will not be able to see
+
+00:28:22.390 --> 00:28:24.450
+it. Most of you will be able to see it after one hour, one
+
+00:28:24.450 --> 00:28:28.490
+hour, two hour, right? So this is how the system is going to
+
+00:28:28.490 --> 00:28:31.210
+help you out with respect to the job and a tailored resume
+
+00:28:31.210 --> 00:28:34.650
+for a job. So how is the system guys, by the way, feedback.
+
+00:28:44.220 --> 00:28:47.300
+So Jitendra is asking just a GDPR question. Do you store our
+
+00:28:47.300 --> 00:28:51.740
+data when we do a search in a URI? So when you are doing a
+
+00:28:51.740 --> 00:28:55.640
+search on a URI, so we are just trying to store up data into
+
+00:28:55.640 --> 00:28:59.500
+a memory, build up just to build a context, not more than
+
+00:28:59.500 --> 00:29:03.960
+that, URI don't need your data basically, because inside a
+
+00:29:03.960 --> 00:29:07.260
+URI. So we have integrated a LLM. Now what LLM is going to
+
+00:29:07.260 --> 00:29:10.900
+do. So LLM is again like a self hosted things. Plus you can
+
+00:29:10.900 --> 00:29:13.380
+do a search, right? So search is again a real time. So we
+
+00:29:13.380 --> 00:29:16.400
+can't like a, if we are storing a data, it's of no use for
+
+00:29:16.400 --> 00:29:20.880
+us. So as long as you are chatting with our system, only for
+
+00:29:20.880 --> 00:29:23.320
+that context, data will be stored. Data will be in through a
+
+00:29:23.320 --> 00:29:28.380
+memory. Once you will like a gone, then we will not be
+
+00:29:28.380 --> 00:29:31.340
+storing your data. So we're just trying to like a build a
+
+00:29:31.340 --> 00:29:34.620
+memory. That's it. Yeah. We're just trying to build a
+
+00:29:34.620 --> 00:29:36.920
+memory. So yeah, for some of you, it is not going to work
+
+00:29:36.920 --> 00:29:39.700
+and some of you, it is going to work for now. Like I said,
+
+00:29:39.720 --> 00:29:43.700
+it's working for me. Just wait for a couple of more week.
+
+00:29:43.820 --> 00:29:47.520
+Yeah. You will be able to see it. Now, this is not the only
+
+00:29:47.520 --> 00:29:51.240
+thing. So URI is fine. Resume AI is fine. Job is fine. Now
+
+00:29:51.240 --> 00:29:53.060
+there is something I'm going to show you, which is again
+
+00:29:53.060 --> 00:29:56.540
+amazing. And that is something that we have not released in
+
+00:29:56.540 --> 00:30:00.840
+our production. So there is a interview system that we are
+
+00:30:00.840 --> 00:30:04.300
+building. A real time mock interview. Okay. So there is a
+
+00:30:04.300 --> 00:30:06.580
+mock interview. First round, second round, HR round,
+
+00:30:06.720 --> 00:30:08.360
+behavioral round, managerial round, director round,
+
+00:30:08.420 --> 00:30:11.840
+whatever. Depends upon your resume again. So here, let's
+
+00:30:11.840 --> 00:30:14.720
+suppose if I'm going to upload my resume, let me upload any
+
+00:30:14.720 --> 00:30:19.540
+of the resume that I have. So yeah, any random resume I have
+
+00:30:19.540 --> 00:30:24.320
+just uploaded. So I'm uploading my resume over here and let
+
+00:30:24.320 --> 00:30:30.140
+me switch on my desktop audio so that you will be able to
+
+00:30:30.140 --> 00:30:32.600
+see, you will be able to get some sort of an echo for some
+
+00:30:32.600 --> 00:30:36.280
+time. I have switched on my reverse audio as well. So that
+
+00:30:36.280 --> 00:30:38.600
+whatever system is telling me you will be able to listen.
+
+00:30:39.120 --> 00:30:42.400
+Yeah. So I uploaded my resume. Now I start a mock interview.
+
+00:30:44.750 --> 00:30:49.010
+Allow? Hello, I'm Jean and I'll be your interviewer today.
+
+00:30:49.290 --> 00:30:52.110
+We'll be going through several rounds of questions to assess
+
+00:30:52.110 --> 00:30:54.430
+your fit for the machine learning engineer slash data
+
+00:30:54.430 --> 00:30:57.530
+scientist position. Let's start with the first round, which
+
+00:30:57.530 --> 00:31:00.510
+will focus on your background and experience. To begin,
+
+00:31:00.790 --> 00:31:03.730
+could you please introduce yourself and walk us through your
+
+00:31:03.730 --> 00:31:07.230
+professional journey. Yeah, so basically, my name is like,
+
+00:31:07.250 --> 00:31:09.530
+Piagra Raju. I think that was the resume which I have
+
+00:31:09.530 --> 00:31:13.570
+uploaded and I'm having like a two year of experience in
+
+00:31:13.570 --> 00:31:16.990
+data science and machine learning. And yeah, I'm trying to
+
+00:31:16.990 --> 00:31:21.950
+learn generative AI, agentic AI, this kind of things. Okay,
+
+00:31:22.030 --> 00:31:24.750
+thank you for that introduction. It's good to know you have
+
+00:31:24.750 --> 00:31:27.690
+two years of experience in data science and machine learning
+
+00:31:27.690 --> 00:31:32.090
+and are exploring generative AI. Moving on. With a strong
+
+00:31:32.090 --> 00:31:36.050
+academic performance of 8.95%. CGPA and computer science.
+
+00:31:36.310 --> 00:31:39.950
+How did you transition from software engineering at HCL tech
+
+00:31:39.950 --> 00:31:44.110
+to focusing on data science and AI. Okay, thank you for that
+
+00:31:44.110 --> 00:31:46.650
+introduction. It's good to know you have two years of
+
+00:31:46.650 --> 00:31:49.310
+experience in data science and machine learning and are
+
+00:31:49.310 --> 00:31:52.870
+exploring generative AI. Moving on. With a strong academic
+
+00:31:52.870 --> 00:31:57.750
+performance of 8.95% CGPA and computer science. How did you
+
+00:31:57.750 --> 00:32:00.470
+transition from software with a strong academic performance
+
+00:32:00.470 --> 00:32:04.430
+of 8.95% CGPA and computer science. Okay, thank you for that
+
+00:32:04.430 --> 00:32:05.910
+introduction. How did you transition from software
+
+00:32:05.910 --> 00:32:09.530
+engineering at HCL Tech to focusing on data science and AI?
+
+00:32:10.070 --> 00:32:12.850
+Okay, so next question, and then I can select our next
+
+00:32:12.850 --> 00:32:15.330
+round, basically. I can go with the next round, the next
+
+00:32:15.330 --> 00:32:17.010
+round, and then the next round. Can you explain how your
+
+00:32:17.010 --> 00:32:21.450
+experience with AEM at HCL Tech has contributed to your
+
+00:32:21.450 --> 00:32:24.570
+understanding of data-driven decision-making? I'm not sure
+
+00:32:24.570 --> 00:32:27.790
+about this question, so please, okay, let me unmute. Yeah,
+
+00:32:27.830 --> 00:32:29.910
+I'm not sure about this question, so I'm really, really
+
+00:32:29.910 --> 00:32:37.060
+sorry. Please go with the next. Okay. Okay, we can move on
+
+00:32:37.060 --> 00:32:42.320
+to the next question. Yeah, so next, and then next. Okay,
+
+00:32:42.400 --> 00:32:45.300
+let's... It is going to ask you a lot of questions, and then
+
+00:32:45.300 --> 00:32:47.920
+maybe I can try to click on... The candidate has struggled.
+
+00:32:49.240 --> 00:32:52.560
+Yeah, I'm going to click on, like, end of the interview. Now
+
+00:32:52.560 --> 00:32:57.100
+it is going to give me my score, my performance matrices,
+
+00:32:57.280 --> 00:33:00.600
+right? So what is the area of improvement? And my overall
+
+00:33:00.600 --> 00:33:04.220
+score is pretty much bad. It's a 14% only, right? As you can
+
+00:33:04.220 --> 00:33:06.900
+see, I have not given any answer, by the way. Except my
+
+00:33:06.900 --> 00:33:09.900
+introduction, a little bit of introduction. And, yeah, so
+
+00:33:09.900 --> 00:33:13.240
+for that response, so basically, like, what question has
+
+00:33:13.240 --> 00:33:16.900
+been asked, and then what was my response, and what was the
+
+00:33:16.900 --> 00:33:19.380
+recommended response. Each and everything, each and
+
+00:33:19.380 --> 00:33:21.780
+everything. For every question it is going to give me, with
+
+00:33:21.780 --> 00:33:24.880
+respect to the area of improvement, and many more things. So
+
+00:33:24.880 --> 00:33:27.640
+this is, again, one of the, like, real-time systems that we
+
+00:33:27.640 --> 00:33:30.340
+are building. We have not released it inside Prod. It's
+
+00:33:30.340 --> 00:33:33.640
+available in our dev only, as of now. A lot of work is going
+
+00:33:33.640 --> 00:33:39.640
+on, and... Yeah, like I said, so two months, and all the
+
+00:33:39.640 --> 00:33:43.340
+system will be stabilized. And, yeah, so it will be like a
+
+00:33:43.340 --> 00:33:46.340
+super fine. Without any kind of issue, you will be able to
+
+00:33:46.340 --> 00:33:49.520
+connect. You will be able to take help from Yuri, resume,
+
+00:33:49.780 --> 00:33:54.320
+jobs, daily basis, and mock interview. And even going
+
+00:33:54.320 --> 00:33:58.820
+forward, so we have a plan to use that conversational AI for
+
+00:33:58.820 --> 00:34:00.660
+our language learning. Let's suppose someone would like to
+
+00:34:00.660 --> 00:34:04.120
+learn, maybe, English, right? If they are coming from Hindi
+
+00:34:04.120 --> 00:34:07.300
+or some different background. If someone would like to learn
+
+00:34:07.300 --> 00:34:12.100
+Hindi, Spanish, or French, right, people will be able to
+
+00:34:12.100 --> 00:34:15.520
+learn it. So just go, talk, and then... So, yeah, a heavy
+
+00:34:15.520 --> 00:34:18.440
+use of AI. So, like I said, we are not just teaching AI, we
+
+00:34:18.440 --> 00:34:18.960
+are using AI.
+
+00:34:22.720 --> 00:34:25.520
+This all is hosted on cloud. Obviously, it's hosted on AWS
+
+00:34:25.520 --> 00:34:33.740
+cloud. We are using AWS TechStack since day zero. Yeah. So,
+
+00:34:33.860 --> 00:34:36.380
+yeah, a lot of changes, a lot of modifications. You will be
+
+00:34:36.380 --> 00:34:39.680
+able to see the intention is very simple. Let's build a real
+
+00:34:39.680 --> 00:34:44.220
+OTT platform. And this is the platform for a learning need.
+
+00:34:44.420 --> 00:34:46.720
+So what, not just the courses, because the courses are
+
+00:34:46.720 --> 00:34:50.560
+available everywhere. And now we have AI in place, right? So
+
+00:34:50.560 --> 00:34:53.500
+obviously we need every kind of assistance. It's not like
+
+00:34:53.500 --> 00:34:56.160
+I'll just wait for a human being because there's a
+
+00:34:56.160 --> 00:34:59.240
+possibility that even I don't know, like I'm a human, right?
+
+00:34:59.320 --> 00:35:03.240
+So I have a lot of like limitations, right? I will not be
+
+00:35:03.240 --> 00:35:04.920
+able to remember everything. Maybe I will not be able to
+
+00:35:04.920 --> 00:35:08.000
+solve a problem, like in the way, the way system or machine
+
+00:35:08.000 --> 00:35:11.700
+will be able to solve it. And, what I have faced is that,
+
+00:35:11.820 --> 00:35:16.480
+and what I've seen is that our students are not able to use
+
+00:35:16.480 --> 00:35:19.880
+this kind of a system because it's costly, right? I'm not
+
+00:35:19.880 --> 00:35:21.960
+saying that we are the very first one who is building this
+
+00:35:21.960 --> 00:35:24.100
+kind of a system. Yeah, this kind of a system is available
+
+00:35:24.100 --> 00:35:27.140
+in the market, but there are like a startup who is just
+
+00:35:27.140 --> 00:35:29.640
+trying to build, some of them are focusing on resume. Some
+
+00:35:29.640 --> 00:35:32.020
+of them are just focusing on job. Some of them are just
+
+00:35:32.020 --> 00:35:34.160
+giving you URI kind of features. Some of them are just
+
+00:35:34.160 --> 00:35:36.380
+giving you a conversational kind of a feature. So it's
+
+00:35:36.380 --> 00:35:38.480
+scattered everywhere. You have to go and then you have to
+
+00:35:38.480 --> 00:35:42.520
+make a payment. $20, $30 per month. Right? And again, even
+
+00:35:42.520 --> 00:35:45.900
+$20 on one platform is too much expensive for most of us as
+
+00:35:45.900 --> 00:35:53.040
+a student, right? Uh, so simple, $299 and, uh, work done.
+
+00:35:55.860 --> 00:35:58.400
+In future, will it be possible for a team to give a
+
+00:35:58.400 --> 00:36:01.160
+technical overview of a platform? If I'll just talk about
+
+00:36:01.160 --> 00:36:04.500
+you, a technical overview, maybe I'm, I'm, I won't say yes,
+
+00:36:04.540 --> 00:36:08.400
+as of now, uh, because, uh, unnecessary, it will create
+
+00:36:08.400 --> 00:36:11.380
+another task for my team. Uh, but yeah, there is a
+
+00:36:11.380 --> 00:36:13.120
+possibility. There is a chance. There is a chance that maybe
+
+00:36:13.120 --> 00:36:14.280
+we will give a technical overview.
+
+00:36:18.850 --> 00:36:22.330
+Okay, find hope, all of you are building a complete
+
+00:36:22.330 --> 00:36:24.430
+ecosystem for student learning, getting a job, upskilling,
+
+00:36:24.570 --> 00:36:27.050
+reskilling, career growth. Yeah, like I said, guys, as of
+
+00:36:27.050 --> 00:36:31.130
+now, we are new, so please don't give us a bad feedback if,
+
+00:36:31.170 --> 00:36:34.430
+if you're not able to get the service immediately. Just wait
+
+00:36:34.430 --> 00:36:36.690
+for like, give us some time, maybe like just two months of
+
+00:36:36.690 --> 00:36:40.930
+time. Um, we're just four month, five month old startup, uh,
+
+00:36:40.990 --> 00:36:45.550
+since the launch. So yeah, trying to move fast, as fast as
+
+00:36:45.550 --> 00:36:50.910
+possible. Uh, so I'm just working day and night so that, uh,
+
+00:36:51.030 --> 00:36:53.650
+as soon as possible, I will be able to stabilize the entire,
+
+00:36:53.830 --> 00:37:00.210
+uh, system along with the team. Is it free for, Euron plus
+
+00:37:00.210 --> 00:37:04.870
+means everything simple, right? Euron plus subscription. If
+
+00:37:04.870 --> 00:37:08.350
+you have taken yearly or monthly, right? In both the mode,
+
+00:37:08.470 --> 00:37:11.830
+it's available without any, even, but, or any kind of a
+
+00:37:11.830 --> 00:37:14.750
+condition, this is where Euron plus comes into a picture. As
+
+00:37:14.750 --> 00:37:19.110
+simple as that. Your company can become a unicorn. Uh, that
+
+00:37:19.110 --> 00:37:23.090
+is a future, like, uh, I'm not hoping that, uh, my
+
+00:37:23.090 --> 00:37:25.530
+responsibility is just to work and then like, uh, build up
+
+00:37:25.530 --> 00:37:27.890
+things, then we'll see in the future, how
+
+00:37:30.740 --> 00:37:33.640
+the fees are very low. So yeah, we are, we are burning our
+
+00:37:33.640 --> 00:37:36.400
+money. So I'm burning our money. So that's the reason fees
+
+00:37:36.400 --> 00:37:39.760
+is low. Um, I'm wanting a lot of money over here. My
+
+00:37:39.760 --> 00:37:42.180
+personal one, because,
+
+00:37:45.450 --> 00:37:49.270
+uh, even you can see that systems are not that cheap. Like,
+
+00:37:49.270 --> 00:37:54.310
+uh, it costs us a lot. Lot means, uh, really a bond. Some
+
+00:37:54.310 --> 00:37:59.710
+kind of a money it is costing us, especially me, but yeah,
+
+00:37:59.770 --> 00:38:00.330
+that's fine.
+
+00:38:04.530 --> 00:38:07.650
+Okay. Moving ahead. So let's
+
+00:38:28.350 --> 00:38:32.050
+start with the class guys. So in my last class I was, uh,
+
+00:38:32.070 --> 00:38:35.470
+talking about basically a neural network.
+
+00:38:38.160 --> 00:38:41.640
+It all should have a tagline all in one. We'll change it.
+
+00:38:41.800 --> 00:38:47.560
+Yeah. Okay. So let's start with the class in my previous
+
+00:38:47.560 --> 00:38:51.080
+class. I was talking about a neural network. Basically. So
+
+00:38:51.080 --> 00:38:53.800
+we have seen, uh, different, different like, uh, things in
+
+00:38:53.800 --> 00:38:57.160
+terms of a neural network. So where there was a input layer,
+
+00:38:57.280 --> 00:39:00.360
+there was a hidden layer. There was a output layer and then
+
+00:39:00.360 --> 00:39:02.660
+in between. So we were having a weights. We were having a
+
+00:39:02.660 --> 00:39:06.640
+YSS and then we were having a loss functions. We were having
+
+00:39:06.640 --> 00:39:12.710
+the optimizers on like that. And, uh, we were able to
+
+00:39:12.710 --> 00:39:16.250
+understand that how neural network actually works, how it
+
+00:39:16.250 --> 00:39:22.150
+will be able to produce the output now in this class. So. In
+
+00:39:22.150 --> 00:39:26.090
+this class, I'll be talking about one of the specialized
+
+00:39:26.090 --> 00:39:30.650
+kind of a neural network, which is called as RNN, uh,
+
+00:39:30.790 --> 00:39:32.550
+recurrent neural network,
+
+00:39:35.510 --> 00:39:40.610
+recurrent neural network.
+
+00:39:43.740 --> 00:39:47.020
+Now, so why we are talking about even, uh, the current
+
+00:39:47.020 --> 00:39:49.700
+neural network and in general, so majority of time, you will
+
+00:39:49.700 --> 00:39:53.540
+be able to find out, uh, two different, different kinds of
+
+00:39:53.540 --> 00:39:57.780
+neural network. One is called as CNN convolution neural
+
+00:39:57.780 --> 00:40:00.960
+network. And another set of network is called as RNN,
+
+00:40:01.000 --> 00:40:03.360
+recurrent neural network. Now it's not like there are only
+
+00:40:03.360 --> 00:40:05.440
+two variety. There are multiple varieties of a neural
+
+00:40:05.440 --> 00:40:08.220
+network. You will be able to find out, and obviously every
+
+00:40:08.220 --> 00:40:11.400
+neural network has been designed to solve some of the, uh,
+
+00:40:11.540 --> 00:40:14.160
+like, uh, some of the problems with the previous one and
+
+00:40:14.160 --> 00:40:17.120
+maybe to enhance some sort of a feature. So even the LN that
+
+00:40:17.120 --> 00:40:19.900
+you are able to see it's a neural network at the end of the
+
+00:40:19.900 --> 00:40:22.600
+day. Okay. Please share the screen. Sorry. I'm not setting
+
+00:40:22.600 --> 00:40:26.340
+the screen. Oh, my bad. Okay. Now, now I think it's visible.
+
+00:40:26.500 --> 00:40:26.740
+Yeah.
+
+00:40:34.440 --> 00:40:37.900
+Okay. So yeah. Yeah. New network. So, uh, basically there is
+
+00:40:37.900 --> 00:40:41.340
+a one kind of a network called as a recurrent neural network
+
+00:40:41.340 --> 00:40:45.200
+now. So why we are even talking about our recurrent neural
+
+00:40:45.200 --> 00:40:47.420
+network, and that is a different kind of a neural network,
+
+00:40:47.520 --> 00:40:50.560
+which was like a there, which is called as CNN convolutional
+
+00:40:50.560 --> 00:40:53.160
+network, which we generally used to teach in our computer
+
+00:40:53.160 --> 00:40:56.320
+vision classes, right? Uh, different, different kind of a CN
+
+00:40:56.320 --> 00:41:01.760
+network, like a LX net lean, a 16 are like a rest net, a
+
+00:41:01.760 --> 00:41:04.660
+dark net, Google net, all those kinds of networks, which
+
+00:41:04.660 --> 00:41:09.620
+will generally. But here, so we are like, uh, taking a
+
+00:41:09.620 --> 00:41:13.280
+classes for, uh, NLP oriented things or text or speech or
+
+00:41:13.280 --> 00:41:15.280
+did things. So this is where a recurrent neural network
+
+00:41:15.280 --> 00:41:17.440
+comes into a picture. So where it will be able to understand
+
+00:41:17.440 --> 00:41:21.660
+mostly a text based input, and then it will be able to do
+
+00:41:21.660 --> 00:41:25.560
+some sort of a generation now. So why people have started
+
+00:41:25.560 --> 00:41:27.920
+thinking about, uh, recurrent neural network, which is a new
+
+00:41:27.920 --> 00:41:31.420
+kind of a unit work. The reason is very simple. The neural
+
+00:41:31.420 --> 00:41:35.180
+network that we have like, uh, seen in our previous. Class.
+
+00:41:35.780 --> 00:41:40.820
+So yes, it was having a forward pass. It was having a
+
+00:41:40.820 --> 00:41:44.640
+backward pass, right? It was having a forward pass. It was
+
+00:41:44.640 --> 00:41:47.640
+having a backward pass. It was able to take a data as an
+
+00:41:47.640 --> 00:41:51.500
+input. It was able to like a non realize the data with the
+
+00:41:51.500 --> 00:41:55.340
+help of some of the filter function over here, it was able
+
+00:41:55.340 --> 00:41:59.220
+to give an output. It was able to like, uh, propagate a data
+
+00:41:59.220 --> 00:42:02.360
+into a forward direction, and it was able to learn by
+
+00:42:02.360 --> 00:42:05.540
+propagating a data into a backward direction. All those
+
+00:42:05.540 --> 00:42:08.720
+things are completely fine, but every time when you are
+
+00:42:08.720 --> 00:42:15.320
+going to give our input X1, X2, X3, X4, so system will try
+
+00:42:15.320 --> 00:42:19.600
+to consider all of these inputs as a new inputs every time
+
+00:42:19.600 --> 00:42:24.880
+system will not be able to, you know, uh, retain any kind of
+
+00:42:24.880 --> 00:42:28.100
+information or any kind of a knowledge from the previous
+
+00:42:28.100 --> 00:42:32.280
+input. So let's suppose if I'm trying to pass a value of X1,
+
+00:42:32.300 --> 00:42:35.940
+X2, X3, X4 is equal to some data. Right? Maybe some numbers
+
+00:42:35.940 --> 00:42:39.860
+we are trying to pass inside the network. So next time when
+
+00:42:39.860 --> 00:42:43.920
+I'm trying to like a pass, maybe a X5, X6, X7, X8, it will
+
+00:42:43.920 --> 00:42:48.320
+not be able to remember X1, X2, X3, X4, because nowhere we
+
+00:42:48.320 --> 00:42:52.280
+have seen a linkage between a memory, the previous input and
+
+00:42:52.280 --> 00:42:55.580
+the next input. So basically try to pass a new input every
+
+00:42:55.580 --> 00:42:59.400
+time. And then based on that new input, it will try to just
+
+00:42:59.400 --> 00:43:02.680
+adjust the weights in between. So adjust the weights. So
+
+00:43:02.680 --> 00:43:06.140
+just try to change the. Relations. If inside the network,
+
+00:43:06.320 --> 00:43:09.080
+weight changes means we are trying to change basically a
+
+00:43:09.080 --> 00:43:13.000
+relationship inside the network. This is what happens in
+
+00:43:13.000 --> 00:43:17.960
+case of a backward propagation. Now, so let's suppose I'm
+
+00:43:17.960 --> 00:43:21.360
+talking about a speech, right? I'm trying to say something
+
+00:43:21.360 --> 00:43:25.480
+now, whatever I'm trying to generate, whatever I'm trying to
+
+00:43:25.480 --> 00:43:29.040
+say, a next line, obviously there is a lot of relationship
+
+00:43:29.040 --> 00:43:33.040
+between my next line and my previous line and my previous
+
+00:43:33.040 --> 00:43:36.980
+line and my previous line. Right? It's not like I came over
+
+00:43:36.980 --> 00:43:40.540
+here, I have written RNN, and then I'll start talking about
+
+00:43:40.540 --> 00:43:44.600
+a Hadoop concept from a big data, right? If I have written
+
+00:43:44.600 --> 00:43:47.700
+RNN over here, then obviously I have to talk about each and
+
+00:43:47.700 --> 00:43:52.860
+everything in a sequence or like I have to generate a next
+
+00:43:52.860 --> 00:43:56.560
+line or I have to speak a next line based on this particular
+
+00:43:56.560 --> 00:44:00.300
+topic as I'm going to progress. And obviously I have to even
+
+00:44:00.300 --> 00:44:04.240
+understand that. Okay. So what I said earlier, and then what
+
+00:44:04.240 --> 00:44:08.800
+I'm going to say. Next, so means I'm supposed to memorize,
+
+00:44:09.180 --> 00:44:12.080
+right? I'm supposed to memorize. I'm supposed to even, uh,
+
+00:44:12.220 --> 00:44:16.720
+like, uh, keep my memory intact. And then only I will be
+
+00:44:16.720 --> 00:44:20.160
+able to produce the next information. It's not like every
+
+00:44:20.160 --> 00:44:22.200
+time I'll take a new data and then I'll produce the new
+
+00:44:22.200 --> 00:44:24.720
+information. Obviously I will take a new data. For example,
+
+00:44:24.800 --> 00:44:28.120
+if some of you are going to ask me a question immediately,
+
+00:44:28.220 --> 00:44:32.480
+I'll look into the chat, right? Then based on the topic
+
+00:44:32.480 --> 00:44:34.420
+discussion, let's suppose if you're trying to ask something
+
+00:44:34.420 --> 00:44:37.400
+very, very. Irrelevant, right? So I'll try to take that
+
+00:44:37.400 --> 00:44:41.060
+input. I'll try to see your chat, take that input. I'll try
+
+00:44:41.060 --> 00:44:43.520
+to check the relevance that whether this particular question
+
+00:44:43.520 --> 00:44:46.560
+is having some sort of relevancy with that topic, which I'm
+
+00:44:46.560 --> 00:44:50.240
+discussing or not. And it means new data, then the previous
+
+00:44:50.240 --> 00:44:53.200
+memory coming together, and then I'm trying to produce the
+
+00:44:53.200 --> 00:44:56.100
+output. So maybe I'll try to give an answer or maybe I'll
+
+00:44:56.100 --> 00:44:58.680
+say, no, I'll not give an answer because this topic is maybe
+
+00:44:58.680 --> 00:45:01.880
+not relevant. So here, what we are talking about is we are
+
+00:45:01.880 --> 00:45:04.940
+trying to consider a new information. And. We are. Trying to
+
+00:45:04.940 --> 00:45:08.940
+consider even a memory of previous information, right? And
+
+00:45:08.940 --> 00:45:12.340
+even I'm seeing memory. So I'm not talking about basically a
+
+00:45:12.340 --> 00:45:16.420
+complete information or complete number of words or
+
+00:45:16.420 --> 00:45:18.760
+sentences, which I have already said, because even I'm not
+
+00:45:18.760 --> 00:45:21.900
+able to remember that, right? I'm just able to remember that
+
+00:45:21.900 --> 00:45:25.840
+context in last half an hour of lecture, whatever I said,
+
+00:45:25.900 --> 00:45:28.220
+I'm not able to remember all these lines, all these words,
+
+00:45:28.400 --> 00:45:32.480
+right? No one will be, but all of us will be able to
+
+00:45:32.480 --> 00:45:35.200
+remember that context, the situation. The scenario, the
+
+00:45:35.200 --> 00:45:37.780
+weightage, right? We all will be able to remember. We all
+
+00:45:37.780 --> 00:45:40.120
+will be able. This is how we, as a human being, try to learn
+
+00:45:40.120 --> 00:45:41.960
+something. This is how we, as a human being, try to
+
+00:45:41.960 --> 00:45:46.440
+understand something. Now, this is the place. Okay. Voice is
+
+00:45:46.440 --> 00:45:49.820
+echoing. I have to, I have switched on my desktop voice,
+
+00:45:49.920 --> 00:45:53.480
+right? Yeah. I have to switch off. No, it will not equal.
+
+00:45:53.640 --> 00:45:57.560
+Don't worry. Yeah, no, it's fine. I switched on to give you
+
+00:45:57.560 --> 00:46:04.460
+a demo. So now I switched off. Okay. So basically, uh, what
+
+00:46:04.460 --> 00:46:08.020
+happens is that whenever I'm trying to. Produce the new
+
+00:46:08.020 --> 00:46:11.680
+output, obviously I have to consider a new data along with
+
+00:46:11.680 --> 00:46:14.280
+that. So I have to consider something from a memory as well.
+
+00:46:14.420 --> 00:46:18.260
+Then only I will be able to produce the new data where the
+
+00:46:18.260 --> 00:46:22.040
+simple neural network architecture that we have discussed is
+
+00:46:22.040 --> 00:46:26.680
+going to fail because there is no memory unit, or there is
+
+00:46:26.680 --> 00:46:30.140
+no mechanism by which it will be able to build a memory over
+
+00:46:30.140 --> 00:46:33.360
+a time. Right? So there is no mechanism, which is attached
+
+00:46:33.360 --> 00:46:39.640
+to it. So what is a solution? So solution is to look for a
+
+00:46:39.640 --> 00:46:42.960
+different kind of a neural network, which will be able to
+
+00:46:42.960 --> 00:46:48.900
+consider even a new input, and it will be able to consider
+
+00:46:48.900 --> 00:46:55.540
+an output from a previous input or like output, right? The
+
+00:46:55.540 --> 00:46:57.760
+previous output that we have received from a network, it
+
+00:46:57.760 --> 00:47:01.720
+will be able to consider even that particular part. And this
+
+00:47:01.720 --> 00:47:05.320
+is where our recurrent neural network comes into a picture.
+
+00:47:05.460 --> 00:47:06.300
+So it says that the current neural network will be able to
+
+00:47:06.300 --> 00:47:06.520
+consider even that particular part. So we can say that,
+
+00:47:06.520 --> 00:47:10.880
+okay, I will try to produce an output based on the current
+
+00:47:10.880 --> 00:47:15.080
+input that you are trying to give, but I will also try to
+
+00:47:15.080 --> 00:47:19.040
+consider if there is some previous output that I can
+
+00:47:19.040 --> 00:47:22.720
+consider as an input. So it is not just going to take a X
+
+00:47:22.720 --> 00:47:28.180
+one over here. It is going to take something called as H one
+
+00:47:28.180 --> 00:47:32.240
+as well. H one as well from time T minus one, let's suppose
+
+00:47:32.240 --> 00:47:34.700
+X one, we are trying to pass at time T, which is a current
+
+00:47:34.700 --> 00:47:39.140
+time, for example. So whatever output that I have received
+
+00:47:39.140 --> 00:47:42.980
+from a previous. So whatever output that I have received,
+
+00:47:43.160 --> 00:47:45.500
+right? Whatever output that I have received from the
+
+00:47:45.500 --> 00:47:50.640
+previous one, I will try to consider even that one along a
+
+00:47:50.640 --> 00:47:55.460
+time axis, basically. So at time T I'll try to consider
+
+00:47:55.460 --> 00:47:58.220
+Timed T minus one at time. T plus one I'll try to consider
+
+00:47:58.220 --> 00:48:01.860
+time T, T plus two, T plus one. I'll try to consider T plus
+
+00:48:01.860 --> 00:48:05.700
+three, two. I'll try to see hike. So time based basically.
+
+00:48:06.640 --> 00:48:11.880
+event i'll try to give inside an input plus the current
+
+00:48:11.880 --> 00:48:15.420
+input i will try to give inside a neural network this kind
+
+00:48:15.420 --> 00:48:18.760
+of a neural network so that i will be able to understand
+
+00:48:18.760 --> 00:48:23.180
+even a previous context and i will be able to generate an
+
+00:48:23.180 --> 00:48:27.560
+output by taking new input as well making sense to all of us
+
+00:48:27.560 --> 00:48:30.800
+guys so why we are talking about a recurrent neural network
+
+00:48:30.800 --> 00:48:34.460
+and what was the issue with the vanilla neural network that
+
+00:48:34.460 --> 00:48:38.940
+we have discussed already in my previous class yes everyone
+
+00:48:38.940 --> 00:48:40.120
+yeah
+
+00:48:42.260 --> 00:48:43.500
+intuition
+
+00:48:46.120 --> 00:48:47.480
+behind it i
+
+00:49:20.350 --> 00:49:22.330
+think i'm audible right so please bring in a chat if i'm
+
+00:49:22.330 --> 00:49:25.190
+audible yes sam is saying yes so we are able to understand
+
+00:49:25.190 --> 00:49:28.550
+okay i think there is a lag in a system for the 30 second or
+
+00:49:28.550 --> 00:49:34.350
+one minute okay now so h1 don't worry i'll try to explain
+
+00:49:34.350 --> 00:49:36.330
+i'll come to the architecture this is just a beginning i'm
+
+00:49:36.330 --> 00:49:38.290
+just trying to set the context over here that why we are
+
+00:49:38.290 --> 00:49:40.930
+going to talk about the rnn kind of architecture so just a
+
+00:49:40.970 --> 00:49:44.650
+context so just to understand that rnn why why why we are
+
+00:49:44.650 --> 00:49:47.250
+going to help with rnn we have to find out some sort of a
+
+00:49:47.250 --> 00:49:49.610
+problem in a previous network that then only we can try to
+
+00:49:49.610 --> 00:49:54.970
+talk about this one right so here so deepak is saying uh was
+
+00:49:54.970 --> 00:49:57.250
+the neural network discussed in a previous class called as
+
+00:49:57.250 --> 00:50:00.870
+ann yes it's called as ann like nn you can say neural
+
+00:50:00.870 --> 00:50:03.410
+network you can say because everything is a neural network
+
+00:50:03.410 --> 00:50:06.370
+right so people have just given a name ann a vanilla one
+
+00:50:06.370 --> 00:50:09.450
+basically right so where you have just a input layer then
+
+00:50:09.450 --> 00:50:11.370
+multiple hidden layer or single hidden layer then there is
+
+00:50:11.370 --> 00:50:14.250
+output layer which can work for classification task or which
+
+00:50:14.250 --> 00:50:16.990
+may work for a regression task depends what kind of a task
+
+00:50:16.990 --> 00:50:20.210
+that you are trying to do so here the intuition was very
+
+00:50:20.210 --> 00:50:24.170
+simple that i'll try to do something by which i will be able
+
+00:50:24.170 --> 00:50:29.250
+to consider the previous output when i will try to give the
+
+00:50:29.250 --> 00:50:34.430
+next input this is where i have given h at e minus one so
+
+00:50:34.430 --> 00:50:37.350
+let's suppose i have passed maybe x one x two x three it has
+
+00:50:37.350 --> 00:50:42.650
+given me some output called as h at e minus one now at tea
+
+00:50:42.650 --> 00:50:48.830
+time at tea time right now is like a 322 PM for example so
+
+00:50:48.830 --> 00:50:53.750
+322 PM I'm trying to give some input and this is the output
+
+00:50:53.750 --> 00:50:58.690
+from 321 PM let's suppose just one minute before so what I
+
+00:50:58.690 --> 00:51:01.930
+will do is so when I'm trying to give an input I'll not just
+
+00:51:01.930 --> 00:51:05.550
+try to give a new input over here means I'll not just try to
+
+00:51:05.550 --> 00:51:09.310
+speak some new words as of now what I will do is I'll just
+
+00:51:09.310 --> 00:51:13.610
+try to take the old word which I have already spoken the
+
+00:51:13.610 --> 00:51:15.750
+output which I have already like a given which I have
+
+00:51:15.750 --> 00:51:20.150
+already generated I'll try to attach it with the 322 PM
+
+00:51:20.150 --> 00:51:26.810
+input and then I will ask my system to give me a new output
+
+00:51:26.810 --> 00:51:31.410
+at basically 322
+
+00:51:31.410 --> 00:51:37.090
+PM as simple as that as simple as that. So that. It will be
+
+00:51:37.090 --> 00:51:41.470
+able to understand my previous context and based on that it
+
+00:51:41.470 --> 00:51:44.930
+will be able to generate the output so my output will be
+
+00:51:44.930 --> 00:51:48.430
+much more relevant and you can try to use this kind of a
+
+00:51:48.430 --> 00:51:52.790
+system to solve a variety of a problem basically so you can
+
+00:51:52.790 --> 00:51:56.410
+try to solve this you can try to use this like a kind of a
+
+00:51:56.410 --> 00:52:01.230
+network for maybe doing a language model language modeling
+
+00:52:01.230 --> 00:52:04.850
+maybe for a sentiment analysis you can try to use this one
+
+00:52:04.850 --> 00:52:08.510
+maybe for a time series forecasting you can try to use this
+
+00:52:08.510 --> 00:52:11.830
+kind of a system maybe for a speech recognition you can try
+
+00:52:11.830 --> 00:52:14.890
+to use this kind of a system maybe for a music generation
+
+00:52:14.890 --> 00:52:18.310
+because when we try to generate a music obviously next line
+
+00:52:18.310 --> 00:52:21.630
+must be having a relevancy with the previous line or next
+
+00:52:21.630 --> 00:52:24.410
+word must be having a relevancy with the previous one right.
+
+00:52:24.490 --> 00:52:29.130
+So wherever we have a dependency between our next one and
+
+00:52:29.130 --> 00:52:33.470
+the previous one I can try to use RNN kind of a network as
+
+00:52:33.470 --> 00:52:39.390
+simple as that. Now. So inside RNN like I said so RNN is a
+
+00:52:39.390 --> 00:52:44.610
+kind of a network which works based out of the timeline so
+
+00:52:44.610 --> 00:52:49.710
+for example if I'm going to like a draw a simple vanilla RNN
+
+00:52:49.710 --> 00:52:56.120
+kind of architecture so it looks something like this so most
+
+00:52:56.120 --> 00:52:58.440
+of the places you will be able to find out this kind of a
+
+00:52:58.440 --> 00:53:01.540
+image basically so
+
+00:53:05.790 --> 00:53:06.150
+here.
+
+00:53:42.150 --> 00:53:45.130
+So this kind of a architecture you will be able to find out
+
+00:53:45.130 --> 00:53:47.850
+or else you will be able to find out even a simplified
+
+00:53:47.850 --> 00:53:51.550
+architecture as the simplified architecture says that I will
+
+00:53:51.550 --> 00:53:55.150
+be having basically a input is equal to x I will be having a
+
+00:53:55.150 --> 00:53:58.690
+context over here is equal to h and then I will be having
+
+00:53:58.690 --> 00:54:02.530
+basically output and then we have a weight over here and
+
+00:54:02.530 --> 00:54:06.430
+then this entire things will be looping in itself basically.
+
+00:54:06.870 --> 00:54:09.910
+So we are trying to create a loop so this this kind of a if
+
+00:54:09.910 --> 00:54:11.930
+you are going to unfold it you will be able to find out this
+
+00:54:11.930 --> 00:54:15.390
+kind of a neural network architecture so where it is. When
+
+00:54:15.390 --> 00:54:18.450
+it is trying to take an input and then when it is trying to
+
+00:54:18.450 --> 00:54:20.590
+take the input so obviously it is considering the previous
+
+00:54:20.590 --> 00:54:23.690
+output as well and I'm not saying that it is going to
+
+00:54:23.690 --> 00:54:26.390
+consider the complete output. This is the reason so we are
+
+00:54:26.390 --> 00:54:29.010
+not representing this by all we are representing this by h
+
+00:54:29.010 --> 00:54:31.230
+it simply means that that we are trying to store some sort
+
+00:54:31.230 --> 00:54:34.990
+of a memory or some sort of a contextual memory like I said
+
+00:54:34.990 --> 00:54:38.250
+to say a next line to generate a next line even as a human
+
+00:54:38.250 --> 00:54:42.070
+being I don't have to remember what I said in a previous
+
+00:54:42.070 --> 00:54:45.810
+second or previous minute right if. I am able to understand
+
+00:54:45.810 --> 00:54:49.850
+the context I will be able to generate the next line and
+
+00:54:49.850 --> 00:54:53.630
+this is where this RNN comes into a picture and which is
+
+00:54:53.630 --> 00:54:57.950
+called as vanilla RNN right a vanilla version of the RNN
+
+00:54:57.950 --> 00:55:01.570
+comes into a picture so where internally it is going to
+
+00:55:01.570 --> 00:55:04.450
+follow this one as simple as that internally it is going to
+
+00:55:04.450 --> 00:55:06.510
+follow this one so there will be a neural network and then
+
+00:55:06.510 --> 00:55:10.630
+context it is going to pass with the next input this is what
+
+00:55:10.630 --> 00:55:13.850
+I am trying to design just in a sort format. But yeah.
+
+00:55:13.850 --> 00:55:16.490
+Internally this is how it is going to looks like there will
+
+00:55:16.490 --> 00:55:18.490
+be an input layer there will be a hidden layer there will be
+
+00:55:18.490 --> 00:55:24.230
+a output layer now so even RNN right so when we are talking
+
+00:55:24.230 --> 00:55:28.410
+about RNN kind of a network so even RNN will not be able to
+
+00:55:28.410 --> 00:55:33.470
+basically like a solve the complete problem. The reason is
+
+00:55:33.470 --> 00:55:36.850
+that RNN is going to face a problem called as vanishing
+
+00:55:36.850 --> 00:55:43.350
+gradient problem right. So if I have a long time context. Or
+
+00:55:43.350 --> 00:55:46.250
+if I am trying to talk about something for a very very long
+
+00:55:46.250 --> 00:55:53.770
+time right. My video is frozen okay just a minute just a
+
+00:55:53.770 --> 00:56:00.330
+minute I think my battery is off so let me use my second
+
+00:56:00.330 --> 00:56:01.930
+camera just
+
+00:56:33.710 --> 00:56:39.430
+a minute guys I think my battery is over for DSLR yeah
+
+00:57:07.720 --> 00:57:10.120
+so I believe I am visible to all of you.
+
+00:57:16.520 --> 00:57:17.400
+Yeah. Yeah.
+
+00:57:20.540 --> 00:57:26.440
+So here basically like like I said so this is the RNN right
+
+00:57:26.440 --> 00:57:28.920
+so RNN is going to consider the previous one but again there
+
+00:57:28.920 --> 00:57:31.840
+will be a problem with the RNN itself. The reason is that we
+
+00:57:31.840 --> 00:57:35.200
+are not trying to consider a very long term memory so here
+
+00:57:35.200 --> 00:57:37.480
+we are trying to consider a very very short term memory
+
+00:57:37.480 --> 00:57:41.640
+means we are just trying to consider maybe HT-1 we are not
+
+00:57:41.640 --> 00:57:45.180
+trying to consider a very long term context and that is
+
+00:57:45.180 --> 00:57:47.800
+something called as vanishing gradient. Gradient problem
+
+00:57:47.800 --> 00:57:51.420
+vanishing gradient problem says that that gradient is going
+
+00:57:51.420 --> 00:57:56.660
+to shrink as it is going to propagate means it will not be
+
+00:57:56.660 --> 00:58:00.840
+able to retain much from a context from the previous five
+
+00:58:00.840 --> 00:58:04.100
+minute it will not be able to retain much to generate the
+
+00:58:04.100 --> 00:58:07.980
+next one simply means that it will be having a very very
+
+00:58:07.980 --> 00:58:12.180
+poor long term memory it will not be able to understand the
+
+00:58:12.180 --> 00:58:15.040
+context for a two line three line five line or ten line
+
+00:58:15.040 --> 00:58:17.920
+maybe for a couple of words. It will be able to remember the
+
+00:58:17.920 --> 00:58:22.460
+concept right now the another problem is there is something
+
+00:58:22.460 --> 00:58:25.920
+called as exploding gradient problem which is going to
+
+00:58:25.920 --> 00:58:30.060
+eventually make your entire training set up unstable and
+
+00:58:30.060 --> 00:58:33.880
+yeah short term memory so it will not be able to maintain a
+
+00:58:33.880 --> 00:58:38.080
+memory for a very very long term now keeping that in a mind
+
+00:58:38.080 --> 00:58:42.180
+inside RNN. So people have introduced a new kind of a
+
+00:58:42.180 --> 00:58:47.900
+variant basically and that new variant is called as. LSTM
+
+00:58:47.900 --> 00:58:52.080
+long short term memory so I'll be talking more and more
+
+00:58:52.080 --> 00:58:54.960
+about LSTM architecture and then eventually I'll be talking
+
+00:58:54.960 --> 00:58:58.560
+about a GRU architecture and LSTM architecture is something
+
+00:58:58.980 --> 00:59:02.000
+which people are going to ask you in an interview directly
+
+00:59:02.000 --> 00:59:05.600
+they're going to ask you and it's bit complex but believe me
+
+00:59:05.600 --> 00:59:09.360
+very much logical right very much logical so let's try to
+
+00:59:09.360 --> 00:59:12.260
+understand LSTM architecture let's try to understand that
+
+00:59:12.260 --> 00:59:15.440
+how it is going to solve the problem of a vanishing
+
+00:59:15.440 --> 00:59:19.000
+gradient. How it is going to store a memory or the context
+
+00:59:19.000 --> 00:59:23.160
+for a very very long time so inside LSTM architecture
+
+00:59:23.160 --> 00:59:25.840
+majorly you will be able to find out a three different
+
+00:59:25.840 --> 00:59:28.880
+different kind of a gates now these three gates are nothing
+
+00:59:28.880 --> 00:59:32.420
+but a neural network simple right I'll give you the
+
+00:59:32.420 --> 00:59:35.440
+intuition don't worry I'll give you the complete intuition A
+
+00:59:35.440 --> 00:59:39.820
+to Z for your understanding purposes first of all let me
+
+00:59:39.820 --> 00:59:42.800
+draw the architecture of LSTM it's an amazing architecture
+
+00:59:42.800 --> 00:59:47.460
+that people have like a designed. So let's suppose there is
+
+00:59:47.460 --> 00:59:50.360
+input from the previous one.
+
+01:00:05.320 --> 01:00:10.380
+So let's suppose there is a H t minus one E minus one and
+
+01:00:10.380 --> 01:00:15.860
+then we are trying to give a new input let's suppose X t at
+
+01:00:15.860 --> 01:00:18.840
+time t we are trying to give a new input and then we have
+
+01:00:18.840 --> 01:00:22.880
+basically output from the previous one. What will happen now
+
+01:00:22.880 --> 01:00:27.080
+so basically it is going to go through a three different
+
+01:00:27.080 --> 01:00:30.200
+different kind of our gates. Now what kind of a gate it will
+
+01:00:30.200 --> 01:00:33.800
+go through. let's try to understand that part the very first
+
+01:00:33.800 --> 01:00:36.840
+part you will be able to find out inside this one is called
+
+01:00:36.840 --> 01:00:40.620
+as a forget gate so it will go through basically and again
+
+01:00:40.620 --> 01:00:43.900
+like i said most of you will not be able to understand in a
+
+01:00:43.900 --> 01:00:48.160
+first phase but don't worry i'm going to make sure that at
+
+01:00:48.160 --> 01:00:50.460
+the end of the class all of you are going to understand it
+
+01:00:50.460 --> 01:00:54.400
+so it will go through a very first gate called as basically
+
+01:00:54.400 --> 01:00:59.160
+forget gate for time t and then it is going to do a
+
+01:00:59.160 --> 01:01:03.740
+multiplication with a context or a memory unit which is at t
+
+01:01:03.740 --> 01:01:10.200
+minus 1 now the another gate which you will be able to find
+
+01:01:10.200 --> 01:01:14.280
+out inside this particular network is called as input gate
+
+01:01:14.280 --> 01:01:19.780
+so let's see how this input gate looks like so there will be
+
+01:01:19.780 --> 01:01:23.560
+again a sigma over here so
+
+01:01:26.140 --> 01:01:28.420
+i of t tan
+
+01:01:35.430 --> 01:01:36.510
+h and
+
+01:01:44.730 --> 01:01:53.190
+then there will be a addition operation over here okay c of
+
+01:01:53.190 --> 01:01:57.910
+t and then there will be the output gate so there is a input
+
+01:01:57.910 --> 01:02:00.490
+gate and then there is a forget gate and there is a output
+
+01:02:00.490 --> 01:02:04.410
+gate so there are three gates you all will be able to find
+
+01:02:04.410 --> 01:02:09.540
+out inside this neural network sigma o
+
+01:02:13.640 --> 01:02:17.620
+t multiply tan
+
+01:02:28.080 --> 01:02:36.620
+h this will be connected to this okay so diagram wise it's
+
+01:02:36.620 --> 01:02:40.440
+not that great but yeah you all will be able to understand
+
+01:02:40.440 --> 01:02:46.840
+anyhow everything h of t we can write over here and then
+
+01:02:46.840 --> 01:02:52.880
+this is nothing but okay so there are basically three gates
+
+01:02:52.880 --> 01:02:55.080
+that people have designed over here researchers have
+
+01:02:55.080 --> 01:02:58.820
+designed over here and they said that that okay i have to
+
+01:02:58.820 --> 01:03:02.500
+store a very very long term context obviously i will be able
+
+01:03:02.500 --> 01:03:06.880
+to store a long term context if i can try to modify the
+
+01:03:06.880 --> 01:03:12.320
+entire neural network in some way where it will be able to
+
+01:03:12.320 --> 01:03:16.780
+take the previous output a previous context plus it will be
+
+01:03:16.780 --> 01:03:20.420
+able to build its own context plus with respect to the new
+
+01:03:20.420 --> 01:03:23.960
+input it will be able to modify the context the same old
+
+01:03:23.960 --> 01:03:27.320
+context where it is having some sort of a data it will be
+
+01:03:27.320 --> 01:03:30.680
+able to modify itself then maybe i will be able to add
+
+01:03:30.680 --> 01:03:33.000
+another input able to solve a problem of a vanishing
+
+01:03:33.000 --> 01:03:36.360
+gradient i will be able to solve a problem of retaining a
+
+01:03:36.360 --> 01:03:41.200
+data inside a memory for a very very long time like for
+
+01:03:41.200 --> 01:03:43.460
+example if you are going to chat with chat gpt so they are
+
+01:03:43.460 --> 01:03:46.140
+using a memory unit over there even inside the uri they are
+
+01:03:46.140 --> 01:03:48.860
+using the memory unit over there right so where we try to
+
+01:03:48.860 --> 01:03:52.440
+retain the context from the previous like a conversation so
+
+01:03:52.440 --> 01:03:55.500
+that we will be able to understand a people in a better way
+
+01:03:55.500 --> 01:03:58.920
+and if we are able to understand a people in a better way
+
+01:03:58.920 --> 01:04:01.900
+obviously we are going to give you answer in a better way
+
+01:04:01.900 --> 01:04:06.280
+now what is gate by the way right so if i'm talking about
+
+01:04:06.280 --> 01:04:09.760
+this very first gate if i'm talking about a very first gate
+
+01:04:09.760 --> 01:04:12.760
+which i'm calling as a forget gate so this gate name is
+
+01:04:12.760 --> 01:04:13.100
+basically
+
+01:04:15.930 --> 01:04:17.910
+forget gate forget
+
+01:04:23.260 --> 01:04:31.920
+gate now this is basically called as input gate now this is
+
+01:04:31.920 --> 01:04:35.540
+called as this c which i have written over here it's called
+
+01:04:35.540 --> 01:04:46.740
+as candidate memory and this is called as output output this
+
+01:04:48.120 --> 01:04:51.860
+is called as output gate now what this gate is by the way
+
+01:04:51.860 --> 01:04:54.720
+and many of us generally gets confused with respect to these
+
+01:04:54.720 --> 01:04:58.560
+gates now let's talk about a very first gate guys which is
+
+01:04:58.560 --> 01:05:02.780
+called as basically a forget gate now what this forget gate
+
+01:05:02.780 --> 01:05:06.080
+is going to do yeah so what this forget gate is going to do
+
+01:05:06.080 --> 01:05:09.280
+what kind of an input it is going to consider and then what
+
+01:05:09.280 --> 01:05:10.240
+kind of a input it is going to consider and then what output
+
+01:05:10.240 --> 01:05:13.640
+it is going to give it to you so whatever gate which i have
+
+01:05:13.640 --> 01:05:17.460
+drawn inside this entire diagram three gates in general all
+
+01:05:17.460 --> 01:05:21.760
+these gates are representing a neural network in itself for
+
+01:05:21.760 --> 01:05:25.340
+example a very first gate if i'll be talking about over here
+
+01:05:25.340 --> 01:05:30.420
+so here you will be able to find out that this entire system
+
+01:05:30.420 --> 01:05:36.180
+this entire system this entire gate is not this one so only
+
+01:05:36.180 --> 01:05:39.200
+this part so this entire part is trying to represent a
+
+01:05:39.200 --> 01:05:39.700
+neural network so this entire part is trying to represent a
+
+01:05:39.700 --> 01:05:43.560
+neural network which is going to take a input from the
+
+01:05:43.560 --> 01:05:46.900
+previous context from the new one it is going to give a
+
+01:05:46.900 --> 01:05:50.500
+input over here there will be a hidden layer there will be
+
+01:05:50.500 --> 01:05:54.140
+an activation function and then it is going to give me the
+
+01:05:54.140 --> 01:05:58.680
+output simple now if i'll talk about this middle gate right
+
+01:05:58.680 --> 01:06:02.760
+so which is basically a input gate and the candidate memory
+
+01:06:02.760 --> 01:06:06.600
+so again this input gate if i'll talk about so this is
+
+01:06:06.600 --> 01:06:09.340
+nothing but a neural network which will be able to consider
+
+01:06:09.340 --> 01:06:12.420
+a neural network current data now if i'll talk about a
+
+01:06:12.420 --> 01:06:16.280
+output gate over here so this output gate is again a neural
+
+01:06:16.280 --> 01:06:20.560
+network that we have over here for example so if i'll talk
+
+01:06:20.560 --> 01:06:23.600
+about that's the reason so inside a box i have used this
+
+01:06:23.600 --> 01:06:27.080
+symbol so wherever we have this particular symbol it simply
+
+01:06:27.080 --> 01:06:30.180
+means that that we are talking about a neural network in
+
+01:06:30.180 --> 01:06:32.860
+place so maybe you can try to remove this particular symbol
+
+01:06:32.860 --> 01:06:37.340
+and then you can try to maybe attach something like this so
+
+01:06:37.340 --> 01:06:40.540
+let's work with multiple layer of perceptron where there can
+
+01:06:40.540 --> 01:06:43.140
+be a hidden layers there can be anything anything that i
+
+01:06:43.140 --> 01:06:46.240
+want right so you can try to replace it you can just try to
+
+01:06:46.240 --> 01:06:48.860
+replace it with a particular neural network which is taking
+
+01:06:48.860 --> 01:06:51.560
+some sort of an input and then there is a hidden layer in
+
+01:06:51.560 --> 01:06:53.860
+between where it is trying to apply some sort of a non
+
+01:06:53.860 --> 01:06:59.200
+-initiation and then it is trying to do a forward pass and
+
+01:06:59.200 --> 01:07:03.280
+then it will do a backward pass for learning something same
+
+01:07:03.280 --> 01:07:06.820
+will go over here in this place same will go over here in
+
+01:07:06.820 --> 01:07:11.700
+this particular places now so if we have a neural network in
+
+01:07:11.700 --> 01:07:15.740
+place over here and obviously like a the entire data will go
+
+01:07:15.740 --> 01:07:18.880
+inside this particular neural network with respect to some
+
+01:07:18.880 --> 01:07:23.560
+sort of a weights and the biases so here if i'll talk about
+
+01:07:23.560 --> 01:07:27.420
+this for gate gate so what is the output for gate gate is
+
+01:07:27.420 --> 01:07:30.840
+going to give so obviously we have this input and we have
+
+01:07:30.840 --> 01:07:34.200
+this input now let's suppose if i have a neural network we
+
+01:07:34.200 --> 01:07:40.140
+have basically h e minus one and we have basically x of t
+
+01:07:40.140 --> 01:07:45.080
+and if i am sending inside this activation function let's
+
+01:07:45.080 --> 01:07:47.560
+suppose if i'm sending inside this activation function so
+
+01:07:47.560 --> 01:07:50.080
+what will be the output which will go over here so obviously
+
+01:07:50.080 --> 01:07:55.080
+wait with respect to h and wait with respect to x so wait
+
+01:07:55.080 --> 01:08:00.120
+for h and basically wait for x right we are going to write
+
+01:08:00.120 --> 01:08:05.380
+down maybe in this way that h e plus one into wait for h
+
+01:08:05.380 --> 01:08:12.660
+plus x t into for x can i say that this will go inside this
+
+01:08:12.660 --> 01:08:14.880
+activation function doesn't matter what kind of activation
+
+01:08:14.880 --> 01:08:18.040
+function we are going to consider yeah maybe a relu function
+
+01:08:18.040 --> 01:08:21.360
+maybe a leaky value function maybe a swiss function we can
+
+01:08:21.360 --> 01:08:24.020
+try to use over here maybe a sigmoid function we can try to
+
+01:08:24.020 --> 01:08:27.840
+use over here so can i say that this is the data or this is
+
+01:08:27.840 --> 01:08:30.520
+the input which will go inside this one which will come over
+
+01:08:30.520 --> 01:08:40.800
+here yes everyone agree yeah agree everyone yes so if i'll
+
+01:08:40.800 --> 01:08:44.680
+talk about a forget gate a value of ft so value of ft is
+
+01:08:44.680 --> 01:08:48.240
+nothing but so activation function inside that this is the
+
+01:08:48.240 --> 01:08:50.960
+data which will go so this is technically going to be the
+
+01:08:50.960 --> 01:08:54.920
+value as we all know that we try to add some sort of a
+
+01:08:54.920 --> 01:08:57.820
+biases right we try to add some sort of a biases so we can
+
+01:08:57.820 --> 01:09:00.480
+try to add a bias over here that's completely fine if
+
+01:09:00.480 --> 01:09:04.440
+required but yeah so we are going to add the biases so now
+
+01:09:04.440 --> 01:09:07.780
+this ft the forget gate that we are talking about so forget
+
+01:09:07.780 --> 01:09:12.520
+gate will be able to get this particular output so which is
+
+01:09:12.520 --> 01:09:15.640
+nothing but uh something it is trying to like take from a
+
+01:09:15.640 --> 01:09:18.460
+previous like output that we have received and something
+
+01:09:18.460 --> 01:09:22.680
+from the current input it's trying to receive over here how
+
+01:09:22.680 --> 01:09:28.700
+we can take as an input i think this one and this one is
+
+01:09:28.700 --> 01:09:33.080
+connected to this one yes this connected to the network this
+
+01:09:33.080 --> 01:09:34.640
+connector this is the neural network right this is the
+
+01:09:34.640 --> 01:09:36.240
+neural network i'm talking about that's the reason so i said
+
+01:09:36.240 --> 01:09:38.640
+that if you have a confusion and many people get confused
+
+01:09:38.640 --> 01:09:41.420
+just by looking into these gates so it's nothing but it's
+
+01:09:41.440 --> 01:09:43.280
+It's a neural network which I'm talking about. A simple
+
+01:09:43.280 --> 01:09:45.540
+plain neural network which we have already discussed in last
+
+01:09:45.540 --> 01:09:49.000
+class and maybe you can try to refer to this one, right? You
+
+01:09:49.000 --> 01:09:51.400
+can try to refer to this one or maybe here I have drawn,
+
+01:09:51.500 --> 01:09:55.400
+right? Here I have drawn once again. So here, this is going
+
+01:09:55.400 --> 01:09:58.520
+to give you basically Ft. This is going to give you Ft. This
+
+01:09:58.520 --> 01:10:00.800
+neural network is going to give you Ft. I'm trying to say
+
+01:10:00.800 --> 01:10:04.360
+that as a forget gate. I've just named that as a forget gate
+
+01:10:04.360 --> 01:10:08.600
+over here. Now, so this forget gate is going to decide that
+
+01:10:08.600 --> 01:10:13.480
+what to forget, right? So this Ft, so what this Ft does
+
+01:10:13.480 --> 01:10:17.020
+actually, so the work we are trying to design this Ft or we
+
+01:10:17.020 --> 01:10:20.600
+are trying to train this forget gate in such a way that it
+
+01:10:20.600 --> 01:10:28.000
+will try to decide, it will try to decide that what to
+
+01:10:28.000 --> 01:10:33.700
+forget from the previous
+
+01:10:38.730 --> 01:10:42.850
+cell. So this is what this forget gate is going to do by the
+
+01:10:42.850 --> 01:10:45.650
+way. So it is going to decide that what we are supposed to
+
+01:10:45.650 --> 01:10:48.990
+forget. Because, it's not like we have to retain all the
+
+01:10:48.990 --> 01:10:52.650
+memory. It's not like whatever I have started class with at
+
+01:10:52.650 --> 01:10:56.090
+2.30 p.m., right? So I have to remember all of those things
+
+01:10:56.090 --> 01:10:59.270
+to deliver this particular part of the lecture. I'm not
+
+01:10:59.270 --> 01:11:01.830
+supposed to remember all those things, right? So I'm
+
+01:11:01.830 --> 01:11:04.330
+delivering the lecture and obviously I'm not able to retain
+
+01:11:04.330 --> 01:11:07.650
+what I said one hour back, right? Maybe it's not required,
+
+01:11:07.730 --> 01:11:10.070
+not even required. So this is where this forget gate
+
+01:11:10.070 --> 01:11:12.910
+training happens. So we are going to train our forget gate
+
+01:11:12.910 --> 01:11:16.210
+for a purpose so that it is going to decide that what to
+
+01:11:16.210 --> 01:11:20.550
+forget from the previous cell. So whatever data input and
+
+01:11:20.550 --> 01:11:22.710
+with respect to the current one, that's the reason we are
+
+01:11:22.710 --> 01:11:25.590
+considering both the input over here. Is it making sense to
+
+01:11:25.590 --> 01:11:31.170
+all of us, guys? Yes. Yes. Is it making sense?
+
+01:11:33.940 --> 01:11:38.120
+Purna is asking what is HTXF? I think, Purna, you have not
+
+01:11:38.120 --> 01:11:40.860
+joined from the beginning. I'll recommend you to join a
+
+01:11:40.860 --> 01:11:43.060
+class from the beginning so that all of you will be able to
+
+01:11:43.060 --> 01:11:46.160
+understand. Otherwise, I'll just have to repeat all the
+
+01:11:46.160 --> 01:11:49.340
+terms once again. So this is nothing but a previous one. And
+
+01:11:49.340 --> 01:11:51.680
+this is... This is the current input that I'm providing. I'm
+
+01:11:51.680 --> 01:11:55.460
+taking that one. Yeah. Okay. Making sense. So forget gate.
+
+01:11:55.540 --> 01:11:59.040
+Now, we all know that what forget gate will try to give as
+
+01:11:59.040 --> 01:12:02.180
+an output in terms of formula as well. Plus, we know that
+
+01:12:02.180 --> 01:12:05.600
+for what purposes we are trying to train the forget gate. It
+
+01:12:05.600 --> 01:12:08.420
+will help me out to forget all the previous one. And this is
+
+01:12:08.420 --> 01:12:10.800
+the formula, basically. This is the formula. It's not a
+
+01:12:10.800 --> 01:12:13.320
+formula. We all understand the neural network. So there is
+
+01:12:13.320 --> 01:12:16.300
+no need to remember. So in many places, you will be able to
+
+01:12:16.300 --> 01:12:21.020
+see this kind of equation that forget gate. At a time t is
+
+01:12:21.020 --> 01:12:24.420
+nothing but this activation function and inside that. So
+
+01:12:24.420 --> 01:12:32.680
+there will be a wait at a time t into like a xt plus h t
+
+01:12:32.680 --> 01:12:37.460
+minus one into wait for h. Let's suppose let's name it as a
+
+01:12:37.460 --> 01:12:43.750
+bit for f and bias. Basically, many places you will be able
+
+01:12:43.750 --> 01:12:46.070
+to see that equation. Now, this is not like something that
+
+01:12:46.070 --> 01:12:48.710
+you should remember all the time because it's very simple to
+
+01:12:48.710 --> 01:12:52.530
+like a retain. So here there is a neural network. So fine.
+
+01:12:52.650 --> 01:12:55.210
+There is a one input. There is another input. If there is an
+
+01:12:55.210 --> 01:12:57.790
+input, obviously there will be a wait, right? Because we are
+
+01:12:57.790 --> 01:13:00.890
+supposed to train a neural network. So here we are
+
+01:13:00.890 --> 01:13:03.090
+considering the wait and then finally eventually you will be
+
+01:13:03.090 --> 01:13:06.490
+able to get the outcome. Will there be any biases here? So
+
+01:13:06.490 --> 01:13:08.930
+yeah, I have added the bias, right? I have added the bias.
+
+01:13:09.090 --> 01:13:11.510
+So if there is a hidden layer, you can try to add the bias
+
+01:13:11.510 --> 01:13:13.890
+or maybe you can try to keep bias is equal to zero. Your
+
+01:13:13.890 --> 01:13:16.590
+wish. We can try to do the experimentation. So obviously
+
+01:13:16.590 --> 01:13:19.230
+there is a bias. You can try to add. It's optional, right?
+
+01:13:19.250 --> 01:13:20.750
+So you can add it. It's again hyper parameter. So it's
+
+01:13:20.750 --> 01:13:23.710
+optional in many places or almost in every equation. So
+
+01:13:23.710 --> 01:13:26.870
+people just try to add a biases by default. But yeah, the
+
+01:13:26.870 --> 01:13:32.410
+value of biases could be zero as well. Depends now. So this
+
+01:13:32.410 --> 01:13:37.350
+is basically a forget gate. Now this forget gate output is
+
+01:13:37.350 --> 01:13:42.030
+getting multiplied, right? Getting multiplied with C e minus
+
+01:13:42.030 --> 01:13:47.850
+one. Now, what is this basically like a C e minus one by the
+
+01:13:47.850 --> 01:13:50.910
+way, right? What is the meaning of the C T minus one? Why we
+
+01:13:50.910 --> 01:13:53.970
+are using the C time T minus one where the C T minus one is
+
+01:13:53.970 --> 01:13:57.210
+coming into a picture will try to understand that part. And
+
+01:13:57.210 --> 01:13:59.890
+then why we are trying to do a multiplication. But once we
+
+01:13:59.890 --> 01:14:03.010
+will be able to understand three layers because everyone is
+
+01:14:03.010 --> 01:14:05.790
+contributing somewhere, right? Somehow everyone is trying to
+
+01:14:05.790 --> 01:14:10.190
+contribute now. So let's talk about input gate over here,
+
+01:14:10.230 --> 01:14:13.990
+right? Let's talk about basically a input gate. Now, what is
+
+01:14:13.990 --> 01:14:17.130
+this input gate? So input gate is trying to consider the
+
+01:14:17.130 --> 01:14:20.270
+input by the way. So again, as you can see, there is a Sigma
+
+01:14:20.270 --> 01:14:22.950
+that we have used. It simply means that that we have a
+
+01:14:22.950 --> 01:14:25.630
+neural network over here, right? We have a neural network
+
+01:14:25.630 --> 01:14:28.710
+over here, which will take some input and then it is going
+
+01:14:28.710 --> 01:14:32.610
+to give me some sort of a output. Okay, fine. So what is the
+
+01:14:32.610 --> 01:14:36.010
+input it is going to take? So it is going to take the same
+
+01:14:36.010 --> 01:14:39.930
+line of an input means HT minus one and XT. It is going to
+
+01:14:39.930 --> 01:14:42.330
+take as an input and obviously it will be having its own
+
+01:14:42.330 --> 01:14:45.790
+weights, right? It will be having its own weights over here.
+
+01:14:46.330 --> 01:14:49.090
+So now if I'm going to. I'm going to talk about the input
+
+01:14:49.090 --> 01:14:53.830
+gate. So maybe I can try to write in this way that input
+
+01:14:53.830 --> 01:15:01.130
+gate. Is going to take same input HT minus one and then X at
+
+01:15:01.130 --> 01:15:08.270
+T input at T. It is going to take and then wait. For H for
+
+01:15:08.270 --> 01:15:14.910
+input gate. Wait. For X for input gate and then it is going
+
+01:15:14.910 --> 01:15:18.770
+to give me the output, right? I let's suppose. I going to be
+
+01:15:18.770 --> 01:15:24.650
+so I is going to be activation function and then. H T minus
+
+01:15:24.650 --> 01:15:36.670
+one into W H I plus. X T into W X I plus biases. Obviously,
+
+01:15:36.670 --> 01:15:39.690
+if you would like to add biases for the input gate, so maybe
+
+01:15:39.690 --> 01:15:43.110
+we can try to attach a biases over here. So now this is
+
+01:15:43.110 --> 01:15:47.350
+something that you all will be able to get over here. This
+
+01:15:47.350 --> 01:15:51.050
+IT. Right? So data will go over here in this way and then
+
+01:15:51.050 --> 01:15:54.130
+this is something that you will be able to receive IT. Now
+
+01:15:54.130 --> 01:15:57.190
+as you can see this particular line. So this line is getting
+
+01:15:57.190 --> 01:16:00.250
+connected. This line is getting connected and then it's
+
+01:16:00.250 --> 01:16:02.870
+getting multiplied with something, right? This line is
+
+01:16:02.870 --> 01:16:06.190
+getting connected and getting multiplied with something. So
+
+01:16:06.190 --> 01:16:09.190
+now what is that something and how this multiplication is
+
+01:16:09.190 --> 01:16:12.010
+happening? Let's try to understand and let's see the flow as
+
+01:16:12.010 --> 01:16:17.170
+well, right? So here. Along with or parallel to input gate,
+
+01:16:17.370 --> 01:16:21.010
+right? Parallel to input gate. So we have one more things
+
+01:16:21.010 --> 01:16:23.810
+called as candidate memory. So we are trying to build a
+
+01:16:23.810 --> 01:16:26.590
+candidate memory over here as per the network architecture.
+
+01:16:26.870 --> 01:16:30.310
+So if you will follow along with this line, if you will
+
+01:16:30.310 --> 01:16:34.270
+follow along with this line. So same H T minus one and X T
+
+01:16:34.270 --> 01:16:37.570
+minus one is trying to get into even inside the hyper
+
+01:16:37.570 --> 01:16:42.010
+tangent function over here. Hyper tangent function in this
+
+01:16:42.010 --> 01:16:46.310
+particular place. Now, what will be the output of this? C? C
+
+01:16:46.310 --> 01:16:50.130
+T minus one in this particular place. Let's try to write it
+
+01:16:50.130 --> 01:16:55.690
+down. So obviously C T if I have to write C T Delta, which
+
+01:16:55.690 --> 01:16:58.410
+is nothing but a candidate memory for me. So it's nothing
+
+01:16:58.410 --> 01:17:02.850
+but a hyper tangent and H and then I can try to maybe like a
+
+01:17:02.850 --> 01:17:11.340
+right over here. So X and then W for C let's suppose and
+
+01:17:11.340 --> 01:17:18.020
+then H T minus one X T H T minus one into W. Or candidate
+
+01:17:18.020 --> 01:17:22.600
+memory plus biases for the candidate memory. So this is
+
+01:17:22.600 --> 01:17:25.560
+something that we are trying to pass inside this hyper
+
+01:17:25.560 --> 01:17:30.180
+tangent, right? Hyper tangent. Now, what this is going to
+
+01:17:30.180 --> 01:17:32.620
+achieve? We all know that what forget it is going to
+
+01:17:32.620 --> 01:17:35.780
+achieve, right? So what this is going to achieve? So this
+
+01:17:35.780 --> 01:17:39.000
+gate this input gate and a candidate memory. So this is
+
+01:17:39.000 --> 01:17:44.360
+going to decide basically it is going to decide that what
+
+01:17:44.360 --> 01:17:49.800
+new information? What new information
+
+01:17:52.390 --> 01:18:00.750
+I have to store. So this is that is also the responsibility
+
+01:18:00.750 --> 01:18:04.150
+of the middle gate. Basically, that's the reason. So it is
+
+01:18:04.150 --> 01:18:07.730
+trying to take a tangent of the input as well as there is a
+
+01:18:07.730 --> 01:18:10.710
+neural network which is contributing to this one and is
+
+01:18:10.710 --> 01:18:13.870
+going to multiply both the values. It is going to multiply
+
+01:18:13.870 --> 01:18:17.550
+both the values so that it is not going to store everything.
+
+01:18:17.550 --> 01:18:21.630
+Basically, right, it is not going to store everything over
+
+01:18:21.630 --> 01:18:25.630
+here, but it is just going to store the weightage of it or
+
+01:18:25.630 --> 01:18:28.410
+context of it basically. So it is going to store a fraction
+
+01:18:28.410 --> 01:18:30.970
+of it. It is not going to store like one. We all know that
+
+01:18:30.970 --> 01:18:33.350
+that hyper tangent function always fluctuates between minus
+
+01:18:33.350 --> 01:18:37.210
+one to one. So it is going to store some data from this one.
+
+01:18:37.270 --> 01:18:39.150
+So that's the reason we are trying to multiply tanh with
+
+01:18:39.150 --> 01:18:43.350
+this one this multiplication. Now we know that that what
+
+01:18:43.350 --> 01:18:47.030
+this entire middle gate is trying to perform which is
+
+01:18:47.030 --> 01:18:49.970
+nothing but a combination of a Inti input gate and a
+
+01:18:49.970 --> 01:18:53.490
+candidate memory to new memory. It is going to add over
+
+01:18:53.490 --> 01:18:57.890
+here. It will go over here. Now there is a third gate. So we
+
+01:18:57.890 --> 01:19:01.730
+are trying to pass some data right and we have already like
+
+01:19:01.730 --> 01:19:05.050
+trying to pass to data. So one is a current data and one is
+
+01:19:05.050 --> 01:19:08.470
+a past data that we are trying to pass over here. Now if you
+
+01:19:08.470 --> 01:19:11.050
+are trying to pass some data, obviously I will be looking
+
+01:19:11.050 --> 01:19:15.130
+for a output right obviously I'll be looking for the output
+
+01:19:15.130 --> 01:19:18.830
+over here. So that's the reason we have a output gate over
+
+01:19:18.830 --> 01:19:21.970
+here. So there is a neural network which will try to give
+
+01:19:21.970 --> 01:19:25.270
+you the output again very simple. This is the neural network
+
+01:19:25.270 --> 01:19:31.990
+right. So here if I'll say output gate. So this is my neural
+
+01:19:31.990 --> 01:19:35.850
+network. So where again I'm trying to pass HT minus one and
+
+01:19:35.850 --> 01:19:41.530
+we are trying to pass basically XT. And then I'm going to
+
+01:19:41.530 --> 01:19:44.870
+get basically a OT. So now my OT is nothing but my
+
+01:19:44.870 --> 01:19:50.490
+activation. And then there will be a weight for output H you
+
+01:19:50.490 --> 01:19:56.530
+can say and weight for X output something like that. So here
+
+01:19:56.530 --> 01:20:06.970
+HT minus one into weight of H for output plus XT weight of X
+
+01:20:06.970 --> 01:20:10.130
+for output plus biases of output you can try to give. So
+
+01:20:10.130 --> 01:20:13.370
+this is basically going to give you the output. So this is
+
+01:20:13.370 --> 01:20:16.190
+going to give you this point. This point is technically
+
+01:20:16.190 --> 01:20:21.390
+going to give you the output as simple as that. Okay, so we
+
+01:20:21.390 --> 01:20:25.370
+are going to get the output fine. We are able to get the
+
+01:20:25.370 --> 01:20:28.950
+output means finally whatever like you are going to pass as
+
+01:20:28.950 --> 01:20:32.110
+a data. So for that particular data, you all will be able to
+
+01:20:32.110 --> 01:20:37.870
+see some sort of a output now here. So whatever output that
+
+01:20:37.870 --> 01:20:42.230
+we are able to receive in this particular place making sense
+
+01:20:42.230 --> 01:20:46.350
+guys till this point. So let me write what output gate is
+
+01:20:46.350 --> 01:20:51.910
+going to do. So this output is going to decide what
+
+01:20:56.130 --> 01:20:57.870
+to output
+
+01:20:59.730 --> 01:21:09.880
+as a new hidden state. Okay, so basically what is the output
+
+01:21:09.880 --> 01:21:12.660
+that we are supposed to give to the next one? HT basically
+
+01:21:12.660 --> 01:21:17.860
+hidden state right now. So what it is going to do is that it
+
+01:21:17.860 --> 01:21:23.500
+is. We are able to get forget an input and candidate memory
+
+01:21:23.500 --> 01:21:27.120
+and output. Now, let us talk about the update a memory
+
+01:21:27.120 --> 01:21:30.580
+update basically and then let us talk about the HP. So what
+
+01:21:30.580 --> 01:21:35.420
+is going to be your final HP means the final output that you
+
+01:21:35.420 --> 01:21:38.660
+are going to give as an input into the next state is nothing
+
+01:21:38.660 --> 01:21:41.880
+but as you can see that it is a combination of your output
+
+01:21:41.880 --> 01:21:46.380
+gate and multiplication with a hyper tangent and here your
+
+01:21:46.380 --> 01:21:49.860
+network flows in this direction. This direction network is
+
+01:21:49.860 --> 01:21:52.740
+going to flow if you are going to follow the architecture.
+
+01:21:53.040 --> 01:21:58.600
+So here what is going to happen is that HT is nothing but if
+
+01:21:58.600 --> 01:22:02.440
+I am looking for this HT HT is nothing but my OT right. We
+
+01:22:02.440 --> 01:22:07.320
+all know what is the OT and then a hyper tangent of this
+
+01:22:07.320 --> 01:22:10.220
+information that we are receiving. So if I am going to
+
+01:22:10.220 --> 01:22:15.620
+multiply it we will be able to get HT now what is something
+
+01:22:15.620 --> 01:22:21.640
+that will get inside this hyper tangent. So this one the C
+
+01:22:21.640 --> 01:22:25.420
+layer that we are talking about basically the C layer is
+
+01:22:25.420 --> 01:22:31.380
+going to basically work for my long short term memory. So
+
+01:22:31.380 --> 01:22:34.640
+here it is trying to build a memory from the past. So let's
+
+01:22:34.640 --> 01:22:37.580
+suppose I am able to remember maybe a couple of word right a
+
+01:22:37.580 --> 01:22:41.220
+couple of sentences I am able to remember every time we are
+
+01:22:41.220 --> 01:22:45.440
+trying to multiply it with the forget gate so that I will be
+
+01:22:45.440 --> 01:22:48.260
+able to update. So first I am trying to multiply. My
+
+01:22:48.260 --> 01:22:51.980
+previous memory with the forget gate so that I will be able
+
+01:22:51.980 --> 01:22:56.580
+to decide that okay how much we are supposed to forget and
+
+01:22:56.580 --> 01:22:59.020
+how much we are supposed to propagate for the next step.
+
+01:22:59.360 --> 01:23:03.260
+Then we are trying to do the addition operation right. Then
+
+01:23:03.260 --> 01:23:05.800
+we are trying to do the addition operation. So for example
+
+01:23:05.800 --> 01:23:07.620
+those who are not able to understand this part
+
+01:23:07.620 --> 01:23:11.360
+multiplication part. So for example from this C we are
+
+01:23:11.360 --> 01:23:16.080
+getting maybe like a 4 as a output as of now CT minus 1 is
+
+01:23:16.080 --> 01:23:21.200
+equal to 4. Now if we are going to give FT is equal to 0.1
+
+01:23:21.200 --> 01:23:25.360
+so it will become 0.4 over here just giving you a layman
+
+01:23:25.360 --> 01:23:29.760
+example 0.4 over here. So in this way we are able to reduce
+
+01:23:29.760 --> 01:23:32.980
+the effect by 10 times we are able to reduce the effect
+
+01:23:32.980 --> 01:23:35.560
+straight forward 10 times. So this is something that it is
+
+01:23:35.560 --> 01:23:39.620
+trying to perform over here and then over here we are doing
+
+01:23:39.620 --> 01:23:42.480
+the addition operation. So even from here. So if we are
+
+01:23:42.480 --> 01:23:46.560
+getting let's suppose 0.2. So 0.4 plus 0.2 is going to be 0
+
+01:23:46.560 --> 01:23:49.220
+.2. So 0.4 plus 0.2 is equal to 0.6. So we are trying to add
+
+01:23:49.220 --> 01:23:53.220
+something into the memory shell the upper part is the
+
+01:23:53.220 --> 01:23:55.840
+basically memory cell. So we are trying to add something
+
+01:23:55.840 --> 01:24:00.260
+into the memory cell and then we don't want to like a send
+
+01:24:00.260 --> 01:24:03.900
+the same linear memory. So what we can do is we can try to
+
+01:24:03.900 --> 01:24:06.880
+use a hyper tangent so that it will be able to control and
+
+01:24:06.880 --> 01:24:11.660
+it will be able to do a non linearization over here. And the
+
+01:24:11.660 --> 01:24:14.600
+next memory is going to be so memory at current situation is
+
+01:24:14.600 --> 01:24:18.400
+going to be this one. And then the output which we are going
+
+01:24:18.400 --> 01:24:21.520
+to pass as an input which is nothing but a hidden state. So
+
+01:24:21.520 --> 01:24:25.300
+now this is technically going to be a memory that we have
+
+01:24:25.300 --> 01:24:28.520
+already formed right the memory that we have already formed
+
+01:24:28.520 --> 01:24:33.240
+into the output means I am just trying to give a HT and what
+
+01:24:33.240 --> 01:24:36.820
+I am trying to say is that I am trying to combine my output
+
+01:24:36.820 --> 01:24:41.000
+which is also considering my previous one plus it is also
+
+01:24:41.000 --> 01:24:46.560
+considering the updated memory part and based on that it is
+
+01:24:46.560 --> 01:24:49.520
+considering HT minus if you will just see the factor. So
+
+01:24:49.520 --> 01:24:51.360
+what in all factor it is trying to consider the HT
+
+01:24:51.360 --> 01:24:55.480
+obviously. So HT is trying to consider HT minus one factor
+
+01:24:55.480 --> 01:24:58.740
+which is the previous hidden state. It is trying to consider
+
+01:24:58.740 --> 01:25:02.420
+the current input. It is trying to consider even a current
+
+01:25:02.420 --> 01:25:07.040
+memory update and based on that it is trying to pass a data
+
+01:25:07.040 --> 01:25:09.940
+to the next one and this is how it is trying to solve a long
+
+01:25:09.940 --> 01:25:16.320
+short term memory. It will be able to retain. Okay. It will
+
+01:25:16.320 --> 01:25:19.200
+be able to retain a long memory for like a couple of like a
+
+01:25:19.200 --> 01:25:23.320
+time stamp or you can say like a couple of period it will be
+
+01:25:23.320 --> 01:25:25.920
+able to store. This is the complete architecture of
+
+01:25:25.920 --> 01:25:30.640
+basically LSTM long short term memory. So is it making sense
+
+01:25:30.640 --> 01:25:31.500
+to all of us guys?
+
+01:25:34.840 --> 01:25:35.320
+Yes.
+
+01:25:48.220 --> 01:25:49.120
+Yep. Everyone.
+
+01:26:09.190 --> 01:26:12.250
+Okay. After that addition what happens in 10H. So after
+
+01:26:12.250 --> 01:26:17.310
+which addition? So here 10H is nothing but 10H is a
+
+01:26:17.310 --> 01:26:20.110
+filtration function over here. So 10H is not going to allow
+
+01:26:20.110 --> 01:26:22.650
+you to pass the complete data. As we know 10H always gives
+
+01:26:22.650 --> 01:26:25.310
+you an output in minus one to one, right? So it's basically
+
+01:26:25.310 --> 01:26:28.670
+working as a filter function over here. It is going to
+
+01:26:28.670 --> 01:26:31.390
+filter the output and then it is going to basically like
+
+01:26:31.390 --> 01:26:35.730
+modify it now. So obviously the system that I'm talking
+
+01:26:35.730 --> 01:26:38.310
+about, right? So system that I'm talking about, so it is
+
+01:26:38.310 --> 01:26:41.190
+going to train itself. It is going to back propagate, right?
+
+01:26:41.230 --> 01:26:44.230
+It is going to back propagate. So it will obviously try to
+
+01:26:44.230 --> 01:26:46.930
+train or it will be able to back propagate with respect to
+
+01:26:46.930 --> 01:26:50.430
+our losses, right? So here you will be able to find out that
+
+01:26:50.430 --> 01:26:55.570
+technically we are trying to train with respect to a forget
+
+01:26:55.570 --> 01:27:00.130
+gate. We will try to train, means we'll try to adjust a loss
+
+01:27:00.130 --> 01:27:03.950
+with respect to basically a input gate. So we will try to
+
+01:27:03.950 --> 01:27:07.870
+train it with respect to basically a candidate memory. We
+
+01:27:07.870 --> 01:27:11.250
+will try to train it with respect to basically a output
+
+01:27:11.250 --> 01:27:15.190
+gate. So technically we are trying to talk about a four
+
+01:27:15.190 --> 01:27:17.710
+different, different kind of a neural network over here.
+
+01:27:17.710 --> 01:27:21.250
+Which we are going to train with a different, different
+
+01:27:21.250 --> 01:27:25.330
+purposes. Simple. So purpose for the very first one is to
+
+01:27:25.330 --> 01:27:28.750
+forget something. Purpose for the second one is to consider
+
+01:27:28.750 --> 01:27:31.850
+the input. Purpose for the third one to build a candidate
+
+01:27:31.850 --> 01:27:34.910
+memory. Purpose for the fourth one is going to be give me
+
+01:27:34.910 --> 01:27:38.110
+the output. So we have like a four different, different kind
+
+01:27:38.110 --> 01:27:41.690
+of a neural network combined together and objective of this
+
+01:27:41.690 --> 01:27:43.690
+for different, different kind of neural network is
+
+01:27:43.690 --> 01:27:46.990
+completely different. So as per its objective. It will try
+
+01:27:46.990 --> 01:27:50.030
+to adjust the output. losses right so the very first one
+
+01:27:50.030 --> 01:27:53.290
+will try to adjust the losses based on how in a best
+
+01:27:53.290 --> 01:27:56.830
+possible way it is able to forget the relevant information
+
+01:27:56.830 --> 01:27:59.450
+it should not forget uh something which is very very
+
+01:27:59.450 --> 01:28:04.550
+irrelevant right i'll not like reverse of it basically so it
+
+01:28:04.550 --> 01:28:07.290
+is it is supposed to forget something which is not very much
+
+01:28:07.290 --> 01:28:09.930
+important it is not supposed to forget something which is
+
+01:28:09.930 --> 01:28:13.250
+actually important similarly input gate so it is not
+
+01:28:13.250 --> 01:28:15.630
+supposed to consider all the like input that we are trying
+
+01:28:15.630 --> 01:28:17.990
+to pass so it is supposed to consider basically only that
+
+01:28:17.990 --> 01:28:20.270
+input which is going to help me out to generate the output
+
+01:28:20.270 --> 01:28:23.630
+and build a memory same goes for the candidate same goes for
+
+01:28:23.630 --> 01:28:26.630
+the output so here we have a four different different kind
+
+01:28:26.630 --> 01:28:29.770
+of a loss adjustment and again when i talk about a loss
+
+01:28:29.770 --> 01:28:34.590
+adjustment eventually we will keep on changing a weight so
+
+01:28:34.590 --> 01:28:38.090
+weight at time t is nothing but weight at time t minus one
+
+01:28:38.090 --> 01:28:43.610
+and then basically a eta and then loss with respect to b w
+
+01:28:43.610 --> 01:28:45.350
+of x x could be f of x and so on and so on and so on and so
+
+01:28:45.350 --> 01:28:46.150
+on and so on and so on and so on and so on and so on i c and
+
+01:28:46.150 --> 01:28:50.030
+o simple so we are going to adjust a weight of each and
+
+01:28:50.030 --> 01:28:53.170
+every neural network and this is how we are going to train
+
+01:28:53.170 --> 01:28:55.890
+the neural network yep
+
+01:29:18.860 --> 01:29:23.420
+okay so i'm only saying any real life example please i'm
+
+01:29:23.420 --> 01:29:26.120
+going to train the rnn don't worry i'm going to show you how
+
+01:29:26.120 --> 01:29:29.560
+training happens with respect to rnn lstm basically so rnn
+
+01:29:29.560 --> 01:29:32.660
+is the vanilla one so i'm going to show you that how lstm
+
+01:29:32.660 --> 01:29:35.800
+actually uh like you are going to pass the story and based
+
+01:29:35.800 --> 01:29:38.520
+on that it will be able to write a newer story so i'm going
+
+01:29:38.520 --> 01:29:42.540
+to show you a complete a training of the data plus
+
+01:29:42.540 --> 01:29:46.480
+generation of the data with a real time data or maybe you
+
+01:29:46.480 --> 01:29:48.840
+can try to pass your own story your own book your own
+
+01:29:48.840 --> 01:29:51.600
+paragraph you will be eventually able to train it and then
+
+01:29:51.600 --> 01:29:54.320
+you will be able to generate the output simple that is
+
+01:29:54.320 --> 01:29:55.840
+something which i am going to show you so don't worry about
+
+01:29:55.840 --> 01:29:58.940
+it with respect to tensorflow or pytorch fine
+
+01:30:01.090 --> 01:30:05.040
+yes ht
+
+01:30:07.880 --> 01:30:12.060
+minus 1 is a times is a time and then how we can take that
+
+01:30:12.060 --> 01:30:17.800
+as an input among so Basically this is my HT and then next
+
+01:30:17.800 --> 01:30:20.960
+time, let's suppose this is one of the cell, next time let's
+
+01:30:20.960 --> 01:30:23.440
+suppose if I am trying to train it, so this HT will become
+
+01:30:23.440 --> 01:30:28.380
+HT-1, right. Let's suppose as of now it's a 4.02 PM and
+
+01:30:28.380 --> 01:30:31.220
+let's suppose if I am trying to like train the, like I am
+
+01:30:31.220 --> 01:30:35.580
+passing a data at 4.03, so this 4.02 which is a current one,
+
+01:30:35.700 --> 01:30:41.400
+which will eventually become the previous one, yes, yeah.
+
+01:30:42.980 --> 01:30:45.860
+But yeah, in a practical implementation, the practical
+
+01:30:45.860 --> 01:30:48.240
+example which I am going to show you, you will not be able
+
+01:30:48.240 --> 01:30:50.480
+to feel all of these things. You will not be able to feel
+
+01:30:50.480 --> 01:30:53.320
+the forget gate. You will not be able to feel actually, like
+
+01:30:53.320 --> 01:30:55.220
+majority of things you will not be able to feel it because
+
+01:30:55.220 --> 01:30:57.320
+we are going to call the function, we are going to pass the
+
+01:30:57.320 --> 01:31:00.360
+parameters and then done. We are going to pass the data and
+
+01:31:00.360 --> 01:31:03.200
+we'll start the training, as simple as that. But yeah, don't
+
+01:31:03.200 --> 01:31:07.180
+worry, I'll show you a practical example as well, plus how
+
+01:31:07.180 --> 01:31:10.700
+to build a neural network. So I am going to show you. See a
+
+01:31:10.700 --> 01:31:12.300
+neural network. Neural network building is very simple. I
+
+01:31:12.300 --> 01:31:14.800
+can try to use maybe a tensorflow. I can try to use maybe a
+
+01:31:14.800 --> 01:31:17.320
+PyTorch and then I will be able to build a neural network.
+
+01:31:17.620 --> 01:31:20.940
+But in my class, I used to generally showcase my favorite
+
+01:31:20.940 --> 01:31:24.260
+demo, right? So where without using any libraries, just
+
+01:31:24.260 --> 01:31:27.980
+using a simple plain Python code, right? Just by using a
+
+01:31:27.980 --> 01:31:31.560
+simple plain Python code, I used to showcase that how you
+
+01:31:31.560 --> 01:31:34.620
+can build your own neural network. If I'm going to use a
+
+01:31:34.620 --> 01:31:38.640
+tensorflow or PyTorch or any such kind of libraries, then
+
+01:31:38.640 --> 01:31:41.640
+obviously I can just call one single function. And I will be
+
+01:31:41.640 --> 01:31:46.020
+able to build a network. But first of all, in my tomorrow's
+
+01:31:46.020 --> 01:31:48.140
+class, right? So in my tomorrow's class, what I'm going to
+
+01:31:48.140 --> 01:31:51.240
+do is I'm going to show you how to build a neural network
+
+01:31:51.240 --> 01:31:54.960
+from the very scratch. Means just by writing a simple plain
+
+01:31:54.960 --> 01:31:57.760
+Python code, nothing else. No library means literally no
+
+01:31:57.760 --> 01:32:01.000
+library, right? So without using any kind of libraries over
+
+01:32:01.000 --> 01:32:02.920
+there, we are going to create the neural network. We are
+
+01:32:02.920 --> 01:32:05.220
+going to pass the data so that whatever I have discussed in
+
+01:32:05.220 --> 01:32:07.740
+my previous class, you will be able to understand that part
+
+01:32:07.740 --> 01:32:10.100
+layer by layer that, okay, this is the input, then this is
+
+01:32:10.100 --> 01:32:12.600
+the hidden layer. This is the activation function, which is
+
+01:32:12.600 --> 01:32:14.780
+going inside it. This is the output. Then we are adjusting
+
+01:32:14.780 --> 01:32:18.500
+the loss. We are training it. So this entire cycle will be
+
+01:32:18.500 --> 01:32:21.020
+very much clear because immediately, if I'm going to use a
+
+01:32:21.020 --> 01:32:25.040
+tensorflow, it will be very much easy for me saying that,
+
+01:32:25.060 --> 01:32:28.260
+that, okay, training has started and then bingo, we are able
+
+01:32:28.260 --> 01:32:32.160
+to train the model. But what I always feel is that if you
+
+01:32:32.160 --> 01:32:34.160
+understand the base, then further, you will be able to
+
+01:32:34.160 --> 01:32:36.280
+understand anything. So that is something which I'm going to
+
+01:32:36.280 --> 01:32:40.600
+show you in my tomorrow's class. Plus. For this RNN-LSTM
+
+01:32:40.600 --> 01:32:44.420
+network, I'm going to use a library, but with respect to the
+
+01:32:44.420 --> 01:32:46.760
+data set. So I'm going to take some sort of a story data
+
+01:32:46.760 --> 01:32:49.480
+set, and we are going to train it for some certain
+
+01:32:49.480 --> 01:32:52.320
+iterations. And then we'll try to check what kind of output
+
+01:32:52.320 --> 01:32:54.300
+we are able to get, whether we are able to write our own
+
+01:32:54.300 --> 01:32:58.560
+story or not without using any LLMs in strategy PT. Fine
+
+01:32:58.560 --> 01:33:00.180
+guys, making sense to all of us,
+
+01:33:05.300 --> 01:33:09.600
+HT and HT minus one are output, not a time. No, I never said
+
+01:33:09.600 --> 01:33:13.360
+that is a timestamp, right? HT, T is a time stamp. T is
+
+01:33:13.360 --> 01:33:17.280
+basically, it's just a notion notation over here, right?
+
+01:33:17.340 --> 01:33:19.920
+That I'm getting some output. I'm getting H means hidden
+
+01:33:19.920 --> 01:33:21.860
+state, right? Hidden state output. So I'm getting some
+
+01:33:21.860 --> 01:33:25.080
+hidden state output at T minus one or at time T. So that's
+
+01:33:25.080 --> 01:33:28.480
+just a notation guys. It's not, not a timestamp by the way.
+
+01:33:42.220 --> 01:33:44.480
+Okay. Question guys. So please go ahead with the question in
+
+01:33:44.480 --> 01:33:46.180
+the chat. I'll try to answer.
+
+01:34:58.670 --> 01:35:01.110
+Okay. Now simulation
+
+01:35:05.110 --> 01:35:09.350
+for this one is not available on any platform so far. So
+
+01:35:09.350 --> 01:35:11.810
+maybe what I can do is. All right. So right now I'm going to
+
+01:35:11.810 --> 01:35:14.970
+give you explanation with the real input, right? So we have,
+
+01:35:14.990 --> 01:35:18.150
+we were able to discuss the entire gate, right? Now let's
+
+01:35:18.150 --> 01:35:20.790
+try to take our input and then let's try to see. So how
+
+01:35:20.790 --> 01:35:23.050
+calculation happens internally and how it is going to
+
+01:35:23.050 --> 01:35:26.650
+eventually like give you the final outcome one by one, one
+
+01:35:26.650 --> 01:35:28.670
+by one, one by one. Let's try to understand that particular
+
+01:35:28.670 --> 01:35:32.170
+part. So here, what I can do is, so maybe I can try to like
+
+01:35:32.170 --> 01:35:40.610
+take one example over here, right? So I can try to take.
+
+01:35:40.610 --> 01:35:46.190
+Basically LSTM. So let's suppose there is a character C I'm
+
+01:35:46.190 --> 01:35:49.750
+going to consider called as H E L P help, right? So we all
+
+01:35:49.750 --> 01:35:52.810
+know this is like a, basically a character, a combination of
+
+01:35:52.810 --> 01:35:56.970
+four character, which is called as H E L P help now here. So
+
+01:35:56.970 --> 01:36:01.890
+what we are going to do is, so maybe we can try to give H E
+
+01:36:01.890 --> 01:36:07.290
+L and then if system is able to predict the next one after
+
+01:36:07.290 --> 01:36:09.350
+learning, obviously if system is able to predict the next
+
+01:36:09.350 --> 01:36:13.930
+one. Then my work will be done. So here character wise, we
+
+01:36:13.930 --> 01:36:18.890
+have total four character. So we have basically H, we have
+
+01:36:18.890 --> 01:36:21.990
+basically E, we have basically L and we have basically P.
+
+01:36:22.130 --> 01:36:25.290
+Four character we have, let's suppose we can try to maybe
+
+01:36:25.290 --> 01:36:28.270
+like try to tokenize it. Obviously we have to create the
+
+01:36:28.270 --> 01:36:32.770
+embedding out of this entire things. So maybe I can try to
+
+01:36:32.770 --> 01:36:35.510
+like tokenize it before that I can try to give an indexes or
+
+01:36:35.510 --> 01:36:38.150
+index for H is equal to zero index for is equal to one index
+
+01:36:38.150 --> 01:36:42.290
+for I. L is equal to two and index of P is equal to three.
+
+01:36:42.830 --> 01:36:45.810
+Now what is my objective? My objective is very simple. I
+
+01:36:45.810 --> 01:36:48.270
+have to train my network in such a way that it will be able
+
+01:36:48.270 --> 01:36:52.370
+to generate the next character, right? So basically based on
+
+01:36:52.370 --> 01:36:55.450
+the input. So if I'm giving input is equal to H E L, it
+
+01:36:55.450 --> 01:36:58.610
+should generate the P that's it. This is the final thing
+
+01:36:58.610 --> 01:37:03.190
+that I have to like a train on now. So before training, we
+
+01:37:03.190 --> 01:37:07.730
+all know that we have to convert our data into its encoding
+
+01:37:07.730 --> 01:37:11.150
+format. Okay. So fine. We will be able to convert our data
+
+01:37:11.150 --> 01:37:14.830
+into an encoding format by using a multiple approaches. The
+
+01:37:14.830 --> 01:37:17.890
+simplest approach, which I can try to use over here is maybe
+
+01:37:17.890 --> 01:37:22.050
+a one hot encoding approach. So I can try to use maybe one
+
+01:37:22.050 --> 01:37:24.830
+hot encoding. I can use what to work. I can try to use TF
+
+01:37:24.830 --> 01:37:27.730
+IDF over here, all this technique we have already learned.
+
+01:37:28.190 --> 01:37:32.790
+So I will try to convert my entire data. So let's suppose I
+
+01:37:32.790 --> 01:37:36.310
+have basically H over here. I have E over here. I have L
+
+01:37:36.310 --> 01:37:39.030
+over here. I have P over here. Yeah. So let's say I have one
+
+01:37:39.030 --> 01:37:44.990
+hot encoding. So one, zero, zero, zero, then zero, one,
+
+01:37:45.170 --> 01:37:48.650
+zero, zero, I'm just going after the indexing of the one
+
+01:37:48.650 --> 01:37:53.910
+hot. So zero, zero, one, zero, and then zero, zero, zero,
+
+01:37:54.050 --> 01:37:57.690
+and then one fine guys. So we are able to convert our data
+
+01:37:57.690 --> 01:37:59.930
+into an encoded format. Agree everyone.
+
+01:38:02.400 --> 01:38:02.840
+Yes.
+
+01:38:09.580 --> 01:38:10.020
+Yep.
+
+01:38:13.520 --> 01:38:16.920
+Yeah. So till this point, it's clear. We are trying to
+
+01:38:16.920 --> 01:38:19.520
+prepare our data for the training purposes. Okay. So
+
+01:38:19.520 --> 01:38:21.100
+basically this is something that we are trying to perform.
+
+01:38:21.260 --> 01:38:23.840
+So obviously we have to convert our data into a encoding
+
+01:38:23.840 --> 01:38:27.880
+format. So I have done that H E L P L beta. And even we are
+
+01:38:27.880 --> 01:38:30.200
+aware about the problem statement that we are giving to our
+
+01:38:30.200 --> 01:38:33.180
+neural network. Right? So we are saying that, okay, fine. So
+
+01:38:33.180 --> 01:38:35.480
+our neural network should be able to predict the next one.
+
+01:38:36.040 --> 01:38:39.640
+So fine. Let's see how it will be able to predict based on
+
+01:38:39.640 --> 01:38:42.540
+the understanding of this architecture. So based on forget
+
+01:38:42.540 --> 01:38:46.320
+gate and then input, then memory, and then like output gate.
+
+01:38:46.660 --> 01:38:49.380
+So how it will be able to basically like a do that. We will
+
+01:38:49.380 --> 01:38:52.500
+have the prediction over here. So here, if I'll talk about,
+
+01:38:52.500 --> 01:38:56.360
+uh, input size, so what is my input size as of now? So my
+
+01:38:56.360 --> 01:39:03.020
+input size is nothing but input size is nothing but
+
+01:39:03.020 --> 01:39:06.060
+basically. So let's suppose if I'm going to pass H,
+
+01:39:06.220 --> 01:39:08.980
+obviously there are size of four, if I'm going to pass E
+
+01:39:08.980 --> 01:39:13.140
+size of four. So L size of four P size of four. So input
+
+01:39:13.140 --> 01:39:18.740
+size is basically size of four. Now. So let's suppose. Let's
+
+01:39:18.740 --> 01:39:22.020
+suppose. to pass an input. So as a first input, what I will
+
+01:39:22.020 --> 01:39:25.180
+try to pass inside my network. So I'll try to pass my edge
+
+01:39:25.180 --> 01:39:30.240
+over here. So what will be my X of T? My X of T is going to
+
+01:39:30.240 --> 01:39:34.020
+be H and technically it's going to be one comma zero comma
+
+01:39:34.020 --> 01:39:36.740
+zero comma zero. This is what we have discussed in my
+
+01:39:36.740 --> 01:39:42.560
+architecture. So there will be X of T. There will be X of T.
+
+01:39:42.720 --> 01:39:45.680
+I'm going to pass. So fine. I'm trying to prepare basically
+
+01:39:45.680 --> 01:39:49.000
+my X of T for the very first iteration, for the very first
+
+01:39:49.000 --> 01:39:52.220
+timestamp you can say. So at time T, so at this particular
+
+01:39:52.220 --> 01:39:55.860
+timestamp, for example, 4 11 PM IST. So for that timestamp,
+
+01:39:55.900 --> 01:39:59.260
+I'm selecting H. I'm trying to pass. So X is going to be H
+
+01:39:59.260 --> 01:40:04.480
+now. So I will be able to pass this. So obviously I have to
+
+01:40:04.480 --> 01:40:10.400
+pass H E minus one as well, right? And I should know C T
+
+01:40:10.400 --> 01:40:15.800
+minus one as well as per the gate. So I should know C T
+
+01:40:15.800 --> 01:40:19.040
+minus one and I should know even H T minus one agree
+
+01:40:19.040 --> 01:40:23.740
+everyone stop me if you'll disagree, but yeah, agree. So I
+
+01:40:23.740 --> 01:40:26.300
+must be aware about because network is not going to change,
+
+01:40:26.400 --> 01:40:29.660
+right? So I should pass a value of H of E. I should pass a
+
+01:40:29.660 --> 01:40:32.580
+value of C of E as well. Yes, everyone.
+
+01:40:46.360 --> 01:40:50.880
+Yeah. Okay. So what we can do is so we can, we have to take
+
+01:40:50.880 --> 01:40:54.020
+the value of H of T and we have to take the value of maybe
+
+01:40:54.020 --> 01:40:59.900
+like a. Oh. Okay. C of T. So maybe I can try to consider as
+
+01:40:59.900 --> 01:41:03.300
+of now, vector zero, zero hidden estate size is two. I'm
+
+01:41:03.300 --> 01:41:05.620
+considering, right. I can try to change the hidden estate
+
+01:41:05.620 --> 01:41:08.840
+size as well. And this memory I'm just trying to consider as
+
+01:41:08.840 --> 01:41:11.460
+a two. So zero, zero, initially it's zero. I'm not aware
+
+01:41:11.460 --> 01:41:13.820
+about the value size only. I have defined. I can try to make
+
+01:41:13.820 --> 01:41:16.940
+it 20. I can try to make it 30 doesn't matter at all, but
+
+01:41:16.940 --> 01:41:22.800
+yeah, I can try to define that particular part. Okay. Now,
+
+01:41:22.800 --> 01:41:27.600
+now what we can try to do is so. Step-by-step, a step-by
+
+01:41:27.600 --> 01:41:30.660
+-step, a step-by-step, we can start doing a map. So
+
+01:41:30.660 --> 01:41:33.240
+obviously we know that that data will go inside the forget
+
+01:41:33.240 --> 01:41:37.340
+gate. Data will go inside the input gate. Data will go
+
+01:41:37.340 --> 01:41:40.180
+inside the candidate memory gate basically. And data will go
+
+01:41:40.180 --> 01:41:43.100
+inside the output gate and eventually each and everything it
+
+01:41:43.100 --> 01:41:45.500
+is going to update. And then eventually it is going to start
+
+01:41:45.500 --> 01:41:48.280
+doing a, some sort of a prediction, right? It is going to do
+
+01:41:48.280 --> 01:41:53.760
+some sort of a prediction over here. Okay. Not an issue. So
+
+01:41:53.760 --> 01:41:57.660
+to do that. Obviously. I had a lot of weights, which I have
+
+01:41:57.660 --> 01:42:01.100
+to define unless and until all the weights are not defined,
+
+01:42:01.380 --> 01:42:05.260
+I will not be able to perform any such kind of a operation,
+
+01:42:05.460 --> 01:42:10.060
+right? Everyone. So we have to define a weight technically
+
+01:42:10.060 --> 01:42:15.020
+for a forget gate. We have to define a weight technically
+
+01:42:15.020 --> 01:42:19.160
+for a input gate. We have to define gate, a weight for the
+
+01:42:19.160 --> 01:42:22.620
+candidate memory, and we have to define the weight for the
+
+01:42:22.620 --> 01:42:25.940
+output gate. Okay. Because forget gate, input gate,
+
+01:42:26.080 --> 01:42:29.340
+candidate and output gate is technically a neural network,
+
+01:42:29.540 --> 01:42:32.920
+right? Which is trying to consume this H of T, C of T, and
+
+01:42:32.920 --> 01:42:35.900
+eventually it is going to give me the output over here.
+
+01:42:36.800 --> 01:42:40.980
+Okay. Fine. So one by one, one by one, one by one, we can
+
+01:42:40.980 --> 01:42:44.420
+like, uh, try to go ahead with that and then we can try to
+
+01:42:44.420 --> 01:42:48.440
+define it. So here, if I'll try to talk about a forget gate.
+
+01:42:49.400 --> 01:42:52.800
+So let's talk about just a forget gate. Okay. So we know
+
+01:42:52.800 --> 01:42:57.020
+that that forget gate is going to take two input, right? And
+
+01:42:57.020 --> 01:43:00.100
+it is going to pass this entire input into a sigmoid
+
+01:43:00.100 --> 01:43:03.300
+function. It is going to pass this entire input, the sigmoid
+
+01:43:03.300 --> 01:43:07.080
+function. So here it is going to take HT minus one, and then
+
+01:43:07.080 --> 01:43:10.760
+it is going to take basically XT. I know HT minus one. I
+
+01:43:10.760 --> 01:43:14.440
+know basically my XT, right? So what is my XT? So my X is
+
+01:43:14.440 --> 01:43:17.280
+basically this data, and then my HT is basically this data.
+
+01:43:17.680 --> 01:43:22.200
+It is going to get inside this entire sigmoid function. Now,
+
+01:43:22.400 --> 01:43:23.980
+what is the output of the sigmoid function guys?
+
+01:43:27.740 --> 01:43:31.240
+Yep. So it is, it is going to get inside the sigmoid
+
+01:43:31.240 --> 01:43:34.820
+function as we all know, and here, so we will be having a
+
+01:43:34.820 --> 01:43:39.780
+wait for basically a forget gate and wait for the forget
+
+01:43:39.780 --> 01:43:43.780
+gate, forget gate H and then forget gate, basically X now
+
+01:43:43.780 --> 01:43:52.000
+here. So we know the formula. Hmm. So HT minus one into W.
+
+01:43:52.580 --> 01:44:02.300
+Forget. H. Plus. XT W forget X plus bias. We can try to add
+
+01:44:02.300 --> 01:44:05.140
+if required, otherwise leave the bias as of now, let's
+
+01:44:05.140 --> 01:44:08.900
+suppose bias is equal to basically zero for me. So let's
+
+01:44:08.900 --> 01:44:11.800
+suppose this forget gate, I'm trying to pass all of this
+
+01:44:11.800 --> 01:44:15.340
+data. Now after doing all the mathematics over here, it is
+
+01:44:15.340 --> 01:44:19.140
+going to give me 0.1 and 0.3. I'm just trying to do a
+
+01:44:19.140 --> 01:44:21.940
+symbolic mathematical calculation. If I'll go ahead with the
+
+01:44:21.940 --> 01:44:25.440
+real mathematical calculation. Then obviously, you know how
+
+01:44:25.440 --> 01:44:27.960
+complex the matrix multiplication is. So let's suppose
+
+01:44:27.960 --> 01:44:31.760
+forget gate is giving me 0.8 and 0.3 simple, right? Forget
+
+01:44:31.760 --> 01:44:37.020
+it. Get is giving me 0.8 and 0.3 similarly. So forget gate,
+
+01:44:37.140 --> 01:44:43.900
+forget gate is giving me, let's suppose output is equal to 0
+
+01:44:43.900 --> 01:44:48.000
+.8 and 0.3. We all know, and we are very much clear that
+
+01:44:48.000 --> 01:44:50.820
+what is the input, which will go right. And then what is the
+
+01:44:50.820 --> 01:44:54.200
+value of HT? So we have a value. We have a real value. So we
+
+01:44:54.200 --> 01:44:57.400
+are already aware about it right now, the forget gate will
+
+01:44:57.400 --> 01:45:00.140
+be able to get this one. Let's suppose we have our input
+
+01:45:00.140 --> 01:45:04.960
+gate input gate. Again it's a neural network, right? So
+
+01:45:04.960 --> 01:45:10.060
+let's suppose this gate is going to give me 0.5 comma 0.7 as
+
+01:45:10.060 --> 01:45:14.500
+an output, right? Then we have our candidate candidate
+
+01:45:16.550 --> 01:45:21.450
+memory. Let's suppose this is giving me some sort of output
+
+01:45:21.450 --> 01:45:26.190
+is equals to 0.2 minus 0.1. Right? This is the kind of
+
+01:45:26.190 --> 01:45:28.950
+output after multiplication, it is going to give me, right?
+
+01:45:30.570 --> 01:45:36.430
+Then there will be a update cell state, which is nothing but
+
+01:45:36.430 --> 01:45:43.610
+this CT, CT is nothing but forget into this one. So if I
+
+01:45:43.610 --> 01:45:46.790
+have to update my CT, how I will be able to update. So as of
+
+01:45:46.790 --> 01:45:49.890
+now, what is the value of my FD? So value of my FD is
+
+01:45:49.890 --> 01:45:56.990
+basically 0.8, 0.0, 0.8 and 0.3. So 0.8 and 0.3. What is the
+
+01:45:56.990 --> 01:45:58.670
+value of my FD? What is the value of my CT? So value of my
+
+01:45:58.670 --> 01:46:03.410
+CT is basically 0 and 0. So now if you are going to do this
+
+01:46:03.410 --> 01:46:08.050
+multiplication, so what will happen? So it is going to give
+
+01:46:08.050 --> 01:46:12.970
+you 0.0. It simply means that, that we are not like a, it is
+
+01:46:12.970 --> 01:46:15.270
+saying that just try to forget this much and we are trying
+
+01:46:15.270 --> 01:46:18.530
+to update with the previous one. We are getting 0.0 over
+
+01:46:18.530 --> 01:46:21.750
+here. Then we are coming in this particular state and then
+
+01:46:21.750 --> 01:46:25.490
+we are getting our input here. And then from here we are
+
+01:46:25.490 --> 01:46:27.370
+getting the input. We are trying to make a addition
+
+01:46:27.370 --> 01:46:30.730
+operation. So we know the value, real value of this. Now we
+
+01:46:30.730 --> 01:46:33.210
+know the real value of this and we know the real value that
+
+01:46:33.210 --> 01:46:35.670
+is coming from this particular state, which is the memory
+
+01:46:35.670 --> 01:46:39.470
+state. So we know all these real values one by one, one by
+
+01:46:39.470 --> 01:46:45.010
+one. So maybe we can try to like say that, that CT, which is
+
+01:46:45.010 --> 01:46:46.350
+nothing but update cell state.
+
+01:46:49.290 --> 01:46:54.650
+Update cell state. So after doing all the math and
+
+01:46:54.650 --> 01:46:57.230
+calculation. So let's take a number over here. I'm just
+
+01:46:57.230 --> 01:47:01.650
+taking some random number, by the way, 0.07. So this is the
+
+01:47:01.650 --> 01:47:05.530
+value of the CT, which I'm trying to define. And then let's
+
+01:47:05.530 --> 01:47:14.990
+say my output gate is like a output gate is giving me some
+
+01:47:14.990 --> 01:47:19.570
+values called as 0.9, 0.6 for single timestamp I'm talking
+
+01:47:19.570 --> 01:47:25.110
+about. Right? And then there is a hidden state, HT. So here
+
+01:47:25.110 --> 01:47:26.630
+we are. Hidden state, hidden
+
+01:47:29.640 --> 01:47:36.260
+state. Now this is giving me 0.089, for example, just a
+
+01:47:36.260 --> 01:47:38.640
+random, again, you can take any other values if you want.
+
+01:47:39.140 --> 01:47:42.680
+And this is the value that it is trying to give it to me.
+
+01:47:45.540 --> 01:47:50.060
+Now, if I have to do a prediction, let's suppose if I'm
+
+01:47:50.060 --> 01:47:53.380
+looking for our next data, or maybe if I'm looking for a
+
+01:47:53.380 --> 01:47:56.320
+prediction, maybe I'm looking for basically a Y over here.
+
+01:47:56.660 --> 01:47:58.120
+So why? at times? That's when I need to say, if I loops the
+
+01:47:58.120 --> 01:47:58.240
+data, it'll say the foundation is, it's equal to x prime t,
+
+01:47:58.380 --> 01:48:01.880
+means if I'm passing H values and if these are the
+
+01:48:01.880 --> 01:48:04.100
+mathematical calculation, if this is the mathematical
+
+01:48:04.100 --> 01:48:07.080
+calculation, which it says, then what is going to be my
+
+01:48:07.080 --> 01:48:10.880
+final next prediction, right? Whether it is supposed to
+
+01:48:10.880 --> 01:48:15.400
+predict basically like a H or E or L or P. Because these are
+
+01:48:15.400 --> 01:48:18.840
+the only data which I will try to pass. Right? So here I can
+
+01:48:18.840 --> 01:48:27.660
+try to call maybe a softmax, weight into hidden a state and
+
+01:48:27.660 --> 01:48:30.460
+say that it's plus biases now this function is going to help
+
+01:48:30.460 --> 01:48:35.120
+me out for giving me a prediction at the end of the day so
+
+01:48:35.120 --> 01:48:39.300
+here we are already aware about weight of this entire
+
+01:48:39.300 --> 01:48:43.380
+network which we have initialized we are already aware about
+
+01:48:43.380 --> 01:48:46.400
+the ht which we are able to get and again biases could be
+
+01:48:46.400 --> 01:48:49.200
+zero biases could not be zero based on that it is going to
+
+01:48:49.200 --> 01:48:55.520
+give me what is the possibility that it will be h or e or l
+
+01:48:55.520 --> 01:49:01.340
+or p now so in a very first iteration at time t i'm trying
+
+01:49:01.340 --> 01:49:05.140
+to pass basically what i'm trying to pass basically h at
+
+01:49:05.140 --> 01:49:09.800
+time t now at time t plus one for example in the next minute
+
+01:49:09.800 --> 01:49:13.740
+itself i will try to pass e now when i'm trying to pass e my
+
+01:49:13.740 --> 01:49:16.740
+situation will change completely so here when i was trying
+
+01:49:16.740 --> 01:49:20.120
+to pass this h for the very first time i was not having any
+
+01:49:20.120 --> 01:49:21.380
+kind of a hidden state i was not having any kind of a hidden
+
+01:49:21.380 --> 01:49:24.260
+state i was not having any kind of a memory but now if you
+
+01:49:24.260 --> 01:49:27.980
+will see so we have updated our hidden state so our hidden
+
+01:49:27.980 --> 01:49:31.960
+state has changed and plus our memory right so even our
+
+01:49:31.960 --> 01:49:34.740
+hidden state has changed and even our memory has changed now
+
+01:49:34.740 --> 01:49:39.440
+it's not zero and zero right now it's not zero and zero at
+
+01:49:39.440 --> 01:49:43.560
+all so when i'm trying to pass a xt yeah my xt is going to
+
+01:49:43.560 --> 01:49:46.660
+change obviously right because my xt is going to be now this
+
+01:49:46.660 --> 01:49:50.100
+one zero one zero zero previously it was one zero zero zero
+
+01:49:50.100 --> 01:49:51.800
+so now my xt is going to be zero zero zero is going to be
+
+01:49:51.800 --> 01:49:55.940
+zero one zero zero so now my xt is going to be zero one zero
+
+01:49:55.940 --> 01:50:01.580
+and then zero but my ht minus one which is eventually my
+
+01:50:01.580 --> 01:50:10.280
+current ht my current ht is 0.089 0.089 minus what i have
+
+01:50:10.280 --> 01:50:17.660
+written so 0.041 and my ct minus one what will be my ct
+
+01:50:17.660 --> 01:50:21.900
+minus one so basically ct is will become my ct minus one so
+
+01:50:21.900 --> 01:50:28.180
+0.1 and then minus of 0.07 so as you can see that now the
+
+01:50:28.180 --> 01:50:32.460
+entire h value and this c value means my memory and my
+
+01:50:32.460 --> 01:50:36.260
+hidden state value has changed completely so obviously it is
+
+01:50:36.260 --> 01:50:41.100
+going to learn in a better way at time t plus one then at
+
+01:50:41.100 --> 01:50:45.300
+time t plus two right and every time when it is trying to
+
+01:50:45.300 --> 01:50:48.820
+learn so it is also because these values are changing right
+
+01:50:48.820 --> 01:50:52.000
+these values are changing with respect to every input so i
+
+01:50:52.000 --> 01:50:53.000
+can claim that that's the way it is going to be right so i'm
+
+01:50:53.000 --> 01:50:54.600
+going to say that every time it is trying to learn something
+
+01:50:54.600 --> 01:50:56.860
+so it is trying to build some sort of relationship between
+
+01:50:56.860 --> 01:50:59.860
+this one and then this one and then this one and then this
+
+01:50:59.860 --> 01:51:02.660
+one and then finally when i'll try to do a prediction with
+
+01:51:02.660 --> 01:51:05.380
+the help of softmax as we know that softmax is nothing but
+
+01:51:05.380 --> 01:51:08.980
+it's a probability function right so it is going to always
+
+01:51:08.980 --> 01:51:11.540
+predict that what is the probability that it will be h next
+
+01:51:11.540 --> 01:51:15.800
+one will be h or maybe like a e maybe l or maybe p now how
+
+01:51:15.800 --> 01:51:19.040
+it is going to predict that particular part so basically we
+
+01:51:19.040 --> 01:51:22.460
+are going to set a context window size if we are going to
+
+01:51:22.460 --> 01:51:25.740
+set a context window size is equals to three it simply means
+
+01:51:25.740 --> 01:51:29.660
+that that you are supposed to pass three input hel and then
+
+01:51:29.660 --> 01:51:33.520
+it is going to give you the p as simple as that so this is
+
+01:51:33.520 --> 01:51:36.540
+how guys this calculation is going to change it is going to
+
+01:51:36.540 --> 01:51:39.080
+learn and then eventually it is going to give you the final
+
+01:51:39.080 --> 01:51:42.840
+outcome which i will show you uh in your like uh tomorrow's
+
+01:51:42.840 --> 01:51:46.160
+class as well so we are going to see that in tomorrow's
+
+01:51:46.160 --> 01:51:49.640
+class but yeah this is how training happens at time t we are
+
+01:51:49.640 --> 01:51:52.300
+passing h at time t plus one we are trying to pass basically
+
+01:51:52.300 --> 01:51:56.140
+like a e then i time t plus three so we are trying to pass
+
+01:51:56.140 --> 01:51:59.820
+like a i and so on and then it will try to learn each and
+
+01:51:59.820 --> 01:52:02.940
+everything and it is going to give me the final outcome
+
+01:52:04.260 --> 01:52:10.620
+making sense guys to all of us yes now you can ask me a
+
+01:52:10.620 --> 01:52:12.860
+question that how it is trying to find out the losses
+
+01:52:12.860 --> 01:52:15.500
+basically right how it is trying to pass the how it is
+
+01:52:15.500 --> 01:52:20.320
+trying to find the losses so see uh here let's suppose i'm
+
+01:52:20.320 --> 01:52:24.820
+getting yt okay i'm getting yt let's suppose i'm getting yt
+
+01:52:24.820 --> 01:52:28.140
+equals to so how it is going to do a backward propagation
+
+01:52:28.140 --> 01:52:30.340
+because in a backward propagation itself it is going to
+
+01:52:30.340 --> 01:52:35.240
+learn so let's suppose i am getting yt now yt so i have
+
+01:52:35.240 --> 01:52:42.920
+passed basically h and then y t should be h sorry y t y
+
+01:52:42.920 --> 01:52:47.280
+should be e right because after h there should be e as per
+
+01:52:47.280 --> 01:52:51.740
+my data set so yt expected or output expected is equals to e
+
+01:52:51.740 --> 01:52:54.700
+let's suppose it is giving me a probability that it is
+
+01:52:54.700 --> 01:52:54.700
+giving me a probability that it is giving me a probability
+
+01:52:54.700 --> 01:53:00.620
+that no your H prediction so Y hat is basically not E so
+
+01:53:00.620 --> 01:53:04.520
+basically it's L so can I say that that in that case there
+
+01:53:04.520 --> 01:53:08.440
+will be a loss yeah in that case there will be a loss
+
+01:53:09.380 --> 01:53:12.760
+because if I'm what is the my YT so YT is nothing but my
+
+01:53:12.760 --> 01:53:15.760
+next data right this is my expectation so how it is going to
+
+01:53:15.760 --> 01:53:18.560
+take a training so obviously if I'm trying to like train the
+
+01:53:18.560 --> 01:53:21.400
+data if I'm trying to change everything if I'm trying to
+
+01:53:21.400 --> 01:53:25.840
+generate my YT so YT wise it must be expecting if I'm trying
+
+01:53:25.840 --> 01:53:29.680
+to pass H it should give me E if I'm trying to pass E it
+
+01:53:29.680 --> 01:53:32.320
+should give me L it should if I'm trying to pass HEL it
+
+01:53:32.320 --> 01:53:34.940
+should give me P basically right this is how it is supposed
+
+01:53:34.940 --> 01:53:40.140
+to learn now like some let's suppose for the first iteration
+
+01:53:40.140 --> 01:53:42.860
+it is not able to learn I'm trying to pass H it is giving me
+
+01:53:42.860 --> 01:53:46.520
+L maybe it is giving me P if I'm trying to pass H or E it is
+
+01:53:46.520 --> 01:53:49.560
+giving me sometime P so obviously I will be having a loss
+
+01:53:49.560 --> 01:53:53.980
+now this is the factor where you are going to call all of
+
+01:53:53.980 --> 01:53:56.300
+these system is going to call all of these and this is the
+
+01:53:56.300 --> 01:53:59.280
+place where learning is going to be happen for all the four
+
+01:53:59.280 --> 01:54:03.240
+network that we have learnt inside my LSTM is it making
+
+01:54:03.240 --> 01:54:05.540
+sense to all of us guys yes
+
+01:54:10.050 --> 01:54:13.050
+is it making sense to all of us so
+
+01:54:24.950 --> 01:54:27.410
+Purnay is saying that which means it's not based on the
+
+01:54:27.410 --> 01:54:31.510
+current word it based on the previous word obviously next
+
+01:54:31.510 --> 01:54:34.870
+output depends upon the previous one right I'm trying to
+
+01:54:34.870 --> 01:54:37.790
+repeat it again and again since my like a I think very first
+
+01:54:37.790 --> 01:54:41.430
+minute of the class that I had to say something now how I
+
+01:54:41.430 --> 01:54:43.490
+will be able to say something if I were able to remember
+
+01:54:43.490 --> 01:54:47.530
+what I said so my next word every next word might depends
+
+01:54:47.530 --> 01:54:50.310
+upon my previous word this is what the system is trying to
+
+01:54:50.310 --> 01:54:54.830
+do right so the expectation if I'm trying to pass H over
+
+01:54:54.830 --> 01:54:57.750
+here as per my this example if I'm trying to pass my H over
+
+01:54:57.750 --> 01:54:59.910
+here my expectation will be what my expectation will be E
+
+01:54:59.910 --> 01:55:04.290
+that system should produce E over here right if it is not
+
+01:55:04.290 --> 01:55:05.750
+producing a E then there is a loss right so if I'm trying to
+
+01:55:05.750 --> 01:55:05.790
+pass H over here I'm trying to see what I'm trying to do so
+
+01:55:05.790 --> 01:55:08.270
+my expectation will be that there is a loss right and if
+
+01:55:08.270 --> 01:55:10.710
+there is a loss then I'll do a backwards propagation now
+
+01:55:10.710 --> 01:55:13.410
+that is technically called as learning or training the
+
+01:55:13.410 --> 01:55:16.490
+network simple so I believe we all are able to understand
+
+01:55:16.490 --> 01:55:21.030
+that how training will happen inside LSTM layer loss
+
+01:55:25.510 --> 01:55:29.670
+is there but how to do integrate it back to the next round
+
+01:55:29.670 --> 01:55:34.310
+see so whenever there will be a loss we have seen that in
+
+01:55:34.310 --> 01:55:37.370
+any neural network any basic neural network that we are
+
+01:55:37.370 --> 01:55:40.210
+talking about so if there is a loss what it is a loss is we
+
+01:55:40.210 --> 01:55:40.990
+have seen that in every neural network will do it will start
+
+01:55:40.990 --> 01:55:44.250
+updating all the weights right now here we have four neural
+
+01:55:44.250 --> 01:55:46.950
+network we have a forget gate we have basically a input gate
+
+01:55:46.950 --> 01:55:48.930
+we have basically a candidate memory gate and we have
+
+01:55:48.930 --> 01:55:52.230
+basically a output gate so we have four neural network over
+
+01:55:52.230 --> 01:55:55.390
+here and purpose of all this neural network is different so
+
+01:55:55.390 --> 01:55:58.970
+whenever there will be a loss it will start defining so it
+
+01:55:58.970 --> 01:56:02.210
+will try to find out a loss with respect to a forget gate
+
+01:56:02.210 --> 01:56:05.490
+input gate output gate and then it will do the backup
+
+01:56:05.490 --> 01:56:08.350
+propagation that's a basic concept yes
+
+01:56:14.180 --> 01:56:16.160
+making sense guys so
+
+01:56:50.650 --> 01:56:53.190
+you can you can try to define over here that what you are
+
+01:56:53.190 --> 01:56:55.570
+trying to generate a next and based on that it will try to
+
+01:56:55.570 --> 01:56:57.810
+adjust the loss so tomorrow this is something that we are
+
+01:56:57.810 --> 01:57:00.770
+going to do so what we will do tomorrow is that we will try
+
+01:57:00.770 --> 01:57:03.870
+to create a network a simple network we are going to create
+
+01:57:03.870 --> 01:57:08.630
+not like a this one not a like a heavy network we are going
+
+01:57:08.630 --> 01:57:12.850
+to create and what we will do is we will try to give a input
+
+01:57:12.850 --> 01:57:15.450
+for example we will try to train on you know we will try to
+
+01:57:15.450 --> 01:57:19.670
+train on H E L let's suppose and we wanted to train this
+
+01:57:19.670 --> 01:57:22.370
+network in such a way that it will be able to generate the
+
+01:57:22.370 --> 01:57:25.530
+next one so I can train in a multiple way let's suppose so I
+
+01:57:25.530 --> 01:57:28.530
+can even try to configure the network in such a way that if
+
+01:57:28.530 --> 01:57:34.230
+I am trying to pass H E L right so it should give me E L P
+
+01:57:34.230 --> 01:57:39.910
+if I am trying to pass maybe H E L it should give me P if I
+
+01:57:39.910 --> 01:57:45.290
+am trying to pass H E it should give me L and P so in any
+
+01:57:45.290 --> 01:57:48.050
+way I can try to configure the network based on my
+
+01:57:48.050 --> 01:57:51.710
+requirement so these are the variations which I am going to
+
+01:57:51.710 --> 01:57:55.190
+show you that how you can train a network for this for this
+
+01:57:55.190 --> 01:57:58.830
+and for this one and eventually you will be able to
+
+01:57:58.830 --> 01:58:01.950
+understand some sort of a things with respect to even a chat
+
+01:58:01.950 --> 01:58:05.110
+GPT like how it is working but not in exact same way it's
+
+01:58:05.110 --> 01:58:07.970
+not that simple network so chat GPT you all will be able to
+
+01:58:07.970 --> 01:58:09.890
+understand hundred percent when I am going to talk about the
+
+01:58:09.890 --> 01:58:11.450
+network and talk about a research paper called as attention
+
+01:58:11.450 --> 01:58:15.990
+is all you need over there but yeah so basic sequencing and
+
+01:58:15.990 --> 01:58:19.150
+generation you will be able to understand tomorrow in a
+
+01:58:19.150 --> 01:58:22.450
+practical way plus you will be able to generate the same
+
+01:58:22.450 --> 01:58:25.730
+thing on your own as well so we are going to do a training
+
+01:58:25.730 --> 01:58:32.860
+tomorrow is this fine guys recurrent neural network and LSTM
+
+01:58:32.860 --> 01:58:38.580
+any question so my next word depends upon the previous word
+
+01:58:38.580 --> 01:58:40.760
+and the previous word depends upon their previous words so
+
+01:58:40.760 --> 01:58:42.760
+this is the process goes on so where it is stop
+
+01:58:42.760 --> 01:58:46.860
+consideration so no basically you will be having an input
+
+01:58:46.860 --> 01:58:50.780
+and you will be having an output right it will always try to
+
+01:58:50.780 --> 01:58:53.320
+define the relation in between just like a supervised
+
+01:58:53.320 --> 01:58:55.480
+machine learning approach guys so in supervised machine
+
+01:58:55.480 --> 01:58:57.520
+learning approach what happens in case of a classification
+
+01:58:57.520 --> 01:59:00.180
+let's suppose right so what happens over there in case of a
+
+01:59:00.180 --> 01:59:04.120
+classification so we will try to give X1 X2 X3 X4 and I will
+
+01:59:04.120 --> 01:59:07.440
+be expecting Y right so let's suppose I am expecting Y I
+
+01:59:07.440 --> 01:59:09.500
+have received Y hat there is a difference between Y and Y
+
+01:59:09.500 --> 01:59:12.500
+hat we try to retrain Y hat. once again in the similar is
+
+01:59:12.500 --> 01:59:14.100
+that similar way yes
+
+01:59:17.620 --> 01:59:22.130
+everyone so arvin i think i am able to answer your question
+
+01:59:22.130 --> 01:59:23.110
+uh
+
+01:59:26.120 --> 01:59:29.240
+so in real time google search bar when we are typing all
+
+01:59:29.240 --> 01:59:32.360
+that happens with lstm yeah couple of year back it was lstm
+
+01:59:32.360 --> 01:59:36.000
+but uh i don't know like now so maybe they have like a some
+
+01:59:36.000 --> 01:59:39.180
+advanced integration but it was lstm even
+
+01:59:42.800 --> 01:59:45.640
+even like uh your whatsapp right so whenever you will start
+
+01:59:45.640 --> 01:59:49.020
+typing something so it actually works like lstm because when
+
+01:59:49.020 --> 01:59:50.940
+you are going to purchase a new mobile phone you will be
+
+01:59:50.940 --> 01:59:54.160
+able to see that your new mobile phone will not be able to
+
+01:59:54.160 --> 01:59:56.720
+understand your name or it will not be able to understand
+
+01:59:56.720 --> 02:00:00.140
+some of the word that you say in your original language
+
+02:00:00.140 --> 02:00:02.240
+which is not even a part of any dictionary in this world
+
+02:00:02.240 --> 02:00:05.220
+right and eventually when you will start typing again and
+
+02:00:05.220 --> 02:00:08.020
+again and again so it will be able to memorize it will be
+
+02:00:08.020 --> 02:00:10.160
+able to remember and it will start giving you the pop-up
+
+02:00:10.160 --> 02:00:12.780
+right so as soon as you will start like typing something on
+
+02:00:12.780 --> 02:00:15.740
+a keypad uh even though it is not a part of dictionary so
+
+02:00:15.740 --> 02:00:18.240
+technically it's the same thing which happens over there so
+
+02:00:18.240 --> 02:00:20.600
+it try to learn and then it will try to reduce the
+
+02:00:20.600 --> 02:00:26.310
+prediction of the next one okay so fine guys uh i think we
+
+02:00:26.310 --> 02:00:29.090
+are done for today and tomorrow like i said so i'm going to
+
+02:00:29.090 --> 02:00:33.130
+show you the complete example of a vanilla neural network
+
+02:00:33.130 --> 02:00:37.130
+without using any library means no tensorflow no pytorch
+
+02:00:37.130 --> 02:00:41.210
+only python and then by using like a tensorflow and pytorch
+
+02:00:41.210 --> 02:00:44.590
+i'll try to show you same example help example let's suppose
+
+02:00:44.590 --> 02:00:47.510
+right just give me a reminder i have taken this example so
+
+02:00:47.510 --> 02:00:50.530
+on the same example i'll try to like show you this entire
+
+02:00:51.490 --> 02:00:54.970
+example then maybe i'll try to take one big data set uh
+
+02:00:54.970 --> 02:00:57.930
+maybe a complete story data set i can try to take and then i
+
+02:00:57.930 --> 02:01:01.010
+can try to pass it if i can try to pass help and if i'm able
+
+02:01:01.010 --> 02:01:04.810
+to do a next prediction i can like do it for any kind of a
+
+02:01:04.810 --> 02:01:10.270
+data set as simple as that yep okay so fine guys with that
+
+02:01:10.270 --> 02:01:13.010
+thank you so much and uh see you again tomorrow same time 4
+
+02:01:13.010 --> 02:01:16.030
+30 pm ist and i think agenda is fixed what we are going to
+
+02:01:16.030 --> 02:01:18.350
+discuss thank you so much guys thanks take care
+

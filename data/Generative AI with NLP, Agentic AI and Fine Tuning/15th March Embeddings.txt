@@ -1,0 +1,4946 @@
+WEBVTT
+
+00:00:37.420 --> 00:00:41.420
+Hi everyone so I think I'm audible and visible to all of you
+
+00:00:41.420 --> 00:00:44.260
+so we are going to start a class in couple of minutes so
+
+00:00:44.260 --> 00:00:48.020
+once everyone is going to join so we'll wait for one not one
+
+00:00:48.020 --> 00:00:50.280
+or two minute maybe three minute we can wait and then we can
+
+00:00:50.280 --> 00:00:53.720
+start I believe I'm audible and visible so Y has pinged me
+
+00:00:53.720 --> 00:00:57.500
+hi guys to do good afternoon yes good afternoon everyone so
+
+00:00:57.500 --> 00:01:00.560
+just wait for two three minutes we are going to start okay
+
+00:02:46.320 --> 00:02:53.180
+hi everyone Satish and Tamil Selvan Y and B okay person with
+
+00:02:53.180 --> 00:02:55.620
+the name Y and B so please go to your profile and change
+
+00:02:55.620 --> 00:02:57.820
+your name there is a option that we have given to you to
+
+00:02:57.820 --> 00:03:01.100
+change your name so that I can call you by your name by the
+
+00:03:01.100 --> 00:03:03.520
+way not by B and Y happy
+
+00:03:12.640 --> 00:03:16.760
+Holi to everyone happy Holi so I think even today people are
+
+00:03:16.760 --> 00:03:20.180
+celebrating Holi in some part of India I'm not sure but yeah
+
+00:03:20.180 --> 00:03:23.200
+a couple of people have pinged me in a group saying that
+
+00:03:23.200 --> 00:03:27.060
+that like they are celebrating Holi today maybe in their
+
+00:03:27.060 --> 00:03:30.540
+region but yeah most of the regions so we have already
+
+00:03:30.540 --> 00:03:32.880
+celebrated Holi especially today itself okay
+
+00:03:40.150 --> 00:03:45.590
+in Odisha yeah so someone told me that in Odisha so people
+
+00:03:45.590 --> 00:03:49.010
+are celebrating Holi today maybe their calendars are like
+
+00:03:49.010 --> 00:03:51.530
+different sorry
+
+00:03:54.860 --> 00:03:58.100
+sir missed FHDS but surely watch it today it's not an issue
+
+00:03:58.100 --> 00:04:01.340
+so anyhow recordings are available for FHDS you can go and
+
+00:04:01.340 --> 00:04:05.440
+watch while I'm in this session I'm not able to see the
+
+00:04:05.440 --> 00:04:08.900
+previous class recording you can try to minimize your chat
+
+00:04:08.900 --> 00:04:11.620
+window and then you will be able to see a previous class
+
+00:04:11.620 --> 00:04:16.520
+recording so that is visible by the way okay so we start
+
+00:04:16.520 --> 00:04:20.800
+guys everyone please say yes inside the chat then we are
+
+00:04:20.800 --> 00:04:23.620
+going to start with our discussion yeah
+
+00:04:35.890 --> 00:04:38.450
+background is different today it will be different next week
+
+00:04:40.230 --> 00:04:45.630
+...changing a little ... shifting etc. that's why okay so
+
+00:04:45.630 --> 00:04:52.390
+let's get started so let me share my screen guys. so I
+
+00:04:52.390 --> 00:04:56.410
+believe my screen is visible visible now and today so as we
+
+00:04:56.410 --> 00:04:59.790
+have already made update inside your topic name so today we
+
+00:04:59.790 --> 00:05:03.370
+are going to talk about embedding so it is an extension of a
+
+00:05:03.370 --> 00:05:06.490
+previous class so in a previous class i was talking about a
+
+00:05:06.490 --> 00:05:10.570
+very very simple word processing right so let's suppose if i
+
+00:05:10.570 --> 00:05:13.410
+have a word if i have to limitize it if i have to tokenize
+
+00:05:13.410 --> 00:05:17.070
+it or maybe if i have to remove some sort of a stop words
+
+00:05:17.070 --> 00:05:19.910
+which is a very very frequently occurring words from a
+
+00:05:19.910 --> 00:05:23.130
+sentences how i will be able to remove it so this is
+
+00:05:23.130 --> 00:05:25.750
+something that i have discussed in my previous class last
+
+00:05:25.750 --> 00:05:29.310
+sunday and today i am going to talk about basically a
+
+00:05:29.310 --> 00:05:32.310
+embeddings embeddings simply means that that let's suppose
+
+00:05:32.310 --> 00:05:35.750
+if i have a sentence if i have a words which is given to me
+
+00:05:35.750 --> 00:05:40.790
+how i will be able to convert those words into its numerical
+
+00:05:40.790 --> 00:05:43.830
+representation because at the end of the day when we talk
+
+00:05:43.830 --> 00:05:47.970
+about a training right a training a model so model will not
+
+00:05:47.970 --> 00:05:51.350
+be able to understand any of your words so it technically
+
+00:05:51.350 --> 00:05:55.190
+understand a numerical representation it will try to build a
+
+00:05:55.190 --> 00:05:58.730
+relationship between a numerical representation and based on
+
+00:05:58.730 --> 00:06:02.070
+that it is going to give you some sort of a outcome this is
+
+00:06:02.070 --> 00:06:07.370
+what uh like a this is how the entire deep learning or nlp
+
+00:06:07.370 --> 00:06:11.490
+or machine learning is going to work and in today's class so
+
+00:06:11.490 --> 00:06:14.130
+we are going to see that what in all different kind of
+
+00:06:14.130 --> 00:06:18.410
+embedding techniques a basic one again a basic one so it's
+
+00:06:18.410 --> 00:06:21.630
+not like uh today we will end up discussing all kind of
+
+00:06:21.630 --> 00:06:24.290
+embeddings techniques so as per your syllabus first of all
+
+00:06:24.290 --> 00:06:27.030
+we are going to discuss about the basic and as we will
+
+00:06:27.030 --> 00:06:29.710
+progress as we will start building a model we will start
+
+00:06:29.710 --> 00:06:33.650
+training a model based on the data set a big or small one we
+
+00:06:33.650 --> 00:06:36.210
+will be able to understand more and more about our
+
+00:06:36.210 --> 00:06:39.970
+embeddings or vectorization and something like that so here
+
+00:06:39.970 --> 00:06:44.170
+uh but before starting ahead with your class so from
+
+00:06:44.170 --> 00:06:51.170
+tomorrow onwards your class timing is going to be 2 30 pm
+
+00:06:52.090 --> 00:06:56.610
+ist so as i have already mentioned when i was like uh giving
+
+00:06:56.610 --> 00:07:00.990
+you a induction session that my big data batch is going to
+
+00:07:00.990 --> 00:07:04.270
+finish very soon and once my big data batch will be over so
+
+00:07:04.270 --> 00:07:07.610
+i'm going to sift a timing of your batch so as of now your
+
+00:07:07.610 --> 00:07:13.830
+batch timing is 4 30 pm right 4 30 pm ist now so the new
+
+00:07:13.830 --> 00:07:17.070
+timing from tomorrow onwards from sunday which is like a
+
+00:07:17.070 --> 00:07:21.670
+16th onwards it is going to be 2 30 pm ist so we are going
+
+00:07:21.670 --> 00:07:25.330
+to start our batch from 230 i'm going to ask my team to
+
+00:07:25.330 --> 00:07:28.950
+update even your like a web page a portal page apart from
+
+00:07:28.950 --> 00:07:32.130
+that so i'm going to notify you even inside your group so
+
+00:07:32.130 --> 00:07:35.050
+that those who have not joined this particular class they
+
+00:07:35.050 --> 00:07:38.310
+will be aware about the new timing but yeah so i think this
+
+00:07:38.310 --> 00:07:40.330
+is something which i have already declared when i have
+
+00:07:40.330 --> 00:07:43.230
+launched my batch that there is a big data batch which is
+
+00:07:43.230 --> 00:07:46.270
+going on and once that big data batch will be over so i'll
+
+00:07:46.270 --> 00:07:49.970
+try to sift your timing two hour before day wise again
+
+00:07:49.970 --> 00:07:52.610
+saturday and sunday so there is no changes in that i'm just
+
+00:07:52.610 --> 00:07:56.490
+shifting your batch timing to our before and i hope none of
+
+00:07:56.490 --> 00:07:58.830
+us will be having any kind of a problem with respect to this
+
+00:07:58.830 --> 00:08:01.230
+particular timing because it's going to happen on saturday
+
+00:08:01.230 --> 00:08:04.810
+and sunday itself yeah so time change permanently yeah so
+
+00:08:04.810 --> 00:08:07.650
+this time is going to be constant because i had a batch
+
+00:08:07.650 --> 00:08:10.110
+right so i have like wrapped up that particular batch today
+
+00:08:10.110 --> 00:08:13.110
+itself uh so i have that particular slot which is available
+
+00:08:13.110 --> 00:08:18.950
+with me fine guys yeah so just after completing fsds at 2 p
+
+00:08:18.950 --> 00:08:23.730
+.m yeah so my another batch uh generally starts from 11 30
+
+00:08:23.730 --> 00:08:28.130
+and it goes till 2 p.m uh so this batch timing is 2 30 so
+
+00:08:28.130 --> 00:08:31.310
+after my fsds batch i'm going to take this particular batch
+
+00:08:31.310 --> 00:08:35.270
+uh which i was taking uh which i was anyhow taking another
+
+00:08:35.270 --> 00:08:38.670
+batch which was a big data batch fine so from tomorrow
+
+00:08:38.670 --> 00:08:42.530
+onwards guys and same update i'm going to post inside your
+
+00:08:42.530 --> 00:08:47.150
+group and same update we are going to make it in your web
+
+00:08:47.150 --> 00:08:53.390
+page as well fine okay now so let's start talking about a
+
+00:08:53.390 --> 00:09:01.250
+concept so let me open up my vs code and
+
+00:09:18.820 --> 00:09:26.600
+inside that so today is 15th so 15th march embeddings dot
+
+00:09:26.600 --> 00:09:32.620
+ipynb ipynb okay so my jupyter notebook is ready so step by
+
+00:09:32.620 --> 00:09:35.480
+step guys uh basically i'm going to talk about basically
+
+00:09:35.480 --> 00:09:38.320
+this word embedding technique so first of all i'm going to
+
+00:09:38.320 --> 00:09:41.720
+discuss about one hot encoding which is again a basic one
+
+00:09:41.720 --> 00:09:44.960
+very very basic one i would say then i'll be talking about
+
+00:09:44.960 --> 00:09:49.200
+basically a bag of word bow and then i'll be talking about a
+
+00:09:49.200 --> 00:09:53.480
+tf idf term frequency inverse document frequency and then i
+
+00:09:53.480 --> 00:09:57.560
+will be talking about a word to vector so these are the four
+
+00:09:57.560 --> 00:10:00.480
+technique which i'm going to discuss in my today's class in
+
+00:10:00.480 --> 00:10:02.840
+theoretical way as well as into a practical way and believe
+
+00:10:02.840 --> 00:10:06.340
+me these concepts are not at all difficult at the end of the
+
+00:10:06.340 --> 00:10:07.280
+day all of the concepts are not at all difficult at the end
+
+00:10:07.280 --> 00:10:09.160
+of the day all of these things are going to achieve only one
+
+00:10:09.160 --> 00:10:13.720
+thing and that too converting my, chord or my sentences or
+
+00:10:13.720 --> 00:10:16.840
+my tokens into its numerical representation but again
+
+00:10:16.840 --> 00:10:20.400
+conceptually you will be able to find out that someone is
+
+00:10:20.400 --> 00:10:23.860
+good someone is best and someone is maybe better right or
+
+00:10:23.860 --> 00:10:27.620
+maybe a best one so this is something a comparison wise we
+
+00:10:27.620 --> 00:10:30.540
+will be able to understand and then maybe you can try to
+
+00:10:30.540 --> 00:10:34.600
+conclude that which one you are supposed to use after
+
+00:10:34.600 --> 00:10:37.280
+today's class right which one you are supposed to use? But
+
+00:10:37.280 --> 00:10:40.120
+again, like I said, that apart from these techniques, there
+
+00:10:40.120 --> 00:10:43.020
+are some other techniques as well that we are going to cover
+
+00:10:43.020 --> 00:10:45.980
+in my future classes. I'm just going through the like a
+
+00:10:45.980 --> 00:10:48.460
+syllabus. So whenever those topics will come into a picture,
+
+00:10:48.580 --> 00:10:52.280
+I'll be talking about those techniques for converting any of
+
+00:10:52.280 --> 00:10:57.300
+my data set into its numerical representation. Voice is
+
+00:10:57.300 --> 00:11:00.020
+very, very slow. Is it guys? Voice is slow. I don't think
+
+00:11:00.020 --> 00:11:03.800
+that my voice is slow. I'm loud and clear and I can see that
+
+00:11:03.800 --> 00:11:10.420
+in my meter as well. Is it? Because in my meter, it's
+
+00:11:10.420 --> 00:11:15.100
+showing me like a complete red signal. And even when I was
+
+00:11:15.100 --> 00:11:18.060
+taking my previous classes, so no one has complained that my
+
+00:11:18.060 --> 00:11:18.800
+voice is slow.
+
+00:11:25.310 --> 00:11:28.330
+Devans is saying that why I'm getting an error while trying
+
+00:11:28.330 --> 00:11:31.110
+to access a video in some protected system. Yeah, in
+
+00:11:31.110 --> 00:11:33.770
+protected system, it may give you some issue because of the
+
+00:11:33.770 --> 00:11:37.350
+DRM system. Because even from our side, so there is a DRM
+
+00:11:37.350 --> 00:11:39.550
+system, digital light management system that we have applied
+
+00:11:39.550 --> 00:11:43.310
+and that will not work in your protected system. Maybe a
+
+00:11:43.310 --> 00:11:45.310
+laptop, which is given. Maybe a laptop, which is given.
+
+00:11:45.310 --> 00:11:45.310
+Maybe a laptop,
+
+00:11:52.290 --> 00:11:55.750
+which is given. Okay, so for some voice is okay. And for
+
+00:11:55.750 --> 00:11:59.310
+some of us, voice is a bit slow. I'll try to speak a bit
+
+00:11:59.310 --> 00:12:02.150
+louder. But yeah, please check your system sound. If your
+
+00:12:02.150 --> 00:12:05.890
+system sound is low, then in that case, maybe you can try to
+
+00:12:05.890 --> 00:12:09.430
+install a sound booster. I think there is a software sound
+
+00:12:09.430 --> 00:12:11.710
+booster, which is already available. So maybe you can try to
+
+00:12:11.710 --> 00:12:18.300
+use it. Fine, guys. Okay, let's get started. So the very
+
+00:12:18.300 --> 00:12:21.480
+first topic or the very first thing that I'm going to
+
+00:12:21.480 --> 00:12:25.560
+discuss about is a one-horse. So how one-horse encoding
+
+00:12:25.560 --> 00:12:28.980
+actually works, how it is going to convert any of my word
+
+00:12:28.980 --> 00:12:33.380
+into its numerical representation. So for example, if I'm
+
+00:12:33.380 --> 00:12:39.360
+going to create over here, maybe data, and I can try to call
+
+00:12:39.360 --> 00:12:43.520
+this data set as a corpus, C-O-R, C-O-R-P-U-S, corpus.
+
+00:12:43.600 --> 00:12:46.240
+Corpus is nothing but just a variable I'm trying to create.
+
+00:12:46.380 --> 00:12:50.820
+And then inside this, in a form of list, I can try to keep
+
+00:12:50.820 --> 00:12:55.800
+some of the data. So maybe I can. Let's say that I love NLP.
+
+00:12:58.100 --> 00:13:05.880
+I teach Gen AI, right? And then I can try to mention over
+
+00:13:05.880 --> 00:13:11.140
+here that I am working with Euron, something like this,
+
+00:13:11.260 --> 00:13:16.100
+right? So this is one of the corpus or one of the data which
+
+00:13:16.100 --> 00:13:18.600
+I'm trying to create, a very simple and a very small one.
+
+00:13:18.660 --> 00:13:21.240
+Let me select my Python environment. Yeah. So this is the
+
+00:13:21.240 --> 00:13:24.640
+data which I have created. Now, once I'm able to create this
+
+00:13:24.640 --> 00:13:28.720
+data, so my objective is to convert this entire data set
+
+00:13:28.720 --> 00:13:32.280
+into its numerical representation. Like I said, so there are
+
+00:13:32.280 --> 00:13:34.860
+many techniques by which I will be able to convert this
+
+00:13:34.860 --> 00:13:38.880
+entire data set into its numerical representation. Now, one
+
+00:13:38.880 --> 00:13:43.280
+of that particular technique is called as one-hot encoding.
+
+00:13:43.700 --> 00:13:47.220
+Let's try to understand that how this one-hot encoding
+
+00:13:47.220 --> 00:13:51.680
+actually works, how it will be able to convert my data set
+
+00:13:51.680 --> 00:13:53.960
+into its numerical representation. Let's try to understand
+
+00:13:53.960 --> 00:13:53.960
+that how this one-hot encoding actually works, how it will
+
+00:13:53.960 --> 00:13:53.960
+be able to convert my data set into its numerical
+
+00:13:53.960 --> 00:13:57.600
+representation. In a step-by-step, step-by-step manner. So
+
+00:13:57.600 --> 00:14:02.220
+here, so we are able to see some of the word, maybe this I,
+
+00:14:02.380 --> 00:14:06.800
+if I'll talk about, so I is common among all the data sets.
+
+00:14:06.840 --> 00:14:10.000
+So I love NLP, I is available. I teach Gen AI, I is
+
+00:14:10.000 --> 00:14:14.220
+available. I'm working with Euron, so again, I is available.
+
+00:14:14.460 --> 00:14:18.960
+So some of the tokens or some of the word inside my data set
+
+00:14:18.960 --> 00:14:22.900
+is available across all the sentences. So I have three
+
+00:14:22.900 --> 00:14:24.280
+sentences. So I have three sentences in total inside my
+
+00:14:24.280 --> 00:14:27.760
+list, and this is I, I is technically available across all
+
+00:14:27.760 --> 00:14:33.640
+the sentences. Now, so what one-hot encoding does is that it
+
+00:14:33.640 --> 00:14:39.380
+will try to convert these I love NLP, I teach Gen AI, I am
+
+00:14:39.380 --> 00:14:44.840
+working with Euron, all of these things into a kind of a
+
+00:14:44.840 --> 00:14:47.580
+numerical representation. And when I'm saying that numerical
+
+00:14:47.580 --> 00:14:51.360
+representation, so maybe into 10101010 kind of a
+
+00:14:51.360 --> 00:14:55.140
+representation in which it is going to convert. Now, how it
+
+00:14:55.140 --> 00:14:59.840
+is going to work. So here, basically, so what it will do is
+
+00:14:59.840 --> 00:15:05.160
+it will try to take a length of the entire sentence, and
+
+00:15:05.160 --> 00:15:10.100
+then eventually it will try to place one wherever it will be
+
+00:15:10.100 --> 00:15:13.480
+able to find out a particular data and will try to place
+
+00:15:13.480 --> 00:15:17.440
+zero. So whenever it will not be able to find out that
+
+00:15:17.440 --> 00:15:19.660
+particular data, now, what is the meaning of it? Right? I
+
+00:15:19.660 --> 00:15:22.420
+said that it will try to give one. So when data will be
+
+00:15:22.420 --> 00:15:25.400
+available, I am saying. That it will try to give zero when
+
+00:15:25.400 --> 00:15:28.080
+data will not be able to know which data I'm talking about
+
+00:15:28.080 --> 00:15:34.080
+over here, right? And sir, I and I, yeah, so capital and a
+
+00:15:34.080 --> 00:15:38.060
+small is different in NLP and even in a Python. So what we
+
+00:15:38.060 --> 00:15:40.660
+generally try to do is we try to convert everything into a
+
+00:15:40.660 --> 00:15:43.280
+lowercase or maybe everything into a uppercase is because
+
+00:15:43.280 --> 00:15:46.300
+capital in a small is obviously treated as a different data.
+
+00:15:46.440 --> 00:15:49.860
+It's not going to be same. So here, what I will do is, so
+
+00:15:49.860 --> 00:15:53.440
+I'll try to create a vocabulary. So I'll try to. Create a
+
+00:15:53.440 --> 00:15:58.320
+vocabulary of a unique word. See, so unique word wise, if
+
+00:15:58.320 --> 00:16:01.640
+I'm going to take the sentences, so maybe I is a unique
+
+00:16:01.640 --> 00:16:04.960
+word. Love is a unique word. NLP is a unique word. Then
+
+00:16:04.960 --> 00:16:08.180
+teach is a unique word. Jen is a unique word. AI is a unique
+
+00:16:08.180 --> 00:16:11.780
+word. I'm working with your own. So all this, what's our
+
+00:16:11.780 --> 00:16:14.980
+technically a unique word, right? All this, what's our
+
+00:16:14.980 --> 00:16:17.480
+technically a unique word. So what we are going to do is so
+
+00:16:17.480 --> 00:16:20.960
+we can try to create a vocabulary out of this data set, the
+
+00:16:20.960 --> 00:16:24.560
+input data set that we are talking about. In such a way that
+
+00:16:24.560 --> 00:16:29.040
+I will be having all the unique word, and then we are going
+
+00:16:29.040 --> 00:16:33.120
+to assign an index. Index was zero one, two, three, four,
+
+00:16:33.180 --> 00:16:35.620
+five, six, seven, eight, nine, 10. So even now, when we are
+
+00:16:35.620 --> 00:16:38.540
+trying to store our data, so obviously, inside a list, we
+
+00:16:38.540 --> 00:16:41.040
+have a data. So data number one, data number two, and data
+
+00:16:41.040 --> 00:16:45.360
+number three. So by default, I don't have assigned zero one
+
+00:16:45.360 --> 00:16:48.660
+and two indexes in our forward direction. And then minus
+
+00:16:48.660 --> 00:16:51.900
+one, minus two and a minus three indexes into a reverse
+
+00:16:51.900 --> 00:16:54.940
+direction. So by default, by. is doing that in terms of like
+
+00:16:54.940 --> 00:16:57.860
+assigning the indexes but what i will do is out of this
+
+00:16:57.860 --> 00:17:01.580
+entire corpus that we have so i'll try to create a another
+
+00:17:01.580 --> 00:17:05.320
+corpus i'll try to create another list so where i'll try to
+
+00:17:05.320 --> 00:17:09.960
+keep only a unique word and then obviously i'll try to
+
+00:17:09.960 --> 00:17:14.440
+assign the index to each and every word and then i'll try to
+
+00:17:14.440 --> 00:17:19.380
+represent each and every word maybe with zero with one so
+
+00:17:19.380 --> 00:17:22.220
+let's let's try to write a code step by step manner and then
+
+00:17:22.220 --> 00:17:24.680
+let's try to understand that how i'm going to perform this
+
+00:17:24.680 --> 00:17:28.440
+kind of a operation so here first of all what i can do is
+
+00:17:28.440 --> 00:17:32.700
+that first of all i can try to join all the data so whatever
+
+00:17:32.700 --> 00:17:36.800
+data is available inside my list so i'll try to join it to
+
+00:17:36.800 --> 00:17:41.980
+join it maybe i can write a join query over here so blank
+
+00:17:41.980 --> 00:17:46.360
+and then i can try to call a join and then i can try to call
+
+00:17:46.360 --> 00:17:51.280
+a corpus over here c-o-r-p-u-s the data set that we have so
+
+00:17:51.280 --> 00:17:55.840
+c-o-r-p-u-s is not defined why executed
+
+00:17:57.500 --> 00:18:02.500
+and then executed okay so this is what join is going to
+
+00:18:02.500 --> 00:18:05.820
+perform so join is going to join all of these lines which is
+
+00:18:05.820 --> 00:18:09.080
+available inside your data set as you can see right so join
+
+00:18:09.080 --> 00:18:13.800
+is going to join all the data set all together okay fine now
+
+00:18:13.800 --> 00:18:17.740
+what i'm going to do is so maybe i can try to call dot split
+
+00:18:17.740 --> 00:18:22.560
+dot split on top of it so split as we all know from a python
+
+00:18:22.560 --> 00:18:25.760
+code that whenever we are going to call a split it will try
+
+00:18:25.760 --> 00:18:29.340
+to split a data and then eventually it is going to return me
+
+00:18:29.340 --> 00:18:34.660
+the list so here it is going to split the entire data after
+
+00:18:34.660 --> 00:18:38.280
+a join and then this is one of the list which i'm able to
+
+00:18:38.280 --> 00:18:41.600
+get here so it is trying to split based on what so based on
+
+00:18:41.600 --> 00:18:44.940
+the spaces i can try to split a data based on maybe a tab
+
+00:18:44.940 --> 00:18:47.540
+maybe based on the comma whatever i want right whatever
+
+00:18:47.540 --> 00:18:50.800
+delimiter i want so based on that delimiter i will be able
+
+00:18:50.800 --> 00:18:50.840
+to split the entire data so i can try to split the entire
+
+00:18:50.840 --> 00:18:53.480
+data based on the data so here so when i'm not saying
+
+00:18:53.480 --> 00:18:56.660
+anything so by default it is trying to split my data based
+
+00:18:56.660 --> 00:19:00.680
+on space so wherever we have a space it has splitted the
+
+00:19:00.680 --> 00:19:04.000
+data so in one one one one one one word it is able to
+
+00:19:04.000 --> 00:19:07.860
+convert now what i have to do is so i have to extract a
+
+00:19:07.860 --> 00:19:12.000
+unique word out of it right so i have to extract a unique
+
+00:19:12.000 --> 00:19:14.920
+word out of it so any idea guys how i will be able to
+
+00:19:14.920 --> 00:19:19.000
+extract only a unique word please bring me in a chat i think
+
+00:19:19.000 --> 00:19:22.900
+again it's a basic one it's a very basic one so how i will
+
+00:19:22.900 --> 00:19:29.260
+be able to convert this entire list into a unique data set
+
+00:19:29.260 --> 00:19:32.060
+means i have to remove the duplicate when i'm saying unique
+
+00:19:32.060 --> 00:19:34.900
+data set it simply means that i have to remove a duplicate
+
+00:19:34.900 --> 00:19:46.200
+yeah so y is saying n unique okay anyone else simple set
+
+00:19:46.200 --> 00:19:49.940
+right so i can someone is saying tuple i mean like how
+
+00:19:49.940 --> 00:19:55.100
+sachin tuple will be able to uh like uh remove uh basically
+
+00:19:55.100 --> 00:19:58.700
+unique so we can try to call set i believe we all know set
+
+00:19:58.700 --> 00:20:01.420
+is a data structure which is available inside the python and
+
+00:20:01.420 --> 00:20:04.180
+what set does so whatever data you are going to pass inside
+
+00:20:04.180 --> 00:20:07.860
+a set automatically it will try to extract all the unique
+
+00:20:07.860 --> 00:20:12.000
+data so it will try to remove the duplicate okay so fine it
+
+00:20:12.000 --> 00:20:15.880
+has removed all the duplicate and these are the unique data
+
+00:20:15.880 --> 00:20:20.020
+set which is available inside my data right these are the
+
+00:20:20.020 --> 00:20:23.480
+unique words which was available inside my data so yes i'm
+
+00:20:23.480 --> 00:20:27.280
+able to get it maybe i can try to convert this entire output
+
+00:20:27.280 --> 00:20:31.500
+into a list so i will be able to get a data in a form of
+
+00:20:31.500 --> 00:20:36.740
+list fine i'm able to get it into a list so now this list
+
+00:20:36.740 --> 00:20:41.480
+representing a unique word which was available inside my
+
+00:20:41.480 --> 00:20:44.560
+different different document i have three documents document
+
+00:20:44.560 --> 00:20:46.820
+number one or sentence number one document number two or
+
+00:20:46.820 --> 00:20:49.160
+sentence number two document number three or sentence number
+
+00:20:49.160 --> 00:20:53.200
+three so out of these three document right i'm able to find
+
+00:20:53.200 --> 00:20:56.640
+out that okay these are the unique word which is available
+
+00:20:56.640 --> 00:21:00.940
+to me i can try to store this entire data into a variable
+
+00:21:00.940 --> 00:21:09.180
+called as unique uni que underscore underscore words unique
+
+00:21:10.530 --> 00:21:15.430
+words so fine storing is done so i can i have stored this
+
+00:21:15.430 --> 00:21:18.110
+entire data set which is a unique one inside this particular
+
+00:21:18.110 --> 00:21:22.370
+variable okay let's try to print it and again guys do it
+
+00:21:22.370 --> 00:21:24.430
+with me maybe you can try to change your own data that's
+
+00:21:24.430 --> 00:21:27.110
+completely fine so doesn't matter at all if you're going to
+
+00:21:27.110 --> 00:21:30.650
+take the same sentence or if you're going to like use a
+
+00:21:30.650 --> 00:21:33.070
+different sentence you will be able to achieve the exact
+
+00:21:33.070 --> 00:21:37.270
+same thing which i am able to achieve okay so we are able to
+
+00:21:37.270 --> 00:21:41.950
+convert our entire data and now we are able to see that
+
+00:21:41.950 --> 00:21:45.170
+these are the unique data set which is available inside my
+
+00:21:45.170 --> 00:21:49.750
+data set that is a part number one basic part i have not
+
+00:21:49.750 --> 00:21:52.550
+used any external library i'm just writing a simple normal
+
+00:21:52.550 --> 00:21:57.430
+python code once we are able to do that what we can do is so
+
+00:21:57.430 --> 00:22:02.430
+we can try to convert these entire words and we can try to
+
+00:22:02.430 --> 00:22:08.310
+assign a unique indexes to all of these words so any idea
+
+00:22:08.310 --> 00:22:12.630
+guys how i will be able to assign a index to this entire
+
+00:22:12.630 --> 00:22:17.210
+words yeah so for example for neuron i have to assign maybe
+
+00:22:17.210 --> 00:22:20.230
+zero for m i have to assign maybe one for love i have to
+
+00:22:20.230 --> 00:22:20.410
+assign maybe one for love i have to assign maybe one for
+
+00:22:20.410 --> 00:22:21.230
+love i have to assign maybe one for love maybe two three
+
+00:22:21.230 --> 00:22:24.650
+four five and so on so any idea how i will be able to assign
+
+00:22:24.650 --> 00:22:30.590
+a unique indexes yes so it is showing not in ascending order
+
+00:22:30.590 --> 00:22:33.490
+why because set never gives you a data output in an
+
+00:22:33.490 --> 00:22:37.090
+ascending order this is what set says right so why is saying
+
+00:22:37.090 --> 00:22:40.290
+uh we can try to call sort i mean sorting is not required
+
+00:22:40.290 --> 00:22:45.910
+it's fine yeah santanu is saying like a numpy puma is saying
+
+00:22:45.910 --> 00:22:50.390
+encapsulation okay i mean like deepak is saying like a numpy
+
+00:22:50.390 --> 00:22:50.810
+puma is saying like a numpy puma is saying like enumerate
+
+00:22:50.810 --> 00:22:53.890
+rama rama is saying enumerate yes so enumerate ankit is
+
+00:22:53.890 --> 00:22:55.770
+saying enumerate as we need sundar everyone is saying
+
+00:22:55.770 --> 00:22:58.870
+enumerate now right a very simple thing right what we can do
+
+00:22:58.870 --> 00:23:02.830
+is so we can try to pass this data into a enumerator and
+
+00:23:02.830 --> 00:23:06.230
+then enumerator will try to convert each and everything with
+
+00:23:06.230 --> 00:23:08.530
+respect to indexes this is what the numerator function does
+
+00:23:08.530 --> 00:23:11.630
+right so maybe what i can do is so i can try to call
+
+00:23:11.630 --> 00:23:15.550
+enumerator function i can try to pass this unique words
+
+00:23:15.550 --> 00:23:18.990
+inside this enumerator function now it has given me a
+
+00:23:18.990 --> 00:23:22.270
+enumeration object now if i have to see the data so whatever
+
+00:23:22.270 --> 00:23:24.830
+data which is available inside this numerator word so maybe
+
+00:23:24.830 --> 00:23:29.850
+i have to run the loop or maybe i can try to like go with
+
+00:23:29.850 --> 00:23:32.450
+some other approach like a eater and next that is also
+
+00:23:32.450 --> 00:23:36.270
+possible with respect to python so for i in enumerate and
+
+00:23:36.270 --> 00:23:39.710
+let's suppose if i'm going to print print basically p-r-i-n
+
+00:23:39.710 --> 00:23:47.670
+-t so print i print i so yeah it has assigned indexes to my
+
+00:23:47.670 --> 00:23:53.970
+word six seven eight nine and so on so i have now a unique
+
+00:23:53.970 --> 00:23:57.870
+data first of all and then for all the unique data i have
+
+00:23:57.870 --> 00:24:02.590
+assigned a indexes okay that's fine that's great right now
+
+00:24:02.590 --> 00:24:06.770
+so maybe i can try to store this entire things as a
+
+00:24:06.770 --> 00:24:10.030
+dictionary right as a key value key value key value kind of
+
+00:24:10.030 --> 00:24:12.570
+a pair maybe i can try to store it or maybe in another way i
+
+00:24:12.570 --> 00:24:14.410
+can try to store it at the end of the day i have to write
+
+00:24:14.410 --> 00:24:18.950
+the python code so here right so here what i can do is so if
+
+00:24:18.950 --> 00:24:22.350
+i have to convert this entire things as a dictionary because
+
+00:24:22.350 --> 00:24:25.510
+as of now this is tuple this is tuple this is tuple everyone
+
+00:24:25.510 --> 00:24:28.410
+is holding basically two two data so what i can do is so
+
+00:24:28.410 --> 00:24:31.610
+maybe i will just try to copy the same line of a code and i
+
+00:24:31.610 --> 00:24:40.410
+can rewrite it so here so for i comma word i'm just trying
+
+00:24:40.410 --> 00:24:43.570
+to w-r-d i'm just trying to create my own variable over here
+
+00:24:43.570 --> 00:24:48.050
+so for i comma word so let's try to create a dictionary so i
+
+00:24:48.050 --> 00:24:52.890
+can write a dictionary comprehension word comma i and then
+
+00:24:52.890 --> 00:24:58.690
+enclose it within a curly braces so that all the output will
+
+00:24:58.690 --> 00:25:01.790
+be stored as a dictionary i'm not doing anything else guys
+
+00:25:01.790 --> 00:25:05.130
+so i'm just trying to split this data right in i and word
+
+00:25:05.130 --> 00:25:08.630
+and then word and i so key and a value so word will be key
+
+00:25:08.630 --> 00:25:11.470
+and then its value is going to be i in this fashion i'm
+
+00:25:11.470 --> 00:25:16.010
+going to store it okay so how this output looks like same as
+
+00:25:16.010 --> 00:25:19.030
+before not very different so over here output was in a
+
+00:25:19.030 --> 00:25:22.010
+tuples now i'm trying to convert this entire output in in a
+
+00:25:22.010 --> 00:25:24.670
+form of dictionary key value key value key value key value
+
+00:25:24.670 --> 00:25:28.670
+pair where key is basically a unique words and then value is
+
+00:25:28.670 --> 00:25:30.970
+nothing but the indexes that i have generated from a
+
+00:25:30.970 --> 00:25:35.470
+enumeration now here i can try to store this data into a
+
+00:25:35.470 --> 00:25:40.530
+variable called as word 2 underscore index so in this
+
+00:25:40.530 --> 00:25:45.910
+variable i can try to store it word 2 index so now now we
+
+00:25:45.910 --> 00:25:52.190
+have two data one is a unique word unique word and then word
+
+00:25:52.190 --> 00:25:55.750
+two indexes for these unique words now we are able to find
+
+00:25:55.750 --> 00:25:59.030
+out the indexes so now we are able to do the conversion
+
+00:25:59.030 --> 00:26:02.690
+inside our data set is it making sense guys yeah
+
+00:26:07.980 --> 00:26:10.560
+so deepak is saying this is also work sir yeah obviously it
+
+00:26:10.560 --> 00:26:12.560
+is going to work at the end of the day it's a python code so
+
+00:26:12.560 --> 00:26:15.400
+i'm not saying that whatever code which i am writing so you
+
+00:26:15.400 --> 00:26:18.160
+are supposed to do like you are supposed to write a code in
+
+00:26:18.160 --> 00:26:20.440
+the same way no maybe you can try to write in a different
+
+00:26:20.440 --> 00:26:23.160
+way at the end of the day we have to convert this data into
+
+00:26:23.160 --> 00:26:27.720
+its numerical okay so this is something that we are able to
+
+00:26:27.720 --> 00:26:30.960
+do this is something that we are able to convert now my
+
+00:26:30.960 --> 00:26:35.260
+objective has not fulfilled yet so my objective is to
+
+00:26:35.260 --> 00:26:38.560
+convert this entire data into its one hot encoding
+
+00:26:38.560 --> 00:26:42.160
+representation means zero one zero one zero one zero one not
+
+00:26:42.160 --> 00:26:46.060
+this data basically so this data the original one this
+
+00:26:46.060 --> 00:26:49.160
+original one i have to convert it into a one hot encoding so
+
+00:26:49.160 --> 00:26:53.500
+for i love nlp i want one hot encoding for i teach janei i
+
+00:26:53.500 --> 00:26:57.220
+want one hot encoding and for i am working with huron so i
+
+00:26:57.220 --> 00:27:01.340
+want one hot encoded data right so this for this particular
+
+00:27:01.340 --> 00:27:05.380
+data set actually i'm looking for one hot encoded data so as
+
+00:27:05.380 --> 00:27:07.640
+of now i'm just able to do some sort of a data processing
+
+00:27:07.640 --> 00:27:11.040
+and with the help of data processing finding the unique and
+
+00:27:11.040 --> 00:27:13.820
+then converting into a dictionary with the key and value
+
+00:27:13.820 --> 00:27:19.140
+that's it okay so here let's start writing a code for doing
+
+00:27:19.140 --> 00:27:24.300
+one hot encoding over here so here what i will do is so i
+
+00:27:24.300 --> 00:27:26.000
+can try to write a code for one hot encoding to create one
+
+00:27:26.000 --> 00:27:31.540
+vector over here so one hot underscore vectors I can try to
+
+00:27:31.540 --> 00:27:34.100
+create let's keep it as a blank so this is the one variable
+
+00:27:34.100 --> 00:27:39.960
+which I am creating one hot vector word to index please
+
+00:27:39.960 --> 00:27:45.740
+again okay so word to index don't focus in in in this one so
+
+00:27:45.740 --> 00:27:49.600
+word to index right so here I'm just using a enumerate
+
+00:27:49.600 --> 00:27:52.360
+enumerate is a function so what enumerate does is so
+
+00:27:52.360 --> 00:27:55.520
+whatever data list you are going to provide whatever list
+
+00:27:55.520 --> 00:27:58.560
+you are going to provide right so for that particular list
+
+00:27:58.560 --> 00:28:01.940
+it is going to return two things one is a indexes and one is
+
+00:28:01.940 --> 00:28:05.440
+basically a data itself or word itself so this is what
+
+00:28:05.440 --> 00:28:08.360
+enumerate is trying to do now what I'm trying to do is so
+
+00:28:08.360 --> 00:28:11.400
+enumerate is returning two things okay so I'm just trying to
+
+00:28:11.400 --> 00:28:17.120
+split it for I and word so for I and word means data like I
+
+00:28:17.120 --> 00:28:20.800
+means basically indexes and the words and then I'm trying to
+
+00:28:20.800 --> 00:28:24.880
+save it as a word and I mean key and a value pair so I'm
+
+00:28:24.880 --> 00:28:26.640
+trying to create my own dictionary this is the dictionary
+
+00:28:26.640 --> 00:28:29.760
+comprehension which I have written that's it right this is
+
+00:28:29.760 --> 00:28:31.820
+the dictionary comprehension which I have written so that my
+
+00:28:31.820 --> 00:28:35.260
+word will become a key and my indexes is going to be a value
+
+00:28:35.260 --> 00:28:39.900
+that's it okay now moving ahead right so I believe all of
+
+00:28:39.900 --> 00:28:42.360
+you are able to do the coding guys shall I shall I ping you
+
+00:28:42.360 --> 00:28:45.740
+this code let me ping you this piece of the code line by
+
+00:28:45.740 --> 00:28:48.180
+line inside your chat itself those who are not able to
+
+00:28:48.180 --> 00:28:51.820
+perform the practical operation so maybe you can do it along
+
+00:28:51.820 --> 00:28:57.240
+with me I'm pinging you this one inside your chat inside
+
+00:29:01.750 --> 00:29:05.450
+a chat okay so now what we can do is so we can try to create
+
+00:29:05.450 --> 00:29:10.150
+a simple list over here which is called as one hot vector
+
+00:29:10.150 --> 00:29:13.330
+blank list as simple as that right blank list I'm going to
+
+00:29:13.330 --> 00:29:16.730
+create now what I'm going to do is so I can write a for loop
+
+00:29:16.730 --> 00:29:20.830
+so for for sentence sentence
+
+00:29:23.710 --> 00:29:28.190
+in corpus so we had a corpus basically we had the original
+
+00:29:28.190 --> 00:29:31.070
+data list of all these things right I am writing NLP and
+
+00:29:31.070 --> 00:29:34.610
+then I teach gen AI and working with your own so I'm just
+
+00:29:34.610 --> 00:29:37.330
+trying to go through this entire data because at the end of
+
+00:29:37.330 --> 00:29:40.030
+the day I have to convert those data means those sentences
+
+00:29:40.030 --> 00:29:43.650
+into its respective numerical representation into its
+
+00:29:43.650 --> 00:29:49.350
+respective one hot vectors now so here if I'm going to print
+
+00:29:49.350 --> 00:29:52.450
+it so obviously it is going to print all the sentences 1 by
+
+00:29:52.450 --> 00:29:54.010
+1 sentences
+
+00:29:56.120 --> 00:29:59.960
+1 by 1 so I love NLP I love IT Gen AI I am working with you
+
+00:29:59.960 --> 00:30:02.760
+Ron okay fine so this is what this for loop is going to
+
+00:30:02.760 --> 00:30:03.800
+perform okay let's just say so here we have some form i'm
+
+00:30:03.800 --> 00:30:09.000
+going to create one more variable inside a for loop so that
+
+00:30:09.000 --> 00:30:13.240
+it will be able to hold a vector of this data vector of this
+
+00:30:13.240 --> 00:30:15.520
+data and vector of this data means numerical representation
+
+00:30:15.520 --> 00:30:18.100
+of this numerical representation of this and numerical
+
+00:30:18.100 --> 00:30:20.920
+representation of this it is going to store so i can try to
+
+00:30:20.920 --> 00:30:25.720
+create one one more variable sentence sentence underscore
+
+00:30:25.720 --> 00:30:30.280
+vector and it's going to be blank i'm not storing anything
+
+00:30:30.280 --> 00:30:33.700
+and this one hot vector is going to hold for everything so
+
+00:30:33.700 --> 00:30:38.480
+here sentence underscore vector now i can do one thing so
+
+00:30:38.480 --> 00:30:42.840
+i'm trying to pass one sentence at a time right so in a very
+
+00:30:42.840 --> 00:30:47.720
+first iteration i love nlp will come simple right i love nlp
+
+00:30:47.720 --> 00:30:52.260
+will come so what i can do so maybe i can write one more
+
+00:30:52.260 --> 00:30:58.440
+loop inside this so for words or word in basically this
+
+00:30:58.440 --> 00:31:04.480
+sentence dot split so sentence dot split what i'm trying to
+
+00:31:04.480 --> 00:31:08.400
+do is so this sentence the very first sentence first
+
+00:31:08.400 --> 00:31:11.460
+iteration first sentence i love nlp so whenever it will come
+
+00:31:11.460 --> 00:31:14.340
+i'm trying to split it now after splitting what will happen
+
+00:31:14.340 --> 00:31:17.720
+so after splitting so this entire data will be available in
+
+00:31:17.720 --> 00:31:22.980
+a form of list i comma love comma nlp three separate words
+
+00:31:22.980 --> 00:31:26.160
+as of now it's a single sentence single entity but yeah
+
+00:31:26.160 --> 00:31:27.640
+after the split so it will be a single sentence single
+
+00:31:27.640 --> 00:31:30.460
+entity it will be converted into a list and one by one so i
+
+00:31:30.460 --> 00:31:33.360
+and then love and then nlp it will try to extract so just
+
+00:31:33.360 --> 00:31:37.100
+focus on the very first one so this is so i'm just running a
+
+00:31:37.100 --> 00:31:43.680
+loop over here and then i can try to create a vector v c t o
+
+00:31:43.680 --> 00:31:48.200
+r v c t o r vector over here so vector is the variable which
+
+00:31:48.200 --> 00:31:52.960
+i have created and what i'm trying to say that that try to
+
+00:31:52.960 --> 00:32:01.180
+perform this operation so zero of basically unique words
+
+00:32:01.180 --> 00:32:07.240
+what does what does this means any idea guys so i'm trying
+
+00:32:07.240 --> 00:32:11.680
+to take one word at a time and then i'm writing this one so
+
+00:32:11.680 --> 00:32:16.030
+what is what is the meaning of this by the way what is what
+
+00:32:16.030 --> 00:32:17.870
+is the meaning of this yes
+
+00:32:23.860 --> 00:32:27.180
+any idea what is the meaning of this yes
+
+00:32:42.500 --> 00:32:43.380
+guys anyone
+
+00:32:50.250 --> 00:32:54.710
+number of character in the word okay size of the vector okay
+
+00:32:54.710 --> 00:32:57.370
+that that is like something which will be given by length
+
+00:32:57.370 --> 00:33:03.600
+now why i'm trying to multiply with zero yes why i'm
+
+00:33:03.600 --> 00:33:09.150
+multiplying with zero length of the unique words index from
+
+00:33:09.150 --> 00:33:12.810
+zero one to atc as we need saying bracket okay length vector
+
+00:33:12.810 --> 00:33:16.970
+vector of zeros yeah vector of zeros basically correct so
+
+00:33:16.970 --> 00:33:20.970
+here i'll explain you again so i'll just try to print it so
+
+00:33:20.970 --> 00:33:23.050
+that one by one one by one you will be able to understand
+
+00:33:23.050 --> 00:33:27.030
+everything so here let me print this vector so let me print
+
+00:33:27.030 --> 00:33:33.330
+this vector okay now see what has happened so here when i'm
+
+00:33:33.330 --> 00:33:37.070
+trying to print this one so what will happen is it will try
+
+00:33:37.070 --> 00:33:42.770
+to right it will try to print this one what is a meaning of
+
+00:33:42.770 --> 00:33:48.910
+this i love nlp this it has printed it janei this it has
+
+00:33:48.910 --> 00:33:52.490
+printed and then i am working with your own so this it has
+
+00:33:52.490 --> 00:33:55.430
+basically printed now what is the purpose behind this one
+
+00:33:55.430 --> 00:34:00.950
+let me explain you that part so here right so here we have
+
+00:34:00.950 --> 00:34:08.970
+basically three word i and love and nlp so three rows here i
+
+00:34:08.970 --> 00:34:13.850
+have i teach gen ai four rows four word i am working with
+
+00:34:13.850 --> 00:34:18.330
+your own five so five rows it has created with all vector is
+
+00:34:18.330 --> 00:34:20.430
+equals to zero this is what i'm trying to do so i'm just
+
+00:34:20.430 --> 00:34:24.710
+trying to find out a length of unique word length of unique
+
+00:34:24.710 --> 00:34:29.990
+word and i'm just trying to multiply it with zeros so that
+
+00:34:30.330 --> 00:34:33.610
+let's suppose for the very first time i love nlp will come
+
+00:34:33.610 --> 00:34:37.290
+into picture so for iteration number one it will do the same
+
+00:34:37.290 --> 00:34:39.750
+for iteration number two it will do the same for iteration
+
+00:34:39.750 --> 00:34:42.850
+number three it will do the same again when i tell you i
+
+00:34:42.850 --> 00:34:46.950
+will come over here so word wise for i it will do the same
+
+00:34:46.950 --> 00:34:50.250
+for teach it will do the same for gen it will try to do the
+
+00:34:50.250 --> 00:34:54.050
+same and ai it will try to do the same so it is just trying
+
+00:34:54.050 --> 00:34:57.270
+to create a sparse vector space where all that vector data
+
+00:34:57.270 --> 00:35:00.250
+is basically zero right so a sparse vector is trying to
+
+00:35:00.330 --> 00:35:02.830
+create a blank vector i can say sparse vector i'm trying to
+
+00:35:02.830 --> 00:35:06.350
+create so there is a unique name to it called a sparse so
+
+00:35:06.350 --> 00:35:10.510
+sparse vector i'm trying to create as simple as that now
+
+00:35:10.510 --> 00:35:17.330
+what i will do is so here i will try to set one right i'll
+
+00:35:17.330 --> 00:35:22.630
+try to set one if that data is available and i'll try to
+
+00:35:22.630 --> 00:35:27.310
+leave it as zero if that data is not available now what is
+
+00:35:27.310 --> 00:35:30.470
+the meaning of this so simply means that that let's suppose
+
+00:35:30.470 --> 00:35:34.350
+if i'm trying to build a vector it has simply created a
+
+00:35:34.350 --> 00:35:37.730
+sparse vector sparse vector means all the data with a zero
+
+00:35:37.730 --> 00:35:43.330
+it has created i'll try to replace this zero with one if a
+
+00:35:43.330 --> 00:35:46.770
+specific data is available means tagging which i'm talking
+
+00:35:46.770 --> 00:35:49.370
+about right so i'll try to do a tagging let's let's do a
+
+00:35:49.370 --> 00:35:52.090
+tagging and then you will be able to understand in a better
+
+00:35:52.090 --> 00:35:57.510
+way so here if you remember we have created word two indexes
+
+00:35:57.510 --> 00:36:00.570
+okay fine so what do you indexes we have created let's try
+
+00:36:00.570 --> 00:36:04.630
+to call word to index over here in this particular place and
+
+00:36:04.630 --> 00:36:09.530
+then try to pass a word the word that we are receiving from
+
+00:36:09.530 --> 00:36:14.430
+for loop try to pass a word over there and then what we can
+
+00:36:14.430 --> 00:36:21.110
+do is so we can try to say that okay so vector of this one
+
+00:36:21.110 --> 00:36:25.530
+is equals to basically one as simple as that so vector of
+
+00:36:25.530 --> 00:36:28.450
+this one is equals to one so we are trying to set one
+
+00:36:28.450 --> 00:36:33.170
+basically for a specific word you can you can even try to
+
+00:36:33.170 --> 00:36:36.130
+print it and then you will be able to get your answer so
+
+00:36:36.130 --> 00:36:40.510
+maybe i can try to print over here that what this word to
+
+00:36:40.510 --> 00:36:44.970
+index is going to do for a particular word what to index is
+
+00:36:44.970 --> 00:36:48.390
+going to perform for a particular word and then i can try to
+
+00:36:48.390 --> 00:36:54.630
+even print that okay so what this vector is going to do what
+
+00:36:54.630 --> 00:37:01.560
+this entire vector is going to perform now let's try to see
+
+00:37:01.560 --> 00:37:06.920
+so here word to index so let's suppose some word is going to
+
+00:37:06.920 --> 00:37:11.520
+come for example i is going to come right now what is a
+
+00:37:11.520 --> 00:37:17.140
+index of that particular word so index of that particular
+
+00:37:17.140 --> 00:37:20.300
+word if i'll say i so what is the index of i index of i is
+
+00:37:20.300 --> 00:37:24.200
+basically eight this is what our word to index says so index
+
+00:37:24.200 --> 00:37:27.560
+for i is technically eight right this is something that we
+
+00:37:27.560 --> 00:37:32.060
+have stored so obviously i'm trying to pass a key over here
+
+00:37:32.060 --> 00:37:35.000
+and then this is going to give me the value value is but
+
+00:37:35.000 --> 00:37:37.740
+what value is nothing but the indexes that i have created so
+
+00:37:37.740 --> 00:37:40.300
+it is going to give me value is equals to eight as simple as
+
+00:37:40.300 --> 00:37:45.040
+that okay fine now so i'm trying to say that that this eight
+
+00:37:45.040 --> 00:37:48.120
+i'm trying to pass eight over here yeah i'm trying to pass
+
+00:37:48.120 --> 00:37:50.700
+basically what i'm trying to pass basically eight over here
+
+00:37:50.700 --> 00:37:56.660
+so i'm trying to say that that vector of eight yes so vector
+
+00:37:56.660 --> 00:38:01.320
+of eight just try to make it one are you able to get it guys
+
+00:38:01.320 --> 00:38:05.920
+i'm just trying to say that vector of eight now what is our
+
+00:38:05.920 --> 00:38:09.240
+vector i'm trying to print a vector over here right i'm
+
+00:38:09.240 --> 00:38:12.400
+trying to print a vector over here so i'm trying to say that
+
+00:38:12.400 --> 00:38:18.800
+that vector of eight just try to make it one it simply means
+
+00:38:18.800 --> 00:38:23.360
+that that it will try to go through this entire vector it
+
+00:38:23.360 --> 00:38:26.060
+will try to go through this entire vector that we are able
+
+00:38:26.060 --> 00:38:30.680
+to see over here and then zero one two three four five six
+
+00:38:30.680 --> 00:38:34.660
+seven eight so just make it one instead of zero just make it
+
+00:38:34.660 --> 00:38:38.220
+one this is what i'm trying to say that vector of eighth on
+
+00:38:38.220 --> 00:38:45.600
+eighth position just try to make it one simple yes why is it
+
+00:38:45.600 --> 00:38:48.360
+all zero sir so we i'm just trying to create a sparse vector
+
+00:38:48.360 --> 00:38:51.360
+which is like length of this entire vector is equal to
+
+00:38:51.360 --> 00:38:54.060
+number of the unique data number of the unique word so let's
+
+00:38:54.060 --> 00:38:56.960
+suppose if i have a 10 unique word so obviously length of
+
+00:38:56.960 --> 00:39:00.500
+those vectors is going to be 10. now i'll try to assign one
+
+00:39:00.500 --> 00:39:03.140
+zero one zero so zero is already there so i'll try to assign
+
+00:39:03.140 --> 00:39:05.620
+one so wherever there is a data right so what i'm trying to
+
+00:39:05.620 --> 00:39:09.140
+say is that that vector of eighth vector of eighth is going
+
+00:39:09.140 --> 00:39:12.740
+to be one now in a next iteration let's suppose love right
+
+00:39:12.740 --> 00:39:15.760
+now we'll try to see that what is the index of love over
+
+00:39:15.760 --> 00:39:18.620
+here so what is the index of love by the way so index of
+
+00:39:18.620 --> 00:39:21.820
+love is basically two right index of love is basically two
+
+00:39:21.820 --> 00:39:25.300
+so what i'm trying to say that that okay so do one thing so
+
+00:39:25.300 --> 00:39:29.460
+vector of two vector of two so just try to make it one so
+
+00:39:29.460 --> 00:39:31.480
+i'm trying to say that make it one i'm trying to say that
+
+00:39:31.480 --> 00:39:34.640
+that vector of two just try to make it what one so zero one
+
+00:39:34.640 --> 00:39:38.320
+two just try to make it one eighth just try to make it one
+
+00:39:38.320 --> 00:39:43.060
+and then nlp so what is a index of nlp by the way so index
+
+00:39:43.060 --> 00:39:48.760
+of nlp is seven okay fine so index of nlp is going to be
+
+00:39:48.760 --> 00:39:52.700
+seven so i'm just trying to say that that just try to make
+
+00:39:52.700 --> 00:39:56.280
+vector of seven so
+
+00:39:59.030 --> 00:40:03.970
+this one is equals to one now can i say that that if i'm
+
+00:40:03.970 --> 00:40:08.570
+able to do this means if i'm able to produce this data this
+
+00:40:08.570 --> 00:40:14.760
+data is representing i love nlp yes this data is
+
+00:40:14.760 --> 00:40:16.080
+representing i love nlp
+
+00:40:20.310 --> 00:40:23.710
+jaidul i'll come to that point so that's a drawback of this
+
+00:40:23.710 --> 00:40:26.890
+one hot encoding yeah i'll come to that point and yeah you
+
+00:40:26.890 --> 00:40:30.330
+are correct but yeah i'll be even discussing about it so can
+
+00:40:30.330 --> 00:40:34.210
+i say that that this entire vector zero zero one zero zero
+
+00:40:34.210 --> 00:40:37.330
+zero zero one one and zero so this is going to represent
+
+00:40:37.330 --> 00:40:41.830
+basically i love nlp as simple as that those who are not
+
+00:40:41.830 --> 00:40:44.410
+able to understand don't worry i'll try to reiterate once
+
+00:40:44.410 --> 00:40:47.450
+again so let me explain and let me like uh and i believe
+
+00:40:47.450 --> 00:40:49.450
+most of us are able to understand so it's not a very
+
+00:40:49.450 --> 00:40:53.150
+difficult like a python problem that we are dealing with so
+
+00:40:53.150 --> 00:40:58.250
+here right so here sentence vector we can try to call now
+
+00:40:58.250 --> 00:40:59.810
+what is our sentence vector sentence vector by the way so
+
+00:40:59.810 --> 00:41:02.170
+sentence vector is basically this one right for one single
+
+00:41:02.170 --> 00:41:06.390
+sentence and this dot i can try to call basically append so
+
+00:41:06.390 --> 00:41:10.690
+a double p and d append and append the entire basically
+
+00:41:10.690 --> 00:41:14.610
+vector okay so inside the sentence vector i'm trying to
+
+00:41:14.610 --> 00:41:18.870
+append it and then i'm coming out of the loop and then one
+
+00:41:18.870 --> 00:41:22.130
+hot encoding vector the variable which i have created so
+
+00:41:22.130 --> 00:41:25.270
+again i'm going to call one more append over here append
+
+00:41:25.270 --> 00:41:28.790
+over here and then inside that i'm trying to append the all
+
+00:41:28.790 --> 00:41:34.210
+the sentence vector so now let me remove couple of print
+
+00:41:34.210 --> 00:41:42.670
+from here so that it will not messed up okay one hot vector
+
+00:41:42.670 --> 00:41:47.930
+okay that's great now here if i'm going to show you what is
+
+00:41:47.930 --> 00:41:51.770
+this one hot vector so if i'm going to show you now that how
+
+00:41:51.770 --> 00:41:55.910
+my one hot vector actually looks like so maybe i can try to
+
+00:41:55.910 --> 00:42:02.690
+show you here so this is how my one hot vector actually
+
+00:42:02.690 --> 00:42:09.090
+looks like making sense guys yeah so this is how my one hot
+
+00:42:09.090 --> 00:42:13.150
+vector actually looks like so this is the one hot vector
+
+00:42:13.150 --> 00:42:18.170
+variable which actually looks like so this one and then this
+
+00:42:18.170 --> 00:42:22.750
+one and then this one for all the three sentences so for
+
+00:42:22.750 --> 00:42:26.350
+sentence number one i love nlp and then i used to teach a
+
+00:42:26.350 --> 00:42:28.190
+gen ai now here you will be able to teach a gen ai and then
+
+00:42:28.190 --> 00:42:28.190
+you will be able to teach a gen ai and then you will be able
+
+00:42:28.190 --> 00:42:31.490
+to find out that on one eighth position we have one then on
+
+00:42:31.490 --> 00:42:34.710
+a second position we have one on the seventh position we
+
+00:42:34.710 --> 00:42:40.630
+have basically one right so we have one so this is basically
+
+00:42:40.630 --> 00:42:46.590
+one hot encoding for i love nlp now this is basically a one
+
+00:42:46.590 --> 00:42:53.690
+hot encoding for i teach like a gen ai and this is for a
+
+00:42:53.690 --> 00:42:56.310
+third sentence which i have written so i used to teach at
+
+00:42:56.310 --> 00:42:59.270
+uran or i used to take a classes at uran i think this was
+
+00:42:59.270 --> 00:43:02.050
+the data which i have taken in a beginning so i am working
+
+00:43:02.050 --> 00:43:07.270
+with uran yeah so this is a third representation so with for
+
+00:43:07.270 --> 00:43:11.230
+the third sentences making sense to all of us so this is for
+
+00:43:11.230 --> 00:43:14.410
+one sentence this is for another sentence and this is for
+
+00:43:14.410 --> 00:43:18.690
+another sentence so maybe one by one one by one one by one
+
+00:43:18.690 --> 00:43:21.190
+so you can try to extract it and then you will be able to
+
+00:43:21.730 --> 00:43:25.570
+like a label it so if i have to extract just one hot
+
+00:43:25.570 --> 00:43:28.990
+encoding for nlp what i can do is so maybe one hot vector
+
+00:43:28.990 --> 00:43:32.430
+and then i can try to say that try to extract data from one
+
+00:43:32.430 --> 00:43:37.070
+eighth position so this is for sorry zeroth position for i
+
+00:43:37.070 --> 00:43:40.710
+love nlp so extract the data from zeroth position so this is
+
+00:43:40.710 --> 00:43:43.930
+for basically i love nlp if i am going to call the data for
+
+00:43:43.930 --> 00:43:47.150
+one eighth position so this is for basically i used to teach
+
+00:43:47.150 --> 00:43:51.070
+like a gen ai and this is like if i am going to show you two
+
+00:43:51.070 --> 00:43:54.850
+so i used to work for a uran so this is how we are able to
+
+00:43:54.850 --> 00:43:58.530
+convert our entire data set into one hot encoding without
+
+00:43:58.530 --> 00:44:01.790
+using any library so i'm not using a library just a manual
+
+00:44:01.790 --> 00:44:05.790
+coding i'm trying to do a python coding and with the help of
+
+00:44:05.790 --> 00:44:10.510
+that i'm able to convert now tell me who is having a doubt
+
+00:44:10.950 --> 00:44:14.290
+and what is your doubt then i'll be talking about the
+
+00:44:14.290 --> 00:44:17.030
+drawback of this entire approach because there is a huge
+
+00:44:17.030 --> 00:44:20.470
+drawback behind this approach this is not a best possible
+
+00:44:20.470 --> 00:44:23.730
+approach of converting my data into its numerical
+
+00:44:23.730 --> 00:44:27.690
+representation this is one of the worst i would say it's
+
+00:44:27.690 --> 00:44:27.790
+very weerst sup yup because we've created a alteram that's a
+
+00:44:27.790 --> 00:44:30.690
+reason so we are talking about in the beginning yeah
+
+00:44:37.890 --> 00:44:43.370
+okay once again shall i discuss once again okay let me talk
+
+00:44:43.370 --> 00:44:46.510
+about once again so i believe till this point things are
+
+00:44:46.510 --> 00:44:50.750
+clear so we are able to convert our entire data set into its
+
+00:44:50.750 --> 00:44:55.290
+like a kind of key value key value key value pair so where
+
+00:44:55.290 --> 00:44:58.550
+we have assigned our indexes to our data set a random
+
+00:44:58.550 --> 00:45:01.470
+indexes i'm not saying that purposely i have assigned so
+
+00:45:01.470 --> 00:45:04.230
+basically i have just processed it i have part into a set so
+
+00:45:04.230 --> 00:45:06.330
+that i will be able to remove the duplicate and then i have
+
+00:45:06.330 --> 00:45:09.930
+assigned a indexes with the help of enumeration function so
+
+00:45:09.930 --> 00:45:12.810
+yeah enumeration function has assigned 0 1 2 3 4 5 6 and 7
+
+00:45:12.810 --> 00:45:16.290
+so on kind of a indexes so this is my key this is my value
+
+00:45:16.290 --> 00:45:18.130
+this is my key this is my value this is my key this is my
+
+00:45:18.130 --> 00:45:22.170
+value now here technically what i'm trying to do is i'm
+
+00:45:22.170 --> 00:45:26.690
+trying to create a vector space now what is a vector space
+
+00:45:26.690 --> 00:45:28.990
+what will be the length of the vector space which i'm trying
+
+00:45:28.990 --> 00:45:33.350
+to create so length of the vector space is going to be a
+
+00:45:33.350 --> 00:45:38.390
+total number of unique data which is available inside my
+
+00:45:38.390 --> 00:45:43.430
+corpus as simple as that so what is a total number of unique
+
+00:45:43.430 --> 00:45:47.930
+data which was available total number of data was 1 2 3 4 5
+
+00:45:47.930 --> 00:45:54.230
+6 7 8 9 10 so total 10 unique data which was available total
+
+00:45:54.230 --> 00:45:58.350
+10 unique words which was available inside my data set right
+
+00:45:58.350 --> 00:46:01.410
+total 10 unique words which was available inside my data set
+
+00:46:01.410 --> 00:46:05.290
+so you will be able to see that that there are 10 space
+
+00:46:05.290 --> 00:46:10.210
+which i am able to reserve now this 10 space for one word
+
+00:46:10.210 --> 00:46:14.390
+then again 10 space for another word same sentence same
+
+00:46:14.390 --> 00:46:19.430
+sentence same document 10 space so that all the space
+
+00:46:19.430 --> 00:46:22.850
+regeneration is going to be unique because some of my data
+
+00:46:22.850 --> 00:46:25.750
+set was having a three word some data set was having
+
+00:46:25.750 --> 00:46:28.450
+basically two words some of my data set was having like a
+
+00:46:28.450 --> 00:46:31.050
+five words some of the data set will be having maybe a
+
+00:46:31.050 --> 00:46:34.530
+hundred words right but i'll not go after the number of
+
+00:46:34.530 --> 00:46:37.310
+words which is available inside my data set i'll always go
+
+00:46:37.310 --> 00:46:41.170
+after the number of unique word available in my whole data
+
+00:46:41.170 --> 00:46:44.510
+set right so this is what i'm trying to do so i'm just
+
+00:46:44.510 --> 00:46:47.630
+trying to create a blank space or you can say a sparse
+
+00:46:47.630 --> 00:46:50.310
+matrix i'm trying to create over here a sparse vector space
+
+00:46:50.310 --> 00:46:54.850
+i'm trying to create so here i'm trying to run my loop on my
+
+00:46:54.850 --> 00:47:00.330
+corpus so what is my corpus i have used to teach like a gen
+
+00:47:00.330 --> 00:47:05.490
+ai and then i used to work for a uran that was my corpus so
+
+00:47:05.490 --> 00:47:08.050
+i'm just trying to go through corpus number one i love nlp
+
+00:47:08.050 --> 00:47:11.330
+corpus number two it gen ai and corpus number three so i'm
+
+00:47:11.330 --> 00:47:15.030
+working with uran as simple as that now i'm trying to create
+
+00:47:15.030 --> 00:47:17.670
+another vector sentence vector over here and then here so
+
+00:47:17.670 --> 00:47:20.530
+i'm trying to split a sentence now i'm splitting i love nlp
+
+00:47:20.530 --> 00:47:23.350
+so i will be having three words right if i'm going to split
+
+00:47:23.350 --> 00:47:25.070
+it gen ai i will be having four
+
+00:47:28.910 --> 00:47:32.030
+so i'm just trying to split it and that many number of times
+
+00:47:32.030 --> 00:47:34.590
+this internal loop will run that many number of times so
+
+00:47:34.590 --> 00:47:36.710
+that many number of time it is going to create this sparse
+
+00:47:36.710 --> 00:47:40.190
+vector right this is creating a sparse vector or vector with
+
+00:47:40.190 --> 00:47:42.470
+the zero that is something called a sparse vector so i this
+
+00:47:42.470 --> 00:47:45.250
+is the reason i have written over here so zero into length
+
+00:47:45.250 --> 00:47:48.510
+means this vector this is a vector right this is not a zero
+
+00:47:48.510 --> 00:47:53.510
+this is a vector because inside a bracket i'm using it so
+
+00:47:53.510 --> 00:47:56.370
+this is technically a vector right so i'm just trying to do
+
+00:47:56.370 --> 00:47:59.650
+a vector multiplication so i'm saying that you multiply this
+
+00:47:59.650 --> 00:48:02.790
+zero vector with this one so that this is the number of
+
+00:48:02.790 --> 00:48:05.370
+space it will be able to create so number of unique word
+
+00:48:05.370 --> 00:48:11.050
+right now inside this vector or this vector or this vector
+
+00:48:11.050 --> 00:48:16.130
+that i have created so i have to place that okay so this is
+
+00:48:16.130 --> 00:48:20.590
+representing i so where which bit or which bit is basically
+
+00:48:20.590 --> 00:48:23.370
+representing i which bit is basically representing love and
+
+00:48:23.370 --> 00:48:27.810
+which bit is basically representing nlp how are we able to
+
+00:48:27.810 --> 00:48:29.270
+do that so i'm trying to do that so i'm trying to say that
+
+00:48:29.270 --> 00:48:32.750
+that okay so what to vector so here i'm going to basically
+
+00:48:32.750 --> 00:48:35.970
+this dictionary which i have created what to vector and i'm
+
+00:48:35.970 --> 00:48:39.490
+trying to pass a word let's suppose if i will come right so
+
+00:48:39.490 --> 00:48:42.210
+i'm trying to pass i now it is going to turn what it is
+
+00:48:42.210 --> 00:48:45.470
+going to turn eight right it is going to return basically
+
+00:48:45.470 --> 00:48:49.170
+eight so i'm trying to say that that okay inside this vector
+
+00:48:49.170 --> 00:48:52.690
+that i have created this vector which i have created so just
+
+00:48:52.690 --> 00:48:58.370
+do one thing try to play so try to replace this value at
+
+00:48:58.370 --> 00:49:02.190
+eight place with what with one so i'm trying to do the
+
+00:49:02.190 --> 00:49:05.370
+assignment operation over here i'm just saying that try to
+
+00:49:05.370 --> 00:49:10.230
+replace a eighth data vector eighth is equals to what for
+
+00:49:10.230 --> 00:49:13.310
+example if i'm going to take maybe a list over here right so
+
+00:49:13.310 --> 00:49:17.430
+list is equals to maybe sudh and then if i'm going to say
+
+00:49:17.430 --> 00:49:22.290
+that sudh comma one comma two comma three comma four comma
+
+00:49:22.290 --> 00:49:27.530
+87 maybe kumar and now if i'm going to tell you that try to
+
+00:49:27.530 --> 00:49:28.890
+replace basically sudh and then if i'm going to say that
+
+00:49:28.890 --> 00:49:31.510
+sudh comma one comma two dh try to replace sudh sudh with
+
+00:49:31.510 --> 00:49:34.370
+one now what you will do you will try to write this way
+
+00:49:34.370 --> 00:49:38.470
+right so list of zero zero is nothing but indexes so list of
+
+00:49:38.470 --> 00:49:41.310
+zero is equals to one simple right and then if you are going
+
+00:49:41.310 --> 00:49:45.090
+to print a list what will happen now sudh has been replaced
+
+00:49:45.090 --> 00:49:46.930
+by one yes
+
+00:49:49.260 --> 00:49:52.620
+can i say that i'm doing the exact same thing over here yes
+
+00:49:59.240 --> 00:50:05.060
+everyone can i say that that i'm trying to do the exact same
+
+00:50:05.060 --> 00:50:09.180
+operation over here yep and then it is going to like do this
+
+00:50:09.180 --> 00:50:11.260
+thing for this one this one this one i'm just trying to
+
+00:50:11.260 --> 00:50:14.680
+append it i'm just trying to append it all together right
+
+00:50:14.680 --> 00:50:19.120
+now for one single data i love nlp it will be done i'm
+
+00:50:19.120 --> 00:50:21.240
+coming out of the loop it will end up doing for all these
+
+00:50:21.240 --> 00:50:23.740
+things i'm just trying to append all three so that i will be
+
+00:50:23.740 --> 00:50:27.100
+able to get all three together as simple as that fine making
+
+00:50:27.100 --> 00:50:31.320
+sense so this is one of the way this is one of the way by
+
+00:50:31.320 --> 00:50:35.820
+which i'm trying to do the conversion of my data set into
+
+00:50:35.820 --> 00:50:36.760
+its numerical data set so this is one of the way by which
+
+00:50:36.760 --> 00:50:37.420
+i'm trying to do the conversion of my data set into its
+
+00:50:37.420 --> 00:50:40.420
+numerical representation but i believe i believe many of you
+
+00:50:40.420 --> 00:50:44.300
+have already observed the biggest issue that we are going to
+
+00:50:44.300 --> 00:50:45.780
+face i
+
+00:50:50.960 --> 00:50:54.740
+think this logic with which one hot are calculated even
+
+00:50:54.740 --> 00:50:58.120
+library like exactly as winnie so doesn't matter which
+
+00:50:58.120 --> 00:51:00.720
+library you are going to use whether you are using scipy or
+
+00:51:00.720 --> 00:51:05.440
+numpy whenever one hot happens see i could have used even a
+
+00:51:05.440 --> 00:51:11.040
+library directly right but sometime i prefer to showcase a
+
+00:51:11.040 --> 00:51:15.080
+raw coding that that's my like a flavor basically i could
+
+00:51:15.080 --> 00:51:18.680
+have explained you just in theory that okay fine so replace
+
+00:51:18.680 --> 00:51:23.000
+zero zero one one one all those things but sometime i love
+
+00:51:23.000 --> 00:51:25.860
+to write code that's it and obviously i'll be using library
+
+00:51:25.860 --> 00:51:29.500
+so wherever because i know that that if i'm going to write a
+
+00:51:29.500 --> 00:51:32.720
+code for everything from a scratch many of you will not be
+
+00:51:32.720 --> 00:51:36.200
+able to understand even with a simple basic for loop so many
+
+00:51:36.200 --> 00:51:41.600
+of you will like get stuck a little bit somewhere but yeah i
+
+00:51:41.600 --> 00:51:44.260
+believe that's this is not that tough so we all are able to
+
+00:51:44.260 --> 00:51:47.100
+understand but yes doesn't matter what library you are going
+
+00:51:47.100 --> 00:51:50.840
+to use that library actually does the same thing so exact
+
+00:51:50.840 --> 00:51:54.440
+same thing that we have done over here nothing different
+
+00:51:54.440 --> 00:52:00.780
+okay so hope it's clear fine
+
+00:52:06.570 --> 00:52:14.200
+now i i believe most of you are able to even find out a
+
+00:52:14.200 --> 00:52:17.640
+issue behind it so let's suppose so any anyone anyone guys
+
+00:52:17.640 --> 00:52:20.320
+so who can point out the issue so what is the issue with
+
+00:52:20.320 --> 00:52:27.730
+this one hot encoding by the way yeah so anyone what is the
+
+00:52:27.730 --> 00:52:31.790
+cons of using one hot encoding i believe by this time you
+
+00:52:31.790 --> 00:52:35.390
+are able to understand meaning of the sentence arpan is
+
+00:52:35.390 --> 00:52:39.590
+saying yeah that's true um deepak is saying sir all the time
+
+00:52:39.590 --> 00:52:43.850
+we use one hot encoding and get dummies but uh aware of a
+
+00:52:43.850 --> 00:52:47.990
+back-end part now it's clear okay thanks uh deepak is saying
+
+00:52:47.990 --> 00:52:49.950
+i think we create such big problems in our library and we
+
+00:52:49.950 --> 00:52:50.630
+are able to understand the meaning of the big matrices for a
+
+00:52:50.630 --> 00:52:53.510
+small data then it will store unnecessary memory so that's
+
+00:52:53.510 --> 00:52:56.630
+true deepak yeah as when he's saying calculation cost again
+
+00:52:56.630 --> 00:53:00.330
+it's true p is saying a space is wasted p p please change
+
+00:53:00.330 --> 00:53:02.890
+your name uh go to your profile change your name so that i
+
+00:53:02.890 --> 00:53:05.950
+can call you by your name see when i saying more sparse
+
+00:53:05.950 --> 00:53:09.090
+matrices again that's true sparse matrices i believe we all
+
+00:53:09.090 --> 00:53:12.130
+know what is the meaning of a sparse matrices because going
+
+00:53:12.130 --> 00:53:15.050
+forward i'll not explain you uh that's the reason so many
+
+00:53:15.050 --> 00:53:18.510
+times i have taken the name sparse sparse sparse sparsity
+
+00:53:18.510 --> 00:53:20.450
+through slow sparse sparse sparsity through slow uh
+
+00:53:20.450 --> 00:53:24.490
+computation wise it will not slow but yeah so as data will
+
+00:53:24.490 --> 00:53:27.310
+grow so obviously it is going to take more memory space and
+
+00:53:27.310 --> 00:53:30.410
+eventually it is going to affect your computation as well so
+
+00:53:30.410 --> 00:53:35.590
+in that way yes performance hit so i believe most of you are
+
+00:53:35.590 --> 00:53:39.430
+able to understand all the issues and all of you have listed
+
+00:53:39.430 --> 00:53:43.770
+i can see in a chat so teja santosh deepak puma pradeep
+
+00:53:43.770 --> 00:53:49.130
+sures everyone everyone person with 688 number so all of you
+
+00:53:49.130 --> 00:53:49.930
+are able to highlight all of you are able to highlight all
+
+00:53:49.930 --> 00:53:53.370
+of you are able to highlight all the issues so see guys the
+
+00:53:53.370 --> 00:53:57.410
+very first issue is even for a very small data set for
+
+00:53:57.410 --> 00:54:02.350
+example i love nlp only three word right only three word and
+
+00:54:02.350 --> 00:54:08.690
+it has created 10 dimensional space matrices right so not
+
+00:54:08.690 --> 00:54:10.870
+not 10 dimensional i would say basically like it's 3 cross
+
+00:54:10.870 --> 00:54:13.890
+10 right so it has created basically 3 cross 10 space of the
+
+00:54:13.890 --> 00:54:18.450
+matrices now if number of unique word is going to increase
+
+00:54:18.450 --> 00:54:19.910
+so even for if number of unique word is going to increase so
+
+00:54:19.910 --> 00:54:23.630
+even for a sentence which is having only one or two word it
+
+00:54:23.630 --> 00:54:26.830
+will try to create that much or it will try to take that
+
+00:54:26.830 --> 00:54:29.070
+much of space because it is trying to create this sparse
+
+00:54:29.070 --> 00:54:32.850
+matrices based on unique word right unique word so obviously
+
+00:54:32.850 --> 00:54:36.970
+uh if you have a very very large vocabulary means very very
+
+00:54:36.970 --> 00:54:41.370
+large uh like a unique number of words inside data set so
+
+00:54:41.370 --> 00:54:45.370
+your vector size will increase significantly right second
+
+00:54:45.370 --> 00:54:49.250
+one obviously a lots of sparse data you will be able to find
+
+00:54:49.250 --> 00:54:52.430
+out zero zero zero zero data you will be able to find out
+
+00:54:52.430 --> 00:54:57.790
+this is this is one of the problem another problem is that
+
+00:54:57.790 --> 00:55:02.610
+nowhere right nowhere it is maintaining a relationship
+
+00:55:02.610 --> 00:55:07.450
+between a data it is trying to treat i and then love and nlp
+
+00:55:07.450 --> 00:55:11.410
+as a separate word it is not able to build a relationship
+
+00:55:11.410 --> 00:55:18.090
+anywhere between i love nlp i teach gen ai or basically i am
+
+00:55:18.090 --> 00:55:21.690
+working with uran so it is not able to understand a context
+
+00:55:21.690 --> 00:55:26.990
+between a data set which is again a major problem for us
+
+00:55:26.990 --> 00:55:33.170
+although it's a very simple to implement i would say uh
+
+00:55:33.170 --> 00:55:38.010
+simple to understand but still somewhere wherever i have to
+
+00:55:38.010 --> 00:55:41.530
+understand the semantics or syntactical meaning between a
+
+00:55:41.530 --> 00:55:44.750
+data a contextual meaning between a data i don't think that
+
+00:55:44.750 --> 00:55:48.930
+i will go ahead and i'll try to use one hot encoding yeah
+
+00:55:49.910 --> 00:55:50.030
+i'm also not so sure about one hot encoding is it accurate
+
+00:55:50.030 --> 00:55:50.250
+if it is correct and then if it is close let me try to use
+
+00:55:50.250 --> 00:55:52.070
+one hot encoding so i can try to use one hot encoding maybe
+
+00:55:52.070 --> 00:55:56.290
+i can try to use this one hot encoding uh in a machine
+
+00:55:56.290 --> 00:55:59.030
+learning problem statement so where i just have to like a i
+
+00:55:59.030 --> 00:56:02.030
+have a very limited categories i just have to convert those
+
+00:56:02.030 --> 00:56:04.950
+categories into maybe a numerical representation and yes we
+
+00:56:04.950 --> 00:56:07.930
+do use 100 encoding it's not like i'm saying that one hot
+
+00:56:07.930 --> 00:56:11.590
+encoding is completely useless list no not at all otherwise
+
+00:56:11.590 --> 00:56:13.670
+we would have not mentioned it in a syllabus otherwise
+
+00:56:13.670 --> 00:56:19.050
+people would not have like you know developed it so one hot
+
+00:56:19.050 --> 00:56:23.150
+encoding is useful but not in a context not in a situation
+
+00:56:23.150 --> 00:56:25.930
+so where we have to understand a meaning of the data and
+
+00:56:25.930 --> 00:56:29.010
+based on that we have to take certain actions so over there
+
+00:56:29.010 --> 00:56:33.470
+you should not use one hot encoding but i believe you all
+
+00:56:33.470 --> 00:56:36.770
+are able to understand that what was the purpose the purpose
+
+00:56:36.770 --> 00:56:39.850
+is was to convert my data set into its numerical
+
+00:56:39.850 --> 00:56:43.650
+representation we are happily able to do it now i can try to
+
+00:56:43.650 --> 00:56:46.390
+pass this data inside a machine learning algorithm maybe
+
+00:56:46.390 --> 00:56:50.030
+into a nlp algorithm maybe into some transformer model maybe
+
+00:56:50.030 --> 00:56:54.010
+into some rn lstm kind of a model so yes now these data sets
+
+00:56:54.010 --> 00:57:04.290
+are basically eligible enough fine yeah okay now moving to
+
+00:57:04.290 --> 00:57:09.190
+the next basically so samir is saying just curiosity why
+
+00:57:09.190 --> 00:57:12.650
+it's called as a one hot encoding see so it's giving you
+
+00:57:12.650 --> 00:57:15.990
+only one at a place so where that data set is basically
+
+00:57:15.990 --> 00:57:20.610
+found it's called as one hot means that that like here
+
+00:57:20.610 --> 00:57:23.630
+things are hot basically it's called as one hot encoding
+
+00:57:23.630 --> 00:57:27.570
+it's giving one basically for that particular hot places
+
+00:57:27.570 --> 00:57:33.030
+wherever we have a relevant data so now let's try to talk
+
+00:57:33.030 --> 00:57:36.870
+about a next approach right this is one of the approach like
+
+00:57:36.870 --> 00:57:39.250
+i said there are hundreds of approach not just one two or
+
+00:57:39.250 --> 00:57:42.030
+three but hundreds of approaches are available as we will
+
+00:57:42.030 --> 00:57:44.730
+progress and again these approaches are very much important
+
+00:57:44.730 --> 00:57:48.530
+to understand because at the end of the day you have to
+
+00:57:48.530 --> 00:57:51.550
+train our llm kind of a model or maybe slm if you have to
+
+00:57:51.550 --> 00:57:54.010
+train you have to understand all of these logics without
+
+00:57:54.010 --> 00:57:55.970
+that you can't do it yeah
+
+00:57:58.370 --> 00:58:05.440
+so here right so here let's try to talk about our next one
+
+00:58:05.440 --> 00:58:11.300
+which is called as bow a bag of word basically so bag of
+
+00:58:11.300 --> 00:58:14.440
+word eventually it is also going to convert your data into a
+
+00:58:14.440 --> 00:58:16.280
+numerical representation so that's representation technique
+
+00:58:16.280 --> 00:58:19.300
+is different obviously this is a bag of word is not going to
+
+00:58:19.300 --> 00:58:21.400
+follow the same technique that we have followed with respect
+
+00:58:21.400 --> 00:58:25.000
+to one hot encoding but yeah eventually it is going to
+
+00:58:25.000 --> 00:58:28.560
+convert your entire data set into its numerical
+
+00:58:28.560 --> 00:58:35.760
+representation so let's talk about a bag of word so it's
+
+00:58:35.760 --> 00:58:44.000
+called as b o w b o w okay so bag of word now so bag of word
+
+00:58:44.000 --> 00:58:48.340
+is basically a frequency based encoding technique and i
+
+00:58:48.340 --> 00:58:50.720
+believe we all understand what is the meaning of a frequency
+
+00:58:50.720 --> 00:58:54.440
+occurrence of a particular data set so basically bag of word
+
+00:58:54.440 --> 00:58:58.800
+is a frequency based encoding technique so where whatever
+
+00:58:58.800 --> 00:59:03.460
+sentence whatever document you are going to take will be
+
+00:59:03.460 --> 00:59:06.820
+represented in a vector space means one zero one zero or
+
+00:59:06.820 --> 00:59:09.460
+maybe something like that some numbers it is like in form of
+
+00:59:09.460 --> 00:59:14.700
+some numbers it is going to represent and vector length you
+
+00:59:14.720 --> 00:59:17.760
+the vector length that we are able to see over here right
+
+00:59:17.760 --> 00:59:20.560
+the vector length that we are able to see over here so
+
+00:59:20.560 --> 00:59:25.140
+vector length is equal to again a total number of unique
+
+00:59:25.140 --> 00:59:27.780
+word which is available so whenever i'm going to say vector
+
+00:59:27.780 --> 00:59:30.040
+length you can understand that this is what i'm talking
+
+00:59:30.040 --> 00:59:33.060
+about right this is the length of the vector so here length
+
+00:59:33.060 --> 00:59:35.880
+of the vector is basically 10 because we had basically 10
+
+00:59:35.880 --> 00:59:41.280
+unique words available with us right and in case of this bag
+
+00:59:41.280 --> 00:59:45.480
+of word the value of value that it is going to hold in each
+
+00:59:45.480 --> 00:59:47.820
+position so for example zero one zero one zero one which it
+
+00:59:47.820 --> 00:59:51.140
+was holding in one hot encoded so value in each position
+
+00:59:51.140 --> 00:59:55.520
+represented represents the number of times word appears in a
+
+00:59:55.520 --> 00:59:59.140
+particular sentence now what is the meaning of it because
+
+00:59:59.140 --> 01:00:01.880
+the third point which i said so this is actually holds the
+
+01:00:01.880 --> 01:00:07.820
+meaning of bag of word so here what i will do is so i'll try
+
+01:00:07.820 --> 01:00:10.620
+to do the implementation first and then eventually i will
+
+01:00:10.620 --> 01:00:12.860
+try to explain you what is the meaning of the third point
+
+01:00:12.860 --> 01:00:15.920
+because third point is important rest two point is like fine
+
+01:00:15.920 --> 01:00:19.700
+like anyone can understand so here i'm going to use this
+
+01:00:19.700 --> 01:00:23.320
+time a library i'm not going to write a custom code i can
+
+01:00:23.320 --> 01:00:25.180
+write the custom code that's completely fine you can even
+
+01:00:25.180 --> 01:00:27.260
+check a custom code inside the library because this is the
+
+01:00:27.260 --> 01:00:30.780
+open source library so anyone can go and anyone can check it
+
+01:00:30.780 --> 01:00:36.200
+dot text i can try to call and then import import what so
+
+01:00:36.200 --> 01:00:41.180
+import basically count vectorizer so this is the import guys
+
+01:00:41.180 --> 01:00:45.220
+that you all have to do for this implementation you can even
+
+01:00:45.220 --> 01:00:47.860
+try to go ahead with the same approach that i have applied
+
+01:00:47.860 --> 01:00:53.160
+with one hot you can write a code it is going to work for
+
+01:00:53.160 --> 01:00:57.060
+sure you can even go and check what this library says and
+
+01:00:57.060 --> 01:00:59.380
+then you will be able to write the code in either way like
+
+01:00:59.380 --> 01:01:04.100
+whatever like fits for you it's it's fine but yeah now here
+
+01:01:04.100 --> 01:01:06.500
+so what we can do is so as we have called this counter
+
+01:01:06.500 --> 01:01:12.980
+vectorizer so let's try to create a object for it so maybe i
+
+01:01:12.980 --> 01:01:17.680
+can name it as a vectorizer jdr not going after the spelling
+
+01:01:17.680 --> 01:01:23.260
+it's fine it could be wrong just a minute guys hello
+
+01:01:44.760 --> 01:01:52.740
+sorry guys i got some important call from a security okay so
+
+01:01:52.740 --> 01:01:56.600
+yeah i'm just trying to like initialize a variable counter
+
+01:01:56.600 --> 01:02:00.840
+vectorizer so counter vectorizer and this is like a object
+
+01:02:00.840 --> 01:02:05.340
+i'm trying to slice now so what i can do is i can try to
+
+01:02:05.340 --> 01:02:08.760
+maybe create a data so i can try to take a previous data
+
+01:02:08.760 --> 01:02:12.800
+itself so that it will be easy for us to the for the
+
+01:02:12.800 --> 01:02:17.000
+comparison that what one hot is doing and what this bow is
+
+01:02:17.000 --> 01:02:21.360
+doing so i can try to take the same data over here corpus
+
+01:02:21.360 --> 01:02:24.720
+same corpus i'm going to take now what i will do is I'll
+
+01:02:24.720 --> 01:02:29.860
+just try to call this vectorizer dot I can try to call fit
+
+01:02:29.860 --> 01:02:35.780
+sorry not fit fit transform I should call so I'm I'm going
+
+01:02:35.780 --> 01:02:40.700
+to pass the corpus over here okay so here it has given me
+
+01:02:40.700 --> 01:02:44.420
+some data said 3 by 9 is pass matrix of type class numpy in
+
+01:02:44.420 --> 01:02:48.120
+64 with 9 stored element in compressed sparse row format
+
+01:02:48.120 --> 01:02:51.160
+this is what is trying to say maybe I can try to store this
+
+01:02:51.160 --> 01:02:54.260
+one into some variable called as excellent suppose so into X
+
+01:02:54.260 --> 01:02:59.960
+I am going to store it now let me show you how this X looks
+
+01:02:59.960 --> 01:03:03.920
+like so I can try to call X dot to array and then this is
+
+01:03:03.920 --> 01:03:08.060
+how this entire data set looks like right this is how this
+
+01:03:08.060 --> 01:03:13.140
+entire data set looks like basically any differences you are
+
+01:03:13.140 --> 01:03:18.520
+able to observe guys anyone see we are able to convert our
+
+01:03:18.520 --> 01:03:22.700
+data set into a numerical representation again this time any
+
+01:03:22.700 --> 01:03:25.620
+differences that you guys are able to observe yes
+
+01:03:34.870 --> 01:03:36.170
+size
+
+01:03:50.480 --> 01:03:54.980
+of the vector yeah that's true Rajat why two ones Sunil
+
+01:03:54.980 --> 01:03:59.420
+enter sentence in one row okay size reduction that's fine
+
+01:03:59.420 --> 01:04:02.440
+for each sentences we have only one row that's great
+
+01:04:02.440 --> 01:04:06.600
+combined into a single row metric size is reduced that's
+
+01:04:06.600 --> 01:04:11.180
+true metric size is basically reduced we also multiple one
+
+01:04:11.180 --> 01:04:16.920
+1d matrixes sparsity is not there we have a sparsity but
+
+01:04:16.920 --> 01:04:16.920
+there is no such thing remember every third transfer one is
+
+01:04:16.920 --> 01:04:17.740
+already a 3d matrix since all the', the vectors are
+
+01:04:17.740 --> 01:04:23.060
+basically like showing you this one yes
+
+01:04:31.820 --> 01:04:35.240
+everyone. Yeah so
+
+01:04:45.870 --> 01:04:49.710
+here you must be able to observe that the kind of a metric
+
+01:04:49.710 --> 01:04:53.030
+says that I was able to generate last time so now if I'll
+
+01:04:53.030 --> 01:04:57.450
+show you once again the one-hot metrics says right so the
+
+01:04:57.450 --> 01:05:00.210
+kind of a matrix is that we were able to generate last time
+
+01:05:00.210 --> 01:05:04.390
+so far one single, I love an LP three were so three rows was
+
+01:05:04.390 --> 01:05:05.570
+there and then like you can see that they were originating
+
+01:05:05.570 --> 01:05:09.710
+all for four word for four row five word five row it has
+
+01:05:09.710 --> 01:05:12.990
+collapsed each and everything right it has technically
+
+01:05:12.990 --> 01:05:16.930
+collapsed each and everything into one single one so one row
+
+01:05:16.930 --> 01:05:20.690
+one sentence means one corpus or not one corpus i would say
+
+01:05:20.690 --> 01:05:23.830
+one document so one row is representing one sentence other
+
+01:05:23.830 --> 01:05:26.010
+another row is representing another sentence and then
+
+01:05:26.010 --> 01:05:30.070
+another row is representing the another sentences simple as
+
+01:05:30.070 --> 01:05:33.630
+simple as that now i can try to maybe like a print something
+
+01:05:33.630 --> 01:05:38.030
+uh more over here so maybe i can try to call my vectorizer i
+
+01:05:38.030 --> 01:05:44.010
+can try to call vectorizer dot so get feature name out so
+
+01:05:44.010 --> 01:05:47.470
+feature name out now these are the feature which was
+
+01:05:47.470 --> 01:05:55.070
+available so am so ai am your own gen love nlp teach with
+
+01:05:55.070 --> 01:05:59.710
+and working so these are the unique right these are the
+
+01:05:59.710 --> 01:06:03.410
+unique feature it has considered so these are the unique
+
+01:06:03.410 --> 01:06:06.750
+list of the data so are you able to see something missing
+
+01:06:06.750 --> 01:06:11.330
+over here by the way guys yeah are you able to see something
+
+01:06:11.330 --> 01:06:12.530
+missing i
+
+01:06:21.200 --> 01:06:24.020
+think it also apply the same word to index data because the
+
+01:06:24.020 --> 01:06:27.900
+position of one word to index is exactly same as the back of
+
+01:06:27.900 --> 01:06:31.680
+word it is applying it could be same it could be not so why
+
+01:06:31.680 --> 01:06:34.980
+is saying i is missing okay why it has nine element instead
+
+01:06:34.980 --> 01:06:37.760
+of 10 element yeah so this is the question right so
+
+01:06:37.760 --> 01:06:42.000
+something is missing and what is that something so something
+
+01:06:42.000 --> 01:06:45.520
+is basically i i think i is not there it is taking just nine
+
+01:06:45.520 --> 01:06:49.460
+right it is just considering nine so where is my i by the
+
+01:06:49.460 --> 01:06:53.020
+way okay by the way i have not done any kind of a data
+
+01:06:53.020 --> 01:06:55.500
+processing so i have just passed the raw data this is my raw
+
+01:06:55.500 --> 01:06:58.660
+data right and so i have just passed the raw data and when
+
+01:06:58.660 --> 01:07:02.080
+i'm trying to like fit it and i'm trying to print it so it
+
+01:07:02.080 --> 01:07:04.840
+looks like so this is the feature it is able to understand
+
+01:07:04.840 --> 01:07:10.160
+but it looks like that it is missing basically i right so by
+
+01:07:10.160 --> 01:07:13.140
+default the counter vectorizer that you have created over
+
+01:07:13.140 --> 01:07:17.120
+here Yes, so it holds so many, right? It holds so many
+
+01:07:17.120 --> 01:07:20.520
+different, different, I would say, so many different,
+
+01:07:20.620 --> 01:07:23.380
+different parameters. Now, there is a parameter you will be
+
+01:07:23.380 --> 01:07:25.980
+able to find out called as stop words.
+
+01:07:28.990 --> 01:07:32.790
+Yes, there is a parameter called as stop words you will be
+
+01:07:32.790 --> 01:07:36.650
+able to find out over here. Now, can I say that by default
+
+01:07:36.650 --> 01:07:40.090
+inside a corpus or by default inside like a stop words
+
+01:07:40.090 --> 01:07:45.250
+corpus, there will be I, yeah? Yeah, so basically stop word
+
+01:07:45.250 --> 01:07:47.930
+is removed automatically. So maybe I can try to call over
+
+01:07:47.930 --> 01:07:51.850
+here, stop words is equals to none. And then maybe if I'll
+
+01:07:51.850 --> 01:07:53.350
+try to like check it.
+
+01:07:56.940 --> 01:08:01.780
+Okay, let's see if it is able to include I or not. It
+
+01:08:05.330 --> 01:08:14.170
+should have include I. So let me change it to ICAP. Let's
+
+01:08:14.170 --> 01:08:20.510
+see, because counter none, none, none, this, this.
+
+01:08:28.000 --> 01:08:30.080
+Why? Why it is not considering.
+
+01:08:34.500 --> 01:08:37.460
+So yeah, by the way, it is removing I, but I'm just trying
+
+01:08:37.460 --> 01:08:38.140
+to include I.
+
+01:08:43.210 --> 01:08:46.670
+And anyhow, even if I've written I into a uppercase, right?
+
+01:08:46.710 --> 01:08:49.470
+So this counter vectorizer by default converts all the data
+
+01:08:49.470 --> 01:08:50.590
+into a lower cases.
+
+01:08:56.130 --> 01:09:00.570
+So maybe what I can do is I can write one more parameter,
+
+01:09:00.950 --> 01:09:05.590
+lower case. So lower case, because by default, it is
+
+01:09:05.590 --> 01:09:08.390
+converting everything into the lower case. So I can maybe
+
+01:09:08.390 --> 01:09:13.210
+try to write lower case is equals to false. Then let's
+
+01:09:13.210 --> 01:09:13.630
+check.
+
+01:09:17.130 --> 01:09:20.650
+Still it's removing. Maybe
+
+01:09:28.200 --> 01:09:33.820
+I can test some other parameter. Vocabulary parameter.
+
+01:09:34.800 --> 01:09:41.020
+Vocabulary is equals to unique words. So basically by
+
+01:09:41.020 --> 01:09:46.480
+default, this is like removing my I, which I don't want, by
+
+01:09:46.480 --> 01:09:52.280
+the way. Yeah, now it's been included. I is included. So
+
+01:09:52.280 --> 01:09:56.400
+unique word. Vocabulary is equal to unique words. So
+
+01:09:56.400 --> 01:10:00.160
+basically I'm trying to say that. So ideally, right?
+
+01:10:00.280 --> 01:10:03.900
+Ideally, you must be able to observe that it is trying to do
+
+01:10:03.900 --> 01:10:06.820
+the exact same thing which we have written in this code.
+
+01:10:08.060 --> 01:10:11.940
+Yeah, except that it is not trying to create multiple
+
+01:10:11.940 --> 01:10:16.020
+matrices or multiple rows for one single word. So what it's
+
+01:10:16.020 --> 01:10:18.720
+trying to do is it is trying to create one single row and
+
+01:10:18.720 --> 01:10:22.920
+then it is trying to place 10101010 and so on. So as per the
+
+01:10:22.920 --> 01:10:27.800
+data set that we have. Making sense, guys? All of us? Yeah?
+
+01:10:29.060 --> 01:10:31.620
+A difference between BOW and one hot?
+
+01:10:46.990 --> 01:10:50.890
+Yes? Okay. That is saying English are built up to stop
+
+01:10:50.890 --> 01:10:53.230
+words. English is, there is a several known issue with the
+
+01:10:53.230 --> 01:10:56.970
+English and you should consider the alternative stop words.
+
+01:10:57.210 --> 01:10:59.610
+I'm not able to understand, Jaidul, what you're trying to
+
+01:10:59.610 --> 01:11:04.790
+say. Yeah? Okay. So technically, we are able to observe
+
+01:11:04.790 --> 01:11:08.650
+that, that it is trying to remove, stop words automatically.
+
+01:11:08.950 --> 01:11:11.150
+But yeah, you have a control basically. So they have given
+
+01:11:11.150 --> 01:11:13.450
+you a multiple parameters. So based on the parameter, you
+
+01:11:13.450 --> 01:11:16.390
+will be able to control. And it's not very different from
+
+01:11:16.390 --> 01:11:19.590
+one hot. The only thing is that it is trying to reduce the
+
+01:11:19.590 --> 01:11:22.210
+space, the space that it is going to take. So obviously, it
+
+01:11:22.210 --> 01:11:25.970
+is trying to reduce the space, which your final matrices or
+
+01:11:25.970 --> 01:11:28.630
+your final conversion is going to consider. But eventually,
+
+01:11:28.670 --> 01:11:31.670
+it is trying to do the exact same thing. It is not doing
+
+01:11:31.670 --> 01:11:34.950
+anything different. And again, it is not able to understand
+
+01:11:34.950 --> 01:11:38.930
+the context of the data. Part number two, right? It is not
+
+01:11:38.930 --> 01:11:41.090
+able to understand the relationship between the data. So I
+
+01:11:41.090 --> 01:11:46.650
+love NLP is same as NLP I love. Right? So for this one, for
+
+01:11:46.650 --> 01:11:52.470
+the bag of word, I love NLP is same as NLP I love or love I
+
+01:11:52.470 --> 01:11:58.990
+NLP or like NLP love I. It's completely same, right? It's
+
+01:11:58.990 --> 01:12:01.210
+completely same because internally, it will try to find out
+
+01:12:01.210 --> 01:12:03.310
+the index that the way we were trying to find out with the
+
+01:12:03.310 --> 01:12:06.270
+help of enumeration. And then eventually, it will be able
+
+01:12:06.270 --> 01:12:09.570
+to, to create this particular vector. So it's almost, almost
+
+01:12:09.570 --> 01:12:13.170
+similar, but yeah, much more optimized. I would say much
+
+01:12:13.170 --> 01:12:17.130
+more optimized than the previous one. But length of the
+
+01:12:17.130 --> 01:12:21.190
+vector is again going to be the number of unique, right? So
+
+01:12:21.190 --> 01:12:23.210
+length of the vector is always going to be the number of
+
+01:12:23.210 --> 01:12:25.750
+unique data, which is available inside the data set. As
+
+01:12:25.750 --> 01:12:26.850
+simple as that.
+
+01:12:34.540 --> 01:12:36.060
+Fine guys, everyone.
+
+01:12:45.560 --> 01:12:48.280
+So technically, it is not capturing a relationship. And
+
+01:12:48.280 --> 01:12:51.560
+obviously, length of the metrics is again, length is not
+
+01:12:51.560 --> 01:12:54.600
+going to change like number of times it was going to repeat.
+
+01:12:54.780 --> 01:12:56.320
+Yes, that has changed. A
+
+01:13:00.860 --> 01:13:05.300
+person is asking 7068 why it's called then as a frequency
+
+01:13:05.300 --> 01:13:10.520
+term algorithm. Okay, so it's basically called as frequency
+
+01:13:10.520 --> 01:13:14.320
+term algorithm because it is trying to tell you that. Okay,
+
+01:13:14.360 --> 01:13:20.120
+so it's basically one time this data set is appearing one
+
+01:13:20.120 --> 01:13:23.440
+time. This data set is appearing. For example, let me change
+
+01:13:23.440 --> 01:13:29.520
+our data set over here. So, I love NLP, NLP and NLP. Yeah, I
+
+01:13:29.520 --> 01:13:33.520
+love basically Gen AI and then I can try to do Gen AI and
+
+01:13:33.520 --> 01:13:37.860
+Gen AI. I am working with something like working, working,
+
+01:13:37.960 --> 01:13:43.700
+working. Okay, now. Are you able to understand now? So I
+
+01:13:43.700 --> 01:13:46.420
+have made a very first statement guys, a very first
+
+01:13:46.420 --> 01:13:48.780
+statement I have made. So I said that, so when I was trying
+
+01:13:48.780 --> 01:13:53.020
+to talk about this BOW, so I said that that it's basically a
+
+01:13:53.020 --> 01:13:56.980
+frequency based encoding technique. Yep, frequency based
+
+01:13:56.980 --> 01:13:59.480
+encoding technique. Are you able to get the point frequency?
+
+01:13:59.520 --> 01:14:01.300
+What is the meaning of frequency based encoding technique?
+
+01:14:03.040 --> 01:14:07.980
+So basically this 101010 0 is fine, right? But the number
+
+01:14:07.980 --> 01:14:10.420
+one which it is trying to represent. So it's basically
+
+01:14:10.420 --> 01:14:15.360
+representing the frequency of the data set. Making sense
+
+01:14:15.360 --> 01:14:19.860
+guys. Will it always be one or zero? Not at all. This is the
+
+01:14:19.860 --> 01:14:22.960
+solution. This is the answer open for you. So sorry, Puma,
+
+01:14:23.100 --> 01:14:24.800
+why does the question, right?
+
+01:14:27.730 --> 01:14:31.150
+But it yeah, so I just changed my data and it'll be and
+
+01:14:31.150 --> 01:14:32.990
+it'll be and it'll be multiple times three times. So yeah,
+
+01:14:33.030 --> 01:14:36.330
+I'm able to see there is like three times I can interpret
+
+01:14:36.330 --> 01:14:39.850
+this one so I will be able to see a multiple records. Yeah,
+
+01:14:39.950 --> 01:14:41.970
+so there is something which is appearing again three times
+
+01:14:41.970 --> 01:14:44.170
+again three times. Something is appearing maybe two times.
+
+01:14:44.310 --> 01:14:49.150
+So basically this is this vector is actually representing of
+
+01:14:49.150 --> 01:14:55.050
+frequency. So BOW bag of word is called as frequency based
+
+01:14:55.050 --> 01:14:58.730
+encoding technique. As simple. As that fine.
+
+01:15:03.320 --> 01:15:09.340
+So we move ahead next for I it has not increased. Maybe
+
+01:15:09.340 --> 01:15:12.100
+still it is considering I as a stop word. So it is removing
+
+01:15:12.100 --> 01:15:15.140
+it. Maybe I'll have to look into the parameter and fix it.
+
+01:15:15.220 --> 01:15:17.960
+But yeah, I used to considering as a stop word as of now.
+
+01:15:18.280 --> 01:15:21.300
+Just I have to look into the parameter. That's it to fix it.
+
+01:15:25.220 --> 01:15:29.560
+Okay, so now guys moving ahead and moving ahead with the
+
+01:15:29.560 --> 01:15:34.940
+next encoding technique which is called as TF IDF term
+
+01:15:34.940 --> 01:15:39.020
+frequency. Inverse document frequency. That's a full form of
+
+01:15:39.020 --> 01:15:43.600
+TF and IDF. So let's so a code once. Okay, let me ping a
+
+01:15:43.600 --> 01:15:47.200
+code inside your chat itself. So this is the line number one
+
+01:15:47.200 --> 01:15:53.020
+for this code. This is a line number two for this code. And
+
+01:15:53.020 --> 01:15:58.100
+then here is basically a corpus that I have taken then
+
+01:16:00.180 --> 01:16:06.600
+calling. To array to see the result and this is to print all
+
+01:16:06.600 --> 01:16:09.560
+the unique features. Which it has considered. Yeah. So I've
+
+01:16:09.560 --> 01:16:14.380
+just bring you the code inside your chat everyone. Okay, now
+
+01:16:14.380 --> 01:16:18.920
+so now moving to the next technique called as TF IDF term
+
+01:16:18.920 --> 01:16:22.940
+frequency IDF. Hope all of you are not getting bored guys.
+
+01:16:23.100 --> 01:16:25.900
+All of you are enjoying the class and you are able to
+
+01:16:25.900 --> 01:16:32.780
+understand whatever we are talking about. Term. Frequency. I
+
+01:16:32.780 --> 01:16:37.000
+N V R S C inverse DOCU MANT. Sorry, not document. It's a
+
+01:16:37.000 --> 01:16:45.500
+document. Document document frequency. Okay. So now we are
+
+01:16:45.500 --> 01:16:48.460
+going to talk about basically TF IDF term frequency inverse
+
+01:16:48.460 --> 01:16:51.600
+document frequency. What is the meaning of it? Let's try to
+
+01:16:51.600 --> 01:16:55.220
+understand again. This is a very like a beautiful like a
+
+01:16:55.220 --> 01:16:58.360
+things to understand. I would say and very logical. I would
+
+01:16:58.360 --> 01:17:00.780
+say so all of you will be able to understand. Don't worry.
+
+01:17:00.880 --> 01:17:03.540
+I'll try to explain you in a step-by-step manner. Not just
+
+01:17:03.540 --> 01:17:06.840
+by calling a library. So Tom frequency inverse document
+
+01:17:06.840 --> 01:17:09.740
+frequency. First of all. Let's try to understand. What is
+
+01:17:09.740 --> 01:17:14.580
+the meaning of it? So the meaning of TF term frequency it
+
+01:17:14.580 --> 01:17:19.620
+says that formula wise. It says that that number of times
+
+01:17:19.620 --> 01:17:24.820
+word appear into a document divided by so here number
+
+01:17:26.580 --> 01:17:28.380
+of times.
+
+01:17:32.640 --> 01:17:33.220
+Word
+
+01:17:35.720 --> 01:17:40.440
+appeared in document document means one sentence or maybe I
+
+01:17:40.440 --> 01:17:44.680
+can write even sentences. That's fine. Divided by. Divided
+
+01:17:44.680 --> 01:17:54.620
+by total number of word total number of word in document. So
+
+01:17:54.620 --> 01:17:57.680
+this is the meaning of term frequency will try to do even a
+
+01:17:57.680 --> 01:18:00.360
+calculation. So don't worry about it. I'll try to show you
+
+01:18:00.360 --> 01:18:05.180
+that part as well. Then IDF inverse document frequency. What
+
+01:18:05.180 --> 01:18:09.100
+is that? So it's nothing but a logarithmic of basically
+
+01:18:09.100 --> 01:18:13.080
+total number of a document total.
+
+01:18:15.830 --> 01:18:24.010
+Number of document divided by number of document. Number of
+
+01:18:24.010 --> 01:18:26.770
+document containing
+
+01:18:29.560 --> 01:18:30.940
+particular
+
+01:18:33.400 --> 01:18:37.200
+word basically. So this is the formula for TF and this is
+
+01:18:37.200 --> 01:18:42.000
+the formula of IDF now. So we try to find out basically TF
+
+01:18:42.000 --> 01:18:49.360
+IDF for any word basically and then that represents. So TF
+
+01:18:49.360 --> 01:18:54.380
+IDF is nothing but. TF into IDF. We try to find out now this
+
+01:18:54.380 --> 01:18:57.940
+TF into IDF which is called as TF IDF. So this actually
+
+01:18:57.940 --> 01:19:02.480
+represents a numeric format of a particular word and this is
+
+01:19:02.480 --> 01:19:09.000
+the calculation for the same as simple as that. Now let's do
+
+01:19:09.000 --> 01:19:15.480
+a small calculation by the way. So here here I'm going to do
+
+01:19:15.480 --> 01:19:18.940
+a manual calculation first of all. So here let's suppose I'm
+
+01:19:18.940 --> 01:19:29.340
+going to take a sentence. My name is S U D H fine. So this
+
+01:19:29.340 --> 01:19:32.360
+is one of the sentence. I have taken one of the sentence
+
+01:19:32.360 --> 01:19:40.720
+then I teach AI. Let's suppose this is the another sentence.
+
+01:19:41.260 --> 01:19:44.360
+Okay. So this is the sentence. I have taken guys basically
+
+01:19:44.360 --> 01:19:49.600
+my name is S U D H and then I teach AI now here inside this
+
+01:19:49.600 --> 01:19:52.280
+sentence basically. So I have can I say two documents
+
+01:19:52.280 --> 01:19:56.460
+document number one this one and then document number two
+
+01:19:56.460 --> 01:20:00.120
+this one. Yeah, so I have basically two sentences or I can
+
+01:20:00.120 --> 01:20:03.980
+say two documents. I have as simple as that. I don't already
+
+01:20:03.980 --> 01:20:08.240
+told you that document simply means that one sentence I'm
+
+01:20:08.240 --> 01:20:12.720
+talking about. Okay, so I have technically two document over
+
+01:20:12.720 --> 01:20:18.260
+here. Now I have to find out a TF IDF of each and every word
+
+01:20:18.260 --> 01:20:21.740
+if I'm able to find out a TF. IDF of each and every word.
+
+01:20:22.300 --> 01:20:25.600
+Technically, I will be able to convert my entire data set
+
+01:20:25.600 --> 01:20:29.600
+into its numerical representation. Okay, fine. That's great.
+
+01:20:29.900 --> 01:20:34.460
+So first of all, if I have to calculate what is a TF IDF of
+
+01:20:34.460 --> 01:20:39.020
+this word called as my okay. So I'll try to calculate TF
+
+01:20:39.020 --> 01:20:43.680
+first and then I'll try to multiply with the IDF. It will be
+
+01:20:43.680 --> 01:20:48.320
+able to give me what is a TF IDF of my now to calculate a TF
+
+01:20:48.320 --> 01:20:51.640
+IDF of my so obviously. TF calculation. I have to do and
+
+01:20:51.640 --> 01:20:55.440
+then IDF calculation. I have to do now TF calculation how I
+
+01:20:55.440 --> 01:20:59.420
+will be able to do it. So what TF says TF says that number
+
+01:20:59.420 --> 01:21:05.600
+of times word appears in a document number of times what
+
+01:21:05.600 --> 01:21:10.880
+appears into a document now my is appearing how many times
+
+01:21:10.880 --> 01:21:17.350
+yeah, my is appearing how many times in this document?
+
+01:21:32.440 --> 01:21:36.660
+Yes guys. My is appearing. How many times? In a document
+
+01:21:36.660 --> 01:21:40.480
+document miss only first document. Yeah, so my is appearing
+
+01:21:40.480 --> 01:21:43.700
+only one times divided by total number of word in a
+
+01:21:43.700 --> 01:21:48.860
+document. So 1 2 3 4. My name is so right. So 1 by 4 sorted
+
+01:21:48.860 --> 01:21:52.920
+now logarithmic of total number of documents. So what is the
+
+01:21:52.920 --> 01:21:55.580
+total number document that we have to document? We have so
+
+01:21:55.580 --> 01:22:00.760
+okay fine to number of document containing a word. So my
+
+01:22:00.760 --> 01:22:04.840
+contained by how many documents so my basically contained by
+
+01:22:04.840 --> 01:22:09.260
+only. One document so logarithmic of base 10 to you will be
+
+01:22:09.260 --> 01:22:12.220
+able to find out so you can do the math and you will be able
+
+01:22:12.220 --> 01:22:15.880
+to find out TF IDF. So you will be able to find out a
+
+01:22:15.880 --> 01:22:19.300
+numerical representation of my simple. Yes guys everyone.
+
+01:22:22.320 --> 01:22:28.040
+So now I think we know for my name is so I teach AI for all
+
+01:22:28.040 --> 01:22:30.880
+this data which is available inside my data set inside my
+
+01:22:30.880 --> 01:22:34.040
+corpus, right? I will be able to find out its numerical
+
+01:22:34.040 --> 01:22:38.900
+representation. Yes or no. Can I say that I will be able to
+
+01:22:38.900 --> 01:22:41.740
+find out its numerical representation easiest possible in a
+
+01:22:41.740 --> 01:22:45.000
+very very easy as possible way. Even if someone is going to
+
+01:22:45.000 --> 01:22:48.920
+ask me like do the math manually. I think I can do it not
+
+01:22:50.750 --> 01:22:53.490
+for the like a millions of word. Obviously, I'll use
+
+01:22:53.490 --> 01:22:54.250
+computer and calculator.
+
+01:22:57.220 --> 01:22:57.920
+Yes guys.
+
+01:23:03.780 --> 01:23:06.340
+They once you are asking something to your own. Okay, fine.
+
+01:23:06.460 --> 01:23:08.540
+You can ask something to your own. That's fine. You don't
+
+01:23:08.540 --> 01:23:11.080
+will give you answer. Anyhow, I'm going to discuss about the
+
+01:23:11.080 --> 01:23:15.020
+C bar and all those things into what to vectors. Those
+
+01:23:15.020 --> 01:23:22.220
+topics will anyhow come. Fine guys sorted all of us. Yeah,
+
+01:23:22.220 --> 01:23:26.600
+all of us are sorted. Basically that how I will be able to
+
+01:23:26.600 --> 01:23:29.600
+find out like a numerical representation with the help of
+
+01:23:29.600 --> 01:23:32.340
+term frequency inverse document frequency. So if I'm able to
+
+01:23:32.340 --> 01:23:35.100
+find out for my similarly for name similarly for is
+
+01:23:35.100 --> 01:23:38.500
+similarly for a studio similarly for I teach and AI. So for
+
+01:23:38.500 --> 01:23:42.760
+all these things will be able to find out.
+
+01:23:48.670 --> 01:23:51.850
+Yes, rather than saying this is the 0.17 is the value of
+
+01:23:51.850 --> 01:23:54.830
+sake. Yes, TF IDF is 0.07. Yeah, you can you can do the
+
+01:23:54.830 --> 01:23:57.830
+calculation. That's fine. That's I'm leaving up to you. But
+
+01:23:57.830 --> 01:24:01.270
+yeah, this is how guys TF IDF calculation actually happens.
+
+01:24:01.450 --> 01:24:04.750
+Now, let's try to do it programmatically. So I'm going to
+
+01:24:04.750 --> 01:24:08.370
+consider my corpus. So corpus. I have already created my
+
+01:24:08.370 --> 01:24:11.090
+corpus here. So same corpus. I'm going to consider. I love
+
+01:24:11.090 --> 01:24:14.290
+an LP and LP and LP it Jenny Jenny Jenny simple. So this is
+
+01:24:14.290 --> 01:24:17.670
+the same corpus. Let's try to consider what I can do is I
+
+01:24:17.670 --> 01:24:20.090
+can. I can try to maybe call a library. So maybe I can even
+
+01:24:20.090 --> 01:24:23.150
+do a manually. So I it's not very difficult to do it
+
+01:24:23.150 --> 01:24:26.090
+manually without using a library that that's fine because we
+
+01:24:26.090 --> 01:24:28.310
+know the math. So we can do a manual calculation in the
+
+01:24:28.310 --> 01:24:30.190
+easiest possible way. It's a very very easy algorithm to
+
+01:24:30.190 --> 01:24:34.890
+implement. Anyhow, even in a manual way. So a skill on dot.
+
+01:24:36.670 --> 01:24:42.830
+Feature extraction dot text. I can say so import what so
+
+01:24:42.830 --> 01:24:48.490
+import basically TF IDF vectorizer. Okay, TF. IDF vectorizer
+
+01:24:48.490 --> 01:24:52.510
+fine call it call this library corpus is ready. So I'm going
+
+01:24:52.510 --> 01:24:55.470
+to take the same corpus which I have taken before. So I'm
+
+01:24:55.470 --> 01:24:58.190
+going to create the object for this one. So TF IDF
+
+01:24:58.190 --> 01:25:07.070
+vectorizer and and and and vectorizer VCT underscore TF
+
+01:25:07.070 --> 01:25:10.290
+underscore IDF. Maybe I can try to store it in this
+
+01:25:10.290 --> 01:25:14.190
+variable. So vector of TF IDF. I'm going to store it. Okay.
+
+01:25:14.910 --> 01:25:19.650
+Now simple object this object. Dot fit transform. I can try
+
+01:25:19.650 --> 01:25:22.710
+to call over here and then I can try to pass my corpus
+
+01:25:22.710 --> 01:25:27.270
+corpus. I can try to pass. So okay, this will be done. This
+
+01:25:27.270 --> 01:25:31.150
+will be created. So maybe I can try to save it inside some
+
+01:25:31.150 --> 01:25:35.050
+data. So maybe into my VX. I can try to store it and then I
+
+01:25:35.050 --> 01:25:40.190
+can try to call X dot a double R a Y array to see the result
+
+01:25:40.190 --> 01:25:48.110
+X dot array. X dot two array. I can try to call. Sorry made
+
+01:25:48.110 --> 01:25:55.810
+a mistake. So now this is something that we have ended up
+
+01:25:55.810 --> 01:26:01.550
+creating data number one data number two and then data
+
+01:26:01.550 --> 01:26:05.270
+number three simple. So this is something that we are able
+
+01:26:05.270 --> 01:26:08.930
+to create. So data number one and two and three. So this is
+
+01:26:08.930 --> 01:26:12.550
+for a sentence number one. This is for a sentence number two
+
+01:26:12.550 --> 01:26:16.910
+and this is for a sentence number three. We are able. To
+
+01:26:16.910 --> 01:26:23.770
+create now, it's not same as like a B or W or one hot that
+
+01:26:23.770 --> 01:26:26.850
+we have calculated, right? It's very different. It's very
+
+01:26:26.850 --> 01:26:30.610
+different over here. Now, you will be able to get some of
+
+01:26:30.610 --> 01:26:33.650
+the advantages basically. So when you are going to use a TF
+
+01:26:33.650 --> 01:26:36.950
+IDF now, what are the advantages that you will be able to
+
+01:26:36.950 --> 01:26:43.310
+get? So what TF IDF will do is if frequency of occurrence of
+
+01:26:43.310 --> 01:26:48.750
+a data is very very high. Right? If there are so many words
+
+01:26:48.750 --> 01:26:54.850
+like I is am the all those things it will be able to impact.
+
+01:26:56.090 --> 01:27:01.310
+Those words directly how so it is going to reduce our
+
+01:27:01.310 --> 01:27:05.690
+overall weightage or it is going to reduce overall impact of
+
+01:27:05.690 --> 01:27:10.310
+those words. If they are going to appear very very
+
+01:27:10.310 --> 01:27:15.590
+frequently how it is going to impact. So for example, if I'm
+
+01:27:15.590 --> 01:27:25.030
+going to take. Maybe a data over here. I am I am I am any
+
+01:27:25.030 --> 01:27:29.990
+word. So S U D H. This is one of my sentence. Now the next
+
+01:27:29.990 --> 01:27:37.830
+sentence is I am I am. This is the another sentence. Now
+
+01:27:37.830 --> 01:27:43.890
+another sentence. Maybe I can consider I am E U R O N fine.
+
+01:27:44.090 --> 01:27:49.470
+So as you can see I am. I am I am I am is a separate word.
+
+01:27:49.550 --> 01:27:52.570
+Right? So I am I am I am is appearing multiple times over
+
+01:27:52.570 --> 01:27:56.570
+here. Now if you will try to find out a term frequency of
+
+01:27:56.570 --> 01:27:59.990
+this particular I if you're going to find out the term
+
+01:27:59.990 --> 01:28:05.130
+frequency. So this particular I for a very first document if
+
+01:28:05.130 --> 01:28:09.710
+you are going to find out. So I am I am I am and then S U D
+
+01:28:09.710 --> 01:28:13.630
+H. So how many times I is appearing? So 1 2 3 3 times in a
+
+01:28:13.630 --> 01:28:18.290
+first itself. So 3 divided by 1 2. 3 4 5 6 7 divided by
+
+01:28:18.290 --> 01:28:21.170
+total number of a data. If I'll talk about IDF. So total
+
+01:28:21.170 --> 01:28:24.530
+number of document is basically 3 logarithmic of so
+
+01:28:24.530 --> 01:28:29.930
+basically 3 divided by number of document containing W. So
+
+01:28:29.930 --> 01:28:33.390
+all the document is basically containing W. All the document
+
+01:28:33.390 --> 01:28:36.990
+is containing W. So log of 1. What is the value of log of 1
+
+01:28:36.990 --> 01:28:41.930
+guide? By the way guys, can I say 0? Yeah, so 0 x anything
+
+01:28:41.930 --> 01:28:47.150
+is equal to 0. Yes, everyone agree.
+
+01:28:53.830 --> 01:28:55.750
+So what do you what are you able to understand by this
+
+01:28:55.750 --> 01:28:58.610
+example? The example which I'm trying to give you I am I am
+
+01:28:58.610 --> 01:29:00.550
+I am what you are able to understand out of this example.
+
+01:29:04.810 --> 01:29:08.630
+Can I say that that if something is appearing again and
+
+01:29:08.630 --> 01:29:11.710
+again and again in all the documents or in most of the
+
+01:29:11.710 --> 01:29:18.490
+documents. So it is going to reduce its value. Yes, it is
+
+01:29:18.490 --> 01:29:21.110
+going to reduce its value. It simply means that it is going
+
+01:29:21.110 --> 01:29:24.970
+to reduce its effect. And if something is very very unique,
+
+01:29:25.050 --> 01:29:27.690
+for example, S U D H. For example, you run over here, right?
+
+01:29:28.450 --> 01:29:31.410
+If something is very very unique. So obviously the weightage
+
+01:29:31.410 --> 01:29:34.930
+of that one. It's not going to be make 0 Jaidul basically
+
+01:29:34.930 --> 01:29:37.810
+see let's suppose I am is not available in my third
+
+01:29:37.810 --> 01:29:39.830
+document. I am is not available, right? So it will be
+
+01:29:39.830 --> 01:29:42.770
+divided by 2 but it will be very much very very small
+
+01:29:42.770 --> 01:29:45.950
+number, right? It is going to be very very small number. So
+
+01:29:45.950 --> 01:29:47.890
+I'm not saying that I am will be available in all the
+
+01:29:47.890 --> 01:29:50.190
+document. Let's suppose it's not available. But yeah, it's
+
+01:29:50.190 --> 01:29:52.890
+available in most of the document. So if it is available in
+
+01:29:52.890 --> 01:29:55.650
+all the document, obviously it is going to be 0 and if it is
+
+01:29:55.650 --> 01:29:58.210
+available in most of the document, it simply means that it's
+
+01:29:58.210 --> 01:30:01.090
+a. Most frequent word or the data which is available. So it
+
+01:30:01.090 --> 01:30:03.730
+is going to reduce its impact means it is going to reduce
+
+01:30:03.730 --> 01:30:08.270
+the value. If something is very very unique, it is going to
+
+01:30:08.270 --> 01:30:15.190
+give a more values more weightage. Right? So if the data is
+
+01:30:15.190 --> 01:30:19.110
+unique, if the words inside your data set is unique, then it
+
+01:30:19.110 --> 01:30:22.450
+is going to assign higher value. If it is not unique if it
+
+01:30:22.450 --> 01:30:27.070
+is like very much common amongst all the like all the data
+
+01:30:27.070 --> 01:30:29.850
+set. So in that case, all the documents in that case, it is
+
+01:30:29.850 --> 01:30:33.990
+going to reduce its impact. So again without even doing an
+
+01:30:33.990 --> 01:30:36.630
+implementation of a stop words, I would say we are able to
+
+01:30:36.630 --> 01:30:40.010
+handle even that situation. This is the beauty of TF IDF,
+
+01:30:40.150 --> 01:30:44.150
+right? So it always try to reduce a impact of all the common
+
+01:30:44.150 --> 01:30:46.810
+words, whatever converse that you will be able to find out
+
+01:30:46.810 --> 01:30:50.550
+and it will always try to give a importance or you can say a
+
+01:30:50.550 --> 01:30:55.110
+more importance to a rare words, right to a meaningful
+
+01:30:55.110 --> 01:31:02.490
+words. And yes, it is trying to create a sparse data. We
+
+01:31:02.490 --> 01:31:05.950
+have a zero zero zero, no doubt, right? But if you are going
+
+01:31:05.950 --> 01:31:10.170
+to compare with respect to any other data that we are able
+
+01:31:10.170 --> 01:31:14.510
+to create, it's not right comparison wise, right? So
+
+01:31:14.510 --> 01:31:18.090
+competitively, it is trying to create a less sparse as
+
+01:31:18.090 --> 01:31:23.270
+compared to any other like a data or any other method that
+
+01:31:23.270 --> 01:31:27.010
+we have used so far. One hot or bow out of those, right? So
+
+01:31:27.010 --> 01:31:30.450
+this is basically an advantage. You will be able to get out
+
+01:31:30.450 --> 01:31:33.690
+of TF IDF. Now, if I'll talk about our limitations, what is
+
+01:31:33.690 --> 01:31:38.690
+the limitation now? So again, TF IDF is not able to capture
+
+01:31:38.690 --> 01:31:43.450
+the context or the order of a word. It is not going to
+
+01:31:43.450 --> 01:31:45.470
+capture that which is going to come after what it's
+
+01:31:45.470 --> 01:31:48.330
+completely fine for it, right? It is never going to capture
+
+01:31:48.330 --> 01:31:54.550
+the order or the context and again. So if my vocabulary size
+
+01:31:54.550 --> 01:31:58.170
+is very very high, so in the same proportion, my sparse data
+
+01:31:58.170 --> 01:32:02.790
+will keep on increasing plus it's computationally expensive
+
+01:32:02.790 --> 01:32:07.330
+as it is trying to do a calculation for each and every word,
+
+01:32:07.450 --> 01:32:11.450
+right? So TF and IDF, it is trying to calculate for all the
+
+01:32:11.450 --> 01:32:14.950
+words. So if I have 1 million word, not a sentence, 1
+
+01:32:14.950 --> 01:32:18.850
+million words. So for all the 1 million word, it is trying
+
+01:32:18.850 --> 01:32:22.430
+to do the math, same math that we have done manually. Yeah,
+
+01:32:22.870 --> 01:32:28.530
+so computationally, this approach is expensive. So this is
+
+01:32:28.530 --> 01:32:31.310
+the advantage and this is the disadvantage of TF and IDF.
+
+01:32:31.390 --> 01:32:34.030
+Hope all of you are able to understand it guys. Any doubt,
+
+01:32:34.190 --> 01:32:40.650
+please ask me in the chat. So Arpan is asking sir, why then
+
+01:32:40.650 --> 01:32:45.830
+why they use a log just to diminish or just I would say to
+
+01:32:45.830 --> 01:32:53.150
+reduce the impact of a frequent one and as log as your like
+
+01:32:53.150 --> 01:32:57.710
+linear data set increases log will never increase. In the
+
+01:32:57.710 --> 01:33:00.330
+same proportion. So that's the reason. So we are going to
+
+01:33:00.330 --> 01:33:02.230
+use a log over there making
+
+01:33:05.660 --> 01:33:08.520
+sense to all of us guys. Hope all of us are able to
+
+01:33:08.520 --> 01:33:11.320
+understand this part. The part that I'm talking about as of
+
+01:33:11.320 --> 01:33:12.600
+now guys.
+
+01:33:16.230 --> 01:33:18.510
+Yes or no in a group chat, please.
+
+01:33:41.720 --> 01:33:44.860
+Yeah, everyone is saying yes, fine. We're not the moving
+
+01:33:44.860 --> 01:33:50.240
+will Santos. Sivananda P Bharti everyone. Okay, that's
+
+01:33:50.240 --> 01:33:53.200
+great. So now we are we are able to discuss three
+
+01:33:53.200 --> 01:33:55.840
+techniques. Basically. First one is one hot. Second, one is
+
+01:33:55.840 --> 01:33:59.240
+TF, sorry. Second one is B or W bag of word and third one is
+
+01:33:59.240 --> 01:34:03.460
+basically a TF IDF. Now, we know that how we can convert a
+
+01:34:03.460 --> 01:34:06.020
+data into its numerical representation by using all of these
+
+01:34:06.020 --> 01:34:10.860
+three technique, right? The most common one, even till TF
+
+01:34:10.860 --> 01:34:14.820
+IDF, we are able to find out that it is not able to like
+
+01:34:14.820 --> 01:34:17.520
+establish any kind of a relationship between the data,
+
+01:34:17.620 --> 01:34:21.940
+right? Yeah, it is able to eventually convert or it is able
+
+01:34:21.940 --> 01:34:25.320
+to observe the frequency or it is able to convert into a
+
+01:34:25.320 --> 01:34:27.600
+numerical representation. But the biggest problem is, that
+
+01:34:27.600 --> 01:34:30.960
+if I have a meaningful sentence, if I have to relate it with
+
+01:34:30.960 --> 01:34:34.700
+the grammar, right? If I have to establish a relationship
+
+01:34:34.700 --> 01:34:38.420
+between the data, all of these embeddings are failing,
+
+01:34:38.600 --> 01:34:43.020
+right? They are not going to work for me. Now, this is where
+
+01:34:43.020 --> 01:34:46.440
+my next one will come into picture. I think it's already
+
+01:34:46.440 --> 01:34:51.460
+six, right? So we'll discuss tomorrow guys, 2 30. Yeah, what
+
+01:34:51.460 --> 01:34:56.220
+to vector inside that. So there is because what to vector
+
+01:34:56.220 --> 01:34:58.180
+chapter is little bit long. There is something called as
+
+01:34:58.180 --> 01:35:00.080
+continuous. Bag of words see bow and there is something
+
+01:35:00.080 --> 01:35:03.820
+called as skip gram. So you have to understand the ski gram
+
+01:35:03.820 --> 01:35:05.720
+concept. You have to understand the Siva concept.
+
+01:35:06.100 --> 01:35:09.420
+Eventually, it will take one one and a half hour time that
+
+01:35:09.420 --> 01:35:12.320
+what to vector is technically a combination of all three.
+
+01:35:13.900 --> 01:35:18.400
+Bigger than that. So we discuss tomorrow. Yeah, fine. Let's
+
+01:35:18.400 --> 01:35:22.220
+discuss tomorrow. So let me share this material by the way.
+
+01:35:22.360 --> 01:35:29.000
+So 15th March material in now itself. So document. Then gen
+
+01:35:29.000 --> 01:35:36.880
+AI convert it into a zip. So guys class timing for tomorrow
+
+01:35:36.880 --> 01:35:42.700
+is not same class timing for tomorrow is going to be. 2 30.
+
+01:35:43.480 --> 01:35:46.760
+Yeah, so hope you will remember and going forward. That is
+
+01:35:46.760 --> 01:35:50.220
+your final class timing as I have already like a discussed
+
+01:35:50.220 --> 01:35:55.520
+in my induction session. So fine guys, Jenny I got zip. So
+
+01:35:55.520 --> 01:35:57.880
+this is already available inside that zip file. So you will
+
+01:35:57.880 --> 01:36:00.680
+be able to find out this file the file that I have. I
+
+01:36:00.680 --> 01:36:02.400
+discussed in my today's class, right? So each and everything
+
+01:36:02.400 --> 01:36:03.080
+you can execute.
+
+01:36:06.160 --> 01:36:10.480
+Please explain glow fastest. Also see explanation wise.
+
+01:36:10.580 --> 01:36:12.720
+There are a lot of things to explain a lot of things to
+
+01:36:12.720 --> 01:36:16.540
+discuss. I have already created a syllabus in such a way
+
+01:36:16.540 --> 01:36:20.740
+that at the end of the day. You will not regretting
+
+01:36:20.740 --> 01:36:24.160
+attending the classes first second part is there won't be
+
+01:36:24.160 --> 01:36:26.980
+any concept at the end of the class, which I will not end up
+
+01:36:26.980 --> 01:36:30.360
+discussing and obviously after that you will be able to
+
+01:36:30.360 --> 01:36:32.120
+understand each and everything. I believe this. This is
+
+01:36:32.120 --> 01:36:34.040
+something which I said even in my induction session, right?
+
+01:36:34.520 --> 01:36:38.000
+So yeah, this is how I'm going to progress inside the class.
+
+01:36:38.220 --> 01:36:43.180
+So class timing is 430 or 230 230 Teja 230. Let me write it
+
+01:36:43.180 --> 01:36:45.400
+down guys here inside the chat as well. And again, I'll ping
+
+01:36:45.400 --> 01:36:52.280
+you inside your WhatsApp group. Class timing is 2 30 p.m.
+
+01:36:52.300 --> 01:37:01.220
+IST from tomorrow, which is 16th 16th of what March? So I
+
+01:37:01.220 --> 01:37:04.180
+have given. You in written. I'll just try to write it down.
+
+01:37:04.220 --> 01:37:08.620
+Same thing inside your group chat as well. Plus, I'm going
+
+01:37:08.620 --> 01:37:13.680
+to ask my team to make a changes. So yeah, here is a ping. I
+
+01:37:13.680 --> 01:37:16.660
+have already pinged you inside the chat. So can I leave?
+
+01:37:16.700 --> 01:37:18.480
+Yeah, you can leave. So I'm done with the discussion. So
+
+01:37:18.480 --> 01:37:20.160
+those who would like to leave, please leave those who have
+
+01:37:20.160 --> 01:37:23.980
+any question, please put me inside the chat. I put your
+
+01:37:23.980 --> 01:37:28.270
+questions at the chat. Not me. Are you shifting to a new
+
+01:37:28.270 --> 01:37:31.330
+house, sir? Yeah, that's the reason. So like my all the
+
+01:37:31.330 --> 01:37:34.170
+books are gone as you can see. So, that's already like
+
+01:37:34.170 --> 01:37:36.070
+shifted in my new house.
+
+01:37:39.670 --> 01:37:43.110
+So tomorrow after the class, so I'm like shifting it.
+
+01:37:43.170 --> 01:37:46.170
+Anyhow, like people are shifting it already. So they are
+
+01:37:46.170 --> 01:37:48.290
+moving all the things,
+
+01:37:52.690 --> 01:37:56.090
+but I'll take your class. I'm not canceling your classes. So
+
+01:37:56.090 --> 01:37:56.810
+I'll take your class.
+
+01:38:01.710 --> 01:38:04.090
+Would you be explained? I'm sure direction with this concept
+
+01:38:04.090 --> 01:38:09.290
+will talk about everything. Rajat. So if you will start
+
+01:38:09.290 --> 01:38:12.450
+asking, right this topic this topic see I'll just go through
+
+01:38:12.450 --> 01:38:15.210
+a syllabus because syllabus is a best. Way and the
+
+01:38:15.210 --> 01:38:18.030
+structured way to talk about anything and everything and
+
+01:38:18.030 --> 01:38:21.310
+believe me here and there you will end up and counting
+
+01:38:21.310 --> 01:38:24.590
+everything just go through your syllabus. Just see how big
+
+01:38:24.590 --> 01:38:26.970
+your syllabus is and the kind of a work that we are going to
+
+01:38:26.970 --> 01:38:30.530
+do with that syllabus, right? Even if I don't want I'll end
+
+01:38:30.530 --> 01:38:34.070
+up discussing everything. There's other syllabus. I have
+
+01:38:34.070 --> 01:38:38.770
+created. Yeah. Where we will come in a Bangalore itself. I
+
+01:38:38.770 --> 01:38:41.430
+am I'm shifting my house. So I'm not going outside of
+
+01:38:41.430 --> 01:38:45.090
+Bangalore in Bangalore itself. In the last class download
+
+01:38:45.090 --> 01:38:48.570
+book. What download book? I think I must have shared some
+
+01:38:48.570 --> 01:38:53.230
+material. So maybe that same house. You have loaded on
+
+01:38:53.230 --> 01:38:55.610
+LinkedIn, sir. Yeah, that's the same one. Yeah,
+
+01:38:59.800 --> 01:39:02.380
+people are like able to remember. Yeah, it's the same one
+
+01:39:02.380 --> 01:39:05.960
+which I have uploaded as my years of achievement in on my
+
+01:39:05.960 --> 01:39:06.540
+LinkedIn profile.
+
+01:39:09.570 --> 01:39:13.090
+Is it not possible morning timing, sir? See, I have a one
+
+01:39:13.090 --> 01:39:16.890
+class from 1130 right 1130 to 2 o'clock. You can say,
+
+01:39:16.890 --> 01:39:21.230
+sometime 215 my full-time data science class and then after
+
+01:39:21.230 --> 01:39:22.890
+that, so I had a big data class which I have already
+
+01:39:22.890 --> 01:39:25.750
+concluded and after that, so I'm taking your class morning.
+
+01:39:26.830 --> 01:39:30.110
+It's a bit difficult because I'm not a morning person. So
+
+01:39:30.110 --> 01:39:33.250
+generally I used to work till morning 4 o'clock 5 o'clock
+
+01:39:33.250 --> 01:39:38.190
+because I work like a lot with my developing development
+
+01:39:38.190 --> 01:39:43.730
+team, right? And they work till like morning 5-6. I don't
+
+01:39:43.730 --> 01:39:48.110
+know like they generally sleep in morning. So again, I can't
+
+01:39:48.110 --> 01:39:50.250
+like sleep before them. So I have to work with them. I have
+
+01:39:50.250 --> 01:39:52.930
+to support them. I have to build and develop a new product
+
+01:39:52.930 --> 01:39:55.770
+and again on your own side, you will be able to see that
+
+01:39:55.770 --> 01:39:58.830
+very soon. Everything is going to change. Everything was
+
+01:39:58.830 --> 01:40:02.510
+literally everything. So on your own, I believe in next like
+
+01:40:02.510 --> 01:40:07.290
+a 20 days, you will be able to see a lot of changes and that
+
+01:40:07.290 --> 01:40:10.570
+changes. We will start publishing from this week itself. A
+
+01:40:10.570 --> 01:40:12.470
+lot of changes a lot of changes means so we are trying to
+
+01:40:12.470 --> 01:40:15.650
+bring a subscription plan. So instead of paying like a,
+
+01:40:15.990 --> 01:40:18.070
+thousand rupees at once, maybe you can go ahead with a
+
+01:40:18.070 --> 01:40:21.370
+monthly plan. That's one thing. Second thing is a lot of
+
+01:40:21.370 --> 01:40:24.010
+hybrid courses. We are trying to bring third thing is so we
+
+01:40:24.010 --> 01:40:26.710
+are trying to bring a sorts based courses. Sorts based
+
+01:40:26.710 --> 01:40:28.770
+courses means there will be one course. Let's suppose
+
+01:40:28.770 --> 01:40:30.730
+interview preparation, general interview preparation, right?
+
+01:40:30.910 --> 01:40:34.410
+So there will be a question and the answer question answer
+
+01:40:34.410 --> 01:40:37.570
+in form of a sorts. So that is that kind of a courses. We
+
+01:40:37.570 --> 01:40:41.490
+are going to bring a resume a system. So resume a system
+
+01:40:41.490 --> 01:40:44.170
+basic one. We have released but yeah, a massive resume a
+
+01:40:44.170 --> 01:40:47.590
+system. We are going to bring. Plus a job recommendation
+
+01:40:47.590 --> 01:40:51.190
+system plus a mock interview system. So mock interview
+
+01:40:51.190 --> 01:40:53.790
+system in a real time. So it doesn't matter whether you are
+
+01:40:53.790 --> 01:40:55.810
+CA, whether you are lawyer, whether you are engineer,
+
+01:40:55.930 --> 01:40:58.850
+whatever whatever profile you hold. So you will be able to
+
+01:40:58.850 --> 01:41:01.650
+use my resume a system. You will be able to generate even a
+
+01:41:01.650 --> 01:41:05.350
+interview questions, technical round, non-technical round.
+
+01:41:05.910 --> 01:41:09.190
+Plus you will be able to generate a cover later. That is the
+
+01:41:09.190 --> 01:41:11.810
+update that we are trying to like bring a lot of update from
+
+01:41:11.810 --> 01:41:14.830
+resume a side. Mock interview side just like conversation.
+
+01:41:15.130 --> 01:41:17.830
+Right? So you will be able to talk to a system system will
+
+01:41:17.830 --> 01:41:20.410
+be able to see your screen and then system will be able to
+
+01:41:20.410 --> 01:41:22.670
+take your mock interview immediately. It will be able to
+
+01:41:22.670 --> 01:41:25.530
+give you assessment that okay, fine. So this is the place
+
+01:41:25.530 --> 01:41:27.830
+where you are lagging and mock interview just like a real
+
+01:41:27.830 --> 01:41:30.030
+interview means literally like a real interview. That is
+
+01:41:30.030 --> 01:41:32.490
+something which we were working on since very long time. So
+
+01:41:32.490 --> 01:41:34.910
+now it's time to release it. So we are trying to bring that
+
+01:41:34.910 --> 01:41:38.610
+part. Another part is a job recommendation. So whatever
+
+01:41:38.610 --> 01:41:41.410
+resume that you have uploaded. So it is going to create a
+
+01:41:41.410 --> 01:41:44.010
+multiple version of your resume. Not just one single person
+
+01:41:44.010 --> 01:41:47.270
+multiple. Multiple version of your resume and then it will
+
+01:41:47.270 --> 01:41:52.270
+call our API job search API and it is going to bring a job
+
+01:41:52.270 --> 01:41:55.730
+in terms of internship in terms of freelancing in terms of
+
+01:41:55.730 --> 01:41:59.470
+basically like I would say full-time job part-time job in
+
+01:41:59.470 --> 01:42:02.530
+your location your country. Right? So I'm not just talking
+
+01:42:02.530 --> 01:42:04.910
+about India. I'm talking about the entire globe. So we are
+
+01:42:04.910 --> 01:42:08.450
+just trying to configure our API in that particular way that
+
+01:42:08.450 --> 01:42:11.650
+in whatever country you are whatever kind of a job you are
+
+01:42:11.650 --> 01:42:13.970
+looking for whether it's a freelancing and wherever it is
+
+01:42:13.970 --> 01:42:16.150
+available. Right? Maybe on LinkedIn. Maybe unlock me. Maybe
+
+01:42:16.150 --> 01:42:20.570
+on Monster. Maybe on Heidi. Indeed upwork.com freelance.com.
+
+01:42:20.610 --> 01:42:24.630
+Just name it name it anything. So on a daily basis, it will
+
+01:42:24.630 --> 01:42:28.850
+try to bring all the job in front of you and parallelly it
+
+01:42:28.850 --> 01:42:32.930
+will try to attach a like along with the job description. It
+
+01:42:32.930 --> 01:42:35.970
+will try to attach a resume that okay for this job use this
+
+01:42:35.970 --> 01:42:39.250
+resume for this job use this resume. So this is something
+
+01:42:39.250 --> 01:42:41.950
+that we are building. So soon you will be able to see it
+
+01:42:41.950 --> 01:42:45.870
+plus like I said, and it was like a vision while launching a
+
+01:42:45.870 --> 01:42:48.090
+year on that at the end of the day. I have to create a OTT
+
+01:42:48.090 --> 01:42:51.590
+platform at OTT for an education. So obviously subscription
+
+01:42:51.590 --> 01:42:54.350
+is required monthly and yearly. So we are we are trying to
+
+01:42:54.350 --> 01:42:56.430
+bring that part. A lot of launches is there.
+
+01:43:02.430 --> 01:43:05.810
+So what do you suggest? What should we do? Rest for five or
+
+01:43:05.810 --> 01:43:08.210
+if you are free then work on the project. Very simple.
+
+01:43:15.360 --> 01:43:18.880
+Can we have Auto AI generated summary that is possible
+
+01:43:18.880 --> 01:43:21.380
+because anyhow when you will see your recording right
+
+01:43:21.380 --> 01:43:25.060
+recording lecture. Mutu, right? So when you will see your
+
+01:43:25.060 --> 01:43:27.380
+recorded lecture. So you will be able to find out any how
+
+01:43:27.380 --> 01:43:31.240
+like a captions. So anyhow, we are able to generate the
+
+01:43:31.240 --> 01:43:35.060
+captions after that. We just have to like call one of the
+
+01:43:35.060 --> 01:43:38.500
+API and pass all the captions generate the summary. So not a
+
+01:43:38.500 --> 01:43:40.400
+big deal will will think about it in the future.
+
+01:43:45.950 --> 01:43:49.770
+This platform supports only chat can't be communicate in a
+
+01:43:49.770 --> 01:43:52.790
+live at the end of the class. I think that is not required.
+
+01:43:53.030 --> 01:43:57.330
+See why I have not keeping live conversation over here is
+
+01:43:57.330 --> 01:44:00.910
+that that whenever we open up because it's not a like I'm
+
+01:44:00.910 --> 01:44:03.430
+taking a like a first time this class. I'm taking classes
+
+01:44:03.430 --> 01:44:06.230
+since last seven to eight year. And generally what happens
+
+01:44:06.230 --> 01:44:09.510
+is whenever we try to open up a live one-to-one
+
+01:44:09.510 --> 01:44:13.610
+communication. So even though you will be having a no doubt,
+
+01:44:13.790 --> 01:44:16.270
+but people will end up asking a repeated question. So
+
+01:44:16.270 --> 01:44:19.730
+instead of taking classes for two hour, so we have to take a
+
+01:44:19.730 --> 01:44:22.550
+classes for four hour five hour and again. So rest of the
+
+01:44:22.550 --> 01:44:24.650
+people will be waiting. So again, it's not good for us. It's
+
+01:44:24.650 --> 01:44:27.590
+not good for a people who are going to join. That's the
+
+01:44:27.590 --> 01:44:29.950
+reason. So we have a whatsapp group. So where you can
+
+01:44:29.950 --> 01:44:32.550
+communicate. We have a chat system over here where you can
+
+01:44:32.550 --> 01:44:35.630
+communicate. We have enough medium to communicate and enough
+
+01:44:35.630 --> 01:44:38.170
+medium to even clarify the doubts even in your own assist.
+
+01:44:38.470 --> 01:44:41.650
+Right? We have given you four model access. So we have given
+
+01:44:41.650 --> 01:44:43.830
+you a llama access. We have given your deep seek R1 access.
+
+01:44:43.950 --> 01:44:49.230
+Now nothing or at least 99% 99.9% of your query will not
+
+01:44:49.230 --> 01:44:53.110
+surpass even a deep seek R1 or a llama. And likewise, we
+
+01:44:53.110 --> 01:44:56.210
+have given you five model access, right? Which you will have
+
+01:44:56.210 --> 01:45:00.030
+to go outside and maybe pay for the APIs and tokens. So I
+
+01:45:00.030 --> 01:45:04.010
+don't think. That it's required. And anyhow, if you would
+
+01:45:04.010 --> 01:45:06.670
+like to talk to your batchmate, you have a group. Maybe you
+
+01:45:06.670 --> 01:45:09.910
+can ping them personally, DM them, have a chat with them.
+
+01:45:10.030 --> 01:45:13.050
+Even you can ping me. But again, I don't reply to all the
+
+01:45:13.050 --> 01:45:18.190
+pings because of my schedule. But yeah, I believe majority
+
+01:45:18.190 --> 01:45:21.590
+of time. I used to reply. If questions are genuine, if
+
+01:45:21.590 --> 01:45:24.070
+questions are like not genuine, then in that case, you can
+
+01:45:24.070 --> 01:45:26.990
+go ahead and ask your own assist itself. Your own assist
+
+01:45:26.990 --> 01:45:28.650
+will be able to give the answer. At the end of the day,
+
+01:45:28.690 --> 01:45:33.370
+objective is. Not to talk much, but work as much as
+
+01:45:33.370 --> 01:45:37.150
+possible. And I believe the system is able to fulfill like
+
+01:45:37.150 --> 01:45:39.510
+that particular need. Hello, sir. I have sent you the
+
+01:45:39.510 --> 01:45:43.410
+WhatsApp message regarding the indoor end to end project
+
+01:45:43.410 --> 01:45:46.350
+advice. Please reply me when you are free. Your advice at
+
+01:45:46.350 --> 01:45:49.530
+most important for me. We'll see Santos if like I said, so I
+
+01:45:49.530 --> 01:45:52.470
+do reply. But yeah, I see the relevancy first. If something
+
+01:45:52.470 --> 01:45:54.650
+you are able to get it from your like your own assist
+
+01:45:54.650 --> 01:45:57.890
+itself, then maybe you can go ahead and avail it from your
+
+01:45:57.890 --> 01:46:00.830
+own assist. We have given you that access, right? As simple
+
+01:46:00.830 --> 01:46:04.830
+as that. This job recommendation will remove a lot of
+
+01:46:04.830 --> 01:46:07.170
+headache and we can focus on job preparation. Yeah, so
+
+01:46:07.170 --> 01:46:08.890
+that's the reason. So we are increasing our price as well.
+
+01:46:09.070 --> 01:46:11.490
+Subscription price. We are going to increase a little bit,
+
+01:46:11.510 --> 01:46:16.290
+not much, but we are increasing it because it is costing us
+
+01:46:16.290 --> 01:46:22.390
+a lot. So a lot means literally a lot. It is costing us near
+
+01:46:24.150 --> 01:46:28.770
+new home video home tour for our motivation. Ah, that will
+
+01:46:28.770 --> 01:46:33.690
+be possible. Maybe difficult. Some people will say that I'm
+
+01:46:33.690 --> 01:46:39.150
+doing a so off or something. So hope you understand Ram.
+
+01:46:42.850 --> 01:46:48.810
+Yeah, but yeah, I'm assuming that you all are enjoying the
+
+01:46:48.810 --> 01:46:52.910
+entire class apart from that like apart from the enjoyment.
+
+01:46:52.990 --> 01:46:55.670
+So I'm assuming that all of you are able to communicate.
+
+01:46:56.090 --> 01:46:59.150
+Maybe you can ping you can try to make new friends. So there
+
+01:46:59.150 --> 01:47:01.050
+are a lot of people inside your groups. Try to make friend
+
+01:47:01.050 --> 01:47:04.730
+as much as possible. Maybe sit together. Try to work on some
+
+01:47:04.730 --> 01:47:07.930
+project together. Try to discuss some of the concept, right?
+
+01:47:07.970 --> 01:47:10.250
+This is what is called as a real networking and believe me.
+
+01:47:10.310 --> 01:47:12.530
+So once you are able to develop a networking, this
+
+01:47:12.530 --> 01:47:15.510
+networking will be with you for your entire life because
+
+01:47:15.510 --> 01:47:18.530
+even they are going to make attention to Jenny. I you are
+
+01:47:18.530 --> 01:47:20.930
+going to make attention to Jenny. I right. So even after
+
+01:47:20.930 --> 01:47:23.970
+five years, you don't know where that person will be, right?
+
+01:47:24.030 --> 01:47:26.370
+Maybe that person will be able to help you out and maybe you
+
+01:47:26.370 --> 01:47:30.490
+will be able to help other a lot of people. So please try to
+
+01:47:30.490 --> 01:47:33.850
+take this advice seriously. The rest is up to you. My
+
+01:47:33.850 --> 01:47:37.770
+responsibility is to create a group. Maintain a community. I
+
+01:47:37.770 --> 01:47:40.610
+have done that. My responsibility is to teach you obviously
+
+01:47:40.610 --> 01:47:42.770
+I'm doing it. I'll keep on doing it in the best possible
+
+01:47:42.770 --> 01:47:48.730
+way. But yeah, like your network will help you out a lot.
+
+01:47:49.050 --> 01:47:54.870
+Even more than me. Need any motivation. You didn't know how
+
+01:47:54.870 --> 01:48:00.170
+we will be assessed in this course assignment. See guys
+
+01:48:00.170 --> 01:48:03.410
+assessment wise. I'll give you challenges in a big data
+
+01:48:03.410 --> 01:48:07.730
+itself today. I have given. $500 challenge today itself.
+
+01:48:07.850 --> 01:48:11.770
+$500 challenge previously. I think three or four year of not
+
+01:48:11.770 --> 01:48:15.810
+a week back. I have I had given them $100 $100 challenges
+
+01:48:15.810 --> 01:48:18.670
+$200 basically. Similarly, I'll keep on launching a
+
+01:48:18.670 --> 01:48:22.110
+challenges over here. Certificate. You can download anyhow.
+
+01:48:22.970 --> 01:48:27.050
+When will be iOS app ready? I was happy is ready since a
+
+01:48:27.050 --> 01:48:29.470
+very very long time, but we are getting stuck with
+
+01:48:29.470 --> 01:48:33.350
+compliances. So iOS has increased their compliances app is
+
+01:48:33.350 --> 01:48:36.610
+ready, but they're not allowing us to like. Make it public.
+
+01:48:37.450 --> 01:48:40.310
+So it will take some time. So we are trying to align our app
+
+01:48:40.310 --> 01:48:42.190
+with the compliances by
+
+01:48:44.340 --> 01:48:49.180
+how much would be the price subscription? Maybe 40 50% or
+
+01:48:49.180 --> 01:48:51.400
+maybe more than that. We are just trying to do some math
+
+01:48:51.400 --> 01:48:55.600
+over there so that it should not cost anyone much because at
+
+01:48:55.600 --> 01:48:57.040
+the end of the day. We have to keep ourselves affordable.
+
+01:48:57.240 --> 01:49:01.560
+But yeah, it will be very much affordable. Anyhow, maybe 400
+
+01:49:01.560 --> 01:49:06.320
+rupees 500 rupees per month. You can in this range 400 500
+
+01:49:06.320 --> 01:49:10.060
+rupees per month. If you are going over the monthly plan
+
+01:49:10.060 --> 01:49:13.180
+because there is a possibility that some people will come
+
+01:49:13.180 --> 01:49:16.080
+just with the just for like expectation that they have to go
+
+01:49:16.080 --> 01:49:18.360
+for the resume a product or job product or something like
+
+01:49:18.360 --> 01:49:22.700
+this. So yeah, we are we are building in that way. Class is
+
+01:49:22.700 --> 01:49:26.460
+super interesting and enjoy. So if you have an interest in
+
+01:49:26.460 --> 01:49:31.480
+DS that person can divert his mind and so thank you
+
+01:49:31.480 --> 01:49:34.800
+Deepakji. So is there any call class schedule information?
+
+01:49:35.100 --> 01:49:38.180
+Yeah. So Abhishek you will be able to find out. A scheduled
+
+01:49:38.180 --> 01:49:41.520
+tab on your own dot one. Maybe you can click over there. We
+
+01:49:41.520 --> 01:49:44.300
+are updating even that particular page. So after some time
+
+01:49:44.300 --> 01:49:46.780
+there are a lot of update we are trying to bring so a lot of
+
+01:49:46.780 --> 01:49:50.100
+UI modification also so that your experience will be even
+
+01:49:50.100 --> 01:49:52.480
+much better. So when we are saying we are trying to build a
+
+01:49:52.480 --> 01:49:55.560
+Netflix obviously we have to follow that kind of a
+
+01:49:55.560 --> 01:49:59.620
+philosophy. So I think the release that we are going to do
+
+01:49:59.620 --> 01:50:03.620
+in a month of March starting from this week back to back you
+
+01:50:03.620 --> 01:50:06.180
+will be able to feel you will be able to get that kind of a
+
+01:50:06.180 --> 01:50:09.020
+feeling. So we are trying to like a do. A lot on that side
+
+01:50:09.020 --> 01:50:13.920
+tech side. They are saying in an interview. I didn't know
+
+01:50:13.920 --> 01:50:15.740
+some interview. They are asking about the genetic
+
+01:50:15.740 --> 01:50:21.000
+architecture and in advance. Okay Teja. So go ahead and talk
+
+01:50:21.000 --> 01:50:24.280
+about transform architecture encoder only architecture
+
+01:50:24.280 --> 01:50:27.080
+decoder only architecture. I think I have already discussed
+
+01:50:27.080 --> 01:50:31.900
+about it with architecture in one of my batch which I have
+
+01:50:31.900 --> 01:50:35.040
+concluded which was a generative AI interview batch. So
+
+01:50:35.040 --> 01:50:37.700
+maybe you can go through that Teja that will help you out. I
+
+01:50:37.700 --> 01:50:41.380
+have already discussed will the new price applicable to the
+
+01:50:41.380 --> 01:50:44.180
+existing you don't know no not at all. So new price will not
+
+01:50:44.180 --> 01:50:47.080
+be applicable to anyone who is the existing user whatever
+
+01:50:47.080 --> 01:50:50.900
+access you have you have that access very simple. Right and
+
+01:50:50.900 --> 01:50:53.160
+whatever will come it will come under your own plus as
+
+01:50:53.160 --> 01:50:55.780
+simple as that. So simple those who have your own plus means
+
+01:50:55.780 --> 01:50:58.660
+you're on plus that this is the commitment that we have made
+
+01:50:58.660 --> 01:51:01.560
+right and again the new feature is again going to be the
+
+01:51:01.560 --> 01:51:04.800
+part of your own plus by the way anyhow you're on plus not
+
+01:51:04.800 --> 01:51:10.600
+org only plus. So those who have plus like no need to worry
+
+01:51:10.600 --> 01:51:13.680
+about anything. You can check maybe your validity date. So
+
+01:51:13.680 --> 01:51:16.620
+till that date everything and anything will be available
+
+01:51:16.620 --> 01:51:20.760
+means it will be available without any changes. Fine. So
+
+01:51:20.760 --> 01:51:24.440
+those I think I'm able to answer your question. Okay. So
+
+01:51:24.440 --> 01:51:27.120
+fine guys. Thank you so much for joining the class. Hope I'm
+
+01:51:27.120 --> 01:51:30.300
+able to clarify all your doubts and we all are enjoying this
+
+01:51:30.300 --> 01:51:33.960
+class. So let's join tomorrow. I think agenda is set for
+
+01:51:33.960 --> 01:51:36.060
+tomorrow's class. So I'm going to continue with the
+
+01:51:36.060 --> 01:51:40.220
+embedding. Itself. I'm going to talk about what to work and
+
+01:51:40.220 --> 01:51:42.460
+inside that there are a lot of technique which comes in
+
+01:51:42.460 --> 01:51:45.640
+between. So I'll be talking about all those things with that
+
+01:51:45.640 --> 01:51:48.480
+sir after Monday subscription. Will I be able to access all
+
+01:51:48.480 --> 01:51:51.820
+the courses? Yeah, after monthly even now you are able to
+
+01:51:51.820 --> 01:51:54.600
+access Deepak right? You have your own plus. So anyhow with
+
+01:51:54.600 --> 01:51:57.460
+your own plus you will be able to access will till the time
+
+01:51:57.460 --> 01:52:00.620
+you have a validity and then once validity will expire then
+
+01:52:00.620 --> 01:52:02.940
+you can check as a fly. You don't have to do anything.
+
+01:52:03.360 --> 01:52:08.640
+Everything is accessible to all of you anyhow. Yeah. Bye.
+
+01:52:08.760 --> 01:52:11.580
+Bye. Santosh Sanjeev everyone. Bye guys. Tata. See you
+
+01:52:11.580 --> 01:52:12.620
+tomorrow. Take care.
+

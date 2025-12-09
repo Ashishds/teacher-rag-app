@@ -1,0 +1,3305 @@
+WEBVTT
+
+00:08:13.230 --> 00:08:15.350
+Okay, so good morning everyone. I think I'm audible and
+
+00:08:15.350 --> 00:08:18.350
+visible to all of you. So please confirm guys in a chat if
+
+00:08:18.350 --> 00:08:23.010
+I'm audible and visible to all of you. Yeah. Okay, so I'm
+
+00:08:23.010 --> 00:08:25.750
+audible and visible. So good morning everyone.
+
+00:08:30.060 --> 00:08:33.360
+So shall we start with the class guys? Yeah. Are we all
+
+00:08:33.360 --> 00:08:41.480
+awake? Okay, good morning. Okay, so anyone who can tell me
+
+00:08:41.480 --> 00:08:44.560
+what is the agenda for this particular week? So we can set
+
+00:08:44.560 --> 00:08:47.520
+an agenda and then we can start with the class. Yeah, so
+
+00:08:47.520 --> 00:08:47.780
+anyone?
+
+00:08:55.070 --> 00:08:59.070
+Okay, so Dhruv is saying A2A agent. So yes, we are going to
+
+00:08:59.070 --> 00:09:02.070
+talk about A2A agents. I believe I have given you a task
+
+00:09:02.070 --> 00:09:06.950
+last week on Sunday maybe. And I've just asked you to like
+
+00:09:06.950 --> 00:09:11.070
+do something with those tasks. So try to create a separate
+
+00:09:11.070 --> 00:09:14.530
+agent so that you know agent will be able to transfer data
+
+00:09:14.530 --> 00:09:17.290
+from one to another. And then it will be able to
+
+00:09:17.290 --> 00:09:20.650
+communicate. So that was a task which I have given to you.
+
+00:09:20.730 --> 00:09:24.650
+Agent modification kind of a task. And that is something
+
+00:09:24.650 --> 00:09:27.070
+which we are going to discuss today. And then from tomorrow
+
+00:09:27.070 --> 00:09:31.010
+onwards class is going to be more exciting because we will
+
+00:09:31.010 --> 00:09:36.030
+try to explore a cloud part now. As cloud part is pretty
+
+00:09:36.030 --> 00:09:38.550
+much important in terms of deploying any kind of application
+
+00:09:38.550 --> 00:09:43.910
+on a scale and doing all sort of things which is required on
+
+00:09:43.910 --> 00:09:46.690
+a production grade system. So that we are going to start
+
+00:09:46.690 --> 00:09:50.350
+from tomorrow, obviously, and that will be a final stage of
+
+00:09:50.350 --> 00:09:56.050
+your entire batch. So with cloud, obviously, we are going to
+
+00:09:56.050 --> 00:09:58.790
+discuss all the project which has been listed inside your
+
+00:09:58.790 --> 00:10:02.290
+syllabus. Right. So starting with the URI, basically, so
+
+00:10:02.290 --> 00:10:04.710
+where we are going to build a URI kind of a system, we are
+
+00:10:04.710 --> 00:10:09.250
+going to deploy it. We are going to attach a lot of custom
+
+00:10:09.250 --> 00:10:12.590
+model and all those model which is already available out
+
+00:10:12.590 --> 00:10:15.310
+there so that, you know, you all will be able to build an
+
+00:10:15.310 --> 00:10:18.610
+exact similar kind of a system that you are able to see as
+
+00:10:18.610 --> 00:10:26.490
+of now on your own platform. So that will be done. So that
+
+00:10:26.490 --> 00:10:33.350
+is something that we are going to discuss now. So, guys,
+
+00:10:33.430 --> 00:10:37.330
+last class, I was talking about a to agent and we were able
+
+00:10:37.330 --> 00:10:40.510
+to understand a fundamental of a to a agent that what is
+
+00:10:40.510 --> 00:10:42.970
+this a to a protocol, how it is going to work, basically.
+
+00:10:44.090 --> 00:10:48.790
+But so our agent was not an independent agent, basically. So
+
+00:10:48.790 --> 00:10:51.450
+when we were like, you know, trying to talk about this a to
+
+00:10:51.450 --> 00:10:59.610
+a agent. So, how we can try to make our agent independent?
+
+00:11:00.010 --> 00:11:03.850
+So basically, one agent, I can try to host on one server and
+
+00:11:03.850 --> 00:11:06.710
+another agent will be running on some different server on
+
+00:11:06.710 --> 00:11:10.010
+some different port number and then how I will be able to
+
+00:11:10.010 --> 00:11:13.590
+transfer our data. So from one agent to another agent and
+
+00:11:13.590 --> 00:11:16.450
+eventually my agent is going to work in that particular
+
+00:11:16.450 --> 00:11:20.870
+manner. So let me share my screen and let me show you a demo
+
+00:11:20.870 --> 00:11:23.630
+in a very. So I believe my screen is visible to all of you,
+
+00:11:23.650 --> 00:11:25.910
+right guys, yeah, so can you please confirm once.
+
+00:11:28.780 --> 00:11:33.420
+Okay, fine, cool. So let me show you a demo first of all,
+
+00:11:33.520 --> 00:11:36.240
+what we are going to do in my today's class.
+
+00:11:43.120 --> 00:11:46.120
+So this was an application that we have been talking about,
+
+00:11:46.240 --> 00:11:48.940
+right, so where we have three kind of agents. So one agent
+
+00:11:48.940 --> 00:11:52.160
+we have built inside a lang gen framework, one agent we have
+
+00:11:52.160 --> 00:11:55.460
+built inside a crew AI framework and another agent we have
+
+00:11:55.460 --> 00:11:58.960
+built inside an auto gen framework and we have defined a
+
+00:11:58.960 --> 00:12:02.300
+respective task to a respective agent that one is going to
+
+00:12:02.300 --> 00:12:05.780
+read a data, second one is going to do some sort of
+
+00:12:05.780 --> 00:12:08.920
+analytics on top of that and then third agent is going to do
+
+00:12:08.920 --> 00:12:13.260
+eventually a visualization and our requirement was simple.
+
+00:12:13.440 --> 00:12:18.300
+So our requirement was like we have taken a requirement in
+
+00:12:18.300 --> 00:12:21.420
+such a way that all of these agents should run
+
+00:12:21.420 --> 00:12:24.340
+independently, right, independently and with the help of
+
+00:12:24.340 --> 00:12:27.760
+this A2A SDK or A2A library, so it is supposed to
+
+00:12:27.760 --> 00:12:31.520
+coordinate. So obviously when we talk about an agent, so
+
+00:12:31.520 --> 00:12:33.860
+it's nothing but a piece of a function or piece of a
+
+00:12:33.860 --> 00:12:37.000
+program. So let's suppose if I'll talk about a lang gen
+
+00:12:37.000 --> 00:12:40.680
+agent over here. So obviously lang gen agent is supposed to,
+
+00:12:40.720 --> 00:12:43.100
+you know, like a responsible for reading all kind of data
+
+00:12:43.100 --> 00:12:48.040
+and then it should pass all of those data to a next agent so
+
+00:12:48.040 --> 00:12:51.660
+that my crew agent will be able to do some sort of analytics
+
+00:12:51.660 --> 00:12:55.340
+operation on top of that. And then once my crew, I will be
+
+00:12:55.340 --> 00:12:58.400
+able to perform this kind of analytics on top of that. So
+
+00:12:58.400 --> 00:13:02.140
+this should pass a data to my auto gen agent so that my auto
+
+00:13:02.140 --> 00:13:05.260
+gen agent should be able to visualize those kind of data.
+
+00:13:05.760 --> 00:13:09.280
+And this is a UI interface that we have created. So we are
+
+00:13:09.280 --> 00:13:12.480
+keeping our data inside our local system and we can try to,
+
+00:13:12.500 --> 00:13:15.700
+you know, point this particular data set with respect to any
+
+00:13:15.700 --> 00:13:18.980
+kind of a databases as well. So if I'm able to load a data
+
+00:13:18.980 --> 00:13:21.820
+from a local system, so obviously I will be able to point
+
+00:13:21.820 --> 00:13:26.120
+out this data to any respective databases and then I will be
+
+00:13:26.120 --> 00:13:29.040
+able to read a data from there. But that is not an
+
+00:13:29.040 --> 00:13:31.860
+interesting part. The interesting part was that, that my
+
+00:13:31.860 --> 00:13:35.760
+agent should run on a different, different server. So as you
+
+00:13:35.760 --> 00:13:39.880
+can see, so I'm running this agent on port number 8001, I'm
+
+00:13:39.880 --> 00:13:43.420
+running this agent on port number 8002, I'm running this
+
+00:13:43.420 --> 00:13:47.500
+agent on port number 8003. And that was technically a
+
+00:13:47.500 --> 00:13:53.040
+requirement. Maybe I can try to change the local host. As of
+
+00:13:53.040 --> 00:13:55.200
+now, everything is running on local host and I have just
+
+00:13:55.200 --> 00:13:58.420
+changed different, different, like you know, a port over
+
+00:13:58.420 --> 00:14:01.880
+there. But yeah, so if I'm able to change a port, it simply
+
+00:14:01.880 --> 00:14:04.380
+means that, that I will be able to change the complete
+
+00:14:04.380 --> 00:14:07.960
+system, right? And eventually it is supposed to run on a
+
+00:14:07.960 --> 00:14:10.540
+different, different system so that it will be able to
+
+00:14:10.540 --> 00:14:13.680
+coordinate because you know, even in a real life, so all of
+
+00:14:13.680 --> 00:14:17.220
+your agent will not be available in a single place. So maybe
+
+00:14:17.220 --> 00:14:20.120
+there are multiple teams who is working on a different,
+
+00:14:20.180 --> 00:14:22.660
+different agent and they are going to say that, that, okay,
+
+00:14:22.740 --> 00:14:26.620
+so this is my agent, which I have exposed now, try to use
+
+00:14:26.620 --> 00:14:27.440
+this port. Okay. So I will be able to create a demo of this
+
+00:14:27.440 --> 00:14:29.920
+particular agent in a way that you are looking for. That
+
+00:14:29.920 --> 00:14:33.340
+will be a real life scenario. So we are trying to replicate,
+
+00:14:33.660 --> 00:14:36.780
+we are trying to create a demo of such kind of a situation.
+
+00:14:37.420 --> 00:14:41.100
+Now if I'll talk about a langchain agent, so in that case it
+
+00:14:41.100 --> 00:14:44.140
+should use some sort of a LLMs, a crew AI, it should use
+
+00:14:44.140 --> 00:14:47.320
+some sort of a LLM and then again, my auto gen model should
+
+00:14:47.320 --> 00:14:49.720
+be able to use some sort of a, a different, different kind
+
+00:14:49.720 --> 00:14:53.740
+of a models. Depends what my agent is going to perform. So
+
+00:14:53.740 --> 00:14:56.600
+maybe some agent you are going to build, which is just going
+
+00:14:56.600 --> 00:14:59.440
+to do it. tool calling maybe it is going to access my
+
+00:14:59.440 --> 00:15:02.580
+calendar or maybe it is going to access my gmail or any any
+
+00:15:02.580 --> 00:15:05.560
+system out there basically right but yeah so that was a
+
+00:15:05.560 --> 00:15:08.540
+system that we were trying to mock up so i'll try to start
+
+00:15:08.540 --> 00:15:13.640
+with this demo so just give a couple of second of time and
+
+00:15:13.640 --> 00:15:16.700
+my agent will be ready and then i'm going to show you that
+
+00:15:16.700 --> 00:15:20.080
+how this agent is actually working so now i have already
+
+00:15:20.080 --> 00:15:24.380
+executed and here so as per my expected task so lanchan
+
+00:15:24.380 --> 00:15:28.440
+reader has completed its job then crew and list has
+
+00:15:28.440 --> 00:15:31.860
+completed its job and then autogen visualizer has completed
+
+00:15:31.860 --> 00:15:35.260
+its job so all three agent in a sequence they are able to
+
+00:15:35.260 --> 00:15:38.380
+complete this job the amazing part is this particular end
+
+00:15:38.380 --> 00:15:41.700
+point so all of these agents are running on a different
+
+00:15:41.700 --> 00:15:44.960
+different end points basically and they are able to
+
+00:15:44.960 --> 00:15:49.460
+communicate in between so inside a2a as we all are aware
+
+00:15:49.460 --> 00:15:53.000
+about a fast api right so fast api is basically a pythonic
+
+00:15:53.000 --> 00:15:55.800
+library by which i will be able to create basically uh
+
+00:15:55.800 --> 00:15:59.880
+anything i will be able to expose on any port number or any
+
+00:15:59.880 --> 00:16:04.820
+server so even inside a2a you will be able to find out a
+
+00:16:04.820 --> 00:16:09.340
+fast api compatible library so which is basically a a2a
+
+00:16:09.340 --> 00:16:12.540
+specific fast api i'll try to show you even that part inside
+
+00:16:12.540 --> 00:16:17.800
+a code and yes so with the help of that you will be able to
+
+00:16:17.800 --> 00:16:19.880
+host and the only thing that you will be able to do is that
+
+00:16:19.880 --> 00:16:20.140
+you will be able to create a data transfer which is
+
+00:16:20.140 --> 00:16:20.140
+essentially a data transfer which is a data transfer that we
+
+00:16:20.140 --> 00:16:23.200
+have to coordinate over here or we have to orchestrate over
+
+00:16:23.200 --> 00:16:28.440
+here that a data transfer because every agent needs some
+
+00:16:28.440 --> 00:16:31.020
+input and every agent is going to give me some sort of
+
+00:16:31.020 --> 00:16:34.880
+output for example so if i'll talk about a reader agent so
+
+00:16:34.880 --> 00:16:37.980
+obviously it requires a location so from where i'm trying to
+
+00:16:37.980 --> 00:16:41.580
+read the data and then whatever instruction which i have
+
+00:16:41.580 --> 00:16:44.780
+given to this particular agent so it is supposed to just
+
+00:16:44.780 --> 00:16:48.400
+follow that instruction read a data process a data and then
+
+00:16:48.400 --> 00:16:51.760
+return it to me in my data my required file or in my
+
+00:16:51.760 --> 00:16:54.780
+required template or maybe in my required data type as
+
+00:16:54.780 --> 00:16:59.220
+simple as that. Now once it is able to give me a response I
+
+00:16:59.220 --> 00:17:03.180
+will as per my flow basically as per a flow of this one
+
+00:17:03.180 --> 00:17:05.500
+because this flow is going to change if your application is
+
+00:17:05.500 --> 00:17:10.000
+going to change. So as per my flow so this should be able to
+
+00:17:10.000 --> 00:17:14.320
+get an output from this one and then it should consider that
+
+00:17:14.320 --> 00:17:17.880
+as an input and then it will give me some sort of output
+
+00:17:17.880 --> 00:17:20.980
+once again after performing some sort of analysis because
+
+00:17:20.980 --> 00:17:24.160
+this is my analyst agent and then once it will be able to
+
+00:17:24.160 --> 00:17:27.200
+give an output so same output should go inside this
+
+00:17:27.200 --> 00:17:29.920
+particular visualizer agent which is running on some
+
+00:17:29.920 --> 00:17:32.900
+different server right and then it should be able to do some
+
+00:17:32.900 --> 00:17:36.840
+sort of a visualization and finally I will be able to see my
+
+00:17:36.840 --> 00:17:40.260
+total visualization. So that was a whole idea. Yes everyone
+
+00:17:40.260 --> 00:17:47.900
+yeah I think this is how agent should behave agree yeah so I
+
+00:17:47.900 --> 00:17:50.280
+believe this is how this any kind of agent right. Are
+
+00:17:50.280 --> 00:17:52.900
+supposed to communicate in between at the end of the day
+
+00:17:52.900 --> 00:17:56.660
+yeah. So this is what we were trying to basically like
+
+00:17:56.660 --> 00:17:59.580
+achieve and yes in a code so we are able to achieve it you
+
+00:17:59.580 --> 00:18:02.180
+can just try to use that code template try to replace with
+
+00:18:02.180 --> 00:18:04.780
+any of your own agent run it and it is going to work for
+
+00:18:04.780 --> 00:18:08.420
+you. The code part so we will try to come on that side in a
+
+00:18:08.420 --> 00:18:14.000
+later stage but yeah so here as you can see so it is it is
+
+00:18:14.000 --> 00:18:17.980
+trying to like a read all of my data set over here and then
+
+00:18:17.980 --> 00:18:21.340
+one by one one by one one by one. So as per my instruction
+
+00:18:21.340 --> 00:18:25.440
+which is given to me so it is able to perform a task. Now
+
+00:18:25.440 --> 00:18:28.480
+here so I will go to a second tab so where specifically I
+
+00:18:28.480 --> 00:18:31.040
+will be talking about a lan chain reader so what this reader
+
+00:18:31.040 --> 00:18:34.420
+is technically trying to do. So here it is just a summary
+
+00:18:34.420 --> 00:18:38.500
+now here so it is trying to give you like a basically total
+
+00:18:38.500 --> 00:18:41.680
+number of sales as per my like a snapshot or as per my
+
+00:18:41.680 --> 00:18:43.860
+instruction which I have given to agent that okay fine. So
+
+00:18:43.860 --> 00:18:47.160
+just try to give me some sort of a summary over here and as
+
+00:18:47.160 --> 00:18:50.260
+we all know that that inside A2A. There is a concept called
+
+00:18:50.260 --> 00:18:53.540
+as agent card right. This is where agent will be created or
+
+00:18:53.540 --> 00:18:57.060
+agent will be technically invoked. So here is a agent card
+
+00:18:57.060 --> 00:19:01.140
+which is running on one of the port right one of the port
+
+00:19:01.140 --> 00:19:05.540
+8001 over here. Now there is a crew AI analyst agent so
+
+00:19:05.540 --> 00:19:08.820
+again which is running on another port and if you will go
+
+00:19:08.820 --> 00:19:12.100
+and check so yes this is running on 8002 port number and
+
+00:19:12.100 --> 00:19:15.120
+then it is like trying to perform a kind of analysis which I
+
+00:19:15.120 --> 00:19:18.260
+have given to this particular agents right. So produce a
+
+00:19:18.260 --> 00:19:19.600
+markdown briefing and a structure. So this is the structure
+
+00:19:19.600 --> 00:19:23.560
+analysis of the leadership decision and then there is a
+
+00:19:23.560 --> 00:19:26.620
+another agent called as autogen visualizer. So which is
+
+00:19:26.620 --> 00:19:29.640
+eventually trying to generate a visualization for me. So all
+
+00:19:29.640 --> 00:19:32.980
+this output has not changed what we have changed. So we have
+
+00:19:32.980 --> 00:19:36.660
+technically changed a entire process. That is the only thing
+
+00:19:36.660 --> 00:19:40.040
+that we have changed over here. Apart from that you will not
+
+00:19:40.040 --> 00:19:43.860
+be able to see any kind of changes in between all of these
+
+00:19:43.860 --> 00:19:48.040
+and here. So I am trying to even showcase. So that you know
+
+00:19:48.040 --> 00:19:50.660
+you all will be able to understand in a easiest possible
+
+00:19:50.660 --> 00:19:54.560
+manner although it was not required. But here so I am trying
+
+00:19:54.560 --> 00:19:58.980
+to showcase a conversation that how I already told you
+
+00:19:58.980 --> 00:20:02.300
+right. So we have three kind of agent one is a reader one is
+
+00:20:02.300 --> 00:20:05.880
+analyst and one is a visualizer. So and I told you that okay
+
+00:20:05.880 --> 00:20:09.060
+so this agents are going to take some sort of a data input
+
+00:20:09.060 --> 00:20:12.160
+and it is going to give me some sort of a data output. So
+
+00:20:12.160 --> 00:20:15.760
+what kind of a data input it is going to take. What kind of
+
+00:20:15.760 --> 00:20:18.120
+a data output. What kind of output it is going to give it to
+
+00:20:18.120 --> 00:20:20.540
+you. So this is what I am trying to showcase inside my
+
+00:20:20.540 --> 00:20:25.640
+conversation. So here this is my raw data right. This is my
+
+00:20:25.640 --> 00:20:28.820
+raw data. So which was available. So now it is trying to
+
+00:20:28.820 --> 00:20:31.740
+read a data from this particular location in whatever
+
+00:20:31.740 --> 00:20:34.820
+location I am keeping a data. So from here it will try to
+
+00:20:34.820 --> 00:20:38.160
+pick a data and this is technically my data set right. This
+
+00:20:38.160 --> 00:20:41.460
+is my raw data set by the way in a CSV format which is
+
+00:20:41.460 --> 00:20:45.580
+available to me. So here langchain reader will try to read a
+
+00:20:45.580 --> 00:20:47.560
+data. And then what I am going to do. So once it will be
+
+00:20:47.560 --> 00:20:51.660
+able to read a data it is going to give me this kind of a
+
+00:20:51.660 --> 00:20:54.840
+payload that okay fine. So this is a data which I am able to
+
+00:20:54.840 --> 00:20:58.120
+read one by one, one by one, one by one. So here I am trying
+
+00:20:58.120 --> 00:21:01.320
+to return a data into a JSON format so that I will be able
+
+00:21:01.320 --> 00:21:05.340
+to pass those data to the next one right to the next one.
+
+00:21:05.440 --> 00:21:10.360
+Now this data will go as a input input inside my crew AI
+
+00:21:10.360 --> 00:21:13.420
+basically right. It will go as an input inside my crew AI.
+
+00:21:13.620 --> 00:21:18.560
+And whatever instruction which I have given. Okay. So it is
+
+00:21:18.560 --> 00:21:22.000
+going to execute those instruction and then it is going to
+
+00:21:22.000 --> 00:21:25.220
+produce some sort of output and here so again you will be
+
+00:21:25.220 --> 00:21:27.380
+able to see a structural payload. So which will go to the
+
+00:21:27.380 --> 00:21:30.660
+next one and here I am trying to say that that use the
+
+00:21:30.660 --> 00:21:33.180
+provided sales intelligence context to draft the decision
+
+00:21:33.180 --> 00:21:36.960
+ready analysis. So this is going to like a you know like a
+
+00:21:36.960 --> 00:21:40.520
+user LLM by the way right. It is going to use a LLM and then
+
+00:21:40.520 --> 00:21:43.840
+it is going to provide me all sort of a matrixes which I was
+
+00:21:43.840 --> 00:21:46.140
+looking for. And which is a responsibility of this middle
+
+00:21:46.140 --> 00:21:50.960
+agent. Which is a crew AI right crew AI. Now once it will be
+
+00:21:50.960 --> 00:21:54.400
+able to give me an output and if you will come down. So now
+
+00:21:54.400 --> 00:21:59.540
+this data will go as an input inside my next one and where I
+
+00:21:59.540 --> 00:22:02.620
+am trying to say that that okay. So now you have you are
+
+00:22:02.620 --> 00:22:06.160
+responsible for doing a visualization. So try to invoke a
+
+00:22:06.160 --> 00:22:09.740
+visual analyst agent and then try to perform a visualization
+
+00:22:09.740 --> 00:22:13.400
+for me. So one by one one by one one by one. So it is trying
+
+00:22:13.400 --> 00:22:16.560
+to create a different different kind of a chart. So. So it
+
+00:22:16.560 --> 00:22:18.800
+is trying to create a bar chart over here. Again it is
+
+00:22:18.800 --> 00:22:22.020
+trying to create a bar chart over here. So in this manner
+
+00:22:22.020 --> 00:22:26.000
+all of these three agents are trying to coordinate and then
+
+00:22:26.000 --> 00:22:30.060
+eventually I will be able to get my final output. So is it
+
+00:22:30.060 --> 00:22:34.120
+making sense to all of us guys communication wise. So we
+
+00:22:34.120 --> 00:22:37.060
+have just separated all the agent. That's it. This is what
+
+00:22:37.060 --> 00:22:40.040
+we have done. So we have just separated all the agent and
+
+00:22:40.040 --> 00:22:43.700
+one is trying to take a input and giving me an output that
+
+00:22:43.700 --> 00:22:46.760
+output. I am trying to pass to them. next one that's the
+
+00:22:46.760 --> 00:22:49.880
+only operation which I'm trying to perform over here making
+
+00:22:49.880 --> 00:22:50.880
+sense yeah
+
+00:22:53.540 --> 00:22:58.900
+in terms of a do a communication okay so now let's go to a
+
+00:22:58.900 --> 00:23:02.800
+code part and let me give you a walkthrough of a code that
+
+00:23:02.800 --> 00:23:05.680
+how inside a code it is working so I have created a couple
+
+00:23:05.680 --> 00:23:09.700
+of new files over there so that you know I can show you a
+
+00:23:09.700 --> 00:23:13.400
+communication between these agents so this is my multi-agent
+
+00:23:13.400 --> 00:23:14.980
+folder okay
+
+00:23:19.070 --> 00:23:22.870
+so let me this is just a environment this is just a data
+
+00:23:22.870 --> 00:23:27.790
+okay now here so if I have to show you that how these agents
+
+00:23:27.790 --> 00:23:30.630
+are actually communicating and how these agents are trying
+
+00:23:30.630 --> 00:23:33.670
+to perform all such operations which we are able to see even
+
+00:23:33.670 --> 00:23:37.310
+now so one by one let's try to take a walkthrough of this
+
+00:23:37.310 --> 00:23:40.530
+entire code base so that it will give you a beautiful
+
+00:23:40.530 --> 00:23:43.290
+understanding about each and everything that we are able to
+
+00:23:43.290 --> 00:23:45.250
+perform over here okay
+
+00:24:22.310 --> 00:24:24.650
+okay so as
+
+00:24:27.240 --> 00:24:30.460
+per my code base so we have a orchestrator file so that we
+
+00:24:30.460 --> 00:24:33.540
+have already seen so you can think of this orchestrator file
+
+00:24:33.540 --> 00:24:36.960
+as a coordinator so there is a coordinator
+
+00:24:38.920 --> 00:24:43.260
+and what this coordinator will do so what technically this
+
+00:24:43.260 --> 00:24:46.160
+orchestrator will do so this will try to connect with the
+
+00:24:46.160 --> 00:24:51.400
+reader agent as per my flow now once a reader agent will be
+
+00:24:51.400 --> 00:24:54.520
+able to like a you know like a receiver instruction from a
+
+00:24:54.520 --> 00:24:57.800
+coordinator that I have to read some sort of a data so what
+
+00:24:57.800 --> 00:25:02.740
+it will do so it will try to like a read a message and based
+
+00:25:02.740 --> 00:25:06.780
+on the message so it is going to basically read something
+
+00:25:06.780 --> 00:25:09.980
+called as text part as per my code which I am going to show
+
+00:25:09.980 --> 00:25:13.100
+you so this text part wise I have already given an
+
+00:25:13.100 --> 00:25:18.940
+instruction that ingest a data yeah ingest a data so this is
+
+00:25:18.940 --> 00:25:22.140
+the instruction which I have given to this reader agent now
+
+00:25:22.140 --> 00:25:25.700
+what it will do so it will try to call something called as
+
+00:25:25.700 --> 00:25:28.760
+data part so technically Basically data part is nothing but
+
+00:25:28.760 --> 00:25:36.880
+it is going to take my data set path, it is going to take or
+
+00:25:36.880 --> 00:25:41.140
+read a CSV text which is available to me and then it is
+
+00:25:41.140 --> 00:25:44.900
+going to take a help of a model that in terms of
+
+00:25:44.900 --> 00:25:48.300
+understanding a entire data set. So this is what my reader
+
+00:25:48.300 --> 00:25:53.100
+is going to do. Now once reader will be able to read a data,
+
+00:25:53.220 --> 00:25:59.560
+what it does, so reader return back the output again to a
+
+00:25:59.560 --> 00:26:02.860
+coordinator. This is how this entire flow is going to work,
+
+00:26:04.670 --> 00:26:08.550
+means orchestrator basically. So let us suppose my reader is
+
+00:26:08.550 --> 00:26:13.590
+running on maybe 8001 port number, so it is going to perform
+
+00:26:13.590 --> 00:26:16.690
+a data reading operation and once it is able to perform a
+
+00:26:16.690 --> 00:26:19.510
+data reading operation, so it will give back to a
+
+00:26:19.510 --> 00:26:23.890
+coordinator. So technically it is working in a request
+
+00:26:23.890 --> 00:26:27.970
+response manner, the way any kind of APIs are going to
+
+00:26:27.970 --> 00:26:31.050
+behave in the exact similar manner and again I am going to
+
+00:26:31.050 --> 00:26:33.950
+show you that there is a fast API integration which is
+
+00:26:33.950 --> 00:26:37.330
+already available inside A2A inbuilt SDK which I am using
+
+00:26:37.330 --> 00:26:41.390
+over here. So here reader is going to send back to a
+
+00:26:41.390 --> 00:26:45.270
+coordinator saying that okay I am able to read a data as per
+
+00:26:45.270 --> 00:26:47.810
+the instruction that you have given and as per the location
+
+00:26:47.810 --> 00:26:50.050
+that you have given. So whatever path that you have given,
+
+00:26:50.110 --> 00:26:52.590
+so I am able to read the data and then as per your
+
+00:26:52.590 --> 00:26:54.770
+instruction, so I am able to process each and everything and
+
+00:26:54.770 --> 00:26:57.370
+that is the output that I have shown it to you, step by step
+
+00:26:57.370 --> 00:26:59.610
+that okay fine, this will go as an input and this will come
+
+00:26:59.610 --> 00:27:03.730
+as an output. So it will send back to a coordinator. So
+
+00:27:03.730 --> 00:27:05.810
+obviously whenever it is trying to send back to a
+
+00:27:05.810 --> 00:27:08.170
+coordinator, so it will always try to send back to a
+
+00:27:08.170 --> 00:27:11.410
+coordinator in a particular format, the format that we are
+
+00:27:11.410 --> 00:27:15.330
+going to define. So again it is going to invoke a message
+
+00:27:15.330 --> 00:27:18.190
+part because as a message it is trying to do a communication
+
+00:27:18.190 --> 00:27:22.130
+between the agent and then inside a message part, you will
+
+00:27:22.130 --> 00:27:25.450
+be able to see basically a text part. So text part means
+
+00:27:25.450 --> 00:27:27.730
+basically an instruction. So let's suppose if I have given
+
+00:27:27.730 --> 00:27:31.570
+an instruction that okay, so try to give me a summary. Let's
+
+00:27:31.570 --> 00:27:34.890
+suppose right, try to give me a summary. So it will try to
+
+00:27:34.890 --> 00:27:37.890
+give you a summary and then it is going to give you a data
+
+00:27:37.890 --> 00:27:40.330
+part. Data part means actual data set which I am going to
+
+00:27:40.330 --> 00:27:44.690
+show or which I am going to use it for the next process. So
+
+00:27:44.690 --> 00:27:48.470
+here it is going to return me a record. Okay. And maybe a
+
+00:27:48.470 --> 00:27:51.850
+matrixes which I am looking for, right, which I am looking
+
+00:27:51.850 --> 00:27:54.390
+for. So this is something that it is going to return. Now
+
+00:27:54.390 --> 00:27:58.350
+once this will be able to do it, so port number 8001 will be
+
+00:27:58.350 --> 00:28:01.430
+done, right. Once it is able to return back to the
+
+00:28:01.430 --> 00:28:04.550
+coordinator, the responsibility of this port number 8001 is
+
+00:28:04.550 --> 00:28:08.830
+done. Now once this part is done, then what will happen, so
+
+00:28:08.830 --> 00:28:14.090
+our system already knows that we have configured it for a
+
+00:28:14.090 --> 00:28:16.710
+multiple agent means technically my coordinators are aware
+
+00:28:16.710 --> 00:28:19.970
+about that. Okay. I am looking for something like a next
+
+00:28:19.970 --> 00:28:23.830
+agent. So which is going to take this as a payload basically
+
+00:28:23.830 --> 00:28:27.110
+and it should be able to process this particular part. So
+
+00:28:27.110 --> 00:28:33.410
+automatically my coordinator will try to invoke basically a
+
+00:28:33.410 --> 00:28:37.930
+analyst agent, analyst agent. And again it is going to
+
+00:28:37.930 --> 00:28:41.710
+follow the exact same process. So it is going to take a
+
+00:28:41.710 --> 00:28:45.390
+message again inside a message I will be having basically a
+
+00:28:45.390 --> 00:28:48.810
+text part. And I will be having basically a data part,
+
+00:28:48.990 --> 00:28:52.570
+right, two part I will be having. So text part wise, so I am
+
+00:28:52.570 --> 00:28:55.990
+going to give instruction that okay, fine. So convert maybe
+
+00:28:55.990 --> 00:28:58.550
+this particular summary which I have already received from
+
+00:28:58.550 --> 00:29:01.970
+here, right into maybe some sort of a analytical operation
+
+00:29:01.970 --> 00:29:04.850
+or like whatever analysis which I am looking for in terms of
+
+00:29:04.850 --> 00:29:07.390
+my data set. So for example, I have a sales data set. So
+
+00:29:07.390 --> 00:29:11.110
+maybe I am looking for a sales matrixes over there. So here
+
+00:29:11.110 --> 00:29:15.110
+instruction will go and here. So it is going to take the
+
+00:29:15.110 --> 00:29:19.950
+actual record. Actual record it is going to take. Now once
+
+00:29:19.950 --> 00:29:22.650
+analyst will be able to process and it will be able to give
+
+00:29:22.650 --> 00:29:27.130
+me analysis. Again analyst and this is running on 8000 two
+
+00:29:27.130 --> 00:29:30.390
+port number. So this is running technically on 8000 two port
+
+00:29:30.390 --> 00:29:34.770
+number my analyst agent. So once analyst will be able to
+
+00:29:34.770 --> 00:29:37.950
+give the output or it is able to generate the output. So
+
+00:29:37.950 --> 00:29:42.610
+again it will send back to a coordinator, coordinator and
+
+00:29:42.610 --> 00:29:45.210
+again so coordinator is going to receive a message in the
+
+00:29:45.210 --> 00:29:49.170
+exact same format. So basically a text part which is nothing
+
+00:29:49.170 --> 00:29:52.810
+but my instruction and then a data part which is nothing but
+
+00:29:52.810 --> 00:29:56.110
+my actual payload, right. So it is going to return back to
+
+00:29:56.110 --> 00:29:59.550
+me whatever analyst is going to do. So now again control
+
+00:29:59.550 --> 00:30:02.510
+came back to a coordinator, right. Again this request
+
+00:30:02.510 --> 00:30:07.470
+response just like an API that we already know and then this
+
+00:30:07.470 --> 00:30:14.960
+coordinator basically coordinator basically invoke a
+
+00:30:14.960 --> 00:30:15.960
+visualizer agent.
+
+00:30:19.910 --> 00:30:23.170
+Visualizer. Visualizer agent and then it is going to again
+
+00:30:23.170 --> 00:30:26.810
+follow the same process. So there will be basically a text
+
+00:30:26.810 --> 00:30:32.050
+part and there will be a data part, data part. So text part
+
+00:30:32.050 --> 00:30:34.730
+means so we are giving an instruction that okay fine so you
+
+00:30:34.730 --> 00:30:37.370
+are the visualizer agent and you are supposed to do XYZ kind
+
+00:30:37.370 --> 00:30:40.050
+of a job and then data part means so this is the data on
+
+00:30:40.050 --> 00:30:42.610
+which you have to perform this kind of a operation or
+
+00:30:42.610 --> 00:30:45.410
+whatever instruction that we have pointed out. And once my
+
+00:30:45.410 --> 00:30:48.050
+visualizer is going to give an output so that is going to be
+
+00:30:48.050 --> 00:30:50.490
+mine. So visualizer is going to send back the output. That
+
+00:30:50.490 --> 00:30:53.050
+is going to be my final output because after that so I am
+
+00:30:53.050 --> 00:30:56.150
+not going to invoke any kind of an agent. If required I can
+
+00:30:56.150 --> 00:31:00.170
+try to invoke any kind of an agent. So this agent is working
+
+00:31:00.170 --> 00:31:04.210
+in a sequence, right. So one after another, one after
+
+00:31:04.210 --> 00:31:07.150
+another, one after another. If I would like to create maybe
+
+00:31:07.150 --> 00:31:10.110
+some different kind of a structure, right, that okay so
+
+00:31:10.110 --> 00:31:13.110
+there is this particular agent and it should send a data to
+
+00:31:13.110 --> 00:31:15.990
+this as well as to this one then this should perform maybe
+
+00:31:15.990 --> 00:31:18.970
+some different kind of operation, this should perform some
+
+00:31:18.970 --> 00:31:21.630
+different kind of operation. Then this should perform some
+
+00:31:21.630 --> 00:31:24.150
+different kind of operation, maybe kind of a tree or graph
+
+00:31:24.150 --> 00:31:27.790
+kind of a structure or any kind of a flow that I would like
+
+00:31:27.790 --> 00:31:32.370
+to design. So if I am following this structure, I will be
+
+00:31:32.370 --> 00:31:36.770
+able to do it easily because I know that every node over
+
+00:31:36.770 --> 00:31:41.390
+here is an independent node and every node I can try to like
+
+00:31:41.390 --> 00:31:44.710
+configure it in my way that who is going to take a data who
+
+00:31:44.710 --> 00:31:47.430
+is going to take like what is what is the output that it is
+
+00:31:47.430 --> 00:31:51.370
+going to give. And everywhere, whatever agent that we are
+
+00:31:51.370 --> 00:31:54.930
+trying to invoke so as per A2A protocol as we all know that
+
+00:31:54.930 --> 00:31:58.190
+A2A is technically a protocol. So protocol means it is going
+
+00:31:58.190 --> 00:32:01.090
+to take a data in a certain format and it is going to give
+
+00:32:01.090 --> 00:32:03.730
+you a data output in a certain format. So we are already
+
+00:32:03.730 --> 00:32:06.990
+aware about it and that is particularly fixed as per A2A
+
+00:32:06.990 --> 00:32:09.770
+protocol. This is where this technically this protocol comes
+
+00:32:09.770 --> 00:32:13.890
+into a picture. So even if I have to create a very very
+
+00:32:13.890 --> 00:32:17.390
+complex structure, so where my agent is supposed to do a
+
+00:32:17.390 --> 00:32:21.230
+communication and all of those agents are available in a
+
+00:32:21.230 --> 00:32:24.030
+different different library, different different framework
+
+00:32:24.030 --> 00:32:28.790
+but still just because of A2A I am using over here. So it is
+
+00:32:28.790 --> 00:32:32.010
+going to create some sort of a standardization in terms of
+
+00:32:32.010 --> 00:32:35.550
+input and output and that is the only thing that we are
+
+00:32:35.550 --> 00:32:38.250
+looking for as a part of the protocol. I believe this is
+
+00:32:38.250 --> 00:32:41.770
+what we were able to understand even with respect to an API,
+
+00:32:42.030 --> 00:32:44.930
+right. So when we say API, so obviously it will be having
+
+00:32:44.930 --> 00:32:47.530
+some sort of a standard protocol that it is running on this
+
+00:32:47.530 --> 00:32:50.310
+particular URL, this particular path. This is going to take
+
+00:32:50.310 --> 00:32:52.750
+this kind of a data and this is going to give this kind of a
+
+00:32:52.750 --> 00:32:56.410
+output. This is where my entire A2A flow comes into a
+
+00:32:56.410 --> 00:33:00.470
+picture. So can I make a claim over here that in future if
+
+00:33:00.470 --> 00:33:04.390
+we are going to get this kind of a requirement, so where I
+
+00:33:04.390 --> 00:33:07.910
+have maybe a tens of agents or maybe a thousands of agent
+
+00:33:07.910 --> 00:33:11.550
+designed in a different different framework but if I am
+
+00:33:11.550 --> 00:33:16.610
+going to fix an input and output, right. And then if I am
+
+00:33:16.610 --> 00:33:17.350
+going to fix an input and output. If I am going to like
+
+00:33:17.350 --> 00:33:19.810
+maybe host it on a different different server, that is
+
+00:33:19.810 --> 00:33:21.950
+subjective, that depends, right. Depends upon the project
+
+00:33:21.950 --> 00:33:24.810
+structure but still I will be able to establish a
+
+00:33:24.810 --> 00:33:27.510
+communication and I will be able to achieve this kind of a
+
+00:33:27.510 --> 00:33:31.350
+structure, yes, yeah.
+
+00:33:32.710 --> 00:33:36.410
+Coordinator means here orchestrator basically, one which is
+
+00:33:36.410 --> 00:33:40.770
+trying to call the agent, as simple as that. That is the
+
+00:33:40.770 --> 00:33:44.210
+meaning of a coordinator in this particular place, nothing
+
+00:33:44.210 --> 00:33:48.230
+more than that, okay. This is technically a structure and at
+
+00:33:48.230 --> 00:33:51.710
+the end of the day my goal was to finalize or my goal was to
+
+00:33:51.710 --> 00:33:54.950
+freeze a input and output. If I am able to freeze input
+
+00:33:54.950 --> 00:33:57.870
+output, simply means that I am trying to follow some sort of
+
+00:33:57.870 --> 00:34:01.170
+a protocol. Technically over here that protocol name is A2A
+
+00:34:01.170 --> 00:34:05.710
+that we are using in this particular manner. Okay, now just
+
+00:34:05.710 --> 00:34:08.310
+close everything, right, just close everything and let us go
+
+00:34:08.310 --> 00:34:11.050
+inside a code and let us try to understand that how it is
+
+00:34:11.050 --> 00:34:15.730
+actually working. So here we have already seen orchestrator
+
+00:34:15.730 --> 00:34:19.750
+.py file, so where orchestrator was helping me out in terms
+
+00:34:19.750 --> 00:34:22.770
+of, you know, orchestrating the entire things. Apart from
+
+00:34:22.770 --> 00:34:25.870
+that, so there is one file which I have added. So I have
+
+00:34:25.870 --> 00:34:28.750
+just added this particular file, A2A server.py file because
+
+00:34:28.750 --> 00:34:32.450
+I have to separate the entire like agents which was
+
+00:34:32.450 --> 00:34:35.350
+technically running. So I have created just this additional
+
+00:34:35.350 --> 00:34:37.990
+file. Apart from that, you will not be able to find out any
+
+00:34:37.990 --> 00:34:42.070
+other files by the way over here. And here. So. So in this
+
+00:34:42.070 --> 00:34:46.310
+A2A library, you will be able to see A2A fast API
+
+00:34:46.310 --> 00:34:51.190
+application, yeah. So a fast API application implementing a
+
+00:34:51.190 --> 00:34:56.310
+A2A protocol server endpoint. This is going to do a magic
+
+00:34:56.310 --> 00:34:59.130
+and this has actually done the magic. So how I am able to
+
+00:34:59.130 --> 00:35:01.850
+create a different different agent and for a different
+
+00:35:01.850 --> 00:35:04.870
+different agent, a different different URL or servers just
+
+00:35:04.870 --> 00:35:09.030
+because of this A2A fast API application. This has already,
+
+00:35:09.150 --> 00:35:11.670
+this has helped me out. And technically it's, it's nothing
+
+00:35:11.670 --> 00:35:16.290
+but just a, like a wrapper of A2A on top of a fast API that
+
+00:35:16.290 --> 00:35:19.610
+we already know. And it's already available inside my A2A as
+
+00:35:19.610 --> 00:35:24.350
+simple as that. And then the rest is exactly same. So I have
+
+00:35:24.350 --> 00:35:28.210
+not changed anything over there, right? Except this A2A fast
+
+00:35:28.210 --> 00:35:31.310
+API application, which is just helping me out in terms of
+
+00:35:31.310 --> 00:35:35.650
+converting each and everything, uh, as, as of like, uh, you
+
+00:35:35.650 --> 00:35:38.130
+know, uh, with the help of A2A, it is helping me out. It is
+
+00:35:38.130 --> 00:35:40.790
+helping me out in terms of converting things into a, uh, API
+
+00:35:40.790 --> 00:35:44.890
+path, API endpoint. Now coming to my orchestrator.py file.
+
+00:35:45.030 --> 00:35:48.130
+So here, if you will come to line number, I'll just try to
+
+00:35:48.130 --> 00:35:50.710
+show you the message format, which I was like talking about,
+
+00:35:50.810 --> 00:35:55.090
+right? So here you will be able to see that I have a very
+
+00:35:55.090 --> 00:35:57.730
+first agent and this agent is something that we have already
+
+00:35:57.730 --> 00:35:59.950
+seen, right? This agent is something which I have already
+
+00:35:59.950 --> 00:36:04.030
+seen. So when I was talking about this structure, so I told
+
+00:36:04.030 --> 00:36:07.270
+you there are two things. One is a message part for any
+
+00:36:07.270 --> 00:36:09.330
+agent, right? Any agent that we are going to create. So one
+
+00:36:09.330 --> 00:36:12.970
+is a message part and second one is a data part as simple as
+
+00:36:12.970 --> 00:36:18.150
+that. So here create a text message with the data. So for
+
+00:36:18.150 --> 00:36:20.890
+the very first agent, which is my Langchain agent, which is
+
+00:36:20.890 --> 00:36:24.370
+helping me out in terms of reading out a data. So here I'm
+
+00:36:24.370 --> 00:36:27.530
+trying to provide two things. One is this and one is this
+
+00:36:27.530 --> 00:36:31.350
+one, that's it, right? So one is an instruction. So ingest
+
+00:36:31.350 --> 00:36:34.450
+the provided, uh, ingest the provided sales data and produce
+
+00:36:34.450 --> 00:36:37.050
+the structured summary. So this is a message. This is the
+
+00:36:37.050 --> 00:36:40.890
+instruction. I'm giving for a LM and then here I'm trying to
+
+00:36:40.890 --> 00:36:44.110
+provide up data that, okay, so you should read a data from
+
+00:36:44.110 --> 00:36:47.890
+this particular path. So path I have already given. So here
+
+00:36:47.890 --> 00:36:51.570
+is a path PD Pandas dot read CSV. So I'm reading from a
+
+00:36:51.570 --> 00:36:54.610
+local system and then I'm trying to say that, that, okay,
+
+00:36:54.650 --> 00:36:58.730
+fine. So this is a data dot CSV. So basically this is like a
+
+00:36:58.730 --> 00:37:01.550
+data set that you will be able to get it into a CSV format
+
+00:37:01.550 --> 00:37:04.590
+and then model wise. So model, which I have already provided
+
+00:37:04.590 --> 00:37:07.190
+a default model, a chat GPT model, which I have already
+
+00:37:07.190 --> 00:37:11.610
+provided over here. So this is how it is going to consider
+
+00:37:11.610 --> 00:37:14.950
+an instruction. It is going to read a data and then finally
+
+00:37:14.950 --> 00:37:20.670
+it will be able to give me an output in this particular one.
+
+00:37:21.050 --> 00:37:24.370
+So once it will be able to like, uh, you know, uh, like, uh,
+
+00:37:24.390 --> 00:37:27.990
+get this kind of a request basically. So then it is going to
+
+00:37:27.990 --> 00:37:29.510
+perform this
+
+00:37:31.970 --> 00:37:36.010
+entire operation. So it is going to send a message and then
+
+00:37:36.010 --> 00:37:40.130
+it is going to basically read by entire data. Yeah. With the
+
+00:37:40.130 --> 00:37:43.070
+help of agent card. So agent card is something that we have
+
+00:37:43.070 --> 00:37:45.170
+already discussed in my previous lecture that, okay, fine.
+
+00:37:45.270 --> 00:37:47.390
+So we are creating an agent card, which is like going to
+
+00:37:47.390 --> 00:37:50.070
+build one of my agent because technically agent card is
+
+00:37:50.070 --> 00:37:54.410
+something called as agents inside my A2A protocol. Now once
+
+00:37:54.410 --> 00:37:57.370
+this will be done, right, once it will be, once this will be
+
+00:37:57.370 --> 00:38:00.010
+done. So once it will be able to give me the final output,
+
+00:38:00.110 --> 00:38:04.490
+then what we will do. So here we have something called as
+
+00:38:04.490 --> 00:38:07.930
+A2A server dot PI file. So which is coordinating, right?
+
+00:38:07.990 --> 00:38:10.650
+Which is technically like, you know. Helping me out in terms
+
+00:38:10.650 --> 00:38:14.250
+of doing a coordination. So here inside my line number,
+
+00:38:14.430 --> 00:38:19.070
+this, so I have created a technically one class, like I told
+
+00:38:19.070 --> 00:38:21.670
+you. So this is a new file which I have created. Uh, it was
+
+00:38:21.670 --> 00:38:23.970
+not available in your previous code base if you'll go and
+
+00:38:23.970 --> 00:38:27.250
+check. So here there is a class which I have created. So
+
+00:38:27.250 --> 00:38:30.850
+reader request handler. So whenever reader will try to
+
+00:38:30.850 --> 00:38:33.510
+perform some sort of operation. So how it is going to
+
+00:38:33.510 --> 00:38:36.990
+technically handle entire request and how it is going to
+
+00:38:36.990 --> 00:38:41.670
+process the entire data set. Over here. So here on message
+
+00:38:41.670 --> 00:38:44.830
+sent. So once it will be like a invoke, so it is going to
+
+00:38:44.830 --> 00:38:47.830
+get a data part. It is going to get a data part with the
+
+00:38:47.830 --> 00:38:51.430
+help of all of these that we have given on message sent.
+
+00:38:51.630 --> 00:38:54.230
+Basically on message sent, it is going to perform this
+
+00:38:54.230 --> 00:38:56.470
+operation and this is nothing but that we are doing it
+
+00:38:56.470 --> 00:39:00.650
+inside my orchestrator already. Okay. Now let me close this
+
+00:39:00.650 --> 00:39:04.170
+part. Okay. So it is, it is going to like a handle the
+
+00:39:04.170 --> 00:39:07.650
+request for a reader and then technically it is going to run
+
+00:39:07.650 --> 00:39:10.790
+the reader. Okay. And to run a reader. So basically it's a
+
+00:39:10.790 --> 00:39:14.650
+Lantern based model that we have created or Lantern based
+
+00:39:14.650 --> 00:39:16.850
+agent that we have created. So it is going to call this
+
+00:39:16.850 --> 00:39:22.090
+reader similarly. So for my analyst, I have a message part
+
+00:39:22.090 --> 00:39:25.750
+that will be sent and then I have created a class which is
+
+00:39:25.750 --> 00:39:29.330
+going to handle a request for this one. Similarly for my
+
+00:39:29.330 --> 00:39:32.950
+visualizer. So this is a class which I created so for all of
+
+00:39:32.950 --> 00:39:37.110
+these three agent just to handle request and response. That
+
+00:39:37.110 --> 00:39:40.470
+this is a input that you are supposed to take and this is
+
+00:39:40.470 --> 00:39:43.370
+the output that you are supposed to give. So I have created
+
+00:39:43.370 --> 00:39:46.810
+three different, different, different, different class. But
+
+00:39:46.810 --> 00:39:50.310
+technically all of these three agent which I have created.
+
+00:39:50.470 --> 00:39:54.270
+So if you will come to the, this particular part, it is
+
+00:39:54.270 --> 00:39:57.350
+taking only two things. One is a message and one is a data
+
+00:39:57.350 --> 00:40:00.970
+part. So message as an instruction and data means input and
+
+00:40:00.970 --> 00:40:04.350
+then eventually it is going to give the output out of that
+
+00:40:04.350 --> 00:40:08.810
+one. Now. So this, anyone who is having any question guys
+
+00:40:08.810 --> 00:40:12.690
+with respect to this, yeah, so this is just a code addition
+
+00:40:12.690 --> 00:40:15.230
+on the previous one. So we are not doing much over here. So
+
+00:40:15.230 --> 00:40:18.370
+we are just trying to like add a piece of the code which is
+
+00:40:18.370 --> 00:40:21.830
+helping me out in terms of segregating the entire agents
+
+00:40:21.830 --> 00:40:23.890
+model over here. That's it.
+
+00:40:27.750 --> 00:40:30.710
+Then there is a line number one zero two. You will be able
+
+00:40:30.710 --> 00:40:35.890
+to find out inside this orchestrator.py file and here, so it
+
+00:40:35.890 --> 00:40:39.830
+is trying to call extract text from the messages. So here
+
+00:40:39.830 --> 00:40:42.610
+extract text for the messages, whatever messages it is going
+
+00:40:42.610 --> 00:40:45.570
+to give me as a return. So we are trying to extract all of
+
+00:40:45.570 --> 00:40:49.310
+this data out of this one. This is our old file. So same A2A
+
+00:40:49.310 --> 00:40:52.130
+utils file that we have created already in my last class. So
+
+00:40:52.130 --> 00:40:54.270
+we are trying to use it and then it is helping me out in
+
+00:40:54.270 --> 00:40:57.930
+terms of doing a data extraction. So once we are able to
+
+00:40:57.930 --> 00:41:02.350
+like read a text and then we are able to get a payload, then
+
+00:41:02.350 --> 00:41:06.010
+we are trying to create a text message with the data, which
+
+00:41:06.010 --> 00:41:09.070
+is nothing but a data extraction. data used for a analyst.
+
+00:41:09.370 --> 00:41:12.690
+So it is going to send data to the analyst and then again
+
+00:41:12.690 --> 00:41:15.970
+analyst is trying to follow the exact same thing. Message
+
+00:41:15.970 --> 00:41:19.530
+and then data that is it. Message and data and analyst is
+
+00:41:19.530 --> 00:41:23.450
+going to give me the final output. Now once it will be done
+
+00:41:23.450 --> 00:41:25.790
+again we are calling extract text message from the analyst
+
+00:41:25.790 --> 00:41:29.830
+basically and then we are trying to create a data for my
+
+00:41:29.830 --> 00:41:33.650
+visualizer. So again message and the data we are trying to
+
+00:41:33.650 --> 00:41:36.650
+send to the visualizer and then visualizer is going to like
+
+00:41:36.650 --> 00:41:39.310
+do a final visualization and I will be able to eventually
+
+00:41:39.310 --> 00:41:43.230
+get the final output. Now here configuration wise if you
+
+00:41:43.230 --> 00:41:47.050
+will go and check. So we have created basically an agent
+
+00:41:47.050 --> 00:41:49.390
+endpoint. So we are saying that that okay so whenever you
+
+00:41:49.390 --> 00:41:52.990
+are trying to perform this operation do one thing. So for
+
+00:41:52.990 --> 00:41:57.030
+reader try to use this particular endpoint for analyst try
+
+00:41:57.030 --> 00:42:00.230
+to use this particular endpoint and for visualizer so try to
+
+00:42:00.230 --> 00:42:03.550
+use basically this particular endpoint. So this is a place
+
+00:42:03.550 --> 00:42:07.750
+where I have defined. Now here you can try to give a server
+
+00:42:07.750 --> 00:42:10.490
+location any server location of your choice or maybe any
+
+00:42:10.490 --> 00:42:14.610
+port location of your choice and it will be able to host all
+
+00:42:14.610 --> 00:42:17.930
+of those agent in the respective server or in a respective
+
+00:42:17.930 --> 00:42:20.770
+port number. So in my case my server is same its local host
+
+00:42:20.770 --> 00:42:24.050
+I have just like a differentiated it with the help of port
+
+00:42:24.050 --> 00:42:28.270
+number 1, 2 and 3. Even my endpoint is same like or my path
+
+00:42:28.270 --> 00:42:32.230
+is same after this entire endpoint. So slash a to a. So
+
+00:42:32.230 --> 00:42:34.430
+where I am trying to host each and everything. So here I am
+
+00:42:34.430 --> 00:42:35.230
+trying to host each and everything. So this is how my model
+
+00:42:35.230 --> 00:42:38.110
+is going to collaborate and my model is going to give me the
+
+00:42:38.110 --> 00:42:44.790
+final output. Yes everyone so once I am going to send you
+
+00:42:44.790 --> 00:42:47.750
+the file so maybe you all will be able to understand it and
+
+00:42:47.750 --> 00:42:50.610
+if you will try to digest this entire thing then it will
+
+00:42:50.610 --> 00:42:53.870
+give you more and more clarity but yeah so maybe just by
+
+00:42:53.870 --> 00:42:57.310
+looking into this it is going to give you some sort of a
+
+00:42:57.310 --> 00:43:03.560
+goose bumps that what is going on over here. But I have just
+
+00:43:03.560 --> 00:43:07.360
+added only one file a to a server.py file. And in
+
+00:43:07.360 --> 00:43:10.180
+orchestrator I have just given an endpoint that is the only
+
+00:43:10.180 --> 00:43:13.520
+changes which I have made if you will go and do a comparison
+
+00:43:13.520 --> 00:43:17.440
+with respect to the previous one. So that one can handle a
+
+00:43:17.440 --> 00:43:21.920
+request and response from a different one that is it.
+
+00:43:27.240 --> 00:43:31.160
+We need API key yes even last class right so we were using
+
+00:43:31.160 --> 00:43:34.360
+an API key. So my API key is already available in .env file.
+
+00:43:34.500 --> 00:43:38.340
+So I am already keeping my API key and yeah so all of you
+
+00:43:38.340 --> 00:43:41.900
+can use the same API key to run this entire server. Now
+
+00:43:41.900 --> 00:43:45.720
+coming to a running part by the way so to run this entire
+
+00:43:45.720 --> 00:43:49.500
+application what you can do so you can try to run a
+
+00:43:49.500 --> 00:43:54.020
+individual like you know server one by one one by one so you
+
+00:43:54.020 --> 00:43:58.220
+can try to run the individual server. So here to run this
+
+00:43:58.220 --> 00:44:01.620
+one so there is a start file which I have already created
+
+00:44:01.620 --> 00:44:04.880
+for all of you so that you know you all will be able to run
+
+00:44:04.880 --> 00:44:08.640
+it. There is a script folder and then there is something
+
+00:44:08.640 --> 00:44:11.700
+called as start agent dot py file which I have already
+
+00:44:11.700 --> 00:44:16.160
+created. So here basically what it is trying to do so it is
+
+00:44:16.160 --> 00:44:20.340
+trying to call a enlist app a reader app and a visualizer
+
+00:44:20.340 --> 00:44:24.980
+app. So enlist app is available inside my this location
+
+00:44:24.980 --> 00:44:28.500
+right path is slash A to A. So where we are creating
+
+00:44:28.500 --> 00:44:31.040
+technically everything is going to start from the agent card
+
+00:44:31.040 --> 00:44:35.240
+right. So here at this location my enlist app is been
+
+00:44:35.240 --> 00:44:39.120
+hosted. Similarly on this location my visualizer app is
+
+00:44:39.120 --> 00:44:42.620
+hosted. And similarly at this location. My reader app is
+
+00:44:42.620 --> 00:44:46.500
+hosted. So all three app inside my A to A server dot py file
+
+00:44:46.500 --> 00:44:49.500
+which is a old file which is a previous like the file that
+
+00:44:49.500 --> 00:44:52.980
+we have already discussed and yeah so everyone is trying to
+
+00:44:52.980 --> 00:44:55.240
+give me like a finally a fast API. This is just a notation
+
+00:44:55.240 --> 00:44:57.420
+which I have kept over here nothing more than that
+
+00:44:57.420 --> 00:45:02.240
+basically. So here there is a start agent dot py file. So
+
+00:45:02.240 --> 00:45:06.800
+which is going to import all of these three and then there
+
+00:45:06.800 --> 00:45:10.760
+is a agent builder. So create a reader app. Create an enlist
+
+00:45:10.760 --> 00:45:13.720
+app. Create a visualizer app card basically. So we are
+
+00:45:13.720 --> 00:45:16.460
+trying to use this agent builder in this particular place
+
+00:45:16.460 --> 00:45:20.520
+and then one by one one by one. So we have parameterized it
+
+00:45:20.520 --> 00:45:23.900
+in such a way that you will be able to run an agent. So how
+
+00:45:23.900 --> 00:45:26.800
+you will be able to run the agent. So for example if I have
+
+00:45:26.800 --> 00:45:32.600
+to run maybe this reader agent so to run a reader agent so
+
+00:45:32.600 --> 00:45:36.880
+you can try to use basically this python code which I am
+
+00:45:36.880 --> 00:45:39.000
+going to show you if
+
+00:45:41.720 --> 00:45:44.960
+I have to run only one agent. So python m you have to go
+
+00:45:44.960 --> 00:45:47.920
+into a script folder the folder that we have inside that we
+
+00:45:47.920 --> 00:45:51.000
+have a python file called as start underscore py and then
+
+00:45:51.000 --> 00:45:54.780
+you can try to give a parameter hyphen hyphen agent is equal
+
+00:45:54.780 --> 00:45:59.240
+to reader and port number is equal to 8001. So it is going
+
+00:45:59.240 --> 00:46:02.380
+to run it. It is going to run just a reader agent similarly
+
+00:46:02.380 --> 00:46:05.680
+so you can try to change port number is equal to 8002 and
+
+00:46:05.680 --> 00:46:08.760
+then here so you can try to change agent is equal to analyst
+
+00:46:08.760 --> 00:46:11.600
+and it is going to run enlist agent. Similarly. So agent
+
+00:46:11.600 --> 00:46:14.560
+name is going to visualizer and then port number is equal to
+
+00:46:14.560 --> 00:46:19.340
+8003 and you will be able to run all of these agent one by
+
+00:46:19.340 --> 00:46:22.560
+one one by one. So technically your three server will be up
+
+00:46:22.560 --> 00:46:25.580
+and running. Ideally three server will be up and running.
+
+00:46:26.400 --> 00:46:32.040
+Now so let's suppose if I have to run all of these agent in
+
+00:46:32.040 --> 00:46:35.360
+one single go and again your UI will be running separately.
+
+00:46:35.640 --> 00:46:39.280
+So your UI file is available. Let me terminate this one.
+
+00:46:39.420 --> 00:46:42.880
+Yeah. So CLS okay.
+
+00:46:45.210 --> 00:46:50.630
+So your UI file is available inside your UI directory. So
+
+00:46:50.630 --> 00:46:54.850
+here inside source inside UI. So app.py file. So UI is same
+
+00:46:54.850 --> 00:46:58.190
+UI we have not done much of changes in terms of like a
+
+00:46:58.190 --> 00:47:03.090
+showing the entire like a process basically. So UI is up and
+
+00:47:03.090 --> 00:47:07.190
+running at app.py file. So UI is a streamlined one. So run
+
+00:47:07.190 --> 00:47:10.630
+all three server one by one one by one one by one. And then
+
+00:47:10.630 --> 00:47:15.230
+try to run a UI. So that you know UI will be able to fetch
+
+00:47:15.230 --> 00:47:20.030
+each and everything in a like a sequential manner. Apart
+
+00:47:20.030 --> 00:47:24.030
+from that so I have also created one like a file over here.
+
+00:47:24.190 --> 00:47:27.790
+So so that you know you will be able to run everything in
+
+00:47:27.790 --> 00:47:31.910
+one single go and this file is basically a start all agent.
+
+00:47:32.030 --> 00:47:34.750
+So if you would like to start agent individually then go
+
+00:47:34.750 --> 00:47:37.670
+through a start agent file and then just try to change the
+
+00:47:37.670 --> 00:47:39.890
+port number. Just try to change the agent name and then it
+
+00:47:39.890 --> 00:47:43.770
+is going to work. Okay. So you have to call start all the
+
+00:47:43.770 --> 00:47:47.490
+agents. So it's a single file. So which is going where
+
+00:47:47.490 --> 00:47:50.390
+everything I have configured where I have configured. So
+
+00:47:50.390 --> 00:47:52.890
+reader and list and visualizer as well as its port number.
+
+00:47:53.230 --> 00:47:56.550
+So just have to call your start agent and then it is going
+
+00:47:56.550 --> 00:48:00.710
+to start one by one one by one automatically each and
+
+00:48:00.710 --> 00:48:04.110
+everything. That's it. Right. So let me show you the run
+
+00:48:04.110 --> 00:48:07.490
+part guys how we will be able to execute how I will be able
+
+00:48:07.490 --> 00:48:11.010
+to run it. So let me close my previous session. Okay. So
+
+00:48:11.010 --> 00:48:17.370
+that my port will be free and it should be available and
+
+00:48:23.030 --> 00:48:25.770
+API key is must if API key is not available then you won't
+
+00:48:25.770 --> 00:48:26.470
+be able to do it.
+
+00:48:35.420 --> 00:48:39.920
+Okay. So to run this entire things first of all you have to
+
+00:48:39.920 --> 00:48:43.320
+activate your virtual environment. So to activate a virtual
+
+00:48:43.320 --> 00:48:48.200
+environment command is going to be virtual environment and
+
+00:48:48.200 --> 00:48:52.340
+then inside that there is something called as SCRI PTS
+
+00:48:52.340 --> 00:48:57.480
+scripts. And then inside this script. So I have basically
+
+00:48:57.480 --> 00:49:02.980
+activate PS one power cell one. So activate PS one. So in
+
+00:49:02.980 --> 00:49:06.420
+this way my virtual environment will be activated. Now once
+
+00:49:06.420 --> 00:49:09.020
+this is activated then what we can do. So if I have to start
+
+00:49:09.020 --> 00:49:14.840
+all the agent all together so I can just try to call start
+
+00:49:16.480 --> 00:49:18.120
+all the agent.
+
+00:49:21.560 --> 00:49:28.240
+Yeah. So here Python and then hyphen M. And then. And then I
+
+00:49:28.240 --> 00:49:33.400
+have to go inside my script folder. This one. So a script
+
+00:49:33.400 --> 00:49:44.100
+folder SCRI PTS scripts and then dot start SCRI PTS SCRI
+
+00:49:44.100 --> 00:49:50.620
+PTS. Okay so script dot start start underscore all
+
+00:49:50.620 --> 00:49:57.400
+underscore AG and T agent S basically. So in this way you
+
+00:49:57.400 --> 00:50:02.420
+will be able to see. So launching reader agent at 8001 and
+
+00:50:02.420 --> 00:50:07.520
+list at 8002 and then visualizer at 8003. So you can keep
+
+00:50:07.520 --> 00:50:11.200
+all of these agent three agents up and running. You can like
+
+00:50:11.200 --> 00:50:16.420
+you know try to copy this all three agents individually and
+
+00:50:18.720 --> 00:50:20.280
+maybe let
+
+00:50:35.360 --> 00:50:41.320
+me check. Yeah so all three agents are up and running.
+
+00:51:12.110 --> 00:51:16.470
+8001 slash. Yeah. 8002 a to a. Okay
+
+00:52:07.800 --> 00:52:11.940
+so 404 not found. Let me check and
+
+00:52:18.240 --> 00:52:23.320
+here. So again power cell virtual environment is activated.
+
+00:52:23.400 --> 00:52:28.700
+So I can try to run. My Streamlit application,
+
+00:52:31.240 --> 00:52:34.800
+Streamlit run.
+
+00:52:35.920 --> 00:52:43.260
+And I can go into SRC folder. Inside SRC. I can go into UI
+
+00:52:43.260 --> 00:52:51.280
+folder. folder, now inside UI I can try to run my app.py
+
+00:52:51.280 --> 00:52:59.460
+file, yeah, ok, fine. So like I have shown you basically, so
+
+00:52:59.460 --> 00:53:03.180
+you have to run two things, so one is basically this start
+
+00:53:03.180 --> 00:53:05.980
+all the agent, so to start all the agent, so this is a file
+
+00:53:05.980 --> 00:53:09.500
+that you can try to use, if you want to start all the agent
+
+00:53:09.500 --> 00:53:13.740
+in one single go. If I would like to start agent in one by
+
+00:53:13.740 --> 00:53:17.000
+one, I have already configured that inside my start agent.py
+
+00:53:17.000 --> 00:53:19.520
+file and you have to follow the command that I have given
+
+00:53:19.520 --> 00:53:23.620
+over here. So simple, host number then port number and then
+
+00:53:23.620 --> 00:53:27.980
+like agent name and then it will try to fire itself. Now so
+
+00:53:27.980 --> 00:53:31.120
+once you are going to run this entire thing, maybe you can
+
+00:53:31.120 --> 00:53:33.880
+go and you can try to test it in the exact similar manner,
+
+00:53:34.020 --> 00:53:38.320
+so everything must be up and running, right. So this is how
+
+00:53:38.320 --> 00:53:41.780
+guys I can try to create agents and then I will be able to
+
+00:53:41.780 --> 00:53:45.020
+do the coordination. So this is the only changes which I
+
+00:53:45.020 --> 00:53:48.000
+have asked you to do. In my previous session, so that you
+
+00:53:48.000 --> 00:53:53.280
+know, I will be able to like create a A to A protocol
+
+00:53:53.280 --> 00:53:53.700
+driven.
+
+00:53:58.650 --> 00:54:02.650
+Let me share this entire code file, so I have just like a
+
+00:54:02.650 --> 00:54:09.130
+made small changes, so that you all will be able to access
+
+00:54:09.130 --> 00:54:12.470
+it and you all will be able to execute it. So copy path,
+
+00:54:16.310 --> 00:54:20.610
+multi agent, let me delete this previous file.
+
+00:54:44.770 --> 00:54:47.490
+So like I told you in my previous lecture, so even I have
+
+00:54:47.490 --> 00:54:49.910
+faced a lot of issues. With respect to, you know, creating
+
+00:54:49.910 --> 00:54:54.330
+this demo for A to A specifically. So it has given me a lot
+
+00:54:54.330 --> 00:54:58.570
+of, you know, issues, problems and pains and couple of
+
+00:54:58.570 --> 00:55:02.510
+sleepless night. Then I was able to create this like, you
+
+00:55:02.510 --> 00:55:08.390
+know, entire demo for all of you because the demo which is
+
+00:55:08.390 --> 00:55:11.270
+available over the internet, so they are not trying to
+
+00:55:11.270 --> 00:55:14.150
+showcase you know, actual coordination between the agent,
+
+00:55:14.310 --> 00:55:17.350
+they are not in most of the cases, so they have just created
+
+00:55:17.350 --> 00:55:19.870
+a very simple like an agent which anyone can create,
+
+00:55:19.970 --> 00:55:23.890
+technically an agent card, which A2A gives you by default.
+
+00:55:24.130 --> 00:55:27.330
+But agent card anyone can come and anyone can try to create,
+
+00:55:27.490 --> 00:55:31.430
+the major part is the communication, so how agent is able to
+
+00:55:31.430 --> 00:55:34.390
+communicate in between and that too by using a heterogeneous
+
+00:55:34.390 --> 00:55:37.450
+library. So for example in this one, so we have used three
+
+00:55:37.450 --> 00:55:39.870
+libraries, a different one or three framework you can say,
+
+00:55:39.950 --> 00:55:43.030
+Lanchen, Krew AI and Autogen. So that was a major problem.
+
+00:55:43.270 --> 00:55:45.730
+Apart from that if you will go and check over the internet,
+
+00:55:45.850 --> 00:55:48.790
+you will be able to find out all the simple example where
+
+00:55:48.790 --> 00:55:51.050
+people have used just one single framework and they are
+
+00:55:51.050 --> 00:55:54.610
+showing you okay fine this is the A2A. But again it will not
+
+00:55:54.610 --> 00:56:01.770
+give you a real sense of basically A2A. So A2A final demo
+
+00:56:01.770 --> 00:56:07.030
+and this is where it has created a lot of pain for me. So
+
+00:56:07.030 --> 00:56:10.090
+let me upload this file guys inside your dashboard so that
+
+00:56:10.090 --> 00:56:11.690
+you can download the latest one.
+
+00:56:20.850 --> 00:56:25.150
+And in such kind of a situation even vive coding does not
+
+00:56:25.150 --> 00:56:30.290
+work. So vive coding also comes with a limitation okay.
+
+00:56:33.800 --> 00:56:37.600
+So let me go to D drive multi agent and then upload.
+
+00:56:51.500 --> 00:56:54.320
+Okay so fine everyone just go to your dashboard and inside
+
+00:56:54.320 --> 00:56:57.360
+your dashboard I have already uploaded this file in your
+
+00:56:57.360 --> 00:56:59.600
+previous lecture. So 9th November lecture if you will go to
+
+00:56:59.600 --> 00:57:02.040
+a resource section, the second one. The first one is from
+
+00:57:02.040 --> 00:57:05.420
+the previous session and this is from my this session A2A
+
+00:57:05.420 --> 00:57:08.260
+final demo. So just try to download this one, it is like a
+
+00:57:08.260 --> 00:57:11.880
+250 MB of a file. So download it. And then when you are
+
+00:57:11.880 --> 00:57:16.020
+trying to execute it like me, so try to activate first of
+
+00:57:16.020 --> 00:57:19.280
+all your environment file and once that environment file
+
+00:57:19.280 --> 00:57:25.080
+will be activated then try to just run it. Yeah and let me
+
+00:57:25.080 --> 00:57:26.260
+know if you are facing any kind of issues.
+
+00:57:30.040 --> 00:57:33.120
+Can you give me a practical implementation of how this can
+
+00:57:33.120 --> 00:57:35.380
+be used? I think I have given you a practical implementation
+
+00:57:35.380 --> 00:57:37.840
+itself right. So there are 3 different different kind of
+
+00:57:37.840 --> 00:57:40.000
+agent created in a 3 different different kind of a
+
+00:57:40.000 --> 00:57:42.740
+framework. I have already given you analogy in my previous
+
+00:57:42.740 --> 00:57:46.060
+session. That let's suppose there are multiple team inside
+
+00:57:46.060 --> 00:57:49.140
+your company and every team is trying to build their own
+
+00:57:49.140 --> 00:57:51.840
+agent. Let's suppose there is a HR team, there is a finance
+
+00:57:51.840 --> 00:57:56.560
+team, there is a legal team. And all of these 3 teams are
+
+00:57:56.560 --> 00:58:00.260
+building a massive number of an agent but the problem is
+
+00:58:00.260 --> 00:58:02.140
+that that they are trying to use a different different
+
+00:58:02.140 --> 00:58:04.640
+framework, they are not using a same framework. So maybe
+
+00:58:04.640 --> 00:58:06.920
+your legal team has adopted an autogen framework, your
+
+00:58:06.920 --> 00:58:09.420
+finance team has adopted maybe a lanchan kind of a framework
+
+00:58:09.420 --> 00:58:13.080
+and then your HR team has adopted maybe a crew AI kind of a
+
+00:58:13.080 --> 00:58:19.040
+framework. And again you are trying to build an agent on a
+
+00:58:19.040 --> 00:58:22.340
+company level. So there are like a separate separate team,
+
+00:58:22.420 --> 00:58:26.600
+independent team, HR and finance and then your basically a
+
+00:58:26.600 --> 00:58:29.960
+legal team right. So there are 3 different different kind of
+
+00:58:29.960 --> 00:58:35.320
+a team. So HR, legal and then finance team. So they have
+
+00:58:35.320 --> 00:58:38.040
+let's suppose 100 agent, they have 50 agent and they have
+
+00:58:38.040 --> 00:58:41.900
+maybe a 20 agent. And then you come into a picture. Yeah.
+
+00:58:43.040 --> 00:58:44.480
+And then you come into a picture or maybe like someone told
+
+00:58:44.480 --> 00:58:48.080
+you that okay so we have to build a complete application
+
+00:58:48.080 --> 00:58:52.580
+where it is supposed to use HR agent as well as it is
+
+00:58:52.580 --> 00:58:55.700
+supposed to use agent which legal team has already built it
+
+00:58:55.700 --> 00:58:58.840
+because they are the subject expert and they are they have
+
+00:58:58.840 --> 00:59:01.700
+built an agent which works for a legal at least. And then
+
+00:59:01.700 --> 00:59:04.120
+there is a finance team so who have already built an agent,
+
+00:59:04.260 --> 00:59:08.760
+I have to build a complete platform so where I will be using
+
+00:59:08.760 --> 00:59:12.560
+a legal finance and a HR and then finally, I will be able to
+
+00:59:12.560 --> 00:59:15.680
+build application. So that anyone sitting on top of it
+
+00:59:15.680 --> 00:59:19.280
+right. So maybe your manager, your director, they will be
+
+00:59:19.280 --> 00:59:23.060
+able to access all of these HR, legal and finance agent and
+
+00:59:23.060 --> 00:59:25.820
+they will be able to maybe see some sort of a repose. They
+
+00:59:25.820 --> 00:59:28.680
+will be able to do some sort of a job. They will be able to
+
+00:59:28.680 --> 00:59:31.380
+access a respective department that what is going inside
+
+00:59:31.380 --> 00:59:34.960
+this HR team and what their agent is doing or like if their
+
+00:59:34.960 --> 00:59:38.500
+agent is like a maybe for a hiring process right. So maybe
+
+00:59:38.500 --> 00:59:41.760
+HR team has created a agent for a hiring and again inside
+
+00:59:41.760 --> 00:59:44.400
+that. So let's suppose. So there is an agent. So we try to
+
+00:59:44.400 --> 00:59:48.400
+perform a validation with respect to ATS resume. There are
+
+00:59:48.400 --> 00:59:51.640
+like an agent which try to basically fire a background
+
+00:59:51.640 --> 00:59:54.980
+verification for an employee. There is an agent inside the
+
+00:59:54.980 --> 00:59:58.100
+HR team so which try to do a payroll processing. There is an
+
+00:59:58.100 --> 01:00:00.820
+agent inside the HR team so which maybe try to do some sort
+
+01:00:00.820 --> 01:00:05.700
+of a you know basically like a new requirements or maybe a
+
+01:00:05.700 --> 01:00:09.240
+new type of like a department if we have to establish so
+
+01:00:09.240 --> 01:00:12.760
+maybe they try to figure it out in that way. So the HR team
+
+01:00:12.760 --> 01:00:15.260
+is already having a multiple agent. Similarly legal team is
+
+01:00:15.260 --> 01:00:17.360
+already having a multiple agent. Finance team is already
+
+01:00:17.360 --> 01:00:20.580
+having a multiple agent and their process is pretty much
+
+01:00:20.580 --> 01:00:23.840
+robust. But the problem is that that they are using a land
+
+01:00:23.840 --> 01:00:26.180
+chain framework. Maybe they are using a crew AI framework
+
+01:00:26.180 --> 01:00:28.840
+and maybe they are using some sort of auto gen framework or
+
+01:00:28.840 --> 01:00:31.420
+maybe some other framework. So again framework wise it is
+
+01:00:31.420 --> 01:00:34.600
+different. System is completely scattered and as a
+
+01:00:34.600 --> 01:00:39.300
+management of a company so if I have to access all of these
+
+01:00:39.300 --> 01:00:44.320
+three. So I need a protocol so which is going to help me out
+
+01:00:44.320 --> 01:00:47.200
+in terms of establishing a communication. Communication
+
+01:00:47.200 --> 01:00:51.760
+between all of these three team member. This is where my A
+
+01:00:51.760 --> 01:00:55.060
+to A protocol comes into a picture. So this is what I have
+
+01:00:55.060 --> 01:00:58.960
+shown you. So here agents are independent and then still we
+
+01:00:58.960 --> 01:01:02.120
+are able to communicate. Now to communicate I just have to
+
+01:01:02.120 --> 01:01:04.520
+follow a protocol and as per a protocol so I have to take
+
+01:01:04.520 --> 01:01:07.940
+care of two things. One is a message part and one is a data
+
+01:01:07.940 --> 01:01:11.060
+part. Which is nothing. But an integrated part of your A to
+
+01:01:11.060 --> 01:01:14.320
+A. So A to A simply says that okay give me a message. So
+
+01:01:14.320 --> 01:01:18.300
+whenever you are giving me a data so do always one thing
+
+01:01:18.300 --> 01:01:21.160
+always try to give me a message as well as always try to
+
+01:01:21.160 --> 01:01:23.880
+give me a data in a respective format maybe into a JSON
+
+01:01:23.880 --> 01:01:27.040
+format let us suppose in our situation. If I am going to
+
+01:01:27.040 --> 01:01:30.420
+like build all of these agent in such a way that it will
+
+01:01:30.420 --> 01:01:35.240
+take input as a message and data both and then if it is
+
+01:01:35.240 --> 01:01:37.980
+going to give me output as a message or maybe a data. So
+
+01:01:37.980 --> 01:01:41.960
+again I will try to pass same thing to the next one. And
+
+01:01:41.960 --> 01:01:45.960
+here my coordinator is going to be A to A. So A to A is
+
+01:01:45.960 --> 01:01:47.960
+going to help me out in terms of coordination. So basically
+
+01:01:47.960 --> 01:01:51.040
+all of these things are going to work technically on top of
+
+01:01:51.040 --> 01:01:54.540
+the A to A. So this is where the real time application comes
+
+01:01:54.540 --> 01:01:57.200
+into a picture and this is what we have seen with respect to
+
+01:01:57.200 --> 01:02:00.160
+my three agents that we have built in a different different
+
+01:02:00.160 --> 01:02:04.440
+frameworks. So anyone guys who is able to execute the code.
+
+01:02:06.800 --> 01:02:07.200
+Yeah.
+
+01:02:21.590 --> 01:02:23.230
+I mean in production basis. So this is the A to A system.
+
+01:02:23.450 --> 01:02:25.990
+This can be used for integration with a third party services
+
+01:02:25.990 --> 01:02:29.650
+which exposes their agent to communicate. Yes. But you have
+
+01:02:29.650 --> 01:02:31.930
+to give instruction in a very first place that this is the
+
+01:02:31.930 --> 01:02:35.030
+specific output which I am looking for means a data format.
+
+01:02:35.190 --> 01:02:37.950
+A format of the output should be this one. So which is
+
+01:02:37.950 --> 01:02:41.530
+compatible with the A to A. If it is not then you have to
+
+01:02:41.530 --> 01:02:44.370
+take their raw input whatever input that they are giving to
+
+01:02:44.370 --> 01:02:47.650
+you and then you have to convert those input into a A to A
+
+01:02:47.650 --> 01:02:49.550
+compatible format. Simple.
+
+01:02:54.020 --> 01:02:57.740
+Please highlight. So that. First time installing and
+
+01:02:57.740 --> 01:03:00.260
+starting. I think this is a code base which I have already
+
+01:03:00.260 --> 01:03:03.700
+shared in my previous class. So I have just done a little
+
+01:03:03.700 --> 01:03:06.360
+bit of modification on top of my previous code. Nothing
+
+01:03:06.360 --> 01:03:10.220
+much. I have just added one single file over here and then
+
+01:03:10.220 --> 01:03:13.520
+inside orchestrator the port number. That's it. The end
+
+01:03:13.520 --> 01:03:16.420
+point basically. This one. This is the only addition that
+
+01:03:16.420 --> 01:03:19.820
+has been done apart from that entire code base is same.
+
+01:03:22.770 --> 01:03:26.370
+This is what we call restful agent. Right. Yes. Technically
+
+01:03:26.370 --> 01:03:30.370
+it is using a fast API. So technically it's a restful that
+
+01:03:30.370 --> 01:03:35.650
+we are talking about. Yeah. Because here so inside A to A
+
+01:03:35.650 --> 01:03:38.410
+what they have done. So they have used A to A fast API
+
+01:03:38.410 --> 01:03:41.310
+wrapper. I mean like they have created their own fast API
+
+01:03:41.310 --> 01:03:43.490
+wrapper and they are calling it as a A to A fast API
+
+01:03:43.490 --> 01:03:43.790
+wrapper.
+
+01:03:56.410 --> 01:03:59.670
+I hope we can also perform a parallel processing through A
+
+01:03:59.670 --> 01:04:03.530
+to A. So I believe I have already shown you a kind of a
+
+01:04:03.530 --> 01:04:08.990
+structure. See. If my agents consider as a node, right.
+
+01:04:09.030 --> 01:04:13.270
+Consider as a separate separate node. Now I can try to
+
+01:04:13.270 --> 01:04:19.010
+connect those node in any way I want as simple as that. In
+
+01:04:19.010 --> 01:04:22.610
+any way I want these agents are technically an independent
+
+01:04:22.610 --> 01:04:26.690
+one. Just like think about, okay. So if someone is like
+
+01:04:26.690 --> 01:04:29.790
+finding it difficult in terms of like thinking or like
+
+01:04:29.790 --> 01:04:32.730
+processing this entire information. Okay. So maybe you can
+
+01:04:32.730 --> 01:04:36.630
+think about a fast API as we already know and inside a fast
+
+01:04:36.630 --> 01:04:39.310
+API. So we try to do what? So we try to create a different
+
+01:04:39.310 --> 01:04:41.550
+different methods, right. We try to get a different
+
+01:04:41.550 --> 01:04:45.050
+different methods or our functions and we try to expose that
+
+01:04:45.050 --> 01:04:48.890
+function on a particular route. Yeah. On a particular route.
+
+01:04:49.090 --> 01:04:52.190
+It's just like that. So we are trying to create our agents.
+
+01:04:52.470 --> 01:04:55.090
+We are trying to create a route for that particular agent.
+
+01:04:55.810 --> 01:04:56.210
+Simple.
+
+01:04:58.840 --> 01:05:01.080
+And then you can try to configure it in the way that you
+
+01:05:01.080 --> 01:05:01.340
+want.
+
+01:05:05.600 --> 01:05:09.320
+Sumit is saying lot of dependencies issue. Just use my V
+
+01:05:09.320 --> 01:05:11.860
+environment file I have already attached. Activate that V
+
+01:05:11.860 --> 01:05:14.240
+environment. You will not face an issue. Everything is
+
+01:05:14.240 --> 01:05:15.080
+available over there.
+
+01:05:18.320 --> 01:05:21.740
+Yeah. So Dhruvil is saying it's running. Okay. Fine Dhruvil.
+
+01:05:21.800 --> 01:05:24.060
+So Dhruvil is the first person who is able to run it.
+
+01:05:24.240 --> 01:05:29.400
+Amazing. Great. Digest. Just go through. Like majorly you
+
+01:05:29.400 --> 01:05:31.940
+have to go through this orchestrator and then like a server
+
+01:05:31.940 --> 01:05:32.680
+file. That's it.
+
+01:05:43.300 --> 01:05:47.680
+So just run it guys. This is what I had to discuss for my
+
+01:05:47.680 --> 01:05:50.400
+today's class. I will not be starting a new topic. Like I
+
+01:05:50.400 --> 01:05:53.340
+said, so tomorrow class is going to be very, very important.
+
+01:05:53.540 --> 01:05:56.980
+And after tomorrow, whatever class we are going to take, it
+
+01:05:56.980 --> 01:06:02.340
+is going to be very, very important in like a term of
+
+01:06:02.340 --> 01:06:05.960
+sending any kind of application to a cloud platform. So as I
+
+01:06:05.960 --> 01:06:08.980
+have already told you even last week, so keep your AWS
+
+01:06:08.980 --> 01:06:13.640
+account, Azure account and GCP account ready. So one by one,
+
+01:06:13.680 --> 01:06:17.280
+I'm going to teach you that how you will be able to
+
+01:06:17.280 --> 01:06:20.760
+configure. First of all, I'll start with the AWS. So how you
+
+01:06:20.760 --> 01:06:23.940
+will be able to configure a entire infrastructure over AWS,
+
+01:06:24.380 --> 01:06:28.160
+how you are going to create a CI CD pipeline basically. So
+
+01:06:28.160 --> 01:06:31.940
+for example, let's say this is an application that we have
+
+01:06:31.940 --> 01:06:34.380
+to host. So how we are going to do a continuous integration
+
+01:06:34.380 --> 01:06:37.740
+and continuous development. If we have to create some sort
+
+01:06:37.740 --> 01:06:40.480
+of a Docker file, so how I will be able to create a Docker
+
+01:06:40.480 --> 01:06:44.340
+file and then how I will be able to host it if I have to
+
+01:06:44.340 --> 01:06:48.640
+host it maybe for one user or maybe for 1 million user. So
+
+01:06:48.640 --> 01:06:52.560
+how I will be able to set up auto scaling. So that is also,
+
+01:06:52.600 --> 01:06:56.180
+I'm going to teach you and then how you will be able to
+
+01:06:56.180 --> 01:06:59.300
+attach a Prometheus and Grafana. So by which you will be
+
+01:06:59.300 --> 01:07:02.040
+able to generate an application log, you will be able to
+
+01:07:02.040 --> 01:07:05.240
+visualize those application log if your application will go
+
+01:07:05.240 --> 01:07:08.380
+down. So how you will be able to configure a trigger, uh,
+
+01:07:08.560 --> 01:07:12.080
+which is going to notify a concerned stakeholder. If your
+
+01:07:12.080 --> 01:07:14.920
+entire server will go down, means your machine will go down,
+
+01:07:14.980 --> 01:07:17.600
+which you are going to spin on a, uh, on any of such
+
+01:07:17.600 --> 01:07:21.440
+platform. Okay. So how you will be able to take a log from a
+
+01:07:21.440 --> 01:07:24.580
+machines. So application log will be different and your
+
+01:07:24.580 --> 01:07:27.300
+machine log will be different, right? Server log will be
+
+01:07:27.300 --> 01:07:30.780
+different. So both of these things we are going to configure
+
+01:07:30.780 --> 01:07:33.560
+from application side as well as from a server side. And
+
+01:07:33.560 --> 01:07:35.960
+then we can say that, okay, fine. So our application is a
+
+01:07:35.960 --> 01:07:39.760
+full proof application, which is going to work for any
+
+01:07:39.760 --> 01:07:44.380
+number of a user for me. And uh, if my server is going down
+
+01:07:44.380 --> 01:07:48.060
+at any point of a time, I will be able to get a message. I
+
+01:07:48.060 --> 01:07:51.740
+will be able to get a notification saying that this is the
+
+01:07:51.740 --> 01:07:55.440
+log and my server is down on my, this part of application is
+
+01:07:55.440 --> 01:07:58.740
+down. So that is something that we are going to explore. Uh,
+
+01:07:58.900 --> 01:08:02.000
+so yeah, that, that's, that is going to be an interesting
+
+01:08:02.000 --> 01:08:05.800
+one. I would say, right, a pretty much interesting one, but
+
+01:08:05.800 --> 01:08:08.300
+you will not be able to do it unless and until you don't
+
+01:08:08.300 --> 01:08:13.080
+have a cloud access, right? So cloud access is required. So
+
+01:08:13.080 --> 01:08:15.740
+please keep your cloud account ready so that we can start
+
+01:08:15.740 --> 01:08:18.540
+from tomorrow. Tomorrow. I want to give you a basic overview
+
+01:08:18.540 --> 01:08:21.780
+of the cloud AWS cloud generally that, uh, what is the
+
+01:08:21.780 --> 01:08:24.460
+meaning of, you know, uh, groups, what is the meaning of IEM
+
+01:08:24.460 --> 01:08:26.940
+over there? What is the meaning of a different, different
+
+01:08:26.940 --> 01:08:29.700
+kind of a user creation with a different, different kind of
+
+01:08:29.700 --> 01:08:34.280
+access, how I will be able to spin a machine over AWS, maybe
+
+01:08:34.280 --> 01:08:38.240
+a CPU, maybe a GPU. And let's suppose I'm talking about a
+
+01:08:38.240 --> 01:08:42.060
+URI kind of a platform. So what is a bare minimum server
+
+01:08:42.060 --> 01:08:45.600
+requirement that we have? So how many V core that we should
+
+01:08:45.600 --> 01:08:49.120
+have? How many RAM? We should have, and then how many, how
+
+01:08:49.120 --> 01:08:52.040
+much of hard disk that we should have. So all of these
+
+01:08:52.040 --> 01:08:54.980
+things, uh, I'll start talking about, yeah.
+
+01:09:01.460 --> 01:09:04.320
+So PGI got a similar time in it, how you can set up the
+
+01:09:04.320 --> 01:09:07.160
+whole project and make it a scalable, how you manage the
+
+01:09:07.160 --> 01:09:09.900
+traffic. Yeah, that is, that is what I'm going to talk about
+
+01:09:09.900 --> 01:09:13.300
+apart from that. So I'm going to even show you that, uh,
+
+01:09:13.380 --> 01:09:17.000
+let's suppose you have to map your own end point. For
+
+01:09:17.000 --> 01:09:19.900
+example, you have taken a website URL, right? Website you
+
+01:09:19.900 --> 01:09:22.660
+have taken from a domain. You have purchased from somewhere.
+
+01:09:22.680 --> 01:09:26.460
+xyg.com or maybe.ai.com or something, right? You have
+
+01:09:26.460 --> 01:09:30.180
+purchased. So how you will be able to do a DNS mapping. So
+
+01:09:30.180 --> 01:09:32.800
+that is that part. Also I'm going, that's a very small part
+
+01:09:32.800 --> 01:09:36.840
+basically. And if you are able to do it once in a life, you
+
+01:09:36.840 --> 01:09:39.220
+will be able to do it again and again, because that process
+
+01:09:39.220 --> 01:09:42.800
+is pretty much like a same. So go purchase some sort of a,
+
+01:09:42.840 --> 01:09:46.380
+you know, a website from godaddy.com or from him, like
+
+01:09:46.380 --> 01:09:50.020
+anyone, any, any like a, you know, domain name provider. So
+
+01:09:50.020 --> 01:09:52.220
+just go and purchase. And then like, uh, with your
+
+01:09:52.220 --> 01:09:55.420
+application. You can try to map it and your application will
+
+01:09:55.420 --> 01:09:58.660
+be available at that particular domain. For example, your
+
+01:09:58.660 --> 01:10:02.260
+own, right? So we have your own slash URI and add that or
+
+01:10:02.260 --> 01:10:06.500
+URIs dot your own dot one. So where we have hosted on in
+
+01:10:06.500 --> 01:10:09.860
+subdomain in basically subdomain, we have hosted a URI. So
+
+01:10:09.860 --> 01:10:12.440
+that is the kind of a mapping which I'm going to teach you
+
+01:10:12.440 --> 01:10:15.420
+so that that will be a final application. You are not going
+
+01:10:15.420 --> 01:10:18.820
+to share some server generated a URL or IP address, but your
+
+01:10:18.820 --> 01:10:24.180
+own domain basically. So all those things is a part of your
+
+01:10:24.180 --> 01:10:29.000
+production from tomorrow onwards. That session is going to
+
+01:10:29.000 --> 01:10:31.820
+start and that will be like a final stage of your entire
+
+01:10:31.820 --> 01:10:38.060
+batch. For cloud, can we use a free account service or do we
+
+01:10:38.060 --> 01:10:40.980
+need to pay? I mean like they are giving you a free credit.
+
+01:10:41.360 --> 01:10:44.780
+If you are like a shutting down your service after doing the
+
+01:10:44.780 --> 01:10:47.800
+experimentation, then they will not charge you. Otherwise be
+
+01:10:47.800 --> 01:10:50.460
+ready for charge. If you will leave your AWS, you know,
+
+01:10:50.480 --> 01:10:53.720
+servers up and running, then obviously you will end up
+
+01:10:53.720 --> 01:10:56.960
+getting. Lacks of bill at the end of the month. That's
+
+01:10:56.960 --> 01:11:01.920
+possible. So advice is like a to shut down the server. So
+
+01:11:01.920 --> 01:11:06.420
+once you are done with your experimentation, will there be
+
+01:11:06.420 --> 01:11:11.200
+use of K8s, K8s I'm not going to use it. Docker I will be
+
+01:11:11.200 --> 01:11:11.520
+using.
+
+01:11:16.960 --> 01:11:20.900
+Yeah. Tomorrow is the final session. I mean like how I can
+
+01:11:20.900 --> 01:11:23.320
+complete all these things in one session practically
+
+01:11:23.320 --> 01:11:27.540
+impossible. I said final stage of your class will start from
+
+01:11:27.540 --> 01:11:31.400
+tomorrow that will go for next two to three weeks at least
+
+01:11:31.400 --> 01:11:39.660
+means five to six classes minimum is required. Yeah. So in
+
+01:11:39.660 --> 01:11:42.060
+one session, no one can finish that you will not be able to
+
+01:11:42.060 --> 01:11:45.040
+even understand. And basically I will not be able to even
+
+01:11:45.040 --> 01:11:49.160
+like cover those, those many things. Session based on UDHDK.
+
+01:11:49.320 --> 01:11:52.640
+I mean, yeah, that is fine. But first of all, let's focus on
+
+01:11:52.640 --> 01:11:56.240
+syllabus part. Fine guys. So just try to execute. I don't
+
+01:11:56.240 --> 01:12:00.340
+have much to discuss today. So this is what I already told
+
+01:12:00.340 --> 01:12:03.060
+you in my previous session. As well that today I will be
+
+01:12:03.060 --> 01:12:06.200
+talking about just an enhancement of A2A and then tomorrow.
+
+01:12:06.320 --> 01:12:12.220
+So technically a cloud part. Yeah. Fine. So just be
+
+01:12:12.220 --> 01:12:14.980
+prepared, be ready with your cloud account, all three,
+
+01:12:15.040 --> 01:12:18.260
+right. I'll be starting with AWS like I said, but yeah, so I
+
+01:12:18.260 --> 01:12:21.460
+need all three cloud accounts. So that one by one, one by
+
+01:12:21.460 --> 01:12:24.140
+one, we can, we can do the experimentation into all of these
+
+01:12:24.140 --> 01:12:27.540
+three cloud account. What was the command to run all the
+
+01:12:27.540 --> 01:12:30.460
+agent in one go? Okay. Let me ping you that command. So
+
+01:12:30.460 --> 01:12:36.220
+basically this is the command, uh, Python M and then there
+
+01:12:36.220 --> 01:12:38.240
+is a script folder. You don't have to even remember the
+
+01:12:38.240 --> 01:12:41.100
+command. So it's fine. Python hyphen M and then go to the
+
+01:12:41.100 --> 01:12:44.080
+script folder inside the script folder. There is a file name
+
+01:12:44.080 --> 01:12:48.360
+called a start all agent, right? So scripts dot this file
+
+01:12:48.360 --> 01:12:52.340
+name. That's it. Not dot py. So Python hyphen M this is
+
+01:12:52.340 --> 01:12:54.740
+script dot py file and then you will be able to run this
+
+01:12:54.740 --> 01:12:58.100
+whole agent. If you have to run the UI part, which is
+
+01:12:58.100 --> 01:13:00.040
+nothing but a streamline. So UI is available. It is
+
+01:13:00.040 --> 01:13:02.720
+available inside your source SRC. So streamline dot
+
+01:13:02.720 --> 01:13:08.440
+streamline run and then SRC slash UI slash app dot py file.
+
+01:13:08.680 --> 01:13:11.980
+So by which you will be able to run your final streamline
+
+01:13:11.980 --> 01:13:16.900
+application. Let me ping you that after activating your
+
+01:13:16.900 --> 01:13:20.180
+virtual environment, otherwise no. And your virtual
+
+01:13:20.180 --> 01:13:23.440
+environment is available here. So as you can see dot venv,
+
+01:13:23.580 --> 01:13:28.040
+then go inside the scripts. So dot venv slash scripts. And
+
+01:13:28.040 --> 01:13:30.320
+inside that you will be able to see activation. Activate dot
+
+01:13:30.320 --> 01:13:34.480
+ps1 at least for a power cell, right? So activates as a
+
+01:13:34.480 --> 01:13:39.100
+script slash activate ps1 and then it will be activated. As
+
+01:13:39.100 --> 01:13:40.680
+simple as that code
+
+01:13:44.320 --> 01:13:49.380
+for enable V environment, please simple. See guys, go to
+
+01:13:49.380 --> 01:13:53.060
+your virtual environment venv and no need to remember any of
+
+01:13:53.060 --> 01:13:57.060
+these things, right? It's very logical. So I'll go to my
+
+01:13:57.060 --> 01:13:59.700
+virtual environment folder. First of all, inside this
+
+01:13:59.700 --> 01:14:02.520
+folder, there is a folder called a script S capital. So I'll
+
+01:14:02.520 --> 01:14:05.860
+go to my script folder. Inside that there is a file called
+
+01:14:05.860 --> 01:14:10.260
+as activate dot ps1 power cell one, right? So activate and
+
+01:14:10.260 --> 01:14:13.560
+then this is the command. That's it. So just follow the
+
+01:14:13.560 --> 01:14:14.060
+folder structure.
+
+01:14:20.880 --> 01:14:23.340
+What is the previous class running command? Previous class
+
+01:14:23.340 --> 01:14:24.480
+running command was also same.
+
+01:14:27.680 --> 01:14:31.220
+So in previous class I believe there was only UI and through
+
+01:14:31.220 --> 01:14:36.000
+UI itself you can like a invoke. So just run app and it
+
+01:14:36.000 --> 01:14:40.140
+should work. I am able to run. Thanks sir. Okay, great.
+
+01:14:44.300 --> 01:14:47.580
+Why aren't we using just activate? But using activate. You
+
+01:14:47.580 --> 01:14:49.320
+can use activate dot ps1. You can use activate as well.
+
+01:14:49.400 --> 01:14:50.780
+That's okay. Yeah.
+
+01:14:56.390 --> 01:14:59.670
+So just run it, run it and then leave it basically.
+
+01:15:09.500 --> 01:15:13.760
+Okay fine everyone. So I'm done for today. So let's close
+
+01:15:13.760 --> 01:15:16.600
+our session for today. I have already shared a code and
+
+01:15:16.600 --> 01:15:19.540
+yeah, so let's join our tomorrow session. So today's session
+
+01:15:19.540 --> 01:15:24.000
+is like a kind of, you know, a very, very short session for
+
+01:15:24.000 --> 01:15:24.280
+us.
+
+01:15:34.130 --> 01:15:39.110
+Yeah. So fine. When you have uploaded, sir, which one? This
+
+01:15:39.110 --> 01:15:42.090
+this particular file. So inside your full dashboard,
+
+01:15:42.330 --> 01:15:44.970
+basically a previous lecture, the previous Sunday's lecture,
+
+01:15:45.630 --> 01:15:48.870
+you will be able to find out two files to just download the
+
+01:15:48.870 --> 01:15:50.010
+recent one, the latest one.
+
+01:15:53.030 --> 01:15:58.310
+Yeah. Today code will there, yeah, it's already available
+
+01:15:58.310 --> 01:16:01.470
+guys. So if you will go to your dashboard, let me show you
+
+01:16:01.470 --> 01:16:05.070
+once again, those who are confused. So just go to your
+
+01:16:05.070 --> 01:16:12.070
+dashboard for, sorry, not this one, this account. Yeah. So
+
+01:16:12.070 --> 01:16:14.410
+just go inside your dashboard, gen AI certification
+
+01:16:14.410 --> 01:16:18.970
+bootcamp, continue learning and then a ninth number lecture,
+
+01:16:19.130 --> 01:16:22.230
+right? Which was like a last Sunday's lecture. So here, if
+
+01:16:22.230 --> 01:16:24.730
+you'll come, you will be able to find out this file, A2A
+
+01:16:24.730 --> 01:16:27.850
+final demo file. This is the previous file, download it and
+
+01:16:27.850 --> 01:16:30.930
+then simple run your agent and then run your UI.
+
+01:16:34.740 --> 01:16:38.180
+No module name A2A. So you have to activate Satish, you have
+
+01:16:38.180 --> 01:16:40.220
+not activated your virtual environment. If you have not
+
+01:16:40.220 --> 01:16:43.140
+activated, then obviously it will give you no module name
+
+01:16:43.140 --> 01:16:45.960
+A2A. So first of all, activate a virtual environment. I have
+
+01:16:45.960 --> 01:16:47.900
+already told you the command, go inside the virtual
+
+01:16:47.900 --> 01:16:51.000
+environment folder, go inside the script and then run the
+
+01:16:51.000 --> 01:16:56.520
+activate. Tomorrow we'll teach some project or fresh one.
+
+01:16:56.700 --> 01:16:59.440
+No, we'll not teach project tomorrow. So we'll try to talk
+
+01:16:59.440 --> 01:17:03.200
+about basically our infrastructure. I'll give you a complete
+
+01:17:03.200 --> 01:17:06.440
+overview about the infrastructure that what kind of a
+
+01:17:06.440 --> 01:17:10.180
+services which is available inside our AWS, which will be
+
+01:17:10.180 --> 01:17:13.420
+required for any kind of a generative AI, agentic AI project
+
+01:17:13.420 --> 01:17:16.840
+basically. So complete like a overview of the cloud. Plus
+
+01:17:16.840 --> 01:17:20.500
+our basic fundamentals of the cloud. For example, our
+
+01:17:20.500 --> 01:17:23.360
+security groups that we try to create, our IAM user that we
+
+01:17:23.360 --> 01:17:26.660
+try to create. We try to assign a different kind of a role
+
+01:17:26.660 --> 01:17:29.600
+to a particular IAM user because that is pretty much
+
+01:17:29.600 --> 01:17:32.500
+important to access any kind of a services. And even that
+
+01:17:32.500 --> 01:17:35.940
+you will be doing from a day zero. So these are the
+
+01:17:35.940 --> 01:17:40.460
+fundamentals and then how I can create an instance on AWS.
+
+01:17:40.720 --> 01:17:44.720
+How I can try to access those instances, maybe from my local
+
+01:17:44.720 --> 01:17:47.420
+system and how I will be able to, you know, transfer those
+
+01:17:47.420 --> 01:17:51.420
+data or maybe a code. So all of these things we'll be
+
+01:17:51.420 --> 01:17:55.380
+discussing. So basic building of like a building blocks of
+
+01:17:55.380 --> 01:17:56.560
+the cloud platform.
+
+01:17:59.850 --> 01:18:02.770
+Sir, please give us a use case idea for it is like a
+
+01:18:02.770 --> 01:18:05.210
+possible use case. Sorry, sir. Not a good question, but I
+
+01:18:05.210 --> 01:18:08.390
+have already given you a task last week and I have seen that
+
+01:18:08.390 --> 01:18:14.390
+that only one or two people have completed that. Yeah. And
+
+01:18:14.390 --> 01:18:18.230
+if you remember, so in the past I have given you 10, 20
+
+01:18:18.230 --> 01:18:20.890
+tasks. Yeah. And barely any one of you have completed that
+
+01:18:20.890 --> 01:18:26.170
+as well. So I mean like not my fault, by the way.
+
+01:18:30.240 --> 01:18:33.500
+But yes, as of now, so we are in a stage where if you are
+
+01:18:33.500 --> 01:18:36.320
+able to execute a same thing that we are doing inside a
+
+01:18:36.320 --> 01:18:40.140
+class, that will be more than enough, like keeping your
+
+01:18:40.140 --> 01:18:43.940
+interviews and your resume in mind. So please do that at
+
+01:18:43.940 --> 01:18:47.940
+least. Okay, fine everyone, take care. So I'll not spend
+
+01:18:47.940 --> 01:18:51.640
+much time. Let's just spend like a little bit more time in
+
+01:18:51.640 --> 01:18:54.420
+my tomorrow's class. Yeah. So take care, everyone. Thank
+
+01:18:54.420 --> 01:18:56.080
+you. Happy Saturday.
+

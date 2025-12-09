@@ -1,0 +1,4304 @@
+WEBVTT
+
+00:00:01.580 --> 00:00:05.300
+yeah okay so what is the agenda for today's class guys any
+
+00:00:05.300 --> 00:00:08.120
+idea i think i think we have talked about it like a study
+
+00:00:08.120 --> 00:00:12.260
+itself right so any idea what is the agenda for today's
+
+00:00:12.260 --> 00:00:13.700
+class mcp
+
+00:00:15.780 --> 00:00:19.600
+mcp mcp okay so maybe you have not joined today's class till
+
+00:00:19.600 --> 00:00:20.700
+last i believe
+
+00:00:24.380 --> 00:00:30.100
+so there was a demand from a people that we are able to do a
+
+00:00:30.100 --> 00:00:32.480
+training training or fine tuning of the model in a local
+
+00:00:32.480 --> 00:00:36.420
+system now how we can do the same kind of a training inside
+
+00:00:36.420 --> 00:00:39.600
+a gpu and how we will be able to do a inferencing inside a
+
+00:00:39.600 --> 00:00:42.080
+gpu so that was a demand that i have received from your
+
+00:00:42.080 --> 00:00:45.560
+batch and keeping that in our mind so that is something that
+
+00:00:45.560 --> 00:00:48.400
+we are going to discuss today and it is going to be a very
+
+00:00:48.400 --> 00:00:50.640
+very exciting because this is something that you are going
+
+00:00:50.640 --> 00:00:54.480
+to do even in your company and if you are going to do a fine
+
+00:00:54.480 --> 00:00:57.500
+tuning in your company so obviously you are supposed to
+
+00:00:57.500 --> 00:00:59.940
+follow the exact same script that we are going to execute
+
+00:01:00.540 --> 00:01:05.600
+today yeah so that is going to be the agenda of my today's
+
+00:01:05.600 --> 00:01:08.660
+class and then in next class onwards obviously mcp we are
+
+00:01:08.660 --> 00:01:11.020
+going to discuss then we have a a2a agent to agent protocol
+
+00:01:11.020 --> 00:01:13.740
+that is something that will come into a picture so let's try
+
+00:01:13.740 --> 00:01:17.700
+to understand that how we can do a fine tuning of a model
+
+00:01:17.700 --> 00:01:22.660
+inside a gpu end-to-end setup everything in a detailed way
+
+00:01:22.660 --> 00:01:26.380
+yep so that is something that we are going to discuss shall
+
+00:01:26.380 --> 00:01:28.400
+we start guys everyone yeah
+
+00:01:32.210 --> 00:01:35.150
+okay so fine tuning of a model inside a gpu end-to-end setup
+
+00:01:35.150 --> 00:01:35.670
+everything in a detailed way yep so that is fine let's start
+
+00:01:35.670 --> 00:01:39.610
+so let me share my screen i believe my screen is visible to
+
+00:01:39.610 --> 00:01:43.190
+all of you and what we are going to do so first of all we
+
+00:01:43.190 --> 00:01:45.730
+are going to prepare our machine that is a very first
+
+00:01:45.730 --> 00:01:49.910
+requirement and once our machine is going to be ready then
+
+00:01:49.910 --> 00:01:53.250
+we can go ahead with the deployment or we can go ahead with
+
+00:01:53.250 --> 00:01:56.390
+the fine tuning or like whatever whatever is required right
+
+00:01:56.390 --> 00:01:59.490
+so first of all machine is supposed to be ready in my system
+
+00:01:59.490 --> 00:02:04.310
+so here we are going to use a same machine a hyper stack i
+
+00:02:04.310 --> 00:02:05.150
+believe we have already done that so let's start so let's
+
+00:02:05.150 --> 00:02:05.150
+start with the
+
+00:02:23.330 --> 00:02:27.050
+virtual machine and i believe this is third or fourth time
+
+00:02:27.050 --> 00:02:30.550
+we are doing it right so just go to a virtual machine and
+
+00:02:30.550 --> 00:02:33.810
+deploy a new virtual machine and then from here so you can
+
+00:02:33.810 --> 00:02:35.150
+try to choose a virtual machine and then from here so you
+
+00:02:35.150 --> 00:02:35.150
+can try to choose a virtual machine and then from here so
+
+00:02:35.150 --> 00:02:36.150
+you can try to choose a virtual machine and then from here
+
+00:02:36.150 --> 00:02:36.570
+so you can try to choose a virtual machine so i'm going to
+
+00:02:36.570 --> 00:02:42.070
+choose h100 that like i like always like a choose so h100
+
+00:02:42.070 --> 00:02:45.110
+and one unit i'm going to choose as you can see over here
+
+00:02:45.110 --> 00:02:50.570
+and then i will be doing a basic setup for this h100 so in a
+
+00:02:50.570 --> 00:02:53.790
+canada region so there is a machine and then os image wise
+
+00:02:53.790 --> 00:02:58.310
+so ubuntu is fine you can choose alba linux or debian as
+
+00:02:58.310 --> 00:03:00.650
+well i don't have any kind of a issue but yeah ubuntu is
+
+00:03:00.650 --> 00:03:05.130
+going to like work fine for us then after that so we have a
+
+00:03:05.130 --> 00:03:05.310
+virtual machine and then we are going to choose a virtual
+
+00:03:05.310 --> 00:03:05.310
+machiner so for you guys this is an actually very simple
+
+00:03:05.310 --> 00:03:05.310
+program which is going to run we're going to find the
+
+00:03:05.310 --> 00:03:05.310
+machine editor and begin that process in this shell olivier
+
+00:03:05.310 --> 00:03:05.650
+is something multi-tasking75 once again we will have to set
+
+00:03:05.650 --> 00:03:11.170
+a new Ssh key right so we have to set a new ssh key so that
+
+00:03:11.170 --> 00:03:15.210
+i will be able to login inside my system system so i believe
+
+00:03:15.210 --> 00:03:19.790
+we talked about setting up ssh key right guys everyone yeah
+
+00:03:19.790 --> 00:03:21.010
+anyone
+
+00:03:24.020 --> 00:03:27.880
+who is not aware about how to do a setup of ssh key shall i
+
+00:03:27.880 --> 00:03:29.640
+show you once again okay
+
+00:03:32.620 --> 00:03:35.080
+my first time okay maybe you have missed the previous class
+
+00:03:35.080 --> 00:03:40.860
+because i have already talked about it okay so let's like
+
+00:03:40.860 --> 00:03:44.200
+start with the pati gen right uh we can we can go in a
+
+00:03:44.200 --> 00:03:46.680
+reverse direction as well so we can try to generate ssh key
+
+00:03:46.680 --> 00:03:49.560
+and then we can try to download it or we can try to create
+
+00:03:49.560 --> 00:03:53.480
+first and then we can try to uh you know attach this ssh key
+
+00:03:53.480 --> 00:03:56.680
+so in both the way it's completely going to be fine there is
+
+00:03:56.680 --> 00:04:00.140
+no issue at all that you all are going to find out now here
+
+00:04:00.140 --> 00:04:04.080
+so we had a pati gen right so i have already asked you to
+
+00:04:04.080 --> 00:04:07.800
+download a pati gen it's a like a kb of software right so
+
+00:04:07.800 --> 00:04:11.260
+within like a fraction of second you all will be able to
+
+00:04:11.260 --> 00:04:14.840
+download and even i have provided you a link inside your
+
+00:04:14.840 --> 00:04:15.580
+dashboard so let's go ahead and start with the pati gen so
+
+00:04:15.580 --> 00:04:18.940
+when i talked about this pati gen for the very first time so
+
+00:04:18.940 --> 00:04:22.360
+just open up your pati gen i believe most of you must be
+
+00:04:22.360 --> 00:04:25.480
+having a pati gen in your system so if you have already gone
+
+00:04:25.480 --> 00:04:28.540
+through that so here what we will do so we'll try to go and
+
+00:04:28.540 --> 00:04:32.420
+click on generate and just keep on hovering my mouse over
+
+00:04:32.420 --> 00:04:35.320
+here so that it is going to generate a public key and a
+
+00:04:35.320 --> 00:04:39.440
+private key yeah so both so here is my key which has been
+
+00:04:39.440 --> 00:04:42.060
+generated so this key is nothing but key value pair those
+
+00:04:42.060 --> 00:04:45.020
+who are not aware about it and it gives you two kind of a
+
+00:04:45.020 --> 00:04:46.540
+key so this is the key value pair so one is a public key
+
+00:04:46.540 --> 00:04:49.220
+which is visible over here right so this is a public key by
+
+00:04:49.220 --> 00:04:52.140
+the way that you will be able to see and same key you can
+
+00:04:52.140 --> 00:04:56.460
+try to store it as a private key as well so let me save this
+
+00:04:56.460 --> 00:05:01.020
+as a private key so click on save a private key and yes and
+
+00:05:01.020 --> 00:05:04.440
+then here so i'm going to give a name to it so today's class
+
+00:05:04.440 --> 00:05:11.620
+is a gpu fine tuning right so with this name and today is
+
+00:05:11.620 --> 00:05:16.920
+26th of october so 26 oct so with this name i'm going to
+
+00:05:16.920 --> 00:05:19.780
+store this particular key let's suppose and it's going to be
+
+00:05:19.780 --> 00:05:23.140
+a ppk file ppk means private key basically so which is
+
+00:05:23.140 --> 00:05:27.080
+required which is required at the time of login so whenever
+
+00:05:27.080 --> 00:05:30.780
+you are going to hit your vm from any other machine for
+
+00:05:30.780 --> 00:05:33.700
+example so today we are going to hit our vm from my local
+
+00:05:33.700 --> 00:05:36.760
+machine right from this windows operating system i'm going
+
+00:05:36.760 --> 00:05:40.060
+to hit my vm so obviously this private key is required so
+
+00:05:40.060 --> 00:05:43.120
+i'm going to store it and then i'm going to copy this public
+
+00:05:43.120 --> 00:05:46.840
+key right and this public key i have to attach i have to
+
+00:05:46.840 --> 00:05:50.060
+attach with my vm so that it will be able to understand so
+
+00:05:50.060 --> 00:05:53.360
+whenever i'll go give a private key so with the help of like
+
+00:05:53.360 --> 00:05:56.400
+a private and a public key which i'm going to attach it will
+
+00:05:56.400 --> 00:05:59.340
+be able to understand that okay it's the same user who is
+
+00:05:59.340 --> 00:06:03.500
+going to log in so how i can try to attach it so i can try
+
+00:06:03.500 --> 00:06:07.940
+to click on create new ssh key right and here i can just
+
+00:06:07.940 --> 00:06:13.360
+give a name to it that gpu training any any name i can try
+
+00:06:13.360 --> 00:06:16.840
+to give and just copy and paste your public key and the
+
+00:06:16.840 --> 00:06:19.480
+reason is supposed to be same canada region so where we are
+
+00:06:19.480 --> 00:06:23.120
+like trying to spin our machine so canada region so here is
+
+00:06:23.120 --> 00:06:26.500
+a public key and equivalent private key i have already saved
+
+00:06:26.500 --> 00:06:29.760
+in my local system that i'm going to use it at the time of
+
+00:06:29.760 --> 00:06:33.680
+login so here i have attached a public key and then click on
+
+00:06:33.680 --> 00:06:38.400
+import right click on import and then select gpu training so
+
+00:06:38.400 --> 00:06:41.340
+i have i have multiple keys right i can attach even a
+
+00:06:41.340 --> 00:06:45.520
+multiple keys that's completely like i can select the key
+
+00:06:45.520 --> 00:06:48.140
+which is available to me so i have just attached a gpu
+
+00:06:48.140 --> 00:06:50.960
+training key so which i have just generated with the help of
+
+00:06:50.960 --> 00:06:55.600
+this partygen yeah okay ssh access enable it so that you
+
+00:06:55.600 --> 00:06:57.880
+will be able to log in into your system with the help of
+
+00:06:57.880 --> 00:07:01.920
+party or equivalent software or maybe from your linux
+
+00:07:01.920 --> 00:07:04.620
+machine or maybe from your mac machine you will be able to
+
+00:07:04.620 --> 00:07:09.280
+do a scp right so you can do a ssh public ip address yes
+
+00:07:09.280 --> 00:07:12.700
+enable it i need a public ip address now configure
+
+00:07:12.700 --> 00:07:17.760
+additional settings so virtual name uh leave it as it is
+
+00:07:17.760 --> 00:07:21.560
+default name install jupyter notebook uh jupyter notebook is
+
+00:07:21.560 --> 00:07:24.860
+not required uh in my case so it's completely fine i can
+
+00:07:24.860 --> 00:07:27.560
+leave this part if i need a jupyter notebook i can just try
+
+00:07:27.560 --> 00:07:31.680
+to enable this one and i can set a password yeah so maybe i
+
+00:07:31.680 --> 00:07:35.580
+can enable it and i can say okay fine so give a password to
+
+00:07:35.580 --> 00:07:38.140
+it but yeah in my case i don't need a jupyter notebook today
+
+00:07:38.140 --> 00:07:42.820
+at least now inbound rule so from which network or port you
+
+00:07:42.820 --> 00:07:46.040
+are going to allow a traffic basically means allow a hit on
+
+00:07:46.040 --> 00:07:50.240
+your vm so add inbound rule and here so give a broad port
+
+00:07:50.240 --> 00:07:52.820
+range one to nine thousand nine hundred ninety nine and then
+
+00:07:52.820 --> 00:07:55.580
+whitelist the all ip address zero dot zero dot zero dot
+
+00:07:55.580 --> 00:07:59.100
+slash zero simple so it is going to allow all the ip
+
+00:07:59.100 --> 00:08:02.980
+addresses by the way outbound so urban traffic wise so again
+
+00:08:02.980 --> 00:08:05.640
+uh port range one to nine thousand nine hundred ninety nine
+
+00:08:05.640 --> 00:08:09.160
+and then all ip address zero dot zero dot zero dot zero fine
+
+00:08:09.160 --> 00:08:14.620
+now nothing needs to be done everything is set and i can
+
+00:08:14.620 --> 00:08:17.700
+just click on deploy and within fraction of second not
+
+00:08:17.700 --> 00:08:20.320
+second i would say but yeah maybe in a minute it is going to
+
+00:08:20.320 --> 00:08:25.100
+deploy it are we done guys select click on deploy or you
+
+00:08:25.100 --> 00:08:28.020
+want me to show some like a processes which i have done over
+
+00:08:28.020 --> 00:08:32.580
+here those who are joining this gpu class for the very first
+
+00:08:32.580 --> 00:08:35.620
+time because this is not the first time for us by the way
+
+00:08:35.620 --> 00:08:36.560
+you
+
+00:08:39.340 --> 00:08:42.560
+can use save it as well so both the options is possible i
+
+00:08:42.560 --> 00:08:45.020
+mean like at the end of the day i need a password right so
+
+00:08:45.020 --> 00:08:49.160
+your public key is nothing attached to a machine and private
+
+00:08:49.160 --> 00:08:52.560
+key allows you or private key we have as a password for you
+
+00:08:52.560 --> 00:08:57.200
+simple yeah so it's the same process right nothing is going
+
+00:08:57.200 --> 00:09:00.320
+to change nothing has changed i would say right it's the
+
+00:09:00.320 --> 00:09:02.660
+same thing that we have already done so we are just
+
+00:09:02.660 --> 00:09:05.920
+repeating the same thing so that i will be able to get my
+
+00:09:05.920 --> 00:09:10.040
+machine is it okay i think only one person has pinged what
+
+00:09:10.040 --> 00:09:11.760
+about other people yeah
+
+00:09:17.970 --> 00:09:19.650
+okay
+
+00:09:22.240 --> 00:09:25.800
+so two people what about other people we have so many people
+
+00:09:25.800 --> 00:09:27.900
+in a class so uh
+
+00:09:30.360 --> 00:09:33.020
+we'll do it later because a lot of things not on my sister
+
+00:09:33.020 --> 00:09:38.120
+okay so there is a option to run how many games to run the
+
+00:09:38.120 --> 00:09:44.460
+kubernetes you are talking about so kms where is that option
+
+00:09:44.460 --> 00:09:51.240
+vms right okay so how many vms you can try to run so as many
+
+00:09:51.240 --> 00:09:54.460
+as you can basically so virtual machine so this machine
+
+00:09:54.460 --> 00:09:57.300
+which i'm trying which i'm trying to access technically it's
+
+00:09:57.300 --> 00:10:02.040
+a virtual machine okay so now click on deploy yeah so click
+
+00:10:02.040 --> 00:10:08.380
+on deploy it will take maybe a minute of time to deploy and
+
+00:10:08.380 --> 00:10:14.870
+i will be able to get my uh ip address over here and a
+
+00:10:14.870 --> 00:10:18.550
+machine which i have selected so it is going to cost me 1.53
+
+00:10:18.550 --> 00:10:23.210
+dollar per hour so that is a cost which i'm going to get by
+
+00:10:23.210 --> 00:10:28.200
+the way just wait it's creating uh
+
+00:10:34.890 --> 00:10:37.610
+this is the same thing we are doing over a cloud now that we
+
+00:10:37.610 --> 00:10:39.330
+did studied locally exactly yes
+
+00:10:42.090 --> 00:10:46.090
+a little bit of changes in a script because in my local
+
+00:10:46.090 --> 00:10:49.430
+systems i was dealing with a windows machine and in my cloud
+
+00:10:49.430 --> 00:10:52.430
+environments i'm dealing with the linux machine plus in
+
+00:10:52.430 --> 00:10:56.430
+local system so majorly a gpu was a contributing factor but
+
+00:10:56.430 --> 00:11:00.170
+here so my c sorry cpu was a contributing factor but here
+
+00:11:00.170 --> 00:11:04.090
+gpu is a major factor we are trying to access gpu and you
+
+00:11:04.090 --> 00:11:07.890
+will be amazed to see a training speed believe me right uh
+
+00:11:07.890 --> 00:11:10.550
+the training which is going to take hours and hours of time
+
+00:11:10.550 --> 00:11:13.470
+in your local machine same training will be done in a
+
+00:11:13.470 --> 00:11:16.510
+minutes of time this is something which you will be able to
+
+00:11:16.510 --> 00:11:21.950
+see today right okay so here is a public ip address which
+
+00:11:21.950 --> 00:11:25.070
+i'm able to get which is more than enough for me to login
+
+00:11:25.070 --> 00:11:29.410
+into a system now those who would like to log in through a
+
+00:11:29.410 --> 00:11:35.410
+like a their basically a linux machine or maybe a mac
+
+00:11:35.410 --> 00:11:38.810
+machine so they can try to do a scp so i'll talk about that
+
+00:11:38.810 --> 00:11:42.030
+as well and those who would like to log in through a windows
+
+00:11:42.030 --> 00:11:45.130
+machine so they can use a putty putty is something that we
+
+00:11:45.130 --> 00:11:47.650
+have already installed we have already downloaded so putty
+
+00:11:47.650 --> 00:11:51.370
+is a very very small software so which is going to help you
+
+00:11:51.370 --> 00:11:57.590
+out putty download for windows yeah so putty is a very small
+
+00:11:57.590 --> 00:12:01.390
+software kb of a software you can say so you can just go
+
+00:12:01.390 --> 00:12:04.550
+over there and you can try to download it and you will be
+
+00:12:04.550 --> 00:12:08.650
+able to use this software to log in into any vm is literally
+
+00:12:08.650 --> 00:12:12.330
+any vm in this entire world so putty is basically a small
+
+00:12:12.330 --> 00:12:16.210
+tool which allows you to do a ssh and if you are using a
+
+00:12:16.210 --> 00:12:19.190
+linux machine or mac machine then i'm giving you a like a
+
+00:12:19.190 --> 00:12:22.110
+command you can just try to use that particular command and
+
+00:12:22.110 --> 00:12:25.270
+it is going to work so it's called as scp command so with
+
+00:12:25.270 --> 00:12:28.950
+the help of scp you will be able to do it and whatever is
+
+00:12:28.950 --> 00:12:31.650
+going to work in a linux machine same thing is going to work
+
+00:12:31.650 --> 00:12:36.030
+in a mac machine as well because your base is linux inside a
+
+00:12:36.030 --> 00:12:40.070
+mac machine by the way so your kernel is same so it it
+
+00:12:40.070 --> 00:12:42.790
+technically understands a linux command by the way your mac
+
+00:12:42.790 --> 00:12:46.530
+machine yeah simple i'll give you that command as well don't
+
+00:12:46.530 --> 00:12:50.490
+worry just hold on for a couple of minutes so just go over
+
+00:12:50.490 --> 00:12:54.230
+here and you can try to download a putty if you have not
+
+00:12:54.230 --> 00:12:59.290
+done that before and after that so maybe you can start you
+
+00:12:59.290 --> 00:13:02.810
+know doing a ssh so i already have a putty in my system so
+
+00:13:02.810 --> 00:13:06.470
+i'll try to open up a putty so putty gen is different putty
+
+00:13:06.470 --> 00:13:10.770
+is different putty gen is to for generating a keys and putty
+
+00:13:10.770 --> 00:13:14.570
+is for login purposes for windows machine majorly so here it
+
+00:13:14.570 --> 00:13:17.010
+is asking me for my host name so what is going to my host
+
+00:13:17.010 --> 00:13:20.570
+name the ip address this is going to my public ip address
+
+00:13:20.570 --> 00:13:23.090
+this is going to my host name so i'll copy this ip address
+
+00:13:23.090 --> 00:13:27.650
+i'll go to putty where is my putty oh
+
+00:13:30.920 --> 00:13:37.220
+not putty gen putty so i'll just go to putty right and i'll
+
+00:13:37.220 --> 00:13:40.320
+try to copy and paste my ip address over here and then i
+
+00:13:40.320 --> 00:13:44.900
+have to give a private key right so this is my user id you
+
+00:13:44.900 --> 00:13:49.500
+can say or like a login credential and i have to give my you
+
+00:13:49.500 --> 00:13:52.820
+know a private key so that i will be able to log into the
+
+00:13:52.820 --> 00:13:58.240
+machine i would like to save this session so maybe gpu gpu
+
+00:13:58.240 --> 00:14:01.960
+train and let's save it so that you know i can i can try to
+
+00:14:01.960 --> 00:14:07.640
+use yeah so here you can click on ssh you can click on auth
+
+00:14:07.640 --> 00:14:10.800
+process is same click on credential and then here it is
+
+00:14:10.800 --> 00:14:13.760
+giving you an option to browse your credential so browse it
+
+00:14:13.760 --> 00:14:17.580
+browse your private key so wherever you have stored so gpu
+
+00:14:17.580 --> 00:14:22.000
+find during 26 october this is uh like a key which i have
+
+00:14:22.000 --> 00:14:26.780
+created so i'm going to use this one right go back to
+
+00:14:26.780 --> 00:14:29.720
+session say once again so that i don't have to give again
+
+00:14:29.720 --> 00:14:34.560
+and again yeah and then try to click on open so once you are
+
+00:14:34.560 --> 00:14:38.060
+going to click on open it is going to ask you to accept just
+
+00:14:38.060 --> 00:14:41.400
+for the very first time and then here you have to log in so
+
+00:14:41.400 --> 00:14:45.960
+login wise you have to give a name u b u and t u ubuntu
+
+00:14:45.960 --> 00:14:50.880
+right ubuntu and then you will be able to log in after
+
+00:14:50.880 --> 00:14:54.880
+authentication so successfully i am able to log in into a
+
+00:14:54.880 --> 00:14:59.200
+machine as you can see over here uh let me increase a font
+
+00:14:59.200 --> 00:15:04.040
+size inside a putty so change setting appearance change
+
+00:15:05.520 --> 00:15:12.280
+select 18 and apply so this is my machine yeah this is my
+
+00:15:12.280 --> 00:15:17.080
+machine which is up and running and i will be able to do a
+
+00:15:17.080 --> 00:15:22.220
+training over here as simple as that so if i'll do ls over
+
+00:15:22.220 --> 00:15:25.320
+here so there is nothing so far inside this particular
+
+00:15:25.320 --> 00:15:30.480
+machine i have to maybe uh place all of my code file over
+
+00:15:30.480 --> 00:15:34.940
+here or maybe in any of these directories so any idea guys
+
+00:15:34.940 --> 00:15:37.840
+how i will be able to bring a code file because see this
+
+00:15:37.840 --> 00:15:41.180
+machine is completely blank right this machine is completely
+
+00:15:41.180 --> 00:15:43.880
+empty this is a new machine there is nothing so i have done
+
+00:15:43.880 --> 00:15:46.720
+ls and there is there is nothing right no file available in
+
+00:15:46.720 --> 00:15:51.340
+this like a folder so any idea how i can bring my file
+
+00:15:51.340 --> 00:15:58.100
+docker image repository clone from git okay okay i can do a
+
+00:15:58.100 --> 00:16:02.680
+git cloning ftp file transfer protocol fine
+
+00:16:06.380 --> 00:16:12.520
+scp uh yeah scp is also possible okay so there are multiple
+
+00:16:12.520 --> 00:16:16.260
+ways by which i can bring all my code files over here so
+
+00:16:16.260 --> 00:16:18.960
+let's suppose i'm running something in my local i'm testing
+
+00:16:18.960 --> 00:16:21.820
+something in my local so frequently i'll have to transfer a
+
+00:16:21.820 --> 00:16:24.860
+file right so frequently so let's suppose if i'm trying to
+
+00:16:24.860 --> 00:16:28.100
+run something in my uh virtual machine which is technically
+
+00:16:28.100 --> 00:16:32.020
+this one and let's suppose it's not working so i'll go back
+
+00:16:32.020 --> 00:16:35.780
+debug maybe into my local machine and then again update the
+
+00:16:35.780 --> 00:16:39.640
+files so frequently i'll have to update our files in back
+
+00:16:39.640 --> 00:16:43.360
+and forth back and forth back and forth so our best possible
+
+00:16:43.360 --> 00:16:48.840
+approach is going to be maybe a like a using some sort of a
+
+00:16:48.840 --> 00:16:53.380
+tool which is going to allow me in terms of doing a drag and
+
+00:16:53.380 --> 00:16:56.380
+drop kind of things means i'll drag from one machine and
+
+00:16:56.380 --> 00:16:59.460
+dump into another machine means i'll drag from maybe a
+
+00:16:59.460 --> 00:17:03.620
+windows machine and you know drop it inside my linux machine
+
+00:17:03.620 --> 00:17:05.740
+right so i'm going to use a tool which is going to allow me
+
+00:17:05.740 --> 00:17:07.960
+to do that so in order to do that there is a tool not just
+
+00:17:07.960 --> 00:17:12.540
+one tool which is available in a market and again these
+
+00:17:12.540 --> 00:17:17.480
+tools exist in a market i think since last uh 15 20 year so
+
+00:17:17.480 --> 00:17:20.880
+even before when i have started my career uh in i.t industry
+
+00:17:20.880 --> 00:17:24.240
+because i have been using it since last like a 10 11 year so
+
+00:17:24.240 --> 00:17:27.420
+obviously uh people have created it like and made it open
+
+00:17:27.420 --> 00:17:32.860
+source before that right uh so yeah so what what what tool
+
+00:17:32.860 --> 00:17:36.300
+we are going to use so we are going to use basically a tool
+
+00:17:36.300 --> 00:17:41.160
+called as for my windows machine win scp so you can just go
+
+00:17:41.160 --> 00:17:45.760
+to internet and then uh just try to search for win scp and
+
+00:17:45.760 --> 00:17:49.220
+click on download so it is going to give you some official
+
+00:17:49.220 --> 00:17:53.960
+website from where you all will be able to download it yeah
+
+00:17:53.960 --> 00:17:57.700
+you all can like a download a win scp again it's a very very
+
+00:17:57.700 --> 00:18:01.980
+small software like 12 mb of a software and entire world is
+
+00:18:01.980 --> 00:18:03.160
+using it so this is how you can download a win scp it and
+
+00:18:03.160 --> 00:18:06.560
+again you can see like even website is in a PHP so just
+
+00:18:06.560 --> 00:18:10.260
+imagine how old it is right it's actually very very old it's
+
+00:18:10.260 --> 00:18:14.820
+very very old right so you can just go to this place and you
+
+00:18:14.820 --> 00:18:18.960
+can try to download a win SCP inside your system so once you
+
+00:18:18.960 --> 00:18:23.680
+are going to download a win SCP the way you have logged in
+
+00:18:23.680 --> 00:18:28.500
+yeah so the way you have logged in into your like a putty
+
+00:18:28.500 --> 00:18:31.180
+with the help of putty in the similar manner you will be
+
+00:18:31.180 --> 00:18:34.660
+able to log in even inside a win SCP which is going to allow
+
+00:18:34.660 --> 00:18:36.920
+you to you know do a file transfer from one places to
+
+00:18:36.920 --> 00:18:42.000
+another places fine so we are using in my company and blade
+
+00:18:42.000 --> 00:18:44.860
+logic also we are using yeah there are tons of software
+
+00:18:44.860 --> 00:18:48.360
+available so it's just a like a SCP right so obviously for
+
+00:18:48.360 --> 00:18:52.620
+that and again if I have a Linux terminal access even in
+
+00:18:52.620 --> 00:18:56.760
+Windows which we have nowadays so we don't even need a tool
+
+00:18:56.760 --> 00:18:59.880
+so we can directly use a SCP command and we can transfer it
+
+00:18:59.880 --> 00:19:02.680
+right but yeah these tools are you know going to give us a
+
+00:19:02.680 --> 00:19:05.520
+flexibility in terms of doing a drag-and-drop so just
+
+00:19:05.520 --> 00:19:09.140
+download this win SCP and after download it will take
+
+00:19:09.140 --> 00:19:12.860
+fraction of second to do a installation so in my system as
+
+00:19:12.860 --> 00:19:16.680
+you can see win SCP is available right so I'm going to open
+
+00:19:16.680 --> 00:19:22.400
+up this win SCP so once I'm going to open up a win SCP you
+
+00:19:22.400 --> 00:19:26.720
+will be able to see two things to like you know two side of
+
+00:19:26.720 --> 00:19:30.040
+it so one side and then this side so you will be able to see
+
+00:19:30.040 --> 00:19:33.160
+two side by default it is going to be blank it is not going
+
+00:19:33.160 --> 00:19:36.200
+to be for example if I'm going to click on new tab so by
+
+00:19:36.200 --> 00:19:39.200
+default it will be like a blank by the way both the sides
+
+00:19:39.200 --> 00:19:45.080
+yeah so here I have to hit a new website simple right new
+
+00:19:45.080 --> 00:19:48.120
+website so I have to give a host name what is the host name
+
+00:19:48.120 --> 00:19:52.200
+same like I said so you are supposed to use a same like a
+
+00:19:52.200 --> 00:19:55.180
+method the method that you have used to log in with the help
+
+00:19:55.180 --> 00:19:58.740
+of putty so here I can give a host name my host name is
+
+00:19:58.740 --> 00:20:02.940
+nothing but my machine public address this public IP so copy
+
+00:20:02.940 --> 00:20:07.760
+and then paste it fine new site host name now I have to give
+
+00:20:07.760 --> 00:20:11.780
+a username and password so I am trying to use a private key
+
+00:20:11.780 --> 00:20:14.440
+right so I don't have username and password so I will click
+
+00:20:14.440 --> 00:20:20.100
+on advanced simple and here so SSH authentication option you
+
+00:20:20.100 --> 00:20:22.840
+will be able to see and here you can upload your private key
+
+00:20:22.840 --> 00:20:27.060
+basically so again browse your private key mine so private
+
+00:20:27.060 --> 00:20:31.600
+key is attached click on OK fine host name is this one and
+
+00:20:31.600 --> 00:20:35.880
+then try to login so once you will try to log in it will
+
+00:20:35.880 --> 00:20:39.060
+give you a pop-up called as except so I'll click on accept
+
+00:20:39.060 --> 00:20:42.540
+it is asking me for my username so my username for a machine
+
+00:20:42.540 --> 00:20:46.500
+is Ubuntu same thing Luna partition you'll be you and to you
+
+00:20:46.500 --> 00:20:53.400
+Ubuntu okay so if everything is going to be fine then you
+
+00:20:53.400 --> 00:20:56.680
+will be able to see two side of it left hand side and right
+
+00:20:56.680 --> 00:20:59.400
+hand side on left hand side you will be able to see
+
+00:20:59.400 --> 00:21:02.360
+onWinegangen to observe your Windows folder, whatever folder
+
+00:21:02.360 --> 00:21:04.780
+you would like to open up, you can open up, you can browse
+
+00:21:04.780 --> 00:21:07.800
+your entire Windows machine here and on your right hand
+
+00:21:07.800 --> 00:21:10.700
+side, you will be able to see your Linux machine as you can
+
+00:21:10.700 --> 00:21:13.300
+see there is nothing inside the Linux machine right for now.
+
+00:21:13.680 --> 00:21:17.140
+So this is a root directory of the Linux machine and you can
+
+00:21:17.140 --> 00:21:21.740
+just go to any of these folders. This is how simple your
+
+00:21:21.740 --> 00:21:27.020
+life will become. So, if you are using a WinSCP, right,
+
+00:21:27.140 --> 00:21:31.820
+mobile extreme, yeah, more combination of the putty and
+
+00:21:31.820 --> 00:21:35.100
+WinSCP. Yes, you can use mobile stream as well. I have been
+
+00:21:35.100 --> 00:21:38.660
+using it. So I mean, like everyone is having their own
+
+00:21:38.660 --> 00:21:45.760
+favorite tool toolkit. So simple, right? So just a SCP we
+
+00:21:45.760 --> 00:21:48.880
+are trying to do. So nothing to worry. Now here on this
+
+00:21:48.880 --> 00:21:51.620
+side, there is nothing and I have to transfer all of these
+
+00:21:51.620 --> 00:21:54.540
+files, right? I have to transfer all of these files. Not a
+
+00:21:54.540 --> 00:21:57.720
+model, because if I'm going to transfer a model, it is going
+
+00:21:57.720 --> 00:22:01.240
+to take a huge amount of time. Model size is too big, right?
+
+00:22:01.700 --> 00:22:05.040
+So what I can do, I can try to transfer all of these files.
+
+00:22:05.120 --> 00:22:08.300
+So data set, fine tuning, everything I can try to transfer
+
+00:22:08.300 --> 00:22:12.620
+except model. So to transfer my data from here to here, I
+
+00:22:12.620 --> 00:22:15.480
+just have to do drag and drop. See drag and drop started
+
+00:22:15.480 --> 00:22:18.280
+transferring and within a fraction of a second, I will be
+
+00:22:18.280 --> 00:22:23.300
+able to transfer all of my file inside my Linux machine. So
+
+00:22:25.820 --> 00:22:30.280
+transferring and if I'm going to update something again,
+
+00:22:30.340 --> 00:22:34.960
+drag and drop updated even inside my virtual machine, even
+
+00:22:38.130 --> 00:22:41.870
+if I have to transfer data and this method is a universal
+
+00:22:41.870 --> 00:22:45.370
+method by the way, doesn't matter whether you are going to
+
+00:22:45.370 --> 00:22:48.050
+do a fine tuning or maybe you are working on a big data
+
+00:22:48.050 --> 00:22:50.790
+project or maybe into some other better development or
+
+00:22:50.790 --> 00:22:53.910
+something project, right? It's, it's same, right? Whenever
+
+00:22:53.910 --> 00:22:57.110
+we have to like, you know, communicate between a local and a
+
+00:22:57.110 --> 00:23:00.330
+virtual machine, it's VMs basically. So as you can see all
+
+00:23:00.330 --> 00:23:03.390
+of this file I have transferred except a model folder. So
+
+00:23:03.390 --> 00:23:06.150
+model folder I have not selected, the rest of the files is
+
+00:23:06.150 --> 00:23:10.310
+already available over here. I can go and I can try to check
+
+00:23:10.310 --> 00:23:14.030
+over here that all these files are available or not. So ls
+
+00:23:14.030 --> 00:23:18.250
+and yes, all the files are available, lsl, all of these
+
+00:23:18.250 --> 00:23:21.590
+files are available to me. So whatever was available in my
+
+00:23:21.590 --> 00:23:25.370
+local system, all of these files are available even over
+
+00:23:25.370 --> 00:23:28.930
+here. My data set folder is also available. My fine tuning
+
+00:23:28.930 --> 00:23:32.990
+files are also available. So maybe I can go into a fine
+
+00:23:32.990 --> 00:23:38.750
+tuning and I can try to check. So ls, so yes, all of my fine
+
+00:23:38.750 --> 00:23:41.870
+tuning files are available. So DPO, full fine tuning, LoRa,
+
+00:23:41.990 --> 00:23:45.210
+preferred queue LoRa, everything is available. I can do cd
+
+00:23:45.210 --> 00:23:50.550
+dot dot. I can go back, I can look into cd data set and I
+
+00:23:50.550 --> 00:23:55.090
+can again try to check. So yes, all of my data files are
+
+00:23:55.090 --> 00:23:57.850
+also available. So everything is available to me. So
+
+00:23:57.850 --> 00:24:00.610
+whatever was available in my local system, now I have just
+
+00:24:00.610 --> 00:24:04.950
+replicated the exact same thing inside my VM except a model
+
+00:24:04.950 --> 00:24:07.390
+file because model we have to create, right? Model will try
+
+00:24:07.390 --> 00:24:12.630
+to train. We have to see the power of like, you know, GPU.
+
+00:24:14.590 --> 00:24:17.610
+So okay, Arnava is asking when we transfer, should we
+
+00:24:17.610 --> 00:24:21.250
+transfer the file inside a fine tuning folder? You can
+
+00:24:21.250 --> 00:24:24.450
+create any folder, transfer in any folder, create a new
+
+00:24:24.450 --> 00:24:28.110
+folder with the help of WinSAP. So here you will be able to
+
+00:24:28.110 --> 00:24:31.610
+get an option to create a new folder inside a VM or maybe
+
+00:24:31.610 --> 00:24:35.430
+you can come over here, do MKDIR, create a new folder,
+
+00:24:35.530 --> 00:24:38.950
+transfer into that one. It's fine. Keep it anywhere, right?
+
+00:24:38.970 --> 00:24:41.130
+At the end of the day, I just need, you don't have to like
+
+00:24:41.130 --> 00:24:44.190
+keep everything into the root directory. I'm keeping it. I
+
+00:24:44.190 --> 00:24:46.590
+have just transferred it. But yeah, it's completely fine. I
+
+00:24:46.590 --> 00:24:51.390
+can just go create, do MKDIR from here or even from WinSAP,
+
+00:24:51.430 --> 00:24:55.390
+go and create a new folder just by using this UI. Everything
+
+00:24:55.390 --> 00:25:00.510
+is fine, right? I just need my file to be available
+
+00:25:00.510 --> 00:25:03.870
+somewhere. That's it. Which location? Doesn't matter for me
+
+00:25:03.870 --> 00:25:10.730
+unless and until I'm not able to remember it. So yeah, all
+
+00:25:10.730 --> 00:25:12.890
+are in a root directory. If another project want to
+
+00:25:12.890 --> 00:25:16.250
+transfer, then you can create a folder, folder option is
+
+00:25:16.250 --> 00:25:18.250
+available to you, right? Maintain your folder location,
+
+00:25:18.450 --> 00:25:23.010
+simple. Just like working with directories, right? So I
+
+00:25:23.010 --> 00:25:25.550
+don't think it's like a directory. It's just a discussion
+
+00:25:25.550 --> 00:25:30.270
+point for us. Okay. Now, so all the files are available over
+
+00:25:30.270 --> 00:25:35.210
+here, right? So first of all, we have to do a training. Now
+
+00:25:35.210 --> 00:25:37.950
+I have done a couple of changes. So I have done a couple of
+
+00:25:37.950 --> 00:25:41.210
+changes with respect to some of the files with respect to
+
+00:25:41.210 --> 00:25:45.030
+H100 training. So step by step, step by step. So we will try
+
+00:25:45.030 --> 00:25:49.270
+to start with the training and yeah, so one by one, one by
+
+00:25:49.270 --> 00:25:52.330
+one. So you will have to execute the files so that your
+
+00:25:52.330 --> 00:25:55.970
+training is going to start. And peacefully, you will be able
+
+00:25:55.970 --> 00:25:57.910
+to do a training. If it is going to give me some sort of
+
+00:25:57.910 --> 00:26:01.350
+issues, we'll fix it, we'll fix in my local and then I'll
+
+00:26:01.350 --> 00:26:06.870
+try to, you know, transfer that again here. So here you will
+
+00:26:06.870 --> 00:26:11.610
+be able to see a file called as setup file I have created.
+
+00:26:11.950 --> 00:26:15.270
+This setup.sh. So whenever you are going to spin your
+
+00:26:15.270 --> 00:26:18.990
+machine and if you remember even last time, right? So we
+
+00:26:18.990 --> 00:26:23.250
+were trying to run some sort of a couple of commands so that
+
+00:26:23.250 --> 00:26:25.790
+I will do a couple of I will be able to update my virtual
+
+00:26:25.790 --> 00:26:29.550
+machine. And yeah, one more thing. What is the command to
+
+00:26:29.550 --> 00:26:33.250
+check a GPU? Anyone who remembers?
+
+00:26:42.400 --> 00:26:48.760
+Yes. CUDA. CUDA is basically library. So nvidia-smi, right?
+
+00:26:48.920 --> 00:26:55.260
+N-V-I-D-I-A nvidia-smi. This is the command. So here is my
+
+00:26:55.260 --> 00:26:59.760
+GPU H100. So this is the detail that I'm able to see over
+
+00:26:59.760 --> 00:27:04.240
+here. Right. Right. So nvidia-smi, by the way, yeah, a
+
+00:27:04.240 --> 00:27:08.680
+couple of people are able to ping me. So they remember fine.
+
+00:27:09.500 --> 00:27:13.280
+So here basically we have a GPU and we are able to see that
+
+00:27:13.280 --> 00:27:17.860
+that yes, we have H100 GPU. So if you remember the like, you
+
+00:27:17.860 --> 00:27:21.020
+know, even last time, so when we were trying to spin our
+
+00:27:21.020 --> 00:27:23.740
+machine, so we have done a couple of, you know, Linux based
+
+00:27:23.740 --> 00:27:27.360
+or updates. So after doing the update, what we will do, so
+
+00:27:27.360 --> 00:27:29.860
+we'll try to do the installation. So whatever requirement
+
+00:27:29.860 --> 00:27:33.200
+files that we have. So we. So this machine is a complete
+
+00:27:33.200 --> 00:27:37.200
+blank machine. So we have to do a setup in a step by step
+
+00:27:37.200 --> 00:27:40.680
+manner. Then only I will be able to, you know, run each and
+
+00:27:40.680 --> 00:27:44.420
+everything. Otherwise I won't be able to run things. So to
+
+00:27:44.420 --> 00:27:49.200
+do that, there is a one unified single file I have created
+
+00:27:49.200 --> 00:27:55.400
+and that file is basically setup H100 complete.sh. So inside
+
+00:27:55.400 --> 00:27:58.320
+this file, I have mentioned each and everything. So what I
+
+00:27:58.320 --> 00:28:00.480
+have mentioned inside this one. So I have mentioned the
+
+00:28:00.480 --> 00:28:04.020
+update. Basically. I have mentioned our Docker installation
+
+00:28:04.020 --> 00:28:06.740
+because even Docker will not be available. I have to install
+
+00:28:06.740 --> 00:28:13.160
+a Docker. I have even like, you know, like inside this one.
+
+00:28:13.240 --> 00:28:17.060
+So I have even given a command so that it will be able to
+
+00:28:17.060 --> 00:28:20.900
+like, you know, do all kind of requirements installations
+
+00:28:20.900 --> 00:28:25.680
+inside this one. So this is one single unified file keeping
+
+00:28:25.680 --> 00:28:28.940
+one thing in our mind so that even in future, maybe after a
+
+00:28:28.940 --> 00:28:33.300
+year of time. If you would like to. Like up your machine, it
+
+00:28:33.300 --> 00:28:36.740
+should not take more than a minute of time to keep your
+
+00:28:36.740 --> 00:28:40.000
+machine ready. So one single command and then your machine
+
+00:28:40.000 --> 00:28:44.400
+will be ready now to execute this particular command. First
+
+00:28:44.400 --> 00:28:48.080
+of all, I have to give a execute access. We don't have
+
+00:28:48.080 --> 00:28:50.140
+execute access. We have a read, write, read, write, read
+
+00:28:50.140 --> 00:28:54.040
+access, right? So we have to give a execute access. So I'll
+
+00:28:54.040 --> 00:28:58.300
+just try to change access of it. So ch mode. So change the
+
+00:28:58.300 --> 00:29:03.240
+mode. And give a plus. Plus x execute mode access to all sh
+
+00:29:03.240 --> 00:29:06.700
+file. So static of dot sh. So whatever file that we have
+
+00:29:06.700 --> 00:29:11.160
+inside my machine. So I'm just giving a execute access to
+
+00:29:11.160 --> 00:29:15.580
+all the sh file, whatever sh file. So sell script file. So
+
+00:29:15.580 --> 00:29:20.720
+here it's done. Now if I'll go and check LSL. So now all
+
+00:29:20.720 --> 00:29:24.100
+this sh file is having a execute access. Read, write,
+
+00:29:24.100 --> 00:29:27.920
+execute, read, write, execute access. We have fine. So we
+
+00:29:27.920 --> 00:29:31.440
+have changed the mode of all of these. This is required.
+
+00:29:31.720 --> 00:29:34.040
+Otherwise you will not be able to execute it. It will be
+
+00:29:34.040 --> 00:29:38.820
+into just a read and write mode now. So once this is done, I
+
+00:29:38.820 --> 00:29:44.840
+can try to run this setup h100 complete sh file. So how dot
+
+00:29:44.840 --> 00:29:50.980
+slash setup and then execute it. And it is, it has started
+
+00:29:50.980 --> 00:29:53.440
+its job. So it will take a couple of minutes.
+
+00:30:07.510 --> 00:30:10.050
+Yeah. So basically it's downloading. Docker is downloading
+
+00:30:10.050 --> 00:30:13.390
+all my requirement or txt file. It is updating my, uh, like
+
+00:30:13.390 --> 00:30:18.010
+a base. Linux basically everything, everything it is trying
+
+00:30:18.010 --> 00:30:18.830
+to like a update.
+
+00:30:26.430 --> 00:30:28.790
+And believe me, even after a year, if you're going to touch
+
+00:30:28.790 --> 00:30:31.930
+this file and if you have a requirement to do a fine tuning,
+
+00:30:32.090 --> 00:30:36.890
+uh, you, so you will be able to like, you know, uh, build
+
+00:30:36.890 --> 00:30:39.570
+your machine just like this.
+
+00:31:19.560 --> 00:31:23.360
+Can we use EC2 for, yeah, EC2 also provides you machine. So
+
+00:31:23.360 --> 00:31:27.980
+obviously any, any provider, not just AWS or maybe a Jira
+
+00:31:27.980 --> 00:31:31.760
+GCP. Any machine means any machine in this entire world
+
+00:31:31.760 --> 00:31:35.320
+because AWS never build a machine, right? It's going to be
+
+00:31:35.320 --> 00:31:39.540
+Nvidia machine or something else. So basically, uh, AWS is
+
+00:31:39.540 --> 00:31:42.440
+just giving you a computer over there, right?
+
+00:31:46.050 --> 00:31:48.430
+Need to install Python specific version as well. So
+
+00:31:48.430 --> 00:31:50.830
+everything I have mentioned, it
+
+00:31:55.660 --> 00:31:59.760
+will download models node. So basically this file is going
+
+00:31:59.760 --> 00:32:02.000
+to do a setup. First of all, you have to do an installation.
+
+00:32:02.180 --> 00:32:05.680
+So whenever you start a project inside your local system. So
+
+00:32:05.680 --> 00:32:09.460
+what do you do? Uh, so let's suppose, uh, you have a new
+
+00:32:09.460 --> 00:32:11.960
+laptop, right? You have purchased a new laptop. So what you
+
+00:32:11.960 --> 00:32:13.900
+will do in a very first place, you will try to install
+
+00:32:13.900 --> 00:32:17.900
+Python first of all, right? Then once Python is installed by
+
+00:32:17.900 --> 00:32:22.780
+using some of the, uh, like a provider or distributor, maybe
+
+00:32:22.780 --> 00:32:25.880
+a conda, maybe pip or something, right? So you will try to
+
+00:32:25.880 --> 00:32:29.260
+do a setup for Python and then you will try to do a
+
+00:32:29.260 --> 00:32:32.920
+installation of all the requirements. So which we have
+
+00:32:32.920 --> 00:32:37.280
+mentioned inside requirement.txt file, right? And then you
+
+00:32:37.280 --> 00:32:40.900
+will start a training. So basically we are in a step where
+
+00:32:40.900 --> 00:32:44.600
+we are trying to set up our machine. So where it will
+
+00:32:44.600 --> 00:32:47.920
+install Python, update Python. It will try to install
+
+00:32:47.920 --> 00:32:52.120
+basically like a Docker, Docker is also required, right? So
+
+00:32:52.120 --> 00:32:54.820
+in a local system we have to install a Docker, then only
+
+00:32:54.820 --> 00:32:57.420
+we'll be able to test it. So even over here, if we have to
+
+00:32:57.420 --> 00:33:01.400
+run a Docker, we have to like install first, uh, inside a
+
+00:33:01.400 --> 00:33:05.060
+requirement.txt for a training and for inferencing. We need
+
+00:33:05.060 --> 00:33:06.680
+a multiple different kinds of training. Kind of a libraries.
+
+00:33:06.940 --> 00:33:12.420
+So everything means whatever you can see in your code base
+
+00:33:12.420 --> 00:33:16.720
+in our requirement.txt file, both the requirement.txt file,
+
+00:33:16.860 --> 00:33:19.800
+it is trying to do that installation.
+
+00:33:27.110 --> 00:33:31.890
+Last time when we use, we spooled it directly without using
+
+00:33:31.890 --> 00:33:34.670
+a Docker, it was working fine in this session. We are, yeah.
+
+00:33:34.790 --> 00:33:37.610
+So without even Docker, it is going to work fine for me. I
+
+00:33:37.610 --> 00:33:42.490
+mean like, uh, Docker is not required unless and until, uh,
+
+00:33:42.630 --> 00:33:46.110
+Python. I have a requirement of, you know, uh, building
+
+00:33:46.110 --> 00:33:48.910
+something. So which should work everywhere in the similar
+
+00:33:48.910 --> 00:33:51.530
+manner. That's the meaning of Docker, right?
+
+00:33:57.320 --> 00:33:59.660
+How Docker install as per machine, I mean Linux, Windows or
+
+00:33:59.660 --> 00:34:00.900
+Mac, it's just a command.
+
+00:35:38.560 --> 00:35:42.280
+Can anyone ping the last command that we used here? We'll,
+
+00:35:42.340 --> 00:35:44.040
+we'll give you the entire file, don't worry.
+
+00:35:47.250 --> 00:35:51.850
+So in which class previously you discuss a VM setup, uh, new
+
+00:35:51.850 --> 00:35:54.790
+kernel available. Okay.
+
+00:36:27.370 --> 00:36:31.730
+So Python installation. It is showing me some issue, unable
+
+00:36:31.730 --> 00:36:35.330
+to, uh, let me check.
+
+00:36:54.220 --> 00:36:58.720
+Okay. Failing my, this particular command, which is required
+
+00:36:58.720 --> 00:37:08.160
+to set up my Python. So I'll have to check, find
+
+00:37:08.160 --> 00:37:12.180
+CDH 100 LS
+
+00:37:13.900 --> 00:37:17.220
+bin is there. So CD dot,
+
+00:37:20.100 --> 00:37:22.560
+dot. So you said it has created. Basically. Uh, Python
+
+00:37:22.560 --> 00:37:25.740
+environment for me. So Python environment is available
+
+00:37:25.740 --> 00:37:30.280
+inside this directory. I have to activate this Python
+
+00:37:30.280 --> 00:37:31.140
+environment.
+
+00:38:03.520 --> 00:38:07.240
+Bin slash activate.
+
+00:38:09.760 --> 00:38:14.800
+It seems activated directory is not available. A C T I V a
+
+00:38:14.800 --> 00:38:16.520
+no.
+
+00:38:18.810 --> 00:38:22.010
+So Python environment is giving me issue guys. Let me fix
+
+00:38:22.010 --> 00:38:29.630
+it. Uh, CD. H. Otherwise I'll create a new one. CD bin LS.
+
+00:38:29.970 --> 00:38:40.190
+Mm. Python three is available. Okay. Python 3.1 0 is
+
+00:38:40.190 --> 00:38:47.910
+available. Yeah. Fine. Fine. Fine. In
+
+00:39:10.020 --> 00:39:19.240
+my base environment. Okay. Python three. Let me check. Hmm.
+
+00:39:19.380 --> 00:39:27.320
+In my basement. I'm not sure. So I think it should work by
+
+00:39:27.320 --> 00:39:28.080
+the way for me.
+
+00:39:41.470 --> 00:39:47.030
+H100. Okay. Fine. Okay. So now there is a file called as
+
+00:39:47.030 --> 00:39:50.970
+train all H100. So this file. So first of all, we have
+
+00:39:50.970 --> 00:39:54.550
+executed which file? So we have executed this one. Which is
+
+00:39:54.550 --> 00:39:57.670
+going to do a set up for me. Uh, technically it is going to
+
+00:39:57.670 --> 00:39:59.950
+update my system, Docker installation, everything it is
+
+00:39:59.950 --> 00:40:04.290
+going to do. Then there is a SAP server. I have created, uh,
+
+00:40:04.470 --> 00:40:07.830
+for a simplicity. So which is going to train all the models.
+
+00:40:07.950 --> 00:40:11.750
+If I don't want to train all the models, then in that case I
+
+00:40:11.750 --> 00:40:15.350
+can go inside this, uh, fine tuning folder and inside this
+
+00:40:15.350 --> 00:40:17.930
+folder I have a individual file so I can try to execute
+
+00:40:17.930 --> 00:40:22.470
+individual file that is also going to work for me by the
+
+00:40:22.470 --> 00:40:26.830
+way. Uh, so here, uh, maybe I can, I can execute this as
+
+00:40:26.830 --> 00:40:29.710
+such file or maybe I can try to call this Python file. So as
+
+00:40:29.710 --> 00:40:32.530
+Python environment is already available. I can simply call
+
+00:40:32.530 --> 00:40:36.570
+it. I can even, uh, Python file over here. So Python, T H O
+
+00:40:36.570 --> 00:40:44.690
+N, Python three train T R. Okay. So I think I'm into a wrong
+
+00:40:44.690 --> 00:40:51.910
+directory, CD dot, dot CD, dot, dot CD, dot, dot, I,
+
+00:40:58.160 --> 00:40:58.440
+then
+
+00:41:08.060 --> 00:41:09.810
+three was, okay,
+
+00:41:12.530 --> 00:41:19.670
+clear LSL. So I have to execute this particular PI file.
+
+00:41:19.930 --> 00:41:23.950
+Which is going to initiate a training for me. So Python, uh,
+
+00:41:24.130 --> 00:41:33.490
+three train all H 100 PI file. So it's a 100 complete
+
+00:41:33.490 --> 00:41:39.110
+training pipeline environment variable set GPU. Oh, it has
+
+00:41:39.110 --> 00:41:39.830
+failed here.
+
+00:41:42.610 --> 00:41:50.750
+Okay. So my GPU check has failed. Let me fix it. So
+
+00:42:01.820 --> 00:42:07.360
+let me install my CUDA manually. Okay. Download CUDA.
+
+00:42:10.500 --> 00:42:13.240
+So yeah, it is telling me that, uh, so as per my script,
+
+00:42:13.320 --> 00:42:16.120
+basically GPU check has failed and it simply means that that
+
+00:42:16.120 --> 00:42:19.040
+CUDA is not available. So I'm just trying to do a pip
+
+00:42:19.040 --> 00:42:21.800
+install CUDA and it's the same command which is available
+
+00:42:21.800 --> 00:42:25.900
+even inside your Docker file. So manually I'm trying to
+
+00:42:25.900 --> 00:42:27.140
+install a CUDA. Do
+
+00:42:58.310 --> 00:43:01.390
+we need to activate the environment first? Uh, yeah, you can
+
+00:43:01.390 --> 00:43:03.650
+do a activation of the environment, but in my base
+
+00:43:03.650 --> 00:43:06.330
+environment itself, I have a 3.10. So even without
+
+00:43:06.330 --> 00:43:10.170
+activating it, it will work. Okay. I can activate, I can go
+
+00:43:10.170 --> 00:43:12.650
+and I can activate as the environment is available. But uh,
+
+00:43:12.830 --> 00:43:18.850
+here, uh, so base also like is having 3.10 and 3.10 is
+
+00:43:18.850 --> 00:43:19.630
+something which I need.
+
+00:43:26.500 --> 00:43:32.540
+Now let me install transformer prefetch. So all of these
+
+00:43:32.540 --> 00:43:35.060
+files are available in requirement.txt. I'm just testing one
+
+00:43:35.060 --> 00:43:36.360
+by one because
+
+00:43:47.270 --> 00:43:49.950
+this is the only step
+
+00:43:51.680 --> 00:43:54.820
+which, okay, requirement already satisfied for this one.
+
+00:43:55.000 --> 00:44:01.440
+Fine. Then let's check for numpy-pandaj-cyclet. For this
+
+00:44:01.440 --> 00:44:03.180
+also requirement already satisfied.
+
+00:44:10.700 --> 00:44:22.580
+Environment variable, clear it and then python-lsl, python3
+
+00:44:22.580 --> 00:44:29.160
+might train all h100, train all. Let's see. This should not
+
+00:44:29.160 --> 00:44:35.440
+fail this time. Okay. So HR model full fine tuning, it has
+
+00:44:35.440 --> 00:44:40.580
+already started guys. And as you can see how fast it is,
+
+00:44:40.720 --> 00:44:45.540
+right? So just, just, just like a, you know, uh, like, uh,
+
+00:44:45.560 --> 00:44:48.860
+try to check over here. So it has started with this tiny
+
+00:44:48.860 --> 00:44:52.560
+llama. I just wanted to show you this, these things. So it
+
+00:44:52.560 --> 00:44:58.100
+has started my HR model fine tuning. Fine. And, uh, once it
+
+00:44:58.100 --> 00:45:01.800
+has started this HR model fine tuning. If you'll just try to
+
+00:45:01.800 --> 00:45:05.480
+check a log. So it is trying to load a tokenizer for me.
+
+00:45:05.560 --> 00:45:08.260
+Then it's fine. Tokenization is done. Then it's trying to
+
+00:45:08.260 --> 00:45:11.500
+load my, uh, pre-built model, which is a tiny llama, which
+
+00:45:11.500 --> 00:45:14.720
+I'm using and model is having 1.1 billion parameter.
+
+00:45:15.420 --> 00:45:18.440
+Basically it is loading a data set. Then it is tokenizing a
+
+00:45:18.440 --> 00:45:21.460
+data set. Then it is trying to start the training. So we are
+
+00:45:21.460 --> 00:45:25.600
+training it for three POC, two batch size, load, it is this
+
+00:45:25.600 --> 00:45:30.900
+device is GPU precision is 16. F 16. We are trying to use it
+
+00:45:30.900 --> 00:45:36.960
+and it has completed this model training just maybe in 30,
+
+00:45:37.020 --> 00:45:41.820
+40 seconds for three POC. Now same thing was taking like 15,
+
+00:45:41.840 --> 00:45:45.040
+20 minute of time in my local system. Exact same thing.
+
+00:45:46.460 --> 00:45:50.520
+Yeah. Okay. Maybe for other models. So my command has failed
+
+00:45:50.520 --> 00:45:53.600
+a successful two failed three. Okay. So two models
+
+00:45:53.600 --> 00:45:55.960
+successfully, I'm able to train it. I'll have to check why
+
+00:45:55.960 --> 00:46:00.360
+my rest of the model has failed. But yeah, so two model we
+
+00:46:00.360 --> 00:46:04.880
+are able to train. So healthcare model we are able to train
+
+00:46:04.880 --> 00:46:09.000
+and HR model we are able to train. So two models are
+
+00:46:09.000 --> 00:46:16.580
+available if I'll go and if I'll try to check, so LSL, if
+
+00:46:16.580 --> 00:46:21.300
+I'll go into a model directory, so this directory CD models,
+
+00:46:21.480 --> 00:46:27.400
+then LSL, we have basically HR, we have healthcare and we
+
+00:46:27.400 --> 00:46:30.700
+have sales. But yeah, this has failed. So if I'll go into my
+
+00:46:30.700 --> 00:46:39.160
+HR, like a directory, HR directory, I must be able to see
+
+00:46:39.160 --> 00:46:43.600
+all the model files and all the checkpoints. Yes. So
+
+00:46:43.600 --> 00:46:48.020
+everything is available over here. So this is, this is the
+
+00:46:48.020 --> 00:46:51.960
+beauty of a GPU. So whatever was taking approximately like a
+
+00:46:51.960 --> 00:46:54.780
+two model, we are able to train, right? A third was failed.
+
+00:46:54.880 --> 00:46:57.420
+I'll just check. Maybe there is some command or there must
+
+00:46:57.420 --> 00:46:59.860
+be some issue with this, this one, because of that it's
+
+00:46:59.860 --> 00:47:04.660
+failing. I'll just fix it now itself. Right. But yeah, just
+
+00:47:04.660 --> 00:47:12.840
+within like a 40, 50 second, right? Yes. Just within 45, 50
+
+00:47:12.840 --> 00:47:16.340
+second, which is going to take in my kind of a machine, 30
+
+00:47:16.340 --> 00:47:20.800
+minute or 45 minute of time. So that is a beauty. This is
+
+00:47:20.800 --> 00:47:24.860
+the reason. So we are supposed to use a GPUs, not a CPUs.
+
+00:47:24.880 --> 00:47:28.440
+That's the reason. So we should use a cloud, right? So just
+
+00:47:28.440 --> 00:47:31.140
+imagine in one hour of time. How much training I will be
+
+00:47:31.140 --> 00:47:34.720
+able to do even with the big data set and high POC, right?
+
+00:47:34.800 --> 00:47:39.440
+So I will be able to do it. Now some of my training has
+
+00:47:39.440 --> 00:47:43.180
+failed. So healthcare model is fine. My sales model has
+
+00:47:43.180 --> 00:47:47.740
+failed and my marketing model has failed. My finance model
+
+00:47:47.740 --> 00:47:51.880
+has failed. So return non-zero exit status, fine, fine,
+
+00:47:51.920 --> 00:47:57.700
+fine. And okay. So rule three failed. That's completely
+
+00:47:57.700 --> 00:48:06.240
+fine. So I'll just try to see what is the issue. Fine. So it
+
+00:48:06.240 --> 00:48:09.980
+should not be a memory issue, will fine tuning HR, loading
+
+00:48:09.980 --> 00:48:11.420
+this, this, this fine.
+
+00:48:15.340 --> 00:48:15.780
+Okay.
+
+00:48:56.580 --> 00:49:00.560
+Okay. So I have these two models. So at least I can go ahead
+
+00:49:00.560 --> 00:49:04.100
+and I can try to test these two models, the model which we
+
+00:49:04.100 --> 00:49:07.120
+have trained basically, and then in a later stage, what we
+
+00:49:07.120 --> 00:49:10.580
+can do. So maybe we can try to, you know, how to do it. Fix
+
+00:49:10.580 --> 00:49:13.080
+the issue. So there must be an issue with the script or
+
+00:49:13.080 --> 00:49:16.080
+memory issue. I just have to dig deeper into it. So I just
+
+00:49:16.080 --> 00:49:21.960
+have to check why it is giving me exit status one over here.
+
+00:49:22.040 --> 00:49:24.700
+So technically it means it has not worked. This is the
+
+00:49:24.700 --> 00:49:27.720
+meaning of one, by the way, but I'll have to check. So at
+
+00:49:27.720 --> 00:49:31.320
+which condition it is giving me exit status one. But before
+
+00:49:31.320 --> 00:49:34.360
+that, let's go with the inferencing. So at least two models
+
+00:49:34.360 --> 00:49:40.960
+are available to me, C L E A R clear. Okay. So here let's go
+
+00:49:40.960 --> 00:49:47.140
+ahead and do some sort of a inferencing. So
+
+00:49:54.370 --> 00:49:58.530
+to do that, I have a file called
+
+00:50:01.760 --> 00:50:06.940
+as deploy H 100 API dot SH. So let's just call this
+
+00:50:06.940 --> 00:50:10.940
+particular file so that I will be able to deploy. So dot
+
+00:50:10.940 --> 00:50:16.780
+slash deploy and yeah, error permission denied while trying
+
+00:50:16.780 --> 00:50:19.560
+to connect to a Docker, daemon, socket, this, this, this,
+
+00:50:19.600 --> 00:50:24.100
+this, this, this is the issue permission denied for which
+
+00:50:24.100 --> 00:50:30.760
+file head fine tuning ping this Docker connect permission
+
+00:50:30.760 --> 00:50:36.640
+denied. It's trying to build a Docker image, but it's not
+
+00:50:36.640 --> 00:50:40.880
+able to build it. Okay. So let's fix that issue as well. So
+
+00:50:59.380 --> 00:51:05.700
+let me give a proper permission to my Docker and then apply
+
+00:51:05.700 --> 00:51:12.060
+a change. It changes restart my Docker. So I have already
+
+00:51:12.060 --> 00:51:14.680
+kept this command with me because these are the regular
+
+00:51:14.680 --> 00:51:18.600
+command that we use basically. So to restart the Docker or
+
+00:51:18.600 --> 00:51:22.520
+check what is a Docker version so that quickly I can check
+
+00:51:22.520 --> 00:51:27.380
+it. So this is my Docker version. Fine. Process is fine.
+
+00:51:27.700 --> 00:51:33.260
+Okay. No process is running for a Docker. So let's try to
+
+00:51:33.260 --> 00:51:37.440
+build a Docker image now. So Docker file build this. This H
+
+00:51:37.440 --> 00:51:38.560
+100. This is the latest. Okay.
+
+00:51:43.570 --> 00:51:46.810
+So in case of like a Windows machine, so we try to do a
+
+00:51:46.810 --> 00:51:51.210
+Docker compose, here, these are the, this is the command for
+
+00:51:51.210 --> 00:51:54.190
+Docker, like for building it. So even in Windows, so we do a
+
+00:51:54.190 --> 00:51:57.290
+Docker build and Docker compose, same command we are trying
+
+00:51:57.290 --> 00:51:58.370
+to use with sudo access,
+
+00:52:14.760 --> 00:52:18.100
+the log are automatic or we have to use a login library. No.
+
+00:52:18.160 --> 00:52:20.800
+So whatever I'm trying to echo, so let's suppose I'm using a
+
+00:52:20.800 --> 00:52:24.140
+SH file, right? So inside a SH, which is nothing but a Linux
+
+00:52:24.140 --> 00:52:26.620
+compatible file. So you try to do a echo. So whatever you
+
+00:52:26.620 --> 00:52:29.060
+have written inside a echo, it's like a print. Basically. So
+
+00:52:29.060 --> 00:52:34.340
+it will try to like, you know, print in your console. If you
+
+00:52:34.340 --> 00:52:37.660
+will not write it, it will not print it. Or you can even try
+
+00:52:37.660 --> 00:52:41.540
+to run it as a, you know, a background process. So that is
+
+00:52:41.540 --> 00:52:43.840
+also possible. Yesterday I told you, right, D.
+
+00:52:46.970 --> 00:52:52.990
+So error, fail to build, fail to solve. Okay. Again, my
+
+00:52:52.990 --> 00:52:58.160
+Docker has failed. It should not fail by the way.
+
+00:53:02.840 --> 00:53:09.280
+Docker file, H 100. Stop. Call system dependency. Call find.
+
+00:53:10.620 --> 00:53:11.760
+With code.
+
+00:53:43.720 --> 00:53:44.340
+Docker.
+
+00:53:48.900 --> 00:53:52.880
+Okay. So ls. Docker
+
+00:53:55.400 --> 00:53:58.080
+file. H 100. Okay.
+
+00:56:03.780 --> 00:56:09.280
+Okay. So looks like my Docker. Okay. So able to run all of
+
+00:56:09.280 --> 00:56:12.520
+these things. Requirement. Txt. Server. Py. Fine tuned data
+
+00:56:12.520 --> 00:56:18.120
+set. Okay. Fine. So. My Docker. Configuration. Is able to
+
+00:56:18.120 --> 00:56:21.880
+run all of these things. Looks fine. Now let me run it.
+
+00:56:24.020 --> 00:56:26.480
+Error response from daemon. Failed to create a task
+
+00:56:26.480 --> 00:56:29.900
+container. Failed to sim task. Agitated one. This, this,
+
+00:56:29.920 --> 00:56:34.600
+this. Version mismatch. Unknown. Why? Sudo docker run D.
+
+00:56:34.700 --> 00:56:42.180
+Fine. Previous process was okay. LMAPI. H 100. Latest. Yes.
+
+00:56:42.180 --> 00:56:48.060
+It should work. Because last time it was able to finish it.
+
+00:56:48.100 --> 00:56:50.980
+Okay. Let's check.
+
+00:56:59.430 --> 00:57:01.770
+Response from daemon. Let
+
+00:57:12.520 --> 00:57:21.920
+me restart my Docker. C L E R. Clear. Sudo. System. C T L.
+
+00:57:23.780 --> 00:57:33.840
+Restart. Nvidia. V. I. D. I. A. Nvidia. Docker. Failed to
+
+00:57:33.840 --> 00:57:37.020
+restart. Unit. Nvidia docker. Service. Not available. Not
+
+00:57:37.020 --> 00:57:38.060
+found. Okay.
+
+00:57:55.980 --> 00:57:57.120
+Again. Error.
+
+00:58:04.280 --> 00:58:06.380
+Failed to restart. Found.
+
+00:58:38.290 --> 00:58:42.170
+Let me run API without docker. Let's check whether it's
+
+00:58:42.170 --> 00:58:42.810
+working or not.
+
+00:58:46.520 --> 00:58:51.700
+Yeah. So it looks like my API directly is running. Will fix
+
+00:58:51.700 --> 00:58:55.780
+it with docker as well. But yeah, so my API is live and it's
+
+00:58:55.780 --> 00:58:59.980
+live on this particular port number 8000. So I've just like,
+
+00:59:00.040 --> 00:59:03.200
+you know, executed my API server. So technically a fast API.
+
+00:59:03.360 --> 00:59:06.040
+So without using a docker. I'm trying to execute so that I
+
+00:59:06.040 --> 00:59:10.440
+will be able to do a testing. So yes, it's running. Let me
+
+00:59:10.440 --> 00:59:14.460
+test at least my two of the model. So to test it, what we
+
+00:59:14.460 --> 00:59:18.100
+have to do, so we have to basically copy this IP address
+
+00:59:18.100 --> 00:59:21.700
+because at this IP address things are running just like a
+
+00:59:21.700 --> 00:59:29.360
+local host and here port number is 8000. So let me hit this
+
+00:59:29.360 --> 00:59:31.300
+port number slash
+
+00:59:36.900 --> 00:59:37.700
+DOCS.
+
+00:59:49.800 --> 00:59:54.900
+It's not getting a request. How to domain name to IP
+
+00:59:54.900 --> 00:59:57.800
+address. Yeah, that I'll tell you. Don't worry. So domain
+
+00:59:57.800 --> 01:00:02.820
+name to IP address mapping. First of all, let me run these
+
+01:00:02.820 --> 01:00:03.160
+things.
+
+01:00:07.110 --> 01:00:13.440
+It's not able to reach out to my machine. By the way, curl
+
+01:01:31.460 --> 01:01:38.160
+and anything. I mean, like if there is no problem with the
+
+01:01:38.160 --> 01:01:41.940
+IP address, right, public access of this address, then it
+
+01:01:41.940 --> 01:01:44.180
+should not give me an issue. Maybe I can. I can go and check
+
+01:01:44.180 --> 01:01:48.060
+over here inside a network tab and I think I have already
+
+01:01:48.060 --> 01:01:54.200
+allowed public IP address is fine and firewall wise. So I
+
+01:01:55.890 --> 01:02:01.970
+have already allowed 0.0.0 port range. Okay inbound and
+
+01:02:01.970 --> 01:02:11.210
+outbound. Okay so why my port range is not this one. I think
+
+01:02:11.210 --> 01:02:13.450
+yeah, this is the issue. My
+
+01:02:23.980 --> 01:02:28.720
+firewall. This is the wall. And this one. Okay. Let me check
+
+01:02:28.720 --> 01:02:33.540
+now. Yeah, that was the issue. So basically, I don't know
+
+01:02:33.540 --> 01:02:37.280
+basically I what I remember is like I have already given a
+
+01:02:37.280 --> 01:02:40.860
+port range of one to 9999 but by mistake somehow it has
+
+01:02:40.860 --> 01:02:44.880
+taken only 22 port and because of this port number inbound
+
+01:02:44.880 --> 01:02:48.340
+like a traffic port number. So it was not allowing me that
+
+01:02:48.340 --> 01:02:51.080
+was the only issue because if something is running obviously
+
+01:02:51.080 --> 01:02:55.200
+I should be able to access it. Okay. So now we are public
+
+01:02:55.200 --> 01:02:58.520
+and now all of you will be able to access it guys. So
+
+01:02:58.520 --> 01:03:02.520
+successfully we are able to run things in our GPU at least
+
+01:03:02.520 --> 01:03:05.500
+two models are running as of now. So I believe HR model is
+
+01:03:05.500 --> 01:03:08.040
+running and health model is running. So maybe I can go to HR
+
+01:03:08.040 --> 01:03:12.420
+model and I can try this out. I can try to pass a string
+
+01:03:12.420 --> 01:03:20.360
+over here. I can try to ask that. What is what is HR policy
+
+01:03:20.360 --> 01:03:22.340
+for taking
+
+01:03:24.040 --> 01:03:32.180
+data. Leave. So maybe execute and 404 model file not found.
+
+01:03:32.860 --> 01:03:36.040
+So again, this is the issue it is it is able to reach out to
+
+01:03:36.040 --> 01:03:38.940
+my system but this is the response model file not found at
+
+01:03:38.940 --> 01:03:44.840
+model HR will fine tune please train the model first. Okay.
+
+01:03:46.520 --> 01:03:55.850
+So another issue 500 internal error. So my API is not able
+
+01:03:55.850 --> 01:03:58.730
+to give me. So I'm able to reach out to my system as you can
+
+01:03:58.730 --> 01:04:02.630
+see and many people are able to reach out to my system it
+
+01:04:02.630 --> 01:04:07.420
+seems but yes
+
+01:04:09.210 --> 01:04:16.230
+I can see a traffic on my system. Fine. So let me terminate
+
+01:04:16.230 --> 01:04:18.870
+this one guys for now and I'll have to check.
+
+01:04:22.480 --> 01:04:26.220
+Okay. So my model file is missing. Maybe I'll have to
+
+01:04:26.220 --> 01:04:36.200
+retrain this model file. LSL. CD model. Models. LS. So
+
+01:04:36.200 --> 01:04:39.140
+healthcare. Okay. HR fine-tuned.
+
+01:04:42.120 --> 01:04:46.680
+HR full fine-tuned. Okay. So it is looking for a model at HR
+
+01:04:46.680 --> 01:04:53.760
+full fine-tuned and I have a model available at HR fine
+
+01:04:53.760 --> 01:04:58.220
+-tuned healthcare Laura fine-tuned. Okay. Fine. Let's see
+
+01:04:58.220 --> 01:05:00.780
+which API is going to hit CD
+
+01:05:06.180 --> 01:05:12.260
+dot dot. So HR fine-tuned and Laura fine-tuned. Okay. Okay.
+
+01:05:17.060 --> 01:05:19.930
+Hmm. So again I have started running my API.
+
+01:05:25.190 --> 01:05:26.270
+Refresh healthcare.
+
+01:05:34.520 --> 01:05:35.840
+Try this out.
+
+01:05:40.480 --> 01:05:42.480
+Status healthy. Fine.
+
+01:05:45.040 --> 01:05:46.820
+Then we have Healthcare.
+
+01:05:58.040 --> 01:06:02.900
+Hmm. Healthcare Model is working. I am able to get a
+
+01:06:02.900 --> 01:06:06.200
+response. Tell me about yourself. So basically a healthcare
+
+01:06:06.200 --> 01:06:09.380
+model is working. So yeah 2 models we have trained and 2
+
+01:06:09.380 --> 01:06:13.120
+models is available. One of that model is basically a health
+
+01:06:13.120 --> 01:06:14.200
+care model and two models is basically a healthcare
+
+01:06:14.200 --> 01:06:17.300
+successfully I am able to get a response from my healthcare
+
+01:06:17.300 --> 01:06:21.480
+model. So basically I just have to like clean a little bit
+
+01:06:21.480 --> 01:06:25.040
+this entire things, API things basically and so that
+
+01:06:25.040 --> 01:06:30.620
+everything will work if one is working. So guys you can use
+
+01:06:30.620 --> 01:06:33.500
+this healthcare model and then try to test it. So API slash
+
+01:06:33.500 --> 01:06:35.920
+healthcare, so healthcare inferences you can try to do it.
+
+01:06:37.060 --> 01:06:40.380
+In between so I will try to fix other things and
+
+01:06:50.530 --> 01:06:53.770
+you will be able to see that inferencing is fast. So if you
+
+01:06:53.770 --> 01:06:56.510
+are going to run exact same thing into your local system,
+
+01:06:56.790 --> 01:07:00.590
+inferencing is not going to be that fast but yeah. So now if
+
+01:07:00.590 --> 01:07:03.110
+you are doing it, inferencing is going to be fast and it is
+
+01:07:03.110 --> 01:07:07.150
+the same URL. Yeah healthcare working giving a response,
+
+01:07:07.490 --> 01:07:10.250
+okay fine. So healthcare is fine, I will just try to fix
+
+01:07:10.250 --> 01:07:12.950
+other model as well because other models were working fine
+
+01:07:12.950 --> 01:07:16.750
+in my local system, I have already tested it. Maybe some
+
+01:07:16.750 --> 01:07:21.130
+configuration changes I will have to do with respect to CUDA
+
+01:07:21.130 --> 01:07:22.270
+available over here.
+
+01:07:26.600 --> 01:07:30.100
+Okay so everyone is getting 200, 200, 200, it simply means
+
+01:07:30.100 --> 01:07:32.700
+that, I can see like people are hitting and people are able
+
+01:07:32.700 --> 01:07:36.200
+to get 200. It simply means that everything is working fine
+
+01:07:36.200 --> 01:07:39.300
+and these are the IP addresses from where you are trying to
+
+01:07:39.300 --> 01:07:44.040
+hit my system. So let me close it guys and let me fix other
+
+01:07:44.040 --> 01:07:45.200
+part of the code.
+
+01:07:49.220 --> 01:07:50.720
+So closed the API,
+
+01:07:55.470 --> 01:07:57.850
+LSL, let
+
+01:08:01.240 --> 01:08:06.420
+me execute this train all h100.py once again just to
+
+01:08:06.420 --> 01:08:10.220
+identify the issue. So python 3, train it,
+
+01:09:20.280 --> 01:09:26.580
+prefet failed, laura marketing model failed and finance
+
+01:09:26.580 --> 01:09:28.560
+model failed. So
+
+01:10:04.360 --> 01:10:10.500
+let me clear it and i can try doing a training as an
+
+01:10:10.500 --> 01:10:19.600
+individual model, so ls L and I have a fine tuning folder
+
+01:10:19.600 --> 01:10:24.200
+over here. And inside that I have individual. folder so i
+
+01:10:24.200 --> 01:10:33.340
+can try to call that one cd fine tuning lsl and whatever has
+
+01:10:33.340 --> 01:10:38.920
+failed let's try to train it one by one so let's say we are
+
+01:10:38.920 --> 01:10:42.580
+going to do a training for prefets so let me try this so
+
+01:10:42.580 --> 01:10:48.160
+that i can identify individual issues p e f a t okay
+
+01:10:56.130 --> 01:11:00.630
+so no such file or directory data set sales data set dot
+
+01:11:00.630 --> 01:11:02.330
+json okay
+
+01:11:05.920 --> 01:11:06.960
+python
+
+01:11:12.360 --> 01:11:13.860
+3 object
+
+01:11:28.170 --> 01:11:33.830
+has so this is the issue it seems already multiple devices
+
+01:11:33.830 --> 01:11:37.490
+keeping arg epoch this this this fine
+
+01:12:31.760 --> 01:12:33.680
+tuning python
+
+01:13:29.520 --> 01:13:32.920
+3 train so
+
+01:14:02.300 --> 01:14:06.540
+model training on gpu is having its own struggle as you can
+
+01:14:06.540 --> 01:14:10.020
+see so things are working perfectly fine in my local system
+
+01:14:10.020 --> 01:14:14.060
+but you the when i'm trying to run it on a gpu so because of
+
+01:14:14.060 --> 01:14:18.360
+like some dependencies issue compatibility issue it's
+
+01:14:18.360 --> 01:14:19.700
+failing okay
+
+01:14:25.390 --> 01:14:30.530
+again training has failed training failed training failed no
+
+01:14:30.530 --> 01:14:33.950
+package error is found for the bytes and bytes again
+
+01:14:33.950 --> 01:14:39.700
+dependency issue a lot of issues just with respect to
+
+01:14:39.700 --> 01:14:43.720
+dependencies and yeah guys be ready if you are doing the
+
+01:14:43.720 --> 01:14:47.560
+same thing i mean like once it will work in my system
+
+01:14:47.560 --> 01:14:48.900
+hundred percent it will work in my system hundred percent it
+
+01:14:48.900 --> 01:14:50.740
+will work in my system in any system but yeah if you're
+
+01:14:50.740 --> 01:14:55.020
+doing it fresh so then obviously all you have to go through
+
+01:14:55.020 --> 01:14:56.560
+all the struggles a
+
+01:15:11.950 --> 01:15:14.390
+real struggle in it life how
+
+01:15:22.740 --> 01:15:24.900
+to develop this level of understanding so first of all you
+
+01:15:24.900 --> 01:15:27.200
+should be good with the linux command if you are using like
+
+01:15:27.200 --> 01:15:30.900
+a gpus right uh and any any linux machine so you are
+
+01:15:30.900 --> 01:15:33.780
+supposed to have some sort of understanding with respect a
+
+01:15:33.780 --> 01:15:36.400
+basic of at least a linux command i'm not saying that you
+
+01:15:36.400 --> 01:15:40.240
+should be pro in that but yeah Yeah and then second just go
+
+01:15:40.240 --> 01:15:43.180
+through line by line all those errors because all those
+
+01:15:43.180 --> 01:15:46.280
+errors will tell you everything that why it is failing. So
+
+01:15:46.280 --> 01:15:49.080
+it is failing because of dependencies issues so I will just
+
+01:15:49.080 --> 01:15:53.060
+fix the dependency issue then again try to run it and it
+
+01:15:53.060 --> 01:16:01.160
+will work basically right it will always work. Can we not so
+
+01:16:01.160 --> 01:16:04.080
+yeah we can deploy a docker images first of all let me train
+
+01:16:04.080 --> 01:16:06.920
+it I am struggling with the training itself. So I was able
+
+01:16:06.920 --> 01:16:09.200
+to train two models two models training was working fine
+
+01:16:09.200 --> 01:16:12.960
+third fourth and fifth model was giving an issue. So once
+
+01:16:12.960 --> 01:16:15.760
+training will be done once I will be having a models I can
+
+01:16:15.760 --> 01:16:17.980
+go with the docker deployment. Now in case of docker
+
+01:16:17.980 --> 01:16:21.240
+deployment obviously like it is if it is going to work once
+
+01:16:21.240 --> 01:16:25.120
+it will work all the time but to do that I have to like
+
+01:16:25.120 --> 01:16:29.400
+create my model first. So I am working on the model I am
+
+01:16:29.400 --> 01:16:34.240
+struggling with the model fine tuning which is which was
+
+01:16:34.240 --> 01:16:37.040
+working perfectly fine in my windows machine by the way yeah
+
+01:16:37.040 --> 01:16:39.280
+the code I have shared with you so anyone and everyone can
+
+01:16:39.280 --> 01:16:43.660
+run that in their windows machine and it will work. Set
+
+01:17:13.510 --> 01:17:16.470
+the variable ls once
+
+01:17:19.130 --> 01:17:25.210
+I will get all of my five models then we will run a docker
+
+01:17:25.210 --> 01:17:32.390
+python three p-i-t-h-o-n train all h100 just
+
+01:17:34.400 --> 01:17:37.820
+because of one small dependency and
+
+01:18:13.380 --> 01:18:16.220
+yeah all of you will be able to learn a lot just by looking
+
+01:18:16.220 --> 01:18:19.840
+at this. That this is how work happens actual work happens
+
+01:18:19.840 --> 01:18:27.860
+again failed training failed element zero tensor issue again
+
+01:18:27.860 --> 01:18:31.220
+it has failed training failed element zero tensor unit
+
+01:18:31.220 --> 01:18:38.700
+required grant do not have a grade function poor model
+
+01:18:38.700 --> 01:18:43.860
+failed this time. Look on grade true it
+
+01:18:45.900 --> 01:18:46.860
+is a tensor issue.
+
+01:19:17.420 --> 01:19:21.940
+So in my initial days right so when I was a fresher I used
+
+01:19:21.940 --> 01:19:26.380
+to sit with my you know seniors inside in a company by the
+
+01:19:26.380 --> 01:19:29.860
+way right with my seniors they used to work I just used to
+
+01:19:29.860 --> 01:19:33.780
+see and I have learned a lot in that manner so it is a
+
+01:19:33.780 --> 01:19:34.980
+similar kind of a situation.
+
+01:19:43.620 --> 01:19:46.960
+Yes sir I can see the struggle and same time scared about
+
+01:19:46.960 --> 01:19:49.720
+the real world but yeah this is how real work happens
+
+01:19:49.720 --> 01:19:50.660
+instead
+
+01:19:57.790 --> 01:20:01.370
+of creating these files locally can we do the same see in
+
+01:20:01.370 --> 01:20:04.550
+local you have a vs code right you have a editor you can
+
+01:20:04.550 --> 01:20:07.710
+test it you can check it and then you can ship the code if
+
+01:20:07.710 --> 01:20:13.450
+you are going to do it in a cloud I am like this is not
+
+01:20:13.450 --> 01:20:16.550
+going to like a help you out in any way. So we
+
+01:20:20.840 --> 01:20:23.860
+develop everything in a local and then we ship everything in
+
+01:20:23.860 --> 01:20:25.440
+a cloud okay
+
+01:21:25.600 --> 01:21:30.020
+so one model done now again
+
+01:21:33.350 --> 01:21:37.750
+it is failing for my rest of the model grade function I have
+
+01:21:37.750 --> 01:21:39.410
+already changed. So I am going to change the size of code
+
+01:21:39.410 --> 01:21:40.550
+just
+
+01:22:05.920 --> 01:22:09.440
+because of this two things can
+
+01:22:24.390 --> 01:22:26.750
+we push a code in git and pull there sometime win sap
+
+01:22:26.750 --> 01:22:29.610
+corrupt files no it is not like that win sap will never
+
+01:22:29.610 --> 01:22:33.730
+corrupt the file it is just like a software so if I am doing
+
+01:22:33.730 --> 01:22:37.090
+a git so maybe it will be little bit more time taking win
+
+01:22:37.090 --> 01:22:42.570
+sap is convenient one drag and drop once my final version of
+
+01:22:42.570 --> 01:22:45.670
+code is ready then I can push it into a github repository no
+
+01:22:45.670 --> 01:22:50.590
+need to push all the you know not running code into github
+
+01:24:50.430 --> 01:24:54.030
+grade two fine okay
+
+01:24:57.870 --> 01:25:03.800
+so five model nora has device
+
+01:25:29.720 --> 01:25:34.600
+handling lsl it
+
+01:25:46.240 --> 01:25:52.740
+has created all the folders and probably we have multiple
+
+01:25:52.740 --> 01:25:56.220
+check pointings no sport
+
+01:26:51.680 --> 01:26:52.880
+okay
+
+01:27:54.670 --> 01:27:59.710
+fine guys. Issue solved and now it is able to train all the
+
+01:27:59.710 --> 01:28:03.070
+models it was just a small issue with respect to our tensors
+
+01:28:03.070 --> 01:28:08.630
+because of that required grade is equal to true that was the
+
+01:28:08.630 --> 01:28:11.770
+only thing that we had to make and after that so everything
+
+01:28:11.770 --> 01:28:15.470
+has started working perfectly fine okay
+
+01:28:19.180 --> 01:28:24.700
+so all model successfully trained total time is only 1.2
+
+01:28:24.700 --> 01:28:30.460
+minutes so technically this like has taken almost 1.5
+
+01:28:30.460 --> 01:28:34.000
+minutes. 1.5 hour for me so 1.5 hour of job in 1.2 minutes
+
+01:28:34.000 --> 01:28:37.880
+so all the models are available now now if models are
+
+01:28:37.880 --> 01:28:41.100
+available so we can try to check it with the help of apis
+
+01:28:41.100 --> 01:28:45.560
+right so now you all can test it let me run the api cler
+
+01:28:45.560 --> 01:28:47.860
+clear lsl and
+
+01:28:50.420 --> 01:28:58.860
+then python 3 api server so now you won't face any kind of a
+
+01:28:58.860 --> 01:29:03.560
+issue so this will work in your system everything is fixed
+
+01:29:03.560 --> 01:29:08.980
+for gpu okay so now you can test the api guys same api
+
+01:29:08.980 --> 01:29:15.440
+refresh and then maybe you can try to test finance model if
+
+01:29:15.440 --> 01:29:26.520
+you want so here tell me about yourself execute 404 okay so
+
+01:29:26.520 --> 01:29:32.800
+model file not found at dpo fine tune. Maybe directory has
+
+01:29:32.800 --> 01:29:34.880
+been changed. I just
+
+01:29:42.660 --> 01:29:44.560
+have to change my server file.
+
+01:30:07.620 --> 01:30:16.560
+So model is trained cd models less so these are the
+
+01:30:16.560 --> 01:30:21.560
+directory exact directory so which I have to give can
+
+01:30:35.520 --> 01:30:37.900
+we check individual model training maybe we can find error
+
+01:30:37.900 --> 01:30:40.760
+yeah now error is also fixed actually this it was the same
+
+01:30:40.760 --> 01:30:43.360
+error basically because of same error it was failing so
+
+01:30:43.360 --> 01:30:46.600
+grade is equal to true which we had to make and after that
+
+01:30:46.600 --> 01:30:49.320
+like grade is equal to true that was the only issue
+
+01:32:25.380 --> 01:32:30.520
+hr fine tuned sales fine tuned pre fine tuned marketing fine
+
+01:32:30.520 --> 01:32:32.340
+tuned okay secure
+
+01:32:35.320 --> 01:32:41.020
+lot of fine tuned fine api
+
+01:32:49.340 --> 01:32:51.040
+server hmm
+
+01:33:35.740 --> 01:33:39.340
+now guys so the only problem with respect to api was it was
+
+01:33:39.340 --> 01:33:43.060
+pointing out to a different directory which was changed so
+
+01:33:43.060 --> 01:33:45.960
+now you can try to check all the models all the models are
+
+01:33:45.960 --> 01:33:49.340
+working on the same url so everything is public everything
+
+01:33:49.340 --> 01:33:53.720
+is live. Not using a docker for now. But yeah using a fast
+
+01:33:53.720 --> 01:33:56.780
+api directly docker issue will be even fixed that is not a
+
+01:33:56.780 --> 01:34:00.920
+big issue if something was running in my local so it will I
+
+01:34:00.920 --> 01:34:04.680
+can make it running everywhere so yeah now you can check
+
+01:34:04.680 --> 01:34:08.000
+sales model finance model hr model marketing model all of
+
+01:34:08.000 --> 01:34:12.300
+these models are going to work for us and yeah all of you
+
+01:34:12.300 --> 01:34:16.120
+are going to get a good inferencing by the way so okay sales
+
+01:34:16.120 --> 01:34:19.740
+is giving 500 internal error sales is giving internal error
+
+01:34:19.740 --> 01:34:23.680
+so maybe sales. This model is having an issue finance
+
+01:34:23.680 --> 01:34:26.920
+working fine I can see marketing working fine healthcare
+
+01:34:26.920 --> 01:34:31.660
+working fine okay sales is giving an issue fine got it so
+
+01:34:31.660 --> 01:34:35.220
+maybe we will have to change a location of the sales model
+
+01:34:35.220 --> 01:34:40.480
+that's it directory of the sales model okay so all the all
+
+01:34:40.480 --> 01:34:43.320
+the other models are working fine. The only issue with the
+
+01:34:43.320 --> 01:34:45.960
+sales model is maybe I can open up a duplicate session for
+
+01:34:45.960 --> 01:34:57.700
+this one u b u n t u. Okay. CD models okay
+
+01:34:59.910 --> 01:35:03.890
+so we have a sales fine tuned and sales preferred fine tune
+
+01:35:03.890 --> 01:35:10.070
+we have like two directory over here so only sales is giving
+
+01:35:10.070 --> 01:35:15.150
+me an issue as I can see like in my API request so we have
+
+01:35:15.150 --> 01:35:18.110
+like a sales here okay
+
+01:35:39.550 --> 01:35:45.470
+fine let me check where my sales is pointing to sales
+
+01:35:45.470 --> 01:35:47.710
+preferred fine tune. Okay.
+
+01:35:55.280 --> 01:36:01.920
+And I have that directory I believe sales preferred fine
+
+01:36:01.920 --> 01:36:02.320
+tuned.
+
+01:38:03.180 --> 01:38:06.300
+So even sales issue is fixed as you can see so basically it
+
+01:38:06.300 --> 01:38:09.300
+was just a directory issue I have changed the directory
+
+01:38:09.300 --> 01:38:12.860
+which it was pointing to a mall directory and yeah so even
+
+01:38:12.860 --> 01:38:17.820
+sales is fixed. So now the entire code base is fixed let me
+
+01:38:17.820 --> 01:38:20.260
+tell you the summary of this how you will be able to execute
+
+01:38:20.260 --> 01:38:22.660
+it and how you will be able to train it inside your system
+
+01:38:22.660 --> 01:38:27.060
+so once your GPU is ready. Very first part is that that let
+
+01:38:27.060 --> 01:38:30.500
+me go into my parent directory and listen up carefully so
+
+01:38:30.500 --> 01:38:33.320
+what you have to do so you don't have to do much by the way
+
+01:38:33.320 --> 01:38:37.940
+the very first part that you have to execute is a setup h100
+
+01:38:37.940 --> 01:38:41.800
+complete dot sh that's it right so setup file you have to
+
+01:38:41.800 --> 01:38:44.360
+execute and then for testing purposes you have to execute
+
+01:38:44.360 --> 01:38:47.900
+basically api server dot py file this is going to create
+
+01:38:47.900 --> 01:38:50.460
+your system this is going to basically install all the
+
+01:38:50.460 --> 01:38:53.920
+requirements whatever requirements that we have to execute.
+
+01:38:53.940 --> 01:38:56.420
+You have to install it will be done by only this particular
+
+01:38:56.420 --> 01:39:00.160
+file so I have already updated this one and then you just
+
+01:39:00.160 --> 01:39:03.060
+have to call this api server so that your fast api will be
+
+01:39:03.060 --> 01:39:07.040
+up and running right your fast api. So these are the only
+
+01:39:07.040 --> 01:39:11.680
+two file execution that you have to do nothing else but yeah
+
+01:39:11.680 --> 01:39:14.280
+so if you have to do just a model inferencing but you have
+
+01:39:14.280 --> 01:39:17.220
+to do a training as well so to train all the models there is
+
+01:39:17.220 --> 01:39:21.260
+a file called as train all h100 py file so first do a setup
+
+01:39:21.260 --> 01:39:26.400
+now if model is available. So you can like a directly hit
+
+01:39:26.400 --> 01:39:30.280
+the api if model is not available then set up then train
+
+01:39:31.100 --> 01:39:34.760
+basically and then you have to run the api server so that
+
+01:39:34.760 --> 01:39:36.800
+fast api server will be up and running and you will be able
+
+01:39:36.800 --> 01:39:41.860
+to do a testing with any any of these things yeah. So this
+
+01:39:41.860 --> 01:39:44.360
+file I am going to share with all of you guys in your free
+
+01:39:44.360 --> 01:39:47.980
+time so just try to set up and maybe you can spend like a 15
+
+01:39:47.980 --> 01:39:51.780
+20 minute of time because issue is fixed in my system in my
+
+01:39:51.780 --> 01:39:55.080
+GPU. So. So obviously it will not give you an issue that
+
+01:39:55.080 --> 01:39:59.420
+there is a very high chance you all will be able to execute
+
+01:39:59.420 --> 01:40:03.880
+it just by running the code just running just three files
+
+01:40:03.880 --> 01:40:07.940
+one is a setup file and one is a train file and one is a api
+
+01:40:07.940 --> 01:40:11.920
+server dot py file but rest is same same that we have
+
+01:40:11.920 --> 01:40:12.800
+discussed yeah.
+
+01:40:15.620 --> 01:40:21.820
+So here let me share this entire code base with all of you.
+
+01:40:22.160 --> 01:40:22.680
+Where
+
+01:40:25.880 --> 01:40:29.100
+is my vs code. Where is my vs code. Close
+
+01:40:34.600 --> 01:40:36.780
+this copy
+
+01:40:39.210 --> 01:40:40.750
+path pull
+
+01:40:55.220 --> 01:41:03.440
+fine tuning or fine tuning gp fine tuning underscore in
+
+01:41:03.440 --> 01:41:06.140
+underscore GPU and
+
+01:41:11.670 --> 01:41:15.950
+for now I am uploading this entire file inside your system
+
+01:41:15.950 --> 01:41:21.310
+in a previous class itself. So in a today's class resource
+
+01:41:21.310 --> 01:41:23.650
+section you all will be able to find out this files.
+
+01:42:25.860 --> 01:42:29.540
+Okay guys. So. made this file available inside your
+
+01:42:30.180 --> 01:42:33.000
+yesterday's lecture. So if you will go inside the resource
+
+01:42:33.000 --> 01:42:35.740
+you will be able to find out another file called as fine
+
+01:42:35.740 --> 01:42:38.940
+tuning in gpu.gif file. So yeah everything is running in my
+
+01:42:38.940 --> 01:42:41.760
+system. You just have to run three files. One is setup one
+
+01:42:41.760 --> 01:42:45.040
+is train and one is basically launch the API. That's it.
+
+01:42:45.120 --> 01:42:50.000
+After doing like a after launching your machine in any like
+
+01:42:50.000 --> 01:42:54.100
+a gpu platform. So that's it and everything is going to
+
+01:42:54.100 --> 01:42:58.280
+work. Has he has changed the directory in that was a
+
+01:42:58.280 --> 01:43:01.000
+directory issue. Isn't it sir? Yes. Yeah. So I have just
+
+01:43:01.000 --> 01:43:04.960
+changed the directory in terms of API inferencing or model
+
+01:43:04.960 --> 01:43:05.400
+inferencing.
+
+01:43:11.440 --> 01:43:15.320
+Please explain pointing to train.py versus train.sh py is
+
+01:43:15.320 --> 01:43:19.480
+python file. sh is basically linux file. So any file
+
+01:43:19.480 --> 01:43:22.380
+starting ending with sh is basically it's a linux. It's a
+
+01:43:22.380 --> 01:43:26.880
+cell script basically. Dot py means it's a python file. So
+
+01:43:26.880 --> 01:43:29.060
+if you have to run some linux command. So in that case we
+
+01:43:29.060 --> 01:43:32.120
+keep everything inside sh or you can directly even type a sh
+
+01:43:32.120 --> 01:43:36.600
+linux command. The way I'm doing it like mkdir or ls or lsl
+
+01:43:36.600 --> 01:43:43.000
+or ch mode anything. For mac it's going to be same. So mac
+
+01:43:43.000 --> 01:43:45.360
+is basically having a linux based kernel.
+
+01:43:49.240 --> 01:43:53.480
+Please help me to understand train all will download and
+
+01:43:53.480 --> 01:43:57.040
+model train as well. So basically train all h100 that we
+
+01:43:57.040 --> 01:43:59.960
+have over here. So I think I have already explained in my
+
+01:43:59.960 --> 01:44:04.100
+previous session that what this file is doing. So this file
+
+01:44:04.100 --> 01:44:06.980
+is not doing anything. Different. This file is trying to
+
+01:44:06.980 --> 01:44:11.440
+call all of these files. Right. The dpo fine tuning laura
+
+01:44:11.440 --> 01:44:14.380
+fine tuning quora preferred fine tuning all together in one
+
+01:44:14.380 --> 01:44:18.060
+single place. That's it. So and it's trying to run one by
+
+01:44:18.060 --> 01:44:21.460
+one one by one all of these files. That's it. This is
+
+01:44:21.460 --> 01:44:25.280
+something that my train all h100 is doing. If I have to do a
+
+01:44:25.280 --> 01:44:28.480
+training all together. Right. So if I have to train 5, 6, 10
+
+01:44:28.480 --> 01:44:32.660
+models all together. Otherwise we have our individual files
+
+01:44:32.660 --> 01:44:35.780
+available over here. So if I'm just looking for a dpo just
+
+01:44:35.780 --> 01:44:39.140
+looking for laura just looking for a qlaura or preferred I
+
+01:44:39.140 --> 01:44:41.940
+can directly call python and this file name the way I'm
+
+01:44:41.940 --> 01:44:44.740
+calling this train all simple. So I can go with the
+
+01:44:44.740 --> 01:44:48.520
+individual training. I can go with the like a train all.
+
+01:44:48.640 --> 01:44:50.920
+That's the reason I have created like a train all. So that I
+
+01:44:50.920 --> 01:44:54.500
+can like a train all the 5 models in one single go.
+
+01:44:58.170 --> 01:45:02.170
+Okay. So just just do it guys once. I know all of you are
+
+01:45:02.170 --> 01:45:04.250
+going to face an issue. I know some of you are feeling
+
+01:45:04.250 --> 01:45:08.570
+overwhelmed. That is completely okay. That happens. Not
+
+01:45:08.570 --> 01:45:11.270
+nothing new basically. But unless and until you are not
+
+01:45:11.270 --> 01:45:15.410
+going to try once on your own you will not be able to
+
+01:45:15.410 --> 01:45:19.570
+understand much. Today I have not done something different.
+
+01:45:19.730 --> 01:45:22.310
+So I have I'm just trying to like you know do a setup in my
+
+01:45:22.310 --> 01:45:25.390
+GPU so that you know I can do a training within a minute of
+
+01:45:25.390 --> 01:45:28.190
+time which we have done 1.3 minute or something it has taken
+
+01:45:28.190 --> 01:45:32.590
+for us. Ideally which will take around a 2 hour 3 hour of
+
+01:45:32.590 --> 01:45:35.430
+time in your machine or in my machine. Right. For the same
+
+01:45:35.430 --> 01:45:38.490
+epoch for the same parameter. So I have not even changed the
+
+01:45:38.490 --> 01:45:41.610
+parameter. If I have to train for maybe a 100 200 epoch. So
+
+01:45:41.610 --> 01:45:44.510
+again in my local system maybe it will take a couple of
+
+01:45:44.510 --> 01:45:48.090
+days. But here so you will be able to do it in just a couple
+
+01:45:48.090 --> 01:45:51.090
+of minute or maybe within an hour you will be able to do it
+
+01:45:51.090 --> 01:45:54.610
+even for a very very big epoch. That is the advantage. And
+
+01:45:54.610 --> 01:45:56.630
+that was the whole idea behind showing you this entire
+
+01:45:56.630 --> 01:46:00.850
+things entire setup. And even when we try to do a training
+
+01:46:00.850 --> 01:46:04.850
+we do a similar kind of a thing. So we always go ahead with
+
+01:46:04.850 --> 01:46:11.110
+the GPU approach not with the local. So local yes we just
+
+01:46:11.110 --> 01:46:14.070
+like to use it for a testing purpose whenever we are
+
+01:46:14.070 --> 01:46:16.690
+building a code whenever we are just starting ahead with the
+
+01:46:16.690 --> 01:46:20.310
+project. But finally when it comes to a training it always
+
+01:46:20.310 --> 01:46:25.970
+happens on these kind of a system as simple as that. So
+
+01:46:25.970 --> 01:46:31.390
+first run this setup.sh then train all the then train.sh and
+
+01:46:31.390 --> 01:46:35.490
+then API server.py file. Yeah that is a flow. You can call
+
+01:46:35.490 --> 01:46:40.010
+setup.sh you can call train.py file. or train all sh both is
+
+01:46:40.010 --> 01:46:44.290
+same. One is a like a Linux script and one is a Python file
+
+01:46:44.290 --> 01:46:48.510
+and then API server.py file. That is the only like things
+
+01:46:48.510 --> 01:46:51.650
+you have to do. So we do training in GPU then where do they
+
+01:46:51.650 --> 01:46:55.050
+keep the same model and influence it. Same model is here
+
+01:46:55.050 --> 01:46:57.970
+right. Same model is in the directory. Whatever directory
+
+01:46:57.970 --> 01:47:00.710
+you give will be in that directory. So let's suppose we are
+
+01:47:00.710 --> 01:47:03.370
+able to get this model right. And if I have to migrate this
+
+01:47:03.370 --> 01:47:06.830
+model to some other server. I can do it. I can like just do
+
+01:47:06.830 --> 01:47:10.050
+a scp and with the help of scp I can migrate to any other
+
+01:47:10.050 --> 01:47:13.090
+server that I want. If I would like to keep it here. So for
+
+01:47:13.090 --> 01:47:16.270
+now my model is available here itself right. If I will go
+
+01:47:16.270 --> 01:47:19.610
+into my cd models and if I do lsl everything is available
+
+01:47:19.610 --> 01:47:23.550
+see. So if I will go into my finance directory all my files
+
+01:47:23.550 --> 01:47:26.210
+are available. All my checkpointing files are available for
+
+01:47:26.210 --> 01:47:29.510
+a finance. All of these files. So this is my model. This is
+
+01:47:29.510 --> 01:47:32.030
+my checkpointing file and this is the model that I have.
+
+01:47:32.690 --> 01:47:37.610
+Basically. Yeah. So everything like will be available in
+
+01:47:37.610 --> 01:47:41.470
+your local directory and then depends where you are going to
+
+01:47:41.470 --> 01:47:44.530
+keep it. So wherever you are going to keep it. You will call
+
+01:47:44.530 --> 01:47:46.550
+an API from that place. This is what I am doing.
+
+01:47:52.170 --> 01:47:56.790
+Any other question guys for me. In want to deploy this on
+
+01:47:56.790 --> 01:47:59.370
+our server then we need to copy a trained model on our
+
+01:47:59.370 --> 01:48:01.970
+server. Yeah. So basically my models are available in my
+
+01:48:01.970 --> 01:48:06.070
+model directory. You can do a scp from here. So that you
+
+01:48:06.070 --> 01:48:08.450
+know you will be able to copy from here to any other server
+
+01:48:08.450 --> 01:48:09.170
+of your choice.
+
+01:48:16.320 --> 01:48:19.320
+Where do you change the value to true for cache or something
+
+01:48:19.320 --> 01:48:22.080
+in the code. It was not for a cache basically. It was for a
+
+01:48:22.080 --> 01:48:26.220
+tensor issue. It was like not able to understand the
+
+01:48:26.220 --> 01:48:31.950
+dependencies. Okay. Any other question guys. To get a best
+
+01:48:31.950 --> 01:48:35.130
+model we follow the same precision recall blue square etc.
+
+01:48:35.250 --> 01:48:38.730
+Right. In general. In general. But yeah. So even we have a
+
+01:48:38.730 --> 01:48:41.130
+task specific you know evaluation criteria.
+
+01:48:43.930 --> 01:48:47.830
+Now if docker part was success then this H100 can be shut
+
+01:48:47.830 --> 01:48:50.810
+down after complete folder extraction via docker. We can
+
+01:48:50.830 --> 01:48:57.910
+save a billion correct. Yeah. But if your client or if your
+
+01:48:57.910 --> 01:49:00.270
+requirement says that you have to keep your model up and
+
+01:49:00.270 --> 01:49:03.970
+running then you have to like keep it up and running. Yeah.
+
+01:49:07.280 --> 01:49:10.940
+So again. So we can even try to use a WinSAP. Models are
+
+01:49:10.940 --> 01:49:14.260
+already available here. Right. So maybe if you have to copy
+
+01:49:14.260 --> 01:49:17.380
+from this location to your windows location just drag and
+
+01:49:17.380 --> 01:49:20.220
+drop and then your model will be copied. This is how easy it
+
+01:49:20.220 --> 01:49:24.360
+is. But it will be like very time taking process. So if
+
+01:49:24.360 --> 01:49:27.840
+because file size is like a very very huge. But yeah you can
+
+01:49:27.840 --> 01:49:29.960
+you can copy just drag and drop and you will be able to copy
+
+01:49:29.960 --> 01:49:33.200
+into your local system. And then whenever you want maybe
+
+01:49:33.200 --> 01:49:36.440
+after one year you want to like use this model you will be
+
+01:49:36.440 --> 01:49:39.880
+able to use it once trained. Or maybe you can try to make
+
+01:49:39.880 --> 01:49:42.320
+this model public to everyone that okay I have trained this
+
+01:49:42.320 --> 01:49:46.280
+model and now go and just use it. So the way hugging faces
+
+01:49:46.280 --> 01:49:49.920
+release a model or the way any open source model works in
+
+01:49:49.920 --> 01:49:52.500
+this entire world. So everyone try to release the model
+
+01:49:52.500 --> 01:49:55.420
+right. Now your models are available here. You can go and
+
+01:49:55.420 --> 01:50:00.980
+you can release this model. Simple. Yeah. So this is how in
+
+01:50:00.980 --> 01:50:04.180
+reality things happen. So even we are able to create the
+
+01:50:04.180 --> 01:50:07.080
+model and we can make it open source that okay we have fine
+
+01:50:07.080 --> 01:50:10.460
+tuned the model on small data set. Maybe you can do it on a
+
+01:50:10.460 --> 01:50:14.580
+big data set and then you can like do it. Same thing we
+
+01:50:14.580 --> 01:50:18.160
+follow in our office dev environment and for UAT and prod
+
+01:50:18.600 --> 01:50:20.820
+gives same instruction. Yeah.
+
+01:50:24.890 --> 01:50:28.070
+Once fine tuning is done can we move the model in S3. You
+
+01:50:28.070 --> 01:50:32.130
+can move anywhere. You can move into maybe like a data lake.
+
+01:50:32.290 --> 01:50:36.130
+You can move into S3. In any file system you can move it.
+
+01:50:36.270 --> 01:50:41.030
+There won't be any kind of issue at all. You can move it
+
+01:50:41.030 --> 01:50:46.630
+even inside like this directory. That's okay. Yeah. So fine
+
+01:50:46.630 --> 01:50:49.830
+guys this is it. I have already uploaded the code. Try once.
+
+01:50:49.990 --> 01:50:53.990
+At least once in a life you all should do it. Right. So that
+
+01:50:53.990 --> 01:50:58.390
+you can write it down inside your you know resume that I
+
+01:50:58.390 --> 01:51:01.490
+have done a fine tuning on a GPU and this is something that
+
+01:51:01.490 --> 01:51:05.650
+I used to follow all the time and then people will ask you a
+
+01:51:05.650 --> 01:51:08.390
+question that what kind of issues that you have faced you
+
+01:51:08.390 --> 01:51:11.610
+will be able to talk about it. Right. In real. Right. And
+
+01:51:11.610 --> 01:51:17.290
+even in real this is how things happens. Will docker image
+
+01:51:17.290 --> 01:51:20.650
+contain models as well. So I think yes obviously. So in case
+
+01:51:20.650 --> 01:51:23.870
+of docker image so it copies all the folder into a docker
+
+01:51:23.870 --> 01:51:27.050
+location means into that box. Locker container.
+
+01:51:31.020 --> 01:51:34.300
+It copies everything all of your file. So technically it is
+
+01:51:34.300 --> 01:51:37.340
+it try to replicate everything that is running in your local
+
+01:51:37.340 --> 01:51:43.260
+in itself. Okay. That's it guys. That's it from my side.
+
+01:51:43.800 --> 01:51:46.760
+Hope all of you have liked this class. Now if you have any
+
+01:51:46.760 --> 01:51:48.720
+kind of a question so you can raise your hand so that I can
+
+01:51:48.720 --> 01:51:51.340
+answer and then we can go for the closer of today's class.
+
+01:51:51.820 --> 01:51:55.380
+Next class I will try to start with MCPs and A2A protocol
+
+01:51:55.380 --> 01:51:59.220
+basically. So MCP is something that we will try to learn and
+
+01:51:59.220 --> 01:52:01.980
+then after that A2A and then like so on. Yeah. Go ahead
+
+01:52:01.980 --> 01:52:05.100
+Uday. It was a requirement from Uday. Uday told me yesterday
+
+01:52:05.100 --> 01:52:08.160
+that can we discuss this so I said okay fine let's do it.
+
+01:52:08.280 --> 01:52:12.540
+So. Sir first of all thanks sir because this is very
+
+01:52:12.540 --> 01:52:15.960
+important for corporate and best best class sir. Thanks.
+
+01:52:15.980 --> 01:52:18.980
+Thanks for considering the request sir. I got to learn a
+
+01:52:18.980 --> 01:52:24.360
+lot. I always stuck here that You learn maximum things by
+
+01:52:24.360 --> 01:52:27.240
+looking at it. I mean like some different things don't
+
+01:52:27.240 --> 01:52:30.220
+happen. I mean same training same model everything is same.
+
+01:52:30.260 --> 01:52:34.940
+But there is a kind of a struggle that we go through when we
+
+01:52:34.940 --> 01:52:37.840
+actually try to run so that is the learning and apart from
+
+01:52:37.840 --> 01:52:41.500
+that code is same. There were no changes in code. Because
+
+01:52:41.500 --> 01:52:44.320
+sir I am from mechanical background so there is a barrier
+
+01:52:44.320 --> 01:52:47.100
+architectural wise that how this training will be done in
+
+01:52:47.100 --> 01:52:52.720
+GPU. Sir if you just once tell us the whole flow once that
+
+01:52:52.720 --> 01:52:56.680
+how it is done in corporate from Github that our repo runs.
+
+01:52:57.240 --> 01:53:01.440
+How do we fine tune it and then again use it we will tell
+
+01:53:01.440 --> 01:53:04.120
+you the whole flow once then it will be very easy. We are
+
+01:53:04.120 --> 01:53:07.120
+also able to use it. See what is here if I am going to share
+
+01:53:07.120 --> 01:53:12.340
+my screen once again so see what will happen anyhow my API
+
+01:53:12.340 --> 01:53:15.920
+is up and running. See people are able to hit my API so
+
+01:53:15.920 --> 01:53:21.560
+obviously what I have done so let me go through this folder
+
+01:53:21.560 --> 01:53:21.920
+hmm
+
+01:53:26.230 --> 01:53:30.530
+LSL so first of all what we will have to do we have to
+
+01:53:30.530 --> 01:53:34.410
+launch our GPU we have to launch a VM now once we will be
+
+01:53:34.410 --> 01:53:37.950
+able to launch a VM then we have to basically do a basic
+
+01:53:37.950 --> 01:53:42.550
+setup. Now let me show you my setup.py file for a real so
+
+01:53:42.550 --> 01:53:45.110
+that most of you will be able to understand what is there
+
+01:53:45.110 --> 01:53:51.170
+inside this setup.py file sorry setup.sh file so here if you
+
+01:53:51.170 --> 01:53:54.170
+will look into my setup.sh file I am not doing anything it
+
+01:53:54.170 --> 01:53:57.350
+is basically a Linux like a sales script that is been
+
+01:53:57.350 --> 01:54:00.210
+written echo means print by the way right so wherever you
+
+01:54:00.210 --> 01:54:02.690
+are able to see echo it simply means that it will print
+
+01:54:02.690 --> 01:54:05.510
+something in your console and here we have written efels
+
+01:54:05.510 --> 01:54:08.470
+efels kind of a things so first of all we are trying to
+
+01:54:08.470 --> 01:54:12.990
+check whether we have a h100 GPU or not right so if GPU is
+
+01:54:12.990 --> 01:54:15.990
+available so we are trying to like you know just show you
+
+01:54:15.990 --> 01:54:20.130
+the message that okay GPU is available and then what we are
+
+01:54:20.130 --> 01:54:22.890
+trying to do so we are trying to install the packages so
+
+01:54:22.890 --> 01:54:25.910
+basically I will be having a blank system so when I am going
+
+01:54:25.910 --> 01:54:28.370
+to launch a GPU for the very first time there will be
+
+01:54:28.370 --> 01:54:31.290
+nothing nothing installed inside that so obviously I have to
+
+01:54:31.290 --> 01:54:33.850
+install each and everything so to install each and
+
+01:54:33.850 --> 01:54:36.950
+everything inside a Linux machine sudo apt install so apt
+
+01:54:36.950 --> 01:54:41.230
+install and python 3.1 pip virtual environment git curl w
+
+01:54:41.230 --> 01:54:44.010
+git everything which is essential right maybe in some
+
+01:54:44.010 --> 01:54:46.430
+project you need 10 more things so you will try to install
+
+01:54:46.430 --> 01:54:48.510
+so this is just an installation command it is going to
+
+01:54:48.510 --> 01:54:52.170
+execute now once this is done so once basic installation is
+
+01:54:52.170 --> 01:54:54.670
+done then we are trying to install a docker if I need docker
+
+01:54:54.670 --> 01:54:57.750
+if I don't need docker then I will not install so I need a
+
+01:54:57.750 --> 01:55:00.090
+docker so I am trying to install a docker now to install a
+
+01:55:00.090 --> 01:55:03.550
+docker only this command is going to work right so one will
+
+01:55:03.550 --> 01:55:06.530
+like get a docker and then it will try to install a docker
+
+01:55:06.530 --> 01:55:09.250
+rest is just a echo as you can see right just rest is just a
+
+01:55:09.250 --> 01:55:13.530
+echo now once I will be able to install a docker then we
+
+01:55:13.530 --> 01:55:16.490
+have to basically install Nvidia dependency basically my GPU
+
+01:55:16.490 --> 01:55:19.830
+dependency I have to basically install over here right for a
+
+01:55:19.830 --> 01:55:22.630
+docker so this is what I am trying to do in terms of like
+
+01:55:22.630 --> 01:55:26.030
+curl means I am downloading all those requirements and then
+
+01:55:26.030 --> 01:55:28.510
+I am trying to update my packages and then I am trying to
+
+01:55:28.510 --> 01:55:30.790
+update my Nvidia container and then I am trying to again
+
+01:55:30.790 --> 01:55:33.610
+restart my docker so that my docker will be having a GPU
+
+01:55:33.610 --> 01:55:38.550
+access here this command will be done now so we are just
+
+01:55:38.550 --> 01:55:40.570
+trying to test over here that okay everything is working
+
+01:55:40.570 --> 01:55:43.730
+fine or not with respect to a Nvidia configuration that we
+
+01:55:43.730 --> 01:55:47.010
+have done for a docker then we are trying to create a
+
+01:55:47.010 --> 01:55:49.370
+virtual environment the way we are used to create a virtual
+
+01:55:49.370 --> 01:55:51.530
+environment right although I have not used it because even
+
+01:55:51.530 --> 01:55:54.230
+in my base environment I have python 3.10 right which I have
+
+01:55:54.230 --> 01:55:57.810
+installed in a very first place here itself right even here
+
+01:55:57.810 --> 01:56:03.510
+so this is a base environment python installation so I can
+
+01:56:03.510 --> 01:56:05.890
+go with my base I can go with the virtual environment same
+
+01:56:05.890 --> 01:56:09.050
+thing we do even in local system so here I am trying to do
+
+01:56:09.050 --> 01:56:12.550
+that installation and then like other python dependency what
+
+01:56:12.550 --> 01:56:16.670
+is the dependency so this fast api uvcon numpy pandas scikit
+
+01:56:16.670 --> 01:56:20.150
+and all those like kuda library I am trying to like install
+
+01:56:20.150 --> 01:56:25.070
+a python dependencies so once this is basically like a done
+
+01:56:25.070 --> 01:56:29.510
+right so we are like trying to set all those variables which
+
+01:56:29.510 --> 01:56:32.090
+is required for like my my particular test environment right
+
+01:56:32.110 --> 01:56:33.530
+so we are going to do the training with respect to python
+
+01:56:33.530 --> 01:56:36.270
+file and everyone and then we are giving a ch mode execution
+
+01:56:36.270 --> 01:56:42.390
+access to it and then we are going for a complete setup so
+
+01:56:42.390 --> 01:56:47.710
+this is a file which is helping me out to do a setup in a
+
+01:56:47.710 --> 01:56:52.290
+single sort if you want to do a setup in a step-by-step
+
+01:56:52.290 --> 01:56:56.090
+manner again you can you can skip this file execution that's
+
+01:56:56.090 --> 01:56:59.870
+completely fine so what you can do just go to this file and
+
+01:56:59.870 --> 01:57:03.690
+then start from here install execute this command first then
+
+01:57:04.230 --> 01:57:07.390
+execute this command first leave the echo part right so
+
+01:57:07.390 --> 01:57:09.510
+execute this command means first of all environment setup
+
+01:57:09.950 --> 01:57:13.410
+then docker installation then nvidia docker installation
+
+01:57:13.410 --> 01:57:17.030
+dependency so curl command leave the echo part just like
+
+01:57:17.030 --> 01:57:19.970
+execute sudo and curl so that it will download and it will
+
+01:57:19.970 --> 01:57:23.430
+try to install and then like a python virtual environment
+
+01:57:23.430 --> 01:57:26.890
+created the way we try to create it in my local system and
+
+01:57:26.890 --> 01:57:31.610
+yeah again I can I can try to you know copy this one so okay
+
+01:57:31.610 --> 01:57:38.230
+let me like just copy this one and maybe I can go to Yuri
+
+01:57:38.230 --> 01:57:41.950
+over here and I say that that okay so
+
+01:57:48.990 --> 01:57:53.130
+I'll just copy and paste everything and I'll say that that I
+
+01:57:53.130 --> 01:58:02.490
+don't want to run this all together do one thing for me give
+
+01:58:02.490 --> 01:58:07.530
+me all the steps and command in
+
+01:58:09.770 --> 01:58:15.690
+individual manner yeah so let's send this one fine
+
+01:58:21.130 --> 01:58:25.310
+so obviously GPT will be able to understand you are saving
+
+01:58:25.310 --> 01:58:27.610
+your time right you are saving your time so it is it is
+
+01:58:27.610 --> 01:58:30.330
+giving my individual command right and as you can see it has
+
+01:58:30.330 --> 01:58:33.790
+given you the same command that I told you yeah so you know
+
+01:58:33.790 --> 01:58:38.530
+step number one no need to check if h100 you know if h100 is
+
+01:58:38.530 --> 01:58:41.410
+available nvidia smi is showing you the things no need to
+
+01:58:41.410 --> 01:58:44.650
+check these things simply start from here right sudo apt
+
+01:58:44.650 --> 01:58:47.230
+install y this this this install then docker then install
+
+01:58:47.230 --> 01:58:51.050
+nvidia container toolkit then test the docker if everything
+
+01:58:51.050 --> 01:58:53.350
+is going to work fine then test will work fine we are not
+
+01:58:53.350 --> 01:58:56.290
+doing anything except echo over here then create a virtual
+
+01:58:56.290 --> 01:58:59.370
+python environment simple right then install the
+
+01:58:59.370 --> 01:59:02.070
+dependencies for that environment and then like a set up a
+
+01:59:02.070 --> 01:59:05.510
+project directory by the way and then like a create h100 so
+
+01:59:05.510 --> 01:59:09.250
+exactly same thing same bifurcation of each and every line
+
+01:59:09.250 --> 01:59:11.970
+of a command it has given to you no need to do anything you
+
+01:59:11.970 --> 01:59:14.470
+don't need to execute this file altogether one by one step
+
+01:59:14.470 --> 01:59:18.170
+by step just execute all of these commands as simple as that
+
+01:59:18.170 --> 01:59:22.410
+right like I said you can skip the echo part now this is
+
+01:59:22.410 --> 01:59:25.670
+going to help me out in terms of preparing my system means
+
+01:59:25.670 --> 01:59:29.290
+installing all the prerequisite the way we do it with
+
+01:59:29.290 --> 01:59:32.570
+respect to requirement.txt file or any other files once this
+
+01:59:32.570 --> 01:59:35.350
+is done then we are trying to call what so then we are
+
+01:59:35.350 --> 01:59:39.110
+trying to call basically train all h100 dot pi file or maybe
+
+01:59:39.110 --> 01:59:42.770
+you can try to call dot sh file so sh is nothing but your
+
+01:59:42.770 --> 01:59:46.430
+like a cell script based and python is not pi file is
+
+01:59:46.430 --> 01:59:49.230
+nothing but a python based you can call either of these what
+
+01:59:49.230 --> 01:59:52.850
+we are doing internally into this one so if you will go and
+
+01:59:52.850 --> 01:59:56.650
+check basically in any of these files for example I'm
+
+01:59:56.650 --> 01:59:59.190
+talking about let's suppose these files right so we have to
+
+01:59:59.190 --> 02:00:02.730
+do a training so here we are not doing anything different it
+
+02:00:02.730 --> 02:00:05.790
+is getting into my directory which directory the directory
+
+02:00:05.790 --> 02:00:08.050
+where I have a code for fine-tuning right different
+
+02:00:08.050 --> 02:00:10.190
+different code so getting in directory and then executing
+
+02:00:10.190 --> 02:00:13.190
+that code with all the parameter whatever parameter is
+
+02:00:13.190 --> 02:00:17.230
+required so basically to execute this fine-tuning I need
+
+02:00:17.230 --> 02:00:20.950
+this data set I need basically a location where I will save
+
+02:00:20.950 --> 02:00:24.310
+my model epoch-basis learning rate whatever so this is the
+
+02:00:24.310 --> 02:00:28.290
+only command we are trying to execute technically right even
+
+02:00:28.290 --> 02:00:30.490
+if you'll go and check your dot pi file we are not doing
+
+02:00:30.490 --> 02:00:33.990
+anything different to here so same we are trying to call all
+
+02:00:33.990 --> 02:00:37.270
+together this one if I don't want to do it that's also fine
+
+02:00:37.270 --> 02:00:39.990
+I can simply call python 3 dpo fine-tuning dot pi file
+
+02:00:40.010 --> 02:00:43.890
+python 3 laura fine-tuning dot pi file python 3 or python
+
+02:00:43.890 --> 02:00:47.030
+preferred fine-tuning dot pi file so one by one one by one
+
+02:00:47.030 --> 02:00:50.150
+also I can do a training and I will be able to save the
+
+02:00:50.150 --> 02:00:53.450
+model but this is a file I have created so that I will be
+
+02:00:53.450 --> 02:00:55.930
+able to save some time and I will be able to test it and
+
+02:00:55.930 --> 02:01:00.510
+debug it all together so technically it's like nothing once
+
+02:01:00.510 --> 02:01:04.530
+it will be done so it is going to save a model inside a
+
+02:01:04.530 --> 02:01:07.950
+model directory so like a file by file whatever directory
+
+02:01:07.950 --> 02:01:09.990
+time that you have given it will save the model so this is
+
+02:01:10.010 --> 02:01:11.850
+going to save the model now once model will be saved we are
+
+02:01:11.850 --> 02:01:15.390
+trying to call what we are trying to call our API so API is
+
+02:01:15.390 --> 02:01:17.870
+nothing but like yesterday we have already discussed about
+
+02:01:17.870 --> 02:01:21.770
+it right so it is going to basically okay what what has
+
+02:01:21.770 --> 02:01:25.110
+happened start the API okay API server so API server dot pi
+
+02:01:25.110 --> 02:01:28.930
+file we are trying to call and here so we are doing what HR
+
+02:01:28.930 --> 02:01:31.970
+model finance model sales model means we are just trying to
+
+02:01:31.970 --> 02:01:34.210
+hit this directory and exposing it to the outer world so
+
+02:01:34.210 --> 02:01:38.070
+that anyone can pass the data anyone can do a curl anyone
+
+02:01:38.070 --> 02:01:41.510
+can like a hit my API's and they will be able to you know
+
+02:01:41.510 --> 02:01:46.410
+inference with respect to any of my model yeah next step
+
+02:01:46.410 --> 02:01:49.590
+what you can do so maybe next step if you have to build that
+
+02:01:49.590 --> 02:01:53.230
+as a product so maybe next step wise the way we have done
+
+02:01:53.230 --> 02:01:55.830
+that we are giving you a multi-model access over here right
+
+02:01:55.830 --> 02:01:59.350
+HR model finance model sales model this model you can you
+
+02:01:59.350 --> 02:02:02.450
+can just create a beautiful UI interface over here and then
+
+02:02:02.450 --> 02:02:05.090
+whenever I am going to select this model it is going to hit
+
+02:02:05.710 --> 02:02:08.430
+let's suppose sales model when I'm whenever I'm going to
+
+02:02:08.430 --> 02:02:11.910
+select this model so it should hit my HR model or maybe a
+
+02:02:11.910 --> 02:02:14.670
+finance model so maybe in this way I can try to just do a
+
+02:02:14.670 --> 02:02:18.310
+inferencing and in a UI I will be able to show the result as
+
+02:02:18.310 --> 02:02:22.350
+of now I am able to showcase a result right so my result is
+
+02:02:22.350 --> 02:02:26.510
+visible but where so I am able to showcase it into a swagger
+
+02:02:26.510 --> 02:02:30.530
+yeah so I am able to test it anyhow so if API is working I
+
+02:02:30.530 --> 02:02:34.710
+can integrate in any device any application whatever I want
+
+02:02:34.710 --> 02:02:39.430
+and wherever I want as simple as that so this is the only
+
+02:02:39.430 --> 02:02:42.990
+thing that we are doing if you like go and try to understand
+
+02:02:42.990 --> 02:02:46.550
+this piece of things you will feel like it's the same thing
+
+02:02:46.550 --> 02:02:52.750
+right it's it's nothing different yeah fine yes yes thanks
+
+02:02:52.750 --> 02:02:56.970
+thanks a lot sir yeah thanks thanks a lot okay so okay next
+
+02:02:56.970 --> 02:03:02.330
+one side go ahead with the question so so thank you so much
+
+02:03:02.330 --> 02:03:05.170
+for this session it was really wonderful session sir we are
+
+02:03:05.170 --> 02:03:08.590
+training it on a base model or are you making your own model
+
+02:03:08.590 --> 02:03:10.890
+sir no no no base model we are not doing the complete
+
+02:03:10.890 --> 02:03:15.470
+training yesterday we talked about it last week sir I
+
+02:03:15.470 --> 02:03:19.530
+dropped it somewhere in the agency you will see it anywhere
+
+02:03:19.530 --> 02:03:23.770
+in any model so we are always taking a model that we are
+
+02:03:23.770 --> 02:03:25.950
+taking this tiny llama correct correct we are taking a
+
+02:03:25.950 --> 02:03:30.130
+Facebook model basically so a question on top of this if I
+
+02:03:30.130 --> 02:03:32.550
+just give the name of this model will it automatically
+
+02:03:32.550 --> 02:03:35.610
+download it or I don't know anything no no no just we are
+
+02:03:35.610 --> 02:03:37.310
+taking a hugging face model we are downloading all these
+
+02:03:37.310 --> 02:03:39.430
+models are available in the hugging face and in the hugging
+
+02:03:39.430 --> 02:03:42.310
+face there are 10,000 models like this available so how do I
+
+02:03:42.310 --> 02:03:46.250
+know how do we know I gave the name of the model yes
+
+02:03:46.250 --> 02:03:50.290
+basically if you go this we told you yesterday I think you
+
+02:03:50.290 --> 02:03:54.230
+missed yesterday I am sorry about it okay so we told the
+
+02:03:54.230 --> 02:03:59.090
+same thing yesterday if we go to the hugging face okay here
+
+02:03:59.090 --> 02:04:04.210
+let's suppose and go here click inside the model so let's
+
+02:04:04.210 --> 02:04:09.470
+suppose I want a model gpt os okay so oss which is the
+
+02:04:09.470 --> 02:04:11.950
+largest model of gpt see 20 billion and 120 billion
+
+02:04:11.950 --> 02:04:14.510
+parameter model which is the latest they have open sourced
+
+02:04:14.510 --> 02:04:17.990
+after two years yes yes correct correct yes so if I want to
+
+02:04:17.990 --> 02:04:21.550
+train this model no problem so here is its total id so we
+
+02:04:21.550 --> 02:04:24.650
+will copy it okay we will copy the id and you don't have to
+
+02:04:24.650 --> 02:04:27.550
+do anything by copying the id just paste it here the rest of
+
+02:04:27.550 --> 02:04:30.130
+the work will be done by itself okay so we do not have to
+
+02:04:30.130 --> 02:04:33.410
+give the like a hugging face openai key or anything no no no
+
+02:04:33.410 --> 02:04:35.630
+no open source model is there if you are training in hugging
+
+02:04:35.630 --> 02:04:39.530
+face its environment then that api key etc. token etc. is
+
+02:04:39.530 --> 02:04:42.990
+needed if you are trying it locally to access it otherwise
+
+02:04:42.990 --> 02:04:45.550
+there is no need which is open source is open source which
+
+02:04:45.550 --> 02:04:48.310
+is proprietary which is called hugging face that you cannot
+
+02:04:48.310 --> 02:04:52.250
+download in that case like you will have to do otherwise
+
+02:04:52.250 --> 02:04:55.810
+there is no need okay one more question is hugging face how
+
+02:04:55.810 --> 02:05:00.510
+will I know sir I can download this model I can use it will
+
+02:05:00.510 --> 02:05:03.450
+be given there basically if you go down here then it is
+
+02:05:03.450 --> 02:05:06.330
+given in every model that see model you have given here you
+
+02:05:06.330 --> 02:05:08.970
+can download in the pipeline whatever is open source model
+
+02:05:08.970 --> 02:05:13.030
+in hugging face you can download it is that hugging face
+
+02:05:13.030 --> 02:05:15.210
+also it does not control basically you will come here in the
+
+02:05:15.210 --> 02:05:17.950
+file here okay download download option is visible in all of
+
+02:05:17.950 --> 02:05:21.710
+them, its model is its meaning that we can download ok great
+
+02:05:21.710 --> 02:05:23.930
+sir thank you sir thank you so much ok in all you will see
+
+02:05:23.930 --> 02:05:26.110
+here ok open source model is not the model of hugging face
+
+02:05:26.110 --> 02:05:30.970
+hugging face you told us 120 billion you told us how we can
+
+02:05:30.970 --> 02:05:33.730
+inferencing it using that like it is already already done
+
+02:05:35.350 --> 02:05:38.950
+you told us one month before if you want to train it
+
+02:05:38.950 --> 02:05:41.670
+yourself then you can train it what we are doing in this
+
+02:05:41.670 --> 02:05:44.970
+same same same we can do the current model we are using has
+
+02:05:44.970 --> 02:05:48.690
+1.1 billion parameters if you want to like use 120 means
+
+02:05:48.690 --> 02:05:51.370
+this is the best of best model then you train it what is the
+
+02:05:51.370 --> 02:05:53.810
+problem okay great thank you so much sir thank you so much
+
+02:05:53.810 --> 02:05:57.190
+okay okay fine guys so if you don't have any kind of a
+
+02:05:57.190 --> 02:06:03.030
+question then we will close a lecture for today hope all of
+
+02:06:03.030 --> 02:06:06.050
+you have liked it enjoyed it agenda for next week is fixed
+
+02:06:06.050 --> 02:06:10.870
+so but yeah do it once in your life that is can you please
+
+02:06:10.870 --> 02:06:15.110
+show what directory changes you tweaked nothing actually see
+
+02:06:15.110 --> 02:06:20.550
+basically in my local system so I have given a directory
+
+02:06:21.210 --> 02:06:26.450
+over here let me go into API server so here what I have done
+
+02:06:26.450 --> 02:06:34.580
+basically I am just like a calling these models and it is
+
+02:06:34.580 --> 02:06:37.660
+looking into this directory this directory right so in my
+
+02:06:37.660 --> 02:06:40.520
+local system directory name was different and in GPU so
+
+02:06:40.520 --> 02:06:43.260
+directory name was different so what I have done I have just
+
+02:06:43.260 --> 02:06:47.100
+like a made this changes sales finance that's it so whatever
+
+02:06:47.100 --> 02:06:50.780
+directory that I have created on GPU side I just made that
+
+02:06:50.780 --> 02:06:52.800
+so that it will start looking for a model in that directory
+
+02:06:52.800 --> 02:06:56.680
+that is the only change which I have done nothing else yeah
+
+02:06:56.680 --> 02:07:00.100
+okay fine guys troubleshooting is the best part of the class
+
+02:07:00.100 --> 02:07:02.560
+yeah exactly see this is how real development happens
+
+02:07:02.560 --> 02:07:06.260
+teaching wise what we do as a teacher so we like prepare our
+
+02:07:06.260 --> 02:07:09.540
+material we you know come to the class and then you know
+
+02:07:09.540 --> 02:07:13.360
+reiterate those materials and obviously at that point of a
+
+02:07:13.360 --> 02:07:16.440
+time you will not be able to see our errors because before
+
+02:07:16.440 --> 02:07:19.000
+even coming to the class we have already executed those
+
+02:07:19.000 --> 02:07:24.340
+materials like you know maybe 10 times so but yeah in terms
+
+02:07:24.340 --> 02:07:27.400
+of real development it never goes without debugging we
+
+02:07:27.400 --> 02:07:30.420
+always have to go with the debugging and even teaching wise
+
+02:07:30.420 --> 02:07:33.700
+like if things are simple then doesn't take time even for us
+
+02:07:33.700 --> 02:07:37.920
+like you know to fix it in a live classes but if something
+
+02:07:37.920 --> 02:07:41.600
+is a real time then it will give you a real pain
+
+02:07:44.700 --> 02:07:47.340
+can we create a image on a one two yeah you can do that yes
+
+02:07:47.340 --> 02:07:52.240
+you can create okay thanks everyone take care see you again
+
+02:07:52.240 --> 02:07:54.640
+next class Saturday same time thank you
+

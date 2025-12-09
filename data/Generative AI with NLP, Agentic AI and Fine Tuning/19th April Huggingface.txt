@@ -1,0 +1,5693 @@
+WEBVTT
+
+00:01:21.840 --> 00:01:24.720
+Hi everyone, so I think I'm audible and visible to all of
+
+00:01:24.720 --> 00:01:29.400
+you, yeah, everyone, so please confirm me guys if I'm
+
+00:01:29.400 --> 00:01:32.180
+audible and visible to all of you in a chat so that we can
+
+00:01:32.180 --> 00:01:34.600
+start with the live discussion, Abhjeet, good afternoon sir,
+
+00:01:34.640 --> 00:01:37.920
+good afternoon Abhjeet, good afternoon everyone, so who have
+
+00:01:37.920 --> 00:01:42.680
+joined, yeah, so I believe I'm audible and visible to all of
+
+00:01:42.680 --> 00:01:46.780
+you, so Tabish, Subhati, yeah, hi, okay,
+
+00:01:54.550 --> 00:01:57.550
+yeah, so good afternoon, Santosh, Durgesh, everyone, yeah,
+
+00:01:57.790 --> 00:02:02.490
+so let's get started with the class guys, so basically let
+
+00:02:02.490 --> 00:02:05.990
+me share my screen quickly and let's start our discussion,
+
+00:02:06.270 --> 00:02:11.430
+so I believe my screen is visible and today we are going to
+
+00:02:11.430 --> 00:02:14.510
+talk about basically a hugging face, hugging face is a
+
+00:02:14.510 --> 00:02:18.370
+platform, one of the best, one of the amazing platform, you
+
+00:02:18.370 --> 00:02:23.890
+can say heaven for AI people basically, so we are going to
+
+00:02:23.890 --> 00:02:28.510
+like see a lot of things over here. And yes, so as per your
+
+00:02:28.510 --> 00:02:33.070
+syllabus till last week, so how LLM has been trained, so I
+
+00:02:33.070 --> 00:02:37.270
+think we were able to train a small LLM, a very very small
+
+00:02:37.270 --> 00:02:40.490
+one and then we are going to talk about this particular
+
+00:02:40.490 --> 00:02:43.190
+chapter, so basically introduction to hugging face, then
+
+00:02:43.190 --> 00:02:47.230
+like a transformer, I believe we know transformers in terms
+
+00:02:47.230 --> 00:02:50.070
+of architecture, so we'll try to explore more and more with
+
+00:02:50.070 --> 00:02:52.690
+respect to a hugging face. And then there is something
+
+00:02:52.690 --> 00:02:55.550
+called as hugging face pipeline, hugging face data set,
+
+00:02:55.610 --> 00:02:58.710
+hugging face LLMs are technically a transformer obviously
+
+00:02:58.710 --> 00:03:01.390
+over here and then data pre-processing, tokenization,
+
+00:03:01.610 --> 00:03:04.230
+feature extraction with the hugging face and then fine
+
+00:03:04.230 --> 00:03:07.590
+tuning LLM with the hugging face. So we'll try to see one
+
+00:03:07.590 --> 00:03:10.550
+example, so where we are going to pick a model from a
+
+00:03:10.550 --> 00:03:14.330
+hugging face, we'll try to send a data and then we'll try to
+
+00:03:14.330 --> 00:03:17.550
+fine tune that model with the hugging face, so this is
+
+00:03:17.550 --> 00:03:20.930
+something that we will try to cover in my today's class. Now
+
+00:03:20.930 --> 00:03:24.270
+from tomorrow's onwards. So obviously we'll try to talk
+
+00:03:24.270 --> 00:03:29.310
+about this. And many of you will face challenges with
+
+00:03:29.310 --> 00:03:32.450
+OpenAI, so you will say that I have to go and I have to pay
+
+00:03:32.450 --> 00:03:36.490
+for OpenAI key, if you are going to teach, if you are going
+
+00:03:36.490 --> 00:03:41.470
+to talk about OpenAI, right and maybe if you are going to
+
+00:03:41.470 --> 00:03:45.770
+access some other models, so again, okay, so there is
+
+00:03:45.770 --> 00:03:48.550
+something in chat, no, all good, yeah, everyone good
+
+00:03:48.550 --> 00:03:53.070
+afternoon, yeah, so those who have joined bit late, so good
+
+00:03:53.070 --> 00:03:54.810
+afternoon to everyone. Okay, so good afternoon to everyone.
+
+00:03:54.830 --> 00:03:58.050
+So basically, I was talking about this entire things guys
+
+00:03:58.050 --> 00:04:01.470
+that what we are going to discuss and obviously some of you
+
+00:04:01.470 --> 00:04:05.970
+will say that maybe OpenAI is going to cost me or some other
+
+00:04:05.970 --> 00:04:10.350
+API is going to cost me. So the good news is, yesterday
+
+00:04:10.350 --> 00:04:14.050
+night, till morning we have been working on this part. So
+
+00:04:14.050 --> 00:04:17.110
+that's the reason, so I woke up late and then I had a class
+
+00:04:17.110 --> 00:04:19.230
+I was not able to take a bath and continuously like I'm
+
+00:04:19.230 --> 00:04:23.350
+taking classes. So yesterday we have released API feature
+
+00:04:23.350 --> 00:04:27.770
+inside OpenAI. Right? A lot of feature we have introduced
+
+00:04:27.770 --> 00:04:31.950
+inside URI. Now you will be able to see if URI so URI is
+
+00:04:31.950 --> 00:04:37.390
+becoming a full scale platform now, day by day, day by day,
+
+00:04:37.470 --> 00:04:40.530
+we are trying to push a lot of changes over here. So here
+
+00:04:40.530 --> 00:04:45.870
+you will be able to see an API for not 123 model, but for 10
+
+00:04:45.870 --> 00:04:49.170
+different different model will keep on adding it, including
+
+00:04:49.170 --> 00:04:52.810
+a GPT, right, including a GPT for which you have to go
+
+00:04:52.810 --> 00:04:55.490
+outside and then you have to pay to OpenAI. Or you have to
+
+00:04:55.490 --> 00:04:58.990
+get access of chat GPT. So you will be able to access
+
+00:04:58.990 --> 00:05:02.190
+through an API, you will be able to access even through a
+
+00:05:02.190 --> 00:05:05.950
+chat. So no need to pay for if I'm going to click on new
+
+00:05:05.950 --> 00:05:09.850
+chat. So yeah, I have this chat GPT available to me. And I
+
+00:05:09.850 --> 00:05:13.310
+can start chatting with my chat GPT, we have even included a
+
+00:05:13.310 --> 00:05:16.530
+file upload option. So as of now, it is just trying to take
+
+00:05:16.530 --> 00:05:20.950
+a PDF file. But very soon, a PDF file and images it is able
+
+00:05:20.950 --> 00:05:23.770
+to take very soon, I think in couple of like a days itself.
+
+00:05:24.150 --> 00:05:26.610
+Yeah. And you will be able to upload any kind of file like a
+
+00:05:26.610 --> 00:05:29.730
+doc file or maybe some code file a dot txt file, anything
+
+00:05:29.730 --> 00:05:32.950
+that you have, you can just try to upload it and it is going
+
+00:05:32.950 --> 00:05:37.030
+to work as of now it is working well for a PDF and images
+
+00:05:37.030 --> 00:05:41.030
+basically, apart from that, so we have implemented our Canva
+
+00:05:41.030 --> 00:05:44.170
+features so that you can try to come over here, take a note
+
+00:05:44.170 --> 00:05:48.210
+of something, send that same image or maybe draw something
+
+00:05:48.210 --> 00:05:51.010
+and then send it to Yuri, you can try to ask a question,
+
+00:05:51.170 --> 00:05:54.990
+right, so Yuri will try to even analyze your own drawing.
+
+00:05:55.210 --> 00:05:57.990
+And we are trying to make it in such a way that even in my
+
+00:05:57.990 --> 00:06:00.970
+class, instead of using a scribble ink, I will be using
+
+00:06:00.970 --> 00:06:04.110
+Canva, Canvas basically. So this Canvas feature is also we
+
+00:06:04.110 --> 00:06:07.830
+have attached. So again, another like a level of development
+
+00:06:07.830 --> 00:06:14.350
+that we have done. Apart from that, so yeah, explore so
+
+00:06:14.350 --> 00:06:17.910
+whoever will be able to generate some sort of images. Now
+
+00:06:17.910 --> 00:06:21.650
+those images, you will be able to find out here. So this is
+
+00:06:21.650 --> 00:06:25.490
+an image generated by Yuri itself. Right? So you can try to
+
+00:06:25.490 --> 00:06:27.830
+go and give a prompt to Yuri and Yuri will be able to
+
+00:06:27.830 --> 00:06:31.230
+generate images. Yuri is having an image generation
+
+00:06:31.230 --> 00:06:34.630
+capabilities, and your image will be available to a public
+
+00:06:34.630 --> 00:06:37.870
+so that anyone will be able to use it. Anyone will be able
+
+00:06:37.870 --> 00:06:41.090
+to take it so created on April, your name will not be
+
+00:06:41.090 --> 00:06:43.310
+mentioned over here. So don't worry, who is going to create
+
+00:06:43.310 --> 00:06:46.250
+what images but yeah, all these images will be available
+
+00:06:46.250 --> 00:06:51.390
+over here. Now, so this is one the explore, then there is
+
+00:06:51.390 --> 00:06:54.610
+something called as memories. So what we are doing? We are
+
+00:06:54.610 --> 00:06:57.710
+trying to understand from your previous chat. So each and
+
+00:06:57.710 --> 00:07:01.210
+everything will be you will be able to see it over here.
+
+00:07:01.710 --> 00:07:04.310
+Even the file that you're going to upload it suppose while
+
+00:07:04.310 --> 00:07:07.030
+chatting with a Yuri. So if you're going to upload a file,
+
+00:07:07.150 --> 00:07:10.110
+so you will be able to see all your files inside my files.
+
+00:07:10.250 --> 00:07:12.750
+And if you want, you can delete it as well. So we are going
+
+00:07:12.750 --> 00:07:15.350
+to wiping out from a database so you can delete your file
+
+00:07:15.350 --> 00:07:17.830
+that's completely fine. If you would like to keep it here,
+
+00:07:17.870 --> 00:07:19.770
+you can keep it here. If you don't want to keep it here, you
+
+00:07:19.770 --> 00:07:22.950
+can just remove it your data is your data. We are not going
+
+00:07:22.950 --> 00:07:25.830
+to take it. As simple as that. Now coming to the API
+
+00:07:25.830 --> 00:07:29.850
+feature, right, which is like a again, heaven for anyone who
+
+00:07:29.850 --> 00:07:32.870
+is going to build any product or who is going to learn
+
+00:07:32.870 --> 00:07:37.370
+anything in AI or maybe a fine tuning, maybe a RG
+
+00:07:37.370 --> 00:07:40.030
+application, maybe a genetic AI you are trying to learn.
+
+00:07:40.810 --> 00:07:43.630
+Maybe you are trying to build some sort of a model context
+
+00:07:43.630 --> 00:07:47.450
+protocol or a to a protocol anything right nowadays, I'm
+
+00:07:47.450 --> 00:07:50.010
+releasing a video for a model context protocol. I hope you
+
+00:07:50.010 --> 00:07:52.550
+must have gone through those. If not, please try to go
+
+00:07:52.550 --> 00:07:56.710
+through it. Try to build your own MCP tool as much as you
+
+00:07:56.710 --> 00:08:00.770
+can. But yeah, for anything API is required, right? So
+
+00:08:00.770 --> 00:08:04.350
+sometime you need an API for GPT, sometime for Gemini,
+
+00:08:04.410 --> 00:08:07.230
+sometime for Lama, sometime from Quinn, sometime for
+
+00:08:07.230 --> 00:08:10.550
+Mistral, sometime like deep seek a different different kind
+
+00:08:10.550 --> 00:08:14.150
+of API you will be looking for. It's been released now. So
+
+00:08:14.150 --> 00:08:17.970
+you all will be able to use don't have to go to open AI and
+
+00:08:17.970 --> 00:08:21.490
+then you have to use maybe a chat GPT API. So you can try to
+
+00:08:21.490 --> 00:08:24.910
+like come over here. From the URI system itself, and then
+
+00:08:24.910 --> 00:08:28.950
+you will be able to use an API for any models are very soon.
+
+00:08:29.030 --> 00:08:31.370
+I'm going to create a video. It's very easy actually. So we
+
+00:08:31.370 --> 00:08:35.050
+have like a given you a sample code as well that how you
+
+00:08:35.050 --> 00:08:38.130
+will be able to consume an API in a JavaScript, NodeJS or
+
+00:08:38.130 --> 00:08:41.470
+even in a Python. So it's very easy. And so you just have to
+
+00:08:41.470 --> 00:08:45.610
+pass the URL. So the URL is API dot your own dot one API
+
+00:08:45.610 --> 00:08:49.190
+version one URI Apache. It's a sample code is given to you.
+
+00:08:49.250 --> 00:08:51.090
+So every time you just have to come and copy the sample
+
+00:08:51.090 --> 00:08:54.990
+code. And then. So basically content type and then
+
+00:08:54.990 --> 00:08:57.730
+authorization. So authorization you can try to give from
+
+00:08:57.730 --> 00:09:02.090
+your like a portal. So authentication. So here we have given
+
+00:09:02.090 --> 00:09:05.590
+you this one, right? So authentication, your API token as
+
+00:09:05.590 --> 00:09:10.590
+you can see. So one single API token is going to work for
+
+00:09:10.590 --> 00:09:14.930
+all the model. Now you will say that how I'm going to use a
+
+00:09:14.930 --> 00:09:18.890
+single API for all the models. So we have created in such a
+
+00:09:18.890 --> 00:09:21.810
+way that it should be a very much developer friendly. Or
+
+00:09:21.810 --> 00:09:26.650
+anyone's friendly, right? So here API is going to be same,
+
+00:09:26.830 --> 00:09:30.050
+right? You just have to come and change the model name, your
+
+00:09:30.050 --> 00:09:33.290
+own system will be able to understand that what model you
+
+00:09:33.290 --> 00:09:36.130
+are trying to invoke. And that's the reason. So here as you
+
+00:09:36.130 --> 00:09:39.530
+can see, right in a sample, so you just have to pass what
+
+00:09:39.530 --> 00:09:42.870
+you just have to pass the model name over here. That's it.
+
+00:09:42.910 --> 00:09:45.810
+You just have to pass the model name and where you will be
+
+00:09:45.810 --> 00:09:49.490
+able to find out the model name here. A model ID we have
+
+00:09:49.490 --> 00:09:53.750
+mentioned. So for GPT 4.1 nano, GPT-4.1 nano, this is a
+
+00:09:53.750 --> 00:09:57.530
+model ID. This is the model ID. This is the model ID. So
+
+00:09:57.530 --> 00:10:02.150
+just call the model ID, pass the API key and bingo, you will
+
+00:10:02.150 --> 00:10:09.610
+be able to use it. And yeah, so as easy as it is, right? And
+
+00:10:09.610 --> 00:10:11.970
+start building anything that you want. Any kind of AI
+
+00:10:11.970 --> 00:10:15.750
+application you want, just go ahead and like do it. Can we
+
+00:10:15.750 --> 00:10:20.410
+use it in Langchain? You can use it anywhere. Yeah. Soon I'm
+
+00:10:20.410 --> 00:10:24.490
+going to release multiple videos with Langchain, Langraph,
+
+00:10:24.610 --> 00:10:28.570
+Langsmith, N8n. So we are, we are trying to build it in such
+
+00:10:28.570 --> 00:10:32.450
+a way that, see, this is the meaning of API key, right? So
+
+00:10:32.450 --> 00:10:34.630
+you will be able to use it. Don't worry.
+
+00:10:42.940 --> 00:10:46.560
+Okay. So soon we'll start releasing a lot of videos with
+
+00:10:46.560 --> 00:10:49.620
+respect to this one. And we are trying to even make it more
+
+00:10:49.620 --> 00:10:52.840
+user friendly day by day so that you don't have to go to any
+
+00:10:52.840 --> 00:10:56.580
+other platform or whatever you have to do. Like do it here.
+
+00:10:57.080 --> 00:11:01.200
+As simple as that. And don't have to like go and pay for any
+
+00:11:01.200 --> 00:11:05.920
+API is basically. Yeah. Obviously, sir, I have Azure open AI
+
+00:11:05.920 --> 00:11:08.780
+key. Will it be okay if I use it? Yeah. That's completely
+
+00:11:08.780 --> 00:11:10.940
+fine. If you have our account, if you're paying somewhere,
+
+00:11:11.020 --> 00:11:14.000
+or maybe if you have got some access from somewhere else, go
+
+00:11:14.000 --> 00:11:17.580
+ahead and use it. It's completely fine. Right. And if you
+
+00:11:17.580 --> 00:11:20.100
+don't have it, like, uh, then use it from here.
+
+00:11:24.010 --> 00:11:27.870
+Can we use this API for MCP? Yeah. You will be able to use
+
+00:11:27.870 --> 00:11:30.290
+API for anything. Literally anything. Okay.
+
+00:11:37.490 --> 00:11:42.350
+So a lot of like a release that we have done, I think a lot
+
+00:11:42.350 --> 00:11:45.630
+of release we are going to come up with. And now you have a
+
+00:11:45.630 --> 00:11:49.810
+chat GPT integrated over here itself. So I think now the
+
+00:11:49.810 --> 00:11:52.990
+system is even better than before, right? So those who think
+
+00:11:52.990 --> 00:11:55.570
+that is better as compared to other models. So yeah, you
+
+00:11:55.570 --> 00:11:58.290
+have that option inside a URI that we have given to you,
+
+00:11:58.350 --> 00:12:01.070
+like I said, trying to make it better and better. You can
+
+00:12:01.070 --> 00:12:04.130
+even go and try jobs. So last week we have done a lot of
+
+00:12:04.130 --> 00:12:08.130
+modification with respect to a job. So now if you can go and
+
+00:12:08.130 --> 00:12:11.830
+you can try to search even for a non-tech job, maybe a
+
+00:12:11.830 --> 00:12:14.410
+marketing, maybe for our operations, maybe for our sales,
+
+00:12:14.550 --> 00:12:17.170
+right? You can go ahead and you can try to go with a job
+
+00:12:17.170 --> 00:12:19.490
+search. Otherwise it is going to give you a recommendation
+
+00:12:19.490 --> 00:12:24.510
+based on the profile that you have uploaded. Right. So even
+
+00:12:24.510 --> 00:12:29.670
+for a fresher. So again, almost 15,000 job per day. Yeah. 24
+
+00:12:29.670 --> 00:12:34.550
+hour, 15,000 job, 15K job we are trying to bring in our
+
+00:12:34.550 --> 00:12:38.790
+system. Our target is to cross one lakh job per day. But
+
+00:12:38.790 --> 00:12:42.590
+yeah, so we'll, we'll keep on increasing it. We are trying
+
+00:12:42.590 --> 00:12:47.510
+to like integrate as many possible, like a portal where job
+
+00:12:47.510 --> 00:12:50.310
+is available as much as possible. So we are trying to
+
+00:12:50.310 --> 00:12:53.070
+integrate it. So even this system is getting better and
+
+00:12:53.070 --> 00:12:57.130
+better now, I believe. And yeah, resume AI it's, it's almost
+
+00:12:57.130 --> 00:13:01.930
+like a stable URI. I talked about it. Plus those who are
+
+00:13:01.930 --> 00:13:03.650
+waiting for iOS.
+
+00:13:05.690 --> 00:13:09.510
+So yeah, now iOS is available. So iOS app is available. As
+
+00:13:09.510 --> 00:13:12.290
+you can see, I have joined your class through iOS app. So
+
+00:13:12.290 --> 00:13:15.650
+it's now available in iOS and that too globally.
+
+00:13:20.600 --> 00:13:24.780
+Mohamad is saying, sir, it says upgrade to plus even I have
+
+00:13:24.780 --> 00:13:27.980
+a plus check a logo over here. I believe you have an org
+
+00:13:27.980 --> 00:13:30.540
+where you can access all the courses, but not any other
+
+00:13:30.540 --> 00:13:34.160
+feature. Just check the logo over here. Yeah. It must be
+
+00:13:34.160 --> 00:13:38.440
+showing, org, org means you have all the course access, all
+
+00:13:38.440 --> 00:13:41.600
+the content access for the time period or duration for which
+
+00:13:41.600 --> 00:13:44.360
+we have given you the access. Akash is saying, will the API
+
+00:13:44.360 --> 00:13:47.400
+key only work till my subscription to URI or Elon plus?
+
+00:13:47.700 --> 00:13:51.040
+Exactly. Yeah. So in every 30 days, so we are going to
+
+00:13:51.040 --> 00:13:53.480
+terminate it. So obviously if you don't have a subscription,
+
+00:13:53.720 --> 00:13:57.860
+how you can expect to API to work, obviously it is costing
+
+00:13:57.860 --> 00:14:03.420
+us, right. And it should cost you as well. A little bit,
+
+00:14:03.540 --> 00:14:06.800
+right.
+
+00:14:06.920 --> 00:14:09.460
+Yeah. It's all arguments. You have all the content access,
+
+00:14:09.660 --> 00:14:12.080
+but you don't have any kind of a service access. You have to
+
+00:14:12.080 --> 00:14:18.420
+upgrade to the plus. Okay. So now these are the update from
+
+00:14:18.420 --> 00:14:21.560
+your own side and yeah, why I'm giving you this update. The
+
+00:14:21.560 --> 00:14:24.940
+reason is that, that obviously from tomorrow onwards, I'll
+
+00:14:24.940 --> 00:14:28.280
+start talking about open AI. Those who would like to, I'll
+
+00:14:28.280 --> 00:14:33.020
+even show you, so how to get an API key from open AI. It's
+
+00:14:33.020 --> 00:14:35.760
+not a big deal. Just go. You can go and like go to your
+
+00:14:35.760 --> 00:14:38.060
+profile inside that setting. And then in the left hand side,
+
+00:14:38.140 --> 00:14:41.700
+you will be able to see API key option as easy as it is even
+
+00:14:41.700 --> 00:14:44.780
+to get an API key, but yeah, you have to pay, you have to
+
+00:14:44.780 --> 00:14:50.060
+basically pay for it. Open AI now same API key now available
+
+00:14:50.060 --> 00:14:54.420
+inside a URI. So I will be using a URI, but yeah, I'll try
+
+00:14:54.420 --> 00:14:56.920
+to show you as I have already mentioned. So this is just
+
+00:14:56.920 --> 00:14:58.960
+going to take like a five minute of time for me. Not more
+
+00:14:58.960 --> 00:15:01.820
+than that. Just five minutes. Right. So that I will be able
+
+00:15:01.820 --> 00:15:05.140
+to show you that. Okay. Here you can get a open AI or even
+
+00:15:05.140 --> 00:15:07.880
+the project which I'm creating nowadays. So if you'll go and
+
+00:15:07.880 --> 00:15:10.620
+check, so even over there, I'm showing like a open API key,
+
+00:15:10.740 --> 00:15:13.500
+but going forward the project or the recording, which I will
+
+00:15:13.500 --> 00:15:17.400
+do, that's the reason why I was holding some of my recording
+
+00:15:17.400 --> 00:15:20.240
+so that our API will be ready and I'll do the recording with
+
+00:15:20.240 --> 00:15:25.500
+our API. So in a class going forward, I'll be using our API
+
+00:15:25.500 --> 00:15:29.100
+and those who would like to use API from somewhere else,
+
+00:15:29.200 --> 00:15:31.800
+it's completely fine. Go ahead. Use it. Use it. At the end
+
+00:15:31.800 --> 00:15:36.040
+of the day, you just have to access the model. That's it. So
+
+00:15:36.040 --> 00:15:38.140
+it doesn't matter whether you are accessing a model through
+
+00:15:38.140 --> 00:15:41.460
+URI, through Euron or maybe through some other platform. I'm
+
+00:15:41.460 --> 00:15:43.200
+completely okay with it. I don't have any issue.
+
+00:15:50.010 --> 00:15:53.910
+That's great. One API key for most model with a little pay.
+
+00:15:54.050 --> 00:15:57.230
+Yeah. So you're not paying $299 just for like an API key or
+
+00:15:57.230 --> 00:15:59.610
+model. You are paying $299 for the entire ecosystem of
+
+00:15:59.610 --> 00:16:03.710
+Euron. Right. Where like a courses, projects, bytes, plus
+
+00:16:03.710 --> 00:16:07.410
+URI, resume, AI, jobs, Avni, everything. Yeah. So you are
+
+00:16:07.410 --> 00:16:10.770
+basically, I don't think that like it's too much of cost and
+
+00:16:10.770 --> 00:16:13.550
+I don't think that anyone is like providing such kind of
+
+00:16:13.550 --> 00:16:17.110
+things in the entire world with this price. I don't think
+
+00:16:17.110 --> 00:16:20.070
+that any education EduTech platform is having this system
+
+00:16:20.070 --> 00:16:23.590
+altogether. Yeah. There are thousands of companies who is
+
+00:16:23.590 --> 00:16:25.970
+just working on URI kind of a system, who is just working on
+
+00:16:25.970 --> 00:16:28.650
+resume kind of a system or job kind of a system. There are
+
+00:16:28.650 --> 00:16:32.950
+tons of companies. I do agree, but I don't think that any
+
+00:16:32.950 --> 00:16:35.750
+EduTech, even on an international level, so even if you're
+
+00:16:35.750 --> 00:16:38.370
+going to take a name off. Like a big one. So that's the
+
+00:16:38.370 --> 00:16:42.510
+intention for us, like to create a true OTT so that it will
+
+00:16:42.510 --> 00:16:46.010
+be able to fulfill all the need of an education because
+
+00:16:46.010 --> 00:16:51.130
+education doesn't mean only a courses. It means way more
+
+00:16:51.130 --> 00:16:53.410
+than courses because when people are going to consume the
+
+00:16:53.410 --> 00:16:57.770
+courses, obviously they need to prepare for the interview.
+
+00:16:57.950 --> 00:17:00.250
+They have to build their entire portfolio profile. They have
+
+00:17:00.250 --> 00:17:03.570
+to search for the job. Now during a learning of the tech
+
+00:17:03.570 --> 00:17:07.430
+courses. Obviously. You need nowadays AI, right? Now you
+
+00:17:07.430 --> 00:17:10.750
+nowadays everyone needs AI assistance. So without AI
+
+00:17:10.750 --> 00:17:15.430
+assistant, the learning is almost near to impossible for
+
+00:17:15.430 --> 00:17:18.970
+anyone basically, right? Even now, there's people are using
+
+00:17:18.970 --> 00:17:23.410
+it in schools, kids are using it. So this is where like we
+
+00:17:23.410 --> 00:17:26.850
+are trying to solve this problem as a neuron. So now this is
+
+00:17:26.850 --> 00:17:34.410
+it in terms of talking about new update. But I think it's a
+
+00:17:34.410 --> 00:17:36.850
+good idea. We will keep on updating more and more. So don't
+
+00:17:36.850 --> 00:17:39.550
+worry about it. Now coming to our chapter, a hugging face,
+
+00:17:39.730 --> 00:17:44.130
+right? So hugging face is a platform, an amazing platform. I
+
+00:17:44.130 --> 00:17:47.530
+would say a very, very amazing global platform. Hugging face
+
+00:17:47.530 --> 00:17:51.130
+is now hugging face is providing you what? So hugging face
+
+00:17:51.130 --> 00:17:54.350
+is giving you an access of models, all the open source
+
+00:17:54.350 --> 00:17:57.970
+models. So you will be able to see all the even latest open
+
+00:17:57.970 --> 00:18:00.550
+source model over here inside a hugging face. So whether
+
+00:18:00.550 --> 00:18:04.390
+it's a, uh, like a deep seek model. Or maybe a deep seek
+
+00:18:04.390 --> 00:18:07.090
+model. Or maybe a llama model. You can just come over here
+
+00:18:07.090 --> 00:18:10.530
+and then you will be able to access all of these model and
+
+00:18:10.530 --> 00:18:14.210
+number of model wise. As you can see over here that there
+
+00:18:14.210 --> 00:18:19.190
+are like a 16 1.6 million, 16 lakh models are available.
+
+00:18:19.430 --> 00:18:22.670
+Just imagine how many models are open source, the 16 lakh.
+
+00:18:22.810 --> 00:18:25.490
+But again, all the models are not going to do the same task.
+
+00:18:25.650 --> 00:18:29.250
+Obviously you will be able to see all those tasks here on
+
+00:18:29.250 --> 00:18:32.070
+your left hand side panel. You will be able to see the task,
+
+00:18:32.150 --> 00:18:35.190
+the task that we try to solve. With respect to a computer
+
+00:18:35.190 --> 00:18:37.450
+vision, the task that we try to solve with respect to the
+
+00:18:37.450 --> 00:18:41.430
+time series or, uh, with NLP again inside NLP, there are a
+
+00:18:41.430 --> 00:18:44.750
+lot of tasks. So here you will be able to see that there is
+
+00:18:44.750 --> 00:18:46.950
+a section called as multimodal. There is a section called as
+
+00:18:46.950 --> 00:18:49.470
+computer vision. So all of these tasks that we try to solve
+
+00:18:49.470 --> 00:18:52.610
+inside the computer vision models are available. A pre
+
+00:18:52.610 --> 00:18:55.450
+-trained model are available with NLP. These are the tasks
+
+00:18:55.450 --> 00:18:57.550
+that we try to solve. So pre-trained models are available
+
+00:18:57.550 --> 00:19:00.770
+audio. So these are the audio models category, just a
+
+00:19:00.770 --> 00:19:03.130
+categorization. And then if you're going to click on anyone.
+
+00:19:03.130 --> 00:19:06.210
+So on your like a right hand side, it is going to refresh it
+
+00:19:06.210 --> 00:19:08.810
+and it is going to like a tell you that, okay, so these are
+
+00:19:08.810 --> 00:19:11.610
+the model which is available in this particular category as
+
+00:19:11.610 --> 00:19:17.050
+simple as that. So here, right? So this is going to provide
+
+00:19:17.050 --> 00:19:21.990
+you a model, a huge library of a model, the biggest one in
+
+00:19:21.990 --> 00:19:25.670
+this entire world so that you can go and then you can try to
+
+00:19:25.670 --> 00:19:29.290
+like a download all the files. So you will be able to find
+
+00:19:29.290 --> 00:19:32.350
+out all the files over here. You can download it. And then
+
+00:19:32.350 --> 00:19:36.150
+you can try to make use of it. So use this model and
+
+00:19:36.150 --> 00:19:39.690
+Huggingface is also giving you a hosting kind of a solution.
+
+00:19:39.870 --> 00:19:42.830
+So where you can host it on Huggingface or else what you can
+
+00:19:42.830 --> 00:19:45.710
+do is download it, host it anywhere. It's your like a
+
+00:19:45.710 --> 00:19:48.590
+choice. So Huggingface is not forcing you to, you know, host
+
+00:19:48.590 --> 00:19:51.130
+everything on Huggingface platform. It's an open source
+
+00:19:51.130 --> 00:19:53.910
+model, so you can just download it and make use of it. All
+
+00:19:53.910 --> 00:19:57.690
+of these models, the way you want simple, right? The way you
+
+00:19:57.690 --> 00:20:01.590
+want, you will be able to host it. Okay. So Huggingface is
+
+00:20:01.590 --> 00:20:04.390
+providing you models. That's the first part. Second part is
+
+00:20:04.390 --> 00:20:08.290
+a data set. So you will be able to acquire any kind of,
+
+00:20:08.290 --> 00:20:10.490
+almost any kind of a data set you will be able to find out
+
+00:20:10.490 --> 00:20:12.830
+inside a Huggingface, right? Almost any kind, for any kind
+
+00:20:12.830 --> 00:20:16.450
+of a task, right? Even for like a NLP task or even for a
+
+00:20:16.450 --> 00:20:19.910
+computer vision task or, and a lot of data set you will be
+
+00:20:19.910 --> 00:20:23.570
+able to find here, which is well maintained. So when I say
+
+00:20:23.570 --> 00:20:27.290
+well maintained, simply means that that label and all those
+
+00:20:27.290 --> 00:20:29.330
+things which is required with respect to the data set.
+
+00:20:29.330 --> 00:20:33.610
+Everything is available in a like a refined way basically.
+
+00:20:34.050 --> 00:20:39.090
+So a data set is a place where like you can try to go and
+
+00:20:39.090 --> 00:20:41.570
+then you can try to download the data set or you can try to
+
+00:20:41.570 --> 00:20:44.170
+just call the function and function will be able to download
+
+00:20:44.170 --> 00:20:48.770
+for you and then you will be able to, you know, basically
+
+00:20:48.770 --> 00:20:53.930
+like use it, use those data sets. So again, click on any
+
+00:20:53.930 --> 00:20:56.590
+data set, it is showing you the structure, the size of the
+
+00:20:56.590 --> 00:21:00.830
+data set, 1.39 GB. Which is like a huge data set I'm talking
+
+00:21:00.830 --> 00:21:05.490
+about and download it, simple. And they have given you a
+
+00:21:05.490 --> 00:21:07.890
+code as well. You can write your own custom code or else
+
+00:21:07.890 --> 00:21:10.630
+they can try to pick their sample code for a particular
+
+00:21:10.630 --> 00:21:14.830
+task, right? So anything is fine. So again, code can be
+
+00:21:14.830 --> 00:21:17.350
+written by even an AI. So that's completely fine. So even
+
+00:21:17.350 --> 00:21:20.210
+you can try to use AI and then AI is going to like write a
+
+00:21:20.210 --> 00:21:23.430
+code, you just have to give a prompt to it. Okay. But yeah,
+
+00:21:23.490 --> 00:21:26.310
+you should know that what Huggingface is, unless and until
+
+00:21:26.310 --> 00:21:28.970
+what you will ask given to AI. So the model, yes,
+
+00:21:29.050 --> 00:21:31.750
+Huggingface is providing your data set. Yes, Huggingface is
+
+00:21:31.750 --> 00:21:35.150
+providing you and apart from that, so almost like APIs to
+
+00:21:35.150 --> 00:21:39.550
+load a model, to fine tune a model, to create a pipeline,
+
+00:21:39.890 --> 00:21:42.830
+everything, everything with the help of Huggingface, you
+
+00:21:42.830 --> 00:21:47.170
+will be able to do it. And Huggingface, like I said, so they
+
+00:21:47.170 --> 00:21:50.710
+are giving, going to provide you like even a compute. So
+
+00:21:50.710 --> 00:21:53.590
+basically this is what they sell, right? This is what they
+
+00:21:53.590 --> 00:21:56.990
+sell as a Huggingface. So they try to provide you a compute
+
+00:21:56.990 --> 00:22:01.890
+and you can go and check. Like what, what like a Huggingface
+
+00:22:01.890 --> 00:22:04.590
+is going to do. But yeah, so even with the free account,
+
+00:22:04.770 --> 00:22:08.010
+even if you have created some models, host unlimited public
+
+00:22:08.010 --> 00:22:11.830
+model and a data set, create unlimited org with no member
+
+00:22:11.830 --> 00:22:15.010
+limit, access the latest ML tool and open source community
+
+00:22:15.010 --> 00:22:18.870
+support. Now pro account means, so zero GPU and dev mode for
+
+00:22:18.870 --> 00:22:21.550
+a space, free credit across all the inferences, inferences
+
+00:22:21.550 --> 00:22:24.090
+provider, get early access for the upcoming features. So
+
+00:22:24.090 --> 00:22:28.330
+your support with the pro badge. So basically like. A space
+
+00:22:28.330 --> 00:22:32.910
+hardware. So free, free CPU, build more advanced space. So
+
+00:22:32.910 --> 00:22:36.210
+these are something that they try to sell, but yeah, it's
+
+00:22:36.210 --> 00:22:38.910
+not required to like a take it for this particular class
+
+00:22:38.910 --> 00:22:41.650
+because we will be doing everything in our system or maybe
+
+00:22:41.650 --> 00:22:47.870
+you can even go ahead and do the same thing with Colab. So I
+
+00:22:47.870 --> 00:22:50.950
+just need a compute. If I have a model, if I have a data, if
+
+00:22:50.950 --> 00:22:54.810
+I'm able to write a code by myself, so I just need a compute
+
+00:22:54.810 --> 00:22:57.770
+and the compute could be my local. It could be my like a
+
+00:22:57.770 --> 00:23:01.770
+Colab, right? So you can, you can try to use it going
+
+00:23:01.770 --> 00:23:06.450
+forward. Even I'll try to show you that how to set up a GPU,
+
+00:23:06.670 --> 00:23:12.070
+a 100 and H 100 kind of a GPU. For example, in my last class
+
+00:23:12.070 --> 00:23:16.010
+I was trying to teach you how to train the LLMs, our own
+
+00:23:16.010 --> 00:23:19.550
+custom LLMs. Now let's suppose if I'm going ahead with a 96
+
+00:23:19.550 --> 00:23:23.450
+layer, your system will not move. Your system will freeze
+
+00:23:23.450 --> 00:23:27.930
+and forget about like a hundred thousand epochs. So it is
+
+00:23:27.930 --> 00:23:31.850
+not even going to run one single, like a batch, forget about
+
+00:23:31.850 --> 00:23:35.510
+the epoch. So it will not be able to run it. So in that
+
+00:23:35.510 --> 00:23:39.450
+situation, right? So I'm going to show you that how in real,
+
+00:23:39.590 --> 00:23:43.610
+in reality, how training actually happens. So you must have
+
+00:23:43.610 --> 00:23:47.550
+heard about like a Nvidia, Nvidia is providing H 100 or A
+
+00:23:47.550 --> 00:23:53.310
+100 to open AI or maybe to a cloud and tropic or like a to
+
+00:23:53.310 --> 00:23:56.030
+someone. So basically these are the hardware. Which is
+
+00:23:56.030 --> 00:23:59.490
+required to train the model. And it's possible to get those
+
+00:23:59.490 --> 00:24:03.490
+hardware from hundreds of provider who is available. So I'm
+
+00:24:03.490 --> 00:24:06.590
+going to show you like that as well. So how to set up those
+
+00:24:06.590 --> 00:24:09.390
+hardwares. So they are going to give you a blank machine.
+
+00:24:09.550 --> 00:24:12.290
+You have to do some sort of a initial setup inside that one.
+
+00:24:12.430 --> 00:24:16.370
+And then you can try to train those kind of a model inside
+
+00:24:16.370 --> 00:24:19.870
+those hardwares. And it will be fast. It will be very, very
+
+00:24:19.870 --> 00:24:23.370
+fast. Again that depends like what is the number of layers
+
+00:24:23.370 --> 00:24:26.930
+again? It's not like one single. H 100 is going to solve the
+
+00:24:26.930 --> 00:24:29.350
+entire life problem and you will be able to build a chat
+
+00:24:29.350 --> 00:24:32.810
+GPT. No, not like that. Because the variable over here is a
+
+00:24:32.810 --> 00:24:36.530
+data set and the number of layers, right? Number of layers,
+
+00:24:36.610 --> 00:24:39.790
+because as number of layers will keep on increasing, number
+
+00:24:39.790 --> 00:24:44.130
+of parameter will keep on increasing and that will like make
+
+00:24:44.130 --> 00:24:50.010
+a job for a GPU and CPU much way more harder. Right. But
+
+00:24:50.010 --> 00:24:54.230
+yeah, so just to get a real flavor because now if I'm going
+
+00:24:54.230 --> 00:24:57.330
+to show you like how to train, a model in H 100 or a 100
+
+00:24:57.330 --> 00:25:01.830
+after that, after that you can build any kind of a model.
+
+00:25:01.910 --> 00:25:04.790
+Just a matter of fact that how much data you have and like,
+
+00:25:04.870 --> 00:25:09.050
+uh, how much, how many H 100 you can try to buy or maybe you
+
+00:25:09.050 --> 00:25:11.350
+can rent basically fine guys.
+
+00:25:20.280 --> 00:25:20.640
+Yep.
+
+00:25:30.680 --> 00:25:34.200
+So we bought your own or no, you haven't bought your own org
+
+00:25:34.200 --> 00:25:36.940
+for 3000. I think you have your own plus option. I think if
+
+00:25:36.940 --> 00:25:39.000
+you have went for the paid one in that case, you have a
+
+00:25:39.000 --> 00:25:41.320
+plus, please check the logo. You don't have to like a pay
+
+00:25:41.320 --> 00:25:44.520
+again. Uh. If you have like a bought it for one year, you
+
+00:25:44.520 --> 00:25:46.460
+must be having an access. Yeah.
+
+00:25:49.070 --> 00:25:53.210
+Okay. So I think it may make sense to all of us. So this is
+
+00:25:53.210 --> 00:25:55.650
+all about the introduction about the hugging phase. Now
+
+00:25:55.650 --> 00:25:59.530
+let's start using it, right? So how I will be able to use
+
+00:25:59.530 --> 00:26:02.090
+this hugging phase. Let's try to like explore with the help
+
+00:26:02.090 --> 00:26:05.590
+of code basically, right? So I'm going to show you a couple
+
+00:26:05.590 --> 00:26:08.390
+of things over here with respect to a hugging phase. So what
+
+00:26:08.390 --> 00:26:11.890
+in all things I'm going to show you. So as per the syllabus,
+
+00:26:12.130 --> 00:26:18.290
+right? As per the syllabus, syllabus, we have basically
+
+00:26:18.290 --> 00:26:21.970
+transformer, HF pipeline, dataset, LLMs. So all this part
+
+00:26:21.970 --> 00:26:25.010
+I'm going to show you, uh, with code basically. So hugging
+
+00:26:25.010 --> 00:26:28.650
+phase is just a platform. I don't have to like go and build
+
+00:26:28.650 --> 00:26:31.010
+any kind of a model. All the models are available over
+
+00:26:31.010 --> 00:26:33.610
+there, pick and choose and do whatever I want. So maybe I'll
+
+00:26:33.610 --> 00:26:36.730
+try to show you even a fine tuning. So I'll try to pick one
+
+00:26:36.730 --> 00:26:40.850
+model from hugging phase, I'll try to pass my custom data
+
+00:26:40.850 --> 00:26:43.850
+over there. Or some data set from hugging phase itself, a
+
+00:26:43.850 --> 00:26:48.110
+raw data and which my model has not seen so far. And then
+
+00:26:48.110 --> 00:26:51.770
+we'll try to fine tune the existing model. So if I'm going,
+
+00:26:51.850 --> 00:26:55.770
+if I'm able to fine tune one model, I will be able to fine
+
+00:26:55.770 --> 00:26:59.050
+tune all the other hundred thousands of models as simple as
+
+00:26:59.050 --> 00:27:02.450
+that, right? And again, we have a lot of like a fine tuning
+
+00:27:02.450 --> 00:27:05.130
+based on the different, different tasks in my last section,
+
+00:27:05.230 --> 00:27:08.910
+right? A lot of fine tuning we have, but, uh, more or less,
+
+00:27:08.930 --> 00:27:11.810
+uh, we will be following the, uh, uh, same kind of approach,
+
+00:27:12.210 --> 00:27:16.210
+right? So some fine tuning is like, uh, Laura based core
+
+00:27:16.210 --> 00:27:19.350
+based, right? Parameter fine tuning approach or quantize,
+
+00:27:19.410 --> 00:27:24.030
+uh, basically, uh, based. So I think I, I told you in last
+
+00:27:24.030 --> 00:27:26.650
+class that, uh, in some of the classes I'm going to show you
+
+00:27:26.650 --> 00:27:30.210
+even the quantization, the meaning of quantization is like a
+
+00:27:30.210 --> 00:27:33.670
+simple. So basically when you build the model, so when it
+
+00:27:33.670 --> 00:27:36.870
+will try to train the weight, so weights will be enough
+
+00:27:36.870 --> 00:27:40.310
+fractions, right? So after like a dot after point. So there
+
+00:27:40.310 --> 00:27:41.130
+will be lots of points. There will be a lot of like a
+
+00:27:41.130 --> 00:27:44.210
+desert. Now at the end of the day, when it does the
+
+00:27:44.210 --> 00:27:47.890
+inferencing, so it's a calculation, right? So if the
+
+00:27:47.890 --> 00:27:52.650
+fractions, uh, like after, uh, decimal, if number of digits
+
+00:27:52.650 --> 00:27:58.050
+will be more, so our compute will be heavy. We can try to
+
+00:27:58.050 --> 00:28:01.130
+like a chop it off. We can try to quantize it so that my
+
+00:28:01.130 --> 00:28:05.090
+model will be lighter and it's inferencing will be even
+
+00:28:05.090 --> 00:28:09.250
+faster. And I can try to host such kind of a model, even in
+
+00:28:09.250 --> 00:28:13.670
+my mobile devices. Okay. Mobile devices, or maybe even a
+
+00:28:13.670 --> 00:28:17.270
+lighter, uh, like a device like a Raspberry Pi or Jetson
+
+00:28:17.270 --> 00:28:21.690
+Nano or Google coral kind of a devices where, uh, even with
+
+00:28:21.690 --> 00:28:25.090
+the very, very less amount of compute, it will be able to do
+
+00:28:25.090 --> 00:28:28.170
+a fast inferencing, right? Because that that's the need of
+
+00:28:28.170 --> 00:28:31.530
+the hour. Many people are doing it. Many of the product, uh,
+
+00:28:31.690 --> 00:28:35.750
+has been built out of it, right? So if, if you are going to
+
+00:28:35.750 --> 00:28:37.990
+work in such kind of projects, obviously like, uh, you
+
+00:28:37.990 --> 00:28:40.090
+should know that, uh, what is the meaning of quantization?
+
+00:28:40.090 --> 00:28:42.930
+So this is the meaning of quantization conceptually that we
+
+00:28:42.930 --> 00:28:47.530
+try to chop off the digits. That's it. Okay. So let's get
+
+00:28:47.530 --> 00:28:52.990
+started and, uh, let's try to, uh, see, uh, some example
+
+00:28:52.990 --> 00:28:57.530
+with this hugging phase. Uh, where is my chapter? Yeah. So
+
+00:28:57.530 --> 00:28:58.430
+hugging phase chapters.
+
+00:29:20.450 --> 00:29:24.410
+Okay. So Puma is asking this question. Um, I think your
+
+00:29:24.410 --> 00:29:29.690
+problem is very simple. I mean like go and type here and see
+
+00:29:29.690 --> 00:29:34.930
+the solution. See. It is your solution, right? And then, uh,
+
+00:29:35.010 --> 00:29:38.170
+like ask for the code and if you'll check my MCP, right? So
+
+00:29:38.170 --> 00:29:40.830
+even in my MCP, I'm talking about the PDF reading and
+
+00:29:40.830 --> 00:29:44.410
+passing a data to the model. So I have already created a
+
+00:29:44.410 --> 00:29:46.990
+multiple projects over there, which is available in a MCP
+
+00:29:46.990 --> 00:29:49.290
+model contest protocol. Yeah. It's one step ahead of it.
+
+00:29:49.350 --> 00:29:53.590
+Basically I'm trying to expose it as a tool so that I can
+
+00:29:53.590 --> 00:29:57.930
+try to call those tools from like a MCP inspector or my, um,
+
+00:29:57.990 --> 00:30:03.730
+cloud day, uh, desktop. So guys, uh, first of all, open up
+
+00:30:03.730 --> 00:30:07.030
+your VS code. Uh, we are going to write some code over here.
+
+00:30:09.700 --> 00:30:15.720
+So file open folder, D drive, let
+
+00:30:18.150 --> 00:30:25.030
+me create gen AI. I think I have, okay, let's create gen AI
+
+00:30:25.030 --> 00:30:28.210
+class fine.
+
+00:30:30.350 --> 00:30:34.070
+And uh, try to create a new file guys over here. Uh, so
+
+00:30:34.070 --> 00:30:43.030
+today is 90. So 19th, April gen AI dot I P Y N B. So this is
+
+00:30:43.030 --> 00:30:45.750
+the notebook file I have created. You can create notebook or
+
+00:30:45.750 --> 00:30:49.370
+Python. Anything is fine for me. And then one by one, one by
+
+00:30:49.370 --> 00:30:54.390
+one, let's start talking about the, uh, like, uh, small,
+
+00:30:54.490 --> 00:30:58.410
+small things, uh, so that we can try to learn this entire,
+
+00:30:58.650 --> 00:31:02.550
+like a hugging face, uh, structure. Yeah. So first of all,
+
+00:31:02.590 --> 00:31:05.810
+guys, uh, what we can do is maybe we can try to. Load a
+
+00:31:05.810 --> 00:31:11.930
+hugging face and then we can try to, you know, convert the
+
+00:31:11.930 --> 00:31:17.330
+entire, like a data into a tokens because we have seen that,
+
+00:31:17.370 --> 00:31:22.330
+that for tokenization. So we have been like, uh, like to
+
+00:31:22.330 --> 00:31:25.150
+create a embeddings embeddings out of the data. So we have
+
+00:31:25.150 --> 00:31:29.630
+been building a models in a past now. So with the help of
+
+00:31:29.630 --> 00:31:33.150
+hugging face, it's possible to, you know, download some of
+
+00:31:33.150 --> 00:31:37.150
+the pre-trained model. And then try to get the embeddings of
+
+00:31:37.150 --> 00:31:41.510
+my data. So if I'm trying to like a generate just an
+
+00:31:41.510 --> 00:31:46.210
+embedding, so that is, uh, basically possible. And uh, it is
+
+00:31:46.210 --> 00:31:49.990
+also possible that if I, if I want too many, uh, maybe like
+
+00:31:49.990 --> 00:31:54.930
+a load a model. And if I want, uh, my like a model to
+
+00:31:54.930 --> 00:31:57.870
+generate some of the texts, I think this is something that
+
+00:31:57.870 --> 00:32:01.270
+we were trying to do it even in my last class. So generate
+
+00:32:01.270 --> 00:32:04.150
+some of the texts. So it will be able to do each and every.
+
+00:32:04.170 --> 00:32:09.150
+So are we ready guys, everyone with notebook service that
+
+00:32:09.150 --> 00:32:10.390
+yeah,
+
+00:32:24.530 --> 00:32:27.010
+everyone Abhijit is saying yes. Okay.
+
+00:32:53.620 --> 00:32:56.560
+Okay, fine. So let's get started. So here I'm going to show
+
+00:32:56.560 --> 00:33:00.500
+you one example. So where, uh, my, uh, like a system will be
+
+00:33:00.500 --> 00:33:03.700
+able to give me a sentiment. So basically the sentence,
+
+00:33:03.800 --> 00:33:06.580
+which I'm going to input is a positive or it's a negative.
+
+00:33:06.740 --> 00:33:09.800
+So with the help of use case, I'll try to show you this
+
+00:33:09.800 --> 00:33:12.420
+entire example. I can show you the rest of library, but
+
+00:33:12.420 --> 00:33:14.940
+yeah, that will not make sense. Uh, unless and until you
+
+00:33:14.940 --> 00:33:18.580
+will not be able to see the use cases. So let's try to build
+
+00:33:18.580 --> 00:33:21.740
+a use case and then let's try to, uh, basically like, uh,
+
+00:33:21.780 --> 00:33:25.700
+understand these things. Now to do that, first of all, what
+
+00:33:25.700 --> 00:33:29.420
+you have to do is you have to install a transformer. So pip
+
+00:33:29.420 --> 00:33:34.240
+I N S T A double L T A double L pip install T R A N S F O R
+
+00:33:34.240 --> 00:33:38.140
+M E R S. So transformers. So you have to basically install a
+
+00:33:38.140 --> 00:33:45.380
+transformers inside your like a system. I'm pinging you. The
+
+00:33:45.380 --> 00:33:49.320
+code. So in my system requirement is already satisfied in my
+
+00:33:49.320 --> 00:33:54.380
+base system. Um, so yeah, for me, it's already available. I
+
+00:33:54.380 --> 00:34:01.700
+have given you a code inside your, um, chat basically. So
+
+00:34:01.700 --> 00:34:04.400
+pip install transformers. So this is the very first part
+
+00:34:04.400 --> 00:34:07.660
+that we'll have to do, uh, to load or to use a transformer.
+
+00:34:08.200 --> 00:34:11.680
+So please do it guys. And if you are going to get some sort
+
+00:34:11.680 --> 00:34:15.220
+of a error, so maybe you can try to resolve it. I don't. I
+
+00:34:15.220 --> 00:34:16.980
+don't expect any error that is going to give by the way.
+
+00:34:19.120 --> 00:34:22.780
+Okay. Now, once it will be done, once you are able to
+
+00:34:22.780 --> 00:34:26.640
+install the transformer, then try to call from transformer,
+
+00:34:26.980 --> 00:34:32.800
+right from transformer, import I M P O R T import and import
+
+00:34:32.800 --> 00:34:41.360
+what? So auto tokenizer T O K E N I J D R auto tokenizer.
+
+00:34:41.520 --> 00:34:45.080
+Yeah. Auto tokenizer. You can try to import. Okay. And then
+
+00:34:45.080 --> 00:34:53.320
+you can try to import TF auto model for, uh, audio
+
+00:34:53.320 --> 00:34:57.400
+classification. Not this one sequence
+
+00:35:00.440 --> 00:35:06.500
+classification. So yeah, TF auto model for sequence
+
+00:35:06.500 --> 00:35:09.140
+classifications. There are so many models you will be able
+
+00:35:09.140 --> 00:35:12.120
+to get with transformer. That's a beauty of transformer by
+
+00:35:12.120 --> 00:35:15.500
+the way. And that's a beauty of like this entire API. So
+
+00:35:15.500 --> 00:35:18.780
+this is something that you have to import. So a TensorFlow
+
+00:35:18.780 --> 00:35:23.960
+auto model for sequence, uh, classification. So just try to
+
+00:35:23.960 --> 00:35:27.960
+do this particular import, then try to do a import I M P O R
+
+00:35:27.960 --> 00:35:34.540
+T import and a TensorFlow T E N S O R F L O W TensorFlow as
+
+00:35:34.540 --> 00:35:37.080
+TF. If you are going to get some sort of an issue with
+
+00:35:37.080 --> 00:35:40.340
+respect to TensorFlow, which I think you should not. The
+
+00:35:40.340 --> 00:35:43.600
+reason is in my last class, I believe we have used a
+
+00:35:43.600 --> 00:35:46.720
+TensorFlow, so I'm assuming that TensorFlow is available.
+
+00:35:47.040 --> 00:35:49.520
+Okay. Okay. So you know that how to install a TensorFlow
+
+00:35:49.520 --> 00:35:52.400
+again, it's the same pip install TensorFlow. That's it. But
+
+00:35:52.400 --> 00:35:54.620
+yeah, I'm assuming that it's available because I have
+
+00:35:54.620 --> 00:35:57.680
+already used it in my previous class, in your class itself.
+
+00:35:59.020 --> 00:36:06.800
+So import numpy as NP. So the other import guys that you
+
+00:36:06.800 --> 00:36:09.660
+have to do, uh, let me copy this code and ping you inside a
+
+00:36:09.660 --> 00:36:13.480
+chat so that you can do it with me. Yeah. It's available
+
+00:36:13.480 --> 00:36:18.720
+now. And uh, in your mobile chat. As well as in your, like,
+
+00:36:18.720 --> 00:36:23.100
+uh, above chat, we have already enabled the copy option so
+
+00:36:23.100 --> 00:36:25.800
+that if I'm sending you a code, you don't have to like, you
+
+00:36:25.800 --> 00:36:28.760
+know, drag, well, so you just like click on copy and then
+
+00:36:28.760 --> 00:36:33.640
+copy it just like you copied from chat GPT so that your life
+
+00:36:33.640 --> 00:36:36.720
+will be a little bit easier. Okay. So these are the import
+
+00:36:36.720 --> 00:36:39.220
+that we have to do now, what is the task that we are trying
+
+00:36:39.220 --> 00:36:42.800
+to solve over here? So we are going to pass a sentence and a
+
+00:36:42.800 --> 00:36:46.080
+system should tell me that that sentence is that particular
+
+00:36:46.080 --> 00:36:48.300
+sentence. That sentence is basically a negative or positive.
+
+00:36:48.520 --> 00:36:51.740
+That is something which I'm looking for now. One more thing.
+
+00:36:52.160 --> 00:36:56.740
+So hugging face, uh, provides you most of these libraries
+
+00:36:56.740 --> 00:37:00.560
+in, uh, with, uh, with like, uh, most of these, like a
+
+00:37:00.560 --> 00:37:05.560
+models with two library compatibility. One is a PI torch and
+
+00:37:05.560 --> 00:37:08.700
+one is a tensorflow. So you can try to call it even with the
+
+00:37:08.700 --> 00:37:10.860
+PI torch and you can try to call it even with the
+
+00:37:10.860 --> 00:37:13.800
+TensorFlow. So hugging phase gives you this, uh, facility as
+
+00:37:13.800 --> 00:37:17.040
+well. Uh, either of these, if you want. You can try to use
+
+00:37:17.040 --> 00:37:22.400
+it now. So here I have to do a classification. So positive,
+
+00:37:22.540 --> 00:37:26.520
+negative kind of a classification. So I'm going to, uh, load
+
+00:37:26.520 --> 00:37:30.060
+a model first, right? I'm going to load a model first, a pre
+
+00:37:30.060 --> 00:37:33.500
+-trained model I'm going to use from where. So I'm going to
+
+00:37:33.500 --> 00:37:37.380
+use those pre-trained model from, uh, uh, basically like a
+
+00:37:37.380 --> 00:37:40.760
+hugging face hugging face library, right? So this is going
+
+00:37:40.760 --> 00:37:43.640
+to help me out to load those model. As of now, there is no
+
+00:37:43.640 --> 00:37:46.420
+model which is available in my system. As you can see. It's,
+
+00:37:46.460 --> 00:37:48.960
+it's completely like a blank, right? There is no other file
+
+00:37:48.960 --> 00:37:53.480
+and, uh, yeah. So hugging phase, this is like a transform is
+
+00:37:53.480 --> 00:37:56.760
+I can use a hugging phase now. So basically I can go and
+
+00:37:56.760 --> 00:38:00.700
+then I can try to load the model. So here model underscore
+
+00:38:00.700 --> 00:38:04.820
+name, I'm going to create as a variable, and then I'm going
+
+00:38:04.820 --> 00:38:10.220
+to use a model which can be like, uh, you know, uh, use for
+
+00:38:10.220 --> 00:38:13.620
+doing this positive, negative kind of, uh, uh, like a
+
+00:38:13.620 --> 00:38:17.340
+sentence, a classification. So I can try to use maybe a
+
+00:38:17.340 --> 00:38:21.840
+distal bird on case fine tune model, uh, for English. So I
+
+00:38:21.840 --> 00:38:24.900
+can go to hugging face library and I can try to click on
+
+00:38:24.900 --> 00:38:28.820
+models. And maybe if I'm, if I'm completely not aware about
+
+00:38:28.820 --> 00:38:32.460
+something, then I can try to like a check the categories
+
+00:38:32.460 --> 00:38:36.000
+over here. So I'm looking for a test classification, so I
+
+00:38:36.000 --> 00:38:38.900
+can click on test classification. Now, these are the models.
+
+00:38:38.980 --> 00:38:42.840
+So many models are already available, right? So maybe one of
+
+00:38:42.840 --> 00:38:45.300
+model is this one, let's suppose, right? So. So this model
+
+00:38:45.300 --> 00:38:48.540
+distal bird on case fine tuning SST two for English
+
+00:38:48.540 --> 00:38:51.680
+language, I can even go and search for maybe some different
+
+00:38:51.680 --> 00:38:54.360
+languages because they must be having a model. So you can
+
+00:38:54.360 --> 00:38:57.600
+even go and search like, uh, this model is supports like a
+
+00:38:57.600 --> 00:39:01.460
+multiple languages. So there are some models which is going
+
+00:39:01.460 --> 00:39:03.660
+to support some different, different languages. And you will
+
+00:39:03.660 --> 00:39:07.440
+be able to see the complete information about this model.
+
+00:39:07.860 --> 00:39:10.880
+Plus you will be able to see that, uh, how you can call it
+
+00:39:10.880 --> 00:39:13.660
+in by torch or maybe TensorFlow rest or any other languages
+
+00:39:13.660 --> 00:39:17.220
+that you are looking for. So like, uh, how many people have
+
+00:39:17.220 --> 00:39:19.980
+downloaded? So almost 6 million people have downloaded this
+
+00:39:19.980 --> 00:39:23.440
+model last month itself, right? Now this model is having how
+
+00:39:23.440 --> 00:39:27.560
+many parameters? 67 million parameter, right? Tenser type F
+
+00:39:27.560 --> 00:39:32.440
+32. So fine. That's a bit. And then adapter fine tune a
+
+00:39:32.440 --> 00:39:35.840
+table of contents, a model detail. So this model is a fine
+
+00:39:35.840 --> 00:39:40.960
+tune check pointing of distal bus distal, but on case fine
+
+00:39:40.960 --> 00:39:45.180
+tune on SST two. Okay. And this model. Reaches an accuracy
+
+00:39:45.180 --> 00:39:49.900
+of 91.3% on the dev set for comparison bird based use case.
+
+00:39:50.100 --> 00:39:53.060
+This one developed by hugging face model type X
+
+00:39:53.060 --> 00:39:56.520
+classification. It can do language is English license Apache
+
+00:39:56.520 --> 00:40:00.320
+2.0 means you can try to use it anywhere. Uh, parent model
+
+00:40:00.320 --> 00:40:02.860
+for more detail about a distal word. We encourage you to
+
+00:40:02.860 --> 00:40:07.560
+check out this model card. Okay. Now, uh, how I can try to
+
+00:40:07.560 --> 00:40:10.940
+use it. So maybe I can just try to call transformer and then
+
+00:40:10.940 --> 00:40:15.080
+I can try to technically use this entire model, which I'm
+
+00:40:15.080 --> 00:40:17.900
+going to use, uh, in this way, right? Which I'm going to
+
+00:40:17.900 --> 00:40:22.340
+use. So users direct use, uh, misuse out of scope, use risk
+
+00:40:22.340 --> 00:40:24.720
+limitation. They have given you just a condition over there,
+
+00:40:24.840 --> 00:40:28.720
+uh, uh, training procedures. So fine tuning hyper-parameter
+
+00:40:28.720 --> 00:40:33.100
+learning rate, bad size, warm up, uh, and then, uh, maximum
+
+00:40:33.100 --> 00:40:35.940
+sequence length, number of training epochs. So all this
+
+00:40:35.940 --> 00:40:39.560
+detail is given to me and files and version. So these are
+
+00:40:39.560 --> 00:40:41.860
+the model file. Basically these are the checkpointing file.
+
+00:40:42.000 --> 00:40:45.380
+You will be able to find. Now CKPT file, you will be able to
+
+00:40:45.380 --> 00:40:47.840
+find out here. And again, there is a model file that you
+
+00:40:47.840 --> 00:40:53.300
+will be able to find out over here. And uh, yeah, so I can
+
+00:40:53.300 --> 00:40:57.000
+just go ahead and, uh, I can try to use it now to do that,
+
+00:40:57.040 --> 00:41:00.400
+right. To do that, to use this model in my code, what I will
+
+00:41:00.400 --> 00:41:03.520
+do is I'll just copy the name of the model. So copy it,
+
+00:41:03.600 --> 00:41:09.400
+right. Copy it over here. And then I'm going to give this as
+
+00:41:09.400 --> 00:41:12.900
+a model name. Yeah. So distal, but distal, but uncased. Uh,
+
+00:41:13.140 --> 00:41:15.820
+okay. Uh,
+
+00:41:20.380 --> 00:41:23.600
+maybe I can try to remove this last that's completely fine.
+
+00:41:23.780 --> 00:41:27.200
+It's just a classes, which is given over here. So this is
+
+00:41:27.200 --> 00:41:30.240
+the model, which I'm going to use it now, how I'm going to
+
+00:41:30.240 --> 00:41:32.780
+use it because that model is not available in my local that
+
+00:41:32.780 --> 00:41:36.480
+is available on a, uh, hugging face, right? So I have to
+
+00:41:36.480 --> 00:41:41.540
+download it basically. So I can try to download it and when
+
+00:41:41.540 --> 00:41:44.820
+I'm trying to download it. So I'm going to download that and
+
+00:41:44.820 --> 00:41:51.240
+use it, uh, for, uh, like, uh, prediction and then for a
+
+00:41:51.240 --> 00:41:54.540
+tokenization, right. For a classification and tokenization
+
+00:41:54.540 --> 00:41:57.000
+because whatever data, which I'm going to send inside a
+
+00:41:57.000 --> 00:42:00.140
+model. So obviously it is supposed to tokenize it. It is
+
+00:42:00.140 --> 00:42:02.900
+supposed to create embeddings and send for the, uh,
+
+00:42:03.020 --> 00:42:06.940
+prediction basically. So, okay, let me do it. So here I can
+
+00:42:06.940 --> 00:42:09.860
+try to use auto tokenizer, the import that I have done,
+
+00:42:09.880 --> 00:42:12.460
+right? So auto tokenizer.dot. Okay. So auto tokenizer.dot.
+
+00:42:12.520 --> 00:42:16.740
+From pre-trained. So this is my pre-trained model. Now I can
+
+00:42:16.740 --> 00:42:20.620
+try to pass my model name, right? I can try to pass my model
+
+00:42:20.620 --> 00:42:22.980
+name and then this is going to return me what this is going
+
+00:42:22.980 --> 00:42:28.300
+to return me my tokenizer. So whenever I'm sending a data,
+
+00:42:28.380 --> 00:42:31.580
+maybe I can try to tokenize it. And then, uh, I have to do a
+
+00:42:31.580 --> 00:42:34.300
+classification. So this is where my TF model sequence
+
+00:42:34.300 --> 00:42:37.200
+classification will come into a picture. I can try to give a
+
+00:42:37.200 --> 00:42:41.460
+model name and with the help of this, I will be able to do
+
+00:42:41.460 --> 00:42:44.980
+the classification. So one is for the tokenization. And one
+
+00:42:44.980 --> 00:42:49.520
+is for the prediction, right? Actually both are the same
+
+00:42:49.520 --> 00:42:53.920
+models, which I'm trying to load. So execute it guys and
+
+00:42:53.920 --> 00:42:59.360
+design to initiate using, uh, what, what happened OS error.
+
+00:43:02.210 --> 00:43:09.310
+Okay, sorry. I have missed our method over here. So from pre
+
+00:43:09.310 --> 00:43:12.130
+-trained, yeah, that was a mistake execute.
+
+00:43:14.920 --> 00:43:18.000
+So now this is the code guys. I have just pinged you the
+
+00:43:18.000 --> 00:43:23.540
+code inside your chat box. Now it is able to load the model.
+
+00:43:24.120 --> 00:43:28.060
+All pytorch model weights were used when initialized. This
+
+00:43:28.060 --> 00:43:32.540
+one, all weights of this one were initialized by pytorch
+
+00:43:32.540 --> 00:43:34.660
+model. If your task is similar to the task model of the
+
+00:43:34.660 --> 00:43:37.440
+checkpointing was trained, you can already use this one,
+
+00:43:37.480 --> 00:43:41.800
+right? Okay. So this is basically going to initialize. Now
+
+00:43:41.800 --> 00:43:46.060
+what I can do is I can try to basically write one text. T E
+
+00:43:46.060 --> 00:43:51.500
+X T. I love all the feature
+
+00:43:55.430 --> 00:44:01.210
+provided by Euron. Okay. So this is my text by the way. Now
+
+00:44:01.210 --> 00:44:03.850
+what I have to do, so I have to basically tokenize this one,
+
+00:44:03.910 --> 00:44:07.410
+right? So I have to basically tokenize this one and after
+
+00:44:07.410 --> 00:44:10.770
+tokenizing, so I have to send those data into my model. I
+
+00:44:10.770 --> 00:44:13.610
+have to fit in those data into the model. So to, for
+
+00:44:13.610 --> 00:44:17.490
+tokenize that one, I can, I can use tokenizer basically. So
+
+00:44:17.490 --> 00:44:20.870
+tokenizer, I can try to call and then inside that. I can try
+
+00:44:20.870 --> 00:44:24.010
+to pass my data, which is my text by the way. So text I'm
+
+00:44:24.010 --> 00:44:29.390
+going to pass and then return, return, return tensor. So
+
+00:44:29.390 --> 00:44:32.450
+basically I'm saying that that return my tensor TF
+
+00:44:32.450 --> 00:44:36.630
+basically. So this is going to tokenize the entire data as
+
+00:44:36.630 --> 00:44:41.030
+you can see. So input IDs, this, this, this, and this is my
+
+00:44:41.030 --> 00:44:45.810
+entire number, a numeric value, right? This is basically a
+
+00:44:45.810 --> 00:44:49.010
+numeric value. So as a tensor, it is trying to return me
+
+00:44:49.010 --> 00:44:52.390
+each and everything. Okay. Simple, right? It's a pre-trained
+
+00:44:52.390 --> 00:44:55.010
+model. So obviously it knows how to tokenize it. Even last
+
+00:44:55.010 --> 00:44:57.110
+time when we have trained our own model and we were testing
+
+00:44:57.110 --> 00:44:59.730
+it. So we have created our own custom tokenizer and
+
+00:44:59.730 --> 00:45:02.970
+eventually we were using it at the time of even prediction.
+
+00:45:03.250 --> 00:45:07.230
+So last LLMs that we have created a small one, a very, very
+
+00:45:07.230 --> 00:45:12.730
+small one. So here it is able to tokenize. So I can try to
+
+00:45:12.730 --> 00:45:16.450
+store this token somewhere. So maybe into a variable input
+
+00:45:16.450 --> 00:45:20.770
+variable. So this is going to my input. Now. The tokenize
+
+00:45:20.770 --> 00:45:25.190
+data, right? The numeric information. Then what I can do is
+
+00:45:25.190 --> 00:45:29.370
+I can try to run the, uh, like, uh, this, I can try to pass
+
+00:45:29.370 --> 00:45:32.550
+this input inside my model. So I have already loaded my
+
+00:45:32.550 --> 00:45:35.950
+model, right? So model is available to me. So I can try to
+
+00:45:35.950 --> 00:45:41.950
+call a model, model, and then I can try to like, uh, give a
+
+00:45:41.950 --> 00:45:47.390
+input. So this is my input. So static, static, INPUT, INPUT
+
+00:45:47.390 --> 00:45:50.390
+input. I'm going to give. Okay. Now, once I'm going to give
+
+00:45:50.390 --> 00:45:53.030
+the input inside this one, it is going to give me like, uh,
+
+00:45:53.150 --> 00:45:55.530
+something as a return, as you can see, right? It is giving
+
+00:45:55.530 --> 00:45:58.510
+me a positive negative basically, right? It is giving me a
+
+00:45:58.510 --> 00:46:03.630
+return over here now. So once I'm able to get a return,
+
+00:46:03.930 --> 00:46:07.130
+right? So what I have to do is I have to do the
+
+00:46:07.130 --> 00:46:09.910
+interpretation that what is this result? What is this result
+
+00:46:09.910 --> 00:46:12.990
+all about? And after I will be able to do the
+
+00:46:12.990 --> 00:46:15.790
+interpretation, I will be able to, you know, uh, get my
+
+00:46:15.790 --> 00:46:20.350
+final class. Basically. So here, uh, it is able to return me
+
+00:46:20.350 --> 00:46:22.130
+positive negative. I have to do some sort of a
+
+00:46:22.130 --> 00:46:25.650
+interpretation over here. So here I can try to store it into
+
+00:46:25.650 --> 00:46:29.190
+a variable called as output. So model has given me an
+
+00:46:29.190 --> 00:46:32.950
+output. I have not trained any model. So just used a model
+
+00:46:32.950 --> 00:46:37.830
+from a hugging phase and then like, uh, I'm taking a input
+
+00:46:37.830 --> 00:46:41.370
+and it is able to like, uh, give me an output after doing a
+
+00:46:41.370 --> 00:46:46.910
+tokenization. Okay. So let me bring you this piece of the
+
+00:46:46.910 --> 00:46:47.990
+code guys. Okay.
+
+00:46:55.640 --> 00:46:57.780
+I'm assuming that all of you are able to do it along with
+
+00:46:57.780 --> 00:47:03.260
+me. And please ping me in a chat if, uh, you have missed
+
+00:47:03.260 --> 00:47:07.120
+something. So pip install tensorflow done after this same
+
+00:47:07.120 --> 00:47:11.240
+error. What is the error? Auto model forces sequence
+
+00:47:11.240 --> 00:47:19.560
+classification auto model for, so instead of, no, no, no. So
+
+00:47:19.560 --> 00:47:22.600
+you are, your import is incorrect. Actually you are trying
+
+00:47:22.600 --> 00:47:25.180
+to do a import for pytorch base. That's the reason. It's a
+
+00:47:25.180 --> 00:47:28.960
+TF. See, you are trying to do import of just this one. You
+
+00:47:28.960 --> 00:47:33.100
+have to do this one, TF. By default, what system does is, so
+
+00:47:33.100 --> 00:47:35.660
+it will try to show you a pytorch based and that is the
+
+00:47:35.660 --> 00:47:40.420
+problem that you have. Yup. So just try to do the import of
+
+00:47:40.420 --> 00:47:44.360
+TF base, tensorflow based as you have installed tensorflow.
+
+00:47:45.020 --> 00:47:49.100
+I can see that clearly in your like, uh, error, it will be
+
+00:47:49.100 --> 00:47:49.380
+fixed.
+
+00:47:52.930 --> 00:47:53.870
+Fine. Everyone.
+
+00:48:09.170 --> 00:48:14.770
+Yup. Okay. Now, so we are able to like, uh, get the output
+
+00:48:14.770 --> 00:48:17.710
+from the model, but eventually I'm not looking for this kind
+
+00:48:17.710 --> 00:48:19.990
+of output, right? So I'm looking for something like a
+
+00:48:19.990 --> 00:48:23.250
+positive, negative, this kind of output from this, uh,
+
+00:48:23.710 --> 00:48:27.870
+entire model. So what I can do is I can try to apply a
+
+00:48:27.870 --> 00:48:31.190
+softmax on a output because we know that softmax is actually
+
+00:48:31.190 --> 00:48:34.550
+known for like, uh, finding out the probability. Yup. So
+
+00:48:34.550 --> 00:48:36.050
+finding out the probability.
+
+00:48:40.680 --> 00:48:45.120
+So here, right? So here, what we are going to do is we
+
+00:48:47.680 --> 00:48:52.800
+can try to call the softmax in this particular place. So I
+
+00:48:52.800 --> 00:49:00.340
+can try to call tensorflow.neuralnetwork.softmax.
+
+00:49:02.960 --> 00:49:06.520
+So softmax. And then what I can do is I can try to pass my
+
+00:49:06.520 --> 00:49:14.520
+output dot its logits, L-O-G-I-T-S logits along axis. One
+
+00:49:14.520 --> 00:49:22.750
+axis is equals to minus one and then convert it into a
+
+00:49:22.750 --> 00:49:23.550
+numpy.
+
+00:49:25.820 --> 00:49:30.180
+Okay. So this is something that I'm able to get out of this
+
+00:49:30.180 --> 00:49:34.740
+logits. And then let me extract the very first one.
+
+00:49:38.870 --> 00:49:44.070
+So a data from 0th one. Okay. So I've just like, uh, removed
+
+00:49:44.070 --> 00:49:47.570
+a two dimension I've converted into a one dimension, and
+
+00:49:47.570 --> 00:49:50.650
+then I can try to store it as a project. So I'm going to
+
+00:49:50.650 --> 00:49:53.150
+store it as a probe or maybe probability over here. So I'm
+
+00:49:53.150 --> 00:49:56.410
+going to store it as a probability again. So this is my
+
+00:49:56.410 --> 00:50:00.890
+probability for one class and other classes. And this was
+
+00:50:00.890 --> 00:50:03.590
+pretty much like a clear, even from the output. So even
+
+00:50:03.590 --> 00:50:06.450
+output was like a two. So one for the positive one for the
+
+00:50:06.450 --> 00:50:09.730
+negative class, it was trying to give it to me. I have to
+
+00:50:09.730 --> 00:50:13.630
+technically get a label of the entire, uh, like a labels
+
+00:50:13.630 --> 00:50:16.790
+basically. So I'm looking for like a positive negative kind
+
+00:50:16.790 --> 00:50:21.470
+of a label. So how I will be able to get a label. So to get
+
+00:50:21.470 --> 00:50:26.570
+a labels, I can try to create a variable, predict, predict
+
+00:50:31.470 --> 00:50:34.130
+class ID,
+
+00:50:36.340 --> 00:50:42.880
+and then numpy dot arg max. And then I can try to pass
+
+00:50:42.880 --> 00:50:46.640
+probability over here. So what is my class ID by the way,
+
+00:50:46.700 --> 00:50:47.620
+just
+
+00:50:49.860 --> 00:50:56.540
+an object, and then I can try to pass this class ID model
+
+00:50:56.540 --> 00:50:59.540
+dot config. Okay.
+
+00:51:02.680 --> 00:51:07.320
+And then I can try to, so this is giving me ID and I would
+
+00:51:07.320 --> 00:51:12.160
+like to get a label by the way. So, yeah, this is what I was
+
+00:51:12.160 --> 00:51:15.400
+looking for, by the way. So from the model, because inside a
+
+00:51:15.400 --> 00:51:18.420
+model model knows that how many classes I have like a
+
+00:51:18.420 --> 00:51:21.560
+positive or negative. So here I was just trying to show you
+
+00:51:21.560 --> 00:51:25.360
+that how I will be able to get that label. This is my output
+
+00:51:25.360 --> 00:51:29.460
+by the way, right? This is basically my output at the end.
+
+00:51:29.560 --> 00:51:32.940
+Of the day I was looking for. So it's, it's very simple, but
+
+00:51:32.940 --> 00:51:35.940
+yeah, a little bit of manual approach we have to follow. So
+
+00:51:35.940 --> 00:51:39.540
+we have to pass the input. Now I can try to pass any kind of
+
+00:51:39.540 --> 00:51:44.460
+a data over here. Right. Any kind of a sentence. It is, I am
+
+00:51:44.460 --> 00:51:53.140
+not liking this class, right? So negative, as you can see,
+
+00:51:53.200 --> 00:51:55.640
+right. It's giving me a negative. So as I have changed my
+
+00:51:55.640 --> 00:51:59.360
+data, so this entire thing has completely changed. Okay. So
+
+00:51:59.360 --> 00:52:02.180
+this is the code I'm pinging you so that you all will be
+
+00:52:02.180 --> 00:52:06.800
+able to do the same and you all will be able to test it with
+
+00:52:06.800 --> 00:52:10.680
+your own data. So code is now available inside your chat
+
+00:52:10.680 --> 00:52:15.040
+box. Making sense guys. So how we are able to use a pre
+
+00:52:15.040 --> 00:52:18.440
+-trained model, right? A model which is already available
+
+00:52:18.440 --> 00:52:23.040
+inside a hugging face, our best of best one on a huge amount
+
+00:52:23.040 --> 00:52:28.060
+of the data. Right. And how we are able to get a final
+
+00:52:28.060 --> 00:52:28.540
+prediction.
+
+00:52:39.370 --> 00:52:40.770
+Yes. Fine. Everyone.
+
+00:52:50.440 --> 00:52:53.360
+So any, any question, anyone, sir,
+
+00:53:01.200 --> 00:53:03.680
+how should we remember all this score? No one remembers any
+
+00:53:03.680 --> 00:53:06.280
+of this code. I just remember that what can be done with
+
+00:53:06.280 --> 00:53:09.600
+this model and that's it. Right. Now, if I'll talk about
+
+00:53:09.600 --> 00:53:15.000
+this code, uh, this code is already given you a given to you
+
+00:53:15.000 --> 00:53:18.740
+over here. See, is it not the same code? Yeah. They have
+
+00:53:18.740 --> 00:53:21.120
+given you basically with PyTorch. So basically this will
+
+00:53:21.120 --> 00:53:23.960
+work with the PyTorch installation. What I have done is I
+
+00:53:23.960 --> 00:53:26.700
+have just added TF over here. Okay. TensorFlow over here.
+
+00:53:27.540 --> 00:53:30.540
+Right. TensorFlow over here. And it's the same thing, right?
+
+00:53:30.660 --> 00:53:33.460
+It's the same thing. But it's the class ID. So model.config
+
+00:53:33.460 --> 00:53:37.560
+.id label. So none of the code, because it's, it's not like,
+
+00:53:37.640 --> 00:53:40.380
+uh, some physics, chemistry or mathematics or maybe like a
+
+00:53:40.380 --> 00:53:44.480
+history books, uh, that we try to follow during our primary
+
+00:53:44.480 --> 00:53:49.140
+education. So where we have to remember all the years that
+
+00:53:49.140 --> 00:53:51.800
+when, what has happened, who was the son and daughter of
+
+00:53:51.800 --> 00:53:54.320
+what? No, you don't have to remember that. Okay. Because
+
+00:53:54.320 --> 00:53:58.360
+there are like, uh, trillions of permutation combination of
+
+00:53:58.360 --> 00:54:03.220
+the code. It's all falls down to the use case, right? It's
+
+00:54:03.220 --> 00:54:05.720
+all falls on the use case that what use case I'm trying to
+
+00:54:05.720 --> 00:54:08.580
+build. And then we start writing a code in a step-by-step
+
+00:54:08.580 --> 00:54:13.500
+manner, where is the label positive and negative given.
+
+00:54:13.780 --> 00:54:16.320
+Basically it's a part of the model. So model is given me a
+
+00:54:16.320 --> 00:54:18.220
+label, positive, negative. That's the reason. So I'm using
+
+00:54:18.220 --> 00:54:20.940
+my, uh, like a pre-trained model, right? I'm not giving
+
+00:54:20.940 --> 00:54:23.780
+positive, negative. So basically model is giving you
+
+00:54:23.780 --> 00:54:26.180
+positive. Positive and negative model has been trained on
+
+00:54:26.180 --> 00:54:29.740
+two classes, basically a positive class and a negative
+
+00:54:29.740 --> 00:54:32.340
+class, fine.
+
+00:54:53.560 --> 00:54:57.680
+So how that negative came, I mean, label to ID, to label
+
+00:54:57.680 --> 00:55:01.720
+only returns positive or negative. So basically I'm trying
+
+00:55:01.720 --> 00:55:04.980
+to call with respect to models, right? Look into your code
+
+00:55:04.980 --> 00:55:07.440
+guys. You will be able to find out all the answer. I'm
+
+00:55:07.440 --> 00:55:10.120
+trying to call it with what are models. What is my model?
+
+00:55:11.440 --> 00:55:16.860
+What is my model? This one, right? A pre-trained one. So it
+
+00:55:16.860 --> 00:55:19.500
+is able to get everything from this one, but
+
+00:55:22.580 --> 00:55:25.100
+the output was negative. Yeah. Output is negative because I
+
+00:55:25.100 --> 00:55:27.600
+have passed the negative sentence. I'm not liking this
+
+00:55:27.600 --> 00:55:30.980
+class, right? So this was my sentence. So it is giving me a
+
+00:55:30.980 --> 00:55:33.700
+negative. So basically this model has been trained on two
+
+00:55:33.700 --> 00:55:38.000
+IDs, sorry, two, uh, like a outputs, which is one is
+
+00:55:38.000 --> 00:55:40.480
+negative. One is positive. So it can understand two labels,
+
+00:55:40.680 --> 00:55:44.780
+negative and positive. I'm able to get it as simple as that.
+
+00:55:47.020 --> 00:55:49.740
+Can you not provide the summaries of the lecture? No, we
+
+00:55:49.740 --> 00:55:52.240
+have not given that capability. So as of now, it's just
+
+00:55:52.240 --> 00:55:56.840
+doing a captioning, nothing more than that. Okay. So this is
+
+00:55:56.840 --> 00:55:59.820
+it. This is like a, one of the things that we are able to
+
+00:55:59.820 --> 00:56:03.240
+do, right? So we are, I think hugging face library, we were
+
+00:56:03.240 --> 00:56:05.340
+trying to understand, and I believe like a little bit of
+
+00:56:05.340 --> 00:56:08.160
+hugging face library, we are able to understand that we
+
+00:56:08.160 --> 00:56:11.600
+don't have to do a lot of coding. So basically, or like a
+
+00:56:11.600 --> 00:56:14.360
+model, we don't have to build from the scratch. If it is not
+
+00:56:14.360 --> 00:56:17.680
+required, I can just go over there. I can try to use any of
+
+00:56:17.680 --> 00:56:22.720
+these models. Okay. I can get my work done right now. Let me
+
+00:56:22.720 --> 00:56:25.380
+pick some different models. So this is one of the random
+
+00:56:25.380 --> 00:56:28.000
+model, which I have chosen, right? Well, as you can, as you
+
+00:56:28.000 --> 00:56:32.220
+have seen, so maybe I can go and I can try to choose some
+
+00:56:32.220 --> 00:56:36.120
+different model so that I can do the inferencing feature
+
+00:56:36.120 --> 00:56:39.300
+extraction, zero sort summarization. Okay. Let me choose a
+
+00:56:39.300 --> 00:56:43.380
+summarization models. Any model I can go and choose a latest
+
+00:56:43.380 --> 00:56:49.820
+one is okay. Facebook bought large CNN. Let's see. So how
+
+00:56:49.820 --> 00:56:53.660
+this model is going to work. So it is, it is basically this
+
+00:56:53.660 --> 00:56:57.460
+model is basically going to summarize the entire things,
+
+00:56:57.640 --> 00:57:01.840
+right? Summarize the entire things. So I can just copy from
+
+00:57:01.840 --> 00:57:06.360
+here and then I can just go inside my copy
+
+00:57:08.760 --> 00:57:12.480
+and paste and then transformer import pipe. I'll talk about
+
+00:57:12.480 --> 00:57:14.680
+pipeline. So what is the meaning of pipeline actually? So
+
+00:57:14.680 --> 00:57:18.240
+pipeline even makes your life much, much easier. You just
+
+00:57:18.240 --> 00:57:21.320
+pass the model name and the task name. This is the article,
+
+00:57:21.560 --> 00:57:24.520
+and then it will be able to summarize each and everything.
+
+00:57:25.080 --> 00:57:28.160
+Uh, let me remove this output, which I have copied from
+
+00:57:28.160 --> 00:57:31.480
+hugging face now, execute it. And let's see.
+
+00:57:37.280 --> 00:57:40.440
+So this is how easy it is guys. So just go to hugging face
+
+00:57:40.440 --> 00:57:43.760
+whenever you get some tasks nowadays. So generally this is
+
+00:57:43.760 --> 00:57:46.900
+what we do that we don't train the model from the various
+
+00:57:46.900 --> 00:57:49.120
+guys because someone has already done the hard work and
+
+00:57:49.120 --> 00:57:51.800
+someone has already bought a lot of money over there. If
+
+00:57:51.800 --> 00:57:53.540
+they have trained a good model because they have collected
+
+00:57:53.540 --> 00:57:55.420
+the data, they have bought, the GPU. Okay. GPU and
+
+00:57:55.420 --> 00:57:59.080
+everything. Yeah. So now let's see, see, we are able to get
+
+00:57:59.080 --> 00:58:03.760
+the summary, right? We are able to get the summary. So I
+
+00:58:03.760 --> 00:58:06.260
+have just copied what I have not trained any model. So what
+
+00:58:06.260 --> 00:58:09.720
+I've done, I've just used the model from hugging face. So
+
+00:58:09.720 --> 00:58:13.140
+pipeline is one of the feature which is given to you by the
+
+00:58:13.140 --> 00:58:17.520
+way now. So the task which I have done over here, so I could
+
+00:58:17.520 --> 00:58:20.100
+have done that even with the help of pipeline. So pipeline
+
+00:58:20.100 --> 00:58:23.900
+is a high level API. So where you just try to mention the
+
+00:58:23.900 --> 00:58:26.880
+task that you are trying to do. And then you try to mention
+
+00:58:26.880 --> 00:58:30.760
+basically, uh, like a model name, right? The model, which is
+
+00:58:30.760 --> 00:58:34.300
+already available and then simple, uh, like, uh, whatever
+
+00:58:34.300 --> 00:58:37.640
+procedure model is going to like a follow. So model like,
+
+00:58:37.720 --> 00:58:40.660
+uh, they're go, it is going to take the data. So I have this
+
+00:58:40.660 --> 00:58:43.580
+model summarizer over here. So summarizer, we are passing
+
+00:58:43.580 --> 00:58:46.040
+the article. We are saying that maximum length is this
+
+00:58:46.040 --> 00:58:49.180
+minimum length is this do sample is equal to false. And then
+
+00:58:49.180 --> 00:58:55.600
+I'm able to get the summary of it. Fine. So how to know the
+
+00:58:55.600 --> 00:58:58.320
+labels? Okay. So how the model will be generated or has been
+
+00:58:58.320 --> 00:59:03.040
+trained on how to know the labels. So basically when you go
+
+00:59:03.040 --> 00:59:05.780
+over here, when you try to check, so in a model
+
+00:59:05.780 --> 00:59:08.140
+specification itself, you will be able to get a lot of
+
+00:59:08.140 --> 00:59:11.080
+things. So for example, if I'm looking for a text
+
+00:59:11.080 --> 00:59:15.280
+classification, right? So I have used this, this particular
+
+00:59:15.280 --> 00:59:17.960
+model, right? I have used basically like a, this particular
+
+00:59:17.960 --> 00:59:22.160
+model. So if I'll go and if I'll check the detail of it, I
+
+00:59:22.160 --> 00:59:25.180
+will be able to like, uh, know that this model has been
+
+00:59:25.180 --> 00:59:28.300
+trained on like a. Uh, trained for how many parameters or
+
+00:59:28.300 --> 00:59:31.680
+what kind of output I can expect from this particular model.
+
+00:59:31.780 --> 00:59:35.180
+And I can then try this out at least this much. You have to
+
+00:59:35.180 --> 00:59:35.480
+search.
+
+00:59:42.070 --> 00:59:48.640
+Yeah. Okay. So now, uh, so second model I have like a used,
+
+00:59:48.740 --> 00:59:52.360
+and now let's go and then try to solve some other tasks. So
+
+00:59:52.360 --> 00:59:55.340
+feature extraction translation. Okay. I'll be using some
+
+00:59:55.340 --> 00:59:59.120
+translation model, let's suppose. So translation wise, let's
+
+00:59:59.120 --> 01:00:04.240
+try to use some like, uh, uh, recent models. Okay. So NLP
+
+01:00:04.240 --> 01:00:09.700
+distilbert and what translation it can do. Let me check it's
+
+01:00:09.700 --> 01:00:12.180
+task primary use translate the instead of this, this, this,
+
+01:00:12.180 --> 01:00:15.700
+the single sentence to translate among 200 languages. Okay.
+
+01:00:15.780 --> 01:00:18.900
+So with the help of this model, I will be able to translate,
+
+01:00:19.120 --> 01:00:22.880
+uh, my data into 200 different, different languages. Okay.
+
+01:00:23.200 --> 01:00:26.300
+Let's check the, okay. They have not given you the code
+
+01:00:26.300 --> 01:00:35.300
+base. Hmm. So it is not giving me the code base. Fine.
+
+01:00:59.580 --> 01:01:02.220
+In summarization model, we don't need to do a embedding
+
+01:01:02.220 --> 01:01:05.520
+input. No, we have to do the embedding input, but your
+
+01:01:05.520 --> 01:01:07.440
+pipeline is taking care of it. That's the meaning of
+
+01:01:07.440 --> 01:01:10.320
+pipeline. So pipeline is a high level wrapper, high level
+
+01:01:10.320 --> 01:01:13.900
+API. So basically whatever task that we have done manually
+
+01:01:13.900 --> 01:01:17.720
+over here, it's doing it for you. That's a, like a meaning
+
+01:01:17.720 --> 01:01:18.800
+of pipeline over here.
+
+01:01:27.280 --> 01:01:31.400
+Okay. So let's use this, uh, translate model. So code is not
+
+01:01:31.400 --> 01:01:34.080
+given, but yeah, I'll can take a help of AI. I can generate
+
+01:01:34.080 --> 01:01:38.620
+the code. So I'll be using this. Uh. NLB, uh, NLLB 200
+
+01:01:38.620 --> 01:01:44.400
+distilled 600 million. So this is the model I'm going to
+
+01:01:44.400 --> 01:01:47.740
+use. And what I will do is maybe I can try to pass some
+
+01:01:47.740 --> 01:01:51.880
+sentence and I'll try to ask this model to translate it in a
+
+01:01:51.880 --> 01:01:54.680
+Hindi. So I'm assuming that if it has been trained on 200
+
+01:01:54.680 --> 01:01:58.180
+languages, so it must have like, they must have trained on a
+
+01:01:58.180 --> 01:02:02.040
+Hindi as well. Right. I can maybe go in a detail of this
+
+01:02:02.040 --> 01:02:06.300
+model and then I can try to check that what an all like, uh,
+
+01:02:06.580 --> 01:02:11.300
+uh, uh, maybe I can try to check it's a community or
+
+01:02:11.300 --> 01:02:14.180
+something, uh, but yeah, 200 minutes, I I'm assuming that,
+
+01:02:14.260 --> 01:02:17.720
+uh, it can like a generate something in Hindi. So let me do
+
+01:02:17.720 --> 01:02:21.820
+it. Let me use this model. I'm just showing you guys how to
+
+01:02:21.820 --> 01:02:25.120
+use a hugging face basically. So it's budget by taking some
+
+01:02:25.120 --> 01:02:28.220
+random, random models out of this, uh, entire hugging face
+
+01:02:28.220 --> 01:02:34.120
+library. So, okay, let's do it. So what we can do is like,
+
+01:02:34.160 --> 01:02:39.660
+uh, we can try. Try to call from transformer, uh, import,
+
+01:02:39.760 --> 01:02:46.300
+import, what auto tokenizer auto tokenizer, and then import
+
+01:02:46.300 --> 01:02:59.530
+auto model for sequence LM. Okay, fine. Imported and then I
+
+01:02:59.530 --> 01:03:03.230
+can try to give a model underscore name. Model underscore
+
+01:03:03.230 --> 01:03:08.770
+name is what? So model name is basic. And then it'll be 200
+
+01:03:08.770 --> 01:03:15.690
+distilled and then it'll be 200 distilled. Yeah. So this is
+
+01:03:15.690 --> 01:03:19.850
+my model name. That's fine. Then first of all, I can try to
+
+01:03:19.850 --> 01:03:23.930
+call the tokenizers before passing our data. So auto
+
+01:03:23.930 --> 01:03:27.190
+tokenizer, same pipeline, I'm trying to follow the pipeline,
+
+01:03:27.270 --> 01:03:30.690
+which I have shown it to you from pre-trained, and then I
+
+01:03:30.690 --> 01:03:36.530
+can try to pass my model name over here. Uh, this is going
+
+01:03:36.530 --> 01:03:44.310
+to. To create a tokenizer for me, T-O-K-N-I-J-D-R tokenizer.
+
+01:03:44.410 --> 01:03:47.470
+It is going to create. Now once it is going to create a
+
+01:03:47.470 --> 01:03:49.170
+tokenizer, okay.
+
+01:03:52.180 --> 01:03:55.820
+So once it is going to create a tokenizer, so we can try to
+
+01:03:55.820 --> 01:03:59.200
+call my auto model sequencing for inferencing. So auto model
+
+01:03:59.200 --> 01:04:06.100
+sequence, LM dot from like a pre-trained. So here again, I'm
+
+01:04:06.100 --> 01:04:11.040
+going to pass my model. Same step, and this will become my
+
+01:04:11.040 --> 01:04:16.360
+model by the way. Okay. So model and tokenizer object, I'm
+
+01:04:16.360 --> 01:04:18.680
+able to create, as you can see, this is the model which I'm
+
+01:04:18.680 --> 01:04:22.080
+going to use. Now this model is by Facebook and, uh, as per
+
+01:04:22.080 --> 01:04:25.700
+the information, which was mentioned. So this model can like
+
+01:04:25.700 --> 01:04:29.020
+a do a 200 language translation. So one language to another
+
+01:04:29.020 --> 01:04:31.860
+language, 200 language translation, it will be able to do
+
+01:04:31.860 --> 01:04:35.080
+it. So now it is trying to load the entire object that you
+
+01:04:35.080 --> 01:04:37.340
+can see it's a big one. So. So it is taking some time.
+
+01:04:41.710 --> 01:04:46.290
+Okay. When is not 27 seconds now, now
+
+01:04:49.200 --> 01:04:56.000
+what we can do is, uh, we can try to give a sentence. So
+
+01:04:56.000 --> 01:05:00.540
+input, uh, text basically. So we can try to give a sentence,
+
+01:05:00.840 --> 01:05:14.860
+uh, my name is Dan show Kumar. I used to teach data. Okay.
+
+01:05:18.960 --> 01:05:23.000
+So this is my input text and I'll try to convert this text
+
+01:05:23.000 --> 01:05:27.020
+into the, like this English into a Hindi language, right? So
+
+01:05:27.020 --> 01:05:29.740
+English into a Hindi language. This is what, like, uh, I'll,
+
+01:05:29.840 --> 01:05:33.460
+I'll try to do over here. So let's see. So how we can like,
+
+01:05:33.480 --> 01:05:39.180
+uh, do it, uh, by the way, over here. So here, first of all,
+
+01:05:39.240 --> 01:05:43.300
+I have to convert this entire, like, uh, input text into our
+
+01:05:43.300 --> 01:05:47.580
+tokens, into its numerical representation. So I can try to
+
+01:05:47.580 --> 01:05:51.380
+call my tokenizer and then I can try to pass my input text
+
+01:05:51.380 --> 01:05:55.280
+over here. So input data over here. And if I'm going to
+
+01:05:55.280 --> 01:05:59.280
+execute this, so yeah, I'm able to convert my entire data as
+
+01:05:59.280 --> 01:06:03.500
+you can see into a numerical representation again. So same
+
+01:06:03.500 --> 01:06:06.740
+model is being used for tokenization as you can see, right?
+
+01:06:06.800 --> 01:06:09.540
+So whatever, whoever has built this model, whoever has
+
+01:06:09.540 --> 01:06:12.560
+trained this model, I'm just using a tokenizer from the same
+
+01:06:12.560 --> 01:06:15.980
+model. Yeah. Yeah. So it is able to convert into our tokens.
+
+01:06:16.080 --> 01:06:19.500
+Now, once it is a converted, a converted this into a tokens.
+
+01:06:19.720 --> 01:06:25.160
+So let's try to store it into a variable in coded. So in
+
+01:06:25.160 --> 01:06:30.620
+coding, it is able to create now once it's done, uh, then we
+
+01:06:30.620 --> 01:06:35.540
+can try to like, uh, do what? So we can try to call a model
+
+01:06:35.540 --> 01:06:42.480
+dot generate so model and then dot, I think there is a
+
+01:06:42.480 --> 01:06:46.640
+generate API. So model generate, generate what? So basically
+
+01:06:46.640 --> 01:06:51.920
+try to take this in coded data in coded data. I'm just
+
+01:06:51.920 --> 01:06:54.620
+trying to use double steric so that it can consider as a key
+
+01:06:54.620 --> 01:06:57.600
+value pair. It should not give me any kind of error. And
+
+01:06:57.600 --> 01:07:01.480
+then, uh, basically what it should do is, so it should
+
+01:07:01.480 --> 01:07:06.420
+convert one language into the, or so like it should convert
+
+01:07:06.420 --> 01:07:11.100
+one language to the different language. Okay. So before
+
+01:07:11.100 --> 01:07:15.960
+that, what I have to do is. So I have to perform some of the
+
+01:07:15.960 --> 01:07:20.560
+operation over here. So when I'm trying to tokenize it, I'm
+
+01:07:20.560 --> 01:07:25.200
+supposed to give an instruction that tokenizer dot
+
+01:07:29.810 --> 01:07:33.710
+SRC tokenizer dot SRC
+
+01:07:35.630 --> 01:07:37.110
+source
+
+01:07:41.650 --> 01:07:50.950
+language is equals to English underscore Latin. Yeah. Yeah.
+
+01:07:51.550 --> 01:07:55.690
+Basically. So, so that like, it will be able to tokenize it
+
+01:07:55.690 --> 01:07:59.130
+with the help of English Latin. So let's see after execution
+
+01:07:59.130 --> 01:08:06.310
+list object has no attributes, say as failed, let
+
+01:08:12.550 --> 01:08:16.210
+me comment it out. Yeah. It's working until this point. So
+
+01:08:16.210 --> 01:08:18.590
+I've just told that, that tokenizer. So whenever you're
+
+01:08:18.590 --> 01:08:21.130
+trying to call the tokenizer, so, and you're trying to call
+
+01:08:21.130 --> 01:08:24.330
+it, so please make sure that, that you are trying to use the
+
+01:08:24.330 --> 01:08:27.670
+source language as a English Latin. So I'm just trying to
+
+01:08:27.670 --> 01:08:31.890
+give this particular instruction to, uh, this one. And then,
+
+01:08:31.970 --> 01:08:36.290
+uh, same thing I have to do it for my output as well. So I
+
+01:08:36.290 --> 01:08:38.930
+have to give an instruction, very clear instruction to this
+
+01:08:38.930 --> 01:08:42.350
+one, that whenever you are going to give me an output. So
+
+01:08:42.350 --> 01:08:46.170
+always try to give me an output with the Hindi token, right,
+
+01:08:46.250 --> 01:08:49.950
+or whatever language which I'm trying to use. So here model
+
+01:08:49.950 --> 01:08:54.090
+dot generate, and I'm going to pass this, uh, English
+
+01:08:54.090 --> 01:08:58.270
+encodings, and then what I'm going to do. Is I'm going to
+
+01:08:58.270 --> 01:09:07.870
+basically call my tokenizer dot, uh, there is, uh, API
+
+01:09:07.870 --> 01:09:16.430
+called as language code to ID and, uh, here. So I can try to
+
+01:09:16.430 --> 01:09:21.150
+mention specifically Hindi Devanagari.
+
+01:09:23.020 --> 01:09:28.280
+Okay. So I can try to mention a specifically this one. Now
+
+01:09:28.280 --> 01:09:32.600
+let's try to execute it. Let's see if, uh, it is going to
+
+01:09:32.600 --> 01:09:35.740
+work or not. Let me execute it in a separate
+
+01:09:39.260 --> 01:09:49.600
+tokenizer in coding. Okay. So let me, for CD, for
+
+01:09:55.710 --> 01:10:01.490
+CD forced as per the parameter BOS token
+
+01:10:03.160 --> 01:10:17.880
+ID is equals to this. Lang code to ID. N G C O D to ID. Lang
+
+01:10:17.880 --> 01:10:25.660
+code to ID, H I N d V V. Yeah, it looks good. Let's see.
+
+01:10:29.820 --> 01:10:33.100
+And I will be tokenizer object has no attribute called as
+
+01:10:33.100 --> 01:10:34.560
+Lang quote two ID.
+
+01:10:44.840 --> 01:10:46.160
+Let's check. It
+
+01:10:57.430 --> 01:11:01.270
+length. Let me check guys, because every model comes with a
+
+01:11:01.270 --> 01:11:02.590
+different parameters. So let me check that. so I'm just
+
+01:11:02.590 --> 01:11:10.000
+trying to check that what parameters it supports so this is
+
+01:11:10.000 --> 01:11:13.260
+like till this point fine so we are able to convert it into
+
+01:11:13.260 --> 01:11:20.280
+a tokens and tokenizer dot it
+
+01:11:28.220 --> 01:11:33.620
+is having some API like
+
+01:11:36.310 --> 01:11:42.670
+tokenizer dot convert tokens to id convert token to id so
+
+01:11:42.670 --> 01:11:49.870
+this API is there so convert tokens to id and we can try to
+
+01:11:49.870 --> 01:11:58.850
+mention as a function parameter ok so tokenizer dot convert
+
+01:11:58.850 --> 01:12:04.230
+token to id convert token to id convert
+
+01:12:15.400 --> 01:12:20.000
+token to id yeah this is available convert token to id this
+
+01:12:20.000 --> 01:12:24.860
+function is available in class p10 token fast ok so convert
+
+01:12:24.860 --> 01:12:28.940
+token to id. So I'm just given the input list object has no
+
+01:12:28.940 --> 01:12:32.100
+attribute shape what is the issue now so
+
+01:12:34.340 --> 01:12:36.200
+generate encode and then
+
+01:12:40.900 --> 01:12:43.760
+tokenizer convert
+
+01:12:45.580 --> 01:12:52.490
+token to id model dot generate encode now
+
+01:12:58.020 --> 01:13:00.740
+it looks fine align with the attribute which is available
+
+01:13:00.740 --> 01:13:07.600
+list object has no attribute shape like it is getting some
+
+01:13:07.600 --> 01:13:13.840
+sort of a issue with a number of tensiles. So tokenize
+
+01:13:13.840 --> 01:13:14.900
+encode
+
+01:13:24.340 --> 01:13:25.940
+to this
+
+01:13:46.810 --> 01:13:49.690
+one is also not working transformer
+
+01:13:51.770 --> 01:13:54.530
+let's upgrade it anyone
+
+01:13:58.910 --> 01:14:03.550
+guys who is able to run it run this model for translation I
+
+01:14:07.840 --> 01:14:12.780
+think spirit operator this this no that is that is not going
+
+01:14:12.780 --> 01:14:15.260
+to create any issue it's fine just a input that we are
+
+01:14:15.260 --> 01:14:19.820
+trying to give basically like there is no API which we know
+
+01:14:19.820 --> 01:14:22.220
+as a known API for this one. We have just chosen this one.
+
+01:14:22.220 --> 01:14:26.140
+We have just chosen some random model so it is it is giving
+
+01:14:26.140 --> 01:14:26.880
+me an issue
+
+01:14:36.700 --> 01:14:41.900
+tokenizer lang code to id nlb tokenizer object has no
+
+01:14:41.900 --> 01:14:49.780
+attribute lang code to id that's a major problem to execute
+
+01:14:49.780 --> 01:14:52.160
+any random models ok
+
+01:15:16.990 --> 01:15:21.310
+so yeah these are the languages it can understand guys see
+
+01:15:21.310 --> 01:15:24.130
+so many languages it can understand yeah
+
+01:15:29.090 --> 01:15:32.270
+so I'm just printing like a tokenizer dot git vocab dot
+
+01:15:32.270 --> 01:15:36.270
+keys. And it is going to show you like what in all language
+
+01:15:36.270 --> 01:15:40.790
+it can basically understand so many languages I think a lot
+
+01:15:40.790 --> 01:15:43.330
+of Indian language is mentioned over here even I can see
+
+01:15:43.330 --> 01:15:46.770
+Punjabi Tamil Telugu all these languages the language which
+
+01:15:46.770 --> 01:15:50.890
+I can recognize at least yeah a lot
+
+01:15:55.880 --> 01:16:01.700
+of lot of things I can see ok so this is fine now let
+
+01:16:07.880 --> 01:16:10.680
+me check the code tokenize
+
+01:16:22.200 --> 01:16:24.820
+convert tokenize to id. And
+
+01:16:28.440 --> 01:16:33.940
+there is a suggestion that I should enter Hindi deva in this
+
+01:16:33.940 --> 01:16:34.820
+way all
+
+01:16:40.830 --> 01:16:43.830
+or generate I'm giving like a nice
+
+01:16:51.100 --> 01:16:52.220
+answer
+
+01:16:56.730 --> 01:16:58.210
+yeah
+
+01:17:04.510 --> 01:17:07.010
+now it's working so this there was an issue with this one
+
+01:17:07.010 --> 01:17:10.230
+the list issue was like basically with this and obviously
+
+01:17:10.230 --> 01:17:12.630
+there was an issue with the API as well so here I'm just
+
+01:17:12.630 --> 01:17:16.150
+trying to say that return tensor in a pytorch format pt is
+
+01:17:16.150 --> 01:17:18.110
+nothing but it's for pytorch so
+
+01:17:20.480 --> 01:17:24.120
+let's see model is like a running and yeah so whatever is
+
+01:17:24.120 --> 01:17:34.440
+running. So what
+
+01:17:34.440 --> 01:17:38.700
+I can
+
+01:17:38.700 --> 01:17:43.560
+do is I can try to save this one as a output so yeah some
+
+01:17:43.560 --> 01:17:47.380
+output I'm able to generate at least remove this part remove
+
+01:17:47.380 --> 01:17:52.260
+this part some output I'm able to generate.
+
+01:18:03.880 --> 01:18:06.840
+Are you able to get some output? Guys let me ping you this
+
+01:18:06.840 --> 01:18:13.680
+piece of the code so this is this code and then the output
+
+01:18:13.680 --> 01:18:17.260
+one is this sir
+
+01:18:21.510 --> 01:18:26.570
+URI yes yeah it's URI ok
+
+01:18:29.610 --> 01:18:33.290
+so you can take a help form URI even I like to use a URI
+
+01:18:33.290 --> 01:18:38.570
+like nowadays a lot previously I was using like a lot of
+
+01:18:38.570 --> 01:18:40.590
+chat GPT and all those things but yeah nowadays I'm
+
+01:18:40.590 --> 01:18:45.980
+following my own product. It's it can solve the issue so
+
+01:18:45.980 --> 01:18:50.540
+again same issue can be solved by other AI as well. Fine so
+
+01:18:50.540 --> 01:18:54.480
+we are able to get the output now output is available into a
+
+01:18:54.480 --> 01:18:58.640
+token format basically so which I'm not able to understand
+
+01:18:58.640 --> 01:19:02.540
+by the way so here what I can do is I can try to convert
+
+01:19:02.540 --> 01:19:07.300
+this entire things into a like a representation into a Hindi
+
+01:19:07.300 --> 01:19:10.680
+representation basically so I can try to call my tokenizer
+
+01:19:10.680 --> 01:19:13.780
+the tokenizer which I have initiated and then I can try to
+
+01:19:13.780 --> 01:19:18.960
+call my batch decode tokenizer and then here so I can try to
+
+01:19:18.960 --> 01:19:22.680
+pass my output so whatever like array that I'm able to see
+
+01:19:22.680 --> 01:19:27.960
+so I'm just trying to pass that one. Keep a special token is
+
+01:19:27.960 --> 01:19:31.660
+equals to true and let's see so what is the output which I'm
+
+01:19:31.660 --> 01:19:37.820
+able to get at 0th index so it's basically a blank it is not
+
+01:19:37.820 --> 01:19:42.780
+able to do anything maybe I can try changing my sentence
+
+01:19:42.780 --> 01:19:46.420
+over here. It is not able to understand Nansukumar because
+
+01:19:46.420 --> 01:19:49.840
+obviously when someone has trained the model maybe like they
+
+01:19:49.840 --> 01:19:55.920
+were not aware about the Nansukumar name. So this is just a
+
+01:19:55.920 --> 01:20:01.320
+test just a test let me give some simple sentence batch
+
+01:20:09.350 --> 01:20:11.910
+decode it is giving me I
+
+01:20:16.040 --> 01:20:17.940
+was expecting in in
+
+01:20:22.800 --> 01:20:30.230
+Hindi and this is where I have mentioned Hindi Deva. Now
+
+01:20:30.230 --> 01:20:36.250
+what went wrong? No. This is just a test so this just giving
+
+01:20:36.250 --> 01:20:38.470
+me the same output so
+
+01:20:40.360 --> 01:20:44.300
+output fine and
+
+01:20:48.490 --> 01:20:48.830
+here
+
+01:20:58.110 --> 01:21:03.810
+tokenizer convert token IDs to it
+
+01:21:21.890 --> 01:21:26.550
+is not able to understand that I'm looking for Hindi maybe
+
+01:21:26.550 --> 01:21:31.270
+let me remove this and test yeah not working. I think there
+
+01:21:31.270 --> 01:21:34.670
+was a problem last time so as you can see it is like I have
+
+01:21:34.670 --> 01:21:37.330
+just removed out like a bracket basically it was not able to
+
+01:21:37.330 --> 01:21:40.190
+understand like I'm looking for a Hindi so it was not able
+
+01:21:40.190 --> 01:21:43.970
+to interpret as you can see I'm able to convert my English
+
+01:21:43.970 --> 01:21:47.790
+language into the Hindi language now you can try to write as
+
+01:21:47.790 --> 01:21:51.910
+much as you can write and then you can try to convert it so
+
+01:21:51.910 --> 01:21:55.250
+maybe I can try to take this entire text and then I can try
+
+01:21:55.250 --> 01:22:01.610
+to put it over here a very very long text let me do a multi
+
+01:22:01.610 --> 01:22:04.310
+-line comment otherwise it will be an error.
+
+01:22:20.320 --> 01:22:24.780
+Hmm Abhijeet. I have removed that so now it's working so
+
+01:22:24.780 --> 01:22:27.780
+anyone guys who is able to translate so maybe you can try to
+
+01:22:27.780 --> 01:22:30.500
+choose you can try to translate in your own language
+
+01:22:30.500 --> 01:22:33.780
+whatever language that you know if you're from India then
+
+01:22:33.780 --> 01:22:36.800
+Tamil, Telugu, Punjabi, Bengali yeah so now I think I think
+
+01:22:36.800 --> 01:22:40.380
+now it's working so it is it is able to convert it into the
+
+01:22:40.380 --> 01:22:44.580
+Hindi language right so I'm able to use a pre-trained model
+
+01:22:44.580 --> 01:22:47.860
+guys and yeah so you can try to use it in your own language.
+
+01:22:48.080 --> 01:22:51.260
+Just have to like a check that what is the Hindi language.
+
+01:22:51.280 --> 01:22:54.360
+What is the representation of your language this one and
+
+01:22:54.360 --> 01:23:00.630
+that's it fine guys are we able to do it all of us yes
+
+01:23:03.800 --> 01:23:05.400
+everyone yeah
+
+01:23:22.450 --> 01:23:26.510
+I'm looking for some answer guys in your chat Devans is
+
+01:23:26.510 --> 01:23:29.750
+saying yes okay Devans what about others Joey is saying can
+
+01:23:29.750 --> 01:23:32.750
+you mention the model name yeah I have just chosen by the
+
+01:23:32.750 --> 01:23:36.010
+way the random model and I have already mentioned the model
+
+01:23:36.010 --> 01:23:38.930
+name over here and I believe I have already pinged you so
+
+01:23:38.930 --> 01:23:42.090
+this is the model name now you can go and choose any other
+
+01:23:42.090 --> 01:23:45.590
+model. So guys what I'm trying to show you that that there
+
+01:23:45.590 --> 01:23:50.890
+are six lakh model there is not like sorry 16 lakh model 1.6
+
+01:23:50.890 --> 01:23:54.270
+million model so I'm just trying to pick and choose a random
+
+01:23:54.270 --> 01:23:57.770
+model and then I'm trying to show you that how you can use
+
+01:23:57.770 --> 01:24:01.510
+it because no one can teach you right that again there is no
+
+01:24:01.510 --> 01:24:05.530
+point to teach like a 16 lakh model 1.6 million model and
+
+01:24:05.530 --> 01:24:08.470
+that too for the hundreds of tasks right hundreds of tasks
+
+01:24:08.470 --> 01:24:11.110
+so basically what I'm trying to show you is that if I'm
+
+01:24:11.110 --> 01:24:14.270
+looking for some task right. If I'm like looking for solving
+
+01:24:14.270 --> 01:24:18.130
+some problem so how I can come over here I can see the task
+
+01:24:18.130 --> 01:24:20.690
+and then I can try to choose the model and then I can try to
+
+01:24:20.690 --> 01:24:24.450
+make use of it this is the whole idea behind showing you
+
+01:24:24.450 --> 01:24:29.770
+these examples hope all of you are able to get it yeah those
+
+01:24:29.770 --> 01:24:32.870
+who are the part of like my data science class so over there
+
+01:24:32.870 --> 01:24:34.830
+when I will start my computer vision which I'm going to
+
+01:24:34.830 --> 01:24:38.350
+start I think very soon I'm already like a teaching CNN over
+
+01:24:38.350 --> 01:24:41.830
+there so I'm going to show you even this one that how we can
+
+01:24:41.830 --> 01:24:44.470
+try to use a video classification depth estimation object
+
+01:24:44.470 --> 01:24:47.110
+detection all of this pre-trained model on our heavy data
+
+01:24:47.110 --> 01:24:51.170
+set or even how I can do a fine tuning so if I have to do a
+
+01:24:51.170 --> 01:24:54.270
+fine tuning with my own data set so how I can do it yeah
+
+01:24:56.290 --> 01:25:01.710
+okay so this is one thing so now I think we can like come
+
+01:25:01.710 --> 01:25:06.150
+over here and then we can try to you know yeah
+
+01:25:11.460 --> 01:25:15.080
+so in its github Abhijit has pinged you a github link I
+
+01:25:15.080 --> 01:25:19.080
+believe where you can see what language it suggests support
+
+01:25:19.080 --> 01:25:22.360
+for this model. Right so you will be able to get all the
+
+01:25:22.360 --> 01:25:24.280
+information because whenever someone is going to release
+
+01:25:24.280 --> 01:25:27.340
+some models right so they mention always like a enough
+
+01:25:27.340 --> 01:25:30.640
+information so yeah this is the huge list there's the huge
+
+01:25:30.640 --> 01:25:35.600
+list so you can try to like a check whether your language is
+
+01:25:35.600 --> 01:25:39.060
+here or not and then you can try to test it and then you can
+
+01:25:39.060 --> 01:25:44.020
+yeah Tamil is here Indian language wise I can see Tamil I
+
+01:25:44.020 --> 01:25:46.860
+can see I'm not able to see some other language Sindhi is
+
+01:25:46.860 --> 01:25:50.800
+there yeah Sindhi is there. Sanskrit is also there Santhali
+
+01:25:50.800 --> 01:25:53.260
+is there Santhali is like a one of the rarest language which
+
+01:25:53.260 --> 01:25:56.880
+has been spoken in Chhattisgarh and Jharkhand area so the
+
+01:25:56.880 --> 01:26:03.640
+area where like from where I belongs actually so Odiya yeah
+
+01:26:03.640 --> 01:26:07.280
+Odiya is also here yeah a lot of lot of like Indian
+
+01:26:07.860 --> 01:26:14.500
+languages Mithili is also here okay that's amazing Mithili
+
+01:26:14.500 --> 01:26:20.260
+Maghi I speak Maghi as well Marathi. Yeah. It's also
+
+01:26:20.260 --> 01:26:23.440
+Malayalam a lot of Indian language guys a lot of Indian
+
+01:26:23.440 --> 01:26:26.500
+language so yeah you can get think of building something out
+
+01:26:26.500 --> 01:26:29.560
+of it Kashmiri language also there Kannada is also there
+
+01:26:29.560 --> 01:26:32.760
+okay that's amazing to see okay
+
+01:26:35.250 --> 01:26:37.110
+Bhojpuri
+
+01:26:38.390 --> 01:26:43.970
+Bengali so almost all the languages are available over here
+
+01:26:43.970 --> 01:26:48.070
+so please try to check your own language and then let me
+
+01:26:48.070 --> 01:26:51.870
+translate it in a Bhojpuri so I can just give a Bhojpuri
+
+01:26:51.870 --> 01:26:55.190
+over here let's see. What it returns so
+
+01:26:58.940 --> 01:27:02.100
+let's have fun yeah
+
+01:27:11.500 --> 01:27:13.620
+still running Marathi
+
+01:27:16.630 --> 01:27:18.870
+is there yeah a lot of a lot of almost all the English
+
+01:27:18.870 --> 01:27:25.250
+language Humara Naam Abhyukt Ba Aaj Bhojpuri is like a
+
+01:27:25.250 --> 01:27:27.450
+literally funny language when we are going to pronounce it
+
+01:27:27.450 --> 01:27:31.290
+Humara Naam Abhyukt Ba Aaj Hum Data Science Ke Baare Mein
+
+01:27:31.290 --> 01:27:36.590
+Likha Main Bahut Utsahid Bani Are you comfortable so yeah I
+
+01:27:36.590 --> 01:27:38.750
+am comfortable with couple of languages basically. So.
+
+01:27:38.750 --> 01:27:48.650
+Bengali 100% Odiya 100% Maghi Mathli Bhojpuri 100% like I
+
+01:27:48.650 --> 01:27:52.330
+can speak and I can even understand Santhali again I can
+
+01:27:52.330 --> 01:27:55.450
+understand it but yeah tone I will not be able to maybe like
+
+01:27:55.450 --> 01:28:00.650
+you know pronounce some of the words basically and yes
+
+01:28:00.650 --> 01:28:04.290
+English is one of the other language that I know and a
+
+01:28:04.290 --> 01:28:10.590
+little bit of Tamil I understand. Couple of words and Kanra
+
+01:28:10.590 --> 01:28:16.020
+obviously so I am comfortable with lot of languages because
+
+01:28:16.020 --> 01:28:19.080
+I have been in different from places so because of that like
+
+01:28:19.080 --> 01:28:23.520
+I used to interact with those I am from like a Bihar and
+
+01:28:23.520 --> 01:28:27.340
+Jharkhand both the places so Jharkhand became a state in
+
+01:28:27.340 --> 01:28:34.860
+2000 right and I am 1990 born basically so like and still my
+
+01:28:34.860 --> 01:28:38.880
+ancestors houses in Gaya district Bihar. And then I have
+
+01:28:38.880 --> 01:28:42.120
+studied. I studied in Jamshedpur then I have spent I have
+
+01:28:42.120 --> 01:28:44.900
+done my engineering from Odisha so just because of like
+
+01:28:44.900 --> 01:28:47.100
+moving here and there then I have been Chennai then I have
+
+01:28:47.100 --> 01:28:53.660
+been like in Pune, Bangalore so lot of places so I was able
+
+01:28:53.660 --> 01:28:55.820
+to like get an opportunity to learn lot of languages
+
+01:28:57.290 --> 01:29:03.750
+Bangalore all languages yeah so I can understand most of the
+
+01:29:03.750 --> 01:29:08.090
+language basically. Ke mon achche dada koviyo Kolkata
+
+01:29:08.090 --> 01:29:12.650
+achchen. I am from Bangalore. Even I am like when I started
+
+01:29:12.650 --> 01:29:17.090
+speaking in Bengali right so you will be able to see even
+
+01:29:17.090 --> 01:29:21.170
+like the kind of a native tone Bengali tone and my mother is
+
+01:29:21.170 --> 01:29:24.390
+a very good like Bengali fluent Bengali speaker.
+
+01:29:28.360 --> 01:29:32.260
+So even my mother like knows my mother is even like a better
+
+01:29:32.260 --> 01:29:35.960
+than me in terms of languages so she like literally knows a
+
+01:29:35.960 --> 01:29:38.940
+lot of languages with uttermost of uttermost fluency
+
+01:29:38.940 --> 01:29:44.200
+Bangalore is the best. Yeah all the places is best. And
+
+01:29:44.200 --> 01:29:46.520
+obviously. I am staying in Bangalore since last like a six
+
+01:29:46.520 --> 01:29:50.360
+to seven years. So it's my home obviously it's the best
+
+01:29:50.360 --> 01:29:53.240
+doesn't matter obviously like there is a problem everywhere
+
+01:29:53.990 --> 01:29:56.760
+but yeah I think we should go after the positive things
+
+01:29:56.760 --> 01:30:00.360
+there is negativity in the entire world so I don't think
+
+01:30:00.360 --> 01:30:13.160
+that we should count it okay. So here okay so that's
+
+01:30:13.160 --> 01:30:15.960
+funny. That's amazing. So we are able to translate something
+
+01:30:15.960 --> 01:30:19.520
+into a bhojpuri so maybe you can go now and then try to
+
+01:30:19.520 --> 01:30:24.320
+check some better model for translation right so best of
+
+01:30:24.320 --> 01:30:27.040
+best from a translation side so you have to go and you have
+
+01:30:27.040 --> 01:30:31.220
+to check each and every model it's a final like a parameter
+
+01:30:31.220 --> 01:30:34.620
+this outcome it's benchmarking and then just go and choose
+
+01:30:34.620 --> 01:30:37.280
+and then start building it people have already given the
+
+01:30:37.280 --> 01:30:43.460
+model so do whatever you want on top of it. Yeah. So a lot
+
+01:30:43.460 --> 01:30:46.820
+of opportunity a lot of things that can be done if you know
+
+01:30:46.820 --> 01:30:49.740
+like a hugging face and you should not remember anything
+
+01:30:49.740 --> 01:30:52.760
+it's like a kind of repository it's a search basically that
+
+01:30:52.760 --> 01:30:56.080
+you have to do no one remembers even if you are going to ask
+
+01:30:56.080 --> 01:30:59.900
+me I don't even remember like one single complete model name
+
+01:30:59.900 --> 01:31:04.300
+I don't remember even I have used hundreds of it but still
+
+01:31:04.300 --> 01:31:10.240
+okay so this is this and now let's try to understand that
+
+01:31:10.240 --> 01:31:15.320
+how we can do a fine tuning right. So I have an existing
+
+01:31:15.320 --> 01:31:20.140
+model and how I will be able to like use some of the model
+
+01:31:20.140 --> 01:31:24.960
+which is already available in hugging face right and then
+
+01:31:24.960 --> 01:31:29.240
+I'll try to do a fine tuning on top of the available model.
+
+01:31:29.840 --> 01:31:32.640
+So are you ready guys can we go ahead and do a fine tuning
+
+01:31:32.640 --> 01:31:32.900
+now.
+
+01:31:36.160 --> 01:31:40.560
+Yeah I think we all understand what is the meaning of fine
+
+01:31:40.560 --> 01:31:42.620
+tuning those who don't understand let me give you an
+
+01:31:42.620 --> 01:31:46.380
+explanation so fine tuning is nothing but there is a model
+
+01:31:46.380 --> 01:31:49.640
+that you have. And maybe that model will not be able to
+
+01:31:49.640 --> 01:31:52.760
+understand your data that model has been trained on some
+
+01:31:52.760 --> 01:31:56.680
+other data set a huge one what you want is you would like to
+
+01:31:56.680 --> 01:31:59.780
+like a train it with your own data set so that is something
+
+01:31:59.780 --> 01:32:04.640
+called as fine tuning so you will try to choose some of the
+
+01:32:04.640 --> 01:32:09.520
+pre-trained model and then pass it with my own data yeah so
+
+01:32:09.520 --> 01:32:12.780
+let's start doing it guys and let's see how we can do a fine
+
+01:32:12.780 --> 01:32:15.900
+tuning by the way right and then you will be able to. And
+
+01:32:15.900 --> 01:32:18.640
+again so data model everything I will be using from a
+
+01:32:18.640 --> 01:32:21.120
+hugging face in today's class right today's class is all
+
+01:32:21.120 --> 01:32:27.400
+about hugging face. So from data set sets basically import
+
+01:32:27.400 --> 01:32:32.840
+load underscore data set so this module is going to help me
+
+01:32:32.840 --> 01:32:37.120
+out to load a data set from a hugging face so load a data
+
+01:32:37.120 --> 01:32:41.560
+set and then I can try to give over here IMDB data set so
+
+01:32:41.560 --> 01:32:45.080
+this is basically a movie review data set right IMDB data
+
+01:32:45.080 --> 01:32:47.680
+set. Which is already available on hugging face so if you
+
+01:32:47.680 --> 01:32:51.120
+will go and check inside a data set and then if you are
+
+01:32:51.120 --> 01:32:55.760
+going to like a search for maybe name IMDB so you will be
+
+01:32:55.760 --> 01:32:58.720
+able to find out a lot of data set over here like this is
+
+01:32:58.720 --> 01:33:01.740
+the IMDB data set and then you can even go and check so
+
+01:33:01.740 --> 01:33:04.940
+label is also there so zero for negative and then one for
+
+01:33:04.940 --> 01:33:07.300
+positive and there are so many data set which is available.
+
+01:33:07.720 --> 01:33:11.380
+So I will be using this data set and from hugging face
+
+01:33:11.380 --> 01:33:14.360
+itself and then I will be using a model. A model. A model
+
+01:33:14.360 --> 01:33:17.640
+which has been trained on some other data set but trained
+
+01:33:17.640 --> 01:33:21.140
+for these two labels G negative and positive and I will be
+
+01:33:21.140 --> 01:33:24.260
+passing this data set into the model to do a fine tuning
+
+01:33:24.260 --> 01:33:27.420
+right. So like a lot of like a one lakh records are
+
+01:33:27.420 --> 01:33:31.180
+available 83 MB of the data set and the way I'm going to
+
+01:33:31.180 --> 01:33:34.880
+show you of like a fine tuning so if you understand that
+
+01:33:34.880 --> 01:33:39.540
+part then whatever model is available whatever you will be
+
+01:33:39.540 --> 01:33:42.460
+able to do a fine tuning with all the models right all the
+
+01:33:42.460 --> 01:33:47.000
+models. So here what I can do is I can just try to load the
+
+01:33:47.000 --> 01:33:52.700
+data set IMDB data set so now data set it is loading yeah
+
+01:34:00.890 --> 01:34:04.690
+so this is the object of the data set which you are able to
+
+01:34:04.690 --> 01:34:08.190
+see maybe I can try to store it into a variable called a
+
+01:34:08.190 --> 01:34:10.090
+data set now
+
+01:34:12.940 --> 01:34:16.120
+the data set that it has loaded so maybe you can try to run
+
+01:34:16.120 --> 01:34:22.660
+some sort of a like a little bit of in depth things so that
+
+01:34:22.660 --> 01:34:24.880
+you will get to know. Like what are what kind of a data that
+
+01:34:24.880 --> 01:34:28.180
+I have anyhow that data is visible so if you are going to
+
+01:34:28.180 --> 01:34:30.300
+call the data set so it is going to tell you that training
+
+01:34:30.300 --> 01:34:34.120
+data set 25000 records are available for testing 25000
+
+01:34:34.120 --> 01:34:38.700
+records are available unsupervised so basically like a 50
+
+01:34:38.700 --> 01:34:41.400
+,000 records are available so if I would like to see some of
+
+01:34:41.400 --> 01:34:44.620
+the data so I can see those data set so maybe I can try to
+
+01:34:44.620 --> 01:34:48.780
+like write a simple Python and then I can go into TRAIN
+
+01:34:48.780 --> 01:34:56.440
+train sorry my bad. He should be. Inside a string so this is
+
+01:34:56.440 --> 01:35:02.480
+the data now out of that. So out of that maybe I'm looking
+
+01:35:02.480 --> 01:35:06.540
+for a very fast data so 0th index so yeah this is the data
+
+01:35:06.540 --> 01:35:10.660
+so text and then label if I'm looking for maybe a hundredth
+
+01:35:10.660 --> 01:35:14.340
+data or thousands data so this is the data guys text and
+
+01:35:14.340 --> 01:35:18.340
+label so text and label is given to you simple right simple
+
+01:35:18.340 --> 01:35:21.000
+so this is basically the original data that we are able to
+
+01:35:21.000 --> 01:35:23.480
+load. You can see that. You can try to prepare your own data
+
+01:35:23.480 --> 01:35:26.140
+set as well that's completely fine in the similar manner and
+
+01:35:26.140 --> 01:35:28.900
+then you can try to pass those data set to the model so if
+
+01:35:28.900 --> 01:35:32.760
+you want so we are able to load our data set let me ping you
+
+01:35:32.760 --> 01:35:36.120
+this code so sir
+
+01:35:37.880 --> 01:35:42.760
+give code yeah take code so basically this is the data set I
+
+01:35:42.760 --> 01:35:46.580
+am able to load right and even I am able to see that what is
+
+01:35:46.580 --> 01:35:51.660
+there inside the data set now sir can we also doing a
+
+01:35:51.660 --> 01:35:55.860
+translation fine tuning or. It's for only classification I'm
+
+01:35:55.860 --> 01:35:58.480
+going to do it for classification you can also do it for
+
+01:35:58.480 --> 01:36:00.780
+translation that's completely fine at the end of the day you
+
+01:36:00.780 --> 01:36:03.920
+are trying to find you in transformers right so pipeline is
+
+01:36:03.920 --> 01:36:07.620
+not going to change but yeah task wise your models are going
+
+01:36:07.620 --> 01:36:10.640
+to change your data is going to change as simple as that
+
+01:36:10.640 --> 01:36:13.620
+right for example if I'm doing a fine tuning for translation
+
+01:36:13.620 --> 01:36:17.820
+so I need both the version for example some these models
+
+01:36:17.820 --> 01:36:21.020
+will not be able to understand some of the word from English
+
+01:36:21.020 --> 01:36:24.780
+to Hindi so you have to be like. Keep a data in that way the
+
+01:36:24.780 --> 01:36:26.880
+way model will be able to understand English Hindi both and
+
+01:36:26.880 --> 01:36:29.960
+then you have to do a fine tuning this is what happens in
+
+01:36:29.960 --> 01:36:32.320
+terms of translation fine tuning here I'm going to show you
+
+01:36:32.320 --> 01:36:39.240
+with classification okay so this is this now a data set I am
+
+01:36:39.240 --> 01:36:42.340
+able to like a load so that's completely fine now let's try
+
+01:36:42.340 --> 01:36:48.480
+to load a model right model not found no model name a data
+
+01:36:48.480 --> 01:36:53.700
+set install transformer you will be able to find and. okay
+
+01:37:00.450 --> 01:37:08.310
+so here from transformer import just pip install load data
+
+01:37:08.310 --> 01:37:15.830
+set do it. auto auto tokenizer print
+
+01:37:17.590 --> 01:37:19.790
+hello why pip
+
+01:37:21.840 --> 01:37:27.620
+install data set just do it auto tokenizer so here I'm going
+
+01:37:27.620 --> 01:37:32.660
+to load the model so model underscore checkpoint c h e c k p
+
+01:37:32.660 --> 01:37:35.520
+o i n t and then I'm Checkpointing is nothing but an
+
+01:37:35.520 --> 01:37:38.880
+intermediate file. So a saved state basically. So here I can
+
+01:37:38.880 --> 01:37:43.400
+try to give my model name. So distil-bert-based-uncased. Let
+
+01:37:43.400 --> 01:37:48.800
+me choose some model from here which can be used for a
+
+01:37:48.800 --> 01:37:57.760
+classification, distil which will be even easier to, distil
+
+01:37:57.760 --> 01:38:02.160
+-based-uncased,
+
+01:38:10.260 --> 01:38:16.980
+distil-bert-based-uncased,
+
+01:38:23.180 --> 01:38:23.880
+distil-bert
+
+01:38:27.020 --> 01:38:33.480
+-based-uncased. So this is the model I am going to use and
+
+01:38:33.480 --> 01:38:37.960
+here so basically you will be able to find out the entire
+
+01:38:37.960 --> 01:38:41.960
+model files. Entire model files are available, so I will be
+
+01:38:41.960 --> 01:38:46.280
+using this model by the way. So distil-bert-uncased, so
+
+01:38:48.300 --> 01:38:54.180
+distil-bert, remove the category. So distil-bert-based
+
+01:38:54.180 --> 01:38:57.180
+-uncased, this is the model I am going to use it for like a
+
+01:38:57.180 --> 01:39:00.500
+training or like for fine tuning and for tokenization
+
+01:39:00.500 --> 01:39:05.400
+because same model I have to use. So auto-tokenize.from
+
+01:39:05.400 --> 01:39:10.560
+-pretrained and then here so I can try to pass model. In
+
+01:39:10.560 --> 01:39:15.440
+this particular place. So now this is going to tokenize my
+
+01:39:15.440 --> 01:39:22.870
+data, tokenizer. So this is going to tokenize my data set.
+
+01:39:22.970 --> 01:39:28.150
+Now once tokenize, tokenizing like a data set will be done.
+
+01:39:29.070 --> 01:39:35.170
+So what we can do is, so we can try to, tokenizer,
+
+01:39:35.290 --> 01:39:39.690
+so it will tokenize, that's fine, now
+
+01:39:45.550 --> 01:39:46.770
+we have to do.
+
+01:39:51.380 --> 01:39:58.100
+Mapping, okay guys, let me write one function, tokenizer
+
+01:39:58.100 --> 01:40:02.620
+.function, let's suppose if I'm going to write, I'm going to
+
+01:40:02.620 --> 01:40:08.380
+pass a data over here now. So I'm going to pass a multiple
+
+01:40:08.380 --> 01:40:17.300
+data basically, so what I have to do is return tokenizer
+
+01:40:17.300 --> 01:40:27.520
+instance and then. So tokenizer instance data and then from
+
+01:40:27.520 --> 01:40:33.740
+data, what is the variable, data set we have. Okay so
+
+01:40:33.740 --> 01:40:41.560
+example and then from there data text, it is supposed to
+
+01:40:41.560 --> 01:40:50.630
+extract, padding, let's keep it for max length.
+
+01:40:53.540 --> 01:40:58.760
+Okay. Okay. There is another parameter, truncation, truncate
+
+01:40:58.760 --> 01:41:05.150
+the data, true, okay. So this is just a small function I
+
+01:41:05.150 --> 01:41:10.630
+have created for tokenizing the data. Now data set, the data
+
+01:41:10.630 --> 01:41:13.450
+set that we have loaded, this data set, we can try to call
+
+01:41:13.450 --> 01:41:17.570
+this data set and then I can do the mapping. So I think from
+
+01:41:17.570 --> 01:41:21.270
+Python, we all know what map does. So map will always try to
+
+01:41:21.270 --> 01:41:25.630
+map something with the function. Right? Function. So
+
+01:41:25.630 --> 01:41:28.070
+tokenizer function that I have created, so I'll be mapping
+
+01:41:28.070 --> 01:41:33.410
+it with this and yeah, so in a batch mode, try to do this
+
+01:41:33.410 --> 01:41:37.530
+tokenization. So data set dot map, I'm going to call and
+
+01:41:37.530 --> 01:41:43.810
+then here, so it is going to store tokenized underscore data
+
+01:41:43.810 --> 01:41:48.850
+set. So my data set will be tokenized. My data set will be
+
+01:41:48.850 --> 01:41:51.810
+converted into this. So this is what mapping does, guys,
+
+01:41:51.830 --> 01:41:54.810
+that's the reason I have called this function so that. In a
+
+01:41:54.810 --> 01:41:57.130
+batch by batch, batch by batch, because it's a one lakh
+
+01:41:57.130 --> 01:41:59.850
+record, which I'm talking about. So first it is going to
+
+01:41:59.850 --> 01:42:02.510
+take 25,000, 25,000, three batches we have, right? As we can
+
+01:42:02.510 --> 01:42:06.090
+see, we have three batches, 25,000, 25,000, 50,000. So batch
+
+01:42:06.090 --> 01:42:08.490
+by batch, batch by batch, it will take the data and then it
+
+01:42:08.490 --> 01:42:12.270
+is going to tokenize it just with this, like this particular
+
+01:42:12.270 --> 01:42:16.150
+model. So here I'm just converting the data into its
+
+01:42:16.150 --> 01:42:19.310
+numerical representation. You can call and you can now
+
+01:42:19.310 --> 01:42:24.110
+check. So now feature, text label, input IDs and attention
+
+01:42:24.110 --> 01:42:27.230
+marks. Everything is added over here for all the data, input
+
+01:42:27.230 --> 01:42:30.050
+IDs and attention marks has been added. Now, if you would
+
+01:42:30.050 --> 01:42:32.690
+like to investigate this data, so you can go and you can try
+
+01:42:32.690 --> 01:42:34.930
+to investigate this data the way we have done the
+
+01:42:34.930 --> 01:42:39.850
+investigation on like the previous one in the exact same
+
+01:42:39.850 --> 01:42:44.950
+way. So this way we can try to investigate it. So we can try
+
+01:42:44.950 --> 01:42:52.740
+to train, pick some data from the train, train data, and
+
+01:42:52.740 --> 01:42:55.900
+then maybe a zero record. So if I choose record, I can try
+
+01:42:55.900 --> 01:42:58.520
+to pick and choose. So as you can see, this is my original
+
+01:42:58.520 --> 01:43:01.080
+data, right? This is the label which was given. So this was
+
+01:43:01.080 --> 01:43:04.140
+the data which was coming from like a dataset itself,
+
+01:43:04.320 --> 01:43:07.860
+original dataset. It has created an input IDs basically,
+
+01:43:07.920 --> 01:43:12.400
+right? Input IDs and it has created the mask token. So each
+
+01:43:12.400 --> 01:43:15.600
+and everything is done. If I would like to like a check just
+
+01:43:15.600 --> 01:43:19.540
+the input IDs or just like a labels, I think we all know how
+
+01:43:19.540 --> 01:43:22.200
+to extract it. This is just a dictionary, right? So this is
+
+01:43:22.200 --> 01:43:24.060
+just a dictionary. So key value, key value pairs are
+
+01:43:24.060 --> 01:43:25.960
+available. Okay. So this is just a simple fetch it in a
+
+01:43:25.960 --> 01:43:28.120
+Pythonic way. And then you can try to cross check and you
+
+01:43:28.120 --> 01:43:32.340
+can try to see each and everything, right? See each and
+
+01:43:32.340 --> 01:43:36.160
+everything out of this one. So now inside my data, if you
+
+01:43:36.160 --> 01:43:39.460
+will go and check. So we have what we have basically a text,
+
+01:43:39.580 --> 01:43:42.200
+we have a labels, we have input IDs and we have basically
+
+01:43:42.200 --> 01:43:45.400
+attention mask, right? We have basically a attention mask
+
+01:43:45.400 --> 01:43:52.060
+now here. So we will try to like, uh, uh, basically like,
+
+01:43:52.120 --> 01:43:55.740
+uh, we will try to remove some of the of these things out
+
+01:43:55.740 --> 01:44:00.040
+of, uh, like this entire data set. So anyone guys who can
+
+01:44:00.040 --> 01:44:03.260
+tell me what is required and what is not required to train
+
+01:44:03.260 --> 01:44:08.560
+the model, anyone see, we have four in a four thing, right?
+
+01:44:08.700 --> 01:44:11.180
+Do we need all those four things and model will be able to
+
+01:44:11.180 --> 01:44:14.840
+understand all those four thing. I don't think so. Right? So
+
+01:44:14.840 --> 01:44:17.940
+for sure model will not be able to understand text labels.
+
+01:44:18.180 --> 01:44:20.720
+Model will be able to understand because labels are by
+
+01:44:20.720 --> 01:44:23.960
+default available into a numerical representation. If labels
+
+01:44:23.960 --> 01:44:27.820
+would have available into a, uh, like, uh, uh, some
+
+01:44:27.820 --> 01:44:30.080
+categorical representation, positive and negative kind of a
+
+01:44:30.080 --> 01:44:33.080
+things, then I'll have to change this label, right? I have
+
+01:44:33.080 --> 01:44:36.080
+to convert this one into a numerical representation, but I
+
+01:44:36.080 --> 01:44:40.720
+have to remove this text basically. Yeah. Text and label is
+
+01:44:40.720 --> 01:44:44.280
+required and no text is not required, right? Because I have
+
+01:44:44.280 --> 01:44:46.820
+already created the input IDs, which is basically coming
+
+01:44:46.820 --> 01:44:51.920
+from a text. So text and label was actually required. But
+
+01:44:51.920 --> 01:44:54.820
+now. I have to remove the text, right? Because this line, my
+
+01:44:54.820 --> 01:44:58.920
+model will not be able to understand at all. Yeah. Because
+
+01:44:58.920 --> 01:45:01.440
+this is the reason. So I have used them text, right? And I
+
+01:45:01.440 --> 01:45:03.800
+have just converted into a input ID and attention mask, by
+
+01:45:03.800 --> 01:45:07.140
+the way. Yes, everyone. So if you're looking for like a
+
+01:45:07.140 --> 01:45:09.680
+attention mask, so you, when you can try to print, what is
+
+01:45:09.680 --> 01:45:13.420
+like a, how attention mask looks like. So 1 0 1 0 1 0 1 0.
+
+01:45:13.940 --> 01:45:16.660
+So basically anyone who can tell me what is the meaning of
+
+01:45:16.660 --> 01:45:17.600
+attention mask, by the way,
+
+01:45:22.090 --> 01:45:24.190
+anyone, anyone who can tell me what is the meaning of
+
+01:45:24.190 --> 01:45:29.950
+attention mask? I believe, uh, like, uh, we talked about it,
+
+01:45:29.970 --> 01:45:35.150
+uh, like, uh, so many times now, anyone who can tell me what
+
+01:45:35.150 --> 01:45:37.630
+is the meaning of attention mask, by the way, it's
+
+01:45:41.020 --> 01:45:43.680
+a basic, and we have discussed about it in my theory, in my
+
+01:45:43.680 --> 01:45:48.660
+practical, so many times, and I'm assuming that, uh, my
+
+01:45:48.660 --> 01:45:51.100
+students should have reply, like, uh, my students should be
+
+01:45:51.100 --> 01:45:54.920
+able to answer this one. So attention layer, past the
+
+01:45:54.920 --> 01:45:58.660
+output, they want to say attention layer, past output. Okay.
+
+01:45:58.820 --> 01:46:05.780
+No. That is not an additional mask. See guys, I have
+
+01:46:05.780 --> 01:46:08.680
+explained to you multiple times. This one, if you're going
+
+01:46:08.680 --> 01:46:12.600
+to forget a basic concept, how it is going to work, Joey is
+
+01:46:12.600 --> 01:46:16.800
+saying one hot encoding, no Joey, just because it is giving
+
+01:46:16.800 --> 01:46:19.340
+you 0 1 0 1 doesn't mean that everything is one hot
+
+01:46:19.340 --> 01:46:24.980
+encoding. High transfer to be the next while training, uh,
+
+01:46:25.520 --> 01:46:30.900
+okay, let me explain to you. See, what is the meaning of
+
+01:46:30.900 --> 01:46:34.820
+512? Can I say that 512 meaning is that whatever input that
+
+01:46:34.820 --> 01:46:37.900
+we are going to pass through the length of that input,
+
+01:46:38.100 --> 01:46:41.880
+right? So length of that input is basically going to be
+
+01:46:41.880 --> 01:46:44.840
+what? So length of that input is
+
+01:46:48.940 --> 01:46:53.400
+going to be 512 all the time. Right now, let's suppose I
+
+01:46:53.400 --> 01:46:56.160
+have like, uh, what
+
+01:47:02.430 --> 01:47:09.110
+people are saying. So next is not needed. Padding tokens.
+
+01:47:09.670 --> 01:47:11.930
+Okay. That's fine. Uh.
+
+01:47:21.080 --> 01:47:23.100
+Dev Kumar is saying attention mask is a binding token, which
+
+01:47:23.100 --> 01:47:27.580
+has been used to token to a store, uh, should be attention
+
+01:47:27.580 --> 01:47:32.080
+one, which should be ignored. Yeah, actually Dev Kumar. So
+
+01:47:32.080 --> 01:47:34.880
+how it is able to generate the, actually your version is
+
+01:47:34.880 --> 01:47:38.360
+correct. So here, how it is able to generate this one. So
+
+01:47:38.360 --> 01:47:41.520
+basically see, so what ever data that we are going to pass,
+
+01:47:41.600 --> 01:47:45.180
+so we have one lakh record. Let's suppose 25,000 record. I'm
+
+01:47:45.180 --> 01:47:48.080
+going to use it for what, for a, uh, like a fine tuning
+
+01:47:48.080 --> 01:47:53.360
+purposes. So. So there is a possibility that some of the
+
+01:47:53.360 --> 01:47:58.920
+sentences will be having a blend is equals to 100, 120, 300,
+
+01:47:59.200 --> 01:48:01.580
+right? So every sentence will be having a different,
+
+01:48:01.660 --> 01:48:06.460
+different length. But so before sending a data to my, uh,
+
+01:48:06.540 --> 01:48:09.300
+any models, I'm going to a strategy. I'm saying that that
+
+01:48:09.300 --> 01:48:12.640
+512. So whatever data that you are going to take represent
+
+01:48:12.640 --> 01:48:16.740
+it with the help of this 512 length. Okay. So now we're
+
+01:48:16.740 --> 01:48:19.580
+able. There will be a data. It will try to say one, one,
+
+01:48:19.600 --> 01:48:22.740
+one, one, one. Let's suppose the first sentence that I had,
+
+01:48:22.840 --> 01:48:26.460
+right? Uh, so for certain that I had, it was having maybe a
+
+01:48:26.460 --> 01:48:30.680
+hundred number of words. So till a hundred, it will be one,
+
+01:48:30.740 --> 01:48:33.900
+one, one, and then the rest will be 0 0 0 0 0 0 0 0. So in
+
+01:48:33.900 --> 01:48:36.660
+this way it will be able to understand that, okay, fine. So
+
+01:48:36.660 --> 01:48:39.840
+I should focus on this one. I should not focus on the 0 0 0
+
+01:48:39.840 --> 01:48:43.920
+0 1. Yeah. So I can see helping them all to focus on the
+
+01:48:43.920 --> 01:48:46.200
+relevant part of the input. Exactly. But yeah, in this
+
+01:48:46.200 --> 01:48:48.240
+context, this is the meaning of it. Let me show you that
+
+01:48:48.240 --> 01:48:51.040
+part as well. So everything you can like a seed basically.
+
+01:48:51.320 --> 01:48:55.480
+So see guys, uh, here we have this data, right here we have
+
+01:48:55.480 --> 01:48:59.360
+this data now. So what I can do is I can try to extract just
+
+01:48:59.360 --> 01:49:03.440
+a text out of it. I can show you that part. So just try to
+
+01:49:03.440 --> 01:49:04.860
+extract a text out of it.
+
+01:49:10.740 --> 01:49:13.940
+Yeah. So this is my text by the way, right? This is a
+
+01:49:13.940 --> 01:49:17.020
+technically like a, a, my text at the end of the day. Now
+
+01:49:17.020 --> 01:49:20.580
+just to do one thing. So try to convert this entire text.
+
+01:49:20.660 --> 01:49:24.300
+Right. Try to convert this entire text in a blacker list.
+
+01:49:24.480 --> 01:49:26.400
+How we can do it dot
+
+01:49:28.420 --> 01:49:29.220
+a
+
+01:49:42.940 --> 01:49:46.760
+split. Yeah. So now it is available into a individual
+
+01:49:46.760 --> 01:49:51.060
+tokens, right? Now just try to, uh, check the length of this
+
+01:49:51.060 --> 01:49:56.760
+data. So length of this data. So alien length of this data.
+
+01:49:57.240 --> 01:49:59.940
+So how many data is available? How many tokens are
+
+01:49:59.940 --> 01:50:02.820
+available? So in, uh, like in general, so basically we have
+
+01:50:02.820 --> 01:50:06.040
+288, 288 words are available. Let's suppose I'm converting
+
+01:50:06.040 --> 01:50:11.200
+this 288 words. Into it's a respective token, but, but I
+
+01:50:11.200 --> 01:50:13.780
+have to standardize it. Let's suppose I'm doing it. Uh, this
+
+01:50:13.780 --> 01:50:17.880
+is having 288. Now if I'm going to pick maybe a hundred
+
+01:50:17.880 --> 01:50:21.820
+record, it is having only 155. Now I'm going to pick maybe
+
+01:50:21.820 --> 01:50:27.380
+like a hundred and the like a thousands, uh, like a one,
+
+01:50:27.440 --> 01:50:30.460
+something like this record. It is having 152. So can I say
+
+01:50:30.460 --> 01:50:33.260
+that every sentence is having a different, different length?
+
+01:50:35.520 --> 01:50:39.140
+Yes. Everyone. Every sentence is having a different,
+
+01:50:39.220 --> 01:50:43.780
+different length. So I hope we are able to understand the
+
+01:50:43.780 --> 01:50:45.860
+meaning of 512 fine
+
+01:50:51.140 --> 01:50:55.120
+guys. Yeah. So every sentence that we have inside our data
+
+01:50:55.120 --> 01:50:56.780
+set is having a different, different length of basically,
+
+01:50:56.980 --> 01:50:59.460
+right? I have to standardize it. And even if you remember,
+
+01:50:59.680 --> 01:51:02.680
+uh, so basically we have chosen a dimension when I was
+
+01:51:02.680 --> 01:51:05.160
+talking about your transformer architecture, right?
+
+01:51:05.580 --> 01:51:07.900
+Transformer architecture. So basically I'm trying to
+
+01:51:07.900 --> 01:51:09.700
+standardize it. I'm saying that, okay, fine. Do one thing.
+
+01:51:09.760 --> 01:51:13.980
+So take a length of the array 512. Right? Now what attention
+
+01:51:13.980 --> 01:51:18.160
+mask will do. So till for, for this data, for this data. So
+
+01:51:18.160 --> 01:51:22.580
+in this array of size 522 till 288, one, one, one, right? So
+
+01:51:22.580 --> 01:51:25.260
+focus on only this data. And then what about the rest of the
+
+01:51:25.260 --> 01:51:27.320
+data? The rest of the data will be zero so that my transform
+
+01:51:27.320 --> 01:51:29.480
+will be able to understand that, okay, I should focus on
+
+01:51:29.480 --> 01:51:33.080
+just one, one, one with whatever one, one, one is attached.
+
+01:51:33.840 --> 01:51:38.220
+Are you able to understand if some line will have more than
+
+01:51:38.220 --> 01:51:41.100
+512 token, it will chop off simple. It will chop off
+
+01:51:41.100 --> 01:51:41.620
+automatically.
+
+01:51:46.750 --> 01:51:51.150
+Okay. So I'm like, we are not discussing something very
+
+01:51:51.150 --> 01:51:53.350
+different. So whatever theoretical things that we have
+
+01:51:53.350 --> 01:51:56.250
+discussed, it's having a hundred percent relevance over
+
+01:51:56.250 --> 01:51:59.970
+here, right? If some line will have, I think I have given
+
+01:51:59.970 --> 01:52:02.570
+the answer. If some line is having more than 512, it will
+
+01:52:02.570 --> 01:52:05.470
+chop off automatically. Yeah. You can try to put up and then
+
+01:52:05.470 --> 01:52:08.490
+you can try to see that part as well. It will chop off
+
+01:52:08.490 --> 01:52:12.910
+automatically. Okay. So here now what we have done, so
+
+01:52:12.910 --> 01:52:16.330
+basically we are able to convert this into a token. Now I
+
+01:52:16.330 --> 01:52:20.290
+have a data in my hand. So tokenized data set I have in my
+
+01:52:20.290 --> 01:52:24.490
+hand, yeah, tokenized data set I have in my hand. So do I
+
+01:52:24.490 --> 01:52:27.650
+need text to pass into a model? I don't think so. What I
+
+01:52:27.650 --> 01:52:31.350
+need is I need my X, I need my Y, right? My X is going to be
+
+01:52:31.350 --> 01:52:37.230
+this and my Y is going to be label. I need my, is 512 is a
+
+01:52:37.230 --> 01:52:39.850
+standard? Not at all. You can keep on changing your like
+
+01:52:39.850 --> 01:52:43.090
+dimensions and this is what I said even at the time of like.
+
+01:52:43.090 --> 01:52:46.610
+When we were building our own LLM, we were training in a
+
+01:52:46.610 --> 01:52:48.950
+last class and when I was even teaching a transformer. So
+
+01:52:48.950 --> 01:52:51.390
+please focus inside the class. You will be able to get all
+
+01:52:51.390 --> 01:52:58.660
+the answers. Yeah. Okay. So here, this is going to my, so
+
+01:52:58.660 --> 01:53:01.200
+are you able to understand guys what I'm going to treat it
+
+01:53:01.200 --> 01:53:03.200
+as a X and what I'm going to treat it as a Y.
+
+01:53:07.270 --> 01:53:10.390
+Yeah. So I think system has also given an answer. So if
+
+01:53:10.390 --> 01:53:13.370
+token will exceed, it will truncate. I told you, right? Chop
+
+01:53:13.370 --> 01:53:18.810
+off simple. So here. Input ID and attention mask is going to
+
+01:53:18.810 --> 01:53:21.830
+my X basically in general as of now label and I have to
+
+01:53:21.830 --> 01:53:24.750
+remove this text. So let's go ahead and let's try to remove
+
+01:53:24.750 --> 01:53:27.610
+the text part because we don't need it. Right. Model will
+
+01:53:27.610 --> 01:53:30.050
+not be able to understand. Even if I'm going to pass, I have
+
+01:53:30.050 --> 01:53:33.230
+already converted those things into my IDs and masking.
+
+01:53:34.610 --> 01:53:39.890
+Okay. So here tokenized data set, what is the variable name?
+
+01:53:40.050 --> 01:53:45.570
+So tokenized data set, tokenized data set. Dot. Dot. I can
+
+01:53:45.570 --> 01:53:50.790
+try to remove columns, columns, call, remove columns, and
+
+01:53:50.790 --> 01:53:54.450
+then try to pass, remove my text column. I don't want it.
+
+01:53:54.630 --> 01:53:59.330
+Right. And then store it into a tokenized data set. So my
+
+01:53:59.330 --> 01:54:03.910
+update, my tokenized data set. Okay. So now if I'm going to
+
+01:54:03.910 --> 01:54:07.710
+show you, our text is gone. I have just removed the column
+
+01:54:07.710 --> 01:54:12.850
+called as text as simple as that, removed it. And here.
+
+01:54:13.390 --> 01:54:20.010
+Okay. So after removing this one, tokenized, okay, I have
+
+01:54:20.010 --> 01:54:23.610
+written tonized basically, whatever it is, that's fine. So
+
+01:54:23.610 --> 01:54:29.050
+rename column, rename column. So maybe I can try to give a
+
+01:54:29.050 --> 01:54:32.550
+label column as a labels column, LAB, just a fancy things.
+
+01:54:33.490 --> 01:54:36.270
+You can keep it as it is. That's not going to make any
+
+01:54:36.270 --> 01:54:41.090
+changes. So label into labels, just for the reference label
+
+01:54:41.090 --> 01:54:45.090
+is the old name and labels is a new name. So I'm going to
+
+01:54:45.090 --> 01:54:52.640
+override my tokenized data set. Yeah. Tokenized data set.
+
+01:54:52.820 --> 01:54:57.600
+And then my labels, previous name was label. Now my name is
+
+01:54:57.600 --> 01:55:01.280
+labels basically. Yeah. And then there is one more thing
+
+01:55:01.280 --> 01:55:05.980
+that you have to do. So basically tokenize data set dot set
+
+01:55:05.980 --> 01:55:09.840
+format, set format. And then if I'm using a PyTorch based
+
+01:55:09.840 --> 01:55:15.620
+library, so set format to Torch. Torch means PyTorch. Like a
+
+01:55:15.620 --> 01:55:17.560
+PyTorch. So it's a bad format. I'm trying to say over here.
+
+01:55:17.900 --> 01:55:21.540
+Okay. So data set is fine. We are able to prepare the data
+
+01:55:21.540 --> 01:55:24.600
+set, label input ID, attention mask, and we are even able to
+
+01:55:24.600 --> 01:55:27.080
+understand that why we are doing it. Right. So tomorrow, if
+
+01:55:27.080 --> 01:55:30.680
+I'm going to choose my own data, any data, I have to do the
+
+01:55:30.680 --> 01:55:36.420
+exact same thing. Right now, my attention mask, some should
+
+01:55:36.420 --> 01:55:40.520
+match the length of the text length of the text, your
+
+01:55:40.520 --> 01:55:45.640
+attention mask. Yeah. Yes, yes, yes. Yes. Yes.
+
+01:55:49.000 --> 01:55:52.100
+like 111 so it should match with the number of tokens but
+
+01:55:52.100 --> 01:55:55.580
+yeah so tokenizer what it does is so it will try to don't
+
+01:55:55.580 --> 01:55:58.400
+come and say that no your length is 288 and then tokenizer
+
+01:55:58.400 --> 01:56:02.280
+is giving me only 220 it could possible because you are
+
+01:56:02.280 --> 01:56:05.700
+trying to send into a pre-trained basically tokenizer model
+
+01:56:05.700 --> 01:56:09.440
+now there is a possibility that it is trying to remove or it
+
+01:56:09.440 --> 01:56:12.840
+is trying to handle some of the like a data automatically
+
+01:56:12.840 --> 01:56:15.000
+maybe it is removing dot or slash or something like that
+
+01:56:15.000 --> 01:56:21.220
+yeah depends how I am training the previous model okay now
+
+01:56:21.220 --> 01:56:27.500
+here but ideally it should be all the time now here if model
+
+01:56:27.500 --> 01:56:29.720
+itself is not like going ahead with the cleaning data
+
+01:56:29.720 --> 01:56:34.060
+cleaning of that so here what we can do is we can try to
+
+01:56:34.060 --> 01:56:38.320
+like create a model so let's create a model which I am going
+
+01:56:38.320 --> 01:56:43.360
+to fine tune so model is equals to auto model for sequence
+
+01:56:43.360 --> 01:56:54.010
+lm. model have we downloaded model model model no so
+
+01:56:56.760 --> 01:57:04.540
+I have to import it first so from transformer IMPRT import
+
+01:57:04.540 --> 01:57:10.620
+import what so auto model sequence classification so auto
+
+01:57:10.620 --> 01:57:17.180
+model sequence classification this model yeah so auto model
+
+01:57:17.180 --> 01:57:19.360
+for sequence classification. So. that is something that we
+
+01:57:19.360 --> 01:57:24.040
+have to import execute import successful use it now so I am
+
+01:57:24.040 --> 01:57:28.060
+going to create a model object auto auto model sequence
+
+01:57:28.060 --> 01:57:34.260
+classification dot from pre-trained from not config from pre
+
+01:57:34.260 --> 01:57:38.620
+-trained and then I am going to use what so model checkpoint
+
+01:57:38.620 --> 01:57:44.360
+the model which I have loaded board base based on case model
+
+01:57:44.360 --> 01:57:47.880
+so this one I am just going to use it. So this one I am just
+
+01:57:47.880 --> 01:57:49.560
+going to use is it distal board base and case model so model
+
+01:57:49.560 --> 01:57:52.520
+checkpoint is a variable in which it is stored and say model
+
+01:57:52.520 --> 01:57:56.060
+I have used for checkpointing as well right so sorry my
+
+01:57:56.060 --> 01:57:59.260
+embeddings so I am able to use that model I am able to
+
+01:57:59.260 --> 01:58:02.860
+convert my entire data into a numerical representation so
+
+01:58:02.860 --> 01:58:07.740
+from pre-trained model checkpoint that's completely fine and
+
+01:58:07.740 --> 01:58:13.060
+number of label I can try to give over here so number of
+
+01:58:13.060 --> 01:58:14.880
+labels
+
+01:58:17.540 --> 01:58:25.980
+is equals to 2. I can try to give so this is the model yeah
+
+01:58:30.590 --> 01:58:36.410
+looks fine so far now once I am able to like a load of this
+
+01:58:36.410 --> 01:58:40.010
+entire model now what I can do is I can try to prepare my
+
+01:58:40.010 --> 01:58:44.190
+training parameter basically and I can try to prepare my
+
+01:58:44.190 --> 01:58:46.710
+training arguments retraining parameter and retaining
+
+01:58:46.710 --> 01:58:49.350
+argument I can try to prepare so what you have to do is so
+
+01:58:49.350 --> 01:58:55.070
+from transformer you have to basically import import what so
+
+01:58:55.070 --> 01:58:59.890
+training arguments training trai and ing arguments you have
+
+01:58:59.890 --> 01:59:03.170
+to import and then trainer you have to import so two things
+
+01:59:03.170 --> 01:59:06.050
+you have to import from a transformer basically yeah
+
+01:59:20.450 --> 01:59:25.170
+now so once we are able to import this trainer and once we
+
+01:59:25.170 --> 01:59:28.270
+are able to import the models let me ping you all the code
+
+01:59:28.270 --> 01:59:29.910
+together just
+
+01:59:41.200 --> 01:59:44.560
+a minute guys activating your chat once again so your chat
+
+01:59:44.560 --> 01:59:54.820
+was actually seduced. Just a minute you are on and your
+
+01:59:59.910 --> 02:00:04.830
+chat must have been disabled because it was timed till 4.30
+
+02:00:04.830 --> 02:00:09.290
+let me change the timing increase it by one more hour
+
+02:00:09.290 --> 02:00:16.370
+because I think we need that hour so 4.30 if
+
+02:00:24.630 --> 02:00:26.450
+changes yeah
+
+02:00:29.330 --> 02:00:32.570
+so I think now your chat must be like enabled once
+
+02:00:34.710 --> 02:00:34.970
+again
+
+02:00:46.240 --> 02:00:50.380
+okay so here training her dot trainer and once we are able
+
+02:00:50.380 --> 02:00:52.960
+to like a call this one what we can do is so we can try to
+
+02:00:52.960 --> 02:00:55.520
+prepare our training argument and then we can try to prepare
+
+02:00:55.520 --> 02:00:59.300
+our trainer over here so training argument first of all
+
+02:00:59.300 --> 02:01:01.720
+let's try to prepare one by one there are a lot of like
+
+02:01:01.720 --> 02:01:04.680
+argument that you have to prepare over here so output
+
+02:01:04.680 --> 02:01:09.680
+directory you have to prepare so output directory is nothing
+
+02:01:09.680 --> 02:01:14.380
+but I'm going to keep some directory in RDSULT result
+
+02:01:14.380 --> 02:01:17.120
+directories output directory. Okay. So it will create one
+
+02:01:17.120 --> 02:01:23.620
+for me evaluation strategy evaluation evil evil
+
+02:01:28.300 --> 02:01:39.380
+strategy. So basically E P O C H use epoch and then save a
+
+02:01:39.380 --> 02:01:44.940
+strategy so save a strategy is again based on epoch try to
+
+02:01:44.940 --> 02:01:49.480
+save it and then learning rate I'm going to define so
+
+02:01:49.480 --> 02:01:54.000
+learning rate may be. So I'm going to give a two point two
+
+02:01:54.000 --> 02:01:56.920
+four two E minus
+
+02:01:59.410 --> 02:02:04.390
+five I can try to give for device
+
+02:02:06.220 --> 02:02:14.180
+evil bat size or train bat size. So basically eight or per
+
+02:02:14.180 --> 02:02:17.620
+GPU per device evil
+
+02:02:19.130 --> 02:02:25.450
+bat size again same I'm going to put number of training.
+
+02:02:25.710 --> 02:02:32.370
+Training. Epoch is going to be two and then a weight decay
+
+02:02:32.370 --> 02:02:36.810
+is going to be point zero one. So this is the training
+
+02:02:36.810 --> 02:02:40.230
+argument I'm going to set you can set like so many other
+
+02:02:40.230 --> 02:02:42.650
+argument as well as you can see there are like more than
+
+02:02:42.650 --> 02:02:45.130
+hundreds of argument which is available right more than
+
+02:02:45.130 --> 02:02:47.490
+hundreds of argument so which you can control basically to
+
+02:02:47.490 --> 02:02:50.630
+train the model right to train the model but I'm going to
+
+02:02:50.630 --> 02:02:53.470
+put like a four to five training
+
+02:02:54.970 --> 02:02:58.450
+underscore a RGS. These are the argument which I will be
+
+02:02:58.450 --> 02:03:02.310
+using for the training purpose. What happened enable to
+
+02:03:02.310 --> 02:03:06.870
+accelerate warning the key decay use configuration falls
+
+02:03:06.870 --> 02:03:08.790
+which one E
+
+02:03:11.130 --> 02:03:16.830
+well strategy initialize this this this training
+
+02:03:19.290 --> 02:03:22.210
+arguments use
+
+02:03:31.010 --> 02:03:36.090
+using trainer with pytorch requires accelerate please run
+
+02:03:36.090 --> 02:03:44.050
+pip install tensorflow torch. Okay. It's like this is the
+
+02:03:44.050 --> 02:03:50.260
+major issue with pip install accelerate okay I'll just run
+
+02:03:50.260 --> 02:03:51.820
+this one okay
+
+02:03:59.630 --> 02:04:02.590
+so are you able to do it guys along with me I
+
+02:04:06.810 --> 02:04:08.890
+was getting some error I have just like doing the
+
+02:04:08.890 --> 02:04:14.290
+installation now it should work fine still not working
+
+02:04:14.290 --> 02:04:18.290
+accelerate greater than point two six yeah I believe it has
+
+02:04:18.290 --> 02:04:22.850
+installed accelerate greater than a point two six yeah it's
+
+02:04:22.850 --> 02:04:25.690
+a one point one. One point one will solve package collector
+
+02:04:25.690 --> 02:04:28.830
+successfully install accelerate note you may need to restart
+
+02:04:28.830 --> 02:04:33.390
+the kernel okay fine so yeah
+
+02:04:40.240 --> 02:04:43.640
+everyone is doing it let
+
+02:04:51.960 --> 02:05:00.250
+me choose the kernel by the environment under reset
+
+02:05:03.420 --> 02:05:07.420
+kernel still not able to get the
+
+02:05:12.670 --> 02:05:15.470
+IP and STA double L zero
+
+02:05:21.180 --> 02:05:24.400
+restart the kernel to use the updated package. Okay. And
+
+02:05:25.870 --> 02:05:27.470
+restart
+
+02:05:38.800 --> 02:05:40.960
+restart okay
+
+02:05:44.440 --> 02:05:48.320
+but all the other work that I have done must be must be gone
+
+02:05:52.340 --> 02:05:56.920
+everything is gone so I just have to execute everything this
+
+02:05:56.920 --> 02:06:01.840
+is what I was not like I was not restarting so load data set
+
+02:06:01.840 --> 02:06:05.980
+from here I can start executing once again okay
+
+02:06:20.670 --> 02:06:26.390
+so do it on this point guys so we have to set couple of
+
+02:06:26.390 --> 02:06:29.510
+more. Yeah. It's working after you start but yeah my other
+
+02:06:29.510 --> 02:06:34.290
+like previous one was gone so just restarted everything now
+
+02:06:34.290 --> 02:06:38.770
+there is no error that I'm able to get okay so here
+
+02:06:38.770 --> 02:06:42.750
+basically what I have done so training arguments I have set
+
+02:06:42.750 --> 02:06:47.410
+over here as you can see now what we can do is so there is a
+
+02:06:47.410 --> 02:06:51.870
+trainer which I can try to set so final trainer trainer the
+
+02:06:51.870 --> 02:06:54.850
+import that I have done if you remember so here I have just
+
+02:06:54.850 --> 02:06:57.550
+done the import of trainer right so this is going to
+
+02:06:57.550 --> 02:07:00.890
+basically train by taking each and everything so here inside
+
+02:07:00.890 --> 02:07:04.870
+a trainer I'm going to pass my model so my model is equals
+
+02:07:04.870 --> 02:07:08.270
+to basically the model that I have created so if you
+
+02:07:08.270 --> 02:07:12.390
+remember my model is equals to the model that I have created
+
+02:07:12.390 --> 02:07:15.450
+right this model so which is taking a checkpointing number
+
+02:07:15.450 --> 02:07:18.470
+of labels is equal to two so this is my model so my model is
+
+02:07:18.470 --> 02:07:21.790
+equal to model which I have like a provided then arguments
+
+02:07:21.790 --> 02:07:25.830
+wise so model and then AR.
+
+02:07:28.250 --> 02:07:32.690
+ARGS arguments wise so training arguments I think I have
+
+02:07:32.690 --> 02:07:36.090
+already created so I'm going to use training argument not
+
+02:07:36.090 --> 02:07:40.010
+this one this variable actually I'm going to take as a
+
+02:07:40.010 --> 02:07:43.970
+training argument so this variable so where I have defined
+
+02:07:43.970 --> 02:07:46.270
+all the training argument training parameter so I'm going to
+
+02:07:46.270 --> 02:07:50.070
+take it now it's time to provide a data set a data set that
+
+02:07:50.070 --> 02:07:54.290
+we have already prepared right so if I'm going to show you
+
+02:07:54.290 --> 02:07:58.930
+my data set. So how does my data set looks like so this is
+
+02:07:58.930 --> 02:08:04.810
+my tokenized data set as you can see this is my tokenized
+
+02:08:04.810 --> 02:08:10.390
+data set yeah this is my tokenized data set I have already
+
+02:08:10.390 --> 02:08:13.610
+cleaned this entire data set so now what I can do is I can
+
+02:08:13.610 --> 02:08:16.850
+try to pass this data set a training set I can try to
+
+02:08:16.850 --> 02:08:19.350
+provide and then I can try to provide a test set twenty five
+
+02:08:19.350 --> 02:08:21.330
+thousand record is for training twenty five thousand record
+
+02:08:21.330 --> 02:08:26.550
+is for testing purpose so here I can try to say that. Train
+
+02:08:26.550 --> 02:08:30.790
+data set wise just try to take my data set tokenized tonized
+
+02:08:30.790 --> 02:08:34.810
+whatever I have written so out of this try to take what
+
+02:08:34.810 --> 02:08:41.510
+train data set basically and yeah so maybe I can try to
+
+02:08:41.510 --> 02:08:44.390
+provide like a whole twenty five thousand or maybe I can try
+
+02:08:44.390 --> 02:08:47.770
+to just provide couple of that that is completely under my
+
+02:08:47.770 --> 02:08:52.970
+hand my hand so eval evaluation data set so again same data
+
+02:08:52.970 --> 02:08:57.530
+set but out of that. Yeah. I'm going to test I'm going to
+
+02:08:57.530 --> 02:09:03.890
+provide and then basically trainer will be ready so let me
+
+02:09:03.890 --> 02:09:09.190
+save it as a tree array I any our trainer and then trainer
+
+02:09:09.190 --> 02:09:10.550
+this
+
+02:09:12.950 --> 02:09:17.490
+one dot train I can try to call trainer dot a train I can
+
+02:09:17.490 --> 02:09:21.830
+try to call now if everything is up and running if
+
+02:09:21.830 --> 02:09:25.950
+everything is working right if everything is working then
+
+02:09:25.950 --> 02:09:29.690
+this will start the complete training as per the parameter
+
+02:09:29.690 --> 02:09:35.250
+now execute and yes you can see that it has started the
+
+02:09:35.250 --> 02:09:40.110
+training. I provided like a huge amount of the data so just
+
+02:09:40.110 --> 02:09:44.830
+for one single epoch it is going to take how much time four
+
+02:09:44.830 --> 02:09:48.470
+hour of time three hour fifty six minute of time it is going
+
+02:09:48.470 --> 02:09:52.550
+to take approximately a huge amount of data. If I don't want
+
+02:09:52.550 --> 02:09:55.590
+to like run it for that much time maybe what I can do is I
+
+02:09:55.590 --> 02:09:59.270
+can for now just to show you. Now even in terms of like a
+
+02:09:59.270 --> 02:10:04.050
+result so maybe what I can do is I can try to maybe like
+
+02:10:04.050 --> 02:10:11.730
+instead of taking whole data I can try to write select and
+
+02:10:11.730 --> 02:10:16.110
+then I can try to say select from the range of what select
+
+02:10:16.110 --> 02:10:19.290
+from the range of just take hundred data over here and even
+
+02:10:19.290 --> 02:10:26.390
+over here select and just take the hundred data. Yeah. So
+
+02:10:26.390 --> 02:10:28.690
+I'm just saying that don't take all whole twenty five
+
+02:10:28.690 --> 02:10:31.250
+thousand twenty five thousand for train and test right don't
+
+02:10:31.250 --> 02:10:34.870
+take it just try to like you know take a hundred hundred
+
+02:10:34.870 --> 02:10:38.790
+records that's completely fine. Let me check my evaluation
+
+02:10:38.790 --> 02:10:42.810
+training arguments as well so batch size maybe I can try to
+
+02:10:42.810 --> 02:10:45.870
+increase a little bit because my system is big I can do it
+
+02:10:45.870 --> 02:10:50.590
+epoch let me just keep it as one epoch ideally it will be a
+
+02:10:50.590 --> 02:10:53.670
+worst model but I have to show you like how training is
+
+02:10:53.670 --> 02:10:57.150
+happening right. So. I have all the parameter by the way
+
+02:10:57.150 --> 02:11:01.930
+okay now do it now it will not show you like for one single
+
+02:11:01.930 --> 02:11:05.010
+epoch otherwise in that way just for two epoch it would have
+
+02:11:05.010 --> 02:11:09.050
+taken eight hour of time and that too with my machine right
+
+02:11:09.050 --> 02:11:12.170
+maybe with your machine just for one single epoch it will
+
+02:11:12.170 --> 02:11:14.770
+take maybe ten hour of time depends yes
+
+02:11:23.020 --> 02:11:24.500
+everyone so
+
+02:11:32.700 --> 02:11:35.820
+are we able to train guys all of us are
+
+02:11:41.380 --> 02:11:43.060
+we able to train yeah
+
+02:11:52.730 --> 02:11:57.370
+so now here we are able to train now right we are able to
+
+02:11:57.370 --> 02:12:00.650
+train. Now we can try to test it like testing wise so again
+
+02:12:00.650 --> 02:12:04.970
+my model is ready so what I can do is I can just like try to
+
+02:12:04.970 --> 02:12:07.670
+pass the data the way we were passing a data and then we can
+
+02:12:07.670 --> 02:12:11.570
+try to test it that it is giving me a negative or it is
+
+02:12:11.570 --> 02:12:15.550
+giving me a positive at the end of the day just like by
+
+02:12:15.550 --> 02:12:22.710
+passing my own movie reviews fine guys everyone are we able
+
+02:12:22.710 --> 02:12:25.570
+to understand each and everything Abhijeet and everyone.
+
+02:12:51.220 --> 02:12:57.240
+Yeah. Okay. So okay this is all about this entire fine
+
+02:12:57.240 --> 02:13:03.880
+tuning guys now let me do one thing this can be done using
+
+02:13:03.880 --> 02:13:09.420
+ML why we need LLM for it which can be done by ML the
+
+02:13:11.050 --> 02:13:14.050
+understanding about the word I don't think that you will be
+
+02:13:14.050 --> 02:13:17.970
+able to when you have like a 200 200 words right so ML is
+
+02:13:17.970 --> 02:13:20.950
+going to perform in a better way so to get a better model
+
+02:13:20.950 --> 02:13:24.650
+you have to choose LLMs. Or you have to choose this kind of
+
+02:13:24.650 --> 02:13:28.670
+a BERT based model obviously I'm not denying that you can't
+
+02:13:28.670 --> 02:13:31.210
+do it like go and build the model with the BERT you can do
+
+02:13:31.210 --> 02:13:35.670
+it there is no doubt about it but again it's not never about
+
+02:13:35.670 --> 02:13:39.210
+a building a model it's always about building a best ML
+
+02:13:41.350 --> 02:13:45.410
+includes LLM obviously yes so that is the reason we need
+
+02:13:45.410 --> 02:13:48.930
+this one okay so now let me share and the result is also
+
+02:13:48.930 --> 02:13:52.310
+available check pointings are available as you can see right
+
+02:13:52.310 --> 02:13:54.770
+results check pointings everything is available. Now in my
+
+02:13:54.770 --> 02:13:58.330
+case. My local system everything everything is available in
+
+02:13:58.330 --> 02:14:03.270
+my local system now so now let me share this notebook with
+
+02:14:03.270 --> 02:14:11.770
+all of you so D drive and then like gen AI class this one
+
+02:14:11.770 --> 02:14:12.750
+compressed
+
+02:14:19.250 --> 02:14:21.390
+to zip okay
+
+02:14:56.750 --> 02:14:59.570
+fine guys so all the files which we have used in my today's
+
+02:14:59.570 --> 02:15:02.870
+class so we have uploaded I have uploaded this file here so
+
+02:15:02.870 --> 02:15:05.130
+now you can try to follow along and then you can try to test
+
+02:15:05.130 --> 02:15:07.610
+this model. So testing this model is not a big deal just
+
+02:15:07.610 --> 02:15:11.230
+like a pass the data token I after tokenizing it and get the
+
+02:15:11.230 --> 02:15:14.910
+output yeah even you can try to save this entire model so
+
+02:15:14.910 --> 02:15:17.470
+how to save this model so maybe you can try to call like a
+
+02:15:17.470 --> 02:15:24.610
+trainer trainer dot save underscore models and then you can
+
+02:15:24.610 --> 02:15:26.970
+try to save the model so maybe you can try to give a name
+
+02:15:26.970 --> 02:15:29.010
+that my own
+
+02:15:31.150 --> 02:15:38.090
+fine tuned. Model. Right. So. So save it and here you can
+
+02:15:38.090 --> 02:15:41.870
+see that my own fine tuned model it is able to save each and
+
+02:15:41.870 --> 02:15:44.810
+everything so this is how fine tuning is going to happen so
+
+02:15:44.810 --> 02:15:48.770
+now you can choose any model for any purposes basically
+
+02:15:48.770 --> 02:15:52.010
+every model will be having some purpose attached to it right
+
+02:15:52.010 --> 02:15:54.470
+so some model will be using a doing a summarization some
+
+02:15:54.470 --> 02:15:57.090
+model will be doing a classification some model will be
+
+02:15:57.090 --> 02:16:01.070
+doing a translation operation so depends what kind of a task
+
+02:16:01.070 --> 02:16:05.010
+that you are trying to solve choose the model based on any.
+
+02:16:05.110 --> 02:16:08.590
+Any. Best model choose it and then try to fine tune it based
+
+02:16:08.590 --> 02:16:11.590
+on your data so now that model will be completely yours
+
+02:16:11.590 --> 02:16:12.790
+yeah.
+
+02:16:14.860 --> 02:16:19.200
+So this is basically a fine tuning no RAG is okay somebody
+
+02:16:19.200 --> 02:16:21.860
+asking question fine tuning is all about educating the model
+
+02:16:21.860 --> 02:16:26.500
+to learn answer from my own data is the same as RAG no RAG
+
+02:16:26.500 --> 02:16:29.700
+conceptually it's completely different as compared to a fine
+
+02:16:29.700 --> 02:16:32.040
+tuning the major difference between the RAG and fine tuning
+
+02:16:32.040 --> 02:16:36.020
+is in fine tuning so we try to update the layer of the model
+
+02:16:36.020 --> 02:16:38.600
+basically we are trying to update the complete weight of the
+
+02:16:38.600 --> 02:16:43.340
+model instead of like a like a and in case of RAG so what
+
+02:16:43.340 --> 02:16:46.760
+happens is that we try to store the data somewhere right we
+
+02:16:46.760 --> 02:16:49.840
+try to store the data for example the data that I have this
+
+02:16:49.840 --> 02:16:53.120
+data so what I will do is I'll not find I'll not train the
+
+02:16:53.120 --> 02:16:55.220
+model what I will do is I'll try to store the data somewhere
+
+02:16:55.220 --> 02:16:58.300
+let's suppose in a vector database so where embedding of the
+
+02:16:58.300 --> 02:17:01.220
+data will be available now whenever I am going to send a
+
+02:17:01.220 --> 02:17:04.880
+query to the LLM what it will do is it will try to check.
+
+02:17:04.880 --> 02:17:08.360
+Something it will try to check that with this query which I
+
+02:17:08.360 --> 02:17:10.700
+am trying to send to LLMs what is the data which is
+
+02:17:10.700 --> 02:17:13.860
+available in my vector DB you will try to pull that attach
+
+02:17:13.860 --> 02:17:16.780
+into a query and then send to the LLMs that is basically
+
+02:17:16.780 --> 02:17:21.900
+called as RAG retrieval retrieving from a vector DB or some
+
+02:17:21.900 --> 02:17:26.220
+DB vector DB so retrieval augmented we are trying to attach
+
+02:17:26.220 --> 02:17:29.560
+that with the original query and then generation and sending
+
+02:17:29.560 --> 02:17:34.500
+for the generation that's the reason it's called as RAG. So.
+
+02:17:34.500 --> 02:17:36.960
+conceptually it's like a very different and RAG is also a
+
+02:17:36.960 --> 02:17:40.400
+part of your like this one your
+
+02:17:41.520 --> 02:17:45.440
+syllabus so I'll be teaching you RAG as well but RAG we
+
+02:17:45.440 --> 02:17:48.200
+don't train the model so RAG conceptually like we don't
+
+02:17:48.200 --> 02:17:51.000
+train the model we try to keep the data into the vector DB
+
+02:17:51.000 --> 02:17:54.060
+and then when I'm trying to hit the API when I'm trying to
+
+02:17:54.060 --> 02:17:57.380
+hit any kind of LLMs I just try to like do a search into a
+
+02:17:57.380 --> 02:18:00.480
+vector with respect to the relevancy with the query and then
+
+02:18:00.480 --> 02:18:05.860
+attach it send it that's RAG. Even vector DB is different.
+
+02:18:05.860 --> 02:18:08.680
+Vector DB is also a part of your syllabus so if you'll go
+
+02:18:08.680 --> 02:18:12.820
+and check. So hope guys all of you are able to understand
+
+02:18:12.820 --> 02:18:15.540
+any other question do you have so like let me know I'll try
+
+02:18:15.540 --> 02:18:19.920
+to answer all of your questions yeah so any question anyone
+
+02:18:19.920 --> 02:18:21.000
+so
+
+02:18:24.330 --> 02:18:27.010
+I think fine tuning is not a big deal so we are able to a
+
+02:18:27.010 --> 02:18:28.910
+fine tuning now even for fine tuning there are like a
+
+02:18:28.910 --> 02:18:31.550
+different different criteria and all those things so we will
+
+02:18:31.550 --> 02:18:35.190
+keep on expanding it but yeah with hugging face models we
+
+02:18:35.190 --> 02:18:40.230
+are able to do it so if I'm able to do it with one model. I
+
+02:18:40.230 --> 02:18:42.650
+will be able to do it with a thousands of other models as
+
+02:18:42.650 --> 02:18:47.320
+well okay so with that guys thank you so much take care and
+
+02:18:47.320 --> 02:18:50.760
+see you again in my tomorrow's class so tomorrow I will be
+
+02:18:50.760 --> 02:18:57.880
+talking about next chapter obviously so tomorrow this open
+
+02:18:57.880 --> 02:19:01.540
+AI this will not take much time max to max half an hour of
+
+02:19:01.540 --> 02:19:06.640
+time so tomorrow I think will complete this much even vector
+
+02:19:06.640 --> 02:19:07.860
+DB we are going to complete tomorrow.
+
+02:19:19.090 --> 02:19:23.070
+Please share the file again. See in resources. Yes not able
+
+02:19:23.070 --> 02:19:24.830
+to download is it not
+
+02:19:26.840 --> 02:19:31.430
+able to download I can see into a resource section so please
+
+02:19:31.430 --> 02:19:33.950
+try to refresh it once yeah I am able to download it as well
+
+02:19:33.950 --> 02:19:40.230
+let me check it's a 564
+
+02:19:40.230 --> 02:19:43.690
+Mb of file I have attached model as well right so the file
+
+02:19:43.690 --> 02:19:46.130
+became like a very very big would
+
+02:19:48.560 --> 02:19:50.700
+not focus much today we'll go through the recording if
+
+02:19:50.700 --> 02:19:54.100
+doubts will ask in a WhatsApp yeah sure sure okay
+
+02:19:58.930 --> 02:20:01.650
+fine guys with that thank you so much take care and see you
+
+02:20:01.650 --> 02:20:03.150
+again tomorrow. Take care everyone.
+

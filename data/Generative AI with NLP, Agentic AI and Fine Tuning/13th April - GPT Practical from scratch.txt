@@ -1,0 +1,5384 @@
+WEBVTT
+
+00:00:19.220 --> 00:00:23.380
+okay so hi everyone I think I'm audible and visible to all
+
+00:00:23.380 --> 00:00:26.540
+of you so shall we start with the class guys we'll wait for
+
+00:00:26.540 --> 00:00:30.120
+some time so that all of us can join and then we can start
+
+00:00:30.120 --> 00:00:34.740
+with the class yeah so good afternoon everyone so Antonio
+
+00:00:34.740 --> 00:00:39.740
+Sachin Mayam doctor everyone so good afternoon Ravi good
+
+00:00:39.740 --> 00:00:41.280
+afternoon yeah
+
+00:00:45.400 --> 00:00:49.180
+so we'll wait for couple of minute guys so that all of us
+
+00:00:49.180 --> 00:00:52.300
+can join and then we are going to start so today class is
+
+00:00:52.300 --> 00:00:55.820
+going to be very very very very amazing I would say because
+
+00:00:55.820 --> 00:01:00.200
+we are going to build something which is very very real but
+
+00:01:00.200 --> 00:01:04.880
+don't expect that code is going to be easy and so I don't
+
+00:01:04.880 --> 00:01:07.220
+think that it's even going to matter code is going to be
+
+00:01:07.220 --> 00:01:11.400
+easier hard because either me or you none of us are going to
+
+00:01:11.400 --> 00:01:14.320
+remember the code we understand the concept we understand
+
+00:01:14.320 --> 00:01:16.980
+the layers we understand what we are trying to build so
+
+00:01:16.980 --> 00:01:22.120
+anyhow you will be able to build it yeah but for sure we
+
+00:01:22.120 --> 00:01:25.180
+whatever we are going to build today I think with the help
+
+00:01:25.180 --> 00:01:29.500
+of this if you have a huge amount of computation if you have
+
+00:01:29.500 --> 00:01:34.120
+a like you know like just a computation power compute power
+
+00:01:34.120 --> 00:01:37.840
+if you have you will be under data obviously so if you have
+
+00:01:37.840 --> 00:01:41.440
+like a data of the entire world you will be able to build
+
+00:01:41.440 --> 00:01:46.140
+something beautiful by yourself excited for today's class
+
+00:01:46.140 --> 00:01:49.620
+yes but don't feel frustrated in between the class because
+
+00:01:50.140 --> 00:01:50.220
+some people based on knowledge you know what's going to
+
+00:01:50.220 --> 00:01:51.000
+happen living transmit about your code is not going to be
+
+00:01:51.000 --> 00:01:55.380
+simple as we are going to build something real I'll try to
+
+00:01:55.380 --> 00:01:58.340
+explain each and every line of the code so don't worry about
+
+00:01:58.340 --> 00:02:03.520
+it but again coding is like a secondary things concept is a
+
+00:02:03.520 --> 00:02:05.180
+primary thing I
+
+00:02:08.220 --> 00:02:11.480
+know so we are going to build basically a gpt 3.5 kind of a
+
+00:02:11.480 --> 00:02:16.660
+a system a complete GPT-3 kind of a system we are going to
+
+00:02:16.660 --> 00:02:19.980
+even visualize the model we are even going to check what is
+
+00:02:19.980 --> 00:02:21.820
+the number of parameters that we are trying to train
+
+00:02:21.820 --> 00:02:24.240
+everything everything means everything end to end we are
+
+00:02:24.240 --> 00:02:28.560
+going to do it like from a scratch without like using any
+
+00:02:28.560 --> 00:02:32.480
+pre-trained model or anything make us feel easy sir I will I
+
+00:02:32.480 --> 00:02:39.480
+will try to but again so it's a two-way journey right when
+
+00:02:39.480 --> 00:02:42.120
+these kind of things comes into a picture obviously it's a
+
+00:02:42.120 --> 00:02:46.660
+two-way journey I'm expecting that we understand a Python
+
+00:02:46.660 --> 00:02:50.760
+code at least like I'm not going to talk about a basic of
+
+00:02:50.760 --> 00:02:55.060
+the Python fundamentals I understand I think we all have
+
+00:02:55.060 --> 00:02:59.260
+that much of understanding so if that is fine then I don't
+
+00:02:59.260 --> 00:03:02.440
+think that you will feel overwhelmed by a code okay
+
+00:03:05.450 --> 00:03:09.210
+so two more minute guys we are going to wait and then we are
+
+00:03:09.210 --> 00:03:11.650
+going to kick off the class okay
+
+00:03:15.010 --> 00:03:19.150
+so I'm going to share my screen and I'm going to open up a
+
+00:03:19.150 --> 00:03:25.110
+VS code so just open up a VS code guys or maybe you can try
+
+00:03:25.110 --> 00:03:28.590
+to open up a Google collab that's completely fine I just
+
+00:03:28.590 --> 00:03:32.050
+need a Jupiter notebook kind of a setup that's it so
+
+00:03:32.050 --> 00:03:35.830
+whatever like make you feel good it's completely fine go
+
+00:03:35.830 --> 00:03:39.370
+ahead with a collab go ahead with the Jupiter any online
+
+00:03:39.370 --> 00:03:42.170
+version of it or maybe go ahead with the VS code I believe
+
+00:03:42.170 --> 00:03:45.010
+we have been using or we have been coding inside a VS code
+
+00:03:45.010 --> 00:03:48.090
+so I'll try to follow the same the system that we have been
+
+00:03:48.090 --> 00:03:52.530
+using since a beginning of this class are we going to train
+
+00:03:52.530 --> 00:03:56.470
+the model for some of the data exactly so we are going to
+
+00:03:56.470 --> 00:04:00.510
+create our own data we are going to train our model we are
+
+00:04:00.510 --> 00:04:03.790
+going to create our own model our own tokenizer we are going
+
+00:04:03.790 --> 00:04:06.590
+to train it we are going to save the model we are going to
+
+00:04:06.590 --> 00:04:10.070
+test the model that whether my model is able to generate
+
+00:04:10.070 --> 00:04:13.690
+something or not just like exactly like a chat GPT so for
+
+00:04:13.690 --> 00:04:16.210
+example you are going to ask something to a GPT right and
+
+00:04:16.210 --> 00:04:19.670
+chat GPT is going to give you an answer so exact same thing
+
+00:04:19.670 --> 00:04:22.970
+we are going to do and we are going to follow the exact same
+
+00:04:22.970 --> 00:04:27.610
+chat GPT 3.5 kind of architecture the architecture that I
+
+00:04:27.610 --> 00:04:32.770
+have already discussed in my theoretical section fine and
+
+00:04:32.770 --> 00:04:34.310
+I'll
+
+00:04:44.100 --> 00:04:46.960
+keep on giving you a code don't worry so even you can do
+
+00:04:46.960 --> 00:04:50.260
+coding in parallel to me and you can if you are getting
+
+00:04:50.260 --> 00:04:53.540
+stuck somewhere so maybe just copy and paste the code so I
+
+00:04:53.540 --> 00:04:56.460
+will copy and paste a code inside your chat box in a real
+
+00:04:56.460 --> 00:04:59.880
+time so that you will be able to even code it along with me
+
+00:04:59.880 --> 00:05:00.800
+okay
+
+00:05:08.070 --> 00:05:14.910
+let's start so first of all guys open up VS code and then we
+
+00:05:14.910 --> 00:05:18.470
+are good to start I believe so all of us is having a VS code
+
+00:05:18.470 --> 00:05:21.950
+open and ready so I'm going to create a folder by the way so
+
+00:05:21.950 --> 00:05:26.170
+open folder and then maybe in directory so I'm going to
+
+00:05:26.170 --> 00:05:30.850
+create a folder called as GPT so this is the folder I'm
+
+00:05:30.850 --> 00:05:34.450
+going to create and inside this folder I'll try to keep all
+
+00:05:34.450 --> 00:05:37.630
+the files so simple open up a VS code create a folder inside
+
+00:05:37.630 --> 00:05:40.950
+a VS code and then I'm going to create a Jupyter notebook
+
+00:05:40.950 --> 00:05:49.390
+file IPython notebook file IPYNB so GPT dot IPYNB so this is
+
+00:05:49.390 --> 00:05:53.650
+a file I'm able to create and yeah so here I will start
+
+00:05:53.650 --> 00:05:57.810
+coding each and everything now along with that so try to
+
+00:05:57.810 --> 00:06:02.770
+create another file basically data dot txt so here we are
+
+00:06:02.770 --> 00:06:06.530
+going to keep our data a data which we are going to pass to
+
+00:06:06.530 --> 00:06:11.450
+train my own model at the end of the day yeah so so
+
+00:06:11.450 --> 00:06:14.190
+yesterday class was missed by me so yesterday I was talking
+
+00:06:14.190 --> 00:06:17.950
+about a comparison between the architecture and before like
+
+00:06:17.950 --> 00:06:20.510
+yesterday's class which was like a last Saturday class and
+
+00:06:20.510 --> 00:06:22.730
+they have not taken I believe a class it was a holiday for
+
+00:06:22.730 --> 00:06:27.830
+me because of Ravnami so basically like if you if you have
+
+00:06:27.830 --> 00:06:30.490
+attended that class that Saturday class last Saturday class
+
+00:06:30.490 --> 00:06:34.690
+so I think then it's fine but yeah all this class are linked
+
+00:06:34.690 --> 00:06:41.150
+obviously okay can I use UV environment here yeah you can
+
+00:06:41.150 --> 00:06:44.550
+use it I don't have any kind of a issue such in so so this
+
+00:06:44.550 --> 00:06:49.950
+is in sin since I think I'm not able to pronounce your name
+
+00:06:49.950 --> 00:06:54.030
+correctly okay so data now here I'm going to create a data
+
+00:06:54.030 --> 00:06:59.450
+so I'm going to create a like a very own kind of a data my
+
+00:06:59.450 --> 00:07:08.470
+name is Sudhanshu Kumaran I work with you on okay so instead
+
+00:07:08.470 --> 00:07:12.750
+of creating this data what I can do is so anyhow I'm going
+
+00:07:12.750 --> 00:07:16.990
+to fill our data about me right so I have already have a
+
+00:07:16.990 --> 00:07:20.010
+founder story page so I'll go and I'll copy my own story
+
+00:07:20.010 --> 00:07:23.650
+from here so yeah you can you can just go over there and
+
+00:07:23.650 --> 00:07:26.950
+then copy my story if you want so I'm just going to take
+
+00:07:26.950 --> 00:07:30.130
+this data so this is about me guys this is my story which is
+
+00:07:30.130 --> 00:07:35.190
+you will be able to find out on a founders page so let me
+
+00:07:35.190 --> 00:07:39.490
+copy the story control C okay
+
+00:07:41.920 --> 00:07:46.320
+let me copy other part of the story the intrapreneur and
+
+00:07:46.320 --> 00:07:53.780
+teachers don't choose dual legacy so copy this data okay let
+
+00:07:53.780 --> 00:07:58.640
+me check early life so yeah this is my early life by the way
+
+00:07:58.640 --> 00:08:06.360
+you all can go and read out rising through the ranks of tech
+
+00:08:06.360 --> 00:08:13.940
+world let's copy that data birth of I neuron and
+
+00:08:16.600 --> 00:08:23.100
+then the foundation of your own so this is the data guys I'm
+
+00:08:23.100 --> 00:08:26.040
+able to create so basically I have copied this data from my
+
+00:08:26.040 --> 00:08:29.300
+own founders page you all will be able to find out a
+
+00:08:29.300 --> 00:08:33.440
+founders story page on your own itself so even if you want
+
+00:08:33.440 --> 00:08:37.180
+you can go and you can try to copy or else I'm just giving
+
+00:08:37.180 --> 00:08:41.640
+you this entire data set. Inside your chat box so this is
+
+00:08:41.640 --> 00:08:44.740
+the entire data set guys that I have copied so this is the
+
+00:08:44.740 --> 00:08:48.300
+data set I will be using so where things are mentioned about
+
+00:08:48.300 --> 00:08:52.860
+me and my early days my career how I have found my previous
+
+00:08:52.860 --> 00:08:56.960
+company how I have raised the capital in my previous company
+
+00:08:56.960 --> 00:08:59.800
+and then I sold my previous company then why I have started
+
+00:08:59.800 --> 00:09:02.980
+the new company everything you will be able to find out
+
+00:09:02.980 --> 00:09:07.740
+teacher plus intrapreneur journey plus a techie obviously a
+
+00:09:07.740 --> 00:09:10.040
+teacher intrapreneur and techie journey you all will be able
+
+00:09:10.040 --> 00:09:13.700
+to find out in this one and I have just copied the data so
+
+00:09:13.700 --> 00:09:17.000
+this is the data guys please copy it keep it with you so
+
+00:09:17.000 --> 00:09:22.160
+that we can try to use it yes everyone done with data yeah
+
+00:09:24.430 --> 00:09:27.090
+I believe you all are able to copy the data from your chat
+
+00:09:27.090 --> 00:09:28.130
+so
+
+00:09:32.520 --> 00:09:35.780
+just confirm ping me yes or no guys inside your chat box
+
+00:09:35.780 --> 00:09:40.990
+we'll go in a step-by-step manner so the very first step is
+
+00:09:40.990 --> 00:09:44.590
+prepare your data because obviously we are trying to build a
+
+00:09:44.590 --> 00:09:48.450
+conversational system right. So basically we need a data so
+
+00:09:48.450 --> 00:09:51.790
+that I will be able to train my model so that my model will
+
+00:09:51.790 --> 00:09:56.310
+be able to generate something out of it yeah and this is the
+
+00:09:56.310 --> 00:10:00.190
+data I'm going to use my own data my own story I'm going to
+
+00:10:00.190 --> 00:10:04.890
+use it to train my model and then while generating or while
+
+00:10:04.890 --> 00:10:07.410
+asking some of the questions so maybe I'll try to ask
+
+00:10:07.410 --> 00:10:11.490
+something out of this data we'll see whether my models model
+
+00:10:11.490 --> 00:10:15.010
+is able to respond or not and if my model is not able to
+
+00:10:15.010 --> 00:10:19.810
+respond then what I can do to make it more powerful to make
+
+00:10:19.810 --> 00:10:23.630
+it more like a robust so that it will be able to give me an
+
+00:10:23.630 --> 00:10:28.910
+answer in a correct way yeah Rathalavath
+
+00:10:28.910 --> 00:10:31.810
+is asking hi sir I'm currently working as a AI engineer
+
+00:10:31.810 --> 00:10:35.210
+where I fine-tune LLMs and VLMs fine I have already covered
+
+00:10:35.210 --> 00:10:39.390
+a basic like pre-processing and tokenization in a previous
+
+00:10:39.390 --> 00:10:42.570
+courses since this is my first class with you just wanted to
+
+00:10:42.570 --> 00:10:45.370
+check will I be able to follow along with the content yeah
+
+00:10:45.370 --> 00:10:49.030
+so if you like if you are claiming that you are already
+
+00:10:49.030 --> 00:10:52.430
+working so I think you will be able to follow along easily I
+
+00:10:52.430 --> 00:10:55.850
+don't think that you will face any kind of a problem yeah
+
+00:10:55.850 --> 00:11:00.070
+okay so data set is ready guys now we'll come to a python
+
+00:11:00.070 --> 00:11:05.210
+file and let's write one plus one just to import the
+
+00:11:05.210 --> 00:11:09.310
+environment so import the environment so I'm just going to
+
+00:11:09.310 --> 00:11:13.230
+use my own base environment going forward I'm going to teach
+
+00:11:13.230 --> 00:11:16.850
+you that how to create basically a environment a virtual
+
+00:11:16.850 --> 00:11:20.110
+environment basically but yeah I'm not going to create a
+
+00:11:20.110 --> 00:11:22.090
+virtual environment over here I'm going to use my base
+
+00:11:22.090 --> 00:11:25.790
+environment so fine now my data is ready and my Jupyter
+
+00:11:25.790 --> 00:11:29.610
+notebook is ready now what is the procedure we are going to
+
+00:11:29.610 --> 00:11:34.630
+follow guys so what I will do is so we'll try to open up a
+
+00:11:34.630 --> 00:11:37.450
+research paper the research paper that we have already
+
+00:11:37.450 --> 00:11:43.150
+discussed so attention is all you need so this is the
+
+00:11:43.150 --> 00:11:47.990
+research paper that we have discussed right and this is the
+
+00:11:47.990 --> 00:11:52.050
+base so we'll try to follow along with this research paper
+
+00:11:52.050 --> 00:11:55.890
+so obviously I'm going to basically create a GPT kind of a
+
+00:11:55.890 --> 00:12:00.010
+model and we all know okay one question for all of you so
+
+00:12:00.010 --> 00:12:04.350
+guys GPT is a decoder only model encoder only model or
+
+00:12:04.350 --> 00:12:08.250
+encoded decoder model yes
+
+00:12:12.220 --> 00:12:17.560
+okay Ramesh yeah so guys question for you so GPT is a
+
+00:12:17.560 --> 00:12:20.720
+encoder model decoder only model or encoder decoder model
+
+00:12:20.720 --> 00:12:21.580
+okay
+
+00:12:24.200 --> 00:12:27.420
+I believe we all know the answer right everyone is saying
+
+00:12:27.420 --> 00:12:30.120
+decoder no one has said no one has given me a wrong answer
+
+00:12:30.120 --> 00:12:34.580
+again no one is saying encoder and decoder no it's decoder
+
+00:12:34.580 --> 00:12:38.360
+only model by the way so the initial version of GPT by the
+
+00:12:38.360 --> 00:12:41.460
+way the initial version 3.5 if I'm going to talk about in a
+
+00:12:41.460 --> 00:12:44.620
+later stage so obviously there is a modification so 440 mini
+
+00:12:44.620 --> 00:12:47.260
+and all those models but yeah so if I'll talk about the
+
+00:12:47.260 --> 00:12:53.100
+initial version 3.5 practically which was like a one of the
+
+00:12:53.100 --> 00:12:56.900
+early version of a GPT it's a decoder only and then in a
+
+00:12:56.900 --> 00:13:00.120
+later stage when they have started improvising so they have
+
+00:13:00.120 --> 00:13:02.540
+attached encoder decoder both the segment for a different
+
+00:13:02.540 --> 00:13:05.100
+different task and then even they have introduced a mixture
+
+00:13:05.100 --> 00:13:08.920
+of the experts where there are multiple models so this is
+
+00:13:08.920 --> 00:13:11.180
+something that we are going to follow this architecture we
+
+00:13:11.180 --> 00:13:14.060
+are going to follow and the very first part that we have to
+
+00:13:14.060 --> 00:13:17.160
+do is so we have to read the data and then we have to
+
+00:13:17.160 --> 00:13:22.340
+convert those data into yeah Rathalavath is saying yeah
+
+00:13:22.340 --> 00:13:24.640
+initially that is that is something that I have discussed in
+
+00:13:24.640 --> 00:13:27.160
+my class and we are going to build that particular part
+
+00:13:27.160 --> 00:13:33.220
+basically yeah so like another latest one because latest one
+
+00:13:33.220 --> 00:13:37.220
+architecture is not exactly available to all of us so here
+
+00:13:37.220 --> 00:13:40.600
+the very first part that we have to do it so we have to take
+
+00:13:40.600 --> 00:13:45.600
+a data the data that I have taken over here and I have to
+
+00:13:45.600 --> 00:13:48.780
+encode this data I have to convert this data into its
+
+00:13:48.780 --> 00:13:51.960
+numerical representation that is a part number one that we
+
+00:13:51.960 --> 00:13:56.400
+have to do a Part number two is that we have to like attach
+
+00:13:56.400 --> 00:13:59.220
+a positional encoding. So I believe we talked about a
+
+00:13:59.220 --> 00:14:01.920
+positional encoding, a rotatory positional encoding. This is
+
+00:14:01.920 --> 00:14:06.160
+something which has been used by GPT models are like a, if
+
+00:14:06.160 --> 00:14:08.480
+I'll talk about just this particular research paper, then it
+
+00:14:08.480 --> 00:14:10.680
+was a simple odd even number positional encoding. We have
+
+00:14:10.680 --> 00:14:12.600
+already talked about the mathematics behind it yesterday
+
+00:14:12.600 --> 00:14:16.300
+itself, right? But yeah, so if I'll talk about a GPT, so GPT
+
+00:14:16.300 --> 00:14:19.860
+3.5 or early version of GPT, it was using a rotatory like a
+
+00:14:19.860 --> 00:14:24.240
+encoder model. So we are supposed to prepare the data in a
+
+00:14:24.240 --> 00:14:27.880
+very first place. Once my data will be ready, then what I
+
+00:14:27.880 --> 00:14:31.540
+will do, I'll try to create a layer one by one, one by one,
+
+00:14:31.560 --> 00:14:35.380
+one by one bottom till top. I will try to create a layer. I
+
+00:14:35.380 --> 00:14:38.700
+will try to send a data layer means I will try to create an
+
+00:14:38.700 --> 00:14:43.020
+entire model and then eventually we are going to visualize
+
+00:14:43.020 --> 00:14:46.460
+that particular model as well. So we are not just going to
+
+00:14:46.460 --> 00:14:49.360
+create a model as you can see in my screen, right? I believe
+
+00:14:49.360 --> 00:14:52.240
+my screen is visible to all of you. So this is the
+
+00:14:52.240 --> 00:14:55.500
+visualization of the model that we all will be able to get
+
+00:14:55.500 --> 00:14:58.540
+with the help of Netron. We are going to save the model and
+
+00:14:58.540 --> 00:15:01.560
+then one by one, one by one layer by layer. We can even try
+
+00:15:01.560 --> 00:15:05.200
+to visualize the model inside a Netron or even inside our
+
+00:15:05.200 --> 00:15:07.840
+code. So we can try to call model dot summary that is going
+
+00:15:07.840 --> 00:15:11.020
+to give me the complete layer by layer, layer by layer that
+
+00:15:11.020 --> 00:15:13.580
+what model is trying to do and what is the structure of the
+
+00:15:13.580 --> 00:15:17.480
+entire model one by one, one by one. So that's a whole idea
+
+00:15:17.480 --> 00:15:20.500
+guys. So we are going to follow the, like I said, same
+
+00:15:20.500 --> 00:15:23.400
+research. Paper and one by one, we will start building or we
+
+00:15:23.400 --> 00:15:27.540
+will start writing the code. Okay, so let's get started now.
+
+00:15:27.680 --> 00:15:32.240
+So here data is ready now code wise before like I started
+
+00:15:32.240 --> 00:15:35.600
+writing a code. So I have to do some sort of import over
+
+00:15:35.600 --> 00:15:38.820
+here, right? Some of the libraries which I'm going to use, I
+
+00:15:38.820 --> 00:15:41.420
+have to create a couple of variable which I will be using
+
+00:15:41.420 --> 00:15:45.120
+eventually for this one. So the very first library or the
+
+00:15:45.120 --> 00:15:49.400
+only important library that we are going to like use over
+
+00:15:49.400 --> 00:15:52.560
+here. It is called tensorflow. So I'm going to use a
+
+00:15:52.560 --> 00:16:00.220
+tensorflow TEN, tensorflow as tf is a alias. Then from
+
+00:16:00.220 --> 00:16:06.000
+tensorflow dot keras, I'm going to use a high level API from
+
+00:16:06.000 --> 00:16:08.660
+keras import,
+
+00:16:10.000 --> 00:16:15.760
+import layer, layers basically, and then try to import
+
+00:16:15.760 --> 00:16:22.780
+numpy, numpy as np, then try to import. So that I can read
+
+00:16:22.780 --> 00:16:26.840
+out the files and then try to import a pickle so that I will
+
+00:16:26.840 --> 00:16:31.800
+be able to save some of the models, the tokenizer model that
+
+00:16:31.800 --> 00:16:33.880
+I'm going to create or any other model that I'm going to
+
+00:16:33.880 --> 00:16:36.140
+create, I will be able to save it. So I have already put
+
+00:16:36.140 --> 00:16:39.460
+your code inside your chat box guys. So these are the import
+
+00:16:39.460 --> 00:16:41.500
+that you have to do. If you are getting some sort of a
+
+00:16:41.500 --> 00:16:45.800
+import error, just do pip install and that particular model
+
+00:16:45.800 --> 00:16:52.320
+name. That's it. So here. Hmm. So here, uh, import is done.
+
+00:16:52.440 --> 00:16:56.240
+Now once import is done, let's try to read our data in a
+
+00:16:56.240 --> 00:16:59.720
+very first place, right? So our data is available in the
+
+00:16:59.720 --> 00:17:02.940
+same directory, right? Data dot txt. So I'll try to read out
+
+00:17:02.940 --> 00:17:07.640
+the data. So simple python code with open and open what? So
+
+00:17:07.640 --> 00:17:13.520
+open my file data dot txt simple and uh, try to open it up
+
+00:17:13.520 --> 00:17:17.820
+into a read mode basically. And encoding wise while trying
+
+00:17:17.820 --> 00:17:20.680
+to read out. So just try to use a UTF eight, which is
+
+00:17:20.680 --> 00:17:24.060
+equivalent to a English. So UTF eight encoding technique,
+
+00:17:24.340 --> 00:17:29.920
+use it and read it. So as if, and then I can try to write F
+
+00:17:29.920 --> 00:17:34.740
+dot, read the file and I'm going to save it inside our
+
+00:17:34.740 --> 00:17:40.520
+variable called as text underscore data. Fine. So just try
+
+00:17:40.520 --> 00:17:45.500
+to read a file over here, execute. And now if I'm going to
+
+00:17:45.500 --> 00:17:49.240
+show you a text data, I have the entire data. So whatever
+
+00:17:49.240 --> 00:17:53.240
+data, which was available inside my data dot txt. Now with
+
+00:17:53.240 --> 00:17:57.200
+the help of my python code, I'm able to read it out. So here
+
+00:17:57.200 --> 00:18:01.600
+is a code I have pinged you to read a data. So fine. Uh,
+
+00:18:01.780 --> 00:18:06.880
+library import is done. Now this, uh, uh, data read is done.
+
+00:18:07.000 --> 00:18:10.900
+So I'm able to read a data. Now once I'm able to read a
+
+00:18:10.900 --> 00:18:14.600
+data, right now, what I'm supposed to do. So if I'm going to
+
+00:18:14.600 --> 00:18:17.700
+follow this research paper, right, this research paper. So
+
+00:18:17.700 --> 00:18:21.300
+once I will be having a data, so I have to convert those
+
+00:18:21.300 --> 00:18:25.240
+data into a embeddings, right? I have to convert this data
+
+00:18:25.240 --> 00:18:28.660
+into a embeddings. Embedding simply means that, that I have
+
+00:18:28.660 --> 00:18:31.220
+to convert those data into some of the numerical
+
+00:18:31.220 --> 00:18:34.480
+representation. We have to tokenize the data. We have to
+
+00:18:34.480 --> 00:18:36.700
+convert those data into some of the numerical
+
+00:18:36.700 --> 00:18:40.780
+representation. So fine, let's do it then one by one. So I
+
+00:18:40.780 --> 00:18:43.880
+will be using a library over here. So instead of going ahead
+
+00:18:43.880 --> 00:18:46.120
+with the manual approach, uh, I think we have seen the
+
+00:18:46.120 --> 00:18:48.920
+embeddings, uh, different, different kinds of embeddings,
+
+00:18:48.960 --> 00:18:52.300
+but here simple library I'm going to use. So here, what I
+
+00:18:52.300 --> 00:18:55.160
+will do is, so I'll be using a tensorflow library. So
+
+00:18:55.160 --> 00:19:00.080
+tensorflow.keras, uh, so Keras is a high level API pre
+
+00:19:00.080 --> 00:19:04.580
+-processing and then pre-processing text and then do what?
+
+00:19:04.660 --> 00:19:08.040
+So tokenize, there is a library called as tokenize. Now this
+
+00:19:08.040 --> 00:19:12.680
+is going to help me out in terms of tokenizing my entire
+
+00:19:12.680 --> 00:19:17.640
+data set as simple as that. Okay. So are we able to follow
+
+00:19:17.640 --> 00:19:18.120
+along guys?
+
+00:19:25.490 --> 00:19:26.290
+Yes, everyone.
+
+00:19:39.900 --> 00:19:44.820
+Yeah. Can you please share the data.txt again, uh, you
+
+00:19:44.820 --> 00:19:46.940
+please look into the chat. I think you will be able to find
+
+00:19:46.940 --> 00:19:50.120
+out or just take any data, any random data. That's
+
+00:19:50.120 --> 00:19:53.020
+completely fine. Take your own set of the data. That's
+
+00:19:53.020 --> 00:19:57.220
+completely fine. Yeah. I have taken my own data, my founder
+
+00:19:57.220 --> 00:20:00.040
+story page. That's it. If my data is a multiple PDA word
+
+00:20:00.040 --> 00:20:03.620
+file, then, then write a Python code, read all the files one
+
+00:20:03.620 --> 00:20:07.320
+by one, one by one. Okay. That's it. Simple. I think with
+
+00:20:07.320 --> 00:20:09.500
+the help of Python, I can read not just one. I can read a
+
+00:20:09.500 --> 00:20:12.360
+millions of files separately. Even if my files, some of the
+
+00:20:12.360 --> 00:20:14.740
+files are available in a word format, some in a PDF format,
+
+00:20:14.880 --> 00:20:17.420
+some is available into a markup format. Some is available
+
+00:20:17.420 --> 00:20:20.520
+over a HTTP. So I believe we know the library called as
+
+00:20:20.520 --> 00:20:23.540
+Pandas. Now Pandas is going to help me out. Or even if I
+
+00:20:23.540 --> 00:20:26.040
+don't know about the Pandas, that's completely fine. Just by
+
+00:20:26.040 --> 00:20:28.560
+using this one, I'll loop it through and I will be able to
+
+00:20:28.560 --> 00:20:31.180
+read the data. I mean like it's just a Python problem,
+
+00:20:31.300 --> 00:20:35.820
+right? It's not a AI problem by the way. Okay. So once I'm
+
+00:20:35.820 --> 00:20:39.040
+able to read out this entire dataset, now what I will do is,
+
+00:20:39.080 --> 00:20:43.760
+so I will try to, uh, like I have to tokenize this data. Now
+
+00:20:43.760 --> 00:20:46.780
+if you look into this tokenize method, so it always try to
+
+00:20:46.780 --> 00:20:50.120
+talk about a number of words, right? A number of words that
+
+00:20:50.120 --> 00:20:52.940
+you would like to tokenize means a number of unique words
+
+00:20:52.940 --> 00:20:57.780
+that you would like to tokenize at the end of the day. Now
+
+00:20:57.780 --> 00:21:00.340
+if you will come over here, you will be able to find out
+
+00:21:00.340 --> 00:21:04.520
+like, uh, uh, it's, it's meaning as well. So. It means the
+
+00:21:04.520 --> 00:21:07.280
+maximum number of the word to keep based on the word
+
+00:21:07.280 --> 00:21:10.760
+frequency. So only the most common number of word minus one
+
+00:21:10.760 --> 00:21:14.980
+will be kept. So the unique number of word that you would
+
+00:21:14.980 --> 00:21:17.620
+like to like, uh, send to your model to understand
+
+00:21:18.100 --> 00:21:21.140
+something, right? Now there is something called as OOV
+
+00:21:21.140 --> 00:21:24.320
+token. So if given, it will add the word index and use to
+
+00:21:24.320 --> 00:21:27.340
+replace the outer vocabulary word simple. So it will try to
+
+00:21:27.340 --> 00:21:30.280
+replace all the outer vocabulary word. And that is something
+
+00:21:30.280 --> 00:21:32.300
+that we have already discussed while talking about the
+
+00:21:32.300 --> 00:21:35.900
+embeddings. So here. I will try to set a parameter. So
+
+00:21:35.900 --> 00:21:39.880
+number of word, let's suppose I want my model to, uh, learn
+
+00:21:39.880 --> 00:21:45.020
+5,000 unique word. And then out of vocabulary token is going
+
+00:21:45.020 --> 00:21:51.380
+to be, so out of vocabulary token is going to be OOV.
+
+00:21:56.920 --> 00:22:02.860
+So OOV, okay. So here the inside a string, you have to keep
+
+00:22:02.860 --> 00:22:06.600
+it. So number of tokens and words. Now here, I can try to
+
+00:22:06.600 --> 00:22:11.200
+save it inside a variable called as T-O-K-E-N-I-Z-E-R. So
+
+00:22:11.200 --> 00:22:13.980
+this is a, like a object, which I have created a tokenizer
+
+00:22:13.980 --> 00:22:17.260
+object. Now once I'm able to create a tokenizer object, I
+
+00:22:17.260 --> 00:22:23.420
+can try to call tokenizer.fit or .fit on text. So on text, I
+
+00:22:23.420 --> 00:22:27.240
+will try to fit on what text I would like, like to fit. So I
+
+00:22:27.240 --> 00:22:30.160
+would like to fit this on this text data, the data, which
+
+00:22:30.160 --> 00:22:34.020
+I'm able to read my own data, right? My own data that I'm
+
+00:22:34.020 --> 00:22:36.920
+able to read. So I'll try to fit it over there. So I'll try
+
+00:22:36.920 --> 00:22:39.880
+to pass that data as a list in this particular place and
+
+00:22:39.880 --> 00:22:44.280
+then execute. So once executed, it is going to create a
+
+00:22:44.280 --> 00:22:48.120
+tokenization of the entire data. As you can see, it has
+
+00:22:48.120 --> 00:22:51.560
+created a tokenizer, tokenizer means now it will be able to
+
+00:22:51.560 --> 00:22:55.920
+convert my entire document or the data that I'm trying to
+
+00:22:55.920 --> 00:23:00.420
+read into a small, small token now here. So if I have to see
+
+00:23:00.420 --> 00:23:05.020
+the outcome. So maybe. Let's call tokenizer dot text to
+
+00:23:05.020 --> 00:23:12.220
+sequence text to sequence. I can try to call and then text
+
+00:23:12.220 --> 00:23:18.100
+data. I can try to pass. So this is the sequence it has
+
+00:23:18.100 --> 00:23:22.260
+created guys and one by one, one by one, as you can see. So
+
+00:23:22.260 --> 00:23:25.660
+basically there is a array inside the array. So this is
+
+00:23:25.660 --> 00:23:29.080
+technically a sequence with it as created out of my entire
+
+00:23:29.080 --> 00:23:33.700
+data set right on. This entire data set. So I can try to
+
+00:23:33.700 --> 00:23:38.580
+store this entire data set into a C Q U E N C this variable
+
+00:23:38.580 --> 00:23:44.100
+sequence. Okay. So inside a sequence, just try to store all
+
+00:23:44.100 --> 00:23:47.140
+this text data. Now let me ping you this piece of the code.
+
+00:23:47.300 --> 00:23:54.400
+So tokenize converted into a sequence and then store it. So
+
+00:23:54.400 --> 00:24:00.340
+this is a sequence. So now we are able to convert our data
+
+00:24:00.340 --> 00:24:03.360
+into a numerical. Representation just call the sequence and
+
+00:24:03.360 --> 00:24:07.100
+you will be able to see that yes, we are able to convert the
+
+00:24:07.100 --> 00:24:11.860
+entire data set into a sequence now. So here we have array
+
+00:24:11.860 --> 00:24:14.840
+inside the array or you can say list inside a list and then
+
+00:24:14.840 --> 00:24:18.840
+maybe we can try to even check that what is a length of the
+
+00:24:18.840 --> 00:24:24.540
+sequence. So sequence of zero, obviously sequence of zero.
+
+00:24:24.640 --> 00:24:28.940
+What is the length of it? So in total, we have 860 unique
+
+00:24:28.940 --> 00:24:32.600
+word. That system is able to find out. Inside my data set.
+
+00:24:32.800 --> 00:24:35.880
+Okay, fine. So this is the total number of the sequences
+
+00:24:35.880 --> 00:24:41.060
+that we have inside my data set in like a unique one. Fine.
+
+00:24:41.240 --> 00:24:46.160
+So here I have to keep a zero from the zero indexes. I'm
+
+00:24:46.160 --> 00:24:50.260
+just trying to like, uh, first the data, yeah, there's the
+
+00:24:50.260 --> 00:24:53.220
+data. So sequence I'm able to create. So just a small
+
+00:24:53.220 --> 00:24:58.960
+correction, take a data from zero index because there is a
+
+00:24:58.960 --> 00:25:02.740
+array inside a array that you have. Now, once this is done,
+
+00:25:02.800 --> 00:25:06.780
+once I'm able to sequence, create a sequence of my data. Now
+
+00:25:06.780 --> 00:25:12.200
+what I will do is that I will try to save this tokenizer as
+
+00:25:12.200 --> 00:25:15.340
+of now. And again, so I have not created an input and output
+
+00:25:15.340 --> 00:25:18.160
+sequence as of now. I have just like converted all the data
+
+00:25:18.160 --> 00:25:20.880
+into its tentative, like a numerical representation. That's
+
+00:25:20.880 --> 00:25:24.500
+it. Nothing more than that, which I'm trying to do. So here
+
+00:25:24.500 --> 00:25:28.440
+what we can do is so once we are able to create a tokenizer,
+
+00:25:28.500 --> 00:25:30.760
+right, we are able to convert it into a numerical
+
+00:25:30.760 --> 00:25:35.200
+representation. So we can try to store this model. We can
+
+00:25:35.200 --> 00:25:39.100
+try to save this model so that whenever I will try to test,
+
+00:25:39.300 --> 00:25:42.940
+right, even at that point of a time, I'll try to pass my
+
+00:25:42.940 --> 00:25:45.600
+data. So let's suppose if I'm going to ask who is Ranshu
+
+00:25:45.600 --> 00:25:50.240
+Kumar. So obviously system has to convert that data into a
+
+00:25:50.240 --> 00:25:53.420
+numerical representation and that should go inside a model
+
+00:25:53.420 --> 00:25:57.100
+that we are going to train. So even at that point of a time,
+
+00:25:57.240 --> 00:26:00.900
+we need a same tokenizer, which understands my actual data.
+
+00:26:01.080 --> 00:26:03.660
+So what I can do is, for example, if you're going to ask
+
+00:26:03.660 --> 00:26:07.220
+some question to a chat GPT, what chat GPT does. So it is
+
+00:26:07.220 --> 00:26:11.700
+going to convert your entire line or entire tokens into a
+
+00:26:11.700 --> 00:26:14.780
+numerical representation and that that goes inside a chat
+
+00:26:14.780 --> 00:26:20.500
+GPT as an input. Now I need to save this tokenizer as a
+
+00:26:20.500 --> 00:26:23.560
+physical file so that I will be able to use it in a later
+
+00:26:23.560 --> 00:26:26.400
+stage, even at the time of testing or even at the time of
+
+00:26:26.400 --> 00:26:30.500
+generating my content. So here. Uh, I can try to give my
+
+00:26:30.500 --> 00:26:34.380
+model. Name to use, uh, like, uh, K E N I J D R tokenizer
+
+00:26:34.380 --> 00:26:40.260
+dot P K L pickle file, P K L pickle file. I'm going to
+
+00:26:40.260 --> 00:26:44.080
+create, which is nothing but a model file, right? Binary is
+
+00:26:44.080 --> 00:26:52.460
+the mode. It's a binary file as F and then pickle dot D U M
+
+00:26:52.460 --> 00:26:58.240
+P dump. And here, so we are going to dump what? So we are
+
+00:26:58.240 --> 00:27:01.820
+going to dump this object. Okay. So basically, so this, I
+
+00:27:01.820 --> 00:27:05.820
+would like to store it as a, uh, like, uh, inside, inside a
+
+00:27:05.820 --> 00:27:08.660
+file. So as simple as that, now, once I'm going to execute
+
+00:27:08.660 --> 00:27:12.700
+it, you will be able to see that it has created a tokenizer
+
+00:27:12.700 --> 00:27:16.700
+dot pickle file, a physical file. I'm able to create why,
+
+00:27:16.840 --> 00:27:19.540
+because I'm going to use it. I'm going to use it when I will
+
+00:27:19.540 --> 00:27:23.620
+try to test my model, when I will try to pass a question or
+
+00:27:23.620 --> 00:27:26.740
+any kind of a data, and I will be expecting from the model
+
+00:27:26.740 --> 00:27:29.480
+to give me some sort of an answer. So at that point of time,
+
+00:27:29.660 --> 00:27:35.720
+I needed, okay, fine. So just take this code, store it.
+
+00:27:39.840 --> 00:27:43.540
+Yeah. So are we able to follow along guys till this point?
+
+00:27:44.180 --> 00:27:48.000
+So we have done nothing much by the way. So we have a data.
+
+00:27:48.140 --> 00:27:50.940
+We are trying to read the data. We have called a tokenizer.
+
+00:27:51.160 --> 00:27:54.780
+Now tokenizer is able to convert my data into its numerical
+
+00:27:54.780 --> 00:27:58.880
+representation. And then eventually we have saved those
+
+00:27:58.880 --> 00:27:59.340
+model.
+
+00:28:03.740 --> 00:28:08.640
+Yes. Okay. Yeah. Okay. So Durg is saying yes. Deepak is
+
+00:28:08.640 --> 00:28:12.320
+saying yes. What about others? There are so many people
+
+00:28:12.320 --> 00:28:14.980
+inside this class. Doctor is saying yes. RCC is saying yes.
+
+00:28:15.540 --> 00:28:18.040
+Please repeat a pickle. Pickle is nothing, but it's a model
+
+00:28:18.040 --> 00:28:20.620
+physical file format. So there could be a pickle. There
+
+00:28:20.620 --> 00:28:23.340
+could be a H5 file format. So there are different, different
+
+00:28:23.340 --> 00:28:26.020
+kinds of a file format in which we try to save the model. So
+
+00:28:26.020 --> 00:28:28.280
+pickle is one of the format in which we are trying to save
+
+00:28:28.280 --> 00:28:32.140
+the model. Just like a dot txt, right? Dot txt, dot excel,
+
+00:28:32.260 --> 00:28:35.600
+dot docs, dot PDF. So we generally use the dot txt, dot
+
+00:28:35.600 --> 00:28:37.020
+excel, dot docs, dot pdf. Even in a day to day life, we are
+
+00:28:37.020 --> 00:28:38.940
+using a different, different kind of a file system, right?
+
+00:28:38.960 --> 00:28:42.340
+For PDF, it's a dot PDF. For example, for ipynb. So it's
+
+00:28:42.340 --> 00:28:46.060
+like Jupyter Notebook, it's a dot ipynb, dot txt. So in the
+
+00:28:46.060 --> 00:28:49.640
+similar way for model, it's a dot pickle or dot h5. In any
+
+00:28:49.640 --> 00:28:52.180
+format, you can try to save it. It's a binary file format.
+
+00:28:54.620 --> 00:28:57.600
+So tried import tokenizer is showing no module name
+
+00:28:57.600 --> 00:29:00.460
+tensorflow. So obviously if you are able to get no module
+
+00:29:00.460 --> 00:29:04.200
+name tensorflow, I think we all know the answer. Simple pip
+
+00:29:04.200 --> 00:29:08.160
+install tensorflow. And it will solve the issue Devanjan,
+
+00:29:09.950 --> 00:29:15.610
+pip install pip plus guys, the best part is you can even try
+
+00:29:15.610 --> 00:29:20.050
+to take a help of URI. So for example, try to import
+
+00:29:20.050 --> 00:29:23.230
+tokenizer and it is that's the reason. So we have given you
+
+00:29:23.230 --> 00:29:26.050
+URI, right? So try to use all the system. Sorry, I'm
+
+00:29:26.050 --> 00:29:29.810
+searching URI basically, inside huron we have URI, right? We
+
+00:29:29.810 --> 00:29:32.710
+have given you a beautiful system guys, just like use it.
+
+00:29:33.550 --> 00:29:36.830
+See how fast it is. It is giving you URI. It is giving you
+
+00:29:36.830 --> 00:29:41.630
+pip install tensorflow, right? Use it. Yeah, you can you can
+
+00:29:41.630 --> 00:29:44.610
+like you have some of the beautiful model, some of the real
+
+00:29:44.610 --> 00:29:47.270
+time search which is given to you. So what is stopping you
+
+00:29:47.270 --> 00:29:51.650
+to use it? Some people use a job leave as well. You can
+
+00:29:51.650 --> 00:29:54.930
+store it in any binary format. That's completely fine. So it
+
+00:29:54.930 --> 00:29:58.110
+just at the end of the day, like files, right? So file
+
+00:29:58.110 --> 00:30:00.770
+format could be anything and it is it is not going to create
+
+00:30:00.770 --> 00:30:04.130
+any kind of a bottleneck for you for any one of us. Okay,
+
+00:30:04.130 --> 00:30:11.350
+fine. Now. So now what we can do is so we have a like a
+
+00:30:11.350 --> 00:30:13.910
+tokenize means we are able to create a data into a
+
+00:30:13.910 --> 00:30:17.910
+sequences. Now what I will do is so we have to create a
+
+00:30:17.910 --> 00:30:21.770
+input data and we have to create basically a output data
+
+00:30:21.770 --> 00:30:26.190
+meaning is that that if we are trying to train this model,
+
+00:30:26.370 --> 00:30:29.510
+right, if we are trying to train this model, and I'm trying
+
+00:30:29.510 --> 00:30:32.730
+to train this model for what I'm trying to train this model
+
+00:30:32.730 --> 00:30:36.310
+for a very, very simple purpose. That I will ask question,
+
+00:30:36.590 --> 00:30:41.310
+you should give me answer, right? And if you remember, in
+
+00:30:41.310 --> 00:30:44.730
+your previous class practical class, so I talked about one
+
+00:30:44.730 --> 00:30:49.750
+of the example of RNN LSTM. So where HCL we were trying to
+
+00:30:49.750 --> 00:30:54.310
+give an ELP we were expecting, guys, remember that example,
+
+00:30:55.130 --> 00:30:57.310
+I think we have written a lot of code for that.
+
+00:31:01.080 --> 00:31:03.880
+When I print a sequence, it's showing me none, sir. Okay,
+
+00:31:03.940 --> 00:31:06.760
+Deepak. So just try to check your code. Maybe you can check
+
+00:31:06.760 --> 00:31:09.940
+with UD as well. Just send all the code to UD and it will
+
+00:31:09.940 --> 00:31:10.600
+try to fix it.
+
+00:31:14.960 --> 00:31:19.260
+Fine. Okay. So basically, we talked about that help, right?
+
+00:31:19.320 --> 00:31:22.360
+So where we were trying to like pass some sequence, and then
+
+00:31:22.360 --> 00:31:24.700
+we were able to generate some sequence. So when I was trying
+
+00:31:24.700 --> 00:31:28.580
+to pass HCL, it was able to generate a next sequence called
+
+00:31:28.580 --> 00:31:33.340
+as ELP. Now we are trying to train our model on this data
+
+00:31:33.340 --> 00:31:38.300
+for the exact same purpose, so that my system should my GPT
+
+00:31:38.300 --> 00:31:41.200
+should understand this entire data set. And if I'm going to
+
+00:31:41.200 --> 00:31:44.320
+ask some questions. It is supposed to generate something
+
+00:31:44.320 --> 00:31:47.800
+next, right, it is supposed to generate something next, not
+
+00:31:47.800 --> 00:31:50.860
+to generate something that's a testing phase, basically,
+
+00:31:50.920 --> 00:31:54.440
+right. But at the time of training, when I'm trying to train
+
+00:31:54.440 --> 00:31:59.900
+my entire model, so in that case, I have to create my x and
+
+00:31:59.900 --> 00:32:05.800
+I have to create my y, right guys, everyone making sense. So
+
+00:32:05.800 --> 00:32:11.340
+I should create a x and y both for me. How many of you
+
+00:32:11.340 --> 00:32:12.140
+disagree with it?
+
+00:32:15.160 --> 00:32:17.720
+So if we are trying to train even if you remember the
+
+00:32:17.720 --> 00:32:20.440
+example help that I have given, right. So even at that point
+
+00:32:20.440 --> 00:32:25.820
+of time, we have trained our LSTM model. So like, we have
+
+00:32:25.820 --> 00:32:28.080
+given our input and we have given our output. So we have
+
+00:32:28.080 --> 00:32:31.860
+given our x we have given our y. Now even over here, so we
+
+00:32:31.860 --> 00:32:36.880
+need our x we need our y. So guys, what is going to my x and
+
+00:32:36.880 --> 00:32:41.260
+what is going to be my y logically, what is what it is going
+
+00:32:41.260 --> 00:32:43.500
+to be as per your understanding if you can help me out with
+
+00:32:43.500 --> 00:32:48.060
+that. Okay. See, I just had this data, right? I just had
+
+00:32:48.060 --> 00:32:50.300
+this data. I don't have any other labeling with respect to
+
+00:32:50.300 --> 00:32:54.080
+this data. So what is going to my x, what is going to my y,
+
+00:32:57.010 --> 00:33:00.290
+Devans you can follow along with the chat. Okay. Chat is
+
+00:33:00.290 --> 00:33:04.110
+like a too long. So I think it will be a bit tedious for you
+
+00:33:04.110 --> 00:33:07.030
+to like copy and paste. Don't worry Devans, like wait for
+
+00:33:07.030 --> 00:33:08.850
+some time, I'll copy and paste once again all the code.
+
+00:33:09.910 --> 00:33:13.590
+Yeah. So Satish is saying x and y are same. Okay. Anyone
+
+00:33:13.590 --> 00:33:18.030
+else? So guys, the question is very simple. Okay. So I have
+
+00:33:18.030 --> 00:33:21.250
+to train the model, right? And obviously I'm trying to train
+
+00:33:21.250 --> 00:33:24.990
+for a conversational purpose. I'll try to like say something
+
+00:33:24.990 --> 00:33:27.370
+and model is supposed to reply back with something, right?
+
+00:33:27.710 --> 00:33:30.590
+That is basically a testing phase. But at the time of
+
+00:33:30.590 --> 00:33:34.210
+training, how I'm supposed to train, I need my x data, I
+
+00:33:34.210 --> 00:33:37.450
+need my y data so that my model will be able to minimize a
+
+00:33:37.450 --> 00:33:40.470
+loss between my x and y. This is how training will happen,
+
+00:33:40.570 --> 00:33:43.070
+right? My model will be able to minimize the loss between my
+
+00:33:43.070 --> 00:33:46.310
+x and y now. So what is going to my x? What is going to my
+
+00:33:46.310 --> 00:33:49.910
+y? That's a question like for all of you.
+
+00:33:53.910 --> 00:33:56.330
+Satish is saying x and y are same, Santosh is saying x is
+
+00:33:56.330 --> 00:34:00.190
+equal to text, y is equal to encoding. Santosh, I mean like
+
+00:34:00.190 --> 00:34:03.870
+how system can understand a text, anything that we are going
+
+00:34:03.870 --> 00:34:06.490
+to pass, it will be available into encoding means a
+
+00:34:06.490 --> 00:34:10.770
+numerical format, right? In some sequence. Rajat is saying x
+
+00:34:10.770 --> 00:34:14.870
+is equal to current word, y is equal to next word. Yeah, you
+
+00:34:14.870 --> 00:34:18.830
+are close actually. Doctor is saying 30, 70%. No, no, no,
+
+00:34:18.830 --> 00:34:21.090
+no, no, no, no. I think you are not able to like understand
+
+00:34:21.090 --> 00:34:23.450
+the question. No, no, I'm not talking about that part. That
+
+00:34:23.450 --> 00:34:27.730
+is a different context. Not that. Maybe you are coming from
+
+00:34:27.730 --> 00:34:30.630
+a machine learning background where we do like this straight
+
+00:34:30.630 --> 00:34:35.310
+up things. But no, it's not like that. Input will be before
+
+00:34:35.310 --> 00:34:38.950
+word and output will be next word. Yes, Sachin. Yes. So I
+
+00:34:38.950 --> 00:34:41.490
+think we have a couple of right answers. Sachin and Rajat,
+
+00:34:41.490 --> 00:34:45.530
+like they have given the right answer. We mask our data.
+
+00:34:45.610 --> 00:34:48.070
+That is our approach, Sandeep. I'm talking about just input
+
+00:34:48.070 --> 00:34:51.510
+and output. Masking is one of the approach that we try to
+
+00:34:51.510 --> 00:34:52.350
+integrate in between.
+
+00:34:57.160 --> 00:35:03.160
+Okay. So we have to create input and output. Let's do it.
+
+00:35:03.580 --> 00:35:06.720
+I'll try to write a function over here so that this function
+
+00:35:06.720 --> 00:35:10.360
+will take the input. Obviously like a sequence input, it is
+
+00:35:10.360 --> 00:35:12.900
+going to take like the sequence that we are able to create
+
+00:35:12.900 --> 00:35:14.660
+because this is our data, right? The sequence is
+
+00:35:14.660 --> 00:35:17.420
+representing our data. So this is going to take the sequence
+
+00:35:17.420 --> 00:35:20.520
+input and then eventually it is going to create my x data
+
+00:35:20.520 --> 00:35:23.660
+and y data. Because I just have only this data. I just have
+
+00:35:23.660 --> 00:35:26.720
+sequence data. Apart from the sequence data, I don't have
+
+00:35:26.720 --> 00:35:30.960
+any other data set. So here I'll write a function. So write
+
+00:35:30.960 --> 00:35:35.920
+a function to create a data set, create underscore data set.
+
+00:35:36.800 --> 00:35:40.720
+So out of the sequence, hope you are able to get a sense
+
+00:35:40.720 --> 00:35:43.660
+that why I'm writing this function. So I'll try to pass a
+
+00:35:43.660 --> 00:35:48.700
+sequence over here. I'll try to pass the sequence over here.
+
+00:35:48.800 --> 00:35:52.900
+Okay. And then there is a parameter I'm going to create a W
+
+00:35:52.900 --> 00:35:59.880
+I N D O W S I Z E window size, window W I N D O W underscore
+
+00:35:59.880 --> 00:36:04.820
+S I Z E window size. Window size is equal to maximum under
+
+00:36:04.820 --> 00:36:08.320
+maximum sequence length. So we can, we can try to give maybe
+
+00:36:08.320 --> 00:36:13.280
+something like a maximum sequence length over here. So
+
+00:36:13.280 --> 00:36:16.460
+maximum sequence length. Let's suppose I'm going to give 32.
+
+00:36:16.620 --> 00:36:19.280
+So max to max. This is the sequence. It will be able to
+
+00:36:19.280 --> 00:36:22.040
+understand. I'm just giving, you can change the sequence to
+
+00:36:22.040 --> 00:36:26.780
+any number that you want. Then input is one of the variable
+
+00:36:26.780 --> 00:36:30.420
+label is another variable label
+
+00:36:32.340 --> 00:36:35.800
+is another variable. So I'm going to create and keep it
+
+00:36:35.800 --> 00:36:39.580
+empty. So two empty list I have created. One is a input
+
+00:36:39.580 --> 00:36:45.260
+empty list and one is a label input list I have created. Now
+
+00:36:45.260 --> 00:36:48.340
+what I will do is I will try to go through the entire
+
+00:36:48.340 --> 00:36:50.920
+sequence. Let's suppose. As a sequence, I'm going to provide
+
+00:36:50.920 --> 00:36:53.580
+this data. Now we know that that this data is available in
+
+00:36:53.580 --> 00:36:57.020
+what this data is available in a list format, right? We all
+
+00:36:57.020 --> 00:37:01.840
+know even, uh, you can go and check. So how the sequence
+
+00:37:01.840 --> 00:37:04.380
+data looks like, so basically it's available in a list
+
+00:37:04.380 --> 00:37:07.500
+format, right? Eight 60 data or eight 60 values that we
+
+00:37:07.500 --> 00:37:10.160
+have. It's available into a list format. What I will do is
+
+00:37:10.160 --> 00:37:13.880
+I'll try to iterate through it, right? So for I in a range
+
+00:37:13.880 --> 00:37:17.980
+of range of length or off of basically a sequence that we
+
+00:37:17.980 --> 00:37:20.840
+are going to provide. Simple. I'm trying to do a iteration
+
+00:37:20.840 --> 00:37:28.520
+minus window size, right? Minus window size. And then what I
+
+00:37:28.520 --> 00:37:32.620
+can do is I can try to write input the input variable that
+
+00:37:32.620 --> 00:37:36.460
+I've created the empty list dot append. Now append what? So
+
+00:37:36.460 --> 00:37:42.460
+we are going to append over here, a sequence starting from
+
+00:37:42.460 --> 00:37:52.020
+ith value to I plus window size. So this is one of the data
+
+00:37:52.020 --> 00:37:56.300
+and then labels is going to be what? So labels dot append,
+
+00:37:56.460 --> 00:38:02.360
+and this is going to be what? So sequence of sequence of.
+
+00:38:04.640 --> 00:38:08.900
+Basically I plus. I plus one, I plus one, I
+
+00:38:11.750 --> 00:38:20.170
+plus window size plus one as simple as that. Now how many of
+
+00:38:20.170 --> 00:38:22.690
+you are not able to understand these two line of code? I
+
+00:38:22.690 --> 00:38:24.950
+think someone has told me already, some of you have already
+
+00:38:24.950 --> 00:38:28.190
+Sachin or Rajat has already given me an answer saying that,
+
+00:38:28.230 --> 00:38:32.410
+that your X data is going to be a data current data and then
+
+00:38:32.410 --> 00:38:35.870
+Y is going to be starting from the next data, for example.
+
+00:38:36.510 --> 00:38:40.350
+So a simple analogy. If I have to build over here. So let's
+
+00:38:40.350 --> 00:38:42.510
+suppose I have a word Sudhanshu.
+
+00:38:45.580 --> 00:38:49.980
+What is my X? Let's suppose I'm just imagine, right? So my X
+
+00:38:49.980 --> 00:38:54.100
+is going to be, let's suppose a S U D H, right? Let's
+
+00:38:54.100 --> 00:38:56.260
+suppose my sequence length is equal to four. Here I am
+
+00:38:56.260 --> 00:39:01.860
+taking 32, window size equal 32. So here X is equal to S U D
+
+00:39:01.860 --> 00:39:09.420
+H. Then Y is equal to what? U D H A. Fine. Yeah. U D H A.
+
+00:39:09.500 --> 00:39:11.400
+So. So it's a very simple Python code. That's the reason
+
+00:39:11.400 --> 00:39:13.260
+guys I told you in the beginning itself. So I'm not
+
+00:39:13.260 --> 00:39:16.520
+expecting that I will explain you a simple Python code. I'm
+
+00:39:16.520 --> 00:39:18.660
+assuming that we all understand the Python code. We'll try
+
+00:39:18.660 --> 00:39:22.460
+to focus on the core part of it. Right. Okay. So this is
+
+00:39:22.460 --> 00:39:24.600
+something that we are trying to do. So sequence start from
+
+00:39:24.600 --> 00:39:27.960
+I, so I till a window size that I have given, right? I plus
+
+00:39:27.960 --> 00:39:29.820
+window size that I have given and then window size nothing
+
+00:39:29.820 --> 00:39:33.160
+but one simple number I have taken. So starting from one
+
+00:39:33.160 --> 00:39:36.180
+point and then going till one point that I'm going to treat
+
+00:39:36.180 --> 00:39:40.580
+it as an input. And then. From. From. That point plus one,
+
+00:39:40.700 --> 00:39:45.860
+right? I'm going to treat it as a output. Why? As simple as
+
+00:39:45.860 --> 00:39:47.880
+that. I have given you an example of S U D H, right?
+
+00:39:47.940 --> 00:39:50.980
+Sudhanshu. So it's the same thing that we are trying to
+
+00:39:50.980 --> 00:39:55.200
+perform over here to create my X and to create my Y. Let me
+
+00:39:55.200 --> 00:39:57.660
+explain you once again. So let's suppose I have a word
+
+00:39:57.660 --> 00:40:03.420
+called S U D H A N S H U. So my first X is going to be,
+
+00:40:03.440 --> 00:40:06.200
+let's suppose S U D H. My window size is going to be, let's
+
+00:40:06.200 --> 00:40:09.360
+suppose four. This I'm considering as an output. Here I am
+
+00:40:09.360 --> 00:40:11.780
+considering 32 long sequence, but yeah, let's suppose I'm
+
+00:40:11.780 --> 00:40:15.980
+considering four. So S U D H. What is my Y, right? My Y is
+
+00:40:15.980 --> 00:40:20.920
+going to be U D H A, right? So this is my one of the X. Then
+
+00:40:20.920 --> 00:40:25.320
+this is my one of the Y. Then what is my next X? So my next
+
+00:40:25.320 --> 00:40:30.560
+X is going to be U D H A. What is my next Y? So D H A N.
+
+00:40:30.960 --> 00:40:36.040
+What is my next X? My next X is going to be D H A N. What is
+
+00:40:36.040 --> 00:40:41.700
+my next Y? So H A N. S. What is my next X? My next S. So
+
+00:40:41.700 --> 00:40:49.580
+it's H A N S. Then what is my next Y? A N S H. Making sense
+
+00:40:49.580 --> 00:40:53.980
+guys? My X, my Y, my X, my Y, my X, my Y. I'm able to create
+
+00:40:53.980 --> 00:40:57.780
+this pair. Any reason for choosing a window size equal to
+
+00:40:57.780 --> 00:41:00.880
+32? No reason at all. It's just a hyper parameter. You can
+
+00:41:00.880 --> 00:41:06.120
+choose maybe a hundred you can take. That's fine. Yeah. So
+
+00:41:06.120 --> 00:41:09.020
+it's a hyper parameter. I will try to like a test it and
+
+00:41:09.020 --> 00:41:12.820
+I'll try to fix it. Making sense guys, how I'm creating X
+
+00:41:12.820 --> 00:41:17.140
+and Y. I think now it's clear. Yeah. Same thing. I have
+
+00:41:17.140 --> 00:41:21.000
+written inside the code. See, start from I go till I plus
+
+00:41:21.000 --> 00:41:24.120
+window size. Start from I plus one go till I plus window
+
+00:41:24.120 --> 00:41:24.740
+size plus one.
+
+00:41:28.230 --> 00:41:33.890
+Yes. Yeah. Okay. So this is something that we are able to
+
+00:41:33.890 --> 00:41:38.230
+create. So this is my X. This is my Y. X, Y, X, Y, X, Y, X,
+
+00:41:38.270 --> 00:41:41.450
+Y, X, Y. Y kind of a pair I am able to create. So that model
+
+00:41:41.450 --> 00:41:45.090
+will try to understand this and it will try to minimize a
+
+00:41:45.090 --> 00:41:47.510
+loss for this. Understand this, minimize a loss for this and
+
+00:41:47.510 --> 00:41:50.990
+so on. Model will keep on doing it. This is how we are
+
+00:41:50.990 --> 00:41:55.550
+preparing the data. Okay. So once this is done, then what I
+
+00:41:55.550 --> 00:42:01.250
+will do is return basically return R E T U R N return.
+
+00:42:01.470 --> 00:42:09.110
+Return what? So NumPy array. So NumPy array. And. Of input.
+
+00:42:10.070 --> 00:42:18.780
+Convert this list into the NumPy array, NumPy dot array and
+
+00:42:18.780 --> 00:42:28.060
+basically LA labels, right? So I'm just returning these two
+
+00:42:28.060 --> 00:42:31.480
+things. So list. So I'm returning as a array over here. So
+
+00:42:31.480 --> 00:42:33.940
+this is, this is what this function is going to perform.
+
+00:42:34.640 --> 00:42:37.760
+Execute. Now call this function. Pass the data. Get the
+
+00:42:37.760 --> 00:42:40.660
+value. So I'm calling this function. Basically I'm going to
+
+00:42:40.660 --> 00:42:43.080
+pass my sequence. What is my sequence? This is my sequence.
+
+00:42:43.260 --> 00:42:47.080
+I'm going to pass it. So take this value data, the data
+
+00:42:47.080 --> 00:42:50.780
+which you have converted into a numeric format, right? So
+
+00:42:50.780 --> 00:42:53.840
+pass this data and then window size is equal to 32. I have
+
+00:42:53.840 --> 00:42:57.420
+already given. So fine. Now created. Now can I say that I'm
+
+00:42:57.420 --> 00:43:01.920
+able to create my X and I'm able to create my Y. This is my
+
+00:43:01.920 --> 00:43:06.560
+X data by the way. And this is my Y data by the way. Is it
+
+00:43:06.560 --> 00:43:09.960
+making sense? And are you able to resemble it with the
+
+00:43:09.960 --> 00:43:12.000
+analogy that I've given to you, so the Anshuvala analogy,
+
+00:43:12.260 --> 00:43:17.080
+right? 158, 159, 16. See, next one is starting from 159, 16
+
+00:43:17.080 --> 00:43:21.820
+and so on, right? Everyone got it?
+
+00:43:27.620 --> 00:43:34.700
+Yes. Yeah. So we are able to create our X data and we are
+
+00:43:34.700 --> 00:43:37.820
+able to create our Y data. If you would like to dig deeper
+
+00:43:37.820 --> 00:43:40.020
+into it, you can, you can go ahead and obviously you can try
+
+00:43:40.020 --> 00:43:42.900
+to like, uh, dig bit deeper into it. Okay. So maybe I can
+
+00:43:42.900 --> 00:43:46.580
+try to like, uh, hold this data into X data. So X underscore
+
+00:43:46.580 --> 00:43:50.640
+data, I'm getting two output, right? So Y underscore data in
+
+00:43:50.640 --> 00:43:56.500
+which I can try to hold it now, uh, X data. So here maybe I
+
+00:43:56.500 --> 00:43:59.620
+can try to check the length. So, so
+
+00:44:01.510 --> 00:44:08.290
+there are 828 now X data of basically zero. Can I say this
+
+00:44:08.290 --> 00:44:14.490
+is one of the sequence total 828 such X it has created. 828
+
+00:44:14.490 --> 00:44:18.730
+such record it has created. Now X data, this is the first
+
+00:44:18.730 --> 00:44:21.710
+sequence. You can even validate it like logical, logical
+
+00:44:21.710 --> 00:44:24.610
+validation. So Y underscore data, and then what is the
+
+00:44:24.610 --> 00:44:29.370
+zeroth Y? So for this X, for this X, it will try to learn
+
+00:44:29.370 --> 00:44:33.610
+with this Y. If this is the input, this should be the output
+
+00:44:33.610 --> 00:44:36.690
+it will be expecting. This is X of zero. This is Y of zero.
+
+00:44:36.750 --> 00:44:39.370
+Then X of one, Y of one. I think this is what I was talking
+
+00:44:39.370 --> 00:44:41.590
+about, right? By giving you an example of Sudhanshu.
+
+00:44:41.590 --> 00:44:46.600
+Sudhanshu and window size I have given 32. Can I say that
+
+00:44:46.600 --> 00:44:53.900
+32, this is 32, one of the sequence is 32 by the way, yes.
+
+00:44:54.240 --> 00:44:56.580
+One of the sequence is 32 by the way, can I say that?
+
+00:45:01.140 --> 00:45:06.540
+So like number of basically when you do a machine learning,
+
+00:45:06.720 --> 00:45:10.480
+right? So you write X one, then X two, then X three, then X
+
+00:45:10.480 --> 00:45:13.220
+four, then X four, X five. So this is the number of columns,
+
+00:45:13.360 --> 00:45:15.560
+right? So what is the dimension? One, two, three, four,
+
+00:45:15.640 --> 00:45:20.080
+five, five dimension. So what is the dimension of this? In a
+
+00:45:20.080 --> 00:45:20.520
+vector space,
+
+00:45:24.170 --> 00:45:27.450
+yeah, completely understood, sir. Someone is saying like,
+
+00:45:27.530 --> 00:45:32.550
+they imagine confused what to do. Nothing follow along. I
+
+00:45:32.550 --> 00:45:34.790
+don't think that it's that confusing. Yeah. If you have not
+
+00:45:34.790 --> 00:45:39.630
+joined a previous class, if you're like coming out of like
+
+00:45:39.630 --> 00:45:42.450
+without joining the previous classes, then obviously you
+
+00:45:42.450 --> 00:45:44.430
+will feel difficulty. And if you don't know Python, then
+
+00:45:44.430 --> 00:45:47.570
+obviously you are going to feel like a difficulty. So
+
+00:45:47.570 --> 00:45:49.670
+already I mentioned 32 because of window size, obviously
+
+00:45:49.670 --> 00:45:53.150
+this is what it means. Right? So just try to do a windowing.
+
+00:45:53.170 --> 00:45:56.490
+For example, if I'm going to like keep it as a not 32, uh,
+
+00:45:56.610 --> 00:46:00.730
+I'm giving a hundred let's suppose. Okay. Fine. Now see
+
+00:46:00.730 --> 00:46:07.670
+change. Right? A hundred, a hundred. So one X is a hundred.
+
+00:46:07.810 --> 00:46:13.890
+Then another X is like a X hundred, Y hundred, right? And
+
+00:46:13.890 --> 00:46:19.550
+now if you are going to check, so 760 such data it has
+
+00:46:19.550 --> 00:46:23.630
+created for me. Right? So input sequence, I can just try to
+
+00:46:23.630 --> 00:46:26.590
+play along with it. That's it. The way I want.
+
+00:46:30.540 --> 00:46:33.500
+Okay. Making sense. Now
+
+00:46:41.950 --> 00:46:46.950
+a moving ahead, right? Now once we are able to build this
+
+00:46:46.950 --> 00:46:52.610
+data, now follow the like a architecture. So we are able to
+
+00:46:52.610 --> 00:46:55.910
+basically build the input data embeddings input data. We are
+
+00:46:55.910 --> 00:46:59.230
+able to build it and basically we are able to convert our
+
+00:46:59.230 --> 00:47:03.130
+input data, X data and Y data. Into a numerical array
+
+00:47:03.130 --> 00:47:06.110
+representation. It's done, right? A hundred vector. So a
+
+00:47:06.110 --> 00:47:08.810
+hundred vector is like, uh, helping me out to represent
+
+00:47:08.810 --> 00:47:12.010
+that. Now what is the next step that we have to do guys? So
+
+00:47:12.010 --> 00:47:18.160
+what is the next step? Yep. What is our next step that we
+
+00:47:18.160 --> 00:47:18.540
+have to do?
+
+00:47:25.560 --> 00:47:29.900
+So can I say that I have to include a positional encoding
+
+00:47:29.900 --> 00:47:33.980
+now with our data and why do we include a positional
+
+00:47:33.980 --> 00:47:37.100
+encoding? I think we know the answer, right? So what is the
+
+00:47:37.100 --> 00:47:40.100
+advantage of taking a positional encoding? I think we know
+
+00:47:40.100 --> 00:47:44.340
+the answer now. So what kind of a side input embedding we
+
+00:47:44.340 --> 00:47:46.660
+have already done, right? Input embedding is done. This is
+
+00:47:46.660 --> 00:47:50.300
+what a input embedding is, right? This is the input
+
+00:47:50.300 --> 00:47:52.660
+embedding and output embedding. So input embedding, we are
+
+00:47:52.660 --> 00:47:55.440
+anyhow, we're able to generate with our own dimension. Now
+
+00:47:55.440 --> 00:47:59.040
+we have to do up positional encoding. Yeah. Motion encoding.
+
+00:47:59.440 --> 00:48:02.260
+So Papa is saying positional encoding. Okay. That's amazing
+
+00:48:02.260 --> 00:48:06.260
+name by the way. So positional encoding, we are able to do.
+
+00:48:06.620 --> 00:48:12.580
+Now. The next part is what kind of a positional encoding GPT
+
+00:48:15.340 --> 00:48:22.000
+3.5 is using? What kind of a positional encoding GPT 3.5 is
+
+00:48:22.000 --> 00:48:25.120
+using? Is it going to use the same formula which is
+
+00:48:25.120 --> 00:48:29.640
+mentioned inside this research paper? And I think yesterday
+
+00:48:29.640 --> 00:48:32.840
+I have discussed about it for odd number and even number, or
+
+00:48:32.840 --> 00:48:34.240
+is it going to be something different?
+
+00:48:39.220 --> 00:48:39.500
+Yes.
+
+00:48:51.620 --> 00:48:55.400
+So doctor is saying rotational. Yeah. So byte pair basically
+
+00:48:55.400 --> 00:48:58.400
+rotational like a positional encoding that we are trying to
+
+00:48:58.400 --> 00:49:02.240
+use over here. So let's write some function. This function
+
+00:49:02.240 --> 00:49:06.020
+is going to be even a bit more complex. But yeah, it's just
+
+00:49:06.020 --> 00:49:09.960
+a Pythonic function we are going to write over here. So we
+
+00:49:09.960 --> 00:49:16.500
+can try to write a class, a position POSITION, positional
+
+00:49:16.500 --> 00:49:25.920
+encoding, and then positional encoding. We are going to do
+
+00:49:25.920 --> 00:49:34.560
+it for our object layers dot layer. I'm just writing a class
+
+00:49:34.560 --> 00:49:37.680
+over here, guys. Don't get overwhelmed by this piece of the
+
+00:49:37.680 --> 00:49:41.340
+code. At the end of the day, it will do what it will try to
+
+00:49:41.340 --> 00:49:45.000
+generate a positional encoding. So in it and just a
+
+00:49:45.000 --> 00:49:48.300
+constructor, I'm going to initialize. So self, and then
+
+00:49:48.300 --> 00:49:51.760
+there is a variable. I'm going to take maximum length. There
+
+00:49:51.760 --> 00:49:58.940
+is. Oh. Model. So these are the variable which I'm going to
+
+00:49:58.940 --> 00:50:02.240
+consider. Now many people are getting confused with this
+
+00:50:02.240 --> 00:50:06.400
+window size, right? Now let me do one thing instead of like
+
+00:50:06.400 --> 00:50:10.620
+writing this, maybe this word is confusing, right? So here,
+
+00:50:10.720 --> 00:50:13.240
+just to clarify it, I'm going to prepare one variable,
+
+00:50:13.460 --> 00:50:18.980
+maximum sequence, underscore alien GTH length. And that is
+
+00:50:18.980 --> 00:50:22.180
+basically a hundred. Now this maximum sequence length is
+
+00:50:22.180 --> 00:50:25.820
+equal to. Window size. Simple. Now I believe this variable
+
+00:50:25.820 --> 00:50:29.680
+name is very much clear. This is the length of the embedding
+
+00:50:29.680 --> 00:50:34.320
+that we are talking about. As simple as that. Yes. Length of
+
+00:50:34.320 --> 00:50:37.080
+the embeddings, the input one that we are going to create or
+
+00:50:37.080 --> 00:50:42.320
+output one fine, maximum simple length. And then here, so we
+
+00:50:42.320 --> 00:50:47.180
+are going to basically, uh, like, uh, maximum length and,
+
+00:50:47.180 --> 00:50:51.400
+uh, I mentioned off the model. Let's try to take it. Okay.
+
+00:50:52.940 --> 00:50:56.600
+And, uh, let's overwrite. So we are going to call super,
+
+00:50:56.720 --> 00:51:03.760
+super dot in it. Like I said, guys, don't get overwhelmed. I
+
+00:51:03.760 --> 00:51:07.080
+have already prepared my code, so I'm able to write it. Even
+
+00:51:07.080 --> 00:51:12.820
+I don't remember all like a piece of the code, but yeah, I
+
+00:51:12.820 --> 00:51:18.120
+do understand each and every word and lines, obviously in
+
+00:51:18.120 --> 00:51:19.120
+the P dot, uh,
+
+00:51:22.290 --> 00:51:26.410
+I'll just explain you, uh, this code. Don't worry. Maximum
+
+00:51:26.410 --> 00:51:26.790
+length,
+
+00:51:32.010 --> 00:51:35.310
+numpy dot new
+
+00:51:36.940 --> 00:51:44.680
+access. Yeah. New access. So this is a POS position and I so
+
+00:51:44.680 --> 00:51:50.260
+numpy dot arrange, okay. So arrange and then take a
+
+00:51:50.260 --> 00:51:59.700
+dimension of the model and new access. So numpy dot new
+
+00:51:59.700 --> 00:52:07.060
+access. Over here. Start from there. Go till last. Now
+
+00:52:07.060 --> 00:52:09.940
+angle, a rotational encoding we are talking about. So
+
+00:52:09.940 --> 00:52:14.120
+obviously we have to rotate it. Angle underscore R A T E S
+
+00:52:14.120 --> 00:52:23.400
+rates is equals to one by numpy dot power P O W E R power.
+
+00:52:23.940 --> 00:52:29.040
+So power of what? 10,000. Now, if you will look into this
+
+00:52:29.040 --> 00:52:33.480
+formula. Power of what? 10,000. Same thing we are trying to
+
+00:52:33.480 --> 00:52:37.000
+duplicate. So power of 10,000 and
+
+00:52:39.790 --> 00:52:44.610
+write the formula, the formula as per the research paper. So
+
+00:52:44.610 --> 00:52:48.070
+two into I,
+
+00:52:53.310 --> 00:52:54.230
+I
+
+00:52:57.110 --> 00:53:02.310
+modulo two over here, fine.
+
+00:53:04.810 --> 00:53:13.410
+And then divided by numpy dot load load 32. And. Then. Then
+
+00:53:13.410 --> 00:53:19.410
+dimension of the model. Yeah. So basically like what I have
+
+00:53:19.410 --> 00:53:22.090
+done over here, nothing much. So if you are going to follow
+
+00:53:22.090 --> 00:53:25.930
+along with this research paper, right? So same thing we have
+
+00:53:25.930 --> 00:53:29.170
+done. I believe yesterday I talked about a dimension of the
+
+00:53:29.170 --> 00:53:33.850
+model. So what is this D of the model guys? What is this D
+
+00:53:33.850 --> 00:53:36.190
+of the model by the way, anyone
+
+00:53:38.240 --> 00:53:39.260
+who can recall?
+
+00:53:58.620 --> 00:53:59.560
+Okay. 512.
+
+00:54:09.160 --> 00:54:18.360
+So angle rate is done. Then. Then angle radians is
+
+00:54:18.360 --> 00:54:20.300
+basically, this
+
+00:54:23.180 --> 00:54:26.000
+is, this, this part is bit complex. Like only this part is
+
+00:54:26.000 --> 00:54:29.040
+complex because it involves a lot of like a calculation
+
+00:54:29.040 --> 00:54:33.040
+apart from that, like a other part, I don't think that it's
+
+00:54:33.040 --> 00:54:37.420
+that complex numpy sign of angle.
+
+00:54:42.070 --> 00:54:44.590
+So angle rats. I have to.
+
+00:54:47.980 --> 00:54:54.640
+Angle. Angle rats is equals to positional encoding dot
+
+00:54:54.640 --> 00:54:56.000
+rates,
+
+00:55:04.960 --> 00:55:05.720
+numpy
+
+00:55:11.840 --> 00:55:13.640
+dot sign, angle
+
+00:55:16.450 --> 00:55:18.250
+rats, zero
+
+00:55:23.020 --> 00:55:23.780
+rats.
+
+00:55:34.710 --> 00:55:37.190
+So basically for even an odd point, this is what I'm trying
+
+00:55:37.190 --> 00:55:40.770
+to say over here. So for even an odd point, as we have
+
+00:55:40.770 --> 00:55:43.310
+discussed as a part of our portion coding. So we are trying
+
+00:55:43.310 --> 00:55:46.910
+to set it that for even, uh, like generate this and for odd,
+
+00:55:46.950 --> 00:55:47.630
+generate this.
+
+00:55:52.040 --> 00:55:58.440
+So for odd point at, we know that from a research paper that
+
+00:55:58.440 --> 00:56:03.020
+it's a cos, cosec theta angle radians is
+
+00:56:08.140 --> 00:56:14.260
+two is to two and then self dot POS underscore
+
+00:56:17.180 --> 00:56:25.200
+encoding is equals to tensorflow dot cost angle
+
+00:56:29.740 --> 00:56:31.940
+radians numpy
+
+00:56:33.860 --> 00:56:36.520
+dot new axis. Okay.
+
+00:56:43.080 --> 00:56:49.020
+And D type is equals to tensorflow dot 32.
+
+00:56:55.660 --> 00:56:58.940
+So this function is done def call.
+
+00:57:05.100 --> 00:57:11.780
+So what it is going to return X plus self dot positional
+
+00:57:11.780 --> 00:57:12.220
+encoding.
+
+00:57:31.740 --> 00:57:35.420
+So now what this function will do is, so as we have gone
+
+00:57:35.420 --> 00:57:38.240
+through our research paper, so basically for, uh, even
+
+00:57:38.240 --> 00:57:40.960
+position and for our odd position, and even I have explained
+
+00:57:40.960 --> 00:57:44.560
+you in my. Like, uh, a studies class, if you remember the
+
+00:57:44.560 --> 00:57:47.340
+positional encoding part, let me open up the documentation
+
+00:57:47.340 --> 00:57:51.580
+where I have explained you, uh, yesterday, I believe a
+
+00:57:51.580 --> 00:57:58.860
+foundational model architecture, uh, and then continued, no,
+
+00:57:58.980 --> 00:58:04.500
+I think I have not saved that, uh, part of the, uh, PDF. So
+
+00:58:04.500 --> 00:58:06.900
+studying, if you remember, so I have like, uh, talked about
+
+00:58:06.900 --> 00:58:10.080
+how to create a positional encoding for the entire data set
+
+00:58:10.080 --> 00:58:11.900
+for even position. And for the odd point. Uh, odd position.
+
+00:58:12.280 --> 00:58:15.520
+So I'm just trying to do the same thing. The only difference
+
+00:58:15.520 --> 00:58:18.140
+that we are trying to make over here is we are just trying
+
+00:58:18.140 --> 00:58:21.780
+to like, uh, rotate it. That's it. And this is going to
+
+00:58:21.780 --> 00:58:24.500
+create a positional encoding for me by taking a maximum
+
+00:58:24.500 --> 00:58:28.000
+length and by taking a dimension of the model. Now I'm not
+
+00:58:28.000 --> 00:58:32.520
+going to use it now as of now, like, uh, I'll be using it in
+
+00:58:32.520 --> 00:58:37.840
+some time, but there is a error. Last one positional
+
+00:58:37.840 --> 00:58:38.380
+encoding.
+
+00:58:43.740 --> 00:58:52.240
+So layers. L-A-Y-E-R-S L-A-Y-E-R-S okay. So it's a L
+
+00:58:52.240 --> 00:58:54.140
+capital, I believe layer.
+
+00:59:01.330 --> 00:59:04.790
+Okay. Now it's fine. So just try to create this function
+
+00:59:04.790 --> 00:59:07.850
+guys and leave it as it is for now. Don't do anything. I'll
+
+00:59:07.850 --> 00:59:10.250
+try to tell you that when to use this particular function,
+
+00:59:10.330 --> 00:59:13.630
+but yeah, this function is going to solve a problem for me.
+
+00:59:13.890 --> 00:59:18.690
+And this is going to basically create this one as per the
+
+00:59:18.690 --> 00:59:21.970
+architecture. We will be using it. We will be able to create
+
+00:59:21.970 --> 00:59:28.280
+this particular part. This one. So this part is done. Now
+
+00:59:28.280 --> 00:59:30.720
+this part is also done. We have written the function. We
+
+00:59:30.720 --> 00:59:33.540
+have not like part of the data so far, but yeah, so we have
+
+00:59:33.540 --> 00:59:37.060
+written the function for this one. Now it's time for all the
+
+00:59:37.060 --> 00:59:40.160
+other part, which is a part of the architecture so that I
+
+00:59:40.160 --> 00:59:45.020
+can try to like, uh, create it. So let's go ahead and try to
+
+00:59:45.020 --> 00:59:49.060
+create a transformer decoder block. We are supposed to
+
+00:59:49.060 --> 00:59:51.040
+create a decoder block because we are trying to train
+
+00:59:51.040 --> 00:59:55.540
+basically a decoder only model. So one by one, one by one,
+
+00:59:55.560 --> 00:59:58.260
+one by one, what I will do is, so we'll try to create a
+
+00:59:58.260 --> 01:00:02.980
+decoder layer and it's not difficult. Believe me, it's very
+
+01:00:02.980 --> 01:00:06.420
+easy. Just a play of library. That's it. Just a play of
+
+01:00:06.420 --> 01:00:10.840
+libraries. So it is very much easy, uh, within like a couple
+
+01:00:10.840 --> 01:00:13.420
+of minute, we all will be able to create it and even we all
+
+01:00:13.420 --> 01:00:16.780
+will be able to understand it. So here, what I'm going to do
+
+01:00:16.780 --> 01:00:19.220
+is, so we are going to write a function for creating a
+
+01:00:19.220 --> 01:00:22.880
+transformer block. TRN, this is going to be amazing. So TRA
+
+01:00:22.880 --> 01:00:24.160
+transformer
+
+01:00:26.620 --> 01:00:30.600
+underscore block. So BLO CK block. So just create this
+
+01:00:30.600 --> 01:00:34.300
+function guys. And uh, inside this function. So we are going
+
+01:00:34.300 --> 01:00:37.780
+to create the entire transformer architecture with the help
+
+01:00:37.780 --> 01:00:42.420
+of all the inbuilt library. Now to create it, we need a
+
+01:00:42.420 --> 01:00:45.280
+couple of things basically. So we need basically a variable
+
+01:00:45.280 --> 01:00:50.320
+called as embedding dimension. So EMBED underscore DIM. So
+
+01:00:50.320 --> 01:00:52.920
+the data that will be passed inside this. This one, right?
+
+01:00:53.280 --> 01:00:59.520
+We need a number of heads, H E A D S, right? So here we have
+
+01:00:59.520 --> 01:01:04.820
+N right into N means number of like a head, like how many
+
+01:01:04.820 --> 01:01:07.640
+number of like a transformer that we would like to create.
+
+01:01:07.820 --> 01:01:11.240
+So we can try to pass that information over here. Number of
+
+01:01:11.240 --> 01:01:13.360
+head. That is the number of head, which I will be like, I
+
+01:01:13.360 --> 01:01:17.260
+would like to create now feed forward network dimension
+
+01:01:17.260 --> 01:01:21.740
+inside our transformer. We have what we have a feed forward
+
+01:01:21.740 --> 01:01:25.780
+network as well. Right? So we'll try to even like a create a
+
+01:01:25.780 --> 01:01:29.560
+variable for a feed forward network dimension and maybe one
+
+01:01:29.560 --> 01:01:33.540
+optional variable. This is not mandatory. So drop out. So
+
+01:01:33.540 --> 01:01:36.800
+basically just to like introduce a randomization over here.
+
+01:01:36.960 --> 01:01:44.360
+So DROPOUT is equals to 0.1 okay. Now once this is done
+
+01:01:44.360 --> 01:01:48.540
+right now, layer by layer, layer by layer, let's start
+
+01:01:48.540 --> 01:01:52.160
+creating it. So can I say that? Yeah. So when I talk about
+
+01:01:52.160 --> 01:01:55.140
+this transformer, everything is going to start from the
+
+01:01:55.140 --> 01:02:00.020
+input. Yes, guys input. Let's suppose I have created this
+
+01:02:00.020 --> 01:02:04.040
+one. I have created basically this input, this input. So can
+
+01:02:04.040 --> 01:02:08.020
+I say that the very first layer is going to be input? Yes.
+
+01:02:08.160 --> 01:02:12.880
+Input. What input? Obviously this input. Yeah. So let's
+
+01:02:12.880 --> 01:02:17.920
+start from creating a input one by one. So the very first
+
+01:02:17.920 --> 01:02:20.620
+layer is going to be the input layer. So what I can do is
+
+01:02:20.620 --> 01:02:24.860
+layers. So layers that we have done the import from a Keras
+
+01:02:24.860 --> 01:02:29.640
+right this layers that we have done the import. So this is
+
+01:02:29.640 --> 01:02:31.600
+going to help me out. This library is going to help me out
+
+01:02:31.600 --> 01:02:37.820
+to create this layers. So layers dot I N P U T input okay.
+
+01:02:38.560 --> 01:02:41.940
+Now so when we are talking about the input layer, so we have
+
+01:02:41.940 --> 01:02:45.620
+to basically define that what is a shape of the input,
+
+01:02:45.800 --> 01:02:48.840
+right? What is the dimension of the input? Now what is the
+
+01:02:48.840 --> 01:02:51.580
+dimension of the input guys? What is dropout? Dropout is
+
+01:02:51.580 --> 01:02:55.040
+nothing. But so let's suppose we have a multiple network and
+
+01:02:55.040 --> 01:02:58.340
+multiple layers. So dropout is equal to 0.1 means whenever
+
+01:02:58.340 --> 01:03:01.500
+it will try to send the data 10% it will try to drop means
+
+01:03:01.500 --> 01:03:05.600
+10% network. It will try to avoid to increase the
+
+01:03:05.600 --> 01:03:09.340
+randomization to make your entire network model more robust.
+
+01:03:09.520 --> 01:03:11.700
+You can try to even increase or decrease your dropout or
+
+01:03:11.700 --> 01:03:14.220
+maybe you can try to remove it. That's also fine, but that
+
+01:03:14.220 --> 01:03:15.080
+is a meaning of dropout.
+
+01:03:17.890 --> 01:03:21.190
+Yes guys. Now layers dot input. Whenever we are trying to
+
+01:03:21.190 --> 01:03:24.450
+pass an input. Can I say that? I have to pass a dimension
+
+01:03:24.450 --> 01:03:28.230
+that okay fine for this input this dimension. Now what is
+
+01:03:28.230 --> 01:03:30.690
+our dimension? So obviously I have taken a variable over
+
+01:03:30.690 --> 01:03:33.550
+here input dimension. So as a function, I will try to like
+
+01:03:33.550 --> 01:03:39.590
+take that. So safe safe is equals to I'm going to say that
+
+01:03:39.590 --> 01:03:49.310
+okay. So safe is equals to none comma embedded dimension. So
+
+01:03:49.310 --> 01:03:51.470
+I'm just trying to give like a 2d over here. So none comma
+
+01:03:51.470 --> 01:03:53.690
+embedded dimension. So whatever dimension you are going to
+
+01:03:53.690 --> 01:03:56.430
+pass, whether it's a hundred, 500, 5,000, it is going to
+
+01:03:56.430 --> 01:03:59.910
+take that part. So now this is going to be my I N P U T
+
+01:03:59.910 --> 01:04:04.050
+layer number one, where you are going to pass the input. Now
+
+01:04:04.050 --> 01:04:08.210
+once you are going to pass the input as per architecture,
+
+01:04:08.470 --> 01:04:13.710
+what do we have? Can I say we have a multi headed attention
+
+01:04:13.710 --> 01:04:17.670
+or mass multi-headed attention? Yeah. For example, like
+
+01:04:17.670 --> 01:04:20.370
+let's, let's imagine like we have a multi-headed attention
+
+01:04:20.370 --> 01:04:23.810
+over here. So the next layer is basically a multi-headed
+
+01:04:23.810 --> 01:04:27.230
+attention. That we have to create as per the decoder. Okay.
+
+01:04:27.310 --> 01:04:35.090
+So let's try to like do it. So layers dot and then multi M U
+
+01:04:35.090 --> 01:04:39.990
+L T I, why it is not giving me a suggestion, multi head.
+
+01:04:50.310 --> 01:04:57.200
+Yeah. So multi H E A D multi head attention, a double T N T
+
+01:04:57.200 --> 01:05:01.260
+I O N hope I'm not making any mistake. So layers dot multi
+
+01:05:01.260 --> 01:05:05.500
+headed attention. And then here. Yeah. So we can try to
+
+01:05:05.500 --> 01:05:09.180
+define a number of head. So number of head is nothing but
+
+01:05:09.180 --> 01:05:12.600
+like number of such kind of a transformer, which I would
+
+01:05:12.600 --> 01:05:14.760
+like to create. So number of head is equal to number of head
+
+01:05:14.760 --> 01:05:20.080
+as a parameter I'm going to pass. Now key dimension, key
+
+01:05:20.080 --> 01:05:24.780
+underscore dim, sorry, I have made a mistake. Number of head
+
+01:05:24.780 --> 01:05:29.540
+is equals to number of head simple. Then other parameter key
+
+01:05:29.540 --> 01:05:36.460
+underscore dimension. So key dimension is equals to
+
+01:05:36.460 --> 01:05:44.480
+embedding dimension E M B embedding dimension. Okay. Now, so
+
+01:05:44.480 --> 01:05:48.940
+once we are able to like, uh, get this one, then we have to
+
+01:05:48.940 --> 01:05:53.780
+attach a data with this one. So basically input to comma I N
+
+01:05:53.780 --> 01:05:57.520
+P U T input. So input, input, input into input, we are going
+
+01:05:57.520 --> 01:06:00.820
+to pass it over here. So this is going to create a complete
+
+01:06:00.820 --> 01:06:01.900
+attention layer.
+
+01:06:05.070 --> 01:06:08.290
+Okay. I can name it as a attention or U T P U T attention
+
+01:06:08.290 --> 01:06:11.670
+output. Okay. So from here I will be able to get our
+
+01:06:11.670 --> 01:06:15.770
+attention output. And if I have to maybe attach a dropout, I
+
+01:06:15.770 --> 01:06:18.190
+have not used a dropout as of now, right? Dropout simply
+
+01:06:18.190 --> 01:06:21.910
+means that, that I'm trying to create a randomization. Let's
+
+01:06:21.910 --> 01:06:25.230
+suppose I have a multiple layer or thing, a thing in this
+
+01:06:25.230 --> 01:06:28.590
+way that we have a multiple neurons, a trainable parameter.
+
+01:06:28.850 --> 01:06:32.910
+So I'm trying to avoid some of the parameter on a random
+
+01:06:32.910 --> 01:06:36.530
+basis while doing a training. This is the meaning of a
+
+01:06:36.530 --> 01:06:40.710
+dropout basically. So let's try to use dropout. You can even
+
+01:06:40.710 --> 01:06:47.790
+avoid it. That's completely fine. So layers dot D R O U P O
+
+01:06:47.790 --> 01:06:57.190
+U T dropout, and then D R O P U T dropout variable. And this
+
+01:06:57.190 --> 01:07:01.090
+is going to attach with attention output, the previous one,
+
+01:07:01.150 --> 01:07:04.130
+the previous one, it will be attached with that. Okay. And
+
+01:07:04.130 --> 01:07:08.230
+again, I'm going to name it as a attention output, this one,
+
+01:07:08.290 --> 01:07:13.350
+right? So this is again, my attention output now. So after
+
+01:07:13.350 --> 01:07:17.790
+this, what we have to do is we have to add the
+
+01:07:17.790 --> 01:07:21.090
+normalization. So once we are able to build a multi-headed,
+
+01:07:21.210 --> 01:07:24.110
+then we have to add basically a normalization. So fine.
+
+01:07:24.230 --> 01:07:27.310
+Let's call the library and then try to add the normalization
+
+01:07:27.310 --> 01:07:31.690
+over here. So layers dot layer
+
+01:07:36.300 --> 01:07:42.160
+normalization. Yeah. Right. T I O N normalization. And then
+
+01:07:42.160 --> 01:07:49.320
+here there is a parameter called as epsilon E P S I L O N
+
+01:07:49.320 --> 01:07:56.180
+epsilon. So then in two 10 to the power minus six, so 10 E
+
+01:07:56.180 --> 01:08:03.680
+minus six and a here. So what we are going to pass, so we
+
+01:08:03.680 --> 01:08:08.720
+are basically going to pass I N P U T input. Plus. Okay.
+
+01:08:08.740 --> 01:08:12.660
+Okay. Attention output. Now. So this is under normalization.
+
+01:08:12.860 --> 01:08:16.420
+Look closely into the architecture. Now when you will try to
+
+01:08:16.420 --> 01:08:19.640
+look into the architecture, uh, for example, like additional
+
+01:08:19.640 --> 01:08:22.940
+normalization, if I'm talking about, so this layer is
+
+01:08:22.940 --> 01:08:26.060
+taking, what can I say? This layer is taking output from a
+
+01:08:26.060 --> 01:08:29.000
+multi-headed attention. Yes. Output from the multi-headed
+
+01:08:29.000 --> 01:08:33.220
+attention plus it is taking input as well. The input as
+
+01:08:33.220 --> 01:08:35.740
+well. So it is taking two things, right? It is taking two
+
+01:08:35.740 --> 01:08:37.860
+things. And that is the reason in my code. If you will
+
+01:08:37.860 --> 01:08:40.800
+check. So I have written these two things. So I'm trying to
+
+01:08:40.800 --> 01:08:44.520
+pass two data set over here. So one is our input and one is
+
+01:08:44.520 --> 01:08:47.340
+our attention output as per completely as per the
+
+01:08:47.340 --> 01:08:51.080
+architecture, architecture that we have discussed. Okay. So
+
+01:08:51.080 --> 01:08:54.000
+here, uh, out
+
+01:08:56.400 --> 01:09:00.220
+one, maybe I can try to name it as a out one. Is it making
+
+01:09:00.220 --> 01:09:03.840
+sense to all of us? Guys? I believe this, this piece of the
+
+01:09:03.840 --> 01:09:08.180
+code is easy peasy, not, not like, uh, uh, very difficult.
+
+01:09:08.700 --> 01:09:11.360
+Masking. I have not added so far. Masking. I'll try to add.
+
+01:09:13.500 --> 01:09:17.620
+Yeah. This, this piece of the code is easy to understand
+
+01:09:17.620 --> 01:09:18.680
+fine.
+
+01:09:20.660 --> 01:09:24.820
+So once this part is done, so if any one of you are not able
+
+01:09:24.820 --> 01:09:27.600
+to understand any line of the code or any word, do let me
+
+01:09:27.600 --> 01:09:30.780
+know. I'll try to explain you once again, but I don't think
+
+01:09:30.780 --> 01:09:35.000
+that this is like a tough code. So TensorFlow.keras. Now
+
+01:09:35.000 --> 01:09:37.720
+what I have to do is I have to basically build a feed
+
+01:09:37.720 --> 01:09:40.240
+forward network, right? Feed forward network. I have to
+
+01:09:40.240 --> 01:09:42.980
+build. So let's go ahead and let's try to build a feed
+
+01:09:42.980 --> 01:09:45.280
+forward network. So fine. Not an issue. I'll try to create
+
+01:09:45.280 --> 01:09:48.860
+one variable and I'll try to build a feed forward networks
+
+01:09:48.860 --> 01:09:54.720
+like tf.keras and then inside that, what I can do is the, so
+
+01:09:54.720 --> 01:09:57.520
+I can try to write layer
+
+01:09:59.790 --> 01:10:04.290
+layers dot dense
+
+01:10:08.120 --> 01:10:12.980
+and then feed forward dimension. I can try to give and then
+
+01:10:12.980 --> 01:10:16.420
+activation function. A-C-T-I-V-A-T-I-O-N activation,
+
+01:10:16.620 --> 01:10:19.680
+activation wise, I can try to give a value for a feed
+
+01:10:19.680 --> 01:10:23.760
+forward network and then layers
+
+01:10:27.860 --> 01:10:35.440
+L-A-Y-E-R-S layers dot dense and then embedding dimension.
+
+01:10:36.360 --> 01:10:41.940
+Now I'm calling this as a feed forward network FFN. I've
+
+01:10:41.940 --> 01:10:44.820
+just given a name of this variable is equal to FFN, right?
+
+01:10:44.880 --> 01:10:48.200
+Feed forward network. Now. So this is the feed forward
+
+01:10:48.200 --> 01:10:50.160
+network. I'm just giving a dimension. I'm giving activation
+
+01:10:50.160 --> 01:10:52.860
+function. We know that it's going to be the neural network,
+
+01:10:53.080 --> 01:10:58.400
+right? So now what I can do is, so we can try to attach this
+
+01:10:58.400 --> 01:11:01.980
+feed forward network with my output with what? With output.
+
+01:11:02.180 --> 01:11:06.500
+Why? Look into the architecture once again, right? So let's
+
+01:11:06.500 --> 01:11:09.480
+suppose here we have a feed forward network, right? Now feed
+
+01:11:09.480 --> 01:11:12.320
+forward network is trying to take what output output of
+
+01:11:12.320 --> 01:11:15.660
+this. It is trying to take feed forward network. So this is
+
+01:11:15.660 --> 01:11:18.060
+what we are going to do. This is how we are going to attach
+
+01:11:18.060 --> 01:11:26.060
+it. So here feed forward network and then I'm going to
+
+01:11:26.060 --> 01:11:32.120
+attach it with the out one out one the output that we have
+
+01:11:32.120 --> 01:11:34.520
+received from here. I'm just sending into the feed forward
+
+01:11:34.520 --> 01:11:37.580
+network. Now this is going to give me the output. So feed
+
+01:11:37.580 --> 01:11:40.440
+forward network underscore O-U-T P-U-T. I'm going to create
+
+01:11:40.440 --> 01:11:44.260
+a variable and keep it over there. And then once I will be
+
+01:11:44.260 --> 01:11:48.220
+able to get an output from a feed forward again, maybe I can
+
+01:11:48.220 --> 01:11:51.920
+try to call a dropout. Just to make my model like a more
+
+01:11:51.920 --> 01:11:55.920
+robust. And this is what has been done in GPT 3.5, they are
+
+01:11:55.920 --> 01:12:04.500
+OP, O-U-T and dropout. So dropout from what feed forward
+
+01:12:04.500 --> 01:12:13.420
+network output. Okay. Now feed forward network output is
+
+01:12:13.420 --> 01:12:18.440
+equals to this fine now. So once I'm able to get the output,
+
+01:12:18.600 --> 01:12:21.920
+then again, I'll try to add the layer normalization that you
+
+01:12:21.920 --> 01:12:24.260
+can see after feed forward, we have a layer normalization.
+
+01:12:24.420 --> 01:12:31.160
+We can try to add it. Let's try to add it layers dot layer
+
+01:12:32.500 --> 01:12:37.200
+normalization. And then the same thing I can try to copy and
+
+01:12:37.200 --> 01:12:37.460
+paste.
+
+01:12:43.920 --> 01:12:49.640
+Okay. And here, so I'm going to attach what I'm going to
+
+01:12:49.640 --> 01:12:52.100
+attach output and I'm going to attach feed forward output.
+
+01:12:52.640 --> 01:12:57.800
+So output one plus feed forward output I'm going to attach.
+
+01:12:57.800 --> 01:13:03.080
+So in this layer, why again, check the architecture. So here
+
+01:13:03.080 --> 01:13:07.520
+you will be able to find out that over here we are attaching
+
+01:13:07.520 --> 01:13:10.980
+the output of this feed forward network and the output that
+
+01:13:10.980 --> 01:13:13.660
+we have received from the attention from this one output
+
+01:13:13.660 --> 01:13:16.700
+one, right? As per our code output one. So these two output
+
+01:13:16.700 --> 01:13:19.380
+we are sending inside this addition and normalization. So
+
+01:13:19.380 --> 01:13:22.820
+exact same thing we have done even inside our piece of code.
+
+01:13:23.760 --> 01:13:28.580
+Okay. There's a typo in first dropout line of code. Not an
+
+01:13:28.580 --> 01:13:30.460
+issue. Anyhow, it will give me an error. I know there are a
+
+01:13:30.460 --> 01:13:33.740
+lot of typo. It will give me an error when I'm going to
+
+01:13:33.740 --> 01:13:39.040
+execute it. So at that point of time, I'll fix it. Return
+
+01:13:39.040 --> 01:13:46.500
+tensorflow dot keras dot model. And then model wise inputs
+
+01:13:46.500 --> 01:13:52.460
+is equals to input that I have created and then output
+
+01:13:52.460 --> 01:13:55.160
+output.
+
+01:13:56.500 --> 01:13:56.900
+One.
+
+01:14:02.160 --> 01:14:06.530
+Okay. So sorry, I can return this output, right? Let me
+
+01:14:06.530 --> 01:14:10.990
+write it down as output two. So output two, I will be using
+
+01:14:10.990 --> 01:14:17.050
+as a return. Okay. So this is now this entire function is
+
+01:14:17.050 --> 01:14:25.350
+technically created the entire decoder transformer. We are
+
+01:14:25.350 --> 01:14:28.030
+not using this masked multi-head attention. So what do we
+
+01:14:28.030 --> 01:14:31.530
+have done? So we have just utilized, right? We have just
+
+01:14:31.530 --> 01:14:35.370
+utilized this one. This much of architecture, this much of
+
+01:14:35.370 --> 01:14:39.430
+the decoder architecture as per GPT 3.5, right? So only this
+
+01:14:39.430 --> 01:14:42.130
+much of decoder architecture we have utilized. If I would
+
+01:14:42.130 --> 01:14:44.870
+like to add this one as well, I can just add it. It's very
+
+01:14:44.870 --> 01:14:47.790
+easy for me, right? I think now every one of us will be able
+
+01:14:47.790 --> 01:14:51.250
+to add it just by looking into the code one more layer and
+
+01:14:51.250 --> 01:14:55.210
+then similarly output and input. So this one we are able to
+
+01:14:55.210 --> 01:14:59.330
+now create, this is one of the transformer we are able to
+
+01:14:59.330 --> 01:15:01.270
+create it. Making sense guys?
+
+01:15:04.050 --> 01:15:04.450
+Yes.
+
+01:15:22.070 --> 01:15:24.770
+Okay. Isn't that the same as encoder? Yeah. It looks like
+
+01:15:24.770 --> 01:15:26.930
+the same as an encoder. I'm not saying that it doesn't looks
+
+01:15:26.930 --> 01:15:30.130
+like an encoder. If I'm going to ask, or if I'm going to add
+
+01:15:30.130 --> 01:15:33.130
+a masked multi-head attention, then in that case it will
+
+01:15:33.130 --> 01:15:34.350
+become a decoder.
+
+01:15:40.700 --> 01:15:45.950
+It actually looks like a encoder you can say, but depends
+
+01:15:45.950 --> 01:15:48.050
+upon me, I can keep on changing it. I can say that, okay,
+
+01:15:48.070 --> 01:15:51.510
+fine. It's a decoder means when I will try to say that as a
+
+01:15:51.510 --> 01:15:55.550
+decoder. So see the major difference between encoder and
+
+01:15:55.550 --> 01:15:58.830
+decoder is so encoder, whatever encoder is going to
+
+01:15:58.830 --> 01:16:01.910
+generate. So that generation or that sequence will be used
+
+01:16:01.910 --> 01:16:06.590
+in some other network. So encoder, whatever output encoder
+
+01:16:06.590 --> 01:16:09.330
+is going to give that you will not be able to take it as a
+
+01:16:09.330 --> 01:16:14.410
+output, a final output, whereas this is the major
+
+01:16:14.410 --> 01:16:16.830
+difference, a philosophical difference between encoder and
+
+01:16:16.830 --> 01:16:20.630
+decoder. Whereas if some network is giving you a output, a
+
+01:16:20.630 --> 01:16:23.190
+final output attached to a final output that is eventually
+
+01:16:23.190 --> 01:16:26.790
+called as what decoder hope it is making sense. Okay.
+
+01:16:31.390 --> 01:16:34.830
+Yes. So encoder is technically going to give you a
+
+01:16:34.830 --> 01:16:39.110
+intermediate output. It's just like a naming convention.
+
+01:16:43.360 --> 01:16:48.260
+Yeah. Okay. Now, so once we are able to do this, now move
+
+01:16:48.260 --> 01:16:54.800
+ahead, execute this part and this looks good. Now let's
+
+01:16:54.800 --> 01:16:57.700
+write a function. So we are able to build a transformer,
+
+01:16:57.880 --> 01:17:01.680
+which is a major part, right? Transformer is done. Now let's
+
+01:17:01.680 --> 01:17:05.060
+try to accumulate each and everything that we have. And now
+
+01:17:05.060 --> 01:17:09.780
+it's time to build a GPT model, the complete GPT we have to
+
+01:17:09.780 --> 01:17:13.080
+build by attaching each and everything, the things that we
+
+01:17:13.080 --> 01:17:17.160
+have already created. So here I will try to create a
+
+01:17:17.160 --> 01:17:22.460
+function called as build underscore GPT underscore model. So
+
+01:17:22.460 --> 01:17:25.400
+far I was trying to build a component. So if you remember,
+
+01:17:25.600 --> 01:17:29.420
+so from our beginning we were trying to like a read our
+
+01:17:29.420 --> 01:17:32.600
+data, we are tokenizing it over here. Then after
+
+01:17:32.600 --> 01:17:35.480
+tokenization, what we have done. So we have converted into X
+
+01:17:35.480 --> 01:17:38.800
+and Y basically. Then we are trying to create a positional
+
+01:17:38.800 --> 01:17:41.800
+encoding. Then separately we have created a transformer
+
+01:17:41.800 --> 01:17:45.160
+layer, right? Transformer layer. Now what I will do, I'll
+
+01:17:45.160 --> 01:17:48.000
+try to accumulate, I'll try to attach each and everything,
+
+01:17:48.180 --> 01:17:52.880
+and then I'll try to build a final GPT model, right? So here
+
+01:17:52.880 --> 01:17:57.460
+when I'll try to build a final GPT model, so obviously I'll
+
+01:17:57.460 --> 01:18:03.960
+try to start from the input. So layers dot, dot, dot. Okay.
+
+01:18:05.300 --> 01:18:09.340
+Input. And my input is going to be what? So my input is
+
+01:18:09.340 --> 01:18:14.560
+going to be nothing but a maximum sequence length, the 32 or
+
+01:18:14.560 --> 01:18:17.280
+a hundred that I have taken, right? So this is going to be
+
+01:18:17.280 --> 01:18:20.120
+my input, the data which I have created, my X data, that is
+
+01:18:20.120 --> 01:18:24.880
+the length of the data, right? So I N P U T, I N P U T. So
+
+01:18:24.880 --> 01:18:29.520
+that I'm going to call it as a input for now. And those who
+
+01:18:29.520 --> 01:18:34.640
+is looking for this code, let me ping you this code. Yeah.
+
+01:18:35.620 --> 01:18:38.700
+It's available inside your chat box guys. Okay. So now GPT,
+
+01:18:38.800 --> 01:18:42.220
+first layer is done. It is going to take my X data, the X
+
+01:18:42.220 --> 01:18:49.300
+data that I have created now layers dot embeddings E M B E
+
+01:18:49.300 --> 01:18:52.880
+double D I N G S embeddings.
+
+01:18:54.680 --> 01:18:59.280
+Now input underscore dimension, I N P U T underscore
+
+01:18:59.280 --> 01:19:03.540
+dimension. Now what is the input dimension that we are going
+
+01:19:03.540 --> 01:19:05.660
+to consider? And what is our output? The output dimension
+
+01:19:05.660 --> 01:19:09.460
+that we are going to consider. So we have to like give our
+
+01:19:09.460 --> 01:19:12.220
+input dimension of the data and we have to give basically
+
+01:19:12.220 --> 01:19:16.580
+our output dimension of the data. Now let's try to do one
+
+01:19:16.580 --> 01:19:19.280
+thing. So let's try to create some of the variable, which
+
+01:19:19.280 --> 01:19:21.860
+I'm going to use it eventually over here. So there is a
+
+01:19:21.860 --> 01:19:26.700
+variable called as vocab size, vocab underscore size. Let's
+
+01:19:26.700 --> 01:19:29.660
+suppose I'm going to keep our vocab size is equal to 5,000.
+
+01:19:29.660 --> 01:19:33.480
+So 5,000 odd words I'm going to use maximum sequence length.
+
+01:19:33.580 --> 01:19:36.640
+I have already created a variable. Overriding it over there,
+
+01:19:36.680 --> 01:19:40.220
+value was a hundred. Even here, value is a hundred E M B D
+
+01:19:40.220 --> 01:19:44.280
+underscore embedding dimensions. I'm going to take it as a
+
+01:19:44.280 --> 01:19:50.540
+256. Let's suppose number of underscore H E A D S number of
+
+01:19:50.540 --> 01:19:54.140
+heads. I'm going to like create maybe eight, 10, 16,
+
+01:19:54.260 --> 01:19:58.960
+whatever I want feed forward network dimension. I'm going to
+
+01:19:58.960 --> 01:20:04.100
+take it as a one zero two four, let's suppose. Number of. Or
+
+01:20:04.100 --> 01:20:06.660
+layers
+
+01:20:10.500 --> 01:20:17.840
+is equals to four batch size. I will explain you all the
+
+01:20:17.840 --> 01:20:25.320
+variable batch size is equals to 32 epoch. Number of times
+
+01:20:25.320 --> 01:20:29.060
+we are sending a data, whole data is equals to 10. Now these
+
+01:20:29.060 --> 01:20:31.340
+are some of the variable that we have built one by one. I
+
+01:20:31.340 --> 01:20:35.160
+will be using all of these variables, right? So just create
+
+01:20:35.160 --> 01:20:39.020
+this variable and keep it with you. Now here, so layer
+
+01:20:39.020 --> 01:20:41.740
+embedding. So what is going to be the input dimension? So
+
+01:20:41.740 --> 01:20:44.040
+input dimension is nothing but going to be, let's suppose
+
+01:20:44.040 --> 01:20:47.480
+vocab size, basically. So vocabulary size, whatever
+
+01:20:47.480 --> 01:20:50.200
+vocabulary that we have. So we are going to pass output
+
+01:20:50.200 --> 01:20:51.820
+dimension
+
+01:20:54.030 --> 01:21:00.390
+is equals to embedding dimension. And then we are going to
+
+01:21:00.390 --> 01:21:04.010
+pass this one into this one. So this is how both of these
+
+01:21:04.010 --> 01:21:08.730
+lines are connected. Now this is my X. Let's suppose. Okay.
+
+01:21:08.750 --> 01:21:12.470
+Then inside of this X, the embedding that we have created,
+
+01:21:12.610 --> 01:21:16.030
+we are going to attach our positional encoding. So let's
+
+01:21:16.030 --> 01:21:19.810
+call our position encoding function and a position encoding
+
+01:21:19.810 --> 01:21:25.550
+function was taking what? It was taking maximum length and
+
+01:21:25.550 --> 01:21:31.710
+dimension of the model. Okay. So I'll try to call that class
+
+01:21:31.710 --> 01:21:36.910
+maximum sequence length. I'm going to pass embedding
+
+01:21:36.910 --> 01:21:42.710
+dimension. I'm going to pass. And then attach with the X. So
+
+01:21:42.710 --> 01:21:48.690
+now after this point, my input is completely ready. After
+
+01:21:48.690 --> 01:21:51.130
+this line, after connecting this layer embedding and
+
+01:21:51.130 --> 01:21:54.710
+positional encoding. So my input is completely ready. My X
+
+01:21:54.710 --> 01:21:59.670
+is completely ready. It simply means that, that this
+
+01:22:02.680 --> 01:22:06.740
+one is ready now, right? This one is completely ready. Now
+
+01:22:06.740 --> 01:22:10.420
+once this part is ready, what I will do is I'll move to the
+
+01:22:10.420 --> 01:22:13.100
+next part. I have already created the layers. So I'll just
+
+01:22:13.100 --> 01:22:17.180
+have to connect and attach it. So here, once my input is
+
+01:22:17.180 --> 01:22:20.920
+ready, what I will do is I'll try to create a stack of
+
+01:22:20.920 --> 01:22:25.680
+transformer block, right? So here NX is mentioned, NX is
+
+01:22:25.680 --> 01:22:28.040
+mentioned. So I'll try to create the stack of the
+
+01:22:28.040 --> 01:22:31.940
+transformer, like a layer that I have already created. So
+
+01:22:31.940 --> 01:22:34.920
+here to create a stack of this one, I have to run inside
+
+01:22:34.920 --> 01:22:38.580
+maybe a for loop and number of layers. I have already
+
+01:22:38.580 --> 01:22:42.200
+created a variable, number of layers variable. Maybe I can
+
+01:22:42.200 --> 01:22:46.800
+try to keep it like a 440, 400, whatever I want, right? For
+
+01:22:46.800 --> 01:22:50.560
+example, in GPT 3.5, they have used like a 96, 96 head, I
+
+01:22:50.560 --> 01:22:53.760
+believe. So 96, I can try to give. So 96 number of, so that
+
+01:22:53.760 --> 01:22:57.560
+is the number of complexity we are trying to increase. So
+
+01:22:57.560 --> 01:23:02.380
+here I can write a for loop. So for like a, in a range of
+
+01:23:02.380 --> 01:23:07.680
+basically a number of layers, number of layers variable that
+
+01:23:07.680 --> 01:23:12.520
+I have created, right? So. Just try to create what? Just try
+
+01:23:12.520 --> 01:23:16.780
+to call that many number of a transformer block as simple as
+
+01:23:16.780 --> 01:23:20.300
+that, right? Transformer block, the function that I've
+
+01:23:20.300 --> 01:23:22.720
+created this transformer block function, right? I'm just
+
+01:23:22.720 --> 01:23:25.620
+calling it here. So that just try to create these main
+
+01:23:25.620 --> 01:23:28.200
+number of the transformer stacking of these main number of
+
+01:23:28.200 --> 01:23:31.200
+the transformer, what input it is going to take. So it is
+
+01:23:31.200 --> 01:23:34.740
+going to take a embedding dimension is equals to embedding
+
+01:23:34.740 --> 01:23:39.840
+dimension and then number of heads. So what is the number of
+
+01:23:39.840 --> 01:23:43.360
+heads? It is supposed to create and for feed forward network
+
+01:23:43.360 --> 01:23:47.690
+dimension. Yeah. So it is going to take embedded dimension,
+
+01:23:47.850 --> 01:23:50.270
+number of head and feed forward dimension. So I'm just
+
+01:23:50.270 --> 01:23:54.050
+trying to pass each and everything inside this one, that
+
+01:23:54.050 --> 01:24:00.190
+number of head. Let me, yeah. So this is fine variable name
+
+01:24:00.190 --> 01:24:03.550
+and against that data. So this is going to create that main
+
+01:24:03.550 --> 01:24:06.890
+number of the transformer for me basically. So fine
+
+01:24:06.890 --> 01:24:10.270
+transformer will be created over here. Now once. This is my
+
+01:24:10.270 --> 01:24:12.810
+number of the layers will be created. My for loop is going
+
+01:24:12.810 --> 01:24:17.810
+to create it. Then on top of this one, I'm going to add a
+
+01:24:17.810 --> 01:24:22.710
+watch. So I'm basically going to add my activation function.
+
+01:24:23.030 --> 01:24:28.370
+So here, as you can see linear and then softmax. So I'm
+
+01:24:28.370 --> 01:24:31.090
+going to add this softmax basically so that it will be able
+
+01:24:31.090 --> 01:24:34.390
+to give me the final output. So now all this number of
+
+01:24:34.390 --> 01:24:37.090
+layers has been created. Now connect this layer with the
+
+01:24:37.090 --> 01:24:40.410
+final outcome. So here, what I will do is. So I'll try to
+
+01:24:40.410 --> 01:24:47.790
+like a create output variable, O U T P U T, O U T output
+
+01:24:47.790 --> 01:24:58.230
+variable layers dot dense vocab size activation
+
+01:25:00.790 --> 01:25:06.030
+function wise. So I'm going to give a softmax activation
+
+01:25:06.030 --> 01:25:10.450
+function and basically it is going to take an input from X
+
+01:25:10.450 --> 01:25:14.470
+on the previous layer. And then eventually I'm going to
+
+01:25:14.470 --> 01:25:19.290
+write. That return. It's a final return. So tensorflow dot
+
+01:25:19.290 --> 01:25:31.430
+keras dot model, mcap model, and then in the put output,
+
+01:25:35.540 --> 01:25:40.140
+yeah. So take input and output. So this is something that it
+
+01:25:40.140 --> 01:25:43.980
+is going to return. So this is going to build my whole GPT
+
+01:25:43.980 --> 01:25:47.540
+layer or GPT model. So it is taking input. And finally. It
+
+01:25:47.540 --> 01:25:49.980
+is going to give me the output. So let me ping you this
+
+01:25:49.980 --> 01:25:50.580
+piece of the code.
+
+01:25:53.640 --> 01:25:58.360
+Okay. Now, once GPT is done, GPT is built, we are able to
+
+01:25:58.360 --> 01:26:00.380
+connect each and everything, whatever we have built before.
+
+01:26:00.980 --> 01:26:04.120
+Now what I'm going to do is, so I'm going to call this one
+
+01:26:04.120 --> 01:26:07.180
+and then execute this GPT model, right? Now it's time to
+
+01:26:07.180 --> 01:26:11.860
+execute it. So here we are now coming closer to our
+
+01:26:11.860 --> 01:26:15.720
+training. So just call build GPT and for sure, I'm expecting
+
+01:26:15.720 --> 01:26:23.340
+some error over here. Okay. So model dot compile and compile
+
+01:26:23.340 --> 01:26:27.160
+what? So at the time of compilation of the model, we have
+
+01:26:27.160 --> 01:26:30.640
+already seen, well, we were talking about our own LSTM that
+
+01:26:30.640 --> 01:26:34.020
+we have to pass the optimizer. We have to pass the loss
+
+01:26:34.020 --> 01:26:37.540
+function, right? Optimizer for updating the weight and loss,
+
+01:26:37.700 --> 01:26:40.440
+basically to calculating a difference between Y and Y hat.
+
+01:26:40.740 --> 01:26:46.320
+So optimizer, we are going to pass, and we are going to take
+
+01:26:46.320 --> 01:26:50.880
+Adam optimizer over here. Okay. Right. Adam optimizer, which
+
+01:26:50.880 --> 01:26:54.540
+will help me out to change my weights and
+
+01:26:56.520 --> 01:27:00.080
+the loss function wise. So I am going to take a sparse,
+
+01:27:04.440 --> 01:27:08.080
+sparse, SPR, SE, sparse,
+
+01:27:12.730 --> 01:27:15.350
+categorical, cross
+
+01:27:18.160 --> 01:27:24.000
+entropy. So, and then I'm going to like, this is just
+
+01:27:24.000 --> 01:27:27.140
+optional parameter guys. So accuracy,
+
+01:27:31.270 --> 01:27:38.930
+okay. So this is going to execute the entire model. So now
+
+01:27:38.930 --> 01:27:43.190
+Keras has no attribute embeddings, module,
+
+01:27:51.380 --> 01:27:53.660
+this one layer embeddings, okay.
+
+01:27:58.360 --> 01:28:00.600
+EMBE, EMBE, okay.
+
+01:28:02.710 --> 01:28:06.710
+It should not be S it should be only embedding, I believe.
+
+01:28:08.090 --> 01:28:12.810
+Object has no attribute angle rate. So angle radians POS
+
+01:28:12.810 --> 01:28:13.810
+angle rate.
+
+01:28:21.350 --> 01:28:23.450
+Positional encoding. Angle
+
+01:28:38.870 --> 01:28:44.750
+model Keras layer has no attribute dropout. So where here,
+
+01:28:44.830 --> 01:28:50.870
+line number four, attention, dropout layer, dropout. Okay. D
+
+01:28:53.530 --> 01:29:04.900
+R O P O U T okay. Keyword argument not understood input.
+
+01:29:30.080 --> 01:29:38.000
+Yeah. There is a lot of typos. It happens. Your argument not
+
+01:29:38.000 --> 01:29:41.300
+understood input. And, and I'm getting this one line number
+
+01:29:41.300 --> 01:29:50.950
+16, DF Keras model, I N P U T input. DF Keras input, this
+
+01:29:53.290 --> 01:29:54.390
+input is fine.
+
+01:30:06.660 --> 01:30:08.900
+Yeah. Looks fine
+
+01:30:11.140 --> 01:30:12.620
+to me, has
+
+01:30:48.170 --> 01:30:49.330
+formal block.
+
+01:30:56.830 --> 01:31:00.630
+Okay. Now everything is fixed. Now I'm pinging you a code
+
+01:31:00.630 --> 01:31:06.290
+guys, one by one. So for a positional encoding, take this
+
+01:31:06.290 --> 01:31:08.630
+code. There was a lot of typos. So I've just replaced with
+
+01:31:08.630 --> 01:31:09.270
+the fresh code.
+
+01:31:12.890 --> 01:31:19.010
+So now this is one in a sequence, you can try to take it.
+
+01:31:20.290 --> 01:31:24.250
+This is the another one. And finally, I'm able to create the
+
+01:31:24.250 --> 01:31:29.170
+model. Yeah, finally, I'm able to create the model. Now once
+
+01:31:29.170 --> 01:31:31.750
+I'm able to create the model, so what I can do is I can just
+
+01:31:31.750 --> 01:31:35.090
+like call the model and start the training as simple as
+
+01:31:35.090 --> 01:31:38.690
+that, right? model update is created. So I can try to call
+
+01:31:38.690 --> 01:31:44.250
+model dot dot fit basically. And inside that we can try to
+
+01:31:44.250 --> 01:31:49.730
+pass our x data, right? We can try to pass our y data, just
+
+01:31:49.730 --> 01:31:52.470
+like a machine learning things that we do. So try to pass x
+
+01:31:52.470 --> 01:31:56.930
+data, try to pass y data, try to pass a batch size over
+
+01:31:56.930 --> 01:32:01.490
+here, right? So batch size is equals to batch size that we
+
+01:32:01.490 --> 01:32:03.510
+have defined, I'll tell you what is the batch size by the
+
+01:32:03.510 --> 01:32:07.890
+way. Try to pass epoch. For the model, so epoch is nothing
+
+01:32:07.890 --> 01:32:13.150
+but the variable epoch that we have created. So epoch and
+
+01:32:13.150 --> 01:32:20.890
+then try to call our validation. Validation is split for our
+
+01:32:20.890 --> 01:32:24.610
+testing purpose. So basically, it's only 10% data which I'm
+
+01:32:24.610 --> 01:32:31.190
+giving for our testing purpose, and then callbacks. Or maybe
+
+01:32:31.190 --> 01:32:36.790
+I can I can try to like create a callbacks. Okay. Or leave
+
+01:32:36.790 --> 01:32:42.250
+it for now. Okay. So now this is basically a model. And we
+
+01:32:42.250 --> 01:32:44.750
+are trying to like a fit this model. Now, what is the
+
+01:32:44.750 --> 01:32:47.990
+meaning of batch size by the way? Now here we have defined
+
+01:32:47.990 --> 01:32:54.510
+batch size is equals to 32, right? So basically, 32 data, it
+
+01:32:54.510 --> 01:32:58.970
+will try to pass at one go. As simple as that means, if we
+
+01:32:58.970 --> 01:33:03.030
+have 700 data, so just try to divide 700 by 32, that many
+
+01:33:03.030 --> 01:33:06.930
+number of times. It will try to pass. The data just for one
+
+01:33:06.930 --> 01:33:10.930
+iteration. Epoch means what? Epoch means passing a whole
+
+01:33:10.930 --> 01:33:14.490
+data. So here we are trying to say that epoch is equal to
+
+01:33:14.490 --> 01:33:19.410
+10, 10 means I will try to pass whole data 10 times, right,
+
+01:33:19.450 --> 01:33:22.690
+10 times. But even in that one time, generally people get
+
+01:33:22.690 --> 01:33:25.890
+confused between the batch size and this epoch. So let's me
+
+01:33:25.890 --> 01:33:30.850
+like keep it very, very clear for all of you that when we
+
+01:33:30.850 --> 01:33:33.750
+are saying, let's suppose we have 100 records. 100 number of
+
+01:33:33.750 --> 01:33:37.910
+bots, 100 number of rows, right now. So let's suppose I'm
+
+01:33:37.910 --> 01:33:41.470
+trying to say batch size is equals to 10 for this 100
+
+01:33:41.470 --> 01:33:46.250
+record. So total record will be having how many batches 10,
+
+01:33:46.310 --> 01:33:49.910
+10, 10, like that we will be having 10 such batches, 10 such
+
+01:33:49.910 --> 01:33:52.570
+batches, right? 10 such batches. For example, we have a data
+
+01:33:52.570 --> 01:33:54.810
+science batch, we have a generative AI batch. So in every
+
+01:33:54.810 --> 01:33:57.030
+batches, we have some strength, right? So in some batches,
+
+01:33:57.030 --> 01:33:59.750
+we have 200 people in some batches, we have 500 people. So
+
+01:33:59.750 --> 01:34:03.690
+basically, that's a batch, right? 200, 300. So here, what is
+
+01:34:03.690 --> 01:34:05.510
+the meaning of this batch size? So meaning of this batch
+
+01:34:05.510 --> 01:34:09.290
+size basically is like this much. So I have total 100 data,
+
+01:34:09.410 --> 01:34:12.510
+I have just divided it into 10, 10, 10, 10, 10. So one
+
+01:34:12.510 --> 01:34:15.470
+batch, one size of the batch is basically 10, so 10 data
+
+01:34:15.470 --> 01:34:18.130
+I'll try to pass in one single go. Now, what is the meaning
+
+01:34:18.130 --> 01:34:21.690
+of epoch? Epoch 10 means 10 times I will try to pass the
+
+01:34:21.690 --> 01:34:26.030
+whole data, right, whole data. So it will try to go for the
+
+01:34:26.030 --> 01:34:28.530
+iteration, how many times? 10 into 10. Technically, it will
+
+01:34:28.530 --> 01:34:31.610
+try to go for the like, you will feel like that. It is
+
+01:34:31.610 --> 01:34:34.370
+trying to go for 100 times of iteration, but technically, it
+
+01:34:34.370 --> 01:34:37.190
+is going for like 10 times of iteration 10 times, I'm trying
+
+01:34:37.190 --> 01:34:40.190
+to send my data to my model. That's it, right? So this is
+
+01:34:40.190 --> 01:34:42.750
+the meaning of the batch size and the epoch and you have to
+
+01:34:42.750 --> 01:34:45.710
+like, tell these things to your model that how many times
+
+01:34:45.710 --> 01:34:48.950
+you have to see the data. So 10 times, it will see the data
+
+01:34:48.950 --> 01:34:53.090
+and every batch size is basically 32. Okay, so this is model
+
+01:34:53.090 --> 01:34:58.070
+.fit. Now, I'm going to execute it. If everything like is
+
+01:34:58.070 --> 01:35:00.570
+going to be fine, then it is going to train the model. So as
+
+01:35:00.570 --> 01:35:06.430
+you can see. Epoch 1 of 10, Epoch 1 of 10, estimated size
+
+01:35:06.430 --> 01:35:10.710
+ETA is equal to 21 seconds, loss is equal to 7.75, accuracy
+
+01:35:10.710 --> 01:35:14.950
+is equal to 0.023. So now guys, training have started.
+
+01:35:18.200 --> 01:35:22.400
+As you can see, we have started the training. Means
+
+01:35:22.400 --> 01:35:27.200
+everything is working well and good for all of us. So how
+
+01:35:27.200 --> 01:35:28.640
+many of you are able to start the training guys?
+
+01:35:33.020 --> 01:35:37.460
+Now Epoch 1 is done. So all this like a 22 set of the data.
+
+01:35:37.460 --> 01:35:42.580
+It is able to send. Now Epoch 2 is running and as you can
+
+01:35:42.580 --> 01:35:46.560
+see that it is able to decrease the loss, right? It is able
+
+01:35:46.560 --> 01:35:48.560
+to decrease the loss means my model is learning.
+
+01:35:57.160 --> 01:36:01.900
+So how many of you are able to now Epoch 3? How many of you
+
+01:36:01.900 --> 01:36:03.160
+are able to start the training guys?
+
+01:36:15.390 --> 01:36:16.990
+Anyone who is able to start the training?
+
+01:36:30.200 --> 01:36:34.080
+Okay so Puran is saying attribute error track most recent
+
+01:36:34.080 --> 01:36:40.300
+call last. Okay. So what I can do is. Maybe I can try to, I
+
+01:36:40.300 --> 01:36:43.900
+have started, Devkumar is saying he is able to start.
+
+01:36:48.400 --> 01:36:52.300
+Let me do one thing, document and then where is the folder
+
+01:36:52.300 --> 01:36:57.660
+GPT. So I will try to convert
+
+01:36:59.840 --> 01:37:02.340
+it into a GIF file and let me upload it guys,
+
+01:37:07.270 --> 01:37:12.570
+GPT. Now here is the complete file. So whatever like data
+
+01:37:12.570 --> 01:37:15.190
+that I have, so you have the same thing. So you have a
+
+01:37:15.190 --> 01:37:18.430
+tokenizer, pickle, ipunb, everything. So I will just like
+
+01:37:18.430 --> 01:37:19.870
+send you inside your chat box.
+
+01:37:24.190 --> 01:37:25.770
+So I am in a Epoch 5.
+
+01:38:13.710 --> 01:38:15.790
+So I am into a seventh iteration.
+
+01:38:25.100 --> 01:38:26.580
+Yeah it is A range actually.
+
+01:38:32.690 --> 01:38:35.070
+Though I have started with another data, you can start with
+
+01:38:35.070 --> 01:38:37.610
+any data, any random data that's completely fine. That is,
+
+01:38:37.610 --> 01:38:39.550
+that is not going to create any kind of a problem I believe.
+
+01:39:10.160 --> 01:39:13.860
+So Epoch number 9. So waiting for the 10th one.
+
+01:39:20.820 --> 01:39:23.560
+So my mini GPT is getting trained by the way.
+
+01:39:29.590 --> 01:39:33.430
+Devkumar is saying I have started with another data. Yes. So
+
+01:39:33.430 --> 01:39:35.210
+what is the issue here? I don't think that anyone will face
+
+01:39:35.210 --> 01:39:39.250
+an issue. If you are facing some issue, maybe use my code or
+
+01:39:39.250 --> 01:39:42.050
+maybe try to ask Uri to fix that code. Uri will fix it.
+
+01:39:51.620 --> 01:39:55.040
+So I'm not able to see much response inside the chat. What
+
+01:39:55.040 --> 01:39:57.240
+happened to other people guys? I have already pinged you in
+
+01:39:57.240 --> 01:39:59.840
+the code, complete directory, at least now you should run
+
+01:39:59.840 --> 01:40:05.680
+it. So run the entire code base. At least you have my data
+
+01:40:05.680 --> 01:40:11.240
+as well. OK. So all this 10 epoch is done. done, it simply
+
+01:40:11.240 --> 01:40:13.720
+means that my model has been trained for whatever
+
+01:40:13.720 --> 01:40:16.580
+configuration that I have. I was like trying to train the
+
+01:40:16.580 --> 01:40:22.000
+model. Yeah, now, now what I'm supposed to do so maybe I
+
+01:40:22.000 --> 01:40:25.300
+would like to do a little bit of investigation over here. So
+
+01:40:25.300 --> 01:40:28.740
+maybe I would like to like a save the model as a physical
+
+01:40:28.740 --> 01:40:31.920
+file. So first of all, what I will do is I'll try to save
+
+01:40:31.920 --> 01:40:38.340
+the model so I can try to call model dot save right so that
+
+01:40:38.340 --> 01:40:41.320
+my physical file will be available with me. So model dot
+
+01:40:41.320 --> 01:40:47.980
+save GPT underscore test underscore gen AI underscore class
+
+01:40:47.980 --> 01:40:52.100
+dot h5. So like this is the name which I'm going to give and
+
+01:40:52.100 --> 01:40:56.300
+save the model. So as you can see, I have this dot h5 file.
+
+01:40:56.380 --> 01:41:00.020
+So in dot h5 file format, I'm able to save the model a
+
+01:41:00.020 --> 01:41:03.020
+physical model right now let's suppose I would like to check
+
+01:41:03.020 --> 01:41:06.200
+or I would like to see a layer by layer. information again,
+
+01:41:06.260 --> 01:41:09.500
+for that there is a API which is available. So model dot
+
+01:41:09.500 --> 01:41:12.460
+summary for any models actually not just for this model. So
+
+01:41:12.460 --> 01:41:16.960
+there is a like a method called a summary. Now this is the
+
+01:41:16.960 --> 01:41:20.480
+layer guys that we have created, are you able to see it ball
+
+01:41:20.480 --> 01:41:24.460
+or summary. So the model actually that we have created so
+
+01:41:24.460 --> 01:41:27.340
+layer by layer it is trying to give you the information so
+
+01:41:27.340 --> 01:41:31.380
+it is having the input layer. What is the shape hundred I
+
+01:41:31.380 --> 01:41:34.160
+think we all know why we are getting 100 of where we have
+
+01:41:34.160 --> 01:41:38.820
+kept 100. Then there is a embeddings layer, right? So where
+
+01:41:38.820 --> 01:41:43.160
+we are trying to convert our data into 100 into 256 100 100
+
+01:41:43.160 --> 01:41:46.160
+to it is such data. This is the number of parameter. Now
+
+01:41:46.160 --> 01:41:48.380
+there is something called as positional encoding that we are
+
+01:41:48.380 --> 01:41:52.300
+trying to do with the same data same length as you can see
+
+01:41:52.300 --> 01:41:55.220
+same dimension, we are able to do a position encoding. Then
+
+01:41:55.220 --> 01:41:59.720
+what we have we have four layer of attention. Yeah, so we
+
+01:41:59.720 --> 01:42:02.460
+have basically four layer of attention. So as you can see,
+
+01:42:02.480 --> 01:42:05.380
+we have four layer of attention over here. And in every
+
+01:42:05.380 --> 01:42:11.060
+layer, how many parameter we have? So we have Yeah, so
+
+01:42:11.060 --> 01:42:18.110
+basically 26 2.6 million Yeah, so 2.6 million in one layer
+
+01:42:18.110 --> 01:42:22.310
+then 2.6 then 2.6 then 2.6 then two points like 1.2. So
+
+01:42:22.310 --> 01:42:25.270
+these are the number of parameter that we have in four layer
+
+01:42:25.270 --> 01:42:29.030
+and then total number of parameter that we have is
+
+01:42:29.030 --> 01:42:31.470
+approximately Okay,
+
+01:42:33.690 --> 01:42:37.430
+so it's in a course basically, yeah. So it's like a 13
+
+01:42:37.430 --> 01:42:39.890
+million parameter that we have. So it's like a 13 million
+
+01:42:39.890 --> 01:42:41.090
+parameter that we have. And the total parameter total
+
+01:42:41.090 --> 01:42:43.450
+parameter is this much. And what is the total turnover
+
+01:42:43.450 --> 01:42:46.150
+parameter? This is the terminal parameter. This is the model
+
+01:42:46.150 --> 01:42:50.990
+size. So if I'm going to increase the number of layers,
+
+01:42:51.250 --> 01:42:56.090
+right, my model size is going to increase my model size is
+
+01:42:56.090 --> 01:43:00.410
+not going to be same at all. Now this is the layer wise
+
+01:43:00.410 --> 01:43:04.390
+summary that you all are able to see. Even I can try to like
+
+01:43:04.390 --> 01:43:10.250
+call Netron. So Netron is a visualizer. Basically, so I can
+
+01:43:10.250 --> 01:43:19.150
+go to Google Netron, I can try to call and here so I can try
+
+01:43:19.150 --> 01:43:27.070
+to upload my model, I will be able to see like what is there
+
+01:43:27.070 --> 01:43:31.070
+inside my model so input then embeddings we have right then
+
+01:43:31.070 --> 01:43:35.450
+position encoding we have then four layer of transformer we
+
+01:43:35.450 --> 01:43:41.090
+have and then one feed forward network. Okay. So this is the
+
+01:43:41.090 --> 01:43:45.590
+final dense layer. So this is the visualization of the model
+
+01:43:45.590 --> 01:43:49.310
+you will be able to see. So same like the file that you have
+
+01:43:49.310 --> 01:43:51.950
+saved it, call it inside the Netron. I think I have already
+
+01:43:51.950 --> 01:43:55.230
+introduced Netron to all of you. So you will be able to see
+
+01:43:55.230 --> 01:43:59.810
+your model and you will be able to see like the layers,
+
+01:43:59.950 --> 01:44:02.130
+right? The layers as well now.
+
+01:44:04.250 --> 01:44:11.810
+So I'll just try to go to Google LLM. Visualization. So this
+
+01:44:11.810 --> 01:44:13.930
+is something that we have been using right LLM visualization
+
+01:44:13.930 --> 01:44:19.230
+now in GPT-3. How many layers are there by the way guys? How
+
+01:44:19.230 --> 01:44:21.690
+many layers are there GPT-3?
+
+01:44:26.310 --> 01:44:28.530
+How many layers 96
+
+01:44:42.320 --> 01:44:45.800
+right? Okay. If I would like to create something similar,
+
+01:44:45.880 --> 01:44:50.020
+not an issue. I'll just go over here number of layer 96 now
+
+01:44:50.020 --> 01:44:53.320
+you will see the size actual size of the data. I'm not going
+
+01:44:53.320 --> 01:44:58.300
+to call the. Okay. It's compiling. I'm not going to call a
+
+01:44:58.300 --> 01:45:00.700
+fit because it will take some time. So I'll just directly go
+
+01:45:00.700 --> 01:45:05.200
+to the summary. So now if I have changed 96 now, if I'll
+
+01:45:05.200 --> 01:45:07.400
+just call the summary, I'm not calling fit without calling
+
+01:45:07.400 --> 01:45:11.000
+fit. I'm going to call the summary. Now just see what is the
+
+01:45:11.000 --> 01:45:18.150
+model size. Your model size is approximately one GB. One GB.
+
+01:45:18.390 --> 01:45:22.570
+Previously it was like a 45 MB, right? One GB. Now see the
+
+01:45:22.570 --> 01:45:27.030
+parameters. So when people say, for example, recently, if
+
+01:45:27.030 --> 01:45:30.690
+I'll go to Google LLM. I'll go to Google and hugging face, H
+
+01:45:30.690 --> 01:45:35.870
+U G I N G, hugging face, Maverick
+
+01:45:37.120 --> 01:45:38.280
+or have
+
+01:45:45.480 --> 01:45:50.820
+URI. So inside URI, we are giving you a scout, right? So
+
+01:45:50.820 --> 01:45:52.780
+basically a scout. Now, like there are a lot of parameter
+
+01:45:52.780 --> 01:45:55.760
+which is available inside the scout. So you can try to go
+
+01:45:55.760 --> 01:45:59.160
+and check all the detail and maybe you can try to like build
+
+01:45:59.160 --> 01:46:02.160
+a similar kind of a model, right? Build a similar kind of a
+
+01:46:02.160 --> 01:46:05.340
+model just layer by layers. Just imagine like one GB of
+
+01:46:05.340 --> 01:46:08.900
+size. One GB of size of the model. So just imagine how much
+
+01:46:08.900 --> 01:46:11.160
+like time it will take to just for doing the inferencing.
+
+01:46:11.220 --> 01:46:13.880
+Again, I can keep on modifying each and every layer as per
+
+01:46:13.880 --> 01:46:17.260
+my requirement, right? There are a lot to do, lot to do, but
+
+01:46:17.260 --> 01:46:22.260
+yeah, 96 layers. Okay. So GPT-3, we are able to build it.
+
+01:46:22.880 --> 01:46:25.000
+Obviously we have, we will do a little bit of modification
+
+01:46:25.000 --> 01:46:27.620
+only, right? And we'll try to pass a huge amount of data. My
+
+01:46:27.620 --> 01:46:30.640
+work will be done. That's it. Maybe I'll try to play with
+
+01:46:30.640 --> 01:46:33.220
+maybe a input context length, or maybe I'll try to play with
+
+01:46:33.220 --> 01:46:36.060
+some position encoding over here. I'll try. I'll try to play
+
+01:46:36.060 --> 01:46:38.260
+with the vocabulary size or maximum sequence length,
+
+01:46:38.320 --> 01:46:41.420
+embedding dimension, all of these things, right? I can try
+
+01:46:41.420 --> 01:46:46.600
+to. The code you shared has an error, is it?
+
+01:46:50.300 --> 01:46:55.580
+Okay. Just wait. Let me share this one then. I don't think
+
+01:46:55.580 --> 01:47:00.420
+that it should have an error. Compressed to GIP. Let me
+
+01:47:00.420 --> 01:47:01.400
+share a fresh file.
+
+01:47:09.680 --> 01:47:11.980
+Chat GPT guys, we are able to build it.
+
+01:47:19.200 --> 01:47:22.460
+Generally how many epochs models has been trained for? So
+
+01:47:22.460 --> 01:47:28.120
+maybe like a. 10,000, 20,000 epoch. But again, so the time
+
+01:47:28.120 --> 01:47:31.940
+which one epoch is going to take, it depends upon your data
+
+01:47:31.940 --> 01:47:37.490
+as well. We have a very small data. Yeah. So we have a very,
+
+01:47:37.550 --> 01:47:38.450
+very, very, very small data.
+
+01:47:44.420 --> 01:47:49.680
+I think the file size is to use it's like, yeah,
+
+01:48:00.790 --> 01:48:04.890
+uploaded fine. And again, you can go and check for all the
+
+01:48:04.890 --> 01:48:07.870
+open source model that for how many epoch for what kind of a
+
+01:48:07.870 --> 01:48:10.430
+data, what size of the data it's been trained. My data set
+
+01:48:10.430 --> 01:48:13.290
+is available in just a KB, right? It's a very, very small
+
+01:48:13.290 --> 01:48:17.570
+data. It's a KB of the data. Now this is done. Now what we
+
+01:48:17.570 --> 01:48:20.570
+can do is we can try to check this model, right? We can try
+
+01:48:20.570 --> 01:48:23.370
+to check this model and we can try to test it. That whether
+
+01:48:23.370 --> 01:48:26.950
+I'm able to get a response or not. Basically, whether I'm
+
+01:48:26.950 --> 01:48:29.870
+able to save the model, as you can see as five file, a good
+
+01:48:29.870 --> 01:48:33.290
+model or bad model, that's not a concern basically, because
+
+01:48:33.290 --> 01:48:35.710
+I know I can try to make it up, make it as a good model,
+
+01:48:35.830 --> 01:48:38.310
+right? So I can try to tune this model. I can try to run
+
+01:48:38.310 --> 01:48:41.110
+this model for the multiple epoch. Uh, I can try to like
+
+01:48:41.110 --> 01:48:45.630
+pass more. Okay. And more data. And then like, uh, I, it has
+
+01:48:45.630 --> 01:48:49.010
+a model, I guess. Yeah. I've just been to the code, like a
+
+01:48:49.010 --> 01:48:56.410
+fresh code, Puma, Purna, yeah. So now if I have to test
+
+01:48:56.410 --> 01:49:00.170
+that, so how many of you are able to build it guys, your own
+
+01:49:00.170 --> 01:49:00.430
+model?
+
+01:49:10.300 --> 01:49:14.860
+Yeah. In chat, please waiting for your response.
+
+01:49:18.110 --> 01:49:22.950
+And are you feeling excited or like this class is like very
+
+01:49:22.950 --> 01:49:25.110
+boring. How does it feel like?
+
+01:49:30.430 --> 01:49:31.270
+Yeah. Nice.
+
+01:49:42.850 --> 01:49:46.390
+Okay. Amazing. Fine. Now we are able to build the model. Now
+
+01:49:46.390 --> 01:49:49.330
+it's time for inferencing. Inferencing means get the output.
+
+01:49:49.570 --> 01:49:51.990
+So I'll just copy and paste the code. I don't think that
+
+01:49:51.990 --> 01:49:54.910
+it's a very heavy code that we have. So I'm just trying to
+
+01:49:54.910 --> 01:49:58.270
+load the model over here. Nothing much. I'm load a tokenizer
+
+01:49:58.270 --> 01:50:01.630
+both so that whenever I'm going to pass the data, first of
+
+01:50:01.630 --> 01:50:05.070
+all, I'll try to call tokenizer, tokenize the data. So let's
+
+01:50:05.070 --> 01:50:07.850
+suppose if I'm going to ask the question and then like, uh,
+
+01:50:07.910 --> 01:50:11.470
+finally, what I will do, is I'll just try to, uh, like, uh,
+
+01:50:13.200 --> 01:50:16.660
+pass the input into the model. So I'm just loading the model
+
+01:50:16.660 --> 01:50:20.080
+and tokenizer. What is the issue? No file or directory found
+
+01:50:20.080 --> 01:50:24.340
+in GPT model final file. Okay. I've just used the pre-built
+
+01:50:24.340 --> 01:50:29.380
+code. Let me change the model name. Model name is basically
+
+01:50:29.380 --> 01:50:34.540
+this. Yeah. Now I do not give that fine. So I'm able to load
+
+01:50:34.540 --> 01:50:36.880
+the model. I'm able to load the tokenizer. So both the file
+
+01:50:36.880 --> 01:50:39.620
+I'm able to open up, uh, I'm, I'm going to send you this
+
+01:50:39.620 --> 01:50:42.160
+code. Please try to test this code and please try to test
+
+01:50:42.160 --> 01:50:44.500
+your model as well. So for whatever data you have trained,
+
+01:50:44.620 --> 01:50:47.600
+test it that whether it's working or not. So this is
+
+01:50:47.600 --> 01:50:51.380
+basically for a loading. Now there is our next piece of the
+
+01:50:51.380 --> 01:50:53.680
+code, which I'm going to send you for inferencing for
+
+01:50:53.680 --> 01:50:56.440
+generating our data. I'll explain to this code if you want.
+
+01:50:56.560 --> 01:50:59.760
+I don't think that it's a very much, very difficult code. So
+
+01:50:59.760 --> 01:51:04.280
+this is a code for generating our information that we have
+
+01:51:04.280 --> 01:51:09.740
+written. So here is a code for generating the information.
+
+01:51:09.740 --> 01:51:14.280
+Now what I will do is I'll just ask the question, right?
+
+01:51:14.540 --> 01:51:20.260
+I'll just ask the question. I will simply copy and paste.
+
+01:51:20.840 --> 01:51:26.180
+This is my prebuilt code, which I was testing. So my name
+
+01:51:26.180 --> 01:51:31.180
+is, who is Sudhanshu I'm going to ask, who is Sudhanshu,
+
+01:51:33.400 --> 01:51:35.340
+execute, oh,
+
+01:51:40.490 --> 01:51:44.770
+I have changed the layer, right? So it should be like a
+
+01:51:44.770 --> 01:51:45.030
+hundred.
+
+01:51:49.070 --> 01:51:53.050
+Okay. So, uh, it is generating some things. So who is
+
+01:51:53.050 --> 01:51:56.830
+Sudhanshu? So rupees 250 was accessible, raised from
+
+01:51:56.830 --> 01:51:59.970
+continuous Dhan Su acquisition, February 24, Jharkhand
+
+01:51:59.970 --> 01:52:03.990
+earning, affordability, early limited was providing 2022.
+
+01:52:04.470 --> 01:52:08.310
+Can I say that it is able to generate, uh, some like not a
+
+01:52:08.310 --> 01:52:11.510
+hundred percent meaningful information, but at least one, 2%
+
+01:52:11.510 --> 01:52:14.850
+of meaningful information, just with 10 epoch small data. If
+
+01:52:14.850 --> 01:52:17.470
+I'm going to train it like a, for like a thousand epoch,
+
+01:52:17.550 --> 01:52:20.070
+same model, and if I'm going to increase even the number of
+
+01:52:20.070 --> 01:52:23.030
+layers, right? Same model is going to perform in a best
+
+01:52:23.030 --> 01:52:26.170
+possible way for my data set. But can I say that even this
+
+01:52:26.170 --> 01:52:29.810
+looks amazing? Yes, guys, everyone. It is, it is able to
+
+01:52:29.810 --> 01:52:32.850
+understand who is Sudhanshu little bit. And yeah, it is
+
+01:52:32.850 --> 01:52:38.290
+like, uh, able to, you know, uh, give some like, uh, uh,
+
+01:52:38.290 --> 01:52:44.350
+respective answers. Yes. From my documentation. So I think
+
+01:52:44.350 --> 01:52:47.830
+250 crore was mentioned, right? Uh, the, like the
+
+01:52:47.830 --> 01:52:50.710
+acquisition, uh, price. Okay. So it's, it's bringing from
+
+01:52:50.710 --> 01:52:53.390
+their Jharkhand is a place from where I belong. All the
+
+01:52:53.390 --> 01:52:55.730
+information are relevant. It looks like in a, in a tokens,
+
+01:52:55.950 --> 01:52:59.230
+if I look this information in terms of tokens, it looks like
+
+01:52:59.230 --> 01:53:04.730
+a very much, uh, you know, uh, relevant to me, right guys,
+
+01:53:04.930 --> 01:53:08.750
+sir, here accuracy is very low. So we can't, uh, uh,
+
+01:53:09.090 --> 01:53:12.830
+obviously I can make it accurate in next two, three hour of
+
+01:53:12.830 --> 01:53:15.790
+training. If I'm going to put it for a training now, uh,
+
+01:53:15.910 --> 01:53:18.730
+and, uh, with the multiple epoch and with increasing number
+
+01:53:18.730 --> 01:53:21.610
+of the layers and with little bit of fine tuning within two
+
+01:53:21.610 --> 01:53:25.170
+to three hour offer after two, three hours, you will be able
+
+01:53:25.170 --> 01:53:28.230
+to see that my result is way better. Way better means
+
+01:53:28.230 --> 01:53:30.030
+literally way better. I've just trained it for two, three
+
+01:53:30.030 --> 01:53:34.450
+minute, right? I just trained it for two, three minute only,
+
+01:53:34.630 --> 01:53:41.100
+and it is able to understand my data. Yes. Only in two,
+
+01:53:41.200 --> 01:53:44.860
+three minute of training, right. And that too, like, uh, not
+
+01:53:44.860 --> 01:53:49.750
+with a heavy compute. So can I say that we are able to
+
+01:53:49.750 --> 01:53:52.710
+create our own GPT? Now I can go and claim openly that yes,
+
+01:53:52.810 --> 01:53:56.610
+GPT-3, I'm able to build it. No one, no one is going to say
+
+01:53:56.610 --> 01:53:59.930
+like, uh, you are like telling lie or something, or maybe
+
+01:53:59.930 --> 01:54:02.890
+you are like, uh, trying to exaggerate something. No, no one
+
+01:54:02.890 --> 01:54:05.610
+is going to tell you because this is how exactly GPT-3 is in
+
+01:54:05.610 --> 01:54:10.530
+build. Yeah. Obviously data was used. Compute was used.
+
+01:54:10.770 --> 01:54:13.010
+That's it. That that's the only difference. Apart from that,
+
+01:54:13.030 --> 01:54:16.990
+there is no differences. You will be able to find out what
+
+01:54:16.990 --> 01:54:19.490
+is the computational power required. I think for this kind
+
+01:54:19.490 --> 01:54:23.650
+of a data, I don't need a laptop. Like a much compute. My
+
+01:54:23.650 --> 01:54:26.930
+computer is more than enough, even for a thousand epoch. So
+
+01:54:26.930 --> 01:54:31.110
+I have like a 24, I have this like a computation power in my
+
+01:54:31.110 --> 01:54:38.650
+system, as you can see. So I have a 96 GB of a Ram, as you
+
+01:54:38.650 --> 01:54:46.310
+can see over here and like, uh, yeah, 48 GB of a GPU. So,
+
+01:54:46.310 --> 01:54:52.390
+and I have graphics card RTX 4090 latest one. And a 60 GB of
+
+01:54:52.390 --> 01:54:54.790
+hard disk. So I think this is more than enough for at least
+
+01:54:54.790 --> 01:54:58.210
+this kind of a data, this, this machine itself is big. It's
+
+01:54:58.210 --> 01:55:02.990
+not the small one. Uh, so even with like a slightly bigger
+
+01:55:02.990 --> 01:55:06.050
+data, my machine will be like good. And for 10 hour, 20
+
+01:55:06.050 --> 01:55:08.990
+hour, I can like do a training and I will be able to get an
+
+01:55:08.990 --> 01:55:14.010
+amazing result on my own data at least. So now I believe you
+
+01:55:14.010 --> 01:55:18.110
+all will be able to build your own GPT, right guys.
+
+01:55:21.390 --> 01:55:27.270
+Yes. GPT Lama. I think all of, all of you can build anything
+
+01:55:27.270 --> 01:55:30.270
+and everything. Like if, if you know the architecture, you
+
+01:55:30.270 --> 01:55:31.150
+can just go and build it.
+
+01:55:35.260 --> 01:55:36.900
+Will you be able to do it or not guys?
+
+01:55:43.460 --> 01:55:48.620
+Yes. Fine. I think you should just know the layers, right?
+
+01:55:48.680 --> 01:55:51.660
+So what is the layers that we have? Because we understand
+
+01:55:51.660 --> 01:55:54.720
+the base like a transformer. So I just know about the layers
+
+01:55:54.720 --> 01:55:56.620
+and if I have a layers layer by layer, I'll keep on
+
+01:55:56.620 --> 01:55:59.740
+connecting it. And, uh, yeah, I'll be able to build the
+
+01:55:59.740 --> 01:56:00.240
+entire model.
+
+01:56:03.180 --> 01:56:06.820
+Fine. So now even you can build a GPT. That's the reason.
+
+01:56:07.020 --> 01:56:10.780
+So, uh, entire world is able to build a GPT, but in India we
+
+01:56:10.780 --> 01:56:14.440
+are struggling a lot because the major problem is not a
+
+01:56:14.440 --> 01:56:18.660
+research or not this major problem is what major problem is
+
+01:56:18.660 --> 01:56:21.540
+actually two in terms of building such kind of a model.
+
+01:56:21.640 --> 01:56:23.620
+Obviously research is one part. Someone has done the
+
+01:56:23.620 --> 01:56:27.080
+research. Someone has, uh, you know, uh, created this entire
+
+01:56:27.080 --> 01:56:29.460
+paper and theory, and then they are trying to do a fine
+
+01:56:29.460 --> 01:56:32.920
+tuning on a regular basis. But the bigger problem is not
+
+01:56:32.920 --> 01:56:35.340
+this, right? Right. So we have a researcher in a country. We
+
+01:56:35.340 --> 01:56:38.540
+have like everything. The only thing that we don't have is a
+
+01:56:38.540 --> 01:56:42.900
+data access, right? Uh, because we are not holding any kind
+
+01:56:42.900 --> 01:56:45.060
+of an international grade platform. So which generates our
+
+01:56:45.060 --> 01:56:48.460
+data, we are very bad in terms of acquiring a data. The very
+
+01:56:48.460 --> 01:56:53.560
+first part, the second part is compute power because it's
+
+01:56:53.560 --> 01:56:58.480
+100 kind of a GPU Nvidia H 100 kind of a stack of GPU is
+
+01:56:58.480 --> 01:57:01.800
+required, which costs not just one or two rupees just to
+
+01:57:01.800 --> 01:57:07.480
+train one single model. It requires hundreds of millions of
+
+01:57:07.480 --> 01:57:11.580
+dollars. So basically it requires a 700 to 800 crore rupees.
+
+01:57:14.200 --> 01:57:15.960
+Just imagine it
+
+01:57:20.180 --> 01:57:22.740
+is giving an enjoying result, which has started with 250
+
+01:57:22.740 --> 01:57:25.880
+crore. Yeah. So basically that, that is the major concern.
+
+01:57:26.040 --> 01:57:29.100
+Just imagine 700 crore rupees, 800 crore rupees, right? Or
+
+01:57:29.100 --> 01:57:31.800
+obviously deep seek was able to bring that down by like, I
+
+01:57:31.800 --> 01:57:34.620
+think 40 times. I don't remember the actual number, but
+
+01:57:34.620 --> 01:57:37.760
+yeah, deep seek was able to bring it down to that one. But
+
+01:57:37.760 --> 01:57:42.040
+even that amount is very, very huge for any startup, at
+
+01:57:42.040 --> 01:57:45.340
+least in India, right? Because when India people don't
+
+01:57:45.340 --> 01:57:48.100
+understand a deep tech, they don't understand these things,
+
+01:57:48.240 --> 01:57:52.740
+especially investor, if I'll talk about, right? So this is
+
+01:57:52.740 --> 01:57:55.960
+the two major problem, which every country is facing and
+
+01:57:55.960 --> 01:57:59.960
+those who are not facing it, they're building it. Otherwise
+
+01:57:59.960 --> 01:58:03.940
+it's not that like a difficult, but yeah, difficult to part
+
+01:58:03.940 --> 01:58:08.970
+data itself is a very difficult part to acquire. But
+
+01:58:08.970 --> 01:58:10.970
+definitely. But we have a supercomputer with CDAC. We don't
+
+01:58:10.970 --> 01:58:13.910
+need a supercomputer. We need a stack of series of
+
+01:58:13.910 --> 01:58:18.010
+computation, right? So supercomputer is not going to help
+
+01:58:18.010 --> 01:58:20.810
+you out. It's better for like a, some sort of a regular
+
+01:58:20.810 --> 01:58:22.650
+computation, but not for this kind of a training.
+
+01:58:25.950 --> 01:58:29.110
+Hope your third startup would be on. I don't have that much
+
+01:58:29.110 --> 01:58:32.370
+of capital. Obviously I have a lot of dream to build and
+
+01:58:32.370 --> 01:58:36.930
+I'll give a try for sure, right? So I'll, I'll give a try.
+
+01:58:39.440 --> 01:58:43.280
+Let's see. So what feature holds? But yeah. I have a lot of
+
+01:58:43.280 --> 01:58:48.550
+dreams. So of doing such kind of things, and maybe you guys
+
+01:58:48.550 --> 01:58:51.630
+can do it. You guys can try this out. Maybe on a small
+
+01:58:51.630 --> 01:58:53.730
+scale, right? There are like infinite number of opportunity
+
+01:58:53.730 --> 01:58:56.950
+that AI is going to, AI has already opened up for all of us.
+
+01:58:57.170 --> 01:59:02.590
+Just, just go and leverage it. Yeah. So can you explain how
+
+01:59:02.590 --> 01:59:06.390
+the water and other resources were consumed while the models
+
+01:59:06.390 --> 01:59:11.130
+are using C? We are training a model. So obviously you are
+
+01:59:11.130 --> 01:59:13.850
+trying to spin a machine. Even while collecting our data,
+
+01:59:13.970 --> 01:59:17.430
+you are spinning a lot of machines. Now eventually those
+
+01:59:17.430 --> 01:59:21.030
+machines, right? That we are talking about that machines
+
+01:59:21.030 --> 01:59:24.330
+needs a cooling system. That machines needs a very, very
+
+01:59:24.330 --> 01:59:28.570
+high amount of electricity. You're talking about H 100. Just
+
+01:59:28.570 --> 01:59:31.310
+go and check what is our, what, or what is the energy
+
+01:59:31.310 --> 01:59:34.930
+consumption that H 100, one single rake will be having, or
+
+01:59:34.930 --> 01:59:38.630
+one single like a slot will be having for one hour. And then
+
+01:59:38.630 --> 01:59:41.610
+just do the computation for maybe like a thousand hour or
+
+01:59:41.610 --> 01:59:44.950
+2000 hours. Which is required to train the model. And that
+
+01:59:44.950 --> 01:59:48.130
+too, not just with one plate with thousands of plates.
+
+01:59:53.280 --> 01:59:58.610
+Yes. So this is where water energy and all this, like, uh,
+
+01:59:58.810 --> 02:00:01.070
+uh, things ecosystem comes into a picture.
+
+02:00:04.830 --> 02:00:08.950
+IIT Madras is working on the CPU on the compute purpose.
+
+02:00:09.350 --> 02:00:12.230
+What your take on this? See like working and all those
+
+02:00:12.230 --> 02:00:14.890
+things is fine. We keep on saying, and we like every day we
+
+02:00:14.890 --> 02:00:18.690
+see you, you have not seen that, uh, by yourself, right? So
+
+02:00:18.690 --> 02:00:21.950
+basically we see everything in a newspaper, in a PR, do you
+
+02:00:21.950 --> 02:00:24.690
+think, uh, the things that you read in a newspaper is
+
+02:00:24.690 --> 02:00:24.930
+correct.
+
+02:00:28.930 --> 02:00:33.250
+It's called us. That's the reason it's called as PR. It's
+
+02:00:33.250 --> 02:00:36.110
+not correct. Right. It's just a high. People are trying,
+
+02:00:36.170 --> 02:00:38.730
+like every business nowadays, like they're just trying to
+
+02:00:38.730 --> 02:00:40.970
+create the hype. Uh, they're just trying to spread
+
+02:00:40.970 --> 02:00:44.470
+unnecessary news by, by like, uh, paying 10,000 rupees for
+
+02:00:44.470 --> 02:00:47.450
+one news article or 5,000 rupees for one news article. So
+
+02:00:47.450 --> 02:00:50.110
+that that's a reality we are living into. And as a common
+
+02:00:50.110 --> 02:00:54.170
+man, uh, we don't even realize it. But yeah. We do know
+
+02:00:54.170 --> 02:00:55.990
+these things, how, how these things happens basically,
+
+02:00:56.150 --> 02:00:59.850
+right? That like even after two year, two and a half year,
+
+02:00:59.930 --> 02:01:03.990
+we are not able to create anything. If everyone is working,
+
+02:01:04.190 --> 02:01:07.030
+if we have so many IITs, if we have so many resources, if we
+
+02:01:07.030 --> 02:01:09.850
+have so many of everything, then in two and a half year, why
+
+02:01:09.850 --> 02:01:12.930
+we are not able to create it. And every day we are able to
+
+02:01:12.930 --> 02:01:15.150
+see some news that we are building this, that blah, blah,
+
+02:01:15.170 --> 02:01:17.690
+kind of a things. But at the end of the day, result wise,
+
+02:01:20.120 --> 02:01:22.460
+sunne bata sannata.
+
+02:01:30.100 --> 02:01:32.500
+Uh, okay. So enough of discussion for today.
+
+02:01:40.820 --> 02:01:43.860
+So you guys can try this out. Uh, I think that will be
+
+02:01:43.860 --> 02:01:46.180
+amazing, right? Maybe you can try to take a Lama model,
+
+02:01:46.260 --> 02:01:48.700
+Lama, initial Lama model, Lama two, you can try to take the
+
+02:01:48.700 --> 02:01:51.300
+architecture is simple, right? Almost similar to this one.
+
+02:01:51.380 --> 02:01:56.620
+And maybe you can try to train, uh, like, uh, 70, 90 hour
+
+02:01:56.620 --> 02:02:01.760
+work hour or debate. I'm like, I don't think that we should
+
+02:02:01.760 --> 02:02:04.240
+even talk about the 70, 90 hour. I mean like whatever it
+
+02:02:04.240 --> 02:02:07.640
+takes, just let it be. If it takes 900 hours, let it be in
+
+02:02:07.640 --> 02:02:10.680
+that way. Right. And if you don't want to work, it's
+
+02:02:10.680 --> 02:02:12.900
+completely fine. There is no issue. There is no pressure at
+
+02:02:12.900 --> 02:02:16.820
+all. Your life is your life. So unnecessarily we are
+
+02:02:16.820 --> 02:02:20.800
+debating everywhere, like 70 hour, 90 hour. I'm like, that
+
+02:02:20.800 --> 02:02:23.920
+topic itself is an unnecessary topic, right guys, everyone.
+
+02:02:24.860 --> 02:02:27.280
+I don't think that we should even talk about those 90, 70
+
+02:02:27.280 --> 02:02:31.500
+hours. I'm like, whoever has to work 90 hour, it's fine.
+
+02:02:31.620 --> 02:02:33.740
+Whoever like have to work for 10 hours, that's completely
+
+02:02:33.740 --> 02:02:36.240
+fine. Your life, your rule. Enjoy. Chill.
+
+02:02:42.830 --> 02:02:44.190
+Enjoy. We mentioned a session about the open source
+
+02:02:44.190 --> 02:02:47.690
+contribution like today. Uh, we'll think about it. Can we
+
+02:02:47.690 --> 02:02:50.770
+have a problem to solution class some day? Can we have a
+
+02:02:50.770 --> 02:02:53.750
+problem to solution class someday? So what is, what is the,
+
+02:02:53.870 --> 02:02:56.430
+like, what do you mean by problem to solution? Sorry, I'm
+
+02:02:56.430 --> 02:03:00.950
+not able to like understand your question properly. Dr.
+
+02:03:01.110 --> 02:03:03.290
+Maybe if you can like rephrase it.
+
+02:03:11.000 --> 02:03:14.240
+So by further, we can see a mass multitasking. Yeah, just
+
+02:03:14.240 --> 02:03:15.840
+call the API. You will be able to get it.
+
+02:03:19.300 --> 02:03:21.940
+I'm getting a few problems. We'll try to fix on my own.
+
+02:03:21.940 --> 02:03:25.460
+however class is great thank you so much i hope all of you
+
+02:03:25.460 --> 02:03:28.920
+are liking it let me share our latest version of the code
+
+02:03:28.920 --> 02:03:31.820
+where i have done the inferencing now what i can do is i can
+
+02:03:31.820 --> 02:03:34.680
+the next step uh will be i can try to build maybe a
+
+02:03:34.680 --> 02:03:38.740
+streamlit kind of app and then i'll just try to uh do these
+
+02:03:38.740 --> 02:03:41.880
+things with the help of ui if you want in a next class i'll
+
+02:03:41.880 --> 02:03:45.200
+do that as well so i'll create a proper ui like a chat gpt
+
+02:03:45.200 --> 02:03:48.000
+kind of a ui with the help of streamlit or with the help of
+
+02:03:48.000 --> 02:03:53.440
+even like a react i can create it i don't have any issue and
+
+02:03:53.440 --> 02:03:57.040
+the reactor node and then uh like just like chat gpt kind of
+
+02:03:57.040 --> 02:04:00.500
+interface and you will be able to chat with your own model
+
+02:04:00.500 --> 02:04:03.140
+that's also possible yeah
+
+02:04:08.640 --> 02:04:12.560
+what is the question kumar any library which converts hindi
+
+02:04:12.560 --> 02:04:18.640
+transcript text into a english hindi transcript text into a
+
+02:04:18.640 --> 02:04:23.260
+english token you are talking about like text to text right
+
+02:04:23.500 --> 02:04:26.140
+basically there are a lot of model so go and go and download
+
+02:04:26.140 --> 02:04:28.580
+it from hugging face for hindi there are enough model which
+
+02:04:28.580 --> 02:04:29.880
+is available sir
+
+02:04:36.350 --> 02:04:40.030
+will you also fine tune a gpt model with custom data yeah we
+
+02:04:40.030 --> 02:04:43.410
+obviously see but when i can like uh teach you how to create
+
+02:04:43.410 --> 02:04:47.410
+a gpt model fine tuning is not a big deal for me hope you
+
+02:04:47.410 --> 02:04:53.290
+understand right uh and and when the entire class right
+
+02:04:53.290 --> 02:04:58.750
+entire class now knows that how to create a gpt then guys do
+
+02:04:58.750 --> 02:05:01.250
+you think that even i'm going to discuss fine tuning it will
+
+02:05:01.250 --> 02:05:05.230
+be very difficult yeah because now you all know that uh how
+
+02:05:05.230 --> 02:05:07.230
+to create it basically yeah
+
+02:05:14.910 --> 02:05:18.330
+the one is saying please include a voice option even i i
+
+02:05:18.330 --> 02:05:20.470
+think i'm available everywhere like i'm available here i'm
+
+02:05:20.470 --> 02:05:22.950
+available in your whatsapp group as well even i was like
+
+02:05:22.950 --> 02:05:25.630
+directly responding to a whatsapp group many times so yeah
+
+02:05:25.630 --> 02:05:29.470
+feel free to like uh talk about anything over there or
+
+02:05:29.470 --> 02:05:33.270
+anywhere yes guys so when believe me when i'm going to talk
+
+02:05:33.270 --> 02:05:37.970
+about uh fine tuning you will not face even a slight test of
+
+02:05:37.970 --> 02:05:41.850
+pain and you will be able to understand everything and even
+
+02:05:41.850 --> 02:05:44.310
+you will be able to explain uh same things to anyone in this
+
+02:05:44.310 --> 02:05:48.510
+world yes because now we know how to create it fine tuning
+
+02:05:48.510 --> 02:05:52.490
+obviously will come after this right like and it fine tuning
+
+02:05:52.490 --> 02:05:57.110
+will not be much difficult as compared to this one uh can
+
+02:05:57.110 --> 02:05:59.750
+you please zip the current code and share i want to train my
+
+02:05:59.750 --> 02:06:03.370
+training part is missing okay fine i'm doing it so let me
+
+02:06:03.370 --> 02:06:08.250
+delete a model file because it will become bit heavy so i'm
+
+02:06:08.250 --> 02:06:15.250
+keeping data and gpt ipynb uh let me let me let me uh uh gpt
+
+02:06:15.250 --> 02:06:24.770
+delete the older version gpt okay so compress to a zip yeah
+
+02:06:37.250 --> 02:06:40.390
+so here is the latest version and for everyone guys so
+
+02:06:40.390 --> 02:06:43.290
+latest version so where uh we have a code even for
+
+02:06:43.290 --> 02:06:46.990
+inferencing so where i'm like able to like ask the date a
+
+02:06:46.990 --> 02:06:49.730
+question and it is able to give the answer so i have already
+
+02:06:49.730 --> 02:06:54.090
+pinged when hybrid course will be launched very soon
+
+02:06:54.090 --> 02:06:59.350
+launching day by day new new things so just wait at the end
+
+02:06:59.350 --> 02:07:01.730
+of the day you will be able to get everything don't worry
+
+02:07:04.260 --> 02:07:07.480
+although it's mac still running on epoch one so which which
+
+02:07:07.480 --> 02:07:10.320
+max on those what is like what is the series that you are
+
+02:07:10.320 --> 02:07:12.020
+using from mac even
+
+02:07:15.000 --> 02:07:17.720
+going forward no i will be talking about quantization so
+
+02:07:17.720 --> 02:07:19.980
+there is a concept called as quantization so where we can
+
+02:07:19.980 --> 02:07:23.480
+try to make a model light weighted uh for example like uh
+
+02:07:23.480 --> 02:07:27.000
+it's if we have to deploy a model into uh edge devices right
+
+02:07:27.340 --> 02:07:31.520
+so there is something called as a quantize model that we try
+
+02:07:31.520 --> 02:07:35.100
+to edge devices means a google coral jetson nano jvr or even
+
+02:07:35.100 --> 02:07:37.900
+your mobile devices so it should not be hosted over the
+
+02:07:37.900 --> 02:07:40.680
+cloud it should be hosted inside your mobile devices and it
+
+02:07:40.680 --> 02:07:42.880
+should be you should be able to converse do the conversation
+
+02:07:42.880 --> 02:07:46.300
+even in an offline mode so going forward i'll tell you even
+
+02:07:46.300 --> 02:07:49.440
+like just give me a reminder it's a small concept of
+
+02:07:49.440 --> 02:07:52.180
+quantization so where we try to chop off all the floating
+
+02:07:52.180 --> 02:07:56.360
+parameters parameter values right so that compute will be a
+
+02:07:56.360 --> 02:07:58.360
+little bit lighter so that's all for this course and the
+
+02:07:58.360 --> 02:08:01.200
+model size will be like a smaller in that case. So that is
+
+02:08:01.200 --> 02:08:04.580
+something which which I can discuss and again, it's amazing
+
+02:08:04.580 --> 02:08:08.220
+concept. So I think we all should know about it. I don't
+
+02:08:08.220 --> 02:08:10.780
+know whether I have mentioned that inside your syllabus or
+
+02:08:10.780 --> 02:08:13.980
+not. But yeah, just give me a reminder sometime. So I'll do
+
+02:08:13.980 --> 02:08:19.940
+it. M1 Prode 16GB I don't think that you should face an
+
+02:08:19.940 --> 02:08:24.920
+issue Epoch one. Thank you learn to consider GPT is a very
+
+02:08:24.920 --> 02:08:27.460
+easy way the most important understood. Yeah, now you can
+
+02:08:27.460 --> 02:08:30.140
+understand any elements like it's not a big deal at all for
+
+02:08:30.140 --> 02:08:35.360
+any one of us. So when we can expect internship one by one
+
+02:08:35.360 --> 02:08:39.080
+team is small guys, we are not earning much. So the can't
+
+02:08:39.080 --> 02:08:42.300
+expand a team overnight. My dream is to expand a team like
+
+02:08:42.300 --> 02:08:45.900
+overnight, but yeah, I can't do it. We are like limited with
+
+02:08:45.900 --> 02:08:49.800
+the fund. So but yeah, we will build it. It will take time.
+
+02:08:49.880 --> 02:08:50.620
+We'll build it.
+
+02:08:54.140 --> 02:08:56.280
+Sameer is saying finally code is running with the latest
+
+02:08:56.280 --> 02:09:00.440
+share code. Thank you. Great Sameer. Great. Okay, so hope of
+
+02:09:00.440 --> 02:09:05.060
+all of you have liked it and all of you have enjoyed it and
+
+02:09:05.060 --> 02:09:09.040
+many things to learn now, right? Many things to learn in the
+
+02:09:09.040 --> 02:09:12.340
+future. So if you want, I can even like create a UI
+
+02:09:12.340 --> 02:09:15.780
+interface and I can even show you that how to do inferencing
+
+02:09:15.780 --> 02:09:19.660
+through a UI. So maybe next class I'll do it. It will not
+
+02:09:19.660 --> 02:09:22.200
+take more than half an hour of time for me. I'll just create
+
+02:09:22.200 --> 02:09:25.480
+a not a fancy UI, a simple UI, basic UI with the help of
+
+02:09:25.480 --> 02:09:30.060
+streamlit and I'll just try to call the same model. Then
+
+02:09:30.060 --> 02:09:32.340
+you're saying, okay, code is running fine now. Cheers. Okay.
+
+02:09:32.400 --> 02:09:37.520
+Cheers to you. So with that guys, thank you so much. Thanks
+
+02:09:37.520 --> 02:09:42.840
+for joining. Thanks for participating and see you again
+
+02:09:42.840 --> 02:09:45.980
+tomorrow. Yeah. Sorry. Not tomorrow. Tomorrow is Monday,
+
+02:09:46.040 --> 02:09:48.200
+right? Today is Sunday. Okay. We don't have class tomorrow.
+
+02:09:48.460 --> 02:09:54.040
+Next weekend. So Saturday, UI will be great. Okay. I'll do
+
+02:09:54.040 --> 02:09:56.700
+it. It's not a big deal. I'll do it. Next class Saturday.
+
+02:09:59.810 --> 02:10:03.190
+Okay. So fine guys. Thank you so much. Take care. Spread the
+
+02:10:03.190 --> 02:10:06.150
+news that we are able to build our own GPT, a smaller one,
+
+02:10:06.210 --> 02:10:08.910
+small data, but yes, a real GPT. We are able to build it.
+
+02:10:09.230 --> 02:10:10.910
+With that. Thank you so much guys. Take care everyone.
+
+02:10:11.030 --> 02:10:11.210
+Enjoy.
+

@@ -1,0 +1,5369 @@
+WEBVTT
+
+00:00:01.100 --> 00:00:04.360
+please don't try to focus much on match because you will end
+
+00:00:04.360 --> 00:00:08.880
+up losing a lot match anyhow you can like a watch a score
+
+00:00:08.880 --> 00:00:12.980
+maybe on your mobile device or anywhere on your screen as
+
+00:00:12.980 --> 00:00:15.700
+well but yeah try to focus on a study that will be better
+
+00:00:15.700 --> 00:00:20.960
+that that is going to give you a more benefit fine okay so
+
+00:00:20.960 --> 00:00:26.060
+let's get started guys let me share my screen and then i'm
+
+00:00:26.060 --> 00:00:27.260
+going to start so
+
+00:00:32.670 --> 00:00:37.470
+guys it must be 100 days i don't
+
+00:00:37.470 --> 00:00:40.550
+make it 100 days having to habituate four learn a day quatro
+
+00:00:40.550 --> 00:00:42.050
+farar four times in one day a day seven days in one day
+
+00:00:42.050 --> 00:00:42.050
+eight times in the one day seven days all right i'll explain
+
+00:00:42.050 --> 00:00:46.750
+anything you can you can think what a real better
+
+00:00:50.990 --> 00:00:51.450
+match is and so in the next lesson i will introduce you that
+
+00:00:51.450 --> 00:00:57.170
+what is really good as if you are a finisher okay so let's
+
+00:00:57.170 --> 00:01:01.550
+get started guys let me share my screen and then i'm going
+
+00:01:01.550 --> 00:01:05.090
+to start so guys agenda for my today's class is going to be
+
+00:01:05.090 --> 00:01:08.610
+a setup so i believe those who are already aware about basic
+
+00:01:08.610 --> 00:01:11.310
+of python so they are already aware about a pretty much
+
+00:01:11.310 --> 00:01:14.850
+setup and everything but still i'm going to show you a setup
+
+00:01:14.850 --> 00:01:18.890
+part first maybe i'll try to invest 10 to 15 minute over
+
+00:01:18.890 --> 00:01:22.590
+there and then i'll try to start with the curriculum so
+
+00:01:22.590 --> 00:01:25.490
+which is starting from a text processing so if you'll go
+
+00:01:25.490 --> 00:01:27.430
+through a curriculum so your curriculum is going to start
+
+00:01:27.430 --> 00:01:30.850
+from a text processing so which is very much required to
+
+00:01:30.850 --> 00:01:33.450
+build any kind of a model or to do any kind of operation
+
+00:01:33.450 --> 00:01:37.990
+because nlp or generative ai is all about processing a text
+
+00:01:37.990 --> 00:01:40.770
+data textual kind of a information maybe a one-liner
+
+00:01:40.770 --> 00:01:44.350
+information maybe a complete book so this is what we are
+
+00:01:44.350 --> 00:01:47.270
+going to see or we are going to start from today from a very
+
+00:01:47.270 --> 00:01:50.270
+very basic so even if you are not aware about the text
+
+00:01:50.270 --> 00:01:50.270
+processing so you are going to start with a text processing
+
+00:01:50.270 --> 00:01:52.470
+so if you are about anything that's again completely fine
+
+00:01:52.470 --> 00:01:54.970
+for me because i'm going to teach you each and everything
+
+00:01:54.970 --> 00:01:59.850
+from a basic yep uh so what is the what is the score who is
+
+00:01:59.850 --> 00:02:03.670
+winning by the way so i think uh match has started from 230
+
+00:02:03.670 --> 00:02:07.230
+right it's already been two hour so who is who is winning
+
+00:02:07.230 --> 00:02:08.370
+like
+
+00:02:11.410 --> 00:02:13.950
+what is what is your prediction i
+
+00:02:20.800 --> 00:02:24.320
+haven't checked even a score so i'm not aware about it okay
+
+00:02:24.320 --> 00:02:31.260
+132 per four who like uh new zealand okay okay fine so maybe
+
+00:02:31.260 --> 00:02:34.540
+we can get a okay it's india okay india is batting or new
+
+00:02:34.540 --> 00:02:36.120
+zealand is batting okay
+
+00:02:38.490 --> 00:02:41.650
+only india india okay win wise i think people are saying
+
+00:02:41.650 --> 00:02:44.930
+india is going to win okay that's great that's amazing for
+
+00:02:44.930 --> 00:02:46.250
+us okay
+
+00:02:48.940 --> 00:02:52.700
+so let's get started guys uh so let me i have already shared
+
+00:02:52.700 --> 00:02:58.800
+my screen so let me open up google first of all so guys uh
+
+00:02:58.800 --> 00:03:02.160
+setup wise so we can try to do a setup in a multiple
+
+00:03:02.160 --> 00:03:05.200
+platform so we can try to use some of these platforms and we
+
+00:03:05.200 --> 00:03:06.840
+can try to use some of the online editor where we can write
+
+00:03:06.840 --> 00:03:10.440
+a code initially but again like i told you so initially you
+
+00:03:10.440 --> 00:03:13.800
+will be able to write a code by using a jupiter notebook but
+
+00:03:13.800 --> 00:03:17.440
+very soon we are going to move into a modular coding because
+
+00:03:17.440 --> 00:03:20.420
+we have to build end-to-end application or end-to-end
+
+00:03:20.420 --> 00:03:23.920
+application whenever we have to build so obviously we need a
+
+00:03:23.920 --> 00:03:28.700
+full scale setup a full scale id in my own system so that i
+
+00:03:28.700 --> 00:03:31.520
+can build it i can test it and finally i will be able to
+
+00:03:31.520 --> 00:03:35.600
+deploy it on some of the cloud so let me show you a setup
+
+00:03:35.600 --> 00:03:39.100
+with respect to some of the online editor which is available
+
+00:03:39.100 --> 00:03:42.740
+along with that so i'm going to show you a quick setup even
+
+00:03:42.740 --> 00:03:46.620
+for a vs code and jupiter notebook in your local machine so
+
+00:03:46.620 --> 00:03:50.340
+here the very first setup that you have to go through is a
+
+00:03:50.340 --> 00:03:54.860
+google collab so basically there is a platform provided by a
+
+00:03:54.860 --> 00:03:59.160
+google called as collab platform and this platform is an
+
+00:03:59.160 --> 00:04:03.500
+amazing platform for anyone who is very much new for a
+
+00:04:03.500 --> 00:04:05.780
+python right now if you are new to the platform not just for
+
+00:04:05.780 --> 00:04:08.420
+machine learning those who are new with the python so they
+
+00:04:08.420 --> 00:04:11.720
+may try to use this particular platform without any kind of
+
+00:04:11.720 --> 00:04:14.940
+a setup you will be able to use this collab platform
+
+00:04:14.940 --> 00:04:18.260
+directly and you will be able to write a code you will be
+
+00:04:18.260 --> 00:04:21.880
+able to install a new dependencies or libraries and
+
+00:04:21.880 --> 00:04:26.380
+eventually you will be able to build all the pocs or mbps so
+
+00:04:26.380 --> 00:04:29.040
+here if you are going to search on google collab so you just
+
+00:04:29.040 --> 00:04:33.220
+have to do a google login and then you will be able to see
+
+00:04:33.220 --> 00:04:35.200
+this kind of a page now here you can go through the platform
+
+00:04:35.200 --> 00:04:35.280
+and you will be able to see the code and then you can go to
+
+00:04:35.280 --> 00:04:40.480
+a file and then you can try to click on a new notebook in a
+
+00:04:40.480 --> 00:04:44.280
+drive or maybe open a notebook or maybe upload a notebook
+
+00:04:44.280 --> 00:04:47.520
+from your local system and then you can try to open up so
+
+00:04:47.520 --> 00:04:50.740
+here i'm going to click on new notebook in drive and it is
+
+00:04:50.740 --> 00:04:54.860
+going to create a complete brand new notebook for me so
+
+00:04:54.860 --> 00:04:58.820
+where i can start doing a coding or even if required so we
+
+00:04:58.820 --> 00:05:01.840
+can try to install some of the libraries so as you can see
+
+00:05:01.840 --> 00:05:06.080
+so it has opened up a notebook and extension name of any
+
+00:05:06.080 --> 00:05:10.180
+notebook is going to be ipynb so ipython jupyter notebook
+
+00:05:10.180 --> 00:05:13.560
+this is the full form of this one so here maybe we can try
+
+00:05:13.560 --> 00:05:16.580
+to change a name so maybe i can write like a test over here
+
+00:05:16.580 --> 00:05:20.000
+and this is a renaming of the notebook which i have done i
+
+00:05:20.000 --> 00:05:23.440
+can close this release note part and here so i can try to
+
+00:05:23.440 --> 00:05:26.720
+test this notebook maybe i can write one plus one and then
+
+00:05:26.720 --> 00:05:30.200
+i'll try to execute execution wise i can do shift and enter
+
+00:05:30.200 --> 00:05:35.880
+that's a one way other way is i can try to click icon and
+
+00:05:35.880 --> 00:05:39.420
+even by this i will be able to run my cell for the very
+
+00:05:39.420 --> 00:05:42.480
+first time then you will try to run this particular cell it
+
+00:05:42.480 --> 00:05:45.340
+will show you connecting means it is trying to allocate a
+
+00:05:45.340 --> 00:05:48.740
+resources as you can see that it has allocated a resources
+
+00:05:48.740 --> 00:05:54.740
+to me so disk wise it is giving me like a 107 gb or disk out
+
+00:05:54.740 --> 00:05:58.820
+of that 48 gb is already used so it's my local disk and ram
+
+00:05:58.820 --> 00:06:02.360
+wise this is important ram wise so ram wise so it has
+
+00:06:02.360 --> 00:06:06.620
+allocated me 12.67 gb approximately 14 gb of a ram to me out
+
+00:06:06.620 --> 00:06:09.680
+of that it's been used so this much is used as simple as
+
+00:06:09.680 --> 00:06:13.760
+that so all this compute resources are available inside your
+
+00:06:13.760 --> 00:06:18.460
+google collab it's freely available to all of us i can write
+
+00:06:18.460 --> 00:06:23.320
+any kind of a code over here without even investing a single
+
+00:06:23.320 --> 00:06:28.040
+minute on an installation as simple as that and yes so there
+
+00:06:28.040 --> 00:06:30.920
+are like many things that you will be able to find out in
+
+00:06:30.920 --> 00:06:33.420
+terms of mounting a directory in terms of calling some sort
+
+00:06:33.420 --> 00:06:36.360
+of function in terms of setting a environment over here
+
+00:06:36.360 --> 00:06:40.100
+inside a jupyter node inside this jupyter notebook provided
+
+00:06:40.100 --> 00:06:46.180
+by a google collab as simple as that right so i hope most of
+
+00:06:46.180 --> 00:06:50.960
+us or almost all of us are aware about a google collab right
+
+00:06:50.960 --> 00:06:55.440
+everyone yeah so video is blurred so please try to change
+
+00:06:55.440 --> 00:07:00.440
+your network that will work because
+
+00:07:05.940 --> 00:07:11.240
+from my side so it's we are streaming in a 4k so it all
+
+00:07:11.240 --> 00:07:13.360
+depends upon your network connectivity guys and i don't
+
+00:07:13.360 --> 00:07:16.460
+think that everyone is going to face the same issue good
+
+00:07:16.460 --> 00:07:18.660
+afternoon i have missed anything no not at all you have not
+
+00:07:18.660 --> 00:07:21.340
+missed anything deeper don't worry about it yeah so let's
+
+00:07:21.340 --> 00:07:24.400
+get started so hope all of you are able to launch a google
+
+00:07:24.400 --> 00:07:28.160
+collab and all of you are able to write at least one plus
+
+00:07:28.160 --> 00:07:31.140
+one over here if you are able to write one plus one and if
+
+00:07:31.140 --> 00:07:34.280
+you are able to get this answer it simply means that this
+
+00:07:34.280 --> 00:07:37.080
+environment is up and running for you and you are not
+
+00:07:37.080 --> 00:07:39.460
+supposed to worry about anything it's completely fine right
+
+00:07:39.460 --> 00:07:40.700
+so things are completely fine so i will see you in the next
+
+00:07:40.700 --> 00:07:44.700
+video bye bye working for you now so this is a temporary
+
+00:07:44.700 --> 00:07:48.360
+setup i would say right it's a temporary setup if your local
+
+00:07:48.360 --> 00:07:51.040
+machine setup is not ready then in that case it's a
+
+00:07:51.040 --> 00:07:53.960
+temporary setup you can go ahead with this it's completely
+
+00:07:53.960 --> 00:07:57.360
+fine or maybe if your system is having a very low resources
+
+00:07:57.360 --> 00:08:01.500
+maybe like your system is having 8 gb of ram or maybe like a
+
+00:08:01.500 --> 00:08:03.920
+4 gb of ram in that case you can try to go ahead with a
+
+00:08:03.920 --> 00:08:09.040
+google collab now so second approach to set up a environment
+
+00:08:09.040 --> 00:08:14.020
+is maybe again another online compiler online platform so i
+
+00:08:14.020 --> 00:08:17.200
+can go inside a google i can try to search for jupiter
+
+00:08:17.200 --> 00:08:20.760
+notebook and there are many provider you will be able to
+
+00:08:20.760 --> 00:08:24.340
+find out over here so who is giving you a jupiter notebook
+
+00:08:24.340 --> 00:08:29.380
+so out of that one of the famous one is a jupiter.org and
+
+00:08:29.380 --> 00:08:33.920
+even you can go over here inside a jupiter.org and you will
+
+00:08:33.920 --> 00:08:37.740
+be able to launch basically a jupiter notebook from a
+
+00:08:37.740 --> 00:08:43.420
+jupiter.org that is also possible so this is a second
+
+00:08:43.420 --> 00:08:47.320
+environment where you can go and you can try to execute your
+
+00:08:47.320 --> 00:08:52.000
+code as simple as that so one is a collab one of the
+
+00:08:52.000 --> 00:08:55.900
+powerful one one of the best one i would say in a market and
+
+00:08:55.900 --> 00:09:00.480
+then second one is a jupiter.org not the best one as
+
+00:09:00.480 --> 00:09:02.960
+compared to a google collab but still you will be able to
+
+00:09:02.960 --> 00:09:04.080
+execute our things over here so that's the first one and
+
+00:09:04.080 --> 00:09:04.080
+then the second one is a jupiter.org not the best one as
+
+00:09:04.080 --> 00:09:05.300
+compared to a google collab but still you will be able to
+
+00:09:05.300 --> 00:09:06.040
+execute your code as simple as that so one here apart from
+
+00:09:06.040 --> 00:09:09.400
+that so maybe you can try to use a databricks platform so
+
+00:09:09.400 --> 00:09:12.400
+databricks provide you a community version so you can try to
+
+00:09:12.400 --> 00:09:16.100
+use a databricks platform and even on a databricks platform
+
+00:09:16.100 --> 00:09:19.940
+you can try to create an account this will take a couple of
+
+00:09:19.940 --> 00:09:22.500
+minute of time for you so you can try to create a free
+
+00:09:22.500 --> 00:09:27.420
+account on a databricks and then you can try to use it for
+
+00:09:27.420 --> 00:09:31.580
+executing a python code for executing a r code for executing
+
+00:09:31.580 --> 00:09:36.800
+a sql for executing even a pi spark code so it supports even
+
+00:09:36.800 --> 00:09:43.600
+java right so even java you will be able to find out okay so
+
+00:09:43.600 --> 00:09:47.520
+any question how do you find this document which document by
+
+00:09:47.520 --> 00:09:52.410
+the way okay fine got it so inside a group someone is
+
+00:09:52.410 --> 00:09:56.410
+pinging okay so the another platform is basically a
+
+00:09:56.410 --> 00:09:59.290
+databricks platform now here inside a databricks platform
+
+00:09:59.290 --> 00:10:02.290
+you will be able to see a workflow kind of a structure you
+
+00:10:02.290 --> 00:10:04.950
+will be able to see a data upload kind of a structure so
+
+00:10:04.950 --> 00:10:08.810
+again databricks platform is actually designed to process a
+
+00:10:08.810 --> 00:10:12.370
+big data with the help of spark and it is going to provide
+
+00:10:12.370 --> 00:10:16.710
+you even a connectivity uh with a lot of things from outside
+
+00:10:16.710 --> 00:10:20.450
+the world plus even inside azure there is something called
+
+00:10:20.450 --> 00:10:23.930
+as azure databricks you can try to use that so databricks is
+
+00:10:23.930 --> 00:10:27.470
+a separate platform and then there is a service called as
+
+00:10:27.470 --> 00:10:32.350
+azure databricks which is available inside of it azure and
+
+00:10:32.350 --> 00:10:34.870
+even you can try to execute your python code over it there
+
+00:10:34.870 --> 00:10:40.010
+even inside aws there is a service called as glue lambda so
+
+00:10:40.010 --> 00:10:43.170
+over there you will be able to execute not just python but
+
+00:10:43.170 --> 00:10:47.470
+you can execute any kind of a code with any languages or
+
+00:10:47.470 --> 00:10:50.650
+with any kind of integration so platform wise there are
+
+00:10:50.650 --> 00:10:55.330
+enough platform online platform available in a market where
+
+00:10:55.330 --> 00:10:59.450
+without even doing a single installation just in a browser
+
+00:10:59.450 --> 00:11:02.690
+itself you will be able to execute each and everything so
+
+00:11:02.690 --> 00:11:06.810
+it's practically possible but but so we have to build a
+
+00:11:06.810 --> 00:11:11.110
+complete full scale project we have to build our packages we
+
+00:11:11.110 --> 00:11:14.430
+have to build a lot of modules over there we have to keep a
+
+00:11:14.430 --> 00:11:17.750
+lot of like a dependent file over there a lot of environment
+
+00:11:17.750 --> 00:11:20.130
+setup we have to do a lot of credentials we have to keep
+
+00:11:20.130 --> 00:11:23.130
+going forward because we are going to talk about rag fine
+
+00:11:23.130 --> 00:11:25.690
+tuning creating a lot of different different kind of an
+
+00:11:25.690 --> 00:11:29.750
+agent by using a different kind of a platform so it's always
+
+00:11:29.750 --> 00:11:32.890
+you I'm not saying that you will not be able to do all of
+
+00:11:32.890 --> 00:11:36.790
+these things on these online platform yes it is possible but
+
+00:11:36.790 --> 00:11:41.430
+it's better to have your own local setup so that you will be
+
+00:11:41.430 --> 00:11:44.430
+able to practice and you will be able to build a full scale
+
+00:11:44.430 --> 00:11:48.450
+project then you will be able to ship that entire project on
+
+00:11:48.450 --> 00:11:51.650
+some cloud platform maybe with the help of some csvd
+
+00:11:51.650 --> 00:11:54.330
+approach maybe directly and you will be able to
+
+00:11:54.330 --> 00:11:58.770
+productionize it so let's talk about that now i'm going to
+
+00:11:58.770 --> 00:12:00.250
+do that so the very first thing that you have to do is you
+
+00:12:00.250 --> 00:12:00.370
+have to build a full scale project then you have to build a
+
+00:12:00.370 --> 00:12:00.370
+review project inside a realtime that's also a key part and
+
+00:12:00.370 --> 00:12:03.330
+the first thing which is required is a vs code vs code is
+
+00:12:03.330 --> 00:12:06.970
+nothing but its ide integrated development environment so
+
+00:12:06.970 --> 00:12:09.630
+like a vs code there are all other ids which is available so
+
+00:12:09.630 --> 00:12:13.310
+like intelligent is available eclipse is available or even
+
+00:12:13.310 --> 00:12:17.370
+Pycharm is available inside a market but my favorite one is
+
+00:12:17.370 --> 00:12:21.470
+a vs code and again main, it's not just my favorite, it's a
+
+00:12:21.470 --> 00:12:25.090
+favorite ID for almost all the developers. So who used to
+
+00:12:25.090 --> 00:12:28.910
+write a code or who used to build a real time project. So we
+
+00:12:28.910 --> 00:12:33.950
+are going to do a setup for a VS code COD. So just go to
+
+00:12:33.950 --> 00:12:37.510
+Google, try to search for a VS code and you will be able to
+
+00:12:37.510 --> 00:12:40.290
+see this particular option called as VS code.
+
+00:13:36.010 --> 00:13:40.150
+Okay so I think there was a little bit of disturbance with
+
+00:13:40.150 --> 00:13:44.050
+my internet for a couple of seconds but now it's fine, now
+
+00:13:44.050 --> 00:13:44.970
+it's
+
+00:13:47.630 --> 00:13:51.230
+fine. So I think I'm audible and visible to all of you guys.
+
+00:13:51.690 --> 00:13:54.510
+So I don't know like what has happened but yeah for 30
+
+00:13:54.510 --> 00:13:58.450
+seconds I believe there was some internet issue. So here I
+
+00:13:58.450 --> 00:14:01.010
+was talking about a full scale platform, I was talking about
+
+00:14:01.010 --> 00:14:05.630
+IDE so which we all are going to use as a developer to
+
+00:14:05.630 --> 00:14:08.610
+develop a full scale project that is called as VS code.
+
+00:14:08.870 --> 00:14:12.570
+Again it's very very easy to install. It's very very easy to
+
+00:14:12.570 --> 00:14:16.230
+set up. And to do a configuration for any kind of a project
+
+00:14:16.230 --> 00:14:18.830
+whether you are building a project with Scala, maybe Java,
+
+00:14:19.030 --> 00:14:23.730
+maybe C-SARP, C++ or maybe with a Python. So VS code is
+
+00:14:23.730 --> 00:14:28.130
+going to give you a support for each and everything. Now so
+
+00:14:28.130 --> 00:14:30.890
+here if you are going to go to Google and if you are going
+
+00:14:30.890 --> 00:14:33.950
+to search for a VS code you will be able to get a very first
+
+00:14:33.950 --> 00:14:36.090
+link. Now let's suppose if I'm using a Windows machine,
+
+00:14:36.170 --> 00:14:38.910
+let's suppose I'm using a Mac machine, I'm using a Linux
+
+00:14:38.910 --> 00:14:42.890
+machine. So for each and every machine. So VS code is given.
+
+00:14:42.890 --> 00:14:45.910
+It's giving you an installable file. So here I can just go
+
+00:14:45.910 --> 00:14:49.930
+over here inside a VS code and then I can try to download
+
+00:14:49.930 --> 00:14:53.510
+for a Windows. If you are using a Linux machine, you can
+
+00:14:53.510 --> 00:14:56.030
+download for a Linux machine. If you are using a Mac
+
+00:14:56.030 --> 00:14:58.510
+machine, so you can try to download for the Mac machine.
+
+00:14:58.630 --> 00:15:01.810
+It's not at all difficult. It's a small file. You will be
+
+00:15:01.810 --> 00:15:05.670
+able to download it with no time. So let me ping you this
+
+00:15:05.670 --> 00:15:08.150
+link guys inside your chat box.
+
+00:15:13.720 --> 00:15:17.420
+Yeah. So this is the VS code link. I think all of you are
+
+00:15:17.420 --> 00:15:20.740
+able to access this link and if I'll talk about a collab, so
+
+00:15:20.740 --> 00:15:25.000
+this is a collab link for all of you and a Jupiter org. So
+
+00:15:25.000 --> 00:15:29.320
+this is a Jupiter org link and if you have to do something
+
+00:15:29.320 --> 00:15:32.460
+on a data building, so this is a data bricks link. But yeah,
+
+00:15:32.520 --> 00:15:35.380
+let's talk about a VS code. So first of all guys, you have
+
+00:15:35.380 --> 00:15:38.260
+to download a VS code and you have to just click, click,
+
+00:15:38.320 --> 00:15:40.620
+click and then you will be able to install as you can see.
+
+00:15:40.840 --> 00:15:43.860
+So in no time. So it has started downloading. It's
+
+00:15:43.860 --> 00:15:49.560
+approximately 100 Mbps. So it is going to differ for a Mac
+
+00:15:49.560 --> 00:15:53.680
+or it is going to differ for a Linux machine, but yeah, just
+
+00:15:53.680 --> 00:15:57.560
+a hundred MB of file. I'm able to download it. And once you
+
+00:15:57.560 --> 00:16:00.920
+are able to download this file, so once you are able to
+
+00:16:00.920 --> 00:16:04.520
+download this file, so just click and then you can start
+
+00:16:04.520 --> 00:16:07.940
+installing it. Simple. I accept the agreement. Next, next,
+
+00:16:07.980 --> 00:16:12.200
+next, next, next, your work will be done. You will end it
+
+00:16:12.200 --> 00:16:15.600
+up. You will end up installing the complete VS code. Yeah.
+
+00:16:15.620 --> 00:16:20.500
+Inside your system. Now VS code is just ID. It will not be
+
+00:16:20.500 --> 00:16:24.380
+having a compiler. It will not be having like a, anything
+
+00:16:24.380 --> 00:16:28.080
+which is going to support or which is going to execute a
+
+00:16:28.080 --> 00:16:31.280
+code for you. For example, if I'm going to write a code in
+
+00:16:31.280 --> 00:16:34.800
+Python, so obviously you have to install Python after
+
+00:16:34.800 --> 00:16:38.680
+installing a VS code. If I have to work in Java. So
+
+00:16:38.680 --> 00:16:42.000
+obviously I have to install Java after installing a VS code
+
+00:16:42.000 --> 00:16:45.800
+and it goes in the same direction. You have to build
+
+00:16:45.800 --> 00:16:49.480
+everything in whatever you have to build your project making
+
+00:16:49.480 --> 00:16:53.020
+sense to all of us. Yes.
+
+00:16:59.140 --> 00:17:02.720
+Yep. Everyone. Yeah. So how many of you have already
+
+00:17:02.720 --> 00:17:05.400
+installed a VS code guys? How many of you have done that?
+
+00:17:05.920 --> 00:17:09.160
+I'm assuming that those who have gone through a basic of
+
+00:17:09.160 --> 00:17:12.320
+Python or even our lecture or even my lecture or maybe
+
+00:17:12.320 --> 00:17:15.340
+Bappy's lecture or maybe a Prince lecture. So you must be
+
+00:17:15.340 --> 00:17:18.880
+having a VS code installed in your system. Yeah. Anyone guys
+
+00:17:18.880 --> 00:17:21.640
+who is, who's not having a VS code with a Python setup.
+
+00:17:21.980 --> 00:17:28.200
+Yeah. So maybe I can help you out with that already using VS
+
+00:17:28.200 --> 00:17:31.580
+code. Yeah. But it's my responsibility to talk about this in
+
+00:17:31.580 --> 00:17:34.380
+my class, in my very first class. So I'm just talking about
+
+00:17:34.380 --> 00:17:40.300
+it. So I'm assuming that most of you are almost every one of
+
+00:17:40.300 --> 00:17:44.080
+you must be having a VS code installed with a up and running
+
+00:17:44.080 --> 00:17:48.060
+Python and a Jupiter notebook. If you are coming from any of
+
+00:17:48.060 --> 00:17:50.460
+my batches, whether it's a big data or maybe a data science
+
+00:17:50.460 --> 00:17:54.200
+batch, maybe a Python batch or maybe MLOps batches. Or even
+
+00:17:54.200 --> 00:17:57.060
+a previous batch. Maybe a previous gen AI batches. So I
+
+00:17:57.060 --> 00:18:00.840
+believe that this is installed inside your system. So
+
+00:18:00.840 --> 00:18:03.200
+working on VS code and PyCharm for a development. Yeah.
+
+00:18:03.260 --> 00:18:06.060
+Amazing. Amazing. Yeah. So you can use VS code. You can use
+
+00:18:06.060 --> 00:18:08.960
+PyCharm. I don't have any kind of issue because both are
+
+00:18:08.960 --> 00:18:13.100
+like IDEs, both are going to help you out to write any kind
+
+00:18:13.100 --> 00:18:16.140
+of a code or to develop any kind of a big or a small
+
+00:18:16.140 --> 00:18:20.680
+project. Okay. So, okay. Almost everyone has pinged. So let
+
+00:18:20.680 --> 00:18:24.800
+me complete the step. Just, just for a person who is going
+
+00:18:24.800 --> 00:18:28.580
+to join. This batch without any kind of installation. So VS
+
+00:18:28.580 --> 00:18:31.620
+code installation is the first part. Now, once you are going
+
+00:18:31.620 --> 00:18:34.700
+to install a VS code inside your local machine, then what
+
+00:18:34.700 --> 00:18:38.940
+you have to do, so then you have to install a Python. So
+
+00:18:38.940 --> 00:18:41.920
+from where you will be able to install a Python again, go to
+
+00:18:41.920 --> 00:18:45.680
+Google and try to search for Python download, search for
+
+00:18:45.680 --> 00:18:48.720
+Python download. So this is going to give you a very first
+
+00:18:48.720 --> 00:18:52.940
+link with the official python.org. So download Python and
+
+00:18:52.940 --> 00:18:56.200
+here you can come. And then you can try to download a Python
+
+00:18:56.200 --> 00:18:59.400
+for windows, Linux, or Mac machine as simple as that, just
+
+00:18:59.400 --> 00:19:01.740
+like a VS code. So you can try to download a latest version
+
+00:19:01.740 --> 00:19:04.360
+of the Python. That's completely fine. So download Python
+
+00:19:04.360 --> 00:19:07.900
+and in no time, again, you will be able to see that it's a
+
+00:19:07.900 --> 00:19:11.820
+very small file, 27.3 MB of file for me, for my windows
+
+00:19:11.820 --> 00:19:15.240
+machine may differ for a Linux machine may differ for a Mac
+
+00:19:15.240 --> 00:19:18.380
+machine, but yeah, I'm able to download this particular file
+
+00:19:18.380 --> 00:19:22.380
+in no time as simple as that. Yeah. So I will download it.
+
+00:19:22.380 --> 00:19:25.520
+So once you are going to download it, so you will just have
+
+00:19:25.520 --> 00:19:28.660
+to click, click, click install, and it is going to give you
+
+00:19:28.660 --> 00:19:32.500
+an option, add to the path environment file. So you just
+
+00:19:32.500 --> 00:19:35.660
+have to select that option and automatically Python will be
+
+00:19:35.660 --> 00:19:39.440
+installed and its path will be configured for all of you.
+
+00:19:39.740 --> 00:19:42.720
+Now maybe you can try to open up a command prompt and then
+
+00:19:42.720 --> 00:19:45.160
+inside a command prompt, you can try to check. So what is a
+
+00:19:45.160 --> 00:19:47.760
+Python version that you have? So for example, for me, we are
+
+00:19:47.760 --> 00:19:51.760
+S I O N Python version. So my Python version. So my Python
+
+00:19:51.760 --> 00:19:56.540
+version is basically, uh, 3.12, right? So 3.12, this is a
+
+00:19:56.540 --> 00:19:59.860
+Python version, which I have installed inside my system. The
+
+00:19:59.860 --> 00:20:03.160
+latest one is basically 3.13, I believe, but yeah, that's
+
+00:20:03.160 --> 00:20:05.580
+completely fine. There won't be much differences, which I
+
+00:20:05.580 --> 00:20:09.820
+will be able to find out between Python 3.13 or 3.12. So I'm
+
+00:20:09.820 --> 00:20:13.140
+using 3.12. If you have, if you are doing installation now,
+
+00:20:13.260 --> 00:20:18.060
+so maybe you can install Python 3.13, even it is possible to
+
+00:20:18.060 --> 00:20:20.860
+install a older version. So let's suppose if I would like to
+
+00:20:20.860 --> 00:20:23.920
+install maybe 3.12. Maybe 3.6, maybe 3.7 for some of the
+
+00:20:23.920 --> 00:20:27.160
+project, right? I will be able to do it because those
+
+00:20:27.160 --> 00:20:29.660
+binaries will be available. So all of those previous
+
+00:20:29.660 --> 00:20:32.640
+binaries, as you can see, will be available on a Python
+
+00:20:32.640 --> 00:20:35.800
+website itself. So even you can install a older version. For
+
+00:20:35.800 --> 00:20:38.720
+example, if you have joined some of the projects, so where,
+
+00:20:38.860 --> 00:20:41.600
+uh, someone has started that project, maybe two years back,
+
+00:20:41.700 --> 00:20:43.920
+maybe three years back. So obviously you have to set up your
+
+00:20:43.920 --> 00:20:46.940
+environment accordingly, right? So as per the project
+
+00:20:46.940 --> 00:20:50.300
+requirements, so yes, Python or not just Python, I would say
+
+00:20:50.300 --> 00:20:54.220
+even Java, C++, everyone provides you a worsening and you
+
+00:20:54.220 --> 00:20:56.740
+can try to configure the exact same version which has been
+
+00:20:56.740 --> 00:21:03.100
+used inside your ongoing project. Yep. Fine guys, everyone.
+
+00:21:08.810 --> 00:21:14.190
+Yeah. Okay. Python version is not recognized as an internal
+
+00:21:14.190 --> 00:21:19.950
+or external command Python. So Archit, your command is P Y T
+
+00:21:19.950 --> 00:21:23.190
+H O N. So Python should be a small, then there should be a
+
+00:21:23.190 --> 00:21:26.430
+space and then hyphen hyphen version. Okay. So your command
+
+00:21:26.430 --> 00:21:29.350
+is wrong. That's the reason. So it is giving you this. It
+
+00:21:29.350 --> 00:21:33.430
+should be Python, all a small space, hyphen hyphen version.
+
+00:21:34.090 --> 00:21:38.350
+You will be able to get a correct one. Simple. So Archit,
+
+00:21:38.370 --> 00:21:43.410
+your command is incorrect. Okay. Now moving ahead. So once
+
+00:21:43.410 --> 00:21:46.510
+we are able to install a VS code and once we are able to
+
+00:21:46.510 --> 00:21:49.270
+install a Python, so maybe I can try to search for a VS
+
+00:21:49.270 --> 00:21:55.370
+code. It is going to launch a brand new VS code for me. And
+
+00:21:55.370 --> 00:21:58.890
+here I can go into the file. So you will be able to get a
+
+00:21:58.890 --> 00:22:02.150
+welcome screen guys. If you are logging or if you are trying
+
+00:22:02.150 --> 00:22:05.230
+to open up your VS code for the very first time, you will be
+
+00:22:05.230 --> 00:22:07.810
+able to get a welcome screen. Just cut that, close that
+
+00:22:07.810 --> 00:22:10.710
+welcome screen, or it is going to give you a popup, a trust
+
+00:22:10.710 --> 00:22:13.490
+or no trust kind of a two option it is going to give you. So
+
+00:22:13.490 --> 00:22:16.230
+trust this software and then proceed ahead, close the
+
+00:22:16.230 --> 00:22:19.010
+welcome screen. So you will be able to see a complete blank
+
+00:22:19.010 --> 00:22:22.030
+screen over here. Just like me after closing those welcome
+
+00:22:22.030 --> 00:22:25.730
+screen and those are test popup. So this is something that
+
+00:22:25.730 --> 00:22:29.030
+you will be able to see now. So what we can do is, so maybe
+
+00:22:29.030 --> 00:22:32.150
+we can go to file and we can try to create a one new folder
+
+00:22:32.150 --> 00:22:35.950
+so that we can try to keep our files, whatever
+
+00:22:35.950 --> 00:22:38.590
+experimentation, whatever code that we are going to write.
+
+00:22:38.650 --> 00:22:41.230
+So we can try to keep each and everything inside that
+
+00:22:41.230 --> 00:22:45.050
+particular folder in a structured manner. So here I'm going
+
+00:22:45.050 --> 00:22:48.330
+to open up a folder in any directory, in any location,
+
+00:22:48.350 --> 00:22:51.450
+that's completely fine. Right? So I'm going to create a
+
+00:22:51.450 --> 00:23:05.750
+folder. Gen AI. Gen AI and with Ascentec AI, RAG and NLP,
+
+00:23:05.930 --> 00:23:09.430
+okay. So this is the folder I'm going to create and I'm
+
+00:23:09.430 --> 00:23:12.590
+going to save this folder. So now my VS code is giving me
+
+00:23:12.590 --> 00:23:15.150
+again this welcome screen. I will cut this welcome screen.
+
+00:23:15.310 --> 00:23:19.130
+Now this is the folder where I'm going to create our files,
+
+00:23:19.230 --> 00:23:24.150
+where I will be writing a code inside this directory. And at
+
+00:23:24.150 --> 00:23:26.650
+the end of the class, at the end of the class, I'm going to
+
+00:23:26.650 --> 00:23:31.250
+share a zip file of this directory inside your resource
+
+00:23:31.250 --> 00:23:35.350
+section or even inside your chat box so that all of you will
+
+00:23:35.350 --> 00:23:38.850
+be able to access those resources after unzipping it. So I'm
+
+00:23:38.850 --> 00:23:40.950
+going to share a zip. You can download it, you can keep it
+
+00:23:40.950 --> 00:23:44.190
+inside your system or wherever you want, and then you will
+
+00:23:44.190 --> 00:23:48.350
+be able to execute it. But it's always advisable to write a
+
+00:23:48.350 --> 00:23:51.410
+code along with me inside your live classes. Always
+
+00:23:51.410 --> 00:23:55.090
+advisable. Right? So please make sure that you are writing a
+
+00:23:55.090 --> 00:23:58.870
+code in a live class along with me. I'll give you enough
+
+00:23:58.870 --> 00:24:02.010
+amount of time to write a code. I'll go slow in the
+
+00:24:02.010 --> 00:24:06.450
+beginning and then I'll try to pick a speed. So here I'm
+
+00:24:06.450 --> 00:24:10.110
+able to create a folder. So just click on file, open folder,
+
+00:24:10.230 --> 00:24:13.710
+create a folder, simple, create a folder. And then once you
+
+00:24:13.710 --> 00:24:16.270
+are able to create a folder, Python, I have already
+
+00:24:16.270 --> 00:24:19.110
+installed. So what you have to do is, so maybe you can try
+
+00:24:19.110 --> 00:24:22.710
+to click on this icon. This icon is actually for extension.
+
+00:24:22.710 --> 00:24:25.590
+Or there is a shortcut, control shift and X. There is a
+
+00:24:25.590 --> 00:24:28.410
+shortcut for it. So you can try to click on this extension,
+
+00:24:28.630 --> 00:24:33.350
+extension. And here, so you have to search for a Jupyter, J
+
+00:24:33.350 --> 00:24:38.810
+-U-P-Y-T-E-R, Jupyter, Jupyter. So you will be able to get a
+
+00:24:38.810 --> 00:24:43.030
+Jupyter notebook option from Microsoft. Now what you can do
+
+00:24:43.030 --> 00:24:46.450
+is you can try to just click on install. As of now, I'm able
+
+00:24:46.450 --> 00:24:49.110
+to see an option called as uninstall because I have already
+
+00:24:49.110 --> 00:24:49.850
+installed it. Right?
+
+00:24:52.710 --> 00:24:54.730
+So you can see that as extension icon from this extension
+
+00:24:54.730 --> 00:24:58.450
+icon, you will be able to download and install hundreds of
+
+00:24:58.450 --> 00:25:01.630
+thousands of not thousand, I would say in a lack. So a
+
+00:25:01.630 --> 00:25:04.570
+hundred thousands of extension for a different, different
+
+00:25:04.570 --> 00:25:07.370
+purposes, you all will be able to install inside the same
+
+00:25:07.370 --> 00:25:07.930
+environment.
+
+00:25:13.950 --> 00:25:16.830
+Fine everyone. So are you able to find out a Jupyter
+
+00:25:16.830 --> 00:25:21.610
+extension? So just go to this icon, search for Jupyter, J-U
+
+00:25:21.610 --> 00:25:26.050
+-P-Y-T-E-R, Jupyter. Yeah. So Jupyter. Now, so you will be
+
+00:25:26.050 --> 00:25:28.490
+able to see an install option. Click. Okay. And within a
+
+00:25:28.490 --> 00:25:31.690
+minute of time, it will be able to install a Jupyter
+
+00:25:31.690 --> 00:25:36.090
+notebook inside your Vs code, so this installation will be
+
+00:25:36.090 --> 00:25:39.450
+done insideweis code. There is another approach. There is
+
+00:25:39.450 --> 00:25:42.250
+something called anaconda installation. But again, I'll not
+
+00:25:42.250 --> 00:25:44.930
+recommend anaconda installation because if your system is
+
+00:25:44.930 --> 00:25:48.970
+having a low configuration, it will give you issue. So, uh,
+
+00:25:49.090 --> 00:25:53.850
+it will, it will like a hang your system frequently. So I'll
+
+00:25:53.850 --> 00:25:58.210
+never advice anyone to install anaconda or anaconda. I would
+
+00:25:58.210 --> 00:26:00.830
+say and a Kona distribution because it's kind of a heavy
+
+00:26:00.830 --> 00:26:03.550
+package and it's kind of a heavy installation for your
+
+00:26:03.550 --> 00:26:07.330
+machine and with a very low RAM maybe 4gb or maybe with the
+
+00:26:07.330 --> 00:26:11.250
+8gb of RAM it may give you an issue and frequently you will
+
+00:26:11.250 --> 00:26:13.530
+have to restart your system and you will not feel
+
+00:26:13.530 --> 00:26:17.170
+comfortable while coding otherwise everything is same
+
+00:26:17.170 --> 00:26:19.810
+interface wise it's not going to be different it is going to
+
+00:26:19.810 --> 00:26:21.890
+give you a Jupiter notebook and you can write a code so
+
+00:26:21.890 --> 00:26:25.430
+interface wise execution wise everything is exactly same the
+
+00:26:25.430 --> 00:26:28.910
+only thing is ease of use so ease of use wise you will not
+
+00:26:28.910 --> 00:26:31.530
+be able to do that so sahid is saying how would python
+
+00:26:31.530 --> 00:26:33.950
+extension so if you have done the installation and if your
+
+00:26:33.950 --> 00:26:36.450
+python path is set then you don't have to do the python
+
+00:26:36.450 --> 00:26:39.210
+install extension otherwise you can go ahead with the python
+
+00:26:39.210 --> 00:26:43.390
+extension or else it's not required right if your python
+
+00:26:43.390 --> 00:26:46.350
+installation is already done it will be able to invoke so
+
+00:26:46.350 --> 00:26:50.170
+here okay so Jupiter notebook installation is done I'll go
+
+00:26:50.170 --> 00:26:53.590
+to my directory I'll try to create a very first file over
+
+00:26:53.590 --> 00:26:56.830
+here so I'm going to give a name. So, this is an option the
+
+00:26:56.830 --> 00:27:00.070
+very first option is for file creation the second option is
+
+00:27:00.070 --> 00:27:02.870
+for a folder creation so folder inside a folder if I have to
+
+00:27:02.870 --> 00:27:06.030
+create so I can use this one and file if I have to create I
+
+00:27:06.030 --> 00:27:08.650
+can use this one so what kind of a file we can try to create
+
+00:27:08.650 --> 00:27:14.070
+so today is 9th by the way so 9th Feb and I'm going to talk
+
+00:27:14.070 --> 00:27:18.990
+about a data processing so data processing dot this is the
+
+00:27:18.990 --> 00:27:24.410
+file name right then dot i p y n b now this is the extension
+
+00:27:24.410 --> 00:27:28.510
+if you are. Not giving an extension in a proper way you will
+
+00:27:28.510 --> 00:27:31.290
+not be able to create a jupiter notebook first part second
+
+00:27:31.290 --> 00:27:35.230
+part is you will not be able to execute the code so file
+
+00:27:35.230 --> 00:27:38.890
+name dot i p y n b file name could be anything whatever you
+
+00:27:38.890 --> 00:27:41.590
+want you can just try to give it give it as a file name
+
+00:27:41.590 --> 00:27:45.790
+there is no issue at all so file name dot i p y n b i python
+
+00:27:45.790 --> 00:27:49.210
+jupiter notebook that's it so here I'm going to hit enter
+
+00:27:49.210 --> 00:27:53.530
+and once I'm going to hit enter this are if I'm going to
+
+00:27:53.530 --> 00:27:56.670
+open up this file. So this is the interface i will be able
+
+00:27:56.670 --> 00:27:59.930
+to see now here there is an option for a code there is an
+
+00:27:59.930 --> 00:28:02.450
+option for a markdown markdown is nothing but commenting
+
+00:28:02.450 --> 00:28:06.450
+write ups and beautification all those things so here I can
+
+00:28:06.450 --> 00:28:09.570
+try to click on code but before that this is the jupiter
+
+00:28:09.570 --> 00:28:13.870
+notebook kind of a editor I would say right code editor so
+
+00:28:13.870 --> 00:28:16.930
+there is something called as select a kernel so you can try
+
+00:28:16.930 --> 00:28:19.910
+to click on select kernel and then you can try to select
+
+00:28:19.910 --> 00:28:23.010
+your existing python environment. It is going to show you if
+
+00:28:23.010 --> 00:28:25.850
+python is installed properly. So Python environment, I'm
+
+00:28:25.850 --> 00:28:28.210
+going to select any of the Python environment. So in my
+
+00:28:28.210 --> 00:28:31.290
+system I have not just only one environment, so I have a
+
+00:28:31.290 --> 00:28:34.070
+multiple environment. Going forward I'm going to even teach
+
+00:28:34.070 --> 00:28:37.530
+you during a project that how you can try to create a
+
+00:28:37.530 --> 00:28:40.230
+different environment which is going to be a project
+
+00:28:40.230 --> 00:28:44.770
+specific, not a generic one. Not a global one. But a project
+
+00:28:44.770 --> 00:28:47.070
+specific environment because that is very much important
+
+00:28:47.070 --> 00:28:50.350
+while doing a project. So that is also I'm going to teach
+
+00:28:50.350 --> 00:28:53.930
+you. It's just three steps. So step number one, creation,
+
+00:28:54.070 --> 00:28:57.390
+installation and then selection of that environment. So it's
+
+00:28:57.390 --> 00:28:59.970
+not that difficult but yeah, going forward in a class I'm
+
+00:28:59.970 --> 00:29:02.070
+going to teach you. So when I'll go through a project site.
+
+00:29:02.650 --> 00:29:05.790
+Now here Python environment is already done, already
+
+00:29:05.790 --> 00:29:09.490
+selected. I can click on this plus icon code. So it is going
+
+00:29:09.490 --> 00:29:14.730
+to give you a cell. Now this cell is equivalent to a cell
+
+00:29:14.730 --> 00:29:18.570
+that we have seen inside a Google collab. So whatever you
+
+00:29:18.570 --> 00:29:21.790
+can do here, same thing you will be able to do. Even inside
+
+00:29:21.790 --> 00:29:25.210
+your VS code. As simple as that, you all will be able to
+
+00:29:25.210 --> 00:29:30.150
+write the code and here I can write one plus one execute and
+
+00:29:30.150 --> 00:29:33.230
+it is able to give me the result. So execution wise again,
+
+00:29:33.310 --> 00:29:35.990
+shift enter or maybe what you can do is you can try to click
+
+00:29:35.990 --> 00:29:39.690
+on this execution cell triangle. So even in this way it will
+
+00:29:39.690 --> 00:29:42.770
+be able to execute itself. So whatever suits you. So
+
+00:29:42.770 --> 00:29:46.350
+generally I use a shortcut, shift enter or control enter. So
+
+00:29:46.350 --> 00:29:48.810
+with the help of shift enter or control enter, it will be
+
+00:29:48.810 --> 00:29:51.710
+able to execute it. Making sense guys, everyone.
+
+00:29:57.930 --> 00:30:01.290
+So I have anaconda and VS code both in my system. Maybe this
+
+00:30:01.290 --> 00:30:05.770
+is why system ends with a blue screen sometime. So VS code
+
+00:30:05.770 --> 00:30:09.410
+is a very light weighted idea. I would say even it's lighter
+
+00:30:09.410 --> 00:30:13.950
+than PyCharm. So even PyCharm may give you some sort of
+
+00:30:13.950 --> 00:30:17.290
+issues when you are doing some sort of a heavy processing.
+
+00:30:17.590 --> 00:30:20.970
+But in general, again, I'm not saying that VS code will not
+
+00:30:20.970 --> 00:30:23.190
+give you an issue. Obviously it's a software. It's a piece
+
+00:30:23.190 --> 00:30:26.330
+of software. And it's running inside your system. So there
+
+00:30:26.330 --> 00:30:31.130
+is a chance that it may give you the issue. But yeah, like
+
+00:30:31.130 --> 00:30:34.550
+number of times wise or percentage wise, it will be less as
+
+00:30:34.550 --> 00:30:36.790
+compared to any other ID. It's a very light weighted one.
+
+00:30:38.030 --> 00:30:43.750
+Simple. Okay. Fine guys. So can you please ping me guys in a
+
+00:30:43.750 --> 00:30:47.270
+chat if all of you are able to do a setup or if you are
+
+00:30:47.270 --> 00:30:50.930
+facing an issue so that I can move ahead. I don't see an
+
+00:30:50.930 --> 00:30:53.230
+option for a Python to select when I select the kernel.
+
+00:30:53.330 --> 00:30:58.010
+Sanjeev is saying. Oh, okay. RCS is saying I'm getting an
+
+00:30:58.010 --> 00:31:01.010
+error. So if you can specify me the error that will be
+
+00:31:01.010 --> 00:31:05.310
+better, that will help me out a lot. Running cell with
+
+00:31:05.310 --> 00:31:11.590
+Python 3.13 requires the IP YNB kernel package set up
+
+00:31:11.590 --> 00:31:15.890
+completed. There are a couple of people like RCS Sanjeev I
+
+00:31:15.890 --> 00:31:21.030
+can see only RCS Sanjeev who is facing an issue. Rest of us
+
+00:31:21.030 --> 00:31:26.450
+are able to do it. Siam is saying it's easy and doable.
+
+00:31:26.790 --> 00:31:29.410
+Okay. Only two people is facing an issue. I can see in a
+
+00:31:29.410 --> 00:31:30.710
+chat install
+
+00:31:33.400 --> 00:31:36.740
+Python, but getting an option, getting an option or not
+
+00:31:36.740 --> 00:31:38.900
+getting an option. Person with the number eight, nine,
+
+00:31:38.920 --> 00:31:39.360
+three, eight.
+
+00:31:45.940 --> 00:31:49.840
+Why all the tech names are animal? No, not all the tech
+
+00:31:49.840 --> 00:31:53.060
+names are animal Java. Java is Java has been named after
+
+00:31:53.060 --> 00:31:58.760
+coffee. So I don't know. Like we all love Java. We love
+
+00:31:58.760 --> 00:32:02.300
+animals. So maybe because of that, they have given a name,
+
+00:32:02.380 --> 00:32:06.880
+but yeah, it's, it's not like a generic one. So set
+
+00:32:10.270 --> 00:32:14.070
+up done. Safa is saying running cell required the IP YNB
+
+00:32:14.070 --> 00:32:17.910
+kernel package. Okay. So Python environment, IP YNB kernel,
+
+00:32:18.110 --> 00:32:22.630
+force, okay, fine, fine, no issue. But why does my kernel
+
+00:32:22.630 --> 00:32:26.870
+says Python while yours says conda. So because I have a
+
+00:32:26.870 --> 00:32:32.550
+conda and Python both in my system. So that's the reason. So
+
+00:32:32.550 --> 00:32:35.850
+mine says Python conda both. And I have likewise, I have
+
+00:32:35.850 --> 00:32:38.370
+hundreds of other environment as well because when I teach
+
+00:32:38.370 --> 00:32:40.710
+inside my class, right? So with a different, different
+
+00:32:40.710 --> 00:32:42.910
+classes, different, different environment, I used to create
+
+00:32:42.910 --> 00:32:45.690
+a different, different project I used to run. So in my
+
+00:32:45.690 --> 00:32:51.650
+system, it's like a lot of environment I have created. We
+
+00:32:51.650 --> 00:32:53.830
+will start NLP today. That's the reason we are doing a set
+
+00:32:53.830 --> 00:32:58.030
+of Deepak. So almost done. So from my side, set up is done.
+
+00:33:01.340 --> 00:33:04.560
+Yeah. So those who are facing issue with the IP YNB kernel,
+
+00:33:04.780 --> 00:33:07.520
+just do pip install IP YNB kernel. Now where you can do pip
+
+00:33:07.520 --> 00:33:11.140
+install IP YNB kernel, simple over here. So just do control
+
+00:33:11.140 --> 00:33:15.120
+and tilt. So once you are going to press control tilt,
+
+00:33:15.380 --> 00:33:18.400
+right, control tilt, if once you are going to a plus, even
+
+00:33:18.400 --> 00:33:21.320
+you can open up a terminal from here, new terminal, you can
+
+00:33:21.320 --> 00:33:24.320
+try to open up. So you can go to this click and then
+
+00:33:24.320 --> 00:33:27.240
+terminal, you can try to open up a new terminal. Shortcut
+
+00:33:27.240 --> 00:33:31.660
+for this one is control and tilt. Right. To open, to close
+
+00:33:31.660 --> 00:33:34.520
+this kernel. And from here you will be able to select a git
+
+00:33:34.520 --> 00:33:40.100
+bash command prompt or WSL for Linux kind of a execution
+
+00:33:40.100 --> 00:33:43.720
+inside a windows machine or power cell. So all of these
+
+00:33:43.720 --> 00:33:47.460
+options are already given to you inside a VS code itself,
+
+00:33:47.740 --> 00:33:51.120
+right? So here, if you are facing any issue with the IP YNB
+
+00:33:51.120 --> 00:33:56.400
+kernel, simple pip install IP YNB kernel. Controls plus tilt
+
+00:33:56.400 --> 00:33:57.480
+or
+
+00:34:00.320 --> 00:34:03.060
+there is another shortcut control plus J. Both. Both is
+
+00:34:03.060 --> 00:34:07.200
+going to work. Control tilt, control J. Or if you are not
+
+00:34:07.200 --> 00:34:10.380
+able to remember the shortcut, then it's fine. Go to this
+
+00:34:10.380 --> 00:34:13.820
+three dot and then terminal, new terminal. Either way it's
+
+00:34:13.820 --> 00:34:16.540
+completely fine. It is going to do the same thing. But yeah,
+
+00:34:16.620 --> 00:34:19.980
+so very soon you all will get used to the shortcuts.
+
+00:34:25.080 --> 00:34:27.760
+Let's list the topic which will be covered today. I have
+
+00:34:27.760 --> 00:34:32.100
+already listed it down Siam in a like a syllabus. So I think
+
+00:34:32.100 --> 00:34:34.040
+it's going to be the unnecessary discussion. Try to focus
+
+00:34:34.040 --> 00:34:36.540
+inside the class. Yeah.
+
+00:34:40.340 --> 00:34:45.440
+So let's get started. Okay. So fine guys, let's get started.
+
+00:34:47.420 --> 00:34:49.440
+So here what
+
+00:34:53.920 --> 00:35:00.120
+we can do is so we can start doing a coding now. So what we
+
+00:35:00.120 --> 00:35:02.560
+are going to discuss in my today's class guys. So in my
+
+00:35:02.560 --> 00:35:06.080
+today's class, I'll be talking about a text processing. So
+
+00:35:06.080 --> 00:35:09.100
+if you will go through your syllabus, right, the syllabus
+
+00:35:09.100 --> 00:35:12.760
+that we have published. So inside this syllabus. In a very
+
+00:35:12.760 --> 00:35:16.380
+first section induction, we have done a study itself now
+
+00:35:16.380 --> 00:35:20.860
+here. So inside a syllabus, just try to focus on this part.
+
+00:35:21.300 --> 00:35:24.860
+The very first one, text processing and word embedding this
+
+00:35:24.860 --> 00:35:27.900
+one. So basic terminology and text processing impotence,
+
+00:35:27.960 --> 00:35:30.700
+text cleaning, text tokenization, removing a stop word,
+
+00:35:30.780 --> 00:35:33.860
+limitation and staming, normalizing the text sentiment,
+
+00:35:34.020 --> 00:35:37.520
+parts of a speech and NER name it organization. So we will
+
+00:35:37.520 --> 00:35:41.520
+try to cover these topics in my today's class, by the way.
+
+00:35:41.520 --> 00:35:43.320
+That's the reason. So we have published a syllabus so that
+
+00:35:43.320 --> 00:35:46.240
+in my live classes, so one by one, one by one. So we can try
+
+00:35:46.240 --> 00:35:50.600
+to go through the topics. And again, it's a live class. It's
+
+00:35:50.600 --> 00:35:53.340
+not a YouTube video for 10 minutes or 15 minutes. So
+
+00:35:53.340 --> 00:35:55.580
+obviously in my two hour of classes, I will ended up
+
+00:35:55.580 --> 00:35:59.600
+covering not just one topic, but a multiple topic from your
+
+00:35:59.600 --> 00:36:02.780
+syllabus. I believe we all understand this particular part
+
+00:36:02.780 --> 00:36:08.760
+now. So here first one. So text processing wise. We are
+
+00:36:08.760 --> 00:36:12.480
+going to use a library called as NER. Natural Language
+
+00:36:12.480 --> 00:36:16.100
+Toolkit. Short form of that library is called as NLTK. Now
+
+00:36:16.100 --> 00:36:19.660
+so NLTK is not the only library in a market. In a market. So
+
+00:36:19.660 --> 00:36:22.820
+there is an alternative of a library called as Spacey called
+
+00:36:22.820 --> 00:36:25.940
+as a Stanford NLP. So likewise, there are so many different,
+
+00:36:26.020 --> 00:36:28.920
+different kinds of libraries which is available, which will
+
+00:36:28.920 --> 00:36:32.060
+help you out to do a text processing. Now the question is
+
+00:36:32.060 --> 00:36:35.620
+that, that why we are even talking about a text processing
+
+00:36:35.620 --> 00:36:38.160
+and what we are going to do with it and how we are going to
+
+00:36:38.160 --> 00:36:41.880
+use it going forward. So at the end of the day. We have to
+
+00:36:41.880 --> 00:36:44.520
+learn, maybe let's suppose fine tuning. We have to build a
+
+00:36:44.520 --> 00:36:47.700
+model like a chat GPT kind of a model or maybe board kind of
+
+00:36:47.700 --> 00:36:50.960
+a model we have to train, or maybe we have to learn RNN,
+
+00:36:51.060 --> 00:36:54.620
+LSTM, transformer, encoder, decoder, all sort of
+
+00:36:54.620 --> 00:36:57.420
+architecture. And eventually we have to build a product or
+
+00:36:57.420 --> 00:37:03.340
+we have to build a project right now. So in every project or
+
+00:37:03.340 --> 00:37:06.440
+whatever model that you are going to train at the end of the
+
+00:37:06.440 --> 00:37:10.960
+day, your input is going to be text. Now. It's not like. You
+
+00:37:10.960 --> 00:37:12.660
+can get text from some of the books or maybe from a
+
+00:37:12.660 --> 00:37:15.840
+Wikipedia, some of the open source data set, and then you
+
+00:37:15.840 --> 00:37:18.740
+will be able to pass those data model will be able to
+
+00:37:18.740 --> 00:37:22.080
+understand. No, not at all. It's not a chat GPT, right? So
+
+00:37:22.080 --> 00:37:25.060
+if you have to build such kind of a system, so obviously you
+
+00:37:25.060 --> 00:37:28.900
+have to process a complete text. You have to break it down
+
+00:37:28.900 --> 00:37:32.660
+into a small, small tokens, or you can say into a character,
+
+00:37:32.840 --> 00:37:36.880
+into a words, you have to remove the stop words or maybe a
+
+00:37:36.880 --> 00:37:39.080
+punctuation or maybe a repetitive word.
+
+00:37:46.580 --> 00:37:53.080
+So you have to do a lot of pre-processing on a data and then
+
+00:37:53.080 --> 00:37:56.720
+we have to convert those data into its numerical
+
+00:37:56.720 --> 00:37:59.280
+representation, which is called as embedding. That's a
+
+00:37:59.280 --> 00:38:02.180
+reason. So after test processing the next chapter, if you
+
+00:38:02.180 --> 00:38:05.640
+will be able to see, so we have given you a embedding. So
+
+00:38:05.640 --> 00:38:09.560
+whether it's a one hot encoding or bag of word or TF IDF or
+
+00:38:09.560 --> 00:38:12.060
+word to vector, or whether, all of these things are going to
+
+00:38:12.060 --> 00:38:16.180
+give you a capability to convert your textual information
+
+00:38:16.180 --> 00:38:20.780
+into a numerical information. So in a different, different
+
+00:38:20.780 --> 00:38:24.300
+way, obviously. So once we'll try to discuss that topic, so
+
+00:38:24.300 --> 00:38:26.540
+I'll try to explain you theoretically, practically, as well
+
+00:38:26.540 --> 00:38:30.300
+as mathematically, wherever it is required. So these text
+
+00:38:30.300 --> 00:38:35.420
+processing is very much required to move ahead with any kind
+
+00:38:35.420 --> 00:38:39.980
+of a system or model that we wanted to build, or we are
+
+00:38:39.980 --> 00:38:44.140
+going to build. And that's the reason. So as a NLP guy or as
+
+00:38:44.140 --> 00:38:49.940
+a generative AI guys, your entire day or your entire innings
+
+00:38:49.940 --> 00:38:53.640
+is going to start from a processing of a data. And
+
+00:38:53.640 --> 00:38:56.180
+eventually it's a text processing that you will end up doing
+
+00:38:56.180 --> 00:38:58.860
+today. What we are going to do is, so we are going to do a
+
+00:38:58.860 --> 00:39:01.840
+text processing and with the help of a library called as
+
+00:39:01.840 --> 00:39:05.040
+NLTK, natural language toolkit, that's a full form of the
+
+00:39:05.040 --> 00:39:08.420
+library. Now it's one of the advanced, one of the vast, one
+
+00:39:08.420 --> 00:39:11.500
+of the powerful library that is given to you. And, uh,
+
+00:39:11.560 --> 00:39:14.940
+seamlessly, you all will be able to write a code. It's not
+
+00:39:14.940 --> 00:39:19.560
+at all difficult, obviously, uh, it will get complex, more
+
+00:39:19.560 --> 00:39:24.740
+complex. So once we will get into, uh, like, uh, solving a
+
+00:39:24.740 --> 00:39:28.000
+real time problem and that we'll see once time will come,
+
+00:39:28.100 --> 00:39:31.360
+but yeah. So in today's class, I don't think that you all
+
+00:39:31.360 --> 00:39:33.960
+are going to feel any kind of a complexity. You all will be
+
+00:39:33.960 --> 00:39:36.440
+able to understand everything and you all will be able to
+
+00:39:36.440 --> 00:39:41.860
+execute it. So here you have to import first of all. NLTK,
+
+00:39:41.860 --> 00:39:45.700
+NLTK, you have to import now here when I'm trying to do
+
+00:39:45.700 --> 00:39:49.300
+import NLTK, right? It is giving me, there is no module
+
+00:39:49.300 --> 00:39:53.000
+called as NLTK as simple as that, right? So because I have
+
+00:39:53.000 --> 00:39:56.260
+just installed maybe a VS code and, uh, inside that I have
+
+00:39:56.260 --> 00:39:59.520
+installed a Jupiter notebook, but a Python is also
+
+00:39:59.520 --> 00:40:03.980
+installed. But yeah, inside Python, uh, there are not just
+
+00:40:03.980 --> 00:40:06.880
+one or two package base Python is different base Python is
+
+00:40:06.880 --> 00:40:08.980
+fine. That is already installed. So my system can understand
+
+00:40:08.980 --> 00:40:13.280
+a Python code. But there are hundreds of thousands of
+
+00:40:13.280 --> 00:40:16.900
+libraries, which is available in a market and all this
+
+00:40:16.900 --> 00:40:19.640
+installation will not be done at the time of installation of
+
+00:40:19.640 --> 00:40:23.840
+Python. So we have to install it extensive or we have to
+
+00:40:23.840 --> 00:40:26.300
+install it when we are going to use it or when we are going
+
+00:40:26.300 --> 00:40:29.260
+to build something. So here, as you can see that, that it is
+
+00:40:29.260 --> 00:40:33.840
+giving me something like a no model called NLTK. Now for
+
+00:40:33.840 --> 00:40:37.660
+Python package, right for Python packages, if you will go to
+
+00:40:37.660 --> 00:40:41.840
+Google, you will be able to see that there is a big
+
+00:40:41.840 --> 00:40:46.880
+repository, which is called as PIP, P I P, PIP, PIP, Python,
+
+00:40:47.060 --> 00:40:52.260
+if I'm going to search. So it is going to give you a pypy
+
+00:40:52.260 --> 00:40:57.280
+.org link, pypy.org link. And here you will be able, it's a
+
+00:40:57.280 --> 00:40:59.940
+repository. It's a repository where you will be able to find
+
+00:40:59.940 --> 00:41:03.180
+out every kind of packages. So whatever Python package, and
+
+00:41:03.180 --> 00:41:07.040
+even you can try to release your own Python packages. That
+
+00:41:07.040 --> 00:41:11.140
+is also possible. That is also possible. So like from my
+
+00:41:11.140 --> 00:41:12.840
+previous organization, so we have already released a lot of
+
+00:41:12.840 --> 00:41:14.760
+packages. So if you are going to search by the organization
+
+00:41:14.760 --> 00:41:16.760
+name, you will be able to see that there are a lot of
+
+00:41:16.760 --> 00:41:19.640
+packages, which has been released even from our side. So
+
+00:41:19.640 --> 00:41:23.480
+here, this is basically a repository. So let's suppose if
+
+00:41:23.480 --> 00:41:26.080
+I'm going to create some package to solve some problem,
+
+00:41:26.280 --> 00:41:29.000
+maybe I can try to publish it. A Pythonic package by the
+
+00:41:29.000 --> 00:41:31.900
+way, right? A Pythonic package. So maybe I can try to
+
+00:41:31.900 --> 00:41:35.540
+release those packages and anyone and everyone will be able
+
+00:41:35.540 --> 00:41:39.360
+to use it just by doing a pip install. A package name. So
+
+00:41:39.360 --> 00:41:43.900
+here it is showing me no module name NLTK. So how I will be
+
+00:41:43.900 --> 00:41:47.760
+able to resolve this issue? So simple. I can try to do the
+
+00:41:47.760 --> 00:41:51.440
+installation. So pip install pip is nothing but a repository
+
+00:41:51.440 --> 00:41:55.380
+name. This one, this one is actually pip, right? From Pypy
+
+00:41:55.380 --> 00:42:00.380
+and install and then library name I can try to give, and I
+
+00:42:00.380 --> 00:42:03.740
+will be able to install it. Let's suppose it is giving me an
+
+00:42:03.740 --> 00:42:07.260
+error called as NLTK. Okay, fine. So maybe I can try to go
+
+00:42:07.260 --> 00:42:10.000
+and search. So I will come over here, NLTK. So it is going
+
+00:42:10.000 --> 00:42:14.680
+to give me that yes, there is a NLTK 920 projects are
+
+00:42:14.680 --> 00:42:19.480
+available with NLTK. So maybe I can try to use the official
+
+00:42:19.480 --> 00:42:21.720
+one. So again, there are so many packages which is
+
+00:42:21.720 --> 00:42:23.480
+available, so you don't have to use all the packages,
+
+00:42:23.600 --> 00:42:27.600
+official ones. So pip install NLTK and I'll come over here
+
+00:42:27.600 --> 00:42:31.560
+and I'll try to install inside my Jupyter notebook itself.
+
+00:42:31.820 --> 00:42:37.660
+So pip install NLTK. Now in this way, this library NLTK will
+
+00:42:37.660 --> 00:42:40.660
+be installed. It will be available to me. So requirement
+
+00:42:40.660 --> 00:42:43.760
+already satisfied, installing collected regex, this, this,
+
+00:42:43.820 --> 00:42:47.880
+this, maybe you need to restart. So let me re-import this
+
+00:42:47.880 --> 00:42:53.200
+one. And this time again, when I've executed this, all the
+
+00:42:53.200 --> 00:42:56.500
+errors are gone. There is no error. Now it is not telling me
+
+00:42:56.500 --> 00:43:00.220
+that no model called as NLTK. Now so going forward, we are
+
+00:43:00.220 --> 00:43:02.500
+not going to install just one or two libraries. We are going
+
+00:43:02.500 --> 00:43:05.840
+to install a hundreds of libraries in each and every class,
+
+00:43:05.900 --> 00:43:08.760
+every class, right? Every class. So we'll try to discuss
+
+00:43:08.760 --> 00:43:11.820
+some topics and we'll try, we'll have to install a new
+
+00:43:11.820 --> 00:43:14.780
+library because all these libraries are not installed in my
+
+00:43:14.780 --> 00:43:18.220
+Python or anywhere. Doesn't matter whether you are going to
+
+00:43:18.220 --> 00:43:20.700
+use your local or you're going to use maybe a Google collab
+
+00:43:20.700 --> 00:43:24.740
+everywhere. You have to install these libraries as in when
+
+00:43:24.740 --> 00:43:29.360
+you are going to need it. So here pip install NLTK and your
+
+00:43:29.360 --> 00:43:32.120
+work will be done. So I'm pinging you this code inside your
+
+00:43:32.120 --> 00:43:36.700
+chat guys. So this is going to install everything inside
+
+00:43:36.700 --> 00:43:38.420
+your base environment. Simple.
+
+00:43:40.990 --> 00:43:44.550
+Yeah. So you can do pip install. You can do even exclamation
+
+00:43:44.550 --> 00:43:47.310
+marks this one, and then pip install, it is going to work.
+
+00:43:47.630 --> 00:43:50.890
+So there are multiple ways. A simple way is right pip
+
+00:43:50.890 --> 00:43:54.590
+install without writing anything before and after and done.
+
+00:43:57.710 --> 00:44:02.890
+So people are saying no module name pip. So please check
+
+00:44:02.890 --> 00:44:06.390
+your Python and then you can try to install pip first.
+
+00:44:09.760 --> 00:44:13.920
+Fine. Everyone. Yeah. So again, those who would like to
+
+00:44:13.920 --> 00:44:15.720
+change the kernel. So there is an option. So this is my
+
+00:44:15.720 --> 00:44:18.060
+selected one. This is my selected kernel. So I can try to go
+
+00:44:18.060 --> 00:44:20.680
+and select other kernels as well. That option is also given
+
+00:44:20.680 --> 00:44:25.870
+to you. Let's suppose I have multiple kernels and if pip is
+
+00:44:25.870 --> 00:44:28.510
+not working directly, so maybe you can try to use this with
+
+00:44:28.510 --> 00:44:35.380
+the exclamation. So this one, either of this will work. This
+
+00:44:35.380 --> 00:44:36.140
+should work.
+
+00:44:39.980 --> 00:44:45.600
+Fine guys, for all of us. Yep. Everyone.
+
+00:44:50.260 --> 00:44:52.520
+So let me know guys, once you are able to do a setup.
+
+00:45:02.820 --> 00:45:07.040
+Yeah. And with Euron. So obviously I'm giving you an answer.
+
+00:45:07.120 --> 00:45:09.720
+Yeah. For your questions, but yeah. So even there is a
+
+00:45:09.720 --> 00:45:13.320
+system that we have integrated called as Euron. So for your
+
+00:45:13.320 --> 00:45:16.540
+query, even Euron will keep on giving you the answer in a
+
+00:45:16.540 --> 00:45:19.340
+real time. So without even waiting for my answer, you can
+
+00:45:19.340 --> 00:45:22.040
+try to accept an answer and it is even going to give you a
+
+00:45:22.040 --> 00:45:25.460
+code suggestion, code correction, lot of things, right? Lot
+
+00:45:25.460 --> 00:45:27.780
+of things so that you don't have to wait for me to answer
+
+00:45:27.780 --> 00:45:30.360
+your questions. Obviously I'm going to answer the question.
+
+00:45:30.580 --> 00:45:33.440
+I'm not saying that in a live class, I'm not going to answer
+
+00:45:33.440 --> 00:45:36.900
+the question, but yeah, there is a option. You will be able
+
+00:45:36.900 --> 00:45:41.140
+to get even from a Euron. You can try to write your complete
+
+00:45:41.140 --> 00:45:44.240
+like a error that you are facing and paste it inside the
+
+00:45:44.240 --> 00:45:47.940
+chat. Euron system is going to give you the answer or you
+
+00:45:47.940 --> 00:45:50.100
+can try to use even Euron assist because with Euron assist,
+
+00:45:50.200 --> 00:45:53.480
+we have integrated the latest one, even a deep seek the
+
+00:45:53.480 --> 00:45:55.460
+advanced one, deep seek R1 we have integrated.
+
+00:45:58.280 --> 00:46:01.840
+Okay. So obviously we all are learning tech, so we are
+
+00:46:01.840 --> 00:46:07.280
+supposed to use tech. Yep. Okay. Now it's done. So NLTK is
+
+00:46:07.280 --> 00:46:11.500
+installed. I will be able to use NLTK. Now why we are going
+
+00:46:11.500 --> 00:46:15.180
+to use NLTK. So here again, I'll go to Google, I'll try to
+
+00:46:15.180 --> 00:46:21.840
+search for NLTK, NLTK and there is something called as nltk
+
+00:46:21.840 --> 00:46:25.780
+.org. Now this is the official website, official website of
+
+00:46:25.780 --> 00:46:29.240
+a NLTK, natural language toolkit. Now once you are going to
+
+00:46:29.240 --> 00:46:32.180
+come over here, right? Once you are going to come over here,
+
+00:46:32.220 --> 00:46:36.240
+so they have already given you a lot of examples, right? A
+
+00:46:36.240 --> 00:46:39.760
+lot of examples, a lot of use cases, but in bits and pieces
+
+00:46:39.760 --> 00:46:42.280
+as simple as that in a bits and pieces, they have given you
+
+00:46:42.280 --> 00:46:45.080
+examples and even you can try to search something with the
+
+00:46:45.080 --> 00:46:48.840
+Google with NLTK examples and it is, it is going to give you
+
+00:46:48.840 --> 00:46:51.840
+like a things. So if you will go through our API references,
+
+00:46:51.980 --> 00:46:55.600
+so there are like a, not just like a hundreds of function I
+
+00:46:55.600 --> 00:46:58.160
+would say, but 10 thousands of functions are available
+
+00:46:58.160 --> 00:47:02.020
+inside NLTK. It's like I said, it's a very, very powerful
+
+00:47:02.020 --> 00:47:06.080
+one and you will be able to do almost every kind of a text
+
+00:47:06.080 --> 00:47:10.560
+processing with the help of NLTK. Alternative of NLTK is a
+
+00:47:10.560 --> 00:47:13.920
+Spacey or a Stanford NLP. Likewise, there are a couple of
+
+00:47:13.920 --> 00:47:16.680
+more alternative, which is available inside the market. But
+
+00:47:16.680 --> 00:47:19.800
+again, I will, I will prefer to use NLTK over everything
+
+00:47:19.800 --> 00:47:24.100
+else because it's updated once a powerful one. It's an open
+
+00:47:24.100 --> 00:47:27.440
+sourced one. So people are contributing on a regular basis
+
+00:47:27.440 --> 00:47:30.760
+and this library is getting more and more powerful since
+
+00:47:30.760 --> 00:47:34.820
+last like eight to 10 years, I would say, right? Eight to 10
+
+00:47:34.820 --> 00:47:37.600
+years. So it's a powerful one and a lot of like
+
+00:47:37.600 --> 00:47:40.520
+functionalities are available. Obviously I'm not going to
+
+00:47:40.520 --> 00:47:43.620
+talk about all the functions, right? As you can see, there
+
+00:47:43.620 --> 00:47:46.260
+are 10 thousands of functions which is available inside a
+
+00:47:46.260 --> 00:47:50.540
+NLTK. So now one by one, let's start looking into some of
+
+00:47:50.540 --> 00:47:55.260
+the data processing and let's try to learn this NLTK as we
+
+00:47:55.260 --> 00:47:59.200
+have already imported and we have already installed and we
+
+00:47:59.200 --> 00:48:03.620
+have already done the import now here. So NLTK provide you
+
+00:48:03.620 --> 00:48:07.160
+some of the inbuilt data. Set, right? Some of the inbuilt
+
+00:48:07.160 --> 00:48:09.920
+data set inside a library itself, some of the inbuilt
+
+00:48:09.920 --> 00:48:14.540
+textual based data set and how to download all of those data
+
+00:48:14.540 --> 00:48:17.020
+set, which is available because as of now we have just
+
+00:48:17.020 --> 00:48:19.860
+installed NLTK and we are just trying to import the NLTK
+
+00:48:19.860 --> 00:48:24.580
+APIs means functions. That's it. So here I can write NLTK,
+
+00:48:24.620 --> 00:48:31.440
+NLTK dot dot download, right? And I can mention over here
+
+00:48:31.440 --> 00:48:36.160
+all. So once I'm going to call that download all. It is
+
+00:48:36.160 --> 00:48:40.840
+going to download the data set from NLTK as you can see. So
+
+00:48:40.840 --> 00:48:44.360
+it is trying to download a different, different corpus. So
+
+00:48:44.360 --> 00:48:47.420
+there is something called as ABC corpus, average perception
+
+00:48:47.420 --> 00:48:53.000
+trigger corpus, and there is a bio creative PPI corpus, book
+
+00:48:53.000 --> 00:48:57.240
+grammars corpus. So there are so much of data, so much of
+
+00:48:57.240 --> 00:49:02.200
+data it is trying to download. So just execute this code
+
+00:49:02.200 --> 00:49:04.360
+guys, everyone quickly. Okay.
+
+00:49:19.260 --> 00:49:22.240
+Fine. So there are so much of data, which is available by
+
+00:49:22.240 --> 00:49:26.300
+default inside NLTK. I can try to name one of the data and I
+
+00:49:26.300 --> 00:49:28.800
+can download it, but here I have written that download all
+
+00:49:28.800 --> 00:49:32.140
+the data. So it will be able to download all the data set
+
+00:49:32.140 --> 00:49:38.260
+for all of you. Okay. Now so once you will be able to
+
+00:49:38.260 --> 00:49:43.680
+download a data, so maybe I can try to use some of the data
+
+00:49:43.680 --> 00:49:46.160
+set I can, I can maybe try to check that. Okay, fine. So
+
+00:49:46.160 --> 00:49:49.240
+what is there inside this particular data set? But yeah. So
+
+00:49:49.240 --> 00:49:51.080
+all is going to download all the data set, which is not
+
+00:49:51.080 --> 00:49:54.000
+required, pretty much it's not required. So maybe what I can
+
+00:49:54.000 --> 00:49:57.340
+do is I can try to close this process, dominate this
+
+00:49:57.340 --> 00:50:02.080
+process, and then I can try to show you a download with only
+
+00:50:02.080 --> 00:50:05.520
+one data set. So writing in NLTK download all, there is
+
+00:50:05.520 --> 00:50:08.220
+something called as book data. There is something called as
+
+00:50:08.220 --> 00:50:11.180
+book data. So I'll simply write, write, download only book
+
+00:50:11.180 --> 00:50:15.000
+for me. If I'm writing all, means all the data I'm writing
+
+00:50:15.000 --> 00:50:19.020
+over here that just try to download the books. So there is a
+
+00:50:19.020 --> 00:50:23.080
+collection of the books, which is available inside the NLTK
+
+00:50:23.080 --> 00:50:26.360
+data, and I will be able to download it.
+
+00:50:31.860 --> 00:50:34.740
+Done guys, everyone downloaded. So it's downloading for me
+
+00:50:34.740 --> 00:50:35.120
+as of now.
+
+00:50:45.220 --> 00:50:48.940
+Okay. So downloading done. And you can see that it has
+
+00:50:48.940 --> 00:50:52.880
+downloaded a lot of data for me. Maybe I would like to check
+
+00:50:52.880 --> 00:50:57.300
+that what in all data is available inside this like a
+
+00:50:57.300 --> 00:51:02.820
+particular book data that I'm able to download. Okay. So
+
+00:51:02.820 --> 00:51:08.360
+maybe what I can do is, so I can try to say that from NLTK
+
+00:51:08.360 --> 00:51:15.460
+dot book, right book import all, import all means static. So
+
+00:51:15.460 --> 00:51:17.820
+this is something means that whatever books it is able to
+
+00:51:17.820 --> 00:51:22.380
+download from NLTK. So I'm just trying to import all of this
+
+00:51:22.380 --> 00:51:26.480
+books over here, right? All of these books over here, I'm
+
+00:51:26.480 --> 00:51:29.700
+trying to download means there is a data inside it, right?
+
+00:51:29.700 --> 00:51:32.140
+So I'm just trying to import all of these books over here.
+
+00:51:32.260 --> 00:51:35.640
+And as you can see that introductory example of NLTK books,
+
+00:51:35.800 --> 00:51:38.300
+loading text one, this, this, this, and sentence and as
+
+00:51:38.300 --> 00:51:42.540
+nine, type the name of the text or sentence to view it. So
+
+00:51:42.540 --> 00:51:46.680
+here type text or sentence to list the material. So text
+
+00:51:46.680 --> 00:51:49.520
+one, this one is a book. So all this book's name it has
+
+00:51:49.520 --> 00:51:54.460
+given to me. And maybe I will be able to just type text or
+
+00:51:54.460 --> 00:51:57.800
+maybe just type a sentence and I will be able to see a
+
+00:51:57.800 --> 00:51:58.440
+couple of data.
+
+00:52:01.200 --> 00:52:05.360
+So text one,
+
+00:52:07.030 --> 00:52:10.050
+text two, text three, all those things which is coming from
+
+00:52:10.050 --> 00:52:15.270
+the available book text, I will be able to get it. Maybe I
+
+00:52:15.270 --> 00:52:19.910
+can try to like a print some of the data. Maybe I can try to
+
+00:52:19.910 --> 00:52:25.550
+print a text one only. So I will be able to print a text one
+
+00:52:25.550 --> 00:52:27.770
+only text two. If I have to print, I will be able to print
+
+00:52:27.770 --> 00:52:30.570
+text two means I'm saying that, that I will be able to
+
+00:52:30.570 --> 00:52:33.830
+access the data as simple as that. So I'm able to access the
+
+00:52:33.830 --> 00:52:37.470
+data out of this one. So there are a lot of data which is
+
+00:52:37.470 --> 00:52:41.590
+available. Sometime I will be using a data set from a NLTK.
+
+00:52:42.210 --> 00:52:45.290
+Sometime what I will do is, so I have my own data set or
+
+00:52:45.290 --> 00:52:48.210
+maybe I'll try to acquire a data set from a Wikipedia or
+
+00:52:48.210 --> 00:52:53.390
+from maybe a hugging phase or maybe from a Kaggle and I will
+
+00:52:53.390 --> 00:52:56.690
+be using a data set. So now coming to the next part guys,
+
+00:52:56.810 --> 00:53:00.370
+data wise, right? Coming to the next part. So we are trying
+
+00:53:00.370 --> 00:53:03.990
+to, we will try to build the model. We will try to learn a
+
+00:53:03.990 --> 00:53:08.370
+library, but to do each and everything I need a data. Now
+
+00:53:08.370 --> 00:53:13.550
+what is the best data source for me? So as per me, the best
+
+00:53:13.550 --> 00:53:16.310
+data source, you can go to Google and try to search for
+
+00:53:16.310 --> 00:53:21.090
+hugging phase. So hugging phase is one of the best place
+
+00:53:21.090 --> 00:53:24.530
+where you will be able to get a data set. Every kind of data
+
+00:53:24.530 --> 00:53:26.930
+set. I'm not just saying NLP kind of a data set, but every
+
+00:53:26.930 --> 00:53:29.750
+kind of a data set. So just go to a hugging phase. I'm
+
+00:53:29.750 --> 00:53:33.810
+pinging you a link for hugging phase over here and then
+
+00:53:33.810 --> 00:53:37.450
+there is a tab called as data set tab. As you can see my
+
+00:53:37.450 --> 00:53:40.710
+mouse cursor, right? So data set tab, you can go over here
+
+00:53:40.710 --> 00:53:45.690
+and then you can try to filter out a data. So hugging phase
+
+00:53:45.690 --> 00:53:49.570
+is providing you a 3D data, audio data, geospatial data,
+
+00:53:49.870 --> 00:53:54.730
+image data, tabular data, text data, right, text data, time
+
+00:53:54.730 --> 00:53:58.070
+series data, video data. So there are a lot of data set,
+
+00:53:58.130 --> 00:54:01.050
+which is already available. Inside a hugging phase, you can
+
+00:54:01.050 --> 00:54:05.050
+try to use it. Majority of the time we will be using a text
+
+00:54:05.050 --> 00:54:09.210
+data. So you can try to apply a filter and then there are 2
+
+00:54:09.210 --> 00:54:15.690
+,17,267 till date. And again, they keep on adding the new,
+
+00:54:15.750 --> 00:54:19.510
+new data set. So this is the kind of a data set, which is
+
+00:54:19.510 --> 00:54:25.190
+available inside hugging phase itself, 2,17,000 and some of
+
+00:54:25.190 --> 00:54:27.550
+this data set is a kind of a data set, which has been used.
+
+00:54:28.290 --> 00:54:29.290
+So this is the kind of a data set, which is available inside
+
+00:54:29.290 --> 00:54:29.590
+hugging phase itself, 2,17,000. So you can try to train it,
+
+00:54:29.750 --> 00:54:34.270
+or to build a real time model. Even you can try to format it
+
+00:54:34.270 --> 00:54:37.690
+over here. Right? So in which format you are looking for
+
+00:54:37.690 --> 00:54:40.990
+data in a textural format, into a parky format, into a CSV
+
+00:54:40.990 --> 00:54:43.890
+format, into a JSON format, into a baby data set format,
+
+00:54:44.070 --> 00:54:47.410
+everything you will be able to filter out. Plus, if you are
+
+00:54:47.410 --> 00:54:50.390
+looking for a big data, right means huge amount of data,
+
+00:54:50.610 --> 00:54:53.970
+maybe a 1 billion record or 1 trillion record kind of a
+
+00:54:53.970 --> 00:54:57.970
+data, you have that filter. So even if I'm looking for a 1
+
+00:54:57.970 --> 00:55:01.950
+billion record. record, just imagine how big that record is
+
+00:55:01.950 --> 00:55:05.170
+going to be right, so even if I am looking for a 1 billion
+
+00:55:05.170 --> 00:55:12.980
+record okay size, so I will be able to get it, so here I
+
+00:55:16.020 --> 00:55:19.920
+can click on any of this data and here is a data set, some
+
+00:55:19.920 --> 00:55:22.200
+of the data set is going to be the structured one, some of
+
+00:55:22.200 --> 00:55:24.880
+the data set is going to be the unstructured one, I can try
+
+00:55:24.880 --> 00:55:28.360
+to download and I can try to make use of this data set, so
+
+00:55:28.360 --> 00:55:33.160
+download wise see the size 4.2 GB right, so 4.2 GB number of
+
+00:55:33.160 --> 00:55:39.460
+records, so here there are 11 lakh means 1 million 14000, 1
+
+00:55:39.460 --> 00:55:42.400
+million right yeah it's a 1 million, 1 million kind of a
+
+00:55:42.400 --> 00:55:45.880
+records that we have, so I can try to download this data
+
+00:55:45.880 --> 00:55:48.720
+set, I can try to make use of it, that's completely fine
+
+00:55:48.720 --> 00:55:52.540
+right, that's completely fine, so data set wise there are
+
+00:55:52.540 --> 00:55:55.980
+abundance of data set available into a market, the kind of a
+
+00:55:55.980 --> 00:55:58.740
+data set, the industry wise right, let's suppose if I am
+
+00:55:58.740 --> 00:56:01.420
+looking for a industry wise data set. Data set, just name
+
+00:56:01.420 --> 00:56:05.120
+any industry, any means literally any industry on this
+
+00:56:05.120 --> 00:56:08.760
+planet, you will be able to acquire a data set, it's
+
+00:56:08.760 --> 00:56:12.720
+available, even in free mode, if I have to go into paid
+
+00:56:12.720 --> 00:56:16.540
+mode, there is a platform like a rapid API, so where you
+
+00:56:16.540 --> 00:56:20.060
+will pay, they give you like some free limit, free tokens,
+
+00:56:20.200 --> 00:56:24.620
+but yeah, so even you can try to like make a payment and
+
+00:56:24.620 --> 00:56:28.440
+then you will be able to acquire authentic data, real time
+
+00:56:28.440 --> 00:56:31.400
+data, all those things is available in this entire world,
+
+00:56:31.540 --> 00:56:35.380
+because if you are talking about generative AI or not just
+
+00:56:35.380 --> 00:56:38.460
+generative AI I would say, any domain of AI, whether it's a
+
+00:56:38.460 --> 00:56:41.280
+machine learning or deep learning or computer vision or NLP
+
+00:56:41.280 --> 00:56:44.860
+or generative, without data what you will do, right, let's
+
+00:56:44.860 --> 00:56:46.560
+suppose if you are able to learn the model, but how you will
+
+00:56:46.560 --> 00:56:49.100
+build it, unless and until you are not having a huge volume
+
+00:56:49.100 --> 00:56:53.060
+of the data, billions and trillions of the record, so this
+
+00:56:53.060 --> 00:56:56.560
+is one of the best place I would say to get a data, so as
+
+00:56:56.560 --> 00:56:58.860
+and when and every kind of a data with every domain and that
+
+00:56:58.860 --> 00:57:02.860
+too a huge one. And for building a real time system, that's
+
+00:57:02.860 --> 00:57:07.420
+the beauty of it, so you will be able to get a data set from
+
+00:57:07.420 --> 00:57:13.360
+here, now another place is obviously Kaggle, so from Kaggle
+
+00:57:13.360 --> 00:57:17.100
+you will be able to acquire a data set, again every kind of
+
+00:57:17.100 --> 00:57:19.120
+a data set you will be able to acquire, so there is a data
+
+00:57:19.120 --> 00:57:22.680
+set tab inside a Kaggle, so let me ping you this Kaggle link
+
+00:57:22.680 --> 00:57:27.140
+as well, here, so even here, so you will be able to just
+
+00:57:27.140 --> 00:57:30.620
+filter, search, type, maybe I can try to search select NLP
+
+00:57:30.620 --> 00:57:35.600
+and yeah, so it is going to give you again a tons of data
+
+00:57:35.600 --> 00:57:37.540
+set, whatever kind of a data set that you are looking for
+
+00:57:37.540 --> 00:57:40.940
+and you can try to apply the filters based on maybe a size,
+
+00:57:41.140 --> 00:57:44.640
+type, all these filters they have given to you for LLM fine
+
+00:57:44.640 --> 00:57:49.220
+tuning, right, for like a model training, for RIG,
+
+00:57:49.340 --> 00:57:51.740
+everything you will be able to see the data, you will be
+
+00:57:51.740 --> 00:57:55.120
+able to get the data, as simple as that. Now the another
+
+00:57:55.120 --> 00:57:58.680
+platform from where you can acquire a data set is a UCI
+
+00:57:58.680 --> 00:58:02.860
+repository, so UCI repository is again a huge like a
+
+00:58:02.860 --> 00:58:06.320
+repository, so where you can get a data, so Huggingface,
+
+00:58:06.620 --> 00:58:10.620
+Kaggle and UCI repository, now even over here you can try to
+
+00:58:10.620 --> 00:58:14.380
+filter out a data for machine learning, deep learning,
+
+00:58:14.540 --> 00:58:17.440
+computer vision, generative AI, model building, retraining
+
+00:58:17.440 --> 00:58:20.820
+or training, whatever, whatever, right, whatever, so you
+
+00:58:20.820 --> 00:58:23.900
+will be able to get a huge volume of a data even over here,
+
+00:58:24.000 --> 00:58:28.240
+so starting from small till huge, so UCI, Huggingface and a
+
+00:58:28.240 --> 00:58:32.080
+Kaggle, Kaggle is going to my favorite and again yeah, so
+
+00:58:32.080 --> 00:58:36.840
+the fourth one is a Google data set, so Google data set, so
+
+00:58:36.840 --> 00:58:42.360
+they give you a complete search console just like a Google
+
+00:58:42.360 --> 00:58:44.980
+just for the data set, so there is search console just for
+
+00:58:44.980 --> 00:58:47.820
+the data set as you can see, right, so Google has given you
+
+00:58:47.820 --> 00:58:52.340
+this console just for doing a data set search, so even you
+
+00:58:52.340 --> 00:58:57.100
+can try to use this Google console for getting a data set.
+
+00:58:57.440 --> 00:58:57.920
+So
+
+00:59:03.840 --> 00:59:06.320
+Kaggle I have already pinged. Huggingface I have already
+
+00:59:06.320 --> 00:59:11.900
+pinged, UCI let me ping you inside the chat, so that it will
+
+00:59:11.900 --> 00:59:15.940
+be available even inside the resources, Akshit is saying,
+
+00:59:16.000 --> 00:59:18.240
+sir, yesterday I have visited the certificate, yeah, you
+
+00:59:18.240 --> 00:59:20.200
+will be able to generate the certificate, I think while
+
+00:59:20.200 --> 00:59:23.200
+giving induction yesterday itself, so I have clearly
+
+00:59:23.200 --> 00:59:29.180
+specified that we have given a criteria of 50% like a quiz
+
+00:59:29.180 --> 00:59:32.600
+completion. Now so let's suppose I am taking a live classes,
+
+00:59:32.640 --> 00:59:35.580
+so obviously I am not uploading a quiz, in that case you can
+
+00:59:35.580 --> 00:59:39.200
+download a certificate on your own, I am like anytime you
+
+00:59:39.200 --> 00:59:40.840
+can download certificate even now you can download the
+
+00:59:40.840 --> 00:59:43.720
+certificate and we are aware about it and purposely we have
+
+00:59:43.720 --> 00:59:46.560
+given that, otherwise we would have like a put up a
+
+00:59:46.560 --> 00:59:50.520
+condition for this completion or that completion, so
+
+00:59:51.990 --> 00:59:55.470
+that's the answer Akshit, we are already aware about it and
+
+00:59:55.470 --> 00:59:56.510
+I have already discussed yesterday.
+
+01:00:08.790 --> 01:00:11.270
+So certificate whenever you are going to generate it is
+
+01:00:11.270 --> 01:00:14.230
+going to change, so it will always be a latest one, so the
+
+01:00:14.230 --> 01:00:16.690
+date, the day you are going to generate, so it is like going
+
+01:00:16.690 --> 01:00:21.560
+to give a certificate for that day. I think hope this is
+
+01:00:21.560 --> 01:00:23.560
+your complete question, right Akshit, yeah,
+
+01:00:26.830 --> 01:00:31.230
+okay, so data set wise I think we are done, installation
+
+01:00:31.230 --> 01:00:35.350
+wise we are done and NLTK library installation wise we are
+
+01:00:35.350 --> 01:00:38.350
+done, so three things we are able to complete today so far,
+
+01:00:38.510 --> 01:00:42.570
+so one is a setup part, we have a multiple places where we
+
+01:00:42.570 --> 01:00:46.930
+can go and we can execute the code. Obviously we need a NLTK
+
+01:00:46.930 --> 01:00:51.690
+library installation to see data pre-processing and then if
+
+01:00:51.690 --> 01:00:55.330
+I have to acquire a data I can try to get a data from NLTK
+
+01:00:55.330 --> 01:00:58.410
+default library, so these are, there are like a lot of data
+
+01:00:58.410 --> 01:01:01.530
+set which is available inside NLTK, apart from this there is
+
+01:01:01.530 --> 01:01:03.910
+a UCI, there is a Hugging Face, there is a Google data set,
+
+01:01:04.030 --> 01:01:07.870
+there is a Kaggle which is like completely freely available
+
+01:01:07.870 --> 01:01:12.310
+to all of us, so I will be able to acquire data. Apart from
+
+01:01:12.310 --> 01:01:14.950
+that there are lot of paid platform, paid platform wise
+
+01:01:14.950 --> 01:01:19.030
+there are hundreds of paid platform for different use cases.
+
+01:01:19.830 --> 01:01:23.430
+One of my favorite is rapid. So whenever I don't get
+
+01:01:23.430 --> 01:01:26.790
+anything in a paid mode, so I just look into the rapid one,
+
+01:01:26.910 --> 01:01:29.990
+I go and I just try to pay for the APIs, I get the data.
+
+01:01:40.780 --> 01:01:45.180
+Fine guys, shall we move ahead, are we clear? I think we are
+
+01:01:45.180 --> 01:01:49.440
+not feeling bored by the way, yes everyone, will
+
+01:02:04.840 --> 01:02:08.260
+this links available after the class, after the class this
+
+01:02:08.260 --> 01:02:11.600
+link will not be available, so after the class in one hour
+
+01:02:11.600 --> 01:02:14.460
+of time, so let's suppose if I am completing this class now,
+
+01:02:14.560 --> 01:02:17.720
+so in next one hour recorded will be available. So same
+
+01:02:17.720 --> 01:02:19.740
+thing you can see for yesterday's class, yesterday I have
+
+01:02:19.740 --> 01:02:23.460
+taken the class right and now if you are going to click on
+
+01:02:23.460 --> 01:02:25.860
+my yesterday's class, you will be able to see a complete
+
+01:02:25.860 --> 01:02:29.720
+different interface where you can watch the recordings. So
+
+01:02:29.720 --> 01:02:32.420
+recordings will be available anyhow, so that today, tomorrow
+
+01:02:32.420 --> 01:02:35.300
+or even after a month if you are going to come on our
+
+01:02:35.300 --> 01:02:39.180
+platform, you will be able to go through the classes. But
+
+01:02:39.180 --> 01:02:41.940
+yeah, this active like a chat link will not be available,
+
+01:02:42.120 --> 01:02:44.560
+this will be available only during our live classes, that's
+
+01:02:44.560 --> 01:02:48.680
+it. But yeah, resources will be available. Resources and
+
+01:02:48.680 --> 01:02:50.920
+video. Everything will be available except this chat link.
+
+01:02:51.900 --> 01:02:53.880
+Okay, Deepak is saying class is very interesting, okay thank
+
+01:02:53.880 --> 01:02:56.980
+you Deepak. Can you share the link of the paid platform for
+
+01:02:56.980 --> 01:03:00.280
+the data? Go with the rapid API, believe me, you will get
+
+01:03:00.280 --> 01:03:02.840
+everything, so they are building rapid API since a very very
+
+01:03:02.840 --> 01:03:08.180
+long time, so even if I am looking for like any things which
+
+01:03:08.180 --> 01:03:11.240
+is very much specific towards a domain, go with the rapid
+
+01:03:11.240 --> 01:03:11.480
+API.
+
+01:03:19.660 --> 01:03:22.040
+They will give you some free credit, but yeah, after that
+
+01:03:22.040 --> 01:03:22.640
+they are going to charge.
+
+01:03:25.910 --> 01:03:28.270
+How long classes will be available? Classes will be
+
+01:03:28.270 --> 01:03:32.210
+available on our platform for an infinite time, but that
+
+01:03:32.210 --> 01:03:34.570
+depends upon your subscription. So if your subscription is
+
+01:03:34.570 --> 01:03:36.870
+for one year, so obviously after one year you have to go for
+
+01:03:36.870 --> 01:03:39.250
+the renewal, otherwise you will not be able to access it.
+
+01:03:39.370 --> 01:03:41.870
+But yeah, our classes that we are taking will be available
+
+01:03:41.870 --> 01:03:45.290
+even after a year, after two year, so as simple as that.
+
+01:03:50.400 --> 01:03:54.280
+Sir make two hour time frame, it's only one hour. I am not
+
+01:03:54.280 --> 01:03:58.060
+closing a class by the way, I am just asking people that are
+
+01:03:58.060 --> 01:04:02.940
+you able to do each and everything so far or not. Yeah. Your
+
+01:04:02.940 --> 01:04:06.180
+class timing is technically two hour and some time you will
+
+01:04:06.180 --> 01:04:10.240
+see when I am going to discuss like a project, it will even
+
+01:04:10.240 --> 01:04:14.060
+go for three hour or four hour. So because a project
+
+01:04:14.060 --> 01:04:17.360
+obviously like takes time, a lot of time it takes, end to
+
+01:04:17.360 --> 01:04:22.590
+end project. Where is the link of the class? Bhushan you
+
+01:04:22.590 --> 01:04:25.530
+have already inside the class, there is no link we used to
+
+01:04:25.530 --> 01:04:28.830
+give. There is no zoom, there is no external link. So this
+
+01:04:28.830 --> 01:04:32.710
+is a class happens inside a dashboard. You can access a
+
+01:04:32.710 --> 01:04:36.690
+classes even from your mobile device. So we have a Android
+
+01:04:36.690 --> 01:04:39.610
+app which is available so you can download, you can join
+
+01:04:39.610 --> 01:04:43.130
+from a mobile, you can join from a web, any anywhere like
+
+01:04:43.130 --> 01:04:47.610
+wherever you are comfortable. How do we start the kernel? So
+
+01:04:47.610 --> 01:04:49.590
+simple go over their side, I think you have asked this
+
+01:04:49.590 --> 01:04:51.430
+question so many times, you can just click on the current
+
+01:04:51.430 --> 01:04:53.510
+kernel and then you can try to select the new one.
+
+01:04:56.480 --> 01:04:59.780
+Or kernel wise, so restart option, restart button is already
+
+01:04:59.780 --> 01:05:05.960
+given to you here, bold and clear. Like, okay, so now we are
+
+01:05:05.960 --> 01:05:09.400
+able to see how we can acquire data. We are able to do a
+
+01:05:09.400 --> 01:05:12.740
+basic setup over here. Now let's start doing a small, small
+
+01:05:12.740 --> 01:05:16.020
+operations, just a small operation. So here what I can do
+
+01:05:16.020 --> 01:05:21.560
+is, so I can try to save that from NLTK, try to import
+
+01:05:21.560 --> 01:05:25.420
+something called as tokenize. Why I'm going to use it? I'll
+
+01:05:25.420 --> 01:05:29.820
+show you. So import word tokenizer and then there is
+
+01:05:29.820 --> 01:05:34.520
+something called as sentence tokenizer.
+
+01:05:35.680 --> 01:05:37.880
+So there is something called as word tokenizer. And there is
+
+01:05:37.880 --> 01:05:38.440
+something called as sentence tokenizer. So there is
+
+01:05:38.440 --> 01:05:40.160
+something called as sentence tokenizer. So this is the
+
+01:05:40.160 --> 01:05:45.180
+import you have to do from NLTK. So just try to do the
+
+01:05:45.180 --> 01:05:48.480
+import. Now how we are going to use it by the way. So for
+
+01:05:48.480 --> 01:05:52.000
+example, let's suppose there is a text txt variable I'm
+
+01:05:52.000 --> 01:05:57.400
+going to create. I'm saying that my name is Sudhanshu Kumar.
+
+01:06:00.560 --> 01:06:09.540
+I used to take class for data science. Big data and data
+
+01:06:09.540 --> 01:06:11.020
+analytics,
+
+01:06:14.520 --> 01:06:17.780
+fine. Now this is one of the sentence which I have created.
+
+01:06:17.940 --> 01:06:20.300
+This is one of the sentence I have created, a simple one,
+
+01:06:20.400 --> 01:06:24.500
+right? Plain English sentence I have created now. So and
+
+01:06:24.500 --> 01:06:27.620
+again, so we have, let's suppose like a discrimination marks
+
+01:06:27.620 --> 01:06:31.960
+over here, right? We have somewhere this comma in this
+
+01:06:31.960 --> 01:06:34.860
+particular place. We have a space, a lot of spaces over
+
+01:06:34.860 --> 01:06:38.500
+here. So this is basically a data that I have created, or
+
+01:06:38.500 --> 01:06:40.420
+this is a very simple, a small sentence. That I have
+
+01:06:40.420 --> 01:06:45.260
+created. Now here, if I'm going to use a word tokenizer and
+
+01:06:45.260 --> 01:06:49.320
+if I'm going to pass my text over here, txt, if I'm going to
+
+01:06:49.320 --> 01:06:50.520
+pass my text over here,
+
+01:06:53.340 --> 01:06:58.980
+word tokenizer and text. What happened? What is the issue?
+
+01:07:02.500 --> 01:07:06.440
+Parameter language, the model name is Phuket Corpus. Oh,
+
+01:07:06.500 --> 01:07:11.240
+sorry. So I'm directly calling this one. But I have to
+
+01:07:11.240 --> 01:07:17.420
+install a Phuket Corpus. Phuket, first of all, this is what
+
+01:07:17.420 --> 01:07:21.380
+it is trying to say. So directly it will not be able to. So
+
+01:07:21.380 --> 01:07:24.960
+text language, preserve line false. This is what word
+
+01:07:24.960 --> 01:07:26.680
+tokenizer output
+
+01:07:36.160 --> 01:07:45.980
+is truncated, param language is a Phuket Corpus. Okay. So it
+
+01:07:45.980 --> 01:07:48.580
+is giving me an issue with
+
+01:07:54.690 --> 01:07:56.970
+respect to a Phuket Corpus.
+
+01:08:00.290 --> 01:08:04.690
+Oh, okay. So what I will do is. I'll try to download NLTK.
+
+01:08:04.850 --> 01:08:07.850
+So if it is giving me an issue, this was the unexpected
+
+01:08:07.850 --> 01:08:12.830
+issue, by the way, download, and then I can try to write P-U
+
+01:08:12.830 --> 01:08:16.030
+-K-E-T Phuket. So this is the error, I believe, which I'm
+
+01:08:16.030 --> 01:08:17.530
+receiving error
+
+01:08:42.100 --> 01:08:47.140
+loading a Phuket package. Not able to, oh,
+
+01:08:53.860 --> 01:09:00.060
+it should not happen. P-U-K-E-T spelling, there is no
+
+01:09:00.060 --> 01:09:00.620
+spelling mistake.
+
+01:09:07.480 --> 01:09:10.320
+I think it's giving me an issue because I have closed this
+
+01:09:10.320 --> 01:09:12.380
+download already. All options. So when I was downloading,
+
+01:09:12.460 --> 01:09:18.010
+all right. So I would have downloaded, I haven't, I haven't
+
+01:09:18.010 --> 01:09:24.050
+stopped this download all because it is having a Phuket
+
+01:09:24.050 --> 01:09:28.970
+package. So let me download all guys. Let me download all of
+
+01:09:28.970 --> 01:09:33.210
+these things. Yeah. And parallelly you can download all
+
+01:09:33.210 --> 01:09:35.450
+those things. Then I'm going to show you that how word
+
+01:09:35.450 --> 01:09:40.450
+tokenizer is going to work. So download all guys, everyone.
+
+01:09:56.620 --> 01:10:02.300
+Phuket. P-U. Spell. Spelling mistake. I don't think so.
+
+01:10:02.400 --> 01:10:06.480
+Maybe it's a spelling mistake, which I have made. Maybe I
+
+01:10:06.480 --> 01:10:14.740
+can go to google and search for NLTK Phuket. Yeah. It's P-U
+
+01:10:14.740 --> 01:10:15.560
+-N-K-E-T.
+
+01:10:30.100 --> 01:10:33.080
+The NLTK we are downloading is only specific to the IPv5.
+
+01:10:33.220 --> 01:10:36.080
+Yeah, correct. Only specific to this session. So if you're
+
+01:10:36.080 --> 01:10:39.940
+going to open up a new JupyterNodo file, all will be gone.
+
+01:10:40.080 --> 01:10:43.220
+So to do that. We can try to create a specific. Specific
+
+01:10:43.220 --> 01:10:45.360
+environment in that environment, we can try to launch, but
+
+01:10:45.360 --> 01:10:48.200
+yeah. So whatever installation that you are doing now, it's
+
+01:10:48.200 --> 01:10:52.340
+just for today, tomorrow, if you're going to open it up
+
+01:10:52.340 --> 01:10:57.050
+again, you will have to do the installation with a different
+
+01:10:57.050 --> 01:10:57.570
+Jupyter notebook.
+
+01:11:15.300 --> 01:11:18.740
+Fine. Now it's working as you can see. So here, basically
+
+01:11:18.740 --> 01:11:21.740
+Phuket is nothing, but it's a kind of a libraries, which is
+
+01:11:21.740 --> 01:11:24.960
+helping me out to tokenize this entire word, because there
+
+01:11:24.960 --> 01:11:28.600
+are these words available as a token inside that library. So
+
+01:11:28.600 --> 01:11:33.140
+here you can see that. That. If I have called word tokenize,
+
+01:11:33.260 --> 01:11:36.100
+and I have passed this entire sentence, this is my sentence,
+
+01:11:36.240 --> 01:11:42.180
+right? So it is trying to break down my entire data into one
+
+01:11:42.180 --> 01:11:46.340
+single word automatically. So my name is Siddhanshu Kumar,
+
+01:11:46.500 --> 01:11:50.920
+then comma, then I, then use, then two, then K for this. So
+
+01:11:50.920 --> 01:11:54.400
+everything, everything, it is able to tokenize everything.
+
+01:11:54.580 --> 01:11:58.140
+It is able to convert it into one single, single token. Now,
+
+01:11:58.180 --> 01:12:02.180
+when we talk about a token. So token could be a word token
+
+01:12:02.180 --> 01:12:06.000
+could be a single character token could be a space token
+
+01:12:06.000 --> 01:12:09.800
+could be any kind of a special case character token could be
+
+01:12:09.800 --> 01:12:13.920
+anything. It depends upon me. So what is the meaning of a
+
+01:12:13.920 --> 01:12:17.420
+token for me or like whatever project which I'm trying to
+
+01:12:17.420 --> 01:12:20.860
+build? So what is the meaning of a token for that? It's just
+
+01:12:20.860 --> 01:12:23.900
+about my understanding. So here, as per my understanding, so
+
+01:12:23.900 --> 01:12:27.540
+yeah, we are able to tokenize it now. So what? Oh, we are
+
+01:12:27.540 --> 01:12:28.840
+able to tokenize. We are able to tokenize this entire
+
+01:12:28.840 --> 01:12:32.520
+sentence into a small, small word. Now there is something
+
+01:12:32.520 --> 01:12:35.460
+called as sentence tokenizer that we have done as an import.
+
+01:12:35.720 --> 01:12:38.960
+So let's try to call a sentence tokenizer as well. So after
+
+01:12:38.960 --> 01:12:43.000
+this word tokenizer, I can try to call a sentence tokenizer
+
+01:12:43.000 --> 01:12:47.920
+and then I can try to pass a text. And as it suggests, it is
+
+01:12:47.920 --> 01:12:51.240
+going to break down entire things into a different,
+
+01:12:51.320 --> 01:12:54.900
+different sentence as simple as that. So it is trying to
+
+01:12:54.900 --> 01:12:59.060
+take this entire data as a sentence. Okay. So this again,
+
+01:12:59.120 --> 01:13:01.620
+it's elimination marks as one sentence. And this again,
+
+01:13:01.680 --> 01:13:06.640
+explanation marks as a one single, single sentence. Now this
+
+01:13:06.640 --> 01:13:11.440
+is something which system is trying to do by default. Let's
+
+01:13:11.440 --> 01:13:15.400
+suppose if I wanted to treat this as one sentence means
+
+01:13:15.400 --> 01:13:19.900
+wherever there is a comma split it. Now this as one sentence
+
+01:13:19.900 --> 01:13:23.580
+means again, there is a comma split it. And then this as a
+
+01:13:23.580 --> 01:13:26.340
+sentence, so wherever there is a discrimination marks or a
+
+01:13:26.340 --> 01:13:32.540
+comma or full-stop, or maybe comma. I can do that as well.
+
+01:13:32.680 --> 01:13:36.280
+I'm not saying that this is the only way of like creating a
+
+01:13:36.280 --> 01:13:39.420
+tokens of the sentences. No, not at all. Like I said,
+
+01:13:39.540 --> 01:13:42.640
+tokens, whether it's a sentence token, whether it's a word
+
+01:13:42.640 --> 01:13:45.980
+token that we are trying to create, it all depends upon me
+
+01:13:45.980 --> 01:13:49.840
+and my use cases, the way I would like to represent my data.
+
+01:13:49.960 --> 01:13:52.960
+I will be able to represent the data. There are some inbuilt
+
+01:13:52.960 --> 01:13:55.580
+functional libraries, which is going to do its work, its
+
+01:13:55.580 --> 01:14:00.920
+job. But yeah. Now, so what we can do is, so maybe we can,
+
+01:14:00.920 --> 01:14:07.460
+we can try to do some more things on top of it. So there is
+
+01:14:07.460 --> 01:14:11.860
+something called as from NLTK again, in terms of text
+
+01:14:11.860 --> 01:14:16.940
+cleaning and preprocessing. So NLTK dot corpus, C-O-R,
+
+01:14:18.720 --> 01:14:27.000
+corpus, import, stop words. So people have already created a
+
+01:14:27.000 --> 01:14:30.820
+library. A dictionary of a stop words. And sometime we used
+
+01:14:30.820 --> 01:14:35.180
+to include those stop words to make my model understands the
+
+01:14:35.180 --> 01:14:38.060
+grammar or relationship between it. Sometime we try to
+
+01:14:38.060 --> 01:14:42.860
+remove the stop words. So there is a library or there is a
+
+01:14:42.860 --> 01:14:46.520
+complete dictionary which has been created called as stop
+
+01:14:46.520 --> 01:14:52.540
+words. And I can try to call NLTK, NLTK dot download, and I
+
+01:14:52.540 --> 01:14:55.720
+can try to download all the stop words, which I will be
+
+01:14:55.720 --> 01:14:58.460
+using. Going forward. So it's already downloaded. I have
+
+01:14:58.460 --> 01:15:01.000
+already done the download all. So it has already downloaded.
+
+01:15:01.340 --> 01:15:05.260
+Now what are the stop words which is available by default?
+
+01:15:05.460 --> 01:15:08.640
+So NLTK library, which and all words NLTK libraries are
+
+01:15:08.640 --> 01:15:12.520
+considering as a stop words. So if I would like to like get
+
+01:15:12.520 --> 01:15:18.840
+all the stop words. So what I can do is a stop words dot, I
+
+01:15:18.840 --> 01:15:25.040
+can say w-r-d-s words, and then in which language? English.
+
+01:15:25.180 --> 01:15:34.340
+Let's suppose. E-N-G-L-I-S-H. E-N-G-L-I-S-H. Yeah. So these
+
+01:15:34.340 --> 01:15:38.920
+are the word guys, which is available inside this particular
+
+01:15:38.920 --> 01:15:43.620
+package, this particular download and which system or NLTK
+
+01:15:43.620 --> 01:15:47.840
+library considers as a stop word. A about, above, after,
+
+01:15:47.920 --> 01:15:52.980
+again, against, and lot of data you will be able to find out
+
+01:15:52.980 --> 01:15:58.680
+starting from A till X, Y, Z. Simple. Now, how many words
+
+01:15:58.680 --> 01:16:02.080
+are there? So maybe I can try to check a length of it, that
+
+01:16:02.080 --> 01:16:04.820
+how many words are there as a stop words, which is by
+
+01:16:04.820 --> 01:16:10.280
+default, right? So in total 198 stop words are there. If I
+
+01:16:10.280 --> 01:16:14.380
+would like to like maybe extract 198 is not a big number. So
+
+01:16:14.380 --> 01:16:18.200
+all the unique stop words, I will be able to extract all the
+
+01:16:18.200 --> 01:16:21.080
+unique stop words out of this one. So if there is no
+
+01:16:21.080 --> 01:16:24.440
+reputation, so set of it, I will be able to print. Okay. And
+
+01:16:24.440 --> 01:16:27.140
+I will be able to get it. Now let's suppose these are the
+
+01:16:27.140 --> 01:16:30.920
+stop words, right? These are the stop words. Now I have my
+
+01:16:30.920 --> 01:16:37.020
+text over here, text over here. I would like to remove all
+
+01:16:37.020 --> 01:16:40.860
+the stop words from my sentence. I wanted, I wanted to clean
+
+01:16:40.860 --> 01:16:44.040
+my sentence and I would like to stop or remove all the stop
+
+01:16:44.040 --> 01:16:47.580
+words. The stop words, which is a part of NLTK stop words
+
+01:16:47.580 --> 01:16:51.080
+library, right? I would like to remove all the stop words
+
+01:16:51.080 --> 01:16:54.320
+from here. So how I will be able to remove it? Again, by
+
+01:16:54.320 --> 01:16:58.260
+writing a very simple Python code, I will be able to remove
+
+01:16:58.260 --> 01:17:01.680
+it. So first of all, I will have to normalize this entire
+
+01:17:01.680 --> 01:17:05.040
+data. Normalization means maybe I can try to convert all the
+
+01:17:05.040 --> 01:17:08.040
+uppercase into a lowercase. That's called as normalization
+
+01:17:08.040 --> 01:17:11.060
+because Python is a case-sensitive language. So obviously
+
+01:17:11.060 --> 01:17:14.780
+upper word and the lower word, uh, uppercase, uppercase and
+
+01:17:14.780 --> 01:17:17.800
+lowercase will be considered as a different one. So here,
+
+01:17:17.840 --> 01:17:21.400
+what I can do is maybe I can try to call text dot lower.
+
+01:17:23.080 --> 01:17:25.660
+Okay. And I can convert everything into a lowercase.
+
+01:17:25.720 --> 01:17:28.320
+Although all the data set was available in lowercase, but
+
+01:17:28.320 --> 01:17:32.900
+still just for like a safety. So we can try to convert all
+
+01:17:32.900 --> 01:17:35.960
+the data into a lowercase. Now what is, what is my target?
+
+01:17:36.120 --> 01:17:42.660
+My target is to remove all the stop words means whatever is
+
+01:17:42.660 --> 01:17:47.020
+available inside the NLTK library as a stop words, remove it
+
+01:17:47.020 --> 01:17:49.880
+from my sentence, remove it from my sentence. If is, is a
+
+01:17:49.880 --> 01:17:52.660
+part of a stop words, remove it. My is a part of stop words.
+
+01:17:52.660 --> 01:17:57.280
+Remove it. So how I will be able to remove it? Like I said,
+
+01:17:57.380 --> 01:18:05.340
+just by writing a very simple plain code, maybe I can, I can
+
+01:18:05.340 --> 01:18:09.660
+try to write a for loop over here and I will be able to
+
+01:18:09.660 --> 01:18:12.260
+remove it that, okay. So every time it will try to extract
+
+01:18:12.260 --> 01:18:14.860
+one data, it will try to check inside the stop words that,
+
+01:18:14.900 --> 01:18:17.880
+okay, if it is there, do it, or if it is not there, don't do
+
+01:18:17.880 --> 01:18:22.920
+it. Fine. So here, maybe I can try to store these things
+
+01:18:22.920 --> 01:18:28.020
+into a. Okay. Variable called a stop underscore WRDS. We
+
+01:18:28.020 --> 01:18:31.380
+have to eliminate these stop words from our sentences.
+
+01:18:34.090 --> 01:18:43.990
+So here for I in, I can write text dot lower. So after
+
+01:18:43.990 --> 01:18:47.830
+converting this entire data set in text, so for I in text
+
+01:18:47.830 --> 01:18:53.130
+lower, what we have to do is so try to give me basically I
+
+01:18:53.130 --> 01:18:58.090
+try to give me basically I. Condition is that if I
+
+01:19:02.500 --> 01:19:11.140
+is available in a lower case and not in stop words, the
+
+01:19:11.140 --> 01:19:17.380
+variable that we have created over here, stop words. This is
+
+01:19:17.380 --> 01:19:20.080
+a simple list comprehension, which I'm writing. So it is
+
+01:19:20.080 --> 01:19:22.640
+going to give me the list of all the words. It
+
+01:19:28.660 --> 01:19:30.480
+became marked down somehow.
+
+01:19:40.520 --> 01:19:48.820
+Okay. So here. For. For I in text dot lower. So one by one,
+
+01:19:48.880 --> 01:19:51.800
+one by one, one by one character by character. So it is
+
+01:19:51.800 --> 01:19:55.020
+trying to go through each and everything. And then it is
+
+01:19:55.020 --> 01:20:00.940
+trying to extract the data, which looks wrong to me a little
+
+01:20:00.940 --> 01:20:05.980
+bit because I have to extract a word out of it, right? I
+
+01:20:05.980 --> 01:20:09.520
+have to extract a word out of it. So here, what we can do
+
+01:20:09.520 --> 01:20:13.300
+is, so instead of passing a text, so I can try to pass this
+
+01:20:13.300 --> 01:20:17.480
+entire. Tokenized text, right? So I had basically a
+
+01:20:17.480 --> 01:20:20.680
+tokenized text after a word tokenization. So let me copy
+
+01:20:20.680 --> 01:20:24.680
+this part because for loop is going to break down my entire
+
+01:20:24.680 --> 01:20:27.660
+things into a one, one character. And that's the reason. So
+
+01:20:27.660 --> 01:20:31.280
+it is able to filter it out. What we can do is so we can try
+
+01:20:31.280 --> 01:20:35.780
+to tokenize. So here I can try to call word
+
+01:20:40.100 --> 01:20:45.880
+tokenize text. So text dot lower word
+
+01:20:48.180 --> 01:20:52.620
+tokenize. So I'm passing as a list. And then I will be able
+
+01:20:52.620 --> 01:20:57.080
+to get the data simple now. So here you will be able to see
+
+01:20:57.080 --> 01:21:03.450
+that, that inside a text, right? Inside a text, we had, my
+
+01:21:03.450 --> 01:21:07.710
+name is Dhan Shukumar. I used to now here names, Dhan
+
+01:21:07.710 --> 01:21:13.930
+Shukumar, I is gone. My is gone. Take class in, or all those
+
+01:21:13.930 --> 01:21:17.230
+things are gone. Data science, big data. So here I've just
+
+01:21:17.230 --> 01:21:20.930
+written a code, a piece of a code, which is trying to remove
+
+01:21:20.930 --> 01:21:24.590
+a string. Stop words from my data. So technically it's a
+
+01:21:24.590 --> 01:21:27.730
+Pythonic code that I have written. Now if you are not able
+
+01:21:27.730 --> 01:21:30.930
+to understand this line of a Python code, I'll write it down
+
+01:21:30.930 --> 01:21:33.810
+just by using, without using a list comprehension. So anyone
+
+01:21:33.810 --> 01:21:37.330
+who is not able to understand this piece of the code, just a
+
+01:21:37.330 --> 01:21:39.410
+list list comprehension. I have written over here a
+
+01:21:39.410 --> 01:21:39.670
+shortcut.
+
+01:21:47.720 --> 01:21:50.800
+Yeah. So anyone guys who is not able to understand, let me
+
+01:21:50.800 --> 01:21:52.920
+write it down enough with the help of follow up if you want.
+
+01:22:05.700 --> 01:22:10.800
+Yes. Or it's fine. So let me move ahead. Got it? Not doing
+
+01:22:10.800 --> 01:22:14.160
+anything. So just, I'm taking a word tokenize this one. So
+
+01:22:14.160 --> 01:22:16.640
+this is basically a list, right? So I'm just trying to go
+
+01:22:16.640 --> 01:22:19.320
+through a list one by one by one by one. I'm just trying to
+
+01:22:19.320 --> 01:22:22.180
+check that. Okay. If it is a lower and not in a stop words,
+
+01:22:22.300 --> 01:22:28.280
+then give me an I. That's it. Yeah. That's it. So again,
+
+01:22:28.360 --> 01:22:30.340
+this is the list comprehension. You can try to write a
+
+01:22:30.340 --> 01:22:32.400
+follow up as well if you want. That's completely fine. You
+
+01:22:32.400 --> 01:22:36.620
+can write if condition, why we are writing outside if we
+
+01:22:36.620 --> 01:22:38.820
+have already converted them into the lower case. Yeah. Don't
+
+01:22:38.820 --> 01:22:43.660
+do it. Remove it. It's fine. Remove it. So anyhow, we have,
+
+01:22:43.660 --> 01:22:45.900
+we are, we have already converted. So even if you're not
+
+01:22:45.900 --> 01:22:47.700
+going to write it down, that's completely fine. It's going
+
+01:22:47.700 --> 01:22:51.100
+to be the same answer. Nothing is going to change. Yeah.
+
+01:22:52.320 --> 01:22:54.780
+Don't have to even, if you have written inside, then you
+
+01:22:54.780 --> 01:22:56.980
+don't have to even go and check. So maybe you can just try
+
+01:22:56.980 --> 01:22:59.500
+to write like a not in stop words and it is going to work
+
+01:22:59.500 --> 01:23:03.540
+for you. Your wish. Yeah. So again, you can just do it. So
+
+01:23:03.540 --> 01:23:07.300
+here we are able to remove the stop words and it's nothing
+
+01:23:07.300 --> 01:23:11.020
+actually. So we are just trying to list down the stop words.
+
+01:23:11.040 --> 01:23:14.000
+Okay. Stop words, which is already available inside a NLTK
+
+01:23:14.000 --> 01:23:18.820
+library. Now for example, let's suppose there is nothing
+
+01:23:18.820 --> 01:23:22.000
+which is available as a stop words inside NLTK library. I
+
+01:23:22.000 --> 01:23:26.440
+can try to create my own list, right? So I can try to create
+
+01:23:26.440 --> 01:23:29.920
+my own list with any kind of a data, which I would like to
+
+01:23:29.920 --> 01:23:32.840
+consider as a stop words because stop words are nothing but
+
+01:23:32.840 --> 01:23:37.660
+a words which appears frequently and which appears
+
+01:23:37.660 --> 01:23:41.160
+frequently. But it is not going to contribute much. Okay.
+
+01:23:41.180 --> 01:23:46.320
+Much in terms of framing the complete sentence. This is
+
+01:23:46.320 --> 01:23:50.460
+called as stop words. Technically that is a meaning of a
+
+01:23:50.460 --> 01:23:53.660
+stop words, right? The word which is not contributing much.
+
+01:23:53.840 --> 01:23:58.000
+So maybe I can try to remove from the sentences inside a
+
+01:23:58.000 --> 01:24:02.100
+NLTK library. They have already given you a list, but again,
+
+01:24:02.240 --> 01:24:06.520
+it's not like I will be using the same list. Maybe I can try
+
+01:24:06.520 --> 01:24:09.340
+to prepare my own list and then I will be trying, I will try
+
+01:24:09.340 --> 01:24:15.400
+to, uh, remove the data out of it. Yep. Okay. Now there is
+
+01:24:15.400 --> 01:24:20.080
+something called as steaming basically. So let's suppose I
+
+01:24:20.080 --> 01:24:23.880
+have a text. So basically I have a text data over here and
+
+01:24:23.880 --> 01:24:28.220
+this is the complete sentence I have. Now there is something
+
+01:24:28.220 --> 01:24:31.040
+called as steaming. Now what is the steaming inside an NLP?
+
+01:24:31.320 --> 01:24:35.520
+So steaming is nothing but converting our data or converting
+
+01:24:35.520 --> 01:24:39.020
+a word into its root word. That is something called as
+
+01:24:39.020 --> 01:24:42.300
+steaming. How? How we will be able to do a steaming? So
+
+01:24:42.300 --> 01:24:45.700
+there are multiple libraries to do a steaming. So one of the
+
+01:24:45.700 --> 01:24:49.260
+popular one is a Potter stemmer inside an NLTK. So let's try
+
+01:24:49.260 --> 01:24:52.760
+to use it and let's try to convert a data into its base
+
+01:24:52.760 --> 01:24:56.860
+format. So here what I can do is I can try to import F R O M
+
+01:24:56.860 --> 01:25:02.980
+from N L T K dot S T E M stem import
+
+01:25:04.700 --> 01:25:12.130
+basically Potter stemmer. So P capital P O Potter stemmer.
+
+01:25:12.130 --> 01:25:15.190
+Now what this steaming or stemmering is going to do? So it
+
+01:25:15.190 --> 01:25:16.850
+is going to, like I said, so it is going to basically
+
+01:25:16.850 --> 01:25:21.270
+convert your data into its base version of it. Again, it's a
+
+01:25:21.270 --> 01:25:25.590
+hard coded one, whatever you are able to see, not whatever I
+
+01:25:25.590 --> 01:25:27.310
+would say, but yeah, majority of the things that you are
+
+01:25:27.310 --> 01:25:30.290
+able to see inside an NLTK library. So technically it's a
+
+01:25:30.290 --> 01:25:33.310
+hard coded one. So people have already created a dictionary
+
+01:25:33.310 --> 01:25:35.830
+kind of a structure where they have already given a data,
+
+01:25:35.930 --> 01:25:39.450
+they have given the word and based on that NLTK library is
+
+01:25:39.450 --> 01:25:42.150
+going to do some sort of a comparison. Okay. So I'm going to
+
+01:25:42.150 --> 01:25:45.390
+give you the answer. Now here there is a steaming, right? So
+
+01:25:45.390 --> 01:25:47.810
+what is the meaning of a steaming by the way, like I said,
+
+01:25:47.930 --> 01:25:50.510
+so meaning of a steaming is very simple, converting any kind
+
+01:25:50.510 --> 01:25:58.040
+of a word into its base version. So here NLTK stem import
+
+01:25:58.040 --> 01:26:01.620
+Potter stemmer. Maybe I can try to create an object of a
+
+01:26:01.620 --> 01:26:05.100
+Potter stemmer over here. I can try to write it down as a
+
+01:26:05.100 --> 01:26:11.500
+stem, right? Stem. And then what I can do is. So here I can
+
+01:26:11.500 --> 01:26:19.440
+try to call. Stem dot S T E M. So this is a method. Let's
+
+01:26:19.440 --> 01:26:22.620
+suppose I'm just to remove the confusion. So is stem
+
+01:26:22.620 --> 01:26:27.240
+stemmering, let's suppose this is the variable name. So a
+
+01:26:27.240 --> 01:26:30.920
+stemmering variable name dot method name called as stem. And
+
+01:26:30.920 --> 01:26:35.260
+then I can try to pass my data over here. What kind of a
+
+01:26:35.260 --> 01:26:39.160
+data I can try to pass. So I can try to pass maybe a list of
+
+01:26:39.160 --> 01:26:42.440
+the word list of the word I can try to pass. Okay. So I can
+
+01:26:42.440 --> 01:26:46.280
+try to pass this entire data after converting this data into
+
+01:26:46.280 --> 01:26:51.020
+a list of the word. So maybe I can use a word tokenizer. I
+
+01:26:51.020 --> 01:26:54.220
+can try to pass a data text. Now I know that, that this is
+
+01:26:54.220 --> 01:26:57.700
+going to give me the list list of the word token. I can try
+
+01:26:57.700 --> 01:27:03.080
+to pass this one inside the steaming. Now let's see the list
+
+01:27:03.080 --> 01:27:07.560
+object has no attribute lower. Where is the lower Potter
+
+01:27:19.270 --> 01:27:23.950
+stemmer parameters, the lowercase. If two lowercase is two
+
+01:27:23.950 --> 01:27:26.950
+lowercase. The word always lowercase text
+
+01:27:34.180 --> 01:27:38.580
+is basically text. Okay. So I'm just trying to do a stemming
+
+01:27:38.580 --> 01:27:42.640
+over here and I'm trying to pass this one.
+
+01:27:47.760 --> 01:27:51.340
+Okay. Let me write down this function in this way. So for I
+
+01:27:51.340 --> 01:28:01.620
+in basically a word tokenizer and then inside that I can try
+
+01:28:01.620 --> 01:28:05.040
+to pass a text. Now this is going to give me the list and
+
+01:28:05.040 --> 01:28:09.160
+then iteration. So this one. Okay. And then maybe I can try
+
+01:28:09.160 --> 01:28:14.460
+to print over here. So for every I that I'm able to get, so
+
+01:28:14.460 --> 01:28:22.600
+a stem ring dot a stem and then pass I yeah. So basically I
+
+01:28:22.600 --> 01:28:25.000
+have not done anything. So I've taken the list. This is the
+
+01:28:25.000 --> 01:28:27.620
+list of the data. So I'm just trying to write a for loop. So
+
+01:28:27.620 --> 01:28:30.600
+it will try to bring one by one, one by one, all the data
+
+01:28:30.600 --> 01:28:34.640
+from this text simple. And then I'm trying to call a stem
+
+01:28:34.640 --> 01:28:40.520
+ring dot stem. Okay. Now just do the comparison. So here my
+
+01:28:40.520 --> 01:28:45.140
+data set was, my name is Siddhanshu Kumar. My name is
+
+01:28:45.140 --> 01:28:49.580
+Siddhanshu Kumar, then comma, then I, then use to take. So
+
+01:28:49.580 --> 01:28:55.520
+use to take class for data S C I N C, S C I N C E. So as you
+
+01:28:55.520 --> 01:29:01.220
+can see, it has removed E automatically. Now big data and
+
+01:29:01.220 --> 01:29:07.440
+data, not analytics. So analyst kind of a thing. So it is
+
+01:29:07.440 --> 01:29:11.560
+trying to remove some of the data automatically. For
+
+01:29:11.560 --> 01:29:15.020
+example, if I'm going to take a very simple text, I'm going
+
+01:29:15.020 --> 01:29:24.460
+to override it. So I am teaching in my class classes, let's
+
+01:29:24.460 --> 01:29:28.140
+suppose instead of class, I'm going to take classes. So here
+
+01:29:28.140 --> 01:29:32.500
+you will be able to find out that it has done a stem ring
+
+01:29:32.500 --> 01:29:37.240
+over here. So I am teaching, right? I N G. It has removed. I
+
+01:29:37.240 --> 01:29:41.860
+am teach, not I N G. So basically teach is a base word for
+
+01:29:41.860 --> 01:29:45.160
+teaching. This is what a stemming is going to do. So
+
+01:29:45.160 --> 01:29:48.820
+stemming always try to convert your data set into its base
+
+01:29:48.820 --> 01:29:52.400
+version into its base word. Now I have written in my
+
+01:29:52.400 --> 01:29:57.140
+classes, it has converted this data into a class. So just
+
+01:29:57.140 --> 01:29:59.980
+our base word conversion. This is a transformation which I'm
+
+01:29:59.980 --> 01:30:04.700
+trying to do so where my NLTK library is trying to convert
+
+01:30:04.700 --> 01:30:07.060
+my data into its base word. So I'm going to do a base
+
+01:30:07.060 --> 01:30:11.320
+version and that is something called as a stem ring. One of
+
+01:30:11.320 --> 01:30:14.620
+the stemmer is basically a Potter's timer, but yes, Potter's
+
+01:30:14.620 --> 01:30:17.280
+timer is not the only a steamer that you will be able to
+
+01:30:17.280 --> 01:30:20.880
+find out apart from that. So there is a different, different
+
+01:30:20.880 --> 01:30:24.300
+kind of a steamer. You all will be able to see, but yeah, so
+
+01:30:24.300 --> 01:30:27.280
+by doing this stammering, I'm not doing anything like a
+
+01:30:27.280 --> 01:30:30.980
+different over here except converting my entire data set
+
+01:30:30.980 --> 01:30:34.200
+into its base format. So hope this is making sense to all of
+
+01:30:34.200 --> 01:30:39.400
+us. Right guys. Stammering. So stop word removal is one of
+
+01:30:39.400 --> 01:30:42.680
+the part to cleaning the data, converting into a lower case,
+
+01:30:42.900 --> 01:30:45.660
+doing a stammering on top of the data set so that I will be
+
+01:30:45.660 --> 01:30:49.340
+able to convert my data set into a lower cases. What a
+
+01:30:49.340 --> 01:30:52.040
+tokenizer sentence tokenizer is something that we have seen.
+
+01:30:52.180 --> 01:30:52.540
+Yeah.
+
+01:31:11.170 --> 01:31:11.810
+Fine. Everyone.
+
+01:31:27.760 --> 01:31:30.700
+Okay. So stammering is fine. Now what we can do is so we can
+
+01:31:30.700 --> 01:31:33.720
+try to talk about maybe a lemmatization a little bit. So
+
+01:31:33.720 --> 01:31:36.260
+both stemming and lemmatization. So basically they try to,
+
+01:31:36.300 --> 01:31:39.200
+these are two terms. So stemming and lemmatization. So both
+
+01:31:39.200 --> 01:31:43.380
+try to convert your data into a base version. This is what
+
+01:31:43.380 --> 01:31:45.700
+it does, right? This is what it does at the end of the day.
+
+01:31:45.860 --> 01:31:48.700
+So here, what we can do is so maybe we can try to download
+
+01:31:48.700 --> 01:31:55.420
+one of the libraries. So from NLTK, NLTK, NLTK dot stem.
+
+01:31:55.660 --> 01:31:58.800
+Last time I have downloaded up, I have imported the Potter
+
+01:31:58.800 --> 01:32:03.260
+stammer. So this time I'm going to import basically import W
+
+01:32:04.860 --> 01:32:09.480
+R D word net lemmatizer. Now. This is going to work just
+
+01:32:09.480 --> 01:32:12.540
+like a Potter, but the thing is that in NLTK library,
+
+01:32:12.860 --> 01:32:15.540
+everything is hard coded, not everything. Most of the things
+
+01:32:15.540 --> 01:32:17.480
+are hard coded. So for everything they have created a
+
+01:32:17.480 --> 01:32:19.380
+corpus, they have created a dictionary or they have created
+
+01:32:19.380 --> 01:32:22.300
+a data set. It will always try to do a comparison with that
+
+01:32:22.300 --> 01:32:25.060
+data set. For example, so how it is able to convert my
+
+01:32:25.060 --> 01:32:27.920
+teaching into teach teaching into teach. So someone has
+
+01:32:27.920 --> 01:32:32.100
+already created a data inside for NLTK library and they have
+
+01:32:32.100 --> 01:32:36.280
+mentioned against a teaching. There is a teach or teaches
+
+01:32:36.280 --> 01:32:38.980
+there is a teach. So what it is trying to do, so it will try
+
+01:32:38.980 --> 01:32:41.660
+to do the comparison and it will try to give me the
+
+01:32:41.660 --> 01:32:45.180
+alternative values, whatever values, which is available
+
+01:32:45.180 --> 01:32:48.560
+inside a library. So this is how, so it's not doing anything
+
+01:32:48.560 --> 01:32:51.000
+out of the learning. No, not at all. It is not learning
+
+01:32:51.000 --> 01:32:54.460
+anything. There is a hard coded library and out of that
+
+01:32:54.460 --> 01:32:56.860
+hardcore library, it is trying to do the conversion as
+
+01:32:56.860 --> 01:33:02.760
+simple as that. Fine. Yes. So it's basically whatever we are
+
+01:33:02.760 --> 01:33:05.340
+talking about as of now, it's a hard coded one. Someone has
+
+01:33:05.340 --> 01:33:08.260
+already created it. And then based on that, we are doing a
+
+01:33:08.260 --> 01:33:10.640
+comparison. Even you can try to create your own list. That's
+
+01:33:10.640 --> 01:33:13.260
+completely fine. Do the comparison. Print the list. It is
+
+01:33:13.260 --> 01:33:15.580
+going to work for you. Maybe you are trying to write some
+
+01:33:15.580 --> 01:33:17.560
+sort of an alien word, which is not a part of dictionary or
+
+01:33:17.560 --> 01:33:21.480
+which is not a part of any corpus or any existing library.
+
+01:33:22.000 --> 01:33:24.740
+Not an issue. Create a list. Do the conversion. After doing
+
+01:33:24.740 --> 01:33:25.120
+the mapping.
+
+01:33:27.970 --> 01:33:30.930
+If we are removing a stop words, how the model will learn
+
+01:33:30.930 --> 01:33:33.350
+them when we'll come to the model, you will get to know,
+
+01:33:33.470 --> 01:33:38.030
+right? That we never remove all the data. So we try to keep
+
+01:33:38.030 --> 01:33:40.590
+some of the data. There is something called as master. There
+
+01:33:40.590 --> 01:33:41.770
+is some asking that we try to give. There is something
+
+01:33:41.770 --> 01:33:47.770
+called as a, like a, even, even we try to keep your
+
+01:33:47.770 --> 01:33:50.370
+punctuation marks so that it will be able to learn the
+
+01:33:50.370 --> 01:33:54.010
+grammar, but yeah, we have not reached till that point.
+
+01:33:57.250 --> 01:34:00.750
+So a stammering again. So whatever we are able to access or
+
+01:34:00.750 --> 01:34:03.110
+whatever we are able to do with respect to a stammering, we
+
+01:34:03.110 --> 01:34:05.950
+will be able to do it with respect to this word limit
+
+01:34:05.950 --> 01:34:07.910
+lemmatizer as well as stammering why there are multiple
+
+01:34:07.910 --> 01:34:11.050
+libraries. Again lemmatizer wise, it's not the one, there
+
+01:34:11.050 --> 01:34:13.090
+are multiple libraries which I can use, but all the
+
+01:34:13.090 --> 01:34:16.970
+libraries are technically a hard coded library. Someone has
+
+01:34:16.970 --> 01:34:22.190
+created the Hughes data, kept it inside, and then when we
+
+01:34:22.190 --> 01:34:25.250
+are calling it, it is not doing anything apart from
+
+01:34:25.250 --> 01:34:28.010
+comparison. That's it. So that's, that's a reality of this
+
+01:34:28.010 --> 01:34:33.190
+NLTK now. So if I'm trying to implement a word net, so I
+
+01:34:33.190 --> 01:34:35.650
+have to download a word net. I have already downloaded
+
+01:34:35.650 --> 01:34:39.410
+everything by calling all, but again, let me show you that.
+
+01:34:39.530 --> 01:34:44.650
+So NLTK dot download. Okay. Word net lemmatizer so that it
+
+01:34:44.650 --> 01:34:47.470
+will be able to download all the data which people have
+
+01:34:47.470 --> 01:34:50.270
+created for the lemmatization. Like I said, teaching, teach
+
+01:34:50.270 --> 01:34:54.130
+classes, class. So someone has created it. It is just trying
+
+01:34:54.130 --> 01:34:57.730
+to refer to it. So NLTK word net lemmatizer, and then I'm
+
+01:34:57.730 --> 01:35:05.190
+going to download W O R D, W O R D N E T word net. No, no,
+
+01:35:05.230 --> 01:35:12.820
+no. Download. I have to download. Right. D O W N. Download.
+
+01:35:13.860 --> 01:35:16.120
+It's already downloaded. Simple. So I have already
+
+01:35:16.120 --> 01:35:20.220
+downloaded all simply means that this is available. Now
+
+01:35:20.220 --> 01:35:25.400
+let's suppose I have a text over here, not test text over
+
+01:35:25.400 --> 01:35:30.020
+here. So I have text. I'm teaching in my class, same text,
+
+01:35:30.100 --> 01:35:33.660
+which I have taken our right. And maybe I'm going to convert
+
+01:35:33.660 --> 01:35:38.840
+this text into a word tokens, text
+
+01:35:42.000 --> 01:35:47.240
+token in the variable. I'm going to store. So fine. This is
+
+01:35:47.240 --> 01:35:50.240
+how my text token looks like a list, basically a list, this
+
+01:35:50.240 --> 01:35:52.900
+list. Now I'm going to use this particular list over here.
+
+01:35:53.080 --> 01:35:57.500
+So we have a, we can, we can try to call it with respect to
+
+01:35:57.500 --> 01:36:05.680
+a word lemmatizer. This one. So I can try to call for, for I
+
+01:36:05.680 --> 01:36:10.360
+in basically this text token. So I'm just trying to call
+
+01:36:10.360 --> 01:36:13.340
+this text token data one by one I'm teaching in my classes.
+
+01:36:13.760 --> 01:36:17.560
+So and then what I can do is. So I can try to. So basically
+
+01:36:17.560 --> 01:36:25.760
+pass this entire data print, print what? So print basically
+
+01:36:25.760 --> 01:36:27.160
+word
+
+01:36:29.820 --> 01:36:38.910
+that lemmatizer inside that pass my data simple. So it will
+
+01:36:38.910 --> 01:36:42.490
+try to lemmatize it. And then eventually it is going to give
+
+01:36:42.490 --> 01:36:46.810
+me my data. So what net lemmatizer dot lemme ties. So L E
+
+01:36:46.810 --> 01:36:53.510
+lemma T I Z E. So lemmatize. Okay. I'm going to call I. So
+
+01:36:53.510 --> 01:36:58.370
+lemmatize missing one personal argument words. So here is a
+
+01:36:58.370 --> 01:37:01.890
+word I'm trying to pass. Word net lemmatizer.
+
+01:37:04.520 --> 01:37:10.880
+Okay. It's correct. L E double M A L E double M A T I Z E T
+
+01:37:10.880 --> 01:37:17.710
+I Z E. And then one by one, one by one, I'm trying to pass
+
+01:37:17.710 --> 01:37:26.790
+the data over here. So yes, looks fine to me. Maybe there is
+
+01:37:26.790 --> 01:37:28.670
+a parameter. So what is equals to I.
+
+01:37:46.910 --> 01:37:52.290
+Okay. So as a function, I have to call, I just missed that
+
+01:37:52.290 --> 01:37:56.650
+part. So what lemmatizer dot lemmatize. Yeah. Simple, right?
+
+01:37:56.950 --> 01:37:59.190
+So what lemmatizer as a function I'm trying to call,
+
+01:37:59.250 --> 01:38:01.450
+otherwise I can create an object and then I can try to call
+
+01:38:01.450 --> 01:38:05.190
+it both is fine. So what lemmatizer and then lemmatize I'm
+
+01:38:05.190 --> 01:38:08.090
+trying to pass I one by one same data I'm trying to pass.
+
+01:38:08.190 --> 01:38:13.370
+And then I am. It has not converted my teaching. Last time
+
+01:38:13.370 --> 01:38:17.830
+when I have used this water steamer, it has converted my
+
+01:38:17.830 --> 01:38:22.010
+teaching into teach, but this time it has not converted my
+
+01:38:22.010 --> 01:38:25.810
+teaching into teach. It is keeping as it is. And it has
+
+01:38:25.810 --> 01:38:29.250
+converted classes into class. Obviously, like I said, it
+
+01:38:29.250 --> 01:38:32.290
+just go do the mapping. And then based on that, it is going
+
+01:38:32.290 --> 01:38:36.630
+to give me the outcome. This is how this analytical library,
+
+01:38:36.750 --> 01:38:39.630
+most of the part from the analytical library is going to
+
+01:38:39.630 --> 01:38:41.830
+work. There are some network or there are some neural
+
+01:38:41.830 --> 01:38:42.470
+network. Which is going to give me the outcome. Which
+
+01:38:42.470 --> 01:38:46.410
+somewhere like inside analytic if people have used, but
+
+01:38:46.410 --> 01:38:49.590
+yeah, in most of the cases, this is the case where it will
+
+01:38:49.590 --> 01:38:51.810
+try to do a comparison and then eventually it is going to
+
+01:38:51.810 --> 01:38:54.290
+give you the or maybe based on the just a distance
+
+01:38:54.290 --> 01:38:57.510
+calculation. So it is going to give you the data. So here we
+
+01:38:57.510 --> 01:39:01.070
+have seen a steaming. We have seen lemmatization. Maybe I
+
+01:39:01.070 --> 01:39:03.390
+can try to use some different library for the lemmatization
+
+01:39:03.390 --> 01:39:08.010
+and it is going to even remove ING. That is possible. That
+
+01:39:08.010 --> 01:39:13.790
+is also possible. Okay. So. Hope. So this is fine. So word
+
+01:39:13.790 --> 01:39:15.690
+lemmatizer and a potter steamer.
+
+01:39:40.380 --> 01:39:46.130
+Yes, everyone. So here I have called one thing called as
+
+01:39:46.130 --> 01:39:51.090
+stop words, right? So stop words in English. I can even try
+
+01:39:51.090 --> 01:39:54.090
+this out with our different different language. So even we
+
+01:39:54.090 --> 01:39:57.850
+can try to maybe print, we'll have to check its library that
+
+01:39:57.850 --> 01:40:00.550
+what an all language it supports. So maybe I can try to
+
+01:40:00.550 --> 01:40:02.630
+write just for experimentation Hindi.
+
+01:40:05.040 --> 01:40:09.120
+It supports, I think, 13, 14 languages. I don't know.
+
+01:40:13.180 --> 01:40:18.620
+Maybe I'll have to download the call or I don't know like
+
+01:40:18.620 --> 01:40:22.160
+English is fine. So but
+
+01:40:26.320 --> 01:40:28.420
+yeah, there are libraries. So where you will be able to find
+
+01:40:28.420 --> 01:40:30.700
+out stop words and all the other alternative for other
+
+01:40:30.700 --> 01:40:33.080
+languages as well. So there is a library which people have
+
+01:40:33.080 --> 01:40:35.680
+already created and you will be able to find out even those
+
+01:40:35.680 --> 01:40:40.680
+things. Okay. Now moving ahead guys. So lemmatization we are
+
+01:40:40.680 --> 01:40:46.980
+able to do tokenization. We are able to. Stop words we are
+
+01:40:46.980 --> 01:40:49.940
+able to handle Russian
+
+01:40:57.810 --> 01:41:01.710
+worked. Yeah I think it's about 13, 14 languages last time
+
+01:41:01.710 --> 01:41:04.770
+and I have checked. So it was supporting 13, 14 languages
+
+01:41:04.770 --> 01:41:10.890
+are R-U-S-S-I in Russian. Yeah like I said, right? So it
+
+01:41:10.890 --> 01:41:14.070
+supports like a multiple languages. You can, you can try
+
+01:41:14.070 --> 01:41:18.390
+this out with other like a language as well. Maybe you can
+
+01:41:18.390 --> 01:41:21.410
+check the official like a library. Official documentation
+
+01:41:21.410 --> 01:41:24.810
+and over there you will be able to find out that here it is
+
+01:41:24.810 --> 01:41:25.850
+supporting the multiple things.
+
+01:41:29.930 --> 01:41:33.430
+Now so let's try to understand couple of more different
+
+01:41:33.430 --> 01:41:36.410
+different kind of a stemmer. So we have seen a Potter
+
+01:41:36.410 --> 01:41:39.550
+stemmer. There is something called as Lens Carter stemmer.
+
+01:41:40.010 --> 01:41:43.450
+So again, it's not doing anything different. Just trying to
+
+01:41:43.450 --> 01:41:47.650
+trim down some of the words ING or ES this kind of things.
+
+01:41:48.090 --> 01:41:51.130
+But yeah, there is a different package which has been given
+
+01:41:51.130 --> 01:41:56.670
+to us inside our NLDK. So NLDK dot S-T-E-M stem and then
+
+01:41:56.670 --> 01:41:59.030
+basically import Lens
+
+01:42:00.760 --> 01:42:03.120
+Carter stemmer. So even you can try to use a Lens Carter
+
+01:42:03.120 --> 01:42:06.400
+stemmer and then you can try to pass your data. So Lens
+
+01:42:06.400 --> 01:42:13.760
+Carter stemmer maybe Lens as a Lens you can try to store and
+
+01:42:13.760 --> 01:42:21.160
+then L-A-N-C Lens dot maybe you can try to call a stem and
+
+01:42:21.160 --> 01:42:23.700
+then you can try to pass your data. For example. For
+
+01:42:23.700 --> 01:42:33.460
+example, if I'm going to pass R-U-N-N-I-N-G S-T-E-M yeah, so
+
+01:42:33.460 --> 01:42:36.220
+running to run it is able to convert I can try to call it
+
+01:42:36.220 --> 01:42:38.740
+into a for loop and I can try to pass the entire sentence.
+
+01:42:38.860 --> 01:42:42.200
+But yeah, so if I'm going to call running so it is going to
+
+01:42:42.200 --> 01:42:46.100
+convert into a run if I'm going to can call maybe teaching
+
+01:42:46.100 --> 01:42:52.610
+it is going to convert into a now someone is asking that
+
+01:42:52.610 --> 01:42:55.850
+what is the difference between limitization and staining so
+
+01:42:55.850 --> 01:42:59.570
+not much I would say. Because both of this technique has
+
+01:42:59.570 --> 01:43:03.950
+been used to like a convert your data set into a base word
+
+01:43:03.950 --> 01:43:08.090
+and but yeah, so basically if I'll talk about the staining
+
+01:43:08.090 --> 01:43:13.370
+so it may try to remove a word before and maybe after and
+
+01:43:13.370 --> 01:43:19.450
+again like I said so basically it's more like a mapping over
+
+01:43:19.450 --> 01:43:21.730
+there and based on the mapping so it will be able to give
+
+01:43:21.730 --> 01:43:26.330
+you the final data. Now if I'll talk about a limitization.
+
+01:43:26.330 --> 01:43:28.550
+So, it try to consider the context so based on the
+
+01:43:28.550 --> 01:43:30.630
+contextual information it will try to do some sort of a
+
+01:43:30.630 --> 01:43:34.990
+conversion. Spearless French okay French is available fine
+
+01:43:34.990 --> 01:43:36.050
+sir
+
+01:43:41.560 --> 01:43:44.380
+can you please share a theory concept book that can help to
+
+01:43:44.380 --> 01:43:46.580
+understand few basic concept and help during the interview.
+
+01:43:46.920 --> 01:43:50.240
+No there is no book relevant in a today's world I would say
+
+01:43:50.240 --> 01:43:52.800
+because things have changed a lot you can see a lot of books
+
+01:43:52.800 --> 01:43:57.580
+I have I'm keeping even my background but nowadays it's of
+
+01:43:57.580 --> 01:44:04.980
+no use because like I said things have changed. And yeah, so
+
+01:44:04.980 --> 01:44:08.520
+we are just trying to relearn and unlearn everything
+
+01:44:08.520 --> 01:44:12.480
+nowadays. So I believe you will have to wait for a books
+
+01:44:12.480 --> 01:44:15.240
+when someone will come in a market and then they will start
+
+01:44:15.240 --> 01:44:19.900
+writing a brand new new books based on the latest concept.
+
+01:44:20.540 --> 01:44:23.320
+But yeah books books are good sub couple of books are good I
+
+01:44:23.320 --> 01:44:26.300
+would say in terms of learning the base concept and for a
+
+01:44:26.300 --> 01:44:29.560
+machine learning the only one favorite book that I have is.
+
+01:44:30.400 --> 01:44:33.680
+This one maybe I can show you I think I have it here it's
+
+01:44:33.680 --> 01:44:39.500
+okay so yeah this is the only book that you can try to use
+
+01:44:39.500 --> 01:44:43.620
+so maybe you can use this book that's fine and so on machine
+
+01:44:43.620 --> 01:44:47.160
+learning with cycle and keras intensive flow but instead of
+
+01:44:47.160 --> 01:44:51.020
+going through this entire book sometime you will feel like
+
+01:44:51.020 --> 01:44:56.100
+if someone has explained me a concept in little bit more
+
+01:44:56.100 --> 01:45:01.660
+detail. So. Okay. So and plus in a more practical way so
+
+01:45:01.660 --> 01:45:05.380
+that's a problem that you may face with even with this book
+
+01:45:05.380 --> 01:45:07.900
+but yeah it's one of the best in a market so far.
+
+01:45:17.160 --> 01:45:20.040
+So lens carter, stemmer likewise so there is something
+
+01:45:20.040 --> 01:45:22.320
+called a snowball stemmer so there are three very famous
+
+01:45:22.320 --> 01:45:25.260
+stemmer that you will be able to find out so potter stemmer
+
+01:45:25.260 --> 01:45:27.400
+lens carter and snowball stemmer you can try to use any of
+
+01:45:27.400 --> 01:45:31.560
+these that's completely fine it is going to like a trim down
+
+01:45:31.560 --> 01:45:33.300
+your data your word.
+
+01:45:40.200 --> 01:45:40.600
+Now
+
+01:45:46.070 --> 01:45:47.730
+moving to the next part.
+
+01:46:26.960 --> 01:46:30.660
+Again no need to go through the entire APIs like I said so
+
+01:46:30.660 --> 01:46:32.820
+there are so many things which is available and if you'll
+
+01:46:32.820 --> 01:46:36.440
+start going through each and every APIs it will be like it
+
+01:46:36.440 --> 01:46:39.020
+will give you a lot of difficulties in terms of doing a
+
+01:46:39.020 --> 01:46:44.020
+implementation in terms of anything. So you don't you just
+
+01:46:44.020 --> 01:46:47.360
+have to like decide that how much you have to learn and then
+
+01:46:47.360 --> 01:46:51.040
+how much you have to leave. Because if you will just go
+
+01:46:51.040 --> 01:46:55.120
+through one single library maybe it will take an entire year
+
+01:46:55.120 --> 01:46:59.100
+of time. You will not be able to remember so it's of no need
+
+01:46:59.100 --> 01:47:02.300
+it's of no use. So that's the reason why I keep on
+
+01:47:02.300 --> 01:47:05.260
+suggesting people keep on recommending people that try to
+
+01:47:05.260 --> 01:47:10.860
+always focus on a basic and then immediately once you are
+
+01:47:10.860 --> 01:47:14.300
+able to build something jump so once you are able to like
+
+01:47:14.300 --> 01:47:16.980
+learn a little bit jump into a building and finally like a
+
+01:47:16.980 --> 01:47:19.500
+developing a product okay.
+
+01:47:24.200 --> 01:47:28.120
+Now I'll talk about basically a POS parts of speech
+
+01:47:28.120 --> 01:47:31.420
+basically so POS tagging so let's try to talk about the
+
+01:47:31.420 --> 01:47:34.600
+parts of speech because even this has been used when we try
+
+01:47:34.600 --> 01:47:37.960
+to convert a data for a model training so that my model will
+
+01:47:37.960 --> 01:47:41.020
+be able to understand a relationship between a parts of
+
+01:47:41.020 --> 01:47:49.180
+speech. So here I can try to import from NLTK dot tag and
+
+01:47:49.180 --> 01:47:55.440
+then IMPORT import POS so POS tags. So this is the library
+
+01:47:55.440 --> 01:47:59.360
+which is going to give you that tagging for any kind of a
+
+01:47:59.360 --> 01:48:03.200
+parts of speech available inside a sentence means for any
+
+01:48:03.200 --> 01:48:05.940
+any sentences if there is a word so obviously it will be a
+
+01:48:05.940 --> 01:48:09.440
+part of some of the parts of speech maybe noun pronoun verb
+
+01:48:09.440 --> 01:48:13.380
+adjective adverb that we generally try to use in English or
+
+01:48:13.380 --> 01:48:16.320
+even in any language right we always try to understand the
+
+01:48:16.320 --> 01:48:20.640
+grammar first and we try to phrase a sentences or we try to
+
+01:48:20.640 --> 01:48:23.480
+write something so in a similar manner so even with respect
+
+01:48:23.480 --> 01:48:26.800
+to NLTK you will be able to segregate or you will be able to
+
+01:48:26.800 --> 01:48:31.180
+map all the words with respect to its parts of speech. As
+
+01:48:31.180 --> 01:48:36.180
+simple as that. So here I have done the import of POS
+
+01:48:36.180 --> 01:48:42.100
+basically like a tag. Now what I can do is so maybe I can
+
+01:48:42.100 --> 01:48:47.660
+try to call a POS tag POS tag over here and then I can try
+
+01:48:47.660 --> 01:48:54.860
+to pass maybe Apple token expected list of the string got a
+
+01:48:54.860 --> 01:48:58.620
+string okay I'll just try to pass as a list over here yeah
+
+01:49:02.420 --> 01:49:05.940
+so Apple so as I have passed Apple over here so it is giving
+
+01:49:05.940 --> 01:49:09.940
+me basically NN basically it's a noun. Now if you will go
+
+01:49:09.940 --> 01:49:13.380
+and check so there are a multiple like a parts of a speech a
+
+01:49:13.380 --> 01:49:15.220
+different different kind of a parts of a speech you will be
+
+01:49:15.220 --> 01:49:17.960
+able to find out there is something called as data minor
+
+01:49:17.960 --> 01:49:20.120
+there is something called as adjective there is something
+
+01:49:20.120 --> 01:49:22.780
+called as noun and it is nothing but noun there is something
+
+01:49:22.780 --> 01:49:25.400
+called as verb third person singular present there is
+
+01:49:25.400 --> 01:49:27.520
+something called as preposition there is something called as
+
+01:49:27.520 --> 01:49:31.460
+punctuation right. So for example if I'm going to pass Apple
+
+01:49:31.460 --> 01:49:36.320
+if I'm going to pass maybe my name Sudhanshu over here if
+
+01:49:36.320 --> 01:49:43.740
+I'm going to pass maybe running if I'm going to pass maybe
+
+01:49:43.740 --> 01:49:47.700
+some exclamation marks over here so here Apple is noun
+
+01:49:47.700 --> 01:49:51.380
+Nanshu is noun running is VVG right and this is nothing but
+
+01:49:51.380 --> 01:49:55.860
+my punctuation so running is nothing but a verb verb third
+
+01:49:55.860 --> 01:49:59.500
+person. So it is giving me a parts of a speech a respective
+
+01:49:59.500 --> 01:50:02.200
+parts of a speech for each and everything so this is
+
+01:50:02.200 --> 01:50:06.180
+something called as POS tagging. POS tagging or this kind of
+
+01:50:06.180 --> 01:50:09.920
+a sentence conversion generally we try to use while training
+
+01:50:09.920 --> 01:50:12.480
+a model so that my model will be able to understand a
+
+01:50:12.480 --> 01:50:16.160
+relationship between all of this verb adverb adjective and
+
+01:50:16.160 --> 01:50:19.260
+it will be able to form a relationship by understanding
+
+01:50:19.260 --> 01:50:22.420
+actual meaning or actual grammars because at the end of the
+
+01:50:22.420 --> 01:50:25.560
+day model is nothing but it's a mathematical calculation
+
+01:50:25.990 --> 01:50:28.840
+right it never understands something like a human being it
+
+01:50:28.840 --> 01:50:32.780
+understands in a very very different way. So yeah it this
+
+01:50:32.780 --> 01:50:36.720
+kind of a data is going to help my model. To understand in a
+
+01:50:36.720 --> 01:50:39.520
+better way and we always try to do this kind of
+
+01:50:39.520 --> 01:50:43.320
+implementation while preparing a data set making sense guys
+
+01:50:43.320 --> 01:50:44.480
+oh
+
+01:50:47.270 --> 01:50:54.640
+sorry my bad so I was showing you a book and then I haven't
+
+01:50:54.640 --> 01:50:58.680
+switched my screen sorry okay so this is the only thing
+
+01:50:58.680 --> 01:51:01.520
+which I Sahid
+
+01:51:13.260 --> 01:51:16.020
+is saying that it looks like we are watching the recording
+
+01:51:16.020 --> 01:51:17.940
+video is it Sahid people
+
+01:51:24.410 --> 01:51:25.350
+are people. So.
+
+01:51:31.040 --> 01:51:33.800
+Okay. So yeah I was I was showing you the books right so
+
+01:51:33.800 --> 01:51:35.900
+someone has asked me for the best book and I was showing you
+
+01:51:35.900 --> 01:51:38.820
+the book and then I forgot to share my screen so switch my
+
+01:51:38.820 --> 01:51:42.320
+screen basically yeah. So here basically like what I was
+
+01:51:42.320 --> 01:51:45.280
+trying to teach you is that there is something called as POS
+
+01:51:45.280 --> 01:51:47.760
+tagging right there is something called as POS tagging and
+
+01:51:47.760 --> 01:51:51.600
+to understand a POS tagging nothing but noun pronoun verb
+
+01:51:51.600 --> 01:51:54.880
+adjective adverb punctuation so there is a dictionary
+
+01:51:54.880 --> 01:51:57.780
+someone has already created and you just have to pass your
+
+01:51:57.780 --> 01:52:00.160
+data over here right and it is going to give you a
+
+01:52:00.160 --> 01:52:03.040
+respective one. For example, Apple is noun so it is giving
+
+01:52:03.040 --> 01:52:06.040
+me NN so down show is basically what nouns it is giving me
+
+01:52:06.040 --> 01:52:09.220
+NN running is what it's basically a word so it is giving me
+
+01:52:09.220 --> 01:52:12.200
+VVG so this external mass is what it's basically a
+
+01:52:12.200 --> 01:52:16.380
+punctuation so it is giving me a dot so in this way we try
+
+01:52:16.380 --> 01:52:20.000
+to tag we try to break down our entire sentences into a
+
+01:52:20.000 --> 01:52:22.900
+different different words and then eventually we try to tag
+
+01:52:22.900 --> 01:52:26.720
+it with a parts of speech and this again this kind of
+
+01:52:26.720 --> 01:52:31.560
+information is very much required for a model. So whenever
+
+01:52:31.560 --> 01:52:33.920
+we try to train the model society
+
+01:52:37.320 --> 01:52:41.200
+is saying yes it looks like to me I don't know so yeah it's
+
+01:52:41.200 --> 01:52:44.300
+your personal feeling in that case I'll just leave it up to
+
+01:52:44.300 --> 01:52:45.560
+you fine
+
+01:52:53.880 --> 01:52:58.680
+guys yep yeah sir
+
+01:53:01.270 --> 01:53:05.810
+is it stream streaming on YouTube and why so yeah basically
+
+01:53:05.810 --> 01:53:08.530
+what we do is so we try to like we have created this system
+
+01:53:08.530 --> 01:53:11.070
+in such a way that it is streams on a YouTube server during
+
+01:53:11.070 --> 01:53:15.290
+a live classes and then after that there will be a live
+
+01:53:15.290 --> 01:53:17.430
+classes. There will be a recorded video which goes inside
+
+01:53:17.430 --> 01:53:23.510
+our DRM system a protected system so that no one will be
+
+01:53:23.510 --> 01:53:26.330
+able to even share and even if you are going to share your
+
+01:53:26.330 --> 01:53:31.030
+screen so it will look blank the complete black screen fine
+
+01:53:31.030 --> 01:53:36.070
+guys yeah okay sir aaj ki liye kaafi hai Santanu is saying
+
+01:53:36.070 --> 01:53:39.390
+Archit is saying can you please share a technical concept
+
+01:53:39.390 --> 01:53:42.690
+books on NLP there is there is no such books I would say
+
+01:53:42.690 --> 01:53:45.330
+there is no such books Archit and I never recommend anyone
+
+01:53:45.330 --> 01:53:49.350
+to follow the books the best way to follow is let's suppose
+
+01:53:49.350 --> 01:53:53.730
+I have created a syllabus right let's suppose I am going
+
+01:53:53.730 --> 01:54:01.510
+here on your own and we have a syllabus GENE RATIV
+
+01:54:01.510 --> 01:54:08.120
+generative AI now if you have to do a exploration so just
+
+01:54:08.120 --> 01:54:12.400
+try to go through a topic one by one one by one one by one
+
+01:54:12.400 --> 01:54:15.520
+because all the information will not be available in any
+
+01:54:15.520 --> 01:54:18.900
+books. Believe me in any books information will be available
+
+01:54:18.900 --> 01:54:22.660
+in bits and pieces one by one that what is a text
+
+01:54:22.660 --> 01:54:25.960
+organization how we can do it what is the use cases of it
+
+01:54:25.960 --> 01:54:28.960
+and how I will be able to write a code now end of this topic
+
+01:54:28.960 --> 01:54:32.020
+remove the stop words now what is the meaning of stop words
+
+01:54:32.020 --> 01:54:35.480
+and if I can do something with respect to a python code end
+
+01:54:35.480 --> 01:54:39.680
+of this limitation streaming so if you are going in this way
+
+01:54:39.680 --> 01:54:43.300
+one by one one by one topic by topic believe me once you
+
+01:54:43.300 --> 01:54:46.220
+will move from here to here. You will be able to connect
+
+01:54:46.220 --> 01:54:49.500
+each and everything plus you will be able to learn in no
+
+01:54:49.500 --> 01:54:55.680
+time. Books wise like I said no books is going to cover the
+
+01:54:55.680 --> 01:55:01.460
+entire syllabus. No books means literally no books and again
+
+01:55:01.460 --> 01:55:05.300
+so things have changed a lot because of that so we have
+
+01:55:05.300 --> 01:55:08.140
+modified we have restructured the syllabus and this is
+
+01:55:08.140 --> 01:55:12.220
+something that we keep on doing it. If you are going to
+
+01:55:12.220 --> 01:55:14.540
+follow the books. So maybe someone has written a book. A
+
+01:55:14.540 --> 01:55:17.460
+year back or maybe a five year back now those books are not
+
+01:55:17.460 --> 01:55:19.580
+relevant those informations are not relevant in today's
+
+01:55:19.580 --> 01:55:22.380
+world you will not be able to build anything and by reading
+
+01:55:22.380 --> 01:55:28.100
+a books I don't think that as a techie yeah till our college
+
+01:55:28.100 --> 01:55:32.540
+I think reading a books is fine even I used to read a lot of
+
+01:55:32.540 --> 01:55:35.140
+books nowadays I don't read a technical books I read a
+
+01:55:35.140 --> 01:55:39.620
+philosophy and technical wise I try to build things. This is
+
+01:55:39.620 --> 01:55:42.880
+how I like keep myself updated by building things not just
+
+01:55:42.880 --> 01:55:45.380
+by like learning or going through some documentation or some
+
+01:55:45.380 --> 01:55:50.400
+books. So as a techie I always suggest you that try to build
+
+01:55:50.400 --> 01:55:54.200
+even a small one try to write a code that's the best way of
+
+01:55:54.200 --> 01:55:56.860
+learning not just by reading it you don't have to go for the
+
+01:55:56.860 --> 01:56:00.380
+exam right you have to go for a job interview in a job
+
+01:56:00.380 --> 01:56:02.460
+interview people are not going to test your knowledge people
+
+01:56:02.460 --> 01:56:04.560
+are going to test your experience and there is a difference
+
+01:56:04.560 --> 01:56:08.220
+between knowledge and experience. So experience you will
+
+01:56:08.220 --> 01:56:11.080
+never be able to get even after reading hundreds of books
+
+01:56:11.080 --> 01:56:14.080
+even a philosophical book. Even a motivational books or even
+
+01:56:14.080 --> 01:56:17.940
+a technical books experience you will be able to get just by
+
+01:56:17.940 --> 01:56:21.520
+doing it and hope you understand that part yeah and this is
+
+01:56:21.520 --> 01:56:24.900
+like a normal question for me because in every classes so
+
+01:56:24.900 --> 01:56:27.960
+people ask me in a beginning just in the beginning a couple
+
+01:56:27.960 --> 01:56:31.260
+of weeks people will ask what is the best book what is not
+
+01:56:31.260 --> 01:56:37.380
+and I never recommend one because I know that that you will
+
+01:56:37.380 --> 01:56:39.620
+end up wasting your money maybe you will go you will try to
+
+01:56:39.620 --> 01:56:42.480
+buy it. Then you will end up wasting a couple of hours.
+
+01:56:42.500 --> 01:56:45.080
+Hours over there and I know eventually you will not be able
+
+01:56:45.080 --> 01:56:49.540
+to get any things out of it so it's better go through topic
+
+01:56:49.540 --> 01:56:54.360
+by topic write a code after that combine each and everything
+
+01:56:55.120 --> 01:56:59.520
+build a small project end of the story a best way of
+
+01:56:59.520 --> 01:57:00.720
+learning so
+
+01:57:06.380 --> 01:57:08.480
+I'm not going to share any books by the way I'm going to
+
+01:57:08.480 --> 01:57:12.380
+share a code which I'm going to write inside my like a class
+
+01:57:12.380 --> 01:57:15.780
+I'm going to share a projects basically and whatever let's
+
+01:57:15.780 --> 01:57:18.920
+suppose if I'm teaching you architecture right. So because I
+
+01:57:18.920 --> 01:57:22.700
+think in by next week by next week itself by next week
+
+01:57:22.700 --> 01:57:25.080
+Sunday so I'm going to start with the architecture so where
+
+01:57:25.080 --> 01:57:27.640
+I will be talking about because next week I'm going to
+
+01:57:27.640 --> 01:57:32.000
+finish this particular part with lot of examples over here
+
+01:57:32.000 --> 01:57:34.440
+so there is a small calculation over here again I have to
+
+01:57:34.440 --> 01:57:37.260
+show you the network now this is all about the architecture
+
+01:57:37.260 --> 01:57:39.900
+so at that point of a time obviously I'll be share my
+
+01:57:39.900 --> 01:57:42.420
+handwritten documents that's it so whatever will be
+
+01:57:42.420 --> 01:57:44.600
+discussed in the class only that will be shared apart from
+
+01:57:44.600 --> 01:57:47.520
+that not going to share anything because that's not
+
+01:57:47.520 --> 01:57:48.140
+required. So that's it.
+
+01:57:53.220 --> 01:57:56.360
+I think interviews are based on use cases and projects
+
+01:57:56.360 --> 01:58:00.220
+building projects and exactly yeah that's a true way of
+
+01:58:00.220 --> 01:58:02.000
+learning you are not in the school you are not in college
+
+01:58:02.000 --> 01:58:04.840
+you don't have to go and give a semester exam or maybe your
+
+01:58:04.840 --> 01:58:08.920
+yearly exam or maybe your monthly exam right. So please try
+
+01:58:08.920 --> 01:58:13.520
+to come out of that scenario or that way of learning if you
+
+01:58:13.520 --> 01:58:16.840
+are going to change that like the way of learning I think it
+
+01:58:16.840 --> 01:58:20.940
+will be very much helpful and you will be able to get into
+
+01:58:20.940 --> 01:58:24.160
+industry as soon as possible. You will keep on just reading
+
+01:58:24.160 --> 01:58:26.820
+it and we all know that we all have gone through a lot of
+
+01:58:26.820 --> 01:58:30.820
+books lot of study lot of exams in last like 2530 year. And
+
+01:58:30.820 --> 01:58:32.840
+we all know what kind of a benefit that we are able to get
+
+01:58:32.840 --> 01:58:34.220
+all almost nothing.
+
+01:58:37.060 --> 01:58:40.420
+Fine guys. Okay so I'm done for today. Now let me share this
+
+01:58:40.420 --> 01:58:43.020
+notebook and this is what I am going to do on a regular
+
+01:58:43.020 --> 01:58:45.640
+basis not regular daily basis I would say. So whenever I'll
+
+01:58:45.640 --> 01:58:50.180
+take a class. So after the class this notebook will be
+
+01:58:50.180 --> 01:58:53.880
+available inside your chat as well as inside your resources.
+
+01:58:54.540 --> 01:58:55.340
+So you need to be respecting when you are talking about
+
+01:58:55.340 --> 01:58:56.640
+writing things I say one thing after the your batch is this
+
+01:58:56.640 --> 01:59:01.040
+one this is the okay ninth right yeah this is something
+
+01:59:01.040 --> 01:59:06.160
+which i have created so here zip file let me convert it into
+
+01:59:06.160 --> 01:59:10.400
+yeah zip file now i'm sending it to you okay
+
+01:59:15.560 --> 01:59:18.740
+so zip file is already available guys and even in later
+
+01:59:18.740 --> 01:59:21.700
+stage when you will come and join a class maybe if you are
+
+01:59:21.700 --> 01:59:23.980
+going to watch a recorded one you will be able to find out
+
+01:59:23.980 --> 01:59:29.920
+the zip inside a resource section so this is a material for
+
+01:59:29.920 --> 01:59:32.260
+today so whatever i have executed it's already available
+
+01:59:32.260 --> 01:59:37.370
+inside your system fine guys everyone are we able to learn
+
+01:59:37.370 --> 01:59:39.590
+something just a basic i don't think that today i have
+
+01:59:39.590 --> 01:59:42.550
+discussed much but yeah just a basic we have discussed how
+
+01:59:42.550 --> 01:59:45.490
+to acquire a data where to acquire data how to do a basic
+
+01:59:45.490 --> 01:59:48.650
+setup and then what is the meaning of lemmatization what is
+
+01:59:48.650 --> 01:59:50.870
+the meaning of parts of a speech what is the meaning of
+
+01:59:50.870 --> 01:59:56.690
+basically a stop words and basically what is nltk library we
+
+02:00:01.750 --> 02:00:04.050
+can conclude the session time so please share the notebook
+
+02:00:04.050 --> 02:00:06.070
+notebook is already shared it's already there i have already
+
+02:00:06.070 --> 02:00:10.730
+shared inside the zip file yeah you can download it now fine
+
+02:00:10.730 --> 02:00:12.610
+guys so with that thank you so much everyone see you again
+
+02:00:12.610 --> 02:00:14.850
+in my next lecture we are already connected over a whatsapp
+
+02:00:14.850 --> 02:00:18.110
+so till then thank you so much take care everyone have a
+
+02:00:18.110 --> 02:00:18.690
+great day night ahead
+

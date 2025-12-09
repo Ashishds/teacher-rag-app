@@ -1,0 +1,5297 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.840
+By the way, today I'm going to talk about basically a very
+
+00:00:02.840 --> 00:00:06.420
+amazing and interesting application and that application is
+
+00:00:06.420 --> 00:00:12.500
+going to be a ATS resume application. So where we are going
+
+00:00:12.500 --> 00:00:17.420
+to build our resume with respect to ATS like a compliances.
+
+00:00:17.540 --> 00:00:22.200
+So basically, we all know that that whenever we are going to
+
+00:00:22.200 --> 00:00:25.140
+submit a resume, so obviously it will go through a ATS
+
+00:00:25.140 --> 00:00:29.020
+system, applicant tracking system. And what it does? So
+
+00:00:29.020 --> 00:00:32.340
+basically, it will try to match your resume with respect to
+
+00:00:32.340 --> 00:00:37.100
+a job description. And based on that, based on that
+
+00:00:37.100 --> 00:00:41.620
+matching, basically, so it is going to, you know, either
+
+00:00:41.620 --> 00:00:46.920
+pick your resume or maybe it is going to like discard your
+
+00:00:46.920 --> 00:00:50.860
+resume. And that is something that we are going to like see
+
+00:00:50.860 --> 00:00:54.540
+with respect to our agents that how we can try to build a
+
+00:00:54.540 --> 00:00:58.600
+ATS compliant resume. How we can try to improvise. How we
+
+00:00:58.600 --> 00:01:02.460
+can improvise a score of our resume, our own resume, so
+
+00:01:02.460 --> 00:01:06.660
+where it will be eventually become a ATS compliant. So all
+
+00:01:06.660 --> 00:01:10.200
+of these things in an accent we are going to see we are
+
+00:01:10.200 --> 00:01:13.460
+going to observe. So let me share my screen. I have already
+
+00:01:13.460 --> 00:01:17.080
+prepared a beautiful demo for all of you. So let me give you
+
+00:01:17.080 --> 00:01:21.420
+a demo first and then maybe we can try to start ahead with
+
+00:01:21.420 --> 00:01:25.380
+the code base by the way. Yeah. So let me share my screen
+
+00:01:25.380 --> 00:01:30.980
+and here it goes. So as you can see, right, uh, we have a
+
+00:01:30.980 --> 00:01:33.940
+application up and running and I have built this application
+
+00:01:33.940 --> 00:01:37.040
+with the help of crew AI agent again. So yesterday I have
+
+00:01:37.040 --> 00:01:40.560
+shown you that, uh, how you can try to use a crew a studio
+
+00:01:40.560 --> 00:01:44.200
+or a crew at cloud and where you can dress, try to do some
+
+00:01:44.200 --> 00:01:46.800
+sort of a prompting. And with the help of prompting, you
+
+00:01:46.800 --> 00:01:50.340
+will be able to build a resume, uh, but here, so I'm not
+
+00:01:50.340 --> 00:01:53.660
+going to do just a prompting. So I have done this things
+
+00:01:53.660 --> 00:01:57.980
+with respect to a pure route from the scratch where what you
+
+00:01:57.980 --> 00:02:02.220
+can do, so you can try to upload some of the resume. So I
+
+00:02:02.220 --> 00:02:07.100
+have maybe a resume over here, right? Maybe a good, maybe a
+
+00:02:07.100 --> 00:02:10.480
+bad one. That's completely fine. So I just have to upload a
+
+00:02:10.480 --> 00:02:13.840
+resume over here. Now once I'm going to upload the resume, I
+
+00:02:13.840 --> 00:02:17.200
+can try to, you know, align my resume with respect to a JD.
+
+00:02:17.340 --> 00:02:19.860
+So here job discussion wise. So let's suppose I'm giving
+
+00:02:19.860 --> 00:02:23.440
+machine learning engineer, and then if I'm going to pass a
+
+00:02:23.440 --> 00:02:27.600
+complete JD, right? So if I'm going to pass a complete job
+
+00:02:27.600 --> 00:02:30.280
+description. So this is one of the job description for a
+
+00:02:30.280 --> 00:02:33.540
+machine learning engineer I have passed. And if I'm going to
+
+00:02:33.540 --> 00:02:38.060
+run this ATS agent, now let's see what is going to happen.
+
+00:02:38.800 --> 00:02:41.740
+So it will take some time. So maybe it is going to take like
+
+00:02:41.740 --> 00:02:44.760
+a two or three minute of time for me for one single resume
+
+00:02:44.760 --> 00:02:48.960
+and it is going to parse my resume, which is available into
+
+00:02:48.960 --> 00:02:51.680
+a PDF format, which is available maybe into a document
+
+00:02:51.680 --> 00:02:54.640
+format or maybe into a TXT format. So I have uploaded my
+
+00:02:54.640 --> 00:02:58.420
+resume in a PDF format by the way. Yeah. It is going to read
+
+00:02:58.420 --> 00:03:01.400
+my entire resume. It is going to read each and every points,
+
+00:03:01.480 --> 00:03:04.520
+which is available with respect to a project with respect to
+
+00:03:04.520 --> 00:03:07.220
+a skillset, which I have mentioned with respect to a
+
+00:03:07.220 --> 00:03:09.420
+description inside the resume, each and everything it is
+
+00:03:09.420 --> 00:03:13.860
+going to read out and it is going to rewrite my entire
+
+00:03:13.860 --> 00:03:18.140
+resume. And then it is going to refine each and every
+
+00:03:18.140 --> 00:03:20.700
+points, which is available inside my resume, all the bullet
+
+00:03:20.700 --> 00:03:25.260
+points, and it is going to give me even a ATS score that
+
+00:03:25.260 --> 00:03:28.280
+what is a current ATS score. So that is the overall goal of
+
+00:03:28.280 --> 00:03:32.260
+this content if I'm going to use it. So this is how this
+
+00:03:32.260 --> 00:03:36.340
+entire things is going to work. And we will see that how we
+
+00:03:36.340 --> 00:03:38.740
+can try to build this kind of a system with the help of
+
+00:03:38.740 --> 00:03:41.420
+agents. So framework wise, you can try to use any of this
+
+00:03:41.420 --> 00:03:44.000
+framework. You can use a Langchain, you can use a Lang
+
+00:03:44.000 --> 00:03:47.000
+graph. You can try to use maybe a Lama indexes. You can try
+
+00:03:47.000 --> 00:03:49.860
+to use a crew AI. So today I'm going to show you this
+
+00:03:49.860 --> 00:03:53.720
+application with respect to a crew AI that how we can try to
+
+00:03:53.720 --> 00:03:58.060
+build a agent inside a crew AI. Now. Now how I can try to
+
+00:03:58.060 --> 00:04:01.360
+give access of a tool, technically a function, right?
+
+00:04:01.400 --> 00:04:05.920
+Technically a function to agents and then how I'm going to
+
+00:04:05.920 --> 00:04:09.320
+schedule a task basically and tasks are going to call
+
+00:04:09.320 --> 00:04:12.580
+agents. Agents will be going, agents are going to invoke
+
+00:04:12.580 --> 00:04:17.180
+basically a tool. And finally I will be able to get my task
+
+00:04:17.180 --> 00:04:20.300
+completed. So which is nothing but like a ATS compliant
+
+00:04:20.300 --> 00:04:23.760
+resume I will be able to get along with that. I will be able
+
+00:04:23.760 --> 00:04:27.340
+to get an ATS score. So just sit tight. Watch for like a
+
+00:04:27.340 --> 00:04:30.760
+couple of minutes. My ATS resume will be ready. So whatever
+
+00:04:30.760 --> 00:04:34.320
+resume which I have uploaded, it will be ready in some time.
+
+00:04:36.940 --> 00:04:40.040
+So this application is going to be the amazing one. By the
+
+00:04:40.040 --> 00:04:41.300
+way, Sir,
+
+00:05:14.380 --> 00:05:18.380
+how much autogen is being used? It is a little difficult to
+
+00:05:18.380 --> 00:05:21.640
+say how much autogen is being used because it's a new
+
+00:05:21.640 --> 00:05:25.480
+framework and again adoption always takes time. It's not
+
+00:05:25.480 --> 00:05:28.740
+like whenever someone has released a new framework. It's not
+
+00:05:28.740 --> 00:05:29.220
+like whenever someone has released a new framework. People
+
+00:05:29.220 --> 00:05:33.820
+will start using it because obviously it takes a blacker, a
+
+00:05:33.820 --> 00:05:37.080
+very huge amount of approval. It goes through a chain and
+
+00:05:37.080 --> 00:05:39.700
+then people will adopt it and accept it.
+
+00:05:47.260 --> 00:05:50.120
+Is it performing a modification or completely building it
+
+00:05:50.120 --> 00:05:53.680
+from a scratch? So technically it's trying to modify your
+
+00:05:53.680 --> 00:05:56.160
+existing content. So whatever content which is available
+
+00:05:56.160 --> 00:05:59.220
+inside your resume, so basically it is trying to modify that
+
+00:05:59.220 --> 00:06:02.260
+part. It's not building from the scratch. That's the reason.
+
+00:06:02.340 --> 00:06:06.020
+So I have given a sample resume over here. Okay. And apart
+
+00:06:06.020 --> 00:06:09.340
+from that, so I have given a title of a job and I have given
+
+00:06:09.340 --> 00:06:12.720
+a job description JD over here with respect to a machine
+
+00:06:12.720 --> 00:06:16.220
+learning engineer, right? So you can try to pass any resume
+
+00:06:16.220 --> 00:06:18.840
+over here in this system. You can try to pass any job title
+
+00:06:18.840 --> 00:06:21.780
+over here. You can try to pass any kind of a job description
+
+00:06:21.780 --> 00:06:25.940
+and eventually it will try to align your resume with respect
+
+00:06:25.940 --> 00:06:29.260
+to a job description that that's a whole concept behind
+
+00:06:29.260 --> 00:06:31.300
+building this application by the way.
+
+00:06:37.620 --> 00:06:40.620
+So Lang chain, Lang graph crew. I entertained. You know the
+
+00:06:40.620 --> 00:06:42.180
+job description. You know the job description. You know the
+
+00:06:42.180 --> 00:06:45.480
+program and you can help them prepare. Exactly. Yes. See,
+
+00:06:45.580 --> 00:06:51.260
+uh, agent creation, like, uh, up, basically up, land chain,
+
+00:06:51.320 --> 00:06:54.680
+low your llama index, lay low, lay low. Uh, okay. I
+
+00:06:54.680 --> 00:07:01.160
+ultimately use, use, use, use, use, use, use, use.
+
+00:07:05.220 --> 00:07:08.540
+But here obviously in a class, so we are going to explore
+
+00:07:08.540 --> 00:07:14.600
+all of this framework so that I'm and then you will try to
+
+00:07:14.600 --> 00:07:17.800
+write all of these like a project things with respect to one
+
+00:07:17.800 --> 00:07:18.560
+single framework.
+
+00:07:25.010 --> 00:07:29.310
+So just wait, it takes time, it is running in my local
+
+00:07:29.310 --> 00:07:32.550
+system and it takes time and eventually it's not about a
+
+00:07:32.550 --> 00:07:36.690
+local system. So it's about an agent. I have given some sort
+
+00:07:36.690 --> 00:07:40.650
+of a timeout to things to agents as well, but still it takes
+
+00:07:40.650 --> 00:07:45.980
+a little bit of time. And, uh, you will be able to find out
+
+00:07:45.980 --> 00:07:49.300
+that the resume system that we have over here, right? The
+
+00:07:49.300 --> 00:07:52.600
+resume AI that we have created over here. So again, it
+
+00:07:52.600 --> 00:07:55.680
+follows a similar kind of a nature, right? So you can try to
+
+00:07:55.680 --> 00:07:58.640
+click on this resume. You can try to select the template of
+
+00:07:58.640 --> 00:08:01.820
+the resume, and then you can try to upload a resume over
+
+00:08:01.820 --> 00:08:05.000
+here, right? You can try to upload the resume over here. Now
+
+00:08:05.000 --> 00:08:07.540
+after uploading the resume, you can try to give your GitHub
+
+00:08:07.540 --> 00:08:10.020
+profile or profile, or maybe you can try to skip this
+
+00:08:10.020 --> 00:08:13.720
+particular part and then you can give your JD, right? So
+
+00:08:13.720 --> 00:08:16.760
+company name and job description we used to give, and then
+
+00:08:16.760 --> 00:08:19.140
+we can click on continue and it will start building our
+
+00:08:19.140 --> 00:08:23.700
+resume. So this resume AI system that we have created, which
+
+00:08:23.700 --> 00:08:27.460
+is live and which we all are able to use it on a Euron
+
+00:08:27.460 --> 00:08:30.800
+platform, right? So the resume system that we all are able
+
+00:08:30.800 --> 00:08:37.760
+to use it. So this application is, okay, time out issue. Let
+
+00:08:37.760 --> 00:08:40.840
+me try this out once again, I have, I've just given a
+
+00:08:40.840 --> 00:08:44.400
+timeout because it was, uh, like, a. Uh, you know, very, uh,
+
+00:08:44.500 --> 00:08:48.540
+slow, uh, so I have just given a timeout so that, uh, it
+
+00:08:48.540 --> 00:08:54.900
+will not cross a certain time limit, machine learning
+
+00:08:54.900 --> 00:08:58.300
+engineer. Let me give a demo for this one.
+
+00:09:15.300 --> 00:09:17.960
+How do we make sure that this whole process is faster if we
+
+00:09:17.960 --> 00:09:21.080
+have to process a hundred to 200 resumes, see, uh, here,
+
+00:09:21.240 --> 00:09:24.300
+what we have done. So here, if you are going to upload your
+
+00:09:24.300 --> 00:09:29.480
+resume, so this system is taking hardly a 1.5 minute to 2
+
+00:09:29.480 --> 00:09:32.980
+minute of time means 90 second to max to max. You can say a
+
+00:09:32.980 --> 00:09:36.740
+200 second of time it is trying to take, and it is going to
+
+00:09:36.740 --> 00:09:39.640
+prepare your resume. So we have done a complete scalable
+
+00:09:39.640 --> 00:09:43.880
+deployment of this entire application. And the plus we have
+
+00:09:43.880 --> 00:09:47.180
+also given, uh, agents, uh, instruction that, okay, so do
+
+00:09:47.180 --> 00:09:50.240
+not take this much of time or trim out this part of the
+
+00:09:50.240 --> 00:09:53.660
+resume or that part of the resume and then recreate it. And
+
+00:09:53.660 --> 00:09:57.520
+obviously in a parallel, even if 200, not just 200, even
+
+00:09:57.520 --> 00:10:00.080
+2000, people are going to upload. That is human. It is going
+
+00:10:00.080 --> 00:10:03.340
+to take same amount of time, approximately 90 seconds to 1
+
+00:10:03.340 --> 00:10:08.020
+22nd of time, uh, as I have done some sort of a timeout
+
+00:10:08.020 --> 00:10:10.600
+things to this agent as well, which I'm going to show you in
+
+00:10:10.600 --> 00:10:13.780
+a code part. Uh, but yeah, so I have not made it a scalable.
+
+00:10:14.000 --> 00:10:18.480
+So it is, it is like a taking time, but this application
+
+00:10:18.480 --> 00:10:21.160
+that you are able to see. So technically, uh, the
+
+00:10:21.160 --> 00:10:23.820
+application, which I'm trying to show you, it's mimicking
+
+00:10:23.820 --> 00:10:26.640
+the same thing. So if you have to create this kind of a
+
+00:10:26.640 --> 00:10:29.900
+product, uh, or this kind of a system. Uh, you will, you
+
+00:10:29.900 --> 00:10:35.450
+can, we can follow the same approach. Yeah. It's not a URI
+
+00:10:35.450 --> 00:10:38.230
+resume. It's a resume AI. So URI is different. URI is
+
+00:10:38.230 --> 00:10:40.750
+basically like our conversational system and API system, by
+
+00:10:40.750 --> 00:10:41.970
+the way, uh,
+
+00:10:47.050 --> 00:10:50.770
+on the same way we can do a JD quality enhancer, a recruiter
+
+00:10:50.770 --> 00:10:53.470
+pays the rough job description tool, writes it with the
+
+00:10:53.470 --> 00:10:57.410
+clarity, miserable skill and, uh, inclusivity check, uh,
+
+00:10:57.510 --> 00:11:00.550
+yes, you can do that. I don't think that you need an agent
+
+00:11:00.550 --> 00:11:03.390
+for that one. Maybe you can just try to call, uh, some sort
+
+00:11:03.390 --> 00:11:05.550
+of, uh, you know, a real time, uh, you know, some, uh,
+
+00:11:05.650 --> 00:11:09.150
+Google search API, plus you can try to call LLM. So LLM plus
+
+00:11:09.150 --> 00:11:12.230
+a search API. And I think that is going to do a job, uh,
+
+00:11:12.350 --> 00:11:14.650
+because what it will do search API. So whenever you are
+
+00:11:14.650 --> 00:11:16.950
+going to give any kind of a job description, it will go to
+
+00:11:16.950 --> 00:11:19.710
+the market means it will go to the internet and we'll try to
+
+00:11:19.710 --> 00:11:24.310
+search a latest trend so that whatever keyword it is going
+
+00:11:24.310 --> 00:11:26.430
+to mention inside your job description, it should not be the
+
+00:11:26.430 --> 00:11:29.590
+outdated one. It should not be the old one. Uh, it can align
+
+00:11:29.590 --> 00:11:32.910
+itself towards a trend and then LLM is going to do what it
+
+00:11:32.910 --> 00:11:34.370
+is going to do. It is going to do the summarization. It is
+
+00:11:34.370 --> 00:11:37.230
+going to align it, format it, and then give it to you. So I
+
+00:11:37.230 --> 00:11:40.090
+don't think that, uh, agent, you can, you can do it with the
+
+00:11:40.090 --> 00:11:43.790
+agents. That's that's completely fine, but, uh, agents is
+
+00:11:43.790 --> 00:11:47.270
+not that required. Uh, it's a very small one, right? It's a
+
+00:11:47.270 --> 00:11:52.650
+very small application. You're just enhancing a JD resume
+
+00:11:57.000 --> 00:12:00.280
+is pretty fast and mostly perform a modification on the
+
+00:12:00.280 --> 00:12:03.660
+hooks. Yeah. So basically, uh, to create this, uh, resume
+
+00:12:03.660 --> 00:12:06.940
+AI, right. It took a lot of time for us. Uh, we were doing a
+
+00:12:06.940 --> 00:12:10.220
+lot of like, uh, Back-to-back experimentation, mostly on
+
+00:12:10.220 --> 00:12:13.340
+optimization side, because, uh, see, we can, we can build
+
+00:12:13.340 --> 00:12:15.980
+any kind of application. That's completely fine. But, uh,
+
+00:12:16.420 --> 00:12:19.620
+most of the problem we try to face on a scalability side and
+
+00:12:19.620 --> 00:12:22.440
+optimization side that, okay, this system should work in
+
+00:12:22.440 --> 00:12:26.080
+this particular timestamp. It should not cross, uh, uh, this
+
+00:12:26.080 --> 00:12:29.880
+particular time limit. And again, so it should not even give
+
+00:12:29.880 --> 00:12:32.900
+me a timeout error. So if some of the agents are going to
+
+00:12:32.900 --> 00:12:35.480
+fail and we have, we have handled all of these things here.
+
+00:12:50.250 --> 00:12:52.450
+Yeah. Anywhere code base is available for ATS resume
+
+00:12:52.450 --> 00:12:56.090
+builder. No, we have not made it public. It's a private code
+
+00:12:56.090 --> 00:13:01.170
+base. So code base is available, but, uh, with us, with your
+
+00:13:01.170 --> 00:13:02.370
+own, can
+
+00:13:09.730 --> 00:13:12.890
+we also create an agent here along with the ATS where agent
+
+00:13:12.890 --> 00:13:15.410
+visits a candidate mentioned GitHub profile and validate
+
+00:13:15.410 --> 00:13:19.270
+their work. I mean like a validation of the work, uh, I
+
+00:13:19.270 --> 00:13:22.230
+think you can create a separate, uh, pipeline for that one,
+
+00:13:22.310 --> 00:13:26.450
+uh, to check a GitHub or to access a GitHub and then maybe
+
+00:13:26.450 --> 00:13:28.650
+like a explore the project, which is available inside your
+
+00:13:28.650 --> 00:13:31.570
+GitHub and then give a score out of it, uh, for a particular
+
+00:13:31.570 --> 00:13:35.330
+JD. But I don't think that, uh, attaching, uh, a GitHub and
+
+00:13:35.330 --> 00:13:39.170
+a scrapping GitHub for a resume is going to be effective
+
+00:13:39.170 --> 00:13:42.630
+unnecessarily, uh, you will end up, you know, introducing a
+
+00:13:42.630 --> 00:13:46.250
+very heavy process over here. And again, so if you're
+
+00:13:46.250 --> 00:13:50.010
+introducing that in that case, uh, time is going to
+
+00:13:50.010 --> 00:13:54.710
+increase. So I will not advise if, if I'm building that, uh,
+
+00:13:54.750 --> 00:14:00.330
+kind of a product. Okay. It's taking more than expected
+
+00:14:00.330 --> 00:14:01.370
+time.
+
+00:14:07.960 --> 00:14:10.500
+Okay. So it's thinking, I can see that it's, it's in a
+
+00:14:10.500 --> 00:14:15.340
+thinking mode, by the way, my agents are thinking, can
+
+00:14:24.690 --> 00:14:27.670
+we add user mail here to give a feedback on the resume, like
+
+00:14:27.670 --> 00:14:30.490
+missing his skills and mail it? Yes, it will be able to do
+
+00:14:30.490 --> 00:14:32.790
+it automatically. So I believe I have already shown you that
+
+00:14:32.790 --> 00:14:35.850
+how you can do the integration of mail. Uh, right. So there
+
+00:14:35.850 --> 00:14:38.910
+are two way one, you can try to follow SMTP or other, you
+
+00:14:38.910 --> 00:14:43.190
+can try to follow basically, uh, APIs, uh, request. Uh, and,
+
+00:14:43.210 --> 00:14:46.110
+uh, yeah, so you can send the complete feedback, uh, to a
+
+00:14:46.110 --> 00:14:49.710
+candidate automatically. So based on the like, uh, parsing
+
+00:14:49.710 --> 00:14:51.570
+that you are trying to do, uh,
+
+00:14:54.720 --> 00:14:58.480
+it's still, I can see it's in a thinking phase. So I did
+
+00:14:58.480 --> 00:14:59.880
+think still
+
+00:15:20.140 --> 00:15:22.020
+thinking, okay.
+
+00:15:44.070 --> 00:15:47.470
+How agents are different from your RPA or IPA. Okay. So
+
+00:15:47.470 --> 00:15:50.410
+basically see agents will be having a LLM access, whereas
+
+00:15:50.410 --> 00:15:54.410
+your RPA will not be having a LLM access. It's kind of a, a
+
+00:15:54.410 --> 00:15:57.650
+rule based, uh, system. That we try to like configure. So
+
+00:15:57.650 --> 00:16:00.790
+basically it's a one step or you can say it's a RPA plus
+
+00:16:00.790 --> 00:16:03.790
+plus automation, plus, plus agents are always a automation
+
+00:16:03.790 --> 00:16:06.710
+plus, plus it's not like without agent, we can't do
+
+00:16:06.710 --> 00:16:09.690
+automation. We can do it. We have been doing it since a
+
+00:16:09.690 --> 00:16:13.030
+very, very long time, but yeah, with agents. So basically,
+
+00:16:13.090 --> 00:16:18.170
+uh, things get smarter if, if I'm able to use it in a proper
+
+00:16:18.170 --> 00:16:18.550
+manner.
+
+00:17:27.080 --> 00:17:31.700
+Basically my application is stuck with respect to ATS
+
+00:17:31.700 --> 00:17:37.280
+optimizer. Let me do one thing. Machine learning engineer.
+
+00:17:37.560 --> 00:17:42.360
+Fine. Fine. Now it will complete its job quickly.
+
+00:21:04.780 --> 00:21:13.170
+Uh, again, timeout issue, uh, why I think I have given
+
+00:21:13.170 --> 00:21:17.490
+enough time for this one. It should not take even this much
+
+00:21:17.490 --> 00:21:20.730
+of time. Yesterday night when I was like, uh, building this,
+
+00:21:20.870 --> 00:21:24.610
+uh, so it was not
+
+00:21:27.010 --> 00:21:29.730
+taking this much of time, but now it's taking this much of
+
+00:21:29.730 --> 00:21:31.950
+time. So okay. We'll fix it.
+
+00:21:58.500 --> 00:22:01.780
+I have already tested with multiple resumes, uh, the system.
+
+00:22:01.920 --> 00:22:05.300
+It was not taking more than, uh, one and a half minute to
+
+00:22:05.300 --> 00:22:08.860
+two minute of time. So now it's a failing. So basically my
+
+00:22:08.860 --> 00:22:12.520
+agents are getting into a multiple iterations. I have even
+
+00:22:12.520 --> 00:22:15.300
+controlled the iteration part. I'll even show you that part
+
+00:22:15.300 --> 00:22:18.920
+in a code. So how to control the iteration part and how to
+
+00:22:18.920 --> 00:22:22.900
+give a timestamp and how to give a tool access to a
+
+00:22:22.900 --> 00:22:25.980
+particular agents. Uh, I have already like, uh, done those
+
+00:22:25.980 --> 00:22:31.420
+implementation, but still it's getting into, uh, can
+
+00:22:49.050 --> 00:22:52.450
+you check the log? I'm already looking at it. I
+
+00:22:57.500 --> 00:23:00.400
+hope not consume the token. No, actually the, uh, the, the,
+
+00:23:00.400 --> 00:23:03.420
+the thing which I can see in a log. So basically it's, uh,
+
+00:23:03.460 --> 00:23:07.120
+like, uh, getting, giving me a timeout issue at a last
+
+00:23:07.120 --> 00:23:10.800
+stage. So where I'm looking for a ATS evaluation. So ATS
+
+00:23:10.800 --> 00:23:14.020
+score because it's, uh, in a last tab, right? So I am
+
+00:23:14.020 --> 00:23:17.640
+printing even a ATS evaluation. That what is the current ATS
+
+00:23:17.640 --> 00:23:21.100
+score of your resume system, the way we are doing it in a
+
+00:23:21.100 --> 00:23:25.020
+resume AI. So even resume AI gives you a, like a final score
+
+00:23:25.020 --> 00:23:28.340
+that, okay, this was, uh, like a score that we had before.
+
+00:23:28.480 --> 00:23:31.420
+And this is the score that we have now, a similar thing we
+
+00:23:31.420 --> 00:23:32.300
+are doing here as well.
+
+00:23:43.350 --> 00:23:47.230
+Just wait. Uh, it will be up and running. Don't worry. So it
+
+00:23:47.230 --> 00:23:51.890
+was up and running till, uh, yesterday night, uh, 3 AM I
+
+00:23:53.780 --> 00:23:54.720
+have already tested it.
+
+00:24:08.110 --> 00:24:10.530
+Just a piece of code, right? It always works.
+
+00:24:33.800 --> 00:24:37.900
+Maybe need to start to give some break to him. It's not
+
+00:24:37.900 --> 00:24:38.180
+required.
+
+00:24:43.030 --> 00:24:43.710
+Just wait.
+
+00:25:25.680 --> 00:25:30.760
+Hmm. Again, timeout issue, the user ATS analyzer tool to
+
+00:25:30.760 --> 00:25:37.280
+analyze a keyword gap. Okay. That's fine. Hmm. Let me fix it
+
+00:25:37.280 --> 00:25:40.840
+now. So I think it's time to fix it. Uh,
+
+00:25:45.780 --> 00:25:49.840
+let me increase a time or a maximum execution.
+
+00:26:40.760 --> 00:26:43.340
+Token limit exhausted. No, it's not a token limit basically.
+
+00:26:43.480 --> 00:26:46.140
+It's a timeout issue. Timeout time is something which I have
+
+00:26:46.140 --> 00:26:48.400
+given, I have configured it into the application basically
+
+00:26:48.400 --> 00:26:50.940
+that you should not take this much of time for this
+
+00:26:50.940 --> 00:26:51.440
+particular step.
+
+00:26:58.700 --> 00:27:03.160
+Just wait for some time. I'm just like, uh, changing it.
+
+00:27:20.820 --> 00:27:23.700
+I'll even tell you the reason that why it was like a thing
+
+00:27:23.700 --> 00:27:26.920
+so much of time and what is the fixes for that? Because I
+
+00:27:26.920 --> 00:27:30.140
+have like a, uh, two different, different version of the
+
+00:27:30.140 --> 00:27:35.220
+same application. So one where it can work quickly and one
+
+00:27:35.220 --> 00:27:36.640
+where it can take some time.
+
+00:28:25.440 --> 00:28:29.460
+Hmm. Now, so see it has, it has walked in, uh, like, uh, uh,
+
+00:28:29.460 --> 00:28:33.900
+85 overall score is 85 and it has worked quickly. And, uh, I
+
+00:28:33.900 --> 00:28:36.580
+basically, I have detached the tool with the agent. So I
+
+00:28:36.580 --> 00:28:39.500
+have kept two separately. And now you can see that, that,
+
+00:28:39.500 --> 00:28:42.840
+uh, it is able to give me the final refined version. So
+
+00:28:42.840 --> 00:28:45.080
+whether it's a skillset, whether it's a technical skill,
+
+00:28:45.280 --> 00:28:46.960
+whether it's a professional somebody, everything,
+
+00:28:47.060 --> 00:28:50.660
+everything, it is able to give it to me and, uh, here. So it
+
+00:28:50.660 --> 00:28:53.840
+is giving me even a ATS score for this particular resume,
+
+00:28:54.020 --> 00:28:56.900
+that whatever content that I've given to you with respect to
+
+00:28:56.900 --> 00:28:59.420
+a job description that you have mentioned. So basically, uh,
+
+00:28:59.560 --> 00:29:02.400
+the overall score, which I am able to make for this
+
+00:29:02.400 --> 00:29:05.380
+particular resume is 85, right? So which is a quite good,
+
+00:29:05.420 --> 00:29:08.860
+the score, uh, anything above 80 is like a quite good, uh,
+
+00:29:08.940 --> 00:29:12.060
+basically. So here it is able to like, uh, give me the score
+
+00:29:12.060 --> 00:29:15.240
+and then it is giving me some sort of a suggestions as well,
+
+00:29:15.280 --> 00:29:17.940
+a quick bins, which I have mentioned over here, right? Uh,
+
+00:29:18.080 --> 00:29:20.740
+so this is how this resume system is going to work. So just
+
+00:29:20.740 --> 00:29:23.700
+upload the resume up and copy and paste the job description.
+
+00:29:24.140 --> 00:29:26.660
+Okay. And automatically my agents are going to run. It's a
+
+00:29:26.660 --> 00:29:30.080
+multi, multi agent system that I've created and, uh, it will
+
+00:29:30.080 --> 00:29:32.940
+be able to parse your resume. It will try to understand the
+
+00:29:32.940 --> 00:29:35.180
+skillset. It will try to understand the project, which is
+
+00:29:35.180 --> 00:29:39.060
+available inside your resume or description about you, which
+
+00:29:39.060 --> 00:29:41.120
+is mentioned or description about the project, which is
+
+00:29:41.120 --> 00:29:43.360
+mentioned. So it will try to understand everything and step
+
+00:29:43.360 --> 00:29:46.320
+-by-step manner. And then what it will do. So it will try to
+
+00:29:46.320 --> 00:29:50.920
+rewrite the entire resume. So it is going to give a complete
+
+00:29:50.920 --> 00:29:53.980
+content for your entire resume. So this is what it is trying
+
+00:29:53.980 --> 00:29:58.000
+to do. Uh, do technically. So here, what I have done, so I
+
+00:29:58.000 --> 00:30:01.720
+have used basically a crew AI, right? To create this agent.
+
+00:30:01.920 --> 00:30:04.900
+It's not like it's my trade to create a, uh, use a crew AI.
+
+00:30:05.040 --> 00:30:07.680
+I can try to use any agentic system or any agentic
+
+00:30:07.680 --> 00:30:11.780
+framework. And I can try to build the same application, uh,
+
+00:30:11.900 --> 00:30:14.780
+just by using some other frameworks. But yeah, so as it's a
+
+00:30:14.780 --> 00:30:17.460
+part of house labor, so I have used a crew AI, plus I'm
+
+00:30:17.460 --> 00:30:21.360
+using LLM. So here I'm trying to use our open AI key, uh,
+
+00:30:21.560 --> 00:30:25.520
+which I have integrated. And which I have given an access to
+
+00:30:25.520 --> 00:30:30.920
+a crew AI for my LLMs. And uh, here is the final results.
+
+00:30:31.140 --> 00:30:33.820
+Now similar kind of things we are trying to perform even
+
+00:30:33.820 --> 00:30:37.020
+over here. Now whatever output it is going to give it to me.
+
+00:30:37.120 --> 00:30:40.020
+So we are just going to format it because it's just a text,
+
+00:30:40.080 --> 00:30:42.960
+right? And now we understand all the sections. Now my system
+
+00:30:42.960 --> 00:30:45.480
+understands all the sections. So what I, what, uh, this
+
+00:30:45.480 --> 00:30:48.400
+system is doing technically. So this system is trying to
+
+00:30:48.400 --> 00:30:52.580
+create basically a final version of a resume by putting up
+
+00:30:52.580 --> 00:30:56.140
+this particular data. Into one of the format that you are
+
+00:30:56.140 --> 00:30:58.060
+going to select. So we have given you three formats,
+
+00:30:58.180 --> 00:31:00.440
+whatever format that you are going to select, it will just
+
+00:31:00.440 --> 00:31:03.640
+try to fill all of those data in that format and you all
+
+00:31:03.640 --> 00:31:09.000
+will be able to download your resume. So now let's, uh, try
+
+00:31:09.000 --> 00:31:13.360
+to understand that how code is working in a backend and how
+
+00:31:13.360 --> 00:31:17.260
+it is able to perform all of these operations with the help
+
+00:31:17.260 --> 00:31:20.940
+of multiple agents. And obviously I'm going to use a
+
+00:31:20.940 --> 00:31:24.720
+framework called as crew AI. So shall we start now, we are
+
+00:31:24.720 --> 00:31:28.780
+able to get the output. Yeah. I'll even tell you that, uh,
+
+00:31:28.920 --> 00:31:32.380
+when it will take time. So why it was like giving me a
+
+00:31:32.380 --> 00:31:34.600
+timeout issue, because even yesterday when I was building
+
+00:31:34.600 --> 00:31:38.280
+this, uh, when I was like trying to tune this entire
+
+00:31:38.280 --> 00:31:40.900
+project, right? So I have, uh, like a tried a multiple
+
+00:31:40.900 --> 00:31:44.840
+approach, uh, and, uh, yes. So one of the approach is going
+
+00:31:44.840 --> 00:31:47.940
+to take a lot of time. The other approach is going to
+
+00:31:47.940 --> 00:31:50.900
+optimize the time, as you can see now quickly, I'm able to
+
+00:31:50.900 --> 00:31:54.180
+get the results. Not, not even like a 32nd, uh, it is taking
+
+00:31:54.180 --> 00:31:57.620
+now. So just within like a 22nd, so I was able to get the
+
+00:31:57.620 --> 00:32:00.340
+result. And in one of the approach, it was taking maybe more
+
+00:32:00.340 --> 00:32:03.420
+than two minutes, three minutes. And, uh, it was not able to
+
+00:32:03.420 --> 00:32:07.180
+produce the final result. It was getting stuck in some of
+
+00:32:07.180 --> 00:32:12.260
+the agent loops. Yeah. So let's try to understand this
+
+00:32:12.260 --> 00:32:17.040
+entire project, which I have created a step in a step-by
+
+00:32:17.040 --> 00:32:20.840
+-step manner. So shall we share a project first? Or shall we
+
+00:32:20.840 --> 00:32:23.760
+discuss a framework? A code? Yes. So which, which approach
+
+00:32:23.760 --> 00:32:24.580
+we should follow guys?
+
+00:32:28.290 --> 00:32:31.530
+So maybe we can, we can follow two approach. One is that I
+
+00:32:31.530 --> 00:32:34.490
+can share a code with all of you and then you can run it and
+
+00:32:34.490 --> 00:32:37.410
+then you can try to test it. Other approaches file by file,
+
+00:32:37.470 --> 00:32:40.530
+file by file, file by file, I'll just like, uh, explain the
+
+00:32:40.530 --> 00:32:46.270
+code. So, okay. Project first code walk through. Okay. Okay.
+
+00:32:46.390 --> 00:32:51.390
+File by file approach as you think fine. So try to open up a
+
+00:32:51.390 --> 00:32:54.870
+VS code by the way. Yeah. So just try to open up a VS code
+
+00:32:54.870 --> 00:33:00.230
+and, uh, here. So try to create one folder. Maybe I can try
+
+00:33:00.230 --> 00:33:04.710
+to create a folder over here, resume underscore PR, a CR
+
+00:33:04.710 --> 00:33:12.630
+parser, underscore through AI. Yeah. Now so inside this
+
+00:33:12.630 --> 00:33:15.030
+folder, we are going to perform each and every operation.
+
+00:33:15.650 --> 00:33:18.710
+Fine. So just, just do it guys now.
+
+00:33:28.280 --> 00:33:31.700
+So ideally what we are trying to do inside the system. Uh,
+
+00:33:31.780 --> 00:33:36.580
+let me explain to that. That part first. So here in
+
+00:33:39.400 --> 00:33:45.100
+this resume ATS or you can say ATS resume.
+
+00:33:50.620 --> 00:33:54.560
+So we are trying to define a different, different kind of a
+
+00:33:54.560 --> 00:34:02.580
+task. So let's suppose we have a task number one. Now let's
+
+00:34:02.580 --> 00:34:07.680
+suppose we have task number two, and then we have, let's
+
+00:34:07.680 --> 00:34:11.800
+suppose task number three. Now what are these tasks by the
+
+00:34:11.800 --> 00:34:17.060
+way? So task wise, I can say that, uh, in one of the task is
+
+00:34:17.060 --> 00:34:21.080
+parsing a resume data. The another task is basically
+
+00:34:21.080 --> 00:34:25.580
+rewriting as per the ATS. And then, uh, the another task
+
+00:34:25.580 --> 00:34:28.940
+could be redefining or refining the entire bullet points,
+
+00:34:29.060 --> 00:34:32.720
+which has been generated by the previous task. And then the
+
+00:34:32.720 --> 00:34:35.780
+fourth task could be that evaluation of the entire
+
+00:34:35.780 --> 00:34:38.900
+generation. So these are the four tasks you can say. Yeah.
+
+00:34:38.900 --> 00:34:40.740
+We are trying to perform. So let's suppose we have a task
+
+00:34:40.740 --> 00:34:43.480
+number one, two, three, four, and so on, right? We have a
+
+00:34:43.480 --> 00:34:46.700
+multiple task over here. Now what will happen? So we are
+
+00:34:46.700 --> 00:34:49.760
+trying to attach with this particular task. Let's suppose we
+
+00:34:49.760 --> 00:34:53.460
+have multiple tasks, right? So we are trying to attach our
+
+00:34:53.460 --> 00:34:58.580
+agents one with this particular task. We are going to attach
+
+00:34:58.580 --> 00:35:04.360
+our agent two with this task. We are going to attach our
+
+00:35:04.360 --> 00:35:08.760
+agent three with this particular task. So this is how this
+
+00:35:08.760 --> 00:35:12.380
+entire flow is going to work by the way. So first of all,
+
+00:35:12.420 --> 00:35:14.820
+I'm going to complete task number one, then task number two,
+
+00:35:14.860 --> 00:35:17.160
+and then task number three. Now to complete each and every
+
+00:35:17.160 --> 00:35:20.240
+task, there is a agent in place. So which is helping me out
+
+00:35:20.240 --> 00:35:23.220
+that, okay, I'll give you, I'll try to do the completion of
+
+00:35:23.220 --> 00:35:26.760
+this particular task now inside this particular agent. So
+
+00:35:26.760 --> 00:35:29.260
+when I'm saying agent, so maybe inside this particular
+
+00:35:29.260 --> 00:35:33.260
+agent, I can try to give a tool access. So tool access tool
+
+00:35:33.260 --> 00:35:36.420
+is nothing but a function, right? So tool access. I can try
+
+00:35:36.420 --> 00:35:40.100
+to give to each and every agent. Okay. So whenever I can try
+
+00:35:40.100 --> 00:35:42.920
+to give one single tool access, I can try to give even a
+
+00:35:42.920 --> 00:35:46.500
+multiple tool access. That's up to me. That's completely up
+
+00:35:46.500 --> 00:35:50.140
+to me, but yeah, so I can try to give a tool access tool is
+
+00:35:50.140 --> 00:35:52.820
+nothing but a function that we all understand that tool is
+
+00:35:52.820 --> 00:35:55.500
+nothing but just a function. And this is how crew AI is
+
+00:35:55.500 --> 00:35:58.600
+going to work. A crew we are going to create. So which is
+
+00:35:58.600 --> 00:36:01.600
+going to complete a particular task in a sequential manner
+
+00:36:01.600 --> 00:36:03.960
+that you do this, then I will do this, then I will do this
+
+00:36:03.960 --> 00:36:06.420
+and everything is going to run in a sequential manner. And
+
+00:36:06.420 --> 00:36:10.260
+to complete each and every task, we have a particular agent
+
+00:36:10.260 --> 00:36:13.400
+which has been defined. So agent is nothing but again, like
+
+00:36:13.400 --> 00:36:16.260
+something with the LLM access and something which will be
+
+00:36:16.260 --> 00:36:19.900
+able to access the tools and something which you will be
+
+00:36:19.900 --> 00:36:24.320
+able to configure as per your need, that what that
+
+00:36:24.320 --> 00:36:27.520
+particular agent is going to do with respect to a prompt,
+
+00:36:27.700 --> 00:36:30.680
+right? With respect to a prompt. So this is a very, very
+
+00:36:30.680 --> 00:36:33.640
+simple structure we are going to follow. And even in real
+
+00:36:33.640 --> 00:36:36.220
+time, we does the same thing, right? We try to take a task.
+
+00:36:36.260 --> 00:36:39.360
+And then we try to break down those tasks into multiple
+
+00:36:39.360 --> 00:36:42.600
+different, different small tasks. And because at the end of
+
+00:36:42.600 --> 00:36:46.860
+the day, my task is to make my resume ATS compliant and
+
+00:36:46.860 --> 00:36:49.580
+which should be in a sync with job description. That is the
+
+00:36:49.580 --> 00:36:52.860
+ultimate task that I have, what I have done. I have just
+
+00:36:52.860 --> 00:36:55.980
+broken down that particular task into a small, small pieces.
+
+00:36:56.060 --> 00:36:59.620
+And for every task I have attached a particular agent that,
+
+00:36:59.660 --> 00:37:02.320
+okay, this task will be done by this agent. This task will
+
+00:37:02.320 --> 00:37:04.640
+be done by this agent and this task will be done by this
+
+00:37:04.640 --> 00:37:08.360
+agent. Now. When agent will try to perform this task, I can
+
+00:37:08.360 --> 00:37:11.440
+try to attach a tool. It's not mandatory by the way, right?
+
+00:37:11.520 --> 00:37:14.200
+The tool, which I have mentioned over here. So the function,
+
+00:37:14.320 --> 00:37:16.840
+so tool means those who don't understand it's completely
+
+00:37:16.840 --> 00:37:19.400
+fine. So the tool, which I have mentioned over here, it's
+
+00:37:19.400 --> 00:37:22.920
+not mandatory. You can try to attach a tool. You can try to
+
+00:37:22.920 --> 00:37:26.900
+detach a tool. It's optional. Again, it's optional basically
+
+00:37:26.900 --> 00:37:29.680
+while creating an agent. So you can try to give a tool
+
+00:37:29.680 --> 00:37:32.800
+access to an agent, or you can just try to give me a simple
+
+00:37:32.800 --> 00:37:36.220
+prompt instruction that you have to do this. And you don't
+
+00:37:36.220 --> 00:37:39.600
+have to attach a tool. It's it's completely okay. And it
+
+00:37:39.600 --> 00:37:42.620
+depends upon a task as well. What kind of a task that we are
+
+00:37:42.620 --> 00:37:45.560
+going to perform? It is not mandatory. Generally people
+
+00:37:45.560 --> 00:37:48.060
+think that, that whenever we are trying to create an agent,
+
+00:37:48.140 --> 00:37:50.720
+so we have to attach a tool by default, but no, that's not
+
+00:37:50.720 --> 00:37:54.640
+mandatory by the way. Yeah. So now, uh, let's start and
+
+00:37:54.640 --> 00:37:57.380
+let's see that, uh, how we can try to create this kind of a
+
+00:37:57.380 --> 00:38:00.740
+system. But yeah, more or less, this is the complete flow of
+
+00:38:00.740 --> 00:38:03.860
+this things that we are going to discuss. And as we all know
+
+00:38:03.860 --> 00:38:07.040
+that, uh, what is agent? Yeah. And, uh, how it works. So it
+
+00:38:07.040 --> 00:38:10.700
+is not going to be difficult for any one of us to understand
+
+00:38:10.700 --> 00:38:13.640
+this entire code base. That's the first part. Second part is
+
+00:38:13.640 --> 00:38:17.060
+I can try to use even a crew AI cloud platform. Yesterday I
+
+00:38:17.060 --> 00:38:18.980
+have shown you, right, yesterday I have shown you, which is
+
+00:38:18.980 --> 00:38:22.900
+in a beta mode, but still, if I have to build this kind of
+
+00:38:22.900 --> 00:38:26.580
+application, so without even writing a single line of a code
+
+00:38:26.580 --> 00:38:30.700
+by myself, I can do it. That's also possible with respect to
+
+00:38:30.700 --> 00:38:34.480
+crew AI, uh, but yeah. So let's go ahead with the coding
+
+00:38:34.480 --> 00:38:38.020
+based approach. A non coding based approach with respect to
+
+00:38:38.020 --> 00:38:40.860
+a crew AI, I think we all can do it because just a prompt,
+
+00:38:40.960 --> 00:38:43.620
+right. Prompt. And then once it will be able to create the
+
+00:38:43.620 --> 00:38:47.820
+task, but the flow that I have drawn over here, this flow is
+
+00:38:47.820 --> 00:38:51.320
+a same flow. If you remember, so yesterday we have done some
+
+00:38:51.320 --> 00:38:55.340
+sort of a task and a system was trying to attach a agent
+
+00:38:55.340 --> 00:38:58.020
+with respect to a task, or even if you'll go now on a crew
+
+00:38:58.020 --> 00:39:00.800
+AI platform, and if you'll try to build some system, it will
+
+00:39:00.800 --> 00:39:03.080
+follow the exact same approach. And this is what like crew
+
+00:39:03.080 --> 00:39:05.960
+AI does internally. internally, or even if you are going to
+
+00:39:05.960 --> 00:39:11.360
+use a crew a cloud platform now here. So let's like a one by
+
+00:39:11.360 --> 00:39:13.900
+one, let's try to like create a first of all environment.
+
+00:39:14.160 --> 00:39:17.260
+Now once we will be able to create the environment, then
+
+00:39:17.260 --> 00:39:22.100
+let's try to configure each and every agents. So first of
+
+00:39:22.100 --> 00:39:25.800
+all, I will try to create a Python environment just for this
+
+00:39:25.800 --> 00:39:30.520
+particular project. And then I will start creating.
+
+00:39:43.150 --> 00:39:46.910
+So I think we all know that how to create a Python
+
+00:39:46.910 --> 00:39:50.670
+environment by the way, right? So just come over here,
+
+00:39:50.750 --> 00:39:58.090
+right? So Python P Y T H O N, Python hyphen M V E N V. And
+
+00:39:58.090 --> 00:40:01.550
+then I can try to give an environment name C R E W. So it
+
+00:40:01.550 --> 00:40:04.810
+will create a folder over here and all kinds of
+
+00:40:04.810 --> 00:40:07.070
+installation. It is going to keep inside this particular
+
+00:40:07.070 --> 00:40:10.190
+folder as simple as that. And if I have to activate this
+
+00:40:10.190 --> 00:40:15.730
+environment. So I can just try to go to. C R E W crew slash
+
+00:40:15.730 --> 00:40:17.310
+scripts
+
+00:40:21.790 --> 00:40:23.070
+slash
+
+00:40:25.600 --> 00:40:26.400
+activate.
+
+00:40:29.500 --> 00:40:33.220
+So this crew environment is activated. Now what I will do,
+
+00:40:33.260 --> 00:40:36.840
+I'll try to create a requirement.txt file. So here R E Q U I
+
+00:40:36.840 --> 00:40:41.400
+R E M N T S requirement.txt. Now inside this requirement
+
+00:40:41.400 --> 00:40:44.800
+.txt, I'm going to keep all of my requirement, whatever is
+
+00:40:44.800 --> 00:40:48.240
+required. So here I need a couple of things as you can see.
+
+00:40:48.460 --> 00:40:51.300
+So I need a crew AI. I need a crew AI. I need a crew AI
+
+00:40:51.300 --> 00:40:55.380
+tool. If I'm giving an access of a tool to an agent, this
+
+00:40:55.380 --> 00:40:58.040
+library is required. Otherwise this library is not required.
+
+00:40:58.540 --> 00:41:00.860
+Python dot environment. So again, just a Pythonic one
+
+00:41:00.860 --> 00:41:04.680
+request just to call the APIs or something. Py pdf, pass the
+
+00:41:04.680 --> 00:41:08.120
+pdf, Python docs, just to pass the docs, Streamlink for the
+
+00:41:08.120 --> 00:41:11.460
+UI application and Pydentic. So obviously to pass the
+
+00:41:11.460 --> 00:41:14.740
+schema, if I'm going to give a tool access, so I have to
+
+00:41:14.740 --> 00:41:17.760
+follow a particular nomenclature, which is coming from a
+
+00:41:17.760 --> 00:41:22.020
+Pydentic. So these installation is required. Now, once I
+
+00:41:22.020 --> 00:41:25.780
+will be able to do installation, so then I will be ready and
+
+00:41:25.780 --> 00:41:30.780
+I can start talking about the project. So here, pip install
+
+00:41:30.780 --> 00:41:32.220
+hyphen
+
+00:41:35.290 --> 00:41:39.590
+R requirements dot txt. Yeah.
+
+00:42:51.640 --> 00:42:54.320
+Okay. So I have just given you a drive link guys. So here
+
+00:42:54.320 --> 00:42:56.600
+you will be able to find out the code base, code base for
+
+00:42:56.600 --> 00:42:59.060
+this entire project. So I have just zipped it. Environment
+
+00:42:59.060 --> 00:43:01.200
+is not there. So you have to set up the environment by the
+
+00:43:01.200 --> 00:43:04.800
+way. Plus API key is also attached. So here. I'm not using a
+
+00:43:04.800 --> 00:43:08.320
+URI API. So directly I'm using a OpenAI API because some of
+
+00:43:08.320 --> 00:43:12.260
+you have already told me that you have been using a URI API,
+
+00:43:12.520 --> 00:43:15.760
+but somewhere we have to even like a use a OpenAI API
+
+00:43:15.760 --> 00:43:18.820
+directly. So keeping that in our mind. So in this demo, so
+
+00:43:18.820 --> 00:43:23.080
+I'm showing you OpenAI API, the API is like active and yeah,
+
+00:43:23.180 --> 00:43:26.100
+so after this class it will be deactivated and then you can
+
+00:43:26.100 --> 00:43:28.360
+start using a URI API as well. That's completely fine
+
+00:43:28.360 --> 00:43:30.720
+because at the end of the day, it's a LLM provider. Right.
+
+00:43:30.800 --> 00:43:33.380
+But yeah. So in this application, so I have used directly a
+
+00:43:33.380 --> 00:43:35.500
+OpenAI APIs, where
+
+00:43:38.280 --> 00:43:42.500
+is a drive link in your chat? Uh, let me ping you once
+
+00:43:42.500 --> 00:43:45.680
+again. So here is the drive link guys for all of you. Yeah.
+
+00:43:48.620 --> 00:43:51.320
+So everything is there. Requirement.txt file. Everything is
+
+00:43:51.320 --> 00:43:54.040
+available inside this one. Environment is not available.
+
+00:43:54.560 --> 00:43:57.180
+This one is not available. So you have to configure the
+
+00:43:57.180 --> 00:43:59.520
+environment, configure the environments. Just try to like a
+
+00:43:59.520 --> 00:44:02.400
+right path in virtual environment, create it and then run
+
+00:44:02.400 --> 00:44:03.920
+your requirement.txt.
+
+00:44:08.630 --> 00:44:10.550
+So yeah. Do it quickly guys. Everyone.
+
+00:45:37.380 --> 00:45:41.360
+Everyone. Hmm. Okay. So environment is ready. Now we can
+
+00:45:41.360 --> 00:45:43.900
+move ahead with the next step. So I believe all of you are
+
+00:45:43.900 --> 00:45:45.080
+able to download the code. Yeah.
+
+00:45:47.990 --> 00:45:48.850
+Yes. Everyone.
+
+00:45:52.030 --> 00:45:54.730
+Code download done. Fine. So inside the code itself, you
+
+00:45:54.730 --> 00:45:57.790
+will be able to find out a requirement.txt. So quickly just
+
+00:45:57.790 --> 00:46:00.550
+try to install your requirement.txt after creating a Python
+
+00:46:00.550 --> 00:46:03.350
+environment. I have not shared a Python environment with you
+
+00:46:03.350 --> 00:46:06.730
+because the file will be like a very, very heavy. So
+
+00:46:06.730 --> 00:46:10.390
+yesterday I have wrapped it up and the file size was like a
+
+00:46:10.390 --> 00:46:13.650
+too much. It was, I think 1.7 GB if I'm going to share the
+
+00:46:13.650 --> 00:46:16.270
+environment. So keeping that in a mind, I'm not sure the
+
+00:46:16.270 --> 00:46:19.430
+environment you can, I think, create it in your system. And
+
+00:46:19.430 --> 00:46:25.580
+I believe we all know how to get the environment. Okay. So
+
+00:46:25.580 --> 00:46:29.140
+once this part is done, now let's go ahead with the next
+
+00:46:29.140 --> 00:46:32.280
+step. Now what is the next step by the way? So our very
+
+00:46:32.280 --> 00:46:35.700
+first step that we are going to take over here to create the
+
+00:46:35.700 --> 00:46:38.540
+agent. So let's see how we can try to create the agent
+
+00:46:38.540 --> 00:46:42.600
+inside a particular project in terms of a crew AI. So how we
+
+00:46:42.600 --> 00:46:47.460
+can try to create a crew AI agents over here. And then I'll
+
+00:46:47.460 --> 00:46:51.640
+be talking about a task. So my task is going to call agent
+
+00:46:51.640 --> 00:46:55.040
+as per this particular flow. So first of all, I will try to
+
+00:46:55.040 --> 00:46:58.640
+create the independent agents. Then I will try to create a
+
+00:46:58.640 --> 00:47:02.620
+task. My task will be calling my agents. Then I will try to
+
+00:47:02.620 --> 00:47:05.920
+create a tools and then we'll see whether we can detach a
+
+00:47:05.920 --> 00:47:09.000
+tool or we can try to attach a tool and in the simpler
+
+00:47:09.000 --> 00:47:11.760
+manner. So we can try to build up. The entire flow, and then
+
+00:47:11.760 --> 00:47:14.900
+we are going to attach a UI layer on top of this one. So
+
+00:47:14.900 --> 00:47:17.980
+where I'm going to pass a resume technically input, right?
+
+00:47:18.020 --> 00:47:21.120
+So resume is an input. My job title is an input. My job
+
+00:47:21.120 --> 00:47:25.000
+description is a input. So that is basically a UI side. So
+
+00:47:25.000 --> 00:47:27.160
+where I'm going to provide these three inputs and then my
+
+00:47:27.160 --> 00:47:30.660
+entire flow will start running automatically as simple as
+
+00:47:30.660 --> 00:47:34.400
+that. So here to create an agent and just look into the
+
+00:47:34.400 --> 00:47:37.260
+code. So code is now available to all of you. So here, what
+
+00:47:37.260 --> 00:47:40.980
+we can do, we can try to create a G NTS agents.com. So this
+
+00:47:40.980 --> 00:47:41.400
+is a code that is going to be called agents dot PI file
+
+00:47:41.400 --> 00:47:45.760
+agents dot PI file. Now what we are going to mention inside
+
+00:47:45.760 --> 00:47:49.500
+the agents and what kind of agents we have to create. So
+
+00:47:49.500 --> 00:47:52.620
+basically we have to create our couple of agents over here.
+
+00:47:52.760 --> 00:47:56.680
+So the very first agent that we have to create is a parse
+
+00:47:56.680 --> 00:48:00.740
+agent. Now what this parse agent is going to perform for me,
+
+00:48:00.780 --> 00:48:04.620
+or it is going to do it for me. So basically it is going to
+
+00:48:04.620 --> 00:48:09.320
+like a extract the data. It is going to take the data. It's
+
+00:48:09.320 --> 00:48:12.700
+structured. The data, which will be suitable or which will
+
+00:48:12.700 --> 00:48:16.780
+be optimized with respect to the ATS. This is the goal of a
+
+00:48:16.780 --> 00:48:20.120
+one of the agents that we are going to create. Now the
+
+00:48:20.120 --> 00:48:22.620
+second agent that we are going to create. So basically it is
+
+00:48:22.620 --> 00:48:27.200
+going to be a ATS writer agent. So as per the ATS, it is
+
+00:48:27.200 --> 00:48:30.280
+going to, or as per the job requirement, it is going to
+
+00:48:30.280 --> 00:48:33.820
+create a data for me, basically it is going to generate a
+
+00:48:33.820 --> 00:48:37.260
+data for me and then a third agent we are going to create.
+
+00:48:37.440 --> 00:48:41.040
+Okay. Which will try to evaluate the data, which has been
+
+00:48:41.040 --> 00:48:44.820
+generated by my previous agent or previous task you can say,
+
+00:48:44.920 --> 00:48:49.200
+and then we can try to create a refiner agent. So which is
+
+00:48:49.200 --> 00:48:53.660
+going to transform each and every bullet points into a very,
+
+00:48:53.740 --> 00:48:57.240
+very high impact data set. So these are the four different,
+
+00:48:57.320 --> 00:48:59.340
+different, different, different kind of agents we are going
+
+00:48:59.340 --> 00:49:04.300
+to create over here. Now how we create a agent, by the way,
+
+00:49:04.380 --> 00:49:07.880
+it's not very difficult. It's very simple. So. First of all,
+
+00:49:07.880 --> 00:49:11.780
+they have already given you a agent library, or you can say
+
+00:49:11.780 --> 00:49:15.020
+they have already given you a agent API. So whenever you are
+
+00:49:15.020 --> 00:49:19.680
+going to do the import, so from crew, uh, AI, so you can
+
+00:49:19.680 --> 00:49:23.160
+directly import agents by the way. So this agents, you will
+
+00:49:23.160 --> 00:49:28.240
+be a capital, so you can directly import this agent, and
+
+00:49:28.240 --> 00:49:30.280
+this is going to help you out in terms of creating the
+
+00:49:30.280 --> 00:49:33.660
+agents. So simple call agents, and then you can try to pass
+
+00:49:33.660 --> 00:49:36.540
+all the parameters with respect to the agent. And
+
+00:49:36.540 --> 00:49:40.760
+eventually. It will be able to create the one as simple as
+
+00:49:40.760 --> 00:49:44.740
+that. So here, if we have to create one of the agent, let me
+
+00:49:44.740 --> 00:49:46.960
+show you the nomenclature. And if you are able to create one
+
+00:49:46.960 --> 00:49:49.760
+of the agent, you will be able to create hundreds of agents.
+
+00:49:50.040 --> 00:49:52.880
+It's the same thing, right? It's the same. So see, I'm
+
+00:49:52.880 --> 00:49:55.580
+trying to create one agent, which is, uh, it's an
+
+00:49:55.580 --> 00:49:58.960
+independent one. So first of all, just try to detach. So
+
+00:49:58.960 --> 00:50:01.540
+it's not connected. Just try to detach this one. As of now,
+
+00:50:01.600 --> 00:50:04.000
+these two things are not connected. I will try to create an
+
+00:50:04.000 --> 00:50:06.920
+independent agent. Number one, two, three, four, and so on.
+
+00:50:06.940 --> 00:50:09.860
+So whatever number of agents are required as per my task. So
+
+00:50:09.860 --> 00:50:12.400
+I'll try to create that. So here, if I have to create the
+
+00:50:12.400 --> 00:50:15.160
+agent, so simple, uh, create a function and then return,
+
+00:50:15.300 --> 00:50:18.140
+return what? Return the agent and how I'm returning the
+
+00:50:18.140 --> 00:50:21.940
+agent. So from here and inside this agent creation of a crew
+
+00:50:21.940 --> 00:50:24.860
+AI, so you have to give a couple of parameters. These are
+
+00:50:24.860 --> 00:50:28.140
+the standard parameter as per crew AI. So I have not defined
+
+00:50:28.140 --> 00:50:31.540
+it. Basically it's a crew AI who has defined it. So whenever
+
+00:50:31.540 --> 00:50:34.280
+you will end up creating the agents, you have to follow the
+
+00:50:34.280 --> 00:50:36.920
+exact same approach. And it technically. You don't have to
+
+00:50:36.920 --> 00:50:37.580
+follow the exact same approach. You don't have any kind of a
+
+00:50:37.580 --> 00:50:40.620
+control over to it, right? It's a crew AI, which, which does
+
+00:50:40.620 --> 00:50:44.300
+that. So here a role. So what is the role? So resume parsing
+
+00:50:44.300 --> 00:50:47.080
+a space list. This is the role. Now what is the goal? So
+
+00:50:47.080 --> 00:50:50.920
+extract clean structured text from a resume suitable for ATS
+
+00:50:50.920 --> 00:50:54.300
+optimization. So this is the goal. So you have to define the
+
+00:50:54.300 --> 00:50:56.820
+role, you have to define the goal, and then you have to give
+
+00:50:56.820 --> 00:50:59.920
+a backstory. I have given a very small backstory. I have
+
+00:50:59.920 --> 00:51:03.880
+even tried with a very, very lengthy backstory. Uh, you can,
+
+00:51:03.880 --> 00:51:06.820
+you can like, because this is a part of the fine tuning. So
+
+00:51:06.820 --> 00:51:10.240
+backstory wise, I'm saying that, that you efficiently clean
+
+00:51:10.240 --> 00:51:13.700
+a resume text by removing the artifact and normalizing a
+
+00:51:13.700 --> 00:51:17.140
+formatting focus on a speed and accuracy preserve all the
+
+00:51:17.140 --> 00:51:19.980
+important content while removing the noise. Now this is the
+
+00:51:19.980 --> 00:51:22.100
+backstory which I have given, right? This is the backstory.
+
+00:51:22.440 --> 00:51:25.780
+Now I can, I can try to elaborate this backstory. I can try
+
+00:51:25.780 --> 00:51:29.500
+to make it lengthy by saying that, that, okay, uh, so try to
+
+00:51:29.500 --> 00:51:33.600
+pass my resume, uh, try to identify maybe, uh, email ID,
+
+00:51:33.660 --> 00:51:36.020
+which is available, a GitHub link, which is available, a
+
+00:51:36.020 --> 00:51:38.100
+link. A LinkedIn link, which is available, a certification
+
+00:51:38.100 --> 00:51:41.780
+link, which is available inside my resume and do not lose
+
+00:51:41.780 --> 00:51:44.900
+all of those things. So maybe I can keep on elaborating it,
+
+00:51:44.940 --> 00:51:49.540
+always try to preserve the actual content or intent of my
+
+00:51:49.540 --> 00:51:52.080
+project. So maybe I can, I can write whatever I want, right?
+
+00:51:52.140 --> 00:51:54.680
+Just an instruction, just a prompting that we used to give.
+
+00:51:54.980 --> 00:51:57.660
+And like I said, yesterday when I was talking about, uh, I
+
+00:51:57.660 --> 00:52:00.860
+think in your class or maybe in a different class, uh, I was
+
+00:52:00.860 --> 00:52:03.800
+talking about a resume AI system that we have inside our
+
+00:52:03.800 --> 00:52:07.000
+urine. So technically it's, it's a prompting, right?
+
+00:52:07.200 --> 00:52:09.960
+Technically that is, you may. So the main part was
+
+00:52:09.960 --> 00:52:14.400
+prompting. So we have done a lot of prompting, uh, so that
+
+00:52:14.400 --> 00:52:17.440
+it will be able to give you a, uh, basically the prompting
+
+00:52:17.440 --> 00:52:21.020
+product, uh, resume AI, although agents and everything is
+
+00:52:21.020 --> 00:52:23.300
+fine, but technically agents are just a function calling,
+
+00:52:23.440 --> 00:52:27.460
+right? But uh, the entire resume, which it is able to
+
+00:52:27.460 --> 00:52:31.080
+create, it's out of the prompt that you all are able to get
+
+00:52:31.080 --> 00:52:33.300
+it because whatever prompt, which I'm going to give. Okay.
+
+00:52:33.300 --> 00:52:36.240
+So agents are going to consider that as an instruction and
+
+00:52:36.240 --> 00:52:39.200
+it is going to just follow along with that. So here I'm just
+
+00:52:39.200 --> 00:52:41.560
+trying to give a little bit of backstory, but you can try to
+
+00:52:41.560 --> 00:52:45.020
+elaborate that backstory. You can try to elaborate even a
+
+00:52:45.020 --> 00:52:48.680
+goal part. Maybe you can try to make your prompt better if
+
+00:52:48.680 --> 00:52:53.280
+you are not able to get the expected result. Then I have to
+
+00:52:53.280 --> 00:52:57.760
+pass a LLM, right? So in all the agents, you can try to pass
+
+00:52:57.760 --> 00:53:00.640
+one LLM in different, different agents. You can try to pass
+
+00:53:00.640 --> 00:53:03.660
+at different, different LLMs. And again, this is true. For a
+
+00:53:03.660 --> 00:53:06.780
+Lang chain, this is true for even a Lang graph. And that's
+
+00:53:06.780 --> 00:53:10.860
+holds true even for a crew AI that you can try to pass a
+
+00:53:10.860 --> 00:53:14.120
+separate, separate model to a separate, separate, basically,
+
+00:53:14.140 --> 00:53:17.980
+uh, like, uh, agents that you are going to create because it
+
+00:53:17.980 --> 00:53:20.980
+needs model, right? And when model comes into a picture, you
+
+00:53:20.980 --> 00:53:24.100
+can set a temperature. So I'm keeping it as zero. You can
+
+00:53:24.100 --> 00:53:27.120
+try to give a value between zero to one. That's completely
+
+00:53:27.120 --> 00:53:31.240
+fine, but zero means no hallucination, maximum iteration. So
+
+00:53:31.240 --> 00:53:34.140
+I can try to configure a maximum iteration. Maybe 10, 20, a
+
+00:53:34.140 --> 00:53:37.840
+hundred. So it will just give a try that many number of a
+
+00:53:37.840 --> 00:53:40.860
+time. So I don't want to, you know, give a multiple time
+
+00:53:40.860 --> 00:53:43.840
+tries. So keeping that in a mind, I have just kept it at
+
+00:53:43.840 --> 00:53:47.860
+one. And for this agent, I'm saying that, that you should
+
+00:53:47.860 --> 00:53:51.900
+not take more than one 20 second of a time. So maximum
+
+00:53:51.900 --> 00:53:55.320
+execution time, you should take max to max one 20. And if
+
+00:53:55.320 --> 00:53:59.160
+some processes are going to cross this time, then you will
+
+00:53:59.160 --> 00:54:02.780
+get a time out issue. And in an exception handling. You will
+
+00:54:02.780 --> 00:54:05.740
+have to handle it. I have not handled it here, but yeah, in
+
+00:54:05.740 --> 00:54:08.800
+a real time, obviously you will have to handle it. If it is
+
+00:54:08.800 --> 00:54:11.380
+going to give you the time, timeout issue the way I was
+
+00:54:11.380 --> 00:54:14.700
+getting, right. Maybe you have to go with the fallback that,
+
+00:54:14.780 --> 00:54:17.940
+okay. So if there is a timeout issue, then do this, maybe
+
+00:54:17.940 --> 00:54:23.140
+like a run this entire loop once again, or maybe just give a
+
+00:54:23.140 --> 00:54:26.000
+particular message that maybe your resume is very lengthy or
+
+00:54:26.000 --> 00:54:29.240
+something like that. But yeah, so this is the execution
+
+00:54:29.240 --> 00:54:32.380
+timeout. So this is one of the agent that we have created.
+
+00:54:32.400 --> 00:54:37.820
+Agent number one. Now we can try to create another agents as
+
+00:54:37.820 --> 00:54:41.400
+well. So this will, the first agent is going to read the
+
+00:54:41.400 --> 00:54:46.120
+data, clean it. The second agent, build a ATS writer. So
+
+00:54:46.120 --> 00:54:48.700
+what it is going to do? So basically rewrite the resume,
+
+00:54:48.940 --> 00:54:52.000
+like whatever resume that I have passed. So it is going to
+
+00:54:52.000 --> 00:54:55.920
+rewrite the resume, which should be aligned with respect to
+
+00:54:55.920 --> 00:55:00.180
+the job description, which I have mentioned. So ATS role is
+
+00:55:00.180 --> 00:55:02.900
+again, nomenclature. As you can see, it's the same. Role,
+
+00:55:02.900 --> 00:55:05.020
+goal, backstory, model, temperature, maximum iteration,
+
+00:55:05.240 --> 00:55:07.600
+maximum execution time. I'm not doing anything different,
+
+00:55:07.740 --> 00:55:10.060
+right? So role, goal, model, temperature, maximum iteration,
+
+00:55:10.260 --> 00:55:12.360
+maximum execution time. Same thing you will be able to find
+
+00:55:12.360 --> 00:55:14.620
+out. Role, goal, backstory, model, temperature, maximum
+
+00:55:14.620 --> 00:55:18.260
+iteration and execution time. So role is ATS optimization
+
+00:55:18.260 --> 00:55:22.080
+writer. Goal is create a high scoring ATS optimized resume
+
+00:55:22.080 --> 00:55:25.120
+that matches our job requirement perfectly. So whatever JD,
+
+00:55:25.220 --> 00:55:28.360
+which I'm going to pass and backstory. So you are an expert
+
+00:55:28.360 --> 00:55:32.100
+transforming resume. Uh. You are an expert at transforming
+
+00:55:32.100 --> 00:55:35.600
+resume into ATS friendly format that score 80 plus points.
+
+00:55:35.660 --> 00:55:37.700
+So I've given the instruction that, okay, go ahead with the
+
+00:55:37.700 --> 00:55:41.080
+80 plus, make it 80 plus. Right. Uh, it's not like a
+
+00:55:41.080 --> 00:55:43.300
+forcefully, it will give you that score, but yeah, it will
+
+00:55:43.300 --> 00:55:48.260
+try to make your entire resume a score 80 plus I can even
+
+00:55:48.260 --> 00:55:51.000
+give 90 plus that's completely fine. So it will try to give
+
+00:55:51.000 --> 00:55:53.980
+me a resume, uh, with respect to my job description, which
+
+00:55:53.980 --> 00:55:57.120
+will be having ATS score is equals to 90 plus that that's
+
+00:55:57.120 --> 00:56:01.080
+completely okay. So I have a control of that. Right. Uh, you
+
+00:56:01.080 --> 00:56:04.460
+strategically place a keyword. I'm saying that you have to
+
+00:56:04.460 --> 00:56:07.140
+do it. I don't have to, I don't want to do it. Use a strong
+
+00:56:07.140 --> 00:56:11.220
+action verb and quantify all the achievements, whatever
+
+00:56:11.220 --> 00:56:13.020
+achievement that you have mentioned, maybe a certification,
+
+00:56:13.380 --> 00:56:16.660
+maybe, uh, any kind of a internship or maybe any kind of a
+
+00:56:16.660 --> 00:56:19.540
+price that you have won. So it will do that. Uh, you work
+
+00:56:19.540 --> 00:56:22.100
+quickly and deliver the result that passes the, that pass
+
+00:56:22.100 --> 00:56:25.720
+the ATS system. So fine. This is the task, which it is, it
+
+00:56:25.720 --> 00:56:28.500
+will try to perform again. It needs some model access. Uh.
+
+00:56:28.500 --> 00:56:31.380
+Temperature wise. I have just given 0.3, right? Just a
+
+00:56:31.380 --> 00:56:34.280
+balanced temperature over here. Maximum iteration one and
+
+00:56:34.280 --> 00:56:36.900
+maximum execution time or one 22nd, not more than that. You
+
+00:56:36.900 --> 00:56:40.940
+should pay. So this is another agent, which I will end up
+
+00:56:40.940 --> 00:56:45.660
+creating. Then there is a another agent, right? Then there
+
+00:56:45.660 --> 00:56:49.020
+is another agent. So basically this agent is going to, uh,
+
+00:56:49.120 --> 00:56:53.660
+behave like a evaluator. So basically, uh, it is going to
+
+00:56:53.660 --> 00:56:56.420
+evaluate my entire resume and it is going to highlight the
+
+00:56:56.420 --> 00:57:01.300
+gaps. Okay. I'm saying that your role is as a ATS evaluator
+
+00:57:01.300 --> 00:57:04.420
+goal is provide a accurate ATS score and actionable
+
+00:57:04.420 --> 00:57:08.580
+improvement recommendation. Backstory is you are precisely a
+
+00:57:08.580 --> 00:57:11.360
+ATS scoring expert who quickly identify a gaps and provide
+
+00:57:11.360 --> 00:57:14.800
+the specific actionable recommendation. You focus on keyword
+
+00:57:14.800 --> 00:57:18.580
+density, uh, section structure and a miserable achievement.
+
+00:57:18.780 --> 00:57:21.300
+So this is a story backstory, which I have given to this
+
+00:57:21.300 --> 00:57:24.800
+agent. Rest is same. So model temperature, I'm keeping zero
+
+00:57:24.800 --> 00:57:27.160
+maximum iteration is equals to one execution time is equals
+
+00:57:27.160 --> 00:57:32.180
+to 120.6. So this is my agent number three. Now let's talk
+
+00:57:32.180 --> 00:57:35.880
+about the agent number four. So which is going to give me
+
+00:57:35.880 --> 00:57:40.060
+the refined polished bullet points with the matrixes over
+
+00:57:40.060 --> 00:57:44.100
+the actions. So here, uh, bullet point refiner. This is the
+
+00:57:44.100 --> 00:57:46.880
+role. Now what is the goal? Goal transform the bullet point
+
+00:57:46.880 --> 00:57:49.760
+into a high impact ATS optimized statement with the strong
+
+00:57:49.760 --> 00:57:53.360
+matrices and backstory. You excel at creating a powerful
+
+00:57:53.360 --> 00:57:55.800
+bullet points that combine the action of a specific
+
+00:57:55.800 --> 00:57:59.340
+achievements and quantify the results. You work efficiently
+
+00:57:59.340 --> 00:58:03.800
+to maximize the impact. So these are the four independent
+
+00:58:03.800 --> 00:58:08.120
+agents so far we have created. Now this agents are nowhere
+
+00:58:08.120 --> 00:58:10.860
+connected to my application or nowhere connected to my data
+
+00:58:10.860 --> 00:58:14.760
+even, right? These are just, uh, independent agents I have
+
+00:58:14.760 --> 00:58:18.860
+created as simple as that. Now inside this agent, inside
+
+00:58:18.860 --> 00:58:22.000
+this crew, a agent. So there is a parameter called as tools,
+
+00:58:22.180 --> 00:58:25.520
+right? There is a parameter called as tools. So if you have
+
+00:58:25.520 --> 00:58:29.700
+to give an access of tools. Tools. So if you have to give an
+
+00:58:29.700 --> 00:58:33.720
+access of a tool, you can try to attach a tool. And again,
+
+00:58:33.780 --> 00:58:37.000
+that's optional, right? That's optional. See role, goal,
+
+00:58:37.060 --> 00:58:40.040
+backstory, and model. These are the like a parameter, which
+
+00:58:40.040 --> 00:58:42.680
+is a mandatory parameter. But as far as this tool is
+
+00:58:42.680 --> 00:58:44.960
+concerned, as far as this maximum iteration is concerned, as
+
+00:58:44.960 --> 00:58:47.260
+far as this maximum execution time is concerned, temperature
+
+00:58:47.260 --> 00:58:51.100
+is concerned. These are technically a optional one. If I
+
+00:58:51.100 --> 00:58:53.700
+would like to give an access, I can give it. If I don't want
+
+00:58:53.700 --> 00:58:55.960
+to give an access, it's completely fine. It's up to me.
+
+00:58:56.220 --> 00:58:59.880
+Basically. How I am designing the entire system. So tool
+
+00:58:59.880 --> 00:59:03.740
+means you can give a function access so that my LLM itself
+
+00:59:03.740 --> 00:59:06.960
+or my agent itself will be able to call some of the
+
+00:59:06.960 --> 00:59:11.440
+function. So I have followed both the approach. I was trying
+
+00:59:11.440 --> 00:59:15.280
+to give a tool access to an agent and I have kept all the
+
+00:59:15.280 --> 00:59:17.900
+tools means all the functions because those functions were
+
+00:59:17.900 --> 00:59:21.180
+required. So I have kept all the functions even as a
+
+00:59:21.180 --> 00:59:24.140
+separate function and I have used it separately without even
+
+00:59:24.140 --> 00:59:27.180
+passing those tools to the agent. So when I was trying to
+
+00:59:27.180 --> 00:59:30.240
+pass this tools to an agent, it was taking a lot of time
+
+00:59:30.240 --> 00:59:34.300
+because here LLMs are deciding when I was calling a function
+
+00:59:34.300 --> 00:59:38.180
+directly. So technically it was like a pure programmatic way
+
+00:59:38.180 --> 00:59:41.680
+of calling those functions. So it was not taking much of the
+
+00:59:41.680 --> 00:59:45.380
+time. But in case of my agents calling a tool, it was taking
+
+00:59:45.380 --> 00:59:49.180
+a lot of time. And because of that, you must have seen that
+
+00:59:49.180 --> 00:59:52.740
+we were getting a time out issue in the beginning. So when
+
+00:59:52.740 --> 00:59:54.680
+we have experimented, when we were trying to like a
+
+00:59:54.680 --> 00:59:57.100
+generator, as you may, you know, it was taking a lot of time
+
+00:59:57.100 --> 01:00:01.600
+again. So I would not have received that timeout issue. If I
+
+01:00:01.600 --> 01:00:04.520
+can increase our time limit here itself, I can increase,
+
+01:00:04.700 --> 01:00:08.080
+right? Maybe it is not able to complete a task one agent
+
+01:00:08.080 --> 01:00:10.880
+because one agent is nothing but one employee. So if one
+
+01:00:10.880 --> 01:00:13.520
+employee is not able to complete a particular task in this
+
+01:00:13.520 --> 01:00:16.720
+given time, maybe I can increase the time and my timeout
+
+01:00:16.720 --> 01:00:20.420
+issue will be gone. Right? So that was not a very, very big
+
+01:00:20.420 --> 01:00:24.580
+issue. We can handle it. And maybe we can give a higher time
+
+01:00:24.580 --> 01:00:27.740
+over there. So what I'm trying to say that you can try to
+
+01:00:27.740 --> 01:00:31.580
+attach a tools, basically a function with an agent that
+
+01:00:31.580 --> 01:00:35.740
+parameter is already available, right? That parameter is
+
+01:00:35.740 --> 01:00:39.000
+already available. You can even try to attach a memory
+
+01:00:39.000 --> 01:00:42.280
+that's completely fine. That is also available. And that is
+
+01:00:42.280 --> 01:00:44.780
+not available just with the land graph or land chain. It's
+
+01:00:44.780 --> 01:00:48.300
+available with all the framework that you are going to use
+
+01:00:48.300 --> 01:00:52.920
+it. So if I'll talk about a crew AI, right, which is again,
+
+01:00:53.040 --> 01:00:57.040
+eventually another platform. Right? Another platform. So
+
+01:00:57.040 --> 01:01:00.880
+here, uh, if you will go to the official website of crew AI,
+
+01:01:00.980 --> 01:01:04.080
+now these are the things that you will be able to configure.
+
+01:01:04.280 --> 01:01:07.220
+They have clearly mentioned it, right? So you will be able
+
+01:01:07.220 --> 01:01:10.340
+to configure basically a task, which we are going to do,
+
+01:01:10.420 --> 01:01:14.660
+right? As per our design, we are going to create now a task
+
+01:01:14.660 --> 01:01:18.000
+and for every task, we'll give a access to an agent that,
+
+01:01:18.040 --> 01:01:20.360
+okay, this task will use this agent. This task will use this
+
+01:01:20.360 --> 01:01:23.720
+agent. This task will use this agent. So as per the official
+
+01:01:23.720 --> 01:01:27.540
+website of this crew AI. You can configure a task. So a list
+
+01:01:27.540 --> 01:01:31.520
+of the tasks assigned to a crew, right? Uh, agents. So list
+
+01:01:31.520 --> 01:01:34.400
+of the agent that are part of the crew. You can define the
+
+01:01:34.400 --> 01:01:37.600
+processes by the way, process flow. So whether it's going to
+
+01:01:37.600 --> 01:01:40.360
+be a sequential or it is going to be the hierarchical, you
+
+01:01:40.360 --> 01:01:43.200
+can try to define a Barbos. Barbos is nothing but a log,
+
+01:01:43.340 --> 01:01:46.260
+right? So by default, it will be false if you're going to
+
+01:01:46.260 --> 01:01:49.220
+like a keep it true. So it will keep on showing you all the
+
+01:01:49.220 --> 01:01:53.220
+internal logs, which agents are producing by the way, you
+
+01:01:53.220 --> 01:01:55.720
+can try to give a manager agent. You can try to give a
+
+01:01:55.720 --> 01:01:58.440
+function calling LLMs. You can try to give a configurations.
+
+01:01:58.860 --> 01:02:02.640
+Basically you can try to give a maximum RPM memory part. You
+
+01:02:02.640 --> 01:02:05.240
+can also give a short term memory, long term memory or the
+
+01:02:05.240 --> 01:02:08.640
+entire memory. So we have also seen that there is a memory
+
+01:02:08.640 --> 01:02:12.240
+called as a buffer memory, buffer window memory, KB memory,
+
+01:02:12.680 --> 01:02:15.760
+knowledge based memory. So all of those options are
+
+01:02:15.760 --> 01:02:19.940
+available even inside a crew AI. So what I'm, what I'm
+
+01:02:19.940 --> 01:02:23.280
+trying to show you over here that we are already aware about
+
+01:02:23.280 --> 01:02:27.780
+some of the agent TKI frameworks. Now this is not very
+
+01:02:27.780 --> 01:02:31.720
+different, right? This is not very different. A base is
+
+01:02:31.720 --> 01:02:34.760
+same. So whatever philosophy that we have been using in one
+
+01:02:34.760 --> 01:02:38.580
+of the framework, same philosophy has been used even over
+
+01:02:38.580 --> 01:02:42.160
+here and they have created their own library. That's the
+
+01:02:42.160 --> 01:02:45.700
+only differences you will be able to find out. Some are
+
+01:02:45.700 --> 01:02:49.060
+maybe easy to use. Some are a little bit difficult to use,
+
+01:02:49.180 --> 01:02:52.760
+but eventually we are doing the exact same thing and
+
+01:02:52.760 --> 01:02:55.380
+whatever functionality. That you will be able to see or
+
+01:02:55.380 --> 01:02:58.560
+whatever theory, right? That we used to learn. It's it's
+
+01:02:58.560 --> 01:03:01.360
+same everywhere, right? It's the same. It's the same like a
+
+01:03:01.360 --> 01:03:04.320
+things that they have followed. So catchy. I can try to
+
+01:03:04.320 --> 01:03:06.760
+integrate that in better. I can try to integrate that. I
+
+01:03:06.760 --> 01:03:11.100
+believe we all know. So everything that we see in any other
+
+01:03:11.100 --> 01:03:14.380
+platform or in any other framework, same thing I will be
+
+01:03:14.380 --> 01:03:18.520
+able to find out even inside a crew. Okay. Let me ping you
+
+01:03:18.520 --> 01:03:20.300
+this link now.
+
+01:03:32.680 --> 01:03:38.980
+So here. Let me remove this tool part. Yeah. So agents
+
+01:03:38.980 --> 01:03:42.460
+creation is done. Now once my agents creation are done, now
+
+01:03:42.460 --> 01:03:45.260
+maybe a model is required, right? Everywhere models are
+
+01:03:45.260 --> 01:03:48.980
+required by the way. So model wise, I can try to give any
+
+01:03:48.980 --> 01:03:53.200
+model access even from a URI. So and here I'm trying to use
+
+01:03:53.200 --> 01:03:57.700
+our open AI now coming to an open AI part. So many people
+
+01:03:57.700 --> 01:04:02.720
+may be not aware about open AI API key creation. So let me
+
+01:04:02.720 --> 01:04:05.680
+show you that part. So you can go to Google. If you have an
+
+01:04:05.680 --> 01:04:10.940
+open AI account, so open AI API, right? So you can just go
+
+01:04:10.940 --> 01:04:16.280
+to a platform.openai.com this particular one. And if you
+
+01:04:16.280 --> 01:04:18.780
+have an access, maybe if you don't have access, you can try
+
+01:04:18.780 --> 01:04:21.560
+to create the account quickly. You can go to this gear
+
+01:04:21.560 --> 01:04:24.240
+button, a setting, right? You can go to this setting and you
+
+01:04:24.240 --> 01:04:27.660
+can just go to a API keys. So in a, after going to a gear
+
+01:04:27.660 --> 01:04:30.920
+button setting, you will be able to see an API key option,
+
+01:04:31.060 --> 01:04:34.380
+right? You will be able to see a API key option. And if you
+
+01:04:34.380 --> 01:04:37.100
+have to create the API, you can directly click a new secret,
+
+01:04:37.340 --> 01:04:41.040
+give a name the way you were giving a name in case of a URI,
+
+01:04:41.180 --> 01:04:44.960
+and then it will be able to create the API. You can try to
+
+01:04:44.960 --> 01:04:47.840
+control the restriction permission is equal to all or maybe
+
+01:04:47.840 --> 01:04:51.140
+restricted. You can try to even give a permission with
+
+01:04:51.140 --> 01:04:55.380
+respect to audio completion embedding means one single API
+
+01:04:55.380 --> 01:04:59.160
+key and that is going to give you an access of all the
+
+01:04:59.160 --> 01:05:03.120
+ecosystem of open AI. Right? Whatever model, which is
+
+01:05:03.120 --> 01:05:07.140
+available with them, you will be able to access every model
+
+01:05:07.140 --> 01:05:11.780
+just with one single API key. This is how easy it is again.
+
+01:05:12.860 --> 01:05:15.360
+So whether you are looking for a audio model, chat
+
+01:05:15.360 --> 01:05:18.360
+completion model, embedding model, image model, everything
+
+01:05:18.360 --> 01:05:22.160
+will be available and you can even control it that, okay, so
+
+01:05:22.160 --> 01:05:25.940
+this is the API key and you can just like a switch it on or
+
+01:05:25.940 --> 01:05:29.360
+maybe make it off simple as simple as that. So it's just
+
+01:05:29.360 --> 01:05:33.280
+like using a URI. So it's not very different. It's it's like
+
+01:05:33.280 --> 01:05:37.680
+a exactly same, you can say and create the API key. So API
+
+01:05:37.680 --> 01:05:40.780
+key is already available. Like I said, it's already
+
+01:05:40.780 --> 01:05:43.900
+available inside your code base, which will be active till
+
+01:05:43.900 --> 01:05:47.580
+this class after this class, I'm going to deactivate it. So
+
+01:05:47.580 --> 01:05:51.340
+that because anyhow you have a URI API key access. So here
+
+01:05:51.340 --> 01:05:54.580
+what I'm trying to do, so I'm trying to set open API key and
+
+01:05:54.580 --> 01:05:58.600
+here my model is equal to GPT 4.0 mini. I can try to use any
+
+01:05:58.600 --> 01:06:00.520
+other model as well. I can try to use. I can use even a five
+
+01:06:00.520 --> 01:06:04.460
+series of the GPT that's completely okay. So now every agent
+
+01:06:04.460 --> 01:06:07.140
+is having a model access, right? Every agent is having a
+
+01:06:07.140 --> 01:06:10.320
+model access and by default crew AI is compatible with the
+
+01:06:10.320 --> 01:06:15.560
+open AI. Right? Almost all the framework which has been
+
+01:06:15.560 --> 01:06:17.540
+designed, whether it's a lang chain, lang graph, Lama
+
+01:06:17.540 --> 01:06:20.740
+indexes or crew, everything is first compatible with the
+
+01:06:20.740 --> 01:06:24.140
+open AI, whether it's compatible with other like a LLM
+
+01:06:24.140 --> 01:06:27.000
+provider or not, but yeah, by default they are making it
+
+01:06:27.000 --> 01:06:29.840
+compatible with the open AI. So that you don't have to do
+
+01:06:29.840 --> 01:06:34.600
+anything. Basically. So this is my agent creation now. So
+
+01:06:34.600 --> 01:06:38.120
+once my agent creation is done, then what I'm going to do,
+
+01:06:38.200 --> 01:06:41.940
+so then I'm going to basically create another file called as
+
+01:06:41.940 --> 01:06:48.860
+task, task dot Python file. So as we all know that we have
+
+01:06:48.860 --> 01:06:52.280
+to define a multiple task one by one, right? One by one. And
+
+01:06:52.280 --> 01:06:55.960
+then we have to give a access of an agent to this particular
+
+01:06:55.960 --> 01:07:01.040
+task. So let's do it right. Let's do it first. So here. Task
+
+01:07:01.040 --> 01:07:04.600
+wise, what we are going to do. So the very first task is
+
+01:07:04.600 --> 01:07:10.100
+parse my resume, whatever resume I'm going to send. So it is
+
+01:07:10.100 --> 01:07:14.400
+supposed to parse the resume. Now to create a task again,
+
+01:07:14.540 --> 01:07:22.080
+crew AI has given you a simple API. So from crew AI, from
+
+01:07:24.000 --> 01:07:30.680
+crew AI, import basically task. Yeah. Import task. Yeah. Now
+
+01:07:30.680 --> 01:07:33.260
+this is going to help me out in terms of creating the task
+
+01:07:33.260 --> 01:07:37.020
+as simple as that. Now what is the very first task which I'm
+
+01:07:37.020 --> 01:07:39.980
+going to create? The very first task, which I'm going to
+
+01:07:39.980 --> 01:07:43.400
+create over here is parse resume a task. Now what is the
+
+01:07:43.400 --> 01:07:45.720
+input it is going to take? So it is going to take input is
+
+01:07:45.720 --> 01:07:49.380
+equals to agent, right? Input is equal to agent. And then,
+
+01:07:49.400 --> 01:07:52.320
+uh, whenever I'm going to call it, right, wherever I'm going
+
+01:07:52.320 --> 01:07:54.580
+to call it. So it is going to take input is equal to agent,
+
+01:07:54.700 --> 01:07:58.320
+and then it is going to take resume a text. So here I'm
+
+01:07:58.320 --> 01:08:00.540
+creating a independent task. So again, you can. You can
+
+01:08:00.540 --> 01:08:03.800
+imagine that, that everything is isolated for now. I'm
+
+01:08:03.800 --> 01:08:06.380
+going, I have created an independent agents and I have
+
+01:08:06.380 --> 01:08:09.620
+created the independent task, but for task requirement is
+
+01:08:09.620 --> 01:08:12.600
+agent. And then obviously I'm trying to pass the data over
+
+01:08:12.600 --> 01:08:16.040
+here. Now once I'm going to pass a data, so I'm just
+
+01:08:16.040 --> 01:08:19.580
+limiting it towards a 1500 words by the way. Yeah. 1500
+
+01:08:19.580 --> 01:08:23.120
+words over here. And then what it is going to return. So it
+
+01:08:23.120 --> 01:08:26.840
+is going to return the task, right? So what is a task by the
+
+01:08:26.840 --> 01:08:30.420
+way? So task wise, you have to give a description. That what
+
+01:08:30.420 --> 01:08:34.060
+it is supposed to perform. So I'm saying that, that clean
+
+01:08:34.060 --> 01:08:37.480
+the resume a text quickly. So whatever data, which we are
+
+01:08:37.480 --> 01:08:40.240
+able to read, clean it quickly. This is the instruction
+
+01:08:40.240 --> 01:08:43.500
+which I'm giving and then remove artifact, normalize bullet
+
+01:08:43.500 --> 01:08:47.020
+points, keep all the content, be fast and direct. And to do
+
+01:08:47.020 --> 01:08:49.740
+this, right, to achieve, this is just a description, right?
+
+01:08:49.780 --> 01:08:52.120
+This is just a description, which I'm trying to define. So
+
+01:08:52.120 --> 01:08:55.320
+not to do this, you can use this agent. So whatever agent
+
+01:08:55.320 --> 01:08:58.260
+you are going to provide, it will be using that particular
+
+01:08:58.260 --> 01:09:00.940
+agent and I believe agent we have already created, right,
+
+01:09:01.020 --> 01:09:04.780
+for like a parsing the entire resume. And what is the output
+
+01:09:04.780 --> 01:09:07.920
+which I'm expecting? So again, in a prompt, clean resume a
+
+01:09:07.920 --> 01:09:10.420
+text with the proper structure. So this is the output which
+
+01:09:10.420 --> 01:09:14.500
+I'm expecting. So basically this task, whenever you are
+
+01:09:14.500 --> 01:09:18.300
+going to call, it is going to call an agent. It is going to
+
+01:09:18.300 --> 01:09:22.160
+attach with the agents and with the help of agent, it will
+
+01:09:22.160 --> 01:09:26.340
+try to use this data, technically a resume data, and then it
+
+01:09:26.340 --> 01:09:31.140
+is going to perform the task. Simple. Now let's go to the
+
+01:09:31.140 --> 01:09:37.500
+next step. Yeah. So here there is another task nomenclature
+
+01:09:37.500 --> 01:09:41.780
+is same. There is no change at all. So here we are trying to
+
+01:09:41.780 --> 01:09:44.660
+give a description. We are trying to attach agents and we
+
+01:09:44.660 --> 01:09:48.040
+are saying that this is the expected output for me. So
+
+01:09:48.040 --> 01:09:51.300
+description wise, I'm saying that, that, okay, a rewriter
+
+01:09:51.300 --> 01:09:54.420
+resume for a job title. So whatever job title, which I'm
+
+01:09:54.420 --> 01:09:56.940
+trying to provide with respect to a JD, right? Job
+
+01:09:56.940 --> 01:10:00.960
+description. Job. Job truncate a JD, right? And resume
+
+01:10:00.960 --> 01:10:03.940
+truncate a resume. So here I'm saying that, that, okay, uh,
+
+01:10:04.080 --> 01:10:07.080
+for this particular task, I'm going to provide agent that's
+
+01:10:07.080 --> 01:10:10.200
+completely fine. One of the agent, and I'm going to provide
+
+01:10:10.200 --> 01:10:15.020
+a clean resume text, which I'm doing it here, right? Which
+
+01:10:15.020 --> 01:10:18.100
+I'm doing it here. So clean resume text. I'm going to
+
+01:10:18.100 --> 01:10:20.540
+provide you a job title and I'm going to provide you a job
+
+01:10:20.540 --> 01:10:23.880
+description, which is another input, which I'm trying to
+
+01:10:23.880 --> 01:10:26.820
+give from my UI side. If you have seen that, right? So. So
+
+01:10:26.820 --> 01:10:29.320
+we are trying to give a job title and we are trying to give
+
+01:10:29.320 --> 01:10:32.500
+a job description and we are trying to pass a resume, but
+
+01:10:32.500 --> 01:10:35.340
+yeah, so whatever data it is going to give it to me, I'm
+
+01:10:35.340 --> 01:10:38.680
+going to pass it here. Clean resume text. This is how I'm
+
+01:10:38.680 --> 01:10:42.080
+going to configure it. So here, what it will do, it will try
+
+01:10:42.080 --> 01:10:45.020
+to truncate the resume, truncate a job description, and then
+
+01:10:45.020 --> 01:10:49.220
+it is going to fill inside the description. And as per the
+
+01:10:49.220 --> 01:10:52.320
+description, it is going to call my agents and it will go
+
+01:10:52.320 --> 01:10:54.780
+and give an instruction to the agents. Or you can say
+
+01:10:54.780 --> 01:10:58.060
+employee that, okay. Uh, this is the description and
+
+01:10:58.060 --> 01:11:00.140
+employee will be having its own instruction. Agent will be
+
+01:11:00.140 --> 01:11:02.740
+having its own instruction. So basically it is going to call
+
+01:11:02.740 --> 01:11:06.560
+the agents and it is going to complete the task as simple as
+
+01:11:06.560 --> 01:11:13.780
+that now. So next one, right? The next task, which I'm going
+
+01:11:13.780 --> 01:11:18.640
+to create is basically a refine a bullet, a task. So again,
+
+01:11:18.720 --> 01:11:22.800
+it needs an agent. It needs a rewritten resume text. So
+
+01:11:22.800 --> 01:11:26.840
+whatever this one is going to like, uh, return. So it is
+
+01:11:26.840 --> 01:11:30.100
+going to rewrite the resume as per my job description and
+
+01:11:30.100 --> 01:11:34.120
+job title. So this I'm going to pass inside this one. And
+
+01:11:34.120 --> 01:11:37.100
+again, I have given a description that Paul is this bullet
+
+01:11:37.100 --> 01:11:39.840
+point with the action warps and matrices. I can make it even
+
+01:11:39.840 --> 01:11:42.500
+lengthy. And if you are going to make it lengthy, it means
+
+01:11:42.500 --> 01:11:45.120
+more instruction. If you're going to give that will be
+
+01:11:45.120 --> 01:11:47.720
+always better, right? That will be always better. And that
+
+01:11:47.720 --> 01:11:50.680
+is the fine tuning that you can do with respect to your
+
+01:11:50.680 --> 01:11:53.460
+application that you are trying to create. And then here I'm
+
+01:11:53.460 --> 01:11:56.220
+trying to give an agent access. And then. This is the output
+
+01:11:56.220 --> 01:11:59.800
+expectation that I have. So again, another task, right? Task
+
+01:11:59.800 --> 01:12:03.800
+number three. Now task number three, then task number four,
+
+01:12:03.860 --> 01:12:07.180
+the evaluation part, right? So for evaluation, so this is
+
+01:12:07.180 --> 01:12:09.580
+the task, which is going to take again, an agent access
+
+01:12:09.580 --> 01:12:13.980
+final resume text from where, from here, right? Job title,
+
+01:12:14.120 --> 01:12:16.940
+the original one job description, the original one, because
+
+01:12:16.940 --> 01:12:22.660
+it has to evaluate my now produce data, a final data, final
+
+01:12:22.660 --> 01:12:25.320
+resume with respect to the activity. So this is the actual
+
+01:12:25.320 --> 01:12:28.380
+job title and actual job description. Then only it will be
+
+01:12:28.380 --> 01:12:32.220
+able to evaluate that whether my resume is ATS compliant or
+
+01:12:32.220 --> 01:12:34.980
+not. And then only it will be able to give me the score. At
+
+01:12:34.980 --> 01:12:37.140
+the end of the day, I will be interested in to a score,
+
+01:12:37.300 --> 01:12:40.180
+right? I will be interested in to the score by the way. So
+
+01:12:40.180 --> 01:12:43.880
+here I'm taking a final resume. I'm taking a job title. I'm
+
+01:12:43.880 --> 01:12:46.680
+taking a job description, the original one, original job
+
+01:12:46.680 --> 01:12:49.360
+title, original job description. I'm taking and the final
+
+01:12:49.360 --> 01:12:52.060
+resume text from the previous task, right from the previous
+
+01:12:52.060 --> 01:12:55.120
+task I'm trying to take. And then I have given our simple
+
+01:12:55.120 --> 01:12:58.820
+description that, okay, score this resume based on job
+
+01:12:58.820 --> 01:13:02.100
+title, based on the truncated job description, based on the
+
+01:13:02.100 --> 01:13:05.400
+resume, the final resume that I'm getting over here. And
+
+01:13:05.400 --> 01:13:08.840
+then rate one to five keyword structure, matrices, verb
+
+01:13:08.840 --> 01:13:11.760
+format, return JSON with the overall score between zero to a
+
+01:13:11.760 --> 01:13:14.300
+hundred, right? So this is a simple instruction I have
+
+01:13:14.300 --> 01:13:17.140
+given. And obviously it will be having a worker agent
+
+01:13:17.140 --> 01:13:19.620
+access, basically employee access, basically, which is a
+
+01:13:19.620 --> 01:13:23.780
+agent by the way over here. And I'm saying that, that I'm
+
+01:13:23.780 --> 01:13:27.320
+expecting a output in a JSON format. Clearly I have defined
+
+01:13:27.320 --> 01:13:29.960
+that in a JSON format, I'm expecting the output. So you must
+
+01:13:29.960 --> 01:13:33.920
+have seen that it is giving me a basically an output of this
+
+01:13:33.920 --> 01:13:37.460
+score into a JSON format, right? Into a JSON format, it is
+
+01:13:37.460 --> 01:13:39.660
+trying to give me the output as per my instruction, which I
+
+01:13:39.660 --> 01:13:44.080
+have given. So fine. These are the tasks. So independent
+
+01:13:44.080 --> 01:13:48.260
+agent creation is done. Independent task creation is done.
+
+01:13:48.740 --> 01:13:51.920
+Both are independent by the way. Yeah. Nowhere, these two
+
+01:13:51.920 --> 01:13:55.540
+things are attached at all means literally attached at all.
+
+01:13:55.620 --> 01:13:59.300
+These things are not at all connected with any one of these
+
+01:13:59.300 --> 01:14:04.580
+making sense guys, all of us. Yeah. So in crew AI agent
+
+01:14:04.580 --> 01:14:08.560
+layer and task layer task is actually a main things task is
+
+01:14:08.560 --> 01:14:11.860
+eventually calling the agents. So here, as you can see, task
+
+01:14:11.860 --> 01:14:14.760
+is eventually going to call the agent, whatever agent I
+
+01:14:14.760 --> 01:14:16.980
+would like to provide, I can try to provide that particular
+
+01:14:16.980 --> 01:14:20.180
+agent access means employee access. So it's a simple,
+
+01:14:20.240 --> 01:14:23.440
+simple, simple, similar like a, you can, you can say that
+
+01:14:23.440 --> 01:14:27.820
+the kind of a work we do across organization inside the
+
+01:14:27.820 --> 01:14:31.120
+industry, same, right? Someone is going to define the task
+
+01:14:31.120 --> 01:14:34.080
+and some employees going to do the task. Same thing. We are
+
+01:14:34.080 --> 01:14:39.760
+doing it here. Yes. Same thing. There is no differences. You
+
+01:14:39.760 --> 01:14:44.500
+will be able to find out a line number 18 and 19. I think
+
+01:14:44.500 --> 01:14:47.700
+it's just a Python code, right? So we are trying to like a
+
+01:14:47.700 --> 01:14:50.820
+read this Python code. Whatever data, which we are going to
+
+01:14:50.820 --> 01:14:53.760
+provide. So we are going to read a data till this 1200
+
+01:14:53.760 --> 01:14:56.920
+keyword. And then we are trying to check if length of clean
+
+01:14:56.920 --> 01:15:01.780
+resume is more than 1200, right? So do this, do this,
+
+01:15:01.840 --> 01:15:05.800
+otherwise it is a clean resume. I think it's a basic Python
+
+01:15:05.800 --> 01:15:09.820
+code. Why you are facing an issue with respect to
+
+01:15:09.820 --> 01:15:13.300
+understanding this one is just a kind of a, you know, a
+
+01:15:13.300 --> 01:15:16.520
+list. And then we have written a condition over here, right?
+
+01:15:16.520 --> 01:15:19.490
+Right? Anyone? Yes.
+
+01:15:24.160 --> 01:15:28.960
+Yeah. Any difficulties anyone is facing? It's just a basic
+
+01:15:28.960 --> 01:15:32.100
+Python code or passing a string. Why we are facing issue
+
+01:15:32.100 --> 01:15:32.440
+here.
+
+01:15:37.660 --> 01:15:40.820
+Fine. I'm just trying to truncate my data so that, you know,
+
+01:15:40.820 --> 01:15:43.760
+even if someone is going to pass a resume with the 10 pages,
+
+01:15:43.980 --> 01:15:46.280
+it is, it is not going to work on that. It is just going to
+
+01:15:46.280 --> 01:15:50.100
+take a first 1200 or first 1500. I can even control that
+
+01:15:50.100 --> 01:15:53.500
+part. Yeah. But I don't think that we should like, you know,
+
+01:15:53.520 --> 01:15:55.820
+face any kind of issue and we should be expecting an
+
+01:15:55.820 --> 01:15:58.660
+explanation for this. This one, at least this, this like a
+
+01:15:58.660 --> 01:15:59.400
+kind of Python code.
+
+01:16:03.310 --> 01:16:10.590
+Fine. Okay. Now, so agents are done, task are done. Then
+
+01:16:10.590 --> 01:16:15.910
+what? Right. Then what we have to basically do it here. So
+
+01:16:15.910 --> 01:16:20.910
+then what we can do, so we can try to create one folder as
+
+01:16:20.910 --> 01:16:27.110
+per my project nomenclature called as file tools. Tools.
+
+01:16:27.350 --> 01:16:30.050
+Yeah. Which, which is going to help me out in terms of. In
+
+01:16:30.050 --> 01:16:32.990
+terms of basically processing the file. So inside that let's
+
+01:16:32.990 --> 01:16:36.170
+create a blank underscore underscore I N I T so that a
+
+01:16:36.170 --> 01:16:39.990
+package model should not give me an issue dot PI, keep it
+
+01:16:39.990 --> 01:16:44.330
+blank. And then inside this folder itself, let's try to give
+
+01:16:44.330 --> 01:16:52.530
+a file, a loader for a loader dot PI file. Now so here I'm
+
+01:16:52.530 --> 01:16:55.510
+going to create a raw function, a raw Pythonic function. So
+
+01:16:55.510 --> 01:16:57.870
+which is going to help me out in terms of processing the
+
+01:16:57.870 --> 01:17:01.170
+data. Yeah. In terms of processing the data, because I need
+
+01:17:01.170 --> 01:17:04.590
+some function. So which will be able to read a PDF file or
+
+01:17:04.590 --> 01:17:08.930
+maybe a document file or maybe a dot TXT file, and it should
+
+01:17:08.930 --> 01:17:12.490
+be able to extract a data out of these files. So I need
+
+01:17:12.490 --> 01:17:16.170
+these kinds of a function, and this is something that you
+
+01:17:16.170 --> 01:17:19.430
+will be able to find out here inside this file loader dot PI
+
+01:17:19.430 --> 01:17:22.890
+file. So here the very first function that you will be able
+
+01:17:22.890 --> 01:17:26.850
+to see is basically extraction of the data from a PDF file.
+
+01:17:26.990 --> 01:17:29.990
+Okay. So if someone is going to pass a resume into a PDF
+
+01:17:29.990 --> 01:17:33.710
+format, okay, not an issue. So I'm trying to use a very
+
+01:17:33.710 --> 01:17:37.310
+simple library, PDF reader library. I'm not doing anything.
+
+01:17:37.470 --> 01:17:40.330
+So technically this PDF library will be able to handle
+
+01:17:40.330 --> 01:17:42.830
+everything for me. Everything means literally everything. It
+
+01:17:42.830 --> 01:17:46.030
+will be able to read the entire PDF. And here, as you can
+
+01:17:46.030 --> 01:17:49.110
+see, so page by page, we are reading it. So page by page,
+
+01:17:49.190 --> 01:17:52.110
+this function will try to read the PDF and then it is going
+
+01:17:52.110 --> 01:17:57.450
+to create a final list. So where it is going to keep the
+
+01:17:57.450 --> 01:17:58.750
+data. It is going to keep everything. So this code is clear
+
+01:17:58.750 --> 01:18:01.330
+guys, this part, do you need explanation for this one?
+
+01:18:02.770 --> 01:18:07.910
+Simple, read a PDF, run it page by page, and then append it,
+
+01:18:07.990 --> 01:18:11.590
+append into a list. Yeah. So now all data will be available.
+
+01:18:11.830 --> 01:18:14.210
+So these, these functions are very basic function. I think
+
+01:18:14.210 --> 01:18:16.670
+we have already written these functions more than like a
+
+01:18:16.670 --> 01:18:19.470
+thousand times in the past. If you have gone through a
+
+01:18:19.470 --> 01:18:24.430
+Pythonic lectures, then from a docs, right? So from a docs,
+
+01:18:24.490 --> 01:18:26.610
+let's suppose if someone is going to provide a PDF resume.
+
+01:18:27.450 --> 01:18:30.150
+You may do a document format. So again, we are not doing
+
+01:18:30.150 --> 01:18:32.790
+anything. We are just using a library, a document library,
+
+01:18:32.970 --> 01:18:36.370
+and then same thing. So one by one, go through page by page,
+
+01:18:36.430 --> 01:18:39.510
+page by page, page by page, and create a list inside that in
+
+01:18:39.510 --> 01:18:42.190
+just all the data, whatever pages of the data, whatever data
+
+01:18:42.190 --> 01:18:45.430
+is available in all the pages, just ingest it, right? Just
+
+01:18:45.430 --> 01:18:49.150
+ingest it. So this is like a raw function, nowhere again
+
+01:18:49.150 --> 01:18:51.750
+attached with an agent so far and nowhere it has been
+
+01:18:51.750 --> 01:18:56.850
+attached to a, basically like a task so far. Right? So there
+
+01:18:56.850 --> 01:19:01.010
+is a final function, which is, which I'm going to use. So
+
+01:19:01.010 --> 01:19:05.130
+detect and extract. So basically a person can pass or user
+
+01:19:05.130 --> 01:19:08.550
+can pass a PDF file or user can pass a document file. Either
+
+01:19:08.550 --> 01:19:11.830
+of these file, right? User can try to pass. So we have to
+
+01:19:11.830 --> 01:19:15.030
+like a process of all kinds of files and systems should be
+
+01:19:15.030 --> 01:19:17.950
+able to detect it automatically. So here what we are trying
+
+01:19:17.950 --> 01:19:21.410
+to do, so whenever someone is going to pass a file, file
+
+01:19:21.410 --> 01:19:23.650
+name I'm going to receive. So I'm going to keep it in a
+
+01:19:23.650 --> 01:19:26.850
+lower. And then we are trying to check. That if file name
+
+01:19:26.850 --> 01:19:30.430
+ends with .pdf, means if it is a PDF file, then call what?
+
+01:19:30.550 --> 01:19:34.610
+Call this one. Yeah. Call this function. Simple, which will
+
+01:19:34.610 --> 01:19:38.270
+be able to work with a PDF. If it is available into a doc
+
+01:19:38.270 --> 01:19:42.650
+format, .docx format, then just call the second function,
+
+01:19:42.750 --> 01:19:46.450
+this function. Yeah. Call this function. Simple. Right?
+
+01:19:46.570 --> 01:19:51.090
+Simple. And if someone is going to pass something into a
+
+01:19:51.090 --> 01:19:54.470
+text format, then return text as simple as that. Just return
+
+01:19:54.470 --> 01:19:57.790
+a text over here. So this is the actual function, which I
+
+01:19:57.790 --> 01:20:00.530
+will be using. And this function is by default calling PDF
+
+01:20:00.530 --> 01:20:04.150
+function and doc function, or maybe a TXT. Depends upon the
+
+01:20:04.150 --> 01:20:08.610
+file name that you are going to pass over here, right?
+
+01:20:08.670 --> 01:20:10.670
+Whatever file name that you are going to pass over here,
+
+01:20:10.730 --> 01:20:14.870
+based on that, it is going to give a call as simple as that.
+
+01:20:15.170 --> 01:20:18.690
+Nothing much, which we are trying to do over here. So this
+
+01:20:18.690 --> 01:20:21.150
+is just an independent supporter function, which I have
+
+01:20:21.150 --> 01:20:26.910
+created inside this file name. It is called tool folder. Now
+
+01:20:26.910 --> 01:20:33.190
+close it. So agents is done. Tasks are done. And then file
+
+01:20:33.190 --> 01:20:36.510
+reading function is done. Right? File reading function is
+
+01:20:36.510 --> 01:20:44.470
+done over here. Now what is next for us? So now, we are
+
+01:20:44.470 --> 01:20:49.230
+using basically bytes inside this one. So we are trying to
+
+01:20:49.230 --> 01:20:52.330
+provide everything as a bytes. So let's do one thing. So
+
+01:20:52.330 --> 01:20:53.990
+let's try to create a spreadsheet. So let's create a small
+
+01:20:53.990 --> 01:20:56.550
+util function, which will be able to give me a data as a
+
+01:20:56.550 --> 01:21:04.100
+bytes. So here, utils.py file, this is just a supporting
+
+01:21:04.100 --> 01:21:07.240
+library I'm trying to create. So which will help me out in
+
+01:21:07.240 --> 01:21:10.140
+terms of converting everything into a bytes, right? So text
+
+01:21:10.140 --> 01:21:14.380
+to doc to text to docs bytes, basically. So in a byte
+
+01:21:14.380 --> 01:21:16.540
+format, it is going to give me a return, just a supporting
+
+01:21:16.540 --> 01:21:19.600
+function, because I need everything to be passed as a bytes.
+
+01:21:19.740 --> 01:21:23.300
+A reason is very simple. These functions that I'm using over
+
+01:21:23.300 --> 01:21:27.440
+here, right? It expects input in that panel, right? So this
+
+01:21:27.440 --> 01:21:29.400
+is the nomenclature of this function. This is the property
+
+01:21:29.400 --> 01:21:31.840
+of this particular function, which I'm using. And if it
+
+01:21:31.840 --> 01:21:34.300
+requires something in a byte format, I have to convert it.
+
+01:21:34.420 --> 01:21:37.260
+So this is just a type conversion, which I'm doing. So over
+
+01:21:37.260 --> 01:21:41.060
+there, my utils function will come into picture. Now let's
+
+01:21:41.060 --> 01:21:46.140
+do a main job. What is the main job? By the way, the main
+
+01:21:46.140 --> 01:21:51.480
+job is to create a crew now. Yeah. Because now I have a
+
+01:21:51.480 --> 01:21:56.080
+task. I have agents. I have all those utility functions,
+
+01:21:56.180 --> 01:21:59.740
+which is going to read out my files. So now it's time to
+
+01:21:59.740 --> 01:22:03.840
+create a crew. Crew means this entire flow or this entire
+
+01:22:03.840 --> 01:22:07.200
+processes. This is the entire crew, which I have to create.
+
+01:22:07.340 --> 01:22:11.360
+I have to attach each and every crew members with everyone
+
+01:22:11.360 --> 01:22:15.440
+because all this tasks are basically a members, right? And
+
+01:22:15.440 --> 01:22:18.720
+these agents are nothing but employee who's like attached
+
+01:22:18.720 --> 01:22:22.200
+with this members task, you can say. Okay. And now I have to
+
+01:22:22.200 --> 01:22:26.160
+build this entire funnel that, okay, do this, call this one
+
+01:22:26.160 --> 01:22:28.680
+first, then this one for second, then this one third, and
+
+01:22:28.680 --> 01:22:31.960
+then that one fourth in this way. So now let's go ahead and
+
+01:22:31.960 --> 01:22:36.460
+let's try to create a file called as crew C R E W dot PI
+
+01:22:36.460 --> 01:22:41.520
+file. Now what we are going to do with respect to a crew. So
+
+01:22:41.520 --> 01:22:45.200
+here, first of all, do the import through AI. So import crew
+
+01:22:45.200 --> 01:22:47.980
+and import a processes. These two imports are required.
+
+01:22:48.380 --> 01:22:52.720
+Okay. Okay. Okay. So you can import agents as well as try to
+
+01:22:52.720 --> 01:22:56.600
+import your task both. So from an agent file, we are trying
+
+01:22:56.600 --> 01:23:00.940
+to import a build parser agent, build ATS writer agent,
+
+01:23:01.120 --> 01:23:04.060
+build evaluator agent, build refiner agent. So all the
+
+01:23:04.060 --> 01:23:07.320
+agents will be available in this file and then task. So
+
+01:23:07.320 --> 01:23:10.900
+parse resume a task, rewrite for ATS task, evaluate ATS task
+
+01:23:10.900 --> 01:23:14.300
+and refine bullet task. So now all the agents and all the
+
+01:23:14.300 --> 01:23:17.940
+tasks will be available inside this file, which I'm going to
+
+01:23:17.940 --> 01:23:20.880
+use to build a crew. The final step you can say. Right?
+
+01:23:21.060 --> 01:23:24.120
+Final step. And then the last step will be my UI interface
+
+01:23:24.120 --> 01:23:27.940
+where I will connect because the UI is doing what just, uh,
+
+01:23:28.080 --> 01:23:30.680
+it is trying to take a data input and then whatever data
+
+01:23:30.680 --> 01:23:33.480
+system is going to return. It is going to show it to you.
+
+01:23:33.560 --> 01:23:37.280
+This is what my UI interface is doing. Nothing much by the
+
+01:23:37.280 --> 01:23:42.040
+way, right? Nothing much. So here, uh, agents are available,
+
+01:23:42.340 --> 01:23:47.100
+tasks are available. Now I will try to build my crew over
+
+01:23:47.100 --> 01:23:50.860
+here. So how I can try to build my crew again. It's a
+
+01:23:50.860 --> 01:23:55.540
+standard approach to build a crew. So here there is a
+
+01:23:55.540 --> 01:23:58.420
+function called as build crew. I'm just trying to call build
+
+01:23:58.420 --> 01:24:02.000
+parse agent, build ATS writer agent. So all the agents, all
+
+01:24:02.000 --> 01:24:04.200
+the agents, and I'm trying to store it inside the variable
+
+01:24:04.200 --> 01:24:06.980
+so that I can use this variable. You can use this directly
+
+01:24:06.980 --> 01:24:10.260
+function, direct function. That's okay. Right. But, uh, just
+
+01:24:10.260 --> 01:24:14.040
+to make it clean. So we are using this variable. So inside
+
+01:24:14.040 --> 01:24:16.920
+this parser variable, this agent is available. And what is
+
+01:24:16.920 --> 01:24:20.860
+this agent? Same that we have created. Right? The agent that
+
+01:24:20.860 --> 01:24:23.180
+we have already created. So this agent is like a nothing
+
+01:24:23.180 --> 01:24:26.260
+different. And again, writer agent, we have already done
+
+01:24:26.260 --> 01:24:29.740
+that, right? We have already created it. So whatever agent
+
+01:24:29.740 --> 01:24:32.780
+that we have created, these agents that we have created, so
+
+01:24:32.780 --> 01:24:36.200
+we are just trying to store it into a variable. Okay, fine.
+
+01:24:37.120 --> 01:24:39.940
+Then we are trying to call what? Then we are trying to call
+
+01:24:39.940 --> 01:24:45.560
+a task. Like I said in a beginning itself, so there will be
+
+01:24:45.560 --> 01:24:48.540
+a task and for every task we are going to assign the
+
+01:24:48.540 --> 01:24:52.640
+employee. Technically an agent, right? So for every task we
+
+01:24:52.640 --> 01:24:56.300
+are going to apply them agents. And this is what we have
+
+01:24:56.300 --> 01:24:59.860
+done while we were trying to create the task, right? So task
+
+01:24:59.860 --> 01:25:03.800
+was trying to take what agents and then data, right? This is
+
+01:25:03.800 --> 01:25:07.900
+what this task we're trying to take as an input. So one by
+
+01:25:07.900 --> 01:25:10.800
+one in a sequential manner, what we are trying to do. So
+
+01:25:10.800 --> 01:25:14.860
+first of all, I'm trying to call a resume a task. Now this
+
+01:25:14.860 --> 01:25:17.680
+resume a task is taking two inputs. One is an agent and one
+
+01:25:17.680 --> 01:25:21.880
+is a raw resume. Okay. So I'm trying to give a parser agent
+
+01:25:21.880 --> 01:25:25.520
+access to a parse resume a task. And then I'm trying to
+
+01:25:25.520 --> 01:25:28.800
+provide the raw resume data, which I will be getting from my
+
+01:25:28.800 --> 01:25:32.640
+UI interface after reading the data with the help of some of
+
+01:25:32.640 --> 01:25:35.640
+my utility function, the utility function for a PDF and a
+
+01:25:35.640 --> 01:25:39.620
+doc reader that I have already created. Now once this is
+
+01:25:39.620 --> 01:25:43.140
+done, right? Once this part is done, once I will be able to
+
+01:25:43.140 --> 01:25:48.440
+parse the entire resume, this task will be done. Okay. So
+
+01:25:48.440 --> 01:25:51.980
+then I'm trying to call task number two, rewrite for a ATS
+
+01:25:51.980 --> 01:25:56.080
+task and a here. So I'm trying to pass a agent. So I'm
+
+01:25:56.080 --> 01:25:59.600
+trying to give an access of writer agent by the way, right?
+
+01:25:59.780 --> 01:26:05.420
+Then I'm trying to give a clean resume access to this one as
+
+01:26:05.420 --> 01:26:10.660
+a parameter job title and a job description, simple job
+
+01:26:10.660 --> 01:26:13.840
+title and job description. So now you can say that, that,
+
+01:26:13.900 --> 01:26:17.400
+okay, you have defined this clean resume now from where we
+
+01:26:17.400 --> 01:26:20.900
+are getting this clean resume, obviously from a previous
+
+01:26:20.900 --> 01:26:24.140
+task. Yeah. Yeah. Just a placeholder. Obviously from the
+
+01:26:24.140 --> 01:26:29.460
+previous task, we are getting a clean resume symbol. So from
+
+01:26:29.460 --> 01:26:31.700
+the previous task, we are getting the clean resume to the
+
+01:26:31.700 --> 01:26:34.460
+next one. And this is what we are going to attach it here.
+
+01:26:34.820 --> 01:26:40.140
+So again, a third task, refine a bullet points. I have given
+
+01:26:40.140 --> 01:26:44.840
+the access to the agent and then the previous input as an
+
+01:26:44.840 --> 01:26:47.700
+previous output as an input to the next one. Then the fourth
+
+01:26:47.700 --> 01:26:53.220
+one, agent access, and then the rest of the access as per
+
+01:26:53.220 --> 01:26:55.440
+the parameter. So whatever task which I have created and
+
+01:26:55.440 --> 01:26:59.920
+whatever parameter it takes. So my task is done over here,
+
+01:26:59.960 --> 01:27:05.080
+right? My task is done. Now how to create a team who will,
+
+01:27:05.180 --> 01:27:08.980
+because now my team is like, Oh, there is one team. Then
+
+01:27:08.980 --> 01:27:10.920
+there is a second team. There is a third team and there is a
+
+01:27:10.920 --> 01:27:13.700
+fourth team. Or maybe I have a four employee or you can say
+
+01:27:13.700 --> 01:27:16.480
+I have a four team either way. It's completely fine. You can
+
+01:27:16.480 --> 01:27:19.840
+take any of these analogy. That's fine. So I have to
+
+01:27:19.840 --> 01:27:24.060
+basically align those entire team. So obviously I need a
+
+01:27:24.060 --> 01:27:26.860
+leader manager. So this is where this crew will come into a
+
+01:27:26.860 --> 01:27:30.260
+picture. So it is going to attach a team in a sequence that,
+
+01:27:30.320 --> 01:27:32.680
+okay, you will do this. You will do that. You will do that,
+
+01:27:32.780 --> 01:27:36.600
+but in a sequence. So who will come first and who will come
+
+01:27:36.600 --> 01:27:41.540
+last? That depends upon my crew. So this is the actual code
+
+01:27:41.540 --> 01:27:44.840
+where I'm creating my crew, or you can say I'm creating my
+
+01:27:44.840 --> 01:27:49.460
+team. And this will be responsible for running a task one
+
+01:27:49.460 --> 01:27:55.100
+after another. Is it making sense to all of us guys crew? So
+
+01:27:55.100 --> 01:27:58.500
+here I have given agents, parser agent first, then second,
+
+01:27:58.640 --> 01:28:01.260
+then third, then fourth task wise. First, you should do
+
+01:28:01.260 --> 01:28:04.620
+this, do this, do this, do this, and how it will process. So
+
+01:28:04.620 --> 01:28:07.060
+I have simply said that in a sequential manner, not in a
+
+01:28:07.060 --> 01:28:09.800
+hierarchical means kind of a tree structure, right? Graph
+
+01:28:09.800 --> 01:28:12.460
+structure, whatever we were able to achieve kind of in a
+
+01:28:12.460 --> 01:28:15.360
+land graph, that kind of a structure. But no. Go in a
+
+01:28:15.360 --> 01:28:18.980
+sequential manner. Yes. Not in a hierarchical manner. Go in
+
+01:28:18.980 --> 01:28:21.180
+a sequential manner because crew AI provides you even a
+
+01:28:21.180 --> 01:28:23.500
+hierarchical approach. So you can even follow that
+
+01:28:23.500 --> 01:28:25.780
+particular approach where you can try to create a fork joint
+
+01:28:25.780 --> 01:28:29.320
+loops, all those things. So here in a sequential manner, you
+
+01:28:29.320 --> 01:28:32.540
+have to go. So do this task, then do this task, then do this
+
+01:28:32.540 --> 01:28:35.700
+task, then do this task. And this task already knows that
+
+01:28:35.700 --> 01:28:38.540
+what I have to use, which agent I have to use, right? Which
+
+01:28:38.540 --> 01:28:41.240
+employee I have to use to complete this task and what kind
+
+01:28:41.240 --> 01:28:44.800
+of input I will be able to get, right? Now, this task
+
+01:28:44.800 --> 01:28:47.180
+already knows that, okay, what kind of an agent I have to
+
+01:28:47.180 --> 01:28:49.640
+use and what is the input I will be able to get. This task
+
+01:28:49.640 --> 01:28:52.180
+already knows, and this task already knows, Bhavos is equal
+
+01:28:52.180 --> 01:28:55.100
+to true, means give me the log. Simple. Inside my console.
+
+01:28:55.380 --> 01:28:59.660
+You can make it off. By default, it will be false. So are
+
+01:28:59.660 --> 01:29:02.520
+you able to understand? So this is the only thing that we
+
+01:29:02.520 --> 01:29:05.400
+have to achieve guys. This is how we are creating a crew AI.
+
+01:29:06.120 --> 01:29:09.820
+That's it. In the highlighted code, only three to four line.
+
+01:29:12.280 --> 01:29:16.580
+Yes. Which one will run first? Agent or task? Okay. You guys
+
+01:29:16.580 --> 01:29:17.800
+tell me, which one will run first?
+
+01:29:21.120 --> 01:29:27.760
+Yes. I think you got the answer in the chat. I mean like
+
+01:29:27.760 --> 01:29:32.400
+people are seeing agent, first task, right? Agent is
+
+01:29:32.400 --> 01:29:35.860
+basically an employee. So if I'm not assigning you a task,
+
+01:29:35.980 --> 01:29:38.280
+let's suppose you are my students, right? Obviously you are
+
+01:29:38.280 --> 01:29:42.420
+my students. There is no doubt about it, but yeah. So if I'm
+
+01:29:42.420 --> 01:29:45.900
+not giving you a task, what you will do? How you will
+
+01:29:45.900 --> 01:29:49.040
+activate yourself? Right? So obviously task will come into a
+
+01:29:49.040 --> 01:29:52.560
+picture and task is calling, see simply I have shown you
+
+01:29:52.560 --> 01:29:55.540
+here. These are the tasks, right? Task is calling what? Task
+
+01:29:55.540 --> 01:29:56.400
+is calling agent.
+
+01:29:59.310 --> 01:30:02.150
+Yes. We have, we have given that, right? So see this task
+
+01:30:02.150 --> 01:30:04.450
+calling which agent, parser agent, we have already written
+
+01:30:04.450 --> 01:30:08.450
+this agent over here. So my task is technically calling a
+
+01:30:08.450 --> 01:30:12.430
+respective agents. This is what I have defined right over
+
+01:30:12.430 --> 01:30:16.230
+here. Yeah. So here I have created my team. My entire crew
+
+01:30:16.230 --> 01:30:19.750
+is ready to perform this entire task. One by one, one by
+
+01:30:19.750 --> 01:30:23.170
+one, I can attach one agent, two agent, three agent. I can
+
+01:30:23.170 --> 01:30:28.790
+attach one agent to all the tasks possible. Yeah. If all the
+
+01:30:28.790 --> 01:30:31.930
+tasks requires a similar kind of agent, I can, I can do
+
+01:30:31.930 --> 01:30:35.390
+that. I can just use it. Right. Just, just a minute guys.
+
+01:30:37.960 --> 01:30:41.760
+Hello. Hi sir. I am already sitting in class. Hello. Yes
+
+01:30:41.760 --> 01:30:48.260
+sir. Yes, so tell me, my class has given me some time. We
+
+01:30:48.260 --> 01:30:50.680
+said after 12-1 o'clock. But it will not be possible. I am
+
+01:30:50.680 --> 01:30:53.420
+already sitting in class. In the middle of the class. No,
+
+01:30:53.740 --> 01:30:55.600
+no, no, we did not say no actually. We told them that we
+
+01:30:55.600 --> 01:30:58.020
+will be available only after 12-1 o'clock, after 11.30-12 o
+
+01:30:58.020 --> 01:30:58.140
+'clock.
+
+01:31:01.030 --> 01:31:02.830
+Yes, exactly sir. That is why. So other people should not be
+
+01:31:02.830 --> 01:31:05.250
+convinced. By the way, we are the most useless singers in
+
+01:31:05.250 --> 01:31:09.050
+the entire group. So I think they will not be able to eat
+
+01:31:09.050 --> 01:31:09.410
+our lack.
+
+01:31:14.050 --> 01:31:17.670
+Okay, okay. Okay sir. Okay sir. Bye. Bye.
+
+01:31:23.230 --> 01:31:27.310
+Okay. So yeah. So basically we have agents and we have a
+
+01:31:27.310 --> 01:31:29.250
+task. And we set that on the table. Okay, whenever you are
+
+01:31:29.250 --> 01:31:31.370
+trying to run these things, run in a sequential manner. Do
+
+01:31:31.370 --> 01:31:33.810
+not run in a hierarchical manner. I do not like because I do
+
+01:31:33.810 --> 01:31:36.050
+not want a graph structure over here. It should go in a
+
+01:31:36.050 --> 01:31:40.390
+sequential manner. So this is what it will do. This is the
+
+01:31:40.390 --> 01:31:42.610
+main code by the way. This is the main piece of the code.
+
+01:31:42.730 --> 01:31:45.290
+Only these three, four lines. Apart from that, it is
+
+01:31:45.290 --> 01:31:47.530
+nothing. You can create any number of tasks. You can create
+
+01:31:47.530 --> 01:31:52.710
+any number of agents and do whatever you want. Yeah. Now, so
+
+01:31:52.710 --> 01:31:56.770
+this main task is done. Crew is ready. Right. My entire team
+
+01:31:56.770 --> 01:32:00.550
+is ready. Now, what I have to do? Pass the data. Simple.
+
+01:32:00.850 --> 01:32:06.470
+Right. Pass the data and initiate it, run it basically. So
+
+01:32:06.470 --> 01:32:11.250
+to do that, we can try to create a run pipeline. So there is
+
+01:32:11.250 --> 01:32:17.110
+a code which has been implemented. So crew is created,
+
+01:32:17.230 --> 01:32:23.230
+right. Run pipeline. So what, so basically my UI is going to
+
+01:32:23.230 --> 01:32:25.530
+call this function, right. And this function will be calling
+
+01:32:25.530 --> 01:32:28.870
+like other things. So here a run pipeline. So what this run
+
+01:32:28.870 --> 01:32:32.290
+pipeline is doing? So this is just a same agent copy and
+
+01:32:32.290 --> 01:32:34.690
+pasted. You can use the previous function. That's up to you
+
+01:32:34.690 --> 01:32:39.430
+now. So we are trying to call this task and we are trying to
+
+01:32:39.430 --> 01:32:43.710
+say that, okay, uh, built so independent one, right? So
+
+01:32:43.710 --> 01:32:46.350
+basically independently task I'm trying to call. So I'm
+
+01:32:46.350 --> 01:32:50.050
+saying that, that, okay, uh, just try to like create a crew,
+
+01:32:50.190 --> 01:32:54.330
+use this parser and use this task and run it, run it means
+
+01:32:54.330 --> 01:32:56.850
+kick off, kick off is going to actually call, call the
+
+01:32:56.850 --> 01:33:01.730
+actual. Uh, you know, the final execution. So a crew, this
+
+01:33:01.730 --> 01:33:05.310
+crew. So means just try to kick off the first one, this one,
+
+01:33:05.350 --> 01:33:11.510
+yeah, kick off the first one. Now second, this one again,
+
+01:33:11.570 --> 01:33:15.770
+call kickoff same, right? Then third. So independently, I'm
+
+01:33:15.770 --> 01:33:18.990
+trying to run one by one, one by one, one by one, one by
+
+01:33:18.990 --> 01:33:23.450
+one, each and everything. And finally it should be able to
+
+01:33:23.450 --> 01:33:27.530
+give me, so once I will be able to like, uh, do this. So.
+
+01:33:28.070 --> 01:33:30.630
+Finally, it should be able to give me cleaned rewritten
+
+01:33:30.630 --> 01:33:35.590
+final resume evaluation. So why I have done that, see, just
+
+01:33:35.590 --> 01:33:39.610
+try to understand this part, uh, every task, right? Every
+
+01:33:39.610 --> 01:33:42.830
+task is giving me some sort of output, right? Every task is
+
+01:33:42.830 --> 01:33:45.770
+giving me, so this task is giving me one output, clean
+
+01:33:45.770 --> 01:33:50.630
+resume. This task is giving me a rewritten resume. This task
+
+01:33:50.630 --> 01:33:53.230
+is giving me all the highlights, bullets, points, and then
+
+01:33:53.230 --> 01:33:57.030
+next task is going to give me maybe a ATS score. So what I'm
+
+01:33:57.030 --> 01:34:00.970
+trying to do. So from every task, whatever output I will
+
+01:34:00.970 --> 01:34:04.270
+get, I am trying to return because that's, that's maybe a
+
+01:34:04.270 --> 01:34:07.370
+need, right? Uh, maybe that's, that could not be a need and
+
+01:34:07.370 --> 01:34:10.250
+that could be a need. So in my cases, I have to show you the
+
+01:34:10.250 --> 01:34:13.750
+output that, okay, this agent or this task is giving me this
+
+01:34:13.750 --> 01:34:17.050
+as an output, this as an output. So independently I'm
+
+01:34:17.050 --> 01:34:20.490
+running all of these tasks. Let's suppose I'm not worried
+
+01:34:20.490 --> 01:34:24.470
+about, uh, like a independent output from each and every
+
+01:34:24.470 --> 01:34:27.050
+task. I can just avoid it. I can just. I can just avoid
+
+01:34:27.050 --> 01:34:31.330
+calling all of these things independently. All of this one
+
+01:34:31.330 --> 01:34:33.890
+crew at a time, one crew member at a time. I could have
+
+01:34:33.890 --> 01:34:39.210
+called the entire crew member like before at a time. So like
+
+01:34:39.210 --> 01:34:43.670
+I said, this is the process of creating a crew. There is a
+
+01:34:43.670 --> 01:34:47.290
+possibility that I can keep only one agent and only one
+
+01:34:47.290 --> 01:34:50.990
+task. Simple. It's a list, right? I can try to pass any
+
+01:34:50.990 --> 01:34:54.170
+number of agent or maybe single one and this is what I'm
+
+01:34:54.170 --> 01:34:57.410
+trying to do. Because I'm looking for output, which I have
+
+01:34:57.410 --> 01:35:00.870
+to show it to my students that, okay, this task is giving me
+
+01:35:00.870 --> 01:35:04.430
+this output. This task is giving this output. So same crew I
+
+01:35:04.430 --> 01:35:08.110
+have used, as you can see, uh, again, nomenclature is same
+
+01:35:08.110 --> 01:35:10.790
+for this entire things, creating this particular crew.
+
+01:35:11.110 --> 01:35:13.930
+Nothing has changed. The only thing is I'm using one, one,
+
+01:35:13.930 --> 01:35:17.070
+one, one, one, one at a time. And every step is going to
+
+01:35:17.070 --> 01:35:19.830
+return me some output means every crew is going to return me
+
+01:35:19.830 --> 01:35:22.110
+some output. I'm just trying to show you. And I'm going to
+
+01:35:22.110 --> 01:35:28.030
+show this one. Into a UI part. As well. So this is this now,
+
+01:35:28.110 --> 01:35:31.870
+once this part is done, right? Once this entire part is
+
+01:35:31.870 --> 01:35:35.810
+done. So my crew is ready. My agent's task, everything is
+
+01:35:35.810 --> 01:35:39.470
+ready. And now I'm able to attach it, right? Now I'm able to
+
+01:35:39.470 --> 01:35:42.830
+attach. And now I know that every crew can give me output
+
+01:35:42.830 --> 01:35:45.830
+its own output, which I can see, which I can visualize in a
+
+01:35:45.830 --> 01:35:50.550
+easiest possible manner. Now what is next? So the next part
+
+01:35:50.550 --> 01:35:56.190
+is you have to basically create a UI interface. Now. So on
+
+01:35:56.190 --> 01:36:00.510
+top of this entire things on top of this entire things, I
+
+01:36:00.510 --> 01:36:04.290
+have to create basically a UI interface where I will try to
+
+01:36:04.290 --> 01:36:08.910
+pass three things resume job title, job description rest.
+
+01:36:09.090 --> 01:36:12.550
+I'm going to call run and it will be able to run each and
+
+01:36:12.550 --> 01:36:18.710
+everything. So now let's try to call the streamlint part,
+
+01:36:18.870 --> 01:36:20.750
+which is like a final part by the way.
+
+01:36:33.980 --> 01:36:37.920
+Yeah. So. So majorly this streamlint part is like a, just a
+
+01:36:37.920 --> 01:36:42.020
+UI part. So this is like a nothing different. So we are
+
+01:36:42.020 --> 01:36:44.160
+setting, this is something that we do in all the
+
+01:36:44.160 --> 01:36:47.780
+applications, I believe. So we are giving a title. We are
+
+01:36:47.780 --> 01:36:50.980
+like a giving this write up over here. We are trying to
+
+01:36:50.980 --> 01:36:53.520
+create a sidebar where we are trying to show that, that we
+
+01:36:53.520 --> 01:36:58.080
+are using like a GPT 4.0 mini kind of a things simple. And
+
+01:36:58.080 --> 01:37:02.200
+then we are trying to create three fields, one field, upload
+
+01:37:02.200 --> 01:37:05.280
+your file in a PDF format, doc format or text format. Okay.
+
+01:37:05.280 --> 01:37:09.220
+Another field for a job title and another field for a job
+
+01:37:09.220 --> 01:37:12.440
+description. So these are the three input we are trying to
+
+01:37:12.440 --> 01:37:15.840
+take only three inputs we are trying to take from the UI
+
+01:37:15.840 --> 01:37:21.700
+side. So your resume, your title and your description, and
+
+01:37:21.700 --> 01:37:25.820
+then we are giving you a button so that run the button. Now
+
+01:37:25.820 --> 01:37:28.380
+when you are going to click on this button, so if this
+
+01:37:28.380 --> 01:37:31.940
+button is true, means if you have clicked on this button, it
+
+01:37:31.940 --> 01:37:35.720
+will start doing this entire processes. So what is the first
+
+01:37:35.720 --> 01:37:38.680
+process it is going to do? So basically the very first
+
+01:37:38.680 --> 01:37:42.540
+process is whatever file that you have passed, extract a
+
+01:37:42.540 --> 01:37:46.320
+data out of it. Right now to extract our data, we have
+
+01:37:46.320 --> 01:37:49.300
+already written a function, right? What is the function? So
+
+01:37:49.300 --> 01:37:52.240
+detect and extract. So this is the function we have already
+
+01:37:52.240 --> 01:37:57.720
+written. It is not able to understand. Maybe there is a
+
+01:37:57.720 --> 01:38:04.920
+import issue. Let me check, detect and extract. Okay. So.
+
+01:38:04.920 --> 01:38:07.060
+Okay. So crew app file tool file.
+
+01:38:10.950 --> 01:38:17.630
+Okay. Fine. So there is no crew app hierarchy. There is
+
+01:38:17.630 --> 01:38:25.390
+directly a file tool. Okay. Remove this part to remove this
+
+01:38:25.390 --> 01:38:31.790
+part as well. Now it is able to detect fine. So here there
+
+01:38:31.790 --> 01:38:34.070
+was another separate folder I have created in the previous
+
+01:38:34.070 --> 01:38:36.750
+one, but yeah, here I have not created that, but I've just
+
+01:38:36.750 --> 01:38:39.690
+aligned it. So now it can identify this function, this
+
+01:38:39.690 --> 01:38:42.690
+function and this function. So here what we are trying to
+
+01:38:42.690 --> 01:38:46.790
+do. So once you will be able to click on this button, now
+
+01:38:46.790 --> 01:38:49.010
+whatever data, three data that you have passed, it will
+
+01:38:49.010 --> 01:38:51.410
+start processing it. So first it is going to call what
+
+01:38:51.410 --> 01:38:55.830
+detect and extract function, right? So here it is going to
+
+01:38:55.830 --> 01:38:59.230
+call up dot name. What is up by the way, up is a variable,
+
+01:38:59.390 --> 01:39:02.130
+which is trying to take this files, right? So up dot name.
+
+01:39:02.230 --> 01:39:05.210
+So it is going to take the file names and then entire file
+
+01:39:05.210 --> 01:39:09.390
+read. These are the two parameter. So file name and file
+
+01:39:09.390 --> 01:39:11.610
+reading it is going to do. These are the two parameter it is
+
+01:39:11.610 --> 01:39:14.610
+going to pass and then it will try to identify that whether
+
+01:39:14.610 --> 01:39:17.650
+it's a PDF, whether it's a docs, if it is a PDF, call
+
+01:39:17.650 --> 01:39:20.850
+extract PDF function. If it is a document, call a document
+
+01:39:20.850 --> 01:39:25.090
+function, simple, right? Now it is going to give me two
+
+01:39:25.090 --> 01:39:28.270
+things, this one and this one. So I'm going to use like a,
+
+01:39:28.310 --> 01:39:32.370
+this raw text, whatever text that it is going to return. It
+
+01:39:32.370 --> 01:39:34.990
+is going to give me extension ext, ext is nothing but dot
+
+01:39:34.990 --> 01:39:39.530
+PDF or dot docs or dot ext, and we will start processing it.
+
+01:39:39.530 --> 01:39:44.990
+So here we are like a going to call basically this main
+
+01:39:44.990 --> 01:39:48.550
+part, which is our run pipeline. Now what is this run
+
+01:39:48.550 --> 01:39:52.090
+pipeline by the way? So as you can see, run pipeline is
+
+01:39:52.090 --> 01:39:58.790
+taking three things, resume, raw data, job title, raw job
+
+01:39:58.790 --> 01:40:02.770
+description, raw, and eventually this is calling the entire
+
+01:40:02.770 --> 01:40:05.470
+sort, right? This is calling the entire sort, right? One by
+
+01:40:05.470 --> 01:40:08.870
+one, it is calling the crew members by the way. So run
+
+01:40:08.870 --> 01:40:11.650
+pipeline. Okay. Again, and here I'm trying to provide a raw
+
+01:40:11.650 --> 01:40:14.970
+data, the raw data, which I'm getting from the resume. Oh,
+
+01:40:14.990 --> 01:40:16.530
+sorry. This, this particular function, which is getting
+
+01:40:16.530 --> 01:40:19.910
+coming from the resume by the way, job title, which again,
+
+01:40:20.010 --> 01:40:25.880
+I'm getting from here input and job description, which is
+
+01:40:25.880 --> 01:40:29.100
+again, I'm getting from the input and this run pipeline is
+
+01:40:29.100 --> 01:40:32.460
+returning four things, right? It is returning. What it is
+
+01:40:32.460 --> 01:40:34.860
+returning for things means it is returning the output of
+
+01:40:34.860 --> 01:40:38.980
+four tasks, cleaned, rewritten, final resume and evaluation.
+
+01:40:39.480 --> 01:40:46.100
+Okay. So it is returning four things to me and rest is just
+
+01:40:46.100 --> 01:40:49.740
+a story by the way. So once I will be able to get this, I
+
+01:40:49.740 --> 01:40:54.460
+have to just showcase in tab number zero, this clean data,
+
+01:40:54.820 --> 01:40:59.880
+tab number one, rewritten data, tab number three, final
+
+01:40:59.880 --> 01:41:03.380
+resume, tab number four evaluation. So the main task has
+
+01:41:03.380 --> 01:41:06.760
+been done by this and before that we are parsing the data
+
+01:41:06.760 --> 01:41:09.820
+only this much is required. Okay. Is it making sense to all
+
+01:41:09.820 --> 01:41:13.400
+of us guys? So is it, is it tough by the way, or is it like
+
+01:41:13.400 --> 01:41:16.240
+a easy, I think it's a very plain Python code.
+
+01:41:20.640 --> 01:41:23.680
+Yeah. Pretty much easy. Right. We are, we're not doing much
+
+01:41:23.680 --> 01:41:26.380
+by the way, even Python code wise. So this is the beauty of
+
+01:41:26.380 --> 01:41:30.080
+agentic AI. So like just by writing some sort of a prompt,
+
+01:41:30.300 --> 01:41:34.940
+majority of things has been handled. See the main power you
+
+01:41:34.940 --> 01:41:40.120
+will be able to see, right? Like gets into a prompt by the
+
+01:41:40.120 --> 01:41:44.280
+way. So here we can write anything in English. Right? Now
+
+01:41:44.280 --> 01:41:48.560
+just imagine if you have to do the exact same thing via
+
+01:41:48.560 --> 01:41:52.820
+coding, how many line of code you will end up writing? Just
+
+01:41:52.820 --> 01:41:55.680
+read any of this backstory, any, any means literally any
+
+01:41:55.680 --> 01:41:59.420
+backstory of any agents. Now just imagine that if you have
+
+01:41:59.420 --> 01:42:05.060
+to perform this operation via, via code, not via LLMs, how
+
+01:42:05.060 --> 01:42:07.300
+many line of code you will end up writing and then, then
+
+01:42:07.300 --> 01:42:10.340
+like you will write a code, you will debug it. Right. Right.
+
+01:42:10.340 --> 01:42:14.060
+And it will increase a lot of complexity. Can I say that?
+
+01:42:14.480 --> 01:42:14.960
+Yes.
+
+01:42:19.480 --> 01:42:23.940
+Yeah. Maybe just to fulfill one backstory, just to fulfill
+
+01:42:23.940 --> 01:42:27.620
+one single backstory, maybe thousand, maybe 10,000 line of
+
+01:42:27.620 --> 01:42:30.260
+code you will end up writing. Maybe you will end up creating
+
+01:42:30.260 --> 01:42:33.740
+10, 20 different, different file and you will end up
+
+01:42:33.740 --> 01:42:37.320
+maintaining it. So are you able to understand the benefit of
+
+01:42:37.320 --> 01:42:44.970
+using agentic AI agents by the way? Yeah. Just, just read
+
+01:42:44.970 --> 01:42:47.450
+any backstory. Any backstory that we have given. Even to any
+
+01:42:47.450 --> 01:42:50.810
+agents. Right. And if you have to fulfill that, how many
+
+01:42:50.810 --> 01:42:54.690
+line of a code and with the help of this LLMs eventually
+
+01:42:54.690 --> 01:43:00.090
+called by my agents, right? Even I'm not even writing a code
+
+01:43:00.090 --> 01:43:03.050
+by the way. Right. I'm just giving a prompt to it that,
+
+01:43:03.110 --> 01:43:06.490
+okay, do this, do that. So this is where the power of agents
+
+01:43:06.490 --> 01:43:09.970
+comes into a picture. And this is where this agents are
+
+01:43:09.970 --> 01:43:13.790
+different. It's agentic AI approach is different. And the
+
+01:43:13.790 --> 01:43:17.470
+legacy one, right? So where we used to do automation. But by
+
+01:43:17.470 --> 01:43:20.650
+writing a code, by writing some sort of a condition, by
+
+01:43:20.650 --> 01:43:23.530
+observing each and everything, but again, everything is
+
+01:43:23.530 --> 01:43:27.030
+having a pros and cons in, in terms of like a legacy system.
+
+01:43:27.230 --> 01:43:29.590
+So obviously if you have written some condition, it will
+
+01:43:29.590 --> 01:43:33.550
+work in that way. But in case of agents, you have to be very
+
+01:43:33.550 --> 01:43:39.130
+much careful with respect to your prompts. Right. If you are
+
+01:43:39.130 --> 01:43:42.830
+not careful about it, then it will hallucinate for sure.
+
+01:43:45.940 --> 01:43:49.000
+Why do we have both build crew in this one? I have shown you
+
+01:43:49.000 --> 01:43:51.640
+that you can try to create a one single team, or you can try
+
+01:43:51.640 --> 01:43:54.620
+to use even an independent team. I have not using it. I'm
+
+01:43:54.620 --> 01:43:56.540
+just showing you that, okay, this is the crew which I've
+
+01:43:56.540 --> 01:44:00.000
+created, but as I need the output of each and every steps.
+
+01:44:00.220 --> 01:44:03.120
+So I have just separated it instead of calling this one.
+
+01:44:03.220 --> 01:44:05.180
+Let's suppose if I'm not looking for all the outputs, maybe
+
+01:44:05.180 --> 01:44:08.940
+I'm looking for like something from the final stage. I can
+
+01:44:08.940 --> 01:44:13.680
+just like a call the crew one, you call function, kickoff
+
+01:44:13.680 --> 01:44:16.040
+function is the actual function, which initiates or which
+
+01:44:16.040 --> 01:44:18.420
+starts the crew. A particular team. All
+
+01:44:29.040 --> 01:44:33.060
+of these things are basically a placeholder, placeholder of
+
+01:44:33.060 --> 01:44:36.960
+an agents. So agents are transferring. That's the reason. So
+
+01:44:36.960 --> 01:44:38.620
+inside the curly braces, we have written those.
+
+01:44:42.020 --> 01:44:45.440
+It's an agents. So one agent output will go into the next
+
+01:44:45.440 --> 01:44:46.660
+one, the next one, the next one.
+
+01:44:50.600 --> 01:44:59.360
+Yeah. Okay. So hope we all are able to understand it now.
+
+01:45:13.380 --> 01:45:17.380
+So once everything is done, maybe I can just like a, I think
+
+01:45:17.380 --> 01:45:21.180
+API key is already available. It will be able to take this
+
+01:45:21.180 --> 01:45:23.740
+API key now.
+
+01:46:06.210 --> 01:46:09.530
+So it's time to run the application. So now if I have to run
+
+01:46:09.530 --> 01:46:11.870
+the application, simply I have to call like a streamlint app
+
+01:46:11.870 --> 01:46:16.270
+and then it will be able to run it. So S T R E A M L I T
+
+01:46:16.270 --> 01:46:20.330
+streamlint run, and then a streamlint app.py file.
+
+01:46:23.970 --> 01:46:27.550
+So yeah, it will start my application.
+
+01:46:30.480 --> 01:46:33.500
+Attempt retrieving border known the attempted relative
+
+01:46:33.500 --> 01:46:37.160
+import with no known parameters. Okay.
+
+01:46:41.440 --> 01:46:44.740
+So parse resume a streamlint app line number six model from
+
+01:46:44.740 --> 01:46:49.880
+crew import or run pipeline. Okay. Agent import. So this
+
+01:46:49.880 --> 01:46:57.860
+seems to be my init issue. Let's check. So I think I should
+
+01:46:57.860 --> 01:47:01.480
+create one more crew
+
+01:47:04.880 --> 01:47:10.020
+is fine file tool in it is fine board
+
+01:47:36.860 --> 01:47:39.160
+with no known parent model.
+
+01:47:45.600 --> 01:47:46.360
+Okay. It
+
+01:48:26.680 --> 01:48:30.700
+is able to identify. So from, yeah,
+
+01:48:53.940 --> 01:48:57.560
+so it was just a module conflict issue. I have just removed
+
+01:48:57.560 --> 01:49:02.320
+a dot and then it, it is working right simple. So now you
+
+01:49:02.320 --> 01:49:06.880
+can pass a resume simple and I can give a job description,
+
+01:49:07.100 --> 01:49:09.560
+maybe machine learning engineer as a title, machine learning
+
+01:49:09.560 --> 01:49:13.680
+engineer as a JD run the agent. Now if you will check in a
+
+01:49:13.680 --> 01:49:18.140
+backend, so it is going to kick off the crew one by one, as
+
+01:49:18.140 --> 01:49:19.640
+you can see. Right. it took a couple of moments around at
+
+01:49:19.640 --> 01:49:19.640
+say. is a considered user when this is a video program for
+
+01:49:19.640 --> 01:49:22.860
+AI in your console and what ever. So because I have kept a
+
+01:49:22.860 --> 01:49:25.640
+burNothing is equal to two minutes, you will be able to see
+
+01:49:25.640 --> 01:49:29.240
+everything, everything here. Slight, everything was
+
+01:49:29.240 --> 01:49:31.260
+literally, you will be able to see each and every DJ Qision,
+
+01:49:31.300 --> 01:49:34.500
+what it is trying to do. And would you like to view the
+
+01:49:34.500 --> 01:49:38.320
+education trace? Yeah, let's, let's see it. Okay.
+
+01:49:46.170 --> 01:49:48.790
+All, but still
+
+01:50:46.070 --> 01:50:47.350
+that is okay. Because I'm doing business means them without,
+
+01:50:47.350 --> 01:50:51.430
+and if I give you a functional per. Yes. Let's, let's see it
+
+01:50:51.430 --> 01:50:53.490
+yesterday. Actually, perfect. And then test it.
+
+01:51:03.710 --> 01:51:07.910
+Yeah. So now I'm able to get the report 75% is overall
+
+01:51:07.910 --> 01:51:11.310
+score. And again, there is a lot of chances and a lot of
+
+01:51:11.310 --> 01:51:13.710
+like a things which I can do over here in terms of
+
+01:51:13.710 --> 01:51:16.930
+enhancement. So final refined a bullet points a skill set
+
+01:51:16.930 --> 01:51:19.850
+professional all the output which I'm looking for I can I
+
+01:51:19.850 --> 01:51:23.350
+can get it here, right? So everything is available to me and
+
+01:51:23.350 --> 01:51:26.090
+you can test it with your own resume and then let me know.
+
+01:51:26.290 --> 01:51:30.310
+So whether you are able to get a result or not the final
+
+01:51:30.310 --> 01:51:34.450
+result that you are looking for or not. Now and here you can
+
+01:51:34.450 --> 01:51:37.630
+come and you can even try to check the entire traces entire
+
+01:51:37.630 --> 01:51:41.750
+logs over here. So here as you can see inside my streamlint
+
+01:51:41.750 --> 01:51:48.510
+app. So I'm trying to call basically my agents and I'm
+
+01:51:48.510 --> 01:51:54.190
+trying to call tab zero. This one is fine. Okay, so I'm
+
+01:51:54.190 --> 01:51:57.310
+trying to call this run pipeline fine. I'm trying to call
+
+01:51:57.310 --> 01:52:00.550
+basically run pipeline. Now if I would like to call this
+
+01:52:00.550 --> 01:52:04.110
+This build crew function directly I can do that as well so
+
+01:52:04.110 --> 01:52:06.930
+that it will be able to you know, like take this entire crew
+
+01:52:06.930 --> 01:52:11.210
+all together and then it will be able to execute all of this
+
+01:52:11.210 --> 01:52:14.290
+crew in a sequential manner and finally it will be able to
+
+01:52:14.290 --> 01:52:17.370
+give me all crew output together. So that is that is also
+
+01:52:17.370 --> 01:52:19.450
+possible. I'm leaving up to you. So if you would like to do
+
+01:52:19.450 --> 01:52:24.630
+it you can just go ahead and you can do it. So it making
+
+01:52:24.630 --> 01:52:29.110
+sense guys. Yeah, I think it's a easy implementation, but
+
+01:52:29.110 --> 01:52:33.390
+finally we are able to achieve a task. And if you are going
+
+01:52:33.390 --> 01:52:37.430
+to do a refinement then you can try to make it as a product.
+
+01:52:38.030 --> 01:52:41.390
+The next step is so whatever output system is giving it to
+
+01:52:41.390 --> 01:52:44.310
+you. You have to show it to the user in a beautiful manner.
+
+01:52:44.650 --> 01:52:47.690
+So maybe in a beautiful PDF format. So maybe you can try to
+
+01:52:47.690 --> 01:52:50.770
+select hundreds of different different like a resume
+
+01:52:50.770 --> 01:52:54.350
+templates and you can just give an option to an user that
+
+01:52:54.350 --> 01:52:56.850
+choose any of this template and any of this template. I'm
+
+01:52:56.850 --> 01:53:00.190
+going to give you your final resume and open it up as a
+
+01:53:00.190 --> 01:53:05.430
+service to the entire world. Yes, you can even try to make
+
+01:53:05.430 --> 01:53:09.450
+some sort of a like a tuning in terms of you know,
+
+01:53:09.450 --> 01:53:14.410
+optimizing the entire processes that is also possible those
+
+01:53:25.550 --> 01:53:29.690
+who are facing this module issue, right? So basically try to
+
+01:53:29.690 --> 01:53:33.570
+check whether it is able to recognize your functions or not,
+
+01:53:33.670 --> 01:53:36.690
+which is available in other file is just a simple Pythonic
+
+01:53:36.690 --> 01:53:41.290
+issue guys. I believe you will be able to solve it. Yeah, I
+
+01:53:41.290 --> 01:53:45.900
+have already solved it. I was getting the same error. It's
+
+01:53:45.900 --> 01:53:48.960
+just a module conflict issue nothing much. So it is not able
+
+01:53:48.960 --> 01:53:50.360
+to reach out to that particular file.
+
+01:53:55.630 --> 01:53:58.890
+It's not an installation issue. Basically. It's basically a
+
+01:53:58.890 --> 01:54:02.030
+module issue. Your modules are already available. You just
+
+01:54:02.030 --> 01:54:03.730
+have to call it to
+
+01:54:06.260 --> 01:54:09.900
+run this application. We may need to have a open AI key not
+
+01:54:09.900 --> 01:54:13.500
+necessarily. I have used open AI key go with the URI both
+
+01:54:13.500 --> 01:54:18.600
+will work because URI is also providing you GPT-4 models.
+
+01:54:20.800 --> 01:54:24.780
+You just need a LLM access not open. AI you can try to use
+
+01:54:24.780 --> 01:54:28.200
+LLM from any other plate for maybe you can try to use even a
+
+01:54:28.200 --> 01:54:31.460
+local LLMs. Maybe you can host your own element then use
+
+01:54:31.460 --> 01:54:37.040
+that LLM simple. It just need a LLM access. That's it means
+
+01:54:37.040 --> 01:54:38.460
+some model you
+
+01:54:43.450 --> 01:54:47.890
+can use URI SDK or maybe you have to like a use some sort of
+
+01:54:47.890 --> 01:54:50.630
+a vibe coding and then you can try to create a wrapper. It's
+
+01:54:50.630 --> 01:54:53.170
+just a single class wrapper. Basically. It's a pidentic
+
+01:54:53.170 --> 01:54:55.450
+wrapper that we try to create so that we can make any
+
+01:54:55.450 --> 01:55:00.290
+external API compatible with. A crew AI or maybe a lang
+
+01:55:00.290 --> 01:55:03.290
+chain or lang graph. This is what we have done in a SDK side
+
+01:55:03.290 --> 01:55:03.630
+of it.
+
+01:55:08.380 --> 01:55:14.460
+No module name pi PDF use the same environment. I think you
+
+01:55:14.460 --> 01:55:17.280
+must be using a different environment if it is same and if
+
+01:55:17.280 --> 01:55:20.280
+you have already run the executed your requirement or TXT
+
+01:55:20.280 --> 01:55:21.880
+file, then it will never give you an issue.
+
+01:55:26.900 --> 01:55:29.820
+Yeah, so it's a beautiful application by the way an
+
+01:55:29.820 --> 01:55:32.700
+application that you can elaborate the application that you
+
+01:55:32.700 --> 01:55:36.180
+can use it in a real time. I believe we all are using it
+
+01:55:36.180 --> 01:55:41.340
+resume. AI is an application and yes, if you have to build
+
+01:55:41.340 --> 01:55:45.800
+such kind of a system, this is the point where you should
+
+01:55:45.800 --> 01:55:49.580
+start. So almost 80% of the work majority of the work you
+
+01:55:49.580 --> 01:55:54.400
+can say we have done 20% of this polishing work creating a
+
+01:55:54.400 --> 01:55:58.560
+beautiful UI interface the way we have done that in a resume
+
+01:55:58.560 --> 01:56:03.280
+AI system, you know creating a log we have given you I think
+
+01:56:03.280 --> 01:56:08.020
+resume limit is equal to 3 on. A monthly basis, I believe or
+
+01:56:08.020 --> 01:56:11.300
+maybe a 10, right? So just with the authorization
+
+01:56:11.300 --> 01:56:14.120
+authentication of with your sign up user sign up the based
+
+01:56:14.120 --> 01:56:17.600
+on the free user or based on the paid user. Basically, you
+
+01:56:17.600 --> 01:56:21.060
+can try to like, you know, give a limit that one user will
+
+01:56:21.060 --> 01:56:24.800
+be able to use it only this many times this particular
+
+01:56:24.800 --> 01:56:28.360
+application. We have given you three beautiful format offers
+
+01:56:28.360 --> 01:56:31.720
+you may in a resume AI where it shows the final output,
+
+01:56:31.860 --> 01:56:36.300
+right? You can try to give maybe 300. That's completely up
+
+01:56:36.300 --> 01:56:39.260
+to you. And then you will be end up building a final
+
+01:56:39.260 --> 01:56:40.980
+beautiful product.
+
+01:56:43.320 --> 01:56:49.020
+Yeah, can we say we all can do that? Yes, and then bring it
+
+01:56:49.020 --> 01:56:52.500
+to a production monetize it. Maybe you can start charging
+
+01:56:52.500 --> 01:56:59.900
+people. Maybe like a 49 rupees only. Yes. So in case of our
+
+01:56:59.900 --> 01:57:03.380
+resume AI, so if you'll go and check our resume AI, it's not
+
+01:57:03.380 --> 01:57:06.700
+just giving you a resume. It's giving you questions as well.
+
+01:57:06.760 --> 01:57:09.900
+So see and against coming from a LLM by the way. So if I'll
+
+01:57:09.900 --> 01:57:11.820
+show you. You resume AI and if I'll show you like a
+
+01:57:11.820 --> 01:57:15.760
+previously analyze the resume. So yes, it is showing you a
+
+01:57:15.760 --> 01:57:18.180
+scores in a beautiful manner. It is giving you your enhanced
+
+01:57:18.180 --> 01:57:20.780
+resume the format that you have selected plus it is
+
+01:57:20.780 --> 01:57:23.280
+generating a cover later. I can do that. I can create one
+
+01:57:23.280 --> 01:57:26.900
+more agent for a cover later generation, right? And then
+
+01:57:26.900 --> 01:57:30.440
+interview preparation. So I can configure one more agent. So
+
+01:57:30.440 --> 01:57:33.820
+which will try to configure my entire interview. So again,
+
+01:57:33.880 --> 01:57:36.960
+we have a multiple rounds inside the interview. So for all
+
+01:57:36.960 --> 01:57:40.240
+of these rounds one one one one one one agent or maybe. One
+
+01:57:40.240 --> 01:57:42.720
+single agent with all the instruction that okay do the HR
+
+01:57:42.720 --> 01:57:44.980
+round technical round coding around everything do the DSA
+
+01:57:44.980 --> 01:57:49.000
+round system design round and if someone has uploaded their
+
+01:57:49.000 --> 01:57:52.820
+resume who is a non-technical person, so this DSA
+
+01:57:52.820 --> 01:57:54.580
+programming and system design round will not be applicable
+
+01:57:54.580 --> 01:57:57.360
+for everyone, right? So basically we have to understand the
+
+01:57:57.360 --> 01:58:00.720
+resume and LLM is good, right? LLM can understand resume in
+
+01:58:00.720 --> 01:58:02.680
+a easiest possible manner. I don't have to write any piece
+
+01:58:02.680 --> 01:58:04.680
+of the code. I just have to give the instruction that
+
+01:58:04.680 --> 01:58:07.260
+understand the genre of the resume domain of the resume
+
+01:58:07.260 --> 01:58:10.580
+everything technology everything. So if person is in tech
+
+01:58:10.580 --> 01:58:14.680
+then try to give these round DSA programming and system
+
+01:58:14.680 --> 01:58:17.520
+design if person is not tech then try to give a general
+
+01:58:17.520 --> 01:58:21.580
+question managerial round HR round behavioral round. Can I
+
+01:58:21.580 --> 01:58:23.440
+say this can be done easily?
+
+01:58:29.300 --> 01:58:37.920
+Yes. Yeah. So now this is your task by tomorrow, right by
+
+01:58:37.920 --> 01:58:43.420
+tomorrow. I want you to like know maybe just on a daily
+
+01:58:43.420 --> 01:58:46.560
+basis. Do it posted do it posted kind of approach if you are
+
+01:58:46.560 --> 01:58:48.840
+going to follow and take a feedback from the people, right?
+
+01:58:49.780 --> 01:58:54.800
+So try to create a resume AI try to re replicate the resume
+
+01:58:54.800 --> 01:58:59.580
+AI whatever feature that we have given to you. Try to build
+
+01:58:59.580 --> 01:59:06.240
+the exact similar kind of a feature. Can we do it? And it
+
+01:59:06.240 --> 01:59:07.360
+will be a full-scale project.
+
+01:59:12.950 --> 01:59:15.970
+Yeah, it will be a completely full-scale project by the way.
+
+01:59:17.330 --> 01:59:20.330
+So can we expect from today onwards? You guys will start
+
+01:59:20.330 --> 01:59:24.210
+working on it and maybe in next three to four days. I will
+
+01:59:24.210 --> 01:59:28.530
+be having a very very good beautiful full-scale demo just
+
+01:59:28.530 --> 01:59:31.290
+like a resume AI where it will show the score which it is
+
+01:59:31.290 --> 01:59:34.610
+showing even now enhance resume. Okay, fine. Try to create
+
+01:59:34.610 --> 01:59:37.770
+one agent which will create a cover later for you right and
+
+01:59:37.770 --> 01:59:41.150
+then interview duration and believe me you will end up
+
+01:59:41.150 --> 01:59:45.150
+getting a lot of like a edge cases. And you will end up
+
+01:59:45.150 --> 01:59:47.910
+learning a lot of things. So once you are going to build
+
+01:59:47.910 --> 01:59:56.040
+such kind of a system. With react also it will be better if
+
+01:59:56.040 --> 02:00:00.680
+you can use maybe like a mon is not mon stack. Maybe just
+
+02:00:00.680 --> 02:00:04.240
+try to use a next J's or react basically react is
+
+02:00:04.240 --> 02:00:07.300
+deprecated. But yeah, you can use react or maybe next to
+
+02:00:07.300 --> 02:00:11.500
+create the UI interface. Fine
+
+02:00:14.600 --> 02:00:19.260
+and make it like a public a flaunt flaunt. It may be like do
+
+02:00:19.260 --> 02:00:22.440
+some sort of a flex about it in a social media or anywhere
+
+02:00:22.440 --> 02:00:25.520
+you want and keep those code base entire inside your GitHub
+
+02:00:25.520 --> 02:00:27.900
+repository and say that okay, I have built the product.
+
+02:00:31.860 --> 02:00:36.820
+We should know little bit of see nowadays in a era of AI
+
+02:00:36.820 --> 02:00:43.020
+knowing UI UX is not a big deal. I think we all should be
+
+02:00:43.020 --> 02:00:45.740
+aware about all of these things because when we talk about a
+
+02:00:45.740 --> 02:00:48.960
+software engineering right everything comes into a picture
+
+02:00:48.960 --> 02:00:53.840
+ops cloud UI UX front-end back-end machine learning deep
+
+02:00:53.840 --> 02:00:56.220
+learning everything comes into a picture. So as a software.
+
+02:00:56.220 --> 02:00:59.380
+And now it's not difficult, right? Maybe like couple of
+
+02:00:59.380 --> 02:01:02.500
+years back. It was very much difficult and people, you know,
+
+02:01:02.520 --> 02:01:05.980
+try to train themselves in a one specific technology. Maybe
+
+02:01:05.980 --> 02:01:08.400
+a front-end maybe just a back-end maybe just in the ops.
+
+02:01:08.520 --> 02:01:11.100
+Maybe just in a cloud. But if I'll talk about ops and cloud,
+
+02:01:11.260 --> 02:01:13.820
+it's been used everywhere, right? Doesn't matter which
+
+02:01:13.820 --> 02:01:16.980
+product you are going to create. It is going to follow the
+
+02:01:16.980 --> 02:01:19.700
+same kind of a philosophy. If I'll talk about a software
+
+02:01:19.700 --> 02:01:23.180
+designing or maybe like a product designing anything. So
+
+02:01:23.180 --> 02:01:26.240
+obviously front-end back-end is required if I'll talk. About
+
+02:01:26.240 --> 02:01:29.160
+maybe a data processing. So big data will be required or if
+
+02:01:29.160 --> 02:01:31.720
+I'll talk about AI integration. So data science email is
+
+02:01:31.720 --> 02:01:34.180
+required and again, which is pretty much possible with the
+
+02:01:34.180 --> 02:01:36.900
+help of Y coding. If you have a that visualization if you
+
+02:01:36.900 --> 02:01:42.300
+have that kind of intention, so it's better. Yeah, it's
+
+02:01:42.300 --> 02:01:45.500
+better to you know, know
+
+02:01:47.840 --> 02:01:50.780
+about it and it's not difficult. Believe me. It's not very
+
+02:01:50.780 --> 02:01:51.180
+difficult.
+
+02:01:54.320 --> 02:01:58.360
+Can you show us UI with the next in a coming classes? Why
+
+02:01:58.360 --> 02:02:00.080
+you want me to show you everything?
+
+02:02:02.920 --> 02:02:06.580
+So then what you will do? I'm not giving you a class so that
+
+02:02:06.580 --> 02:02:09.420
+you know, I'll come and I'll show you one application. Then
+
+02:02:09.420 --> 02:02:11.980
+you will ask me for a next feature. Then again, I will come.
+
+02:02:12.060 --> 02:02:14.000
+I will show you that feature. No next feature. You have to
+
+02:02:14.000 --> 02:02:16.440
+build right then only you will be able to write it down
+
+02:02:16.440 --> 02:02:18.660
+inside your resume proudly. Otherwise what you will write?
+
+02:02:19.200 --> 02:02:21.620
+Are you going to just copy and paste my code base and then
+
+02:02:21.620 --> 02:02:24.620
+you can say that I have done that. No, this is not how it is
+
+02:02:24.620 --> 02:02:29.200
+going to work. Yeah, so do it.
+
+02:02:32.340 --> 02:02:35.820
+This is your job. My job is to teach you. My job is to show
+
+02:02:35.820 --> 02:02:39.180
+you a path. My job is to motivate you. My job is to provide
+
+02:02:39.180 --> 02:02:41.740
+you a platform. My job is to provide you a thought process.
+
+02:02:41.980 --> 02:02:44.960
+Basically and the product you have to build.
+
+02:02:49.380 --> 02:02:56.640
+Yeah. Okay, so okay. Someone is asking for a code base. Once
+
+02:02:56.640 --> 02:02:59.220
+again, anyone who can ping a drive link. I think I have
+
+02:02:59.220 --> 02:03:00.200
+already shared a drive link, right?
+
+02:03:11.420 --> 02:03:13.600
+Yeah. So someone has already put many people have already
+
+02:03:13.600 --> 02:03:15.860
+provided. Okay, that's cool.
+
+02:03:22.010 --> 02:03:25.630
+Okay. So fine guys, this is it again. So we have launched
+
+02:03:25.630 --> 02:03:28.410
+our bed development course. We have launched our DSA course
+
+02:03:28.410 --> 02:03:32.610
+Ram is teaching Ram is taking this DSA with python and bed
+
+02:03:32.610 --> 02:03:35.550
+development has been taken care by Ajay, Ajay Sharma and
+
+02:03:35.550 --> 02:03:39.610
+yeah, so my another batch is going to start from next week
+
+02:03:39.610 --> 02:03:43.750
+onwards for a AI ML Masters. So those if your friends
+
+02:03:43.750 --> 02:03:46.330
+families or anyone is interested or if you are interested
+
+02:03:46.330 --> 02:03:49.210
+and you already have a your own plus access then without any
+
+02:03:49.210 --> 02:03:51.190
+doubt you can join this particular batch. So where I'm going
+
+02:03:51.190 --> 02:03:54.290
+to start. Everything from a python. Yeah. So python stats
+
+02:03:54.290 --> 02:03:57.410
+machine learning ml ops part little bit about a deep
+
+02:03:57.410 --> 02:04:00.070
+learning. I think I have already mentioned and obviously a
+
+02:04:00.070 --> 02:04:03.730
+beautiful high amazing project. Not a regular project. I
+
+02:04:03.730 --> 02:04:06.170
+have the project which I have mentioned over here again is
+
+02:04:06.170 --> 02:04:08.310
+not a regular one. It is using a machine learning. It is
+
+02:04:08.310 --> 02:04:11.390
+using also agent tiki. It is using also a cloud. It is using
+
+02:04:11.390 --> 02:04:16.110
+a ml ops kind of a things because this this kind of a
+
+02:04:16.110 --> 02:04:18.230
+project is a real one and which you can write into your
+
+02:04:18.230 --> 02:04:20.850
+resume. So everything is mentioned inside this entire
+
+02:04:20.850 --> 02:04:24.030
+curriculum. If you are interested, you can just go ahead and
+
+02:04:24.030 --> 02:04:28.010
+then you can start with this course which which will be
+
+02:04:28.010 --> 02:04:32.190
+started like from next week next weekend onwards Saturday
+
+02:04:32.190 --> 02:04:39.010
+Sunday. I have given a timeline so obviously but again so it
+
+02:04:39.010 --> 02:04:43.030
+is going on it will be available. I know I was not able to
+
+02:04:43.030 --> 02:04:45.190
+like a you know upload all the lectures on time.
+

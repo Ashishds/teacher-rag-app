@@ -1,0 +1,4574 @@
+WEBVTT
+
+00:00:47.630 --> 00:00:50.210
+everything is perfect. They want to check your video the
+
+00:00:50.210 --> 00:00:54.430
+YouTube uploaded might find the differences. Yeah, some guys
+
+00:00:54.430 --> 00:00:58.850
+they try to use a sound enhancer while doing a recording.
+
+00:01:01.930 --> 00:01:05.550
+I'll check I'll check from my side like if we can enhance
+
+00:01:05.550 --> 00:01:12.970
+the sound a little bit. So even inside. Okay, so how about
+
+00:01:12.970 --> 00:01:18.070
+like sound but I think it looks good. I believe so. Again,
+
+00:01:18.190 --> 00:01:22.230
+we have launched even a poll inside a group. So let's see.
+
+00:01:27.900 --> 00:01:33.260
+Okay, so produce such in everyone. Good afternoon. So just
+
+00:01:33.260 --> 00:01:36.000
+wait for some time so that everyone can join and then we can
+
+00:01:36.000 --> 00:01:36.680
+start with the class.
+
+00:01:46.600 --> 00:01:52.060
+Okay, all good. Hmm. Fine. They were saying it is good. But
+
+00:01:52.060 --> 00:01:56.040
+it is low. I'm like, it is good. Okay, it is fine.
+
+00:01:59.880 --> 00:02:02.960
+Okay, good. Good afternoon, everyone. Good afternoon. Tamil
+
+00:02:02.960 --> 00:02:05.620
+Selvan, Bharti, Abhishek everyone, you
+
+00:02:11.800 --> 00:02:14.820
+are giving a good content but only concern is low volume.
+
+00:02:15.040 --> 00:02:17.540
+I'm checking I'm checking on but not so we are having
+
+00:02:17.540 --> 00:02:21.600
+conversation. I'm even looking into like a poll. So how many
+
+00:02:21.600 --> 00:02:25.180
+people are facing this issue by the way, because I have to
+
+00:02:25.180 --> 00:02:27.460
+fix it anyhow. So if it is a problem from my side, so
+
+00:02:27.460 --> 00:02:31.960
+obviously I have to fix it. But to fix anything I have to
+
+00:02:31.960 --> 00:02:34.760
+identify first of all, that what is the problem? from my
+
+00:02:34.760 --> 00:02:37.420
+side because I'm not able to see the problem from my side.
+
+00:02:46.820 --> 00:02:49.620
+Everything is perfect. They want to check your video the
+
+00:02:49.620 --> 00:02:53.840
+YouTube uploaded might find the differences. Yeah, some guys
+
+00:02:53.840 --> 00:02:58.260
+they try to use a sound enhancer while doing a recording.
+
+00:03:03.810 --> 00:03:07.390
+I'll check I'll check from my side like if we can enhance
+
+00:03:07.390 --> 00:03:16.110
+the sound a little bit. So even inside Okay,
+
+00:03:19.180 --> 00:03:21.280
+so how about like some sound now, guys?
+
+00:03:26.670 --> 00:03:31.800
+Yeah, no, I don't think that anyone should use a headphone
+
+00:03:31.800 --> 00:03:35.820
+even without even without using an earphone. I think it
+
+00:03:35.820 --> 00:03:36.300
+should be audible.
+
+00:03:43.720 --> 00:03:47.500
+I think when you change to your desk speaker it worked and
+
+00:03:47.500 --> 00:03:52.260
+when you turned off, then when went back to the perfect my
+
+00:03:52.260 --> 00:03:54.780
+side improved a little bit. Okay.
+
+00:04:15.910 --> 00:04:19.070
+Okay, fine. Let's get started. And I'll check it once again.
+
+00:04:19.150 --> 00:04:23.110
+Yeah, I'll check once again from my side. So I think sound
+
+00:04:23.110 --> 00:04:24.990
+wise, we can try to make an improvement. That's not an
+
+00:04:24.990 --> 00:04:28.770
+issue. We have like a kind of a gear. So where we can adjust
+
+00:04:28.770 --> 00:04:33.490
+the sound volume, the output volume. And even I'll have to
+
+00:04:33.490 --> 00:04:37.270
+check into my like OBS
+
+00:04:38.810 --> 00:04:41.290
+so where I can change the sound.
+
+00:05:02.460 --> 00:05:02.900
+Okay.
+
+00:05:10.620 --> 00:05:14.740
+Okay, fine. So let's start with the class guys. Let me share
+
+00:05:14.740 --> 00:05:18.640
+my screen. So today agenda is going to be so first of all,
+
+00:05:18.680 --> 00:05:24.000
+let's set the agenda for today. So you are on and study I
+
+00:05:24.000 --> 00:05:28.220
+believe I was talking about a hugging face and we have even
+
+00:05:28.220 --> 00:05:31.820
+done a fine tuning with the help of hugging face. That is
+
+00:05:31.820 --> 00:05:36.480
+something Okay, I have opened up MCP syllabus, not this one.
+
+00:05:37.480 --> 00:05:40.820
+Yeah. So yesterday, basically, I was talking about a hugging
+
+00:05:40.820 --> 00:05:44.160
+face. And we have seen that how we can try to, you know, use
+
+00:05:44.160 --> 00:05:47.860
+a hugging face how we can try to do a fine tuning with
+
+00:05:47.860 --> 00:05:50.220
+respect to a hugging face. And we were able to do a fine
+
+00:05:50.220 --> 00:05:52.800
+tuning with respect to a model. Now, today's chapter is
+
+00:05:52.800 --> 00:05:55.980
+going to be this one open AI is a chapter which has been
+
+00:05:55.980 --> 00:05:59.260
+mentioned over here. But now we have Yuri. So I'll be
+
+00:05:59.260 --> 00:06:02.980
+talking about open AI. And I'll be talking about Yuri as
+
+00:06:02.980 --> 00:06:05.480
+well. So how many of you have an open a paid account, by the
+
+00:06:05.480 --> 00:06:10.080
+way? Yeah. So in a chat, guys, how many of you have a paid
+
+00:06:10.080 --> 00:06:11.120
+account of open AI?
+
+00:06:14.800 --> 00:06:17.780
+How many of you don't have a paid account? Let's go in that
+
+00:06:17.780 --> 00:06:22.160
+way. So just write no, if you have like we if you don't have
+
+00:06:22.160 --> 00:06:25.540
+a paid account and just write yes. I have a paid account.
+
+00:06:31.420 --> 00:06:35.680
+Okay, Imtiaz, Abhishek, Adiv, I don't have Sachin no, Sai
+
+00:06:35.680 --> 00:06:40.000
+no, Tamil Silva I'm using, Sachin don't have, Anu I have,
+
+00:06:40.120 --> 00:06:45.060
+Amanat no, Santosh O means no, I'll consider Vijay no. Okay,
+
+00:06:45.120 --> 00:06:49.540
+so most of us Sandeep, yes, a couple of people have like, I
+
+00:06:49.540 --> 00:06:54.980
+have Azure open, okay, fine. So okay, so I think like, it's
+
+00:06:54.980 --> 00:06:59.360
+a 60-40 kind of a ratio. Because maybe some of us have an
+
+00:06:59.360 --> 00:07:02.160
+open AI paid account. And some of us don't have open a paid
+
+00:07:02.160 --> 00:07:05.340
+account. But yeah, not an issue you are covered. So we have
+
+00:07:05.340 --> 00:07:08.440
+Yuri and now we have not just Yuri. So basically, we have
+
+00:07:08.440 --> 00:07:11.900
+API access as well. So you will be able to access not just
+
+00:07:11.900 --> 00:07:15.800
+open AI model. That model you will be able to access anyhow,
+
+00:07:16.000 --> 00:07:18.500
+but apart from that, so you will be able to access other
+
+00:07:18.500 --> 00:07:22.220
+model as well. So I'm going to show you that from Yuri. So
+
+00:07:22.220 --> 00:07:25.560
+how you will be able to use an API. And again, there is
+
+00:07:25.560 --> 00:07:28.460
+nothing to show much over here, because the way you are
+
+00:07:28.460 --> 00:07:32.060
+going to use our open AI exact same way, you will be able to
+
+00:07:32.060 --> 00:07:37.240
+use URI. So like a users wise, you won't be able to find out
+
+00:07:37.240 --> 00:07:40.440
+much of difference and not much I would say this is how API
+
+00:07:40.440 --> 00:07:43.060
+is in call. So basically, like whether you are going to use
+
+00:07:43.060 --> 00:07:46.560
+OpenAI or maybe API from a group or maybe API from some
+
+00:07:46.560 --> 00:07:49.900
+other platform, you will end up using or you will end up
+
+00:07:49.900 --> 00:07:52.840
+doing the exact similar kind of things and similar kind of
+
+00:07:52.840 --> 00:07:57.220
+things we have implemented inside a URI. Advantages that you
+
+00:07:57.220 --> 00:08:00.400
+will be able to get over here is so we have a multi model
+
+00:08:00.400 --> 00:08:05.200
+access basically. So like even you will be able to use a
+
+00:08:05.200 --> 00:08:08.780
+Gemini 2.0 flash. So which is going to give you a search
+
+00:08:08.780 --> 00:08:12.120
+capability, a real time search capability. For example, in a
+
+00:08:12.120 --> 00:08:15.000
+class itself, I'm going to ask that what is the temperature
+
+00:08:15.000 --> 00:08:18.660
+of Bangalore or maybe like, give me some sort of a news from
+
+00:08:18.660 --> 00:08:22.280
+a Bangalore. So obviously, this GPT 4.1 nano and mini will
+
+00:08:22.280 --> 00:08:25.080
+not be able to give you a response. But yeah, so this flash
+
+00:08:25.080 --> 00:08:27.560
+is going to give you a response. So every model comes with
+
+00:08:27.560 --> 00:08:30.660
+its own capability by itself. By the way, and we are going
+
+00:08:30.660 --> 00:08:34.260
+to like explore some of those capability in my today's
+
+00:08:34.260 --> 00:08:37.840
+class. And the way you are going to use this model here
+
+00:08:37.840 --> 00:08:41.460
+inside a class or open a model or any other model that you
+
+00:08:41.460 --> 00:08:44.520
+are using any API that you are using to call the LMS, you
+
+00:08:44.520 --> 00:08:47.420
+will be able to use the same thing anywhere means, let's
+
+00:08:47.420 --> 00:08:49.460
+suppose I'm trying to build something from a lang chain,
+
+00:08:49.520 --> 00:08:53.080
+maybe lang smash, maybe an 8n if I'm trying to use so
+
+00:08:53.080 --> 00:08:57.480
+whatever and wherever you need an API, we have a solution
+
+00:08:57.480 --> 00:08:57.740
+now.
+
+00:09:01.540 --> 00:09:05.020
+So you will be able to like find out and I'm going to tell
+
+00:09:05.020 --> 00:09:07.300
+you like how you will be able to use our different different
+
+00:09:07.300 --> 00:09:11.060
+model from the URI itself. So from like this particular
+
+00:09:11.060 --> 00:09:13.700
+endpoint, how you will be able to use all of these things.
+
+00:09:13.880 --> 00:09:17.940
+So let's move ahead guys. And let's try to like explore and
+
+00:09:17.940 --> 00:09:20.820
+let's try to understand that how I can try to use a API and
+
+00:09:20.820 --> 00:09:24.640
+then how I can try to like you know, complete the work.
+
+00:09:28.740 --> 00:09:31.680
+Are you providing all the endpoints exposed by open AI as of
+
+00:09:31.680 --> 00:09:34.820
+now we are, like providing you a chat completion and yeah,
+
+00:09:34.900 --> 00:09:37.520
+real time search, basically. So basically, this completion
+
+00:09:37.520 --> 00:09:40.940
+endpoint itself is like going to do a chat completion that's
+
+00:09:40.940 --> 00:09:43.640
+completely fine means whatever you do with respect to open
+
+00:09:43.640 --> 00:09:49.180
+AI, you will be able to do 90% of the task basically. So you
+
+00:09:49.180 --> 00:09:51.160
+can you can try this out maybe after this class and let me
+
+00:09:51.160 --> 00:09:53.320
+know what tasks you are not able to do. So yeah, we are
+
+00:09:53.320 --> 00:09:56.180
+giving you a chat completion, image and all those things you
+
+00:09:56.180 --> 00:09:58.720
+will not be able to generate. But yeah, for image, so we
+
+00:09:58.720 --> 00:10:02.540
+have other model. So we have other models. So if you go here
+
+00:10:02.540 --> 00:10:05.320
+inside a new chat, and then if you are going to click on
+
+00:10:05.320 --> 00:10:09.100
+generate, so here Gemini 2.0 flash experimental. So this
+
+00:10:09.100 --> 00:10:11.020
+model you can try to call if you have to generate the
+
+00:10:11.020 --> 00:10:14.180
+images. So even you will be able to generate images by using
+
+00:10:14.180 --> 00:10:19.300
+a Gemini 2.0 flash. So we have our models over here, we have
+
+00:10:19.300 --> 00:10:20.820
+a model available in this particular place.
+
+00:10:24.740 --> 00:10:27.980
+Yesterday, I'm trying to build a blog generator with the UD
+
+00:10:27.980 --> 00:10:30.560
+API but unable to build it. Okay, let's see today we will be
+
+00:10:30.560 --> 00:10:34.040
+able to build it or not. Fine. I don't think that we should
+
+00:10:34.040 --> 00:10:36.900
+face any kind of a problem. And we are fixing it, we are
+
+00:10:36.900 --> 00:10:40.480
+fixing all the issues and when it comes to us, so we are
+
+00:10:40.480 --> 00:10:43.900
+fixing each and everything. So fine, guys, let's get started
+
+00:10:43.900 --> 00:10:48.260
+with the class. And let me like explain you one by one one
+
+00:10:48.260 --> 00:10:52.500
+by one. So how we can try to use open AI or maybe this URI
+
+00:10:52.500 --> 00:10:58.480
+API at the end of the day, fine. Now, so here, open AI is
+
+00:10:58.480 --> 00:11:00.880
+going to provide you maybe embeddings, it is going to
+
+00:11:00.880 --> 00:11:03.100
+provide you a content filtration, it is going to provide you
+
+00:11:03.100 --> 00:11:08.080
+image and audio, we are providing image not with open AI, we
+
+00:11:08.080 --> 00:11:11.260
+are providing image with a Gemini, we are not providing you
+
+00:11:11.260 --> 00:11:14.120
+as of now embedding and moderation. But yeah, completion we
+
+00:11:14.120 --> 00:11:17.420
+are trying to provide you. And I think this is the API that
+
+00:11:17.420 --> 00:11:19.340
+we try to use 99% of the time.
+
+00:11:23.290 --> 00:11:26.050
+Translation and transcription endpoint is not available in
+
+00:11:26.050 --> 00:11:28.050
+URI. Yeah, that is not available that will be available
+
+00:11:28.050 --> 00:11:29.170
+going forward.
+
+00:11:35.460 --> 00:11:41.620
+Okay, so let me share my VS code screen. So VS code and
+
+00:11:43.930 --> 00:11:49.050
+open folder. D drive code,
+
+00:11:50.880 --> 00:12:03.100
+open AI URI URI. Okay, so let's get started. So test dot or
+
+00:12:03.100 --> 00:12:12.610
+I can write today's date. So 20th APRIL 20th April API
+
+00:12:12.610 --> 00:12:17.590
+testing dot IP YNB.
+
+00:12:20.790 --> 00:12:24.530
+Okay, so first of all, what I will do is so maybe I'll go to
+
+00:12:24.530 --> 00:12:29.310
+open AI, and then those who are not aware about open AI, so
+
+00:12:29.310 --> 00:12:33.030
+maybe I can try to show you that part. So you have to create
+
+00:12:33.030 --> 00:12:35.890
+an account in a very first place. And once you have an
+
+00:12:35.890 --> 00:12:39.650
+account from open AI, I believe chat GPT screen we all have
+
+00:12:39.650 --> 00:12:43.090
+seen, right, but maybe some of us, I'm not saying that all
+
+00:12:43.090 --> 00:12:44.410
+of you, but
+
+00:12:52.440 --> 00:12:56.560
+yeah, maybe some of us have not like a use this particular
+
+00:12:56.560 --> 00:13:00.640
+feature, which is an API. And any anyone who don't
+
+00:13:00.640 --> 00:13:05.800
+understand like what is API, anyone guys, so like, I can
+
+00:13:05.800 --> 00:13:08.240
+like maybe give you some sort of explanation for that. If
+
+00:13:08.240 --> 00:13:09.740
+you don't understand what is API, by the way?
+
+00:13:29.100 --> 00:13:30.260
+Yeah, anyone?
+
+00:13:37.640 --> 00:13:41.980
+Okay, I'm just assuming that, like, most of us understands.
+
+00:13:42.200 --> 00:13:45.320
+Okay, someone has said that. Yes, please explain. Okay, see
+
+00:13:45.320 --> 00:13:49.420
+guys API, I think you must have built some sort of if you're
+
+00:13:49.420 --> 00:13:51.780
+going through like a recent project that I'm publishing on a
+
+00:13:51.780 --> 00:13:55.320
+regular basis. So you must have seen that I'm using a fast
+
+00:13:55.320 --> 00:13:59.800
+API or in some of the project I have, even used a flask. So
+
+00:13:59.800 --> 00:14:03.200
+basically, with the help of these fast API, or with the help
+
+00:14:03.200 --> 00:14:07.180
+of this flask, what I'm trying to achieve. So basically, I'm
+
+00:14:07.180 --> 00:14:11.860
+trying to expose my function or I'm trying to expose one of
+
+00:14:11.860 --> 00:14:15.820
+my module to the outer world. Now, in a layman way, if we
+
+00:14:15.820 --> 00:14:19.960
+have to understand that what is API, so let me explain, let
+
+00:14:19.960 --> 00:14:22.800
+me explain you that in a very first place and hope after
+
+00:14:22.800 --> 00:14:25.460
+today's class, you all will be able to understand that what
+
+00:14:25.460 --> 00:14:31.680
+exactly the API is. So see, guys, this entire world, the IT
+
+00:14:31.680 --> 00:14:34.920
+world or software industry that you are able to see, it
+
+00:14:34.920 --> 00:14:39.980
+works on API. Now, why API is required. So let's suppose
+
+00:14:39.980 --> 00:14:44.920
+let's suppose you are trying to use some of the payment.
+
+00:14:45.060 --> 00:14:47.920
+Generally, I tried to give a payment app example, because
+
+00:14:47.920 --> 00:14:51.380
+it's easy to understand. So let's suppose you are trying to
+
+00:14:51.380 --> 00:14:55.600
+use some payment app, maybe you are trying to use a GP as a
+
+00:14:55.600 --> 00:14:59.020
+payment app, basically, right? G pay. So what do you do
+
+00:14:59.020 --> 00:15:02.260
+while making a payment? So you go to your GP application and
+
+00:15:02.260 --> 00:15:05.180
+you try to put some sort of a mobile number over there, or
+
+00:15:05.180 --> 00:15:09.000
+maybe UPI ID you try to put up over there. Or maybe you try
+
+00:15:09.000 --> 00:15:12.320
+to search a user and then select it or maybe you try to scan
+
+00:15:12.320 --> 00:15:17.440
+a QR code. Right. So you are basically trying to give an
+
+00:15:17.440 --> 00:15:21.000
+input input to home. So basically you are trying to give an
+
+00:15:21.000 --> 00:15:25.020
+input so that transaction is going to happen. From my
+
+00:15:25.020 --> 00:15:28.400
+account to your account, or from account to some vendors
+
+00:15:28.400 --> 00:15:31.700
+account so transaction is supposed to happen and even you
+
+00:15:31.700 --> 00:15:34.860
+must have like a paid for Euron plus so you must have seen
+
+00:15:34.860 --> 00:15:36.880
+that there is a payment gateway which has been integrated
+
+00:15:36.880 --> 00:15:40.360
+over there and we are not managing a payment gateway by the
+
+00:15:40.360 --> 00:15:43.760
+way so we are using a service from someone right so
+
+00:15:43.760 --> 00:15:48.800
+basically you have to pay let's suppose for a Euron plus so
+
+00:15:48.800 --> 00:15:51.540
+with the help of Google pay so you are trying to pay for
+
+00:15:51.540 --> 00:15:55.780
+what so you are trying to pay for your on plus right so
+
+00:15:55.780 --> 00:15:58.580
+whenever you are going to select okay. So, whenever you're
+
+00:15:58.580 --> 00:16:00.420
+going to celebrate that. Okay, I have to purchase this Euron
+
+00:16:00.420 --> 00:16:04.680
+plus. So what we are trying to do? So, we are basically
+
+00:16:04.680 --> 00:16:08.420
+trying to send a request, right, we are trying to send a
+
+00:16:08.420 --> 00:16:11.800
+request with all of your detail that this is the payment
+
+00:16:11.800 --> 00:16:14.740
+amount and this is the user our details. So we are trying to
+
+00:16:14.740 --> 00:16:18.780
+send this entire things with the help of Jeep, let's suppose
+
+00:16:18.780 --> 00:16:21.340
+you are trying to scan this Euron plus with them up of GP.
+
+00:16:21.600 --> 00:16:24.260
+So we are trying to trying to send all of this detail from
+
+00:16:24.260 --> 00:16:29.680
+Euron plus to GPay over here for example and then this GPay
+
+00:16:29.680 --> 00:16:33.880
+is going to call what so maybe this GPay is going to call a
+
+00:16:33.880 --> 00:16:38.480
+UPI right UPI server so or maybe your bank server it is
+
+00:16:38.480 --> 00:16:41.020
+going to call directly or maybe some other payment system it
+
+00:16:41.020 --> 00:16:43.340
+is going to call directly so whatever like it is going to
+
+00:16:43.340 --> 00:16:47.400
+support so it is going to call the UPI server so here server
+
+00:16:47.400 --> 00:16:51.740
+now your UPI server is technically connected with a multiple
+
+00:16:51.740 --> 00:16:56.060
+banks right maybe I am using HDFC bank you are using ICICI
+
+00:16:56.060 --> 00:16:58.760
+bank bank of Baroda, Canara bank whatever it is Grameen bank
+
+00:16:58.760 --> 00:17:02.820
+whatever it is right so technically your UPI system is
+
+00:17:02.820 --> 00:17:08.120
+connected with all of this bank B1 bank B2 bank B3 bank B4
+
+00:17:08.120 --> 00:17:11.220
+and so on so it is connected with a multiple bank so here
+
+00:17:11.220 --> 00:17:17.700
+when you are trying to send a request request that okay fine
+
+00:17:17.700 --> 00:17:18.160
+and then you are trying to send a request that okay fine and
+
+00:17:18.160 --> 00:17:19.100
+then you are trying to send a request that request you have
+
+00:17:19.100 --> 00:17:22.140
+received from Euron so Euron is sending a request to this
+
+00:17:22.140 --> 00:17:24.840
+one and this one is sending a request to a UPI UPI is
+
+00:17:24.840 --> 00:17:28.880
+sending a request to a bank now so when Euron is going to
+
+00:17:28.880 --> 00:17:31.840
+send a request it will say that that okay so basically this
+
+00:17:31.840 --> 00:17:35.060
+is the user detail this is the login id basically maybe your
+
+00:17:35.060 --> 00:17:37.480
+email id or maybe your mobile id because we are giving you
+
+00:17:37.480 --> 00:17:40.560
+both the option so with the help of mobile id mobile number
+
+00:17:40.560 --> 00:17:43.800
+or with the help of maybe uh like a google login you will be
+
+00:17:43.800 --> 00:17:46.180
+able to log in so we are going to send that detail that this
+
+00:17:46.180 --> 00:17:48.680
+is the user this user is trying to like do the transaction
+
+00:17:48.680 --> 00:17:52.840
+so and the user is this this is you basically right so this
+
+00:17:52.840 --> 00:17:56.220
+is you user who is using gpay basically so you are going to
+
+00:17:56.220 --> 00:17:58.620
+send your gpay is going to send a request automatically to
+
+00:17:58.620 --> 00:18:02.180
+UPI UPI is going to send a request to a respective bank in
+
+00:18:02.180 --> 00:18:06.260
+whatever bank your UPI is basically connected then bank is
+
+00:18:06.260 --> 00:18:09.760
+going to check all the details or this UPI end itself so we
+
+00:18:09.760 --> 00:18:11.980
+are going to check some of the detail and even over here we
+
+00:18:11.980 --> 00:18:15.340
+are going to check some other detail that whether you have a
+
+00:18:15.340 --> 00:18:18.080
+sufficient balance in your account or whether you have a
+
+00:18:18.080 --> 00:18:19.320
+sufficient balance in your account or not whether you are
+
+00:18:19.320 --> 00:18:22.200
+authorized to make this payment on this particular app or
+
+00:18:22.200 --> 00:18:24.620
+not so all this kind of a detail it is going to check
+
+00:18:24.620 --> 00:18:28.780
+immediately and then it is going to send back a response so
+
+00:18:28.780 --> 00:18:31.500
+basically it is going to send back a response then this is
+
+00:18:31.500 --> 00:18:34.480
+going to send back a response over here and then this is
+
+00:18:34.480 --> 00:18:37.920
+going to send back a response over here saying that that
+
+00:18:37.920 --> 00:18:40.660
+bank will send to a UPI that okay fine this payment is
+
+00:18:40.660 --> 00:18:44.040
+authorized now the amount will be directed from your bank
+
+00:18:44.040 --> 00:18:49.140
+account and then with the help of UPI so this gpay is going
+
+00:18:49.140 --> 00:18:50.920
+to authorize that okay fine so this transaction is
+
+00:18:50.920 --> 00:18:54.440
+successful and then it is going to send us a response to
+
+00:18:54.440 --> 00:18:58.180
+your own system that okay fine so this user has made the
+
+00:18:58.180 --> 00:19:00.660
+payment and your own system is going to do what so your own
+
+00:19:00.660 --> 00:19:05.820
+system is going to give you access of a course so access of
+
+00:19:05.820 --> 00:19:09.820
+basically your own plus and then when you will go inside
+
+00:19:09.820 --> 00:19:12.320
+your profile you will be able to find out an access of all
+
+00:19:12.320 --> 00:19:14.580
+the courses and all the services that we are trying to offer
+
+00:19:14.580 --> 00:19:15.580
+to all of you
+
+00:19:18.480 --> 00:19:20.900
+so this is basically a story that i'm trying to build up
+
+00:19:20.900 --> 00:19:24.540
+over here now let's imagine that we have a multiple banks
+
+00:19:24.540 --> 00:19:28.380
+over here we have a UPI system in between we have a gpay
+
+00:19:28.380 --> 00:19:32.200
+system in between and we have a Euron system over here now
+
+00:19:32.200 --> 00:19:36.400
+all of this system has been built by using a different
+
+00:19:36.400 --> 00:19:39.560
+different tech stack now your own system can't go and say
+
+00:19:39.560 --> 00:19:42.780
+gpay that okay so i'm using this particular tech stack maybe
+
+00:19:42.780 --> 00:19:45.820
+i have written my back-end code into a python so you are
+
+00:19:45.820 --> 00:19:47.880
+also supposed to write the back-end code in python so you
+
+00:19:47.880 --> 00:19:47.880
+are also supposed to write the back-end code in python so
+
+00:19:47.880 --> 00:19:50.700
+you are now gpay system can't ask upi the same upi system
+
+00:19:50.700 --> 00:19:53.280
+can't ask the same thing to the bank any of the bank right
+
+00:19:53.280 --> 00:19:57.120
+so maybe they have done their implementation in java maybe
+
+00:19:57.120 --> 00:20:00.680
+upi has been implemented with the help of node maybe gpay
+
+00:20:00.680 --> 00:20:04.100
+has done their implementation by using a go and maybe we are
+
+00:20:04.100 --> 00:20:07.320
+using a python over here so just layman way i'm trying to
+
+00:20:07.320 --> 00:20:11.260
+explain these things so basically our system is written in a
+
+00:20:11.260 --> 00:20:14.100
+different different language or in a with the help of
+
+00:20:14.100 --> 00:20:16.540
+different different kind of a framework we are using and we
+
+00:20:16.540 --> 00:20:19.300
+have written the entire system because all the systems are
+
+00:20:19.300 --> 00:20:21.440
+what all the systems are software at the end of the day a
+
+00:20:21.440 --> 00:20:24.780
+piece of code even your banking system even your upi even
+
+00:20:24.780 --> 00:20:27.780
+your gpay and even your iran plus system is what just a
+
+00:20:27.780 --> 00:20:31.060
+piece of code by the way right just a piece of code so
+
+00:20:31.060 --> 00:20:35.080
+system is supposed to communicate when i say that send a
+
+00:20:35.080 --> 00:20:39.500
+request right so request from one system request from one
+
+00:20:39.500 --> 00:20:43.140
+system to other system to this system and then get a
+
+00:20:43.140 --> 00:20:46.560
+response from this system to this system to this system so
+
+00:20:46.560 --> 00:20:50.140
+obviously this system is supposed to communicate between
+
+00:20:50.140 --> 00:20:53.980
+each other right communicate between each other now this is
+
+00:20:53.980 --> 00:20:57.900
+where the concept of api application programming interface
+
+00:20:57.900 --> 00:21:01.060
+comes into a picture now with the help of application
+
+00:21:01.060 --> 00:21:04.760
+programming interface what we do is so we try to basically
+
+00:21:04.760 --> 00:21:10.280
+allow other system to access some of the function because at
+
+00:21:10.280 --> 00:21:13.520
+the end of the day eon plus has written some function gp has
+
+00:21:13.520 --> 00:21:16.160
+written some function to make a transaction upi has written
+
+00:21:16.160 --> 00:21:20.180
+some function it's a function piece of code means what again
+
+00:21:20.180 --> 00:21:22.840
+a module packages function and classes at the end of the day
+
+00:21:22.840 --> 00:21:25.680
+right this is the this is something that you will be able to
+
+00:21:25.680 --> 00:21:29.900
+find out everywhere so with the help of api so what do we
+
+00:21:29.900 --> 00:21:34.020
+say that that at this url right maybe i am writing a payment
+
+00:21:34.020 --> 00:21:39.980
+pay ment payment url so at this url my function is available
+
+00:21:39.980 --> 00:21:43.620
+so you can call it and then pass a data the way you try to
+
+00:21:43.620 --> 00:21:47.900
+pass a data into a function so i will pass a data i will try
+
+00:21:47.900 --> 00:21:51.280
+to call your function right with the help of what with the
+
+00:21:51.280 --> 00:21:55.920
+help of a url right with the help of http request or https
+
+00:21:55.920 --> 00:22:00.320
+request i will try to access your particular function so
+
+00:22:00.320 --> 00:22:04.200
+this url by which you will be able to access some other
+
+00:22:04.200 --> 00:22:09.360
+heterogeneous or homogeneous functions from other system is
+
+00:22:09.360 --> 00:22:13.220
+called as api application programming interface so it works
+
+00:22:13.220 --> 00:22:16.180
+as a bridge in between two different different kind of a
+
+00:22:16.180 --> 00:22:20.000
+system now just now after some time so we are going to use
+
+00:22:20.000 --> 00:22:24.840
+basically open ai right open ai api and then you will be
+
+00:22:24.840 --> 00:22:29.360
+using even our yuri api right yuri api now we have
+
+00:22:29.360 --> 00:22:32.980
+implemented a system by using some different frameworks so
+
+00:22:32.980 --> 00:22:35.880
+let's suppose we are using a more mean kind of a framework
+
+00:22:35.880 --> 00:22:39.060
+inside a yuri open ai maybe have done some sort of
+
+00:22:39.060 --> 00:22:41.700
+implementation by using a java or something like that right
+
+00:22:41.700 --> 00:22:47.000
+so open ai has exposed a api endpoint so that any developer
+
+00:22:47.000 --> 00:22:50.260
+any programmer will be able to call open ai different
+
+00:22:50.260 --> 00:22:52.700
+different kind of endpoints maybe a chat completion endpoint
+
+00:22:52.700 --> 00:22:55.220
+maybe an image generation endpoint maybe an audio endpoint
+
+00:22:55.220 --> 00:22:58.480
+so all those endpoints you will be able to access and same
+
+00:22:58.480 --> 00:23:01.560
+goes with yuri so this the api that you are able to see so
+
+00:23:01.560 --> 00:23:05.160
+we are giving you a url now so with the help of that url you
+
+00:23:05.160 --> 00:23:08.320
+will be able to access something and with that we have done
+
+00:23:08.320 --> 00:23:11.620
+what we have attached basically authentication and this is
+
+00:23:11.620 --> 00:23:13.920
+the reason so you need a key key is nothing but a password
+
+00:23:13.920 --> 00:23:17.000
+basically so whenever you go to gmail or any other like a
+
+00:23:17.000 --> 00:23:20.320
+linkedin or you maybe like a facebook anywhere so you try to
+
+00:23:20.320 --> 00:23:22.780
+pass your password and then you try like try to give your
+
+00:23:22.780 --> 00:23:26.100
+user id and password so basically these keys are nothing but
+
+00:23:26.100 --> 00:23:29.420
+it is going to behave like a password for you that at this
+
+00:23:29.420 --> 00:23:32.420
+point at this url i am trying to access some function now
+
+00:23:32.420 --> 00:23:36.880
+this is the password take it and then let me access fine
+
+00:23:36.880 --> 00:23:40.140
+guys making sense what is the endpoint this url the url
+
+00:23:40.140 --> 00:23:42.860
+which i am talking about now this is the url url which has
+
+00:23:42.860 --> 00:23:47.000
+been designed for the specific purpose technically this url
+
+00:23:47.000 --> 00:23:49.840
+let's see if i am trying to call slash payment so let's
+
+00:23:49.840 --> 00:23:55.360
+suppose i am trying to call 127.0.0.1 which is my localhost
+
+00:23:55.360 --> 00:23:58.720
+technically and then i am saying payment right payment so
+
+00:23:58.720 --> 00:24:01.420
+what it is going to access it is going to access or it is
+
+00:24:01.420 --> 00:24:05.540
+going to execute my payment function so payment function it
+
+00:24:05.540 --> 00:24:09.360
+is going to execute so this is nothing but this is my end
+
+00:24:09.360 --> 00:24:10.800
+point yes
+
+00:24:12.880 --> 00:24:14.080
+why
+
+00:24:16.000 --> 00:24:20.740
+do we need a api like a fast fast api is not a api so it's
+
+00:24:20.740 --> 00:24:24.660
+actually a framework to create an api its name is given in
+
+00:24:24.660 --> 00:24:27.880
+that way but yeah it's basically a framework where you will
+
+00:24:27.880 --> 00:24:30.660
+be a pythonic framework so where you will be able to use a
+
+00:24:30.660 --> 00:24:34.860
+python code and a fast api library and then you can expose
+
+00:24:34.860 --> 00:24:38.660
+your function to the outer world so please check the project
+
+00:24:38.660 --> 00:24:41.080
+otherwise please go through a basic of python because that
+
+00:24:41.080 --> 00:24:44.100
+is very much required and without api you will not be able
+
+00:24:44.100 --> 00:24:47.960
+to work in any means literally any real world project
+
+00:24:47.960 --> 00:24:53.960
+because every real world project needs an api yes without
+
+00:24:53.960 --> 00:24:57.600
+that believe me any production grade product you will not be
+
+00:24:57.600 --> 00:25:00.580
+able to create even as a data scientist it's not like a
+
+00:25:00.580 --> 00:25:04.220
+responsibility of someone who and it's not difficult it's
+
+00:25:04.220 --> 00:25:08.120
+just a concept right that i have to access x y g function
+
+00:25:08.120 --> 00:25:10.960
+simple i have to access x y g function which i have written
+
+00:25:10.960 --> 00:25:14.760
+in python what i will do is i'll try to simply host it on
+
+00:25:14.760 --> 00:25:20.180
+maybe this url 0.0.1 slash x y g so anyone is calling this
+
+00:25:20.180 --> 00:25:23.340
+entire url they will be able to access x y g function which
+
+00:25:23.340 --> 00:25:26.280
+i have written in python right maybe someone has written the
+
+00:25:26.280 --> 00:25:29.700
+same function by using a java that's completely fine i'll
+
+00:25:29.700 --> 00:25:33.660
+try to expose it even by x y g so now this url that you are
+
+00:25:33.660 --> 00:25:37.660
+able to see the url this url is basically a language
+
+00:25:37.660 --> 00:25:41.060
+independent url it doesn't depends upon the language because
+
+00:25:41.060 --> 00:25:46.020
+it's a protocol https is what https is technically what
+
+00:25:46.020 --> 00:25:50.020
+https is technically a protocol right doesn't matter like
+
+00:25:50.020 --> 00:25:52.520
+whether you are going to hit some url with the java with the
+
+00:25:52.520 --> 00:25:55.980
+python go with any other programming languages right so
+
+00:25:55.980 --> 00:25:59.600
+basically this is nothing but this is a protocol that we are
+
+00:25:59.600 --> 00:26:03.680
+trying to use over here protocol means what a rule someone
+
+00:26:03.680 --> 00:26:07.200
+has defined a rule that if you have to expose your function
+
+00:26:07.200 --> 00:26:11.680
+if you have to expose your system right create a url create
+
+00:26:11.680 --> 00:26:14.660
+a https and with the help of https i will allow you to
+
+00:26:14.660 --> 00:26:20.840
+access it making sense guys a little bit of it yeah
+
+00:26:20.840 --> 00:26:23.880
+otherwise please come and join my python class i'll teach
+
+00:26:23.880 --> 00:26:28.460
+you how to create api i teach a lot that part or even when
+
+00:26:28.460 --> 00:26:30.300
+you will go through my project so over there i'm not
+
+00:26:30.300 --> 00:26:33.700
+teaching you how to create a like api from the basic but
+
+00:26:33.700 --> 00:26:37.540
+yeah i'm using api over there in almost all the project but
+
+00:26:40.230 --> 00:26:43.630
+yes without api and yeah don't don't get afraid about the
+
+00:26:43.630 --> 00:26:47.190
+api it's a very very simple concept right one time in a life
+
+00:26:47.190 --> 00:26:50.150
+you have to learn you have to create one or two function and
+
+00:26:50.150 --> 00:26:54.030
+map it with the a particular like a url particular path
+
+00:26:54.030 --> 00:26:57.870
+that's it you will be able to understand each and everything
+
+00:26:57.870 --> 00:27:02.590
+for the entire life and you will be able to establish a
+
+00:27:02.590 --> 00:27:06.410
+communication between any system to any system okay so now
+
+00:27:06.410 --> 00:27:10.390
+moving ahead so this is where this open ai api comes into a
+
+00:27:10.390 --> 00:27:13.890
+picture where in a programmatic way you all will be able to
+
+00:27:13.890 --> 00:27:17.390
+access this open ai and you all will be able to basically
+
+00:27:17.930 --> 00:27:22.250
+like a use whatever function that they have exposed whatever
+
+00:27:22.250 --> 00:27:27.510
+end point that they have exposed so while retrieving a data
+
+00:27:27.510 --> 00:27:31.010
+from a database is it risk to a data leak to a open ai see
+
+00:27:31.010 --> 00:27:33.610
+whatever data you are sending to an open eye so obviously
+
+00:27:33.610 --> 00:27:38.050
+they are using it to build their memory and again so they
+
+00:27:38.050 --> 00:27:41.390
+say that they're not using your data but i don't know no one
+
+00:27:41.390 --> 00:27:43.710
+knows actually right so
+
+00:27:45.690 --> 00:27:49.070
+can't say anything as per their claim they're not using it
+
+00:27:49.070 --> 00:27:52.730
+but yeah so there are again like a tons of claim where
+
+00:27:52.730 --> 00:27:55.710
+people are saying that they're using it so i can't comment
+
+00:27:55.710 --> 00:27:57.250
+on that part fine
+
+00:28:02.180 --> 00:28:05.000
+guys okay so let's go ahead so
+
+00:28:07.880 --> 00:28:11.920
+here now this is the openai dashboard so once you are going
+
+00:28:11.920 --> 00:28:14.540
+to log in so you will be able to find out that this is the
+
+00:28:14.540 --> 00:28:19.020
+platform.openai you have to go platform.openai.com i am
+
+00:28:19.020 --> 00:28:21.720
+pinging you the link as well so if you are going to go over
+
+00:28:21.720 --> 00:28:25.480
+here right so you will be able to find out our openai
+
+00:28:25.480 --> 00:28:28.800
+dashboard now just go to your profile and click on your
+
+00:28:28.800 --> 00:28:32.200
+profile option this is your profile option now over here you
+
+00:28:32.200 --> 00:28:35.440
+will be able to see api keys option so here they are giving
+
+00:28:35.440 --> 00:28:39.000
+you api key option and it's very simple to create an api key
+
+00:28:39.000 --> 00:28:43.520
+so create a new secret key click and then my test key so
+
+00:28:43.520 --> 00:28:46.360
+maybe i am going to give a name it's optional again select a
+
+00:28:46.360 --> 00:28:49.560
+default project and then i am going to click create a secret
+
+00:28:49.560 --> 00:28:53.680
+key so now this is the secret key which is available with me
+
+00:28:53.680 --> 00:28:56.620
+from openai basically this is a secret key and with the help
+
+00:28:56.620 --> 00:29:01.660
+of this openai secret key i will be able to access the api
+
+00:29:01.660 --> 00:29:03.640
+key that they have exposed so whatever model whatever
+
+00:29:03.640 --> 00:29:06.460
+functions or whatever endpoint that they're exposing i will
+
+00:29:06.460 --> 00:29:10.000
+be able to access each and everything so this is how easy it
+
+00:29:10.000 --> 00:29:14.020
+is to create an api in case of openai and even on other
+
+00:29:14.020 --> 00:29:16.560
+platform you will be able to find out the exact same thing
+
+00:29:16.560 --> 00:29:19.400
+now billing you will be able to check your billings over
+
+00:29:19.400 --> 00:29:21.840
+here right so if you are going to add some payment methods
+
+00:29:21.840 --> 00:29:24.400
+so you can do a payment like i have already added over here
+
+00:29:24.400 --> 00:29:28.240
+i keep on paying a lot to openai and all the other platform
+
+00:29:31.580 --> 00:29:32.280
+so you can do that then you can also try to use this api key
+
+00:29:32.280 --> 00:29:32.280
+and i will be able to get the payment method for you as well
+
+00:29:32.280 --> 00:29:35.340
+so they have already mentioned a limit that for what model
+
+00:29:35.340 --> 00:29:39.160
+what is a token limit that you will be able to find out
+
+00:29:39.160 --> 00:29:42.820
+right so 300 token per minute and then 2 lakh token and then
+
+00:29:42.820 --> 00:29:45.260
+2 lakh then 2 lakh and all those things there is something
+
+00:29:45.260 --> 00:29:47.440
+that you will be able to find out based on the different
+
+00:29:47.440 --> 00:29:52.360
+different model that they are exposing simple right now here
+
+00:29:52.360 --> 00:29:56.480
+so they have again a multiple tab basically so data sharing
+
+00:29:56.480 --> 00:29:58.020
+wise someone has asked me a question
+
+00:30:01.580 --> 00:30:04.420
+model feedback for the platform so you can enable it or
+
+00:30:04.420 --> 00:30:06.900
+maybe you can try to disable it so technically I have
+
+00:30:06.900 --> 00:30:09.960
+disabled or by default it will be disabled right unless and
+
+00:30:09.960 --> 00:30:11.720
+until you are not going to enable it they are not going to
+
+00:30:11.720 --> 00:30:15.180
+take your data but again no one knows basically you are
+
+00:30:15.180 --> 00:30:20.140
+interacting with their system so I'm not the one who can
+
+00:30:20.140 --> 00:30:22.600
+make a claim that they are not going to use your data or
+
+00:30:22.600 --> 00:30:25.100
+they are going to use your data I think I'm not like
+
+00:30:25.100 --> 00:30:29.520
+authorized enough basically to make a comment on that part
+
+00:30:29.520 --> 00:30:34.520
+at least so here at the end of the day mostly you need a key
+
+00:30:34.520 --> 00:30:37.680
+over here right so once you are going to create a key you
+
+00:30:37.680 --> 00:30:41.180
+will be able to hit these models and then you will be able
+
+00:30:41.180 --> 00:30:45.460
+to get a response now so key wise it's completely fine I
+
+00:30:45.460 --> 00:30:49.160
+will be able to like you know create a key just by writing
+
+00:30:49.160 --> 00:30:52.980
+some single like just by clicking over here but how I am
+
+00:30:52.980 --> 00:30:57.320
+going to use it and just. And how I will be able to get a
+
+00:30:57.320 --> 00:31:00.580
+response at the end of the day let's try to understand that
+
+00:31:00.580 --> 00:31:03.720
+part with the help of code for that I'm going to do a code
+
+00:31:03.720 --> 00:31:08.380
+over here so let me select my Python environment and any
+
+00:31:08.380 --> 00:31:12.300
+environment I can try to create maybe you like a CNN based
+
+00:31:12.300 --> 00:31:14.700
+Python yeah this is the environment kernel I have selected
+
+00:31:14.700 --> 00:31:22.070
+now what is the reinforcement running if I am not using our
+
+00:31:22.070 --> 00:31:24.850
+data so reinforcement doesn't mean that it is supposed to
+
+00:31:24.850 --> 00:31:30.310
+use data it's more about the feedback. By the way okay so
+
+00:31:30.310 --> 00:31:35.650
+here try to import open AI and those who will be able to get
+
+00:31:35.650 --> 00:31:37.870
+some sort of error so maybe you can try to write over here
+
+00:31:37.870 --> 00:31:41.270
+pip install open AI so that you will not be able to get any
+
+00:31:41.270 --> 00:31:44.570
+kind of error over here so just like a write pip install
+
+00:31:44.570 --> 00:31:48.390
+open AI and you will be able to install open SDK inside your
+
+00:31:48.390 --> 00:31:52.270
+local system now here so you have to call just import open
+
+00:31:52.270 --> 00:31:56.910
+AI now after importing open AI. So. So you have to give a
+
+00:31:56.910 --> 00:32:02.370
+key, the key that you are going to use at the end of the day
+
+00:32:02.370 --> 00:32:06.850
+to access those model and then you can give an input model
+
+00:32:06.850 --> 00:32:10.810
+is going to give you the output. So here to give a OpenAI
+
+00:32:10.810 --> 00:32:13.890
+key or to set OpenAI key, there are multiple way by which I
+
+00:32:13.890 --> 00:32:16.810
+will be setting this OpenAI key as of now in a simplest
+
+00:32:16.810 --> 00:32:21.110
+possible way. So I can try to like write over here. So
+
+00:32:21.110 --> 00:32:26.630
+OpenAI API key and then I'm going to copy my own OpenAI key.
+
+00:32:26.730 --> 00:32:30.710
+So let me create once again, something like this and then
+
+00:32:30.710 --> 00:32:36.810
+create a secret key, copy, simple. And then I'm going to
+
+00:32:36.810 --> 00:32:41.870
+keep it as a string. Keep it as a string. Now in this way,
+
+00:32:41.970 --> 00:32:45.170
+OpenAI will be able to understand that okay, so this is a
+
+00:32:45.170 --> 00:32:48.950
+key and whenever I'm going to access any of these models, so
+
+00:32:48.950 --> 00:32:52.110
+it will be able to authorize. It will be able to authorize
+
+00:32:52.110 --> 00:32:55.190
+and it will be able to give me some sort of a response at
+
+00:32:55.190 --> 00:32:58.590
+the end of the day. So here to get some sort of a response
+
+00:32:58.590 --> 00:33:01.710
+from OpenAI, so what we can do is we can try to call OpenAI
+
+00:33:01.710 --> 00:33:07.850
+.completion, completions, I think it should be like a
+
+00:33:07.850 --> 00:33:14.150
+capital. So completion, no, I think it became small now. So
+
+00:33:14.150 --> 00:33:20.310
+completion.create, C-R-E-A-T, create. And then you can try.
+
+00:33:20.310 --> 00:33:23.250
+You can try to create your load over here, right? You can
+
+00:33:23.250 --> 00:33:26.650
+try to create your load over here and you all will be able
+
+00:33:26.650 --> 00:33:31.770
+to hit a particular model at the end of the day. So here,
+
+00:33:31.870 --> 00:33:37.030
+model wise, I have already shown you. So here, data
+
+00:33:39.400 --> 00:33:42.260
+control, general, not
+
+00:33:44.850 --> 00:33:45.290
+limit,
+
+00:33:48.870 --> 00:33:50.650
+uses,
+
+00:33:51.930 --> 00:33:56.470
+yeah. So here inside a limit, you will be able to see a
+
+00:33:56.470 --> 00:34:00.470
+variety of a model. And you all will be able to call it
+
+00:34:00.470 --> 00:34:02.870
+again, if you're going to click on, so model, you will be
+
+00:34:02.870 --> 00:34:04.910
+able to see other different, different, different, different
+
+00:34:04.910 --> 00:34:09.110
+kind of a model. So they have exposed a tons of model over
+
+00:34:09.110 --> 00:34:13.070
+here, not just one or two model. They have exposed a tons of
+
+00:34:13.070 --> 00:34:16.070
+model. You all will be able to find out in this particular
+
+00:34:16.070 --> 00:34:19.690
+place, which you will be able to call as per your uses
+
+00:34:19.690 --> 00:34:23.950
+simple, right? Any model, any model that you want. So you
+
+00:34:23.950 --> 00:34:25.630
+will be able to call it here.
+
+00:34:32.460 --> 00:34:34.920
+So let me call. So let me call. So let me call some of the
+
+00:34:34.920 --> 00:34:36.040
+text
+
+00:34:39.050 --> 00:34:43.690
+embedding, large fine. This is the embedding based text
+
+00:34:43.690 --> 00:34:49.230
+model, the Vinci. Let me search the Vinci. Yeah. The Vinci
+
+00:34:49.230 --> 00:34:54.130
+002. This model is available. So this model has been used
+
+00:34:54.130 --> 00:34:55.850
+for a generation.
+
+00:34:57.910 --> 00:35:00.630
+So text completion. So maybe I can try to use this
+
+00:35:00.630 --> 00:35:04.350
+particular model if I want. So copy this model and then
+
+00:35:04.350 --> 00:35:08.090
+inside a code and you can try to use any other model so I
+
+00:35:08.090 --> 00:35:12.010
+can try to write ENGIN engine. So engine is equal to this
+
+00:35:12.010 --> 00:35:15.270
+engine. I would like to use, let's suppose. So DaVinci a
+
+00:35:15.270 --> 00:35:20.690
+point 002, a model I'm going to use. Now you have to give a
+
+00:35:20.690 --> 00:35:24.030
+prompt PROMPT prompt you have to give. So what is going to
+
+00:35:24.030 --> 00:35:27.170
+be the prompt? So a simple chat. So whatever chat that you
+
+00:35:27.170 --> 00:35:30.510
+try to do with respect to any other elements. So here I'm
+
+00:35:30.510 --> 00:35:36.370
+going to write that, write a poem about Yuri. There's
+
+00:35:36.370 --> 00:35:38.030
+something which I'm going to write over here. There's
+
+00:35:38.030 --> 00:35:38.790
+something which I'm going to write over here. And then
+
+00:35:38.790 --> 00:35:42.630
+maximum underscore token. So this is again another
+
+00:35:42.630 --> 00:35:46.150
+parameter. So give me a output response with hundred tokens.
+
+00:35:47.270 --> 00:35:52.230
+Temperature I can try to set T E M P E R A T U R A
+
+00:35:52.230 --> 00:35:54.850
+temperature and temperature. Let's suppose if I'm going to
+
+00:35:54.850 --> 00:35:57.550
+keep, you should always keep temperature between zero to
+
+00:35:57.550 --> 00:36:02.050
+one. So closer to zero means randomness will be less closer
+
+00:36:02.050 --> 00:36:05.290
+to one means randomness will be high means model is going to
+
+00:36:05.290 --> 00:36:09.270
+hallucinate more. Basically. So maybe I'm going to keep 0.2
+
+00:36:09.270 --> 00:36:13.990
+so that model should not hallucinate. And then basically I'm
+
+00:36:13.990 --> 00:36:16.310
+going to hit this particular model just with these main
+
+00:36:16.310 --> 00:36:19.030
+number of parameter. I'm going to hit the model and let's
+
+00:36:19.030 --> 00:36:22.030
+see whether I'm able to get an output or not, or the output
+
+00:36:22.030 --> 00:36:24.850
+is going to be good or output is going to be bad. I should
+
+00:36:24.850 --> 00:36:29.410
+not use a curly braces over here. So it's a method call.
+
+00:36:31.330 --> 00:36:35.270
+Okay. Now execute and let's see missing a required position
+
+00:36:35.270 --> 00:36:38.330
+argument. Either model. Or prompt or model prompt or a
+
+00:36:38.330 --> 00:36:46.600
+stream argument to be given model prompt M O D E L. Okay so
+
+00:36:46.600 --> 00:36:49.720
+E N G I N it is not able G I N E I think.
+
+00:36:54.020 --> 00:36:58.620
+Okay so they have deprecated it seems so I can try to call
+
+00:36:58.620 --> 00:37:00.540
+model completion
+
+00:37:03.840 --> 00:37:07.140
+create got unexpected keyword argument.
+
+00:37:12.990 --> 00:37:15.830
+Yeah so now I'm able to get the completion. So basically
+
+00:37:15.830 --> 00:37:18.990
+whatever model that you are going to use. For example, I'm
+
+00:37:18.990 --> 00:37:21.450
+using this particular model. So you have to go and check
+
+00:37:21.450 --> 00:37:25.470
+that what are the parameter this models are going to take
+
+00:37:25.470 --> 00:37:28.130
+basically so what what and all things which I will be able
+
+00:37:28.130 --> 00:37:30.670
+to provide and then eventually I will be able to get an
+
+00:37:30.670 --> 00:37:33.310
+answer out of it. This is something that you have to check
+
+00:37:33.310 --> 00:37:36.050
+all the time and with all the API's whatever API's you are
+
+00:37:36.050 --> 00:37:40.030
+going to call now here. So I'm trying to use this API key
+
+00:37:40.030 --> 00:37:42.950
+and then I'm able to call this one I'm saying that that
+
+00:37:42.950 --> 00:37:46.830
+write a poem about a URI spelling is again there is a
+
+00:37:46.830 --> 00:37:49.570
+spelling mistake, but still it will be able to understand
+
+00:37:49.570 --> 00:37:53.710
+it. So completion ID then choice and here you will be able
+
+00:37:53.710 --> 00:37:58.630
+to see a final text as you can see right text you are able
+
+00:37:58.630 --> 00:38:01.630
+to see over here. So this is something
+
+00:38:05.150 --> 00:38:09.150
+that it is going to give you as a response. Now if I'm going
+
+00:38:09.150 --> 00:38:12.830
+to copy this entire things, or maybe I can try to print it
+
+00:38:12.830 --> 00:38:15.790
+in a formatted way. So at the end of the day, this is
+
+00:38:15.790 --> 00:38:19.150
+something that you are able to get. And even if I'm going to
+
+00:38:19.150 --> 00:38:21.870
+ask like a give me something different or maybe tell me
+
+00:38:21.870 --> 00:38:24.650
+about this particular. Subject or that particular subject,
+
+00:38:24.730 --> 00:38:27.830
+so it is going to give me a response in this way. Now so we
+
+00:38:27.830 --> 00:38:31.770
+have to format all of those response and show it to a user
+
+00:38:31.770 --> 00:38:35.570
+in a user friendly way. As of now you are able to see slash
+
+00:38:35.570 --> 00:38:39.290
+in slash in and then slash in means a new line. So whenever
+
+00:38:39.290 --> 00:38:41.610
+we try to like a build a chatbot kind of a system, for
+
+00:38:41.610 --> 00:38:44.790
+example, URI. So whatever response we are getting, we try to
+
+00:38:44.790 --> 00:38:48.290
+format those responses and then we try to show it to you so
+
+00:38:48.290 --> 00:38:53.430
+that it should not look bad. It should be human readable.
+
+00:38:54.370 --> 00:38:56.710
+Yes, what is the relation of temperature parameter
+
+00:38:56.710 --> 00:38:59.390
+temperature parameter for example, if I'm going to set
+
+00:38:59.390 --> 00:39:02.490
+seven, it simply means that that I'm trying to increase our
+
+00:39:02.490 --> 00:39:06.770
+randomness means based on the prompt system will try to give
+
+00:39:06.770 --> 00:39:11.650
+me an output. So how relevant that output should be that we
+
+00:39:11.650 --> 00:39:14.590
+can try to control with the help of temperature. Temperature
+
+00:39:14.590 --> 00:39:16.990
+is one of the parameter there are other parameter as well.
+
+00:39:17.030 --> 00:39:20.330
+So there is something called as top P and number of attempts
+
+00:39:20.330 --> 00:39:23.390
+all those parameter but temperature is one of the. The most
+
+00:39:23.390 --> 00:39:27.150
+important parameter by which you try to increase or decrease
+
+00:39:27.150 --> 00:39:32.730
+the randomness or we say hallucination making sense. So
+
+00:39:32.730 --> 00:39:36.410
+closer to once means more hallucination closer to zero means
+
+00:39:36.410 --> 00:39:39.730
+less hallucination. So if I'm going to keep a number, maybe
+
+00:39:39.730 --> 00:39:42.590
+0.2, so obviously it is going to hallucinate less if I'm
+
+00:39:42.590 --> 00:39:45.770
+going to make it maybe 0.9. So it is not going to give you
+
+00:39:45.770 --> 00:39:49.850
+maybe a response with respect to your own as you can see
+
+00:39:49.850 --> 00:39:54.950
+early lyrics to start anything. Songs. It's so sad at the
+
+00:39:54.950 --> 00:39:58.290
+something like that it is trying to give me a response some
+
+00:39:58.290 --> 00:40:00.150
+some random response it is trying to give me because
+
+00:40:00.150 --> 00:40:03.510
+temperature is equal to 0.9 which I have made over here. Now
+
+00:40:03.510 --> 00:40:08.350
+this is one of the way by which we are able to call API. Now
+
+00:40:08.350 --> 00:40:11.610
+let me show you back to back with the help of same API that
+
+00:40:11.610 --> 00:40:16.050
+how I will be able to like you know, build or I will be able
+
+00:40:16.050 --> 00:40:19.030
+to call a different different if I will be able to do a
+
+00:40:19.030 --> 00:40:22.750
+different different API call. So higher the temperature.
+
+00:40:22.910 --> 00:40:25.250
+Higher the creativity and lower the temperature higher the
+
+00:40:25.250 --> 00:40:28.150
+accuracy higher the creative receive meaning of creativity
+
+00:40:28.150 --> 00:40:32.890
+in the world of AI is randomness basically. So yeah, people
+
+00:40:32.890 --> 00:40:34.790
+say that higher the temperature higher the creativity
+
+00:40:34.790 --> 00:40:39.630
+doesn't mean that your result will be accurate because it
+
+00:40:39.630 --> 00:40:42.730
+will try to like use some jumble word in between or some
+
+00:40:42.730 --> 00:40:44.930
+jumble output in between okay
+
+00:40:47.420 --> 00:40:51.320
+fine everyone. So how are you printing the output so simple
+
+00:40:51.320 --> 00:40:53.600
+I have just called this function I'm not storing it into any
+
+00:40:53.600 --> 00:40:56.360
+variables. So simple. This one I'm trying to call that's it.
+
+00:40:56.960 --> 00:40:59.480
+Okay so let me like ping you this piece of the code so that
+
+00:40:59.480 --> 00:41:02.440
+all of you will be able to execute place your own API key
+
+00:41:02.440 --> 00:41:05.280
+and then try to execute it. Now let me show you a couple of
+
+00:41:05.280 --> 00:41:08.780
+more example with respect to open AI right. So I'm going to
+
+00:41:08.780 --> 00:41:13.760
+show you basically a chat completion with GPT-4. So here I'm
+
+00:41:13.760 --> 00:41:18.780
+using a DaVinci 002 which is a very very old model. Now with
+
+00:41:18.780 --> 00:41:22.740
+a latest model which is like a chat GPT GPT-4 so let me show
+
+00:41:22.740 --> 00:41:25.580
+you how I will be able to communicate. And how I will be
+
+00:41:25.580 --> 00:41:29.800
+able to generate some sort of a responses out of it. I'm
+
+00:41:29.800 --> 00:41:32.680
+going to use my same key by the way so I'm going to copy
+
+00:41:32.680 --> 00:41:34.420
+this two line so
+
+00:41:37.750 --> 00:41:40.410
+I'm going to copy this two line import open AI and open API
+
+00:41:40.410 --> 00:41:43.470
+key is equals to this one. Same thing I'm going to use I'm
+
+00:41:43.470 --> 00:41:46.210
+not going to change my key over here. Now what I'm going to
+
+00:41:46.210 --> 00:41:50.850
+do is I'm going to call open AI and then dot chat completion
+
+00:41:50.850 --> 00:41:58.590
+I'm going to call and then dot dot create. C R E A T E. Okay
+
+00:41:58.590 --> 00:42:02.490
+so chat completion chat completion means so the way you try
+
+00:42:02.490 --> 00:42:04.850
+to communicate with the open AI. I'm going to say that that
+
+00:42:04.850 --> 00:42:08.270
+you are basically a helpful assistance or you are basically
+
+00:42:08.270 --> 00:42:11.550
+a system admin and then based on that give me try to give
+
+00:42:11.550 --> 00:42:14.570
+you this answer or maybe I can say to the model that you are
+
+00:42:14.570 --> 00:42:18.690
+like a pro grade basically a data scientist. Now based on
+
+00:42:18.690 --> 00:42:22.890
+that try to give me that kind of a response means I'm trying
+
+00:42:22.890 --> 00:42:25.330
+to build a relation first and then I'm trying to basically
+
+00:42:25.330 --> 00:42:30.090
+text with a system. Okay. So here open AI chat completion
+
+00:42:30.090 --> 00:42:33.490
+then create so here model wise model wise I can try to give
+
+00:42:33.490 --> 00:42:38.110
+which model so maybe GPT GPT four I can try to give over
+
+00:42:38.110 --> 00:42:41.130
+here so it will be able to understand that okay so hit this
+
+00:42:41.130 --> 00:42:44.030
+particular model previously I was trying to hit which model
+
+00:42:44.030 --> 00:42:48.310
+old one DaVinci 002 again from open AI. So this time I'm
+
+00:42:48.310 --> 00:42:52.310
+going to hit a GPT four and then I'm going to basically
+
+00:42:52.310 --> 00:42:55.590
+prepare my message basically over here. So what kind of a
+
+00:42:55.590 --> 00:43:01.630
+messages I'm going to prepare. So M E double S messages I'm
+
+00:43:01.630 --> 00:43:05.730
+going to prepare. So here message wise what I'm going to do
+
+00:43:05.730 --> 00:43:09.810
+is so I'm going to define a rule that okay. So you are this
+
+00:43:09.810 --> 00:43:13.470
+I am this and then based on that try to give me the output
+
+00:43:13.470 --> 00:43:16.710
+generally this is how we try to build our own LLMs or
+
+00:43:16.710 --> 00:43:19.870
+whenever we are trying to like build a URI. This is how we
+
+00:43:19.870 --> 00:43:22.490
+have built it. And we keep on correcting this particular
+
+00:43:22.490 --> 00:43:25.530
+part so that system will be able to understand that. That
+
+00:43:25.530 --> 00:43:28.650
+what it should do and what kind of a role and responsibility
+
+00:43:28.650 --> 00:43:31.830
+is supposed to perform. So here I'm going to write a role
+
+00:43:31.830 --> 00:43:35.530
+for the system. So I'm saying that that this one is
+
+00:43:35.530 --> 00:43:38.170
+basically a system. I'm trying to say system is system
+
+00:43:38.170 --> 00:43:41.710
+basically and then I'm trying to say that with the help of
+
+00:43:41.710 --> 00:43:45.570
+content C O N T E N T content that you
+
+00:43:48.740 --> 00:43:54.920
+are you are an experienced data is
+
+00:43:58.120 --> 00:44:01.740
+C I E N T I S T. You are basically an experienced data
+
+00:44:01.740 --> 00:44:04.680
+scientist. I'm saying that that try to consider yourself
+
+00:44:04.680 --> 00:44:08.660
+mean system. So system is supposed to consider that system
+
+00:44:08.660 --> 00:44:12.220
+is basically a data scientist now based on that right based
+
+00:44:12.220 --> 00:44:16.840
+on that try to give a output. So here again I'm going to
+
+00:44:16.840 --> 00:44:21.480
+define a role and this time role is going to be user and
+
+00:44:21.480 --> 00:44:26.320
+then content is going to be C O N T E C O N T E N T content
+
+00:44:26.320 --> 00:44:27.420
+is going to be.
+
+00:44:30.350 --> 00:44:39.720
+Give me. Give me a roadmap to become data scientist
+
+00:44:41.800 --> 00:44:45.440
+simple. So here this is for system. So system will be able
+
+00:44:45.440 --> 00:44:47.440
+to understand that I'm I have to behave like a data
+
+00:44:47.440 --> 00:44:50.260
+scientist and then this is my answer. This is my question.
+
+00:44:50.420 --> 00:44:53.040
+So based on that it is going to give me the answer even if
+
+00:44:53.040 --> 00:44:54.860
+I'm going to make some sort of a spelling mistake that's
+
+00:44:54.860 --> 00:44:57.900
+completely fine system will be able to understand it. So
+
+00:44:57.900 --> 00:45:02.200
+here temperature T E M P R A T U R A temperature is equals
+
+00:45:02.200 --> 00:45:06.360
+to let's suppose I'm going to set a. 0.4 so so that it
+
+00:45:06.360 --> 00:45:09.880
+should not hallucinate. Now I'm going to call this
+
+00:45:09.880 --> 00:45:14.120
+particular model. What is the error? This is no longer
+
+00:45:14.120 --> 00:45:19.640
+supported in open AI greater than this one. Okay. So you can
+
+00:45:19.640 --> 00:45:22.320
+run migrate to automatically upgrade your code base to use
+
+00:45:22.320 --> 00:45:26.460
+this one this one this one pip install. Let me downgrade
+
+00:45:26.460 --> 00:45:29.620
+this chat completion one successfully
+
+00:45:39.660 --> 00:45:42.080
+uninstall the previous version. Okay. You
+
+00:45:48.390 --> 00:45:55.570
+try to access. So it was not available in the latest one. It
+
+00:45:55.570 --> 00:45:59.610
+was available in the previous one. So it's a version is so
+
+00:45:59.610 --> 00:46:01.310
+basically that I'm facing or
+
+00:46:17.440 --> 00:46:22.160
+else I can try changing the model GPT four is not supported
+
+00:46:22.160 --> 00:46:25.100
+in the latest version. So maybe I can try to change the
+
+00:46:25.100 --> 00:46:32.740
+model itself. So maybe 4.1 nano I can try to use. So like I
+
+00:46:32.740 --> 00:46:35.560
+have shown you. A multiple model so you can try to use any
+
+00:46:35.560 --> 00:46:41.060
+latest one. It is going to work for sure. So nano I'm going
+
+00:46:41.060 --> 00:46:42.660
+to call and let's see
+
+00:46:55.200 --> 00:47:01.040
+temperature chat completion is not supported. Let
+
+00:47:12.530 --> 00:47:17.230
+me call migrate user
+
+00:47:28.720 --> 00:47:29.860
+and content.
+
+00:47:35.190 --> 00:47:43.170
+Let me do one thing. So pip uninstall pip uninstall open AI.
+
+00:47:43.170 --> 00:47:48.270
+First on INS TA double L. Okay, so I'm uninstalling my open
+
+00:47:48.270 --> 00:47:51.650
+AI. I'll try to install the older version the version it is
+
+00:47:51.650 --> 00:47:53.810
+suggesting me open AI 0.28.
+
+00:48:11.860 --> 00:48:18.590
+It's taking a lot of time by the way, maybe what I can do is
+
+00:48:18.590 --> 00:48:22.610
+I can go and I can try to create a new virtual environment
+
+00:48:22.610 --> 00:48:25.650
+for me that will be quick.
+
+00:48:27.210 --> 00:48:31.770
+So here because uninstallation is taking a lot of time. So
+
+00:48:31.770 --> 00:48:40.250
+here conda create hyphen n GPT environment I'm going to name
+
+00:48:40.250 --> 00:48:48.890
+it python is equals to 3.10 install everything. So say yes
+
+00:48:48.890 --> 00:48:49.850
+happened
+
+00:48:57.500 --> 00:49:00.160
+so conda CREAT hyphen n.
+
+00:49:06.540 --> 00:49:09.540
+So I'm just trying to create the new environment. This old
+
+00:49:09.540 --> 00:49:14.400
+one is like taking some time to do an installation. So I'm
+
+00:49:14.400 --> 00:49:15.240
+just trying to create the new environment. So conda activate
+
+00:49:15.240 --> 00:49:20.560
+GPT. Let me change a kernel for my Jupyter notebook. So GPT
+
+00:49:20.560 --> 00:49:24.640
+I have to select so kernel wise select another kernel python
+
+00:49:24.640 --> 00:49:28.560
+environment. And where is my it
+
+00:49:37.740 --> 00:49:39.300
+is not showing me yet.
+
+00:49:57.840 --> 00:50:02.440
+Let me close it and open up VS code once again. This
+
+00:50:10.090 --> 00:50:13.050
+one then open AI URI. Yeah. Now
+
+00:50:18.460 --> 00:50:23.450
+kernel wise. Yeah, now it's showing GPT. So I'm going to
+
+00:50:23.450 --> 00:50:27.090
+select basically GPT environment. And here what I will do is
+
+00:50:27.090 --> 00:50:33.460
+I'll try to install open AI 0.28 version.
+
+00:50:47.340 --> 00:50:50.920
+And I'm assuming that your environment is working fine guys,
+
+00:50:51.220 --> 00:50:53.160
+everyone, anyone is facing environment issue.
+
+00:51:06.980 --> 00:51:12.560
+Okay, looks like it's getting installed. And yeah, looks
+
+00:51:12.560 --> 00:51:13.920
+like it
+
+00:51:16.320 --> 00:51:18.240
+should work. Let's check.
+
+00:51:22.320 --> 00:51:27.320
+Okay, request argument is unrecognized. Now error has
+
+00:51:27.320 --> 00:51:31.940
+changed. So unrecognized. Again, once version changes,
+
+00:51:32.220 --> 00:51:35.440
+everything changes actually, sorry,
+
+00:51:40.540 --> 00:51:42.860
+why the need of change of environment. So basically, my
+
+00:51:42.860 --> 00:51:45.060
+current environment got corrupted. That's the reason. So it
+
+00:51:45.060 --> 00:51:47.100
+doesn't mean that your environment will give you the same
+
+00:51:47.100 --> 00:51:51.140
+issue. I keep on like doing a lot of things. So my current
+
+00:51:51.140 --> 00:51:53.820
+environment got messed up. So I have changed then created
+
+00:51:53.820 --> 00:51:54.920
+the new environment for me
+
+00:52:00.520 --> 00:52:05.080
+temperature. So this takes argument in a bit different way.
+
+00:52:07.170 --> 00:52:14.750
+So maybe message, then maybe model. Okay. Yeah. So this
+
+00:52:14.750 --> 00:52:19.350
+version of open AI takes this input in this way.
+
+00:52:23.000 --> 00:52:30.580
+Okay, should work. I cannot be content where I have equal
+
+00:52:30.580 --> 00:52:34.940
+equal to Okay, so again, I have to check there. Where
+
+00:53:02.750 --> 00:53:08.490
+is my code? Yeah. So open AI chat completion create tmpe.
+
+00:53:13.200 --> 00:53:14.780
+R a t u r e. Yeah.
+
+00:53:29.020 --> 00:53:34.160
+So basically, I'm trying to hit the open AI for a point one
+
+00:53:34.160 --> 00:53:37.640
+nano, and I'm just trying to set the temperature, which is
+
+00:53:37.640 --> 00:53:40.400
+not a big deal. I think we all know what is the meaning of a
+
+00:53:40.400 --> 00:53:42.420
+temperature. So what I'm trying to do over here is that,
+
+00:53:42.460 --> 00:53:45.940
+that I'm trying to ask a question that give me a roadmap to
+
+00:53:45.940 --> 00:53:48.740
+become a data scientist. Now, let's see, so what kind of a
+
+00:53:48.740 --> 00:53:51.840
+response it has given to me. So content wise, certainly here
+
+00:53:51.840 --> 00:53:53.760
+is a comprehensive roadmap to become a data scientist
+
+00:53:53.760 --> 00:53:57.860
+covering the essential skills tools, all those things built
+
+00:53:57.860 --> 00:54:01.280
+so lot of like a long response it has given to me, as you
+
+00:54:01.280 --> 00:54:05.200
+can see over here. And I can try to parse that response and
+
+00:54:05.200 --> 00:54:08.420
+I will be able to show it to my user or maybe I can try to
+
+00:54:08.420 --> 00:54:13.380
+make use of anything simple, right. So here, I'm just trying
+
+00:54:13.380 --> 00:54:17.720
+to like define the rule that what is like this role. What is
+
+00:54:17.720 --> 00:54:21.360
+the user role? And what is the system role and what you are
+
+00:54:21.360 --> 00:54:24.760
+supposed to think about yourself? And then based on that,
+
+00:54:24.820 --> 00:54:27.640
+give me the answer. So now you can ask any question and it
+
+00:54:27.640 --> 00:54:29.740
+will be able to give you all the answers. I'm bringing you
+
+00:54:29.740 --> 00:54:33.480
+this code guys. This is up and running and working. Yeah.
+
+00:54:33.720 --> 00:54:38.780
+But yes, try to change your open AI version to 0.28.
+
+00:54:40.320 --> 00:54:41.800
+Otherwise it will give you issue.
+
+00:54:50.070 --> 00:54:55.890
+Fine. Okay. Now. So here. We are, we are able to perform
+
+00:54:55.890 --> 00:55:00.810
+like a, we are able to hit one of the latest one. So GPT 4.1
+
+00:55:00.810 --> 00:55:04.950
+nano API as well. And we are able to get some sort of a
+
+00:55:04.950 --> 00:55:09.730
+response. So likewise, you can try to hit open AI key one by
+
+00:55:09.730 --> 00:55:13.370
+one, one by one, and you all will be able to get a response.
+
+00:55:13.650 --> 00:55:17.290
+It's very easy to like, you know, get a response. And this
+
+00:55:17.290 --> 00:55:21.990
+is how we try to chat with the open AI in general. Now. So
+
+00:55:21.990 --> 00:55:26.010
+we can try to even do a function calling. We can, and we
+
+00:55:26.010 --> 00:55:28.270
+will be able to get a response. That's again, completely
+
+00:55:28.270 --> 00:55:32.050
+fine. This is completely fine. Like we are able to hit open
+
+00:55:32.050 --> 00:55:35.350
+AI, but now let's try to do the experimentation with your
+
+00:55:35.350 --> 00:55:41.190
+URI. So here comes URI and I'm going to show you. So how you
+
+00:55:41.190 --> 00:55:45.930
+will be able to use API even from a URI. So we are giving
+
+00:55:45.930 --> 00:55:48.110
+you introduction over here. So there are some sort of a,
+
+00:55:48.170 --> 00:55:51.350
+like a writeup that we have given to you. Okay. So we are
+
+00:55:51.350 --> 00:55:54.990
+trying to say that this is the base URL. Now here we are
+
+00:55:54.990 --> 00:55:57.690
+giving you authentication. So you will be able to find out
+
+00:55:57.690 --> 00:56:00.130
+your API token. You will be able to find out your
+
+00:56:00.130 --> 00:56:05.330
+authentication header and API key here is a curl based
+
+00:56:05.330 --> 00:56:08.010
+example. So if you are trying to do a request through a curl
+
+00:56:08.010 --> 00:56:11.070
+and not in a programmatic way, maybe you are trying to like
+
+00:56:11.070 --> 00:56:14.370
+a hit this entire things through your console or like
+
+00:56:14.370 --> 00:56:17.210
+through your command prompt, you can try to use a curl over
+
+00:56:17.210 --> 00:56:22.090
+here. End point wise. So. This is just an end point that we
+
+00:56:22.090 --> 00:56:25.830
+have given to you and here. So available model wise, a lot
+
+00:56:25.830 --> 00:56:28.810
+of models and models that we have given to you. And here we
+
+00:56:28.810 --> 00:56:33.130
+have given you a code example. Now let's try to do one
+
+00:56:33.130 --> 00:56:38.510
+thing. So let's try to use this code example, and then let's
+
+00:56:38.510 --> 00:56:43.510
+try to understand that how I will be able to access GPT 4.1
+
+00:56:43.510 --> 00:56:49.210
+nano without using open AI with using just a URI at the end
+
+00:56:49.210 --> 00:56:52.030
+of the day. Just by using a URI, how I will be able to
+
+00:56:52.030 --> 00:56:55.610
+access it. So whatever I will be able to perform with the
+
+00:56:55.610 --> 00:57:01.050
+help of like a, whatever I will be able to perform with the
+
+00:57:01.050 --> 00:57:04.130
+help of open AI, I will be able to perform the exact same
+
+00:57:04.130 --> 00:57:06.970
+thing, even with the help of URI, that's completely fine.
+
+00:57:07.110 --> 00:57:11.630
+And that's like a pretty much possible. Okay. So let me show
+
+00:57:11.630 --> 00:57:17.010
+you that part. So just copy this code guys, you don't have
+
+00:57:17.010 --> 00:57:21.010
+to do anything as of now. Just copy this code. And then go
+
+00:57:21.010 --> 00:57:27.930
+to your Jupyter notebook, paste this code, Python code, and
+
+00:57:27.930 --> 00:57:33.250
+then execute and then see. So what happens here? We are
+
+00:57:33.250 --> 00:57:36.970
+trying to say that role is equal to user, content is equal
+
+00:57:36.970 --> 00:57:40.790
+to write a poem about artificial intelligence, temperature
+
+00:57:40.790 --> 00:57:44.350
+we are setting, maximum number of output token, we are
+
+00:57:44.350 --> 00:57:48.490
+giving a thousand. Model wise, we are trying to use GPT 4.1
+
+00:57:48.490 --> 00:57:53.190
+nano. Same model we have used even now, if you can see GPT 4
+
+00:57:53.190 --> 00:57:59.670
+.1 nano, right? And we are able to hit it and we are able to
+
+00:57:59.670 --> 00:58:02.770
+get the response. No open AI library, anything is required
+
+00:58:02.770 --> 00:58:05.710
+to be installed. Only request is supposed to be installed.
+
+00:58:05.950 --> 00:58:08.450
+That's it, which is a default installation while you install
+
+00:58:08.450 --> 00:58:12.790
+a Python. I'm going to ask this AI to write a poem about
+
+00:58:12.790 --> 00:58:17.030
+artificial intelligence and here, so you will be able to get
+
+00:58:17.030 --> 00:58:20.510
+your poem. Okay. That inner circuit of woven silent and
+
+00:58:20.510 --> 00:58:26.390
+deep, mind awake from the cold sleep, born of the logic
+
+00:58:26.390 --> 00:58:30.870
+crafted with care, a spark of truth in the digital air. I
+
+00:58:30.870 --> 00:58:35.430
+think it is rhyming. For data streams, it learns and grows,
+
+00:58:35.690 --> 00:58:41.110
+mimic of the human source. In its code, no heart we find,
+
+00:58:41.410 --> 00:58:46.810
+just patterns set by human mind. So a complete response it
+
+00:58:46.810 --> 00:58:52.490
+is giving you. It's a thousand token long response that you
+
+00:58:52.490 --> 00:58:57.390
+will be able to receive from here. Just by hitting a code
+
+00:58:57.390 --> 00:58:59.750
+from your URI. Are you able to get a response guys?
+
+00:59:04.560 --> 00:59:09.380
+Yeah. Are you able to see the response all of you just
+
+00:59:10.920 --> 00:59:13.300
+execute it and then let me know about the response.
+
+00:59:30.190 --> 00:59:32.530
+Yes. So you must be getting a different, different kind of a
+
+00:59:32.530 --> 00:59:34.950
+response, obviously, because it's a generative AI, right?
+
+00:59:34.990 --> 00:59:37.890
+So. Obviously. It must generate a different, different
+
+00:59:37.890 --> 00:59:42.570
+things. For all of you. Now, so poem and everything is fine.
+
+00:59:43.370 --> 00:59:46.710
+Maybe I can try to like do something different over here,
+
+00:59:46.750 --> 00:59:50.430
+right? Something different, maybe like a system and user
+
+00:59:50.430 --> 00:59:53.610
+role based kind of things I can try to like ask to it, or
+
+00:59:53.610 --> 00:59:59.070
+maybe I can like ask this model to do some different tasks.
+
+00:59:59.430 --> 01:00:05.730
+So let's do one thing guys, let's try to change
+
+01:00:08.130 --> 01:00:12.950
+a system prompt in the previous one, openAI one. You are,
+
+01:00:13.050 --> 01:00:20.910
+you are a weather expert. Now give
+
+01:00:24.080 --> 01:00:24.940
+me a response.
+
+01:00:27.730 --> 01:00:30.090
+Give me temperature
+
+01:00:33.130 --> 01:00:43.380
+in Bangalore today, today. So I'm just going to ask that
+
+01:00:43.380 --> 01:00:49.980
+give me a response and two by four dot one nano, right? This
+
+01:00:49.980 --> 01:00:51.880
+is the GPT model. And recently they have. I have released
+
+01:00:51.880 --> 01:00:55.600
+this one as a API basically. So it was released even before.
+
+01:00:56.000 --> 01:00:59.200
+So I'm just trying to ask a question, right? I'm just trying
+
+01:00:59.200 --> 01:01:01.600
+to ask a question on 14th itself. It has been released as
+
+01:01:01.600 --> 01:01:04.520
+you can see, right? So it's a very latest model, six days,
+
+01:01:04.580 --> 01:01:07.240
+seven days back. So they have released it. Now I'm just
+
+01:01:07.240 --> 01:01:09.920
+asking a question that give me a temperature in Bangalore
+
+01:01:09.920 --> 01:01:13.740
+today. So it is giving me a response that I'm unable to
+
+01:01:13.740 --> 01:01:17.080
+provide a real time weather update for a most accurate and
+
+01:01:17.080 --> 01:01:20.560
+current temperature in Bangalore today. Please check
+
+01:01:20.560 --> 01:01:24.360
+reliable. Whether website or app such as weather.com, it is
+
+01:01:24.360 --> 01:01:26.700
+giving me some sort of a hint, but it is not able to give me
+
+01:01:26.700 --> 01:01:29.560
+a response. Now what does the meaning of this by the way,
+
+01:01:29.640 --> 01:01:33.360
+meaning of this one is, so this is the chat completion API.
+
+01:01:33.620 --> 01:01:37.400
+So this is not going to give you a real time search. It is
+
+01:01:37.400 --> 01:01:40.760
+having a limitation, right? It is having a limitation. It
+
+01:01:40.760 --> 01:01:44.320
+will not be able to give you a real time temperature. Or
+
+01:01:44.320 --> 01:01:47.600
+even if you are going to ask about some sort of a news, this
+
+01:01:47.600 --> 01:01:51.620
+model four dot one nano, will not be able to give you such
+
+01:01:51.620 --> 01:01:56.060
+kind of a responses. Now I'm going to ask, or I'm going to
+
+01:01:56.060 --> 01:01:59.160
+give a same prompt, even with the URI and let's see what URI
+
+01:01:59.160 --> 01:02:03.300
+says, right? So I'm going to give a same prompt over here
+
+01:02:03.300 --> 01:02:08.420
+and then I'm going to execute it. Now let's check the
+
+01:02:08.420 --> 01:02:08.660
+response.
+
+01:02:11.580 --> 01:02:15.080
+So it is telling me that I'm sorry, but I can't provide a
+
+01:02:15.080 --> 01:02:17.120
+real time weather update for the current temperature in
+
+01:02:17.120 --> 01:02:19.720
+Bangalore today, please check the reliable weather website
+
+01:02:19.720 --> 01:02:22.660
+or app such as weather.com. So almost same kind of a
+
+01:02:22.660 --> 01:02:27.020
+response I have received from URI API as well, because in
+
+01:02:27.020 --> 01:02:31.480
+both the places model was same, right? GPT 4.1 nano I'm
+
+01:02:31.480 --> 01:02:35.920
+using even over here from URI and GPT 4.1 nano even I'm
+
+01:02:35.920 --> 01:02:40.860
+trying to use it from open AI. Okay, completely fine. Now I
+
+01:02:40.860 --> 01:02:44.380
+have to do a real time search, a real time search. Maybe I
+
+01:02:44.380 --> 01:02:47.460
+have to like know about the news, world news, maybe a
+
+01:02:47.460 --> 01:02:50.300
+sports, maybe anything or maybe a temperature, same prompt,
+
+01:02:50.400 --> 01:02:52.920
+right? So I would like to know about the temperature in
+
+01:02:52.920 --> 01:02:56.780
+Bangalore today, basically. So what I can do is so we can
+
+01:02:56.780 --> 01:03:01.200
+try to use some model, which is going to support it, which
+
+01:03:01.200 --> 01:03:04.240
+is going to basically support it. So here, that's the
+
+01:03:04.240 --> 01:03:07.620
+reason. So we have given you a multiple model access, so
+
+01:03:07.620 --> 01:03:11.220
+available model can go over there. And then you can try to
+
+01:03:11.220 --> 01:03:16.440
+copy Gemini 2.0 flash Gemini 2.0 flash from here, just copy
+
+01:03:16.440 --> 01:03:21.000
+the model ID and change your model ID here. Inside the same
+
+01:03:21.000 --> 01:03:25.280
+URI prompt, change the model ID over here. So from GPT 4.1,
+
+01:03:25.400 --> 01:03:27.940
+so I'm just trying to change to Gemini 2.0 flash because
+
+01:03:27.940 --> 01:03:31.300
+this model is capable enough to do a real time search,
+
+01:03:31.480 --> 01:03:34.040
+right? Any question you are going to ask in real time, it is
+
+01:03:34.040 --> 01:03:38.340
+going to give you all the responses executed now and see the
+
+01:03:38.340 --> 01:03:43.320
+response. So here, if I'm going to check the response, the
+
+01:03:43.320 --> 01:03:46.160
+temperature in Bangalore today, Sunday, which is April 20th.
+
+01:03:46.360 --> 01:03:49.720
+Like I think today is April 20th, right? Is around 29
+
+01:03:49.720 --> 01:03:52.120
+degrees. Centigrade 233 degrees centigrade, the maximum
+
+01:03:52.120 --> 01:03:54.400
+temperature expected to reach 236 degree centigrade. It
+
+01:03:54.400 --> 01:04:00.040
+feels like 28.9 to 34.6 degrees centigrade. So yeah, I have
+
+01:04:00.040 --> 01:04:03.180
+just changed the model ID over here, right? I have just
+
+01:04:03.180 --> 01:04:06.240
+changed the model ID over here and it is going to give you a
+
+01:04:06.240 --> 01:04:08.860
+response, a real time search response it is going to give
+
+01:04:08.860 --> 01:04:12.760
+you. So see, it's not about open AI or it's not about the
+
+01:04:12.760 --> 01:04:15.320
+model that you are using. Even we don't, we have not created
+
+01:04:15.320 --> 01:04:18.460
+the model, right? We are using a model, although it's open
+
+01:04:18.460 --> 01:04:20.820
+source. Some of the models are open source model, except
+
+01:04:20.820 --> 01:04:24.840
+like open AI. But yeah, every model comes with its own
+
+01:04:24.840 --> 01:04:28.220
+power. So you can't expect that like everything will be done
+
+01:04:28.220 --> 01:04:31.680
+by everyone. No, it will not be done by everyone. That's the
+
+01:04:31.680 --> 01:04:34.080
+reason. So we are creating a multiple different, different
+
+01:04:34.080 --> 01:04:37.440
+kind of a model, which is going to be export into a
+
+01:04:37.440 --> 01:04:40.560
+different, different area. And then based on that, you can
+
+01:04:40.560 --> 01:04:42.440
+try to ask a question and it is going to give you a
+
+01:04:42.440 --> 01:04:45.260
+response. You can ask anything, whatever news, whatever you
+
+01:04:45.260 --> 01:04:48.080
+want, maybe a daily news update or anything you want. You
+
+01:04:48.080 --> 01:04:52.340
+can ask over here. And if you will come to URI, right? If
+
+01:04:52.340 --> 01:04:54.960
+you'll come to URI and click on new chat, if you're going to
+
+01:04:54.960 --> 01:04:58.780
+select a search option by default, GPT 4.1 nano will be
+
+01:04:58.780 --> 01:05:01.840
+selected by default, right? Now if you're going to click on
+
+01:05:01.840 --> 01:05:04.660
+search option, you will be able to see that model will
+
+01:05:04.660 --> 01:05:09.200
+change automatically, which model it is started using 2.0
+
+01:05:09.200 --> 01:05:11.720
+flash. If you're going to click on think again, model will
+
+01:05:11.720 --> 01:05:14.460
+change automatically. So just deep seek R1. And then we have
+
+01:05:14.460 --> 01:05:18.160
+basically a thinking model wise quinn. 32 billion. Same
+
+01:05:18.160 --> 01:05:20.420
+parameter. So this model, we have even given you the symbol
+
+01:05:20.420 --> 01:05:22.700
+over here. So this is basically a brain symbol. Brain symbol
+
+01:05:22.700 --> 01:05:26.180
+means thinking model, right? Flash means a global means it
+
+01:05:26.180 --> 01:05:29.360
+will be able to do a real time search and Gemini 2.0 flash
+
+01:05:29.360 --> 01:05:32.020
+means we have like a image icon over here. So it will be
+
+01:05:32.020 --> 01:05:34.140
+able to generate the image if I'm going to click on
+
+01:05:34.140 --> 01:05:37.180
+generate. So it is basically going to switch the model. So 2
+
+01:05:37.180 --> 01:05:41.420
+.0 flash experimental, it is going to switch the model now.
+
+01:05:41.500 --> 01:05:44.700
+So that's many people says that, that, why do we need these
+
+01:05:44.700 --> 01:05:47.680
+many model access? We don't know. Like what kind of a task
+
+01:05:47.680 --> 01:05:50.940
+you are going to do, right? What kind of application you are
+
+01:05:50.940 --> 01:05:53.960
+going to build? So obviously you need a different, different
+
+01:05:53.960 --> 01:05:57.640
+end point along with that, obviously a model because if you
+
+01:05:57.640 --> 01:06:00.260
+don't have a model, what you will do with the end point. And
+
+01:06:00.260 --> 01:06:03.520
+this is where this multimodal system comes into a picture.
+
+01:06:03.820 --> 01:06:07.580
+We are even trying to build a URI in such a way that now,
+
+01:06:07.640 --> 01:06:09.760
+right now you're clicking on search. Then you are clicking
+
+01:06:09.760 --> 01:06:13.060
+on thing. Then you are clicking on generate one by one. So
+
+01:06:13.060 --> 01:06:16.300
+we are even trying to build a URI in such a way that doesn't
+
+01:06:16.300 --> 01:06:18.920
+matter. What kind of a prompt you are going to give? My
+
+01:06:18.920 --> 01:06:22.900
+system will be able to understand that I should do a search.
+
+01:06:23.020 --> 01:06:26.460
+I should go for thinking or I should start generating the
+
+01:06:26.460 --> 01:06:29.560
+images or I should just give a simple normal response.
+
+01:06:32.080 --> 01:06:32.800
+Fine, everyone.
+
+01:06:37.000 --> 01:06:37.360
+Yeah.
+
+01:06:40.290 --> 01:06:43.250
+So you can go and you can try to like a search anything and
+
+01:06:43.250 --> 01:06:46.610
+then it is going to work. Even we have attached like a file
+
+01:06:46.610 --> 01:06:49.130
+option, but yeah, we are trying to make it better. So I
+
+01:06:49.130 --> 01:06:51.730
+think in couple of week now just a matter of like a couple
+
+01:06:51.730 --> 01:06:55.070
+of weeks, so you will be able to find out that plus you will
+
+01:06:55.070 --> 01:06:59.230
+be able to track your token users over here. That is also
+
+01:06:59.230 --> 01:07:03.330
+there. Plus you will be able to explore all the images which
+
+01:07:03.330 --> 01:07:06.230
+has been generated by anyone, right? All this AI generated
+
+01:07:06.230 --> 01:07:09.570
+images you will be able to find out. Plus you will be able
+
+01:07:09.570 --> 01:07:12.350
+to see even a memories. So whatever chat that you are doing
+
+01:07:12.350 --> 01:07:15.650
+with a URI system, a plus if you have uploaded some sort of
+
+01:07:15.650 --> 01:07:18.350
+a file, so you will be able to see those files and you can
+
+01:07:18.350 --> 01:07:21.830
+even delete it. So we are not taking your files. You can
+
+01:07:21.830 --> 01:07:24.470
+delete it anytime. And we are completely fine with it. We
+
+01:07:24.470 --> 01:07:27.290
+don't have any kind of an issue. And in a programming way,
+
+01:07:27.410 --> 01:07:30.790
+if you have to call, which we are doing as of now, so we can
+
+01:07:30.790 --> 01:07:35.910
+try to call that as a API. Fine guys, are we able to change
+
+01:07:35.910 --> 01:07:38.890
+the model and are we able to like, you know, do the search?
+
+01:07:43.650 --> 01:07:49.030
+Yeah. Now coming to the conclusion part, what do we need? We
+
+01:07:49.030 --> 01:07:53.170
+just need these two things. One is an endpoint. This is
+
+01:07:53.170 --> 01:07:55.890
+called as endpoint. Endpoint means this is where our
+
+01:07:55.890 --> 01:07:59.610
+function is. Right? So one is an endpoint. And the second
+
+01:07:59.610 --> 01:08:03.150
+thing that you need is this one. So if you have a URL and if
+
+01:08:03.150 --> 01:08:06.670
+you have a header, right, that's it. And this header is
+
+01:08:06.670 --> 01:08:10.290
+having what open AI kind of a key, right? So if you have
+
+01:08:10.290 --> 01:08:14.970
+this URL and header, you will be able to hit any of our
+
+01:08:14.970 --> 01:08:18.610
+model, whatever model that we have listed down, you will be
+
+01:08:18.610 --> 01:08:21.810
+able to hit it. This is the only requirement that you have
+
+01:08:21.810 --> 01:08:23.830
+no need to install anything. It's completely fine.
+
+01:08:28.630 --> 01:08:32.170
+I cannot access URI API. Just check your logo by the way. So
+
+01:08:32.170 --> 01:08:36.990
+if this logo is org, if it is showing you org, then
+
+01:08:36.990 --> 01:08:39.150
+obviously you will not be able to access. You just have a
+
+01:08:39.150 --> 01:08:41.970
+course and content access for the particular time period.
+
+01:08:42.190 --> 01:08:44.490
+And if you're able to see a plus, then you have actually
+
+01:08:44.490 --> 01:08:47.110
+plus access where you can access all the features. Otherwise
+
+01:08:47.110 --> 01:08:49.490
+you will not be able to access. So please check your logo
+
+01:08:49.490 --> 01:08:53.990
+over here. It will show you like a, for example, I have a
+
+01:08:53.990 --> 01:08:57.110
+multiple account. I'm keeping it. I do a lot of testing.
+
+01:08:57.950 --> 01:09:03.670
+Okay. Not here. So E-U-R-O-N. So yeah, you must be able to
+
+01:09:03.670 --> 01:09:07.890
+see org, org means nothing will be accessible except our
+
+01:09:07.890 --> 01:09:10.210
+courses. Courses will be accessible full scale courses,
+
+01:09:10.370 --> 01:09:12.490
+books, project, everything means whatever content that you
+
+01:09:12.490 --> 01:09:14.950
+have, it will be accessible. I think we have given you the
+
+01:09:14.950 --> 01:09:17.970
+initial access when we have launched URON. So you have like
+
+01:09:17.970 --> 01:09:21.250
+access for one year of time, but yeah, all this feature that
+
+01:09:21.250 --> 01:09:26.020
+we have launched, you will not be able to access at all. So
+
+01:09:26.020 --> 01:09:29.060
+in URI, you are calling OpenAI APIs. Obviously we have to
+
+01:09:29.060 --> 01:09:31.980
+call at, at least for this one. For OpenAI, right? This one.
+
+01:09:32.180 --> 01:09:35.580
+So we are calling actually OpenAI API because it's not a
+
+01:09:35.580 --> 01:09:38.140
+free model. It's not an open source model. All these models
+
+01:09:38.140 --> 01:09:41.100
+are open source model actually. Eight models are open source
+
+01:09:41.100 --> 01:09:44.200
+model and these two models are not open source model. So
+
+01:09:44.200 --> 01:09:47.760
+what we have done is that we have like created our own
+
+01:09:47.760 --> 01:09:51.620
+wrapper and we have combined everything so that you are not
+
+01:09:51.620 --> 01:09:54.400
+supposed to go and create a different, different API key for
+
+01:09:54.400 --> 01:09:57.540
+a different, different models over here, which is available
+
+01:09:57.540 --> 01:10:00.680
+in different ecosystem. So let's suppose. I'm just talking
+
+01:10:00.680 --> 01:10:04.120
+about OpenAI, right? So obviously I will be able to hit all
+
+01:10:04.120 --> 01:10:08.580
+of these model, which is a part of OpenAI ecosystem by using
+
+01:10:08.580 --> 01:10:12.180
+one single API key, right? But let's suppose if I have to go
+
+01:10:12.180 --> 01:10:14.980
+for Gemini, I have to create again another API key. Then
+
+01:10:14.980 --> 01:10:17.460
+like, let's suppose I have to use maybe a Flask. Maybe I
+
+01:10:17.460 --> 01:10:19.740
+have to use a Mistral. Maybe I have to use maybe a Quen,
+
+01:10:19.840 --> 01:10:23.040
+right? Or DeepSeek if I have to use. So again, I have to
+
+01:10:23.040 --> 01:10:25.440
+like create or maybe go and take a help of different,
+
+01:10:25.500 --> 01:10:28.060
+different platform. Grooke is giving you obviously like a
+
+01:10:28.060 --> 01:10:32.360
+combined API over there. But yeah. So if a DeepSeek from a
+
+01:10:32.360 --> 01:10:34.460
+DeepSeek itself, if you're looking for the API, so you have
+
+01:10:34.460 --> 01:10:37.860
+to go to that platform, create an API, but here only one API
+
+01:10:37.860 --> 01:10:41.700
+key and you just have to change your model name. Our system
+
+01:10:41.700 --> 01:10:43.680
+will be able to understand which model you are trying to
+
+01:10:43.680 --> 01:10:46.540
+hit. As simple as that. So we have created a wrapper on top
+
+01:10:46.540 --> 01:10:51.380
+of it and going forward as we are going to grow, we will
+
+01:10:51.380 --> 01:10:54.760
+keep on adding more and more models over there so that it
+
+01:10:54.760 --> 01:10:59.760
+should be able to fulfill requirement for all of us. How to
+
+01:10:59.760 --> 01:11:02.840
+integrate this API with a Langchain? It's very simple. I'm
+
+01:11:02.840 --> 01:11:04.960
+going to show you that part as well. So once I'm going to
+
+01:11:04.960 --> 01:11:08.440
+cover a Langchain topic, I think after VectorDB, so we have
+
+01:11:08.440 --> 01:11:11.060
+to get into a Langchain, Langraph and all those topics. So
+
+01:11:11.060 --> 01:11:12.720
+I'm going to show you, but yeah, you don't need anything
+
+01:11:12.720 --> 01:11:17.380
+actually. Okay. Okay. Let me, let me like do one thing. A
+
+01:11:17.380 --> 01:11:21.540
+question is good. I'll try to take help from Yuri. Okay. So
+
+01:11:21.540 --> 01:11:26.740
+I'm going to copy and paste the same thing, right? I'll show
+
+01:11:26.740 --> 01:11:33.320
+you the example, immediate example. New chat. So here. I
+
+01:11:33.320 --> 01:11:41.680
+want to use this Yuri API with Langchain. Give me a demo and
+
+01:11:41.680 --> 01:11:43.760
+use this API. Okay.
+
+01:11:46.490 --> 01:11:50.790
+See, so Langchain, you have to install and then after that,
+
+01:11:50.990 --> 01:11:57.740
+so this is a URL. This is the API key, right? All the LLMs,
+
+01:11:57.920 --> 01:12:04.700
+call the Langchain. As simple as that, right? As simple as
+
+01:12:04.700 --> 01:12:08.200
+that. So you will be able to like call. It's very easy. You
+
+01:12:08.200 --> 01:12:10.780
+just need, like I said, two things. You need an endpoint,
+
+01:12:10.940 --> 01:12:14.200
+which is a URL over here from a Yuri and then API key.
+
+01:12:14.320 --> 01:12:17.740
+That's it. You will be able to hit anything in this entire
+
+01:12:17.740 --> 01:12:23.300
+world. If that thing needs a LLM access for
+
+01:12:27.010 --> 01:12:29.890
+all user, is it possible to provide access to a Yuri API
+
+01:12:29.890 --> 01:12:32.950
+through a pay-as-you-go kind of, I think we are, we are not
+
+01:12:32.950 --> 01:12:36.790
+selling like individual things as of now. So we are like
+
+01:12:36.790 --> 01:12:40.150
+selling with the Euron plus where just with this, like a
+
+01:12:40.150 --> 01:12:42.970
+much amount, you all will be able to access it as simple as
+
+01:12:42.970 --> 01:12:44.950
+that if you need, and then you can cancel any time. So we
+
+01:12:44.950 --> 01:12:48.490
+have even given you the canceling option over here. So in my
+
+01:12:48.490 --> 01:12:52.430
+account, let's suppose if you have like a subscription over
+
+01:12:52.430 --> 01:12:55.130
+here, so we are giving you like option. So action wise,
+
+01:12:55.210 --> 01:12:57.970
+cancel it. I have a multiple subscription. I'm paying to
+
+01:12:57.970 --> 01:13:02.210
+Euron by the way. So when I, like when we were doing a
+
+01:13:02.210 --> 01:13:05.690
+testing, so I was one of the testers. So you can cancel it
+
+01:13:05.690 --> 01:13:07.810
+at any time. So, and we are, we are not selling anything. We
+
+01:13:07.810 --> 01:13:11.290
+are just selling a simple Euron plus. So that you will be
+
+01:13:11.290 --> 01:13:15.030
+able to access, not just courses or this or that because we
+
+01:13:15.030 --> 01:13:17.350
+don't want to go and sell things again and again and again.
+
+01:13:17.890 --> 01:13:20.650
+It's a huge amount of effort it takes to build a marketing
+
+01:13:20.650 --> 01:13:23.690
+team, to burn a money in a marketing. It's better to give us
+
+01:13:23.690 --> 01:13:27.030
+facility to our user and just one single subscription. And
+
+01:13:27.030 --> 01:13:29.850
+my intention was with Euron was very simple since the very
+
+01:13:29.850 --> 01:13:33.750
+first day that let's build a OTT means one single ecosystem
+
+01:13:33.750 --> 01:13:38.970
+available in one single price tag monthly or yearly. It's
+
+01:13:38.970 --> 01:13:41.030
+your way. It's your way. Again, no one is going to force
+
+01:13:41.030 --> 01:13:44.490
+you. And again, cancel anytime. Maybe you need some of my
+
+01:13:44.490 --> 01:13:47.490
+job system for maybe one month. So okay, fine. Go ahead and
+
+01:13:47.490 --> 01:13:50.570
+take, take a subscription. And we are trying to build all of
+
+01:13:50.570 --> 01:13:54.050
+the services in such a way that even if you are going to use
+
+01:13:54.050 --> 01:13:57.330
+one single service, one single service in a month, 299
+
+01:13:57.330 --> 01:14:04.110
+rupees, your 299 rupees, like a, it, you, it will like look
+
+01:14:04.110 --> 01:14:07.730
+like an investment to you, right? I don't think that even if
+
+01:14:07.730 --> 01:14:10.070
+you're going to use just a job system. Just one single
+
+01:14:10.070 --> 01:14:13.190
+system, even if you're going to use, not all, I think 299
+
+01:14:13.190 --> 01:14:16.490
+rupees is worth it. And I don't think that anyone in the
+
+01:14:16.490 --> 01:14:20.650
+market is providing it. Do we need to change a model name in
+
+01:14:20.650 --> 01:14:24.530
+a code for using a URI API API understand which model to
+
+01:14:24.530 --> 01:14:27.850
+use? No. How URI API will be able to. So based on the task,
+
+01:14:28.030 --> 01:14:30.110
+you have to change it. For example, I'm trying to do a real
+
+01:14:30.110 --> 01:14:33.410
+time search. So for real time search, obviously I have to
+
+01:14:33.410 --> 01:14:37.130
+give that model. Yeah. I have to give that model for real
+
+01:14:37.130 --> 01:14:39.550
+time. Or maybe parameterize it. Simple. It's just a
+
+01:14:39.550 --> 01:14:42.990
+variable. I'm trying to pass. Right. Parameterize it. Just a
+
+01:14:42.990 --> 01:14:43.650
+piece of code. Right.
+
+01:14:47.880 --> 01:14:50.700
+So any question for me guys? Now, I think now we all know
+
+01:14:50.700 --> 01:14:53.880
+how to use a URI API because going forward, I will be using
+
+01:14:53.880 --> 01:14:58.600
+URI API a lot. I will not be using like an OpenAI API. Those
+
+01:14:58.600 --> 01:15:00.500
+who would like to use it, it's completely fine. Go ahead and
+
+01:15:00.500 --> 01:15:03.580
+use it. It's just a single line of code that you have to
+
+01:15:03.580 --> 01:15:06.880
+call and then you will be able to use it because if you will
+
+01:15:06.880 --> 01:15:11.060
+look into your syllabus and many of you will complain even
+
+01:15:11.060 --> 01:15:14.760
+that you are not able to afford or maybe you don't have an
+
+01:15:14.760 --> 01:15:17.380
+OpenAI paid account or something like that. So keeping that
+
+01:15:17.380 --> 01:15:20.320
+in mind, we have to discuss a lot of things. We have to
+
+01:15:20.320 --> 01:15:22.760
+discuss like an RAG over here. We have to discuss a
+
+01:15:22.760 --> 01:15:25.920
+Langchain over here. As you can see, in every classes, we
+
+01:15:25.920 --> 01:15:29.000
+need an API access, right? Without API access, I can't do
+
+01:15:29.000 --> 01:15:33.220
+anything actually. So everywhere, everywhere I will be using
+
+01:15:33.220 --> 01:15:38.360
+URI API and a different model. Right. Everywhere. Throughout
+
+01:15:38.360 --> 01:15:43.980
+the entire courses going forward. Yeah. And you don't have
+
+01:15:43.980 --> 01:15:46.880
+to go and buy like an API or pay to anyone for the API.
+
+01:15:47.500 --> 01:15:51.940
+Everything is available here itself. That was the whole idea
+
+01:15:51.940 --> 01:15:54.860
+and intention behind launching an API inside a URI. And
+
+01:15:54.860 --> 01:15:59.140
+yeah, so as day will pass, so we will keep on like doing a
+
+01:15:59.140 --> 01:16:01.200
+lot over here. We are anyhow working day and night on this
+
+01:16:01.200 --> 01:16:05.440
+one. Question guys, question for me. So hope all of you are
+
+01:16:05.440 --> 01:16:09.480
+able to understand how to call OpenAI API and how to call
+
+01:16:09.480 --> 01:16:11.260
+URI API. Anyone who is having confusion.
+
+01:16:14.970 --> 01:16:16.870
+We all are understanding. We are on the same page after URI
+
+01:16:16.870 --> 01:16:19.430
+API key. No need to. But yeah, you should log in and you
+
+01:16:19.430 --> 01:16:21.530
+should experiment at least once. I'm not saying that it
+
+01:16:21.530 --> 01:16:23.790
+should not go and log in. I just go and log in on a group,
+
+01:16:23.910 --> 01:16:28.690
+log in on a, you know, log in on a like OpenAI account. Try
+
+01:16:28.690 --> 01:16:31.250
+once. Otherwise, anyhow, I'm sure I've shown it to you.
+
+01:16:34.250 --> 01:16:36.950
+Jitani is saying bit confusing. Org is free for a year and
+
+01:16:36.950 --> 01:16:39.410
+for other like API. Yeah. Org is free for other means like
+
+01:16:39.410 --> 01:16:42.730
+org means you have the complete content access. You have
+
+01:16:42.730 --> 01:16:44.770
+complete course access. So whatever project that we have,
+
+01:16:44.810 --> 01:16:46.770
+whatever courses that we have, whether it's a live, whether
+
+01:16:46.770 --> 01:16:48.130
+it's a recorded, whether it's a live, whether it's a live,
+
+01:16:48.130 --> 01:16:49.790
+whether it's a live, whether it's a hybrid or like a book.
+
+01:16:49.850 --> 01:16:51.750
+Everything is free for you. That's the meaning of org by the
+
+01:16:51.750 --> 01:16:54.850
+way. And I think that's the commitment that I've given to my
+
+01:16:54.850 --> 01:16:58.930
+old student actually. URI we need to plus, yeah, not just
+
+01:16:58.930 --> 01:17:02.850
+for URI. So for URI, for resume AI, for Avani, for a job
+
+01:17:02.850 --> 01:17:08.270
+system, everything, but URI, all the system looks good. Just
+
+01:17:08.270 --> 01:17:11.810
+use our resume AI as well. So you will enjoy it. And even
+
+01:17:11.810 --> 01:17:13.090
+job system, you will enjoy it.
+
+01:17:16.360 --> 01:17:19.380
+Vinesh is saying, Visesh is saying, use unsloth for fine
+
+01:17:19.380 --> 01:17:22.060
+tuning Lama 3.0 and how to evaluate it. Evolution matrix
+
+01:17:22.060 --> 01:17:25.060
+anyhow, I'm going to discuss a lot because when we are going
+
+01:17:25.060 --> 01:17:27.580
+to do a fine tuning, yesterday I have shown you one simple
+
+01:17:27.580 --> 01:17:30.560
+example of fine tuning, but we have 10 chapters, I believe
+
+01:17:30.560 --> 01:17:33.720
+just for fine tuning. So over there, it depends upon the
+
+01:17:33.720 --> 01:17:35.840
+model that we are going to create. So obviously I'll be
+
+01:17:35.840 --> 01:17:37.860
+using a different, different parameter to evaluate our
+
+01:17:37.860 --> 01:17:40.760
+respective models. Anyhow that's a part of your like
+
+01:17:40.760 --> 01:17:41.580
+syllabus.
+
+01:17:43.900 --> 01:17:46.120
+Devkumar is saying, if you set temperature is equal to 0.1,
+
+01:17:46.180 --> 01:17:49.080
+then we'll get most accurate results. So when most relevant
+
+01:17:49.080 --> 01:17:51.880
+results you will be able to get. As per the understanding of
+
+01:17:51.880 --> 01:17:52.980
+like LLMs.
+
+01:17:57.230 --> 01:18:00.370
+Is there any token daily monthly limit? Daily limit is 1
+
+01:18:00.370 --> 01:18:04.530
+million. I think it's too much, 1 million. You can check
+
+01:18:04.530 --> 01:18:07.390
+your limit as well. So we have given you this bar and check
+
+01:18:07.390 --> 01:18:12.530
+your limit. So daily limit is 1 million tokens. It's way
+
+01:18:12.530 --> 01:18:16.770
+more than like tokens that we are giving you, which you will
+
+01:18:16.770 --> 01:18:20.550
+end up consuming on a regular basis. Maybe in one fine day
+
+01:18:20.550 --> 01:18:22.610
+you will cross it, but yeah, I don't think that daily you
+
+01:18:22.610 --> 01:18:23.310
+are going to cross it.
+
+01:18:26.860 --> 01:18:29.460
+10 lectures only for fine tuning. Just go and check your
+
+01:18:29.460 --> 01:18:32.480
+syllabus. I think 10, 10 different, different projects wise
+
+01:18:32.480 --> 01:18:36.720
+we are like talking about fine tuning. Is this what people
+
+01:18:36.720 --> 01:18:41.680
+call as prompt engineering, sir? Prompt engineering from a
+
+01:18:41.680 --> 01:18:45.060
+functional side, if you are going to ask me, then just
+
+01:18:45.060 --> 01:18:48.680
+writing a modified prompt in a different, different way from
+
+01:18:48.680 --> 01:18:53.420
+a tech side, if you will say, it's, it's a part of it. It's
+
+01:18:53.420 --> 01:18:54.360
+one of the part of it.
+
+01:18:58.130 --> 01:19:02.510
+Okay. So now we know that how to interact with the LLM
+
+01:19:02.510 --> 01:19:06.950
+system. So any LLM system in this entire world, whoever is
+
+01:19:06.950 --> 01:19:10.690
+hosting those LLM system in the entire world. So we will be
+
+01:19:10.690 --> 01:19:14.030
+able to make use of those LLM system, whether it's a open
+
+01:19:14.030 --> 01:19:17.270
+AI, whether it's a URI or whether it's a group that we have.
+
+01:19:17.370 --> 01:19:23.870
+So all these things, we all will be able to use it. So if no
+
+01:19:23.870 --> 01:19:28.570
+one is having a doubt. So then I think I'm done. Okay. So
+
+01:19:28.570 --> 01:19:33.270
+today's class in upcoming classes. So back to back, back to
+
+01:19:33.270 --> 01:19:36.150
+back, I will start using an API and then I'll start
+
+01:19:36.150 --> 01:19:39.790
+completing your chapters basically. So
+
+01:19:44.850 --> 01:19:49.030
+any question for me guys with respect to API calling, how to
+
+01:19:49.030 --> 01:19:51.930
+call the API, how to pass this one and going forward, what I
+
+01:19:51.930 --> 01:19:54.970
+will do is I'll just try to create one single function. So
+
+01:19:54.970 --> 01:19:57.290
+again and again, you don't have to even call this URL and
+
+01:19:57.290 --> 01:19:59.830
+header and all those things. Anyhow, this key, I'm going to
+
+01:19:59.830 --> 01:20:02.570
+keep it inside dot environment file. This is, this is not a
+
+01:20:02.570 --> 01:20:06.610
+standard. Way to keep a key so that everyone can see it. So
+
+01:20:06.610 --> 01:20:10.730
+it's a password, right? So basically we can keep a key in a
+
+01:20:10.730 --> 01:20:13.430
+dot environment file. We can call it from there. Just again,
+
+01:20:13.550 --> 01:20:16.770
+another one line of a code, and I'll try to create one
+
+01:20:16.770 --> 01:20:20.170
+simple function and then like every time we will call those
+
+01:20:20.170 --> 01:20:20.550
+functions.
+
+01:20:24.360 --> 01:20:28.300
+Why the name is Euron? It looks global. And my previous
+
+01:20:28.300 --> 01:20:32.020
+company name was iNeuron. So I have just removed iN and
+
+01:20:32.020 --> 01:20:34.400
+created Euron. Even iNeuron was a very good name. It's a
+
+01:20:34.400 --> 01:20:36.940
+very unique name. When I kept that name five years, six
+
+01:20:36.940 --> 01:20:42.280
+years, six years back, yeah, in 2019. So yeah, it was a very
+
+01:20:42.280 --> 01:20:44.560
+good and polished name, but now I'm not holding that name.
+
+01:20:44.680 --> 01:20:48.820
+I'm not an owner of that name. So thought of Euron.
+
+01:20:52.200 --> 01:20:55.400
+It looks like a neutral, by the way, there is no meaning of
+
+01:20:55.400 --> 01:21:01.360
+Euron. It looks neutral, unique and sort. Please explain
+
+01:21:01.360 --> 01:21:03.560
+that term endpoint. This is the endpoint actually
+
+01:21:03.560 --> 01:21:06.960
+completion. So what this entire things is going to do. So
+
+01:21:06.960 --> 01:21:08.920
+this is going to do a chat completions. Endpoint is nothing.
+
+01:21:09.040 --> 01:21:13.200
+But at this point, at this URL, what function has been
+
+01:21:13.200 --> 01:21:16.020
+called? So basically you are calling this URL, right? HTTPS
+
+01:21:16.020 --> 01:21:19.780
+URLs, but we have in our system. So basically with the help
+
+01:21:19.780 --> 01:21:22.760
+of this URL, you are trying to hit our system, right? You
+
+01:21:22.760 --> 01:21:27.000
+are trying to hit Euron system. Now below this URL
+
+01:21:27.000 --> 01:21:33.860
+somewhere, we have written our own function called as
+
+01:21:33.860 --> 01:21:36.960
+completion function. Let's assume for that, not necessarily
+
+01:21:36.960 --> 01:21:38.860
+that we have written a completion function, but yeah, for
+
+01:21:38.860 --> 01:21:42.220
+now, let's assume that below this URL, we have written
+
+01:21:42.220 --> 01:21:46.540
+compli tion completion function and we are asking for your
+
+01:21:46.540 --> 01:21:49.940
+authorization over here. So basically this URL will be
+
+01:21:49.940 --> 01:21:53.460
+called so that you are with the help of this URL, you are
+
+01:21:53.460 --> 01:21:56.080
+reaching out to the Euron server. So this is our server
+
+01:21:56.080 --> 01:21:58.600
+where you are trying to reach out. And then this is the
+
+01:21:58.600 --> 01:22:02.020
+whole path, a directory structure that we have given to you
+
+01:22:02.020 --> 01:22:03.980
+that you are going into this, then this, then this, then
+
+01:22:03.980 --> 01:22:06.540
+this, and then this, then this means you are going to this
+
+01:22:06.540 --> 01:22:08.880
+file, this file, this file. And then there is this file. Now
+
+01:22:08.880 --> 01:22:12.860
+here, you have to pass this entire API key and you are
+
+01:22:12.860 --> 01:22:15.580
+trying to execute our function. Now what our function is
+
+01:22:15.580 --> 01:22:18.380
+going to do. So our function is going to like understand
+
+01:22:18.380 --> 01:22:20.660
+which model you are calling, what is the maximum token
+
+01:22:20.660 --> 01:22:22.980
+temperature, everything, and it is giving you a response,
+
+01:22:23.180 --> 01:22:26.860
+the same response that you are able to see below. That's the
+
+01:22:26.860 --> 01:22:27.440
+meaning of endpoint.
+
+01:22:33.970 --> 01:22:37.010
+Thanks for giving Yuri with your own plus, yeah, I think I
+
+01:22:37.010 --> 01:22:39.130
+don't have any kind of intention to sell things in a
+
+01:22:39.130 --> 01:22:43.390
+separate way of selling itself is a, you know, a pain point
+
+01:22:43.390 --> 01:22:46.190
+every day. You have to go out and say, I have learned this
+
+01:22:46.190 --> 01:22:50.150
+course, that course, please take this course, that goes,
+
+01:22:50.150 --> 01:22:52.970
+then people will ask a question that is it necessary for me?
+
+01:22:53.010 --> 01:22:55.630
+Is it useful for me? What are you going to teach? I'm like,
+
+01:22:55.790 --> 01:22:58.390
+okay, take one subscription, explore everything. Everything
+
+01:22:58.390 --> 01:23:02.470
+is yours. And that too, if you don't want to like pay for a
+
+01:23:02.470 --> 01:23:06.230
+year, although it's a very, very small token amount, but
+
+01:23:06.230 --> 01:23:09.530
+yeah, money is like money matters, obviously for all of us,
+
+01:23:09.570 --> 01:23:13.530
+even a single rupees matters a lot for all of us. So if you
+
+01:23:13.530 --> 01:23:16.330
+don't, if you're not able to find out the values in any of
+
+01:23:16.330 --> 01:23:18.830
+the system, if you don't think that 299 rupees is a worth
+
+01:23:18.830 --> 01:23:21.850
+for any of the system, right? Because we are trying to
+
+01:23:21.850 --> 01:23:24.090
+create all the system, whether it's a courses or all this
+
+01:23:24.090 --> 01:23:27.810
+system in such a way that with 299, everything should worth
+
+01:23:27.810 --> 01:23:31.050
+like even a single system is going to create that much of
+
+01:23:31.050 --> 01:23:35.350
+worth of 299 rupees per month. So yeah, like I have decided
+
+01:23:35.350 --> 01:23:38.390
+that because I'm into this EduTech industry since last like
+
+01:23:38.390 --> 01:23:41.530
+a eight year, six year, I was running my own startup. Again.
+
+01:23:41.530 --> 01:23:45.650
+I have started after selling my previous one. So as per my
+
+01:23:45.650 --> 01:23:50.690
+experience, I don't like that model where we go, because I
+
+01:23:50.690 --> 01:23:54.030
+was using that model. So in Iuron, so we had like a bundle
+
+01:23:54.030 --> 01:23:56.290
+model as well, and we have our individual course model as
+
+01:23:56.290 --> 01:23:59.030
+well. So we were selling our courses on a regular basis. So
+
+01:23:59.030 --> 01:24:02.190
+whenever we go launch a courses, we go on YouTube and all
+
+01:24:02.190 --> 01:24:04.630
+the social media platforms say, take courses, take courses,
+
+01:24:04.650 --> 01:24:08.410
+take courses, I'm like, at least doesn't sounds good from my
+
+01:24:08.410 --> 01:24:12.090
+end. So it's better to promote Iuron. That okay, it's an
+
+01:24:12.090 --> 01:24:15.710
+ecosystem, please come over here, explore it. For sure, you
+
+01:24:15.710 --> 01:24:18.890
+will not end up wasting this 299 rupees. And if you think
+
+01:24:18.890 --> 01:24:22.510
+you are wasting, not an issue, you have an option to cancel
+
+01:24:22.510 --> 01:24:26.210
+it anytime. So that was a whole idea behind creating this
+
+01:24:26.210 --> 01:24:26.990
+your own system.
+
+01:24:30.640 --> 01:24:33.360
+If you're using Uri API, then it's better to buy for a
+
+01:24:33.360 --> 01:24:35.860
+couple of months, then go for a yearly plan, then we have
+
+01:24:35.860 --> 01:24:37.700
+either monthly plan or yearly plan, we don't have a
+
+01:24:37.700 --> 01:24:41.660
+quarterly or like a such plan, take monthly plan and keep
+
+01:24:41.660 --> 01:24:44.620
+your subscription running whenever you want to cancel. Come
+
+01:24:44.620 --> 01:24:46.640
+here and cancel it as simple as that.
+
+01:24:51.070 --> 01:24:54.170
+You have all the flexibility so no one is going to force you
+
+01:24:54.170 --> 01:24:57.730
+that no pay me this much that much for API or this or that
+
+01:24:57.730 --> 01:25:01.290
+like a resume or maybe Avni and it's not just about API like
+
+01:25:01.290 --> 01:25:05.030
+Uri is a complete like a chat system in itself. Simple, I
+
+01:25:05.030 --> 01:25:07.790
+can come over here I can say like generate something for me
+
+01:25:07.790 --> 01:25:11.430
+or think something for me, right? Canvas feature I don't
+
+01:25:11.430 --> 01:25:13.370
+know whether you have explored this canvas feature or not.
+
+01:25:13.490 --> 01:25:17.850
+So I'm building like this feature especially for me. Where?
+
+01:25:18.290 --> 01:25:20.770
+I can try to maybe teach I can like come inside the class I
+
+01:25:20.770 --> 01:25:24.650
+can try to teach maybe like a Uri API or something or
+
+01:25:24.650 --> 01:25:29.590
+anything, right? So Uri or something I can try to teach over
+
+01:25:29.590 --> 01:25:34.590
+here. And then maybe like I can directly send those images
+
+01:25:34.590 --> 01:25:37.730
+to my conversational chat system as well so that my system
+
+01:25:37.730 --> 01:25:40.170
+is going to give me a response and it will be able to
+
+01:25:40.170 --> 01:25:42.810
+explain me that what is there inside the drawing character
+
+01:25:44.160 --> 01:25:48.960
+one first character is a capital E or reverse E. Yeah, so
+
+01:25:48.960 --> 01:25:53.200
+basically image analysis, I can draw something and then this
+
+01:25:53.200 --> 01:25:56.220
+is going to give me the analysis. So even Canvas feature is
+
+01:25:56.220 --> 01:25:59.380
+as of now not as stable feature I would say, but yeah, in
+
+01:25:59.380 --> 01:26:01.580
+couple of week even this is going to stabilize all this
+
+01:26:01.580 --> 01:26:04.760
+feature are going to stabilize. I can download it as a PDF
+
+01:26:04.760 --> 01:26:07.680
+or I can download it as a PNG I can share with anyone as you
+
+01:26:07.680 --> 01:26:11.480
+can see. So as of now I'm using scribbling but I have a plan
+
+01:26:11.480 --> 01:26:14.460
+not to use scribbling going forward once this system is
+
+01:26:14.460 --> 01:26:18.080
+ready. So I'll just try to use Canvas from my system. Okay.
+
+01:26:18.100 --> 01:26:18.920
+So
+
+01:26:23.430 --> 01:26:27.070
+why was not URI API used in today's MCB project is possible,
+
+01:26:27.230 --> 01:26:30.850
+could you please show how to modify the code to use the URI
+
+01:26:30.850 --> 01:26:33.110
+API? Yeah, obviously, I'll show you don't worry, just wait
+
+01:26:33.110 --> 01:26:36.730
+for the next project. I'm going to use URI API. See API uses
+
+01:26:36.730 --> 01:26:39.650
+Okay, let's let's talk about as person has asked me a
+
+01:26:39.650 --> 01:26:46.470
+question. So let me open up today's project. Guys, anyone
+
+01:26:46.470 --> 01:26:50.050
+who has like a seen today's project that
+
+01:26:52.610 --> 01:26:54.770
+I have uploaded with respect to the like,
+
+01:26:57.510 --> 01:27:02.430
+MCPs over there, I'm using like a open API. But yeah, from
+
+01:27:02.430 --> 01:27:06.390
+next project onwards, I'll start using like a URI API file
+
+01:27:13.620 --> 01:27:17.320
+analyzer. I don't know where that code is. Yeah, it looks
+
+01:27:17.320 --> 01:27:29.060
+like here the code is no open folder file analysis analyzer
+
+01:27:29.060 --> 01:27:29.740
+is
+
+01:27:34.770 --> 01:27:38.630
+open it up. Okay, yeah, here's the code. So here as you can
+
+01:27:38.630 --> 01:27:41.790
+see in dot env file. So I'm using like a open AI key, my own
+
+01:27:41.790 --> 01:27:46.370
+open AI key. It's still working. So I have just like given
+
+01:27:46.370 --> 01:27:49.030
+you the live API. So those who have a code base access, they
+
+01:27:49.030 --> 01:27:52.090
+can go and go and check your MCP class. I think it's
+
+01:27:52.090 --> 01:27:55.530
+accessible to everyone plus and all both. So here I'm just
+
+01:27:55.530 --> 01:28:01.730
+like trying to call the parser inside parser. Yeah. So here
+
+01:28:01.730 --> 01:28:05.930
+I'm trying to use like a open AI. Now if I'm going to ask
+
+01:28:05.930 --> 01:28:11.790
+URI, right, so if I'm going to ask URI, that do one thing,
+
+01:28:11.830 --> 01:28:12.730
+if
+
+01:28:18.070 --> 01:28:24.190
+I'm going to ask URI, let me open up a new chat. So this is
+
+01:28:24.190 --> 01:28:35.490
+my code. No need to generate. This is my code for sorry, by
+
+01:28:35.490 --> 01:28:44.170
+mistake, I'm hitting enter. This is my code for Cy Ghts for
+
+01:28:44.170 --> 01:28:53.010
+insights using open AI API. Now open AI API. Now,
+
+01:28:55.610 --> 01:28:58.150
+what I'm going to do is take
+
+01:29:03.590 --> 01:29:05.230
+a reference
+
+01:29:07.210 --> 01:29:11.750
+of this URI API and change it changed,
+
+01:29:16.780 --> 01:29:19.840
+see, and you will not be able to find out much of changes
+
+01:29:19.840 --> 01:29:25.280
+over here. So I'm just like trying to call URI API, right?
+
+01:29:26.040 --> 01:29:29.540
+Everything is same. These parameters is not mandatory. If
+
+01:29:29.540 --> 01:29:31.700
+you have to pass it, pass it. If you have to leave it, leave
+
+01:29:31.700 --> 01:29:34.860
+it. These are just optional parameter. And I'm just trying
+
+01:29:34.860 --> 01:29:40.960
+to like. Yeah. You have to remove this message, choice and
+
+01:29:40.960 --> 01:29:46.180
+then header, fine, it will go over here, payload wise, write
+
+01:29:46.180 --> 01:29:48.080
+a poem about the artificial intelligence.
+
+01:29:52.260 --> 01:30:00.710
+Just a minute, take a reference, take a reference of this,
+
+01:30:05.580 --> 01:30:07.020
+change this.
+
+01:30:10.760 --> 01:30:14.000
+Yeah, it's done. See it has parameterized it. So you can try
+
+01:30:14.000 --> 01:30:16.320
+to call the same function, pass a prompt the way you are
+
+01:30:16.320 --> 01:30:20.220
+passing it. It is not using like a open AI API basically,
+
+01:30:20.280 --> 01:30:22.240
+right? It has removed each and everything as you can see
+
+01:30:22.240 --> 01:30:26.360
+over here, right? And it is using your URI API, rest of the
+
+01:30:26.360 --> 01:30:30.720
+things is exact same, no changes at all. Yeah. So pass your
+
+01:30:30.720 --> 01:30:31.660
+prompt and then do it.
+
+01:30:35.180 --> 01:30:38.760
+Integrate karke hi dikha dijiye ek baar, chaliye bhai theek
+
+01:30:38.760 --> 01:30:42.220
+hai, integrate karke hi dikha dete ek baar. So anyone,
+
+01:30:42.280 --> 01:30:45.720
+anyone who has like gone through this project, so basically
+
+01:30:45.720 --> 01:30:48.020
+this is the project which I have published. And which was a
+
+01:30:48.020 --> 01:30:51.900
+part of your model. Context protocol. So where I'm trying to
+
+01:30:51.900 --> 01:30:55.640
+showcase that how you can try to create your own function
+
+01:30:55.640 --> 01:30:59.300
+and then how you can try to expose it to a MCP server as a
+
+01:30:59.300 --> 01:31:03.720
+MCP tool so that you all will be able to go and you all will
+
+01:31:03.720 --> 01:31:07.380
+be able to interact with the, maybe interact with the help
+
+01:31:07.380 --> 01:31:10.760
+of cloud or maybe MCP inspector. So in this example, I have
+
+01:31:10.760 --> 01:31:15.860
+shown it with respect to MCP inspector now. So this tool is
+
+01:31:15.860 --> 01:31:19.180
+using LLM insights. This tool is basically using. This
+
+01:31:19.180 --> 01:31:21.780
+particular function LLM inside. So where, what we are trying
+
+01:31:21.780 --> 01:31:25.340
+to do. So we, whatever prompt that you are going to pass,
+
+01:31:25.560 --> 01:31:27.640
+right, whatever prompt that you are going to pass. So
+
+01:31:27.640 --> 01:31:31.960
+basically we are trying to hit chat GPT for open AI.
+
+01:31:32.040 --> 01:31:34.240
+Basically we are trying to hit, and then we are trying to
+
+01:31:34.240 --> 01:31:37.240
+pass this messages along with the prompt, and then it is
+
+01:31:37.240 --> 01:31:40.400
+going to generate a response. As of now, I'm trying to use
+
+01:31:40.400 --> 01:31:44.960
+what I'm trying to use basically open AI key over here. Now.
+
+01:31:45.260 --> 01:31:52.560
+So what I have to do is. Uh. So I have to basically use my
+
+01:31:52.560 --> 01:31:56.660
+own API key and then I have to perform the exact same
+
+01:31:56.660 --> 01:32:00.080
+operation means I have to like, uh, give a prompt so that it
+
+01:32:00.080 --> 01:32:04.000
+will be able to give me a response at the end of the day. So
+
+01:32:04.000 --> 01:32:06.740
+basically like, uh, the requirement is to change this
+
+01:32:06.740 --> 01:32:12.020
+entire, like, uh, things, yeah. So just copy this one as it
+
+01:32:12.020 --> 01:32:17.420
+is, and I'll just try to modify the code. So remove generate
+
+01:32:17.420 --> 01:32:25.400
+completion. And I just need URL and header. So control X and
+
+01:32:25.400 --> 01:32:26.900
+then, okay,
+
+01:32:29.160 --> 01:32:30.660
+so I
+
+01:32:33.830 --> 01:32:39.010
+have this URL and then I have a header over here, which I
+
+01:32:39.010 --> 01:32:42.210
+have copied and then I can try to pass up payload.
+
+01:32:45.720 --> 01:32:50.320
+So here I'm trying to use client or chat GPT completion. So
+
+01:32:50.320 --> 01:32:54.000
+instead of using this, I will be using basically a payload
+
+01:32:54.000 --> 01:32:58.960
+over here, I will try to pass the exact same. Message
+
+01:32:58.960 --> 01:33:00.080
+without
+
+01:33:02.900 --> 01:33:07.880
+any kind of a modification to URI system. So same message
+
+01:33:07.880 --> 01:33:12.830
+I'm trying to pass to a URI
+
+01:33:14.720 --> 01:33:18.640
+system as a part of the payload model is fine. Temperature
+
+01:33:18.640 --> 01:33:24.260
+is fine. Everything looks fine. So this is done. Now remove
+
+01:33:24.260 --> 01:33:32.230
+this one. It is going to give me a response. I can try to
+
+01:33:32.230 --> 01:33:35.090
+name it as a response as well. That's completely fine. So
+
+01:33:35.090 --> 01:33:38.990
+response. And then message prompt, I'm able to get from the
+
+01:33:38.990 --> 01:33:43.150
+variable, remove this key. It's not required.
+
+01:33:49.870 --> 01:33:54.690
+And sorry, it's a payload that we have fine. So just try to
+
+01:33:54.690 --> 01:34:02.300
+copy response request dot post. So I have a URL, fine
+
+01:34:02.300 --> 01:34:07.980
+header, good payload looks good. We just have to like do a
+
+01:34:07.980 --> 01:34:09.640
+little bit of picking
+
+01:34:12.200 --> 01:34:16.280
+here. So payload looks good. Message looks good. So it will
+
+01:34:16.280 --> 01:34:19.480
+be able to do the analysis of the data. Okay. Now instead of
+
+01:34:19.480 --> 01:34:22.340
+bearer, so what we can do is so we can, I can go to my
+
+01:34:22.340 --> 01:34:28.480
+account, my own account and I can try to copy my own API. So
+
+01:34:28.480 --> 01:34:34.020
+URI, APIs, authentication, show me this, or maybe I can just
+
+01:34:34.020 --> 01:34:38.140
+copy this one and I'll just paste it. Or maybe I can keep it
+
+01:34:38.140 --> 01:34:41.440
+inside the environment file. Anything suits you. So now this
+
+01:34:41.440 --> 01:34:44.500
+entire code is ready. I have changed the same code, which I
+
+01:34:44.500 --> 01:34:50.520
+have. Okay. Discussed. Now this open AI import is not
+
+01:34:50.520 --> 01:34:53.840
+required at all. I'm not using environment. So even this is
+
+01:34:53.840 --> 01:35:00.860
+not required. Control S why it is giving me stream service
+
+01:35:00.860 --> 01:35:02.820
+separate new line, semi-colon.
+
+01:35:10.610 --> 01:35:17.210
+Okay. So request I have to import, import requests. So
+
+01:35:17.210 --> 01:35:18.770
+request issue is also resolved.
+
+01:35:22.510 --> 01:35:30.810
+Now why are they showing me this? No. Now let me run it. So
+
+01:35:30.810 --> 01:35:36.970
+here I have to run basically streamlint or maybe like I'll
+
+01:35:36.970 --> 01:35:39.630
+show you even in an inspector. So inspector also, I can run
+
+01:35:39.630 --> 01:35:45.050
+S T R E M stream lit run, run which file. So run basically
+
+01:35:45.050 --> 01:35:47.470
+main.py file or
+
+01:35:49.930 --> 01:35:52.650
+D drive syntax error line
+
+01:35:54.350 --> 01:35:56.190
+number five from LLM.
+
+01:35:59.320 --> 01:36:03.600
+Okay. Main.py. Line number five. Import. Get LLM insights.
+
+01:36:04.140 --> 01:36:08.040
+Have I changed a method name itself? Let me check. It looks
+
+01:36:08.040 --> 01:36:13.540
+like get LLM insights and then main.py file line number
+
+01:36:13.540 --> 01:36:16.560
+five. So get LLM insights.
+
+01:36:25.350 --> 01:36:28.770
+Oh, oh, oh, oh, oh, oh, oh, oh,
+
+01:36:31.910 --> 01:36:34.930
+oh, oh, sorry. I have mentioned this one authorization
+
+01:36:34.930 --> 01:36:35.630
+twice.
+
+01:36:44.200 --> 01:36:46.120
+It will work. Oh,
+
+01:37:12.080 --> 01:37:17.360
+this was not there is some issue. I'm not able to, okay.
+
+01:37:18.300 --> 01:37:23.520
+This is my complete prompt system content prompt I'm able to
+
+01:37:23.520 --> 01:37:28.070
+get so fine messages
+
+01:37:30.570 --> 01:37:32.230
+payload.
+
+01:37:52.020 --> 01:37:57.180
+Okay. Looks fine. Control S. Go to my streamlint app,
+
+01:37:59.480 --> 01:38:05.380
+refresh once again, yeah, looks working. So file analysis,
+
+01:38:05.560 --> 01:38:10.720
+I'm just going to pass some file over here. Downloads. There
+
+01:38:10.720 --> 01:38:16.940
+was some file I was keeping this download archive file, pass
+
+01:38:16.940 --> 01:38:20.620
+the file and yeah, so it is able to do the visualization.
+
+01:38:20.960 --> 01:38:23.980
+That is not a main part. This part is actually using a live
+
+01:38:23.980 --> 01:38:29.950
+data with LLM. So I'm sending this to my URI and this URI is
+
+01:38:29.950 --> 01:38:32.570
+giving me this issue dictionary or it has no attribute
+
+01:38:32.570 --> 01:38:33.070
+choice.
+
+01:38:36.160 --> 01:38:40.040
+So payload choice content. Okay. So let me check what it is
+
+01:38:40.040 --> 01:38:45.680
+going to return a small issue. We'll fix it. So payload
+
+01:38:45.680 --> 01:38:49.040
+choice, zero message content. So it's
+
+01:38:58.610 --> 01:39:07.100
+giving me a payload. I'm trying to call response dot choice
+
+01:39:08.640 --> 01:39:09.340
+zero.
+
+01:39:13.060 --> 01:39:14.480
+Just try to call this.
+
+01:39:19.580 --> 01:39:22.260
+I always feel better to write a code from scratch instead
+
+01:39:22.260 --> 01:39:27.380
+of, you know, like changing something into the new one
+
+01:39:27.380 --> 01:39:30.960
+response dot choice. Okay.
+
+01:39:35.640 --> 01:39:40.440
+Message content. Okay. I am supposed to return response
+
+01:39:44.500 --> 01:39:50.460
+dot post return the response directly. All the responses
+
+01:39:50.460 --> 01:39:51.460
+return
+
+01:40:01.920 --> 01:40:09.340
+it directly. Yeah. Response 200. So now response is showing
+
+01:40:09.340 --> 01:40:13.240
+me like a 200. It simply means that everything is working. I
+
+01:40:13.240 --> 01:40:16.260
+have just returned the complete response itself. Now from
+
+01:40:16.260 --> 01:40:21.620
+response, I can try to like call the content and then I can
+
+01:40:21.620 --> 01:40:25.380
+try to return the content. So analyze data with LLM sending
+
+01:40:25.380 --> 01:40:30.830
+again. Now I'm able to get the content. So now I can do a
+
+01:40:30.830 --> 01:40:33.810
+formatting and now this content I'm getting from where this
+
+01:40:33.810 --> 01:40:38.530
+content I'm getting from my GPT 4.1 nano. Now. So you can,
+
+01:40:38.550 --> 01:40:41.490
+even if you have to like send this data for the real time
+
+01:40:41.490 --> 01:40:43.550
+search, you can send this data for the real time search, get
+
+01:40:43.550 --> 01:40:47.410
+the content formatted and then like a show it to the entire
+
+01:40:47.410 --> 01:40:53.810
+user as simple as that. So in today's project, I have not
+
+01:40:53.810 --> 01:40:56.250
+changed much, I believe. So everything is same message
+
+01:40:56.250 --> 01:40:59.170
+prompt. Everything is same. I've just changed like a URL
+
+01:40:59.170 --> 01:41:04.550
+over here and then just call response. Rest of the part is
+
+01:41:04.550 --> 01:41:08.110
+going to be exactly the same. So it doesn't matter which API
+
+01:41:08.110 --> 01:41:10.390
+you are using, whether you are using from a URI or maybe you
+
+01:41:10.390 --> 01:41:13.470
+are using from like someone else. It's actually works in the
+
+01:41:13.470 --> 01:41:15.770
+very same way. I just need two things. One is an endpoint.
+
+01:41:15.950 --> 01:41:19.250
+One is a key. That's it. So once I have these two things, I
+
+01:41:19.250 --> 01:41:22.030
+can hit any API in this entire world, not just my own API.
+
+01:41:23.950 --> 01:41:26.610
+Fine guys. Making sense. Those who have asked me like aaj
+
+01:41:26.610 --> 01:41:30.650
+wale mein hi dikhaadu, payload
+
+01:41:30.650 --> 01:41:35.710
+use nahi ho raha hai. Payload yaha par use ho raha hai na,
+
+01:41:35.770 --> 01:41:39.690
+send kar raha hai na payload hum log. Okay. Payload we are
+
+01:41:39.690 --> 01:41:42.090
+able to send it right here, tabhi to response aara hai,
+
+01:41:42.110 --> 01:41:43.750
+otherwise beena payload ki response kahaan se aayega, jab
+
+01:41:43.750 --> 01:41:46.430
+tak system ko nahi padha chalega ki message kya tha aur
+
+01:41:46.430 --> 01:41:48.970
+kaunse model ko hit karna hai, jab tak kahaan se response
+
+01:41:48.970 --> 01:41:51.590
+aayega. We are sending a request, request dot post. We are
+
+01:41:51.590 --> 01:41:54.430
+sending what? A URL. We are saying with the help of this
+
+01:41:54.430 --> 01:41:57.430
+URL. We are trying to say that, okay, go to this system,
+
+01:41:57.550 --> 01:42:00.150
+then authorize it. So this is what we are trying to do with
+
+01:42:00.150 --> 01:42:02.870
+the help of header. And then after authorizing, after
+
+01:42:02.870 --> 01:42:06.030
+reaching out to system, do this. So this is something that
+
+01:42:06.030 --> 01:42:13.010
+system will do. Okay. So modified the code. Now this, this
+
+01:42:13.010 --> 01:42:17.250
+code base again. So if, if I have to check it with the MCP,
+
+01:42:17.330 --> 01:42:20.790
+any, anyone guys who don't know what is MCP by the way, and
+
+01:42:20.790 --> 01:42:24.650
+anyone who have not even tried a single project in MCP. So
+
+01:42:24.650 --> 01:42:28.030
+basically I have exposed this entire things as a MCP tool. I
+
+01:42:28.030 --> 01:42:31.250
+can try to call the same function, function calling from my
+
+01:42:31.250 --> 01:42:35.450
+cloud and from MCP inspector or any MCP host. I can, I can
+
+01:42:35.450 --> 01:42:40.130
+try to call it. Please upload this to, I have just changed
+
+01:42:40.130 --> 01:42:42.470
+this much, right? Let me ping you here itself inside your
+
+01:42:42.470 --> 01:42:47.390
+chat. Take it. Okay. This is, this is the code like updated
+
+01:42:47.390 --> 01:42:50.830
+one. I have just pinged you in a chat. Please keep it. And
+
+01:42:50.830 --> 01:42:54.210
+again, from next project onwards. What I will do is I'll try
+
+01:42:54.210 --> 01:42:57.430
+to use URI API. I'm not going to use open AI or like a,
+
+01:42:57.490 --> 01:42:59.850
+because inside URI, I have everything I have like a Gemini.
+
+01:43:00.030 --> 01:43:04.010
+I have like a Mistral. I have deep seek. I have like a open
+
+01:43:04.010 --> 01:43:07.490
+AI. So now I have like a 10 models inside URI itself. So why
+
+01:43:07.490 --> 01:43:11.190
+I go and I'll just try to use open AI because in open AI, I
+
+01:43:11.190 --> 01:43:14.050
+will be able to get just a GPT and I'm getting 10, 10
+
+01:43:14.050 --> 01:43:17.910
+different, different things. And even like a, I have a real
+
+01:43:17.910 --> 01:43:23.010
+time search API over here. Yeah. So fine. Guys, the classes
+
+01:43:23.010 --> 01:43:25.890
+are going to be fun. Believe me, when you interact with like
+
+01:43:25.890 --> 01:43:28.590
+a real time system, when you build something real time, I
+
+01:43:28.590 --> 01:43:31.950
+believe this is where we are progressing. Yeah. So, so many
+
+01:43:31.950 --> 01:43:34.970
+lectures we have to attend. But yeah, at the end of the day,
+
+01:43:35.010 --> 01:43:38.610
+I believe you will be able to build like anything that you
+
+01:43:38.610 --> 01:43:43.250
+want after that, even a smaller version of your own, like a
+
+01:43:43.250 --> 01:43:47.050
+chat GPT, you will be able to build it. I'm going to show
+
+01:43:47.050 --> 01:43:52.780
+you those examples with H100 or A100 GPUs. What is this MCP
+
+01:43:52.780 --> 01:43:56.020
+course? You can tell. Okay. Oh, I think you have all the
+
+01:43:56.020 --> 01:43:58.020
+access, right? Go and explore. It's a model contest
+
+01:43:58.020 --> 01:44:00.520
+protocol. It's a new technology, which has been released.
+
+01:44:00.660 --> 01:44:04.420
+And like this is the project based courses, like a
+
+01:44:04.420 --> 01:44:07.060
+publishing as of now. So I think four project I have already
+
+01:44:07.060 --> 01:44:08.920
+done, there are 10 projects, so six is remaining.
+
+01:44:12.210 --> 01:44:15.210
+So Suniya and I have one question, if you set temperature to
+
+01:44:15.210 --> 01:44:18.210
+0.1, then we get the most relevant results. So why we try,
+
+01:44:18.410 --> 01:44:23.750
+see relevancy is one of the context and then like creativity
+
+01:44:23.750 --> 01:44:28.830
+or randomness is the other context. Okay. So be me in like
+
+01:44:28.830 --> 01:44:32.730
+some of the result, you would not like to see much of
+
+01:44:32.730 --> 01:44:36.750
+relevancy, but a creativity from your model side. So in that
+
+01:44:36.750 --> 01:44:39.930
+situation, you have to like go and set a temperature
+
+01:44:39.930 --> 01:44:43.710
+somewhere in between middle, 0.6, 0.7, 0.4 kind of things.
+
+01:44:45.430 --> 01:44:48.330
+So you gave your authorization key in the code, fine, it's
+
+01:44:48.330 --> 01:44:52.930
+like use it. I can ask my team to reset it for me. And even
+
+01:44:52.930 --> 01:44:56.510
+we are launching a feature to reset the entire API key. On a
+
+01:44:56.510 --> 01:45:00.110
+daily basis, as of now, we have implemented a code and in
+
+01:45:00.110 --> 01:45:04.110
+that way, so we are like restricting it for 30 days. So in
+
+01:45:04.110 --> 01:45:07.110
+30 days, automatically it will refresh. But yeah, so we are
+
+01:45:07.110 --> 01:45:10.010
+trying to add more and more parameters. So not an issue.
+
+01:45:10.890 --> 01:45:15.290
+It's fine. All of you are my student, right? So it's not
+
+01:45:15.290 --> 01:45:16.150
+even but on that basis.
+
+01:45:19.750 --> 01:45:23.750
+Okay, with that, guys, thank you so much. Hope it was fun.
+
+01:45:23.910 --> 01:45:27.950
+We are anyhow connected over a group. So thank you so much.
+
+01:45:27.970 --> 01:45:30.770
+Feel free to communicate, feel free to connect. But yeah,
+
+01:45:30.810 --> 01:45:34.210
+start building something. I think you have everything to
+
+01:45:34.210 --> 01:45:36.950
+build something. Yeah. So with that, thank you so much,
+
+01:45:36.950 --> 01:45:41.350
+everyone. And see you again next week, Saturday with our
+
+01:45:41.350 --> 01:45:44.190
+next chapter. Yeah, so I believe you all know what is the
+
+01:45:44.190 --> 01:45:46.270
+next chapter that we are going to discuss. So with that,
+
+01:45:46.290 --> 01:45:48.430
+thank you so much, everyone. Take care. See you again.
+

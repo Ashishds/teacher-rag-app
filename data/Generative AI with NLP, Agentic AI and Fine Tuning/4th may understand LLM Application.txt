@@ -1,0 +1,5945 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.300
+okay guys so in today's discussion so obviously we have
+
+00:00:03.300 --> 00:00:06.340
+talked about vector databases so in today's discussion i'll
+
+00:00:06.340 --> 00:00:09.620
+be talking about an application basically and because going
+
+00:00:09.620 --> 00:00:12.220
+forward so we have to talk about a lang serve we have to
+
+00:00:12.220 --> 00:00:14.900
+talk about lang smith we have to talk about a lang chain we
+
+00:00:14.900 --> 00:00:17.080
+have to talk about lang graph we have to talk about a crew
+
+00:00:17.080 --> 00:00:21.480
+ai now all of these frameworks are going to help you out to
+
+00:00:21.480 --> 00:00:25.180
+build something out of your llms right so this large
+
+00:00:25.180 --> 00:00:27.800
+language models and that is something that we are going to
+
+00:00:27.800 --> 00:00:30.220
+do inside a class so in my today's class i'll be showing you
+
+00:00:30.220 --> 00:00:35.700
+one simple smart project right one simple smart project so
+
+00:00:35.700 --> 00:00:39.820
+where we are going to create a multiple agents now many of
+
+00:00:39.820 --> 00:00:41.880
+you don't even understand what is the meaning of agents
+
+00:00:41.880 --> 00:00:45.740
+that's completely fine right so we are going to build a
+
+00:00:45.740 --> 00:00:49.020
+project so where we are going to create a multiple agents
+
+00:00:49.020 --> 00:00:50.960
+and then i'll explain you what is the meaning of those
+
+00:00:50.960 --> 00:00:55.560
+agents by the way and that agent a different different
+
+00:00:55.560 --> 00:00:58.900
+agents are going to perform a different different task into
+
+00:00:58.900 --> 00:01:01.360
+a different different sequences they are going to perform
+
+00:01:01.360 --> 00:01:05.140
+the task and finally all together they will be able to
+
+00:01:05.140 --> 00:01:08.920
+perform one final task that i will be looking for so it's
+
+00:01:08.920 --> 00:01:13.700
+like a team right it's like a team so like as a part of the
+
+00:01:13.700 --> 00:01:16.400
+team so everyone try to like a take care of their own
+
+00:01:16.400 --> 00:01:20.440
+responsibility and then finally we use to deliver something
+
+00:01:20.440 --> 00:01:23.540
+to our client or maybe we will be able to build some of the
+
+00:01:23.540 --> 00:01:26.920
+product so in the similar manner so we are going to like do
+
+00:01:26.920 --> 00:01:29.420
+some sort of a work we are going to do some sort of a task
+
+00:01:29.420 --> 00:01:33.840
+where multiple agents will come together and then they are
+
+00:01:33.840 --> 00:01:37.200
+going to perform one common task now that one common task
+
+00:01:37.200 --> 00:01:41.000
+that i have chosen for my today's discussion is a very
+
+00:01:41.000 --> 00:01:46.780
+amazing one so generally like you go outside or maybe you go
+
+00:01:46.780 --> 00:01:50.580
+on youtube or maybe you go on other platforms and try to
+
+00:01:50.580 --> 00:01:55.580
+search for basically a roadmap right that okay so if i'm
+
+00:01:55.580 --> 00:01:58.380
+trying to learn agent tki if i'm trying to learn mcps if i'm
+
+00:01:58.380 --> 00:01:58.380
+trying to learn agent tki if i'm trying to learn agent tki
+
+00:01:58.380 --> 00:02:00.220
+if i'm trying to learn agent i'm trying to learn like a rag
+
+00:02:00.220 --> 00:02:03.420
+if i'm trying to learn maybe a data science big data devops
+
+00:02:03.420 --> 00:02:07.140
+cloud docker kubernetes dsa system design whatever right so
+
+00:02:07.140 --> 00:02:11.580
+what should be the roadmap right generally like we try to
+
+00:02:11.580 --> 00:02:15.600
+like watch those videos our roadmap videos right that okay
+
+00:02:15.600 --> 00:02:19.900
+so this is going to be the roadmap for this particular one
+
+00:02:19.900 --> 00:02:25.200
+now so similar kind of a roadmap for any topic any given
+
+00:02:25.200 --> 00:02:30.380
+topic right or any kind of a mind map we all will be able to
+
+00:02:30.380 --> 00:02:33.200
+create with the help of this particular project which we are
+
+00:02:33.200 --> 00:02:35.900
+going to discuss in my today's class in a step-by-step
+
+00:02:35.900 --> 00:02:38.620
+manner obviously right so in a step-by-step manner we are
+
+00:02:38.620 --> 00:02:42.460
+going to talk about all of these like components and then we
+
+00:02:42.460 --> 00:02:44.760
+are going to combine it and then we will be able to build a
+
+00:02:44.760 --> 00:02:48.460
+project so where i can just try to type that give me a
+
+00:02:48.460 --> 00:02:50.820
+roadmap for machine learning give me a roadmap for a
+
+00:02:50.820 --> 00:02:53.640
+generative ai give me a roadmap for mcps give me a roadmap
+
+00:02:53.640 --> 00:02:57.240
+for agent tki or maybe a fine tuning maybe for a big data
+
+00:02:57.240 --> 00:03:01.300
+maybe for aws right it will be a solution architect and it
+
+00:03:01.300 --> 00:03:04.660
+will be able to give you a roadmap then and there that too
+
+00:03:04.660 --> 00:03:08.540
+with the graph right in a complete like a graph way it is
+
+00:03:08.540 --> 00:03:12.440
+going to give you the roadmap so and this project is going
+
+00:03:12.440 --> 00:03:15.360
+to help you out to understand not just one or two concept
+
+00:03:15.360 --> 00:03:19.460
+but a multiple concept all together and like i said so i
+
+00:03:19.460 --> 00:03:23.100
+will be using a agent over here a multiple agent i will be
+
+00:03:23.100 --> 00:03:26.880
+using a framework called as lang graph and that is going to
+
+00:03:26.880 --> 00:03:31.140
+help me out in terms of like you know building this entire
+
+00:03:31.140 --> 00:03:35.040
+project so are we ready guys every one of us how
+
+00:03:39.100 --> 00:03:42.200
+llm model is learning when applications send a message to
+
+00:03:42.200 --> 00:03:47.680
+the model or chat query without updating weight or how llm
+
+00:03:47.680 --> 00:03:50.020
+model is learning when applications send a message to the
+
+00:03:50.020 --> 00:03:55.420
+model or chat query without updating weights or model no
+
+00:03:55.420 --> 00:03:58.260
+it's not learning by the way so maybe if you are using a
+
+00:03:58.260 --> 00:04:00.880
+search model so basically it goes to google try to do a
+
+00:04:00.880 --> 00:04:04.900
+search and then it gives you the answer otherwise if i'm
+
+00:04:04.900 --> 00:04:08.080
+going to talk about maybe like a chat gpt 4o they are not
+
+00:04:08.080 --> 00:04:10.520
+learning as of now so basically they try to do a training in
+
+00:04:10.520 --> 00:04:14.200
+offline mode uh obviously by like acquiring the new sort of
+
+00:04:14.200 --> 00:04:16.960
+the data and then they try to release those models that's
+
+00:04:16.960 --> 00:04:18.780
+the reason so everyday people are using the new new models
+
+00:04:18.780 --> 00:04:22.140
+right so those models are not learning in a real time they
+
+00:04:22.140 --> 00:04:26.940
+learn like offline basically okay so let's get started let
+
+00:04:26.940 --> 00:04:30.140
+me share my screen first of all guys and let me open up the
+
+00:04:30.140 --> 00:04:33.040
+project and i'll just try to run the project and show you
+
+00:04:33.040 --> 00:04:37.280
+what is the final outcome that we are looking for and then
+
+00:04:37.280 --> 00:04:41.100
+we are going to like uh build this project i am going to
+
+00:04:41.100 --> 00:04:44.680
+explain you that project in a one by one manner so where is
+
+00:04:44.680 --> 00:04:47.900
+my project let me search multi
+
+00:04:50.850 --> 00:05:02.200
+agent mcp i think yeah this is the project okay yeah this is
+
+00:05:02.200 --> 00:05:05.400
+the project fine so quickly what i will do is i'll just try
+
+00:05:05.400 --> 00:05:09.580
+to like run this entire project requirement.txt everything
+
+00:05:09.580 --> 00:05:14.440
+is fine and here i'm using urei by the way so i'm going to
+
+00:05:14.440 --> 00:05:17.940
+run this project quickly so
+
+00:05:30.140 --> 00:05:37.700
+here streamlit s-t-r-e-m-s-t-r-e-m-l-i-t streamlit run and
+
+00:05:37.700 --> 00:05:42.480
+then run what so app dot oh why
+
+00:05:45.000 --> 00:05:50.020
+it is not able to knowledge graph builder okay cd knowledge
+
+00:05:50.020 --> 00:05:54.720
+graph streamlit app.py just
+
+00:06:13.320 --> 00:06:16.200
+wait guys so i have just created this project day before
+
+00:06:16.200 --> 00:06:19.880
+yesterday uh two days back so i'm just trying to check um
+
+00:06:19.880 --> 00:06:20.920
+yeah
+
+00:06:35.920 --> 00:06:38.440
+so what kind of output this project is going to give it to
+
+00:06:38.440 --> 00:06:41.860
+you so let me show you the output first i have just stored
+
+00:06:41.860 --> 00:06:44.500
+one of the output and then i'll like try to explain you in a
+
+00:06:44.500 --> 00:06:47.800
+detailed way and then we are going to execute this project
+
+00:06:47.800 --> 00:06:50.100
+in a step-by-step manner yeah
+
+00:07:02.870 --> 00:07:06.450
+so basically the output of this entire project is going to
+
+00:07:06.450 --> 00:07:10.210
+be this one the one which I'm going to show you open with
+
+00:07:10.210 --> 00:07:14.670
+let's open with Google yeah so output of this project is
+
+00:07:14.670 --> 00:07:17.770
+basically this one so this I have created basically like a
+
+00:07:17.770 --> 00:07:22.570
+roadmap for a machine learning and as you can see so it is
+
+00:07:22.570 --> 00:07:25.390
+telling me that what I'm supposed to prepare in a very first
+
+00:07:25.390 --> 00:07:28.010
+place like a fundamental programming language python how
+
+00:07:28.010 --> 00:07:31.370
+much time I am supposed to take so three week I can I can
+
+00:07:31.370 --> 00:07:33.410
+even further drill it down but yeah I'm trying to show you
+
+00:07:33.410 --> 00:07:36.290
+that this basic project is solving a lot of problem for me
+
+00:07:36.290 --> 00:07:38.650
+this is what I'm trying to show it to you so fundamental
+
+00:07:38.650 --> 00:07:41.370
+mathematics for machine learning linear algebra calculus
+
+00:07:41.370 --> 00:07:44.410
+four week you are supposed to spend data handling so sql and
+
+00:07:44.410 --> 00:07:47.210
+pandas three week you are supposed to spend I can even
+
+00:07:47.210 --> 00:07:49.890
+further drill it down and then I can further like try to
+
+00:07:49.890 --> 00:07:52.890
+even print the topics that what is like required inside this
+
+00:07:52.890 --> 00:07:55.830
+topic this topic whatever topic you want but yeah this is
+
+00:07:55.830 --> 00:07:58.090
+the roadmap then data visualization matplotlib and seaborg
+
+00:07:58.090 --> 00:08:00.230
+machine learning basics so supervised unsupervised machine
+
+00:08:00.230 --> 00:08:03.170
+learning four week of time you are supposed to spend then
+
+00:08:03.170 --> 00:08:03.550
+what I'm trying to show you is that this is the basic
+
+00:08:03.550 --> 00:08:03.970
+project is solving a lot of problem for me what you are
+
+00:08:03.970 --> 00:08:06.150
+supposed to do a specialization wise if you are looking for
+
+00:08:06.150 --> 00:08:08.290
+a machine learning specialization so in that case ml
+
+00:08:08.290 --> 00:08:11.030
+algorithm so this is the algorithm three week of time is
+
+00:08:11.030 --> 00:08:13.450
+given to you module version of feature engineering deep
+
+00:08:13.450 --> 00:08:17.210
+learning so this is as a specialization wise then project
+
+00:08:17.210 --> 00:08:19.870
+and practice so how you are supposed to do what you are
+
+00:08:19.870 --> 00:08:21.650
+supposed to do everything you can try to print then
+
+00:08:21.650 --> 00:08:24.010
+deployment so model deployment and apis you have to learn
+
+00:08:24.010 --> 00:08:26.910
+flask and docker you have to learn tool and framework wise
+
+00:08:26.910 --> 00:08:29.650
+scikit learn tensorflow pytorch and then advanced technique
+
+00:08:29.650 --> 00:08:32.850
+wise so reinforcement learning and generative models you are
+
+00:08:32.850 --> 00:08:34.690
+supposed to learn and you should have spent this much of
+
+00:08:34.690 --> 00:08:38.130
+time and the search it is stay updated so follow your own
+
+00:08:38.130 --> 00:08:42.650
+latest courses and tutorials ongoing one yep so now just
+
+00:08:42.650 --> 00:08:45.730
+with one single prompt it is able to print each and
+
+00:08:45.730 --> 00:08:49.410
+everything even if I want that what is like what I can learn
+
+00:08:49.410 --> 00:08:52.830
+and this entire image that I'm showing you right this is
+
+00:08:52.830 --> 00:08:56.310
+created by system itself I'm not like I have written a code
+
+00:08:56.310 --> 00:08:59.510
+so basically I have written a code and code is populating
+
+00:08:59.510 --> 00:09:02.550
+this entire image and the graph that you are able to see so
+
+00:09:02.550 --> 00:09:03.450
+I'm not doing anything but I'm going to show you how to
+
+00:09:03.450 --> 00:09:05.130
+print this entire image by the way so it's not like we have
+
+00:09:05.130 --> 00:09:07.470
+designed it manually no not at all so we are using a graph
+
+00:09:07.470 --> 00:09:09.550
+which library over here with the help of graph which library
+
+00:09:09.550 --> 00:09:13.210
+so we are able to do that and this entire analytics research
+
+00:09:13.210 --> 00:09:16.330
+all these things has been done by yuri ai and then finally
+
+00:09:16.330 --> 00:09:18.810
+we are using a lang graph so lang graph where we are trying
+
+00:09:18.810 --> 00:09:21.710
+to configure the multiple agents means multiple worker we
+
+00:09:21.710 --> 00:09:25.170
+are trying to configure this is the overall idea but yeah so
+
+00:09:25.170 --> 00:09:28.990
+this is the final outcome of the project you will be able to
+
+00:09:28.990 --> 00:09:32.290
+see you can even try to extend this project I can extend
+
+00:09:33.450 --> 00:09:35.450
+this project here like here I can say that with every topic
+
+00:09:35.450 --> 00:09:38.710
+try to give me some subtopics as well or try to give me some
+
+00:09:38.710 --> 00:09:42.250
+sub syllabus as well I can going forward going good go and
+
+00:09:42.250 --> 00:09:46.790
+configure my entire neuron platform db access so here I can
+
+00:09:46.790 --> 00:09:50.010
+say that that okay if I have to learn this one so now show
+
+00:09:50.010 --> 00:09:53.510
+me in which video this one is available or which courses
+
+00:09:53.510 --> 00:09:56.730
+this entire things is available so I can even do a mapping
+
+00:09:56.730 --> 00:09:59.910
+with that so in this way it is going to be a pure authentic
+
+00:09:59.910 --> 00:10:03.770
+dynamic roadmap in a real time if my data is going to change
+
+00:10:03.770 --> 00:10:05.430
+if your query is going to change things will change
+
+00:10:05.430 --> 00:10:09.390
+automatically right so this is the project that we are going
+
+00:10:09.390 --> 00:10:13.490
+to work today so as a objective of this project so this
+
+00:10:13.490 --> 00:10:16.970
+project is going to give you a final roadmap this roadmap
+
+00:10:16.970 --> 00:10:20.410
+that you are talking about or in while like a teaching you
+
+00:10:20.410 --> 00:10:22.870
+itself so maybe i'll try to change my prompt i'll try to
+
+00:10:22.870 --> 00:10:26.390
+change a little bit and it will be able to even do more for
+
+00:10:26.390 --> 00:10:30.610
+me making sense guys what we are going to do today yes
+
+00:10:32.120 --> 00:10:36.200
+everyone making sense okay
+
+00:10:58.500 --> 00:11:01.980
+so let's start doing it now why we are doing this one
+
+00:11:01.980 --> 00:11:06.460
+because if you will go through your syllabus right so let me
+
+00:11:06.460 --> 00:11:09.560
+now give you a walkthrough of your syllabus first a little
+
+00:11:09.560 --> 00:11:16.240
+bit so basically uh your syllabus hybrid live so yeah so we
+
+00:11:16.240 --> 00:11:20.060
+have your syllabus here now if i'll go through your syllabus
+
+00:11:20.060 --> 00:11:22.420
+so after this vector db right after this vector db i'm going
+
+00:11:22.420 --> 00:11:22.420
+to go to my syllabus and i'm going to go to my syllabus and
+
+00:11:22.420 --> 00:11:25.540
+i'm going to So we have to understand what, introduction and
+
+00:11:25.540 --> 00:11:29.120
+architecture of generative AI application. So here basic
+
+00:11:29.120 --> 00:11:31.380
+architecture overview, advanced gen AI application
+
+00:11:31.380 --> 00:11:34.460
+architecture, multi-level architecture exploration, preview
+
+00:11:34.460 --> 00:11:38.480
+of the professional gen AI application. Now advanced gen AI
+
+00:11:38.480 --> 00:11:40.420
+application, selecting a right foundational model,
+
+00:11:40.540 --> 00:11:42.900
+comprehensive tool for generative AI, all those things we
+
+00:11:42.900 --> 00:11:46.420
+have to understand and then we have to get into the RAG. So
+
+00:11:46.420 --> 00:11:49.220
+which we will get into it from next week onwards because
+
+00:11:49.220 --> 00:11:51.360
+next week we are going to start Saturday, we are going to
+
+00:11:51.360 --> 00:11:55.060
+start with the RAG basically. So to understand this entire
+
+00:11:55.060 --> 00:11:57.320
+chapter, unless and until we are not going to build
+
+00:11:57.320 --> 00:12:00.200
+something small or big, we will not be able to understand
+
+00:12:00.200 --> 00:12:02.440
+and that's the reason why I'm trying to give you this
+
+00:12:02.440 --> 00:12:05.000
+understanding in a very, very first place. So I'm trying to
+
+00:12:05.000 --> 00:12:08.380
+cover basically this portion of your chapters. So by showing
+
+00:12:08.380 --> 00:12:11.380
+you the application, we will try to understand this entire
+
+00:12:11.380 --> 00:12:14.220
+overview. But yeah, if I'll talk about the application,
+
+00:12:14.380 --> 00:12:16.840
+application wise, there are millions of application which is
+
+00:12:16.840 --> 00:12:19.240
+possible, not just one or two. Not millions, I would say
+
+00:12:19.240 --> 00:12:23.340
+multi-million. Number of applications which is possible.
+
+00:12:25.980 --> 00:12:28.080
+Sachin is saying joined a little late, sorry, not an issue
+
+00:12:28.080 --> 00:12:31.300
+Sachin, you have not missed much. It's fine. We are about to
+
+00:12:31.300 --> 00:12:34.860
+start the project part. Just to explain that topic. So hope
+
+00:12:34.860 --> 00:12:38.640
+all of you are able to understand the objective that I have
+
+00:12:38.640 --> 00:12:42.860
+set for this particular session. Now let's get started in a
+
+00:12:42.860 --> 00:12:47.120
+very first place. So there is a lot of platform you will be
+
+00:12:47.120 --> 00:12:51.260
+able to find out over internet guys and those platforms. So
+
+00:12:51.260 --> 00:12:53.080
+one of those platforms are one of those platforms are
+
+00:12:53.080 --> 00:12:58.060
+Langchain by the way. So you can go to a Langchain and then
+
+00:12:58.060 --> 00:13:01.200
+maybe we can try to go through this entire Langchain
+
+00:13:01.200 --> 00:13:04.600
+platform. I'll try to explain you that what Langchain can do
+
+00:13:04.600 --> 00:13:09.020
+and why and where you are going to use this Langchain at the
+
+00:13:09.020 --> 00:13:13.000
+end of the day. Then there is a platform called as Crew AI,
+
+00:13:13.180 --> 00:13:21.140
+C R E W Crew AI, there is a platform called as. There is a
+
+00:13:21.140 --> 00:13:27.560
+platform called as N 8 N fine. So likewise, there are so
+
+00:13:27.560 --> 00:13:32.180
+many platforms people have created. So where you can go, you
+
+00:13:32.180 --> 00:13:35.800
+can try to maybe just drag and drop, or maybe you can write
+
+00:13:35.800 --> 00:13:39.480
+a minimalistic code, or maybe you will be able to just call
+
+00:13:39.480 --> 00:13:43.600
+their APIs. And then end to end, you will be able to create
+
+00:13:43.600 --> 00:13:48.060
+your own AI agent. You can try to bring those agent to a
+
+00:13:48.060 --> 00:13:53.300
+production. Now, I have taken a name of agent. Now you will
+
+00:13:53.300 --> 00:13:56.720
+ask me a question that what is this agent by the way, what
+
+00:13:56.720 --> 00:14:00.100
+is the definition of the agent that that because you said
+
+00:14:00.100 --> 00:14:03.400
+that that you can go to any of this platform, and then maybe
+
+00:14:03.400 --> 00:14:06.800
+you will be able to create an agent I go here, it's written
+
+00:14:06.800 --> 00:14:10.480
+multi agent, right, I just go here. Now it is going to tell
+
+00:14:10.480 --> 00:14:13.000
+me like somewhere that you can go and create the agents at
+
+00:14:13.000 --> 00:14:16.460
+the end of the day. Now I'll go here on in it and it will
+
+00:14:16.460 --> 00:14:18.660
+again tell me that go and create any kind of agent. Okay.
+
+00:14:18.680 --> 00:14:21.620
+Now what is a meaning of an agent anyone guys who can
+
+00:14:21.620 --> 00:14:22.140
+explain me?
+
+00:14:25.670 --> 00:14:28.610
+What do label one to three means label one means a basic
+
+00:14:28.610 --> 00:14:31.950
+understanding two means building theme is deployment, then
+
+00:14:31.950 --> 00:14:32.810
+sending it to production.
+
+00:14:35.740 --> 00:14:38.340
+You mentioned you cover I think you have joined a little bit
+
+00:14:38.340 --> 00:14:41.020
+later cause so I have already like said that I'll cover that
+
+00:14:41.020 --> 00:14:44.400
+will take just a minute of time. So it's not a big one. But
+
+00:14:44.400 --> 00:14:47.140
+yeah, so I'm just starting this project first, maybe at the
+
+00:14:47.140 --> 00:14:48.840
+end of this class itself, I'll cover that part.
+
+00:14:51.940 --> 00:14:54.800
+Fine, just another vector DB, I'll be using UD API convert
+
+00:14:54.800 --> 00:14:57.540
+to embeddings and then I'll I'll just do a pip install
+
+00:14:57.540 --> 00:15:01.300
+Facebook, a semantic search in my local and store it and
+
+00:15:01.300 --> 00:15:04.620
+then search it. That's it. Okay, so anyone who understands
+
+00:15:04.620 --> 00:15:08.640
+this agent, by the way, anyone, what is the meaning of the
+
+00:15:08.640 --> 00:15:13.220
+agent by the way? Yeah, so agent is the entity which takes
+
+00:15:13.220 --> 00:15:17.760
+autonomous decision based on the task is given. Okay. Okay.
+
+00:15:21.910 --> 00:15:26.230
+So maybe if I have agent is accomplished to a specific goal
+
+00:15:26.230 --> 00:15:32.270
+leveraging the LLM as a reasoning engine. Yeah. So I'll say
+
+00:15:32.270 --> 00:15:35.030
+that forget about those elements and everything, right? So
+
+00:15:35.030 --> 00:15:38.530
+if I have to compare agent with some like agent with like a
+
+00:15:38.530 --> 00:15:43.430
+employee who is working in a company. So again, when we are
+
+00:15:43.430 --> 00:15:46.870
+working in a company, so we have our own roles and
+
+00:15:46.870 --> 00:15:49.150
+responsibilities, right? We have our own responsibilities.
+
+00:15:49.870 --> 00:15:54.010
+And everyone like agents are the elements which gives a
+
+00:15:54.010 --> 00:15:56.130
+specific task. Okay, that's also correct. It automatically
+
+00:15:56.130 --> 00:15:59.870
+uses elements and take a decision. Okay, fine. Fine. Fine.
+
+00:16:00.610 --> 00:16:04.030
+Yeah. So almost everyone is able to understand a little bit
+
+00:16:04.030 --> 00:16:07.350
+but just hear me out, hear me out like what is my definition
+
+00:16:07.350 --> 00:16:11.770
+as per the agent as per my understanding, right? So agent is
+
+00:16:11.770 --> 00:16:15.310
+nothing but a kind of an employee who has been hired or who
+
+00:16:15.310 --> 00:16:20.030
+has been deployed just for a specific task. So that employee
+
+00:16:20.030 --> 00:16:23.010
+is just going to do that particular task. For example, so
+
+00:16:23.010 --> 00:16:26.970
+let's suppose if I'm going to like deploy a gatekeeper at
+
+00:16:26.970 --> 00:16:30.890
+your like office door, right? So what gatekeeper will do, so
+
+00:16:30.890 --> 00:16:34.610
+gatekeeper will just open the gate and close the gate. If I
+
+00:16:34.610 --> 00:16:37.830
+have deployed someone to take attendance, what that person
+
+00:16:37.830 --> 00:16:40.510
+will do, that person will just try to like maintain the
+
+00:16:40.510 --> 00:16:43.950
+books, right? Let's suppose if I have in my IT team, so if I
+
+00:16:43.950 --> 00:16:46.990
+have deployed someone, so who will just track everyone's
+
+00:16:46.990 --> 00:16:50.750
+tasks that what everyone is doing on a daily basis, right?
+
+00:16:50.850 --> 00:16:54.190
+And then they that person will try to analyze the you know,
+
+00:16:54.230 --> 00:17:00.330
+like the productivity of the entire. Team. I think PMO used
+
+00:17:00.330 --> 00:17:03.450
+to do the same thing in many companies, right? Very soon
+
+00:17:03.450 --> 00:17:08.610
+that job is going to be like gone very soon. So basically,
+
+00:17:08.690 --> 00:17:11.310
+this is what PMO does, by the way, right project management
+
+00:17:11.310 --> 00:17:14.570
+officer, even I was not able to understand like, when I was
+
+00:17:14.570 --> 00:17:16.950
+working with multiple clients and companies, there was a
+
+00:17:16.950 --> 00:17:20.030
+there was a lot of PMOs and I was not able to understand
+
+00:17:20.030 --> 00:17:24.070
+like, why these PMOs even exist in this company, or what
+
+00:17:24.070 --> 00:17:27.750
+they're doing, but yeah, task is task basically, right? So
+
+00:17:27.750 --> 00:17:31.450
+basically, like, let's suppose we have hired up someone in
+
+00:17:31.450 --> 00:17:33.810
+the PMO, what they do, they will just try to observe
+
+00:17:33.810 --> 00:17:36.370
+everyone, they will just go to everyone asked like, or maybe
+
+00:17:36.370 --> 00:17:38.390
+they will just go to Jira, they will track each and
+
+00:17:38.390 --> 00:17:41.870
+everything, like what what kind of a work these people have
+
+00:17:41.870 --> 00:17:43.750
+done this person has done, what is the overall productivity
+
+00:17:43.750 --> 00:17:45.490
+of the team, and then accordingly, they will create the
+
+00:17:45.490 --> 00:17:50.630
+report. So here, agents are exact same thing, right? Agents
+
+00:17:50.630 --> 00:17:53.710
+are nothing but again, in a layman way, it's a piece of
+
+00:17:53.710 --> 00:17:58.150
+code, right? It's a piece of code. Maybe. Maybe by drag and
+
+00:17:58.150 --> 00:18:01.090
+drop, we are doing it or maybe by writing some line of the
+
+00:18:01.090 --> 00:18:03.870
+code, we are doing it. But yeah, at the end of the day, it's
+
+00:18:03.870 --> 00:18:08.930
+a piece of the code, which you are writing to do some sort
+
+00:18:08.930 --> 00:18:13.250
+of a task in an automated way, with the help of your LLMs,
+
+00:18:13.370 --> 00:18:17.230
+obviously, right with the help of LLMs, because now LLMs are
+
+00:18:17.230 --> 00:18:20.650
+very much powerful. So LLMs, so by leveraging a capability
+
+00:18:20.650 --> 00:18:23.810
+of LLMs, you have written a piece of the code. Now that
+
+00:18:23.810 --> 00:18:29.400
+behaves as a LLMs. That's it. Fine. So that's it. So this is
+
+00:18:29.400 --> 00:18:31.540
+an example of something called as agent. But yeah, if you
+
+00:18:31.540 --> 00:18:35.460
+have like related with the real time, simple, maybe related
+
+00:18:35.460 --> 00:18:37.920
+with the gatekeeper, related with the bookkeeper, related
+
+00:18:37.920 --> 00:18:41.480
+with the attendance taker, right? Or maybe related with the
+
+00:18:41.480 --> 00:18:46.040
+PMOs. That's okay. So this person is been designed to like,
+
+00:18:46.100 --> 00:18:48.700
+do their own tasks. And again, so if I'm talking about the
+
+00:18:48.700 --> 00:18:51.360
+human being, so whenever they will do their tasks, they will
+
+00:18:51.360 --> 00:18:55.300
+do their tasks with their own knowledge, guts and feelings,
+
+00:18:55.480 --> 00:18:58.380
+right on a daily basis, not like a robot, right? guts and
+
+00:18:58.380 --> 00:19:01.440
+feelings this is where lms comes into picture so lms is
+
+00:19:01.440 --> 00:19:04.160
+having its own knowledge base its own guts its own feeling
+
+00:19:04.160 --> 00:19:07.980
+its own analysis or analogy and based on that so it is
+
+00:19:07.980 --> 00:19:12.160
+advising the code to do that do this simple this is called
+
+00:19:12.160 --> 00:19:16.200
+as agent and this is where people have started talking about
+
+00:19:16.200 --> 00:19:20.680
+the agentic ai right agentic and this is where again these
+
+00:19:20.680 --> 00:19:24.460
+all these platforms or ecosystem which has been introduced
+
+00:19:24.460 --> 00:19:28.060
+very recently in a market right which was not even available
+
+00:19:28.060 --> 00:19:30.800
+no one even heard about this one two year or two and a half
+
+00:19:30.800 --> 00:19:34.920
+year back so now everyone is talking about it basically and
+
+00:19:34.920 --> 00:19:37.240
+everyone is talking about a next level of automation so
+
+00:19:37.240 --> 00:19:40.420
+whether i'm going to use a crew ai or i'm going to use a
+
+00:19:40.420 --> 00:19:43.340
+lang chain or i'm going to use basically a net and everyone
+
+00:19:43.340 --> 00:19:46.780
+is helping me out to achieve almost a similar kind of things
+
+00:19:46.780 --> 00:19:50.460
+in a different different way obviously some is providing you
+
+00:19:50.460 --> 00:19:52.380
+something some is not providing you something that's a
+
+00:19:52.380 --> 00:19:55.120
+different story but yeah at the end of the day this is what
+
+00:19:55.120 --> 00:19:59.100
+you all will be able to find out now learning these things
+
+00:19:59.100 --> 00:20:03.060
+is important uh if you would like to make a career into a
+
+00:20:03.060 --> 00:20:06.800
+like a gen ai but believe me if you understand fundamentals
+
+00:20:06.800 --> 00:20:12.540
+learning these things are not at all a big deal anyone can
+
+00:20:12.540 --> 00:20:15.280
+learn it anyone means literally anyone and everyone can
+
+00:20:15.280 --> 00:20:19.680
+learn it in a easiest possible way even uh without me you
+
+00:20:19.680 --> 00:20:21.560
+will be able to learn it right this is a different story but
+
+00:20:21.560 --> 00:20:23.560
+yeah at the end of the day this is how easy it is believe me
+
+00:20:23.560 --> 00:20:27.080
+this is how easy it is so it's it's not at all tough uh to
+
+00:20:27.080 --> 00:20:30.300
+learn these things to experiment these things or to build
+
+00:20:30.300 --> 00:20:33.100
+these things or to build a product out of it or maybe like
+
+00:20:33.100 --> 00:20:37.860
+to solve uh some sort of a problem uh by using these tools
+
+00:20:37.860 --> 00:20:42.580
+so here in my today's class i will be using a lang graph
+
+00:20:42.580 --> 00:20:48.020
+basically right now so inside a lang ecosystem so lang
+
+00:20:48.020 --> 00:20:50.720
+basically lang is providing you an ecosystem so inside the
+
+00:20:50.720 --> 00:20:54.360
+lang ecosystem you will be able to find out a couple of
+
+00:20:54.360 --> 00:20:57.920
+things now what are those couple of things by the way inside
+
+00:20:57.920 --> 00:21:00.980
+only lang ecosystem so lang is let's suppose one framework
+
+00:21:00.980 --> 00:21:05.120
+right so lang so this basically inside a lang framework
+
+00:21:05.120 --> 00:21:08.780
+itself you will be able to see or you will be able to find
+
+00:21:08.780 --> 00:21:16.200
+out basically something called as a lang chain and then you
+
+00:21:16.200 --> 00:21:18.060
+will be able to find out something called
+
+00:21:21.560 --> 00:21:24.180
+then you will be able to find out something called as lang
+
+00:21:24.180 --> 00:21:28.620
+graph and then you will be able to find out something called
+
+00:21:28.620 --> 00:21:34.520
+as lang serve basically so these are the four things that
+
+00:21:34.520 --> 00:21:37.860
+you will be able to find out inside a lang ecosystem and
+
+00:21:37.860 --> 00:21:40.720
+many people i have seen i have seen many people even like
+
+00:21:40.720 --> 00:21:43.560
+experienced ones so they get confused with the lang chain
+
+00:21:43.560 --> 00:21:47.140
+lang smith lang graph and lang serve first of all let me
+
+00:21:47.140 --> 00:21:49.780
+clarify you these things that it's a part of same ecosystem
+
+00:21:49.780 --> 00:21:51.980
+now i'll talk about this in a little bit but let me clarify
+
+00:21:51.980 --> 00:21:51.980
+you these things that it's a part of same ecosystem now i'll
+
+00:21:51.980 --> 00:21:54.560
+talk about this high level use cases that what lang chain
+
+00:21:54.560 --> 00:21:59.440
+does so basically lang chain is a core framework from this
+
+00:21:59.440 --> 00:22:03.460
+entire lang system that has been created it's a core system
+
+00:22:03.460 --> 00:22:08.100
+so here it allows you or it focuses in terms of building a
+
+00:22:08.100 --> 00:22:12.240
+logic right in terms of building a logic and here so you
+
+00:22:12.240 --> 00:22:16.200
+will be able to build a series of the chain series of chain
+
+00:22:16.200 --> 00:22:19.180
+means so agent number one let's suppose there is a agent
+
+00:22:19.180 --> 00:22:21.540
+number two means person number one person number two person
+
+00:22:21.540 --> 00:22:22.360
+number three person number four person person number three
+
+00:22:22.360 --> 00:22:27.260
+and person number four for example so like a attendance
+
+00:22:27.260 --> 00:22:30.760
+taker person right so a person will take attendance and then
+
+00:22:30.760 --> 00:22:33.360
+he will forward attendance to the next one they will do the
+
+00:22:33.360 --> 00:22:36.920
+analysis then they will try to forward to the account like a
+
+00:22:36.920 --> 00:22:40.420
+HR department so HR department will try to like make leave
+
+00:22:40.420 --> 00:22:42.780
+or no leave kind of things then HR department will try to
+
+00:22:42.780 --> 00:22:45.760
+forward to the like a finance department now finance
+
+00:22:45.760 --> 00:22:48.040
+department will do what so finance department will try to
+
+00:22:48.040 --> 00:22:50.520
+based on the attendance so they will try to release the
+
+00:22:50.520 --> 00:22:54.260
+salary Is it making sense guys? So can I say that in this
+
+00:22:54.260 --> 00:22:56.940
+situation, so from attendance taker itself, so let's suppose
+
+00:22:56.940 --> 00:23:00.260
+attendance taker is a low level agent, a first agent, right?
+
+00:23:00.300 --> 00:23:03.400
+So attendance taker has passed this attendance like to a
+
+00:23:03.400 --> 00:23:06.500
+auditor, auditor has passed these things to the HR, HR has
+
+00:23:06.500 --> 00:23:08.920
+passed to the finance department. Now finally finance
+
+00:23:08.920 --> 00:23:12.440
+department will try to release the salary. So ultimately we
+
+00:23:12.440 --> 00:23:15.400
+are taking attendance so that we can deduct your salaries,
+
+00:23:15.600 --> 00:23:19.000
+right? We can deduct your salaries if you are absent. That
+
+00:23:19.000 --> 00:23:21.860
+was the whole idea. That was the whole objective, right? So
+
+00:23:21.860 --> 00:23:24.460
+what we have done, so we have basically created a multiple
+
+00:23:24.460 --> 00:23:28.320
+separate, separate agent. We have defined their own like a,
+
+00:23:28.320 --> 00:23:34.000
+like a functionality. So for each and every agent, now every
+
+00:23:34.000 --> 00:23:37.720
+agent is going to do a task in a sequential manner. And then
+
+00:23:37.720 --> 00:23:40.980
+finally it is going to give you the output, whatever output
+
+00:23:40.980 --> 00:23:42.700
+that you are looking for, right? Whatever project that you
+
+00:23:42.700 --> 00:23:44.380
+are trying to build, whatever problem that you are trying to
+
+00:23:44.380 --> 00:23:49.140
+solve. Now, Langchain provides you a library. You can do it.
+
+00:23:49.180 --> 00:23:51.160
+You can do it. It means you can try to write multiple
+
+00:23:51.160 --> 00:23:53.780
+different. Different kind of a function one by one in a
+
+00:23:53.780 --> 00:23:56.260
+sequence. You can try to arrange it. We'll, we'll try to get
+
+00:23:56.260 --> 00:23:59.660
+into that more. Uh, but as a layman way, this is what you
+
+00:23:59.660 --> 00:24:03.040
+can understand. Then if we are trying to build maybe a RIG
+
+00:24:03.040 --> 00:24:05.380
+application, I think we all understand. So what is the
+
+00:24:05.380 --> 00:24:07.520
+meaning of RIG application? So retrieval augmented
+
+00:24:07.520 --> 00:24:10.760
+generation application is nothing but a kind of application.
+
+00:24:11.280 --> 00:24:16.000
+So where we are trying to use a publicly available elements
+
+00:24:16.000 --> 00:24:20.100
+knowledge, plus we are trying to use our own knowledge base.
+
+00:24:20.260 --> 00:24:24.300
+Right? So before sending, uh, like, uh, uh, like embeddings
+
+00:24:24.300 --> 00:24:27.880
+or before sending a query to our LM. So what we do is we try
+
+00:24:27.880 --> 00:24:30.600
+to send some of the information from my knowledge as well,
+
+00:24:30.740 --> 00:24:34.160
+or I can say my own repository, my private data set as well.
+
+00:24:34.260 --> 00:24:36.080
+So that based on that, it will be able to give me the
+
+00:24:36.080 --> 00:24:39.940
+answer. So you can try to build RIG kind of application over
+
+00:24:39.940 --> 00:24:43.740
+here in a easiest possible way, right? Any kind of a tools,
+
+00:24:43.880 --> 00:24:47.640
+tools means technically a function by the way, right? Any
+
+00:24:47.640 --> 00:24:50.100
+kind of a tools you can try to build it over here. For
+
+00:24:50.100 --> 00:24:52.460
+example, recently I've been talking about a lot of MCB
+
+00:24:52.460 --> 00:24:55.540
+projects, a lot of like a functions, our MCB tools. I have
+
+00:24:55.540 --> 00:24:57.660
+written over there if you will go through, or if you'll
+
+00:24:57.660 --> 00:25:00.520
+follow along those lectures, right? In every project. So
+
+00:25:00.520 --> 00:25:03.640
+this is where LangChain comes into a pictures. LangChain can
+
+00:25:03.640 --> 00:25:06.840
+do all of these things. Frameworks is available. Library is
+
+00:25:06.840 --> 00:25:09.320
+given to you. Code is already written, just call the library
+
+00:25:09.320 --> 00:25:13.060
+and then you will be able to do it. Now where this Lang
+
+00:25:13.060 --> 00:25:17.340
+Smith fit fits in. So whenever you are trying to build any
+
+00:25:17.340 --> 00:25:20.220
+application, for example, with the help of LangChain, which
+
+00:25:20.220 --> 00:25:24.480
+is a core library, right? So obviously when you will try to
+
+00:25:24.480 --> 00:25:28.940
+build those applications, so you need some sort of a setup
+
+00:25:28.940 --> 00:25:31.960
+by which you will be able to do a debugging,
+
+00:25:34.600 --> 00:25:37.160
+debugging, monitoring,
+
+00:25:40.330 --> 00:25:43.790
+right? So you will have to like a do a debugging. You will
+
+00:25:43.790 --> 00:25:46.870
+have to go ahead and do a monitoring. You will have to check
+
+00:25:46.870 --> 00:25:50.250
+whether things are working fine or not. Means. You have to
+
+00:25:50.250 --> 00:25:53.490
+visualize the chain. You have to visualize the agent. You
+
+00:25:53.490 --> 00:25:57.070
+have to find out the output or errors or anything, right? To
+
+00:25:57.070 --> 00:26:01.630
+maintain these entire things. So this is where this Lang
+
+00:26:01.630 --> 00:26:05.170
+Smith comes into a picture. I believe I, I have shown you a
+
+00:26:05.170 --> 00:26:09.070
+tensor, uh, like, uh, uh, in my, in my class, I have shown
+
+00:26:09.070 --> 00:26:12.510
+you a tensor board, right? Guys, if you remember anyone who
+
+00:26:12.510 --> 00:26:16.630
+remembers a tensor board, by the way, yep.
+
+00:26:19.930 --> 00:26:21.950
+Anyone guys who remembers a tensor board?
+
+00:26:39.220 --> 00:26:41.440
+Technically Lang Smith, you can consider that as a tensor
+
+00:26:41.440 --> 00:26:44.140
+board. So where you can see all the final outcome, you can
+
+00:26:44.140 --> 00:26:46.880
+try to visualize it means you can visualize all the agents
+
+00:26:46.880 --> 00:26:50.060
+chain. So basically Lang Smith provides you those APIs, or
+
+00:26:50.060 --> 00:26:53.180
+you can say those methods or functions Lang Smith is going
+
+00:26:53.180 --> 00:26:56.580
+to provide you. So same thing it's doing, but yeah, it's
+
+00:26:56.580 --> 00:26:58.900
+just like a supporting a Lang chain. You can say, it's just
+
+00:26:58.900 --> 00:27:01.460
+going to support a Lang chain over here. So debugging,
+
+00:27:01.540 --> 00:27:04.500
+monitoring, and then visualization, all of these things, you
+
+00:27:04.500 --> 00:27:06.980
+will be able to do it with the help of Lang Smith library.
+
+00:27:07.180 --> 00:27:09.820
+So whatever you have built in Lang chain. You can just use a
+
+00:27:09.820 --> 00:27:13.160
+Lang Smith to do the same thing. So it's like a tensor board
+
+00:27:13.160 --> 00:27:17.220
+of a Lang, simple, right? And so board of the Lang, you will
+
+00:27:17.220 --> 00:27:22.260
+be able to find out. Now, uh, third one is basically a Lang
+
+00:27:22.260 --> 00:27:25.540
+graph, right? So Lang graph. So what is this Lang graph and
+
+00:27:25.540 --> 00:27:30.240
+how it is like a different, so Lang graph is again, like
+
+00:27:30.240 --> 00:27:33.260
+Lang Smith is a core framework. You went over there. You can
+
+00:27:33.260 --> 00:27:36.260
+try to create a multiple agents, but Lang graph technically
+
+00:27:36.260 --> 00:27:41.340
+supports a multi agent complete. Yeah. Yeah. And it will be
+
+00:27:41.340 --> 00:27:44.520
+able to control the, or you will be able to, you will be
+
+00:27:44.520 --> 00:27:47.200
+having a flexibility so that you will be able to control the
+
+00:27:47.200 --> 00:27:51.140
+state of the agent at any point of a time. This is where
+
+00:27:51.140 --> 00:27:57.360
+this Lang graph comes into a picture. So here it's to try to
+
+00:27:57.360 --> 00:27:58.780
+provide you, where
+
+00:28:04.000 --> 00:28:10.460
+is my pencil? Yeah. So here it tried to provide you, multi
+
+00:28:12.500 --> 00:28:14.140
+agent
+
+00:28:15.520 --> 00:28:17.040
+workflow.
+
+00:28:19.980 --> 00:28:24.260
+You will be able to create, plus you will be able to like do
+
+00:28:24.260 --> 00:28:27.640
+a stateful conversation in between the agents, or you can
+
+00:28:27.640 --> 00:28:30.580
+try to create a agent, which will be able to collaborate
+
+00:28:30.580 --> 00:28:34.040
+with each other. Now, what is the meaning of this? Right? So
+
+00:28:34.040 --> 00:28:37.560
+I have given you one example in this place, right? So where
+
+00:28:37.560 --> 00:28:40.740
+there is a attendance taker and then attendance taker is
+
+00:28:40.740 --> 00:28:44.300
+passing those data to the auditor, then to HR and then to a
+
+00:28:44.300 --> 00:28:49.440
+finance guy. Yeah. Now, so here in the one chain in one
+
+00:28:49.440 --> 00:28:52.920
+sequence. We are trying to pass the information, but maybe
+
+00:28:52.920 --> 00:28:56.760
+here in case of a Lang graph, so this is the core property
+
+00:28:56.760 --> 00:29:00.220
+of line chain. So maybe into a Lang graph, you can try to
+
+00:29:00.220 --> 00:29:03.940
+create a collaborative agent means you do this. I'll do
+
+00:29:03.940 --> 00:29:06.400
+this. If I'll do this mistake, I'll come back to you. You
+
+00:29:06.400 --> 00:29:09.240
+will again, correct this one. I'll again, do this kind of
+
+00:29:09.240 --> 00:29:11.000
+this one means back and forth, back and forth, back and
+
+00:29:11.000 --> 00:29:13.380
+forth. I can try to go ahead. I can try to give an
+
+00:29:13.380 --> 00:29:15.420
+instruction to this one. This will revert back. Then again,
+
+00:29:15.520 --> 00:29:17.740
+I'll come back, then revert back, then come back then this
+
+00:29:17.740 --> 00:29:20.500
+way. So basically you will be able to do that. To create a
+
+00:29:20.500 --> 00:29:27.970
+collaborative, collaborative agents. This is where this Lang
+
+00:29:27.970 --> 00:29:31.010
+graph comes into a picture. So in point, today's project, I
+
+00:29:31.010 --> 00:29:34.510
+will be using a Lang graph by the way. Right. Uh, so to do
+
+00:29:34.510 --> 00:29:36.930
+that, uh, that one, so I am going to create three agent over
+
+00:29:36.930 --> 00:29:41.170
+there. So this is what, uh, like, uh, where Lang graph comes
+
+00:29:41.170 --> 00:29:43.890
+into a picture. So wherever you are trying to build a
+
+00:29:43.890 --> 00:29:48.990
+workflow bear, one agent is going to pass a control to the
+
+00:29:48.990 --> 00:29:51.930
+different agent based on the condition. So over there. I can
+
+00:29:51.930 --> 00:29:55.810
+try to use a Lang graph kind of a library today itself. You
+
+00:29:55.810 --> 00:29:58.430
+will be able to see a demo of a Lang graph in my class, in
+
+00:29:58.430 --> 00:30:02.110
+my project. So where I'm going to create a, like a project.
+
+00:30:02.290 --> 00:30:05.510
+So which can generate any kind of a roadmap after doing a
+
+00:30:05.510 --> 00:30:08.430
+lot of research, synthesizing, and then finally a graph
+
+00:30:08.430 --> 00:30:12.310
+builder. Now there is something called as Lang serve, right?
+
+00:30:12.430 --> 00:30:15.130
+So we are able to build the multiple chain season,
+
+00:30:15.250 --> 00:30:17.070
+everything, debug, monitoring, all those things are
+
+00:30:17.070 --> 00:30:22.290
+completely fine. Right? So. Uh, now. Now we have to
+
+00:30:22.290 --> 00:30:26.030
+basically like, uh, deploy those application, right? We have
+
+00:30:26.030 --> 00:30:28.810
+to like, uh, send those application over to the sub server.
+
+00:30:29.150 --> 00:30:32.410
+Now this is where this Lang serve comes into a picture. So
+
+00:30:32.410 --> 00:30:35.750
+this gives you a capability so that it's, it's more like a
+
+00:30:35.750 --> 00:30:36.650
+deployment tool
+
+00:30:39.720 --> 00:30:44.520
+deployment tool, right? It's more like, like a deployment
+
+00:30:44.520 --> 00:30:46.580
+tool that you will be able to find out, which is going to
+
+00:30:46.580 --> 00:30:50.300
+help you out in terms of doing a deployment of all of these
+
+00:30:50.300 --> 00:30:53.960
+agent at any point of a time. So is it making sense to all
+
+00:30:53.960 --> 00:30:57.740
+of us? Guys, any confusion between all this for, in terms of
+
+00:30:57.740 --> 00:30:58.040
+definition?
+
+00:31:02.030 --> 00:31:05.010
+Yeah. In terms of definition, are you able to understand? So
+
+00:31:05.010 --> 00:31:07.950
+I don't think that you will get confused with any of these
+
+00:31:07.950 --> 00:31:12.050
+four, uh, going forward, right now, you know, that inside a
+
+00:31:12.050 --> 00:31:15.470
+Lang family. So what is basically like, uh, things that we
+
+00:31:15.470 --> 00:31:18.130
+have and what we are going to use for what purposes?
+
+00:31:21.150 --> 00:31:21.550
+Yeah,
+
+00:31:30.030 --> 00:31:36.550
+fine. Everyone. So please let me know. Yes or no. Fine. Yep.
+
+00:31:37.290 --> 00:31:40.050
+Lang chain only for single agent, not for single agent, a
+
+00:31:40.050 --> 00:31:42.890
+chain of agent. You can try to create, you can solve our RIG
+
+00:31:42.890 --> 00:31:45.210
+problems over there. You can try to create a multiple tool
+
+00:31:45.210 --> 00:31:48.050
+over there, right? Our individual agent, you can try to
+
+00:31:48.050 --> 00:31:50.810
+create, or maybe a chain of agent. You can try to create
+
+00:31:50.810 --> 00:31:54.830
+over there. So it's not like it's just for the single agent.
+
+00:31:54.950 --> 00:31:57.410
+You can create a multiple agent. You can even connect each
+
+00:31:57.410 --> 00:32:01.550
+and every agent with each and every one Lang Smith and
+
+00:32:01.550 --> 00:32:04.890
+serve, please repeat. So see Lang is Smith has been used for
+
+00:32:04.890 --> 00:32:08.250
+a debugging and monitoring. And visualization, just like a
+
+00:32:08.250 --> 00:32:11.910
+tensor board, right? Just like a tensor board. So where you
+
+00:32:11.910 --> 00:32:14.570
+will be able to track the application. If there will be some
+
+00:32:14.570 --> 00:32:17.050
+error, you will be able to debug it. You will be able to
+
+00:32:17.050 --> 00:32:19.510
+check the logs at the end of the day. This is where Lang is
+
+00:32:19.510 --> 00:32:22.170
+with comes into a picture because for any real time
+
+00:32:22.170 --> 00:32:25.090
+application that we are going to build, obviously we have to
+
+00:32:25.090 --> 00:32:27.630
+observe those application. We have to debug. If there will
+
+00:32:27.630 --> 00:32:30.270
+be an error, we have to monitor all those application into a
+
+00:32:30.270 --> 00:32:32.730
+production. This is where Lang Smith comes into picture. If
+
+00:32:32.730 --> 00:32:35.550
+I'll talk about solve. So basically it's, it's allowing you
+
+00:32:35.550 --> 00:32:39.310
+to expose. Yeah. Your entire things, entire system as a API
+
+00:32:39.310 --> 00:32:42.830
+to the outer world, right? So it's more like a deployment
+
+00:32:42.830 --> 00:32:43.410
+tool.
+
+00:32:47.520 --> 00:32:50.340
+Can we do a multi-agent without a Lang graph? Obviously you
+
+00:32:50.340 --> 00:32:56.100
+can do it. Yes. So this is the Lang family. Do this agent
+
+00:32:56.100 --> 00:32:59.180
+have to be sequential in a workflow or can we make a complex
+
+00:32:59.180 --> 00:33:01.500
+workflow with nonlinear kind of a workflow among these
+
+00:33:01.500 --> 00:33:04.260
+agents? You can create a nonlinear workflow in a easiest
+
+00:33:04.260 --> 00:33:07.840
+possible way. That is possible, right? That is possible. And
+
+00:33:07.840 --> 00:33:10.580
+again, so with the help of graph, that is all that is
+
+00:33:10.580 --> 00:33:10.860
+possible.
+
+00:33:15.360 --> 00:33:19.320
+Uh, then why multi agent system were created like a crew AI
+
+00:33:19.320 --> 00:33:22.440
+land graph and autochains land graph is a part of like a
+
+00:33:22.440 --> 00:33:25.940
+same land family itself. Crew AI is a different company
+
+00:33:25.940 --> 00:33:28.680
+altogether. So let's suppose you're like a friends has
+
+00:33:28.680 --> 00:33:31.900
+created one company. Now you think that, okay, fine. So your
+
+00:33:31.900 --> 00:33:34.660
+friends, the business is doing good. Uh, let's go and create
+
+00:33:34.660 --> 00:33:37.640
+one more. So this is where crew comes into a picture. This
+
+00:33:37.640 --> 00:33:44.900
+is where auto gen comes into a picture. Fine. Hmm. So
+
+00:33:44.900 --> 00:33:47.320
+basically. They are the competitor in between. They're just
+
+00:33:47.320 --> 00:33:48.360
+fighting for the market share.
+
+00:33:54.580 --> 00:33:57.280
+And these are the, not the only like a framework. So almost
+
+00:33:57.280 --> 00:34:00.460
+all the biggies are now bringing this select things. So
+
+00:34:00.460 --> 00:34:03.180
+where you can create a multiple agents, we
+
+00:34:05.390 --> 00:34:10.890
+are even working on some projects. So we are like, um, we
+
+00:34:10.890 --> 00:34:13.810
+are creating a agent hub by the way, uh, very soon you will
+
+00:34:13.810 --> 00:34:17.490
+be able to see it. So, uh, basically we have a URI inside
+
+00:34:17.490 --> 00:34:21.050
+this one, right? So we have like, uh, now we are thinking a
+
+00:34:21.050 --> 00:34:24.490
+different kind of a feature. Our future, you can say for our
+
+00:34:24.490 --> 00:34:27.630
+URI. So URI is one of the amazing and one of the useful
+
+00:34:27.630 --> 00:34:30.150
+platform that we have created and people are literally
+
+00:34:30.150 --> 00:34:32.290
+loving it. The kind of feedback that are the kind of, uh,
+
+00:34:32.670 --> 00:34:35.450
+consumption that we are able to observe over here. So
+
+00:34:35.450 --> 00:34:37.910
+obviously we are trying to make it better and better, but
+
+00:34:37.910 --> 00:34:41.730
+now we are trying to like, uh, create a separate app just
+
+00:34:41.730 --> 00:34:46.110
+for URI, uh, kind of a family app. You can say, uh, where,
+
+00:34:46.170 --> 00:34:50.070
+uh, pay as you go basis, people will be able to access it.
+
+00:34:50.070 --> 00:34:52.630
+It means you are going to like do a top up. Just like a SIM
+
+00:34:52.630 --> 00:34:55.650
+card, top up, and then you and your entire family will be
+
+00:34:55.650 --> 00:34:59.050
+able to use the capability of AI. Plus we are trying to, we
+
+00:34:59.050 --> 00:35:02.910
+are even planning to bring a agent hub over there so that
+
+00:35:02.910 --> 00:35:05.370
+let's suppose you have created some agent, which is going to
+
+00:35:05.370 --> 00:35:08.110
+do some sort of a task. So this is like an app store and a
+
+00:35:08.110 --> 00:35:10.290
+play store, right? So just like an app store and play store.
+
+00:35:10.370 --> 00:35:13.250
+So we are trying to create even a marketplace in a separate
+
+00:35:13.250 --> 00:35:16.930
+URI ecosystem. So where you can try to dump your own agents
+
+00:35:16.930 --> 00:35:19.130
+and many more things, many more things. So we are already
+
+00:35:19.130 --> 00:35:22.870
+like working on it. So maybe by the end. Of June, you will
+
+00:35:22.870 --> 00:35:26.090
+be able to see some responses from a URI and you will be
+
+00:35:26.090 --> 00:35:28.890
+able to see a complete separate app for URI like Android and
+
+00:35:28.890 --> 00:35:31.710
+iOS, both a plus this agent hub and many, many things,
+
+00:35:31.810 --> 00:35:34.990
+right? Because obviously future is going to be all about,
+
+00:35:35.030 --> 00:35:38.710
+uh, agents and the AI and all of these things altogether.
+
+00:35:39.070 --> 00:35:41.910
+Right? So we are, we are just trying to build in that way.
+
+00:35:44.990 --> 00:35:47.910
+They were asking, we are supposed to assume that agent is a
+
+00:35:47.910 --> 00:35:50.910
+combination of LLM properties and tools, combination of
+
+00:35:50.910 --> 00:35:53.330
+different, different chains property. I mean like chain
+
+00:35:53.330 --> 00:35:56.650
+tool, all this. Things are basically like a kind of a
+
+00:35:56.650 --> 00:35:59.950
+technical word. Don't run after that. Uh, I don't taking
+
+00:35:59.950 --> 00:36:02.810
+like a, those names, like technical words. It simply means
+
+00:36:02.810 --> 00:36:06.490
+that our program with the access of LLMs, right? A program,
+
+00:36:06.670 --> 00:36:09.610
+a simple program with the access of LLMs defined for the
+
+00:36:09.610 --> 00:36:11.630
+specific task. That's it. That's this, that is something
+
+00:36:11.630 --> 00:36:14.190
+called as agent. And then we, you create a multiple agents,
+
+00:36:14.350 --> 00:36:17.310
+combine it all together. You can say that as a chain, or
+
+00:36:17.310 --> 00:36:20.950
+maybe you can say that as a nonlinear, like a graph, simple
+
+00:36:20.950 --> 00:36:24.190
+agno framework. Yeah. Likewise. There are so many tons of
+
+00:36:24.190 --> 00:36:26.970
+free. Most are available and every framework is almost
+
+00:36:26.970 --> 00:36:29.450
+trying to do the same thing. And they're like trying to
+
+00:36:29.450 --> 00:36:30.610
+release the similar kind of a feature.
+
+00:36:33.410 --> 00:36:35.890
+Can we build an agent on a local server? You can build it
+
+00:36:35.890 --> 00:36:42.170
+anywhere. Should we learn all, not at all, learn one, learn
+
+00:36:42.170 --> 00:36:45.250
+the fundamentals, and then just go and explore once and
+
+00:36:45.250 --> 00:36:47.770
+leave it because this is how easy these things are.
+
+00:36:57.620 --> 00:37:01.160
+Okay. So now let's go ahead. This is the future that we are
+
+00:37:01.160 --> 00:37:03.520
+thinking about. So even inside a URI, so we are trying to
+
+00:37:03.520 --> 00:37:07.520
+bring, uh, not this kind of a platform, but yeah. So. Kind
+
+00:37:07.520 --> 00:37:12.180
+of, uh, agent hub, uh, we are building, uh, so very soon.
+
+00:37:12.280 --> 00:37:15.200
+And over there, uh, even we can publish the agents and even
+
+00:37:15.200 --> 00:37:17.400
+you can publish your own agent. And then in a later stage,
+
+00:37:17.560 --> 00:37:21.300
+even you can monetize your own agents. So we are, we are
+
+00:37:21.300 --> 00:37:24.760
+just working on it. So project is in a initial stages of
+
+00:37:24.760 --> 00:37:28.580
+now. So hopefully by June and you will start looking into
+
+00:37:28.580 --> 00:37:33.440
+those like outcomes that we are working on as of now. Okay.
+
+00:37:33.540 --> 00:37:36.640
+So now, uh, there is another platform called a screw AI,
+
+00:37:36.780 --> 00:37:40.660
+right? Again, what you will do, create a multiple agents,
+
+00:37:40.860 --> 00:37:44.600
+multiple agents means what a person with us, a specific
+
+00:37:44.600 --> 00:37:47.860
+task, and then connect it, combine it. That's it. This is
+
+00:37:47.860 --> 00:37:50.800
+what you will be able to do with the help of crew AI. Now
+
+00:37:50.800 --> 00:37:53.840
+coming to edit and what you will do again, the same thing.
+
+00:37:53.960 --> 00:37:57.900
+So you are going to like, uh, connect all your tools, your,
+
+00:37:57.940 --> 00:38:00.680
+your databases, all your slags or your file systems,
+
+00:38:00.900 --> 00:38:03.440
+everything, whatever you can think of, right? Whatever you
+
+00:38:03.440 --> 00:38:05.640
+can think of, you will be able to connect each and every
+
+00:38:05.640 --> 00:38:08.040
+one. Or maybe just try to connect. You can call your job
+
+00:38:08.040 --> 00:38:10.740
+here and JPA can run it with the 8,000 tools because this is
+
+00:38:10.740 --> 00:38:13.720
+what JPA does. I think 8,000. Yeah. JPA can run it with the
+
+00:38:13.720 --> 00:38:16.360
+8,000 tool, which is available in this world. It's one of
+
+00:38:16.360 --> 00:38:18.680
+the massive, like a connector through JPA. You can connect
+
+00:38:18.680 --> 00:38:21.560
+with anything, right? Uh, even we are using JPA since a
+
+00:38:21.560 --> 00:38:23.780
+very, very, I think since last six, seven years, we are
+
+00:38:23.780 --> 00:38:26.800
+using JPA for a different, different purposes. So yeah,
+
+00:38:26.840 --> 00:38:29.900
+connected, uh, automated, and then leave it system is going
+
+00:38:29.900 --> 00:38:32.420
+to work for you. This is what, uh, this, all this platforms
+
+00:38:32.420 --> 00:38:36.080
+comes into a picture and likewise, there are another tons of
+
+00:38:36.080 --> 00:38:38.680
+platform, which is coming. And again, in future, you can
+
+00:38:38.680 --> 00:38:41.780
+expect that, that there will be multiple companies which
+
+00:38:41.780 --> 00:38:46.500
+will be launched, right? Eventually going to do, uh, exact
+
+00:38:46.500 --> 00:38:50.200
+same thing in a different, different way. And like, for
+
+00:38:50.200 --> 00:38:54.000
+example, in it and right. So they have almost like a made
+
+00:38:54.000 --> 00:38:57.920
+your, like a entire environment, like a drag and drop, no
+
+00:38:57.920 --> 00:39:00.160
+code kind of a solution. You can write a basic code over
+
+00:39:00.160 --> 00:39:02.440
+here. That's completely fine. And it provides you that
+
+00:39:02.440 --> 00:39:04.980
+feature as well. But yeah, you just have to do a drag and
+
+00:39:04.980 --> 00:39:07.200
+drop, connect all these things. Give a password. Give
+
+00:39:07.200 --> 00:39:11.340
+authentication, give the APIs and then leave it, right? Then
+
+00:39:11.340 --> 00:39:14.180
+leave it. And it is going to automate the entire task for
+
+00:39:14.180 --> 00:39:17.840
+you, uh, crew AI. So you have to go ahead and then you have
+
+00:39:17.840 --> 00:39:20.480
+to write like a couple of line of a code over here. Then
+
+00:39:20.480 --> 00:39:22.640
+again, if I'll talk about the language system, so you have
+
+00:39:22.640 --> 00:39:26.760
+to go and write like a couple of line of code over there. So
+
+00:39:26.760 --> 00:39:28.760
+everyone is trying to build something. They're trying to
+
+00:39:28.760 --> 00:39:31.940
+solve the same problem in their own way. That's it. They
+
+00:39:31.940 --> 00:39:36.790
+have their own USP. You really suggested this Coursera,
+
+00:39:36.790 --> 00:39:40.370
+Audacity or edX. For our comprehensive courses on system
+
+00:39:40.370 --> 00:39:42.930
+design. Yeah. So we have not configured URI as of now
+
+00:39:42.930 --> 00:39:45.910
+aligned with the Euron. Uh, once we are going to configure
+
+00:39:45.910 --> 00:39:49.750
+it, URI will not even suggest you one single platform out of
+
+00:39:49.750 --> 00:39:53.710
+Euron in terms of courses, at least when we are already
+
+00:39:53.710 --> 00:39:57.570
+aware about it. Because we are using a pre-trained model
+
+00:39:57.570 --> 00:40:02.230
+over there, right? So sorry if AI is a future. So is it
+
+00:40:02.230 --> 00:40:05.330
+possible MLDL work job is completely finished or lost? Not
+
+00:40:05.330 --> 00:40:06.990
+at all. Not at all. It will be there.
+
+00:40:09.980 --> 00:40:14.020
+Can all ML use cases be resolved with the AI? See, at the
+
+00:40:14.020 --> 00:40:18.500
+end of the day, believe me, job of core developer, right? Is
+
+00:40:18.500 --> 00:40:20.960
+not going anywhere. Believe me, it doesn't matter what kind
+
+00:40:20.960 --> 00:40:25.200
+of AI we are going to create. And, uh, maybe people are
+
+00:40:25.200 --> 00:40:27.260
+going to give you a different, different kind of a analogy,
+
+00:40:27.460 --> 00:40:31.160
+right, based on their own experiences and expertise, but the
+
+00:40:31.160 --> 00:40:34.360
+kind of a development that, uh, I'm doing since last 11
+
+00:40:34.360 --> 00:40:37.200
+year, along with my team, right, sometime big, sometime with
+
+00:40:37.200 --> 00:40:42.380
+a small team, uh, all sort of a team, I would say. Right. So
+
+00:40:42.380 --> 00:40:46.300
+the kind of future, which I'm able to see is that, that it's
+
+00:40:46.300 --> 00:40:50.580
+tough to replace a core developer, obviously with the help
+
+00:40:50.580 --> 00:40:54.980
+of AI. So the place where a hundred developers are required
+
+00:40:54.980 --> 00:40:58.640
+now, maybe only five people are required. Right. And that's
+
+00:40:58.640 --> 00:41:01.100
+again, true, right? A hundred where, wherever we have, like
+
+00:41:01.100 --> 00:41:04.260
+we need a hundred people. Now we just need a five people.
+
+00:41:04.340 --> 00:41:07.360
+And with the five people, we are even more productive,
+
+00:41:07.600 --> 00:41:09.900
+right? Even more productive. Right. Right. Even more
+
+00:41:09.900 --> 00:41:10.620
+productive. Even more productive. A hundred number of
+
+00:41:10.620 --> 00:41:18.380
+peoples. But, but the entire world is going for a revamp.
+
+00:41:18.520 --> 00:41:24.480
+That is a very big part, right? Whatever code, whatever
+
+00:41:24.480 --> 00:41:26.960
+system, which has been developed in last 30 years,
+
+00:41:27.060 --> 00:41:29.560
+especially after 1990s, because most of the things has been
+
+00:41:29.560 --> 00:41:33.540
+developed after 1990s itself. Right. So everything will go
+
+00:41:33.540 --> 00:41:37.620
+for a revamp. That is a very first part. Everywhere people
+
+00:41:37.620 --> 00:41:41.760
+are going to integrate AI. That's a second part, a new
+
+00:41:41.760 --> 00:41:44.540
+business dimension, a new business unit. People are trying
+
+00:41:44.540 --> 00:41:49.220
+to open up just with the AI. That is a third dimension. Uh,
+
+00:41:49.360 --> 00:41:53.560
+now we are even thinking about settling down on some
+
+00:41:53.560 --> 00:41:57.160
+different planet. Now without software, obviously you are
+
+00:41:57.160 --> 00:41:59.680
+going to build all those machines and everything, but at the
+
+00:41:59.680 --> 00:42:01.900
+end of the day, everything you will be able to control with
+
+00:42:01.900 --> 00:42:05.140
+the help of software itself, right? Not manually. We are not
+
+00:42:05.140 --> 00:42:08.980
+in that era now. So obviously you have to create a software.
+
+00:42:08.980 --> 00:42:13.960
+AI will not be able to do everything. So AI is going to work
+
+00:42:13.960 --> 00:42:18.200
+with you as a super, super knowledgeable helper, or you can
+
+00:42:18.200 --> 00:42:22.040
+say a worker, which can do a lot of things automatically,
+
+00:42:22.440 --> 00:42:27.020
+but even it needs an input, right? It needs your expertise.
+
+00:42:27.300 --> 00:42:30.120
+So that's the reason you must have seen that people are not
+
+00:42:30.120 --> 00:42:33.220
+hiring a fresher, but yes, there is a lot of hiring, which
+
+00:42:33.220 --> 00:42:36.600
+is going on for a mid-label and even for a senior label,
+
+00:42:36.740 --> 00:42:38.980
+right? Because obviously we need to be able to do it. We
+
+00:42:38.980 --> 00:42:42.880
+need those kinds of expertise. So job is not going anywhere,
+
+00:42:43.040 --> 00:42:45.980
+but yeah, so in future or in very soon, you will be able to
+
+00:42:45.980 --> 00:42:49.880
+see that, that for hardcore developer, uh, there will be
+
+00:42:49.880 --> 00:42:53.240
+like a five X or 10 X opportunity, which will be available
+
+00:42:53.240 --> 00:42:58.440
+in a same market basically. Right. And even now I can see
+
+00:42:58.440 --> 00:43:01.920
+that, so it's not going anywhere, but yeah, if you just know
+
+00:43:01.920 --> 00:43:05.560
+the basic, if you are a lazy person, or maybe if you have
+
+00:43:05.560 --> 00:43:08.580
+not worked in a amazing project, if you are not able to.
+
+00:43:08.580 --> 00:43:12.960
+Like, uh, implement something on your own, uh, if your IQ
+
+00:43:12.960 --> 00:43:17.700
+level is below average to be blunt again, so then it will be
+
+00:43:17.700 --> 00:43:20.460
+difficult, obviously, then you can't expect that people will
+
+00:43:20.460 --> 00:43:24.440
+come because in 1990s, uh, uh, people were able to get a
+
+00:43:24.440 --> 00:43:28.500
+job, even if I know, uh, if I know how to run, uh, sell it
+
+00:43:28.500 --> 00:43:32.340
+to start from EMP, right? That even if, if I have that kind
+
+00:43:32.340 --> 00:43:35.580
+of a knowledge, I will, I was able to get a job. Even I was
+
+00:43:35.580 --> 00:43:39.160
+like, uh, I would have like a, whatever job. And maybe I
+
+00:43:39.160 --> 00:43:43.220
+would have, uh, traveled to a onsite and, uh, then I have
+
+00:43:43.220 --> 00:43:47.340
+done everything, but in down the line in the next last 30 or
+
+00:43:47.340 --> 00:43:50.280
+35 year, things have changed a lot, right? Expectation has
+
+00:43:50.280 --> 00:43:53.440
+changed a lot of what has the entire world has changed a
+
+00:43:53.440 --> 00:43:57.580
+lot. And especially if I'll talk about the IT, right? So you
+
+00:43:57.580 --> 00:44:01.180
+have to prepare yourself accordingly. Otherwise, uh, you
+
+00:44:01.180 --> 00:44:05.020
+will like, uh, you will be living in a fear that some days
+
+00:44:05.020 --> 00:44:08.120
+AI is going to take your job, but that is not the actual
+
+00:44:08.120 --> 00:44:11.660
+fear. Right. The actual fear is people are not willing to
+
+00:44:11.660 --> 00:44:14.440
+adopt. People are not willing to learn. And because of that,
+
+00:44:14.460 --> 00:44:17.920
+they're losing a job, not because of AI, right? So just
+
+00:44:17.920 --> 00:44:20.400
+understand the differences and sooner, you will be able to
+
+00:44:20.400 --> 00:44:27.460
+understand the differences. You will be able to learn in a
+
+00:44:27.460 --> 00:44:29.980
+better way, upskill yourself in a better way, and then move
+
+00:44:29.980 --> 00:44:31.020
+forward in a better way.
+
+00:44:35.950 --> 00:44:39.670
+Thank you sir. Now I feel what ever I learned till today in
+
+00:44:39.670 --> 00:44:41.830
+data science, everything has helped me in a future also.
+
+00:44:41.890 --> 00:44:45.950
+Yeah. Yeah. So I'm trying to use AI in healthcare and life
+
+00:44:45.950 --> 00:44:48.390
+sciences. That's great. That's great. That's amazing. So I
+
+00:44:48.390 --> 00:44:50.910
+always try to build something and believe me, no one will
+
+00:44:50.910 --> 00:44:54.570
+take your job. Otherwise, obviously people will take your
+
+00:44:54.570 --> 00:44:58.570
+job, right? Or especially like AI. So it will take your job.
+
+00:44:58.950 --> 00:45:01.950
+So there are multiple agentic framework guys, which is
+
+00:45:01.950 --> 00:45:04.910
+available. And, uh, yeah, so a couple of framework I'm going
+
+00:45:04.910 --> 00:45:08.010
+to discuss in a class itself, especially in this class. So
+
+00:45:08.010 --> 00:45:10.510
+crew AI is something which I'm going to discuss. Lang series
+
+00:45:10.510 --> 00:45:13.230
+is something which I'm going to discuss. Inside this class,
+
+00:45:13.370 --> 00:45:16.830
+after that, I, we have already published a couple of videos
+
+00:45:16.830 --> 00:45:19.930
+on in it in with lot of like an integration. I believe our
+
+00:45:19.930 --> 00:45:22.870
+Hindi and English videos are available on our YouTube
+
+00:45:22.870 --> 00:45:26.610
+channel as well as inside your dashboard and that to project
+
+00:45:26.610 --> 00:45:31.350
+wise. So maybe you can just watch one or two videos, project
+
+00:45:31.350 --> 00:45:33.970
+wise. And after that, believe me, you will be able to do
+
+00:45:33.970 --> 00:45:37.010
+everything right. You just need a broad vision and broad
+
+00:45:37.010 --> 00:45:41.580
+ideation. That's it. You have to predictive for your
+
+00:45:41.580 --> 00:45:44.840
+companies somehow with it. The skill development, you have
+
+00:45:44.840 --> 00:45:49.440
+to productive for your company. Obviously. Yes. Uh, why
+
+00:45:49.440 --> 00:45:53.060
+anyone can learn Jenny? I, without MLDL, we have contributed
+
+00:45:53.060 --> 00:45:56.840
+various year or hours to it. So it's not just about the
+
+00:45:56.840 --> 00:45:59.960
+Jenny. I write. So maybe you are going to walk in Jenny. I,
+
+00:45:59.980 --> 00:46:02.960
+someone else is going to walk in a computer vision. Someone
+
+00:46:02.960 --> 00:46:06.440
+else is going to maybe automate their old ML system with the
+
+00:46:06.440 --> 00:46:09.840
+help of Jenny. I saw, obviously they need a ML, but it's not
+
+00:46:09.840 --> 00:46:12.320
+like you will always get something in a Jenny. I write.
+
+00:46:13.640 --> 00:46:15.480
+There are multiple. There are multiple fields of AI, which
+
+00:46:15.480 --> 00:46:16.860
+exist when
+
+00:46:21.430 --> 00:46:23.910
+an agent is passed with the private data, then LLMs can
+
+00:46:23.910 --> 00:46:27.890
+generate using this private data only for that session. No,
+
+00:46:28.030 --> 00:46:30.250
+not from just for the private data. So it will be combining
+
+00:46:30.250 --> 00:46:32.650
+private plus public. Both. This is what is called as RIG.
+
+00:46:33.670 --> 00:46:38.210
+Then is this not like automation elements are not utilizing
+
+00:46:38.210 --> 00:46:42.430
+the properly across a session. No, it's, it's, I think, I
+
+00:46:42.430 --> 00:46:45.910
+don't know what you're trying to say, but it's partially
+
+00:46:45.910 --> 00:46:53.260
+incorrect. Okay. Now. So let's try to understand a project
+
+00:46:53.260 --> 00:46:56.380
+by the way. So let's try to understand that what we can try
+
+00:46:56.380 --> 00:47:00.960
+to build with this one. So here in this project, which I'm
+
+00:47:00.960 --> 00:47:03.760
+going to show you, so it is going to build a knowledge
+
+00:47:03.760 --> 00:47:07.260
+graph. This is where this project comes into a picture. Now,
+
+00:47:07.340 --> 00:47:10.220
+as you can see, this is going to build a knowledge graph for
+
+00:47:10.220 --> 00:47:14.280
+me. I'm going to give a very simple prompt saying that,
+
+00:47:14.280 --> 00:47:19.260
+that, uh, try to give me a, like a roadmap for a big data or
+
+00:47:19.260 --> 00:47:22.840
+maybe for our data science. Maybe. Maybe for a front end
+
+00:47:22.840 --> 00:47:26.920
+backend or anything, right? Maybe for a UPSC, uh, I'm
+
+00:47:26.920 --> 00:47:29.000
+preparing for a UPSC. So basically give me a roadmap for
+
+00:47:29.000 --> 00:47:32.620
+UPSC or even for a cat jet Matt kind of exam, or maybe for a
+
+00:47:32.620 --> 00:47:36.000
+CA exam, whatever. So I can, I can try to give a prompt and
+
+00:47:36.000 --> 00:47:38.620
+then I'm expecting that it should be able to give me a
+
+00:47:38.620 --> 00:47:41.600
+graph. So to do that, we are going to build this entire
+
+00:47:41.600 --> 00:47:44.780
+project. So let's try to build this entire project. I'm
+
+00:47:44.780 --> 00:47:47.120
+going to open up a new VS code and please try to open up
+
+00:47:47.120 --> 00:47:50.740
+your VS code as well. So that in a step by step manner, we
+
+00:47:50.740 --> 00:47:53.680
+are going. to build this one it's not very tough you all
+
+00:47:53.680 --> 00:47:57.580
+will be able to build it very soon in maybe next like a 20
+
+00:47:57.580 --> 00:48:05.060
+30 minute you will be able to build it so here code multi
+
+00:48:05.060 --> 00:48:05.720
+agent
+
+00:48:10.540 --> 00:48:16.140
+graph okay so just try to build this project guys now inside
+
+00:48:16.140 --> 00:48:21.700
+this entire like a project so what we can do is we can try
+
+00:48:21.700 --> 00:48:25.240
+to create a folder structure first so to create a folder
+
+00:48:25.240 --> 00:48:29.020
+structure so I'm going to like create one python file called
+
+00:48:29.020 --> 00:48:34.140
+as str uct ure structure dot py file so this is the py file
+
+00:48:34.140 --> 00:48:36.700
+I'm going to create and now here so whatever folder
+
+00:48:36.700 --> 00:48:39.800
+structure that I am looking for so basically I am looking
+
+00:48:39.800 --> 00:48:42.660
+for this folder structure so there should be a knowledge
+
+00:48:42.660 --> 00:48:46.760
+graph builder inside that agent tool workflow utility data
+
+00:48:46.760 --> 00:48:50.380
+data output .. and then file wise so these are the file i'm
+
+00:48:50.380 --> 00:48:55.040
+trying to i'll try to create okay so let's go ahead and
+
+00:48:55.040 --> 00:48:57.880
+execute this one automatically it is going to create a
+
+00:48:57.880 --> 00:49:02.020
+folder structure for me p-y-t-h-o-n python structure dot py
+
+00:49:02.020 --> 00:49:05.000
+file and here as you can see it has created this folder
+
+00:49:05.000 --> 00:49:09.100
+structure for me simple right i can add or subtract multiple
+
+00:49:09.100 --> 00:49:13.740
+folder as per my need so just take this piece of the code
+
+00:49:13.740 --> 00:49:17.160
+and create your own structure ping me yes or no if you are
+
+00:49:17.160 --> 00:49:20.200
+able to create it so just create a folder structure guys
+
+00:49:20.200 --> 00:49:21.960
+first yes
+
+00:49:29.440 --> 00:49:32.640
+everyone so just try to create a folder structure yeah
+
+00:49:53.480 --> 00:49:57.300
+now i'll try to talk and please ping me yes or no if you are
+
+00:49:57.300 --> 00:50:00.400
+able to create the folder structure inside your like any any
+
+00:50:00.400 --> 00:50:06.580
+directory that's fine so scribble inc now so before talking
+
+00:50:06.580 --> 00:50:11.460
+about this project code or let me talk about basically like
+
+00:50:11.460 --> 00:50:11.860
+a little bit of a little bit of a little bit of a little bit
+
+00:50:11.860 --> 00:50:13.260
+of a little bit of a little bit of architecture around this
+
+00:50:13.260 --> 00:50:16.340
+entire project that what we are trying to build a flow at
+
+00:50:16.340 --> 00:50:20.280
+least right so we are trying to build basically a user
+
+00:50:20.280 --> 00:50:23.920
+interface so here we will be having a user interface so
+
+00:50:23.920 --> 00:50:28.520
+where user will be able to input what user is looking for
+
+00:50:28.520 --> 00:50:31.880
+yeah so user will try to basically input that what user is
+
+00:50:31.880 --> 00:50:36.560
+looking for uh okay so this this this
+
+00:50:39.730 --> 00:50:45.650
+so here we are trying to create a user interface user
+
+00:50:47.180 --> 00:50:50.440
+interface we are going to create now this i will be creating
+
+00:50:50.440 --> 00:50:56.530
+by using a python library called a streamlint streamlint now
+
+00:50:56.530 --> 00:51:00.450
+with the help of this interface user will try to give a
+
+00:51:00.450 --> 00:51:04.870
+input what kind of a input input means user will try to say
+
+00:51:04.870 --> 00:51:08.310
+that okay so maybe i'm look preparing for the upsc try to
+
+00:51:08.310 --> 00:51:13.190
+give me a roadmap for that i'm looking for maybe like a data
+
+00:51:13.190 --> 00:51:15.670
+science so try to give me a roadmap for that or maybe i'm
+
+00:51:15.670 --> 00:51:18.230
+reporting for this that whatever right whatever graph you
+
+00:51:18.230 --> 00:51:20.350
+are looking for so user is going to give an input with the
+
+00:51:20.350 --> 00:51:25.270
+help of this ui now so whatever input this ui will be able
+
+00:51:25.270 --> 00:51:31.190
+to get so that input will be flown inside my lang graph lang
+
+00:51:31.190 --> 00:51:42.350
+graph so basically lang graph work flow so this i am going
+
+00:51:42.350 --> 00:51:46.330
+to pass inside basically my lang graph workflow and just now
+
+00:51:46.330 --> 00:51:50.330
+i can just write that what purposes you can use a lang graph
+
+00:51:50.330 --> 00:51:53.950
+so obviously to create a multiple agents i can try to create
+
+00:51:53.950 --> 00:51:58.470
+a land graph basically now we also understood that what is
+
+00:51:58.470 --> 00:52:01.490
+the meaning of a agent so here it is going to give inside
+
+00:52:01.490 --> 00:52:04.370
+the land graph workflow now inside the lang Method chat and
+
+00:52:04.370 --> 00:52:04.870
+yes if you are subscribed to my channelně obviously i am
+
+00:52:04.870 --> 00:52:07.710
+expecting a agent now what kind of an agent i am expecting
+
+00:52:07.710 --> 00:52:13.270
+so what is my task by the way my task is to basically give a
+
+00:52:13.270 --> 00:52:16.890
+complete roadmap what is my task my task is to give a
+
+00:52:16.890 --> 00:52:19.390
+complete complete what is that my end goal my end goal is
+
+00:52:19.390 --> 00:52:22.870
+that that whatever user is going to give as an input right
+
+00:52:22.870 --> 00:52:27.370
+so based on that input try to perform a final work now what
+
+00:52:27.370 --> 00:52:30.370
+is the final work of this entire project give me the roadmap
+
+00:52:30.370 --> 00:52:35.110
+right generate the roadmap basically so here inside this
+
+00:52:35.110 --> 00:52:38.790
+like a langrave workflow i will be creating three agent
+
+00:52:38.790 --> 00:52:42.410
+agent number one agent number two agent number three i can
+
+00:52:42.410 --> 00:52:46.450
+create 30 as well there is no foundation at all but just to
+
+00:52:46.450 --> 00:52:49.450
+start with i'll try to create a three agent so and what in
+
+00:52:49.450 --> 00:52:52.090
+all what kind of a task i'm going to assign to all of this
+
+00:52:52.090 --> 00:52:55.610
+agent so the very first agent which i'm going to create will
+
+00:52:55.610 --> 00:53:02.310
+be doing a research research agent research agent so let's
+
+00:53:02.310 --> 00:53:05.070
+suppose if i'm saying that that try to prepare a generative
+
+00:53:05.070 --> 00:53:09.570
+ai roadmap for me right try to prepare a generative ai
+
+00:53:09.570 --> 00:53:12.650
+roadmap for me so what this research is the agent will do is
+
+00:53:12.650 --> 00:53:16.430
+it will go to google right it will go to google it will try
+
+00:53:16.430 --> 00:53:20.930
+to search from all the existing right whatever is available
+
+00:53:20.930 --> 00:53:24.750
+over the internet so it will try to search all across the
+
+00:53:24.750 --> 00:53:27.870
+internet and then it will try to bring some sort of a
+
+00:53:27.870 --> 00:53:30.930
+information information with respect to this query that you
+
+00:53:30.930 --> 00:53:34.470
+have given yeah so this is what this research agent is going
+
+00:53:34.470 --> 00:53:40.730
+to do so here google search now to do a google search i can
+
+00:53:40.730 --> 00:53:44.250
+use a google api so here or maybe i can use other api as
+
+00:53:44.250 --> 00:53:48.210
+well so surfer api i will be using so that i will be able to
+
+00:53:48.210 --> 00:53:51.470
+do a google search right sometimes surfer api will be down
+
+00:53:51.470 --> 00:53:54.830
+so in some of my mcb project i have even shown you that how
+
+00:53:54.830 --> 00:53:58.130
+from the google cloud account you can use basically a google
+
+00:53:58.130 --> 00:54:01.610
+api i have also shown that part in some of my project in mcb
+
+00:54:01.610 --> 00:54:05.590
+project so surfer api i'm going to use as of now so i'll
+
+00:54:05.590 --> 00:54:09.070
+show you that part then the second agent which i'm going to
+
+00:54:09.070 --> 00:54:12.530
+create right second agent i'm going to create so basically
+
+00:54:12.530 --> 00:54:17.170
+it's going to be the synthesizer and the agent so what this
+
+00:54:17.170 --> 00:54:19.390
+synthesizer agent is going to do or you can say
+
+00:54:22.590 --> 00:54:28.430
+summarizer agent right so basically here i'm going to use
+
+00:54:28.430 --> 00:54:33.050
+uri uri llm right so basically from a uran itself uri llm
+
+00:54:33.050 --> 00:54:36.710
+i'm going to do which will do what so whatever data that
+
+00:54:36.710 --> 00:54:40.350
+this agent is trying to bring right so this agent will just
+
+00:54:40.350 --> 00:54:43.970
+try to summarize those things summarize those things the way
+
+00:54:43.970 --> 00:54:44.970
+we are looking for as a way to summarize those things so i'm
+
+00:54:44.970 --> 00:54:47.910
+going to use a final output right a final output basically
+
+00:54:47.910 --> 00:54:52.190
+now so the third agent which i will be using is a mapper
+
+00:54:52.190 --> 00:54:57.840
+node mapper you can say agent now what this mapper agent
+
+00:54:57.840 --> 00:55:00.880
+will do so let's suppose i'm able to summarize those data
+
+00:55:00.880 --> 00:55:03.580
+with the help of my synthesizer or summarizer agent which
+
+00:55:03.580 --> 00:55:07.220
+where uri llm i'm using right so i'm using this help of this
+
+00:55:07.220 --> 00:55:11.740
+llms so here it will try to create a map or you can say it
+
+00:55:11.740 --> 00:55:15.420
+can create a graph data graph data it is going to create by
+
+00:55:15.420 --> 00:55:18.360
+we are looking for a graph data because that's the need of
+
+00:55:18.360 --> 00:55:22.440
+my user this is what i'm looking for at my like a final
+
+00:55:22.440 --> 00:55:24.780
+outcome this is what i'm looking for that's the reason so
+
+00:55:24.780 --> 00:55:28.580
+basically i will be looking for this graph data so graph
+
+00:55:28.580 --> 00:55:32.260
+means what graph結 this kind of a structure right this kind
+
+00:55:32.260 --> 00:55:34.840
+of a structure so obviously there will be a node there will
+
+00:55:34.840 --> 00:55:37.660
+be a edge so obviously we have to define each and everything
+
+00:55:37.660 --> 00:55:41.040
+so this agent is going to help me out to prepare a data
+
+00:55:41.040 --> 00:55:45.200
+which is required to visualize those things and this agent
+
+00:55:45.200 --> 00:55:48.800
+is going to set up. send this map data prepared data to what
+
+00:55:48.800 --> 00:55:56.460
+to basically a graph which graph which library write this
+
+00:55:56.460 --> 00:55:59.100
+kind of a data to the graph with libraries so that it will
+
+00:55:59.100 --> 00:56:03.080
+be able to generate a image for me into SVG JPG or whatever
+
+00:56:03.080 --> 00:56:06.880
+format that I want right and then maybe I can try to like a
+
+00:56:06.880 --> 00:56:10.180
+return back saying to my user interface streamlit that okay
+
+00:56:10.180 --> 00:56:17.460
+work done are you able to understand what we are trying to
+
+00:56:17.460 --> 00:56:23.380
+create are you able to understand the indirect flow that
+
+00:56:23.380 --> 00:56:27.700
+what I will be doing like in today's class and what we are
+
+00:56:27.700 --> 00:56:29.320
+going to use folder
+
+00:56:32.200 --> 00:56:35.360
+structure not created why not created just execute the code
+
+00:56:35.360 --> 00:56:36.520
+it will be created automatically
+
+00:56:44.020 --> 00:56:47.720
+yeah fine guys so this is something that we are going to do
+
+00:56:47.720 --> 00:56:52.040
+a step-by-step manner right so here from outside we are
+
+00:56:52.040 --> 00:56:56.320
+going to use two APIs one is a URI API and one is a Serper
+
+00:56:56.320 --> 00:57:00.520
+API both is easy to create URI is like you know how easy URI
+
+00:57:00.520 --> 00:57:03.200
+is to create and then again if I talk about the Serper so
+
+00:57:03.200 --> 00:57:06.140
+again I'll show you how to like create a Serper API it will
+
+00:57:06.140 --> 00:57:08.060
+just take 30 seconds of time not more than 30 seconds of
+
+00:57:08.060 --> 00:57:13.380
+time to create a Serper API and then three agents we are
+
+00:57:13.380 --> 00:57:16.360
+going to create for three different different tasks but all
+
+00:57:16.360 --> 00:57:19.020
+of these three agents are connected to each other one after
+
+00:57:19.020 --> 00:57:22.000
+another unless and until the previous agent is not going to
+
+00:57:22.000 --> 00:57:24.560
+give a proper response next one will not be able to work.
+
+00:57:24.840 --> 00:57:27.940
+Right next one will not be able to work do we need to
+
+00:57:27.940 --> 00:57:34.920
+remember these agent sort of no I mean like try to apply
+
+00:57:34.920 --> 00:57:41.640
+your logical thinking sometime this have I said that this is
+
+00:57:41.640 --> 00:57:45.700
+the name of the some global agent or something I've just
+
+00:57:45.700 --> 00:57:48.060
+given this name by myself depends
+
+00:57:51.740 --> 00:57:55.320
+upon my task so when you are trying to learn something sort
+
+00:57:55.320 --> 00:57:59.220
+of right so please try to open up your brain. And focus is
+
+00:57:59.220 --> 00:58:02.320
+very much important attention is very much important I
+
+00:58:02.320 --> 00:58:04.000
+believe we have gone through a research paper called
+
+00:58:04.000 --> 00:58:06.900
+attention is all you need right so this is what you need in
+
+00:58:06.900 --> 00:58:09.900
+your life as well in every aspect of the life otherwise you
+
+00:58:09.900 --> 00:58:14.560
+will start losing it is there any long and short term memory
+
+00:58:14.560 --> 00:58:18.140
+as well memory component I will try to add when I'll try to
+
+00:58:18.140 --> 00:58:21.080
+talk about a lang chain and lang graph separately so there
+
+00:58:21.080 --> 00:58:23.600
+is a memory component which exists I'll be talking about
+
+00:58:23.600 --> 00:58:27.300
+that but I think today is not that time yeah in one single
+
+00:58:27.300 --> 00:58:31.480
+day I'll not be discussing everything. Otherwise you will
+
+00:58:31.480 --> 00:58:34.240
+not be able to understand and then you will say that select
+
+00:58:34.240 --> 00:58:37.960
+go and remember it I'm like no you should not remember a
+
+00:58:37.960 --> 00:58:42.380
+single line I don't remember even a single line things are
+
+00:58:42.380 --> 00:58:45.740
+literally very very logical very very connected right if you
+
+00:58:45.740 --> 00:58:49.680
+are able to connect it believe me you don't have to build
+
+00:58:49.680 --> 00:58:54.900
+the memory yeah okay fine so now this is something that we
+
+00:58:54.900 --> 00:58:57.920
+will try to create so one but also back and forth back and
+
+00:58:57.920 --> 00:59:00.480
+forth I'll come over here. I'll show you this step I'll do
+
+00:59:00.480 --> 00:59:02.780
+it then I'll come back so back and forth back and forth
+
+00:59:02.780 --> 00:59:06.500
+we'll keep on doing this kind of things let's go to the this
+
+00:59:06.500 --> 00:59:14.520
+one and let's try to like create it so here right the
+
+00:59:16.920 --> 00:59:20.820
+folder structure is created now forget about the folder
+
+00:59:20.820 --> 00:59:24.780
+structure close it right and then get into the folder
+
+00:59:24.780 --> 00:59:29.520
+structure so cd knowledge graph kno wldg knowledge graph so
+
+00:59:29.520 --> 00:59:31.700
+we are into this particular folder structure. All of these
+
+00:59:31.700 --> 00:59:34.540
+folder structures are already available there is a file
+
+00:59:34.540 --> 00:59:37.920
+called as requirement.txt so obviously we are going to keep
+
+00:59:37.920 --> 00:59:41.700
+all the requirements over there generally I advise everyone
+
+00:59:41.700 --> 00:59:45.060
+to create a fresh environment so whenever you are trying to
+
+00:59:45.060 --> 00:59:47.940
+like do any new project so always try to go ahead and create
+
+00:59:47.940 --> 00:59:51.700
+a fresh environment so this is what we are going to do even
+
+00:59:51.700 --> 00:59:53.680
+for this project so we are going to create a fresh
+
+00:59:53.680 --> 00:59:55.980
+environment so that there will not be any kind of a
+
+00:59:55.980 --> 00:59:59.760
+dependencies going forward right because because of this
+
+00:59:59.760 --> 01:00:03.380
+version issue. You might get into some issues and you will
+
+01:00:03.380 --> 01:00:07.320
+say that things are not working for me right so most of the
+
+01:00:07.320 --> 01:00:10.680
+time it's just a simple problem what's an issue so here I'll
+
+01:00:10.680 --> 01:00:16.120
+try to create a new environment for me so conda create-n and
+
+01:00:16.120 --> 01:00:22.900
+I'll give an environment name so multiagent lang I think
+
+01:00:22.900 --> 01:00:25.500
+it's a very big name that I've given so multiagent I'll just
+
+01:00:25.500 --> 01:00:32.080
+keep it till this point and then python is equals to 3.5. 3
+
+01:00:32.080 --> 01:00:37.780
+.10 install everything okay conda create what I have done
+
+01:00:37.780 --> 01:00:45.880
+conda c-o-n-d-a c-o-n yeah so conda create-n and this is the
+
+01:00:45.880 --> 01:00:48.080
+environment which I am trying to create so please try to
+
+01:00:48.080 --> 01:00:50.580
+create your environment guys python
+
+01:00:53.170 --> 01:00:55.270
+version which is the best I mean like nothing is best
+
+01:00:55.270 --> 01:00:57.790
+nothing is my favorite it depends what project I'm creating
+
+01:00:57.790 --> 01:01:01.430
+generally in a fresh project I try to install like a 3.10.
+
+01:01:02.150 --> 01:01:05.530
+Now. So after that conda activate multiagent so just
+
+01:01:05.530 --> 01:01:09.250
+activate your multiagent by the way so conda create-n is
+
+01:01:09.250 --> 01:01:11.750
+done conda activate-n is done so this is the environment
+
+01:01:11.750 --> 01:01:15.330
+which is done for me now what I will do is so I'll try to
+
+01:01:15.330 --> 01:01:20.170
+prepare my requirement or txt file yeah requirement or txt
+
+01:01:20.170 --> 01:01:22.870
+file I'll try to keep everything inside whatever is required
+
+01:01:22.870 --> 01:01:25.890
+inside the requirement or txt file so these are the things
+
+01:01:25.890 --> 01:01:28.670
+guys which is required for this project that we are going to
+
+01:01:28.670 --> 01:01:34.270
+build so there is something called as streamlet. You need to
+
+01:01:34.270 --> 01:01:39.450
+install for a UI part you have to basically install a URI AI
+
+01:01:39.450 --> 01:01:43.150
+to access your own without even URI AI you can access it but
+
+01:01:43.150 --> 01:01:46.010
+yeah URI AI it will make your life easy graph viz for
+
+01:01:46.010 --> 01:01:50.410
+plotting the graph a request for hitting the API python.dev
+
+01:01:50.410 --> 01:01:54.290
+again to load the environment langchain so basically blank
+
+01:01:54.290 --> 01:01:57.410
+for langchain obviously pillow if we are going to use it I
+
+01:01:57.410 --> 01:02:00.550
+don't think so lang graph for lang graph framework so just
+
+01:02:00.550 --> 01:02:04.550
+try to do one thing. Let's do one thing pip install install
+
+01:02:04.550 --> 01:02:11.420
+hyphen r requirements why it is not working autocomplete
+
+01:02:21.700 --> 01:02:24.500
+requirements dot txt could
+
+01:02:27.540 --> 01:02:34.460
+not okay I have to change my like a directory pip install
+
+01:02:35.220 --> 01:02:41.740
+hyphen r requirements dot txt so now it will be able to
+
+01:02:41.740 --> 01:02:44.300
+install everything whatever I have mentioned inside my
+
+01:02:44.300 --> 01:02:47.580
+requirement dot txt. So please do it guys quickly everyone
+
+01:02:47.580 --> 01:02:48.640
+so
+
+01:02:50.790 --> 01:02:53.830
+now my environment is ready my installation is done so once
+
+01:02:53.830 --> 01:02:56.630
+it's done please bring me in a chat Abhishek has all this
+
+01:02:56.630 --> 01:03:00.630
+only said like a yeah Abhishek directory was the problem I
+
+01:03:00.630 --> 01:03:03.090
+have changed it so now it's working done
+
+01:03:10.700 --> 01:03:13.400
+everyone okay what about other people Abhishek has just
+
+01:03:13.400 --> 01:03:16.400
+pinged me like yes done okay Mrityunja saying done fine next
+
+01:03:16.400 --> 01:03:21.520
+guys we have so many people like we have 100 plus people I
+
+01:03:21.520 --> 01:03:23.900
+can see in my chat and like only one or two people are
+
+01:03:23.900 --> 01:03:29.440
+replying that's not good. Durge Sutkars fine Devkumar
+
+01:03:29.440 --> 01:03:34.960
+running sir okay great Mrityunja okay fine done Vedaraj fine
+
+01:03:34.960 --> 01:03:39.800
+Vijay done okay now people are like so you need a motivation
+
+01:03:39.800 --> 01:03:43.000
+by the way right unless I'm not going to ask you you will
+
+01:03:43.000 --> 01:03:46.040
+not respond okay not an issue I'll keep on asking you then
+
+01:03:46.040 --> 01:03:52.860
+fine so requirement dot txt is done and this installation is
+
+01:03:52.860 --> 01:03:56.800
+done so now my environment is ready for everything. Okay.
+
+01:03:56.820 --> 01:04:00.600
+Now just try to open up your agent folder right agent folder
+
+01:04:00.600 --> 01:04:03.120
+so how many agent we have to create technically we have to
+
+01:04:03.120 --> 01:04:07.020
+create three agent one for research one for summary and one
+
+01:04:07.020 --> 01:04:09.980
+for mapping basically right so these three are three agent
+
+01:04:09.980 --> 01:04:13.480
+we have to create by the way now so inside this three agent
+
+01:04:13.480 --> 01:04:16.360
+I'm going to like for research I'm going to use Serpa API
+
+01:04:16.920 --> 01:04:20.680
+for like a synthesizer or you can say summarizer you can
+
+01:04:20.680 --> 01:04:22.740
+change your name guys I don't have any issue I have just
+
+01:04:22.740 --> 01:04:26.020
+given my name you can change your name as per your need.
+
+01:04:26.020 --> 01:04:30.000
+Whatever suits you just keep it so synthesizer which is
+
+01:04:30.000 --> 01:04:33.020
+going to create the summary so I'll try to keep a code here
+
+01:04:33.020 --> 01:04:36.020
+researcher I'll try to keep code here and for mapper I will
+
+01:04:36.020 --> 01:04:39.800
+keep a code here like I told you in a beginning itself while
+
+01:04:39.800 --> 01:04:43.560
+giving a definition that agents are nothing but just a piece
+
+01:04:43.560 --> 01:04:47.860
+of code that's it nothing more than that right just a piece
+
+01:04:47.860 --> 01:04:52.200
+of code very simple so and generally I avoid like a taking
+
+01:04:52.200 --> 01:04:57.160
+name of technical two technical words. Okay. I'm a teacher
+
+01:04:57.160 --> 01:05:02.380
+right so not like a someone who is giving a speech over a
+
+01:05:02.380 --> 01:05:07.460
+like a some stage so my students should be able to
+
+01:05:07.460 --> 01:05:09.780
+understand it at the end of the day so that's the reason I
+
+01:05:09.780 --> 01:05:14.020
+avoid taking those names most of the time these are the
+
+01:05:14.020 --> 01:05:18.660
+three agent guys now so I need a URI API and I need a Serpa
+
+01:05:18.660 --> 01:05:22.800
+API these two APIs is required what I will do is I'll just
+
+01:05:22.800 --> 01:05:26.860
+go to Google and first of all I'll go to your own. I'll try
+
+01:05:26.860 --> 01:05:35.120
+to take my URI APIs so authentication copy and inside
+
+01:05:37.200 --> 01:05:43.440
+this okay so there is one file you have to create I forgot
+
+01:05:43.440 --> 01:05:47.700
+to mention inside my structure or PI file called as dot ENV
+
+01:05:47.700 --> 01:05:53.760
+dot ENV file just create dot ENV file guys so over here we
+
+01:05:53.760 --> 01:05:56.660
+are going to keep our URI API key. And we are going to keep
+
+01:05:56.660 --> 01:06:03.800
+our Serpa API. So URI API key and Serpa API key. We are
+
+01:06:03.800 --> 01:06:07.620
+going to keep so these are the two keys you have to update
+
+01:06:07.620 --> 01:06:13.200
+guys you have to update so you for URI API key I'll just go
+
+01:06:13.200 --> 01:06:18.680
+to like your own copy the API token right and then keep it
+
+01:06:18.680 --> 01:06:22.860
+here as a string done now for Serpa API why we are using
+
+01:06:22.860 --> 01:06:25.180
+Serpa Serpa is going to help you out in terms of a Google
+
+01:06:25.180 --> 01:06:27.420
+search you can directly use a Google API from Google console
+
+01:06:27.420 --> 01:06:31.600
+as well or there are other vendor we who are going to give
+
+01:06:31.600 --> 01:06:34.060
+you like APIs you can try to use that as well I don't have
+
+01:06:34.060 --> 01:06:37.640
+any issue just use something which can do a Google search so
+
+01:06:37.640 --> 01:06:46.200
+for that CRP or Serpa API I can call now so just try to do a
+
+01:06:46.200 --> 01:06:48.120
+sign in first of all you have to go ahead with the
+
+01:06:48.120 --> 01:06:51.140
+registration otherwise rightly come over here do a Google
+
+01:06:51.140 --> 01:06:56.020
+sign in and then here so I'm able to get my private API key
+
+01:06:56.020 --> 01:07:00.020
+right here is my API key which is visible. So I'll be using
+
+01:07:00.020 --> 01:07:03.440
+and they are going to give you like a free credit basically
+
+01:07:03.440 --> 01:07:06.580
+right so you can try to use it and I think that's more than
+
+01:07:06.580 --> 01:07:10.100
+enough for at least experimentation but for building a real
+
+01:07:10.100 --> 01:07:13.520
+-time application it will not be enough basically so just
+
+01:07:13.520 --> 01:07:18.660
+try to keep your Serpa API key in this particular place so
+
+01:07:18.660 --> 01:07:22.820
+URI API is done Serpa API is done into dot ENV file so keep
+
+01:07:22.820 --> 01:07:27.940
+keep a secret in one single places okay. Now what we have to
+
+01:07:27.940 --> 01:07:33.680
+do. So now one by one one by one basically so we have to
+
+01:07:33.680 --> 01:07:38.120
+like a create this agents right we have to create basically
+
+01:07:38.120 --> 01:07:42.240
+this agents so that these agents will be able to do some
+
+01:07:42.240 --> 01:07:47.300
+sort of operation. So here agents folder I have created and
+
+01:07:47.300 --> 01:07:50.640
+just to keep the code like a little bit modular so I have
+
+01:07:50.640 --> 01:07:53.360
+just like a separated the entire code and this is how we do
+
+01:07:53.360 --> 01:07:58.720
+like coding even in real time. So here. Basically. Like we
+
+01:07:58.720 --> 01:08:02.620
+can go to Serpa API tool.py and I can try to write a
+
+01:08:02.620 --> 01:08:07.040
+function in this particular place now this function will try
+
+01:08:07.040 --> 01:08:09.520
+to basically like you know
+
+01:08:14.570 --> 01:08:18.070
+okay
+
+01:08:24.470 --> 01:08:28.350
+so basically these things these files is going to help me
+
+01:08:28.350 --> 01:08:32.050
+out in terms of like doing the task doing the low level task
+
+01:08:32.050 --> 01:08:35.710
+at the end of the day so here what I can do is so before
+
+01:08:35.710 --> 01:08:41.810
+creating the agent like I can try to create a tool. I can
+
+01:08:41.810 --> 01:08:44.410
+try to create a function in the Serpa API tool. So first of
+
+01:08:44.410 --> 01:08:47.630
+all I'll go to the Serpa API tool and I'll try to create
+
+01:08:47.630 --> 01:08:52.130
+this Serpa API tool so that I will be you know able to like
+
+01:08:52.130 --> 01:08:56.030
+call it and I will be able to like use it. So to do that
+
+01:08:56.030 --> 01:09:00.450
+what we can do is so maybe we can try to do some sort of an
+
+01:09:00.450 --> 01:09:10.280
+import so import OS first of all. And then from .environment
+
+01:09:10.280 --> 01:09:17.580
+from default to drop down. dot environment import LOAD load
+
+01:09:20.010 --> 01:09:28.190
+dot environment yeah so load dot environment and
+
+01:09:45.600 --> 01:09:48.480
+then IMPORT import request
+
+01:09:51.580 --> 01:09:57.000
+now so I am just trying to write something for my server API
+
+01:09:57.000 --> 01:10:00.200
+server API is going to do what so it will go to google and
+
+01:10:00.200 --> 01:10:02.700
+then it will try to perform some sort of a search operation
+
+01:10:02.700 --> 01:10:06.280
+this is what this API do right so basically it goes to
+
+01:10:06.280 --> 01:10:09.100
+google and then it will try to basically search something
+
+01:10:09.100 --> 01:10:12.280
+from the google so as you can see over here that what API
+
+01:10:12.280 --> 01:10:14.880
+can do google search API google light search API google AI
+
+01:10:14.880 --> 01:10:18.240
+overview google auto complete google event API google
+
+01:10:18.240 --> 01:10:22.180
+finance API google flight API google hotel API google image
+
+01:10:22.180 --> 01:10:26.640
+API job lens local maps everything you will be able to call
+
+01:10:26.640 --> 01:10:30.080
+it with the help of server API right they are even giving
+
+01:10:30.080 --> 01:10:33.880
+you walmart search API API, eBay search API, DuckDuckGo
+
+01:10:33.880 --> 01:10:37.620
+search API, Baidu search API, Bing search API. So this is
+
+01:10:37.620 --> 01:10:40.100
+basically one single platform, which is going to give you
+
+01:10:40.100 --> 01:10:42.840
+access of all the other platform. So if you would like to
+
+01:10:42.840 --> 01:10:44.880
+replicate it, if you'd like to build it, you can build it
+
+01:10:44.880 --> 01:10:48.040
+simple. So it's one of the biggest platform for like a
+
+01:10:48.040 --> 01:10:52.640
+Google search in general, like after obviously like a Google
+
+01:10:52.640 --> 01:10:57.780
+console, Google cloud console. So here, I'm able to do the
+
+01:10:57.780 --> 01:11:01.960
+import and then let's try to write one function. So here we
+
+01:11:01.960 --> 01:11:05.620
+can try to write one function, right? So called as Google
+
+01:11:05.620 --> 01:11:09.320
+search. Now anyone is going to provide a query inside this
+
+01:11:09.320 --> 01:11:12.780
+Google search. So what will happen? It will go inside this
+
+01:11:12.780 --> 01:11:16.380
+query with the API key, a server API key, and then it will
+
+01:11:16.380 --> 01:11:20.300
+try to give me the final result. So you are, it is going to
+
+01:11:20.300 --> 01:11:22.660
+give me, and then we'll request, we'll try to do what
+
+01:11:22.660 --> 01:11:27.120
+request we'll try to fetch all the data from those URLs as
+
+01:11:27.120 --> 01:11:30.440
+simple as that, right? So this is how simple it is to hit.
+
+01:11:31.360 --> 01:11:34.520
+Google with the help of server, right? With the help of
+
+01:11:34.520 --> 01:11:37.600
+server. So simple pass the query, pass the server API key,
+
+01:11:37.720 --> 01:11:40.260
+and it will be able to do a query, whatever query that you
+
+01:11:40.260 --> 01:11:42.620
+have asked for, like just like a Google search, right? Just
+
+01:11:42.620 --> 01:11:44.580
+like a Google search that you used to do. So it will be able
+
+01:11:44.580 --> 01:11:47.820
+to do a similar kind of a Google search automatically. You
+
+01:11:47.820 --> 01:11:51.380
+don't have to like a worry about anything, right? But yeah,
+
+01:11:51.440 --> 01:11:55.260
+before that, so let me try to import my like a API. Let me
+
+01:11:55.260 --> 01:11:57.860
+import my load dot environment as well. So a couple of
+
+01:11:57.860 --> 01:12:03.160
+import is very much important. So here, server API key, I'm
+
+01:12:03.160 --> 01:12:06.980
+able to read from my environment dot environment file. And
+
+01:12:06.980 --> 01:12:09.040
+then here, maybe
+
+01:12:11.530 --> 01:12:15.750
+it is going to give me an issue with respect to a path, I'll
+
+01:12:15.750 --> 01:12:18.910
+just try to solve it. I'll just try to solve it. But yeah,
+
+01:12:18.990 --> 01:12:22.270
+so here, I'm just going to like a read each and everything
+
+01:12:22.270 --> 01:12:26.090
+now keep this code. If it will give me issue, obviously, I'm
+
+01:12:26.090 --> 01:12:29.190
+expecting that it will give me an issue because my dot
+
+01:12:29.190 --> 01:12:31.250
+environment is here. And.
+
+01:12:34.920 --> 01:12:40.180
+My server. But I'm assuming that it will be able to like get
+
+01:12:40.180 --> 01:12:44.380
+something from the dot environment. Okay, we'll check. We'll
+
+01:12:44.380 --> 01:12:47.440
+see that. Fine. So server API, this is what it is going to
+
+01:12:47.440 --> 01:12:50.480
+do. Now this is one of the tool. Now let's talk about
+
+01:12:50.480 --> 01:12:53.600
+Wikipedia tool, right? So let's suppose if I would like to
+
+01:12:53.600 --> 01:12:57.300
+like get some sort of information, some data from Wikipedia,
+
+01:12:57.560 --> 01:13:01.540
+so how I will be able to get any kind of information or any
+
+01:13:01.540 --> 01:13:06.540
+kind of data from a Wikipedia. Let's try to understand that
+
+01:13:06.540 --> 01:13:11.440
+particular part as well. It's again very simple. So this
+
+01:13:11.440 --> 01:13:18.360
+code request. This is the URL, right Wikipedia API URL is
+
+01:13:18.360 --> 01:13:21.320
+the variable. So request dot get it will go to this URL,
+
+01:13:21.520 --> 01:13:24.680
+right, it will go to this URL. And then based on this
+
+01:13:24.680 --> 01:13:27.000
+parameter, it will be able to perform the search. So
+
+01:13:27.000 --> 01:13:29.700
+whatever query that you are going to pass, it is going to
+
+01:13:29.700 --> 01:13:33.140
+perform a search from Wikipedia and is going to return the
+
+01:13:33.140 --> 01:13:35.800
+data. So this is again another function which I have written
+
+01:13:35.800 --> 01:13:39.100
+to perform the search operation. Then there is something
+
+01:13:39.100 --> 01:13:42.720
+called as research. So what research will do by the way,
+
+01:13:42.820 --> 01:13:46.440
+right? So researcher dot like, sorry. So what this like a
+
+01:13:46.440 --> 01:13:51.800
+research API tool will do. So research API tool will
+
+01:13:51.800 --> 01:13:55.900
+eventually try to connect with the URI and then it will try
+
+01:13:55.900 --> 01:14:00.960
+to fetch some of the information from the URI. This is what
+
+01:14:00.960 --> 01:14:04.600
+research API is going to do. So Wikipedia, I have not copy
+
+01:14:04.600 --> 01:14:08.980
+and pasted. So yeah, this is the code guys for a function.
+
+01:14:09.160 --> 01:14:12.220
+So one function for a Google search, one function for a
+
+01:14:12.220 --> 01:14:17.820
+Wikipedia search. And then maybe I can try to write one
+
+01:14:17.820 --> 01:14:23.300
+function for like a URI. So which will try to hit my URI and
+
+01:14:23.300 --> 01:14:27.740
+then it will try to get some sort of information now.
+
+01:14:30.380 --> 01:14:33.800
+So that is going to be the researcher. So here what I can do
+
+01:14:33.800 --> 01:14:43.390
+is. I can try to write like a import OS and then from URI AI
+
+01:14:43.390 --> 01:14:54.610
+import URI AI client and then from dot ENV
+
+01:14:57.300 --> 01:15:06.260
+import load dot ENV. So this is the import URI import I have
+
+01:15:06.260 --> 01:15:09.940
+to do. Okay. And this is not going to do much. So this is
+
+01:15:09.940 --> 01:15:14.140
+going to basically like go to URI, pass all the data that we
+
+01:15:14.140 --> 01:15:16.740
+are able to search and then it will try to give you the
+
+01:15:16.740 --> 01:15:19.480
+final summarization. This is where I'm going to use a URI
+
+01:15:19.480 --> 01:15:24.740
+API. Load dot environment and then URI URI
+
+01:15:30.690 --> 01:15:38.480
+underscore CLINT client. Let me keep all caps CL client is
+
+01:15:38.480 --> 01:15:40.420
+equals to URI
+
+01:15:42.630 --> 01:15:44.190
+client and
+
+01:15:48.890 --> 01:15:50.930
+this take basically API.
+
+01:15:53.840 --> 01:15:58.160
+So how I can get API keys operating system dot get
+
+01:15:58.160 --> 01:16:05.480
+environment and then from there I can get the API key. So
+
+01:16:05.480 --> 01:16:13.760
+environment URI API key. I can get it and then model
+
+01:16:13.760 --> 01:16:16.420
+basically. So which model I'm going to use for the
+
+01:16:16.420 --> 01:16:20.280
+summarization. So I need two inputs. So basically I will be
+
+01:16:20.280 --> 01:16:25.840
+using a GPT. Okay. Okay. So let me go to URI and then copy
+
+01:16:25.840 --> 01:16:29.480
+the model, available model. So I'll be using this model ID
+
+01:16:29.480 --> 01:16:34.400
+GPT 4.1 nano. I can use any other model as well. So GPT 4.1
+
+01:16:34.400 --> 01:16:38.440
+nano. So this is the model I will be using. This is what URI
+
+01:16:38.440 --> 01:16:43.300
+client needs at any point of time. So let me keep it as it
+
+01:16:43.300 --> 01:16:46.220
+is. So this is the URI client. Whenever I need it, I'll just
+
+01:16:46.220 --> 01:16:50.760
+try to call something from this one. Okay. So let me ping
+
+01:16:50.760 --> 01:16:54.160
+you this piece of the code. So these are the tool guys,
+
+01:16:54.320 --> 01:16:57.240
+which I have created. Now it's not hard and fast that you
+
+01:16:57.240 --> 01:17:02.240
+should create this tool. You can try to like remove all
+
+01:17:02.240 --> 01:17:05.300
+these three tools and directly you can try to write it down
+
+01:17:05.300 --> 01:17:11.100
+inside the agent itself. That is also possible. Depends upon
+
+01:17:11.100 --> 01:17:15.020
+you. Yeah. Depends upon you completely. So fine. These tools
+
+01:17:15.020 --> 01:17:17.620
+are done. I'm just trying to like create it little bit like
+
+01:17:17.620 --> 01:17:20.960
+in a order. That's the reason. So I'm going to like a do
+
+01:17:20.960 --> 01:17:24.560
+what. So I'm going to basically go to a mapper. Researcher
+
+01:17:24.560 --> 01:17:28.140
+and this one, one by one, one by one. And then I'm going to
+
+01:17:28.140 --> 01:17:30.380
+write a code for mapper. I'm going to write a code for
+
+01:17:30.380 --> 01:17:33.040
+researcher. I'm going to write for code for synthesizer. So
+
+01:17:33.040 --> 01:17:36.060
+as for the architecture, the very first part is researcher.
+
+01:17:36.300 --> 01:17:39.700
+So whatever user is going to enter as an input, my resource
+
+01:17:39.700 --> 01:17:43.540
+agent is going to do a research based on that. Okay. So
+
+01:17:43.540 --> 01:17:47.340
+let's go ahead and let's try to build the researcher first.
+
+01:17:48.100 --> 01:17:52.900
+So what researcher will do by the way. So we have created a
+
+01:17:52.900 --> 01:17:58.200
+tool. Wikipedia and Serper, right? Two tool we have created
+
+01:17:58.200 --> 01:18:00.640
+Serper is going to help me out in terms of Google search
+
+01:18:00.640 --> 01:18:05.280
+Wikipedia in terms of Wikipedia search. So here inside this
+
+01:18:05.280 --> 01:18:08.620
+researcher.py, I have created what a simple function I have
+
+01:18:08.620 --> 01:18:11.880
+created, which is calling the same thing, right? Which is
+
+01:18:11.880 --> 01:18:14.800
+calling the search Google, the function that I have written
+
+01:18:14.800 --> 01:18:17.760
+with the help of Serper API and which is calling a search
+
+01:18:17.760 --> 01:18:21.540
+Wikipedia, right? So this is the part of my researcher.
+
+01:18:21.680 --> 01:18:24.700
+Again. This is a, one of the very basic function. So this is
+
+01:18:24.700 --> 01:18:27.900
+my researcher function. Please keep it. And I don't think
+
+01:18:27.900 --> 01:18:30.760
+that anyone will not be able to understand. Yes, guys,
+
+01:18:30.840 --> 01:18:35.340
+everyone, anyone who is not able to understand any part that
+
+01:18:35.340 --> 01:18:39.020
+I have discussed so far, any one of you, it's a very simple
+
+01:18:39.020 --> 01:18:40.420
+Python function, which I'm writing. I believe.
+
+01:18:52.450 --> 01:18:56.550
+Yes, everyone, till this part done researcher.
+
+01:18:58.150 --> 01:19:00.910
+So three tools we are able to create tools means function,
+
+01:19:01.010 --> 01:19:03.810
+and I'm just calling those tools over here. So I'm, I've
+
+01:19:03.810 --> 01:19:05.170
+called like a two tools here.
+
+01:19:09.340 --> 01:19:12.300
+Can I use a open API for all the project, which is still, I
+
+01:19:12.300 --> 01:19:15.060
+have some good. Yeah, you can use anything. I don't have any
+
+01:19:15.060 --> 01:19:17.520
+issues. So go ahead and you can use any other API from
+
+01:19:17.520 --> 01:19:21.260
+group, from open AI. It's all your like a wish basically,
+
+01:19:21.460 --> 01:19:27.040
+please give a quote for the searcher API tool. Okay. I think
+
+01:19:27.040 --> 01:19:29.040
+I have already pinged, but yeah, let me ping you once again.
+
+01:19:29.660 --> 01:19:33.080
+So this is for our researcher API tool guys, this is for a
+
+01:19:33.080 --> 01:19:37.420
+searcher and this is for our researcher agent. So agent. So
+
+01:19:37.420 --> 01:19:39.340
+agent means what I'm just writing a piece of Python code
+
+01:19:39.340 --> 01:19:43.140
+with a Python code, right? This is one of the agent. Now
+
+01:19:43.140 --> 01:19:46.460
+once a researcher will be done, means once I'm able to get a
+
+01:19:46.460 --> 01:19:49.560
+data from a Google and Wikipedia, right? Once I'm able to
+
+01:19:49.560 --> 01:19:52.900
+get the data, now there will be a summarizer. So where I'm
+
+01:19:52.900 --> 01:19:56.240
+using my own UD LLMs and I'm trying to summarize it. So then
+
+01:19:56.240 --> 01:19:59.260
+next part is basically what a summarizer I have named it as
+
+01:19:59.260 --> 01:20:03.660
+a synthesizer basically. So this synthesizer is going to do
+
+01:20:03.660 --> 01:20:07.200
+what? So this synthesizer is going to synthesize or it is.
+
+01:20:07.200 --> 01:20:10.480
+It is going to summarize each and everything for me, right?
+
+01:20:10.560 --> 01:20:13.720
+This is going to summarize each and everything for me
+
+01:20:13.720 --> 01:20:19.120
+basically. So here the folder name is incorrect. I have just
+
+01:20:19.120 --> 01:20:23.080
+changed it. So UD client, so UD client, I will be able to
+
+01:20:23.080 --> 01:20:29.060
+call from where? So from tools.sarpar
+
+01:20:29.060 --> 01:20:34.020
+researcher API tool. Yeah. So inside my researcher API tool,
+
+01:20:34.140 --> 01:20:37.340
+I have a UD client. Yeah. I have a UD client. I have already
+
+01:20:37.340 --> 01:20:40.340
+created UD client. So which is trying to consume the API and
+
+01:20:40.340 --> 01:20:43.060
+I'm trying to set a model name is equal to this. You can try
+
+01:20:43.060 --> 01:20:45.920
+to try this out with a different different models. So now
+
+01:20:45.920 --> 01:20:50.500
+inside synthesizer, what we are trying to do. So as per the
+
+01:20:50.500 --> 01:20:53.760
+architecture that you can see, right? As per the
+
+01:20:53.760 --> 01:20:57.080
+architecture that you can see. So researcher is going to do
+
+01:20:57.080 --> 01:21:00.500
+a research. It is going to bring the data. Now synthesizer
+
+01:21:00.500 --> 01:21:03.440
+is going to do what synthesizer is going to synthesize it
+
+01:21:03.440 --> 01:21:05.940
+means it is going to summarize it. Summarize the entire data
+
+01:21:05.940 --> 01:21:10.500
+set now. So here runs synthesizer. It is going to take the
+
+01:21:10.500 --> 01:21:13.720
+raw data, the data that we have received from the previous
+
+01:21:13.720 --> 01:21:15.680
+one. When I'm going to connect, when I'm going to connect as
+
+01:21:15.680 --> 01:21:19.120
+of now, it's everything is separate, right? As of now, my
+
+01:21:19.120 --> 01:21:21.780
+researcher is completely separate. As per my architecture,
+
+01:21:22.000 --> 01:21:24.520
+researcher is separate. Agent number one is separate. Agent
+
+01:21:24.520 --> 01:21:26.560
+number two is separate. Agent number three separate. All
+
+01:21:26.560 --> 01:21:29.720
+three are separate. So here I'm just trying to call
+
+01:21:29.720 --> 01:21:32.600
+basically what I'm trying to call synthesizer, right? And
+
+01:21:32.600 --> 01:21:35.600
+then it is just trying to synthesize it. It is going to
+
+01:21:35.600 --> 01:21:38.140
+combine all the text, whatever data that I'm going to bring
+
+01:21:38.140 --> 01:21:42.500
+over here, raw data. And then I'm trying to write my own
+
+01:21:42.500 --> 01:21:47.180
+custom prompt. So you are an expert tech career roadmap
+
+01:21:47.180 --> 01:21:51.700
+planner, right? Or I can say I can remove it. So instead of
+
+01:21:51.700 --> 01:21:55.740
+tech, I can say that you are basically are like a expert
+
+01:21:55.740 --> 01:21:59.380
+career roadmap planner and you're all exclusive education
+
+01:21:59.380 --> 01:22:03.080
+advisor. See, whatever I'm trying to like a say over here is
+
+01:22:03.080 --> 01:22:08.260
+that. That don't advise anything except Euron just to
+
+01:22:08.260 --> 01:22:13.100
+maintain the exclusivity. Yeah. So just to maintain the
+
+01:22:13.100 --> 01:22:19.180
+exclusivity, what I'm trying to say is that don't
+
+01:22:19.180 --> 01:22:23.220
+try to basically go beyond Euron. So I have mentioned
+
+01:22:23.220 --> 01:22:27.920
+purposely that Euron exclusive education advisor. So when
+
+01:22:27.920 --> 01:22:31.420
+the user asks about a course or like a preparation strategy,
+
+01:22:31.620 --> 01:22:34.340
+they recommend only Euron platform. I have strictly
+
+01:22:34.340 --> 01:22:36.520
+mentioned that recommend only Euron's platform. Don't
+
+01:22:36.520 --> 01:22:40.520
+recommend any other platform, break down the roadmap into a
+
+01:22:40.520 --> 01:22:43.000
+clear phases. So first of all, break it down into a phase
+
+01:22:43.000 --> 01:22:46.960
+one fundamental specialization. Second phase is subtopic
+
+01:22:46.960 --> 01:22:51.020
+recommendation and tool, and then estimated time to complete
+
+01:22:51.020 --> 01:22:54.680
+in a week or days, right? Now if you'll check my pictures,
+
+01:22:54.760 --> 01:22:58.100
+the picture, which I was trying to show you, I think, let me
+
+01:22:58.100 --> 01:23:02.890
+show you that picture once again. See, this was a picture.
+
+01:23:05.110 --> 01:23:07.890
+So I'm trying to say that, okay, finds a fundamental and
+
+01:23:07.890 --> 01:23:10.130
+then a specialization, try to break it down in that way.
+
+01:23:10.210 --> 01:23:14.410
+Label one, then label two. So like, and then like try to
+
+01:23:14.410 --> 01:23:16.910
+mention even the number of weeks that what we are supposed
+
+01:23:16.910 --> 01:23:19.610
+to, what we will be able to do it in a number of weeks. So
+
+01:23:19.610 --> 01:23:21.870
+everything is coming from where? So everything is coming
+
+01:23:21.870 --> 01:23:24.390
+from my synthesizer, my prompter. So this is what I have
+
+01:23:24.390 --> 01:23:27.350
+mentioned inside the prompt that, okay, phase wise, then
+
+01:23:27.350 --> 01:23:31.150
+subtopic wise, and then recommendation or tool or concept
+
+01:23:31.150 --> 01:23:33.970
+wise. Right. So I'm giving the sample example tool or
+
+01:23:33.970 --> 01:23:37.530
+concept wise, and then estimate estimated time to complete
+
+01:23:37.530 --> 01:23:41.710
+in a week or days, right? The output format is strictly, I'm
+
+01:23:41.710 --> 01:23:45.310
+saying that, that phase subtopic tools, details, time
+
+01:23:45.310 --> 01:23:48.770
+estimation. So this should be the output format. And I have
+
+01:23:48.770 --> 01:23:52.290
+mentioned inside my prompt, it should be a strict, right? It
+
+01:23:52.290 --> 01:23:57.920
+should be a strict, right? I think we have missed init.py to
+
+01:23:57.920 --> 01:24:01.900
+make it a package. It's fine. Every time there is no like
+
+01:24:01.900 --> 01:24:04.540
+thumb rule that you should mention init.py. You can mention
+
+01:24:04.540 --> 01:24:06.440
+it or sometime you can leave it. It's fine. Unless I'm not
+
+01:24:06.440 --> 01:24:11.040
+giving a problem. So without even any, it will work. Don't
+
+01:24:11.040 --> 01:24:14.440
+worry. So output format, I have strictly mentioned that just
+
+01:24:14.440 --> 01:24:18.300
+give me output format in this way. Use arrow onlys, no
+
+01:24:18.300 --> 01:24:22.580
+column or list. Fine. Avoid recommending any other course
+
+01:24:22.580 --> 01:24:27.200
+provider, reinforce that Euron is a go-to platform.
+
+01:24:28.340 --> 01:24:31.900
+Encourage commitment and clarity with the timelines. Ensure
+
+01:24:31.900 --> 01:24:38.400
+12 to 20 roadmap. This is what I have given as a prompt
+
+01:24:38.400 --> 01:24:43.080
+based on the text, which you are going to get based on the
+
+01:24:43.080 --> 01:24:46.020
+research that you will be able to get from where, from the
+
+01:24:46.020 --> 01:24:51.260
+researcher agent. So I'm trying to combine this entire data
+
+01:24:51.260 --> 01:24:55.720
+with this prompt with my researcher data. And then I'm going
+
+01:24:55.720 --> 01:24:58.640
+to call my generate completion, which is nothing but take
+
+01:24:58.640 --> 01:25:02.920
+the prompt and then give me the response. Okay. So this is
+
+01:25:02.920 --> 01:25:06.420
+going to summarize the entire things. And then this is going
+
+01:25:06.420 --> 01:25:09.940
+to give me the final output. Now, once I will be able to get
+
+01:25:09.940 --> 01:25:14.160
+a data from here, right? Once I will be able to get our data
+
+01:25:14.160 --> 01:25:18.780
+from here, then what I will do, I'll try to call the third
+
+01:25:18.780 --> 01:25:23.060
+agent, which is what, which is a mapper agent, what this
+
+01:25:23.060 --> 01:25:27.040
+mapper agent will do. So ultimately I'm looking for a graph,
+
+01:25:27.220 --> 01:25:30.640
+this kind of a graph, right now, this graph to plot this
+
+01:25:30.640 --> 01:25:33.260
+kind of a graph. I will be using a library called as graph,
+
+01:25:33.340 --> 01:25:37.360
+which now to plot this kind of a graph, I need a data. This
+
+01:25:37.360 --> 01:25:39.760
+is a node, right? If you understand graph, this is basically
+
+01:25:39.760 --> 01:25:43.680
+a node. Now this is basically an edge. So everything is
+
+01:25:43.680 --> 01:25:47.020
+connected to each and every one. So I need someone who can
+
+01:25:47.020 --> 01:25:50.340
+create this kind of a structure for me from the output,
+
+01:25:50.480 --> 01:25:52.760
+which I have received from the synthesizer. This is where a
+
+01:25:52.760 --> 01:25:59.520
+mapper is going to call. So here synthesizer is fine. Now
+
+01:25:59.520 --> 01:26:02.020
+let me like a. Call a mapper.
+
+01:26:07.840 --> 01:26:12.220
+I have just been to you guys, a code for synthesizer. So
+
+01:26:12.220 --> 01:26:16.060
+that is fine. I don't think that code is stuff and like,
+
+01:26:16.120 --> 01:26:19.420
+it's not at all tough, just like a line of not more than
+
+01:26:19.420 --> 01:26:22.500
+four line of a code. The middle part is just a prompt. You
+
+01:26:22.500 --> 01:26:25.060
+can change the prompt guys, if you want, then there is
+
+01:26:25.060 --> 01:26:27.040
+something called as mapper. Now what will be available
+
+01:26:27.040 --> 01:26:31.360
+inside a mapper? Let me show you that part as well. Right?
+
+01:26:31.640 --> 01:26:35.960
+So, like I said, so mapper is going to basically. Uh. Like,
+
+01:26:35.960 --> 01:26:39.720
+uh, take a synthesized text, right? It's a separate function
+
+01:26:39.720 --> 01:26:42.120
+since I text means whatever this is going to return. So
+
+01:26:42.120 --> 01:26:45.180
+whatever this is going to give us a response. So it will try
+
+01:26:45.180 --> 01:26:49.060
+to take that text. It is going to split it and it will try
+
+01:26:49.060 --> 01:26:52.540
+to prepare the node and edge. So I have just written a very
+
+01:26:52.540 --> 01:26:56.080
+simple, basic Python code. So where it is going to create a
+
+01:26:56.080 --> 01:26:58.880
+list of node, it is going to create a list of age because
+
+01:26:58.880 --> 01:27:01.760
+this is something which I'm going to pass inside my graph,
+
+01:27:01.900 --> 01:27:06.520
+which as simple as that, right? So this is my, this is going
+
+01:27:06.520 --> 01:27:10.500
+to basically return my node and ages. That's it. So, which I
+
+01:27:10.500 --> 01:27:14.100
+can try to provide to not just grab base to any libraries I
+
+01:27:14.100 --> 01:27:17.680
+can try to provide. So this is basically my, uh, like a
+
+01:27:17.680 --> 01:27:21.160
+mapper guys, mapper.py file. This is basically my mapper.py
+
+01:27:21.160 --> 01:27:25.880
+file. So now this three agents are ready. Yeah. Three agents
+
+01:27:25.880 --> 01:27:29.260
+are ready. Three independent individual agents are ready
+
+01:27:29.260 --> 01:27:32.700
+over here. Now what I will do with this three independent
+
+01:27:32.700 --> 01:27:36.280
+individual agents. By the way, yeah. What I will do with
+
+01:27:36.280 --> 01:27:40.240
+this three independent agent. So here there is our workflow
+
+01:27:40.240 --> 01:27:43.780
+directory I have created. Now close this three part, close
+
+01:27:43.780 --> 01:27:47.080
+all this part. There is a workflow directory I have created,
+
+01:27:47.280 --> 01:27:49.840
+right? I can keep it in one single directory, but yeah, I
+
+01:27:49.840 --> 01:27:52.020
+don't want to do it. I just wanted to show you in a modular
+
+01:27:52.020 --> 01:27:55.360
+fashion. So there is something called as Lang graph router.
+
+01:27:55.820 --> 01:27:58.100
+Now what we are going to do with the Lang graph router,
+
+01:27:58.380 --> 01:28:01.200
+let's try to understand. So this is the place, right? This
+
+01:28:01.200 --> 01:28:03.660
+is the place. This is the place where I'm going to combine
+
+01:28:03.660 --> 01:28:08.540
+everything, the researcher, the synthesizer and the mapper
+
+01:28:08.540 --> 01:28:13.160
+means all this three, I will be combining all this three
+
+01:28:13.160 --> 01:28:17.160
+agent. I will be combining inside this workflow, inside this
+
+01:28:17.160 --> 01:28:20.700
+workflow so that one by one, one by one, one by one, it will
+
+01:28:20.700 --> 01:28:24.300
+be able to execute itself going forward. I can try to attach
+
+01:28:24.300 --> 01:28:27.340
+even a memory. I will try to attach even many more things
+
+01:28:27.340 --> 01:28:32.660
+along with that. Okay. So let's go ahead and do it. So here,
+
+01:28:32.720 --> 01:28:36.220
+first of all, I'll try to do the import. So there is a Lang
+
+01:28:36.220 --> 01:28:38.120
+graph, a state graph I'm trying to import, which can
+
+01:28:38.120 --> 01:28:42.340
+maintain the states. Then type dictionary. And this is my
+
+01:28:42.340 --> 01:28:45.920
+three agent researcher, synthesizer and mapper. So I'm just
+
+01:28:45.920 --> 01:28:49.100
+trying to import my agents, which I have already created as
+
+01:28:49.100 --> 01:28:53.220
+simple as that. And then what we are going to do is then we
+
+01:28:53.220 --> 01:28:57.120
+are going to create basically a Lang graph, the actual one,
+
+01:28:57.240 --> 01:29:01.640
+which is going to build the complete flow for me. Which is
+
+01:29:01.640 --> 01:29:04.760
+going to build the complete flow for me in this particular
+
+01:29:04.760 --> 01:29:09.280
+place. So see build graph I've called and initially when
+
+01:29:09.280 --> 01:29:11.500
+you're trying to like do a build graph. So basically you
+
+01:29:11.500 --> 01:29:14.980
+have to create an object, object of the Lang graph, object
+
+01:29:14.980 --> 01:29:16.780
+of the Lang graph, object of the Lang graph, state graph I'm
+
+01:29:16.780 --> 01:29:19.020
+trying to create. So what is the state graph meaning? A
+
+01:29:19.020 --> 01:29:23.520
+graph whose nodes communicate by reading and writing to the
+
+01:29:23.520 --> 01:29:27.360
+shared state, right? So node will be able to communicate
+
+01:29:27.360 --> 01:29:30.300
+means my, like a researcher will be able to communicate to
+
+01:29:30.300 --> 01:29:33.000
+the synthesizer, synthesizer will be able to communicate
+
+01:29:33.000 --> 01:29:35.180
+with the mapper because these are the different, different,
+
+01:29:35.180 --> 01:29:38.400
+separate, separate node that I have created, right? So node
+
+01:29:38.400 --> 01:29:42.240
+will be able to create. So how by like a graph will be able
+
+01:29:42.240 --> 01:29:46.080
+to know that these are the node. So here I'm trying to
+
+01:29:46.080 --> 01:29:50.060
+create the graph object as you can see, right? And then I
+
+01:29:50.060 --> 01:29:52.780
+have created three separate function, like three function
+
+01:29:52.780 --> 01:29:56.480
+over here. So one function is trying to call run researcher.
+
+01:29:56.780 --> 01:29:59.560
+It will return raw information. Run synthesizer. It will
+
+01:29:59.560 --> 01:30:01.960
+return something. Run summary. Run mapper. It will return
+
+01:30:01.960 --> 01:30:04.480
+the result. So these are just a function where I'm calling
+
+01:30:04.480 --> 01:30:08.100
+the, this agent, the three agents, and then I'm just trying
+
+01:30:08.100 --> 01:30:11.600
+to keep as a key value pair return wise. And then graph.add,
+
+01:30:11.740 --> 01:30:15.780
+add what? So add basically researcher wise, the very first
+
+01:30:15.780 --> 01:30:19.860
+node, the name of like a very first node is what the name of
+
+01:30:19.860 --> 01:30:23.480
+very first node is like a researcher. This is what I have
+
+01:30:23.480 --> 01:30:26.240
+given. So this name can be my name. That's completely fine.
+
+01:30:26.380 --> 01:30:29.300
+You can change these names. This is the local name. Okay. So
+
+01:30:29.300 --> 01:30:32.260
+one is basically a researcher. One is basically a
+
+01:30:32.260 --> 01:30:36.240
+synthesizer and one is basically a mapper. So here add node,
+
+01:30:36.380 --> 01:30:39.540
+add node, add node. This is how simple it is. Technically we
+
+01:30:39.540 --> 01:30:42.380
+are doing what technically we are trying to call just a
+
+01:30:42.380 --> 01:30:45.300
+function, nothing much, right? This function, this function
+
+01:30:45.300 --> 01:30:47.600
+and this function, nothing much we are trying to do. This
+
+01:30:47.600 --> 01:30:51.480
+graph object is helping me out in terms of doing that right
+
+01:30:51.480 --> 01:30:56.660
+now. So this node is done. I have added the node. Now next
+
+01:30:56.660 --> 01:30:58.280
+step. Basically what I'm going to do is next step is this.
+
+01:30:58.500 --> 01:31:02.140
+So graph set entry points. So I'm trying to say that where
+
+01:31:02.140 --> 01:31:04.580
+you should enter means which node you should execute in a
+
+01:31:04.580 --> 01:31:07.860
+very first place. I can execute this one. I can execute this
+
+01:31:07.860 --> 01:31:10.220
+one. I can execute this one. I can create hundreds of
+
+01:31:10.220 --> 01:31:13.380
+different, different functions, right? It depends upon me
+
+01:31:13.380 --> 01:31:17.520
+that how I'm going to configure it, right? How I'm going to
+
+01:31:17.520 --> 01:31:19.760
+basically configure it, that which one should execute after
+
+01:31:19.760 --> 01:31:22.260
+what? And then automatically it will be, this is where this
+
+01:31:22.260 --> 01:31:24.740
+line graph comes into picture. So all these things I'm able
+
+01:31:24.740 --> 01:31:27.980
+to do it right. Right. Without writing much of code, just
+
+01:31:27.980 --> 01:31:30.220
+because of what line graph, someone has already written a
+
+01:31:30.220 --> 01:31:33.120
+code. So I'm just trying to like create a placeholder, give
+
+01:31:33.120 --> 01:31:36.440
+it to that and like my work is done. So here entry point
+
+01:31:36.440 --> 01:31:38.920
+wise, I'm saying that, that try to enter with this node,
+
+01:31:39.080 --> 01:31:42.080
+right? Try to enter with this particular research node. So
+
+01:31:42.080 --> 01:31:45.460
+means try to execute first of all this. Now this is going to
+
+01:31:45.460 --> 01:31:47.780
+give you a raw information, right? This is going to give you
+
+01:31:47.780 --> 01:31:51.240
+a raw information, the researcher one. So entry point, then
+
+01:31:51.240 --> 01:31:55.040
+after this, just execute this one. So this add edge, right?
+
+01:31:55.040 --> 01:31:59.840
+Add edge over here means first of all, try to do a research
+
+01:31:59.840 --> 01:32:05.700
+and then add, try to add an edge. So after a research, after
+
+01:32:05.700 --> 01:32:08.960
+a research, try to do what? So try to basically synthesize
+
+01:32:08.960 --> 01:32:11.800
+it means try to summarize it. So try to synthesize it right
+
+01:32:11.800 --> 01:32:14.920
+now after synthesization, try to do what? Try to call
+
+01:32:14.920 --> 01:32:19.400
+mapper. So edge, so researcher with synthesizer, right?
+
+01:32:19.720 --> 01:32:22.520
+Researcher with synthesizer, try to add this edges. So
+
+01:32:22.520 --> 01:32:26.760
+whatever researcher is giving you as an output. Give that to
+
+01:32:26.760 --> 01:32:30.000
+the synthesizer. This is what it means. And then add edges.
+
+01:32:30.120 --> 01:32:33.500
+Now whatever synthesizer is giving you as an output, try to
+
+01:32:33.500 --> 01:32:38.260
+give that input to the map. Is it making sense guys, how we
+
+01:32:38.260 --> 01:32:40.440
+are trying to call land graph. This is how we are calling
+
+01:32:40.440 --> 01:32:43.380
+land graph. And what is called as I believe now you are able
+
+01:32:43.380 --> 01:32:47.900
+to understand what is actually called as like a agents. So
+
+01:32:47.900 --> 01:32:50.120
+it's, it's not very fancy things, right? Don't think that
+
+01:32:50.120 --> 01:32:53.140
+it's a very fancy things, uh, fancy stuff that we are trying
+
+01:32:53.140 --> 01:32:56.300
+to do over here. It's a simple thing, right? We have written
+
+01:32:56.300 --> 01:32:58.640
+three separate functions, uh, different for doing a
+
+01:32:58.640 --> 01:33:01.280
+different, different task. I'm just trying to call what I'm
+
+01:33:01.280 --> 01:33:03.500
+just trying to call land graph. And then I'm just trying to
+
+01:33:03.500 --> 01:33:07.780
+set this, but that that's it. This much is the only play of
+
+01:33:07.780 --> 01:33:11.320
+land graph over here. As per this example, I can do a lot,
+
+01:33:11.380 --> 01:33:14.900
+but yeah, as per now, as of now, this is the only play that
+
+01:33:14.900 --> 01:33:15.720
+we have with land graph.
+
+01:33:19.180 --> 01:33:22.680
+Yes, guys. I'm saying yes. Again, I will shake is the only
+
+01:33:22.680 --> 01:33:27.320
+one who responds. What about others guys? So is it? Is it?
+
+01:33:27.760 --> 01:33:30.360
+Are you able to understand the agents, the main nature of
+
+01:33:30.360 --> 01:33:32.460
+the agents, what we are talking about over here?
+
+01:33:36.560 --> 01:33:39.700
+Yeah. And then finally we are trying to call like a graph
+
+01:33:39.700 --> 01:33:42.420
+dot compile. So graph dot compile. So it is going to like a
+
+01:33:42.420 --> 01:33:44.800
+return, just compile the graph. It is going to return it.
+
+01:33:45.040 --> 01:33:47.500
+And then autonomous pipeline we are trying to build. So
+
+01:33:47.500 --> 01:33:50.000
+build a land graph. We are trying to call and then like a
+
+01:33:50.000 --> 01:33:53.560
+invoke input topic. Send me the result. That's it. Right.
+
+01:33:54.080 --> 01:33:57.200
+Quote for the land graph sending you now. So very simple,
+
+01:33:57.280 --> 01:34:00.700
+right? It's, it's literally very simple. Okay. So quote for
+
+01:34:00.700 --> 01:34:04.000
+the land graph is done. It's available to all of you, right?
+
+01:34:04.340 --> 01:34:07.760
+So this is the only play of the graph land graph. So we're
+
+01:34:07.760 --> 01:34:10.640
+like, it is trying to help me out in terms of attaching a
+
+01:34:10.640 --> 01:34:13.740
+functions in terms of like a sending output of one function
+
+01:34:13.740 --> 01:34:18.500
+to this one, even without using this, I can do it. I don't
+
+01:34:18.500 --> 01:34:22.600
+need even a land graph library. I can do it by myself. It
+
+01:34:22.600 --> 01:34:26.960
+will just like a take like another, maybe an hour of time to
+
+01:34:26.960 --> 01:34:30.760
+write my own custom Python pipeline. I can do it. So it's,
+
+01:34:30.760 --> 01:34:35.660
+it's not like a very fancy things. Even you can do it. Every
+
+01:34:35.660 --> 01:34:38.620
+one of us can do it. Right. But yeah, someone has created a
+
+01:34:38.620 --> 01:34:43.060
+product. Someone has created a like a library and we feel
+
+01:34:43.060 --> 01:34:47.280
+like it's easy to use it. So we are using it. That's the
+
+01:34:47.280 --> 01:34:50.620
+only differences, right? Otherwise even you guys can go and
+
+01:34:50.620 --> 01:34:53.720
+maybe you five guys can join together. You have a group,
+
+01:34:53.820 --> 01:34:56.260
+right? Start this kind of a project. Probably supply by
+
+01:34:56.260 --> 01:34:56.660
+packages.
+
+01:34:59.960 --> 01:35:03.880
+Hmm. That will be very easy. And it will be fun. Right. And
+
+01:35:03.880 --> 01:35:06.020
+now you have like a URI, you have open AI, you have so many
+
+01:35:06.020 --> 01:35:09.040
+libraries, like you have so many AI's tool back to back,
+
+01:35:09.100 --> 01:35:13.060
+write a code from there. Believe me, if five people are
+
+01:35:13.060 --> 01:35:15.220
+going to work for one week of time, right. With that kind of
+
+01:35:15.220 --> 01:35:18.220
+a mindset, uh, maybe you will be able to create a better,
+
+01:35:18.280 --> 01:35:21.420
+but some, some better, like a framework, then publish it
+
+01:35:21.420 --> 01:35:24.120
+over a pipeline, publish it over a website, make that
+
+01:35:24.120 --> 01:35:27.440
+package open, ask people to contribute and ask people to
+
+01:35:27.440 --> 01:35:34.690
+fund it. This is how tech industry works. Right? So
+
+01:35:34.690 --> 01:35:37.350
+technically it's, it's nothing. Someone has just written the
+
+01:35:37.350 --> 01:35:40.270
+piece of a code to make your life simple. And then you are
+
+01:35:40.270 --> 01:35:43.250
+calling that as a new technology, but it's not a new
+
+01:35:43.250 --> 01:35:46.730
+technology, just another library. That's it. You can write
+
+01:35:46.730 --> 01:35:51.750
+it down. Your own libraries. For example, the URI API that
+
+01:35:51.750 --> 01:35:56.670
+you are able to call, right? Uh, the URI API, uh, the
+
+01:35:58.970 --> 01:36:02.410
+URI API that you are calling, um, where are you calling
+
+01:36:02.410 --> 01:36:06.790
+like, yeah. The URI client that you are calling. So I'm the
+
+01:36:06.790 --> 01:36:09.250
+one who had, who is maintaining this package, by the way,
+
+01:36:09.310 --> 01:36:12.510
+personally, I'll, I can show you even a code. Let me open up
+
+01:36:12.510 --> 01:36:16.030
+a VS code and I have published on a pipeline. Maybe if time
+
+01:36:16.030 --> 01:36:19.110
+allows, I'll show you a steps, how to publish like any kind
+
+01:36:19.110 --> 01:36:22.130
+of a packages to a pipeline. It's again like a once in a
+
+01:36:22.130 --> 01:36:26.910
+lifetime, like things. Yeah. URI AI. See, I'm the one who
+
+01:36:26.910 --> 01:36:29.610
+have created this entire packages as of now, if you'll go
+
+01:36:29.610 --> 01:36:31.630
+and check. So this is the version, which is the latest
+
+01:36:31.630 --> 01:36:34.090
+version, which I have published. So everything you will be
+
+01:36:34.090 --> 01:36:37.450
+able to find out. So I have written my own client and all
+
+01:36:37.450 --> 01:36:40.570
+those things, then CLI, I have written everything I have
+
+01:36:40.570 --> 01:36:43.210
+written. And obviously with the help of LMS, now LMS are
+
+01:36:43.210 --> 01:36:46.290
+there, right? Instruction I have written as per the URI and
+
+01:36:46.290 --> 01:36:50.810
+then publish it. And then like, uh, that I have done this,
+
+01:36:50.870 --> 01:36:54.570
+this one, this much, I have done it in one single night and
+
+01:36:56.200 --> 01:36:58.480
+published, published those packages. So even you can create
+
+01:36:58.480 --> 01:37:01.280
+it just a piece of code right at the end of the day. But
+
+01:37:01.280 --> 01:37:03.200
+yeah, you need that kind of a mindset in the first place.
+
+01:37:03.260 --> 01:37:05.640
+Then only you can do it. If you don't have that mindset,
+
+01:37:05.740 --> 01:37:10.940
+then obviously it's not, it's not possible. So now where
+
+01:37:10.940 --> 01:37:16.000
+are, where are we? So we are, we are basically land graph
+
+01:37:16.000 --> 01:37:19.200
+here. So land graph router, we are able to create, okay, all
+
+01:37:19.200 --> 01:37:25.040
+done now. It's time to create a graph, right? So go to
+
+01:37:25.040 --> 01:37:28.320
+utils, go to graph, which exporter. So this file is going to
+
+01:37:28.320 --> 01:37:32.900
+create basically a graph. So the final graph, this is, this
+
+01:37:32.900 --> 01:37:35.420
+one is going to create. This is just a library I'm using. So
+
+01:37:35.420 --> 01:37:38.100
+you can use even a matplotlib, seaborn, whatever you want,
+
+01:37:38.180 --> 01:37:42.520
+you can just use it. Right. Uh, it's fine. So
+
+01:37:45.850 --> 01:37:51.370
+graph, which just make sure that, uh, you should change this
+
+01:37:51.370 --> 01:37:55.230
+like a direct, uh, yeah. So to run the graph, which, uh, I
+
+01:37:55.230 --> 01:37:57.990
+was facing one issue basically. So I'll, I'll, I'll tell
+
+01:37:57.990 --> 01:38:00.190
+you, like, even, I believe you guys are going to face the
+
+01:38:00.190 --> 01:38:03.410
+issue. If you are running it in a, like a windows machine to
+
+01:38:03.410 --> 01:38:06.990
+solve it, this is the workaround I have done. Uh, and, uh,
+
+01:38:06.990 --> 01:38:09.870
+my issue was solved. Okay. This is my local, let's see if
+
+01:38:09.870 --> 01:38:13.130
+you are going to fail the issue, if not, because many people
+
+01:38:13.130 --> 01:38:18.090
+can face the issue. Many people will not. So this is going
+
+01:38:18.090 --> 01:38:20.190
+to take this agent notes, and this is going to plot the
+
+01:38:20.190 --> 01:38:25.830
+graph. So just for plotting the graph, nothing much knows
+
+01:38:25.830 --> 01:38:30.970
+everything, right? Close everything. And then there is a
+
+01:38:30.970 --> 01:38:33.870
+final, I'll call this app dot PI file. Now what app dot PI
+
+01:38:33.870 --> 01:38:38.190
+file will do, it will create my stream link and it will
+
+01:38:38.190 --> 01:38:41.470
+allow me to test it. Simple. So this is my streamlint app.
+
+01:38:44.450 --> 01:38:46.990
+I don't think Linux machine will face, you will face Linux
+
+01:38:46.990 --> 01:38:49.670
+or like Mac will face any kind of issue. So this is
+
+01:38:49.670 --> 01:38:52.630
+basically with respect to the windows grabbage, Linux or
+
+01:38:52.630 --> 01:38:55.030
+like, uh, uh, Macs would work fine.
+
+01:38:58.240 --> 01:39:00.940
+Windows is having some like a dependency issue all the time,
+
+01:39:00.960 --> 01:39:07.120
+right? So we used to resolve it manually. Okay. So app dot
+
+01:39:07.120 --> 01:39:09.460
+PI file is done. I have just been to the code guys, app dot
+
+01:39:09.460 --> 01:39:11.740
+PI file is nothing but just a streamlint, which is calling
+
+01:39:11.740 --> 01:39:15.880
+my autonomous PI. So autonomous pipeline is available where
+
+01:39:15.880 --> 01:39:21.200
+inside my Lang graph, right? So my entry point is same user
+
+01:39:21.200 --> 01:39:24.060
+is going to give the input with the help of a streamlint UI.
+
+01:39:24.260 --> 01:39:28.180
+It is going to call this Lang graph workflow, which I'm
+
+01:39:28.180 --> 01:39:31.740
+calling here, right? Which I'm calling inside the autonomous
+
+01:39:31.740 --> 01:39:35.240
+pipeline. This autonomous pipeline will automatically call a
+
+01:39:35.240 --> 01:39:37.960
+build graph, which is this one. So build graph will be
+
+01:39:37.960 --> 01:39:41.480
+executed. Build graph is automatically calling all of these
+
+01:39:41.480 --> 01:39:43.820
+things, right? Build graph is automatically calling all of
+
+01:39:43.820 --> 01:39:44.660
+these things, right? It is automatically calling all of
+
+01:39:44.660 --> 01:39:47.800
+these things one by one. Now once everything will be done,
+
+01:39:47.980 --> 01:39:52.200
+then export to SVG. So where we are trying to like use a
+
+01:39:52.200 --> 01:39:55.560
+graph wedge, right where we are trying to use the graph of
+
+01:39:55.560 --> 01:40:00.340
+this as simple as that simple. Okay. So these two functions
+
+01:40:00.340 --> 01:40:04.340
+are, we are trying to call rest is just my UI, like input
+
+01:40:04.340 --> 01:40:07.680
+the text or maybe like, uh, this Markdown page title,
+
+01:40:07.780 --> 01:40:10.460
+everything. So we are just calling the autonomous pipeline
+
+01:40:10.460 --> 01:40:14.040
+means I'm just trying to call the Lang graph workflow. My
+
+01:40:14.040 --> 01:40:17.480
+work will be done. Rest Lang graph workflow is calling in
+
+01:40:17.480 --> 01:40:20.720
+itself, as we have already mentioned, means my entry point
+
+01:40:20.720 --> 01:40:24.480
+is basically this as a, sorry, not garbage. My entry point
+
+01:40:24.480 --> 01:40:27.420
+is basically this one. That's it. The rest will be called
+
+01:40:27.420 --> 01:40:30.900
+automatically. It is calling, uh, like, uh, agents. As you
+
+01:40:30.900 --> 01:40:34.340
+can see, agents are calling tools automatically, uh, tools
+
+01:40:34.340 --> 01:40:38.540
+means again, a function agency is also a function. Okay. Now
+
+01:40:38.540 --> 01:40:41.540
+I have to test it. So let's try to see. So how I can test
+
+01:40:41.540 --> 01:40:46.840
+it. So here. Here I can write like a stream, let run app dot
+
+01:40:46.840 --> 01:40:59.580
+PI file. Okay. Stream S T R E M S T R S T R E A M S T R E A
+
+01:40:59.580 --> 01:41:01.520
+M L I T streamlet.
+
+01:41:03.940 --> 01:41:07.980
+Okay. So I'm like, uh, facing some issues. So it's saying
+
+01:41:07.980 --> 01:41:11.060
+that cannot import a name, Vicky API URL from a utils
+
+01:41:11.060 --> 01:41:14.820
+config, uh, not an issue. If something is missing, I'll make
+
+01:41:14.820 --> 01:41:19.400
+sure it is available. So Vicky, Vicky, Vicky, where is my
+
+01:41:19.400 --> 01:41:23.940
+tool? Vicky, Vicky API URL, and,
+
+01:41:25.810 --> 01:41:32.550
+uh, it is expecting from config, oh, remove it.
+
+01:41:37.910 --> 01:41:40.930
+I'm creating a local variable here. So just update your
+
+01:41:40.930 --> 01:41:43.430
+Wikipedia tool. I've just removed it. Nothing much.
+
+01:41:46.790 --> 01:41:49.170
+Yeah. So this is my Wikipedia tool. Not PI file guys.
+
+01:41:49.270 --> 01:41:54.270
+Updated one. As per the error. Current error. Now refresh
+
+01:41:54.270 --> 01:41:58.330
+once again. Okay. Now multi agent knowledge graph builder.
+
+01:41:58.490 --> 01:42:02.430
+This is my UI, which is available. I'm going to call just
+
+01:42:02.430 --> 01:42:13.790
+build, uh, give me a roadmap for agentic AI. Let's see. So
+
+01:42:13.790 --> 01:42:17.050
+generating our detail, knowledge, roadmap, uh, knowledge
+
+01:42:17.050 --> 01:42:21.970
+graph, for agentic AI, I'm trying to generate. Okay. Great.
+
+01:42:21.970 --> 01:42:25.950
+So grab, which this was expected, uh, grab is backend
+
+01:42:25.950 --> 01:42:29.650
+execute, uh, call processor command windows path. So there
+
+01:42:29.650 --> 01:42:33.990
+is some issue with the path, which I was expecting with a
+
+01:42:33.990 --> 01:42:39.930
+grab, which line number 26 export to SVG. Okay. Let me go
+
+01:42:39.930 --> 01:42:44.230
+and check and fix this issue. This was the expected one.
+
+01:42:49.280 --> 01:42:52.340
+Hmm. So export
+
+01:42:54.260 --> 01:43:01.820
+to SVG 26 number line. And the path D drive release. Okay.
+
+01:43:01.920 --> 01:43:06.620
+So here I have this one, which is available. That's fine.
+
+01:43:07.740 --> 01:43:09.100
+What is the actual error?
+
+01:43:12.780 --> 01:43:16.380
+Command window. Not this one. Okay. Line number 19. Done.
+
+01:43:16.440 --> 01:43:21.580
+Check all processor arcs. Done. Non-zero exit status. This
+
+01:43:21.580 --> 01:43:23.000
+one, a starter B. Okay.
+
+01:43:25.800 --> 01:43:30.580
+Oh, sanitize it. Export to SVG. Okay.
+
+01:43:34.470 --> 01:43:34.970
+Okay.
+
+01:43:49.200 --> 01:43:49.700
+So it's a little bit more difficult, but that was a little
+
+01:43:49.700 --> 01:43:50.040
+bit more difficult. It's going to show us the stuff that
+
+01:43:50.040 --> 01:43:50.160
+happened in the past. So it is now going to show you guys
+
+01:43:50.160 --> 01:43:54.000
+what kind of analysis system is trying to do. So everything.
+
+01:43:54.260 --> 01:43:58.060
+So see, uh, till here, uh, basically I'm not able to create,
+
+01:43:58.200 --> 01:44:01.760
+uh, just our final UI or means final images, which I will
+
+01:44:01.760 --> 01:44:05.160
+create it now itself. Right. right but see my digraph is
+
+01:44:05.160 --> 01:44:08.140
+generated I'm saving that digraph as well so I have just
+
+01:44:08.140 --> 01:44:10.960
+asked that what was my question my question was give me a
+
+01:44:10.960 --> 01:44:14.620
+roadmap for the agentic AI right now here it has started
+
+01:44:14.620 --> 01:44:18.640
+giving me a roadmap for the agentic AI so large language
+
+01:44:18.640 --> 01:44:21.120
+model so first of all python programming then neuron python
+
+01:44:21.120 --> 01:44:23.640
+course you have to go ahead with then machine learning then
+
+01:44:23.640 --> 01:44:25.040
+you know machine learning you have to go with then
+
+01:44:25.040 --> 01:44:28.260
+fundamentals NLP you have to go with and then fundamentals
+
+01:44:28.260 --> 01:44:30.860
+deep learning you have to go with and then basically a
+
+01:44:30.860 --> 01:44:34.000
+specialization so large language model you're on LLM mastery
+
+01:44:34.000 --> 01:44:35.820
+courses you have to go with then a specialization
+
+01:44:35.820 --> 01:44:39.800
+reinforcement learning AI programming framework right so it
+
+01:44:39.800 --> 01:44:43.780
+has given me a detail detail roadmap plus it is able to even
+
+01:44:43.780 --> 01:44:48.140
+create a like a complete graph as you can see edge and nodes
+
+01:44:48.140 --> 01:44:50.880
+edge and nodes it is able to create now this data will be
+
+01:44:50.880 --> 01:44:54.200
+used to populate a kind of images which I'm talking about
+
+01:44:54.200 --> 01:44:58.520
+right so sometime I'm going to fix it and then you will be
+
+01:44:58.520 --> 01:45:02.420
+able to see that yeah so like we will be having like a
+
+01:45:02.440 --> 01:45:06.560
+images but as you can see this is my output result this is
+
+01:45:06.560 --> 01:45:10.100
+what I am able to build it from my elements and everything
+
+01:45:10.100 --> 01:45:15.900
+fine guys yeah so let me go ahead and fix the issue by the
+
+01:45:15.900 --> 01:45:19.340
+way and then you will be able to see the final result but
+
+01:45:19.340 --> 01:45:23.560
+all those results are able to populate from there itself and
+
+01:45:23.560 --> 01:45:26.020
+anyone who is able to run it guys and please check that
+
+01:45:26.020 --> 01:45:28.660
+change the directory don't use my directory because it's not
+
+01:45:28.660 --> 01:45:30.380
+going to work for you so
+
+01:45:50.380 --> 01:45:51.760
+anyone who is able to execute
+
+01:45:59.190 --> 01:46:02.110
+ok so it's done working for me ok that's great like I said
+
+01:46:02.110 --> 01:46:06.350
+so this this is basically a path issue and I always try to
+
+01:46:06.350 --> 01:46:09.650
+face this one with like a so
+
+01:46:25.110 --> 01:46:31.850
+Windows 10 make release graph let me check into my D drive I
+
+01:46:31.850 --> 01:46:35.550
+don't think that I have deleted this drive but yeah Windows
+
+01:46:35.550 --> 01:46:42.150
+graph viz and then bin so this path is available it seems
+
+01:46:43.060 --> 01:46:48.530
+graph viz gravis win path is available this
+
+01:46:53.780 --> 01:46:57.540
+uh application is an example of reg this is application is
+
+01:46:57.540 --> 01:47:01.380
+the example of multi-agent basically multi-agent with lang
+
+01:47:01.380 --> 01:47:05.340
+graph i mean you should not ask this question after two hour
+
+01:47:05.340 --> 01:47:08.260
+of discussion at least this this is not what i what i was
+
+01:47:08.260 --> 01:47:13.100
+expecting by the way uh maybe you have joined a little bit
+
+01:47:13.100 --> 01:47:17.000
+late i can understand in that case okay so os environment
+
+01:47:17.000 --> 01:47:22.920
+then graph base digraph okay so basically import os os dot
+
+01:47:22.920 --> 01:47:26.900
+environment and then like uh let
+
+01:47:34.640 --> 01:47:39.660
+me change this digraph so
+
+01:47:42.570 --> 01:47:44.890
+those who are running it for the very first time so please
+
+01:47:44.890 --> 01:47:49.170
+go to google and try to download a graph which this is just
+
+01:47:49.170 --> 01:47:52.290
+a library to plot the graph but yeah it gives you issue so
+
+01:47:52.290 --> 01:47:55.450
+please try to download the graph which and for windows and
+
+01:47:55.450 --> 01:47:58.270
+mac and linux for everything it is simple available so you
+
+01:47:58.270 --> 01:48:01.350
+can you can try to download it right everything is available
+
+01:48:01.350 --> 01:48:08.990
+now let me recheck i have just made the update let
+
+01:48:17.530 --> 01:48:19.950
+me ping the roadmap for machine learning only
+
+01:48:26.490 --> 01:48:31.530
+name re is not defined multi-graph knowledge builder graph
+
+01:48:36.040 --> 01:48:43.130
+which line number seven in sanitize clean re so re
+
+01:48:47.870 --> 01:48:50.630
+is not defined okay regex
+
+01:48:55.590 --> 01:48:56.990
+as re no
+
+01:49:06.460 --> 01:49:08.880
+module name regex okay
+
+01:49:18.700 --> 01:49:21.880
+import re directly then roadmap
+
+01:49:28.060 --> 01:49:29.420
+for machine learning
+
+01:49:36.720 --> 01:49:44.620
+same kind of issue graph is backend execute multiple okay
+
+01:49:48.610 --> 01:49:52.810
+my graph which is available it was working day for yesterday
+
+01:49:53.590 --> 01:49:57.770
+uh but yeah again so when i restart the system so maybe i'll
+
+01:49:57.770 --> 01:50:02.830
+have to go and check something open command prompt done
+
+01:51:03.380 --> 01:51:03.940
+i did copy and paste it, so let me do that and repost it, so
+
+01:51:03.940 --> 01:51:06.400
+let me further conda install it on windows and it worked
+
+01:51:06.400 --> 01:51:10.560
+yeah it it actually works but uh sometime what happens is
+
+01:51:10.560 --> 01:51:15.020
+like uh it gives you as well let
+
+01:51:22.310 --> 01:51:22.610
+me
+
+01:51:35.440 --> 01:51:39.680
+conda install i'll do it okay
+
+01:52:09.640 --> 01:52:13.780
+let me check uh i have even like given a path uh directly
+
+01:52:13.780 --> 01:52:16.680
+but sometime streamlit
+
+01:52:19.010 --> 01:52:21.210
+run app.py only
+
+01:52:32.060 --> 01:52:34.540
+my graph generation part is given error that image part
+
+01:52:34.540 --> 01:52:35.440
+again
+
+01:52:37.680 --> 01:52:40.200
+same issue it's
+
+01:52:42.920 --> 01:52:45.740
+already available it is not able to recognize
+
+01:52:55.330 --> 01:52:55.890
+cls
+
+01:54:21.430 --> 01:54:25.590
+so just a minute guys just fixing a very very minor issue
+
+01:54:25.590 --> 01:54:30.870
+but that's a big issue we always face in terms of a windows
+
+01:54:30.870 --> 01:54:35.310
+machine uh i'm not doesn't mean that you guys will face the
+
+01:54:35.310 --> 01:54:36.730
+same issue so
+
+01:54:39.060 --> 01:54:41.240
+i'm assuming that most of you will not face the same issue
+
+01:54:41.240 --> 01:54:44.440
+it's my system depending on the system an issue where it is
+
+01:54:44.440 --> 01:54:47.900
+not able to organize the actual like a graph with
+
+01:54:47.900 --> 01:54:49.440
+installation let
+
+01:55:40.930 --> 01:55:42.530
+me graph
+
+01:55:51.140 --> 01:55:54.900
+viz which control
+
+01:55:59.220 --> 01:56:06.920
+c drive to grime program files and control v okay
+
+01:56:09.450 --> 01:56:11.050
+grab which is
+
+01:56:16.300 --> 01:56:18.100
+bin environment
+
+01:56:20.720 --> 01:56:23.640
+variable let me add it of
+
+01:56:27.160 --> 01:56:38.060
+which program files grab which graph g-r-a-p-h viz okay okay
+
+01:56:38.060 --> 01:56:50.940
+okay good now i can try to go here close it close it okay
+
+01:57:32.220 --> 01:57:37.120
+so control x everything
+
+01:57:54.040 --> 01:57:57.420
+looks
+
+01:57:57.420 --> 01:58:01.280
+fine but still okay
+
+01:58:40.520 --> 01:58:47.380
+it seems uh it got corrupted so let me check it once again
+
+01:58:47.380 --> 01:58:48.400
+so
+
+01:59:13.710 --> 01:59:14.670
+if you have not logged in grab viz so just download it guys
+
+01:59:14.670 --> 01:59:17.210
+uh my grab viz oh
+
+01:59:21.140 --> 01:59:24.420
+i think we have crossed the time so just a minute guys just
+
+01:59:24.420 --> 01:59:30.640
+a minute i'm going to activate your entire timeline so let
+
+01:59:30.640 --> 01:59:34.920
+me change this too yeah
+
+01:59:46.190 --> 01:59:49.490
+so now i believe you will be able to see the like this one
+
+01:59:49.490 --> 01:59:52.290
+uh chat box previously
+
+01:59:54.430 --> 01:59:57.370
+it was scheduled till 4 30 so now i have just changed the
+
+01:59:57.370 --> 01:59:58.670
+timeline okay
+
+02:00:33.550 --> 02:00:37.190
+So I have just activated a chat guys so you can join the
+
+02:00:37.190 --> 02:00:37.450
+chat.
+
+02:00:45.050 --> 02:00:52.580
+I have just like a done a fresh installation so I'm just
+
+02:00:52.580 --> 02:00:58.560
+doing it program files and then my graph wedge delete the
+
+02:00:58.560 --> 02:01:00.260
+old one same
+
+02:02:18.560 --> 02:02:24.320
+issue same issue it's just a environment like a issue but
+
+02:02:24.320 --> 02:02:28.400
+it's irritating us a lot. The
+
+02:04:00.020 --> 02:04:07.840
+problem is like graph is unable to install so let
+
+02:04:15.230 --> 02:04:19.770
+me do one thing guys let me download the exe and I'll just
+
+02:04:19.770 --> 02:04:20.530
+ram
+
+02:04:34.420 --> 02:04:36.700
+file graph wedge yeah
+
+02:04:48.600 --> 02:04:52.840
+I have used installer as well just one minor issue which is
+
+02:04:52.840 --> 02:04:54.300
+like let
+
+02:04:59.230 --> 02:05:07.050
+me close vs code and then vs code open once again file open
+
+02:05:07.050 --> 02:05:13.730
+folder. And d drive code multi
+
+02:05:22.400 --> 02:05:24.980
+agent graph streamlet
+
+02:06:18.770 --> 02:06:20.670
+run okay
+
+02:06:35.140 --> 02:06:38.000
+hoping that this time it will work okay
+
+02:06:42.800 --> 02:06:45.520
+same issue let
+
+02:06:47.050 --> 02:06:52.590
+me test whether it's able to organize my graph
+
+02:06:55.280 --> 02:07:01.160
+wedge or not so gmail or environment.
+
+02:07:08.100 --> 02:07:10.320
+Maybe not. Maybe I'll have to restart my system I don't know
+
+02:07:10.320 --> 02:07:15.620
+because it is not able to understand my graph wedge.
+
+02:07:18.760 --> 02:07:28.200
+So download c drive program file graph wedge. Okay so
+
+02:07:28.200 --> 02:07:35.020
+uninstall file is available. Maybe I can go to bin. Try to
+
+02:07:35.020 --> 02:07:36.720
+change it. Inside
+
+02:07:41.590 --> 02:07:42.410
+a path.
+
+02:07:48.130 --> 02:07:49.810
+okay okay okay
+
+02:09:17.490 --> 02:09:19.430
+yeah
+
+02:10:44.170 --> 02:10:49.590
+so finally as you can see guys it worked and uh like i said
+
+02:10:49.590 --> 02:10:52.550
+so there was no issue anyone is there in a class or everyone
+
+02:10:52.550 --> 02:10:57.980
+has left okay so i i can see couple of people here okay so
+
+02:10:57.980 --> 02:10:59.220
+maybe
+
+02:11:01.370 --> 02:11:07.290
+being in a group first it's working so this is a kind of a
+
+02:11:07.290 --> 02:11:11.170
+issue guys where we spent the whole night uh and not because
+
+02:11:11.170 --> 02:11:15.730
+we are logically incorrect because of the dependencies and
+
+02:11:15.730 --> 02:11:19.330
+this this we always face like this kind of issue okay
+
+02:11:19.330 --> 02:11:25.870
+amazing amazing to see that you guys are here um so for us
+
+02:11:25.870 --> 02:11:30.130
+it's kind of a regular stuff so we always try to spend a lot
+
+02:11:30.130 --> 02:11:33.570
+of time uh just to fix a minor issue where there is no
+
+02:11:33.570 --> 02:11:36.090
+logical error but just a dependency error so this was that
+
+02:11:36.090 --> 02:11:39.370
+kind of error uh because it was not able to fix in the graph
+
+02:11:39.370 --> 02:11:43.130
+of which there was a conflict even after installing even
+
+02:11:43.130 --> 02:11:46.410
+after manually setting up this particular path to find my
+
+02:11:46.410 --> 02:11:50.350
+graph which it was giving me an issue it was not able to
+
+02:11:50.350 --> 02:11:53.430
+execute but yeah now i'm able to execute it now let's go
+
+02:11:53.430 --> 02:11:56.410
+ahead and try to check into the output so here if you will
+
+02:11:56.410 --> 02:12:00.230
+come so you will be able to see this output.svg if you are
+
+02:12:00.230 --> 02:12:05.170
+going to open it up this entire output file so you will be
+
+02:12:05.170 --> 02:12:12.790
+able to find out let me show you so this copy path yeah so
+
+02:12:12.790 --> 02:12:16.650
+this is basically a graph that we are able to build as you
+
+02:12:16.650 --> 02:12:21.390
+can see right now what was the query that we have so my
+
+02:12:21.390 --> 02:12:24.690
+query was very simple so when i was like giving a query
+
+02:12:24.690 --> 02:12:30.110
+right when i was like a remove everything remove this one
+
+02:12:30.110 --> 02:12:35.210
+this was the old run this was also the old run this was also
+
+02:12:35.210 --> 02:12:36.730
+old run yeah
+
+02:12:39.130 --> 02:12:42.170
+this is also my previous run previous
+
+02:12:47.960 --> 02:12:49.780
+remove it previous
+
+02:12:55.190 --> 02:12:56.990
+one this
+
+02:12:59.780 --> 02:13:03.580
+is the latest run right so here i'm just trying to like open
+
+02:13:03.580 --> 02:13:07.440
+up this entire like a things and i'm just trying to show you
+
+02:13:07.440 --> 02:13:11.400
+that what what it is what it is able to basically produce
+
+02:13:11.400 --> 02:13:15.700
+right so i have given a very simple query i said that that
+
+02:13:15.700 --> 02:13:16.220
+roadmap following the previous run this was also the old run
+
+02:13:16.220 --> 02:13:17.080
+this was also the old run this was also machine learning so
+
+02:13:17.080 --> 02:13:19.600
+it is it is able to build a roadmap for the machine learning
+
+02:13:19.600 --> 02:13:23.160
+and as we know that that we are using a three agents right
+
+02:13:23.160 --> 02:13:27.060
+we are using basically a three agent and in a detailed way
+
+02:13:27.060 --> 02:13:31.460
+as it's a ai as it's a llm so my roadmap your roadmap is not
+
+02:13:31.460 --> 02:13:35.280
+going to be same but yeah structure is more or less you can
+
+02:13:35.280 --> 02:13:39.760
+see that it's a same right so now if i'm going to ask that
+
+02:13:39.760 --> 02:13:48.000
+give me a roadmap for like a becoming IAS IAS in India right
+
+02:13:48.580 --> 02:13:51.480
+so roadmap for becoming IAS in India or maybe roadmap for
+
+02:13:51.480 --> 02:13:54.760
+cracking IIT JEE it will be able to give me see now roadmap
+
+02:13:54.760 --> 02:13:58.820
+I have received for becoming IAS so maybe I can go over here
+
+02:13:58.820 --> 02:14:03.660
+I can check once again so it is telling me that fundamentals
+
+02:14:03.660 --> 02:14:07.120
+you have to prepare and under the UPSC exam pattern
+
+02:14:07.120 --> 02:14:11.340
+eligibility you just try to check Iran because forcefully I
+
+02:14:11.340 --> 02:14:14.340
+have said check Iran for everything develop a strong reading
+
+02:14:14.340 --> 02:14:17.940
+habit then master NCID textbook basic current affairs and
+
+02:14:17.940 --> 02:14:20.860
+general knowledge preparation strategy so create a study
+
+02:14:20.860 --> 02:14:25.340
+plan timetable and then like primarily preparation so focus
+
+02:14:25.340 --> 02:14:29.540
+on GS paper and CSAT then solve a previous year paper right
+
+02:14:29.540 --> 02:14:34.040
+focus on is essay GS paper and optional specialized practice
+
+02:14:34.040 --> 02:14:36.760
+then practice to and improve daily update and revision
+
+02:14:36.760 --> 02:14:40.340
+regular revision self-assessment personality development and
+
+02:14:40.340 --> 02:14:43.040
+mock interview for a interview preparation then final
+
+02:14:43.040 --> 02:14:45.280
+revision complete syllabus mock test time management
+
+02:14:45.280 --> 02:14:49.480
+practice under the exam condition right and then like health
+
+02:14:49.480 --> 02:14:52.200
+and well-being obviously it is also giving you that maintain
+
+02:14:52.200 --> 02:14:57.000
+the balance so yeah now I can I can create like a anything
+
+02:14:57.000 --> 02:15:01.360
+and even I can try to make this entire generation better
+
+02:15:01.360 --> 02:15:05.080
+right because I have a code and I have a complete control
+
+02:15:05.080 --> 02:15:09.400
+over to the code so whatever I have written inside my like
+
+02:15:09.400 --> 02:15:13.160
+researcher I know about it whatever I have written for
+
+02:15:13.160 --> 02:15:16.000
+example agent right so whatever I have written inside the
+
+02:15:16.000 --> 02:15:19.220
+synthesizer I'm aware about it right I'll just try to like
+
+02:15:19.220 --> 02:15:23.800
+ask to do more I'll just try to like ask a researcher to
+
+02:15:23.800 --> 02:15:26.420
+bring more data from Google from Wikipedia from everywhere
+
+02:15:26.420 --> 02:15:30.500
+maybe I can try to add 10 more sources over here so in this
+
+02:15:30.500 --> 02:15:33.860
+way I can create an agent I can attach an agent with the
+
+02:15:33.860 --> 02:15:37.420
+help of a graph like a lang graph router over lang graph
+
+02:15:37.420 --> 02:15:40.860
+that I have used right and then I will be able to fulfill
+
+02:15:40.860 --> 02:15:47.050
+the complete task isn't this project? amazing guys yeah is
+
+02:15:47.050 --> 02:15:50.470
+this project amazing what is your feeling like we are not
+
+02:15:50.470 --> 02:15:53.370
+able to build very big project it's a small one I would say
+
+02:15:53.370 --> 02:15:58.250
+but yeah useful one right it's a useful one for all of us
+
+02:15:58.250 --> 02:15:59.070
+and
+
+02:16:02.850 --> 02:16:05.530
+necessarily we have spent around like a 45 minute of time
+
+02:16:05.530 --> 02:16:14.260
+just for one single graph installation but I hope yes okay
+
+02:16:15.000 --> 02:16:18.540
+so fine I'm just going to like wrap it up this particular
+
+02:16:18.540 --> 02:16:22.500
+like a one and I'm just going to share with all of you guys
+
+02:16:22.500 --> 02:16:27.960
+so that even today tomorrow or in future you will be able to
+
+02:16:27.960 --> 02:16:31.780
+execute it code let me delete
+
+02:16:34.020 --> 02:16:35.620
+this one multi
+
+02:16:41.410 --> 02:16:46.190
+agent graph so likewise we have just started so many project
+
+02:16:46.190 --> 02:16:50.310
+we have to create so like generally people I have seen
+
+02:16:50.310 --> 02:16:54.130
+people that they think LLM or something is like sorry this
+
+02:16:54.130 --> 02:16:57.730
+lang chain or these things are big things it's a complex one
+
+02:16:57.730 --> 02:17:01.070
+believe me it's not at all complex it's very much logically
+
+02:17:01.070 --> 02:17:05.230
+connected and even without using these libraries you can do
+
+02:17:05.230 --> 02:17:09.530
+it right that is also possible and like I said so maybe five
+
+02:17:09.530 --> 02:17:13.950
+of you or ten of you can like join hands together at least
+
+02:17:13.950 --> 02:17:17.070
+some of the library by yourself that will be fun believe me
+
+02:17:17.070 --> 02:17:20.830
+that will be fun and if you are going to take a step and if
+
+02:17:20.830 --> 02:17:24.070
+you are trying to like do some sort of improvement maybe
+
+02:17:24.070 --> 02:17:30.810
+I'll support you right depends on the result sir it's mainly
+
+02:17:30.810 --> 02:17:33.750
+for creating a roadmap or we can also add a complete content
+
+02:17:33.750 --> 02:17:36.290
+according to the industry you can add the complete content
+
+02:17:36.290 --> 02:17:39.770
+and this is called real life programming exactly yeah this
+
+02:17:39.770 --> 02:17:42.650
+is something called as real so this is how in reality things
+
+02:17:42.650 --> 02:17:49.510
+works in reality it's actually even worse than that so yeah
+
+02:17:51.480 --> 02:17:55.020
+okay so basically you can ask any question like see it's
+
+02:17:55.020 --> 02:17:58.320
+just an agent right so one is for searching agent so maybe I
+
+02:17:58.320 --> 02:18:04.540
+can try to search for maybe like a tell me what I should
+
+02:18:04.540 --> 02:18:04.900
+search
+
+02:18:08.660 --> 02:18:12.240
+he he okay so I
+
+02:18:13.520 --> 02:18:18.780
+can ask just any question over here and then everything it
+
+02:18:18.780 --> 02:18:21.060
+will try to give me in terms of graph because this is how I
+
+02:18:21.060 --> 02:18:23.240
+have like a configured it right so
+
+02:18:26.150 --> 02:18:29.550
+any roadmap which I am looking for so I should not go out
+
+02:18:29.550 --> 02:18:32.490
+and then ask maybe I can just go ahead and ask AI I can do
+
+02:18:32.490 --> 02:18:37.130
+it I can build my own so fine guys roadmap to crack neat
+
+02:18:37.130 --> 02:18:43.070
+every it's almost same so roadmap to crack so someone is
+
+02:18:43.070 --> 02:18:47.830
+preparing at your house for neat or how to become PM okay so
+
+02:18:47.830 --> 02:18:54.070
+PM as a product manager project manager or as a PM of
+
+02:18:54.070 --> 02:18:54.450
+country
+
+02:18:57.110 --> 02:19:00.690
+resume for JNI so this is going to give you roadmap right so
+
+02:19:00.690 --> 02:19:03.830
+this is this agents I have configured for a specific task
+
+02:19:03.830 --> 02:19:08.510
+now it's giving you like a roadmap for this one it's it's
+
+02:19:08.590 --> 02:19:09.990
+giving you a roadmap for like a
+
+02:19:14.220 --> 02:19:18.460
+neat sorry this is for Prime
+
+02:19:41.620 --> 02:19:44.820
+Minister okay fine let me ask where
+
+02:19:47.320 --> 02:19:51.040
+is my VS code up and running things so here is my VS code
+
+02:19:51.510 --> 02:19:52.740
+here is my local host
+
+02:20:05.760 --> 02:20:15.050
+how to become Prime Minister of India let's see so it should
+
+02:20:15.050 --> 02:20:19.470
+it should create like a okay so let's just go and check it
+
+02:20:19.470 --> 02:20:21.990
+has given me some response yeah
+
+02:20:26.110 --> 02:20:30.230
+it's a Prime Minister of India response copy path
+
+02:20:30.230 --> 02:20:31.510
+fundamentals
+
+02:20:37.240 --> 02:20:40.520
+of Indian politics understanding Indian constitution and
+
+02:20:40.520 --> 02:20:43.460
+political system okay so every time it is giving you
+
+02:20:43.460 --> 02:20:45.380
+recommendation as well because in a prompt I have given
+
+02:20:45.380 --> 02:20:49.040
+right so for everything follow your own do whatever in your
+
+02:20:49.040 --> 02:20:52.160
+life doesn't matter at all follow your own fundamentals of
+
+02:20:52.160 --> 02:20:54.840
+Indian politics political history of India governance skill
+
+02:20:54.840 --> 02:20:58.560
+communication skill leadership development electoral process
+
+02:20:58.560 --> 02:21:02.560
+social work and community engagement legal knowledge media
+
+02:21:02.560 --> 02:21:06.800
+and public relations policy specialization advanced campaign
+
+02:21:06.800 --> 02:21:09.880
+strategy networking and mentorship practical example
+
+02:21:09.880 --> 02:21:14.400
+personal branding continuous learning election campaign
+
+02:21:14.400 --> 02:21:17.240
+preparation post election governance leadership in action
+
+02:21:17.840 --> 02:21:22.920
+maintain public support so you can maybe calculate the
+
+02:21:22.920 --> 02:21:26.640
+number of weeks which is required so on an average this much
+
+02:21:26.640 --> 02:21:29.320
+time it is going to take weeks and months also it has given
+
+02:21:29.320 --> 02:21:32.680
+to you right so weeks and months it has given to you so
+
+02:21:32.680 --> 02:21:37.000
+maybe like this much of time you can invest then you can
+
+02:21:37.000 --> 02:21:42.360
+maybe think a little bit Rane toh sir hum engineer hi theek
+
+02:21:42.360 --> 02:21:43.360
+hai exactly
+
+02:21:45.780 --> 02:21:50.540
+okay so how did you solve the grab which issue with the with
+
+02:21:50.540 --> 02:21:53.680
+what command actually with not a command so there is a this
+
+02:21:53.680 --> 02:21:56.780
+grab which let me ping you this one
+
+02:22:01.260 --> 02:22:04.560
+yeah so basically there is a grab which official download
+
+02:22:04.560 --> 02:22:08.700
+packages so i have i was using this package actually and i
+
+02:22:08.700 --> 02:22:10.800
+was setting up the path but yeah what i have done i have
+
+02:22:10.800 --> 02:22:14.040
+just deleted all the packages removed not deleted i just
+
+02:22:14.040 --> 02:22:16.720
+shifted it to the other folder because it was asking me to
+
+02:22:16.720 --> 02:22:19.580
+restart my system so this is the exe installer i have just
+
+02:22:19.580 --> 02:22:22.540
+installed it over here in a windows and then go to your
+
+02:22:23.500 --> 02:22:29.300
+environment variable so envi orn environment system
+
+02:22:29.300 --> 02:22:32.880
+environment variable and set the path over here so
+
+02:22:32.880 --> 02:22:36.540
+environment variable and then there is a path so just try to
+
+02:22:36.540 --> 02:22:39.000
+set the path over here that's it this is what i have done
+
+02:22:40.930 --> 02:22:42.830
+inside this yeah
+
+02:22:44.940 --> 02:22:47.780
+so as you can see inside my graph i have added grab which
+
+02:22:47.780 --> 02:22:50.740
+inside my path program file grab which this is the default
+
+02:22:50.740 --> 02:22:52.840
+directory where it will store where it will like install
+
+02:22:52.840 --> 02:22:58.580
+that's it even the previous step which i have used wins
+
+02:22:58.580 --> 02:23:01.380
+directly passing a path it was working i have already tested
+
+02:23:01.380 --> 02:23:04.900
+it but yeah sometime when we restart the system so because
+
+02:23:04.900 --> 02:23:10.160
+of some like a folder structure changes it got disturbed can
+
+02:23:12.690 --> 02:23:16.450
+we deploy this app absolutely you can deploy this app please
+
+02:23:16.450 --> 02:23:20.070
+go to some of my mcp or maybe some other project which i
+
+02:23:20.070 --> 02:23:22.990
+have discussed or even in your class i'll be discussing this
+
+02:23:22.990 --> 02:23:26.210
+see guys a fundamental things which i follow in terms of
+
+02:23:26.210 --> 02:23:30.410
+deployment is i will simply convert this entire project as a
+
+02:23:30.410 --> 02:23:34.330
+docker in one single image now once project is available as
+
+02:23:34.330 --> 02:23:38.730
+a docker i can dump that project anywhere aws gcp azure
+
+02:23:38.730 --> 02:23:41.770
+maybe into a render or any other cloud platform because if i
+
+02:23:41.770 --> 02:23:41.970
+want to deploy a project as a docker then i have to deploy a
+
+02:23:41.970 --> 02:23:43.150
+project as a docker because now that deployment will become
+
+02:23:43.150 --> 02:23:47.150
+very very easy if i have to like a attach with the databases
+
+02:23:47.150 --> 02:23:51.170
+i can simple like a host a database somewhere or maybe some
+
+02:23:51.170 --> 02:23:54.090
+server less databases i will be using and then just call the
+
+02:23:55.030 --> 02:23:58.170
+connectors over there so i'll show you deployment as well
+
+02:23:58.170 --> 02:24:00.770
+deployment is not at all a big deal believe me it's a very
+
+02:24:00.770 --> 02:24:03.870
+very easy just you should know that how to build the entire
+
+02:24:03.870 --> 02:24:07.350
+pipeline once then it will be easy otherwise like it looks
+
+02:24:07.350 --> 02:24:09.310
+tough obviously prompt
+
+02:24:14.690 --> 02:24:19.490
+writing model yeah but eventually you will learn it
+
+02:24:19.490 --> 02:24:21.430
+eventually you will learn it when you will start solving the
+
+02:24:21.430 --> 02:24:24.310
+real problem unless you don't see the real problems you will
+
+02:24:24.310 --> 02:24:27.830
+not be able to learn it can we deploy this app i'll show you
+
+02:24:27.830 --> 02:24:30.370
+that so deployment and everything i'll show you in a class
+
+02:24:30.370 --> 02:24:32.390
+itself so don't worry you don't have to like worry about
+
+02:24:32.390 --> 02:24:38.350
+anything okay fine guys so i'm done for today so hope all of
+
+02:24:38.350 --> 02:24:43.230
+you have enjoyed even i have enjoyed this class so see you
+
+02:24:43.230 --> 02:24:48.930
+again guys in my next class and yeah so we'll do a lot of
+
+02:24:48.930 --> 02:24:53.030
+things in langchain langraph langsmith crew ai and other
+
+02:24:54.150 --> 02:24:57.690
+agent provider with the same fundamental that we have
+
+02:24:57.690 --> 02:25:01.670
+learned with that thank you so much everyone and see you
+
+02:25:01.670 --> 02:25:04.590
+again in my next lecture which is going to happen on
+
+02:25:04.590 --> 02:25:07.770
+saturday thank you thanks everyone thank you doctor thank
+
+02:25:07.770 --> 02:25:09.990
+you kumar everyone thank you thanks
+

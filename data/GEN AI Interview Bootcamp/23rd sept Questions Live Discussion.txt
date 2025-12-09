@@ -1,0 +1,4793 @@
+WEBVTT
+
+00:03:55.310 --> 00:03:58.070
+okay so hi everyone i think i'm audible and visible to all
+
+00:03:58.070 --> 00:04:00.090
+of you so please bring my chat if i'm audible and visible
+
+00:04:00.090 --> 00:04:04.490
+and then we are going to start our discussion so basically
+
+00:04:04.490 --> 00:04:09.030
+we have discussed till 95th number question i believe and
+
+00:04:09.030 --> 00:04:14.270
+today i'll start giving an answer from 96th number question
+
+00:04:14.270 --> 00:04:18.910
+my version of answer obviously and i'm assuming that you all
+
+00:04:18.910 --> 00:04:22.270
+are preparing your version of your answer so you are like
+
+00:04:22.270 --> 00:04:27.010
+taking a help of maybe an ai gpt or maybe a yuri and then
+
+00:04:27.010 --> 00:04:31.410
+you are preparing your own answer but yeah so i'll discuss
+
+00:04:31.410 --> 00:04:35.730
+about mine so fine let's start let's start with the
+
+00:04:35.730 --> 00:04:37.030
+discussion someone
+
+00:04:40.740 --> 00:04:43.180
+is pinging in a group i don't get a link of interview
+
+00:04:43.180 --> 00:04:49.240
+bootcamp it's in a dashboard by the way so okay
+
+00:04:54.720 --> 00:05:00.120
+so let me share my screen and
+
+00:05:05.550 --> 00:05:08.470
+let's start talking about a generative vi interview question
+
+00:05:08.470 --> 00:05:14.850
+and its answer so yesterday in my previous discussion so i
+
+00:05:14.850 --> 00:05:17.970
+discussed till this particular point 95th number question
+
+00:05:17.970 --> 00:05:22.350
+now let's start talking about a question from here so one by
+
+00:05:22.350 --> 00:05:25.250
+one basically i will try to give an answer from my side and
+
+00:05:25.250 --> 00:05:27.290
+if you have any kind of a question from your side so yeah
+
+00:05:27.290 --> 00:05:31.110
+feel free to ask those question in a chat chat is already
+
+00:05:31.110 --> 00:05:35.030
+open for all of us so here a question says that that how do
+
+00:05:35.030 --> 00:05:35.030
+you answer a question from your side so yeah feel free to
+
+00:05:35.030 --> 00:05:36.630
+ask those question in a chat how do you implement a multi
+
+00:05:36.630 --> 00:05:41.750
+-agent system with a generative ai now so whenever someone
+
+00:05:41.750 --> 00:05:45.070
+is asking uh like this kind of a question that how do you
+
+00:05:45.070 --> 00:05:47.850
+implement a multi-end system with the generative ai so
+
+00:05:47.850 --> 00:05:50.490
+obviously i have to give a use cases that okay i was like
+
+00:05:50.490 --> 00:05:53.030
+trying to solve this particular problem or that particular
+
+00:05:53.030 --> 00:05:57.170
+problem and this is a place where i have used a multi-agent
+
+00:05:57.170 --> 00:06:00.910
+and let's suppose if i have not used a multi-agent in any
+
+00:06:00.910 --> 00:06:05.070
+places so in that case maybe i can just give a theory or a i
+
+00:06:05.070 --> 00:06:08.290
+can talk about the story or analogy around it that okay so
+
+00:06:08.290 --> 00:06:11.910
+this is how we can try to build a multi-agent system now
+
+00:06:11.910 --> 00:06:14.830
+first of all what is a multi-agent system i believe we have
+
+00:06:14.830 --> 00:06:17.450
+already seen that in our live classes as well for a
+
+00:06:17.450 --> 00:06:21.190
+generative certification uh this week so we discussed about
+
+00:06:21.190 --> 00:06:24.910
+a crew ai right and we were trying to solve a resume ats
+
+00:06:24.910 --> 00:06:27.910
+resume problem inside our class we have built a small
+
+00:06:27.910 --> 00:06:30.670
+application so where it will be able to take a resume as an
+
+00:06:30.670 --> 00:06:34.090
+input it will be able to take a job description as an input
+
+00:06:34.090 --> 00:06:38.010
+and a job title as an input and then it will try to parse
+
+00:06:38.010 --> 00:06:42.530
+your entire resume it will try to spot all the main points
+
+00:06:42.530 --> 00:06:45.470
+so whether it's your like a email id or maybe a linkedin id
+
+00:06:45.470 --> 00:06:49.630
+maybe a github id or maybe about the project duration of the
+
+00:06:49.630 --> 00:06:52.530
+project your skill set everything it will try to spot one by
+
+00:06:52.530 --> 00:06:54.990
+one one by one as per the instruction which i have given to
+
+00:06:54.990 --> 00:07:00.770
+my llm and then it will try to rephrase or rewrite the
+
+00:07:00.770 --> 00:07:05.250
+entire resume as per the job description so basically it's
+
+00:07:05.250 --> 00:07:07.970
+kind of a reverse ordering or reverse engineering that we
+
+00:07:07.970 --> 00:07:10.530
+were trying to do that okay take my resume align it with the
+
+00:07:10.530 --> 00:07:14.290
+job description and then it was giving me a tuned final
+
+00:07:14.290 --> 00:07:18.950
+version of my resume content apart from that so it was also
+
+00:07:18.950 --> 00:07:24.250
+trying to give me basically my i would say a a ATS score
+
+00:07:24.250 --> 00:07:28.250
+right ATS score so in a real manner the way system any
+
+00:07:28.250 --> 00:07:31.490
+system is going to calculate the ATS score in the similar
+
+00:07:31.490 --> 00:07:34.950
+manner right in the similar manner basically it was giving
+
+00:07:34.950 --> 00:07:39.850
+me a ATS score now to read or to parse this entire resume to
+
+00:07:39.850 --> 00:07:45.350
+generate a new content for a resume and even to you know
+
+00:07:45.350 --> 00:07:49.690
+align this resume with a job description and to basically
+
+00:07:50.510 --> 00:07:54.970
+give a ATS score of a new content or a new resume content
+
+00:07:54.970 --> 00:07:58.870
+with respect to a job description so we have used agents at
+
+00:07:58.870 --> 00:08:02.150
+different different agents so one was doing like one task
+
+00:08:02.150 --> 00:08:05.070
+other was doing other tasks or like third was doing third
+
+00:08:05.070 --> 00:08:09.530
+tasks so likewise we have used four in total agents which we
+
+00:08:09.530 --> 00:08:12.150
+have built inside a crew ai right this is something that we
+
+00:08:12.150 --> 00:08:16.110
+have done and even in stuedium i have shown you that if you
+
+00:08:16.110 --> 00:08:19.130
+have to build it without writing a single line of a code how
+
+00:08:19.130 --> 00:08:23.610
+you can do it basically so that there was a use cases right
+
+00:08:23.610 --> 00:08:25.850
+so basically that was So whenever I have to give an answer
+
+00:08:25.850 --> 00:08:28.270
+of this question, so obviously I'll talk about one of the
+
+00:08:28.270 --> 00:08:30.990
+use case that okay, this was the use case I was like
+
+00:08:30.990 --> 00:08:35.850
+building it and it was my need of an hour at that point of
+
+00:08:35.850 --> 00:08:38.930
+time to use a multiple agents. I have used this particular
+
+00:08:38.930 --> 00:08:42.570
+framework for that particular agent. For some of the agent I
+
+00:08:42.570 --> 00:08:46.410
+have give some tool access basically for some of the agent
+
+00:08:46.410 --> 00:08:50.610
+it was like a just a simple LLM instruction which was given
+
+00:08:50.610 --> 00:08:53.850
+to those agent and then I have built the multi agent system.
+
+00:08:54.010 --> 00:08:56.890
+So how you will be able to implement obviously by using some
+
+00:08:56.890 --> 00:09:00.250
+of the orchestration framework. Maybe you can say a crew AI,
+
+00:09:00.410 --> 00:09:03.250
+maybe you can say autogen, autogen is even very, very
+
+00:09:03.250 --> 00:09:07.150
+powerful nowadays and even like autogen provides you a
+
+00:09:07.150 --> 00:09:11.630
+flexibility just like a crew AI that you can do just a drag
+
+00:09:11.630 --> 00:09:13.910
+and drop and then you will be able to build an agent, you
+
+00:09:13.910 --> 00:09:16.890
+can build a tool inside the agent, everything, everything. I
+
+00:09:16.890 --> 00:09:19.790
+believe next week I'm going to discuss about the autogen in
+
+00:09:19.790 --> 00:09:23.830
+a practical manner and that tool. So without writing much of
+
+00:09:23.830 --> 00:09:27.150
+code, yeah, autogen also provide you even inside the UI
+
+00:09:27.150 --> 00:09:30.290
+interface, autogen also provides you like modify the code
+
+00:09:30.290 --> 00:09:33.650
+base just like a crew AI by the way. Yeah, just like a crew
+
+00:09:33.650 --> 00:09:36.310
+AI which I'm going to show you in a practical manner. But
+
+00:09:36.310 --> 00:09:38.810
+yeah, I can try to use a crew AI, I can try to use autogen,
+
+00:09:38.930 --> 00:09:42.030
+I can try to use n8n, I can try to use a Langraph, I can try
+
+00:09:42.030 --> 00:09:44.170
+to use a Langchain, I can try to use a Lama indexes.
+
+00:09:44.690 --> 00:09:46.770
+Likewise there are so many different, different kind of a
+
+00:09:46.770 --> 00:09:50.470
+like a framework which is available. So where and every
+
+00:09:50.470 --> 00:09:53.930
+frameworks is providing me to build. An independent agent so
+
+00:09:53.930 --> 00:09:57.290
+that agent one agent can pass a data or one agent can talk
+
+00:09:57.290 --> 00:10:00.710
+and communicate to other one. So this is how I will end up
+
+00:10:00.710 --> 00:10:03.370
+building it. If I have to give the answer that okay, I have
+
+00:10:03.370 --> 00:10:05.990
+like I was trying to solve this use case and in this use
+
+00:10:05.990 --> 00:10:08.530
+case, obviously I have used this main number of agents for a
+
+00:10:08.530 --> 00:10:14.130
+different different kind of purposes, right? So it is if it
+
+00:10:14.130 --> 00:10:17.130
+is possible, can you explain one more example other than a
+
+00:10:17.130 --> 00:10:22.510
+resume AI for a multi agent? Okay. So resume AI. Okay. So
+
+00:10:22.510 --> 00:10:24.950
+this is what I have discussed in my previous class, right?
+
+00:10:25.190 --> 00:10:27.630
+Anyone remembers what I have discussed in previous to
+
+00:10:27.630 --> 00:10:31.670
+previous class with respect to a land graph? Yeah. Because
+
+00:10:31.670 --> 00:10:35.250
+just before crew AI, what was the like a project or what was
+
+00:10:35.250 --> 00:10:40.290
+the use case which I have discussed? Anyone anyone who can
+
+00:10:40.290 --> 00:10:50.370
+remember? Yeah, yes. Okay. So Shari is saying document
+
+00:10:50.370 --> 00:10:53.810
+extraction. Okay. So in document extraction. So what, what
+
+00:10:53.810 --> 00:10:56.230
+we have done by the way, so what, what, what kind of a use
+
+00:10:56.230 --> 00:10:57.270
+case we have seen over there?
+
+00:11:02.370 --> 00:11:05.010
+Yes. Any idea?
+
+00:11:15.260 --> 00:11:18.340
+So basically we have extracted an invoice and it's sorted
+
+00:11:18.340 --> 00:11:20.720
+into a sequel light, right? This is something that we have
+
+00:11:20.720 --> 00:11:24.440
+done now. Can I say that even when I was using a land graph
+
+00:11:24.440 --> 00:11:27.840
+framework, I have used a multiple agent over there. Yeah.
+
+00:11:28.340 --> 00:11:31.900
+Multiple agent. And then like, uh, basically we have created
+
+00:11:31.900 --> 00:11:34.860
+a multiple node if you remember from that particular use
+
+00:11:34.860 --> 00:11:37.240
+case, which I have discussed right before this review. Let's
+
+00:11:37.240 --> 00:11:41.000
+resume AI and we have created basically a multiple nodes.
+
+00:11:41.320 --> 00:11:44.280
+Technically that node was behaving like an agent. Some of
+
+00:11:44.280 --> 00:11:46.820
+the agent was having a tool access tool means a function
+
+00:11:46.820 --> 00:11:52.560
+access and uh, it was reading out my invoices. It was trying
+
+00:11:52.560 --> 00:11:56.520
+to call a easy OCR. It was trying to extract a data out of
+
+00:11:56.520 --> 00:11:59.740
+it. It was trying to, uh, you know, refine those data. And
+
+00:11:59.740 --> 00:12:02.220
+then finally it was trying to ingest my data into a
+
+00:12:02.220 --> 00:12:06.820
+databases, right? So again, that is one of the multi agent
+
+00:12:06.820 --> 00:12:10.100
+systems. So it doesn't matter what the task in a today's
+
+00:12:10.100 --> 00:12:14.080
+world you are going to automate, right? Uh, it is going to
+
+00:12:14.080 --> 00:12:17.980
+be, uh, in case of agent TKI, it is going to be a multi
+
+00:12:17.980 --> 00:12:21.140
+agent system. Doesn't matter which task you are going to
+
+00:12:21.140 --> 00:12:25.020
+solve. For example, if I'm like, uh, trying to build a
+
+00:12:25.020 --> 00:12:29.020
+system, so which is going to work for me as a marketing
+
+00:12:29.020 --> 00:12:32.900
+campaign manager, right? Again one of the example, other
+
+00:12:32.900 --> 00:12:35.940
+example, let's, uh, let's talk about it with respect to a
+
+00:12:35.940 --> 00:12:38.080
+marketing. Again, marketing is something which all the
+
+00:12:38.080 --> 00:12:42.540
+company does. Now when we have to do a marketing, so we have
+
+00:12:42.540 --> 00:12:45.640
+to do a multiple task. First of all, our research that what
+
+00:12:45.640 --> 00:12:49.820
+our competitors are doing, what is a unique USP of my
+
+00:12:49.820 --> 00:12:53.820
+product is in which market I will be able to fit my product.
+
+00:12:54.000 --> 00:12:57.720
+What should be the ideal pricing for my, uh, like a market
+
+00:12:57.720 --> 00:13:02.180
+who will be my basically, uh, like a target user, right?
+
+00:13:02.240 --> 00:13:05.720
+Whom I should target maybe between 16 year to 18 year. Maybe
+
+00:13:05.720 --> 00:13:10.060
+18 years. 24 year, 24 year, 35 year in which demography I
+
+00:13:10.060 --> 00:13:14.040
+have to run my ad, right? So these are something that we
+
+00:13:14.040 --> 00:13:16.540
+have to do a research again, just on our research side
+
+00:13:16.540 --> 00:13:19.360
+itself. We can try to create a multiple agent, so which will
+
+00:13:19.360 --> 00:13:22.600
+try to do a pinpointed research for one of the topic. Now
+
+00:13:22.600 --> 00:13:25.540
+once the research is done, then we used to go for the
+
+00:13:25.540 --> 00:13:28.280
+content creation, right? Because obviously when we are
+
+00:13:28.280 --> 00:13:31.240
+saying marketing, so marketing is all about content, right?
+
+00:13:31.300 --> 00:13:34.360
+So obviously content and then distribution. So you have to
+
+00:13:34.360 --> 00:13:37.960
+create a content. Maybe you have to create a carousel. Maybe
+
+00:13:37.960 --> 00:13:40.280
+you have to, again, carousel means a different, different
+
+00:13:40.280 --> 00:13:43.080
+dimension comes into a picture. Maybe you will go and you
+
+00:13:43.080 --> 00:13:46.860
+will try to create, uh, I would say, uh, ad video. Maybe you
+
+00:13:46.860 --> 00:13:49.340
+will go and suit the ad video nowadays, even people are able
+
+00:13:49.340 --> 00:13:52.120
+to create it with respect to the AI. Uh, so you will create
+
+00:13:52.120 --> 00:13:55.420
+an ad video. Maybe you are going to run an offline marketing
+
+00:13:55.420 --> 00:13:58.540
+campaign. That's also possible, right? So maybe a pamphlet
+
+00:13:58.540 --> 00:14:00.860
+distribution, maybe a hoarding and posters and all those
+
+00:14:00.860 --> 00:14:03.240
+things you are going to do, which companies does. But yeah.
+
+00:14:03.520 --> 00:14:05.740
+Majority of like, uh, nowadays happens. So on our, our
+
+00:14:05.740 --> 00:14:08.460
+digital, uh, platform. So basically there will be a
+
+00:14:08.460 --> 00:14:11.200
+collateral, which some, which some team is going to create.
+
+00:14:11.340 --> 00:14:14.360
+Now agents can create a collateral agents can even do the
+
+00:14:14.360 --> 00:14:16.860
+comparison between the collaterals. Even if someone is going
+
+00:14:16.860 --> 00:14:19.220
+to create manually and care, keeping into a drive that,
+
+00:14:19.300 --> 00:14:21.660
+okay, this is going to work. This is not going to work as
+
+00:14:21.660 --> 00:14:23.940
+per my past experience, everything it is going to summarize
+
+00:14:23.940 --> 00:14:27.560
+it. Then there will be a next agent who will keep on
+
+00:14:27.560 --> 00:14:30.600
+scheduling it because, uh, like, and who will start
+
+00:14:30.600 --> 00:14:32.920
+allocating or at least who will start suggesting you the
+
+00:14:32.920 --> 00:14:35.080
+budget. So again, in a, in a, in a, in a, in a, in a, in a,
+
+00:14:35.080 --> 00:14:35.320
+in a, in a, in a, in a, in a, in a, in a, in a, in a, in a,
+
+00:14:35.320 --> 00:14:36.700
+in a, in a, in a, in a, every layer is starting from, our
+
+00:14:36.700 --> 00:14:39.780
+planning and research to our collateral creation till an
+
+00:14:39.780 --> 00:14:43.020
+execution. And then finally there will be a report gathering
+
+00:14:43.020 --> 00:14:46.920
+that will be our multiple agent just in one single layer
+
+00:14:46.920 --> 00:14:50.080
+itself. We can try to deploy a multiple agents over there.
+
+00:14:50.240 --> 00:14:53.660
+So again, in a marketing, marketing, which is a common use
+
+00:14:53.660 --> 00:14:56.220
+cases for all of us. Same thing happens even in case of our
+
+00:14:56.220 --> 00:15:00.560
+sales, right? So whether we are trying to do a, like a one
+
+00:15:00.560 --> 00:15:03.480
+-to-one calling, so obviously nowadays there are multiple
+
+00:15:03.480 --> 00:15:07.160
+agents. or multiple like AI agents you must be able to see
+
+00:15:07.160 --> 00:15:09.960
+you must have received a lot of calls right nowadays or
+
+00:15:09.960 --> 00:15:13.040
+obviously in last like a five to six months so where machine
+
+00:15:13.040 --> 00:15:16.120
+is giving you a call and looks like in a very first unless
+
+00:15:16.120 --> 00:15:17.540
+and until you are not listening to the conversation
+
+00:15:17.540 --> 00:15:23.000
+carefully it looks like that machine is able to talk to you
+
+00:15:23.000 --> 00:15:27.020
+just like a human being right its tone its sentiment
+
+00:15:27.020 --> 00:15:30.140
+everything is almost like a human being so again in case of
+
+00:15:30.140 --> 00:15:33.100
+a sales obviously we are going to deploy a multiple agent
+
+00:15:33.100 --> 00:15:35.600
+there will be a talk like there will be a agent who can
+
+00:15:35.600 --> 00:15:38.640
+speak who can like understand who can like a talk to you in
+
+00:15:38.640 --> 00:15:41.540
+a real time but even before that so there will be an agent
+
+00:15:41.540 --> 00:15:44.000
+who will churn the data because let's suppose if I'm
+
+00:15:44.000 --> 00:15:46.320
+generating a lead a lakhs and lakhs of lead I'm generating
+
+00:15:46.320 --> 00:15:49.320
+on a daily basis as per my budget as per my marketing
+
+00:15:49.320 --> 00:15:53.240
+campaign so obviously I have to churn those lead I have to
+
+00:15:53.240 --> 00:15:55.740
+decide that okay fine so when I'm supposed to call I it's
+
+00:15:55.740 --> 00:15:59.340
+not like if let's suppose someone from a USA has filled a
+
+00:15:59.340 --> 00:16:02.340
+form so I'm going to give a call in a Indian time obviously
+
+00:16:02.340 --> 00:16:05.800
+I know that it is they are not going to pick up right or
+
+00:16:05.800 --> 00:16:08.180
+maybe someone has asked for the follow-up call maybe someone
+
+00:16:08.180 --> 00:16:11.720
+has dueled a call with me so my agent is supposed to remind
+
+00:16:11.720 --> 00:16:14.860
+and it is supposed to give a call if someone is looking for
+
+00:16:14.860 --> 00:16:18.320
+maybe someone to talk to my senior so again there will be a
+
+00:16:18.320 --> 00:16:20.940
+multiple agent which will be deployed so technically
+
+00:16:20.940 --> 00:16:25.220
+whenever we talk about an agent TKI it's always about our
+
+00:16:25.220 --> 00:16:29.040
+multiple agents one agent will not be able to do things and
+
+00:16:29.040 --> 00:16:32.420
+again so this is how we have been writing even a code
+
+00:16:32.420 --> 00:16:35.220
+modular fashion so again in case of our agents so with the
+
+00:16:35.220 --> 00:16:38.100
+help of this multi agent we try to technically achieve a
+
+00:16:38.100 --> 00:16:41.980
+modularity hope it's making sense and it's a enough a number
+
+00:16:41.980 --> 00:16:46.500
+of example for all of you yeah so whenever we talk about
+
+00:16:46.500 --> 00:16:49.860
+agent actually we talk about our multiple agents not just
+
+00:16:49.860 --> 00:16:55.540
+one by the way yeah in any system even with the small use
+
+00:16:55.540 --> 00:17:01.000
+cases okay now so next question says that that what is the
+
+00:17:01.000 --> 00:17:04.020
+approach for building a autonomous agent okay now first of
+
+00:17:04.020 --> 00:17:06.640
+all what is the autonomous agent we know about agents by the
+
+00:17:06.640 --> 00:17:09.460
+way right we discussed a lot and we have even built a lot
+
+00:17:09.460 --> 00:17:12.220
+even in our live classes we have built a lot a lot of agent
+
+00:17:12.220 --> 00:17:16.620
+by using a lot of framework so basically autonomous agent is
+
+00:17:16.620 --> 00:17:20.780
+basically like a kind of agent which will try to take some
+
+00:17:20.780 --> 00:17:23.640
+sort of a decision automatically right which will try to
+
+00:17:23.640 --> 00:17:27.780
+take out like things automatically so obviously if I am
+
+00:17:27.780 --> 00:17:30.820
+going to create a system so with a very very clear objective
+
+00:17:30.820 --> 00:17:33.680
+and if I am going to give an access right for example
+
+00:17:33.680 --> 00:17:37.060
+nowadays what happens so many people are creating a tool or
+
+00:17:37.060 --> 00:17:39.560
+many organizations are creating a tool so which will be able
+
+00:17:39.560 --> 00:17:42.820
+to book a flight ticket for you right which will be able to
+
+00:17:42.820 --> 00:17:45.800
+plan your vacation which will be able to basically do some
+
+00:17:45.800 --> 00:17:48.900
+sort of a shopping you must have seen that right maybe on a
+
+00:17:48.900 --> 00:17:51.820
+popxlity even popxlity is building that so basically many
+
+00:17:51.820 --> 00:17:54.820
+one many people are building a browser agent right so which
+
+00:17:54.820 --> 00:17:57.680
+will be able to spin the browser in the server not in your
+
+00:17:57.680 --> 00:18:01.580
+local and basically that browser will be able to do a lot of
+
+00:18:01.580 --> 00:18:05.640
+things for you even chat gpt has or open ai have revealed
+
+00:18:05.640 --> 00:18:08.040
+that one so they have even a browser agent I don't know
+
+00:18:08.040 --> 00:18:10.420
+whether you have tried that or not but yeah I think I have
+
+00:18:10.420 --> 00:18:12.720
+already created a video when it was released it's available
+
+00:18:12.720 --> 00:18:16.640
+on your own platform so basically many people are working
+
+00:18:16.640 --> 00:18:19.420
+for a browser agent right now what this browser agent does
+
+00:18:19.420 --> 00:18:22.240
+let's suppose I have given some instruction that okay book a
+
+00:18:22.240 --> 00:18:25.020
+ticket for me in this location from this location to this
+
+00:18:25.020 --> 00:18:28.160
+location this is a date this is a timing yeah so it will go
+
+00:18:28.160 --> 00:18:31.420
+it will try to search all the website it will try to find
+
+00:18:31.420 --> 00:18:34.080
+the cheapest one for me and maybe if I'm looking for a
+
+00:18:34.080 --> 00:18:36.360
+business class or maybe a first class it will try to find
+
+00:18:36.360 --> 00:18:38.540
+those things and then eventually it will try to book the
+
+00:18:38.540 --> 00:18:41.220
+ticket and to book the ticket obviously it should know that
+
+00:18:41.220 --> 00:18:44.320
+my information right because whenever we are booking a
+
+00:18:44.320 --> 00:18:47.200
+ticket obviously system will ask you for a couple of
+
+00:18:47.200 --> 00:18:50.080
+information right that what is your name what is the email
+
+00:18:50.080 --> 00:18:52.940
+id or date of birth email id phone number all of these
+
+00:18:52.940 --> 00:18:55.960
+information right it is going to ask you if if I'm like
+
+00:18:55.960 --> 00:18:58.500
+trying to travel internationally so obviously it is going to
+
+00:18:58.500 --> 00:19:04.480
+ask me it is going to ask now so we have to give those
+
+00:19:04.480 --> 00:19:07.680
+detail to the agent basically apart from that so obviously
+
+00:19:07.680 --> 00:19:10.400
+we have to give a credit card or debit card access to my
+
+00:19:10.400 --> 00:19:12.800
+agents right to my agents then only it will be able to make
+
+00:19:12.800 --> 00:19:15.320
+a payment otherwise what what agent will do no one can do
+
+00:19:15.320 --> 00:19:19.120
+anything right so autonomous agent is something so which
+
+00:19:19.120 --> 00:19:22.320
+will be able to like take instruction from you right if you
+
+00:19:22.320 --> 00:19:25.800
+said that okay fine wake me up every day six o'clock fine it
+
+00:19:25.800 --> 00:19:26.640
+will be having your alarm
+
+00:19:31.280 --> 00:19:34.020
+book a calendar for me for this event so go to my mail and
+
+00:19:34.020 --> 00:19:37.140
+then check all my mails and like try to filter out all the
+
+00:19:37.140 --> 00:19:40.540
+important like things which I have to do and the schedule um
+
+00:19:40.540 --> 00:19:44.040
+like a meeting with me it can be done right it can be done
+
+00:19:44.040 --> 00:19:47.060
+automatically it can be done uh like a do a grocery shopping
+
+00:19:47.060 --> 00:19:51.100
+for me it will be done basically right but to do it you have
+
+00:19:51.100 --> 00:19:53.620
+to provide all the access basically you have to provide
+
+00:19:53.620 --> 00:19:56.020
+maybe a bib search access to this one you have to provide an
+
+00:19:56.020 --> 00:19:58.120
+API access database access your credit card access
+
+00:19:58.120 --> 00:20:01.280
+everything right everything and then system will be able to
+
+00:20:01.280 --> 00:20:04.700
+take its own decision and it will be able to like basically
+
+00:20:04.700 --> 00:20:09.860
+do the task so auto GPT is one of the example there is
+
+00:20:09.860 --> 00:20:12.660
+something called as baby AGI right artificial generators
+
+00:20:12.660 --> 00:20:16.620
+baby AGI which is like a famous autonomous agentic AI
+
+00:20:16.620 --> 00:20:19.380
+framework or agents framework so you can try to use any of
+
+00:20:19.380 --> 00:20:22.040
+this framework so ultimately it is going to take its brain
+
+00:20:22.040 --> 00:20:25.580
+and brain is going to be LLM so LLM may be like open a LLM
+
+00:20:25.580 --> 00:20:28.340
+or cloudy or anything any elements a best one you can try to
+
+00:20:28.340 --> 00:20:31.380
+give and then it will be able to do some sort of a task for
+
+00:20:31.380 --> 00:20:33.660
+you and that is something called as autonomous agent but
+
+00:20:33.660 --> 00:20:36.520
+yeah uh security is a major concern for now so if you are
+
+00:20:36.520 --> 00:20:38.920
+going to give a credit card access yeah you don't know like
+
+00:20:38.920 --> 00:20:41.040
+what kind of a decision it is going to make unless it is not
+
+00:20:41.040 --> 00:20:44.800
+robust it's not properly tested on all the use cases right
+
+00:20:44.800 --> 00:20:48.100
+uh but yeah so I think uh very soon this is going to be a
+
+00:20:48.100 --> 00:20:52.300
+reality uh just like we use uh iPhone and we say Siri uh
+
+00:20:52.300 --> 00:20:56.340
+like a put alarm for like a four o'clock 4 a.m uh Siri is
+
+00:20:56.340 --> 00:20:56.840
+good with that
+
+00:21:01.280 --> 00:21:06.340
+uh as a AI not AI by the way I have only used Siri maybe as
+
+00:21:06.340 --> 00:21:08.880
+a like AI apart from that there is nothing in iPhone I
+
+00:21:08.880 --> 00:21:12.500
+believe right in terms of AI even in the recent release so
+
+00:21:12.500 --> 00:21:15.640
+they just have a Siri and I think Siri uh was there like
+
+00:21:15.640 --> 00:21:20.220
+even like before uh the age of era of AI so just like a Siri
+
+00:21:20.220 --> 00:21:22.720
+so the way she is very good she is very good with the
+
+00:21:22.720 --> 00:21:25.520
+calendar booking uh sorry she's very good with the alarm
+
+00:21:25.520 --> 00:21:29.180
+clock set uh setting by the way uh so maybe in the similar
+
+00:21:29.180 --> 00:21:33.580
+manner you will be using uh like uh this AI autonomous agent
+
+00:21:33.580 --> 00:21:36.440
+but yeah people are building it people are doing it maybe
+
+00:21:36.440 --> 00:21:40.300
+you can try this out with the pop xlity publicity have that
+
+00:21:40.300 --> 00:21:44.580
+agentic browser uh they have they have like a done that they
+
+00:21:44.580 --> 00:21:47.000
+have even released it for the public and even you can try to
+
+00:21:47.000 --> 00:21:53.240
+try this out into a open AI auto GPT so but yeah you have to
+
+00:21:53.240 --> 00:21:56.120
+give all the access unless I did uh access so it will not be
+
+00:21:56.120 --> 00:22:02.080
+able to work all the tasks by AI then what about us what
+
+00:22:02.080 --> 00:22:06.100
+about about a job sir okay let me tell me one thing right uh
+
+00:22:06.100 --> 00:22:09.720
+in a childhood right uh we we all were living into a small
+
+00:22:09.720 --> 00:22:12.600
+town even I belong from a very very small town in India
+
+00:22:12.600 --> 00:22:16.700
+right a very very small town and uh we used to go for like
+
+00:22:16.700 --> 00:22:21.140
+you know uh daily grocery shopping right we go out and then
+
+00:22:21.140 --> 00:22:26.820
+we buy a vegetable and uh like you know uh basically uh we
+
+00:22:26.820 --> 00:22:29.760
+we used to buy all the groceries and everything on a regular
+
+00:22:29.760 --> 00:22:32.820
+basis yeah maybe once or twice in a month we used to go
+
+00:22:32.820 --> 00:22:36.680
+outside right uh barely we go out for a food and something
+
+00:22:36.680 --> 00:22:41.060
+right uh but nowadays right if you're living in a Metro City
+
+00:22:41.060 --> 00:22:43.760
+or not in the Metro City in India even in tier 2 theater
+
+00:22:43.760 --> 00:22:46.460
+cities now it's available so now we have a blanket right
+
+00:22:46.460 --> 00:22:50.620
+blanket chapter a lot of like a provider a lot of like a you
+
+00:22:50.620 --> 00:22:54.160
+know vendors so who can deliver our things at your household
+
+00:22:54.160 --> 00:22:57.900
+now we are not going out uh for buying a vegetable on a
+
+00:22:57.900 --> 00:23:01.200
+daily basis right which was our routine task uh in a
+
+00:23:01.200 --> 00:23:05.500
+childhood like for most of us it was a routine task for us
+
+00:23:05.500 --> 00:23:08.940
+10 or 20 years back but now we are not doing it right now we
+
+00:23:08.940 --> 00:23:11.980
+are like just opening up our gemato or maybe a blanket maybe
+
+00:23:11.980 --> 00:23:15.980
+a jepto or such kind of application and yes in 10 minutes 20
+
+00:23:15.980 --> 00:23:18.660
+or maybe half an hour right or maybe other day so we are
+
+00:23:18.660 --> 00:23:21.540
+able to get or we are able to receive even to buy something
+
+00:23:21.540 --> 00:23:23.860
+so we used to go out but now we have a Amazon we have
+
+00:23:23.860 --> 00:23:27.520
+flipkart even available in a rural area of India right so we
+
+00:23:27.520 --> 00:23:33.720
+are not going outside yeah so when there will be an agent
+
+00:23:33.720 --> 00:23:36.640
+who will be able to book a flight ticket it will be able to
+
+00:23:36.640 --> 00:23:40.140
+book uh maybe a meeting or manage a meeting it's not like we
+
+00:23:40.140 --> 00:23:44.720
+will be out of the job right so basically we have seen that
+
+00:23:44.720 --> 00:23:49.540
+that when this entire distillation happened or it's still
+
+00:23:49.540 --> 00:23:52.500
+happening so obviously it's trying to provide an opportunity
+
+00:23:52.500 --> 00:23:55.900
+opportunity for our people so obviously AI will be able to
+
+00:23:55.900 --> 00:23:58.760
+book a ticket for you I will be able to book a gym slot for
+
+00:23:58.760 --> 00:24:03.380
+you let's suppose but you say I will be able to make your
+
+00:24:03.380 --> 00:24:07.380
+gym payment but you have to go and you have to like uh do
+
+00:24:07.380 --> 00:24:12.600
+your gym basically right so so technically it's not about
+
+00:24:12.600 --> 00:24:17.680
+like a AI who is going to do a job on behalf of us it is
+
+00:24:17.680 --> 00:24:22.260
+technically helping me out to be 10x productive just just
+
+00:24:22.260 --> 00:24:26.660
+imagine right when there was uh no computer or let's suppose
+
+00:24:26.660 --> 00:24:29.700
+we had a computer even 10 years back right we had a computer
+
+00:24:29.700 --> 00:24:34.240
+but it right we were not able to run a heavy application
+
+00:24:34.240 --> 00:24:37.640
+over there life was completely slow even in the age of
+
+00:24:37.640 --> 00:24:41.200
+Google right maybe life was slow because we used to go
+
+00:24:41.200 --> 00:24:43.220
+through our documentation we used to go through a stack
+
+00:24:43.220 --> 00:24:48.080
+overflow then AI came into a picture right chat GPT in 2022
+
+00:24:48.080 --> 00:24:51.220
+I think made of 2022 uh since last like a two two and a half
+
+00:24:51.220 --> 00:24:54.260
+year three year let's suppose right yeah I came into a
+
+00:24:54.260 --> 00:24:57.680
+picture so technically it's it's making our life faster it's
+
+00:24:57.680 --> 00:25:04.160
+taking making our life easier yeah so yes it is going to
+
+00:25:04.160 --> 00:25:06.860
+take your job there is no doubt about it it is taking your
+
+00:25:06.860 --> 00:25:11.040
+job if you are not able to upgrade yourself if you are
+
+00:25:11.040 --> 00:25:16.380
+living in a same era 10 year or like five year back era if
+
+00:25:16.380 --> 00:25:19.960
+you are not upgrading yourself if you think that that I will
+
+00:25:19.960 --> 00:25:23.160
+learn only one skill and then on that skill I will be able
+
+00:25:23.160 --> 00:25:28.380
+to survive from for an entire life obviously AI will take
+
+00:25:28.380 --> 00:25:31.680
+your not AI will take your job right your colleague will
+
+00:25:31.680 --> 00:25:33.940
+take your job your neighbor will take your job your
+
+00:25:33.940 --> 00:25:36.900
+bachelor's will take your job very simple yeah
+
+00:25:39.040 --> 00:25:42.120
+so if you are not able to learn if you will keep on making
+
+00:25:42.120 --> 00:25:45.860
+an excuse that where to learn how to learn what to learn
+
+00:25:45.860 --> 00:25:48.020
+instead of actually learning and instead of actually
+
+00:25:48.020 --> 00:25:51.080
+building which is which I see as a very very common
+
+00:25:51.080 --> 00:25:54.200
+phenomena in almost all of you believe me yeah this is
+
+00:25:54.200 --> 00:25:58.460
+consider that as a this has a constructive feedback so not
+
+00:25:58.460 --> 00:26:02.600
+in other way basically so I have seen many people right very
+
+00:26:02.600 --> 00:26:05.500
+few people come to me and say that I have built this right
+
+00:26:05.500 --> 00:26:08.240
+can you can you please help me out you know to build 10 more
+
+00:26:08.240 --> 00:26:10.860
+things in this one right there are very few people who come
+
+00:26:10.860 --> 00:26:14.160
+to me by saying this statement many people come to me and
+
+00:26:14.160 --> 00:26:18.040
+say that how I can build a startup like you how I can
+
+00:26:18.040 --> 00:26:21.460
+generate a money like you right how you were able to
+
+00:26:21.460 --> 00:26:23.740
+generate or like you were able to get a funding in your
+
+00:26:23.740 --> 00:26:27.020
+previous startup that we in an early stage how you were able
+
+00:26:27.020 --> 00:26:31.080
+to sell that on this valuation or people come and say that
+
+00:26:31.080 --> 00:26:34.360
+how you are able to learn right how you keep yourself
+
+00:26:34.700 --> 00:26:39.380
+updated I mean like see I can give you a motivational answer
+
+00:26:39.380 --> 00:26:44.080
+for every how right but the reality is the fact is
+
+00:26:44.080 --> 00:26:48.160
+everything is happening because I'm doing it that's only
+
+00:26:48.160 --> 00:26:51.680
+reality nothing has happened overnight nothing has happened
+
+00:26:51.680 --> 00:26:54.660
+automatically right you have to sit you have to work even
+
+00:26:54.660 --> 00:26:58.340
+today like I'm working right I'm working even people are not
+
+00:26:58.340 --> 00:27:00.900
+I can see like many people are not able to join the classes
+
+00:27:00.900 --> 00:27:04.040
+but still it's my responsibility I know that I have to go
+
+00:27:04.040 --> 00:27:06.960
+into a lab to deliver the class because my job to do it
+
+00:27:06.960 --> 00:27:10.240
+right so I can't say no I can't say how I will go and give
+
+00:27:10.240 --> 00:27:16.100
+the class so simple thing is if you are having such kind of
+
+00:27:16.100 --> 00:27:21.260
+a mindset that you will just ask a question on how but if
+
+00:27:21.260 --> 00:27:23.920
+you will not build it and then you will ask the question
+
+00:27:23.920 --> 00:27:28.080
+then obviously AI not AI forget about AI let's let's imagine
+
+00:27:28.080 --> 00:27:31.480
+that AI is nowhere right still you will lose your job
+
+00:27:34.700 --> 00:27:38.440
+getting a job because of Blinkit and zepto many general
+
+00:27:38.440 --> 00:27:42.500
+stores are closed see the thing is that that before
+
+00:27:42.500 --> 00:27:46.420
+calculator we used to do all the calculation on pen and
+
+00:27:46.420 --> 00:27:50.980
+paper right so yes uh you can you can say that we were
+
+00:27:50.980 --> 00:27:53.880
+selling uh so paper seller was selling a lot of papers right
+
+00:27:53.880 --> 00:27:57.980
+because there was a demand and everyone every CA or we can
+
+00:27:57.980 --> 00:28:00.520
+say everyone was doing a calculation on those pen and papers
+
+00:28:00.520 --> 00:28:03.520
+right uh then calculator came into picture then computer
+
+00:28:03.520 --> 00:28:07.900
+came into a picture so obviously paper seller can't come and
+
+00:28:07.900 --> 00:28:12.220
+say that no my sales has decreased see world is evolving
+
+00:28:12.220 --> 00:28:15.480
+this is how a we as a human being is so if you are giving
+
+00:28:15.480 --> 00:28:18.920
+this analogy that because of this uh like something has been
+
+00:28:18.920 --> 00:28:22.560
+closed or something got disrupted then the simple thing is
+
+00:28:22.560 --> 00:28:26.940
+that that we would have never evolved ourselves uh from uh
+
+00:28:26.940 --> 00:28:32.200
+main men who were living in a cave right we were not
+
+00:28:32.200 --> 00:28:36.740
+supposed to evolve at all if you are giving this logic and
+
+00:28:36.740 --> 00:28:41.240
+obviously this is uh because see obviously even even from
+
+00:28:41.240 --> 00:28:45.720
+your yours and again so and if this is your mindset then why
+
+00:28:45.720 --> 00:28:49.240
+you are thinking about a hike why do you complain that uh
+
+00:28:49.240 --> 00:28:53.380
+company is not giving me 10 hike 20 hike why you keep on
+
+00:28:53.380 --> 00:28:55.220
+complaining that I'm not able to learn why you're
+
+00:28:55.220 --> 00:28:56.700
+complaining that market is not giving you opportunity
+
+00:28:56.700 --> 00:29:02.980
+somewhere uh down uh like deep inside you even you are
+
+00:29:02.980 --> 00:29:04.680
+expecting uh some kind of uh you are expecting uh some kind
+
+00:29:04.680 --> 00:29:08.240
+of uh some kind of of evolution in yourself right yeah
+
+00:29:09.580 --> 00:29:16.760
+so when it comes to us uh so we we are all happy when
+
+00:29:16.760 --> 00:29:19.100
+something happens to our neighborhood then we start
+
+00:29:19.100 --> 00:29:22.760
+complaining right I I think we should not like keep this
+
+00:29:22.760 --> 00:29:25.920
+kind of a mindset we all should keep a progressive mindset a
+
+00:29:25.920 --> 00:29:28.560
+struggle of the mindset I would say right and believe me
+
+00:29:28.560 --> 00:29:30.920
+things happens now coming to the next question otherwise I
+
+00:29:30.920 --> 00:29:33.480
+will keep on talking about this topic for next two three
+
+00:29:33.480 --> 00:29:38.520
+hours uh how do you implement a tool calling in uh tool
+
+00:29:38.520 --> 00:29:41.000
+calling in language model now what is what is tool by the
+
+00:29:41.000 --> 00:29:44.020
+way so tool is nothing but a function for example so if I
+
+00:29:44.020 --> 00:29:47.380
+have written a function that search website because LLM will
+
+00:29:47.380 --> 00:29:51.500
+not be able to search right LLMs are basically a simple
+
+00:29:51.500 --> 00:29:55.220
+model which has been trained till a particular date yeah
+
+00:29:55.220 --> 00:29:58.920
+till a particular date so LM will not be able to go and do a
+
+00:29:58.920 --> 00:30:02.400
+website search LLM will not be able to go and do a check of
+
+00:30:02.400 --> 00:30:07.440
+weather or maybe like uh you know uh I would say it will not
+
+00:30:07.440 --> 00:30:11.200
+be able to access my credit card or my calendar or my Google
+
+00:30:11.200 --> 00:30:14.820
+account or my website or my Amazon website or Amazon login
+
+00:30:14.820 --> 00:30:18.540
+right so I have to write a function I have to authorize I
+
+00:30:18.540 --> 00:30:21.900
+have to give an access now that will that is a function
+
+00:30:21.900 --> 00:30:26.380
+function will become a tool once I am going to wrap it up
+
+00:30:26.380 --> 00:30:30.980
+with my agents right with my agents basically so that so
+
+00:30:30.980 --> 00:30:33.740
+there will be an agent so agent will decide automatically
+
+00:30:33.740 --> 00:30:37.720
+that okay if there is a task do a web search you pick this
+
+00:30:37.720 --> 00:30:41.740
+tool if there is a task to access my credit card okay pick
+
+00:30:41.740 --> 00:30:45.020
+this tool so this is how we try to so tools are technically
+
+00:30:45.020 --> 00:30:48.260
+nothing but a function a piece of function that we have been
+
+00:30:48.260 --> 00:30:51.420
+writing since a many many years since the evolution of a
+
+00:30:51.420 --> 00:30:55.620
+computer right and we try to like give an access to a LLM so
+
+00:30:55.620 --> 00:30:59.620
+that out of thousands of function or thousands of access LLM
+
+00:30:59.620 --> 00:31:01.580
+can decide that which one to choose in what kind of a
+
+00:31:01.580 --> 00:31:06.540
+situation which we have already done now what are the best
+
+00:31:06.540 --> 00:31:10.900
+practice for a function calling okay uh so a function
+
+00:31:10.900 --> 00:31:15.080
+calling see so basically uh with respect to agentic AI a
+
+00:31:15.080 --> 00:31:17.380
+function calling is bit different as we have already
+
+00:31:17.380 --> 00:31:20.240
+discussed and we have also seen a lot of use cases in our
+
+00:31:20.240 --> 00:31:26.020
+classes that LMS is trying to call my function right so LM
+
+00:31:26.020 --> 00:31:28.780
+is trying to take a decision that which function now let's
+
+00:31:28.780 --> 00:31:31.640
+suppose if I'm trying to build if I have written a function
+
+00:31:31.640 --> 00:31:35.440
+uh for a website search right web search or Google search
+
+00:31:36.040 --> 00:31:38.320
+right answer per API integration I have done for that one
+
+00:31:38.320 --> 00:31:42.120
+now if I have named that function right website search
+
+00:31:42.120 --> 00:31:45.460
+function maybe as a credit card function if I have named
+
+00:31:45.460 --> 00:31:48.960
+that function in a wrong manner if I have not given a clear
+
+00:31:48.960 --> 00:31:52.060
+description that what you are doing means what that function
+
+00:31:52.060 --> 00:31:56.320
+is doing in a doc string right if I have not given a very
+
+00:31:56.320 --> 00:32:00.340
+very clear instruction if I have not validated it's like a
+
+00:32:00.340 --> 00:32:03.360
+inputs which which we are doing it by using a pidentic by
+
+00:32:03.360 --> 00:32:07.820
+the way nowadays right in that is your LLM will not be able
+
+00:32:07.820 --> 00:32:11.980
+to understand right so the best practice when you are trying
+
+00:32:11.980 --> 00:32:15.300
+to do a function calling is always try to make sure that
+
+00:32:15.300 --> 00:32:18.420
+your function name should be pretty much clear align with
+
+00:32:18.420 --> 00:32:21.760
+the task it will be it must be having a very good
+
+00:32:21.760 --> 00:32:25.020
+description of the function so that my LM will be able to
+
+00:32:25.020 --> 00:32:28.500
+access and my LM will be able to understand it right it must
+
+00:32:28.500 --> 00:32:31.600
+be able to validate the input for example pidentic now
+
+00:32:31.600 --> 00:32:34.460
+pidentic 2 is running right in a market currently so
+
+00:32:34.460 --> 00:32:38.980
+pidentic right and then there should be a fall back that if
+
+00:32:38.980 --> 00:32:43.500
+this function fails then what to do basically right so this
+
+00:32:43.500 --> 00:32:46.520
+is how you are supposed to practice these are the best
+
+00:32:46.520 --> 00:32:49.700
+practices for a function calling in a agents it's because
+
+00:32:49.700 --> 00:32:52.480
+this this function calling will be little bit different as
+
+00:32:52.480 --> 00:32:54.600
+compared to the regular function because in the kind of
+
+00:32:54.600 --> 00:32:58.380
+regular function we call it right so we write it that okay
+
+00:32:58.380 --> 00:33:01.500
+call this one now call that one now but here your LLM is
+
+00:33:01.500 --> 00:33:04.680
+trying to access so you have to be very very with respect to
+
+00:33:04.680 --> 00:33:08.280
+LLMs otherwise system will make a mistake all the time or
+
+00:33:08.280 --> 00:33:12.560
+you can say in other word hallucinate. Now so another
+
+00:33:12.560 --> 00:33:15.180
+question is hundred number question how do you implement a
+
+00:33:15.180 --> 00:33:17.880
+memory management in a agents. So if you have any kind of a
+
+00:33:17.880 --> 00:33:20.780
+question put me in a chat guys put your question in a chat
+
+00:33:20.780 --> 00:33:24.160
+not me in a chat yeah your question in a chat by the way.
+
+00:33:27.300 --> 00:33:30.540
+I believe my screen is visible right I am sharing my screen
+
+00:33:30.540 --> 00:33:32.060
+yeah fine
+
+00:33:37.690 --> 00:33:41.190
+and hope all of you are able to understand my definition and
+
+00:33:41.190 --> 00:33:43.530
+my answer basically and this is how you should go and you
+
+00:33:43.530 --> 00:33:47.570
+should give an answer inside interview. How do you implement
+
+00:33:47.570 --> 00:33:51.010
+a memory management? So we all know that there can be a
+
+00:33:51.010 --> 00:33:54.330
+different type of memory management that we can do with
+
+00:33:54.330 --> 00:33:57.250
+respect to any orchestrator framework agentic orchestrator
+
+00:33:57.250 --> 00:33:59.870
+framework. So what are those framework? Langchain, Lama
+
+00:33:59.870 --> 00:34:04.710
+indexes, auto gen or gen a sorry auto gen init and then like
+
+00:34:04.710 --> 00:34:07.950
+crew AI all such kind of a framework right I can try to use
+
+00:34:07.950 --> 00:34:11.530
+to create a agent. Now I have even shown you in my land
+
+00:34:11.530 --> 00:34:13.930
+graph class that there can be a multiple different different
+
+00:34:13.930 --> 00:34:17.570
+kind of a memory which which exist even a crew a class I
+
+00:34:17.570 --> 00:34:19.950
+have shown you that part right by showing you crew a page
+
+00:34:19.950 --> 00:34:23.330
+itself I remember. So I have shown you that there can be a
+
+00:34:23.330 --> 00:34:25.850
+different type of memory there can be a kind of a memory
+
+00:34:25.850 --> 00:34:29.670
+where it stores everything right there can be a memory which
+
+00:34:29.670 --> 00:34:33.990
+stores a window basically like top last 15 or 20 or whatever
+
+00:34:33.990 --> 00:34:37.570
+we are going to configure a window size right so like chunk
+
+00:34:37.570 --> 00:34:41.330
+of it. But there can be a memory so which will summarize the
+
+00:34:41.330 --> 00:34:43.930
+whole story and then store the summary only the summary
+
+00:34:43.930 --> 00:34:47.770
+right so of the whole data there can be a memory which will
+
+00:34:47.770 --> 00:34:51.090
+just hold maybe some sort of an entity right so entity based
+
+00:34:51.090 --> 00:34:55.270
+like a memory basically so place and like a person name it
+
+00:34:55.270 --> 00:34:59.130
+will try to only memorize entity based like a memory. So
+
+00:34:59.130 --> 00:35:04.070
+these are the memory like which exist basically right so
+
+00:35:04.070 --> 00:35:07.210
+basically which exist and whenever we are trying to create.
+
+00:35:07.990 --> 00:35:12.270
+Any agentic system or any chat system even like when you try
+
+00:35:12.270 --> 00:35:14.790
+to chat with the chat GPT or even with the URI when you are
+
+00:35:14.790 --> 00:35:18.850
+chatting there is a memory it remembers about you basically
+
+00:35:18.850 --> 00:35:21.710
+it memorize about you so that it will be able to understand
+
+00:35:21.710 --> 00:35:24.170
+your past context your current context and it will try to
+
+00:35:24.170 --> 00:35:26.890
+give you a better and better answer right it will try to
+
+00:35:26.890 --> 00:35:29.170
+give you a better and better answer even all this like a
+
+00:35:29.170 --> 00:35:32.230
+chat system that we are using across the globe all the
+
+00:35:32.230 --> 00:35:34.690
+famous one everywhere you will be able to find out the
+
+00:35:34.690 --> 00:35:36.890
+memory management and it's not tough. We have seen that
+
+00:35:36.890 --> 00:35:39.230
+right. We have already seen that in LandGraph technically we
+
+00:35:39.230 --> 00:35:42.470
+have written a code for that one that this agent will be
+
+00:35:42.470 --> 00:35:45.190
+having basically a windowing memory access this agent will
+
+00:35:45.190 --> 00:35:48.710
+be having a buffer memory access summary memory access so
+
+00:35:48.710 --> 00:35:50.890
+this is something that we have already done as an
+
+00:35:50.890 --> 00:35:55.650
+implementation so you can try to like you know build this
+
+00:35:55.650 --> 00:36:00.190
+kind of a memory and so by this you will be able to do a
+
+00:36:00.190 --> 00:36:05.250
+memory management plus if you have to like maybe a store.
+
+00:36:05.390 --> 00:36:09.070
+Very huge amount of things. So in that case you can try to
+
+00:36:09.070 --> 00:36:12.050
+even call a vector database and vector database you can try
+
+00:36:12.050 --> 00:36:16.590
+to use it for a memory and if you are using for like using
+
+00:36:16.590 --> 00:36:20.030
+something in us inside a memory which can respond very very
+
+00:36:20.030 --> 00:36:23.530
+fast in that case simple go ahead with in memory in memory
+
+00:36:23.530 --> 00:36:27.010
+means Redis Redis as a service or Redis as a database you
+
+00:36:27.010 --> 00:36:29.190
+can try to use it so where it stores each and everything
+
+00:36:29.190 --> 00:36:31.730
+inside a cache memory and it's going to be very very fast in
+
+00:36:31.730 --> 00:36:34.190
+a production grid application obviously I always advise
+
+00:36:34.190 --> 00:36:38.190
+everyone to use Redis on a server side right Redis on a
+
+00:36:38.190 --> 00:36:41.850
+server side so this is how we can try to basically implement
+
+00:36:41.850 --> 00:36:46.750
+a memory management now so what is the approach of building
+
+00:36:46.750 --> 00:36:49.310
+a reasoning agent so first of all we have to understand that
+
+00:36:49.310 --> 00:36:52.410
+what is a reasoning agent you must have seen that recently
+
+00:36:52.410 --> 00:36:55.430
+when you chat with chat GPT and for the very first time you
+
+00:36:55.430 --> 00:36:58.490
+must have seen with respect to a deep seek R1 so when deep
+
+00:36:58.490 --> 00:37:01.330
+seek R1 has been launched in a market so it said that okay I
+
+00:37:01.330 --> 00:37:04.150
+can do a better reasoning reasoning means what reasoning
+
+00:37:04.150 --> 00:37:07.430
+means a chain of thought you can say. Right chain of thought
+
+00:37:07.430 --> 00:37:10.270
+what is the meaning of chain of thought that okay you gave
+
+00:37:10.270 --> 00:37:13.990
+me the problem right so in in other word in other way if I
+
+00:37:13.990 --> 00:37:18.830
+have to explain you so basically like a lawyer right so a
+
+00:37:18.830 --> 00:37:21.750
+lawyer so let's suppose a lawyer is trying to prove his case
+
+00:37:21.750 --> 00:37:27.010
+that okay my like you know client is not guilty basically so
+
+00:37:27.010 --> 00:37:30.710
+he will he will start breaking down all the incident step by
+
+00:37:30.710 --> 00:37:33.510
+step he will start giving a reason he will start connecting
+
+00:37:33.510 --> 00:37:37.310
+all the events for that particular day. Okay just to prove
+
+00:37:37.310 --> 00:37:40.930
+that his client is right in the similar manner what your
+
+00:37:40.930 --> 00:37:45.250
+agent does so it will not go and generate an output in one
+
+00:37:45.250 --> 00:37:48.590
+single sort what it will do it will try to like you know see
+
+00:37:48.590 --> 00:37:52.210
+a queue create a queue of series of questions based on your
+
+00:37:52.210 --> 00:37:55.590
+questions that okay we'll do this investigate this then do
+
+00:37:55.590 --> 00:37:57.550
+this then do this then do this then do this so reasoning
+
+00:37:57.550 --> 00:38:01.330
+basically or you can say chain of thought C O T by the way
+
+00:38:01.330 --> 00:38:04.470
+right chain of thought prompting. So basically in this way
+
+00:38:04.470 --> 00:38:07.550
+you will be able to. Okay. Be able to give me the better
+
+00:38:07.550 --> 00:38:09.670
+result then it will summarize and then it will be able to
+
+00:38:09.670 --> 00:38:12.690
+give me the final answer. So if you can expect that it will
+
+00:38:12.690 --> 00:38:16.330
+it will give me the reasonably better answer as compared to
+
+00:38:16.330 --> 00:38:19.930
+one sort answer and this is something called as a reasoning
+
+00:38:19.930 --> 00:38:24.170
+agent. So where ever. So in Landgraf yeah you can try to
+
+00:38:24.170 --> 00:38:27.290
+create a reasoning node. It's it's possible. Right. So
+
+00:38:27.290 --> 00:38:29.710
+instead of creating a reactive node you can try to create a
+
+00:38:29.710 --> 00:38:34.490
+reasoning node as well. Model wise if I'll say so deep seek
+
+00:38:34.490 --> 00:38:37.150
+R1 is the best example. This is where this got a popularity
+
+00:38:37.150 --> 00:38:41.790
+for the very first time in a market now. So next question
+
+00:38:41.790 --> 00:38:45.290
+says that that how do you implement up implement planning in
+
+00:38:45.290 --> 00:38:49.250
+a agent. Okay. So what is what is a planning basically. So
+
+00:38:49.250 --> 00:38:53.590
+planning means nothing but like a chain or cities like break
+
+00:38:53.590 --> 00:38:57.350
+the goals into a steps and execute each and every steps.
+
+00:38:57.630 --> 00:39:01.410
+Right. So basically this is something that we try to do.
+
+00:39:01.750 --> 00:39:06.070
+Yeah. Yeah. So agent will do something for which we have
+
+00:39:06.070 --> 00:39:08.730
+given an instruction and obviously it will be having a
+
+00:39:08.730 --> 00:39:12.250
+limitation. Right. So what we do if you have seen that that
+
+00:39:12.250 --> 00:39:15.150
+whenever we create agents we try to say that okay fine. So
+
+00:39:15.150 --> 00:39:18.390
+you are this agent you are a system agent or you are
+
+00:39:18.390 --> 00:39:21.630
+assistant agent or you are basically professor you are
+
+00:39:21.630 --> 00:39:24.310
+basically this particular like a task doer something like
+
+00:39:24.310 --> 00:39:27.670
+that we try to define and then we say that that okay. So
+
+00:39:27.670 --> 00:39:30.430
+whenever something will come to you. So step number one do
+
+00:39:30.430 --> 00:39:33.910
+this step number to do this. Do this. Give me an output in
+
+00:39:33.910 --> 00:39:37.550
+this format. And this is something called as planning. Now
+
+00:39:37.550 --> 00:39:40.410
+agent agent will try to take this planning and then it will
+
+00:39:40.410 --> 00:39:44.370
+try to perform the exact same operation on whatever task we
+
+00:39:44.370 --> 00:39:47.030
+are going to configure it. So that is something called as
+
+00:39:47.030 --> 00:39:49.850
+planning which eventually we try to do it. So we try to
+
+00:39:49.850 --> 00:39:52.810
+break it down in a different different steps and then we say
+
+00:39:52.810 --> 00:39:57.370
+that okay execute each and every steps and whether we are
+
+00:39:57.370 --> 00:40:02.270
+going to create a agent inside maybe like a land chain land
+
+00:40:02.270 --> 00:40:06.270
+graph. Lama indexes autogen anywhere. Now what are the
+
+00:40:06.270 --> 00:40:09.650
+consideration for a agent communication means how agent can
+
+00:40:09.650 --> 00:40:12.090
+talk to each other. This is what it means. Right. So
+
+00:40:12.090 --> 00:40:15.930
+basically agent will be able to talk to each other and that
+
+00:40:15.930 --> 00:40:19.730
+depends upon the orchestrator like a framework. Right. And
+
+00:40:19.730 --> 00:40:24.170
+the back story that we are going to build and which agent we
+
+00:40:24.170 --> 00:40:27.310
+are going to call in what manner maybe into a hierarchical
+
+00:40:27.310 --> 00:40:31.090
+manner or maybe into a series sequential manner. Right. Or
+
+00:40:31.090 --> 00:40:34.950
+parallel manner. So depends upon that agent will be able to
+
+00:40:34.950 --> 00:40:39.090
+communicate and it will try to pass its input and output to
+
+00:40:39.090 --> 00:40:41.650
+the next one. Depends how we are going to do that
+
+00:40:41.650 --> 00:40:44.050
+configuration and you must have seen that that everywhere
+
+00:40:44.050 --> 00:40:46.210
+whether we are using a crew whether you are using a land
+
+00:40:46.210 --> 00:40:48.910
+graph. So in case of a land graph it will be node and then
+
+00:40:48.910 --> 00:40:52.090
+ages through ages it will try to derive the relation between
+
+00:40:52.090 --> 00:40:55.030
+one agent to another agent. Right. That okay I'll give this
+
+00:40:55.030 --> 00:40:57.590
+output and this will go into two or three or four or just
+
+00:40:57.590 --> 00:41:00.570
+one. Technically like a graph structure. And it is going to
+
+00:41:00.570 --> 00:41:03.670
+work on that one crew. Same thing. Right. So crew provide
+
+00:41:03.670 --> 00:41:07.150
+you maybe a serialized approach or try to provide you even a
+
+00:41:07.150 --> 00:41:09.710
+hierarchical approach just like a land graph. So you can you
+
+00:41:09.710 --> 00:41:12.570
+can try to build a crew means a team and then team is going
+
+00:41:12.570 --> 00:41:15.490
+to work in that particular manner. And technically
+
+00:41:15.490 --> 00:41:18.410
+communication means transferring a data from one to another
+
+00:41:18.410 --> 00:41:21.950
+one. So all of this orchestrator framework is going to
+
+00:41:21.950 --> 00:41:27.710
+perform this operation. Now how do you implement the agent
+
+00:41:27.710 --> 00:41:31.990
+coordination. So whenever we have to like a design agent
+
+00:41:31.990 --> 00:41:35.330
+cognitive coordination just we try to follow the
+
+00:41:35.330 --> 00:41:39.290
+implementation given by orchestrator framework and based on
+
+00:41:39.290 --> 00:41:42.290
+that we try to coordinate between the agent for land graph.
+
+00:41:42.430 --> 00:41:44.390
+Yeah. Whatever kind of a graph that we are going to design
+
+00:41:44.390 --> 00:41:47.590
+it will try to work on that part. Now so it's not very
+
+00:41:47.590 --> 00:41:50.370
+different from the previous question by the way. What is the
+
+00:41:50.370 --> 00:41:55.830
+approach for building a multi model agent. Okay. So let's
+
+00:41:55.830 --> 00:41:59.030
+suppose. Um. I'm trying to build a system. Right. I'm trying
+
+00:41:59.030 --> 00:42:03.430
+to build a system which will be able to like understand my
+
+00:42:03.430 --> 00:42:08.130
+text which will be able to understand my images and which
+
+00:42:08.130 --> 00:42:11.530
+will be able to understand even my voice. Yeah. Which will
+
+00:42:11.530 --> 00:42:15.550
+be able to understand my voice for example Avani kind of a
+
+00:42:15.550 --> 00:42:17.930
+system we are designing right. Avani kind of a system we are
+
+00:42:17.930 --> 00:42:21.370
+designing so where we can go we can do a conversation. It
+
+00:42:21.370 --> 00:42:24.010
+can understand my resume. It can generate some sort of text
+
+00:42:24.010 --> 00:42:28.490
+out of it. Uh. Maybe I have added some image capability as
+
+00:42:28.490 --> 00:42:31.030
+well where I can share my screen. It will take a screenshot
+
+00:42:31.030 --> 00:42:35.290
+and then it will be able to even observe my entire screen.
+
+00:42:35.470 --> 00:42:39.090
+Right. Image understanding. Now so to implement such kind of
+
+00:42:39.090 --> 00:42:41.710
+a system Avani kind of a system with a image capability
+
+00:42:41.710 --> 00:42:46.450
+let's suppose one model is not going to be sufficient.
+
+00:42:46.770 --> 00:42:49.050
+Right. One model is not going to be sufficient. So maybe I
+
+00:42:49.050 --> 00:42:51.850
+need a multiple different different model for example maybe
+
+00:42:51.850 --> 00:42:56.550
+for chat I need some text based model. Uh. Like to process
+
+00:42:56.550 --> 00:43:00.910
+our images I need some vision based model obviously. To
+
+00:43:00.910 --> 00:43:04.290
+understand speech or to convert speech to text and text to
+
+00:43:04.290 --> 00:43:07.650
+speech I need audio audio kind of a model or maybe some
+
+00:43:07.650 --> 00:43:10.830
+other library. So this is where this multi model comes into
+
+00:43:10.830 --> 00:43:13.790
+a picture. Right. You can you can just try to give example
+
+00:43:13.790 --> 00:43:16.810
+of this one that okay so there is Avani and we have been
+
+00:43:16.810 --> 00:43:19.870
+using that and again in every like most of the cases
+
+00:43:19.870 --> 00:43:22.670
+nowadays most of the complex cases obviously you will have
+
+00:43:22.670 --> 00:43:26.670
+to like take a multi model system. So if I will talk about a
+
+00:43:26.670 --> 00:43:29.390
+text so obviously I can talk about a Gemini I can talk about
+
+00:43:29.390 --> 00:43:33.490
+a GPT I can talk about the cloud or sonnet any series which
+
+00:43:33.490 --> 00:43:36.790
+can behave like a brain for just for the text. Now if I am
+
+00:43:36.790 --> 00:43:42.490
+talking about a vision so here for a vision model right so
+
+00:43:42.490 --> 00:43:45.010
+we can we can go ahead with the specific one or even
+
+00:43:45.010 --> 00:43:49.210
+nowadays GPT is having a vision capability it can understand
+
+00:43:49.210 --> 00:43:53.450
+your image as well as it can understand like it can generate
+
+00:43:53.450 --> 00:43:58.070
+a image. So both can be done. Now for maybe a speech to text
+
+00:43:58.070 --> 00:44:01.110
+right if I if I am having a conversation system like Avani
+
+00:44:01.110 --> 00:44:03.810
+then I can try to use a whisper whisper from open AI once
+
+00:44:03.810 --> 00:44:08.550
+again and if I have to maybe like convert my text into a
+
+00:44:08.550 --> 00:44:12.250
+speech which Avani used to say so in that case maybe I can
+
+00:44:12.250 --> 00:44:15.750
+try to use a model from a 11 labs or even from a open AI a
+
+00:44:15.750 --> 00:44:18.830
+TTS model a text to speech model. So a speech to text text
+
+00:44:18.830 --> 00:44:21.690
+to a speech a vision model a text based model all of these
+
+00:44:21.690 --> 00:44:26.890
+models are required. So only my agent will be able to call a
+
+00:44:26.890 --> 00:44:32.230
+respective model for a respective use cases right. So that
+
+00:44:32.230 --> 00:44:35.550
+you know it will be able to like just communicate with me
+
+00:44:35.550 --> 00:44:38.830
+just like Avani Avani is able to do it. So technically that
+
+00:44:38.830 --> 00:44:43.010
+is a multi model agentic system you can you can say and yeah
+
+00:44:43.010 --> 00:44:45.430
+across industry we are doing it. So wherever this kind of a
+
+00:44:45.430 --> 00:44:48.010
+system is required obviously you have to call the multi
+
+00:44:48.010 --> 00:44:51.710
+model agent system. Question number 106. How do you
+
+00:44:51.710 --> 00:44:56.690
+implement agent learning and adjustment? Okay so how agent
+
+00:44:56.690 --> 00:45:00.730
+learns from anything? So obviously if I have to like
+
+00:45:00.730 --> 00:45:05.850
+learning an adoption I think we are already aware about this
+
+00:45:05.850 --> 00:45:08.510
+one. So we are already aware about the fine tuning by the
+
+00:45:08.510 --> 00:45:11.690
+way. So fine tuning is one of the way again inside the fine
+
+00:45:11.690 --> 00:45:13.690
+tuning we have a multiple approaches I have already
+
+00:45:13.690 --> 00:45:17.610
+discussed about it. Then there is something called as again
+
+00:45:17.610 --> 00:45:23.930
+today Asit has I believe send me one beautiful you know.
+
+00:45:27.770 --> 00:45:33.370
+LinkedIn I can say like a complete write up let me show it
+
+00:45:33.370 --> 00:45:36.510
+to you as we are talking about a fine tuning. So he has
+
+00:45:36.510 --> 00:45:41.860
+documented that in my in morning so I was just like going
+
+00:45:41.860 --> 00:45:47.180
+through it yeah. So he has created a very good blog as you
+
+00:45:47.180 --> 00:45:50.880
+can see. So what is for like a fine tuning and then what and
+
+00:45:50.880 --> 00:45:54.080
+all types of the fine tuning you will be able to find out.
+
+00:45:54.660 --> 00:45:56.800
+So fine tuning techniques. So basically. So basically if we
+
+00:45:56.800 --> 00:45:59.580
+will find tuning or preferred inside preferred there will be
+
+00:45:59.580 --> 00:46:03.920
+Laura and Cora then prefix adapter RHF DPO DPO is also same
+
+00:46:03.920 --> 00:46:07.520
+as a like RLHF which I have already discussed. So it's a
+
+00:46:07.520 --> 00:46:09.860
+good read. Maybe you can you can just go through it and he
+
+00:46:09.860 --> 00:46:15.700
+has done some sort of a you know deep investigation like
+
+00:46:15.700 --> 00:46:18.140
+what is the GPU hour in general which is required data
+
+00:46:18.140 --> 00:46:21.860
+gathering. So maybe it's a good read for all of you. So this
+
+00:46:21.860 --> 00:46:26.740
+is how we keep on doing a learning and adoption. From a new
+
+00:46:26.740 --> 00:46:30.160
+data right. So this is where and again I think we have
+
+00:46:30.160 --> 00:46:33.660
+already answered to this question multiple times. Let me
+
+00:46:33.660 --> 00:46:37.280
+share this link with all of you. Yeah I believe he has
+
+00:46:37.280 --> 00:46:39.460
+shared in some of the groups as well. Maybe not in your
+
+00:46:39.460 --> 00:46:43.220
+group or maybe I don't remember but yeah he pinged me so and
+
+00:46:43.220 --> 00:46:45.900
+I was like going through it. So I liked it basically the
+
+00:46:45.900 --> 00:46:47.260
+kind of a detail he has mentioned.
+
+00:46:50.700 --> 00:46:53.980
+Then implementation learning and adaption. Okay. Now what
+
+00:46:53.980 --> 00:46:56.880
+are the best practices for agent evaluation. That depends.
+
+00:46:56.900 --> 00:46:59.800
+It depends upon the task that we have in our hand and the
+
+00:46:59.800 --> 00:47:02.560
+kind of things that we are trying to solve. In general we
+
+00:47:02.560 --> 00:47:07.100
+try to test accuracy reliability and speed. And again so to
+
+00:47:07.100 --> 00:47:12.120
+test right to test basically there is a framework which is
+
+00:47:12.120 --> 00:47:15.000
+available in a market. Let me show you some of the framework
+
+00:47:15.000 --> 00:47:18.160
+for testing these models. So there is something called as
+
+00:47:18.160 --> 00:47:24.380
+like this one true lens is one of the framework. So true
+
+00:47:24.380 --> 00:47:27.520
+lens is one of the framework. Basically this framework helps
+
+00:47:27.520 --> 00:47:31.240
+you out in terms of evaluating a model apart from that. So
+
+00:47:31.240 --> 00:47:34.700
+there is a other framework called as deep evolve and this is
+
+00:47:34.700 --> 00:47:37.280
+also helping you out in terms of evaluating the entire
+
+00:47:37.280 --> 00:47:41.600
+basically like the LLM evaluation framework. So if you have
+
+00:47:41.600 --> 00:47:46.520
+like to do a evaluation of your LLMs. So like LLM that you
+
+00:47:46.520 --> 00:47:49.160
+are trying to train. So maybe you can try to go ahead with
+
+00:47:49.160 --> 00:47:52.840
+this one. So agentic matrixes, REG matrixes. So deep evolve
+
+00:47:52.840 --> 00:47:55.280
+and true lens. These are the two framework. Remember.
+
+00:47:55.280 --> 00:47:57.060
+Remember it guys. Some of the framework you should remember
+
+00:47:57.060 --> 00:47:59.980
+because people may ask you a question that okay so how do
+
+00:47:59.980 --> 00:48:03.940
+you like evaluate it. So can't say just like okay I was like
+
+00:48:03.940 --> 00:48:06.560
+relying on accuracy and reliability. Then people will ask
+
+00:48:06.560 --> 00:48:09.080
+you next question that how you were testing accuracy. Simply
+
+00:48:09.080 --> 00:48:11.080
+say that okay I was using this framework and this framework
+
+00:48:11.080 --> 00:48:12.660
+provides you everything. Believe me they provide you
+
+00:48:12.660 --> 00:48:15.740
+everything right. They provide you each and everything
+
+00:48:15.740 --> 00:48:19.100
+evaluate, test, iterate and test. So these are the framework
+
+00:48:19.100 --> 00:48:22.620
+true lens and deep evolve framework which I remember
+
+00:48:22.620 --> 00:48:26.640
+basically you can try to use it. For evaluating your LLMs
+
+00:48:26.640 --> 00:48:31.020
+basically. Now so next question says that what is the next
+
+00:48:31.020 --> 00:48:36.700
+question? Agent evaluation fine. How do you implement a
+
+00:48:36.700 --> 00:48:40.440
+agent safety mechanism? So how do you implement a agent
+
+00:48:40.440 --> 00:48:43.980
+safety mechanism? Now for agent safety mechanism there is
+
+00:48:43.980 --> 00:48:48.180
+something called as guardrails. I R D R A I L S guardrails
+
+00:48:48.180 --> 00:48:52.340
+AI. So guardrails is not just a concept. Many of us know
+
+00:48:52.340 --> 00:48:56.020
+these things as a concept. But yeah. There is also a
+
+00:48:56.020 --> 00:48:59.100
+framework you will be able to find out called as guardrails
+
+00:48:59.100 --> 00:49:04.520
+AI and basically what it does. So it will try to provide you
+
+00:49:04.520 --> 00:49:09.520
+can say just like we do a child proofing right for maybe a
+
+00:49:09.520 --> 00:49:13.520
+newborn kids in our home. So we try to you know seal back
+
+00:49:13.520 --> 00:49:18.140
+all the corners. We try to you know install some sort of a
+
+00:49:18.140 --> 00:49:22.660
+form or something. So in the similar manner there is
+
+00:49:22.660 --> 00:49:25.240
+something there is a platform called as guardrails AI. And
+
+00:49:25.240 --> 00:49:31.100
+now basically it is going to like give you in each and
+
+00:49:31.100 --> 00:49:34.180
+everything I would say like each and everything where you
+
+00:49:34.180 --> 00:49:37.280
+will be able to like you know guardrails your entire
+
+00:49:37.280 --> 00:49:40.900
+generative AI or agent TKI framework or you can guardrail
+
+00:49:40.900 --> 00:49:45.140
+your entire LLMs basically. So guardrails means guardrail on
+
+00:49:45.140 --> 00:49:48.940
+output obviously rate limit monitoring access control for a
+
+00:49:48.940 --> 00:49:51.760
+tool. All of these things comes under the guardrails and
+
+00:49:51.760 --> 00:49:55.160
+this is what it provides. So toxic language. Financed. Data
+
+00:49:55.160 --> 00:49:59.440
+wise. Competitor mentions. Positive tone. Data leak. Source
+
+00:49:59.440 --> 00:50:01.920
+of truth. Everything everything it is going to provide you.
+
+00:50:01.980 --> 00:50:04.600
+This is what they are claiming by the way. Obviously
+
+00:50:04.600 --> 00:50:07.620
+everyone is building day by day better and better
+
+00:50:07.620 --> 00:50:11.140
+application but yeah. So this is like a picture of this
+
+00:50:11.140 --> 00:50:15.860
+guardrail. Apart from this guardrail AI there is also called
+
+00:50:15.860 --> 00:50:18.380
+as Nemo. There are so many platform but yeah these are the
+
+00:50:18.380 --> 00:50:20.980
+popular one. Guardrail AI is one of the popular one. And
+
+00:50:20.980 --> 00:50:23.420
+then there is something called as Nemo guardrails right. We
+
+00:50:23.420 --> 00:50:27.660
+can try to use this one as well. So almost like a similar to
+
+00:50:27.660 --> 00:50:31.160
+it's from Nvidia by the way right. So similar to this
+
+00:50:31.160 --> 00:50:35.380
+guardrails AI so you can try to use this one. Yeah. We can
+
+00:50:35.380 --> 00:50:40.600
+try to use either of these things basically. So Nemo from
+
+00:50:40.600 --> 00:50:43.240
+Nvidia guardrails simplify scalable AI guardrails
+
+00:50:43.240 --> 00:50:47.520
+orchestration for safeguarding a agent TKI application. So
+
+00:50:47.520 --> 00:50:49.280
+if you are not able to understand anything then simply say
+
+00:50:49.280 --> 00:50:52.800
+that okay I was using a Nemo. Simple. Right. It's easy to
+
+00:50:52.800 --> 00:50:54.980
+use with the popular development framework. Langchain Lama
+
+00:50:54.980 --> 00:50:57.760
+indexes along with the growing ecosystem of AI system. So
+
+00:50:57.760 --> 00:51:00.200
+even if you have like a saying that okay fine I have used
+
+00:51:00.200 --> 00:51:02.600
+Langchain or Lama indexes or any kind of these frameworks
+
+00:51:02.600 --> 00:51:05.160
+right you can simply say that okay as a guardrails I was
+
+00:51:05.160 --> 00:51:08.280
+using Nvidia Nemo and I have built the entire application.
+
+00:51:08.480 --> 00:51:12.620
+So it's just one like a layer right. One layer on top of it
+
+00:51:12.620 --> 00:51:15.480
+and maybe you can try to read out this one a little bit more
+
+00:51:15.480 --> 00:51:18.780
+that AI guardrails orchestrator to keep LLM application
+
+00:51:18.780 --> 00:51:24.160
+secure and on track. Simple. So what it does. So maybe you
+
+00:51:24.160 --> 00:51:27.180
+can try to like look into this middle picture by the way the
+
+00:51:27.180 --> 00:51:30.160
+content moderation off topic detection RG enforcement
+
+00:51:30.160 --> 00:51:34.860
+hallucination like a real auditors jailbreak detection and
+
+00:51:34.860 --> 00:51:38.640
+PII detection. So this is what this guardrails is doing and
+
+00:51:38.640 --> 00:51:41.000
+technically this is what is required. Right. This is
+
+00:51:41.000 --> 00:51:43.260
+technically what is required. So this will sit in between
+
+00:51:43.260 --> 00:51:46.320
+your applications basically as you can see these guardrails
+
+00:51:46.320 --> 00:51:49.080
+and everything through will go through whatever query that
+
+00:51:49.080 --> 00:51:51.880
+user is sending everything will go through this particular
+
+00:51:51.880 --> 00:51:55.860
+small user. Unit. Right. Particular small unit. So you can.
+
+00:51:55.860 --> 00:51:58.840
+And again it's very easy to use and configure. Right. So
+
+00:51:58.840 --> 00:52:01.280
+maybe you can try to just check the example configuration
+
+00:52:01.280 --> 00:52:04.820
+for this one for like input moderation output moderation
+
+00:52:04.820 --> 00:52:07.500
+preventing off topic question. They have given you the
+
+00:52:07.500 --> 00:52:11.400
+implementation. Like I said it's very very easy. Right. It's
+
+00:52:11.400 --> 00:52:15.040
+very very easy. So just one or two line of addition of your
+
+00:52:15.040 --> 00:52:18.360
+code and they have given you like. So as we all understand
+
+00:52:18.360 --> 00:52:22.240
+the code part right agent part we all know how to build an
+
+00:52:22.240 --> 00:52:26.740
+agent. By the way. So just read out like something out of
+
+00:52:26.740 --> 00:52:29.420
+this and then you will be able to understand the entire
+
+00:52:29.420 --> 00:52:33.160
+guardrail part. So Nemo or maybe a guardrail AI is something
+
+00:52:33.160 --> 00:52:36.020
+that you can try to use it and people generally ask a
+
+00:52:36.020 --> 00:52:38.780
+question. Right. People generally ask a question that what
+
+00:52:38.780 --> 00:52:41.120
+kind of a guardrail frameworks or what kind of a guardrail
+
+00:52:41.120 --> 00:52:43.920
+that you have implemented. And this is something which is
+
+00:52:43.920 --> 00:52:48.200
+new and a hot topic for an interviewer. Right. Because
+
+00:52:48.200 --> 00:52:50.200
+everyone knows that that we are building things we are
+
+00:52:50.200 --> 00:52:54.820
+building agents we are using elements. But everyone is just
+
+00:52:54.820 --> 00:52:57.300
+worried and concerned about the output about the safety
+
+00:52:57.300 --> 00:53:00.840
+about the security. Right. So this question is somewhere the
+
+00:53:00.840 --> 00:53:06.500
+must question for any interviewer. So it was not also
+
+00:53:06.500 --> 00:53:10.080
+guardrails. Yes. Almost all cloud platform is providing you
+
+00:53:10.080 --> 00:53:12.220
+but these are the specific library which has been just
+
+00:53:12.220 --> 00:53:15.300
+designed for that particular purposes like where there are
+
+00:53:15.300 --> 00:53:17.780
+hundreds of libraries now you will be able to find out I'm
+
+00:53:17.780 --> 00:53:20.120
+just talking about a couple of frameworks and the famous
+
+00:53:20.120 --> 00:53:23.740
+one. That's it. Right. So basically you can even try to do a
+
+00:53:23.740 --> 00:53:26.800
+guardrails by using correct authorization. That is also a
+
+00:53:26.800 --> 00:53:29.780
+way of guardrailing your entire tools or maybe a functions
+
+00:53:29.780 --> 00:53:33.660
+that we have been doing since ages I believe. Right. Since I
+
+00:53:33.660 --> 00:53:36.640
+age like since the time when we have started doing a
+
+00:53:36.640 --> 00:53:39.320
+software development I think we are doing it. I am role.
+
+00:53:39.540 --> 00:53:43.520
+Right. So I am role is again one of the way by which you try
+
+00:53:43.520 --> 00:53:47.640
+to control the access or unauthorized access. So these are
+
+00:53:47.640 --> 00:53:50.380
+also comes under the guardrail itself. But if I talk about a
+
+00:53:50.380 --> 00:53:53.900
+specific to some agentic AI or LMS so this also will come
+
+00:53:53.900 --> 00:53:57.000
+into picture. But that doesn't mean that your I am your auth
+
+00:53:57.000 --> 00:54:00.900
+will not come into picture. That will also complement now
+
+00:54:00.900 --> 00:54:04.500
+the next question. What is the next question. So what is the
+
+00:54:04.500 --> 00:54:09.580
+approach for building a explainable agent. Yeah. What is the
+
+00:54:09.580 --> 00:54:12.400
+meaning of explainable agent by the way. So just focus on
+
+00:54:12.400 --> 00:54:16.520
+this word keyword explainable agent. Right. So basically
+
+00:54:16.520 --> 00:54:21.060
+when we go to a doctor. And for a diagnosis of some disease.
+
+00:54:21.380 --> 00:54:26.100
+So doctor a good doctor not a bad one by the way I have seen
+
+00:54:26.100 --> 00:54:29.240
+good or bad both. So good doctor right. So good doctor will
+
+00:54:29.240 --> 00:54:32.580
+try to give you a medicine plus he or she will try to even
+
+00:54:32.580 --> 00:54:35.900
+explain you right. In a in a better way in a layman way that
+
+00:54:35.900 --> 00:54:41.200
+OK why I'm giving you this particular medicine and like what
+
+00:54:41.200 --> 00:54:46.400
+is the disease that you have what was the possible cause if
+
+00:54:46.400 --> 00:54:49.860
+all if it is already defined. In a medical science. Right.
+
+00:54:50.200 --> 00:54:52.420
+If that phenomenon has already been captured in a medical
+
+00:54:52.420 --> 00:54:56.020
+science. So why this has happened and then why why I'm
+
+00:54:56.020 --> 00:54:58.000
+giving you this treatment and why I'm recommending you for
+
+00:54:58.000 --> 00:55:01.080
+this operation that operation. So basically the doctor
+
+00:55:01.080 --> 00:55:03.840
+explains everything right explain everything to its
+
+00:55:03.840 --> 00:55:08.500
+basically like to its patient right. In the similar manner
+
+00:55:08.500 --> 00:55:12.380
+right. And that too in a very plain why I'm giving example
+
+00:55:12.380 --> 00:55:15.420
+of a doctor because obviously me as a patient I will not be
+
+00:55:15.420 --> 00:55:18.280
+able to understand those medical terms. It's very complex
+
+00:55:18.280 --> 00:55:22.000
+for me. Right. And for most of us it's very complex I think
+
+00:55:22.000 --> 00:55:25.220
+for 99.9 percent of us it's very complex. I was not a very
+
+00:55:25.220 --> 00:55:28.160
+good biology student and even though I was a very good one I
+
+00:55:28.160 --> 00:55:30.840
+will not be able to understand something sometimes that they
+
+00:55:30.840 --> 00:55:35.360
+technically use internally right. During their diagnosis or
+
+00:55:35.360 --> 00:55:38.660
+during the learning phase. So basically what they will do
+
+00:55:38.660 --> 00:55:41.640
+they will try to explain it to me in a layman way so that I
+
+00:55:41.640 --> 00:55:44.340
+will be able to understand that OK this is something which I
+
+00:55:44.340 --> 00:55:47.600
+am facing this was the reason. Maybe I should stop this stop
+
+00:55:47.600 --> 00:55:50.940
+that or maybe I should go for this treatment in a similar
+
+00:55:50.940 --> 00:55:55.340
+manner. Right. In a similar manner you can you can basically
+
+00:55:55.340 --> 00:56:00.020
+like ask a creative agent right agent you can just give
+
+00:56:00.020 --> 00:56:03.060
+instruction that OK whenever some question will come to you
+
+00:56:03.060 --> 00:56:05.860
+do one thing. First of all try to break down those questions
+
+00:56:05.860 --> 00:56:09.740
+in as many possible states as possible. Then try to
+
+00:56:09.740 --> 00:56:13.460
+understand a user user from its user's past history then try
+
+00:56:13.460 --> 00:56:16.600
+to collect our data. About this question about a user.
+
+00:56:16.720 --> 00:56:21.340
+Right. Then try to produce some sort of answer now. So in
+
+00:56:21.340 --> 00:56:25.700
+this way obviously like a system will. So if I'm going to
+
+00:56:25.700 --> 00:56:28.220
+create this kind of agent and if I'm deployed with the chat
+
+00:56:28.220 --> 00:56:33.080
+system obviously it will give me a lot better answer as
+
+00:56:33.080 --> 00:56:36.300
+compared to direct generative answer. Right. Which which any
+
+00:56:36.300 --> 00:56:39.980
+system is generating by the way. So this is called as
+
+00:56:39.980 --> 00:56:43.140
+explainable agent and technically whenever we create our
+
+00:56:43.140 --> 00:56:45.920
+agents obviously. We try to like a give a breakdown of the
+
+00:56:45.920 --> 00:56:50.220
+steps and then we say that OK fine so just like give it and
+
+00:56:50.220 --> 00:56:52.600
+then we try to give you an evidence to the agent or maybe
+
+00:56:52.600 --> 00:56:55.180
+some sort of example to the agents. This is called as
+
+00:56:55.180 --> 00:56:59.220
+explainable. Nothing this is something that we practice on a
+
+00:56:59.220 --> 00:57:01.980
+regular basis. Nothing new. How do you implement agent
+
+00:57:01.980 --> 00:57:06.400
+debugging and monitoring. OK. So agent debugging and
+
+00:57:06.400 --> 00:57:11.440
+monitoring. So first of all if I have to do a monitoring I
+
+00:57:11.440 --> 00:57:14.840
+will for a lang system. So I will try to use a lang smith
+
+00:57:14.840 --> 00:57:17.400
+for that lang graph especially for lang graph I will be
+
+00:57:17.400 --> 00:57:21.000
+using lang smith for lang chain I will be using maybe a lang
+
+00:57:21.000 --> 00:57:24.460
+serve right for like a monitoring. I can try to use even
+
+00:57:24.460 --> 00:57:28.820
+open telemetry for a monitoring. Now if I have to basically
+
+00:57:28.820 --> 00:57:32.540
+like a log technically I have to log each and everything
+
+00:57:32.540 --> 00:57:36.820
+right latencies errors like input output replies everything
+
+00:57:36.820 --> 00:57:40.980
+I have to log. So maybe I will be using like Prometheus and
+
+00:57:40.980 --> 00:57:43.980
+Grafana for dashboarding and logging by the way. And just
+
+00:57:43.980 --> 00:57:46.760
+for a error logging so I will end up using a Sentry. These
+
+00:57:46.760 --> 00:57:49.640
+are the standard tool that we try to use it right. So which
+
+00:57:49.640 --> 00:57:52.140
+helps me out in terms of logging each and everything
+
+00:57:52.140 --> 00:57:54.920
+monitoring each and everything I use as consumptions input
+
+00:57:54.920 --> 00:57:59.160
+output latency and then eventually it will help me out in
+
+00:57:59.160 --> 00:58:02.620
+terms of even debugging if there will be some error comes
+
+00:58:02.620 --> 00:58:07.060
+into a picture in future basically. So this is how we can
+
+00:58:07.060 --> 00:58:11.340
+try to implement debugging and monitoring. Now moving to the
+
+00:58:11.340 --> 00:58:14.700
+next section. Architecture and design question hope till
+
+00:58:14.700 --> 00:58:21.270
+this point it's clear yeah I think I think we are doing a
+
+00:58:21.270 --> 00:58:26.820
+good discussion like what do you think guys like it's it's
+
+00:58:26.820 --> 00:58:29.980
+like a revision of everything and it's like we are we are
+
+00:58:29.980 --> 00:58:33.080
+trying to call multiple things again and again and again. So
+
+00:58:33.080 --> 00:58:38.540
+kind of summary right kind of summary and I believe that was
+
+00:58:38.540 --> 00:58:41.660
+the whole objective of this particular these lectures
+
+00:58:41.660 --> 00:58:44.760
+interview lectures by the way. Right. So we can come
+
+00:58:44.760 --> 00:58:47.820
+together and then we can try to you know recall those
+
+00:58:47.820 --> 00:58:51.480
+concept in a storytelling way because this is what we'll do
+
+00:58:51.480 --> 00:58:55.920
+we'll go to interview and we'll do that right. So everything
+
+00:58:55.920 --> 00:58:58.120
+should be on our fingertips by the way amazing discussion
+
+00:58:58.120 --> 00:59:01.300
+yeah we are covering a lot of grounds yeah and some new
+
+00:59:01.300 --> 00:59:06.100
+terms again some new terms as per the questions right. Yes
+
+00:59:06.100 --> 00:59:08.020
+mostly covered in the live classes obviously in live
+
+00:59:08.020 --> 00:59:10.520
+classes. So we don't go in a question answer way in live
+
+00:59:10.520 --> 00:59:15.240
+classes we generally go in a implementation. Right. But
+
+00:59:15.240 --> 00:59:19.620
+yeah. So this is something by which you just recall those
+
+00:59:19.620 --> 00:59:23.020
+things because what what happens right. So in live classes
+
+00:59:23.020 --> 00:59:26.060
+let's suppose I'm discussing something and maybe there will
+
+00:59:26.060 --> 00:59:29.200
+be some sort of a loophole in between some concepts but here
+
+00:59:29.200 --> 00:59:33.120
+so we are again trying to you know summarize we are trying
+
+00:59:33.120 --> 00:59:37.660
+to connect things so this will build a good memory for all
+
+00:59:37.660 --> 00:59:43.640
+of us. Now next question is architecture and. I. I. I would
+
+00:59:43.640 --> 00:59:45.960
+have cleared my last week interview if I had gone through
+
+00:59:45.960 --> 00:59:49.280
+these questions. Technically I have given you this questions
+
+00:59:49.280 --> 00:59:52.300
+10 not 10 days back now I think it's a 12 days back right
+
+00:59:52.300 --> 00:59:55.980
+and technically I have asked all of you right and even when
+
+00:59:55.980 --> 00:59:58.720
+I was giving you this when I have shared this entire seat
+
+00:59:58.720 --> 01:00:01.460
+with all of you I simply said that that believe me no one
+
+01:00:01.460 --> 01:00:04.320
+will cross this limit means no one will cross this limit and
+
+01:00:04.320 --> 01:00:06.420
+even today I'm telling you that no one will cross this limit
+
+01:00:06.420 --> 01:00:12.900
+right and I asked you that OK create a resume create a DPR.
+
+01:00:12.900 --> 01:00:15.700
+Detailed project report based on the project discussion that
+
+01:00:15.700 --> 01:00:18.360
+I have done in a beginning the architectural discussion of
+
+01:00:18.360 --> 01:00:22.380
+the use cases right build your DPR send it to me I'll review
+
+01:00:22.380 --> 01:00:25.120
+it and then go for the interview then you will be ready and
+
+01:00:25.120 --> 01:00:28.940
+then prepare these questions right and if you have not done
+
+01:00:28.940 --> 01:00:30.260
+that then I'm not at a fault.
+
+01:00:35.420 --> 01:00:38.820
+Sir I think these days you are launching courses mostly on
+
+01:00:38.820 --> 01:00:43.880
+Agenia yeah because it's in a demand right see we have to
+
+01:00:43.880 --> 01:00:46.560
+run this as a company obviously we have to generate a
+
+01:00:46.560 --> 01:00:50.840
+revenue and otherwise survival will be difficult for me and
+
+01:00:50.840 --> 01:00:54.200
+my team so yeah and people are looking for a generative AI
+
+01:00:54.200 --> 01:00:58.400
+more and more so obviously I have to fulfill the gap I have
+
+01:00:58.400 --> 01:01:00.180
+to fulfill the demand so
+
+01:01:02.300 --> 01:01:05.300
+that's the reason but not just generative AI I think AIML
+
+01:01:05.300 --> 01:01:08.360
+batch I'm going to start from next week right I don't know
+
+01:01:08.360 --> 01:01:10.900
+many of you are aware about it or not but yeah so basically
+
+01:01:10.900 --> 01:01:15.180
+those who would like to learn AIML or maybe do a revision so
+
+01:01:15.180 --> 01:01:18.480
+maybe you can come to this batch AIML masters which I'm
+
+01:01:18.480 --> 01:01:19.120
+going to launch for you.
+
+01:01:35.520 --> 01:01:40.420
+So if you
+
+01:01:40.420 --> 01:01:43.580
+have a time or maybe if you would like to revise or maybe if
+
+01:01:43.580 --> 01:01:46.540
+your neighbor or your friends are looking for something like
+
+01:01:46.540 --> 01:01:50.240
+this maybe go ahead with this one and yeah second one is for
+
+01:01:50.240 --> 01:01:52.980
+a kids basically so I have decided that I'll go and I'll try
+
+01:01:52.980 --> 01:01:57.120
+to teach to my young generation as well so there is a young
+
+01:01:57.120 --> 01:02:01.600
+Indian on for grade 6 till 12 so this is going to start I
+
+01:02:01.600 --> 01:02:05.740
+believe from 4th of October right so next to next week by
+
+01:02:05.740 --> 01:02:08.880
+the way so maybe like a children's can join this particular
+
+01:02:08.880 --> 01:02:11.920
+batch and they can enjoy at least they can they can learn
+
+01:02:11.920 --> 01:02:15.240
+something about AI that's the whole intention I don't have
+
+01:02:15.240 --> 01:02:18.440
+an intention to you know they will be able to build
+
+01:02:18.440 --> 01:02:20.660
+something. Okay. I have already mentioned that in a syllabus
+
+01:02:20.660 --> 01:02:25.280
+part but I just want them to be aware about the AI that okay
+
+01:02:25.280 --> 01:02:30.060
+how AI works and then what is the actual capability of an AI
+
+01:02:30.060 --> 01:02:31.120
+thank
+
+01:02:33.740 --> 01:02:36.820
+you always LLM ops interview progression I mean like don't
+
+01:02:36.820 --> 01:02:39.780
+start demanding for everything first of all complete
+
+01:02:39.780 --> 01:02:43.660
+something which which is like in your hand so when I say I'm
+
+01:02:43.660 --> 01:02:45.960
+launching this that right then people will say this this
+
+01:02:45.960 --> 01:02:48.880
+this launch this launch that I mean like you want you need
+
+01:02:48.880 --> 01:02:53.780
+only one job right. In one role in one domain then why you
+
+01:02:53.780 --> 01:02:56.740
+are looking for everything first complete one complete your
+
+01:02:56.740 --> 01:03:00.640
+target and then like look for something different I know
+
+01:03:00.640 --> 01:03:02.940
+because you will not be able to take a load of multiple
+
+01:03:02.940 --> 01:03:07.480
+batches or like multiple learnings or multiple tracks so
+
+01:03:07.480 --> 01:03:11.960
+just follow one track at a time complete it get some sort of
+
+01:03:11.960 --> 01:03:16.240
+outcome and then jump into the next otherwise you will keep
+
+01:03:16.240 --> 01:03:19.000
+on jumping and you will keep on complaining to yourself that
+
+01:03:19.000 --> 01:03:22.380
+I was not able to do that. Don't do it one thing at a time
+
+01:03:22.380 --> 01:03:29.240
+only your brain is a single threaded system even though if
+
+01:03:29.240 --> 01:03:32.740
+you think that you are a multitasker but you are not this is
+
+01:03:32.740 --> 01:03:37.600
+how human brain has been designed otherwise
+
+01:03:37.600 --> 01:03:43.030
+you will become a computer and you will lose all your human
+
+01:03:43.030 --> 01:03:48.930
+properties okay moving next that was just a joke can
+
+01:03:53.310 --> 01:03:55.730
+you chalk out the plan which course if you're complete
+
+01:03:55.730 --> 01:03:59.010
+beginner. Right in a AI ML complete beginner you don't know
+
+01:03:59.010 --> 01:04:01.510
+anything about AI you don't know anything about the
+
+01:04:01.510 --> 01:04:05.490
+programming then simple start with AI ML or start with my
+
+01:04:05.490 --> 01:04:09.430
+FSDS full data science batch that is also available or start
+
+01:04:09.430 --> 01:04:12.370
+with any of my python batches or maybe Ramindra is also
+
+01:04:12.370 --> 01:04:14.430
+taking python so you can start with python batches because
+
+01:04:14.430 --> 01:04:17.730
+python is an important one then second obviously like stats
+
+01:04:17.730 --> 01:04:20.190
+then machine learning deep learning go with that track
+
+01:04:20.190 --> 01:04:25.190
+basically if you are trying to jump directly into a
+
+01:04:25.190 --> 01:04:28.110
+generative AI then again you can start with Python after
+
+01:04:28.110 --> 01:04:31.610
+that skip all the parts don't no need to know about like
+
+01:04:31.610 --> 01:04:33.450
+machine learning deep learning all those things directly
+
+01:04:33.450 --> 01:04:39.670
+jump into my generative AI boot camp simple your statement
+
+01:04:39.670 --> 01:04:45.360
+is becoming quotes okay so yeah maybe you can use it for a
+
+01:04:45.360 --> 01:04:51.960
+social media post sometime now let's talk about Salyug move
+
+01:04:51.960 --> 01:04:56.400
+ahead or we are done so we have discussed 15 questions by
+
+01:04:56.400 --> 01:04:57.700
+the way for today. Okay.
+
+01:05:09.220 --> 01:05:11.120
+So design
+
+01:05:15.730 --> 01:05:19.710
+a multi-model JNI system that processes text image and audio
+
+01:05:19.710 --> 01:05:23.670
+I believe we have already taken this question even in past
+
+01:05:23.670 --> 01:05:28.210
+right multi like a agent system so here it's a multi-model
+
+01:05:28.210 --> 01:05:31.550
+previously it was a multi-agent system which can like you
+
+01:05:31.550 --> 01:05:36.990
+know take a feed from the multiple system right so basically
+
+01:05:36.990 --> 01:05:41.530
+again we'll try to here it's clearly mentioned that text
+
+01:05:41.530 --> 01:05:44.290
+image and audio. So obviously if I'm talking about a text so
+
+01:05:44.290 --> 01:05:47.750
+maybe I can think about a GPT-40 or maybe cloud at 3.0 if
+
+01:05:47.750 --> 01:05:50.330
+I'm talking about a vision so in that case I can try to use
+
+01:05:50.330 --> 01:05:55.270
+a model called as a clip blip or maybe a JNI provision model
+
+01:05:55.270 --> 01:05:58.530
+I can try to use if I'm talking about the images audio wise
+
+01:05:58.530 --> 01:06:01.630
+so speech model wise I can try to use a speech model from
+
+01:06:01.630 --> 01:06:06.710
+maybe a whisper API speech to text and from 11 labs as I
+
+01:06:06.710 --> 01:06:08.570
+have already mentioned the previous example or previous
+
+01:06:08.570 --> 01:06:11.310
+answer 11 labs is something that I can try to use for text
+
+01:06:11.310 --> 01:06:14.790
+to speech. So speech to text whisper and from text to speech
+
+01:06:14.790 --> 01:06:17.810
+11 labs I can try to use and then on top of this one
+
+01:06:17.810 --> 01:06:20.390
+orchestration framework wise I can try to use langchain,
+
+01:06:20.410 --> 01:06:23.230
+langrap, init and crew AI anything that I want right these
+
+01:06:23.230 --> 01:06:25.650
+are the orchestration framework which will like club
+
+01:06:25.650 --> 01:06:31.550
+everything together. Let's discuss till 120 okay so 120 let
+
+01:06:31.550 --> 01:06:35.630
+me finish this entire things like till 130 then yeah till
+
+01:06:35.630 --> 01:06:38.330
+130 I'll finish this entire section so that we can start
+
+01:06:38.330 --> 01:06:41.270
+with the okay so next section is basically about a
+
+01:06:41.270 --> 01:06:42.170
+leadership section. So next section is basically about a
+
+01:06:42.170 --> 01:06:43.570
+leadership section. These are this is not a technical one
+
+01:06:43.570 --> 01:06:47.510
+this is like kind of a non-tech question basically yeah so
+
+01:06:47.510 --> 01:06:53.050
+let me like a close it till 130 for today okay how do you
+
+01:06:53.050 --> 01:06:56.410
+architect a generic system for a enterprise deployment fine
+
+01:06:56.410 --> 01:07:00.450
+so I think study I have discussed seven to eight layers so
+
+01:07:00.450 --> 01:07:03.210
+technically that layer will come into a picture so whenever
+
+01:07:03.210 --> 01:07:06.650
+we talk about a generative AI system for a enterprise
+
+01:07:06.650 --> 01:07:10.130
+deployment so just remember that particular part which I
+
+01:07:10.130 --> 01:07:12.630
+have already discussed in very very detail I believe. I
+
+01:07:12.630 --> 01:07:15.870
+think that system is still open yeah so there will be entry
+
+01:07:15.870 --> 01:07:19.510
+point API gateway orchestrator custom model retriever maybe
+
+01:07:19.510 --> 01:07:23.410
+catching maybe safety observability and data or event hub
+
+01:07:23.410 --> 01:07:26.470
+right so these layers that I have discussed yesterday that
+
+01:07:26.470 --> 01:07:29.910
+was with respect to the enterprise application and the
+
+01:07:29.910 --> 01:07:33.550
+project and the layers which I have already discussed in a
+
+01:07:33.550 --> 01:07:37.970
+beginning again that was for a enterprise deployment so just
+
+01:07:37.970 --> 01:07:42.530
+go ahead with that. Now. So what is the idea? approach for
+
+01:07:42.530 --> 01:07:45.510
+building a generic system with the microservices first of
+
+01:07:45.510 --> 01:07:47.730
+all those who are not aware about this term called as
+
+01:07:47.730 --> 01:07:50.910
+microservice let me explain you that part see microservices
+
+01:07:50.910 --> 01:07:54.110
+are basically a style in layman way it's basically a style
+
+01:07:54.110 --> 01:07:58.830
+style means what so instead of building a multiple feature
+
+01:07:58.830 --> 01:08:03.450
+all together in a single code base right what i can do i can
+
+01:08:03.450 --> 01:08:08.150
+try to separate a code base for like a small small feature
+
+01:08:08.150 --> 01:08:11.630
+that is something called as microservices right that is
+
+01:08:11.630 --> 01:08:15.470
+something called as microservices so that i will be able to
+
+01:08:15.470 --> 01:08:19.370
+scale a particular service as per the need i will be able to
+
+01:08:19.370 --> 01:08:23.350
+modify each and every services as per the need and then i
+
+01:08:23.350 --> 01:08:25.430
+can i can do anything with respect to a particular services
+
+01:08:25.430 --> 01:08:29.890
+for example i'll tell you one thing in terms of any website
+
+01:08:29.890 --> 01:08:32.370
+that you are able to see any portal that you are able to see
+
+01:08:32.370 --> 01:08:35.590
+so let's suppose i'm designing a entire lms portal for
+
+01:08:35.590 --> 01:08:38.550
+example your own portal so what i will do i'll just try to
+
+01:08:38.550 --> 01:08:42.470
+like build it in a microservice you as a microservice mode
+
+01:08:42.470 --> 01:08:47.230
+basically right so where there will be a separate code base
+
+01:08:47.230 --> 01:08:50.090
+or there will be a separate solution just for the login and
+
+01:08:50.090 --> 01:08:53.830
+authorization there will be a separate code base just for my
+
+01:08:53.830 --> 01:08:56.630
+so basically plug and play kind of a model right so for
+
+01:08:56.630 --> 01:08:59.530
+login just for the login there will be a separate code base
+
+01:08:59.530 --> 01:09:02.390
+just for playing a video there will be a separate code base
+
+01:09:02.390 --> 01:09:04.790
+just for sending a notification separate service itself
+
+01:09:04.790 --> 01:09:07.330
+separate code base itself right a separate service separate
+
+01:09:07.330 --> 01:09:09.790
+application i'll try to build there will be a separate
+
+01:09:09.790 --> 01:09:14.430
+services for my resume ai separate services just to
+
+01:09:14.430 --> 01:09:16.730
+implement a uri again inside uri there can be multiple
+
+01:09:16.730 --> 01:09:20.970
+services so when i try to build a system in this way right
+
+01:09:20.970 --> 01:09:25.410
+when i try to detach all the major services uh so i used to
+
+01:09:25.410 --> 01:09:28.270
+get a lot of flexibility flexibility in terms of improving
+
+01:09:28.270 --> 01:09:32.530
+the features flexibility in terms of basically uh scaling it
+
+01:09:32.530 --> 01:09:36.870
+so let's suppose if one of the service needs a lot of
+
+01:09:36.870 --> 01:09:40.130
+compute or maybe a lot of bandwidth i can try to provide i
+
+01:09:40.130 --> 01:09:43.410
+don't have to like scale the entire system so i just have to
+
+01:09:43.410 --> 01:09:46.690
+scale one small services out of this one so these are the
+
+01:09:46.690 --> 01:09:49.310
+advantages obviously i will be able to get it in case of a
+
+01:09:49.310 --> 01:09:54.330
+micro service mode of development and obviously it will be
+
+01:09:54.330 --> 01:09:58.630
+more manageable right more manageable in this particular way
+
+01:09:58.630 --> 01:10:01.890
+anyone can come they can try to like read out they can check
+
+01:10:01.890 --> 01:10:04.330
+like what is the input what is the output and then they will
+
+01:10:04.330 --> 01:10:07.590
+be able to do some sort of a modification now similarly so
+
+01:10:07.590 --> 01:10:11.410
+when we are trying to build a generative ai system system
+
+01:10:11.410 --> 01:10:16.210
+right so obviously we are going to use some sort of a text
+
+01:10:16.210 --> 01:10:19.810
+generation image generation embedding services some sort of
+
+01:10:19.810 --> 01:10:22.190
+a reg services we are going to take some sort of a
+
+01:10:22.190 --> 01:10:25.570
+moderation services so what we can do is that that we can
+
+01:10:25.570 --> 01:10:28.930
+try to build all of the services in a independent mode yeah
+
+01:10:28.930 --> 01:10:32.570
+independent mode independently and one service i can try to
+
+01:10:32.570 --> 01:10:35.390
+expose to the other service via api or via rest i would say
+
+01:10:35.390 --> 01:10:38.830
+right or maybe a gprc call i can try to uh like you know
+
+01:10:38.830 --> 01:10:41.590
+expose to the other service and then i can say that okay
+
+01:10:41.590 --> 01:10:45.970
+fine so my like entire things is micro service like uh it's
+
+01:10:45.970 --> 01:10:48.950
+it's been built as a micro services otherwise it will be
+
+01:10:48.950 --> 01:10:52.850
+monolithic by the way means everything all together right
+
+01:10:52.850 --> 01:10:57.050
+one big application uh together so generally when we try to
+
+01:10:57.050 --> 01:10:59.770
+build mvps we try to don't we don't follow these micro
+
+01:10:59.770 --> 01:11:02.470
+services when you are literally building a very very big
+
+01:11:02.470 --> 01:11:05.570
+application right that you know that okay fine so it will go
+
+01:11:05.570 --> 01:11:08.190
+for the very uh biggest scale and we are building for next
+
+01:11:08.190 --> 01:11:11.670
+one generation or maybe one decade then obviously you should
+
+01:11:11.670 --> 01:11:13.610
+go and you should follow the micro service architecture
+
+01:11:13.610 --> 01:11:17.430
+generally we do it uh with respect to all the big product
+
+01:11:17.430 --> 01:11:21.910
+now next one so how do you design a generic system for a
+
+01:11:21.910 --> 01:11:25.950
+edge deployment what is the meaning of edge deployment so
+
+01:11:25.950 --> 01:11:30.150
+deploying this lm models on edge devices for example uh
+
+01:11:30.150 --> 01:11:35.550
+coral right gold coral uh jetson nano again like uh nvidia
+
+01:11:35.550 --> 01:11:38.970
+is having a multiple series and jetson nano jvr a lot of
+
+01:11:38.970 --> 01:11:42.630
+series nvidia keep on launching now raspberry pi or maybe
+
+01:11:42.630 --> 01:11:46.570
+your android or ios mobile devices so if you have to deploy
+
+01:11:46.570 --> 01:11:50.710
+those models so basically you can't deploy the raw model or
+
+01:11:50.710 --> 01:11:53.870
+the original models right you have to quantize those models
+
+01:11:53.870 --> 01:11:56.610
+or maybe you have to build a model with the help of
+
+01:11:56.610 --> 01:12:00.330
+digitalization right where you will try to reduce a size
+
+01:12:00.330 --> 01:12:04.010
+because your system can process those models there is a
+
+01:12:04.010 --> 01:12:07.150
+possibility but your mobile devices or your edge devices
+
+01:12:07.150 --> 01:12:10.670
+will be having a very very limited compute right maybe 1gb
+
+01:12:11.030 --> 01:12:14.990
+of a ram right so on that kind of a compute if you have to
+
+01:12:14.990 --> 01:12:19.050
+execute it you can't go and like you know dump those model
+
+01:12:19.050 --> 01:12:22.710
+as it is so quantization right quantization is something
+
+01:12:22.710 --> 01:12:25.350
+that we try to do or distillation is something that we try
+
+01:12:25.350 --> 01:12:28.450
+to do so that my model can run on a jetson nano kind of a
+
+01:12:28.450 --> 01:12:31.070
+devices raspberry pi kind of devices or coral kind of
+
+01:12:31.070 --> 01:12:34.930
+devices or on my mobile or on my like android is kind of a
+
+01:12:34.930 --> 01:12:38.670
+mobile right so the tech stack that we try to use in general
+
+01:12:38.670 --> 01:12:41.910
+is onx runtime we can use there is something called as
+
+01:12:41.910 --> 01:12:47.170
+tensor RT so that is also a tech stack for like a building
+
+01:12:47.170 --> 01:12:50.090
+something or deploying something on a edge devices there is
+
+01:12:50.090 --> 01:12:52.630
+something called as hugging face we already know right but
+
+01:12:52.630 --> 01:12:55.790
+there is something called as hugging face optimum right
+
+01:12:55.790 --> 01:12:58.530
+hugging face optimum if you go and search so again that
+
+01:12:58.530 --> 01:13:01.330
+provides you a flexibility in terms of deploying or in terms
+
+01:13:01.330 --> 01:13:05.370
+of building this quantize or the slice model basically and
+
+01:13:05.370 --> 01:13:08.330
+with the help of that we do it and we we do it a lot by the
+
+01:13:08.330 --> 01:13:12.010
+way yeah we do it a lot even I'm doing it since very very
+
+01:13:12.010 --> 01:13:15.810
+long time like not just a LLM basically so I think since
+
+01:13:15.810 --> 01:13:17.650
+last seven to eight years so we are doing a lot of
+
+01:13:17.650 --> 01:13:20.510
+deployment with respect to like you know our vision models
+
+01:13:20.510 --> 01:13:23.910
+because even vision models will be very very high and the
+
+01:13:23.910 --> 01:13:27.630
+inferencing will be very much costly in terms of compute so
+
+01:13:27.630 --> 01:13:30.330
+we have been like building such kind of a solution since
+
+01:13:30.330 --> 01:13:35.050
+seven to eight year I would say yeah we what are the
+
+01:13:35.050 --> 01:13:38.630
+consideration for building a gen ai system in a cloud okay
+
+01:13:38.630 --> 01:13:43.030
+so I think cost wise it should be optimized it should go for
+
+01:13:43.030 --> 01:13:46.190
+the auto scale if I'm talking about the cloud a security
+
+01:13:46.190 --> 01:13:50.690
+group basically means I am I have to control that serverless
+
+01:13:50.690 --> 01:13:53.850
+option for a light task so all these things we have to think
+
+01:13:53.850 --> 01:13:56.510
+whenever we are thinking about the any kind of a generic
+
+01:13:56.510 --> 01:14:00.370
+system on the cloud so cloud wise I believe AWS provides
+
+01:14:00.370 --> 01:14:03.550
+provides you that kind of a solution for example AWS
+
+01:14:03.550 --> 01:14:08.330
+SageMaker right GCP vortex AI Azure ML Lambda services all
+
+01:14:08.330 --> 01:14:12.510
+of these cloud services are providing services for the same
+
+01:14:12.510 --> 01:14:16.870
+thing now how do you architect a generic system for a real
+
+01:14:16.870 --> 01:14:19.710
+time application I believe I have already given an answer
+
+01:14:19.710 --> 01:14:23.650
+with respect to a project right so obviously it should be
+
+01:14:23.650 --> 01:14:27.110
+like a work with a very low latency it should like it should
+
+01:14:27.110 --> 01:14:31.010
+be cheap basically it should be like always work with the
+
+01:14:31.010 --> 01:14:35.010
+async processing so yeah this is how we do it and I think I
+
+01:14:35.010 --> 01:14:38.370
+talked about a vllm not just talk about it we have even used
+
+01:14:38.370 --> 01:14:42.430
+a vllm and we have hosted our own view right that is one of
+
+01:14:42.430 --> 01:14:47.550
+the example but yeah those those are just a small part the
+
+01:14:47.550 --> 01:14:50.850
+big part was the project that we have discussed in the
+
+01:14:50.850 --> 01:14:53.750
+beginning what is the approach for building a generic system
+
+01:14:53.750 --> 01:14:57.350
+with the high availability okay so if we have we are
+
+01:14:57.350 --> 01:14:59.890
+building some sort of a system which should be available uh
+
+01:14:59.890 --> 01:15:03.910
+like a hospital by the way 24 by 7 to us so in that case
+
+01:15:03.910 --> 01:15:07.350
+obviously we have to productionize it with a multi-node
+
+01:15:07.350 --> 01:15:10.390
+system so we will not take just one or two machine it should
+
+01:15:11.030 --> 01:15:13.670
+be a cluster on which we have to deploy plus we have to add
+
+01:15:13.670 --> 01:15:17.370
+a load balancer over there right plus we have to basically
+
+01:15:17.370 --> 01:15:20.430
+like uh you know configure it for a automatic failover that
+
+01:15:20.430 --> 01:15:24.250
+if there will be a failover then what system should do right
+
+01:15:24.250 --> 01:15:27.990
+and keeping that in our mind so we can try to take nginx
+
+01:15:27.990 --> 01:15:30.910
+envoy which I have discussed yesterday as well uh Kubernetes
+
+01:15:30.910 --> 01:15:35.250
+services I can try to consider consider or maybe like a aws
+
+01:15:35.250 --> 01:15:39.710
+ecr acs kind of services I can try to consider for this high
+
+01:15:41.030 --> 01:15:43.330
+availability but simply means that that host it on a multi
+
+01:15:43.330 --> 01:15:47.230
+-node right that to you know multi-reasons basically and if
+
+01:15:47.230 --> 01:15:50.150
+you are doing it then you are able to design like a system
+
+01:15:50.150 --> 01:15:54.610
+with a high availability now how do you design a generic
+
+01:15:54.610 --> 01:15:58.890
+system for a global deployment yeah global deployment for a
+
+01:15:58.890 --> 01:16:01.150
+global deployment obviously multi-reason this is the meaning
+
+01:16:01.150 --> 01:16:04.290
+of a global right so data centers should be across a
+
+01:16:04.290 --> 01:16:06.590
+different different region so if I'm like serving European
+
+01:16:06.590 --> 01:16:07.710
+reason USA reason
+
+01:16:11.030 --> 01:16:13.130
+available my data centers should be available in all the
+
+01:16:13.130 --> 01:16:16.510
+regions that is one uh second one is basically a studio
+
+01:16:16.510 --> 01:16:18.990
+implementation right so maybe cloudflare studio
+
+01:16:18.990 --> 01:16:21.470
+implementation i'll go ahead with uh content delivery
+
+01:16:21.470 --> 01:16:24.890
+network which will make my like a system fast localization
+
+01:16:24.890 --> 01:16:27.770
+right localization localization means basically whenever
+
+01:16:27.770 --> 01:16:31.610
+some traffic is coming so a local server so basically it
+
+01:16:31.610 --> 01:16:34.550
+will be able to identify the geolocation of the service or
+
+01:16:34.550 --> 01:16:37.910
+the of the hit or maybe of the traffic and then it will
+
+01:16:37.910 --> 01:16:43.790
+route the like a request to a local one not to some other uh
+
+01:16:43.790 --> 01:16:47.950
+reason so localization of the entire services we can try to
+
+01:16:47.950 --> 01:16:50.890
+implement in this way we can do a global deployment i
+
+01:16:50.890 --> 01:16:53.010
+believe nothing new we have already discussed it it's a
+
+01:16:53.010 --> 01:16:56.810
+repeated kind of a question what are the considerations for
+
+01:16:56.810 --> 01:17:00.270
+building geni system with the compliances okay so compliance
+
+01:17:00.270 --> 01:17:04.370
+means obviously uh kind of a legal note right so let's
+
+01:17:04.370 --> 01:17:05.410
+suppose if i'm trying to build a jni system with compliance
+
+01:17:05.410 --> 01:17:05.410
+right so i have a jni system with compliance right so i have
+
+01:17:05.410 --> 01:17:08.750
+a build something for a europe gdpr will be applicable right
+
+01:17:08.750 --> 01:17:12.270
+because european region follow gdpr strictly if i'm building
+
+01:17:12.270 --> 01:17:15.410
+something for a health care then hippa will come into a
+
+01:17:15.410 --> 01:17:18.810
+picture for a health care basically right so gdpr generally
+
+01:17:18.810 --> 01:17:22.130
+for a europe and hippa so whatever clauses that they have
+
+01:17:22.130 --> 01:17:24.370
+mentioned i have to follow that right for example they have
+
+01:17:24.370 --> 01:17:26.190
+mentioned that their data should be available in their
+
+01:17:26.190 --> 01:17:29.490
+region only so obviously i should not host any server so
+
+01:17:29.490 --> 01:17:33.390
+which should be out of that reason because it is going to
+
+01:17:33.390 --> 01:17:37.010
+breach a legal law of that particular land if i'm selling
+
+01:17:37.010 --> 01:17:40.770
+some services in that particular region and that is
+
+01:17:40.770 --> 01:17:44.130
+something that you will be able to find out in aws azure and
+
+01:17:44.130 --> 01:17:47.530
+everything is configurable by the way right so as per the
+
+01:17:47.530 --> 01:17:51.170
+law everything can configure it in whatever like a like a
+
+01:17:51.170 --> 01:17:53.630
+services that you are using maybe a cloud services you are
+
+01:17:53.630 --> 01:17:57.410
+using you will be able to configure it as simple as that now
+
+01:17:57.410 --> 01:17:59.530
+how do you architect a jna application for a multi-reason
+
+01:17:59.530 --> 01:18:03.350
+deployment i don't have to architect much here right i don't
+
+01:18:03.350 --> 01:18:07.750
+have to basically architect like many things over here
+
+01:18:07.750 --> 01:18:12.230
+because if i'm using a ek services it handles automatically
+
+01:18:12.230 --> 01:18:17.250
+right aws global accelerator it handles automatically so it
+
+01:18:17.250 --> 01:18:19.810
+will be i just have to do a configuration so basically a
+
+01:18:19.810 --> 01:18:24.070
+configuration for a geo routing so i will try to like my
+
+01:18:24.070 --> 01:18:26.270
+system will try to understand that okay fine from where
+
+01:18:26.270 --> 01:18:28.990
+traffic is coming and it will try to send to the nearest
+
+01:18:28.990 --> 01:18:29.830
+possible server so i will try to send to the nearest
+
+01:18:29.830 --> 01:18:31.850
+possible server right it will send that request to the
+
+01:18:31.850 --> 01:18:36.750
+nearest possible server as simple as that and again so i
+
+01:18:36.750 --> 01:18:39.170
+have to configure from my site so i should keep all my
+
+01:18:39.170 --> 01:18:42.610
+databases in sync right all my model weights and everything
+
+01:18:42.610 --> 01:18:46.950
+in sync so that everyone should be able to get uh like in a
+
+01:18:46.950 --> 01:18:49.750
+in a zero downtime so everyone should be able to see the
+
+01:18:49.750 --> 01:18:52.050
+exact same thing the services which i'm selling in one
+
+01:18:52.050 --> 01:18:54.730
+region or maybe into the other region this is the only thing
+
+01:18:54.730 --> 01:18:57.610
+which i have to handle apart from that this is a kind of a
+
+01:18:57.610 --> 01:19:00.310
+configuration just one click configuration nowadays it's not
+
+01:19:00.310 --> 01:19:03.110
+a big headache for any one of us what is the approach for
+
+01:19:03.110 --> 01:19:06.370
+building a jni system with the data governance okay so what
+
+01:19:06.370 --> 01:19:08.810
+is the meaning of data governance first of all uh we have to
+
+01:19:08.810 --> 01:19:12.010
+understand that right so it's just like a if i'll talk about
+
+01:19:12.010 --> 01:19:16.010
+data governance technically it's like a like a owning a
+
+01:19:16.010 --> 01:19:19.290
+library or maybe maintaining a library so i should always
+
+01:19:19.290 --> 01:19:24.030
+know that uh who owns what kind of a book what book who owns
+
+01:19:24.030 --> 01:19:27.310
+who have taken or who have borrowed which book who is
+
+01:19:27.310 --> 01:19:29.690
+reading what kind of a books in library this is what happens
+
+01:19:29.850 --> 01:19:32.350
+we go to library we borrow the books we go to library we
+
+01:19:32.350 --> 01:19:35.790
+read the books right uh so basically this is something
+
+01:19:35.790 --> 01:19:39.490
+called as a data governance so where uh we should always uh
+
+01:19:39.490 --> 01:19:43.430
+like understand that who should have what kind of a data
+
+01:19:43.430 --> 01:19:45.890
+access everyone should not have all kind of a data access
+
+01:19:45.890 --> 01:19:49.650
+right not neither a model not even a human being everyone
+
+01:19:49.650 --> 01:19:52.710
+should not have all the function access right so basically
+
+01:19:52.710 --> 01:19:56.750
+we try to define a role based things and uh yeah so we
+
+01:19:56.750 --> 01:19:59.810
+should always also track that on where data is coming and
+
+01:19:59.810 --> 01:19:59.830
+then we should always understand that what kind of a data
+
+01:19:59.830 --> 01:20:02.410
+access right are we breaching the trust or are we reaching
+
+01:20:02.410 --> 01:20:05.290
+breaching the law of the land right so are we doing
+
+01:20:05.290 --> 01:20:07.410
+something with the data which we were not supposed to i
+
+01:20:07.410 --> 01:20:10.330
+believe yesterday uh we talked about the story a lot right
+
+01:20:10.330 --> 01:20:13.650
+data governance story so in this way you will be able to
+
+01:20:13.650 --> 01:20:16.550
+manage it basically a data governance so it's it's more like
+
+01:20:16.550 --> 01:20:19.150
+a like i have already mentioned yesterday that it's more
+
+01:20:19.150 --> 01:20:23.830
+like an intention right so basically it comes from the
+
+01:20:23.830 --> 01:20:26.810
+intention and then you just like uh tune your system
+
+01:20:26.810 --> 01:20:31.250
+accordingly uh basically so this is something called as data
+
+01:20:31.250 --> 01:20:33.590
+governance now there is something called as how do you
+
+01:20:33.590 --> 01:20:37.610
+design a generic system uh for audit and compliances okay so
+
+01:20:37.610 --> 01:20:41.850
+basically we try to like uh you know configure a log system
+
+01:20:41.850 --> 01:20:45.230
+so maybe a splunk maybe a data dog maybe elastic stack so
+
+01:20:45.230 --> 01:20:49.550
+elk we try to like uh attach to it and uh we will keep on
+
+01:20:49.550 --> 01:20:52.610
+like uh getting the dashboards we will keep on getting our
+
+01:20:52.610 --> 01:20:55.610
+flags we will keep on getting the alerts and then based on
+
+01:20:55.610 --> 01:20:59.110
+that we try to audit and we try to maintain the compliances
+
+01:20:59.110 --> 01:21:03.510
+yeah okay now so what are the consideration for building a
+
+01:21:03.510 --> 01:21:08.510
+generative ai system with security okay so basically like uh
+
+01:21:08.510 --> 01:21:11.510
+we talked about the guardrails yeah we talked about the
+
+01:21:11.510 --> 01:21:13.170
+guardrails so there is something called as guardrails ai
+
+01:21:13.170 --> 01:21:16.070
+there is something called as nemo guardrails from nvidia we
+
+01:21:16.070 --> 01:21:19.230
+have already discussed uh a iam comes into a picture and
+
+01:21:19.230 --> 01:21:22.450
+access management comes into a picture uh vault for managing
+
+01:21:22.450 --> 01:21:25.650
+the secrets even adobe is providing your vault right our
+
+01:21:25.650 --> 01:21:29.550
+other system is also providing your walls so this is how i
+
+01:21:29.550 --> 01:21:32.430
+will try to implement so combination of this is going to
+
+01:21:32.430 --> 01:21:35.650
+give me the security right so generative system with the
+
+01:21:35.650 --> 01:21:38.290
+security so basically the very first part which i will do
+
+01:21:38.290 --> 01:21:41.350
+with the data is encrypt everything yesterday i talked about
+
+01:21:41.350 --> 01:21:44.130
+it right so encrypt everything when data is moving from one
+
+01:21:44.130 --> 01:21:46.290
+system to other system or client side to server side server
+
+01:21:46.290 --> 01:21:49.710
+side to client side the way whatsapp is doing right so we
+
+01:21:49.710 --> 01:21:51.770
+should control each and everything with the help of role
+
+01:21:51.770 --> 01:21:54.270
+-based access everyone should not have every kind of access
+
+01:21:54.270 --> 01:21:57.630
+it should be a role-based right so protect against the
+
+01:21:57.630 --> 01:22:01.830
+prompt injection right now guardrails obviously comes into a
+
+01:22:01.830 --> 01:22:04.210
+picture so which will come to by which you will be able to
+
+01:22:04.210 --> 01:22:08.130
+control even a tone even output even a input with respect to
+
+01:22:08.130 --> 01:22:10.750
+any kind of a generative ai application maybe agentic or
+
+01:22:10.750 --> 01:22:15.290
+maybe with respect to just a lms so this is how you can like
+
+01:22:15.290 --> 01:22:19.310
+implement a security and safety and by default this will
+
+01:22:19.310 --> 01:22:21.790
+come into picture and i think we talked about this one more
+
+01:22:21.790 --> 01:22:25.890
+than 20 times now about like guardrail security and safety
+
+01:22:25.890 --> 01:22:31.210
+about these terms now 124 number question says that that how
+
+01:22:31.210 --> 01:22:35.130
+do you architect a generative ai system for a privacy
+
+01:22:35.130 --> 01:22:41.680
+protection okay so basically privacy means personal data
+
+01:22:41.680 --> 01:22:44.980
+right personal data basically like a safe this is something
+
+01:22:44.980 --> 01:22:49.380
+called as like a privacy protection like i said it's it's
+
+01:22:49.380 --> 01:22:53.940
+more like an intention right then implementation so if
+
+01:22:53.940 --> 01:22:57.240
+company is intended to do it they will do it otherwise they
+
+01:22:57.240 --> 01:22:58.920
+will just like make an intention and then they will do it
+
+01:22:58.920 --> 01:22:59.560
+and then they will do it and then make a statement that we
+
+01:22:59.560 --> 01:23:02.460
+are doing it but yeah it just depends upon them so it's more
+
+01:23:02.460 --> 01:23:05.300
+like an intention so you can say that yeah we were doing it
+
+01:23:05.300 --> 01:23:07.660
+so we were not storing any kind of our data which we were
+
+01:23:07.660 --> 01:23:10.860
+not authorized to this is the story you can build up but
+
+01:23:10.860 --> 01:23:14.100
+technically yeah it's an intention game what is the approach
+
+01:23:14.100 --> 01:23:17.920
+for building generative system with the ethical ai okay uh
+
+01:23:17.920 --> 01:23:25.400
+again more more or less like a previous one right so
+
+01:23:25.400 --> 01:23:29.240
+basically like a trans you should keep always a transparent
+
+01:23:29.240 --> 01:23:33.720
+you should always avoid the harmful input and output right
+
+01:23:33.720 --> 01:23:37.760
+so this by this you will be able to build the ethical ai how
+
+01:23:37.760 --> 01:23:41.920
+do you design generic system for a bias uh mitigation it
+
+01:23:41.920 --> 01:23:45.220
+should not be biased so basically to mitigate a bias the
+
+01:23:45.220 --> 01:23:47.800
+story will start from the data right if your data is biased
+
+01:23:47.800 --> 01:23:50.700
+then obviously model response or model generation is going
+
+01:23:50.700 --> 01:23:53.760
+to be biased so it depends upon first a training data
+
+01:23:53.760 --> 01:23:56.700
+because that was the source of truth for any model that you
+
+01:23:56.700 --> 01:23:59.460
+are building right or any model that you are using So you
+
+01:23:59.460 --> 01:24:03.060
+should keep a heavy check on your data side. So your data
+
+01:24:03.060 --> 01:24:05.380
+should not be or it is not supposed to be biased at all.
+
+01:24:05.980 --> 01:24:09.780
+Then when system is giving an output, you should always use
+
+01:24:09.780 --> 01:24:12.700
+some re-ranking tool, maybe a Kohira, maybe some re-ranker
+
+01:24:12.700 --> 01:24:17.060
+model, right, to re-rank the entire output. And then always
+
+01:24:17.060 --> 01:24:20.440
+give a priority to the highest ranking one. So maybe this is
+
+01:24:20.440 --> 01:24:23.740
+how you will be able to mitigate the bias part inside the
+
+01:24:23.740 --> 01:24:27.760
+module. And then always RLHF, right. So human feedback loop
+
+01:24:27.760 --> 01:24:30.900
+is important. Human check is important. Unless and until you
+
+01:24:30.900 --> 01:24:36.380
+are not 100% sure about this one. Now, so just to mitigate a
+
+01:24:36.380 --> 01:24:39.200
+bias, there are a couple of framework that you will be able
+
+01:24:39.200 --> 01:24:42.740
+to find out in this world. Basically, there is something
+
+01:24:42.740 --> 01:24:47.380
+called as a fair learn dot bias. So improve of fairness in a
+
+01:24:47.380 --> 01:24:50.640
+AI system. Technically, it does the same thing that I was
+
+01:24:50.640 --> 01:24:54.220
+talking about. But yeah, there is a framework for that one.
+
+01:24:54.340 --> 01:24:57.480
+So you can just do people install like a fair learn. And
+
+01:24:57.480 --> 01:25:00.140
+then follow along. Follow along with their documentation and
+
+01:25:00.140 --> 01:25:05.200
+then you can try to use it, right. So technically, it is
+
+01:25:05.200 --> 01:25:08.080
+going to check the data demographic, this, that. And then
+
+01:25:08.080 --> 01:25:12.340
+there's going to bring a fairness into your data set. Even
+
+01:25:12.340 --> 01:25:17.520
+if you're not using these frameworks, it's okay, right. It's
+
+01:25:17.520 --> 01:25:20.740
+completely fine. It's completely okay. You can try to like,
+
+01:25:20.800 --> 01:25:24.600
+you know, do the implementation even without this library.
+
+01:25:24.880 --> 01:25:28.320
+Because this is just a piece of like a simple wrapping.
+
+01:25:28.460 --> 01:25:32.480
+Wrapper code, yeah, or you can try to use some bias
+
+01:25:32.480 --> 01:25:35.640
+detection model as well, yeah, so there is something called
+
+01:25:35.640 --> 01:25:38.340
+as like some bias detection model, you will be able to find
+
+01:25:38.340 --> 01:25:41.820
+out on hugging face for some of the use cases for especially
+
+01:25:41.820 --> 01:25:45.360
+for like a textual information, textual data, you can you
+
+01:25:45.360 --> 01:25:49.180
+can try to find out, right. So, so basically, this is going
+
+01:25:49.180 --> 01:25:53.140
+to check bias and fairness in AI. So models are also
+
+01:25:53.140 --> 01:25:56.420
+available frameworks are also available, but pretty much
+
+01:25:56.420 --> 01:25:58.020
+it's the same thing that we're talking about.
+
+01:26:01.340 --> 01:26:05.200
+Okay, so now what are the consideration for building
+
+01:26:05.200 --> 01:26:09.540
+generative AI system with the fairness, okay, so fairness,
+
+01:26:09.600 --> 01:26:15.260
+basically, like, I can try to use maybe this
+
+01:26:17.080 --> 01:26:20.440
+one fair learn to bring a fairness, right. So fair learn is
+
+01:26:20.440 --> 01:26:22.780
+an open source community driven project to help a data
+
+01:26:22.780 --> 01:26:25.040
+scientist to improve our fairness in AI system, learn about
+
+01:26:25.040 --> 01:26:29.540
+AI fairness, or guide use cases access and mitigate fairness
+
+01:26:29.540 --> 01:26:34.260
+issue using a Python toolkit, okay. So basically, like it
+
+01:26:34.260 --> 01:26:37.700
+will try to bring to basically like something inside your
+
+01:26:37.700 --> 01:26:41.060
+data set something inside your across system. So, which will
+
+01:26:41.060 --> 01:26:44.440
+try to, you know, represent everyone and which will give
+
+01:26:44.440 --> 01:26:50.000
+kind of an equal opportunity to every one for like AI that
+
+01:26:50.000 --> 01:26:52.780
+you are trying to build. This is what is like a fairness is
+
+01:26:52.780 --> 01:26:56.060
+it will not like a do a biasing is at all. So this library
+
+01:26:56.060 --> 01:26:58.540
+is also already available. Again, there are models which is
+
+01:26:58.540 --> 01:27:00.820
+available. So maybe you can try to explore for bringing a
+
+01:27:00.820 --> 01:27:04.020
+fairness into your system. Maybe be able to use스�
+
+01:27:09.220 --> 01:27:10.260
+to change your actual data for this versed app for good,
+
+01:27:10.260 --> 01:27:14.820
+right, because this
+
+01:27:14.820 --> 01:27:20.300
+process is very, very updated and you get a very very good
+
+01:27:20.300 --> 01:27:24.900
+sense of format.
+
+01:27:24.960 --> 01:27:32.740
+And also, well and conceptually,
+
+01:27:32.740 --> 01:27:36.060
+the second point should be the first one that how you have
+
+01:27:36.060 --> 01:27:39.280
+actually acquired the data because that's a big question for
+
+01:27:39.280 --> 01:27:42.920
+all of us right we all know that uh they have acquired like
+
+01:27:42.920 --> 01:27:47.660
+uh all kind of a data without any kind of a consent right
+
+01:27:47.660 --> 01:27:52.640
+but yeah that's a big question so they should also like if
+
+01:27:52.640 --> 01:27:55.260
+they would like to bring up fairness and transparency which
+
+01:27:55.260 --> 01:27:58.440
+they will not no one will by the way right because they will
+
+01:27:58.440 --> 01:28:01.520
+get into a lot of trouble and they will have to pay back a
+
+01:28:01.520 --> 01:28:04.920
+lot of money uh which they can't and they shouldn't i think
+
+01:28:04.920 --> 01:28:10.320
+they should but yeah they will not do it uh so like how you
+
+01:28:10.320 --> 01:28:12.860
+have acquired the data i think that that's the very first uh
+
+01:28:12.860 --> 01:28:16.120
+kind of a transparency that people should uh bring that
+
+01:28:16.120 --> 01:28:18.380
+that's the meaning of transparency that how your system is
+
+01:28:18.380 --> 01:28:20.860
+actually working what kind of data you are storing what kind
+
+01:28:20.860 --> 01:28:25.120
+of data you have used to train your ai model right how much
+
+01:28:25.120 --> 01:28:28.480
+my personal data has been used because everyone will be
+
+01:28:28.480 --> 01:28:31.520
+having concern with respect to a personal data right so when
+
+01:28:31.640 --> 01:28:34.240
+i'm chatting with your system you are saying that you are
+
+01:28:34.240 --> 01:28:37.440
+not storing uh let's suppose i have not given a consent but
+
+01:28:37.440 --> 01:28:40.460
+how much data you are storing how you are able to understand
+
+01:28:40.460 --> 01:28:43.940
+my one month old chat although i'm chatting with on regular
+
+01:28:43.940 --> 01:28:47.100
+basis where you are storing it even though if i have cleared
+
+01:28:47.100 --> 01:28:49.600
+my cache and all these questions right which will come
+
+01:28:49.600 --> 01:28:55.120
+around a transparency so if you are like uh it's it's more
+
+01:28:55.120 --> 01:28:58.280
+like explanatory things right that okay what you are doing
+
+01:28:58.280 --> 01:29:01.940
+explain it to me that comes with the transparency so many
+
+01:29:01.940 --> 01:29:04.540
+company does that for their client but yeah the big one will
+
+01:29:04.540 --> 01:29:07.820
+never do it because entire globe is their client and
+
+01:29:07.820 --> 01:29:10.460
+especially a b2c will not do it b2b obviously you will have
+
+01:29:10.460 --> 01:29:14.040
+to go and you have to be very very transparent uh with your
+
+01:29:14.040 --> 01:29:20.160
+clients now next one is like uh 129 what is the approach for
+
+01:29:20.160 --> 01:29:23.060
+building generative system with accountability i think
+
+01:29:23.060 --> 01:29:28.400
+transparency accountability i mean like same thing so
+
+01:29:29.940 --> 01:29:34.140
+uh basically like uh accountability means uh how we are
+
+01:29:34.140 --> 01:29:37.200
+tracking how we are changing the model or how we are
+
+01:29:37.200 --> 01:29:39.260
+worsening all of these things comes with the accountability
+
+01:29:39.260 --> 01:29:42.480
+similar kind of a question i think since last four to four
+
+01:29:42.480 --> 01:29:45.340
+or five times we are getting how do you design a gen ai
+
+01:29:45.340 --> 01:29:50.160
+system for a human oversight okay so human oversight means
+
+01:29:50.160 --> 01:29:53.720
+uh basically a kind of a system uh where human will be in
+
+01:29:53.720 --> 01:29:56.240
+loop human will keep on watching it will keep on giving a
+
+01:29:56.240 --> 01:30:00.380
+feedback rlhf dpo is one of the example right so where we
+
+01:30:00.380 --> 01:30:01.620
+build a model but yeah so for example if you have a system
+
+01:30:01.620 --> 01:30:01.640
+where you have a system where you have a gen ai system where
+
+01:30:01.640 --> 01:30:01.640
+you have a gen ai system where you have a gen ai system
+
+01:30:01.640 --> 01:30:03.680
+where you have a gen ai system so we try to keep basically
+
+01:30:03.680 --> 01:30:08.940
+human in a loop basically right even if you will talk about
+
+01:30:08.940 --> 01:30:12.040
+a lang smith they they provide you this rlhf options and
+
+01:30:12.040 --> 01:30:16.400
+majority of this new age platforms for building this ai
+
+01:30:16.400 --> 01:30:19.340
+application or genetic application they are providing you
+
+01:30:19.340 --> 01:30:22.100
+human in loop kind of a solution so this is how you will try
+
+01:30:22.100 --> 01:30:27.580
+to keep your generic system uh for a human oversight yeah so
+
+01:30:27.580 --> 01:30:30.840
+that human will keep on watching and uh they will keep on
+
+01:30:30.840 --> 01:30:36.120
+giving a few feedback so this is uh it till 130 guys and
+
+01:30:36.120 --> 01:30:39.360
+maybe next class we can try to start what do you want shall
+
+01:30:39.360 --> 01:30:42.200
+we conduct a classes on saturday sunday or shall we keep it
+
+01:30:42.200 --> 01:30:47.440
+on monday tuesday so what what is your suggestion because my
+
+01:30:47.440 --> 01:30:49.780
+slot is available for this saturday sunday that's the reason
+
+01:30:49.780 --> 01:30:52.640
+i'm asking if my slot is next to next it will not be
+
+01:30:52.640 --> 01:30:55.940
+available because next to next i have a badge for children
+
+01:30:55.940 --> 01:31:00.160
+so uh this slot will not be available also like uh saturday
+
+01:31:00.160 --> 01:31:02.580
+sunday slot will not be available so monday tuesday only
+
+01:31:02.580 --> 01:31:06.180
+okay monday tuesday yeah i think we'll take only two classes
+
+01:31:06.180 --> 01:31:11.080
+we'll take monday tuesday and the 70 questions are left most
+
+01:31:11.080 --> 01:31:16.060
+of the questions from 131 till this one and then in a later
+
+01:31:16.060 --> 01:31:18.200
+stage when i was going through a question yeah leadership
+
+01:31:18.200 --> 01:31:21.300
+question and all those things so these are basically like a
+
+01:31:21.300 --> 01:31:27.200
+leadership solution means non-tech question by the way yeah
+
+01:31:27.200 --> 01:31:30.300
+but it's important it's important to handle a couple of like
+
+01:31:30.300 --> 01:31:34.160
+or counter couple of questions in an interview so max to max
+
+01:31:34.160 --> 01:31:38.500
+two days it will take for me monday tuesday and if your
+
+01:31:38.500 --> 01:31:42.260
+resume if your dpr is ready keep on sending your resume keep
+
+01:31:42.260 --> 01:31:44.740
+on sending your dpr and if you are preparing an answer for
+
+01:31:44.740 --> 01:31:47.640
+this one so maybe you can keep on sending me that as well
+
+01:31:47.640 --> 01:31:50.740
+that i have prepared uh an answer for this 15 question or 20
+
+01:31:50.740 --> 01:31:54.580
+of like entire 150 questions in your own way in your own
+
+01:31:54.580 --> 01:31:57.300
+version you can take a help from like a ai i don't have an
+
+01:31:57.300 --> 01:32:00.080
+issue with that uh but yeah so when you are writing an
+
+01:32:00.080 --> 01:32:01.600
+answer a few days before or after your resume when you are
+
+01:32:01.600 --> 01:32:03.800
+writing an answer please make sure that you have like you
+
+01:32:03.800 --> 01:32:10.300
+know like written those answer by yourself. Then only you
+
+01:32:10.300 --> 01:32:13.340
+will learn and you will be able to remember otherwise I can
+
+01:32:13.340 --> 01:32:15.600
+just dump this entire question in a chat GPT it will
+
+01:32:15.600 --> 01:32:17.380
+generate it copy and paste and I will prepare the
+
+01:32:17.380 --> 01:32:21.060
+documentation. I mean like I can do it in a hundreds way in
+
+01:32:21.060 --> 01:32:25.280
+just a five minute. So I don't want that kind of a solution
+
+01:32:25.280 --> 01:32:28.060
+I want a solution where you have applied your brain you have
+
+01:32:28.060 --> 01:32:30.040
+gone through each and every question wherever architecture
+
+01:32:30.040 --> 01:32:32.440
+is required mentioned it wherever code is required you have
+
+01:32:32.440 --> 01:32:35.320
+mentioned it wherever technology is required some framework
+
+01:32:35.320 --> 01:32:38.220
+is required you have mentioned it right wherever a story is
+
+01:32:38.220 --> 01:32:41.340
+required you have mentioned it in your own way right. So I
+
+01:32:41.340 --> 01:32:43.540
+am looking for that kind of a solution I am not looking for
+
+01:32:43.540 --> 01:32:46.280
+just a generated solution. So if you are sending me a
+
+01:32:46.280 --> 01:32:49.720
+generated solution on one single template I think it's of no
+
+01:32:49.720 --> 01:32:54.040
+use for me and even like it's of no use for you yeah you
+
+01:32:54.040 --> 01:32:55.880
+will not learn anything and you will not be able to remember
+
+01:32:55.880 --> 01:32:58.740
+anything. I am asking you to do it so that you will revise
+
+01:32:58.740 --> 01:33:03.320
+you will explore right. With the help of AI. Monday Tuesday
+
+01:33:03.320 --> 01:33:06.360
+fine let's go ahead with Monday Tuesday then let's complete
+
+01:33:06.360 --> 01:33:09.340
+this batch on Monday Tuesday. Okay fine then Monday Tuesday
+
+01:33:09.340 --> 01:33:12.060
+I will not take class on Saturday Sunday for this batch. We
+
+01:33:12.060 --> 01:33:15.200
+have Python, DSA, Bootcamp, Generative AI. You will be
+
+01:33:15.200 --> 01:33:17.900
+having another 10 batches by the way and on Sunday Saturday
+
+01:33:17.900 --> 01:33:21.100
+itself. So you can't come and like you can't come and say
+
+01:33:21.100 --> 01:33:25.000
+that I have this batch or I have that batch right because
+
+01:33:25.000 --> 01:33:28.420
+see mostly people will be available on Saturday and Sunday
+
+01:33:28.420 --> 01:33:30.740
+and they come for Saturday Saturday. Sunday batches so
+
+01:33:30.740 --> 01:33:32.900
+generally we have to launch those batches on Saturday Sunday
+
+01:33:32.900 --> 01:33:36.060
+itself. So we just have like those like a two days in our
+
+01:33:36.060 --> 01:33:39.180
+hand out of the entire week to launch any of these batches
+
+01:33:39.180 --> 01:33:41.320
+and people are demanding like a lot of batches. So obviously
+
+01:33:41.320 --> 01:33:44.380
+we have to bring those lot of batches obviously there will
+
+01:33:44.380 --> 01:33:47.940
+be an overlap. I can't keep all those batches like a
+
+01:33:47.940 --> 01:33:51.600
+separate and it's timing like a separate. You have to decide
+
+01:33:51.600 --> 01:33:55.180
+that which one you are going to join. I know all of you are
+
+01:33:55.180 --> 01:34:01.010
+not going to join all the batches yeah so for example like
+
+01:34:01.010 --> 01:34:05.010
+I'm going to launch this AIML right and then after that I'm
+
+01:34:05.010 --> 01:34:07.170
+going to launch again a Generative AI. Obviously it will
+
+01:34:07.170 --> 01:34:10.290
+overlap with some of the other batches which is running on
+
+01:34:10.290 --> 01:34:13.690
+the platform. So you can decide that which one you should
+
+01:34:13.690 --> 01:34:17.710
+join and then maybe you can join next time because you have
+
+01:34:17.710 --> 01:34:21.090
+a plus access so you can join next of next batches as well
+
+01:34:21.090 --> 01:34:28.190
+for the entire year. Okay fine then guys just like do
+
+01:34:28.190 --> 01:34:31.310
+something do something with respect to your something.
+
+01:34:31.390 --> 01:34:34.170
+Someone has pinged a lot of things you know oh
+
+01:34:37.500 --> 01:34:43.560
+these links someone has pinged okay Nvidia Nemo fine then I
+
+01:34:43.560 --> 01:34:46.500
+don't have to like maintain those links it's it's already
+
+01:34:46.500 --> 01:34:51.060
+there inside your group that's amazing bye Rajesh. Any
+
+01:34:51.060 --> 01:34:54.180
+discount for renewal I think you can talk to a team right
+
+01:34:54.180 --> 01:34:57.200
+for renewal we are planning to increase the price by October
+
+01:34:57.200 --> 01:35:01.540
+last. It's like we are not able to generate a profit that's
+
+01:35:01.540 --> 01:35:05.560
+the reason so if we are very affordable. And too many things
+
+01:35:05.560 --> 01:35:08.060
+we are giving but yeah maybe you can talk to team so they
+
+01:35:08.060 --> 01:35:10.300
+will be able to help you out in something. I don't discuss
+
+01:35:10.300 --> 01:35:11.240
+these things by the way.
+
+01:35:14.510 --> 01:35:17.810
+How your kids are doing they're doing great recently I think
+
+01:35:17.810 --> 01:35:20.570
+on 14th dust tenders back nine days back so they have
+
+01:35:20.570 --> 01:35:23.210
+completed their one year so they're doing amazing.
+
+01:35:27.420 --> 01:35:31.220
+One thousand dollar not not that much obviously I can't
+
+01:35:31.220 --> 01:35:32.740
+charge it will be a loot.
+
+01:35:36.730 --> 01:35:41.710
+Okay fine everyone. So let's meet. Okay. So for this batch
+
+01:35:41.710 --> 01:35:46.250
+so for this discussion one thirtieth question onwards will
+
+01:35:46.250 --> 01:35:49.850
+start discussing it in next Monday next Monday and Tuesday
+
+01:35:49.850 --> 01:35:52.150
+will discuss it will complete will close the batch by next
+
+01:35:52.150 --> 01:35:56.330
+Monday Tuesday. So please keep your you know DPR and regime
+
+01:35:56.330 --> 01:35:59.510
+at least ready by that time. Otherwise believe me you will
+
+01:35:59.510 --> 01:36:04.390
+be having a regret. You will you will always think that that
+
+01:36:04.390 --> 01:36:08.910
+I had a chance I had a time to do it but I was not able to
+
+01:36:08.910 --> 01:36:12.890
+do it. So I don't I just don't want you to like you know
+
+01:36:12.890 --> 01:36:15.850
+have a regret in a later stage that you have wasted your
+
+01:36:15.850 --> 01:36:20.190
+time because that will be a biggest regret of your life. So
+
+01:36:20.190 --> 01:36:25.830
+simple you have a time just to start complete it believe me
+
+01:36:25.830 --> 01:36:28.750
+it's just a five to six hour of a task but yeah one time
+
+01:36:28.750 --> 01:36:33.230
+task in a entire lifespan maybe for generative AI and close
+
+01:36:33.230 --> 01:36:35.770
+it send it to me I'll review I'll give my feedback because
+
+01:36:35.770 --> 01:36:38.230
+whoever has sent it to me whoever have like a pinged me on
+
+01:36:38.230 --> 01:36:41.130
+my DM. Okay. I've already responded back with the resume and
+
+01:36:41.130 --> 01:36:43.990
+they have already rectified the things that I have asked for
+
+01:36:43.990 --> 01:36:48.530
+in the resume. So just do it simple. Don't keep this record
+
+01:36:48.530 --> 01:36:50.630
+for the very long time except
+
+01:36:53.000 --> 01:36:56.060
+the LinkedIn request my request is already full. I can't
+
+01:36:56.060 --> 01:36:58.960
+because LinkedIn always gives you a limit of 30,000 it's
+
+01:36:58.960 --> 01:37:03.360
+like a already full long back except the LinkedIn request
+
+01:37:03.360 --> 01:37:05.600
+for who enrolled for your own plus I know I'm not selling
+
+01:37:05.600 --> 01:37:08.600
+that part with your own plus so that I have not mentioned by
+
+01:37:08.600 --> 01:37:11.500
+the way that I'll accept a LinkedIn request. I mentioned
+
+01:37:11.500 --> 01:37:15.580
+that I'll teach you so I'll teach you simple that that's
+
+01:37:15.580 --> 01:37:19.540
+that's not a feature. So basically jokes are the part but
+
+01:37:19.540 --> 01:37:24.260
+yeah so 30,000 is a limit that you can like accept in one
+
+01:37:24.260 --> 01:37:27.280
+LinkedIn account that was full I think two three years back
+
+01:37:27.280 --> 01:37:32.080
+itself. So I'm not able to accept any new request I have to
+
+01:37:32.080 --> 01:37:34.640
+remove someone then only I can like you know accept someone.
+
+01:37:35.860 --> 01:37:41.260
+So again people feel bad if I'm removing someone. Okay. Fine
+
+01:37:41.260 --> 01:37:43.980
+guys. Thank you so much. Take care and see you again next
+
+01:37:43.980 --> 01:37:46.280
+Monday and Tuesday for this particular discussion. Like I
+
+01:37:46.280 --> 01:37:48.280
+said next week we are closing the discussion for this match.
+
+01:37:48.520 --> 01:37:50.500
+Thank you. Take care everyone. Have a great day night ahead
+
+01:37:50.500 --> 01:37:54.440
+in case of any question. Ping me. Ping me in a group so
+
+01:37:54.440 --> 01:37:56.800
+everyone can see it and then we can discuss the question
+
+01:37:56.800 --> 01:37:59.020
+there. Thank you.
+

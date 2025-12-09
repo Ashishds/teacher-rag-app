@@ -1,0 +1,4955 @@
+WEBVTT
+
+00:08:25.900 --> 00:08:29.900
+okay so hi everyone uh good morning i think i'm audible and
+
+00:08:29.900 --> 00:08:32.020
+visible to all of you please confirm guys if i'm audible and
+
+00:08:32.020 --> 00:08:34.300
+visible yeah okay
+
+00:08:45.250 --> 00:08:49.430
+fine so i'm audible and visible so guys in today's class
+
+00:08:49.430 --> 00:08:51.770
+i'll not take much of your time so basically we'll be
+
+00:08:51.770 --> 00:08:55.830
+talking about a lot of like aws services uh basically like
+
+00:08:55.830 --> 00:08:59.290
+uh we'll see like what in all aws services which is
+
+00:08:59.290 --> 00:09:04.090
+available in terms of doing a model access maybe a knowledge
+
+00:09:04.090 --> 00:09:08.470
+base rag's agent creation and uh yeah even for a deployment
+
+00:09:08.470 --> 00:09:10.430
+so there are a lot of services which is available and
+
+00:09:10.430 --> 00:09:13.790
+generally we feel confused and again from a intro
+
+00:09:13.790 --> 00:09:16.310
+perspective so i think it's important and going forward uh
+
+00:09:16.310 --> 00:09:19.310
+next week so we'll be looking into a project so a project
+
+00:09:19.310 --> 00:09:22.110
+section that we have so where we have to cover like a
+
+00:09:22.110 --> 00:09:26.070
+multiple projects so over there we'll be using this aws
+
+00:09:26.070 --> 00:09:30.250
+services so let me share my screen quickly and uh let's
+
+00:09:30.250 --> 00:09:34.790
+start talking about this aws services so yesterday we were
+
+00:09:34.790 --> 00:09:38.830
+talking about one of the service and we have seen that that
+
+00:09:38.830 --> 00:09:42.570
+how we can try to uh basically deploy any kind of a solution
+
+00:09:42.570 --> 00:09:46.970
+with our own custom uh url right or with our own custom
+
+00:09:46.970 --> 00:09:50.510
+domain and over there so we have used route 53 uh
+
+00:09:50.510 --> 00:09:54.590
+technically right so to map a domain and to map our
+
+00:09:54.590 --> 00:09:58.470
+resources and to map basically like to create an entire end
+
+00:09:58.470 --> 00:10:01.490
+-to-end flow this is what we have done so now in today's
+
+00:10:01.490 --> 00:10:04.450
+class uh let's go and let's try to explore a couple of like
+
+00:10:04.450 --> 00:10:07.990
+uh more services so what i will do i'll try to log in into a
+
+00:10:07.990 --> 00:10:12.830
+aws console and along with me so all of you can try to you
+
+00:10:12.830 --> 00:10:17.910
+know log in into a aws console now inside aws there are so
+
+00:10:17.910 --> 00:10:21.350
+many services that you all will be able to find out uh very
+
+00:10:21.350 --> 00:10:24.390
+first service i would like to show you is called as amazon
+
+00:10:24.390 --> 00:10:27.990
+bedrock so let's go ahead and let's try to explore that
+
+00:10:27.990 --> 00:10:31.690
+amazon bedrock so you can come over here you can try to
+
+00:10:31.690 --> 00:10:35.010
+search for uh amazon bedrock and it is going to give you
+
+00:10:35.010 --> 00:10:40.230
+this link so it's simple right so technically what amazon
+
+00:10:40.230 --> 00:10:43.570
+bedrock is so amazon bedrock is basically a platform or you
+
+00:10:43.570 --> 00:10:47.290
+can say a kind of a service uh managed service provided by
+
+00:10:47.290 --> 00:10:51.330
+aws so where you will be able to access almost all the
+
+00:10:51.330 --> 00:10:54.330
+models almost all the model you will be able to access all
+
+00:10:54.330 --> 00:10:57.830
+the even latest one you will be able to access initially
+
+00:10:57.830 --> 00:11:01.470
+when they have launched a very limited model but now if you
+
+00:11:01.470 --> 00:11:04.290
+will go and check their model catalog so everything is
+
+00:11:04.290 --> 00:11:08.350
+available inside amazon bedrock so you can try to consume a
+
+00:11:08.350 --> 00:11:13.010
+model even from here so here on your left hand side you will
+
+00:11:13.010 --> 00:11:16.870
+be able to see a multiple like options by the way so here
+
+00:11:16.870 --> 00:11:21.570
+overview model catalog api key then here they are giving you
+
+00:11:21.570 --> 00:11:25.210
+a playground then here giving you a inferencing here they
+
+00:11:25.210 --> 00:11:27.750
+are giving you a fine tuning so you can try to do a model
+
+00:11:27.750 --> 00:11:32.350
+fine tuning with your own data here itself inside a aws and
+
+00:11:32.350 --> 00:11:35.950
+then here they are giving you a build option inside that you
+
+00:11:35.950 --> 00:11:38.810
+can build agents you can build a flow you can build a
+
+00:11:38.810 --> 00:11:41.410
+knowledge base you can build a guardrail you can build a
+
+00:11:41.410 --> 00:11:44.910
+prompt management data automation so all of these things you
+
+00:11:44.910 --> 00:11:49.450
+will be able to do it with this one but let's start with a
+
+00:11:49.450 --> 00:11:51.970
+model catalog first and let's try to understand what and all
+
+00:11:51.970 --> 00:11:55.430
+models are available inside this aws bedrock so model
+
+00:11:55.430 --> 00:11:58.490
+catalog and like i said so they are giving you almost all
+
+00:11:58.490 --> 00:11:59.910
+the model nowadays so everything is available inside this
+
+00:11:59.910 --> 00:12:00.910
+aws bedrock so you can see that everything is available
+
+00:12:00.910 --> 00:12:07.170
+inside you know aws a bedrock so here is a provider so
+
+00:12:07.170 --> 00:12:11.450
+amazon so from amazon itself we have a nova pro nova light
+
+00:12:11.450 --> 00:12:15.070
+nova micro and we have a embedding model we have a titan
+
+00:12:15.070 --> 00:12:18.610
+image generator model we have a titan multi-model embedding
+
+00:12:18.610 --> 00:12:22.850
+and if i'll talk about anthropic so anthropic provides one
+
+00:12:22.850 --> 00:12:26.910
+of the advanced models so here you will be able to find out
+
+00:12:26.910 --> 00:12:27.110
+a
+
+00:12:31.230 --> 00:12:34.430
+particular model so this is the latest one right latest one
+
+00:12:34.430 --> 00:12:39.050
+and yeah so it is available over here for cloud is sonet
+
+00:12:39.050 --> 00:12:41.730
+model so you will be able to find out one disclaimer so
+
+00:12:41.730 --> 00:12:44.930
+whenever i'm going to like you know access this model if i
+
+00:12:44.930 --> 00:12:48.850
+have to access this particular model so i have to fill
+
+00:12:48.850 --> 00:12:52.410
+couple of details like company detail and what for what uses
+
+00:12:52.410 --> 00:12:55.190
+for what purpose i'm going to use this particular model then
+
+00:12:55.190 --> 00:12:58.090
+only they are going to allow me it's not true for all the
+
+00:12:58.090 --> 00:13:02.590
+other model but a model it is important so it is going to
+
+00:13:02.590 --> 00:13:06.410
+pop up a form open in playground if i'm going to do so it is
+
+00:13:06.410 --> 00:13:09.030
+going to pop up this form so where it is asking me company
+
+00:13:09.030 --> 00:13:13.050
+name company website url what industry you operate in just a
+
+00:13:13.050 --> 00:13:16.450
+small disclaimer form right for a cloud is on it other model
+
+00:13:16.450 --> 00:13:19.170
+if i would like to like a use so in that case they are not
+
+00:13:19.170 --> 00:13:22.450
+going to ask me for that particular one i can simply call a
+
+00:13:22.450 --> 00:13:25.790
+model and i can try to start chatting with these model
+
+00:13:25.790 --> 00:13:32.470
+basically right and see yeah so i can come over here and
+
+00:13:32.470 --> 00:13:35.490
+this is basically a playground that they have given to us so
+
+00:13:35.490 --> 00:13:38.250
+i can come over here i can start chatting with this model
+
+00:13:38.250 --> 00:13:42.930
+and then yeah so if this model like seems like a some of
+
+00:13:42.930 --> 00:13:46.290
+some use for us so yeah we can try to utilize that
+
+00:13:46.290 --> 00:13:50.010
+particular model this is how like these models are by the
+
+00:13:50.010 --> 00:13:54.470
+way so almost all the models are available but you will be
+
+00:13:54.470 --> 00:13:58.350
+like a surprised over here that open ai model is not
+
+00:13:58.350 --> 00:14:03.330
+available over here and even a gemini model is not available
+
+00:14:03.330 --> 00:14:09.350
+over here so with whatever organization aws is having a tie
+
+00:14:09.350 --> 00:14:13.970
+up so only those models are available so bedrock doesn't
+
+00:14:13.970 --> 00:14:18.010
+mean that that everything is available or everything will be
+
+00:14:18.010 --> 00:14:21.030
+available yeah so let's suppose if i'm looking for a gemini
+
+00:14:21.030 --> 00:14:25.010
+model obviously i can't come over here i can't use it so one
+
+00:14:25.010 --> 00:14:29.210
+of the best model which i think they have is a anthropic
+
+00:14:29.930 --> 00:14:34.450
+model because the rest of the model is like it's fine to
+
+00:14:34.450 --> 00:14:39.430
+have those models but maybe like in a real time i will not
+
+00:14:39.430 --> 00:14:44.370
+be using it when i'm going to solve some of my use case or
+
+00:14:44.370 --> 00:14:49.430
+my industry problem so this is a place this is a point where
+
+00:14:49.430 --> 00:14:55.190
+bedrock gives us or comes up with disappointment although we
+
+00:14:55.190 --> 00:14:59.450
+talk a lot about in a market so we talk a lot about like you
+
+00:14:59.450 --> 00:14:59.610
+know
+
+00:15:02.750 --> 00:15:07.030
+these aws bedrock services but again so this is a place
+
+00:15:07.030 --> 00:15:10.910
+where it comes with the disappointment by the way right so
+
+00:15:10.910 --> 00:15:13.990
+yeah they have they have some good model like a mistral
+
+00:15:13.990 --> 00:15:18.390
+series also very good okay gpt model wise so they are not
+
+00:15:18.390 --> 00:15:22.410
+giving you 4.1 or 5 models over here they are giving you
+
+00:15:22.410 --> 00:15:26.630
+they have hosted basically gpt oss 120b and 20b so even we
+
+00:15:26.630 --> 00:15:30.570
+have hosted that if you remember on our own gpu so these are
+
+00:15:30.570 --> 00:15:35.090
+the open source model by open ai so like i said so this is
+
+00:15:35.090 --> 00:15:38.010
+where it is going to disappoint you in terms of you know
+
+00:15:38.010 --> 00:15:41.790
+accessing a model you can even try to filter out model by
+
+00:15:41.790 --> 00:15:45.510
+list audio model embedding model image model multi model so
+
+00:15:45.510 --> 00:15:48.950
+text image and all those models and tabular model text text
+
+00:15:48.950 --> 00:15:52.470
+vision so yeah this is the catalog which is available and
+
+00:15:52.470 --> 00:15:55.090
+again if something is not available over here it's not
+
+00:15:55.090 --> 00:15:58.990
+available as simple as that you won't be able to use it very
+
+00:15:58.990 --> 00:16:03.610
+simple now so api key so you can try to generate an api key
+
+00:16:03.610 --> 00:16:06.230
+so they are giving you two option over here short term api
+
+00:16:06.230 --> 00:16:09.030
+key so where you whenever you are going to generate an api
+
+00:16:09.030 --> 00:16:12.630
+key that will be active for 12 hour this is a disclaimer
+
+00:16:12.630 --> 00:16:15.630
+that they have already mentioned over here and then there is
+
+00:16:15.630 --> 00:16:18.310
+a long term api key so again you can try to configure how
+
+00:16:18.310 --> 00:16:21.770
+long you would like to access that particular api key so
+
+00:16:21.770 --> 00:16:25.010
+nothing like a different over here so you have to access a
+
+00:16:25.010 --> 00:16:29.670
+model you can generate the api key and simple so So you can
+
+00:16:29.670 --> 00:16:33.470
+try to access it. So this is basically like a discover
+
+00:16:33.470 --> 00:16:36.450
+section. Now coming to the next section, this is basically a
+
+00:16:36.450 --> 00:16:39.910
+playground option they have given to you. So here I can just
+
+00:16:39.910 --> 00:16:44.250
+try to click, I can try to, you know, like a chat, select a
+
+00:16:44.250 --> 00:16:48.330
+chat over here and then I can select a model. So as per my
+
+00:16:48.330 --> 00:16:51.710
+need, I can try to select a model over here. So deep seek,
+
+00:16:51.750 --> 00:16:56.930
+anthropic, quen, any model which I want, I can try to
+
+00:16:56.930 --> 00:17:00.530
+select. But again, options are very limited, as you can see.
+
+00:17:00.670 --> 00:17:03.650
+So it's not like they're giving you all the options. And
+
+00:17:03.650 --> 00:17:07.790
+especially if I'll talk about the latest one. So yeah, they
+
+00:17:07.790 --> 00:17:10.730
+are not giving you that particular option over here. So
+
+00:17:10.730 --> 00:17:16.170
+whenever we have to use the latest one, go and check if it
+
+00:17:16.170 --> 00:17:19.270
+is not available. So you won't be able to use it. So here
+
+00:17:19.270 --> 00:17:21.570
+they have given you a playground kind of a thing. So where
+
+00:17:21.570 --> 00:17:24.870
+you can send a message like hi, and then you can start like,
+
+00:17:24.890 --> 00:17:28.810
+you know, chatting with these people. The models inside this
+
+00:17:28.810 --> 00:17:32.390
+playground interface itself, right, and then you can maybe
+
+00:17:32.390 --> 00:17:35.050
+try to click on build and start building it. So similar kind
+
+00:17:35.050 --> 00:17:38.070
+of a system you will be able to replicate. Here they are
+
+00:17:38.070 --> 00:17:40.990
+giving you also an option for a system prompt and all the
+
+00:17:40.990 --> 00:17:43.950
+other controls. So token length control and randomness
+
+00:17:43.950 --> 00:17:47.190
+activity, temperature, top p, you can even try to, you know,
+
+00:17:47.230 --> 00:17:50.150
+attach a guardrails over here. So all these options are
+
+00:17:50.150 --> 00:17:53.050
+already available. But yeah, it is just a playground, by the
+
+00:17:53.050 --> 00:17:56.030
+way, it is not more, nothing more than that. So this is
+
+00:17:56.030 --> 00:17:58.190
+another option. So if you go to the Amazon bedrock, you will
+
+00:17:58.190 --> 00:18:00.410
+be able to find out again, there is something called as
+
+00:18:00.410 --> 00:18:04.410
+image playground, right. So where you can go and you can try
+
+00:18:04.410 --> 00:18:07.290
+to select a model and image playground wise. So there are
+
+00:18:07.290 --> 00:18:10.970
+only two models which is available over here. So one is a
+
+00:18:10.970 --> 00:18:16.090
+Titan image generator G1 and yeah, so this one, image model
+
+00:18:16.090 --> 00:18:20.710
+512 character. So again, this is another option, but not a
+
+00:18:20.710 --> 00:18:23.570
+good one, right. For example, if you are going to compare
+
+00:18:23.570 --> 00:18:27.290
+this with a Gemini, like, you know, nano banana, you can see
+
+00:18:27.290 --> 00:18:28.490
+that this is a nano banana. So you will feel disappointed,
+
+00:18:28.730 --> 00:18:32.770
+obviously, right. It's not a best model that they have over
+
+00:18:32.770 --> 00:18:35.730
+here. And that is the reason. So somewhere I don't like
+
+00:18:35.730 --> 00:18:40.570
+bedrock and like, that's our honest review from like, my
+
+00:18:40.570 --> 00:18:44.790
+side as a developer that if it was providing something,
+
+00:18:44.870 --> 00:18:48.170
+obviously, they should provide like each and everything in a
+
+00:18:48.170 --> 00:18:51.110
+fuller scale, right, which is not available over here. There
+
+00:18:51.110 --> 00:18:53.530
+is a new option they have included recently, there is
+
+00:18:53.530 --> 00:18:55.950
+something called as tokenizer. So where you will be able to,
+
+00:18:55.990 --> 00:19:00.030
+you know, measure a tokenizer. Okay. So you will be able to
+
+00:19:00.030 --> 00:19:03.350
+measure all the tokens. So this is where like input output
+
+00:19:03.350 --> 00:19:05.890
+token, you will be able to measure it and then you will be
+
+00:19:05.890 --> 00:19:08.950
+able to do a costing on top of that. So this option, again,
+
+00:19:09.090 --> 00:19:14.570
+like available to all of us, then coming to the next part.
+
+00:19:14.750 --> 00:19:17.250
+So there is a tune part. So here you can try to build your
+
+00:19:17.250 --> 00:19:21.490
+own custom model, right by using AWS interface itself,
+
+00:19:21.770 --> 00:19:27.130
+right. So again, like, just just a click based like a fine
+
+00:19:27.130 --> 00:19:32.150
+tune. You all will be able to do it with respect to AWS. So
+
+00:19:32.150 --> 00:19:34.730
+you can come over here, select a model, prepare a data set,
+
+00:19:34.830 --> 00:19:37.890
+maybe bring a data set from S3. And then eventually you will
+
+00:19:37.890 --> 00:19:41.490
+be able to prepare or do a fine tuning of the model. And we
+
+00:19:41.490 --> 00:19:43.370
+have we have already seen that right, we can do a fine
+
+00:19:43.370 --> 00:19:48.190
+tuning even inside of OpenAI. OpenAI like, so similar kind
+
+00:19:48.190 --> 00:19:50.450
+of a feature they have given you and you can try to come
+
+00:19:50.450 --> 00:19:52.990
+over here and you can try to do a fine tuning of the model.
+
+00:19:53.430 --> 00:19:57.490
+This is another option. Now. So same thing is available over
+
+00:19:57.490 --> 00:20:01.310
+here. Now let's come to the build part. So here you can come
+
+00:20:01.310 --> 00:20:04.450
+and you can try to build agents, agents, even multi agent
+
+00:20:04.450 --> 00:20:07.630
+you can try to build that option is also given inside of AWS
+
+00:20:07.630 --> 00:20:10.610
+Bedrock. There is something called a knowledge base option,
+
+00:20:10.810 --> 00:20:13.730
+which is also given to all of us. So where we can try to
+
+00:20:13.730 --> 00:20:20.070
+build a knowledge base as per my own need. So yeah, let me
+
+00:20:20.070 --> 00:20:22.050
+show you something.
+
+00:20:24.300 --> 00:20:26.980
+Yeah. So knowledge base. So knowledge base, which is
+
+00:20:26.980 --> 00:20:29.660
+available, which we can try to build agent is something that
+
+00:20:29.660 --> 00:20:32.440
+we can try to build a complete end to end flow UI based
+
+00:20:32.440 --> 00:20:35.800
+flow, I will be able to build. So let's go to the agent
+
+00:20:35.800 --> 00:20:38.660
+part. And let me show you something over here. So a couple
+
+00:20:38.660 --> 00:20:41.940
+of agents I have already created just for my like a
+
+00:20:41.940 --> 00:20:46.140
+practice, right? So create agent and then I can try to give
+
+00:20:46.140 --> 00:20:50.080
+any kind of a name to my agent. If I want to enable a multi
+
+00:20:50.080 --> 00:20:53.420
+agent collaboration, I can try to enable multi agent
+
+00:20:53.420 --> 00:20:55.660
+collaboration as well. Otherwise, I can try to create one
+
+00:20:55.660 --> 00:20:58.860
+single agent. Meaning of an agent is exactly the same. So
+
+00:20:58.860 --> 00:21:01.720
+it's not different at all. Whatever we have learned,
+
+00:21:01.800 --> 00:21:05.340
+whatever we have studied. So it's the same philosophy, I
+
+00:21:05.340 --> 00:21:08.840
+mean, like agent is the same definition wise for all of us.
+
+00:21:09.060 --> 00:21:12.220
+So I can come I can click over here, I can try to create an
+
+00:21:12.220 --> 00:21:17.020
+agent. So here is my agent name, agent description, if I
+
+00:21:17.020 --> 00:21:20.940
+would like to give and then basically, every agent requires
+
+00:21:20.940 --> 00:21:24.740
+a model access, right? So without model agent can't do
+
+00:21:24.740 --> 00:21:28.520
+anything. Okay. So here we can attach any models which is
+
+00:21:28.520 --> 00:21:32.300
+like available to us basically from this particular list
+
+00:21:32.300 --> 00:21:36.040
+itself. Apart from that, I can't attach any other model by
+
+00:21:36.040 --> 00:21:39.380
+the way. So I can try to attach it. I can try to give an
+
+00:21:39.380 --> 00:21:42.900
+instruction that okay, you are basically a manager or maybe
+
+00:21:42.900 --> 00:21:46.120
+a scientist or whatever, right? Whatever search agent or
+
+00:21:46.120 --> 00:21:48.820
+whatever I would like to like, you know, give an instruction
+
+00:21:48.820 --> 00:21:51.880
+to this particular agent, I can try to give that instruction
+
+00:21:51.880 --> 00:21:56.440
+and then I can start testing it over here. Simple. Right. So
+
+00:21:56.440 --> 00:22:01.000
+simple UI based agent, like you will be able to find out. So
+
+00:22:01.000 --> 00:22:03.620
+if you would like to give a knowledge base access, so you
+
+00:22:03.620 --> 00:22:06.300
+can try to attach a knowledge base as well. So maybe you can
+
+00:22:06.300 --> 00:22:10.180
+try to attach a knowledge base from web scrapping or maybe
+
+00:22:10.180 --> 00:22:13.800
+from S3 bucket where you are going to upload a document and
+
+00:22:13.800 --> 00:22:18.320
+then it is like going to consider that knowledge base. So
+
+00:22:18.320 --> 00:22:22.880
+that option is also available over here. And plus memory.
+
+00:22:23.020 --> 00:22:26.600
+Obviously, you can try to add. And then you can try to test
+
+00:22:26.600 --> 00:22:31.100
+agent here itself on your like right hand side. So just chat
+
+00:22:31.100 --> 00:22:33.860
+and then chat with the agent and then you can test whether
+
+00:22:33.860 --> 00:22:37.800
+your agent is behaving good or not. And then you can go with
+
+00:22:37.800 --> 00:22:43.200
+the next step basically. Bedrock is no code platform, sir.
+
+00:22:43.320 --> 00:22:46.880
+So yes, you can say if you would like to do some sort of
+
+00:22:46.880 --> 00:22:51.340
+experimentation, right, then you can come to AWS Bedrock.
+
+00:22:51.500 --> 00:22:57.140
+But still. As per my experience, like model access, if you
+
+00:22:57.140 --> 00:22:59.600
+are just looking for a model access, that's completely fine.
+
+00:22:59.780 --> 00:23:02.880
+So programmatically create an API key programmatically just
+
+00:23:02.880 --> 00:23:05.820
+try to access. But yeah, they have a very, very limited
+
+00:23:05.820 --> 00:23:10.560
+model, which is available on AWS Bedrock, I will not be able
+
+00:23:10.560 --> 00:23:14.540
+to access all the latest model, right and even from open AI
+
+00:23:14.540 --> 00:23:18.200
+or even from a Google Gemini model series, I will not be
+
+00:23:18.200 --> 00:23:22.120
+able to access it. Most of the model which AWS is hosting.
+
+00:23:22.560 --> 00:23:26.320
+So basically, these models are open source model, you will
+
+00:23:26.320 --> 00:23:29.440
+be able to host it even on your own. And we know that right,
+
+00:23:29.520 --> 00:23:32.540
+we have we have already seen that that how we can host any
+
+00:23:32.540 --> 00:23:36.580
+of these models, majority of the model. So they have some
+
+00:23:36.580 --> 00:23:39.160
+proprietary model as well. For example, they have a model
+
+00:23:39.160 --> 00:23:43.620
+from Anthropic, right, Anthropic, Sonnet, Haiku, all those
+
+00:23:43.620 --> 00:23:47.720
+models are available. Again, that comes with a special tie
+
+00:23:47.720 --> 00:23:50.340
+up. So obviously, Amazon has done AWS has done those tie
+
+00:23:50.340 --> 00:23:52.740
+ups. Because of that. We know that these models are
+
+00:23:52.740 --> 00:23:58.880
+available, but other models are not available. And again,
+
+00:23:58.980 --> 00:24:03.980
+even in the UI, so you won't be able to like, do much, by
+
+00:24:03.980 --> 00:24:08.980
+the way, right. So it comes with the limitation and like if
+
+00:24:08.980 --> 00:24:11.580
+I have to create an agent, right, so I can I can try to
+
+00:24:11.580 --> 00:24:14.400
+create an agent even without using a Bedrock. So maybe just
+
+00:24:14.400 --> 00:24:17.700
+by using some langchain, langgraph, or maybe crew AI, and
+
+00:24:17.700 --> 00:24:20.320
+that will be pretty much easy for me, I will be having a lot
+
+00:24:20.320 --> 00:24:21.880
+of control, I can try to host it. Okay. I will see if I can
+
+00:24:21.880 --> 00:24:25.840
+do it on any of the cloud platform. So Amazon Bedrock is
+
+00:24:25.840 --> 00:24:29.820
+evolving, you can say, right. So we'll see in the future. So
+
+00:24:29.820 --> 00:24:32.440
+how this moves, but yeah, as of now, if I'll talk about the
+
+00:24:32.440 --> 00:24:39.980
+service. So I don't think like, you know, we can we can use,
+
+00:24:40.040 --> 00:24:44.660
+you know, AWS Bedrock, apart from doing experimentation and
+
+00:24:44.660 --> 00:24:47.020
+like someone is going to come, let's suppose if I have to
+
+00:24:47.020 --> 00:24:49.920
+teach agent to someone that we already know, right, what is
+
+00:24:49.920 --> 00:24:52.880
+the meaning of agent. So maybe I can come over here. Okay, I
+
+00:24:52.880 --> 00:24:55.500
+can start teaching you an agent for the very first time,
+
+00:24:55.620 --> 00:24:58.720
+right, just for the first time or that, okay, come over
+
+00:24:58.720 --> 00:25:02.020
+here, give a name, select a particular model, LLM model, by
+
+00:25:02.020 --> 00:25:04.380
+the way, then give an instruction to an agent because agent
+
+00:25:04.380 --> 00:25:08.900
+requires instruction to adopt a behavior, right. And then we
+
+00:25:08.900 --> 00:25:11.240
+can try to, you know, attach a knowledge base to that
+
+00:25:11.240 --> 00:25:14.080
+particular agent, attach a memory to that particular agent,
+
+00:25:14.220 --> 00:25:17.600
+and then create it and then test it over here. So maybe if
+
+00:25:17.600 --> 00:25:19.620
+I'm teaching for the very first time, if I'm trying to do an
+
+00:25:19.620 --> 00:25:22.740
+experiment for the very first time, then it's a good choice.
+
+00:25:22.760 --> 00:25:27.660
+But as we have already seen a lot of agents, right, so we
+
+00:25:27.660 --> 00:25:33.500
+all are aware about more than, like more than anyone can
+
+00:25:33.500 --> 00:25:36.760
+learn from here. In that situation, you will feel bored,
+
+00:25:36.960 --> 00:25:40.060
+basically, that that's the whole point I'm trying to make
+
+00:25:40.060 --> 00:25:42.560
+over here, you will literally feel bored. And you will say
+
+00:25:42.560 --> 00:25:45.780
+that that why I'm using it, like I can go and I can try to
+
+00:25:45.780 --> 00:25:50.560
+create this, maybe in a better way. But yeah, it's good to
+
+00:25:50.560 --> 00:25:52.760
+know. Basically, if there is some service. Okay. It's
+
+00:25:52.760 --> 00:25:56.180
+available in AWS, Azure and GCP, it's always good to know so
+
+00:25:56.180 --> 00:25:58.940
+that you can do a comparison. And even in an interview, when
+
+00:25:58.940 --> 00:26:01.780
+people are going to ask you a question that why you have not
+
+00:26:01.780 --> 00:26:05.520
+used AWS Bedrock, right, at least you will be having an
+
+00:26:05.520 --> 00:26:08.500
+answer. Or let's suppose a person is trying to do argue that
+
+00:26:08.500 --> 00:26:11.700
+okay, I'm going to use AWS Bedrock, why you are not using
+
+00:26:11.700 --> 00:26:16.260
+it, maybe you will be able to counter those arguments. Very
+
+00:26:16.260 --> 00:26:20.400
+simple. Yeah. So this is where you should know and I mean,
+
+00:26:20.440 --> 00:26:22.900
+like it just takes 10-20 minutes of time for exploration,
+
+00:26:23.400 --> 00:26:28.200
+not more than that. Okay, let's explore them. So knowledge
+
+00:26:28.200 --> 00:26:32.220
+base. So yeah, agent is something that we can create, we can
+
+00:26:32.220 --> 00:26:34.320
+test, we can chat it, then there is something called as
+
+00:26:34.320 --> 00:26:37.860
+flow, right. So here you can try to create a drag and drop
+
+00:26:37.860 --> 00:26:41.540
+kind of a flow, create a flow, if I'm going to click, so
+
+00:26:41.540 --> 00:26:44.140
+they're giving you a drag and drop kind of option, I believe
+
+00:26:44.140 --> 00:26:46.800
+we have seen this kind of option many places, right,
+
+00:26:46.840 --> 00:26:50.160
+especially I started with the init end. So where you can try
+
+00:26:50.160 --> 00:26:53.240
+to, you know, create a node. As you can see. They have given
+
+00:26:53.240 --> 00:26:56.940
+you a different different kind of a node, right, mostly like
+
+00:26:56.940 --> 00:27:00.280
+a even AWS specific node, you will be able to find out. So
+
+00:27:00.280 --> 00:27:03.540
+S3 storage node they have given you, S3 retrieval node they
+
+00:27:03.540 --> 00:27:07.260
+have given you, collector node logic wise, condition you can
+
+00:27:07.260 --> 00:27:09.960
+try to write, while loop you can try to write, iterator for
+
+00:27:09.960 --> 00:27:13.080
+loop kind of things you will be able to write over here. So
+
+00:27:13.080 --> 00:27:16.280
+those nodes are there, agent nodes are there. So just drag
+
+00:27:16.280 --> 00:27:19.360
+and drop, create an agent node and then one by one, one by
+
+00:27:19.360 --> 00:27:21.960
+one configure it. It's very, very simple, right. So just
+
+00:27:21.960 --> 00:27:24.780
+drag and drop based. So even they are trying to, you know,
+
+00:27:24.780 --> 00:27:29.540
+make a similar kind of a platform that we have seen with
+
+00:27:29.540 --> 00:27:32.660
+respect to a crew AI, if you remember, so even crew AI have
+
+00:27:32.660 --> 00:27:35.860
+a programming library. So where you can use a library and
+
+00:27:35.860 --> 00:27:39.300
+create an agent and they are also trying to build a complete
+
+00:27:39.300 --> 00:27:42.620
+drag and drop kind of a system or a prompter system. So
+
+00:27:42.620 --> 00:27:45.000
+where it will try to create a nodes and you can try to
+
+00:27:45.000 --> 00:27:49.100
+connect it like init end kind of approach. Even if you
+
+00:27:49.100 --> 00:27:53.880
+remember open AI. I tried. I tried doing that, right. Anyone
+
+00:27:53.880 --> 00:27:58.140
+who have used open AI drag and drop like an agent builder
+
+00:27:58.140 --> 00:28:06.080
+after my demo in a class? Yeah. Are you able to see any
+
+00:28:06.080 --> 00:28:06.800
+improvement in that?
+
+00:28:11.120 --> 00:28:14.600
+Yeah. Tyler is saying open AI is useless. Exactly. That's
+
+00:28:14.600 --> 00:28:17.700
+the point. See open AI has like a, you know, even we have
+
+00:28:17.700 --> 00:28:20.960
+discussed about that right after that launch in a class
+
+00:28:20.960 --> 00:28:23.980
+itself. And I told you even at that point of time. time that
+
+00:28:23.980 --> 00:28:28.660
+we'll see in future right we'll see in future and even till
+
+00:28:28.660 --> 00:28:33.400
+now if you will go and check open ai agent builder it's
+
+00:28:33.400 --> 00:28:37.640
+almost same they have like you know done a lot of pr a big
+
+00:28:37.640 --> 00:28:41.160
+news they have created that okay it is going to be in it and
+
+00:28:41.160 --> 00:28:44.640
+killer a thousands half youtuber have created you know
+
+00:28:44.640 --> 00:28:52.260
+videos on that overnight and everything is gone still n8n is
+
+00:28:52.260 --> 00:28:56.840
+a king as simple as that and none of these platforms are
+
+00:28:56.840 --> 00:29:01.440
+even close to n8n right because n8n core philosophy was not
+
+00:29:01.440 --> 00:29:05.020
+agent or ai its core philosophy was basically automation
+
+00:29:05.020 --> 00:29:09.220
+right and in it and they are building that company since
+
+00:29:09.220 --> 00:29:13.540
+last six seven year right even before this llm era i would
+
+00:29:13.540 --> 00:29:17.100
+say so the core philosophy was actually automation and
+
+00:29:17.100 --> 00:29:19.940
+technically we think that that is our agent builder is going
+
+00:29:19.940 --> 00:29:23.180
+to help me out no it's a automation task that we are trying
+
+00:29:23.180 --> 00:29:26.320
+to solve everywhere agent is not required we just need a
+
+00:29:26.320 --> 00:29:29.720
+agent when it's needed when we have to take a decision
+
+00:29:29.720 --> 00:29:32.860
+that's it mostly industry wise we'll be looking for
+
+00:29:32.860 --> 00:29:37.280
+automation so you must be able to see that even crew ai is
+
+00:29:37.280 --> 00:29:39.740
+doing like a still i'm waiting for their development i'm
+
+00:29:39.740 --> 00:29:43.120
+still waiting for like a you know autogen even autogen has
+
+00:29:43.120 --> 00:29:46.100
+launched the ua uh i'm still waiting for their improvement
+
+00:29:46.100 --> 00:29:49.820
+uh even open ai the big news they have created by launching
+
+00:29:49.820 --> 00:29:53.540
+our entire agent toolkit uh still i'm waiting for them to
+
+00:29:53.540 --> 00:29:56.580
+like you know do some sort of enhancement and similarly you
+
+00:29:56.580 --> 00:30:00.760
+will be able to find out here inside aws so i'll not
+
+00:30:00.760 --> 00:30:04.620
+recommend any although i'm i'm teaching it um although i'm
+
+00:30:04.620 --> 00:30:08.020
+like discussing about it inside the atlas bedrock but if
+
+00:30:08.020 --> 00:30:10.860
+you're going to ask me that do you recommend this flow
+
+00:30:10.860 --> 00:30:16.740
+builder inside aws bedrock my answer is a big big no i do
+
+00:30:16.740 --> 00:30:19.560
+not recommend i'm just teaching you so that you must be
+
+00:30:19.560 --> 00:30:22.820
+aware about it and you can go and you can argue because
+
+00:30:22.820 --> 00:30:25.640
+there are people out there and maybe you will meet such kind
+
+00:30:25.640 --> 00:30:28.800
+of people in an interview as well right where they will say
+
+00:30:28.800 --> 00:30:31.280
+okay why you are not using this what is what is the problem
+
+00:30:31.280 --> 00:30:33.480
+with that i mean like they have not they have not used it
+
+00:30:33.480 --> 00:30:36.640
+maybe they just heard about it somewhere right they will
+
+00:30:36.640 --> 00:30:40.820
+start arguing so maybe you can do give them a counter
+
+00:30:40.820 --> 00:30:45.800
+argument so for that like a prospective I think you are
+
+00:30:45.800 --> 00:30:48.600
+supposed to be aware about it but I believe we have seen a
+
+00:30:48.600 --> 00:30:53.060
+lot right we now we understand so we will be able to break
+
+00:30:53.060 --> 00:30:57.280
+an argument with those people anti-gravity is cursor killer
+
+00:30:57.280 --> 00:31:00.280
+new thumbnail right now sir I mean like anti-gravity is not
+
+00:31:00.280 --> 00:31:03.300
+even close to cursor believe me I think yesterday I have I
+
+00:31:03.300 --> 00:31:07.420
+was like talking about this in some of my class we'll see in
+
+00:31:07.420 --> 00:31:10.380
+a future right again we'll see everything in a future I mean
+
+00:31:10.380 --> 00:31:15.420
+like who wins who loses but as of now no cursor is the best
+
+00:31:15.420 --> 00:31:20.280
+I would say I'm using it I'm using a paid version of it
+
+00:31:20.280 --> 00:31:23.760
+basically and that too in a max token worth $200 I'm paying
+
+00:31:23.760 --> 00:31:29.700
+right so and my entire team is using it right so I have
+
+00:31:29.700 --> 00:31:32.600
+given them like my entire tech team is having a paid access
+
+00:31:32.600 --> 00:31:38.060
+of that right even though anti-gravity is free I'll not
+
+00:31:38.060 --> 00:31:40.140
+recommend to use it PK
+
+00:31:43.920 --> 00:31:46.300
+is saying you have used cloud equity code I feel to say PK I
+
+00:31:46.300 --> 00:31:48.940
+have seen your code base by the way generated by cloud code
+
+00:31:48.940 --> 00:31:53.260
+right so I mean like cloud is good with respect to
+
+00:31:53.260 --> 00:31:56.500
+generating a code but again control is something which
+
+00:31:56.500 --> 00:31:59.040
+matters a lot and I think I have already given a feedback
+
+00:31:59.040 --> 00:32:05.900
+about your code base yeah so that's my take on that I mean
+
+00:32:05.900 --> 00:32:07.860
+like something in generating a code doesn't mean that I'll
+
+00:32:07.860 --> 00:32:11.740
+accept it right it should do a meaningful task for me I mean
+
+00:32:11.740 --> 00:32:16.300
+like then I can accept okay so this is basically a flow
+
+00:32:16.300 --> 00:32:20.200
+builder again not my recommendation I'll not recommend right
+
+00:32:20.200 --> 00:32:23.440
+you are supposed to be aware about it that bedrock provides
+
+00:32:23.440 --> 00:32:28.840
+it yeah but my answer is no so do not invest you know a time
+
+00:32:28.840 --> 00:32:31.220
+in terms of doing a configuration because configuration wise
+
+00:32:31.220 --> 00:32:33.900
+again it's a very like a simple configuration drag and drop
+
+00:32:33.900 --> 00:32:36.700
+each and every node you will be able to configure like
+
+00:32:36.700 --> 00:32:39.840
+attach it and then bingo your work will be done so this is
+
+00:32:39.840 --> 00:32:42.920
+how this flow builder is going to work now after a flow
+
+00:32:42.920 --> 00:32:45.120
+builder so you will be able to find out a number of nodes
+
+00:32:45.120 --> 00:32:47.340
+which are in your knowledge base so knowledge base means you
+
+00:32:47.340 --> 00:32:51.420
+can attach your s3 like a bucket over here you can try to
+
+00:32:51.420 --> 00:32:56.440
+attach basically a bevy URL and then it will be able to you
+
+00:32:56.440 --> 00:33:00.460
+know basically it will be able to give you a answer from
+
+00:33:00.460 --> 00:33:04.180
+your knowledge base or even it is having capacity to scrap
+
+00:33:04.180 --> 00:33:08.840
+something from a web now to use it basically knowledge base
+
+00:33:08.840 --> 00:33:11.640
+if you are trying to create so if you have a root account
+
+00:33:11.640 --> 00:33:14.520
+you will not be able to create a knowledge base I don't know
+
+00:33:14.520 --> 00:33:18.220
+why they have given this restriction right but let's suppose
+
+00:33:18.220 --> 00:33:21.780
+if I have login through my root account in aws and if I will
+
+00:33:21.780 --> 00:33:23.840
+go and if I will try to create a knowledge base let me show
+
+00:33:23.840 --> 00:33:27.980
+you that part so knowledge base vector data right I am
+
+00:33:27.980 --> 00:33:32.120
+permission is fine so here choose a data source type so aws
+
+00:33:32.120 --> 00:33:36.600
+s3 maybe I can try to choose webcrawler yeah for now s3 is
+
+00:33:36.600 --> 00:33:39.140
+fine custom Salesforce SharePoint these are the option that
+
+00:33:39.140 --> 00:33:41.160
+they have given to you so webcrawler is the option which I
+
+00:33:41.160 --> 00:33:45.060
+am going to choose then click on next and here name is fine
+
+00:33:45.140 --> 00:33:48.520
+I will keep it default source URL so maybe I can try to give
+
+00:33:48.520 --> 00:33:52.620
+you your own URL over here just go and scrap it you can add
+
+00:33:52.620 --> 00:33:56.600
+nine more URLs so in total 10 URLs you can try to add which
+
+00:33:56.600 --> 00:33:59.620
+it can scrap basically and then you can chat with it and it
+
+00:33:59.620 --> 00:34:04.680
+will be able to give you answer then basically website
+
+00:34:04.680 --> 00:34:07.800
+domain range fine this this this things is fine add new
+
+00:34:07.800 --> 00:34:11.120
+pattern is fine now context check parsing so that's fine
+
+00:34:11.120 --> 00:34:15.760
+let's click on next and then here so as we are trying to
+
+00:34:15.760 --> 00:34:17.780
+build a knowledge base so obviously we have to attach a
+
+00:34:17.780 --> 00:34:21.620
+model so again very limited option cohera and cohera for
+
+00:34:21.620 --> 00:34:24.980
+embedding they are giving you so Titan text embedding v2
+
+00:34:24.980 --> 00:34:28.420
+they are giving you for this one and then I can try to click
+
+00:34:28.420 --> 00:34:32.800
+on next and then I can try to click on next create a
+
+00:34:32.800 --> 00:34:36.640
+knowledge base and then here is the error that you will get
+
+00:34:36.640 --> 00:34:39.640
+like I said I don't know why they have given this option I'm
+
+00:34:39.640 --> 00:34:43.980
+surprised basically knowledge base creation with the root
+
+00:34:43.980 --> 00:34:46.640
+user is not supported so if you have logged in through a
+
+00:34:46.640 --> 00:34:49.980
+root user it's not supported by the way please sign in with
+
+00:34:49.980 --> 00:34:53.360
+the IAM user or IAM role and try again so basically I have
+
+00:34:53.360 --> 00:34:56.700
+to create a new user and I have to give an access to it and
+
+00:34:56.700 --> 00:34:59.740
+only that user will be able to create a knowledge base
+
+00:34:59.740 --> 00:35:03.320
+that's a big pain I don't know why so let me go ahead and
+
+00:35:03.320 --> 00:35:09.500
+create it so here AWS console so I'll go and I can quickly
+
+00:35:09.500 --> 00:35:12.240
+go and create a user over here so
+
+00:35:15.500 --> 00:35:19.280
+here I can search for IAM identity access management this is
+
+00:35:19.280 --> 00:35:22.540
+the full form those who are not aware about it and I can
+
+00:35:22.540 --> 00:35:25.780
+click on this user tab on my left hand side there is a user
+
+00:35:25.780 --> 00:35:29.600
+and then I can try to click on create user maybe I can give
+
+00:35:29.600 --> 00:35:33.220
+a name to this user so sudhwan is a user name let's suppose
+
+00:35:33.220 --> 00:35:39.460
+click on next add attach policy directly and then I can give
+
+00:35:39.460 --> 00:35:42.880
+admin access to this user right so I have just selected this
+
+00:35:42.880 --> 00:35:48.300
+admin access next create a user yeah so this is a sudhwan
+
+00:35:48.300 --> 00:35:50.660
+which has been created now let's go ahead and like you know
+
+00:35:50.660 --> 00:35:55.040
+give a permission so that user will be able to log in so
+
+00:35:55.040 --> 00:35:59.040
+here I can click on this user security credential so I can
+
+00:35:59.040 --> 00:36:03.420
+come over here again console sign in so enable console
+
+00:36:03.420 --> 00:36:06.900
+access I am just going to enable for this user so that user
+
+00:36:06.900 --> 00:36:10.080
+will be able to log in with the help of this URL so enable
+
+00:36:10.080 --> 00:36:13.980
+console login auto generate password so yeah so now it is
+
+00:36:13.980 --> 00:36:18.760
+able to give me URL so this URL I can keep it somewhere this
+
+00:36:23.240 --> 00:36:27.320
+URL I can try to keep it I am just trying to create a user
+
+00:36:27.320 --> 00:36:32.620
+separate user username so I can keep it here username and
+
+00:36:32.620 --> 00:36:35.640
+then like a password I can try to keep it the auto generated
+
+00:36:35.640 --> 00:36:38.340
+password so anyhow even if you are going to copy this
+
+00:36:38.340 --> 00:36:40.860
+password not an issue at all because I am going to delete
+
+00:36:40.860 --> 00:36:47.210
+the user itself so here I can go into maybe incognito and
+
+00:36:47.210 --> 00:36:56.150
+console login AWS console and let's go ahead with the sign
+
+00:36:56.150 --> 00:36:59.370
+-in maybe I can I can just like the URL which I have copied
+
+00:36:59.370 --> 00:37:04.950
+right from my arn so I can try to just hit that URL and
+
+00:37:04.950 --> 00:37:11.050
+username so sudh1 I have created just now and password so
+
+00:37:11.050 --> 00:37:13.690
+whatever password that I have created so let's go and sign
+
+00:37:13.690 --> 00:37:16.310
+in so this is how I am just trying to create a user over
+
+00:37:16.310 --> 00:37:19.330
+here I have given a permission to that user and now I have
+
+00:37:19.330 --> 00:37:22.430
+logged in into so likewise you can create any user right for
+
+00:37:22.430 --> 00:37:24.590
+your AWS account right account, you can give a different
+
+00:37:24.590 --> 00:37:27.870
+kind of a permission. This is what we do basically, and
+
+00:37:27.870 --> 00:37:31.910
+every platform is providing you by the way. So here I can go
+
+00:37:31.910 --> 00:37:39.010
+and I can try to search for bedrock, amazon bedrock and so I
+
+00:37:39.010 --> 00:37:43.770
+can come to knowledge base, I can click on create and then I
+
+00:37:43.770 --> 00:37:46.670
+can start creating a knowledge base. Same thing, web
+
+00:37:46.670 --> 00:37:52.550
+crawler, let's suppose next and then like give URL, so maybe
+
+00:37:52.550 --> 00:37:57.530
+I can try to give your own URL over here, next,
+
+00:38:09.560 --> 00:38:15.800
+next, select model, a limited option, then
+
+00:38:17.910 --> 00:38:20.590
+create a knowledge base. Now it will allow you. So that's a
+
+00:38:20.590 --> 00:38:24.730
+big pain like you can't like do it, I mean like ideally they
+
+00:38:24.730 --> 00:38:28.370
+should allow to do everything from the root user. But I
+
+00:38:28.370 --> 00:38:30.870
+don't know. Maybe the service is still under development, so
+
+00:38:30.870 --> 00:38:34.750
+they have not released the final one. But yeah, that's that
+
+00:38:34.750 --> 00:38:37.850
+was a bit surprising for me, by the way, when I was trying
+
+00:38:37.850 --> 00:38:41.730
+to create a knowledge base and it was saying that you need
+
+00:38:41.730 --> 00:38:46.190
+like you can't do it from the root user. I was not able to
+
+00:38:46.190 --> 00:38:48.330
+understand the logic that maybe they thought about
+
+00:38:48.330 --> 00:38:53.770
+something. But yeah, maybe it's beyond my understanding. So
+
+00:38:53.770 --> 00:38:55.990
+yeah, this is the knowledge, there is a knowledge base
+
+00:38:55.990 --> 00:38:59.710
+option, right, as I said, so you can just like a like I have
+
+00:38:59.710 --> 00:39:02.690
+selected a web crawler option. So I can try to give 10 URLs,
+
+00:39:02.930 --> 00:39:05.950
+you will try to scrap the data and then eventually you will
+
+00:39:05.950 --> 00:39:08.950
+be able to chat with those data or maybe you can try to
+
+00:39:08.950 --> 00:39:12.890
+attach S3 bucket. Like that option is also available and
+
+00:39:12.890 --> 00:39:15.970
+then you can go and you can try to chat with that one. So
+
+00:39:15.970 --> 00:39:18.130
+that is the option you will be able to find out into a
+
+00:39:18.130 --> 00:39:21.170
+knowledge base. Now let's talk about a guard rail over here.
+
+00:39:21.530 --> 00:39:26.690
+So basically, guardrail is nothing but basically a policy
+
+00:39:26.690 --> 00:39:29.170
+that you can try to define. Find that your AI should not do
+
+00:39:29.170 --> 00:39:32.450
+that, not do this, something like that, right. So create a
+
+00:39:32.450 --> 00:39:36.150
+guardrail and then enter a name, maybe a test description,
+
+00:39:36.510 --> 00:39:41.930
+messaging for blocked prompt. So enter a message to display
+
+00:39:41.930 --> 00:39:45.050
+if your guardrail blocks the user prompt. So maybe, sorry,
+
+00:39:45.090 --> 00:39:47.330
+the model cannot answer this question. So this is a default
+
+00:39:47.330 --> 00:39:51.290
+one. Cross region KMS key, that's okay. Leave it default.
+
+00:39:52.030 --> 00:39:56.010
+Harmful categories. So you can try to enable and yeah. So
+
+00:39:56.010 --> 00:40:00.710
+here is something that you will be able to configure. So
+
+00:40:00.710 --> 00:40:05.070
+basically enable text or image, hate based, insult based,
+
+00:40:05.310 --> 00:40:09.530
+sexual, violence, misconduct. And you can try to select
+
+00:40:09.530 --> 00:40:12.850
+whether you have to block or detect as simple as that. And
+
+00:40:12.850 --> 00:40:15.830
+then you can try to even select a threshold by using a drag
+
+00:40:15.830 --> 00:40:19.170
+and drop. So you can try to like lower down the guardrails
+
+00:40:19.170 --> 00:40:23.150
+or you can try to keep it very, very high. Your fence very,
+
+00:40:23.270 --> 00:40:26.130
+very high. So those who don't understand. The guardrail,
+
+00:40:26.190 --> 00:40:30.610
+it's nothing but basically to prevent our model to give us
+
+00:40:30.610 --> 00:40:34.050
+a, give a response in any such kind of a situation. So any
+
+00:40:34.050 --> 00:40:37.590
+situation which has been like, you know, listed over here,
+
+00:40:37.670 --> 00:40:41.190
+right. Prompt attack. So even you can configure that part
+
+00:40:41.190 --> 00:40:45.030
+prompt attack, right. So if someone is trying to do it. So
+
+00:40:45.030 --> 00:40:48.710
+all this like, you know, options are available to all of
+
+00:40:48.710 --> 00:40:53.130
+you. Again, going to the next over here and here. So denied
+
+00:40:53.130 --> 00:40:56.410
+topics. So you can try to add a denied. Topic basically. So
+
+00:40:56.410 --> 00:40:59.730
+what you would like to block from your side so that you can
+
+00:40:59.730 --> 00:41:04.110
+also try to configure, you can also try to add a words over
+
+00:41:04.110 --> 00:41:08.550
+here. So let's suppose if in your reason, in your language
+
+00:41:08.550 --> 00:41:11.490
+or whatever language that you follow, whatever culture that
+
+00:41:11.490 --> 00:41:14.970
+you follow. So there are some words which you are not
+
+00:41:14.970 --> 00:41:17.650
+supposed to speak or your model is not supposed to
+
+00:41:17.650 --> 00:41:20.390
+inference, right. You can try to attach all of those words
+
+00:41:20.390 --> 00:41:24.010
+over here and eventually this will become your guardrail. So
+
+00:41:24.010 --> 00:41:27.630
+city of information. So here you can just come and you can
+
+00:41:27.630 --> 00:41:31.430
+try to like attach each and everything, which model is not
+
+00:41:31.430 --> 00:41:34.310
+what model is not supposed to do, right. Or model is not
+
+00:41:34.310 --> 00:41:38.950
+supposed to respond just by using a UI UI, right. And then
+
+00:41:38.950 --> 00:41:42.450
+once your guardrail will be created, so you can try to
+
+00:41:42.450 --> 00:41:46.170
+attach these guardrails to any of the funnel. So whenever
+
+00:41:46.170 --> 00:41:49.350
+you, you are exposing something to your user base, this is
+
+00:41:49.350 --> 00:41:51.950
+the meaning of the guardrail. And this meaning is again,
+
+00:41:51.990 --> 00:41:54.710
+same, right. This meaning is again, same everywhere. So. So
+
+00:41:54.710 --> 00:41:58.450
+whoever is providing guardrails, I think recently I have
+
+00:41:58.450 --> 00:42:01.330
+seen one article. So where I have seen that even in it and I
+
+00:42:01.330 --> 00:42:04.310
+started providing guardrails, right. So guardrail node,
+
+00:42:04.430 --> 00:42:07.330
+basically that that node is also already available. So even
+
+00:42:07.330 --> 00:42:09.790
+you can try to attach it over there. So when you are
+
+00:42:09.790 --> 00:42:13.370
+creating a full scale automation, maybe you can ask Dhruv in
+
+00:42:13.370 --> 00:42:16.790
+his class, right, about this one. So he will be able to talk
+
+00:42:16.790 --> 00:42:19.770
+about that more. Yesterday, I think yesterday he has since
+
+00:42:19.770 --> 00:42:22.470
+yesterday he has started taking your like automation class,
+
+00:42:22.630 --> 00:42:27.350
+right. So like, yeah, so guardrail, again, data automation,
+
+00:42:27.650 --> 00:42:32.410
+nothing much. So basically, you can you can just like, you
+
+00:42:32.410 --> 00:42:36.090
+know, create the entire RIG indexing pipeline or intelligent
+
+00:42:36.090 --> 00:42:39.210
+document processing, media analysis, audio analysis, this is
+
+00:42:39.210 --> 00:42:41.310
+something which is available. So this is all about this
+
+00:42:41.310 --> 00:42:45.410
+Amazon bedrock. Overall, I would say the kind of knowledge
+
+00:42:45.410 --> 00:42:50.010
+that all of you are holding for now, I don't think you need
+
+00:42:50.010 --> 00:42:52.970
+a bedrock, right. You have a better analysis. You have a
+
+00:42:52.970 --> 00:42:55.490
+better understanding, you have a better knowledge and I
+
+00:42:55.490 --> 00:42:59.410
+believe without even using a bedrock, you will be able to do
+
+00:42:59.410 --> 00:43:04.070
+everything that bedrock is providing, right, everyone. Yeah,
+
+00:43:06.690 --> 00:43:10.470
+yeah, so I believe you have better knowledge and I don't
+
+00:43:10.470 --> 00:43:14.170
+think that any one of these things are going to surprise any
+
+00:43:14.170 --> 00:43:17.950
+one of you in my class, right. So we all know that how to
+
+00:43:17.950 --> 00:43:21.290
+build. But yeah, it's good to like, you know, explore all
+
+00:43:21.290 --> 00:43:25.090
+the services which is available in a market. So that like I
+
+00:43:25.090 --> 00:43:28.950
+said. You will be able to go and argue about it if someone
+
+00:43:28.950 --> 00:43:36.070
+have initiated the discussion. And yeah, so overall, now, if
+
+00:43:36.070 --> 00:43:39.930
+I'll come to a conclusion, I will not use bedrock as simple
+
+00:43:39.930 --> 00:43:42.930
+as that. So that's my conclusion.
+
+00:43:46.270 --> 00:43:49.390
+OK, so yeah, after looking into it, a lot of like, you know,
+
+00:43:49.430 --> 00:43:52.970
+YouTube videos, we feel tempted that, OK, yeah, there is a
+
+00:43:52.970 --> 00:43:55.330
+service. But unless and until you are not going to.
+
+00:43:55.410 --> 00:43:59.630
+Experience it on your own, I don't think that we should make
+
+00:43:59.630 --> 00:44:03.230
+a decision. So I think now we have experience about it. Now,
+
+00:44:03.290 --> 00:44:06.110
+other service I would like to discuss with all of you. So
+
+00:44:06.110 --> 00:44:11.730
+there is something called as SageMaker SageMaker, mostly
+
+00:44:11.730 --> 00:44:15.770
+like people try to say it is one of the stable service, by
+
+00:44:15.770 --> 00:44:19.030
+the way. So SageMaker is not like a bedrock. So SageMaker is
+
+00:44:19.030 --> 00:44:21.690
+literally one of the stable service, which all of you will
+
+00:44:21.690 --> 00:44:24.970
+be able to find out. So let me show you that part. SageMaker
+
+00:44:24.970 --> 00:44:29.330
+one. It's a useful service, by the way, yeah, it's a useful
+
+00:44:29.330 --> 00:44:33.210
+service, so SageMaker, it will take some time. So I have
+
+00:44:33.210 --> 00:44:35.210
+already created my SageMaker like, you know, a studio
+
+00:44:35.210 --> 00:44:39.010
+because of that, it has launched itself quickly. But in
+
+00:44:39.010 --> 00:44:42.030
+general, it is going to take some five, six minutes of time
+
+00:44:42.030 --> 00:44:46.570
+to prepare this entire studio. SageMaker is again a very old
+
+00:44:46.570 --> 00:44:49.550
+service, by the way. It's not a new one. It's a stable
+
+00:44:49.550 --> 00:44:56.890
+offering from, you know, AWS side. Yeah. So. Here, right. So
+
+00:44:56.890 --> 00:45:01.550
+here, sir, what's the difference between those? Which one?
+
+00:45:05.060 --> 00:45:09.280
+Yeah. So basically SageMaker, they have built to create an
+
+00:45:09.280 --> 00:45:12.500
+entire like a ML pipeline, machine learning pipeline. But
+
+00:45:12.500 --> 00:45:15.960
+here you will be able to find out even all the latest
+
+00:45:15.960 --> 00:45:20.460
+models. So LLM models also. So here inside a SageMaker, if
+
+00:45:20.460 --> 00:45:23.060
+you will come. So there is a AI ML section, this section.
+
+00:45:23.200 --> 00:45:27.220
+And here. So if you are going to click on models, almost all
+
+00:45:27.220 --> 00:45:30.200
+the models. You will be able to find out. So open AI, view
+
+00:45:30.200 --> 00:45:34.680
+10 models and yeah, so they have a whisper model. They have
+
+00:45:34.680 --> 00:45:39.340
+a text, no model to display, text to text generation, clear,
+
+00:45:43.520 --> 00:45:49.980
+okay. So here we have this meta model, fine, clear, image
+
+00:45:49.980 --> 00:45:53.280
+wise. So again, these models, so yeah, it's almost the
+
+00:45:53.280 --> 00:45:56.060
+similar kind of a model that is available inside a bedrock.
+
+00:45:56.180 --> 00:45:59.660
+You will be able to find out even over here, almost similar
+
+00:45:59.660 --> 00:46:03.200
+couple of models, couple of more models. You will be able to
+
+00:46:03.200 --> 00:46:07.240
+find out, but the whole idea behind the SageMaker service
+
+00:46:07.240 --> 00:46:12.120
+was to enable end to end machine learning pipeline, right?
+
+00:46:12.180 --> 00:46:16.020
+Not this agent things, not this LLM things that we are
+
+00:46:16.020 --> 00:46:19.240
+talking about, but yeah, so this was the whole idea behind
+
+00:46:19.240 --> 00:46:21.580
+SageMaker. And like I said, so it's a very, very old
+
+00:46:21.580 --> 00:46:24.520
+service. You all will be able to find out and they have also
+
+00:46:24.520 --> 00:46:30.860
+given you a visual ETL. So somewhere it's like a almost
+
+00:46:30.860 --> 00:46:34.780
+equivalent. It's equivalent to a ADF Azure data factory. So
+
+00:46:34.780 --> 00:46:37.560
+there is a, like a very good service, which is available
+
+00:46:37.560 --> 00:46:41.320
+inside Azure for a big data job, right? For like a
+
+00:46:41.320 --> 00:46:44.100
+scheduling a job for creating an entire pipeline, just with
+
+00:46:44.100 --> 00:46:46.800
+the help of drag and drop. And that service is basically ADF
+
+00:46:46.800 --> 00:46:51.260
+Azure data factory. And I talked about that. I have not just
+
+00:46:51.260 --> 00:46:53.940
+talked about that. I have seen a very, very practical demo
+
+00:46:53.940 --> 00:46:57.920
+about this ADF in my big data lectures. I believe lectures
+
+00:46:57.920 --> 00:47:02.020
+with the name big data master. Yeah. So class with the name
+
+00:47:02.020 --> 00:47:05.560
+big data masters. So basically they were trying to create a
+
+00:47:05.560 --> 00:47:08.980
+competition for that. And this is where like, you know,
+
+00:47:09.020 --> 00:47:11.460
+it'll do a SageMaker comes into a picture. So where you can
+
+00:47:11.460 --> 00:47:15.200
+come and then you will be able to create a drag and drop. So
+
+00:47:15.200 --> 00:47:19.840
+basically S3, then come bring over here, configure your S3,
+
+00:47:19.900 --> 00:47:25.100
+then bring a new one like a, so basically ETL extract load
+
+00:47:25.100 --> 00:47:28.380
+transform kind of things. So you can like write a custom
+
+00:47:28.380 --> 00:47:30.900
+code, joins, drop columns, whatever, whatever you want. So
+
+00:47:30.900 --> 00:47:33.340
+you can just try to one by one configure each and
+
+00:47:33.340 --> 00:47:37.320
+everything. And, you know, after configuring it, you can
+
+00:47:37.320 --> 00:47:39.940
+build the entire pipeline. So you can like, you know, just
+
+00:47:39.940 --> 00:47:43.020
+configure this one. So it will pick a data from here or
+
+00:47:43.020 --> 00:47:45.660
+maybe data. It will try to pick from somewhere else, glue or
+
+00:47:45.660 --> 00:47:49.340
+something. They have given you all the options and then you
+
+00:47:49.340 --> 00:47:52.680
+can, you can try to like clean the data. You can try to
+
+00:47:52.680 --> 00:47:55.500
+transform the data and then you can try to finally dump the
+
+00:47:55.500 --> 00:47:59.100
+data. You just like dump the data in some of the data
+
+00:47:59.100 --> 00:48:03.200
+sources or connectors. That they have given to you. So this
+
+00:48:03.200 --> 00:48:06.060
+was, like I said, this was a competition. This is coming
+
+00:48:06.060 --> 00:48:09.940
+from a competition of ADF, Azure Data Factory, right. Azure
+
+00:48:09.940 --> 00:48:12.580
+Data Factory is literally very good, very powerful, very
+
+00:48:12.580 --> 00:48:15.600
+powerful than this. I will say, right, very powerful than
+
+00:48:15.600 --> 00:48:19.020
+this one. Again, Azure Data Factory works within the
+
+00:48:19.020 --> 00:48:23.380
+ecosystem. So most of the services they have given to us,
+
+00:48:23.440 --> 00:48:28.100
+which works within the Azure ecosystem. But again, Azure
+
+00:48:28.100 --> 00:48:31.460
+ecosystem is very much powerful. If I'll talk about a big
+
+00:48:31.460 --> 00:48:34.320
+data, from a big data perspective, right. So it's very, very
+
+00:48:34.320 --> 00:48:37.320
+powerful actually and it's a very stable service that you
+
+00:48:37.320 --> 00:48:42.720
+will, that has been used across the industry. So here, so AI
+
+00:48:42.720 --> 00:48:45.640
+model wise, so yeah, model is there. ML flow, so you will be
+
+00:48:45.640 --> 00:48:50.580
+able to create the entire like a flow end to end and you can
+
+00:48:50.580 --> 00:48:53.900
+try to, you know, schedule it. Training job, that is fine.
+
+00:48:54.580 --> 00:48:58.220
+So all these things are not that amazing. So here. So here
+
+00:48:58.220 --> 00:49:01.380
+you will be able to get basically a Jupyter lab, which is
+
+00:49:01.380 --> 00:49:04.440
+amazing part. So where you can just try to open up your
+
+00:49:04.440 --> 00:49:07.960
+notebook and then you can start doing whatever you want.
+
+00:49:08.100 --> 00:49:11.440
+Very, very simple. Right. So basically it is going to launch
+
+00:49:11.440 --> 00:49:16.340
+it on a particular like a resource like T3 medium or
+
+00:49:16.340 --> 00:49:20.020
+whatever you are going to schedule and you will be able to
+
+00:49:20.020 --> 00:49:23.240
+get an access of a Jupyter notebook. And if I have an access
+
+00:49:23.240 --> 00:49:26.360
+of Jupyter notebook, I can do whatever I want. That's very,
+
+00:49:26.520 --> 00:49:29.720
+very simple. Right. So this is, and I can even try to
+
+00:49:29.720 --> 00:49:33.660
+productionize it. I can try to even schedule it. So here, as
+
+00:49:33.660 --> 00:49:41.840
+you can see, so it is, yeah, ID configured successfully. Now
+
+00:49:41.840 --> 00:49:45.360
+if I'll do like a one plus one, this is the amazing part. I
+
+00:49:45.360 --> 00:49:47.740
+mean like inside a cloud without doing any kind of a setup,
+
+00:49:47.860 --> 00:49:50.720
+one plus one, two, right. So everything is working fine. So
+
+00:49:50.720 --> 00:49:53.620
+I will be able to get, you know, each and everything. Right.
+
+00:49:53.680 --> 00:49:56.620
+I will. So I don't have to do go and do a setup. So I can
+
+00:49:56.620 --> 00:50:00.080
+write a code. I can like, you know, schedule this entire
+
+00:50:00.080 --> 00:50:02.080
+things. I can connect with the databases. Each and
+
+00:50:02.080 --> 00:50:06.040
+everything can be done inside a Jupyter notebook itself. If
+
+00:50:06.040 --> 00:50:09.180
+I have a direct access of a Jupyter notebook within a cloud,
+
+00:50:09.280 --> 00:50:11.940
+and this is where this, you know, Jupyter lab comes into a
+
+00:50:11.940 --> 00:50:15.380
+picture and even they have given you a later for a VS code
+
+00:50:15.380 --> 00:50:18.760
+option. So if required, if someone wants like a, they can
+
+00:50:18.760 --> 00:50:21.700
+just try to, you know, use it basically they can try to
+
+00:50:21.700 --> 00:50:25.360
+configure it. So this is again, one of the service I would
+
+00:50:25.360 --> 00:50:29.780
+say, which is available. Inside AWS for a AIML kind of a
+
+00:50:29.780 --> 00:50:31.640
+job, right. A SageMaker.
+
+00:50:34.650 --> 00:50:37.350
+Any paper stall needed. Obviously it will be needed. Right.
+
+00:50:37.430 --> 00:50:41.310
+So all this basic libraries will be available, but yeah. So
+
+00:50:41.310 --> 00:50:44.450
+see what they're doing, basically the Jupyter notebook that
+
+00:50:44.450 --> 00:50:47.130
+you're trying to launch over here. Right. So you must have
+
+00:50:47.130 --> 00:50:51.170
+seen initially that it has launched it on T3 micro. T3 micro
+
+00:50:51.170 --> 00:50:55.450
+is what? EC2 instance, machine, right? So Python library
+
+00:50:55.450 --> 00:50:57.810
+will be available. A basic core Python library will be
+
+00:50:57.810 --> 00:51:01.510
+available. Right. So the way we do a pip install in our
+
+00:51:01.510 --> 00:51:03.950
+local system in the exact similar manner, you have to do a
+
+00:51:03.950 --> 00:51:07.010
+pip install even over here, nothing different. Right. So
+
+00:51:07.010 --> 00:51:09.530
+they're giving you a machine T3 micro. You can select even
+
+00:51:09.530 --> 00:51:11.710
+other machine. You can select a bigger machine as well.
+
+00:51:11.810 --> 00:51:13.970
+Right. At the time of launch and accordingly they're going
+
+00:51:13.970 --> 00:51:18.630
+to charge you. Yeah. What are the difference between those
+
+00:51:18.630 --> 00:51:21.530
+SageMaker and Bedrock? So Bedrock, basically they are trying
+
+00:51:21.530 --> 00:51:24.970
+to offer with respect to a agentic AI or you can say a
+
+00:51:24.970 --> 00:51:29.170
+generative AI. SageMaker is a old service. A very, very old
+
+00:51:29.170 --> 00:51:32.690
+service. Which was originally designed for ETL kind of a
+
+00:51:32.690 --> 00:51:36.530
+pipeline and for AIML kind of a job. You can come over here,
+
+00:51:36.670 --> 00:51:40.270
+you can try to train your machine learning models and you
+
+00:51:40.270 --> 00:51:42.690
+can try to host it. You can try to deploy it. You can try to
+
+00:51:42.690 --> 00:51:45.370
+schedule it. Right. Or maybe you can try to create a big
+
+00:51:45.370 --> 00:51:48.570
+data kind of a job. So that was the whole idea behind this
+
+00:51:48.570 --> 00:51:52.490
+SageMaker service. And then after generative AI, so they
+
+00:51:52.490 --> 00:51:56.010
+came up with another service called as AWS Bedrock. And I
+
+00:51:56.010 --> 00:52:00.210
+believe it's still evolving. Right. But still it's evolving.
+
+00:52:03.610 --> 00:52:05.890
+Can you explain a little bit more related to Azure Data
+
+00:52:05.890 --> 00:52:08.490
+Factory and SageMaker? SageMaker I think you are able to
+
+00:52:08.490 --> 00:52:11.830
+see, right? SageMaker. ADF I would say it's pretty much
+
+00:52:11.830 --> 00:52:14.570
+advanced, very, very advanced I would say. Right. And if you
+
+00:52:14.570 --> 00:52:17.290
+have to like see a practical example, maybe you can look
+
+00:52:17.290 --> 00:52:20.310
+into my big data master's lecture. Over there I have already
+
+00:52:20.310 --> 00:52:23.890
+shown, not just shown, I was not just talking about a
+
+00:52:23.890 --> 00:52:27.790
+theoretically ADF. So I have shown a lot of pipelines over
+
+00:52:27.790 --> 00:52:32.970
+there in practical. Yeah. Yeah. So that will help you out if
+
+00:52:32.970 --> 00:52:35.470
+you would like to know more about like from a big data
+
+00:52:35.470 --> 00:52:41.460
+perspective. So yeah, SageMaker is again one of the service
+
+00:52:41.460 --> 00:52:46.040
+and I believe you must be aware about it that what SageMaker
+
+00:52:46.040 --> 00:52:48.120
+actually does and then comparison between obviously
+
+00:52:48.120 --> 00:52:53.860
+SageMaker and AWS Bedrock. Now yeah, so now the another
+
+00:52:53.860 --> 00:52:56.900
+service that you will be able to find out called as Kendra.
+
+00:52:57.260 --> 00:53:01.920
+So AWS Kendra. Right. Now what is this Kendra by the way? So
+
+00:53:01.920 --> 00:53:05.660
+Kendra is basically designed for searching and indexing,
+
+00:53:05.680 --> 00:53:08.420
+right? Searching and indexing. So let's suppose if I have a
+
+00:53:08.420 --> 00:53:11.420
+document I can try to attach. If I have like a, you know,
+
+00:53:11.420 --> 00:53:14.840
+some data I can try to attach and then I can try to do a
+
+00:53:14.840 --> 00:53:18.200
+indexing. I can try to do a search on top of that one. So
+
+00:53:18.200 --> 00:53:20.760
+let's suppose if I have a PDF inside PDF, I have a text, I
+
+00:53:20.760 --> 00:53:24.460
+have an image and other things. So basically I can try to
+
+00:53:24.460 --> 00:53:27.220
+attach it and then Kendra is going to help me out. So here
+
+00:53:27.220 --> 00:53:30.980
+if I'll go and click on like create indexes. So click on
+
+00:53:30.980 --> 00:53:34.080
+create indexes. My index name. So let's suppose if I'm
+
+00:53:34.080 --> 00:53:37.360
+giving test one as an index name, description, leave it, IIM
+
+00:53:37.360 --> 00:53:43.120
+rule, leave it, create, use the existing one. Yeah. Tag,
+
+00:53:43.140 --> 00:53:47.500
+leave it. Developer edition. So see, here you will be able
+
+00:53:47.500 --> 00:53:50.320
+to understand everything in this system itself. So storage
+
+00:53:50.320 --> 00:53:54.040
+capacity up to 10,000 document in a developer edition and
+
+00:53:54.040 --> 00:53:56.480
+then enterprise edition if I'm going to choose for which is
+
+00:53:56.480 --> 00:53:59.700
+going to cost me more. Right. So here I will be able to
+
+00:53:59.700 --> 00:54:04.940
+store 10,000 to 10,000. It seems right. 10 million and then
+
+00:54:04.940 --> 00:54:08.420
+query capacity. So 4,000 query per day in this mode, they're
+
+00:54:08.420 --> 00:54:11.980
+allowing me. So 4,000 times if I'm hosting the service for
+
+00:54:11.980 --> 00:54:15.960
+my user, if I need more than in that case, maybe I can go
+
+00:54:15.960 --> 00:54:20.240
+with the enterprise edition. So to my document, I can try to
+
+00:54:20.240 --> 00:54:22.720
+query this my number of times. So this is the number of
+
+00:54:22.720 --> 00:54:25.740
+document. This is the query per day. Now access token
+
+00:54:25.740 --> 00:54:29.520
+setting, leave it, leave it next. Click on next. Click on
+
+00:54:29.520 --> 00:54:34.800
+next and create. Okay. Yeah. So it is, it is going to create
+
+00:54:34.800 --> 00:54:37.500
+my indexes.
+
+00:54:40.210 --> 00:54:44.470
+So it's technically like a, like, you know, a DB for data it
+
+00:54:44.470 --> 00:54:46.670
+is trying to create. This is where Kendra comes into
+
+00:54:46.670 --> 00:54:46.950
+picture.
+
+00:55:00.500 --> 00:55:03.300
+So recently we have received one project. I'll tell you one
+
+00:55:03.300 --> 00:55:06.660
+small story about Kendra from last week itself. So last week
+
+00:55:06.660 --> 00:55:09.520
+we have received one project from one of the client. So they
+
+00:55:09.520 --> 00:55:12.780
+have like a lot of colleges in India, in Hyderabad region
+
+00:55:12.780 --> 00:55:17.840
+and what they are trying to like do. So they are trying to
+
+00:55:17.840 --> 00:55:21.860
+build a service. So where the student can come, come to
+
+00:55:21.860 --> 00:55:25.560
+their application, come to their app and they can try to,
+
+00:55:25.660 --> 00:55:28.140
+you know, let's suppose there is a student from ECE branch,
+
+00:55:28.320 --> 00:55:32.000
+there is a student from like a CSC branch. So obviously in
+
+00:55:32.000 --> 00:55:34.600
+every branch, in every semester, there will be a different,
+
+00:55:34.680 --> 00:55:36.300
+different books, right? There will be different, different
+
+00:55:36.300 --> 00:55:38.680
+books. There will be different key and notes and all those
+
+00:55:38.680 --> 00:55:41.180
+things will be available. So they are trying to build an
+
+00:55:41.180 --> 00:55:43.720
+application. So where their student can come and as per the
+
+00:55:43.720 --> 00:55:47.180
+access, they will be able to search inside a document. And
+
+00:55:47.180 --> 00:55:51.300
+again, so when they are trying to do a searching, it should
+
+00:55:51.300 --> 00:55:55.660
+also try to search images, right? Image, it's metadata, it's
+
+00:55:55.660 --> 00:55:59.580
+citations, all of those things. So over there we have used
+
+00:55:59.580 --> 00:56:04.660
+Kendra. So in one of the use cases we have, we have already
+
+00:56:04.660 --> 00:56:10.540
+used like a Kendra. Yeah. So here, yeah. So my index is up
+
+00:56:10.540 --> 00:56:13.880
+basically. I can try to attach a data source. So I can try
+
+00:56:13.880 --> 00:56:15.720
+to dump all the data into my, yeah. So I can try to dump all
+
+00:56:15.720 --> 00:56:24.620
+the data into my, yeah. So I can
+
+00:56:38.280 --> 00:56:41.080
+just attach a data set and then Kendra is going to manage
+
+00:56:41.080 --> 00:56:44.320
+each and everything for me. This is what Kendra does. So I
+
+00:56:44.320 --> 00:56:47.600
+don't have to do much over here. Just dump all the data and
+
+00:56:47.600 --> 00:56:49.880
+then enjoy.
+
+00:56:56.600 --> 00:56:59.880
+What is the difference between S3 and Kendra? It's a wrong
+
+00:56:59.880 --> 00:57:03.620
+comparison. I would say. See S3 is technically a storage, a
+
+00:57:03.620 --> 00:57:06.660
+pure storage, right? Yeah. So you can, you will get a drive
+
+00:57:06.660 --> 00:57:09.580
+access and then over there you can just put a data. Kendra
+
+00:57:09.580 --> 00:57:13.100
+is something which is going to process those data. So Kendra
+
+00:57:13.100 --> 00:57:16.280
+is not going to store the data, by the way, it's a service.
+
+00:57:16.820 --> 00:57:20.800
+You are going to hold a data into your bucket, which is S3,
+
+00:57:20.860 --> 00:57:23.960
+right, folder wise or whatever. And then you are going to
+
+00:57:23.960 --> 00:57:26.920
+attach to a Kendra. So Kendra is going to process those like
+
+00:57:26.920 --> 00:57:30.480
+a text or document and each and everything. And whenever you
+
+00:57:30.480 --> 00:57:33.580
+are going to query those documents, so Kendra service is
+
+00:57:33.580 --> 00:57:36.780
+going to help you out. In terms of, you know, doing a
+
+00:57:36.780 --> 00:57:37.100
+search.
+
+00:57:42.480 --> 00:57:48.520
+Why don't we use S3 and chroma DB instead of S3 and chroma
+
+00:57:48.520 --> 00:57:52.480
+DB instead of Kendra? I mean, yeah, you can use it. There
+
+00:57:52.480 --> 00:57:55.720
+are hundreds of services which is available. So I think why
+
+00:57:55.720 --> 00:58:01.520
+we are not using it should not be a question. Basically, you
+
+00:58:01.520 --> 00:58:05.620
+can use it. Who is stopping you to use it, by the way, sir,
+
+00:58:09.230 --> 00:58:13.350
+how to attach whatever we built in Kendra to a UI. So yeah,
+
+00:58:13.390 --> 00:58:15.790
+programmatically you can attach it as a service that is
+
+00:58:15.790 --> 00:58:16.190
+possible.
+
+00:58:25.100 --> 00:58:29.020
+Is it like a Google file search kind of you can say files,
+
+00:58:29.060 --> 00:58:32.660
+Google file search, you can say. But yeah, so it like helps
+
+00:58:32.660 --> 00:58:37.140
+you out even search with respect to like images and your
+
+00:58:37.140 --> 00:58:40.700
+text. So this is where this Kendra comes into picture. So
+
+00:58:40.700 --> 00:58:45.140
+it's still starting. Yeah. So it's very simple, like, you
+
+00:58:45.140 --> 00:58:48.600
+know, service which you will be able to find out. So keep
+
+00:58:48.600 --> 00:58:52.300
+your data into S3 bucket. And then attach it with the Kendra
+
+00:58:52.300 --> 00:58:55.060
+and then go and start searching it. Simple.
+
+00:59:02.620 --> 00:59:05.660
+External data source to Kendra, is it possible or it has to
+
+00:59:05.660 --> 00:59:08.440
+be Amazon ecosystem data? It has to be in S3 bucket itself.
+
+00:59:08.740 --> 00:59:12.400
+They're not allowing you to like, you know, bring
+
+00:59:14.640 --> 00:59:17.800
+a data from external sources. So that's the reason in a data
+
+00:59:17.800 --> 00:59:22.260
+source you will be able to find out. So add data source. So
+
+00:59:22.260 --> 00:59:23.740
+Amazon S3 data source itself.
+
+00:59:27.240 --> 00:59:30.400
+So yeah, there are some other which is like available over
+
+00:59:30.400 --> 00:59:34.180
+here. So I mean, like from Amazon itself. So Amazon RDS,
+
+00:59:34.280 --> 00:59:41.640
+MySQL, again from Amazon RDS itself, RDS itself. So there
+
+00:59:41.640 --> 00:59:47.740
+are some, but again, S3, S3, Box connector they have given
+
+00:59:47.740 --> 00:59:51.560
+you, Confluence they have given you, GitHub, Gmail. Yeah,
+
+00:59:51.640 --> 00:59:57.940
+there is some external, not some, I would say, almost all
+
+00:59:57.940 --> 01:00:01.820
+the popular one is given to you as a connector. Hmm. Web
+
+01:00:01.820 --> 01:00:07.840
+crawlers, SharePoint. So yes, apart from your S3, you can
+
+01:00:07.840 --> 01:00:13.200
+bring a data from other sources as well. I haven't used it.
+
+01:00:13.220 --> 01:00:15.240
+I have just used with respect to S3, by the way,
+
+01:00:21.480 --> 01:00:28.420
+MongoDB, I have a doubt, MongoDB, I think Mongo connector is
+
+01:00:28.420 --> 01:00:32.080
+not available, it seems, no.
+
+01:00:33.320 --> 01:00:36.180
+And even out of this connector, so a couple of connectors,
+
+01:00:36.300 --> 01:00:38.420
+they have decommissioned as you can see. So you can see no
+
+01:00:38.420 --> 01:00:44.760
+longer available. Yeah. It is a simple service, connect with
+
+01:00:44.760 --> 01:00:46.860
+your data source and then, so
+
+01:00:54.540 --> 01:00:58.460
+here see what it does. So insert, extract or modify document
+
+01:00:58.460 --> 01:01:01.360
+metadata and content during an ingestion. So specify a
+
+01:01:01.360 --> 01:01:05.580
+metadata field name. You can try to put up your condition,
+
+01:01:05.780 --> 01:01:08.200
+enter or select the value that meets the condition and then
+
+01:01:08.200 --> 01:01:10.960
+you can configure any of your Lambda function if you want
+
+01:01:10.960 --> 01:01:15.760
+and then you can try to do like these operations. OCR,
+
+01:01:15.940 --> 01:01:18.140
+image, video, analytics, transcript, translation, etc. So
+
+01:01:18.140 --> 01:01:24.240
+test anytime basically. So it is actually good in terms of
+
+01:01:24.240 --> 01:01:26.820
+understanding your data. So this is just one of the wrapper
+
+01:01:26.820 --> 01:01:31.160
+which has been built on top of your data set, simple. And
+
+01:01:31.160 --> 01:01:36.400
+then you can get the analytics. So yeah, SageMaker is one of
+
+01:01:36.400 --> 01:01:40.340
+the service, Bedrock is basically one of the service and
+
+01:01:40.340 --> 01:01:45.320
+then Kendra is a small service, SageMaker and AWS Bedrock is
+
+01:01:45.320 --> 01:01:49.320
+technically a complete suit. Kendra is just a small service
+
+01:01:49.320 --> 01:01:53.040
+that they have built. Along with that, so what in all
+
+01:01:53.040 --> 01:01:56.160
+services that you are supposed to know from AWS, so let me
+
+01:01:56.160 --> 01:02:01.560
+give you that overview
+
+01:02:01.560 --> 01:02:05.620
+as well. So there is something called as, so Kendra, fine.
+
+01:02:06.200 --> 01:02:09.560
+There is something called as elastic bean stack.
+
+01:02:14.050 --> 01:02:16.690
+Yeah. There is something called elastic bean stack. So
+
+01:02:16.690 --> 01:02:19.630
+yesterday we have used EC2, right? We have used basically an
+
+01:02:19.630 --> 01:02:23.210
+EC2 instance. Where we were like, you know, trying to deploy
+
+01:02:23.210 --> 01:02:26.370
+some of our services and we have attached it with our own
+
+01:02:26.370 --> 01:02:31.110
+DNS. Likewise, so if I have to like host some sort of a
+
+01:02:31.110 --> 01:02:34.450
+application, so I can try to use one of the services called
+
+01:02:34.450 --> 01:02:39.150
+as elastic bean stack. It's very, very easy by the way,
+
+01:02:39.190 --> 01:02:44.170
+right? So you have to just zip all of your code base and
+
+01:02:44.170 --> 01:02:48.510
+then you can try to simply upload it and based on like
+
+01:02:48.510 --> 01:02:50.710
+configuration. So obviously there is some little bit of
+
+01:02:50.710 --> 01:02:53.470
+configuration which is required and elastic bean stack is
+
+01:02:53.470 --> 01:02:56.810
+going to help you out to host your entire application. In
+
+01:02:56.810 --> 01:02:59.410
+some of the classes, I have also talked about this elastic
+
+01:02:59.410 --> 01:03:01.990
+bean stack in a practical manner. I'm just trying to give
+
+01:03:01.990 --> 01:03:05.370
+you an overview that okay, so what service does what? So
+
+01:03:05.370 --> 01:03:07.890
+EC2, we are already aware about it, right? We have already
+
+01:03:07.890 --> 01:03:11.290
+used it twice inside a class, I believe. So where you can
+
+01:03:11.290 --> 01:03:14.030
+launch any kind of instance of your choice of your capacity.
+
+01:03:15.090 --> 01:03:18.130
+Apart from that, so bean stack. So bean stack is again one
+
+01:03:18.130 --> 01:03:20.390
+of the service. Yeah. So which is going to help you out in
+
+01:03:20.390 --> 01:03:24.930
+terms of hosting the entire things. Now above that, there is
+
+01:03:24.930 --> 01:03:27.770
+a service called as ECS service actually. So there is
+
+01:03:27.770 --> 01:03:30.250
+something called elastic container services. So where you
+
+01:03:30.250 --> 01:03:34.910
+can try to, you know, like deploy your entire Docker
+
+01:03:34.910 --> 01:03:40.530
+container and that too on scale basically. So you have like
+
+01:03:40.530 --> 01:03:44.130
+a provision to set all those auto scaling and security
+
+01:03:44.130 --> 01:03:46.390
+checks each and everything the way we were doing it with
+
+01:03:46.390 --> 01:03:49.530
+respect to EC2 services. So this is again one of the
+
+01:03:49.530 --> 01:03:53.510
+service, a fully managed container service you will be able
+
+01:03:53.510 --> 01:03:58.970
+to find out. Now there is, this is basically a ECS container
+
+01:03:58.970 --> 01:04:02.610
+service for a Docker. There is something called as EKS. So
+
+01:04:02.610 --> 01:04:05.610
+for Kubernetes, so let's suppose if I would like to like
+
+01:04:05.610 --> 01:04:10.610
+deploy something with the help of like Kubernetes, right, if
+
+01:04:10.610 --> 01:04:12.810
+I have to manage that, which is getting a lot of popularity.
+
+01:04:13.150 --> 01:04:17.190
+So you can try to use EKS service. So there is a ECS. There
+
+01:04:17.190 --> 01:04:20.010
+is a Docker. There is a EKS. There is a elastic bean stack.
+
+01:04:20.350 --> 01:04:24.850
+There is a EC2, a raw EC2, right system, which I can take
+
+01:04:24.850 --> 01:04:28.090
+where I can try to deploy all of my services apart from
+
+01:04:28.090 --> 01:04:32.310
+that. So there is something called as basically one more
+
+01:04:32.310 --> 01:04:40.470
+service, Fargate basically, F-A-R-G-A-T. So basically if you
+
+01:04:40.470 --> 01:04:44.030
+are going to search for this Fargate over here, so basically
+
+01:04:44.030 --> 01:04:47.210
+it is going to give you a serverless compute engine. For
+
+01:04:47.210 --> 01:04:51.610
+combining ECS and EKS, the ECS container service and EKS
+
+01:04:51.610 --> 01:04:54.550
+Kubernetes services, right? So it is just going to give you
+
+01:04:54.550 --> 01:04:57.890
+that one. So this is what is called as Fargate over here. So
+
+01:04:57.890 --> 01:05:02.950
+ECS, EKS, Adelweiss, Fargate, Beanstack. So these are the
+
+01:05:02.950 --> 01:05:06.190
+application, these are the services that you can try to use
+
+01:05:06.190 --> 01:05:10.950
+to deploy any of like your web application or any Python
+
+01:05:10.950 --> 01:05:14.130
+application, any kind of a front end or any kind of a back
+
+01:05:14.130 --> 01:05:18.750
+end. Now. So. So apart from that, so let's suppose if I'm
+
+01:05:18.750 --> 01:05:21.170
+looking for something serverless. So obviously serverless
+
+01:05:21.170 --> 01:05:24.690
+wise, so I have a Lambda. So there is something called as
+
+01:05:24.690 --> 01:05:27.550
+AWS Lambda. So where you can try to deploy anything in a
+
+01:05:27.550 --> 01:05:32.090
+serverless mode. So it depends upon the request or hits
+
+01:05:32.090 --> 01:05:35.390
+basically they are going to charge you. So in a serverless
+
+01:05:35.390 --> 01:05:38.270
+mode, we have a Lambda inside AWS and there is something
+
+01:05:38.270 --> 01:05:43.350
+called as App Runner. So AWS App Runner, right? So again,
+
+01:05:43.450 --> 01:05:46.330
+this is basically a serverless services they have given to
+
+01:05:46.330 --> 01:05:49.950
+you. So there is a container based service. So where ECS,
+
+01:05:49.970 --> 01:05:55.070
+EKS, Fargate and Beanstack comes into picture. Then there is
+
+01:05:55.070 --> 01:05:58.190
+a category of a serverless, serverless in serverless
+
+01:05:58.190 --> 01:06:00.850
+category. So you will be able to see Lambda and you will be
+
+01:06:00.850 --> 01:06:03.750
+able to see App Runner. So generally people get confused,
+
+01:06:03.990 --> 01:06:06.310
+right? That which service I'm supposed to use for what kind
+
+01:06:06.310 --> 01:06:08.390
+of application. So if you are going ahead with a
+
+01:06:08.390 --> 01:06:11.850
+containerized service, in that case, go ahead with ECS, EKS,
+
+01:06:12.090 --> 01:06:16.270
+Fargate or maybe like, you know, Beanstack. And if you're,
+
+01:06:16.270 --> 01:06:16.510
+if you're looking for a serverless service, you can go ahead
+
+01:06:16.510 --> 01:06:17.830
+with EKS, Fargate If you're looking for maybe a serverless.
+
+01:06:17.950 --> 01:06:20.430
+So in that case, go ahead with the Lambda or go ahead with
+
+01:06:20.430 --> 01:06:23.210
+the App Runner. Serverless, those who don't understand what
+
+01:06:23.210 --> 01:06:25.810
+is the meaning of serverless, serverless means, so basically
+
+01:06:25.810 --> 01:06:30.690
+AWS is keeping a big, big machines, right? You are going to
+
+01:06:30.690 --> 01:06:34.310
+host your entire application on that server. And along with
+
+01:06:34.310 --> 01:06:36.970
+you, there are many people, many other people who will be
+
+01:06:36.970 --> 01:06:40.970
+hosting their application. AWS is going to charge you as per
+
+01:06:40.970 --> 01:06:44.690
+consumption, consumption of that network bandwidth and the
+
+01:06:44.690 --> 01:06:46.750
+transactions or data storage that you have. You are trying
+
+01:06:46.750 --> 01:06:49.950
+to do so that is technically a meaning of a serverless. So
+
+01:06:49.950 --> 01:06:53.930
+you are not managing a server, by the way, AWS itself is
+
+01:06:53.930 --> 01:06:56.810
+managing our servers. This is what it means. A serverless
+
+01:06:56.810 --> 01:07:00.990
+services, right, technically. So in case of like a server
+
+01:07:00.990 --> 01:07:04.010
+based, for example, all those container service. So they
+
+01:07:04.010 --> 01:07:06.470
+give us a server and we used to manage it. We used to
+
+01:07:06.470 --> 01:07:09.170
+configure it. We used to manage it. Right. The same we have
+
+01:07:09.170 --> 01:07:12.190
+done with respect to EC2 as well. Yeah. So virtual machine
+
+01:07:12.190 --> 01:07:14.750
+wise, if I'm looking for a raw machine, so in that case, I
+
+01:07:14.750 --> 01:07:17.570
+can try to go with the EC2. So yesterday we have launched
+
+01:07:17.570 --> 01:07:21.390
+EC2 and if I'll talk about EC2, so I can even go and I can
+
+01:07:21.390 --> 01:07:24.890
+try to select like any kind of instances, right. Any kind.
+
+01:07:24.950 --> 01:07:27.410
+So we have already launched this EC2 multiple times, I
+
+01:07:27.410 --> 01:07:31.810
+believe. So now we are good with that. So here I can try to
+
+01:07:31.810 --> 01:07:33.310
+even go and select maybe.
+
+01:07:37.500 --> 01:07:41.040
+Yeah. So any kind of instances, a lot of like instances
+
+01:07:41.040 --> 01:07:45.860
+which is already available. Right. And yeah. So a big, big
+
+01:07:45.860 --> 01:07:50.580
+instances I will be able to spin over here. And apart from
+
+01:07:50.580 --> 01:07:53.780
+that, so there is something called as LIGST, light cell. So
+
+01:07:53.780 --> 01:07:57.180
+light cell launch and manage a virtual private server. So
+
+01:07:57.180 --> 01:08:00.020
+this is again like a light cell is another server or virtual
+
+01:08:00.020 --> 01:08:04.300
+machine that they are providing you. So in total, the source
+
+01:08:04.300 --> 01:08:07.700
+wise, if I'll look into AWS services, I can divide it on
+
+01:08:07.700 --> 01:08:11.520
+three layers basically. A virtual machine layer. So where
+
+01:08:11.520 --> 01:08:14.440
+EC2 comes into picture, this light cell comes into picture
+
+01:08:14.440 --> 01:08:16.620
+where I will get a virtual machine. Light cell means a
+
+01:08:16.620 --> 01:08:19.200
+small, small machine. You will be able to get a cheap one,
+
+01:08:19.260 --> 01:08:20.220
+which is not very expensive. It's not going to cost you
+
+01:08:20.220 --> 01:08:26.180
+much. Then a serverless wise, Lambda and app runner, I will
+
+01:08:26.180 --> 01:08:29.920
+be able to get. Container services wise, ECS, EKS, Fargate
+
+01:08:29.920 --> 01:08:32.720
+and Beanstack. So this is something that I will be able to
+
+01:08:32.720 --> 01:08:37.860
+get. And all of these services, I can try to like use it for
+
+01:08:37.860 --> 01:08:42.780
+any application deployment in general. Right. So we can. So
+
+01:08:42.780 --> 01:08:45.260
+generally when we try to decide where we have to deploy.
+
+01:08:45.400 --> 01:08:48.820
+Right. So we always try to think about these like approach
+
+01:08:48.820 --> 01:08:52.420
+that. Okay. Are we going serverless? Are we going with the
+
+01:08:52.420 --> 01:08:55.380
+container services or are we going with a virtual machine?
+
+01:08:55.700 --> 01:08:58.440
+So if I say, okay, we'll go with a virtual machine, then I
+
+01:08:58.440 --> 01:09:00.840
+will be having two options. One is a EC2 option. One is a
+
+01:09:00.840 --> 01:09:04.100
+light cell option. If someone says that I will go with the
+
+01:09:04.100 --> 01:09:07.420
+container services, then ECS, EKS, Fargate and then like a
+
+01:09:07.420 --> 01:09:10.900
+Beanstack comes into picture. If someone says that, that we
+
+01:09:10.900 --> 01:09:13.320
+are going serverless in that case, Lambda and then app
+
+01:09:13.320 --> 01:09:17.180
+runner will comes into a picture. So this is how we take a
+
+01:09:17.180 --> 01:09:20.360
+decision. Right. That. Okay. So which in which mode we are
+
+01:09:20.360 --> 01:09:22.920
+going ahead with the deployment. For example, if I'll talk
+
+01:09:22.920 --> 01:09:26.520
+about Euron system, right. So we are using ECS over there.
+
+01:09:26.620 --> 01:09:30.120
+So we are using a containerized service over there, ECS and
+
+01:09:30.120 --> 01:09:32.520
+EKS like we are trying to use for a different, different
+
+01:09:32.520 --> 01:09:35.960
+application. So where we have deployed this entire Euron
+
+01:09:35.960 --> 01:09:38.840
+ecosystem and whatever we are building over there. Right.
+
+01:09:38.900 --> 01:09:44.680
+And we are managing this entire ECS. So hope this make sense
+
+01:09:44.680 --> 01:09:46.900
+to all of us. Yeah. Yeah.
+
+01:09:57.550 --> 01:09:59.790
+So this is an auto scale app, which all I would need to use
+
+01:09:59.790 --> 01:10:02.810
+for a horizontal scaling. You can try to use any of these
+
+01:10:02.810 --> 01:10:06.150
+because everyone provides a scaling basically simple.
+
+01:10:12.750 --> 01:10:16.990
+So hope this comparison is like all of you are good with the
+
+01:10:16.990 --> 01:10:19.530
+comparison. And then everything revolves around the
+
+01:10:19.530 --> 01:10:22.590
+services, by the way, even in AWS, there are a lot of like a
+
+01:10:22.590 --> 01:10:25.570
+small, big services, right. For maybe sending a notification
+
+01:10:25.570 --> 01:10:29.990
+for a storage, obviously S3 again, S3 is for a raw file
+
+01:10:29.990 --> 01:10:32.970
+storage. For example, we are storing your certificates.
+
+01:10:33.130 --> 01:10:35.770
+Right. So you can go, you can click on certificates and you
+
+01:10:35.770 --> 01:10:38.430
+generate a certificates. So we are storing our certificates.
+
+01:10:38.570 --> 01:10:41.370
+For example, we are storing these thumbnails. This
+
+01:10:41.370 --> 01:10:43.530
+thumbnails is coming from somewhere. So we are storing these
+
+01:10:43.530 --> 01:10:46.990
+thumbnails again inside the S3 bucket. So whenever we are
+
+01:10:46.990 --> 01:10:49.350
+going to upload some assignments, so if I'll show you my
+
+01:10:49.350 --> 01:10:52.490
+admin panel of this entire Euron, right. So you will be able
+
+01:10:52.490 --> 01:10:55.210
+to like from our side, or maybe you can go and you can try
+
+01:10:55.210 --> 01:10:57.950
+to click on any of this. You will be able to see a S3 link,
+
+01:10:58.070 --> 01:11:00.770
+basically click on assignment and you will be able to see a
+
+01:11:00.770 --> 01:11:04.410
+S3 link. So we are storing like a assignment on S3. So this
+
+01:11:04.410 --> 01:11:06.750
+is how like a storage works. And if I'll talk about a
+
+01:11:06.750 --> 01:11:09.570
+structured data, for example, login courses and all those
+
+01:11:09.570 --> 01:11:12.630
+things. So we are trying to use basically RDS services
+
+01:11:12.630 --> 01:11:15.950
+inside that, inside this RDS, we are using Postgres. Simple.
+
+01:11:16.110 --> 01:11:21.290
+So inside RDS, almost all the database is available. And
+
+01:11:21.290 --> 01:11:24.770
+from there we are using a SQL services and all of these
+
+01:11:24.770 --> 01:11:29.470
+things we use to decide when we design the entire system for
+
+01:11:29.470 --> 01:11:31.850
+any application, any kind of application, not just for like,
+
+01:11:31.890 --> 01:11:34.730
+you know, this or that application. Okay. We use to make a
+
+01:11:34.730 --> 01:11:39.470
+decision in a very, very first place itself, uh, that what
+
+01:11:39.470 --> 01:11:42.230
+should be our approach and around that. So we build the
+
+01:11:42.230 --> 01:11:45.430
+other services, for example, caching for caching, if we have
+
+01:11:45.430 --> 01:11:49.930
+to use a Redis, then for tunneling for like a, like a CDN.
+
+01:11:50.070 --> 01:11:50.870
+So yeah.
+
+01:11:57.600 --> 01:12:04.300
+Okay. So I believe this looks fine to all of you. So if this
+
+01:12:04.300 --> 01:12:08.600
+looks fine, then, uh, I don't have anything to discuss for
+
+01:12:08.600 --> 01:12:11.180
+today's class. Uh. So basically I'll rush this class, uh,
+
+01:12:12.020 --> 01:12:16.920
+uh, now and, uh, next week, right next week, I'm going to
+
+01:12:16.920 --> 01:12:20.040
+start with the project by the way. Right. And, uh, when I
+
+01:12:20.040 --> 01:12:23.080
+say pro I'll be starting with the project. So I will try to
+
+01:12:23.080 --> 01:12:27.240
+show you a complete CI CD pipeline by using some of the
+
+01:12:27.240 --> 01:12:29.620
+services which I have discussed today, not practically
+
+01:12:29.620 --> 01:12:32.220
+theoretically, basically. So I'll try to show you an end to
+
+01:12:32.220 --> 01:12:36.340
+end CI CD pipeline that how, uh, do we create a development
+
+01:12:36.340 --> 01:12:40.100
+environment? How do we create a test environment? And how do
+
+01:12:40.100 --> 01:12:43.200
+we create a production environment? So first of all, because
+
+01:12:43.200 --> 01:12:46.900
+by default, uh, in almost all the industry grade project,
+
+01:12:47.060 --> 01:12:49.460
+you will be able to find out three or four environment,
+
+01:12:49.640 --> 01:12:53.960
+right? So maybe like a dev environment and then, uh, test
+
+01:12:53.960 --> 01:12:56.580
+environment, UAT environment, right? Pre-prod environment.
+
+01:12:56.880 --> 01:13:00.260
+Someone used to say, so everyone used to say, uh, call it by
+
+01:13:00.260 --> 01:13:02.540
+their own name, but yeah, there will be a multiple
+
+01:13:02.540 --> 01:13:06.040
+environment we used to create and our code will flow through
+
+01:13:06.040 --> 01:13:08.540
+one environment to another environment. That is something
+
+01:13:08.540 --> 01:13:11.660
+which I'm going to discuss. Because every project, right?
+
+01:13:11.680 --> 01:13:14.840
+Generally we think that, that, uh, uh, you know, the way we
+
+01:13:14.840 --> 01:13:18.280
+are creating a project in a local is a reality, but that is
+
+01:13:18.280 --> 01:13:21.680
+not actually a reality, right? Uh, actual development
+
+01:13:21.680 --> 01:13:26.420
+happens in a very different manner. And the way we as a
+
+01:13:26.420 --> 01:13:29.080
+student, we, as a learner do a development is a very
+
+01:13:29.080 --> 01:13:32.900
+different, right? Uh, so, and I believe we all should be
+
+01:13:32.900 --> 01:13:36.120
+aware about it. So next class with respect to our project,
+
+01:13:36.160 --> 01:13:38.740
+so I'm going to start a project basically, and with respect
+
+01:13:38.740 --> 01:13:41.340
+to project. I'm going to show you the entire CICD funnel,
+
+01:13:41.480 --> 01:13:45.920
+uh, with a multi environment, uh, plus I'm going to even
+
+01:13:45.920 --> 01:13:49.420
+show you that how do we manage our credentials basically,
+
+01:13:49.560 --> 01:13:52.520
+right? Because let's suppose if I'm trying to use some of
+
+01:13:52.520 --> 01:13:56.420
+the services, not some lot of services, we end up using it.
+
+01:13:56.500 --> 01:13:59.100
+So how do we manage a credential? What is the service that
+
+01:13:59.100 --> 01:14:01.500
+we are going to use it, which will help me out in terms of
+
+01:14:01.500 --> 01:14:03.500
+maintaining and managing the credentials and many more
+
+01:14:03.500 --> 01:14:05.900
+things. So around the project, we'll, we'll start the
+
+01:14:05.900 --> 01:14:08.940
+discussion from next week. Making sense guys. Everyone.
+
+01:14:14.980 --> 01:14:29.160
+So transformable, I think my
+
+01:14:38.310 --> 01:14:41.190
+students should also put up, put some effort. So you should
+
+01:14:41.190 --> 01:14:44.570
+not expect everything from your mentor, by the way, and that
+
+01:14:44.570 --> 01:14:47.630
+is called a spoon feeding. And I think we are not that
+
+01:14:47.630 --> 01:14:48.150
+young.
+
+01:14:54.050 --> 01:14:59.650
+Yeah. Need to. I'll read it to a tenant. Can I ask? Yeah.
+
+01:14:59.690 --> 01:15:01.650
+You can ask. I don't have any issue.
+
+01:15:10.020 --> 01:15:12.500
+Okay. Yeah. Okay. So you can go ahead. Akash, you can go
+
+01:15:12.500 --> 01:15:17.400
+ahead with a question. Yeah. Hi sir. Good morning. Yeah.
+
+01:15:17.480 --> 01:15:21.620
+Good morning, sir. Uh, I just wanted to ask related to a
+
+01:15:21.620 --> 01:15:25.660
+tenant that, uh, if some, some organization having already a
+
+01:15:25.660 --> 01:15:32.520
+one tenant on the is your right. Hmm. Uh, we want to create
+
+01:15:32.520 --> 01:15:36.940
+a one, uh, QA for the QA tenant. And for the, uh,
+
+01:15:37.080 --> 01:15:42.020
+development tenant. Okay. But, uh, the root is our, the
+
+01:15:42.020 --> 01:15:47.500
+existing tenant. So how is it possible? How we can, uh,
+
+01:15:47.640 --> 01:15:52.560
+existing tenant. I'm not able to get it like create. Yeah. I
+
+01:15:52.560 --> 01:15:55.120
+mean, uh, so suppose you're on is, uh, one, uh, one of the
+
+01:15:55.120 --> 01:15:58.240
+migration and you won't have, uh, uh, purchase the tenant.
+
+01:15:58.580 --> 01:16:05.620
+So like, uh, you're on.com. Okay. Okay. Okay. And now, uh,
+
+01:16:05.780 --> 01:16:10.620
+it's, uh, it's a route to a tenant or anything on this one.
+
+01:16:10.700 --> 01:16:15.640
+Now I want to create a one or not a subside level. I want to
+
+01:16:15.640 --> 01:16:19.760
+create a one extra tenant, uh, which is, uh, which is for
+
+01:16:19.760 --> 01:16:23.680
+the QA and for the development. Hmm. Hmm. How we can
+
+01:16:23.680 --> 01:16:26.760
+purchase the, no, no, you don't have to purchase actually
+
+01:16:26.760 --> 01:16:30.600
+see any, any domain provider, basically go daddy hosting or,
+
+01:16:30.680 --> 01:16:33.300
+or even like a AWS itself. So they are going to give you a
+
+01:16:33.300 --> 01:16:36.680
+route. Right. So for example, you're on dot one on top of
+
+01:16:36.680 --> 01:16:39.200
+that. So let's suppose if I have, I have, I have two options
+
+01:16:39.200 --> 01:16:42.680
+basically. So I can try to, you know, uh, write like X, Y, G
+
+01:16:42.680 --> 01:16:46.840
+dot you're on dot one. So basically my actual URL is or
+
+01:16:46.840 --> 01:16:50.700
+actual like a domain name is you're on dot one. And then I
+
+01:16:50.700 --> 01:16:54.260
+have basically attached something before, or maybe I can try
+
+01:16:54.260 --> 01:16:56.700
+to follow the folder structure basically. So you're on dot
+
+01:16:56.700 --> 01:17:01.020
+one slash X, Y, G. So that is the option that I have. And,
+
+01:17:01.140 --> 01:17:03.720
+uh, it would both the option I can go ahead. So I can go
+
+01:17:03.720 --> 01:17:06.520
+ahead with a subdomain option that is called as like a X, Y,
+
+01:17:06.540 --> 01:17:09.300
+G dot you're on dot one, or I can go ahead with a folder
+
+01:17:09.300 --> 01:17:13.940
+hierarchy option on slash basically on route. No, sir. But,
+
+01:17:13.940 --> 01:17:18.540
+uh, you are, uh, trying to, uh, explain related to a domain
+
+01:17:18.540 --> 01:17:22.760
+name, but the here and to, uh, know the structure of the, is
+
+01:17:22.760 --> 01:17:28.280
+your tenant actually, it's not a related to a domain. Azure
+
+01:17:28.280 --> 01:17:32.900
+tenant. Is there any service in Azure? No. No tenant as your
+
+01:17:32.900 --> 01:17:38.620
+tenant means, uh, we have, uh, what is, what is that? Like,
+
+01:17:38.700 --> 01:17:42.700
+I never heard about this. Any services by the way, it's,
+
+01:17:42.700 --> 01:17:49.080
+it's, it's not a service. I mean, uh, some organization want
+
+01:17:49.080 --> 01:17:51.860
+to get the license from the Azure. So that, that is, that is
+
+01:17:51.860 --> 01:17:55.780
+called a tenant as well. Tenant. Okay. Basically you are
+
+01:17:55.780 --> 01:17:59.140
+talking about intra ID, right? Yeah. Yeah. Yeah. Yeah. Yeah.
+
+01:17:59.140 --> 01:18:02.360
+Um, intra ID you're talking about maybe
+
+01:18:04.280 --> 01:18:08.680
+in Friday, but I know the tenant and, uh, uh, within that
+
+01:18:08.680 --> 01:18:12.720
+tenant I can, I can do anything, anything, whatever, uh, we
+
+01:18:12.720 --> 01:18:17.600
+want to, uh, uh, use the services or the office 365 or the,
+
+01:18:17.600 --> 01:18:21.460
+uh, everything comes up for the specific organization.
+
+01:18:21.780 --> 01:18:25.100
+Everything is coming. I don't know. No idea. I am. Okay.
+
+01:18:25.180 --> 01:18:28.620
+Maybe. I'm not aware about this word. yeah i'm like i'm
+
+01:18:28.620 --> 01:18:31.260
+assuming that it's like related to something like a user
+
+01:18:31.260 --> 01:18:35.240
+credential or something maybe no no no it's not i am but
+
+01:18:35.240 --> 01:18:40.320
+yeah i don't know maybe then yeah okay okay no issues yeah
+
+01:18:42.420 --> 01:18:46.780
+okay so any other question guys yeah so if we don't have any
+
+01:18:46.780 --> 01:18:49.780
+questions so we can try to close this class for today i
+
+01:18:49.780 --> 01:18:54.060
+think agenda for next week is uh clear uh to all of us so
+
+01:18:54.060 --> 01:18:58.300
+next week we are going to like you know uh discuss like i
+
+01:18:58.300 --> 01:19:04.130
+said uh a project right so by creating a cicd pipeline end
+
+01:19:04.130 --> 01:19:07.050
+-to-end okay dhyaneshwar is having question asid is having
+
+01:19:07.050 --> 01:19:09.050
+question anyone who's having question guys please raise your
+
+01:19:09.050 --> 01:19:16.430
+hand then we'll close hello sir yeah go ahead sir production
+
+01:19:16.430 --> 01:19:24.110
+based company thank you
+
+01:19:24.110 --> 01:19:32.950
+sir okay okay thank you sir okay okay okay uh six months
+
+01:19:32.950 --> 01:19:36.250
+okay okay
+
+01:19:41.170 --> 01:19:54.370
+no matter what happens yeah yeah yeah but uh but uh but uh
+
+01:19:54.370 --> 01:19:58.530
+but uh but uh When I was selected for this interview, in the
+
+01:19:58.530 --> 01:20:02.830
+last round, he only asked 30-20% of what you had read.
+
+01:20:06.870 --> 01:20:10.870
+Because I got the job early, I got the job in a good way,
+
+01:20:10.910 --> 01:20:13.950
+the structure is looking good, the hike is also looking
+
+01:20:13.950 --> 01:20:19.210
+good. Till now, no one knows how to create an agent vision
+
+01:20:19.210 --> 01:20:28.630
+like this. Very good, very good. Send me your success story
+
+01:20:28.630 --> 01:20:32.770
+after hiding your name and all those personal information.
+
+01:20:33.430 --> 01:20:38.990
+Yes, I will send it, sir. Okay, congratulations by the way.
+
+01:20:39.590 --> 01:20:43.390
+Thank you, sir. And now, for example, if I have to upskill,
+
+01:20:43.610 --> 01:20:50.870
+what skill should I learn next? Skill is nothing. Learning
+
+01:20:50.870 --> 01:20:53.790
+is not something to learn. Learning is the most fake thing
+
+01:20:53.790 --> 01:20:57.330
+and learning is the most outdated thing. You have to do it,
+
+01:20:57.570 --> 01:21:02.710
+build it, build a project, collaborate with people, make
+
+01:21:02.710 --> 01:21:06.150
+something new. That is the actual learning. People think
+
+01:21:06.150 --> 01:21:13.730
+that learning means basically studying, joining classes. In
+
+01:21:13.730 --> 01:21:17.650
+reality, it is not. Studying is only until you are a
+
+01:21:17.650 --> 01:21:21.710
+beginner. Okay, you have learned one thing, you have come to
+
+01:21:21.710 --> 01:21:25.190
+know that okay, this happens. Your actual learning starts
+
+01:21:25.190 --> 01:21:28.210
+when you start doing it. Because you have to give an
+
+01:21:28.210 --> 01:21:30.470
+interview, right? You have to get a job, you have to
+
+01:21:30.470 --> 01:21:34.610
+negotiate salary. You don't just want a degree, you just
+
+01:21:34.610 --> 01:21:38.750
+have to take a degree, right? So there is no work, your
+
+01:21:38.750 --> 01:21:43.010
+learning etc. So you have learned, your learning is over,
+
+01:21:43.150 --> 01:21:47.710
+okay? So it is simple, start working on that. Start using
+
+01:21:47.710 --> 01:21:51.150
+it. And that will be the actual learning that will always be
+
+01:21:51.150 --> 01:21:53.710
+with you. And that is the learning which will help you out
+
+01:21:53.710 --> 01:21:57.610
+even in your future. Right? In your career growth. That will
+
+01:21:57.610 --> 01:22:01.030
+help you. So there is no need to learn or study more. There
+
+01:22:01.030 --> 01:22:07.310
+is more need to do. Okay. Okay? Thank you, sir. Yeah.
+
+01:22:10.240 --> 01:22:14.140
+So yeah, Dinesh sir. Okay, next Aakash, you have a question.
+
+01:22:19.010 --> 01:22:20.870
+Dinesh, you have a question. Asif, you have a question.
+
+01:22:21.890 --> 01:22:25.970
+Hello, sir. I am Aakash. Yeah, Aakash. You are audible. So
+
+01:22:25.970 --> 01:22:29.730
+in AWS, you have covered a lot of services. So their
+
+01:22:29.730 --> 01:22:31.890
+details. No, we have not covered anything. We have just
+
+01:22:31.890 --> 01:22:34.010
+given an overview. Yeah, overview. So what is available in
+
+01:22:34.010 --> 01:22:38.070
+their details? So that for practice. No, no. There is no
+
+01:22:38.070 --> 01:22:41.130
+practice. We will use some of the services. Yesterday, we
+
+01:22:41.130 --> 01:22:44.530
+used EC2, right? Okay. So in the future, we will use Lambda
+
+01:22:44.530 --> 01:22:48.050
+somewhere. We will use Beanstack somewhere. That's it. Our
+
+01:22:48.050 --> 01:22:54.970
+work is done. Okay. Okay. Thank you. So yeah, so I just gave
+
+01:22:54.970 --> 01:22:57.630
+an introduction but yeah. So we will use it. We are going to
+
+01:22:57.630 --> 01:22:59.850
+use it very soon, very soon. As soon as we use it, our work
+
+01:22:59.850 --> 01:23:05.070
+is done. Right. Okay. Yes. Yeah. Ganesh, Haseed, PK. Anyone,
+
+01:23:05.230 --> 01:23:08.610
+go ahead with the question. Yes, sir. So, I have a question.
+
+01:23:08.830 --> 01:23:12.730
+It is not a question. As the selection is taking place and
+
+01:23:12.730 --> 01:23:16.370
+transformation is taking place, then, this is also a little
+
+01:23:16.370 --> 01:23:20.750
+different for the rest of the people. So, there is a medium,
+
+01:23:20.750 --> 01:23:20.830
+yes. Which one is the medium.
+
+01:23:32.350 --> 01:23:34.730
+I can't force anyone right
+
+01:23:38.970 --> 01:23:42.610
+if that person is willing to give an interview because so
+
+01:23:42.610 --> 01:23:47.630
+many
+
+01:23:47.630 --> 01:23:50.170
+people not just one or two success story wise we have tens
+
+01:23:50.170 --> 01:23:53.610
+of thousands but out of those tens of thousands maybe 100
+
+01:23:53.610 --> 01:23:56.370
+people are like that who come and say okay we will give an
+
+01:23:56.370 --> 01:24:01.210
+interview I will go public somewhere shyness is one of the
+
+01:24:01.210 --> 01:24:03.790
+factors somewhere people think okay family, neighbors people
+
+01:24:03.790 --> 01:24:08.570
+around will see so you know talk about me I think you can
+
+01:24:08.570 --> 01:24:12.950
+you get it right what I am trying to say so success story
+
+01:24:12.950 --> 01:24:16.410
+not just one or two tens of thousands okay that is what we
+
+01:24:16.410 --> 01:24:19.790
+create daily but yes in front of us very few people
+
+01:24:20.430 --> 01:24:24.570
+especially if I talk about public right so again in public
+
+01:24:24.570 --> 01:24:29.150
+and I respect it everyone has their own opinion so I can't
+
+01:24:29.150 --> 01:24:34.130
+force anyone anyhow he is a part of your group you can
+
+01:24:34.130 --> 01:24:37.510
+search him you can personally connect him and if he is
+
+01:24:37.510 --> 01:24:41.070
+willing to give you answer or maybe like help you out in
+
+01:24:41.070 --> 01:24:43.510
+something I don't have any issue that is the reason we have
+
+01:24:43.510 --> 01:24:47.390
+created a group right we all will be connected for a very
+
+01:24:47.390 --> 01:24:51.690
+very long time but yeah I can't force anyone not even you so
+
+01:24:51.690 --> 01:25:01.690
+that's my take on that yeah okay yes yeah PK sir I have got
+
+01:25:01.690 --> 01:25:04.410
+the most interview questions on SageMaker and I am getting
+
+01:25:04.410 --> 01:25:08.730
+them on Databricks is there any other platform where you do
+
+01:25:08.730 --> 01:25:13.530
+ML and Gen AI things no there are a lot of platforms but
+
+01:25:13.530 --> 01:25:17.390
+SageMaker is one of the best you get full notebook access
+
+01:25:17.390 --> 01:25:20.710
+there nowadays like I don't know when SageMaker and
+
+01:25:20.710 --> 01:25:24.310
+Databricks was competing so yes both was having almost equal
+
+01:25:24.310 --> 01:25:28.850
+feature but now if I'll talk about a market size and a
+
+01:25:28.850 --> 01:25:34.210
+capacity wise Databricks is way more advanced right and even
+
+01:25:34.210 --> 01:25:37.370
+in future feature wise and even in terms of a market
+
+01:25:37.370 --> 01:25:41.430
+capitalization market cap so Databricks I would say you
+
+01:25:41.430 --> 01:25:44.410
+should focus on if you are focusing there by default
+
+01:25:44.410 --> 01:25:47.050
+SageMaker comes to you you can understand sir is there any
+
+01:25:47.050 --> 01:25:49.550
+session where Databricks is available yes there are many
+
+01:25:49.550 --> 01:25:50.190
+databases of Databricks yes there are many databases of
+
+01:25:50.190 --> 01:25:54.290
+Databricks why not my database has a big database I think I
+
+01:25:54.290 --> 01:25:58.530
+have already uploaded 19 lecture over there you can go and
+
+01:25:58.530 --> 01:26:02.650
+search it right now plus this week only there is a mentor
+
+01:26:02.650 --> 01:26:06.950
+called Vishal so we have launched a live class of Vishal let
+
+01:26:06.950 --> 01:26:17.730
+me show you that part and Vishal's let me show you so yes
+
+01:26:20.260 --> 01:26:25.480
+so basically this live classes yes one more thing guys so
+
+01:26:25.480 --> 01:26:27.820
+yesterday we have published a business analyst course as
+
+01:26:27.820 --> 01:26:30.120
+well so those who will be interested they can join from 4th
+
+01:26:30.120 --> 01:26:33.320
+January mentor is going to be Sachin by the way and yes so
+
+01:26:33.320 --> 01:26:35.280
+Databricks wise so this live course of Vishal has been
+
+01:26:35.280 --> 01:26:37.960
+launched which is Databricks wise and then you will go and
+
+01:26:37.960 --> 01:26:42.040
+search here by doing Databricks by doing Databricks so my
+
+01:26:42.040 --> 01:26:45.200
+lectures here have not been completed yet but yes 19
+
+01:26:45.200 --> 01:26:48.660
+lectures are available here in this one big data with
+
+01:26:48.660 --> 01:26:52.120
+Databricks with notebook and everything apart from that this
+
+01:26:52.120 --> 01:26:56.760
+week basically a mentor who is going to take your class so
+
+01:26:57.420 --> 01:27:01.020
+Vishal has already done a recording in Hindi and English as
+
+01:27:01.020 --> 01:27:05.080
+well so I think Vishal has done 28 lectures 28 in Hindi and
+
+01:27:05.080 --> 01:27:08.160
+28 in English we have not yet uploaded Hindi and English but
+
+01:27:08.160 --> 01:27:11.560
+yes lecture record as you can see it is already recorded so
+
+01:27:11.560 --> 01:27:16.380
+from Vishal itself from Databricks basically 28 means 10
+
+01:27:16.380 --> 01:27:20.900
+more lectures will go so you will have courses in Hindi and
+
+01:27:20.900 --> 01:27:23.160
+English as well so for Databricks I think we have enough
+
+01:27:23.160 --> 01:27:26.180
+means in Databricks I am also there in Databricks Vishal is
+
+01:27:26.180 --> 01:27:27.720
+also there in Hindi and English this lecture has been
+
+01:27:27.720 --> 01:27:31.060
+recorded coming Databricks we are also bringing in live mode
+
+01:27:32.260 --> 01:27:35.260
+Azure Databricks that is also already published available
+
+01:27:35.260 --> 01:27:40.020
+here so you can you can learn as much as you can so sir
+
+01:27:40.500 --> 01:27:44.200
+finally most of all now SageMaker is being used Databricks
+
+01:27:44.200 --> 01:27:45.860
+is being used and better Databricks is also being used
+
+01:27:45.860 --> 01:27:49.040
+actually if you know Databricks then I think you will not
+
+01:27:49.040 --> 01:27:52.640
+need SageMaker because SageMaker will feel like very very
+
+01:27:52.640 --> 01:27:56.940
+small for you believe me if you know Databricks basically so
+
+01:27:56.940 --> 01:28:00.460
+if you are asking about my opinion I will simply suggest you
+
+01:28:00.460 --> 01:28:04.160
+go with the Databricks and then sit for an hour and then
+
+01:28:04.160 --> 01:28:09.120
+explore SageMaker that's it your work will be done ok ok
+
+01:28:09.120 --> 01:28:11.380
+thank you sir Databricks is actually yes Databricks is
+
+01:28:11.380 --> 01:28:13.840
+actually very good I mean like platform wise and services
+
+01:28:13.840 --> 01:28:17.260
+wise it is very very good because they have LLMs WALA access
+
+01:28:17.260 --> 01:28:20.800
+they have AIML flow as well and majorly Databricks was
+
+01:28:20.800 --> 01:28:23.340
+actually designed for ETL extract transform and load kind of
+
+01:28:23.340 --> 01:28:28.430
+operation where it is already very very good thank you sir
+
+01:28:28.430 --> 01:28:32.250
+Akash Singh Databricks and PySpark see PySpark is a library
+
+01:28:32.250 --> 01:28:36.410
+Databricks is a platform so by default Databricks give you a
+
+01:28:36.410 --> 01:28:39.370
+installation of a Spark PySpark is nothing but Pythonic
+
+01:28:39.370 --> 01:28:42.470
+Spark so you can't do a comparison basically between
+
+01:28:42.470 --> 01:28:45.710
+Databricks and PySpark Databricks platform PySpark is a open
+
+01:28:45.710 --> 01:28:48.470
+source library you can download it local and then you can do
+
+01:28:48.470 --> 01:28:52.590
+whatever you want yeah can you upload Databricks yeah my
+
+01:28:52.590 --> 01:28:56.270
+lecture of Databricks is also already uploaded and Vishal's
+
+01:28:56.270 --> 01:29:00.030
+lecture so he has like I have shown you so he has basically
+
+01:29:00.030 --> 01:29:03.350
+done 28 lecture in Hindi 28 lecture in English as you can
+
+01:29:03.350 --> 01:29:07.050
+see alright so this week I have just asked Vishal to you
+
+01:29:07.050 --> 01:29:10.330
+know put more 10 10 lectures so that it will be close to
+
+01:29:10.330 --> 01:29:14.970
+completion and then I will publish this like Hindi English
+
+01:29:14.970 --> 01:29:19.270
+both so we will be having Databricks in Hindi Databricks in
+
+01:29:19.270 --> 01:29:21.550
+English Databricks from my side Databricks in live
+
+01:29:21.550 --> 01:29:27.090
+Databricks like that Sir only Sir only one request Sir only
+
+01:29:27.090 --> 01:29:30.150
+one request if you if you take any system design if you take
+
+01:29:30.150 --> 01:29:33.890
+any small session then also it is very helpful I have
+
+01:29:33.890 --> 01:29:38.070
+attended your sessions which you have given in Euron but I
+
+01:29:38.070 --> 01:29:41.950
+am getting weak there I am failing there in interviews no if
+
+01:29:41.950 --> 01:29:44.910
+you go to system I don't have a course we haven't launched I
+
+01:29:44.910 --> 01:29:50.830
+am about to launch basically you had a URI right that was
+
+01:29:50.830 --> 01:29:56.770
+interview I think you must have seen that yes in that in
+
+01:29:56.770 --> 01:30:00.110
+that we had told design and architecture so I am planning
+
+01:30:00.110 --> 01:30:03.690
+for that that kind of a course like where machine learning
+
+01:30:03.690 --> 01:30:07.870
+architecture AI system design and then like the agentic
+
+01:30:07.870 --> 01:30:12.390
+system design just talk about it design wise so I think like
+
+01:30:12.390 --> 01:30:16.350
+this this week itself when people have initiated a
+
+01:30:16.350 --> 01:30:19.290
+discussion inside a group so I was talking to my team so
+
+01:30:19.290 --> 01:30:22.510
+they told me that January month we can do it January 3rd or
+
+01:30:22.510 --> 01:30:25.850
+4th week we can initiate because that slot is available
+
+01:30:25.850 --> 01:30:29.950
+January 1st week your this is coming business analytics
+
+01:30:29.950 --> 01:30:32.390
+course is coming we have published it last night so from 4th
+
+01:30:32.390 --> 01:30:36.010
+January this is starting in December slot already we have
+
+01:30:36.510 --> 01:30:40.210
+big data right which is going to start from 3rd week so
+
+01:30:40.210 --> 01:30:43.530
+January 4th week slot is available for us where we are going
+
+01:30:43.530 --> 01:30:47.710
+to launch my class we will launch it in morning slot because
+
+01:30:47.710 --> 01:30:50.810
+by that time this batch will wrap up right this current
+
+01:30:50.810 --> 01:30:55.250
+going batch sir in many things the problem is that many
+
+01:30:55.250 --> 01:30:58.610
+technologies are getting obsolete like earlier we were using
+
+01:30:58.610 --> 01:31:02.010
+ML models now we are not using that now we are using help
+
+01:31:02.010 --> 01:31:06.590
+from JNI so sir that segregation I don't understand what to
+
+01:31:06.590 --> 01:31:11.330
+prepare should everyone study in ML no just work problem
+
+01:31:11.330 --> 01:31:15.530
+solved I keep on saying to our people that see there is no
+
+01:31:15.530 --> 01:31:18.850
+education in this if you know the basics then you keep on
+
+01:31:18.850 --> 01:31:21.050
+building things then only the relevancy will be there
+
+01:31:21.050 --> 01:31:24.590
+otherwise the relevancy will not be there ok that's pretty
+
+01:31:24.590 --> 01:31:28.510
+much true which some people are able to understand some
+
+01:31:28.510 --> 01:31:32.470
+people not so I am like sir in many of your sessions you
+
+01:31:32.470 --> 01:31:39.050
+said earlier we used this model now we are not using sir as
+
+01:31:39.050 --> 01:31:42.490
+a student I don't know which one we use and which one we
+
+01:31:42.490 --> 01:31:46.890
+don't use so that depends on the work look interview will be
+
+01:31:46.890 --> 01:31:49.870
+on your resume right you will write your experience the
+
+01:31:49.870 --> 01:31:54.170
+person will ask you the same question right so just to
+
+01:31:54.170 --> 01:31:59.650
+justify that work you have to work on it I think that is the
+
+01:31:59.650 --> 01:32:03.050
+only way to keep yourself relevant and justify yourself in
+
+01:32:03.050 --> 01:32:06.370
+an interview ok if you keep on studying there are many
+
+01:32:06.370 --> 01:32:09.390
+things to study and again some time it will create a lot of
+
+01:32:09.390 --> 01:32:12.770
+confusion for you and lot of like you know it brings a chaos
+
+01:32:12.770 --> 01:32:16.130
+what should we do what should we do does it happen or not
+
+01:32:16.130 --> 01:32:21.010
+like I talked about AWS bedrock today right and after
+
+01:32:21.010 --> 01:32:24.190
+looking at AWS bedrock now we all have a confidence that we
+
+01:32:24.190 --> 01:32:30.630
+should not use it that is true exactly ok because we all
+
+01:32:30.630 --> 01:32:34.390
+know right we all know that we whatever services that they
+
+01:32:34.390 --> 01:32:39.330
+are giving and without even using a bedrock kind of a
+
+01:32:39.330 --> 01:32:43.770
+services so why so I mean like that was necessary we
+
+01:32:43.770 --> 01:32:47.090
+discussed now people understood now people can go out and
+
+01:32:47.090 --> 01:32:51.410
+they can like say blindly that they don't want to use it so
+
+01:32:51.410 --> 01:32:54.170
+it happens experience comes so I will simply say keep on
+
+01:32:54.170 --> 01:32:58.350
+building things one last statement sir and I will conclude
+
+01:32:58.350 --> 01:33:03.810
+in interviews someone told me that people are used to the ML
+
+01:33:03.810 --> 01:33:06.650
+algorithms because they are very fast compared to when we
+
+01:33:06.650 --> 01:33:09.710
+are doing it with JNI it takes time it hallucinates it does
+
+01:33:09.710 --> 01:33:14.270
+not give us the appropriate results is there anything we can
+
+01:33:14.270 --> 01:33:18.570
+do to but see the significance of ML model is different for
+
+01:33:18.570 --> 01:33:21.450
+example so if I am trying to use maybe a classification
+
+01:33:21.450 --> 01:33:24.330
+model right or maybe if I am trying to use a regression
+
+01:33:24.330 --> 01:33:29.170
+model so why do you expect a similar kind of a result from
+
+01:33:29.170 --> 01:33:32.410
+LLM that LLM should do a regression for you LLM should do a
+
+01:33:32.410 --> 01:33:35.770
+classification for you or LLM should solve a time series
+
+01:33:35.770 --> 01:33:38.970
+problem for you why I don't understand the relevance because
+
+01:33:38.970 --> 01:33:43.290
+LLM has been designed for a different purpose and those
+
+01:33:43.290 --> 01:33:46.330
+machine learning models serve a different purpose hmm
+
+01:33:48.530 --> 01:33:52.530
+ok you are solving the problem of right let's suppose to
+
+01:33:52.530 --> 01:33:55.750
+solve a regression problem so I have used basically XGBoost
+
+01:33:55.750 --> 01:33:59.030
+regressor or maybe I have used basically like a decision
+
+01:33:59.030 --> 01:34:02.230
+tree regressor random forest regressor ok and you have built
+
+01:34:02.230 --> 01:34:05.590
+a model based on your data now what will you do with LLM
+
+01:34:05.590 --> 01:34:10.870
+will you ask LLM to do a regression and show me I mean like
+
+01:34:10.870 --> 01:34:14.650
+that is not even a correct approach right yes ok that's the
+
+01:34:14.650 --> 01:34:20.030
+point I mean the comparison is wrong why do we compare in
+
+01:34:20.030 --> 01:34:24.450
+that ok ML model was fast and then LLM is slow
+
+01:34:27.710 --> 01:34:29.870
+usually the business folks who does not understand
+
+01:34:29.870 --> 01:34:32.770
+technically what is happening they are used to seeing the ML
+
+01:34:32.770 --> 01:34:36.030
+models not the JNI models no then after giving such
+
+01:34:36.030 --> 01:34:39.150
+arguments the answer should also come like this give them
+
+01:34:39.150 --> 01:34:44.410
+such answer they will be quiet ok sir thank you I mean like
+
+01:34:44.410 --> 01:34:51.430
+you are doing wrong comparison right ok so fine yeah I think
+
+01:34:52.050 --> 01:34:58.330
+PK is done Yudhi yeah Yudhi hello hello sir sir actually AI
+
+01:34:58.330 --> 01:35:02.270
+wise I am also working in AI and whatever you have studied I
+
+01:35:02.270 --> 01:35:07.510
+am using it as well so there ok sir many things are now
+
+01:35:07.510 --> 01:35:13.770
+understood but struggle is done at those places sir because
+
+01:35:14.510 --> 01:35:18.350
+company expects more advanced architect level like if I give
+
+01:35:18.350 --> 01:35:26.010
+an example then Azure which is AD intra AD user user login
+
+01:35:26.570 --> 01:35:32.230
+then if I say which user has access to which confluence hmm
+
+01:35:32.230 --> 01:35:38.310
+hmm so on that user's basis everything is decided hmm so I
+
+01:35:38.310 --> 01:35:45.490
+think this this part where how user's login is done hmm and
+
+01:35:45.490 --> 01:35:52.450
+hmm what is this load balancing hmm or rate limiting hmm
+
+01:35:52.450 --> 01:35:58.430
+concept wise I know but its implementation hmm practically
+
+01:35:58.430 --> 01:36:01.210
+if you say see here if there are 100 people then you also
+
+01:36:01.210 --> 01:36:04.910
+know that 100 people will have 100 demands right practically
+
+01:36:04.910 --> 01:36:10.050
+it's not feasible to you know fulfill all of those demands
+
+01:36:10.570 --> 01:36:14.970
+so if you know then like experiment if you are stuck
+
+01:36:14.970 --> 01:36:17.330
+somewhere then you tell that you are stuck here we are not
+
+01:36:17.330 --> 01:36:19.210
+able to do give me a solution
+
+01:36:30.890 --> 01:36:37.490
+hmm hmm hmm hmm hmm hmm hmm hmm hmm hmm hmm hmm hmm hmm hmm
+
+01:36:37.490 --> 01:36:46.910
+hmm hmm hmm hmm hmm hmm hmm Yes, sir. I see this option too.
+
+01:36:47.190 --> 01:36:50.110
+And secondly, sir, in one place, those who struggle, like we
+
+01:36:50.110 --> 01:36:54.370
+make the AI model locally. Now that you have taught
+
+01:36:54.370 --> 01:36:59.930
+deployment, I am also practicing that. But in another place,
+
+01:36:59.950 --> 01:37:02.710
+where does the struggling happen, sir? Like different
+
+01:37:02.710 --> 01:37:07.110
+environments are made, dev, pre-prod, prod. We told you
+
+01:37:07.110 --> 01:37:08.550
+that, right? We are getting it done in the next class, by
+
+01:37:08.550 --> 01:37:10.730
+the way. Okay, you are getting it done. We spoke about it
+
+01:37:10.730 --> 01:37:15.110
+today, right? Yes, sir. Because the second struggle is the
+
+01:37:15.110 --> 01:37:19.830
+CICD part after this. Yes, we are getting CICD done. In that
+
+01:37:19.830 --> 01:37:22.250
+too, there are three environments, dev, UAT, and prod
+
+01:37:22.250 --> 01:37:25.050
+environment. Then how will we do credential management in
+
+01:37:25.050 --> 01:37:27.450
+that? How will your code check-in and check-out be done? How
+
+01:37:27.450 --> 01:37:30.350
+will the flow be done, basically? How will the rollback be
+
+01:37:30.350 --> 01:37:33.390
+done in it? Or what is the concept of blue-green deployment?
+
+01:37:35.490 --> 01:37:38.410
+So all these things will start from next week. I think it
+
+01:37:38.410 --> 01:37:43.350
+will also end in two weeks. Yes, sir. Then I think this part
+
+01:37:43.350 --> 01:37:48.650
+will be completed. It will remain in the pre and post, sir.
+
+01:37:48.730 --> 01:37:51.330
+But thank you for your patience. I know that many people
+
+01:37:51.330 --> 01:37:54.890
+don't know about CICD and multi-environment. I am aware
+
+01:37:54.890 --> 01:37:58.090
+about it. Everyone listens to it, but very few people have
+
+01:37:58.090 --> 01:38:00.630
+done it. And I think people should do it at least once in
+
+01:38:00.630 --> 01:38:03.630
+their life. So keeping that in mind, that I am going to
+
+01:38:03.630 --> 01:38:06.150
+discuss. That I am going to start from next week. Thanks,
+
+01:38:06.190 --> 01:38:11.050
+sir, because this is very important. I know. I know. Yes. I
+
+01:38:11.050 --> 01:38:14.850
+mean, this too, sir. We work well in AI. I mean, I will tell
+
+01:38:14.850 --> 01:38:19.450
+you a real world challenge in the company. We have done
+
+01:38:19.450 --> 01:38:23.410
+modeling and everything there. Its results are good.
+
+01:38:23.550 --> 01:38:27.410
+Recently, as I am telling you, the approach you had told me,
+
+01:38:27.410 --> 01:38:32.090
+after that, around 60% accuracy, now it has reached 90%. I
+
+01:38:32.090 --> 01:38:37.830
+have done all that work. Great. But the thing is that the
+
+01:38:37.830 --> 01:38:40.630
+pipeline with CICD has not been made yet. So it is going to
+
+01:38:40.630 --> 01:38:43.570
+be a long process. or get merge etc which someone has taken
+
+01:38:43.570 --> 01:38:49.110
+with them who is a UI guy. So, after going ahead and doing
+
+01:38:49.110 --> 01:38:53.650
+all the dependencies, the client also applauded the approach
+
+01:38:53.650 --> 01:38:58.150
+and appreciated my work. But for its final touch, it seems
+
+01:38:58.150 --> 01:39:02.030
+like in the call, they say, this is very good. Now, you do
+
+01:39:02.030 --> 01:39:06.130
+this. So, I think this final touch is a little bit the CI,
+
+01:39:06.250 --> 01:39:09.630
+CD and deployment part. We will do it in the next class. We
+
+01:39:09.630 --> 01:39:12.070
+will do it very well. We will do it in such a way that you
+
+01:39:12.070 --> 01:39:14.570
+will be satisfied for the rest of your life. That is my
+
+01:39:14.570 --> 01:39:17.790
+assurity. Right. Because I know that is a real problem. And
+
+01:39:17.790 --> 01:39:20.090
+this is everyone's problem. Right. This is everyone's
+
+01:39:20.090 --> 01:39:23.590
+problem. So, keeping that in mind, this CI, CD pipeline,
+
+01:39:24.170 --> 01:39:26.870
+multiple environment creation, because if you are making a
+
+01:39:26.870 --> 01:39:31.490
+web project, forget about this AI project, you are building
+
+01:39:31.490 --> 01:39:33.570
+an app, you are making a development project, take any
+
+01:39:33.570 --> 01:39:37.390
+project, any IT infrastructure, any IT project, where code
+
+01:39:37.390 --> 01:39:40.530
+is involved. Right. So, everywhere, this, this happens by
+
+01:39:40.530 --> 01:39:43.030
+default. AI ML is also code, right? At the end of the day,
+
+01:39:43.030 --> 01:39:45.130
+what is the AI ML? It is code only. There are models that
+
+01:39:45.130 --> 01:39:48.070
+are being hosted somewhere. I mean, like nothing different.
+
+01:39:48.410 --> 01:39:54.030
+So, and here, 99% of the people don't know, especially the
+
+01:39:54.030 --> 01:39:58.530
+new people, the people who are learning. Yes. And if that
+
+01:39:58.530 --> 01:40:01.190
+comes, then believe me, you will be having a godly kind of
+
+01:40:01.190 --> 01:40:02.490
+feeling. Like, now you can manage the entire IT
+
+01:40:02.490 --> 01:40:05.830
+infrastructure. Now you can build any software. Yes, sir.
+
+01:40:05.830 --> 01:40:08.350
+You will get that kind of feeling. So, that is why this one
+
+01:40:08.350 --> 01:40:12.050
+is very important. And I am going to start that. You have
+
+01:40:12.050 --> 01:40:13.710
+already mentioned it in the syllabus. If you look at the
+
+01:40:13.710 --> 01:40:16.930
+syllabus, the third, I think, third last section, the second
+
+01:40:16.930 --> 01:40:20.170
+last section, I have purposely mentioned the whole CICD, all
+
+01:40:20.170 --> 01:40:22.510
+that has been mentioned already. No, sir. It will be very
+
+01:40:22.510 --> 01:40:26.010
+good. Because then you will get more value. As I just told
+
+01:40:26.010 --> 01:40:28.490
+you, in the end, it seems like everyone is dependent on a
+
+01:40:28.490 --> 01:40:31.890
+third person. After that, it will be mine. Yes, so it will
+
+01:40:31.890 --> 01:40:34.750
+not happen It will not happen after that phase. Okay? Yes,
+
+01:40:34.790 --> 01:40:37.890
+sir. Thank you. Thanks a lot. Just wait for another week. It
+
+01:40:37.890 --> 01:40:40.430
+will be done. Thank you. Thanks a lot. We will talk more
+
+01:40:40.430 --> 01:40:43.550
+about work and learn. Okay, so work and learn is basically a
+
+01:40:43.550 --> 01:40:45.770
+program that we have launched. So those who would like to
+
+01:40:45.770 --> 01:40:48.150
+get a real experience, not just education, because
+
+01:40:48.150 --> 01:40:50.170
+education, anyhow, we are giving under Iran Plus
+
+01:40:50.170 --> 01:40:53.510
+subscription and everything. So they are welcome to work and
+
+01:40:53.510 --> 01:40:55.730
+learn. So where you are going to work with a team, so team
+
+01:40:55.730 --> 01:40:57.810
+is going to give you a requirement. And anyone can join,
+
+01:40:57.850 --> 01:41:00.650
+student, fresher, like a working professional. So with
+
+01:41:00.650 --> 01:41:02.670
+working professional, team is going to connect Saturday,
+
+01:41:02.690 --> 01:41:04.710
+Sunday, right? They are going to talk about requirements.
+
+01:41:04.830 --> 01:41:08.310
+They will try to, you know, work with you. There is a lot of
+
+01:41:08.310 --> 01:41:11.110
+ongoing projects. A lot of projects are there internally. So
+
+01:41:11.110 --> 01:41:13.210
+even I am building a lot. I am launching a couple of more
+
+01:41:13.210 --> 01:41:18.110
+companies. And yeah, I have like a couple of more clients.
+
+01:41:18.350 --> 01:41:20.610
+So I do teaching on Saturday, Sunday, right? Apart from
+
+01:41:20.610 --> 01:41:23.870
+that, Monday to Friday. So I used to work in my SaaS and
+
+01:41:23.870 --> 01:41:28.050
+other products, which I am like launching very soon. So
+
+01:41:28.050 --> 01:41:33.990
+yeah, I mean like you can work with our team and basically
+
+01:41:33.990 --> 01:41:36.310
+you will be able to get a real experience. That is the
+
+01:41:36.310 --> 01:41:40.210
+meaning of work and learn. Yeah. Yeah. See, please go ahead.
+
+01:41:40.270 --> 01:41:45.070
+What is your question? Yeah. So can you share this? Allow me
+
+01:41:45.070 --> 01:41:48.150
+to share the screen. Oh, yeah, sure. Yeah, you can share the
+
+01:41:48.150 --> 01:41:51.610
+screen. So promote as a panelist. Yeah. Now you can share
+
+01:41:51.610 --> 01:41:54.850
+the screen. Pradeep is saying follow business and master
+
+01:41:54.850 --> 01:41:58.130
+hybrid mode course. Can you upload any videos, sir? Hybrid.
+
+01:41:58.410 --> 01:42:01.030
+I'm like, see, even I'm struggling to, you know, record the
+
+01:42:01.030 --> 01:42:05.910
+videos because sometimes it's very like so almost all the
+
+01:42:05.910 --> 01:42:08.910
+courses I have launched in live mode also. Right. I mean,
+
+01:42:08.950 --> 01:42:12.030
+like this was the whole idea behind your own plus right that
+
+01:42:12.810 --> 01:42:15.830
+we will keep on bringing a courses. So I believe you can see
+
+01:42:15.830 --> 01:42:19.890
+now that we have a courses we have never stopped launching a
+
+01:42:19.890 --> 01:42:24.490
+courses against mentor like who is going to take a business
+
+01:42:24.490 --> 01:42:30.470
+and analytics. So I think coming week. So Sachin has also
+
+01:42:30.470 --> 01:42:38.190
+given us a lot of video Sachin. Yeah. So no, there was so
+
+01:42:38.190 --> 01:42:44.750
+many videos. I think it's not here. All the videos. Sachin W
+
+01:42:44.750 --> 01:42:50.910
+English. Yeah. So we'll upload. I think W videos are like
+
+01:42:50.910 --> 01:42:53.670
+already three, three and a half hour content is already
+
+01:42:53.670 --> 01:42:57.330
+recorded from Sachin's side. We'll upload it. But yeah, I
+
+01:42:57.330 --> 01:43:00.270
+think live class will be fun. Live class is like interacting
+
+01:43:00.270 --> 01:43:04.090
+and interactive and we can come, we can talk. Doesn't matter
+
+01:43:04.090 --> 01:43:06.590
+whether I'm taking live class or other mentors. But yeah, we
+
+01:43:06.590 --> 01:43:09.970
+all work in a similar manner. Like, yeah, please share your
+
+01:43:09.970 --> 01:43:12.350
+screen. I think you have a permission. Yeah, already share
+
+01:43:12.350 --> 01:43:15.670
+the screen. Are you able to see this? Not yet.
+
+01:43:22.250 --> 01:43:26.510
+Sir, make an LLM, Google Gemini. See, building those LLMs
+
+01:43:26.510 --> 01:43:29.270
+are not a big deal. But yeah, we need an infra basically,
+
+01:43:29.470 --> 01:43:33.590
+which is like not cheap. It's it comes with millions of
+
+01:43:33.590 --> 01:43:33.970
+expenses
+
+01:43:37.270 --> 01:43:38.630
+or a government support.
+
+01:43:42.300 --> 01:43:45.020
+So now are you able to see my screen? Yes, I can see your
+
+01:43:45.020 --> 01:43:51.100
+screen. Yeah. So I think actually I worked on bedrock quite
+
+01:43:51.100 --> 01:43:57.680
+extensively, right? So here, if you'll see this, so custom
+
+01:43:57.680 --> 01:44:05.040
+model, right? Here only to fine tune the model, it allows us
+
+01:44:05.040 --> 01:44:09.300
+to other models, but to train the model, we need to only use
+
+01:44:09.300 --> 01:44:16.140
+the Amazon which is its own model. So that's and my question
+
+01:44:16.140 --> 01:44:22.240
+is, is what is the base and Azure have the open AI or other
+
+01:44:22.240 --> 01:44:26.620
+models, right? So where they allow you to train the model,
+
+01:44:26.660 --> 01:44:30.340
+to train the model, right? So what are your suggestions to
+
+01:44:30.340 --> 01:44:36.340
+stay going AWS to train the model? Basically my suggestion
+
+01:44:36.340 --> 01:44:39.900
+always in terms of doing a fine tuning, or maybe if you are
+
+01:44:39.900 --> 01:44:42.840
+trying to do a like a fine tuning, or maybe if you are
+
+01:44:42.840 --> 01:44:45.980
+trying to train the model from the scratch, just go with
+
+01:44:45.980 --> 01:44:48.920
+your own instance, go with your own server. So if you are
+
+01:44:48.920 --> 01:44:52.220
+using AWS, just use EC2 instances or maybe take a GPU,
+
+01:44:52.440 --> 01:44:55.960
+right? Or maybe just try to use some other vendor, but
+
+01:44:55.960 --> 01:44:58.960
+always go with a custom approach, custom fine tuning or
+
+01:44:58.960 --> 01:45:02.020
+custom model building. See, even in open AI, if you will go
+
+01:45:02.020 --> 01:45:05.120
+and log in right inside their admin portal itself, they're
+
+01:45:05.120 --> 01:45:08.640
+giving you fine tuning option, go upload a JSON data in a
+
+01:45:08.640 --> 01:45:11.700
+particular format and then select a type of fine tuning that
+
+01:45:11.700 --> 01:45:15.020
+you would like to do, right? RLHF or maybe like a, you know,
+
+01:45:15.020 --> 01:45:20.380
+a full fine tuning, anything, but my advice to everyone who
+
+01:45:20.380 --> 01:45:23.480
+would like to do a fine tuning is not to follow any of this
+
+01:45:23.480 --> 01:45:28.220
+approach. Okay. So, so your suggestion is not to use the
+
+01:45:28.220 --> 01:45:31.720
+bedrock then not to use bedrock, not to use even Azure for a
+
+01:45:31.720 --> 01:45:35.540
+model, fine tuning, use just their instances means machine.
+
+01:45:36.320 --> 01:45:41.580
+Okay. So, so but when you build a model from the sketch,
+
+01:45:41.680 --> 01:45:44.840
+that I'm not saying build a model from the scratch, right?
+
+01:45:44.980 --> 01:45:49.880
+So, it's correct me is a not from the scratch. It is taking
+
+01:45:49.880 --> 01:45:53.280
+a foundation model then build exactly. Yeah. And all those
+
+01:45:53.280 --> 01:45:55.660
+best foundation models are already available in hugging face
+
+01:45:55.660 --> 01:45:59.940
+or in other repositories. Right. Okay. Even from open AI
+
+01:45:59.940 --> 01:46:04.760
+open a 20 B OSS 20 B OSS 120 B is already available. It's
+
+01:46:04.760 --> 01:46:08.500
+open source model, right? Open it even from deep seek, even
+
+01:46:08.500 --> 01:46:11.680
+from mistral, even from Lama series, you will find out all
+
+01:46:11.680 --> 01:46:15.140
+the best model available out there. Yeah. Okay. Take those
+
+01:46:15.140 --> 01:46:17.400
+models, take those financial models, model and then just
+
+01:46:17.400 --> 01:46:20.360
+spin the instances the way we have a spin, the GPUs and
+
+01:46:20.360 --> 01:46:23.500
+everything. Right. And then do a fine tuning over there.
+
+01:46:23.600 --> 01:46:26.120
+That will be the best approach and everything will be under
+
+01:46:26.120 --> 01:46:30.360
+your control. Okay. Okay. Because if you're, if you're using
+
+01:46:30.360 --> 01:46:32.500
+bedrock, right, they're giving you a limited model itself.
+
+01:46:32.620 --> 01:46:35.620
+What you will do with that? Let me like the model that they
+
+01:46:35.620 --> 01:46:38.900
+are giving you except this entropic cloud, right? None of
+
+01:46:38.900 --> 01:46:43.280
+the model is best. All these models are very, very old. So
+
+01:46:43.280 --> 01:46:45.460
+if I'm building some, yeah, so if I'm building some
+
+01:46:45.460 --> 01:46:49.040
+application today, I'm like, it doesn't make sense for me to
+
+01:46:49.040 --> 01:46:55.200
+use those models, basically, unless you will train it here
+
+01:46:55.200 --> 01:46:59.700
+or the pint unit. The thing is that even if you're going to
+
+01:46:59.700 --> 01:47:02.400
+train and fine tune it, right, you will be depends upon this
+
+01:47:02.400 --> 01:47:06.540
+AWS infrastructure, this bedrock infrastructure, you will
+
+01:47:06.540 --> 01:47:09.980
+not be able to isolate it because you model will be trained
+
+01:47:09.980 --> 01:47:12.480
+here and you will be doing inferencing. Same open AI does
+
+01:47:12.480 --> 01:47:15.300
+right. So that you know, you will end up paying to open AI
+
+01:47:15.300 --> 01:47:18.060
+now. Why, why I will do that? I will try to host it on my
+
+01:47:18.060 --> 01:47:21.700
+own infrastructure. I will be having my own control. Right.
+
+01:47:21.800 --> 01:47:28.140
+Okay. So, so, yeah. Yeah. And in case of open, um, model,
+
+01:47:28.280 --> 01:47:31.120
+which one you were suggesting either Mr. Lord, a Lama three
+
+01:47:31.120 --> 01:47:37.120
+or five. Uh, yeah. So basically try to pick and choose your
+
+01:47:37.120 --> 01:47:40.220
+task that to follow each task and which domain you are doing
+
+01:47:40.220 --> 01:47:43.700
+a training light and then go with the model selection. Try
+
+01:47:43.700 --> 01:47:47.260
+to check that, uh, which this model is, is good on Vistas
+
+01:47:47.260 --> 01:47:50.680
+because every model is not good on every task. Right. And
+
+01:47:50.680 --> 01:47:54.400
+what is the purpose of like your training? So accordingly we
+
+01:47:54.400 --> 01:47:57.760
+have to select the models blindly. We can't go blindly. I
+
+01:47:57.760 --> 01:47:59.880
+can say that, that all of these cities are actually good.
+
+01:48:00.000 --> 01:48:03.300
+Lama series also very, very good, very powerful, right? Open
+
+01:48:03.300 --> 01:48:06.440
+AI OSS is also very good, very powerful and engaged with the
+
+01:48:06.440 --> 01:48:10.040
+data set. Like, uh, again, Mr. Series is very good. Deep six
+
+01:48:10.040 --> 01:48:12.540
+series is very good. So all of these cities are actually
+
+01:48:12.540 --> 01:48:16.320
+very good, but yeah, so selection depends upon like how I'm
+
+01:48:16.320 --> 01:48:18.120
+going to do it. I'm going to train which model I'm going to
+
+01:48:18.120 --> 01:48:22.420
+pick, which model is very, very small, but, uh, it has been
+
+01:48:22.420 --> 01:48:25.000
+trained on a big data, right? So that, you know, I can, I
+
+01:48:25.000 --> 01:48:28.960
+can, uh, like, uh, it is, it is going to consume less of my
+
+01:48:28.960 --> 01:48:33.200
+hardware or less of my resources. Basically. Okay. Okay.
+
+01:48:33.200 --> 01:48:36.620
+And, uh, one more question is, uh, today you mentioned that,
+
+01:48:36.640 --> 01:48:42.900
+uh, bad, um, database, right? So database in terms of, in
+
+01:48:42.900 --> 01:48:46.160
+terms of, uh, RDS, basically RDS. I was talking, oh yeah.
+
+01:48:46.240 --> 01:48:49.540
+Okay. RDS is a service. It was RDS. Yeah. Uh, no, I'm not,
+
+01:48:49.540 --> 01:48:53.200
+I'm not talking about this, um, RDS and AWS. I'm talking
+
+01:48:53.200 --> 01:48:55.820
+about the database that you mentioned. Okay. Sorry.
+
+01:48:56.140 --> 01:48:59.680
+Databricks. I was like, uh, I thought it was database. Okay.
+
+01:48:59.840 --> 01:49:03.260
+Databricks. Yeah. Databricks. So, so, if I compare, uh,
+
+01:49:03.720 --> 01:49:07.560
+because you walked on so many things, uh, if I compare, uh,
+
+01:49:07.700 --> 01:49:11.200
+for the large data sets, because the thing, uh, and all
+
+01:49:11.200 --> 01:49:15.360
+things, right. Or in memory, uh, things which, which, uh,
+
+01:49:15.880 --> 01:49:19.500
+database, a spark suppose, right. So, uh, in, in that case,
+
+01:49:19.620 --> 01:49:22.920
+you, uh, so normally better to go with the database instead
+
+01:49:22.920 --> 01:49:26.300
+of, uh, see Databricks in terms of CD data storage, I would
+
+01:49:26.300 --> 01:49:29.800
+say, uh, so database already provides a DBFS database file
+
+01:49:29.800 --> 01:49:32.580
+system, which is an internal file system. Apart from that,
+
+01:49:32.660 --> 01:49:36.940
+Databricks allows you to Mount it on any external file
+
+01:49:36.940 --> 01:49:39.920
+system. For example, on top of Azure blobs, you will be able
+
+01:49:39.920 --> 01:49:43.260
+to Mount it on top of AWS S3. Also, you will be able to
+
+01:49:43.260 --> 01:49:45.680
+Mount it. So database technically provides all three
+
+01:49:45.680 --> 01:49:49.480
+configurations. GCS like a GCP configuration, Azure and
+
+01:49:49.480 --> 01:49:52.100
+Delbus configuration. So you can try to Mount it. So if I
+
+01:49:52.100 --> 01:49:55.160
+can Mount it, it simply means that, that I have a infinite
+
+01:49:55.160 --> 01:49:58.780
+limitation in terms of like, you know, size of the data. So,
+
+01:49:58.800 --> 01:50:03.860
+and database scalable, exactly, exactly right. Uh, so by
+
+01:50:03.860 --> 01:50:06.540
+default, if you're going to use our DBFS, so again, there
+
+01:50:06.540 --> 01:50:09.000
+will be some limitation in terms of the size of the data,
+
+01:50:09.080 --> 01:50:13.020
+right. But in a paid mode, no limitation at all. Uh, again,
+
+01:50:13.100 --> 01:50:16.160
+so there is a Databricks and there is something called as a,
+
+01:50:16.160 --> 01:50:19.080
+Azure Databricks means you can go to database platform. You
+
+01:50:19.080 --> 01:50:21.840
+can launch a database. That's an option. And then from
+
+01:50:21.840 --> 01:50:24.600
+there, you will be able to attach to your cloud means
+
+01:50:24.600 --> 01:50:27.180
+basically you will be able to attach to AWS. You will be
+
+01:50:27.180 --> 01:50:29.780
+able to attach to GCP. You will be able to attach to, uh,
+
+01:50:29.900 --> 01:50:35.800
+like, uh, AWS, GCP and Azure. And inside Azure itself, you
+
+01:50:35.800 --> 01:50:39.680
+can even go and launch Azure Databricks. So by default, it
+
+01:50:39.680 --> 01:50:45.060
+uses other sources of Azure in AWS. It's not available
+
+01:50:45.060 --> 01:50:49.360
+basically. yeah, it obviously I have seen few months back
+
+01:50:49.360 --> 01:50:53.880
+that it's also support Databricks. Yeah, no, no, even now
+
+01:50:53.880 --> 01:50:56.160
+support database. This is, this is what I'm trying to say.
+
+01:50:56.280 --> 01:50:59.640
+So just log into a Databricks from there, you will be able
+
+01:50:59.640 --> 01:51:04.080
+to connect to a database account. Okay. Okay. So basically
+
+01:51:04.080 --> 01:51:06.940
+see the quick insight, right? So here documentation wise,
+
+01:51:07.450 --> 01:51:11.220
+just, just follow the last one. So database parameter, it
+
+01:51:11.220 --> 01:51:15.040
+was the below one. Yeah. Mm. The below and database
+
+01:51:15.040 --> 01:51:17.220
+parameter or something. Like that. Right. Yeah. Yeah.
+
+01:51:17.220 --> 01:51:20.020
+Basically launch a Databricks and from Databricks, just
+
+01:51:20.020 --> 01:51:23.000
+like, uh, you know, uh, configure it with AWS means mounted
+
+01:51:23.000 --> 01:51:28.000
+on AWS. Hmm. So, so, so that updates does not provide us to,
+
+01:51:28.140 --> 01:51:32.920
+um, any model that we, uh, AWS or Azure did. No, they are
+
+01:51:32.920 --> 01:51:35.440
+providing actually a better model. Just do one thing, log in
+
+01:51:35.440 --> 01:51:37.500
+into database. I'll show you now itself. It's a two minute
+
+01:51:37.500 --> 01:51:40.900
+job. Data is actually providing you models as well. And, uh,
+
+01:51:41.460 --> 01:51:44.560
+their model is very, very extensive as compared to AWS. I
+
+01:51:44.560 --> 01:51:47.380
+mean, like as compared to bedrock, uh, or like a snowflake,
+
+01:51:47.890 --> 01:51:52.480
+sorry, bedrock and SageMaker. Just, just log in, just log in
+
+01:51:52.480 --> 01:51:57.120
+into Databricks, Google login. Yeah. Click on login.
+
+01:52:01.660 --> 01:52:04.420
+Yeah. Simply Google with the Google in
+
+01:52:11.680 --> 01:52:13.540
+the East end days, they have made this platform very, very
+
+01:52:13.540 --> 01:52:16.580
+powerful for personal use. Yeah. Free. Yes. Second version.
+
+01:52:16.700 --> 01:52:23.480
+Second option. Yeah. So, uh, five, six years back, I use it
+
+01:52:23.480 --> 01:52:28.840
+for one of our data, like projects in HP. So, but at that
+
+01:52:28.840 --> 01:52:33.640
+time it was horrible. Uh, so I know, I know, I know because
+
+01:52:33.640 --> 01:52:35.760
+I've been using it since the beginning itself. So I know it
+
+01:52:35.760 --> 01:52:38.240
+was horrible actually, but now it is actually very good.
+
+01:52:38.740 --> 01:52:42.200
+It's actually very powerful. So mainly industry. Now, uh,
+
+01:52:42.360 --> 01:52:46.080
+most of the people, sir, uh, walking on this side. Exactly.
+
+01:52:46.340 --> 01:52:49.020
+People have already started adopting and, uh, yeah. Majority
+
+01:52:49.020 --> 01:52:50.480
+of people have like, uh, adopted it.
+
+01:52:55.640 --> 01:52:59.380
+Yes. We'll have to, uh, somebody to somebody to start the
+
+01:52:59.380 --> 01:53:02.360
+puzzle. It will take like a couple of tickets. Uh, no, no,
+
+01:53:02.380 --> 01:53:07.420
+no, no. You have to select the rock. Okay. Three. Okay.
+
+01:53:07.560 --> 01:53:08.420
+Let's try again.
+
+01:53:11.350 --> 01:53:13.610
+Okay. One, two, three, four, five. Go to the next, next,
+
+01:53:13.630 --> 01:53:16.830
+next, select the next one. I think it's, uh, what they're
+
+01:53:16.830 --> 01:53:19.390
+saying, right? There is a five rock. No, no, no, they will
+
+01:53:19.390 --> 01:53:22.990
+fail. Select, select, select, complete the puzzle first.
+
+01:53:24.010 --> 01:53:27.210
+This one. Yeah. Select the four rocks. Okay. Next check.
+
+01:53:27.250 --> 01:53:29.490
+Next one, two, three, four. Yeah. Select, select last one.
+
+01:53:29.510 --> 01:53:36.450
+Last one. No, it is your photo. Okay. Okay. Oh, one minute.
+
+01:53:37.230 --> 01:53:39.110
+Yeah. Four logs summit.
+
+01:53:47.490 --> 01:53:50.270
+So you can, you can go and you can, you can check your free
+
+01:53:50.270 --> 01:53:52.650
+time. So they're already giving you all the models, all the
+
+01:53:52.650 --> 01:53:55.590
+elements models, like, uh, I mean like more than a bedrock
+
+01:53:55.590 --> 01:53:58.290
+and Sage maker, they're giving you now and now this is
+
+01:53:58.290 --> 01:54:01.050
+literally very good. So if you will start using it now, so
+
+01:54:01.050 --> 01:54:04.930
+you will be having a very good experience. Okay. Okay. Fine.
+
+01:54:05.170 --> 01:54:08.990
+Yeah. Yeah. Thank you. Okay. Thank you. Yeah. Okay. Fine.
+
+01:54:09.030 --> 01:54:11.290
+Everyone. Thank you so much. Take care and see you again
+
+01:54:11.290 --> 01:54:14.410
+next last Saturday. So I believe agenda is fixed. Yes. The
+
+01:54:14.410 --> 01:54:16.930
+pipeline and project we are going to start from next week
+
+01:54:16.930 --> 01:54:18.670
+onwards. Thank you so much. Take care of everyone. Thank
+
+01:54:18.670 --> 01:54:18.810
+you.
+

@@ -1,0 +1,5282 @@
+WEBVTT
+
+00:00:18.930 --> 00:00:21.950
+hi everyone so i think i'm audible and visible to all of you
+
+00:00:21.950 --> 00:00:25.530
+so please confirm me guys once you are able to see me okay
+
+00:01:04.120 --> 00:01:07.360
+so good afternoon everyone i think i'm audible and visible
+
+00:01:07.360 --> 00:01:09.180
+to all of you yeah
+
+00:01:32.160 --> 00:01:35.540
+good afternoon good afternoon satish durgesh vijay manas
+
+00:01:35.540 --> 00:01:39.320
+everyone good afternoon yeah akas manas who we are feeling
+
+00:01:39.320 --> 00:01:42.500
+well today uh not that great but yeah better than before
+
+00:01:42.500 --> 00:01:46.080
+because uh since last couple of weeks so we were having a
+
+00:01:46.080 --> 00:01:48.740
+lot of like a product uh deployment and all those things and
+
+00:01:48.740 --> 00:01:52.240
+bugs and so many things i was not able to get my sleep
+
+00:01:52.240 --> 00:01:56.880
+properly and because of that so apart from that there is no
+
+00:01:56.880 --> 00:02:02.320
+issue at all okay so better better better guys better than
+
+00:02:02.320 --> 00:02:09.320
+before so let me share my screen and let's get started with
+
+00:02:09.320 --> 00:02:12.620
+the class so today we are going to cover a very important
+
+00:02:12.620 --> 00:02:18.040
+and interesting topic basically uh so we are going to uh
+
+00:02:18.060 --> 00:02:23.140
+basically this one a vector database which is a backbone for
+
+00:02:23.140 --> 00:02:26.220
+any kind of application that you are going to build in
+
+00:02:26.220 --> 00:02:28.980
+today's world with respect to a agentic ai or maybe with
+
+00:02:28.980 --> 00:02:31.820
+respect to a rag whether it's a semantic search whether it's
+
+00:02:31.820 --> 00:02:34.240
+a recommendation system or anything that you are going to
+
+00:02:34.240 --> 00:02:38.200
+build this is going to be a backbone even uh when you will
+
+00:02:38.200 --> 00:02:42.340
+go to uh jobs so here we are trying to show you a jobs based
+
+00:02:42.340 --> 00:02:46.860
+on the like a based on the resume that you are going to
+
+00:02:46.860 --> 00:02:49.280
+upload based on the profile that you are going to upload so
+
+00:02:49.280 --> 00:02:52.380
+this system is going to give you automated recommendation
+
+00:02:52.380 --> 00:02:55.940
+and that to like in every 24 hour it is going to refresh
+
+00:02:55.940 --> 00:02:59.000
+apart from that you can go over here and then you can try to
+
+00:02:59.000 --> 00:03:01.220
+even search for the job for example if i'm searching for
+
+00:03:01.220 --> 00:03:05.220
+maybe a machine learning so i will be able to do a search
+
+00:03:05.220 --> 00:03:08.560
+and then uh quickly it is going to give me a response and
+
+00:03:08.560 --> 00:03:13.020
+all those jobs has been populated in like a last 24 hour uh
+
+00:03:13.020 --> 00:03:16.480
+plus uh it is it is giving me even a recommendation based on
+
+00:03:16.480 --> 00:03:18.040
+my resume and whatever data i have and i will be able to do
+
+00:03:18.060 --> 00:03:20.640
+that in detail which is available inside my resume so based
+
+00:03:20.640 --> 00:03:24.060
+on whatever uh it is able to build a memory it is able to
+
+00:03:24.060 --> 00:03:28.060
+give me a recommendation so all of these things are
+
+00:03:28.060 --> 00:03:32.480
+happening based on the vector db that we have implemented in
+
+00:03:32.480 --> 00:03:36.960
+a back-end now so why we are talking about it and again as a
+
+00:03:36.960 --> 00:03:39.660
+part of your syllabus this vector database is already
+
+00:03:39.660 --> 00:03:42.540
+available because going forward whatever application because
+
+00:03:42.540 --> 00:03:45.780
+going forward we have mostly a application based scenario so
+
+00:03:45.780 --> 00:03:48.040
+where we will be building rag based application as you can
+
+00:03:48.040 --> 00:03:48.040
+see we are going to be building rsg based application as a
+
+00:03:48.060 --> 00:03:50.800
+genetic ai based application we will be building or fine
+
+00:03:50.800 --> 00:03:53.180
+tuning based application we will be building we will be like
+
+00:03:53.180 --> 00:03:56.460
+uh building our own models so everywhere almost everywhere
+
+00:03:56.460 --> 00:04:01.660
+i'm not saying like like a 100 but yeah in 90 of the cases
+
+00:04:01.660 --> 00:04:04.480
+or in most of the cases you will end up dealing with these
+
+00:04:04.480 --> 00:04:09.100
+kind of a vector db so why and this like this vector db
+
+00:04:09.100 --> 00:04:13.100
+comes into a picture we already have a lot of database in a
+
+00:04:13.100 --> 00:04:17.460
+sql segment and in a no sql segment if i'll talk about a sql
+
+00:04:17.460 --> 00:04:21.180
+segment so we have a mysql we have snowflake we have msql we
+
+00:04:21.180 --> 00:04:25.160
+have db2 so many a postgres so we have tons of db over there
+
+00:04:25.160 --> 00:04:28.080
+if i'll talk about a no sql segment so again we have a tons
+
+00:04:28.080 --> 00:04:32.260
+of databases like a mongodb kazandra h base uh influx or
+
+00:04:32.260 --> 00:04:37.280
+maybe like a neo4j so a lot of database we have even on a no
+
+00:04:37.280 --> 00:04:41.480
+sql side and even on a sql side but why we are talking about
+
+00:04:41.480 --> 00:04:45.800
+a vector database nowadays since last two year like most of
+
+00:04:45.800 --> 00:04:48.040
+the time we are talking about this vector databases and we
+
+00:04:48.040 --> 00:04:49.300
+are talking about a vector db and not we are not just
+
+00:04:49.300 --> 00:04:52.240
+talking about it we are even trying to implement it and even
+
+00:04:52.240 --> 00:04:54.860
+on your own system you will be able to see a very clear
+
+00:04:54.860 --> 00:04:57.580
+implementation and i'll tell you because i have personally
+
+00:04:57.580 --> 00:05:02.020
+designed this whole architecture right so it's not like i
+
+00:05:02.020 --> 00:05:05.420
+can't achieve the same thing without using a vector db i can
+
+00:05:05.420 --> 00:05:08.800
+do that but it will be very very slow latency is going to be
+
+00:05:08.800 --> 00:05:10.600
+very very high and this is something that we have
+
+00:05:10.600 --> 00:05:14.420
+experienced the reason was very simple that we are trying to
+
+00:05:14.420 --> 00:05:18.460
+scrap almost a fifteen thousand to twenty thousand jobs on a
+
+00:05:18.460 --> 00:05:21.580
+daily basis we are trying to store those jobs uh somewhere
+
+00:05:21.580 --> 00:05:24.960
+let's suppose right and then we have a thousands of our
+
+00:05:24.960 --> 00:05:28.440
+students who is coming over here and we have to basically
+
+00:05:28.440 --> 00:05:31.540
+see their resume and based on the resume we have to provide
+
+00:05:31.540 --> 00:05:35.240
+this entire recommendation and that too in a real time as
+
+00:05:35.240 --> 00:05:39.940
+precise as possible now so match we have to do a matching so
+
+00:05:39.940 --> 00:05:42.920
+if i'll talk about a matching between these two like a data
+
+00:05:42.920 --> 00:05:47.180
+so basically uh like what what we are doing over here is
+
+00:05:47.180 --> 00:05:52.220
+that we have your resume uh let me write it down somewhere
+
+00:05:52.220 --> 00:05:57.020
+yeah so we have your resume let's suppose and we are trying
+
+00:05:57.020 --> 00:06:00.260
+to extract a data from your resume because it's just a text
+
+00:06:00.260 --> 00:06:02.660
+that we have inside your resume so where you have mentioned
+
+00:06:02.660 --> 00:06:05.780
+uh the place where you are working as of now or in a
+
+00:06:05.780 --> 00:06:08.360
+previous company where you have worked or like tenure that
+
+00:06:08.360 --> 00:06:10.460
+you have mentioned each and every whatever information that
+
+00:06:10.460 --> 00:06:12.520
+you are mentioning inside the resume so obviously we are
+
+00:06:12.520 --> 00:06:15.780
+trying to like get those data we are trying to get those
+
+00:06:15.780 --> 00:06:18.420
+things and technically it's a textual information that we
+
+00:06:18.420 --> 00:06:21.760
+are talking about right and uh let's imagine a thousands of
+
+00:06:21.760 --> 00:06:25.240
+resume every resume is unique in itself right so everyone is
+
+00:06:25.240 --> 00:06:27.920
+not going to work in the same company everyone will not be
+
+00:06:27.920 --> 00:06:30.000
+having a same kind of a skill set everyone will not be
+
+00:06:30.000 --> 00:06:32.360
+having a similar kind of experience label a lot of
+
+00:06:32.360 --> 00:06:34.880
+variations right and everything is available into a textual
+
+00:06:34.880 --> 00:06:38.740
+format and then on other side we have basically a tons of
+
+00:06:38.740 --> 00:06:42.800
+job let's suppose we have a 20 000 job on a daily basis it
+
+00:06:42.800 --> 00:06:46.140
+simply means that that's six lakh job as of now and then in
+
+00:06:46.140 --> 00:06:51.340
+a like an upcoming month so we have a 20 000 job on a daily
+
+00:06:51.340 --> 00:06:51.400
+basis so we have a 20 000 job on a daily basis so we have a
+
+00:06:51.400 --> 00:06:52.480
+20 000 job on a daily basis so that's a that's a system that
+
+00:06:52.480 --> 00:06:55.040
+we are trying to like uh revamp and this is where we are
+
+00:06:55.040 --> 00:06:57.940
+working as of now that lacks and lacks of jobs so that we
+
+00:06:57.940 --> 00:07:01.260
+should not leave even a single domain untouched and we
+
+00:07:01.260 --> 00:07:04.460
+should not leave even a single job untouched which is
+
+00:07:04.460 --> 00:07:07.460
+available not just on a job portal like a linkedin nocad or
+
+00:07:07.460 --> 00:07:11.220
+indeed but even on a career website career portal of any
+
+00:07:11.220 --> 00:07:13.260
+companies because every company will be having their own
+
+00:07:13.260 --> 00:07:16.140
+career portal and where they try to publish their jobs so
+
+00:07:16.140 --> 00:07:18.040
+again this is something that we are trying to make a system
+
+00:07:18.040 --> 00:07:19.240
+so that we are not leaving even a that we have now between
+
+00:07:19.240 --> 00:07:22.240
+these two, we have to do a mapping or matching, right? In a
+
+00:07:22.240 --> 00:07:25.140
+real time. So whenever you click, so we have to populate a
+
+00:07:25.140 --> 00:07:27.940
+result over here and that too with the relevancy, we have to
+
+00:07:27.940 --> 00:07:31.780
+populate a result over there. Now this kind of a search or
+
+00:07:31.780 --> 00:07:35.560
+this kind of a matching is not possible. If I'm going to use
+
+00:07:35.560 --> 00:07:38.200
+a conventional database, for example, if I'm going to use a
+
+00:07:38.200 --> 00:07:41.120
+postgres, obviously I can do a mapping. I'm not saying that
+
+00:07:41.120 --> 00:07:44.240
+I can't do a matching. There is other hundreds of way, which
+
+00:07:44.240 --> 00:07:46.280
+I can tell you by which I will be able to do the map
+
+00:07:46.280 --> 00:07:49.640
+matching. Even in a MongoDB, I will be able to do a map
+
+00:07:49.640 --> 00:07:52.180
+matching. Even with a Cassandra, I can do the same thing,
+
+00:07:52.200 --> 00:07:55.580
+right? Even with the HBS, I can do the same thing. So it's
+
+00:07:55.580 --> 00:07:58.020
+not like solution is not available, but what matters over
+
+00:07:58.020 --> 00:08:00.920
+here is a latency. So in a very first place, when we have
+
+00:08:00.920 --> 00:08:03.720
+built this one without using a vector DB, our latency was
+
+00:08:03.720 --> 00:08:06.420
+very high. So even to populate this entire result, it was
+
+00:08:06.420 --> 00:08:09.260
+system was taking around seven to eight minutes of time. Now
+
+00:08:09.260 --> 00:08:12.220
+it takes just four to five seconds of time, right? Just four
+
+00:08:12.220 --> 00:08:14.680
+to five seconds of time. And we are revamping it in such a
+
+00:08:14.680 --> 00:08:18.840
+way. And again, so. The another solution is a hardware based
+
+00:08:18.840 --> 00:08:22.040
+solution. So where I can try to spin more number of servers,
+
+00:08:22.140 --> 00:08:24.880
+more number of machine. So I can try to provide more number
+
+00:08:24.880 --> 00:08:27.600
+of compute so that my computer will be faster. But again, we
+
+00:08:27.600 --> 00:08:30.740
+are affordable, right? We are selling a subscription into
+
+00:08:30.740 --> 00:08:34.640
+99. So we can't afford that many number of machines at a
+
+00:08:34.640 --> 00:08:37.360
+time because every machine that we are going to add in our
+
+00:08:37.360 --> 00:08:40.260
+server, it is, it is going to cost us a bomb of money,
+
+00:08:40.340 --> 00:08:43.800
+right? So we have to build an optimized solution, plus we
+
+00:08:43.800 --> 00:08:46.520
+have to build a user friendly solution. And this is where we
+
+00:08:46.520 --> 00:08:49.920
+have done the integration of our vector database and similar
+
+00:08:49.920 --> 00:08:52.740
+kind of a demo. I'm going to show you in my today's class
+
+00:08:52.740 --> 00:08:57.220
+that how like a logically this vector database is going to
+
+00:08:57.220 --> 00:09:00.420
+work. So vector database is just a storage unit. You can say
+
+00:09:00.420 --> 00:09:03.780
+just a storage unit, right? It's not doing anything. So we
+
+00:09:03.780 --> 00:09:06.920
+are trying to generate our embeddings with the help of some
+
+00:09:06.920 --> 00:09:10.740
+of the embedding LLMs, which is available in a market. I'm
+
+00:09:10.740 --> 00:09:12.900
+going to show you even on URI, we have released those
+
+00:09:12.900 --> 00:09:15.700
+embeddings model if you have not seen that. I am going to
+
+00:09:15.700 --> 00:09:18.460
+show you that part. So we are trying to generate the
+
+00:09:18.460 --> 00:09:21.840
+embeddings and I believe by now by this time, we all
+
+00:09:21.840 --> 00:09:24.400
+understand that what is the meaning of embeddings we have
+
+00:09:24.400 --> 00:09:26.900
+done that, right? We have seen a theoretical example, we
+
+00:09:26.900 --> 00:09:29.760
+have even seen a practical example. So embedding is nothing
+
+00:09:29.760 --> 00:09:32.260
+but converting some of the data, some of the textual
+
+00:09:32.260 --> 00:09:35.640
+information into a vector space by representing a numbers
+
+00:09:35.640 --> 00:09:38.800
+right in some of the dimension, maybe 512, maybe 1000 or
+
+00:09:38.800 --> 00:09:42.660
+whatever it is, right? So this is a simple layman meaning of
+
+00:09:42.660 --> 00:09:44.460
+embeddings, right guys, everyone.
+
+00:09:47.920 --> 00:09:53.420
+Yeah, I think we miss mastering a prompt engineering. Don't
+
+00:09:53.420 --> 00:09:55.380
+worry. I'll I'll show you a prompt. Engineering is like
+
+00:09:55.380 --> 00:09:58.500
+very, very easy. I'll show you like a, I'll give you a list
+
+00:09:58.500 --> 00:10:01.240
+of thousands of prompt for a different different task. We
+
+00:10:01.240 --> 00:10:02.460
+are using it on a daily basis.
+
+00:10:05.410 --> 00:10:10.230
+Yeah. So I believe we all understand embedding a cool
+
+00:10:10.230 --> 00:10:13.570
+concept behind the embeddings. So embedding is nothing new
+
+00:10:13.570 --> 00:10:17.090
+for us, right? We have also done that while we were trying
+
+00:10:17.090 --> 00:10:20.010
+to create our own model from the various scratch. So every
+
+00:10:20.010 --> 00:10:22.630
+time. Yeah. were trying to convert our embeddings into a
+
+00:10:22.630 --> 00:10:25.810
+sorry our data into our embeddings or into a vector space or
+
+00:10:25.810 --> 00:10:29.650
+into its numerical represents right sir you promised same
+
+00:10:29.650 --> 00:10:31.710
+thing on iron since last two years nothing has been updated
+
+00:10:31.710 --> 00:10:34.470
+so i have taken exit from iron iron chapter is closed at
+
+00:10:34.470 --> 00:10:37.470
+least for me so i'm not a person who will be able to answer
+
+00:10:37.470 --> 00:10:39.990
+it's been more than one year of time so please don't raise a
+
+00:10:39.990 --> 00:10:41.950
+question over here this is not a correct place to raise the
+
+00:10:41.950 --> 00:10:44.990
+question yeah and whatever as far as like a promise part
+
+00:10:44.990 --> 00:10:48.450
+whatever i have promised till i was available as a part of
+
+00:10:48.450 --> 00:10:51.210
+iron as a part of management i have done every possible
+
+00:10:51.210 --> 00:10:54.650
+things including a teaching and again i'm doing the same
+
+00:10:54.650 --> 00:10:59.850
+thing very simple yeah so please uh don't come over here and
+
+00:10:59.850 --> 00:11:02.230
+try to raise those question i believe we have enough number
+
+00:11:02.230 --> 00:11:04.750
+of platform out there so where you can go and raise it but
+
+00:11:04.750 --> 00:11:07.270
+yeah please try to learn something over here i was teaching
+
+00:11:07.270 --> 00:11:09.790
+even before since last eight year and even now i'm teaching
+
+00:11:09.790 --> 00:11:13.490
+whether it's an old concept or new concept that's completely
+
+00:11:13.490 --> 00:11:18.010
+fine yeah and not just teaching even building a system the
+
+00:11:18.010 --> 00:11:21.270
+latest one right the latest one which is required in today's
+
+00:11:21.270 --> 00:11:26.010
+environment not the old one okay so basically we understand
+
+00:11:26.010 --> 00:11:29.570
+a core fundamentals behind embeddings and and we all are
+
+00:11:29.570 --> 00:11:32.050
+aware about it and this is something that we are using even
+
+00:11:32.050 --> 00:11:34.750
+over here in this particular place and this is something
+
+00:11:34.750 --> 00:11:37.870
+which i'm going to show you and i'm going to teach you even
+
+00:11:37.870 --> 00:11:41.310
+in my like a today's class that how i will be able to use
+
+00:11:41.310 --> 00:11:45.470
+one of the vector database how i can try to use one of the
+
+00:11:45.470 --> 00:11:47.770
+LLM models by which i will be able to create a vector
+
+00:11:47.770 --> 00:11:48.410
+database and how i can try to use one of them to convert my
+
+00:11:48.410 --> 00:11:52.530
+data into its numerical space or into its vector space i'll
+
+00:11:52.530 --> 00:11:55.270
+try to convert it and then finally i'll try to store it and
+
+00:11:55.270 --> 00:11:58.910
+then how i will be able to do a search and then what will be
+
+00:11:58.910 --> 00:12:01.610
+the latency so each and everything we are going to discuss
+
+00:12:01.610 --> 00:12:07.130
+over here so are we ready guys everyone yeah everyone so
+
+00:12:07.130 --> 00:12:11.010
+please say yes no whatever you want inside your chat box i'm
+
+00:12:11.010 --> 00:12:19.900
+able to see all your question or like a responses fine okay
+
+00:12:19.900 --> 00:12:23.880
+so here if you will go into yuri as of now and if you'll go
+
+00:12:23.880 --> 00:12:27.040
+into api so just two days back so we have released a new
+
+00:12:27.040 --> 00:12:31.020
+model over here so these models are basically for a chat
+
+00:12:31.020 --> 00:12:33.900
+completion right or even for a real-time search we have
+
+00:12:33.900 --> 00:12:36.880
+already released the model now this model has been used for
+
+00:12:36.880 --> 00:12:41.180
+a chat completion at the end of the day i
+
+00:12:49.310 --> 00:12:53.850
+selected the role as a director so the tool is taking a
+
+00:12:53.850 --> 00:12:58.450
+director role in all the fields as well yeah so basically
+
+00:12:58.450 --> 00:13:00.570
+it's a vector database so obviously it is going to give you
+
+00:13:00.570 --> 00:13:02.510
+a response in that way so if it is giving you a wrong
+
+00:13:02.510 --> 00:13:06.870
+response so yeah please ping me now like a chat with the
+
+00:13:06.870 --> 00:13:09.990
+snapshot so maybe i'll be able to like rectify it we are
+
+00:13:09.990 --> 00:13:12.110
+still like trying to make the system better and better day
+
+00:13:12.110 --> 00:13:15.250
+by day so these are basically a generation based model or
+
+00:13:15.250 --> 00:13:18.210
+chat completion based model now recently we have released a
+
+00:13:18.210 --> 00:13:22.010
+chat gpt based embedding models i think three or four days
+
+00:13:22.010 --> 00:13:25.030
+this week itself we have released that part and here now you
+
+00:13:25.030 --> 00:13:27.890
+will be able to see a text embedding three small so
+
+00:13:27.890 --> 00:13:30.850
+basically it's coming from a gpt chat gpt basically or open
+
+00:13:30.850 --> 00:13:33.790
+ai it's coming from open ai basically so this is a embedding
+
+00:13:33.790 --> 00:13:36.870
+based model and very soon so we are facing a little bit of
+
+00:13:36.870 --> 00:13:40.530
+issue in terms of hosting this model uh so we soon this will
+
+00:13:40.530 --> 00:13:44.230
+be even available amazon titan embedded text v2 even this
+
+00:13:44.230 --> 00:13:46.770
+will be available so that you will be having a multiple
+
+00:13:46.770 --> 00:13:49.730
+option just for embedding likewise so we are going to even
+
+00:13:49.730 --> 00:13:54.190
+release a image based model so where you will be able to
+
+00:13:54.190 --> 00:13:57.130
+generate our images just like a chat gpt so we are leaving
+
+00:13:57.130 --> 00:14:03.830
+like a chat gpt so we are going to use this particular model
+
+00:14:03.830 --> 00:14:08.790
+from yuri itself so we are going to hit yuri apis and what
+
+00:14:08.790 --> 00:14:12.510
+this model is going to do at the end of the day so flow wise
+
+00:14:12.510 --> 00:14:15.550
+if i'll talk about so flow wise so basically i am going to
+
+00:14:15.550 --> 00:14:19.950
+pass a text in a very first place now text will go into my
+
+00:14:19.950 --> 00:14:25.330
+embeddings llms for example this one it will go over there
+
+00:14:25.330 --> 00:14:29.910
+it is going to return me a vector space is nothing but a
+
+00:14:29.910 --> 00:14:32.690
+numerical representation of this text with the help of this
+
+00:14:32.690 --> 00:14:35.690
+model which i am trying to use so today i am using this in
+
+00:14:35.690 --> 00:14:38.270
+tomorrow maybe i will be using this maybe you can try to
+
+00:14:38.270 --> 00:14:40.990
+download some of the hugging face models there are a lot of
+
+00:14:40.990 --> 00:14:43.190
+embedding model which is available even on hugging face you
+
+00:14:43.190 --> 00:14:45.910
+can download that and you can try to even do the same thing
+
+00:14:45.910 --> 00:14:48.930
+but yeah the vector space it will be different like length
+
+00:14:48.930 --> 00:14:52.010
+of the vector is going to be different so this is going to
+
+00:14:52.010 --> 00:14:54.950
+produce for every sentence it is going to produce a length
+
+00:14:54.950 --> 00:15:01.050
+of vector is equal to one five three six so again it is
+
+00:15:01.050 --> 00:15:03.430
+going to be like a very very big so that it will be able to
+
+00:15:03.430 --> 00:15:06.870
+understand even a big big sentences at the end of the day or
+
+00:15:06.870 --> 00:15:10.490
+like a long text format it will be able to understand and it
+
+00:15:10.490 --> 00:15:12.570
+will be able to help you out in terms of a search in a
+
+00:15:12.570 --> 00:15:15.970
+better way so first we'll take input as a text convert it
+
+00:15:15.970 --> 00:15:18.750
+into embeddings it is going to give me a vector which is a
+
+00:15:18.750 --> 00:15:22.450
+numerical representation then i will try to store this one
+
+00:15:22.450 --> 00:15:26.910
+into a vector data base vector database i am going to store
+
+00:15:26.910 --> 00:15:30.890
+it into a vector db and then maybe i can try to search some
+
+00:15:30.890 --> 00:15:36.270
+of the text like i can say that or tell me my name so or my
+
+00:15:36.270 --> 00:15:39.130
+name is anshu kumar so whenever i'm going to search so
+
+00:15:39.130 --> 00:15:42.590
+basically it will go back to a vector db it will try to do a
+
+00:15:42.590 --> 00:15:46.190
+mapping matching over here based on the cosine similarity or
+
+00:15:46.190 --> 00:15:50.410
+based on maybe uh like uh some of the distances maybe uh
+
+00:15:50.410 --> 00:15:53.610
+manhattan distances maybe like uh euclidean distances
+
+00:15:53.610 --> 00:15:56.050
+depends what i'm going to configure because everything is
+
+00:15:56.050 --> 00:16:00.290
+configurable over here so i will be able to get a result
+
+00:16:00.290 --> 00:16:03.630
+over here that whatever text that you are searching for so
+
+00:16:03.630 --> 00:16:06.170
+matching to this text this is the data which is available
+
+00:16:06.170 --> 00:16:10.790
+inside my databases right so this database is just been used
+
+00:16:10.790 --> 00:16:14.150
+for the storage purposes you will not be able to store
+
+00:16:14.150 --> 00:16:16.590
+something over here unless and until you are not going to
+
+00:16:16.590 --> 00:16:23.050
+convert it into a vector space and to convert it into a
+
+00:16:23.050 --> 00:16:26.730
+vector space you need some of the embedding models a bigger
+
+00:16:26.730 --> 00:16:29.690
+is better always a bigger is always always better so that it
+
+00:16:29.690 --> 00:16:32.690
+will be able to understand a long context at the end of the
+
+00:16:32.690 --> 00:16:35.690
+day and these are basically a pre-trained model even i can
+
+00:16:35.690 --> 00:16:38.030
+go ahead and i can try to train my own model if you remember
+
+00:16:38.030 --> 00:16:42.870
+so in a class itself we have trained a word to vec right
+
+00:16:42.870 --> 00:16:46.010
+what to we have used in a beginning of the class this class
+
+00:16:46.010 --> 00:16:49.050
+itself and with the help of word to work and what to work we
+
+00:16:49.050 --> 00:16:52.430
+have trained on our small data set and then we were able to
+
+00:16:52.430 --> 00:16:55.390
+generate the embeddings out of it right so here i'm not
+
+00:16:55.390 --> 00:16:58.310
+going to create my model from the scratch i will be you
+
+00:16:58.310 --> 00:17:01.490
+taking you the help of existing model which is available
+
+00:17:01.490 --> 00:17:04.430
+this is what we do even in real time and i will be
+
+00:17:04.430 --> 00:17:08.110
+generating a vector space so this is the entire funnel we
+
+00:17:08.110 --> 00:17:11.250
+are going to cover in today's class is it making sense to
+
+00:17:11.250 --> 00:17:12.950
+all of us guys yes
+
+00:17:17.080 --> 00:17:20.520
+what is the meaning of this is small small means like i said
+
+00:17:20.520 --> 00:17:23.360
+so this is the length of the vector for every sentence that
+
+00:17:23.360 --> 00:17:26.180
+you are going to put it is going to create there are some
+
+00:17:26.180 --> 00:17:30.000
+models so where like this length is more than even 3000 or
+
+00:17:30.000 --> 00:17:31.900
+even a 4000 yeah
+
+00:17:38.940 --> 00:17:43.000
+okay so let's get started one by one step by step manner so
+
+00:17:43.000 --> 00:17:46.380
+let's uh do a coding and uh while i'll be doing a coding so
+
+00:17:46.380 --> 00:17:49.500
+i'll keep on like uh thinking the code inside your chat box
+
+00:17:49.500 --> 00:17:54.160
+so that you all can do it along with me so let me open up my
+
+00:17:54.160 --> 00:17:57.280
+vs code over here create
+
+00:18:01.700 --> 00:18:05.640
+a new folder d drive code and
+
+00:18:08.020 --> 00:18:11.180
+vector c tor db
+
+00:18:13.550 --> 00:18:14.250
+demo
+
+00:18:17.870 --> 00:18:23.330
+um just try to create a folder as of now and leave it and
+
+00:18:23.330 --> 00:18:27.450
+like i said so i will be using this model uh plus today i am
+
+00:18:27.450 --> 00:18:30.850
+going to touch upon this chroma db so this is the database
+
+00:18:30.850 --> 00:18:34.690
+which i am going to cover in my today's class now so if i
+
+00:18:34.690 --> 00:18:38.910
+talk about a chroma db right if i talk about a chroma db so
+
+00:18:38.910 --> 00:18:42.030
+here on its official website you will be able to find out
+
+00:18:42.030 --> 00:18:45.590
+that chroma is a open source ai application database
+
+00:18:45.590 --> 00:18:49.690
+batteries included so basically it's a open source db which
+
+00:18:49.690 --> 00:18:53.650
+is available to all of us and we can try to right so we can
+
+00:18:53.650 --> 00:18:59.190
+try to host all of this db in our own environment maybe we
+
+00:18:59.190 --> 00:19:02.490
+can try to dockerize it maybe we can try to even host it on
+
+00:19:02.490 --> 00:19:06.170
+some of the cloud environment so everything and anything is
+
+00:19:06.170 --> 00:19:11.050
+possible with respect to this chroma db again so fasi comes
+
+00:19:11.050 --> 00:19:13.910
+with the same thing so fasi is i believe uh fourth one so
+
+00:19:13.910 --> 00:19:18.350
+facebook ai semantic search uh uh so i think name is
+
+00:19:18.350 --> 00:19:18.790
+incorrect it's a different name so uh so i think name is
+
+00:19:18.790 --> 00:19:22.250
+incorrect it should be ss semantic search if ai ss not is
+
+00:19:22.250 --> 00:19:26.170
+and then pinecone and baviet so if you are going to go and
+
+00:19:26.170 --> 00:19:32.730
+search for pinecone basically so pinecone and baviet is
+
+00:19:32.730 --> 00:19:34.370
+nothing but so
+
+00:19:37.340 --> 00:19:41.480
+here like uh they have they have already like a if i'll talk
+
+00:19:41.480 --> 00:19:43.600
+about a pinecone so they have already given you the hosted
+
+00:19:43.600 --> 00:19:46.880
+platform so you can just go over there uh try to add your
+
+00:19:46.880 --> 00:19:49.620
+card and then you can i think they are providing some free
+
+00:19:49.620 --> 00:19:53.140
+version as well i'll try to check right but yeah so you will
+
+00:19:53.140 --> 00:19:55.800
+be able to use a pinecone and then the way you are trying to
+
+00:19:55.800 --> 00:19:58.560
+store something into a vector uh chroma db so in the similar
+
+00:19:58.560 --> 00:20:00.820
+manner you will be able to store something into a pinecone
+
+00:20:00.820 --> 00:20:03.980
+and same goes for this baviet as well right so they are
+
+00:20:03.980 --> 00:20:06.900
+going to charge you and they are going to charge you like uh
+
+00:20:06.900 --> 00:20:10.440
+based on the consumptions uh they are even giving you a free
+
+00:20:10.440 --> 00:20:14.100
+trial over here as you can see and even this one is giving
+
+00:20:14.100 --> 00:20:17.580
+you a starter plan which is completely free and they are
+
+00:20:17.580 --> 00:20:20.280
+giving you a complete serverless architecture serverless
+
+00:20:20.280 --> 00:20:23.420
+means one big where you can go and you can try to hit it
+
+00:20:23.420 --> 00:20:26.760
+just like a mongodb right uh you can just go and try to
+
+00:20:26.760 --> 00:20:29.380
+store the data if you are looking for a dedicated server so
+
+00:20:29.380 --> 00:20:31.880
+maybe they have a enterprise plan as well so where you will
+
+00:20:31.880 --> 00:20:34.900
+be able to get your dedicated server and everything but yeah
+
+00:20:34.900 --> 00:20:38.140
+everyone is giving you a free version so that we'll be able
+
+00:20:38.140 --> 00:20:40.820
+to try and we'll be able to use all of these things
+
+00:20:40.820 --> 00:20:44.520
+otherwise i can try to even create my own server on my ec2
+
+00:20:44.520 --> 00:20:47.480
+instances or maybe on a like a google cloud platform or
+
+00:20:47.480 --> 00:20:50.680
+azure cloud platform or in any other cloud platform i can
+
+00:20:50.680 --> 00:20:53.040
+try to create my own server as simple as that the way we try
+
+00:20:53.040 --> 00:20:56.000
+to do installation of mysql in my local and similarly i can
+
+00:20:56.000 --> 00:20:59.720
+do the same thing on a cloud similarly these databases will
+
+00:20:59.720 --> 00:21:04.600
+go so we can try to store it anywhere we want how
+
+00:21:07.200 --> 00:21:09.520
+embedding models different from embedding like word to
+
+00:21:09.520 --> 00:21:13.480
+vector or ohe so basically how it is different if i'll talk
+
+00:21:13.480 --> 00:21:16.640
+about ohe right one hot encoding so first of all if you
+
+00:21:16.640 --> 00:21:18.900
+remember one hot encoding so basically it is trying to
+
+00:21:18.900 --> 00:21:22.380
+convert all the data into 101010 with the length that we are
+
+00:21:22.380 --> 00:21:24.360
+going to define or with the unique number of nodes that we
+
+00:21:24.360 --> 00:21:24.880
+are going to define or with the unique number of keywords
+
+00:21:24.880 --> 00:21:28.020
+which is available over there so one hot encoding will not
+
+00:21:28.020 --> 00:21:30.720
+be able to understand a semantic and syntactic between the
+
+00:21:30.720 --> 00:21:33.380
+data set at all i believe i have already done a lot of
+
+00:21:33.380 --> 00:21:36.260
+discussion on about that if i'll talk about a word to work
+
+00:21:36.260 --> 00:21:39.280
+obviously it's a neural network based architecture but with
+
+00:21:39.280 --> 00:21:42.660
+the single dense layer so it will be able to do a learning
+
+00:21:42.660 --> 00:21:45.480
+it will do a weight update and training and it will be able
+
+00:21:45.480 --> 00:21:48.700
+to produce a vector that i am looking for but again it will
+
+00:21:48.700 --> 00:21:52.940
+not be able to understand before and after now this kind of
+
+00:21:54.380 --> 00:21:58.080
+so it will be able to eliminate all the drawback that we
+
+00:21:58.080 --> 00:22:01.140
+have inside a word to vector i don't think that we should
+
+00:22:01.140 --> 00:22:04.420
+even do a comparison with the ohe one hot encoding over here
+
+00:22:04.420 --> 00:22:06.980
+but yeah maybe i can do a little bit of comparison with
+
+00:22:06.980 --> 00:22:09.220
+respect to what to vector even what to vector is a new
+
+00:22:09.220 --> 00:22:11.660
+network based architecture and this one is also a neural
+
+00:22:11.660 --> 00:22:14.220
+network based architecture but it's a transformer based
+
+00:22:14.220 --> 00:22:17.000
+architecture that we are talking about right and i believe
+
+00:22:17.000 --> 00:22:19.920
+we all know what transformer does in terms of learning a
+
+00:22:19.920 --> 00:22:24.880
+relationship between a data set fine making sense one hot
+
+00:22:24.880 --> 00:22:27.660
+encoding will have the sparse data no that is one of the
+
+00:22:27.660 --> 00:22:30.300
+scenario obviously it will be having a sparse data other
+
+00:22:30.300 --> 00:22:32.380
+models will be having also sparse data that that's
+
+00:22:32.380 --> 00:22:36.160
+completely fine that's not like a concern at all but again
+
+00:22:36.160 --> 00:22:41.680
+in terms of like a genuine like a comparison right so you
+
+00:22:41.680 --> 00:22:43.980
+should always do a comparison between mango to mango not
+
+00:22:43.980 --> 00:22:47.460
+between a mango to apple so doing comparison between ohe and
+
+00:22:47.460 --> 00:22:50.520
+these kind of embedding models is basically a mango to apple
+
+00:22:50.520 --> 00:22:54.360
+comparison but yeah so So what to vector and then if I'm
+
+00:22:54.360 --> 00:22:57.380
+talking about this transformer based LLM models comparison
+
+00:22:57.380 --> 00:23:00.720
+then obviously it's a mango to mango comparison, a better
+
+00:23:00.720 --> 00:23:03.960
+mango or like a best mango kind of a comparison that we are
+
+00:23:03.960 --> 00:23:09.400
+talking about over here. Okay so first of all we'll try to
+
+00:23:09.400 --> 00:23:12.960
+use a chroma db. So we are going to do a setup of a chroma
+
+00:23:12.960 --> 00:23:16.760
+db in my local and then at the time of deployment, so
+
+00:23:16.760 --> 00:23:19.000
+whenever I'm going to talk about a deployment, so maybe I
+
+00:23:19.000 --> 00:23:22.120
+can try to even teach you that okay so let's try to do a
+
+00:23:22.120 --> 00:23:25.380
+self-hosting otherwise even you can try to go over here and
+
+00:23:25.380 --> 00:23:29.320
+they are giving you some like a pricing and then you can try
+
+00:23:29.320 --> 00:23:32.300
+to even like avail this one right even from here so you will
+
+00:23:32.300 --> 00:23:35.380
+be able to avail this one. So first let's go ahead with the
+
+00:23:35.380 --> 00:23:38.060
+local and then let's will try to move ahead with the
+
+00:23:38.060 --> 00:23:41.820
+platform based. It's just a connectivity that you have to
+
+00:23:41.820 --> 00:23:43.520
+change apart from that you don't have to change anything.
+
+00:23:47.490 --> 00:23:52.710
+Okay so here first let's get started with this one. So code
+
+00:23:52.710 --> 00:23:56.530
+example wise. So here embedding generation. So you will be
+
+00:23:56.530 --> 00:24:02.350
+able to find out a code till this point length embedding.
+
+00:24:02.410 --> 00:24:08.010
+This is for my titan okay. So just we have to copy this
+
+00:24:08.010 --> 00:24:09.950
+particular code so
+
+00:24:12.510 --> 00:24:17.330
+far and then I'll try to show you something. So new file
+
+00:24:17.330 --> 00:24:24.490
+testing.ipynb. So here code. And
+
+00:24:26.860 --> 00:24:28.980
+python
+
+00:24:30.260 --> 00:24:33.000
+environment wise. So I
+
+00:24:35.170 --> 00:24:41.510
+can use any environment okay. So this is basically a code
+
+00:24:41.510 --> 00:24:46.150
+which is already available even inside a URI right. I have
+
+00:24:46.150 --> 00:24:48.270
+shown you the place. So where it is available. So code
+
+00:24:48.270 --> 00:24:51.170
+example and then embedding generation till this point. So
+
+00:24:51.170 --> 00:24:54.810
+this is a code for my text embedding 3 small model which is
+
+00:24:54.810 --> 00:24:57.590
+a GPT based model and this is basically a sample code. We
+
+00:24:57.590 --> 00:25:01.610
+are just changing. Like a. Model name over here right. And
+
+00:25:01.610 --> 00:25:04.950
+then a dimension. So dimension wise this one is better. So
+
+00:25:04.950 --> 00:25:09.210
+this one is 1536 and this one is just 512 dimension. So this
+
+00:25:09.210 --> 00:25:13.710
+is going to give you like a long vector by the way. So here
+
+00:25:13.710 --> 00:25:17.410
+I'm going to use this one. So just copy this one this
+
+00:25:17.410 --> 00:25:20.850
+particular one over here. Now what this entire piece of the
+
+00:25:20.850 --> 00:25:25.270
+code is going to perform at the end of the day. Let's try to
+
+00:25:25.270 --> 00:25:28.490
+understand that part. So here I'm trying to hit my end
+
+00:25:28.490 --> 00:25:31.790
+point. My end point is what? So API you're on one API
+
+00:25:31.790 --> 00:25:34.990
+version one URI alpha embedding. So basically I will be able
+
+00:25:34.990 --> 00:25:38.170
+to reach out to the URI system or your own system. So where
+
+00:25:38.170 --> 00:25:40.850
+we are hosting this model, you all will be able to reach out
+
+00:25:40.850 --> 00:25:44.590
+to that particular place. Now once you will be able to reach
+
+00:25:44.590 --> 00:25:47.770
+out to this particular place. So it requires basically
+
+00:25:47.770 --> 00:25:51.050
+authorization. So it requires basically a key unless and
+
+00:25:51.050 --> 00:25:54.450
+until key is not available, you will not be able to hit it.
+
+00:25:54.490 --> 00:25:58.090
+So you have to replace this static one. Okay. And then you
+
+00:25:58.090 --> 00:26:01.450
+have to paste your own key. So your own key will be
+
+00:26:01.450 --> 00:26:04.470
+available over here, your API token. So just copy it from
+
+00:26:04.470 --> 00:26:09.230
+here, your own key, and then paste it in this particular
+
+00:26:09.230 --> 00:26:12.590
+place, right? Paste it in this particular place. And soon
+
+00:26:12.590 --> 00:26:16.350
+I'm going to release even the SDK. So as you will go to URI,
+
+00:26:16.470 --> 00:26:20.550
+so you will be able to find out a SDK for like a URI client
+
+00:26:20.550 --> 00:26:24.610
+and even for a langchain. So I have created the SDK. So I
+
+00:26:24.610 --> 00:26:27.330
+was not keeping well. So I think in one or two days. I'm
+
+00:26:27.330 --> 00:26:30.850
+going to even make it as a part of PyPI so that you don't
+
+00:26:30.850 --> 00:26:33.870
+have to do anything. Just like you are using these models,
+
+00:26:34.070 --> 00:26:37.350
+right? Like just by doing the installation pip install and
+
+00:26:37.350 --> 00:26:40.790
+URI AI. So inside the same URI AI, I'm going to make even
+
+00:26:40.790 --> 00:26:43.550
+this one available. I think in one or two days, I just have
+
+00:26:43.550 --> 00:26:46.130
+to sit for two hours. And I have to push that particular
+
+00:26:46.130 --> 00:26:50.170
+like library into my like a PyPI package so that it will
+
+00:26:50.170 --> 00:26:53.070
+become global and all of you will be able to use it just by
+
+00:26:53.070 --> 00:26:56.310
+passing your API key. But yeah, even now I can try to use
+
+00:26:56.310 --> 00:26:59.370
+it. But ultimately, I'm just going to create another layer
+
+00:26:59.370 --> 00:27:02.930
+on top of it. So as of now, what you can do is so you can
+
+00:27:02.930 --> 00:27:07.050
+just try to like a copy your entire key over here, right
+
+00:27:07.050 --> 00:27:11.750
+content type. And then here I'm trying to give basically the
+
+00:27:11.750 --> 00:27:15.170
+food was delicious and service was excellent. So this is my
+
+00:27:15.170 --> 00:27:19.130
+input, which I'm trying to give. So once I'm going to give
+
+00:27:19.130 --> 00:27:21.930
+this particular input, the food was delicious and service
+
+00:27:21.930 --> 00:27:24.390
+was excellent. You can try to like change the sentence.
+
+00:27:24.530 --> 00:27:27.930
+That's completely fine. What it will do is it is going to go
+
+00:27:27.930 --> 00:27:30.750
+to this place by using this password by using this
+
+00:27:30.750 --> 00:27:34.470
+authorization and then it is going to use this model text
+
+00:27:34.470 --> 00:27:38.050
+embedding three a small which is a GPT based model. And it
+
+00:27:38.050 --> 00:27:41.390
+is going to give me a response. It is going to give me a
+
+00:27:41.390 --> 00:27:45.390
+response saying that that okay, so this is your final data
+
+00:27:45.390 --> 00:27:48.170
+that you have. This is your final data that you have. So now
+
+00:27:48.170 --> 00:27:51.570
+you can try to use this particular data and then you can try
+
+00:27:51.570 --> 00:27:57.190
+to maybe like a, you know, see the embeddings. You can even
+
+00:27:57.190 --> 00:27:59.990
+try to print the length of the embeddings. You will be able
+
+00:27:59.990 --> 00:28:04.910
+to even see a vector space or like a, the real numeric value
+
+00:28:04.910 --> 00:28:09.330
+of this entire sentence, which this model is going to
+
+00:28:09.330 --> 00:28:11.850
+return. This is already a pre-trained model and it's a big
+
+00:28:11.850 --> 00:28:15.150
+one, right? So almost it has seen the entire world's data.
+
+00:28:15.750 --> 00:28:19.310
+This particular model, if I talk about by open AI, so you
+
+00:28:19.310 --> 00:28:22.290
+will be able to see basically our embeddings and you will be
+
+00:28:22.290 --> 00:28:25.370
+able to even check the length, whatever you want, right? You
+
+00:28:25.370 --> 00:28:27.610
+will be able to observe it each and everything. This is what
+
+00:28:27.610 --> 00:28:31.790
+the sample code is going to do. And I will be using the same
+
+00:28:31.790 --> 00:28:37.730
+to perform the exact similar kind of operation. So is it
+
+00:28:37.730 --> 00:28:39.170
+making sense to all of us guys?
+
+00:28:42.330 --> 00:28:43.930
+Yeah. Is it making sense?
+
+00:28:48.040 --> 00:28:48.480
+Yes.
+
+00:28:57.470 --> 00:29:01.010
+Okay. So console.log, I have just a copy and pasted my react
+
+00:29:01.010 --> 00:29:04.990
+based code over here. So let me go, go to code example
+
+00:29:04.990 --> 00:29:10.090
+embedding. This is my console log. Console log. Okay. So
+
+00:29:10.090 --> 00:29:13.990
+chat completion, embedding, sorry, I have just by mistake,
+
+00:29:14.290 --> 00:29:18.950
+node based. Sometime even I feel confused that I'm working
+
+00:29:18.950 --> 00:29:22.370
+in node or I am working in Python because or maybe
+
+00:29:22.370 --> 00:29:25.670
+JavaScript and Python because I have to switch over from
+
+00:29:25.670 --> 00:29:26.190
+here to there.
+
+00:29:31.500 --> 00:29:35.380
+Yeah. So this is basically a Python doing the same thing. So
+
+00:29:35.380 --> 00:29:37.660
+generate embeddings is the Pythonic function. So the food
+
+00:29:37.660 --> 00:29:40.080
+was delicious. The service was excellent. Just change with
+
+00:29:40.080 --> 00:29:42.920
+your API key. It is going to give you a response. Then you
+
+00:29:42.920 --> 00:29:45.200
+can try to like check the embeddings. You will be able to
+
+00:29:45.200 --> 00:29:48.880
+even like, uh, uh, calculate the vector normalization. You
+
+00:29:48.880 --> 00:29:51.060
+will be even able to check the shape of the embeddings,
+
+00:29:51.120 --> 00:29:53.060
+whatever you want. You can try to check it. So let me show
+
+00:29:53.060 --> 00:29:57.380
+you a demo and then let's go ahead with the full scale or
+
+00:29:57.380 --> 00:30:00.280
+like a application building. So let me change this with my
+
+00:30:00.280 --> 00:30:02.600
+own authorization key and
+
+00:30:04.680 --> 00:30:10.680
+control V control S. Okay. Execute, execute.
+
+00:30:14.080 --> 00:30:14.960
+Okay. Install.
+
+00:30:24.930 --> 00:30:28.230
+Fine guys, I believe this piece of code is not a big deal
+
+00:30:28.230 --> 00:30:29.170
+for any one of us.
+
+00:30:42.250 --> 00:30:47.470
+Yes. So executed this entire function and then now let's try
+
+00:30:47.470 --> 00:30:50.990
+to call this function over here. So let's call this
+
+00:30:50.990 --> 00:30:54.990
+function. And as you can see, it is showing you a first five
+
+00:30:54.990 --> 00:30:59.510
+value of the vector. Uh, this is the entire array. And as
+
+00:30:59.510 --> 00:31:02.410
+you can see, what is the safe safe is basically one, five,
+
+00:31:02.430 --> 00:31:06.230
+three, six means the sentence which I'm trying to pass over
+
+00:31:06.230 --> 00:31:09.770
+here. The food was a delicious and service was excellent. So
+
+00:31:09.770 --> 00:31:12.830
+it is trying to convert this entire sentence and it is
+
+00:31:12.830 --> 00:31:16.990
+trying to represent this entire sentence in this dimension
+
+00:31:16.990 --> 00:31:20.890
+with one, five, three, six number of a numerical parameter.
+
+00:31:21.230 --> 00:31:26.190
+So this is the dimension. So 1,536 is a dimension in which
+
+00:31:26.190 --> 00:31:30.970
+it is trying to represent my entire data set and happily I'm
+
+00:31:30.970 --> 00:31:35.230
+able to generate an embeddings out of it. Yes. So are we
+
+00:31:35.230 --> 00:31:40.700
+able to generate the embeddings guys? Yes. Yeah. So we have
+
+00:31:40.700 --> 00:31:43.140
+given like a, show me the embedding is starting from like a
+
+00:31:43.140 --> 00:31:46.540
+zero to five. If you are just going to remove this part. So
+
+00:31:46.540 --> 00:31:49.240
+it is, it is not going to give you the entire embedding. So
+
+00:31:49.240 --> 00:31:50.940
+this is what we have mentioned.
+
+00:31:53.770 --> 00:31:58.230
+Yeah. So now you have the entire embedding in between. You
+
+00:31:58.230 --> 00:32:00.650
+will be able to find a dot, dot, dot, dot, dot, right.
+
+00:32:00.790 --> 00:32:03.310
+Because my Jupiter will not be able to show you all the
+
+00:32:03.310 --> 00:32:07.370
+data, all the information. Yeah. So all of us are able to
+
+00:32:07.370 --> 00:32:10.650
+get the output. It simply means that, that happily. I'm able
+
+00:32:10.650 --> 00:32:13.230
+to get the output. I'm able to convert my data, uh, this
+
+00:32:13.230 --> 00:32:16.630
+particular sentence, like this particular sentence, I'm able
+
+00:32:16.630 --> 00:32:21.750
+to convert it into a numerical representation, right? Into a
+
+00:32:21.750 --> 00:32:24.650
+numerical representation. Now what I will be able to build
+
+00:32:24.650 --> 00:32:27.950
+out of it, right? What I will be able to build out of it. So
+
+00:32:27.950 --> 00:32:30.750
+obviously I will be able to build a tons of things, our
+
+00:32:30.750 --> 00:32:34.090
+recommendation system, wherever it is required, a search
+
+00:32:34.090 --> 00:32:38.750
+system. So the way people was trying to implement search
+
+00:32:38.750 --> 00:32:42.350
+before. Yeah. In any of the portal or any of the website and
+
+00:32:42.350 --> 00:32:45.650
+the way people are trying to implement a search now is very,
+
+00:32:45.810 --> 00:32:49.030
+very different. LLM has changed even that particular part a
+
+00:32:49.030 --> 00:32:51.950
+lot, the way we were building our recommendation system
+
+00:32:51.950 --> 00:32:55.090
+before and the way we are building a recommended system. Now
+
+00:32:55.090 --> 00:32:59.070
+again, LLM has changed that a lot, the way we were trying to
+
+00:32:59.070 --> 00:33:01.430
+do a semantic or syntactic search operation or semantic
+
+00:33:01.430 --> 00:33:05.050
+syntactic operations before. And now it has completely
+
+00:33:05.050 --> 00:33:08.030
+changed because now we have a luxury. Now we have a
+
+00:33:08.030 --> 00:33:10.510
+flexibility to represent anything. Anything into a very high
+
+00:33:10.510 --> 00:33:14.210
+dimension, store it, and then try to map it, try to like
+
+00:33:14.210 --> 00:33:17.150
+find out the distance in between. And then based on that,
+
+00:33:17.230 --> 00:33:22.250
+try to give a best to my user. So this is the data. This is
+
+00:33:22.250 --> 00:33:25.330
+the data which I'm able to generate. Now what we can do is
+
+00:33:25.330 --> 00:33:29.490
+that we can try to store this data, right? We can try to
+
+00:33:29.490 --> 00:33:33.010
+store this particular data along with this sentence, along
+
+00:33:33.010 --> 00:33:38.410
+with the sentence inside some of my system. Now what system?
+
+00:33:38.570 --> 00:33:40.990
+Okay. In which I'm going to store this entire information.
+
+00:33:41.550 --> 00:33:45.690
+So I'm going to store those entire information into these
+
+00:33:45.690 --> 00:33:49.110
+vector databases, either in chroma, either in pinecone,
+
+00:33:49.210 --> 00:33:52.930
+either in Vaviate, either in Facebook, a semantic search. Is
+
+00:33:52.930 --> 00:33:55.730
+it making sense why we are talking about a vector DB and
+
+00:33:55.730 --> 00:34:01.010
+what we are going to hold inside a vector DB? Yes, everyone.
+
+00:34:07.440 --> 00:34:09.620
+Is it making sense to all of us? Like why we are even
+
+00:34:09.620 --> 00:34:12.380
+talking about a vector database and like, uh, uh, what we
+
+00:34:12.380 --> 00:34:13.040
+are going to store.
+
+00:34:15.860 --> 00:34:18.160
+So it doesn't matter what vector database I'm going to use.
+
+00:34:20.760 --> 00:34:24.340
+Yes. So in any database, I believe you must be aware about
+
+00:34:24.340 --> 00:34:26.800
+at least one of the databases, maybe one of the SQL
+
+00:34:26.800 --> 00:34:30.280
+databases, one of the NoSQL databases, generally in NoSQL
+
+00:34:30.280 --> 00:34:33.520
+database, like a Cassandra or Mongoose, we try to store a
+
+00:34:33.520 --> 00:34:36.160
+document, right? Document means one of the like, uh,
+
+00:34:36.260 --> 00:34:38.680
+information is called as one of the JSON is called as
+
+00:34:38.680 --> 00:34:41.620
+basically a document, right? Uh, if I'll talk about a SQL,
+
+00:34:41.740 --> 00:34:44.440
+uh, kind of a system. So over there, we try to store data
+
+00:34:44.440 --> 00:34:47.620
+into a tabular format, a structured data. Yeah. So, you
+
+00:34:47.620 --> 00:34:50.460
+know, like a based on the column. Yeah. We try to store the
+
+00:34:50.460 --> 00:34:54.120
+data set now here, what we are going to store. So here we
+
+00:34:54.120 --> 00:34:57.440
+are going to store basically this one and this database has
+
+00:34:57.440 --> 00:35:01.180
+been designed in such a way that whenever I'm going to
+
+00:35:01.180 --> 00:35:06.240
+write, so whenever I'm going to perform a search means let's
+
+00:35:06.240 --> 00:35:09.720
+suppose if I'm trying to give this sentence to just to
+
+00:35:09.720 --> 00:35:12.040
+perform a search, this particular sentence, or maybe I'm
+
+00:35:12.040 --> 00:35:15.740
+trying to read out the entire PDF, right? And then I'm
+
+00:35:15.740 --> 00:35:19.180
+trying to do a search operation over here. So what it will
+
+00:35:19.180 --> 00:35:23.000
+do? So it will convert this entire data set into its
+
+00:35:23.000 --> 00:35:25.540
+numerical representation, into its numerical representation.
+
+00:35:25.740 --> 00:35:31.060
+And then it will try to find out a distance between a data
+
+00:35:31.060 --> 00:35:34.520
+set that you are trying to pass for a search and the
+
+00:35:34.520 --> 00:35:39.620
+existing vector, which is already available into my DB. And
+
+00:35:39.620 --> 00:35:43.200
+whichever is going to give me like a, a nearest result. It
+
+00:35:43.200 --> 00:35:46.920
+is going to give you that as a outcome. So we are storing
+
+00:35:46.920 --> 00:35:49.560
+the text. It's embeddings. Uh. We are storing the value.
+
+00:35:49.600 --> 00:35:52.900
+Exactly. Exactly. This is what we are trying to store. And
+
+00:35:52.900 --> 00:35:56.580
+then when we are going to do a search, right? So DB,
+
+00:35:56.700 --> 00:35:58.860
+obviously a storage operation, it is going to do what is
+
+00:35:58.860 --> 00:36:02.100
+storage. This is storage. When we are going to do a search,
+
+00:36:02.220 --> 00:36:06.220
+I'll show you one small demos also, uh, and first one small
+
+00:36:06.220 --> 00:36:08.680
+demo. And then I'll try to write a lot of like a code over
+
+00:36:08.680 --> 00:36:12.400
+here. So how such is going to happen. So search is going to
+
+00:36:12.400 --> 00:36:15.720
+happen based on that distance check, for example. So I'm,
+
+00:36:15.800 --> 00:36:19.340
+let's suppose I'm going to perform a search. Let me close.
+
+00:36:19.420 --> 00:36:25.330
+This lot of like a tabs are open in my system. Oh, all these
+
+00:36:25.330 --> 00:36:26.830
+things I have discussed in my previous class.
+
+00:36:31.340 --> 00:36:38.250
+See far. Okay. Hmm. Okay. So basically how this search is
+
+00:36:38.250 --> 00:36:42.110
+actually going to happen at the end of the day. So search is
+
+00:36:42.110 --> 00:36:45.710
+going to happen based on our distance calculation. So there
+
+00:36:45.710 --> 00:36:48.090
+are something called as cosine similarity that we try to
+
+00:36:48.090 --> 00:36:50.750
+find out. There is something called as Euclidean distance.
+
+00:36:50.910 --> 00:36:55.090
+We try to find out, uh, there is, there is like a, uh, like
+
+00:36:55.090 --> 00:36:58.010
+a, something called as IP. So based on that, we try to do
+
+00:36:58.010 --> 00:37:01.470
+all of this kind of a search. Let me show you one of the
+
+00:37:01.470 --> 00:37:04.670
+most popular one and which chroma DV does by default and
+
+00:37:04.670 --> 00:37:06.850
+which is called as cosine similarities, how calculation
+
+00:37:06.850 --> 00:37:10.610
+happens. So let's suppose we have this vector, right? We
+
+00:37:10.610 --> 00:37:16.870
+have this vector and then I'll try to call, uh, let me
+
+00:37:16.870 --> 00:37:18.170
+parameterize this one.
+
+00:37:21.120 --> 00:37:27.090
+Let me do one thing. I'll just try to parameterize this. So
+
+00:37:27.090 --> 00:37:29.870
+here I'm going to change. So generate IP. Generate
+
+00:37:29.870 --> 00:37:34.110
+embeddings. So I'll pass my text data over here. I'm just
+
+00:37:34.110 --> 00:37:38.690
+changing the same code guys, X data and here. So I'm going
+
+00:37:38.690 --> 00:37:42.290
+to give the input text input, same data. So I'm going to
+
+00:37:42.290 --> 00:37:47.370
+give as a input over here, control S and then click generate
+
+00:37:47.370 --> 00:37:51.650
+embeddings, generate embeddings, and then I'm going to pass.
+
+00:37:51.770 --> 00:37:55.330
+My name is Danshu Kumar,
+
+00:37:58.060 --> 00:38:01.960
+Danshu Kumar. Now. So this is going to give you the.
+
+00:38:02.300 --> 00:38:04.400
+Embeddings. This is going to give you the embeddings as
+
+00:38:04.400 --> 00:38:06.780
+simple as that. It is going to give you the embeddings. It
+
+00:38:06.780 --> 00:38:10.820
+is trying to return me the embeddings over here, a complete
+
+00:38:10.820 --> 00:38:14.740
+embeddings. Maybe I can try to hold it. So our data one
+
+00:38:14.740 --> 00:38:19.560
+embeddings fine. I can go on. Even I can check what is
+
+00:38:19.560 --> 00:38:23.640
+holding inside the, sorry, I can go and I can check what is
+
+00:38:23.640 --> 00:38:26.120
+holding inside the data one. So data one is nothing but it's
+
+00:38:26.120 --> 00:38:29.040
+a vector of one, five, three, six. So basically it's a
+
+00:38:29.040 --> 00:38:32.160
+vector space of this one. As simple as that. Now. Okay. Now
+
+00:38:32.160 --> 00:38:37.160
+I can try to call the exact same thing and I can try to make
+
+00:38:37.160 --> 00:38:43.680
+it as a data too. And here Sudhanshu Kumar teaches,
+
+00:38:46.960 --> 00:38:48.260
+takes
+
+00:38:50.180 --> 00:38:56.760
+class for tech. Okay. So now this is my data too. This is my
+
+00:38:56.760 --> 00:39:01.080
+data too. So here is my data too. Now these are two vectors.
+
+00:39:01.200 --> 00:39:03.780
+This is one of the vector and this is the another vector
+
+00:39:03.780 --> 00:39:06.380
+which I have generated. Now. I believe we all understands
+
+00:39:06.380 --> 00:39:09.260
+and we all know what is the equilateral distance, right? So
+
+00:39:09.260 --> 00:39:11.860
+in terms of equilateral distance, so let's suppose we have
+
+00:39:11.860 --> 00:39:15.280
+two points, right? We have two points. So obviously we have
+
+00:39:15.280 --> 00:39:18.940
+two vectors, let's suppose. So we have two points over here
+
+00:39:18.940 --> 00:39:21.740
+and in a 2D dimension, I'm trying to show you. So let's
+
+00:39:21.740 --> 00:39:25.300
+suppose we have X1 and then we have Y1 and then we have like
+
+00:39:25.300 --> 00:39:28.980
+a X2 and we have Y2. So what is our distance? So what is the
+
+00:39:28.980 --> 00:39:30.660
+equilateral distance between these two? So equilateral
+
+00:39:30.660 --> 00:39:33.300
+distance is nothing but basically distance is nothing but
+
+00:39:33.300 --> 00:39:39.400
+root of X1 and root of Y1 minus X2 square plus Y1 minus Y2
+
+00:39:39.400 --> 00:39:43.160
+square, right? So this is going to be Euclidean distance by
+
+00:39:43.160 --> 00:39:45.720
+the way, this is going to be Euclidean distance. Now I have
+
+00:39:45.720 --> 00:39:48.440
+two dimensional vector over here. This is the meaning of a
+
+00:39:48.440 --> 00:39:52.500
+vector representation now. So in this case, in case of data
+
+00:39:52.500 --> 00:39:55.260
+1 and in case of a data 2, what is the dimension of this
+
+00:39:55.260 --> 00:40:00.400
+vector? 1, 5, 3, 6. So X1, Y1, Z1 or X1, X2, X3, X4 and so
+
+00:40:00.400 --> 00:40:05.400
+on. Then Y1, Y2 in this way. We have 1, 5, 3, 6 here. And 1,
+
+00:40:05.520 --> 00:40:09.160
+5, 3, 6 here means that mean number of dimensions we are
+
+00:40:09.160 --> 00:40:12.720
+trying to acquire. So again, I think if I'm going to ask you
+
+00:40:12.720 --> 00:40:15.200
+that try to find out Euclidean distance between these two
+
+00:40:15.200 --> 00:40:18.020
+vectors, you will be able to do it, right? So X1 minus X2,
+
+00:40:18.100 --> 00:40:21.600
+Y1 minus Y2, Z1 minus Z2, A1 minus A2, whatever is the
+
+00:40:21.600 --> 00:40:23.740
+dimension, right? And eventually you will be able to find
+
+00:40:23.740 --> 00:40:27.880
+out the Euclidean distance. So whenever, this is how
+
+00:40:27.880 --> 00:40:30.040
+Euclidean distance we can try to find out and we can try to
+
+00:40:30.040 --> 00:40:33.160
+write our own function or we can try to call any of the
+
+00:40:33.160 --> 00:40:35.520
+NumPy inbuilt function, which is going to give me eventually
+
+00:40:35.520 --> 00:40:38.920
+Euclidean distances. So it's a easy peasy kind of a task
+
+00:40:38.920 --> 00:40:42.640
+now. So by default, the Chroma DB, which I'm going to use.
+
+00:40:42.820 --> 00:40:47.080
+So basically that particular DB, again, there is an option
+
+00:40:47.080 --> 00:40:52.140
+of finding out a distance between two vectors based on like
+
+00:40:52.140 --> 00:40:55.980
+Euclidean distances. But by default, they are going to use a
+
+00:40:55.980 --> 00:40:59.020
+cosine similarity. Now what is the meaning of by default, by
+
+00:40:59.020 --> 00:41:01.740
+the way, this cosine similarity. So cosine similarity is
+
+00:41:01.740 --> 00:41:05.740
+nothing but again on the same term. Let's suppose we have
+
+00:41:05.740 --> 00:41:09.740
+two vectors, right? In a 2D space. So this is one of the
+
+00:41:09.740 --> 00:41:12.180
+vector, this is one of the vector. So cosine similarity
+
+00:41:12.180 --> 00:41:16.140
+always try to measure a theta over here, a cos theta over
+
+00:41:16.140 --> 00:41:19.860
+here. Simple. Less the theta, more closer the data set is.
+
+00:41:20.140 --> 00:41:23.740
+More the theta, less closer the data set is. As simple as
+
+00:41:23.740 --> 00:41:28.300
+that. So this is something which is going to be done by
+
+00:41:28.300 --> 00:41:32.520
+basically a cosine similarity. So based on that. It is going
+
+00:41:32.520 --> 00:41:35.140
+to find out basically a cosine distances, and then it is
+
+00:41:35.140 --> 00:41:38.060
+going to give you the result. This is how search is going to
+
+00:41:38.060 --> 00:41:40.700
+happen. I'm talking about a search that when I'm trying to
+
+00:41:40.700 --> 00:41:44.500
+do a search, what it will do. So it will try to take your
+
+00:41:44.500 --> 00:41:47.980
+search embeddings. It will try to map it with all the other
+
+00:41:47.980 --> 00:41:50.420
+embeddings, which is already available into your DB.
+
+00:41:50.980 --> 00:41:54.120
+Whichever is going to give a less value of theta. It is
+
+00:41:54.120 --> 00:41:57.340
+eventually going to be your nearest search means a more
+
+00:41:57.340 --> 00:42:00.880
+matching sentences as simple as that, right? So it is going
+
+00:42:00.880 --> 00:42:02.900
+to. It is going to basically find out the theta in between.
+
+00:42:03.220 --> 00:42:06.720
+Now if I have to show you a code representation, a raw code
+
+00:42:06.720 --> 00:42:10.100
+representation between data one and data two. So fine. Let's
+
+00:42:10.100 --> 00:42:15.140
+try to keep, let's try to import first of all numpy, numpy
+
+00:42:15.140 --> 00:42:20.360
+as num. And if you have any question guys, please go ahead
+
+00:42:20.360 --> 00:42:22.160
+and ask. I'm looking at your chat.
+
+00:42:38.410 --> 00:42:42.430
+Yeah. So just try to import numpy and here. So I'm just
+
+00:42:42.430 --> 00:42:45.070
+trying to show you how actually search happens because till
+
+00:42:45.070 --> 00:42:48.610
+this point, converting something into a vector. I'm able to
+
+00:42:48.610 --> 00:42:51.350
+show you, right? I'm able to convert it. Now how actually
+
+00:42:51.350 --> 00:42:54.110
+search is going to happen. All the data is available in my
+
+00:42:54.110 --> 00:42:56.490
+chroma DV, right? So by default, what chroma DV is going to
+
+00:42:56.490 --> 00:43:00.250
+do. Then I'll be talking about even a Facebook AI semantic
+
+00:43:00.250 --> 00:43:03.310
+search. So what kind of algorithm they are using, what kind
+
+00:43:03.310 --> 00:43:07.010
+of a calculation they are doing in a backend. Similarly, I
+
+00:43:07.010 --> 00:43:10.530
+will show you like a, what pinecone is doing, what Baviot is
+
+00:43:10.530 --> 00:43:14.730
+doing so that even those search part, a matching part is not
+
+00:43:14.730 --> 00:43:17.970
+supposed to be a black box for any one of us. And again, I
+
+00:43:17.970 --> 00:43:20.950
+can create similar kind of a database on my own as well,
+
+00:43:21.130 --> 00:43:24.130
+right? That is practically possible. So it's not very tough
+
+00:43:24.130 --> 00:43:26.710
+to create such kind of a databases, which is going to
+
+00:43:26.710 --> 00:43:29.950
+perform similarly like a chroma DB and Baviot and pinecone.
+
+00:43:30.070 --> 00:43:32.330
+You can do it. Basically you can launch your own startup.
+
+00:43:32.830 --> 00:43:35.270
+People are launching it. There are now hundreds of like a
+
+00:43:35.270 --> 00:43:38.830
+startup. So who is just trying to provide you a services for
+
+00:43:38.830 --> 00:43:44.110
+like a vector stories that just for vector stories. And
+
+00:43:44.110 --> 00:43:46.710
+almost everyone is doing that. Like similar kind of a
+
+00:43:46.710 --> 00:43:48.750
+service. Similar things. So maybe you can try to like, think
+
+00:43:48.750 --> 00:43:54.600
+about launching your own startup as well. Okay. So we have
+
+00:43:54.600 --> 00:43:59.220
+two data. So we have our data one and we have basically our
+
+00:43:59.220 --> 00:44:04.860
+data to over here and I'll try to see that how it is going
+
+00:44:04.860 --> 00:44:07.720
+to perform our distance operation in between based on the
+
+00:44:07.720 --> 00:44:11.200
+cosine similarity. Now the formula for this cosine
+
+00:44:11.200 --> 00:44:17.260
+similarity is basically a little bit complex numpy dot dot
+
+00:44:17.260 --> 00:44:21.840
+operation. It is going to perform between our data one and
+
+00:44:21.840 --> 00:44:29.020
+data to divided by this is the formula basically. So numpy
+
+00:44:29.020 --> 00:44:30.760
+dot dot
+
+00:44:36.140 --> 00:44:39.060
+normalize it, but
+
+00:44:41.710 --> 00:44:50.910
+sorry, data one and into numpy dot try to perform the
+
+00:44:50.910 --> 00:44:53.810
+lineage and then normalize it data
+
+00:44:56.440 --> 00:45:01.840
+too. Now. This is actually going to give you a cosine
+
+00:45:01.840 --> 00:45:04.900
+similarity. That's it. This is going to give you basically a
+
+00:45:04.900 --> 00:45:10.080
+cosine similarity result at the end of the day. As simple as
+
+00:45:10.080 --> 00:45:15.140
+that. So a dot product of like a two vector and then divided
+
+00:45:15.140 --> 00:45:19.580
+by. So this like a number in lineage. So linear algebra
+
+00:45:19.580 --> 00:45:22.700
+function that we are trying to call with the normalization.
+
+00:45:23.020 --> 00:45:26.640
+And this is going to give me a cosine similarity. So what is
+
+00:45:26.640 --> 00:45:29.140
+the cosine similarity? Between two data set? It's a point
+
+00:45:29.140 --> 00:45:33.060
+five five percent. Now what is the cosine? So after finding
+
+00:45:33.060 --> 00:45:37.900
+out the cosine similarity, this is basically a cosine cosine
+
+00:45:40.260 --> 00:45:43.340
+similarity. Now so system is going to give you a result
+
+00:45:43.340 --> 00:45:44.860
+based on the cosine distances.
+
+00:45:48.420 --> 00:45:51.440
+Cosine cosine distance is nothing but one minus cosine
+
+00:45:51.440 --> 00:45:57.540
+similarity. So basically this is your evaluation criteria.
+
+00:45:57.660 --> 00:46:01.460
+So based on this distance. It is going to map. So for
+
+00:46:01.460 --> 00:46:05.000
+example, I have two data set, right? So whenever it is going
+
+00:46:05.000 --> 00:46:08.560
+to give me a result. So for example, I'm going to create one
+
+00:46:08.560 --> 00:46:12.420
+more data set over here. Let me create one more data set. So
+
+00:46:12.420 --> 00:46:16.640
+data three, I'm going to create. So data one, data two and
+
+00:46:16.640 --> 00:46:20.000
+data three, I'm going to create. Now here people
+
+00:46:27.750 --> 00:46:34.370
+call me. By my name, Sudhanshu Kumar. Okay. This is my data
+
+00:46:34.370 --> 00:46:39.610
+three. So data. One is there. Data two is there and data
+
+00:46:39.610 --> 00:46:43.230
+three is there. Fine. Data three is there. All these three
+
+00:46:43.230 --> 00:46:46.930
+data set is there. And we have like a people call me by my
+
+00:46:46.930 --> 00:46:50.510
+name Sudhanshu Kumar. Then Sudhanshu Kumar takes classes for
+
+00:46:50.510 --> 00:46:54.810
+tech. My name is Sudhanshu Kumar. Now so what do you think
+
+00:46:54.810 --> 00:47:00.430
+guys, which two data set should be closer? Data one, three,
+
+00:47:00.550 --> 00:47:02.250
+data one or two.
+
+00:47:16.690 --> 00:47:19.770
+Sorry. Have I made some mistake Ram in saying something?
+
+00:47:26.260 --> 00:47:31.320
+Yeah. So which one will be like more closer?
+
+00:47:34.290 --> 00:47:39.090
+So Ram, I think he has commented on this cosine similarity.
+
+00:47:39.170 --> 00:47:43.470
+So basically see cosine similarity always try to look into
+
+00:47:43.470 --> 00:47:48.950
+how close the angle of two vectors are. As simple as that.
+
+00:47:49.090 --> 00:47:53.170
+So it always looks for the closeness. By the way, I think
+
+00:47:53.170 --> 00:47:55.310
+you are having some different version.
+
+00:48:02.560 --> 00:48:05.600
+But I think Uri has given you my version of the angle. And
+
+00:48:05.600 --> 00:48:09.200
+so indicating that the vector are perfectly aligned and
+
+00:48:09.200 --> 00:48:12.340
+those are very close at the angle increased to one degree,
+
+00:48:12.600 --> 00:48:14.880
+the cosine becomes minus one indicate that a vector are
+
+00:48:14.880 --> 00:48:18.320
+pointed in a opposite direction, which means that they are
+
+00:48:18.320 --> 00:48:22.460
+far apart as possible. So the closer the angle is to zero
+
+00:48:22.460 --> 00:48:24.540
+degree, the closer the vector exactly. I think this is what
+
+00:48:24.540 --> 00:48:27.840
+I was trying to say, Ram, maybe you have some confusion, but
+
+00:48:27.840 --> 00:48:31.160
+yeah, my version was same. Now here, because this is what
+
+00:48:31.160 --> 00:48:34.060
+cosine similarity does. So how close the angle between two
+
+00:48:34.060 --> 00:48:36.280
+vectors are. And based on that it is going to give you the
+
+00:48:36.280 --> 00:48:39.080
+result. Now most of you are saying that that sentence one
+
+00:48:39.080 --> 00:48:43.700
+and three will be more closer, right? So most of the people
+
+00:48:43.700 --> 00:48:46.880
+are saying except Sundar, Sundar is saying one and two. So
+
+00:48:46.880 --> 00:48:50.480
+Sundar is trying to say that my name is Dhanashuk Kumar is
+
+00:48:50.480 --> 00:48:53.460
+more closer to Dhanashuk Kumar test classes for tech as
+
+00:48:53.460 --> 00:48:58.060
+compared to my name is Dhanashuk Kumar. People call me by my
+
+00:48:58.060 --> 00:49:00.360
+name Dhanashuk Kumar. Let's see. Let's see mathematically
+
+00:49:00.360 --> 00:49:05.320
+even I don't know the actual answer. Right? So how I will be
+
+00:49:05.320 --> 00:49:08.160
+able to check it. Let's do the math. Let's try to call the
+
+00:49:08.160 --> 00:49:11.460
+cosine similarity things and let's try to do the math over
+
+00:49:11.460 --> 00:49:16.720
+here. So here I have checked data one and data two, right? I
+
+00:49:16.720 --> 00:49:21.320
+have already checked. So now let's try to do it for data one
+
+00:49:21.320 --> 00:49:24.640
+and data three. I'll just change the data. So data three and
+
+00:49:24.640 --> 00:49:28.400
+then two and then data one and data three and cosine
+
+00:49:28.400 --> 00:49:33.940
+similarity two. I've just changed the value over here. So
+
+00:49:33.940 --> 00:49:40.580
+this is a cosine similarity. Now print it. It's 82, right?
+
+00:49:40.700 --> 00:49:43.600
+Now what is the cosine distances? How I will be able to find
+
+00:49:43.600 --> 00:49:46.360
+out the cosine distance. So cosine distance, I will be able
+
+00:49:46.360 --> 00:49:50.180
+to find out by doing one minus, right? I think all of you
+
+00:49:50.180 --> 00:49:56.100
+are able to see the result anyhow. So cosine distance is 0
+
+00:49:56.100 --> 00:50:03.640
+.17. Yes. So distance between distance between data. One
+
+00:50:03.640 --> 00:50:07.520
+minus. One and data. Two is what? So distance between data
+
+00:50:07.520 --> 00:50:10.760
+one and data two, what was the distance by the way? So
+
+00:50:10.760 --> 00:50:17.540
+distance between data one and data two data one. Where is my
+
+00:50:17.540 --> 00:50:20.200
+data? One data two distance? Yeah. So distance between
+
+00:50:20.200 --> 00:50:24.100
+cosine distance between these two is 0.44 data. One and data
+
+00:50:24.100 --> 00:50:31.360
+too. And then distance between data one and data three is
+
+00:50:31.360 --> 00:50:39.900
+what? 0.17 yeah 0.17 so let's suppose let's suppose if you
+
+00:50:39.900 --> 00:50:44.220
+have like a inserted all the data 2 and data 3 into some
+
+00:50:44.220 --> 00:50:48.340
+databases right now what it is going to give you as an
+
+00:50:48.340 --> 00:50:50.480
+outcome can i say that it is going to give you like whenever
+
+00:50:50.480 --> 00:50:53.580
+you are trying to like a search for data one uh you are
+
+00:50:53.580 --> 00:50:56.860
+trying to match for with data one so which data it is going
+
+00:50:56.860 --> 00:50:59.060
+to give you as a return can i say it is going to give you
+
+00:50:59.060 --> 00:51:01.080
+return as a data 3 yes
+
+00:51:04.920 --> 00:51:08.740
+can i see it mathematically guys so this will be the return
+
+00:51:08.740 --> 00:51:11.460
+when i am going to search data one it is not going to return
+
+00:51:11.460 --> 00:51:14.460
+data 2 as a best search it is going to return data 3 as a
+
+00:51:14.460 --> 00:51:16.940
+best search can i say that and how it is happening i think
+
+00:51:16.940 --> 00:51:18.800
+we know the answer akas
+
+00:51:33.750 --> 00:51:38.070
+is pinging his key as well so akas it will be better if you
+
+00:51:38.070 --> 00:51:40.550
+are not going to share your key over here because everyone
+
+00:51:40.550 --> 00:51:43.850
+is having their own key they can go and copy paste otherwise
+
+00:51:43.850 --> 00:51:46.770
+you will end up exhausting your limit and we will not be
+
+00:51:46.770 --> 00:51:48.810
+able to help you out in that case yeah
+
+00:51:53.220 --> 00:51:57.540
+so i believe we are able to understand that how search
+
+00:51:57.540 --> 00:52:01.660
+happens plus we are able to understand that how we are
+
+00:52:01.660 --> 00:52:06.200
+trying to create uh basically our embeddings both part is
+
+00:52:06.200 --> 00:52:11.600
+clear guys to all of us so again i am going to reiterate
+
+00:52:11.600 --> 00:52:17.580
+taking our text data text data converting it into a
+
+00:52:19.440 --> 00:52:26.960
+embedding vector done right and then search operation can i
+
+00:52:26.960 --> 00:52:31.800
+say that what happens in a backend is clear to us
+
+00:52:35.410 --> 00:52:39.110
+how we do that for the hughes data set i mean like i have
+
+00:52:39.110 --> 00:52:42.810
+shown you x1 x2 right similar way so whether data dimension
+
+00:52:42.810 --> 00:52:46.870
+is two dimension or maybe a 2000 dimension your comp this is
+
+00:52:46.870 --> 00:52:49.090
+the reason you are using computer right otherwise for two
+
+00:52:49.090 --> 00:52:51.690
+dimensional data i don't even need like a python code i can
+
+00:52:51.690 --> 00:52:55.070
+do it like a just by writing a mathematical function itself
+
+00:52:55.070 --> 00:52:59.610
+i can do it easily i can do it yeah so can i say that this
+
+00:52:59.610 --> 00:53:02.630
+funnel is clear so how we are trying to take our text input
+
+00:53:02.630 --> 00:53:05.950
+how we are trying to convert it into its embedding vector
+
+00:53:05.950 --> 00:53:10.430
+and when i say that i am going to do a search can i say that
+
+00:53:10.430 --> 00:53:17.850
+i will be able to do it right now here here vector db comes
+
+00:53:17.850 --> 00:53:20.110
+into a picture and here my
+
+00:53:22.380 --> 00:53:28.560
+embeddings model come into a picture can i say that this is
+
+00:53:28.560 --> 00:53:31.700
+the place where whether it's a chroma whether it's a wave
+
+00:53:31.700 --> 00:53:35.380
+yet whether it's a pine cone whether it's a faiss facebook
+
+00:53:35.380 --> 00:53:39.080
+ai semantic search all these things comes over here right in
+
+00:53:39.080 --> 00:53:41.660
+this particular place where i will store the final
+
+00:53:41.660 --> 00:53:44.840
+information the information that we have generated and this
+
+00:53:44.840 --> 00:53:47.400
+kind of a model whether i'm using our amazon titan model
+
+00:53:47.400 --> 00:53:50.560
+whether i'm using a gpt a small case model all these things
+
+00:53:50.560 --> 00:53:54.060
+all these embedding models will come over here so i think
+
+00:53:54.060 --> 00:53:57.620
+conceptually things are pretty much clear to all of us
+
+00:53:57.620 --> 00:53:58.720
+anyone
+
+00:54:00.840 --> 00:54:02.340
+who is having a doubt please comment below and i will be
+
+00:54:02.340 --> 00:54:03.760
+happy to answer your questions in the next video. please let
+
+00:54:03.760 --> 00:54:06.580
+me know guys if you have any kind of a doubt ram
+
+00:54:28.910 --> 00:54:32.350
+is saying i'm just clarifying my doubts cosine minus one
+
+00:54:32.350 --> 00:54:36.650
+means higher similarity which means higher angle towards cos
+
+00:54:36.650 --> 00:54:41.910
+one means high dimension less angle towards zero in terms of
+
+00:54:41.910 --> 00:54:47.750
+its high dimension means high dimensionality meaning high
+
+00:54:47.750 --> 00:54:52.650
+okay high dis sorry dissimilarity less the angle towards
+
+00:54:52.650 --> 00:54:57.850
+zero in terms of vector dv okay we are so maybe our both
+
+00:54:57.850 --> 00:55:00.670
+interpretation is different but yeah so a simple meaning is
+
+00:55:00.670 --> 00:55:04.910
+a closer the angle that's it wider the angle more the
+
+00:55:04.910 --> 00:55:07.470
+distances closer the angle less the distances
+
+00:55:12.560 --> 00:55:18.560
+okay so this part is clear now let's start doing it with
+
+00:55:18.560 --> 00:55:23.120
+respect to a chroma dv so when to apply a cosine or when to
+
+00:55:23.120 --> 00:55:28.060
+apply a euclidean again there is no hard and fast or like a
+
+00:55:29.180 --> 00:55:32.460
+linear method so you can try to test it which one is working
+
+00:55:32.460 --> 00:55:34.900
+in an optimized way based on the data that we are trying to
+
+00:55:34.900 --> 00:55:37.080
+store you can try to choose cosine you can try to choose
+
+00:55:37.080 --> 00:55:42.400
+euclidean and again cosine and euclidean is not the only way
+
+00:55:42.400 --> 00:55:46.380
+so for example facebook ai semantic search db which is a
+
+00:55:46.380 --> 00:55:49.100
+part of your syllabus so when i'm going to teach that part
+
+00:55:49.100 --> 00:55:54.340
+i'm going to talk about a approximate nearest neighbor so i
+
+00:55:54.340 --> 00:55:57.640
+believe like if you are coming from a machine learning class
+
+00:55:57.640 --> 00:56:00.800
+so recently i talked about a k nearest neighbor over there
+
+00:56:00.800 --> 00:56:03.740
+right a k nearest neighbor algorithm over there so where it
+
+00:56:03.740 --> 00:56:05.960
+tried to create the cluster with the similar kind of a data
+
+00:56:05.960 --> 00:56:10.780
+so the farsi database the like a farsi vector db facebook as
+
+00:56:10.780 --> 00:56:15.440
+semantic search database so primarily it uses nearest
+
+00:56:15.440 --> 00:56:20.280
+neighbor approximate nearest neighbor technique to find out
+
+00:56:20.280 --> 00:56:25.660
+the similarity so everyone is going to yeah so the canon
+
+00:56:25.660 --> 00:56:27.580
+right so basically there is something called approximate
+
+00:56:27.580 --> 00:56:30.560
+nearest neighbor so k nearest neighbor means five nearest
+
+00:56:30.560 --> 00:56:32.740
+neighbor 10 nearest neighbor this is where k comes into
+
+00:56:32.740 --> 00:56:34.900
+picture right and there is a term called as approximate
+
+00:56:34.900 --> 00:56:37.980
+nearest neighbor it almost works in the same way with a very
+
+00:56:37.980 --> 00:56:41.620
+little modification right so it's it's coming from the
+
+00:56:41.620 --> 00:56:43.620
+machine learning class by the way now
+
+00:56:49.180 --> 00:56:51.940
+k nearest neighbor classification doctor i'm talking about
+
+00:56:51.940 --> 00:56:57.390
+my bad if i have said like clustering so k min is basically
+
+00:56:57.390 --> 00:56:59.650
+clustering k nearest neighbor is a classification so
+
+00:56:59.650 --> 00:57:02.110
+technically it's using a classification k nearest neighbor
+
+00:57:02.110 --> 00:57:05.030
+classification to divide it into like a different different
+
+00:57:05.030 --> 00:57:08.270
+kind of classes so approximate nearest neighbor basically
+
+00:57:08.270 --> 00:57:11.390
+try to use so when i'll talk about fasi i'll talk about that
+
+00:57:11.390 --> 00:57:15.270
+a little bit but yes technique is not going to be same in
+
+00:57:15.270 --> 00:57:23.420
+terms of doing a search operation okay so now let's do one
+
+00:57:23.420 --> 00:57:25.040
+thing there
+
+00:57:28.560 --> 00:57:32.380
+is another searching technique called as ip inner product so
+
+00:57:32.380 --> 00:57:34.600
+inner product cosine similarity equivalent distance
+
+00:57:34.600 --> 00:57:40.580
+approximate nearest neighbor based on that like you will be
+
+00:57:40.580 --> 00:57:43.040
+able to do a search and you
+
+00:57:50.530 --> 00:57:51.690
+will be able to do a search why we should use approximate
+
+00:57:51.690 --> 00:57:55.310
+nearest neighbor so that you can avoid calculating a
+
+00:57:55.310 --> 00:57:58.750
+distance between your input string or your input embeddings
+
+00:57:58.750 --> 00:58:03.950
+and the rest of the embeddings right so basically the time
+
+00:58:03.950 --> 00:58:07.670
+complexity for that one is going to be o n but here so it's
+
+00:58:07.670 --> 00:58:11.330
+going to be i think o square a time complexity because you
+
+00:58:11.330 --> 00:58:13.230
+are matching every time you are going to enter some text
+
+00:58:13.230 --> 00:58:15.910
+every time you are going to enter some data it is going to
+
+00:58:15.910 --> 00:58:19.750
+calculate a distance with everyone right everyone so you can
+
+00:58:19.750 --> 00:58:23.430
+avoid that part the answer is maybe i can try to build
+
+00:58:23.430 --> 00:58:26.030
+something so where i don't have to go and check a distance
+
+00:58:26.030 --> 00:58:29.010
+with everyone and then give me the output so
+
+00:58:32.980 --> 00:58:35.520
+what is the difference between k and k means one is a
+
+00:58:35.520 --> 00:58:37.720
+classification algorithm which works with the label data
+
+00:58:37.720 --> 00:58:40.580
+supervised and the k means is basically a clustering so
+
+00:58:40.580 --> 00:58:43.800
+which works with the unsupervised where we don't have y any
+
+00:58:46.710 --> 00:58:48.750
+particular reason no sanjeev there is no particular reason
+
+00:58:48.750 --> 00:58:51.830
+maybe tomorrow if you are going to create it so maybe in our
+
+00:58:51.830 --> 00:58:53.890
+initial days you will just go ahead and say that okay i'll
+
+00:58:53.890 --> 00:58:58.330
+be using cosine like other options are a parameter this is
+
+00:58:58.330 --> 00:59:03.410
+what chroma db has done okay let's move ahead now here so i
+
+00:59:03.410 --> 00:59:10.350
+am going to create a python file basically uh chroma db demo
+
+00:59:10.350 --> 00:59:14.450
+dot pi file let me give you a demo guys uh for this chroma
+
+00:59:14.450 --> 00:59:18.270
+db one by one one by one so where we are going to complete
+
+00:59:18.270 --> 00:59:21.870
+the entire funnel and i will be taking a multiple sentences
+
+00:59:21.870 --> 00:59:26.850
+i will not be taking just one single sentences and then this
+
+00:59:26.850 --> 00:59:30.310
+multiple sentences separately into uh different different
+
+00:59:30.310 --> 00:59:34.490
+like a vector space and uh sorry not different vector space
+
+00:59:34.490 --> 00:59:37.750
+uh embeddings i will be able to create for different
+
+00:59:37.750 --> 00:59:40.890
+sentences and then eventually i'll try to store it inside my
+
+00:59:40.890 --> 00:59:42.950
+chroma db so
+
+00:59:45.030 --> 00:59:48.790
+to do that right to achieve this one first of all what you
+
+00:59:48.790 --> 00:59:53.730
+have to do is so you have to do a pip install chroma pip
+
+01:00:02.150 --> 01:00:06.890
+install c-h-r-o-m-a chroma so just do this guys pip install
+
+01:00:07.130 --> 01:00:11.470
+chroma yeah so in my system requirement is already satisfied
+
+01:00:11.470 --> 01:00:17.890
+in your system i don't think that it is so here is a command
+
+01:00:17.890 --> 01:00:21.090
+pip install chroma so this is the very first installation
+
+01:00:21.090 --> 01:00:25.310
+that you have to do guys every one of you now once you are
+
+01:00:25.310 --> 01:00:30.390
+able to do this like a installation right so you have to
+
+01:00:30.390 --> 01:00:35.870
+keep up and running this chroma db inside your local server
+
+01:00:35.870 --> 01:00:38.510
+server inside your local system, you have to keep it up and
+
+01:00:38.510 --> 01:00:42.090
+running. This is approach number one, approach number two is
+
+01:00:42.090 --> 01:00:46.870
+that I can try to use my just a RAM or my main memory over
+
+01:00:46.870 --> 01:00:50.770
+here without even instantiating a server over here. So both
+
+01:00:50.770 --> 01:00:53.630
+the approaches are completely fine. I'll try to go ahead
+
+01:00:53.630 --> 01:00:56.290
+with the approach number one. So I'll try to spin my server
+
+01:00:56.290 --> 01:00:59.250
+chroma server in my machine so that it can create a folder
+
+01:00:59.250 --> 01:01:02.650
+over here, it will be able to store all the data because in
+
+01:01:02.650 --> 01:01:05.510
+approach number two, the problem is that that by the time
+
+01:01:05.510 --> 01:01:07.890
+you will run the code, it will be able to understand
+
+01:01:07.890 --> 01:01:11.090
+everything it will not store anything. And once you will try
+
+01:01:11.090 --> 01:01:13.490
+to exit from the code, everything will be gone, all the data
+
+01:01:13.490 --> 01:01:16.450
+will be gone. So I'll be using approach number one. So once
+
+01:01:16.450 --> 01:01:20.530
+I have done the installation of a chroma, let's try to start
+
+01:01:20.530 --> 01:01:24.090
+the server. So to start the server, you can try to run the
+
+01:01:24.090 --> 01:01:29.770
+command CHROMA chroma and then run hyphen hyphen just try to
+
+01:01:29.770 --> 01:01:32.610
+give a path where it will be able to store all the
+
+01:01:32.610 --> 01:01:34.870
+information. So whatever. Whatever embeddings you are going
+
+01:01:34.870 --> 01:01:38.070
+to create, and in a later stage, you can try to even read it
+
+01:01:38.070 --> 01:01:41.670
+out. And even this is the exact same way by which you can
+
+01:01:41.670 --> 01:01:44.690
+try to containerize it, or maybe you can try to host it on
+
+01:01:44.690 --> 01:01:49.030
+any one in any environment that you want AWS, GCP, Azure,
+
+01:01:49.130 --> 01:01:53.750
+whatever, whatever it is. So here path and path wise, I can
+
+01:01:53.750 --> 01:01:56.410
+try to give my current path. And here, so I'm saying that
+
+01:01:56.410 --> 01:02:03.110
+that try to create a one folder called a CHROMA chroma DB
+
+01:02:03.110 --> 01:02:08.430
+underscore data. So create this folder, and then spin it so
+
+01:02:08.430 --> 01:02:10.810
+you will be able to see the symbol over here.
+
+01:02:15.130 --> 01:02:20.250
+Let me ping you this piece of the code. Yeah, so fast, it
+
+01:02:20.250 --> 01:02:24.130
+will install, then I have a spin and see it's up and running
+
+01:02:24.130 --> 01:02:27.910
+with listening to the localhost 8000. And here you will be
+
+01:02:27.910 --> 01:02:31.490
+able to see a folder night folder. So we are it is trying to
+
+01:02:31.490 --> 01:02:34.210
+use a SQLite server SQLite is again in moving database
+
+01:02:34.210 --> 01:02:37.470
+SQLite server. So we are you will be able to see other files
+
+01:02:37.470 --> 01:02:40.070
+as well. So once you will start installing it, once you will
+
+01:02:40.070 --> 01:02:46.280
+start storing it, making sense, guys, are you able to spin
+
+01:02:46.280 --> 01:02:47.200
+your chroma DB in local?
+
+01:02:54.800 --> 01:02:57.280
+Yes, everyone, are you able to spin chroma DB in your local?
+
+01:03:24.270 --> 01:03:26.090
+Get error? What is the error by the way?
+
+01:03:34.520 --> 01:03:38.080
+Yep. Yes. Okay, they're going to saying yes, as we need
+
+01:03:38.080 --> 01:03:39.920
+saying get error, what is your error? So maybe you can
+
+01:03:39.920 --> 01:03:42.620
+resolve it because this is a simple command, right? So
+
+01:03:42.620 --> 01:03:46.140
+install it and then leave it. Fine. Now here, I'll start
+
+01:03:46.140 --> 01:03:49.660
+writing my code in this particular place. So first of all,
+
+01:03:49.720 --> 01:03:54.880
+I'll try to import my OS library. I'll try to import my
+
+01:03:54.880 --> 01:04:01.380
+request are our EQ you EST request, I will try to do like a
+
+01:04:01.380 --> 01:04:11.460
+from ch, ro ma, db, import import what so HTTP client so
+
+01:04:11.460 --> 01:04:16.120
+that I will be able to connect with Mike CLI ENT client to
+
+01:04:16.120 --> 01:04:19.500
+connect with my chroma DB. And here so just to load
+
+01:04:19.500 --> 01:04:24.420
+something from my environment. So I'm going to call dot ENV
+
+01:04:24.420 --> 01:04:34.160
+IMP or T import load dot ENV over here. And then just call
+
+01:04:34.160 --> 01:04:39.240
+this load a low ID load dot environment method over here.
+
+01:04:39.340 --> 01:04:42.340
+Now why I'm doing this low dot environment because I'm going
+
+01:04:42.340 --> 01:04:46.620
+to create one file called as dot dot again, start with dot.
+
+01:04:47.540 --> 01:04:50.260
+ENV environment file I'm going to create and I'm going to
+
+01:04:50.260 --> 01:04:54.520
+keep my URI API key over here. So I'm going to keep my URI
+
+01:04:54.520 --> 01:04:59.020
+API key over here. So URI or maybe I can write in a capital
+
+01:04:59.020 --> 01:05:05.780
+E URI URI API underscore key. So inside this, I'm going to
+
+01:05:05.780 --> 01:05:08.980
+keep my URI API key guys, by the way, so wherever it is
+
+01:05:08.980 --> 01:05:12.020
+required, I will just try to read it from here itself. So
+
+01:05:12.020 --> 01:05:17.180
+let me go to my URI. And yeah, so I can try this. I can try
+
+01:05:17.180 --> 01:05:22.000
+to copy my token. And I'll simply keep it over here. So it's
+
+01:05:22.000 --> 01:05:25.080
+available inside this variable URI API key inside dot
+
+01:05:25.080 --> 01:05:29.200
+environment. So we're here. So when I do load a dot
+
+01:05:29.200 --> 01:05:32.320
+environment, so by default, whatever data whatever variable
+
+01:05:32.320 --> 01:05:35.980
+is available inside this one, I can try to load it. And this
+
+01:05:35.980 --> 01:05:39.640
+is the standard approach, by the way, for saving any API
+
+01:05:39.640 --> 01:05:42.780
+key, anything that you don't want to like share with anyone
+
+01:05:42.780 --> 01:05:45.740
+or don't want to like a spread so you can keep it all the
+
+01:05:45.740 --> 01:05:49.660
+API key. In the same places. So this is the import that we
+
+01:05:49.660 --> 01:05:53.080
+have to do and then go to dot environment file and then try
+
+01:05:53.080 --> 01:05:58.400
+to Okay, doctor is saying working chroma db great. Fine.
+
+01:05:58.940 --> 01:06:03.200
+Okay. So here, right? Everything will work. It's it's not
+
+01:06:03.200 --> 01:06:08.680
+like tough, believe me at all. Not tough. Right? So here,
+
+01:06:08.760 --> 01:06:14.800
+what I can do is so I can try to load first of all URI URI
+
+01:06:14.800 --> 01:06:22.740
+API key. And how I can load it. So operating system dot get
+
+01:06:22.740 --> 01:06:30.560
+environment. And then, so here, just try to pass same
+
+01:06:30.560 --> 01:06:34.740
+variable name. So from environment, just try to fetch this
+
+01:06:34.740 --> 01:06:37.500
+one and assign it to this variable locally by saying to this
+
+01:06:37.500 --> 01:06:41.060
+variable. So here I will be able to get my URI API key. And
+
+01:06:41.060 --> 01:06:44.340
+I believe we all know why do we need a URI API key to
+
+01:06:44.340 --> 01:06:46.640
+generate the embeddings, I'm going to use our embedding
+
+01:06:46.640 --> 01:06:50.580
+models to generate. The embeddings, I need URI API key. So
+
+01:06:50.580 --> 01:06:54.240
+one is fine, I'm, I'm able to like I will be able to
+
+01:06:54.240 --> 01:06:58.520
+connect. The second one is a chroma db. So my chroma db is
+
+01:06:58.520 --> 01:07:01.240
+running right, my chroma db is running where on this
+
+01:07:01.240 --> 01:07:03.640
+particular local host local host means my system, my system
+
+01:07:03.640 --> 01:07:08.000
+is behaving as a server on 8000 port. So I have to establish
+
+01:07:08.000 --> 01:07:11.580
+a communication communication between a chroma db and my
+
+01:07:11.580 --> 01:07:15.760
+Python code. Fine. So here, I have to establish a
+
+01:07:15.760 --> 01:07:17.900
+communication. The way you try to connect with any
+
+01:07:17.900 --> 01:07:20.460
+databases, right, whether it's a MySQL, MongoDB, everywhere
+
+01:07:20.460 --> 01:07:23.520
+is the same story. So nothing new, I would say. So here I
+
+01:07:23.520 --> 01:07:27.600
+can try to call HTTP client and then host is going to be the
+
+01:07:27.600 --> 01:07:34.300
+localhost, localhost. And then on which port my chroma is
+
+01:07:34.300 --> 01:07:38.760
+running. So port is basically 8000, leave it up and running.
+
+01:07:39.080 --> 01:07:45.020
+So this is going to create a client for my chroma. So this
+
+01:07:45.020 --> 01:07:47.440
+is going to create a client. For my chroma db, I will be
+
+01:07:47.440 --> 01:07:51.020
+able to connect. Now once I will be able to connect, so I
+
+01:07:51.020 --> 01:07:54.360
+have to create a collection the way you try to create a
+
+01:07:54.360 --> 01:07:57.820
+collection in case of MongoDB or Cassandra, right in the
+
+01:07:57.820 --> 01:08:03.780
+similar way, CLI ENT client dot get underscore or underscore
+
+01:08:03.780 --> 01:08:07.920
+CR E A T create underscore CO double L E C T I O N
+
+01:08:07.920 --> 01:08:13.880
+collection. So here, I'm going to create a collection and a
+
+01:08:13.880 --> 01:08:16.000
+su d h. So here, I'm going to create a collection and a su d
+
+01:08:16.000 --> 01:08:20.660
+h. You're on data. So I'll try to store something about me,
+
+01:08:20.800 --> 01:08:23.900
+basically, right. So I have just given a collection name a
+
+01:08:23.900 --> 01:08:26.180
+document name over here that okay inside this collection.
+
+01:08:26.260 --> 01:08:29.680
+And similarly, I can try to create any number of collection.
+
+01:08:29.860 --> 01:08:32.920
+For example, when you work in real time, right, you create a
+
+01:08:32.920 --> 01:08:35.880
+multiple databases, I believe when you started learning some
+
+01:08:35.880 --> 01:08:38.880
+databases, so employee database, you must have seen. So
+
+01:08:38.880 --> 01:08:41.120
+there will be a salary databases, there will be a bonuses
+
+01:08:41.120 --> 01:08:43.460
+databases, there will be a PF databases, there will be a
+
+01:08:43.460 --> 01:08:46.240
+name and basic information databases. Likewise. We are
+
+01:08:46.240 --> 01:08:48.080
+trying to create a different different collection. So one of
+
+01:08:48.080 --> 01:08:51.660
+my collection name is Sudhanshu, you're on data, fine. So
+
+01:08:51.660 --> 01:08:55.100
+I'm going to keep my own data over here. And this is this
+
+01:08:55.100 --> 01:08:58.660
+I'm going to name it as a collections CLN or CTIO
+
+01:08:58.660 --> 01:09:03.960
+collection. Okay, now let me ping you this piece of a code
+
+01:09:03.960 --> 01:09:04.280
+altogether.
+
+01:09:08.450 --> 01:09:11.290
+So anywhere if you're not able to understand, do let me know
+
+01:09:11.290 --> 01:09:14.170
+guys, I'll try to explain you. But I believe till this
+
+01:09:14.170 --> 01:09:16.830
+point, things are pretty much clear, right? Everyone?
+
+01:09:20.730 --> 01:09:23.250
+Yes, everyone. Please say yes or no something.
+
+01:09:42.470 --> 01:09:45.610
+Yes. Okay. Doctor is saying yes. Fine. Now let's move ahead.
+
+01:09:46.190 --> 01:09:49.850
+Now, the very first also is not able to run the chroma DB,
+
+01:09:50.010 --> 01:09:52.610
+just check the command and what is the error that you are
+
+01:09:52.610 --> 01:09:55.630
+receiving. So please, you can take a help from URI or even
+
+01:09:55.630 --> 01:09:56.370
+you can paste it here.
+
+01:09:59.750 --> 01:10:02.310
+Some environment or Python version issue. So if you are
+
+01:10:02.310 --> 01:10:05.070
+facing any kind of a Python version issue, in that case, you
+
+01:10:05.070 --> 01:10:07.950
+can just go and create a new environment. I believe we all
+
+01:10:07.950 --> 01:10:10.590
+know how to create a new environment. Command is conda.
+
+01:10:10.730 --> 01:10:14.310
+Okay. C O N. Let me write a command and paste it to you here
+
+01:10:14.310 --> 01:10:19.210
+itself. Conda create hyphen N, give you an environment name.
+
+01:10:19.310 --> 01:10:22.570
+For example, Shyam is facing an issue. So maybe Shyam can
+
+01:10:22.570 --> 01:10:26.310
+create an environment by his own name. S A I Y M, Shyam,
+
+01:10:26.350 --> 01:10:35.630
+Python equal to three dot one zero. Make it yes. Install all
+
+01:10:35.630 --> 01:10:37.690
+the yes and then Conda
+
+01:10:39.770 --> 01:10:43.110
+C R E A T hyphen N and this one. So maybe you can try to use
+
+01:10:43.110 --> 01:10:45.250
+this. Do this command, create a new environment, activate
+
+01:10:45.250 --> 01:10:48.310
+that environment and then install in that environment. It'll
+
+01:10:48.310 --> 01:10:51.630
+work. With three point one zero, it will work. Okay. Now
+
+01:10:51.630 --> 01:10:53.810
+moving ahead, we are able to create a client. We will be
+
+01:10:53.810 --> 01:10:58.590
+able to connect with the DB by the way, right? I can even
+
+01:10:58.590 --> 01:11:02.110
+test it. I can even test it. So how I can test it. So maybe,
+
+01:11:02.150 --> 01:11:03.170
+or
+
+01:11:13.220 --> 01:11:14.880
+I can try to even no
+
+01:11:17.560 --> 01:11:24.540
+module name, chroma DB, some environment I have to change or
+
+01:11:24.540 --> 01:11:28.420
+I can for testing purpose. So pip install, Oh,
+
+01:11:31.220 --> 01:11:36.400
+it will not be able to get into the server. This is a
+
+01:11:36.400 --> 01:11:40.960
+different environment. This is a assignment grader, which
+
+01:11:40.960 --> 01:11:44.500
+I'm using and I'm running my chroma DB into my different
+
+01:11:45.340 --> 01:11:49.260
+instance, but let's see. Yeah. So I can, I can even try to
+
+01:11:49.260 --> 01:11:52.720
+test it. Maybe I can try to just call a print over here, P R
+
+01:11:52.720 --> 01:11:56.700
+I N T print, and then print my client so that I will be able
+
+01:11:56.700 --> 01:12:02.460
+to check my collection. So leave it as it is. Try to open up
+
+01:12:02.460 --> 01:12:09.720
+new command prompt and then Python and a Python C H R O M A
+
+01:12:09.720 --> 01:12:15.440
+chroma DB dot by file. Yeah. So as you can see, I'm able to
+
+01:12:15.440 --> 01:12:17.740
+see my client object. This is what I was trying to print,
+
+01:12:17.860 --> 01:12:20.380
+right? Client object. So once I'm able to print this client
+
+01:12:20.380 --> 01:12:22.980
+object, it simply means that, that I'm connected with my
+
+01:12:22.980 --> 01:12:27.260
+chroma DB, right? I'm connected with my chroma DB. If you
+
+01:12:27.260 --> 01:12:30.540
+are not able to see this one, then you will get some sort
+
+01:12:30.540 --> 01:12:34.120
+of. It simply means that you are not connected to the chroma
+
+01:12:34.120 --> 01:12:37.740
+DB as simple as that. So testing is done. Okay. It's fine.
+
+01:12:38.740 --> 01:12:42.360
+Now, what is the next step for me? Next step for me is that
+
+01:12:42.360 --> 01:12:48.060
+try to write a function. So which will be able to convert my
+
+01:12:48.060 --> 01:12:51.480
+actual information or whatever information, which I'm going
+
+01:12:51.480 --> 01:12:55.040
+to scrap from anywhere, right? Nowadays I'm talking about a
+
+01:12:55.040 --> 01:12:57.760
+lot of like a project in MCP and in every project, if you'll
+
+01:12:57.760 --> 01:13:00.600
+go and check, I'm trying to scrap a data from somewhere. I'm
+
+01:13:00.600 --> 01:13:03.320
+trying to read out some PDF, right? So whatever data,
+
+01:13:03.380 --> 01:13:05.960
+whatever data, which I'm trying to bring over here, I have
+
+01:13:05.960 --> 01:13:11.600
+to convert those things into our embeddings. Now this is
+
+01:13:11.600 --> 01:13:14.400
+where my URI will come into picture. So code example, I'll
+
+01:13:14.400 --> 01:13:19.400
+simply go and we have already given you a code over here. So
+
+01:13:19.400 --> 01:13:24.960
+I'll be using generate embeddings, same code, which is
+
+01:13:24.960 --> 01:13:28.260
+already available, right? And then maybe I can try to
+
+01:13:28.260 --> 01:13:32.000
+parameterize it that. Okay. Okay. So this is going to take
+
+01:13:32.000 --> 01:13:35.580
+text underscore list. It is going to take an input, right?
+
+01:13:35.620 --> 01:13:41.440
+Not just like a, this one and here text list, it is going to
+
+01:13:41.440 --> 01:13:45.700
+take, and then authorization wise. So bearer, I can try to
+
+01:13:45.700 --> 01:13:52.680
+pass over here, URI API key,
+
+01:13:56.860 --> 01:14:00.900
+URI API key. I'm going to pass. Now it will be able to
+
+01:14:00.900 --> 01:14:05.700
+authorize and the rest looks fine to me. I don't think that
+
+01:14:05.700 --> 01:14:09.420
+I have to change. Anything over here, URL header, payload is
+
+01:14:09.420 --> 01:14:14.600
+fine. Model name is fine. Okay. So here I can give maybe F
+
+01:14:14.600 --> 01:14:20.300
+formatted a string. Okay. So content type is fine. And then
+
+01:14:20.300 --> 01:14:25.380
+beer is fine. So this is the only changes I have to do over
+
+01:14:25.380 --> 01:14:30.560
+here. Then it is going to return me embeddings. Fine. It is
+
+01:14:30.560 --> 01:14:34.700
+trying to print the something over here, which I eventually
+
+01:14:34.700 --> 01:14:39.800
+don't want. Okay. So I can remove this entire things. I just
+
+01:14:39.800 --> 01:14:44.660
+need till embeddings. Fine. So give me all the embeddings,
+
+01:14:44.720 --> 01:14:48.840
+response request, URL header, data, response.json. So
+
+01:14:48.840 --> 01:14:52.860
+whatever response I'm going to get, extract the JSON, take a
+
+01:14:52.860 --> 01:14:56.980
+data and then show me as embeddings. Okay. Fine. Great. So
+
+01:14:56.980 --> 01:15:01.200
+here, right? So here I will be able to see the embeddings
+
+01:15:01.200 --> 01:15:05.320
+and I will be able to see a core response, which will, which
+
+01:15:05.320 --> 01:15:08.860
+I will receive from a model. I will be able to see both the
+
+01:15:08.860 --> 01:15:13.700
+things in this particular place. Making sense guys, till
+
+01:15:18.560 --> 01:15:18.980
+this point.
+
+01:15:33.840 --> 01:15:38.160
+Okay. I have not done the import of numpy. So
+
+01:15:44.750 --> 01:15:45.850
+numpy as NP.
+
+01:15:50.780 --> 01:15:54.160
+Okay. So this is my generate embedding function. So I have
+
+01:15:54.160 --> 01:15:56.540
+just taken the same function, which is available inside the
+
+01:15:56.540 --> 01:15:59.220
+URI and I'm not doing much. I'm just trying to like a
+
+01:15:59.220 --> 01:16:03.040
+parameterize it. So pass the text list and then URI API key,
+
+01:16:03.140 --> 01:16:05.600
+just try to pass it and then it is going to give me a
+
+01:16:05.600 --> 01:16:07.900
+response. Out of response, I'm trying to just extract
+
+01:16:07.900 --> 01:16:14.240
+embeddings in the format, which I'm looking in the format,
+
+01:16:14.340 --> 01:16:19.760
+which I'm looking for as simple as that. Okay. So one by
+
+01:16:19.760 --> 01:16:22.400
+one, one by one, one by one, it is going to give me the
+
+01:16:22.400 --> 01:16:27.320
+responses, but it is going to give me a response for only
+
+01:16:27.320 --> 01:16:32.840
+one data. That's a problem because for single text, it has
+
+01:16:32.840 --> 01:16:37.520
+been designed. It has not been designed for the. Multiple
+
+01:16:37.520 --> 01:16:41.340
+texts, but let's suppose I wanted to pass a lot of data over
+
+01:16:41.340 --> 01:16:44.580
+here. Not just one text, maybe like a 10, 20, a hundred
+
+01:16:44.580 --> 01:16:47.900
+number of like a lines I would like to pass. And I want to
+
+01:16:47.900 --> 01:16:51.720
+convert those things into embeddings. So for that, please
+
+01:16:51.720 --> 01:16:55.540
+show .environment file once. In .environment, I'm not doing
+
+01:16:55.540 --> 01:16:58.640
+much. So basically it's just a variable URI API key. I'm
+
+01:16:58.640 --> 01:17:03.780
+keeping my URI API key. That's it. So I'm just keeping my
+
+01:17:03.780 --> 01:17:07.340
+authentication. This one. Copy it from here. And then keep
+
+01:17:07.340 --> 01:17:12.860
+it there. That's it. Okay. So this is basically the function
+
+01:17:12.860 --> 01:17:15.740
+that we have given to you. So that has been designed for
+
+01:17:15.740 --> 01:17:20.980
+only one, like a text information. Now I'm trying to send a
+
+01:17:20.980 --> 01:17:25.920
+multiple, let's suppose. So to do that, I have to make a
+
+01:17:25.920 --> 01:17:29.960
+changes a little bit over here. So I can try to write maybe
+
+01:17:29.960 --> 01:17:37.900
+a loop over here. So for item in response. That's it. That
+
+01:17:37.900 --> 01:17:40.700
+it is giving me. So whatever response that we are getting
+
+01:17:40.700 --> 01:17:46.980
+from here. So just try to extract it into a JSON format.
+
+01:17:47.240 --> 01:17:51.560
+Eventually I'm doing it with data and out of that extract
+
+01:17:51.560 --> 01:18:01.900
+all the data one by one. And then from this item, try to
+
+01:18:01.900 --> 01:18:08.480
+extract E M B E double D I N G S embeddings. So this. This
+
+01:18:08.480 --> 01:18:11.200
+is going to give me the
+
+01:18:14.400 --> 01:18:19.400
+data one by one. So fine guys, this is what I have written
+
+01:18:19.400 --> 01:18:22.680
+because my intention is not to pass only one text. My
+
+01:18:22.680 --> 01:18:25.940
+intention is to pass a lot of text, a lot of line over here,
+
+01:18:26.000 --> 01:18:28.880
+a lot of document. And for every document, it should give me
+
+01:18:28.880 --> 01:18:34.920
+the embeddings at the end of the day. So fine. It is going
+
+01:18:34.920 --> 01:18:39.180
+to give me embeddings and then I'm going to return this
+
+01:18:39.180 --> 01:18:45.020
+embedding. Let's make it S just to remove the confusion. So
+
+01:18:45.020 --> 01:18:49.540
+it is going to give me embeddings as simple as that. Okay.
+
+01:18:50.420 --> 01:18:55.680
+So now let's try to create a data, right?
+
+01:18:58.210 --> 01:19:01.810
+Document I'm going to create and I'm going to create a lot
+
+01:19:01.810 --> 01:19:06.450
+of data over here. So the very first line is my name is
+
+01:19:06.450 --> 01:19:18.430
+Sudhanshu Kumar. I used to teach. I used to teach like a
+
+01:19:18.430 --> 01:19:21.650
+tech Sudhanshu
+
+01:19:26.390 --> 01:19:30.090
+Kumar total year of experience
+
+01:19:32.010 --> 01:19:41.830
+as techie is 11 as a mentor is seven as a entrepreneur in
+
+01:19:41.830 --> 01:19:45.190
+the year and you are a entrepreneur. I don't know whether
+
+01:19:45.190 --> 01:19:46.910
+I'm writing correctly spelling or not, but yeah, I'm bad
+
+01:19:46.910 --> 01:19:52.590
+with that. So entrepreneur is six year. Okay. Okay. Okay.
+
+01:19:52.590 --> 01:19:58.110
+Then maybe I can try to write something more about me. I
+
+01:19:58.110 --> 01:20:05.240
+love Sudhanshu Kumar love teaching
+
+01:20:07.680 --> 01:20:19.460
+core concept and architecture, Sudhanshu Kumar love building
+
+01:20:19.460 --> 01:20:32.310
+tech, which is his favorite by the way. Okay. Okay. Thank
+
+01:20:32.310 --> 01:20:40.110
+you. And then Sudhanshu Kumar have started a company called
+
+01:20:40.110 --> 01:20:43.090
+Euron. We
+
+01:20:46.290 --> 01:20:50.030
+have Yuri resuming
+
+01:20:51.760 --> 01:21:02.220
+AI job system, AV and I with lots of courses, projects
+
+01:21:05.060 --> 01:21:06.720
+in different
+
+01:21:11.170 --> 01:21:17.510
+different mode. Okay. Okay. So I'm not able to think much
+
+01:21:17.510 --> 01:21:21.470
+about myself. So I'll just go and click on founder story.
+
+01:21:22.490 --> 01:21:27.710
+Let me copy and paste some data from here, my own data.
+
+01:21:29.270 --> 01:21:36.750
+Okay. So this is one. Here it's mentioned where I belongs
+
+01:21:36.750 --> 01:21:37.070
+from.
+
+01:21:40.430 --> 01:21:46.890
+I can try to copy, paste again, created a data, created
+
+01:21:56.140 --> 01:21:57.380
+a data once again.
+
+01:22:11.720 --> 01:22:15.100
+Okay. So a lot of data we have created, I think. Now, so
+
+01:22:15.100 --> 01:22:18.020
+this is enough. So these are the data that I have created. I
+
+01:22:18.020 --> 01:22:21.700
+will be using this data. I think I don't have any kind of a
+
+01:22:21.700 --> 01:22:25.020
+mistake I have made. Okay. So this is the data that I have
+
+01:22:25.020 --> 01:22:28.420
+created. I will be using this data. I'll try to pass this
+
+01:22:28.420 --> 01:22:32.460
+data inside this generate embeddings. And then system is
+
+01:22:32.460 --> 01:22:35.180
+supposed to give me basically a embeddings of this
+
+01:22:35.180 --> 01:22:38.720
+particular data in a one by one, one by one, one by one
+
+01:22:38.720 --> 01:22:43.480
+manner. Making sense guys to all of us. Yeah. So maybe you
+
+01:22:43.480 --> 01:22:47.020
+can try to prepare your own data. Or if you want, you can
+
+01:22:47.020 --> 01:22:48.080
+take my data as well.
+
+01:22:57.470 --> 01:23:00.750
+Yeah, so I'm just trying to pass it as a list over here.
+
+01:23:16.520 --> 01:23:22.740
+Why we are taking quotation in each line. So here, as you
+
+01:23:22.740 --> 01:23:25.860
+can see, I have a list, right? So this will be considered as
+
+01:23:25.860 --> 01:23:31.020
+one, then two, then three, then four separated by comma. So
+
+01:23:31.020 --> 01:23:34.740
+one sentence will be converted into one embedding of size
+
+01:23:34.740 --> 01:23:39.200
+1536. This is what it means. So a multiple like a sentences
+
+01:23:39.200 --> 01:23:42.720
+in this way, I'll try to like convert into my embeddings.
+
+01:23:42.760 --> 01:23:46.580
+And then those embeddings, I'll try to store it inside this
+
+01:23:46.580 --> 01:23:46.920
+collection.
+
+01:23:50.070 --> 01:23:52.990
+Can you share the updated embedding code? Okay, I have just
+
+01:23:52.990 --> 01:23:57.130
+done a small modification. So code was actually designed for
+
+01:23:57.130 --> 01:24:02.170
+only like one sentence. I have just like done the run the
+
+01:24:02.170 --> 01:24:06.330
+for loop on top of it. So that for like, everyone, it will
+
+01:24:06.330 --> 01:24:13.510
+try to like do the same. Okay, now, so let's call it. Let's
+
+01:24:13.510 --> 01:24:17.230
+call it. Let's see it. First of all embedding part. So here
+
+01:24:17.230 --> 01:24:21.910
+I'm going to call my generate embedding function. This
+
+01:24:21.910 --> 01:24:25.570
+function I'm trying to call, I'll try to pass my document
+
+01:24:25.570 --> 01:24:29.710
+over here, this data I'm going to pass, right. And then it
+
+01:24:29.710 --> 01:24:32.510
+is going to give me all, all
+
+01:24:34.780 --> 01:24:37.760
+embeddings, it is going to give me this is what it is trying
+
+01:24:37.760 --> 01:24:40.660
+to return all embeddings, right, but in this particular
+
+01:24:40.660 --> 01:24:45.360
+fashion, it is going to return. And maybe I can try to print
+
+01:24:45.360 --> 01:24:52.180
+and see it, right, all embeddings. So let's run it now. Let
+
+01:24:52.180 --> 01:24:52.840
+me ping you this code.
+
+01:24:56.030 --> 01:24:59.670
+So step number one will be done in this way. So Python
+
+01:24:59.670 --> 01:25:05.410
+chroma DB pi, run it now. And as you can see, it has
+
+01:25:05.410 --> 01:25:11.030
+converted. And now if I'll go and check my URI, so I will be
+
+01:25:11.030 --> 01:25:16.210
+able to see some token consumption as well. It's at 7% now.
+
+01:25:17.410 --> 01:25:21.770
+70,000 lot of like a user I have like done today, right 7%
+
+01:25:21.770 --> 01:25:22.370
+consumption now.
+
+01:25:25.850 --> 01:25:29.290
+So I will be able to convert my entire data, right convert
+
+01:25:29.290 --> 01:25:34.290
+my entire data into an embeddings. As you can see, it's a
+
+01:25:34.290 --> 01:25:38.910
+very, very, very, very huge data that I'm talking about,
+
+01:25:39.110 --> 01:25:44.570
+right, a huge data I'm talking about. So now I have to store
+
+01:25:44.570 --> 01:25:49.090
+those information, I have to store those data. So I have to
+
+01:25:49.090 --> 01:25:53.470
+store basically like a data as well as I have to store its
+
+01:25:53.470 --> 01:25:55.830
+embeddings, something like that I have to store into that.
+
+01:25:55.850 --> 01:25:56.570
+So I have to store all the data into the chroma DB.
+
+01:25:59.520 --> 01:26:03.120
+If we have a single quotation, when what will be the
+
+01:26:03.120 --> 01:26:06.420
+difference? Not no differences, actually, single quotation,
+
+01:26:06.500 --> 01:26:09.800
+double quotation means it's a string. So it's not going to
+
+01:26:09.800 --> 01:26:10.920
+make any differences, by the way.
+
+01:26:14.100 --> 01:26:16.780
+So what is the best format to store the table semantic
+
+01:26:16.780 --> 01:26:19.940
+information where we are building a text
+
+01:26:22.410 --> 01:26:28.490
+format. So basically, best format to store a table semantic
+
+01:26:28.490 --> 01:26:30.370
+information where we are building text to SQL.
+
+01:26:34.130 --> 01:26:38.650
+okay so basically you have to you can use a vector you can
+
+01:26:38.650 --> 01:26:44.970
+try to store it in a vector or else as per utilization json
+
+01:26:44.970 --> 01:26:48.450
+but again json is not that like a search compatible so i
+
+01:26:48.450 --> 01:26:52.430
+don't like think you will be able to get the best outcome so
+
+01:26:52.430 --> 01:26:56.610
+now i'm able to convert all the data into its embeddings we
+
+01:26:56.610 --> 01:26:59.030
+have to do a lot of processing over here so the all
+
+01:26:59.030 --> 01:27:03.010
+embeddings is nothing but it's giving me everything out of
+
+01:27:03.010 --> 01:27:09.010
+this one now so if i'm going to even show you this all
+
+01:27:09.010 --> 01:27:14.090
+embeddings basically so maybe embeddings of just a very
+
+01:27:14.090 --> 01:27:17.710
+first one embeddings of zeroth or embeddings of like a first
+
+01:27:17.710 --> 01:27:23.770
+second third you will be able to print because yeah so as
+
+01:27:23.770 --> 01:27:26.830
+you can see over here so embeddings of zeroth embedding it
+
+01:27:26.830 --> 01:27:29.030
+is giving you right all embedding means what is all
+
+01:27:29.030 --> 01:27:32.870
+embeddings so this all embedding is returning this one this
+
+01:27:32.870 --> 01:27:35.170
+one is nothing but it's a lot lots of item what is the
+
+01:27:35.170 --> 01:27:39.090
+number of item one two three four five six seven eight ten
+
+01:27:39.090 --> 01:27:41.770
+eleven twelve so i have twelve sentences so i have basically
+
+01:27:41.770 --> 01:27:44.650
+twelve embeddings which i will be able to generate each of
+
+01:27:44.650 --> 01:27:47.710
+length one five three six i can even try to check it over
+
+01:27:47.710 --> 01:27:51.270
+here that what is the length of this embedding or for any
+
+01:27:51.270 --> 01:27:57.990
+embedding so what is the length of this embeddings i can go
+
+01:27:57.990 --> 01:28:00.870
+and i can try to even check yeah
+
+01:28:05.510 --> 01:28:07.990
+so it's one five three six right it's one five three six
+
+01:28:07.990 --> 01:28:10.150
+that's the nature of my llm model that i'm using open eye
+
+01:28:10.150 --> 01:28:13.030
+model that i'm using so that's the nature of it as simple as
+
+01:28:13.030 --> 01:28:18.370
+that now i have to save this entire things into my chroma db
+
+01:28:18.370 --> 01:28:21.390
+my chroma db which is up and running which is like i'm
+
+01:28:21.390 --> 01:28:24.990
+trying to like run locally right so i have to save all of
+
+01:28:24.990 --> 01:28:27.610
+this embedding and then in later stages i will be able to or
+
+01:28:27.610 --> 01:28:30.970
+i should be able to search it right i should be able to
+
+01:28:30.970 --> 01:28:35.010
+search it so how i will be able to save each and everything
+
+01:28:35.010 --> 01:28:35.850
+so for that i will be able to search it so i will be able to
+
+01:28:35.850 --> 01:28:47.470
+search it so i will go ahead
+
+01:28:47.470 --> 01:28:53.730
+and drag that to the empty station and if so that will be
+
+01:28:53.730 --> 01:28:54.130
+after boxes for me and then we can wait and store it to be
+
+01:28:54.130 --> 01:28:57.510
+able to buffer it in my coding okay so for that we can
+
+01:28:57.510 --> 01:28:59.930
+create a clinical one and then in in here of courseing mood
+
+01:28:59.930 --> 01:29:03.410
+are the Ar Horizontalwah to Fulug
+
+01:29:03.410 --> 01:29:05.010
+and
+
+01:29:08.850 --> 01:29:09.510
+this would be the default kind of that we have already
+
+01:29:09.510 --> 01:29:09.530
+created a collection we have creating a connection after
+
+01:29:09.530 --> 01:29:12.050
+that collection so collection is nothing but in zip my all
+
+01:29:12.050 --> 01:29:18.370
+embeddings so zip it and then try to enumerate it so that i
+
+01:29:18.370 --> 01:29:25.690
+will be able to get a id enumerate it so zip means mapping
+
+01:29:25.690 --> 01:29:30.050
+so one mapping with its respective embedding i believe we
+
+01:29:30.050 --> 01:29:33.250
+all understands what zip does in python i think i have
+
+01:29:33.250 --> 01:29:36.190
+already used it many times even in my previous class and my
+
+01:29:36.190 --> 01:29:39.710
+python class obviously i use it so zip is nothing but let's
+
+01:29:39.710 --> 01:29:45.150
+suppose we have like a two data so one is basically one two
+
+01:29:45.150 --> 01:29:51.070
+three and four and then we have another data a b c d it will
+
+01:29:51.070 --> 01:29:53.390
+do one-to-one mapping so this is my let's suppose our
+
+01:29:53.390 --> 01:29:56.650
+document and this is my embeddings so it will create this
+
+01:29:56.650 --> 01:29:59.190
+pair basically this is what zip is doing and for every pair
+
+01:29:59.190 --> 01:30:02.130
+so we are trying to generate enumeration basically one one
+
+01:30:02.130 --> 01:30:04.670
+id one two three four five six and so on so this is what zip
+
+01:30:04.670 --> 01:30:08.790
+and enumeration is going to do over here now after zipping
+
+01:30:08.790 --> 01:30:10.670
+and after doing the enumeration over here we are going to do
+
+01:30:10.670 --> 01:30:10.670
+one two three four five six and so on so this is what zip
+
+01:30:10.670 --> 01:30:14.870
+and over here so we can try to run for loop so for we can
+
+01:30:14.870 --> 01:30:18.890
+generate a variable called as idx which is coming from the
+
+01:30:18.890 --> 01:30:23.950
+enumeration and then for every idx we have a document and
+
+01:30:23.950 --> 01:30:27.350
+its respective embeddings
+
+01:30:30.650 --> 01:30:33.810
+so this i will get from the zip and this idx anyhow i'm
+
+01:30:33.810 --> 01:30:35.910
+getting from the enumeration as a whole i will be able to
+
+01:30:35.910 --> 01:30:42.430
+get this response okay now try to call collection this one
+
+01:30:42.430 --> 01:30:49.050
+this collection and then collection dot add in a for loop
+
+01:30:49.050 --> 01:30:52.850
+one by one one by one i'll start adding it so add what by
+
+01:30:52.850 --> 01:30:55.490
+the way so basically our
+
+01:30:57.540 --> 01:31:02.100
+idx docs enumeration have i made any mistake by the way so
+
+01:31:02.100 --> 01:31:08.520
+english syntactical error okay so this one i believe i
+
+01:31:11.040 --> 01:31:16.840
+think i have missed in so okay collection dot add so
+
+01:31:16.840 --> 01:31:17.580
+document
+
+01:31:28.940 --> 01:31:35.080
+doc embe double d i n g s embeddings is nothing but embed
+
+01:31:35.080 --> 01:31:40.540
+that we are getting from the data then meta datas try to
+
+01:31:40.540 --> 01:31:45.980
+store so meta data is nothing but i'm going to store it so
+
+01:31:45.980 --> 01:31:48.540
+you are see source so
+
+01:31:50.270 --> 01:31:57.770
+here so you know this is optional by the way data i'm just
+
+01:31:57.770 --> 01:32:01.830
+trying to attach a meta with this one and ids so try to
+
+01:32:01.830 --> 01:32:06.430
+store ids so ids basically in a formatted string
+
+01:32:11.330 --> 01:32:17.950
+idx okay so this is the parameter for my chroma db so i'm
+
+01:32:17.950 --> 01:32:20.490
+trying to store four things over here so in a first
+
+01:32:20.490 --> 01:32:26.330
+iteration first document means this one and it's embedding
+
+01:32:26.330 --> 01:32:30.650
+which i'm getting from here and just a meta information i'm
+
+01:32:30.650 --> 01:32:32.950
+trying to attach if you want to attach anything else you can
+
+01:32:32.950 --> 01:32:36.190
+attach it and then i,id so i which i'm getting from the
+
+01:32:36.190 --> 01:32:40.910
+enumeration so in this way it will be able to store all the
+
+01:32:40.910 --> 01:32:44.950
+information in my chroma db i can try to print once all
+
+01:32:44.950 --> 01:32:54.350
+these things will be done so all data stored in chroma db
+
+01:32:54.350 --> 01:33:00.610
+right all data stored in chroma db now let's run it once
+
+01:33:00.610 --> 01:33:04.430
+again and parallel to me even you guys can try to test it
+
+01:33:04.430 --> 01:33:04.430
+but now let's run it again and see what happens let's see if
+
+01:33:04.430 --> 01:33:10.230
+we can t test it this one let's run it so python chroma db
+
+01:33:10.230 --> 01:33:13.530
+and as you can see we have a sqlite over here it is
+
+01:33:13.530 --> 01:33:19.790
+collection got unexpected keyword argument document it's
+
+01:33:19.790 --> 01:33:25.710
+basically s not yeah this is the parameter for a chroma so
+
+01:33:25.710 --> 01:33:29.230
+chroma understands documents okay
+
+01:33:34.120 --> 01:33:37.780
+so now you must be able to see some changes over here guys
+
+01:33:37.780 --> 01:33:43.480
+right all data is stored in db yes and just change this
+
+01:33:43.480 --> 01:33:46.420
+document to documents let me ping you this code once again
+
+01:33:46.420 --> 01:33:52.120
+so now all of these data and it's a document means the data
+
+01:33:52.120 --> 01:33:55.900
+raw data it's embedding this and its ID is stored into a
+
+01:33:55.900 --> 01:33:59.800
+chroma db and you will be able to see some newly created
+
+01:33:59.800 --> 01:34:05.440
+object inside your chroma db are you able to get it guys yes
+
+01:34:10.370 --> 01:34:12.510
+I are you able to get it everyone
+
+01:34:24.930 --> 01:34:28.850
+are you able to store the data guys are you able to see some
+
+01:34:28.850 --> 01:34:32.990
+different object over here Sivananda is saying yes Sivananda
+
+01:34:32.990 --> 01:34:37.390
+Akka is saying yes okay so now successfully I am able to
+
+01:34:37.390 --> 01:34:41.850
+complete two steps one converting into the embeddings two
+
+01:34:41.850 --> 01:34:47.310
+storing into a chroma db now it's time to do a cross
+
+01:34:47.310 --> 01:34:50.570
+verification that what kind of a data which has been stored
+
+01:34:50.570 --> 01:34:53.070
+inside the chroma db what is its embedding and what kind of
+
+01:34:53.070 --> 01:34:53.830
+data is stored inside the chroma db which has been stored
+
+01:34:53.830 --> 01:34:57.390
+inside the chroma db and then I will try to even go ahead
+
+01:34:57.390 --> 01:35:01.330
+with the search basically so it's something into my chroma
+
+01:35:01.330 --> 01:35:04.990
+db just by writing a query just we like try to write a query
+
+01:35:04.990 --> 01:35:08.850
+into a sequel right so just we write star select a star from
+
+01:35:08.850 --> 01:35:11.790
+EMP kind of a things so we'll try to even query our chroma
+
+01:35:11.790 --> 01:35:15.470
+db right we'll write some search query it will try to pass
+
+01:35:15.470 --> 01:35:18.830
+some data and then I'll see so what is the result it is
+
+01:35:18.830 --> 01:35:22.530
+going to give it to me out of this one so now let's go for
+
+01:35:22.530 --> 01:35:26.390
+the verification now all done everyone any question anyone
+
+01:35:26.390 --> 01:35:28.530
+is having please go ahead and ask so
+
+01:35:31.220 --> 01:35:36.220
+this is done now it's time for a verification so
+
+01:35:40.440 --> 01:35:43.120
+verification wise I'll use a same collection object that
+
+01:35:43.120 --> 01:35:45.380
+I've created so this collection object which is helping me
+
+01:35:45.380 --> 01:35:48.140
+out to connect to my collection right so this collection
+
+01:35:48.140 --> 01:35:54.060
+object I will be calling from a chroma DB collection.get so
+
+01:35:54.060 --> 01:35:57.800
+this is a function coming from a chroma itself right so
+
+01:35:57.800 --> 01:36:02.680
+collection.get get and then get what so basically it is
+
+01:36:02.680 --> 01:36:05.820
+going to give you like all the things so here i am going to
+
+01:36:05.820 --> 01:36:11.240
+write i n c l u d include this is basically like a command
+
+01:36:11.240 --> 01:36:17.060
+from chroma db d o c u m e n t s documents so here it is
+
+01:36:17.060 --> 01:36:22.020
+going to give you all the items so print print everything so
+
+01:36:22.020 --> 01:36:25.900
+that i will be able to cross check collection dot get means
+
+01:36:25.900 --> 01:36:28.700
+i'm not hitting my local i'm hitting my chroma basically and
+
+01:36:28.700 --> 01:36:33.060
+let's see whether i'm able to get a collection on so first
+
+01:36:33.060 --> 01:36:38.760
+do cls so this read i am trying to perform from my chroma
+
+01:36:38.760 --> 01:36:45.780
+guys so now as you can see all data is stored right then it
+
+01:36:45.780 --> 01:36:48.600
+is trying to return me what it is trying to return me ids i
+
+01:36:48.600 --> 01:36:52.740
+believe we were storing ids over here so we have given docs
+
+01:36:52.740 --> 01:36:57.740
+and then id like a name so in this format it has a stored id
+
+01:36:57.740 --> 01:37:01.840
+so doc 0 doc1 doc2 doc3 doc4 we have it here whatever I have
+
+01:37:01.840 --> 01:37:04.280
+given, if I would have given Sudhanshu over here, Sudhanshu
+
+01:37:04.280 --> 01:37:08.660
+1, 2, 3, 4 and so on, it would have stored and then, so this
+
+01:37:08.660 --> 01:37:15.750
+is my ID, so total 0 to 11, means 12 document has been
+
+01:37:15.750 --> 01:37:20.650
+stored as of now, inside this ChromaDB, embedding, none,
+
+01:37:20.710 --> 01:37:23.210
+metadata none, as of now it is trying to show me, I am
+
+01:37:23.210 --> 01:37:24.970
+trying to fetch just a document, so document my name is
+
+01:37:24.970 --> 01:37:26.730
+Sudhanshu Kumar, I used to teach this, this, this, this,
+
+01:37:26.750 --> 01:37:31.910
+this, so all of these data set is already stored inside this
+
+01:37:31.910 --> 01:37:35.030
+one, so can I say that guys, successfully I am able to store
+
+01:37:35.030 --> 01:37:36.830
+each and everything, yes,
+
+01:37:42.910 --> 01:37:43.850
+now
+
+01:37:53.900 --> 01:37:57.240
+I can even say that include embeddings, it will try to even
+
+01:37:57.240 --> 01:38:02.240
+print embeddings, last time I have done just include like a
+
+01:38:02.240 --> 01:38:06.040
+document, so it is showing you just a raw document that you
+
+01:38:06.040 --> 01:38:11.380
+have, now let's see, so
+
+01:38:15.030 --> 01:38:17.250
+can I say that this time it is printing even the embeddings,
+
+01:38:17.370 --> 01:38:21.910
+yes guys. All of these embeddings I am able to see over
+
+01:38:21.910 --> 01:38:25.190
+here, so it simply means that, that I am able to store IDs,
+
+01:38:25.450 --> 01:38:27.950
+I am able to store basically embeddings and I am able to
+
+01:38:27.950 --> 01:38:31.090
+store, even if I am going to like include metadata, so it
+
+01:38:31.090 --> 01:38:33.530
+will try to include metadata, like I think we all know what
+
+01:38:33.530 --> 01:38:36.670
+I have stored into metadata, right, my own custom string I
+
+01:38:36.670 --> 01:38:40.930
+have stored, so this is done basically, so everything is now
+
+01:38:40.930 --> 01:38:47.450
+available inside my DB, now it's time to use a DB, right, it
+
+01:38:47.450 --> 01:38:51.650
+is a time to use this particular DB. So, to use this
+
+01:38:51.650 --> 01:38:57.630
+particular DB, maybe I can leave this code as it is, I can
+
+01:38:57.630 --> 01:39:04.770
+try to create another file, search chroma.py, I am going to
+
+01:39:04.770 --> 01:39:09.790
+write another file guys, so search chroma.py and here, so I
+
+01:39:09.790 --> 01:39:17.920
+just need these imports, right, and I have to create
+
+01:39:17.920 --> 01:39:22.320
+obviously this connection, right. So, connection is
+
+01:39:22.320 --> 01:39:25.180
+required, so connection string I am going to copy and paste,
+
+01:39:25.420 --> 01:39:29.220
+connection string, I don't have to do anything with the LLM
+
+01:39:29.220 --> 01:39:31.680
+model now, so I just need like a, I have to interact with my
+
+01:39:31.680 --> 01:39:35.000
+chroma DB because data is already stored inside my chroma
+
+01:39:35.000 --> 01:39:38.860
+DB, so I can go ahead and then I can try to start searching
+
+01:39:38.860 --> 01:39:43.800
+each and everything inside that one. So, here let's do
+
+01:39:43.800 --> 01:39:47.940
+something just with this simple code, so here collection and
+
+01:39:47.940 --> 01:39:52.420
+let's do a search over here. That how I will be able to like
+
+01:39:52.420 --> 01:39:56.860
+a get some sort of a like a data out of this chroma DB, so
+
+01:39:56.860 --> 01:39:59.800
+till this point is it fine to all of us, every
+
+01:40:02.480 --> 01:40:05.040
+time you are creating the embeddings while executing the
+
+01:40:05.040 --> 01:40:07.680
+code, yeah you know that's the reason, so I have created a
+
+01:40:07.680 --> 01:40:11.040
+new one, this is what is happening, right, so unnecessarily
+
+01:40:11.040 --> 01:40:14.460
+I was hitting my URI API because it was executing the
+
+01:40:14.460 --> 01:40:19.680
+complete code, so let's do it here separately and was
+
+01:40:19.680 --> 01:40:20.740
+overriding the same document,
+
+01:40:25.020 --> 01:40:29.580
+yeah, so let's try to test it over here. Okay. Maybe we can
+
+01:40:29.580 --> 01:40:33.120
+try to do some sort of a search in this particular place, we
+
+01:40:33.120 --> 01:40:37.720
+can try to pass some of our own custom query over here and
+
+01:40:37.720 --> 01:40:41.860
+eventually I will be able to see some sort of a result in
+
+01:40:41.860 --> 01:40:46.860
+this particular place. So here I can write collection.query,
+
+01:40:46.920 --> 01:40:53.680
+coming from chroma, collection query and here when we are
+
+01:40:53.680 --> 01:40:56.440
+looking for a collection query, let's suppose I am trying to
+
+01:40:56.440 --> 01:41:00.880
+like a send something for a query. So you have to pass
+
+01:41:00.880 --> 01:41:05.200
+basically a query embeddings, so you need LLM by the way,
+
+01:41:05.520 --> 01:41:12.940
+query underscore E M B E double D I N G S, query embeddings.
+
+01:41:13.160 --> 01:41:17.520
+So whatever query you are going to pass, you have to convert
+
+01:41:17.520 --> 01:41:23.700
+those things into a embeddings and then you have to pass
+
+01:41:23.700 --> 01:41:28.400
+those things into this collection.query. So here. Let's
+
+01:41:28.400 --> 01:41:31.220
+suppose, let, let me create a separate function for this
+
+01:41:31.220 --> 01:41:41.020
+one. So def C A C A R C H search C H R O M A chroma. Now it
+
+01:41:41.020 --> 01:41:44.220
+is going to take what, so it is going to take maybe a like a
+
+01:41:44.220 --> 01:41:51.500
+query text. So whenever I'm going to call and then it
+
+01:41:53.770 --> 01:41:58.000
+is going to, okay.
+
+01:42:07.840 --> 01:42:12.500
+So embeddings request. Numpy, fine. Using which model? Same
+
+01:42:12.500 --> 01:42:13.120
+model. Okay.
+
+01:42:15.970 --> 01:42:21.370
+So I'm going to use a URI API guys, because what I'm going
+
+01:42:21.370 --> 01:42:25.210
+to provide a data into a text format. So it will take some
+
+01:42:25.210 --> 01:42:29.090
+data as a text format over here.
+
+01:42:32.020 --> 01:42:35.080
+It will take my custom text and
+
+01:42:38.150 --> 01:42:47.250
+F here, I'm going to convert it with my URI API key. URI API
+
+01:42:47.250 --> 01:42:52.390
+key. Same changes, which I have done before. So this looks
+
+01:42:52.390 --> 01:42:54.670
+fine. Fine. Fine. Finally, it is going to return my
+
+01:42:54.670 --> 01:42:59.710
+embeddings. Okay. That's great. And this is generate
+
+01:42:59.710 --> 01:43:05.110
+embeddings. I have created all looks good to me. So this is
+
+01:43:05.110 --> 01:43:07.370
+going to create our embeddings. This is going to return me
+
+01:43:07.370 --> 01:43:10.370
+the embeddings. I'm going to use that embeddings over here.
+
+01:43:10.890 --> 01:43:14.610
+So whatever query text I'm going to pass, it is supposed to
+
+01:43:14.610 --> 01:43:17.030
+call generate embeddings. Okay. And then it is supposed to
+
+01:43:17.030 --> 01:43:19.650
+pass the query text. So technically I'm calling this
+
+01:43:19.650 --> 01:43:24.750
+function. I'll be calling this function over here. Now it is
+
+01:43:24.750 --> 01:43:28.690
+going to give me a embeddings. So here query
+
+01:43:34.960 --> 01:43:40.360
+EMBED, it is going to run me embeddings. Now
+
+01:43:45.230 --> 01:43:50.590
+I can call collection.query and query embeddings is equals
+
+01:43:50.590 --> 01:43:56.190
+to this one. So embedding I'm going to pass. Okay. And then.
+
+01:43:58.360 --> 01:44:03.780
+I'll try to search and I'll say that, that while giving me a
+
+01:44:03.780 --> 01:44:07.280
+result, include a document as well. It means not just give
+
+01:44:07.280 --> 01:44:09.980
+me the embeddings, but try to give me the English document.
+
+01:44:10.380 --> 01:44:12.660
+So include documents
+
+01:44:15.280 --> 01:44:19.380
+means give me a sentences as well.
+
+01:44:23.500 --> 01:44:27.640
+Okay. And this is something it is going to give me as a
+
+01:44:27.640 --> 01:44:31.080
+result, R-E-S-U-L-T result.
+
+01:44:32.580 --> 01:44:38.450
+Maybe I can write it down in a single line. So that looks
+
+01:44:38.450 --> 01:44:38.870
+clean.
+
+01:44:43.560 --> 01:44:46.480
+Okay. So this is, this is going to give me a basically a
+
+01:44:46.480 --> 01:44:51.120
+result, including a document. It is going to give it to me
+
+01:44:51.120 --> 01:44:53.420
+based on the embeddings, which I'm going to pass embedding.
+
+01:44:53.460 --> 01:44:55.580
+I'm going to create based on that data, which I'm going to
+
+01:44:55.580 --> 01:45:00.300
+pass when I'm going to call search chroma. Once it is going
+
+01:45:00.300 --> 01:45:05.800
+to give me a return, then maybe I can try to print this
+
+01:45:05.800 --> 01:45:09.320
+index. Entire return. So simple. Go ahead. As of now, we're
+
+01:45:09.320 --> 01:45:16.320
+into the result over here. Okay. That's looks amazing to me.
+
+01:45:18.240 --> 01:45:24.260
+Search chroma. And I'm going to call my name is Sudhanshu.
+
+01:45:25.420 --> 01:45:29.840
+So this is my input data. I'm trying to search and I'm
+
+01:45:29.840 --> 01:45:32.280
+trying to solve that, which in all like a documents are
+
+01:45:32.280 --> 01:45:36.400
+closer to me. And again, yeah. One more thing. I can try to
+
+01:45:36.400 --> 01:45:38.900
+print over here. So I can try to print a K nearest means
+
+01:45:38.900 --> 01:45:43.160
+top, like a top, give me top two, give me top three matching
+
+01:45:43.160 --> 01:45:45.660
+one. So again, I can try to parameterize that part as well.
+
+01:45:46.020 --> 01:45:51.360
+So here there is a parameter inside this chroma DV called as
+
+01:45:51.360 --> 01:45:56.880
+N underscore R E S U L T. Number of results. So give me
+
+01:45:56.880 --> 01:46:01.560
+basically, uh, maybe like a top two result only. I've just
+
+01:46:01.560 --> 01:46:04.360
+hardcoded it. Now save.
+
+01:46:08.380 --> 01:46:13.280
+Print you this code. Test it now, CLS,
+
+01:46:16.060 --> 01:46:23.160
+Python search chroma. Let's see, uh, bearer URI API key has
+
+01:46:23.160 --> 01:46:27.840
+failed. Name URI API key is not defined. Okay. Good. I have
+
+01:46:27.840 --> 01:46:32.660
+not done the import over here. Let me do the import load
+
+01:46:32.660 --> 01:46:35.860
+environment, load this load
+
+01:46:39.380 --> 01:46:43.760
+environment, load this API key. Now it will not give me same
+
+01:46:43.760 --> 01:46:45.100
+issue. Okay. Looks great.
+
+01:46:49.520 --> 01:46:50.220
+Run again.
+
+01:46:55.420 --> 01:46:59.620
+Uh, got unexpected keyword argument, query embeddings, query
+
+01:46:59.620 --> 01:47:01.980
+embeddings, query
+
+01:47:06.080 --> 01:47:14.200
+embeddings, Q U E E M B E E M B E double D I N G S. Okay.
+
+01:47:14.720 --> 01:47:15.420
+Spelling mistake.
+
+01:47:19.860 --> 01:47:25.680
+Hmm. Bingo. So now we are able to even do a search guys. So
+
+01:47:25.680 --> 01:47:28.980
+what was my, like, uh, I have, I have passed this one. My
+
+01:47:28.980 --> 01:47:30.800
+name is Danshu. I have passed this document. I have passed
+
+01:47:30.800 --> 01:47:35.000
+this document. Right now it is able to match and I'm looking
+
+01:47:35.000 --> 01:47:38.860
+for what I'm looking for top two result. So it is matching
+
+01:47:38.860 --> 01:47:42.360
+more closely with a document of Jiro and document nine,
+
+01:47:42.680 --> 01:47:46.740
+right? It is matching closely with the document zero and a
+
+01:47:46.740 --> 01:47:50.180
+document nine. So what was there inside the document? My
+
+01:47:50.180 --> 01:47:54.840
+name is Danchukumar. That was a document zero. And this was
+
+01:47:54.840 --> 01:47:59.280
+my document nine, by the way. So while many would have been
+
+01:47:59.280 --> 01:48:01.680
+daunted. By the way. lack of support and a positive answer
+
+01:48:01.680 --> 01:48:05.380
+was endless and his pursuit of the knowledge he knew that
+
+01:48:05.380 --> 01:48:07.640
+education has a power to change the life and he was
+
+01:48:07.640 --> 01:48:12.560
+determined so yeah it is able to match with two top document
+
+01:48:12.560 --> 01:48:16.040
+and two top document is doc zero doc nine and i'm able to
+
+01:48:16.040 --> 01:48:20.940
+get the result can i say that now my entire loop is closed
+
+01:48:20.940 --> 01:48:22.020
+yeah
+
+01:48:23.980 --> 01:48:27.160
+i'm able to perform even a search operation so now i can try
+
+01:48:27.160 --> 01:48:32.600
+to pass any kind of a like a data that i want so sudhanshu
+
+01:48:34.580 --> 01:48:43.040
+has has founded euron give me top three result yeah
+
+01:48:50.370 --> 01:48:53.170
+so top three result doc five doc ten doc six it's matching
+
+01:48:53.170 --> 01:48:57.310
+with that you can you can even read out the like a data so
+
+01:48:57.310 --> 01:49:00.550
+sudhanshu kumar has started a company called as euron i have
+
+01:49:00.550 --> 01:49:03.050
+written sudhanshu has founded euron so started a company
+
+01:49:03.050 --> 01:49:06.770
+called as so this is the very first matching right and uh
+
+01:49:06.770 --> 01:49:10.690
+this is the building the success of why you know the answer
+
+01:49:10.690 --> 01:49:13.630
+is now leading euron again looks like it's a very close
+
+01:49:13.630 --> 01:49:19.290
+match right so yeah we are able to do the embeddings we are
+
+01:49:19.290 --> 01:49:23.110
+able to store it into the databases we are even able to do a
+
+01:49:23.110 --> 01:49:31.410
+query on top of those databases making sense guys yeah so
+
+01:49:33.840 --> 01:49:37.020
+anyone who can tell me like what do you understand by rag
+
+01:49:37.020 --> 01:49:38.300
+retrieval on top of those databases i don't know i don't
+
+01:49:38.300 --> 01:49:39.020
+know but i do think it's very easy augmented generation
+
+01:49:39.520 --> 01:49:43.620
+anyone in a layman way I am not looking for some fancy word
+
+01:49:43.620 --> 01:49:46.480
+by the way in a layman manner anyone who can explain like
+
+01:49:46.480 --> 01:49:50.820
+what do you understand by RAG no it's not RAG I am just
+
+01:49:50.820 --> 01:49:54.080
+asking you a question I am just I have to build some context
+
+01:49:54.080 --> 01:49:54.960
+over here that's the reason
+
+01:49:59.760 --> 01:50:03.640
+this is not RAG by the way but yeah it's a part of RAG you
+
+01:50:03.640 --> 01:50:08.920
+can say anyone who understands RAG conceptually just
+
+01:50:08.920 --> 01:50:09.640
+conceptually
+
+01:50:20.480 --> 01:50:25.920
+I am waiting guys for your answer searching data from
+
+01:50:25.920 --> 01:50:30.760
+knowledge base I am not able to understand
+
+01:50:34.360 --> 01:50:37.460
+how does it like search like from a knowledge base
+
+01:50:41.090 --> 01:50:43.890
+is it RAG no I think I have already given the answer person
+
+01:50:43.890 --> 01:50:48.230
+with the number 8938 to get the latest data no if data is
+
+01:50:48.230 --> 01:50:51.250
+not present in a DB data can fetch from the source like
+
+01:50:51.250 --> 01:50:54.750
+internet no incorrect answer if I have a context based on
+
+01:50:54.750 --> 01:50:58.510
+the semantic search from the vector DB pass search included
+
+01:50:58.510 --> 01:51:03.010
+with the output people are not able to give me the correct
+
+01:51:03.010 --> 01:51:03.350
+answer
+
+01:51:08.740 --> 01:51:13.910
+oh okay RAG is helpful to use own enterprise data which
+
+01:51:13.910 --> 01:51:16.850
+should be exposed to the public not all the time but yeah
+
+01:51:17.410 --> 01:51:21.310
+quite right so I will tell you guys what is RAG by the way
+
+01:51:21.310 --> 01:51:24.710
+so what like RAG follows let me explain you in a layman way
+
+01:51:24.710 --> 01:51:28.430
+I feel like after today's class you will not be able to
+
+01:51:28.430 --> 01:51:31.470
+forget RAG and we have chapters on RAG I'm going to show you
+
+01:51:31.470 --> 01:51:35.250
+a practical implementation of RAG so majorly I have seen
+
+01:51:35.250 --> 01:51:39.210
+that people know this buzzwords because of YouTube videos
+
+01:51:39.210 --> 01:51:41.510
+and all those things people have created the YouTube videos
+
+01:51:41.510 --> 01:51:46.130
+but somewhere even they lack in terms of connecting a dots
+
+01:51:46.130 --> 01:51:50.370
+and because of that so people are not aware about the actual
+
+01:51:50.370 --> 01:51:52.970
+implementation and the actual concept what goes behind
+
+01:51:53.690 --> 01:51:57.990
+because see before this class maybe you guys were not aware
+
+01:51:57.990 --> 01:52:01.290
+about the vector DB and maybe vector DB was a big deal for
+
+01:52:01.290 --> 01:52:06.290
+all of us but is it really a big deal are we doing something
+
+01:52:06.290 --> 01:52:08.950
+different I think we all understand the embedding we are
+
+01:52:08.950 --> 01:52:10.610
+just trying to convert it and store it into some databases
+
+01:52:10.610 --> 01:52:14.090
+and I think this entire vector database concept is clear now
+
+01:52:14.090 --> 01:52:16.970
+I'm going to explain a chrome waviate pine cone fussy
+
+01:52:16.970 --> 01:52:22.210
+anything right you will not find difference at all right you
+
+01:52:22.210 --> 01:52:26.050
+will not find difference at all now RAG and why I'm talking
+
+01:52:26.050 --> 01:52:29.250
+about RAG let's try to understand that part so as of now
+
+01:52:29.250 --> 01:52:32.950
+let's suppose you will go to URI right you will go to URI
+
+01:52:32.950 --> 01:52:35.950
+and you will try to chat something so
+
+01:52:38.090 --> 01:52:39.050
+tell me
+
+01:52:48.680 --> 01:52:52.840
+about Euron so I'm just asking this question tell me about
+
+01:52:52.840 --> 01:52:56.840
+Euron now so certainly it seems you might refer to Euron
+
+01:52:56.840 --> 01:53:06.060
+from a song of ice and fire yes so song of ice and fire book
+
+01:53:06.060 --> 01:53:11.020
+series by George RR Martin published perhaps Euron Greg Joy
+
+01:53:11.020 --> 01:53:16.420
+now when I was asking a question my intention was different
+
+01:53:16.420 --> 01:53:19.860
+I'm expecting that it should give me an answer with respect
+
+01:53:19.860 --> 01:53:25.000
+to my Euron but this is just a pre-trained model right pre
+
+01:53:25.000 --> 01:53:28.280
+-trained model it's not a live one it will not be able to
+
+01:53:28.280 --> 01:53:31.920
+answer right it will not be able to answer based on the
+
+01:53:31.920 --> 01:53:36.680
+Euron data now step number two I'll go ahead and I'll try to
+
+01:53:36.680 --> 01:53:39.680
+select a FLAS model now FLAS is basically it can do a real
+
+01:53:39.680 --> 01:53:49.580
+-time search now tell me about Euron let's see it's a search
+
+01:53:49.580 --> 01:53:50.120
+model basically
+
+01:53:53.330 --> 01:53:56.310
+Euron perhaps there is another Euron you are interested in
+
+01:53:56.310 --> 01:53:59.230
+so please let me know which Euron you'd like to know about
+
+01:53:59.230 --> 01:54:01.530
+so at least it is searching it is searching the internet
+
+01:54:02.110 --> 01:54:11.350
+tell me about Euron dot one company company in at edutech
+
+01:54:11.350 --> 01:54:15.070
+yeah now let's do that search so basically it is trying to
+
+01:54:15.070 --> 01:54:17.930
+go to google and then it is trying to like search it and now
+
+01:54:17.930 --> 01:54:20.990
+it is able to list everything right so affordable pricing
+
+01:54:20.990 --> 01:54:23.770
+comprehensive this that and the founder is basically
+
+01:54:23.770 --> 01:54:28.330
+Sudhanshu Kumar this is Gemini FLAS is nothing but it's a
+
+01:54:28.330 --> 01:54:31.010
+real-time search engine it is trying to do a real-time
+
+01:54:31.010 --> 01:54:35.490
+search now so this GPT Nano Mini all these models are
+
+01:54:35.490 --> 01:54:38.450
+basically a trained model on a very heavy data set so it can
+
+01:54:38.450 --> 01:54:41.470
+like generate but yeah not in a real-time it will not be
+
+01:54:41.470 --> 01:54:44.050
+able to search it so this kind of a response you will not be
+
+01:54:44.050 --> 01:54:47.850
+able to get it one is search one is like a chat completion
+
+01:54:47.850 --> 01:54:54.210
+or you can say a generation model that we have now so again
+
+01:54:54.210 --> 01:54:55.350
+further if I am going
+
+01:55:04.190 --> 01:55:08.410
+in Euron right give me the list of courses which is
+
+01:55:08.410 --> 01:55:12.550
+available in Euron so tech focus so it is able to go to
+
+01:55:12.550 --> 01:55:15.310
+Google and as you can see it is able to search we have not
+
+01:55:15.310 --> 01:55:17.250
+done anything guys we have not done any integration as of
+
+01:55:17.250 --> 01:55:20.530
+now it is able to list down all the courses it is trying to
+
+01:55:20.530 --> 01:55:22.430
+give you all the list of the courses from the Google
+
+01:55:42.570 --> 01:55:43.170
+search
+
+01:55:48.650 --> 01:55:49.250
+now
+
+01:56:01.790 --> 01:56:04.530
+it's all about my database search I use Euron database
+
+01:56:04.530 --> 01:56:06.030
+search right
+
+01:56:08.680 --> 01:56:11.920
+are you able to understand the context which I am trying to
+
+01:56:11.920 --> 01:56:22.580
+build yeah so now yeah so now system is supposed to do an
+
+01:56:22.580 --> 01:56:27.800
+operation even based out of my private data plus whatever
+
+01:56:27.800 --> 01:56:31.920
+model it has learned because LLM is already having a vast
+
+01:56:31.920 --> 01:56:34.320
+amount of experience it is having like a knowledge about all
+
+01:56:34.320 --> 01:56:39.880
+the data right so what we can do is that what if while doing
+
+01:56:39.880 --> 01:56:43.380
+a search like I am sending a data over here so how search
+
+01:56:43.380 --> 01:56:45.880
+happens so let's suppose I am trying to type a text over
+
+01:56:45.880 --> 01:56:48.840
+here now eventually what will happen it will try to convert
+
+01:56:48.840 --> 01:56:52.800
+this text into embeddings even now the result that I am able
+
+01:56:52.800 --> 01:56:55.580
+to get over here so it is converting into embeddings and
+
+01:56:55.580 --> 01:56:59.040
+then it is trying to generate some information maybe by
+
+01:56:59.040 --> 01:57:01.500
+using a chat completion model or by using a real time google
+
+01:57:01.500 --> 01:57:05.560
+search and then it is giving me embeddings then this
+
+01:57:05.560 --> 01:57:09.800
+interface is trying to convert it into a text and this is
+
+01:57:09.800 --> 01:57:12.780
+how I am able to get the result over here this is how I am
+
+01:57:12.780 --> 01:57:17.260
+able to get the result now meaning of RAG retrieval
+
+01:57:17.260 --> 01:57:20.620
+augmented generation is very simple in a layman way that
+
+01:57:20.620 --> 01:57:20.900
+when
+
+01:57:27.180 --> 01:57:33.020
+Devkumar is trying to do and generate a complete roadmap for
+
+01:57:33.020 --> 01:57:35.900
+Devkumar only for Devkumar especially to Devkumar based on
+
+01:57:35.900 --> 01:57:39.040
+his data based on his learning experience so what it will do
+
+01:57:39.040 --> 01:57:42.620
+is it will go to my DB which is called as knowledge base
+
+01:57:42.620 --> 01:57:46.760
+knowledge base means technically you are talking about the
+
+01:57:46.760 --> 01:57:48.880
+database or some document or anything your private document
+
+01:57:48.880 --> 01:57:52.480
+right so whenever it will try to send this
+
+01:57:57.120 --> 01:58:01.200
+response along with this text I will try to add something
+
+01:58:01.200 --> 01:58:06.380
+even from my database with respect to a specific event for
+
+01:58:06.380 --> 01:58:10.520
+example Devkumar right now what I am going to embed so with
+
+01:58:10.520 --> 01:58:15.740
+this embedding I will try to attach my embedding from where
+
+01:58:15.740 --> 01:58:20.860
+I will be able to get the embedding again vector DB so
+
+01:58:20.860 --> 01:58:23.460
+basically I can try to keep all my private information into
+
+01:58:23.460 --> 01:58:28.260
+the vector DB whenever someone is trying for text it will
+
+01:58:28.260 --> 01:58:32.280
+try to attach embeddings even from this one and this whole
+
+01:58:32.280 --> 01:58:37.720
+data will be sent to the LLM is it making sense technically
+
+01:58:37.720 --> 01:58:43.200
+it's called RAG retrieval augmented generation augmented
+
+01:58:43.200 --> 01:58:47.020
+this is meaning of this augmented generation we are trying
+
+01:58:47.020 --> 01:58:50.640
+to retrieve the data from our private data building the new
+
+01:58:50.640 --> 01:58:54.180
+query string sending it to the model and then model will try
+
+01:58:54.180 --> 01:58:58.320
+to do whatever it does whatever it is best for if it is best
+
+01:58:58.320 --> 01:59:00.800
+for search it will go ahead do it if it is best for like a
+
+01:59:00.800 --> 01:59:04.220
+start completion it will go ahead and do it so technically
+
+01:59:04.220 --> 01:59:06.820
+this is where this RAG comes into a picture
+
+01:59:10.960 --> 01:59:14.120
+and again picture will be more clearer and clearer in a
+
+01:59:14.120 --> 01:59:17.460
+practical way when I will talk about RAG chapter wise so
+
+01:59:17.460 --> 01:59:21.000
+that is already a part of your syllabus by the way so
+
+01:59:23.440 --> 01:59:25.960
+guys are you able to enjoy today's class
+
+01:59:28.760 --> 01:59:33.600
+hope all of you are able to enjoy my today's class let me
+
+01:59:33.600 --> 01:59:38.320
+remove this string from here I just removed it partially
+
+01:59:39.040 --> 01:59:43.060
+yeah hope all of you are able to understand it now in my
+
+01:59:43.060 --> 01:59:46.600
+next class I am going to teach you all four database
+
+01:59:46.600 --> 01:59:50.920
+together back to back back to back back to back yeah so I'll
+
+01:59:50.920 --> 01:59:52.840
+try to teach you all this four because there is nothing to
+
+01:59:52.840 --> 01:59:57.460
+teach in that one I just have to like create this URL
+
+01:59:57.900 --> 02:00:01.100
+connection string push the data and then search for the data
+
+02:00:01.960 --> 02:00:04.700
+yeah that's the only thing that I have to do going forward
+
+02:00:04.700 --> 02:00:09.940
+so now let me rest my chroma db let me close it and I am
+
+02:00:09.940 --> 02:00:16.340
+going to share this code with all of you d drive code chroma
+
+02:00:16.340 --> 02:00:23.280
+what is the folder name by the way ok vector db demo so
+
+02:00:23.280 --> 02:00:30.760
+vector db demo let me like convert it into a zip ok
+
+02:00:38.150 --> 02:00:41.010
+LLM will not learn this private data every time this private
+
+02:00:41.010 --> 02:00:45.170
+data need to be sent that depends so that depends actually
+
+02:00:45.170 --> 02:00:48.410
+based on the LLM configuration so if you have seen the open
+
+02:00:48.410 --> 02:00:52.290
+AI like interface I don't know whether you have observed or
+
+02:00:52.290 --> 02:00:55.330
+not so inside of open AI interface they are giving you an
+
+02:00:55.330 --> 02:00:58.430
+option so make this data public means whatever data if you
+
+02:00:58.430 --> 02:01:01.030
+are trying to do it with their API whatever data you are
+
+02:01:01.030 --> 02:01:04.790
+sending your data will be public by default right so it
+
+02:01:04.790 --> 02:01:07.090
+depends on the platform as well and they have already given
+
+02:01:07.090 --> 02:01:08.930
+you switch on switch off option so if you are going to
+
+02:01:08.930 --> 02:01:11.070
+switch off it then in that they are claiming that they are
+
+02:01:11.070 --> 02:01:13.990
+not using it I don't know it's their system right but yeah
+
+02:01:13.990 --> 02:01:20.650
+so with URI I think we will try to bring those RIG we are
+
+02:01:20.650 --> 02:01:24.430
+not storing those data don't worry so you can try to build
+
+02:01:24.430 --> 02:01:28.390
+RIG with URI API as well and whatever we are storing
+
+02:01:28.390 --> 02:01:31.810
+whatever we are holding it into the memory you will be able
+
+02:01:31.810 --> 02:01:36.550
+to see it over here and even like files and soon we are even
+
+02:01:36.550 --> 02:01:39.250
+going to give an option to wipe out your entire data even a
+
+02:01:39.250 --> 02:01:42.290
+memory for files we have already given the option that you
+
+02:01:42.290 --> 02:01:45.250
+can try to delete your files so that you will be having all
+
+02:01:45.250 --> 02:01:45.690
+the controls
+
+02:01:52.970 --> 02:01:57.210
+how to use a URI API in N8N so in N8N try to create a custom
+
+02:01:57.210 --> 02:01:59.350
+component basically custom connector component that option
+
+02:01:59.350 --> 02:02:02.830
+is already available in N8N and then use it anywhere you
+
+02:02:02.830 --> 02:02:05.310
+want simple use all the models
+
+02:02:08.080 --> 02:02:11.140
+will you teach languages yeah I'll try to talk so see
+
+02:02:11.140 --> 02:02:13.340
+everything we are not supposed to mention inside like a
+
+02:02:14.240 --> 02:02:17.900
+syllabus or anyhow syllabus is very very huge and long but
+
+02:02:17.900 --> 02:02:21.620
+yeah I'll try to talk about that that in a practical manner
+
+02:02:27.260 --> 02:02:30.560
+so okay any question for me for the question most of the
+
+02:02:30.560 --> 02:02:33.160
+clients in my company are in favor of using open LM due to
+
+02:02:33.160 --> 02:02:35.600
+the data being exposed to the outer world can you also
+
+02:02:35.600 --> 02:02:39.060
+please teach us quantize model quantization is just one
+
+02:02:39.060 --> 02:02:41.360
+single step so yeah I can teach you easily like quantization
+
+02:02:41.360 --> 02:02:44.960
+even we are like we do the lot of quantization not just from
+
+02:02:44.960 --> 02:02:48.660
+like now I think now people are talking quantization right
+
+02:02:48.660 --> 02:02:51.360
+we have been doing a quantization and especially with the
+
+02:02:51.360 --> 02:02:55.520
+vision model I think since like five year almost even more
+
+02:02:55.520 --> 02:03:00.920
+than that will you teach a code to create a database like a
+
+02:03:00.920 --> 02:03:04.820
+chrome db that will be very very huge doctor I can teach it
+
+02:03:04.820 --> 02:03:06.880
+teaching I don't have any issue but it's not a part of your
+
+02:03:06.880 --> 02:03:09.760
+syllabus at least this syllabus so I'm not going to talk
+
+02:03:09.760 --> 02:03:13.780
+about it that is that itself is going to be a big project in
+
+02:03:13.780 --> 02:03:18.380
+itself but yeah we are like building internally a lot of
+
+02:03:18.380 --> 02:03:24.470
+such kind of things data analysis is coming you will get to
+
+02:03:24.470 --> 02:03:30.000
+know Abigail I mean not in favor yeah obviously like
+
+02:03:30.000 --> 02:03:31.700
+companies are not in favor of that
+
+02:03:35.920 --> 02:03:39.900
+okay so I believe I'm done for today see you again in my
+
+02:03:39.900 --> 02:03:43.860
+next class which is going to happen on next Saturday and
+
+02:03:43.860 --> 02:03:47.960
+yeah so I'll just like follow along with the syllabus agenda
+
+02:03:47.960 --> 02:03:51.980
+is clear that what we are going to discuss next and then
+
+02:03:51.980 --> 02:03:54.620
+next so with that guys thank you so much everyone see you
+
+02:03:54.620 --> 02:03:58.720
+again in next class thank you all the resources and things
+
+02:03:58.720 --> 02:04:01.120
+are already shared inside your dashboard so you can just
+
+02:04:01.120 --> 02:04:01.560
+follow along
+

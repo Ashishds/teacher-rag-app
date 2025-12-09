@@ -1,0 +1,5807 @@
+WEBVTT
+
+00:06:11.700 --> 00:06:14.740
+okay so hi everyone good morning i think i'm audible and
+
+00:06:14.740 --> 00:06:17.400
+visible to all of you guys so please confirm if i'm audible
+
+00:06:17.400 --> 00:06:19.220
+and visible to all of you so that we can start with the
+
+00:06:19.220 --> 00:06:20.400
+class yeah everyone
+
+00:06:26.440 --> 00:06:30.020
+okay so i believe we all are aware about the topic that we
+
+00:06:30.020 --> 00:06:32.280
+are going to discuss today so today i'm going to talk about
+
+00:06:32.280 --> 00:06:35.380
+a cicd pipeline basically which you can try to implement in
+
+00:06:35.380 --> 00:06:39.680
+like all the project that you are going to build by the way
+
+00:06:39.680 --> 00:06:40.640
+so
+
+00:07:02.820 --> 00:07:06.680
+shall we start guys shall we start everyone yeah so good
+
+00:07:06.680 --> 00:07:08.640
+morning good morning everyone yeah
+
+00:07:15.650 --> 00:07:19.090
+so shall we start okay fine so let's start okay
+
+00:07:24.590 --> 00:07:27.130
+everyone so in today's lecture what we are going to do so we
+
+00:07:27.130 --> 00:07:30.530
+are going to talk about basically a cicd pipeline so cicd
+
+00:07:30.530 --> 00:07:33.550
+pipeline means a continuous integration and continuous
+
+00:07:33.550 --> 00:07:38.130
+deployment now the cicd pipeline is important with respect
+
+00:07:38.130 --> 00:07:41.930
+to any project that you are going to build maybe like a
+
+00:07:41.930 --> 00:07:45.290
+today or maybe in a future now so when we talk about this
+
+00:07:45.290 --> 00:07:49.750
+cicd pipeline so cicd pipeline you can do it in a multiple
+
+00:07:49.750 --> 00:07:53.590
+manner so i'm going to show you one of the approach but
+
+00:07:53.590 --> 00:07:56.270
+again so there are like a variety of approach that you can
+
+00:07:56.270 --> 00:07:59.270
+try to define and with the help of all of those approaches
+
+00:07:59.270 --> 00:08:03.290
+you will be able to create your cicd pipeline not just that
+
+00:08:03.290 --> 00:08:07.530
+so there are other tool which comes in between but i'm going
+
+00:08:07.530 --> 00:08:11.970
+to show you one of the simplest cicd pipeline with respect
+
+00:08:11.970 --> 00:08:16.550
+to a github action so github action and then on a aws so we
+
+00:08:16.550 --> 00:08:21.170
+are going to occupy some ec2 instances a machine so where we
+
+00:08:21.170 --> 00:08:24.550
+are going to do a deployment so continuously it will keep on
+
+00:08:24.550 --> 00:08:27.870
+doing a integration it will keep on doing a testing of the
+
+00:08:27.870 --> 00:08:31.870
+code and it will keep on doing a deployment so as soon as we
+
+00:08:31.870 --> 00:08:35.690
+are going to push our code inside a github repository so aws
+
+00:08:35.690 --> 00:08:39.250
+is something that we are going to use and from aws so ect
+
+00:08:39.250 --> 00:08:43.230
+ec2 instances we are going to use and along with that so we
+
+00:08:43.230 --> 00:08:46.450
+are going to use a github and more specifically inside a
+
+00:08:46.810 --> 00:08:49.010
+github there is something called as github action that is
+
+00:08:49.010 --> 00:08:51.170
+something that we are going to discuss that something that
+
+00:08:51.170 --> 00:08:54.570
+we are going to discuss discover in my today's class so
+
+00:08:54.570 --> 00:08:59.270
+let's get started and let me i think my screen is already
+
+00:08:59.270 --> 00:09:04.590
+visible uh no it's not visible so let me share my screen so
+
+00:09:04.590 --> 00:09:07.510
+yeah now it's visible now if
+
+00:09:10.420 --> 00:09:13.040
+i'll go to your own so last week we have released one of the
+
+00:09:13.040 --> 00:09:15.960
+amazing features so for example if you will go inside your
+
+00:09:15.960 --> 00:09:20.500
+dashboard so you will be able to find out uh here you will
+
+00:09:20.500 --> 00:09:24.400
+be able to find out basically the script or you can say a
+
+00:09:24.400 --> 00:09:28.080
+summary of your entire lecture so whatever i have discussed
+
+00:09:28.080 --> 00:09:32.500
+in my previous lecture in a crisp and precise manner as well
+
+00:09:32.500 --> 00:09:35.680
+as in a very very detailed manner you will be able to find
+
+00:09:35.680 --> 00:09:38.760
+out a lecture summary so let's suppose if someone is going
+
+00:09:38.760 --> 00:09:41.580
+to revise this entire lecture so maybe you can look into the
+
+00:09:41.580 --> 00:09:45.240
+summary first that what has been discussed and yeah so then
+
+00:09:45.240 --> 00:09:48.760
+you can maybe try to watch this entire two hour long video
+
+00:09:49.720 --> 00:09:53.600
+so you will be able to even uh like a download a transcript
+
+00:09:53.600 --> 00:09:57.000
+with respect to a timestamp so raw transcript basically so
+
+00:09:57.000 --> 00:09:59.320
+let's suppose if you are trying to build some sort of an lp
+
+00:09:59.320 --> 00:10:03.780
+application if you are like trying to build something with
+
+00:10:03.780 --> 00:10:07.460
+respect to a video processing so this is going to help you
+
+00:10:07.460 --> 00:10:11.480
+out and you have a tons of data now available on your own
+
+00:10:11.480 --> 00:10:15.580
+platform so for all the videos not just one for all the
+
+00:10:15.580 --> 00:10:19.900
+videos so we have already generated a transcript so from
+
+00:10:19.900 --> 00:10:22.480
+every classes by the way yeah from every lecture from every
+
+00:10:22.480 --> 00:10:26.620
+classes even if it is a self page so we have already uh like
+
+00:10:26.620 --> 00:10:30.180
+a generated a transcript for each and every one and you can
+
+00:10:30.180 --> 00:10:33.260
+just click over here you will be able to download a
+
+00:10:33.260 --> 00:10:37.580
+transcript a very very huge one right with respect to a
+
+00:10:37.580 --> 00:10:41.660
+timestamp and a lot of application you all will be able to
+
+00:10:41.660 --> 00:10:46.040
+build just by using this particular transcript not just that
+
+00:10:46.040 --> 00:10:49.680
+so we have also like uh you know built one small feature
+
+00:10:49.720 --> 00:10:52.080
+just like a youtube so you must have seen over a youtube
+
+00:10:52.080 --> 00:10:55.360
+that uh they are giving you ask feature not on all the
+
+00:10:55.360 --> 00:10:58.420
+videos but yeah i think in like some of the videos so they
+
+00:10:58.420 --> 00:11:00.920
+have already released this particular feature so where you
+
+00:11:00.920 --> 00:11:04.860
+can go and you can try to ask something about a video simply
+
+00:11:04.860 --> 00:11:07.440
+means that that you will be able to chat with the video
+
+00:11:07.440 --> 00:11:10.540
+right you all will be able to chat with the video so here
+
+00:11:10.540 --> 00:11:13.280
+you can come and you can start chatting with the video uh
+
+00:11:13.280 --> 00:11:17.820
+just like you chat with a chat gpt or maybe a yuri right and
+
+00:11:17.820 --> 00:11:21.180
+you will be able to get your answer as simple as that so
+
+00:11:21.180 --> 00:11:25.320
+this feature is also implemented over here uh not just that
+
+00:11:25.320 --> 00:11:29.300
+so in this video section you will be able to see our quizzes
+
+00:11:29.300 --> 00:11:32.480
+as well as assignments so you can try to attempt all of
+
+00:11:32.480 --> 00:11:36.300
+these quiz and going forward for all the live class lecture
+
+00:11:36.300 --> 00:11:39.080
+you will be able to get an assignment and you will be able
+
+00:11:39.080 --> 00:11:42.440
+to get a quiz and which will be available here itself so as
+
+00:11:42.440 --> 00:11:45.140
+you can see so we have assignments and we have a quiz which
+
+00:11:45.140 --> 00:11:47.320
+we have already uploaded our team has already created that
+
+00:11:47.320 --> 00:11:51.040
+part and yeah so you can try to use it so these are the
+
+00:11:51.040 --> 00:11:54.000
+features that we have released last week which is like a ai
+
+00:11:54.000 --> 00:11:57.340
+driven feature you can say right ai driven feature uh many
+
+00:11:57.340 --> 00:12:00.660
+more things uh is going to come so that it is going to make
+
+00:12:00.660 --> 00:12:04.780
+your learning experience better and better and it will help
+
+00:12:04.780 --> 00:12:08.220
+you out in terms of learning things in a easiest possible
+
+00:12:08.220 --> 00:12:12.040
+manner so hope all of you have liked this feature if you
+
+00:12:12.040 --> 00:12:15.140
+have not explored just go inside the dashboard and try to
+
+00:12:15.140 --> 00:12:18.220
+click on any of your videos and you will be able to see it
+
+00:12:18.220 --> 00:12:19.700
+along with that so obviously if you have any questions feel
+
+00:12:19.700 --> 00:12:19.940
+free to leave them in the chat so if you've not yet
+
+00:12:19.940 --> 00:12:19.940
+subscribed to this channel please do so as well to see all
+
+00:12:19.940 --> 00:12:19.940
+the links in the description so you don't have to worry
+
+00:12:19.940 --> 00:12:21.460
+about that so we are aware about our consultancy and work
+
+00:12:21.460 --> 00:12:23.980
+and learn so we are trying to improvise even that feature
+
+00:12:23.980 --> 00:12:28.680
+because people are liking that a lot right so like they are
+
+00:12:28.680 --> 00:12:31.160
+they are getting into an environment so where they can work
+
+00:12:31.160 --> 00:12:34.240
+a and they can try to learn because i believe this is uh
+
+00:12:34.240 --> 00:12:38.980
+like a like learning is not sufficient so this is going to
+
+00:12:38.980 --> 00:12:42.820
+be a next big thing inside upskilling especially if i'll
+
+00:12:42.820 --> 00:12:46.560
+talk about upskilling segment so i believe work and learn is
+
+00:12:46.560 --> 00:12:49.700
+going to be our next big thing that's a reason so keep an
+
+00:12:49.700 --> 00:12:49.860
+eye on that and let us know about the next big thing so that
+
+00:12:49.860 --> 00:12:52.800
+in our mind so i have released that and yeah so maybe we can
+
+00:12:52.800 --> 00:12:56.040
+go and you can enjoy that particular part as well now coming
+
+00:12:56.040 --> 00:13:00.860
+to our today's lecture cicd continuous integration and
+
+00:13:00.860 --> 00:13:05.980
+continuous deployment so basically we are going to create a
+
+00:13:05.980 --> 00:13:12.580
+flow where so we can try to let me use my scribble inc and
+
+00:13:12.580 --> 00:13:20.920
+yeah yes so we are going to build a pipeline so where we are
+
+00:13:20.920 --> 00:13:24.980
+going to write our code inside a local system so we will be
+
+00:13:24.980 --> 00:13:29.460
+doing ci cd continuous integration and continuous deployment
+
+00:13:29.460 --> 00:13:33.500
+so we are going to write a code inside our local system so
+
+00:13:33.500 --> 00:13:37.900
+for example we are going to write a code inside vs code i
+
+00:13:37.900 --> 00:13:44.160
+was not supposed to draw a triangle by the way okay so we
+
+00:13:44.160 --> 00:13:48.180
+are going to write a code inside let's suppose a vs code or
+
+00:13:48.180 --> 00:13:52.880
+maybe inside a cursor maybe inside a google anti-gravity so
+
+00:13:52.880 --> 00:13:55.820
+anyone guys who have tried google anti-gravity i think
+
+00:13:55.820 --> 00:13:58.900
+recently they have like launched this google anti-gravity
+
+00:13:58.900 --> 00:14:03.660
+again which is similar to like a cursor so where there are a
+
+00:14:03.660 --> 00:14:06.140
+lot of agents and a lot of models which is available and you
+
+00:14:06.140 --> 00:14:09.000
+can try to you know build any kind of a project okay so i
+
+00:14:09.000 --> 00:14:13.180
+see this saying that yes he has tried so maybe you can uh
+
+00:14:13.180 --> 00:14:16.920
+share your experience with google anti-gravity and maybe you
+
+00:14:16.920 --> 00:14:19.740
+can do a comparison with that cursive i still believe that
+
+00:14:19.740 --> 00:14:23.420
+cusser is good but yeah so we'll wait for google because
+
+00:14:23.420 --> 00:14:27.700
+google is google right so no one can like beat google in a
+
+00:14:27.700 --> 00:14:35.020
+long term i believe so yeah so here uh basically uh we will
+
+00:14:35.020 --> 00:14:38.900
+be writing a code inside a vs code and from a vs code so we
+
+00:14:38.900 --> 00:14:40.920
+are going to push our code inside the us code we are going
+
+00:14:40.920 --> 00:14:40.920
+to use it basically to write a code fine so we are going to
+
+00:14:40.920 --> 00:14:40.920
+install a vscode or a ужас or something like that but yeah
+
+00:14:40.920 --> 00:14:40.920
+enough city so we are going to log inside vscode now so
+
+00:14:40.920 --> 00:14:41.580
+that's again we are going to push our code inside a github
+
+00:14:41.580 --> 00:14:48.940
+repository so github repository and from here so what will
+
+00:14:48.940 --> 00:14:52.900
+happen so here github is going to call so github action
+
+00:14:52.900 --> 00:14:56.900
+there is a feature called as github action that i will be
+
+00:14:56.900 --> 00:15:00.620
+talking about yeah so github action and what this github
+
+00:15:00.620 --> 00:15:03.000
+action is going to do so github action is going to build
+
+00:15:03.000 --> 00:15:05.760
+your entire code and it is going to you know attest the
+
+00:15:05.760 --> 00:15:08.420
+entire code if you have written a test script over there and
+
+00:15:08.420 --> 00:15:12.660
+then it is going to do a deployment right then it is going
+
+00:15:12.660 --> 00:15:16.400
+to do a deployment in a ec2 instances so maybe we can try to
+
+00:15:16.400 --> 00:15:20.620
+use some other instances as well but yeah so today for
+
+00:15:20.620 --> 00:15:24.100
+today's lecture so i will be using a ec2 instances so this
+
+00:15:24.100 --> 00:15:28.560
+is a flow we are going to like learn in my today's class so
+
+00:15:28.560 --> 00:15:31.620
+by the time we are going to push our code automatically it
+
+00:15:31.620 --> 00:15:34.040
+will start building it and automatically it will start
+
+00:15:34.040 --> 00:15:37.100
+deploying it so that's a whole flow that we have to do so
+
+00:15:37.100 --> 00:15:37.100
+that's a whole flow that we have to do so that's a whole
+
+00:15:37.100 --> 00:15:39.700
+flow that we have to do so talk about and finally i will be
+
+00:15:39.700 --> 00:15:42.640
+able to see my new feature or whatever changes which i have
+
+00:15:42.640 --> 00:15:45.840
+pushed inside a repository so that feature will be live
+
+00:15:45.840 --> 00:15:49.640
+automatically without any kind of a wait time so obviously
+
+00:15:49.640 --> 00:15:52.360
+couple of second it is going to take so like i said so there
+
+00:15:52.360 --> 00:15:54.780
+are like a multiple different different kind of continuous
+
+00:15:54.780 --> 00:15:58.140
+integration continuous like a deployment or we can say a
+
+00:15:58.140 --> 00:16:01.180
+delivery we can try to build but this is something that we
+
+00:16:01.180 --> 00:16:06.080
+are going to see in my today's class yeah so now uh let's do
+
+00:16:06.080 --> 00:16:07.100
+one thing so we need to do a deployment and we need to do a
+
+00:16:07.100 --> 00:16:09.640
+deployment so we need a code base right so we need a code
+
+00:16:09.640 --> 00:16:12.800
+base and inside that so we have to do a configuration for a
+
+00:16:12.800 --> 00:16:17.240
+cicd along with that so we need a github repository along
+
+00:16:17.240 --> 00:16:21.660
+with that so we need a ec2 instances as well so first of all
+
+00:16:21.660 --> 00:16:25.900
+let's go to our aws and let's try to launch ec2 instances
+
+00:16:25.900 --> 00:16:30.320
+and then i will be like a setting up this github repository
+
+00:16:30.320 --> 00:16:34.080
+inside that whatever is required i'm going to do a setting
+
+00:16:34.080 --> 00:16:37.100
+for that and then we will try to do a configuration for a
+
+00:16:37.100 --> 00:16:38.820
+github repository and then we will try to look into a small
+
+00:16:38.820 --> 00:16:42.480
+piece of a code so technically we'll try to build some sort
+
+00:16:42.480 --> 00:16:45.620
+of a curd api so that you know i will be able to show you
+
+00:16:45.620 --> 00:16:48.640
+this entire flow and then i'll try to make some sort of a
+
+00:16:48.640 --> 00:16:51.640
+changes into that curd api and accordingly it is going to
+
+00:16:51.640 --> 00:16:57.300
+behave so let's go to a like a aws first of all yeah so let
+
+00:16:57.300 --> 00:17:03.600
+me log in inside my aws account so that we can start this
+
+00:17:03.600 --> 00:17:08.660
+entire process so here and along with me guys so everyone
+
+00:17:08.660 --> 00:17:13.440
+please try to log in into your aws account i believe we all
+
+00:17:13.440 --> 00:17:16.200
+have aws account we have already done that in my previous
+
+00:17:16.200 --> 00:17:16.540
+session
+
+00:17:50.040 --> 00:17:55.640
+so now i'm inside my aws account right so i'm into my aws
+
+00:17:55.640 --> 00:17:58.900
+account now from aws so maybe i can try to search for ec2
+
+00:17:58.900 --> 00:18:02.600
+instances and even last in my last class so we have already
+
+00:18:02.600 --> 00:18:05.580
+launched ec2 instances so it's not going to be new it's
+
+00:18:05.580 --> 00:18:08.400
+going to be a similar kind of a step so we can try to click
+
+00:18:08.400 --> 00:18:10.060
+on this launch instances and we can see that we have already
+
+00:18:10.060 --> 00:18:11.480
+launched ec2 instances and after clicking on this launch
+
+00:18:11.480 --> 00:18:14.200
+instances so we can try to give a name so maybe i can try to
+
+00:18:14.200 --> 00:18:19.660
+give ci cd a test so this is kind of a name which i'm going
+
+00:18:19.660 --> 00:18:22.640
+to give and then machine wise so we can try to select ubuntu
+
+00:18:22.640 --> 00:18:25.040
+the third option so this is something that we have selected
+
+00:18:25.040 --> 00:18:27.940
+even last time architecture and all those things are
+
+00:18:27.940 --> 00:18:30.860
+completely fine now instance wise so maybe i can try to
+
+00:18:30.860 --> 00:18:34.200
+select a nano micro small whatever instances you would like
+
+00:18:34.200 --> 00:18:37.360
+to like a select you can try to select it so maybe t2 micro
+
+00:18:37.360 --> 00:18:39.980
+which is more than enough for me for doing this entire
+
+00:18:39.980 --> 00:18:41.540
+process so let's go to the tests so i can try to select so
+
+00:18:41.540 --> 00:18:46.120
+where it is giving me one virtual core cpu and one gb of a
+
+00:18:46.120 --> 00:18:48.740
+memory so it's more than enough more than enough for me for
+
+00:18:48.740 --> 00:18:51.860
+my today's class at least so we can try to select that
+
+00:18:51.860 --> 00:18:56.280
+particular part now after selecting this t2 micro so we can
+
+00:18:56.280 --> 00:19:01.020
+try to create a new key pair yeah so click on this creating
+
+00:19:01.020 --> 00:19:07.300
+new key pair and here so you have to download a pem key so
+
+00:19:07.300 --> 00:19:10.680
+dot pem key key is something that you have to download. So
+
+00:19:10.680 --> 00:19:17.520
+here I'm going to give a name, CICD, CICD gen AI test. Okay.
+
+00:19:17.600 --> 00:19:20.740
+And this is PEM key. I have to download because without
+
+00:19:20.740 --> 00:19:23.940
+that, I will not be able to log in or I will not be able to
+
+00:19:23.940 --> 00:19:27.200
+access my instances. And today I'm not going to access my
+
+00:19:27.200 --> 00:19:30.860
+instances by CICD pipeline. My GitHub action is going to
+
+00:19:30.860 --> 00:19:34.200
+access this particular instances. So this is where this PEM
+
+00:19:34.200 --> 00:19:36.860
+key is very, very important. So you have to download this
+
+00:19:36.860 --> 00:19:40.680
+PEM key. So create a key pair and once you are going to
+
+00:19:40.680 --> 00:19:43.720
+create it, so it is going to download and you will be able
+
+00:19:43.720 --> 00:19:47.020
+to keep it somewhere inside your system. And same thing you
+
+00:19:47.020 --> 00:19:49.700
+have to attach. So CICD gen AI test. So this is something
+
+00:19:49.700 --> 00:19:51.680
+which has been attached, key pair, which is very much
+
+00:19:51.680 --> 00:19:55.420
+important for all of us. And then allow this, allow this
+
+00:19:55.420 --> 00:20:00.380
+HTTPS traffic or allow HTTP traffic storage wise. So by
+
+00:20:00.380 --> 00:20:03.920
+default, it's giving me 8 GB, which is way more than enough.
+
+00:20:03.960 --> 00:20:06.900
+I would say we can try to go ahead with even 2 GB, 4 GB.
+
+00:20:06.960 --> 00:20:09.960
+That is also. So fine, but yeah, so let's, let's keep it in
+
+00:20:09.960 --> 00:20:13.640
+this way. And once all of these things are done, right, once
+
+00:20:13.640 --> 00:20:16.500
+all of these things are done, so maybe I can try to click on
+
+00:20:16.500 --> 00:20:19.560
+launch instances. So click on launch instances. It is going
+
+00:20:19.560 --> 00:20:23.680
+to take maybe a couple of like a minute, not second, and it
+
+00:20:23.680 --> 00:20:28.460
+is going to keep my instances ready in some time. Yeah, so
+
+00:20:28.460 --> 00:20:34.540
+fine, guys. Are we able to do it? Yes, everyone. Are we able
+
+00:20:34.540 --> 00:20:40.210
+to create a EC2 instances? Yeah, same thing. I mean, like
+
+00:20:40.210 --> 00:20:42.550
+nothing new. Same thing we have done even in my previous
+
+00:20:42.550 --> 00:20:44.990
+class. So we are not doing anything. It's the same drill
+
+00:20:44.990 --> 00:20:48.470
+that we are trying to like a repeat once again in this
+
+00:20:48.470 --> 00:20:54.700
+class. Okay, so once we are able to create this instances
+
+00:20:54.700 --> 00:20:59.400
+and once we are able to download our PEM key. Yeah, once we
+
+00:20:59.400 --> 00:21:03.440
+are able to download our PEM key. So from here, so we need a
+
+00:21:03.440 --> 00:21:07.460
+PEM key first part. Second part is, so we need this public
+
+00:21:07.460 --> 00:21:10.820
+IP address. So by default, you will be able to see your
+
+00:21:10.820 --> 00:21:11.400
+public IP address. So by default, you will be able to see
+
+00:21:11.400 --> 00:21:14.080
+your public IP address. And this address is basically
+
+00:21:14.080 --> 00:21:17.900
+required so that my GitHub will be able to reach out to this
+
+00:21:17.900 --> 00:21:21.600
+particular address and it will be able to like access this
+
+00:21:21.600 --> 00:21:25.700
+entire machine with the help of this PEM key, the PEM key,
+
+00:21:25.800 --> 00:21:27.600
+which I have generated. So obviously authorization is
+
+00:21:27.600 --> 00:21:31.060
+required. So GitHub action will be able to take this
+
+00:21:31.060 --> 00:21:34.160
+authorization with the help of this one. Okay, so if this is
+
+00:21:34.160 --> 00:21:37.260
+done, right, if this part is done, so now we can go to
+
+00:21:37.260 --> 00:21:41.520
+GitHub. So go to GitHub and then inside that GitHub. So
+
+00:21:41.520 --> 00:21:45.220
+let's try to create one repository. Maybe you can try to
+
+00:21:45.220 --> 00:21:47.760
+keep it public. You can try to keep it private. It's your
+
+00:21:47.760 --> 00:21:51.000
+wish, right? So it's your wish. So I'll just click on new
+
+00:21:51.000 --> 00:21:56.080
+and I'll try to give a repository name. So CI, CD, Gen AI
+
+00:21:56.080 --> 00:21:59.580
+test. Yeah, so maybe this is a repository name or any other
+
+00:21:59.580 --> 00:22:01.480
+repository name. If you would like to give, you can try to
+
+00:22:01.480 --> 00:22:03.980
+give that repository name. That's completely okay with me.
+
+00:22:04.260 --> 00:22:08.260
+So here repository name is CI, CD, Gen AI test. And now
+
+00:22:08.260 --> 00:22:12.140
+click on create repository. Nothing. Fancy, very, very
+
+00:22:12.140 --> 00:22:15.580
+simple, right? Nothing fancy over here. And in a very, very
+
+00:22:15.580 --> 00:22:18.100
+simplest possible manner, you will be able to create a
+
+00:22:18.100 --> 00:22:20.780
+GitHub repository. And I believe we all know how to create a
+
+00:22:20.780 --> 00:22:24.160
+GitHub repository. So is it done, guys? GitHub repository
+
+00:22:24.160 --> 00:22:26.760
+creation. I'll wait for a couple of minutes if you're not
+
+00:22:26.760 --> 00:22:31.520
+able to do it like with me. Okay, so Tyler is saying yes.
+
+00:22:31.600 --> 00:22:35.560
+Vans is saying yes. Okay, what about others, guys? Swara is
+
+00:22:35.560 --> 00:22:39.460
+saying yes. Joy, Silpa, everyone is yes. Okay. Abhijit is
+
+00:22:39.460 --> 00:22:42.680
+saying yes. Aasi is saying yes. Okay. Great. Okay. Now
+
+00:22:42.680 --> 00:22:45.840
+everyone. Aasi is saying yes. So Yogin is saying AWS giving
+
+00:22:45.840 --> 00:22:48.720
+me error. Not able to log in. Stuck there. Okay. So maybe
+
+00:22:48.720 --> 00:22:51.860
+you can check with the login. Maybe you are entering a wrong
+
+00:22:51.860 --> 00:22:54.960
+password or something. Depends. Yeah. Arun is saying yes.
+
+00:22:55.080 --> 00:23:01.380
+Okay. So once we are able to, like, you know, use or once we
+
+00:23:01.380 --> 00:23:03.880
+are able to create this GitHub repository, then what is the
+
+00:23:03.880 --> 00:23:06.980
+next step? Next step is go to setting part. Yeah. The
+
+00:23:06.980 --> 00:23:10.640
+setting button for a particular repository. For every
+
+00:23:10.640 --> 00:23:13.720
+repository. You will be able to see a setting option. So for
+
+00:23:13.720 --> 00:23:17.020
+this repository, click on this setting part first of all.
+
+00:23:17.100 --> 00:23:20.000
+Yeah. So click on the setting part and then you will be able
+
+00:23:20.000 --> 00:23:23.060
+to see so many different, different kind of action. You
+
+00:23:23.060 --> 00:23:26.640
+don't have to like go through all of these. So you have to
+
+00:23:26.640 --> 00:23:29.800
+click on secret and variable. So see, guys, what we what we
+
+00:23:29.800 --> 00:23:35.100
+are supposed to do. So basically, my GitHub should be able
+
+00:23:35.100 --> 00:23:39.940
+to access EC2 instances, my machine, right, my machine, so
+
+00:23:39.940 --> 00:23:42.900
+that whenever I'm going to push a code inside a GitHub
+
+00:23:42.900 --> 00:23:46.540
+repository, as per the flow, which I have designed over
+
+00:23:46.540 --> 00:23:49.460
+here. So by the time I'm going to push a code inside a
+
+00:23:49.460 --> 00:23:52.740
+GitHub repository, so automatically it should build a test
+
+00:23:52.740 --> 00:23:57.360
+and deploy inside a machine. So my GitHub needs an access.
+
+00:23:57.580 --> 00:24:02.100
+My GitHub needs an access or login of my instances or
+
+00:24:02.100 --> 00:24:06.520
+machine that I have already created. Yeah. So to do that
+
+00:24:06.520 --> 00:24:10.820
+here, you can come inside a secret and variable tab. From
+
+00:24:10.820 --> 00:24:13.740
+setting, so click on setting, then come inside secret and
+
+00:24:13.740 --> 00:24:17.260
+variable tab and then click on this action. So you will be
+
+00:24:17.260 --> 00:24:20.360
+able to see an action option. So click on this action. This
+
+00:24:20.360 --> 00:24:23.780
+is important, actually. Right. And then you will be able to
+
+00:24:23.780 --> 00:24:27.240
+find out environment secret now inside that secret and then
+
+00:24:27.240 --> 00:24:29.840
+environment variable option. You will be able to find out.
+
+00:24:29.880 --> 00:24:33.220
+So leave that part. Leave this part. Come to this one
+
+00:24:33.220 --> 00:24:36.800
+repository variable. Yeah. Come to this repository variable
+
+00:24:36.800 --> 00:24:40.840
+part and here. So you can try to set a repository. Variable.
+
+00:24:40.920 --> 00:24:42.720
+So what you are going to set, I'm going to tell you that
+
+00:24:42.720 --> 00:24:45.720
+part. Don't worry. Yeah. So are you able to see this option,
+
+00:24:45.820 --> 00:24:49.300
+guys? Secret and variable action. Are you able to see this
+
+00:24:49.300 --> 00:24:54.060
+repository variable part? Yes, everyone. Yeah, because this
+
+00:24:54.060 --> 00:24:56.020
+step is very, very important, right? This is definitely
+
+00:24:56.020 --> 00:24:59.980
+really very, very important. So here repository variable and
+
+00:24:59.980 --> 00:25:03.980
+then click on this new repository variable. So just click
+
+00:25:03.980 --> 00:25:06.900
+over here. New repository variable and give some sort of a
+
+00:25:06.900 --> 00:25:12.860
+name. So maybe I can try to give CI CD. Gen AI test kind of
+
+00:25:12.860 --> 00:25:18.000
+a name over here, right? And then add variable simple. So,
+
+00:25:18.120 --> 00:25:22.140
+OK, so maybe I can try to variable value expose a plain
+
+00:25:22.140 --> 00:25:28.400
+text. OK, so variable name action. It's not asking me to
+
+00:25:28.400 --> 00:25:34.310
+create a name. So maybe what I can do just a minute,
+
+00:25:34.430 --> 00:25:38.210
+everyone, I will give a proper variable name over here.
+
+00:25:50.490 --> 00:25:51.050
+Hmm.
+
+00:25:54.050 --> 00:25:57.970
+So here I'm going to. I'm going to give EC2 SSH private key
+
+00:25:57.970 --> 00:26:01.910
+and just try to give this variable name and value wise. So
+
+00:26:01.910 --> 00:26:06.550
+maybe the PEM like a key that I have downloaded. So just try
+
+00:26:06.550 --> 00:26:10.110
+to open it up inside some text editor in any text editor.
+
+00:26:10.210 --> 00:26:13.470
+You can try to open it up and you will be able to see
+
+00:26:13.470 --> 00:26:15.630
+something like which I'm going to show you. So just a
+
+00:26:15.630 --> 00:26:17.810
+minute. I'm trying to open up my PEM key.
+
+00:26:21.920 --> 00:26:25.920
+Yeah. So this is what you will be able to see inside your
+
+00:26:25.920 --> 00:26:29.340
+PEM key. The file that you have downloaded. At the time of
+
+00:26:29.340 --> 00:26:32.680
+creation of your EC2 instances. So just control a control C.
+
+00:26:32.780 --> 00:26:36.220
+So select everything control C and then come over here and
+
+00:26:36.220 --> 00:26:39.380
+paste it. Yeah. Come over here and paste it and then click
+
+00:26:39.380 --> 00:26:43.220
+on add variable. So it is trying to add a variable. So as
+
+00:26:43.220 --> 00:26:46.660
+you can see, it has added EC2 SSH private key and this is
+
+00:26:46.660 --> 00:26:49.940
+the variable which it has added. So this is our very first
+
+00:26:49.940 --> 00:26:53.640
+variable that you have to add. Now, second variable that you
+
+00:26:53.640 --> 00:26:58.200
+have to add over here is a host. So EC2 host. So here again.
+
+00:26:58.200 --> 00:27:02.480
+Click EC2 host. This is a variable name exactly the way
+
+00:27:02.480 --> 00:27:06.160
+which the way I'm doing it. You have to do it. So EC2 host.
+
+00:27:06.280 --> 00:27:09.540
+Now, what is going to be a EC2 host? So EC2 host is going to
+
+00:27:09.540 --> 00:27:13.960
+be my public IP address. Yeah. So in my case, this is my
+
+00:27:13.960 --> 00:27:17.100
+public IP address. So I'll just try to copy this public IP
+
+00:27:17.100 --> 00:27:20.240
+address and paste it over there. That's it. Yeah. Paste it
+
+00:27:20.240 --> 00:27:24.480
+over there. So EC2 host. Add variable. So variable is added.
+
+00:27:24.640 --> 00:27:28.540
+So EC2 host. This is a public variable. Which I have added
+
+00:27:28.540 --> 00:27:31.440
+means this is our address of my machine. And then to log in
+
+00:27:31.440 --> 00:27:36.000
+into that machine. This is a password. Right. And then click
+
+00:27:36.000 --> 00:27:41.220
+on new repository variable and then try to create a EC2 user
+
+00:27:41.220 --> 00:27:44.500
+variable. So this is a third variable you have to create. So
+
+00:27:44.500 --> 00:27:48.100
+EC2 user variable. And here. So what you are supposed to
+
+00:27:48.100 --> 00:27:50.900
+keep. So when I when I have launched my machine. Right. So
+
+00:27:50.900 --> 00:27:53.660
+it was basically a Ubuntu based machine which I have
+
+00:27:53.660 --> 00:27:57.660
+launched. And by default AWS try to give a name of that
+
+00:27:57.660 --> 00:28:01.900
+user. As a Ubuntu. Right. Even if you will go and click on
+
+00:28:01.900 --> 00:28:05.240
+connect. Right. So by which you will be able to log in into
+
+00:28:05.240 --> 00:28:08.000
+your machine that we have done already in my previous class.
+
+00:28:08.160 --> 00:28:11.440
+So you will be able to see that that my username is what. So
+
+00:28:11.440 --> 00:28:14.000
+here is a username. So what is a username which is mentioned
+
+00:28:14.000 --> 00:28:17.900
+over here. So username is basically Ubuntu. So here we can
+
+00:28:17.900 --> 00:28:21.360
+try to create a third variable EC2 user and value is going
+
+00:28:21.360 --> 00:28:24.720
+to be Ubuntu. This is a username by default AWS try to
+
+00:28:24.720 --> 00:28:27.740
+provide for AWS instances. If I'm launching Ubuntu based
+
+00:28:27.740 --> 00:28:32.240
+machine. So add variable. So Ubuntu. Okay. So this is the
+
+00:28:32.240 --> 00:28:34.860
+these are the three variable. Right. These are the three
+
+00:28:34.860 --> 00:28:37.420
+repository variable you have to add. So are we done with
+
+00:28:37.420 --> 00:28:42.340
+this guys. Are we able to add this three variable. Inside
+
+00:28:42.340 --> 00:28:47.640
+our repository variable. Yes. So one is a SSH private key.
+
+00:28:47.760 --> 00:28:50.840
+So basically nothing but a password. Password to log in into
+
+00:28:50.840 --> 00:28:53.860
+my machine. Which machine. Machine which is hosted at this
+
+00:28:53.860 --> 00:28:57.800
+public address. And then what is a user. So use simple. So
+
+00:28:57.800 --> 00:29:01.340
+machine. And then user ID and password you can say. Right.
+
+00:29:01.400 --> 00:29:04.580
+This is how we log in into any machine or any system in this
+
+00:29:04.580 --> 00:29:07.080
+entire world. So first of all we go to the particular
+
+00:29:07.080 --> 00:29:10.580
+machine or we go to a particular website. Let's suppose. And
+
+00:29:10.580 --> 00:29:14.240
+then we try to like give a user ID and then we try to give a
+
+00:29:14.240 --> 00:29:17.600
+password. So in the exact similar manner we are able to log
+
+00:29:17.600 --> 00:29:23.220
+in. Anyone who is facing any kind of issues. So once is able
+
+00:29:23.220 --> 00:29:25.760
+to do it. Joel is able to do it. Saurav is saying done.
+
+00:29:25.940 --> 00:29:29.920
+Tyler is saying done. Yeah. What about others guys. Are we
+
+00:29:29.920 --> 00:29:35.540
+able to do this set up. Everyone. Sid is saying done. Bhaves
+
+00:29:35.540 --> 00:29:41.880
+is saying done. Okay. Arun done. Okay. And it is supposed to
+
+00:29:41.880 --> 00:29:45.200
+be a repository variable by the way. Not this environment
+
+00:29:45.200 --> 00:29:47.760
+variable. We can we can try to even provide a environment
+
+00:29:47.760 --> 00:29:50.320
+variable if that variable is available inside my code base.
+
+00:29:50.420 --> 00:29:53.320
+But yeah. So as of now you have to set it as a repo
+
+00:29:53.320 --> 00:30:01.180
+variable. Done. Okay. Now next step. So here if I'll go to
+
+00:30:01.180 --> 00:30:05.460
+my diagram again. So GitHub action. So GitHub setting we are
+
+00:30:05.460 --> 00:30:09.720
+able to do. Right. So machine address and then user ID and
+
+00:30:09.720 --> 00:30:13.240
+password we are able to provide easy to instance we are able
+
+00:30:13.240 --> 00:30:18.760
+to launch. And now so we have to push a code inside a GitHub
+
+00:30:18.760 --> 00:30:24.280
+repository. That is again important part. So with the help
+
+00:30:24.280 --> 00:30:28.380
+of VS code. So I have already prepared a code. And this code
+
+00:30:28.380 --> 00:30:32.200
+is not going to be new. So I have just attached one new like
+
+00:30:32.200 --> 00:30:35.400
+a layer inside this particular code. This is something that
+
+00:30:35.400 --> 00:30:38.840
+I have done. So let me open up my code and I'm going to
+
+00:30:38.840 --> 00:30:41.620
+share this code with all of you. And believe me you all will
+
+00:30:41.620 --> 00:30:47.920
+be able to understand it in no time. So file open folder. I
+
+00:30:47.920 --> 00:30:51.160
+think I'm into my CICD. Okay.
+
+00:31:08.960 --> 00:31:17.800
+This is not the one. Open. Folder. And I have created CICD
+
+00:31:31.530 --> 00:31:34.370
+pipe is there. And then.
+
+00:31:55.500 --> 00:32:01.160
+Okay. Yeah. This was the code. Now here. So what I have
+
+00:32:01.160 --> 00:32:04.260
+done. So I'm just trying to like you know create a simple.
+
+00:32:05.940 --> 00:32:09.180
+Yeah. So I'm just trying to create a very very simple
+
+00:32:09.180 --> 00:32:13.360
+application. A fast API based application. And the kind of
+
+00:32:13.360 --> 00:32:16.100
+application that we have already built. So we have done. A
+
+00:32:16.100 --> 00:32:19.820
+lot of like a API creation in my past and this is a similar
+
+00:32:19.820 --> 00:32:22.460
+kind of application. So where I'm doing a code operation.
+
+00:32:22.680 --> 00:32:25.180
+That's it. Right. So we are just trying to perform a code
+
+00:32:25.180 --> 00:32:28.740
+operation over there with respect to our SQL light data
+
+00:32:28.740 --> 00:32:32.440
+base. That's it. And for that. So we are we have created a
+
+00:32:32.440 --> 00:32:36.640
+API and this is the application that we are supposed to host
+
+00:32:36.640 --> 00:32:40.020
+or we are supposed to basically push and any kind of changes
+
+00:32:40.020 --> 00:32:43.800
+if I'm going to make with respect to my API. And by the time
+
+00:32:43.800 --> 00:32:46.860
+I'm going to push this particular code. Inside a repository
+
+00:32:46.860 --> 00:32:50.520
+it should be deployed automatically and in the similar
+
+00:32:50.520 --> 00:32:54.820
+manner you will be able to do a exact same thing with every
+
+00:32:54.820 --> 00:32:58.980
+code every code that you are going to build by the way so my
+
+00:32:58.980 --> 00:33:02.340
+actual code base is available inside this app directory or
+
+00:33:02.340 --> 00:33:04.660
+you can say it's a back end code that we have written so
+
+00:33:04.660 --> 00:33:08.380
+where APIs are available so let me give you a small walk
+
+00:33:08.380 --> 00:33:10.800
+through because it will be like a kind of a very very easy
+
+00:33:10.800 --> 00:33:14.180
+for all of us to understand this particular code base it's
+
+00:33:14.180 --> 00:33:16.220
+not difficult at all it's a very simple code base. Just API
+
+00:33:16.220 --> 00:33:19.380
+that I'm trying to create you can try to create anything of
+
+00:33:19.380 --> 00:33:22.460
+your choice that's completely fine so if you will look into
+
+00:33:22.460 --> 00:33:25.600
+this main.py file so we are trying to create a different
+
+00:33:25.600 --> 00:33:28.760
+different API so this is one so which will be like available
+
+00:33:28.760 --> 00:33:32.340
+at a root then this is for a health status check which is
+
+00:33:32.340 --> 00:33:35.060
+just going to print a status is equal to OK whenever you are
+
+00:33:35.060 --> 00:33:39.180
+going to call slash health then so here you will be able to
+
+00:33:39.180 --> 00:33:41.940
+create a new item so code operation I'm trying to showcase
+
+00:33:41.940 --> 00:33:45.460
+with respect to our SQL light data base. That's it. In
+
+00:33:45.460 --> 00:33:48.980
+memory database similarly you can try to create any kind of
+
+00:33:48.980 --> 00:33:53.540
+APIs right so here I'm trying to like create slash item and
+
+00:33:53.540 --> 00:33:56.620
+at slash item you will be able to read all the data then
+
+00:33:56.620 --> 00:33:59.940
+again so slash item item ID so you will be able to fetch any
+
+00:33:59.940 --> 00:34:03.000
+kind of a detail with respect to a particular item which I'm
+
+00:34:03.000 --> 00:34:07.060
+going to store so in this manner this is my code base let's
+
+00:34:07.060 --> 00:34:09.980
+suppose yeah this is my code base and I can try to run this
+
+00:34:09.980 --> 00:34:12.660
+entire code base in my local machine just like any other
+
+00:34:12.660 --> 00:34:16.960
+APIs that we try to do right. So what we have and again so
+
+00:34:16.960 --> 00:34:19.800
+we have like a database dot py file that I have created so
+
+00:34:19.800 --> 00:34:23.040
+which is going to create a session session of what a SQL
+
+00:34:23.040 --> 00:34:25.660
+light in memory and database right SQL light in memory
+
+00:34:25.660 --> 00:34:28.880
+database so I'm not going to install any other databases if
+
+00:34:28.880 --> 00:34:31.000
+you'd like to connect with any other databases maybe you can
+
+00:34:31.000 --> 00:34:35.020
+try to make a changes over there so this is my actual
+
+00:34:35.020 --> 00:34:37.640
+application so I can try to create hundreds of application
+
+00:34:37.640 --> 00:34:41.160
+or thousands of application that's completely OK at the end
+
+00:34:41.160 --> 00:34:44.600
+of the day I have to run this application don't look into
+
+00:34:44.600 --> 00:34:47.480
+any other folder. Just look into this application folder so
+
+00:34:47.480 --> 00:34:50.460
+let's suppose I have created one application one code base
+
+00:34:50.460 --> 00:34:53.980
+which is running in my local system yeah which is running in
+
+00:34:53.980 --> 00:34:57.980
+my local system I'm able to run it I'm able to test it now I
+
+00:34:57.980 --> 00:35:02.060
+have to basically configure a CI CD with respect to a GitHub
+
+00:35:02.060 --> 00:35:06.680
+action and then EC2 instances yeah so that is my second next
+
+00:35:06.680 --> 00:35:11.660
+priority now to do that we have to mention one additional
+
+00:35:11.660 --> 00:35:16.820
+step over here so in that particular. Code base that I have
+
+00:35:16.820 --> 00:35:21.140
+so I have to create a folder called as dot GitHub right dot
+
+00:35:21.140 --> 00:35:24.860
+GitHub inside that I can try to create a directory called as
+
+00:35:24.860 --> 00:35:28.840
+workflow and then inside that so we have to create a file
+
+00:35:28.840 --> 00:35:32.240
+with a name CI CD so I have given my file name as CI CD you
+
+00:35:32.240 --> 00:35:35.000
+can try to give any other name that's completely OK the
+
+00:35:35.000 --> 00:35:38.460
+extension of that file is supposed to be YAML YML yet
+
+00:35:38.460 --> 00:35:41.460
+another markup language or markup language this is one of
+
+00:35:41.460 --> 00:35:45.440
+the file now this is the actual file which is helping me.
+
+00:35:45.460 --> 00:35:50.180
+Out in terms of performing a CI CD operation and this file
+
+00:35:50.180 --> 00:35:55.820
+is the only important file inside this entire code base to
+
+00:35:55.820 --> 00:35:59.280
+achieve a CI CD this is actually helping me out in terms of
+
+00:35:59.280 --> 00:36:02.980
+doing a CI CD operation like I said so we can try to do a CI
+
+00:36:02.980 --> 00:36:05.760
+CD in a multiple manner so I can try to attach even a
+
+00:36:05.760 --> 00:36:08.480
+terraform over there I can try to attach a Jenkins over
+
+00:36:08.480 --> 00:36:11.900
+there so terraform is again one of the service which I can
+
+00:36:11.900 --> 00:36:16.000
+try to use to spin any kind of a machine just from a. CLI
+
+00:36:16.000 --> 00:36:18.800
+itself or maybe in a programmatic way basically I can try to
+
+00:36:18.800 --> 00:36:22.640
+control my Azure AWS and GCP all of these accounts just from
+
+00:36:22.640 --> 00:36:25.720
+here I can do any kind of automation with respect to ops and
+
+00:36:25.720 --> 00:36:28.740
+then with the help of Jenkins I will be able to build a code
+
+00:36:28.740 --> 00:36:32.760
+even in that way I will be able to a CI CD but yeah like I
+
+00:36:32.760 --> 00:36:35.500
+said so we will be talking about a simplest possible
+
+00:36:35.500 --> 00:36:38.780
+approach so that you will not get confused and you all will
+
+00:36:38.780 --> 00:36:43.280
+be able to do a CI CD not to achieve that part this is the
+
+00:36:43.280 --> 00:36:48.160
+only important. That's it this is the only important file
+
+00:36:48.160 --> 00:36:51.800
+that I have to basically consider or that I have to
+
+00:36:51.800 --> 00:36:54.680
+basically run apart from that so none of the other files are
+
+00:36:54.680 --> 00:36:57.920
+important so here is my application inside my app so there
+
+00:36:57.920 --> 00:37:00.260
+is an application you can delete all the other files so I
+
+00:37:00.260 --> 00:37:04.060
+was trying to even build a docker images and again so with
+
+00:37:04.060 --> 00:37:06.920
+the help of like a ECR services so I was trying to deploy it
+
+00:37:06.920 --> 00:37:09.360
+that's another pipeline that's the reason so you will be
+
+00:37:09.360 --> 00:37:11.700
+able to find out a docker but here I'm not using docker
+
+00:37:11.700 --> 00:37:14.780
+that's another pipeline that we can try to build with other
+
+00:37:14.780 --> 00:37:18.460
+AWS services. So ECR is basically or ECS is basically other
+
+00:37:18.460 --> 00:37:21.500
+AWS services so where you will be able to spin a container
+
+00:37:21.500 --> 00:37:24.540
+and in a contrived way so you will be able to deploy it but
+
+00:37:24.540 --> 00:37:27.520
+I'm trying to show you with respect to EC2 because EC2 is a
+
+00:37:27.520 --> 00:37:30.840
+raw machine right just a raw machine without any kind of a
+
+00:37:30.840 --> 00:37:34.400
+services or a blank machine AWS is going to provide and you
+
+00:37:34.400 --> 00:37:36.940
+can do anything that you want of your choice just like you
+
+00:37:36.940 --> 00:37:39.640
+do it in your local system that's the reason so I have opted
+
+00:37:39.640 --> 00:37:43.140
+for EC2 otherwise I would have opted for other option as
+
+00:37:43.140 --> 00:37:45.440
+well which I have already discussed in my previous class.
+
+00:37:45.460 --> 00:37:48.120
+Just in my last class I was talking about a multiple options
+
+00:37:48.120 --> 00:37:51.340
+right that no not just inside the EC2 there are other
+
+00:37:51.340 --> 00:37:55.180
+services a pre-configured services which is AWS has already
+
+00:37:55.180 --> 00:37:57.980
+given to you and similarly you will be able to find out
+
+00:37:57.980 --> 00:38:01.860
+those options even inside a GCP and even inside a Azure. So
+
+00:38:01.860 --> 00:38:04.300
+let's do it with respect to a raw machine because if I have
+
+00:38:04.300 --> 00:38:07.380
+a control over a machine if I can do something in a raw
+
+00:38:07.380 --> 00:38:11.260
+machine I mean like just like running something in my local
+
+00:38:11.260 --> 00:38:15.380
+machine I can do each and everything right. So here right.
+
+00:38:15.460 --> 00:38:18.600
+So this is the only file that we are supposed to understand
+
+00:38:18.600 --> 00:38:24.840
+but before that so let me like you know give you this
+
+00:38:24.840 --> 00:38:28.560
+particular code base so that all of you will be able to do
+
+00:38:28.560 --> 00:38:29.760
+it along with me.
+
+00:38:43.420 --> 00:38:48.040
+Okay so let me go to your dashboard and I'm going to upload
+
+00:38:48.040 --> 00:38:49.760
+this one inside your dashboard.
+
+00:39:36.900 --> 00:39:39.380
+Okay so finally everyone now you can go inside your
+
+00:39:39.380 --> 00:39:43.820
+dashboard and you can try to check a 30th November class
+
+00:39:43.820 --> 00:39:47.180
+last class last Sunday's class. You can try to check. And
+
+00:39:47.180 --> 00:39:50.380
+here you will be able to see a resource just download it
+
+00:39:50.380 --> 00:39:53.700
+entire code base is available inside this particular file.
+
+00:39:53.960 --> 00:39:58.080
+Download it and let me know. Ram is saying EC2 host do we
+
+00:39:58.080 --> 00:40:01.240
+paste the public or a private public IP address by the way.
+
+00:40:06.780 --> 00:40:10.500
+Yeah then I'll try to explain you the entire YAML file. So
+
+00:40:10.500 --> 00:40:13.280
+what is happening inside a YAML file how it is trying to
+
+00:40:13.280 --> 00:40:15.600
+understand where we have to deploy what we have to deploy
+
+00:40:15.600 --> 00:40:18.320
+what we have to build what we have to test each and
+
+00:40:18.320 --> 00:40:20.360
+everything which is mentioned because this is the only. Only
+
+00:40:20.360 --> 00:40:24.420
+important file you all will be able to find out rest is just
+
+00:40:24.420 --> 00:40:26.880
+a piece of code so any code I can try to write and then any
+
+00:40:26.880 --> 00:40:31.880
+code I can try to deploy it. Yeah so are you are you able to
+
+00:40:31.880 --> 00:40:36.240
+download the code guys so code base is available in your
+
+00:40:36.240 --> 00:40:41.680
+previous class lecture so 30th of this lecture 30th November
+
+00:40:41.680 --> 00:40:44.680
+AWS service intro which I have given to you so where I was
+
+00:40:44.680 --> 00:40:48.760
+talking about EC2 Elastic Bean Stack ECS EKS Fargate Lambda
+
+00:40:48.760 --> 00:40:51.700
+App Runner all those things. Kendra SageMaker this is
+
+00:40:51.700 --> 00:40:53.840
+something which I have discussed in my previous class in the
+
+00:40:53.840 --> 00:40:55.820
+same lecture you will be able to find a resource and
+
+00:40:55.820 --> 00:40:59.700
+download the code base yeah download it everyone quickly
+
+00:40:59.700 --> 00:41:05.120
+download it unzip it open it up inside your VS code done
+
+00:41:06.850 --> 00:41:10.490
+okay Joel done Sumit done what about others guys okay
+
+00:41:14.070 --> 00:41:16.970
+Silpa done okay I'm just waiting I'll give you a couple of
+
+00:41:16.970 --> 00:41:20.430
+minutes to go to a dashboard and download okay
+
+00:41:29.900 --> 00:41:33.600
+Saif done Talha done Soumya done okay okay great.
+
+00:41:38.350 --> 00:41:42.530
+Swarabh done yes. She's done okay.
+
+00:41:45.290 --> 00:41:49.430
+Now so once you are able to like download this code just try
+
+00:41:49.430 --> 00:41:52.530
+to unzip it open it up inside a VS code as simple as that.
+
+00:41:52.830 --> 00:41:56.110
+Now so let me explain you as I told you that we have this
+
+00:41:56.110 --> 00:42:00.350
+yaml file and this is the only important file plus you will
+
+00:42:00.350 --> 00:42:02.970
+be able to find out a template so there are a lot of
+
+00:42:02.970 --> 00:42:06.010
+template which is already published out there even inside.
+
+00:42:07.030 --> 00:42:10.290
+Official GitHub repository so it's not like we are going to
+
+00:42:10.290 --> 00:42:13.470
+write this yaml file by ourselves so we try to take a
+
+00:42:13.470 --> 00:42:16.350
+template we try to you know do a modification as per my
+
+00:42:16.350 --> 00:42:19.630
+application and then we try to use exact similar same kind
+
+00:42:19.630 --> 00:42:22.670
+of yaml file as simple as that and even with the help of you
+
+00:42:22.670 --> 00:42:26.070
+know. Vive coding or by using any of these like a vibe
+
+00:42:26.070 --> 00:42:29.890
+coding tool. You can just talk about your requirements and
+
+00:42:29.890 --> 00:42:34.090
+it is going to generate a yaml file for you. It's very very
+
+00:42:34.090 --> 00:42:36.950
+simple right it's very very simple. So now let me give you.
+
+00:42:36.970 --> 00:42:40.070
+A walk through of this entire yaml file that what this yaml
+
+00:42:40.070 --> 00:42:44.630
+file is actually trying to perform so here inside this yaml
+
+00:42:44.630 --> 00:42:49.050
+file I believe my screen font size is clear yeah everyone
+
+00:42:49.050 --> 00:42:53.850
+yes it's visible and clear okay
+
+00:42:56.890 --> 00:43:00.690
+how to create yaml file right click create a file give a
+
+00:43:00.690 --> 00:43:05.890
+name and give extension as dot yml that's it the way you
+
+00:43:05.890 --> 00:43:08.210
+create any python file the way you create a text file the
+
+00:43:08.210 --> 00:43:10.870
+way you create a json file. In a similar manner you can
+
+00:43:10.870 --> 00:43:16.230
+create a yaml file. Okay. So here we are trying to perform a
+
+00:43:16.230 --> 00:43:19.190
+CI CD operation yeah so we are trying to create a CI CD
+
+00:43:19.190 --> 00:43:23.510
+operation so we have created a yaml file now inside this
+
+00:43:23.510 --> 00:43:26.430
+yaml file so first of all we are giving a name so we are
+
+00:43:26.430 --> 00:43:29.370
+giving name as CI CD pipeline you can try to give any other
+
+00:43:29.370 --> 00:43:33.650
+name. So this is just a name which my github action will be
+
+00:43:33.650 --> 00:43:36.750
+able to understand so this is just a workflow name or task
+
+00:43:36.750 --> 00:43:39.770
+name you can say we are trying to give that okay. So this.
+
+00:43:40.010 --> 00:43:43.630
+Is but this name you can try to run your action basically
+
+00:43:43.630 --> 00:43:47.890
+right action basically now on next one so you will be able
+
+00:43:47.890 --> 00:43:52.370
+to find out this on. Right so on is again a command and here
+
+00:43:52.370 --> 00:43:55.530
+inside that so we are trying to call push and pull request
+
+00:43:55.530 --> 00:43:57.990
+push means so whenever someone is going to send a code
+
+00:43:57.990 --> 00:44:00.750
+inside a github repository pull means so whenever is going
+
+00:44:00.750 --> 00:44:04.130
+to download them like a you know or maybe like a pull the
+
+00:44:04.130 --> 00:44:08.550
+entire github repository inside some of them a system so now
+
+00:44:08.550 --> 00:44:10.970
+here what. What we have mentioned so we have mentioned
+
+00:44:10.970 --> 00:44:14.350
+basically inside this push block right inside this push
+
+00:44:14.350 --> 00:44:18.090
+block so basically this on is nothing but on you can try to
+
+00:44:18.090 --> 00:44:21.970
+call it as a trigger. Right so trigger so here we are trying
+
+00:44:21.970 --> 00:44:24.970
+to mention a trigger that either there will be a push or
+
+00:44:24.970 --> 00:44:28.290
+either there will be a pull. Now so whenever we are going to
+
+00:44:28.290 --> 00:44:30.970
+mention a trigger push or pull or whenever trigger is going
+
+00:44:30.970 --> 00:44:33.610
+to happen means whenever someone is going to push a code
+
+00:44:33.610 --> 00:44:36.990
+whenever I'm going to push a code let's suppose where so
+
+00:44:36.990 --> 00:44:40.610
+inside a branch so inside a. Github. There is a branching
+
+00:44:40.610 --> 00:44:44.330
+concept so I can try to create multiple branch inside a same
+
+00:44:44.330 --> 00:44:47.550
+repository I can try to give a different branch access to a
+
+00:44:47.550 --> 00:44:50.270
+different developers right let's suppose multiple people are
+
+00:44:50.270 --> 00:44:54.210
+working on the same code base or everyone is going to like
+
+00:44:54.210 --> 00:44:58.890
+you know generate their PRs and then we are going to merge a
+
+00:44:58.890 --> 00:45:01.950
+PR and then we are going to finally push it inside the main
+
+00:45:01.950 --> 00:45:05.370
+branch so here we are trying to say that that whenever there
+
+00:45:05.370 --> 00:45:09.150
+will be a push or there will be a pull inside a main or.
+
+00:45:09.210 --> 00:45:12.030
+Github. Masters both are same so masters is the old name but
+
+00:45:12.030 --> 00:45:15.150
+yeah main and masters is basically same for a github so here
+
+00:45:15.150 --> 00:45:18.250
+whenever someone is going to push or like a pull a code
+
+00:45:18.250 --> 00:45:23.190
+right so at that point of a time trigger is going to happen
+
+00:45:23.190 --> 00:45:26.830
+means what kind of a trigger the trigger that I have defined
+
+00:45:26.830 --> 00:45:29.510
+or the job or task which I have defined or I'm going to
+
+00:45:29.510 --> 00:45:32.950
+define in my below section so this is just a trigger point
+
+00:45:32.950 --> 00:45:35.590
+that we are trying to create that's it nothing more than
+
+00:45:35.590 --> 00:45:39.290
+that yeah nothing more than that now then there is a.
+
+00:45:39.290 --> 00:45:42.170
+something called as jobs what is the meaning of job so
+
+00:45:42.170 --> 00:45:46.370
+basically jobs is nothing but it's a kind of a you can think
+
+00:45:46.370 --> 00:45:50.650
+like a container right so container so which is going to
+
+00:45:50.650 --> 00:45:55.370
+contain or which is going to instantiate a panel or you can
+
+00:45:55.370 --> 00:46:00.190
+say a serial jobs that is going to complete the entire
+
+00:46:00.190 --> 00:46:04.270
+workflow so let's suppose I'm going to send a code I'm going
+
+00:46:04.270 --> 00:46:07.430
+to upload a code I'm going to push a code inside my github
+
+00:46:07.430 --> 00:46:10.610
+repository right then I'm going to. what it is supposed to
+
+00:46:10.610 --> 00:46:14.070
+do this is what I'm trying to define yeah so it is supposed
+
+00:46:14.070 --> 00:46:18.010
+to do something right so for this this this name right so on
+
+00:46:18.010 --> 00:46:21.530
+this push or pull it is supposed to do something so what it
+
+00:46:21.530 --> 00:46:24.950
+is supposed to do so here job wise I'm trying to define that
+
+00:46:24.950 --> 00:46:29.250
+you are supposed to run a test first and then maybe you have
+
+00:46:29.250 --> 00:46:32.790
+to do a deploy so you will be able to find out two tags over
+
+00:46:32.790 --> 00:46:36.130
+there inside a job one is a test and then another one is a
+
+00:46:36.130 --> 00:46:39.270
+deploy you can try to remove a test if you don't want to.
+
+00:46:39.290 --> 00:46:42.090
+test that's completely okay right you can directly call a
+
+00:46:42.090 --> 00:46:44.450
+deploy that's up to you how you are going to basically
+
+00:46:44.450 --> 00:46:46.850
+configure how you are going to design so it's not mandatory
+
+00:46:46.850 --> 00:46:50.910
+this is what I'm trying to like a say over here so now let's
+
+00:46:50.910 --> 00:46:54.590
+talk about this test so basically it is going to test the
+
+00:46:54.590 --> 00:46:58.230
+entire code so now what it will do so it will try to call a
+
+00:46:58.230 --> 00:47:01.350
+test job wise right so whenever something like this is going
+
+00:47:01.350 --> 00:47:04.630
+to happen whenever someone is going to do this so it is
+
+00:47:04.630 --> 00:47:08.110
+going to call a job and first of all inside a job so it is
+
+00:47:08.110 --> 00:47:12.150
+going to. basically call a test basically it's a job name
+
+00:47:12.150 --> 00:47:14.350
+that I have given right job name which I have given that
+
+00:47:14.350 --> 00:47:17.670
+okay fine so just try to do this job now as a part of this
+
+00:47:17.670 --> 00:47:21.030
+job inside this test indentation you will be able to find
+
+00:47:21.030 --> 00:47:23.970
+out this highlighted one so inside this what we are doing so
+
+00:47:23.970 --> 00:47:30.070
+we are trying to say that that basically runs on Ubuntu
+
+00:47:30.070 --> 00:47:34.050
+latest so I think Ubuntu is nothing but an image right image
+
+00:47:34.050 --> 00:47:37.230
+operating system image over here so here we are trying to
+
+00:47:37.230 --> 00:47:39.270
+say that when we are saying runs on we are trying to say
+
+00:47:39.270 --> 00:47:44.870
+that. that run this particular job on a fresh GitHub hosted
+
+00:47:44.870 --> 00:47:50.090
+Ubuntu Linux VM so what GitHub action does so basically it
+
+00:47:50.090 --> 00:47:53.310
+is going to give or internally it is going to launch a small
+
+00:47:53.310 --> 00:47:57.290
+instance a Linux instance it is going to launch Ubuntu Linux
+
+00:47:57.290 --> 00:48:00.470
+virtual machine it is going to instantiate so that it will
+
+00:48:00.470 --> 00:48:03.450
+be able to perform all the steps which I'm going to mention
+
+00:48:03.450 --> 00:48:07.050
+over here so what are the steps basically that it is going
+
+00:48:07.050 --> 00:48:10.630
+to perform so here it is going to. to perform first of all
+
+00:48:10.630 --> 00:48:13.430
+uh users i have mentioned the name i have mentioned then
+
+00:48:13.430 --> 00:48:16.330
+users i have mentioned with python this particular version
+
+00:48:16.330 --> 00:48:21.010
+so here uh when we are saying that that action check out at
+
+00:48:21.010 --> 00:48:25.010
+v3 right so this is basically uh it is it is going to
+
+00:48:25.010 --> 00:48:29.370
+basically call this particular action and then it is going
+
+00:48:29.370 --> 00:48:34.230
+to give a name to it set up python so whatever machine it is
+
+00:48:34.230 --> 00:48:36.750
+going to instantiate right whatever machine it is going to
+
+00:48:36.750 --> 00:48:39.950
+instantiate so obviously inside that machine it is supposed
+
+00:48:39.950 --> 00:48:43.130
+to do some sort of a action so what kind of action so just
+
+00:48:43.130 --> 00:48:46.170
+try to install a latest python or whatever python version
+
+00:48:46.170 --> 00:48:49.050
+which i have mentioned so i have mentioned 3.11 so it is
+
+00:48:49.050 --> 00:48:52.470
+going to install a python version so let's suppose if you
+
+00:48:52.470 --> 00:48:55.330
+have purchased a new laptop what you will do so obviously
+
+00:48:55.330 --> 00:48:58.150
+you will try to install python this is what we have done in
+
+00:48:58.150 --> 00:49:01.570
+our initial class right so when you have joined this entire
+
+00:49:01.570 --> 00:49:04.510
+lecture in a very very beginning so we have installed python
+
+00:49:04.570 --> 00:49:07.810
+Python first of all. After installing Python so we are going
+
+00:49:07.810 --> 00:49:10.450
+to install all the requirements. So whatever I have
+
+00:49:10.450 --> 00:49:13.290
+mentioned inside the requirement.txt because requirement.txt
+
+00:49:13.290 --> 00:49:16.630
+is going to be very very specific with respect to my project
+
+00:49:16.630 --> 00:49:19.590
+right. So requirement.txt is going to be very much specific
+
+00:49:19.590 --> 00:49:21.530
+with respect to my project. So I am going to install
+
+00:49:21.530 --> 00:49:25.150
+requirement.txt but before that Python must be installed
+
+00:49:25.150 --> 00:49:27.690
+otherwise it will not be able to recognize any Pythonic
+
+00:49:27.690 --> 00:49:32.190
+command or not even pip it is going to understand. So what
+
+00:49:32.190 --> 00:49:34.770
+we are doing so we are so it is going to spin a small
+
+00:49:34.770 --> 00:49:37.190
+machine inside a GitHub itself. So we are not talking about
+
+00:49:37.190 --> 00:49:40.230
+EC2 as of now yeah I am talking about GitHub GitHub itself
+
+00:49:40.230 --> 00:49:43.490
+right because over there so we are building a code and then
+
+00:49:43.490 --> 00:49:47.490
+it will go for a deployment. So we are now inside a GitHub
+
+00:49:47.490 --> 00:49:51.570
+now inside a GitHub. So it is going to create this instance
+
+00:49:51.570 --> 00:49:54.730
+where it is going to install a Python and then we are giving
+
+00:49:54.730 --> 00:49:58.230
+an action name. So run run is nothing but run this entire
+
+00:49:58.230 --> 00:50:02.310
+command. So run what? First of all upgrade a pip then second
+
+00:50:02.310 --> 00:50:06.050
+pip install hyphen our requirement.txt pip install pytest
+
+00:50:06.050 --> 00:50:10.130
+pytest conv httpx whatever you have to install install it
+
+00:50:10.130 --> 00:50:15.190
+simple right. So just the way we try to install in our local
+
+00:50:15.190 --> 00:50:18.330
+system the way we try to set up our local computer in the
+
+00:50:18.330 --> 00:50:20.870
+exact similar manner right nothing different in an exact
+
+00:50:20.870 --> 00:50:23.850
+similar manner. So basically try to do all of these
+
+00:50:23.850 --> 00:50:27.470
+installation to test it and once all the installation is
+
+00:50:27.470 --> 00:50:32.350
+done then what we can do. So we can try to run a test right.
+
+00:50:32.430 --> 00:50:36.110
+We can try to run a test. So this is something that it is
+
+00:50:36.110 --> 00:50:39.850
+going to perform. So here we are trying to use a pytest for
+
+00:50:39.850 --> 00:50:43.750
+our testing. We are trying to use a pytest click coverage
+
+00:50:43.750 --> 00:50:47.370
+over here and then we are trying to like use other
+
+00:50:47.370 --> 00:50:49.910
+libraries. So depends upon the project which I have created.
+
+00:50:50.050 --> 00:50:53.910
+So I'm just trying to use the library. So here I'm trying to
+
+00:50:53.910 --> 00:50:57.230
+run it again. I'm going to run a command. So pytest test.
+
+00:50:57.370 --> 00:51:01.090
+And then I'm going to run. And then I'm trying to like you
+
+00:51:01.090 --> 00:51:05.590
+know echo no test found escaping if there is no test which
+
+00:51:05.590 --> 00:51:08.350
+is available. Yeah. If there is no test which is available
+
+00:51:08.350 --> 00:51:12.030
+if there will be a test it is going to run all the test
+
+00:51:12.030 --> 00:51:16.170
+under test directory if I have a test directory. So yeah I
+
+00:51:16.170 --> 00:51:19.790
+have created a test directory over here. But like I said so
+
+00:51:19.790 --> 00:51:22.510
+it's not import. It's not mandatory. Right. It's not
+
+00:51:22.510 --> 00:51:26.590
+mandatory. So here inside a test directory I have created my
+
+00:51:26.590 --> 00:51:30.570
+test underscore main dot py file. And I'm just trying to
+
+00:51:30.570 --> 00:51:34.370
+like you know test or I'm just trying to call all of these
+
+00:51:36.230 --> 00:51:39.810
+endpoints slash health I'm trying to call or other like
+
+00:51:39.810 --> 00:51:43.170
+endpoints slash item item ID. So all of these things I'm
+
+00:51:43.170 --> 00:51:46.350
+trying to call it. So this is what I have written as a test
+
+00:51:46.350 --> 00:51:49.350
+over there. I can skip it. It's completely fine. Right. I
+
+00:51:49.350 --> 00:51:52.130
+can escape it. But just for like a testing purpose. So I
+
+00:51:52.130 --> 00:51:54.430
+have mentioned all of these things over here inside my test
+
+00:51:54.430 --> 00:51:58.310
+directory. So if there is a tester directory. Only in that
+
+00:51:58.310 --> 00:52:01.010
+situation. It is going to call it and that's the reason. So
+
+00:52:01.010 --> 00:52:03.530
+you will be able to find out this test. So it will start
+
+00:52:03.530 --> 00:52:06.550
+looking into a test directory and then accordingly it is
+
+00:52:06.550 --> 00:52:09.630
+going to converse and it is going to basically test each and
+
+00:52:09.630 --> 00:52:12.990
+everything. So after running that particular file inside a
+
+00:52:12.990 --> 00:52:15.410
+test directory which is available. So this is how we can try
+
+00:52:15.410 --> 00:52:19.370
+to even do a setup for a testing simple. But like I said we
+
+00:52:19.370 --> 00:52:22.870
+can skip that particular part. It's completely okay. Once
+
+00:52:22.870 --> 00:52:26.270
+this will be done right once this will be done then
+
+00:52:26.270 --> 00:52:29.510
+automatically it will come to the next step. What is that?
+
+00:52:29.830 --> 00:52:34.110
+Deploy. Yeah. Deploy. And we have made this important. So it
+
+00:52:34.110 --> 00:52:37.390
+needs a test. If test is going to fail it will not come to
+
+00:52:37.390 --> 00:52:40.850
+the deploy. This is the condition which I have made inside
+
+00:52:40.850 --> 00:52:43.930
+my YAML file. I can try to skip that part. That's completely
+
+00:52:43.930 --> 00:52:48.570
+okay. So here if I'm not doing a test phase. So maybe in
+
+00:52:48.570 --> 00:52:51.090
+that case I can try to remove this needs is equal to test.
+
+00:52:51.250 --> 00:52:54.350
+So it will not be looking for this test to be successful. As
+
+00:52:54.350 --> 00:52:57.830
+simple as that. So needs test and runs on again. UBUNTOOL
+
+00:52:57.830 --> 00:53:00.210
+.com. So now we are going ahead with the deployment and
+
+00:53:00.210 --> 00:53:04.650
+whatever we have done with respect to a test almost similar
+
+00:53:04.650 --> 00:53:07.710
+thing it is going to perform over here. So is it making
+
+00:53:07.710 --> 00:53:14.410
+sense guys to all of us till this point? Yeah. Making sense?
+
+00:53:20.480 --> 00:53:24.140
+Yeah. So here need test means test is supposed to be
+
+00:53:24.140 --> 00:53:26.760
+completed and then run on Ubuntu latest means deployment.
+
+00:53:26.860 --> 00:53:30.580
+You have to run on this Ubuntu latest again inside my GitHub
+
+00:53:30.580 --> 00:53:33.320
+right GitHub itself where it is going to provide me. Small
+
+00:53:33.320 --> 00:53:38.500
+machine with Ubuntu and it is trying to check that if this
+
+00:53:38.500 --> 00:53:41.660
+branch or if the job workflow is available in main or
+
+00:53:41.660 --> 00:53:43.480
+masters, this is what I have mentioned. So if it is
+
+00:53:43.480 --> 00:53:46.460
+available in main or masters only in that case, try to run
+
+00:53:46.460 --> 00:53:49.400
+it, try to deploy it now. Same steps as we have mentioned
+
+00:53:49.400 --> 00:53:52.580
+inside the test, right? So check out users, check out V3 and
+
+00:53:52.580 --> 00:53:55.740
+name deploy to a EC2. So now we are trying to call a
+
+00:53:55.740 --> 00:53:59.140
+deployment inside this deploy. So far so forth test has
+
+00:53:59.140 --> 00:54:02.140
+happened inside my GitHub itself. Now we are going into a
+
+00:54:02.140 --> 00:54:04.120
+deployment. We are going into a deployment inside the EC2
+
+00:54:04.120 --> 00:54:07.000
+and here, so it will be looking for the environment. So it
+
+00:54:07.000 --> 00:54:09.720
+will be looking for my like a private key, which I have
+
+00:54:09.720 --> 00:54:13.620
+already uploaded inside my GitHub setting, right? It will be
+
+00:54:13.620 --> 00:54:16.580
+looking for a machine and it will be looking for a user. So
+
+00:54:16.580 --> 00:54:20.260
+all of these things, exactly the variable name, which I have
+
+00:54:20.260 --> 00:54:23.200
+mentioned over here. If your variable name is going to be
+
+00:54:23.200 --> 00:54:27.160
+different, then you have to make a changes over here. If you
+
+00:54:27.160 --> 00:54:29.680
+have made any kind of a mistake in terms of giving a seek
+
+00:54:29.680 --> 00:54:33.080
+variable name, then it is not going to work. Okay. Simple as
+
+00:54:33.080 --> 00:54:36.740
+that. So here is a variable name and these three variable,
+
+00:54:36.960 --> 00:54:42.500
+we have done a setup for that over here. EC2 host, EC2 SSH
+
+00:54:42.500 --> 00:54:46.220
+private key, EC2 user, simple, right? Same variable name we
+
+00:54:46.220 --> 00:54:48.540
+have given. If you have given some different variable name,
+
+00:54:48.620 --> 00:54:51.240
+please make a changes over here inside your YAML file.
+
+00:54:51.320 --> 00:54:55.780
+Otherwise it is going to give you the error. Okay. So it
+
+00:54:55.780 --> 00:54:58.160
+will go and it will try to read all of these environment
+
+00:54:58.160 --> 00:55:01.200
+variable, which I have already like provided inside my
+
+00:55:01.200 --> 00:55:03.120
+GitHub, inside my setting. So it will go and it will try to
+
+00:55:03.120 --> 00:55:05.580
+log in inside my security and inside the security. And then
+
+00:55:05.580 --> 00:55:10.080
+it will try to access my machine, right? It will try to
+
+00:55:10.080 --> 00:55:12.560
+access my machine. So here, first of all, eco, eco means
+
+00:55:12.560 --> 00:55:16.400
+print, right? So it is trying to print my PEM key by the
+
+00:55:16.400 --> 00:55:20.460
+way, right? And then it will try to like start doing a copy
+
+00:55:20.460 --> 00:55:24.660
+of the file. So basically it is trying to log in inside my
+
+00:55:24.660 --> 00:55:28.120
+machine. As simple as that. It is trying to access my
+
+00:55:28.120 --> 00:55:32.100
+particular machine. This is what I'm trying to say over
+
+00:55:32.100 --> 00:55:36.980
+here. Is it making sense to all of us guys? Yeah. Till this
+
+00:55:36.980 --> 00:55:37.260
+point.
+
+00:55:40.950 --> 00:55:44.510
+So basically what it is trying to do, so here we are trying
+
+00:55:44.510 --> 00:55:48.090
+to like, uh, you know, create a private key dot PEM file
+
+00:55:48.090 --> 00:55:51.770
+based on the variable value that we have uploaded. And then
+
+00:55:51.770 --> 00:55:55.430
+it is trying to copy that private PEM file inside my
+
+00:55:55.430 --> 00:55:56.670
+machine,
+
+00:55:58.780 --> 00:56:01.760
+the host that I'm, uh, that the host, which I have provided
+
+00:56:01.760 --> 00:56:05.300
+over here, that's it so that it will be able to log in.
+
+00:56:05.340 --> 00:56:08.840
+Okay. So once it will be able to log in, so then we are
+
+00:56:08.840 --> 00:56:12.080
+trying to call basically a, with the help of this, like a
+
+00:56:12.080 --> 00:56:14.840
+private key, right? So we are trying to say that, that, uh,
+
+00:56:14.840 --> 00:56:18.940
+inside my machine. Now if you are able to access, go there
+
+00:56:18.940 --> 00:56:23.080
+and try to create a directory. So home slash Ubuntu, Ubuntu
+
+00:56:23.080 --> 00:56:25.900
+is nothing by my user. So try to create a directory called
+
+00:56:25.900 --> 00:56:30.520
+as app over there. Yeah. And then change directory. So just
+
+00:56:30.520 --> 00:56:34.140
+go into, first of all, create it. MKDIR make directory. And
+
+00:56:34.140 --> 00:56:37.280
+then change directory CD. Okay. So go inside the directory
+
+00:56:37.280 --> 00:56:42.380
+that you have created. And then over there, try to do all
+
+00:56:42.380 --> 00:56:46.560
+the setup or all the installation. So first of all, sudo apt
+
+00:56:46.560 --> 00:56:49.060
+eco is nothing but just a print. You can think about print,
+
+00:56:49.200 --> 00:56:51.120
+right? So wherever I have mentioned eco, it simply means
+
+00:56:51.120 --> 00:56:53.580
+that I'm printing, it's printing something. And the rest of
+
+00:56:53.580 --> 00:56:56.960
+this is basically command. So sudo apt get update. I believe
+
+00:56:56.960 --> 00:56:59.860
+we have done that, right? Even last time, sudo apt get
+
+00:56:59.860 --> 00:57:02.780
+install Python and then Python virtual environment. So I'm
+
+00:57:02.780 --> 00:57:05.520
+trying to create a work. Like, I'm trying to install a
+
+00:57:05.520 --> 00:57:07.700
+Python, first of all, and then I'm trying to basically
+
+00:57:07.700 --> 00:57:11.380
+install a pip and then virtual environment. Then I'm going
+
+00:57:11.380 --> 00:57:14.580
+into that. So I'm just trying to access this virtual
+
+00:57:14.580 --> 00:57:17.580
+environment library. And then I'm trying to do the creation
+
+00:57:17.580 --> 00:57:20.540
+of the environment. And then I'm trying to activate that
+
+00:57:20.540 --> 00:57:24.200
+environment. So Python installation done. Right? Virtual
+
+00:57:24.200 --> 00:57:26.920
+environment installation is done. And then I'm trying to
+
+00:57:26.920 --> 00:57:29.920
+create an environment. I'm trying to activate that
+
+00:57:29.920 --> 00:57:33.740
+environment. Simple. Then pip install upgrade pip. pip and
+
+00:57:33.740 --> 00:57:36.720
+then here so I'm trying to install what I'm trying to
+
+00:57:36.720 --> 00:57:40.420
+install a dependency with respect to my project all of these
+
+00:57:40.420 --> 00:57:42.640
+things will be done automatically right by a system itself
+
+00:57:42.640 --> 00:57:47.400
+so again similar kind of a step so whenever we try to set up
+
+00:57:47.400 --> 00:57:50.440
+a machine so similar kind of things we are trying to perform
+
+00:57:50.440 --> 00:57:57.020
+over here nothing different so is it clear guys yeah ubuntu
+
+00:57:57.020 --> 00:57:59.420
+latest installer step is down so ubuntu latest is nothing
+
+00:57:59.420 --> 00:58:03.300
+but it's trying to give you a small machine inside a github
+
+00:58:03.300 --> 00:58:06.600
+so that it will be able to run the test because to run a
+
+00:58:06.600 --> 00:58:09.520
+test it is supposed to execute a code now to execute a code
+
+00:58:09.520 --> 00:58:12.020
+I need a machine without that I will not be able to execute
+
+00:58:12.020 --> 00:58:14.620
+it so this is where this github action comes into a picture
+
+00:58:16.580 --> 00:58:21.080
+yeah same thing so now inside my ec2 machine so I will be
+
+00:58:21.080 --> 00:58:23.620
+able to do this installation I will be able to do this
+
+00:58:23.620 --> 00:58:29.040
+requirement dot txt nothing much over here now once all of
+
+00:58:29.040 --> 00:58:32.800
+these things are done right once this all of these things
+
+00:58:32.800 --> 00:58:36.360
+are done so basically we are trying to create a service so
+
+00:58:36.360 --> 00:58:39.220
+here basically we are trying to create a system service
+
+00:58:39.220 --> 00:58:44.060
+basically right so system d so that it will be able to run
+
+00:58:44.060 --> 00:58:46.200
+each and everything in a back end and I have written a lot
+
+00:58:46.200 --> 00:58:48.380
+of echo because I was facing some sort of issues with
+
+00:58:48.380 --> 00:58:52.100
+respect to my initial deployment so just to print all of
+
+00:58:52.100 --> 00:58:53.980
+these things what is happening inside of my machine I have
+
+00:58:53.980 --> 00:58:56.700
+written all this echo over there that's it this echo is I
+
+00:58:56.700 --> 00:59:00.400
+will be able to get a log that's it now the main thing is
+
+00:59:00.400 --> 00:59:00.400
+that I have written all this echo over here that's it this
+
+00:59:00.400 --> 00:59:02.940
+echo is the main thing will come over here so sudo systemctl
+
+00:59:02.940 --> 00:59:07.520
+stop fast api app or true reload enable start service so I
+
+00:59:07.520 --> 00:59:10.840
+have I have just written over there that enable start stop
+
+00:59:10.840 --> 00:59:13.640
+all of these services that we have written even in my
+
+00:59:13.640 --> 00:59:17.520
+previous class right so systemctl and start the service or
+
+00:59:17.520 --> 00:59:21.140
+like reload the service or enable a service each and
+
+00:59:21.140 --> 00:59:24.400
+everything we have mentioned over there yeah so similar kind
+
+00:59:24.400 --> 00:59:27.420
+of things we have mentioned over here as well now wait for
+
+00:59:27.420 --> 00:59:30.960
+the moment to like to start the service and now this is
+
+00:59:30.960 --> 00:59:33.580
+going to check the status so we are trying to start it we
+
+00:59:33.580 --> 00:59:35.600
+are trying to enable it we are trying to configure it and
+
+00:59:35.600 --> 00:59:39.900
+then we are trying to check the status as simple as that and
+
+00:59:39.900 --> 00:59:42.280
+then at the end of the day so we are trying to remove my
+
+00:59:42.280 --> 00:59:47.360
+private key the key which I have provided that's it so this
+
+00:59:47.360 --> 00:59:51.200
+is something that we are trying to perform so this echo is
+
+00:59:51.200 --> 00:59:54.800
+trying to add lots of lines but yeah this is just a print
+
+00:59:54.800 --> 00:59:57.740
+that I'm trying to perform like I said so I was facing some
+
+00:59:57.740 --> 00:59:59.900
+sort of a issue so I thought of you know printing all of
+
+00:59:59.900 --> 01:00:00.400
+these things because I have written all of these things so I
+
+01:00:00.400 --> 01:00:03.580
+was keeping that in my mind so we have done echo so here it
+
+01:00:03.580 --> 01:00:08.720
+is going to do a final deployment that's it yeah that's it
+
+01:00:08.720 --> 01:00:11.580
+the way we do it inside our local system or the way we are
+
+01:00:11.580 --> 01:00:15.040
+going to directly deploy inside our ec2 instances in the
+
+01:00:15.040 --> 01:00:18.300
+similar manner I'm just trying to control it with the help
+
+01:00:18.300 --> 01:00:23.160
+of this entire yaml file so which is going to do a job which
+
+01:00:23.160 --> 01:00:25.840
+is going to Intensiate a task automatically it is going to
+
+01:00:25.840 --> 01:00:31.080
+auto trigger right so whenever it will try to it will try to
+
+01:00:31.080 --> 01:00:35.580
+auto trigger in that way the entire flow the entire process
+
+01:00:35.580 --> 01:00:38.760
+is going to be automated now you are going to build one
+
+01:00:38.760 --> 01:00:41.020
+project or maybe you are going to build hundreds of project
+
+01:00:41.020 --> 01:00:45.000
+if you are using a same CI CD pipeline it's not going to
+
+01:00:45.000 --> 01:00:52.090
+change it's going to be actually same yes so we want to
+
+01:00:52.090 --> 01:00:54.270
+latest command can you tell me where the machine learning is
+
+01:00:54.270 --> 01:00:57.290
+a github server or a double server it's a github server I
+
+01:00:57.290 --> 01:01:02.290
+have repeated more than 10 times so when I say one to latest
+
+01:01:02.290 --> 01:01:06.290
+this one it's a github server so in this is something called
+
+01:01:06.290 --> 01:01:09.330
+as github action because github is supposed to test and
+
+01:01:09.330 --> 01:01:13.250
+github is supposed to build right so to test it to build it
+
+01:01:13.250 --> 01:01:16.150
+means what we are trying to run the code now to run the code
+
+01:01:16.150 --> 01:01:18.750
+I need a machine without machine I will not be able to run
+
+01:01:18.750 --> 01:01:23.850
+the code right yeah so in github and then we are launching
+
+01:01:23.850 --> 01:01:28.610
+ec2 so so far see so have we have we like a accessed our
+
+01:01:28.610 --> 01:01:32.990
+ec2o in this step have we done that no right in our test
+
+01:01:32.990 --> 01:01:37.810
+phase have we accessed our ec2o machine a machine which is
+
+01:01:37.810 --> 01:01:41.270
+available on AWS no right still we are running this test so
+
+01:01:41.270 --> 01:01:43.930
+simply means that that there is something which will happen
+
+01:01:43.930 --> 01:01:49.090
+on a github right then on this deploy step we are trying to
+
+01:01:49.090 --> 01:01:52.810
+access our ec2o instances which is the machine that we have
+
+01:01:52.810 --> 01:02:00.050
+on our AWS cloud platform right now so now let's do one
+
+01:02:00.050 --> 01:02:03.410
+thing so let's try to push this entire code base right the
+
+01:02:03.410 --> 01:02:06.230
+code that we have so let's try to push this entire code base
+
+01:02:06.230 --> 01:02:10.410
+inside our github repository fine so let's try to push it so
+
+01:02:10.410 --> 01:02:16.030
+now I'll go to my github code right and I believe we all
+
+01:02:16.030 --> 01:02:19.390
+know how we will be able to push it so simple let's go and
+
+01:02:19.390 --> 01:02:27.840
+do it one by one so git i n i t so instantiate it and then
+
+01:02:27.840 --> 01:02:34.140
+git add add everything yeah then I can try to are you are
+
+01:02:34.140 --> 01:02:38.850
+you doing it guys everyone same you have to follow the same
+
+01:02:38.850 --> 01:02:41.710
+thing right so instantiate it and then like add something
+
+01:02:41.710 --> 01:02:45.630
+then commit and then branch main so here get
+
+01:02:48.650 --> 01:02:54.850
+commit give a message if you want this is my first deploy of
+
+01:02:54.850 --> 01:03:00.190
+CICD any kind of messages I'm going to give so git commit
+
+01:03:00.190 --> 01:03:04.290
+and then try to add a branch over there so branch main so
+
+01:03:04.290 --> 01:03:11.230
+git branch main do it and then this is my branch where we
+
+01:03:11.230 --> 01:03:15.870
+have to add the code so add a code remote origin already
+
+01:03:15.870 --> 01:03:20.350
+exist okay so maybe i'll have to remove that particular part
+
+01:03:20.350 --> 01:03:23.770
+so do it guys do it till this point so
+
+01:03:25.790 --> 01:03:30.800
+i just have to remove this origin so i'll remove it can you
+
+01:03:30.800 --> 01:03:33.260
+please share your code we will follow the practical as well
+
+01:03:33.260 --> 01:03:35.380
+i have already shared a code inside your dashboard so please
+
+01:03:35.380 --> 01:03:38.080
+go inside dashboard and in a previous class you will be able
+
+01:03:38.080 --> 01:03:39.580
+to see that so
+
+01:03:43.830 --> 01:03:47.490
+i'll try to write git remote is already available so git
+
+01:03:47.490 --> 01:03:57.010
+remote remote remove o-r-i-g-i-n okay remove it again i'll
+
+01:03:57.010 --> 01:04:01.210
+try to add it now this time it's added now a last step
+
+01:04:01.210 --> 01:04:06.370
+basically so push the code so i believe this is not new for
+
+01:04:06.370 --> 01:04:12.690
+any one of us okay so now it is able to push a code now
+
+01:04:12.690 --> 01:04:16.970
+let's go to a github repository quickly so all of these
+
+01:04:16.970 --> 01:04:20.170
+codes are available as of now i have pushed this entire code
+
+01:04:20.170 --> 01:04:24.150
+now click on this action tab guys yeah so click on this
+
+01:04:24.150 --> 01:04:27.510
+action tab and you will be able to see this is my first
+
+01:04:27.510 --> 01:04:31.070
+deploy of cicd the message which i have given now if you are
+
+01:04:31.070 --> 01:04:35.330
+going to click on this as per my cicd yaml file as you can
+
+01:04:35.330 --> 01:04:40.370
+see it is running my cicd yaml file and it has executed a
+
+01:04:40.370 --> 01:04:43.530
+test and then it has basically
+
+01:04:45.950 --> 01:04:46.490
+deployed to the github repository so we will see why
+
+01:04:46.490 --> 01:04:49.890
+deployment has failed not an issue we'll see why deployment
+
+01:04:49.890 --> 01:04:54.150
+has failed could not resolve a host name or the name of the
+
+01:04:54.150 --> 01:05:00.300
+service not known okay fine i'll try to fix this issue but
+
+01:05:00.300 --> 01:05:04.740
+yeah the whole part the whole idea was to push a code so we
+
+01:05:04.740 --> 01:05:07.760
+are able to push a code over here entire code base is
+
+01:05:07.760 --> 01:05:11.640
+available now if you will come inside this action part you
+
+01:05:11.640 --> 01:05:15.160
+will be able to see some action action based on my yaml file
+
+01:05:15.160 --> 01:05:18.840
+so cicd yaml and we have the basically created a test and
+
+01:05:18.840 --> 01:05:22.220
+then we have created a deploy these are the two steps that i
+
+01:05:22.220 --> 01:05:24.900
+have created inside my yaml file recently we have discussed
+
+01:05:24.900 --> 01:05:28.780
+so test means it is able to test each and everything and
+
+01:05:28.780 --> 01:05:32.900
+during this test phase what has happened you will be able to
+
+01:05:32.900 --> 01:05:36.860
+check each and everything so as per my yaml file whatever i
+
+01:05:36.860 --> 01:05:40.520
+have mentioned inside my test step everything everything you
+
+01:05:40.520 --> 01:05:44.000
+will be able to say it right so set up a python then install
+
+01:05:44.000 --> 01:05:48.860
+a dependency then it is so it is installing all of this
+
+01:05:48.860 --> 01:05:51.840
+library the way we do it inside the local system and then
+
+01:05:51.840 --> 01:05:55.660
+run the test so here it is trying to run my pi test from my
+
+01:05:55.660 --> 01:05:59.380
+test directory as simple as that and error test main dot
+
+01:05:59.380 --> 01:06:02.800
+file type error okay got an unexpected keyword argument app
+
+01:06:02.800 --> 01:06:07.220
+interrupt one error during a collection no test found is
+
+01:06:07.220 --> 01:06:10.780
+keeping okay so test it is if it is not able to find out the
+
+01:06:10.780 --> 01:06:13.200
+correct test scenario so it is going to escape it that's
+
+01:06:13.200 --> 01:06:17.980
+also fine but yeah so it is able to run each and everything
+
+01:06:17.980 --> 01:06:20.520
+where so it is able to run each and everything inside a
+
+01:06:20.520 --> 01:06:23.900
+github and then it is trying to call a deployment a next
+
+01:06:23.900 --> 01:06:27.880
+step and because of some reason so my deployment has failed
+
+01:06:27.880 --> 01:06:31.320
+that's okay yeah that's okay we'll we'll try to like uh
+
+01:06:31.320 --> 01:06:34.140
+figure it out that why my deployment is basically failing
+
+01:06:34.140 --> 01:06:36.980
+i'll try to fix this particular issue because none of the
+
+01:06:36.980 --> 01:06:40.620
+deployment for the very first time happens uh i mean in a
+
+01:06:40.620 --> 01:06:45.200
+first go so uh any anyone so even as an experienced person
+
+01:06:45.200 --> 01:06:47.980
+if someone is going to do a deployment so it fails couple of
+
+01:06:47.980 --> 01:06:50.580
+times and then i'm going to fix it now itself in a class
+
+01:06:50.580 --> 01:06:54.300
+live class itself i'm going to fix it hopefully so is it
+
+01:06:54.300 --> 01:06:58.140
+fine are you able to see some actions inside the action tab
+
+01:06:58.140 --> 01:06:59.960
+of your repository yeah
+
+01:07:02.300 --> 01:07:06.920
+it has failed i mean like there is some issue there is some
+
+01:07:06.920 --> 01:07:09.120
+issue with my private key i can see over here it has given
+
+01:07:09.120 --> 01:07:12.440
+me error code is equal to 255 something like that
+
+01:07:24.970 --> 01:07:27.930
+yes failure to me same error yeah so if i'm getting an error
+
+01:07:27.930 --> 01:07:30.190
+so obviously you will end up getting the same error let me
+
+01:07:30.190 --> 01:07:34.350
+see what is this error uh so it is not it looks like it is
+
+01:07:34.350 --> 01:07:37.990
+not able to find out my uh file basically private file it is
+
+01:07:37.990 --> 01:07:41.770
+not able to log in into my ec2 this is what i can say so
+
+01:07:41.770 --> 01:07:44.510
+could not resolve a host name name or service not known
+
+01:07:44.510 --> 01:07:48.070
+environment okay so maybe host name could not resolve a host
+
+01:07:48.070 --> 01:07:50.770
+name name or service not known and then connection closed
+
+01:07:50.770 --> 01:07:55.230
+means it is not able to log in into my ec2 this is what i am
+
+01:07:55.230 --> 01:07:58.110
+like uh able to see so
+
+01:08:18.690 --> 01:08:20.230
+let me check and let me
+
+01:08:49.340 --> 01:08:53.860
+yeah so basically i have to because all three is three is
+
+01:08:53.860 --> 01:08:58.020
+like coming as a blank so i can try to click on this secret
+
+01:08:58.020 --> 01:09:03.400
+and variable come to action and just do one thing repository
+
+01:09:08.270 --> 01:09:08.970
+no
+
+01:09:13.960 --> 01:09:17.480
+there is nothing inside my okay
+
+01:09:19.850 --> 01:09:25.630
+so repository variable is fine and everything is blank okay
+
+01:09:25.630 --> 01:09:34.770
+let me create a new environment over here so ci cd uh gen ai
+
+01:09:36.240 --> 01:09:40.970
+gen ai test so let's configure not a repository environment
+
+01:09:40.970 --> 01:09:48.010
+but a environment variable so add environment variable i'll
+
+01:09:48.010 --> 01:09:51.050
+try to add the exact same thing which i have added before
+
+01:09:52.720 --> 01:09:55.240
+yaml file private
+
+01:10:01.600 --> 01:10:05.600
+key and then okay
+
+01:10:09.890 --> 01:10:12.550
+so copy my entire key
+
+01:10:15.640 --> 01:10:15.740
+and then we will get our environment variable we are now
+
+01:10:15.740 --> 01:10:15.740
+with our environment variable so we just have to keep it
+
+01:10:15.740 --> 01:10:22.020
+about duplicate key add variable then another one so another
+
+01:10:22.020 --> 01:10:29.540
+variable was ec2 host so i'll try to add ec2 host ec2 host
+
+01:10:29.540 --> 01:10:32.800
+is going to my public ip address this one so in my case 15
+
+01:10:32.800 --> 01:10:39.920
+206 88 97 okay so let me add that same thing that we have
+
+01:10:39.920 --> 01:10:42.200
+already added so this time i'm just adding entire inside my
+
+01:10:42.200 --> 01:10:44.860
+environment variable inside instead of like a doing a
+
+01:10:44.860 --> 01:10:50.960
+repository sequence great, ec2 user, ec2 user and that is
+
+01:10:50.960 --> 01:10:56.960
+going to be ubuntu. So it is going to be the name ubuntu. So
+
+01:10:56.960 --> 01:11:04.660
+u b u n t u, add variable. So these three variable I have
+
+01:11:04.660 --> 01:11:08.800
+added. Now again I will go back to action and I will go back
+
+01:11:08.800 --> 01:11:13.300
+to this last workflow which has failed and I can try to call
+
+01:11:13.300 --> 01:11:17.240
+rerun all the jobs. So let's see, rerun all the jobs.
+
+01:11:22.080 --> 01:11:25.800
+So it has started running a test, it's
+
+01:11:46.730 --> 01:11:50.710
+running my deploy, again deployment has failed, process
+
+01:11:50.710 --> 01:11:57.820
+completed with the exit code, same failure, could
+
+01:12:03.800 --> 01:12:06.820
+not resolve a hostname, name, these
+
+01:12:09.430 --> 01:12:15.050
+things are coming as a blank, no but I have already provided
+
+01:12:15.050 --> 01:12:15.470
+that.
+
+01:12:38.500 --> 01:12:41.080
+Please check the ec2 name once that you have given at the
+
+01:12:41.080 --> 01:12:45.060
+time of creation. That doesn't matter. So it just requires
+
+01:12:45.060 --> 01:12:49.680
+like a IP address, the public IP address, that's it. Doesn't
+
+01:12:49.680 --> 01:12:52.840
+matter what name I have given at the time of like a creation
+
+01:12:52.840 --> 01:12:53.660
+of this one.
+
+01:12:56.840 --> 01:13:02.080
+It's giving me blank but I have already provided it, okay,
+
+01:13:06.250 --> 01:13:10.630
+okay, okay. So there could be one issue guys when I am
+
+01:13:10.630 --> 01:13:15.870
+trying to hit this server. So here inside this ec2, I
+
+01:13:15.870 --> 01:13:19.170
+believe we have done even last time. So go to a networking,
+
+01:13:19.570 --> 01:13:26.710
+sorry, go to a security and inside a security group, but
+
+01:13:26.710 --> 01:13:30.570
+yeah, SSH wise 22 number port, 443, 80 number port is
+
+01:13:30.570 --> 01:13:32.670
+already opened. So inbound is already done.
+
+01:13:40.430 --> 01:13:42.610
+So it should not at
+
+01:13:45.580 --> 01:13:51.220
+least stop my SSH. I can go and add inbound rule wise even
+
+01:13:51.220 --> 01:13:57.000
+8000. Which is for my API exposure. But yeah, this doesn't
+
+01:13:57.000 --> 01:13:58.960
+depends upon the instance
+
+01:14:03.280 --> 01:14:07.080
+and then there is a instance. It
+
+01:14:22.280 --> 01:14:25.760
+is not able to print this hostname
+
+01:14:44.130 --> 01:14:45.850
+name service, not known.
+
+01:15:01.980 --> 01:15:05.340
+It should be able to read it from a repository variable, but
+
+01:15:05.340 --> 01:15:10.960
+it is not able to do it, okay.
+
+01:16:04.790 --> 01:16:11.330
+So let's go to a secret part. Let me. Add secret over here,
+
+01:16:20.610 --> 01:16:23.390
+CICD secret,
+
+01:16:31.320 --> 01:16:34.240
+SSH private key, add
+
+01:16:43.200 --> 01:16:46.580
+environment secret, hostname is going to be my public IP
+
+01:16:46.580 --> 01:16:55.900
+address, add secret and then my user is going to be ubuntu.
+
+01:16:59.900 --> 01:17:02.360
+Let me trigger an action one more time.
+
+01:17:33.080 --> 01:17:36.260
+Basically it should work with the repository secret. It is
+
+01:17:36.260 --> 01:17:37.720
+not supposed to give me this issue
+
+01:17:43.920 --> 01:17:51.500
+again, deployment failed with the same error. It was
+
+01:17:51.500 --> 01:17:56.530
+supposed to work with the repository secret itself, code
+
+01:17:56.530 --> 01:18:04.600
+space and then new repository secret. Okay. It seems to be
+
+01:18:04.600 --> 01:18:12.320
+blank for me. Environment and variable is fine. Oh.
+
+01:18:14.890 --> 01:18:18.330
+I think. I have made it. I have made some mistake.
+
+01:18:20.070 --> 01:18:22.250
+Repository secret. Add
+
+01:18:26.540 --> 01:18:31.720
+secrets. Okay, repository secret was showing me blank.
+
+01:18:39.330 --> 01:18:43.920
+Okay. And user ubuntu.
+
+01:18:50.290 --> 01:18:51.250
+No action.
+
+01:18:55.250 --> 01:18:56.150
+Run the job.
+
+01:19:18.690 --> 01:19:20.730
+Yeah. So basically I was supposed to add a repository
+
+01:19:20.730 --> 01:19:24.630
+secret. I have added it, but yeah, I mean like in a later
+
+01:19:24.630 --> 01:19:27.690
+stage when I have checked so it was gone. So it was
+
+01:19:27.690 --> 01:19:30.950
+completely blank. So I have added it once again. It should
+
+01:19:30.950 --> 01:19:34.350
+work with the repository secret hundred percent, right? So
+
+01:19:34.350 --> 01:19:37.670
+let's see. I mean like it should work this time. I have
+
+01:19:37.670 --> 01:19:39.470
+added a repository secret because
+
+01:19:54.990 --> 01:19:57.630
+last time it was giving me all three blank, right? This is
+
+01:19:57.630 --> 01:19:59.050
+what I can see in my error log.
+
+01:20:12.590 --> 01:20:15.830
+I think this time it will not fail. It is taking longer than
+
+01:20:15.830 --> 01:20:19.070
+and I can even go and check over here. So what is happening
+
+01:20:19.070 --> 01:20:23.410
+inside my deploy? Yeah. So now it is able to log in into my
+
+01:20:23.410 --> 01:20:27.550
+EC2. Yes. So now it's happening. You can, you can go into a
+
+01:20:27.550 --> 01:20:29.750
+deploy and you can check all the steps. So whether it is
+
+01:20:29.750 --> 01:20:32.430
+able to log in into or not. So yeah, it is showing me that
+
+01:20:32.430 --> 01:20:35.810
+it is able to log in and then uh, whatever command which I
+
+01:20:35.810 --> 01:20:38.910
+have given. So yeah, it is, it is able to run all of these
+
+01:20:38.910 --> 01:20:42.490
+commands. It is able to do the python installation and this
+
+01:20:42.490 --> 01:20:44.610
+is, this was the actual issue guys. This was the actual
+
+01:20:44.610 --> 01:20:47.170
+issue. So it was not able to log in into my system. Now it
+
+01:20:47.170 --> 01:20:50.190
+has logged in. So successfully uninstalled this, this, this
+
+01:20:50.190 --> 01:20:52.950
+downloading this version. So basically it is trying to
+
+01:20:52.950 --> 01:20:56.150
+download all the requirement.txt. So I can see everything in
+
+01:20:56.150 --> 01:21:00.910
+live. Yeah. So yeah, it, it, it is supposed to actually
+
+01:21:00.910 --> 01:21:04.330
+work. Yeah. Now post run action. Okay, fine. Completed a
+
+01:21:04.330 --> 01:21:08.510
+job. So bingo. Okay. Completed job error. But yeah, it is
+
+01:21:08.510 --> 01:21:11.090
+telling me that it has deployed. So maybe I can go and
+
+01:21:11.090 --> 01:21:15.250
+check. So I can try to basically uh, copy this public DNS,
+
+01:21:15.370 --> 01:21:21.330
+right? Public DNS. And then I can try to give 8,000 port and
+
+01:21:21.330 --> 01:21:24.870
+uh, welcome to fast API curd application status. Hello. D
+
+01:21:24.870 --> 01:21:28.550
+right. This is what I'm trying to print on home. D O C S D O
+
+01:21:28.550 --> 01:21:33.110
+C S so that it can open up a solder UI and my application is
+
+01:21:33.110 --> 01:21:38.630
+deployed. Yeah. My application is basically deployed. Fine.
+
+01:21:38.870 --> 01:21:43.830
+So successfully we are able to productionize our CI CD. Now
+
+01:21:43.830 --> 01:21:46.110
+let me show you CI CD continuous integration, continuous
+
+01:21:46.110 --> 01:21:49.290
+deployment, right? So now what I will do, I'll try to make
+
+01:21:49.290 --> 01:21:52.150
+some sort of a changes into my code. So let's go here,
+
+01:21:52.250 --> 01:21:55.790
+right? Uh, let's go. into any of this file of your choice,
+
+01:21:55.910 --> 01:21:58.490
+any file, any file means literally any file of your choice
+
+01:21:58.490 --> 01:22:02.730
+and welcome to fast API curd application. So maybe instead
+
+01:22:02.730 --> 01:22:07.010
+of like a, you know, printing this message, welcome to your
+
+01:22:07.010 --> 01:22:12.830
+own fast API CI CD fine. So this is the message which I
+
+01:22:12.830 --> 01:22:15.170
+would like to print. I don't want to print, you know, uh,
+
+01:22:15.410 --> 01:22:18.850
+uh, the previous message. So this is the code changes which
+
+01:22:18.850 --> 01:22:21.250
+I have done. Yeah, this is the code changes which I have
+
+01:22:21.250 --> 01:22:24.330
+done. Let's suppose. Now if I have done some sort of a code
+
+01:22:24.330 --> 01:22:27.530
+changes, so I have to push that particular code. Yes, I have
+
+01:22:27.530 --> 01:22:31.450
+to push this particular code. So maybe get add, add all. So
+
+01:22:31.450 --> 01:22:35.690
+by default and then I can do get C O double M I T commit,
+
+01:22:35.890 --> 01:22:39.750
+commit and I can write a message over there. So commit with
+
+01:22:39.750 --> 01:22:46.030
+the message. I have done a message changes in code fine. So
+
+01:22:46.030 --> 01:22:48.410
+with this message, let's suppose I'm trying to do a commit
+
+01:22:48.410 --> 01:22:53.590
+and then get push or is in main as simple as that. So it is
+
+01:22:53.590 --> 01:22:57.810
+going to push the latest version of the code simple. So here
+
+01:22:57.810 --> 01:23:02.370
+if I'll go inside my GitHub right inside my repository, so
+
+01:23:02.370 --> 01:23:05.090
+you will be able to see that that automatically it has
+
+01:23:05.090 --> 01:23:07.250
+started running. I have done a message change in the code.
+
+01:23:07.350 --> 01:23:09.370
+This is the message which I have pushed just now, right?
+
+01:23:09.410 --> 01:23:12.290
+Just a second ago and automatically I don't have to do
+
+01:23:12.290 --> 01:23:14.510
+anything, right? I don't have to do anything actually. So
+
+01:23:14.510 --> 01:23:16.930
+automatically as you can see, it has started running the
+
+01:23:16.930 --> 01:23:20.430
+pipeline. So by the time it has sensed something new has
+
+01:23:20.430 --> 01:23:22.670
+been pushed. Automatically it has started running the
+
+01:23:22.670 --> 01:23:26.490
+pipeline and automatically it will try to deploy it and I
+
+01:23:26.490 --> 01:23:29.970
+will be able to see that new message, right? I will be able
+
+01:23:29.970 --> 01:23:35.730
+to see that new message on this particular URL, right? So it
+
+01:23:35.730 --> 01:23:37.910
+is still showing the previous one. Welcome to fast API code
+
+01:23:37.910 --> 01:23:41.190
+application as deployment is going on, right? As deployment
+
+01:23:41.190 --> 01:23:44.090
+is going on. Now once this deployment will be done, once
+
+01:23:44.090 --> 01:23:46.930
+this is going to be finished, I will be able to see a new
+
+01:23:46.930 --> 01:23:49.770
+message as well, right? Just wait for my deployment to like
+
+01:23:49.770 --> 01:23:52.450
+a finish and I can check. I can see like what is happening
+
+01:23:52.450 --> 01:23:55.990
+inside the deployment, yeah? So deployment is completed
+
+01:23:55.990 --> 01:23:59.810
+successfully. Now go and refresh and yes, welcome to your
+
+01:23:59.810 --> 01:24:03.810
+own fast API CICD. Means whatever changes which I have done
+
+01:24:03.810 --> 01:24:07.290
+inside my code, automatically it has been deployed. So I
+
+01:24:07.290 --> 01:24:10.770
+just have to push a code inside my repo, that's it, right?
+
+01:24:10.870 --> 01:24:13.510
+And my application new feature will be live.
+
+01:24:18.630 --> 01:24:21.490
+PK is saying, can you please help us revise, summarize what
+
+01:24:21.490 --> 01:24:24.830
+all we did so far? I think you should join a class. From the
+
+01:24:24.830 --> 01:24:27.030
+beginning summary wise. So I have already given a summary
+
+01:24:27.030 --> 01:24:31.330
+option inside your dashboard. So like even post this class,
+
+01:24:31.410 --> 01:24:34.290
+I mean like after this class, when we are going to upload
+
+01:24:34.290 --> 01:24:37.430
+the recording, you will be able to see a summary. We have
+
+01:24:37.430 --> 01:24:39.430
+just done CICD. That's it.
+
+01:24:42.360 --> 01:24:48.190
+Fine everyone. Can you open the IP address to show the
+
+01:24:48.190 --> 01:24:52.030
+output? Which output? This is the output, right? This is
+
+01:24:52.030 --> 01:24:55.910
+basically the output. So just DOCS. So we have a fast API.
+
+01:24:56.110 --> 01:24:59.090
+This fast API is live over here. And that too with my new
+
+01:24:59.090 --> 01:25:02.190
+changes, right? So I can keep on building. I can keep on
+
+01:25:02.190 --> 01:25:06.270
+writing a code over here. Simply push the code. Rest is
+
+01:25:06.270 --> 01:25:10.150
+done. That's the beauty of CICD.
+
+01:25:13.220 --> 01:25:17.420
+If approval needs on GitHub, then go and approve. You have
+
+01:25:17.420 --> 01:25:21.280
+to merge the PR. Then only code will go. So basically here
+
+01:25:21.280 --> 01:25:24.780
+we have simply mentioned that, that whenever something will
+
+01:25:24.780 --> 01:25:28.000
+happen over here, right? In which branch? Main branch.
+
+01:25:28.640 --> 01:25:30.380
+Right? So let's suppose there is some different branch.
+
+01:25:30.520 --> 01:25:32.560
+Nothing will happen. It is not going to deploy. Unless and
+
+01:25:32.560 --> 01:25:35.940
+until you are not going to merge it with a main branch.
+
+01:25:38.810 --> 01:25:41.790
+Making sense everyone? Yeah. So how many of you are able to
+
+01:25:41.790 --> 01:25:44.190
+deploy it? How many of you are able to build a entire CICD?
+
+01:25:45.030 --> 01:25:47.210
+How many of you are able to, you know, do some changes into
+
+01:25:47.210 --> 01:25:51.970
+a code? Okay. Arun is done. Rakesh is done. I got an error
+
+01:25:51.970 --> 01:25:55.210
+on a deployment step. Okay. So maybe you can try to fix it.
+
+01:25:55.790 --> 01:26:00.350
+Joel done. Saif is saying when, where we get a template on
+
+01:26:00.350 --> 01:26:04.590
+YAML? On internet? In a GitHub you will be able to get it or
+
+01:26:04.590 --> 01:26:07.790
+maybe from anywhere like this kind of a YAML you will be
+
+01:26:07.790 --> 01:26:10.470
+able to find it all across the internet. Or maybe you can
+
+01:26:10.470 --> 01:26:13.110
+just ask chat GPT or maybe a URI. They will be able to give
+
+01:26:13.110 --> 01:26:19.070
+you even the same YAML. Able to done. Sorry, but can you
+
+01:26:19.070 --> 01:26:22.170
+tell me what changes you made in VS code? I have like
+
+01:26:22.170 --> 01:26:26.470
+changed this welcome to your own fast API CICD. That's it.
+
+01:26:27.210 --> 01:26:30.250
+This is a new changes, which I have done. A message, right?
+
+01:26:30.310 --> 01:26:34.130
+The message that you will be able to get. At root. So this
+
+01:26:34.130 --> 01:26:41.250
+message I have changed. This message I have changed. And
+
+01:26:41.250 --> 01:26:45.310
+yeah, I like I can do any kind of changes into my code. This
+
+01:26:45.310 --> 01:26:52.170
+is also a code change, which I have done. And yes, so we
+
+01:26:54.060 --> 01:26:59.960
+are able to make our application like simple, right? So
+
+01:26:59.960 --> 01:27:04.100
+everything is live over here. And after making any kind of
+
+01:27:04.100 --> 01:27:08.100
+changes. Again, it is going to reflect the same thing.
+
+01:27:12.220 --> 01:27:16.140
+Run eco private key warning permanently added to list known
+
+01:27:16.140 --> 01:27:18.000
+permission denied public key.
+
+01:27:21.100 --> 01:27:24.880
+Process completed with exec code 255. Okay, so maybe you are
+
+01:27:24.880 --> 01:27:27.800
+making a mistake. So just go to your setting, right? Go to
+
+01:27:27.800 --> 01:27:31.040
+your setting. Go to your like secret and variable. Go to
+
+01:27:31.040 --> 01:27:36.280
+action. And then inside that as a repository secret. Not as
+
+01:27:36.280 --> 01:27:37.820
+a environment variable. Or environment variable. As an
+
+01:27:37.820 --> 01:27:40.980
+environment secret. So as a repository secret, try to create
+
+01:27:40.980 --> 01:27:45.020
+all of these these three things, right? Do it and then like
+
+01:27:45.020 --> 01:27:46.960
+try to redeploy it will work.
+
+01:27:52.080 --> 01:27:55.020
+One question if our OS is window, then it is the same
+
+01:27:55.020 --> 01:27:59.160
+process only in a place of Ubuntu? No. So obviously you have
+
+01:27:59.160 --> 01:28:02.980
+to write a Windows specific command because the command
+
+01:28:02.980 --> 01:28:06.200
+which has been mentioned inside my YAML file, it's basically
+
+01:28:06.200 --> 01:28:09.680
+a Ubuntu specific command or you can say a Linux specific
+
+01:28:09.680 --> 01:28:13.300
+command as we have opted for which machine? So we have opted
+
+01:28:13.300 --> 01:28:16.740
+for basically a Ubuntu machine to do a deployment. So
+
+01:28:16.740 --> 01:28:21.500
+obviously it is going to be a machine specific. I mean like
+
+01:28:21.500 --> 01:28:22.000
+OS specific.
+
+01:28:29.090 --> 01:28:34.130
+Okay, so fine, everyone, I believe we are able to do a CI CD
+
+01:28:34.130 --> 01:28:36.850
+pipeline and going forward. So whatever project that you are
+
+01:28:36.850 --> 01:28:41.110
+going to do similar approach, so you have to follow. It's
+
+01:28:41.110 --> 01:28:44.130
+all about creating a YAML file and then with the help of
+
+01:28:44.130 --> 01:28:47.050
+YAML file, everything will be managed and everything will be
+
+01:28:47.050 --> 01:28:49.930
+done automatically. If I would like to create a different
+
+01:28:49.930 --> 01:28:52.630
+different, you know, branches for a development environment
+
+01:28:52.630 --> 01:28:56.250
+for a UAT environment and then for a production environment
+
+01:28:56.250 --> 01:29:00.350
+that can also be configured in a exact similar manner. So
+
+01:29:00.350 --> 01:29:03.090
+there will be a separate separate environment or YAML file
+
+01:29:03.090 --> 01:29:05.850
+we are going to create. So one for a dev environment, one
+
+01:29:05.850 --> 01:29:09.090
+for a UAT environment, one for a production environment. And
+
+01:29:09.090 --> 01:29:13.870
+then like, you know, we can we can try to like create an
+
+01:29:13.870 --> 01:29:16.650
+actions that when we are, on which environment will be
+
+01:29:16.650 --> 01:29:19.650
+invoked and what is going to happen in dev, what is going to
+
+01:29:19.650 --> 01:29:22.050
+happen in a UAT and what is going to happen in a production
+
+01:29:22.050 --> 01:29:24.850
+environment. This is how we try to create one of the
+
+01:29:24.850 --> 01:29:31.210
+simplest possible CI CD pipeline. But like I said, right, so
+
+01:29:31.210 --> 01:29:35.050
+like I said, there can be multiple tools that you can try to
+
+01:29:35.050 --> 01:29:38.670
+involve over here and then also you can try to create a CI
+
+01:29:38.670 --> 01:29:43.110
+CD. For example, I can try to involve maybe Jenkins over
+
+01:29:43.110 --> 01:29:47.930
+there. I can try to involve. Maybe like a some any any other
+
+01:29:47.930 --> 01:29:50.450
+there are so many tools out there. So which you can try to
+
+01:29:50.450 --> 01:29:54.650
+like use it and you will be able to like spin the machine or
+
+01:29:54.650 --> 01:29:58.930
+spin any other services on Azure, AWS and GCP in automatic
+
+01:29:58.930 --> 01:30:02.510
+way. As of now, I'm just trying to use EC2 service from AWS.
+
+01:30:02.790 --> 01:30:05.950
+But yeah, so I can try to call any other services in
+
+01:30:05.950 --> 01:30:09.910
+automatic way and I will be able to basically even do a
+
+01:30:09.910 --> 01:30:13.690
+deployment. I mean, like a lot of such things are possible.
+
+01:30:13.690 --> 01:30:14.830
+Not just one or two.
+
+01:30:17.890 --> 01:30:21.990
+Okay so target setting deployment done. Okay so our case
+
+01:30:21.990 --> 01:30:27.730
+partil for con UAT. What is that? I'm not able to
+
+01:30:27.730 --> 01:30:33.530
+understand. Can we deploy only one file as well if our other
+
+01:30:33.530 --> 01:30:36.830
+file is working fine and changes done in one file? Yeah. So
+
+01:30:36.830 --> 01:30:39.410
+basically when I'm trying to push, right, so it is trying to
+
+01:30:39.410 --> 01:30:41.890
+push my latest changes from one file. Right. This is what I
+
+01:30:41.890 --> 01:30:44.610
+have done. This is what happens when you try to do a git
+
+01:30:44.610 --> 01:30:48.250
+add. So basically it will try to see. So which file has been
+
+01:30:48.250 --> 01:30:52.270
+changed and that is something that is going to upload. Yeah.
+
+01:30:52.990 --> 01:30:56.310
+The updated file. So all these things has been managed and
+
+01:30:56.310 --> 01:30:58.570
+maintained by git itself. This is where we are using GitHub
+
+01:30:58.570 --> 01:31:01.270
+or git by the way. Not GitHub. GitHub is just a repository.
+
+01:31:01.570 --> 01:31:06.290
+It's actual services actually git. Please take class on
+
+01:31:06.290 --> 01:31:11.230
+GitHub advanced action like pull request. That you can learn
+
+01:31:11.230 --> 01:31:15.890
+in half an hour of time from chat GPT itself. It's not a big
+
+01:31:15.890 --> 01:31:19.350
+deal. And as a techie, I believe you all are supposed to be
+
+01:31:19.350 --> 01:31:22.910
+aware about GitHub, at least a basic operation with respect
+
+01:31:22.910 --> 01:31:27.830
+to a GitHub, right? That's binary. I'm like, don't wait for
+
+01:31:27.830 --> 01:31:31.550
+anyone to teach you if you are waiting for it, then you are
+
+01:31:31.550 --> 01:31:35.910
+making a very, very big mistake, right? Something you should
+
+01:31:35.910 --> 01:31:39.750
+explore on your own as well. That's my recommendation. So
+
+01:31:39.750 --> 01:31:43.270
+fine guys, successfully we are able to do a CI CD now
+
+01:31:43.270 --> 01:31:45.310
+tomorrow what we are going to do. So tomorrow we are going
+
+01:31:45.310 --> 01:31:48.210
+to basically work on the project side, a project means
+
+01:31:48.210 --> 01:31:50.830
+project which has been listed inside your syllabus, right?
+
+01:31:51.230 --> 01:31:53.730
+So we'll start looking into a project. We'll see how we can
+
+01:31:53.730 --> 01:31:56.210
+try to build it and with every project. So we'll try to
+
+01:31:56.210 --> 01:31:59.750
+attach a CI CD pipeline as well so that whatever changes you
+
+01:31:59.750 --> 01:32:03.210
+are going to make, uh, automatically that should be deployed
+
+01:32:03.210 --> 01:32:06.950
+inside your EC2 instances. So same flow. That's the reason.
+
+01:32:07.030 --> 01:32:09.770
+So I have discussed CI CD and then I'll come with a
+
+01:32:09.770 --> 01:32:12.770
+discussion of your project path because inside a project
+
+01:32:12.770 --> 01:32:15.310
+there will be a UI interface. There will be a backend,
+
+01:32:15.590 --> 01:32:19.110
+right? Uh, there will be a databases you all are going to
+
+01:32:19.110 --> 01:32:22.930
+use. So all of these services we have to configure one by
+
+01:32:22.930 --> 01:32:27.070
+one, one by one, and we have to ship the code making sense.
+
+01:32:27.410 --> 01:32:30.250
+Yeah. I'm missing. I got the issues. Well done.
+
+01:32:32.530 --> 01:32:35.510
+Making sense everyone. Yeah. So anyone who is having any
+
+01:32:35.510 --> 01:32:37.370
+kind of a doubt, okay,
+
+01:32:42.990 --> 01:32:44.910
+so you can raise your hand if you have any kind of a doubt
+
+01:32:44.910 --> 01:32:48.590
+and uh, yeah, so we can talk about it. So go ahead. Said,
+
+01:32:48.590 --> 01:32:51.650
+said, I think you have. Yeah. Hi. Hi. So I want to share my
+
+01:32:51.650 --> 01:32:57.270
+screen. Okay. Fine. Go ahead. Abhijit, what is your issue?
+
+01:32:57.610 --> 01:33:01.250
+Yeah. Uh, there is no issue. Uh, but uh, just, I want to
+
+01:33:01.250 --> 01:33:05.910
+check how we can integrate with the Jira. So it will like,
+
+01:33:06.010 --> 01:33:09.770
+it will get approval also automatically it will come into
+
+01:33:09.770 --> 01:33:13.050
+the picture. So okay. So basically you can try to call as a
+
+01:33:13.050 --> 01:33:15.870
+book. So from a Jira, right? So you can try to call as a
+
+01:33:15.870 --> 01:33:18.290
+book. So whenever some action is going to happen, it will
+
+01:33:18.290 --> 01:33:20.690
+try to update your Jira. So Jira is already providing you
+
+01:33:20.690 --> 01:33:23.250
+that option Jira is already providing you an end points for
+
+01:33:23.250 --> 01:33:29.180
+that. Understood. Okay. Thank you. Yeah. Yeah. Uh, Drupad.
+
+01:33:29.240 --> 01:33:32.340
+Uh, yeah. So Sid, you can share the screen. I think you are
+
+01:33:32.340 --> 01:33:35.240
+a part of panelists now. And Drupad, what is your question?
+
+01:33:37.600 --> 01:33:40.280
+Are we using DB in this project? Ganesh is asking. So yeah,
+
+01:33:40.360 --> 01:33:43.380
+we are using a SQLite in memory database. That's the reason.
+
+01:33:43.440 --> 01:33:45.340
+So we are able to do a code operation. If you'll go and
+
+01:33:45.340 --> 01:33:48.200
+check inside your app section, I have not discussed about
+
+01:33:48.200 --> 01:33:51.100
+that code because I think we are all are mature enough to
+
+01:33:51.100 --> 01:33:53.800
+understand that part. Okay. We are taking classes since last
+
+01:33:53.800 --> 01:33:54.360
+four months.
+
+01:33:58.270 --> 01:34:01.630
+Yeah. So what is, what is the issue? Sid? Yeah. See, I could
+
+01:34:01.630 --> 01:34:05.850
+deploy the code, but when I'm trying to run the DNS server
+
+01:34:05.850 --> 01:34:09.570
+from there, the link is not working. So I'll show you again.
+
+01:34:10.810 --> 01:34:14.030
+So this one, when I'm opening, okay, show me, show me your
+
+01:34:14.030 --> 01:34:17.410
+security, go to your security tab.
+
+01:34:21.780 --> 01:34:25.220
+Hmm. Okay. Got, got the issue. Fine. Click on your security
+
+01:34:25.220 --> 01:34:31.310
+group. Security group. Same, same tab. Yeah. So let me
+
+01:34:31.310 --> 01:34:34.850
+annotate this one security group. I think this is something
+
+01:34:34.850 --> 01:34:37.810
+that we have done even in my last class, right? So click on
+
+01:34:37.810 --> 01:34:41.330
+this edit inbound rule. So basically your API will be hosted
+
+01:34:41.330 --> 01:34:44.510
+at 8,000 port. And so basically you can see in your list,
+
+01:34:44.590 --> 01:34:47.710
+you have not added the 8,000. You have not opened the 8,000
+
+01:34:47.710 --> 01:34:52.570
+port. Yeah. So give over here 8,000 here, here, here, give
+
+01:34:52.570 --> 01:34:58.870
+here 8,000 and marking it. Yeah. Give 8,000 over here. Okay.
+
+01:34:58.870 --> 01:35:03.550
+Now. So over here, select a zero dot zero dot zero first
+
+01:35:03.550 --> 01:35:12.300
+option. Yes. Allow everything. Fine. Save rule. Hmm. Okay.
+
+01:35:12.400 --> 01:35:13.620
+Now try to hit that URL.
+
+01:35:32.260 --> 01:35:37.740
+Enter. It is showing not secure. Fine. That is fine.
+
+01:35:37.840 --> 01:35:41.600
+Connection for this one is not secure. Uh, it's running on
+
+01:35:41.600 --> 01:35:46.540
+HTTPS. It should run on STTP, not secure connection by the
+
+01:35:46.540 --> 01:35:49.880
+way. Just open it. Open up into a Google Chrome. Copy this
+
+01:35:49.880 --> 01:35:53.080
+URL. Yeah. Use Chrome.
+
+01:35:56.440 --> 01:36:02.100
+I don't have Chrome I think. Then you'll have to install it.
+
+01:36:02.140 --> 01:36:05.280
+Remove HTTPS. HTTPS. Just keep like a HTTP.
+
+01:36:10.380 --> 01:36:15.580
+Hit. Yeah. It's working. Okay. Now it is coming. Yeah. So
+
+01:36:15.580 --> 01:36:18.480
+now you can just do like a slash docs. You will be able to
+
+01:36:18.480 --> 01:36:20.700
+see Swagger UI as well. Oh yeah.
+
+01:36:25.600 --> 01:36:28.540
+Yeah. So all these APIs are live basically. If
+
+01:36:31.840 --> 01:36:36.380
+I try. Try it out. Yeah. I mean like, yeah, it's basically
+
+01:36:36.380 --> 01:36:38.700
+live so you can, you can do whatever you want with your
+
+01:36:38.700 --> 01:36:43.560
+APIs. Yeah. Fine. Fine. Yeah. Every, every, every, if it is
+
+01:36:43.560 --> 01:36:45.740
+not working, then it's a code issue basically. I mean like
+
+01:36:45.740 --> 01:36:48.260
+you can fix it in a local system, push it once again,
+
+01:36:48.400 --> 01:36:50.860
+automatically it will deploy. You don't have to worry about
+
+01:36:50.860 --> 01:36:53.920
+the deployment now. Right. With the help of CICD. And uh,
+
+01:36:54.040 --> 01:36:56.500
+yeah. So if something is not working, fixing your local,
+
+01:36:56.580 --> 01:36:59.540
+testing your local, first of all, then again send the code,
+
+01:36:59.580 --> 01:37:02.080
+send the code to a GitHub and then automatically CICD will
+
+01:37:02.080 --> 01:37:05.560
+deploy. Okay. So running through means through UvCon, you
+
+01:37:05.560 --> 01:37:08.700
+are saying running in local. Yeah. Yeah. So basically even
+
+01:37:08.700 --> 01:37:10.840
+over here it's running through a UvCon itself. So the
+
+01:37:10.840 --> 01:37:13.860
+command that we are using in a local, same command we are
+
+01:37:13.860 --> 01:37:18.740
+using even on an EC2. Okay. Yeah. Okay. I mean like see
+
+01:37:18.740 --> 01:37:21.960
+whatever you have done like on your local system, right. The
+
+01:37:21.960 --> 01:37:24.800
+way you try to run something in your local system, we are
+
+01:37:24.800 --> 01:37:27.480
+trying to run same thing on an EC2 system. That's it. That's
+
+01:37:27.480 --> 01:37:29.780
+the only differences. There is no other differences in terms
+
+01:37:29.780 --> 01:37:34.030
+of like, you know, running the code or command. Okay. yeah
+
+01:37:34.030 --> 01:37:42.930
+yeah okay so fine issue fixed now so yeah ram what is the
+
+01:37:42.930 --> 01:37:46.350
+question drupad what is your question so so that's one quick
+
+01:37:46.350 --> 01:37:50.510
+question now that uh we have done cicd right now if suppose
+
+01:37:50.510 --> 01:37:54.290
+this works whenever it goes some developer uh checks in and
+
+01:37:54.290 --> 01:37:57.370
+whenever the pr merged to the main branch it gets deployed
+
+01:37:57.370 --> 01:38:01.310
+into dev so what about production or you wait at the higher
+
+01:38:01.310 --> 01:38:05.810
+environments so we need to do separate cicd yeah so
+
+01:38:05.810 --> 01:38:08.510
+basically in this approach so we try to create a multiple
+
+01:38:08.510 --> 01:38:11.750
+yaml file and we try to spin a multiple instances so
+
+01:38:11.750 --> 01:38:14.970
+generally whenever we try to you know build instances for
+
+01:38:14.970 --> 01:38:17.770
+our production system so we always try to keep it high based
+
+01:38:17.770 --> 01:38:21.630
+on our traffic that we are expecting and so we try to spin a
+
+01:38:21.630 --> 01:38:24.370
+small instances for a development environment a small
+
+01:38:24.370 --> 01:38:27.570
+instances for a uat environment and then like a parallelly
+
+01:38:27.570 --> 01:38:30.630
+we try to create a multiple yaml files and different
+
+01:38:30.630 --> 01:38:32.970
+different branches we use to create so we try to create a
+
+01:38:32.970 --> 01:38:35.730
+dev branch then we use to create a ug branch and then we use
+
+01:38:35.730 --> 01:38:39.170
+to create a main branch so first my code will go to our dev
+
+01:38:39.170 --> 01:38:42.790
+dev branch then from dev to uat and then from u82 main
+
+01:38:42.790 --> 01:38:45.970
+backup so by the time you it will go to your ut it will be
+
+01:38:45.970 --> 01:38:48.730
+live with the help of instance that i have selected for a
+
+01:38:48.730 --> 01:38:52.430
+basically like a production and whenever it will go to a u80
+
+01:38:52.430 --> 01:38:55.050
+so it will be live on an instance which we have selected for
+
+01:38:55.050 --> 01:38:59.530
+a uat and a dev so same thing but yeah three amon file we
+
+01:38:59.530 --> 01:39:01.870
+tried to create and see our fences and multiple instances
+
+01:39:01.870 --> 01:39:04.010
+will be like more like multiple instances a spend on a ec2
+
+01:39:04.010 --> 01:39:06.370
+instance that makes sense because this directly goes down
+
+01:39:06.370 --> 01:39:09.090
+but different csid application for the different servers yes
+
+01:39:09.090 --> 01:39:14.250
+exactly same thing thank you thank you yeah and anyhow we
+
+01:39:14.250 --> 01:39:17.090
+have written up like uh you know uh we have already
+
+01:39:17.090 --> 01:39:20.110
+mentioned our actions right that when something will come to
+
+01:39:20.110 --> 01:39:22.970
+main similarly when something will come to dev branch when
+
+01:39:22.970 --> 01:39:26.270
+something will come to uat branch in that way you can try to
+
+01:39:26.270 --> 01:39:29.730
+we need to customize the csd data okay exactly exactly yeah
+
+01:39:29.730 --> 01:39:34.850
+yeah okay so yeah question uh ram what is your question let
+
+01:39:34.850 --> 01:39:38.150
+me can you please allow me the screen i need to show some
+
+01:39:38.150 --> 01:39:42.750
+error ramesh right yeah ramesh okay ramesh go ahead ram what
+
+01:39:42.750 --> 01:39:44.310
+is your question yeah
+
+01:39:46.870 --> 01:39:52.090
+don't have any question okay well
+
+01:40:01.560 --> 01:40:05.720
+i have added to the security group uh still we we have an
+
+01:40:05.720 --> 01:40:09.900
+issue uh show me your security group have you added 8 000
+
+01:40:09.900 --> 01:40:16.280
+port number yeah 8 000 custom tcp tcp is done and uh show me
+
+01:40:16.280 --> 01:40:17.620
+your github yeah
+
+01:40:24.340 --> 01:40:29.220
+yeah deployment done okay it looks like okay so everything
+
+01:40:29.220 --> 01:40:34.920
+is successful uh okay uh go back go back to your ec2
+
+01:40:37.870 --> 01:40:41.910
+it's the same instance right the same instance refresh
+
+01:40:41.910 --> 01:40:48.870
+refresh once you're not not this one your url okay yeah
+
+01:41:00.980 --> 01:41:07.570
+no this is fine request remote give me remote control yeah
+
+01:41:13.840 --> 01:41:16.000
+just just give me control okay
+
+01:41:53.170 --> 01:41:58.350
+it's working it's working okay thank you yeah and uh and one
+
+01:41:58.350 --> 01:42:01.870
+more thing if we don't pass the port number why we are
+
+01:42:01.870 --> 01:42:06.290
+getting an error because inside your code if you will go and
+
+01:42:06.290 --> 01:42:09.350
+check so we have mentioned basically a port number you click
+
+01:42:09.350 --> 01:42:12.190
+on and then run on this particular port number okay
+
+01:42:13.790 --> 01:42:17.190
+otherwise it's not allowed anything are we not able to see
+
+01:42:17.190 --> 01:42:20.790
+any uh we've gotten this error without port no so how you
+
+01:42:20.790 --> 01:42:23.670
+will be able to uh get it basically so because in your
+
+01:42:23.670 --> 01:42:26.210
+inside your application itself you have mentioned the port
+
+01:42:26.210 --> 01:42:28.810
+number so just you can go into our main.pi file you can
+
+01:42:28.810 --> 01:42:30.930
+check port number is mentioned over there as 8 000.
+
+01:42:34.430 --> 01:42:40.790
+uh one more thing in the yaml file uh so we have covered the
+
+01:42:40.790 --> 01:42:44.430
+predominantly to check the unit testing not just not this
+
+01:42:44.430 --> 01:42:49.770
+yaml file this is basically a docker data was available no
+
+01:42:49.770 --> 01:42:55.490
+sorry sir sorry for this this one yeah correct uh so it is
+
+01:42:55.490 --> 01:42:58.890
+deployed into the our github server correct this is just
+
+01:42:58.890 --> 01:43:01.970
+kind of the parameter file and what is the real execution
+
+01:43:01.970 --> 01:43:05.870
+how the values is passing where is executed this code which
+
+01:43:05.870 --> 01:43:09.090
+code where is this test code will be executed on a github so
+
+01:43:09.090 --> 01:43:11.510
+basically github is giving you a small machine that's the
+
+01:43:11.510 --> 01:43:14.330
+reason so they are going to charge you and by default so
+
+01:43:14.330 --> 01:43:17.070
+they are going to give you some github action for are free
+
+01:43:17.070 --> 01:43:20.750
+some there is a limitation on that so we as a tech team
+
+01:43:20.750 --> 01:43:23.530
+right so we used to pay a lot to a github for like using
+
+01:43:23.530 --> 01:43:25.890
+this github action but yeah so they are giving you some free
+
+01:43:25.890 --> 01:43:28.050
+that's the reason you are able to use it so this test is
+
+01:43:28.050 --> 01:43:32.130
+running on github server itself right and then deploy is
+
+01:43:32.130 --> 01:43:36.410
+running on your ec2 in in the github server and this is just
+
+01:43:36.410 --> 01:43:39.710
+kind of the parameter value right we need to have the some
+
+01:43:39.710 --> 01:43:43.630
+docker or something right yeah so it's a by default template
+
+01:43:43.630 --> 01:43:47.070
+that has been provided for this github actions and there are
+
+01:43:47.070 --> 01:43:50.050
+like so many such kind of templates you can try to get for
+
+01:43:50.050 --> 01:43:53.190
+like a different kind of applications i mean like this is
+
+01:43:53.190 --> 01:43:54.970
+this is the template basically by the way this is the
+
+01:43:54.970 --> 01:43:56.610
+template you can make any changes in this template
+
+01:43:56.610 --> 01:43:59.890
+accordingly it is going to behave very simple is it a
+
+01:43:59.890 --> 01:44:03.150
+background excel right we cannot see this yeah and also in
+
+01:44:03.150 --> 01:44:06.870
+the same url it is showing with zero zero dot we can't write
+
+01:44:06.870 --> 01:44:09.610
+in the github when we are performing the test basically
+
+01:44:09.610 --> 01:44:13.590
+local github local so inside a github also it's a machine
+
+01:44:13.590 --> 01:44:17.550
+right and something is running so that is a local to it
+
+01:44:17.550 --> 01:44:21.390
+where can we also check this ip it's possible basically it's
+
+01:44:21.390 --> 01:44:26.230
+a local i have already explained this this kind of a concept
+
+01:44:26.230 --> 01:44:30.330
+more than 100 or maybe 150 times inside your class it's a
+
+01:44:30.330 --> 01:44:34.970
+very basic logic so ec2 instance there is a machine there is
+
+01:44:34.970 --> 01:44:38.110
+a computer if something is running in that computer so for
+
+01:44:38.110 --> 01:44:41.070
+that computer reference it is going to be zero dot zero dot
+
+01:44:41.070 --> 01:44:45.210
+zero dot zero right local host even if it is running on ec2
+
+01:44:45.210 --> 01:44:48.710
+but for you as a user as you are a outside user trying to
+
+01:44:48.710 --> 01:44:51.930
+access that machine so you will be able to access with the
+
+01:44:51.930 --> 01:44:55.330
+help of some url some ip address right it's a fundamental
+
+01:44:55.330 --> 01:44:58.270
+which i have already explained more than like 100 times yeah
+
+01:44:58.270 --> 01:45:01.930
+you are correct you are correct so this is this is what it
+
+01:45:01.930 --> 01:45:04.270
+is showing you so when it is showing you and every time it
+
+01:45:04.270 --> 01:45:07.070
+shows right so when it is showing you zero zero zero eight
+
+01:45:07.070 --> 01:45:10.330
+thousand it simply means that local means ec2 is looking
+
+01:45:10.470 --> 01:45:14.570
+into ec2 okay got it got it you see but but when you are
+
+01:45:14.570 --> 01:45:17.250
+looking into when you are looking into ec2 then you need a
+
+01:45:17.250 --> 01:45:24.290
+url okay okay got it and and this is the different uh we
+
+01:45:24.290 --> 01:45:27.390
+have covered the yaml file right but is it possible to apply
+
+01:45:27.390 --> 01:45:32.290
+uh some ai uh things and some no validate the code whether
+
+01:45:32.290 --> 01:45:35.110
+the code is back or not oh obviously do we need to add the
+
+01:45:35.110 --> 01:45:37.950
+functionality additionally the yaml yes obviously if you
+
+01:45:37.950 --> 01:45:40.130
+have to add like something like that so obviously you have
+
+01:45:40.130 --> 01:45:44.510
+to add that functionality and you can do that. That is
+
+01:45:44.510 --> 01:45:47.650
+pretty much to cover right and once we apply this code
+
+01:45:47.650 --> 01:45:51.790
+right, it's a straight forward from the local to our local
+
+01:45:51.790 --> 01:45:55.190
+to GitHub, GitHub to GitHub action, GitHub action to your
+
+01:45:55.190 --> 01:45:58.550
+instance. Instance right but we have the different
+
+01:45:58.550 --> 01:46:01.890
+environment, another environment we can also create the
+
+01:46:01.890 --> 01:46:04.710
+similar copy. Yeah, we can create the similar copy in a dev
+
+01:46:04.710 --> 01:46:07.770
+environment, UAT environment and similarly so we can try to
+
+01:46:07.770 --> 01:46:10.750
+create a machine over there and then we can try to deploy.
+
+01:46:11.210 --> 01:46:15.490
+How can we make the connection after the dev, after this one
+
+01:46:15.490 --> 01:46:19.470
+and to the UAT or the production, once it is done, once it
+
+01:46:19.470 --> 01:46:22.490
+is done then it will be shorting that pipeline, how are we
+
+01:46:22.490 --> 01:46:26.290
+going to make the configuration in the GitHub or YAML or
+
+01:46:26.290 --> 01:46:29.950
+here, we need to set up. In a YAML, see in a YAML already
+
+01:46:29.950 --> 01:46:33.430
+mentioned the action part right, so when something going to
+
+01:46:33.430 --> 01:46:37.690
+main branch, then do this. So basically that we are going to
+
+01:46:37.690 --> 01:46:41.850
+keep it for a final production, let's suppose I have created
+
+01:46:41.850 --> 01:46:44.810
+another branch called as UAT, let's suppose I have created
+
+01:46:44.810 --> 01:46:49.090
+another branch called as dev right, so dev means basically
+
+01:46:49.090 --> 01:46:51.510
+it's for a development, so someone will be having access of
+
+01:46:51.510 --> 01:46:54.270
+dev environment, then similarly we can try to create a YAML
+
+01:46:54.270 --> 01:46:58.110
+file for a UAT right and then a production, production means
+
+01:46:58.110 --> 01:47:01.630
+a main branch. So we should add all the code in the same
+
+01:47:01.630 --> 01:47:04.630
+YAML file, then automatically it can. Separate YAML file,
+
+01:47:04.690 --> 01:47:07.090
+separate separate YAML file. One for dev, one for UAT, one
+
+01:47:07.090 --> 01:47:10.230
+for production. Then correct, but how can we make
+
+01:47:10.230 --> 01:47:13.950
+connection, once it is done, this is completed then. Go to
+
+01:47:13.950 --> 01:47:17.170
+YAML file. YAML will be automatically taken right,
+
+01:47:17.270 --> 01:47:21.070
+automatically taken. So basically once something is been
+
+01:47:21.070 --> 01:47:24.770
+approved inside a dev, then we can try to merge a code
+
+01:47:24.770 --> 01:47:28.570
+inside a UAT environment let's suppose and when testing is
+
+01:47:28.570 --> 01:47:31.830
+been done, then we are going to merge a code inside what,
+
+01:47:31.930 --> 01:47:35.210
+inside a main environment, so when we are going to merge a
+
+01:47:35.210 --> 01:47:38.470
+code. We are trying to push a code, we are doing a PR into a
+
+01:47:38.470 --> 01:47:42.030
+main environment, so when something will happen in main, we
+
+01:47:42.030 --> 01:47:45.470
+are considering that as a production environment. Yeah, yeah
+
+01:47:45.470 --> 01:47:48.570
+got it, but if there is any action in the particular branch
+
+01:47:48.570 --> 01:47:51.030
+of the repository automatically it will happen right, are
+
+01:47:51.030 --> 01:47:54.670
+you saying. Exactly, yeah, yeah. But generally in real time,
+
+01:47:54.750 --> 01:47:57.170
+do we maintain the separate repository for all each and
+
+01:47:57.170 --> 01:48:00.290
+every environment. We, in a real time we actually do it.
+
+01:48:01.290 --> 01:48:04.450
+Yeah, okay that is fine. So in a, in a actual environment.
+
+01:48:04.450 --> 01:48:06.850
+So obviously we go with three environment or maybe four
+
+01:48:06.850 --> 01:48:09.830
+environment, so one is going to be a dev, one is going to be
+
+01:48:09.830 --> 01:48:12.690
+a UAT, one is going to be a pre prod and one is going to be
+
+01:48:12.690 --> 01:48:16.210
+a prod or maybe like a three environment, so simple dev, UAT
+
+01:48:16.210 --> 01:48:23.210
+and prod. Okay, got it, thank you. Yeah, yeah. Rakesh Patil
+
+01:48:23.210 --> 01:48:26.310
+is saying sonar add karo, what do you mean by sonar add
+
+01:48:26.310 --> 01:48:26.590
+karo?
+
+01:48:30.920 --> 01:48:34.400
+Okay, so Akash go ahead, Rakesh Kumar Upadhyay, go ahead.
+
+01:48:35.380 --> 01:48:39.460
+Yeah, what is your question? Sir, I have one question, like
+
+01:48:39.460 --> 01:48:45.080
+you have added some scripting file, .sh file, so are they
+
+01:48:45.080 --> 01:48:51.520
+needed or it's just for. Okay, so that is for my test, so
+
+01:48:51.520 --> 01:48:53.960
+don't worry about that, script remove it, so it's basically
+
+01:48:53.960 --> 01:48:56.840
+to, for my reference, when I was trying to like run this or
+
+01:48:56.840 --> 01:49:00.160
+test this entire flow, so I have created for this to run in
+
+01:49:00.160 --> 01:49:03.020
+like a quickly, so that that's for my reference, not for
+
+01:49:03.020 --> 01:49:07.740
+you. And I think you followed this GitHub approach and like
+
+01:49:07.740 --> 01:49:10.020
+saved it. Similar thing can be done through Airflow, right?
+
+01:49:10.140 --> 01:49:16.500
+And at that place maybe we need this .sh file, right? Why we
+
+01:49:16.500 --> 01:49:19.920
+are using Airflow, why do we use Airflow by the way? Out of
+
+01:49:19.920 --> 01:49:23.120
+curiosity, I am asking this question. Yeah, so tell me out
+
+01:49:23.120 --> 01:49:25.020
+of curiosity. Because in my company like they are using
+
+01:49:25.020 --> 01:49:29.300
+Airflow and. Why, why, what is the purpose? No, no, no, why?
+
+01:49:29.300 --> 01:49:33.820
+For scheduling the actually run. Sorry? Scheduling the run.
+
+01:49:34.280 --> 01:49:39.740
+Exactly, scheduler is different. Okay. And this CICD is
+
+01:49:39.740 --> 01:49:42.080
+different. Okay. And scheduler, so Airflow basically helps
+
+01:49:42.080 --> 01:49:45.180
+you out in terms of doing a job scheduling. So, okay, fine.
+
+01:49:45.200 --> 01:49:47.480
+There is a file which is already productionized and then
+
+01:49:47.480 --> 01:49:51.620
+like whenever this time will come, so just try to rerun that
+
+01:49:51.620 --> 01:49:54.160
+particular file, you know, in a batch mode. This is
+
+01:49:54.160 --> 01:49:57.140
+something that we are trying to do for a production, like
+
+01:49:57.140 --> 01:50:02.400
+making any application live. So, so just one other question.
+
+01:50:02.500 --> 01:50:08.580
+So in GitHub action, we are doing the CICD and if we don't
+
+01:50:08.580 --> 01:50:12.580
+want to use GitHub action, and can we replace it with
+
+01:50:12.580 --> 01:50:16.560
+Airflow or? No. So Airflow is having all sort of different
+
+01:50:16.560 --> 01:50:19.780
+purposes. Airflow always try to help you out in terms of
+
+01:50:19.780 --> 01:50:23.560
+running a particular job. For example, so let's suppose
+
+01:50:23.560 --> 01:50:26.540
+someone is telling me that, that try to give me a sales
+
+01:50:26.540 --> 01:50:30.660
+report. So try to give me a sales report every morning 9 a
+
+01:50:30.660 --> 01:50:33.660
+.m. IST. Let's suppose that's a requirement. So I have
+
+01:50:33.660 --> 01:50:36.800
+written a Python script. So what that Python script does, so
+
+01:50:36.800 --> 01:50:39.380
+that Python script go to a database, try to pull all the
+
+01:50:39.380 --> 01:50:42.900
+data. Right. And then try to build a report and then try to
+
+01:50:42.900 --> 01:50:46.180
+store a report somewhere. My manager asked me that, okay,
+
+01:50:46.200 --> 01:50:50.280
+fine. So every morning 9 a.m. IST, I want that report in my
+
+01:50:50.280 --> 01:50:52.820
+mobile. So you have already written all those things in your
+
+01:50:52.820 --> 01:50:56.080
+Python file. Yeah. Already written. Now with the help of
+
+01:50:56.080 --> 01:50:59.820
+Airflow, you will be able to configure that Python file. So
+
+01:50:59.820 --> 01:51:03.080
+that Python file will run and whatever purpose that Python
+
+01:51:03.080 --> 01:51:06.140
+file serves, it will serve that particular purpose. So for
+
+01:51:06.140 --> 01:51:09.540
+that kind of operation, you can try to use a Airflow. Right.
+
+01:51:09.640 --> 01:51:14.340
+So here, why we are using a CI CD or why we are using
+
+01:51:14.340 --> 01:51:17.360
+basically a GitHub action. So let's suppose we have a
+
+01:51:17.360 --> 01:51:19.900
+website and trying to build a feature, for example, your own
+
+01:51:19.900 --> 01:51:21.980
+website. So obviously we keep on adding a lot of features
+
+01:51:21.980 --> 01:51:25.380
+over there. Right. We keep on like a releasing a not like a
+
+01:51:25.380 --> 01:51:29.920
+new, new things on your own website. So whenever we are, we
+
+01:51:29.920 --> 01:51:32.500
+have written a code, we have already tested a code. Then it
+
+01:51:32.500 --> 01:51:35.200
+should go to a production. It should be live to all of my
+
+01:51:35.200 --> 01:51:38.800
+users. In that case, the CI CD comes. So both is serving a
+
+01:51:38.800 --> 01:51:42.180
+different purposes. Airflow as a scheduler. And then the CI
+
+01:51:42.180 --> 01:51:45.440
+CD to make my whole application live permanently to all the
+
+01:51:45.440 --> 01:51:50.260
+audience. Okay. Okay. So if we are using like instead of
+
+01:51:50.260 --> 01:51:54.080
+GitHub action, we are using Azure DevOps, is it possible
+
+01:51:54.080 --> 01:51:59.160
+there also or? Everywhere. So GCP also and Azure also. So at
+
+01:51:59.160 --> 01:52:01.640
+the end of the day, everyone is giving you a machine. Right.
+
+01:52:01.720 --> 01:52:05.520
+And you will be able to create a similar kind of a flow even
+
+01:52:05.520 --> 01:52:11.320
+over there. Okay. Thank you. Yeah. Yeah. Okay. Next
+
+01:52:11.320 --> 01:52:16.220
+question, please. Yeah. Hi, sir. Good. Yeah. Yeah. Yeah. Go
+
+01:52:16.220 --> 01:52:21.520
+ahead. Please. Yeah. I just wanted to ask that if suppose in
+
+01:52:21.520 --> 01:52:25.440
+in this flow CI CD, which we have implemented right now,
+
+01:52:25.540 --> 01:52:29.420
+within that is suppose we have a one another develop
+
+01:52:29.420 --> 01:52:32.700
+development environment, which is which is on prem
+
+01:52:32.700 --> 01:52:37.560
+environment. Hmm. Is it possible to go with the. Yeah. In
+
+01:52:37.560 --> 01:52:41.960
+GitHub repository like CI CD first, it goes to the
+
+01:52:41.960 --> 01:52:44.780
+development environment, then it goes to automatically see
+
+01:52:44.780 --> 01:52:49.180
+EC2 for the production. I just need a machine. EC2 is also a
+
+01:52:49.180 --> 01:52:51.380
+machine. So whether it's available in my local environment,
+
+01:52:51.600 --> 01:52:54.480
+I will be able to like use it or I will be able to call it
+
+01:52:54.480 --> 01:52:58.880
+with the help of localhost 127.0.0.1. If it is hosted on
+
+01:52:58.880 --> 01:53:03.520
+EC2, then there will be some IP address. Right. No, no. For
+
+01:53:03.520 --> 01:53:06.680
+me. The only thing which matters to create any such
+
+01:53:06.680 --> 01:53:08.940
+environment. Is a machine. That's it. If I'm able to access
+
+01:53:08.940 --> 01:53:11.420
+it, I can do it. Whether that machine is available in my
+
+01:53:11.420 --> 01:53:13.460
+local or in my cloud. That's my answer.
+
+01:53:16.700 --> 01:53:22.540
+Local. Okay. I mean, there is a machine EC2 is also a
+
+01:53:22.540 --> 01:53:27.300
+machine. But okay. Okay. You you are saying that if that is
+
+01:53:27.300 --> 01:53:32.500
+on the public IP. I mean, doesn't matter. Like IP address
+
+01:53:32.500 --> 01:53:34.980
+access of the machine. Let's let's think in that way access
+
+01:53:34.980 --> 01:53:37.740
+of the machine. So even if my machine is available in my
+
+01:53:37.740 --> 01:53:40.540
+local, I will go inside my YARG. I'll simply say that you
+
+01:53:40.540 --> 01:53:42.860
+have to check this machine. You have to do this. This
+
+01:53:42.860 --> 01:53:45.420
+funnel. You have to build it in this machine. This is what I
+
+01:53:45.420 --> 01:53:46.780
+have done. Right. That's the reason. So I'm trying to
+
+01:53:46.780 --> 01:53:50.640
+provide the EC2 host over there. So instead of EC2 host, I
+
+01:53:50.640 --> 01:53:54.580
+can try to provide host for local. So in that case, we need
+
+01:53:54.580 --> 01:53:59.280
+to set the credential for the local environment. If it is
+
+01:53:59.280 --> 01:54:01.380
+password secured, if it is not password secured, then the
+
+01:54:01.380 --> 01:54:05.760
+retreat will be able to access. So here we have maintained
+
+01:54:05.760 --> 01:54:12.200
+only one place now. I mean, credential. So in that in that
+
+01:54:12.200 --> 01:54:17.740
+we can create a add new variable for the development
+
+01:54:17.740 --> 01:54:20.820
+environment. Right. Yeah. And if you are trying to access it
+
+01:54:20.820 --> 01:54:23.660
+via GitHub, then your machine is supposed to be public. I
+
+01:54:23.660 --> 01:54:25.940
+mean, like internet should be able to access your machine.
+
+01:54:26.060 --> 01:54:29.380
+Otherwise, it is not. Right. That's my question. Actually,
+
+01:54:29.440 --> 01:54:34.320
+sir, I just wanted to go via GitHub. Sir, I think since we
+
+01:54:34.320 --> 01:54:37.080
+have been taking classes since 4 months. Right. We have made
+
+01:54:37.080 --> 01:54:41.140
+so many APIs. Okay. I mean, where is the logical question in
+
+01:54:41.140 --> 01:54:44.040
+this? You tell me yourself. That you are hitting the local
+
+01:54:44.040 --> 01:54:46.340
+machine through GitHub without making a local machine
+
+01:54:46.340 --> 01:54:52.220
+public. No, no. Public. No, we have made it public, sir. In
+
+01:54:52.220 --> 01:54:55.200
+the case of public. Local machine. You are talking about the
+
+01:54:55.200 --> 01:54:57.940
+local machine to access GitHub. So first of all, the local
+
+01:54:57.940 --> 01:55:01.520
+machine will also have to go to the internet, right? Yes. So
+
+01:55:01.520 --> 01:55:05.180
+I am saying the same, sir, that we have made it public. I
+
+01:55:05.180 --> 01:55:08.180
+mean, a public machine. So you are saying that the local
+
+01:55:08.180 --> 01:55:12.180
+machine will be a public machine and its credentials will be
+
+01:55:12.180 --> 01:55:15.760
+provided to us in GitHub. It is not supposed to be a
+
+01:55:15.760 --> 01:55:20.300
+credential. I mean, it is simple. So it is not necessary
+
+01:55:20.300 --> 01:55:22.000
+that everything is traded on the password, right? Correct.
+
+01:55:22.260 --> 01:55:26.400
+So we can access our system from outside through IP, through
+
+01:55:26.400 --> 01:55:31.620
+internet. That is how it is. We did this through ngrog. Yes.
+
+01:55:31.880 --> 01:55:34.740
+Yes. So I was going to ask the same thing, sir. What do you
+
+01:55:34.740 --> 01:55:36.920
+mean? I mean, what do you mean? We will first associate it
+
+01:55:36.920 --> 01:55:42.360
+with Git so that it can be tested and deployed on our
+
+01:55:42.360 --> 01:55:45.140
+development side through CI and CD. And then when it passes
+
+01:55:45.140 --> 01:55:50.460
+from there, it will go to our EC2. Yes, it will happen. Do
+
+01:55:50.460 --> 01:55:54.540
+it once. Okay, okay. It is a machine, it is public, it is
+
+01:55:54.540 --> 01:55:57.720
+private, there is no difference. And people ask more
+
+01:55:57.720 --> 01:56:01.720
+questions, they do less, that is a problem. Okay, if you had
+
+01:56:01.720 --> 01:56:04.360
+done it before, then this question would not have come. We
+
+01:56:04.360 --> 01:56:08.540
+did this through ng-rog, we exposed what was going on in my
+
+01:56:08.540 --> 01:56:13.800
+local on the internet. This is what we do. Obviously, you
+
+01:56:13.800 --> 01:56:16.020
+just have to make your machine public so that GitHub will be
+
+01:56:16.020 --> 01:56:19.440
+able to access. Now if GitHub is able to access it, then you
+
+01:56:19.440 --> 01:56:21.640
+can do anything that you want. So your machine will behave
+
+01:56:21.640 --> 01:56:25.160
+like an EC2 instance. Correct. And one more question, sir.
+
+01:56:27.000 --> 01:56:30.400
+You just talked about Jenkins, so what is the replacement
+
+01:56:30.400 --> 01:56:37.840
+for this YAML file? Zenit. No, it is a service basically, we
+
+01:56:37.840 --> 01:56:41.240
+will talk about that later. Okay. Okay. Yeah,
+
+01:56:45.080 --> 01:56:50.320
+go ahead, next question. Hello, I have one doubt. We see one
+
+01:56:50.320 --> 01:56:56.420
+project before, right, the MCP. Using MCP, we connect with
+
+01:56:56.420 --> 01:57:02.520
+PostgreSQL, Google Sheet, everything. Now we created the
+
+01:57:02.520 --> 01:57:06.520
+standard approach to connect with the MCP. It was working
+
+01:57:06.520 --> 01:57:09.040
+fine. So for example, I need to connect with different
+
+01:57:09.040 --> 01:57:13.960
+database like Oracle, anything. For that, I need to create
+
+01:57:13.960 --> 01:57:18.620
+separate MCP, right? When you create the MCP, it will be the
+
+01:57:18.620 --> 01:57:25.460
+structure and create SQL, execute SQL tool. It will be
+
+01:57:25.460 --> 01:57:31.440
+changed or I think it will be short change, right? Can you
+
+01:57:31.440 --> 01:57:36.120
+please repeat your question once again? Yeah. So we create
+
+01:57:36.120 --> 01:57:41.680
+the SQL, the MCP project before. In that one, we connect
+
+01:57:41.680 --> 01:57:47.460
+with the PostgreSQL. Instead of PostgreSQL, I try to connect
+
+01:57:47.460 --> 01:57:55.160
+with the Oracle Autonomous DB. This is for try to learn with
+
+01:57:55.160 --> 01:58:03.380
+the real database. So when you connect with the MCP, I get
+
+01:58:03.380 --> 01:58:03.820
+issues.
+
+01:58:09.000 --> 01:58:15.560
+So basically, do we need to create tools newly for that,
+
+01:58:15.600 --> 01:58:18.800
+right? Obviously, yes, because you are trying to connect
+
+01:58:18.800 --> 01:58:21.300
+with the different databases. So for that, like obviously
+
+01:58:21.300 --> 01:58:23.740
+inside your tool or inside your MCP server that you're
+
+01:58:23.740 --> 01:58:25.740
+trying to create, you have to write a code so that it will
+
+01:58:25.740 --> 01:58:28.000
+be able to connect. So connection string, you have to write
+
+01:58:28.000 --> 01:58:31.060
+over here. Yeah, connection string happen. Connection
+
+01:58:31.060 --> 01:58:35.140
+string, I connect with the Oracle. It's connecting. Okay. So
+
+01:58:35.140 --> 01:58:38.520
+I connect with the MCP with the different tools. I am facing
+
+01:58:38.520 --> 01:58:43.720
+the issues. So is there any standard way available for
+
+01:58:43.720 --> 01:58:47.840
+Oracle or I need to... Just a connection. I think if you
+
+01:58:47.840 --> 01:58:51.500
+just tested with the local like a Python code, if you're
+
+01:58:51.500 --> 01:58:54.380
+able to like access your Oracle with the local Python, like
+
+01:58:54.380 --> 01:58:57.800
+simple Python code, then even MCP should work in a similar
+
+01:58:57.800 --> 01:59:01.980
+manner. Okay. Okay. Okay. Let me check that one. Yeah. Yeah.
+
+01:59:01.980 --> 01:59:04.140
+Yeah. It is working in a simple Python. If you're able to
+
+01:59:04.140 --> 01:59:07.040
+hit your Oracle database, it will work because MCP is
+
+01:59:07.040 --> 01:59:10.080
+nothing but we are just exposing, right? It's just at the
+
+01:59:10.080 --> 01:59:12.040
+rate and then we are trying to expose it. So basically it
+
+01:59:12.040 --> 01:59:14.600
+will be a part of MCP protocol. That's it. The rest of the
+
+01:59:14.600 --> 01:59:17.300
+part is actually a Python code. So which go to your database
+
+01:59:17.300 --> 01:59:20.900
+connector and bring the data. That's it. Which is like a MCP
+
+01:59:20.900 --> 01:59:24.060
+does it with the help of like a NLP, NL basically, natural
+
+01:59:24.060 --> 01:59:29.280
+language. Okay. Okay. Fine. Yeah. Okay. Thank you. Okay.
+
+01:59:29.280 --> 01:59:35.330
+Yeah. Okay. Yeah. That means go ahead. Yeah. Yeah. Yeah.
+
+01:59:36.030 --> 01:59:42.230
+Regarding the test cases in my project, we have one API
+
+01:59:42.230 --> 01:59:46.210
+related project. We are extracting the data from the YouTube
+
+01:59:46.210 --> 01:59:49.750
+or something, right? The social media data, we are
+
+01:59:49.750 --> 01:59:52.790
+responding the data on the store into the structure for
+
+01:59:52.790 --> 01:59:59.450
+meter in our Delta, like in our storage layer. Mm. Mm. In
+
+01:59:59.450 --> 02:00:02.770
+between, what are the scenarios to cover the test case
+
+02:00:02.770 --> 02:00:06.530
+perspective in the CACD pipeline, the normal test cases?
+
+02:00:07.070 --> 02:00:10.550
+See, test case always depends upon the application that you
+
+02:00:10.550 --> 02:00:12.650
+are building and the function that you have written. So,
+
+02:00:12.690 --> 02:00:15.450
+function wise, we try to write the test cases. So, if I have
+
+02:00:15.450 --> 02:00:17.230
+written 10 functions and every function is doing a different
+
+02:00:17.230 --> 02:00:19.450
+kind of things, write a test case with respect to that
+
+02:00:19.450 --> 02:00:23.270
+function. No, so function mean it is a business function or
+
+02:00:23.270 --> 02:00:26.310
+just for the coding related? Functions, functions,
+
+02:00:26.510 --> 02:00:28.670
+functions, basically. Oh, functionality test case,
+
+02:00:28.810 --> 02:00:31.590
+requirement. Yeah, so function you have to test it, right?
+
+02:00:31.630 --> 02:00:34.910
+What you will test apart from functions? No, for example, if
+
+02:00:34.910 --> 02:00:39.030
+we get the API URL, right, whether it's getting a response
+
+02:00:39.030 --> 02:00:44.610
+properly or not, then did we properly to cover the standard
+
+02:00:44.610 --> 02:00:48.050
+in the code? So, do we need to also cover the... For that,
+
+02:00:48.050 --> 02:00:51.930
+so we don't write a test cases. For that, basically, you are
+
+02:00:51.930 --> 02:00:54.570
+going to use maybe some sort of like a tool. For example,
+
+02:00:54.630 --> 02:00:57.170
+there is a tool called as AI based tool called as Code
+
+02:00:57.170 --> 02:00:59.870
+Rabbit. Right, so you can try to use a Code Rabbit, so which
+
+02:00:59.870 --> 02:01:02.170
+is going to highlight the standardization of your code. It
+
+02:01:02.170 --> 02:01:04.890
+is going to even suggest to you that if you have any kind,
+
+02:01:04.950 --> 02:01:07.690
+if you have made any kind of a mistake, that we use it for
+
+02:01:07.690 --> 02:01:10.330
+like many clients. So, we try to develop a code and even
+
+02:01:10.330 --> 02:01:14.930
+internally, our team write a lot of codes, right, to develop
+
+02:01:14.930 --> 02:01:16.710
+this entire thing. We are developing even SAS, we are
+
+02:01:16.710 --> 02:01:21.270
+developing even something called as basically AI generator.
+
+02:01:21.550 --> 02:01:24.310
+So, Loveable, basically, better than Loveable, we are trying
+
+02:01:24.310 --> 02:01:27.410
+to create internally in-house. So, over there, we have... We
+
+02:01:27.410 --> 02:01:29.750
+have to do a lot of like a code check. We have to do a lot
+
+02:01:29.750 --> 02:01:32.910
+of like a... We have to basically do a lot of code
+
+02:01:32.910 --> 02:01:35.950
+sanitization, by the way, so that our code will be a
+
+02:01:35.950 --> 02:01:38.910
+standardized. So, for that, we are using Code Rabbit. Yeah,
+
+02:01:38.910 --> 02:01:41.270
+right. But do we need to attach the Code Rabbit in our
+
+02:01:41.270 --> 02:01:46.810
+pipeline, right? In the AML? Yes. No, no, no, no, no. My
+
+02:01:46.810 --> 02:01:48.790
+question, no, no, no. Then why I am asking the question,
+
+02:01:48.990 --> 02:01:52.730
+because we have developed our code within the organization,
+
+02:01:53.050 --> 02:01:57.250
+but does it allow to read the Code Rabbit? How it is a
+
+02:01:57.250 --> 02:02:02.230
+secure? It can also possible to, you know, gather our
+
+02:02:02.230 --> 02:02:05.290
+information. Yeah. Yeah. But in this case, how can we
+
+02:02:05.290 --> 02:02:09.050
+control the security point of view, then? With security
+
+02:02:09.050 --> 02:02:13.010
+pipeline? Security or not? No, no, Code Rabbit, I am going
+
+02:02:13.010 --> 02:02:15.850
+to allowing to read our code and to make some
+
+02:02:15.850 --> 02:02:20.430
+recommendation. But in any case, how can we handle the
+
+02:02:20.430 --> 02:02:23.830
+secure way to... Which is secure way? Infra side or code
+
+02:02:23.830 --> 02:02:27.370
+side? Infra side or like the application side? Application
+
+02:02:27.370 --> 02:02:30.010
+side. Application side and Infra side, both, I am asking. So
+
+02:02:30.010 --> 02:02:34.950
+basically... Infra side. In the Infra side, can we also add
+
+02:02:34.950 --> 02:02:37.810
+some classic pipeline to check some... Infra side is already
+
+02:02:37.810 --> 02:02:40.130
+handled. So if you are deploying something on AWS and if you
+
+02:02:40.130 --> 02:02:43.090
+are trying to use maybe a Cloudflare, right? So by default,
+
+02:02:43.170 --> 02:02:46.310
+all your DDoS attack or all those like attacks it is going
+
+02:02:46.310 --> 02:02:48.770
+to prevent. And even like a browser. So your browser like a
+
+02:02:48.770 --> 02:02:51.090
+Google Chrome or any other browser nowadays if you are
+
+02:02:51.090 --> 02:02:55.770
+using. So even they try to like prevent a lot. So 99% time
+
+02:02:55.770 --> 02:02:58.430
+you are already secured, you can say. If you have used a
+
+02:02:58.430 --> 02:03:01.730
+CloudFront, right? So which is nothing but a CDN. So which
+
+02:03:01.730 --> 02:03:04.310
+is going to like secure your Infra and it is not going to
+
+02:03:04.310 --> 02:03:06.510
+allow the hit. And even some part of the application.
+
+02:03:06.690 --> 02:03:09.850
+Application side. So obviously you have to check if your
+
+02:03:09.850 --> 02:03:12.250
+code is not having any kind of vulnerability. And whenever
+
+02:03:12.250 --> 02:03:15.050
+you are trying to do some sort of a data movement from one
+
+02:03:15.050 --> 02:03:17.870
+place to other place, always keep it in an encrypted format.
+
+02:03:19.110 --> 02:03:22.050
+So we have to apply some encrypted format. Obviously, yeah.
+
+02:03:23.030 --> 02:03:27.810
+How blindly to allow the... This process... For application.
+
+02:03:28.410 --> 02:03:31.430
+So... Read their documentation. Yeah, read their
+
+02:03:31.430 --> 02:03:34.750
+documentation. So what they are like providing you every AI
+
+02:03:34.750 --> 02:03:37.650
+platform try to provide you enable disable option. So
+
+02:03:37.650 --> 02:03:39.770
+whatever you will enable, it will go to them. Whatever you
+
+02:03:39.770 --> 02:03:42.110
+will disable, it will not go to them. As you can also
+
+02:03:42.110 --> 02:03:45.530
+control, right? We can also control it. Got real options
+
+02:03:45.530 --> 02:03:51.190
+over there. We can. Yeah. Okay. And one more final question,
+
+02:03:51.330 --> 02:03:56.510
+Sudhanshu. This part, I think the documentation part, right?
+
+02:03:56.530 --> 02:03:59.010
+We have the... A lot of documentation from our organization.
+
+02:03:59.350 --> 02:04:04.550
+I need to make it on jackpot to get the details, right? So
+
+02:04:04.550 --> 02:04:08.090
+that's why I'm also pointing the same areas. How can we
+
+02:04:08.090 --> 02:04:13.110
+handle the secure things? So can I install the model in my
+
+02:04:13.110 --> 02:04:18.230
+local system or can we allow to access the... AI service, a
+
+02:04:18.230 --> 02:04:20.890
+bidrack or something as you suggested, right? That depends
+
+02:04:20.890 --> 02:04:23.790
+upon your client requirements. So if your client is saying
+
+02:04:23.790 --> 02:04:26.330
+that, no, you have to use everything in local. I mean,
+
+02:04:26.350 --> 02:04:28.990
+like... Data should not go to some other server, then you
+
+02:04:28.990 --> 02:04:31.910
+can't use it. If your client is allowing it, then go and use
+
+02:04:31.910 --> 02:04:35.070
+our best model. That would be my suggestion. Okay. I think
+
+02:04:35.070 --> 02:04:38.290
+if we allow for the external API, definitely the data is
+
+02:04:38.290 --> 02:04:41.470
+possible to expose, right? But if it is in the... Like I
+
+02:04:41.470 --> 02:04:45.050
+said, every AI gives you allow and disallow permission
+
+02:04:45.050 --> 02:04:49.050
+nowadays, right? Including Gemini, including a chat GPT,
+
+02:04:49.130 --> 02:04:53.010
+everyone. And you will be able to configure that, that,
+
+02:04:53.070 --> 02:04:56.350
+okay. So they should not use my data or use my data. And you
+
+02:04:56.350 --> 02:05:01.070
+should have to trust. Got it. Okay. Thank you. Yeah. Okay.
+
+02:05:01.710 --> 02:05:04.890
+So fine, everyone. So hope all of us are able to learn CICD.
+
+02:05:04.930 --> 02:05:07.150
+Now in my next class, which is going to be tomorrow. So we
+
+02:05:07.150 --> 02:05:11.070
+are going to start a project. I'm not expecting that I'm
+
+02:05:11.070 --> 02:05:14.990
+going to explain like, you know, everything line by line,
+
+02:05:15.010 --> 02:05:17.570
+because we have already discussed a lot in last four months
+
+02:05:17.570 --> 02:05:19.770
+of time. And I believe we all are able to learn. I'm
+
+02:05:19.770 --> 02:05:23.090
+assuming that you all have learned a lot. So yeah, let's
+
+02:05:23.090 --> 02:05:25.310
+start with the project. And again, inside a project. So
+
+02:05:25.310 --> 02:05:26.710
+we'll try... We'll try to use the same kind of pipeline,
+
+02:05:26.890 --> 02:05:32.990
+CICD and different, different kind of environment. So, and
+
+02:05:32.990 --> 02:05:37.770
+one more thing. So try to build something. If you're not
+
+02:05:37.770 --> 02:05:39.890
+building, if you're just like, you know, learning and then
+
+02:05:39.890 --> 02:05:42.290
+asking question, that is not going to solve a real problem.
+
+02:05:42.810 --> 02:05:45.690
+Very soon, you will not be able to remember anything. But if
+
+02:05:45.690 --> 02:05:48.030
+you are building something, obviously, you all will be able
+
+02:05:48.030 --> 02:05:52.410
+to remember, right? And yeah, so as we all know that how
+
+02:05:52.410 --> 02:05:56.950
+this entire tech industry is changing, right? So people are
+
+02:05:56.950 --> 02:05:59.310
+going to give you a priority. People are going to onboard
+
+02:05:59.310 --> 02:06:02.230
+you. If you have built something in a today's environment,
+
+02:06:02.370 --> 02:06:05.490
+if you'll just go and say that I know X, Y, G things, it is
+
+02:06:05.490 --> 02:06:07.670
+having no values. Believe me, it is not having any kind of
+
+02:06:07.670 --> 02:06:11.430
+values. No one is going to give you an opportunity. If you
+
+02:06:11.430 --> 02:06:13.930
+just go and say that I'm a good learner, I'm a fast learner.
+
+02:06:14.290 --> 02:06:18.930
+Believe me, these words are gone. Those days are gone. You
+
+02:06:18.930 --> 02:06:22.710
+can go and ask to anyone inside an industry. It has
+
+02:06:22.710 --> 02:06:25.990
+literally changed and it's changing. It's changing faster
+
+02:06:25.990 --> 02:06:29.770
+than ever. Believe me, it is changing faster than ever. Most
+
+02:06:29.770 --> 02:06:32.510
+of us are able to experience it. Personally, if you'll come
+
+02:06:32.510 --> 02:06:36.130
+to me and ask these questions. So yeah, I have a firsthand
+
+02:06:36.130 --> 02:06:38.150
+experience. I'm connecting with a lot of people on a daily
+
+02:06:38.150 --> 02:06:41.730
+basis, right? So I always advise if you have to keep
+
+02:06:41.730 --> 02:06:45.670
+yourself relevant, don't try to invest much on learning
+
+02:06:45.670 --> 02:06:49.270
+because learning is having no limit. And the learning that
+
+02:06:49.270 --> 02:06:53.690
+you say is actually not a learning from my perspective. And
+
+02:06:53.690 --> 02:06:55.550
+I believe I have already mentioned that. You know, very,
+
+02:06:55.650 --> 02:06:57.630
+very first class. And I keep on mentioning these things
+
+02:06:57.630 --> 02:07:01.910
+regularly to all of you that because you are not supposed to
+
+02:07:01.910 --> 02:07:04.210
+give an exam, right? You are not preparing for an exam. You
+
+02:07:04.210 --> 02:07:07.370
+are preparing for something where you will go and you will
+
+02:07:07.370 --> 02:07:10.330
+build an application. And now with the help of AI, with the
+
+02:07:10.330 --> 02:07:13.910
+help of vibe coding, basically it's pretty much possible to
+
+02:07:13.910 --> 02:07:17.950
+build an industry grade application right in a bare minimum
+
+02:07:17.950 --> 02:07:20.710
+time. But again, it's not like AI will be able to do
+
+02:07:20.710 --> 02:07:23.030
+everything. It depends upon your creativity, how you are
+
+02:07:23.030 --> 02:07:25.910
+able to break down the problem, right? How you are trying to
+
+02:07:25.910 --> 02:07:28.130
+give instruction to an AI, the way you try to give
+
+02:07:28.130 --> 02:07:31.550
+instruction to your junior or to anyone in your team. So try
+
+02:07:31.550 --> 02:07:35.210
+to adopt that approach. Try to adopt a builder's approach.
+
+02:07:35.790 --> 02:07:38.990
+Then only you will be able to succeed if you will just keep
+
+02:07:38.990 --> 02:07:42.750
+on learning through some YouTube videos or maybe even via my
+
+02:07:42.750 --> 02:07:48.090
+lectures, right? It is not sufficient and you will not be
+
+02:07:48.090 --> 02:07:52.070
+relevant inside the industry. Industry has literally changed
+
+02:07:52.070 --> 02:07:55.330
+in last couple of years. And. And. And like I said, it is
+
+02:07:55.330 --> 02:08:00.530
+changing faster than ever, yeah? So just work. That's the
+
+02:08:00.530 --> 02:08:03.970
+only option that you have, right? And believe me, when you
+
+02:08:03.970 --> 02:08:06.810
+will work, when you will see something is working, you will
+
+02:08:06.810 --> 02:08:10.690
+literally enjoy, right? You will literally enjoy. But yeah,
+
+02:08:10.750 --> 02:08:14.090
+you have to sit and you have to work. So that's a correct
+
+02:08:14.090 --> 02:08:16.610
+way of learning. If you're not preparing for UPS, your IIT
+
+02:08:16.610 --> 02:08:18.970
+or NEET, if you're preparing for that kind of exam, then
+
+02:08:18.970 --> 02:08:21.610
+obviously you have to, you know, sit and solve the problem,
+
+02:08:21.690 --> 02:08:25.090
+take a notes and you will go through. Those like approach.
+
+02:08:25.330 --> 02:08:27.790
+So approach for that learning, those exams are different
+
+02:08:27.790 --> 02:08:31.890
+approach for upskilling should be different, right? It
+
+02:08:31.890 --> 02:08:35.890
+should be completely practical driven by building something,
+
+02:08:36.190 --> 02:08:39.510
+not just by, you know, like going through a code or
+
+02:08:39.510 --> 02:08:43.290
+something like a line by line. So with that guys, hope you
+
+02:08:43.290 --> 02:08:45.530
+will keep these things in your mind and you will try to
+
+02:08:45.530 --> 02:08:50.170
+implement it in your life from today. Those who are already
+
+02:08:50.170 --> 02:08:53.830
+doing it. So you are in a correct path. Obviously you will
+
+02:08:53.830 --> 02:08:57.170
+be able to succeed. Those who are not doing it, try to adopt
+
+02:08:57.170 --> 02:09:03.010
+as soon as possible. Yeah. So fine. Uh, they would one, uh,
+
+02:09:03.050 --> 02:09:06.010
+our work or our communication, they would give preference to
+
+02:09:06.010 --> 02:09:08.390
+communication, communication people, even though tech people
+
+02:09:08.390 --> 02:09:12.990
+is under working with them, not visibility. I mean, see your
+
+02:09:12.990 --> 02:09:16.150
+communication always matters. If you are a good auditor, if
+
+02:09:16.150 --> 02:09:19.190
+you are a good speaker, if you are a good communicator,
+
+02:09:19.250 --> 02:09:24.070
+obviously it gives you a lot of advantage. Right? All the
+
+02:09:24.070 --> 02:09:27.530
+time, right? Even a hundred year back, 200 year backs. So
+
+02:09:27.530 --> 02:09:31.550
+like, uh, this was having a values and even in next hundred
+
+02:09:31.550 --> 02:09:34.490
+year, it will be having a values. Doesn't matter whether you
+
+02:09:34.490 --> 02:09:37.650
+belong from a tech industry or from some other industry. So
+
+02:09:37.650 --> 02:09:41.610
+Oration will always be having, uh, its own charm, its own
+
+02:09:41.610 --> 02:09:47.050
+values, right? But as you are a part of tech industry, you
+
+02:09:47.050 --> 02:09:50.190
+should know how to build. Also you should know how to
+
+02:09:50.190 --> 02:09:54.450
+explain to someone. Okay. If you're not able to do it, then
+
+02:09:54.450 --> 02:09:58.770
+again, people will not give you a chance. Believe me. Right?
+
+02:09:59.010 --> 02:10:02.090
+And industry is literally changing. Industry has actually
+
+02:10:02.090 --> 02:10:05.270
+changed. It's not the same industry that we are able to see.
+
+02:10:05.410 --> 02:10:08.510
+We were able to experience, we were able to see just two or
+
+02:10:08.510 --> 02:10:12.670
+three year back. Right? So try to adopt that change as soon
+
+02:10:12.670 --> 02:10:15.510
+as possible. It will be painful maybe for a couple of
+
+02:10:15.510 --> 02:10:19.050
+months, right? Anything is going to happen overnight. But
+
+02:10:19.050 --> 02:10:22.470
+believe me, that is something which will make your. Make you
+
+02:10:22.470 --> 02:10:25.490
+relevant inside the industry, right? If you would like to
+
+02:10:25.490 --> 02:10:29.070
+survive inside industry for a very, very long time, uh, even
+
+02:10:29.070 --> 02:10:31.510
+I'll suggest you. So try to do something on your own. At
+
+02:10:31.510 --> 02:10:34.390
+least try to launch some product, some startup. Maybe you
+
+02:10:34.390 --> 02:10:36.810
+can try that out, out of your, like a free available time,
+
+02:10:36.930 --> 02:10:40.890
+right? So that you will be able to build a extra income
+
+02:10:40.890 --> 02:10:43.910
+source or maybe a parallel income source. Because believe me
+
+02:10:43.910 --> 02:10:46.730
+nowadays, even that part is important. It's very, very
+
+02:10:46.730 --> 02:10:48.830
+important. You never know when you will get fired yesterday
+
+02:10:48.830 --> 02:10:52.070
+itself. You must have heard about the news. Right? Verizon
+
+02:10:52.070 --> 02:10:54.210
+was fired. Verizon, which is one of the biggest
+
+02:10:54.210 --> 02:10:57.890
+telecommunication company in USA. Right? Even I was a part
+
+02:10:57.890 --> 02:10:59.610
+of Verizon. That's the reason. So I'm able to get a news.
+
+02:10:59.830 --> 02:11:03.390
+Uh, so I have worked in Verizon. Verizon lab. So there was a
+
+02:11:03.390 --> 02:11:05.490
+lab division. There was a research division and we were
+
+02:11:05.490 --> 02:11:08.150
+like, uh, doing a lot of research and a lot of works in a
+
+02:11:08.150 --> 02:11:10.750
+fleet matrix. Uh, we were using data science and big data
+
+02:11:10.750 --> 02:11:14.130
+over there at that point of a time, uh, in year somewhere
+
+02:11:14.130 --> 02:11:17.450
+around 17, 18. Right? Maybe you can check my LinkedIn. You
+
+02:11:17.450 --> 02:11:20.870
+will be able to get the exact year. Right? As a part of that
+
+02:11:20.870 --> 02:11:23.870
+lab. And, uh, yeah. So yesterday itself they have fired like
+
+02:11:23.870 --> 02:11:28.630
+a 13,000 people, 13% of the workforce. Yeah. Yeah. Somebody
+
+02:11:28.630 --> 02:11:30.830
+has mentioned 30,000 employees were fired. Exactly. Even
+
+02:11:30.830 --> 02:11:33.910
+from India division. Right? So I, I knew the manager. So who
+
+02:11:33.910 --> 02:11:37.630
+was there since last, I think a 15 year in the same, uh,
+
+02:11:37.810 --> 02:11:43.870
+like a division got fired. Right? So you, you never know,
+
+02:11:43.930 --> 02:11:46.170
+like when you will go to office tomorrow and then what will
+
+02:11:46.170 --> 02:11:48.750
+happen? Because this is how the entire world is changing.
+
+02:11:48.750 --> 02:11:51.210
+Whatsoever is the reason. So people, some people say
+
+02:11:51.210 --> 02:11:55.730
+optimization, uh, some people say AI, uh, many, many
+
+02:11:55.730 --> 02:11:59.330
+explanation or, you know, uh, like, uh, different, different
+
+02:11:59.330 --> 02:12:01.730
+kind of a definition and different, different kind of, uh,
+
+02:12:01.970 --> 02:12:05.010
+uh, uh, argument you will be able to find out. The reality
+
+02:12:05.010 --> 02:12:08.810
+is this is how industry is nowadays. Right? You have to
+
+02:12:08.810 --> 02:12:11.730
+accept it. You have to adopt it. And yeah. So just if
+
+02:12:11.730 --> 02:12:13.930
+you're, if you're keeping yourself relevant, if you have
+
+02:12:13.930 --> 02:12:16.910
+enough network and as you grow inside the industry, let's
+
+02:12:16.910 --> 02:12:20.550
+suppose you have 15, 20 year of experience. Right? 15, 20
+
+02:12:20.550 --> 02:12:24.490
+year of experience in that case, your network. And when I
+
+02:12:24.490 --> 02:12:27.450
+say network, I'm talking about a valuable network, right?
+
+02:12:27.550 --> 02:12:29.770
+I'm not just talking about a connection with the people
+
+02:12:29.770 --> 02:12:33.630
+because that we all have a lot, right? A valuable network,
+
+02:12:33.990 --> 02:12:37.370
+right? With a person who can come for you, who can rescue
+
+02:12:37.370 --> 02:12:41.250
+you when you will be like when, when you need it, right? I'm
+
+02:12:41.250 --> 02:12:43.250
+talking about that kind of a connection and that happens
+
+02:12:43.250 --> 02:12:46.570
+over the year, right? It's not going to happen immediately
+
+02:12:46.570 --> 02:12:49.410
+or instantly. You can't go and ask for help. And people will
+
+02:12:49.410 --> 02:12:51.510
+be willing to help you out. No, that is not going to happen.
+
+02:12:51.610 --> 02:12:54.370
+Not, there's not the, this is not how world works actually,
+
+02:12:54.490 --> 02:12:59.390
+right? So try to build a network because when your year of
+
+02:12:59.390 --> 02:13:03.430
+experience will increase 15, 20 a year or 15 year and
+
+02:13:03.430 --> 02:13:06.350
+beyond, right? You will not be able to find out much
+
+02:13:06.350 --> 02:13:09.530
+opportunity on LinkedIn, Knockery, monster or times now or
+
+02:13:09.530 --> 02:13:14.650
+Heidi or any other job platform. It is your network who is
+
+02:13:14.650 --> 02:13:18.250
+going to bring an opportunity. Even at that point of a time.
+
+02:13:18.250 --> 02:13:21.930
+When you have like a 15, 20 year of experience, your stack
+
+02:13:21.930 --> 02:13:24.550
+doesn't matter. So I mean like, uh, what you know, what you
+
+02:13:24.550 --> 02:13:27.570
+don't know, doesn't matter as much. Believe me, doesn't
+
+02:13:27.570 --> 02:13:32.530
+matter, right? Your network is the only thing which matters
+
+02:13:32.530 --> 02:13:36.250
+and that we all use this to build over the year, right? So
+
+02:13:36.250 --> 02:13:38.290
+that I can go and I can ask someone that, okay, can you
+
+02:13:38.290 --> 02:13:40.530
+please help me out? Maybe I'm looking for an opportunity.
+
+02:13:41.170 --> 02:13:43.990
+Uh, when, when you, even when you're going to like, I know I
+
+02:13:43.990 --> 02:13:46.430
+start some business, so maybe you can go and ask your
+
+02:13:46.430 --> 02:13:49.610
+network that. Can you do a seed funding of maybe one car or
+
+02:13:49.610 --> 02:13:52.130
+two car or inside my business? I think that will be a good
+
+02:13:52.130 --> 02:13:55.150
+start. Right? So a lot of things network you can, you will
+
+02:13:55.150 --> 02:13:57.650
+be able to leverage in lot of like a different, different
+
+02:13:57.650 --> 02:14:02.930
+manner, right? If you are honest from inside, uh, so, uh,
+
+02:14:03.010 --> 02:14:05.870
+yeah. So try to like, uh, you know, uh, even explore that
+
+02:14:05.870 --> 02:14:11.610
+particular part, right. But uh, be ready for coming years
+
+02:14:11.610 --> 02:14:15.230
+because believe me, uh, coming years are not going to be
+
+02:14:15.230 --> 02:14:18.870
+same. The way we had this entire, and it's, I'm not just
+
+02:14:18.870 --> 02:14:21.470
+trying, I'm not trying to scare you by the way, but yeah,
+
+02:14:21.490 --> 02:14:23.970
+maybe you can go and talk to a couple of people, right. And
+
+02:14:23.970 --> 02:14:27.350
+you will be able to get a same sense, believe me. So it's
+
+02:14:27.350 --> 02:14:32.430
+just like, uh, a thought that I wanted to give you so that
+
+02:14:32.430 --> 02:14:35.830
+maybe you can try to, you know, adopt it and then you will
+
+02:14:35.830 --> 02:14:40.430
+be ready for tomorrow. Yeah. So fine. That's it guys. I
+
+02:14:40.430 --> 02:14:43.070
+think, uh, that was enough of motivation or maybe
+
+02:14:43.070 --> 02:14:44.950
+demotivation. I don't know. I don't know how you are going
+
+02:14:44.950 --> 02:14:50.110
+to like, uh, pursue it, but yeah, uh, reality is reality and
+
+02:14:50.110 --> 02:14:52.890
+as a mentor. So obviously I have to talk about the reality.
+
+02:14:53.390 --> 02:14:56.510
+Right. Uh, so with that, thank you so much, everyone take
+
+02:14:56.510 --> 02:15:00.150
+care. See you again tomorrow. Same time. I hope all of you
+
+02:15:00.150 --> 02:15:02.890
+have enjoyed today's class. Can I see some comments inside a
+
+02:15:02.890 --> 02:15:08.010
+comment box? Yeah. Okay. Fine. Thank you everyone.
+

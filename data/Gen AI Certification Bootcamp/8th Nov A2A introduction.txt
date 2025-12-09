@@ -1,0 +1,4793 @@
+WEBVTT
+
+00:00:27.760 --> 00:00:31.540
+Okay, so hi everyone, good morning. I'm a little bit late, I
+
+00:00:31.540 --> 00:00:34.540
+think, but yeah, so we are here.
+
+00:00:58.980 --> 00:01:01.280
+Okay, so I believe I'm audible and visible to all of you,
+
+00:01:01.300 --> 00:01:02.500
+right everyone? Yeah?
+
+00:01:07.370 --> 00:01:16.020
+Okay, great. We'll start in some time. So I believe we all
+
+00:01:16.020 --> 00:01:19.440
+know the agenda for today's class. So basically, we'll be
+
+00:01:19.440 --> 00:01:25.380
+talking about theory of A2A. I'll discuss about just a basic
+
+00:01:25.380 --> 00:01:28.980
+of A2A today and then tomorrow. So we'll see how we can do a
+
+00:01:28.980 --> 00:01:31.500
+practical of A2A. Basically, how we can create a multiple
+
+00:01:31.500 --> 00:01:35.380
+agent and then, you know, do the orchestration and connect
+
+00:01:35.380 --> 00:01:36.420
+all the agents all together.
+
+00:01:42.150 --> 00:01:43.370
+Good morning, good morning, everyone.
+
+00:06:50.680 --> 00:06:53.440
+Okay, fine, everyone. So let's start with the class. I think
+
+00:06:53.440 --> 00:06:56.600
+there are some people, I don't know, I mean, like Amit is
+
+00:06:56.600 --> 00:07:00.780
+doing some conversation. I believe he's looking into a wrong
+
+00:07:00.780 --> 00:07:03.900
+class, it seems, because this link is working. We all are
+
+00:07:03.900 --> 00:07:10.080
+here. So and it's working as it works. Always. So, yeah,
+
+00:07:10.180 --> 00:07:14.080
+maybe he's looking into some different class and he is
+
+00:07:14.080 --> 00:07:14.500
+confused.
+
+00:07:24.410 --> 00:07:28.710
+Okay, so let's start with the class. So I'll not take class
+
+00:07:28.710 --> 00:07:33.350
+for a very long time today. The reason is that that I'm
+
+00:07:33.350 --> 00:07:36.310
+preparing this A2A examples and I'm facing some sort of a
+
+00:07:36.310 --> 00:07:38.450
+configuration issue, not configuration issue, it's a
+
+00:07:38.450 --> 00:07:41.870
+dependency issue. So basically, UV package issue I'm facing.
+
+00:07:41.970 --> 00:07:44.770
+I'm just trying to resolve it. So even a study night till
+
+00:07:44.770 --> 00:07:48.230
+late morning. So I was trying to resolve it. So I'm still
+
+00:07:48.230 --> 00:07:51.250
+working on that. So theoretically, what is A2A, how does it
+
+00:07:51.250 --> 00:07:55.330
+works and where A2A can be used? So that is something which
+
+00:07:55.330 --> 00:07:58.170
+I will discuss and then tomorrow we'll do the practical.
+
+00:07:58.370 --> 00:08:02.450
+Simple, right? So that is the agenda of this particular week
+
+00:08:02.450 --> 00:08:05.070
+we are going to cover and from next week. So next week, I
+
+00:08:05.070 --> 00:08:07.790
+believe we are going to cover basically a generative AI with
+
+00:08:07.790 --> 00:08:11.710
+respect to a cloud. So with respect to Azure, AWS and GCP,
+
+00:08:11.830 --> 00:08:14.790
+we have to cover all of those things as per the syllabus.
+
+00:08:14.870 --> 00:08:18.030
+And then we are supposed to start with that. CICD pipeline
+
+00:08:18.030 --> 00:08:22.570
+and then like Prometheus and then Grafana, which is ops part
+
+00:08:22.570 --> 00:08:25.150
+basically, which is you can say a part of LLM ops, which we
+
+00:08:25.150 --> 00:08:27.650
+are supposed to cover and then we will start building the
+
+00:08:27.650 --> 00:08:32.330
+project. So that is going to be the whole flow as per our
+
+00:08:32.330 --> 00:08:35.870
+syllabus, which has already been published. Now, so let me
+
+00:08:35.870 --> 00:08:39.010
+share my screen and let's talk about a couple of things that
+
+00:08:39.010 --> 00:08:41.970
+we have released this week. And then let's talk about a
+
+00:08:41.970 --> 00:08:47.470
+theory of this one, A2A protocol. Yeah. So this week,
+
+00:08:47.510 --> 00:08:50.310
+basically, we have released a couple of things. So I don't
+
+00:08:50.310 --> 00:08:52.490
+know whether you have gone through that or not, but yeah, so
+
+00:08:52.490 --> 00:08:55.130
+it's my responsibility to talk about it. So this week we
+
+00:08:55.130 --> 00:08:58.130
+have launched something called as Euron Consulting. Why we
+
+00:08:58.130 --> 00:09:00.350
+have launched this one? So there are so many people, right?
+
+00:09:00.410 --> 00:09:02.350
+There are so many people who are working into our industry.
+
+00:09:02.930 --> 00:09:06.850
+There are so many students who is, you know, maybe into a
+
+00:09:06.850 --> 00:09:10.230
+college. So there are so many people and they have a
+
+00:09:10.230 --> 00:09:12.510
+different, different kind of a requirement. Requirement
+
+00:09:12.510 --> 00:09:15.170
+wise, so they have some sort of a requirement. For example,
+
+00:09:15.310 --> 00:09:18.870
+you have joined. A company and company has given you a
+
+00:09:18.870 --> 00:09:21.430
+project. Maybe you are not able to do that particular
+
+00:09:21.430 --> 00:09:24.610
+project. Maybe you are stuck somewhere and it happens. It
+
+00:09:24.610 --> 00:09:27.850
+happens with all the techies, right? And again, so maybe
+
+00:09:27.850 --> 00:09:31.830
+like your manager is escalating it or maybe your team member
+
+00:09:31.830 --> 00:09:35.730
+is escalating it. And yeah, so maybe you feel stuck
+
+00:09:35.730 --> 00:09:38.490
+somewhere with respect to these kind of projects which
+
+00:09:38.490 --> 00:09:41.190
+someone has given to you. So this is where this Euron
+
+00:09:41.190 --> 00:09:45.850
+Consulting comes into picture. So again, to rescue you. You
+
+00:09:45.850 --> 00:09:49.350
+can say. Let's suppose you are working into maybe or maybe
+
+00:09:49.350 --> 00:09:51.790
+not working. So you are just a student. You are finally a
+
+00:09:51.790 --> 00:09:54.790
+student and you are looking for a project. So again, Euron
+
+00:09:54.790 --> 00:09:58.110
+Consulting comes into a picture. So for anyone and everyone.
+
+00:09:58.230 --> 00:10:02.350
+So who is looking for like to build any kind of a project or
+
+00:10:02.350 --> 00:10:05.530
+they are stuck somewhere and they need a professional help.
+
+00:10:05.670 --> 00:10:08.350
+So this is where we have started this Euron Consulting. So
+
+00:10:08.350 --> 00:10:11.590
+where my team is going to help you out in terms of building
+
+00:10:11.590 --> 00:10:14.290
+delivering end-to-end things. So we'll be considering you as
+
+00:10:14.290 --> 00:10:17.250
+a client basically. You will give. All the requirements. So
+
+00:10:17.250 --> 00:10:21.110
+we are not going to give you any project by the way. We are
+
+00:10:21.110 --> 00:10:23.530
+going to take the requirement and then whatever requirement
+
+00:10:23.530 --> 00:10:26.050
+you will be having. So we will try to discuss the timeline
+
+00:10:26.050 --> 00:10:28.750
+will try to discuss the entire flow which we are already
+
+00:10:28.750 --> 00:10:31.470
+doing. So we have onboarded lot of clients in last like a
+
+00:10:31.470 --> 00:10:33.470
+three days and people are literally liking it because it's
+
+00:10:33.470 --> 00:10:37.350
+one of the much needed service which is required. And I
+
+00:10:37.350 --> 00:10:41.030
+believe no one is providing this kind of a service in this
+
+00:10:41.030 --> 00:10:44.190
+at least a super super affordable price because it needs a
+
+00:10:44.190 --> 00:10:47.150
+huge team, right? Huge team. Without team, it's not
+
+00:10:47.150 --> 00:10:50.650
+possible. It's like a direct involvement of like, you know,
+
+00:10:50.650 --> 00:10:56.450
+people. So it's that kind of a model and I think we all know
+
+00:10:56.450 --> 00:11:00.630
+how consulting things actually works. So again, people are
+
+00:11:00.630 --> 00:11:04.590
+providing it with like, you know, $100 per hour price or
+
+00:11:04.590 --> 00:11:07.830
+maybe $200 per hour price and we are providing it. But just
+
+00:11:07.830 --> 00:11:12.130
+by taking a small like a peanut amount. So where you can you
+
+00:11:12.130 --> 00:11:15.210
+can submit your requirement. You can talk to team and even I
+
+00:11:15.210 --> 00:11:18.530
+will be. Part of most of the like a team initially. So which
+
+00:11:18.530 --> 00:11:23.030
+I'm doing it from my side and we are helping a lot of people
+
+00:11:23.030 --> 00:11:25.270
+in terms of building a project. Maybe you are launching your
+
+00:11:25.270 --> 00:11:28.230
+own edited and you say that that okay. I wanted to build
+
+00:11:28.230 --> 00:11:30.970
+this kind of a LMS platform the kind of a platform that we
+
+00:11:30.970 --> 00:11:34.010
+have so not an issue. We are going to do that for you,
+
+00:11:34.030 --> 00:11:36.850
+right? So let's suppose you are working into a company and
+
+00:11:36.850 --> 00:11:40.090
+someone is saying that I need maybe a URI WhatsApp kind of a
+
+00:11:40.090 --> 00:11:42.230
+system the WhatsApp system that we have already created
+
+00:11:42.230 --> 00:11:45.550
+which is up and running and we all are aware about it. Right
+
+00:11:45.550 --> 00:11:48.570
+that it works basically, right? It works as per the
+
+00:11:48.570 --> 00:11:51.170
+expectation. So we are going to build it for you. Someone is
+
+00:11:51.170 --> 00:11:54.190
+going to say that I need this URI kind of a system or maybe
+
+00:11:54.190 --> 00:11:58.650
+API kind of a system or any any system, right? So if that is
+
+00:11:58.650 --> 00:12:01.430
+a kind of a requirement, so obviously we are going to build
+
+00:12:01.430 --> 00:12:03.590
+it for you because we have experience. We have expertise
+
+00:12:03.590 --> 00:12:06.870
+basically in terms of like, you know, building thing. This
+
+00:12:06.870 --> 00:12:09.530
+is what we do. This is what my like a entire team is aligned
+
+00:12:09.530 --> 00:12:12.830
+with. So yeah, this is where your own consulting comes into
+
+00:12:12.830 --> 00:12:15.810
+picture. So for a student for professional. So basically for
+
+00:12:15.810 --> 00:12:18.870
+a student for professional and for a startup, basically,
+
+00:12:18.870 --> 00:12:21.330
+like if you are trying to build something big, right?
+
+00:12:21.370 --> 00:12:24.490
+Something big beyond that. So let's suppose there is a very
+
+00:12:24.490 --> 00:12:28.190
+very big project. So in last like a two days after launch.
+
+00:12:28.290 --> 00:12:31.270
+So there are a lot of people who you know, reach out to me
+
+00:12:31.270 --> 00:12:35.310
+and from India and even from outside and they were saying
+
+00:12:35.310 --> 00:12:38.550
+that that okay, I have a big requirement basically. So they
+
+00:12:38.550 --> 00:12:40.970
+have their own team and their team is not able to fulfill
+
+00:12:40.970 --> 00:12:43.250
+some requirement. Their team is not able to work on some
+
+00:12:43.250 --> 00:12:46.690
+requirement. And they are saying that that we are looking
+
+00:12:46.690 --> 00:12:50.690
+for a long-term Enterprise grade commitment. So for that we
+
+00:12:50.690 --> 00:12:55.130
+are like doing a separate discussion basically. So let's
+
+00:12:55.130 --> 00:12:57.450
+suppose there is a company or maybe you are a company and
+
+00:12:57.450 --> 00:13:01.230
+you are trying to build something which is big very very big
+
+00:13:01.230 --> 00:13:06.410
+basically, right? You would need like a big team involvement
+
+00:13:06.410 --> 00:13:10.130
+of very very dedicated team involvement and you want
+
+00:13:10.130 --> 00:13:13.650
+something very quick in that case. Obviously like we'll go
+
+00:13:13.650 --> 00:13:16.990
+with the custom discussion. So we'll not come fall under any
+
+00:13:16.990 --> 00:13:20.090
+of these package. So we'll go for the custom discussion. So
+
+00:13:20.090 --> 00:13:23.470
+where we are charging hourly. So that's a whole idea behind
+
+00:13:23.470 --> 00:13:26.670
+a Euron consulting and going forward. I have a plan to you
+
+00:13:26.670 --> 00:13:29.150
+know, separate this Euron consulting from a Euron. I mean
+
+00:13:29.150 --> 00:13:32.430
+like on a different URL. We have to host it as a different
+
+00:13:32.430 --> 00:13:36.530
+entity. So this is where this Euron consulting comes into
+
+00:13:36.530 --> 00:13:39.370
+picture. Hope you are going to like it and basically this is
+
+00:13:39.370 --> 00:13:44.610
+a kind of a service which you will need when it is required.
+
+00:13:44.690 --> 00:13:48.330
+Right? It's a requirement driven service. You can say but
+
+00:13:48.330 --> 00:13:50.670
+yeah, many people have taken that and they are literally
+
+00:13:50.670 --> 00:13:56.410
+like enjoying it. Yes. So Sarik is saying hats off again.
+
+00:13:56.470 --> 00:13:59.330
+Disrupting the market. Okay. Thank you. I was a market
+
+00:13:59.330 --> 00:14:01.950
+people are charging too much for a similar kind of yeah. So
+
+00:14:01.950 --> 00:14:04.190
+see there are so many like, you know freelancing platform
+
+00:14:04.190 --> 00:14:08.910
+freelancer.com and then like, you know a platform. So where
+
+00:14:08.910 --> 00:14:11.270
+you can go and hire freelancer. It's very difficult, right?
+
+00:14:11.330 --> 00:14:15.250
+It's very difficult even when we had some. A lot of our work
+
+00:14:15.250 --> 00:14:18.490
+right with respect to iOS the app that you are able to see
+
+00:14:18.490 --> 00:14:22.810
+we were stuck a little bit when we were building it. I think
+
+00:14:22.810 --> 00:14:28.650
+a year back right this Euron iOS app. So we were like a
+
+00:14:28.650 --> 00:14:31.930
+stuck with respect to one compliance issue that comes from
+
+00:14:31.930 --> 00:14:36.750
+the iOS side or you can say Apple side, right? And it's very
+
+00:14:36.750 --> 00:14:39.650
+difficult, you know to find a genuine people. They will say
+
+00:14:39.650 --> 00:14:43.610
+that I will charge this I will charge that and again, you
+
+00:14:43.610 --> 00:14:47.850
+know market. Market is full of like a fraud. They have
+
+00:14:47.850 --> 00:14:50.850
+created a big big profile. But when you connect and when you
+
+00:14:50.850 --> 00:14:54.430
+make a payment, even I have made a payment and then when you
+
+00:14:54.430 --> 00:14:57.670
+like, you know, get a people first of all, it's very
+
+00:14:57.670 --> 00:15:00.330
+difficult to connect right connect is very difficult. I mean
+
+00:15:00.330 --> 00:15:03.890
+like they will take a charge and then they will not respond.
+
+00:15:04.070 --> 00:15:06.570
+So it's a very chaotic system. It's a very chaotic system.
+
+00:15:06.670 --> 00:15:10.070
+The finance system which is there it was good initially. But
+
+00:15:10.070 --> 00:15:13.630
+yeah, so it's not pretty much helpful. I would say plus
+
+00:15:13.630 --> 00:15:18.810
+charges. Are too too too much high and we all need this kind
+
+00:15:18.810 --> 00:15:21.790
+of a things right because I as a student obviously I will
+
+00:15:21.790 --> 00:15:24.290
+get stuck when I'm doing a project. I as a professional
+
+00:15:24.290 --> 00:15:28.170
+obviously I will get stuck somewhere when we have to do a
+
+00:15:28.170 --> 00:15:31.590
+project delivery or maybe as a maybe it's a client has given
+
+00:15:31.590 --> 00:15:33.730
+me a requirement by manager. My director has given me a
+
+00:15:33.730 --> 00:15:36.070
+requirement. Maybe I'm not able to design the architect.
+
+00:15:36.170 --> 00:15:39.290
+Maybe I'm not able to like, you know, find out the solution.
+
+00:15:39.570 --> 00:15:43.650
+So we all have like, you know, a kind of a bottleneck which
+
+00:15:43.650 --> 00:15:46.990
+comes in. Our life and obviously to rescue that this
+
+00:15:46.990 --> 00:15:51.870
+consulting things comes into a picture. Like I said, so we
+
+00:15:51.870 --> 00:15:55.410
+have like you can just ask. Okay, fine. So build this for me
+
+00:15:55.410 --> 00:15:58.470
+build that for me and we are going to like my team is going
+
+00:15:58.470 --> 00:16:00.990
+to build it for you, right? Obviously we are going to like
+
+00:16:00.990 --> 00:16:04.450
+it's not like you will say build today and then tomorrow you
+
+00:16:04.450 --> 00:16:06.550
+will be able to get it. We are going to give you a timeline
+
+00:16:06.550 --> 00:16:09.530
+the way real-time project happens, right? Everything goes
+
+00:16:09.530 --> 00:16:12.630
+with the timelines basically and we have kept it affordable
+
+00:16:12.630 --> 00:16:15.630
+initially. We are going forward. So obviously we are going
+
+00:16:15.630 --> 00:16:17.950
+to increase the price but yeah, initially we have kept it
+
+00:16:17.950 --> 00:16:23.510
+very very super super affordable by the way 60k for years.
+
+00:16:23.610 --> 00:16:27.730
+So is there any less installment system as of now? So we are
+
+00:16:27.730 --> 00:16:31.110
+like in talk with provider of this installation installation
+
+00:16:31.110 --> 00:16:35.590
+things but as of now there is no so there is none by the way
+
+00:16:35.590 --> 00:16:39.770
+even fewer people charge 50k for simple AI task. Yeah, I'm
+
+00:16:39.770 --> 00:16:42.790
+like just go and check the price by the way. So even if you
+
+00:16:42.790 --> 00:16:45.050
+have to deliver it. A very very simple task, right? A very
+
+00:16:45.050 --> 00:16:49.510
+very simple one 15 20 K. I mean like for just for nothing.
+
+00:16:49.550 --> 00:16:52.390
+They will charge just for talking to you and they are going
+
+00:16:52.390 --> 00:16:56.070
+to charge. This is how market is working and I don't know
+
+00:16:56.070 --> 00:16:59.610
+whether they are going to deliver it or not. Right because I
+
+00:16:59.610 --> 00:17:03.430
+had a bad experience with that and keeping that in the mind.
+
+00:17:03.630 --> 00:17:06.170
+So if I had a bad experience, obviously many people will be
+
+00:17:06.170 --> 00:17:08.910
+having a bad experience keeping that in the minds. I have
+
+00:17:08.910 --> 00:17:12.170
+just launched it my own that okay, let's start because I
+
+00:17:12.170 --> 00:17:16.470
+have a team. I have a strength. And again, I have you all of
+
+00:17:16.470 --> 00:17:20.250
+you basically, right? So if I have to build maybe like a
+
+00:17:20.250 --> 00:17:24.450
+strong team, I can onboard many of you from my group as
+
+00:17:24.450 --> 00:17:27.570
+simple as that. So last week again, we have released a
+
+00:17:27.570 --> 00:17:30.470
+requirement for eight interns. I believe we have already
+
+00:17:30.470 --> 00:17:33.830
+finalized three three or four. We have received all the
+
+00:17:33.830 --> 00:17:37.090
+resumes and yeah, so interview still going on. I think even
+
+00:17:37.090 --> 00:17:41.410
+today I believe my team is taking an interview for rest of
+
+00:17:41.410 --> 00:17:44.770
+the nothing. So eight interns. We are onboarding not for
+
+00:17:44.770 --> 00:17:48.970
+this job for this job. We already have a big team for a
+
+00:17:48.970 --> 00:17:52.150
+future basically. So we are like onboarding a team.
+
+00:18:00.050 --> 00:18:03.190
+I saw YouTube Databricks. You can go to your dashboard. You
+
+00:18:03.190 --> 00:18:05.950
+will be able to see more videos. I think 1920 video from my
+
+00:18:05.950 --> 00:18:08.230
+side. I have uploaded. So that is my recording. Visal is
+
+00:18:08.230 --> 00:18:10.910
+also a mentor who is doing a recording. So go and check out.
+
+00:18:12.090 --> 00:18:15.950
+Okay. Now, this is one announcement. Like I said guys, so
+
+00:18:15.950 --> 00:18:18.990
+today I will not discuss much in terms of technical things.
+
+00:18:18.990 --> 00:18:24.510
+I think tomorrow will be the day another thing which we have
+
+00:18:24.510 --> 00:18:28.250
+launched study study. We have made announcement. So full
+
+00:18:28.250 --> 00:18:30.710
+-stack automation. I believe we have already talked about it
+
+00:18:30.710 --> 00:18:35.450
+even in our batch, right? So Dhruv basically, I think we all
+
+00:18:35.450 --> 00:18:39.150
+know Dhruv Dhruv is your batchmate. He is coming from your
+
+00:18:39.150 --> 00:18:43.830
+batch, right? And he has already given you a demo a good
+
+00:18:43.830 --> 00:18:48.110
+one, right? A big one. So basically along with Dhruv. I have
+
+00:18:48.110 --> 00:18:50.810
+planned to launch. This particular batch, right? This
+
+00:18:50.810 --> 00:18:52.990
+particular batch, which is basically a full-stack automation
+
+00:18:52.990 --> 00:18:56.570
+bootcamp when it is going to start. So it is going to start
+
+00:18:56.570 --> 00:19:00.670
+from 23rd of November, by the way. Yeah. So this month
+
+00:19:00.670 --> 00:19:02.710
+itself, we are not taking much of time to start this
+
+00:19:02.710 --> 00:19:05.850
+particular batch. So in next like a two week of time, we are
+
+00:19:05.850 --> 00:19:08.610
+going to kick off this particular batch. Now, what is the
+
+00:19:08.610 --> 00:19:10.690
+idea behind this particular batch? So idea behind this
+
+00:19:10.690 --> 00:19:13.130
+particular batch and if you will go through a syllabus of
+
+00:19:13.130 --> 00:19:15.610
+this particular batch, you will be able to find out that we
+
+00:19:15.610 --> 00:19:19.190
+are focusing on a pure automation and that too pure. So code
+
+00:19:19.190 --> 00:19:22.930
+automation means to attend this particular batch, you are
+
+00:19:22.930 --> 00:19:26.370
+not supposed to know any kind of a coding. We are not going
+
+00:19:26.370 --> 00:19:29.790
+to do any kind of a coding, obviously in some of the node,
+
+00:19:29.890 --> 00:19:33.270
+as we have all, as you have already seen in my class that
+
+00:19:33.270 --> 00:19:35.290
+somewhere we are writing a JavaScript somewhere. We are
+
+00:19:35.290 --> 00:19:37.770
+writing a Python, right? A small script. We are writing in
+
+00:19:37.770 --> 00:19:41.310
+some of the node only that much of coding we are going to
+
+00:19:41.310 --> 00:19:44.390
+do. So technically it's an, it's a follow everyone. So who
+
+00:19:44.390 --> 00:19:48.150
+is like a wanted to do an automation and they're struggling.
+
+00:19:48.270 --> 00:19:52.670
+So. So just for that, this is our dedicated batch. So where
+
+00:19:52.670 --> 00:19:57.950
+no code is required, most of the classes will depends upon
+
+00:19:57.950 --> 00:20:03.330
+the N8N framework basically, right? So just go and check the
+
+00:20:03.330 --> 00:20:07.870
+syllabus, read out the entire syllabus part. So you will
+
+00:20:07.870 --> 00:20:11.870
+love it obviously, right? And at the end of this entire like
+
+00:20:11.870 --> 00:20:14.810
+a things, you will be able to know a lot of like automation.
+
+00:20:15.370 --> 00:20:18.710
+Although I know in this batch, people are capable enough to
+
+00:20:18.710 --> 00:20:21.490
+do automation. All of these automations, I don't have any
+
+00:20:21.490 --> 00:20:23.770
+kind of a doubt because we have already done that in our
+
+00:20:23.770 --> 00:20:27.850
+batches, in our classes. But yeah, so if someone would like
+
+00:20:27.850 --> 00:20:30.530
+to like, you know, learn the automation from the scratch,
+
+00:20:31.010 --> 00:20:34.210
+maybe this is, or maybe if you have not attended those
+
+00:20:34.210 --> 00:20:39.010
+classes from your batch. So where I talk about N8N, because
+
+00:20:39.010 --> 00:20:42.090
+we have discussed a lot, right? Almost everything we have
+
+00:20:42.090 --> 00:20:45.650
+discussed. So I believe all of us are capable enough to do
+
+00:20:45.650 --> 00:20:48.250
+any kind of automation, but still, if you would like to
+
+00:20:48.250 --> 00:20:52.190
+like. Do that. Go with it. Yeah. Go with it. If you are
+
+00:20:52.190 --> 00:20:55.210
+senior, if you are non tech person, so maybe this is the
+
+00:20:55.210 --> 00:20:58.890
+perfect batch for you in terms of doing a AI based
+
+00:20:58.890 --> 00:21:02.970
+automation, creating an agents based on the AI and your
+
+00:21:02.970 --> 00:21:04.910
+batchman Dhruv is going to take care of this particular
+
+00:21:04.910 --> 00:21:08.730
+batch. I will not be taking this particular batch. I have
+
+00:21:08.730 --> 00:21:13.450
+like another batch AI ML at the same time, like 8pm IST. So
+
+00:21:13.450 --> 00:21:17.150
+I have another batch at 7pm IST. So that's the reason. You
+
+00:21:17.150 --> 00:21:20.450
+can see the mentor name. Right? It's a Dhruv. So I have like
+
+00:21:20.450 --> 00:21:23.490
+not given my name for this particular batch. So maybe I will
+
+00:21:23.490 --> 00:21:27.290
+be part of just a inauguration. That's it. I'll just come
+
+00:21:27.290 --> 00:21:30.530
+with a Dhruv, inaugurate it and then Dhruv is going to take
+
+00:21:30.530 --> 00:21:32.730
+care of this end to end. And Dhruv is very capable person.
+
+00:21:32.870 --> 00:21:35.930
+So I had a lot of discussion with him in recent days and
+
+00:21:35.930 --> 00:21:39.530
+he's very capable, very dedicated person. I found out.
+
+00:21:49.750 --> 00:21:53.590
+It's okay. I mean like N8N already discussed for you in
+
+00:21:53.590 --> 00:21:56.530
+class maybe. So this is basically a productivity booster.
+
+00:21:56.530 --> 00:21:58.750
+You can say that. Yes. This is basically a productivity
+
+00:21:58.750 --> 00:22:01.030
+booster. So where you can go and you can try to automate
+
+00:22:01.030 --> 00:22:06.150
+anything that you want. Technically for this batch people, I
+
+00:22:06.150 --> 00:22:10.650
+don't think it's like, you know, required because I have
+
+00:22:10.650 --> 00:22:13.830
+already discussed in detail and you can do any kind of
+
+00:22:13.830 --> 00:22:17.090
+automation on your own. But still, if you are looking for
+
+00:22:17.090 --> 00:22:21.150
+like a, you know, something like this, maybe we just just go
+
+00:22:21.150 --> 00:22:22.190
+ahead with this one. Yeah.
+
+00:22:28.060 --> 00:22:30.320
+Suppose we have to design a recruitment system, which should
+
+00:22:30.320 --> 00:22:32.740
+provide all the details. So if you have a candidate, then
+
+00:22:32.740 --> 00:22:35.580
+how much time it will take? That depends upon your
+
+00:22:35.580 --> 00:22:38.360
+requirements. I can't say that that it will take one month,
+
+00:22:38.480 --> 00:22:41.460
+two months or maybe six months of time. So maybe it's all
+
+00:22:41.460 --> 00:22:44.260
+about features. So what kind of features you are looking for
+
+00:22:44.260 --> 00:22:46.720
+and when you give a requirement, when you give a features,
+
+00:22:46.840 --> 00:22:50.180
+we'll give you a proper document saying that, okay, fine. So
+
+00:22:50.180 --> 00:22:52.680
+this is the time it is going to take and this is the phase
+
+00:22:52.680 --> 00:22:56.540
+wise deliveries. Right. And then we will start like working
+
+00:22:56.540 --> 00:23:01.680
+on it the way real consulting project happens. Right. Maybe
+
+00:23:01.680 --> 00:23:04.120
+for some project, it will take eight or nine months of time,
+
+00:23:04.180 --> 00:23:04.480
+depends.
+
+00:23:07.330 --> 00:23:10.870
+So in this way, this entire consulting like is going to work
+
+00:23:10.870 --> 00:23:12.190
+now.
+
+00:23:13.900 --> 00:23:19.100
+So do we to join if you are good, if you are good, it's not
+
+00:23:19.100 --> 00:23:22.920
+like we'll like onboard just like that. But yeah, so if you
+
+00:23:22.920 --> 00:23:26.240
+are good, you have to send your like, you know, proper
+
+00:23:26.240 --> 00:23:29.780
+lectures and after evaluating your lectures, then only we
+
+00:23:29.780 --> 00:23:31.600
+are going to onboard it. Otherwise we are not going to
+
+00:23:31.600 --> 00:23:35.220
+onboard it. And now, so coming to the next announcement,
+
+00:23:35.480 --> 00:23:39.380
+today is okay. Just announcement day it seems, but yeah,
+
+00:23:39.460 --> 00:23:45.600
+young year on. So yeah, we are like, again, this was one of
+
+00:23:45.600 --> 00:23:47.860
+the batch, right, which I have launched. But yeah, I was
+
+00:23:47.860 --> 00:23:53.020
+just amazed. So what Vive coding can do and what a kits can
+
+00:23:53.020 --> 00:23:55.760
+do basically. So this is one new batch which is going to
+
+00:23:55.760 --> 00:23:59.340
+start. One batch is already running and yeah, this is
+
+00:23:59.340 --> 00:24:01.740
+basically for kits. So if you have a kits, maybe they can
+
+00:24:01.740 --> 00:24:05.620
+join this particular batch. Kits who have joined now. So if
+
+00:24:05.620 --> 00:24:08.380
+I'm going to show you their project, you will be literally
+
+00:24:08.380 --> 00:24:11.200
+amazed. You will be literally amazed that what people are
+
+00:24:11.200 --> 00:24:15.020
+doing, basically what kits are actually doing and that too
+
+00:24:15.020 --> 00:24:18.940
+till deployment. And because I remember when I was a kits, I
+
+00:24:18.940 --> 00:24:24.220
+was at their age, I was like doing a programming in a logo,
+
+00:24:24.420 --> 00:24:29.260
+RT 60, LT 90 kind of a, I don't know how many of you know
+
+00:24:29.260 --> 00:24:32.240
+this programming language. Logo and basic. There is a
+
+00:24:32.240 --> 00:24:36.820
+programming language called as logo and basic, we used to do
+
+00:24:36.820 --> 00:24:37.540
+in our childhood.
+
+00:24:40.760 --> 00:24:45.140
+So RT 60, LT 90 and we try to, we used to create, you know,
+
+00:24:45.140 --> 00:24:48.120
+a different, different kind of a shape. But yeah, thanks to
+
+00:24:48.120 --> 00:24:52.200
+AI and thanks to all of this advancement, now we are able to
+
+00:24:52.200 --> 00:24:57.880
+build lot of, you know, big, big projects and feature. Logo
+
+00:24:57.880 --> 00:25:01.100
+was awesome. It was only time we got to access AC room. Due
+
+00:25:01.100 --> 00:25:07.460
+to computer, we used to go for AC room, but yeah, that, that
+
+00:25:07.460 --> 00:25:11.300
+was like, uh, those were the day maybe, uh, kids of this
+
+00:25:11.300 --> 00:25:16.160
+generation will not be able to see those days. Okay. Now
+
+00:25:16.160 --> 00:25:20.200
+coming to, uh, lecture part, like I said, I'll not discuss
+
+00:25:20.200 --> 00:25:24.160
+much. I'm stuck with, uh, you know, uh, building, uh, a to a
+
+00:25:24.160 --> 00:25:28.220
+protocol, a system I'm like libraries giving me a lot of
+
+00:25:28.220 --> 00:25:32.520
+conflict. Uh, so. Okay. I'll discuss about this just in
+
+00:25:32.520 --> 00:25:34.880
+terms of theory and then I'll close the class for today so
+
+00:25:34.880 --> 00:25:37.960
+that tomorrow I'll come and I'll try to discuss, uh, this
+
+00:25:37.960 --> 00:25:42.560
+entire a to a protocol in practical. So guys, uh, as per
+
+00:25:42.560 --> 00:25:45.820
+your syllabus, we have like a, we have to discuss about a
+
+00:25:45.820 --> 00:25:48.900
+protocol called as a to a protocol. So technically it's a
+
+00:25:48.900 --> 00:25:51.240
+agent to agent protocol, which has been developed and
+
+00:25:51.240 --> 00:25:55.780
+designed by Google. So MCP is one of the protocol, right? So
+
+00:25:55.780 --> 00:25:58.420
+where you can try to take any kind of a tool and exposed to
+
+00:25:58.420 --> 00:26:02.180
+the LMS. And we all have done that. And I believe you all
+
+00:26:02.180 --> 00:26:04.420
+have tested, I'm assuming because there was a lot of
+
+00:26:04.420 --> 00:26:07.320
+discussion which was going on inside a group. So I believe,
+
+00:26:07.440 --> 00:26:12.980
+uh, we all have used a Gmail MCP, a calendar, MCP, Google
+
+00:26:12.980 --> 00:26:18.100
+seat, MCP, SQL database, MCP, and a MongoDB MCP. Right?
+
+00:26:18.140 --> 00:26:22.920
+Everyone. Yeah. I've seen those discussions. So I am
+
+00:26:22.920 --> 00:26:25.360
+assuming that majority of you have already created those
+
+00:26:25.360 --> 00:26:31.460
+MCPs and you have already like, uh, uh, used it. Yeah. Okay.
+
+00:26:31.960 --> 00:26:39.280
+So, uh, so, uh, basically, uh, this was one of the protocol
+
+00:26:39.280 --> 00:26:43.260
+MCP was one of the protocol and the idea was very simple
+
+00:26:43.260 --> 00:26:47.300
+that, uh, use a library, basically use a orchestrator,
+
+00:26:47.420 --> 00:26:50.400
+right? Uh, which is going to help me out in terms of
+
+00:26:50.400 --> 00:26:55.500
+creating MCPs and, uh, then try to use any of your tools
+
+00:26:55.500 --> 00:26:59.500
+means any of your services that you are using and then give
+
+00:26:59.500 --> 00:27:03.040
+an access to LMS. Right? Given access to LMS so that now
+
+00:27:03.040 --> 00:27:07.100
+with the help of just chat as we have done last week, uh, so
+
+00:27:07.100 --> 00:27:10.100
+you will be able to generate our reports. You will be able
+
+00:27:10.100 --> 00:27:12.980
+to generate like a, you know, uh, talk to your databases.
+
+00:27:13.240 --> 00:27:17.040
+You will be able to talk to your email ID or maybe like a
+
+00:27:17.040 --> 00:27:19.720
+calendar or anyone, and then you will be able to do a given
+
+00:27:19.720 --> 00:27:23.180
+task. There was a whole idea behind MCPs and we all have
+
+00:27:23.180 --> 00:27:26.140
+done up real, real practical things, not a dummy practical
+
+00:27:26.140 --> 00:27:28.260
+things. Right? So we all were able to connect with our
+
+00:27:28.260 --> 00:27:31.460
+system. A five system technically. And then we were able to
+
+00:27:31.460 --> 00:27:35.120
+expose all of those five system, uh, to, uh, like a cursor.
+
+00:27:35.360 --> 00:27:38.100
+And then, uh, we were able to talk to all of those five
+
+00:27:38.100 --> 00:27:43.120
+system. Now there is another protocol called as A2A, agent
+
+00:27:43.120 --> 00:27:48.460
+to agent. So I think, uh, as name suggests, right, A2A
+
+00:27:48.460 --> 00:27:50.320
+protocol, agent to agent protocol, which has been developed
+
+00:27:50.320 --> 00:27:54.940
+by a Google, by the way, right? So this protocol was
+
+00:27:54.940 --> 00:27:58.860
+designed and developed in a manner. Or you can say with a
+
+00:27:58.860 --> 00:28:02.380
+theme that, that let's suppose I have created some agent in
+
+00:28:02.380 --> 00:28:05.680
+Langchain, right? Some agent I have created into a, uh,
+
+00:28:05.840 --> 00:28:08.960
+maybe by using a crew AI, right? Some agent I have created
+
+00:28:08.960 --> 00:28:11.940
+by using a auto gen. So now Langchain is a different
+
+00:28:11.940 --> 00:28:14.620
+framework altogether. It's a different company, right? Their
+
+00:28:14.620 --> 00:28:17.440
+framework is different. Then there is a crew AI. Then there
+
+00:28:17.440 --> 00:28:20.280
+is a auto gen and likewise, there are multiple other
+
+00:28:20.280 --> 00:28:23.660
+frameworks. So which try to give you, or which, which allows
+
+00:28:23.660 --> 00:28:27.820
+you to create an agent, right? Create an agent. Yeah. Yeah.
+
+00:28:27.840 --> 00:28:31.860
+So basically, uh, this, uh, A2A protocol is nothing but a
+
+00:28:31.860 --> 00:28:35.280
+protocol. So where you will be able to establish a
+
+00:28:35.280 --> 00:28:37.580
+communication among a different, different, different,
+
+00:28:37.620 --> 00:28:40.140
+different kind of, uh, agent that that's a whole idea. That
+
+00:28:40.140 --> 00:28:43.440
+was the whole idea behind this, uh, A2A protocol. So whether
+
+00:28:43.440 --> 00:28:46.280
+I'm going to create an agent into a crew AI or maybe auto
+
+00:28:46.280 --> 00:28:49.460
+gen or maybe a Langchain or maybe by using any other given
+
+00:28:49.460 --> 00:28:53.880
+framework. But yeah, so if I have, uh, I can, I can use this
+
+00:28:53.880 --> 00:28:57.420
+A2A library, A2A SDK, A2A library, and with the help of
+
+00:28:57.420 --> 00:29:00.900
+that. I will be able to basically, uh, you know, establish a
+
+00:29:00.900 --> 00:29:05.000
+communication between any of these agents in between. So
+
+00:29:05.000 --> 00:29:08.320
+this, this, what this framework does by the way. So this
+
+00:29:08.320 --> 00:29:11.200
+framework always helps us out in terms of structuring our
+
+00:29:11.200 --> 00:29:14.320
+messages, right? So what agent should like, uh, you know,
+
+00:29:14.320 --> 00:29:17.040
+uh, represent in terms of our intent, what agent should
+
+00:29:17.040 --> 00:29:19.620
+consider as a context, what agent should, you know, take as
+
+00:29:19.620 --> 00:29:23.660
+a responses. Plus it, uh, like, you know, uh, take care of
+
+00:29:23.660 --> 00:29:26.260
+transport layer because when we are talking about the
+
+00:29:26.260 --> 00:29:29.220
+communication. Maybe it's a HTTP based communication or
+
+00:29:29.220 --> 00:29:32.760
+maybe a web socket based communication or maybe a SSE based
+
+00:29:32.760 --> 00:29:36.580
+communication. So it, it, uh, like always try to, you know,
+
+00:29:36.600 --> 00:29:39.800
+uh, take care of this, uh, transportation layer that what
+
+00:29:39.800 --> 00:29:42.880
+kind of a packet should go from where to here or what kind
+
+00:29:42.880 --> 00:29:45.300
+of a message we are supposed to transport in what format,
+
+00:29:45.380 --> 00:29:48.640
+because format matters a lot, right? Because format is, uh,
+
+00:29:48.740 --> 00:29:52.140
+ultimate things, which gives, uh, any agents understanding
+
+00:29:52.140 --> 00:29:54.780
+that what is the input and then what I should yield as a
+
+00:29:54.780 --> 00:29:59.500
+output. And, uh, then, uh, basically like, uh, it gives us a
+
+00:29:59.500 --> 00:30:02.740
+power in terms of discovering a capabilities of the agent
+
+00:30:02.740 --> 00:30:05.620
+that, okay, for which task I'm supposed to call what kind of
+
+00:30:05.620 --> 00:30:08.580
+a agent plus a session management. So this is, this is kind
+
+00:30:08.580 --> 00:30:11.440
+of a things which, uh, you will be able to find out with
+
+00:30:11.440 --> 00:30:15.540
+respect to A to A. Now, so let me share my screen and let me
+
+00:30:15.540 --> 00:30:22.100
+show you something with respect to A to A. Uh, so there is a
+
+00:30:22.100 --> 00:30:28.920
+very good repository they have released. And, uh, A to A Git
+
+00:30:28.920 --> 00:30:36.740
+repo, yeah. So there is a very good repo that, uh, one, only
+
+00:30:36.740 --> 00:30:40.180
+one repo is available again. So they have given you
+
+00:30:40.180 --> 00:30:42.380
+examples, they have given you a lot of things over there.
+
+00:30:42.460 --> 00:30:46.520
+But the problem is that, that, uh, uh, if you will try to
+
+00:30:46.520 --> 00:30:48.840
+run those examples, so maybe those examples are a bit old
+
+00:30:48.840 --> 00:30:51.580
+and maybe you will not be able to run it. I have already
+
+00:30:51.580 --> 00:30:53.820
+tried and I have like, I was facing a lot of problems over
+
+00:30:53.820 --> 00:30:56.280
+there. So based on my experience, I'm just telling you,
+
+00:30:56.360 --> 00:31:00.540
+yeah. So A to A Python, A to A samples, okay. Let's go to A
+
+00:31:00.540 --> 00:31:06.180
+to A samples now. So this is the whole idea is how to
+
+00:31:06.180 --> 00:31:08.520
+establish or how to build an agent by using a different,
+
+00:31:08.580 --> 00:31:11.300
+different, you know, uh, things and then how I will be able
+
+00:31:11.300 --> 00:31:15.160
+to basically build it. So I'll, I'll give you this repo. Now
+
+00:31:15.160 --> 00:31:17.860
+let's go to this particular repo and this is just a
+
+00:31:17.860 --> 00:31:21.000
+introduction. I will be showing you a different set of a
+
+00:31:21.000 --> 00:31:24.500
+code. I have my own code, which I'm building. Uh. Not this
+
+00:31:24.500 --> 00:31:27.780
+like a repo one, because I was going through this repo and
+
+00:31:27.780 --> 00:31:30.940
+it was a basic, uh, you know, uh, agent that they have
+
+00:31:30.940 --> 00:31:34.400
+built. Uh, I'm just trying to expose something real, which
+
+00:31:34.400 --> 00:31:38.160
+is going to do a real job for me. The way we have seen with
+
+00:31:38.160 --> 00:31:43.220
+respect to MCPs, right? So and here one more thing. So when
+
+00:31:43.220 --> 00:31:45.640
+I, when I say agent, so you can even try to give an access
+
+00:31:45.640 --> 00:31:48.920
+of your MCPs and even it is going to like a, you know,
+
+00:31:48.940 --> 00:31:53.340
+orchestrate this MCPs. So here I would like to show you one.
+
+00:31:53.340 --> 00:31:56.220
+Uh, this one, which is a small, very, very small task, a
+
+00:31:56.220 --> 00:31:59.320
+travel planner agent, just introduction of the library.
+
+00:31:59.520 --> 00:32:03.100
+Right. And then I'll give you this GitHub repo. But tomorrow
+
+00:32:03.100 --> 00:32:06.880
+I'm going to discuss my own set of a code, uh, which like,
+
+00:32:06.920 --> 00:32:09.280
+uh, which is going to help you out to understand and do
+
+00:32:09.280 --> 00:32:13.040
+things in a practical manner. So here, if you will come and
+
+00:32:13.040 --> 00:32:16.120
+look into this library. So this is our single agent system,
+
+00:32:16.200 --> 00:32:18.440
+travel planner agent is a single agent system and they have
+
+00:32:18.440 --> 00:32:21.480
+also released a multi agent system. So here, if you will
+
+00:32:21.480 --> 00:32:23.360
+come, you will be able to find out something. There is
+
+00:32:23.360 --> 00:32:26.380
+something called as agent.py agent executor and these are
+
+00:32:26.380 --> 00:32:28.780
+the two pile, which is important. The rest of the file is
+
+00:32:28.780 --> 00:32:31.380
+just a UV files, which is helping me out in terms of, you
+
+00:32:31.380 --> 00:32:35.100
+know, and then this loop client, uh, apart from that, this
+
+00:32:35.100 --> 00:32:37.960
+config file or toml file is nothing but just a config file
+
+00:32:37.960 --> 00:32:41.360
+for my library dependencies installation. Now here inside
+
+00:32:41.360 --> 00:32:45.480
+the agent.py and technically what this one is doing. So
+
+00:32:45.480 --> 00:32:49.900
+technically this is helping me out in terms of creating or
+
+00:32:49.900 --> 00:32:53.120
+chatting with the agents. So where I will go? And I will say
+
+00:32:53.120 --> 00:32:56.880
+that, okay, I'm like, uh, looking for this kind of, uh,
+
+00:32:56.980 --> 00:33:00.140
+booking from, or maybe I'm traveling from this place to this
+
+00:33:00.140 --> 00:33:03.260
+place and then give me all the details, all the itineraries.
+
+00:33:03.540 --> 00:33:08.060
+This is what this table agent is going to, uh, do and, uh,
+
+00:33:08.080 --> 00:33:11.200
+here. So if you will come, so you will be able to find out
+
+00:33:11.200 --> 00:33:15.100
+that this entire things has been created in a language
+
+00:33:15.100 --> 00:33:18.700
+chain. So language chain is one of the framework that we
+
+00:33:18.700 --> 00:33:21.760
+have already discussed and agent is located in a language
+
+00:33:21.760 --> 00:33:25.380
+chain. And here the entire system message is given that what
+
+00:33:25.380 --> 00:33:28.820
+you are supposed to do, what kind of information. And as we
+
+00:33:28.820 --> 00:33:31.820
+all know how to create a agents inside a language. Like I
+
+00:33:31.820 --> 00:33:33.520
+said, you can create your language and you can create in a
+
+00:33:33.520 --> 00:33:36.640
+crew AI. You can create an auto gen or whatever framework
+
+00:33:36.640 --> 00:33:40.940
+that you like. You can create agents over there and A2A is
+
+00:33:40.940 --> 00:33:43.920
+going to orchestrate it. This is the only place where A2A
+
+00:33:43.920 --> 00:33:48.260
+comes into a picture. So this is an agent file. Now the main
+
+00:33:48.260 --> 00:33:51.260
+file is agent executor. This is where you will be able to
+
+00:33:51.260 --> 00:33:54.460
+find out A2A SDN. So they have already released the SDKs,
+
+00:33:54.460 --> 00:34:00.680
+this A2 SDK, uh, and again, this SDK like I was giving me a
+
+00:34:00.680 --> 00:34:03.640
+lot of problem in terms of, you know, library dependencies.
+
+00:34:03.780 --> 00:34:08.020
+So it's, it's a real pain that maybe in the future they are
+
+00:34:08.020 --> 00:34:10.800
+going to release a new version, new update and this pain
+
+00:34:10.800 --> 00:34:13.960
+will be gone. But yeah, as of now, we're configuring, this
+
+00:34:13.960 --> 00:34:17.320
+is a literally real pain, uh, because of like a library
+
+00:34:17.320 --> 00:34:21.060
+dependencies and their version mismatch. So here you can do
+
+00:34:21.060 --> 00:34:24.760
+what? So you can try to use this A2A SDK, agent to agent
+
+00:34:24.760 --> 00:34:27.200
+SDK, which is like our official SDK, which has been
+
+00:34:27.200 --> 00:34:29.640
+released. And then you can try to create your own
+
+00:34:29.640 --> 00:34:34.180
+orchestrator, uh, which is going to take some other agents.
+
+00:34:34.260 --> 00:34:38.980
+For example, in my, uh, like a example. So here we have
+
+00:34:38.980 --> 00:34:42.880
+created a travel planning agent, which is a agent in a land
+
+00:34:42.880 --> 00:34:45.800
+chain, by the way. Yeah. So basically that agent is
+
+00:34:45.800 --> 00:34:49.420
+available into a land chain. This A2A will do what? So this
+
+00:34:49.420 --> 00:34:53.760
+A2A is going to establish. Okay. A server and it is going to
+
+00:34:53.760 --> 00:34:56.880
+invoke that particular agent. Nothing more than that. It is
+
+00:34:56.880 --> 00:35:00.460
+doing over here as simple as that. So it is just going to
+
+00:35:00.460 --> 00:35:04.400
+use the same agent as we are doing a import of this agent in
+
+00:35:04.400 --> 00:35:09.240
+this particular place. That's it. And it's easy, right? It's
+
+00:35:09.240 --> 00:35:13.700
+easy. And, uh, when we talk about basically handling, uh,
+
+00:35:13.760 --> 00:35:16.820
+transportation of the messages in between, or maybe a
+
+00:35:16.820 --> 00:35:20.140
+session management, maybe a capability discovery. Maybe.
+
+00:35:20.140 --> 00:35:23.500
+Maybe a messaging structure. All of these things will be
+
+00:35:23.500 --> 00:35:28.100
+handled by my A2A itself. This is the place where A2A comes
+
+00:35:28.100 --> 00:35:31.520
+into picture. So we are, we are able to get an idea that
+
+00:35:31.520 --> 00:35:33.120
+what A2A is. Yes.
+
+00:35:36.150 --> 00:35:39.050
+A2A orchestrator framework, by the way. Yeah. So another
+
+00:35:39.050 --> 00:35:41.550
+like a framework. So where I can configure a multiple
+
+00:35:41.550 --> 00:35:42.090
+agents,
+
+00:35:45.450 --> 00:35:49.470
+um, uh, DAO is saying that token JSON where we can have it.
+
+00:35:49.590 --> 00:35:53.690
+I was not able to understand your query by the way. Yes,
+
+00:35:53.730 --> 00:35:56.930
+everyone. Yeah. I think we are able to understand the
+
+00:35:56.930 --> 00:35:59.550
+feature behind A2A theoretically.
+
+00:36:11.780 --> 00:36:16.100
+Okay. So this is just one of the official repository and
+
+00:36:16.100 --> 00:36:18.020
+they have, they have given basically a lot of like an
+
+00:36:18.020 --> 00:36:21.000
+example in our Python. So they have given a multi agent
+
+00:36:21.000 --> 00:36:26.220
+example as well over here. Uh, so they have basically Airbnb
+
+00:36:26.220 --> 00:36:33.470
+planner, where is that agents and then yeah, multi agent. So
+
+00:36:33.470 --> 00:36:36.350
+here what they are doing. So they are like creating three
+
+00:36:36.350 --> 00:36:39.930
+agents. One is an Airbnb agent. One is a host agent. One is
+
+00:36:39.930 --> 00:36:43.710
+a better agent, all three agents for one single task. So one
+
+00:36:43.710 --> 00:36:46.870
+by one, anyone can go and anyone can try to explore these
+
+00:36:46.870 --> 00:36:49.450
+like, uh, agent that what technically these agent is doing.
+
+00:36:49.530 --> 00:36:53.750
+So Airbnb, again, one of the company we all know, which we
+
+00:36:53.750 --> 00:36:57.810
+are using worldwide in terms of planning a trip, right? So
+
+00:36:57.810 --> 00:37:02.830
+many of us are using Airbnb. So this is what this, uh, like
+
+00:37:02.830 --> 00:37:05.870
+a whole agent multi agent is going to do. So it is going to
+
+00:37:05.870 --> 00:37:08.510
+plan your trip. And it is going to basically check our
+
+00:37:08.510 --> 00:37:12.030
+weather and based on the weather and all the other
+
+00:37:12.030 --> 00:37:15.370
+information with respect to like a Airbnb, it is going to
+
+00:37:15.370 --> 00:37:18.770
+coordinate amongst an agent, a multiple agent altogether.
+
+00:37:19.030 --> 00:37:21.950
+And then finally it is going to complete your particular
+
+00:37:21.950 --> 00:37:26.130
+task. So technically A2A is nothing but it's a orchestrator
+
+00:37:26.130 --> 00:37:29.910
+framework by the way. Yeah. Till now for project we have
+
+00:37:29.910 --> 00:37:32.630
+used only one framework. What is the use for the multiple
+
+00:37:32.630 --> 00:37:35.450
+framework? Only one framework. Which one?
+
+00:37:39.280 --> 00:37:47.160
+When you are talking about the MCB project, token.json,
+
+00:37:47.380 --> 00:37:52.820
+where we can have it. Token.json. I mean like which file
+
+00:37:52.820 --> 00:37:55.820
+you're talking about in what context it should have a
+
+00:37:55.820 --> 00:37:58.020
+covered interaction between agent to agent across a
+
+00:37:58.020 --> 00:38:00.040
+different framework. But this looks like one agent is being
+
+00:38:00.040 --> 00:38:03.700
+called by agent server. Uh, yeah. Sanjeev, uh, in a previous
+
+00:38:03.700 --> 00:38:06.320
+example, now look into this example. So we have a multiple
+
+00:38:06.320 --> 00:38:08.980
+agents which has been created and then all of these, uh,
+
+00:38:09.020 --> 00:38:11.520
+like agents are going to coordinate. So when we are going to
+
+00:38:11.520 --> 00:38:14.200
+write a code, our code, uh, you will be able to understand
+
+00:38:14.200 --> 00:38:16.900
+it more and more, which I'm building. So by tomorrow I will
+
+00:38:16.900 --> 00:38:20.420
+be talking about that particular code as well. This is just
+
+00:38:20.420 --> 00:38:24.380
+a repo which is available over the internet, uh, latest
+
+00:38:24.380 --> 00:38:27.460
+repo. You can say one of the best repo you will be able to
+
+00:38:27.460 --> 00:38:30.360
+find out over a internet, but I'm not going to talk about
+
+00:38:30.360 --> 00:38:34.400
+this. Uh, so basically when I was learning, I was exploring
+
+00:38:34.400 --> 00:38:37.420
+A2A, so I have just like a found out this repo. So I thought
+
+00:38:37.420 --> 00:38:39.960
+of discussing with all of you. So maybe you can follow. And
+
+00:38:39.960 --> 00:38:44.160
+you can like, uh, you know, uh, just go through it. I'll be
+
+00:38:44.160 --> 00:38:46.820
+discussing my own example, not this examples.
+
+00:38:52.270 --> 00:38:55.330
+One framework per project. I mean, what's the need of, uh,
+
+00:38:55.510 --> 00:39:00.450
+merging multiple frameworks? Uh, why, uh, required, um, I
+
+00:39:00.450 --> 00:39:03.150
+mean like, uh, depends upon, you know, a project
+
+00:39:03.150 --> 00:39:06.070
+architecture. So if my architect is saying that, no, I have
+
+00:39:06.070 --> 00:39:09.190
+to use a language and I have to use a crew AI. I have to use
+
+00:39:09.190 --> 00:39:11.390
+this. I have to use that as well. Then go ahead with that.
+
+00:39:11.390 --> 00:39:13.950
+If someone is saying that, okay, I just have to use a
+
+00:39:13.950 --> 00:39:16.890
+language in itself. So in a language and I can create a
+
+00:39:16.890 --> 00:39:19.910
+separate separate agents, right? And then I need a
+
+00:39:19.910 --> 00:39:22.830
+communication between those language in Asia itself. Let's
+
+00:39:22.830 --> 00:39:25.610
+suppose I have created a five language in Asians, uh, maybe
+
+00:39:25.610 --> 00:39:28.150
+Airbnb agent. This is also in Langton. This is also in
+
+00:39:28.150 --> 00:39:30.630
+Langton. This is also in Langton. So obviously I have to
+
+00:39:30.630 --> 00:39:32.950
+establish a communication in between agent to agent.
+
+00:39:33.370 --> 00:39:36.870
+Although language in itself supports a multi agent
+
+00:39:36.870 --> 00:39:40.090
+communication. Yeah. Multi agent. Multi agent. So this is
+
+00:39:40.090 --> 00:39:42.450
+again one of the framework which has been released by Google
+
+00:39:42.450 --> 00:39:45.570
+and uh, if you want, you can use it. If you don't want it,
+
+00:39:45.650 --> 00:39:49.470
+it's completely up to you because, uh, it's not like I
+
+00:39:49.470 --> 00:39:53.050
+should use a two way always. Uh, it's, it's not mandatory.
+
+00:39:53.270 --> 00:39:57.490
+It's just one of the other tech which is available to all of
+
+00:39:57.490 --> 00:40:01.090
+us as simple as that. So I'm not saying that, uh, a two is
+
+00:40:01.090 --> 00:40:05.670
+solving something very, very unique problem. Right? Uh, so I
+
+00:40:05.670 --> 00:40:09.070
+can, I can achieve the same task even without using a two
+
+00:40:09.070 --> 00:40:12.810
+way. Without touching a two way. But yeah, so if my company
+
+00:40:12.810 --> 00:40:16.490
+is using a two way, then maybe I won't be able to avoid it.
+
+00:40:17.210 --> 00:40:21.190
+That's the only difference. So that's my take on this a two
+
+00:40:21.190 --> 00:40:23.910
+way as we have seen multiple frameworks, right? And
+
+00:40:23.910 --> 00:40:26.230
+technically in all the frameworks, what we were doing,
+
+00:40:26.350 --> 00:40:29.210
+whether it's a Lang chain, land graph, Lama indexes, or
+
+00:40:29.210 --> 00:40:33.910
+maybe like a two way, sorry, not a two way auto gen and a
+
+00:40:33.910 --> 00:40:38.550
+crew AI. We were creating agents. Even in any 10. We were
+
+00:40:38.550 --> 00:40:39.090
+creating agents.
+
+00:40:41.910 --> 00:40:45.190
+So it's like framework for integrating multiple agentic AI.
+
+00:40:45.450 --> 00:40:48.130
+It's a orchestrator framework. Actually a two way is
+
+00:40:48.130 --> 00:40:51.030
+actually a orchestrator framework for orchestration. So
+
+00:40:51.030 --> 00:40:53.870
+multiple agents, if you have to plug and then if you have to
+
+00:40:53.870 --> 00:40:56.390
+run it, because when we talk about a multiple agent, so
+
+00:40:56.390 --> 00:40:58.670
+obviously we have to like, you know, uh, take care of the
+
+00:40:58.670 --> 00:41:01.210
+sessions. We take care of the, like a messaging structure.
+
+00:41:01.510 --> 00:41:05.050
+We take care of the transportation layer. Uh, so all of
+
+00:41:05.050 --> 00:41:07.870
+these things will be handled by this library. This is what
+
+00:41:07.870 --> 00:41:08.690
+they claim.
+
+00:41:11.480 --> 00:41:12.940
+Can I have a second? Can I have a single agent with a
+
+00:41:12.940 --> 00:41:15.340
+multiple tool expose for the translation other than a two
+
+00:41:15.340 --> 00:41:19.540
+way? So the little more obviously Leela. So see when we are
+
+00:41:19.540 --> 00:41:23.200
+designing the agentic system, right? It it's like a complete
+
+00:41:23.200 --> 00:41:27.520
+depends upon me that how things will flow, right? So there
+
+00:41:27.520 --> 00:41:30.540
+is like, uh, no hard and fast rule that I should always go
+
+00:41:30.540 --> 00:41:34.200
+with this or that. I think after taking these many number of
+
+00:41:34.200 --> 00:41:37.000
+classes, we all are able to understand this agentic world.
+
+00:41:39.680 --> 00:41:42.240
+A2 is very helpful. Imagine one year down the lane. Every
+
+00:41:42.240 --> 00:41:45.740
+team would have used a different framework. Integration for
+
+00:41:45.740 --> 00:41:49.960
+them needed ultimately and can be doing, I mean like, uh,
+
+00:41:50.140 --> 00:41:54.840
+depends upon the, uh, like, you know, um, simple
+
+00:41:54.840 --> 00:41:59.020
+requirements, right? So everyone will not do it. Uh, and,
+
+00:41:59.020 --> 00:42:03.740
+uh, again, so I won't say that, that they will not do it. So
+
+00:42:03.740 --> 00:42:07.140
+obviously there is a possibility, a lot of possibility. So
+
+00:42:07.140 --> 00:42:10.160
+you should know, I'm saying that the only one line statement
+
+00:42:10.160 --> 00:42:13.520
+that, that you should know. Okay. So if you are a part of
+
+00:42:13.520 --> 00:42:16.980
+maybe a generative AI world, then you are supposed to be
+
+00:42:16.980 --> 00:42:17.820
+aware about it.
+
+00:42:24.490 --> 00:42:29.150
+Okay. So fine guys, I'm still building, like I said, so I'm
+
+00:42:29.150 --> 00:42:32.270
+struggling a little bit in terms of like resolving some sort
+
+00:42:32.270 --> 00:42:34.890
+of a dependencies. So till morning I was trying to do it,
+
+00:42:34.930 --> 00:42:39.110
+but yeah, I went for a sleep. Uh, it's a small work which is
+
+00:42:39.110 --> 00:42:42.530
+pending with respect to my project. I believe I'm going to
+
+00:42:42.530 --> 00:42:46.790
+complete that work today itself. Yeah. And, uh, then, uh,
+
+00:42:46.890 --> 00:42:48.910
+uh, I'll, I'll discuss it. I'll discuss that particular
+
+00:42:48.910 --> 00:42:52.670
+piece of the code, but not this one. Yeah. Not this one. So
+
+00:42:52.670 --> 00:42:56.310
+I have my own piece of the code, uh, for explanation so that
+
+00:42:56.310 --> 00:42:59.870
+you all will be able to build, uh, agents and then you all
+
+00:42:59.870 --> 00:43:02.550
+will be able to use a A2A and communicate between each
+
+00:43:02.550 --> 00:43:06.130
+other. Uh, if I'm going to discuss a same project, then you
+
+00:43:06.130 --> 00:43:08.450
+will face a lot of difficulties, right? And you will, maybe
+
+00:43:08.450 --> 00:43:11.550
+you will not be able to learn it in a better way. Yeah. Uh,
+
+00:43:11.730 --> 00:43:15.130
+so, uh, which, which I don't want. So that's why, you know,
+
+00:43:15.150 --> 00:43:17.670
+I'm building my own piece of the code that I will be
+
+00:43:17.670 --> 00:43:21.770
+discussing. Tomorrow. Uh, so anyone who is having any kind
+
+00:43:21.770 --> 00:43:25.210
+of a question, go ahead, try to put up your question.
+
+00:43:30.260 --> 00:43:31.400
+Yeah. Ram, go ahead.
+
+00:43:35.640 --> 00:43:39.460
+Hi, sir. Thank you for the information. And I have a
+
+00:43:39.460 --> 00:43:42.140
+question actually, when we interact with the agent to agent,
+
+00:43:42.360 --> 00:43:47.160
+so what is the current trending use cases? Uh, maybe any
+
+00:43:47.160 --> 00:43:50.840
+real time use cases when we interact with probably in
+
+00:43:50.840 --> 00:43:54.860
+between agent to agent. Okay. So basically. Okay. So the
+
+00:43:54.860 --> 00:43:57.120
+real time use cases you are talking about, right? Yeah.
+
+00:43:57.260 --> 00:44:00.400
+Yeah. Okay. So recently I was working in one of the
+
+00:44:00.400 --> 00:44:03.380
+projects. So where, what, what they are doing is that, that,
+
+00:44:03.380 --> 00:44:07.340
+uh, there is a client called as IHG, right? And they have a
+
+00:44:07.340 --> 00:44:11.440
+chains of basically a hotels and, uh, because it's, it's one
+
+00:44:11.440 --> 00:44:13.940
+of my client projects on which we are like already working
+
+00:44:13.940 --> 00:44:16.640
+and we are building a multiple agent for them. So basically
+
+00:44:16.640 --> 00:44:19.720
+they have a multiple hotels and they are trying to create
+
+00:44:19.720 --> 00:44:23.680
+their own app, their own application so that their customer
+
+00:44:23.680 --> 00:44:26.800
+can come. Okay. And their customer can, you know, uh, like,
+
+00:44:26.800 --> 00:44:29.440
+uh, check, uh, their nearest. So they can, they can simply
+
+00:44:29.440 --> 00:44:33.160
+say that, that, okay, so I'm like, uh, planning my stay on
+
+00:44:33.160 --> 00:44:37.180
+this particular day with your hotel. Uh, so just tell me
+
+00:44:37.180 --> 00:44:39.680
+like, and they have in one single location, I think we all
+
+00:44:39.680 --> 00:44:42.260
+know IHG brand. You can even search on Google. It's a big
+
+00:44:42.260 --> 00:44:45.440
+brand by the way. Uh, so basically they are trying to build
+
+00:44:45.440 --> 00:44:47.940
+the complete framework. So where customer can come and they
+
+00:44:47.940 --> 00:44:50.140
+will be able to do everything just with the help of
+
+00:44:50.140 --> 00:44:52.960
+chatting, something like that. Uh, they have, they have the
+
+00:44:52.960 --> 00:44:56.560
+requirement. So we have like a, we are building one agent,
+
+00:44:56.600 --> 00:44:59.920
+uh, for example, for just for the hotel search one agent for
+
+00:44:59.920 --> 00:45:04.240
+a checkout purposes, one agent for, uh, maybe like
+
+00:45:04.240 --> 00:45:08.080
+allocating them a particular rooms and they're all the, uh,
+
+00:45:08.300 --> 00:45:12.420
+designated services. We are building one agent just to do
+
+00:45:12.420 --> 00:45:15.700
+some sort of ordering when they are staying into a hotel. So
+
+00:45:15.700 --> 00:45:20.040
+likewise we have done a multiple, uh, like, uh, we are, we
+
+00:45:20.040 --> 00:45:21.940
+are trying to create a multiple or we are trying to
+
+00:45:21.940 --> 00:45:24.480
+orchestrate a multiple agent. Framework. And we are creating
+
+00:45:24.480 --> 00:45:27.840
+a multiple agent, one agent for one particular task right
+
+00:45:27.840 --> 00:45:33.060
+now. So let's suppose if I'm trying to maybe give them a
+
+00:45:33.060 --> 00:45:37.240
+room. So obviously I have to check first of all, right? That
+
+00:45:37.240 --> 00:45:40.720
+okay. So whether, uh, this person have already booked or
+
+00:45:40.720 --> 00:45:44.200
+not, and, uh, many things, obviously you can, you can come
+
+00:45:44.200 --> 00:45:47.220
+and say that, that I can do it with the help of even tool
+
+00:45:47.220 --> 00:45:49.540
+calling. That's true. Even with the help of tool calling, we
+
+00:45:49.540 --> 00:45:52.440
+can do it without even creating a separate agent. But, uh,
+
+00:45:52.640 --> 00:45:55.720
+here. So a couple of agent that we have created. So one is
+
+00:45:55.720 --> 00:45:58.280
+helping me in terms of doing a booking, finding out the
+
+00:45:58.280 --> 00:46:03.160
+places, nearest one and a X to Y location. And one agent who
+
+00:46:03.160 --> 00:46:06.540
+will try to like help me out after a booking, one agent who
+
+00:46:06.540 --> 00:46:09.720
+will help me out in terms of like after booking. And then,
+
+00:46:09.720 --> 00:46:12.300
+so at the time of booking itself in terms of doing a
+
+00:46:12.300 --> 00:46:15.920
+transaction, validating all the transaction and here we have
+
+00:46:15.920 --> 00:46:19.200
+to talk, right? We have to talk that, okay, so if customer
+
+00:46:19.200 --> 00:46:23.420
+is trying to come for check-in, so obviously I have to, uh,
+
+00:46:23.660 --> 00:46:27.800
+check whether like all the previous process has been done or
+
+00:46:27.800 --> 00:46:32.120
+not without asking a customer again, right? Without asking
+
+00:46:32.120 --> 00:46:34.700
+the customer again, even we have really the agent, so which
+
+00:46:34.700 --> 00:46:37.660
+will help us out in terms of doing a pre-check-in means they
+
+00:46:37.660 --> 00:46:39.920
+can just like a talk to a system and they can upload all
+
+00:46:39.920 --> 00:46:42.520
+their Aadhaar card or maybe their passport over there and
+
+00:46:42.520 --> 00:46:45.340
+then, uh, for Indian, Indian clients. So they can upload the
+
+00:46:45.340 --> 00:46:48.600
+Aadhaar card and everything and then, uh, I, we will be
+
+00:46:48.600 --> 00:46:50.940
+done, uh, basically, so they are not supposed to come. And
+
+00:46:50.940 --> 00:46:53.460
+again, do the verification, re-verification, they can simply
+
+00:46:53.460 --> 00:46:56.460
+come. So that QR code, because we are going to generate a QR
+
+00:46:56.460 --> 00:46:59.420
+code and then they will be able to get their room. So they
+
+00:46:59.420 --> 00:47:03.020
+don't have to stay into a lobby. So multi-agent
+
+00:47:03.020 --> 00:47:07.400
+communication is required wherever, right? At that point of
+
+00:47:07.400 --> 00:47:09.920
+time, you can go ahead with this kind of orchestrator
+
+00:47:09.920 --> 00:47:15.160
+framework. But again, I'm saying A2A is not the only
+
+00:47:15.160 --> 00:47:18.800
+framework by, or A2A is not the only way by which I will be
+
+00:47:18.800 --> 00:47:21.680
+able to achieve it. Okay. So if I am creating A2A, I will be
+
+00:47:21.680 --> 00:47:25.200
+able to achieve it. But yeah, if I have so, so many like
+
+00:47:25.200 --> 00:47:28.780
+agents, which I'm creating a pool of the agent, then maybe
+
+00:47:28.780 --> 00:47:32.640
+in future I need a A2A, uh, where I have to, you know, uh,
+
+00:47:32.760 --> 00:47:35.920
+like establish a communication and that too, you know, a
+
+00:47:35.920 --> 00:47:38.560
+heterogeneous kind of agent I have. One agent in Langchain,
+
+00:47:38.600 --> 00:47:42.080
+one agent in Langraph, one agent in a crew AI, one agent in
+
+00:47:42.080 --> 00:47:46.960
+a, like a autogen, then maybe I need this framework and I
+
+00:47:46.960 --> 00:47:51.220
+can, I can do orchestration, which will ease my life. That's
+
+00:47:51.220 --> 00:47:54.760
+it. This is the only requirement. Hope I'm able to make
+
+00:47:54.760 --> 00:47:58.200
+sense. For this similar use case, right? So before 10 years
+
+00:47:58.200 --> 00:48:02.020
+or something, uh, uh, some, a team has implemented through
+
+00:48:02.020 --> 00:48:04.720
+the rule based system, right? When we go to the bank as
+
+00:48:04.720 --> 00:48:07.900
+well, uh, we have the cask over there and whatever we need,
+
+00:48:08.020 --> 00:48:13.020
+it can do it. So how the, this system is different from that
+
+00:48:13.020 --> 00:48:16.680
+rule based. So I think, what is the, I understood LLM can
+
+00:48:16.680 --> 00:48:20.380
+refine and it can make some additional benefit and it can,
+
+00:48:20.380 --> 00:48:20.380
+it can, it can, it can, it can, it can, it can, it can, it
+
+00:48:20.380 --> 00:48:20.580
+can, it can, it can, it can, it can, it can, it can, it can,
+
+00:48:20.580 --> 00:48:20.580
+it can, it can be, you know, it can be, it can, it can make
+
+00:48:20.580 --> 00:48:25.160
+an own, own intelligence power, but, uh, how, uh, how, uh,
+
+00:48:25.240 --> 00:48:28.400
+uh, will it be getting different from the old system? See
+
+00:48:28.400 --> 00:48:30.940
+your old system was any how your rule based system, right?
+
+00:48:31.040 --> 00:48:34.040
+So you do EFL, CFL, CFL kind of a statement. It's not
+
+00:48:34.040 --> 00:48:36.300
+agentic. You don't understand. First of all, your language
+
+00:48:36.300 --> 00:48:41.120
+by the way. Yeah. So NLP agents is the main advantage or
+
+00:48:41.120 --> 00:48:45.540
+main superpower of agent is LLM capability, which was not
+
+00:48:45.540 --> 00:48:49.440
+there in your, like a previous system. Uh, yeah. It can do
+
+00:48:49.440 --> 00:48:52.280
+some extra work. Uh huh. right according to it can
+
+00:48:52.280 --> 00:48:54.080
+understand your language by the way that's that's a
+
+00:48:54.080 --> 00:48:57.300
+superpower of the entire ntk system that's the main
+
+00:48:57.300 --> 00:49:00.700
+superpower apart from that i we could have done that even
+
+00:49:00.700 --> 00:49:02.580
+with the help of writing a e-fail statement which we have
+
+00:49:02.580 --> 00:49:05.380
+been doing it since a very very long time but yeah it's a
+
+00:49:05.380 --> 00:49:09.300
+superpower for you yeah but it is also have own intelligent
+
+00:49:09.300 --> 00:49:12.520
+technique it can do that our unexpected result as well right
+
+00:49:12.520 --> 00:49:17.640
+sometime uh we ask something it can return some collusion or
+
+00:49:17.640 --> 00:49:21.960
+some problem from ai right if the model is not properly
+
+00:49:21.960 --> 00:49:25.480
+trained uh it can return the wrong result right it may be
+
+00:49:25.480 --> 00:49:30.440
+possible it's possible everywhere by the hallucination is a
+
+00:49:30.440 --> 00:49:35.040
+real thing in case of model world yeah but from the previous
+
+00:49:35.040 --> 00:49:37.540
+when we come while comparing the previous system this is
+
+00:49:37.540 --> 00:49:41.140
+having a lot of advantages i think that's the reason we are
+
+00:49:41.140 --> 00:49:43.080
+taking a geni classes right we have seen all those
+
+00:49:43.080 --> 00:49:51.680
+advantages okay okay yeah yeah so uh ranjit please go ahead
+
+00:49:51.680 --> 00:49:52.840
+yeah
+
+00:49:58.570 --> 00:50:02.190
+okay so elgo please go ahead uh
+
+00:50:06.090 --> 00:50:10.830
+hi sir yeah go ahead uh so actually i have some questions
+
+00:50:10.830 --> 00:50:17.430
+regarding the agents that we have built so sir uh let's say
+
+00:50:17.430 --> 00:50:22.170
+we have three four frameworks so can you please tell that
+
+00:50:22.170 --> 00:50:26.250
+how to select a particular agent and whether it is a no code
+
+00:50:26.250 --> 00:50:26.710
+one or a no code one or a no code one or a no code one would
+
+00:50:26.710 --> 00:50:30.230
+be the best or the coding selection i think i think yeah i
+
+00:50:30.230 --> 00:50:33.090
+think i have discussed this question so many times and that
+
+00:50:33.090 --> 00:50:36.090
+will be the practical example see no code one if you have
+
+00:50:36.090 --> 00:50:38.990
+this uh you can you can go ahead with that so let's suppose
+
+00:50:38.990 --> 00:50:41.410
+if i'm trying to automate my day-to-day task right for
+
+00:50:41.410 --> 00:50:43.690
+example maybe i'm doing a email automation calendar
+
+00:50:43.690 --> 00:50:46.510
+automation minutes of meeting kind of automation right auto
+
+00:50:46.510 --> 00:50:49.730
+reply for the email in that or wherever i have a batch kind
+
+00:50:49.730 --> 00:50:53.070
+of a task so which is is supposed to like you know do or
+
+00:50:53.070 --> 00:50:56.830
+maybe once in a day twice in a day kind of uh task we can we
+
+00:50:56.830 --> 00:50:59.210
+can go ahead with the no code it's the best one and it is
+
+00:50:59.210 --> 00:51:02.050
+going to give you a better result but let's suppose i have
+
+00:51:02.050 --> 00:51:05.470
+even like a discussed a lot of projects where i told you
+
+00:51:05.470 --> 00:51:09.090
+simply that wherever i have a concern with respect to my
+
+00:51:09.090 --> 00:51:12.610
+latency so this system should give me a response in this
+
+00:51:12.610 --> 00:51:15.510
+microsecond or this millisecond you can't go ahead with the
+
+00:51:15.510 --> 00:51:18.530
+no code solution no code solution is not going to solve that
+
+00:51:18.530 --> 00:51:20.670
+problem at all so in that case you have to go ahead with
+
+00:51:20.670 --> 00:51:23.450
+this framework this kind of a framework so where you have a
+
+00:51:23.450 --> 00:51:27.190
+control over the low code basically so where you can you can
+
+00:51:27.190 --> 00:51:30.990
+try to do any kind of optimization as per your requirement
+
+00:51:30.990 --> 00:51:35.950
+so that's my answer yes sir sir i i uh recall this answer
+
+00:51:35.950 --> 00:51:39.690
+because i was so so is this the correct reason uh
+
+00:51:39.690 --> 00:51:44.270
+interpretation that in the no code one the uh cloud and all
+
+00:51:44.270 --> 00:51:49.430
+is given by them who told you that cloud is cloud and all is
+
+00:51:49.430 --> 00:51:52.030
+given by them anytime you can try to install it and then you
+
+00:51:52.030 --> 00:51:55.130
+know uh host it on your own server same goes for even
+
+00:51:55.130 --> 00:51:58.770
+autogen autogen gives you two things right so one is a ui
+
+00:51:58.770 --> 00:52:01.230
+based approach so where you can just drag and drop and then
+
+00:52:01.230 --> 00:52:04.050
+create a agent orchestrated and one is a code based approach
+
+00:52:04.050 --> 00:52:06.710
+and in both the approach they say that okay fine go and host
+
+00:52:06.710 --> 00:52:11.050
+it on your corporate form okay of your choice so yeah they
+
+00:52:11.050 --> 00:52:14.710
+have they have given you like you know this fragility okay
+
+00:52:14.710 --> 00:52:21.270
+yeah uh so one more request is regarding uh the production
+
+00:52:21.270 --> 00:52:26.790
+part of these agents so we have run in local so this length
+
+00:52:26.790 --> 00:52:30.590
+serve and the length we'll come to that so we'll we'll
+
+00:52:30.590 --> 00:52:32.890
+discuss about this cloud part right so we'll be talking
+
+00:52:32.890 --> 00:52:35.210
+about that we have projects as well so even over there we
+
+00:52:35.210 --> 00:52:38.210
+are going to use a lot of agents and over there so obviously
+
+00:52:38.210 --> 00:52:42.410
+we have to go to the production right okay just to avoid a
+
+00:52:42.410 --> 00:52:45.350
+repetitive class for the same thing uh we're just going in a
+
+00:52:45.350 --> 00:52:48.730
+flow simple okay so as per the syllabus that's the reason so
+
+00:52:48.730 --> 00:52:51.990
+we have like a syllabus in place right okay yes yes sir but
+
+00:52:51.990 --> 00:52:56.270
+actually i'm i'm trying these things so if you can uh on my
+
+00:52:56.270 --> 00:52:58.810
+own i'm trying so yeah because see if something is running
+
+00:52:58.810 --> 00:53:01.310
+in my local and we have already talked about a lot of like a
+
+00:53:01.310 --> 00:53:05.130
+deployment i believe in a past we all know how to send a
+
+00:53:05.130 --> 00:53:08.970
+code how to like you know do a docker and then like uh host
+
+00:53:08.970 --> 00:53:11.450
+a code maybe on a render or even without docker how to host
+
+00:53:11.450 --> 00:53:14.270
+a code on render but yeah we have to talk about these uh
+
+00:53:14.270 --> 00:53:16.850
+entire like a production things with respect to major cloud
+
+00:53:16.850 --> 00:53:20.350
+platform azure it was in gcp i believe that is also a part
+
+00:53:20.350 --> 00:53:24.850
+of your syllabus uh great service just i'm trying on my own
+
+00:53:24.850 --> 00:53:31.170
+before that so uh uh actually in our projects uh most of the
+
+00:53:31.170 --> 00:53:36.710
+things we are using in terms of the azure azure so is it a
+
+00:53:36.710 --> 00:53:44.010
+benefit so that we'll see this autogen uh because autogen is
+
+00:53:44.010 --> 00:53:48.150
+from microsoft no it's not like that so you will not be able
+
+00:53:48.150 --> 00:53:51.050
+to see any kind of a benefit i mean like uh things will not
+
+00:53:51.050 --> 00:53:53.950
+happen automatically right you have to do it and the way you
+
+00:53:53.950 --> 00:53:56.130
+are going to productionize autogen in the similar manner you
+
+00:53:56.130 --> 00:53:58.090
+will be able to recognize even a language based like uh
+
+00:53:58.090 --> 00:54:02.210
+things or agents uh on any cloud platform yes see cloud
+
+00:54:02.210 --> 00:54:06.330
+gives you just a instance right and then yes i if i can
+
+00:54:06.330 --> 00:54:08.770
+productionize like so for autogen they are not going to give
+
+00:54:08.770 --> 00:54:11.250
+you any flexibility by the way this is that's the whole
+
+00:54:11.250 --> 00:54:15.450
+point okay so one last question is uh sir you in the in the
+
+00:54:15.450 --> 00:54:18.650
+lecture you were saying uh this length chain and length
+
+00:54:18.650 --> 00:54:23.530
+graph uh i mean uh you're not against it but you said i will
+
+00:54:23.530 --> 00:54:28.390
+not prefer this in production so basically yeah so i have
+
+00:54:28.390 --> 00:54:31.750
+made one statement saying that that don't just rely on a
+
+00:54:31.750 --> 00:54:34.710
+lanchan or a langra because even their founders if you'll go
+
+00:54:34.710 --> 00:54:38.370
+and check over the internet they say that that see uh we are
+
+00:54:38.370 --> 00:54:41.450
+just like you know giving you a kind of orchestrator so
+
+00:54:41.450 --> 00:54:45.110
+don't try to build a whole product just by using me this is
+
+00:54:45.110 --> 00:54:48.590
+what even they used to claim that there is a because they
+
+00:54:48.590 --> 00:54:51.470
+are doing a lot of developments and again a lot of like you
+
+00:54:51.470 --> 00:54:55.050
+know enhancement which is going on it's not that stable
+
+00:54:56.590 --> 00:55:00.030
+always say that that okay uh do a double check right do
+
+00:55:00.030 --> 00:55:03.110
+always a double check uh again if you're if you are sending
+
+00:55:03.110 --> 00:55:06.830
+your piece of code into a production uh maybe like that is
+
+00:55:06.830 --> 00:55:10.050
+that is going to crash so it's like uh they have just
+
+00:55:10.050 --> 00:55:12.430
+advised you and even i have advised you that use it with the
+
+00:55:12.430 --> 00:55:18.410
+like a bit be a bit careful when you are trying to use all
+
+00:55:18.410 --> 00:55:20.710
+of these frameworks in terms of security in terms of a
+
+00:55:20.710 --> 00:55:26.030
+leakage sure sure sir sir so uh can you uh just just a
+
+00:55:26.030 --> 00:55:29.290
+personal question your your favorite if you can say your uh
+
+00:55:29.290 --> 00:55:33.570
+tested one which is the best uh no code uh code all
+
+00:55:34.140 --> 00:55:37.530
+including all of this uh if you can uh tell your because you
+
+00:55:37.530 --> 00:55:40.990
+have tested most of this no could i see my preferred choice
+
+00:55:40.990 --> 00:55:44.930
+is always n8n even crew is giving you this ui interface
+
+00:55:45.550 --> 00:55:49.310
+autogen is also giving you a ui interface a crew ai bit
+
+00:55:49.310 --> 00:55:53.470
+immature not bit immature super immature one you can say uh
+
+00:55:53.470 --> 00:55:56.870
+even open i have released a agent builder but again i have
+
+00:55:56.870 --> 00:55:59.970
+already given my feedback over here yes it will and i have
+
+00:55:59.970 --> 00:56:04.050
+also shown you inside a class uh so maybe uh we have it will
+
+00:56:04.050 --> 00:56:06.250
+they will take time because same goes with crew they will
+
+00:56:06.250 --> 00:56:09.430
+take some time uh again same goes with i would say uh
+
+00:56:09.430 --> 00:56:12.870
+autogen no code platform uh they will take some time because
+
+00:56:12.870 --> 00:56:16.770
+they have a lot of limitations so you can't build uh any
+
+00:56:16.770 --> 00:56:20.750
+production grade automations by using that yes in it in uh
+
+00:56:20.750 --> 00:56:24.610
+it's an old company and again it's a company it's automation
+
+00:56:24.610 --> 00:56:29.810
+company even before this ai era so i think like they are six
+
+00:56:29.810 --> 00:56:32.610
+seven year old company and they have started their company
+
+00:56:32.610 --> 00:56:35.570
+with the motto that will do the automation and then when ai
+
+00:56:35.570 --> 00:56:38.470
+came into a picture so they have plugged in ai node as well
+
+00:56:38.470 --> 00:56:42.370
+that's a whole story so in that way uh if you'll go and
+
+00:56:42.370 --> 00:56:45.790
+check all the nodes and intent so they have a very very huge
+
+00:56:45.790 --> 00:56:49.390
+you know ecosystem so where they have given you because if
+
+00:56:49.390 --> 00:56:52.230
+i'm going with the code i need all the nodes very simple yes
+
+00:56:52.230 --> 00:56:55.970
+obviously i won't go and write a code because that will not
+
+00:56:55.970 --> 00:56:59.290
+make sense so any 10 so far in a market let's see in the
+
+00:56:59.290 --> 00:57:01.630
+future what will happen maybe after one year after two years
+
+00:57:01.630 --> 00:57:05.490
+story will change but as we are sitting in november month of
+
+00:57:05.490 --> 00:57:10.290
+10 25 so in this month i would say any 10 okay as compared
+
+00:57:10.290 --> 00:57:13.910
+to any other framework for a no code now if i'll talk about
+
+00:57:13.910 --> 00:57:18.510
+a code based framework uh so crew ai is something which i
+
+00:57:18.510 --> 00:57:22.250
+founded it's very very easy in terms of you know uh like uh
+
+00:57:22.250 --> 00:57:26.350
+writing a code and creating uh or orchestrating the agent so
+
+00:57:26.590 --> 00:57:29.890
+ai you can say it's an easy one so based on ease i'm telling
+
+00:57:29.890 --> 00:57:33.150
+you right so it's very easy like create an individual crew
+
+00:57:33.150 --> 00:57:35.410
+and then you know attach all of those crew in the sequence
+
+00:57:35.410 --> 00:57:39.810
+that you want yes then like uh send it to a production easy
+
+00:57:39.810 --> 00:57:43.470
+easy to develop and you know easy to like a maintain so
+
+00:57:43.470 --> 00:57:47.290
+that's that's my take but yeah i'm not saying that don't use
+
+00:57:47.290 --> 00:57:50.530
+lang chain lang graph for lama yes use all of these things
+
+00:57:50.530 --> 00:57:54.550
+but yes evaluate and always try to check that what is your
+
+00:57:54.550 --> 00:57:58.590
+expectation are you looking for maybe like some low level
+
+00:57:58.590 --> 00:58:02.750
+control accordingly you can select the framework but that's
+
+00:58:02.750 --> 00:58:06.290
+my two frame like favorite one thanks thanks a lot sir sir
+
+00:58:06.290 --> 00:58:10.050
+and one one last thing regarding 3i uh let's say if you're
+
+00:58:10.050 --> 00:58:13.410
+building something so is this the correct approach that we
+
+00:58:13.410 --> 00:58:17.330
+build it based on the chat and then download the code from
+
+00:58:17.330 --> 00:58:21.790
+there and then tweak it or develop it from uh is this the
+
+00:58:21.790 --> 00:58:26.090
+correct approach uh that we can follow build it from a chat
+
+00:58:26.090 --> 00:58:31.830
+means i was not able to get it uh uh we we have given a
+
+00:58:31.830 --> 00:58:35.190
+prompt and it has developed code no no no i'm not talking
+
+00:58:35.190 --> 00:58:38.750
+about that set of a crew ai code based code based okay i'm
+
+00:58:38.750 --> 00:58:40.910
+not talking about no code so if you're going with the code
+
+00:58:40.910 --> 00:58:44.730
+one forget about that that ui interface and uh no okay okay
+
+00:58:44.730 --> 00:58:48.190
+that they have given to you simple install the library and
+
+00:58:48.190 --> 00:58:51.390
+then start building one by one one by one on your own that
+
+00:58:51.390 --> 00:58:54.190
+that's approach i'm talking about yes yes you have covered
+
+00:58:54.190 --> 00:58:56.530
+that as well thanks thanks i think thanks a lot for our
+
+00:58:56.590 --> 00:58:59.210
+answering i mean this clears most of my questions thanks a
+
+00:58:59.210 --> 00:59:04.170
+lot okay hi sir so elengo uh yeah go ahead oh just one
+
+00:59:04.170 --> 00:59:07.990
+question um just one question sir uh sir in the last class
+
+00:59:07.990 --> 00:59:10.750
+you have covered uh predominantly you have covered the
+
+00:59:10.750 --> 00:59:15.970
+multiple tools as mcp right uh so uh when we issued the
+
+00:59:15.970 --> 00:59:20.250
+program how does it identify that right system suppose when
+
+00:59:20.250 --> 00:59:23.730
+you ask a question list of the tables when you ask i think i
+
+00:59:23.730 --> 00:59:26.210
+have i have given an answer for that as well multiple times
+
+00:59:26.210 --> 00:59:28.910
+in the last class itself and i have even given an
+
+00:59:28.910 --> 00:59:32.550
+explanation so you must be able to see uh like we are trying
+
+00:59:32.550 --> 00:59:37.610
+to basically uh you know list the entire mcp server or list
+
+00:59:37.610 --> 00:59:40.490
+the entire tool that we have given right and in every tool
+
+00:59:40.490 --> 00:59:43.170
+you will be able to see a description by the way so there is
+
+00:59:43.170 --> 00:59:46.090
+a keyword called description and against our descriptions
+
+00:59:46.090 --> 00:59:49.610
+there is a write-up that we have mentioned well this would
+
+00:59:49.610 --> 00:59:52.750
+be back exactly whatever we typed right this would match
+
+00:59:52.750 --> 00:59:58.850
+exactly the not why we are using llms this is where lms
+
+00:59:58.850 --> 01:00:01.150
+comes into picture lm can understand us and lm can
+
+01:00:01.150 --> 01:00:03.970
+understand even that language or description that we have
+
+01:00:03.970 --> 01:00:07.790
+mentioned as a part of list tool list basically right so
+
+01:00:07.790 --> 01:00:11.190
+this is where lm comes why it will go and match like exactly
+
+01:00:11.190 --> 01:00:13.890
+we are not building a rule-based system over here right
+
+01:00:13.890 --> 01:00:18.350
+correct so if there is no any matches and it can build some
+
+01:00:18.350 --> 01:00:22.450
+content from uh let's suppose you are asking that okay fine
+
+01:00:22.450 --> 01:00:25.570
+go and access my slack and let's suppose slack slack tool is
+
+01:00:25.570 --> 01:00:28.230
+not available will come back to you saying that i'm not able
+
+01:00:28.230 --> 01:00:33.010
+to find a slack tool yeah yeah correct sounds good yeah and
+
+01:00:33.010 --> 01:00:36.130
+uh yeah sir from the second question from the experience
+
+01:00:36.130 --> 01:00:39.370
+point of view right sir will you plan to conduct any system
+
+01:00:39.370 --> 01:00:42.090
+design course something sir because when we attend the
+
+01:00:42.090 --> 01:00:45.330
+interview i can't say anything by the way because as of now
+
+01:00:45.330 --> 01:00:48.790
+i i can't say anything i can't give a commitment in future
+
+01:00:48.790 --> 01:00:51.990
+obviously but yeah subject to my like a slot availability
+
+01:00:51.990 --> 01:00:57.730
+because for now i am like full completely for interview when
+
+01:00:57.730 --> 01:01:00.090
+we go for interview more than 12 year experience so they are
+
+01:01:00.090 --> 01:01:03.670
+expecting that particular areas as of now just just explain
+
+01:01:03.670 --> 01:01:06.270
+just explain the project that i have told you i think that
+
+01:01:06.270 --> 01:01:09.250
+will be more than enough right let's see how in the future
+
+01:01:09.250 --> 01:01:13.510
+we can bring something like that okay yeah thank you sir
+
+01:01:13.510 --> 01:01:17.930
+yeah yeah yes that's why i cannot ask you a question now
+
+01:01:17.930 --> 01:01:21.390
+yeah go ahead please yeah yeah okay uh then my question is
+
+01:01:21.390 --> 01:01:26.270
+uh i need some kind of heads up from you if you have so
+
+01:01:26.590 --> 01:01:33.070
+basically i have uh one uh a company small company and they
+
+01:01:33.070 --> 01:01:38.810
+and they have a need like they have emails so when the
+
+01:01:38.810 --> 01:01:43.150
+emails come and tomorrow next morning the boss comes so he
+
+01:01:43.150 --> 01:01:48.650
+wants an agent that can go through his emails and this and
+
+01:01:48.650 --> 01:01:55.010
+provide him uh that okay what he should respond and so uh
+
+01:01:55.010 --> 01:01:59.150
+how do i go about developing this just if you can provide me
+
+01:01:59.150 --> 01:02:02.990
+some heads up so then i can go i think email access system
+
+01:02:02.990 --> 01:02:05.250
+we have already built it right it's the last class itself
+
+01:02:05.250 --> 01:02:10.830
+yeah i think we built something but can it go ahead and then
+
+01:02:10.830 --> 01:02:15.250
+compile all the go through all the emails and then uh
+
+01:02:17.110 --> 01:02:21.030
+so same same system same system you can try to use exact
+
+01:02:21.030 --> 01:02:24.450
+same thing so we have already built that mcp uh so same
+
+01:02:24.450 --> 01:02:27.430
+thing same thing you can try to use it for a response so if
+
+01:02:27.430 --> 01:02:31.810
+you'll go and check that mcp uh so we have already created a
+
+01:02:31.810 --> 01:02:35.130
+tool inside that even to send you a message it's already
+
+01:02:35.130 --> 01:02:39.170
+there by the way now sometime right it's not something i
+
+01:02:39.170 --> 01:02:42.330
+would say let's suppose uh like i have to build an
+
+01:02:42.330 --> 01:02:45.990
+improvised version of the same system where it is supposed
+
+01:02:45.990 --> 01:02:49.730
+to understand my business and then it should respond because
+
+01:02:49.730 --> 01:02:52.810
+see lm will give a generic response as per its own knowledge
+
+01:02:52.810 --> 01:02:56.950
+right so in that case we have also discussed about a system
+
+01:02:56.950 --> 01:02:59.970
+yeah we have already discussed about allergy kind of a
+
+01:02:59.970 --> 01:03:03.170
+system even in the same example the last class example
+
+01:03:03.170 --> 01:03:06.190
+itself we will go and check so we had given a database
+
+01:03:06.190 --> 01:03:09.590
+access as well we have connected our mongodb we have
+
+01:03:09.590 --> 01:03:13.950
+connected our sql databases right so let's suppose uh like
+
+01:03:13.950 --> 01:03:17.470
+uh someone has asked me a question with respect to my
+
+01:03:17.470 --> 01:03:21.190
+company let's suppose right that okay so try to give me all
+
+01:03:21.190 --> 01:03:25.250
+of the detail uh with respect to your own consulting right
+
+01:03:25.250 --> 01:03:28.270
+try to give the detail with respect you're on consulting or
+
+01:03:28.270 --> 01:03:35.530
+uh let me give you a exact example of this so for example we
+
+01:03:35.530 --> 01:03:38.390
+have this whatsapp system i believe people are using it
+
+01:03:38.390 --> 01:03:41.930
+people have given uh many good feedback about this uri ai
+
+01:03:41.930 --> 01:03:45.950
+system now we have integrated ai over here with uri ai the
+
+01:03:45.950 --> 01:03:48.130
+real system the whatsapp system that we all are using right
+
+01:03:48.130 --> 01:03:54.310
+but we have also integrated our whole database now if i'm
+
+01:03:54.310 --> 01:03:58.350
+going to ask a question that tell me the latest course uh
+
+01:03:58.350 --> 01:04:03.610
+latest course launch on your own right again like uh
+
+01:04:03.610 --> 01:04:06.690
+spelling a lot of spelling mistake and all those things it's
+
+01:04:06.690 --> 01:04:11.770
+llm lm will be able to understand so here uh again see uh so
+
+01:04:11.770 --> 01:04:14.750
+20 full stack automation yesterday itself we have launched
+
+01:04:14.750 --> 01:04:17.150
+it right yesterday itself we have like a published this
+
+01:04:17.150 --> 01:04:19.550
+course and yeah so by the time we have published this course
+
+01:04:19.550 --> 01:04:22.150
+it is able to understand and see just telling me that okay
+
+01:04:22.150 --> 01:04:24.110
+this is the latest course that has been launched and which
+
+01:04:24.110 --> 01:04:26.570
+is going to start full stack automation bootcamp so let's go
+
+01:04:26.570 --> 01:04:26.890
+ahead and let's go ahead and see what happens so let's go
+
+01:04:26.890 --> 01:04:28.510
+ahead and see what happens now this is not coming from a lm
+
+01:04:28.510 --> 01:04:31.350
+by the way right this is coming from where my database yeah
+
+01:04:31.350 --> 01:04:34.870
+now can i say that mail is something like that so we have
+
+01:04:34.870 --> 01:04:38.490
+already built a system so where i can uh like you know uh
+
+01:04:38.490 --> 01:04:42.370
+send a reply over the mail just like a whatsapp mail is also
+
+01:04:42.370 --> 01:04:46.610
+like request response kind of a system right so and uh again
+
+01:04:46.610 --> 01:04:50.490
+so it is supposed to respond with respect to my knowledge or
+
+01:04:50.490 --> 01:04:53.810
+my company's like uh you know data that we have just like
+
+01:04:53.810 --> 01:04:56.870
+this one and in some of the cases for example it will give
+
+01:04:56.870 --> 01:05:02.010
+me a 10 python for loop example right now this is not
+
+01:05:02.010 --> 01:05:04.070
+related to my company by the way this equation is not
+
+01:05:04.070 --> 01:05:06.370
+related to my company so what it will do it will use a lm
+
+01:05:06.370 --> 01:05:10.530
+capability yeah so basically you need this kind of a system
+
+01:05:10.530 --> 01:05:14.350
+and we have already talked about this kind of a system very
+
+01:05:14.350 --> 01:05:18.250
+good very good no i got all the ideas from you i understand
+
+01:05:18.250 --> 01:05:23.050
+now yeah so basically this is just give access to your reg
+
+01:05:23.050 --> 01:05:25.650
+system if you are storing something into sorry if you are
+
+01:05:25.650 --> 01:05:28.930
+storing something into the vector databases otherwise give
+
+01:05:28.930 --> 01:05:31.370
+access to your mongodb otherwise give access to your sql
+
+01:05:31.370 --> 01:05:34.510
+databases or any other databases and we have already like uh
+
+01:05:34.510 --> 01:05:38.230
+we already have a ready to use code in our previous class so
+
+01:05:38.230 --> 01:05:44.050
+yeah this company is a law company is it's a law firm and
+
+01:05:44.050 --> 01:05:50.790
+and he said that okay he will help me creating a creating a
+
+01:05:50.790 --> 01:05:54.650
+product which will be mature product and used the real life
+
+01:05:54.650 --> 01:05:56.570
+by all the law for which we live in our own affairs so he's
+
+01:05:56.570 --> 01:06:00.290
+saying that we can need need to be used by all the law firms
+
+01:06:00.290 --> 01:06:04.230
+can use that product so so he said that okay one of the
+
+01:06:04.230 --> 01:06:07.730
+thing will be the agent but uh you are right the agent
+
+01:06:07.730 --> 01:06:12.850
+cannot be just uh uh standalone like this until unless we
+
+01:06:12.850 --> 01:06:16.590
+have the rank system because the data not just the system i
+
+01:06:16.590 --> 01:06:19.110
+would say everywhere access them is not required right so
+
+01:06:19.110 --> 01:06:22.370
+unnecessarily whenever we see agents right under agentic
+
+01:06:22.370 --> 01:06:24.890
+things so we say that okay fine give access to rack system i
+
+01:06:24.890 --> 01:06:27.970
+am against that again so like this is not my style of
+
+01:06:27.970 --> 01:06:31.570
+designing the architecture i like observe and then uh for
+
+01:06:31.570 --> 01:06:34.610
+example maybe i have to pull a data from my databases our
+
+01:06:34.610 --> 01:06:37.670
+database is postgres sql which is sitting on aws cluster
+
+01:06:37.670 --> 01:06:41.750
+right i'm just like fetching it from there it's fine i have
+
+01:06:41.750 --> 01:06:45.170
+built my agent so which will go to my like you know uh my
+
+01:06:45.170 --> 01:06:47.790
+postgres uh database and then from there it is trying to
+
+01:06:47.790 --> 01:06:50.130
+fire the query and then from there it is trying to bring the
+
+01:06:50.130 --> 01:06:53.790
+data and it's very quick right it's very very quick anyone
+
+01:06:53.790 --> 01:06:56.490
+can come and test it because the public system that we have
+
+01:06:56.490 --> 01:07:00.990
+created uh so yeah i mean like every time like we should not
+
+01:07:00.990 --> 01:07:05.390
+say that okay fine rag system or this system or that system
+
+01:07:05.390 --> 01:07:09.070
+it depends upon my requirement and this is how i think we
+
+01:07:09.070 --> 01:07:13.450
+all should design the architecture of the project thank you
+
+01:07:13.910 --> 01:07:19.490
+yeah okay now uh yeah yeah go ahead i'll go yeah i have
+
+01:07:19.490 --> 01:07:25.070
+under the we have we are discussing about the uh rack
+
+01:07:25.070 --> 01:07:28.810
+concept when you go for the rack concept we will uh check
+
+01:07:28.810 --> 01:07:32.510
+the file so in the vector db then semantic search we will
+
+01:07:32.510 --> 01:07:37.490
+bring the data when we in the last uh class we add the mcb
+
+01:07:37.490 --> 01:07:41.710
+protocol right in that one we are connecting the database um
+
+01:07:41.710 --> 01:07:46.410
+uh how rag is also your rag is also your database right so
+
+01:07:46.410 --> 01:07:50.470
+what is f a i s s what is a chroma db what is a pine cone
+
+01:07:50.470 --> 01:07:55.490
+what is a quadrant yes yes the structural database
+
+01:07:55.490 --> 01:08:00.910
+structural uh i mean like we discussed about mongo db as
+
+01:08:00.910 --> 01:08:03.490
+well mongo db was not yeah yes yes we we were discussing
+
+01:08:03.490 --> 01:08:09.130
+mongo db um and also the even even with respect to rag so
+
+01:08:09.130 --> 01:08:13.610
+what we do we fire a query right in our ll nlp i mean like
+
+01:08:13.610 --> 01:08:16.030
+in a natural language we fire a query and then it will try
+
+01:08:16.030 --> 01:08:18.350
+to go and do the semantic search bring the data and then
+
+01:08:18.350 --> 01:08:21.090
+send it to the llms and lm try to structure it and then you
+
+01:08:21.090 --> 01:08:24.730
+will see the response this is how ragflow works yeah there
+
+01:08:24.730 --> 01:08:28.670
+we are doing that um vectoring then go and bring the data
+
+01:08:28.670 --> 01:08:31.870
+here in the mcp we are not doing these things we are
+
+01:08:31.870 --> 01:08:35.090
+connecting no no no no i think i think i think you
+
+01:08:35.090 --> 01:08:38.650
+misunderstood the entire whole mcp concept mcp is nothing
+
+01:08:38.650 --> 01:08:42.250
+but just a protocol it is not like related to rig or maybe
+
+01:08:42.250 --> 01:08:46.410
+llm or something it's calling a tool by the way so go and
+
+01:08:46.410 --> 01:08:49.230
+watch the same lecture try to execute a same example which
+
+01:08:49.230 --> 01:08:51.850
+is already discussed try to attach your email id and then
+
+01:08:51.850 --> 01:08:54.590
+your databases yes you will be able to get a real real
+
+01:08:54.590 --> 01:08:58.130
+understanding i believe you have uh maybe just yeah i got i
+
+01:08:58.130 --> 01:09:01.630
+under i got no no you haven't you haven't got anything
+
+01:09:01.630 --> 01:09:03.950
+basically right when you ask this question you haven't got
+
+01:09:03.950 --> 01:09:08.670
+technically mcp is just a protocol right okay i can give an
+
+01:09:08.670 --> 01:09:11.430
+access to rag the way i have given access to my five systems
+
+01:09:11.430 --> 01:09:17.410
+okay simple yeah i mean like uh it's a protocol i try to
+
+01:09:17.410 --> 01:09:20.110
+understand and it's not a correct comparison by the way it's
+
+01:09:20.110 --> 01:09:23.670
+a protocol simple just like a http protocol we were using
+
+01:09:23.670 --> 01:09:27.230
+since a very long time uh okay but when i connect with the
+
+01:09:27.230 --> 01:09:31.010
+gmail how is go and get that into the relevant information
+
+01:09:31.010 --> 01:09:35.110
+executing adding any extra code when they connect with the
+
+01:09:35.110 --> 01:09:41.350
+gmail right is it is it okay you have not gone through the
+
+01:09:41.350 --> 01:09:44.170
+class please go through the class execute and connect
+
+01:09:44.170 --> 01:09:46.550
+connect your gmail see you will not be able to understand
+
+01:09:46.550 --> 01:09:49.270
+you are using my gmail credentials which is already
+
+01:09:49.270 --> 01:09:52.490
+mentioned use use your gmail credential execute it and then
+
+01:09:52.490 --> 01:09:55.650
+come back to me believe me your question will be gone okay
+
+01:09:55.650 --> 01:10:00.310
+okay i know one more things uh when i see the framework this
+
+01:10:00.310 --> 01:10:04.250
+is a land graph and uh agentic development kit in the google
+
+01:10:04.250 --> 01:10:09.470
+uh so do we need to learn both things or which one is uh you
+
+01:10:09.470 --> 01:10:11.090
+should know you should know as per the current market
+
+01:10:11.090 --> 01:10:13.390
+situation yes you are supposed to be aware about all of
+
+01:10:13.390 --> 01:10:16.110
+these things because you never know what interviewer is
+
+01:10:16.110 --> 01:10:19.770
+going to ask and what framework other company is using and
+
+01:10:19.770 --> 01:10:21.430
+it's not that different um it's very very difficult i mean
+
+01:10:21.430 --> 01:10:24.130
+like theoretically all these frameworks are same i would say
+
+01:10:24.130 --> 01:10:26.550
+in a practical manner so obviously it's a different library
+
+01:10:26.550 --> 01:10:29.670
+so they have like a different different like a feature
+
+01:10:29.670 --> 01:10:34.210
+inside that one but yes you should know everything okay and
+
+01:10:34.210 --> 01:10:37.850
+one more thing when you go for the structural database do we
+
+01:10:37.850 --> 01:10:42.750
+need to maintain if if you need to connect with the like
+
+01:10:42.750 --> 01:10:46.370
+mysql or anything like a structure database do we need to do
+
+01:10:46.370 --> 01:10:50.710
+the vector vectoring for all the data no no why because we
+
+01:10:50.710 --> 01:10:50.710
+saved the data and then we use the data and then do the rest
+
+01:10:50.710 --> 01:10:52.450
+of it so like in the the i mean like uh here we are not
+
+01:10:52.450 --> 01:10:54.390
+doing a vectoring see we are getting a result in a fraction
+
+01:10:54.390 --> 01:10:56.930
+of seconds we have not done the vectoring i have designed
+
+01:10:56.930 --> 01:10:59.450
+the system right and i have not done the vectoring over here
+
+01:10:59.450 --> 01:11:04.010
+i'm directly hitting my sql db so we will so for example
+
+01:11:04.010 --> 01:11:08.470
+when you go for the calculations for some certain uh um
+
+01:11:08.470 --> 01:11:15.050
+result expectation uh how it will can be we do doing to me
+
+01:11:15.050 --> 01:11:20.010
+uh create separate tool or to maintain the calculation part
+
+01:11:20.010 --> 01:11:25.610
+in the recording or how it will either or the llm will only
+
+01:11:25.610 --> 01:11:28.030
+one thing let me let me give you one feedback you have not
+
+01:11:28.030 --> 01:11:30.250
+executed any example that i have discussed throughout the
+
+01:11:30.250 --> 01:11:34.050
+class i can see that right please go ahead and discuss
+
+01:11:34.050 --> 01:11:37.630
+because like i can see like you don't have a practical like
+
+01:11:37.630 --> 01:11:40.610
+exposure to any of these please go ahead and execute all
+
+01:11:40.610 --> 01:11:43.790
+those projects which i have discussed since a day zero right
+
+01:11:43.930 --> 01:11:47.190
+okay then then come to class and ask the question because i
+
+01:11:47.190 --> 01:11:50.690
+don't see a valid question in your questions basically right
+
+01:11:50.690 --> 01:11:55.370
+basically what i can see is that you have uh like
+
+01:11:55.370 --> 01:11:58.490
+misunderstanding about a very basic concept which is
+
+01:11:58.490 --> 01:12:04.210
+required again okay okay yeah do it yeah do it and then come
+
+01:12:04.210 --> 01:12:07.130
+back to me and then i'll answer all of your questions okay
+
+01:12:07.130 --> 01:12:09.810
+maybe maybe you won't ask these questions your question set
+
+01:12:09.810 --> 01:12:14.630
+will change by the way okay okay okay yeah uh next one is
+
+01:12:14.630 --> 01:12:17.770
+okay hital is saying uh sir can we uh integrate a multiple
+
+01:12:17.770 --> 01:12:21.090
+database in chat application like one have pine cone yeah i
+
+01:12:21.090 --> 01:12:23.870
+think that we have done with respect to mcp last class
+
+01:12:23.870 --> 01:12:27.350
+itself uh so multiple means you can ten hundred thousand
+
+01:12:27.350 --> 01:12:30.570
+whatever you want it's your wish you can do it right that is
+
+01:12:30.570 --> 01:12:34.610
+pretty much possible we have already done that right uh next
+
+01:12:34.610 --> 01:12:39.700
+one is yeah asit please go ahead with the question yeah good
+
+01:12:39.700 --> 01:12:47.600
+morning uh yeah yeah yes just uh uh first is uh can help you
+
+01:12:47.600 --> 01:12:51.220
+to understand what is when we use the mcp and when we use
+
+01:12:51.220 --> 01:12:58.820
+the a2a uh see mcp you can try to use it so wherever uh for
+
+01:12:58.820 --> 01:13:02.960
+example uh some i have built my ai right for example i have
+
+01:13:02.960 --> 01:13:05.780
+built my uri system let me explain in that way so i have
+
+01:13:05.780 --> 01:13:10.060
+built my uri system and uh here inside a uri system so i am
+
+01:13:10.060 --> 01:13:13.400
+telling you that that okay so when you are trying to chat i
+
+01:13:13.400 --> 01:13:16.940
+have given you uh basically provision so where you can come
+
+01:13:16.940 --> 01:13:21.040
+and you can try to attach your own tool same if i'll talk
+
+01:13:21.040 --> 01:13:25.400
+about open ai so let me open up a chat gpt by the way right
+
+01:13:25.400 --> 01:13:30.320
+and if you will go to chat gpt this is a chat gpt right and
+
+01:13:30.320 --> 01:13:33.620
+if you will go here and if you will go to its setting by the
+
+01:13:33.620 --> 01:13:37.520
+way so here you will be able to see something called as a
+
+01:13:37.520 --> 01:13:41.580
+connection interface personalization account yeah so here
+
+01:13:41.580 --> 01:13:44.500
+you will be able to find out the uh connection are you
+
+01:13:44.500 --> 01:13:47.580
+sharing something okay okay i think yeah i'm sharing
+
+01:13:47.580 --> 01:13:53.180
+something i'm not so uh literally when i uh uh finding this
+
+01:13:53.180 --> 01:13:57.980
+mcp is a model context protocol right uh yes it means uh the
+
+01:13:57.980 --> 01:14:02.480
+context of one model llms if i'm using multiple uh model so
+
+01:14:02.480 --> 01:14:06.200
+one model context how can you pass to the next model uh is
+
+01:14:06.200 --> 01:14:11.300
+that my understanding is correct uh no i would say uh
+
+01:14:11.300 --> 01:14:15.940
+correct me correct me yeah so basically mcp is something
+
+01:14:15.940 --> 01:14:18.260
+okay let me let me show you i think my screen is visible
+
+01:14:18.260 --> 01:14:22.060
+right no i think i'm not sharing my screen okay let me share
+
+01:14:22.060 --> 01:14:25.540
+my screen i'll give you a very simple understanding uh so
+
+01:14:25.540 --> 01:14:29.560
+for example i'm using chat gpt right i'm using some other
+
+01:14:29.560 --> 01:14:33.800
+llms by the way yeah now chat gpt will try to give me an
+
+01:14:33.800 --> 01:14:37.020
+answer based on chat gpt's understanding so whatever like
+
+01:14:37.020 --> 01:14:39.320
+question i'm going to ask if chat gpt understands it is
+
+01:14:39.320 --> 01:14:43.180
+going to give me the answer now chat gpt will not be able to
+
+01:14:43.180 --> 01:14:46.920
+give me an answer if I am asking some question with respect
+
+01:14:46.920 --> 01:14:49.640
+to my personal data. For example, if you will go to chatgpt
+
+01:14:49.640 --> 01:14:53.220
+.com and if you are going to ask a question that, okay, so
+
+01:14:53.220 --> 01:14:57.460
+what was a recent release on a Euron? The way I have asked
+
+01:14:57.460 --> 01:15:00.480
+to this WhatsApp, right? The way I have asked to this
+
+01:15:00.480 --> 01:15:03.660
+WhatsApp, if you will go and ask a same question that tell
+
+01:15:03.660 --> 01:15:06.400
+me the latest course launch from a Euron, chatgpt will not
+
+01:15:06.400 --> 01:15:09.180
+be able to give you an answer. If you are going to ask a
+
+01:15:09.180 --> 01:15:12.980
+chat... Yes, so that problem was solved using the RAG,
+
+01:15:13.020 --> 01:15:18.740
+right? No, so see RAG is something... So, let me come to the
+
+01:15:18.740 --> 01:15:23.860
+conclusion, not RAG. So, here, this is a third-party
+
+01:15:23.860 --> 01:15:26.560
+platform. Just look into this URL. This is a third-party
+
+01:15:26.560 --> 01:15:30.040
+platform, right? It is a chatgpt platform. Now, similarly,
+
+01:15:30.040 --> 01:15:33.700
+there is a PopXLT. Similarly, there is a CloudA, right?
+
+01:15:34.280 --> 01:15:36.680
+Where they are providing you a Sonet model. Similarly, there
+
+01:15:36.680 --> 01:15:40.900
+is a Gemini. Similarly, there can be any number of a system
+
+01:15:40.900 --> 01:15:43.660
+because every company is trying to build something like this
+
+01:15:43.660 --> 01:15:46.100
+kind of app. They are trying to bring the entire company
+
+01:15:46.100 --> 01:15:52.120
+structure into a simple chat window. Now, how this system is
+
+01:15:52.120 --> 01:15:58.260
+going to allow you to integrate your functionality? If
+
+01:15:58.260 --> 01:16:02.340
+chatgpt has to give an answer from your database or maybe to
+
+01:16:02.340 --> 01:16:05.720
+interact with your, I would say, Gmail or maybe interact
+
+01:16:05.720 --> 01:16:10.040
+with your calendar. So, chatgpt should allow you by
+
+01:16:10.040 --> 01:16:14.900
+provisioning something. Agree? Yes. Yes? How you will be
+
+01:16:14.900 --> 01:16:18.220
+able to integrate? So, generally, when we have to establish
+
+01:16:18.220 --> 01:16:21.200
+a system for some communication, so what kind of a protocol
+
+01:16:21.200 --> 01:16:26.380
+we have been using so far or maybe in the beginning of the
+
+01:16:26.380 --> 01:16:29.040
+class, what we have done? So, can I say that we have created
+
+01:16:29.040 --> 01:16:34.120
+an API? Yeah. And we say that, okay, fine. So, anyone who is
+
+01:16:34.120 --> 01:16:37.100
+going to consume this API, so they will be able to access my
+
+01:16:37.100 --> 01:16:39.480
+system. I think this is what kind of a statement we have
+
+01:16:39.480 --> 01:16:42.360
+made and we have seen those examples, right? Yes. Now, how
+
+01:16:42.360 --> 01:16:46.300
+this LLM will be able to access my function, my system,
+
+01:16:46.580 --> 01:16:50.200
+right? So, keeping that in mind, they have created a
+
+01:16:50.200 --> 01:16:53.820
+provision. They have created basically a set of the rule,
+
+01:16:53.960 --> 01:16:57.740
+technically a protocol. And that name of that particular
+
+01:16:57.740 --> 01:17:03.980
+rule is what? MCP, right? So, that you can simply go over
+
+01:17:03.980 --> 01:17:07.920
+here, go to a setting and then you can try to go to apps and
+
+01:17:07.920 --> 01:17:11.520
+connection and then all of these are MCPs, right? Yes. So,
+
+01:17:11.600 --> 01:17:15.360
+here, then how it is different than APIs? Yes. Yes. Yes.
+
+01:17:15.360 --> 01:17:17.760
+Yes. You're doing the... API also doing the same thing.
+
+01:17:17.820 --> 01:17:20.520
+Exactly. Then why do the MCP? So, basically... So, just
+
+01:17:20.520 --> 01:17:23.820
+I'm... This is also I have answered already in my previous
+
+01:17:23.820 --> 01:17:28.540
+class. So, see, MCPs are technically calling a tool. API
+
+01:17:28.540 --> 01:17:31.120
+means what? One function, one API. It means one endpoint,
+
+01:17:31.380 --> 01:17:35.340
+right? One URL, yeah? Another function, another URL. But if
+
+01:17:35.340 --> 01:17:38.120
+you will see the code base that we have already discussed in
+
+01:17:38.120 --> 01:17:42.120
+my previous class. So, here we are trying to give a
+
+01:17:42.120 --> 01:17:46.180
+multiple, right? A multiple, like a... Functions access
+
+01:17:46.180 --> 01:17:50.040
+to... Or we are trying to bind multiple functions in one
+
+01:17:50.040 --> 01:17:55.240
+single list. Yeah? Now, my chat system... So, MCP is
+
+01:17:55.240 --> 01:17:59.100
+allowing me to, you know, search for a particular tool. So,
+
+01:17:59.160 --> 01:18:02.400
+basically, it is allowing me to take an input as a chat,
+
+01:18:02.580 --> 01:18:05.640
+right? So, basically, this protocol is being designed in
+
+01:18:05.640 --> 01:18:08.980
+such a way that it is allowing me to take an input in a form
+
+01:18:08.980 --> 01:18:12.620
+of chat. NLP, by the way, right? In a particular format.
+
+01:18:13.100 --> 01:18:15.660
+Search through the entire list of the tool, which is
+
+01:18:15.660 --> 01:18:21.380
+available to me. And then select our best one. Okay. Yes?
+
+01:18:21.480 --> 01:18:23.780
+So, that is the reason. So, we have... Orchestrating.
+
+01:18:23.940 --> 01:18:26.040
+Orchestrating it is. Finding out which is the best tool for
+
+01:18:26.040 --> 01:18:28.300
+this. Technically, yes. Orchestration. And this is what we
+
+01:18:28.300 --> 01:18:31.340
+have done in my, like, previous class, right? Yeah, we did.
+
+01:18:31.620 --> 01:18:36.300
+New conversation. Now, let me open up. So, here, we have
+
+01:18:36.300 --> 01:18:41.820
+already seen that we... Okay. Cloud will return soon. Okay.
+
+01:18:41.900 --> 01:18:44.780
+Maybe it's some technical issue. Yeah, they are facing...
+
+01:18:44.780 --> 01:18:48.420
+It's a cloud. So, basically, you must have seen that we have
+
+01:18:48.420 --> 01:18:51.520
+attached a multiple tool in one single MCP connection
+
+01:18:51.520 --> 01:18:54.560
+itself, right? So, technically, we have created three. But
+
+01:18:54.560 --> 01:18:57.160
+in three, so almost more than 20 plus tool attachment we
+
+01:18:57.160 --> 01:19:00.800
+have done. And technically, it is trying to explore. But,
+
+01:19:00.800 --> 01:19:03.140
+yeah. So, on a very high level, if someone is going to ask
+
+01:19:03.140 --> 01:19:06.860
+me a question, like, what is MCP? Simple. Giving my system
+
+01:19:06.860 --> 01:19:10.700
+access to any LLM is like where MCP comes into picture. That
+
+01:19:10.700 --> 01:19:13.860
+would be my answer. Got it. Got it. And how is different
+
+01:19:13.860 --> 01:19:17.440
+than... Not easy. Now, you have asked me one more question.
+
+01:19:17.560 --> 01:19:19.980
+I'll come to A2A. So, you have asked me one more question
+
+01:19:19.980 --> 01:19:24.180
+with respect to RAG, right? See, RAG is just a storage.
+
+01:19:24.660 --> 01:19:30.020
+Simple. Just like we have been doing a storage into SQL
+
+01:19:30.020 --> 01:19:33.940
+databases or maybe a NoSQL databases. Similarly, so we are
+
+01:19:33.940 --> 01:19:36.720
+trying to do a storage into a vector databases. We have been
+
+01:19:36.720 --> 01:19:40.840
+firing a query on a SQL database since ages, right? And we
+
+01:19:40.840 --> 01:19:43.880
+are able to fire a query even on NoSQL databases, MongoDB,
+
+01:19:43.940 --> 01:19:47.060
+Cassandra. Like a databases even now. Yeah. Now, with
+
+01:19:47.060 --> 01:19:49.360
+respect to vector databases, what we are doing? We are
+
+01:19:49.360 --> 01:19:51.780
+firing a query, right? Yes. Nature of query is what? My
+
+01:19:51.780 --> 01:19:56.700
+natural language. And also, it's giving me the context. No,
+
+01:19:56.800 --> 01:19:59.400
+no. I mean, like, see, that's a property of the database.
+
+01:19:59.560 --> 01:20:02.400
+SQL database is having its own property. It will go do a
+
+01:20:02.400 --> 01:20:05.060
+sequential search. And then, if you are looking for a joint
+
+01:20:05.060 --> 01:20:07.020
+operation, group operation, it will do all those joint
+
+01:20:07.020 --> 01:20:09.100
+operation, group operation, give you the result. Now, that
+
+01:20:09.100 --> 01:20:12.220
+is a property of the database, right? In case of, basically,
+
+01:20:12.340 --> 01:20:14.740
+in case of a MongoDB, so, it's a property of the database
+
+01:20:14.740 --> 01:20:17.920
+that it allows you document-based search, right? So, it's a
+
+01:20:17.920 --> 01:20:20.520
+property of a vector database that it is allowing you a
+
+01:20:20.520 --> 01:20:23.780
+semantic-based search. Yes. Yeah. Cosine similarity-based
+
+01:20:23.780 --> 01:20:25.680
+search. So, it is going to, that is a property. But
+
+01:20:25.680 --> 01:20:29.860
+technically, if I'll talk about a RG system, so, it is using
+
+01:20:29.860 --> 01:20:32.980
+a vector database and RG system is nothing but whenever I'll
+
+01:20:32.980 --> 01:20:36.200
+fire a query. So, instead of hitting an LLM, for example,
+
+01:20:36.200 --> 01:20:38.520
+this model directly, what it will do? So, it will basically
+
+01:20:38.520 --> 01:20:42.380
+go to my database and then it will try to like, you know,
+
+01:20:42.400 --> 01:20:45.200
+search the result. Based on my natural language, whatever
+
+01:20:45.200 --> 01:20:48.060
+query which I have asked, right? For example, I am building
+
+01:20:48.060 --> 01:20:50.980
+same system. For example, this system, where it is supposed
+
+01:20:50.980 --> 01:20:54.360
+to give an answer with respect to Euron, yeah, is that same
+
+01:20:54.360 --> 01:20:57.540
+system. So, based on my query, it will, instead of hitting
+
+01:20:57.540 --> 01:21:00.400
+my, you know, LLM directly, what it will do? It will go to
+
+01:21:00.400 --> 01:21:03.380
+my database and vector database, let's suppose. In a vector
+
+01:21:03.380 --> 01:21:05.500
+database, I have stored all those results. So, it will try
+
+01:21:05.500 --> 01:21:09.700
+to search and whatever will be the result. So, it will try
+
+01:21:09.700 --> 01:21:13.300
+to bring, give it to LLM again. Okay. So, that LLM will be
+
+01:21:13.300 --> 01:21:16.200
+able. To structure it, right? Yes. LLM will be able to
+
+01:21:16.200 --> 01:21:18.560
+structure it and then it will show me the result. So, that
+
+01:21:18.560 --> 01:21:22.940
+is a flow basically RAG follows. So, wherever I want an
+
+01:21:22.940 --> 01:21:29.600
+answer from my data, yeah, from my data. So, in that case, I
+
+01:21:29.600 --> 01:21:33.720
+can try to use a RAG based approach from my data, not a
+
+01:21:33.720 --> 01:21:37.240
+system I am talking about, from my data. So, after learning
+
+01:21:37.240 --> 01:21:40.660
+this agent, right? So, now through agents, we can even call
+
+01:21:40.660 --> 01:21:45.100
+the APIs, right? You can call APIs. You can call MCPs. You
+
+01:21:45.100 --> 01:21:48.360
+can call your RAG system. So, if I am able to call the APIs,
+
+01:21:48.560 --> 01:21:53.500
+I can call to my any database? Yes, exactly. Yes. Yes. Now,
+
+01:21:53.660 --> 01:21:59.560
+do we need the RAG then? Yes. So, see, I told you, right? I
+
+01:21:59.560 --> 01:22:03.640
+think we misunderstood a system like a RAG system. It's a
+
+01:22:03.640 --> 01:22:08.300
+matching system. In case of your SQL database. So,
+
+01:22:08.380 --> 01:22:11.220
+basically, SQL database will try to do a sequential search,
+
+01:22:11.360 --> 01:22:14.520
+right? And in terms of doing a similarity. So, it is having
+
+01:22:14.520 --> 01:22:17.380
+its own limitation, right? It's having its own bottleneck.
+
+01:22:17.600 --> 01:22:21.460
+Think always RAG as a kind of a system. So, where we are
+
+01:22:21.460 --> 01:22:25.540
+doing a search based on like a similarity or NLP search we
+
+01:22:25.540 --> 01:22:28.760
+are doing. Yeah, then it will be database, right? Vector DB,
+
+01:22:28.880 --> 01:22:32.920
+right? Actually, the backbone of RAG is actually a vector
+
+01:22:32.920 --> 01:22:35.840
+DB. Without vector DB, RAG is nothing technically. Yeah. So,
+
+01:22:35.920 --> 01:22:39.300
+if I connect to API, to vector DB, then I don't need RAG.
+
+01:22:39.460 --> 01:22:42.760
+Just connect with it. I'm just connecting the dots. Okay,
+
+01:22:42.760 --> 01:22:45.520
+fine. So, let's suppose you are hitting like a vector
+
+01:22:45.520 --> 01:22:48.460
+database with the help of API. That's okay. And then it will
+
+01:22:48.460 --> 01:22:51.420
+give you a result, right? Huh. Now, where you will pass that
+
+01:22:51.420 --> 01:22:58.150
+result? Or maybe you will... To LLM. Yeah. So, in a RAG also
+
+01:22:58.150 --> 01:23:00.950
+two parts. One is indexing. One is retrieval. In the
+
+01:23:00.950 --> 01:23:02.870
+retrieval, we will connect to the LLM. Here, we will connect
+
+01:23:02.870 --> 01:23:05.650
+to the LLM. Right? Yeah. Let's imagine this situation. So,
+
+01:23:05.690 --> 01:23:07.830
+you said that you have an API. It will hit the vector
+
+01:23:07.830 --> 01:23:11.070
+databases. Now, it will try to give you a response. Agree?
+
+01:23:11.250 --> 01:23:14.270
+Yeah? Now, what will be your next step? So, what you will
+
+01:23:14.270 --> 01:23:15.390
+do? What will be that response?
+
+01:23:18.780 --> 01:23:23.720
+Yeah. That response I pass to the user. Okay. Either you
+
+01:23:23.720 --> 01:23:27.160
+will try to pass that raw response to the user. Or maybe you
+
+01:23:27.160 --> 01:23:29.600
+will try to pass to the LLM. So, that you know, it will be
+
+01:23:29.600 --> 01:23:32.700
+able to rephrase it. Right? Yes. Yes. Technically, we are
+
+01:23:32.700 --> 01:23:39.320
+doing RAG. Huh. We are doing RAG. Right? Yeah. So, yeah.
+
+01:23:39.480 --> 01:23:42.460
+Technically, we are doing RAG. So, RAG is nothing but it's a
+
+01:23:42.460 --> 01:23:45.700
+concept. Retrieval Augmented Generation. It's just a
+
+01:23:45.700 --> 01:23:48.800
+concept. How you are achieving... How you are designing your
+
+01:23:48.800 --> 01:23:54.200
+RAG, it all depends upon you. As simple as that. If
+
+01:23:54.200 --> 01:23:56.760
+retrieval... Retrieval means you are going to vector
+
+01:23:56.760 --> 01:24:00.020
+databases. Augmented means... So, you are trying to like
+
+01:24:00.020 --> 01:24:02.600
+fetch it and then give it to the LLMs. And then LLMs is
+
+01:24:02.600 --> 01:24:06.320
+going to generate the final response. That's RAG. Right?
+
+01:24:06.520 --> 01:24:09.560
+Now, I am trying to hit my vector database with the help of
+
+01:24:09.560 --> 01:24:16.380
+APIs. Okay. Not an issue at all. Right? Yeah. Yeah. So, RAG
+
+01:24:16.380 --> 01:24:19.800
+is a fundamental... It's a concept. A2A is what concept? MCP
+
+01:24:19.800 --> 01:24:23.620
+is a what concept, basically. It's a theory. So, by using
+
+01:24:23.620 --> 01:24:26.680
+agents, those things can be achieved also. There is an
+
+01:24:26.680 --> 01:24:30.140
+alternative way. Yes. You can use agent. You can create a
+
+01:24:30.140 --> 01:24:33.680
+MCP. Technically, MCP will call some tool. Right? Or maybe
+
+01:24:33.680 --> 01:24:37.540
+APIs. As you said, APIs. So, MCP will call APIs. Right? And
+
+01:24:37.540 --> 01:24:40.380
+with the help of MCP, it will try to fetch all of those
+
+01:24:40.380 --> 01:24:43.620
+results from somewhere. So, you can use any kind of agent.
+
+01:24:43.700 --> 01:24:46.740
+You can try to create your own MCP server. And then your
+
+01:24:46.740 --> 01:24:50.360
+MCP... It will call. Anything is like fine. But yeah, if you
+
+01:24:50.360 --> 01:24:53.240
+are retrieving something from vector DB, that is technically
+
+01:24:53.240 --> 01:24:57.200
+a RAG. Now, if you are calling it with the help of agent,
+
+01:24:57.260 --> 01:25:00.940
+agent means auto call. Auto call. Yeah. This is the meaning
+
+01:25:00.940 --> 01:25:03.360
+of agent. Right? It will go for the auto call. So,
+
+01:25:03.440 --> 01:25:07.140
+technically, it will be called as a agentic RAG. People have
+
+01:25:07.140 --> 01:25:10.320
+given a name to it as a agentic RAG. Yeah. Okay. But
+
+01:25:10.320 --> 01:25:12.860
+technically, it's the same thing that you are doing. Yeah.
+
+01:25:12.920 --> 01:25:18.800
+Thank you. And the MCP and this A2A. So... This is also A2A
+
+01:25:18.800 --> 01:25:21.080
+protocol, right? A2A protocol. Both are the protocols,
+
+01:25:21.280 --> 01:25:24.500
+right? So, how is that different? Yeah. So, see, I told you
+
+01:25:24.500 --> 01:25:26.760
+about the MCP, right? So, let's suppose this LLM is
+
+01:25:26.760 --> 01:25:30.040
+expecting me to, you know, this LLM, chat GPT, is expecting
+
+01:25:30.040 --> 01:25:33.780
+me to, like, access some of my system. So, MCP is a
+
+01:25:33.780 --> 01:25:37.100
+protocol, right? By which... Because they have created MCP
+
+01:25:37.100 --> 01:25:39.260
+and they said that, okay, fine. So, create your own MCP,
+
+01:25:39.340 --> 01:25:42.480
+attach it with me. And they have provisioned it. And again,
+
+01:25:42.540 --> 01:25:44.820
+everyone is trying to do it so that, you know, things will
+
+01:25:44.820 --> 01:25:47.480
+be easy. Anyone can give any system access. Anyone can give
+
+01:25:47.480 --> 01:25:50.580
+any system access to anyone. Now, A2A. A2A is nothing but
+
+01:25:50.580 --> 01:25:53.900
+it's, again, an orchestration framework. So, wherever I have
+
+01:25:53.900 --> 01:25:56.740
+to do or I have to establish a communication between
+
+01:25:56.740 --> 01:26:00.500
+multiple agents, not just one. So, between a multiple agent,
+
+01:26:00.660 --> 01:26:05.520
+in that case, I can go ahead with an A2A protocol so that it
+
+01:26:05.520 --> 01:26:08.380
+will be able to... And that too in a heterogeneous system.
+
+01:26:08.480 --> 01:26:11.400
+For example, in a LAN chain itself, by using LAN chain or
+
+01:26:11.400 --> 01:26:14.540
+maybe by using crew AI, right? I have created 10 agents,
+
+01:26:14.720 --> 01:26:19.340
+right? In LAN chain itself. Then I don't even need A2A.
+
+01:26:19.420 --> 01:26:22.060
+Because LAN chain itself provides you a multi-agent
+
+01:26:22.060 --> 01:26:25.240
+communication. Their library is having that capability,
+
+01:26:25.480 --> 01:26:29.340
+right? Now, let's suppose crew AI. I have created 10-20
+
+01:26:29.340 --> 01:26:33.180
+agents. Fine? For like a different kind of purposes. I don't
+
+01:26:33.180 --> 01:26:36.780
+need A2A over there. Because crew AI itself provides you a
+
+01:26:36.780 --> 01:26:40.460
+multi-agent orchestration, right? Yeah, and A10 also. Same
+
+01:26:40.460 --> 01:26:44.440
+goes with everyone. So, where I need then A2A. Exactly.
+
+01:26:44.620 --> 01:26:47.860
+Yeah, coming to that point. Now, so basically... What I have
+
+01:26:47.860 --> 01:26:51.300
+done... So, basically, I have a big team or maybe a small
+
+01:26:51.300 --> 01:26:56.540
+team. One team is using LAN chain. One team is using crew
+
+01:26:56.540 --> 01:27:01.320
+AI. One team is using autogen. Autogen, right? Heterogeneous
+
+01:27:01.320 --> 01:27:04.280
+system. Yeah. So, 10 agents they have created, 20 agents
+
+01:27:04.280 --> 01:27:07.020
+they have created, and 30 agents they have created. Oh,
+
+01:27:07.020 --> 01:27:09.400
+heterogeneous system. Got it. Yeah. So, basically, it became
+
+01:27:09.400 --> 01:27:13.920
+a heterogeneous system. And basically, like I... Now, so LAN
+
+01:27:13.920 --> 01:27:17.560
+chain provides a multi-agent orchestration. Only in LAN
+
+01:27:17.560 --> 01:27:20.780
+chain, right? Crew AI provides only in crew AI. And autogen
+
+01:27:20.780 --> 01:27:25.060
+provides only in autogen. But my problem is how to establish
+
+01:27:25.060 --> 01:27:28.420
+a communication between these two when all of these agents
+
+01:27:28.420 --> 01:27:32.620
+framework, which my team has... So, one approach is convert
+
+01:27:32.620 --> 01:27:36.040
+every agent into one framework, right? But as your team will
+
+01:27:36.040 --> 01:27:39.560
+grow and there will be a fight that no, my is best, my is
+
+01:27:39.560 --> 01:27:41.760
+best, I can't do it. Or again, there will be a headache,
+
+01:27:41.820 --> 01:27:44.480
+right? Converting this 20-30 because technically you are
+
+01:27:44.480 --> 01:27:47.460
+rewriting the entire code base, right? Yeah. Got it. Now,
+
+01:27:47.580 --> 01:27:51.760
+you can use what? You can use one big umbrella on top of it.
+
+01:27:51.820 --> 01:27:56.200
+And that big umbrella is called as A2A. Use A2A library and
+
+01:27:56.200 --> 01:28:00.500
+now it will allow you to communicate between LAN chain, crew
+
+01:28:00.500 --> 01:28:05.920
+AI, autogen. Very simple. Yeah. One more thing. When I
+
+01:28:05.920 --> 01:28:10.020
+exploring this, there is one more protocol is ACP. Agent
+
+01:28:10.020 --> 01:28:13.500
+Communication Protocol. So, this is by IBM, right? So, I
+
+01:28:13.500 --> 01:28:17.080
+mean... Wait for some... Wait for some... Sometime people
+
+01:28:17.080 --> 01:28:20.260
+are like... People are going crazy after AI. They are doing
+
+01:28:20.260 --> 01:28:25.480
+anything. Okay. So, this is one. Okay. There are a lot more
+
+01:28:25.480 --> 01:28:29.060
+questions, but I won't take your much time. Sometimes I
+
+01:28:29.060 --> 01:28:33.160
+message you. And I also share you one thing I achieved last
+
+01:28:33.160 --> 01:28:36.940
+two months. So, I will tell you. Yeah. Yeah. Sure. Thank
+
+01:28:36.940 --> 01:28:41.180
+you. Thank you. Okay. Yeah. Narish, please go ahead with the
+
+01:28:41.180 --> 01:28:45.620
+question. Yeah. Hi. Good morning. Yeah. Good morning. Go
+
+01:28:45.620 --> 01:28:49.840
+ahead, please. So, I don't have a question, actually. I have
+
+01:28:49.840 --> 01:28:54.880
+a suggestion. Okay. So, we have built MCP and locally we are
+
+01:28:54.880 --> 01:29:00.060
+able to access it, our system. Right now, I am trying to
+
+01:29:00.060 --> 01:29:03.860
+expose it and access it in NIT and as you showed in chat
+
+01:29:03.860 --> 01:29:08.480
+GPT, we can connect our own MCP servers in chat GPT. Yes.
+
+01:29:08.480 --> 01:29:11.720
+Yeah. So, I was trying that, but, you know, facing a lot of
+
+01:29:11.720 --> 01:29:15.080
+issues because I am going through the document and any...
+
+01:29:15.640 --> 01:29:18.140
+So, you are not... Technically, you are not able to do it.
+
+01:29:18.400 --> 01:29:21.100
+Yes. Yes. Yes. Okay. We will see if we can discuss something
+
+01:29:21.100 --> 01:29:25.660
+with respect to hosting of this MCPs as a SSC. Fine? Yeah.
+
+01:29:26.120 --> 01:29:31.340
+Okay. Fine. Got it. Yeah. Thank you, sir. Yeah. Okay. Anil,
+
+01:29:31.360 --> 01:29:35.060
+go ahead, please, with the question. I was just hearing for
+
+01:29:35.060 --> 01:29:36.580
+your conversation that you are telling the difference
+
+01:29:36.580 --> 01:29:41.120
+between RAG, MCP, where you are using it. Understood. So, I
+
+01:29:41.120 --> 01:29:44.500
+got the point. The point, my question was that MCP, you have
+
+01:29:44.500 --> 01:29:46.340
+done it. So, you are exposing. You are exposing your
+
+01:29:46.340 --> 01:29:49.800
+personal data or you are exposing your function as a tool to
+
+01:29:49.800 --> 01:29:54.020
+the CloudA. Now, the question here is that now CloudA, since
+
+01:29:54.020 --> 01:29:56.840
+you have installed it or pre-installed the CloudA or you
+
+01:29:56.840 --> 01:29:59.520
+installed it locally, you have done it. But similarly, and
+
+01:29:59.520 --> 01:30:03.260
+you deployed MCP or exposed MCP here. But today, you have
+
+01:30:03.260 --> 01:30:08.120
+exposed CloudA. How can we expose to other tools like
+
+01:30:08.120 --> 01:30:14.020
+ChatGPT or anything? Or MCP there? ChatGPT has already given
+
+01:30:14.020 --> 01:30:17.900
+you a provision. See, it depends upon... Like a tool which
+
+01:30:17.900 --> 01:30:20.540
+has given you a provision. So, this is my ChatGPT. See, I
+
+01:30:20.540 --> 01:30:23.440
+have opened ChatGPT itself. Now, click over here. Go to a
+
+01:30:23.440 --> 01:30:26.620
+setting. Click on apps and connectors. And then here, come
+
+01:30:26.620 --> 01:30:28.880
+to a developer mode, advanced setting. Enable a developer
+
+01:30:28.880 --> 01:30:31.480
+mode. Now, once you are going to enable a developer mode,
+
+01:30:31.600 --> 01:30:33.820
+you will be able to see this button. Before that, you won't.
+
+01:30:33.960 --> 01:30:36.840
+All of... Actually, this Booking.com, Canva, Coursera,
+
+01:30:36.940 --> 01:30:39.900
+Spotify, Expedia that you are able to see, right? It's
+
+01:30:39.900 --> 01:30:43.200
+actually a MCP exposure. So, here, if you have to expose
+
+01:30:43.200 --> 01:30:46.100
+your own, so click on create. Now, here, you will be... You
+
+01:30:46.100 --> 01:30:48.960
+will be able to get a MCP server URL. So, create your own
+
+01:30:48.960 --> 01:30:52.940
+MCP. Host it as a SSC, basically. And system send event,
+
+01:30:53.100 --> 01:30:56.640
+basically. This is the full form of SSC. And just give a
+
+01:30:56.640 --> 01:30:59.500
+URL, your own URL over here. So, I have done that. I have
+
+01:30:59.500 --> 01:31:02.540
+done that for a couple of my MCPs already with the ChatGPT.
+
+01:31:02.680 --> 01:31:05.560
+So, just give your URL over here. Simple. Give a name, any
+
+01:31:05.560 --> 01:31:08.640
+kind of a description. Create. Done. So, in that case, you
+
+01:31:08.640 --> 01:31:11.160
+are saying we need not change anything from the code of MCP
+
+01:31:11.160 --> 01:31:13.520
+exposure? No, we are not changing anything. So, we are just
+
+01:31:13.520 --> 01:31:15.920
+like, you know, hosting it somewhere on a cloud. And...
+
+01:31:16.100 --> 01:31:18.680
+Exposing it as a SSC. And then, like, just pasting a URL
+
+01:31:18.680 --> 01:31:21.740
+over there. That's it. It will be able to access. Okay.
+
+01:31:22.020 --> 01:31:25.220
+Second question is that in CloudA, you showed that everyone,
+
+01:31:25.340 --> 01:31:28.440
+like individual, everyone who exposed the MCP in your local
+
+01:31:28.440 --> 01:31:32.140
+system. And they are able to do individually. But if you are
+
+01:31:32.140 --> 01:31:34.920
+deployed, how can I see? I mean, it should be deployed in
+
+01:31:34.920 --> 01:31:38.000
+some server. Basically, see. If I have deployed it, so I
+
+01:31:38.000 --> 01:31:40.160
+have to share the URL. Otherwise, you won't be able to see
+
+01:31:40.160 --> 01:31:43.600
+it. And let's suppose if something is working in my CloudA,
+
+01:31:43.680 --> 01:31:46.520
+in my local system, in my local setup, right? You won't be
+
+01:31:46.520 --> 01:31:49.960
+able to use it. So, basically, it's MCP has been created
+
+01:31:49.960 --> 01:31:53.380
+with the personalization. See, to make your system
+
+01:31:53.380 --> 01:31:56.600
+personalize that, okay, I want to expose my own system. That
+
+01:31:56.600 --> 01:31:59.940
+was the whole idea. Now, on a company label, if you have to
+
+01:31:59.940 --> 01:32:02.520
+do it, let's suppose you have created one server, right? So,
+
+01:32:02.560 --> 01:32:05.740
+where some... See, my mail is my mail. My calendar is my
+
+01:32:05.740 --> 01:32:07.580
+calendar, right? But let's suppose I'm talking about
+
+01:32:07.580 --> 01:32:10.720
+database. Or generic data or some weather.com or something
+
+01:32:10.720 --> 01:32:13.140
+you created. Technically, my database is not my database.
+
+01:32:13.200 --> 01:32:15.640
+It's a company's database, right? Right. So, let's
+
+01:32:15.640 --> 01:32:17.940
+suppose... There are 10 people who would like to use it. So,
+
+01:32:18.020 --> 01:32:21.300
+I have created a MCP. Now, what I will do, I'll create this
+
+01:32:21.300 --> 01:32:25.180
+kind of a URL. Simple, right? I'll try to create this kind
+
+01:32:25.180 --> 01:32:29.160
+of a URL, SSC URL. I'll try to give a SSC URL. So, anyone
+
+01:32:29.160 --> 01:32:31.720
+who will be having this authorization for this URL and then
+
+01:32:31.720 --> 01:32:34.020
+maybe I can try to secure it. Secure it with the help of
+
+01:32:34.020 --> 01:32:37.640
+auth, password basically, right? Maybe API auth basically. I
+
+01:32:37.640 --> 01:32:40.620
+can try to expose it. And then I can share it with you. I
+
+01:32:40.620 --> 01:32:43.800
+can share it with any other stakeholder of mine, right? So,
+
+01:32:43.860 --> 01:32:46.600
+now, when they are using a GPT or something... They will
+
+01:32:46.600 --> 01:32:49.000
+just try to paste the URL, sign in and then they will be
+
+01:32:49.000 --> 01:32:52.240
+able to use the database. Simple. Okay. So, tell me if I'm
+
+01:32:52.240 --> 01:32:54.000
+wrong or I'm picking wrong, correct or wrong. Suppose,
+
+01:32:54.200 --> 01:32:56.220
+you're on... We have your neuron, right? You create,
+
+01:32:56.280 --> 01:32:59.700
+developed an MCP in your local system. You expose that URL,
+
+01:32:59.800 --> 01:33:04.300
+what you were telling, right? If you put that in the neuron,
+
+01:33:04.400 --> 01:33:07.780
+everyone can see it, right? Yes. Yeah. So, everyone can see
+
+01:33:07.780 --> 01:33:10.420
+it. If I'm going to put it over there, everyone can see it.
+
+01:33:10.660 --> 01:33:13.780
+Actually, I don't know how many of you remember. But...
+
+01:33:14.320 --> 01:33:18.860
+Like... There is a URI chat system that we have released.
+
+01:33:19.440 --> 01:33:23.340
+Over there, we have also provisioned MCP servers. Okay. And
+
+01:33:23.340 --> 01:33:26.040
+back end, we are not able to... We are not... Don't... Then
+
+01:33:26.040 --> 01:33:28.900
+in a later stage... No, no, no. So, we have allowed you to
+
+01:33:28.900 --> 01:33:31.840
+integrate. Just like a ChatGPT, right? So, even before
+
+01:33:31.840 --> 01:33:34.780
+ChatGPT, so at that point of time, this feature was not
+
+01:33:34.780 --> 01:33:37.980
+available. I think I'm talking about this story like six or
+
+01:33:37.980 --> 01:33:40.700
+eight months back, I think April or March. So, we have
+
+01:33:40.700 --> 01:33:43.040
+already... Maybe you will be able to go and find out the
+
+01:33:43.040 --> 01:33:46.360
+videos. So, we have also given MCP options over there. Just
+
+01:33:46.360 --> 01:33:49.220
+like they are giving you. So that, you know, with URI, come
+
+01:33:49.220 --> 01:33:52.040
+and then, you know, put your own MCPs and do whatever you
+
+01:33:52.040 --> 01:33:56.040
+want. Got it. Thanks. Thanks very much. Yeah. Maybe... Yeah.
+
+01:33:56.060 --> 01:33:58.360
+Adib is saying in MCP course. Yeah. Maybe you can go and
+
+01:33:58.360 --> 01:34:01.480
+check. But yeah, in URI, that feature was there. Then in a
+
+01:34:01.480 --> 01:34:03.800
+later stage, we said that, okay, I'm like, who is going to
+
+01:34:03.800 --> 01:34:07.280
+attach MCP? Let's remove it. Users was very less. So, you
+
+01:34:07.280 --> 01:34:09.180
+know, feature revamped. So, we have removed that feature.
+
+01:34:09.780 --> 01:34:14.000
+Yeah. Got it. Thank you. Yeah. Okay. Let me switch off my
+
+01:34:14.000 --> 01:34:16.380
+developer mode. Yeah. Next question. Dhruv. Dhruv. I think
+
+01:34:16.380 --> 01:34:18.540
+he's asking question. Dhruv is going to be your new mentor,
+
+01:34:18.600 --> 01:34:23.220
+guys, by the way, for your next automation class. Yeah.
+
+01:34:23.240 --> 01:34:26.260
+Dhruv, you have a question? Yeah. So, just I wanted to know.
+
+01:34:26.340 --> 01:34:31.140
+So, there are projects in Intensive Portal. So, there are,
+
+01:34:31.200 --> 01:34:34.720
+like, we have to make something with QAI, we have to use
+
+01:34:34.720 --> 01:34:39.760
+some specific tech stack. So, just I wanted to know, if I
+
+01:34:39.760 --> 01:34:43.280
+have an understanding which tool need to be used, might be
+
+01:34:43.280 --> 01:34:47.500
+there are other tool. As compared to QAI or take an example,
+
+01:34:47.620 --> 01:34:50.240
+there are OpenAI, there are Cloud, there are some other
+
+01:34:50.240 --> 01:34:54.440
+Gemini, right? So, can we tweak to get the result or just
+
+01:34:54.440 --> 01:34:58.960
+stick to that as a learner or what's your suggestion?
+
+01:34:59.120 --> 01:35:01.560
+Whatever is written there, this is what you have to use.
+
+01:35:02.200 --> 01:35:05.920
+Then you have to use that one because as a client, so you
+
+01:35:05.920 --> 01:35:09.240
+won't be, let's suppose you are like working on a client
+
+01:35:09.240 --> 01:35:13.900
+project, right? Right. You won't be having an option. Okay.
+
+01:35:13.900 --> 01:35:17.380
+So, that was my next question. For example, recently one
+
+01:35:17.380 --> 01:35:20.520
+client came to me, like I think two days back, we were like
+
+01:35:20.520 --> 01:35:23.380
+talking about their project and they said that I'm using
+
+01:35:23.380 --> 01:35:27.120
+Vertex and I'm using a model only from Vertex. They're using
+
+01:35:27.120 --> 01:35:30.240
+technically a complete Google Cloud stack and Vertex AI is
+
+01:35:30.240 --> 01:35:33.280
+integrated part of that. Right. So, they said that I don't
+
+01:35:33.280 --> 01:35:36.060
+want to use any other model, I just wanted to use a Vertex
+
+01:35:36.060 --> 01:35:38.340
+and from Vertex itself, I would like to access my Gemini
+
+01:35:38.340 --> 01:35:42.700
+like a model. I don't have any other option. Although there
+
+01:35:42.700 --> 01:35:45.480
+are like a millions of like a model, even the best one which
+
+01:35:45.480 --> 01:35:47.720
+is available in the market. But if client has said that,
+
+01:35:47.840 --> 01:35:50.140
+because client have already like done some sort of
+
+01:35:50.140 --> 01:35:51.960
+partnership and agreement with the Google, they are using
+
+01:35:51.960 --> 01:35:57.000
+that stack. So, and they have also like said that even from
+
+01:35:57.000 --> 01:36:00.660
+a genetic framework, so I have to use only this much. I
+
+01:36:00.660 --> 01:36:03.720
+don't have any option. I have to do whatever like in that
+
+01:36:03.720 --> 01:36:06.620
+framework itself. If it will fail, I'll go back to client,
+
+01:36:06.740 --> 01:36:09.140
+then I will negotiate. But yeah, initially I won't be having
+
+01:36:09.140 --> 01:36:12.620
+any option. Okay. So, there might be. In this scenario that
+
+01:36:12.620 --> 01:36:15.420
+client already paid or has taken out their work, the entire
+
+01:36:15.420 --> 01:36:18.520
+team has worked on some kind of technology, that's why you
+
+01:36:18.520 --> 01:36:21.200
+have to use. Exactly. Because you will not be, there is a
+
+01:36:21.200 --> 01:36:23.120
+very high chance that you will not be a first person in a
+
+01:36:23.120 --> 01:36:25.340
+team. Right. They have already worked on something. They
+
+01:36:25.340 --> 01:36:27.400
+have already defined their own like infra and architecture
+
+01:36:27.400 --> 01:36:30.380
+and everything. So, you have to work in the existing system
+
+01:36:30.380 --> 01:36:33.480
+and like that's the reason I say, see, try to understand
+
+01:36:33.480 --> 01:36:35.600
+fundamentals of everything and then like you should, you
+
+01:36:35.600 --> 01:36:37.840
+should know everything because it's not that tough to build
+
+01:36:37.840 --> 01:36:41.060
+by the way. So, what is the harm in terms of, you know,
+
+01:36:41.100 --> 01:36:44.320
+knowing everything? Got it. Might be, might be if I'm like,
+
+01:36:44.460 --> 01:36:47.460
+if we are from lead or from first stage in any company, like
+
+01:36:47.460 --> 01:36:50.860
+in a startup and all and then you will be having a buying,
+
+01:36:50.960 --> 01:36:53.600
+then you will be having a stake holding. You can go and give
+
+01:36:53.600 --> 01:36:55.680
+a suggestion that, okay, let's, because you will be the
+
+01:36:55.680 --> 01:36:58.000
+first one to design something. Right. Right. Right. From
+
+01:36:58.000 --> 01:37:01.700
+that, that level, if, if we think this could be the best,
+
+01:37:01.760 --> 01:37:04.540
+take an example, there is Claudia, there is a chat GPT,
+
+01:37:04.580 --> 01:37:08.320
+Claudia. Nothing. Yeah. Right. Yeah. See, as far as for me,
+
+01:37:08.400 --> 01:37:10.400
+nothing is best. Nothing is worst. Everything actually
+
+01:37:10.400 --> 01:37:14.500
+works. It works. So choose anything. It, it work. You just
+
+01:37:14.500 --> 01:37:17.900
+need a right person in your team. That's it. Okay. Got it.
+
+01:37:17.940 --> 01:37:20.500
+Got it. Are you getting clients from Fever and freelancer?
+
+01:37:20.640 --> 01:37:23.800
+Uh, no, uh, we were like, uh, we don't have account on Fever
+
+01:37:23.800 --> 01:37:27.280
+and freelancer. So we have, uh, our own like, uh, client
+
+01:37:27.280 --> 01:37:31.500
+base, uh, by the way, uh, so who comes to us directly. Uh,
+
+01:37:31.680 --> 01:37:36.420
+and then now we have launched your own consultancy. So even
+
+01:37:36.420 --> 01:37:42.920
+we are getting like a client as you all. Yes. Yeah. Uh,
+
+01:37:43.040 --> 01:37:46.660
+hello. Good morning. Yeah. You go ahead, please. Uh, I want
+
+01:37:46.660 --> 01:37:50.960
+to know about the, in the, uh, Vatex CI Gemini, there is two
+
+01:37:50.960 --> 01:37:54.700
+ways, uh, two ways to pass the credentials. The one is the
+
+01:37:54.700 --> 01:37:58.020
+API key. Uh, API key. And the second with the service
+
+01:37:58.020 --> 01:38:00.440
+account, we can create the JSON format service account,
+
+01:38:00.540 --> 01:38:03.900
+right? Yes. Yeah. Yeah. Uh, so for the production, uh,
+
+01:38:04.040 --> 01:38:08.020
+system, which is the best way. Anything is best way. Both
+
+01:38:08.020 --> 01:38:09.680
+the approach is best. Go ahead with the API key. This is the
+
+01:38:09.680 --> 01:38:12.720
+API approach. I think this is like, uh, everywhere we are
+
+01:38:12.720 --> 01:38:15.880
+trying to use, even when I have access to my calendar and my
+
+01:38:15.880 --> 01:38:20.860
+Gmail. So I have used that same approach. Okay. Yeah. Any,
+
+01:38:20.920 --> 01:38:24.020
+anything is fine. Both, both is secured away. Okay. Even
+
+01:38:24.020 --> 01:38:25.020
+good. Go ahead. Please do a question.
+
+01:38:29.100 --> 01:38:34.380
+Yeah. Yeah. Question when good. No. Okay. So fine guys. Uh,
+
+01:38:34.580 --> 01:38:37.020
+I think it was amazing discussion. I think this discussion
+
+01:38:37.020 --> 01:38:39.340
+was required somewhere because, uh, many of you were
+
+01:38:39.340 --> 01:38:42.360
+confused with respect to these multiple, like, uh, you know,
+
+01:38:42.360 --> 01:38:46.000
+RIG. And then eight to a, and then MCPs where to use, what
+
+01:38:46.000 --> 01:38:49.500
+to use. I'll keep on clarifying these things again and
+
+01:38:49.500 --> 01:38:52.380
+again. And yeah, if you have anything in your mind, so you
+
+01:38:52.380 --> 01:38:55.180
+can feel free to like, ask me a question. Uh, tomorrow
+
+01:38:55.180 --> 01:38:57.900
+agenda, we already know. So today we talked about a theory
+
+01:38:57.900 --> 01:39:00.900
+of like this eight to eight, uh, tomorrow I'll show you a
+
+01:39:00.900 --> 01:39:03.520
+practical. So how I can create, you know, uh, different,
+
+01:39:03.660 --> 01:39:05.920
+different agents and then establish a communication between,
+
+01:39:05.960 --> 01:39:08.800
+uh, different, different agent. Most probably. So I'm trying
+
+01:39:08.800 --> 01:39:11.160
+to like build one. Like I told you, I'm, I'm facing some,
+
+01:39:11.200 --> 01:39:15.200
+uh, library. Like, uh, issue and, uh, yesterday, uh, till
+
+01:39:15.200 --> 01:39:18.440
+after like, uh, you know, late night. So I went for sleep.
+
+01:39:18.680 --> 01:39:23.060
+Uh, so, uh, basically like I'm trying to orchestrate, uh,
+
+01:39:23.080 --> 01:39:26.140
+something. So where, uh, there is a agent into a different,
+
+01:39:26.200 --> 01:39:28.860
+different frameworks and then all of them are able to
+
+01:39:28.860 --> 01:39:31.300
+communicate in between. So heterogeneous, which is going to
+
+01:39:31.300 --> 01:39:35.380
+be the real, real use case of eight to eight, right? If I
+
+01:39:35.380 --> 01:39:37.940
+am, I'm like going to create 10 agents, just in Lantern and
+
+01:39:37.940 --> 01:39:40.880
+then establish a communication that is not going to be a
+
+01:39:40.880 --> 01:39:44.960
+perfect example for eight to eight. I'm like, I can, that is
+
+01:39:44.960 --> 01:39:47.120
+also going to be the example, but yeah, not a perfect one.
+
+01:39:47.220 --> 01:39:50.620
+Uh, so I'm just building that, uh, tomorrow. So we'll, we'll
+
+01:39:50.620 --> 01:39:53.440
+try to, uh, like a discuss that particular part. Yes,
+
+01:39:53.460 --> 01:39:55.820
+everyone. Yeah. Fine.
+
+01:39:58.660 --> 01:40:04.640
+In a chat guys. Yes. Okay. Fine. So let's, uh, resume
+
+01:40:04.640 --> 01:40:08.260
+tomorrow and tomorrow, uh, this eight to a practical, we are
+
+01:40:08.260 --> 01:40:13.340
+going to do it. Take care of you. Thank you so much.
+

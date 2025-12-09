@@ -1,0 +1,5132 @@
+WEBVTT
+
+00:04:43.730 --> 00:04:47.130
+okay everyone so i believe i'm audible and visible to all of
+
+00:04:47.130 --> 00:04:53.410
+you right yeah so i think you can ping me in a chat so those
+
+00:04:53.410 --> 00:04:57.770
+who have joined through a zoom inside a class yeah so that
+
+00:04:57.770 --> 00:05:00.590
+we can start you know our discussions okay
+
+00:05:11.180 --> 00:05:15.380
+so let's start with the discussion guys so till yesterday we
+
+00:05:15.380 --> 00:05:19.740
+have discussed about a question so till 80th number right i
+
+00:05:19.740 --> 00:05:25.220
+believe yes everyone yeah so if i can get yes or no okay so
+
+00:05:25.220 --> 00:05:28.680
+technically we have discussed all of this question till 80th
+
+00:05:28.680 --> 00:05:31.840
+number and any anyone guys who have prepared the answer i
+
+00:05:31.840 --> 00:05:36.480
+have received a couple of answers so from a seat sir right
+
+00:05:36.480 --> 00:05:42.100
+so i have received this 200 answers basically for all 200
+
+00:05:42.100 --> 00:05:46.280
+questions that i have given to all of you but just a
+
+00:05:46.280 --> 00:05:50.080
+feedback this is not a good pattern in terms of preparing
+
+00:05:50.080 --> 00:05:53.400
+this answer because it's it was a completely like a
+
+00:05:53.400 --> 00:05:56.580
+monotonous answer that i'm able to see everywhere same
+
+00:05:56.580 --> 00:05:58.720
+pattern has been followed for every kind of a question
+
+00:05:58.720 --> 00:06:02.520
+similar kind of answer has been given plus example is
+
+00:06:02.520 --> 00:06:05.140
+missing analogy is missing so so many things are missing by
+
+00:06:05.140 --> 00:06:08.600
+the way and if someone is going to read out this answer so
+
+00:06:08.600 --> 00:06:14.180
+it's it's not pretty much clear plus this answer is not like
+
+00:06:14.180 --> 00:06:17.700
+any anyone who is a beginner so i don't think that anyone
+
+00:06:17.700 --> 00:06:20.560
+will be able to understand this particular answer so just
+
+00:06:20.560 --> 00:06:25.020
+advice try to look into this pattern don't follow this
+
+00:06:25.020 --> 00:06:28.620
+pattern so maybe you can try to ask gpt or maybe any kind of
+
+00:06:28.620 --> 00:06:31.920
+ai system that try to give me an answer which can be
+
+00:06:31.920 --> 00:06:34.500
+understood by beginner and then try to include all the
+
+00:06:34.500 --> 00:06:37.780
+technologies and wherever required so try to include
+
+00:06:37.780 --> 00:06:42.100
+architecture discussion as well so maybe in that way it is
+
+00:06:42.100 --> 00:06:46.320
+going to give you a better answer this pattern is not at all
+
+00:06:46.320 --> 00:06:51.420
+good just my feedback yeah so maybe you can you know use a
+
+00:06:51.420 --> 00:06:55.360
+different prompt a seat for you that that's a feedback yeah
+
+00:06:57.610 --> 00:07:02.290
+sir gpt chat gpt co prompt better banana padega with the
+
+00:07:02.290 --> 00:07:05.610
+example design ah yes yeah so you have to make your like a
+
+00:07:05.610 --> 00:07:09.010
+prompt better that's the only solution because yeah answer
+
+00:07:09.010 --> 00:07:11.870
+when we were looking at it so it's very monotonous means
+
+00:07:11.870 --> 00:07:15.010
+every question has been answered in one pattern plus if you
+
+00:07:15.010 --> 00:07:18.990
+will read out the answer so it's not like some something
+
+00:07:18.990 --> 00:07:22.050
+which anyone can understand i have received a couple of more
+
+00:07:22.050 --> 00:07:25.530
+answers uh i'll just try to share uh with all of you in a
+
+00:07:25.530 --> 00:07:25.930
+group so
+
+00:07:29.950 --> 00:07:33.950
+not for 200 basically uh asit is the first person who have
+
+00:07:33.950 --> 00:07:37.430
+prepared this entire answer for 200 questions but there are
+
+00:07:37.430 --> 00:07:40.110
+other people so who have prepared maybe a 40 maybe a 50
+
+00:07:40.110 --> 00:07:43.290
+maybe a 60 uh they have not prepared it completely so i have
+
+00:07:43.290 --> 00:07:46.810
+not shared with any one of you uh but yeah so just just try
+
+00:07:46.810 --> 00:07:50.770
+to do it yeah try to do it so fine guys uh let's start
+
+00:07:50.770 --> 00:07:54.470
+discussing my answers so i'll start from 81 number question
+
+00:07:54.470 --> 00:07:57.150
+till 80th uh number question i have already discussed each
+
+00:07:57.150 --> 00:07:59.830
+and everything so let's start with designer scalable
+
+00:07:59.830 --> 00:08:04.750
+generative system for a 1 lakh concurrent user okay uh this
+
+00:08:04.750 --> 00:08:09.350
+is a question right uh now uh generative vi uh system right
+
+00:08:09.350 --> 00:08:13.990
+generative system can be uh like many right uh maybe i can
+
+00:08:13.990 --> 00:08:17.110
+uh create a thousand system ten thousand system or millions
+
+00:08:17.110 --> 00:08:20.030
+of different different system i can create in a different
+
+00:08:20.030 --> 00:08:23.590
+different domain yeah so here what we will do so we'll try
+
+00:08:23.590 --> 00:08:26.830
+to take an example of one of the system or maybe one of the
+
+00:08:26.830 --> 00:08:30.070
+problem statement with respect to one of the domain and then
+
+00:08:30.070 --> 00:08:33.450
+we'll try to find out a solution then we'll try to design
+
+00:08:33.450 --> 00:08:35.470
+this particular solution this is how we are going to
+
+00:08:35.470 --> 00:08:39.250
+approach to this particular problem even in an interview if
+
+00:08:39.250 --> 00:08:42.490
+someone is going to ask you that okay how you are going to
+
+00:08:42.490 --> 00:08:46.610
+design uh like some system which will be able to uh you know
+
+00:08:46.610 --> 00:08:52.310
+uh handle 1000 or 1 lakh or maybe 100k have here we have a
+
+00:08:52.310 --> 00:08:56.410
+100k number so 100k user concurrently so it's not like you
+
+00:08:56.410 --> 00:08:59.150
+should start giving an answer you should first of all ask a
+
+00:08:59.150 --> 00:09:01.590
+question that what is the application that you are using or
+
+00:09:01.590 --> 00:09:04.230
+what is uh what is the kind of a system that you are using
+
+00:09:04.230 --> 00:09:05.890
+what is the kind of a problem that you are trying to solve
+
+00:09:05.890 --> 00:09:10.030
+because uh when we talk about this scalable system right
+
+00:09:10.030 --> 00:09:12.590
+it's very much pretty much different with respect to a
+
+00:09:12.590 --> 00:09:14.710
+different different business problem so it's not like a
+
+00:09:14.710 --> 00:09:17.230
+thumb rule that we are going to apply and we are going to
+
+00:09:17.230 --> 00:09:19.910
+use it everywhere yeah pk is saying
+
+00:09:23.810 --> 00:09:24.270
+um
+
+00:09:35.830 --> 00:09:40.850
+okay okay explain about the new course launch okay fine um i
+
+00:09:40.850 --> 00:09:43.910
+think i think my screen is visible uh to all of you right
+
+00:09:43.910 --> 00:09:45.030
+sorry
+
+00:09:46.950 --> 00:09:53.570
+i believe my screen was not visible on a zoom okay okay so I
+
+00:09:53.570 --> 00:10:02.570
+was basically talking about this slide where
+
+00:10:02.570 --> 00:10:08.210
+he has already created an answer or solution of this entire
+
+00:10:08.210 --> 00:10:13.110
+200 questions and my feedback was very simple. This is not
+
+00:10:13.110 --> 00:10:17.910
+that great. It's not proper. Maybe you have to enhance your
+
+00:10:17.910 --> 00:10:21.210
+prompt which is generating this entire answer and maybe you
+
+00:10:21.210 --> 00:10:24.310
+can try to include some like an analogy over here, maybe you
+
+00:10:24.310 --> 00:10:27.710
+can try to include some sort of stories in between the
+
+00:10:27.710 --> 00:10:32.150
+questions and answers and then a real time example. This is
+
+00:10:32.150 --> 00:10:35.070
+what I was talking about and that's my feedback by the way.
+
+00:10:35.370 --> 00:10:38.850
+And many people have already given me like this kind of
+
+00:10:38.850 --> 00:10:44.470
+answers. So I have already given them a feedback. But yeah,
+
+00:10:44.490 --> 00:10:46.790
+no one has completed 200 questions. You are the first one
+
+00:10:46.790 --> 00:10:49.930
+who have completed 200 questions. But I believe you will
+
+00:10:49.930 --> 00:10:51.630
+have to re-work on it. You will have to re-work on this
+
+00:10:51.630 --> 00:10:52.210
+entire thing.
+
+00:10:58.860 --> 00:11:01.600
+Sir can you clear the question one lakh concurrent active
+
+00:11:01.600 --> 00:11:05.680
+user total or at the moment one lakh? Now let's assume that
+
+00:11:05.680 --> 00:11:07.840
+at the moment there is one lakh user, one lakh hit is
+
+00:11:07.840 --> 00:11:10.880
+coming. Then how will you design the solution? So that is
+
+00:11:10.880 --> 00:11:14.780
+the question. Let's suppose. Let's suppose like that is the
+
+00:11:14.780 --> 00:11:17.140
+solution that we have to design. So forget about like
+
+00:11:17.140 --> 00:11:19.800
+whether we have a one lakh user or like a 10 lakh user. So
+
+00:11:19.800 --> 00:11:22.100
+let's talk about basically a problem statement and let's
+
+00:11:22.100 --> 00:11:25.000
+talk about a domain for which we are going to solve a
+
+00:11:25.000 --> 00:11:28.700
+particular problem. Okay. Then with respect to that, let's
+
+00:11:28.700 --> 00:11:32.660
+try to talk about the solution. Fine everyone. Yeah. So
+
+00:11:32.660 --> 00:11:33.740
+shall we start our discussion guys?
+
+00:11:44.120 --> 00:11:50.660
+Okay. So here let's try to understand that first of all,
+
+00:11:50.720 --> 00:11:54.320
+let's try to like imagine that what kind of a domain or what
+
+00:11:54.320 --> 00:11:57.000
+kind of a problem that we are going to solve. And based on
+
+00:11:57.000 --> 00:12:01.580
+that, let's try to talk about the solution. So let's say
+
+00:12:01.580 --> 00:12:04.260
+that here we are going to talk about maybe one of the
+
+00:12:04.260 --> 00:12:07.460
+banking application. Right. One of the banking application.
+
+00:12:07.820 --> 00:12:14.960
+So let me share my yeah. So here just to answer to this 81
+
+00:12:14.960 --> 00:12:15.840
+number question.
+
+00:12:18.560 --> 00:12:21.920
+Yeah. So let's suppose we are trying to design a banking
+
+00:12:21.920 --> 00:12:24.620
+application. This is a generative AI application. So where
+
+00:12:24.620 --> 00:12:28.940
+user can come into a system and a user can ask any kind of a
+
+00:12:28.940 --> 00:12:32.260
+question. Right. User can ask any kind of a question and a
+
+00:12:32.260 --> 00:12:35.380
+system is supposed to not just give a response, but it is
+
+00:12:35.380 --> 00:12:39.660
+supposed to even act. Act means. So for example, if a user
+
+00:12:39.660 --> 00:12:42.540
+is coming to my banking application and they are saying
+
+00:12:42.540 --> 00:12:45.840
+that, that okay, block my credit card, block my debit card
+
+00:12:45.840 --> 00:12:51.740
+or what is maybe like a process to get a refund or maybe to
+
+00:12:51.740 --> 00:12:54.980
+do a deposit or to maybe in cash a check or maybe to buy
+
+00:12:54.980 --> 00:12:58.820
+some sort of a schemes from the bank or some other product
+
+00:12:58.820 --> 00:13:01.440
+banking product which is available with respect to the bank.
+
+00:13:01.600 --> 00:13:04.820
+So my system is supposed to give a response. That's okay.
+
+00:13:04.940 --> 00:13:08.040
+Right. But along with that, it is supposed to call some sort
+
+00:13:08.040 --> 00:13:11.080
+of a tool, some sort of functions as well. This is the kind
+
+00:13:11.080 --> 00:13:16.440
+of application that I'm designing now. So here, so if we are
+
+00:13:16.440 --> 00:13:19.660
+trying to design this kind of a solution, this, this, this
+
+00:13:19.660 --> 00:13:22.900
+similar kind of a solution over here. So obviously I need a
+
+00:13:22.900 --> 00:13:27.220
+lot of things in one single places. And again, so the entire
+
+00:13:27.220 --> 00:13:30.420
+story is going to start from the user interface. So user can
+
+00:13:30.420 --> 00:13:33.340
+try to interact with my system by a mobile application.
+
+00:13:33.460 --> 00:13:35.600
+Maybe by like a bit. Okay. So this is a mobile application
+
+00:13:35.600 --> 00:13:38.740
+or any other interfaces or maybe APIs, which I have exposed
+
+00:13:38.740 --> 00:13:42.540
+to the user. So user will be able to interact. So first of
+
+00:13:42.540 --> 00:13:45.800
+all, I have to take a talk about the entry point. So entry
+
+00:13:45.800 --> 00:13:48.400
+point for the user for this banking application is going to
+
+00:13:48.400 --> 00:13:55.070
+be entry point. So what is the entry point? So entry point
+
+00:13:55.070 --> 00:13:57.350
+can be a mobile entry
+
+00:13:59.620 --> 00:14:04.760
+point can be a BEV let's suppose, or maybe through an API.
+
+00:14:04.920 --> 00:14:07.860
+Yeah. So maybe a couple of APIs I have exposed on some third
+
+00:14:07.860 --> 00:14:09.480
+party. Okay. So this is the entry point where the services
+
+00:14:09.480 --> 00:14:13.000
+are integrating my API, my banking API. So maybe through
+
+00:14:13.000 --> 00:14:16.040
+some API, so we have exposed our services. Now this is
+
+00:14:16.040 --> 00:14:18.580
+technically my entry point, right? So where the user will
+
+00:14:18.580 --> 00:14:23.240
+try to enter. Now once user will try to enter over here, you
+
+00:14:23.240 --> 00:14:26.880
+can, you can just like try to think in a way that there is a
+
+00:14:26.880 --> 00:14:29.740
+restaurant, right? There is a restaurant and there are
+
+00:14:29.740 --> 00:14:32.680
+hungry people, or maybe you are feeling hungry and you are
+
+00:14:32.680 --> 00:14:36.000
+going to a restaurant. So whenever you go to a restaurant,
+
+00:14:36.140 --> 00:14:38.840
+so basically there will be a reception desk, right?
+
+00:14:38.840 --> 00:14:42.420
+Reception desk. So basically you will ask for the booking or
+
+00:14:42.420 --> 00:14:44.820
+maybe if you have already booked it. So in that case,
+
+00:14:44.880 --> 00:14:47.560
+obviously they will try to check your entry. Yeah. They will
+
+00:14:47.560 --> 00:14:51.860
+try to check your entry. It simply means that, that you are
+
+00:14:51.860 --> 00:14:54.880
+trying to authorize yourself. So whenever user will come or
+
+00:14:54.880 --> 00:14:59.660
+user will try to hit your system via any of these. So first
+
+00:14:59.660 --> 00:15:03.660
+of all, they will try to go through an auth layer and even
+
+00:15:03.660 --> 00:15:07.520
+before that, right? Even before that. So basically. Yeah.
+
+00:15:08.840 --> 00:15:11.340
+They will try to go inside your system. So they will try to
+
+00:15:11.340 --> 00:15:15.020
+go through a kind of a system. So where, right? They will
+
+00:15:15.020 --> 00:15:18.180
+try to go through a system. So where system will try to
+
+00:15:18.180 --> 00:15:21.460
+distribute a traffic. It's not like a, let's suppose I have
+
+00:15:21.460 --> 00:15:24.700
+a multiple server. So system is going to send all or maybe
+
+00:15:24.700 --> 00:15:28.520
+like a, this user, a user who is going to visit a restaurant
+
+00:15:28.520 --> 00:15:32.240
+and uh, if, if like he's asking about his seat on a
+
+00:15:32.240 --> 00:15:36.220
+reception. So reception people will try to send all the user
+
+00:15:36.220 --> 00:15:39.880
+on one single table. No. What will they do? So reception
+
+00:15:39.880 --> 00:15:43.660
+people will try to send a user on a different, different
+
+00:15:43.660 --> 00:15:47.900
+table. Yeah. Different, different table. So if user will
+
+00:15:47.900 --> 00:15:50.480
+keep on arriving, so obviously user will go and sit on a
+
+00:15:50.480 --> 00:15:52.780
+different, different table. It's not like everyone will come
+
+00:15:52.780 --> 00:15:55.020
+over here, right? Everyone will come on one table.
+
+00:15:55.620 --> 00:15:59.140
+Similarly. So when there will be a traffic, when there will
+
+00:15:59.140 --> 00:16:02.180
+be a flow, because we are talking about one lakh user,
+
+00:16:02.260 --> 00:16:04.280
+right? Concurrent user. Let's suppose we are talking about.
+
+00:16:04.620 --> 00:16:08.600
+So here, whenever user will come into your application. They
+
+00:16:08.600 --> 00:16:11.020
+will try to access your application just like a restaurant,
+
+00:16:11.320 --> 00:16:14.300
+right? So where reception is going to assign a different,
+
+00:16:14.360 --> 00:16:17.960
+different table as per the user, right? As user will come as
+
+00:16:17.960 --> 00:16:22.720
+user will flow, right? So similarly, so here, what system
+
+00:16:22.720 --> 00:16:26.320
+will do? So system will try to divert the entire traffic. So
+
+00:16:26.320 --> 00:16:28.740
+basically system will try to distribute the entire traffic
+
+00:16:28.740 --> 00:16:33.480
+from one places to other places so that, right? So that in
+
+00:16:33.480 --> 00:16:37.800
+one system there won't be a full load. So it will be
+
+00:16:37.800 --> 00:16:41.280
+technically distributed across a complete system. Now how
+
+00:16:41.280 --> 00:16:45.380
+that will be done, right? So by using what kind of approach
+
+00:16:45.380 --> 00:16:48.380
+we are going to achieve this one. So there is something
+
+00:16:48.380 --> 00:16:55.490
+called as API gateway. So API gateway, we try to implement
+
+00:16:55.490 --> 00:16:58.710
+over here inside any kind of a system so that it will be
+
+00:16:58.710 --> 00:17:02.450
+able to distribute. Now API gateway why? So here I can try
+
+00:17:02.450 --> 00:17:07.450
+to use maybe a cloudflare cloud player
+
+00:17:09.340 --> 00:17:14.880
+I can try to use. Maybe I can try to use a Invo or I can try
+
+00:17:14.880 --> 00:17:19.160
+to use basically a Kong kind of a services. So which is
+
+00:17:19.160 --> 00:17:23.460
+going to technically distribute my entire services or entire
+
+00:17:23.460 --> 00:17:26.380
+load which is going to distribute across a different,
+
+00:17:26.460 --> 00:17:30.560
+different, different, different like tables that we have or
+
+00:17:30.560 --> 00:17:33.600
+maybe a server that we have over here. So we can try to use
+
+00:17:33.600 --> 00:17:36.960
+either of these. We can try to use either of these. So with
+
+00:17:36.960 --> 00:17:38.940
+the help of API gateway, this is something which is
+
+00:17:38.940 --> 00:17:41.660
+possible. And this is something that we are going to achieve
+
+00:17:41.660 --> 00:17:45.920
+by the way. Now once this will be done, once we are able to
+
+00:17:45.920 --> 00:17:49.420
+distribute the entire traffic, once we are able to
+
+00:17:49.420 --> 00:17:52.320
+distribute the entire traffic, then what we are going to do?
+
+00:17:52.720 --> 00:17:56.720
+So then we have to, because user will come over here, I have
+
+00:17:56.720 --> 00:17:59.460
+distributed user across a different, different traffic or
+
+00:17:59.460 --> 00:18:01.560
+across a different, different server with the help of API
+
+00:18:01.560 --> 00:18:06.520
+gateway interface. Now user will start asking a question,
+
+00:18:06.800 --> 00:18:09.980
+right? User will start asking some sort of a question. So
+
+00:18:09.980 --> 00:18:12.600
+obviously if user will start asking some sort of a question
+
+00:18:12.600 --> 00:18:16.060
+via this mobile app or maybe web application or maybe
+
+00:18:16.060 --> 00:18:19.220
+through a chat widget or anything, right, through an API if
+
+00:18:19.220 --> 00:18:22.700
+user is trying to hit. So what I will do? So maybe I will
+
+00:18:22.700 --> 00:18:27.340
+try to use a orchestration layer. So I'll try to place
+
+00:18:27.340 --> 00:18:28.720
+orchestration layer over here,
+
+00:18:33.090 --> 00:18:36.830
+orchestrator layer over here. Now what this orchestrator
+
+00:18:36.830 --> 00:18:39.350
+layer will try to do? So orchestrator layer will try to
+
+00:18:39.350 --> 00:18:43.790
+basically like, you know, request or send back to the user
+
+00:18:43.790 --> 00:18:48.510
+basically a request based on the user query. So let's
+
+00:18:48.510 --> 00:18:53.010
+suppose if user is asking a question about maybe let's
+
+00:18:53.010 --> 00:18:57.370
+suppose about some sort of a personal loan or maybe a home
+
+00:18:57.370 --> 00:19:00.150
+loan. Maybe if user is asking some sort of a question with
+
+00:19:00.150 --> 00:19:02.970
+respect to their account. Maybe if user is asking some sort
+
+00:19:02.970 --> 00:19:07.830
+of a question with respect to maybe a check cancellation or
+
+00:19:07.830 --> 00:19:10.950
+some other services because banks used to sell hundreds and
+
+00:19:10.950 --> 00:19:13.570
+thousands of different, different services. So obviously it
+
+00:19:13.570 --> 00:19:15.910
+is not like there will be only one function which is going
+
+00:19:15.910 --> 00:19:18.670
+to respond back or there will be only one API which is going
+
+00:19:18.670 --> 00:19:21.290
+to respond back. There will be thousands of APIs or
+
+00:19:21.290 --> 00:19:25.250
+different API by the way right. So I have to basically place
+
+00:19:25.250 --> 00:19:28.870
+a system which will be able to understand the user question
+
+00:19:28.870 --> 00:19:32.110
+in a very first place right in a very first place and then
+
+00:19:32.110 --> 00:19:34.550
+once it will be able to understand those questions so it is
+
+00:19:34.550 --> 00:19:39.330
+supposed to call the respective APIs simple yeah. So here
+
+00:19:39.330 --> 00:19:43.270
+what I will do so I will try to place may be my agents yeah.
+
+00:19:43.390 --> 00:19:48.610
+I will try to place my multi agent over here. So here we are
+
+00:19:48.610 --> 00:19:51.350
+going to place let's suppose my agent number one, we are
+
+00:19:51.350 --> 00:19:54.250
+going to place my agent number two, we are going to place my
+
+00:19:54.250 --> 00:19:57.330
+agent number three. Again into a scalable mode on a
+
+00:19:57.330 --> 00:20:00.290
+different server so all these agents are available. Now the
+
+00:20:00.290 --> 00:20:02.610
+very first layer of agent what this agent is going to
+
+00:20:02.610 --> 00:20:06.930
+perform. So this agent is going to categorize the entire
+
+00:20:06.930 --> 00:20:10.910
+query. So whatever query user is going to ask. So these
+
+00:20:10.910 --> 00:20:14.270
+agents are going to categorize the entire query that okay.
+
+00:20:14.350 --> 00:20:17.410
+So this query belongs to this particular department or this
+
+00:20:17.410 --> 00:20:20.650
+particular things. If this is a query then I am supposed to
+
+00:20:20.650 --> 00:20:23.270
+call this tool or that tool as simple as that. So let's
+
+00:20:23.270 --> 00:20:26.230
+suppose agent will be having a tool access. I think we have
+
+00:20:26.230 --> 00:20:29.770
+already discussed about it in live classes that agent can
+
+00:20:29.770 --> 00:20:32.730
+have a tool access. Tool access means function access. So we
+
+00:20:32.730 --> 00:20:35.370
+can create an agent with a function access with a tool
+
+00:20:35.370 --> 00:20:38.890
+access or even without it. It's not mandatory but yeah there
+
+00:20:38.890 --> 00:20:41.110
+is a possibility that I can try to create an agent with
+
+00:20:41.110 --> 00:20:44.350
+respect to the tool access. So let's suppose if user is
+
+00:20:44.350 --> 00:20:48.290
+asking that I am looking for my bank balance. So okay agent
+
+00:20:48.290 --> 00:20:51.070
+will be able to understand the questions because agent will
+
+00:20:51.070 --> 00:20:54.070
+come with the power of LLMs and obviously LLMs can
+
+00:20:54.070 --> 00:20:56.670
+understand all of these NLP things in the easiest possible
+
+00:20:56.670 --> 00:20:59.310
+manner right. Even in other language if user is going to ask
+
+00:20:59.310 --> 00:21:02.210
+a question agent will be able to understand that. Basically
+
+00:21:02.210 --> 00:21:04.870
+this layer will try to behave like an orchestrator so it
+
+00:21:04.870 --> 00:21:05.970
+will try to understand that.
+
+00:21:09.910 --> 00:21:13.350
+So here agent is going to basically understand the
+
+00:21:13.350 --> 00:21:15.610
+questions. Let's suppose if user is asking about some sort
+
+00:21:15.610 --> 00:21:19.270
+of a policy. They have taken some product. They are looking
+
+00:21:19.270 --> 00:21:22.530
+for a refund of that product. So they will try to ask that
+
+00:21:22.530 --> 00:21:25.390
+okay fine so what is the criteria or what is the rule for
+
+00:21:25.390 --> 00:21:31.110
+that particular refund and if user is eligible for that
+
+00:21:31.110 --> 00:21:34.570
+particular refund then system should be able to initiate a
+
+00:21:34.570 --> 00:21:37.850
+refund, call a refund automatically. Call a refund
+
+00:21:37.850 --> 00:21:40.150
+automatically if it is related to a particular banking
+
+00:21:40.150 --> 00:21:43.150
+product. If user is eligible for the transaction,
+
+00:21:43.310 --> 00:21:46.050
+transaction should happen automatically while talking to the
+
+00:21:46.050 --> 00:21:49.870
+particular agent. So the only thing is that how good my
+
+00:21:49.870 --> 00:21:53.270
+agents are in terms of understanding a user question context
+
+00:21:53.270 --> 00:21:57.530
+basically and how good my agents are in terms of calling a
+
+00:21:57.530 --> 00:21:59.910
+particular tool or particular function. And everything is
+
+00:21:59.910 --> 00:22:02.770
+going to happen with respect to this orchestration layer. So
+
+00:22:02.770 --> 00:22:06.010
+here we are going to take a decision. So agent will be
+
+00:22:06.010 --> 00:22:07.290
+having a decision. And he will be giving an access of API as
+
+00:22:07.290 --> 00:22:10.890
+well. Function and APIs fine. Same thing right. Basically if
+
+00:22:10.890 --> 00:22:14.110
+my function is sitting somewhere else in some different like
+
+00:22:14.110 --> 00:22:16.370
+a technology stack so obviously I can expose it as an API
+
+00:22:16.370 --> 00:22:19.870
+and I can give an access of an API to my agents and then
+
+00:22:19.870 --> 00:22:22.850
+agent will be able to make a decision automatically. So this
+
+00:22:22.850 --> 00:22:25.910
+is what is going to happen. So here agent will be having API
+
+00:22:25.910 --> 00:22:29.310
+access or maybe you can say tool access. Tool or function
+
+00:22:29.310 --> 00:22:32.530
+access? Yeah. Tool access. So all of these agents will be
+
+00:22:32.530 --> 00:22:35.350
+having all of this access and this decision making is going
+
+00:22:35.350 --> 00:22:38.210
+to happen on a on a regular basis. orchestration layer now
+
+00:22:38.210 --> 00:22:42.650
+once this decision making is going to happen once this
+
+00:22:42.650 --> 00:22:46.950
+decision making will be done now accordingly it is going to
+
+00:22:46.950 --> 00:22:50.390
+call right accordingly it is going to call maybe a function
+
+00:22:50.390 --> 00:22:55.810
+as i said maybe an api as i said or maybe uh let's suppose
+
+00:22:55.810 --> 00:23:00.090
+if user is asking about a policies right policies refund
+
+00:23:00.090 --> 00:23:03.730
+policies let's suppose or maybe about some of the new
+
+00:23:03.730 --> 00:23:06.470
+banking product maybe some of the insurance product that
+
+00:23:06.470 --> 00:23:09.530
+bank has launched recently maybe some of the loan product
+
+00:23:09.530 --> 00:23:13.330
+that bank has launched recently so user will be like a user
+
+00:23:13.330 --> 00:23:16.790
+would like to understand that particular product so if user
+
+00:23:16.790 --> 00:23:19.310
+would like to understand that particular product so
+
+00:23:19.310 --> 00:23:23.130
+obviously i have to perform rag over there yeah rag because
+
+00:23:23.130 --> 00:23:27.790
+without rag it's technically not possible right uh because
+
+00:23:27.790 --> 00:23:31.350
+llm will not be having any kind of idea with respect to the
+
+00:23:31.350 --> 00:23:34.910
+new banking product so obviously i have to do a a document
+
+00:23:34.910 --> 00:23:38.110
+search over there means i have to go after the retrieval
+
+00:23:38.110 --> 00:23:41.110
+first so that i will be able to get the answer so in
+
+00:23:41.110 --> 00:23:44.910
+majority of cases this is what we are going to perform uh so
+
+00:23:44.910 --> 00:23:48.610
+here let's suppose after orchestration so maybe i can go
+
+00:23:48.610 --> 00:23:51.410
+ahead with the api or tool calling or maybe i can go ahead
+
+00:23:51.410 --> 00:23:54.430
+with the retrieval so for example majority of queries will
+
+00:23:54.430 --> 00:23:57.370
+go for the retrieval basically because they will try to ask
+
+00:23:57.370 --> 00:23:59.370
+some sort of a question with respect to a particular banking
+
+00:23:59.370 --> 00:24:02.950
+product so let's suppose i am going ahead with retrieval r e
+
+00:24:02.950 --> 00:24:07.810
+t r r i e v a l retrieval yeah retrieval means document
+
+00:24:07.810 --> 00:24:12.710
+search basically yeah okay so here if i am talking about a
+
+00:24:12.710 --> 00:24:15.370
+retrieval or a document search so obviously my retrieval or
+
+00:24:15.370 --> 00:24:18.570
+document search as we all know will go through a vector db
+
+00:24:18.570 --> 00:24:21.850
+vector db can be what quadrant q
+
+00:24:23.840 --> 00:24:30.100
+d r a n t q d r a n t quadrant or maybe it can be a pine
+
+00:24:30.100 --> 00:24:33.980
+cone it can be maybe a chroma db it can maybe a facebook
+
+00:24:33.980 --> 00:24:40.180
+similarity search it can be a elastic search elastic search
+
+00:24:40.180 --> 00:24:43.720
+yeah so we'll go for the retrieval if we are not going ahead
+
+00:24:43.720 --> 00:24:45.920
+with the retrieval maybe we'll go ahead with a tool calling
+
+00:24:45.920 --> 00:24:48.400
+yeah so here agent will be able to make an automatic
+
+00:24:48.400 --> 00:24:51.560
+decision that okay i should go ahead with the retrieval or i
+
+00:24:51.560 --> 00:24:55.160
+should go ahead with basically a tool calling okay so this
+
+00:24:55.160 --> 00:24:58.540
+is done now majority of time what happens is that that user
+
+00:24:58.540 --> 00:25:02.340
+will many user right many user will end up asking the same
+
+00:25:02.340 --> 00:25:04.900
+question again and again and again for example if i'll talk
+
+00:25:04.900 --> 00:25:07.960
+about the example of this restaurant table restaurant itself
+
+00:25:07.960 --> 00:25:12.180
+so generally user will come and they will like you know keep
+
+00:25:12.180 --> 00:25:15.120
+on asking for let's suppose a paneer pakoda right paneer
+
+00:25:15.120 --> 00:25:19.160
+pakoda so or maybe they will they will ask for like a same
+
+00:25:19.160 --> 00:25:22.400
+kind of many user is asking for a same recipe again and
+
+00:25:22.400 --> 00:25:25.640
+again and again and again right again and again so it's not
+
+00:25:25.640 --> 00:25:29.380
+like you know chef will start preparing everything right
+
+00:25:29.380 --> 00:25:33.060
+from the very scratch all the masalas and all those you know
+
+00:25:33.060 --> 00:25:37.340
+ingredients which are in the recipe and then he will start
+
+00:25:37.340 --> 00:25:39.780
+preparing it what he will do he will try to prepare it in a
+
+00:25:39.780 --> 00:25:43.020
+mass and then he will maybe try to stock it in a fridge yeah
+
+00:25:43.020 --> 00:25:46.400
+in a fridge basically based on the estimation so similarly
+
+00:25:46.400 --> 00:25:50.400
+so here what we try to do so if user is asking a similar
+
+00:25:50.400 --> 00:25:53.700
+kind of a question again and again and again right so let's
+
+00:25:53.700 --> 00:25:56.900
+suppose what is a you know what is what is our procedure to
+
+00:25:56.900 --> 00:26:01.000
+you know like a block a credit card right what is a
+
+00:26:01.000 --> 00:26:06.440
+procedure maybe to you know check the balance checkbook or
+
+00:26:06.440 --> 00:26:10.040
+maybe in cash a check so if user is asking this kind of a
+
+00:26:10.040 --> 00:26:12.720
+question again and again and again so what we try to do so
+
+00:26:12.720 --> 00:26:15.660
+we try to implement a catching again so this catching is
+
+00:26:15.660 --> 00:26:20.000
+going to save almost 20 to 25 percent of your resources and
+
+00:26:20.000 --> 00:26:22.060
+again there are different different kind of a catching there
+
+00:26:22.060 --> 00:26:24.520
+is a question on catching i think next question is on
+
+00:26:24.520 --> 00:26:27.380
+catching and i will be talking more about that catching part
+
+00:26:27.380 --> 00:26:29.100
+that what and all different different kind of a catching
+
+00:26:29.100 --> 00:26:32.220
+that we can try to implement on client side server side or
+
+00:26:32.220 --> 00:26:35.940
+even on a transformer side i'll be talking about that so
+
+00:26:35.940 --> 00:26:35.940
+i'll be talking about that in detail in detail in detail so
+
+00:26:35.940 --> 00:26:37.940
+here we have a question here so retrieval so after during a
+
+00:26:37.940 --> 00:26:39.920
+retrieval so maybe user is asking the same question
+
+00:26:39.920 --> 00:26:42.480
+repeatedly again and again and again so it's not like i will
+
+00:26:42.480 --> 00:26:45.400
+go and i will start hitting my vector databases which is
+
+00:26:45.400 --> 00:26:48.520
+available over here no so maybe i can i can try to check
+
+00:26:48.520 --> 00:26:50.940
+with the catch first right i'll try to check with the
+
+00:26:50.940 --> 00:26:53.600
+catching first that whether this data set or reference of
+
+00:26:53.600 --> 00:26:56.960
+this data is available inside my catching system or not so
+
+00:26:56.960 --> 00:26:59.660
+catching is one of the very very important one right
+
+00:26:59.660 --> 00:27:05.550
+catching now how we can try to implement a catching so we
+
+00:27:05.550 --> 00:27:07.850
+can try to implement a catching with content delivery
+
+00:27:07.850 --> 00:27:12.430
+network cdn cdn is one of the way now with the help of redis
+
+00:27:12.430 --> 00:27:15.090
+we try to implement it so basically it's a immobile
+
+00:27:15.090 --> 00:27:20.830
+databases or with respect to the mem card mem card we can
+
+00:27:20.830 --> 00:27:27.010
+try to implement mem sorry memcast with the help of memcast
+
+00:27:27.010 --> 00:27:31.250
+so we try to implement a catching basically so catching
+
+00:27:31.250 --> 00:27:35.570
+means just a store of frequently like asked question and its
+
+00:27:35.570 --> 00:27:38.470
+answer or maybe it's references just try to store it so that
+
+00:27:38.470 --> 00:27:41.590
+you know i don't have to go and do the retrieval again and
+
+00:27:41.590 --> 00:27:45.310
+again and again and in this way believe me uh many like a 10
+
+00:27:45.310 --> 00:27:48.430
+to 20 percent or 25 percent you can say our resources can be
+
+00:27:48.430 --> 00:27:52.830
+saved and you can make your system faster we always uh any
+
+00:27:52.830 --> 00:27:55.570
+system right any system that we try to build in this entire
+
+00:27:55.570 --> 00:27:59.970
+world we do implement a catching so even we are using it so
+
+00:27:59.970 --> 00:28:02.630
+we are using basically a radius and we are using a cdn so
+
+00:28:02.630 --> 00:28:05.770
+these two things we are using it even in a your own site now
+
+00:28:05.770 --> 00:28:10.670
+so once the catching is done that's okay uh so i will be
+
+00:28:10.670 --> 00:28:13.430
+able to make my system a bit faster because i have to serve
+
+00:28:13.430 --> 00:28:19.190
+maybe a 100k user at a time then what right then what so
+
+00:28:19.190 --> 00:28:22.870
+obviously uh if if catching is fine catching has been
+
+00:28:22.870 --> 00:28:26.850
+implemented i have to even implement uh safety over here
+
+00:28:26.850 --> 00:28:29.490
+right i have to even implement a safety i have to even
+
+00:28:29.490 --> 00:28:33.750
+implement the moderation so here i can try to add one more
+
+00:28:33.750 --> 00:28:40.890
+layer so one more layer with respect to the system safety so
+
+00:28:40.890 --> 00:28:41.970
+again safety we have to implement the moderation we talk
+
+00:28:41.970 --> 00:28:44.510
+about safety and especially when we talk about safety with
+
+00:28:44.510 --> 00:28:48.070
+respect to ai so it's not just about a user authentication
+
+00:28:48.070 --> 00:28:51.370
+safety that i'm talking about right it's not like your
+
+00:28:51.370 --> 00:28:55.830
+password or your you know some user id and password someone
+
+00:28:55.830 --> 00:28:57.950
+is going to steal no it's not just about that safety
+
+00:28:57.950 --> 00:29:02.610
+basically it's about a lot of guard rail it's not about
+
+00:29:02.610 --> 00:29:06.850
+classifying your entire system in such a way that system
+
+00:29:06.850 --> 00:29:10.170
+should not have an access of any kind of a data right your
+
+00:29:10.170 --> 00:29:12.330
+model or your system should not have any kind of information
+
+00:29:12.330 --> 00:29:17.390
+or access to any kind of a secret data and it should not be
+
+00:29:17.390 --> 00:29:21.870
+able to expose it plus it should not use any unwanted
+
+00:29:21.870 --> 00:29:26.110
+language or maybe a tone right we have to control that
+
+00:29:26.110 --> 00:29:30.170
+particular part as well so obviously we try to implement a
+
+00:29:30.170 --> 00:29:31.090
+guardrail so
+
+00:29:35.000 --> 00:29:39.860
+we try to implement a guardrail on ai that's one part so
+
+00:29:57.360 --> 00:30:00.200
+we try to implement basically a guard rails over here
+
+00:30:00.200 --> 00:30:04.380
+guardrails ai you can say or we can try to obviously author
+
+00:30:04.380 --> 00:30:07.980
+like a single sign and all of these things we try to
+
+00:30:07.980 --> 00:30:10.600
+implement but here i'm talking about a safety with respect
+
+00:30:10.600 --> 00:30:14.580
+to the ai so content moderation you can say we try to
+
+00:30:14.580 --> 00:30:17.980
+implement c-o-n-t-e-n-t content content
+
+00:30:20.990 --> 00:30:23.490
+moderation or tone moderation we try to implement over here
+
+00:30:23.490 --> 00:30:27.950
+now once this is done right once this is done so we try to
+
+00:30:27.950 --> 00:30:30.830
+implement what we try to implement basically a observability
+
+00:30:34.440 --> 00:30:39.440
+observability so this system observability system is going
+
+00:30:39.440 --> 00:30:43.180
+to help me out in terms of you know keeping a track of each
+
+00:30:43.180 --> 00:30:47.720
+and everything all the time 24 by 7 and raising all the
+
+00:30:47.720 --> 00:30:52.020
+unnecessary flags so unnecessary flag or maybe if some event
+
+00:30:52.020 --> 00:30:55.100
+is going to happen which system is not supposed to like a
+
+00:30:55.100 --> 00:30:58.500
+handle or maybe which we are not supposed to handle from our
+
+00:30:58.500 --> 00:31:01.400
+side so in that case it is going to raise the flag so
+
+00:31:01.400 --> 00:31:04.740
+basically to do this or to implement this observability we
+
+00:31:04.740 --> 00:31:09.760
+try to implement a grafana grafana is a so basically log
+
+00:31:09.760 --> 00:31:12.780
+kind of a service you can say prometheus prometheus
+
+00:31:16.370 --> 00:31:19.450
+or maybe there is another tool like a kind of open telemetry
+
+00:31:19.450 --> 00:31:23.870
+we try to implement over there then uh so once this
+
+00:31:23.870 --> 00:31:27.250
+observability will be implemented right once this particular
+
+00:31:27.250 --> 00:31:31.170
+part will be implemented then what we try to do so we try to
+
+00:31:31.170 --> 00:31:35.190
+basically implement again so we try to implement basically
+
+00:31:35.190 --> 00:31:39.070
+uh different different kind of maybe a tool or maybe a
+
+00:31:39.070 --> 00:31:42.510
+system setup on top of this one but yeah in general you will
+
+00:31:42.510 --> 00:31:45.850
+be able to find out that if i'm trying to design any system
+
+00:31:45.850 --> 00:31:50.290
+any system which can go for a scale so these layers will be
+
+00:31:50.290 --> 00:31:54.070
+pretty much important all the time you will be able to find
+
+00:31:54.070 --> 00:32:00.350
+out this minimum number of a layer there can be a layer more
+
+00:32:00.350 --> 00:32:03.910
+than this one that's completely okay right that's completely
+
+00:32:03.910 --> 00:32:07.490
+okay but there will at least this much of layer you will be
+
+00:32:07.490 --> 00:32:10.810
+able to find out yeah one more layer in general you will be
+
+00:32:10.810 --> 00:32:13.150
+able to find out which is a generic layer i would say you
+
+00:32:13.150 --> 00:32:19.830
+can say a data layer or event layer event layer now what
+
+00:32:19.830 --> 00:32:23.050
+this event layer or data layer does so basically it will
+
+00:32:23.050 --> 00:32:29.650
+keep on warehousing all the logs all the logs or you can say
+
+00:32:29.650 --> 00:32:32.950
+it will keep on streaming it so this we can try to achieve
+
+00:32:32.950 --> 00:32:39.250
+with the help of kafka kafka okay okay so in most of the
+
+00:32:39.250 --> 00:32:41.550
+system or most of the production grid system you will be
+
+00:32:41.550 --> 00:32:44.650
+able to see special events around the world especially on
+
+00:32:44.650 --> 00:32:46.010
+the internet of course and in the abbas
+
+00:32:55.330 --> 00:33:12.660
+we just briefly generalize from this particularong头
+
+00:33:12.660 --> 00:33:15.880
+to set up and again so there will be a specific procedure
+
+00:33:15.880 --> 00:33:18.500
+for this one right as we have already discussed yesterday
+
+00:33:18.500 --> 00:33:21.920
+that whenever we are trying to build a reg kind of a system
+
+00:33:21.920 --> 00:33:25.300
+so obviously it is going to follow its own procedure we have
+
+00:33:25.300 --> 00:33:28.120
+already discussed about it multiple times right that data
+
+00:33:28.120 --> 00:33:30.480
+will come we are going to divide those data into a chunks
+
+00:33:30.480 --> 00:33:33.140
+and then we are going to convert those chunks into
+
+00:33:33.140 --> 00:33:36.120
+embeddings then we are going to you know insert those
+
+00:33:36.120 --> 00:33:39.720
+embeddings into some of the vector databases so obviously it
+
+00:33:39.720 --> 00:33:42.980
+is it will be having its own flow and every layer that I
+
+00:33:42.980 --> 00:33:45.800
+have designed over here so every layer will be having its
+
+00:33:45.800 --> 00:33:49.140
+own implementation and its own flow now when you are going
+
+00:33:49.140 --> 00:33:52.420
+to combine all of this layer one by one one by one one by
+
+00:33:52.420 --> 00:33:56.200
+one then you can say that that now we are able to build a
+
+00:33:56.200 --> 00:33:59.740
+product right now we are able to build a product and then on
+
+00:33:59.740 --> 00:34:03.380
+every layer there is a possibility of an optimization right
+
+00:34:03.380 --> 00:34:07.000
+there is a possibility of an optimization and then on every
+
+00:34:07.000 --> 00:34:11.320
+layer there is a possibility of a scalability so then layer
+
+00:34:11.320 --> 00:34:15.240
+by layer we start shipping it and then we try to check that
+
+00:34:15.240 --> 00:34:18.520
+okay how I can try to make my UI interface for example a
+
+00:34:18.520 --> 00:34:22.940
+mobile web or API right so this one is scalable and secure
+
+00:34:22.940 --> 00:34:26.040
+then we try to check how we can try to make this one
+
+00:34:26.040 --> 00:34:29.100
+scalable and secure then we try to check how we can try to
+
+00:34:29.100 --> 00:34:33.100
+make this one scalable and secure right so then layer by
+
+00:34:33.100 --> 00:34:36.120
+layer layer by layer layer by layer again we try to break it
+
+00:34:36.120 --> 00:34:39.640
+down Again we try to break it down and then layer by layer
+
+00:34:39.640 --> 00:34:42.500
+we start building a solution and then once all of these
+
+00:34:42.500 --> 00:34:47.940
+layers are completed then we say that yes we are able to
+
+00:34:47.940 --> 00:34:52.280
+build a production grade solution which can serve not just 1
+
+00:34:52.280 --> 00:34:57.800
+lakh user but even a 10 million user on a scale. Then we try
+
+00:34:57.800 --> 00:35:01.020
+to migrate this entire application with the help of some CI
+
+00:35:01.020 --> 00:35:04.520
+-CD pipeline. As we all know I have already talked about
+
+00:35:04.520 --> 00:35:07.520
+this one in a project discussion as well. So then we try to
+
+00:35:07.520 --> 00:35:10.180
+migrate it and then we try to choose some services for
+
+00:35:10.180 --> 00:35:14.600
+hosting my frontend for hosting my backend and we just try
+
+00:35:14.600 --> 00:35:17.620
+to deploy it. So generally with the help of Kubernetes let's
+
+00:35:17.620 --> 00:35:21.660
+suppose so we are trying to use maybe a EKS or AKS kind of a
+
+00:35:21.660 --> 00:35:24.700
+solution so where it will be able to use a Kubernetes pods
+
+00:35:24.700 --> 00:35:29.020
+and it will be able to deploy and whenever it requires more
+
+00:35:29.020 --> 00:35:31.500
+resources so obviously it will go for the scale.
+
+00:35:31.500 --> 00:35:34.760
+Automatically right it will go for the scale automatically.
+
+00:35:35.000 --> 00:35:38.860
+Now especially if I am talking about this agentic AI kind of
+
+00:35:38.860 --> 00:35:42.360
+a system so retrieval is one of the system most of the time
+
+00:35:42.360 --> 00:35:46.080
+nowadays you will be able to find out that with along with
+
+00:35:46.080 --> 00:35:49.560
+the retrieval right along with the retriever so people try
+
+00:35:49.560 --> 00:35:56.710
+to integrate a custom custom AI model as well or you can say
+
+00:35:56.710 --> 00:36:00.090
+custom AI LLM. So even this comes in between technically
+
+00:36:00.090 --> 00:36:04.030
+it's nothing but it's basically a fine tuned model I am
+
+00:36:04.030 --> 00:36:06.810
+talking about and generally people go ahead with the multi
+
+00:36:06.810 --> 00:36:10.430
+model ecosystem right so fine tune you can say model number
+
+00:36:10.430 --> 00:36:13.990
+one fine tune model number two and fine tune model number
+
+00:36:13.990 --> 00:36:18.130
+three so this will be combined together in generally right
+
+00:36:18.130 --> 00:36:20.470
+so this is called as hybrid approach so where retriever will
+
+00:36:20.470 --> 00:36:23.670
+be there and plus custom AI LLM models will be there which
+
+00:36:23.670 --> 00:36:26.830
+has been trained on their data set itself their specific
+
+00:36:26.830 --> 00:36:30.410
+data set itself and retriever so retriever is going to
+
+00:36:30.410 --> 00:36:34.190
+answer based on the current data set. So these two layers in
+
+00:36:34.190 --> 00:36:37.850
+general you will be able to find out. So is it fine guys so
+
+00:36:37.850 --> 00:36:40.270
+whenever we are talking about a scalable solution what and
+
+00:36:40.270 --> 00:36:44.590
+all layers we are supposed to build by the way. Yeah are we
+
+00:36:44.590 --> 00:36:46.370
+able to get the answer yes
+
+00:36:48.770 --> 00:36:50.050
+yes
+
+00:36:57.020 --> 00:36:58.580
+everyone yeah
+
+00:37:07.700 --> 00:37:10.880
+so these layers are pretty much important unless and until
+
+00:37:10.880 --> 00:37:13.680
+you are not building this layer so you can't you know think
+
+00:37:13.680 --> 00:37:17.120
+about or you can't even imagine about building something
+
+00:37:17.120 --> 00:37:21.560
+which can go for the scale which will be able to serve. You
+
+00:37:21.560 --> 00:37:23.340
+can't even imagine about 100 100 forget about 100k even at
+
+00:37:23.340 --> 00:37:27.440
+10k users yeah so whenever someone is asking you a question
+
+00:37:27.440 --> 00:37:30.320
+so always try to give an answer in this way layer by layer
+
+00:37:30.320 --> 00:37:32.700
+manner that I will be having this then this then this then
+
+00:37:32.700 --> 00:37:36.260
+this and then again inside this one I will be having again a
+
+00:37:36.260 --> 00:37:40.220
+design so basically I have designed a layer number one for
+
+00:37:40.220 --> 00:37:44.100
+each and every like a portions now so for every layer like I
+
+00:37:44.100 --> 00:37:47.200
+said again there will be a design so we are going to break
+
+00:37:47.200 --> 00:37:51.360
+down again each and every layers so make sure that you are
+
+00:37:51.360 --> 00:37:55.300
+like doing it yeah. Now someone has asked me a question with
+
+00:37:55.300 --> 00:37:58.200
+respect to a new batch okay let me talk about a new batch
+
+00:37:58.200 --> 00:38:01.180
+little bit and then I will be talking about next question 82
+
+00:38:01.180 --> 00:38:05.320
+82 number question so I have not made an announcement so far
+
+00:38:05.320 --> 00:38:09.320
+so we have just published a batch so generative bootcamp 2.0
+
+00:38:09.320 --> 00:38:13.100
+it's not different it's a syllabus wise if you will see it's
+
+00:38:13.100 --> 00:38:15.620
+exactly same line by line I have not made any kind of
+
+00:38:15.620 --> 00:38:18.380
+changes with respect to a syllabus intentionally by the way.
+
+00:38:18.440 --> 00:38:23.520
+Yeah. In my classes obviously we talk about things in a
+
+00:38:23.520 --> 00:38:26.120
+different different context it's because I'm a human being
+
+00:38:26.120 --> 00:38:29.860
+right I'm not a robot I'm not like a programmed by default
+
+00:38:29.860 --> 00:38:32.860
+who will go and who will try to iterate the same line again
+
+00:38:32.860 --> 00:38:36.980
+and again I am a human being I learn lot of things I observe
+
+00:38:36.980 --> 00:38:39.040
+lot of things and based on my learnings based on my
+
+00:38:39.040 --> 00:38:43.520
+observation I take a lectures right I deliver a classes and
+
+00:38:43.520 --> 00:38:47.500
+obviously my context my story my analogy will be different
+
+00:38:47.500 --> 00:38:51.140
+in a different different class. And that that's a. Beauty of
+
+00:38:51.140 --> 00:38:53.920
+I believe a live classes right that that's a beauty of a
+
+00:38:53.920 --> 00:38:56.720
+live classes by the way so this live class is going to start
+
+00:38:56.720 --> 00:38:59.940
+from first of November right timing is evening time because
+
+00:38:59.940 --> 00:39:04.440
+morning time I already have a class but yeah so 4 p.m. IST
+
+00:39:04.440 --> 00:39:08.000
+to 7 p.m. IST same mode I believe most of us are already
+
+00:39:08.000 --> 00:39:11.240
+aware about this one now if anyone is interested so you can
+
+00:39:11.240 --> 00:39:14.080
+just go ahead with this one if anyone is looking for a
+
+00:39:14.080 --> 00:39:19.180
+revision or maybe if you have a time join the class. Very
+
+00:39:19.180 --> 00:39:21.280
+simple if you have your own plus access if you don't have
+
+00:39:21.280 --> 00:39:22.920
+your own plus access maybe you can go ahead with the
+
+00:39:22.920 --> 00:39:27.760
+discussion with team and maybe you can check any kind of
+
+00:39:27.760 --> 00:39:30.840
+offers if they have right so maybe they can they can try to
+
+00:39:30.840 --> 00:39:33.580
+give you some sort of offers with respect to your own plus
+
+00:39:33.580 --> 00:39:37.060
+yeah. So that's an announcement that was a question in the
+
+00:39:37.060 --> 00:39:39.160
+chat right so suppose
+
+00:39:42.780 --> 00:39:45.780
+that any company already using some no code tool like in it
+
+00:39:45.780 --> 00:39:49.340
+and then how the answer will be different. See if company is
+
+00:39:49.340 --> 00:39:53.120
+using. First of all let me tell you one thing. Right. So in
+
+00:39:53.120 --> 00:39:56.720
+a production right if I'll talk about a big big company or a
+
+00:39:56.720 --> 00:40:00.440
+standard size companies I don't think that anyone using any
+
+00:40:00.440 --> 00:40:03.680
+kind of a tool. Believe me anyone is using any kind of a
+
+00:40:03.680 --> 00:40:08.660
+tool in it any kind of a tool generally been used by a very
+
+00:40:08.660 --> 00:40:12.420
+very small companies or maybe right maybe for a very very
+
+00:40:12.420 --> 00:40:16.180
+even if there is a big company but for us to solve a very
+
+00:40:16.180 --> 00:40:19.420
+very small problem they must be using in it any kind of a
+
+00:40:19.420 --> 00:40:24.960
+solution as of now in future. Things may change. I do agree
+
+00:40:24.960 --> 00:40:29.440
+with that part but as of now it's mostly been adopted by
+
+00:40:29.440 --> 00:40:34.040
+learners you can say or individuals or maybe a very very
+
+00:40:34.040 --> 00:40:38.520
+like a small processes not on a very big scale. Believe me
+
+00:40:38.520 --> 00:40:42.980
+doesn't matter like what you see as a PR in a market but
+
+00:40:42.980 --> 00:40:46.060
+yeah that's a reality it will take some time it will take
+
+00:40:46.060 --> 00:40:49.600
+some time so where people will start adopting those things
+
+00:40:49.600 --> 00:40:52.800
+you must have seen the news right. Right. Because 95 percent
+
+00:40:52.800 --> 00:40:58.440
+of the company who have fired on a name of AI their AI is
+
+00:40:58.440 --> 00:41:01.340
+failing right. They are not able to make use of it they are
+
+00:41:01.340 --> 00:41:04.680
+not able to build some sort of a trusted solution which can
+
+00:41:04.680 --> 00:41:08.180
+be used by end user and which can give me give them
+
+00:41:08.180 --> 00:41:12.460
+basically a new source of revenue. Yeah. So that's a reality
+
+00:41:12.460 --> 00:41:19.520
+we are going after going after. So yeah. Do you teach in any
+
+00:41:19.520 --> 00:41:22.120
+batch anything. So that we can have a look of that. Yeah.
+
+00:41:22.360 --> 00:41:26.880
+Not so far but yeah next week Saturday. So I have a class of
+
+00:41:26.880 --> 00:41:30.520
+NITN so last week I have discussed about a crew AI in my
+
+00:41:30.520 --> 00:41:33.520
+generative AI certification boot camp batch and next week
+
+00:41:33.520 --> 00:41:36.480
+next Saturday I have a lecture on NITN so where I'm going to
+
+00:41:36.480 --> 00:41:38.980
+show the practical implementation even with respect to crew
+
+00:41:38.980 --> 00:41:42.000
+AI we have built a project and by building a project we have
+
+00:41:42.000 --> 00:41:44.680
+learned crew AI similar thing we are going to do it with
+
+00:41:44.680 --> 00:41:48.060
+respect to NITN as well. So where we'll build some small or
+
+00:41:48.060 --> 00:41:50.740
+big kind of a product means we'll try to solve the problem
+
+00:41:50.740 --> 00:41:51.420
+basically. Yeah.
+
+00:41:55.210 --> 00:41:58.930
+Ram is saying can you share the image or notes now which you
+
+00:41:58.930 --> 00:42:01.530
+have explained sir, yeah that will be uploaded inside your
+
+00:42:01.530 --> 00:42:04.150
+dashboard, yeah so this I am going to upload inside the
+
+00:42:04.150 --> 00:42:11.870
+dashboard, simple. Ok so now let's go ahead with the next
+
+00:42:11.870 --> 00:42:14.990
+question and let's see what next question says, how do you
+
+00:42:14.990 --> 00:42:17.930
+implement a caching in generative AI application? So see
+
+00:42:17.930 --> 00:42:20.770
+caching was one of the layer right, caching was one of the
+
+00:42:20.770 --> 00:42:24.790
+layer so I can try to use CDN like a memcached or maybe I
+
+00:42:24.790 --> 00:42:28.310
+can try to use a Redis. Let me tell you that what and all
+
+00:42:28.310 --> 00:42:31.650
+like a kind of a cache I will be able to build, I will be
+
+00:42:31.650 --> 00:42:34.930
+able to design, yeah what kind of a different kind of a
+
+00:42:34.930 --> 00:42:37.610
+caches which we can try to build or which we can try to
+
+00:42:37.610 --> 00:42:44.170
+design one by one, one by one, one by one. So here generally
+
+00:42:44.170 --> 00:42:50.330
+with respect to, let me write it down over here. Question
+
+00:42:50.330 --> 00:42:57.090
+number 82. So here when we try to implement a caching right,
+
+00:42:57.230 --> 00:43:00.170
+caching over here, so caching simply means that I will try
+
+00:43:00.170 --> 00:43:05.710
+to store some information which is when like a asked by user
+
+00:43:05.710 --> 00:43:09.510
+again and again and again so that I don't have to go after
+
+00:43:09.510 --> 00:43:12.710
+the retrieval or I don't have to go after the maybe
+
+00:43:12.710 --> 00:43:15.970
+inferencing right because if I am talking about a generative
+
+00:43:15.970 --> 00:43:19.010
+AI application so either I will go after retrieval or I will
+
+00:43:19.010 --> 00:43:21.270
+try to go after the inferencing. Inferencing. Inferencing
+
+00:43:21.270 --> 00:43:25.130
+with respect to the LLM model. So just to, and both of this
+
+00:43:25.130 --> 00:43:28.010
+approach are costliest approach right. So in both the
+
+00:43:28.010 --> 00:43:31.010
+approaches obviously I will end up using a lot of resources
+
+00:43:31.010 --> 00:43:34.810
+right. Maybe GPU and CPUs, RAM and many more things. So lot
+
+00:43:34.810 --> 00:43:37.810
+of resources. So if I have to save the resources because if
+
+00:43:37.810 --> 00:43:40.030
+I am able to save the resources simply means that I am
+
+00:43:40.030 --> 00:43:42.670
+reducing a cost or either I am reducing a cost or I am
+
+00:43:42.670 --> 00:43:45.210
+trying to make my system faster. I am trying to decrease the
+
+00:43:45.210 --> 00:43:49.190
+latency of the entire system, this is what it means by the
+
+00:43:49.190 --> 00:43:53.370
+way. So here keeping that in a mind what we do. So we try to
+
+00:43:53.370 --> 00:43:56.830
+implement basically a cache right. We try to implement
+
+00:43:56.830 --> 00:44:01.250
+basically a cache. So here when we talk about a cache, so
+
+00:44:01.250 --> 00:44:04.570
+here I can talk about a cache, four different kind of a
+
+00:44:04.570 --> 00:44:08.130
+cache by the way or implementation wise four different kind
+
+00:44:08.130 --> 00:44:11.710
+of a cache implementation. So one is basically a request
+
+00:44:11.710 --> 00:44:12.450
+response cache.
+
+00:44:15.530 --> 00:44:23.350
+Request response cache. Now what is this? This is like a
+
+00:44:23.350 --> 00:44:26.390
+request response cache by the way. So request response
+
+00:44:26.390 --> 00:44:30.930
+cache. Basically I have asked some question, basically I
+
+00:44:30.930 --> 00:44:33.650
+have requested right and system is giving me a response and
+
+00:44:33.650 --> 00:44:37.250
+if that question I am trying to ask repeatedly again and
+
+00:44:37.250 --> 00:44:39.630
+again and again. If I am trying to give a similar kind of a
+
+00:44:39.630 --> 00:44:42.330
+prompt again and again and again. For example if everyone is
+
+00:44:42.330 --> 00:44:46.330
+asking about a refund policy. If everyone is asking banking
+
+00:44:46.330 --> 00:44:48.890
+with respect to a banking system. If everyone is asking
+
+00:44:48.890 --> 00:44:52.330
+about insurance policy. A particular insurance policy. This
+
+00:44:52.330 --> 00:44:54.210
+scheme because bank will be having a multiple insurance
+
+00:44:54.210 --> 00:44:57.290
+policies by the way. If everyone is asking about how to
+
+00:44:57.290 --> 00:45:00.190
+deposit the amount or maybe how to like you know in cash the
+
+00:45:00.190 --> 00:45:02.970
+check. So these questions are technically a repetitive
+
+00:45:02.970 --> 00:45:05.930
+questions and maybe systems are system is getting these
+
+00:45:05.930 --> 00:45:08.950
+questions on a daily basis more than thousand times right.
+
+00:45:09.010 --> 00:45:11.930
+More than thousand times. So what system should do instead
+
+00:45:11.930 --> 00:45:14.530
+of doing a retrieval because these information will be
+
+00:45:14.530 --> 00:45:17.530
+available inside a document right. So retrieve once use many
+
+00:45:17.530 --> 00:45:21.130
+times simple right. Just like a SEF. So basically like a. If
+
+00:45:21.130 --> 00:45:24.550
+same recipe you have to serve to many user do one thing
+
+00:45:24.550 --> 00:45:27.990
+prepare once keep it inside a fridge and then like try to
+
+00:45:27.990 --> 00:45:30.230
+use it. Try to use it. So as and when the user will come
+
+00:45:30.230 --> 00:45:33.230
+just like a take out the item from the fridge and serve them
+
+00:45:33.230 --> 00:45:35.910
+right. Keep on serving them simple. So request response
+
+00:45:35.910 --> 00:45:38.550
+catch and now what we do in this one. So we try to like a
+
+00:45:38.550 --> 00:45:41.550
+store the questions and the answer. Technically not the
+
+00:45:41.550 --> 00:45:44.450
+question and answer. We try to store the key their hashing
+
+00:45:44.450 --> 00:45:47.010
+basically right. So hashing is nothing but like a kind of a
+
+00:45:47.010 --> 00:45:50.970
+key you can say a secrets which should be which. It will be
+
+00:45:50.970 --> 00:45:53.010
+the application of a user ID and the prompt and the setting
+
+00:45:53.010 --> 00:45:55.390
+and the model version all sort of things depends how we are
+
+00:45:55.390 --> 00:45:58.570
+going to configure it and based on that. So we try to design
+
+00:45:58.570 --> 00:46:02.930
+this particular cache. So here right. So here we can try to
+
+00:46:02.930 --> 00:46:06.270
+use basically in a memory database called as Redis one of
+
+00:46:06.270 --> 00:46:09.110
+the popular one most popular one. You will be able to find
+
+00:46:09.110 --> 00:46:12.610
+out with respect to any application in this entire world
+
+00:46:12.610 --> 00:46:16.190
+right in this entire world. So basically it's basically best
+
+00:46:16.190 --> 00:46:19.590
+for like a. Queries so we can try to summarize it and we
+
+00:46:19.590 --> 00:46:22.090
+can. We can. can try to store it maybe a hash of those
+
+00:46:22.090 --> 00:46:24.590
+information a key of those information not the actual
+
+00:46:24.590 --> 00:46:27.710
+information maybe just a key of those information we can try
+
+00:46:27.710 --> 00:46:30.830
+to keep it inside a redis because it's a in-memory right uh
+
+00:46:30.830 --> 00:46:34.030
+so it's not like uh you you will be having like a petabyte
+
+00:46:34.030 --> 00:46:38.310
+or jettabyte of uh memories uh over here no so you will be
+
+00:46:38.310 --> 00:46:41.310
+having a limited and again it's a very expensive one so you
+
+00:46:41.310 --> 00:46:44.070
+will be having a limited uh memory so what we do we don't
+
+00:46:44.070 --> 00:46:47.110
+store the data directly because it could be like a very big
+
+00:46:47.110 --> 00:46:50.690
+so we try to store the reference of the data over here and
+
+00:46:50.690 --> 00:46:53.930
+whenever user will ask a same question again and again i'll
+
+00:46:53.930 --> 00:46:56.990
+just go i'll instead of doing a search or maybe instead of
+
+00:46:56.990 --> 00:47:00.310
+doing a basically similarity search technically with respect
+
+00:47:00.310 --> 00:47:02.970
+to rag implementation i'll just pick the data and then give
+
+00:47:02.970 --> 00:47:07.190
+it to the user yeah so this is this is what happens uh so we
+
+00:47:07.190 --> 00:47:10.350
+try to implement with the help of a redis one then there
+
+00:47:10.350 --> 00:47:13.850
+could be a second kind of a catcher over here that we can
+
+00:47:13.850 --> 00:47:14.610
+try to you know we can try to implement with the help of a
+
+00:47:14.610 --> 00:47:15.470
+redis one then there could be a second kind of implement so
+
+00:47:15.470 --> 00:47:18.610
+with respect to generative ai system again not a generic one
+
+00:47:18.610 --> 00:47:23.010
+only generative ai system so maybe i can try to use a
+
+00:47:23.010 --> 00:47:30.720
+embedding embedding catcher yeah embedding catcher so with
+
+00:47:30.720 --> 00:47:32.800
+respect to generative ai system you will be able to find out
+
+00:47:32.800 --> 00:47:35.620
+again a embedding catcher so here again we try to build a
+
+00:47:35.620 --> 00:47:38.860
+catch or we try to build basically a key for this particular
+
+00:47:38.860 --> 00:47:42.480
+catches so where we try to keep a text a small text chunk in
+
+00:47:42.480 --> 00:47:47.160
+what embedded model version so that you will be able to save
+
+00:47:47.160 --> 00:47:50.040
+maybe uh eighty to ninety percent of the cost for re
+
+00:47:50.040 --> 00:47:54.860
+-indexing of the data yeah re-indexing of the data or for a
+
+00:47:54.860 --> 00:47:57.840
+repeated rag query so embedding catcher is one of the
+
+00:47:57.840 --> 00:48:02.560
+popular catches that we try to implement then third kind of
+
+00:48:02.560 --> 00:48:07.330
+a catcher rag retrieval
+
+00:48:10.890 --> 00:48:13.670
+catching so this is another kind of a catch that you will be
+
+00:48:13.670 --> 00:48:17.210
+able to find out inside a generative ai field or with
+
+00:48:17.210 --> 00:48:19.570
+respect to the rag so here what we do so here what we are
+
+00:48:19.570 --> 00:48:22.970
+going to do is So here we try to store the top k document id
+
+00:48:22.970 --> 00:48:27.970
+for which people have asked a question repeatedly. So this
+
+00:48:27.970 --> 00:48:32.370
+is called as RAG retrieval cache. And the fourth kind of a
+
+00:48:32.370 --> 00:48:35.190
+cache that you will be able to find out is called as KV
+
+00:48:35.190 --> 00:48:39.170
+cache. I think I talked about this KV cache even in my
+
+00:48:39.170 --> 00:48:43.530
+studies class. So basically it is a LLM attention cache. So
+
+00:48:43.530 --> 00:48:48.810
+basically at the model server level, so wherever you are
+
+00:48:48.810 --> 00:48:51.410
+trying to do the inferencing of those models, maybe you are
+
+00:48:51.410 --> 00:48:54.470
+doing the inferencing with respect to a VLLM, VLLM is
+
+00:48:54.470 --> 00:48:56.930
+something which I have already discussed, VLLM is something
+
+00:48:56.930 --> 00:49:00.230
+which I have already used it to do the hosting of the model.
+
+00:49:00.830 --> 00:49:04.770
+So here we try to use basically a k value kind of a cache on
+
+00:49:04.770 --> 00:49:09.590
+a LLM attention layer. So what it does basically, so here it
+
+00:49:09.590 --> 00:49:14.950
+will always try to reuse the computed attention state across
+
+00:49:14.950 --> 00:49:19.130
+all the queries. So whatever attention that we have already
+
+00:49:19.130 --> 00:49:22.230
+computed, it is just going to reuse it again and again and
+
+00:49:22.230 --> 00:49:25.450
+again. And this is something which has been used on a VLLM
+
+00:49:25.450 --> 00:49:29.030
+layer or any layer where we are trying to do a inferencing
+
+00:49:29.030 --> 00:49:32.370
+of the model. So generally these four different kind of a
+
+00:49:32.370 --> 00:49:35.070
+cache you will be able to find out with respect to the
+
+00:49:35.070 --> 00:49:39.290
+generative AI application. Now moving ahead and let's talk
+
+00:49:39.290 --> 00:49:41.950
+about that what is the best approach for the model
+
+00:49:41.950 --> 00:49:44.210
+worsening. So if someone is going to ask me a question that
+
+00:49:44.210 --> 00:49:46.790
+what is the best approach for a model worsening. I will
+
+00:49:46.790 --> 00:49:49.590
+simply say that that first of all what is the meaning of a
+
+00:49:49.590 --> 00:49:54.130
+worsening, simple as its name suggests. So we are trying to
+
+00:49:54.130 --> 00:49:57.070
+create a new new version based on maybe a data, maybe based
+
+00:49:57.070 --> 00:50:00.090
+on the model drift. If model will start drifting means if
+
+00:50:00.090 --> 00:50:03.010
+model will not start giving the correct result then I will
+
+00:50:03.010 --> 00:50:06.310
+start creating a better version of it. I will try to test it
+
+00:50:06.310 --> 00:50:08.490
+and then I will try to host it. So in this way I will start
+
+00:50:08.490 --> 00:50:11.170
+creating the different different kind of a version. So if my
+
+00:50:11.170 --> 00:50:14.850
+new version is available. So obviously entire query should
+
+00:50:14.850 --> 00:50:19.270
+be redirected to the new version not to the old version. So
+
+00:50:19.270 --> 00:50:22.350
+here if anyone is going to ask me a question that how what
+
+00:50:22.350 --> 00:50:25.010
+is the best approach of doing a model worsening. I will
+
+00:50:25.010 --> 00:50:28.110
+simply say that that I will go ahead with the MLOps right. I
+
+00:50:28.110 --> 00:50:30.550
+will just go ahead with the MLOps. Inside MLOps there is a
+
+00:50:30.550 --> 00:50:34.030
+tool called as MLflow for example right. One of the tool you
+
+00:50:34.030 --> 00:50:36.690
+will be able to find out called as MLflow. Beautiful tool
+
+00:50:36.690 --> 00:50:39.850
+right. Beautiful tool. So where you will be able to manage a
+
+00:50:39.850 --> 00:50:42.750
+multiple artifacts of the models. Means multiple version of
+
+00:50:42.750 --> 00:50:45.170
+the model you all will be able to manage. You will be able
+
+00:50:45.170 --> 00:50:48.030
+to you know point towards it. You will be able to even test
+
+00:50:48.030 --> 00:50:51.710
+it over there. So I will try to use a MLflow over here and
+
+00:50:51.710 --> 00:50:54.130
+with the MLflow I will be able to maintain and manage the
+
+00:50:54.130 --> 00:50:58.350
+different different version of the model. Now 84 number
+
+00:50:58.350 --> 00:51:01.210
+question says that that how do you implement A-B testing for
+
+00:51:01.210 --> 00:51:04.850
+Gen AI model. First of all you have to understand that what
+
+00:51:04.850 --> 00:51:07.370
+is the meaning of A-B testing right. What is the meaning of
+
+00:51:07.370 --> 00:51:11.230
+A-B testing and A-B testing is nothing like a related to
+
+00:51:11.230 --> 00:51:15.450
+just a generative AI. Entire world is using this testing
+
+00:51:15.450 --> 00:51:18.290
+approach. So basically it's a theory right. It's a theory.
+
+00:51:18.430 --> 00:51:21.250
+So what is A-B testing. What A-B testing says by the way. So
+
+00:51:21.250 --> 00:51:24.810
+A-B testing says that that which option works better. Simple
+
+00:51:24.810 --> 00:51:27.570
+right. So it's a theory by the way. Which option works
+
+00:51:27.570 --> 00:51:30.570
+better. For example let's suppose I am going to create a
+
+00:51:30.570 --> 00:51:33.510
+marketing posters right. We all does right. We all does. We
+
+00:51:33.510 --> 00:51:36.230
+all create a carousel. Different different carousel. Maybe
+
+00:51:36.230 --> 00:51:38.910
+we are going to create a different different kind of a reel
+
+00:51:38.910 --> 00:51:42.570
+right. All marketer does that. In every company by the way
+
+00:51:42.570 --> 00:51:45.810
+right. Now what they do. So randomly they are going to
+
+00:51:45.810 --> 00:51:48.570
+select or create a group of the people right. Group of the
+
+00:51:48.570 --> 00:51:52.490
+people. Or maybe I am going to put up my like a ad over a
+
+00:51:52.490 --> 00:51:55.110
+social media. Maybe on a Facebook. Maybe on a Instagram.
+
+00:51:55.290 --> 00:51:58.190
+Maybe on a YouTube. I am going to put up those ads. So I
+
+00:51:58.190 --> 00:52:01.350
+will try to run multiple ads and those ads will reach out to
+
+00:52:01.350 --> 00:52:03.850
+the different different set of the people right. Different
+
+00:52:03.850 --> 00:52:06.670
+set of the people. Even there is a provision inside ad suit.
+
+00:52:07.050 --> 00:52:10.150
+You will be able to find out for doing A-B testing. Now
+
+00:52:10.150 --> 00:52:16.530
+based on this users right. So like one ad will be shown to
+
+00:52:16.530 --> 00:52:19.670
+user group let's suppose A. Other ads will be shown to the
+
+00:52:19.670 --> 00:52:24.990
+user group B. So based on the interaction of the user. Based
+
+00:52:24.990 --> 00:52:28.970
+on the CTR click through rate of the user right. So we try
+
+00:52:28.970 --> 00:52:32.630
+to decide that okay which ad is working well for me.
+
+00:52:33.250 --> 00:52:36.370
+Technically that is called as A-B testing right. So A-B
+
+00:52:36.370 --> 00:52:38.570
+testing simply means that it will always help you out to
+
+00:52:38.570 --> 00:52:42.290
+find out. That which one is going to work better right.
+
+00:52:42.430 --> 00:52:46.790
+Which one is going to work better. So here right. So here
+
+00:52:46.790 --> 00:52:50.990
+let's suppose I have created a model. Generative AI models I
+
+00:52:50.990 --> 00:52:53.070
+have created. Maybe I have done the fine tuning of the
+
+00:52:53.070 --> 00:52:55.810
+model. I am hosting it. So what I will do. I will just try
+
+00:52:55.810 --> 00:52:59.530
+to maybe like when user will come right. When user will come
+
+00:52:59.530 --> 00:53:03.610
+on my platform layer one as per the previous example. So
+
+00:53:03.610 --> 00:53:06.410
+when user is going to like come on my platform entry point.
+
+00:53:06.650 --> 00:53:09.230
+So what I will do. I will try to direct some of the user to
+
+00:53:09.230 --> 00:53:12.310
+model number A. And then some of the user to model number B.
+
+00:53:12.410 --> 00:53:15.750
+Some of the user to model number C. And then I will try to
+
+00:53:15.750 --> 00:53:19.230
+track the matrixes. Matrixes in terms of accuracy of the
+
+00:53:19.230 --> 00:53:21.850
+model. That what user has asked and what kind of answer user
+
+00:53:21.850 --> 00:53:26.750
+has given. Cost what was the cost for that inferencing for
+
+00:53:26.750 --> 00:53:30.190
+user group A. Then B and then C. Because I have three models
+
+00:53:30.190 --> 00:53:33.730
+A, B and C. And then maybe I will try to even check the
+
+00:53:33.730 --> 00:53:37.670
+speed that which model or which user group is getting. What
+
+00:53:37.670 --> 00:53:41.670
+is the speed. Maybe group A, group B or group C. And then I
+
+00:53:41.670 --> 00:53:44.990
+will be asking for a user rating. I will be asking for a
+
+00:53:44.990 --> 00:53:47.610
+user rating that okay which model has received a rating.
+
+00:53:47.950 --> 00:53:52.470
+Then I will decide that okay I should go ahead with a model
+
+00:53:52.470 --> 00:53:56.130
+A deployment, model B deployment and model C deployment. And
+
+00:53:56.130 --> 00:53:59.190
+that is technically called as A B testing. Are you able to
+
+00:53:59.190 --> 00:54:04.770
+understand guys. So in a simple manner if I have to discuss
+
+00:54:04.770 --> 00:54:06.970
+about A B testing. So
+
+00:54:11.130 --> 00:54:14.390
+first of all what A B testing says. So which option works
+
+00:54:14.390 --> 00:54:18.190
+better. That's a statement right. Which option works
+
+00:54:26.580 --> 00:54:31.480
+better. Simple right. So like I said I have a model A. I
+
+00:54:31.480 --> 00:54:36.380
+have a model basically B. And I have basically a model C.
+
+00:54:36.600 --> 00:54:39.960
+Right. What I will do I will try to test the model A, B and
+
+00:54:39.960 --> 00:54:42.300
+C based on accuracy,
+
+00:54:48.310 --> 00:54:59.890
+cost, speed and then accuracy. User rating right. So I will
+
+00:54:59.890 --> 00:55:05.130
+try to do this entire thing with model A, model B and with
+
+00:55:05.130 --> 00:55:08.790
+model C. And then I am going to decide that which model will
+
+00:55:08.790 --> 00:55:11.070
+go to the final production. Whether it's going to be A,
+
+00:55:11.150 --> 00:55:13.530
+whether it's going to be B or whether it's going to be C.
+
+00:55:13.790 --> 00:55:16.190
+And this is what every company does. So you must have seen
+
+00:55:16.190 --> 00:55:19.530
+that there are like many models even Chad GPT has created.
+
+00:55:19.830 --> 00:55:23.470
+Right. Chad GPT has created. But which one is going to be a
+
+00:55:23.470 --> 00:55:27.310
+primary model or which one is going to serve. Finally to the
+
+00:55:27.310 --> 00:55:30.890
+end user or which one will be available most of the time. So
+
+00:55:30.890 --> 00:55:33.270
+maybe they are deciding based on the A, B testing. But yeah
+
+00:55:33.270 --> 00:55:35.710
+we do that right. So this is something called as A, B
+
+00:55:35.710 --> 00:55:38.350
+testing which will be done with respect to the multiple
+
+00:55:38.350 --> 00:55:42.410
+different different users. Now so moving to the next
+
+00:55:42.410 --> 00:55:45.210
+question by the way. So what are the considerations for
+
+00:55:45.210 --> 00:55:49.410
+multi tenant gen AI system. Yeah this question. So what are
+
+00:55:49.410 --> 00:55:52.370
+the considerations for multi tenant gen AI system. What is
+
+00:55:52.370 --> 00:55:56.190
+the meaning of multi tenant by the way. Yeah. So basically
+
+00:55:56.190 --> 00:56:00.110
+see multi tenant is just an English word if someone is
+
+00:56:00.110 --> 00:56:02.490
+asking you a question. So multi tenant means I am creating
+
+00:56:02.490 --> 00:56:06.410
+one solution and which can go and which can serve a multiple
+
+00:56:06.410 --> 00:56:08.950
+either multiple users or either multiple companies.
+
+00:56:09.750 --> 00:56:14.210
+Technically I am talking about generative AI or TKS system
+
+00:56:14.210 --> 00:56:16.090
+as a SaaS solution.
+
+00:56:19.440 --> 00:56:23.560
+Okay. PK is saying dev, Q and prod. No that is not a multi
+
+00:56:23.560 --> 00:56:26.180
+tenant system. Multi tenant system means. It means
+
+00:56:26.180 --> 00:56:29.680
+technically a kind of a solution or kind of a product which
+
+00:56:29.680 --> 00:56:32.520
+can be used independently. Same product right. Same product
+
+00:56:32.520 --> 00:56:35.540
+can be used independently by a different different people or
+
+00:56:35.540 --> 00:56:37.560
+different different companies. So eventually I am talking
+
+00:56:37.560 --> 00:56:40.680
+about a SaaS product. This is how SaaS product works right.
+
+00:56:40.780 --> 00:56:43.120
+This is how SaaS product works. So for example if I am
+
+00:56:43.120 --> 00:56:46.720
+talking about a N8N solution right or may be a CRUEI cloud
+
+00:56:46.720 --> 00:56:50.900
+which is in a beta which I have already discussed in my live
+
+00:56:50.900 --> 00:56:55.040
+classes right where we have seen. So obviously everything is
+
+00:56:55.040 --> 00:56:57.500
+available to me. And everything is available to all of you
+
+00:56:57.500 --> 00:57:00.240
+as well. And even if some company some team is going to use
+
+00:57:00.240 --> 00:57:03.620
+it everything will be available even to them right. They are
+
+00:57:03.620 --> 00:57:06.780
+going to use it in their own way right. They are going to
+
+00:57:06.780 --> 00:57:09.640
+customize it in their own way. Simply means that that they
+
+00:57:09.640 --> 00:57:13.900
+are. So they have created a data isolation. My data will be
+
+00:57:13.900 --> 00:57:17.180
+with me. Your will be with you. I can't see yours. You can't
+
+00:57:17.180 --> 00:57:21.760
+see my simple right. Now like a limitation. So basically
+
+00:57:21.760 --> 00:57:25.460
+maybe like a based on the user role. I will be having a
+
+00:57:25.460 --> 00:57:27.300
+different different kind or I can try to put up a different
+
+00:57:27.300 --> 00:57:29.380
+different kind of a limitation that you can access only this
+
+00:57:29.380 --> 00:57:32.420
+you can access only that one. I can do a customization. I
+
+00:57:32.420 --> 00:57:35.020
+can like go with a different different kind of a purchasing
+
+00:57:35.020 --> 00:57:38.380
+plan depends team plan or maybe pro max whatever they are
+
+00:57:38.380 --> 00:57:41.780
+going to launch right. And I will be able to enjoy a
+
+00:57:41.780 --> 00:57:44.280
+different different layer of the security. So that is
+
+00:57:44.280 --> 00:57:47.860
+something called as multi tenant generative AI solution.
+
+00:57:49.260 --> 00:57:54.340
+Simple it's technically I'm talking about a SaaS. A
+
+00:57:54.340 --> 00:57:58.480
+different name of this SaaS because SaaS SaaS can be used by
+
+00:57:58.480 --> 00:58:01.180
+anyone right. So anyone can come in and you can use the
+
+00:58:01.180 --> 00:58:03.800
+SaaS. So this is just an English word you can check even
+
+00:58:03.800 --> 00:58:06.920
+with a chat GPT you will be able to find out the same
+
+00:58:06.920 --> 00:58:10.680
+meaning. Now so how do you implement a load balancing for a
+
+00:58:10.680 --> 00:58:13.400
+generative application. Any idea guys load balancing. I
+
+00:58:13.400 --> 00:58:18.220
+think I think we talked about it a lot of times. Yeah
+
+00:58:23.570 --> 00:58:27.090
+yeah. So first of all we have to understand that why load
+
+00:58:27.090 --> 00:58:32.130
+balancing is required. Ah. So let's suppose I'm like getting
+
+00:58:32.130 --> 00:58:36.410
+maybe 10 hits per second and instantly I have started
+
+00:58:36.410 --> 00:58:41.750
+getting maybe 100 hits right 100 hits. So obviously I have
+
+00:58:41.750 --> 00:58:46.270
+to you know route the traffic maybe to a different different
+
+00:58:46.270 --> 00:58:49.450
+server or maybe I have to spin a new server and then new
+
+00:58:49.450 --> 00:58:52.790
+traffic should go to the new server. Now to do that
+
+00:58:52.790 --> 00:58:56.170
+obviously I have to balance the load right. So basically
+
+00:58:56.170 --> 00:58:59.290
+load balancing definition wise load balancing. You will be
+
+00:58:59.290 --> 00:59:01.510
+able to see everywhere and load balancing says that that
+
+00:59:01.510 --> 00:59:05.350
+sharing a traffic right. Sharing a traffic across a multiple
+
+00:59:05.350 --> 00:59:08.370
+system or server you can say. So whenever there will be a
+
+00:59:08.370 --> 00:59:11.390
+traffic whenever user will come to my application I will
+
+00:59:11.390 --> 00:59:14.350
+start sending some user to server number one then two then
+
+00:59:14.350 --> 00:59:17.030
+three then four and so on and or maybe whichever is
+
+00:59:17.030 --> 00:59:19.370
+available right whichever is available at that point of a
+
+00:59:19.370 --> 00:59:22.350
+time or whichever bandwidth is available. So I'll try to
+
+00:59:22.350 --> 00:59:26.090
+send my like a traffic or user traffic means technically
+
+00:59:26.090 --> 00:59:29.830
+user right. Technically user. A to that particular server so
+
+00:59:29.830 --> 00:59:34.510
+that one server should not feel overloaded and it should not
+
+00:59:34.510 --> 00:59:38.050
+choke right. It should not feel choked. So that is something
+
+00:59:38.050 --> 00:59:41.690
+called as basically load balancing. How do we achieve it by
+
+00:59:41.690 --> 00:59:47.210
+the way. So again let me open up Scribble link yeah. So here
+
+00:59:47.210 --> 00:59:50.090
+whenever user will enter so obviously user will go through
+
+00:59:50.090 --> 00:59:52.950
+API gateway. I have already drawn that right the user will
+
+00:59:52.950 --> 00:59:55.430
+go through what user will go through basically API gateway.
+
+00:59:55.770 --> 00:59:59.410
+Now. So like I have mentioned user will go through basically
+
+00:59:59.410 --> 01:00:05.070
+API gateway yeah. User will go through API gateway which is
+
+01:00:05.070 --> 01:00:08.770
+nothing but entry point for any user. So any user will come
+
+01:00:08.770 --> 01:00:14.070
+go through the API gateway. Now so inside this one what we
+
+01:00:14.070 --> 01:00:20.050
+try to do. So we try to attach basically a load balancer
+
+01:00:21.810 --> 01:00:25.550
+service by the way. So basically it decides which model
+
+01:00:25.550 --> 01:00:29.970
+server gets the particular request. Okay. Or gets the
+
+01:00:29.970 --> 01:00:32.730
+particular traffic. So with respect to API gateway because
+
+01:00:32.730 --> 01:00:36.990
+that is the entry point we try to use it. And then along
+
+01:00:36.990 --> 01:00:40.570
+with this right along with this we try to even attach
+
+01:00:40.570 --> 01:00:43.770
+something like a sticky session s
+
+01:00:46.170 --> 01:00:51.770
+t i c k y sticky session. So let's suppose you are a user
+
+01:00:51.770 --> 01:00:53.990
+you are coming to my system and you have started chatting
+
+01:00:53.990 --> 01:00:57.270
+with system. So obviously server will try to like you know
+
+01:00:57.270 --> 01:01:02.470
+give you a particular thread and we should not. So when you
+
+01:01:02.470 --> 01:01:04.870
+are chatting back to back with my system so I should not
+
+01:01:04.870 --> 01:01:06.790
+change your server so that my server will be able to
+
+01:01:06.790 --> 01:01:09.250
+remember all of your chat. So this is something called this
+
+01:01:09.250 --> 01:01:11.310
+is something that we try to achieve it with the help of a
+
+01:01:11.310 --> 01:01:15.610
+sticky session. So I will try to like keep one user on one
+
+01:01:15.610 --> 01:01:19.570
+server. So which user has already started using and when new
+
+01:01:19.570 --> 01:01:22.130
+user will come I'll send to the different machine I'll send
+
+01:01:22.130 --> 01:01:26.090
+to the different server. Right. And simply like if one
+
+01:01:26.090 --> 01:01:29.430
+server is busy so basically like it will go to the other
+
+01:01:29.430 --> 01:01:32.190
+server not to achieve these things. This entire load
+
+01:01:32.190 --> 01:01:35.190
+balancing things or this sticky session things. So what we
+
+01:01:35.190 --> 01:01:40.850
+try to use so I can try to use in general ng ing inx right
+
+01:01:40.850 --> 01:01:43.890
+for a load balancing. I can I have already written that in a
+
+01:01:43.890 --> 01:01:48.130
+API section in why I can try to use right. I can try to use
+
+01:01:48.130 --> 01:01:53.210
+maybe a aws alb elastic load balancing something like that
+
+01:01:53.210 --> 01:01:57.670
+or I can try to use a kubernetes HPA service. Right. So I
+
+01:01:57.670 --> 01:01:59.710
+can. There are multiple services which is already available
+
+01:01:59.710 --> 01:02:02.010
+to perform these operations. Because this is something which
+
+01:02:02.010 --> 01:02:06.210
+is used across the industry not just in one single
+
+01:02:06.210 --> 01:02:08.810
+application but in all the application whatever application
+
+01:02:08.810 --> 01:02:11.410
+that you are going to build whatever application that you
+
+01:02:11.410 --> 01:02:14.150
+are going to send on a production layer everywhere you are
+
+01:02:14.150 --> 01:02:17.550
+going to use it. Yeah. So this is something called as load
+
+01:02:17.550 --> 01:02:20.770
+balancing and it's it's every everywhere like it's
+
+01:02:20.770 --> 01:02:24.430
+everywhere. Now so moving to the next one what is the
+
+01:02:24.430 --> 01:02:27.910
+approach of handling a model drift. So first of all we have
+
+01:02:27.910 --> 01:02:30.490
+to understand that what is the meaning of a model drift.
+
+01:02:30.490 --> 01:02:34.410
+Right. Why it happens. So basically model drift is nothing
+
+01:02:34.410 --> 01:02:39.290
+but if model is not able to give me a accurate answer then
+
+01:02:39.290 --> 01:02:42.010
+my model is drifting. This is what it says. Right. Drifting
+
+01:02:42.010 --> 01:02:45.430
+says means if model is giving me inaccurate answer then my
+
+01:02:45.430 --> 01:02:48.970
+model is drifting. There can be a multiple reasons right. So
+
+01:02:48.970 --> 01:02:52.910
+the very first reason which comes in my mind is old data
+
+01:02:52.910 --> 01:02:56.890
+set. So for example if I have trained a model maybe some
+
+01:02:56.890 --> 01:03:00.770
+model in 2024. Right. And obviously model will be having an
+
+01:03:00.770 --> 01:03:05.010
+idea about the data till 2024. Now if I'm asking about some
+
+01:03:05.010 --> 01:03:09.430
+event about in 2025 obviously my model will drift. My model
+
+01:03:09.430 --> 01:03:12.150
+will not be able to give a response. Right. So my model will
+
+01:03:12.150 --> 01:03:15.030
+hallucinate you can say. So that is something called as
+
+01:03:15.030 --> 01:03:18.750
+model drifting and how do we handle it basically. And again
+
+01:03:18.750 --> 01:03:22.070
+so if I'll talk about a drift so there can be a multiple
+
+01:03:22.070 --> 01:03:24.370
+different different kind of a drift you will be able to find
+
+01:03:24.370 --> 01:03:27.890
+out maybe a data drift maybe a concept drift maybe a
+
+01:03:27.890 --> 01:03:32.330
+retrieval. So how generally we try to handle as question
+
+01:03:32.330 --> 01:03:35.530
+says that what will be your approach to handle a model
+
+01:03:35.530 --> 01:03:39.150
+drifting means how you will be able to figure it out that
+
+01:03:39.150 --> 01:03:41.970
+your model is drifting or your model is not drifting.
+
+01:03:42.210 --> 01:03:45.290
+Because because you should keep on observing your models and
+
+01:03:45.290 --> 01:03:50.870
+obviously like you should like take an action. So if model
+
+01:03:50.870 --> 01:03:53.810
+has started drifting beyond some sort of certain thresholds.
+
+01:03:53.810 --> 01:03:58.250
+Right. So here what we try to do. So obviously. We try to
+
+01:03:58.250 --> 01:04:01.530
+monitor the performance of the model performance of the
+
+01:04:01.530 --> 01:04:04.490
+model means. So we try to track the accuracy we try to track
+
+01:04:04.490 --> 01:04:07.750
+the user rating about the model we try to track the error
+
+01:04:07.750 --> 01:04:11.570
+rate about the models. So basically that this is the reason
+
+01:04:11.570 --> 01:04:15.550
+when I was like talking about this entire architecture. So
+
+01:04:15.550 --> 01:04:19.750
+we had what. So we had basically observability layer. Right.
+
+01:04:19.870 --> 01:04:23.270
+We talked about this layer by the way. Yeah. What we are
+
+01:04:23.270 --> 01:04:25.990
+trying to do. So we are trying to log everything. We are
+
+01:04:25.990 --> 01:04:28.290
+trying to log everything. And obviously user rating and
+
+01:04:28.290 --> 01:04:31.010
+feedback will be available inside your databases or maybe
+
+01:04:31.010 --> 01:04:34.370
+inside your log. Right. Errors and everything will be
+
+01:04:34.370 --> 01:04:39.190
+available over here now. So we try to keep a log of each and
+
+01:04:39.190 --> 01:04:41.730
+everything maybe into a database or maybe into this log
+
+01:04:41.730 --> 01:04:45.490
+systems. And then we keep on observing all of these logs and
+
+01:04:45.490 --> 01:04:48.570
+based on that I can try to decide that whether my model is
+
+01:04:48.570 --> 01:04:53.750
+drifting or not. And if it is drifting then obviously I have
+
+01:04:53.750 --> 01:04:56.170
+to take the action. So if it is drifting because of the
+
+01:04:56.170 --> 01:04:59.310
+data. So obviously I have to train the model with respect to
+
+01:04:59.310 --> 01:05:07.290
+the latest data. Latest data. Now. So this is this. Now
+
+01:05:07.290 --> 01:05:10.370
+let's talk about the next question. So how do you implement
+
+01:05:10.370 --> 01:05:15.250
+a circuit breaker in Gen AI system? So first of all we have
+
+01:05:15.250 --> 01:05:17.430
+to understand that what is the meaning of circuit breaker.
+
+01:05:17.610 --> 01:05:21.440
+Any idea guys? Yeah. Circuit breaker.
+
+01:05:25.310 --> 01:05:27.630
+How do you implement a circuit breaker in Gen AI system?
+
+01:05:28.390 --> 01:05:32.830
+Nope. Okay. Ram is asking what is a sticky system. Sticky
+
+01:05:32.830 --> 01:05:35.770
+system means in a layman way if I have to explain you. So
+
+01:05:35.770 --> 01:05:40.250
+let's suppose Ram. So you are coming to my system. Right. So
+
+01:05:40.250 --> 01:05:42.050
+obviously let's suppose you are going to hit your own
+
+01:05:42.050 --> 01:05:46.210
+system. Now we have we are using basically not just one
+
+01:05:46.210 --> 01:05:48.970
+server. We are using multiple servers. Multiple server means
+
+01:05:48.970 --> 01:05:52.550
+computers. Right. So whenever someone is coming on your own
+
+01:05:52.550 --> 01:05:55.150
+system. So on AWS. So we have taken a multiple system
+
+01:05:55.150 --> 01:06:00.050
+multiple servers. Or you can say. Like. We have basically
+
+01:06:00.050 --> 01:06:04.570
+taken the multiple or kind of a cluster we have taken where
+
+01:06:04.570 --> 01:06:08.330
+we have a multiple systems. Now when Ram will come I will
+
+01:06:08.330 --> 01:06:12.730
+assign Ram or I will direct Ram towards one of my server.
+
+01:06:13.090 --> 01:06:17.650
+When let's suppose PK is coming. So again I will route PK to
+
+01:06:17.650 --> 01:06:21.070
+one of the another server and when Anil will come. So I will
+
+01:06:21.070 --> 01:06:25.510
+route Anil to one of the another server. Simple. Right. So I
+
+01:06:25.510 --> 01:06:28.890
+will keep on routing these people. Now let's suppose my
+
+01:06:28.890 --> 01:06:32.010
+system is feeling overloaded. My system is feeling
+
+01:06:32.010 --> 01:06:34.550
+overloaded. Maybe like there are lot of users which is
+
+01:06:34.550 --> 01:06:36.650
+coming in my system and my system will start feeling
+
+01:06:36.650 --> 01:06:39.630
+overloaded. For example. Yeah. My system will start feeling
+
+01:06:39.630 --> 01:06:44.210
+overloaded. But still I will not remove Ram, PK and Anil
+
+01:06:44.210 --> 01:06:47.490
+from my current servers. Because they have already started
+
+01:06:47.490 --> 01:06:50.610
+using it. They have already started chatting with my server.
+
+01:06:50.810 --> 01:06:53.770
+So let's suppose they have already started like consuming
+
+01:06:53.770 --> 01:06:57.630
+some other services on my server. So if I am going to remove
+
+01:06:57.630 --> 01:07:00.770
+them there is a very high chance if I have not configured it
+
+01:07:00.770 --> 01:07:03.230
+then I will end up losing their sessions. I will end up
+
+01:07:03.230 --> 01:07:05.950
+losing their basically like a conversation or maybe their
+
+01:07:05.950 --> 01:07:09.410
+history. So I will not be able to respond to that user in a
+
+01:07:09.410 --> 01:07:12.850
+proper manner. So I will just try to bind a particular user
+
+01:07:12.850 --> 01:07:16.010
+with a particular server unless and until user is not
+
+01:07:16.010 --> 01:07:19.610
+leaving the server or user is not closing the services. That
+
+01:07:19.610 --> 01:07:22.610
+is something called as stickiness. And in majority of the
+
+01:07:22.610 --> 01:07:24.790
+application you will be able to find out this kind of
+
+01:07:24.790 --> 01:07:28.410
+approach. In some of the application what do we do? So
+
+01:07:28.410 --> 01:07:32.250
+basically we never stick one user to one of the server. We
+
+01:07:32.250 --> 01:07:35.970
+never stick to it. So wherever we don't like have to track
+
+01:07:35.970 --> 01:07:39.990
+maybe a conversation or maybe a history over there we can
+
+01:07:39.990 --> 01:07:43.070
+avoid stickiness. But whenever these things matter, whenever
+
+01:07:43.070 --> 01:07:45.950
+your history matters, whenever your like entire lineage of
+
+01:07:45.950 --> 01:07:48.690
+the conversation matters. So over there we try to implement
+
+01:07:48.690 --> 01:07:50.330
+the stickiness.
+
+01:07:54.680 --> 01:07:59.620
+Yeah. Now so moving to the next. What is the next question?
+
+01:07:59.900 --> 01:08:02.940
+Circuit break. Yeah. So how do you implement a circuit
+
+01:08:02.940 --> 01:08:06.040
+breaker in Gen AI system? So first of all like I said so we
+
+01:08:06.040 --> 01:08:08.340
+have to understand what is the meaning of a circuit breaker.
+
+01:08:08.660 --> 01:08:16.790
+Any idea guys? Yeah. So Bishwar Samal is saying gracefully
+
+01:08:16.790 --> 01:08:20.690
+handling API failure generating response will show as a API
+
+01:08:20.690 --> 01:08:23.930
+unavailable. Stop sending request to the broken part.
+
+01:08:24.550 --> 01:08:28.710
+Monitor failure. Yeah. Actually. So Samal has actually given
+
+01:08:28.710 --> 01:08:32.330
+the exact like answer. So gracefully handling API failure
+
+01:08:32.330 --> 01:08:37.010
+generic response will be shown as an API unavailable. So
+
+01:08:37.010 --> 01:08:39.070
+yeah that is something called a circuit breaker. So it's
+
+01:08:39.070 --> 01:08:42.690
+basically a fundamental concept right. What happens? So
+
+01:08:42.690 --> 01:08:45.210
+let's suppose I'll give you one example right. So let's
+
+01:08:45.210 --> 01:08:48.210
+suppose you are trying to call your friend right. You are
+
+01:08:48.210 --> 01:08:51.030
+trying to call your friend. So you have called once and
+
+01:08:51.030 --> 01:08:54.750
+maybe your friend was not able to pick up your call. Then
+
+01:08:54.750 --> 01:08:58.550
+you called twice. Then you called thrice. Then you called
+
+01:08:58.550 --> 01:09:01.850
+four times. Maybe you have called now ten times. Yes you
+
+01:09:01.850 --> 01:09:05.290
+have called basically ten times to your friend basically.
+
+01:09:06.050 --> 01:09:10.210
+And your friend maybe intentionally he is not picking up a
+
+01:09:10.210 --> 01:09:12.450
+call or she is not picking up a call or maybe because of
+
+01:09:12.450 --> 01:09:16.030
+something which has happened with your friend. So he or she
+
+01:09:16.030 --> 01:09:17.970
+is not available and they are not able to pick the call.
+
+01:09:18.230 --> 01:09:19.790
+What you will do in that situation?
+
+01:09:22.870 --> 01:09:25.270
+What you will do in that situation? So maybe you will wait
+
+01:09:25.270 --> 01:09:28.010
+for some time. As a human being what you will do? So you
+
+01:09:28.010 --> 01:09:30.370
+will wait for some time right. It's not like you will keep
+
+01:09:30.370 --> 01:09:34.510
+on giving him like a psychopath. You will keep on giving him
+
+01:09:34.510 --> 01:09:38.430
+hundred call or thousand calls unless and until he or she is
+
+01:09:38.430 --> 01:09:41.110
+not able to pick that call or unless and until he or she is
+
+01:09:41.110 --> 01:09:42.950
+not able to give you a response. You will not do something
+
+01:09:42.950 --> 01:09:45.150
+like that right. Maybe you will call couple of times. But
+
+01:09:45.150 --> 01:09:47.470
+yeah after couple of times obviously you will stop right.
+
+01:09:48.030 --> 01:09:53.670
+You will stop for a while. And this is something which is
+
+01:09:53.670 --> 01:09:59.350
+called a circuit breaker. Okay. Technically. So here if I am
+
+01:09:59.350 --> 01:10:02.610
+not able to get a response right. If I am not able to get a
+
+01:10:02.610 --> 01:10:07.370
+response. So from some of the APIs or from some of the
+
+01:10:07.370 --> 01:10:11.410
+services which I am using inside my JNI application. So what
+
+01:10:11.410 --> 01:10:15.570
+I will do? I will not try endlessly over there. So I will
+
+01:10:15.570 --> 01:10:19.250
+just pause for some time right. I will just pause for some
+
+01:10:19.250 --> 01:10:22.330
+time or my app or whatever system which I am designing. So
+
+01:10:22.330 --> 01:10:25.990
+my system will stop automatically. Right. So my system will
+
+01:10:25.990 --> 01:10:29.870
+stop automatically and it will it will just like show some
+
+01:10:29.870 --> 01:10:34.330
+graceful message that I am busy please try me later right.
+
+01:10:34.510 --> 01:10:37.490
+Something like that. I will try to showcase. So that is
+
+01:10:37.490 --> 01:10:42.510
+technically called as circuit breaker. Yeah. Now next
+
+01:10:42.510 --> 01:10:45.250
+question says that that what are the best practices for
+
+01:10:45.250 --> 01:10:49.850
+error handling in generative AI. Okay. So error handling.
+
+01:10:53.270 --> 01:10:55.990
+Error. So first of all we have to understand like what are
+
+01:10:55.990 --> 01:10:58.590
+the ways by which we can get an error. So there are multiple
+
+01:10:58.590 --> 01:11:01.890
+ways by which we can get an error. Timeout error, wrong
+
+01:11:01.890 --> 01:11:05.670
+format, bad input kind of a things. So all of this can
+
+01:11:05.670 --> 01:11:09.430
+generate the error for me. Right. So how I will be able to
+
+01:11:09.430 --> 01:11:13.570
+handle that. So first of all like everything starts with the
+
+01:11:13.570 --> 01:11:17.350
+input. So if system is giving me a wrong output there is a
+
+01:11:17.350 --> 01:11:19.530
+possibility that I have given them a wrong input.
+
+01:11:19.650 --> 01:11:23.190
+Technically a prompt. Right. So wrong prompt. Maybe I have
+
+01:11:23.190 --> 01:11:26.290
+given a wrong example. Maybe I have given a wrong context.
+
+01:11:26.290 --> 01:11:30.550
+Maybe I have given a wrong analogy. So this, this could be a
+
+01:11:30.550 --> 01:11:33.430
+reason, right? This could be a reason why a system is giving
+
+01:11:33.430 --> 01:11:36.690
+me a wrong output. So I have to check basically a like a
+
+01:11:36.690 --> 01:11:42.770
+input and I have to reframe my input by the way. Maybe I
+
+01:11:42.770 --> 01:11:46.530
+have to like a retry same thing with the RLMs again and
+
+01:11:46.530 --> 01:11:48.670
+again. So maybe first time it has given me a hallucinated
+
+01:11:48.670 --> 01:11:51.470
+answer but maybe second time it will not give me that
+
+01:11:51.470 --> 01:11:54.550
+answer. So maybe I can try to like retry in this way again I
+
+01:11:54.550 --> 01:11:57.410
+can handle the errors. So first check the inputs, correct
+
+01:11:57.410 --> 01:12:00.770
+it. This is the one of the way by which you can handle the
+
+01:12:00.770 --> 01:12:04.750
+error in a generative way. Second retry. Right. Third maybe
+
+01:12:04.750 --> 01:12:07.730
+you can go for the fallback. So don't rely on one single
+
+01:12:07.730 --> 01:12:10.650
+models. Maybe try to offer fallback models or some different
+
+01:12:10.650 --> 01:12:14.170
+models that if this is not giving me a result. Now let's try
+
+01:12:14.170 --> 01:12:16.690
+to go ahead with another model. So try to like, you know,
+
+01:12:16.690 --> 01:12:20.110
+design your solution with a multimodal system. Always
+
+01:12:20.110 --> 01:12:22.550
+advisable by the way. Yeah. Always advisable. You should not
+
+01:12:22.550 --> 01:12:28.570
+rely on one thing at a time. Fourth. So a simple diplomatic
+
+01:12:28.570 --> 01:12:34.050
+things to all the user. Please try later. Yeah. So if system
+
+01:12:34.050 --> 01:12:36.270
+is giving an error to your user. So in that case
+
+01:12:36.270 --> 01:12:40.330
+diplomatically please try later. We are looking into the
+
+01:12:40.330 --> 01:12:43.090
+system. Something like that. You can try to give. So this is
+
+01:12:43.090 --> 01:12:44.930
+how you can try to handle an error with respect to a
+
+01:12:44.930 --> 01:12:48.790
+generative AI solution. Yeah. Now how do you implement
+
+01:12:48.790 --> 01:12:54.690
+monitoring. Try catch. No. It's not about. See try catch. We
+
+01:12:54.690 --> 01:12:59.550
+try to. So I think you got this question in a wrong way. See
+
+01:12:59.550 --> 01:13:03.190
+try catch is basically something that you have to implement,
+
+01:13:03.370 --> 01:13:08.090
+but on code level. Your code should not crack. Your logic
+
+01:13:08.090 --> 01:13:11.230
+should not crack. But here when I'm talking about a
+
+01:13:11.230 --> 01:13:15.770
+generative AI, right? So your code is correct. Your model
+
+01:13:15.770 --> 01:13:18.930
+inferencing is correct. But if user has given a wrong input,
+
+01:13:19.050 --> 01:13:23.310
+obviously user will get a wrong output, right? Yeah. So we
+
+01:13:23.310 --> 01:13:25.390
+are technically not talking about the code over here. So
+
+01:13:25.390 --> 01:13:29.030
+your try catch is not going to help out. Your try catch is
+
+01:13:29.030 --> 01:13:32.870
+going to help out in terms of a runtime error, which is
+
+01:13:32.870 --> 01:13:36.310
+technically a code error. If you are going to get. Not this
+
+01:13:36.310 --> 01:13:39.290
+kind of error, right? Not a model hallucination kind of an
+
+01:13:39.290 --> 01:13:41.570
+error. It will be able to handle. Now we are talking about
+
+01:13:41.570 --> 01:13:44.370
+all of this question with respect to what? With respect to
+
+01:13:44.370 --> 01:13:49.570
+gen AI. Not with respect to a code. Hope you understand PK.
+
+01:13:49.750 --> 01:13:51.410
+Yeah. Yeah.
+
+01:13:54.040 --> 01:13:58.040
+Yeah. Yeah. So yeah, it's, it's not that error. It's, it's a
+
+01:13:58.040 --> 01:14:00.260
+different data. I'm talking about. It's a generative error.
+
+01:14:00.700 --> 01:14:03.940
+Now like, okay, move to the next, whatever question we are
+
+01:14:03.940 --> 01:14:06.200
+discussing, everything is with respect to generative AI, by
+
+01:14:06.200 --> 01:14:09.520
+the way. Yeah. So always think in a context of generative
+
+01:14:09.520 --> 01:14:13.620
+AI, uh, how do you implement a monitoring for a generative
+
+01:14:13.620 --> 01:14:17.600
+AI application? Okay. So monitoring wise, Prometheus
+
+01:14:17.600 --> 01:14:19.780
+Grafana, I can try to integrate, which will keep on
+
+01:14:19.780 --> 01:14:22.520
+monitoring. And then I can try to enable a notification
+
+01:14:22.520 --> 01:14:25.940
+services. Uh, basically, and this is how I will be able to
+
+01:14:25.940 --> 01:14:28.360
+monitor this, how we try to like monitor each and
+
+01:14:28.360 --> 01:14:31.380
+everything. So basically monitoring means keeping an eye on
+
+01:14:31.380 --> 01:14:34.720
+a system as simple as that in a layman way. Right? So we
+
+01:14:34.720 --> 01:14:37.180
+can, we can keep track of our system health. So where we can
+
+01:14:37.180 --> 01:14:42.300
+keep checking, uh, CPU, memory, GPU, memory, uh, CPU, GPU,
+
+01:14:42.300 --> 01:14:45.260
+and API speeds, right? We keep on checking load on the
+
+01:14:45.260 --> 01:14:48.540
+system, concurrency on the system, uh, model users means
+
+01:14:48.540 --> 01:14:51.380
+token input, token output. Because with respect to
+
+01:14:51.380 --> 01:14:54.440
+generative AI solution, uh, token input, token output
+
+01:14:54.440 --> 01:14:57.020
+matters a lot, right? You must be able to see the same
+
+01:14:57.020 --> 01:15:01.120
+thing. So if I'll show you by, uh, your own system, you're
+
+01:15:01.120 --> 01:15:04.240
+on API. So obviously you will be able to observe each and
+
+01:15:04.240 --> 01:15:07.600
+everything, right? Token input, output, error stasis,
+
+01:15:07.660 --> 01:15:09.960
+everything, every log we are trying to show you. So
+
+01:15:09.960 --> 01:15:11.980
+somewhere we are storing it, right? Then only we are able to
+
+01:15:11.980 --> 01:15:14.340
+show you. So what is the token? And again, what is the
+
+01:15:14.340 --> 01:15:16.420
+prompt token input token? What is the output token?
+
+01:15:16.560 --> 01:15:20.240
+Everything, right? Input output token. If error. If there
+
+01:15:20.240 --> 01:15:24.020
+was a response, if there was a error, everything, we all
+
+01:15:24.020 --> 01:15:28.840
+will be able to trace. If we have this kind of a log, right?
+
+01:15:28.920 --> 01:15:31.760
+This kind of a log. So technically we are storing this log.
+
+01:15:31.880 --> 01:15:34.180
+Then only we are able to show you and you will be able to,
+
+01:15:34.220 --> 01:15:36.680
+you are, you all are able to see it in your own dashboard,
+
+01:15:36.920 --> 01:15:40.040
+basically with your own role, right? Uh, for your own
+
+01:15:40.040 --> 01:15:43.160
+dashboard, uh, for your own, like a utilization, you all are
+
+01:15:43.160 --> 01:15:45.740
+able to see this one. So technically we are storing
+
+01:15:45.740 --> 01:15:49.000
+somewhere and we are showing you that data, right? And, uh,
+
+01:15:49.140 --> 01:15:52.520
+with every, every application, we does the exact same thing.
+
+01:15:52.600 --> 01:15:56.220
+Yeah. I don't think that this kind of a log, any other
+
+01:15:56.220 --> 01:15:58.560
+system is showcasing. Yeah. They, they try to showcase
+
+01:15:58.560 --> 01:16:02.680
+maybe, uh, use it, uses like a metrics as graphs, but, uh,
+
+01:16:02.740 --> 01:16:05.300
+on this label, I don't think any system, I have never seen
+
+01:16:05.300 --> 01:16:08.260
+any kind of a system, but when we were designing this
+
+01:16:08.260 --> 01:16:10.320
+system, we thought that, okay, anyhow, we are storing the
+
+01:16:10.320 --> 01:16:14.380
+data. So let's expose that data to the user as well. So it's
+
+01:16:14.380 --> 01:16:18.820
+your data. Look at it. Okay. Okay. You can keep track of
+
+01:16:18.820 --> 01:16:21.760
+your, like a users where system has failed, where system has
+
+01:16:21.760 --> 01:16:24.800
+not failed. What kind of a, you know, token that, uh, that
+
+01:16:24.800 --> 01:16:27.820
+was a input token, what was the output token, everything,
+
+01:16:27.980 --> 01:16:31.300
+everything you will be able to basically, uh, keep track of
+
+01:16:31.300 --> 01:16:34.620
+it. So this is what we do in case of a monitoring night, uh,
+
+01:16:34.640 --> 01:16:37.280
+again, so monitoring, not just in terms of this one. So we
+
+01:16:37.280 --> 01:16:39.640
+try to do a system monitoring. We try to do a model users
+
+01:16:39.640 --> 01:16:44.060
+monitoring or even a user site, right? That whether user are
+
+01:16:44.060 --> 01:16:47.040
+getting errors or not, what was the success rate and user
+
+01:16:47.040 --> 01:16:50.620
+when the user are getting an error. So whose mistake is was
+
+01:16:50.620 --> 01:16:53.960
+whether it was a user's mistake or it was my system's
+
+01:16:53.960 --> 01:16:56.400
+mistake because the user are getting error doesn't mean that
+
+01:16:56.400 --> 01:16:59.800
+I should go and I should solve it, right? A user might have
+
+01:16:59.800 --> 01:17:03.580
+received an error because of his or her wrong input. So in
+
+01:17:03.580 --> 01:17:07.180
+that case, my system is not responsible, right? My system
+
+01:17:07.180 --> 01:17:09.500
+will take a responsibility or I will go, I will check and I
+
+01:17:09.500 --> 01:17:12.340
+will try to debug it. I will try to replicate that one. If
+
+01:17:12.340 --> 01:17:18.180
+there is a error in my system, right? So we are not supposed
+
+01:17:18.180 --> 01:17:21.220
+to solve all the error. This is what I'm trying to say. So
+
+01:17:21.220 --> 01:17:24.400
+we try to even create a segregation over there. Uh, so
+
+01:17:24.400 --> 01:17:26.880
+track, uh, we try to track the errors. We try to do the
+
+01:17:26.880 --> 01:17:29.440
+classification or like, you know, segregation of the error.
+
+01:17:29.580 --> 01:17:33.900
+Uh, we tried to check the success rate of any queries or any
+
+01:17:33.900 --> 01:17:37.800
+hits that a user is going to throw. And then obviously use a
+
+01:17:37.800 --> 01:17:41.560
+satisfaction rate. We try to check, yeah, so
+
+01:17:43.770 --> 01:17:46.670
+this is how we try to implement a monitoring and everything
+
+01:17:46.670 --> 01:17:50.850
+basically starts from your logs. So a better your log is, so
+
+01:17:50.850 --> 01:17:54.030
+better your entire monitoring solution is going to be, yeah.
+
+01:17:56.960 --> 01:18:01.060
+How? So PK is asking how a system would find such error if
+
+01:18:01.060 --> 01:18:03.900
+person using it does not person
+
+01:18:05.850 --> 01:18:09.450
+using it does not tell you, see, uh, just, just for an
+
+01:18:09.450 --> 01:18:12.770
+example, right? I have shown you this one, this system. So
+
+01:18:12.770 --> 01:18:16.310
+let's suppose I'm going into the log and obviously there is
+
+01:18:16.310 --> 01:18:19.070
+a status is equals to error. Let's suppose there is a flag
+
+01:18:19.070 --> 01:18:22.510
+which has been attached and is saying that error now, why?
+
+01:18:23.350 --> 01:18:27.710
+This error has occurred. Yeah. Can I say that I, my system
+
+01:18:27.710 --> 01:18:30.530
+can do a classification. So whether it's a, like a, you
+
+01:18:30.530 --> 01:18:33.630
+know, a issue from the user side or whether there was an
+
+01:18:33.630 --> 01:18:36.870
+issue from my side, yeah, whether there is an issue from
+
+01:18:36.870 --> 01:18:39.830
+user side or whether there is an issue from my side, my
+
+01:18:39.830 --> 01:18:42.870
+system can observe, I can clearly see over here that the
+
+01:18:42.870 --> 01:18:47.410
+metadata is like a weird in this place. Whereas here, so my
+
+01:18:47.410 --> 01:18:51.050
+metadata or load which has been sent was like a role user
+
+01:18:51.050 --> 01:18:53.950
+comment, all these things is proper. So maybe this is a user
+
+01:18:53.950 --> 01:18:57.150
+error, right? Basically this is a mistake from a user side,
+
+01:18:57.210 --> 01:18:59.590
+not from my system side. So even though system is giving me
+
+01:18:59.590 --> 01:19:02.950
+an error, I should not be bothered about it basically
+
+01:19:02.950 --> 01:19:06.010
+because it was a user's mistake. So technically in every
+
+01:19:06.010 --> 01:19:08.690
+system, if you have built a system, if you have designed a
+
+01:19:08.690 --> 01:19:11.350
+system, you know that, that what will be the input, what
+
+01:19:11.350 --> 01:19:13.890
+will be the output and what kind of error I'm going to get
+
+01:19:13.890 --> 01:19:16.970
+based on that, you will write a piece of the code to
+
+01:19:16.970 --> 01:19:20.790
+classify, to like, you know, segregate the errors. This is
+
+01:19:20.790 --> 01:19:24.990
+how we do it. Token user's detail is very helpful for
+
+01:19:24.990 --> 01:19:27.490
+troubleshooting. Yeah. So you will be able to see your input
+
+01:19:27.490 --> 01:19:29.850
+token as well as output token, both, both is visible and
+
+01:19:29.850 --> 01:19:32.570
+then total token. So for this one from token means input
+
+01:19:32.570 --> 01:19:35.270
+token is 14 as you can see, and then completion token is
+
+01:19:35.270 --> 01:19:39.310
+equals to 92, right? So total token is basically 106 and
+
+01:19:39.310 --> 01:19:42.390
+then this was the duration. So we are showing you even a
+
+01:19:42.390 --> 01:19:45.230
+latency in a millisecond basically that this is the time
+
+01:19:45.230 --> 01:19:48.010
+which has been taken for this entire process, which our
+
+01:19:48.010 --> 01:19:50.470
+system has taken by the way. And then this is the total
+
+01:19:50.470 --> 01:19:53.210
+token which has been utilized. Okay. And likewise you can,
+
+01:19:53.230 --> 01:19:55.750
+you can track each and everything, even overall you will be
+
+01:19:55.750 --> 01:19:58.790
+able to track over here. So whenever this tracking
+
+01:19:58.790 --> 01:20:01.210
+monitoring comes into a picture, right, just remember this
+
+01:20:01.210 --> 01:20:03.750
+entire system of URI API, you will be able to find out
+
+01:20:03.750 --> 01:20:06.930
+everywhere here and we have even exposed it. Yeah. We have
+
+01:20:06.930 --> 01:20:09.690
+even exposed it. So total request, number of model types,
+
+01:20:09.850 --> 01:20:13.450
+total model used. So what, what model use? So from this
+
+01:20:13.450 --> 01:20:16.250
+model, what is the total token I have used? What was the
+
+01:20:16.250 --> 01:20:19.810
+total request? What was the average request? Active high
+
+01:20:19.810 --> 01:20:22.230
+users, everything, everything I can observe it basically.
+
+01:20:22.230 --> 01:20:25.350
+With respect to a particular model as well. Right. What is
+
+01:20:25.350 --> 01:20:28.070
+the total chat completion token I have used maybe like a 2
+
+01:20:28.070 --> 01:20:32.170
+,45,000 from one of my account. Yeah. And then like a error
+
+01:20:32.170 --> 01:20:35.750
+status. So what was error, how many error has occurred
+
+01:20:35.750 --> 01:20:40.830
+basically. So like I can, I can see everything here. So
+
+01:20:40.830 --> 01:20:44.290
+whenever you think about this one, just, just like a open up
+
+01:20:44.290 --> 01:20:48.050
+this and then look at this metrics as once you will be able
+
+01:20:48.050 --> 01:20:50.670
+to get a fair understanding. I'm not saying that a whole
+
+01:20:50.670 --> 01:20:53.110
+idea, but yeah, fair understanding. So that you will be able
+
+01:20:53.110 --> 01:20:57.170
+to give an answer now. So implement the monitoring for GNI
+
+01:20:57.170 --> 01:21:00.410
+application, fine done. What is the approach for the cost
+
+01:21:00.410 --> 01:21:03.570
+optimization in generative AI? See cost optimization can be
+
+01:21:03.570 --> 01:21:06.430
+done by optimizing all of this layers, the layers which I
+
+01:21:06.430 --> 01:21:09.750
+have like a defined API gateway orchestration, like this one
+
+01:21:09.750 --> 01:21:12.370
+custom LLM models creation or plus retrieval, which is a
+
+01:21:12.370 --> 01:21:14.970
+hybrid technically on a caching layer, on a safety layer,
+
+01:21:15.030 --> 01:21:18.670
+observability data everywhere. A majority of times, right?
+
+01:21:18.690 --> 01:21:23.150
+Majority of times. So basically we try to, you know. Achieve
+
+01:21:23.150 --> 01:21:27.890
+basically a cost optimization by doing a caching that, that
+
+01:21:27.890 --> 01:21:30.390
+will be my first bet, right? That will be my first bet.
+
+01:21:30.770 --> 01:21:34.430
+Second bet. So first go ahead with the caching, every layer
+
+01:21:34.430 --> 01:21:36.770
+of a caching, maybe go with the KV caching. Maybe we go with
+
+01:21:36.770 --> 01:21:39.490
+the request response caching. Technically you try to use a
+
+01:21:39.490 --> 01:21:42.190
+radius over there, right? So try to go ahead with the
+
+01:21:42.190 --> 01:21:45.370
+caching. First part, second part, right? Second part, second
+
+01:21:45.370 --> 01:21:49.590
+side by which you will be able to save the cost. Uh, try to
+
+01:21:49.590 --> 01:21:53.990
+use a lightweight. So what I'm trying to say, try to use a
+
+01:21:53.990 --> 01:21:57.710
+quantized model if possible, right? So if quantized model is
+
+01:21:57.710 --> 01:22:00.910
+going to serve your purpose, use that. It's not like for
+
+01:22:00.910 --> 01:22:03.950
+every, even for the small use cases or even for the midsize
+
+01:22:03.950 --> 01:22:06.470
+of big use cases, you should go ahead and use a billions
+
+01:22:06.470 --> 01:22:09.030
+parameter model or trillions parameter model. No, it's not
+
+01:22:09.030 --> 01:22:12.410
+required, right? It's not required basically. So it's not
+
+01:22:12.410 --> 01:22:14.210
+like you should always go ahead with, I have seen people
+
+01:22:14.210 --> 01:22:17.790
+that they always, without even thinking about the task or
+
+01:22:17.790 --> 01:22:20.010
+the like, you know, a problem that they're trying to solve.
+
+01:22:20.870 --> 01:22:24.490
+They just go and blindly use like the heavy models. I mean,
+
+01:22:24.490 --> 01:22:28.210
+why, why you're doing it? Yeah. Why you're doing it when
+
+01:22:28.210 --> 01:22:31.690
+your use case is very small and when a small model can serve
+
+01:22:31.690 --> 01:22:35.490
+your purposes, that too with the 99.9% of accuracy or
+
+01:22:35.490 --> 01:22:38.230
+availability, right? And that too with the minimal cost,
+
+01:22:38.310 --> 01:22:41.290
+then why you are productionizing a heavy weighted model?
+
+01:22:41.410 --> 01:22:43.410
+Because if you are productionizing a heavy weighted model,
+
+01:22:43.530 --> 01:22:47.110
+you are burning a GPU. You are like a, you know, taking a
+
+01:22:47.110 --> 01:22:51.130
+heavy high input token and low, like a trying to get, give a
+
+01:22:51.130 --> 01:22:55.950
+output as again, a big, like a tokens and everything is
+
+01:22:55.950 --> 01:22:59.470
+going to cost you, right? Because inferencing costs us a lot
+
+01:22:59.470 --> 01:23:02.790
+basically. And let's suppose if you're even trying to train
+
+01:23:02.790 --> 01:23:05.670
+your model, right? Fine tune. For example, no one trains or
+
+01:23:05.670 --> 01:23:08.090
+very few people trains by the way, let's suppose I'm doing a
+
+01:23:08.090 --> 01:23:11.650
+fine tuning, right? So try to, again, you were there, we try
+
+01:23:11.650 --> 01:23:14.810
+to like spend a lot of like, you know, money. So whenever
+
+01:23:14.810 --> 01:23:17.750
+I'm trying to do a fine tuning, first of all, my model
+
+01:23:17.750 --> 01:23:21.210
+selection will be good. Second, data, third, the hardware
+
+01:23:21.210 --> 01:23:24.730
+optimization, obviously, right? A fourth, what kind of a
+
+01:23:24.730 --> 01:23:28.630
+fine tuning I'm going to do? So either I'm going ahead with
+
+01:23:28.630 --> 01:23:31.270
+the full fine tuning, which is the costliest approach, or
+
+01:23:31.270 --> 01:23:33.890
+I'm going with the pre-fit basically. So parameter efficient
+
+01:23:33.890 --> 01:23:38.350
+fine tuning or inside that LoRa and Cora basically. So so
+
+01:23:38.350 --> 01:23:42.970
+you have to basically like in a generative way, if you have
+
+01:23:42.970 --> 01:23:45.210
+to optimize the cost, you can optimize the cost on a
+
+01:23:45.210 --> 01:23:48.030
+multiple label. In case of request response, yes. Catching,
+
+01:23:48.030 --> 01:23:49.770
+implementing. You can implement it and you will be able to
+
+01:23:49.770 --> 01:23:51.790
+optimize it. But before that, your model should be light
+
+01:23:51.790 --> 01:23:55.130
+weighted, right? Always your model should be light weighted.
+
+01:23:56.030 --> 01:23:58.270
+And obviously it should fulfill the purpose, right? It
+
+01:23:58.270 --> 01:24:04.270
+should fulfill the purpose at the time. And yeah, so again,
+
+01:24:04.410 --> 01:24:07.090
+when the user is trying to do a prompting, always try to
+
+01:24:07.090 --> 01:24:10.690
+limit it. Don't say that, okay, a user can enter the prompt
+
+01:24:10.690 --> 01:24:14.250
+with the thousand tokens and then, you know, a system will
+
+01:24:14.250 --> 01:24:18.450
+give a response with the 10,000 tokens. No. Limited. 400
+
+01:24:18.450 --> 01:24:22.650
+tokens. 400 tokens. Only. Yeah. So in this way, what you
+
+01:24:22.650 --> 01:24:25.490
+will do, so you will be able to reduce the recurring cost,
+
+01:24:25.690 --> 01:24:30.650
+which will come on your like a budget basically. There are
+
+01:24:30.650 --> 01:24:32.770
+other ways as well, but yeah, this is something that you
+
+01:24:32.770 --> 01:24:36.330
+should always think about on a very, very fast day in terms
+
+01:24:36.330 --> 01:24:40.290
+of saving a running cost of the model. I'm not talking about
+
+01:24:40.290 --> 01:24:43.930
+like a cost about building a solution, but I'm talking about
+
+01:24:43.930 --> 01:24:46.710
+basically a cost when you have already built a solution and
+
+01:24:46.710 --> 01:24:49.730
+now solution is in production. So again, there will be two
+
+01:24:49.730 --> 01:24:52.190
+kinds of a cost. Obviously one will be a recurring cost
+
+01:24:52.190 --> 01:24:55.970
+after productionizing and a maintenance cost. There will be
+
+01:24:55.970 --> 01:24:58.930
+another kind of a cost and then building something, right?
+
+01:24:58.970 --> 01:25:01.610
+So again, that will give you the cost. So the recurring cost
+
+01:25:01.610 --> 01:25:05.290
+is going to kill you a lot, right? So when, because building
+
+01:25:05.290 --> 01:25:07.750
+something is just a one time cost, right? Maintenance is
+
+01:25:07.750 --> 01:25:10.750
+yes, it's a continuous cost, but yeah, so if you are going
+
+01:25:10.750 --> 01:25:13.450
+to build things in a better manner, then your maintenance
+
+01:25:13.450 --> 01:25:17.610
+will be very, very less in that way. Now, let's talk about
+
+01:25:17.610 --> 01:25:20.190
+the cost. Now, uh, next question says that, that how do you
+
+01:25:20.190 --> 01:25:24.770
+implement a security in a generative AI system? Yeah. So
+
+01:25:24.770 --> 01:25:27.530
+obviously I can, I can try to control the logins and the
+
+01:25:27.530 --> 01:25:30.430
+permission I can try to encrypt a data. So when the user is
+
+01:25:30.430 --> 01:25:32.650
+trying to send our data on my system, so obviously I should
+
+01:25:32.650 --> 01:25:36.870
+not send those data as a string, right? As it is encrypt the
+
+01:25:36.870 --> 01:25:39.630
+data and then send it to the server and then decrypt it over
+
+01:25:39.630 --> 01:25:44.050
+there and then process the data. Yeah. And again, so, uh,
+
+01:25:44.190 --> 01:25:47.350
+when someone is trying to hit my system, uh, and asking for
+
+01:25:47.350 --> 01:25:50.170
+some sort of a secret things, uh, so I should, I should
+
+01:25:50.170 --> 01:25:52.810
+always like, uh, put a guardrails over there with, with my
+
+01:25:52.810 --> 01:25:55.850
+models, uh, so that it should not reveal the secret or I
+
+01:25:55.850 --> 01:25:59.230
+should not even give an access to those data to my model.
+
+01:25:59.430 --> 01:26:01.950
+Uh, so in that way, obviously model will never be able to
+
+01:26:01.950 --> 01:26:06.270
+give those secrets to anyone. And uh, again, I'll keep on
+
+01:26:06.270 --> 01:26:08.970
+checking your final output, right? Keep on checking your
+
+01:26:08.970 --> 01:26:11.430
+final output so that it will, it should not like, uh, give
+
+01:26:11.430 --> 01:26:14.670
+some sort of a biased things, right? Uh, which, which can
+
+01:26:14.670 --> 01:26:17.590
+hurt someone's like, uh, sentiment or, uh, uh, uh, uh, you
+
+01:26:17.590 --> 01:26:20.670
+know, feelings basically, right? So always you should, uh,
+
+01:26:20.670 --> 01:26:23.330
+plus tone, obviously. So we, we try to like, uh, do a fine
+
+01:26:23.330 --> 01:26:26.450
+tuning even over there. Now next question says that, that
+
+01:26:26.450 --> 01:26:29.670
+what are the consideration for a data privacy in generative
+
+01:26:29.670 --> 01:26:33.290
+AI? Yeah. So what is the consideration for the, uh, data
+
+01:26:33.290 --> 01:26:35.830
+privacy? Data privacy means basically protecting a user's
+
+01:26:35.830 --> 01:26:39.450
+personal information, right? Uh, uh, which nowadays I
+
+01:26:39.450 --> 01:26:42.430
+believe is a joke, uh, by the way, uh, I don't know how many
+
+01:26:42.430 --> 01:26:46.870
+people are doing it, but yeah, we, we all think about it by
+
+01:26:46.870 --> 01:26:49.410
+the way. All these, um, all these big organizations, uh,
+
+01:26:49.450 --> 01:26:51.850
+think about it, but, uh, they, they have a policy, they have
+
+01:26:51.850 --> 01:26:55.190
+a regulations countrywide, uh, but, uh, how many people are
+
+01:26:55.190 --> 01:27:00.110
+doing it, uh, like in a proper manner? Uh, I think we all
+
+01:27:00.110 --> 01:27:02.230
+have a doubt, right? We all have a doubt. We keep on getting
+
+01:27:02.230 --> 01:27:05.590
+like, uh, this kind of a, uh, news. So in terms of data
+
+01:27:05.590 --> 01:27:08.570
+privacy, the first of all, uh, very simple philosophy, which
+
+01:27:08.570 --> 01:27:12.890
+is applicable is only a store of information, which is
+
+01:27:12.890 --> 01:27:16.470
+actually required, right? Do not store all the information.
+
+01:27:16.470 --> 01:27:19.330
+Because see, if someone is storing all the information, it
+
+01:27:19.330 --> 01:27:21.450
+simply means that they can misuse it whenever they want,
+
+01:27:21.530 --> 01:27:25.990
+maybe after 10 year, right? So the very first principle is
+
+01:27:25.990 --> 01:27:29.210
+you should not even store those information, but I believe
+
+01:27:29.210 --> 01:27:31.970
+everyone is doing it right. And everyone is happily using,
+
+01:27:32.070 --> 01:27:36.690
+uh, those, uh, informations to train or maybe like, uh, to,
+
+01:27:36.830 --> 01:27:39.670
+you know, make their system better and better. But that
+
+01:27:39.670 --> 01:27:42.090
+should be the very first principle. So if you are designing
+
+01:27:42.090 --> 01:27:45.090
+some solution and if you have an intention, a good
+
+01:27:45.090 --> 01:27:49.010
+intention, uh, towards, uh, because data privacy is not a
+
+01:27:49.010 --> 01:27:52.050
+technical thing, it's an intentional thing. First of all, we
+
+01:27:52.050 --> 01:27:55.690
+should understand that part, right? Uh, if we have an
+
+01:27:55.690 --> 01:27:58.310
+intention, we can implement it. If we don't have an, means
+
+01:27:58.310 --> 01:28:00.690
+we just have to write a couple of line of code over there.
+
+01:28:01.070 --> 01:28:03.870
+And if you don't have an intention as a company, then we'll
+
+01:28:03.870 --> 01:28:06.770
+not do it, right? So the very first principle of data
+
+01:28:06.770 --> 01:28:09.990
+privacy says that, that do not store. If you don't want it,
+
+01:28:10.070 --> 01:28:12.250
+if you don't, uh, if you don't have an intention to use
+
+01:28:12.250 --> 01:28:16.150
+those data or compromise our privacy. Uh, so first, that is
+
+01:28:16.150 --> 01:28:18.850
+the first principle. Right? And the second principle says
+
+01:28:18.850 --> 01:28:21.230
+that, that whenever you are trying to transport a data,
+
+01:28:21.330 --> 01:28:24.710
+basically from client to server side or vice versa, so
+
+01:28:24.710 --> 01:28:26.990
+obviously try to encrypt those data. So you must have seen
+
+01:28:26.990 --> 01:28:29.630
+even WhatsApp has started claiming that we use to encrypt
+
+01:28:29.630 --> 01:28:32.890
+all of your information and everything, uh, like with the
+
+01:28:32.890 --> 01:28:34.930
+highest level of encryption, right? With the highest level
+
+01:28:34.930 --> 01:28:37.610
+of encryption. How much they're doing it? Uh, no one, none
+
+01:28:37.610 --> 01:28:41.170
+of us as a common person are aware about it, right? Uh, I'm
+
+01:28:41.170 --> 01:28:43.530
+assuming that my, all the messages and data is already
+
+01:28:43.530 --> 01:28:46.650
+available with WhatsApp, right? Always. And they can use it
+
+01:28:46.650 --> 01:28:51.990
+in the way they want. Um, so, but yeah, intention wise they
+
+01:28:51.990 --> 01:28:54.910
+have shown the intention that, okay, we are not going to use
+
+01:28:54.910 --> 01:28:58.730
+it. Uh, but yeah, that, that's a different story. So you
+
+01:28:58.730 --> 01:29:00.730
+should, you should technically hide all the, if you are
+
+01:29:00.730 --> 01:29:03.370
+building the solution means encrypted, right? A multi-layer
+
+01:29:03.370 --> 01:29:06.330
+encryption system, you have to implement it. Uh, you have to
+
+01:29:06.330 --> 01:29:09.470
+give a option to a user. If you are like a, you know, uh,
+
+01:29:09.770 --> 01:29:14.470
+really like a worried about the data, uh, of privacy, then.
+
+01:29:15.110 --> 01:29:16.910
+So you should allow user to see all the data that you are
+
+01:29:16.910 --> 01:29:19.270
+storing and delete all the data as and when user is
+
+01:29:19.270 --> 01:29:22.350
+required, or maybe take a permission from the user, uh, in
+
+01:29:22.350 --> 01:29:24.950
+case of if you are utilizing it, which nowadays many
+
+01:29:24.950 --> 01:29:31.450
+platformers doing it. But again, no idea, uh, keep data in a
+
+01:29:31.450 --> 01:29:34.730
+right reason, right? Uh, because see every country and every
+
+01:29:34.730 --> 01:29:38.910
+reason is having a different, uh, law basically, right? And
+
+01:29:38.910 --> 01:29:42.030
+all this laws will not be applicable. So let's suppose my
+
+01:29:42.030 --> 01:29:45.030
+data has been stored in a, some European region, right? You
+
+01:29:45.030 --> 01:29:49.190
+reason, uh, so, uh, even though if I have a problem and even
+
+01:29:49.190 --> 01:29:52.250
+though if I know that, uh, no, there will, there is a data
+
+01:29:52.250 --> 01:29:55.230
+compromise. There is a very high possibility that my data,
+
+01:29:55.390 --> 01:29:58.990
+uh, like, uh, can be shared with anyone and can be accessed
+
+01:29:58.990 --> 01:30:03.390
+by anyone, right? But let's suppose I'm in India and I will
+
+01:30:03.390 --> 01:30:08.490
+not be able to claim because maybe, uh, use law, right? They
+
+01:30:08.490 --> 01:30:12.430
+allows it, right? And so even though if Indian law is not
+
+01:30:12.430 --> 01:30:14.850
+going to allow it, I can't do anything because that's, that
+
+01:30:14.850 --> 01:30:17.230
+is not available. So this is the reason I think nowadays
+
+01:30:17.230 --> 01:30:19.950
+many people are worried about this, uh, now things right,
+
+01:30:20.050 --> 01:30:22.910
+uh, that try to store our data in their country itself,
+
+01:30:23.010 --> 01:30:28.150
+right? Because if some apps are global, uh, so obviously you
+
+01:30:28.150 --> 01:30:30.190
+should take that responsibility. And if you are building
+
+01:30:30.190 --> 01:30:32.090
+that, that kind of application, you should take the
+
+01:30:32.090 --> 01:30:35.250
+responsibility means you should always keep, uh, data in a
+
+01:30:35.250 --> 01:30:39.550
+local data center because once data is gone over there, it's
+
+01:30:39.550 --> 01:30:42.590
+gone. All of a sudden you're not deleting it and, uh, means
+
+01:30:42.590 --> 01:30:47.090
+tomorrow anyone can use it. Uh, by, by using a law of the
+
+01:30:47.090 --> 01:30:50.350
+land, uh, basically. So this is something which comes under
+
+01:30:50.350 --> 01:30:54.110
+the data privacy. Like I said, it's less technical, more
+
+01:30:54.110 --> 01:30:57.910
+intentional. Data privacy is technically more intentional
+
+01:30:57.910 --> 01:31:01.850
+and less technical things. So it depends upon our intentions
+
+01:31:01.850 --> 01:31:05.670
+by the way. Now so next question says that 94 number, how do
+
+01:31:05.670 --> 01:31:08.210
+you implement a backup and recovery for a generative AI?
+
+01:31:08.410 --> 01:31:12.050
+Yeah. So backup and recovery basically by creating a
+
+01:31:12.050 --> 01:31:15.110
+different, different version by replicating, uh, things. So
+
+01:31:15.110 --> 01:31:18.030
+there is something called as a replicas, right? So
+
+01:31:18.030 --> 01:31:21.870
+basically, uh, we try to create a replica of our vector
+
+01:31:21.870 --> 01:31:25.630
+databases or any other databases. We try to, you know, store
+
+01:31:25.630 --> 01:31:28.830
+a model into a different, different reasons. Basically AI
+
+01:31:28.830 --> 01:31:32.270
+models, if I'm trying to use, uh, we try to basically create
+
+01:31:32.270 --> 01:31:34.770
+a data and whatever data that we are getting. So basically
+
+01:31:34.770 --> 01:31:37.610
+we try to replicate it in a multiple reason. This is one of
+
+01:31:37.610 --> 01:31:41.110
+the way, uh, so by creating this, obviously I will be able
+
+01:31:41.110 --> 01:31:44.110
+to create a backup and a recovery. So that even in one
+
+01:31:44.110 --> 01:31:47.190
+reason. If things are going down, not an issue, system will
+
+01:31:47.190 --> 01:31:50.090
+serve from the other reason, obviously little bit of latency
+
+01:31:50.090 --> 01:31:52.530
+will be increased or decreased, but system will be able to
+
+01:31:52.530 --> 01:31:56.890
+serve at the end of the day. Uh, how often generally we
+
+01:31:56.890 --> 01:32:00.050
+should take a backup or recovery, uh, how often we should do
+
+01:32:00.050 --> 01:32:03.430
+it? It depends. Again, there is no thumb rule for this one.
+
+01:32:03.490 --> 01:32:07.310
+So some system try to take a backup recovery, maybe once in
+
+01:32:07.310 --> 01:32:10.530
+24 hour, once in a week, once in a month, something like
+
+01:32:10.530 --> 01:32:12.450
+that, right? For example, you must have seen your WhatsApp.
+
+01:32:12.590 --> 01:32:15.230
+So if you are going to switch on your laptop. Like, uh, you
+
+01:32:15.230 --> 01:32:17.930
+know, backup, uh, so there, there is an option for 24 hours.
+
+01:32:17.990 --> 01:32:20.310
+So in every 24 hour, what it will do, it will try to take
+
+01:32:20.310 --> 01:32:22.950
+your like entire chat of the day and then it will send it to
+
+01:32:22.950 --> 01:32:25.950
+the WhatsApp server, right? Uh, it will not like, it will
+
+01:32:25.950 --> 01:32:28.650
+keep it in local, but yeah. And whenever you will configure
+
+01:32:28.650 --> 01:32:30.870
+your WhatsApp in some new mobile, obviously it will be able
+
+01:32:30.870 --> 01:32:33.970
+to fetch all those data from the recovery, uh, checkpoint
+
+01:32:33.970 --> 01:32:37.250
+itself. So this is something that we can do on a daily
+
+01:32:37.250 --> 01:32:40.310
+basis, right? For example, if I'm talking about our company,
+
+01:32:40.430 --> 01:32:43.050
+you're on, so maybe we can take a backup in once in a month.
+
+01:32:43.710 --> 01:32:45.810
+Okay. We can take the data, whatever lecture that you have
+
+01:32:45.810 --> 01:32:48.470
+completed, whatever content that we have uploaded, whoever
+
+01:32:48.470 --> 01:32:51.950
+has signed up on our, because, uh, tomorrow if the system
+
+01:32:51.950 --> 01:32:54.790
+will be gone, maybe we'll be able to recover everything from
+
+01:32:54.790 --> 01:32:58.790
+that one. So this is how we can try to not do it. And you
+
+01:32:58.790 --> 01:33:01.790
+should keep on testing those recovery parts as well. It's
+
+01:33:01.790 --> 01:33:03.810
+not like you have configured ones and then you will wait for
+
+01:33:03.810 --> 01:33:07.870
+the failure. Now a 95 number question says that, that what
+
+01:33:07.870 --> 01:33:10.090
+is the approach for the disaster recovery in generative AI?
+
+01:33:10.450 --> 01:33:13.390
+So disaster recovery, disaster means everything has gone.
+
+01:33:13.390 --> 01:33:15.650
+That is something called a disaster recovery. So obviously
+
+01:33:15.650 --> 01:33:19.190
+the very first thing is multi-region setup, right? So my
+
+01:33:19.190 --> 01:33:22.310
+data centers or my applications are available. My things are
+
+01:33:22.310 --> 01:33:24.750
+available in India region, let's suppose, EU region, US
+
+01:33:24.750 --> 01:33:27.650
+region, and maybe in other regions as well. So multi-region
+
+01:33:27.650 --> 01:33:31.650
+setup is the best approach. And we all does that, right? We
+
+01:33:31.650 --> 01:33:35.050
+all try to do a multi-region setup, uh, so that, you know,
+
+01:33:35.070 --> 01:33:37.890
+in this way we try to, there are like, uh, multiple things
+
+01:33:37.890 --> 01:33:40.530
+that I will be able to achieve by doing a multi-region
+
+01:33:40.530 --> 01:33:43.750
+setup. One, a traffic distribution. So let's suppose if, uh,
+
+01:33:43.790 --> 01:33:47.170
+traffic is coming from US, okay, so local server is US, US
+
+01:33:47.170 --> 01:33:49.830
+will be able to solve that traffic. If it is coming from EU,
+
+01:33:49.990 --> 01:33:52.650
+okay, fine, EU server will be able to serve it. If it is
+
+01:33:52.650 --> 01:33:55.750
+coming from India, Indian server will be able to, uh,
+
+01:33:55.830 --> 01:33:58.490
+basically like, uh, host that, or like, uh, entertain that
+
+01:33:58.490 --> 01:34:01.790
+particular traffic. So in this way, even latency for a user
+
+01:34:01.790 --> 01:34:04.850
+will be less and, uh, I will be able to get some happy
+
+01:34:04.850 --> 01:34:09.150
+users, some more happy user, right? Uh, second one. So if we
+
+01:34:09.150 --> 01:34:12.270
+are trying to do a multi-region setup and we are replacing
+
+01:34:12.270 --> 01:34:13.530
+it with a multi-region, replicating it, replicating the data
+
+01:34:13.530 --> 01:34:16.550
+from one region to another region. So if the entire data
+
+01:34:16.550 --> 01:34:19.810
+center of one region will go down, not an issue, uh, other,
+
+01:34:19.890 --> 01:34:22.570
+uh, region will be, if all the region are in sync,
+
+01:34:22.730 --> 01:34:26.230
+basically, right, all the region are in sync. This is where
+
+01:34:26.230 --> 01:34:27.750
+something called as CAP theorem comes into picture,
+
+01:34:27.910 --> 01:34:30.510
+consistency, availability and partition tolerance. If you
+
+01:34:30.510 --> 01:34:33.190
+are interested, maybe you can go and explore that part, all
+
+01:34:33.190 --> 01:34:35.910
+right? Uh, but yeah, this is how we try to do it. And all
+
+01:34:35.910 --> 01:34:39.450
+the cloud provider, all the big one, especially Azure, AWS
+
+01:34:39.450 --> 01:34:42.770
+and GCP, they are providing you. Just a couple of clicks.
+
+01:34:42.930 --> 01:34:46.270
+It's not very tough, by the way, just a couple of clicks and
+
+01:34:46.270 --> 01:34:49.210
+you will be able to do this one. So basically you will be
+
+01:34:49.210 --> 01:34:52.370
+able to achieve a disaster recovery and even point number
+
+01:34:52.370 --> 01:34:57.290
+94, you will be able to achieve it. So this is all about an
+
+01:34:57.290 --> 01:35:00.810
+answer from my side guys, with respect to this question. So
+
+01:35:00.810 --> 01:35:05.330
+hope it's clear, right, everyone, all 15 questions, 81
+
+01:35:05.330 --> 01:35:07.410
+number till 95, uh,
+
+01:35:17.340 --> 01:35:20.780
+how you manage the cost optimization in your own tokens. Can
+
+01:35:20.780 --> 01:35:23.280
+you explain briefly? So that, uh, we will explain to the
+
+01:35:23.280 --> 01:35:26.160
+interviewer. See in your own, you will be able to see that,
+
+01:35:26.220 --> 01:35:29.100
+that, uh, whenever we have given you the sample code, so we
+
+01:35:29.100 --> 01:35:32.640
+have even put the, uh, like, you know, by default, see, uh,
+
+01:35:32.760 --> 01:35:35.820
+code example now here. So maximum token is equal to
+
+01:35:35.820 --> 01:35:38.700
+thousand. Uh, this is something that we have given you, uh,
+
+01:35:38.880 --> 01:35:43.120
+because, uh, not 10,000, not 20,000 kind of things. Uh, so
+
+01:35:43.120 --> 01:35:46.480
+that, uh, intentionally, if you are using our APIs, you will
+
+01:35:46.480 --> 01:35:49.740
+not be able to use it beyond this and above everything,
+
+01:35:49.860 --> 01:35:53.720
+right? Above everything. Uh, we have limited the users over
+
+01:35:53.720 --> 01:35:57.760
+here. One lakh token per day, if we would have given you 365
+
+01:35:57.760 --> 01:36:01.380
+lakh, people have started exploiting it, right? I know that
+
+01:36:01.380 --> 01:36:04.220
+people will start exploiting this entire 365 lakh, although
+
+01:36:04.220 --> 01:36:08.120
+you have a 365 lakh token limit, but some people will like,
+
+01:36:08.180 --> 01:36:10.320
+you know, run the system and they will run it in an infinite
+
+01:36:10.320 --> 01:36:14.100
+loop and like, you know, burn the 365 lakh token. But here
+
+01:36:14.100 --> 01:36:17.920
+we have given you the limitation, right, that, uh, okay, one
+
+01:36:17.920 --> 01:36:21.960
+lakh and then second day stop. And that cost I will get in a
+
+01:36:21.960 --> 01:36:25.860
+year of time, not in one single day of time. So this is one
+
+01:36:25.860 --> 01:36:28.900
+of the way if I'll talk about a URI chat solution. So in
+
+01:36:28.900 --> 01:36:32.660
+case of a URI chat, so we have restricted you just with
+
+01:36:32.660 --> 01:36:36.580
+respect to a 50 messages per day, because we have observed
+
+01:36:36.580 --> 01:36:40.740
+that 25 somewhere. So this was our observation, right? So
+
+01:36:40.740 --> 01:36:45.240
+this was our observation that is average user are going to
+
+01:36:45.240 --> 01:36:49.020
+chat with any AI system or especially our AI system, right?
+
+01:36:49.160 --> 01:36:51.400
+And their average chat was 25.5. So that was on a daily
+
+01:36:51.400 --> 01:36:55.080
+basis, 25 to 30, around 25, 30, right? So we have just given
+
+01:36:55.080 --> 01:36:57.960
+you 50 that, okay, I think 50 is more than enough. Maybe
+
+01:36:57.960 --> 01:37:01.460
+some of you will surpass on some odd day, not daily. So I
+
+01:37:01.460 --> 01:37:03.580
+don't think that any one of you will be able to surpass this
+
+01:37:03.580 --> 01:37:06.240
+limit on a daily basis, whether it's a one lakh token limit
+
+01:37:06.240 --> 01:37:09.940
+or whether it's a 50 messages token limit on a daily basis.
+
+01:37:10.000 --> 01:37:13.600
+Yeah. On some fine day, there is a possibility and not for
+
+01:37:13.600 --> 01:37:16.540
+again, everyone, right? So this is how we are even trying to
+
+01:37:16.540 --> 01:37:20.700
+control, uh, the cost, right? The cost. Uh, then a couple of
+
+01:37:20.700 --> 01:37:23.800
+models, a light-weighted model, serve it on our own, like a
+
+01:37:23.800 --> 01:37:27.000
+GPUs basically. So in this way, again, we'll be able to
+
+01:37:27.000 --> 01:37:30.660
+optimize it as far as this GPT-5 is concerned. So we can't
+
+01:37:30.660 --> 01:37:33.880
+do anything like, uh, based on the users we have to pay,
+
+01:37:33.980 --> 01:37:37.220
+right? And which is like, uh, I think price part is
+
+01:37:37.220 --> 01:37:40.020
+available to all of us. Anyone can go and check what is the
+
+01:37:40.020 --> 01:37:43.620
+API cost for GPT and it's a proprietary model. So we can't
+
+01:37:43.620 --> 01:37:46.480
+host it by the way. We can't do anything. Uh, we just limit
+
+01:37:46.480 --> 01:37:48.880
+the users. So this is how we are. We are like, uh, you know,
+
+01:37:48.880 --> 01:37:53.520
+managing it, but yeah, it, it is cost any, anyone guys,
+
+01:37:53.640 --> 01:37:55.980
+anyone who is providing you a AI solution in a cheaper
+
+01:37:55.980 --> 01:38:00.240
+manner, right? Uh, same solution, for example, GPT-5 means
+
+01:38:00.240 --> 01:38:04.200
+GPT-5, you are able to get, uh, not some X, Y, G or bad
+
+01:38:04.200 --> 01:38:09.400
+models. Then the solutions are not, uh, you know, I would
+
+01:38:09.400 --> 01:38:12.300
+say like a cheap, the solutions are actually expensive,
+
+01:38:12.440 --> 01:38:16.780
+right? Because, uh, even you can do the calculation that you
+
+01:38:16.780 --> 01:38:19.500
+can, you can go to like, uh, uh, GPT and you can try to
+
+01:38:19.500 --> 01:38:22.060
+check their API cost, right? I think it's publicly available
+
+01:38:22.060 --> 01:38:24.880
+to all of us. And then you will be able to understand the
+
+01:38:24.880 --> 01:38:27.940
+value that all of us are getting. So it's, it's not cheap by
+
+01:38:27.940 --> 01:38:30.820
+the way. Uh, still we are able to manage and there are like
+
+01:38:30.820 --> 01:38:34.640
+a certain things we can't manage beyond the limit, right? So
+
+01:38:34.640 --> 01:38:35.420
+that's the whole story.
+
+01:38:43.890 --> 01:38:47.350
+Okay. So fine everyone. I believe I have clarified this 15
+
+01:38:47.350 --> 01:38:49.710
+question. Now tomorrow I'll be talking about, uh, further
+
+01:38:49.710 --> 01:38:53.290
+question 96, advanced implementation. This is again, like,
+
+01:38:53.350 --> 01:38:57.010
+uh, uh, same. How are you? Uh, uh. How do you implement a
+
+01:38:57.010 --> 01:38:59.330
+multi-agent system with generative AI? I'll be talking about
+
+01:38:59.330 --> 01:39:02.370
+all those things one by one, one by one, right? So this is
+
+01:39:02.370 --> 01:39:05.830
+it, uh, from my side for today. I believe I'm able to
+
+01:39:05.830 --> 01:39:08.190
+clarify everything and hope all of you are able to
+
+01:39:08.190 --> 01:39:10.490
+understand. In a dashboard, I'm going to upload this
+
+01:39:10.490 --> 01:39:13.790
+document and this is already available, right? This question
+
+01:39:13.790 --> 01:39:17.890
+set is already available and believe me, right? Believe me.
+
+01:39:17.930 --> 01:39:21.890
+And I believe some of you must have seen that, that if you
+
+01:39:21.890 --> 01:39:26.050
+are aware about this question, right? I must. If you are
+
+01:39:26.050 --> 01:39:31.710
+aware about these questions and its answer, no one on any
+
+01:39:31.710 --> 01:39:37.350
+level in the entire market will cross this line. We'll ask
+
+01:39:37.350 --> 01:39:41.190
+any question beyond this limit in generative AI interview.
+
+01:39:42.410 --> 01:39:45.970
+That I can assure because there is nothing which exists
+
+01:39:45.970 --> 01:39:51.070
+beyond this one, right? So I'm especially inviting you
+
+01:39:51.070 --> 01:39:55.770
+Kolkata during a Durga Puja. Okay. Okay. Actually, I used to
+
+01:39:55.770 --> 01:39:59.190
+go to my hometown sometime via Kolkata and sometime via
+
+01:39:59.190 --> 01:40:04.910
+Ranchi. Uh, so yeah, so I, since my childhood, I'm aware
+
+01:40:04.910 --> 01:40:09.470
+about Kolkata. So it's just three hours from Jamshedpur. So
+
+01:40:09.470 --> 01:40:12.350
+we, we used to take a morning train and then we used to like
+
+01:40:12.350 --> 01:40:15.690
+go to Havara station and then from there Dum Dum airport and
+
+01:40:15.690 --> 01:40:18.550
+then from there, like, uh, Chennai and Hyderabad. Then I was
+
+01:40:18.550 --> 01:40:25.490
+staying in Chennai and Hyderabad. Dev Kumar. Yeah. Yeah. I
+
+01:40:25.490 --> 01:40:27.510
+used to celebrate Durga Puja on a very grand level. Kolkata
+
+01:40:27.510 --> 01:40:30.870
+obviously it's like, uh, everyone knows entire world knows
+
+01:40:30.870 --> 01:40:34.850
+about Kolkata and uh, especially like, uh, Durga Puja in
+
+01:40:34.850 --> 01:40:37.750
+Kolkata. Yeah. I have seen those things since childhood,
+
+01:40:37.850 --> 01:40:39.610
+since my life when I was very, very small.
+
+01:40:43.200 --> 01:40:46.680
+Okay. Okay. So yeah, hope all of you are able to understand,
+
+01:40:46.740 --> 01:40:49.300
+but believe me, if you are able to practice these questions
+
+01:40:49.300 --> 01:40:52.580
+and see practice means what? Try to dig deeper and deeper
+
+01:40:52.580 --> 01:40:54.680
+and deeper, right? That is, that is something called as
+
+01:40:54.680 --> 01:40:57.360
+practice. Try to rehearse this question. Not once, not
+
+01:40:57.360 --> 01:41:01.600
+twice, but maybe 10 times. Uh, try to give your own answer,
+
+01:41:01.720 --> 01:41:05.600
+like I tried to reframe your own answer. Try to add a couple
+
+01:41:05.600 --> 01:41:07.760
+of things in this, uh, the answer that you're trying to give
+
+01:41:07.760 --> 01:41:12.860
+and then it's done, right? In generative AI, believe me, no
+
+01:41:12.860 --> 01:41:16.380
+one can cross this 200 questions. If you are able to like,
+
+01:41:16.440 --> 01:41:19.720
+you know, prepare about this entire things, plus the DPR,
+
+01:41:19.820 --> 01:41:21.960
+which I have given you, that will help you out in terms of,
+
+01:41:21.960 --> 01:41:25.380
+uh, you know, explaining the entire project, right? Because
+
+01:41:25.380 --> 01:41:26.580
+obviously people are going to say, okay. I'm going to start
+
+01:41:26.580 --> 01:41:30.160
+the entire, like an interview with respect to a project and
+
+01:41:30.160 --> 01:41:33.020
+DPR is a something which is going to help you out and your
+
+01:41:33.020 --> 01:41:36.620
+entry point is going to be your resume. So prepare your
+
+01:41:36.620 --> 01:41:40.640
+resume well, right? The way I have asked you, uh, send it to
+
+01:41:40.640 --> 01:41:43.980
+me for a review. You can even use a resume AI before sending
+
+01:41:43.980 --> 01:41:46.640
+it to me so that it will be able to refine it. It will be
+
+01:41:46.640 --> 01:41:50.480
+able to make it crisp, a two pager, max to max, and then
+
+01:41:50.480 --> 01:41:53.760
+start applying for the job in a market. I believe now market
+
+01:41:53.760 --> 01:41:57.920
+is like a better than before. Especially if I'll talk about
+
+01:41:57.920 --> 01:42:01.460
+the Indian market, because now I'm able to see a lot of like
+
+01:42:01.460 --> 01:42:05.400
+my students are getting job, uh, easily, I would say, right.
+
+01:42:05.500 --> 01:42:08.220
+Uh, they're getting more and more of like opportunity
+
+01:42:08.220 --> 01:42:11.900
+nowadays. Uh, plus, uh, even I'm getting a lot of referrals.
+
+01:42:12.140 --> 01:42:14.960
+I think I kept on, keep on posting these referrals in my
+
+01:42:14.960 --> 01:42:18.340
+groups, uh, in some of the, some other groups and even other
+
+01:42:18.340 --> 01:42:23.160
+people are posting, right? So opportunities are there. We
+
+01:42:23.160 --> 01:42:27.200
+are getting these opportunities on a regular basis. It's
+
+01:42:27.200 --> 01:42:32.380
+just like how much you are able to utilize it, right? So try
+
+01:42:32.380 --> 01:42:35.820
+to use it as much as you can guys, because, uh, referrals
+
+01:42:35.820 --> 01:42:39.000
+are like, uh, again, uh, we, we all are able to get the
+
+01:42:39.000 --> 01:42:41.900
+reference. I think you are able to see it in a group. Yeah.
+
+01:42:42.520 --> 01:42:47.320
+So fine. Uh, this is all about this, uh, more of soaring and
+
+01:42:47.320 --> 01:42:51.260
+the U S market has no money to host H1B. Uh, forget about
+
+01:42:51.260 --> 01:42:55.320
+see U S market, uh, see, uh, any, any, how government has
+
+01:42:55.320 --> 01:42:58.760
+already clarified. Yeah. That, uh, it is not going to affect
+
+01:42:58.760 --> 01:43:02.480
+the existing visa holder, right? It is going to affect, uh,
+
+01:43:02.620 --> 01:43:08.280
+someone who is going to take a visa after, I think, uh, 21st
+
+01:43:08.280 --> 01:43:10.400
+of September, right? Or 22nd of September. I'm not sure
+
+01:43:10.400 --> 01:43:13.080
+about the date, but yeah, today, tomorrow, right. This was a
+
+01:43:13.080 --> 01:43:18.240
+date. So forget about that. And uh, yeah, so it's, it's more
+
+01:43:18.240 --> 01:43:19.980
+of the global politics.
+
+01:43:22.840 --> 01:43:27.100
+So just forget about these politics things. Focus on your
+
+01:43:27.100 --> 01:43:30.840
+upskilling. Focus on your, like a resume, your project,
+
+01:43:31.060 --> 01:43:34.560
+focus on building something, uh, some real application, a
+
+01:43:34.560 --> 01:43:40.860
+real, real application, by the way, right. Uh, otherwise you
+
+01:43:40.860 --> 01:43:43.720
+will be like, uh, stuck in a loop of this, uh, social media
+
+01:43:43.720 --> 01:43:49.120
+and, uh, this, uh, infinite PR stunts and the news, right?
+
+01:43:49.240 --> 01:43:52.300
+So never focus on these things. I never focus on these
+
+01:43:52.300 --> 01:43:55.060
+things. I never even react on those things. Right. Because
+
+01:43:55.060 --> 01:43:58.780
+if you will observe in a whole 2025, January, February,
+
+01:43:58.860 --> 01:44:01.500
+March, April, May, June, July, and now we are in the ninth
+
+01:44:01.500 --> 01:44:04.060
+month, right? Only three months is left after this month,
+
+01:44:04.160 --> 01:44:08.160
+uh, from this year. And every month we have received some
+
+01:44:08.160 --> 01:44:12.020
+news, uh, you know, uh, which entire country was talking
+
+01:44:12.020 --> 01:44:15.460
+about, right? Some news in that country was talking about,
+
+01:44:15.460 --> 01:44:18.460
+we was like, uh, we were like completely occupied. We were
+
+01:44:18.460 --> 01:44:21.680
+completely engaged ourselves on a daily basis, on a weekly
+
+01:44:21.680 --> 01:44:25.820
+basis, just in an endless discussion. A lot of discussion we
+
+01:44:25.820 --> 01:44:29.180
+don't even remember now, right? So this is how this entire
+
+01:44:29.180 --> 01:44:32.760
+world works nowadays, 10 years back, it was very different
+
+01:44:32.760 --> 01:44:36.200
+when we were not having an access of this internet. But now
+
+01:44:36.200 --> 01:44:40.100
+this, uh, access is giving us a lot of pain. It's killing a
+
+01:44:40.100 --> 01:44:42.380
+lot of time. It is giving us a lot of frustration and
+
+01:44:42.380 --> 01:44:46.120
+unnecessary thought above all, uh, you just need one job,
+
+01:44:46.140 --> 01:44:50.040
+right? Or maybe you have to build only one product, so you
+
+01:44:50.040 --> 01:44:52.480
+don't have to worry about the entire world. It doesn't
+
+01:44:52.480 --> 01:44:55.660
+matter what is happening in our entire world. Right? For
+
+01:44:55.660 --> 01:44:59.280
+you, you just need only one job, right? Everyone. Do you
+
+01:44:59.280 --> 01:45:02.620
+need five, six, 10 jobs? No, right? Even if you're going to
+
+01:45:02.620 --> 01:45:04.840
+build a company, so you will be building only one company,
+
+01:45:04.880 --> 01:45:10.460
+right? In that to one domain. Yeah. Focus on that one. A lot
+
+01:45:10.460 --> 01:45:13.820
+has happened in a world. Lot is happening in a world and lot
+
+01:45:13.820 --> 01:45:18.140
+will happen in a world. Don't get stuck. Don't even talk
+
+01:45:18.140 --> 01:45:23.760
+about it. I think that's a best solution, right? That's a,
+
+01:45:23.760 --> 01:45:26.040
+that's a best solution. Yeah. Best solution. If reform party
+
+01:45:26.040 --> 01:45:34.400
+is the same thing, who cares? Yeah. Right. So don't, don't
+
+01:45:34.400 --> 01:45:37.220
+like, you know, yeah, it's, it's good to know about the
+
+01:45:37.220 --> 01:45:42.100
+news, but, um, I think your career, your life should not
+
+01:45:42.100 --> 01:45:46.420
+depends upon that. Simple. So fine guys with that, uh, thank
+
+01:45:46.420 --> 01:45:49.180
+you so much. Take care. See you again tomorrow. Same time,
+
+01:45:49.260 --> 01:45:53.880
+uh, 7pm IST. So I'm going to discuss, uh, questions starting
+
+01:45:53.880 --> 01:45:54.660
+from. Okay.
+
+01:45:57.640 --> 01:46:01.160
+95, 96. Okay. Till 95 I'll discuss. So from tomorrow I'll
+
+01:46:01.160 --> 01:46:06.540
+try to start from 96. So in total 105 more questions we have
+
+01:46:06.540 --> 01:46:09.740
+to discuss. So with that, thank you so much everyone. Take
+
+01:46:09.740 --> 01:46:14.040
+care. Have a great night and, uh, in people from other
+
+01:46:14.040 --> 01:46:16.840
+reasons. So great morning to all of you with that. Thank you
+
+01:46:16.840 --> 01:46:17.660
+so much everyone. Take care.
+

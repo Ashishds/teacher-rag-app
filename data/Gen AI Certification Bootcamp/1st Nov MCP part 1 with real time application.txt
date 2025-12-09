@@ -1,0 +1,6620 @@
+WEBVTT
+
+00:00:01.940 --> 00:00:04.980
+Okay, so finally everyone, so as we have discussed, we are
+
+00:00:04.980 --> 00:00:08.400
+going to talk about basically MCP in today's class, which is
+
+00:00:08.400 --> 00:00:11.980
+nothing but a model context protocol. So it's one kind of a
+
+00:00:11.980 --> 00:00:16.060
+protocol as its name suggests. And what is the meaning of
+
+00:00:16.060 --> 00:00:19.620
+protocol? So protocol is nothing but a set of a rule, set of
+
+00:00:19.620 --> 00:00:23.820
+a rule which is going to allow you to do something. What
+
+00:00:23.820 --> 00:00:26.740
+kind of things? We'll be talking about all of these things
+
+00:00:26.740 --> 00:00:29.580
+one by one, one by one with the help of practical example.
+
+00:00:29.580 --> 00:00:33.360
+So let me share my screen. And first of all, let's try to
+
+00:00:33.360 --> 00:00:37.520
+understand what this MCP is. And then only we will start
+
+00:00:37.520 --> 00:00:41.380
+creating the MCPs in a practical manner. And again, today I
+
+00:00:41.380 --> 00:00:43.480
+have created a beautiful, beautiful project for all of you.
+
+00:00:43.500 --> 00:00:46.780
+So where you will be able to see a MCP not in a dummy
+
+00:00:46.780 --> 00:00:50.960
+manner. So I'm going to show you a MCP with respect to a
+
+00:00:50.960 --> 00:00:55.640
+real life example that you all are going to use it even in a
+
+00:00:55.640 --> 00:00:59.880
+day to day life to solve your own problem. And again. So not
+
+00:00:59.880 --> 00:01:02.220
+to just solve your own problem. So you will end up using
+
+00:01:02.220 --> 00:01:05.160
+exact solution, which we are going to discuss in my today's
+
+00:01:05.160 --> 00:01:09.520
+class in your problems. So here let's suppose we have a
+
+00:01:09.520 --> 00:01:13.280
+cloud, right? And we all are aware about a fact that that
+
+00:01:13.280 --> 00:01:17.440
+cloud is basically LLM, right? They provide a LLM. So they
+
+00:01:17.440 --> 00:01:20.700
+have a Sonnet model and they have one of the best model,
+
+00:01:20.800 --> 00:01:24.380
+which is going to help you out in terms of coding. This is
+
+00:01:24.380 --> 00:01:29.420
+what we all know. OK, that's cool. But let's suppose if I.
+
+00:01:29.580 --> 00:01:33.440
+I'm going to ask Cloud that can you please try to give me a
+
+00:01:33.440 --> 00:01:39.060
+data from this X, Y, G sequel databases? Will it be able to
+
+00:01:39.060 --> 00:01:42.960
+give me that data? Any idea? Cloud is the best model, right?
+
+00:01:43.020 --> 00:01:45.400
+They provide they are providing you a best model. They're
+
+00:01:45.400 --> 00:01:48.120
+giving you a solid like a four day series and which is one
+
+00:01:48.120 --> 00:01:51.140
+of the best in the world, especially for coding purposes.
+
+00:01:51.460 --> 00:01:54.980
+But if I'm going to ask this model that can you please try
+
+00:01:54.980 --> 00:01:59.800
+to give me a data from my X, Y, G sequel databases? I think
+
+00:01:59.800 --> 00:02:04.600
+no, Cloud will not be able to give you if I'm going to ask a
+
+00:02:04.600 --> 00:02:07.140
+question to a cloud that can you please try to help me out
+
+00:02:07.140 --> 00:02:11.280
+in terms of, you know, understanding my MongoDB collection?
+
+00:02:12.120 --> 00:02:15.580
+Will I be able to get some idea? Or is it going to give me
+
+00:02:15.580 --> 00:02:17.660
+or is it going to help me out with respect to my data from
+
+00:02:17.660 --> 00:02:21.880
+MongoDB? No. If I'm going to ask a question to a cloud that
+
+00:02:21.880 --> 00:02:26.040
+can you please try to, you know, give me all the mail that I
+
+00:02:26.040 --> 00:02:29.940
+have received in my. Like in today's. Like, uh, you know, my
+
+00:02:29.940 --> 00:02:33.160
+mail ID. So will it be able to help me out with respect to
+
+00:02:33.160 --> 00:02:36.140
+my mail in terms of summarizing in terms of giving a reply
+
+00:02:36.140 --> 00:02:39.520
+to my mail? No, not at all. In terms of accessing my Google
+
+00:02:39.520 --> 00:02:43.840
+seat or Excel seat, not at all in terms of accessing my
+
+00:02:43.840 --> 00:02:47.460
+calendar. So will it be able to help me out? Not at all.
+
+00:02:48.120 --> 00:02:51.640
+Right. So cloud is good. They are good in terms of providing
+
+00:02:51.640 --> 00:02:55.060
+you a LLM, right? A large language model that we have been
+
+00:02:55.060 --> 00:02:58.960
+using a lot, uh, obviously from cloud. Dave. From GPT, from
+
+00:02:58.960 --> 00:03:04.520
+Gemini, from everywhere, but when it comes to, you know, uh,
+
+00:03:04.540 --> 00:03:08.340
+providing some sort of information with respect to a world
+
+00:03:08.340 --> 00:03:13.700
+where we have a authority or with respect to a tool or maybe
+
+00:03:13.700 --> 00:03:18.060
+a kind of a system where we are having only an
+
+00:03:18.060 --> 00:03:21.620
+authorization. So obviously these elements are not going to
+
+00:03:21.620 --> 00:03:24.000
+help you out. Although these elements are pretty much good
+
+00:03:24.000 --> 00:03:27.600
+in terms of understanding a natural language and based on
+
+00:03:27.600 --> 00:03:30.700
+natural. These are like, uh, you know, LLMs are pretty much
+
+00:03:30.700 --> 00:03:33.660
+good in terms of like, you know, calling some external
+
+00:03:33.660 --> 00:03:36.960
+things or, uh, understanding of things. It's, it's, it's a
+
+00:03:36.960 --> 00:03:40.280
+good in terms of, you know, providing you a brain in terms
+
+00:03:40.280 --> 00:03:43.560
+of providing you a logic, but unless and until you are not
+
+00:03:43.560 --> 00:03:48.460
+going to give an access to your world, your system, right.
+
+00:03:49.140 --> 00:03:53.640
+Cloud or any other model or any other like, uh, this kind of
+
+00:03:53.640 --> 00:03:57.800
+LLMs will not be able to perform. Not even a single thing.
+
+00:03:57.880 --> 00:04:01.860
+And this is where this model context protocol comes into a
+
+00:04:01.860 --> 00:04:05.700
+picture. So basically what people have said that, that, uh,
+
+00:04:05.760 --> 00:04:10.020
+okay, let's try to do one thing. Uh, we all are surrounded
+
+00:04:10.020 --> 00:04:13.640
+by so many systems, not just one single system, right? So
+
+00:04:13.640 --> 00:04:16.580
+since morning till evening, so we are using so many systems,
+
+00:04:16.720 --> 00:04:20.060
+maybe a WhatsApp, maybe a Telegram, maybe a Slack, maybe,
+
+00:04:20.120 --> 00:04:24.160
+uh, you know, uh, some, a mail system, maybe an Outlook,
+
+00:04:24.200 --> 00:04:27.880
+maybe a Gmail, maybe a Joho mail. Or maybe something. So
+
+00:04:27.880 --> 00:04:27.900
+this is how we have been able to create an open, uh, a
+
+00:04:27.900 --> 00:04:28.220
+digital world. We are using our own systems, or for
+
+00:04:28.220 --> 00:04:31.720
+databases we are interacting with on a daily basis. So this
+
+00:04:31.720 --> 00:04:34.420
+is our digital world by the way, right? So as a techie, if
+
+00:04:34.420 --> 00:04:38.000
+I'm going to talk about our story of digital world, so we
+
+00:04:38.000 --> 00:04:41.680
+all are surrounded with all of these things and obviously
+
+00:04:41.680 --> 00:04:45.480
+it's a proprietary system. So where no one will be able to
+
+00:04:45.480 --> 00:04:48.500
+get an access unless and until they are not authorized. So
+
+00:04:48.500 --> 00:04:51.720
+it's all basically the authorized system that we are using
+
+00:04:51.720 --> 00:04:56.120
+and we all are surrounded by such kind of a system. Now, if
+
+00:04:56.120 --> 00:05:00.260
+we have to bring those data. a system closer to LLMs where
+
+00:05:00.260 --> 00:05:05.140
+LLMs will be able to understand and LLMs will be able to
+
+00:05:05.140 --> 00:05:08.840
+call an action, it will be able to do some sort of a job for
+
+00:05:08.840 --> 00:05:13.820
+me just by chatting with these system, right, just by
+
+00:05:13.820 --> 00:05:17.860
+chatting with this system, then it will create a wow for me.
+
+00:05:17.940 --> 00:05:21.220
+For example, so let's suppose I have a database, right,
+
+00:05:21.240 --> 00:05:25.440
+inside the database I have so many tables in my SQL system,
+
+00:05:25.580 --> 00:05:29.600
+right, in my SQL system and if I am going to ask some
+
+00:05:29.600 --> 00:05:32.700
+question with respect to a data, if I am going to ask some
+
+00:05:32.700 --> 00:05:35.600
+question with respect to some sort of a collection, if I am
+
+00:05:35.600 --> 00:05:40.720
+using a NoSQL system, if it is able to provide, then it will
+
+00:05:40.720 --> 00:05:44.960
+be amazing. For example, so if I am going to ask that, tell
+
+00:05:44.960 --> 00:05:48.920
+me from my SQL
+
+00:05:51.990 --> 00:06:02.290
+system that, that what table access you have, so let's see,
+
+00:06:02.350 --> 00:06:04.730
+so maybe it is going to perform some sort of operation, I
+
+00:06:04.730 --> 00:06:07.290
+can even try to search table, I can even try to, you know,
+
+00:06:07.310 --> 00:06:12.330
+go into maybe a data of the table, I will be able to fetch a
+
+00:06:12.330 --> 00:06:17.830
+data from the table and just by chatting with my clouded
+
+00:06:17.830 --> 00:06:21.210
+desktop which is available in my local system by the way,
+
+00:06:21.370 --> 00:06:24.490
+which has been installed in my local system and my database
+
+00:06:24.490 --> 00:06:27.650
+is available somewhere over a cloud. I am using some of the
+
+00:06:27.650 --> 00:06:30.870
+server or some of the instances, but yeah, so it is able to
+
+00:06:30.870 --> 00:06:35.190
+chat and basically by using some technique, I have just
+
+00:06:35.190 --> 00:06:38.410
+exposed my database, I am going to show you that how I have
+
+00:06:38.410 --> 00:06:41.470
+exposed my email id, I am going to show you that how I have
+
+00:06:41.470 --> 00:06:45.830
+exposed my like excel sheet or Google sheet you can say, I
+
+00:06:45.830 --> 00:06:48.970
+am going to show you that how I have exposed technically my
+
+00:06:48.970 --> 00:06:53.230
+calendar and my MongoDB, so total five exposure I am going
+
+00:06:53.230 --> 00:06:55.750
+to show you. So in total in today's class, I am going to
+
+00:06:55.750 --> 00:06:58.950
+show you. I will show you a five different kind of MCPs
+
+00:06:58.950 --> 00:07:04.170
+technically and all of these MCPs are going to be real time,
+
+00:07:04.290 --> 00:07:08.670
+not a dummy one, not like a calculator example because now
+
+00:07:08.670 --> 00:07:11.670
+we are in a stage where we can understand a bit of complex
+
+00:07:11.670 --> 00:07:14.650
+examples. Since last three months, we all are taking a
+
+00:07:14.650 --> 00:07:18.670
+class, so I think we all are that much like mature. Yes,
+
+00:07:18.670 --> 00:07:23.470
+everyone, yeah, so let's see, it is trying to do something
+
+00:07:23.470 --> 00:07:26.270
+for me, so it is trying to, you know, fetch data. Fetch some
+
+00:07:26.270 --> 00:07:29.210
+sort of data for me, I don't know whether it will be able to
+
+00:07:29.210 --> 00:07:31.250
+fetch it or not, but yeah, it looks like it is trying to
+
+00:07:31.250 --> 00:07:34.970
+fetch. If it won't, then obviously I am going to fix the
+
+00:07:34.970 --> 00:07:35.450
+issue,
+
+00:07:38.390 --> 00:07:41.810
+maybe I will just have to restart my MCP server, that's it.
+
+00:08:02.430 --> 00:08:07.190
+Let me exit. I was testing the system a lot since yesterday,
+
+00:08:07.450 --> 00:08:08.930
+so give
+
+00:08:21.480 --> 00:08:31.190
+me list of list of all the tables from SQL system.
+
+00:08:44.450 --> 00:08:47.250
+Yeah. So it is. It is doing something. So as you can see
+
+00:08:47.250 --> 00:08:50.690
+that I have simply asked a question that give me some like,
+
+00:08:50.710 --> 00:08:55.090
+you know, list of tables from my SQL system. So yeah, in my
+
+00:08:55.090 --> 00:08:57.550
+SQL system, I have a customer table. I have order item
+
+00:08:57.550 --> 00:08:59.730
+table. I have order table. I have a playing with neon table.
+
+00:08:59.890 --> 00:09:02.570
+I have a product table. They are only a total five table.
+
+00:09:02.970 --> 00:09:07.910
+Okay. So do one thing from order tables. Do one thing from
+
+00:09:07.910 --> 00:09:14.110
+orders table. Show me all the data. So I'm just talking to
+
+00:09:14.110 --> 00:09:16.870
+my like, you know, database. So basically my entire SQL
+
+00:09:16.870 --> 00:09:20.930
+system, I'm talking to my tables in my own language. I'm
+
+00:09:20.930 --> 00:09:23.470
+going to perform some sort of a query operation as you can
+
+00:09:23.470 --> 00:09:26.690
+see from my order table and it's the exact data I'm going to
+
+00:09:26.690 --> 00:09:29.130
+show you. So this is the exact data which I have in my order
+
+00:09:29.130 --> 00:09:32.150
+table by the way. Yeah. This is the exact data. Okay. Show
+
+00:09:32.150 --> 00:09:43.610
+me fetch all the mail that I have received in last three
+
+00:09:43.610 --> 00:09:49.580
+days. Yeah. So I'm just talking to my mail system basically,
+
+00:09:49.620 --> 00:09:52.420
+technically my Gmail. I'm talking to my Gmail. I can talk to
+
+00:09:52.420 --> 00:09:56.060
+my calendar. I can talk to my Google seat. I can say that,
+
+00:09:56.100 --> 00:10:00.640
+try to add this data, that data and I can talk to my MongoDB
+
+00:10:00.640 --> 00:10:04.740
+as well. So I can talk to any system that I know or any
+
+00:10:04.740 --> 00:10:09.480
+system like on which I have like a, you know, authorization.
+
+00:10:10.000 --> 00:10:14.260
+So as you can see in total, I have received a 32 mails as,
+
+00:10:14.280 --> 00:10:18.260
+as it is showing me, right? If I'm going to ask. So zoom
+
+00:10:18.260 --> 00:10:20.340
+notification, I have received Google account security,
+
+00:10:20.440 --> 00:10:23.220
+Google cloud platform. So it is telling me that in total you
+
+00:10:23.220 --> 00:10:26.820
+have received like a 32 mail in last three days. And these
+
+00:10:26.820 --> 00:10:29.660
+are the detail. If I'm going to ask a summary, if I'm going
+
+00:10:29.660 --> 00:10:31.880
+to say that, okay, fine. Reply to this particular mail,
+
+00:10:31.940 --> 00:10:35.060
+reply to that particular mail just by chatting with this
+
+00:10:35.060 --> 00:10:38.760
+system. This system is going to work and this system is
+
+00:10:38.760 --> 00:10:42.300
+going to perform this particular operation. And technically
+
+00:10:42.300 --> 00:10:47.060
+I'm showing you MCP model context protocol. Okay. So what is
+
+00:10:47.060 --> 00:10:49.420
+our understanding about a model context protocol? What is
+
+00:10:49.420 --> 00:10:52.860
+the definition of a model context protocol? So MCP is
+
+00:10:52.860 --> 00:10:55.980
+nothing but obviously it's a set of rule as we all know API,
+
+00:10:56.200 --> 00:10:59.760
+right? So basically API walks over a HTTP, HTTPS, right? So
+
+00:10:59.760 --> 00:11:02.160
+basically it's nothing but it's a protocol, it's a set of
+
+00:11:02.160 --> 00:11:06.060
+rule. So where you expose any function, right? You expose
+
+00:11:06.060 --> 00:11:11.980
+any function. So over a HTTP and anyone and everyone in any
+
+00:11:11.980 --> 00:11:15.140
+environment, so it will be able to call it. It will be able
+
+00:11:15.140 --> 00:11:19.180
+to consume it without any kind of a barrier, a language
+
+00:11:19.180 --> 00:11:22.240
+barrier or any kind of a technology barrier. So it's a rule,
+
+00:11:22.360 --> 00:11:25.880
+right? So where people are going to hit a particular URL, so
+
+00:11:25.880 --> 00:11:28.400
+technically they are hitting a particular function in any
+
+00:11:28.400 --> 00:11:32.340
+programming languages. That's a definition of a, you know,
+
+00:11:32.380 --> 00:11:37.160
+APIs or I can say like a flask API we have already created a
+
+00:11:37.160 --> 00:11:40.200
+fast API we have already created. So we have already seen
+
+00:11:40.200 --> 00:11:43.060
+those things in a similar manner. So model context protocol.
+
+00:11:43.060 --> 00:11:45.720
+So model context protocol is a kind of a protocol which
+
+00:11:45.720 --> 00:11:49.380
+people have designed. So where you will be able to give an
+
+00:11:49.380 --> 00:11:55.500
+access of your world to a LLM. For example, I'm giving
+
+00:11:55.500 --> 00:11:58.920
+access of my SQL databases. I'm giving access of my NoSQL
+
+00:11:58.920 --> 00:12:02.240
+databases, MongoDB. I'm giving access of my email. I'm
+
+00:12:02.240 --> 00:12:05.300
+giving access of my calendar. I'm giving access of my Google
+
+00:12:05.300 --> 00:12:08.700
+spreadsheet. Likewise whatever system which I can think of
+
+00:12:08.700 --> 00:12:11.960
+in my mind, right? Whatever system. I can just give an
+
+00:12:11.960 --> 00:12:14.940
+access to this. Right? I can just try to give an access. So
+
+00:12:14.940 --> 00:12:19.200
+the way we try to give an access is called as MCP model
+
+00:12:19.200 --> 00:12:24.800
+context protocol. Is it making sense guys? Yeah. And like I
+
+00:12:24.800 --> 00:12:26.880
+said, so I'm not going to show you like calculator kind of
+
+00:12:26.880 --> 00:12:30.540
+example because we are not that new. So we all are now
+
+00:12:30.540 --> 00:12:33.760
+mature enough to understand a little bit of, this is not a
+
+00:12:33.760 --> 00:12:36.420
+complex example by the way. So if I can add, you know, five
+
+00:12:36.420 --> 00:12:40.600
+real time tool, I can add 500 as well. Right? And I believe
+
+00:12:40.600 --> 00:12:45.200
+we all can add it. So now we are in that position inside our
+
+00:12:45.200 --> 00:12:48.920
+class. So now let me explain you one by one that how this
+
+00:12:48.920 --> 00:12:52.620
+things works and believe me it's very simple. It's not
+
+00:12:52.620 --> 00:12:54.960
+difficult at all. It's not difficult means literally it's
+
+00:12:54.960 --> 00:12:58.880
+not difficult at all in terms of creating an MCP and
+
+00:12:58.880 --> 00:13:03.120
+exposing those tools to like a cloud a kind of a system or
+
+00:13:03.120 --> 00:13:07.880
+maybe MCP inspector or any other LM like out there. So which
+
+00:13:07.880 --> 00:13:13.160
+supports technically MCP, right? MCP. So MCP is nothing but
+
+00:13:13.160 --> 00:13:17.760
+you can say a fancy HTTPS or HTTP request that they have
+
+00:13:17.760 --> 00:13:22.180
+created just for a LLM. So where my LLM will be able to get
+
+00:13:22.180 --> 00:13:25.860
+an access. Yes. My LLM will be able to get an access. Now
+
+00:13:25.860 --> 00:13:31.140
+you can give me an argument or maybe a counter that, okay,
+
+00:13:31.260 --> 00:13:36.560
+so how this MCP is different from agent then? Any idea how
+
+00:13:36.560 --> 00:13:39.120
+it is different from agents? Because we have been talking
+
+00:13:39.120 --> 00:13:42.860
+about agents, right? And even agents can, you know, have an
+
+00:13:42.860 --> 00:13:46.160
+access of a LLMs and then agent can have an access of a
+
+00:13:46.160 --> 00:13:49.460
+memory, agents can have an access of a tools, technically a
+
+00:13:49.460 --> 00:13:51.800
+function, tool is nothing but a function, right? Where I can
+
+00:13:51.800 --> 00:13:54.260
+write, okay, fine. So go and get an access of a Gmail, do
+
+00:13:54.260 --> 00:13:57.840
+this, do that and it will do it, right? Agent will do it. So
+
+00:13:57.840 --> 00:14:00.240
+any idea guys how it is different from agents?
+
+00:14:06.250 --> 00:14:12.150
+Yeah. Agents make use of MCP to get the result. Okay. MCP is
+
+00:14:12.150 --> 00:14:18.050
+a boss of LLMs. Okay. Fine. Real time data, MCP agent can
+
+00:14:18.050 --> 00:14:20.770
+take a decision on their own. Like they might can also have
+
+00:14:20.770 --> 00:14:24.870
+an access of these MCP. Yeah. So see agents are nothing but
+
+00:14:24.870 --> 00:14:28.570
+it's a brain, right? Agents are nothing but it's a brain.
+
+00:14:28.690 --> 00:14:33.410
+Brain means a kind of a unit which can think, right, which
+
+00:14:33.410 --> 00:14:36.450
+can take a decision, which can take a decision at the end of
+
+00:14:36.450 --> 00:14:40.370
+the day that what I'm supposed to do. MCP is just a
+
+00:14:40.370 --> 00:14:43.370
+protocol. Just like, you know, we try to create an API. So
+
+00:14:43.370 --> 00:14:47.190
+with the, with the help of HTTP, HTTP request. So in a
+
+00:14:47.190 --> 00:14:51.290
+similar manner, basically MCP is a protocol. So MCP provides
+
+00:14:51.290 --> 00:14:57.670
+you or MCP gives you a flexibility to expose any such system
+
+00:14:57.670 --> 00:15:02.410
+in a generic way, right? By implementing that, that rule. So
+
+00:15:02.410 --> 00:15:06.690
+expose any kind of a system in a generic way to the LLMs or
+
+00:15:06.690 --> 00:15:10.510
+maybe to an agent. So even agent can have an access of a
+
+00:15:10.510 --> 00:15:13.810
+MCPs. So MCP is just a set of a rule. So where we are
+
+00:15:13.810 --> 00:15:18.350
+standardizing the exposure, for example, so nowadays you
+
+00:15:18.350 --> 00:15:21.950
+must have seen even in a latest release of, or I'll show you
+
+00:15:21.950 --> 00:15:27.010
+even inside my chat GPT, maybe, I don't know whether you
+
+00:15:27.010 --> 00:15:29.130
+guys have observed that or not, but yeah, today you are
+
+00:15:29.130 --> 00:15:32.270
+going to observe it. So let's suppose if you will open up
+
+00:15:32.270 --> 00:15:36.770
+chat GPT and if you will go inside basically here inside
+
+00:15:36.770 --> 00:15:41.230
+your like a setting and inside that app. App and connectors
+
+00:15:41.230 --> 00:15:44.870
+option, you will be able to see apps wise booking.com,
+
+00:15:45.010 --> 00:15:50.030
+Canva, Coursera, Spotify, Figma, Expedia, Gmail, calendar,
+
+00:15:50.330 --> 00:15:53.570
+contact, Google drive. So technically you can try to just
+
+00:15:53.570 --> 00:15:56.970
+click one click and then you are going to authorize with
+
+00:15:56.970 --> 00:16:01.230
+your SSO, single sign on basically. And then your chat GPT
+
+00:16:01.230 --> 00:16:04.890
+will be having an access of all of these system, right? Or
+
+00:16:04.890 --> 00:16:07.630
+what you can do, you can click on advanced setting and you
+
+00:16:07.630 --> 00:16:11.110
+can try to, you know, make a developer mode on. And then you
+
+00:16:11.110 --> 00:16:14.850
+can try to even create a custom connector. So where it is
+
+00:16:14.850 --> 00:16:20.210
+looking for what MCP server URL means I have created my own
+
+00:16:20.210 --> 00:16:22.550
+MCPs because they are giving you a limited one. They are
+
+00:16:22.550 --> 00:16:25.310
+giving you a limited tool exposure. So technically these
+
+00:16:25.310 --> 00:16:29.090
+tools are nothing but someone has created a function for
+
+00:16:29.090 --> 00:16:31.990
+this tool because all of these tools must be doing something
+
+00:16:31.990 --> 00:16:34.690
+right. For example, if I'm talking about a booking.com, so
+
+00:16:34.690 --> 00:16:37.450
+what it does, you can go, you can search, you can book. So
+
+00:16:37.450 --> 00:16:39.430
+obviously they are giving you a search facility. They are
+
+00:16:39.430 --> 00:16:41.410
+giving you a filter facility. They are giving you add to
+
+00:16:41.410 --> 00:16:44.030
+cart facility. They are giving you a like, you know, a
+
+00:16:44.030 --> 00:16:47.150
+checkout facilities at the end of this is something that
+
+00:16:47.150 --> 00:16:49.990
+this system will give you, right? If I talk about Canva, so
+
+00:16:49.990 --> 00:16:52.410
+again, you can go, you can try to, you know, brainstorm, you
+
+00:16:52.410 --> 00:16:55.230
+can try to create a different, different kind of a design or
+
+00:16:55.230 --> 00:16:58.370
+maybe like a thumbnails and eventually it is going to work
+
+00:16:58.370 --> 00:17:01.890
+Coursera, same thing as Spotify doing something Figma. So
+
+00:17:01.890 --> 00:17:04.290
+technically it is helping you out in terms of designing your
+
+00:17:04.290 --> 00:17:06.990
+app on mobile apps, right? In terms of design. So you go,
+
+00:17:07.050 --> 00:17:09.190
+you try to select an element. You try to create the element,
+
+00:17:09.390 --> 00:17:11.810
+you create a project, you create a pages and then you create
+
+00:17:11.810 --> 00:17:16.050
+a design one by one, right? So every system is like is a
+
+00:17:16.050 --> 00:17:18.930
+function of something like this is what I'm trying to say.
+
+00:17:19.030 --> 00:17:22.910
+Every system is a function of something. And if you are
+
+00:17:22.910 --> 00:17:27.710
+going to expose that function to an LLMs, right? Every
+
+00:17:27.710 --> 00:17:30.310
+system, for example, I'm just talking about a booking.com or
+
+00:17:30.310 --> 00:17:33.670
+maybe amazon.com. So what, what amazon.com does, it's a
+
+00:17:33.670 --> 00:17:36.050
+function of something. Basically someone has written a
+
+00:17:36.050 --> 00:17:39.810
+function to search. To filter. Someone has written a
+
+00:17:39.810 --> 00:17:42.770
+function to do some add to cart operation. Some someone has
+
+00:17:42.770 --> 00:17:44.970
+written a function where you can go and you can try to check
+
+00:17:44.970 --> 00:17:48.830
+out. Yeah. So it's a function of something, all the digital
+
+00:17:48.830 --> 00:17:52.150
+products works in that way, right? So everyone is having a
+
+00:17:52.150 --> 00:17:55.830
+function. Now if I can expose that function to an LLMs,
+
+00:17:55.970 --> 00:17:59.730
+right? Expose those functions to an LLMs, any LLMs. So
+
+00:17:59.730 --> 00:18:03.590
+obviously just by chatting with LLMs, can I say I can, there
+
+00:18:03.590 --> 00:18:06.270
+is a possibility that I will be able to execute those
+
+00:18:06.270 --> 00:18:11.930
+functions. Yes, can I say that if I'm going to expose those
+
+00:18:11.930 --> 00:18:15.390
+functions so obviously I will be able to chat and then I
+
+00:18:15.390 --> 00:18:18.150
+will be able to do a search, I will be able to do a filter,
+
+00:18:18.370 --> 00:18:21.210
+I will be able to, you know, uh, do a bookings or maybe
+
+00:18:21.210 --> 00:18:23.970
+checkout, whatever I want. Right. Whatever I want. Even I
+
+00:18:23.970 --> 00:18:26.030
+can create a design because at the end of the day it's a
+
+00:18:26.030 --> 00:18:28.750
+function, right? Even this platforms are executing
+
+00:18:28.750 --> 00:18:32.690
+internally. So every platform has been designed by using a
+
+00:18:32.690 --> 00:18:34.730
+different, different languages, right? Different your
+
+00:18:34.730 --> 00:18:36.470
+framework, different different languages. Right. Right. like
+
+00:18:36.470 --> 00:18:39.910
+every platform is using because there are like a you know
+
+00:18:39.910 --> 00:18:42.010
+not just thousands of platforms there are millions of
+
+00:18:42.010 --> 00:18:44.850
+platform out there so every platform is having its own
+
+00:18:44.850 --> 00:18:47.810
+language framework programming language way of writing a
+
+00:18:47.810 --> 00:18:50.970
+code so but at the end of the day every platform is a
+
+00:18:50.970 --> 00:18:54.150
+function of something so if i can expose those functions to
+
+00:18:54.150 --> 00:18:57.250
+my llms my llms will be able to understand okay which one to
+
+00:18:57.250 --> 00:18:59.990
+call when and then it will keep on calling it and this is
+
+00:18:59.990 --> 00:19:03.530
+what my llms is doing when i say okay fine fetch a email it
+
+00:19:03.530 --> 00:19:06.810
+is fetching a email when i say list the all the tables it is
+
+00:19:06.810 --> 00:19:09.610
+doing it when i say give me a data from this table it is
+
+00:19:09.610 --> 00:19:12.210
+going to do that right if i'm going to say that okay fine
+
+00:19:12.210 --> 00:19:15.090
+from order id give me only the orders which is more than
+
+00:19:15.090 --> 00:19:19.250
+thousand dollar it will be able to give me yeah so every
+
+00:19:19.250 --> 00:19:22.430
+system is a function of something and everywhere nowadays
+
+00:19:22.430 --> 00:19:26.210
+you will be able to see and especially with respect to a gpt
+
+00:19:26.210 --> 00:19:30.730
+cloud world and even others that everyone is trying to give
+
+00:19:30.730 --> 00:19:33.910
+you a connectors now technically these characters are
+
+00:19:33.910 --> 00:19:37.170
+nothing but if i'll talk about a gpt even recently gpt has
+
+00:19:37.170 --> 00:19:40.190
+released like a you know a drag and drop ui based like
+
+00:19:40.190 --> 00:19:44.330
+automation so even over there you will be able to find out
+
+00:19:44.330 --> 00:19:49.710
+that they like focused more and more on mcps right so where
+
+00:19:49.710 --> 00:19:53.270
+like you can try to create your own mcps or let's suppose
+
+00:19:53.270 --> 00:19:56.890
+booking.com has created a mcps as a mcp because mcp is a
+
+00:19:56.890 --> 00:20:00.690
+standardized protocol just like a api yeah so previously
+
+00:20:00.690 --> 00:20:04.830
+people used to expose their system by using apis now they
+
+00:20:04.830 --> 00:20:07.950
+said that okay fine so just do one thing in a mcp way try to
+
+00:20:07.950 --> 00:20:10.630
+expose it the rule which i have defined in that manner try
+
+00:20:10.630 --> 00:20:17.170
+to expose it expose your functions and then bingo people can
+
+00:20:17.170 --> 00:20:20.710
+chat just in a natural language the way they want in their
+
+00:20:20.710 --> 00:20:23.010
+own language hindi english tamil telugu punjabi bangla
+
+00:20:23.010 --> 00:20:26.170
+whatever they want right and they will be able to do their
+
+00:20:26.170 --> 00:20:31.210
+job yeah so this is where the mcp comes into a picture so
+
+00:20:31.210 --> 00:20:34.030
+previously we were exposing a system just by using our apis
+
+00:20:34.030 --> 00:20:37.930
+it's now mcps technically what we are doing so for with
+
+00:20:37.930 --> 00:20:40.070
+respect to a system we're just exposing their
+
+00:20:40.070 --> 00:20:45.790
+functionalities that's it yes yeah it's only open in chat
+
+00:20:45.790 --> 00:20:49.070
+gpt uh no it's not just open in chat gpt nowadays many
+
+00:20:49.070 --> 00:20:51.470
+systems are providing you even cloud cloud was the very
+
+00:20:51.470 --> 00:20:55.090
+first one so who has invented this and who have made these
+
+00:20:55.090 --> 00:20:58.170
+things pretty much normal in a market yeah and then everyone
+
+00:20:58.170 --> 00:21:07.250
+started following it yes so uh fine now uh so here i think
+
+00:21:07.250 --> 00:21:11.150
+uh we have uh pretty much like a familiar with these things
+
+00:21:11.150 --> 00:21:14.430
+now what is the definition of a mcp now and everywhere you
+
+00:21:14.430 --> 00:21:17.270
+will be able to see a mcp in a real time and just now i have
+
+00:21:17.270 --> 00:21:20.330
+shown you the demo right i'm able to access my database i'm
+
+00:21:20.330 --> 00:21:23.090
+able to access my email i will be able to access my calendar
+
+00:21:23.090 --> 00:21:26.070
+i will be even just i'll chat and then i will be able to
+
+00:21:26.070 --> 00:21:30.250
+reply to my email right because i'm able to access my email
+
+00:21:30.250 --> 00:21:33.270
+so i have received 32 emails in last three days it is able
+
+00:21:33.270 --> 00:21:35.450
+to fetch everything it is able to summarize even everything
+
+00:21:35.450 --> 00:21:36.450
+right yeah and then we have also reported of things like you
+
+00:21:36.450 --> 00:21:37.630
+know batman star it has never been well this is what lms are
+
+00:21:37.630 --> 00:21:44.290
+basically yeah so uh uh sir technically we are not using the
+
+00:21:44.290 --> 00:21:47.870
+apis key yeah we are not using api key over here we are not
+
+00:21:47.870 --> 00:21:51.010
+using api key because api key generally is required whenever
+
+00:21:51.010 --> 00:21:55.070
+we are accessing exclusively uh llms for an agent right
+
+00:21:55.070 --> 00:21:59.230
+because for an agent llm is a major unit but here what we
+
+00:21:59.230 --> 00:22:03.110
+are doing we have a cloud a right we have just attached so
+
+00:22:03.110 --> 00:22:06.810
+here if you will go and see so i have attached my calendar
+
+00:22:06.810 --> 00:22:10.330
+search so basically i have attached my postgres databases
+
+00:22:10.330 --> 00:22:13.870
+and see what an all access i have given so get a table count
+
+00:22:13.870 --> 00:22:16.770
+describe a table list table run table these are the function
+
+00:22:16.770 --> 00:22:18.930
+which i have created yeah these are the functions these are
+
+00:22:18.930 --> 00:22:22.090
+my own custom function no one has no one else has created
+
+00:22:22.090 --> 00:22:24.250
+basically i have created that which i am going to show you
+
+00:22:24.250 --> 00:22:28.110
+that part again for a mongodb so i have created so many
+
+00:22:28.110 --> 00:22:32.030
+functions see aggregate count delete delete document update
+
+00:22:32.030 --> 00:22:35.350
+upload insert find list and all those things right i have
+
+00:22:35.350 --> 00:22:39.250
+already created now for a google services so these many
+
+00:22:39.250 --> 00:22:42.090
+functions i have created get email details send email search
+
+00:22:42.090 --> 00:22:44.710
+email list calendar create calendar event update calendar
+
+00:22:44.710 --> 00:22:48.190
+delete calendar append sheet write sheet read sheet so these
+
+00:22:48.190 --> 00:22:51.090
+are the functions which i have created basically so these
+
+00:22:51.090 --> 00:22:53.510
+are just a function i can switch on switch off switch off
+
+00:22:53.510 --> 00:22:57.070
+all of these functions as per my need right so technically
+
+00:22:57.070 --> 00:22:59.910
+these are the function which i have created and in a mcp way
+
+00:22:59.910 --> 00:23:02.730
+i have given these functions given an access to the lms i
+
+00:23:02.730 --> 00:23:07.090
+have already attached to this particular cloudy sonet right
+
+00:23:07.090 --> 00:23:10.790
+sonet lms so that i will just chat and then system is going
+
+00:23:10.790 --> 00:23:16.130
+to work for me as simple as that okay so now let's see how
+
+00:23:16.130 --> 00:23:19.350
+we are going to create this mcps and believe me it's a
+
+00:23:19.350 --> 00:23:23.310
+pretty much easy just writing a function right uh just like
+
+00:23:23.310 --> 00:23:28.170
+writing a function so we all can create a mcps so let me
+
+00:23:28.170 --> 00:23:34.750
+show you that part mcp latest v1 okay fine so one by one one
+
+00:23:34.750 --> 00:23:36.910
+by one i'm going to show you each and everything and it's
+
+00:23:36.910 --> 00:23:39.790
+believe me very easy literally very easy means literally
+
+00:23:39.790 --> 00:23:43.430
+very very easy you all will be able to find out for example
+
+00:23:43.430 --> 00:23:47.090
+so i am going to show you basically first of all my sql db
+
+00:23:47.090 --> 00:23:49.770
+operation which you all will be able to understand in a
+
+00:23:49.770 --> 00:23:54.790
+easiest possible manner so i have basically a database i am
+
+00:23:54.790 --> 00:23:59.710
+using a database called as neon i believe in my previous
+
+00:23:59.710 --> 00:24:04.150
+class i have used it you can use any database of your choice
+
+00:24:04.150 --> 00:24:07.730
+uh that that's your wish i don't have any kind of a issue
+
+00:24:07.730 --> 00:24:13.250
+with it yeah so neon is nothing but a database provider
+
+00:24:13.250 --> 00:24:16.890
+basically right so database provider so you you will be able
+
+00:24:16.890 --> 00:24:20.070
+to see or you will be able to get you know free databases uh
+
+00:24:20.070 --> 00:24:23.550
+hosting over here and you can try to dump our data and then
+
+00:24:23.550 --> 00:24:25.890
+you will be able to do whatever you want with respect to
+
+00:24:25.890 --> 00:24:31.090
+those data cells so this is where you are like uh comes into
+
+00:24:31.090 --> 00:24:35.470
+a picture and uh yeah so in a past so i have created so many
+
+00:24:35.470 --> 00:24:38.530
+tables over here so many tables in this particular like a
+
+00:24:38.530 --> 00:24:42.530
+neon database and as you can see so if you will go to my
+
+00:24:42.530 --> 00:24:47.130
+neon db so i have ordered item order playing with neon
+
+00:24:47.130 --> 00:24:53.870
+products all of these tables inside my neo db and then i am
+
+00:24:53.870 --> 00:24:56.890
+trying to hold some sort of custom data so they are my own
+
+00:24:56.890 --> 00:25:01.870
+data set i believe this data set But yeah, so these are the
+
+00:25:01.870 --> 00:25:05.770
+table we have already created, now this is not a point of
+
+00:25:05.770 --> 00:25:08.230
+attraction basically, right, this is not a point of
+
+00:25:08.230 --> 00:25:11.070
+attraction for us, point of attraction is that, that okay,
+
+00:25:11.150 --> 00:25:13.850
+this is one of the database, simple, it is available
+
+00:25:13.850 --> 00:25:17.510
+somewhere and obviously if it is available on some cloud
+
+00:25:17.510 --> 00:25:20.990
+platform, so I can go, I can try to connect, I will be able
+
+00:25:20.990 --> 00:25:24.330
+to perform any kind of operation programmatically, right,
+
+00:25:24.350 --> 00:25:26.670
+this is what it means, as simple as that, from anywhere,
+
+00:25:26.810 --> 00:25:31.370
+from any system, right, so having a database is not a big
+
+00:25:31.370 --> 00:25:33.650
+deal, we all have some sort of databases, right, maybe
+
+00:25:33.650 --> 00:25:36.890
+vector databases, right, maybe SQL based databases, maybe
+
+00:25:36.890 --> 00:25:40.910
+graph based databases, maybe like, you know, no SQL based
+
+00:25:40.910 --> 00:25:44.230
+databases, so we all have such kind of, you know, databases
+
+00:25:44.230 --> 00:25:48.650
+with us, that's completely fine, the thing is that, I don't
+
+00:25:48.650 --> 00:25:51.970
+want to come over here again and again and I don't want to,
+
+00:25:52.030 --> 00:25:55.170
+you know, check these data because I might have like
+
+00:25:55.170 --> 00:25:56.870
+millions of data. I might have millions of records, right,
+
+00:25:56.990 --> 00:25:59.690
+there is a possibility that I will be having millions of
+
+00:25:59.690 --> 00:26:02.490
+records, so I don't want to come over here and, you know,
+
+00:26:02.530 --> 00:26:05.510
+drill down into the records and then fetch all of these
+
+00:26:05.510 --> 00:26:08.090
+records and then do some sort of operation, no, I don't want
+
+00:26:08.090 --> 00:26:11.750
+that because I am living in a world of AI, right, so
+
+00:26:11.750 --> 00:26:15.190
+obviously, LLMs are everywhere, so maybe I can try to make
+
+00:26:15.190 --> 00:26:19.130
+use of LLMs and this is where this MCP comes into a picture
+
+00:26:19.650 --> 00:26:24.670
+that, okay, let's do one thing, so let's expose this entire
+
+00:26:24.670 --> 00:26:29.910
+database. Right, as a function to any LLM system which
+
+00:26:29.910 --> 00:26:32.850
+supports MCP and nowadays everyone has started supporting a
+
+00:26:32.850 --> 00:26:36.870
+MCP basically, to expose this entire system to the outer
+
+00:26:36.870 --> 00:26:40.870
+world, now to expose this entire system, so maybe I can just
+
+00:26:40.870 --> 00:26:43.870
+like a need this connector, nothing else, so I just need
+
+00:26:43.870 --> 00:26:46.830
+this URL, so where my user ID and password is already
+
+00:26:46.830 --> 00:26:49.810
+attached and my cluster detail is already attached, so I can
+
+00:26:49.810 --> 00:26:52.830
+directly go and I can try to use it, okay, that is again
+
+00:26:52.830 --> 00:26:57.690
+cool. So let's go back and let's try to understand that what
+
+00:26:57.690 --> 00:27:01.550
+implementation we have done and you will be amazed that it
+
+00:27:01.550 --> 00:27:03.870
+is not a very different implementation that we have done, it
+
+00:27:03.870 --> 00:27:07.170
+is a very similar one that we are doing since ages, right,
+
+00:27:07.230 --> 00:27:10.030
+it is a very like a similar one that we have done since
+
+00:27:10.030 --> 00:27:13.730
+ages. So here what we are doing, so here we have a couple of
+
+00:27:13.730 --> 00:27:17.730
+functions, so parse db URL, so db URL nothing but a
+
+00:27:17.730 --> 00:27:20.550
+connection URL, right, so parse db URL is one of the
+
+00:27:20.550 --> 00:27:24.770
+function I have created. So establish a connection by the
+
+00:27:24.770 --> 00:27:29.130
+way, execute a query, right, so any query which will come
+
+00:27:29.130 --> 00:27:33.090
+over here, so cursor.execute, I think this is what we do all
+
+00:27:33.090 --> 00:27:37.290
+the time, execute a query, execute right, so insert, update,
+
+00:27:37.390 --> 00:27:39.850
+delete kind of operation inside my databases, so this
+
+00:27:39.850 --> 00:27:43.950
+function will be called. Now list table, so whenever I am
+
+00:27:43.950 --> 00:27:46.430
+going to ask that okay, fine, list a table, so it is going
+
+00:27:46.430 --> 00:27:49.990
+to execute this particular function. Now describe a table,
+
+00:27:50.090 --> 00:27:52.230
+so whenever someone is going to ask that okay, fine, so
+
+00:27:52.230 --> 00:27:54.410
+describe this particular table, so this is what it is going
+
+00:27:54.410 --> 00:27:58.110
+to perform, means this function will be executed and get a
+
+00:27:58.110 --> 00:28:00.530
+table count, so when someone is going to ask that what is
+
+00:28:00.530 --> 00:28:03.110
+the number of total number of table which is available, now
+
+00:28:03.110 --> 00:28:06.750
+run custom SQL, so if I have to run some sort of a custom
+
+00:28:06.750 --> 00:28:10.570
+SQL query, now this function will be called. Are you able to
+
+00:28:10.570 --> 00:28:14.610
+find out any differences over here, a regular function
+
+00:28:14.610 --> 00:28:18.050
+versus these functions, are you able to see any kind of a
+
+00:28:18.050 --> 00:28:18.450
+differences,
+
+00:28:24.540 --> 00:28:26.700
+yes, and
+
+00:28:30.410 --> 00:28:32.830
+guys when you are in class, so try to focus inside a class
+
+00:28:32.830 --> 00:28:35.450
+for your argument and for your discussion, so we have a
+
+00:28:35.450 --> 00:28:37.470
+personal WhatsApp group, right, so try to keep your
+
+00:28:37.470 --> 00:28:39.850
+discussions over there, not inside this discussion
+
+00:28:43.170 --> 00:28:45.830
+and do not try to like initiate any kind of fight, I can see
+
+00:28:45.830 --> 00:28:48.250
+some sort of aggressive conversation over here, so avoid it,
+
+00:28:48.270 --> 00:28:52.010
+it will be better. So believe you will not be able to see
+
+00:28:52.010 --> 00:28:55.610
+any kind of a differences between a regular function and
+
+00:28:55.610 --> 00:28:57.730
+these functions that you are able to see, it is a regular
+
+00:28:57.730 --> 00:29:00.630
+function, right, so I am writing a function to you know give
+
+00:29:00.630 --> 00:29:03.270
+me a count of a table or maybe fetch some sort of a data
+
+00:29:03.270 --> 00:29:06.250
+from the table. So you know fire some sort of a custom
+
+00:29:06.250 --> 00:29:10.110
+queries, normal functions we have written, yeah, normal
+
+00:29:10.110 --> 00:29:13.270
+function, so in that way I can write hundreds and thousands
+
+00:29:13.270 --> 00:29:17.170
+of functions, whatever that function like does and whatever
+
+00:29:17.170 --> 00:29:19.730
+that function is going to do with respect to my databases,
+
+00:29:19.990 --> 00:29:22.530
+only with respect to my SQL databases I am talking about,
+
+00:29:22.710 --> 00:29:26.490
+yeah. So this is not a different function, it is a same
+
+00:29:26.490 --> 00:29:29.110
+function that we have been writing since an ages, we are
+
+00:29:29.110 --> 00:29:34.250
+writing it, yeah, now so this is like a file, so where I
+
+00:29:34.250 --> 00:29:36.370
+have written, I will go through these functions once again
+
+00:29:36.370 --> 00:29:40.170
+one by one and like I said, so I do not think anyone of you
+
+00:29:40.170 --> 00:29:43.310
+will find even a single percent of difficulties in terms of
+
+00:29:43.310 --> 00:29:48.210
+understanding this function. So it is a single function we
+
+00:29:48.210 --> 00:29:51.370
+have created, yeah, single, so these are the functions we
+
+00:29:51.370 --> 00:29:55.510
+have created. Now how we are going to expose it, so in case
+
+00:29:55.510 --> 00:29:58.630
+of fast API if you remember what we have done, we have
+
+00:29:58.630 --> 00:30:01.230
+written a simple function, yeah, we have written a simple
+
+00:30:01.230 --> 00:30:04.490
+function and then we have decorated. Decorated with what,
+
+00:30:04.630 --> 00:30:08.430
+URL, I believe this is what we have done at the time of
+
+00:30:08.430 --> 00:30:15.550
+creation of APIs, yes, yeah, so this is what we have done,
+
+00:30:15.830 --> 00:30:23.030
+now so basically and that we try to call it as a path or
+
+00:30:23.030 --> 00:30:26.130
+maybe a route, something like that, we try to say, right and
+
+00:30:26.130 --> 00:30:28.990
+we say that okay fine, so if someone is going to call this
+
+00:30:28.990 --> 00:30:31.910
+particular route, then this function will be executed, that
+
+00:30:31.910 --> 00:30:34.550
+particular route, then that function will be executed, yeah.
+
+00:30:34.550 --> 00:30:37.290
+This is what we used to talk about with respect to fast API
+
+00:30:37.290 --> 00:30:39.870
+and we have seen enough, right, we have seen enough and we
+
+00:30:39.870 --> 00:30:43.930
+have used those kind of a situation enough. Now here, so we
+
+00:30:43.930 --> 00:30:46.730
+have created a regular function. Now what we are trying to
+
+00:30:46.730 --> 00:30:50.330
+do, so I have written a MCP file over here and inside this
+
+00:30:50.330 --> 00:30:54.890
+MCP file, so we are trying to call now MCP base, just like a
+
+00:30:54.890 --> 00:30:57.550
+fast API we try to call, so in the similar manner, so we are
+
+00:30:57.550 --> 00:31:02.890
+trying to call MCP dot server, MCP type, tool context, MCP
+
+00:31:02.890 --> 00:31:05.910
+server studios. Studios, studios, server, all of these
+
+00:31:05.910 --> 00:31:10.710
+things we are trying to call. Now what we will do, now come
+
+00:31:10.710 --> 00:31:15.610
+down over here, right, so server, at the rate server list
+
+00:31:15.610 --> 00:31:19.950
+tools, yeah, at the rate server list tools, so basically
+
+00:31:19.950 --> 00:31:23.110
+this decoration we are trying to perform, yeah, this
+
+00:31:23.110 --> 00:31:25.590
+decoration we are trying to perform and server is nothing
+
+00:31:25.590 --> 00:31:29.710
+but what, server is nothing but it is a MCP server, simple,
+
+00:31:29.870 --> 00:31:32.330
+so someone has created this library, they said that. They
+
+00:31:32.330 --> 00:31:34.530
+said that whenever you are going to call the server, the way
+
+00:31:34.530 --> 00:31:38.010
+we try to call a fast API object, we try to name it as a
+
+00:31:38.010 --> 00:31:41.570
+app, let's suppose, right and we say app dot route or app
+
+00:31:41.570 --> 00:31:44.670
+dot this, app dot that and then we try to perform the routes
+
+00:31:44.670 --> 00:31:47.810
+on a slashes basically, right, technically a path we try to
+
+00:31:47.810 --> 00:31:51.310
+give, which we call it as a route. So in the similar manner,
+
+00:31:51.390 --> 00:31:54.210
+you will be able to see that I am saying server dot list
+
+00:31:54.210 --> 00:31:58.990
+tools and then inside this server like object, I am trying
+
+00:31:58.990 --> 00:32:02.970
+to call list tools and then we are trying to say, we are
+
+00:32:02.970 --> 00:32:06.590
+trying to create one function, right and here, so it is
+
+00:32:06.590 --> 00:32:10.310
+returning, it is returning what, tool, what kind of a tool,
+
+00:32:10.470 --> 00:32:14.150
+so tool called as execute query, now what is this execute
+
+00:32:14.150 --> 00:32:17.990
+query by the way, so this execute query is nothing but,
+
+00:32:18.190 --> 00:32:21.810
+right, so this execute query is nothing but, so it is coming
+
+00:32:21.810 --> 00:32:28.490
+from my PostgreSQL DB, so basically here, here I have a
+
+00:32:28.490 --> 00:32:31.890
+execute query somewhere. So, you can see that. So execute,
+
+00:32:32.050 --> 00:32:35.970
+write, execute query somewhere. So this is one of the tool
+
+00:32:35.970 --> 00:32:38.570
+it is trying to call. So someone has defined that protocol.
+
+00:32:39.150 --> 00:32:41.370
+Someone has already defined that protocol that whenever you
+
+00:32:41.370 --> 00:32:44.310
+are going to call your MCP or whenever you are trying to
+
+00:32:44.310 --> 00:32:47.250
+expose your tool, you should do in this way. Similar for
+
+00:32:47.250 --> 00:32:50.650
+APIs, right? So someone has defined the standard approach, a
+
+00:32:50.650 --> 00:32:53.750
+standard rule and anyone and everyone of us who is going to
+
+00:32:53.750 --> 00:32:56.870
+create an API, we are going to just follow that approach. We
+
+00:32:56.870 --> 00:32:58.790
+are not going to do anything else. We are just going to
+
+00:32:58.790 --> 00:33:01.430
+follow the approach, right? The rule which someone has
+
+00:33:01.430 --> 00:33:04.750
+defined. Similar manner, right? You will be able to find out
+
+00:33:04.750 --> 00:33:09.530
+that here I am trying to expose my tool, right? Tool number
+
+00:33:09.530 --> 00:33:12.470
+one, tool number one. What it does? So basically we have
+
+00:33:12.470 --> 00:33:15.070
+given a name over here that execute query. It is the same
+
+00:33:15.070 --> 00:33:17.730
+tool name that we have given, yeah? It is the same tool name
+
+00:33:17.730 --> 00:33:21.170
+that we have given and description execute a select query
+
+00:33:21.170 --> 00:33:24.230
+and return a result used for reading a data from the table.
+
+00:33:24.350 --> 00:33:28.390
+So I have given a NLP description. In English language, I
+
+00:33:28.390 --> 00:33:31.670
+have given a description. And then I am trying to provide
+
+00:33:31.670 --> 00:33:35.250
+what input it will take and then what output it will give,
+
+00:33:35.430 --> 00:33:38.830
+yeah? Because if I have a function, so obviously every
+
+00:33:38.830 --> 00:33:42.190
+function, function means what? Function means it will take
+
+00:33:42.190 --> 00:33:45.690
+some input and then give me some sort of a output. This is
+
+00:33:45.690 --> 00:33:48.190
+what function does. All the function does, right? That is a
+
+00:33:48.190 --> 00:33:51.130
+responsibility and roles of the functions in this entire
+
+00:33:51.130 --> 00:33:54.790
+world. This is what we know. Similarly, so here we are
+
+00:33:54.790 --> 00:33:58.570
+trying to define inside a MCP input schema that, okay, this
+
+00:33:58.570 --> 00:34:02.010
+is the tool name. This is what it will do and this is the
+
+00:34:02.010 --> 00:34:05.950
+input. So input wise, what it is going to take? Object type
+
+00:34:05.950 --> 00:34:08.770
+data it is going to take. What will be the property? So
+
+00:34:08.770 --> 00:34:11.490
+property will be, there will be a key called as query and
+
+00:34:11.490 --> 00:34:13.770
+then it is going to, you know, take a string and description
+
+00:34:13.770 --> 00:34:18.650
+wise select a SQL query to execute, fine? Then parameter, so
+
+00:34:18.650 --> 00:34:21.170
+obviously if there is a function, so there is a possibility
+
+00:34:21.170 --> 00:34:24.570
+that it will accept a parameter input basically, right? It
+
+00:34:24.570 --> 00:34:27.950
+is going to accept. So here parameter type is going to be
+
+00:34:27.950 --> 00:34:30.170
+array description. Optional query parameter for
+
+00:34:30.170 --> 00:34:32.490
+parameterized query. So if there will be a parameterized
+
+00:34:32.490 --> 00:34:37.410
+query and then here required is equal to query, fine. So
+
+00:34:37.410 --> 00:34:41.150
+this is one of the tool access I have given, one of the tool
+
+00:34:41.150 --> 00:34:43.830
+access. Which tool access? So basically execute query tool
+
+00:34:43.830 --> 00:34:47.190
+access I have given. Now I have a multiple tools, right,
+
+00:34:47.250 --> 00:34:50.150
+multiple functions. So okay, I am attaching tool number two.
+
+00:34:50.310 --> 00:34:53.190
+What it will do? Execute, right? Execute inside update this,
+
+00:34:53.270 --> 00:34:55.830
+this, this, this, this. I am providing an input schema. What
+
+00:34:55.830 --> 00:34:59.270
+is the parameter required query? Okay. Now tool number
+
+00:34:59.270 --> 00:35:02.670
+three, run custom SQL. So if I have to run the custom SQL,
+
+00:35:02.850 --> 00:35:05.570
+so execute any SQL query select insert update automatically
+
+00:35:05.570 --> 00:35:10.330
+handles query type, simple. And then I am trying to say
+
+00:35:10.330 --> 00:35:13.590
+input schema, this, this, this, this, this. So whatever is
+
+00:35:13.590 --> 00:35:16.750
+the input schema format which I would like to give and then
+
+00:35:16.750 --> 00:35:19.190
+parameter. So what in all parameter it is going to accept
+
+00:35:19.190 --> 00:35:23.610
+and required SQL. Okay. Then there is a tool called as list
+
+00:35:23.610 --> 00:35:27.850
+table. So this is going to list a table for me. Simple.
+
+00:35:27.850 --> 00:35:30.790
+Name, description, input schema. Then there is a tool called
+
+00:35:30.790 --> 00:35:34.450
+as describe table. So okay. This is what it will do. Then
+
+00:35:34.450 --> 00:35:37.990
+there is a tool called as get table count. Now all of these
+
+00:35:37.990 --> 00:35:42.940
+tools is what can I say it's a function, all of these tools
+
+00:35:42.940 --> 00:35:48.700
+are what function right? That's a function. Yeah. So you
+
+00:35:48.700 --> 00:35:52.520
+will be able to see that everywhere. Can I say that I'm
+
+00:35:52.520 --> 00:35:55.380
+following some set of rules? Because everywhere when I'm
+
+00:35:55.380 --> 00:35:58.640
+trying to create a tools is a similar thing, right? I'm
+
+00:35:58.640 --> 00:36:00.820
+calling a function. I'm giving it the description, giving
+
+00:36:00.820 --> 00:36:03.580
+its input, giving its output. That's it. It's a kind of a
+
+00:36:03.580 --> 00:36:08.500
+set of rule. Yeah. Set of a rule and someone has defined
+
+00:36:08.500 --> 00:36:12.120
+that rule similar to the fast API. So in case of fast API or
+
+00:36:12.120 --> 00:36:15.420
+any API creation, I had my own function and then I used to
+
+00:36:15.420 --> 00:36:17.540
+decorate, decorate with the route that okay, go to this
+
+00:36:17.540 --> 00:36:20.280
+route, execute this function, go to that route, execute that
+
+00:36:20.280 --> 00:36:23.400
+function. Someone has created that set of a rule. Like you
+
+00:36:23.400 --> 00:36:25.860
+have to do a get post, maybe delete, update, insert,
+
+00:36:25.940 --> 00:36:28.220
+whatever, right? In the similar manner. So here. So here
+
+00:36:28.220 --> 00:36:31.780
+someone has created this rule for me, though someone is like
+
+00:36:31.780 --> 00:36:36.020
+a creator of MCPs obviously and I'm not doing much over here
+
+00:36:36.020 --> 00:36:38.660
+by the way. I'm just trying to, you know, give a function
+
+00:36:38.660 --> 00:36:41.720
+name, its description, what will be like input, what will be
+
+00:36:41.720 --> 00:36:44.900
+the output. That's it means I'm trying to define all of
+
+00:36:44.900 --> 00:36:49.000
+those things as per the rules that someone has defined right
+
+00:36:49.000 --> 00:36:53.780
+inside a library of MCPs and then my work is done, right?
+
+00:36:53.860 --> 00:36:58.020
+Then my work is done. Okay. So this is how I'm trying to
+
+00:36:58.020 --> 00:37:01.340
+list down the tools. Now my MCPs will be able to aware about
+
+00:37:01.340 --> 00:37:05.560
+what in all tools are available. For example, so here when
+
+00:37:05.560 --> 00:37:08.160
+you are going to attach, so for example, I'm showing you a
+
+00:37:08.160 --> 00:37:11.580
+postgres DB, right? So these are the tool, right? Get table
+
+00:37:11.580 --> 00:37:14.380
+count, describe table, list table, run custom SQL, execute,
+
+00:37:14.560 --> 00:37:17.740
+write, execute query. All of these start nothing but a
+
+00:37:17.740 --> 00:37:20.720
+function or tools. Yeah. Function or tools. So all of these
+
+00:37:20.720 --> 00:37:23.200
+tools system is able to understand that. Okay, fine. So I
+
+00:37:23.200 --> 00:37:26.140
+have access of these kind of tools. And these are the tools
+
+00:37:26.140 --> 00:37:29.000
+which I'm showing you. Which I have written. Yeah. So system
+
+00:37:29.000 --> 00:37:32.180
+will be able to understand that. That's looks cool. Now tool
+
+00:37:32.180 --> 00:37:35.600
+calling. Yeah. Tool calling. So tool execution by the way.
+
+00:37:35.660 --> 00:37:39.300
+So here what we are going to do. So we are going to
+
+00:37:39.300 --> 00:37:43.640
+basically execute all of these tools one by one, one by one.
+
+00:37:43.800 --> 00:37:50.300
+So if tool name is execute query, okay, do this. If tool
+
+00:37:50.300 --> 00:37:54.200
+name is execute, right, then do this. If tool name is run
+
+00:37:54.200 --> 00:37:58.980
+custom SQL, do this. If tool name is list table, do this. If
+
+00:37:58.980 --> 00:38:02.220
+tool name is describe table, do this. If tool name is get
+
+00:38:02.220 --> 00:38:06.400
+table count, do this. Else whatever fallback which I have
+
+00:38:06.400 --> 00:38:09.660
+written. So here at the time of tool calling, what will
+
+00:38:09.660 --> 00:38:12.980
+happen? So first of all, we are listing on the tool. Then we
+
+00:38:12.980 --> 00:38:15.760
+are trying to define again with the help of protocol,
+
+00:38:16.060 --> 00:38:19.880
+server, server is coming from where? MCP, right? So we are
+
+00:38:19.880 --> 00:38:23.000
+trying to basically say that, okay, so whenever system is
+
+00:38:23.000 --> 00:38:25.640
+going to do a tool calling, because I'm not going to do a
+
+00:38:25.640 --> 00:38:28.920
+tool calling by the way, right, I'm just going to define it
+
+00:38:28.920 --> 00:38:31.800
+and given access to it, right? Everything will be done by my
+
+00:38:31.800 --> 00:38:35.300
+LLMs. So after creation of these tools, I'm not doing
+
+00:38:35.300 --> 00:38:37.780
+anything. I'm just chatting, right? I'm just chatting with
+
+00:38:37.780 --> 00:38:40.780
+my system. That's it. So my system is supposed to understand
+
+00:38:40.780 --> 00:38:43.580
+that which tool to call and then eventually it is supposed
+
+00:38:43.580 --> 00:38:47.640
+to call that particular tool. So I'm trying to say that when
+
+00:38:47.640 --> 00:38:51.940
+you are going to call this execute query, what will happen?
+
+00:38:52.100 --> 00:38:56.100
+So it will try to create a tool. A query, by the way, it is
+
+00:38:56.100 --> 00:38:58.520
+going to take a query if there is a parameter, it is going
+
+00:38:58.520 --> 00:39:02.300
+to create a parameter and then simply database dot execute
+
+00:39:02.300 --> 00:39:05.860
+query it is going to call. And what is my execute query? The
+
+00:39:05.860 --> 00:39:08.980
+function which I have written in my other files. This
+
+00:39:08.980 --> 00:39:12.320
+function takes two arguments, right? So like a DBUR by
+
+00:39:12.320 --> 00:39:15.160
+default, I'm going to give query and parameter, right? Query
+
+00:39:15.160 --> 00:39:17.840
+and parameter it takes. So once I'm going to provide that,
+
+00:39:17.980 --> 00:39:22.660
+it is going to call this one. I'm not calling it. My LLM
+
+00:39:22.660 --> 00:39:25.820
+will call automatically. But even when LLM is going to call,
+
+00:39:25.920 --> 00:39:29.000
+it needs some support. This that support I'm trying to give
+
+00:39:29.000 --> 00:39:33.420
+as simple as that. Yeah. So database dot execute query,
+
+00:39:33.540 --> 00:39:36.300
+database dot execute, right? Database dot execute. So here
+
+00:39:36.300 --> 00:39:40.220
+technically it is going to do a tool calling in the previous
+
+00:39:40.220 --> 00:39:43.120
+one listing of the tool. So I'm just trying to say that,
+
+00:39:43.160 --> 00:39:47.160
+okay, fine. So you have these tool access simple and then in
+
+00:39:47.160 --> 00:39:49.420
+a description. So I'm going to define it with the help of
+
+00:39:49.420 --> 00:39:52.780
+natural language. I can try to give more intense
+
+00:39:52.780 --> 00:39:55.100
+description. To it. That's completely fine. That will help
+
+00:39:55.100 --> 00:39:59.580
+LLM more and more to understand. But here I'm going to do a
+
+00:39:59.580 --> 00:40:03.420
+tool calling. So LLM is going to, you know, uh, create the
+
+00:40:03.420 --> 00:40:06.020
+parameter. It is going to create the argument. It is going
+
+00:40:06.020 --> 00:40:09.100
+to create the sequel query as per the, like a question that
+
+00:40:09.100 --> 00:40:11.760
+we are going to ask. And then it is going to do a tool
+
+00:40:11.760 --> 00:40:15.880
+calling. Now once tool calling will be done, so obviously it
+
+00:40:15.880 --> 00:40:18.400
+is going to execute a function. Technically it is going to
+
+00:40:18.400 --> 00:40:20.840
+execute a function. So if it is going to call get table
+
+00:40:20.840 --> 00:40:23.100
+count, it will go, it will count the number of tables.
+
+00:40:23.100 --> 00:40:27.560
+Right? Return something. Yup. Return something as a result.
+
+00:40:27.740 --> 00:40:31.440
+And then once it is going to return something as a result
+
+00:40:31.440 --> 00:40:36.580
+into a JSON format, my LLMs is going to do a formatting
+
+00:40:36.580 --> 00:40:40.320
+because this is what LLMs are again good with, right? They
+
+00:40:40.320 --> 00:40:42.720
+are very good with, uh, in terms of summarizing things in
+
+00:40:42.720 --> 00:40:45.560
+terms of formatting things and in terms of showcasing you
+
+00:40:45.560 --> 00:40:49.320
+the final result. So my LLMs will be able to understand the
+
+00:40:49.320 --> 00:40:52.360
+output and then it is going to show me the output in the
+
+00:40:52.360 --> 00:40:56.880
+way. User will be expecting, yeah, user will be expecting.
+
+00:40:57.420 --> 00:41:02.640
+That's it. That's it. Nothing else we are doing over here.
+
+00:41:03.100 --> 00:41:06.900
+Nothing else means literally nothing else we are trying to
+
+00:41:06.900 --> 00:41:10.920
+do. So is it tough guys? What do you think? How does it look
+
+00:41:10.920 --> 00:41:13.860
+like? Is it like a tough to understand or is it like easy to
+
+00:41:13.860 --> 00:41:20.220
+understand even conceptually and practically? In short MCPs
+
+00:41:20.220 --> 00:41:23.360
+are similar to HTTP, FTP. Technically this is what I'm
+
+00:41:23.360 --> 00:41:25.720
+trying to say since the beginning, right? MCPs are nothing
+
+00:41:25.720 --> 00:41:27.960
+but it's again, that's the reason it's called as protocol,
+
+00:41:28.320 --> 00:41:32.460
+HTTP is also protocol, right? APIs are also protocols. So
+
+00:41:32.460 --> 00:41:36.940
+technically it's a protocol which people have defined for
+
+00:41:36.940 --> 00:41:40.700
+basically an LLMs that if you would like to give a access of
+
+00:41:40.700 --> 00:41:45.400
+your world, your world means whatever you are using, maybe a
+
+00:41:45.400 --> 00:41:48.380
+databases, maybe a slack, maybe out to maybe a Gmail, maybe
+
+00:41:48.380 --> 00:41:50.960
+a calendar, right? So if you would like to give an access
+
+00:41:50.960 --> 00:41:54.680
+to, to your world, to the LLMs where you can just go and
+
+00:41:54.680 --> 00:41:57.700
+chat and then you will be able to do a task, you can use
+
+00:41:57.700 --> 00:42:01.260
+MCPs and this is what everyone is doing now. So every other
+
+00:42:01.260 --> 00:42:03.720
+companies, they have so many tools, right? And technically
+
+00:42:03.720 --> 00:42:06.640
+tools means every time you click, it is going to call some
+
+00:42:06.640 --> 00:42:09.140
+functions, right? They're exposing their functions to the
+
+00:42:09.140 --> 00:42:12.600
+outer world that, okay, fine. So let's like, you know, uh,
+
+00:42:12.780 --> 00:42:15.880
+like, uh, use this feature, use that particular feature.
+
+00:42:19.340 --> 00:42:23.440
+It appears to be similar to what you taught us earlier. It's
+
+00:42:23.440 --> 00:42:26.780
+not very different by the way. Yeah. I don't think that you
+
+00:42:26.780 --> 00:42:29.620
+will find like a, that's the reason I'm telling you that you
+
+00:42:29.620 --> 00:42:31.940
+will not find difficulties at all in terms of understanding
+
+00:42:31.940 --> 00:42:34.820
+things and it's very, very easy to understand and very easy
+
+00:42:34.820 --> 00:42:37.880
+to create, easy to understand and even easier to, you know,
+
+00:42:37.880 --> 00:42:40.880
+uh, create it. That's the reason I have started my class,
+
+00:42:40.940 --> 00:42:44.120
+your entire batch with the API because that was important.
+
+00:42:44.300 --> 00:42:46.820
+So those who understands APIs in a best possible manner,
+
+00:42:46.900 --> 00:42:49.460
+they will be able to understand many things. And this is
+
+00:42:49.460 --> 00:42:51.080
+what has happened throughout the class.
+
+00:42:57.700 --> 00:43:00.680
+If you want a result from multiple tables, then how we can
+
+00:43:00.680 --> 00:43:03.100
+define. So obviously we are going to define joins rules and
+
+00:43:03.100 --> 00:43:06.360
+it is going to build a join query. It is going to build all
+
+00:43:06.360 --> 00:43:08.820
+of those queries based on the schema based on the
+
+00:43:08.820 --> 00:43:11.000
+relationship between the schema. This is what we query,
+
+00:43:11.060 --> 00:43:18.280
+right? Even in a real time. Yeah. Okay. Just a
+
+00:43:18.280 --> 00:43:21.060
+clarification, but data will be exposed right to the LLMs.
+
+00:43:21.340 --> 00:43:24.040
+Obviously it will be exposed, right? Obviously it will be
+
+00:43:24.040 --> 00:43:26.440
+exposed. You are giving an access. So you have all the
+
+00:43:26.440 --> 00:43:28.200
+controls. If you don't want to give an access to some
+
+00:43:28.200 --> 00:43:31.440
+tables, if you don't want to give an access to a, uh, uh,
+
+00:43:31.440 --> 00:43:34.980
+like, uh, some record. So because the database provides you
+
+00:43:34.980 --> 00:43:37.660
+even a rollable security, you have a function control,
+
+00:43:37.920 --> 00:43:41.920
+right? So basically you are the driver. You will be able to
+
+00:43:41.920 --> 00:43:44.300
+drive the entire system the way you want. You have all the
+
+00:43:44.300 --> 00:43:47.520
+controls and this is what we do even in real life, right? So
+
+00:43:47.520 --> 00:43:49.280
+whenever you are going to create a function, forget about
+
+00:43:49.280 --> 00:43:52.520
+LLMs, even in real life. So basically you create all the
+
+00:43:52.520 --> 00:43:55.100
+securities, you create all the authorizations, you create
+
+00:43:55.100 --> 00:43:59.140
+all the user label accesses and system performs and system
+
+00:43:59.140 --> 00:44:02.280
+behaves as per you. Same thing is happening over here.
+
+00:44:02.660 --> 00:44:08.210
+Nothing different. Yeah. So even in real time, this is what
+
+00:44:08.210 --> 00:44:09.710
+we do fundamentally
+
+00:44:13.740 --> 00:44:16.760
+how the MCP is different from other approach. So the other
+
+00:44:16.760 --> 00:44:20.180
+approach was basically a agent approach. So where to an
+
+00:44:20.180 --> 00:44:23.240
+agent means to our brain, you were giving a different,
+
+00:44:23.320 --> 00:44:25.180
+different, different, different kind of a tool accesses and
+
+00:44:25.180 --> 00:44:28.180
+then agents will go and then it will try to define or it
+
+00:44:28.180 --> 00:44:31.040
+will try to decide automatically, right? And obviously you
+
+00:44:31.040 --> 00:44:34.620
+can try to invoke an agent with a chat. You will be able to
+
+00:44:34.620 --> 00:44:39.320
+invoke an agent with any other kind of a triggers. Here,
+
+00:44:39.320 --> 00:44:43.240
+this is been defined this protocol basically over there. So
+
+00:44:43.240 --> 00:44:45.520
+we were creating our tools and then we were trying to give
+
+00:44:45.520 --> 00:44:48.640
+an access to an agent. So which was able to take a decision
+
+00:44:48.640 --> 00:44:52.180
+automatically. You will get confused and you will say that
+
+00:44:52.180 --> 00:44:54.940
+even this system is trying to make a decision automatically
+
+00:44:54.940 --> 00:44:57.780
+just with a chat. But here the purpose is different. The
+
+00:44:57.780 --> 00:45:00.800
+purpose and the entire tech is different. The purpose is
+
+00:45:00.800 --> 00:45:04.020
+that, that you have a LLMs and then you are giving an access
+
+00:45:04.020 --> 00:45:07.520
+of your world to a LLMs. Because LLMs are very good with the
+
+00:45:07.520 --> 00:45:10.940
+generic data, a generic conversation, but they are not at
+
+00:45:10.940 --> 00:45:13.420
+all good with respect to your proprietary system. So you are
+
+00:45:13.420 --> 00:45:17.680
+giving an access to a system and to do that, right? To do
+
+00:45:17.680 --> 00:45:21.540
+that, you have defined a protocol. Now that protocol is
+
+00:45:21.540 --> 00:45:26.640
+called as MCP, just like an API, right? You had a function,
+
+00:45:26.920 --> 00:45:30.920
+but what you do with the help of APIs. So API is a protocol.
+
+00:45:31.120 --> 00:45:33.640
+It provides you protocol, set up the rules, right? You try
+
+00:45:33.640 --> 00:45:36.700
+to just expose it. So just like a protocol. API, you can say
+
+00:45:36.700 --> 00:45:43.700
+API for LLMs, especially for LLMs now. So these are the
+
+00:45:43.700 --> 00:45:48.700
+things that we have over here now, uh, basically how it will
+
+00:45:48.700 --> 00:45:52.360
+be able to run or how it will, you will be able to basically
+
+00:45:52.360 --> 00:45:56.020
+test this one. That's a next question that we all have in
+
+00:45:56.020 --> 00:46:01.460
+front of us. Yeah. So basically, so whenever anyone tried to
+
+00:46:01.460 --> 00:46:05.880
+define like a rule, right, uh, what they do. So they tried
+
+00:46:05.880 --> 00:46:08.060
+to even define that. Okay, fine. So how it will be called,
+
+00:46:08.180 --> 00:46:11.360
+for example, like a post get put or something like that,
+
+00:46:11.440 --> 00:46:16.200
+right? So here they have defined that, that you can try to
+
+00:46:16.200 --> 00:46:19.580
+create a standard input output, right? And with the help of
+
+00:46:19.580 --> 00:46:22.820
+standard input output, you will be able to, uh, like, uh,
+
+00:46:22.840 --> 00:46:26.440
+you know, attach it simple or else there is something called
+
+00:46:26.440 --> 00:46:30.960
+SSC, a server sent event SSC. So with the help of SSC, you
+
+00:46:30.960 --> 00:46:36.900
+will be able to attach it. So here to attach this MCP. This
+
+00:46:36.900 --> 00:46:42.500
+particular MCP with respect to a cloud day, what you will
+
+00:46:42.500 --> 00:46:45.380
+have to do. So you have to, you can try to attach it as a
+
+00:46:45.380 --> 00:46:48.840
+SSC or you can try to attach it as a standard input and
+
+00:46:48.840 --> 00:46:52.860
+output. So here I'm trying to show you that how I will be
+
+00:46:52.860 --> 00:46:57.140
+able to attach it as a standard input and output and many
+
+00:46:57.140 --> 00:46:59.700
+tool you will be able to find out out there. So they are
+
+00:46:59.700 --> 00:47:03.440
+providing you MCP integration, but they're not that mature.
+
+00:47:03.720 --> 00:47:06.240
+So I have, I've experimented with almost all the tools,
+
+00:47:06.280 --> 00:47:07.640
+which is, uh, you know, you know, available out there, but
+
+00:47:07.640 --> 00:47:09.580
+yeah, eventually you will find out that in a couple of
+
+00:47:09.580 --> 00:47:13.700
+months they will be able to get the maturity cloud is one of
+
+00:47:13.700 --> 00:47:17.340
+the mature system you will be able to see. So where
+
+00:47:17.340 --> 00:47:21.780
+integration is pretty much straightforward and easy, other
+
+00:47:21.780 --> 00:47:25.400
+system will do the same thing. So they are, they're working
+
+00:47:25.400 --> 00:47:28.400
+on it and they will eventually do the exactly same thing. So
+
+00:47:28.400 --> 00:47:31.480
+here, what we are trying to do, so we are trying to call
+
+00:47:31.480 --> 00:47:35.400
+basically, uh, studios, a standard input output server again
+
+00:47:35.400 --> 00:47:38.340
+from a MCP itself. As a part of protocol, which has been
+
+00:47:38.340 --> 00:47:42.620
+defined. And then we are trying to run the server. Yeah, we
+
+00:47:42.620 --> 00:47:46.060
+are going to run the server. So technically we are trying to
+
+00:47:46.060 --> 00:47:49.420
+expose our entire tool. Our server will be up and running.
+
+00:47:49.660 --> 00:47:52.460
+Now once your server will be up and running, which is
+
+00:47:52.460 --> 00:47:55.860
+technically a backend, you have to attach, you have to
+
+00:47:55.860 --> 00:47:59.700
+attach this server to a client because cloud is what, or
+
+00:47:59.700 --> 00:48:03.120
+maybe a chat GPT I'm trying to use. So cloud or chat GPT is
+
+00:48:03.120 --> 00:48:05.220
+nothing but it's a client right from where we are going to
+
+00:48:05.220 --> 00:48:09.100
+chat. And obviously. It should come to the server. So my
+
+00:48:09.100 --> 00:48:12.200
+backend is ready. This is technically my backend. Now I have
+
+00:48:12.200 --> 00:48:16.600
+to give an access basically to my cloud. To do that again,
+
+00:48:16.780 --> 00:48:20.740
+cloud has defined their own procedure. Similarly, anyone and
+
+00:48:20.740 --> 00:48:23.760
+everyone is going to define their own procedure. So let's
+
+00:48:23.760 --> 00:48:27.280
+suppose my MCP server is up and running. So I'm going to
+
+00:48:27.280 --> 00:48:31.140
+like a run this postgres MCP dot PI file. If this will be up
+
+00:48:31.140 --> 00:48:34.900
+and running now, what will happen? So I have to attach this
+
+00:48:34.900 --> 00:48:37.800
+to my cloud. Yeah. This is the cloud. Only to the cloud.
+
+00:48:37.860 --> 00:48:43.140
+Right? So here you can come inside a setting and then inside
+
+00:48:43.140 --> 00:48:47.400
+a setting inside a developer. So you will be able to see a
+
+00:48:47.400 --> 00:48:50.880
+edit configuration option in my system. You are able to see
+
+00:48:50.880 --> 00:48:53.280
+these three option in your system. It will not show you
+
+00:48:53.280 --> 00:48:56.620
+these three option by the way. Yeah. So you will be able to
+
+00:48:56.620 --> 00:49:00.120
+find out a edit configuration option and it will throw you
+
+00:49:00.120 --> 00:49:04.420
+inside a cloud installable file and you have to use a
+
+00:49:04.420 --> 00:49:07.260
+clouded desktop for now. Clouded desktop for this particular
+
+00:49:07.260 --> 00:49:10.060
+like experimentation purposes or even for like, you know,
+
+00:49:10.100 --> 00:49:14.900
+using it. So it will throw you inside the cloud. So inside a
+
+00:49:14.900 --> 00:49:17.500
+clouded there is something, there is a configuration file.
+
+00:49:17.720 --> 00:49:21.260
+Yeah. What is there inside this configuration file? So these
+
+00:49:21.260 --> 00:49:26.460
+details are there inside the configuration file. So I have
+
+00:49:26.460 --> 00:49:30.900
+created three servers. So let's try to focus on the SQL
+
+00:49:30.900 --> 00:49:33.700
+server, postgres DB server. So I have given a name to it.
+
+00:49:33.780 --> 00:49:36.720
+Command is Python. Everything I have written into Python and
+
+00:49:36.720 --> 00:49:41.100
+then where this server is. So so wherever this particular
+
+00:49:41.100 --> 00:49:44.780
+file is, so I'm just giving a location of that particular
+
+00:49:44.780 --> 00:49:48.380
+file. So wherever this file is in my system, in your system,
+
+00:49:48.440 --> 00:49:51.320
+you can keep this file somewhere else and you have to give
+
+00:49:51.320 --> 00:49:54.960
+that particular path. So again, this is a standard which has
+
+00:49:54.960 --> 00:49:58.300
+been defined that okay. So whenever your server will be up
+
+00:49:58.300 --> 00:50:02.940
+and running, if a cursor is supposed to find out all of
+
+00:50:02.940 --> 00:50:06.640
+those tools. Which you are trying to expose, it is supposed
+
+00:50:06.640 --> 00:50:10.180
+to look into this particular file. Then only it will be able
+
+00:50:10.180 --> 00:50:13.700
+to capture it. Then only it will be able to call this
+
+00:50:13.700 --> 00:50:17.700
+particular path. Yeah. This particular path. So this is how
+
+00:50:17.700 --> 00:50:22.800
+I'm exposing, I'm exposing my server to my clouded to my
+
+00:50:22.800 --> 00:50:27.440
+client. So cloud is my client and then my tools are my
+
+00:50:27.440 --> 00:50:30.120
+servers, which I have written in a Python code. I could have
+
+00:50:30.120 --> 00:50:33.640
+written that in a different language as well. So now it will
+
+00:50:33.640 --> 00:50:36.880
+be able to understand and now this binding is going to
+
+00:50:36.880 --> 00:50:40.760
+happen in a standard studio way, standard input output way.
+
+00:50:41.280 --> 00:50:46.260
+Let's suppose if I'm going to deploy it on some cloud
+
+00:50:46.260 --> 00:50:50.320
+location, then if I have to establish a communication, so
+
+00:50:50.320 --> 00:50:56.880
+that thing is called as SSE, a server sent event. So where
+
+00:50:56.880 --> 00:50:59.860
+with the help of some proxies, so I'm going to bind it and
+
+00:50:59.860 --> 00:51:02.660
+then with the help of that. I'm going to call it. If I'm
+
+00:51:02.660 --> 00:51:05.620
+going to deploy it as of now, cloud is in my local and then
+
+00:51:05.620 --> 00:51:08.900
+this server is also in my local. So with the help of
+
+00:51:08.900 --> 00:51:12.420
+standard input output, I'm able to, I will be able to test
+
+00:51:12.420 --> 00:51:16.720
+it. So cloud is one of the tool. There is another tool,
+
+00:51:16.840 --> 00:51:19.440
+cloud is one of the best, I would say, right. There is
+
+00:51:19.440 --> 00:51:22.060
+another tool which has been designed just for the testing
+
+00:51:22.060 --> 00:51:25.760
+purpose, which is called as MCP inspector, right? It's just
+
+00:51:25.760 --> 00:51:28.100
+a UI interface people have created. So where you can go, you
+
+00:51:28.100 --> 00:51:31.900
+can try to attach your, like this kind of MCP. And then you
+
+00:51:31.900 --> 00:51:34.780
+can try to attach your LLMs and it will be able to, you
+
+00:51:34.780 --> 00:51:37.660
+know, uh, call. So basically it has been designed for
+
+00:51:37.660 --> 00:51:39.960
+testing purpose, just for the testing purposes, MCP
+
+00:51:39.960 --> 00:51:43.500
+inspector. So if you'll go and check my MCP class, MCP
+
+00:51:43.500 --> 00:51:46.480
+lectures, which I have given, uh, which was a recorded one,
+
+00:51:46.540 --> 00:51:49.600
+which was a recorded lecture, self-paced class, right? So I
+
+00:51:49.600 --> 00:51:51.880
+have shown both the approach I have shown cloud as well as I
+
+00:51:51.880 --> 00:51:54.800
+have shown the MCP inspector. It's very easy, right? It's
+
+00:51:54.800 --> 00:51:57.880
+very easy. Like one single command and one NPX command, and
+
+00:51:57.880 --> 00:52:00.980
+it will be able to launch the MCP inspector. And then I will
+
+00:52:00.980 --> 00:52:03.680
+be able to call same server even inside the MCP inspector
+
+00:52:03.680 --> 00:52:08.300
+for the testing purpose. But for a real time use cases, this
+
+00:52:08.300 --> 00:52:11.340
+is the way, this is the approach by which you will be able
+
+00:52:11.340 --> 00:52:18.180
+to call it as simple as that. So this is going to close the
+
+00:52:18.180 --> 00:52:22.260
+entire flow. Now what I will do, I'll try to share this file
+
+00:52:22.260 --> 00:52:25.300
+with all of you and I want you to do the same thing, same
+
+00:52:25.300 --> 00:52:32.080
+execution with me. Uh, so here. Okay. So let me share this
+
+00:52:32.080 --> 00:52:33.520
+file. Copy path.
+
+00:52:57.140 --> 00:53:00.540
+Okay. So I'm going to upload this entire file in your like a
+
+00:53:00.540 --> 00:53:03.020
+previous lecture last Sunday's lecture.
+
+00:53:08.650 --> 00:53:11.930
+So download it and do it with me and in a couple of places.
+
+00:53:12.010 --> 00:53:14.770
+So you have to change your credentials because I have used
+
+00:53:14.770 --> 00:53:17.630
+my credentials. You will not be able to use the same.
+
+00:53:23.140 --> 00:53:29.820
+So let me share, I mean like you can use my credential, I'm
+
+00:53:29.820 --> 00:53:33.680
+leaving that as it is after class. I will disable it. That's
+
+00:53:33.680 --> 00:53:40.940
+my test email anyhow, not that one, which I use a daily, uh,
+
+00:53:41.160 --> 00:53:46.780
+so courses wise, your generative AI. So chain. Yeah.
+
+00:54:04.300 --> 00:54:08.180
+Okay. So in your 26th October lecture, as a resource, I'm
+
+00:54:08.180 --> 00:54:14.400
+adding this code file, download it immediately. Do a setup.
+
+00:54:21.630 --> 00:54:25.710
+Okay. It's done. Everyone. So if you can. I will go to your
+
+00:54:25.710 --> 00:54:29.690
+like, uh, previous lecture, which I have taken on 26th of
+
+00:54:29.690 --> 00:54:32.990
+October, you will be able to find out a file inside a
+
+00:54:32.990 --> 00:54:37.430
+resource section, just download it, right? Download it. And
+
+00:54:37.430 --> 00:54:41.770
+then you will be able to perform this operation. You will be
+
+00:54:41.770 --> 00:54:44.430
+able to call technically my database and you will be able to
+
+00:54:44.430 --> 00:54:48.030
+chat. So first of all, what you have to do, so just execute
+
+00:54:48.030 --> 00:54:51.050
+a requirement or TXT inside requirement or TXT. There is
+
+00:54:51.050 --> 00:54:54.370
+nothing much. Just a MCP installation. I'm trying to use
+
+00:54:54.370 --> 00:54:58.190
+these are basically a Google auth. I'll talk about that. So
+
+00:54:58.190 --> 00:55:01.670
+Google auth is nothing but I'm authorizing my Gmail calendar
+
+00:55:01.670 --> 00:55:05.590
+and Google seat. So to do that, so this installation is
+
+00:55:05.590 --> 00:55:09.290
+required not to create MCP, but to create my tools, this is
+
+00:55:09.290 --> 00:55:12.330
+required, uh, python.dev. So basically it's been required
+
+00:55:12.330 --> 00:55:15.210
+for, you know, uh, giving any kind of a environment variable
+
+00:55:15.210 --> 00:55:18.890
+to this one, uh, Pico binary and then PI Mongo. So this is
+
+00:55:18.890 --> 00:55:22.230
+basically like, uh, I'm trying to use as a. Uh, like a
+
+00:55:22.230 --> 00:55:24.530
+library over here. That's it. Nothing much. I'm trying to,
+
+00:55:24.570 --> 00:55:29.070
+uh, use as of now, credentials are mine. DB is mine. So you
+
+00:55:29.070 --> 00:55:31.170
+will be able to access each and everything. So I have not
+
+00:55:31.170 --> 00:55:34.110
+changed. Even you will be able to access my email if you're
+
+00:55:34.110 --> 00:55:38.350
+going to attach it. But uh, what you have to do. So first of
+
+00:55:38.350 --> 00:55:42.010
+all, execute a requirement or TXT. Now after executing a
+
+00:55:42.010 --> 00:55:47.050
+requirement or TXT, you have to execute basically a python
+
+00:55:47.050 --> 00:55:52.090
+inside this SRC folder inside this SRC folder. So I have a
+
+00:55:52.090 --> 00:55:55.370
+file called as MCP server dot PI file. So you have to
+
+00:55:55.370 --> 00:55:59.390
+execute this command inside my source folder. So I have a
+
+00:55:59.390 --> 00:56:02.690
+file called as MCP server. So I have multiple servers. So
+
+00:56:02.690 --> 00:56:05.770
+I'm trying to call all of these servers all together. And
+
+00:56:05.770 --> 00:56:07.770
+that is the reason. So there is one single file I have
+
+00:56:07.770 --> 00:56:10.570
+created because I have created basically server for a Mongo
+
+00:56:10.570 --> 00:56:14.410
+DB server for a post clear server for my Google services. So
+
+00:56:14.410 --> 00:56:16.470
+I've created multiple servers. That's the reason. So this
+
+00:56:16.470 --> 00:56:19.090
+files like, uh, you know, exist, which is going to help you
+
+00:56:19.090 --> 00:56:21.730
+out in terms of executing. Okay. Uh, executing this, uh,
+
+00:56:21.850 --> 00:56:25.790
+entire server, like, uh, all together. So every server you
+
+00:56:25.790 --> 00:56:29.350
+will be able to, uh, call it in a single go itself.
+
+00:56:35.510 --> 00:56:38.590
+Yeah. So you have to execute this one. So once you will be
+
+00:56:38.590 --> 00:56:43.250
+able to execute this one, then you have to go to Google and
+
+00:56:43.250 --> 00:56:46.950
+you have to install a cloud. I believe most of you must be
+
+00:56:46.950 --> 00:56:50.830
+having clouded desktop cloud is popular tool. So if you
+
+00:56:50.830 --> 00:56:54.650
+don't have a clouding, so just go to a Google and then cloud
+
+00:56:54.650 --> 00:57:00.170
+a desktop download. Not a Bev model clouded desktop. So you
+
+00:57:00.170 --> 00:57:03.230
+have a clouded desktop for all these machines, windows or
+
+00:57:03.230 --> 00:57:06.830
+maybe a Mac or maybe a Linux. I believe they're providing
+
+00:57:06.830 --> 00:57:09.530
+you. If not, maybe you can try this with Mac. I'm not sure
+
+00:57:09.530 --> 00:57:12.690
+about it, but yeah, for Mac and windows I can see over here.
+
+00:57:12.910 --> 00:57:16.650
+So just download it and then install it inside your system,
+
+00:57:16.930 --> 00:57:20.570
+this desktop clouded desktop so that it will behave as a
+
+00:57:20.570 --> 00:57:23.490
+client for me. Yeah. And you don't have to go out with a
+
+00:57:23.490 --> 00:57:25.930
+paid version. It's completely fine. You don't have to know.
+
+00:57:26.470 --> 00:57:29.110
+You don't have to pay for this one. So just go do a sign in
+
+00:57:29.110 --> 00:57:32.930
+and that's it completely done. Now once you will be able to
+
+00:57:32.930 --> 00:57:36.750
+do it, then you have to go to your own profile icon. As you
+
+00:57:36.750 --> 00:57:40.470
+can see in my system, click on the setting. After clicking
+
+00:57:40.470 --> 00:57:43.830
+on setting, go to a last option called as developer, right?
+
+00:57:43.930 --> 00:57:47.110
+And then here you will be able to see edit configuration. In
+
+00:57:47.110 --> 00:57:50.010
+my system you are able to see these three server which you
+
+00:57:50.010 --> 00:57:53.130
+won't be able to see it in your system. Yeah. You won't be
+
+00:57:53.130 --> 00:57:55.690
+able to see and it's, you can see that the server is
+
+00:57:55.690 --> 00:57:58.110
+running. This server is running and this server is running.
+
+00:57:58.330 --> 00:58:01.810
+So this status is running and here you must be able to see
+
+00:58:01.810 --> 00:58:05.890
+my location, but in your system you won't. So just click on
+
+00:58:05.890 --> 00:58:08.150
+edit configuration and when you are going to open up this
+
+00:58:08.150 --> 00:58:11.750
+file, so this file might be a blank file for you. Yeah.
+
+00:58:11.830 --> 00:58:13.710
+There is a very high chance. There is a very high
+
+00:58:13.710 --> 00:58:18.930
+possibility that this file will be blank basically for you.
+
+00:58:20.930 --> 00:58:25.870
+So wherever your, this MongoDB MCP file is. So just open it.
+
+00:58:25.890 --> 00:58:28.850
+Just replace with that path. If this path is incorrect, it
+
+00:58:28.850 --> 00:58:31.310
+will not be able to understand your server. Very simple,
+
+00:58:31.430 --> 00:58:35.270
+right? So you have to like just update these parts. That's
+
+00:58:35.270 --> 00:58:38.470
+it. And run your MCP server.py file and you can start
+
+00:58:38.470 --> 00:58:41.770
+testing it today. Just try to test it today. Just try to
+
+00:58:41.770 --> 00:58:44.770
+like understand that how things is going to work. Just try
+
+00:58:44.770 --> 00:58:47.670
+to digest this thing. This is what I want. That's it. Yeah.
+
+00:58:47.810 --> 00:58:50.690
+So that when we are going to discuss it tomorrow, you will
+
+00:58:50.690 --> 00:58:53.810
+be able to understand it in a detailed manner. Although
+
+00:58:53.810 --> 00:58:56.010
+there is nothing much to understand. In a detailed manner.
+
+00:58:56.130 --> 00:58:58.390
+But yeah, you will be able to like, you will be having a
+
+00:58:58.390 --> 00:59:01.330
+better understanding by tomorrow. But today I just want you
+
+00:59:01.330 --> 00:59:05.090
+to execute it and test it. That whether you are able to call
+
+00:59:05.090 --> 00:59:10.110
+your own MCPs or not. Making sense guys? Are you able to
+
+00:59:10.110 --> 00:59:14.890
+like, you know, download the file? Yeah. And just let me
+
+00:59:14.890 --> 00:59:17.770
+know if any one of you are able to execute it. Any of any
+
+00:59:17.770 --> 00:59:21.950
+one of you are able to list our databases, our tables, my
+
+00:59:21.950 --> 00:59:25.090
+collections or any one of you are able to access my email.
+
+00:59:26.110 --> 00:59:28.790
+Yeah. Any one of you installing
+
+00:59:43.030 --> 00:59:45.890
+clouded desktop. Okay. So once you are able to access my
+
+00:59:45.890 --> 00:59:49.390
+email or maybe my calendar or maybe my Google seat or maybe
+
+00:59:49.390 --> 00:59:54.930
+like my collections or my like SQL databases, just let me
+
+00:59:54.930 --> 00:59:59.410
+know. Not yet doing a set of the location one, please
+
+00:59:59.410 --> 01:00:02.590
+explain again sir, maybe on more intuition difference
+
+01:00:02.590 --> 01:00:05.110
+between MCP and agent. I mean like I have already explained
+
+01:00:05.110 --> 01:00:07.890
+MCP is nothing but it's a protocol basically just like APIs.
+
+01:00:07.890 --> 01:00:12.390
+So MCP is nothing to do with the brain agents are brain in
+
+01:00:12.390 --> 01:00:16.730
+itself, right? So MCPs is basically been called by any
+
+01:00:16.730 --> 01:00:21.070
+brains. This is how you can understand means any LLMs.
+
+01:00:27.030 --> 01:00:31.590
+So don't get confused between MCP and you know, like agents,
+
+01:00:31.890 --> 01:00:36.010
+MCPs, you can like, you know, compare it with the APIs that
+
+01:00:36.010 --> 01:00:38.510
+that will be the correct comparison.
+
+01:00:43.370 --> 01:00:46.570
+Generally. I have seen that people start comparing MCP with
+
+01:00:46.570 --> 01:00:50.590
+the, you know. LLMs. Right guys. Right. Everyone. I believe
+
+01:00:50.590 --> 01:00:53.090
+this is something which comes in my, in our minds. So
+
+01:00:53.090 --> 01:00:56.170
+whenever we talk about MCP, so we start thinking about that.
+
+01:00:56.230 --> 01:00:59.930
+Okay. What is the difference between MCPs and agents? I'm
+
+01:00:59.930 --> 01:01:04.870
+like, that's the wrong difference in itself. Yeah. Maybe
+
+01:01:04.870 --> 01:01:08.410
+social media effect, maybe a YouTube or LinkedIn effect I
+
+01:01:08.410 --> 01:01:12.250
+can say, but whenever we talk about MCPs, the very first
+
+01:01:12.250 --> 01:01:15.390
+comparison which comes in our mind that, okay, MCP versus
+
+01:01:15.390 --> 01:01:17.870
+agent. I'm like, that's the wrong comparison. You are doing,
+
+01:01:17.950 --> 01:01:18.830
+we
+
+01:01:24.210 --> 01:01:26.850
+are accessing this locally using clouded extra, how our
+
+01:01:26.850 --> 01:01:30.350
+agent access, how can our agents access when we are using a
+
+01:01:30.350 --> 01:01:35.350
+Langtion or any other framework, same manner you are running
+
+01:01:35.350 --> 01:01:38.450
+a server in a local system. So expose that server to any
+
+01:01:38.450 --> 01:01:42.190
+other platform, cloud platform, and then call it calling in
+
+01:01:42.190 --> 01:01:45.850
+Langtion provides you by the way, direct like a API to call
+
+01:01:45.850 --> 01:01:46.550
+MCPs.
+
+01:01:49.880 --> 01:01:54.760
+Okay. Fine. So first of all, guys, just do our requirement
+
+01:01:54.760 --> 01:01:57.860
+.org. Txt installation. So once you are going to do a
+
+01:01:57.860 --> 01:02:01.700
+requirement.txt installation, then run the server. So to run
+
+01:02:01.700 --> 01:02:04.680
+the server, where is your server file inside the source
+
+01:02:04.680 --> 01:02:07.240
+directory. So there is something called as MCP server.py
+
+01:02:07.240 --> 01:02:10.240
+file. So just run the command. It's a Python file, right? So
+
+01:02:10.240 --> 01:02:13.560
+Python, then this source folder inside source folder, I have
+
+01:02:13.560 --> 01:02:17.500
+a MCP server.py file. So run this one. Now, if you are not
+
+01:02:17.500 --> 01:02:19.700
+able to see anything in my screen, because I'm not printing
+
+01:02:19.700 --> 01:02:23.060
+the log by the way, because it will be too much. So it
+
+01:02:23.060 --> 01:02:26.040
+simply means that server is up and running. If server is up
+
+01:02:26.040 --> 01:02:28.460
+and running, it means your backend is up and running. Now
+
+01:02:28.460 --> 01:02:32.880
+client means how CloudA will be able to interact basically.
+
+01:02:33.360 --> 01:02:36.160
+Now to interact with the CloudA, what you have to do. So
+
+01:02:36.160 --> 01:02:39.500
+basically you can try to, you know, open up a CloudA, go to
+
+01:02:39.500 --> 01:02:43.000
+developer mode, click on edit configuration, and now you
+
+01:02:43.000 --> 01:02:45.720
+will be able to see CloudA desktop configuration file. So
+
+01:02:45.720 --> 01:02:48.780
+open up this file in any of the editor, maybe in a notebook
+
+01:02:48.780 --> 01:02:54.760
+or any other editor. And here is my configuration file.
+
+01:02:54.860 --> 01:02:57.920
+Okay. By default in your MCP, if you're doing a setup for
+
+01:02:57.920 --> 01:03:01.020
+the very first time, you will be able to see only one word
+
+01:03:01.020 --> 01:03:04.400
+called as MCP server. There will be nothing. This file will
+
+01:03:04.400 --> 01:03:07.740
+be blank. Maybe you can try to use my configuration. This is
+
+01:03:07.740 --> 01:03:11.700
+my configuration. I have given you in a chat and you have to
+
+01:03:11.700 --> 01:03:14.640
+change the location. Your location of this file will be
+
+01:03:14.640 --> 01:03:17.240
+different. So how you can change the location, nothing,
+
+01:03:17.440 --> 01:03:23.200
+right click, copy path, right? Our copy related path, paste.
+
+01:03:23.200 --> 01:03:26.000
+So just change the path.
+
+01:03:32.360 --> 01:03:35.560
+So this is how you're like, you know, client will be able to
+
+01:03:35.560 --> 01:03:40.960
+attach to a server. Means this is how your client will be
+
+01:03:40.960 --> 01:03:44.280
+able to understand that, okay, I have like access of these
+
+01:03:44.280 --> 01:03:44.840
+MCPs.
+
+01:03:55.680 --> 01:03:59.580
+So I'm waiting guys, I'm just waiting for all of you, which
+
+01:04:38.550 --> 01:04:40.850
+file we have to execute. So you have to execute basically
+
+01:04:40.850 --> 01:04:44.050
+MCP server.py file. This is the command, how
+
+01:04:50.710 --> 01:04:53.210
+we will deploy this to the cloud, the way you deploy any
+
+01:04:53.210 --> 01:04:57.570
+other application. In the similar manner. Just a backend,
+
+01:04:57.670 --> 01:04:59.990
+right? So just a server, please
+
+01:05:26.740 --> 01:05:30.700
+share desktop configuration. Okay. Let me share this once
+
+01:05:30.700 --> 01:05:31.500
+again.
+
+01:05:35.930 --> 01:05:39.630
+Yeah. So I'll just share it guys. So you will be able to see
+
+01:05:39.630 --> 01:05:42.250
+like this configuration one, and
+
+01:05:47.690 --> 01:05:50.630
+this is the like, you know, command to execute MCP server.
+
+01:05:50.850 --> 01:05:53.350
+It's just a Python file. So just Python go inside this
+
+01:05:53.350 --> 01:05:56.490
+folder and then MCP server.py file executed.
+
+01:06:10.340 --> 01:06:13.960
+10 projects of MCP project in a. Yeah. This is the, so I
+
+01:06:13.960 --> 01:06:18.000
+have created that like a, you know, entire playlist when MCP
+
+01:06:18.000 --> 01:06:20.620
+was pretty much new, even over there, I have shown you
+
+01:06:20.620 --> 01:06:23.880
+integration with the cloud, a integration with, you know,
+
+01:06:23.880 --> 01:06:28.220
+like a MCP inspector, everything I've shown it to you with
+
+01:06:28.220 --> 01:06:30.760
+the multiple projects, not just one single project just for
+
+01:06:30.760 --> 01:06:34.580
+MCPs, but technically it's just a function. So if I'm able
+
+01:06:34.580 --> 01:06:38.100
+to write a function for one thing, I can write for any of my
+
+01:06:38.100 --> 01:06:41.460
+functions and create it as a MCP. This is what, like, you
+
+01:06:41.460 --> 01:06:48.470
+know, a. The final conclusion is, which even now we will be
+
+01:06:48.470 --> 01:06:52.110
+able to understand so that you can create anything as MCPs
+
+01:06:52.110 --> 01:06:55.250
+going forward in no time done
+
+01:07:08.720 --> 01:07:11.880
+any, everyone, anyone who is able to access any of my
+
+01:07:11.880 --> 01:07:12.220
+system.
+
+01:07:21.900 --> 01:07:27.380
+Not yet. Okay. I'm just waiting. I just want you to, you
+
+01:07:27.380 --> 01:07:32.480
+know, execute it so that you all will be able to understand
+
+01:07:32.480 --> 01:07:35.180
+that in a better way when I'm going to explain you and you
+
+01:07:35.180 --> 01:07:37.520
+can, you know, parallel, you can, you will be able to test
+
+01:07:37.520 --> 01:07:38.000
+it. Okay.
+
+01:07:44.290 --> 01:07:47.730
+So, getting by indicator while running a below command, it
+
+01:07:47.730 --> 01:07:51.450
+should not give you, I think you should use a Python 1.0
+
+01:07:51.450 --> 01:07:54.690
+version. That's the first requirement. Second install this
+
+01:07:54.690 --> 01:07:59.010
+requirement dot txt, right? So in that particular
+
+01:07:59.010 --> 01:08:03.710
+environment and then just run this one, it will not give you
+
+01:08:03.710 --> 01:08:04.210
+any issue then.
+
+01:08:07.660 --> 01:08:10.420
+I'm getting error of server connection. So it simply means
+
+01:08:10.420 --> 01:08:12.620
+that you have not installed requirement dot txt. If you are
+
+01:08:12.620 --> 01:08:15.500
+getting that error, it means this installation is not there.
+
+01:08:15.660 --> 01:08:19.300
+MCP installation is not there. Just try to do a installation
+
+01:08:19.300 --> 01:08:20.720
+of requirement dot txt then,
+
+01:09:27.210 --> 01:09:32.510
+which Python version 3.10, 3.10 will always like a good.
+
+01:09:36.270 --> 01:09:39.490
+Warnings are fine. I think Kushal is getting a future
+
+01:09:39.490 --> 01:09:42.230
+warning. Warnings are not an issue at all. Warnings are
+
+01:09:42.230 --> 01:09:47.470
+fine. Avoid it. I've installed requirement, run the command,
+
+01:09:47.650 --> 01:09:50.150
+look like it is stuck. Nothing is happening from last two,
+
+01:09:50.210 --> 01:09:53.790
+three minutes. Yeah. Then you are on a correct path. So see,
+
+01:09:53.850 --> 01:09:56.750
+once you are going to execute this one. And if you are able
+
+01:09:56.750 --> 01:09:59.550
+to see this blank screen, it simply means that that your
+
+01:09:59.550 --> 01:10:02.150
+server is running. I'm not printing a log by the way,
+
+01:10:02.230 --> 01:10:07.010
+intentionally I have done that. And because of that, so if
+
+01:10:07.010 --> 01:10:08.930
+you are able to run it and if you are able to see nothing,
+
+01:10:09.110 --> 01:10:11.990
+then it's fine. If you are able to see an error, then it's
+
+01:10:11.990 --> 01:10:16.010
+not fine. So if you are able to see nothing, it simply means
+
+01:10:16.010 --> 01:10:18.490
+that that your server is up and running. Now what you have
+
+01:10:18.490 --> 01:10:21.730
+to do? So you have to do a configuration means client
+
+01:10:21.730 --> 01:10:26.870
+because your cloud is going to use your servers, So how you
+
+01:10:26.870 --> 01:10:31.890
+will like attach your clouded and a server. So like I said,
+
+01:10:31.910 --> 01:10:34.390
+edit configuration, then you will be able to find out this
+
+01:10:34.390 --> 01:10:37.590
+file clouded desktop configuration, open up this file in any
+
+01:10:37.590 --> 01:10:42.210
+editor and then just change a path. My path of these files,
+
+01:10:42.330 --> 01:10:44.750
+these three files, right? And you already have this file
+
+01:10:44.750 --> 01:10:47.210
+inside a source directory. So your path will be different.
+
+01:10:47.350 --> 01:10:49.790
+My path will be different. In case of Windows operating
+
+01:10:49.790 --> 01:10:52.930
+system, you have to use a double slash in case of like, you
+
+01:10:52.930 --> 01:10:56.430
+know, a Mac or Linux. Just double slash. Just a normal like
+
+01:10:56.430 --> 01:10:59.230
+a relative path. That's it. It is going to work. But in case
+
+01:10:59.230 --> 01:11:02.790
+of Windows, double slash you have to use and then everything
+
+01:11:02.790 --> 01:11:07.570
+will be done. Everything is all set. So all set means after
+
+01:11:07.570 --> 01:11:11.250
+doing this edit configuration, close your cloud. First of
+
+01:11:11.250 --> 01:11:14.710
+all, go to your cloud file and exit. So close it, open it
+
+01:11:14.710 --> 01:11:17.770
+once again. So once you are going to open it once again and
+
+01:11:17.770 --> 01:11:21.410
+come to the same place, you will be able to see that your
+
+01:11:21.410 --> 01:11:23.770
+servers are running. The custom server that we have created
+
+01:11:23.770 --> 01:11:27.130
+is running. If it is running, means you are able to attach
+
+01:11:27.130 --> 01:11:29.850
+it and now you can start chatting. If it is not running, it
+
+01:11:29.850 --> 01:11:32.410
+simply means that that your client is not able to attach
+
+01:11:32.410 --> 01:11:35.330
+itself to the server, the MCP server that we have.
+
+01:11:41.050 --> 01:11:44.610
+From setting not getting an option developer in Cloud AI, I
+
+01:11:44.610 --> 01:11:48.690
+mean like Cloud AI is same for all of us. Just install Cloud
+
+01:11:48.690 --> 01:11:52.650
+AI desktop, not like a BEV. If you are trying this out into
+
+01:11:52.650 --> 01:11:55.670
+a BEV, it will not work like just install at Cloud AI
+
+01:11:55.670 --> 01:11:56.470
+desktop. But
+
+01:12:03.060 --> 01:12:06.820
+after changing a desktop configuration, now Cloud AI is not
+
+01:12:06.820 --> 01:12:10.660
+opening. It will open up. It will open up for sure, I mean
+
+01:12:10.660 --> 01:12:13.900
+like why it will not open up. If you have made some mistake,
+
+01:12:13.980 --> 01:12:15.780
+then it will open up with a pop up and it will give you
+
+01:12:15.780 --> 01:12:17.320
+error over there. But it always open up.
+
+01:12:27.220 --> 01:12:30.720
+Okay, Arun is saying server is running. Okay, great Arun.
+
+01:12:30.880 --> 01:12:34.780
+Then try to you know chat with this system if your servers
+
+01:12:34.780 --> 01:12:38.640
+are running, right. And then you can talk to my Gmail, you
+
+01:12:38.640 --> 01:12:41.540
+can talk to my calendar, you can talk to my seat, you can
+
+01:12:41.540 --> 01:12:46.880
+talk to my MongoDB, you can talk to my SQL system, simple.
+
+01:12:47.520 --> 01:12:51.620
+You all will be able to talk to this my system because I
+
+01:12:51.620 --> 01:12:53.480
+have not removed my credentials by the way.
+
+01:13:46.000 --> 01:13:49.540
+Yeah, so anyone who is able to test it, Arun, is it working
+
+01:13:49.540 --> 01:13:49.840
+for you?
+
+01:13:59.770 --> 01:14:00.590
+Okay, waiting.
+
+01:14:40.450 --> 01:14:43.270
+Do we need to create a virtual environment? Your wish, if
+
+01:14:43.270 --> 01:14:45.930
+you want you can create it, I mean like how does that matter
+
+01:14:45.930 --> 01:14:47.090
+with respect to MCPs.
+
+01:15:04.710 --> 01:15:07.250
+Cloud AI will return soon. Cloud AI experiencing a temporary
+
+01:15:07.250 --> 01:15:09.730
+shutdown. Service disruption. We are working on it. I mean
+
+01:15:09.730 --> 01:15:13.030
+getting this error on Cloud AI desktop, I don't think that
+
+01:15:13.030 --> 01:15:15.130
+Cloud AI desktop will give you this issue. I think you are
+
+01:15:15.130 --> 01:15:18.990
+using Cloud AI web maybe. Cloud AI desktop never gives you
+
+01:15:18.990 --> 01:15:21.430
+this issue. It's a local system, right.
+
+01:15:24.840 --> 01:15:28.280
+Just a local software by the way. So I don't think it should
+
+01:15:28.280 --> 01:15:30.220
+give you that.
+
+01:16:02.140 --> 01:16:05.100
+Please explain how to add a local server in Cloud AI
+
+01:16:05.100 --> 01:16:10.920
+desktop. Simple. Go to your profile. Click on setting. Go to
+
+01:16:10.920 --> 01:16:15.400
+developer. Edit configuration and it will like, you know,
+
+01:16:15.420 --> 01:16:18.700
+show you a location where this particular file is. Cloud AI
+
+01:16:18.700 --> 01:16:23.280
+desktop configuration. Open up this file and then I have
+
+01:16:23.280 --> 01:16:26.920
+already pinged you this more than five times. Use it. Change
+
+01:16:26.920 --> 01:16:30.300
+the location. That's it. This is how you will be able to add
+
+01:16:30.300 --> 01:16:31.940
+the server. And
+
+01:16:43.430 --> 01:16:47.870
+then you can start like chatting with it. Simple. Yeah. So
+
+01:16:47.870 --> 01:16:48.930
+you can start chatting with it.
+
+01:16:52.840 --> 01:16:57.140
+Okay. So maybe some of you can just raise your hand. I'll
+
+01:16:57.140 --> 01:17:00.760
+look into your system. I'll try to do a setup and then, you
+
+01:17:00.760 --> 01:17:04.440
+know, we can, we can see like what is the issue that you are
+
+01:17:04.440 --> 01:17:09.460
+facing. Maybe for some of you, the rest of you can do it
+
+01:17:09.460 --> 01:17:13.620
+like on your own. It's not a very tough setup guys. So I
+
+01:17:13.620 --> 01:17:17.320
+don't think that you should face an issue. Yeah, Rakesh,
+
+01:17:17.440 --> 01:17:18.040
+share the screen.
+
+01:17:22.500 --> 01:17:24.860
+Just I am sharing. Yeah, share it. Yeah.
+
+01:17:31.420 --> 01:17:34.960
+Are you able to see my screen? Yes. Not yet.
+
+01:17:42.960 --> 01:17:46.760
+No. Is it visible? Hmm. Yeah. No, it's visible. Okay. So
+
+01:17:46.760 --> 01:17:50.740
+give me a control. Let me see what you have done. Yeah. Give
+
+01:17:50.740 --> 01:17:51.020
+me control.
+
+01:17:54.860 --> 01:17:57.260
+Okay. Fine guys. So I'm just doing it in a Rakesh screen.
+
+01:17:57.420 --> 01:18:00.360
+You all can watch and then like you can follow the same
+
+01:18:00.360 --> 01:18:03.600
+thing. It's it's not tough. Like I said. So, okay. Rakesh
+
+01:18:03.600 --> 01:18:07.340
+has, I think he has already done the good job. So let me
+
+01:18:07.340 --> 01:18:14.320
+close things. Okay. Don't save this one. Fine. So you're on
+
+01:18:14.320 --> 01:18:19.860
+JNI MCP source MCP server. So this location is looks like
+
+01:18:19.860 --> 01:18:25.260
+it's set. Okay. So this is set. This is set. This is set.
+
+01:18:25.380 --> 01:18:29.560
+Control S and then even his like MCP server is running. So I
+
+01:18:29.560 --> 01:18:32.020
+guess where is your like a clouding? I can't see your like a
+
+01:18:32.020 --> 01:18:34.940
+full screen. I believe you have not shared a full screen. I
+
+01:18:34.940 --> 01:18:38.320
+think you have just shared the single screen. Just just no,
+
+01:18:38.740 --> 01:18:42.140
+sir. I have a still listen. Just just just hold on. Just
+
+01:18:42.140 --> 01:18:44.680
+unshare the screen and share it again.
+
+01:19:03.430 --> 01:19:11.740
+Now is it okay? Hmm. You can see some other tabs. Okay. So I
+
+01:19:11.740 --> 01:19:16.720
+can see this. Let me close this one. Fine. So here basically
+
+01:19:16.720 --> 01:19:18.340
+calling is failed.
+
+01:19:20.880 --> 01:19:22.900
+This one is just one of the server.
+
+01:19:31.300 --> 01:19:32.260
+While exit.
+
+01:19:53.690 --> 01:19:57.310
+Okay. Just just try to launch a cloudy. I think I can't see
+
+01:19:57.310 --> 01:20:01.350
+your. Okay. Now I can see you below tab bar. Fine. Cloud.
+
+01:20:02.090 --> 01:20:03.690
+app it should work
+
+01:20:11.910 --> 01:20:15.870
+this connected for troubleshooting guiding please visit this
+
+01:20:15.870 --> 01:20:17.970
+this this this this so
+
+01:20:21.330 --> 01:20:33.300
+it shows that this is not working it should work log folder
+
+01:20:33.300 --> 01:20:44.740
+log for google service what is it started fine system 32
+
+01:20:44.740 --> 01:20:45.900
+that's
+
+01:20:50.350 --> 01:20:54.930
+the issue it is stating that mcp could not form module not
+
+01:20:54.930 --> 01:20:59.630
+found there yeah mc model not found i can see it yeah but
+
+01:20:59.630 --> 01:21:03.550
+whereas i installed the mcp and reconfirmed it by pip show
+
+01:21:03.550 --> 01:21:09.450
+mcp okay not an issue we'll check yeah so actually
+
+01:21:12.460 --> 01:21:18.060
+is my nephew sir uh earlier i told you that uh i connected
+
+01:21:18.060 --> 01:21:22.300
+with you with a i neuron actually and i have already joined
+
+01:21:22.300 --> 01:21:26.940
+the people to your uh i mean of course as well and he's
+
+01:21:26.940 --> 01:21:34.700
+working on the mld i mean machine learning yeah great so
+
+01:21:34.700 --> 01:21:38.160
+source mcp python
+
+01:21:39.790 --> 01:21:41.570
+version
+
+01:21:45.830 --> 01:21:53.910
+oh yours is 3.13 create an environment in 3.10 oh oh Do it
+
+01:21:53.910 --> 01:21:55.150
+quickly, so
+
+01:21:57.420 --> 01:22:00.640
+guys try to keep your environment 3.10 because generally you
+
+01:22:00.640 --> 01:22:04.920
+know beyond 3.10 it gives an issue with a new system
+
+01:22:04.920 --> 01:22:07.680
+especially like MCP kind of a libraries which is pretty much
+
+01:22:07.680 --> 01:22:12.680
+new in a market so just go ahead with a 3.10 that will be
+
+01:22:12.680 --> 01:22:16.400
+always better. Maybe most of you must be facing an issue
+
+01:22:16.400 --> 01:22:17.880
+just because of that.
+
+01:22:20.700 --> 01:22:23.660
+So, here Sivananda is saying same happened with me due to
+
+01:22:23.660 --> 01:22:26.700
+the Python, so 3.13 will give you an issue if you are
+
+01:22:26.700 --> 01:22:30.200
+installing a latest one preferred like to go ahead with the
+
+01:22:30.200 --> 01:22:33.560
+3.10. These are the new library, generally they are not
+
+01:22:33.560 --> 01:22:37.300
+compatible with the new version of Python. Cannot able to
+
+01:22:37.300 --> 01:22:40.300
+add the configuration file in the clouded desktop, share a
+
+01:22:40.300 --> 01:22:43.540
+screen then we will see what why you are not able to add,
+
+01:22:43.760 --> 01:22:48.940
+promoted you as a panelist just share a screen. In between
+
+01:22:48.940 --> 01:22:51.260
+Rakesh, so please try to like you know set your environment
+
+01:22:51.260 --> 01:22:55.640
+to 3.10 because everything you have done in a correct manner
+
+01:22:55.640 --> 01:22:57.700
+so it should work and it will work obviously.
+
+01:23:00.420 --> 01:23:04.500
+Just do it and then show it to me once again after Rakesh.
+
+01:23:04.780 --> 01:23:08.240
+Just raise your hand guys, raise your hand so that you know
+
+01:23:08.240 --> 01:23:09.620
+I can promote you as a panelist.
+
+01:23:12.240 --> 01:23:18.780
+Okay. Okay, so Elango share a screen. Yes, I share the
+
+01:23:18.780 --> 01:23:22.120
+screen. Okay, so you have already shared the screen, what is
+
+01:23:22.120 --> 01:23:27.080
+the issue? There is an MZP server, there is a running, fine
+
+01:23:27.080 --> 01:23:30.300
+that's a warning, not an issue at all. Okay, so you have.
+
+01:23:30.320 --> 01:23:35.260
+The thing is I try to connect from here, I open this, I
+
+01:23:35.260 --> 01:23:39.640
+already add the path, but after that nothing happened. It's
+
+01:23:39.640 --> 01:23:42.740
+not. Go to clouded, close it first. Go to clouded. Go to
+
+01:23:42.740 --> 01:23:48.060
+clouded. Go to file. Okay. No, no, no, not this one,
+
+01:23:48.100 --> 01:23:51.980
+clouded, clouded, app, application, yeah. And go to this,
+
+01:23:51.980 --> 01:23:54.860
+let me, annotate,
+
+01:23:56.810 --> 01:24:02.570
+this place, go to the corner place, the corner one, this
+
+01:24:02.570 --> 01:24:06.910
+one, this one. Okay. Click file, file, exit.
+
+01:24:09.370 --> 01:24:13.250
+Okay. Now after exiting, so I'll, you know, just go to
+
+01:24:13.250 --> 01:24:14.590
+clouded, open it once again. Okay.
+
+01:24:18.810 --> 01:24:20.970
+So after attaching your server guys, you have to restart
+
+01:24:20.970 --> 01:24:23.290
+your cloud at least once, otherwise it will not understand.
+
+01:24:23.470 --> 01:24:26.530
+That's a problem with clouded. Now it is showing you the
+
+01:24:26.530 --> 01:24:30.270
+error. See. So now it is able to like see your servers. If
+
+01:24:30.270 --> 01:24:33.930
+you'll go to your developer. So you will be able to see the
+
+01:24:33.930 --> 01:24:35.490
+server now, but
+
+01:24:39.260 --> 01:24:41.580
+there is a problem with the server, but yeah, now you can
+
+01:24:41.580 --> 01:24:45.620
+see the server. There's a problem. Yeah. So just go to.
+
+01:24:47.120 --> 01:24:51.380
+Yeah. So click on logs. Yeah. Open it. Open up any logs.
+
+01:24:51.480 --> 01:24:55.320
+MC's have a Google service. No, no, no. That's one. Your
+
+01:24:55.320 --> 01:24:58.620
+server is a Mongo postgres on Google, right? Open up. Yeah.
+
+01:24:58.960 --> 01:25:00.120
+Open up notepad.
+
+01:25:03.340 --> 01:25:05.520
+Let's see what is the error? Come down, come down, down,
+
+01:25:05.600 --> 01:25:07.580
+down. No, just wait, wait, wait, wait, wait, wait. Check the
+
+01:25:07.580 --> 01:25:11.780
+server. Started, connected successfully. This is okay. It is
+
+01:25:11.780 --> 01:25:15.280
+having line of 14. Okay. No model MCP. I think you are
+
+01:25:15.280 --> 01:25:20.160
+running it in a Python 3.1. Three. No, sir. 3.1. Zero. Show
+
+01:25:20.160 --> 01:25:21.400
+me. Python version.
+
+01:25:31.120 --> 01:25:33.160
+Just terminate the server. No, stop the server. Stop the
+
+01:25:33.160 --> 01:25:39.570
+server. And then show me Python version. I don't see. Hmm.
+
+01:25:39.770 --> 01:25:44.390
+Now, like, uh, show me. I think wasn't.
+
+01:25:48.290 --> 01:25:53.430
+Hmm. 3.1. Zero. Uh, MCP. Then, uh, do people solve the
+
+01:25:53.430 --> 01:25:54.410
+hyphen? Are they going to do it?
+
+01:26:10.790 --> 01:26:11.850
+Run the server once again.
+
+01:26:40.450 --> 01:26:44.990
+It's inside SRC folder. Right. Source. So Python. Yeah.
+
+01:26:45.070 --> 01:26:46.570
+Python. I mean like Python is a command.
+
+01:26:52.820 --> 01:26:59.990
+Okay, sir. It's running now. Hmm. It wasn't. It was also
+
+01:26:59.990 --> 01:27:00.290
+boring.
+
+01:27:03.780 --> 01:27:07.720
+Hmm. Ready now. Now go to clouding. Oh, close. Walk in. Uh,
+
+01:27:07.800 --> 01:27:08.780
+close again. Open again.
+
+01:27:14.980 --> 01:27:17.920
+All we do. I exit, exit, exit. Then only it closes, you
+
+01:27:17.920 --> 01:27:20.220
+know, in a proper manner. Hmm.
+
+01:27:33.920 --> 01:27:39.400
+Same, same issue. It is not able to like. Uh, same issue. I,
+
+01:27:39.520 --> 01:27:43.540
+I know like, yeah, the same issues, uh, it is not able to
+
+01:27:43.540 --> 01:27:50.100
+understand your MCP. Oh, ideally this shouldn't not to give
+
+01:27:50.100 --> 01:27:51.940
+you an issue because.
+
+01:27:55.640 --> 01:27:56.060
+Okay.
+
+01:28:02.940 --> 01:28:05.780
+Just do one thing. Create a one environment with 3.1, two,
+
+01:28:05.820 --> 01:28:08.860
+uh, close, close, close all those things. It's the same
+
+01:28:08.860 --> 01:28:11.460
+issue. It's not able to understand MCP installation. So
+
+01:28:11.460 --> 01:28:14.920
+yeah, just, just to create one environment with 3.1 guys to,
+
+01:28:14.940 --> 01:28:18.620
+uh, those who are still facing an issue, uh, try creating an
+
+01:28:18.620 --> 01:28:20.760
+environment with 3.1, two, just
+
+01:28:26.550 --> 01:28:29.210
+create the environment around the requirement of TXT. And
+
+01:28:29.210 --> 01:28:30.630
+then like generally
+
+01:28:41.510 --> 01:28:45.650
+the recombinant person is 3.1, zero, but okay.
+
+01:29:07.400 --> 01:29:12.240
+3.1, two, right, sir. Uh, yeah. 3.3.1. Two years. Yes. Yes.
+
+01:29:22.320 --> 01:29:27.360
+Sahid is saying his path is not correct. Is it? Uh, can you
+
+01:29:27.360 --> 01:29:30.440
+please show me your path, uh, once it,
+
+01:29:33.150 --> 01:29:37.410
+it looks like it was correct. Yeah. Can you please show me
+
+01:29:37.410 --> 01:29:38.010
+your path Elango?
+
+01:29:41.250 --> 01:29:46.690
+No configuration file path, the config file, uh, config,
+
+01:29:46.810 --> 01:29:53.910
+desktop, Jason, and, uh, yeah. So agent tick project, then
+
+01:29:53.910 --> 01:29:58.270
+MCP, then source, uh, right. Click on your MongoDB. MCP.
+
+01:30:03.160 --> 01:30:08.700
+Uh, copy the relative path. Okay. Paste it anywhere in
+
+01:30:08.700 --> 01:30:09.760
+anywhere, any in location.
+
+01:30:12.820 --> 01:30:17.440
+Source MongoDB MCP. Fine. Copy, copy the entire path. Right.
+
+01:30:17.480 --> 01:30:23.100
+Copy entire path. Copy path. Just copy the one year. Paste.
+
+01:30:28.180 --> 01:30:33.640
+Path is correct. So agent tick project, MCP and SRC. Hmm.
+
+01:30:33.780 --> 01:30:39.190
+It's fine. Hmm. Proceed with yes. Uh,
+
+01:30:44.700 --> 01:30:47.500
+the space. Uh, yes. Space between his, he has given a space
+
+01:30:47.500 --> 01:30:50.660
+in between. Let's check. I generally, that should not give
+
+01:30:50.660 --> 01:30:54.280
+an issue, but yeah, it, he has already created a space, uh,
+
+01:30:54.360 --> 01:31:00.920
+in a folder. So we have to even overcome that part by using
+
+01:31:00.920 --> 01:31:07.240
+some escape character. Elango just do one thing. Uh, so just
+
+01:31:07.240 --> 01:31:12.660
+change the folder path. Okay. So don't, don't give a space
+
+01:31:12.660 --> 01:31:16.380
+in between the folder. Create a new folder. So you have
+
+01:31:16.380 --> 01:31:19.100
+already created a, do one thing, open up tightly the MCV
+
+01:31:19.100 --> 01:31:22.920
+folder, open up tightly MCV folder. Okay. I will, I will.
+
+01:31:23.380 --> 01:31:25.820
+But again, MCP is available inside the agent tick project,
+
+01:31:25.900 --> 01:31:28.720
+right? So it will be like a, there will be a space. Keep
+
+01:31:28.720 --> 01:31:32.180
+this one somewhere here. That's good. Fine. Now open up that
+
+01:31:32.180 --> 01:31:33.500
+folder because
+
+01:31:36.600 --> 01:31:39.820
+ideally it should work with 3.10. 3.10 never gives an issue.
+
+01:31:41.580 --> 01:31:48.000
+Uh, he was facing MCV model. I haven't even checked your
+
+01:31:48.000 --> 01:31:49.720
+error properly. But 3.10. Yeah. Let's see.
+
+01:32:09.070 --> 01:32:11.670
+Run with 3.10. Yeah. Yes.
+
+01:32:28.420 --> 01:32:30.800
+Yeah. It's always a good practice to create a folder without
+
+01:32:30.800 --> 01:32:33.500
+a space. Obviously, like, uh, because the space gives you an
+
+01:32:33.500 --> 01:32:36.760
+issue, especially in windows, like, uh, Mac and, uh, Linux
+
+01:32:36.760 --> 01:32:40.040
+will be able to handle it. But windows is always like, you
+
+01:32:40.040 --> 01:32:45.780
+know, uh, painful things to do with the space. So
+
+01:32:58.450 --> 01:33:03.170
+show me your logs from your log. Once again, I just wanted
+
+01:33:03.170 --> 01:33:06.290
+to see like whether it's a MCP installation issue or
+
+01:33:06.290 --> 01:33:06.910
+location issue.
+
+01:33:12.160 --> 01:33:13.340
+Yeah. Any file.
+
+01:33:17.000 --> 01:33:21.740
+Just wait, wait, wait. Check for the error. Uh, MCP. It
+
+01:33:21.740 --> 01:33:25.320
+shows it taking the. Module not found. Yeah. Module not
+
+01:33:25.320 --> 01:33:28.840
+found. It's, it's an installation. A space issue. It take
+
+01:33:28.840 --> 01:33:35.660
+the fold path. Okay. So from file this, this, this. Hmm.
+
+01:33:36.120 --> 01:33:38.840
+Maybe I need to remove this. Uh, I can delete.
+
+01:33:45.100 --> 01:33:48.280
+No, it's technically editing the same file. Okay. Click on
+
+01:33:48.280 --> 01:33:49.060
+it. Configuration.
+
+01:33:57.560 --> 01:34:00.080
+That's it. It's technically the same file. So just paste
+
+01:34:00.080 --> 01:34:01.040
+your configuration here.
+
+01:34:04.170 --> 01:34:09.490
+Control S. Okay. Close. Exit cloud. Open again.
+
+01:34:32.960 --> 01:34:36.280
+Hmm. Same place. So it is, it is taking the correct like a
+
+01:34:36.280 --> 01:34:40.580
+location. Argument is C drive MCP. Source MCP server dot PI
+
+01:34:40.580 --> 01:34:44.020
+file. And just check whether it's running or not. MCP is
+
+01:34:44.020 --> 01:34:48.600
+running or not. Yes. Running. It's running.
+
+01:34:51.420 --> 01:34:55.600
+Uh, okay. Okay. Oh great. My server is running. Sir. Amazing
+
+01:34:55.600 --> 01:34:58.240
+side. Amazing. So anyone else guys who is able to run it,
+
+01:34:58.320 --> 01:35:00.320
+who is able to, you know, test it.
+
+01:35:03.040 --> 01:35:10.400
+So in your system, uh, try with 3.1 to them. Okay. Yeah.
+
+01:35:10.480 --> 01:35:14.900
+Like deactivate this, try with 3.1 to happy to help you
+
+01:35:14.900 --> 01:35:18.700
+count, help you count document. However, I need a bit more
+
+01:35:18.700 --> 01:35:21.820
+information to assist you probably agree with the system.
+
+01:35:21.960 --> 01:35:24.880
+You are referring to Mongo. Mongo db, postgres, Google seed,
+
+01:35:24.920 --> 01:35:28.660
+which is specific. Uh, you can talk to, uh, you can talk to
+
+01:35:28.660 --> 01:35:31.240
+my Mongo db. You can talk to my postgres. You can talk to my
+
+01:35:31.240 --> 01:35:34.080
+seat. You know, I see it. It's blank by the way in Mongo db.
+
+01:35:34.180 --> 01:35:37.020
+I think you can see some default collection in a postgres
+
+01:35:37.020 --> 01:35:40.140
+sequel. So we have like a data and databases. So on tables.
+
+01:35:40.200 --> 01:35:45.320
+So you can talk to that. Let me know which database you are
+
+01:35:45.320 --> 01:35:47.700
+working with. I will come shame
+
+01:35:50.040 --> 01:35:54.860
+issue coming, which, which issue. Cool. Same issue as like a
+
+01:35:54.860 --> 01:35:55.120
+lingo.
+
+01:36:04.160 --> 01:36:08.200
+So anyone else, guys, anyone who is able to run my run MCP
+
+01:36:08.200 --> 01:36:11.820
+server and test it. Yeah. I'm just waiting for a
+
+01:36:11.820 --> 01:36:15.720
+confirmation. Yes. Same. Okay. Fine. So Kushal then, then
+
+01:36:15.720 --> 01:36:19.280
+let me solve his issue. If his issue will be fixed, then
+
+01:36:19.280 --> 01:36:23.200
+even I don't see an issue in his system, by the way. I mean
+
+01:36:23.200 --> 01:36:28.700
+like, uh, it should work, but let's see what the Boston Mac
+
+01:36:28.700 --> 01:36:31.940
+user use Python three instructions. of python in uh okay
+
+01:36:31.940 --> 01:36:35.440
+yeah you can use python 3 if you're using mac so
+
+01:36:41.040 --> 01:36:45.040
+anyone guys i think uh mohammed is able to run it uh he has
+
+01:36:45.040 --> 01:36:47.820
+like you know pinged me a message so obviously he's able to
+
+01:36:47.820 --> 01:36:51.420
+run it because of that he's getting this reply uh dev kumar
+
+01:36:51.420 --> 01:36:54.700
+okay running successfully well done after running server how
+
+01:36:54.700 --> 01:36:58.480
+to test it uh okay just chat chat inside your cloud and you
+
+01:36:58.480 --> 01:37:03.500
+will be able to test it you can check my email yeah so i
+
+01:37:03.500 --> 01:37:06.000
+have given you my credentials my email credentials i have
+
+01:37:06.000 --> 01:37:09.360
+attached and i have not removed it not my official one by
+
+01:37:09.360 --> 01:37:13.420
+the way so like my class email id is there no no need to
+
+01:37:13.420 --> 01:37:15.440
+delete it's fine it's fine leave it leave it leave it leave
+
+01:37:15.440 --> 01:37:17.840
+it it's just technically you are deleting it means you are
+
+01:37:17.840 --> 01:37:22.660
+removing that json from the json configuration file it's not
+
+01:37:22.660 --> 01:37:27.720
+doing anything different yeah file exit and then open up go
+
+01:37:42.600 --> 01:37:43.240
+to log you
+
+01:38:02.590 --> 01:38:07.630
+this must be the old log like show me the new one i mean
+
+01:38:07.630 --> 01:38:10.310
+delete delete the log file delete three log files all three
+
+01:38:10.310 --> 01:38:14.870
+no no these three one two three like google mongo no not all
+
+01:38:14.870 --> 01:38:18.450
+google mongo postgres yeah this is your log file delete all
+
+01:38:18.450 --> 01:38:23.870
+three now run again like close the cloud open again let's
+
+01:38:25.760 --> 01:38:28.600
+check what system is able to understand
+
+01:38:39.120 --> 01:38:42.740
+now open a developer setting now
+
+01:38:50.390 --> 01:38:54.690
+show me the error yeah so line number 14 line number 14 this
+
+01:38:54.690 --> 01:39:02.940
+import no module name mcp ok just try to do pip show mcp in
+
+01:39:02.940 --> 01:39:04.540
+your terminal open
+
+01:39:15.550 --> 01:39:19.150
+up new terminal ok fine pip show mcp 10
+
+01:39:23.560 --> 01:39:26.560
+8 v tv 14 m 10 p p version is 1.2 0 show me your
+
+01:39:26.560 --> 01:39:30.800
+requirementGHTP i have given like more than for example
+
+01:39:30.800 --> 01:39:39.730
+requirement Xuan ext greater than and it has installed 1.20
+
+01:39:39.730 --> 01:39:46.610
+which looks good not an issue at all uh but it is not able
+
+01:39:46.610 --> 01:39:48.230
+to it's
+
+01:39:59.210 --> 01:40:01.890
+just a installation issue it's not any other issues by the
+
+01:40:01.890 --> 01:40:07.970
+way so it is not able to understand mcp let me give you some
+
+01:40:07.970 --> 01:40:12.210
+solution then we'll force it to install i guess
+
+01:40:38.380 --> 01:40:41.660
+this is a virtual environment issue his environment has mcp
+
+01:40:41.660 --> 01:40:44.860
+okay no i think he is using the same environment to run the
+
+01:40:44.860 --> 01:40:50.640
+mcp server 2 right mcp server 2 is having mcp yeah and he's
+
+01:40:50.640 --> 01:40:54.760
+using the same environment like um that's okay now
+
+01:41:16.520 --> 01:41:21.620
+do do one thing just uh run this command pip x install mcp
+
+01:41:21.620 --> 01:41:27.700
+is equal equal to 1.20 i have pinged the command pip x just
+
+01:41:30.520 --> 01:41:33.360
+installation issue if we can fix it means it is not able to
+
+01:41:33.360 --> 01:41:36.780
+recognize all the instance mcp is there so take my chat yeah
+
+01:41:36.780 --> 01:41:40.160
+it's it's available in chat simple writer command i'll tell
+
+01:41:40.160 --> 01:41:49.840
+you pip x pip x install pip x install oh yeah this one is
+
+01:41:49.840 --> 01:41:53.100
+not recognized okay fine that
+
+01:42:03.530 --> 01:42:05.630
+could be an another issue
+
+01:42:10.420 --> 01:42:11.960
+uh do one thing
+
+01:42:14.720 --> 01:42:20.860
+let's start a little bit fresh so just close this uh okay
+
+01:42:20.860 --> 01:42:23.260
+open up the folder and wherever you have like you know
+
+01:42:23.260 --> 01:42:25.240
+downloaded my file yes
+
+01:42:31.130 --> 01:42:35.150
+sir yeah copy it keep it somewhere maybe in some directory c
+
+01:42:35.150 --> 01:42:36.770
+drive or something paste
+
+01:42:39.940 --> 01:42:41.460
+it continue
+
+01:42:44.690 --> 01:42:46.070
+okay
+
+01:42:56.050 --> 01:43:00.530
+paste where it has gone pip
+
+01:43:03.640 --> 01:43:08.560
+3 install mcp is equal equal to 1.20 yeah we are checking it
+
+01:43:08.560 --> 01:43:08.560
+and we are going to install it and we are going to install
+
+01:43:08.560 --> 01:43:08.680
+it and see how long time will it take okay Valerie what do
+
+01:43:08.680 --> 01:43:08.680
+we have to wait for aогat to do Thursday number here i
+
+01:43:08.680 --> 01:43:09.520
+understand see what you're thinking what will work ideally
+
+01:43:09.520 --> 01:43:15.260
+pip should work but like it's not working no no space free
+
+01:43:15.260 --> 01:43:20.120
+total size 472 just copy that folder copy that folder and
+
+01:43:20.120 --> 01:43:21.060
+like keep it somewhere
+
+01:43:25.510 --> 01:43:30.290
+after after and zip with with zip no you have to objectively
+
+01:43:30.290 --> 01:43:37.870
+first right click extract all on extract all sorry
+
+01:43:42.190 --> 01:43:45.990
+no no yeah extract to this one yes fine
+
+01:43:48.460 --> 01:43:49.100
+open up the folder and then create a new capital r 4 white
+
+01:43:49.100 --> 01:43:55.280
+loving the one this one yeah okay now uh just do one thing
+
+01:43:55.280 --> 01:43:58.200
+go to your vs code and uh open this location
+
+01:44:12.120 --> 01:44:14.720
+you had that in a document download for download folder i
+
+01:44:14.720 --> 01:44:17.420
+believe yeah this one
+
+01:44:21.620 --> 01:44:26.100
+okay now select the environment close
+
+01:44:29.900 --> 01:44:32.480
+close just all the things close it close it close everything
+
+01:44:32.480 --> 01:44:38.040
+working fine rcc is saying it will work it's it's not tough
+
+01:44:38.040 --> 01:44:42.640
+to you know do the installation so okay select the
+
+01:44:42.640 --> 01:44:44.880
+environment any environment run
+
+01:44:57.300 --> 01:44:59.320
+it now
+
+01:45:14.810 --> 01:45:18.510
+you have to change the configuration file no no your
+
+01:45:18.510 --> 01:45:22.490
+location has changed right so change the configuration file
+
+01:45:22.490 --> 01:45:23.530
+so
+
+01:45:29.030 --> 01:45:33.250
+i need to yeah just just change the location yeah click on
+
+01:45:33.250 --> 01:45:38.580
+src copy the path src src
+
+01:45:41.500 --> 01:45:44.840
+copy the path of this mcp server right
+
+01:45:48.970 --> 01:45:49.830
+click copy path
+
+01:45:54.260 --> 01:45:56.580
+prepare your config so
+
+01:46:44.000 --> 01:46:46.220
+you have given this rc inside is rc something can you please
+
+01:46:46.220 --> 01:46:47.780
+check once okay
+
+01:46:50.370 --> 01:46:58.370
+fine like src inside that you have this okay now attach it
+
+01:46:58.370 --> 01:47:01.970
+attach to uh yeah edit configuration it did configuration
+
+01:47:01.970 --> 01:47:07.220
+first edit update this file
+
+01:47:12.360 --> 01:47:14.160
+control s same
+
+01:47:37.140 --> 01:47:38.320
+issue it's
+
+01:47:52.620 --> 01:47:58.020
+the same issue of cp solution issue nothing else um
+
+01:48:35.620 --> 01:48:39.880
+same thing same thing like uh we'll have to maybe
+
+01:48:41.820 --> 01:48:44.700
+what we have done with the class yeah for today we have done
+
+01:48:44.700 --> 01:48:47.500
+with the class same thing will continue tomorrow uh but yeah
+
+01:48:47.500 --> 01:48:50.680
+today let's just do a setup tomorrow i'll give you the
+
+01:48:50.680 --> 01:48:53.700
+complete explanation once again so today the purpose was to
+
+01:48:53.700 --> 01:48:56.300
+talk about just a basic of mcps and do a setup
+
+01:49:03.500 --> 01:49:06.080
+okay we'll we'll check rakesh are you able to execute it
+
+01:49:06.080 --> 01:49:10.540
+maybe you have to restart your system once it will be able
+
+01:49:10.540 --> 01:49:13.840
+to understand or maybe like uh that was a i have installed
+
+01:49:13.840 --> 01:49:19.180
+the python 1.0 again and then environment set set up but the
+
+01:49:19.180 --> 01:49:24.140
+same issue same issue right uh so i'm just uh searching on
+
+01:49:24.140 --> 01:49:29.080
+the net no it will not help you much by the way because it's
+
+01:49:29.080 --> 01:49:33.740
+just a environment issue right it's related to only mcp
+
+01:49:33.740 --> 01:49:40.460
+module right yeah earlier i have configured the fast api mcp
+
+01:49:40.460 --> 01:49:43.020
+mcp actually uh to a specific thousand or whatever uh
+
+01:49:43.020 --> 01:49:45.400
+variable like last week that is uh gives some time uh issue
+
+01:49:45.400 --> 01:49:49.220
+uh do one thing try yeah so one thing is like uh without
+
+01:49:49.220 --> 01:49:51.580
+virtual environment so try try this out into a base
+
+01:49:51.580 --> 01:50:00.580
+environment into a base itself okay okay the ultimate goal
+
+01:50:00.580 --> 01:50:03.720
+will be like ultimate uh uh solution will be uv installation
+
+01:50:03.720 --> 01:50:07.520
+so uv generally i would install all the dependencies so if
+
+01:50:07.520 --> 01:50:09.780
+this is not going to work then i'll tell you uv installation
+
+01:50:09.780 --> 01:50:15.180
+no no I installed it using UV only ok then it should work
+
+01:50:15.180 --> 01:50:19.560
+because generally that was the purpose behind UV yeah MCP
+
+01:50:19.560 --> 01:50:22.700
+based on UV only it's
+
+01:50:44.330 --> 01:50:48.210
+working with 3.13 yeah works with everything generally it
+
+01:50:48.210 --> 01:50:52.490
+should work in my system I am running this with 3.12 it will
+
+01:50:52.490 --> 01:50:56.270
+work but in some of the system because of some other
+
+01:50:56.270 --> 01:50:58.550
+dependency that you have already installed and configuration
+
+01:50:58.550 --> 01:51:03.530
+ideally I used to say that that go with 3.10 it works with
+
+01:51:03.530 --> 01:51:05.590
+generally every person so
+
+01:51:24.340 --> 01:51:31.800
+server is fine yeah close your cloud and then yeah load it
+
+01:51:31.800 --> 01:51:33.320
+once again if
+
+01:51:36.460 --> 01:51:41.800
+this will not work then we'll try UV installation in
+
+01:51:43.560 --> 01:51:46.300
+my system it's just working with pip and I am using Windows
+
+01:51:46.300 --> 01:51:53.560
+machine so there is no issue oh! disconnected for
+
+01:51:53.560 --> 01:51:59.000
+troubleshooting have you removed other MCPs no sir I will ok
+
+01:51:59.000 --> 01:52:03.260
+one is running good good one is running then mongodb click
+
+01:52:03.260 --> 01:52:07.680
+on mongo this one has failed click on mongo it's running
+
+01:52:07.680 --> 01:52:12.160
+yeah it's running so I think there is a click on postgres ok
+
+01:52:12.160 --> 01:52:15.700
+there is a path issue d drive c drive see the initial one
+
+01:52:15.700 --> 01:52:19.280
+yeah d drive yeah click on configuration change change the
+
+01:52:19.280 --> 01:52:23.180
+configuration it will all is yeah guys. So Rakesh I think
+
+01:52:23.180 --> 01:52:27.540
+you can try this out in your base environment itself ok yeah
+
+01:52:27.540 --> 01:52:32.360
+and anyone else who has pinged me yeah mongodb has suggested
+
+01:52:32.360 --> 01:52:35.560
+this one so try without virtual environment it should work
+
+01:52:35.560 --> 01:52:39.000
+see environment is environment it's like we are keeping just
+
+01:52:39.000 --> 01:52:42.340
+our dependencies there but like I said so everyone has done
+
+01:52:42.340 --> 01:52:45.420
+a configuration in a different manner so because of that we
+
+01:52:45.420 --> 01:52:49.280
+are like you know facing this issue otherwise it should
+
+01:52:49.280 --> 01:52:52.900
+ideally work in all the environment every time everywhere
+
+01:52:52.900 --> 01:52:54.060
+yeah
+
+01:52:56.050 --> 01:52:59.270
+wow it's working working right ok now you can start yeah
+
+01:52:59.270 --> 01:53:02.850
+click on click on this like you know beside a plus you will
+
+01:53:02.850 --> 01:53:06.630
+be able to see this one beside plus just beside plus not
+
+01:53:06.630 --> 01:53:09.670
+there not there not tool ok yeah tool now you are able to
+
+01:53:09.670 --> 01:53:11.950
+see your tool right your own custom tool google service your
+
+01:53:11.950 --> 01:53:15.090
+custom tool mongodb and postgres is your own custom tool
+
+01:53:15.090 --> 01:53:22.870
+right ok so yeah these are your tool so I can search. So
+
+01:53:22.870 --> 01:53:23.030
+that's what I am asking you guys if you don't want to do
+
+01:53:23.030 --> 01:53:24.790
+this, just start checking if cloud can be run in the same
+
+01:53:24.790 --> 01:53:30.910
+environment yeah it should give the table it will work it
+
+01:53:30.910 --> 01:53:35.290
+will work anyhow your country to the MCP right yeah I guess
+
+01:53:35.290 --> 01:53:37.310
+can you please do the same thing and let me know always
+
+01:53:37.310 --> 01:53:40.990
+allow click on always allow the same trend yeah please try
+
+01:53:40.990 --> 01:53:44.770
+and let me know. Ok so for illingo it's done next one guys
+
+01:53:44.770 --> 01:53:47.150
+anyone who would like to share the screen please raise your
+
+01:53:47.150 --> 01:53:51.590
+hand ok sir thank you sir yeah yeah illingo ok guys those
+
+01:53:51.590 --> 01:53:54.710
+who would like to you know. share the screen please raise
+
+01:53:54.710 --> 01:53:58.290
+your hand Sumit Kumar Sahu fine promote to panelists Santanu
+
+01:53:58.290 --> 01:54:03.690
+come as panelists Rutal okay come as a panelist Muhammad
+
+01:54:03.690 --> 01:54:08.690
+come as a panelist okay I just added you guys so you will be
+
+01:54:08.690 --> 01:54:11.410
+joining as a panelist so anyone anyone share the screen
+
+01:54:12.410 --> 01:54:14.750
+first come first let's check
+
+01:54:18.000 --> 01:54:23.600
+Kaushal okay Kaushal so I just want you to execute this MCP
+
+01:54:23.600 --> 01:54:26.700
+in your system guys today itself tomorrow I will be going
+
+01:54:26.700 --> 01:54:31.120
+ahead with the you know Google API setup and all those
+
+01:54:31.120 --> 01:54:34.140
+things so that you can configure not my mail ID you can
+
+01:54:34.140 --> 01:54:37.920
+configure your own mail ID calendar and any services any
+
+01:54:37.920 --> 01:54:44.800
+means literally any okay so who is sharing Rutal yeah Rutal
+
+01:54:44.800 --> 01:54:46.980
+tell me what is the issue you
+
+01:54:53.160 --> 01:54:59.200
+can you can unmute yourself yeah yeah so what is what is the
+
+01:54:59.200 --> 01:55:05.700
+issue I tried to install config in base environment okay so
+
+01:55:05.700 --> 01:55:09.640
+server is started I just to go and click yeah just change
+
+01:55:09.640 --> 01:55:12.720
+the path change the path go back go back to your
+
+01:55:12.720 --> 01:55:16.560
+configuration file yeah so here forward slash two forwards
+
+01:55:16.560 --> 01:55:21.380
+double forward slash okay yeah it's a it's a window so
+
+01:55:21.380 --> 01:55:23.060
+windows is having a issue you know path issues
+
+01:55:39.650 --> 01:55:42.830
+yeah remove all the paths this
+
+01:55:45.610 --> 01:55:48.470
+is correct one you know relative path double double forwards
+
+01:55:48.470 --> 01:55:52.730
+less single backwards are bugs but yeah ideally like you
+
+01:55:52.730 --> 01:55:55.550
+know you know windows so it gives an issue so that's the
+
+01:55:55.550 --> 01:55:55.830
+reason
+
+01:56:16.260 --> 01:56:17.660
+keep it inside double quotes
+
+01:56:21.510 --> 01:56:24.470
+now change the path for all three copy to the source yeah
+
+01:56:24.470 --> 01:56:26.330
+copy just control
+
+01:56:35.420 --> 01:56:41.540
+s yes okay now go to your cloud a exit
+
+01:56:47.200 --> 01:56:49.260
+open once again show
+
+01:56:59.880 --> 01:57:01.460
+me your log come
+
+01:57:12.980 --> 01:57:15.020
+down down down what
+
+01:57:20.370 --> 01:57:27.800
+is the error okay so that's the problem so here the Python
+
+01:57:27.800 --> 01:57:41.520
+is not this is that's the issue hmm hmm hmm but show me show
+
+01:57:41.520 --> 01:57:45.440
+me your config file okay okay
+
+01:57:48.860 --> 01:57:54.480
+so you have basically like commands you have args okay
+
+01:58:01.340 --> 01:58:05.460
+and you have python so in your system python works yeah
+
+01:58:05.460 --> 01:58:10.440
+python is working hmm hmm you
+
+01:58:13.290 --> 01:58:20.450
+have args then you have python and your json looks fine to
+
+01:58:20.450 --> 01:58:24.850
+me it's working i can access your postgres db lulu method is
+
+01:58:24.850 --> 01:58:28.510
+saying okay great lulu amazing it's working in a waste
+
+01:58:28.510 --> 01:58:33.650
+environment put will work yeah even that is a post that's
+
+01:58:33.650 --> 01:58:40.610
+fine so python ui th1 i can't see an issue in that
+
+01:58:43.570 --> 01:58:44.050
+practical
+
+01:58:53.450 --> 01:58:53.930
+d
+
+01:58:59.470 --> 01:59:04.370
+show me your log once again it it is able to understand
+
+01:59:04.370 --> 01:59:09.650
+python by the way so i don't see any other logs logs yeah
+
+01:59:09.650 --> 01:59:11.170
+logs logs click on logs
+
+01:59:14.650 --> 01:59:17.630
+do one thing delete all three logs yeah
+
+01:59:20.640 --> 01:59:24.580
+no no not this one server first log slugs delete the log go
+
+01:59:24.580 --> 01:59:28.120
+to log folder yeah delete all three files delete
+
+01:59:30.370 --> 01:59:34.770
+all three three files google service mongodb postgres this
+
+01:59:34.770 --> 01:59:37.270
+is your log right yeah three logs delete it
+
+01:59:40.400 --> 01:59:46.760
+fine now like close this one mcp i mean like close your
+
+01:59:46.760 --> 01:59:51.540
+cloud exit open once again now
+
+02:00:05.940 --> 02:00:07.820
+show me your log not
+
+02:00:26.930 --> 02:00:27.970
+this one other log
+
+02:00:35.160 --> 02:00:39.420
+hmm now what is the issue python is not recognized as an
+
+02:00:39.420 --> 02:00:47.620
+intellectual command operable batch file okay fine so that
+
+02:00:47.620 --> 02:00:50.060
+is the issue okay
+
+02:01:02.520 --> 02:01:05.380
+go to open up your cmd type
+
+02:01:08.360 --> 02:01:09.820
+python hmm
+
+02:01:15.670 --> 02:01:17.310
+it is able to recognize
+
+02:01:22.560 --> 02:01:31.780
+environment no no that's fine it is able to recognize python
+
+02:01:31.780 --> 02:01:35.820
+and means it must be set in a environment otherwise you can
+
+02:01:35.820 --> 02:01:38.840
+you can cross check your path but yeah i mean like if it is
+
+02:01:38.840 --> 02:01:43.700
+showing in cmd it should be it is showing me now so maybe
+
+02:01:43.700 --> 02:01:47.900
+you can you can or open up your like you know cloud sorry
+
+02:01:47.900 --> 02:01:51.640
+sorry just do one thing open up your cloud in android mode
+
+02:01:51.640 --> 02:01:56.570
+close cloudy yeah exit fine
+
+02:01:58.880 --> 02:02:03.600
+now open up one second no no no not directly not not through
+
+02:02:03.600 --> 02:02:09.400
+this uh icon close it close it close it hmm search cloudy
+
+02:02:12.570 --> 02:02:15.390
+now yeah run as administrator hmm
+
+02:02:24.800 --> 02:02:28.800
+now no issue it simply means it's working go to developer
+
+02:02:38.620 --> 02:02:43.260
+failed failed here as well see try user root download this
+
+02:02:43.260 --> 02:02:44.400
+this this this yeah
+
+02:03:01.520 --> 02:03:06.860
+it must be same issue python it is not able to or error i
+
+02:03:06.860 --> 02:03:12.780
+can see like a spawn python e so what is the error so error
+
+02:03:12.780 --> 02:03:14.260
+is a
+
+02:03:16.790 --> 02:03:17.170
+a
+
+02:03:22.220 --> 02:03:22.800
+e
+
+02:03:26.670 --> 02:03:33.310
+no ent a check your path once just check your path just
+
+02:03:33.310 --> 02:03:38.890
+check your path check your path once where i need to check
+
+02:03:38.890 --> 02:03:43.070
+uh environment variable okay
+
+02:04:03.290 --> 02:04:09.970
+python path is not set okay so set your python path then so
+
+02:04:15.000 --> 02:04:18.020
+wherever you have python so you maybe you can just check
+
+02:04:18.020 --> 02:04:18.660
+where python
+
+02:04:32.260 --> 02:04:38.180
+no no leave it leave it leave it like root anaconda and you
+
+02:04:38.180 --> 02:04:44.460
+have a python uh three over there right generally we give
+
+02:04:44.460 --> 02:04:51.340
+till bin hmm anaconda three click on okay inside
+
+02:04:56.340 --> 02:05:03.000
+scripts only python that exe files yeah so you are trying to
+
+02:05:03.000 --> 02:05:06.080
+call from anaconda that is not an ideal approach i would say
+
+02:05:06.500 --> 02:05:10.440
+so you must have installed a python independent version uh
+
+02:05:10.440 --> 02:05:16.540
+that that path you are supposed to set i mean you can you
+
+02:05:16.540 --> 02:05:19.240
+can try installing once again so go to like google try to
+
+02:05:19.240 --> 02:05:22.660
+search for python install it it will work so it's just a
+
+02:05:22.660 --> 02:05:26.380
+python like a issue because cloud is not accessing your of
+
+02:05:26.380 --> 02:05:29.260
+your environment so basically it is looking for a python
+
+02:05:29.260 --> 02:05:34.260
+from your system itself um that's the issue basically your
+
+02:05:34.260 --> 02:05:38.080
+client your server is fine everything is working okay
+
+02:05:40.900 --> 02:05:47.500
+yeah just just download anything like three nine 3.9 and set
+
+02:05:47.500 --> 02:05:51.860
+that path it will it will ask you for the path setting at
+
+02:05:51.860 --> 02:05:52.940
+the time of installation itself
+
+02:06:04.260 --> 02:06:09.080
+yeah hello hi sir yeah just a minute just a minute i'll come
+
+02:06:09.080 --> 02:06:10.300
+now so
+
+02:06:12.980 --> 02:06:14.240
+yeah
+
+02:06:24.610 --> 02:06:27.210
+mahesa abhishek basically it will work but his server is
+
+02:06:27.210 --> 02:06:31.470
+running fine his client is not able to identify you know
+
+02:06:33.870 --> 02:06:36.810
+yeah i guess please tell me um you were saying something
+
+02:06:37.370 --> 02:06:41.310
+actually now it's working but it's not related to actually
+
+02:06:41.310 --> 02:06:48.110
+base environment you can see if allow me to share this yeah
+
+02:06:48.110 --> 02:06:49.950
+you can share the screen multiple people can share screens
+
+02:06:49.950 --> 02:06:54.030
+simultaneously i can see everyone everyone can resolve that
+
+02:06:54.030 --> 02:06:58.670
+issue yeah okay within the path where we have set now we
+
+02:06:58.670 --> 02:07:05.030
+have also mentioned the python python yes yeah yeah okay so
+
+02:07:05.030 --> 02:07:07.430
+you are saying that okay fine so set a python path as well
+
+02:07:07.430 --> 02:07:11.010
+and then even that is a good approach because it will be
+
+02:07:11.010 --> 02:07:13.730
+looking for at the end of the day python file itself so
+
+02:07:13.730 --> 02:07:17.390
+maybe like a root l see i think you are able to see rakesh's
+
+02:07:17.390 --> 02:07:21.590
+screen right yeah yeah so see what rakesh has done and again
+
+02:07:21.590 --> 02:07:23.710
+this is the correct approach i would say so wherever your
+
+02:07:23.710 --> 02:07:26.650
+see at the end of the day set system is looking for client
+
+02:07:26.650 --> 02:07:29.610
+is looking for basically your exe file python or exe file
+
+02:07:29.610 --> 02:07:34.150
+right hard code it i mean like ideally we should not do it
+
+02:07:34.150 --> 02:07:37.870
+because uh generally like it will take it from a system
+
+02:07:37.870 --> 02:07:41.330
+configuration itself uh but yeah so if it is not working if
+
+02:07:41.330 --> 02:07:44.750
+it is not able to find python or some other libraries then
+
+02:07:44.750 --> 02:07:47.770
+ultimate approach is to like hard code it but again ideally
+
+02:07:47.770 --> 02:07:50.590
+it's not a good approach because if i'm bringing this entire
+
+02:07:50.590 --> 02:07:54.410
+solution to a server to a cloud i can't go ahead and set a
+
+02:07:54.410 --> 02:07:57.090
+path everywhere it should always pick from the environment
+
+02:07:57.090 --> 02:08:01.050
+variable but yeah you can you can do it maybe you can ping
+
+02:08:01.050 --> 02:08:04.130
+this rakesh to everyone and they will just like you know
+
+02:08:04.130 --> 02:08:07.450
+replace with their own path so guys wherever you have a
+
+02:08:07.450 --> 02:08:10.150
+python.exe you must be having multiple environment right not
+
+02:08:10.150 --> 02:08:12.490
+just one environment maybe 10 environment in every
+
+02:08:12.490 --> 02:08:15.390
+environment you must be having a python.exe file copy paste
+
+02:08:15.390 --> 02:08:19.650
+simple from any environment it just looks it will be looking
+
+02:08:19.650 --> 02:08:22.950
+for this exe that's it doesn't matter which environment and
+
+02:08:22.950 --> 02:08:30.730
+what like exe and uh one question here sir can we set if
+
+02:08:30.730 --> 02:08:35.330
+else condition type of things that if the server mcp is not
+
+02:08:35.330 --> 02:08:39.870
+found then we can go for the hard coded and obviously we can
+
+02:08:39.870 --> 02:08:42.630
+go see at the end of the day we are doing nothing mcp is
+
+02:08:42.630 --> 02:08:45.790
+what mcp is trying to call technically your function right
+
+02:08:45.790 --> 02:08:50.110
+so if like this function is not giving you the expected
+
+02:08:50.110 --> 02:08:54.110
+output on that we can always write a condition and okay fine
+
+02:08:54.110 --> 02:08:57.950
+so like uh go for the fallback intent or go for the fallback
+
+02:08:57.950 --> 02:09:02.050
+mechanism where where we can put the conditions like this in
+
+02:09:02.050 --> 02:09:06.170
+your mcp server itself so mcp server where you are calling
+
+02:09:06.170 --> 02:09:09.410
+it right where you are calling your uh entire servers yeah
+
+02:09:10.590 --> 02:09:15.310
+so let's talk uh tool calling tool calling so in a return
+
+02:09:15.310 --> 02:09:17.050
+itself you can try to modify it
+
+02:09:20.190 --> 02:09:24.690
+understood we'll try we'll try this yeah tool calling here
+
+02:09:24.690 --> 02:09:28.390
+itself right that if this is if this is going to work so
+
+02:09:28.390 --> 02:09:31.030
+always you are you can write a condition on your like a
+
+02:09:31.030 --> 02:09:35.310
+result basically so you know but here sir we are not
+
+02:09:35.310 --> 02:09:39.450
+actually once we connect with the mcp then only we can come
+
+02:09:39.450 --> 02:09:44.650
+here so i just wanted to set the path where we can give the
+
+02:09:44.650 --> 02:09:49.290
+hard coded on that on that place we wanted to make it
+
+02:09:49.290 --> 02:09:54.370
+dynamic if the dynamic file is not uh from the i mean a
+
+02:09:54.370 --> 02:09:58.210
+right path then we can go for the hard coded that type of no
+
+02:09:58.210 --> 02:10:01.550
+no no that that you can't do basically so see mcp
+
+02:10:01.550 --> 02:10:04.110
+technically means that that you are trying to give a
+
+02:10:04.110 --> 02:10:08.410
+functional access of your system to uh basically your like
+
+02:10:08.410 --> 02:10:15.520
+you know mcp tools so that is that is not possible after
+
+02:10:15.520 --> 02:10:18.980
+calling mcp so yes you can handle with uh you know custom
+
+02:10:18.980 --> 02:10:23.280
+queries uh-huh okay so fine for our case it's working even
+
+02:10:23.280 --> 02:10:26.560
+for root l i believe i believe it will work uh kaushal what
+
+02:10:26.560 --> 02:10:30.280
+is your issue antonu samit what is your issue i'm audible
+
+02:10:30.280 --> 02:10:35.200
+yeah you are audible so i'm sharing my school okay share it
+
+02:10:36.260 --> 02:10:40.740
+so our case is done root l so please try to follow uh maybe
+
+02:10:40.740 --> 02:10:44.360
+do a new installation or set a path or maybe follow our
+
+02:10:44.360 --> 02:10:48.340
+rakesh approach yeah i have
+
+02:10:51.620 --> 02:10:55.980
+okay so i have tried this in conda environment as well as my
+
+02:10:55.980 --> 02:11:00.260
+base environment also so okay okay run it
+
+02:11:13.380 --> 02:11:16.800
+yeah nothing is showing click on review configuration once
+
+02:11:16.800 --> 02:11:21.540
+show me like what it does okay yeah so now it is showing you
+
+02:11:21.540 --> 02:11:26.100
+this file now open up this file now this is the file that
+
+02:11:26.100 --> 02:11:29.200
+you have okay fine python args this this this this fine
+
+02:11:29.200 --> 02:11:36.060
+looks good to me so far control s and this is available in
+
+02:11:36.060 --> 02:11:40.160
+user santa app roaming cloud day cloud no no no just just
+
+02:11:40.160 --> 02:11:48.260
+just just wait wait wait wait shantanu so uh basically c
+
+02:11:48.260 --> 02:11:56.040
+drive users under this this this okay and uh you have
+
+02:11:56.040 --> 02:11:57.420
+clouded cloud desktop
+
+02:12:00.080 --> 02:12:01.880
+configuration
+
+02:12:03.280 --> 02:12:07.560
+fine hmm control s fine go to your cloud hmm
+
+02:12:10.720 --> 02:12:16.980
+uh close it once not from there not from there like file not
+
+02:12:18.780 --> 02:12:22.670
+from there yeah file
+
+02:12:25.430 --> 02:12:29.190
+exit okay open once again
+
+02:12:39.060 --> 02:12:41.320
+hmm it's loading hmm
+
+02:12:51.240 --> 02:12:58.340
+see everything is running yeah yeah so fine for santa no
+
+02:12:58.340 --> 02:13:02.760
+it's fixed you can now chat with the system submit now let
+
+02:13:02.760 --> 02:13:05.200
+me check your screen yeah submit what is the issue that you
+
+02:13:05.200 --> 02:13:10.140
+are facing failed show me the log you don't have mcp server
+
+02:13:10.140 --> 02:13:14.780
+file fine hmm show me log of like any postgres google or
+
+02:13:14.780 --> 02:13:16.260
+mongo okay
+
+02:13:20.620 --> 02:13:23.900
+come down show me the error error part error part like i
+
+02:13:23.900 --> 02:13:30.800
+just wanted to see the okay so mcp okay so your issue is uh
+
+02:13:31.660 --> 02:13:34.080
+it is not able to find out the mcp go to the base
+
+02:13:34.080 --> 02:13:35.280
+environment no
+
+02:13:54.900 --> 02:14:01.050
+so just open up a terminal inside your uh you know vs code
+
+02:14:01.050 --> 02:14:03.430
+itself yeah vs code just
+
+02:14:06.340 --> 02:14:07.580
+inside the base environment inside vs code just open up
+
+02:14:07.580 --> 02:14:11.090
+terminal fine
+
+02:14:15.970 --> 02:14:19.930
+no no need to activate uh this environment just come to the
+
+02:14:19.930 --> 02:14:20.370
+base environment
+
+02:14:26.810 --> 02:14:29.490
+install the common or txt show
+
+02:14:55.440 --> 02:14:57.100
+me python version 3
+
+02:15:06.570 --> 02:15:08.630
+.88 change
+
+02:15:32.440 --> 02:15:36.980
+this environment go to some environment where you have 3.10
+
+02:15:36.980 --> 02:15:44.240
+or something create an environment of 3.10 hmm fine go to
+
+02:15:44.240 --> 02:15:45.440
+that i'm
+
+02:15:47.620 --> 02:15:48.980
+creating an environment with
+
+02:15:57.220 --> 02:15:59.720
+in between so we can check
+
+02:16:07.570 --> 02:16:10.150
+everything is working fine something is saying okay great
+
+02:16:10.150 --> 02:16:13.730
+thank you root is saying okay and guys one more batch we are
+
+02:16:13.730 --> 02:16:16.230
+going to start from today so those who would like to like
+
+02:16:16.230 --> 02:16:19.830
+you know revise the concept or uh anyone would like to join
+
+02:16:19.830 --> 02:16:22.930
+so you can join it uh yeah so that batch is going to start
+
+02:16:22.930 --> 02:16:30.590
+from 4 o'clock today okay so anyone else kaushal you can
+
+02:16:30.590 --> 02:16:34.730
+share your screen in between and uh dhruv i think you have
+
+02:16:34.730 --> 02:16:37.710
+raised your hand so you can uh join as a panelist himanshu
+
+02:16:37.710 --> 02:16:39.670
+can join as a panelist yeah
+
+02:16:49.500 --> 02:16:53.180
+himanshu you can join as a panelist dhamu has raised his
+
+02:16:53.180 --> 02:16:58.020
+hand you can join as a panelist okay so you in between maybe
+
+02:16:58.020 --> 02:17:00.020
+other people can share their screen i can see a multiple
+
+02:17:00.020 --> 02:17:02.660
+screen guys don't worry so you can share your like multiple
+
+02:17:02.660 --> 02:17:07.260
+screens and one by one i can switch so share all of you but
+
+02:17:07.260 --> 02:17:10.680
+i i can look into it one by one okay so now i can see
+
+02:17:10.680 --> 02:17:14.060
+dhruv's screen so dhruv what is the issue uh so dhruv sir
+
+02:17:14.060 --> 02:17:19.740
+just i'm not able to run so basically i have done all these
+
+02:17:19.740 --> 02:17:27.640
+things and i have certain text this file and all also so
+
+02:17:27.640 --> 02:17:31.320
+this second time i was trying first time this was doing some
+
+02:17:31.320 --> 02:17:34.760
+python error then i again did all these things but now i'm
+
+02:17:34.760 --> 02:17:39.020
+not able to run it exactly like how to do that like uh user
+
+02:17:39.020 --> 02:17:42.800
+apple document okay see there is a problem with your folder
+
+02:17:42.800 --> 02:17:46.960
+location as well see there is a ai dash this uh you know so
+
+02:17:46.960 --> 02:17:51.500
+spaces between the folder location and that always creates
+
+02:17:51.500 --> 02:17:54.780
+an issue so just make sure that whenever you are creating a
+
+02:17:54.780 --> 02:17:59.520
+folder there should not be an space between the this one uh
+
+02:17:59.520 --> 02:18:03.680
+okay so i i just copy and pasted the path is still this
+
+02:18:03.680 --> 02:18:07.700
+might be the same so right uh yeah just just remove remove
+
+02:18:07.700 --> 02:18:10.880
+this one yeah this this will be the issue and this is the
+
+02:18:10.880 --> 02:18:13.800
+issue because i can see your folder name is like pretty much
+
+02:18:13.880 --> 02:18:16.920
+scattered it's not like uh you know connected at all there
+
+02:18:16.920 --> 02:18:22.030
+is no underscore nothing there is a space in between okay so
+
+02:18:22.030 --> 02:18:24.590
+just type copy paste it from this particular path and just
+
+02:18:24.590 --> 02:18:27.450
+type paste got it got it got it so the base folder that you
+
+02:18:27.450 --> 02:18:29.610
+are using for a development right so that itself is having
+
+02:18:29.610 --> 02:18:34.670
+like a spaces in between try to handle that and i believe it
+
+02:18:34.670 --> 02:18:37.530
+will be it will be working there is no issue i can see apart
+
+02:18:37.530 --> 02:18:42.190
+from that okay then let me again try yeah try this out find
+
+02:18:42.190 --> 02:18:46.770
+group uh so next is basically dhamu yeah dhamu what is the
+
+02:18:46.770 --> 02:18:48.070
+issue i can see the screen
+
+02:18:53.110 --> 02:18:58.010
+sorry download this one sir by running this i am getting
+
+02:18:58.010 --> 02:19:05.890
+that error one now f drive and then d drive okay actually i
+
+02:19:05.890 --> 02:19:10.990
+am opening this one in f f drive sir no no copy the path
+
+02:19:10.990 --> 02:19:17.020
+just click on mcp server copy the path click on mcp server
+
+02:19:17.020 --> 02:19:21.780
+and copy the path so give me the remote control so
+
+02:19:38.580 --> 02:19:41.880
+somewhere you are giving d drive somewhere you are giving f
+
+02:19:41.880 --> 02:19:42.300
+drive
+
+02:19:49.360 --> 02:19:52.800
+freeze that is less yeah let's see that
+
+02:20:31.550 --> 02:20:32.850
+so this is fine
+
+02:21:00.430 --> 02:21:06.450
+you don't have a python fine with the python so some other
+
+02:21:06.450 --> 02:21:12.970
+folder python is not there why so how you were running other
+
+02:21:12.970 --> 02:21:16.630
+commands before like this class no sir uh virtual in my user
+
+02:21:16.630 --> 02:21:20.410
+virtual in that it was some other folder sir okay
+
+02:21:30.140 --> 02:21:31.480
+okay
+
+02:22:35.480 --> 02:22:39.360
+so mcp server is running now open up your cloud desktop okay
+
+02:22:39.360 --> 02:22:40.500
+close
+
+02:22:43.030 --> 02:22:46.910
+and you open it yeah i can i can't see your like cloud
+
+02:22:46.910 --> 02:22:47.730
+desktop basically
+
+02:22:55.790 --> 02:23:01.270
+sumit is it done for you i am installing the requirement
+
+02:23:01.270 --> 02:23:08.390
+okay okay fine dhamu uh run as administrator only sir sorry
+
+02:23:08.390 --> 02:23:12.250
+sorry administrator only i have to use the to open the cloud
+
+02:23:12.250 --> 02:23:12.850
+app run as administrator only i have to use the to open the
+
+02:23:12.850 --> 02:23:14.550
+cloud app to open the cloud app no no i'm not able to get it
+
+02:23:14.550 --> 02:23:20.170
+what are you saying right so you can just just open up your
+
+02:23:20.170 --> 02:23:23.450
+cloud desktop cloud desktop yes fine
+
+02:23:29.860 --> 02:23:35.040
+first of all exit properly click on file not there not there
+
+02:23:35.040 --> 02:23:35.560
+yeah
+
+02:23:38.620 --> 02:23:47.400
+give me remote control yeah yes sir exit exit okay so okay
+
+02:23:47.400 --> 02:23:48.800
+launch again running
+
+02:23:53.690 --> 02:23:57.550
+anything anything is fine normal mode is also fine
+
+02:24:08.230 --> 02:24:13.210
+go to your okay fine show me the log okay it's fine your is
+
+02:24:13.210 --> 02:24:16.610
+like a python environment not able to find out got it got
+
+02:24:16.610 --> 02:24:21.590
+the issue uh so fine fine fine fine go back go back to your
+
+02:24:21.590 --> 02:24:22.070
+config file
+
+02:24:24.850 --> 02:24:26.530
+now open up a new environment
+
+02:24:31.770 --> 02:24:33.910
+okay so just try to type where python
+
+02:24:36.910 --> 02:24:40.670
+python him sir where python where where where w he re where
+
+02:24:40.670 --> 02:24:44.270
+python once you saying done sir working file with the base
+
+02:24:44.270 --> 02:24:47.190
+environment amazing Sivanth is saying now working well for
+
+02:24:47.190 --> 02:24:49.650
+me after give python you say okay amazing so that is a
+
+02:24:49.650 --> 02:24:52.750
+solution from like you know temporary solution from Rakesh
+
+02:24:52.750 --> 02:24:55.970
+so all thanks goes to Rakesh Upadhyay so now working thanks
+
+02:24:55.970 --> 02:25:00.330
+for adding a python path great so basically where python
+
+02:25:00.330 --> 02:25:01.270
+yeah just python
+
+02:25:05.320 --> 02:25:08.480
+enter could not find the python path you have created the
+
+02:25:08.480 --> 02:25:11.560
+virtual environment right yes sir go to any virtual
+
+02:25:11.560 --> 02:25:18.720
+environment here here you have vnv here itself your vnv in
+
+02:25:18.720 --> 02:25:24.820
+the same folder see below yeah click script okay so you must
+
+02:25:24.820 --> 02:25:30.020
+be having a python dot exe python python python dot exe yeah
+
+02:25:30.020 --> 02:25:37.340
+copy right click copy the path yeah go to your config json
+
+02:25:42.770 --> 02:25:46.020
+no not from here not from here so okay give me a remote
+
+02:25:46.020 --> 02:25:51.220
+control okay stop give me remote control yeah you
+
+02:25:54.800 --> 02:25:58.300
+have copied the path right yes sir okay hard
+
+02:26:02.780 --> 02:26:03.480
+code this
+
+02:27:09.760 --> 02:27:14.480
+click click yeah click you can check even over here see
+
+02:27:14.480 --> 02:27:18.680
+everything is running yes sir yeah so there was a python
+
+02:27:18.680 --> 02:27:22.440
+issue it's fixed okay thank you sir okay for me also it is
+
+02:27:22.440 --> 02:27:28.900
+running oh yeah great Sumit great and if i will try to chart
+
+02:27:28.900 --> 02:27:30.240
+then i will do the same thing yeah let me just go and go to
+
+02:27:30.240 --> 02:27:36.340
+chat and ask about contact table yeah you can you can ask
+
+02:27:36.340 --> 02:27:39.820
+for the table and chat with my email so tomorrow i will tell
+
+02:27:39.820 --> 02:27:43.200
+you how to config your email and your seat but for today you
+
+02:27:43.200 --> 02:27:47.580
+can chat with my email my google see my calendar etwa
+
+02:27:47.580 --> 02:27:54.140
+databases my MongoDB Alpha identities yeah and tomorrow you
+
+02:27:54.140 --> 02:27:58.260
+will be able to talk to yours fine himanshu what is the
+
+02:27:58.260 --> 02:28:01.260
+issue no yeah hi sir i am cold and how are you? Yeah. Can
+
+02:28:01.260 --> 02:28:03.540
+you hear me? Yeah, I can hear you. I can see your screen as
+
+02:28:03.540 --> 02:28:07.640
+well. Yeah. Yeah. So I'm getting this module not found data.
+
+02:28:07.900 --> 02:28:13.920
+Which one? Show me. Oh, okay. MCP. Fine. Close this one.
+
+02:28:17.580 --> 02:28:21.660
+Open up your terminal. Just run this into a base
+
+02:28:21.660 --> 02:28:23.740
+environment. Change the environment. Use the base
+
+02:28:23.740 --> 02:28:23.960
+environment.
+
+02:28:42.600 --> 02:28:44.340
+Now pip install hyphen R. Yeah.
+
+02:29:40.900 --> 02:29:44.720
+Yeah. So it is completed. So I'll just run this MCP server
+
+02:29:44.720 --> 02:29:48.400
+to the pipeline. Oh yes. Yeah. So MCP some other pipe ideas.
+
+02:29:53.210 --> 02:29:57.030
+So guys, all of you are enjoying these kinds of lectures or
+
+02:29:57.030 --> 02:29:59.270
+so they go in more theoretical manner. What would you like?
+
+02:29:59.370 --> 02:30:03.210
+Like, so I go in a more practical or theoretical. So what is
+
+02:30:03.210 --> 02:30:06.210
+your opinion? I'm unsure. I didn't think a combination of
+
+02:30:06.210 --> 02:30:11.830
+both. It's really good. I mean, like, it's very diplomatic
+
+02:30:11.830 --> 02:30:16.250
+sentence. I mean, yeah, I think practical thing is, really
+
+02:30:16.250 --> 02:30:19.610
+great so only thing that if the theoretical part is also
+
+02:30:19.610 --> 02:30:22.590
+will be little in depth so I think that will be also
+
+02:30:22.590 --> 02:30:25.470
+helpful. There is not much theory in these things I mean
+
+02:30:25.470 --> 02:30:30.410
+like that's like I have simply given you analogy right so if
+
+02:30:30.410 --> 02:30:36.190
+there is you know like a you understand basically APIs so
+
+02:30:36.190 --> 02:30:39.910
+parallel to that there is MCPs APIs also protocol this is
+
+02:30:39.910 --> 02:30:43.110
+also protocol so this is a protocol where by which you can
+
+02:30:43.110 --> 02:30:45.970
+give an access to LLMs and more and more you will be able to
+
+02:30:45.970 --> 02:30:49.110
+understand tomorrow. I mean like it's not an algorithm right
+
+02:30:49.110 --> 02:30:52.670
+it's just a system thing so wherever algorithm comes into a
+
+02:30:52.670 --> 02:30:57.890
+picture I think we should talk more about a mathematics we
+
+02:30:57.890 --> 02:31:01.970
+should talk more about theory but if it is not an algorithm
+
+02:31:02.650 --> 02:31:08.610
+if it is something which we have to build then theory
+
+02:31:08.610 --> 02:31:11.790
+believe me if I am going to teach you a theory and then if I
+
+02:31:11.790 --> 02:31:14.170
+am going to give you example of calculator right that how
+
+02:31:14.170 --> 02:31:18.130
+you can call a calculator function into your MCP you will
+
+02:31:18.130 --> 02:31:21.950
+feel pissed off believe me yeah yeah no I was talking about
+
+02:31:21.950 --> 02:31:25.290
+like you told about that LoRa part the mathematical how the
+
+02:31:25.290 --> 02:31:29.490
+re-ranking. Yeah LoRa and Quora part right yes yeah so in
+
+02:31:29.490 --> 02:31:31.990
+those kind of a lecture so obviously we should explore more
+
+02:31:31.990 --> 02:31:36.990
+and more theory that I agree yeah that I truly agree so
+
+02:31:36.990 --> 02:31:39.230
+which I have already covered in some of my lectures so
+
+02:31:39.230 --> 02:31:43.990
+that's the reason you know out of laziness you can say it's
+
+02:31:43.990 --> 02:31:46.850
+a live lecture right so some day your mentor feel good some
+
+02:31:46.850 --> 02:31:50.970
+day your mentor feel bad so you know we just talk about the
+
+02:31:50.970 --> 02:31:54.830
+theory and practical sometimes so this is how things happen
+
+02:31:54.830 --> 02:31:57.450
+I think practical is quite better approach likewise code
+
+02:31:57.450 --> 02:32:01.510
+walkthrough yeah exactly see if you understand something in
+
+02:32:01.510 --> 02:32:05.510
+a practical manner and overall like a theory if we
+
+02:32:05.510 --> 02:32:08.770
+understand believe me if someone is going to ask you a in
+
+02:32:08.770 --> 02:32:11.890
+depth of theory automatically you will be able to explain
+
+02:32:11.890 --> 02:32:14.570
+you will be able to relate because unless and until you are
+
+02:32:14.570 --> 02:32:17.870
+not able to see something in practical so for example if I'm
+
+02:32:17.870 --> 02:32:21.950
+going to give you a one hour definition for MCPs right but
+
+02:32:21.950 --> 02:32:25.190
+if I'm not going to show you a real practical things that
+
+02:32:25.190 --> 02:32:27.830
+how you will be able to communicate with any of your system
+
+02:32:27.830 --> 02:32:32.370
+it's of no use I mean like just by knowing a definition what
+
+02:32:32.370 --> 02:32:36.050
+anyone can do nothing yeah I think it should work Himanshu
+
+02:32:36.050 --> 02:32:39.870
+for you yeah yeah so maybe you can check you can just click
+
+02:32:39.870 --> 02:32:42.450
+on like a button beside the plus that you have over here
+
+02:32:43.650 --> 02:32:46.790
+just beside the no no the next one next one the beside plus
+
+02:32:46.790 --> 02:32:51.170
+yeah the next one next next button next yeah see you are
+
+02:32:51.170 --> 02:32:54.590
+able to see your server right mongo postgres and this is
+
+02:32:55.030 --> 02:32:58.090
+then it's working I believe so it was just an environment
+
+02:32:58.090 --> 02:33:03.110
+thing so base environment yes yes yes yeah now you can now
+
+02:33:03.110 --> 02:33:07.170
+you can start chatting with my system sure sure I'll do that
+
+02:33:07.170 --> 02:33:12.330
+yeah yeah yeah thank you yeah thanks okay so Vansh and
+
+02:33:12.330 --> 02:33:18.790
+Rakesh yeah tell me what is what is like the your issue even
+
+02:33:18.790 --> 02:33:23.530
+though we have implemented these things but I wanted to ask
+
+02:33:23.530 --> 02:33:29.070
+the one question that with the help of fine tuning we also
+
+02:33:30.110 --> 02:33:34.370
+we are asking the to the LLM for our specific organization
+
+02:33:34.370 --> 02:33:39.350
+if you are fine tuning with our organization right and with
+
+02:33:39.350 --> 02:33:42.210
+the help of MCP as well we are doing the same thing like no
+
+02:33:42.210 --> 02:33:45.410
+no no no see fine tuning means what fine tuning means you
+
+02:33:45.410 --> 02:33:49.850
+are changing a model weight yeah right this is what we have
+
+02:33:49.850 --> 02:33:52.530
+done in last classes and then we are deploying a model so
+
+02:33:52.530 --> 02:33:56.110
+technically in terms of fine tuning we are building our own
+
+02:33:56.110 --> 02:34:00.810
+new model correct yeah LLMs or you can say precisely LLMs we
+
+02:34:00.810 --> 02:34:04.410
+are trying to build right with respect to MCPs what you have
+
+02:34:04.410 --> 02:34:06.990
+done so now you are able to access what you are able to
+
+02:34:06.990 --> 02:34:10.110
+access my database sql database you are able to access my
+
+02:34:10.110 --> 02:34:13.290
+mongo db you are able to access my mail id you are able to
+
+02:34:13.290 --> 02:34:15.690
+access my calendar and you are able to access my google seat
+
+02:34:15.690 --> 02:34:19.850
+right five entities you are able to access today itself just
+
+02:34:19.850 --> 02:34:24.450
+with the help of MCPs so MCPs are nothing so basically MCP
+
+02:34:24.450 --> 02:34:28.230
+is a protocol over there we are not providing LLMs we are
+
+02:34:28.230 --> 02:34:31.710
+creating MCPs means we are creating a function technically
+
+02:34:31.710 --> 02:34:34.410
+those functions nothing but a function which is able to
+
+02:34:34.410 --> 02:34:37.750
+access some of my system and then we are attaching those
+
+02:34:37.750 --> 02:34:41.810
+function to a cloud a means what cloud a cloud is having
+
+02:34:41.810 --> 02:34:47.430
+which model sonet right LLM model so we are giving that to
+
+02:34:47.430 --> 02:34:51.390
+my model that okay take my system access so whenever I have
+
+02:34:51.390 --> 02:34:55.210
+to expose my system where I can chat so now if I have to do
+
+02:34:55.210 --> 02:34:58.130
+any kind of research with respect to my database or data or
+
+02:34:58.130 --> 02:35:00.310
+maybe if I have to do some sort of insert update operation
+
+02:35:00.310 --> 02:35:03.870
+into a databases I don't have to go and run sql query let's
+
+02:35:03.870 --> 02:35:06.250
+suppose I am a person who are not aware about sql query
+
+02:35:07.890 --> 02:35:11.770
+right now I can just chat with my system and then I will be
+
+02:35:11.770 --> 02:35:14.210
+able to do some insert update and delete operation or maybe
+
+02:35:14.210 --> 02:35:19.110
+some sort of analytic operation yeah so this is where MCP
+
+02:35:19.110 --> 02:35:24.350
+means you are exposing your system to a LLM and fine tuning
+
+02:35:24.350 --> 02:35:29.490
+means I am building that LLM understood sir but I just
+
+02:35:29.490 --> 02:35:33.710
+wanted to ask that the same thing which we are achieving
+
+02:35:33.710 --> 02:35:37.450
+with the help of fine tuning I mean not at all no no no it's
+
+02:35:37.450 --> 02:35:39.750
+not comparison it's like apple versus orange kind of a
+
+02:35:39.750 --> 02:35:44.050
+comparison it's not at all relatable in any manner see fine
+
+02:35:44.050 --> 02:35:46.050
+tuning means what so let's suppose I have fine tuned the
+
+02:35:46.050 --> 02:35:50.210
+model will it be able to access my gmail account no actually
+
+02:35:50.210 --> 02:35:54.930
+I am not going for the technical thing which we are
+
+02:35:54.930 --> 02:35:58.810
+implementing within the fine tuning or within the MCP I just
+
+02:35:58.810 --> 02:36:02.870
+wanted to discuss about the end result I mean for the
+
+02:36:02.870 --> 02:36:06.990
+specific organizations in the fine tuning also we are
+
+02:36:06.990 --> 02:36:10.150
+getting the result right for the specific organization and
+
+02:36:10.810 --> 02:36:15.790
+whatever I want to provide the data with the help of MCP as
+
+02:36:15.790 --> 02:36:18.350
+well we are achieving that the same thing we are providing
+
+02:36:18.350 --> 02:36:20.670
+just a data with MCP we are providing the system access
+
+02:36:20.670 --> 02:36:23.950
+there is a difference in terms of fine tuning so yeah you
+
+02:36:23.950 --> 02:36:26.110
+have taken a data you have trained the model now model is
+
+02:36:26.110 --> 02:36:29.570
+able to give you reply that is a data part right but here
+
+02:36:29.570 --> 02:36:32.930
+with the help of MCP my gmail system access is not a data
+
+02:36:32.930 --> 02:36:38.310
+it's a system access right right right so fine tuning wise
+
+02:36:38.310 --> 02:36:41.090
+you are just providing data and it is trying to train itself
+
+02:36:41.090 --> 02:36:44.330
+with respect to a data but in terms of MCPs are we providing
+
+02:36:44.330 --> 02:36:48.530
+a data no we are giving a so forget about SQL system or
+
+02:36:48.530 --> 02:36:50.870
+MongoDB system access if you are getting confused I am
+
+02:36:50.870 --> 02:36:54.610
+providing my calendar access now just with just by chatting
+
+02:36:54.610 --> 02:36:59.050
+to your like you know like cloud your LLMs you will be able
+
+02:36:59.050 --> 02:37:01.610
+to schedule a meeting will you be able to do it with respect
+
+02:37:01.610 --> 02:37:08.010
+to fine tuning no right no yes exactly so with respect to
+
+02:37:08.010 --> 02:37:11.530
+MCPs we are providing a system access not just a data access
+
+02:37:11.530 --> 02:37:15.130
+obviously data is a part of the system so you can eventually
+
+02:37:15.230 --> 02:37:17.430
+provide a data access that's completely fine like a database
+
+02:37:17.430 --> 02:37:20.630
+access we are providing but technically MCP means we are
+
+02:37:20.630 --> 02:37:22.990
+providing a system access it can access my calendar it can
+
+02:37:22.990 --> 02:37:27.770
+access my google seat right but we can say a superset MCP is
+
+02:37:27.770 --> 02:37:31.270
+a superset of fine tuning no like I said it's a apple versus
+
+02:37:31.270 --> 02:37:37.150
+orange comparison you can't say it not recommended yeah so
+
+02:37:37.150 --> 02:37:43.130
+you can't you can't do the comparison even okay so fine next
+
+02:37:43.130 --> 02:37:45.970
+one at least you can go ahead with the question yeah yeah so
+
+02:37:47.610 --> 02:37:51.950
+like what system access we are let's say any tool we are
+
+02:37:51.950 --> 02:37:55.890
+also giving any API access or any system access via tools
+
+02:37:55.890 --> 02:37:59.910
+right I mean like technically in world of LLMs in world of
+
+02:37:59.910 --> 02:38:03.710
+you know NTKI or generative AI those functions are
+
+02:38:03.710 --> 02:38:07.250
+technically named as tool technically it's a function that's
+
+02:38:07.250 --> 02:38:11.990
+why separate MCP is required for that because we are already
+
+02:38:11.990 --> 02:38:16.490
+achieving that what MCP is bringing into into the table see
+
+02:38:16.490 --> 02:38:21.370
+MCP is one of the protocol right like so MCP what MCP is
+
+02:38:21.370 --> 02:38:23.770
+bringing in that table so basically it is giving a
+
+02:38:23.770 --> 02:38:27.110
+synchronous access to the system that is a part number one a
+
+02:38:27.110 --> 02:38:30.070
+part number two so you can connect any system in this entire
+
+02:38:30.070 --> 02:38:33.490
+world to any LLMs directly without going ahead with the
+
+02:38:33.490 --> 02:38:36.910
+agentic approach I would say that's a part number two part
+
+02:38:36.910 --> 02:38:39.970
+number three even agents will be able to consume an MCP
+
+02:38:39.970 --> 02:38:44.070
+right so it's just another protocol which has been created
+
+02:38:44.070 --> 02:38:47.010
+for example so we have a rest protocol right we have a GPRC
+
+02:38:47.010 --> 02:38:50.450
+protocol so we have a web socket now all of these system
+
+02:38:50.450 --> 02:38:52.590
+which has been created so technically they help us to
+
+02:38:52.590 --> 02:38:57.310
+transfer the data agree yeah but in a different different
+
+02:38:57.310 --> 02:39:01.430
+mode so some in a if I'll talk about a web socket so maybe
+
+02:39:01.430 --> 02:39:04.010
+into a real time mode I will be able to you know send our
+
+02:39:04.010 --> 02:39:06.890
+data if I'll talk about the rest API so basically when
+
+02:39:06.890 --> 02:39:10.370
+called then I'll return kind of a like a philosophy it is
+
+02:39:10.370 --> 02:39:12.870
+going to follow the similar manner MCP is one of the
+
+02:39:12.870 --> 02:39:15.410
+protocol which has been created so you can try to you know
+
+02:39:15.410 --> 02:39:19.110
+now if one system will become MCP you can try to use
+
+02:39:19.110 --> 02:39:22.630
+anywhere you want with any LLM with ease you can like for
+
+02:39:22.630 --> 02:39:25.150
+example we have created the MCP server right 5 MCP server we
+
+02:39:25.150 --> 02:39:28.870
+have created yeah and with ease what we have done we have
+
+02:39:28.870 --> 02:39:33.350
+just set the path and now my cloud is like up so in short it
+
+02:39:33.350 --> 02:39:36.310
+is like a luxury that it is not mandatory that you have to
+
+02:39:36.310 --> 02:39:42.870
+access your system not at all not at all right not at all
+
+02:39:42.870 --> 02:39:46.590
+mandatory I would say so I can you know create a fast API
+
+02:39:47.150 --> 02:39:49.870
+which I know let's suppose I don't know MCP I can create API
+
+02:39:49.870 --> 02:39:52.730
+based like you know exposure and then I can try to give to
+
+02:39:52.730 --> 02:39:56.190
+the system that's completely fine I think I can feel only
+
+02:39:56.190 --> 02:39:59.310
+difference is in case of API you have to mention parameter
+
+02:39:59.310 --> 02:40:03.390
+description and all in system prompt or user prompt in this
+
+02:40:03.390 --> 02:40:07.370
+case we are if we are going into an agentic way if we are
+
+02:40:07.370 --> 02:40:09.610
+going into an agentic way then obviously we have to define
+
+02:40:09.610 --> 02:40:12.850
+that so that you know my agents technically again LLMs will
+
+02:40:12.850 --> 02:40:15.210
+be able to understand right LLMs will be able to understand.
+
+02:40:15.230 --> 02:40:19.010
+and again here so it's a different protocol all together
+
+02:40:19.010 --> 02:40:22.610
+which has been created different approach right it's not
+
+02:40:22.610 --> 02:40:25.610
+like just you have to go with the MCP approach it's a
+
+02:40:25.610 --> 02:40:27.570
+different approach which has been created which is a global
+
+02:40:27.570 --> 02:40:31.250
+approach and like with this every system can expose
+
+02:40:31.250 --> 02:40:34.310
+themselves Amazon can expose themselves booking.com has
+
+02:40:34.310 --> 02:40:36.570
+already exposed themselves Coursera has exposed themselves
+
+02:40:37.070 --> 02:40:40.490
+so now anyone and everyone so without having the actual
+
+02:40:40.490 --> 02:40:42.950
+access of Coursera they can just click connect and then they
+
+02:40:42.950 --> 02:40:48.750
+can talk to that system and the one we did for MongoDB I
+
+02:40:48.750 --> 02:40:54.630
+think I have seen MongoDB also given MCP they exposed MCP
+
+02:40:54.630 --> 02:40:58.730
+for Atlas even if you will go to like you know chat GPT or
+
+02:40:58.730 --> 02:41:02.010
+anywhere so you will be able to find out that there is a MCP
+
+02:41:02.010 --> 02:41:05.070
+exposed for a Gmail MCP exposed for a calendar but still I
+
+02:41:05.070 --> 02:41:09.530
+have created my own yes yes so you can try to many people
+
+02:41:09.530 --> 02:41:11.650
+have done that right you will be now you will be able to
+
+02:41:11.650 --> 02:41:15.670
+find out thousands of MCP connectors yeah and you can create
+
+02:41:15.670 --> 02:41:18.490
+parallelly your own so I have created my own calendar MCP I
+
+02:41:18.490 --> 02:41:22.070
+have created my own Gmail MCP I have created my own Google
+
+02:41:22.070 --> 02:41:25.170
+seat MCPs so that I can show you that this is how it's been
+
+02:41:25.170 --> 02:41:28.530
+created it's been created yeah I got the intention but my
+
+02:41:28.530 --> 02:41:33.910
+question now is the world is using this MCP really or simply
+
+02:41:33.910 --> 02:41:36.930
+they are exposing and keeping as an option see the whole
+
+02:41:36.930 --> 02:41:40.290
+generative AI itself is in chaos I would say right some
+
+02:41:40.290 --> 02:41:43.350
+people are claiming that 95% of the projects which we are
+
+02:41:43.350 --> 02:41:46.270
+building is useless some people are claiming that AI is
+
+02:41:46.270 --> 02:41:49.230
+really a hype some people are saying that AI AGI will become
+
+02:41:49.230 --> 02:41:53.190
+a reality next 5 to 10 year right so again the world is
+
+02:41:53.190 --> 02:41:56.550
+divided the only good thing which I can see is investment is
+
+02:41:56.550 --> 02:41:59.370
+coming more and more and more people are talking about it
+
+02:41:59.370 --> 02:42:03.250
+more and more and more and yes if you will ask me on a
+
+02:42:03.250 --> 02:42:07.410
+personal level so personally I have used or I am still using
+
+02:42:07.410 --> 02:42:12.510
+AI almost 90% of the time for all kind of a work right
+
+02:42:12.510 --> 02:42:16.070
+morning till evening so yes personally it has impacted my
+
+02:42:16.070 --> 02:42:19.110
+life so I am assuming that it has impacted everyone's life
+
+02:42:19.110 --> 02:42:23.030
+on this entire planet so it's a real thing and if something
+
+02:42:23.030 --> 02:42:29.420
+is a real it's actually been used got it and it is having a
+
+02:42:29.420 --> 02:42:33.640
+value got it so it's so it's worth learning I would say that
+
+02:42:33.640 --> 02:42:38.920
+that's my opinion yeah got it thank you yeah thanks okay so
+
+02:42:38.920 --> 02:42:42.640
+suggest go ahead sorry I think I have promoted you as a
+
+02:42:42.640 --> 02:42:49.540
+panelist yeah suggest you have a question yeah can I share
+
+02:42:49.540 --> 02:42:51.580
+the screen yeah sure you can share the screen
+
+02:42:58.010 --> 02:43:01.990
+investment in AI means more exactly yeah I mean like we all
+
+02:43:01.990 --> 02:43:04.930
+are moving towards with the trend right so obviously if
+
+02:43:04.930 --> 02:43:09.810
+something is real something is creating a value and
+
+02:43:09.810 --> 02:43:12.170
+personally just as look into your life so how AI has
+
+02:43:12.170 --> 02:43:15.170
+impacted your life so if it has impacted your life means
+
+02:43:15.170 --> 02:43:18.570
+it's real and it will impact more just a matter of time
+
+02:43:18.570 --> 02:43:22.190
+maybe wait for like next couple of more year it will impact
+
+02:43:22.190 --> 02:43:27.350
+more so be ready with the AI yes suggest what is the issue I
+
+02:43:27.350 --> 02:43:32.550
+am still learning with my run that in a base environment run
+
+02:43:32.550 --> 02:43:36.910
+in a base deactivate this environment okay PK
+
+02:43:49.420 --> 02:43:52.920
+is asking how it is different from agent giving a tool
+
+02:43:52.920 --> 02:43:58.120
+access then why MCP see in case of agent so again you have
+
+02:43:58.120 --> 02:44:02.500
+to use any agentic orchestration framework agree everyone
+
+02:44:02.500 --> 02:44:06.400
+yeah you have to use any agentic orchestration framework
+
+02:44:06.400 --> 02:44:10.840
+Lanchen Lama indexes Landgraf crew AI autogen any of these
+
+02:44:10.840 --> 02:44:15.780
+are maybe any 10 agree in case of agent you have to use any
+
+02:44:15.780 --> 02:44:18.880
+agentic orchestration framework right then you will go there
+
+02:44:18.880 --> 02:44:21.580
+then you will create a agents and then you will try to
+
+02:44:21.580 --> 02:44:24.460
+create a tool inside that and then you will give a tool
+
+02:44:24.460 --> 02:44:26.580
+access tool access means you can give any data access
+
+02:44:26.580 --> 02:44:30.620
+function or system access to anything that is one of the
+
+02:44:30.620 --> 02:44:33.640
+approach by which LLM will be able to get an access of your
+
+02:44:33.640 --> 02:44:35.820
+different different tools and they can make a decision okay
+
+02:44:35.820 --> 02:44:38.600
+so do this do this do this based on your natural language
+
+02:44:38.600 --> 02:44:42.760
+query that's one of the flow the other flow is build your
+
+02:44:42.760 --> 02:44:45.900
+function which like which is able to access your tools or
+
+02:44:45.900 --> 02:44:50.820
+like any other like database or system that you have and
+
+02:44:50.820 --> 02:44:54.560
+then keep it make it generic just like a rule just like a
+
+02:44:54.560 --> 02:44:58.500
+protocol and then attach to any system which accepts MCP
+
+02:44:58.500 --> 02:45:01.940
+this is how you can differentiate hello
+
+02:45:04.240 --> 02:45:10.140
+yeah so I am just run it hmm
+
+02:45:15.220 --> 02:45:21.470
+no module in MCP install requirement.txt yes I have
+
+02:45:21.470 --> 02:45:25.210
+installed in the particular environment but here here here
+
+02:45:25.210 --> 02:45:27.950
+people install iphone requirement.txt so
+
+02:45:32.080 --> 02:45:35.520
+you can go in a agentic way you can go even in this way and
+
+02:45:35.520 --> 02:45:38.480
+both the way you are technically giving your system access
+
+02:45:38.480 --> 02:45:43.660
+to this one so MCP is technically a rule based you are just
+
+02:45:43.660 --> 02:45:46.760
+like independently you are creating all the servers for any
+
+02:45:46.760 --> 02:45:50.000
+system of that of your choice and then you are giving access
+
+02:45:50.000 --> 02:45:53.720
+in case of agentic approach you are using some orchestration
+
+02:45:53.720 --> 02:45:59.060
+framework or maybe a tool or maybe a library it's working
+
+02:45:59.060 --> 02:46:03.200
+okay great if we install iphone what is the issue no
+
+02:46:03.200 --> 02:46:07.340
+matching distribution find for MCP okay so what is your like
+
+02:46:07.340 --> 02:46:16.060
+python version just 3.1 3 point 3.9 just show me python
+
+02:46:16.060 --> 02:46:17.540
+version 3
+
+02:46:19.840 --> 02:46:25.200
+.9 then it should ideally work no matching distribution find
+
+02:46:25.200 --> 02:46:26.060
+okay
+
+02:47:03.770 --> 02:47:07.690
+no no just just wait just wait hmm
+
+02:47:18.760 --> 02:47:21.500
+go to your requirement.txt make
+
+02:47:25.570 --> 02:47:29.070
+it MCP is equal equal to 1.20 equal
+
+02:47:33.000 --> 02:47:34.560
+equal to remove
+
+02:47:37.890 --> 02:47:47.600
+remove greater than greater than equal equal to 1.20 okay
+
+02:47:47.600 --> 02:48:01.960
+control s 1.20 1.20 not 2.0 1.20 1.20 1.20 1.20 control s
+
+02:48:01.960 --> 02:48:07.320
+now do it run the requirement again
+
+02:48:13.330 --> 02:48:19.210
+remove version remove the version remove version from MCP
+
+02:48:19.210 --> 02:48:28.090
+remove the version okay remove control s run again no
+
+02:48:32.860 --> 02:48:39.920
+matching distribution find for MCP at all okay so okay so it
+
+02:48:39.920 --> 02:48:43.040
+requires python 3.10 at least then only it is going to work
+
+02:48:43.040 --> 02:48:45.640
+fine so do you have any environment where you have like you
+
+02:48:45.640 --> 02:48:50.960
+know python 3.10 yes yes okay use that environment yes
+
+02:49:06.100 --> 02:49:11.060
+okay so use it yes
+
+02:49:31.760 --> 02:49:36.480
+can I can I create new environment here yeah yeah you can
+
+02:49:36.480 --> 02:49:38.000
+create anywhere of your choice yeah
+
+02:51:23.260 --> 02:51:26.500
+no it's not like that I think your friend must be having a
+
+02:51:26.500 --> 02:51:29.860
+limited exposure to the system or I don't know what is his
+
+02:51:29.860 --> 02:51:33.640
+qualification but it's not like that we try to expose that
+
+02:51:33.640 --> 02:51:37.240
+as a ssc so we just like a create any kind of a tool for
+
+02:51:37.240 --> 02:51:40.120
+example if I have to expose my Euron system so I'll just
+
+02:51:40.120 --> 02:51:43.500
+create one tool and solve it and then anyone and everyone
+
+02:51:43.500 --> 02:51:46.080
+who can call it as a ssc so they will be able to check
+
+02:51:46.080 --> 02:51:51.920
+everything with respect to the Euron right like with their
+
+02:51:51.920 --> 02:51:56.560
+own favorite LLMs right and this really makes our life very
+
+02:51:56.560 --> 02:52:00.500
+very easy and that's the whole fundamentals behind using or
+
+02:52:00.500 --> 02:52:03.360
+creating a MCP protocol so
+
+02:52:08.730 --> 02:52:11.610
+last year I done solve the requirements that they have okay
+
+02:52:11.610 --> 02:52:15.770
+then then try running this MCP server okay
+
+02:52:25.340 --> 02:52:29.920
+okay it's good to see and race is helping you out like
+
+02:52:38.270 --> 02:52:38.870
+now like
+
+02:52:43.460 --> 02:52:46.520
+yeah exit it exit first give
+
+02:52:52.060 --> 02:52:53.560
+me remote control yeah file
+
+02:53:00.320 --> 02:53:04.020
+just leave your system okay okay just
+
+02:53:28.530 --> 02:53:37.070
+leave your system so that I can access okay I am not I am
+
+02:53:37.070 --> 02:53:41.610
+not able to click on your name or anything one second yeah
+
+02:53:41.610 --> 02:53:43.970
+just
+
+02:53:46.690 --> 02:53:50.870
+just leave leave your mouse on system everything okay
+
+02:53:57.080 --> 02:54:03.520
+still I am not able to click okay click on your name okay go
+
+02:54:03.520 --> 02:54:04.820
+to developer go to developer
+
+02:54:13.380 --> 02:54:15.320
+edit configuration open
+
+02:54:17.470 --> 02:54:19.070
+this file drive
+
+02:54:25.470 --> 02:54:29.950
+this this this source and cpm cp server dot file okay so
+
+02:54:29.950 --> 02:54:36.550
+there is some issue with this file there was some go up go
+
+02:54:36.550 --> 02:54:40.310
+up no no no there is some issue with this file okay so there
+
+02:54:40.310 --> 02:54:50.130
+is a mcp server you have mentioned and after that so okay
+
+02:54:50.130 --> 02:54:57.610
+got it so this is a json issue now it's fine control s this
+
+02:54:57.610 --> 02:55:01.810
+is one of the issue and then you have missed a json even
+
+02:55:01.810 --> 02:55:09.510
+over here now this is fixed hmm now go to your cloud okay
+
+02:55:09.510 --> 02:55:10.930
+let me close
+
+02:55:24.890 --> 02:55:29.570
+hmm developer setting now let's see what
+
+03:04:26.240 --> 03:04:33.360
+right install it's 3.9 oh yes
+
+03:05:22.020 --> 03:05:26.680
+then do I need to remove 3.9 version from my it's it's fine
+
+03:05:26.680 --> 03:05:31.320
+I am just overriding it will override automatically okay the
+
+03:05:31.320 --> 03:05:32.840
+same yeah
+
+03:07:16.560 --> 03:07:19.720
+just just wait i'm checking okay
+
+03:07:36.760 --> 03:07:38.560
+sign 3.90
+
+03:08:00.100 --> 03:08:00.700
+what
+
+03:08:17.920 --> 03:08:21.060
+is your environment name sorry it's the base environment i
+
+03:08:21.060 --> 03:08:21.840
+have to use fine
+
+03:08:40.000 --> 03:08:45.720
+now it will work if the requirement files will be installed
+
+03:08:45.720 --> 03:08:50.800
+um so we are installing it in a base and we in a base we
+
+03:08:50.800 --> 03:08:52.860
+have 3.10 okay
+
+03:10:11.760 --> 03:10:13.700
+yeah so
+
+03:11:14.020 --> 03:11:19.580
+it's working now it's working yeah see yeah so it was just a
+
+03:11:19.580 --> 03:11:22.160
+base environment issue nothing else that was the only thing
+
+03:11:22.160 --> 03:11:27.300
+yeah thank you thank you okay yeah thank you fine so fine
+
+03:11:27.300 --> 03:11:30.820
+guys everyone will connect again tomorrow same time and what
+
+03:11:30.820 --> 03:11:34.120
+we are going to do so we are going to like you know see each
+
+03:11:34.120 --> 03:11:37.700
+and everything all this five mcp server that we have created
+
+03:11:37.700 --> 03:11:39.900
+or technically three file of mcp server that we have created
+
+03:11:39.900 --> 03:11:43.260
+so how we can configure it in our own way and we'll try to
+
+03:11:43.260 --> 03:11:45.740
+understand more and more in depth theoretically as well as
+
+03:11:45.740 --> 03:11:47.960
+like practically with that thank you so much everyone hope
+
+03:11:47.960 --> 03:11:50.660
+all of you have enjoyed and we are doing something real
+
+03:11:50.660 --> 03:11:52.960
+right that you can write it down inside your resume directly
+
+03:11:52.960 --> 03:11:57.140
+that i have created 500 mcb server or 600 mc server i have
+
+03:11:57.140 --> 03:11:59.480
+created mcb server for a sales team for hr team for this
+
+03:11:59.480 --> 03:12:02.720
+team that team so in in this way basically you can try to
+
+03:12:02.720 --> 03:12:06.200
+mention everything uh like a kind of a work in in your like
+
+03:12:06.200 --> 03:12:09.780
+a portfolio in your resume and even you can go and you can
+
+03:12:09.780 --> 03:12:11.980
+talk about it right that okay so i have created even an
+
+03:12:11.980 --> 03:12:15.480
+agent i have created even a mcp so where mcp where agent all
+
+03:12:15.480 --> 03:12:18.120
+these things you can discuss right and that's the reason so
+
+03:12:18.120 --> 03:12:20.920
+i'm trying to talk about all of this example not with some
+
+03:12:20.920 --> 03:12:24.200
+like a you know dummy functions but with the real system
+
+03:12:24.200 --> 03:12:27.700
+right for a database for example mongodb or sql or my gmail
+
+03:12:27.700 --> 03:12:31.680
+my calendar so that you all will be able to understand uh
+
+03:12:31.680 --> 03:12:36.000
+the reality and again so in an interview you can use it plus
+
+03:12:36.000 --> 03:12:38.540
+if you are building something on your own so again you all
+
+03:12:38.540 --> 03:12:41.940
+will be able to use the same thing uh with that thank you so
+
+03:12:41.940 --> 03:12:44.480
+much everyone take care see you again tomorrow hope all of
+
+03:12:44.480 --> 03:12:47.320
+you are liking it and one new batch of this generative i'm
+
+03:12:47.320 --> 03:12:50.120
+going to start syllabus why it's same but again it's a live
+
+03:12:50.120 --> 03:12:54.660
+class so if it is a live class then i'm not a robot your
+
+03:12:54.660 --> 03:12:57.440
+mentor is not a robot it's a human being so obviously i used
+
+03:12:57.440 --> 03:13:00.840
+to give a new analogy a new discovery new things so you all
+
+03:13:00.840 --> 03:13:04.160
+are welcome in that batch as well plus if someone from your
+
+03:13:04.160 --> 03:13:07.100
+side would like to join so they can freely like a join that
+
+03:13:07.100 --> 03:13:09.320
+particular batch so thank you so much take care see you
+
+03:13:09.320 --> 03:13:11.760
+again tomorrow 9b 9am isd thank you
+

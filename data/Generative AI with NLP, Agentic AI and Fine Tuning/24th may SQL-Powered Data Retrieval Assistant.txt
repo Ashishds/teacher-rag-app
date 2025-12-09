@@ -1,0 +1,4886 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.360
+In this today's class, guys, so we are going to talk about a
+
+00:00:03.360 --> 00:00:08.140
+system. So where you will be able to interact with any SQL
+
+00:00:08.140 --> 00:00:11.980
+system out there, maybe in a local or maybe which is
+
+00:00:11.980 --> 00:00:15.240
+available on any cloud platform, any like a hosted platform
+
+00:00:15.240 --> 00:00:20.120
+or maybe any managed platform. And with the help of just a
+
+00:00:20.120 --> 00:00:26.040
+simple query, you will be able to query your database, any
+
+00:00:26.040 --> 00:00:29.980
+kind of a query. So maybe if you have to like go ahead with
+
+00:00:29.980 --> 00:00:32.980
+a very, very complex query, you will be able to do that. And
+
+00:00:32.980 --> 00:00:36.380
+that is a kind of a system that we are going to start. Any
+
+00:00:36.380 --> 00:00:39.060
+new courses are we starting? Yeah. So for generative AI, so
+
+00:00:39.060 --> 00:00:41.760
+we are already starting so many courses. Let me share my
+
+00:00:41.760 --> 00:00:45.040
+screen and let me show it to you. So we are starting
+
+00:00:45.040 --> 00:00:48.160
+something from a generative AI. We are starting something
+
+00:00:48.160 --> 00:00:52.720
+from a RAG and so many like other courses we have already
+
+00:00:52.720 --> 00:00:55.640
+started machine learning, deep learning, computer vision,
+
+00:00:55.840 --> 00:00:59.980
+stats. NLP, almost all this like courses we have already
+
+00:00:59.980 --> 00:01:02.580
+started in a hybrid mode. So you can go and check that out
+
+00:01:02.580 --> 00:01:08.340
+as well. Okay. So let me share my screen. Um, I believe it's
+
+00:01:08.340 --> 00:01:10.380
+already shared. Hmm.
+
+00:01:13.210 --> 00:01:16.910
+So I'm going to open up my VS code and
+
+00:01:20.180 --> 00:01:23.900
+the project which I have prepared guys, uh, for my today's
+
+00:01:23.900 --> 00:01:28.000
+discussion. So S-T-R-E-A-M-L-I-T is streamlint and then run
+
+00:01:28.000 --> 00:01:33.020
+and main.py file. So let me check if all the dependencies
+
+00:01:33.020 --> 00:01:35.440
+are there. All the dependencies are resolved. Yeah. So let
+
+00:01:35.440 --> 00:01:38.140
+me show you first of all, a demo that what we are going to
+
+00:01:38.140 --> 00:01:41.020
+achieve with the help of this today's project. So let's
+
+00:01:41.020 --> 00:01:44.980
+suppose there is a SQL system in which I have a multiple
+
+00:01:44.980 --> 00:01:49.100
+tables inside those tables. I have a couple of data data
+
+00:01:49.100 --> 00:01:53.180
+set, which is available now. So we are going to build this
+
+00:01:53.180 --> 00:01:55.800
+entire system. So where I can come and then I can try to
+
+00:01:55.800 --> 00:02:01.060
+query, I can say that, so me all the tables, tables, right?
+
+00:02:01.060 --> 00:02:05.140
+And this system is going to run. And if everything works
+
+00:02:05.140 --> 00:02:08.240
+fine, it is going to show me that table, which is available
+
+00:02:08.240 --> 00:02:15.320
+inside my, uh, system. So, uh, select from where type table.
+
+00:02:17.930 --> 00:02:21.270
+Okay. Show me order
+
+00:02:24.600 --> 00:02:27.080
+table. So maybe I have missed something.
+
+00:02:35.160 --> 00:02:38.880
+Okay. So, yeah, as you can see that I'm going to run a lot
+
+00:02:38.880 --> 00:02:41.200
+of like a complex query as well. So this is just a very,
+
+00:02:41.280 --> 00:02:43.760
+very simple query. So as you can see that I'm just writing a
+
+00:02:43.760 --> 00:02:46.460
+command over here, I'm just trying to write like a, I'm
+
+00:02:46.460 --> 00:02:49.860
+doing a chat with my elements and then it is able to
+
+00:02:49.860 --> 00:02:54.540
+populate this a particular table and it is able to show me a
+
+00:02:54.540 --> 00:02:58.580
+data set, which is available inside my table. Even I will be
+
+00:02:58.580 --> 00:03:02.540
+able to write a very, very complex queries and based on that
+
+00:03:02.540 --> 00:03:06.420
+system itself is going to build the query for me. And it is
+
+00:03:06.420 --> 00:03:09.580
+going to bring all kinds of a data set, whichever I'm
+
+00:03:09.580 --> 00:03:13.820
+looking for inside the system. And this is going to be a
+
+00:03:13.820 --> 00:03:17.760
+project that we are going to see in my today's class. So
+
+00:03:17.760 --> 00:03:22.220
+shall we start guys? Are we ready? Yeah. So a lot of complex
+
+00:03:22.220 --> 00:03:23.460
+queries also we are going to run.
+
+00:03:39.640 --> 00:03:43.260
+Okay. So now, uh, let's get started. Let's try to see that
+
+00:03:43.260 --> 00:03:46.240
+how we can try to build this kind of a project and how we
+
+00:03:46.240 --> 00:03:49.580
+can try to automate the entire query part so that you don't
+
+00:03:49.580 --> 00:03:52.680
+have to even learn a SQL. And this is the kind of a feeling,
+
+00:03:52.800 --> 00:03:56.560
+believe me, all of you are going to get once I'm going to
+
+00:03:56.560 --> 00:04:00.520
+show you. This particular project that why do we even go and
+
+00:04:00.520 --> 00:04:05.400
+why do we even learn a SQL and a complex queries that we
+
+00:04:05.400 --> 00:04:09.900
+have been writing since a very, very long time, right across
+
+00:04:09.900 --> 00:04:14.080
+the industry with the help of LLM itself, I can just try to,
+
+00:04:14.120 --> 00:04:18.060
+uh, interact with my database and then it is going to
+
+00:04:18.060 --> 00:04:22.360
+populate all sort of a data set for B. Yeah. So how many
+
+00:04:22.360 --> 00:04:24.800
+days it takes to complete this batch, I think two to three
+
+00:04:24.800 --> 00:04:27.720
+weeks more because tomorrow. So we are going to talk about a
+
+00:04:27.720 --> 00:04:30.540
+lot of project back to back, back to back and then next
+
+00:04:30.540 --> 00:04:33.860
+week. So I'll be talking about, uh, agentic AI. So where I
+
+00:04:33.860 --> 00:04:36.620
+will be showing you a lot of demo with respect to a Lang
+
+00:04:36.620 --> 00:04:39.560
+chain with respect to a Lama indexes with respect to a Lang
+
+00:04:39.560 --> 00:04:42.840
+graph and crew AI basically. So where we can go and we can
+
+00:04:42.840 --> 00:04:45.800
+try to create a variety of the agent and then next to next
+
+00:04:45.800 --> 00:04:49.880
+week. So we are going to see a model fine tuning based on
+
+00:04:49.880 --> 00:04:52.400
+the different, different kind of a parameter and as per the
+
+00:04:52.400 --> 00:04:55.820
+syllabus, so tentatively, it is going to take another three
+
+00:04:55.820 --> 00:04:59.300
+week of time, or max, two max, maybe a four week of time.
+
+00:04:59.400 --> 00:05:02.160
+This entire batch is going to take wear. I will be
+
+00:05:02.160 --> 00:05:05.040
+discussing all the project because now, the project section
+
+00:05:05.040 --> 00:05:07.840
+is lot in inside your project. If you'll go and see the
+
+00:05:07.840 --> 00:05:12.040
+syllabus. So we have mentioned a lot of small and big
+
+00:05:12.040 --> 00:05:14.640
+project. And that was the whole idea behind creating this
+
+00:05:14.640 --> 00:05:17.540
+batch. So that's you will be able to learn, to build a
+
+00:05:17.540 --> 00:05:19.780
+variety of applications maybe with respect to some of the
+
+00:05:19.780 --> 00:05:23.020
+framework, Lang chain Lama index Lang graph, or maybe a crew
+
+00:05:23.020 --> 00:05:26.800
+AI, you will be able to learn how to build like agents with
+
+00:05:26.800 --> 00:05:29.540
+the head. help of the LLM's UDLM's obviously I'm going to
+
+00:05:29.540 --> 00:05:33.960
+use inside that we already have a multiple models plus how
+
+00:05:33.960 --> 00:05:38.520
+we will be able to do a fine tuning of an existing model,
+
+00:05:38.640 --> 00:05:41.260
+maybe a model from an open AI, maybe model which is
+
+00:05:41.260 --> 00:05:44.540
+available on a hugging face repository. So all sorts of
+
+00:05:44.540 --> 00:05:47.720
+things. So attentively three to four week you can say it is
+
+00:05:47.720 --> 00:05:48.400
+it is going to take.
+
+00:05:51.370 --> 00:05:53.870
+Yeah. So Siam is saying thanks for accepting the request.
+
+00:05:53.990 --> 00:05:56.370
+Yeah, someone has actually asked me and not someone so
+
+00:05:56.370 --> 00:05:59.190
+someone in a group I have seen that people were asking that
+
+00:05:59.190 --> 00:06:02.170
+can we try to build a kind of a system so where we can just
+
+00:06:02.170 --> 00:06:05.750
+try to write maybe something in English language and then it
+
+00:06:05.750 --> 00:06:08.530
+will be able to help me out in terms of querying our
+
+00:06:08.530 --> 00:06:12.230
+databases, whatever databases is available and whatever data
+
+00:06:12.230 --> 00:06:17.210
+is available. Yeah. So like this is something that we are
+
+00:06:17.210 --> 00:06:21.430
+going to do. Okay, so let's get started guys. I'm going to
+
+00:06:21.430 --> 00:06:25.210
+terminate this project and I'll try to like start building
+
+00:06:25.210 --> 00:06:27.670
+this project. I have already built this project in my local.
+
+00:06:27.670 --> 00:06:30.690
+Local system because obviously like before coming to the
+
+00:06:30.690 --> 00:06:33.970
+class, we try to do a lot of like a preparation in terms of
+
+00:06:33.970 --> 00:06:39.170
+a material. So I have already built it step by step. I'm
+
+00:06:39.170 --> 00:06:40.790
+going to talk about it here.
+
+00:06:47.780 --> 00:06:52.600
+Okay, so terminated now. So what we are trying to achieve
+
+00:06:52.600 --> 00:06:55.220
+with the help of this project, let me talk about that first
+
+00:06:55.220 --> 00:07:00.400
+with the help of my scribbling. So here we are going to
+
+00:07:00.400 --> 00:07:05.440
+build a UI interface first of all. So we are going to build
+
+00:07:05.440 --> 00:07:08.980
+a UI interface or you can say we are going to see a client
+
+00:07:09.420 --> 00:07:12.460
+client or you can say we are going to build a UI interface.
+
+00:07:12.640 --> 00:07:15.980
+Now this UI interface I'm going to build with the help of a
+
+00:07:15.980 --> 00:07:19.780
+streamlint streamlint nothing new. So we have been using the
+
+00:07:19.780 --> 00:07:22.420
+streamlint since a very long time. Now with the help of this
+
+00:07:22.420 --> 00:07:27.040
+UI, what I'm going to do is so I'm going to pass a query
+
+00:07:27.040 --> 00:07:29.220
+query
+
+00:07:30.560 --> 00:07:35.540
+to my LLMs. Large language model and here so I will be using
+
+00:07:35.540 --> 00:07:40.000
+basically URI AI yeah, so I'll be using URI AI and I'm going
+
+00:07:40.000 --> 00:07:44.380
+to pass a query just like English language just like an
+
+00:07:44.380 --> 00:07:47.500
+English language. I'm going to pass a query now what this
+
+00:07:47.500 --> 00:07:51.680
+LLM is going to do so this LLM is going to understand my
+
+00:07:51.680 --> 00:07:54.900
+query which I have written just in an English language, a
+
+00:07:54.900 --> 00:07:58.480
+plain English language. Let's suppose I'm a guy who don't
+
+00:07:58.480 --> 00:08:02.460
+even understand a sequel. But still. I have a data available
+
+00:08:02.460 --> 00:08:06.120
+inside my sequel databases or maybe you can try to extend it
+
+00:08:06.120 --> 00:08:09.860
+for any kind of other databases any kind of even a no sequel
+
+00:08:09.860 --> 00:08:12.760
+databases and that is completely fine you all will be able
+
+00:08:12.760 --> 00:08:15.520
+to extend it and believe me after this project you will be
+
+00:08:15.520 --> 00:08:19.660
+able to get that concept get that philosophy. So here with
+
+00:08:19.660 --> 00:08:22.940
+the help of UI I'm going to write a query with the help of
+
+00:08:22.940 --> 00:08:25.860
+English language that's like a show me a data show me a
+
+00:08:25.860 --> 00:08:29.400
+highest purchasing order show me what was our revenue last
+
+00:08:29.400 --> 00:08:32.560
+week. Or maybe a last month all sort of a queries I will be
+
+00:08:32.560 --> 00:08:35.240
+able to write just in an English language and like I said
+
+00:08:35.240 --> 00:08:39.360
+guys I look like just imagine that I'm a person who don't
+
+00:08:39.360 --> 00:08:43.540
+even know a sequel right who is not capable enough to write
+
+00:08:43.540 --> 00:08:48.120
+a sequel query at all and but still I have my data and maybe
+
+00:08:48.120 --> 00:08:51.340
+I'm a manager so I have to generate a lot of different
+
+00:08:51.340 --> 00:08:53.260
+different kind of a report I have to do a lot of
+
+00:08:53.260 --> 00:08:57.220
+investigation I have to check the performance and all of
+
+00:08:57.220 --> 00:08:59.140
+those performance. All of those. All of those like a
+
+00:08:59.140 --> 00:09:03.140
+purchase order or all of things which is available inside my
+
+00:09:03.140 --> 00:09:06.020
+table into a different different table again not in just one
+
+00:09:06.020 --> 00:09:08.660
+single table but maybe into a different different table and
+
+00:09:08.660 --> 00:09:11.560
+all those tables are connected with each other. So I have to
+
+00:09:11.560 --> 00:09:15.800
+do a query so that I will be able to get my desired output
+
+00:09:15.800 --> 00:09:20.640
+as a manager. So here once this query will go to by LLM
+
+00:09:20.640 --> 00:09:24.420
+which is my URI and where I will be using a GPT model I can
+
+00:09:24.420 --> 00:09:27.400
+even try to use a Gemini model a Mistral model maybe a deep
+
+00:09:27.400 --> 00:09:31.200
+seek model. Any kind of a LLM I'm going to use. Now this LLM
+
+00:09:31.200 --> 00:09:36.260
+is going to build a sequel query for me sequel query for me.
+
+00:09:36.340 --> 00:09:40.300
+Now before building a sequel query for me it will try to
+
+00:09:40.300 --> 00:09:44.080
+fetch a meta information meta information means what so it
+
+00:09:44.080 --> 00:09:47.900
+will try to fetch a meta information about a table because
+
+00:09:47.900 --> 00:09:53.220
+unless and until my LLMs are not aware about a column name
+
+00:09:53.220 --> 00:09:57.480
+my LLMs are not aware about a table names. It will not be
+
+00:09:57.480 --> 00:09:59.840
+able to do anything right it will not be able to do
+
+00:09:59.840 --> 00:10:03.000
+anything. So first of all it is going to fetch a meta
+
+00:10:03.000 --> 00:10:05.980
+information meta information means a table name a column
+
+00:10:05.980 --> 00:10:10.080
+name or the entire schema it is going to fetch based on that
+
+00:10:10.080 --> 00:10:13.040
+it is going to build a sequel query. So based on the schema
+
+00:10:13.040 --> 00:10:16.020
+and based on the language English language query that you
+
+00:10:16.020 --> 00:10:20.020
+have given it is going to build a sequel query now this is
+
+00:10:20.020 --> 00:10:27.780
+going to send a sequel query to my sequel database. And then
+
+00:10:27.780 --> 00:10:33.280
+finally I will be able to see my output output in an UI. So
+
+00:10:33.280 --> 00:10:38.140
+this is a flow that we are going to follow now. So sequel
+
+00:10:38.140 --> 00:10:41.620
+databases wise I have built this query and I have even
+
+00:10:41.620 --> 00:10:45.020
+experimented as I was doing a recording for my newly
+
+00:10:45.020 --> 00:10:48.300
+launched sequel batches. So I have done this testing with my
+
+00:10:48.300 --> 00:10:52.320
+local DB as well as I have done a testing with a database
+
+00:10:52.320 --> 00:10:55.880
+which is available on some cloud platform. Because there are
+
+00:10:55.880 --> 00:10:57.420
+many databases. There are many service provider nowadays,
+
+00:10:57.640 --> 00:11:02.580
+where you will be able to see a managed liquor DB. So I have
+
+00:11:02.580 --> 00:11:05.580
+I have done this experimentation with both local as well as
+
+00:11:05.580 --> 00:11:09.000
+like something which is already hosted on some of the cloud
+
+00:11:09.000 --> 00:11:11.800
+environment, maybe into a managed way or maybe into a
+
+00:11:11.800 --> 00:11:15.120
+dedicated way and it is going to work simple it is it is
+
+00:11:15.120 --> 00:11:17.900
+going to work for any kind of a situation. So this is
+
+00:11:17.900 --> 00:11:20.160
+something which we are going to show. So is this flow clear
+
+00:11:20.160 --> 00:11:23.480
+guys, the flow that I have written over here, can
+
+00:11:28.500 --> 00:11:30.640
+you please cover it and as well I think on our YouTube
+
+00:11:30.640 --> 00:11:33.900
+channel. So we have. We have launched a multiple project and
+
+00:11:33.900 --> 00:11:36.640
+even inside your dashboard. So we have launched a multiple
+
+00:11:36.640 --> 00:11:40.140
+project with innate and believe me in it and is not at all
+
+00:11:40.140 --> 00:11:42.380
+difficult. It's just a connector that they have given to
+
+00:11:42.380 --> 00:11:47.160
+you. So drag and drop connect and then bingo. Yeah. So this
+
+00:11:47.160 --> 00:11:50.140
+is how innate in works. It's one of the simplest way to
+
+00:11:50.140 --> 00:11:53.100
+create an agent. But again, you will find some sort of
+
+00:11:53.100 --> 00:11:55.920
+limitations with respect to our latest like a enhancement
+
+00:11:55.920 --> 00:11:59.160
+that we are able to see in a generative industry. Okay. So
+
+00:11:59.160 --> 00:12:02.600
+let's try to build this entire flow. Guys in a step by step
+
+00:12:02.600 --> 00:12:06.540
+a step by step a step by step manner. Now the very first
+
+00:12:06.540 --> 00:12:09.900
+thing right the very first thing that we need over here is a
+
+00:12:09.900 --> 00:12:12.580
+database unless and until we don't have a databases, we
+
+00:12:12.580 --> 00:12:15.520
+won't be able to do anything. Anything is literally we won't
+
+00:12:15.520 --> 00:12:19.580
+be able to do anything. Now database option wise like I said
+
+00:12:19.580 --> 00:12:23.400
+that I can go ahead with my local database that's completely
+
+00:12:23.400 --> 00:12:27.320
+fine. It is going to work or else I can try to go ahead with
+
+00:12:27.320 --> 00:12:30.600
+some of the managed database as well. Or maybe if you have a
+
+00:12:30.600 --> 00:12:34.640
+database hosted on your AWS Azure or GCP platform, you can
+
+00:12:34.640 --> 00:12:38.280
+also go ahead with that now. So let me show you some of the
+
+00:12:38.280 --> 00:12:42.900
+sequel like database provider so that you will be able to
+
+00:12:42.900 --> 00:12:47.400
+get some sort of idea. So here I'll just go to Google and
+
+00:12:47.400 --> 00:12:52.400
+try to search for PLA and a T planet is scale. So planet is
+
+00:12:52.400 --> 00:12:56.680
+scale is one of the provider who is providing you a sequel
+
+00:12:56.680 --> 00:13:00.860
+based databases, a self hosted one. Now, apart from that,
+
+00:13:00.940 --> 00:13:06.660
+there is something called as neon any in E O N neon neon
+
+00:13:06.660 --> 00:13:10.060
+database. So they are also providing you basically a neon
+
+00:13:10.060 --> 00:13:12.740
+tech. They are also providing you a post this kind of a
+
+00:13:12.740 --> 00:13:16.300
+databases apart from that. So there is something called as a
+
+00:13:16.300 --> 00:13:21.720
+super space is you PA super base. So super base is also
+
+00:13:21.720 --> 00:13:24.660
+providing you basically a database a sequel like a
+
+00:13:24.660 --> 00:13:28.200
+databases. There is a render. I believe I have used a render
+
+00:13:28.200 --> 00:13:30.800
+even before. So not for database, but for my hosting
+
+00:13:30.800 --> 00:13:33.020
+purposes. So where I was deploying some of the application.
+
+00:13:33.360 --> 00:13:37.360
+So render is one of the platforms of where you can go and
+
+00:13:37.360 --> 00:13:39.980
+you can try to commence your databases. There is another
+
+00:13:39.980 --> 00:13:44.560
+platform called as railway, R A I L W A Y railway. Even you
+
+00:13:44.560 --> 00:13:49.580
+can try to not engine railway. So railway DB. So railway DB.
+
+00:13:49.780 --> 00:13:52.880
+So even you can try to go over here and then you will be
+
+00:13:52.880 --> 00:13:56.640
+able to commence your data basis or you can just go ahead
+
+00:13:56.640 --> 00:14:00.640
+with us. Azure, AWS or GCP. And over there you will be able
+
+00:14:00.640 --> 00:14:03.260
+to commence any kind of a databases that you want that
+
+00:14:03.260 --> 00:14:06.280
+that's completely fine. So by launching instances or maybe
+
+00:14:06.280 --> 00:14:09.600
+by launching some of the managed services that they used to
+
+00:14:09.600 --> 00:14:12.080
+provide. Yeah. Managed services that they used to provide.
+
+00:14:12.300 --> 00:14:17.500
+So okay now so I don't need all of these database by the
+
+00:14:17.500 --> 00:14:21.320
+way, I just need only one. Yeah, only one. So where I can
+
+00:14:21.320 --> 00:14:24.160
+go, I can try to create a table, I can try to keep all of my
+
+00:14:24.160 --> 00:14:28.120
+data and then I will be able to complete this entire flow.
+
+00:14:28.820 --> 00:14:32.000
+Okay. So I can create my UI. I can try to interact with my
+
+00:14:32.000 --> 00:14:36.220
+URI LLMs. I can just connect with my SQL databases and I can
+
+00:14:36.220 --> 00:14:40.820
+try to query it in an English language. Okay. So here, which
+
+00:14:40.820 --> 00:14:43.860
+database I'm going to use, I can use anything like a, it
+
+00:14:43.860 --> 00:14:47.040
+just one step process. You can just go sign up, log in and
+
+00:14:47.040 --> 00:14:50.580
+then work is done. So in my today's class, right in my
+
+00:14:50.580 --> 00:14:54.260
+today's class, I'm going to use a neon. I can use anything.
+
+00:14:54.380 --> 00:14:57.140
+Like I said, I can use anything. But yeah, I, if you want, I
+
+00:14:57.140 --> 00:14:58.920
+can show you even a liquor. This. I can show you a few
+
+00:14:58.920 --> 00:15:01.620
+things at the end of the lecture, that simple login, create
+
+00:15:01.620 --> 00:15:04.840
+a databases and then work will be done. So here I'm going to
+
+00:15:04.840 --> 00:15:08.800
+click on login and once it is going, once I will be going
+
+00:15:08.800 --> 00:15:11.900
+for login. So it is going for like a, let's go for a Google
+
+00:15:11.900 --> 00:15:14.980
+login by the way. So continue.
+
+00:15:19.300 --> 00:15:22.600
+Okay. So project name, maybe I can try to give as a test, a
+
+00:15:22.600 --> 00:15:27.540
+Postgres version, AWS Azure, create a project. So just this
+
+00:15:27.540 --> 00:15:31.880
+much, and you will be able to land into a neon interface.
+
+00:15:31.880 --> 00:15:36.100
+Now, this is the interface that we all need. So are you able
+
+00:15:36.100 --> 00:15:39.800
+to reach over here, guys, inside a neon, this particular
+
+00:15:39.800 --> 00:15:43.220
+interface, I have pinned you the link by the way, so just
+
+00:15:43.220 --> 00:15:47.540
+try to go through a neon.tech. Now from neon tech, I've just
+
+00:15:47.540 --> 00:15:50.620
+pinged you a link for the console, but yeah, so you can try
+
+00:15:50.620 --> 00:15:53.280
+to go through a neon tech. I think that will be better.
+
+00:15:56.180 --> 00:16:01.260
+Fine. So just go to a neon tech and then from there, just do
+
+00:16:01.260 --> 00:16:04.800
+a sign in. It's completely free. You don't have to go ahead
+
+00:16:04.800 --> 00:16:06.880
+and like, you know, add your credit card. That's the reason.
+
+00:16:06.960 --> 00:16:07.720
+So I'm using this one.
+
+00:16:13.470 --> 00:16:18.130
+Fine guys, everyone. So are we able to log in, confirm me
+
+00:16:18.130 --> 00:16:20.290
+guys in your chat box. If you are able to log into this
+
+00:16:20.290 --> 00:16:21.990
+database, yeah.
+
+00:16:30.730 --> 00:16:33.950
+So anything you can choose, yeah. So Azure, you can choose
+
+00:16:33.950 --> 00:16:36.730
+AWS, you can choose whatever you want because it's anyhow,
+
+00:16:36.830 --> 00:16:39.390
+it's a managed one. So it is not going to ask you for your
+
+00:16:39.390 --> 00:16:43.390
+Azure AWS credential. So they have their own AWS and Azure
+
+00:16:43.390 --> 00:16:47.150
+like a setup. So it is going to create a DB on everything.
+
+00:16:47.150 --> 00:16:50.990
+Over there. So don't, don't worry about it. You don't need
+
+00:16:50.990 --> 00:16:51.790
+Azure AWS account.
+
+00:17:02.650 --> 00:17:07.330
+Okay. Everyone done. So ping me guys. Once you are done with
+
+00:17:07.330 --> 00:17:10.490
+this login inside a neon.
+
+00:17:22.380 --> 00:17:25.160
+Yeah. Sachin is saying done. Okay. So what about other guys?
+
+00:17:26.480 --> 00:17:29.640
+Devanjani is saying Sanjeev, what is the project section?
+
+00:17:30.360 --> 00:17:33.040
+Just name anything. Maybe just give a test or something.
+
+00:17:33.180 --> 00:17:37.730
+That's fine. Yes. Okay. What about other guys?
+
+00:17:41.280 --> 00:17:43.920
+Quick, quick. We have
+
+00:17:46.770 --> 00:17:48.910
+to see the outcome of this amazing project.
+
+00:18:03.910 --> 00:18:08.930
+I'm waiting for all of you guys. I can see there are so many
+
+00:18:08.930 --> 00:18:12.690
+people, but yeah, they are not like a responding properly. I
+
+00:18:12.690 --> 00:18:12.870
+believe.
+
+00:18:18.090 --> 00:18:23.370
+Okay. So once this one is done, right? So this is to create
+
+00:18:23.370 --> 00:18:27.710
+a DB, right? Exactly. Yes. I can go ahead and I can try to
+
+00:18:27.710 --> 00:18:30.910
+create a DB in my local MySQL workbench as well. As you can
+
+00:18:30.910 --> 00:18:33.050
+see, I have already done that while I was doing this
+
+00:18:33.050 --> 00:18:36.630
+experimentation. While I was like building this project and
+
+00:18:36.630 --> 00:18:40.010
+I was even able to kind of with my local, but at the end of
+
+00:18:40.010 --> 00:18:43.670
+the day, I have to deploy this project. So I need everything
+
+00:18:43.670 --> 00:18:47.630
+to be on cloud. Yeah. I just need everything on the cloud so
+
+00:18:47.630 --> 00:18:49.950
+that I will be able to go ahead with the deployment in the
+
+00:18:49.950 --> 00:18:52.870
+easiest possible way without doing any kind of a local to
+
+00:18:52.870 --> 00:18:58.080
+global migration. Okay. So once this is done, you will be
+
+00:18:58.080 --> 00:19:02.840
+able to find out something called as SQL editor. So on your
+
+00:19:02.840 --> 00:19:05.900
+left-hand side, bottom. So you will be able to find out
+
+00:19:05.900 --> 00:19:09.240
+something called as SQL editor over here, guys. So just try
+
+00:19:09.240 --> 00:19:12.920
+to click on the SQL editor by the way, and then you will be
+
+00:19:12.920 --> 00:19:16.880
+able to see this kind of interface. So where you can run
+
+00:19:16.880 --> 00:19:20.880
+your like a SQL query. Yeah. So remove everything, whatever
+
+00:19:20.880 --> 00:19:23.600
+is available, just remove it. So whatever is available by
+
+00:19:23.600 --> 00:19:26.000
+default, remove each and everything. No need to do anything.
+
+00:19:26.140 --> 00:19:34.020
+Yeah. Okay. Now. So they have just given you a command, uh,
+
+00:19:34.300 --> 00:19:36.280
+like a create table. If not, it's just a command. It's just
+
+00:19:36.280 --> 00:19:38.780
+playing with neon. So we don't want that. We will be
+
+00:19:38.780 --> 00:19:43.280
+creating our own table as per my own need. Okay. So if this
+
+00:19:43.280 --> 00:19:46.960
+is done, right, let's go ahead and let's try to create some
+
+00:19:46.960 --> 00:19:52.020
+sort of a table for, uh, e-commerce industry. Yeah. So let's
+
+00:19:52.020 --> 00:19:54.920
+go ahead and try to create a customer table, a product
+
+00:19:54.920 --> 00:19:58.880
+table, a order table, and maybe order item table. So here,
+
+00:19:58.960 --> 00:20:01.840
+what I'm going to do is, so I'm going to create my customer
+
+00:20:01.840 --> 00:20:04.980
+table. So now this is the customer table that I'm going to
+
+00:20:04.980 --> 00:20:09.760
+create. As you can see. So, uh, create table C R E A T. I
+
+00:20:09.760 --> 00:20:10.460
+have missed create.
+
+00:20:16.820 --> 00:20:19.740
+So create table and then table name. I believe we all know
+
+00:20:19.740 --> 00:20:23.720
+how to create a basic simple table, right? So create table
+
+00:20:23.720 --> 00:20:25.340
+and then like a table name.
+
+00:20:29.310 --> 00:20:32.750
+And then these are the column customer ID, name, email,
+
+00:20:32.930 --> 00:20:36.590
+phone number, city. So these are basically a schema that I'm
+
+00:20:36.590 --> 00:20:39.670
+trying to give. Good evening. Yes. Good evening. I think you
+
+00:20:39.670 --> 00:20:43.850
+are late. Uh, so, okay. Now select and run it. Now,
+
+00:20:46.710 --> 00:20:50.250
+once you are going to run this one, if it is going to show
+
+00:20:50.250 --> 00:20:53.290
+you that a statement executed successfully, then we are
+
+00:20:53.290 --> 00:20:56.890
+done. We are good by the way. So now we are able to create a
+
+00:20:56.890 --> 00:21:00.170
+customer table over here. You can even go inside this table
+
+00:21:00.170 --> 00:21:03.670
+section and then you can try to browse your table, the table
+
+00:21:03.670 --> 00:21:06.550
+that you have created over here. So as of now I have created
+
+00:21:06.550 --> 00:21:09.190
+the customer table. So yeah, I'm able to like a browse this
+
+00:21:09.190 --> 00:21:12.050
+customer table from this table section. Customer table is
+
+00:21:12.050 --> 00:21:15.710
+visible to me. Now again, go back to a SQL editor. Okay. So
+
+00:21:15.710 --> 00:21:19.250
+this is one of the table that we have created. I have to
+
+00:21:19.250 --> 00:21:23.890
+create multiple tables by the way. So I'm going to create a
+
+00:21:23.890 --> 00:21:28.370
+next table called as product table over here. So product ID,
+
+00:21:28.530 --> 00:21:31.430
+product name, categories, and price. So let's go ahead and
+
+00:21:31.430 --> 00:21:35.270
+try to create a product table. So run the command over here
+
+00:21:35.270 --> 00:21:38.270
+and let me ping you the product table schema. So this is the
+
+00:21:38.270 --> 00:21:42.290
+table creation things. So product table will be created
+
+00:21:42.290 --> 00:21:46.790
+automatically in no time. And then I have to create
+
+00:21:46.790 --> 00:21:50.050
+basically a order table. So order table will be connected to
+
+00:21:50.050 --> 00:21:54.110
+the customer table with the customer ID. So here I'm going
+
+00:21:54.110 --> 00:21:55.350
+to create a order table.
+
+00:21:58.100 --> 00:22:02.700
+So order table is done. Now once order table is done, let's
+
+00:22:02.700 --> 00:22:07.120
+go ahead and try to create a order item table over here. So
+
+00:22:07.120 --> 00:22:10.340
+run and then create a order item table. So these are the
+
+00:22:10.340 --> 00:22:14.000
+four table which is connected with each other, right? So I
+
+00:22:14.000 --> 00:22:17.120
+have just created this four table. Okay. It is as simple as
+
+00:22:17.120 --> 00:22:20.740
+that. Maybe I'm not a person who understands all of these
+
+00:22:20.740 --> 00:22:23.480
+commands, that's completely fine, right? That is the reason
+
+00:22:23.480 --> 00:22:26.540
+for, we are going to use our LLMs, right? So table and
+
+00:22:26.540 --> 00:22:28.880
+everything has been created. Let's suppose your team has
+
+00:22:28.880 --> 00:22:32.060
+already created a table, and there is a data that is
+
+00:22:32.060 --> 00:22:35.460
+powering into this particular table on a regular basis. So
+
+00:22:35.460 --> 00:22:38.460
+that's completely fine. So I can, I can just like go ahead
+
+00:22:38.460 --> 00:22:40.500
+and query the table. That's a whole idea. That's a whole
+
+00:22:40.500 --> 00:22:42.080
+objective. That's the reason. So we are building this
+
+00:22:42.080 --> 00:22:45.660
+application. So here is a four table query, guys, all
+
+00:22:45.660 --> 00:22:48.020
+together. So that's the idea. So customer table, product
+
+00:22:48.020 --> 00:22:50.980
+table, order table, and then order item table.
+
+00:22:54.000 --> 00:22:57.640
+So is it done guys? Is it done? For everyone? Are we able to
+
+00:22:57.640 --> 00:22:59.380
+get four tables inside my Neon?
+
+00:23:09.660 --> 00:23:14.340
+Okay. Easy, right? Very easy. Okay. So once we are able to
+
+00:23:14.340 --> 00:23:18.360
+create a table, I need data into a table, right? I need data
+
+00:23:18.360 --> 00:23:21.520
+into a table. Now they have given you an option in Neon and
+
+00:23:21.520 --> 00:23:24.140
+even other vendors. So that doesn't matter which vendor or
+
+00:23:24.140 --> 00:23:27.160
+who we are going to use, but yeah, they are going to give
+
+00:23:27.160 --> 00:23:30.220
+you an option to add a record. So maybe add a record by
+
+00:23:30.220 --> 00:23:33.960
+using the UI, maybe add the record in a bulk mode. I'm not
+
+00:23:33.960 --> 00:23:36.340
+going to use that. So basically I'm going to run my query
+
+00:23:36.340 --> 00:23:39.940
+and based on the query, I'm going to insert the record. So
+
+00:23:39.940 --> 00:23:44.300
+let's try to insert some of the record inside my customer
+
+00:23:44.300 --> 00:23:46.780
+table, because this is not my objective, right? I'm just
+
+00:23:46.780 --> 00:23:49.860
+trying to prepare my data. That's it. My objective is not to
+
+00:23:49.860 --> 00:23:52.320
+create a table, not to insert a data. Let's suppose there is
+
+00:23:52.320 --> 00:23:55.700
+a data which is already available. My objective is to query
+
+00:23:55.700 --> 00:23:59.960
+that table. By using LLMs, right, because I am not a person
+
+00:23:59.960 --> 00:24:03.000
+who know how to write a query that that's my problem. And
+
+00:24:03.000 --> 00:24:06.860
+there is a bomb of data which is lying inside my table. So
+
+00:24:06.860 --> 00:24:10.540
+we are trying to solve that problem. So here, just try to
+
+00:24:10.540 --> 00:24:13.680
+insert some of the record inside your customer table. So
+
+00:24:13.680 --> 00:24:16.280
+this will insert the record inside a customer table. Then
+
+00:24:16.280 --> 00:24:19.880
+let's go ahead and try to insert some of the record into our
+
+00:24:19.880 --> 00:24:25.020
+product table, right inside the product table. So here.
+
+00:24:25.020 --> 00:24:27.960
+Insert into table, table name, and then I'm going to insert
+
+00:24:27.960 --> 00:24:31.440
+it. And those who would like to learn a SQL, you guys can
+
+00:24:31.440 --> 00:24:34.320
+join my SQL class. So I'm already like, I started, I have
+
+00:24:34.320 --> 00:24:39.500
+uploading like a lot of SQL videos in your SQL masters
+
+00:24:39.500 --> 00:24:42.500
+class. So you can join that. So where I'm talking about each
+
+00:24:42.500 --> 00:24:45.820
+and everything by doing things in a step by step manner.
+
+00:24:46.640 --> 00:24:51.140
+Then insert into a order item table. So yeah, insert into a
+
+00:24:51.140 --> 00:24:55.000
+order item table. And then insert into a order item table.
+
+00:24:55.000 --> 00:24:56.080
+And then insert into a order table.
+
+00:25:02.140 --> 00:25:06.240
+So data insertion is done in all of these four tables. So I
+
+00:25:06.240 --> 00:25:08.860
+have just created four table. And then now I'm able to
+
+00:25:08.860 --> 00:25:12.740
+insert a data into a four table. Just confirm me guys, once
+
+00:25:12.740 --> 00:25:16.120
+you are able to create and insert a record inside your
+
+00:25:16.120 --> 00:25:16.400
+table.
+
+00:25:23.760 --> 00:25:29.360
+So you can execute this entire query even at once. That is
+
+00:25:29.360 --> 00:25:29.960
+also possible.
+
+00:25:33.010 --> 00:25:34.930
+Okay. So I'm missing done. What about others?
+
+00:25:43.780 --> 00:25:48.020
+Now I can run a query. Select a star from CUSTOMER.com.
+
+00:25:48.020 --> 00:25:50.800
+There is customers just for the cross verification that
+
+00:25:50.800 --> 00:25:53.660
+whether I have a data or not. So yeah, I have some data
+
+00:25:53.660 --> 00:25:57.860
+inside my customer table. I can see that now order table. So
+
+00:25:57.860 --> 00:26:01.780
+select a star from, I can write maybe just for the
+
+00:26:01.780 --> 00:26:09.280
+verification ORDERS, orders table. So run and yeah, there is
+
+00:26:09.280 --> 00:26:12.160
+some data which is available inside my order table. Now I
+
+00:26:12.160 --> 00:26:17.280
+can try to even like query my order item table, order item
+
+00:26:17.280 --> 00:26:21.120
+table. I can try to query and I can try to check just for
+
+00:26:21.120 --> 00:26:23.300
+the cross verification that whether I have some data or not.
+
+00:26:23.420 --> 00:26:27.220
+So yeah, I have some data inside my order item and I can try
+
+00:26:27.220 --> 00:26:30.980
+to cross check my product table as well. So PRODUCT,
+
+00:26:30.980 --> 00:26:36.280
+products table and yes, inside my product. So I have some
+
+00:26:36.280 --> 00:26:40.060
+data. So in all of my table, I have some small, small amount
+
+00:26:40.060 --> 00:26:45.040
+of data. Okay. So my data preparation is done. I have a SQL
+
+00:26:45.040 --> 00:26:50.300
+system. So where I have some sort of data. First insert
+
+00:26:50.300 --> 00:26:53.240
+order table data, yes Sumit. So you have to insert first of
+
+00:26:53.240 --> 00:26:56.540
+all, like order table, then only ordered items because both
+
+00:26:56.540 --> 00:26:59.140
+the tables are connected by order ID or
+
+00:27:04.520 --> 00:27:07.340
+else you can try to execute everything in one go. So I have
+
+00:27:07.340 --> 00:27:10.640
+already given you a query for creation and insertion. So you
+
+00:27:10.640 --> 00:27:13.880
+can try to like, like execute everything in one go.
+
+00:27:26.850 --> 00:27:29.530
+If you have to start from a fresh, so in that case you can
+
+00:27:29.530 --> 00:27:32.850
+try to drop all the table, right? Drop all the tables. This
+
+00:27:32.850 --> 00:27:35.050
+is the drop command. So you can drop all the table. And then
+
+00:27:35.050 --> 00:27:39.670
+execute the previous one. If you like got stuck somewhere in
+
+00:27:39.670 --> 00:27:44.610
+between, okay, so this is done, right? This is done by data
+
+00:27:44.610 --> 00:27:48.050
+preparation is done. Now what I'm supposed to do, so I'm
+
+00:27:48.050 --> 00:27:50.770
+supposed to follow this entire procedure, right? This entire
+
+00:27:50.770 --> 00:27:53.870
+procedure I'm supposed to follow in a step-by-step manner so
+
+00:27:53.870 --> 00:27:57.490
+that I will be able to, you know, perform or I will be able
+
+00:27:57.490 --> 00:28:01.350
+to build this entire application. Okay. So to do that, let's
+
+00:28:01.350 --> 00:28:04.690
+try to open up a VS code, right? Let's try to open up a VS
+
+00:28:04.690 --> 00:28:08.730
+code. And now let's try to build an application. So here go
+
+00:28:08.730 --> 00:28:13.590
+to file, open folder and the D drive and inside by code, I'm
+
+00:28:13.590 --> 00:28:21.770
+going to create a folder called as SQL LLM, SQL LLM gen AI
+
+00:28:21.770 --> 00:28:26.190
+class. Okay. So SQL LLM gen AI. So this is the folder which
+
+00:28:26.190 --> 00:28:29.450
+I have created. And inside that I will be writing all the
+
+00:28:29.450 --> 00:28:32.910
+code in a step-by-step manner. So first of all, guys, you
+
+00:28:32.910 --> 00:28:35.830
+have to do a couple of things. So you have to basically
+
+00:28:35.830 --> 00:28:40.850
+create a .environment file, .env file, where you are going
+
+00:28:40.850 --> 00:28:43.710
+to keep your credentials, your environment credentials, you
+
+00:28:43.710 --> 00:28:46.610
+are going to keep it over here. So how you are going to keep
+
+00:28:46.610 --> 00:28:48.970
+it over here and what kind of a credential you have to keep.
+
+00:28:49.050 --> 00:28:52.050
+So first of all, URI API key you have to keep. And then
+
+00:28:52.050 --> 00:28:55.950
+second one is a database URI you have to keep so that you
+
+00:28:55.950 --> 00:29:00.270
+will be able to connect with the data basis. Now URI API key
+
+00:29:00.270 --> 00:29:04.030
+from where I will be able to get my URI API key. Okay. So I
+
+00:29:04.030 --> 00:29:08.350
+can go to Euron, I can go to Euron, and then I can go to
+
+00:29:08.350 --> 00:29:12.330
+URI. I can go to API and then authentication. And from here
+
+00:29:12.330 --> 00:29:17.330
+we can try to copy the API token as simple as that. So these
+
+00:29:17.330 --> 00:29:19.690
+are the two things guys, you have to create, these are the
+
+00:29:19.690 --> 00:29:22.150
+two variable you have to create inside .environment. So one
+
+00:29:22.150 --> 00:29:30.460
+is a URI API key, which is required to hit my LLMs. Yeah. So
+
+00:29:30.460 --> 00:29:34.840
+just copy the key and keep it inside my URI API key. As
+
+00:29:34.840 --> 00:29:37.780
+simple as that URI API key variable. And then there is a
+
+00:29:37.780 --> 00:29:40.780
+second thing which is required called as database URI. Now
+
+00:29:40.780 --> 00:29:45.320
+see your Streamlint app is going to run maybe now as of now
+
+00:29:45.320 --> 00:29:48.240
+into a local and then going forward. So you are going to
+
+00:29:48.240 --> 00:29:52.300
+host your entire Streamlint app on a Streamlint platform or
+
+00:29:52.300 --> 00:29:55.700
+maybe on some other cloud platform possible, right? So you
+
+00:29:55.700 --> 00:29:57.700
+are going to host each and everything on some other cloud
+
+00:29:57.700 --> 00:30:03.960
+platform now. So you have to connect with this new data.
+
+00:30:03.960 --> 00:30:07.540
+That you have created just now. Let me close all the other
+
+00:30:07.540 --> 00:30:12.240
+window, by the way, it's not required now. So yeah, so I
+
+00:30:12.240 --> 00:30:15.400
+have to connect with this neon unless and until I will not
+
+00:30:15.400 --> 00:30:19.080
+be able to connect with this neon. How I will be able to
+
+00:30:19.080 --> 00:30:22.180
+reach out to this data basis, how I will be able to reach
+
+00:30:22.180 --> 00:30:24.980
+out to this table and data which is available inside this
+
+00:30:24.980 --> 00:30:28.700
+particular table, practically impossible. So here you will
+
+00:30:28.700 --> 00:30:31.960
+be able to find out one option called as dashboard option, a
+
+00:30:31.960 --> 00:30:34.260
+very first option itself, right? Very first option is
+
+00:30:34.260 --> 00:30:36.880
+basically a dashboard option. So you can try to click on
+
+00:30:36.880 --> 00:30:39.640
+this dashboard, right? You can try to click on the dashboard
+
+00:30:39.640 --> 00:30:43.340
+and then over here, you will be able to find out a very
+
+00:30:43.340 --> 00:30:46.540
+first option called as connect or you can even try to go
+
+00:30:46.540 --> 00:30:49.700
+ahead and just just parallel to your project dashboard, you
+
+00:30:49.700 --> 00:30:52.740
+will be able to find out an icon called as connect icon. So
+
+00:30:52.740 --> 00:30:56.340
+click on this connect icon, by the way, yeah, so click on
+
+00:30:56.340 --> 00:31:01.500
+this correct icon. And then you will be able to see some of
+
+00:31:01.500 --> 00:31:04.880
+the URL over here. Okay. So maybe you can try to copy this
+
+00:31:04.880 --> 00:31:09.780
+snippet, this URL. Now this URL is required. This URL is
+
+00:31:09.780 --> 00:31:13.140
+required to connect to you from anywhere, anywhere means
+
+00:31:13.140 --> 00:31:15.520
+literally anywhere, maybe from a cloud, maybe from a local,
+
+00:31:15.640 --> 00:31:20.840
+anywhere to this one, to this neon.tech console that I'm
+
+00:31:20.840 --> 00:31:23.980
+talking about. And inside that the kind of a data basis that
+
+00:31:23.980 --> 00:31:26.600
+we have, the kind of a database and the kind of a table that
+
+00:31:26.600 --> 00:31:31.080
+we have. So this URI is required. This URI you will be able
+
+00:31:31.080 --> 00:31:34.380
+to find out under this connect tab. So copy this one and
+
+00:31:34.380 --> 00:31:39.440
+then paste the same thing inside this database URI only this
+
+00:31:39.440 --> 00:31:42.480
+much is required by default, they are giving you this one.
+
+00:31:42.560 --> 00:31:45.840
+Yeah. So by default, they are giving you this one. So where
+
+00:31:45.840 --> 00:31:48.920
+your ID and password is already mentioned, your database is
+
+00:31:48.920 --> 00:31:51.400
+already mentioned. So you are not supposed to worry about
+
+00:31:51.400 --> 00:31:55.660
+anything. Just copy the this particular URI and your work is
+
+00:31:55.660 --> 00:31:58.520
+going to be done. And my environment file creation will be
+
+00:31:58.520 --> 00:32:02.840
+done. Don't copy someone's else URI. Otherwise, you will not
+
+00:32:02.840 --> 00:32:03.960
+be able to find it. You will not be able to interact with
+
+00:32:03.960 --> 00:32:08.160
+yours in that case. Making sense guys? Are we able to follow
+
+00:32:08.160 --> 00:32:12.960
+along with this step? Are we able to create a URI API key
+
+00:32:12.960 --> 00:32:17.340
+and a database URI both? Yes, everyone.
+
+00:32:26.280 --> 00:32:30.100
+Yeah. So this database URI to connect with your neon, as
+
+00:32:30.100 --> 00:32:33.780
+simple as that. So doctor is saying yes. What about others
+
+00:32:33.780 --> 00:32:37.480
+guys? I think guys are slow. Siam, yes. Pawan, yes.
+
+00:32:37.500 --> 00:32:42.080
+Abdullah, yes. Okay. Wadaraj, Wadi, Raj. Okay. Fine.
+
+00:32:46.820 --> 00:32:50.340
+Okay. So this is done. And I believe we all are able to
+
+00:32:50.340 --> 00:32:53.180
+understand that why we are using it. So URI API key so that
+
+00:32:53.180 --> 00:32:56.980
+I will be able to use any of the LLMs. So we have nine LLMs,
+
+00:32:57.140 --> 00:33:00.060
+right? Nine models, uh, access available to all of us as a
+
+00:33:00.060 --> 00:33:04.000
+part of your own and URI and a database URI to connect with
+
+00:33:04.000 --> 00:33:06.560
+my neon databases. Now let's suppose if I'm going to use a
+
+00:33:06.560 --> 00:33:08.840
+render, so obviously I'll be using that. You are render URL.
+
+00:33:09.160 --> 00:33:11.500
+If I'm going to use railway, I will be using a railway URL.
+
+00:33:11.840 --> 00:33:15.920
+If I have some databases over a database. Uh, AWS, Azure or
+
+00:33:15.920 --> 00:33:19.540
+GCP. So your admin is going to give you even URI for that so
+
+00:33:19.540 --> 00:33:21.780
+that you will be able to hit your databases. Let's suppose
+
+00:33:21.780 --> 00:33:25.620
+if I'm going to use me a local host, right? Local host. So
+
+00:33:25.620 --> 00:33:31.080
+even from here, from a local host, so I will be able to log
+
+00:33:31.080 --> 00:33:35.340
+in into the port number 33 0 6 and uh, my route and my admin
+
+00:33:35.340 --> 00:33:37.460
+password. And with the help of that, I will be able to
+
+00:33:37.460 --> 00:33:40.920
+connect with a local. So it doesn't matter at all. So with
+
+00:33:40.920 --> 00:33:43.560
+any system I will be able to connect. Now this is going to
+
+00:33:43.560 --> 00:33:46.120
+help me out. With respect to connect it to a neon. That's
+
+00:33:46.120 --> 00:33:49.940
+it. So now close it. Once this is done, close it. Now there
+
+00:33:49.940 --> 00:33:53.300
+is a next file that we are going to create. And that next
+
+00:33:53.300 --> 00:33:58.880
+file is going to be, uh, I can go ahead and I can try to
+
+00:33:58.880 --> 00:34:03.340
+create maybe a configuration file. Uh, I can even avoid that
+
+00:34:03.340 --> 00:34:06.840
+part, but yeah, that's fine. So here let's go ahead and
+
+00:34:06.840 --> 00:34:11.960
+let's try to create a config C O N F I G dot PI file config
+
+00:34:11.960 --> 00:34:14.000
+dot PI file. Now what we are going to do? We are going to
+
+00:34:14.000 --> 00:34:16.960
+keep it here. So nothing, we are going to basically like,
+
+00:34:16.960 --> 00:34:21.300
+uh, call our, uh, URI and we are going to basically call our
+
+00:34:21.300 --> 00:34:28.200
+DB. That's it. So here I can write import, import operating
+
+00:34:28.200 --> 00:34:33.360
+system. And then inside that from dot dev
+
+00:34:35.600 --> 00:34:42.120
+import load dot environment. So I'm going to read the
+
+00:34:42.120 --> 00:34:48.420
+environment. Load. Dot. Dev. Updates. So it's like a, uh, a,
+
+00:34:48.540 --> 00:34:50.820
+a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a,
+
+00:34:50.820 --> 00:34:51.080
+a, a, a, a, a, a, So in the, in the, in the name of the API,
+
+00:34:51.080 --> 00:34:56.220
+the URI API key is equals to operating system dot get, get,
+
+00:34:56.220 --> 00:35:00.760
+get, get, get, get, get, get Envy. So get Envy. And then
+
+00:35:00.760 --> 00:35:06.840
+it's a same name URI API key. I'll copy here. So it is going
+
+00:35:06.840 --> 00:35:09.940
+to access URI API key by the way, from my dot environment
+
+00:35:09.940 --> 00:35:20.480
+file, and then URI API, URI API. Uh. So URI API URL, so what
+
+00:35:20.480 --> 00:35:26.180
+is my URI API URL by the way? So I can go to my URI and what
+
+00:35:26.180 --> 00:35:32.020
+is my API URL by the way, end point. So my end point is
+
+00:35:32.020 --> 00:35:36.080
+going to be this one. So this chat completion, I can try to
+
+00:35:36.080 --> 00:35:40.200
+copy it here. I think we have been using it like almost
+
+00:35:40.200 --> 00:35:42.680
+everywhere. So it's the same thing. We are not talking about
+
+00:35:42.680 --> 00:35:43.800
+something different over here.
+
+00:35:50.150 --> 00:35:56.270
+So this is my URI end point for my chat completion. So URI
+
+00:35:56.270 --> 00:36:01.750
+URL, model name I can try to pass. So MODEL model underscore
+
+00:36:01.750 --> 00:36:05.530
+name as we know that URI provides multiple models. So it's
+
+00:36:05.530 --> 00:36:08.970
+my choice which model I am going to use. Now how to access
+
+00:36:08.970 --> 00:36:11.930
+that particular part? So to access that part, you can go
+
+00:36:11.930 --> 00:36:16.130
+ahead with model, available models. And now you can choose
+
+00:36:16.130 --> 00:36:18.990
+any model that you want. So let's suppose I am going ahead
+
+00:36:18.990 --> 00:36:22.770
+with GPT 4.1 nano. I can copy this particular ID. If I am
+
+00:36:22.770 --> 00:36:25.470
+going through a mini, I can copy this ID. If I am going
+
+00:36:25.470 --> 00:36:28.510
+through a flash, I can copy this ID. So it depends. Whatever
+
+00:36:28.510 --> 00:36:31.670
+model I want, I can try to use all of these model with the
+
+00:36:31.670 --> 00:36:36.410
+single end point. So GPT 4.1 nano model name is this one. So
+
+00:36:36.410 --> 00:36:40.290
+this is the model I am going to use. DATABASE, basically
+
+00:36:40.290 --> 00:36:44.930
+DATABASE underscore URI. URI. So DATABASE URI is already
+
+00:36:44.930 --> 00:36:47.750
+available inside my .env, I'll just have to read it. So
+
+00:36:47.750 --> 00:36:52.450
+operating system dot get environment and then read it from
+
+00:36:52.450 --> 00:36:58.510
+the .env file. So here a DATABASE URI, I'll try to read it
+
+00:36:58.510 --> 00:37:03.210
+inside my configuration file. It's not required to create a
+
+00:37:03.210 --> 00:37:05.370
+configuration file. I'm just creating it so that we can
+
+00:37:05.370 --> 00:37:08.170
+achieve a modularity. That's it. Otherwise it's not even
+
+00:37:08.170 --> 00:37:10.910
+required. I can write it down inside a main.py file itself.
+
+00:37:11.130 --> 00:37:15.190
+So my config.py file is ready. So now here is a code for
+
+00:37:15.190 --> 00:37:16.370
+config.py file.
+
+00:37:19.350 --> 00:37:24.010
+Done guys. Are we okay with a config.py file everyone?
+
+00:37:25.390 --> 00:37:27.130
+Environment file then config file.
+
+00:37:54.850 --> 00:38:03.930
+Hmm. Okay. Now, so configuration file is ready. Close it
+
+00:38:03.930 --> 00:38:06.810
+now. So if configuration file is ready, so now configuration
+
+00:38:06.810 --> 00:38:10.050
+file wise we were just trying to read something from a .env
+
+00:38:10.050 --> 00:38:12.090
+file. That's it. This is something that we were trying to
+
+00:38:12.090 --> 00:38:16.850
+do. Now. Our main code will go inside a file called as
+
+00:38:16.850 --> 00:38:23.210
+utils, utils.py. So this is the place where our main code
+
+00:38:23.210 --> 00:38:28.650
+will enter. Our main code is going to go now here. So we are
+
+00:38:28.650 --> 00:38:32.870
+going to import a couple of things. So first of all, we are
+
+00:38:32.870 --> 00:38:39.290
+going to import, import a request, import request. Now
+
+00:38:39.290 --> 00:38:44.070
+second thing is so here. I have to do a import of SQL.
+
+00:38:44.230 --> 00:38:49.250
+Alchemy. A L C H E M Y. I'll tell you why we are importing a
+
+00:38:49.250 --> 00:38:55.670
+SQL alchemy, SQL, L C H E M Y SQL alchemy, and then try to
+
+00:38:55.670 --> 00:38:58.710
+import couple of things. So try to import a text, try to
+
+00:38:58.710 --> 00:39:06.970
+import a meta data. Yeah. So meta data, M capital M E T A D
+
+00:39:06.970 --> 00:39:12.310
+H T A meta data. So from a SQL alchemy. So we have to import
+
+00:39:12.310 --> 00:39:15.530
+this one. Yeah. And then just try to call your configuration
+
+00:39:15.530 --> 00:39:19.990
+file that you have already created. So from config, just try
+
+00:39:19.990 --> 00:39:26.030
+to import what? So URI API key, URI URL, and then like a
+
+00:39:26.030 --> 00:39:30.010
+model name, you can try to copy over here. So these are the
+
+00:39:30.010 --> 00:39:33.210
+things that guys that you have to copy. So I'm copying this
+
+00:39:33.210 --> 00:39:40.000
+entire things from my config file, by the way. So is it done
+
+00:39:40.000 --> 00:39:42.540
+inside my utils?
+
+00:39:51.460 --> 00:39:56.160
+Okay. So inside my utils, what I'm supposed to create. So
+
+00:39:56.160 --> 00:39:59.880
+I'm supposed to create three functions. The very first
+
+00:39:59.880 --> 00:40:04.740
+function, which is going to create a meta information, a
+
+00:40:04.740 --> 00:40:07.420
+complete meta data. Now, what does the meaning of this meta
+
+00:40:07.420 --> 00:40:11.700
+information? So we have already created a table, right? So
+
+00:40:11.700 --> 00:40:16.580
+we have a table over here, close and then SQL editor. And we
+
+00:40:16.580 --> 00:40:19.320
+have already created a table over here, right? Table over
+
+00:40:19.320 --> 00:40:22.920
+here. Now, every table is having some sort of a columns. So
+
+00:40:22.920 --> 00:40:25.440
+every table is having a table name, and then every table is
+
+00:40:25.440 --> 00:40:29.220
+having a column name and its data type. Column name is data
+
+00:40:29.220 --> 00:40:32.500
+type, column name is data type plus. So whether we have a
+
+00:40:32.500 --> 00:40:36.720
+primary key or foreign key or any other constraint. So all
+
+00:40:36.720 --> 00:40:39.740
+of these things is mentioned inside my table meta
+
+00:40:39.740 --> 00:40:46.500
+information, right? So before asking my LLM to write a
+
+00:40:46.500 --> 00:40:50.800
+query. My LLM would like to write a query. To understand the
+
+00:40:50.800 --> 00:40:55.660
+meta information or detail about a table schema, that what
+
+00:40:55.660 --> 00:40:58.840
+was a table name? What was a column name? What was a data
+
+00:40:58.840 --> 00:41:02.040
+type? Which one is a primary key? Which one is a foreign
+
+00:41:02.040 --> 00:41:05.040
+key? So whether your table is counted in one to one, one to
+
+00:41:05.040 --> 00:41:09.140
+many, many to one or in a many to many way as a like a model
+
+00:41:09.140 --> 00:41:13.960
+wise. So all of these information will be required for my
+
+00:41:13.960 --> 00:41:16.940
+LLMs unless and until my LLMs is not having those
+
+00:41:16.940 --> 00:41:20.760
+information. It will. It will not be able to write a proper
+
+00:41:20.760 --> 00:41:24.800
+query and that is the reason. So I have to write a function.
+
+00:41:24.980 --> 00:41:27.860
+So a very simple, a straightforward function I have to
+
+00:41:27.860 --> 00:41:31.880
+write. So which will try to hit my databases and it will be
+
+00:41:31.880 --> 00:41:35.700
+able to generate all the meta information means information
+
+00:41:35.700 --> 00:41:39.360
+about the schema or the table that we have already created.
+
+00:41:39.640 --> 00:41:44.820
+Yeah. So Siam is saying DDL obviously. Yeah. So, and it's
+
+00:41:44.820 --> 00:41:48.560
+obviously a relationship in between. So we have to write
+
+00:41:48.560 --> 00:41:52.380
+that particular. Function. And this is where I'm going to
+
+00:41:52.380 --> 00:41:56.640
+use a SQL alchemy. So SQL alchemy is a library. So which is
+
+00:41:56.640 --> 00:41:59.840
+a generalized one, uh, where, uh, whether you are connected
+
+00:41:59.840 --> 00:42:03.320
+with the my SQL or MS SQL, or maybe with respect to any
+
+00:42:03.320 --> 00:42:06.740
+other databases, a SQL based databases, PostgreSQL, it is
+
+00:42:06.740 --> 00:42:09.020
+going to help me out in terms of like, you know, going
+
+00:42:09.020 --> 00:42:12.200
+through those, uh, like a tables and extracting a meta
+
+00:42:12.200 --> 00:42:15.920
+information out of those, uh, tables. And this is where I'm
+
+00:42:15.920 --> 00:42:20.860
+going to use, uh, this one. Okay. So here is a function
+
+00:42:20.860 --> 00:42:27.440
+comes into a picture, get DB schema. Now here we are not
+
+00:42:27.440 --> 00:42:31.240
+doing much as you can see. So get DB schema. We are just
+
+00:42:31.240 --> 00:42:34.740
+going to pass a engine. So wherever we are going to call it.
+
+00:42:34.820 --> 00:42:38.020
+So we are just going to pass an engine engine means the URL,
+
+00:42:38.160 --> 00:42:41.800
+right? The URL we are going to pass, and then it is going to
+
+00:42:41.800 --> 00:42:46.080
+call a metadata from a SQL alchemy metadata object and meta
+
+00:42:46.080 --> 00:42:48.620
+dot reflect bind the engine. It means. Yeah. So whatever
+
+00:42:48.620 --> 00:42:52.380
+databases that you are going to use, the URI that you are
+
+00:42:52.380 --> 00:42:54.820
+going to pass URI, we have already mentioned over here,
+
+00:42:54.860 --> 00:42:57.940
+right? The URI that you are going to pass as an engine, that
+
+00:42:57.940 --> 00:43:00.520
+is a meaning of an engine basically over here, right? So
+
+00:43:00.520 --> 00:43:03.980
+whether it's a, my SQL engine, MS SQL engine, or maybe a
+
+00:43:03.980 --> 00:43:08.760
+PostgreSQL engine, or maybe a DB to engine oracle engine. So
+
+00:43:08.760 --> 00:43:11.460
+whatever engine that you want, so you can try to pass those
+
+00:43:11.460 --> 00:43:16.920
+engines and then it is going to call meta dot tables, dot
+
+00:43:16.920 --> 00:43:21.320
+values. Okay. So meta table values, it is going to extract
+
+00:43:21.320 --> 00:43:25.560
+it and it is going to create a schema as you can see, right?
+
+00:43:25.580 --> 00:43:28.420
+It is going to create a schema and it is going to keep all
+
+00:43:28.420 --> 00:43:31.300
+this schema inside this particular variable. So ultimately
+
+00:43:31.300 --> 00:43:35.140
+it is going to return the schema, the schema of the table.
+
+00:43:35.300 --> 00:43:37.680
+So for whatever engine that you are going to pass, it is
+
+00:43:37.680 --> 00:43:42.040
+going to return that particular part. So this get the DB
+
+00:43:42.040 --> 00:43:45.560
+schema is done and why we are doing it. I believe we all are
+
+00:43:45.560 --> 00:43:50.340
+aware about it. Okay. Because my LLM needs a structure of
+
+00:43:50.340 --> 00:43:53.200
+the table, my LLM needs the information about that
+
+00:43:53.200 --> 00:43:57.140
+particular table. Okay. Now, once this part is done, right?
+
+00:43:57.200 --> 00:44:00.440
+Once this part is done, once I'm aware about the table
+
+00:44:00.440 --> 00:44:04.700
+schema or the table structure, then what is next, right?
+
+00:44:04.760 --> 00:44:07.760
+What is next that I'm supposed to do? I'm supposed to
+
+00:44:07.760 --> 00:44:11.900
+perform. So the next operation that I'm going to perform is
+
+00:44:11.900 --> 00:44:16.280
+build a query. Yeah. Build a query. So let's suppose someone
+
+00:44:16.280 --> 00:44:19.560
+is going to pass some sort of a text, some sort of a prompt,
+
+00:44:19.780 --> 00:44:22.060
+right? Text means a prompt. Let's suppose you are going to
+
+00:44:22.060 --> 00:44:24.660
+pass a prompt that show me a data from this particular
+
+00:44:24.660 --> 00:44:27.700
+table. So which day I was able to do a more number of sales,
+
+00:44:27.820 --> 00:44:30.940
+or maybe like I can try to ask a question that, uh, which
+
+00:44:30.940 --> 00:44:34.480
+was the item, which is a top selling item, right? So just go
+
+00:44:34.480 --> 00:44:37.620
+and search into my data. So this are the prompt, this kind
+
+00:44:37.620 --> 00:44:40.500
+of a prompt that you are going to give. And once you are
+
+00:44:40.500 --> 00:44:44.060
+going to give a prompt now that prompt should pass through.
+
+00:44:44.060 --> 00:44:47.040
+Along with my meta information. So that's prompt should pass
+
+00:44:47.040 --> 00:44:51.180
+through my model, LLM models basically, right? So here I'm
+
+00:44:51.180 --> 00:44:56.820
+supposed to call my URI LLM, right? URI LLM. Now for URI LLM
+
+00:44:56.820 --> 00:44:59.880
+code is very standard, right? Code is pretty much standard,
+
+00:45:00.000 --> 00:45:04.140
+uh, that we have already created. So you will be able to get
+
+00:45:04.140 --> 00:45:07.220
+this piece of a code even from like, uh, this one, uh, from,
+
+00:45:07.240 --> 00:45:11.740
+uh, your own portal. Now let me, uh, call you that. So we
+
+00:45:11.740 --> 00:45:14.580
+are trying to pass a URI API key. As you can see. And then
+
+00:45:14.580 --> 00:45:17.280
+we are trying to pass a model name. So model name, URI API
+
+00:45:17.280 --> 00:45:19.740
+key, everything is coming from my configuration. I have just
+
+00:45:19.740 --> 00:45:22.680
+configured it temperature. You can increase or decrease if
+
+00:45:22.680 --> 00:45:25.000
+you are going to decrease it. So it will try to reduce the
+
+00:45:25.000 --> 00:45:27.100
+randomness. If you're going to increase it, it is going to
+
+00:45:27.100 --> 00:45:30.060
+be more creative. Maximum number of token. You can try to
+
+00:45:30.060 --> 00:45:33.400
+limit, and then it is going to give you the response. Yeah,
+
+00:45:33.460 --> 00:45:35.140
+it is going to give you the response. So this is the
+
+00:45:35.140 --> 00:45:37.720
+separate things that I have created. So I'm going to pass
+
+00:45:37.720 --> 00:45:40.540
+the prompt and then it is going to act accordingly. So once
+
+00:45:40.540 --> 00:45:44.840
+I'm going to pass the prompt. Okay. So this is this. So this
+
+00:45:44.840 --> 00:45:48.300
+is basically a URI. And then the third one is, third
+
+00:45:48.300 --> 00:45:51.240
+function, isolated function that I need is basically a
+
+00:45:51.240 --> 00:45:56.200
+execute SQL. So once you will be having a query, right?
+
+00:45:56.300 --> 00:45:59.080
+Let's suppose LLM, URI is going to give a query by
+
+00:45:59.080 --> 00:46:05.220
+understanding your input, your prompt and by taking care of
+
+00:46:05.220 --> 00:46:08.600
+a schema, which is already available. I just have to do
+
+00:46:08.600 --> 00:46:10.960
+what? I have to execute the query because at the end of the
+
+00:46:10.960 --> 00:46:15.120
+day, uh, on other side, if I'll talk about the SQL, if I'll
+
+00:46:15.120 --> 00:46:19.300
+talk about the SQL system, uh, yeah, so this SQL system
+
+00:46:19.300 --> 00:46:23.960
+understands its own format, right? Which is a SQL format. So
+
+00:46:23.960 --> 00:46:26.740
+at the end of the day, you can just try to pass a SQL. It is
+
+00:46:26.740 --> 00:46:29.220
+going to return you the data. Nothing much, right? Nothing
+
+00:46:29.220 --> 00:46:32.400
+much. The old task will be done or whole things will be done
+
+00:46:32.400 --> 00:46:35.480
+by my LLM at the end of the day. So here, once I will be
+
+00:46:35.480 --> 00:46:38.300
+able to build the query engine is already ready with me. I
+
+00:46:38.300 --> 00:46:42.180
+have my URL, right? So connect and connection.execute. Just
+
+00:46:42.180 --> 00:46:44.740
+the way you execute. Any kind of a query from a programming
+
+00:46:44.740 --> 00:46:47.280
+language. So I'm just trying to call connection.execute,
+
+00:46:47.340 --> 00:46:50.320
+pass the query, and then it is going to fetch the result is
+
+00:46:50.320 --> 00:46:53.560
+going to give you the result simple. So these are the three
+
+00:46:53.560 --> 00:46:56.780
+functions are separate, separate independent function. I
+
+00:46:56.780 --> 00:47:01.300
+have to keep it inside my utils.py file, which I'm going to
+
+00:47:01.300 --> 00:47:05.360
+use it eventually. Is it making sense guys? Yeah. All three
+
+00:47:05.360 --> 00:47:10.240
+functions. So one for getting a meta information, one for
+
+00:47:10.240 --> 00:47:13.280
+basically like a based on the prompt, it is going to like a
+
+00:47:13.280 --> 00:47:16.440
+create my query, and then we are going to pass a query and
+
+00:47:16.440 --> 00:47:22.000
+it is going to give me the final output. Yes, everyone. Now
+
+00:47:22.000 --> 00:47:24.440
+all these things are not connected as of now, obviously this
+
+00:47:24.440 --> 00:47:27.100
+is just a independent function that we have created, but
+
+00:47:27.100 --> 00:47:28.620
+yeah, it's, it's not connected so far.
+
+00:47:37.810 --> 00:47:39.050
+Okay. Fine. Everyone.
+
+00:47:46.780 --> 00:47:51.260
+Okay. So if this is done, close it now. Close everything.
+
+00:47:51.400 --> 00:47:57.000
+Yeah. Close everything. Now try to create a main file. main
+
+00:47:57.000 --> 00:48:01.780
+.py. Right. So where I'm going to keep my streamlint basic
+
+00:48:01.780 --> 00:48:06.520
+application with the basic UI interface, where someone can
+
+00:48:06.520 --> 00:48:10.140
+come and prompt it from something. And then like whatever
+
+00:48:10.140 --> 00:48:12.540
+result I will be able to get, I should showcase those
+
+00:48:12.540 --> 00:48:15.600
+results into a beautiful tabular format. This is something
+
+00:48:15.600 --> 00:48:20.260
+that we are going to do it inside a streamlint basically. So
+
+00:48:20.260 --> 00:48:24.340
+here, first of all, I have to do a import, import of what?
+
+00:48:24.460 --> 00:48:28.440
+So first of all, import of a streamlint. A SQL alchemy,
+
+00:48:28.620 --> 00:48:32.500
+create engine configuration, database URL, and from utils,
+
+00:48:32.560 --> 00:48:35.600
+DB schema, call URI, these three functions that we have
+
+00:48:35.600 --> 00:48:39.240
+created just now. So these are the import that we have to do
+
+00:48:39.240 --> 00:48:43.680
+from a streamlint into a main.py file. So just create main
+
+00:48:43.680 --> 00:48:48.220
+.py file and then try to do a import. Now once you are able
+
+00:48:48.220 --> 00:48:52.940
+to do a import, once you are able to do a import, then maybe
+
+00:48:52.940 --> 00:48:57.880
+I can try to create a very simple layout. Okay. So I can
+
+00:48:57.880 --> 00:48:59.060
+create a very simple layout inside my streamlint. So PID
+
+00:48:59.060 --> 00:49:04.460
+configuration, title, and then give like a input area. So
+
+00:49:04.460 --> 00:49:09.240
+where user can try to ask their question. So control S. And
+
+00:49:09.240 --> 00:49:14.020
+then now, so I think this we have been doing since a very,
+
+00:49:14.060 --> 00:49:16.660
+very long time with respect to streamlint app. So I don't
+
+00:49:16.660 --> 00:49:20.020
+think that it's required the explanation. Now here what I
+
+00:49:20.020 --> 00:49:23.780
+can do is that I can try to come here, I can try to call a
+
+00:49:23.780 --> 00:49:27.160
+streamlint just for the testing purpose. S-T-R-E-M-L-I-T
+
+00:49:27.160 --> 00:49:35.650
+streamlint run and run what? So main.py file. Now I'm able
+
+00:49:35.650 --> 00:49:39.770
+to see this particular error saying that that .dev is not
+
+00:49:39.770 --> 00:49:45.070
+found. Yeah. So .dev environment is not found. Okay. Let's
+
+00:49:45.070 --> 00:49:48.810
+do one thing. Let's create a requirement.txt and let's keep
+
+00:49:48.810 --> 00:49:52.370
+all the requirement in one single place. R-E-Q-U-I-R-E-M-N-T
+
+00:49:52.370 --> 00:49:56.270
+-S requirements.txt. Let's keep all the requirement in one
+
+00:49:56.270 --> 00:49:58.770
+single place. Okay. So these are the things that we are
+
+00:49:58.770 --> 00:50:01.690
+going to use. Let me bring you this part as well.
+
+00:50:06.910 --> 00:50:09.550
+So these are the things, again, make sure that your
+
+00:50:09.550 --> 00:50:12.890
+requirement.txt file name should be like a requirements R-E
+
+00:50:12.890 --> 00:50:19.930
+-Q-U-I-R-E-M-N-T-S requirements and terminate my run, clean
+
+00:50:19.930 --> 00:50:27.550
+it and then install the requirement.txt file. So pip install
+
+00:50:27.550 --> 00:50:33.390
+hyphen R requirements.txt. Install everything. Okay. So I
+
+00:50:33.390 --> 00:50:37.770
+have installed each and everything. That's great. Now let's
+
+00:50:37.770 --> 00:50:42.330
+try to run it once again, CLS, clean it and still it run
+
+00:50:42.330 --> 00:50:43.390
+main.py file.
+
+00:50:50.260 --> 00:50:56.820
+Still it is telling me that model not found .dev. I have
+
+00:50:56.820 --> 00:51:01.880
+done the installation, but still there is a issue with this.
+
+00:51:02.020 --> 00:51:06.460
+Okay. Not an issue. I can try to.
+
+00:51:11.650 --> 00:51:16.650
+Okay. Fine guys, let's do it in a cleaner way. So just do
+
+00:51:16.650 --> 00:51:20.550
+CLS and let's go ahead and create a new environment then. So
+
+00:51:20.550 --> 00:51:22.430
+with the help of conda, I can create a new environment or
+
+00:51:22.430 --> 00:51:25.610
+even with the help of like a simple Python command, I can
+
+00:51:25.610 --> 00:51:27.690
+try to create the new environment. So I'm going to write up
+
+00:51:27.690 --> 00:51:33.230
+over here dot environment, not dot dev. Okay. Sorry. This
+
+00:51:33.230 --> 00:51:39.570
+was the mistake I was making. Config. Oh, sorry, sorry,
+
+00:51:39.590 --> 00:51:45.230
+sorry. That was the issue. Dot env. Yeah, I was just going
+
+00:51:45.230 --> 00:51:51.610
+along with the flow. Otherwise, anyhow, sooner or later, no
+
+00:51:54.360 --> 00:52:02.360
+module name utils, U-T-I-L-S, spelling mistake. I can make
+
+00:52:02.360 --> 00:52:09.380
+changes here itself. So now this one is also correct. Now
+
+00:52:09.380 --> 00:52:13.880
+SQL power data retrieval assistant. And here. So it is going
+
+00:52:13.880 --> 00:52:17.760
+to allow me to ask any question. So ask your question in any
+
+00:52:17.760 --> 00:52:21.160
+language. So this was a very simple UI that I have created.
+
+00:52:21.320 --> 00:52:24.600
+So where I will be able to pass my prompt, I will be able to
+
+00:52:24.600 --> 00:52:29.100
+pass my query. Simple. Okay. Fine. So till this point,
+
+00:52:29.180 --> 00:52:33.000
+things are working perfectly fine. I have not done any kind
+
+00:52:33.000 --> 00:52:36.400
+of a connectivity so far. So everything is like isolated and
+
+00:52:36.400 --> 00:52:39.880
+everything is like independent of each other. So now I will
+
+00:52:39.880 --> 00:52:43.520
+start doing a connectivity with each and everything. Yeah.
+
+00:52:44.920 --> 00:52:48.640
+So here, once you are going to pass any kind of a query,
+
+00:52:48.800 --> 00:52:52.220
+actual task is going to start from here, right? As per the
+
+00:52:52.220 --> 00:52:55.380
+design that I have given to you. So the actual task is going
+
+00:52:55.380 --> 00:52:58.620
+to start from where your streamlined UI client, you are
+
+00:52:58.620 --> 00:53:02.100
+going to pass any kind of a query in an English language, by
+
+00:53:02.100 --> 00:53:06.100
+the way, now it is supposed to hit LLMs. LLM is supposed to
+
+00:53:06.100 --> 00:53:09.260
+get a meta information, a search into a SQL DB after
+
+00:53:09.260 --> 00:53:12.700
+building our queries, and then give you the output. So now
+
+00:53:12.700 --> 00:53:17.000
+the real stuff is going to start once you are going to pass,
+
+00:53:17.200 --> 00:53:22.780
+right? Once you are going to pass the query in your English
+
+00:53:22.780 --> 00:53:25.320
+language, or once you are going to prompt it. So here your
+
+00:53:25.320 --> 00:53:28.980
+prompt will come here, your prompt will come, right? And
+
+00:53:28.980 --> 00:53:34.440
+then we are going to write a code, a very simple code,
+
+00:53:34.540 --> 00:53:39.600
+right? Once I will be able to get a prompt. So this is the
+
+00:53:39.600 --> 00:53:41.840
+whole code guys. Let me ping you.
+
+00:53:46.840 --> 00:53:50.660
+Okay. So this is the whole code. So once I'm able to get a
+
+00:53:50.660 --> 00:53:54.920
+query, right? Once I'm able to get a query from a UI, then
+
+00:53:54.920 --> 00:53:57.760
+I'm trying to check. So if there is a query means if it is
+
+00:53:57.760 --> 00:54:01.860
+true, this is what it means, right? So if this is true, do
+
+00:54:01.860 --> 00:54:06.080
+one thing, create an engine. So how engine will be created?
+
+00:54:06.220 --> 00:54:08.980
+Like I told you, so you don't have to do anything to create
+
+00:54:08.980 --> 00:54:11.440
+an engine, right? So create engine is a function which is
+
+00:54:11.440 --> 00:54:14.100
+available inside the SQL alchemy now. So you don't have to
+
+00:54:14.100 --> 00:54:16.160
+do anything to create the engine. So basically you have to
+
+00:54:16.160 --> 00:54:20.200
+just pass a database UI. It doesn't matter which database
+
+00:54:20.200 --> 00:54:22.540
+you are using. So maybe you are using something in local,
+
+00:54:22.660 --> 00:54:25.200
+maybe you are using a MySQL, maybe you are using a MS SQL,
+
+00:54:25.360 --> 00:54:27.600
+maybe you are using a Oracle, maybe you are using a DB2,
+
+00:54:27.740 --> 00:54:30.900
+maybe you are using a Postgres. All of these are basically
+
+00:54:30.900 --> 00:54:34.940
+our variants of a SQL DB itself means a different, different
+
+00:54:34.940 --> 00:54:37.880
+engine or different, different companies have created as per
+
+00:54:37.880 --> 00:54:39.880
+their own need and they're selling it, right? They're
+
+00:54:39.880 --> 00:54:42.480
+selling that services since a very, very long time, since
+
+00:54:42.480 --> 00:54:45.980
+like many decades, I would say, right? Not a long time, many
+
+00:54:45.980 --> 00:54:50.600
+decades. So maybe 30, 40 years. Some companies. So, but
+
+00:54:50.600 --> 00:54:53.100
+yeah, underneath it's, it's the same thing. So SQL alchemy
+
+00:54:53.100 --> 00:54:56.620
+is going to help you out to just like a, you know, call one
+
+00:54:56.620 --> 00:54:59.520
+single create engine, pass your URI, it will be able to
+
+00:54:59.520 --> 00:55:02.260
+understand the rest of the things that what kind of a DB you
+
+00:55:02.260 --> 00:55:05.600
+are dealing with. So this URI is going to create an engine.
+
+00:55:05.660 --> 00:55:08.000
+Now this is going to help me out to connect basically
+
+00:55:08.000 --> 00:55:12.560
+because I'm passing URI. So my system knows that where that
+
+00:55:12.560 --> 00:55:16.680
+database is, by the way, then once I'm going to like, you
+
+00:55:16.680 --> 00:55:21.040
+know, uh. Get the engine. So I'm calling get DB schema. And
+
+00:55:21.040 --> 00:55:23.480
+if you remember this get DB schema, we have written inside
+
+00:55:23.480 --> 00:55:27.660
+utils file, right? So just, it will take the URI and then it
+
+00:55:27.660 --> 00:55:30.680
+will try to fetch what a meta information, the schema about
+
+00:55:30.680 --> 00:55:34.280
+the table. It is going to fetch. Okay. Fine. So first of
+
+00:55:34.280 --> 00:55:37.240
+all, we are trying to connect. This line is going to
+
+00:55:37.240 --> 00:55:40.420
+connect. The second line is going to fetch the schema
+
+00:55:40.420 --> 00:55:45.120
+because we need a schema at the end of the day. Now, once I
+
+00:55:45.120 --> 00:55:49.060
+will be able to get a schema. Okay. Once I will be able to
+
+00:55:49.060 --> 00:55:56.340
+get a schema. So I have to pass the schema and a prompt to
+
+00:55:56.340 --> 00:56:02.100
+whom? So I have to pass my schema and a prompt to my LLM
+
+00:56:02.100 --> 00:56:07.380
+basically, right? So I have to pass my schema and like a
+
+00:56:07.380 --> 00:56:12.240
+query, a prompt to my LLMs so that, uh, basically like, uh,
+
+00:56:12.380 --> 00:56:16.880
+you know, my LLMs will be able to create a query. SQL query
+
+00:56:16.880 --> 00:56:22.480
+accordingly. Agree everyone this flow, I believe this is
+
+00:56:22.480 --> 00:56:25.420
+what I have discussed, right? So once you are able to get a
+
+00:56:25.420 --> 00:56:28.600
+query, so basically we have to get a meta information and
+
+00:56:28.600 --> 00:56:31.020
+then we have to pass this entire, both the combined
+
+00:56:31.020 --> 00:56:33.980
+information, uh, meta information means a schema information
+
+00:56:33.980 --> 00:56:39.100
+and your prompt, right? Combine it and pass it to my URI AI.
+
+00:56:41.310 --> 00:56:45.250
+Yes, everyone. So here, uh, I have just like a, for this
+
+00:56:45.250 --> 00:56:47.550
+particular project. So I have created a prompt template. Dot
+
+00:56:47.550 --> 00:56:51.250
+TXT file, by the way, let me create a prompt template dot
+
+00:56:51.250 --> 00:56:54.390
+TXT file. I'm just trying to keep my prompt separately. It's
+
+00:56:54.390 --> 00:56:58.570
+not mandatory, uh, to keep your prompt separately. So inside
+
+00:56:58.570 --> 00:57:02.150
+this prompt, uh, inside this prompt, I'm just trying to say
+
+00:57:02.150 --> 00:57:07.210
+that you are an intelligent, just try to create a prompt dot
+
+00:57:07.210 --> 00:57:10.210
+TXT. So you are intelligent SQL assistance, translate the
+
+00:57:10.210 --> 00:57:13.170
+following natural language query into a SQL query. This is
+
+00:57:13.170 --> 00:57:16.170
+what I have written. And then I'm providing a schema. And
+
+00:57:16.170 --> 00:57:17.970
+then I'm providing a question. This is a question that you
+
+00:57:17.970 --> 00:57:21.370
+will be able to get from the user both, right? So schema
+
+00:57:21.370 --> 00:57:24.870
+meta information and a question. So this is going to build
+
+00:57:24.870 --> 00:57:28.270
+one single prompt for me. I'm just trying to convert
+
+00:57:28.270 --> 00:57:30.990
+everything into one single prompt. So this is what I have
+
+00:57:30.990 --> 00:57:34.570
+written like a prompt template dot TXT. Yeah, this is what I
+
+00:57:34.570 --> 00:57:37.070
+have written. So I'm just trying to read my prompt template
+
+00:57:37.070 --> 00:57:40.090
+dot TXT as you can see, right? So F dot read file dot read
+
+00:57:40.090 --> 00:57:44.070
+template and template dot format. So I'm trying to combine
+
+00:57:44.070 --> 00:57:46.990
+this schema and then like, I'm trying to pass basically like
+
+00:57:46.990 --> 00:57:49.090
+a, inside the template format. So I'm trying to provide the
+
+00:57:49.090 --> 00:57:52.210
+schema, a schema that I'm able to get from here, get DB
+
+00:57:52.210 --> 00:57:54.930
+schema and then question, question, which I'm able to get
+
+00:57:54.930 --> 00:57:58.630
+from the user input, user input. And this is going to my
+
+00:57:58.630 --> 00:58:01.610
+whole prompt because my URI is going to take what only a
+
+00:58:01.610 --> 00:58:04.670
+prompt, right? So I have just created the prompt prompt,
+
+00:58:04.750 --> 00:58:07.030
+which is holding a schema as well as which is holding the
+
+00:58:07.030 --> 00:58:09.490
+question, question that I'm getting from the user and a
+
+00:58:09.490 --> 00:58:12.770
+schema that I'm getting from the database. Simple. So this
+
+00:58:12.770 --> 00:58:16.050
+is going to my prompt, right? Now. Once. Once I will be able
+
+00:58:16.050 --> 00:58:20.330
+to get this prompt, I'm going to call my URI LLM. And now
+
+00:58:20.330 --> 00:58:25.030
+this URI LLM is going to return me what a SQL query. Yeah. A
+
+00:58:25.030 --> 00:58:28.570
+SQL query URI is going to return. Now once I will be able to
+
+00:58:28.570 --> 00:58:31.770
+get a SQL query, I'm showing you that SQL query in your UI.
+
+00:58:31.950 --> 00:58:35.390
+This is what I have written systemly.code show the query. So
+
+00:58:35.390 --> 00:58:38.850
+whatever SQL query that we have received. So so that query
+
+00:58:38.850 --> 00:58:42.590
+to you as well, right? And then same SQL query I'm passing
+
+00:58:42.590 --> 00:58:46.710
+to my SQL execute SQL. Uh, which function, which is already
+
+00:58:46.710 --> 00:58:50.510
+available inside my execute SQL here, utils file. Yeah. So
+
+00:58:50.510 --> 00:58:52.870
+it is taking engine. Engine means URL, by the way, database
+
+00:58:52.870 --> 00:58:55.870
+URL, and then query I'm trying to fire. So query, uh, which
+
+00:58:55.870 --> 00:58:59.490
+I have received from my LLMs. Yeah. And then it is going to
+
+00:58:59.490 --> 00:59:02.210
+give you the result and the columns it is trying to give
+
+00:59:02.210 --> 00:59:05.310
+you. I'm just trying to show you all of those information in
+
+00:59:05.310 --> 00:59:09.610
+a proper tabular data frame format. That's it. Yeah. Proper
+
+00:59:09.610 --> 00:59:12.250
+table, a data fit format. I'm trying to show you each and
+
+00:59:12.250 --> 00:59:16.170
+everything. Okay. So now this project looks like that it's,
+
+00:59:16.170 --> 00:59:19.490
+it's working well, right? Uh, like everything looks fine so
+
+00:59:19.490 --> 00:59:21.930
+far, if there will be an error, we'll try to fix it
+
+00:59:21.930 --> 00:59:24.650
+obviously. But yeah, so I believe we all are able to
+
+00:59:24.650 --> 00:59:28.130
+understand this entire, uh, operation that, that we have
+
+00:59:28.130 --> 00:59:34.070
+done. Now let's go ahead and try to execute my main.py file
+
+00:59:34.070 --> 00:59:38.830
+once again. So streamlit run main.py file now execute it.
+
+00:59:39.310 --> 00:59:44.030
+Now this is the UI interface, which I'm able to get. Yeah. I
+
+00:59:44.030 --> 00:59:50.630
+will try to ask a question that show me, show me order
+
+00:59:50.630 --> 00:59:51.650
+tables.
+
+01:00:00.110 --> 01:00:04.230
+So it's, it's running. Yeah. And then it has created a
+
+01:00:04.230 --> 01:00:07.450
+query, basically select a start from orders. And now this
+
+01:00:07.450 --> 01:00:10.890
+query will go inside my DB and this was the data which I
+
+01:00:10.890 --> 01:00:14.150
+have inserted into my orders table. Uh, it is, it is trying
+
+01:00:14.150 --> 01:00:17.370
+to like, uh, uh, show it to me. I can try to like, uh, even
+
+01:00:17.370 --> 01:00:22.050
+fetch that show me customer. Or maybe you can run it. Maybe
+
+01:00:22.050 --> 01:00:24.110
+you can write in some different language as well. The way
+
+01:00:24.110 --> 01:00:26.770
+you write your own English, maybe you can try to like, uh,
+
+01:00:27.490 --> 01:00:28.350
+uh, I did in that way.
+
+01:00:32.100 --> 01:00:35.260
+Okay. So customer table, it is trying to show me now I can
+
+01:00:35.260 --> 01:00:40.760
+just ask a question that, uh, who was a customer who have
+
+01:00:40.760 --> 01:00:53.720
+purchased highest value item and what was the, and, and what
+
+01:00:53.720 --> 01:00:56.000
+was the, what was the, uh, what was the, what is the value
+
+01:00:56.000 --> 01:00:59.440
+of it? See, I've just like, I'm giving a plain English
+
+01:00:59.440 --> 01:01:02.760
+language. I don't even like, uh, properly, uh, uh, giving,
+
+01:01:02.940 --> 01:01:05.920
+uh, something, you know, a properly grammatical order, but
+
+01:01:05.920 --> 01:01:10.320
+still it is working really very hard to build a query for
+
+01:01:10.320 --> 01:01:13.400
+me. My LLM is working literally very hard. Uh, it is trying
+
+01:01:13.400 --> 01:01:17.160
+to understand the schema. It is trying to understand me by
+
+01:01:17.160 --> 01:01:19.720
+the way. And then based on that, it is trying to like, uh,
+
+01:01:19.740 --> 01:01:20.500
+do something for me.
+
+01:01:24.360 --> 01:01:26.320
+So I'm just asking the question. Who was the customer who
+
+01:01:26.320 --> 01:01:28.560
+had purchased the highest value item? and what was the value
+
+01:01:28.560 --> 01:01:33.800
+of it and guys see the kind of query it has generated is it
+
+01:01:33.800 --> 01:01:40.270
+not complex is it not a nested query or it's like a query
+
+01:01:40.270 --> 01:01:45.330
+under a query or sub query that we that it has produced now
+
+01:01:45.330 --> 01:01:48.210
+just tell me one and i'm able to get it right so see what
+
+01:01:48.210 --> 01:01:50.270
+was my question who was the customer who have purchased the
+
+01:01:50.270 --> 01:01:53.250
+highest value item so alias johnson was the customer right
+
+01:01:53.250 --> 01:01:56.790
+and i have just asked that uh purchase highest value item
+
+01:01:56.790 --> 01:01:59.030
+and what was the value of that item so value of the highest
+
+01:01:59.030 --> 01:02:02.730
+value item was basically this 1200 yeah so this was the
+
+01:02:02.730 --> 01:02:05.070
+customer name this was the customer id and this was the
+
+01:02:05.070 --> 01:02:09.130
+highest value item now just tell me one thing if i would
+
+01:02:09.130 --> 01:02:12.510
+have asked you the same question how much time you would
+
+01:02:12.510 --> 01:02:15.430
+have taken to write down this query yeah
+
+01:02:18.730 --> 01:02:19.730
+so
+
+01:02:28.820 --> 01:02:32.160
+is this is not amazing guys so do we need to know even a
+
+01:02:32.160 --> 01:02:33.660
+sequel now yeah
+
+01:02:38.870 --> 01:02:43.650
+do we need to know a sequel now minimum 50 20 minutes a 15
+
+01:02:43.650 --> 01:02:46.510
+-20 minute format for export because export will go and try
+
+01:02:46.510 --> 01:02:48.830
+to understand the schema first right if i'll go and ask you
+
+01:02:48.830 --> 01:02:51.330
+a question directly in an interview i'll tell you that okay
+
+01:02:51.330 --> 01:02:55.030
+let's take this four table and then write this query i think
+
+01:02:55.030 --> 01:02:58.410
+even export is going to take like a 15 20 minute is the
+
+01:02:58.410 --> 01:03:02.230
+minimum right because even expert as a human you have to
+
+01:03:02.230 --> 01:03:04.670
+understand those schemas right when
+
+01:03:06.620 --> 01:03:09.000
+you're saying sorry i joined after a long time what to the
+
+01:03:09.000 --> 01:03:12.040
+result same query be consistent 100 every time will the
+
+01:03:12.040 --> 01:03:14.520
+result of the same query will consist of 100 every time
+
+01:03:14.520 --> 01:03:17.900
+exactly ranjit so almost it is going to be consistent and we
+
+01:03:17.900 --> 01:03:22.000
+can try to make it even more robust we can try to even make
+
+01:03:22.000 --> 01:03:24.820
+it there is a way there is a way there is a memory that we
+
+01:03:24.820 --> 01:03:26.700
+can try to build there is a catching that we can try to
+
+01:03:26.700 --> 01:03:30.260
+build over there it is going to be consistent all the time
+
+01:03:30.260 --> 01:03:31.200
+yeah
+
+01:03:34.690 --> 01:03:37.610
+now just tell me guys what i should ask see i have four
+
+01:03:37.610 --> 01:03:40.730
+table right i think you all also have four tables okay so
+
+01:03:40.730 --> 01:03:47.530
+maybe i'm going to ask that uh give me a revenue r-e-v-n-u-e
+
+01:03:47.530 --> 01:03:48.890
+revenue
+
+01:03:51.040 --> 01:03:52.500
+report
+
+01:03:55.390 --> 01:03:56.490
+yeah okay so let me tell you that the data that is being
+
+01:03:56.490 --> 01:03:56.510
+traded over here for
+
+01:04:01.470 --> 01:04:05.350
+this year i think year was not mentioned okay no there was
+
+01:04:05.350 --> 01:04:11.130
+okay here was mentioned okay so for this year right so for
+
+01:04:11.130 --> 01:04:15.350
+this year uh 2025 it is trying to like uh ask and as you can
+
+01:04:15.350 --> 01:04:19.690
+see my data so there was a data order item which was still
+
+01:04:19.690 --> 01:04:24.550
+2024 so i can so query executors would no data return so
+
+01:04:24.550 --> 01:04:27.450
+there is nothing uh which is for this year so for
+
+01:04:32.190 --> 01:04:34.550
+If you look into your data, so we don't have actually data
+
+01:04:34.550 --> 01:04:38.590
+for 2025. So basically we have a record for 2024. If you'll
+
+01:04:38.590 --> 01:04:42.190
+check your order table, order table data insertion, right?
+
+01:04:42.930 --> 01:04:46.630
+So now, now I'm asking for like a 2024 and now I have a
+
+01:04:46.630 --> 01:04:50.390
+result, right? So total revenue was 2750 and year was 2024
+
+01:04:50.390 --> 01:04:56.470
+because for 2024, I had a data inside of my table. Yeah. And
+
+01:04:56.470 --> 01:04:59.030
+it is, it is able to like filter the data for me.
+
+01:05:03.980 --> 01:05:06.820
+Does this work for the single database or we can do a
+
+01:05:06.820 --> 01:05:10.420
+multiple database in a single chat bot. You can do in a
+
+01:05:10.420 --> 01:05:14.440
+finite number of a database configuration in a single chat
+
+01:05:14.440 --> 01:05:15.260
+bot itself.
+
+01:05:18.960 --> 01:05:22.300
+Yeah. Means you can just connect just with this application
+
+01:05:22.300 --> 01:05:25.360
+and connect your whole organizations. There is a way for
+
+01:05:25.360 --> 01:05:25.560
+that.
+
+01:05:29.020 --> 01:05:32.360
+If user is using mobile and ask the same question. Okay. So
+
+01:05:32.360 --> 01:05:35.660
+yeah. So basically speech to text, right? So speech to text.
+
+01:05:35.720 --> 01:05:39.480
+There are like a lot of, uh, even. Like a. Uh, library,
+
+01:05:39.620 --> 01:05:42.140
+which is already available. So just try to go ahead and try
+
+01:05:42.140 --> 01:05:44.840
+to like, uh, use some speech to text library. It will be
+
+01:05:44.840 --> 01:05:47.040
+able to, and again, there is an API, which is available from
+
+01:05:47.040 --> 01:05:49.640
+a Google nowadays. But yeah, if you don't want to like a pay
+
+01:05:49.640 --> 01:05:52.940
+for the API, that's completely fine. Just go ahead with the
+
+01:05:52.940 --> 01:05:56.340
+speech to text local after like doing the installation
+
+01:05:56.340 --> 01:05:57.540
+survey,
+
+01:06:10.230 --> 01:06:13.030
+integrate a visualization and a virtualization and a
+
+01:06:13.030 --> 01:06:15.570
+virtualization and the graphy. Yeah.
+
+01:06:18.590 --> 01:06:21.770
+So is it, is it not amazing guys, is it not amazing that,
+
+01:06:21.770 --> 01:06:24.870
+that we are able to see that, that how powerful the LLM is
+
+01:06:24.870 --> 01:06:28.730
+and, uh, people like us who have been writing a sequel kind
+
+01:06:28.730 --> 01:06:32.930
+of a query since our ages, right? Since our beginning of the
+
+01:06:32.930 --> 01:06:36.550
+IT infrastructure, because obviously without database, no IT
+
+01:06:36.550 --> 01:06:39.910
+infrastructure, you can even plan. You can not even plan for
+
+01:06:39.910 --> 01:06:43.710
+it about the planning. You can't even go and imagine any IT
+
+01:06:43.710 --> 01:06:46.510
+infrastructure without a databases, whether it's a SQL DB,
+
+01:06:46.610 --> 01:06:49.870
+whether it's a no SQL databases or maybe some other kind of
+
+01:06:49.870 --> 01:06:53.210
+a database, but without DB, there is nothing. Okay. Right.
+
+01:06:53.370 --> 01:06:55.950
+None of the application that you are able to see today, you
+
+01:06:55.950 --> 01:06:59.810
+will be able to use it. But yeah. So those are like kind of
+
+01:06:59.810 --> 01:07:03.010
+a query that we have been writing. Now my LLM is able to
+
+01:07:03.010 --> 01:07:06.510
+write it down in a better way, in a fastest way. Can we add,
+
+01:07:06.590 --> 01:07:09.550
+you can add anything, believe me, you can add anything. The
+
+01:07:09.550 --> 01:07:13.490
+only thing is that I'm able to, the main part is this one,
+
+01:07:13.530 --> 01:07:17.130
+this one, even my LLM can generate a query. After that, if I
+
+01:07:17.130 --> 01:07:20.310
+have to build up your dashboard without even using a power
+
+01:07:20.310 --> 01:07:23.550
+BI table, a dashboard, which will be able to populate. It's
+
+01:07:23.550 --> 01:07:26.950
+data on a particular interval, maybe in every one hour, two
+
+01:07:26.950 --> 01:07:29.970
+hour, every fraction of second, or maybe every day I can do
+
+01:07:29.970 --> 01:07:32.770
+that as well. If I have to give a voice command because
+
+01:07:32.770 --> 01:07:35.890
+voice command means what, and limit you are trying to say
+
+01:07:35.890 --> 01:07:38.630
+this one, right? Speech to text. So this, this is basically
+
+01:07:38.630 --> 01:07:42.830
+a text, so I can use any speech to text library, right? And
+
+01:07:42.830 --> 01:07:45.670
+then I will be able to do that. If I have to do any kind of
+
+01:07:45.670 --> 01:07:52.070
+reporting again, not a big deal. Yeah. This project will
+
+01:07:52.070 --> 01:07:54.950
+definitely help. So. So this is just a core, which I'm
+
+01:07:54.950 --> 01:07:58.830
+teaching you now be around the score. Now you can go ahead
+
+01:07:58.830 --> 01:08:03.690
+and build anything that you want, right? Don't even need a
+
+01:08:03.690 --> 01:08:06.790
+part. Don't even have to learn a power BI, right? Because
+
+01:08:06.790 --> 01:08:09.970
+again, when we try to do something in a power BI or maybe a
+
+01:08:09.970 --> 01:08:13.150
+table or maybe in any other dashboarding tool, what we are
+
+01:08:13.150 --> 01:08:17.290
+trying to do behind the scene, there is a data model that we
+
+01:08:17.290 --> 01:08:19.890
+have built in a power BI or table or any kind of a
+
+01:08:19.890 --> 01:08:22.710
+visualization or dashboarding tool. So what we try to do
+
+01:08:22.710 --> 01:08:25.950
+behind the scene, we just try to build a data model. Now
+
+01:08:25.950 --> 01:08:28.110
+what is the data model? It's nothing but a connection
+
+01:08:28.110 --> 01:08:33.530
+between the tables, right? And then we try to like a build a
+
+01:08:33.530 --> 01:08:35.790
+dashboard by using a different, different kind of a plots
+
+01:08:35.790 --> 01:08:40.030
+and graphs and everything, right? And ultimately like you
+
+01:08:40.030 --> 01:08:42.670
+are hitting the data model and data model is trying to query
+
+01:08:42.670 --> 01:08:46.350
+some of the other databases or data sources with which it is
+
+01:08:46.350 --> 01:08:51.990
+connected. Now the score part is solved. Okay. I can, I can
+
+01:08:51.990 --> 01:08:52.830
+just build it here itself.
+
+01:08:55.650 --> 01:08:59.070
+Yeah. And again, if I'll talk about this domain, Sanjeev is
+
+01:08:59.070 --> 01:09:01.090
+saying it's amazing use case and infinite across the
+
+01:09:01.090 --> 01:09:04.850
+different, not a different sector, all sectors, just name
+
+01:09:04.850 --> 01:09:08.550
+any sector wherever you are using IT infrastructure, right?
+
+01:09:08.610 --> 01:09:09.930
+All sectors, simple.
+
+01:09:14.710 --> 01:09:18.110
+They may be use a whisper LLM API for a speech to text. I
+
+01:09:18.110 --> 01:09:22.810
+don't have to go ahead and use like a, you know, a whisper,
+
+01:09:23.110 --> 01:09:27.390
+maybe I can, if you have asked. So in a class itself, maybe
+
+01:09:27.390 --> 01:09:34.830
+I can try to show you something. Let me do that to take
+
+01:09:34.830 --> 01:09:37.210
+input through speech.
+
+01:09:48.300 --> 01:09:50.640
+Okay. So someone is asking me, I'll show you a step by step
+
+01:09:50.640 --> 01:09:54.100
+guys. So I'll like, because of the power of AI, I can do
+
+01:09:54.100 --> 01:09:56.420
+something even in like a live class itself.
+
+01:10:07.220 --> 01:10:13.540
+Okay. So main.py file, let me terminate the app. Maybe I can
+
+01:10:13.540 --> 01:10:19.320
+do some experimentation. Okay. So someone is asking me that,
+
+01:10:19.360 --> 01:10:21.460
+can we try to give a voice command? Let me build something
+
+01:10:21.460 --> 01:10:26.440
+for you because of AI, I just need an imagination because
+
+01:10:26.440 --> 01:10:30.640
+code anyhow AI can write it. Right. So let me show you
+
+01:10:30.640 --> 01:10:36.280
+something. This one start to speak. Okay. So then stream
+
+01:10:36.280 --> 01:10:41.600
+lint and then run my app dot, this is how fast it is to
+
+01:10:41.600 --> 01:10:44.520
+build a application. So no model name is speech
+
+01:10:44.520 --> 01:10:54.200
+organization. Okay. So a speech organization, SR, now pip
+
+01:10:54.200 --> 01:11:03.100
+install, sorry, CLS, pip install speech
+
+01:11:06.400 --> 01:11:11.220
+organization. Okay. Good. Not found. Not an issue. I'll fix
+
+01:11:11.220 --> 01:11:11.440
+it.
+
+01:11:29.800 --> 01:11:37.460
+This is the correct library. Hmm. Okay. So now a speech
+
+01:11:37.460 --> 01:11:40.160
+organization. Right. So. Okay.
+
+01:11:50.640 --> 01:11:55.820
+So now start listening. So yeah, all the second type on my
+
+01:11:55.820 --> 01:12:00.500
+question. Uh, so could you could not find a PyAudio check
+
+01:12:00.500 --> 01:12:03.480
+installation? Okay. Let me fix that as well.
+
+01:12:18.160 --> 01:12:24.540
+If when, so just doing this guys, uh, as per your request.
+
+01:12:24.760 --> 01:12:30.800
+So just hold it tight with me for some time. time I'm going
+
+01:12:30.800 --> 01:12:34.360
+to show you a speech and then after that I'll even show you
+
+01:12:34.360 --> 01:12:37.460
+in a live class I have not built that material by the way so
+
+01:12:37.460 --> 01:12:40.720
+I'm building it right now with the help of AI so I'll just
+
+01:12:40.720 --> 01:12:42.020
+show you like audio
+
+01:12:44.990 --> 01:12:50.790
+input and I'll try to show you even this one graph basically
+
+01:12:50.790 --> 01:12:56.070
+means dashboarding a small dashboarding install PI audio
+
+01:12:56.070 --> 01:13:02.710
+what is the issue append argument okay
+
+01:13:08.500 --> 01:13:17.380
+so build it from a wheel then and
+
+01:13:17.380 --> 01:13:26.020
+what is my python python p-y-t-h-o-n so don't feel bored
+
+01:13:26.020 --> 01:13:31.820
+just see like how we used to work maybe you can see that PI
+
+01:13:35.530 --> 01:13:37.570
+audio wheel and
+
+01:13:46.050 --> 01:13:53.300
+this one okay so this one is my 3.12 yeah
+
+01:13:55.480 --> 01:13:59.020
+it's indeed and interesting things to do something in a live
+
+01:13:59.020 --> 01:14:04.380
+I mean like do the live coding in a live okay
+
+01:14:07.160 --> 01:14:13.440
+let me change my entire environment so let me it's not going
+
+01:14:13.440 --> 01:14:19.520
+to work in 3.12 so let me change it to 3.10 so conda create
+
+01:14:19.520 --> 01:14:27.260
+hyphen n python p-y-t-h-o-n python is equals to 3.12 3.10 do
+
+01:14:27.260 --> 01:14:31.760
+yes okay I have
+
+01:14:34.130 --> 01:14:42.530
+hyphen n and then sequel LLM okay
+
+01:14:50.340 --> 01:14:56.760
+so now a couple of feature I'll try to add guys and again if
+
+01:14:56.760 --> 01:14:59.600
+you will demand for more features so I can sit and I can
+
+01:14:59.600 --> 01:15:03.320
+keep on adding it for you as of now I'm adding an audio
+
+01:15:03.320 --> 01:15:09.220
+feature so sequel LLM p-y-t-h-o-n that's fine and then it
+
+01:15:09.220 --> 01:15:15.240
+install ta-ll hyphen r requirements dot txt not
+
+01:15:28.680 --> 01:15:30.960
+bored at all okay install
+
+01:15:47.530 --> 01:15:49.850
+audio library just
+
+01:16:52.220 --> 01:16:55.560
+to build a wheel for this PI audio because PI audio is a
+
+01:16:55.560 --> 01:17:00.560
+local installation right so it is a C++ based library so we
+
+01:17:00.560 --> 01:17:05.160
+have to build that multi
+
+01:17:05.160 --> 01:17:07.520
+language about local
+
+01:17:30.720 --> 01:17:31.220
+installation the first thing we have to do is to install a
+
+01:17:31.220 --> 01:17:33.020
+local library if you installation is giving me issue so
+
+01:17:33.020 --> 01:17:35.960
+maybe I can go ahead with a Google API or maybe like a
+
+01:17:35.960 --> 01:17:36.960
+whisper but
+
+01:17:52.260 --> 01:17:54.000
+let me try hello
+
+01:18:37.870 --> 01:18:45.590
+hello hello hello hello hello hello hello hello hello okay
+
+01:18:48.080 --> 01:18:51.660
+cause space couple
+
+01:18:53.040 --> 01:18:55.740
+of more minute guys it will be working hey
+
+01:19:12.640 --> 01:19:15.940
+uh show me all the table which is available inside my
+
+01:19:15.940 --> 01:19:17.480
+database okay
+
+01:19:30.600 --> 01:19:34.780
+so this is something guys again we are able to build hope
+
+01:19:34.780 --> 01:19:38.580
+you are able to see it so I have just like a I'm using a
+
+01:19:38.580 --> 01:19:41.240
+speech right I can use a mobile device I can use like a
+
+01:19:41.240 --> 01:19:45.740
+something and again so start listening right so let me let
+
+01:19:45.740 --> 01:19:49.600
+me say something okay show me all the data from our customer
+
+01:19:49.600 --> 01:19:50.880
+table show
+
+01:19:57.120 --> 01:19:59.320
+me all the data from customer table show
+
+01:20:06.770 --> 01:20:09.030
+me all the data from order table see
+
+01:20:19.140 --> 01:20:22.600
+I'm able to see the data right not just that just tell me
+
+01:20:22.600 --> 01:20:25.520
+now the language Hindi you want Spanish you want French you
+
+01:20:25.520 --> 01:20:27.660
+want German you want Chinese Arabic Tamil you want English
+
+01:20:27.660 --> 01:20:29.740
+you want English Tamil Telugu Marathi what you want so let's
+
+01:20:29.740 --> 01:20:34.260
+suppose I understand Hindi language right okay uh so uh data
+
+01:20:34.260 --> 01:20:36.900
+show me from the order table so
+
+01:20:48.140 --> 01:20:52.040
+understanding Hindi as well and now you can try to ask in
+
+01:20:52.040 --> 01:20:53.900
+your language doesn't matter which language you understand
+
+01:20:53.900 --> 01:20:56.840
+so it supports 80 languages I have listed on couple of those
+
+01:20:56.840 --> 01:20:59.740
+right so Spanish French German Chinese Arabic Bengali
+
+01:20:59.740 --> 01:21:03.140
+Japanese Tamil Telugu whatever you want right so you don't
+
+01:21:03.140 --> 01:21:05.720
+have to even now go and type anything basically you can just
+
+01:21:05.720 --> 01:21:10.240
+go and ask in your language right okay so all this in order
+
+01:21:10.240 --> 01:21:17.120
+will just take all you've done through here right I
+
+01:21:34.520 --> 01:21:35.760
+just told you that this whole thing is happening
+
+01:21:40.460 --> 01:21:48.890
+okay figures one topics I have to
+
+01:21:57.110 --> 01:22:00.630
+use a better speech to text one, but yeah, it will, it will
+
+01:22:00.630 --> 01:22:05.190
+work. Acha last year ka revenue dikha do, last
+
+01:22:10.250 --> 01:22:14.680
+year ka revenue dikhao, revenue,
+
+01:22:21.100 --> 01:22:25.760
+I'm able to get it right last year revenue, see order this,
+
+01:22:25.860 --> 01:22:29.720
+this, this, this, this. So yeah, this is the actual use of
+
+01:22:29.720 --> 01:22:32.380
+AI, right? So we don't have to even touch our system. I can
+
+01:22:32.380 --> 01:22:36.200
+just wake up in the morning, talk to my mobile, and then my
+
+01:22:36.200 --> 01:22:39.580
+thing is done. And as of now, see, I'm using a local
+
+01:22:39.580 --> 01:22:41.940
+package, by the way, I'm not using for my speech, I'm not
+
+01:22:41.940 --> 01:22:44.300
+using any API's right so far, I'm just using a local
+
+01:22:44.300 --> 01:22:47.140
+package. And it is it is working very good. This local
+
+01:22:47.140 --> 01:22:51.060
+package is a very old one. Now if I'll just use maybe a
+
+01:22:51.060 --> 01:22:54.840
+Sravana AI, or maybe I'm going to use a whisper AI, right?
+
+01:22:54.920 --> 01:22:57.520
+Or maybe even if I'm going to use a speech to text from a
+
+01:22:57.520 --> 01:23:02.020
+Google API wise, if I'm going to use it, believe me. Even if
+
+01:23:02.020 --> 01:23:05.140
+I don't have a proper accent in a particular language, it
+
+01:23:05.140 --> 01:23:08.580
+will be able to understand and I will be able to get 100%
+
+01:23:08.580 --> 01:23:11.780
+sure sort best to best like an accurate result.
+
+01:23:14.640 --> 01:23:18.440
+Yeah, does company needs a developer anymore, obviously to
+
+01:23:18.440 --> 01:23:21.220
+develop who will develop these things by the way, see people
+
+01:23:21.220 --> 01:23:24.040
+who are saying that he is going to take your job, it is not
+
+01:23:24.040 --> 01:23:26.820
+going to take your job. But yeah, if you think that, that
+
+01:23:26.820 --> 01:23:29.720
+the things that you have been doing in last like a 1020
+
+01:23:29.720 --> 01:23:33.100
+year, you will do the same thing with the same comfort. And
+
+01:23:33.100 --> 01:23:36.660
+you will follow the same learning curve, right? Like we
+
+01:23:36.660 --> 01:23:40.480
+learn like a data structure algorithm, then we try to learn
+
+01:23:40.480 --> 01:23:42.940
+the syntaxes. And then we write a couple of line of code,
+
+01:23:43.120 --> 01:23:46.360
+then we go and so that is not going to work, you have to
+
+01:23:46.360 --> 01:23:50.000
+label up yourself with the help of AI and you should like,
+
+01:23:50.000 --> 01:23:53.460
+see, you should be more creative. Now, you should be more
+
+01:23:53.460 --> 01:23:57.140
+like imaginative now, that what is the things that I will be
+
+01:23:57.140 --> 01:24:01.380
+able to do? Simple, right? Not telling me guys, what what
+
+01:24:01.380 --> 01:24:03.100
+are you looking for? Are you looking for a dashboard? Shall
+
+01:24:03.100 --> 01:24:05.500
+I plot a dashboard? Like it is it is going to give you a
+
+01:24:05.500 --> 01:24:13.700
+graph and everything. So see people
+
+01:24:13.700 --> 01:24:17.820
+out there so I have I used to follow a lot of like a YouTube
+
+01:24:17.820 --> 01:24:21.560
+channel. So I see YouTubers are saying like our influencers
+
+01:24:21.560 --> 01:24:24.360
+saying that go and learn in this way that I'm like that kind
+
+01:24:24.360 --> 01:24:28.300
+of a learning is not required. Just just after looking into
+
+01:24:28.300 --> 01:24:30.420
+this project, do you think that I need to learn a sequel?
+
+01:24:31.700 --> 01:24:36.920
+Right? But yeah. I don't. I don't have to get into our my I
+
+01:24:36.920 --> 01:24:39.500
+don't have to go and make up my hands dirty with respect to
+
+01:24:39.500 --> 01:24:42.820
+a complete sequel complex query, but I should know sequel.
+
+01:24:42.960 --> 01:24:45.040
+It doesn't mean that I should not know sequel. I'm not
+
+01:24:45.040 --> 01:24:48.060
+saying that that you should not know sequel. No, you are
+
+01:24:48.060 --> 01:24:51.340
+supposed to know sequel. You should execute each and every
+
+01:24:51.340 --> 01:24:54.340
+query in our very first place. You should know all kind of a
+
+01:24:54.340 --> 01:24:57.720
+Python command see, I'm able to fix the bugs and immediately
+
+01:24:57.720 --> 01:25:00.840
+right in life classes. So now how that is possible. And even
+
+01:25:00.840 --> 01:25:03.100
+like I'm asking you that, okay, fine, tell me what you are
+
+01:25:03.100 --> 01:25:05.620
+looking for, I will be able to build it and immediately and
+
+01:25:05.620 --> 01:25:08.420
+obviously I'm getting a bug right when I'm using AI to
+
+01:25:08.420 --> 01:25:10.660
+generate this code. Obviously, I'm getting a bug but
+
+01:25:10.660 --> 01:25:13.240
+immediately I'm able to resolve it I immediately I'm able to
+
+01:25:13.240 --> 01:25:16.760
+inspect that okay, so what what is the problem and how I can
+
+01:25:16.760 --> 01:25:19.660
+fix it. So all of these things will come from where
+
+01:25:19.660 --> 01:25:22.900
+obviously from an application building from like doing a
+
+01:25:22.900 --> 01:25:27.240
+real time experimentation, right? And that is going to be
+
+01:25:27.240 --> 01:25:32.540
+your real value that is going to be your real USP, right? So
+
+01:25:32.540 --> 01:25:36.000
+you. You are supposed to learn on that label now and believe
+
+01:25:36.000 --> 01:25:37.240
+me, it's not that difficult.
+
+01:25:41.170 --> 01:25:44.110
+Can we create a customized dashboard for healthcare why we
+
+01:25:44.110 --> 01:25:46.790
+need a tableau and power BI yeah, I don't need like any BI
+
+01:25:46.790 --> 01:25:50.790
+tool by the way, right? See I can't show you my dashboard by
+
+01:25:50.790 --> 01:25:53.910
+the way, because it's a real time, you're on dashboard that
+
+01:25:53.910 --> 01:25:57.310
+I'm holding, right? But we are not using any dashboarding
+
+01:25:57.310 --> 01:26:02.250
+tool, I'm like, why we should go and pay for those like
+
+01:26:02.250 --> 01:26:04.230
+expensive services.
+
+01:26:06.470 --> 01:26:09.430
+So, basically, I have to like, again, like a lot of
+
+01:26:09.430 --> 01:26:11.850
+startups, right? I know a lot of big companies, yeah, they
+
+01:26:11.850 --> 01:26:14.730
+have a huge budget, they have a client and all. So
+
+01:26:14.730 --> 01:26:17.090
+obviously, they try to go ahead and use the tool and that's
+
+01:26:17.090 --> 01:26:19.090
+the reason companies have created a tool, they are selling
+
+01:26:19.090 --> 01:26:22.270
+it and they're generating huge revenue. But many startups
+
+01:26:22.270 --> 01:26:24.250
+even till a mid scale, I have seen that they're not using
+
+01:26:24.250 --> 01:26:26.390
+such things. But yeah, they have a better system in place,
+
+01:26:26.450 --> 01:26:28.990
+even we have a better system in place, I can, I can't see
+
+01:26:28.990 --> 01:26:31.690
+like my dashboard, by the way, the dashboard real time
+
+01:26:31.690 --> 01:26:35.010
+dashboard that we use for like a lot of things. Because we
+
+01:26:35.010 --> 01:26:35.910
+have a lot of services. Like we have a lot of services. We
+
+01:26:35.910 --> 01:26:38.130
+have like a resume services, we have job services, we have a
+
+01:26:38.130 --> 01:26:41.130
+URI services, we have a lot of courses that we are selling
+
+01:26:41.130 --> 01:26:44.090
+again to a different different mode, live classes, we are
+
+01:26:44.090 --> 01:26:45.930
+conducting different different modes. So we have our own
+
+01:26:45.930 --> 01:26:48.670
+dashboard, we are aware about our own data, right? But no,
+
+01:26:48.750 --> 01:26:50.610
+we are not using any dashboarding tool. It's fine. We have
+
+01:26:50.610 --> 01:26:54.210
+built our own custom one, why I'll go and pay to like
+
+01:26:54.210 --> 01:26:55.510
+someone just for the dashboarding.
+
+01:26:58.940 --> 01:27:03.500
+Yeah. So again, if you are that kind of a developer, so who
+
+01:27:03.500 --> 01:27:07.400
+can save a cost of the company, save a time for the company.
+
+01:27:07.400 --> 01:27:11.820
+Bring some like innovation into the existing product, I
+
+01:27:11.820 --> 01:27:16.180
+believe you will never be outdated. And obviously company
+
+01:27:16.180 --> 01:27:20.300
+will would love to give you an appreciation hike and company
+
+01:27:20.300 --> 01:27:22.660
+would love to retain you or maybe would love to hire you.
+
+01:27:22.780 --> 01:27:25.400
+And if you're not that kind of a developer, at least in an
+
+01:27:25.400 --> 01:27:29.380
+age of AI, if you think that I know something, and just
+
+01:27:29.380 --> 01:27:31.960
+because of that someone is going to hire me, believe me,
+
+01:27:32.040 --> 01:27:36.160
+situation has changed a lot in last two and a half year. I'm
+
+01:27:36.160 --> 01:27:38.140
+not talking about before that, right? I'm not talking about
+
+01:27:38.140 --> 01:27:40.600
+before that, before that situation was very different, but
+
+01:27:40.600 --> 01:27:42.620
+yeah, in last two and a half year, things have literally
+
+01:27:42.620 --> 01:27:45.400
+changed. Market have literally changed the way company
+
+01:27:45.400 --> 01:27:47.800
+doesn't matter whether it's a product based company or MNC
+
+01:27:47.800 --> 01:27:51.140
+or startup used to think it has changed completely. So you
+
+01:27:51.140 --> 01:27:56.710
+have to level up on that label, kindly share the app of this
+
+01:27:56.710 --> 01:27:59.210
+code. Okay, fine. Let me, let me share this one and you have
+
+01:27:59.210 --> 01:28:01.750
+to do a couple of installation as well along with this. So
+
+01:28:01.750 --> 01:28:03.470
+please do the installation. I'm pinging you that.
+
+01:28:07.220 --> 01:28:11.500
+So you have to do installation of this one. Okay. I'll give
+
+01:28:11.500 --> 01:28:15.020
+you an error otherwise. And along with this, you have to do
+
+01:28:15.020 --> 01:28:17.900
+this PI audio stream leader is already available into the
+
+01:28:17.900 --> 01:28:22.780
+requirement.txt and use Python one dot, sorry, Python 3.10,
+
+01:28:22.920 --> 01:28:28.020
+3.10 version because 3.12 is going to give you a issue with
+
+01:28:28.020 --> 01:28:35.660
+this audio converter that I'm using. Okay. This is how easy
+
+01:28:35.660 --> 01:28:44.040
+it is, right? So let me send the complete code. To all of
+
+01:28:44.040 --> 01:28:48.320
+you. So now I know that, that, uh, my students is going to
+
+01:28:48.320 --> 01:28:51.300
+ask me anything in my class and it will not take much time
+
+01:28:51.300 --> 01:28:53.220
+for me. I can, I can show them, I can deliver it
+
+01:28:53.220 --> 01:28:57.500
+immediately. So that is the USP that you have to bring in
+
+01:28:57.500 --> 01:29:01.980
+yourself, right? Nowadays I'm doing even a bit open coding a
+
+01:29:01.980 --> 01:29:05.440
+lot. I'm like building an extension. I'm building SDKs and
+
+01:29:05.440 --> 01:29:10.140
+yeah, I'm enjoying it because of that. So even yesterday I
+
+01:29:10.140 --> 01:29:12.260
+was not able to sleep till morning, six, seven o'clock.
+
+01:29:12.920 --> 01:29:17.920
+Okay. Although I had a class from morning 1130.
+
+01:29:21.060 --> 01:29:29.580
+Copy path, command or pipe file SQL LLM.
+
+01:29:30.960 --> 01:29:36.240
+Yeah. Okay. Compress to, okay.
+
+01:29:39.940 --> 01:29:42.380
+You need a dashboard. Let, just, just a minute. I'll, I'll
+
+01:29:42.380 --> 01:29:43.920
+do it now itself. Just a minute.
+
+01:29:49.200 --> 01:29:55.360
+Next class, build SDK. Okay. So SDK, even now I can show
+
+01:29:55.360 --> 01:29:58.900
+you, I can, I can build SDK. I can push it inside the PiPi
+
+01:29:58.900 --> 01:30:02.760
+repository and I can show it to you. Uh,
+
+01:30:06.440 --> 01:30:15.060
+building SDK is like five minutes of job max to max SQL LLM
+
+01:30:15.060 --> 01:30:15.960
+gen AI. Okay.
+
+01:30:24.380 --> 01:30:28.660
+Hmm. Okay. Dashboarding, right? Okay. Let me, let me show
+
+01:30:28.660 --> 01:30:31.860
+you some like, uh, some graph over here for now, the inside
+
+01:30:31.860 --> 01:30:35.180
+the same dashboard. How do we connect? How do we connect
+
+01:30:35.180 --> 01:30:37.980
+from a mobile voice to this app? Input voice and output is
+
+01:30:37.980 --> 01:30:41.320
+also a voice. So input, I'm able to give it as a voice
+
+01:30:41.320 --> 01:30:43.900
+output. Also I can, I can give it as a voice, same library.
+
+01:30:44.060 --> 01:30:45.960
+I'm going to use it right in whatever language you are
+
+01:30:45.960 --> 01:30:48.120
+looking for the output. I will be able to get the output,
+
+01:30:48.260 --> 01:30:50.580
+right? So speech to text and test your speech. Eventually I
+
+01:30:50.580 --> 01:30:52.860
+will be able to convert and
+
+01:30:56.960 --> 01:31:00.200
+even in a mobile, like, uh, I can do it. So at least, uh,
+
+01:31:00.320 --> 01:31:04.200
+now if you're going to ask me, so I can just try to open up
+
+01:31:04.200 --> 01:31:07.840
+this particular app, uh, with the help of like a NG doc. And
+
+01:31:07.840 --> 01:31:14.040
+then I can try to like, uh, show you so NG.
+
+01:31:17.280 --> 01:31:20.760
+So if you want me to like, uh, show you that, uh,
+
+01:31:23.980 --> 01:31:29.520
+uh, in a mobile as of now, so I can, uh, even show you just
+
+01:31:29.520 --> 01:31:33.060
+by making my own system as a global one, uh,
+
+01:31:37.330 --> 01:31:38.990
+sorry, just
+
+01:32:12.780 --> 01:32:15.340
+a minute guys. I'll show you a couple of more things as you
+
+01:32:15.340 --> 01:32:18.060
+have asked me in a chat. So.
+
+01:32:40.550 --> 01:32:44.110
+Hmm. So one thing is like, uh, let's suppose if I have to
+
+01:32:44.110 --> 01:32:47.110
+make this app available while running into my local system,
+
+01:32:47.310 --> 01:32:50.350
+uh, make it global so I can make it global with the help of
+
+01:32:50.350 --> 01:32:53.270
+NG doc. Let me show you that how it will again take 30
+
+01:32:53.270 --> 01:32:57.430
+seconds of time for me. And I can even like a chat with this
+
+01:32:57.430 --> 01:33:01.650
+one in my mobile now itself. Uh, if it is global, obviously
+
+01:33:01.650 --> 01:33:07.790
+I can do it in my mobile. So NG rock, where is my unzipped
+
+01:33:07.790 --> 01:33:12.530
+folder? This is not a part of the syllabus. By the way, so
+
+01:33:14.840 --> 01:33:15.920
+NG
+
+01:33:21.770 --> 01:33:32.060
+rock, then NG rock, okay, fine. So NG rock, I can now show
+
+01:33:32.060 --> 01:33:40.220
+you, uh, by making my app global. So my app is running. Let
+
+01:33:40.220 --> 01:33:44.800
+me close a lot of things I have opened up. Hmm. So
+
+01:33:44.800 --> 01:33:50.660
+Streamlint run app. It's running on my 8 5 0 1. Okay. 8 5 0
+
+01:33:50.660 --> 01:33:55.740
+1. Port number. Okay. 8 5 0 1. Port number. It's running.
+
+01:33:56.220 --> 01:33:56.780
+Fine.
+
+01:34:00.590 --> 01:34:10.350
+Okay. Uh, N G R O K S T T P. Make it global. So 8 5 0 1 port
+
+01:34:10.350 --> 01:34:15.930
+number, whatever is running on 8 5 0 1. Make it global. Hmm.
+
+01:34:16.550 --> 01:34:22.450
+Okay. So now my app became global. Uh. You guys can also
+
+01:34:22.450 --> 01:34:23.030
+test it.
+
+01:34:30.780 --> 01:34:35.180
+Yeah. So now, uh, now I can show you. So basically my entire
+
+01:34:35.180 --> 01:34:39.860
+app is running globally on this URL. As you can see, this is
+
+01:34:39.860 --> 01:34:45.920
+my HTTPS URL and a voice command I can give to my app.
+
+01:34:51.890 --> 01:34:53.410
+Let me close everything,
+
+01:34:57.770 --> 01:35:00.510
+close, close.
+
+01:35:11.480 --> 01:35:18.940
+It's up and running on this port number. Okay. And this port
+
+01:35:18.940 --> 01:35:22.500
+number has been exposed. Now what I can do it guys, like,
+
+01:35:22.600 --> 01:35:28.360
+uh, I can try to open up the URL and, uh, from my mobile
+
+01:35:28.360 --> 01:35:34.940
+device, I can try to send a query. So let me show my mobile
+
+01:35:34.940 --> 01:35:41.050
+to all of you. Yeah. So I don't know whether it's like
+
+01:35:41.050 --> 01:35:49.490
+visible or not. Uh, it is not able to focus, but yeah, SQL
+
+01:35:49.490 --> 01:35:52.170
+power data retrieval assistance and see, I'm not going to
+
+01:35:52.170 --> 01:35:56.650
+like a click on my screen, but yeah, so even from my mobile,
+
+01:35:56.890 --> 01:36:01.090
+I can say that. Okay. So give me the table from, uh, order
+
+01:36:01.090 --> 01:36:01.390
+table.
+
+01:36:15.450 --> 01:36:21.370
+Hmm. And now let me show you. So basically it is able to
+
+01:36:21.370 --> 01:36:24.890
+give me a record. I don't know how I can show it to you
+
+01:36:24.890 --> 01:36:27.030
+because my, okay,
+
+01:36:30.130 --> 01:36:34.870
+do one thing. I'm pinging you this URL in your, uh, chat box
+
+01:36:34.870 --> 01:36:39.530
+itself. And, uh, you can test it by yourself. I think that
+
+01:36:39.530 --> 01:36:43.050
+will be like a better, please
+
+01:36:51.530 --> 01:36:53.670
+reduce the brightness. It will display our kind. Can't do
+
+01:36:53.670 --> 01:36:58.070
+it. Basically that, that camera set up is fixed. So can't do
+
+01:36:58.070 --> 01:37:01.750
+that. Maybe I can switch off some of my lights, but yeah, I
+
+01:37:01.750 --> 01:37:04.250
+have already pinned you guys this URL so you can test it. So
+
+01:37:04.250 --> 01:37:05.570
+this is running in my local system.
+
+01:37:18.050 --> 01:37:22.930
+No, still not visible. So maybe you can chat with my system
+
+01:37:22.930 --> 01:37:25.510
+and then you can check it. I have already pinned you the
+
+01:37:25.510 --> 01:37:30.830
+URL. So as long as I'm not like, uh. Doing anything. Yeah.
+
+01:37:36.100 --> 01:37:39.840
+So are you, are you able to test it guys? Just click on
+
+01:37:39.840 --> 01:37:42.600
+start listening and then ask a question in your language,
+
+01:37:42.760 --> 01:37:44.700
+whatever language that you understand. Hindi, Spanish,
+
+01:37:45.020 --> 01:37:47.680
+French, German, Chinese, Arabic, Bengali, Japanese, Tamil,
+
+01:37:47.740 --> 01:37:50.300
+Telugu, Marathi. All these languages are mentioned over
+
+01:37:50.300 --> 01:37:50.560
+there.
+
+01:37:54.100 --> 01:37:57.220
+Yeah. So you can now like, uh, go and check.
+
+01:38:02.170 --> 01:38:04.450
+Okay. Jitendra is saying working. It will work. It will
+
+01:38:04.450 --> 01:38:06.390
+work. There's no reason that it is not going to work. So
+
+01:38:06.390 --> 01:38:08.670
+what I have. Okay. Let me tell you how you are able to
+
+01:38:08.670 --> 01:38:12.390
+access my app. So actually I have not deployed this one. So
+
+01:38:12.390 --> 01:38:15.450
+it's still running in my system. My system is basically a
+
+01:38:15.450 --> 01:38:19.310
+server. Uh, the only thing that I'm doing is, so there is a
+
+01:38:19.310 --> 01:38:21.970
+service called as ng rock with the help of ng rock. So
+
+01:38:21.970 --> 01:38:24.830
+whatever is running in my system, some of you might have got
+
+01:38:24.830 --> 01:38:28.450
+the error with some of the call. I can see that in my
+
+01:38:28.450 --> 01:38:32.350
+system. Uh, so basically like, uh, you are just trying to
+
+01:38:32.350 --> 01:38:37.290
+call one of the instance, and this is how even real time
+
+01:38:37.290 --> 01:38:38.230
+internet works. Right?
+
+01:38:43.640 --> 01:38:46.460
+Yeah. It will work. So I have just made my local system as a
+
+01:38:46.460 --> 01:38:48.100
+global one. So my local system.
+
+01:38:54.470 --> 01:38:57.470
+Yeah. So basically my local system is behaving like a server
+
+01:38:57.470 --> 01:38:58.590
+now that
+
+01:39:02.780 --> 01:39:06.640
+your voice is coming on my UI. Okay. So maybe you can mute
+
+01:39:06.640 --> 01:39:08.120
+me in that case.
+
+01:39:11.310 --> 01:39:13.770
+Okay. So again,
+
+01:39:20.530 --> 01:39:22.890
+now, uh, if, if you're looking for a personalized dashboard,
+
+01:39:22.990 --> 01:39:26.090
+right. Uh, you can even like, I can even integrate a
+
+01:39:26.090 --> 01:39:29.070
+dashboard into this one and then you will be able to like,
+
+01:39:29.150 --> 01:39:35.120
+uh, get a graph. Could you document the steps? See this is
+
+01:39:35.120 --> 01:39:40.220
+the problem, right? This is the problem. So, uh, if you, if
+
+01:39:40.220 --> 01:39:44.120
+you want me to talk something, which is not a part of
+
+01:39:44.120 --> 01:39:47.220
+syllabus, if you want some, uh, for me to build something,
+
+01:39:47.540 --> 01:39:50.660
+which is not a part of syllabus, I need a little bit of
+
+01:39:50.660 --> 01:39:52.820
+flexibility. If you're going to ask me that, okay, teach
+
+01:39:52.820 --> 01:39:56.020
+everything, then explain every line of, I have seen like
+
+01:39:56.020 --> 01:39:58.940
+many people, you know, sometime when I take classes and when
+
+01:39:58.940 --> 01:40:01.980
+I explained the project. And if I don't explain like a line
+
+01:40:01.980 --> 01:40:03.760
+by line, each and everything, then they say that, okay, you
+
+01:40:03.760 --> 01:40:05.760
+are not a good teacher. You are, you're not teaching me like
+
+01:40:05.760 --> 01:40:09.060
+in a proper way. I'm like, do we need, do you need that kind
+
+01:40:09.060 --> 01:40:14.220
+of a handholding now? And if you are going to do that kind
+
+01:40:14.220 --> 01:40:17.040
+of a handholding, then max to max, you will end up building
+
+01:40:17.040 --> 01:40:21.780
+a kale kind of project. Not more, not beyond that. Right? So
+
+01:40:21.780 --> 01:40:24.100
+I'll tell you the step I've even showed you the steps. See,
+
+01:40:24.180 --> 01:40:26.480
+nothing is like an invisible, which I'm doing everything.
+
+01:40:26.640 --> 01:40:29.660
+I'm doing it in front of all of you. Right? If you want to
+
+01:40:29.660 --> 01:40:32.340
+do it bigger than obviously you have that, you should keep
+
+01:40:32.340 --> 01:40:37.560
+that kind of a mindset. Right? That, okay. It's fine. I'll
+
+01:40:37.560 --> 01:40:39.980
+try to put up a little bit of effort, the
+
+01:40:45.140 --> 01:40:47.900
+developer AI bot, which will do this when you join the
+
+01:40:47.900 --> 01:40:51.020
+meeting, join to and will document on your behalf. Yeah,
+
+01:40:51.080 --> 01:40:55.060
+that is also, we can build easily. We can build it. So if
+
+01:40:55.060 --> 01:40:57.340
+you want me to build a such kind of application, just give
+
+01:40:57.340 --> 01:40:59.440
+me a flexibility. Don't ask for documentation or something.
+
+01:40:59.560 --> 01:41:02.980
+I'll build it. I'll show it to you. I can show you any kind
+
+01:41:02.980 --> 01:41:05.760
+of application now. So, and most of the application, uh,
+
+01:41:05.940 --> 01:41:08.680
+like all of these applications I have built maybe in my like
+
+01:41:08.680 --> 01:41:12.060
+last seven to eight year of tenure. So I know how things
+
+01:41:12.060 --> 01:41:16.320
+works, so I'll, I'll show it to you. And then maybe you can
+
+01:41:16.320 --> 01:41:20.020
+mention it in your resume. So when, when for both of us, uh,
+
+01:41:35.420 --> 01:41:39.740
+okay, so this is fine. Now I'm dominating this one, guys,
+
+01:41:39.920 --> 01:41:42.920
+I'm terminating this app. So now you will not be able to
+
+01:41:42.920 --> 01:41:48.220
+access this app. Yeah. Five zero two bad gateway. I can see
+
+01:41:48.220 --> 01:41:54.240
+a lot of things. So terminated my ng rock. Okay. So now let
+
+01:41:54.240 --> 01:41:56.620
+me talk about the ng rock, what I have done. So how I have
+
+01:41:56.620 --> 01:42:00.860
+made my like a things public. So there is a system called as
+
+01:42:00.860 --> 01:42:03.580
+ng rock, right? So you can go to Google, try to search for
+
+01:42:03.580 --> 01:42:07.660
+ng rock and come over here and let me ping you this link as
+
+01:42:07.660 --> 01:42:12.140
+well. It's a very simple step guys. So you can just try to
+
+01:42:12.140 --> 01:42:15.660
+go ahead with the get started for free. And then here you
+
+01:42:15.660 --> 01:42:18.300
+will be able to find out a ng rock downloadable file
+
+01:42:18.300 --> 01:42:21.040
+downloads, right? So if you're using windows, then go ahead
+
+01:42:21.040 --> 01:42:23.240
+with the windows. If you're using some other system, then go
+
+01:42:23.240 --> 01:42:25.860
+ahead with some other system. It provides you for all the
+
+01:42:25.860 --> 01:42:28.800
+systems. So Mac, Linux, as you can see, it is providing you
+
+01:42:28.800 --> 01:42:31.360
+agent for everything right now, once you are able to
+
+01:42:31.360 --> 01:42:33.900
+download it. So I have downloaded it and I'm keeping it
+
+01:42:33.900 --> 01:42:38.140
+inside my folder. So double click over there and now it will
+
+01:42:38.140 --> 01:42:41.620
+be able to pop up the ng ng rock command prompt CMD.
+
+01:42:41.700 --> 01:42:44.020
+Basically you don't have to do anything basically. So what
+
+01:42:44.020 --> 01:42:46.160
+you have to do is you just have to write a simple command.
+
+01:42:46.280 --> 01:42:49.480
+They have even given you the example over here. Okay. So you
+
+01:42:49.480 --> 01:42:52.880
+just have to type the command ng rock. So this is the
+
+01:42:52.880 --> 01:42:56.500
+command and then HTTP means whatever is running in your
+
+01:42:56.500 --> 01:43:00.800
+local HTTP means local HTTP S means global internet, right?
+
+01:43:00.920 --> 01:43:04.580
+So HTTP, and then you have to write the port number. So all
+
+01:43:04.580 --> 01:43:08.200
+the application that you are trying to test, uh, doesn't
+
+01:43:08.200 --> 01:43:10.620
+matter whether it's a streaming application or maybe a flask
+
+01:43:10.620 --> 01:43:13.640
+application, maybe a fast API or anything, right? Anything.
+
+01:43:13.840 --> 01:43:17.380
+So that must be running on some of the port numbers. So you
+
+01:43:17.380 --> 01:43:19.920
+just have to give that port number. What it will do is it
+
+01:43:19.920 --> 01:43:23.140
+will try to bind that port number to the outside, to the
+
+01:43:23.140 --> 01:43:26.400
+internet. That's it. So that whatever traffic will come,
+
+01:43:26.500 --> 01:43:29.180
+right? So first of all, traffic will come to ng rock. Then
+
+01:43:29.180 --> 01:43:32.380
+ng rock knows that, that if traffic is coming on this URL,
+
+01:43:32.500 --> 01:43:37.100
+so this URL is binded to which system, right? So it will
+
+01:43:37.100 --> 01:43:39.620
+route that traffic to my system basically, and this is how
+
+01:43:39.620 --> 01:43:42.920
+you will be able to access something which is running in my
+
+01:43:42.920 --> 01:43:46.560
+local system globally. Same point of a time. So this is how
+
+01:43:46.560 --> 01:43:49.720
+that was like, uh, uh, working. This is how the URL I have
+
+01:43:49.720 --> 01:43:52.100
+shared with all of you was actually working. So this is what
+
+01:43:52.100 --> 01:43:57.360
+ng rock does and command design steps are very simple. So ng
+
+01:43:57.360 --> 01:43:59.700
+rock HTTP and then whatever port number, it doesn't matter
+
+01:43:59.700 --> 01:44:02.220
+which port number, just you have to write the port number
+
+01:44:02.220 --> 01:44:04.600
+and that port number will be public.
+
+01:44:11.630 --> 01:44:14.290
+I think the app is working for one general time, otherwise
+
+01:44:14.290 --> 01:44:17.130
+talking your voice input here. So basically it will work
+
+01:44:17.130 --> 01:44:19.450
+because I have to create the session inside the app. So
+
+01:44:19.450 --> 01:44:21.370
+basically I have to create the session inside the app, or
+
+01:44:21.370 --> 01:44:23.570
+maybe I have to distribute it. I have to host it in a
+
+01:44:23.570 --> 01:44:26.530
+distributed manner. So because there is only one way. There
+
+01:44:26.530 --> 01:44:30.070
+is only one instance of app I have like a spin over here. So
+
+01:44:30.070 --> 01:44:31.230
+yes, all
+
+01:44:37.470 --> 01:44:39.690
+the content, do you give a constant support for company
+
+01:44:39.690 --> 01:44:42.810
+you're on a no, we don't give it. We have like a, our plate
+
+01:44:42.810 --> 01:44:44.950
+is completely full. Like we have a lot of product that we
+
+01:44:44.950 --> 01:44:49.990
+are building internally and plus like, uh, I do teaching a
+
+01:44:49.990 --> 01:44:51.970
+lot of teaching. So sir,
+
+01:44:55.460 --> 01:44:58.580
+can we keep such local system as server for a longer time?
+
+01:44:58.640 --> 01:45:00.860
+Yeah. As long as your system will be up and running, your
+
+01:45:00.860 --> 01:45:03.860
+laptop will be up and running. It will work. But if you
+
+01:45:03.860 --> 01:45:06.620
+don't want that in that case, do one thing. So there is a
+
+01:45:06.620 --> 01:45:09.540
+render.com. I have even, uh, like, uh, a sole multiple
+
+01:45:09.540 --> 01:45:12.620
+projects. So just go and deploy it on a render.com. Render
+
+01:45:12.620 --> 01:45:15.360
+.com is not even going to charge you single rupees, right?
+
+01:45:15.600 --> 01:45:18.420
+So use such kind of a services so that you don't have to
+
+01:45:18.420 --> 01:45:21.120
+keep your laptop up and running. There are a lot of like a
+
+01:45:21.120 --> 01:45:22.040
+free cloud provider.
+
+01:45:27.760 --> 01:45:30.460
+So tell us which library we should use for a visualization
+
+01:45:30.460 --> 01:45:35.340
+for a visualization. I will say that, uh, try to use maybe a
+
+01:45:35.340 --> 01:45:38.120
+matplotlib, seaborn, cufflinks or plotly. Plotly will be
+
+01:45:38.120 --> 01:45:44.340
+more interactive. I would say. Let me show you. Uh, like a
+
+01:45:44.340 --> 01:45:46.160
+couple of small, small dashboarding.
+
+01:46:33.210 --> 01:46:35.390
+Okay. So let me show you some visualization in the same
+
+01:46:35.390 --> 01:46:37.070
+code, a small visualization by the way.
+
+01:46:40.500 --> 01:46:43.860
+So I will be using a library called as plotly. Plotly is a
+
+01:46:43.860 --> 01:46:46.700
+interactive library. So I'm just doing an installation of a
+
+01:46:46.700 --> 01:46:50.040
+plotly. So even you can do installation guys, pip install
+
+01:46:50.040 --> 01:46:53.340
+plotly for the interactive visualization.
+
+01:47:24.810 --> 01:47:25.230
+CLS.
+
+01:47:59.400 --> 01:48:03.520
+Okay. So I can speak or maybe I can try to like, uh, ask
+
+01:48:03.520 --> 01:48:05.900
+question in my own way. So both is going to work.
+
+01:48:11.460 --> 01:48:14.160
+Yeah. So as of now, it is able to like, I have simply said
+
+01:48:14.160 --> 01:48:17.100
+that, that so many of the total revenue by a month. So it is
+
+01:48:17.100 --> 01:48:20.600
+able to like, uh, show me the total revenue by a month, as
+
+01:48:20.600 --> 01:48:23.960
+you can see, and then it is able to create a histogram. Let
+
+01:48:23.960 --> 01:48:26.540
+me ask some different questions. So accordingly, it will try
+
+01:48:26.540 --> 01:48:29.160
+to plot the graph. If I want all the graph at one places
+
+01:48:29.160 --> 01:48:31.880
+that is also possible, like a Power BI dashboarding. If you
+
+01:48:31.880 --> 01:48:38.520
+want properly, that is also possible. Uh, show me, uh, R
+
+01:48:41.820 --> 01:48:47.870
+I B U T A T N distribution of. And as your data will be big,
+
+01:48:47.950 --> 01:48:51.690
+your graph will be more beautiful. So I've just asked a
+
+01:48:51.690 --> 01:48:54.470
+question. Show me a distribution of order amount again.
+
+01:48:59.920 --> 01:49:02.700
+Just a histogram. Okay. Query is fine.
+
+01:49:05.700 --> 01:49:14.780
+Uh, give me, give me top 10 products by, I don't have even a
+
+01:49:14.780 --> 01:49:16.440
+top 10 products, but yeah, I still, I'm asking.
+
+01:49:25.540 --> 01:49:28.080
+Hmm. So now it is giving me a scatter plot as you can see.
+
+01:49:28.560 --> 01:49:32.360
+Right. Scatter plot. So visualize, uh, based on like this
+
+01:49:32.360 --> 01:49:39.660
+particular data. So like speech query result, and then
+
+01:49:39.660 --> 01:49:41.900
+parallelly a visualization. So if I'm looking for like a
+
+01:49:41.900 --> 01:49:45.220
+default visualization, if I'm looking for some separate
+
+01:49:45.220 --> 01:49:47.900
+visualization with respect to a relationship, I can even do
+
+01:49:47.900 --> 01:49:48.960
+that. Yeah.
+
+01:49:55.140 --> 01:49:58.080
+So this is just again, another modification guys. So where
+
+01:49:58.080 --> 01:50:01.940
+you will be able to see even a visualization. So fine guys.
+
+01:50:02.060 --> 01:50:04.920
+So with that, I'm done with, uh, today's project. Uh,
+
+01:50:05.160 --> 01:50:08.120
+tomorrow, again, we have a practical, uh, so I'll show you
+
+01:50:08.120 --> 01:50:11.440
+back to back multiple project, not just one. And then, uh,
+
+01:50:11.580 --> 01:50:15.440
+you can ask me a question, uh, to add something and I'll be
+
+01:50:15.440 --> 01:50:18.820
+happy to add it. So with that, uh, let me share my latest
+
+01:50:18.820 --> 01:50:23.200
+piece of the code and then I'm going to wind up the class.
+
+01:50:27.500 --> 01:50:30.720
+So SQL, LLM, gen AI, bestest
+
+01:50:40.870 --> 01:50:43.750
+class ever. Thank you so much. Sanjeev.
+
+01:50:46.780 --> 01:50:52.060
+LLM might get confused on show incorrect. Uh, uh, or so
+
+01:50:52.060 --> 01:50:57.800
+incorrect result. Uh, there is a chance that LLM might get
+
+01:50:57.800 --> 01:51:01.480
+confused the way you are asking a question. See if you are
+
+01:51:01.480 --> 01:51:05.240
+going to ask a wrong question, obviously LLM is going to
+
+01:51:05.240 --> 01:51:09.240
+produce a query. See at the end of the day, uh, LLM is what
+
+01:51:09.240 --> 01:51:11.520
+it just, uh, interface, right? It's just an interface
+
+01:51:11.520 --> 01:51:14.220
+between human and a machine. That's it. Nothing more than
+
+01:51:14.220 --> 01:51:18.720
+that. LLM is not having, uh, black, uh, too much of
+
+01:51:18.720 --> 01:51:19.500
+creativity. But it's just an interface, right? It should be
+
+01:51:19.500 --> 01:51:23.040
+beyond your thought. So obviously you should be very clear
+
+01:51:23.040 --> 01:51:25.760
+that what you are looking for, and you should be very clear
+
+01:51:25.760 --> 01:51:30.460
+in terms of conveying those things, right? So the way like
+
+01:51:30.460 --> 01:51:33.180
+a, you gather a requirement from a client, so you ask a
+
+01:51:33.180 --> 01:51:35.500
+proper question and then client gives you a proper answer.
+
+01:51:35.660 --> 01:51:38.600
+If there is a breakage in between, obviously you will not be
+
+01:51:38.600 --> 01:51:41.180
+able to build a best product. You will not be able to get a
+
+01:51:41.180 --> 01:51:44.040
+best result. Same things has been applied even over here,
+
+01:51:44.140 --> 01:51:48.760
+ask LLM is smart enough to give you a bestest or best
+
+01:51:48.760 --> 01:51:52.460
+result. But it also depends upon you that how you are asking
+
+01:51:52.460 --> 01:51:54.780
+question. If you'll ask the wrong question, obviously LLM is
+
+01:51:54.780 --> 01:51:56.640
+going to give you the wrong answer and there is no doubt
+
+01:51:56.640 --> 01:52:00.600
+about it, right? So you should know in a very first place
+
+01:52:00.600 --> 01:52:05.240
+that what you want. So fine guys with that. Thank you so
+
+01:52:05.240 --> 01:52:07.520
+much. Hope all of you have enjoyed this class. I have
+
+01:52:07.520 --> 01:52:10.440
+already shared a complete code file tomorrow. Again, I'll
+
+01:52:10.440 --> 01:52:13.840
+show you a practical, uh, this, your class now onwards is
+
+01:52:13.840 --> 01:52:17.280
+all about practical implementation back to back. So you will
+
+01:52:17.280 --> 01:52:22.100
+see a lot of applications. Okay. Then I will request you to
+
+01:52:22.100 --> 01:52:26.100
+build something around it. For example, uh, if, if I'll talk
+
+01:52:26.100 --> 01:52:28.900
+about my today's example, right? So I have basically
+
+01:52:28.900 --> 01:52:33.000
+integrated, uh, offline, uh, package for converting a speech
+
+01:52:33.000 --> 01:52:36.480
+to text. Maybe you can try to consume an API from a Google,
+
+01:52:36.560 --> 01:52:39.080
+maybe from a whisper API. You can try to consume it and make
+
+01:52:39.080 --> 01:52:42.800
+it more robust, right? Make it more robust. Maybe you can
+
+01:52:42.800 --> 01:52:46.160
+try to give more power in terms of number of languages that
+
+01:52:46.160 --> 01:52:48.520
+it can understand. I have integrated for 80 languages. Maybe
+
+01:52:48.520 --> 01:52:50.920
+you can integrate for all of the languages, right? There is
+
+01:52:50.920 --> 01:52:54.580
+a API, which is available out there. Uh, then someone was
+
+01:52:54.580 --> 01:52:56.920
+asking for a power BI dashboard, power BI kind of a
+
+01:52:56.920 --> 01:53:00.040
+dashboard. Okay. Do one thing. So build it in such a way
+
+01:53:00.040 --> 01:53:03.000
+that it will be able to create a dashboard, which should be
+
+01:53:03.000 --> 01:53:06.240
+personalized to me. And let's suppose your application is
+
+01:53:06.240 --> 01:53:10.000
+with someone by someone else. So their dashboard should be
+
+01:53:10.000 --> 01:53:13.160
+personalized to their requirements. So personalization into
+
+01:53:13.160 --> 01:53:17.380
+a dashboarding into a data visualization, right now, again,
+
+01:53:17.600 --> 01:53:22.140
+you can try to like, uh, maybe, uh, like, uh, fix some of
+
+01:53:22.140 --> 01:53:25.880
+the query, which will run automatically in a couple of hours
+
+01:53:25.880 --> 01:53:28.340
+or a couple of minutes, or maybe in a couple of days. Right.
+
+01:53:28.660 --> 01:53:31.920
+And automatically it should populate the dashboard. So
+
+01:53:31.920 --> 01:53:34.940
+again, that is one another label, right? This is what we
+
+01:53:34.940 --> 01:53:38.600
+even do inside the industry. So we try to sit duly each and
+
+01:53:38.600 --> 01:53:41.440
+everything we try to configure each and everything in such a
+
+01:53:41.440 --> 01:53:44.900
+way that that system will run the query automatically in a
+
+01:53:44.900 --> 01:53:47.080
+particular time period, right? And then. Then try to
+
+01:53:47.080 --> 01:53:49.700
+populate the dashboard and my manager or my stakeholder, my
+
+01:53:49.700 --> 01:53:53.740
+business unit will be able to see that do it here, right?
+
+01:53:54.100 --> 01:53:56.620
+Just a couple of line of a code. You will be able to do a
+
+01:53:56.620 --> 01:53:58.960
+scheduling. Scheduling is very much easy with respect to a
+
+01:53:58.960 --> 01:54:01.760
+Python, right? Or maybe you can even, if you are using a
+
+01:54:01.760 --> 01:54:04.240
+windows or maybe any other machine, just write a cron job
+
+01:54:04.240 --> 01:54:06.960
+over there with the help of cron job, it will be able to
+
+01:54:06.960 --> 01:54:09.940
+like a schedule it automatically. It will run the job. So
+
+01:54:09.940 --> 01:54:12.600
+whenever you are going to schedule and then face the data,
+
+01:54:12.680 --> 01:54:15.960
+build the dashboard and bingo, right? A complete full scale
+
+01:54:15.960 --> 01:54:18.740
+product. This is what, what the real people does, even
+
+01:54:18.740 --> 01:54:21.100
+inside the industry, it's not like they're doing something
+
+01:54:21.100 --> 01:54:27.100
+very different, right? So this should be the next step for
+
+01:54:27.100 --> 01:54:31.140
+all of you. So again, with the help of AI, we have given you
+
+01:54:31.140 --> 01:54:33.300
+URI for the same reason, right? So that you can go play with
+
+01:54:33.300 --> 01:54:36.620
+the URI, try to ask a question, try to build something, try
+
+01:54:36.620 --> 01:54:39.380
+to resolve your doubt so that you don't have to go outside
+
+01:54:39.380 --> 01:54:41.760
+and pay for it. We have given you the API access for the
+
+01:54:41.760 --> 01:54:44.740
+same reason so that you can make use of it in a positive
+
+01:54:44.740 --> 01:54:48.760
+manner. So go ahead. Use it. Try to add one, one, a single,
+
+01:54:48.840 --> 01:54:51.300
+single things, and then mention the same thing inside your
+
+01:54:51.300 --> 01:54:54.800
+resume. And when you will do it, and then when you are going
+
+01:54:54.800 --> 01:54:57.420
+to add it, believe me, you will be very much comfortable
+
+01:54:57.420 --> 01:55:00.340
+when you are going to explain your project in front of
+
+01:55:00.340 --> 01:55:03.800
+interviewer, right? Interviewer, you will be able to even
+
+01:55:03.800 --> 01:55:06.460
+add five more things, which maybe you have not done, but you
+
+01:55:06.460 --> 01:55:13.540
+know how to do it. Yeah. So just try to do that. Next step.
+
+01:55:13.720 --> 01:55:17.160
+Use your creativity. Use your imagination. If you're not
+
+01:55:17.160 --> 01:55:19.100
+able to get a creativity, if you're not able to get an
+
+01:55:19.100 --> 01:55:22.920
+imagination, then send the same situation or scenario to a
+
+01:55:22.920 --> 01:55:25.780
+URI, ask that, okay, fine. So tell me what in all, I think
+
+01:55:25.780 --> 01:55:28.240
+I, what kind of a feature I can try to build on top of it.
+
+01:55:28.300 --> 01:55:31.400
+At least, at least this much you can do. Right. Go and ask
+
+01:55:31.400 --> 01:55:33.980
+URI by giving this entire situation that, okay, I'm able to
+
+01:55:33.980 --> 01:55:35.900
+build an application. So which is able to take a speech
+
+01:55:35.900 --> 01:55:38.780
+input in this way, and then it is able to like take a
+
+01:55:38.780 --> 01:55:40.800
+queries. It is able to give me an answer. These are the five
+
+01:55:40.800 --> 01:55:44.200
+tables that I have. I'm able to plot a graph now. Now what
+
+01:55:44.200 --> 01:55:47.100
+all feature you are going to suggest that I should build
+
+01:55:47.100 --> 01:55:51.400
+inside this application to make it even like a, like a, a
+
+01:55:51.400 --> 01:55:57.000
+more real URI is going to give you a response. It is going
+
+01:55:57.000 --> 01:55:59.920
+to give you a 10 to 15 feature and then start building those
+
+01:55:59.920 --> 01:56:05.420
+feature making sense guys, how we should study. So I think
+
+01:56:05.420 --> 01:56:10.820
+now this is how we all are supposed to study, right? The way
+
+01:56:10.820 --> 01:56:13.480
+we were studying since a very, very long time. Believe me.
+
+01:56:13.520 --> 01:56:17.700
+Okay. If you are still following that particular way, you
+
+01:56:17.700 --> 01:56:21.600
+are not moving anywhere, right? You're not literally moving
+
+01:56:21.600 --> 01:56:24.660
+anywhere and industry is not going to give you a value.
+
+01:56:24.920 --> 01:56:28.480
+Things have literally changed a lot. People are yet to
+
+01:56:28.480 --> 01:56:33.140
+accept it, right? Maybe people are like not able to realize
+
+01:56:33.140 --> 01:56:36.940
+many of us are not able to realize, but sooner you will
+
+01:56:36.940 --> 01:56:40.320
+realize better. It will be, and you will be in a better and
+
+01:56:40.320 --> 01:56:45.160
+peaceful position very soon. So maybe this conversational
+
+01:56:45.160 --> 01:56:47.920
+would be good enhancement. Conversational would be. Yeah. So
+
+01:56:47.920 --> 01:56:50.580
+I have already like a given that, right? So one, one end,
+
+01:56:50.700 --> 01:56:53.980
+you can try to build another end. So fine guys with that.
+
+01:56:54.020 --> 01:56:55.720
+Thank you so much. See you again in my tomorrow's class.
+
+01:56:55.980 --> 01:56:58.840
+Tomorrow again, I will be showing you the project, um, with
+
+01:56:58.840 --> 01:57:01.580
+the LLMs and, uh, whatever is that in your syllabus. I'll
+
+01:57:01.580 --> 01:57:04.420
+just follow through your syllabus and I'll try to show the
+
+01:57:04.420 --> 01:57:07.140
+project till then take care everyone. Thank you so much.
+
+01:57:07.420 --> 01:57:07.920
+Well done.
+

@@ -1,0 +1,3590 @@
+WEBVTT
+
+00:00:26.900 --> 00:00:30.200
+So, in my previous class I believe I was talking about a
+
+00:00:30.200 --> 00:00:33.860
+research paper called as attention is all you need.
+
+00:00:54.500 --> 00:01:00.100
+So if I am going to go to Google so attention is all you
+
+00:01:00.100 --> 00:01:04.680
+need and this was basically a research paper which I was
+
+00:01:04.680 --> 00:01:07.440
+talking about and I believe I have already shared this
+
+00:01:07.440 --> 00:01:10.480
+research paper with all of you and we have understood that
+
+00:01:10.480 --> 00:01:11.160
+how
+
+00:01:26.140 --> 00:01:28.520
+this entire transformer architecture is
+
+00:02:13.480 --> 00:02:21.080
+based on the understanding that we already have. So, in my
+
+00:02:21.080 --> 00:02:24.060
+previous class I believe I was talking about a research
+
+00:02:24.060 --> 00:02:28.520
+paper called as attention is all you need. So if I am going
+
+00:02:28.520 --> 00:02:35.260
+to go to Google so attention is all you need and this was
+
+00:02:35.260 --> 00:02:38.640
+basically a research paper which I was talking about and I
+
+00:02:38.640 --> 00:02:41.460
+believe I have already shared this research paper with all
+
+00:02:41.460 --> 00:02:45.100
+of you and we have understood that how this entire
+
+00:02:45.100 --> 00:02:48.160
+transformer architecture is actually going to work how it is
+
+00:02:48.160 --> 00:02:51.160
+going to take an input and then how it is going to learn,
+
+00:02:51.400 --> 00:02:55.080
+again, we have a multi-headed attention so what is the
+
+00:02:55.080 --> 00:02:57.660
+meaning of a multi-headed attention what is the meaning of a
+
+00:02:57.660 --> 00:03:01.340
+masked multi-headed attention, What is an encoder layer?
+
+00:03:01.480 --> 00:03:04.240
+What is a decoder layer? What happens and what kind of
+
+00:03:04.240 --> 00:03:08.300
+architecture goes inside? Or network goes inside encoder
+
+00:03:08.300 --> 00:03:12.760
+side of it. And then what kind of a network goes in a
+
+00:03:12.760 --> 00:03:16.240
+decoder side of it. So all of these things we were trying to
+
+00:03:16.240 --> 00:03:18.800
+understand. stand in my previous class I believe the
+
+00:03:18.800 --> 00:03:23.120
+Saturday class that I have taken and again so the
+
+00:03:23.120 --> 00:03:26.220
+calculation which happens which is responsible for doing
+
+00:03:26.220 --> 00:03:29.440
+attention means building attention with respect to a data
+
+00:03:29.440 --> 00:03:33.080
+set that we are going to provide so even that we have
+
+00:03:33.080 --> 00:03:35.940
+already discussed and we all were able to understand this
+
+00:03:35.940 --> 00:03:38.840
+entire equation right guys everyone so please bring me in a
+
+00:03:38.840 --> 00:03:43.600
+chat so yeah everyone so if anyone is having any kind of any
+
+00:03:43.600 --> 00:03:46.200
+sort of a confusion because this is one of the most
+
+00:03:46.200 --> 00:03:49.960
+important one from like obviously like all the architecture
+
+00:03:49.960 --> 00:03:53.340
+understanding purpose and even from an interview like a
+
+00:03:53.340 --> 00:03:56.920
+purpose and if something you are going to do it in a future
+
+00:03:56.920 --> 00:03:58.880
+maybe some sort of a research if you are trying to do some
+
+00:03:58.880 --> 00:04:02.580
+sort of a new network if you are going to build this is very
+
+00:04:02.580 --> 00:04:05.260
+much crucial and this is very much important for all of us
+
+00:04:05.260 --> 00:04:08.440
+so I believe this research paper we all were able to
+
+00:04:08.440 --> 00:04:12.040
+understand in a neat and clean way and all the component
+
+00:04:12.040 --> 00:04:15.760
+around this research paper is you know pretty much clear to
+
+00:04:15.760 --> 00:04:20.680
+all of us now the network or like the kind of a model that
+
+00:04:20.680 --> 00:04:24.600
+we are using nowadays in a market so let's suppose a chat
+
+00:04:24.600 --> 00:04:27.840
+GPT we are trying to use so we have seen that that chat GPT
+
+00:04:27.840 --> 00:04:32.040
+3.5 then 4 then 4.0 then omni mini all all those like things
+
+00:04:32.040 --> 00:04:36.400
+then cloud is on it and again from a publicity side so we
+
+00:04:36.400 --> 00:04:39.300
+have seen a multiple model from a Facebook side we have seen
+
+00:04:39.300 --> 00:04:42.920
+a llama series from a Google side we have seen a Gemini
+
+00:04:42.920 --> 00:04:47.480
+series a lot of model we have now we are able to see in a
+
+00:04:47.480 --> 00:04:53.120
+market and again deep seek r1 deep seek like a v3 which has
+
+00:04:53.120 --> 00:04:56.720
+been released recently llama 4 which was released last week
+
+00:04:56.720 --> 00:05:00.580
+itself so every day we are able to see a better and better
+
+00:05:00.580 --> 00:05:03.840
+and better model right and everyone is trying to claim that
+
+00:05:03.840 --> 00:05:07.060
+i will be able to give you a response in a much much better
+
+00:05:07.060 --> 00:05:10.540
+way and recently i believe like you must have seen and you
+
+00:05:10.540 --> 00:05:14.120
+must have experienced that chat gpt has released a image
+
+00:05:14.120 --> 00:05:16.960
+model as well so which is going to generate a image so for a
+
+00:05:16.960 --> 00:05:19.700
+model basically that was helping you out to generate images
+
+00:05:19.700 --> 00:05:24.700
+and it has stormed the entire world right and especially it
+
+00:05:24.700 --> 00:05:29.420
+has impacted a lot like to those who were just like doing a
+
+00:05:29.420 --> 00:05:32.680
+creative graphic designing or something and again like a
+
+00:05:32.680 --> 00:05:35.760
+people plus a kind of a company so who are trying to build a
+
+00:05:35.760 --> 00:05:39.280
+tool around it and everyone is trying to now look for a new
+
+00:05:39.280 --> 00:05:44.420
+way now all of these models are basically somewhere like
+
+00:05:44.420 --> 00:05:48.680
+trying to use this base research paper and all of these
+
+00:05:48.680 --> 00:05:52.020
+models are built on top of this particular architecture
+
+00:05:52.020 --> 00:05:56.400
+itself some of them are using just an encoder layer some of
+
+00:05:56.400 --> 00:05:59.640
+them are using just a decoder layer some of them are using
+
+00:05:59.640 --> 00:06:03.000
+encoder and decoder layer depends upon the task that they
+
+00:06:03.000 --> 00:06:09.720
+are trying to solve so i have just prepared one let me open
+
+00:06:09.720 --> 00:06:16.480
+up so i have prepared one detail documentation for all of
+
+00:06:16.480 --> 00:06:20.520
+you and basically i have prepared this one for my jni
+
+00:06:20.520 --> 00:06:25.240
+interview batch so which i have like closed and again so
+
+00:06:25.240 --> 00:06:28.620
+this is one of the best content that you will be able to
+
+00:06:28.620 --> 00:06:32.460
+find out in terms of summary that which one is a decoder
+
+00:06:32.460 --> 00:06:35.340
+only architecture which one is a encoder only architecture
+
+00:06:35.340 --> 00:06:39.240
+because now we understand what is a meaning of a encoder or
+
+00:06:39.240 --> 00:06:39.540
+decoder and decoder is a decoder only architecture which one
+
+00:06:39.540 --> 00:06:39.880
+is a encoder only architecture so now you can see that this
+
+00:06:39.880 --> 00:06:40.100
+is a decoder and this is a decoder and this is a decoder and
+
+00:06:40.100 --> 00:06:43.240
+this is a decoder inside a transformer architecture so in
+
+00:06:43.240 --> 00:06:47.640
+this entire documentation so i'm going to summarize each and
+
+00:06:47.640 --> 00:06:51.060
+everything the major model that you are able to see like a
+
+00:06:51.060 --> 00:06:55.660
+gpt or like a gpt 3 4 lama falcon all those models or maybe
+
+00:06:55.660 --> 00:06:59.040
+cloud s on it or any any model so we are going to summarize
+
+00:06:59.040 --> 00:07:03.420
+most of the model that okay so this model is a decoder only
+
+00:07:03.420 --> 00:07:07.060
+model this model is a encoder only model or this model is
+
+00:07:07.060 --> 00:07:09.540
+following what kind of architecture how many layers are
+
+00:07:09.540 --> 00:07:10.980
+there and what kind of architecture Are there inside this
+
+00:07:10.980 --> 00:07:13.720
+one? I believe we have seen that animations as well, right?
+
+00:07:13.760 --> 00:07:18.260
+So where we were able to see like a GPT-mini 3.5 and so on.
+
+00:07:18.360 --> 00:07:20.740
+And we were able to see a number of layers, attention head
+
+00:07:20.740 --> 00:07:24.200
+basically, right? We were able to see like even that kind of
+
+00:07:24.200 --> 00:07:27.200
+animation in my previous classes. So this is going to be a
+
+00:07:27.200 --> 00:07:31.600
+summary as per your syllabus. So if I'm going to open up
+
+00:07:31.600 --> 00:07:33.840
+your syllabus, basically.
+
+00:07:37.880 --> 00:07:41.340
+So yeah, so we were talking about all of these things,
+
+00:07:41.400 --> 00:07:44.500
+right? We have discussed about all of these things and then
+
+00:07:44.500 --> 00:07:50.180
+it's time to talk about a basic model because going forward,
+
+00:07:50.300 --> 00:07:52.860
+when I'm going to write a code, when we are going to build a
+
+00:07:52.860 --> 00:07:56.180
+project, when we are going to do a practical, we will be
+
+00:07:56.180 --> 00:08:00.360
+using some of these models. Maybe like for fine tuning, we
+
+00:08:00.360 --> 00:08:03.320
+are going to use it. Maybe for a RAG application building,
+
+00:08:03.440 --> 00:08:07.300
+we are going to use it. Maybe we will end up consuming its
+
+00:08:07.300 --> 00:08:12.680
+APIs. So APIs from a group or maybe from open. So we are
+
+00:08:12.680 --> 00:08:16.380
+going to end up consuming all of those APIs. And this is
+
+00:08:16.380 --> 00:08:19.060
+where this entire practical things comes into a picture,
+
+00:08:19.180 --> 00:08:23.560
+right? But before consuming its API or before doing a fine
+
+00:08:23.560 --> 00:08:27.200
+tuning, because we have to build a lot of application as per
+
+00:08:27.200 --> 00:08:30.360
+your syllabus with respect to a fine tuning or with respect
+
+00:08:30.360 --> 00:08:34.020
+to a RAG, tons of things that we have to build and all of
+
+00:08:34.020 --> 00:08:38.020
+these are technically a practical like a use case. So a lot
+
+00:08:38.020 --> 00:08:40.540
+of coding that we have to do going forward. A lot of coding
+
+00:08:40.540 --> 00:08:44.000
+means a lot of coding. But before jumping into those coding
+
+00:08:44.000 --> 00:08:46.660
+part, before doing this fine tuning practically, before
+
+00:08:46.660 --> 00:08:49.800
+building some sort of a RAG based application or some
+
+00:08:49.800 --> 00:08:53.300
+agentic AI based application or any such kind of things. So
+
+00:08:53.300 --> 00:08:56.560
+we are supposed to be aware about our basic fundamentals
+
+00:08:56.560 --> 00:09:00.400
+that this is what kind of a model encoder only decoder only
+
+00:09:00.400 --> 00:09:03.160
+for what and all purposes I will be able to use this
+
+00:09:03.160 --> 00:09:06.740
+particular model or series of this particular model and
+
+00:09:06.740 --> 00:09:09.280
+Ghibli
+
+00:09:11.490 --> 00:09:13.750
+art style. Yeah, I think everyone has. Yeah, I think
+
+00:09:13.750 --> 00:09:16.450
+everyone has generated their Ghibli art style. I believe
+
+00:09:16.450 --> 00:09:19.990
+voice is low. Is it I don't think so. Voice is low. I'm
+
+00:09:19.990 --> 00:09:24.110
+keeping my mic close to like my mouth. So I believe like a
+
+00:09:24.110 --> 00:09:30.270
+voice is fine. Okay. So now let's try to understand. Maybe
+
+00:09:30.270 --> 00:09:34.010
+you can try to like increase a little bit of voice from your
+
+00:09:34.010 --> 00:09:36.790
+side. But yeah, I think it's fine. Right guys, everyone, if
+
+00:09:36.790 --> 00:09:38.030
+you can ping me and the confirm.
+
+00:09:43.050 --> 00:09:46.950
+Okay. So class is going to be a theoretical for today and
+
+00:09:46.950 --> 00:09:48.930
+tomorrow. So we are going. We are going to start doing our
+
+00:09:48.930 --> 00:09:51.270
+practical a lot of practical application. We are going to
+
+00:09:51.270 --> 00:09:55.470
+start and we will start consuming an API. Yeah, so let's
+
+00:09:55.470 --> 00:09:59.470
+talk about this entire documentation. Again, I'm not saying
+
+00:09:59.470 --> 00:10:02.070
+that you should remember even I don't remember the entire
+
+00:10:02.070 --> 00:10:04.550
+things which is written inside the documentation. That's the
+
+00:10:04.550 --> 00:10:06.570
+reason. So I'm going to talk about the documentation part.
+
+00:10:06.710 --> 00:10:10.450
+But yeah, it's good to understand that the segregation
+
+00:10:10.450 --> 00:10:13.750
+between decoder encoder and then what is what kind of a
+
+00:10:13.750 --> 00:10:17.270
+model that we are going to deal with going forward. Right.
+
+00:10:18.010 --> 00:10:21.050
+And even even if you will go and check, I believe you must
+
+00:10:21.050 --> 00:10:24.130
+have checked the URI right so inside URI you will be able to
+
+00:10:24.130 --> 00:10:28.010
+find out again a tons of models and like I said, so soon we
+
+00:10:28.010 --> 00:10:30.530
+are going to release an API because we know that that
+
+00:10:30.530 --> 00:10:34.190
+everyone can't go and pay to open AI or everyone can't go
+
+00:10:34.190 --> 00:10:38.930
+and pay to a group to consume those APIs so like keeping the
+
+00:10:38.930 --> 00:10:42.610
+and we have to use those APIs a lot to build any kind of
+
+00:10:42.610 --> 00:10:46.610
+MVPs for our business that we are trying to deal with or
+
+00:10:46.610 --> 00:10:49.690
+maybe to like a do some work. Do our RIG or maybe to look
+
+00:10:49.690 --> 00:10:53.990
+like a perform some sort of agent TK operation by using any
+
+00:10:53.990 --> 00:10:56.730
+of the platform which is available across the globe and
+
+00:10:56.730 --> 00:11:01.750
+maybe like to do some sort of fine tuning of the model. So
+
+00:11:01.750 --> 00:11:05.770
+we need an API, a lot of APIs we are supposed to consume. So
+
+00:11:05.770 --> 00:11:08.970
+soon we are going to consume or we are going to use like
+
+00:11:08.970 --> 00:11:13.630
+those APIs. But yeah, so even inside the URI system, you all
+
+00:11:13.630 --> 00:11:16.470
+will be able to see the API. So we are going to expose it.
+
+00:11:16.750 --> 00:11:20.190
+And last. So we have released a lot of things inside a URI.
+
+00:11:20.390 --> 00:11:23.290
+So now even you will be able to find out a llama for a
+
+00:11:23.290 --> 00:11:26.430
+scout, which is kind of an infinite model at 10 million
+
+00:11:26.430 --> 00:11:28.930
+tokens. It will be able to consume at one point of a time.
+
+00:11:30.030 --> 00:11:34.250
+So it's a massive model that you all will be able to find
+
+00:11:34.250 --> 00:11:41.330
+out. And then now you can go and ask like, give me a code
+
+00:11:41.330 --> 00:11:44.570
+for fine tuning.
+
+00:11:53.220 --> 00:11:57.780
+Maybe llama. Three with my data,
+
+00:11:59.770 --> 00:12:02.490
+build a pipeline
+
+00:12:06.900 --> 00:12:07.800
+for me.
+
+00:12:11.420 --> 00:12:15.360
+Well, so it's lightning fast, by the way, as you can see. So
+
+00:12:15.360 --> 00:12:19.720
+by the time you are going to hit enter, so it will go crazy
+
+00:12:19.720 --> 00:12:23.960
+and it will start giving you all the result. And I'm just
+
+00:12:23.960 --> 00:12:27.940
+using a llama 3.3 70 billion parameter. But yeah, you can
+
+00:12:27.940 --> 00:12:29.620
+even go ahead with the scout. You can go ahead with the
+
+00:12:29.620 --> 00:12:33.680
+Maverick. And yes, a lot of real time search. So. Before
+
+00:12:33.680 --> 00:12:37.280
+using all of these model, you should know the bottom line
+
+00:12:37.280 --> 00:12:41.460
+that, OK, so this model is like what kind of a model and for
+
+00:12:41.460 --> 00:12:44.800
+what purposes it is going to be helpful for me. Right. A lot
+
+00:12:44.800 --> 00:12:46.560
+of things, a lot of things. And that is something which I'm
+
+00:12:46.560 --> 00:12:50.720
+going to discuss in my today's class. But yeah, try out URI.
+
+00:12:50.820 --> 00:12:53.840
+You all will enjoy it, obviously. And like I said, it's
+
+00:12:53.840 --> 00:12:56.680
+lightning fast. Even for a real time search, you can go
+
+00:12:56.680 --> 00:12:59.300
+ahead and like do a real time search. You can try to use
+
+00:12:59.300 --> 00:13:01.900
+thinking model automatically. It will change the model. So
+
+00:13:01.900 --> 00:13:04.160
+for thinking. So we are using. We are using a deep seek R1
+
+00:13:04.160 --> 00:13:07.340
+as well as we are using a quen both are best model in
+
+00:13:07.340 --> 00:13:10.900
+segments. So you can go ahead with the thinking model. You
+
+00:13:10.900 --> 00:13:13.080
+can go ahead with the imagination model. So for that, we are
+
+00:13:13.080 --> 00:13:16.700
+using Gemini as experimental model, a lot of things for a
+
+00:13:16.700 --> 00:13:19.640
+real time. So as we are using a Gemini 2.0 flasks over here.
+
+00:13:19.720 --> 00:13:22.520
+So if you're going to click on search automatically, it is
+
+00:13:22.520 --> 00:13:25.520
+going to change it automatically. So many things, many
+
+00:13:25.520 --> 00:13:27.260
+things we have built and we are building.
+
+00:13:30.060 --> 00:13:34.480
+So, yeah, now. So all of these model. We have over here now,
+
+00:13:34.580 --> 00:13:38.800
+whether this model is a encoder only decoder, only how many
+
+00:13:38.800 --> 00:13:41.660
+layers are there, how many tokens it will be able to consume
+
+00:13:41.660 --> 00:13:45.880
+all of these things. At least we are supposed to be aware
+
+00:13:45.880 --> 00:13:48.880
+of. It's not like you should remember. So I'm not suggesting
+
+00:13:48.880 --> 00:13:52.360
+any one of you that you should go ahead and remember. Even I
+
+00:13:52.360 --> 00:13:55.020
+don't remember because there are thousands of model, not
+
+00:13:55.020 --> 00:13:58.860
+just hundreds of, I would say that thousands of model and I
+
+00:13:58.860 --> 00:14:02.600
+just remember a parameters and like a number of layers for
+
+00:14:02.600 --> 00:14:06.560
+all those famous models, all those famous models, but yeah,
+
+00:14:06.620 --> 00:14:10.800
+it's good to have. So let's start talking about these models
+
+00:14:10.800 --> 00:14:14.200
+and one by one and let's start comparing with our
+
+00:14:14.200 --> 00:14:17.480
+understanding that we had that we had from my previous
+
+00:14:17.480 --> 00:14:20.140
+classes when we were trying to talk about the architecture.
+
+00:14:20.740 --> 00:14:25.020
+So here let's talk about first of all, a decoder only
+
+00:14:25.020 --> 00:14:27.860
+architecture decoder only architecture means what decoder
+
+00:14:27.860 --> 00:14:32.320
+only means this layer only. So. On your right hand side. The
+
+00:14:32.320 --> 00:14:35.300
+layer that you are able to see. So this is basically called
+
+00:14:35.300 --> 00:14:39.000
+as decoder only architecture. This part and talking about
+
+00:14:39.000 --> 00:14:42.540
+this entire part I'm talking about. So where there will be
+
+00:14:42.540 --> 00:14:45.480
+embeddings you are going to give, there will be a positional
+
+00:14:45.480 --> 00:14:48.380
+encoding. I will be talking about even a positional encoding
+
+00:14:48.380 --> 00:14:51.320
+calculation wise. So just remind me guys so that I will be
+
+00:14:51.320 --> 00:14:54.000
+able to tell you or even I'll do a calculation. I'll do the
+
+00:14:54.000 --> 00:14:57.240
+math. I will be able to show you that how this positional
+
+00:14:57.240 --> 00:15:00.320
+encoding or position for any token which goes as an input
+
+00:15:00.320 --> 00:15:03.880
+will be calculated. For odd position and for an even
+
+00:15:03.880 --> 00:15:07.640
+position from the same formula that has been used inside
+
+00:15:08.020 --> 00:15:10.740
+this particular research paper. Just give me a reminder at
+
+00:15:10.740 --> 00:15:13.120
+the end of the class. So that I will be like talking about
+
+00:15:13.120 --> 00:15:15.580
+this positional encoding. I believe I remember someone has
+
+00:15:15.580 --> 00:15:18.220
+asked me a question to explain. I'll give a mathematical
+
+00:15:18.220 --> 00:15:20.600
+explanation of this positional encoding so I'll do it. Not
+
+00:15:20.600 --> 00:15:24.060
+an issue. It's a very small formula. So if I'm talking about
+
+00:15:24.060 --> 00:15:27.080
+just a decoder only architecture, it simply means that that
+
+00:15:27.080 --> 00:15:29.840
+I'm talking about this particular layer. Where there will be
+
+00:15:29.840 --> 00:15:32.140
+a masked multi headed attention. So you can see it. i
+
+00:15:32.140 --> 00:15:34.820
+believe we understand what is the meaning of a masking right
+
+00:15:34.820 --> 00:15:37.760
+so masking means hiding some of the data in a forward in a
+
+00:15:37.760 --> 00:15:40.400
+backward direction so that its system will be able to
+
+00:15:40.400 --> 00:15:43.060
+predict the next one and then eventually it will be able to
+
+00:15:43.060 --> 00:15:44.900
+learn then there will be additional normalization layer
+
+00:15:44.900 --> 00:15:47.700
+there will be a multi-headed attention layer at
+
+00:15:47.700 --> 00:15:49.920
+normalization layer then there will be a feed forward
+
+00:15:49.920 --> 00:15:53.720
+convolution neural network for non-linearization of the data
+
+00:15:53.720 --> 00:16:00.940
+so this layer i'm talking about so now let's go back to this
+
+00:16:00.940 --> 00:16:05.200
+document so here decoder only architecture now what it does
+
+00:16:05.200 --> 00:16:08.480
+basically so use only decoder part of the transformer
+
+00:16:08.480 --> 00:16:11.580
+architecture same right transform architecture this is the
+
+00:16:11.580 --> 00:16:14.200
+transform architecture so only a decoder part it is going to
+
+00:16:14.200 --> 00:16:17.660
+use it process input auto-regressively meaning tokens are
+
+00:16:17.660 --> 00:16:20.220
+generated one at a time so auto-regression means one at a
+
+00:16:20.220 --> 00:16:22.840
+time it will try to process the token and then it will keep
+
+00:16:22.840 --> 00:16:26.320
+on learning those things use self-attention and casual
+
+00:16:26.320 --> 00:16:29.400
+masking so obviously self-attention it is going to use and
+
+00:16:29.400 --> 00:16:31.780
+casual masking it is going to use because it's a part of the
+
+00:16:31.780 --> 00:16:35.800
+layer over here so which is very much clear from a decoder
+
+00:16:35.800 --> 00:16:40.920
+layer architecture itself now so what are the models uh
+
+00:16:40.920 --> 00:16:44.300
+which is available so which is basically a decoder only
+
+00:16:44.300 --> 00:16:48.780
+architecture model a gpt series model a llama series model a
+
+00:16:48.780 --> 00:16:53.220
+falcon model right so all of these models are basically a
+
+00:16:53.220 --> 00:16:56.960
+decoder only architecture architecture model so if someone
+
+00:16:56.960 --> 00:17:00.420
+is going to ask you a question that you are saying that you
+
+00:17:00.420 --> 00:17:03.700
+have been using a chat gpt since a very very long time it's
+
+00:17:03.700 --> 00:17:07.400
+a encoder only model or it's a decoder only model or it's a
+
+00:17:07.400 --> 00:17:10.740
+encoder and decoder only model the answer is going to be
+
+00:17:10.740 --> 00:17:17.700
+it's just a decoder only model and so if you remember uh lm
+
+00:17:17.700 --> 00:17:23.240
+visualization which i was like uh trying to show you right
+
+00:17:23.240 --> 00:17:28.480
+so here gpt3 architecture now all of this layer that you are
+
+00:17:28.480 --> 00:17:31.780
+able to see not in this one so maybe you can open up two and
+
+00:17:31.780 --> 00:17:35.020
+maybe you can try to open up three all of these layers are
+
+00:17:35.020 --> 00:17:39.680
+basically representing just a decoder architecture just a
+
+00:17:39.680 --> 00:17:42.740
+decoder there is no encoder which is available or which is
+
+00:17:42.740 --> 00:17:49.240
+involved over here making sense guys yes uh will you share
+
+00:17:49.240 --> 00:17:51.160
+the document obviously everything will be shared so don't
+
+00:17:51.160 --> 00:17:52.880
+worry about that fine
+
+00:18:00.890 --> 00:18:03.170
+arvinder is saying guys what is the agenda for today so
+
+00:18:03.170 --> 00:18:05.590
+agenda for today is to do the comparison based on my
+
+00:18:05.590 --> 00:18:09.130
+previous lecture so it's the theoretical class that we are
+
+00:18:09.130 --> 00:18:13.610
+taking today fine so basically the gpt architecture that we
+
+00:18:13.610 --> 00:18:16.710
+used to see our the llama architecture even llama which is
+
+00:18:16.710 --> 00:18:20.310
+up llama 3.3 which is a part of yuri and llama 4 which
+
+00:18:20.310 --> 00:18:23.770
+people have released and even we have released inside our
+
+00:18:23.770 --> 00:18:27.210
+like uh yuri system which is llama scout and llama maverick
+
+00:18:27.210 --> 00:18:30.870
+uh like blah my scout with 10 billion uh 10 million ooh in
+
+00:18:30.870 --> 00:18:31.790
+the last two years im los angeles ryan smith parameters and
+
+00:18:31.790 --> 00:18:35.190
+then sorry not 10 million parameters so basically 10 million
+
+00:18:35.190 --> 00:18:37.870
+context length and then maverick 1 million context length
+
+00:18:37.870 --> 00:18:41.390
+which is an infinite model scout so again these are nothing
+
+00:18:41.390 --> 00:18:45.630
+but these are basically a decoder only architecture this is
+
+00:18:45.630 --> 00:18:49.470
+what you are supposed to know right now how it works so i
+
+00:18:49.470 --> 00:18:51.930
+think we all understands a decoder only architecture but
+
+00:18:51.930 --> 00:18:54.750
+just to summarize the entire part so i have mentioned over
+
+00:18:54.750 --> 00:18:58.930
+here that takes a input token and process them using a self
+
+00:18:58.930 --> 00:19:02.050
+-attention so obviously if i understand this architecture so
+
+00:19:02.050 --> 00:19:04.810
+instead of this output embedding it's technically a input
+
+00:19:04.810 --> 00:19:07.710
+basically right because i'm just talking about only one
+
+00:19:07.710 --> 00:19:10.570
+layer which is a decoder layer right where i'll be having a
+
+00:19:10.570 --> 00:19:13.650
+mass multi-headed and multi-headed attention so here it will
+
+00:19:13.650 --> 00:19:16.330
+try to take the input and then eventually it will try to
+
+00:19:16.330 --> 00:19:21.410
+like convert it into a decoder and then it will try to
+
+00:19:21.410 --> 00:19:24.290
+process it generates output token by token in an auto
+
+00:19:24.290 --> 00:19:26.450
+regressive manner so basically it knows that what i have
+
+00:19:26.450 --> 00:19:29.470
+generated before and then based on that like it will keep on
+
+00:19:29.470 --> 00:19:32.390
+generating a next one next one and next one use a casual
+
+00:19:32.390 --> 00:19:36.170
+masking to ensure each token only attends to a previous
+
+00:19:36.170 --> 00:19:39.010
+token so yeah casual masking means so we are trying to like
+
+00:19:39.010 --> 00:19:42.510
+hide some of the data while doing a training so that it will
+
+00:19:42.510 --> 00:19:46.350
+be able to like understand that what we are supposed to do a
+
+00:19:46.350 --> 00:19:50.690
+prediction in the next one so this is how it is technically
+
+00:19:50.690 --> 00:19:53.570
+going to work and again it's it's nothing like a fancy over
+
+00:19:53.570 --> 00:19:57.730
+here it's just like uh it is uh trying to use the entire
+
+00:19:57.730 --> 00:20:01.830
+decoder architecture that we have already discussed now good
+
+00:20:01.830 --> 00:20:04.410
+what is the strength for this one so good for open ended
+
+00:20:04.410 --> 00:20:07.030
+generation so wherever you have to do maybe a text
+
+00:20:07.030 --> 00:20:10.050
+generation or maybe a dialogue or a story writing so this
+
+00:20:10.050 --> 00:20:12.790
+kind of a system is basically good for it efficient
+
+00:20:12.790 --> 00:20:15.590
+inferences since there is no encoder so inferencing means
+
+00:20:15.590 --> 00:20:17.690
+what so inferencing you must have heard about the
+
+00:20:17.690 --> 00:20:19.950
+inferencing influencing with generating a data right giving
+
+00:20:19.950 --> 00:20:22.810
+you output that is called as inferencing so obviously if i
+
+00:20:22.810 --> 00:20:25.170
+will be having an encoder and decoder so inferencing will be
+
+00:20:25.170 --> 00:20:27.530
+delayed but yeah i just have a decoder architecture over
+
+00:20:27.530 --> 00:20:30.270
+here so inferencing really is going to be generally fast
+
+00:20:30.270 --> 00:20:33.270
+since there is no encoder it requires less computation then
+
+00:20:33.270 --> 00:20:36.550
+encoder decoder model for a text generation and pre-trained
+
+00:20:36.550 --> 00:20:39.250
+on large scale corpora so obviously like a chat gpt if i'll
+
+00:20:39.250 --> 00:20:42.030
+talk about or if i'll talk about a lama if i'll talk about a
+
+00:20:42.030 --> 00:20:46.250
+falcon or any series of this obviously it is uh like a
+
+00:20:46.250 --> 00:20:49.890
+trained on a very very huge amount of data now what is the
+
+00:20:49.890 --> 00:20:53.830
+weakness of stat gpt kind of a model so struggle with a bi
+
+00:20:53.830 --> 00:20:57.950
+-directional understanding right so lack the strong
+
+00:20:57.950 --> 00:20:58.250
+understanding and двух hairstyle like we can easily easily
+
+00:20:58.250 --> 00:20:58.810
+read a continual communication understanding of the
+
+00:20:58.810 --> 00:21:01.470
+sentences structure since it doesn't process the fully text
+
+00:21:01.470 --> 00:21:04.590
+at once means chunk by chunk or like token by token it is
+
+00:21:04.590 --> 00:21:06.950
+trying to process in an autoregressive manner. So wherever
+
+00:21:06.950 --> 00:21:09.110
+this bi-directional comes into a picture, so obviously it
+
+00:21:09.110 --> 00:21:12.110
+gets stuck. Less efficient for a document summarization,
+
+00:21:12.290 --> 00:21:15.810
+which is not now. Obviously it was a case with respect to
+
+00:21:15.810 --> 00:21:19.310
+GPT 3.5, but now it's not right because now people have
+
+00:21:19.310 --> 00:21:21.470
+changed the architecture and people have like a even train
+
+00:21:21.470 --> 00:21:23.630
+with a huge amount of data. So people are increasing the
+
+00:21:23.630 --> 00:21:26.710
+architect. People are changing the architecture in every
+
+00:21:26.710 --> 00:21:29.850
+model. So let's suppose if GPT is going to launch like a 4.5
+
+00:21:29.850 --> 00:21:33.330
+or maybe a 5, obviously you will be able to see that, that
+
+00:21:33.330 --> 00:21:35.990
+it is going to be a pretty much advanced as compared to the
+
+00:21:35.990 --> 00:21:38.650
+previous one. The only reason is obviously we are trying to
+
+00:21:38.650 --> 00:21:41.510
+change the architecture. So let's efficient for document
+
+00:21:41.510 --> 00:21:44.890
+summarization, which was, if you are going to check with GPT
+
+00:21:44.890 --> 00:21:48.350
+3.5 or even before, you will be able to find out that it was
+
+00:21:48.350 --> 00:21:50.230
+not very good with the document summarization. It was not
+
+00:21:50.230 --> 00:21:53.870
+very good with a bi-directional conversation and poor for
+
+00:21:53.870 --> 00:21:57.730
+structured output. Just take the example. Of the previous
+
+00:21:57.730 --> 00:21:59.730
+initial one, which has been released two, two and a half
+
+00:21:59.730 --> 00:22:02.690
+year back, right now, situation is completely changed, but
+
+00:22:02.690 --> 00:22:05.030
+yeah, we are talking about everything from the beginning
+
+00:22:05.030 --> 00:22:09.670
+now. So best use cases wise, so obviously chatbot, chat GPT,
+
+00:22:09.710 --> 00:22:12.410
+cloud and Lama story or text generation and code generation
+
+00:22:12.410 --> 00:22:15.350
+basically. So this has been used generally for that
+
+00:22:15.350 --> 00:22:18.370
+purposes. And again, I'm talking about the initial version
+
+00:22:18.370 --> 00:22:22.110
+of it now. So decoder only architecture that's completely
+
+00:22:22.110 --> 00:22:24.550
+fine summary wise, we are able to understand that which
+
+00:22:24.550 --> 00:22:28.010
+categories falls under decoder only architecture. Now there
+
+00:22:28.010 --> 00:22:30.150
+is something called as encoder decoder. So some
+
+00:22:30.150 --> 00:22:33.990
+architecture, some of the model will be having encoder plus
+
+00:22:33.990 --> 00:22:38.670
+decoder means this entire architecture as it is, right? So
+
+00:22:38.670 --> 00:22:42.010
+layers layer by layer again, there is NX, right? So we
+
+00:22:42.010 --> 00:22:44.450
+talked about what is the meaning of NX basically. So again,
+
+00:22:44.490 --> 00:22:48.550
+there will be a stacking of this entire encoder decoder
+
+00:22:48.550 --> 00:22:52.510
+encode encode transformer one on top of other one, which has
+
+00:22:52.510 --> 00:22:55.510
+been represented clearly over here, even in this particular
+
+00:22:55.510 --> 00:22:58.510
+picture. It's just a stacking. So again, if it is just a
+
+00:22:58.510 --> 00:23:01.390
+decoder only stack of decoder, if it is an encoder only
+
+00:23:01.390 --> 00:23:04.150
+stack of encoder, if it is an encoder decoder, then a stack
+
+00:23:04.150 --> 00:23:08.950
+of the transformer as simple as that. Now so here encoder
+
+00:23:08.950 --> 00:23:11.590
+decoder architecture. Now what are the model which falls
+
+00:23:11.590 --> 00:23:14.890
+under this one? So there is a model called as T5 text to
+
+00:23:14.890 --> 00:23:17.170
+text transfer transformer. There is something called as
+
+00:23:17.170 --> 00:23:19.570
+BART, there is something called as MT5, there is something
+
+00:23:19.570 --> 00:23:23.130
+called as NLB, there is something called as a whisper model,
+
+00:23:23.350 --> 00:23:25.630
+again, whisper model is one of the very famous series. These
+
+00:23:25.630 --> 00:23:28.210
+that you will be able to find out over the internet for a
+
+00:23:28.210 --> 00:23:33.190
+speech to text. So these are the model. So here, obviously,
+
+00:23:33.270 --> 00:23:35.850
+if it is an encoder decoder or sequence to sequence, sec to
+
+00:23:35.850 --> 00:23:38.130
+sec model, so obviously, it will be having encoder decoder
+
+00:23:38.130 --> 00:23:41.190
+both encoder process the input as a whole, it's going to be
+
+00:23:41.190 --> 00:23:43.670
+bi-directional and decoder generates the output based on the
+
+00:23:43.670 --> 00:23:48.210
+encoder representation. Now, so how it works, basically, so
+
+00:23:48.210 --> 00:23:51.250
+what encoder does process the entire input at once use self
+
+00:23:51.250 --> 00:23:53.590
+attention bi-directional to understand the context and what
+
+00:23:53.590 --> 00:23:56.290
+decoder does, so take the encoder representation. As I input
+
+00:23:56.290 --> 00:23:58.750
+use across and does not with the self attention at the
+
+00:23:58.750 --> 00:24:01.390
+output and produce the output token by token auto
+
+00:24:01.390 --> 00:24:05.250
+aggressively. This is what we have understood even from the
+
+00:24:05.250 --> 00:24:07.670
+previous classes. Now what is the strength so bi-directional
+
+00:24:07.670 --> 00:24:11.010
+understanding and then gate for the structure output handle
+
+00:24:11.010 --> 00:24:14.770
+a long inputs better. Weakness is slow inference. Obviously,
+
+00:24:14.810 --> 00:24:17.610
+there is an encoder decoder layer and more complex in terms
+
+00:24:17.610 --> 00:24:19.430
+of training because number of parameters are going to
+
+00:24:19.430 --> 00:24:23.230
+increase and there is a multiple layers now so use cases
+
+00:24:23.230 --> 00:24:26.370
+wise so where we can try to use it. Machine translation. So
+
+00:24:26.370 --> 00:24:28.790
+wherever we are trying to do a language translation from one
+
+00:24:28.790 --> 00:24:31.290
+language or the language may be like a English to Spanish
+
+00:24:31.290 --> 00:24:35.290
+English to Hindi Hindi to Tamil Telugu Malayalam Punjabi all
+
+00:24:35.290 --> 00:24:39.190
+such kind of like a things over there obviously we are going
+
+00:24:39.190 --> 00:24:42.490
+to use this encoder decoder because it is going to be bi
+
+00:24:42.490 --> 00:24:44.750
+-directional right so in both the because whenever we are
+
+00:24:44.750 --> 00:24:46.770
+talking about the machine translation obviously we have to
+
+00:24:46.770 --> 00:24:49.590
+understand both the way it's not like because unless and
+
+00:24:49.590 --> 00:24:51.830
+until I'm not going to understand both the way I'll not be
+
+00:24:51.830 --> 00:24:54.950
+able to generate a proper output. I'm not saying that. I
+
+00:24:54.950 --> 00:24:57.510
+will not at all able to generate but yeah, not a proper
+
+00:24:57.510 --> 00:24:59.870
+output. I will be able to generate so far a machine
+
+00:24:59.870 --> 00:25:02.190
+translation. So for example, Google translate and then it
+
+00:25:02.190 --> 00:25:04.710
+will be text summarization. We can try to use question
+
+00:25:04.710 --> 00:25:08.390
+answering. We are going to use and text to text NLP task. We
+
+00:25:08.390 --> 00:25:12.350
+can try to use this series of the model which consists of
+
+00:25:12.350 --> 00:25:15.410
+encoder decoder both means a whole transformer. I would say
+
+00:25:15.410 --> 00:25:18.690
+right the transform architecture that we have discussed and
+
+00:25:18.690 --> 00:25:21.570
+now if you are going to dig deeper that what is the total
+
+00:25:21.570 --> 00:25:23.910
+number of layers inside a bot? What is the total number of
+
+00:25:23.910 --> 00:25:26.370
+layers? Inside t5? What is the total number of layers inside
+
+00:25:26.370 --> 00:25:29.810
+you will to you will be able to get your answer the way that
+
+00:25:29.810 --> 00:25:32.810
+if someone is going to ask you that what is the total number
+
+00:25:32.810 --> 00:25:36.490
+of layers inside a GPT-3 you will be able to answer right?
+
+00:25:37.050 --> 00:25:40.310
+So just a stacking of the layer that we are trying to do and
+
+00:25:40.310 --> 00:25:45.610
+with the base architecture that we have so now so here there
+
+00:25:45.610 --> 00:25:47.550
+is a summary that you will be able to find out in a
+
+00:25:47.550 --> 00:25:49.810
+beautiful way. Same somebody like same thing that I have
+
+00:25:49.810 --> 00:25:52.490
+discussed so I've just like a put it inside the table. So
+
+00:25:52.490 --> 00:25:54.950
+that it will be easy. It will be easy for all of us to you
+
+00:25:54.950 --> 00:25:58.550
+know go through it. So decoder only architecture and encoder
+
+00:25:58.550 --> 00:26:01.470
+only architecture. I have given you the model example name
+
+00:26:01.470 --> 00:26:05.450
+as well and plus so for what purposes encoder and decoder
+
+00:26:05.450 --> 00:26:08.890
+only architecture will be used is it making sense guys. So
+
+00:26:08.890 --> 00:26:11.690
+for what task you can try to use decoder only architecture
+
+00:26:11.690 --> 00:26:15.350
+and for what task can try to use maybe a in only
+
+00:26:15.350 --> 00:26:18.230
+architecture. So if you are going to create your own model
+
+00:26:18.230 --> 00:26:22.310
+from the various strategy is also possible right? Just call
+
+00:26:22.310 --> 00:26:24.790
+the libraries. 10 seconds. So flow libraries or maybe a
+
+00:26:24.790 --> 00:26:28.330
+pytos libraries layer by layer stack it build it pass your
+
+00:26:28.330 --> 00:26:32.070
+own data. So it's not like you will not be able to build
+
+00:26:32.070 --> 00:26:35.510
+your own model. You will not be able to build your own layer
+
+00:26:35.510 --> 00:26:38.790
+and I'm going to even show you that part that we are we are
+
+00:26:38.790 --> 00:26:42.330
+going to build a mini chat GPT basically right? So that kind
+
+00:26:42.330 --> 00:26:45.310
+of things we are going to build inside a class itself. We
+
+00:26:45.310 --> 00:26:49.370
+can't build a chat GPT 3.5 or 4 like a things because the
+
+00:26:49.370 --> 00:26:52.670
+only limitation that we have is a compute power right and
+
+00:26:52.670 --> 00:26:54.870
+plus data. So we don't have a data and we don't have that
+
+00:26:54.870 --> 00:26:58.110
+kind of a compute power. But yeah with inside our local
+
+00:26:58.110 --> 00:27:01.230
+system. Obviously I can try to show you that how to build a
+
+00:27:01.230 --> 00:27:05.690
+mini chat GPT again. So just try to like extend it and you
+
+00:27:05.690 --> 00:27:09.170
+will be able to get a chat GPT. So that is the only
+
+00:27:09.170 --> 00:27:15.230
+limitation and again obviously I'm not saying that chat GPT
+
+00:27:15.230 --> 00:27:18.970
+or open AI or maybe other organizations are directly trying
+
+00:27:18.970 --> 00:27:22.450
+to use this entire encoder decoder architecture as it is.
+
+00:27:22.450 --> 00:27:26.010
+No, this is the base one right there scientists their
+
+00:27:26.010 --> 00:27:29.690
+researcher are trying to add a lots and lots of layer and
+
+00:27:29.690 --> 00:27:31.770
+that's the reason you will be able to see that open AI is
+
+00:27:31.770 --> 00:27:36.950
+not even releasing it's a you know, like a internal things.
+
+00:27:37.070 --> 00:27:39.090
+They just say that okay fine. This is the number of token
+
+00:27:39.090 --> 00:27:41.790
+that it will be able to take that's it right they're not
+
+00:27:41.790 --> 00:27:43.790
+even trying to make their open like a model open source
+
+00:27:43.790 --> 00:27:45.790
+because they have done a lot of engineering inside
+
+00:27:45.790 --> 00:27:50.370
+internally right and yeah, I don't think that they are going
+
+00:27:50.370 --> 00:27:53.550
+to release it like a Facebook. Or something. So for llama
+
+00:27:53.550 --> 00:27:56.650
+you can go you can try to study an entire research paper in
+
+00:27:56.650 --> 00:27:59.490
+for deep seek you can go and you can try to study but for
+
+00:27:59.490 --> 00:28:04.230
+open AI not yet. So you can just get to know that how many
+
+00:28:04.230 --> 00:28:07.390
+layers are there that's it and whether it's encoder decoder
+
+00:28:07.390 --> 00:28:10.410
+or decoder only or encoder only architecture apart from that
+
+00:28:10.410 --> 00:28:13.970
+what they have done internally what kind of a re-engineering
+
+00:28:13.970 --> 00:28:17.670
+they have done internally you can't get to know about it
+
+00:28:17.670 --> 00:28:24.930
+basically. Yeah. Okay. Okay. So I want to know how to build
+
+00:28:24.930 --> 00:28:28.470
+a URI it's a long process obviously it's a complete product
+
+00:28:28.470 --> 00:28:31.870
+in itself. So obviously like a lot of things a lot of
+
+00:28:31.870 --> 00:28:37.990
+engineering a lot of work right. So yeah, it's a complete
+
+00:28:37.990 --> 00:28:42.790
+product in itself. So fine hope this is this is clear
+
+00:28:42.790 --> 00:28:43.950
+everyone.
+
+00:28:57.380 --> 00:29:03.200
+So please bring me a chat if till this point it's clear. So
+
+00:29:03.200 --> 00:29:05.740
+here you will be able to find out another summary table. So
+
+00:29:05.740 --> 00:29:09.060
+where I have mentioned that for what use cases. What you are
+
+00:29:09.060 --> 00:29:12.400
+supposed to use. So again, this is a third time which is
+
+00:29:12.400 --> 00:29:16.080
+where I'm mentioning same thing like again but yeah in terms
+
+00:29:16.080 --> 00:29:18.480
+of a table I'm trying to represent it. So if you're trying
+
+00:29:18.480 --> 00:29:21.060
+to build a chat bot if you're trying to like do some sort of
+
+00:29:21.060 --> 00:29:24.260
+a creative text one text engineering or generation in that
+
+00:29:24.260 --> 00:29:26.620
+case go ahead with the decoder only architecture if you are
+
+00:29:26.620 --> 00:29:29.360
+trying to build a summarization kind of a task if you're
+
+00:29:29.360 --> 00:29:32.080
+trying to solve so in that case encoder decoder machine
+
+00:29:32.080 --> 00:29:34.780
+translation go with encoder decoder speech to text go with
+
+00:29:34.780 --> 00:29:38.100
+encoder decoder. So let's suppose tomorrow you are going to
+
+00:29:38.100 --> 00:29:41.200
+join a class. A company and obviously many companies are
+
+00:29:41.200 --> 00:29:43.840
+trying to build their own models right especially if I'll
+
+00:29:43.840 --> 00:29:46.220
+talk about a financial companies nowadays everyone is trying
+
+00:29:46.220 --> 00:29:50.420
+to build it right even we are trying to do a lot a lot of
+
+00:29:50.420 --> 00:29:56.180
+stuff around this one. So like the model that you are going
+
+00:29:56.180 --> 00:29:59.080
+to build the architecture that you are going to choose it's
+
+00:29:59.080 --> 00:30:01.880
+it's not like it's a straightforward architecture know you
+
+00:30:01.880 --> 00:30:06.000
+are going to choose based on the design or based on the use
+
+00:30:06.000 --> 00:30:09.020
+cases that you are trying to solve. So everywhere you can't
+
+00:30:09.020 --> 00:30:13.600
+just go and like apply a thumb rule over there. URI project
+
+00:30:13.600 --> 00:30:17.560
+can you tell in detail not now I think now it's not a
+
+00:30:17.560 --> 00:30:22.080
+correct time to talk about that because it's not just one
+
+00:30:22.080 --> 00:30:24.660
+thing I would say even if you are going to consume the API
+
+00:30:24.660 --> 00:30:28.180
+right it's it's not like that easy because the kind of a
+
+00:30:28.180 --> 00:30:30.500
+structure output that you are able to see the kind of a
+
+00:30:30.500 --> 00:30:34.580
+memories that we are building in a back end for like this
+
+00:30:34.580 --> 00:30:39.260
+entire model I would say. Right the kind of a real time
+
+00:30:39.260 --> 00:30:41.860
+search that we are able to hit with the help of obviously
+
+00:30:41.860 --> 00:30:44.380
+model but yeah we are trying to show you the real times as
+
+00:30:44.380 --> 00:30:50.480
+for example if I'm going to ask like and give me a football
+
+00:30:52.590 --> 00:30:54.090
+news
+
+00:30:55.850 --> 00:30:59.350
+I never watch football but yeah let's let's see how it goes
+
+00:30:59.350 --> 00:31:01.590
+okay
+
+00:31:03.190 --> 00:31:07.950
+so it is giving me like all the leaks and everything and it
+
+00:31:07.950 --> 00:31:11.490
+is giving me even a source maybe you can try and tie out
+
+00:31:11.490 --> 00:31:13.730
+with your own like a kind of a creative course. Questions
+
+00:31:13.730 --> 00:31:18.410
+that's completely fine but yeah URI when time will come so
+
+00:31:18.410 --> 00:31:23.510
+maybe I'll try hard from my side but I don't think that now
+
+00:31:23.510 --> 00:31:29.090
+is the time correct time yeah okay so code
+
+00:31:31.010 --> 00:31:33.410
+generation so encoder decoder only architecture you can try
+
+00:31:33.410 --> 00:31:36.630
+to use and question answering so encoder and decoder now
+
+00:31:36.630 --> 00:31:39.530
+that is the reason so if you will check URI so we have given
+
+00:31:39.530 --> 00:31:42.330
+you a multiple model access not just a one single model
+
+00:31:42.330 --> 00:31:45.790
+access because every model is not designed for the for every
+
+00:31:45.790 --> 00:31:48.590
+task right this is what I'm trying to show you with the help
+
+00:31:48.590 --> 00:31:52.590
+of this entire table that it's not a thumb rule that you go
+
+00:31:52.590 --> 00:31:54.790
+and say that okay fine I know the transformer architecture
+
+00:31:54.790 --> 00:31:57.550
+and then I'll be able to build everything I'll be able to
+
+00:31:57.550 --> 00:32:01.250
+solve all kind of a task no not at all that is not possible
+
+00:32:01.250 --> 00:32:04.990
+right practically and that is a reason you should know and
+
+00:32:04.990 --> 00:32:06.430
+that is a reason so I have prepared this entire
+
+00:32:06.430 --> 00:32:11.530
+documentation that what kind of a task exists in NLP in a
+
+00:32:11.530 --> 00:32:14.170
+world of NLP natural language processing you should be aware
+
+00:32:14.170 --> 00:32:17.150
+about it. So these are. One of the task summarization
+
+00:32:17.150 --> 00:32:20.170
+machine translation speech to text code generation question
+
+00:32:20.170 --> 00:32:23.170
+answering so when you are trying to write something in your
+
+00:32:23.170 --> 00:32:27.210
+resume you should not just say that I have like a done a
+
+00:32:27.210 --> 00:32:29.870
+fine tuning I'm like you have done fine tuning that's
+
+00:32:29.870 --> 00:32:32.530
+completely fine you have maybe like implemented RAG over
+
+00:32:32.530 --> 00:32:35.730
+there you have maybe build a multiple agents over there but
+
+00:32:35.730 --> 00:32:39.610
+for what purposes right what was a reason behind selection
+
+00:32:39.610 --> 00:32:42.750
+of that model or let's suppose if you have built a model
+
+00:32:42.750 --> 00:32:45.570
+then what was the ideation behind it what was the task that
+
+00:32:45.570 --> 00:32:47.670
+you were trying to solve so you are supposed to be very much
+
+00:32:47.670 --> 00:32:50.910
+specific around the task otherwise your interviewer will be
+
+00:32:50.910 --> 00:32:54.490
+able to like catch you very soon that you are like a trying
+
+00:32:54.490 --> 00:32:56.730
+to lie you you're trying to talk about something which you
+
+00:32:56.730 --> 00:33:01.230
+have never done so based on the task you should choose those
+
+00:33:01.230 --> 00:33:03.610
+things and that's a whole idea that's a whole logic behind
+
+00:33:03.610 --> 00:33:06.970
+giving you like a multi model access over here and soon we
+
+00:33:06.970 --> 00:33:10.010
+are even as of now you can just click and it will be able to
+
+00:33:10.010 --> 00:33:13.530
+select the model but soon we are going to like a like a
+
+00:33:13.530 --> 00:33:17.070
+configure it in such a way. Okay that you just have to like
+
+00:33:17.070 --> 00:33:20.650
+a do a question answer and it will be able to like select a
+
+00:33:20.650 --> 00:33:23.870
+model automatically in a back end so you are not even go and
+
+00:33:23.870 --> 00:33:26.530
+select even now you are not supposed to do this do that you
+
+00:33:26.530 --> 00:33:29.430
+just have to click and then it will be able to select but we
+
+00:33:29.430 --> 00:33:31.710
+are trying to make it more efficient and plus we are like
+
+00:33:31.710 --> 00:33:35.590
+even trying to add upload option file upload option so where
+
+00:33:35.590 --> 00:33:37.930
+you can upload your image your documents whatever document
+
+00:33:37.930 --> 00:33:40.690
+that you have and you will be able to play with those
+
+00:33:40.690 --> 00:33:44.810
+documentation plus it will be able to even like a. Remember
+
+00:33:44.810 --> 00:33:48.470
+so even now if I'm going to ask some question right so I
+
+00:33:48.470 --> 00:33:53.690
+think it is like a let's suppose if I'm going to like ask
+
+00:33:53.690 --> 00:33:58.530
+this one so it is going to like it knows me I believe like
+
+00:33:58.530 --> 00:33:59.790
+okay
+
+00:34:03.180 --> 00:34:07.320
+so yeah it's giving me a reasoning and sometime you will be
+
+00:34:07.320 --> 00:34:10.300
+able to find out that with some of the answers it is even
+
+00:34:10.300 --> 00:34:13.480
+like remembering you it is trying to give you answer but we
+
+00:34:13.480 --> 00:34:16.280
+are trying to build a best of best memory around this one
+
+00:34:16.280 --> 00:34:18.720
+which is a little bit a difficult task. And which is like a.
+
+00:34:19.420 --> 00:34:22.680
+Compute intensive task for us we are just trying to work on
+
+00:34:22.680 --> 00:34:30.200
+that part. So now hybrid approach right so some of the like
+
+00:34:30.200 --> 00:34:33.240
+modern approach they are trying to use a hybrid approach
+
+00:34:33.240 --> 00:34:36.340
+hybrid means encoder decoder so text to text transformer T5
+
+00:34:36.340 --> 00:34:41.140
+so encoder decoder but reformulates all the NLP task as a
+
+00:34:41.140 --> 00:34:43.820
+text to text and then this one so which is decoder only
+
+00:34:43.820 --> 00:34:47.760
+encoder only Gemini use a mix of encoder decoder processing
+
+00:34:47.760 --> 00:34:50.800
+for a different modalities. So Gemini is having again a
+
+00:34:50.800 --> 00:34:53.540
+different different cities where somewhere Gemini is using
+
+00:34:53.540 --> 00:34:57.000
+just like a encoder or somewhere it is just trying to use a
+
+00:34:57.000 --> 00:35:01.100
+decoder only. Now let's specifically talk about the GPT 3.5
+
+00:35:01.100 --> 00:35:04.940
+architecture because after that we don't have much of idea
+
+00:35:04.940 --> 00:35:11.520
+because they have not released much about a GPT model. What
+
+00:35:11.520 --> 00:35:14.520
+about a data privacy if we load the document so data will be
+
+00:35:14.520 --> 00:35:16.900
+with us and once you are going to delete the account which
+
+00:35:16.900 --> 00:35:20.100
+we have already given you the feature over here. So you can
+
+00:35:20.100 --> 00:35:23.040
+try to go to your setting and then you can try to delete
+
+00:35:23.040 --> 00:35:25.100
+your account if you are deleting your account we are wiping
+
+00:35:25.100 --> 00:35:29.060
+out all the data that we are holding from your side. So even
+
+00:35:29.060 --> 00:35:30.880
+your documentation and everything will be wire means
+
+00:35:30.880 --> 00:35:34.320
+deleting account means we are deleting everything like from
+
+00:35:34.320 --> 00:35:38.960
+our side but yeah till the time you are using our system
+
+00:35:38.960 --> 00:35:44.780
+data will be in our system obviously yeah so hope I am able
+
+00:35:44.780 --> 00:35:45.280
+to give you answer
+
+00:35:48.110 --> 00:35:50.770
+for GPT model what are the accuracy parameter I'll come to
+
+00:35:50.770 --> 00:35:52.290
+that don't worry I'll come to that part.
+
+00:35:59.050 --> 00:36:02.730
+Okay now GPT 3 architecture which is nothing but this one
+
+00:36:02.730 --> 00:36:07.350
+GPT 3 which is the extension of this like this architecture
+
+00:36:07.350 --> 00:36:11.810
+or this layer that you are able to see so GPT 3 is an
+
+00:36:11.810 --> 00:36:15.090
+intermediate model between GPT 3 and 4 mostly we are using 4
+
+00:36:15.090 --> 00:36:19.270
+as of now 4 series. So here base model is basically
+
+00:36:19.270 --> 00:36:22.790
+transformer based architecture decoder only so like I said
+
+00:36:22.790 --> 00:36:26.730
+GPT right and we can try to build our own mini GPT so
+
+00:36:26.730 --> 00:36:29.390
+basically the GPT 5 that we are talking about. It's this
+
+00:36:29.390 --> 00:36:32.150
+architecture only decoder side of it only decoder there is
+
+00:36:32.150 --> 00:36:35.390
+no encoder which was available number of parameter is
+
+00:36:35.390 --> 00:36:38.790
+basically 175 billion parameter now what is the meaning of
+
+00:36:38.790 --> 00:36:41.610
+this number of parameter by the way. So I believe we all
+
+00:36:41.610 --> 00:36:45.190
+understands this attention is all you need equation so where
+
+00:36:45.190 --> 00:36:49.510
+we have KQV right so we have basically a weight for KQ and V
+
+00:36:49.510 --> 00:36:53.850
+where we were trying to multiply like this KQV with the
+
+00:36:53.850 --> 00:36:56.030
+weights and we have done the self-attention computation
+
+00:36:56.030 --> 00:37:00.250
+which is technically this particular equation. So that is a
+
+00:37:00.250 --> 00:37:04.030
+parameter plus we have a feed forward layer right a neural
+
+00:37:04.030 --> 00:37:07.410
+network we have so even over there we have a weights so
+
+00:37:07.410 --> 00:37:10.110
+basically that is something called as number of parameter
+
+00:37:10.110 --> 00:37:13.950
+means number of a trainable parameter basically and again
+
+00:37:13.950 --> 00:37:17.230
+the same number of parameter will be used when you are going
+
+00:37:17.230 --> 00:37:20.030
+to do a inferencing inferencing means when you are going to
+
+00:37:20.030 --> 00:37:23.050
+give an input and you will be looking for a output against
+
+00:37:23.050 --> 00:37:25.770
+the entire data set will go through that's my number of the
+
+00:37:25.770 --> 00:37:30.190
+parameter. So number of parameter was basically. 175 billion
+
+00:37:30.190 --> 00:37:33.610
+parameter number of layer wise there was approximately 96
+
+00:37:33.610 --> 00:37:37.630
+total number of layers one on top of another one just like
+
+00:37:37.630 --> 00:37:41.650
+this as you can see right just like this. So even here GPT-3
+
+00:37:41.650 --> 00:37:43.610
+so yeah
+
+00:37:45.760 --> 00:37:50.860
+96 so this is basically representing a 96 layer so stacking
+
+00:37:50.860 --> 00:37:56.000
+one on top of another one just a decoder side of it and
+
+00:37:56.000 --> 00:38:00.860
+hidden dimension is basically 12288 attention heads so
+
+00:38:00.860 --> 00:38:03.900
+basically 96 attention heads means a layer I'm talking about
+
+00:38:03.900 --> 00:38:08.160
+right 96 attention head means 96 number of layers or like
+
+00:38:08.160 --> 00:38:13.540
+this attention head that we had. Now vocabulary size is
+
+00:38:13.540 --> 00:38:18.260
+basically 50000 plus BPE byte pair encoding tokens. So 50000
+
+00:38:18.260 --> 00:38:22.180
+plus byte pair encoding tokens which has been used inside
+
+00:38:22.180 --> 00:38:27.900
+this entire training. Now so you may ask me a question that
+
+00:38:27.900 --> 00:38:30.300
+what is the meaning of this BPE? What is the meaning of this
+
+00:38:30.300 --> 00:38:33.000
+byte pair encoding? So let me give you an explanation about
+
+00:38:33.000 --> 00:38:37.700
+this BPE that how byte pair encoding actually like works.
+
+00:38:38.060 --> 00:38:42.220
+Let me give you one example guys. So I'm going to open up my
+
+00:38:42.220 --> 00:38:47.620
+scribble Inc because this BPE will be used almost everywhere
+
+00:38:47.620 --> 00:38:50.760
+like all the series of this one. So again and again this BPE
+
+00:38:50.760 --> 00:38:54.540
+keyword will come into a picture. So once for all let me
+
+00:38:54.540 --> 00:38:58.680
+give you the answer to hope my screen is visible. So here
+
+00:38:58.680 --> 00:39:03.060
+BPE is nothing but it's like called as byte pair encoding
+
+00:39:03.060 --> 00:39:07.500
+technique again. So it's a technique by which you will be
+
+00:39:07.500 --> 00:39:12.900
+able to like convert your entire input data into its like a
+
+00:39:12.900 --> 00:39:17.140
+representational embeddings. How let's try to understand. So
+
+00:39:17.140 --> 00:39:19.720
+BPE byte
+
+00:39:23.590 --> 00:39:25.530
+pair.
+
+00:39:29.840 --> 00:39:34.240
+So we have basically seen a TF-IDF. We have seen basically a
+
+00:39:34.240 --> 00:39:37.240
+word2vec.com. We have seen a lot of encoding technique and
+
+00:39:37.240 --> 00:39:41.560
+now everything like try to follow its own approach in terms
+
+00:39:41.560 --> 00:39:44.820
+of converting your input data into its numerical
+
+00:39:44.820 --> 00:39:49.680
+representation. Now BPE is again another kind of a encoding
+
+00:39:49.680 --> 00:39:54.080
+technique and when we will try to build our own mini GPT we
+
+00:39:54.080 --> 00:39:56.920
+can try to use exact same technique even over there to
+
+00:39:56.920 --> 00:40:02.000
+convert our token to convert our input data into a chat GPT
+
+00:40:02.000 --> 00:40:04.360
+equivalent data. We just have to call the function and
+
+00:40:04.360 --> 00:40:07.660
+that's it. Function is going to do its work for itself. So
+
+00:40:07.660 --> 00:40:13.140
+here let's suppose we have a word called as low. We have a
+
+00:40:13.140 --> 00:40:19.320
+word called as lower. We have a word called as newest and we
+
+00:40:19.320 --> 00:40:22.740
+have a word called as widest. Let's suppose these are the
+
+00:40:22.740 --> 00:40:26.220
+word that we have. Now what is the objective objective is to
+
+00:40:26.220 --> 00:40:29.920
+convert these data into its numerical representation so that
+
+00:40:29.920 --> 00:40:33.180
+I will be able to pass this data inside my model. Right.
+
+00:40:33.320 --> 00:40:36.060
+That's a whole idea. That's a whole objective. Now what I
+
+00:40:36.060 --> 00:40:40.040
+can do is so I can try to break it down maybe into one one
+
+00:40:40.040 --> 00:40:43.880
+character. So L O W and then end of the line. So this is
+
+00:40:43.880 --> 00:40:49.440
+just the end of line representation. Then L O W E R end of
+
+00:40:49.440 --> 00:40:54.140
+the line or end of the entire word you can say. So end of
+
+00:40:54.140 --> 00:41:00.240
+the word token basically. Then I can try to write N E W E S
+
+00:41:00.240 --> 00:41:06.160
+T and then end of the word. Then I can try to write maybe W
+
+00:41:06.160 --> 00:41:14.640
+I D E S T and then end of the word. Okay. Now what it will
+
+00:41:14.640 --> 00:41:20.540
+do is so it will try to find out the frequency of the data
+
+00:41:20.540 --> 00:41:25.920
+and then it will try to start merging all of this data. That
+
+00:41:25.920 --> 00:41:29.540
+is something called as byte pair basically. Right. So how it
+
+00:41:29.540 --> 00:41:33.840
+will do it. So basically. It will try to find out a pair and
+
+00:41:33.840 --> 00:41:38.180
+its respective count. It will try to find out how. Let's try
+
+00:41:38.180 --> 00:41:41.300
+to understand. So let's suppose if I'm talking about a byte
+
+00:41:41.300 --> 00:41:46.020
+pair L O low right low. So how many times low is appearing
+
+00:41:46.020 --> 00:41:48.880
+in this entire data one times two times. So what does the
+
+00:41:48.880 --> 00:41:51.540
+count basically two times. Then let's suppose I'm
+
+00:41:51.540 --> 00:41:55.060
+considering O W right. So how many times O W is appearing.
+
+00:41:55.220 --> 00:41:58.280
+So O W is appearing here and O W is appearing here. So two
+
+00:41:58.280 --> 00:42:04.040
+times. Then how many times. This W and end of this word is
+
+00:42:04.040 --> 00:42:06.980
+appearing W and end of this word is appearing. So basically
+
+00:42:06.980 --> 00:42:10.880
+it's appearing only one times it seems. And then how many
+
+00:42:10.880 --> 00:42:15.960
+times like again O W. So O W is basically appearing two
+
+00:42:15.960 --> 00:42:21.260
+times. How many times E R. E R is appearing. So E R is
+
+00:42:21.260 --> 00:42:25.520
+appearing basically E R. We don't have any other E R. So E R
+
+00:42:25.520 --> 00:42:29.240
+is appearing only one times. Then how many times basically N
+
+00:42:29.240 --> 00:42:33.200
+E is appearing. So N E is appearing one time. So N E then E
+
+00:42:33.200 --> 00:42:38.500
+W and then in this way. So we will try to find out a count
+
+00:42:38.500 --> 00:42:41.920
+of each and everything right. So count of everything that
+
+00:42:41.920 --> 00:42:46.580
+how many times all of these data set is appearing at any
+
+00:42:46.580 --> 00:42:50.680
+point of a time. Now so once you are going to build this
+
+00:42:50.680 --> 00:42:53.480
+entire table for all the combination all the combination
+
+00:42:53.480 --> 00:42:56.120
+means literally for all the combination you are going to
+
+00:42:56.120 --> 00:42:59.940
+build the entire table then you will. You will try to find
+
+00:42:59.940 --> 00:43:04.580
+out that what is our most occurring like a pairs that we
+
+00:43:04.580 --> 00:43:08.020
+have inside the data. So you will be able to find out that
+
+00:43:08.020 --> 00:43:10.820
+most occurring pair in this data especially right. If I'll
+
+00:43:10.820 --> 00:43:13.740
+talk about this particular data. So we have basically
+
+00:43:13.740 --> 00:43:17.940
+something called as E S and something called as S T. It's
+
+00:43:17.940 --> 00:43:21.600
+appearing a lot of times right. So E S and S T is basically
+
+00:43:21.600 --> 00:43:25.780
+let's suppose most appearing I'm assuming that E S and S T
+
+00:43:25.780 --> 00:43:29.800
+is basically a most appearing data over here. So means most
+
+00:43:29.800 --> 00:43:34.940
+like a appearing pair over here. So what I can do is I can
+
+00:43:34.940 --> 00:43:39.640
+try to redefine this entire data maybe into this way that
+
+00:43:40.880 --> 00:43:53.440
+like a L O W end of the data L O W E R end of the word let's
+
+00:43:53.440 --> 00:44:05.080
+suppose. Then N E. E. W E S together and then T because E S
+
+00:44:05.080 --> 00:44:08.720
+let's suppose it's appearing most of the time right and then
+
+00:44:08.720 --> 00:44:11.340
+let's suppose S T is appearing most of the time. So E S and
+
+00:44:11.340 --> 00:44:13.880
+S T byte pair. So I have created a pair instead of like a
+
+00:44:13.880 --> 00:44:17.840
+individual entity. So I've just created the pair over here W
+
+00:44:17.840 --> 00:44:23.320
+I D and then E S is appearing and then S T is appearing most
+
+00:44:23.320 --> 00:44:27.360
+frequently. So I'll try to create a pair over here. So I'm
+
+00:44:27.360 --> 00:44:28.160
+just trying to create a pair over here. So I'll try to
+
+00:44:28.160 --> 00:44:30.920
+create a pair as you can see out of the most frequently
+
+00:44:30.920 --> 00:44:35.540
+occurring data as simple as that in this particular place
+
+00:44:35.540 --> 00:44:40.140
+now. So I'll keep on doing it maybe like next merger which
+
+00:44:40.140 --> 00:44:43.300
+I'm going to do it for L O. So I'm going to merge L O I'll
+
+00:44:43.300 --> 00:44:47.700
+try to make it as a L O as a single and then W and then W
+
+00:44:47.700 --> 00:44:53.600
+I'll keep on doing this process as like a much as possible
+
+00:44:53.600 --> 00:44:58.240
+and then so that means I'm just trying to. It's like a merge
+
+00:44:58.240 --> 00:45:03.000
+basically all of these words all together and this is
+
+00:45:03.000 --> 00:45:05.620
+basically called as when I'm trying to call a merger over
+
+00:45:05.620 --> 00:45:09.580
+here right for L O W or L O or E S which is our most
+
+00:45:09.580 --> 00:45:15.600
+frequent one. Basically it's called as a byte pair making
+
+00:45:15.600 --> 00:45:20.060
+sense guys yeah. So why this white pair we are trying to do
+
+00:45:20.060 --> 00:45:24.880
+so that it will try to reduce a rare word problem right.
+
+00:45:25.620 --> 00:45:29.120
+Whatever word that is. Or whatever combination whatever pair
+
+00:45:29.120 --> 00:45:33.120
+which is occurring most of the time. So it will try to bring
+
+00:45:33.120 --> 00:45:39.140
+it together simple and it will always try to help me out to
+
+00:45:39.140 --> 00:45:43.740
+handle out of vocabulary word. So a word which is not a part
+
+00:45:43.740 --> 00:45:46.780
+of vocabulary but a word which is frequently occurring
+
+00:45:46.780 --> 00:45:50.200
+inside my data. It will help me out with that and it will
+
+00:45:50.200 --> 00:45:55.060
+always try to improve the efficiency of this entire corpora
+
+00:45:55.060 --> 00:45:58.200
+that we are trying to create. By breaking a word into a
+
+00:45:58.200 --> 00:46:03.700
+frequent sub word unit making sense yes.
+
+00:46:06.950 --> 00:46:11.010
+So how this byte pair encoding works and then I will try to
+
+00:46:11.010 --> 00:46:13.810
+use some of the technique I'll try to pass now this data
+
+00:46:13.810 --> 00:46:17.830
+right this pair this word this tokens I'll try to pass and
+
+00:46:17.830 --> 00:46:22.150
+then I'll try to find out its numerical embeddings. So
+
+00:46:22.150 --> 00:46:25.150
+before generating a numerical embeddings what we do is we
+
+00:46:25.150 --> 00:46:27.970
+try to create a byte pair. So this is something called as
+
+00:46:27.970 --> 00:46:30.850
+BPE. And this is something which has been mentioned that
+
+00:46:30.850 --> 00:46:35.010
+vocabulary size for this one was 50,000 approximately plus
+
+00:46:35.010 --> 00:46:39.310
+BPE tokens means a pair of word that we have given for like
+
+00:46:39.310 --> 00:46:44.130
+this chat GPT 3.5 context length is basically 4k token. So
+
+00:46:44.130 --> 00:46:48.150
+at a time it will be able to consume 4k token extended to
+
+00:46:48.150 --> 00:46:52.410
+16k token for GPT 3.5 turbo. Now key component wise
+
+00:46:52.410 --> 00:46:55.190
+tokenization. So I think we all know what is the meaning of
+
+00:46:55.190 --> 00:46:57.970
+tokenization and how it has happened. So basically byte pair
+
+00:46:57.970 --> 00:47:02.030
+encoding. We have used so which will try to reduce the rare
+
+00:47:02.030 --> 00:47:05.150
+word problem over here and eventually I'll try to create
+
+00:47:05.150 --> 00:47:07.810
+like a pairs of all the tokens and then I'll try to generate
+
+00:47:07.810 --> 00:47:12.290
+the numerical representation input embeddings convert token
+
+00:47:12.290 --> 00:47:15.190
+into a dense vector. I think this is what it does by the way
+
+00:47:15.190 --> 00:47:23.470
+positional encoding right. So here inside this like a chat
+
+00:47:23.470 --> 00:47:28.130
+GPT. So chat GPT is basically using rotational. Rotational.
+
+00:47:28.130 --> 00:47:31.110
+Rotatory positional encoding, but here in this research
+
+00:47:31.110 --> 00:47:35.170
+paper, you will be able to find out a formula just for a
+
+00:47:35.170 --> 00:47:40.310
+positional encoding here. So here you will be able to find
+
+00:47:40.310 --> 00:47:43.110
+out this particular formula for a positional encoding as per
+
+00:47:43.110 --> 00:47:46.090
+the research paper. Like I said that these people like
+
+00:47:46.090 --> 00:47:48.430
+people who are working on this LLM. So they are obviously
+
+00:47:48.430 --> 00:47:50.870
+trying to do a engineering. It's not like they're trying to
+
+00:47:50.870 --> 00:47:54.230
+use a model straight forward. And again, you can even try to
+
+00:47:54.230 --> 00:47:57.010
+do a, this is what as a researcher, this is what as an AI
+
+00:47:57.010 --> 00:48:01.510
+researcher. People does. So they, they like do a lot of
+
+00:48:01.510 --> 00:48:03.630
+experimentation. They try to derive a different kind of a
+
+00:48:03.630 --> 00:48:07.010
+mathematical formula for that one. So now what is the
+
+00:48:07.010 --> 00:48:10.370
+positional encoding by the way? So as we all know that
+
+00:48:10.370 --> 00:48:14.930
+whenever we are going to get an input, right, whenever we
+
+00:48:14.930 --> 00:48:17.830
+are going to get a data, maybe on this side or maybe on this
+
+00:48:17.830 --> 00:48:22.950
+side. So here we are going to use a BPE. So for 3.5,
+
+00:48:23.090 --> 00:48:26.290
+basically if I'll talk about just this architecture, so as
+
+00:48:26.290 --> 00:48:29.090
+per this architecture, straightforward. We are trying to
+
+00:48:29.090 --> 00:48:31.750
+find out the embeddings, right? Any technique we can try to
+
+00:48:31.750 --> 00:48:34.130
+use, we can try to find out the embeddings, but here, so it
+
+00:48:34.130 --> 00:48:38.190
+was using a BPE plus it was trying to attach this encoding
+
+00:48:38.190 --> 00:48:41.370
+one numerical value of this one with respect to the
+
+00:48:41.370 --> 00:48:45.450
+positional encoding as per this one. But yeah, as per 3.5,
+
+00:48:45.550 --> 00:48:48.630
+basically they were using a rotatory positional encoding. So
+
+00:48:48.630 --> 00:48:51.650
+now how this positional encoding actually works, let's try
+
+00:48:51.650 --> 00:48:54.410
+to understand mathematically. So how this positional
+
+00:48:54.410 --> 00:48:58.010
+encoding calculation is going to happen now. Now as per the
+
+00:48:58.010 --> 00:49:02.450
+research paper, what formula says? So basically formula says
+
+00:49:02.450 --> 00:49:06.870
+that for even position, these are, this is the formula. This
+
+00:49:06.870 --> 00:49:10.330
+is for even position 2i and this is for the odd position. So
+
+00:49:10.330 --> 00:49:12.170
+let's suppose I have some data.
+
+00:49:15.610 --> 00:49:20.710
+Obviously I will be having like a 0, 1, 2 and so on kind of
+
+00:49:20.710 --> 00:49:23.650
+a position. So even odd, even odd, even odd. So for
+
+00:49:23.650 --> 00:49:28.830
+positional encoding for like a. Any parts of a speech at
+
+00:49:28.830 --> 00:49:35.670
+even position is nothing, but it's a sign of POS divided by
+
+00:49:35.670 --> 00:49:42.510
+a 10,000 and then 2i
+
+00:49:45.070 --> 00:49:47.510
+by D models and
+
+00:49:52.060 --> 00:49:55.140
+then a positional encoding is
+
+00:50:00.510 --> 00:50:06.800
+a cos, hope we all remembers what is a cos, what is a sign
+
+00:50:06.800 --> 00:50:12.760
+from our childhood memory. 2i.
+
+00:50:15.220 --> 00:50:19.640
+So this is basically a positional encoding formula for our
+
+00:50:19.640 --> 00:50:22.200
+data, which is available at even position and which is
+
+00:50:22.200 --> 00:50:25.040
+available at a odd position means whenever we are trying to
+
+00:50:25.040 --> 00:50:29.080
+generate a vector, basically a numerical values for any kind
+
+00:50:29.080 --> 00:50:31.760
+of a data. So obviously we try to attach a positional
+
+00:50:31.760 --> 00:50:35.180
+encoding as well. What are the reasons? So I believe we all
+
+00:50:35.180 --> 00:50:38.400
+have discussed about it. That reason is very simple. It is
+
+00:50:38.400 --> 00:50:40.340
+supposed to understand the grammar. It is supposed to
+
+00:50:40.340 --> 00:50:44.020
+understand. Uh, not just like a. What comes after what it is
+
+00:50:44.020 --> 00:50:47.400
+supposed to understand previous, even after grammars,
+
+00:50:47.400 --> 00:50:50.300
+punctuation, each and everything. So that's the reason like
+
+00:50:50.300 --> 00:50:53.920
+a positional encoding plays a very, very important role now
+
+00:50:53.920 --> 00:50:58.860
+here. So how I will be able to like, uh, uh, calculate it
+
+00:50:58.860 --> 00:51:03.180
+basically with respect to the sample data. So let me show
+
+00:51:03.180 --> 00:51:06.000
+you that part. But before that, what are these terms? So
+
+00:51:06.000 --> 00:51:10.360
+what is this POS by the way? So POS is nothing but position.
+
+00:51:13.100 --> 00:51:16.700
+Position. Position. Position. Position.
+
+00:51:20.640 --> 00:51:22.580
+And again, this POS is meant to find the index in a certain
+
+00:51:22.580 --> 00:51:29.780
+Ditameter. I mean, let me take a look again. See how
+
+00:51:29.780 --> 00:51:30.120
+much I am.
+
+00:51:36.400 --> 00:51:41.300
+Right. word so somewhere some of the model so we'll try to
+
+00:51:41.300 --> 00:51:44.660
+consider not one word is equal to one token basically one
+
+00:51:44.660 --> 00:51:49.260
+character or maybe one byte pair bpe is equals to one token
+
+00:51:49.260 --> 00:51:52.640
+i'm assuming that one word is equals to one token that's my
+
+00:51:52.640 --> 00:51:56.620
+assumption again that depends upon me it's a decision that i
+
+00:51:56.620 --> 00:51:59.960
+have to take all the time so here pos is what pos is
+
+00:51:59.960 --> 00:52:03.240
+representing position of the token in a particular sequence
+
+00:52:03.240 --> 00:52:09.160
+and then i is nothing but it's a dimension index dimension
+
+00:52:12.000 --> 00:52:16.540
+index for example it's a four dimension so basically like
+
+00:52:16.540 --> 00:52:21.920
+one two three four we have so even or maybe odd that's the
+
+00:52:21.920 --> 00:52:23.700
+reason so we have a different different formula for a
+
+00:52:23.700 --> 00:52:28.240
+positional encoding for even and odd and what is this d by
+
+00:52:28.240 --> 00:52:31.220
+the way that we are using so 2i by d so basically d is
+
+00:52:31.220 --> 00:52:36.520
+nothing but models embedding you dimensions models embedding
+
+00:52:38.980 --> 00:52:40.140
+dimension
+
+00:52:42.860 --> 00:52:50.280
+as we all know that we can try to use maybe 100 space to
+
+00:52:50.280 --> 00:52:54.620
+represent a vector of just my then 100 for this 100 for this
+
+00:52:54.620 --> 00:52:57.540
+100 for this so this is basically our dimension of the
+
+00:52:57.540 --> 00:53:00.660
+embeddings so anyone who remembers what is the dimension
+
+00:53:00.660 --> 00:53:03.600
+embedding dimension for like a transformer model the
+
+00:53:03.600 --> 00:53:06.400
+research paper that we have discussed attention is all you
+
+00:53:06.400 --> 00:53:08.680
+need what is the dimension for that yeah
+
+00:53:13.420 --> 00:53:18.420
+what was the like a embedded dimension guys by the way i
+
+00:53:18.420 --> 00:53:21.660
+believe i talked about it and we have even seen a d value
+
+00:53:21.660 --> 00:53:23.100
+over there so
+
+00:53:26.070 --> 00:53:33.990
+vadip is saying 64 gauri is saying 64 okay okay okay sundari
+
+00:53:33.990 --> 00:53:40.610
+is saying five one two sai is saying five one two uh okay
+
+00:53:40.610 --> 00:53:52.960
+fine see got it yes five one two actually so like this is
+
+00:53:52.960 --> 00:53:58.680
+what we were using right divided by root of d yeah so
+
+00:54:08.600 --> 00:54:11.800
+it depends it depends like what kind of a model that we are
+
+00:54:11.800 --> 00:54:15.120
+trying to use it's not hard and fast like i said so it
+
+00:54:15.120 --> 00:54:18.200
+always like depends depends upon my architecture and my
+
+00:54:18.200 --> 00:54:21.200
+engineering that i'm trying to perform over there okay
+
+00:54:21.200 --> 00:54:24.680
+coming back to here so pos position of the token in a
+
+00:54:24.680 --> 00:54:27.940
+sequence so i think if i have a sequence called as my name
+
+00:54:27.940 --> 00:54:32.060
+is ranshuth or for my there will be one that name for is and
+
+00:54:32.060 --> 00:54:35.480
+suds there will be a position i so it's nothing but
+
+00:54:35.480 --> 00:54:38.300
+dimension even an odd and then like a d is nothing but model
+
+00:54:38.300 --> 00:54:43.520
+embedding dimension now uh let's let's try to like uh take
+
+00:54:43.520 --> 00:54:46.800
+one example and based on that example let's try to do a
+
+00:54:46.800 --> 00:54:52.240
+computation yeah so here let's suppose i'm going to take one
+
+00:54:52.240 --> 00:55:01.390
+example uh maybe i'm going to like uh take a name let's
+
+00:55:01.390 --> 00:55:05.250
+suppose right so name for example i'm going to consider or
+
+00:55:05.250 --> 00:55:08.770
+maybe is is i'm going to consider i'm just trying to give an
+
+00:55:08.770 --> 00:55:12.770
+index is equal to one two three so in this way maybe so
+
+00:55:12.770 --> 00:55:16.230
+let's suppose i'm going to consider maybe a name uh so pos
+
+00:55:16.230 --> 00:55:20.730
+is what pos is nothing but let's suppose two fine pos is
+
+00:55:20.730 --> 00:55:26.710
+basically uh two and embedding dimension so embedding
+
+00:55:26.710 --> 00:55:29.330
+dimension technically d so let's suppose i'm going to take a
+
+00:55:29.330 --> 00:55:29.450
+name let's suppose i'm going to take a name let's suppose
+
+00:55:29.450 --> 00:55:32.850
+i'm trying to convert everything into a four a vector just
+
+00:55:32.850 --> 00:55:36.430
+for simple simple calculation otherwise you can consider a
+
+00:55:36.430 --> 00:55:39.050
+512 as well that that's completely fine that's your like a
+
+00:55:39.050 --> 00:55:44.550
+choice so here right so here you can you can try to do a
+
+00:55:44.550 --> 00:55:49.670
+computation basically that what will be a positional
+
+00:55:49.670 --> 00:55:54.290
+encoding right positional encoding as per this formula so
+
+00:55:54.290 --> 00:55:56.270
+pos and 2i so let's suppose
+
+00:55:59.350 --> 00:56:00.690
+but the projection so the positional encoding right so what
+
+00:56:00.690 --> 00:56:07.730
+will be the positional encoding for this second one right
+
+00:56:07.730 --> 00:56:13.950
+second one with respect to our dimension uh let's suppose
+
+00:56:13.950 --> 00:56:16.870
+with respect to this uh we have a embedded dimension is
+
+00:56:16.870 --> 00:56:19.890
+equal to four four means what so four means we are trying to
+
+00:56:19.890 --> 00:56:23.370
+represent by using this kind of a structure zero one two and
+
+00:56:23.370 --> 00:56:26.430
+three right so with the respect to zero what is the
+
+00:56:26.430 --> 00:56:28.990
+positional encoding with respect to one with respect to two
+
+00:56:28.990 --> 00:56:32.470
+and with all respect to 3, what is the positional encoding I
+
+00:56:32.470 --> 00:56:37.850
+will be able to find out because here we are talking about
+
+00:56:37.850 --> 00:56:42.610
+this architecture, we are talking about this architecture.
+
+00:56:43.270 --> 00:56:47.070
+So obviously if we are trying to find out embedding of this
+
+00:56:47.070 --> 00:56:51.550
+and embedding of word is basically let's suppose 4. So
+
+00:56:51.550 --> 00:56:55.210
+obviously we need this positional encoding vector again 4,
+
+00:56:55.270 --> 00:56:59.190
+4D space so that I will be able to combine it. I will be
+
+00:56:59.190 --> 00:57:03.850
+able to add it over here. So keeping that in a mind so
+
+00:57:06.890 --> 00:57:09.830
+far like a dimension is equal to 4. So I have to find out
+
+00:57:09.830 --> 00:57:14.650
+positional encoding of this second data with zeroth index
+
+00:57:14.650 --> 00:57:19.070
+positional encoding of second data with first index
+
+00:57:19.070 --> 00:57:24.010
+positional encoding of the second data with second index
+
+00:57:24.010 --> 00:57:30.010
+positional encoding of the second data with third indexes 1,
+
+00:57:30.130 --> 00:57:33.970
+2, 3, 4. Right. So in a four dimension, I have to like a
+
+00:57:33.970 --> 00:57:38.950
+represent this positional encoding. So just go ahead and try
+
+00:57:38.950 --> 00:57:42.750
+to find out. That's it. So here for a zeroth position. So
+
+00:57:42.750 --> 00:57:45.130
+what formula I'm going to use, I'm going to use basically a
+
+00:57:45.130 --> 00:57:52.310
+sign. So two by 10,000 2D power zero by four is equals to
+
+00:57:52.310 --> 00:57:55.310
+basically a sign of two. You will be able to find out which
+
+00:57:55.310 --> 00:58:00.390
+is nothing but 0.9093 I have already done the calculation.
+
+00:58:00.390 --> 00:58:08.330
+So for this one, uh, for odd one, cause of two by 10,000 and
+
+00:58:08.330 --> 00:58:16.890
+then one by four is going to be, uh, basically 0.9, 8, 0, 1,
+
+00:58:16.990 --> 00:58:21.150
+9, 8, 0, 1, then positional encoding for two. So you will be
+
+00:58:21.150 --> 00:58:25.910
+able to find out is equals to 0.02, 0, 0, same sign theta.
+
+00:58:26.070 --> 00:58:28.870
+So again, over here, cause theta cause you are supposed to
+
+00:58:28.870 --> 00:58:35.590
+use. So 0.993. 9, 9, 9, 9, 8. So again, for all the four
+
+00:58:35.590 --> 00:58:38.610
+position, we are able to find out the positional encoding.
+
+00:58:38.810 --> 00:58:40.950
+So we are able to find out this, we are able to find out
+
+00:58:40.950 --> 00:58:44.870
+this, this, and this. So now how the final positional
+
+00:58:44.870 --> 00:58:48.150
+encoding vector will look like. So final positional encoding
+
+00:58:48.150 --> 00:58:52.410
+vector for a word, which is available at second position,
+
+00:58:52.650 --> 00:58:56.990
+which is basically name, right? Name was the word. So let's
+
+00:58:56.990 --> 00:59:00.350
+suppose it will look like this one. 0.9093.
+
+00:59:04.090 --> 00:59:13.330
+0.9801. 0.0200. 0.999998. So this is basically a vector
+
+00:59:13.330 --> 00:59:19.450
+representing a positional encoding for a data name. Making
+
+00:59:19.450 --> 00:59:23.190
+sense. And then you are going to find out the numerical
+
+00:59:23.190 --> 00:59:27.550
+representation in a four vector space. Same added. And then
+
+00:59:27.550 --> 00:59:31.610
+that will go into this one as a input. Okay. Is it making
+
+00:59:31.610 --> 00:59:36.270
+sense guys? How this entire data will be prepared or how
+
+00:59:36.270 --> 00:59:41.900
+this entire data will be prepared. Making sense, all of us.
+
+00:59:42.300 --> 00:59:45.960
+So as per this research paper, dimension is 512, obviously,
+
+00:59:46.160 --> 00:59:49.960
+right? So if dimension is 512, I have taken a reference of
+
+00:59:49.960 --> 00:59:53.580
+only four, just like a to do a simple calculation. This will
+
+00:59:53.580 --> 00:59:59.300
+simply become 512. This will simply become 512 as simple as
+
+00:59:59.300 --> 01:00:04.630
+that. Making sense to all of us guys. So how the final data
+
+01:00:04.630 --> 01:00:07.210
+will be prepared and how we are trying to attach a
+
+01:00:07.210 --> 01:00:11.270
+positional encoding with a data encoding with a word
+
+01:00:11.270 --> 01:00:11.750
+encoding.
+
+01:00:14.970 --> 01:00:15.690
+Yes, everyone.
+
+01:00:33.060 --> 01:00:35.280
+Yes. Doctor is saying yes. What about others guys?
+
+01:00:38.790 --> 01:00:42.910
+Yep. Clear. That how we are actually preparing the input
+
+01:00:42.910 --> 01:00:43.850
+data for us.
+
+01:01:09.690 --> 01:01:13.170
+Fine. So now we are very much clear that how the actual data
+
+01:01:13.170 --> 01:01:16.690
+will be prepared. So this is what I was talking about. And
+
+01:01:16.690 --> 01:01:22.250
+yeah. So basically here. Right. So here if you will see chat
+
+01:01:22.250 --> 01:01:27.330
+GPT or GPT 3.5. So basically it was trying to use a
+
+01:01:27.330 --> 01:01:30.430
+rotational positional embedding. So again, rotational
+
+01:01:30.430 --> 01:01:33.710
+position embeddings is not very different, I would say. So
+
+01:01:33.710 --> 01:01:38.450
+basically it will like a try to just do a little bit of
+
+01:01:38.450 --> 01:01:42.390
+modification with respect to the same technique that we have
+
+01:01:42.390 --> 01:01:45.490
+seen and it will just keep on rotating it for a better long
+
+01:01:45.490 --> 01:01:48.810
+range dependencies. That's it. So rotational position
+
+01:01:48.810 --> 01:01:52.430
+encoding it is it is like a going to do it so means it is
+
+01:01:52.430 --> 01:01:55.770
+going to create a multiple pairs of it simple after the
+
+01:01:55.770 --> 01:01:59.530
+rotation now multi headed self attention. So obviously there
+
+01:01:59.530 --> 01:02:04.550
+was a 96 head basically right and every head was taking like
+
+01:02:04.550 --> 01:02:07.970
+a 128 dimensional of embeddings feed forward a new network
+
+01:02:07.970 --> 01:02:11.090
+layer normalization dropout regression. So this was the
+
+01:02:11.090 --> 01:02:15.570
+total configuration of GPT 3.5. You can now build your own
+
+01:02:15.570 --> 01:02:19.530
+GPT 3.5 as well. In a very, very simple way. Maybe you don't
+
+01:02:19.530 --> 01:02:22.130
+have that much of data. But that's not a concern at all.
+
+01:02:22.410 --> 01:02:26.010
+Architecture wise, you now will be able to do a coding and
+
+01:02:26.010 --> 01:02:28.610
+this is what we are going to do. Same architecture we are
+
+01:02:28.610 --> 01:02:31.110
+going to replicate that's not a big deal at all. It's just
+
+01:02:31.110 --> 01:02:34.290
+like going to take 1520 line of code or max to max like a
+
+01:02:34.290 --> 01:02:37.950
+2530 line of code it is going to take to for just for the
+
+01:02:37.950 --> 01:02:40.210
+architecture again, what you do with that architecture that
+
+01:02:40.210 --> 01:02:43.010
+is a separate story, right but just to build this entire
+
+01:02:43.010 --> 01:02:44.950
+architecture. It's easy peasy.
+
+01:02:57.830 --> 01:03:01.890
+Okay. Login softmax lastly, not training pipeline wise. So
+
+01:03:01.890 --> 01:03:05.310
+pre training strained on a mixture of internet text data 45
+
+01:03:05.310 --> 01:03:09.410
+terabyte of the data that this is the real game, which
+
+01:03:09.410 --> 01:03:13.150
+everyone can't achieve, right, a 45 terabyte of the data and
+
+01:03:13.150 --> 01:03:17.270
+that to the label data. Now training method casual language
+
+01:03:17.270 --> 01:03:21.370
+modeling with next token prediction optimization wise. So
+
+01:03:21.370 --> 01:03:23.470
+Adam optimizer was used with a gradient descent
+
+01:03:23.470 --> 01:03:26.030
+checkpointing loss function while cross entropy loss
+
+01:03:26.030 --> 01:03:31.050
+function. Now, this one is not new for us. Adam is not new
+
+01:03:31.050 --> 01:03:33.930
+for us. Nothing is new for us like a scaling loss model
+
+01:03:33.930 --> 01:03:35.730
+follow the open a scaling loss for the efficient
+
+01:03:35.730 --> 01:03:40.250
+performance. So this is the architecture guys and we'll try
+
+01:03:40.250 --> 01:03:42.910
+to replicate the architecture we can we can try to replicate
+
+01:03:42.910 --> 01:03:47.110
+the entire like a 3.5 architecture with the help of code
+
+01:03:47.110 --> 01:03:50.970
+fine everyone. So do you think that it is going to be
+
+01:03:50.970 --> 01:03:52.710
+difficult to replicate the architecture?
+
+01:04:01.960 --> 01:04:05.700
+Now it's not right. I think. I think we know the in and out
+
+01:04:05.700 --> 01:04:08.040
+of the entire architecture. We know the entire layer
+
+01:04:08.040 --> 01:04:08.420
+basically.
+
+01:04:13.820 --> 01:04:18.500
+Yes everyone. I'm like you can say no if you like or if
+
+01:04:18.500 --> 01:04:19.380
+you're confused or something,
+
+01:04:22.640 --> 01:04:25.360
+okay, God is saying no like what is what is the meaning of
+
+01:04:25.360 --> 01:04:28.460
+your no like is it is like a yes yes no or it's no no no.
+
+01:04:29.420 --> 01:04:33.140
+You can't do it or like you can do it.
+
+01:04:36.810 --> 01:04:40.730
+Yes guys, there are so many people in a live class by the
+
+01:04:40.730 --> 01:04:45.610
+way and people are not responding. Sir. I find an LPG and a
+
+01:04:45.610 --> 01:04:48.070
+bit difficult compared to ML and DL model dealing the
+
+01:04:48.070 --> 01:04:53.070
+classification task. No, Jen. Jenny is not that difficult.
+
+01:04:54.190 --> 01:04:55.130
+Especially these models.
+
+01:04:57.810 --> 01:05:02.070
+Okay, we'll do it chat GPT-4 architecture God
+
+01:05:05.940 --> 01:05:08.760
+is saying we can do it will do it. It's not like we can do
+
+01:05:08.760 --> 01:05:11.240
+it. I'll do it and then you guys are going to do it as
+
+01:05:11.240 --> 01:05:13.640
+simple as that, right? So I'll do it inside the class and
+
+01:05:13.640 --> 01:05:16.940
+then you guys can do it in the similar manner. But yeah,
+
+01:05:16.980 --> 01:05:19.780
+believe me. It's not difficult. This is if you understand
+
+01:05:19.780 --> 01:05:21.820
+this entire layer because at the end of the day, we just
+
+01:05:21.820 --> 01:05:24.640
+have to call the function for like a tokenization and then
+
+01:05:24.640 --> 01:05:28.300
+we have to call the attention mass attention. That's it.
+
+01:05:38.460 --> 01:05:39.180
+Yes, guys.
+
+01:05:47.250 --> 01:05:51.590
+Yeah. So to do saying it's us is assigned to that gives you
+
+01:05:51.590 --> 01:05:59.300
+know, no sign to is basically 0.9093. This is what I have
+
+01:05:59.300 --> 01:06:06.120
+written right sign to a 0.9093. So it's 9.9093 by the way.
+
+01:06:06.840 --> 01:06:11.140
+Maybe I can do it. I can I can like go and ask validated
+
+01:06:11.140 --> 01:06:20.500
+with maybe like a URI. So sign to give me its value.
+
+01:06:22.510 --> 01:06:26.550
+Yeah, so approximately this one sign to radiance is
+
+01:06:26.550 --> 01:06:33.110
+basically 9093. So same same values. Okay. You can see over
+
+01:06:33.110 --> 01:06:39.090
+here. Okay. So now. Okay. So it says OK. So this is is
+
+01:06:39.090 --> 01:06:42.250
+applied to GPT for architecture, which is again extension of
+
+01:06:42.250 --> 01:06:46.610
+the 3.5 itself. So significantly improve upon GPT 3 in terms
+
+01:06:46.610 --> 01:06:50.390
+of multimodal capacity efficiency and reasoning. So there's
+
+01:06:50.390 --> 01:06:54.010
+other capability which is married based model. Say just for
+
+01:06:54.010 --> 01:06:56.230
+more based but with enhancement, what kind of enhancement
+
+01:06:56.230 --> 01:07:00.410
+they have done practically they have not released it. So
+
+01:07:00.410 --> 01:07:02.310
+there are not much information, which is available in the
+
+01:07:02.310 --> 01:07:05.930
+market for that one parameter. So almost like a one trillion
+
+01:07:05.930 --> 01:07:08.930
+parameter open. OpenAI has not disclosed the exact number
+
+01:07:08.930 --> 01:07:11.410
+that's the reasons I have mentioned over here there are like
+
+01:07:11.410 --> 01:07:14.750
+whatever information is available over the internet so it's
+
+01:07:14.750 --> 01:07:17.610
+been built based on that but yeah a lot of information they
+
+01:07:17.610 --> 01:07:21.310
+have not released layer wise so in 3.5 there was 96 layer in
+
+01:07:21.310 --> 01:07:25.890
+4 there is a 120 number of layers hidden dimension wise so I
+
+01:07:25.890 --> 01:07:32.410
+think there was 12,000 hidden dimension yes 12,000 yeah I
+
+01:07:32.410 --> 01:07:35.630
+remember it and there is 16,000 basically so they have
+
+01:07:35.630 --> 01:07:39.170
+increased it attention head wise 128 attention head means
+
+01:07:39.170 --> 01:07:44.150
+number of like a stacking that they have done a context let
+
+01:07:44.150 --> 01:07:47.030
+32,000 so they have increased it a lot training data wise
+
+01:07:47.030 --> 01:07:50.010
+more diverse including a code books and multi-model data so
+
+01:07:50.010 --> 01:07:52.650
+some people have even claimed that that they're stealing a
+
+01:07:52.650 --> 01:07:54.970
+data but that's completely fine enough for a business by the
+
+01:07:54.970 --> 01:07:58.730
+way major enhancement that they have done is a mixture of
+
+01:07:58.730 --> 01:08:01.590
+expert models so this moe technique became very very popular
+
+01:08:01.590 --> 01:08:06.070
+and even nowadays whoever is releasing this new models even
+
+01:08:06.070 --> 01:08:08.530
+Lama 4 that has been released so basically it's a mixture of
+
+01:08:08.530 --> 01:08:12.150
+experts model means it's not just a one single model just
+
+01:08:12.150 --> 01:08:14.370
+like a random forest if you understand random forest right
+
+01:08:14.370 --> 01:08:17.230
+so there are multiple decision maker and then all of them
+
+01:08:17.230 --> 01:08:19.850
+are going to make a decision so mixture of model is nothing
+
+01:08:19.850 --> 01:08:24.130
+but it is very close to the same analogy if you're coming
+
+01:08:24.130 --> 01:08:26.190
+from a machine learning background and if you understand a
+
+01:08:26.190 --> 01:08:29.570
+random forest concept right which is like even called as a
+
+01:08:29.570 --> 01:08:32.050
+bagging concept inside one single bag there will be a
+
+01:08:32.050 --> 01:08:34.630
+multiple decision maker it follows the exact same thing. So
+
+01:08:34.630 --> 01:08:37.970
+GPT-4 is likely a mixture of expert model using a Palom and
+
+01:08:37.970 --> 01:08:43.150
+Gallim technique instead of activating all the parameter
+
+01:08:43.150 --> 01:08:46.610
+actively activates only a subset of the neuron means it is
+
+01:08:46.610 --> 01:08:49.410
+trying to chop off it is trying to mass something benefit
+
+01:08:49.410 --> 01:08:52.150
+lower computational cost higher efficiencies and it is
+
+01:08:52.150 --> 01:08:56.010
+having a multi-model capacity improved positional encoding
+
+01:08:56.010 --> 01:08:58.930
+so basically 3
+
+01:09:00.530 --> 01:09:04.170
+.5 was using a rotational positional encoding. In our
+
+01:09:04.170 --> 01:09:07.770
+transformers. Transformer architecture we have seen a simple
+
+01:09:07.770 --> 01:09:10.830
+positional encoding now here so they are trying to use
+
+01:09:10.830 --> 01:09:14.210
+attention linear bias or rotative positional embeddings
+
+01:09:14.210 --> 01:09:17.890
+ROPE. So these are the techniques that they are using and
+
+01:09:17.890 --> 01:09:21.150
+again like whoever build a new model new architecture right
+
+01:09:21.150 --> 01:09:24.670
+either they tried so they don't change the entire things
+
+01:09:24.670 --> 01:09:27.370
+what they do is like they change a little bit right little
+
+01:09:27.370 --> 01:09:31.450
+bit they do a research they do some sort of optimization
+
+01:09:31.450 --> 01:09:35.110
+they change the method they change the way system is trying
+
+01:09:35.110 --> 01:09:38.790
+to do computation or calculation and this is how we are able
+
+01:09:38.790 --> 01:09:42.130
+to see upgraded version of model on day-to-day basis right
+
+01:09:42.130 --> 01:09:45.410
+so everyday people are releasing like a new model optimized
+
+01:09:45.410 --> 01:09:49.810
+and training so distributed training so basically a H100
+
+01:09:49.810 --> 01:09:53.950
+GPUs is been used parallelism strategy so 0 fsdp and tensor
+
+01:09:53.950 --> 01:09:56.190
+model parallelism gradient check pointing wise reduce memory
+
+01:09:56.190 --> 01:10:00.710
+footprints so improved file tuning alignment and again
+
+01:10:00.710 --> 01:10:02.830
+reinforcement learning with a human feedback which was used
+
+01:10:02.830 --> 01:10:06.990
+for a GPT-4. Then GPT-4 turbo architecture which is
+
+01:10:06.990 --> 01:10:10.570
+extension of the 4 itself a little bit of modification that
+
+01:10:10.570 --> 01:10:13.810
+they have done so key improvement load latency inferences
+
+01:10:13.810 --> 01:10:16.630
+memory efficient retention mechanism mixture of expert
+
+01:10:16.630 --> 01:10:20.690
+highly probable hardware optimization they have even done so
+
+01:10:20.690 --> 01:10:23.710
+designed to run on open AI custom chips again this is a
+
+01:10:23.710 --> 01:10:27.950
+rumor no one has confirmed it but yeah just a rumor fine
+
+01:10:27.950 --> 01:10:30.510
+-tuned for a cost effective deployment so this is just an
+
+01:10:30.510 --> 01:10:33.770
+enhancement on that one. So you must be able to see guys
+
+01:10:33.770 --> 01:10:36.930
+that. Like people aren't doing much basically they are like
+
+01:10:36.930 --> 01:10:39.530
+changing something on a previous layer and then they are
+
+01:10:39.530 --> 01:10:43.710
+trying to release the next extension of the one llama one
+
+01:10:43.710 --> 01:10:46.570
+llama two llama three architecture and now we have llama
+
+01:10:46.570 --> 01:10:52.290
+four as well which has been released like a week back so you
+
+01:10:52.290 --> 01:10:55.750
+can try to like come over here and try to read out that what
+
+01:10:55.750 --> 01:10:58.950
+is the architecture it is going to follow. So again it's our
+
+01:10:58.950 --> 01:11:03.130
+decoder only architecture right almost like a same but they
+
+01:11:03.130 --> 01:11:06.390
+have changed. It in between a lot so multi-header attention
+
+01:11:06.390 --> 01:11:08.990
+they are using feed forward network rotated position
+
+01:11:08.990 --> 01:11:12.070
+embedding just like a GPT they are using layer normalization
+
+01:11:12.070 --> 01:11:15.250
+they are using now sweet glue activation function that they
+
+01:11:15.250 --> 01:11:18.010
+are using I believe in a chat GPT they are not using it
+
+01:11:18.010 --> 01:11:21.770
+casual attention masking even it was used inside a GPT and
+
+01:11:21.770 --> 01:11:24.910
+llama two uses a byte pair encoding like a tokenizer trained
+
+01:11:24.910 --> 01:11:28.570
+with the sentence pieces does a vocabulary size of 3.2 so
+
+01:11:28.570 --> 01:11:33.150
+byte pair encoding even chat GPT was trying to use now with
+
+01:11:33.150 --> 01:11:35.530
+what they have trained with which network they have trained
+
+01:11:35.530 --> 01:11:40.170
+for generating embeddings we don't know as of now. Now key
+
+01:11:40.170 --> 01:11:41.870
+optimization over the standard transformers of pre
+
+01:11:41.870 --> 01:11:44.490
+-normalized group query attention sweet glue activation
+
+01:11:44.490 --> 01:11:49.470
+rotatory positional embeddings fine same thing now size wise
+
+01:11:49.470 --> 01:11:52.930
+so two points like a llama two with two billion parameter 13
+
+01:11:52.930 --> 01:11:56.470
+million parameter 65 billion parameter so again we have seen
+
+01:11:56.470 --> 01:11:59.510
+and now we have like a four so two is like a pretty much old
+
+01:11:59.510 --> 01:12:05.850
+for all of us. So this is. It's something that you can read
+
+01:12:05.850 --> 01:12:10.130
+out guys one by one one by one and I believe now we all can
+
+01:12:10.130 --> 01:12:12.750
+understand every term that what is the differentiation
+
+01:12:12.750 --> 01:12:17.710
+between one another architecture cloud is on it so
+
+01:12:17.710 --> 01:12:21.510
+documentation wise I was not able to mention much the only
+
+01:12:21.510 --> 01:12:23.950
+reason is this is the only information which was available
+
+01:12:23.950 --> 01:12:27.230
+on their official website if you will go and check cloud is
+
+01:12:27.230 --> 01:12:32.430
+on it official website like information is actually not at
+
+01:12:32.430 --> 01:12:34.870
+all available. Cloud is on it so they have they have not
+
+01:12:34.870 --> 01:12:38.890
+even released it right then Falcon for Falcon I have like a
+
+01:12:38.890 --> 01:12:44.650
+mention it mosaic and then feel like a llama bloom open
+
+01:12:44.650 --> 01:12:50.110
+llama GPT J GPT Neo X with respect to all of these models I
+
+01:12:50.110 --> 01:12:55.010
+have mentioned it over here. Then for a bot I have mentioned
+
+01:12:55.010 --> 01:13:01.550
+the model architecture so I believe now you guys can go
+
+01:13:01.550 --> 01:13:03.770
+ahead with. With all of these things which I have mentioned
+
+01:13:03.770 --> 01:13:08.310
+that documentation and tomorrow what I will do is we'll try
+
+01:13:08.310 --> 01:13:12.510
+to build our own GPT fine guys introducing
+
+01:13:17.060 --> 01:13:19.520
+on radiance was doing in dealing know that was a radian
+
+01:13:19.520 --> 01:13:20.900
+basically yeah
+
+01:13:26.850 --> 01:13:30.470
+so just go through this entire documentation I'll say only
+
+01:13:30.470 --> 01:13:36.690
+once not twice no need to remember much from this one but
+
+01:13:36.690 --> 01:13:41.810
+yeah it is going to enhance your like a thought process.
+
+01:13:41.810 --> 01:13:45.450
+Basically that how this one model is different from another
+
+01:13:45.450 --> 01:13:49.430
+model and with our curiosity so when next model will be
+
+01:13:49.430 --> 01:13:53.210
+launched so obviously you will try to explore that okay so
+
+01:13:53.210 --> 01:13:57.270
+what was the architecture what was the encoding which was
+
+01:13:57.270 --> 01:13:59.610
+like embeddings which was done over there what was the
+
+01:13:59.610 --> 01:14:02.510
+number of layer which was used so maybe out of curiosity for
+
+01:14:02.510 --> 01:14:04.870
+every next model which will be released inside the market
+
+01:14:04.870 --> 01:14:08.750
+you will go ahead and maybe you will try to explore it fine
+
+01:14:08.750 --> 01:14:11.130
+guys so any any question for me from here.
+
+01:14:13.920 --> 01:14:16.640
+Yeah so that was the whole purpose guys behind like this
+
+01:14:16.640 --> 01:14:21.260
+particular documentation so that you all will be able to
+
+01:14:21.260 --> 01:14:25.460
+resemble the actual use case of the theory that we have
+
+01:14:25.460 --> 01:14:29.780
+discussed means I talked about this research paper but the
+
+01:14:29.780 --> 01:14:33.280
+problem was that where we are using it and this is what I
+
+01:14:33.280 --> 01:14:37.020
+was trying to show you in this class that we are using
+
+01:14:37.020 --> 01:14:41.000
+everywhere whatever model that you know whatever model that
+
+01:14:41.000 --> 01:14:43.500
+you're using or you are going to use in the future.
+
+01:14:45.220 --> 01:14:51.380
+Everywhere this is used right everyone I hope now you are
+
+01:14:51.380 --> 01:14:55.080
+able to find out find the use cases of this research paper
+
+01:14:55.080 --> 01:15:01.100
+anyone who is not able to find the use cases by the way of
+
+01:15:01.100 --> 01:15:04.460
+the theoretical research paper that we have discussed yeah
+
+01:15:06.930 --> 01:15:08.630
+anyone okay
+
+01:15:28.790 --> 01:15:32.830
+we're saying yes sir okay the doctor is saying yes fine so
+
+01:15:32.830 --> 01:15:37.870
+now tomorrow I think we have discussed enough of this.
+
+01:15:37.870 --> 01:15:41.810
+Theory comparison between the model and the real time use
+
+01:15:41.810 --> 01:15:45.330
+cases that where we are using it now tomorrow we will do a
+
+01:15:45.330 --> 01:15:50.330
+practical and we will try to build our small GPT yeah so
+
+01:15:50.330 --> 01:15:53.530
+from scratch again so I'm not going to talk about the fine
+
+01:15:53.530 --> 01:15:57.310
+tuning on the same model so maybe we'll try to like a build
+
+01:15:57.310 --> 01:16:04.630
+a small like a GPT kind of a system by our self by using all
+
+01:16:04.630 --> 01:16:06.790
+of these layers so we'll look into this architecture.
+
+01:16:06.790 --> 01:16:09.990
+Technically we are going to look into the architecture layer
+
+01:16:09.990 --> 01:16:13.730
+that I have discussed in my today's class and one by one we
+
+01:16:13.730 --> 01:16:17.770
+will replicate it as simple as that right one by one layer
+
+01:16:17.770 --> 01:16:20.290
+by layer layer by layer we will try to replicate it and we
+
+01:16:20.290 --> 01:16:25.150
+will try to play with all these parameters are we going to
+
+01:16:25.150 --> 01:16:29.090
+build an encoder decoder model also I'm like we are going to
+
+01:16:29.090 --> 01:16:31.950
+see anyhow decoder we are going to see a lot of models but
+
+01:16:31.950 --> 01:16:34.370
+yeah let's go ahead with the charge pretty see if you're
+
+01:16:34.370 --> 01:16:37.190
+going to build one right believe me whether it's an encoder
+
+01:16:37.190 --> 01:16:40.290
+only. It's a decoder only it's an encoder decoder which
+
+01:16:40.290 --> 01:16:42.170
+eventually is going to happen after tomorrow's class itself
+
+01:16:42.170 --> 01:16:47.130
+you will be able to do it yeah encoder
+
+01:16:49.630 --> 01:16:52.750
+decoder is again very easy just to remind me tomorrow or
+
+01:16:52.750 --> 01:16:56.330
+maybe in a upcoming classes I'll show you so showing an
+
+01:16:56.330 --> 01:17:00.710
+example of these things are not all like a big deal for me I
+
+01:17:00.710 --> 01:17:03.710
+have been doing it since last like a six seven year when
+
+01:17:03.710 --> 01:17:08.530
+these architecture was not even in place so yeah we'll do it
+
+01:17:08.530 --> 01:17:11.390
+it's very easy. Believe me so after class even you guys will
+
+01:17:11.390 --> 01:17:17.550
+be able to do it easily so fine guys done with today not
+
+01:17:17.550 --> 01:17:20.890
+going to start any practical classes today I'll start
+
+01:17:20.890 --> 01:17:26.170
+tomorrow the practical class and today on a YouTube so we
+
+01:17:26.170 --> 01:17:30.410
+are going to launch a job portal basically I believe now job
+
+01:17:30.410 --> 01:17:34.450
+portal is ready to serve all of you obviously we are trying
+
+01:17:34.450 --> 01:17:38.190
+to make it better and better and better but I believe like a
+
+01:17:38.190 --> 01:17:41.510
+for the purpose of for which we were trying to build a job
+
+01:17:41.510 --> 01:17:45.670
+portal it's ready so stay tuned to our YouTube channel I'm
+
+01:17:45.670 --> 01:17:48.910
+going to send a link as well please join a live class sorry
+
+01:17:48.910 --> 01:17:52.450
+not live class so again and again I say live classes and not
+
+01:17:52.450 --> 01:17:55.630
+live class basically it's a live event no you can means
+
+01:17:55.630 --> 01:17:58.330
+event wise we'll just go live on a YouTube we'll talk about
+
+01:17:58.330 --> 01:18:02.750
+like a job portal today and if you have any kind of a
+
+01:18:02.750 --> 01:18:07.490
+question we can feel free to ask about a job portal yeah but
+
+01:18:07.490 --> 01:18:11.350
+believe me like it's amazing system. And hopefully all of
+
+01:18:11.350 --> 01:18:14.630
+you are going to use it it will be very much helpful for
+
+01:18:14.630 --> 01:18:18.990
+like all of you to tomorrow and future and as time will pass
+
+01:18:18.990 --> 01:18:21.950
+obviously that system will become more and more powerful
+
+01:18:21.950 --> 01:18:26.890
+with that intention we are trying to build it so that's it
+
+01:18:26.890 --> 01:18:31.650
+for today guys see you again in live launch of like a job
+
+01:18:31.650 --> 01:18:35.670
+portal live a launch announcement till then thank you so
+
+01:18:35.670 --> 01:18:39.510
+much everyone take care see you again tomorrow same time.
+
+01:18:39.650 --> 01:18:41.190
+Bye bye.
+

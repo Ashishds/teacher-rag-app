@@ -1,0 +1,5612 @@
+WEBVTT
+
+00:00:02.960 --> 00:00:07.860
+okay so shall we start everyone yes shall
+
+00:00:10.550 --> 00:00:12.090
+we start now okay
+
+00:00:15.000 --> 00:00:20.080
+fine so let's start so i'm going to share my screen now what
+
+00:00:20.080 --> 00:00:23.180
+we are going to do today so we are technically going to
+
+00:00:23.180 --> 00:00:32.200
+build a chat gpt so we are going to build chat gpt in my
+
+00:00:32.200 --> 00:00:38.250
+today's class and in a simplest possible manner so we are
+
+00:00:38.250 --> 00:00:42.950
+going to build a chat gpt now to build a chat gpt obviously
+
+00:00:42.950 --> 00:00:47.650
+we need a front end so we need basically a ui interface you
+
+00:00:47.650 --> 00:00:49.050
+can say we
+
+00:00:51.640 --> 00:01:01.140
+need a ui interface plus we need open ai key open ai key so
+
+00:01:01.140 --> 00:01:03.420
+those who is not having open ai key not an issue so for
+
+00:01:03.420 --> 00:01:06.700
+today at least i am going to provide you open ai key so that
+
+00:01:06.700 --> 00:01:07.060
+you know you can build a chat gpt and in a simplest possible
+
+00:01:07.060 --> 00:01:07.580
+manner so we are going to build a chat gpt you can you can
+
+00:01:07.580 --> 00:01:10.760
+try to use it directly inside your configuration and then
+
+00:01:10.760 --> 00:01:14.200
+you will be able to host it now once we are going to create
+
+00:01:14.200 --> 00:01:16.540
+this entire thing so let's suppose we are going to like
+
+00:01:16.540 --> 00:01:20.240
+enable our ui interface and we are able to create a open ai
+
+00:01:20.240 --> 00:01:24.400
+key now on top of that so what we are going to do so we are
+
+00:01:24.400 --> 00:01:28.240
+going to perform a monitoring so we are going to perform a
+
+00:01:28.240 --> 00:01:31.940
+monitoring with the help of prometheus adam grafana so we
+
+00:01:31.940 --> 00:01:34.940
+are going to attach prometheus
+
+00:01:40.640 --> 00:01:46.480
+plus grafana so grafana is basically a kind of a tool you
+
+00:01:46.480 --> 00:01:50.600
+can say so which you can try to use it which we all can try
+
+00:01:50.600 --> 00:01:54.860
+to use it for basically showcasing all kind of a statistics
+
+00:01:54.860 --> 00:01:57.880
+with respect to a application so whatever statistics that we
+
+00:01:57.880 --> 00:02:00.380
+are trying to generate how many people are hitting my system
+
+00:02:00.380 --> 00:02:04.860
+how many users have logged in inside my system or what is
+
+00:02:04.860 --> 00:02:07.720
+the response time that system is trying to take so each and
+
+00:02:07.720 --> 00:02:10.940
+everything we can try to do a setup inside a grafana so we
+
+00:02:10.940 --> 00:02:12.800
+are going to do a monitoring so again even going forward so
+
+00:02:12.800 --> 00:02:15.380
+in many of my projects i'm going to use a prometheus and
+
+00:02:15.380 --> 00:02:19.060
+grafana so that you all will be able to do a monitoring and
+
+00:02:19.060 --> 00:02:21.800
+again based on those monitoring so if you have to generate
+
+00:02:21.800 --> 00:02:24.460
+some sort of alert so you can try to even generate some sort
+
+00:02:24.460 --> 00:02:27.780
+of a alert as well so prometheus is something which is going
+
+00:02:27.780 --> 00:02:30.800
+to capture the logs and grafana is something which is going
+
+00:02:30.800 --> 00:02:34.340
+to showcase a log so grafana provides you a ui interface a
+
+00:02:34.340 --> 00:02:36.740
+beautiful beautiful ui interface you can say grafana is
+
+00:02:36.740 --> 00:02:40.940
+going to provide now so today this is something that we are
+
+00:02:40.940 --> 00:02:43.400
+going to do so we are going to do it and everything is going
+
+00:02:43.400 --> 00:02:48.200
+to run on ec2 instances so we are going to launch one of the
+
+00:02:48.200 --> 00:02:52.600
+ec2 instances elastic compute cloud so now this is a service
+
+00:02:52.600 --> 00:02:56.420
+which is available inside aws right this is available inside
+
+00:02:56.420 --> 00:02:59.320
+aws so by which you will be able to get any kind of
+
+00:02:59.320 --> 00:03:02.640
+instances means machine basically you all will be able to
+
+00:03:02.640 --> 00:03:05.700
+get a machine and inside this machine so we are going to
+
+00:03:05.700 --> 00:03:09.200
+configure our ui interface plus inside that ui interface so
+
+00:03:09.200 --> 00:03:12.260
+we are going to configure our openai and along with that so
+
+00:03:12.260 --> 00:03:15.660
+we are going to configure prometheus and a grafana now ui
+
+00:03:15.660 --> 00:03:19.060
+interface wise so if i'll talk about a euron so we have a
+
+00:03:19.060 --> 00:03:24.100
+multiple ui interface not just one i'll not be using that in
+
+00:03:24.100 --> 00:03:27.100
+my today's class so today's class we are going to use ui
+
+00:03:27.100 --> 00:03:33.160
+interface wise basically open web ui right so open web ui
+
+00:03:33.160 --> 00:03:35.880
+interface we are going to use it going forward so i'm going
+
+00:03:35.880 --> 00:03:38.780
+to even show you that we have our in-house ui interface
+
+00:03:38.780 --> 00:03:43.080
+which is exactly same which is exactly same as like a chat
+
+00:03:43.080 --> 00:03:46.340
+gpt interface you can say or whatever open web ui is trying
+
+00:03:46.340 --> 00:03:49.500
+to provide so you can use even that particular one and then
+
+00:03:49.500 --> 00:03:53.060
+you can try to host it uh but yeah so today let's go ahead
+
+00:03:53.060 --> 00:03:56.260
+with the open web ui interface and let's try to build this
+
+00:03:56.260 --> 00:03:59.680
+entire system so where just like a chat gpt you will be able
+
+00:03:59.680 --> 00:04:02.760
+to access all the models and whatever model chat gpt is
+
+00:04:02.760 --> 00:04:05.720
+providing or whatever model is available even inside your
+
+00:04:05.720 --> 00:04:07.920
+account so let's suppose if i have some sort of a custom
+
+00:04:07.920 --> 00:04:12.520
+model in my account inside my openai account so even that i
+
+00:04:12.520 --> 00:04:15.760
+will be able to call inside my open web ui and with that
+
+00:04:15.760 --> 00:04:19.240
+model i will be able to do a chat i will be able to generate
+
+00:04:19.240 --> 00:04:22.560
+images i will be able to send a speech and then i will be
+
+00:04:22.560 --> 00:04:26.020
+able to you know process those speech or by sending a speech
+
+00:04:26.020 --> 00:04:29.880
+itself i will be able to give a command to my entire chatbot
+
+00:04:29.880 --> 00:04:35.600
+going forward so we have to even attach a flavor of rag over
+
+00:04:35.600 --> 00:04:38.820
+here so on top of the same layer so we are going to attach
+
+00:04:38.820 --> 00:04:42.320
+we are going to configure our rag based framework so where
+
+00:04:42.320 --> 00:04:45.100
+we are going to pass our own data which is nothing but a
+
+00:04:45.100 --> 00:04:47.720
+private data right so we are going to pass our private data
+
+00:04:47.720 --> 00:04:50.760
+and system is supposed to respond back with a private data
+
+00:04:50.760 --> 00:04:54.640
+not just that so we are going to even attach our private
+
+00:04:54.640 --> 00:04:58.840
+model so we are going to attach our private llm you can say
+
+00:04:58.840 --> 00:05:02.520
+or any other kind of a model which is equivalent to a llm so
+
+00:05:02.520 --> 00:05:06.220
+for example we have already seen that that we were able to
+
+00:05:06.220 --> 00:05:10.920
+train our model we were able to train our model or to fine
+
+00:05:10.920 --> 00:05:15.060
+tune our model this is the like a kind of things that we
+
+00:05:15.060 --> 00:05:18.360
+have already done right in our live class itself so here
+
+00:05:18.360 --> 00:05:21.300
+what we are going to do so we will try to see that how we
+
+00:05:21.300 --> 00:05:25.700
+can try to securely host those models a model which is
+
+00:05:25.700 --> 00:05:30.920
+running on my gpu on my private infrastructure so that kind
+
+00:05:30.920 --> 00:05:34.200
+of a model also you will be able to attach in a same kind of
+
+00:05:34.200 --> 00:05:39.000
+a system so in that manner this entire you know application
+
+00:05:39.000 --> 00:05:43.460
+is going to be a sophisticated application it is going to be
+
+00:05:43.460 --> 00:05:46.700
+a kind of application which will be private to you to your
+
+00:05:46.700 --> 00:05:52.320
+company to your model to your data set plus we are going to
+
+00:05:52.320 --> 00:05:56.540
+even see that how we will be able to do a domain domain
+
+00:05:56.540 --> 00:06:02.520
+mapping domain mapping so domain mapping means so the way we
+
+00:06:02.520 --> 00:06:07.400
+are trying to host yuri on a url right on a url domain name
+
+00:06:07.400 --> 00:06:10.120
+so in the similar manner so you can try to get some sort of
+
+00:06:10.120 --> 00:06:10.380
+a domain name so the way we are trying to host yuri on a url
+
+00:06:10.380 --> 00:06:13.360
+right on a url maybe like just by spending one dollar on
+
+00:06:13.360 --> 00:06:16.840
+godaddy or similar kind of a platform and they are going to
+
+00:06:16.840 --> 00:06:19.500
+give you a domain name you can try to go and check whatever
+
+00:06:19.500 --> 00:06:22.000
+domain that you are looking for and obviously you have to
+
+00:06:22.000 --> 00:06:24.940
+pay accordingly so that domain is going to be your asset it
+
+00:06:24.940 --> 00:06:27.060
+is going to be your property and then you can try to
+
+00:06:27.060 --> 00:06:31.000
+configure that particular domain with respect to this entire
+
+00:06:31.000 --> 00:06:35.020
+interfacing so this is something that we have to achieve uh
+
+00:06:35.020 --> 00:06:37.920
+so everything we are not going to achieve today so obviously
+
+00:06:37.920 --> 00:06:40.800
+we will try try to achieve something in my next class, which
+
+00:06:40.800 --> 00:06:43.740
+is going to happen next week on Saturday. But yeah, so today
+
+00:06:43.740 --> 00:06:45.780
+what we are going to achieve so today at least we will be
+
+00:06:45.780 --> 00:06:48.980
+able to do a UI configuration, we are going to attach our
+
+00:06:48.980 --> 00:06:52.580
+open AI key. So where I will be able to access all the model
+
+00:06:52.580 --> 00:06:56.100
+which is available inside my open AI account. And then we
+
+00:06:56.100 --> 00:06:59.120
+are going to attach Prometheus and Grafana. So till this
+
+00:06:59.120 --> 00:07:03.100
+point, we are going to do it today. Now rest of the things
+
+00:07:03.100 --> 00:07:06.960
+like RAG or private LLM hosting, which is running on my GPU,
+
+00:07:07.180 --> 00:07:10.400
+my private infrastructure, and then this domain mapping. So
+
+00:07:10.400 --> 00:07:13.000
+all of these things I'm going to show you in my next
+
+00:07:13.000 --> 00:07:16.080
+Saturday class. So you don't have to wait much just next
+
+00:07:16.080 --> 00:07:19.160
+Saturday class, you will be able to even configure these
+
+00:07:19.160 --> 00:07:23.060
+things on top of the same one for everything. So I'm going
+
+00:07:23.060 --> 00:07:25.640
+to provide you a documentation so that you know, even in a
+
+00:07:25.640 --> 00:07:28.000
+later stage, you are not supposed to struggle just follow
+
+00:07:28.000 --> 00:07:31.380
+along with the documentation. And eventually you all will be
+
+00:07:31.380 --> 00:07:34.700
+able to do same thing, right, you will be able to replicate
+
+00:07:34.700 --> 00:07:38.800
+each and everything in no time. Okay. So is it clear guys,
+
+00:07:38.900 --> 00:07:43.520
+what we are going to do today? Yeah. Is it clear to all of
+
+00:07:43.520 --> 00:07:48.860
+us? Fine. Okay, now, let's get started. So first of all,
+
+00:07:48.880 --> 00:07:52.040
+like I said, so we need an AWS account. So I'll be like a
+
+00:07:52.040 --> 00:07:57.660
+login into my AWS account, by the way. So let me open up my
+
+00:07:57.660 --> 00:08:08.330
+AWS console login. And let's go there. Sign into a console.
+
+00:08:54.900 --> 00:08:58.780
+Okay, so now I'm able to land into my AWS account, I'm able
+
+00:08:58.780 --> 00:09:02.500
+to do a sign in and I believe you all are able to do a sign
+
+00:09:02.500 --> 00:09:06.400
+in as well. This is one part. The other part is here, so you
+
+00:09:06.400 --> 00:09:09.240
+will be able to see a reason right here, you will be able to
+
+00:09:09.240 --> 00:09:12.180
+see a lot of reasons and you can try to configure your
+
+00:09:12.180 --> 00:09:16.360
+services, even reason wise. So try to select a nearest
+
+00:09:16.360 --> 00:09:20.400
+reason for all of you. So for example, if I'm in Asia, so
+
+00:09:20.400 --> 00:09:23.440
+and especially if I'm in India, so maybe I can try to select
+
+00:09:23.440 --> 00:09:26.120
+Mumbai. Or maybe I can try to select Hyderabad, that's going
+
+00:09:26.120 --> 00:09:29.980
+to work for me. Let's suppose if you are from some other
+
+00:09:29.980 --> 00:09:33.620
+part of like a planet. So in that case, you can try to
+
+00:09:33.620 --> 00:09:36.700
+select the nearest reason, whatever nearest reason that you
+
+00:09:36.700 --> 00:09:39.840
+have, and then you will be able to do each and everything.
+
+00:09:40.420 --> 00:09:43.880
+The reason is very simple behind selecting a nearest reason
+
+00:09:43.880 --> 00:09:47.260
+so that it will be able to, you know, send a data and it
+
+00:09:47.260 --> 00:09:50.060
+will be able to receive a data or latency is going to be
+
+00:09:50.060 --> 00:09:54.280
+very, very less. So that is a reason. So just select one of
+
+00:09:54.280 --> 00:09:57.900
+the nearest reason and leave it as it is. So for example, in
+
+00:09:57.900 --> 00:10:00.520
+my case, I'm selecting Mumbai, you can try to select maybe
+
+00:10:00.520 --> 00:10:03.400
+Hyderabad. Maybe you can try to select North Virginia or you
+
+00:10:03.400 --> 00:10:07.880
+it's completely fine. Just select a nearest one if you are
+
+00:10:07.880 --> 00:10:10.480
+in Europe. So in that case, you have an option called as
+
+00:10:10.480 --> 00:10:14.140
+Frankfurt, Ireland, London, Paris, Stockholms, right? So
+
+00:10:14.140 --> 00:10:16.960
+maybe you can try to select any of these regions as well if
+
+00:10:16.960 --> 00:10:20.680
+you have joined from Europe. Simple everyone. So just change
+
+00:10:20.680 --> 00:10:23.520
+this one. So I'm logging from South Africa, I would select
+
+00:10:23.520 --> 00:10:26.520
+Ohio. Yeah. So whatever is your nearest region, just simply
+
+00:10:26.520 --> 00:10:29.720
+select like that particular region or San Francisco, right?
+
+00:10:29.880 --> 00:10:33.100
+So from San Francisco, so yes, Ohio is going to be the
+
+00:10:33.100 --> 00:10:35.320
+nearest one or whatever is the nearest one. I believe we all
+
+00:10:35.320 --> 00:10:37.940
+are aware about that. So just go ahead and select that
+
+00:10:37.940 --> 00:10:41.060
+particular region. Now once you are going to select that
+
+00:10:41.060 --> 00:10:43.420
+particular region, so what you have to do, so you have to
+
+00:10:43.420 --> 00:10:47.120
+basically call EC2 and search for EC2 over here, Elastic
+
+00:10:47.120 --> 00:10:51.900
+Compute Cloud. So EC2 is one of the services. Which AWS is
+
+00:10:51.900 --> 00:10:54.320
+providing you one of the powerful service, I would say,
+
+00:10:54.380 --> 00:10:58.540
+which AWS is providing you and here. So you will be able to
+
+00:10:58.540 --> 00:11:01.340
+get any kind of instances that you are looking for of your
+
+00:11:01.340 --> 00:11:04.680
+choice. So obviously the kind of application that we are
+
+00:11:04.680 --> 00:11:07.160
+holding or the kind of application that we are going to
+
+00:11:07.160 --> 00:11:12.960
+host, it requires a bare minimum configuration means a bare
+
+00:11:12.960 --> 00:11:16.220
+minimum machine. Above that, everything is fine. But below
+
+00:11:16.220 --> 00:11:19.540
+that, this machine is not like your application is not going
+
+00:11:19.540 --> 00:11:23.880
+to work. So first of all, just search EC2, click on EC2 and
+
+00:11:23.880 --> 00:11:28.060
+go inside EC2. Now once you will come inside this EC2 for
+
+00:11:28.060 --> 00:11:30.640
+the very first time, so you will be able to see a launch
+
+00:11:30.640 --> 00:11:33.400
+instance option. So just follow along with my mouse cursor.
+
+00:11:33.640 --> 00:11:37.220
+So here you will be able to see a launch instances. So I'll
+
+00:11:37.220 --> 00:11:41.520
+just click on this launch instance and here I will be able
+
+00:11:41.520 --> 00:11:46.560
+to land this kind of interface. So where it is going to help
+
+00:11:46.560 --> 00:11:51.140
+me out in terms of creating a EC2 instances. So here the
+
+00:11:51.140 --> 00:11:54.600
+very first part that you have to do is fill this particular
+
+00:11:54.600 --> 00:11:57.980
+form and select all of these like a required things for your
+
+00:11:57.980 --> 00:12:01.220
+EC2 instances. So here, first of all, it is looking for a
+
+00:12:01.220 --> 00:12:03.960
+name. So I'm going to give a name. So S U D H underscore
+
+00:12:03.960 --> 00:12:06.840
+Euron. So let's suppose this is a name which I have given
+
+00:12:06.840 --> 00:12:10.920
+fine. You can try to give any other name of your choice.
+
+00:12:11.000 --> 00:12:14.360
+That's completely okay. And then it is looking for a
+
+00:12:14.360 --> 00:12:17.640
+machine, right? So what kind of images you will be looking
+
+00:12:17.640 --> 00:12:21.740
+for inside your machine? So I want Ubuntu image inside my
+
+00:12:21.740 --> 00:12:25.540
+machine. So just try to select Ubuntu, Ubuntu as an
+
+00:12:25.540 --> 00:12:28.240
+operating system, yeah, Ubuntu as an operating system. You
+
+00:12:28.240 --> 00:12:31.080
+can try to select over here. They have other categories as
+
+00:12:31.080 --> 00:12:33.940
+well, but yeah, they have thousands of images available. But
+
+00:12:33.940 --> 00:12:37.220
+I'm going to select a Ubuntu as simple as that. You can
+
+00:12:37.220 --> 00:12:40.820
+select Mac OS as well. Even Amazon based Linux is available.
+
+00:12:41.080 --> 00:12:43.300
+You can even go ahead with the Windows machine. You can go
+
+00:12:43.300 --> 00:12:46.680
+with the Red Hat, SUSE, which is nothing but a variant of I
+
+00:12:46.680 --> 00:12:50.460
+can say a Linux machine itself. Or Debian, or maybe you can
+
+00:12:50.460 --> 00:12:54.200
+try to browse any other images. But yeah, Ubuntu is going to
+
+00:12:54.200 --> 00:12:58.160
+work fine for me. Yes, please explain in which situation we
+
+00:12:58.160 --> 00:13:00.760
+choose which one. See everything is going to work in every
+
+00:13:00.760 --> 00:13:03.560
+situation. It's just our operating system layer. So let's
+
+00:13:03.560 --> 00:13:05.740
+suppose if I'm comfortable with the Linux command in that
+
+00:13:05.740 --> 00:13:08.920
+case, I can go ahead with any of these variants Red Hat,
+
+00:13:09.040 --> 00:13:11.800
+SUSE, Debian or Ubuntu. If I'm comfortable with my Mac
+
+00:13:11.800 --> 00:13:13.720
+operating system, so in that case I can go ahead with the
+
+00:13:13.720 --> 00:13:16.380
+Mac operating system. If I'm comfortable with the Windows
+
+00:13:16.380 --> 00:13:18.760
+machine. So in that, in that case, I can go ahead with that.
+
+00:13:18.780 --> 00:13:21.040
+I can go ahead with the Windows machine. But yeah, Ubuntu is
+
+00:13:21.040 --> 00:13:23.940
+going to be one of the standard one. So simple. Let's go
+
+00:13:23.940 --> 00:13:27.720
+ahead with that. Now here, so it is asking you to like give
+
+00:13:27.720 --> 00:13:30.920
+a number of instances that you will be looking for. So as of
+
+00:13:30.920 --> 00:13:33.800
+now, I'm looking for only one instance. By the way, if I'm
+
+00:13:33.800 --> 00:13:36.460
+looking for maybe a hundreds of instances, I can try to give
+
+00:13:36.460 --> 00:13:40.180
+that as well. Yeah. So I will be able to like get 100
+
+00:13:40.180 --> 00:13:43.440
+instances as well. But as of now, only one instance is
+
+00:13:43.440 --> 00:13:48.860
+something which is required for me. Now. So here. Uh. So
+
+00:13:48.860 --> 00:13:51.960
+here, Ubuntu machine I have selected. Now this is going to
+
+00:13:51.960 --> 00:13:54.900
+be like a same. Just leave it. Right. Just leave it. Leave
+
+00:13:54.900 --> 00:13:58.840
+this one. Now, architecture wise. So again, 64 bit. This is
+
+00:13:58.840 --> 00:14:01.740
+going to work for me. I don't have to worry about that. Now
+
+00:14:01.740 --> 00:14:04.880
+here you have to come instance type. So here you will be
+
+00:14:04.880 --> 00:14:07.880
+able to select your compute power by the way. Right. So
+
+00:14:07.880 --> 00:14:09.900
+instance type means compute power. You will be able to
+
+00:14:09.900 --> 00:14:14.820
+select. So just click on this one and uh, here. So like a
+
+00:14:14.820 --> 00:14:17.940
+with T2 nano, these are the names by the way. These are the
+
+00:14:17.940 --> 00:14:21.740
+names which, uh, AWS or you can say, uh, nomenclature that
+
+00:14:21.740 --> 00:14:25.980
+AWS has given to their machine. So T2 series and inside a T2
+
+00:14:25.980 --> 00:14:28.840
+series, we have a nano, we have micro, we have a small, we
+
+00:14:28.840 --> 00:14:31.520
+have medium, we have large, we have extra large. So such
+
+00:14:31.520 --> 00:14:34.620
+kind of machines we will be having. Then we have a C series
+
+00:14:34.620 --> 00:14:39.040
+machine over here. Then we have like, uh, something D series
+
+00:14:39.040 --> 00:14:42.180
+machine over here. Then we have a G series machine over
+
+00:14:42.180 --> 00:14:45.540
+here. And if you will go and check all of these machines, so
+
+00:14:45.540 --> 00:14:47.700
+obviously all of these machines are coming with. A
+
+00:14:47.700 --> 00:14:50.380
+different, different kind of a configuration. So if I'll
+
+00:14:50.380 --> 00:14:53.880
+talk about a T2 micro over here, so it gives you one virtual
+
+00:14:53.880 --> 00:14:57.900
+core CPU 0.5 gigabyte of memory. And, uh, that is something
+
+00:14:57.900 --> 00:15:00.520
+that you will be able to get along with that. You will be
+
+00:15:00.520 --> 00:15:03.720
+able to see even a pricing part that what it is going to
+
+00:15:03.720 --> 00:15:07.720
+cost you, right? What it is going to cost you. So on demand
+
+00:15:07.720 --> 00:15:10.180
+Linux based pricing. So if you are running like a Linux
+
+00:15:10.180 --> 00:15:13.220
+based, uh, images, then in that case, it is going to cost
+
+00:15:13.220 --> 00:15:17.560
+you 0.0062 USD per hour. Uh, if I'm talking about a nano.
+
+00:15:17.560 --> 00:15:21.620
+And, uh, if I'm like, uh, running a windows based, uh,
+
+00:15:21.700 --> 00:15:24.640
+images inside this machine, because this is, this is just a
+
+00:15:24.640 --> 00:15:27.020
+machine, a bare cell, you can say, or a machine, it is going
+
+00:15:27.020 --> 00:15:30.000
+to give you on top of that. So obviously these images will
+
+00:15:30.000 --> 00:15:33.360
+be installed. So if I'm going ahead with the windows based
+
+00:15:33.360 --> 00:15:35.740
+installation, in that case, it is going to cost me a little
+
+00:15:35.740 --> 00:15:38.540
+bit more, maybe because of licensing, right? Because windows
+
+00:15:38.540 --> 00:15:42.520
+machine comes with the licensing, right? So they have, they
+
+00:15:42.520 --> 00:15:44.880
+have already given you all of those details and with each
+
+00:15:44.880 --> 00:15:46.960
+and every machine, you will be able to see all of those
+
+00:15:46.960 --> 00:15:50.800
+details. Okay. Now the kind of our application that we are
+
+00:15:50.800 --> 00:15:54.800
+going to run today. So the bare minimum requirement is going
+
+00:15:54.800 --> 00:15:58.960
+to be at least two V core CPU, right? The kind of
+
+00:15:58.960 --> 00:16:02.180
+application that we are going to run. And at minimum, we
+
+00:16:02.180 --> 00:16:06.640
+need four gigabyte of a main memory. This is a bare minimum
+
+00:16:06.640 --> 00:16:10.260
+requirement for my today's application. So if someone is
+
+00:16:10.260 --> 00:16:12.460
+going to select it to a small, if someone is going to select
+
+00:16:12.460 --> 00:16:15.260
+it to micro nano, you will be able to do a setup, but your
+
+00:16:15.260 --> 00:16:18.520
+application is not going to work. Okay. So keeping that in a
+
+00:16:18.520 --> 00:16:22.220
+mind, so we are going to select basically a T2 medium and
+
+00:16:22.220 --> 00:16:25.080
+above that, anything is going to be fine. Yeah. So you can
+
+00:16:25.080 --> 00:16:27.320
+select T2 large. You can select extra large. You can try to
+
+00:16:27.320 --> 00:16:30.800
+select maybe like a, you know, C series, D series, G series.
+
+00:16:31.200 --> 00:16:34.240
+That's completely fine. But this is a bare minimum
+
+00:16:34.240 --> 00:16:39.800
+requirement. So I need a T2 medium over here. Simple. So
+
+00:16:39.800 --> 00:16:42.160
+just go ahead with T2 medium. So where it is going to give
+
+00:16:42.160 --> 00:16:44.860
+you two virtual core CPU, four gigabyte of a, you know,
+
+00:16:44.880 --> 00:16:53.100
+memory. Okay. And then so with my Ubuntu, so it is going to
+
+00:16:53.100 --> 00:17:00.760
+cost me 0.0531 USD per hour. So on an average it is going to
+
+00:17:00.760 --> 00:17:04.640
+cost you approximately in Indian currency, if this machine
+
+00:17:04.640 --> 00:17:09.720
+is running for an entire month, around 6,000 to 7,000 rupees
+
+00:17:09.720 --> 00:17:12.840
+INR. So this is something that it is going to cost you in
+
+00:17:12.840 --> 00:17:16.840
+dollar. It is going to cost you like 80, 90 dollar. In a
+
+00:17:16.840 --> 00:17:20.720
+month, if your machine is running for an entire month, that
+
+00:17:20.720 --> 00:17:25.280
+will be the cost that you will end up getting. So let's go
+
+00:17:25.280 --> 00:17:28.040
+ahead and select this particular machine. And again, cost is
+
+00:17:28.040 --> 00:17:30.780
+given to you per hour cost is given to you. So per hour into
+
+00:17:30.780 --> 00:17:33.860
+24 into 30, that is going to be a monthly cost. So you can
+
+00:17:33.860 --> 00:17:36.380
+try to do a math on your own and then you can try to do a
+
+00:17:36.380 --> 00:17:40.460
+conversion of USD into INR or whatever currency that you are
+
+00:17:40.460 --> 00:17:43.400
+following in your like a country. So you can try to select
+
+00:17:43.400 --> 00:17:46.440
+that particular part. So here, just go ahead and select T2
+
+00:17:46.440 --> 00:17:51.100
+medium. And once you are going to select a T2 medium, then
+
+00:17:51.100 --> 00:17:55.320
+maybe you can come on next side. So key pair login. So we
+
+00:17:55.320 --> 00:17:59.000
+have already seen that that to login into a GPU, we have
+
+00:17:59.000 --> 00:18:01.660
+created a private key, right. And with the help of private
+
+00:18:01.660 --> 00:18:04.040
+key, public key we have already attached and with the help
+
+00:18:04.040 --> 00:18:07.920
+of private key, so we used to basically do a login. So let's
+
+00:18:07.920 --> 00:18:11.440
+suppose from my machine or from any other machine, so I
+
+00:18:11.440 --> 00:18:14.440
+would like to login into the machine. Which I am creating on
+
+00:18:14.440 --> 00:18:17.240
+a AWS. So obviously I need a key, like I have to attach a
+
+00:18:17.240 --> 00:18:20.760
+key. So here maybe you can try to select an existing key if
+
+00:18:20.760 --> 00:18:24.180
+you have. So I already have one key, but I will not be using
+
+00:18:24.180 --> 00:18:27.100
+that. I'll try to click on create a new key pair. So just
+
+00:18:27.100 --> 00:18:30.620
+click over here, right. And RSA token based key, I would
+
+00:18:30.620 --> 00:18:33.940
+like to create and then just select PPK. If you would like
+
+00:18:33.940 --> 00:18:37.380
+to like, you know, login through a putty. And if you are
+
+00:18:37.380 --> 00:18:40.400
+going to do an open SSH in that case, you can try to use
+
+00:18:40.400 --> 00:18:43.820
+this PEM key. So PPK key. We all are aware about it. We have
+
+00:18:43.820 --> 00:18:47.000
+already used this PPK kind of a key so many times, even in
+
+00:18:47.000 --> 00:18:51.460
+past, right. So just try to like click on this PPK key under
+
+00:18:51.460 --> 00:18:55.280
+RSA and then click on create key pair. You can give a key
+
+00:18:55.280 --> 00:19:02.980
+name. So SUDH, Huron, URI, new, today date is 16th, right.
+
+00:19:03.060 --> 00:19:06.680
+So that I can remember. So 16th November, this is the key
+
+00:19:06.680 --> 00:19:10.500
+name which I have given so that I can remember. So yeah. So
+
+00:19:10.500 --> 00:19:13.280
+once you are going to click, it will be able to download
+
+00:19:13.280 --> 00:19:16.060
+your key inside your local system. So my key has been
+
+00:19:16.060 --> 00:19:19.980
+downloaded and I can try to use it even in future. And this
+
+00:19:19.980 --> 00:19:22.700
+is a key which has been attached as you can see, right. This
+
+00:19:22.700 --> 00:19:24.920
+is a key which has been attached with respect to this
+
+00:19:24.920 --> 00:19:28.100
+particular instances as simple as that. Now in a later
+
+00:19:28.100 --> 00:19:30.560
+stage, I can use the same key so that with the help of
+
+00:19:30.560 --> 00:19:34.000
+putty, I will be able to log in with the help of maybe some
+
+00:19:34.000 --> 00:19:37.000
+file transfer things. I will be able to transfer a file from
+
+00:19:37.000 --> 00:19:40.200
+my local system to an AWS. Any file which I want. I can
+
+00:19:40.200 --> 00:19:43.040
+actually use it. I can do a transfer as simple as that. Now
+
+00:19:43.040 --> 00:19:46.180
+coming to the next section, right. Coming to the next
+
+00:19:46.180 --> 00:19:50.080
+section. So by default, they have checked create security
+
+00:19:50.080 --> 00:19:54.540
+group and inside that allow SSS traffic from anywhere. So 0
+
+00:19:54.540 --> 00:19:59.020
+.0.0.0 slash masking 0, right. So it simply means that that
+
+00:19:59.020 --> 00:20:03.820
+we are going to allow traffic, right. And then allow HTTPS
+
+00:20:03.820 --> 00:20:07.040
+traffic, allow HTTP traffic from the internet. So just
+
+00:20:07.040 --> 00:20:09.820
+select everything. Yeah. Just select everything by default.
+
+00:20:10.020 --> 00:20:12.920
+So this two option will not be selected, but selected,
+
+00:20:13.020 --> 00:20:16.040
+right. So from HTTPS, we are allowing it and from HTTP, we
+
+00:20:16.040 --> 00:20:19.760
+are going to allow it. Even in later stage, if I forgot to
+
+00:20:19.760 --> 00:20:22.120
+like do these things, even in later stage, I can go and I
+
+00:20:22.120 --> 00:20:24.600
+can change a setting. So once my machine will be launched,
+
+00:20:24.760 --> 00:20:28.240
+this setting can be modified even in a later stage. That's
+
+00:20:28.240 --> 00:20:34.000
+completely fine. Okay. Now, so our machine is ready. Our
+
+00:20:34.000 --> 00:20:37.620
+machine configuration is two virtual core CPU, 4 gigabyte of
+
+00:20:37.620 --> 00:20:40.960
+a RAM. Okay. My main memory, right. We need hard disk as
+
+00:20:40.960 --> 00:20:44.140
+well, right. We need hard disk as well, SSD or HSD we need.
+
+00:20:44.280 --> 00:20:49.460
+So here, uh, minimum hard disk requirement is 20 GB. So by
+
+00:20:49.460 --> 00:20:52.060
+default, they're giving you eight, but my application size
+
+00:20:52.060 --> 00:20:56.360
+itself is 8 GB. So if my application size itself is 8 GB. So
+
+00:20:56.360 --> 00:20:59.880
+in that case, I need some buffer memory as well. So here I'm
+
+00:20:59.880 --> 00:21:03.920
+going to give a 20 gigabyte, so 20 gigabyte of storage I'm
+
+00:21:03.920 --> 00:21:08.240
+trying to add over here as simple as that. Okay. So for the
+
+00:21:08.240 --> 00:21:11.360
+sake of a general purpose SSD, I'm going to attach a G3, a
+
+00:21:11.360 --> 00:21:15.480
+GP3, like a, you can say, uh, generations, right. I'm going
+
+00:21:15.480 --> 00:21:18.700
+to attach it. So simple, right. General purpose, like a SSD
+
+00:21:18.700 --> 00:21:21.920
+GP3, I'm going to attach of 20 gigabyte. If I would like to
+
+00:21:21.920 --> 00:21:24.920
+attach more such kind of this one, I can try to attach it.
+
+00:21:25.000 --> 00:21:26.920
+So it's under my control. How much like a, you know, hard
+
+00:21:26.920 --> 00:21:29.800
+disk I would like to attach. I can try to even click on add
+
+00:21:29.800 --> 00:21:33.180
+new volume. So it will try to add more hard disk inside my
+
+00:21:33.180 --> 00:21:36.660
+system. So I'm able to select my hard disk. I'm able to
+
+00:21:36.660 --> 00:21:40.000
+select my virtual core. I'm able to select my RAM. All three
+
+00:21:40.000 --> 00:21:42.100
+selection is done. And this is something which is required
+
+00:21:42.100 --> 00:21:45.960
+for any computer, like even a laptop that you are using. It
+
+00:21:45.960 --> 00:21:48.520
+must be having some virtual core. It must be having some
+
+00:21:48.520 --> 00:21:51.340
+sort of a RAM and must be having some sort of a hard disk.
+
+00:21:51.480 --> 00:21:54.580
+These three things are required. And yeah, so I'm able to do
+
+00:21:54.580 --> 00:21:58.300
+a setup for all those three things. Nothing else is
+
+00:21:58.300 --> 00:22:02.140
+required. Nothing else is required. Now I can directly go
+
+00:22:02.140 --> 00:22:05.260
+and I can try to click on launch instance. It is going to
+
+00:22:05.260 --> 00:22:07.580
+take maybe 30 seconds of time or maybe max to max. 60
+
+00:22:07.580 --> 00:22:12.240
+seconds of time for me and my instance will be ready. So are
+
+00:22:12.240 --> 00:22:15.060
+we able to do all of these things guys? So before clicking
+
+00:22:15.060 --> 00:22:17.660
+on launch instance, are we able to do all of these things?
+
+00:22:18.020 --> 00:22:20.700
+Anyone who is having any doubt, any concern, any confusion
+
+00:22:20.700 --> 00:22:22.200
+with any points that I've shown you?
+
+00:22:26.400 --> 00:22:29.100
+T3 medium is not active for free version. Yeah, in a free
+
+00:22:29.100 --> 00:22:31.360
+version, so you will be having access of, I think micro, but
+
+00:22:31.360 --> 00:22:34.540
+micro is not going to work. So like you, you have to like go
+
+00:22:34.540 --> 00:22:35.140
+ahead with this one.
+
+00:22:38.320 --> 00:22:40.980
+Which machine? Okay. So machine wise, basically you have to
+
+00:22:40.980 --> 00:22:44.300
+select T2 medium minimum. Okay. So any machine, so which is
+
+00:22:44.300 --> 00:22:48.040
+having two virtual core CPUs and minimum 4GB of RAM. So that
+
+00:22:48.040 --> 00:22:50.680
+is a bare minimum requirement for my today's application.
+
+00:22:52.660 --> 00:22:55.440
+Yeah. It is a free version or a paid version. In a free
+
+00:22:55.440 --> 00:22:58.460
+version, you will be able to get a nano or like a micro. I
+
+00:22:58.460 --> 00:23:00.720
+think max to max, they are giving you one virtual core CPU,
+
+00:23:00.920 --> 00:23:03.960
+one gigabyte of a memory. But yeah, so that is, that is not
+
+00:23:03.960 --> 00:23:06.500
+going to like be a sufficient for this application.
+
+00:23:09.360 --> 00:23:12.360
+T2 medium will not be eligible in a free version. So maybe
+
+00:23:12.360 --> 00:23:15.220
+you have to like activate your paid version. How
+
+00:23:18.480 --> 00:23:21.580
+much should I pay? So I think if you are running for maybe
+
+00:23:21.580 --> 00:23:25.900
+like a payment by, so it is, it is already giving you, so
+
+00:23:25.900 --> 00:23:28.140
+giving you this price. So let's suppose if I'm running it
+
+00:23:28.140 --> 00:23:32.020
+for one hour, so in that situation, it is going to cost you
+
+00:23:32.020 --> 00:23:38.640
+0.06 kind of a USD. So 0.06 USD means what? In INR if I have
+
+00:23:38.640 --> 00:23:42.140
+to convert, maybe I can convert it as per the current rate.
+
+00:23:42.500 --> 00:23:46.840
+So 0.06 USD to INR. Yeah.
+
+00:23:52.740 --> 00:23:56.420
+Yeah. So approximately 5.3 rupees. So 5 to 6 rupees, it is
+
+00:23:56.420 --> 00:23:59.200
+going to cost you for one hour. That is the cost that will
+
+00:23:59.200 --> 00:23:59.700
+come on you.
+
+00:24:04.250 --> 00:24:06.930
+This is your paid version. Yeah. My entire account is paid
+
+00:24:06.930 --> 00:24:09.850
+version because like I have to show many application. I do a
+
+00:24:09.850 --> 00:24:13.090
+lot of experimentation. So obviously a free version accounts
+
+00:24:13.090 --> 00:24:16.050
+is not applicable for me in any situation.
+
+00:24:19.200 --> 00:24:24.520
+I have chosen C7i flex large. Okay. So I'm like your wish,
+
+00:24:24.640 --> 00:24:29.720
+anything above 2GB, sorry, anything above 4GB of a RAM. I
+
+00:24:29.720 --> 00:24:31.660
+have chosen C7i flex large. And 2 virtual core is going to
+
+00:24:31.660 --> 00:24:34.620
+work for me. You can go and select as big machine as
+
+00:24:34.620 --> 00:24:38.460
+possible. But yes, try to check its cost as well. It is
+
+00:24:38.460 --> 00:24:43.680
+going to cost you on a hourly basis. So be careful. For one
+
+00:24:43.680 --> 00:24:48.300
+month, how much paid 6,000, 7,000 rupees for T2 medium. I
+
+00:24:48.300 --> 00:24:50.740
+mean like I have already given you like hourly charge,
+
+00:24:50.800 --> 00:24:54.260
+right? So anyone can convert into a monthly one. I mean like
+
+00:24:54.260 --> 00:24:55.400
+why you are even asking this question?
+
+00:25:01.040 --> 00:25:03.840
+Okay. So done guys. So I click on launch instance.
+
+00:25:10.010 --> 00:25:12.890
+Yeah. Okay. So I'm going to click on this launch instance
+
+00:25:12.890 --> 00:25:15.650
+and like I said, so it is going to take maybe like a couple
+
+00:25:15.650 --> 00:25:19.950
+of second of time and my machine will be ready. So here is
+
+00:25:19.950 --> 00:25:23.690
+my machine. So I can click and I can check the status and as
+
+00:25:23.690 --> 00:25:27.990
+you can see, so it is trying to provision my machine. It
+
+00:25:27.990 --> 00:25:30.970
+will, it will take maybe like some time. So I can just try
+
+00:25:30.970 --> 00:25:35.790
+to click on refresh and yeah, so instance state is running.
+
+00:25:36.910 --> 00:25:41.070
+Everything looks fine to me. My private IP address is
+
+00:25:41.070 --> 00:25:44.650
+available. My public DNS is available. Yeah. So all of these
+
+00:25:44.650 --> 00:25:47.770
+things are available. So just let me know guys, once you are
+
+00:25:47.770 --> 00:25:50.970
+able to like a launch your machine, then we'll go with the
+
+00:25:50.970 --> 00:25:51.330
+next step.
+
+00:26:28.480 --> 00:26:31.720
+Yeah. So how many of you are able to launch the machine and
+
+00:26:31.720 --> 00:26:33.800
+for how many of you like this is working?
+
+00:26:40.300 --> 00:26:42.480
+Okay. So working, working, working great.
+
+00:26:53.710 --> 00:26:56.750
+So how many of you are able to see this connect button? So
+
+00:26:56.750 --> 00:26:59.330
+this, if this connect button is active, this one, the
+
+00:26:59.330 --> 00:27:01.570
+highlighted one, right? If this button is active, this one
+
+00:27:01.570 --> 00:27:04.150
+is active. Then in that case, I think we are good to go.
+
+00:27:07.020 --> 00:27:09.220
+So are you able to see your connect active button guys?
+
+00:27:09.380 --> 00:27:17.590
+Everyone? Yes. Okay, cool. So just try to do one thing. So
+
+00:27:17.590 --> 00:27:22.310
+just try to click on connect. Yeah. And again, so once you
+
+00:27:22.310 --> 00:27:25.390
+are going to click on this connect, you will be landing into
+
+00:27:25.390 --> 00:27:28.930
+this particular screen and here. So again, you will be able
+
+00:27:28.930 --> 00:27:31.690
+to like a see a button called as connect. So just try to
+
+00:27:31.690 --> 00:27:34.070
+click on this connect once again. So connect and then
+
+00:27:34.070 --> 00:27:38.530
+connect. Okay. So that will give you a CLI. So fail to
+
+00:27:38.530 --> 00:27:41.930
+connect to your instances. Try again later. Okay. Not an
+
+00:27:41.930 --> 00:27:42.150
+issue.
+
+00:27:46.960 --> 00:27:49.180
+AWS compute optimizer finding.
+
+00:28:39.380 --> 00:28:41.960
+Okay. So this time it is not giving me issue. So like I
+
+00:28:41.960 --> 00:28:44.800
+said, it is going to take couple of minutes and then only it
+
+00:28:44.800 --> 00:28:47.520
+is going to allow you. So just simple click on this connect
+
+00:28:47.520 --> 00:28:49.480
+button. So once you are able to click on this connect
+
+00:28:49.480 --> 00:28:52.520
+button, you will be able to see a next connect button. Maybe
+
+00:28:52.520 --> 00:28:54.700
+you will have to wait for a couple of minutes so that you
+
+00:28:54.700 --> 00:28:57.180
+know your machine will be like a warm and up and running.
+
+00:28:57.180 --> 00:28:59.860
+Now, once your machine is warm up and running, so you can
+
+00:28:59.860 --> 00:29:02.560
+click on connect and you will be able to see this SSH
+
+00:29:02.560 --> 00:29:06.060
+basically, or you can see a console, a similar kind of a
+
+00:29:06.060 --> 00:29:09.240
+console. You will be able to get even from a putty. So here
+
+00:29:09.240 --> 00:29:12.020
+is my machine. I'm able to access my machine through this
+
+00:29:12.020 --> 00:29:15.400
+interface, through this SSH, I'm able to like access my
+
+00:29:15.400 --> 00:29:18.600
+machine. And if I would like to access my machine from my
+
+00:29:18.600 --> 00:29:21.940
+local, like a system from my windows machine. So in that
+
+00:29:21.940 --> 00:29:25.160
+case, putty is an option for me for windows especially if
+
+00:29:25.160 --> 00:29:28.020
+I'm using Mac or if I'm using Linux. Then SSH is going to be
+
+00:29:28.020 --> 00:29:30.920
+the another option and I will be able to log into my machine
+
+00:29:31.300 --> 00:29:34.180
+and that is a reason. So we have downloaded a PPK file,
+
+00:29:34.300 --> 00:29:38.200
+right? PPK file. So I can use a, you know, putty or I can
+
+00:29:38.200 --> 00:29:41.280
+directly come into this console without even doing an
+
+00:29:41.280 --> 00:29:43.700
+installation of the putty. Anything is going to work fine
+
+00:29:43.700 --> 00:29:46.780
+for me. So are you able to see this black console, black
+
+00:29:46.780 --> 00:29:51.400
+screen? Yeah. Are you able to see this black screen guys?
+
+00:29:51.520 --> 00:29:56.400
+Everyone? Yes. Fine. It will take some time. So once you are
+
+00:29:56.400 --> 00:29:58.180
+going to click on this connect. So maybe for, for a couple
+
+00:29:58.180 --> 00:29:59.040
+of minutes. This is the first time it is going to fail
+
+00:29:59.040 --> 00:30:02.400
+because it tried to like, you know, spin your machine and
+
+00:30:02.400 --> 00:30:05.400
+again in some time, in just one or two minutes of time,
+
+00:30:05.460 --> 00:30:07.900
+again, just refresh and click. It will be able to connect.
+
+00:30:08.020 --> 00:30:12.200
+This is how easy it is to access your machine as simple as
+
+00:30:12.200 --> 00:30:15.620
+that. So this is your machine and technically this is your
+
+00:30:15.620 --> 00:30:19.220
+machine. If you'll go back to instances and here you will be
+
+00:30:19.220 --> 00:30:21.160
+able to see a list of instances and this is your instance
+
+00:30:21.160 --> 00:30:25.360
+ID. Click over here and then this is your public DNS. So
+
+00:30:25.360 --> 00:30:30.720
+basically this is a URL. For your particular machine. So
+
+00:30:30.720 --> 00:30:34.160
+with the help of this URL, you will be able to reach out to
+
+00:30:34.160 --> 00:30:36.940
+your machine. So if you have to do maybe a login through a
+
+00:30:36.940 --> 00:30:40.600
+party, so obviously I need a public DNS. Now this is the
+
+00:30:40.600 --> 00:30:42.980
+highlighted one, the highlighted one. You can try to use it
+
+00:30:42.980 --> 00:30:46.160
+and that is going to be your login URL and a password wise.
+
+00:30:46.440 --> 00:30:50.300
+You can try to use your, uh, like a private key, the key
+
+00:30:50.300 --> 00:30:53.200
+that we have already downloaded and in that manner. So you
+
+00:30:53.200 --> 00:30:56.900
+all will be able to log in as simple as that. So not a big
+
+00:30:56.900 --> 00:30:59.300
+deal, right? Not a big deal in terms of launching a machine
+
+00:30:59.300 --> 00:31:05.320
+now. Uh, so once we are here inside this particular machine,
+
+00:31:05.480 --> 00:31:08.940
+so we have to run some sort of a command so that I will be
+
+00:31:08.940 --> 00:31:12.500
+able to update my machine. So one by one, one by one, I'll
+
+00:31:12.500 --> 00:31:15.200
+start giving you a command. Just try to follow those
+
+00:31:15.200 --> 00:31:19.920
+commands and in some time, uh, like our UI interface or open
+
+00:31:19.920 --> 00:31:22.980
+web UI interface will be ready. So first of all, whenever we
+
+00:31:22.980 --> 00:31:26.820
+launch any kind of a machine, so we try to do some sort of a
+
+00:31:26.820 --> 00:31:30.180
+update. So one by one guys, I'm pasting this command over
+
+00:31:30.180 --> 00:31:33.780
+here and I will give you a command. So this is a command
+
+00:31:33.780 --> 00:31:37.560
+just to update my, like a packages inside a current machine.
+
+00:31:37.820 --> 00:31:41.860
+So run this particular command first. I have already pinged
+
+00:31:41.860 --> 00:31:44.680
+you inside a chat. Let me ping you once again. So yeah, just
+
+00:31:44.680 --> 00:31:45.100
+use this.
+
+00:31:52.640 --> 00:31:56.160
+So by doing this, we are just trying to update our machine.
+
+00:31:56.400 --> 00:32:01.340
+It will take some time, maybe like a couple of minutes, PPK
+
+00:32:01.340 --> 00:32:04.480
+key and T3 medium, T2 medium, you can select T3 medium. Also
+
+00:32:04.480 --> 00:32:05.740
+you can select. This is completely okay.
+
+00:32:08.680 --> 00:32:11.680
+So our very first command guys, just try to update your
+
+00:32:11.680 --> 00:32:16.240
+system, the system that you have launched and this is a,
+
+00:32:16.360 --> 00:32:20.500
+like a general procedure and if you remember when we have
+
+00:32:20.500 --> 00:32:23.660
+launched our GPU instances, even at that point of time, we
+
+00:32:23.660 --> 00:32:29.450
+have like a fired this kind of a command. So here, if anyone
+
+00:32:29.450 --> 00:32:32.210
+would like to understand a meaning of this command, so I can
+
+00:32:32.210 --> 00:32:35.130
+give you explanation. So here, those who don't understand
+
+00:32:35.130 --> 00:32:38.570
+Linux, those who understand Linux in that case, the command
+
+00:32:38.570 --> 00:32:41.630
+explanation is not required because it's just a simple Linux
+
+00:32:41.630 --> 00:32:44.930
+command. Anyone and everyone can understand it, right? So
+
+00:32:44.930 --> 00:32:47.930
+here, sudo is nothing but I'm running this command on a root
+
+00:32:47.930 --> 00:32:51.930
+user, basically admin, you can say. APT is nothing but a
+
+00:32:51.930 --> 00:32:55.330
+package manager. So basically the way we were using pip, pip
+
+00:32:55.330 --> 00:32:58.310
+is nothing but a Python package manager or UV. UV is also a
+
+00:32:58.310 --> 00:33:01.050
+package manager. So in the similar manner, in case of
+
+00:33:01.050 --> 00:33:05.150
+Ubuntu, so APT is basically a Ubuntu based package manager.
+
+00:33:05.150 --> 00:33:07.790
+So whatever, like, you know, things that we try to create,
+
+00:33:07.890 --> 00:33:10.450
+whatever library that we try to create. So we try to release
+
+00:33:10.450 --> 00:33:14.050
+it under APT. So APT is nothing but package manager for
+
+00:33:14.050 --> 00:33:17.890
+Ubuntu. Update means update is just a command inside Ubuntu
+
+00:33:17.890 --> 00:33:22.610
+and, and upgrade why. So basically it is going to ask a lot
+
+00:33:22.610 --> 00:33:26.030
+of yes, yes, yes. So instead of doing that, so we have given
+
+00:33:26.030 --> 00:33:28.670
+update why means all yes, just install each and everything.
+
+00:33:30.230 --> 00:33:33.630
+So this is what we have done just now. Now once this is
+
+00:33:33.630 --> 00:33:36.530
+done. So then we are going to install little bit of
+
+00:33:36.530 --> 00:33:39.810
+dependencies. So once I'm able to update my system, then
+
+00:33:39.810 --> 00:33:43.030
+this is the next command that we are going to execute. So
+
+00:33:43.030 --> 00:33:46.790
+here is the next command goes inside your chat, do it. And
+
+00:33:46.790 --> 00:33:50.710
+as you can see, so yes, I'm able to update my system. So let
+
+00:33:50.710 --> 00:33:54.650
+me like run the next command, basically. So command I have
+
+00:33:54.650 --> 00:33:59.650
+already pinged you inside your chat. Now let me explain you
+
+00:33:59.650 --> 00:34:02.330
+the meaning of this command. So sudo apt. So again, sudo is
+
+00:34:02.330 --> 00:34:03.870
+nothing but root user. APT is nothing but root user. APT is
+
+00:34:03.870 --> 00:34:06.690
+nothing but a package manager install. And then we are
+
+00:34:06.690 --> 00:34:09.410
+trying to call what so we are trying to call CA certificate
+
+00:34:09.410 --> 00:34:15.550
+curl G N U P G and ISB release. So here CA certificate is
+
+00:34:15.550 --> 00:34:19.050
+nothing but it is going to help me out in terms of like
+
+00:34:19.050 --> 00:34:23.790
+verifying a HTTPS certification, a secure certificate, HTTPS
+
+00:34:23.790 --> 00:34:27.350
+certificate curl. I think we all know, right? So curl is
+
+00:34:27.350 --> 00:34:30.690
+nothing but kind of a command by which I will be able to hit
+
+00:34:30.690 --> 00:34:33.850
+any kind of a URL, any kind of API. Okay. So we are using
+
+00:34:33.850 --> 00:34:38.630
+it. So that is a package we are trying to install. So G N U
+
+00:34:38.630 --> 00:34:41.510
+P G. So basically it's tool for encryption and signature,
+
+00:34:41.650 --> 00:34:45.470
+which has been used. And LSB release is nothing but so it
+
+00:34:45.470 --> 00:34:48.730
+has been used to get information about Ubuntu version. So
+
+00:34:48.730 --> 00:34:52.050
+these are just a package. For example, in Python, we try to
+
+00:34:52.050 --> 00:34:55.050
+install pandas, then numpy, then matplotlib, then Seaborn,
+
+00:34:55.130 --> 00:34:58.270
+then TensorFlow, then PyTorch in a similar manner. So we are
+
+00:34:58.270 --> 00:35:00.690
+trying to install basically the CA certificate, this curl
+
+00:35:00.690 --> 00:35:03.830
+with GNPU ISB release. So these are the packages. These are
+
+00:35:03.830 --> 00:35:05.430
+the packages. So that we are trying to install it. This is
+
+00:35:05.430 --> 00:35:08.930
+what it means. Done everyone. Installation of package.
+
+00:35:13.320 --> 00:35:13.800
+Yeah.
+
+00:35:25.750 --> 00:35:30.550
+Fine. Now, once you are able to do that, right, once you are
+
+00:35:30.550 --> 00:35:33.450
+able to do that, so basically what we have to do, so we have
+
+00:35:33.450 --> 00:35:37.710
+to like any anyone giving error. Okay. So why should not
+
+00:35:37.710 --> 00:35:40.250
+give you error if you are using a Ubuntu based machine, it's
+
+00:35:40.250 --> 00:35:46.690
+a simple Ubuntu command. Okay. So now what we are going to
+
+00:35:46.690 --> 00:35:50.670
+do. So we are basically going to create a database. We are
+
+00:35:50.670 --> 00:35:52.210
+going to create a directory and inside that directory. So we
+
+00:35:52.210 --> 00:35:56.490
+are going to basically keep our key rings for our docker. So
+
+00:35:56.490 --> 00:36:02.530
+here there is our next command, right? So this command I'm
+
+00:36:02.530 --> 00:36:06.170
+going to hit and this is going to create a directory for me.
+
+00:36:06.510 --> 00:36:09.790
+So just try to hit this command guys. I have already printed
+
+00:36:09.790 --> 00:36:14.310
+this command sudo mkdir hyphen p etc apt and inside apt so
+
+00:36:14.310 --> 00:36:14.670
+key rings.
+
+00:36:21.100 --> 00:36:24.840
+So inside that generally like we are going to hold all of
+
+00:36:24.840 --> 00:36:25.300
+our key.
+
+00:36:36.500 --> 00:36:40.280
+Now, so once we are able to do that, so we have to basically
+
+00:36:40.280 --> 00:36:44.720
+install a docker. So basically we are going to like use a
+
+00:36:44.720 --> 00:36:49.000
+docker and docker based open web UI image. And now so to run
+
+00:36:49.000 --> 00:36:51.760
+that obviously we need a docker installation. We need a
+
+00:36:51.760 --> 00:36:54.920
+docker setup inside our machine. Now keeping that in our
+
+00:36:54.920 --> 00:36:57.500
+mind. So this command comes into a picture and I'll give you
+
+00:36:57.500 --> 00:37:03.340
+an explanation about this command. So just try to hit this
+
+00:37:03.340 --> 00:37:06.300
+particular command. So curl command. And it is going to
+
+00:37:06.300 --> 00:37:10.400
+like, you know, download a docker from a repository and
+
+00:37:11.840 --> 00:37:14.360
+inside this key ring directory that we have created. So it
+
+00:37:14.360 --> 00:37:17.960
+is going to store a docker key, jpg.
+
+00:37:26.540 --> 00:37:29.320
+So run this command guys. It is going to like a, it will go
+
+00:37:29.320 --> 00:37:31.820
+to internet. Basically this is what curl does and curl is
+
+00:37:31.820 --> 00:37:33.920
+something that we have installed, right? As a package we
+
+00:37:33.920 --> 00:37:36.880
+have installed curl just now and we are using curl over here
+
+00:37:36.880 --> 00:37:38.860
+to download a docker.
+
+00:38:11.130 --> 00:38:14.710
+Okay. So now we are going to do a echo just like a, we are
+
+00:38:14.710 --> 00:38:17.210
+going to echo is nothing but a print. A statement. So the
+
+00:38:17.210 --> 00:38:19.970
+way we use to write a print. So in the case of a Linux, it's
+
+00:38:19.970 --> 00:38:23.250
+called as echo. So here it is going to like, you know, uh,
+
+00:38:23.330 --> 00:38:27.010
+show me like, uh, if there is such kind of a repository
+
+00:38:27.010 --> 00:38:29.510
+which is available. So yeah, just try to do a echo.
+
+00:38:33.170 --> 00:38:36.810
+Now just try to update, uh, so sudo apt update is the next
+
+00:38:36.810 --> 00:38:40.970
+command so that I will be able to, you know, update my
+
+00:38:40.970 --> 00:38:42.870
+docker engine and tools which I have installed.
+
+00:38:47.330 --> 00:38:53.320
+So just call sudo apt update once again. Now once this is
+
+00:38:53.320 --> 00:38:56.100
+done, right? Once this part is done. So then we can try to
+
+00:38:56.100 --> 00:38:59.900
+like, uh, just to double check. So we can try to call sudo
+
+00:38:59.900 --> 00:39:05.150
+apt install and all the docker packages to just try to call
+
+00:39:06.370 --> 00:39:11.430
+sudo apt install. So docker CLI, docker container,
+
+00:39:11.550 --> 00:39:16.030
+everything it will try to install. So basically we are
+
+00:39:16.030 --> 00:39:18.690
+trying to call docker C. docker C is nothing but a docker
+
+00:39:18.690 --> 00:39:21.610
+community edition. We are trying to call docker C CLI. So
+
+00:39:21.610 --> 00:39:25.490
+basically for docker C CLI edition, we are going to install,
+
+00:39:25.610 --> 00:39:28.610
+uh, for this community edition. And then we are trying to
+
+00:39:28.610 --> 00:39:31.970
+call a container dot IU. So container runtime, we are going
+
+00:39:31.970 --> 00:39:34.950
+to install over there. Then we are going to call docker
+
+00:39:34.950 --> 00:39:37.150
+build X plugins. So basically we are trying to like, uh,
+
+00:39:37.270 --> 00:39:41.350
+install a next gen plugin for a docker. And then we are
+
+00:39:41.350 --> 00:39:43.810
+going to call a docker compose plugin. So which is nothing
+
+00:39:43.810 --> 00:39:47.370
+but, uh, to build any kind of a package inside a docker. So
+
+00:39:47.370 --> 00:39:49.170
+we are trying to install it. So these are just a
+
+00:39:49.170 --> 00:39:51.550
+installation, the command which I have given to you. So
+
+00:39:51.550 --> 00:39:54.730
+again, sudo apt install, apt means package manager, install
+
+00:39:54.730 --> 00:39:57.210
+means install. And then like, uh, we have done that. We have
+
+00:39:57.210 --> 00:40:00.910
+given all the installables just in the way we try to do it
+
+00:40:00.910 --> 00:40:02.670
+in a pip, pip or maybe UV.
+
+00:40:09.040 --> 00:40:15.180
+Okay. So once Selvi move ahead guys, or I'm
+
+00:40:17.800 --> 00:40:23.580
+looking for your comment inside a chat. So if you are saying
+
+00:40:23.580 --> 00:40:25.920
+that we should wait, we will wait for a couple of more
+
+00:40:25.920 --> 00:40:26.280
+minutes.
+
+00:40:33.260 --> 00:40:36.400
+Okay. So I'm, I'm waiting. I'll wait for one or two minutes.
+
+00:40:41.950 --> 00:40:45.090
+Okay. Ram is saying done, done. Silp is saying done. Okay.
+
+00:40:45.150 --> 00:40:45.390
+Good.
+
+00:40:55.770 --> 00:40:56.570
+So now
+
+00:41:07.320 --> 00:41:13.640
+one,
+
+00:41:13.780 --> 00:41:16.400
+we are able to install docker light. Once we are able to
+
+00:41:16.400 --> 00:41:20.560
+install all the dependencies with respect to docker. So now
+
+00:41:20.560 --> 00:41:23.740
+let's do one thing so we can try to add Ubuntu user to a
+
+00:41:23.740 --> 00:41:27.020
+docker group. So inside a docker, there'll be a docker
+
+00:41:27.020 --> 00:41:30.460
+group. So pseudo user mode ag docker ubuntu. So we are just
+
+00:41:30.460 --> 00:41:33.420
+trying to add a ubuntu user to a docker group so that ubuntu
+
+00:41:33.420 --> 00:41:37.400
+user will be able to access a docker. So this is a command
+
+00:41:37.400 --> 00:41:43.200
+that you have to fire, pseudo mode user ag docker ubuntu. So
+
+00:41:43.200 --> 00:41:46.220
+user mode is nothing but is a command which has been used to
+
+00:41:46.220 --> 00:41:50.440
+modify the user and ag is nothing but a for user for a
+
+00:41:50.440 --> 00:41:53.480
+supplementary group, g for group basically and ubuntu is my
+
+00:41:53.480 --> 00:41:58.280
+actual username for this machine. Now, so once this is done,
+
+00:41:58.340 --> 00:42:01.300
+right, once this is done, so we can try to test a docker, we
+
+00:42:01.300 --> 00:42:03.680
+can try to like, you know, enable and start a docker
+
+00:42:03.680 --> 00:42:07.360
+services. To enable and start docker services, a command is
+
+00:42:07.360 --> 00:42:12.700
+basically this one. So this is going to enable and start my
+
+00:42:12.700 --> 00:42:16.800
+docker. So here we have written a pseudo systemctl enable
+
+00:42:16.800 --> 00:42:20.460
+docker hyphen hyphen now. It simply means that that
+
+00:42:20.460 --> 00:42:24.180
+systemctl is nothing but it's a command to control a system
+
+00:42:24.180 --> 00:42:26.700
+services, whatever services which is running inside my
+
+00:42:26.700 --> 00:42:29.820
+system. My current ubuntu system enable means I think we all
+
+00:42:29.820 --> 00:42:33.040
+understand just enable it, enable what a docker now means
+
+00:42:33.040 --> 00:42:35.940
+now simple in a current time, just enable it.
+
+00:42:42.060 --> 00:42:47.020
+Yeah. Okay. So we have already enabled it fine. Now once we
+
+00:42:47.020 --> 00:42:49.840
+are able to enable it, so maybe you can try to cross verify
+
+00:42:49.840 --> 00:42:52.700
+from your end. So docker hyphen hyphen version. So which is
+
+00:42:52.700 --> 00:42:55.180
+going to tell you like what is the version that you have? So
+
+00:42:55.180 --> 00:42:59.100
+my docker version is 29.0.1 and I believe you will be having
+
+00:42:59.100 --> 00:43:02.920
+a same version, right? Anyone? Yeah. So are you able to see
+
+00:43:02.920 --> 00:43:04.620
+a docker version facing
+
+00:43:09.000 --> 00:43:10.980
+issue in terms of running an echo command? You can leave
+
+00:43:10.980 --> 00:43:15.540
+echo command. Echo is just for print. So leave it. Echo is
+
+00:43:15.540 --> 00:43:19.360
+just like a printing something. So are you able to see?
+
+00:43:19.440 --> 00:43:21.920
+Okay. People are saying yes, yes, yes. It simply means that
+
+00:43:21.920 --> 00:43:26.000
+that till this point we are together, right? And this was a
+
+00:43:26.000 --> 00:43:30.480
+major milestone because if my docker setup is ready inside
+
+00:43:30.480 --> 00:43:34.500
+my machine, then like I can go with the next one and next
+
+00:43:34.500 --> 00:43:36.460
+one is going to be very, very easy. So docker is ready.
+
+00:43:36.480 --> 00:43:39.540
+We'll download some packages or we'll try to download
+
+00:43:39.540 --> 00:43:43.060
+something like some docker images. Just spin it. Just run
+
+00:43:43.060 --> 00:43:44.080
+it. Fine.
+
+00:43:47.730 --> 00:43:50.710
+Whenever you copy from control C and control V, it's giving
+
+00:43:50.710 --> 00:43:53.550
+an issue, try right click copy and right click paste. Yeah,
+
+00:43:53.590 --> 00:43:55.250
+this is what I'm doing, right? So paste.
+
+00:43:57.840 --> 00:44:00.960
+Then docker compose version. So basically docker compose
+
+00:44:00.960 --> 00:44:03.640
+version. Let's go and check. So docker compose version is
+
+00:44:03.640 --> 00:44:08.060
+basically 2.40.3. I believe you all will be able to get the
+
+00:44:08.060 --> 00:44:11.220
+same version. So just use it. Docker compose version. So
+
+00:44:11.220 --> 00:44:13.740
+basically we have a docker and then we have to like compose
+
+00:44:13.740 --> 00:44:16.720
+the docker, right? We have to build a docker images. So for
+
+00:44:16.720 --> 00:44:19.920
+that, and we have, if you remember, so docker compose C,
+
+00:44:20.060 --> 00:44:23.320
+community edition, we have already installed. So if you look
+
+00:44:23.320 --> 00:44:25.780
+into my above command, so you will be able to find out
+
+00:44:25.780 --> 00:44:28.020
+docker compose C. That is something that we have installed
+
+00:44:28.020 --> 00:44:31.520
+as a package. So we are just trying to cross check whether
+
+00:44:31.520 --> 00:44:34.780
+these versions are available or not. Yeah, that's it.
+
+00:44:44.400 --> 00:44:48.840
+Fine. Okay. So if we are able to do it, right? If we are
+
+00:44:48.840 --> 00:44:50.540
+able to do it. If we are able to do it till this particular
+
+00:44:50.540 --> 00:44:53.760
+point, we are able to do it till this particular point. We
+
+00:44:53.760 --> 00:44:57.400
+are good. Right? Docker is installed. Now let's go ahead and
+
+00:44:57.400 --> 00:45:00.820
+let's try to create any directory of my choice, right? So in
+
+00:45:00.820 --> 00:45:03.120
+whatever directory I would like to like, you know, keep all
+
+00:45:03.120 --> 00:45:08.300
+my like UI interface, right? All my software, right? So I
+
+00:45:08.300 --> 00:45:10.520
+can try to go ahead and I can try to create any kind of a
+
+00:45:10.520 --> 00:45:14.240
+directory and you know, I can, I can try to keep it over
+
+00:45:14.240 --> 00:45:17.600
+there. So here what you have to do. So just try to create
+
+00:45:17.600 --> 00:45:22.680
+one directory. A simple folder, mkdir, open web UI. So just
+
+00:45:22.680 --> 00:45:26.500
+try to create one directory. So here we are going to keep
+
+00:45:26.500 --> 00:45:28.920
+our entire distribution. So let's suppose if I'm trying to
+
+00:45:28.920 --> 00:45:31.780
+build something in my local system, so obviously there will
+
+00:45:31.780 --> 00:45:34.700
+be a folder, right? Similarly, I'm just trying to create a
+
+00:45:34.700 --> 00:45:37.340
+folder over here and I'll try to transfer everything here.
+
+00:45:37.820 --> 00:45:40.360
+So let's suppose something is running, some like server is
+
+00:45:40.360 --> 00:45:43.540
+running on my local system or maybe some a stream into UI,
+
+00:45:43.700 --> 00:45:46.060
+let's suppose is running in my local system. So I'll just
+
+00:45:46.060 --> 00:45:49.980
+transfer all those files in this directory. Okay. Going
+
+00:45:49.980 --> 00:45:52.320
+forward for this one, we are going to download it from my
+
+00:45:52.320 --> 00:45:56.900
+internet. But yeah, so going forward, we are going to, you
+
+00:45:56.900 --> 00:45:59.520
+know, transfer the file.
+
+00:46:04.180 --> 00:46:07.520
+So mkdir, open web UI. So just create this directory by the
+
+00:46:07.520 --> 00:46:10.020
+way. Now once we are able to create this directory, so we
+
+00:46:10.020 --> 00:46:12.520
+have to give a permission. Maybe before that you can do LSL
+
+00:46:12.520 --> 00:46:16.280
+and you can try to check. So yeah, this is our directory,
+
+00:46:16.340 --> 00:46:19.820
+which it has created on November 16 and it's showing my
+
+00:46:19.820 --> 00:46:22.280
+system like EC2 instance. Okay. So let's try this time.
+
+00:46:22.780 --> 00:46:27.100
+Maybe I can change that part. And here, so let's give a
+
+00:46:27.100 --> 00:46:31.140
+correct permission to this particular directory. So here, so
+
+00:46:31.140 --> 00:46:34.700
+that, you know, it will be able to do everything or Ubuntu
+
+00:46:34.700 --> 00:46:36.980
+user will be able to do everything. So just give a correct
+
+00:46:36.980 --> 00:46:37.280
+permission.
+
+00:46:41.620 --> 00:46:45.020
+So I'm just trying to like call chown, chown is nothing but
+
+00:46:45.020 --> 00:46:47.600
+change the owner, owner of this particular directory. So I'm
+
+00:46:47.600 --> 00:46:50.860
+trying to make this Ubuntu as a owner and I'm trying to
+
+00:46:50.860 --> 00:46:53.360
+attach this directory to a Ubuntu group.
+
+00:46:56.290 --> 00:46:58.630
+So sudo chown, ubuntu-ubuntu.com. I'm going to do open web
+
+00:46:58.630 --> 00:47:02.270
+UI, the directory that we have created. Now once we are able
+
+00:47:02.270 --> 00:47:05.250
+to give a correct permission, again, I can do maybe LSL and
+
+00:47:05.250 --> 00:47:08.790
+I can try to check. So yeah, I think it's, it was same. It
+
+00:47:08.790 --> 00:47:11.110
+was having all the permissions, but just to cross verify,
+
+00:47:11.230 --> 00:47:14.930
+cross check, I have given permission once again. Now here,
+
+00:47:15.050 --> 00:47:19.690
+let's do one thing, go into this directory. So cd open web
+
+00:47:19.690 --> 00:47:23.530
+UI. So now do LS, you will not be able to find out anything.
+
+00:47:24.390 --> 00:47:27.010
+So just go into this open web UI directory. The directory
+
+00:47:27.010 --> 00:47:31.170
+that you have created. Get into that. So just call cd,
+
+00:47:31.310 --> 00:47:38.630
+change directory. So go into this folder. Now once you are
+
+00:47:38.630 --> 00:47:42.050
+into this folder, this is my working folder, right? Whatever
+
+00:47:42.050 --> 00:47:44.930
+I'll do, I'll do it inside this folder. So now what I have
+
+00:47:44.930 --> 00:47:48.730
+to do, so I have to basically like, you know, go to internet
+
+00:47:48.730 --> 00:47:54.130
+and from internet, I have to download open web UI. So open
+
+00:47:54.130 --> 00:48:00.490
+web UI. Basically GitHub. So this is going to provide you
+
+00:48:00.490 --> 00:48:04.710
+open like a UI interface by the way. So this repository is
+
+00:48:04.710 --> 00:48:06.910
+an official repository and they are going to provide you a
+
+00:48:06.910 --> 00:48:10.630
+UI interface. This kind of a UI interface that you will be
+
+00:48:10.630 --> 00:48:13.790
+able to use it. And then here you can try to configure your
+
+00:48:13.790 --> 00:48:17.830
+model, maybe a model that you are hosting, maybe a model
+
+00:48:17.830 --> 00:48:22.330
+which you are trying to consume via an API key. Or maybe if
+
+00:48:22.330 --> 00:48:25.050
+you are looking for a RIG implementation, you can do that as
+
+00:48:25.050 --> 00:48:28.170
+well. If you are looking for, maybe a user. You will be able
+
+00:48:28.170 --> 00:48:30.990
+to do that as well. If you would like to do a setup for
+
+00:48:30.990 --> 00:48:34.410
+Prometheus and Grafana, you will be able to do that as well.
+
+00:48:34.550 --> 00:48:37.150
+So all of these things you will be able to do it, which we
+
+00:48:37.150 --> 00:48:41.550
+are going to do now. Yeah. So basically this is our
+
+00:48:41.550 --> 00:48:44.550
+repository and I have to download this entire repository so
+
+00:48:44.550 --> 00:48:46.950
+that whatever they have built, it should be available inside
+
+00:48:46.950 --> 00:48:50.390
+my system similarly. So let's suppose if I'm going to push
+
+00:48:50.390 --> 00:48:53.670
+some code and it is available on a GitHub so I can try to
+
+00:48:53.670 --> 00:48:56.330
+download it or maybe directly I can transfer the file from
+
+00:48:56.330 --> 00:49:00.210
+my local. To this one, either way it's going to be fine. So
+
+00:49:00.210 --> 00:49:04.050
+here to download this one. So maybe I can try to do get
+
+00:49:04.050 --> 00:49:08.710
+clone. So paste this command. So get clone and I'm giving
+
+00:49:08.710 --> 00:49:11.990
+this URL. So get clone and this URL, open web UI URL, so
+
+00:49:11.990 --> 00:49:15.110
+that it will be able to clone each and everything, whatever
+
+00:49:15.110 --> 00:49:18.550
+is available on that particular URL. So clone it guys,
+
+00:49:18.750 --> 00:49:19.170
+everyone.
+
+00:49:59.620 --> 00:50:01.220
+Done everyone. Okay.
+
+00:50:10.280 --> 00:50:14.180
+So now you will be able to see so many files over here. and
+
+00:50:14.180 --> 00:50:16.940
+these files are nothing but a same file which is coming from
+
+00:50:16.940 --> 00:50:19.600
+this repository so whatever files was available here on this
+
+00:50:19.600 --> 00:50:22.780
+repository i have just cloned it as simple as that i have
+
+00:50:22.780 --> 00:50:25.440
+not done anything different over here so simple and
+
+00:50:25.440 --> 00:50:28.240
+similarly so if something is available in my local system
+
+00:50:28.240 --> 00:50:31.420
+and if i have to run it on maybe my ec2 instances if i have
+
+00:50:31.420 --> 00:50:34.620
+to make it global similarly i can just transfer and i will
+
+00:50:34.620 --> 00:50:37.540
+try to make it global now this is one of the option apart
+
+00:50:37.540 --> 00:50:42.160
+from that inside aws inside azure inside gcp there are other
+
+00:50:42.160 --> 00:50:46.040
+managed services which is also available and by which you
+
+00:50:46.040 --> 00:50:49.240
+will be able to deploy you will be able to basically make it
+
+00:50:49.240 --> 00:50:53.240
+global so this is one of the way i am showing you going
+
+00:50:53.240 --> 00:50:57.160
+forward i'll try to show you other way as well yeah this is
+
+00:50:57.160 --> 00:51:01.260
+one of the way a raw approach you can say so where i'm
+
+00:51:01.260 --> 00:51:04.280
+launching my own so we are not using any managed services we
+
+00:51:04.280 --> 00:51:07.300
+are launching our own ec2 like a you know a machine we are
+
+00:51:07.300 --> 00:51:07.300
+launching our own ec2 like a you know a machine and we are
+
+00:51:07.300 --> 00:51:10.000
+launching our own connect And we have a simple bare machine,
+
+00:51:10.080 --> 00:51:12.620
+or you can say empty machine, and we are just configuring
+
+00:51:12.620 --> 00:51:16.820
+everything on our own. There are other managed services as
+
+00:51:16.820 --> 00:51:19.120
+well. So where I don't have to, you know, do this updates
+
+00:51:19.120 --> 00:51:21.760
+and all those things, I can simply dump and then I will be
+
+00:51:21.760 --> 00:51:24.600
+able to make my services up and running. So those kind of
+
+00:51:24.600 --> 00:51:28.100
+services are also available inside AWS, Azure and GCP. But
+
+00:51:28.100 --> 00:51:30.880
+this is a bare approach. I mean, like starting from scratch
+
+00:51:30.880 --> 00:51:31.700
+kind of approach.
+
+00:51:36.180 --> 00:51:40.740
+Okay, so once we are able to do this, right? So now, like my
+
+00:51:40.740 --> 00:51:44.680
+entire like files are available. My entire OpenWeb UI is
+
+00:51:44.680 --> 00:51:48.780
+available over here. Now what we have to do, so we have to
+
+00:51:48.780 --> 00:51:53.480
+change a couple of things. As like, because the way this
+
+00:51:53.480 --> 00:51:57.520
+OpenWeb UI has been built, so maybe it is not going to like,
+
+00:51:57.580 --> 00:52:01.020
+you know, behave in a similar manner for me. So there is a
+
+00:52:01.020 --> 00:52:05.140
+file called as Docker Compose OTEL YAML file, right? This is
+
+00:52:05.140 --> 00:52:09.460
+one of the configuration file. And where they have written a
+
+00:52:09.460 --> 00:52:12.880
+port that they would like to expose or I would like to
+
+00:52:12.880 --> 00:52:16.760
+expose. So inside this file, Docker Compose OTEL YAML, you
+
+00:52:16.760 --> 00:52:19.900
+will be able to see that file after cloning this GitHub
+
+00:52:19.900 --> 00:52:23.060
+repository. So I have to change something inside this file.
+
+00:52:23.180 --> 00:52:26.040
+So technically, I have to do a change of or I have to do
+
+00:52:26.040 --> 00:52:29.200
+like a port mapping, basically. So port mapping is something
+
+00:52:29.200 --> 00:52:33.240
+which I have to change. And that I can do it inside this
+
+00:52:33.240 --> 00:52:36.660
+particular file, OTEL file. So likewise, for like a GPU,
+
+00:52:36.820 --> 00:52:39.140
+they have. Given you a file for data, they have given you a
+
+00:52:39.140 --> 00:52:42.760
+file for a API, they have given you a file for AMD based
+
+00:52:42.760 --> 00:52:46.160
+GPU, right? For Nvidia based GPU, this is the file for AMD
+
+00:52:46.160 --> 00:52:48.500
+based GPU, this is the file. So they have already given you
+
+00:52:48.500 --> 00:52:51.820
+a separate, separate configuration file. And this is how any
+
+00:52:51.820 --> 00:52:54.880
+standard, you know, a software development happens whenever
+
+00:52:54.880 --> 00:52:57.320
+we do a development. So obviously, we try to like a keep
+
+00:52:57.320 --> 00:53:00.200
+everything segregated so that if any new person is looking
+
+00:53:00.200 --> 00:53:03.440
+into your files, they will be able to quickly understand and
+
+00:53:03.440 --> 00:53:06.520
+they will be able to get into it. So here inside this file,
+
+00:53:06.640 --> 00:53:09.240
+there is. Is a port mapping OTL file. Generally, we try to
+
+00:53:09.240 --> 00:53:13.240
+keep a port mapping, so we will try to open up this file and
+
+00:53:13.240 --> 00:53:16.360
+we'll try to, you know, do some sort of a modification into
+
+00:53:16.360 --> 00:53:19.600
+a file. Otherwise, system is not going to work for me. So
+
+00:53:19.600 --> 00:53:22.960
+let's go ahead and do it. So here what I will do. So I'll
+
+00:53:22.960 --> 00:53:26.180
+try to open up this OTL file. You can try to open up other
+
+00:53:26.180 --> 00:53:30.260
+file as well. That's completely OK. So here to open up this
+
+00:53:30.260 --> 00:53:33.600
+file. So maybe I can try to use an editor. So just like we
+
+00:53:33.600 --> 00:53:36.740
+are using VSCode inside our local system or maybe a notepad.
+
+00:53:37.020 --> 00:53:41.160
+Or maybe like some other editor. So notepad plus plus. So
+
+00:53:41.160 --> 00:53:43.640
+where we go, we open up some file. We try to make some sort
+
+00:53:43.640 --> 00:53:47.020
+of a edit in a similar manner. So there is a VIM editor, V I
+
+00:53:47.020 --> 00:53:49.980
+M VIM editor, which is available inside a Linux machine or
+
+00:53:49.980 --> 00:53:53.200
+this Ubuntu machine that you are using. So VIM and then your
+
+00:53:53.200 --> 00:53:55.720
+file name. So whatever file name that you have, you can try
+
+00:53:55.720 --> 00:53:56.760
+to not this.
+
+00:53:59.770 --> 00:54:02.850
+So VIM and then you can try to write over here a Docker
+
+00:54:02.850 --> 00:54:08.670
+compose. Docker compose OTL YAML file. So VIM Docker
+
+00:54:08.670 --> 00:54:11.470
+compose. Docker compose OTL YAML file. Open up this file.
+
+00:54:12.710 --> 00:54:13.130
+Everyone.
+
+00:54:18.250 --> 00:54:20.770
+So this is a command. VIM is nothing but VIM is a editor.
+
+00:54:26.470 --> 00:54:28.990
+So just try to open up this file so that we can try to make
+
+00:54:28.990 --> 00:54:33.130
+some sort of a changes over here. Now, so here inside this
+
+00:54:33.130 --> 00:54:36.850
+one, you will be able to see, you know, like so many things.
+
+00:54:47.450 --> 00:54:53.970
+Yeah. So you will be able to see something called as here
+
+00:54:53.970 --> 00:54:55.390
+port wise.
+
+00:55:08.530 --> 00:55:12.710
+Yeah. So here inside this one, you will be able to see
+
+00:55:12.710 --> 00:55:15.090
+something called as ports, right? Something called as ports.
+
+00:55:15.370 --> 00:55:17.890
+And this is basically a parameterized one. This is the
+
+00:55:17.890 --> 00:55:20.610
+parameterized one. So what we can do, so we can try to, you
+
+00:55:20.610 --> 00:55:23.130
+know, remove that particular port.
+
+00:55:40.550 --> 00:55:40.950
+Clear.
+
+00:55:47.440 --> 00:55:48.100
+Open up.
+
+00:56:04.280 --> 00:56:07.960
+My mouse is giving me some problem. Let me.
+
+00:56:17.610 --> 00:56:20.270
+So once you will come inside this file, you just have to
+
+00:56:20.270 --> 00:56:23.530
+press I. I means insert mode. So once you are going to be in
+
+00:56:23.530 --> 00:56:26.170
+an insert mode, you can try to do, you know, whatever.
+
+00:56:26.170 --> 00:56:26.710
+Whatever you want.
+
+00:56:29.800 --> 00:56:31.480
+So good inside this file.
+
+00:56:38.540 --> 00:56:45.700
+It's going up and then again fluctuating a lot. So just go
+
+00:56:45.700 --> 00:56:49.320
+into this file and click on insert mode. Right. So once you
+
+00:56:49.320 --> 00:56:53.680
+will be into insert mode, just click I. I after that. And
+
+00:56:53.680 --> 00:56:56.960
+then let's suppose I'm coming to this particular line. This
+
+00:56:56.960 --> 00:57:01.460
+particular line. Open web UI port. Again fluctuating. I
+
+00:57:01.460 --> 00:57:04.260
+don't know whether my default key is pressed or something.
+
+00:57:06.090 --> 00:57:09.390
+Yeah. So you have to. Maybe it will not happen for you. So
+
+00:57:09.390 --> 00:57:15.070
+simple. Click on I. And then. Oh, shit. So
+
+00:57:25.280 --> 00:57:25.800
+again,
+
+00:57:28.640 --> 00:57:30.960
+mine is also fluctuating.
+
+00:57:34.320 --> 00:57:41.860
+Then I'll open up inside. Party. It's happening inside this.
+
+00:57:43.580 --> 00:57:48.580
+Amazon console. So I have to.
+
+00:57:52.080 --> 00:57:56.660
+It should not happen. I mean, like Amazon console. Should
+
+00:57:56.660 --> 00:57:58.640
+not. It should not give me this kind of a issue. Let me
+
+00:57:58.640 --> 00:57:59.880
+refresh once again.
+
+00:58:15.710 --> 00:58:19.690
+Vim, Docker, Compose, OTEL. Okay. Everything is gone. Fine.
+
+00:58:20.470 --> 00:58:21.310
+Not an issue.
+
+00:58:27.980 --> 00:58:35.320
+LSL. Oh, I'm not into open web UI. So CD open web UI. I have
+
+00:58:35.320 --> 00:58:38.960
+to go into that directory first. After refresh. Do the LS.
+
+00:58:39.260 --> 00:58:43.760
+All the files are available. Then I can try to go into this
+
+00:58:43.760 --> 00:58:52.320
+OTEL. File. Okay. So now I'm here. Click I. And then come to
+
+00:58:52.320 --> 00:58:53.580
+this
+
+00:58:57.450 --> 00:59:01.490
+port. Yeah. So you have to come to this port. So I've just
+
+00:59:01.490 --> 00:59:05.030
+refreshed it, guys. And now it's not fluctuating for me.
+
+00:59:05.470 --> 00:59:12.070
+Maybe you can try this out. Insert. Replace. Insert. Okay.
+
+00:59:13.270 --> 00:59:18.410
+So here what you have to do. So you have to basically change
+
+00:59:18.410 --> 00:59:22.290
+this particular port number. Yeah. So you have to change
+
+00:59:22.290 --> 00:59:25.410
+basically this particular port number. So you have to give
+
+00:59:25.410 --> 00:59:32.250
+port 8000. Just remove slash data part as well. Slash data
+
+00:59:32.250 --> 00:59:36.990
+part. So 8000 you have to give. And then you have to give
+
+00:59:36.990 --> 00:59:43.550
+comma 8000. So this is what you have to configure over here.
+
+00:59:43.730 --> 00:59:48.090
+So 8000 comma 8000. And this is going to work for you. And
+
+00:59:48.090 --> 00:59:51.250
+leave rest of the things as it is. So this is. This is one
+
+00:59:51.250 --> 00:59:57.370
+of the changes. 8000. Column 8000. And then you have to
+
+00:59:57.370 --> 01:00:04.350
+enable OTEL trace as well. So where is my OTEL trace? So
+
+01:00:04.350 --> 01:00:07.330
+that I will be able to trace each and everything. So inside
+
+01:00:07.330 --> 01:00:09.870
+my environment. Okay.
+
+01:00:18.220 --> 01:00:20.060
+Again started fluctuating.
+
+01:00:42.350 --> 01:00:42.910
+Insert.
+
+01:01:25.790 --> 01:01:29.710
+Okay. So this Vim editor is giving me a lot of problem. Let
+
+01:01:29.710 --> 01:01:33.650
+me use some other editor. Fail to connect to your instance.
+
+01:01:33.810 --> 01:01:37.670
+Okay. Fine. Close it. Close it. And then I will go back to
+
+01:01:37.670 --> 01:01:41.690
+my instances. Once again. Go inside instance ID. And then
+
+01:01:41.690 --> 01:01:44.570
+click on connect once again. So click on connect. I am
+
+01:01:44.570 --> 01:01:45.830
+launching my instance once again.
+
+01:01:49.950 --> 01:01:54.050
+Okay. So LS. Open BVUI is available. So just go into this
+
+01:01:54.050 --> 01:01:57.910
+open BVUI directory. LS. Okay. All those files are
+
+01:01:57.910 --> 01:02:03.070
+available. Then maybe I can try one more time Vim. If it is
+
+01:02:03.070 --> 01:02:07.670
+not going to work. I will change it. So just we have to go
+
+01:02:07.670 --> 01:02:11.310
+into. I just have to like do you know two changes. So one is
+
+01:02:11.310 --> 01:02:14.750
+a port number mapping. And another one is basically a trace.
+
+01:02:18.750 --> 01:02:22.310
+Looks like it has deleted everything from this file.
+
+01:02:58.950 --> 01:03:04.170
+Okay. Data is available. So volume. So here port number I
+
+01:03:04.170 --> 01:03:09.250
+can see. But not inside the port. It has done
+
+01:03:11.200 --> 01:03:14.640
+a lot of like changes here. Which is not required.
+
+01:03:40.780 --> 01:03:44.740
+It has already made a lot of like changes.
+
+01:03:55.160 --> 01:03:59.060
+Okay. Let me do one thing guys. So we have this open BVUI
+
+01:03:59.060 --> 01:04:02.820
+folder right. I'll just delete it. I'll install it once
+
+01:04:02.820 --> 01:04:07.500
+again. So here to delete this folder. Pseudo RM. RM is
+
+01:04:07.500 --> 01:04:11.180
+nothing but remove and then RF. So like a recursively remove
+
+01:04:11.180 --> 01:04:15.800
+everything. Open BVUI folder. So now if I'll go and like
+
+01:04:15.800 --> 01:04:18.640
+check it. So I don't have any kind of a folder called as
+
+01:04:18.640 --> 01:04:21.960
+open BVUI. So. I'm I'm just like I've deleted the open BVUI
+
+01:04:21.960 --> 01:04:28.020
+folder. You can try to delete the same if you want. So just
+
+01:04:28.020 --> 01:04:32.800
+delete this folder. And then after deleting this folder. So
+
+01:04:32.800 --> 01:04:41.220
+maybe MK. DIR. Open. BVUI. So create a folder then do ls.
+
+01:04:41.320 --> 01:04:43.820
+You will be able to find out the folder right once again.
+
+01:04:44.080 --> 01:04:47.400
+And then you can try to like run the same command. Pseudo ch
+
+01:04:47.400 --> 01:04:50.280
+own so that you can give a permission. And then go inside
+
+01:04:50.280 --> 01:04:54.000
+open BVUI folder. The folder that you have created. And
+
+01:04:54.000 --> 01:04:57.200
+inside that again run the git clone. So I'm deleting it and
+
+01:04:57.200 --> 01:05:02.650
+I'm like cloning once again. Because during that edit. My
+
+01:05:02.650 --> 01:05:07.670
+file has made a lot of like a changes which it was not
+
+01:05:07.670 --> 01:05:11.050
+supposed to do. So I'm downloading once again guys. I'm
+
+01:05:11.050 --> 01:05:12.310
+doing once again git clone.
+
+01:05:32.250 --> 01:05:37.370
+Okay. So done. It seems. Let's do lsl.
+
+01:05:41.650 --> 01:05:44.370
+And you can see that. Yeah. So again this OTEL file is
+
+01:05:44.370 --> 01:05:46.390
+available. So I have to go and I have to make a changes.
+
+01:05:47.090 --> 01:05:50.050
+Let's see. So this time it should not give me an issue. If
+
+01:05:50.050 --> 01:05:51.930
+it is giving me an issue then I'll be using a different
+
+01:05:51.930 --> 01:05:54.430
+editor. Maybe a nano editor. I'll install. I'll try to use
+
+01:05:54.430 --> 01:05:58.050
+it. If vim is going to give me an issue. So vim docker. And
+
+01:05:58.050 --> 01:06:01.890
+then OTEL file. So OTEL yaml file. Now inside that just
+
+01:06:01.890 --> 01:06:04.530
+press I. So that you will be into insert mode as you can
+
+01:06:04.530 --> 01:06:08.670
+see. And here. So port number wise. So I have to change the
+
+01:06:08.670 --> 01:06:09.470
+port number.
+
+01:06:15.200 --> 01:06:20.980
+So I have to make 8000. Column. 8000. Simple. So this is
+
+01:06:20.980 --> 01:06:24.840
+going to be the port number. 8000. Column. 8000. And then we
+
+01:06:24.840 --> 01:06:30.420
+have to add one line. So we have to add basically one more
+
+01:06:30.420 --> 01:06:35.740
+line over here. So let me try to add that one more line. In
+
+01:06:35.740 --> 01:06:39.740
+the same. So
+
+01:06:45.340 --> 01:06:55.220
+here. I can do hyphen. Back. And. Then I can try to add a
+
+01:06:56.660 --> 01:06:59.540
+line over here. So what is the line that we have to add over
+
+01:06:59.540 --> 01:07:07.360
+here. So I have to add ENA. So all caps ENABLE underscore
+
+01:07:07.360 --> 01:07:13.660
+OTEL underscore TRACE. So that I will be able to trace it.
+
+01:07:13.800 --> 01:07:17.440
+So trace is equal to T. All small. TRUE.
+
+01:07:22.510 --> 01:07:26.770
+TRUE. True. So enable OTEL. TRUE. TRUE. So this is something
+
+01:07:26.770 --> 01:07:29.710
+that I have to enable it so that you know I will be able to
+
+01:07:29.710 --> 01:07:34.210
+like use it inside my Prometheus and technically I will be
+
+01:07:34.210 --> 01:07:38.050
+able to use it inside Grafana. Now here. So we have given
+
+01:07:38.050 --> 01:07:41.350
+8000. 8000. What is the meaning of this? So here we are
+
+01:07:41.350 --> 01:07:44.410
+trying to do a tunneling you can say. So host port number is
+
+01:07:44.410 --> 01:07:47.430
+8000. So the very first one is representing a host port
+
+01:07:47.430 --> 01:07:51.790
+number. And then the second one is representing basically a
+
+01:07:51.790 --> 01:07:55.270
+container port number. This is what it means. So this is
+
+01:07:55.270 --> 01:08:00.550
+like what we have done. You can even try to maybe keep host
+
+01:08:00.550 --> 01:08:09.290
+port number is equal to 8000 and maybe you can try to keep
+
+01:08:10.760 --> 01:08:17.240
+this port number even in this way 8000 and then 8080. So
+
+01:08:17.240 --> 01:08:20.240
+container port number is 8080 and host port number is 8000
+
+01:08:20.240 --> 01:08:23.140
+means from wherever my client is going to log in into the
+
+01:08:23.140 --> 01:08:25.820
+system. So maybe I can hit 8000 port number. And I will be
+
+01:08:25.820 --> 01:08:29.700
+able to log in into that. So this is what it means. So
+
+01:08:29.700 --> 01:08:33.080
+simple once we are able to change this port 8080 and then
+
+01:08:33.080 --> 01:08:38.000
+once we are able to change this enable OTEL trace just do
+
+01:08:38.000 --> 01:08:42.700
+one thing escape colon WQ. So escape colon WQ. That is how
+
+01:08:42.700 --> 01:08:45.720
+it is going to save it and quit it basically. So WQ means
+
+01:08:45.720 --> 01:08:48.620
+save and quit. I can try to do a cross verification. So
+
+01:08:48.620 --> 01:08:52.040
+maybe I can do a cat cat means nothing but show me the
+
+01:08:52.040 --> 01:08:57.780
+entire content of the file. So docker compose OTEL and I can
+
+01:08:57.780 --> 01:09:00.700
+try to check over here that everything looks fine for me or
+
+01:09:00.700 --> 01:09:05.840
+not. So yeah, open web UI volume. That's fine. Okay, port
+
+01:09:05.840 --> 01:09:07.320
+number it has not changed.
+
+01:09:11.220 --> 01:09:15.980
+Enable OTEL trace. So I'm able to see that it has added some
+
+01:09:15.980 --> 01:09:20.800
+ambiguous line over here, which I have to go and remove by
+
+01:09:20.800 --> 01:09:29.920
+the way and this port number. 8000. It has added which is
+
+01:09:29.920 --> 01:09:36.620
+again not good. It has added this line I have to remove this
+
+01:09:36.620 --> 01:09:40.080
+particular line and here so we should have 8000 port number.
+
+01:09:40.640 --> 01:09:45.320
+So no, it has not done changes as per my expectation. Let me
+
+01:09:45.320 --> 01:09:55.260
+try once again. So vim and then same command I I don't know
+
+01:09:55.260 --> 01:09:57.800
+why it is giving me issue like today because generally it
+
+01:09:57.800 --> 01:10:03.600
+never gives an issue. I use it all the like time and it
+
+01:10:03.600 --> 01:10:05.220
+works and
+
+01:10:08.170 --> 01:10:09.950
+entire world is using this you know.
+
+01:10:12.790 --> 01:10:13.310
+Again,
+
+01:10:16.860 --> 01:10:19.360
+no, it should not behave
+
+01:10:30.110 --> 01:10:35.710
+in this manner. No, let me install some other editor guys.
+
+01:10:35.830 --> 01:10:38.290
+Let me check with like a nano editor.
+
+01:10:46.220 --> 01:10:52.060
+It should not you know, behave this like randomly. When I'm
+
+01:10:52.060 --> 01:10:53.660
+trying to make some sort of a editor. If
+
+01:10:57.410 --> 01:11:00.670
+nano is also not going to work, then I'll try to log in
+
+01:11:00.670 --> 01:11:03.350
+through my putty. That will work because in my local system,
+
+01:11:03.470 --> 01:11:06.330
+so through putty, it should not give me an issue.
+
+01:11:16.840 --> 01:11:26.820
+Nano docker OTEL, okay. So I'm able to get into a nano now.
+
+01:11:29.490 --> 01:11:33.730
+So let me do some sort of a edit.
+
+01:11:48.770 --> 01:11:59.700
+Nano was working fine. Then this one, 8000 and then here
+
+01:11:59.700 --> 01:12:00.980
+inside
+
+01:12:04.540 --> 01:12:07.900
+our volume, just remove everything and
+
+01:12:13.050 --> 01:12:18.670
+here. So we have to technically keep volume,
+
+01:12:27.600 --> 01:12:28.600
+then hyphen,
+
+01:12:33.280 --> 01:12:45.000
+open, bev, ui, colon, app, class, putty, backend, slash,
+
+01:12:45.140 --> 01:12:49.020
+data. Yeah. So that was the default one. So basically guys,
+
+01:12:49.100 --> 01:12:51.480
+what we have done, we have made a change inside the port
+
+01:12:51.480 --> 01:12:54.460
+number. So whatever parameter argument that was given, so I
+
+01:12:54.460 --> 01:12:57.420
+have removed that argument and replace it with 8000. That's
+
+01:12:57.420 --> 01:13:00.300
+the first change. And another change is enable OTEL trace.
+
+01:13:00.500 --> 01:13:03.280
+This is what we were trying to do it since like the last 10
+
+01:13:03.280 --> 01:13:06.520
+minutes, I would say. But because of that editor, vim
+
+01:13:06.520 --> 01:13:09.140
+editor, it was giving me an issue. I have used nano editor.
+
+01:13:09.360 --> 01:13:12.540
+So simple nano and then file name. It will open up in that
+
+01:13:12.540 --> 01:13:15.660
+one. Now, if you have to save like something inside a nano,
+
+01:13:15.800 --> 01:13:18.640
+you just have to do control s. Control s means saved
+
+01:13:18.640 --> 01:13:22.220
+basically. And then you can do control q. So control q means
+
+01:13:22.220 --> 01:13:26.760
+quit. As simple as that. Right. So control s and control q.
+
+01:13:28.020 --> 01:13:31.760
+You can try to do it. It supports mouse as well. So yeah.
+
+01:13:36.500 --> 01:13:41.360
+And then you can do control x for exit. Very simple. So you
+
+01:13:41.360 --> 01:13:44.000
+can use vim editor or you can use a nano editor. If anyone
+
+01:13:44.000 --> 01:13:47.340
+is facing issue with the vim. Generally. It will not give an
+
+01:13:47.340 --> 01:13:49.740
+issue. I mean, like entire world is using it. But maybe in
+
+01:13:49.740 --> 01:13:53.780
+this AWS like, you know, console. So it is giving me an
+
+01:13:53.780 --> 01:13:57.600
+issue. It will not give issue otherwise. Yeah. Now I can do
+
+01:13:57.600 --> 01:14:06.520
+a cross verification. So Docker OTEL and yeah, so looks fine
+
+01:14:06.520 --> 01:14:11.020
+now, 8000, 8000. So this looks fine to me. And then enable
+
+01:14:11.020 --> 01:14:13.920
+OTEL trace. Yeah, this looks fine to me. So everything looks
+
+01:14:13.920 --> 01:14:17.040
+fine to me. I'm able to make a changes. And I'm able to
+
+01:14:17.040 --> 01:14:19.700
+verify it with the help of cat. So cat means just show me
+
+01:14:19.700 --> 01:14:22.840
+the data content of the file. This is what cat means. So
+
+01:14:22.840 --> 01:14:26.220
+once this is done, right? Once this is done, this particular
+
+01:14:26.220 --> 01:14:32.480
+changes is done, then we are good to go. And we are good to
+
+01:14:32.480 --> 01:14:39.280
+even launch our instances, our UI, by the way. And with the
+
+01:14:39.280 --> 01:14:43.580
+help of this OTEL file itself, we are going to launch it. So
+
+01:14:43.580 --> 01:14:47.360
+now we are on a final stage. Almost. Yeah, we are on a final
+
+01:14:47.360 --> 01:14:52.560
+stage almost. So how to like, you know, launch this in
+
+01:14:52.560 --> 01:14:56.540
+anyone so who is not able to do it so far, guys. So see, we
+
+01:14:56.540 --> 01:14:59.500
+have made only two changes. One is a port number inside a
+
+01:14:59.500 --> 01:15:02.560
+port tab, as you can see, and one is enable OTEL trace
+
+01:15:02.560 --> 01:15:08.540
+through. So let me ping you this part. One is a port, port
+
+01:15:21.340 --> 01:15:27.450
+and one is a enable OTEL trace is equal to true. Fine.
+
+01:15:31.940 --> 01:15:34.800
+Apart from that, no changes is required. Now,
+
+01:15:38.040 --> 01:15:40.780
+after that, now we are reaching to the final stage. Now we
+
+01:15:40.780 --> 01:15:44.200
+are good to go with the UI launch. So here, clear
+
+01:15:44.200 --> 01:15:48.280
+everything, right? And then just fire this command, sudo
+
+01:15:48.280 --> 01:15:52.620
+docker compose f docker compose OTEL YAML file. The file
+
+01:15:52.620 --> 01:15:55.260
+that we have changed just now. So with the help of that, so
+
+01:15:55.260 --> 01:15:58.480
+we are trying to like, you know, fire the entire Docker
+
+01:15:58.480 --> 01:16:01.760
+instances. So here basically docker compose is nothing but
+
+01:16:01.760 --> 01:16:05.780
+sudo means like a sudo means from admin. And then docker
+
+01:16:05.780 --> 01:16:09.400
+compose means. So we are trying to start our Docker image or
+
+01:16:09.400 --> 01:16:12.340
+we have like a, we will like a start our Docker by the way.
+
+01:16:12.380 --> 01:16:16.740
+And then here, so which Docker compose file we are using. So
+
+01:16:16.740 --> 01:16:20.120
+this Docker compose file we are using and D is nothing but
+
+01:16:20.120 --> 01:16:23.000
+in a detached mode. So in a background, keep on running this
+
+01:16:23.000 --> 01:16:27.880
+entire things hit enter, right? So hit enter additional
+
+01:16:27.880 --> 01:16:32.120
+property, I service not allowed validating Docker compose
+
+01:16:32.120 --> 01:16:38.940
+OTEL. Okay. Now we can try to even like a check. So by using
+
+01:16:38.940 --> 01:16:42.420
+a Docker PS, so Docker has not fired itself.
+
+01:16:47.790 --> 01:16:51.390
+Let me check. So there is this
+
+01:16:54.430 --> 01:16:55.070
+issue.
+
+01:17:10.190 --> 01:17:12.630
+This is the last step. If this is going to work, it simply
+
+01:17:12.630 --> 01:17:15.010
+means that I will be able to access my UI. Then we have to
+
+01:17:15.010 --> 01:17:17.370
+do a setup for Prometheus and Grafana.
+
+01:17:22.070 --> 01:17:24.550
+This file is a last file.
+
+01:17:32.530 --> 01:17:36.210
+Okay. So it is telling me that I service. I think. I think
+
+01:17:36.210 --> 01:17:42.110
+something has been added by mistake. Let me check my cat. So
+
+01:17:42.110 --> 01:17:49.650
+okay. I service fine I service. Okay it should not be I
+
+01:17:49.650 --> 01:17:52.370
+service. It's basically a service because of that it is
+
+01:17:52.370 --> 01:17:55.350
+giving me an issue. So it should be by mistake I have added
+
+01:17:55.350 --> 01:17:58.150
+I over there and because of that it is giving me an issue.
+
+01:17:58.310 --> 01:18:08.250
+So nano and then Docker OTEL. And. Let's do I and remove
+
+01:18:08.250 --> 01:18:13.370
+this I service from this one. So control S and then control
+
+01:18:13.370 --> 01:18:16.230
+X. So S for saving X for exit.
+
+01:18:21.290 --> 01:18:25.450
+Okay now I can try to run the same command sudo docker
+
+01:18:25.450 --> 01:18:30.050
+compose docker compose OTEL. And now it has started running
+
+01:18:30.050 --> 01:18:35.110
+everyone. That was my mistake. Basically while pressing I so
+
+01:18:35.110 --> 01:18:38.510
+I have added I over there. So now it has started running
+
+01:18:38.510 --> 01:18:41.830
+everyone. Everything looks it is trying to build my image
+
+01:18:41.830 --> 01:18:45.750
+right. It is just trying to build my image. Please send the
+
+01:18:45.750 --> 01:18:48.790
+command. I have. Okay. So this docker compose command right.
+
+01:18:48.970 --> 01:18:54.560
+Fine. So I am sending you a command guys. This is a command
+
+01:18:54.560 --> 01:18:58.820
+docker compose. The OTEL file that we have changed. So we
+
+01:18:58.820 --> 01:18:59.820
+are running that file itself.
+
+01:19:27.790 --> 01:19:30.650
+Can you give that OTEL command. I mean like there is nothing
+
+01:19:30.650 --> 01:19:34.490
+OTEL command. So there is a inside a docker OTEL file. So I
+
+01:19:34.490 --> 01:19:36.450
+have already pinged you above if you will check in a chat.
+
+01:19:36.450 --> 01:19:40.270
+So you have to change two things port number 8000 and then
+
+01:19:40.270 --> 01:19:42.670
+enable OTEL trace is equal to true. These are the two things
+
+01:19:42.670 --> 01:19:46.250
+that you have to change inside that file. After opening up
+
+01:19:46.250 --> 01:19:49.770
+your OTEL file. So you can open up OTEL file into a vim
+
+01:19:49.770 --> 01:19:53.190
+editor or maybe into a nano editor. Just like notepad
+
+01:19:53.190 --> 01:19:55.010
+notepad plus plus kind of a things for Linux.
+
+01:21:37.010 --> 01:21:39.550
+What is our next step sir? I will tell you next step. Just
+
+01:21:39.550 --> 01:21:41.830
+wait for like this build is
+
+01:21:48.320 --> 01:21:51.120
+we need to do our daily day to day every day deployment. So
+
+01:21:51.120 --> 01:21:53.940
+we do not do our like this kind of a deployment every day.
+
+01:21:53.940 --> 01:21:57.380
+We do a setup once and then we build a pipeline on top of
+
+01:21:57.380 --> 01:22:00.280
+that CICD kind of a pipeline. So where you will push a code
+
+01:22:00.280 --> 01:22:03.360
+and automatically deployment will happen. So automatically
+
+01:22:03.360 --> 01:22:06.880
+it is going to like create a build or maybe like a manually
+
+01:22:06.880 --> 01:22:10.180
+we can try to trigger a build and then it will go for the
+
+01:22:10.180 --> 01:22:14.500
+final production and then we will be doing a worsening
+
+01:22:14.500 --> 01:22:17.880
+control as well. So with the help of that so you know we can
+
+01:22:17.880 --> 01:22:21.240
+roll back our like current check ins and quotes many more
+
+01:22:21.240 --> 01:22:21.500
+things.
+
+01:22:52.480 --> 01:22:55.360
+So. So how to save and exit the YAML file. So if you are
+
+01:22:55.360 --> 01:22:59.760
+into a vim editor then escape colon wq. If you are into a
+
+01:22:59.760 --> 01:23:03.280
+nano editor then control x control control s for save and
+
+01:23:03.280 --> 01:23:04.300
+control x for exit.
+
+01:23:07.070 --> 01:23:10.450
+Okay so docker build is done. Maybe we can try to call
+
+01:23:10.450 --> 01:23:16.030
+docker ps docker ps just to like a check. So it looks like
+
+01:23:16.030 --> 01:23:19.550
+it's running right. Looks like it's running over here and if
+
+01:23:19.550 --> 01:23:21.950
+it is running so maybe I can go and I can try to check and
+
+01:23:21.950 --> 01:23:26.090
+even tunneling is done. See. So here port tunneling is done.
+
+01:23:26.310 --> 01:23:30.470
+So and even for 3000 port and even for 8000 port number. Now
+
+01:23:30.470 --> 01:23:33.350
+what I can do. So my application is up and running the open
+
+01:23:33.350 --> 01:23:36.450
+ai that we have downloaded. So open web ui. So basically
+
+01:23:36.450 --> 01:23:39.710
+it's running in my system and yeah so as you can see there
+
+01:23:39.710 --> 01:23:43.070
+is a 8000 port and there is a 3000 port at 3000 port I can
+
+01:23:43.070 --> 01:23:46.070
+configure Grafana and then at 8000 port number so I can try
+
+01:23:46.070 --> 01:23:50.770
+to configure basically open web ui. It's running right. Now
+
+01:23:50.770 --> 01:23:54.590
+what I can do. So. So I can try to copy this one this this
+
+01:23:54.590 --> 01:23:57.650
+URL the URL that you are able to see right the public DNS
+
+01:23:57.650 --> 01:24:00.190
+URL that you are able to see for your instance for your
+
+01:24:00.190 --> 01:24:03.890
+machine. So the public URL or maybe you can refresh and just
+
+01:24:03.890 --> 01:24:07.210
+try to copy this public DNS this one and it's running at
+
+01:24:07.210 --> 01:24:10.310
+8000 port number. So just do call an 8000. This is what we
+
+01:24:10.310 --> 01:24:13.150
+have exposed right. This is what we have done into a OTL
+
+01:24:13.150 --> 01:24:18.470
+file. So now if everything is good on 8000 port number as I
+
+01:24:18.470 --> 01:24:22.930
+can see inside my docker right inside my container at 8000
+
+01:24:22.930 --> 01:24:27.010
+my host is running. But here so when I'm trying to refresh
+
+01:24:27.010 --> 01:24:30.030
+this it is giving me an issue maybe I'm not able to load it.
+
+01:24:30.270 --> 01:24:34.070
+A reason is very simple. So from outside because I'm trying
+
+01:24:34.070 --> 01:24:37.330
+to ping it from my system right my system my system is a
+
+01:24:37.330 --> 01:24:41.250
+outside system for AWS. So there is a EC2 and inside EC2
+
+01:24:41.250 --> 01:24:44.670
+there is a docker yeah and I'm trying to ping from outside
+
+01:24:44.670 --> 01:24:47.250
+and if I'm trying to ping from outside and if like I have
+
+01:24:47.250 --> 01:24:52.190
+not allowed that particular port number. Then it will it
+
+01:24:52.190 --> 01:24:55.710
+will not even allow me to like you know use that particular
+
+01:24:55.710 --> 01:25:00.270
+like a URL and that but at this URL there is a machine
+
+01:25:00.270 --> 01:25:03.130
+right. This there is a machine the way we use like inside a
+
+01:25:03.130 --> 01:25:06.830
+local host and inside that 8000. So I can see that that 8000
+
+01:25:06.830 --> 01:25:10.470
+exposed but I'm not able to log in. So a reason is very
+
+01:25:10.470 --> 01:25:14.850
+simple. It's running it's running inside a AWS EC2 machine
+
+01:25:14.850 --> 01:25:19.610
+but I'm not allowed to access from outside. Now I have to
+
+01:25:19.610 --> 01:25:23.990
+like enable it so to enable like a hit from outside. So what
+
+01:25:23.990 --> 01:25:29.470
+I can do I can go down right I can go down and I can try to
+
+01:25:29.470 --> 01:25:34.030
+go into security over here and then there is a security
+
+01:25:34.030 --> 01:25:38.930
+group you will be able to see. So just go down yeah. So this
+
+01:25:38.930 --> 01:25:41.930
+is my machine right this is my instance go down and go into
+
+01:25:41.930 --> 01:25:45.170
+a security and here inside a security group you can define
+
+01:25:45.170 --> 01:25:48.090
+your inbound rule. I think we have already done that. For
+
+01:25:48.090 --> 01:25:52.170
+our GPUs as well right. So we have defined up inbound rule
+
+01:25:52.170 --> 01:25:55.890
+even inside a GPU. So what we can do so we can try to click
+
+01:25:55.890 --> 01:25:59.910
+on this inbound rule and yeah so we can try to maybe modify
+
+01:25:59.910 --> 01:26:03.650
+this inbound rule and you know we can we can try to add a
+
+01:26:03.650 --> 01:26:08.890
+new rule for us. Is it making sense to all of us guys if I'm
+
+01:26:08.890 --> 01:26:13.410
+not able to you know launch something it simply means that
+
+01:26:13.410 --> 01:26:17.750
+that inbound rule and here. So nowhere port 8000 is allowed.
+
+01:26:17.750 --> 01:26:23.370
+Right from outside. So like traffic to a 8000 port number is
+
+01:26:23.370 --> 01:26:27.130
+allowed from outside. So that's the only reason that's the
+
+01:26:27.130 --> 01:26:30.030
+only reason apart from that there is no other reason you
+
+01:26:30.030 --> 01:26:33.330
+will be able to find out. So maybe you can see a security
+
+01:26:33.330 --> 01:26:36.590
+group over here. So you can go into a security group on my
+
+01:26:36.590 --> 01:26:40.730
+left hand side this panel and then create a security group
+
+01:26:40.730 --> 01:26:45.370
+and I can try to attach it or maybe I can try to go to a
+
+01:26:45.370 --> 01:26:49.310
+dashboard. I can go into this instance. It's self. So this
+
+01:26:49.310 --> 01:26:53.250
+is my instance by the way I can get into this particular
+
+01:26:53.250 --> 01:26:57.670
+instances and then I can try to even change inbound rule
+
+01:26:57.670 --> 01:27:02.210
+here itself. So what are inbound rules and why we are need
+
+01:27:02.210 --> 01:27:05.550
+those rules simple right. So here something is running
+
+01:27:05.550 --> 01:27:08.270
+inside AWS there is a machine. This is a machine by the way
+
+01:27:08.270 --> 01:27:11.630
+this URL is nothing but a machine just like a local host and
+
+01:27:11.630 --> 01:27:14.850
+inside that machine. So there is something like at 8000 port
+
+01:27:14.850 --> 01:27:17.450
+something is running something is my application opened. The
+
+01:27:17.450 --> 01:27:22.070
+UI is running now it's available inside AWS instances. I'm
+
+01:27:22.070 --> 01:27:26.170
+trying to access this URL and this 8000 port of that machine
+
+01:27:26.170 --> 01:27:30.750
+from outside right. So when I'm trying to hit it's inbound
+
+01:27:30.750 --> 01:27:33.730
+inbound for AWS machine and that's the reason. So you have
+
+01:27:33.730 --> 01:27:37.170
+to add as an inbound rule if you are not going to add as an
+
+01:27:37.170 --> 01:27:40.690
+inbound rule it is not going to work for you. It is not
+
+01:27:40.690 --> 01:27:46.680
+going to even allow you by the way so are we are we able to
+
+01:27:46.680 --> 01:27:52.260
+understand inbound rule. By the way yeah and same thing I
+
+01:27:52.260 --> 01:27:54.440
+believe we have done right even
+
+01:28:00.300 --> 01:28:02.940
+with respect to a GPU. So when we were trying to access a
+
+01:28:02.940 --> 01:28:04.680
+GPU we have done the exact same thing.
+
+01:28:44.480 --> 01:28:47.600
+Okay so now what I will do I'll just go and I'll try to
+
+01:28:47.600 --> 01:28:51.580
+change the inbound rule nothing much and yeah so with the
+
+01:28:51.580 --> 01:28:56.480
+help of that you know I will be able to like do the changes.
+
+01:28:56.660 --> 01:29:01.740
+It's very simple so like go to your security and here so
+
+01:29:01.740 --> 01:29:04.860
+this is a security group which has been attached to your
+
+01:29:04.860 --> 01:29:10.920
+like this one your instances so click on that yeah click on
+
+01:29:10.920 --> 01:29:15.480
+that so click on this one and then try to add a new inbound
+
+01:29:15.480 --> 01:29:19.060
+rule so edit inbound rule click over there and then over
+
+01:29:19.060 --> 01:29:26.420
+here add rule so add what so add a custom TCP and then again
+
+01:29:26.420 --> 01:29:29.760
+so just try to add a port number so port number is basically
+
+01:29:29.760 --> 01:29:33.360
+8000 so that from outside anyone can hit on 8000. Okay. And
+
+01:29:33.360 --> 01:29:37.580
+then CIDR block so 0 slash 0 slash 0 so 8000 you have to
+
+01:29:37.580 --> 01:29:40.620
+open up and then you have to open up even 3000 3000 for
+
+01:29:40.620 --> 01:29:45.120
+Grafana means for a monitoring. So again here 0 0 so these
+
+01:29:45.120 --> 01:29:48.120
+two like a rules you have to add so I'm just trying to allow
+
+01:29:48.740 --> 01:29:53.060
+traffic to these two ports so any other port people will not
+
+01:29:53.060 --> 01:29:57.860
+be able to hit so this is again one of the security part if
+
+01:29:57.860 --> 01:30:02.280
+I have opened up 8000 anyone will be able to hit on 8000
+
+01:30:02.280 --> 01:30:06.200
+itself. So again I have defined 0.0.0 let's suppose if I'm
+
+01:30:06.200 --> 01:30:09.260
+going to define a particular IP address for example my
+
+01:30:09.260 --> 01:30:13.920
+system IP address so only I will be able to hit you will not
+
+01:30:13.920 --> 01:30:17.560
+be able to hit that I have defined 0.0.0. slash masking 0
+
+01:30:17.560 --> 01:30:20.520
+right it simply means that everyone open to the entire world
+
+01:30:20.520 --> 01:30:24.240
+let's suppose I just want a traffic only from India not from
+
+01:30:24.240 --> 01:30:28.120
+outside I can configure each and everything inside my
+
+01:30:28.120 --> 01:30:31.600
+security group so this is how again one layer of security we
+
+01:30:31.600 --> 01:30:34.900
+try to manage. Okay. Okay. Any kind of you know traffic that
+
+01:30:34.900 --> 01:30:37.880
+is going to hit or anyone who is going to hit my application
+
+01:30:37.880 --> 01:30:41.500
+so here I have simply defined that from outside you can hit
+
+01:30:41.500 --> 01:30:46.540
+only 8000 3000 like I said I have an option and I can try to
+
+01:30:46.540 --> 01:30:51.080
+define all of these things so from where only which range of
+
+01:30:51.080 --> 01:30:54.240
+IP addresses everything I can define and beyond that no one
+
+01:30:54.240 --> 01:30:58.800
+will be able to hit my system at all. Okay so for 8000 3000
+
+01:30:58.800 --> 01:31:02.520
+and then save the rules simple save the rules so again go to
+
+01:31:02.520 --> 01:31:06.860
+your EC2 instances dashboard instance running and here so
+
+01:31:06.860 --> 01:31:09.940
+now if you will go and check your security so we have added
+
+01:31:09.940 --> 01:31:15.680
+3000 8000 right 3000 8000 now go ahead and hit this URL and
+
+01:31:15.680 --> 01:31:20.620
+now URL is up that was the only issue so it's running it's
+
+01:31:20.620 --> 01:31:24.560
+running in my system and click on get started and now I am
+
+01:31:24.560 --> 01:31:28.280
+able to see for the very first time my UI interface as of
+
+01:31:28.280 --> 01:31:33.340
+now just a UI interface which is ready to me. And those who
+
+01:31:33.340 --> 01:31:36.600
+are going to join for the very first time you will become an
+
+01:31:36.600 --> 01:31:39.520
+admin so this is an admin account you have to create and
+
+01:31:39.520 --> 01:31:42.400
+then you can create even a user account I will show you that
+
+01:31:42.400 --> 01:31:45.540
+part so maybe admin account let me create it so enter my
+
+01:31:45.540 --> 01:31:48.980
+name so maybe I can enter my name enter my email id so maybe
+
+01:31:48.980 --> 01:31:52.900
+I can try to enter my email id I can give my like a password
+
+01:31:52.900 --> 01:31:58.660
+over here so this is for the very first time this is going
+
+01:31:58.660 --> 01:32:00.860
+to be the admin account basically I can control a lot of
+
+01:32:00.860 --> 01:32:04.060
+things from here itself. So click on create admin account
+
+01:32:04.060 --> 01:32:11.240
+and bingo right I am able to land into my UI interface as of
+
+01:32:11.240 --> 01:32:14.820
+now there is no model which is available it is not going to
+
+01:32:14.820 --> 01:32:18.000
+respond back to you at all we have to configure that
+
+01:32:18.000 --> 01:32:22.540
+particular part as of now just my UI interface is ready only
+
+01:32:22.540 --> 01:32:26.040
+UI interface right let's suppose I am going to share my your
+
+01:32:26.040 --> 01:32:29.060
+own UI interface again in the similar manner just a UI
+
+01:32:29.060 --> 01:32:32.640
+interface then I have to you know either configure my API's
+
+01:32:32.640 --> 01:32:34.020
+or maybe I have to configure my API's. Maybe if I am trying
+
+01:32:34.020 --> 01:32:37.100
+to like host some of my own custom model then I have to
+
+01:32:37.100 --> 01:32:41.820
+attach that particular back end so just a UI interface and
+
+01:32:41.820 --> 01:32:45.560
+as you can see it is available into HTTP mode not in a HTTPS
+
+01:32:45.560 --> 01:32:50.100
+mode at this URL so are you able to get this open web UI
+
+01:32:50.100 --> 01:32:57.640
+guys at your URL not my URL your URL basically. So what is
+
+01:32:57.640 --> 01:33:01.060
+your URL it is already visible so this is your URL if you
+
+01:33:01.060 --> 01:33:03.700
+will go into your instance. This is your DNS this is your
+
+01:33:03.700 --> 01:33:08.040
+URL at means by this URL you are reaching out to your
+
+01:33:08.040 --> 01:33:11.740
+machine a local host right you can say local host we do so
+
+01:33:11.740 --> 01:33:17.660
+127.0.0.1 similarly this is the URL and then in that machine
+
+01:33:17.660 --> 01:33:21.340
+we run application at certain port number 8000 3000 whatever
+
+01:33:21.340 --> 01:33:25.580
+it is so colon 8000 so this is what we have done even over
+
+01:33:25.580 --> 01:33:28.280
+here this is something that you will be able to see even
+
+01:33:28.280 --> 01:33:31.380
+inside your docker compose so docker ps and you will be able
+
+01:33:31.380 --> 01:33:34.900
+to see that. If your docker ps is running then obviously
+
+01:33:34.900 --> 01:33:39.100
+everything is up and running for you okay so this is
+
+01:33:39.100 --> 01:33:42.440
+something that is done we have opened up 3000 port as well
+
+01:33:42.440 --> 01:33:46.400
+so 3000 port is nothing but here open web UI has configured
+
+01:33:46.400 --> 01:33:49.880
+Prometheus which is going to capture a log yeah which is
+
+01:33:49.880 --> 01:33:54.800
+going to capture a log now I have to showcase a log right I
+
+01:33:54.800 --> 01:33:58.940
+have to showcase a log so by default at 3000 port number for
+
+01:33:58.940 --> 01:34:02.300
+open web UI Grafana is also configured so I can copy the
+
+01:34:02.300 --> 01:34:07.620
+same URL right copy the same URL and then colon 3000 port
+
+01:34:07.620 --> 01:34:10.900
+number and I have already opened inbound rule for 3000 port
+
+01:34:10.900 --> 01:34:15.160
+number so I will be able to see this Grafana I will be able
+
+01:34:15.160 --> 01:34:18.820
+to see this Grafana UI and as of now there is nothing you
+
+01:34:18.820 --> 01:34:21.740
+will have to do some sort of a configuration over here I am
+
+01:34:21.740 --> 01:34:24.600
+going to like send you one script and you have to configure
+
+01:34:24.600 --> 01:34:27.100
+that particular script for a Grafana so that you will be
+
+01:34:27.100 --> 01:34:30.620
+able to see a stats in a real time. So here you will be able
+
+01:34:30.620 --> 01:34:31.800
+to see a log monitoring. So here you will be able to see a
+
+01:34:31.800 --> 01:34:34.480
+log monitoring or system monitoring and again this is what
+
+01:34:34.480 --> 01:34:38.560
+we do even inside a enterprise grade application so Grafana
+
+01:34:38.560 --> 01:34:42.560
+is something which we do use everywhere right everywhere so
+
+01:34:42.560 --> 01:34:45.800
+here you will be able to see a dashboard right here you will
+
+01:34:45.800 --> 01:34:49.380
+be able to see a dashboard now so inside a dashboard you
+
+01:34:49.380 --> 01:34:52.640
+will be able to see like a new option so you have to go and
+
+01:34:52.640 --> 01:34:56.380
+you have to click on new and you have to basically click on
+
+01:34:56.380 --> 01:34:59.200
+add visualization so you have to click on add visualization.
+
+01:35:00.120 --> 01:35:04.580
+Loki Temto. This is fine I am not going to do that yeah
+
+01:35:24.680 --> 01:35:29.820
+so dashboard and then click on new and you will be able to
+
+01:35:29.820 --> 01:35:32.740
+see one option called as import option and once you are
+
+01:35:32.740 --> 01:35:36.560
+going to simple so at 3000 port number go to dashboard and
+
+01:35:36.560 --> 01:35:39.300
+go to new and click on import I am going to give you one
+
+01:35:39.300 --> 01:35:43.020
+file one JSON file so which we have created just for this
+
+01:35:43.020 --> 01:35:46.020
+application so that you know you will be able to render all
+
+01:35:46.020 --> 01:35:49.300
+the logs from your open web server to this one so the docker
+
+01:35:49.300 --> 01:35:51.380
+which is running over there. So it is going to like you know
+
+01:35:51.380 --> 01:35:54.600
+fetch each and everything from there to here so let me share
+
+01:35:54.600 --> 01:36:03.100
+that JSON file I have already created that one so JSON file
+
+01:36:03.100 --> 01:36:09.680
+yeah open web UI monitoring yes so this is a JSON file that
+
+01:36:09.680 --> 01:36:16.040
+we have written a custom one for this particular purpose so
+
+01:36:23.910 --> 01:36:27.850
+you have to like a paste a content of this JSON file here.
+
+01:36:27.930 --> 01:36:29.870
+So this is a JSON file. So let me send you a JSON file
+
+01:36:29.870 --> 01:36:35.520
+somewhere in my drive you just have to open it up and copy
+
+01:36:35.520 --> 01:36:38.020
+it I don't think I will be able to copy and paste that much
+
+01:36:38.020 --> 01:36:43.900
+content here let me see no it's not possible let me try
+
+01:36:43.900 --> 01:36:47.140
+uploading this JSON file okay
+
+01:37:28.450 --> 01:37:30.990
+so I have already uploaded the JSON file guys inside your
+
+01:37:30.990 --> 01:37:34.490
+chat so you can download it now itself so just open up your
+
+01:37:34.490 --> 01:37:37.790
+JSON file and inside your JSON file so you will be able to
+
+01:37:37.790 --> 01:37:41.210
+find out JSON configuration for Grafana. Right and which we
+
+01:37:41.210 --> 01:37:44.050
+have written especially for this particular purpose for this
+
+01:37:44.050 --> 01:37:47.950
+particular deployment right so where so this JSON file is
+
+01:37:47.950 --> 01:37:50.230
+nothing but it tells you what kind of a graph I am looking
+
+01:37:50.230 --> 01:37:53.510
+for that's it right so all of these things inside a JSON
+
+01:37:53.510 --> 01:37:57.450
+file like we have written and proper Mathias and Grafana and
+
+01:37:57.450 --> 01:38:01.030
+it is trying to pull all those like data and then it is
+
+01:38:01.030 --> 01:38:04.790
+going to show you the graph as simple as that so just try to
+
+01:38:04.790 --> 01:38:08.450
+like open up this JSON file copy and paste control C control
+
+01:38:08.450 --> 01:38:10.090
+V simple. So let me show you the graph. So let me click on
+
+01:38:10.090 --> 01:38:14.450
+load right click on load so once you are going to click on
+
+01:38:14.450 --> 01:38:19.430
+this load and then if you will go to your dashboard let me
+
+01:38:19.430 --> 01:38:20.870
+refresh import
+
+01:38:23.430 --> 01:38:31.670
+and then this load click on this load and import yeah so now
+
+01:38:31.670 --> 01:38:34.690
+once you are going to click on this import you will be able
+
+01:38:34.690 --> 01:38:38.810
+to see a dashboard open BI monitoring dashboard so now if
+
+01:38:38.810 --> 01:38:41.810
+you will click over here as of now. it is not showing you
+
+01:38:41.810 --> 01:38:45.050
+any kind of a data let's suppose there is no data which is
+
+01:38:45.050 --> 01:38:49.910
+which it is showing you as of now yeah so maybe i can i can
+
+01:38:49.910 --> 01:38:53.350
+try to like a login over here say some sort of a high let's
+
+01:38:53.350 --> 01:38:57.690
+suppose and here it is telling me that model not selected
+
+01:38:57.690 --> 01:39:01.970
+there is no model so far which is available to me and even
+
+01:39:01.970 --> 01:39:05.690
+this grafana grafana dashboard which i am able to like a
+
+01:39:05.690 --> 01:39:09.330
+look at so this grafana dashboard is not giving me any kind
+
+01:39:09.330 --> 01:39:12.190
+of a data it is looking for a data it is looking for a data
+
+01:39:12.190 --> 01:39:15.730
+but as there is no interaction with my application so there
+
+01:39:15.730 --> 01:39:19.110
+is no data which has been generated for this application the
+
+01:39:19.110 --> 01:39:22.350
+open bvi application which i have hosted now to do that so
+
+01:39:22.350 --> 01:39:25.390
+maybe i have to do a model configuration so i can do a model
+
+01:39:25.390 --> 01:39:28.990
+configuration my own model so let's suppose my self-hosted
+
+01:39:28.990 --> 01:39:32.190
+model i can do that configuration as well or else i can do a
+
+01:39:32.190 --> 01:39:35.470
+open bvi configuration gemini configuration cloud a
+
+01:39:35.470 --> 01:39:38.630
+configuration purpose really whatever whatever i want in
+
+01:39:38.630 --> 01:39:40.730
+this entire world or i want to expand all of those model
+
+01:39:40.730 --> 01:39:44.030
+configuration i will be able to do it so let me do a model
+
+01:39:44.030 --> 01:39:47.390
+configuration for open web ui in a very first place so that
+
+01:39:47.390 --> 01:39:49.770
+i will be able to see some graph because everything is up
+
+01:39:49.770 --> 01:39:53.550
+for me right everything is up for me in a real time so i'll
+
+01:39:53.550 --> 01:39:56.470
+just do a configuration now to do a model configuration i
+
+01:39:56.470 --> 01:40:02.790
+need a open ui sorry open a key so let me go to my open a
+
+01:40:02.790 --> 01:40:09.970
+official account open ai key api key bvi open bv bvi here i
+
+01:40:09.970 --> 01:40:11.170
+think all the key ok
+
+01:40:17.700 --> 01:40:20.920
+so I will just go over there and I will try to you know
+
+01:40:20.920 --> 01:40:25.260
+create one new secret so let's suppose I am going to create
+
+01:40:25.260 --> 01:40:30.460
+a secret so you know on live test secret let's suppose I
+
+01:40:30.460 --> 01:40:34.940
+have created simple key I am trying to create and I just
+
+01:40:34.940 --> 01:40:38.120
+need this particular key only this key I need yeah so let's
+
+01:40:38.120 --> 01:40:41.240
+copy this key and then let's do a configuration so that my
+
+01:40:41.240 --> 01:40:43.880
+application will be up and running so how I can do a
+
+01:40:43.880 --> 01:40:48.080
+configuration I can go here inside my name right active user
+
+01:40:48.080 --> 01:40:52.420
+is equals to 1 I can go to a admin panel and I can go to a
+
+01:40:52.420 --> 01:40:56.040
+setting over here inside a setting I can go to a models
+
+01:40:56.040 --> 01:41:00.880
+there is a model option which is available or I can go even
+
+01:41:00.880 --> 01:41:03.960
+inside a connection yeah connection so just go inside the
+
+01:41:03.960 --> 01:41:07.640
+connection and then from a connection there is a setting
+
+01:41:07.640 --> 01:41:11.740
+configure option for open API which is available over here.
+
+01:41:11.740 --> 01:41:14.920
+Ulama is another one even from anywhere I can I can call
+
+01:41:14.920 --> 01:41:17.780
+this one anyone from anywhere I can configure it but first
+
+01:41:17.780 --> 01:41:20.320
+of all let's do a open AI configuration and even custom
+
+01:41:20.320 --> 01:41:23.880
+configuration I can do it so here I can go inside the open
+
+01:41:23.880 --> 01:41:28.360
+AI API click and then here so it is looking for a bearer it
+
+01:41:28.360 --> 01:41:32.180
+is looking for a API key so paste it paste your open AI key
+
+01:41:32.180 --> 01:41:34.640
+leave everything as it is there are lot of configuration
+
+01:41:34.640 --> 01:41:37.460
+which I will teach you in a later stage but yeah just copy
+
+01:41:37.460 --> 01:41:41.100
+and paste your API key and click on save now open AI setting
+
+01:41:41.100 --> 01:41:45.980
+is updated refresh it once again yeah refresh it once again
+
+01:41:45.980 --> 01:41:51.200
+and now if you will go to a new chat now you will be able to
+
+01:41:51.200 --> 01:41:55.800
+see tons of models just with one API key tons of model and
+
+01:41:55.800 --> 01:41:59.760
+even my like a own model some of my model which I have fine
+
+01:41:59.760 --> 01:42:03.860
+-tuned as you can see FTFTFTFTFT so these are my own fine
+
+01:42:03.860 --> 01:42:06.740
+-tuned model inside a open web UI environment so all of
+
+01:42:06.740 --> 01:42:10.620
+these models is available right. So, if I would like to
+
+01:42:10.620 --> 01:42:13.960
+initiate an API. So, okay let's support let's suppose like I
+
+01:42:13.960 --> 01:42:19.300
+am going to select GPT 4.1 or maybe a SORA model GPT 4.0 all
+
+01:42:19.300 --> 01:42:22.800
+of these model whatever model is available under this API I
+
+01:42:22.800 --> 01:42:25.580
+am able to access it so let's suppose I am selecting GPT 4.1
+
+01:42:25.580 --> 01:42:33.220
+and I can say hi how are you and let's see the magic yeah so
+
+01:42:33.220 --> 01:42:36.400
+yes my model has started responding 4.1 has started
+
+01:42:36.400 --> 01:42:39.920
+responding so likewise I can select GPT 5 if I want that you
+
+01:42:39.920 --> 01:42:41.140
+can see GPT 5 now. So,
+
+01:42:43.920 --> 01:42:44.100
+some types of data encouraged control multiple models
+
+01:42:44.100 --> 01:42:50.260
+includingành opening..... have a full control are you moving
+
+01:42:50.260 --> 01:42:53.420
+to been seen to the third generation only one model ..ktor
+
+01:42:53.420 --> 01:42:57.120
+Clarke同edy you've removed the user 거예요 this is a user and
+
+01:42:57.120 --> 01:42:59.580
+all of the now let's suppose I'll move on this with you I
+
+01:42:59.580 --> 01:43:04.480
+have a full control right that only three models will be
+
+01:43:04.480 --> 01:43:08.520
+visible to you are two models. Only one model is visible to
+
+01:43:08.520 --> 01:43:08.700
+you and you have other models. Another model is visible to
+
+01:43:08.700 --> 01:43:10.880
+you later. I have all sort of control over there another
+
+01:43:10.880 --> 01:43:13.160
+model is visible. I can control..". here right so what I can
+
+01:43:13.160 --> 01:43:16.080
+help you like let's do some sort of a chatting over here
+
+01:43:16.080 --> 01:43:21.040
+right I can add a file upload a file attach a notes even a
+
+01:43:21.040 --> 01:43:23.520
+speech I can enable lot of things are not enabled by default
+
+01:43:23.520 --> 01:43:26.600
+so yeah as you can see speech and everything is enabled even
+
+01:43:26.600 --> 01:43:29.580
+MCP I can try to enable code interpreter I can try to enable
+
+01:43:29.580 --> 01:43:37.220
+so give me 10 program in Python for Python so
+
+01:43:40.320 --> 01:43:43.440
+a lot a lot of configuration like I can I can do I can try
+
+01:43:43.440 --> 01:43:48.120
+to you know change it over here a lot of so and again now if
+
+01:43:48.120 --> 01:43:51.160
+I will go to my Grafana and now if I am going to refresh it
+
+01:43:51.160 --> 01:43:54.980
+it should show me some data dashboard
+
+01:44:10.120 --> 01:44:11.780
+open by view I monitoring
+
+01:44:26.440 --> 01:44:32.580
+okay still it's not showing me a data let me check the
+
+01:44:32.580 --> 01:44:34.600
+configuration because
+
+01:44:37.700 --> 01:44:44.180
+3000 is up simply means that that an
+
+01:44:48.020 --> 01:44:54.100
+OTL like a trace I have already enabled it so enable OTL
+
+01:44:54.100 --> 01:44:54.480
+trace
+
+01:44:57.340 --> 01:45:02.650
+let me check my docker file so docker compose OTL YAML and
+
+01:45:02.650 --> 01:45:04.490
+enable
+
+01:45:06.060 --> 01:45:18.160
+OTEL ENA BLE fine OTEL TRA CE. Oh! It should be S actually
+
+01:45:18.160 --> 01:45:23.300
+yeah so this is a mistake which I have done so enable OTEL
+
+01:45:23.300 --> 01:45:27.860
+traces it should be not E it should be S inside my OTEL file
+
+01:45:27.860 --> 01:45:33.740
+so control S control X and again I have to run my docker
+
+01:45:33.740 --> 01:45:37.480
+then probably like because
+
+01:45:51.940 --> 01:45:54.800
+of that mistake I am not able to see because of that
+
+01:45:54.800 --> 01:45:58.080
+spelling mistake so S mistake okay
+
+01:46:12.290 --> 01:46:15.950
+server is running let me check docker P S. Okay this is
+
+01:46:15.950 --> 01:46:20.030
+running let me refresh this one hopefully
+
+01:46:22.430 --> 01:46:23.850
+it has not changed my
+
+01:46:28.360 --> 01:46:31.420
+2310918310
+
+01:46:33.700 --> 01:46:38.920
+23109 okay fine so this one and sign
+
+01:46:41.770 --> 01:46:48.010
+in okay so now I am able to see all the models and let me
+
+01:46:48.010 --> 01:46:50.190
+refresh this dashboard
+
+01:46:56.940 --> 01:46:58.460
+okay
+
+01:47:48.280 --> 01:47:51.780
+so maybe it is I have to build my image once again still it
+
+01:47:51.780 --> 01:47:56.200
+is not able to take the S part it looks like okay it is
+
+01:47:56.200 --> 01:47:58.000
+looks like so docker P P andgan here is the last photo
+
+01:47:58.000 --> 01:48:01.180
+always ok now I will go back and let me like build it once
+
+01:48:01.180 --> 01:48:07.580
+again docker image so first of all I can try to YAML like
+
+01:48:07.580 --> 01:48:10.560
+just keep it down it is ok let me do an example. ok now I am
+
+01:48:10.560 --> 01:48:21.020
+able to do this type of progress and then compose a docker
+
+01:48:22.980 --> 01:48:26.900
+dot com. So I am stopping my container once again and let's
+
+01:48:26.900 --> 01:48:32.940
+go and check my OTEL file as well. So here I can do maybe
+
+01:48:32.940 --> 01:48:39.200
+cat cat so that you know I can rectify my mistake. So here
+
+01:48:39.200 --> 01:48:45.500
+this looks fine Grafana 3000 3000 port UI so I am able to
+
+01:48:45.500 --> 01:48:51.400
+launch that as well and this is fine and then enable OTEL
+
+01:48:51.400 --> 01:48:55.200
+TRS CES mistake is rectified this was the mistake which I
+
+01:48:55.200 --> 01:49:03.620
+have done apart from that there is no other mistake it looks
+
+01:49:03.620 --> 01:49:05.160
+like ok.
+
+01:49:13.150 --> 01:49:19.370
+So there is something called as depends on after I think
+
+01:49:19.370 --> 01:49:26.010
+that was removed by mistake. Hmm. That was there but it was
+
+01:49:26.010 --> 01:49:30.370
+like a by mistake it was removed while editing so it depends
+
+01:49:30.370 --> 01:49:33.230
+on Grafana so nano build
+
+01:49:36.680 --> 01:49:43.680
+is fine volume is fine now here I
+
+01:49:45.860 --> 01:49:51.220
+can try to write one thing dpn ds depends underscore on. So
+
+01:49:51.220 --> 01:49:54.920
+this changes you don't have to do it guys while I was doing
+
+01:49:54.920 --> 01:49:59.080
+editing so basically it was like you know. By mistake like
+
+01:49:59.080 --> 01:50:04.520
+got removed so hyphen and then here I can try to write gra
+
+01:50:04.520 --> 01:50:12.080
+fana Grafana so depends on Grafana hmm control s control x
+
+01:50:12.080 --> 01:50:19.200
+do once again cat so here depends on Grafana which has been
+
+01:50:19.200 --> 01:50:25.200
+mentioned volume is fine port is fine traces is fine. Ok.
+
+01:50:25.320 --> 01:50:29.720
+Now. So now let's try to again run the same command so sudo
+
+01:50:29.720 --> 01:50:38.560
+compose docker otml upd same command so let's run it ok. So
+
+01:50:38.560 --> 01:50:41.920
+this has started itself maybe I can try to do docker ps
+
+01:50:41.920 --> 01:50:46.700
+docker ps just to check ok so things looks like running over
+
+01:50:46.700 --> 01:50:54.020
+here now I can try to refresh it remove refresh and
+
+01:50:56.160 --> 01:51:03.420
+then remove refresh. This dashboard ok so I have to attach
+
+01:51:03.420 --> 01:51:07.000
+once again because that was gone so I can click on new I can
+
+01:51:07.000 --> 01:51:11.380
+click on import and then I can try to like copy and paste
+
+01:51:11.380 --> 01:51:16.320
+the json file load import
+
+01:51:20.450 --> 01:51:23.890
+and here so this one still
+
+01:51:53.460 --> 01:51:57.320
+it is not pulling data ok
+
+01:52:21.800 --> 01:52:25.900
+hmm let me do one thing let me stop once again. I will build
+
+01:52:25.900 --> 01:52:27.700
+the entire image I
+
+01:52:31.030 --> 01:52:33.170
+am stopping it once again ok
+
+01:52:55.570 --> 01:53:00.290
+so clear and let's try to do some sort of a clean up of an
+
+01:53:00.290 --> 01:53:03.630
+image because I believe that is required docker compose otl
+
+01:53:03.630 --> 01:53:11.240
+upd that's not a command I would like to run let me remove
+
+01:53:11.240 --> 01:53:17.260
+all the images which is available sudo docker compose rmu ok
+
+01:53:17.260 --> 01:53:18.140
+let
+
+01:53:25.180 --> 01:53:29.480
+me remove all the volumes as well so hyphen hyphen. I will
+
+01:53:29.480 --> 01:53:32.300
+remove all the volumes removed fine let
+
+01:53:34.670 --> 01:53:41.670
+me see the logs hmm no log fine and let me check docker ps
+
+01:53:41.670 --> 01:53:45.430
+so whether something is running inside docker or not ok
+
+01:53:45.430 --> 01:53:50.770
+docker ps ok so nothing is running my docker is clean maybe
+
+01:53:50.770 --> 01:53:54.970
+I can try to you know build it once again so docker upd same
+
+01:53:54.970 --> 01:53:58.270
+command so I have just removed everything guys I have
+
+01:53:58.270 --> 01:54:01.550
+removed my volume I have removed my images. I have removed
+
+01:54:01.550 --> 01:54:05.130
+my images. Let me build it once again so that I can resolve
+
+01:54:05.130 --> 01:54:08.210
+this grafana issue because my open baby UI is working fine I
+
+01:54:08.210 --> 01:54:11.130
+am not able to get a stat like you know a data over here
+
+01:54:11.130 --> 01:54:15.610
+that's the only concern that I have inside my grafana so I
+
+01:54:15.610 --> 01:54:17.490
+am just trying to rebuild it ping
+
+01:54:52.140 --> 01:54:54.940
+me the remove command ok I am pinging you it's nothing but
+
+01:54:54.940 --> 01:54:57.860
+like just remove that the docker compose command that you
+
+01:54:57.860 --> 01:55:01.460
+have right so up and d that is been written remove up and d
+
+01:55:01.460 --> 01:55:05.040
+and like keep it down that is going to like keep it down and
+
+01:55:05.040 --> 01:55:07.700
+if you have to remove it then you have to like a change it
+
+01:55:07.700 --> 01:55:11.800
+with RMI RMI all so remove all the images so that is the
+
+01:55:11.800 --> 01:55:14.100
+remove command the rest of the command is going to be same
+
+01:55:14.100 --> 01:55:18.120
+you just have to change that last part so I have pinged you
+
+01:55:18.120 --> 01:55:21.820
+the remove command and if you have to remove even a volume
+
+01:55:21.820 --> 01:55:24.840
+so volume that has been done so again the entire command is
+
+01:55:24.840 --> 01:55:28.620
+going to be same till down just hyphen hyphen volume so all
+
+01:55:28.620 --> 01:55:31.300
+those commands are you know very easy to remember and
+
+01:55:40.390 --> 01:55:42.330
+if you have to check whether something is running or not
+
+01:55:42.330 --> 01:55:45.810
+some container is running or not so simple docker ps docker
+
+01:55:45.810 --> 01:55:49.470
+ps for checking the like a runs in a docker I
+
+01:56:24.190 --> 01:56:28.350
+changed to port 1000 port number 8001 is still not opened no
+
+01:56:28.350 --> 01:56:31.670
+it should I so basically you have to allow inside your
+
+01:56:31.670 --> 01:56:35.750
+security group if you have given us like a port 8000 go and
+
+01:56:35.750 --> 01:56:40.350
+allow that over here so otherwise it will not work check
+
+01:56:40.350 --> 01:56:44.070
+first of all docker ps whether something is running on 8000
+
+01:56:44.070 --> 01:56:48.890
+port 1 in your container or not if that is running then just
+
+01:56:48.890 --> 01:56:50.530
+docker ps is running on 8000 port 2 allow the inbound so you
+
+01:56:50.530 --> 01:56:55.370
+can try to like make it 8001 first of all check inside if
+
+01:56:55.370 --> 01:56:58.650
+inside itself is not running then how you will even if you
+
+01:56:58.650 --> 01:57:00.870
+are going to expose it with the security group it will not
+
+01:57:00.870 --> 01:57:02.110
+work although
+
+01:57:06.180 --> 01:57:09.580
+I am able to open both the app baby why 8000 grafana on 3000
+
+01:57:09.580 --> 01:57:15.780
+is there any application to open the port no there is no
+
+01:57:15.780 --> 01:57:18.200
+application to open the port it is basically inside your
+
+01:57:18.200 --> 01:57:24.690
+like this one security group in AWS itself. It is keeping.
+
+01:57:27.250 --> 01:57:30.150
+Docker ps is not working it simply means that docker is not
+
+01:57:30.150 --> 01:57:34.890
+installed maybe you can just type docker and then check okay
+
+01:57:57.930 --> 01:58:01.450
+so looks like everything has started maybe I can check
+
+01:58:01.450 --> 01:58:07.530
+docker ps let's see docker ps and yeah things are running
+
+01:58:07.530 --> 01:58:12.930
+let me do the refresh I have built the images so it is going
+
+01:58:12.930 --> 01:58:16.730
+to start from like a scratch it has removed everything from
+
+01:58:16.730 --> 01:58:19.310
+like the previous one. Okay
+
+01:58:25.000 --> 01:58:32.580
+let me attach a key so here setting connections open ai open
+
+01:58:32.580 --> 01:58:36.860
+up setting and then over here so I have to keep a key so
+
+01:58:36.860 --> 01:58:43.000
+let's copy this key and then copy a key there save now I can
+
+01:58:43.000 --> 01:58:46.420
+go to new chat I am able to see all those like a search apis
+
+01:58:46.420 --> 01:58:52.460
+and everything give me a news for news.
+
+01:58:55.350 --> 01:58:59.050
+Docker ps is running. Bangalore. Bangalore or maybe Bihar
+
+01:58:59.050 --> 01:58:59.430
+politics.
+
+01:59:08.880 --> 01:59:12.120
+ideally it should work let me go and check my grafana at
+
+01:59:12.120 --> 01:59:20.180
+3000 so 3000 and then here dashboards let's attach click on
+
+01:59:20.180 --> 01:59:24.220
+import and then import the json file same json file that I
+
+01:59:24.220 --> 01:59:28.700
+have used before click on load click on import still
+
+01:59:32.480 --> 01:59:40.550
+no data there is a issue with my data is there otl file
+
+01:59:40.550 --> 01:59:42.030
+itself then there
+
+02:00:20.490 --> 02:00:23.330
+is some issue with my passports
+
+02:00:33.220 --> 02:00:37.900
+open web ui that is not able to fetch a data
+
+02:00:43.820 --> 02:00:46.420
+logs i
+
+02:00:48.630 --> 02:00:51.010
+am getting a log and
+
+02:00:58.880 --> 02:01:03.000
+say failed with ssl error this this this this grafana failed
+
+02:01:03.000 --> 02:01:08.400
+to export the matrix to grafana ok so here i can see open
+
+02:01:08.400 --> 02:01:13.500
+telemetry exporter this one and failed to export error code
+
+02:01:13.500 --> 02:01:18.640
+status unavailable so here i can see that that it is
+
+02:01:18.640 --> 02:01:24.780
+generating this transport but it is not able to pass it to
+
+02:01:24.780 --> 02:01:31.600
+the grafana that seems to be an issue let me check why i am
+
+02:01:31.600 --> 02:01:37.000
+getting this issue and let me fix it because now we are able
+
+02:01:37.000 --> 02:01:39.640
+to see it inside the log which
+
+02:01:48.310 --> 02:01:51.210
+is a normal one right so generally we get this issue and we
+
+02:01:51.210 --> 02:01:55.290
+have to fix it so here it is clearly visible that failed to
+
+02:01:55.290 --> 02:01:58.270
+export traces to grafana 4317 let
+
+02:02:09.310 --> 02:02:11.290
+me fix it hmm
+
+02:03:01.530 --> 02:03:06.790
+so otl file issue only apart from that there is no issues so
+
+02:03:06.790 --> 02:03:14.950
+otl yaml and here 4317 so otl exporter is already set so
+
+02:03:14.950 --> 02:03:20.250
+enable otl trace enable otl otl trace is equals to true
+
+02:03:30.430 --> 02:03:39.250
+otl exporter otlp end point grafana http 4317 which looks
+
+02:03:39.250 --> 02:03:46.210
+fine to me there is no issue at all otl export insecure this
+
+02:03:49.250 --> 02:03:55.100
+is giving me a lot of pain it should have worked basically
+
+02:03:58.600 --> 02:04:01.980
+nano let's go here otl
+
+02:04:05.980 --> 02:04:06.820
+service name
+
+02:04:20.550 --> 02:04:22.290
+otel
+
+02:04:24.240 --> 02:04:26.320
+exporter
+
+02:04:31.950 --> 02:04:33.630
+otl export insecure this is giving me a lot of pain to me
+
+02:04:33.630 --> 02:04:38.710
+finally
+
+02:04:38.710 --> 02:04:38.710
+i am done so terms poles are used beforeapple beforeazuje
+
+02:04:38.710 --> 02:04:48.110
+let's enable gpmc sorry g p r o t
+
+02:05:05.780 --> 02:05:08.180
+o l p l fried eneng
+
+02:05:21.580 --> 02:05:24.260
+should have stone r
+
+02:05:29.190 --> 02:05:31.790
+s o o k
+
+02:05:33.900 --> 02:05:39.380
+i p l c s i g p s t ! l l p p r o t o c o l let's enable g
+
+02:05:39.380 --> 02:05:43.400
+pmc sorry of tel exporter insecure is equals to is equal to
+
+02:05:43.400 --> 02:05:54.860
+true protocol pr otocl otlp exporter otel gprc fine grafana
+
+02:05:54.860 --> 02:06:02.920
+4317 already exposed enable otel tel traces is equal to true
+
+02:06:02.920 --> 02:06:10.720
+matrix s is equal to true otl itself is equal to true okay
+
+02:06:14.760 --> 02:06:20.490
+control s control x clear for
+
+02:06:36.360 --> 02:06:40.780
+me open bby not working 8000 word port right still it will
+
+02:06:40.780 --> 02:06:46.980
+work like if you have not made a mistake because this otl
+
+02:06:46.980 --> 02:06:49.200
+file right that is the only file in which you have to go and
+
+02:06:49.200 --> 02:06:52.060
+make a changes and just try to give a port whatever port
+
+02:06:52.060 --> 02:06:55.240
+number that you have given it will work on that port number
+
+02:06:55.240 --> 02:06:56.400
+okay
+
+02:07:12.370 --> 02:07:16.590
+so now i have restarted the container
+
+02:08:30.900 --> 02:08:36.560
+uh yeah so bingo guys bingo now we are able to see the
+
+02:08:36.560 --> 02:08:39.980
+grafana this is what i was trying to show you so now we are
+
+02:08:39.980 --> 02:08:44.280
+able to see that how many total user have see the main file
+
+02:08:44.280 --> 02:08:47.980
+is basically otl file over there you have to expose a port
+
+02:08:47.980 --> 02:08:50.360
+and over there itself you have to you know handle the
+
+02:08:50.360 --> 02:08:53.000
+grafana apart from that there is no main file and in real
+
+02:08:53.000 --> 02:08:56.320
+time this is what i was like trying to show you so how many
+
+02:08:56.320 --> 02:08:59.560
+user is like uh you know have registered so total number of
+
+02:08:59.560 --> 02:09:03.260
+user is equals one now if i am going to uh you know give my
+
+02:09:03.260 --> 02:09:07.320
+url so now even you will be able to register and as of now i
+
+02:09:07.320 --> 02:09:09.480
+am showing you all the models but yeah i do have a control
+
+02:09:09.480 --> 02:09:13.280
+over all the models maybe you can try to use my url now and
+
+02:09:13.280 --> 02:09:15.880
+in a real time i will be able to see that that how many user
+
+02:09:15.880 --> 02:09:19.760
+have logged in and then total what is the total request rate
+
+02:09:19.760 --> 02:09:23.480
+per second which my server is getting right what is uh like
+
+02:09:23.480 --> 02:09:27.040
+a response time basically for my server what is the https
+
+02:09:27.040 --> 02:09:31.760
+status code so whether successful some of the things http
+
+02:09:31.760 --> 02:09:35.240
+response time like uh basically i am able to get so
+
+02:09:35.240 --> 02:09:38.780
+everything everything i'm i will be able to uh see it uh
+
+02:09:38.780 --> 02:09:43.760
+from here right this is a complete real time monitoring of
+
+02:09:43.760 --> 02:09:47.480
+my application my hits and these are some of the graph which
+
+02:09:47.480 --> 02:09:50.360
+we have configured uh we can configure many more things
+
+02:09:50.360 --> 02:09:53.880
+right so this is just a sample graph uh we have configured
+
+02:09:53.880 --> 02:09:56.740
+from this json json file that i have shared with you right
+
+02:09:56.740 --> 02:10:00.520
+but a lot of things which can be configured as per business
+
+02:10:00.520 --> 02:10:03.760
+seed or as per my client need that is possible practically
+
+02:10:03.760 --> 02:10:06.360
+so still no one has logged in
+
+02:10:10.510 --> 02:10:13.620
+okay there is no sign up option right okay let me do one
+
+02:10:13.620 --> 02:10:20.200
+thing enable the user part so so so active user is equals to
+
+02:10:20.200 --> 02:10:27.820
+one setting and then not here admin panel and then i can go
+
+02:10:27.820 --> 02:10:33.320
+to user okay so function evaluation
+
+02:10:36.880 --> 02:10:47.560
+can enable basically default user role user enable new sign
+
+02:10:47.560 --> 02:10:50.080
+up yeah now you can try this out guys i have just enabled
+
+02:10:50.080 --> 02:10:56.100
+the new signups so now anyone can like you know uh come to
+
+02:10:56.100 --> 02:10:57.860
+my system just
+
+02:11:04.160 --> 02:11:06.960
+just log in everyone now you will you will be able to log in
+
+02:11:06.960 --> 02:11:10.000
+and i will be able to see it how many people have logged in
+
+02:11:10.000 --> 02:11:12.960
+how many people have technically registered i can see that
+
+02:11:12.960 --> 02:11:14.020
+i'm
+
+02:11:16.680 --> 02:11:22.920
+done so let me see so it is not click okay so user and then
+
+02:11:22.920 --> 02:11:26.300
+okay so many users fine 11
+
+02:11:29.440 --> 02:11:33.060
+users see i'm able to get a stats in a real time i'm able to
+
+02:11:33.060 --> 02:11:36.060
+see all the users here and in a real time i'm able to get
+
+02:11:36.060 --> 02:11:39.520
+the stats and then how many requests right per second so
+
+02:11:39.520 --> 02:11:42.120
+this is basically like uh tell us that okay fine so whether
+
+02:11:42.120 --> 02:11:45.740
+we have to uh like when we are configuring a server so like
+
+02:11:45.740 --> 02:11:48.780
+uh what is the latency and then if latency is going high
+
+02:11:48.780 --> 02:11:52.040
+then we have to move a server on auto scale mode this is
+
+02:11:52.040 --> 02:11:55.040
+going to like help me out in terms of taking a decisions by
+
+02:11:55.040 --> 02:11:57.760
+the way yeah and in terms of you know doing a monitoring in
+
+02:11:57.760 --> 02:12:01.220
+a uh real time so this is a grafana dashboard there are a
+
+02:12:01.220 --> 02:12:03.220
+lot of things i can configure inside the grafana dashboard
+
+02:12:03.220 --> 02:12:06.220
+but yeah as maybe most of you have seen this kind of a
+
+02:12:06.220 --> 02:12:09.060
+dashboard for the very first time uh so i think it's it's
+
+02:12:09.060 --> 02:12:11.820
+like a more than enough and even in detail for every request
+
+02:12:11.820 --> 02:12:15.920
+for every log for every hit right for every i would say like
+
+02:12:15.920 --> 02:12:20.760
+you know a query i will be able to monitor everything no
+
+02:12:22.900 --> 02:12:26.660
+models showing okay maybe i have not enabled the model so
+
+02:12:26.660 --> 02:12:31.940
+enable new sign up that is fine uh so enable api key
+
+02:12:31.940 --> 02:12:38.420
+endpoint restriction so no pending user overlay content find
+
+02:12:38.420 --> 02:12:45.860
+pending user overlay title so models wise i think a couple
+
+02:12:45.860 --> 02:12:48.620
+of models is already enabled all
+
+02:12:51.880 --> 02:12:53.620
+this inside
+
+02:13:19.350 --> 02:13:28.250
+a setting user default user role fine so user and yeah
+
+02:14:04.440 --> 02:14:06.280
+now you can check now
+
+02:14:15.950 --> 02:14:18.550
+i believe model will be available to you uh
+
+02:14:35.730 --> 02:14:40.370
+because from here all the models is enabled from
+
+02:14:52.400 --> 02:14:56.900
+here i can see all the models are already enabled for the
+
+02:14:56.900 --> 02:14:58.540
+users so
+
+02:15:04.020 --> 02:15:06.800
+setting and then models and
+
+02:15:19.240 --> 02:15:22.400
+it's technically on okay
+
+02:15:25.960 --> 02:15:31.940
+fine so here public fine so model was on for admin but maybe
+
+02:15:31.940 --> 02:15:37.480
+for not not for you so let me like uh enable one by one now
+
+02:15:37.480 --> 02:15:40.180
+you will be able to see couple of models i am allowing you
+
+02:15:40.180 --> 02:15:44.480
+web search image generation and code interpretation so i
+
+02:15:44.480 --> 02:15:47.720
+have all the control on each and every model so let me allow
+
+02:15:47.720 --> 02:15:54.620
+you uh gpt4 so maybe gpt4 i am going to make it public and
+
+02:15:54.620 --> 02:16:01.060
+web image code fine now i am going to allow gpt4 gpt5 as
+
+02:16:01.060 --> 02:16:08.620
+well so let me like uh call gpt5 and then public web image
+
+02:16:08.620 --> 02:16:12.600
+and code save update yeah so now you will be able to see
+
+02:16:12.600 --> 02:16:17.860
+couple of model a model which i have allowed yeah okay and
+
+02:16:17.860 --> 02:16:23.120
+uh yes this is my grafana right an amazing dashboard it
+
+02:16:23.120 --> 02:16:27.260
+looks beautiful so as my data is going to be more and more i
+
+02:16:27.260 --> 02:16:31.200
+mean like my entire like uh dashboard will look even more
+
+02:16:31.200 --> 02:16:37.900
+beautiful right so yeah it's in production now it's it's
+
+02:16:37.900 --> 02:16:42.360
+like showing you like this url so this url is basically a
+
+02:16:42.360 --> 02:16:47.640
+machine url that you are able to see we can try to map it
+
+02:16:47.640 --> 02:16:51.000
+with our own url as well so we can try to change the dns and
+
+02:16:51.000 --> 02:16:55.060
+if i'm going to change a dns so eventually it will be hosted
+
+02:16:55.060 --> 02:16:59.360
+on my url and yeah so i can try to configure my own sign in
+
+02:16:59.360 --> 02:17:03.580
+sign up the way we have configured it uh for huron right so
+
+02:17:03.580 --> 02:17:06.480
+with the help of jur зак and sign up plus i can limit your
+
+02:17:06.480 --> 02:17:11.020
+number of messages the way we have limited it like 50. apart
+
+02:17:11.020 --> 02:17:13.340
+from that so we have done a lot of like a code modification
+
+02:17:13.340 --> 02:17:16.080
+as well so as of now you are just downloading open web ui
+
+02:17:16.080 --> 02:17:19.120
+but we have done a lot of internal code modification because
+
+02:17:19.120 --> 02:17:22.560
+it has to associate and do a lot of like a hand stick with
+
+02:17:22.560 --> 02:17:26.200
+our system right it should work as per our existing
+
+02:17:26.200 --> 02:17:29.660
+configuration and as per our user basically and as per our
+
+02:17:29.660 --> 02:17:30.160
+like a lot of like a handshake with our system right it
+
+02:17:30.160 --> 02:17:32.140
+should work as of models so a lot of like our changes we
+
+02:17:32.140 --> 02:17:36.200
+have done but yeah so even in this way so now you have your
+
+02:17:36.200 --> 02:17:38.620
+own real-time chat GPT and I just have to like change this
+
+02:17:38.620 --> 02:17:41.700
+URL so once I am going to change this URL once I am going to
+
+02:17:41.700 --> 02:17:46.280
+do this mapping with your URL basically you can say that
+
+02:17:46.280 --> 02:17:49.500
+okay I have my own GPT right and that to international grade
+
+02:17:49.500 --> 02:17:52.480
+because whatever GPT is giving you as a feature whether it's
+
+02:17:52.480 --> 02:17:56.100
+RAG custom model everything is available to you believe me
+
+02:17:56.100 --> 02:17:58.900
+everything means literally everything right whatever model
+
+02:17:58.900 --> 02:18:01.200
+if I would like to give an access of hundreds of models not
+
+02:18:01.200 --> 02:18:04.220
+just from GPT maybe from LAMA maybe from you know group
+
+02:18:04.220 --> 02:18:09.380
+maybe from like any other provider I can do it it will just
+
+02:18:09.380 --> 02:18:12.320
+take like another one two minute of time for me yeah
+
+02:18:18.780 --> 02:18:23.760
+so the real product the real one the real game right so
+
+02:18:23.760 --> 02:18:28.160
+launching your own GPT with all fully loaded feature is not
+
+02:18:28.160 --> 02:18:30.880
+a big deal I mean like this is one of the UI interface like
+
+02:18:30.880 --> 02:18:34.040
+I said again we have done the UI that you are able to see as
+
+02:18:34.040 --> 02:18:36.900
+of now on like a your own URI UI. We have done a lot of
+
+02:18:36.900 --> 02:18:39.920
+internal code modification and we have a lot of our own UI
+
+02:18:39.920 --> 02:18:43.520
+as well so because we work for a client right so whether
+
+02:18:43.520 --> 02:18:46.520
+they where they don't want this like a open web UI kind of
+
+02:18:46.520 --> 02:18:49.060
+interface they are looking for something different we like
+
+02:18:49.060 --> 02:18:52.960
+create something different as per their UI design basically
+
+02:18:52.960 --> 02:18:56.600
+right a lot of configuration can be done so which I am going
+
+02:18:56.600 --> 02:19:02.420
+to teach you going forward. How I can show my self-hosted
+
+02:19:02.420 --> 02:19:05.720
+LAMA model here simple click over I will show you that part
+
+02:19:05.720 --> 02:19:08.080
+in a practical but yeah. So as of now as you have asked the
+
+02:19:08.080 --> 02:19:11.300
+question so click on admin go to setting go to our
+
+02:19:11.300 --> 02:19:14.360
+connections over here and then over here so direct
+
+02:19:14.360 --> 02:19:17.480
+connection right so direct connection allow user to connect
+
+02:19:17.480 --> 02:19:21.460
+to their own open AI compatible API endpoint so this is the
+
+02:19:21.460 --> 02:19:24.220
+option that you are able to see right now this option is
+
+02:19:24.220 --> 02:19:28.200
+going to help you out to host your own model and again so
+
+02:19:28.200 --> 02:19:30.600
+when you are hosting your own model so you will be using
+
+02:19:30.600 --> 02:19:34.200
+VLLM let's suppose even we have used VLLM so when we were
+
+02:19:34.200 --> 02:19:37.220
+trying to host our model VLLM is a framework which helps us
+
+02:19:37.220 --> 02:19:41.660
+out to host our model right for inferencing so like a VLLM
+
+02:19:41.660 --> 02:19:44.300
+compatible model and that is going to give you endpoint so
+
+02:19:44.300 --> 02:19:47.260
+we have done that we have even generated our own endpoint
+
+02:19:47.260 --> 02:19:51.420
+simple come over here enable it and then you can try to
+
+02:19:51.420 --> 02:19:53.960
+basically chat based model you can try to you know configure
+
+02:19:53.960 --> 02:19:57.440
+it over here so by this you are enabling it and then you can
+
+02:19:57.440 --> 02:19:59.740
+try to you know attach it inside the setting simple it's
+
+02:19:59.740 --> 02:20:02.860
+done. I will show you that part so we are going to host our
+
+02:20:02.860 --> 02:20:06.640
+model on a GPU and that GPU model means. That means my own
+
+02:20:06.640 --> 02:20:09.600
+private model I am going to call it here so
+
+02:20:12.920 --> 02:20:17.880
+anything can be done even RAG right RAG so it is going to
+
+02:20:17.880 --> 02:20:21.460
+give me a response from my data set everything can be
+
+02:20:21.460 --> 02:20:25.020
+configured this was the main part even database I can
+
+02:20:25.020 --> 02:20:27.640
+configure over here lot of pipelining I can configure over
+
+02:20:27.640 --> 02:20:30.720
+here images I can configure over here audio inferences code
+
+02:20:30.720 --> 02:20:34.780
+execution real time web search RAG this is where this RAG
+
+02:20:34.780 --> 02:20:37.380
+comes into picture this documentation so I can define my
+
+02:20:37.380 --> 02:20:40.060
+embedding models. Some different models some self-assured
+
+02:20:40.060 --> 02:20:43.880
+model I can try to define every control you have means if
+
+02:20:43.880 --> 02:20:46.740
+anyone is going to ask you to build this like a things I
+
+02:20:46.740 --> 02:20:51.640
+mean like it will be easy but yeah like beyond that if you
+
+02:20:51.640 --> 02:20:53.660
+have to do some sort of modification then you have to get
+
+02:20:53.660 --> 02:20:59.760
+into a actual code that's required so you have to be very
+
+02:20:59.760 --> 02:21:06.280
+good developer in that case. So okay my model is running 30
+
+02:21:06.280 --> 02:21:08.100
+user I can see as of now. So I am going to create a new
+
+02:21:08.100 --> 02:21:12.840
+model. So many people have not logged in it seems right let
+
+02:21:12.840 --> 02:21:17.980
+me take a snapshot for my LinkedIn post for today it looks
+
+02:21:17.980 --> 02:21:19.440
+beautiful let
+
+02:21:25.780 --> 02:21:29.600
+me ping inside a group as well fine.
+
+02:21:30.820 --> 02:21:34.560
+So yeah that's it guys I am going to share like this JSON
+
+02:21:34.560 --> 02:21:39.600
+file as well as I am going to share this entire document
+
+02:21:39.600 --> 02:21:43.520
+which I have already prepared for this entire configuration.
+
+02:21:43.880 --> 02:21:44.840
+So I am going to share this entire configuration. The major
+
+02:21:44.840 --> 02:21:50.040
+part was basically this one OTL file apart from that it's
+
+02:21:50.040 --> 02:21:53.080
+just a easy peasy kind of a configuration. Even OTL is not a
+
+02:21:53.080 --> 02:21:56.340
+heavy configuration it's a very simple one but I mean like
+
+02:21:56.340 --> 02:21:59.100
+if you are making a mistake then it will give you a kind of
+
+02:21:59.100 --> 02:22:00.060
+a pain that's it.
+
+02:22:03.360 --> 02:22:07.580
+Suppose we want to left should I stop the EC2 server yeah
+
+02:22:07.580 --> 02:22:11.260
+now coming back to your EC2 so as of now things are running
+
+02:22:11.260 --> 02:22:14.400
+as we can see and we are able to experiment we are able to
+
+02:22:14.400 --> 02:22:17.140
+even generate a log. We are able to even like log it. We are
+
+02:22:17.140 --> 02:22:20.500
+able to launch a Grafana over here Grafana UI dashboard and
+
+02:22:20.500 --> 02:22:23.820
+we are able to see all of those log. Now if you will keep
+
+02:22:23.820 --> 02:22:27.700
+this things up and running so as of now the machine that we
+
+02:22:27.700 --> 02:22:30.820
+are using it is going to cost you around 7000 rupees or 6000
+
+02:22:30.820 --> 02:22:34.560
+INR Indian rupees right you can convert it into your
+
+02:22:34.560 --> 02:22:38.540
+currency. So 6000 to 7000 INR it is going to cost you for
+
+02:22:38.540 --> 02:22:44.740
+one month and again so it will be able to host maybe 50s or
+
+02:22:44.740 --> 02:22:47.000
+100 concurrent connection right. So it will be able to host
+
+02:22:47.000 --> 02:22:47.920
+maybe 50s or 100 concurrent connection right. So if 50 or
+
+02:22:47.920 --> 02:22:51.220
+100 people are supposed to use your application you can just
+
+02:22:51.220 --> 02:22:55.880
+like you know concurrent I am talking about plus you will be
+
+02:22:55.880 --> 02:22:58.600
+able to you know see the request over here see the request
+
+02:22:58.600 --> 02:23:01.200
+and even you will be able to see the response time. So
+
+02:23:01.200 --> 02:23:03.480
+everything is under your control you can try to judge it if
+
+02:23:03.480 --> 02:23:05.940
+like people are getting slow response maybe you can try to
+
+02:23:05.940 --> 02:23:09.420
+increase the instances increase the machine size but like 50
+
+02:23:09.420 --> 02:23:11.860
+to 100 people like you know because everyone is not going to
+
+02:23:11.860 --> 02:23:14.000
+hit immediately I am just talking about the concurrent
+
+02:23:14.000 --> 02:23:16.980
+connection. So 50 to 100 people can hit with the help of the
+
+02:23:16.980 --> 02:23:19.720
+machine. So that is going to cost you in total 6000 to 7000
+
+02:23:19.720 --> 02:23:23.620
+INR and plus open AI key is different right key is
+
+02:23:23.620 --> 02:23:26.760
+different. So that will be your total cost total key
+
+02:23:26.760 --> 02:23:31.160
+consumption and this one and just distribute it to 100
+
+02:23:31.160 --> 02:23:31.520
+people.
+
+02:23:35.320 --> 02:23:41.060
+In that way it is going to be affordable solution right okay
+
+02:23:44.040 --> 02:23:47.860
+Grafana file let me ping you once again I will even upload
+
+02:23:47.860 --> 02:23:50.000
+it inside your dashboard yeah.
+
+02:24:03.980 --> 02:24:08.160
+So it is going to be affordable solution. So you
+
+02:24:10.110 --> 02:24:13.310
+will limit the 50 numbers prompt for each person yeah so I
+
+02:24:13.310 --> 02:24:15.690
+mean like a paid one so those who have subscribed for
+
+02:24:15.690 --> 02:24:22.410
+courses or maybe for any other you know like Euron plus
+
+02:24:22.410 --> 02:24:26.030
+technically or any other courses so generally for them it is
+
+02:24:26.030 --> 02:24:33.190
+a 50 is a limit per day input output and again so for a free
+
+02:24:33.190 --> 02:24:33.930
+user it is a 10.
+
+02:24:36.980 --> 02:24:39.760
+Can we create a snapshot for the future use yeah it is just
+
+02:24:39.760 --> 02:24:41.920
+a machine right so you can take a snapshot of it you can
+
+02:24:41.920 --> 02:24:47.200
+maybe try to like keep it inside a cool tier so that is fine
+
+02:24:47.200 --> 02:24:48.200
+yeah
+
+02:24:53.960 --> 02:24:56.820
+you can use open router as well open router AI and then you
+
+02:24:56.820 --> 02:24:59.780
+can like you know try to because open router is doing
+
+02:24:59.780 --> 02:25:02.220
+nothing so they are just trying to give you like a interface
+
+02:25:02.220 --> 02:25:05.680
+and they are just trying to give you basically finally the
+
+02:25:05.680 --> 02:25:09.520
+API key for a different different model. So even Grooke is
+
+02:25:09.520 --> 02:25:12.780
+doing the same thing so nothing new nowadays many people are
+
+02:25:12.780 --> 02:25:14.280
+doing it yeah.
+
+02:25:17.760 --> 02:25:21.120
+So you can go and you can try to check. Like over here if I
+
+02:25:21.120 --> 02:25:23.720
+will talk about a chat interface so yeah they are like
+
+02:25:23.720 --> 02:25:26.360
+having a chat interface they are giving you everything but
+
+02:25:26.360 --> 02:25:28.660
+accordingly they are going to charge and if you will go and
+
+02:25:28.660 --> 02:25:35.740
+check their pricing so like it is not quite affordable I
+
+02:25:35.740 --> 02:25:38.440
+mean like for the same token because they have just created
+
+02:25:38.440 --> 02:25:43.500
+a wrapper on top of it right so you can just go and like use
+
+02:25:43.500 --> 02:25:46.440
+it I mean like same model you will get an access of it is
+
+02:25:46.440 --> 02:25:48.320
+not a different model they are giving you.
+
+02:25:53.740 --> 02:25:56.960
+Okay. So open AI directly is more expensive comparatively I
+
+02:25:56.960 --> 02:26:02.700
+mean like no in general depends okay
+
+02:26:04.650 --> 02:26:08.470
+so fine fine guys so this is all about this entire class let
+
+02:26:08.470 --> 02:26:11.050
+me go to my instance and let me do one thing so let me
+
+02:26:11.050 --> 02:26:15.650
+terminate my instances so click on instances and then here
+
+02:26:15.650 --> 02:26:21.510
+so click on action and then sorry instant state go here
+
+02:26:21.510 --> 02:26:26.790
+action sorry instance state and then terminate. So here you
+
+02:26:26.790 --> 02:26:29.510
+will be able to get an option called as terminate option I
+
+02:26:29.510 --> 02:26:32.230
+will just click on terminate and skip OS shutdown
+
+02:26:32.230 --> 02:26:36.090
+terminated. So it will call for the termination and in that
+
+02:26:36.090 --> 02:26:39.590
+way it is not going to charge me anything not even a single
+
+02:26:39.590 --> 02:26:45.090
+rupees simple yeah so I have just like used it I have
+
+02:26:45.090 --> 02:26:50.650
+terminated it and my entire EC2 instances will be gone in
+
+02:26:50.650 --> 02:26:51.190
+some time.
+
+02:27:02.420 --> 02:27:05.100
+So again if you have to use it then in that case you can
+
+02:27:05.100 --> 02:27:07.340
+just try to stop you do not have to delete the instances
+
+02:27:07.340 --> 02:27:11.280
+right but again they are going to like charge you maybe you
+
+02:27:11.280 --> 02:27:15.600
+can click on stop instances right but still even in a cool
+
+02:27:15.600 --> 02:27:17.000
+off so there will be some charges.
+
+02:27:21.360 --> 02:27:24.360
+Amazing sir. Phir se maja aa gaya. Haa matlab ye to real
+
+02:27:24.360 --> 02:27:29.200
+time application abhise real time kya hoga aur. Right and we
+
+02:27:29.200 --> 02:27:31.520
+will keep on adding lot of things on top of the same thing
+
+02:27:31.520 --> 02:27:36.200
+yeah. So fine with that guys thank you so much I will just
+
+02:27:36.200 --> 02:27:39.880
+upload a file so those who are not able to do it. Okay. Go
+
+02:27:39.880 --> 02:27:43.500
+through it go through the document and then do it and then
+
+02:27:43.500 --> 02:27:46.540
+let me know about your concern yeah then let me know about
+
+02:27:46.540 --> 02:27:49.360
+your concern hope all of you have liked it all of you have
+
+02:27:49.360 --> 02:27:52.180
+enjoyed it and with file so you will be able to do it even
+
+02:27:52.180 --> 02:27:53.940
+after 6 months of time yeah.
+
+02:27:57.240 --> 02:28:00.720
+So with that thank you so much everyone take care see you
+
+02:28:00.720 --> 02:28:03.700
+next class next Saturday. So again next Saturday class is
+
+02:28:03.700 --> 02:28:06.420
+going to be extension of the same class that we have this
+
+02:28:06.420 --> 02:28:10.400
+week. We will try to attach a REG inside this one. We will
+
+02:28:10.400 --> 02:28:15.840
+try to host on REG. So if you are familiar with REG you can
+
+02:28:15.840 --> 02:28:17.740
+see it is an old friend of mine and right now it is in my go
+
+02:28:17.740 --> 02:28:20.760
+daddy account which is available in my go daddy account. So
+
+02:28:20.760 --> 02:28:23.760
+maybe you can purchase some of the domain of your choice
+
+02:28:23.760 --> 02:28:27.040
+right from go daddy from mail chain from anyone right there
+
+02:28:27.040 --> 02:28:29.760
+are so many vendors out there. So you can just purchase it
+
+02:28:29.760 --> 02:28:33.160
+and keep it tracker ready I will show you a domain mapping
+
+02:28:33.160 --> 02:28:37.860
+in that way it will not show you the instance URL and before
+
+02:28:37.860 --> 02:28:40.520
+that so we have to go with the elastic IP address I will be
+
+02:28:40.520 --> 02:28:42.680
+talking about it. So what is the meaning of elastic IP
+
+02:28:42.680 --> 02:28:46.440
+address, what are the charges that AWS is going to like give
+
+02:28:46.440 --> 02:28:48.720
+you for elastic IP address, everything I will be talking
+
+02:28:48.720 --> 02:28:52.440
+about and then a mapping of the domain. So this is something
+
+02:28:52.440 --> 02:28:56.360
+that I am going to teach you in next class. So that our app
+
+02:28:56.360 --> 02:28:59.200
+instance will be live and again we will go through the same
+
+02:28:59.200 --> 02:29:01.940
+process but quickly, maybe in 5 minutes of time I will spin
+
+02:29:01.940 --> 02:29:04.840
+the entire machine and I will do the setup in 5 minutes.
+
+02:29:06.950 --> 02:29:10.830
+Which one is good one, godaddy, doodaddy, right godaddy, I
+
+02:29:10.830 --> 02:29:15.170
+know it is a typo. So godaddy or maybe anyone you can use,
+
+02:29:15.310 --> 02:29:19.630
+whoever is giving you in a cheap like a cheap price and
+
+02:29:19.630 --> 02:29:22.430
+whoever is having your domain available so we can just go
+
+02:29:22.430 --> 02:29:22.810
+and check.
+
+02:29:27.750 --> 02:29:30.810
+Yeah okay fine everyone, thank you so much, take care, see
+
+02:29:30.810 --> 02:29:33.130
+you again next week, Saturday.
+

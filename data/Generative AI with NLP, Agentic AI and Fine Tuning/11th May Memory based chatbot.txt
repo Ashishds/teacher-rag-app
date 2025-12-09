@@ -1,0 +1,1919 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.580
+So let's start talking about this project. So, like I said,
+
+00:00:02.700 --> 00:00:05.420
+uh, uh, what we are going to discuss in this project. So
+
+00:00:05.420 --> 00:00:09.520
+obviously we are going to, uh, basically talk about, uh,
+
+00:00:09.620 --> 00:00:13.000
+memory chat bot. And, uh, I have already given you a demo.
+
+00:00:13.160 --> 00:00:16.500
+Let me give you a demo once again. So we are going to
+
+00:00:16.500 --> 00:00:19.780
+experience a chat bot. So which is going to memorize each
+
+00:00:19.780 --> 00:00:23.000
+and everything, all the conversation that I had, again, I'm
+
+00:00:23.000 --> 00:00:26.560
+going to put up the limitation it is going to memorize. Even
+
+00:00:26.560 --> 00:00:31.140
+from a session session means the ongoing conversation, and
+
+00:00:31.140 --> 00:00:34.840
+it is going to memorize even from the previous context or
+
+00:00:34.840 --> 00:00:37.600
+like the black context, which I'm going to give, or maybe
+
+00:00:37.600 --> 00:00:41.760
+the previous chat that I already have each and everything it
+
+00:00:41.760 --> 00:00:44.740
+is going to store store where, so it is going to store into.
+
+00:00:45.480 --> 00:00:48.600
+Vector database. I'm going to use a Facebook, a semantic
+
+00:00:48.600 --> 00:00:53.340
+search vector database over here, and I'm basically using a
+
+00:00:53.340 --> 00:00:57.020
+URI API for a real time conversation, and I'm going to use a
+
+00:00:57.020 --> 00:01:00.960
+URI API for even, uh, embedding because I have to store
+
+00:01:00.960 --> 00:01:03.640
+something into a vector DB. So for sure, I need a
+
+00:01:03.640 --> 00:01:06.100
+embeddings, right? I have to convert that into embeddings.
+
+00:01:06.180 --> 00:01:09.980
+So I'm using like a GPT, a small case model and, uh, from a
+
+00:01:09.980 --> 00:01:12.340
+URI itself. And then I'm going to store it, store each and
+
+00:01:12.340 --> 00:01:15.360
+everything. So please download this folder, the folder,
+
+00:01:15.420 --> 00:01:19.780
+which I have shared with all of you, right, not able to
+
+00:01:19.780 --> 00:01:20.340
+download.
+
+00:01:22.910 --> 00:01:27.690
+Okay. Is it click on the resource, the corner section. Uh,
+
+00:01:27.710 --> 00:01:29.830
+the source, and then you can just click over there. I'm able
+
+00:01:29.830 --> 00:01:32.450
+to download by the way. Yeah, it's, it's working for me.
+
+00:01:36.710 --> 00:01:38.190
+I can download it basically.
+
+00:01:43.760 --> 00:01:46.940
+No ways. I think I'm able to download. Uh, it's not giving
+
+00:01:46.940 --> 00:01:49.020
+me a problem. I can maybe show you that.
+
+00:01:54.540 --> 00:02:00.880
+Yeah. Go here, go chat, click on the source. Yeah. So let me
+
+00:02:00.880 --> 00:02:02.600
+click on this one. This is the resource which I've shared.
+
+00:02:02.660 --> 00:02:05.620
+Right. See, it has started downloading four, five, three,
+
+00:02:05.720 --> 00:02:10.200
+two, one done. Yeah. 1 0 8 MB. I'm able to download it.
+
+00:02:12.300 --> 00:02:14.900
+Click multiple times, not multiple times, just one times,
+
+00:02:14.980 --> 00:02:21.340
+one click. It works always. It works. Yeah. Okay. Fine. It
+
+00:02:21.340 --> 00:02:26.240
+is working guys. I've shown you that. Okay. So basically I'm
+
+00:02:26.240 --> 00:02:29.480
+going to create a chat bot, right? I'm going to create a
+
+00:02:29.480 --> 00:02:32.740
+chat bot. So which is going to memorize you. You can even
+
+00:02:32.740 --> 00:02:36.140
+try to give a memory to this particular bot, right? You can
+
+00:02:36.140 --> 00:02:39.300
+try to even give a memory to this particular bot so that
+
+00:02:39.300 --> 00:02:43.260
+this bot will be able to understand you. You in a better and
+
+00:02:43.260 --> 00:02:46.960
+better and a better way, basically you can go and ask any
+
+00:02:46.960 --> 00:02:52.000
+kind of a question. So here let's start talking about a code
+
+00:02:52.000 --> 00:02:56.720
+and before the code. So let me give you a little bit of like
+
+00:02:56.720 --> 00:03:00.220
+a, you know, architectural overview that what this system is
+
+00:03:00.220 --> 00:03:02.460
+doing, although there is not like a complex architecture
+
+00:03:02.460 --> 00:03:09.020
+that we have over here, but yeah. So here we have created a
+
+00:03:09.020 --> 00:03:14.860
+chat interface. So there. Is a chat interface,
+
+00:03:16.580 --> 00:03:22.260
+right? And, uh, whenever you are going to send some chat,
+
+00:03:22.640 --> 00:03:29.520
+send some chat. So this chat will go here, chat interface.
+
+00:03:29.700 --> 00:03:34.220
+Now chat interface is going to technically call, uh, RIG
+
+00:03:34.220 --> 00:03:37.880
+based approach, uh, basically like, uh, and plus obviously
+
+00:03:37.880 --> 00:03:40.680
+like RIG based approach when I'm trying to say it simply
+
+00:03:40.680 --> 00:03:45.470
+means that, that first of all, it is going to store the
+
+00:03:45.470 --> 00:03:50.070
+data. Or embeddings, then it is going to call RIG based
+
+00:03:50.070 --> 00:03:53.270
+approach. It will try to understand you, uh, by the way,
+
+00:03:53.350 --> 00:03:57.750
+and, uh, not exactly the RIG. So because I have just like a
+
+00:03:57.750 --> 00:04:02.130
+commented, uh, I have just removed my, uh, Lanchen, uh, now
+
+00:04:02.130 --> 00:04:04.050
+from there, I have made, made it optional. I'll show you
+
+00:04:04.050 --> 00:04:06.550
+that in a code itself because of some purposes I was doing
+
+00:04:06.550 --> 00:04:09.970
+some experiment. So RIG based approach, then it is going to
+
+00:04:09.970 --> 00:04:12.690
+store the embeddings. It is going to store embeddings into a
+
+00:04:12.690 --> 00:04:16.810
+Facebook AI semantic search database. Okay. And whenever you
+
+00:04:16.810 --> 00:04:20.030
+are going to ask any kind of a question, so it remembers
+
+00:04:20.030 --> 00:04:23.750
+you, uh, like I said, so RIG based approach I'm trying to
+
+00:04:23.750 --> 00:04:29.330
+use, and then it is going to give you a response by
+
+00:04:29.330 --> 00:04:33.090
+combining all of these things inside your chat window. So
+
+00:04:33.090 --> 00:04:40.090
+here I'm going to use like a URI. So URI for like a chat and
+
+00:04:40.090 --> 00:04:46.160
+URI for embeddings. So this is the simple approach that we
+
+00:04:46.160 --> 00:04:50.240
+are going. To follow, uh, plus, uh, I'm trying to maintain a
+
+00:04:50.240 --> 00:04:52.880
+contextual memory as well as I'm trying to maintain the long
+
+00:04:52.880 --> 00:04:55.720
+-term memory. So first of all, let me show you my data. So
+
+00:04:55.720 --> 00:04:59.420
+there is a user data you will be able to find out and inside
+
+00:04:59.420 --> 00:05:03.100
+that. So there is something called as vector store. You all
+
+00:05:03.100 --> 00:05:08.560
+will be able to find out now, all of these data is like
+
+00:05:08.560 --> 00:05:13.620
+stored here and at any point of a time you can come and you
+
+00:05:13.620 --> 00:05:16.740
+can try to check that. What is the conversation history? And
+
+00:05:16.740 --> 00:05:20.600
+you will be able to find out all of these history in this
+
+00:05:20.600 --> 00:05:23.660
+particular place now. So I'll, I'll just try to delete all
+
+00:05:23.660 --> 00:05:25.840
+of these things. I'll just delete this, all of these things.
+
+00:05:25.900 --> 00:05:31.600
+And then I'm going to show you once from a fresh run. And
+
+00:05:31.600 --> 00:05:33.840
+even I'll suggest you guys that, uh, try to delete
+
+00:05:33.840 --> 00:05:36.740
+everything from this data, or maybe you can delete this data
+
+00:05:36.740 --> 00:05:39.880
+folder itself. So inside a code, I have already mentioned
+
+00:05:39.880 --> 00:05:42.680
+that, uh, try to create a data folder. If data folder is not
+
+00:05:42.680 --> 00:05:45.980
+available, so maybe you can delete it, just delete it. Yeah.
+
+00:05:45.980 --> 00:05:50.260
+Just delete this entire folder. Now let's start talking
+
+00:05:50.260 --> 00:05:54.560
+about the code. Now code is not that like it's big, but it's
+
+00:05:54.560 --> 00:05:58.420
+not that tough. Yeah, not that tough. So first of all, try
+
+00:05:58.420 --> 00:06:01.100
+to configure each and everything. Now here, what I'm trying
+
+00:06:01.100 --> 00:06:04.500
+to use OS, JSON, the major component is basically a Facebook
+
+00:06:04.500 --> 00:06:08.660
+as semantic search, which I'm going to use. And I'm going to
+
+00:06:08.660 --> 00:06:11.700
+use basically a stream link for creation of the UI. I'm
+
+00:06:11.700 --> 00:06:14.640
+going to use a request to request my URI model as simple as
+
+00:06:14.640 --> 00:06:19.280
+that. Right. So here I'm trying to like, uh, create one
+
+00:06:19.280 --> 00:06:22.300
+file, which is a dot environment file inside dot environment
+
+00:06:22.300 --> 00:06:25.360
+file. So we are trying to keep URI API key, and then I'm
+
+00:06:25.360 --> 00:06:28.540
+trying to basically keep a user identity, a default one. So
+
+00:06:28.540 --> 00:06:31.400
+you can try to change your own user identity. It's mine,
+
+00:06:31.540 --> 00:06:33.920
+which, which I have shared with all of you. So you can try
+
+00:06:33.920 --> 00:06:36.920
+to change. You can try to make it as long as possible. It's
+
+00:06:36.920 --> 00:06:42.800
+completely fine. And then come over here now. So list in a
+
+00:06:42.800 --> 00:06:45.780
+step-by-step manner, this entire code is been written. This
+
+00:06:45.780 --> 00:06:48.820
+entire things has been created so that you should not face
+
+00:06:48.820 --> 00:06:51.600
+any kind of a problem going forward, right? Whenever you
+
+00:06:51.600 --> 00:06:55.400
+will try to modify this one. So here there is a class I have
+
+00:06:55.400 --> 00:06:58.120
+created called as setting class. Now what the setting class
+
+00:06:58.120 --> 00:07:01.020
+is trying to do as its name suggests, it is going to set
+
+00:07:01.020 --> 00:07:04.580
+each and everything. So it is going to load the API key as
+
+00:07:04.580 --> 00:07:08.040
+simple as that. It is going to load basically, uh, embedding
+
+00:07:08.040 --> 00:07:10.820
+models, right? It is going to like a loader embedding
+
+00:07:10.820 --> 00:07:14.060
+models. It is going to load a chat models. So I'm using two
+
+00:07:14.060 --> 00:07:17.060
+models, one, a chat model. And one is a embedding model as
+
+00:07:17.060 --> 00:07:20.000
+simple as that. You can try to parameterize this one. I have
+
+00:07:20.000 --> 00:07:23.180
+just done the hard coded, uh, one. So maximum token is equal
+
+00:07:23.180 --> 00:07:26.560
+to 800. You can try to give 8,000 temperature is equal to 0
+
+00:07:26.560 --> 00:07:29.380
+.7. You can try to keep it zero. I believe we all understand
+
+00:07:29.380 --> 00:07:31.540
+what is the meaning of temperature and number of tokens.
+
+00:07:32.220 --> 00:07:36.120
+Simple right now, memory setting. So here memory setting
+
+00:07:36.120 --> 00:07:38.960
+wise, I'm trying to keep it five, which means that that
+
+00:07:38.960 --> 00:07:42.400
+number of our relevant memory to retrieve. So whenever we
+
+00:07:42.400 --> 00:07:45.360
+are trying to like, uh, do a new chat, right? Whenever.
+
+00:07:45.420 --> 00:07:48.340
+Whenever we are trying to initiate a new chat. So how many
+
+00:07:48.340 --> 00:07:54.320
+most relevant memory as per my, like a vector search, it
+
+00:07:54.320 --> 00:07:56.900
+should retrieve and history limit. So maximum number of
+
+00:07:56.900 --> 00:08:00.240
+conversation we are going to keep, it's a 20. This is the
+
+00:08:00.240 --> 00:08:03.660
+only 20. You can try to keep 200 conversation. That's
+
+00:08:03.660 --> 00:08:07.180
+completely fine. But yeah. Uh, so your DB size, or maybe you
+
+00:08:07.180 --> 00:08:11.100
+can try to store all of it again. That is fine. But again,
+
+00:08:11.340 --> 00:08:14.060
+when we try to create a real time application, we always
+
+00:08:14.060 --> 00:08:17.240
+make sure that. That we are trying to set some of the
+
+00:08:17.240 --> 00:08:19.380
+benchmark, keeping that in our mind. I have done this hard
+
+00:08:19.380 --> 00:08:22.120
+coding, but you can try to change it. You can try to like a
+
+00:08:22.120 --> 00:08:25.300
+change this 20 to 200. That's completely fine. Vector
+
+00:08:25.300 --> 00:08:27.620
+dimension is going to be one, five, three, six. The reason
+
+00:08:27.620 --> 00:08:30.360
+is very simple. So this text embedding three, a small model
+
+00:08:30.360 --> 00:08:33.340
+returns me a dimension of one, five, three, six. We have
+
+00:08:33.340 --> 00:08:37.040
+already learned that part a lot of times now index path. So
+
+00:08:37.040 --> 00:08:41.260
+where it is going to a store this entire Farsi indexes. So
+
+00:08:41.260 --> 00:08:44.680
+basically index path is going to be data now. So data
+
+00:08:44.680 --> 00:08:48.320
+folder. If not available, it is going to create it as simple
+
+00:08:48.320 --> 00:08:50.840
+as that. So create a directory. It doesn't exist. So even if
+
+00:08:50.840 --> 00:08:53.500
+you are going to delete it and run it from the scratch, that
+
+00:08:53.500 --> 00:08:56.020
+will be better. If you can delete this part and then run it
+
+00:08:56.020 --> 00:08:58.700
+from the scratch, I think that will be much better. Uh, let
+
+00:08:58.700 --> 00:09:01.820
+me refresh it. So now all the data is gone. There is no
+
+00:09:01.820 --> 00:09:04.260
+chat, right? I have just deleted my data directory.
+
+00:09:05.220 --> 00:09:07.800
+Basically that was my DB, right? So that was my DB. So I
+
+00:09:07.800 --> 00:09:10.720
+have deleted each and everything. So it just remembers only
+
+00:09:10.720 --> 00:09:13.620
+one thing, user entity, which it is trying to fetch from
+
+00:09:13.620 --> 00:09:15.140
+where. So, which it is trying to face. So I have deleted it
+
+00:09:15.140 --> 00:09:17.940
+from dot ENV. So here I have mentioned. So only from there I
+
+00:09:17.940 --> 00:09:21.300
+have deleted the data part, right? So data directory is
+
+00:09:21.300 --> 00:09:26.440
+completely gone now. So this is the setting which I'm going
+
+00:09:26.440 --> 00:09:29.640
+to do and application setting wise. So app name, I'm going
+
+00:09:29.640 --> 00:09:33.640
+to set and the memory chat, uh, like a chat bot app name is
+
+00:09:33.640 --> 00:09:35.500
+equal to memory chat bot. So this is something which I'm
+
+00:09:35.500 --> 00:09:39.660
+trying to set. That's it. So this is a very simple class I
+
+00:09:39.660 --> 00:09:43.020
+have done and this class is going to do all the basic
+
+00:09:43.020 --> 00:09:46.060
+setting. Now. Anyone who is having any doubt with this
+
+00:09:46.060 --> 00:09:47.120
+class, let me know.
+
+00:09:50.840 --> 00:09:53.600
+Can you reshare the project? I don't think that you need a
+
+00:09:53.600 --> 00:09:55.880
+resharing. Just click on the source. The source will be
+
+00:09:55.880 --> 00:09:58.740
+available even during the class, after the class, right?
+
+00:09:58.860 --> 00:10:02.900
+Click on the resource. So like a right hand side, top right
+
+00:10:02.900 --> 00:10:05.740
+click, click over there, fine
+
+00:10:18.000 --> 00:10:19.440
+everyone, okay.
+
+00:10:23.830 --> 00:10:27.350
+So once this is done, right? Once this part is done, uh,
+
+00:10:27.470 --> 00:10:30.850
+once we are able to like do all the setting and again, this
+
+00:10:30.850 --> 00:10:33.130
+project is like a very well documented. Okay. And, uh,
+
+00:10:33.310 --> 00:10:35.150
+comment wise, like everywhere you will be able to find out
+
+00:10:35.150 --> 00:10:38.250
+the comment. I have used the AI for that, obviously to like
+
+00:10:38.250 --> 00:10:41.390
+a comment, uh, comment it out, uh, the entire project. Uh,
+
+00:10:41.410 --> 00:10:43.930
+so that even in a later stage, if someone is following this
+
+00:10:43.930 --> 00:10:46.690
+project, they should be able to like, uh, do each and
+
+00:10:46.690 --> 00:10:50.130
+everything. Yeah. Now. So URI embedding class, there is a
+
+00:10:50.130 --> 00:10:52.070
+class called as URI embedding class. Yeah.
+
+00:10:54.880 --> 00:10:58.080
+It's not opening direct lecture came after clicking it to
+
+00:10:58.080 --> 00:11:01.100
+work Sandeep. It always works. I know it works.
+
+00:11:05.620 --> 00:11:09.900
+So URI embedding. So a wrapper for the URI. Uh, embedding
+
+00:11:09.900 --> 00:11:14.040
+API. Now we all know embeddings, right? And again, so, uh,
+
+00:11:14.160 --> 00:11:18.040
+if you will go to URI, so we have already given you a
+
+00:11:18.040 --> 00:11:20.740
+embedding code. Embedding code is already available. Sample
+
+00:11:20.740 --> 00:11:23.380
+code is already available inside the URI. So if you'll go to
+
+00:11:23.380 --> 00:11:26.640
+API, if you'll go to like a code example, so here we have
+
+00:11:26.640 --> 00:11:29.900
+already given you a embedding generation code. So I'm not
+
+00:11:29.900 --> 00:11:32.360
+doing anything different over here. I'm just using the same
+
+00:11:32.360 --> 00:11:35.400
+code, uh, which is mentioned over here in my own way. That's
+
+00:11:35.400 --> 00:11:39.120
+it. So here I'm just trying to like classify it. So inside a
+
+00:11:39.120 --> 00:11:41.180
+class, I'm trying to put up each and everything. So here is
+
+00:11:41.180 --> 00:11:45.180
+a URL, right? So I'm going to get an API obviously from the
+
+00:11:45.180 --> 00:11:49.320
+dot environment file and then embedding models, right?
+
+00:11:49.360 --> 00:11:51.780
+Embedding models from the settings. So setting dot API key
+
+00:11:51.780 --> 00:11:54.720
+setting is what setting is my class, right? So from setting
+
+00:11:54.720 --> 00:11:57.460
+class, get the API key from setting class, get the embedding
+
+00:11:57.460 --> 00:12:00.860
+models, and then this is the URL. So this is the URL and
+
+00:12:00.860 --> 00:12:03.520
+then it is going to like a return each and everything as
+
+00:12:03.520 --> 00:12:07.120
+simple as that. And then in terms of embedding the
+
+00:12:07.120 --> 00:12:10.540
+documents, right? In terms of embedding the documents. So it
+
+00:12:10.540 --> 00:12:13.960
+is going to like, uh, create the, it is, it is sending the,
+
+00:12:14.040 --> 00:12:17.400
+uh, like a data or it is trying to like convert it into the
+
+00:12:17.400 --> 00:12:20.460
+embeddings. And finally here, I will be able to get the
+
+00:12:20.460 --> 00:12:24.480
+embeddings. So it's an exact same code, but yeah, with the
+
+00:12:24.480 --> 00:12:26.880
+try and catch it, like try and except we are trying to
+
+00:12:26.880 --> 00:12:28.920
+handle, but yeah, it's the exact same code. We are not doing
+
+00:12:28.920 --> 00:12:31.000
+anything different over here, right? Nothing different.
+
+00:12:31.340 --> 00:12:34.440
+Right. So at the end of the day, I will be able to get my
+
+00:12:34.440 --> 00:12:38.440
+embedding queries now. So embedding is fine. Now the third
+
+00:12:38.440 --> 00:12:41.660
+class that I have written over here is basically a URI chat.
+
+00:12:42.620 --> 00:12:46.940
+So the one which will be responsible for calling my chat
+
+00:12:46.940 --> 00:12:50.680
+completion model. So maybe I can try to give, uh, uh, like,
+
+00:12:50.680 --> 00:12:53.940
+uh, uh, GPD based model, maybe Gemini based model. I can try
+
+00:12:53.940 --> 00:12:56.560
+to give maybe a Mistral. I can try to give maybe a deep seek
+
+00:12:56.560 --> 00:12:59.020
+R1 based model. I can try to give a Lama. I can try to give.
+
+00:12:59.340 --> 00:13:03.500
+So here I know that how to call URI and the same thing we
+
+00:13:03.500 --> 00:13:06.280
+are trying to do over here. So API key model temperature max
+
+00:13:06.280 --> 00:13:08.420
+token. So these are the variables that we are trying to
+
+00:13:08.420 --> 00:13:12.140
+create. And then API key from setting class model from
+
+00:13:12.140 --> 00:13:14.840
+setting class temperature from setting class, maximum number
+
+00:13:14.840 --> 00:13:17.300
+of token from setting class in setting class. We have
+
+00:13:17.300 --> 00:13:19.400
+already to set all those things. So from setting class, we
+
+00:13:19.400 --> 00:13:22.440
+are trying to call all of these variable code is written in
+
+00:13:22.440 --> 00:13:25.160
+a bit standard way, but yeah, it's not, not very different
+
+00:13:25.160 --> 00:13:30.740
+now. So again, uh, so we are trying to call URI client by
+
+00:13:30.740 --> 00:13:33.180
+the way, from URI itself directly. So we are trying to call
+
+00:13:33.180 --> 00:13:37.000
+URI client API and model we are trying to set. And then this
+
+00:13:37.000 --> 00:13:40.240
+function is going to create a, uh, like a completion
+
+00:13:40.240 --> 00:13:43.760
+basically. So generate completion from the model. It is
+
+00:13:43.760 --> 00:13:46.760
+going to give you the final response as simple as that. So
+
+00:13:46.760 --> 00:13:49.580
+it is going to take the prompt, whatever prompt or whatever
+
+00:13:49.580 --> 00:13:52.880
+chat that you are going to send. So this is again, the class
+
+00:13:52.880 --> 00:13:59.300
+just for, right. Just for generating basically a chat
+
+00:13:59.300 --> 00:13:59.920
+completion.
+
+00:14:06.420 --> 00:14:08.900
+Okay. Zoom out was the issue. Fine. Maybe you have zoomed in
+
+00:14:08.900 --> 00:14:14.940
+a lot. Yeah. So here, so this, this, a piece of the code is
+
+00:14:14.940 --> 00:14:18.120
+just helping me out in terms of connecting with the URI and
+
+00:14:18.120 --> 00:14:22.420
+giving me a final responses as simple as that. So around
+
+00:14:22.420 --> 00:14:27.280
+that code has been built now. And again, like all the
+
+00:14:27.280 --> 00:14:30.540
+exceptions has been handled. Now vector store is so memory
+
+00:14:30.540 --> 00:14:34.900
+vector store. Now what this is going to do? So here it is
+
+00:14:34.900 --> 00:14:39.900
+going to a store all of those, uh, data into a FASI. So
+
+00:14:39.900 --> 00:14:42.380
+basically Facebook AI. Semantic search DV. It is going to
+
+00:14:42.380 --> 00:14:47.140
+store all of these like a chat bot memories again. So here
+
+00:14:47.140 --> 00:14:50.540
+I'm trying to call URI embedding models, like URI embedding
+
+00:14:50.540 --> 00:14:53.980
+models. I'm trying to click a creator index path, index path
+
+00:14:53.980 --> 00:14:57.280
+of the FASI. So which I have already defined inside my,
+
+00:14:57.440 --> 00:15:03.960
+like, uh, uh, setting file setting class. And then I'm
+
+00:15:03.960 --> 00:15:07.080
+trying to like, uh, keep a vector dimension, a metadata
+
+00:15:07.080 --> 00:15:12.360
+file, and then it is going to. Initialize the indexes for
+
+00:15:12.360 --> 00:15:15.040
+initial initialize after initializing the indexes. So it is
+
+00:15:15.040 --> 00:15:18.820
+going to store all of those information in up respective
+
+00:15:18.820 --> 00:15:21.580
+directory. So this is something that it is going to perform.
+
+00:15:22.100 --> 00:15:25.280
+Uh, this code looks a little bit bulky because of this try
+
+00:15:25.280 --> 00:15:28.260
+and except otherwise, if you will closely look into this
+
+00:15:28.260 --> 00:15:33.160
+code, this is not that bulky now. So finally I'm creating
+
+00:15:33.160 --> 00:15:36.260
+the new indexes and then like, uh, same thing we have done
+
+00:15:36.260 --> 00:15:38.180
+yesterday, right? Same thing we have done over, uh,
+
+00:15:38.240 --> 00:15:40.140
+studying. So. So we are not doing anything different over
+
+00:15:40.140 --> 00:15:42.720
+here. Then we are trying to save it, saving each and
+
+00:15:42.720 --> 00:15:46.840
+everything. Then there is a function called as add memory
+
+00:15:46.840 --> 00:15:50.880
+function. So where it is trying to take a text and the
+
+00:15:50.880 --> 00:15:56.720
+metadata and add memory to the vector storage. So again, we
+
+00:15:56.720 --> 00:15:59.940
+are trying to use basically our embedding models itself. We
+
+00:15:59.940 --> 00:16:03.820
+are trying to like, uh, query it and then after querying it.
+
+00:16:03.920 --> 00:16:08.160
+So we are trying to add into the FASI indexes. As we know
+
+00:16:08.160 --> 00:16:11.700
+that. That we have to store a 20 last chat, plus we have to
+
+00:16:11.700 --> 00:16:16.480
+store five from the like five, uh, top from, uh, at every
+
+00:16:16.480 --> 00:16:19.040
+search we have to do. So this is something that it is going
+
+00:16:19.040 --> 00:16:23.680
+to perform now. So there is a function for a search
+
+00:16:23.680 --> 00:16:28.600
+operation. So one is a storage. One is a search. So whenever
+
+00:16:28.600 --> 00:16:31.520
+you are going to chat, uh, whenever you are going to
+
+00:16:31.520 --> 00:16:35.080
+initiate a new chat, it should be able to even search.
+
+00:16:35.640 --> 00:16:39.140
+Basically. Search based on what? A kth memory means last
+
+00:16:39.140 --> 00:16:42.280
+five, right? Setting.memory.k. This is what I have set as a
+
+00:16:42.280 --> 00:16:47.220
+five. So it is supposed to extract this like a kth data, uh,
+
+00:16:47.300 --> 00:16:52.460
+means kth top matching data. It is supposed to bring based
+
+00:16:52.460 --> 00:16:55.800
+on the embeddings and then it is supposed to, uh, blackout.
+
+00:16:55.880 --> 00:16:58.460
+So this is what embedding query is going to do. So embedding
+
+00:16:58.460 --> 00:17:01.400
+query is going to like a query it, and then it is going to
+
+00:17:01.400 --> 00:17:04.000
+bring the data after that. I'm trying to looking for
+
+00:17:04.000 --> 00:17:10.460
+basically a k number of information. It means five latest or
+
+00:17:10.460 --> 00:17:14.040
+not latest. I would say the five nearest five nearest search
+
+00:17:14.040 --> 00:17:19.200
+as per my, uh, like, uh, next conversation as per the input,
+
+00:17:19.320 --> 00:17:23.020
+which I have given to my chat bot as simple as that. So
+
+00:17:23.020 --> 00:17:26.040
+based on the distance and the similarity we are trying to
+
+00:17:26.040 --> 00:17:29.240
+define, uh, get all the memories. So it is going to like,
+
+00:17:29.240 --> 00:17:32.360
+uh, give you all the memories and it is clearing the memory.
+
+00:17:33.260 --> 00:17:35.920
+Then this is one of the memory that we are trying to build.
+
+00:17:36.000 --> 00:17:39.940
+With the Facebook AI semantic search database. Now there is
+
+00:17:39.940 --> 00:17:42.720
+something called as conversational memory. And what we are
+
+00:17:42.720 --> 00:17:45.120
+trying to do over here is that, that we are trying to
+
+00:17:45.120 --> 00:17:49.940
+restore the conversation history, basically, and it's in a
+
+00:17:49.940 --> 00:17:51.880
+flat file we are trying to store. So we are trying to store
+
+00:17:51.880 --> 00:17:55.440
+it just in a JSON, I would say like a file, nothing much
+
+00:17:55.440 --> 00:17:58.680
+over here. And then there is a function called as load
+
+00:17:58.680 --> 00:18:01.900
+history. And then there is something called as like a save,
+
+00:18:02.020 --> 00:18:04.620
+there is something called as add user message, add assistant
+
+00:18:04.620 --> 00:18:08.420
+message. Add assistant message. Add messages. And then there
+
+00:18:08.420 --> 00:18:11.260
+is something called as get history. So just a small, small,
+
+00:18:11.300 --> 00:18:13.980
+small, small, supportive function we have created so that
+
+00:18:13.980 --> 00:18:16.680
+some function will try to help me out to get the history.
+
+00:18:16.800 --> 00:18:20.240
+Some function will try to help me out to save the history or
+
+00:18:20.240 --> 00:18:23.260
+add the assistance messages. All of these things around
+
+00:18:23.260 --> 00:18:27.660
+that, these functions are going to help me out. Now there is
+
+00:18:27.660 --> 00:18:30.420
+something called as langchain. Also I have tried to
+
+00:18:30.420 --> 00:18:33.980
+implement into this one so that I will be able to do, uh,
+
+00:18:34.160 --> 00:18:39.100
+like, uh, this, uh, RAG implementation in a better and a
+
+00:18:39.100 --> 00:18:42.380
+better and a better way, basically. So we all know, and we
+
+00:18:42.380 --> 00:18:44.860
+have already seen that, that how langchain is going to work.
+
+00:18:45.160 --> 00:18:48.900
+So basically it needs, uh, two things are current query that
+
+00:18:48.900 --> 00:18:53.100
+you are going to pass and the LLM support. So LLM support
+
+00:18:53.100 --> 00:18:57.180
+anyhow, URI, LLM is going to give you, right, URI, LLM is
+
+00:18:57.180 --> 00:19:00.060
+going to give you and just try to like load this particular
+
+00:19:00.060 --> 00:19:03.800
+LLMs. That's it. The rest is just exception handling. Right.
+
+00:19:08.060 --> 00:19:13.140
+Now this is basically a complete chat. So the above one was
+
+00:19:13.140 --> 00:19:16.440
+everything in a bits and pieces. Now this is basically a
+
+00:19:16.440 --> 00:19:20.420
+class which is going to combine each and everything all
+
+00:19:20.420 --> 00:19:25.320
+together that what is going to happen after what? So top
+
+00:19:25.320 --> 00:19:28.120
+down approach we have seen. Now let's try to understand
+
+00:19:28.120 --> 00:19:30.740
+little bit in a bottom up approach. What approach means?
+
+00:19:30.860 --> 00:19:33.420
+Like, because this is the main class, this is the main
+
+00:19:33.420 --> 00:19:35.620
+class, which is going to call everything means literally it
+
+00:19:35.620 --> 00:19:38.620
+is going to call each and everything. So conversation,
+
+00:19:38.820 --> 00:19:41.580
+memory, vector stories, chat model, user entity, each and
+
+00:19:41.580 --> 00:19:43.760
+everything. So in a slice, the memory chat bot. So here we
+
+00:19:43.760 --> 00:19:46.340
+are trying to call basically a conversation memory, which is
+
+00:19:46.340 --> 00:19:51.080
+going to initialize the chat bot. Now come down, down, down.
+
+00:19:51.420 --> 00:19:53.020
+So yeah, yeah.
+
+00:19:55.910 --> 00:19:58.590
+Then we are trying to initialize our memory vector stories.
+
+00:19:58.890 --> 00:20:01.750
+Then we are trying to do the slides, basically a URI AI
+
+00:20:01.750 --> 00:20:06.030
+chat, and then we are trying to initialize basically a user
+
+00:20:06.030 --> 00:20:10.130
+identity. Now here. Yeah. Then we are trying to call
+
+00:20:10.130 --> 00:20:13.590
+basically create a lang chain LLMs now here. So this is the
+
+00:20:13.590 --> 00:20:17.290
+function one by one, which is going to process each and
+
+00:20:17.290 --> 00:20:20.410
+everything main function you can say, right? Main function.
+
+00:20:20.750 --> 00:20:25.410
+So add user message is the very first function that get
+
+00:20:25.410 --> 00:20:28.330
+formatted history. Then perform the search, format the
+
+00:20:28.330 --> 00:20:32.250
+memory, create the prompt, and then finally generate the
+
+00:20:32.250 --> 00:20:35.870
+response. So main conclusion, you will be able to find out
+
+00:20:35.870 --> 00:20:38.910
+inside this function that how this call is happening
+
+00:20:38.910 --> 00:20:44.450
+altogether. So here add user message. So whenever you are
+
+00:20:44.450 --> 00:20:47.190
+user is trying to send some messages, user is trying to give
+
+00:20:47.190 --> 00:20:49.770
+some input, what we are trying to do. So we are trying to
+
+00:20:49.770 --> 00:20:54.950
+add it into the conversation history. Now once that will be
+
+00:20:54.950 --> 00:20:58.890
+done, right? Once that will be done, then we are trying to
+
+00:20:58.890 --> 00:21:03.350
+do what? So we are trying to basically get all the history,
+
+00:21:03.510 --> 00:21:08.830
+all the formatted history based on the input. Then once that
+
+00:21:08.830 --> 00:21:12.970
+is done, so user has given some sort of an input. We are
+
+00:21:12.970 --> 00:21:16.350
+able to pull some sort of a history out of it. And then we
+
+00:21:16.350 --> 00:21:19.830
+are trying to perform some sort of a search so that I will
+
+00:21:19.830 --> 00:21:23.690
+be able to get a relevant memory. So see in general, like
+
+00:21:23.690 --> 00:21:26.930
+when we try to create a chat bot, so we try to do what? So
+
+00:21:26.930 --> 00:21:30.910
+we try to send a direct. So whenever we try to create a chat
+
+00:21:30.910 --> 00:21:36.450
+bot, so we try to send a direct to this input, input, to the
+
+00:21:36.450 --> 00:21:40.570
+LLM, right? Now this is where this chat bot is different. So
+
+00:21:40.570 --> 00:21:44.510
+we are not sending a direct query to a LLM first of all, we
+
+00:21:44.510 --> 00:21:47.990
+are trying to get a user input. After getting a user input,
+
+00:21:48.170 --> 00:21:51.510
+we are trying to extract some sort of a history. We are
+
+00:21:51.510 --> 00:21:55.810
+going to even search that what is a top five memory key that
+
+00:21:55.810 --> 00:21:59.570
+I have stored as a five. So what is a top five relevant
+
+00:21:59.570 --> 00:22:03.730
+things which is available inside my memory, inside my
+
+00:22:03.730 --> 00:22:05.670
+memory, which is a vector memory. So let's say it's a vector
+
+00:22:05.670 --> 00:22:09.410
+store. So from the vector store class search method. So I'm
+
+00:22:09.410 --> 00:22:13.110
+trying to call now once I'm able to get a relevant memory,
+
+00:22:13.390 --> 00:22:17.430
+I'm trying to pass that relevant memory into a format memory
+
+00:22:17.430 --> 00:22:20.510
+so that it is, it is going to like, you know, create a
+
+00:22:20.510 --> 00:22:24.350
+beautiful prompt for me, right? Then I'm trying to pass this
+
+00:22:24.350 --> 00:22:28.250
+user input. Like user input, the raw input that user has
+
+00:22:28.250 --> 00:22:30.970
+given then the history which I'm able to get and the
+
+00:22:30.970 --> 00:22:34.190
+memories I'm able to get. So all three things I'm trying to
+
+00:22:34.190 --> 00:22:37.790
+pass. I'm saying this. that that combine all of these three
+
+00:22:37.790 --> 00:22:44.030
+things and then try to build a final prompt for me. Then try
+
+00:22:44.030 --> 00:22:47.990
+to build a final prompt for me. So it's not just a RAG
+
+00:22:47.990 --> 00:22:50.490
+implementation because we have seen in my previous class,
+
+00:22:50.630 --> 00:22:54.450
+which was a studies class that when we say RAG, right? So it
+
+00:22:54.450 --> 00:22:58.490
+will always try to focus on the private data and then it is
+
+00:22:58.490 --> 00:23:02.410
+going to use LLMs to format those information to give me all
+
+00:23:02.410 --> 00:23:05.690
+those information in a better way. Now, here I'm just like
+
+00:23:05.690 --> 00:23:08.130
+using a little bit of different approach. So what is the
+
+00:23:08.130 --> 00:23:11.430
+approach? The approach is that I'm trying to build a bigger
+
+00:23:11.430 --> 00:23:15.350
+prompt over here where I'm not just dependent upon the
+
+00:23:15.350 --> 00:23:18.830
+memory and history, but I'm trying to attach a complete user
+
+00:23:18.830 --> 00:23:22.950
+input as well. Right? Not just like something that we are
+
+00:23:22.950 --> 00:23:25.670
+trying to fetch from the memory. So we are trying to create
+
+00:23:25.670 --> 00:23:30.050
+a complete prompt over here. Now this prompt will go into my
+
+00:23:30.050 --> 00:23:33.570
+URI, generate chat completion, right? This is basically a
+
+00:23:33.570 --> 00:23:37.730
+URI. So URI chat completion API. So this is going inside
+
+00:23:37.730 --> 00:23:42.870
+basically my URI chat completion, where is my function?
+
+00:23:45.480 --> 00:23:48.760
+Yeah. So generate chat completion. So this is, and this is
+
+00:23:48.760 --> 00:23:55.200
+going to give me the final response. Now just look into this
+
+00:23:55.200 --> 00:23:58.120
+function, starting from line number 478 and this is the
+
+00:23:58.120 --> 00:24:02.460
+conclusion of the entire project. This is the flow of the
+
+00:24:02.460 --> 00:24:05.180
+entire project. So if anyone and everyone has to understand.
+
+00:24:05.680 --> 00:24:09.720
+The flow of the entire project, it's that, that's it, right?
+
+00:24:09.840 --> 00:24:12.280
+So this is calling each and everything in a step-by-step,
+
+00:24:12.360 --> 00:24:16.540
+step-by-step, step-by-step manner one after another. Okay.
+
+00:24:16.760 --> 00:24:19.680
+So after that, so we are trying to call conversation memory,
+
+00:24:19.880 --> 00:24:22.520
+add resistance messages, and then we are trying to add the
+
+00:24:22.520 --> 00:24:24.760
+interaction to the memory. So basically we are trying to add
+
+00:24:24.760 --> 00:24:30.720
+something into my DB once again, simple, right? Simple. Now.
+
+00:24:30.820 --> 00:24:34.920
+So format memory, create a prompt. Then a user identity,
+
+00:24:35.140 --> 00:24:37.340
+relevant memory, all these things I'm trying to fetch.
+
+00:24:41.780 --> 00:24:45.240
+Now set user identity, get conversation history, clear
+
+00:24:45.240 --> 00:24:47.560
+conversation, add to memory. So these are just a small,
+
+00:24:47.600 --> 00:24:49.920
+small utility, which I have built, which you will be able to
+
+00:24:49.920 --> 00:24:52.880
+see on the left-hand side, utilities basically.
+
+00:24:55.180 --> 00:24:58.800
+Now so formatted date, this is again the utility. So here
+
+00:24:58.800 --> 00:25:02.000
+I'm trying to showcase a date. If I'm going to say hi, so it
+
+00:25:02.000 --> 00:25:04.580
+will show you date as well over here. So they are just a
+
+00:25:04.580 --> 00:25:07.320
+small, small, these are just a format. Small, small
+
+00:25:07.320 --> 00:25:10.920
+utilities, which I have created, nothing much, right? Now
+
+00:25:10.920 --> 00:25:13.100
+come to the last part, basically.
+
+00:25:15.980 --> 00:25:19.780
+So a streamlined UI, a simple UI I have created now the UI.
+
+00:25:19.940 --> 00:25:23.340
+So where you will be able to see a memory chat bot as a
+
+00:25:23.340 --> 00:25:27.540
+header, and you can see even your APIs, you can even call
+
+00:25:27.540 --> 00:25:31.480
+test API connection, and it is just going to like do a
+
+00:25:31.480 --> 00:25:34.300
+testing and API result. It is going to give you that. Okay.
+
+00:25:34.480 --> 00:25:37.340
+So everything is normal. Everything is up and running. Now
+
+00:25:37.340 --> 00:25:43.650
+this. I have written over here. This one. Yeah. So this, I
+
+00:25:43.650 --> 00:25:46.970
+have written basically over here. So this is going to return
+
+00:25:46.970 --> 00:25:49.270
+you each and everything just for the API testing, just a
+
+00:25:49.270 --> 00:25:51.370
+utility function. You can say which, which has been written
+
+00:25:51.370 --> 00:25:54.990
+then user identity. So by default, if you are going to
+
+00:25:54.990 --> 00:25:57.530
+mention something into a dot ENB file, it will try to bring
+
+00:25:57.530 --> 00:26:00.510
+from there. But from here itself, you can try to change your
+
+00:26:00.510 --> 00:26:04.290
+entire user identity, right? The complete user identity, you
+
+00:26:04.290 --> 00:26:07.510
+can try to change, and then your system is going to hold it.
+
+00:26:07.570 --> 00:26:10.570
+And system is going to respond. It as per the user identity
+
+00:26:10.570 --> 00:26:14.190
+that you are going to set. So
+
+00:26:27.980 --> 00:26:31.480
+okay. So it is saved now add custom memory. So if I would
+
+00:26:31.480 --> 00:26:36.800
+like to add something like a, like a custom, I can, I can
+
+00:26:36.800 --> 00:26:41.400
+try to add it over there. Right. And yeah, so everything
+
+00:26:41.400 --> 00:26:45.100
+will be added inside a memory and accordingly. So it is
+
+00:26:45.100 --> 00:26:49.520
+going to behave. So if I'm going to ask, tell me something
+
+00:26:49.520 --> 00:26:55.060
+about, about. Okay. So the answer in detail.
+
+00:27:02.040 --> 00:27:05.260
+Yeah. So certainly this answer is truly inspiring and yeah,
+
+00:27:05.320 --> 00:27:07.600
+so it is, it is able to tell me something as you can see
+
+00:27:07.600 --> 00:27:10.520
+over here, plus it is able to create some sort of a
+
+00:27:10.520 --> 00:27:14.660
+suggestion, like some of the suggestions over here. So human
+
+00:27:14.660 --> 00:27:17.780
+AI assistant, it's great to hear from you again, how can I
+
+00:27:17.780 --> 00:27:20.800
+assist you with your teaching or any other question you
+
+00:27:20.800 --> 00:27:23.320
+might have. So these are something that it is trying to
+
+00:27:23.320 --> 00:27:26.420
+generate in terms of a suggestion. And this is the actual
+
+00:27:26.420 --> 00:27:29.900
+chat, which I have done. Now. Maybe I can try to ask a
+
+00:27:29.900 --> 00:27:38.820
+question that create a calculator app for me in Java script,
+
+00:27:39.120 --> 00:27:43.780
+right? So yeah, this time. So it doesn't require a
+
+00:27:43.780 --> 00:27:48.860
+basically, uh, like a proper RIG or a memory. So this time
+
+00:27:48.860 --> 00:27:53.120
+it is supposed to go and hit, uh, basically, uh, you're on
+
+00:27:53.120 --> 00:27:56.600
+a, sorry, URI AI URI. It is supposed to hit. So yeah, it is
+
+00:27:56.600 --> 00:28:00.040
+trying to hit URI. And then obviously it is, it is every
+
+00:28:00.040 --> 00:28:02.940
+time it is telling me, so basically it is coming from there.
+
+00:28:03.180 --> 00:28:06.180
+So it is coming from the memory. It is coming from the
+
+00:28:06.180 --> 00:28:08.520
+memory. So it is trying to like, uh, help me out in terms of
+
+00:28:08.520 --> 00:28:12.840
+everything. So yeah, this is the calculator app in a Java
+
+00:28:12.840 --> 00:28:18.140
+script. It is able to give it to me. Now tell me about as
+
+00:28:18.140 --> 00:28:18.780
+antique AI.
+
+00:28:24.670 --> 00:28:28.770
+Okay. Give me a complete
+
+00:28:32.960 --> 00:28:42.750
+roadmap for data. Science. In a step by step manner, why I'm
+
+00:28:42.750 --> 00:28:44.430
+doing this. I'll I'll tell you why I'm doing this much.
+
+00:28:48.380 --> 00:28:51.400
+Okay. So complete data science roadmap, it is able to give
+
+00:28:51.400 --> 00:28:54.340
+it to me. And if I'm going to ask, create a schedule or time
+
+00:28:54.340 --> 00:28:56.900
+table or whatever, obviously the system will be able to do
+
+00:28:56.900 --> 00:28:59.940
+it. Now, uh, uh,
+
+00:29:03.600 --> 00:29:05.340
+tell me, tell
+
+00:29:09.020 --> 00:29:17.980
+me about Sudan shoe based on the, or what is the, is,
+
+00:29:20.260 --> 00:29:27.940
+uh, the memory that you are able to build so far,
+
+00:29:35.410 --> 00:29:38.590
+based on the previous conversation I understand that you are
+
+00:29:38.590 --> 00:29:40.830
+deeply involved in teaching, empowering learners, data
+
+00:29:40.830 --> 00:29:42.630
+science related field and sharing regarding your question
+
+00:29:42.630 --> 00:29:46.210
+about the memory I am able to build so far as in I don't
+
+00:29:46.210 --> 00:29:49.050
+have ability to retain or remember the past conversation or
+
+00:29:49.050 --> 00:29:52.170
+personal data beyond our current session unless integrated
+
+00:29:52.170 --> 00:29:54.070
+with a specific memory feature. My response was generated
+
+00:29:54.070 --> 00:29:57.530
+based on the context of our ongoing interaction and my
+
+00:29:57.530 --> 00:30:00.430
+training data however I do have access to the conversation
+
+00:30:00.430 --> 00:30:04.370
+history within this session which helped me to provide a
+
+00:30:04.370 --> 00:30:07.050
+consistent and relevant response if you are referring to the
+
+00:30:07.050 --> 00:30:10.730
+kind of memory or knowledge I can utilize it can include the
+
+00:30:10.730 --> 00:30:13.770
+detail you have shared about your journey your goal of
+
+00:30:13.770 --> 00:30:16.710
+education and topic we have discussed like data science to
+
+00:30:16.710 --> 00:30:19.530
+see all of these things are coming from there so obviously
+
+00:30:19.530 --> 00:30:23.010
+like I have update about updated about myself I have added
+
+00:30:23.010 --> 00:30:26.610
+some of the custom memory and then whatever discussion I
+
+00:30:26.610 --> 00:30:29.830
+have done with this bot. Even it is able to remember each
+
+00:30:29.830 --> 00:30:32.910
+and everything right it is able to remember each and
+
+00:30:32.910 --> 00:30:36.910
+everything so this is the beauty of this like a memory based
+
+00:30:36.910 --> 00:30:39.750
+chat bot that you will be able to find out now if you will
+
+00:30:39.750 --> 00:30:43.230
+go and check so you can directly check over here like a
+
+00:30:43.230 --> 00:30:47.030
+conversation history right conversation history so this is
+
+00:30:47.030 --> 00:30:50.490
+the conversation history it is available into a JSON file
+
+00:30:50.490 --> 00:30:54.690
+plus this is how even other vendor right so whether it's
+
+00:30:54.690 --> 00:30:57.390
+open AI or anyone so they are storing your data right. We
+
+00:30:57.390 --> 00:31:00.050
+say that they are storing your data yeah this is how they
+
+00:31:00.050 --> 00:31:04.250
+are they are going to store the data yeah and then like this
+
+00:31:04.250 --> 00:31:07.730
+meta we are trying to so this is the conversation history a
+
+00:31:07.730 --> 00:31:10.950
+raw conversation history and this is something that we are
+
+00:31:10.950 --> 00:31:15.190
+trying to store into a vector DB right a vector DB at last
+
+00:31:15.190 --> 00:31:19.790
+20 conversation so if it is going to cross 20 it will not
+
+00:31:19.790 --> 00:31:23.430
+store beyond that so only till 20 indexes a latest one it
+
+00:31:23.430 --> 00:31:28.770
+will be able to install now tell me. Tell me how Sudhanshu
+
+00:31:28.770 --> 00:31:36.530
+how Sudhanshu was associated with iNeuron right so this
+
+00:31:36.530 --> 00:31:40.030
+model is not accessing a real-time data because I am using a
+
+00:31:40.030 --> 00:31:44.790
+GPT nano GPT nano can't like you know access the real-time
+
+00:31:44.790 --> 00:31:47.330
+information but yeah it is able to access some of the
+
+00:31:47.330 --> 00:31:48.790
+private information that I have.
+
+00:31:52.650 --> 00:31:55.670
+Are we also going to deploy this chat bot along with a full
+
+00:31:55.670 --> 00:31:58.930
+CIGD pipeline not this one a better version of this one we
+
+00:31:58.930 --> 00:32:02.630
+are going to deploy. But not today like in upcoming classes
+
+00:32:02.630 --> 00:32:06.550
+today I'll just objective is to discuss and show you a demo
+
+00:32:06.550 --> 00:32:12.510
+that how we can build a bot so which can remember me for a
+
+00:32:12.510 --> 00:32:16.770
+very very very very long time yeah so even now if I am going
+
+00:32:16.770 --> 00:32:19.910
+to close the session so again this database is physically
+
+00:32:19.910 --> 00:32:23.790
+available this entire indexes is physically available so if
+
+00:32:23.790 --> 00:32:26.430
+this database is physically available even if I am going to
+
+00:32:26.430 --> 00:32:28.810
+come tomorrow maybe after 10 days it is going to remember.
+
+00:32:29.270 --> 00:32:32.990
+Right. And now to host this entire things I just have to you
+
+00:32:32.990 --> 00:32:37.470
+know host a UI on some platform and then this DB on some
+
+00:32:37.470 --> 00:32:40.710
+platform and establish the connection rest is anyhow like
+
+00:32:40.710 --> 00:32:44.890
+live and online for example the API that we are using fine
+
+00:32:48.020 --> 00:32:51.160
+guys so are you are you able to chat with your bot with by
+
+00:32:51.160 --> 00:32:54.480
+giving your own memory or delete the data folder it will
+
+00:32:54.480 --> 00:32:59.140
+create automatically and then try to chat I think that will
+
+00:32:59.140 --> 00:33:01.200
+give you a better feeling.
+
+00:33:14.160 --> 00:33:17.280
+So. So. So what is the size of the memory size I have not
+
+00:33:17.280 --> 00:33:19.440
+defined over here so I have defined in terms of a
+
+00:33:19.440 --> 00:33:21.760
+conversation so which you will be able to find it into a
+
+00:33:21.760 --> 00:33:25.340
+setting class which is the very very first class. So here I
+
+00:33:25.340 --> 00:33:27.680
+am defining that maximum number of conversation turns to
+
+00:33:27.680 --> 00:33:30.020
+keep so I'm just trying to say that try to keep 20
+
+00:33:30.020 --> 00:33:32.760
+conversation maybe I can say 200 conversation maybe I can
+
+00:33:32.760 --> 00:33:36.020
+say 2000 conversation 20000 or maybe 2 lakh conversation so
+
+00:33:36.020 --> 00:33:41.080
+it is going to store that much of conversation for now this
+
+00:33:41.080 --> 00:33:44.160
+is what I'm doing you can try to limit it even in terms of
+
+00:33:44.160 --> 00:33:46.320
+like a size. That's completely fine you just have to write
+
+00:33:46.320 --> 00:33:49.600
+one small utility function right so it will keep on checking
+
+00:33:49.600 --> 00:33:53.620
+the size of this like a vector database that I'm trying to
+
+00:33:53.620 --> 00:33:57.400
+use and then it will keep on removing the previous one the
+
+00:33:57.400 --> 00:33:58.180
+earliest one.
+
+00:34:01.050 --> 00:34:04.330
+So how many how many of you are able to chat guys yeah
+
+00:34:19.720 --> 00:34:21.980
+anyone who is who is able to chat
+
+00:34:34.270 --> 00:34:40.080
+yes I can do okay no langchen actually I have written that
+
+00:34:40.080 --> 00:34:43.460
+and I was like using it in between then in later stage. So I
+
+00:34:43.460 --> 00:34:45.880
+have like deactivated that function. I've just done that.
+
+00:34:45.880 --> 00:34:50.080
+I've just removed that function so because of like a some
+
+00:34:50.080 --> 00:34:53.300
+issue with respect to the memory it was creating for me so I
+
+00:34:53.300 --> 00:34:56.860
+have just just removed it that's the reason so I told you in
+
+00:34:56.860 --> 00:35:00.660
+between that that there is a langchen I'm using but in a
+
+00:35:00.660 --> 00:35:03.920
+later stage I have just like removed it for me yeah.
+
+00:35:40.390 --> 00:35:44.730
+So fine just like a let me know once you are able to do it
+
+00:35:44.730 --> 00:35:46.110
+guys okay
+
+00:36:38.560 --> 00:36:43.540
+so fine looks great. So just do what you want. Just do one
+
+00:36:43.540 --> 00:36:47.520
+thing guys try to go through this entire project once again
+
+00:36:47.520 --> 00:36:54.780
+class by class this time and try to backtrack like from the
+
+00:36:54.780 --> 00:36:59.440
+main LLM or main chat class that we have so try to backtrack
+
+00:36:59.440 --> 00:37:05.170
+from there each and everything one by one one by one right
+
+00:37:05.170 --> 00:37:11.470
+try to digest a code as much as you can basically and if you
+
+00:37:11.470 --> 00:37:14.330
+have any kind of a concern or confusion so do let me know.
+
+00:37:14.850 --> 00:37:17.930
+In a next class or maybe in a chat itself you can let me
+
+00:37:17.930 --> 00:37:21.390
+know right in a chat itself you can let me know. Like I said
+
+00:37:21.390 --> 00:37:24.050
+I have written a langchen function I was using it but then I
+
+00:37:24.050 --> 00:37:27.570
+have removed the function from here as it was giving me some
+
+00:37:27.570 --> 00:37:33.050
+memory based like a issue basically so as you can see it is
+
+00:37:33.050 --> 00:37:36.890
+try with the langchen if available may have more feature
+
+00:37:36.890 --> 00:37:38.990
+this is what I have like done and I have just commented it
+
+00:37:38.990 --> 00:37:43.110
+out but yeah so I'm not like using it actively this one this
+
+00:37:43.110 --> 00:37:45.570
+particular part. Okay. This is how this code has been
+
+00:37:45.570 --> 00:37:48.630
+designed so just try to go through the code once let me know
+
+00:37:48.630 --> 00:37:51.710
+if you are facing any kind of a issue and then if you are
+
+00:37:51.710 --> 00:37:54.690
+not able to understand some of the part maybe I'll try to
+
+00:37:54.690 --> 00:38:00.070
+explain you in my next class. Can anyone drop the command to
+
+00:38:00.070 --> 00:38:03.390
+run the streamlint? I think to run the streamlint command is
+
+00:38:03.390 --> 00:38:05.670
+simple right so streamlint run and then file name
+
+00:38:11.020 --> 00:38:15.420
+command is strem lit streamlint run and then let's suppose
+
+00:38:15.420 --> 00:38:17.900
+this is the file so file name and it will run.
+
+00:38:21.860 --> 00:38:24.460
+Okay. And if it is giving you some issue with respect to any
+
+00:38:24.460 --> 00:38:28.220
+kind of library then go ahead and install it.
+
+00:38:33.720 --> 00:38:36.880
+Fine guys so I think we are anyhow connected over a group
+
+00:38:36.880 --> 00:38:40.960
+chat so do let me know if you are going to face any issue.
+
+00:38:42.220 --> 00:38:47.400
+Now in my upcoming classes so if you will go and check your
+
+00:38:47.400 --> 00:38:50.840
+syllabus so we have a back to back back to back so many
+
+00:38:50.840 --> 00:38:56.660
+project which is there in my upcoming classes so like this
+
+00:38:56.660 --> 00:38:59.060
+kind of a project. So many projects are already in pipeline
+
+00:38:59.060 --> 00:39:04.500
+a label one label two label three segment. So here memory
+
+00:39:04.500 --> 00:39:06.720
+enhanced chatbot this is something that we have discussed
+
+00:39:06.720 --> 00:39:09.160
+with persistent and the dynamic memory so yeah we are able
+
+00:39:09.160 --> 00:39:12.640
+to persist it and dynamic memory we are able to add it. Now
+
+00:39:12.640 --> 00:39:16.180
+these are the project we are going to see one by one one by
+
+00:39:16.180 --> 00:39:19.000
+one and believe me every project is going to be a kind of an
+
+00:39:19.000 --> 00:39:22.700
+eye opener for all of you. Doesn't matter whether it's going
+
+00:39:22.700 --> 00:39:26.660
+to be the small or whether it's going to be a big and we'll
+
+00:39:26.660 --> 00:39:30.460
+move on. Okay. Do we have a little certification course in
+
+00:39:30.460 --> 00:39:31.700
+Iran not for now.
+
+00:39:34.990 --> 00:39:37.910
+What is the Farsi was don't mention it in that case it will
+
+00:39:37.910 --> 00:39:39.990
+like download the latest version.
+
+00:40:10.580 --> 00:40:14.060
+Okay. So any question for me guys any question anything for
+
+00:40:14.060 --> 00:40:14.260
+me.
+
+00:40:18.100 --> 00:40:21.840
+Should we use FASI F A I S S into a most of the use cases or
+
+00:40:21.840 --> 00:40:25.880
+there is any criteria beside the right vector DB. I'll not
+
+00:40:25.880 --> 00:40:29.520
+say that you should use a Facebook a semantic search all the
+
+00:40:29.520 --> 00:40:32.480
+time. So there are like a different different kind of a
+
+00:40:32.480 --> 00:40:35.940
+databases. We are using if you are going to ask me what we
+
+00:40:35.940 --> 00:40:40.200
+are using as of now in your own for like a job system. So we
+
+00:40:40.200 --> 00:40:43.680
+are using basically a MongoDB inside a MongoDB. They gave
+
+00:40:43.680 --> 00:40:46.260
+you a document based storage and search plus they give you
+
+00:40:46.260 --> 00:40:48.380
+even a vector based storage and search. So we are using
+
+00:40:48.380 --> 00:40:51.840
+actually MongoDB if you are going to ask me in like a real
+
+00:40:51.840 --> 00:40:55.820
+time because we have more trust on that platform other
+
+00:40:55.820 --> 00:40:59.240
+platform which is like a baby yet or maybe a pine cone. It's
+
+00:40:59.240 --> 00:41:02.460
+a new one. I don't think that they have like a stable
+
+00:41:02.460 --> 00:41:04.580
+technology. It's a new one. Maybe as of now, but yeah, they
+
+00:41:04.580 --> 00:41:07.240
+are doing a promotion. They are building things day by day.
+
+00:41:07.620 --> 00:41:11.440
+But still if you're asking me like I'll pay more but if
+
+00:41:11.440 --> 00:41:15.140
+something is going into a production, I will prefer to use
+
+00:41:15.140 --> 00:41:16.840
+the stable one plus
+
+00:41:23.500 --> 00:41:26.880
+you can try to go and find out even a difference between all
+
+00:41:26.880 --> 00:41:31.160
+of these like databases like and you will be able to get
+
+00:41:31.160 --> 00:41:34.940
+some little bit of insights. Not much at the end of the day.
+
+00:41:35.020 --> 00:41:38.040
+It's a vector DB that we are trying to use that's a vector
+
+00:41:38.040 --> 00:41:40.520
+search that we are trying to initialize is
+
+00:41:50.020 --> 00:41:53.620
+there a hyper parameter tuning see have a parameter tuning
+
+00:41:53.620 --> 00:41:56.880
+we try to do into a training part right not here. So when we
+
+00:41:56.880 --> 00:41:59.780
+say we are trying to build a rag nowhere we are trying to do
+
+00:41:59.780 --> 00:42:03.860
+a training the hyper parameter that you can try to perform
+
+00:42:03.860 --> 00:42:06.920
+over here based on like parameters that you can try to
+
+00:42:06.920 --> 00:42:11.220
+change based on the application that you are trying to build
+
+00:42:11.220 --> 00:42:16.220
+is the length of the embedding the search that you are
+
+00:42:16.220 --> 00:42:19.740
+doing. And then when you're trying to do a search, so what
+
+00:42:19.740 --> 00:42:23.120
+kind of a method it is trying to use in terms of a search.
+
+00:42:23.220 --> 00:42:25.260
+So these are the three four parameter that you can try to
+
+00:42:25.260 --> 00:42:26.380
+play with.
+
+00:42:32.340 --> 00:42:36.340
+Okay, so fine guys with that, thank you so much. If you have
+
+00:42:36.340 --> 00:42:39.500
+any kind of a question, so please ping me in a group. And
+
+00:42:39.500 --> 00:42:42.500
+I'll be happy to answer over there to all of your questions.
+
+00:42:43.200 --> 00:42:45.420
+And please try to run this particular project, the project
+
+00:42:45.420 --> 00:42:48.280
+which I have shared with all of you and let me know if
+
+00:42:48.280 --> 00:42:51.100
+you're facing an issue with that guys, thank you so much in
+
+00:42:51.100 --> 00:42:52.960
+next class. I'm going to talk about a new project,
+
+00:42:53.100 --> 00:42:56.020
+basically, thank you so much, everyone.
+

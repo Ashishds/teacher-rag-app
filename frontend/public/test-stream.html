@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Streaming Test</title>
+</head>
+<body>
+    <h1>Streaming Test</h1>
+    <div id="output" style="white-space: pre-wrap; font-family: monospace; padding: 20px; background: #f0f0f0;"></div>
+    <button onclick="testStream()">Test Streaming</button>
+    
+    <script>
+        async function testStream() {
+            const output = document.getElementById('output');
+            output.textContent = 'Starting stream...\n\n';
+            
+            try {
+                const response = await fetch('http://localhost:8000/query', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ question: 'What is AI?' })
+                });
+                
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let buffer = '';
+                
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) {
+                        output.textContent += '\n\n✅ Stream complete!';
+                        break;
+                    }
+                    
+                    buffer += decoder.decode(value, { stream: true });
+                    const lines = buffer.split('\n\n');
+                    buffer = lines.pop() || '';
+                    
+                    for (const line of lines) {
+                        if (line.startsWith('data: ')) {
+                            const data = JSON.parse(line.slice(6));
+                            output.textContent += `[${data.type}]: ${data.data ? (data.data.substring ? data.data : JSON.stringify(data.data)) : 'event'}\n`;
+                        }
+                    }
+                }
+            } catch (error) {
+                output.textContent += '\n\n❌ Error: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>

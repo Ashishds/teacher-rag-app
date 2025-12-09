@@ -1,0 +1,3902 @@
+WEBVTT
+
+00:04:03.920 --> 00:04:07.100
+okay so hi everyone i think i'm audible and visible right to
+
+00:04:07.100 --> 00:04:10.700
+all of us so please confirm me guys if i'm audible and
+
+00:04:10.700 --> 00:04:12.040
+visible okay
+
+00:04:21.610 --> 00:04:22.530
+so
+
+00:04:32.770 --> 00:04:34.530
+let me share my screen
+
+00:04:47.560 --> 00:04:50.520
+okay so basically like yesterday i was talking about this
+
+00:04:50.520 --> 00:04:54.780
+entire interview question and we had a discussion about this
+
+00:04:54.780 --> 00:04:57.820
+interview question till 50th number of interview questions
+
+00:04:57.820 --> 00:05:02.300
+now let's start from 51 number let's see in the same
+
+00:05:02.300 --> 00:05:05.260
+sequence right so again this is basically advanced
+
+00:05:05.260 --> 00:05:08.940
+architecture based question so let's see what in all
+
+00:05:08.940 --> 00:05:12.580
+question we have so i think i'm audible right if you can
+
+00:05:12.580 --> 00:05:17.760
+ping me in a chat and confirm that whether i'm audible or
+
+00:05:17.760 --> 00:05:19.100
+not yes
+
+00:05:21.850 --> 00:05:24.210
+okay i'm audible yeah
+
+00:05:35.280 --> 00:05:39.320
+so 51 number says that what is the difference between gpt
+
+00:05:39.320 --> 00:05:42.320
+lama and a cloudy architecture so as we all know that these
+
+00:05:42.320 --> 00:05:44.920
+are the three platforms so basically gpt is nothing but open
+
+00:05:44.920 --> 00:05:49.720
+ai lama is nothing but a facebook and cloudy is a separate a
+
+00:05:49.720 --> 00:05:52.480
+platform and obviously they used to provide them a different
+
+00:05:52.480 --> 00:05:57.100
+kind of a model so now if i'll talk about a gpt transformer
+
+00:05:57.100 --> 00:06:01.100
+or gpt series so basically it was a decoder only transformer
+
+00:06:01.100 --> 00:06:05.420
+where we had a decoder layer and again so if i'll talk about
+
+00:06:05.420 --> 00:06:08.700
+a strength so it was extremely strong in terms of generating
+
+00:06:08.700 --> 00:06:12.860
+a text and even now gpt 5 is extremely strong in terms of
+
+00:06:12.860 --> 00:06:17.320
+generating a text in terms of reasoning and basically if
+
+00:06:17.320 --> 00:06:19.880
+i'll talk about a training about a gpt so basically it'll be
+
+00:06:20.000 --> 00:06:22.660
+trained by using a rlhf so you've also been learning with
+
+00:06:22.660 --> 00:06:26.320
+the human feedback that's a specialty of the gpt you will be
+
+00:06:26.320 --> 00:06:30.220
+able to find out so whereas if i'll talk about a lama so
+
+00:06:30.220 --> 00:06:34.060
+again lama is also a decoder only transformer created by a
+
+00:06:34.060 --> 00:06:39.260
+facebook i would say and publicly for lama 2 and lama 3
+
+00:06:39.260 --> 00:06:43.600
+weights are available i would say and here if i'll talk
+
+00:06:43.600 --> 00:06:47.440
+about a cloudy so cloudy is basically a transformer based
+
+00:06:47.440 --> 00:06:52.780
+but basically it is going or it is it is basically tuned
+
+00:06:52.780 --> 00:06:57.000
+with the like a constitutional ai alignment you can say and
+
+00:06:57.000 --> 00:07:00.480
+basically it has been designed for a longer long context and
+
+00:07:00.480 --> 00:07:04.380
+if i'll talk about a recent model from a cloudy it is very
+
+00:07:04.380 --> 00:07:08.340
+very good in terms of a code better than i can say a gpt and
+
+00:07:08.340 --> 00:07:11.320
+lama in terms of generating a very long contest and in terms
+
+00:07:11.320 --> 00:07:14.500
+of generating a code now so the next question says that that
+
+00:07:14.500 --> 00:07:19.440
+what is the mixture of expert so mixture of expert uh like a
+
+00:07:20.000 --> 00:07:21.360
+different layer so the next question says that that if we
+
+00:07:21.360 --> 00:07:24.200
+have a multiple different different different different
+
+00:07:24.200 --> 00:07:27.900
+basically a free feed forward layer a neural network layer
+
+00:07:27.900 --> 00:07:33.520
+basically and if one layer is going to work as a one single
+
+00:07:33.520 --> 00:07:36.080
+domain expert another layer is going to work as another
+
+00:07:36.080 --> 00:07:39.920
+domain layer expert that is going to combine as a mixture of
+
+00:07:39.920 --> 00:07:42.380
+expert or moe so this is again one kind of a model
+
+00:07:42.380 --> 00:07:45.440
+architecture you all will be able to find out in general
+
+00:07:45.440 --> 00:07:48.640
+inside the industry now so the next question says that
+
+00:07:48.640 --> 00:07:52.980
+explain the concept of the sparse attention so we we heard
+
+00:07:52.980 --> 00:07:59.080
+about maybe a dense attention so here when we talk about
+
+00:08:00.180 --> 00:08:03.980
+sparse sparse animation means just try to perform the
+
+00:08:03.980 --> 00:08:07.840
+attention over some of the data so let's suppose we have a
+
+00:08:07.840 --> 00:08:12.960
+complete line and uh here so one single word if it is trying
+
+00:08:12.960 --> 00:08:16.240
+to like uh one single word attention it is trying to create
+
+00:08:16.240 --> 00:08:20.580
+but it will not try to create attention over the the data
+
+00:08:20.580 --> 00:08:23.300
+but yeah so just just it will try to take maybe a half of
+
+00:08:23.300 --> 00:08:26.420
+the data or maybe a first half or last half of the data or
+
+00:08:26.420 --> 00:08:29.800
+maybe a middle and then it will try to focus only on that
+
+00:08:29.800 --> 00:08:32.760
+particular part that is called as sparse attention so far we
+
+00:08:32.760 --> 00:08:37.200
+talked about dense attention in general or in other words
+
+00:08:37.200 --> 00:08:42.100
+it's also called as a local kind of attention so where it
+
+00:08:42.100 --> 00:08:46.100
+will try to focus on a particular window again so we all
+
+00:08:46.100 --> 00:08:49.520
+know about the attention even yesterday uh we have seen that
+
+00:08:49.520 --> 00:08:52.100
+how attention works and we have taken some sort of a
+
+00:08:52.100 --> 00:08:55.240
+question with respect to attention but here so in case of
+
+00:08:55.240 --> 00:08:58.080
+sparse attention so it simply means that that we are not
+
+00:08:58.080 --> 00:09:01.120
+focusing on the full data we are just trying to focus on the
+
+00:09:01.120 --> 00:09:05.560
+window of the data set in general in terms of a sparse now
+
+00:09:05.560 --> 00:09:07.980
+what is the difference between laura and full fine tuning in
+
+00:09:07.980 --> 00:09:10.540
+terms of full fine tuning so we update all the weights of
+
+00:09:10.540 --> 00:09:14.880
+the model in terms of laura basically we try to create a
+
+00:09:14.880 --> 00:09:20.540
+parallel neural network and we try to update only a weight
+
+00:09:20.540 --> 00:09:24.620
+of that parallel neural network not the original model that
+
+00:09:24.620 --> 00:09:28.340
+is something called as laura and how does qlaura works and
+
+00:09:28.340 --> 00:09:30.720
+what is its benefits so qlaura is nothing but quantized
+
+00:09:30.720 --> 00:09:34.820
+version of the laura so here in terms of qlaura so we try to
+
+00:09:34.820 --> 00:09:39.460
+uh like a change the bits basically of the original model so
+
+00:09:39.460 --> 00:09:43.280
+if every weights are available in a 16 bits so if every
+
+00:09:43.280 --> 00:09:44.240
+weights are available in a 16 bits so we we try to represent
+
+00:09:44.240 --> 00:09:47.800
+those weights into a four bits or maybe into a eight bits so
+
+00:09:47.800 --> 00:09:52.940
+that my model size will be reduced a lot when like a by
+
+00:09:52.940 --> 00:09:56.800
+maybe eight times by maybe uh four times and then i can try
+
+00:09:56.800 --> 00:10:00.440
+to use this particular model even into the edge devices so
+
+00:10:00.440 --> 00:10:04.160
+this is where technically i would say uh q laura comes into
+
+00:10:04.160 --> 00:10:07.400
+a picture a quantized laura comes into a picture now there
+
+00:10:07.400 --> 00:10:10.360
+is a question called as explain the concept of model
+
+00:10:10.360 --> 00:10:14.480
+parallelism in a large language model so model parallelism
+
+00:10:14.480 --> 00:10:20.420
+is what so basically uh split a model basically into a
+
+00:10:20.420 --> 00:10:24.840
+multiple gpus or multiple cpus that is something called as
+
+00:10:24.840 --> 00:10:28.600
+model parallelism so that my inferencing will be faster very
+
+00:10:28.600 --> 00:10:32.200
+very fast and this is where this model parallelism concept
+
+00:10:32.200 --> 00:10:37.560
+falls into a picture so everywhere right everywhere whenever
+
+00:10:37.560 --> 00:10:40.840
+we try to host a model whenever we try to host a model so
+
+00:10:40.840 --> 00:10:45.180
+always we try to achieve a model parallelism so there is
+
+00:10:45.180 --> 00:10:47.980
+something called as there are different approach basically
+
+00:10:47.980 --> 00:10:50.480
+that you will be able to find out with respect to a model
+
+00:10:50.480 --> 00:10:53.080
+parallelism so there is something called as tensor
+
+00:10:53.080 --> 00:10:56.360
+parallelism so here in terms of tensor parallelism so we
+
+00:10:56.360 --> 00:10:59.120
+split the weight matrices across our different different
+
+00:10:59.120 --> 00:11:02.780
+gpus there is something called as pipeline based parallelism
+
+00:11:02.780 --> 00:11:06.640
+so split our layers so here instead of splitting our weights
+
+00:11:06.640 --> 00:11:09.620
+so we try to split them layer by layer basically into a
+
+00:11:09.620 --> 00:11:13.720
+different different gpus and uh here so So there is
+
+00:11:13.720 --> 00:11:16.560
+something called as export parallelism or mixture of export,
+
+00:11:16.700 --> 00:11:20.400
+MOE parallelism. So over there, we try to split basically a
+
+00:11:20.400 --> 00:11:22.660
+different, different export into a different, different
+
+00:11:22.660 --> 00:11:26.520
+GPUs. So that my inferencing will be very much faster as
+
+00:11:26.520 --> 00:11:30.380
+compared to the regular like a model inferencing that we try
+
+00:11:30.380 --> 00:11:34.600
+to do. So many are asking, sir, does MOE working is similar
+
+00:11:34.600 --> 00:11:38.360
+to the agents as only fewer experts are active at a time for
+
+00:11:38.360 --> 00:11:42.860
+the particular task? Something like that. MOE means layers,
+
+00:11:43.000 --> 00:11:46.200
+basically. Right. So feed forward layer. So we always try to
+
+00:11:46.200 --> 00:11:49.660
+train all the feed forward layer for one particular task and
+
+00:11:49.660 --> 00:11:52.320
+something like that. And again, so in terms of achieving a
+
+00:11:52.320 --> 00:11:54.680
+parallelism, so we can even split those different, different
+
+00:11:54.680 --> 00:11:57.740
+exports into a different, different devices or hardware. We
+
+00:11:57.740 --> 00:12:01.600
+say that, OK, fine. So whenever you will, someone is going
+
+00:12:01.600 --> 00:12:04.480
+to ask a question with respect to X, Y, G export, then
+
+00:12:04.480 --> 00:12:06.920
+follow this ABC export, then follow this particular path
+
+00:12:06.920 --> 00:12:10.140
+means follow this particular GPU. This is how technically it
+
+00:12:10.140 --> 00:12:15.900
+is going to happen. Now, the next one is what is the
+
+00:12:15.900 --> 00:12:20.220
+question? Cora is fine. Model parallelism is fine. Yeah. The
+
+00:12:20.220 --> 00:12:22.820
+next question says that what is the purpose of a gradient
+
+00:12:22.820 --> 00:12:27.880
+check appointing? Any any idea, guys?
+
+00:12:32.810 --> 00:12:35.570
+Gala, I think it will be always better if you're going to
+
+00:12:35.570 --> 00:12:38.870
+give a context, basically. So if you're going to give a
+
+00:12:38.870 --> 00:12:41.570
+context, see, sometime what happens is that that people are
+
+00:12:41.570 --> 00:12:43.650
+going to ask you a back to back question and back to back
+
+00:12:43.650 --> 00:12:46.070
+question. So hardly three line, four line of answer is more
+
+00:12:46.070 --> 00:12:49.830
+than sufficient. But yeah, so if people are trying to talk
+
+00:12:49.830 --> 00:12:54.070
+more and more about it, for example, a study also, you must
+
+00:12:54.070 --> 00:12:57.090
+have seen that most of the question that we are talking
+
+00:12:57.090 --> 00:12:59.830
+about, for example, this Laura, for example, the score that
+
+00:12:59.830 --> 00:13:02.790
+we are talking about, for example, this architecture that we
+
+00:13:02.790 --> 00:13:06.090
+are talking about. So mostly we all are aware about it.
+
+00:13:06.150 --> 00:13:09.670
+Right. So even the internal mechanism of Laura, internal
+
+00:13:09.670 --> 00:13:12.550
+mechanism of Cora, we are aware about it. Or we. We know
+
+00:13:12.550 --> 00:13:15.070
+that that how GPT works, how long it works, how cloudy
+
+00:13:15.070 --> 00:13:18.510
+architecture in general is going to work. So initially you
+
+00:13:18.510 --> 00:13:22.790
+should start with the small sort answer. And then once if
+
+00:13:22.790 --> 00:13:25.190
+people are happy, then it's fine. If they're not happy,
+
+00:13:25.250 --> 00:13:28.690
+obviously you have to get into a deeper side of it now.
+
+00:13:35.140 --> 00:13:38.820
+So here because almost like a similar kind of a question we
+
+00:13:38.820 --> 00:13:42.380
+have faced even a study. So even in the previous set of the
+
+00:13:42.380 --> 00:13:45.260
+questions, the first website of the question, we have seen
+
+00:13:45.260 --> 00:13:49.660
+them similar kind of things now. So what is the purpose of a
+
+00:13:49.660 --> 00:13:54.500
+gradient checkpointing checkpointing is something which I
+
+00:13:54.500 --> 00:14:00.300
+know gradient checkpointing. I will have to check even I am
+
+00:14:00.300 --> 00:14:04.260
+not aware about this gradient. I'm not able to recall,
+
+00:14:04.460 --> 00:14:09.120
+actually. So let me check what is a gradient checkpointing
+
+00:14:09.120 --> 00:14:13.460
+gradient checkpointing in a lens.
+
+00:14:16.450 --> 00:14:17.890
+OK, so
+
+00:14:40.770 --> 00:14:43.910
+more efficient technique that creates extra compute for a
+
+00:14:43.910 --> 00:14:49.540
+load. Our GPU memory uses during a training model with
+
+00:14:49.540 --> 00:14:50.000
+optimization.
+
+00:15:00.600 --> 00:15:03.860
+OK, I'll just check this out, so I'm not able to recall
+
+00:15:03.860 --> 00:15:06.640
+checkpointing something which I think we all know.
+
+00:15:06.740 --> 00:15:09.660
+Basically, checkpointing simply means that that whenever we
+
+00:15:09.660 --> 00:15:12.360
+are trying to perform a training operation, so we keep on
+
+00:15:12.360 --> 00:15:16.220
+doing basically or we keep on saving our weights whenever we
+
+00:15:16.220 --> 00:15:20.000
+try to train it and in a later stage. So let's suppose my
+
+00:15:20.000 --> 00:15:23.980
+entire training got interrupted because of something. So my
+
+00:15:23.980 --> 00:15:26.820
+training is going to. Start once again from the same step
+
+00:15:26.820 --> 00:15:28.940
+where I have left. This is one of the use cases of the
+
+00:15:28.940 --> 00:15:32.140
+checkpointing, the another use case of checkpointing in
+
+00:15:32.140 --> 00:15:35.900
+general, you will be able to find out. So where we try to
+
+00:15:35.900 --> 00:15:39.920
+see that whether my model is able to improve itself or not,
+
+00:15:40.020 --> 00:15:43.440
+if my model is not improving. So in that case, I will stop
+
+00:15:43.440 --> 00:15:46.740
+the training. It generally this is what happens with respect
+
+00:15:46.740 --> 00:15:49.140
+to a checkpointing. But with respect to a gradient
+
+00:15:49.140 --> 00:15:52.160
+checkpointing, maybe I'll have to check that out. So let me
+
+00:15:52.160 --> 00:15:55.180
+make these things are bold. Maybe just. Just the extension
+
+00:15:55.180 --> 00:15:58.260
+of the checkpointing. But yeah, I'll have to check with like
+
+00:15:58.260 --> 00:16:03.280
+a chat GPT or something now. So how does flash attention
+
+00:16:03.280 --> 00:16:06.560
+improve the efficiency? So we all know about the attention.
+
+00:16:06.720 --> 00:16:09.160
+So attention is nothing but focusing on one of the keyword
+
+00:16:09.160 --> 00:16:11.800
+or one of the word. This is something which is called as
+
+00:16:11.800 --> 00:16:15.120
+attention. And again, so with the help of query Q and
+
+00:16:15.120 --> 00:16:17.480
+values, we try to achieve the attention and we are aware
+
+00:16:17.480 --> 00:16:22.000
+about the formula. Formula says that that query so formula.
+
+00:16:22.140 --> 00:16:24.320
+I think you remember the formula. And yesterday. Also, we
+
+00:16:24.320 --> 00:16:27.980
+discussed. About it says that that softmax of a bracket and
+
+00:16:27.980 --> 00:16:32.180
+then query into K transpose divided by root of D of
+
+00:16:32.180 --> 00:16:35.560
+dimension of basically key into value. That is something
+
+00:16:35.560 --> 00:16:39.300
+called as attention and which allows me to focus on a
+
+00:16:39.300 --> 00:16:42.500
+relation of one single entity or token with respect to all
+
+00:16:42.500 --> 00:16:44.940
+the other token or other word which is available inside my
+
+00:16:44.940 --> 00:16:49.580
+data set. Now, when I talk about a flash attention, so flash
+
+00:16:49.580 --> 00:16:53.560
+attention says that that computer attention in a small
+
+00:16:53.560 --> 00:16:59.480
+chunk, that can be like that can be done with the help of a
+
+00:16:59.480 --> 00:17:04.340
+GPU or maybe that can be done on a very, very small part of
+
+00:17:04.340 --> 00:17:08.960
+the GPU. You can say SRAM or maybe in a deal, so maybe in a
+
+00:17:08.960 --> 00:17:12.180
+SRAM we can we can try to perform this particular part. So
+
+00:17:12.180 --> 00:17:15.600
+that is something called as basically flash attention. So do
+
+00:17:15.600 --> 00:17:20.200
+not like try to focus on all sort of that. So try to focus
+
+00:17:20.200 --> 00:17:24.180
+on a small subset of it now. So if you look at this. Explain
+
+00:17:24.180 --> 00:17:26.900
+the concept of model quantization. So again, model
+
+00:17:26.900 --> 00:17:30.320
+quantization is nothing but whenever we have a weight of the
+
+00:17:30.320 --> 00:17:35.140
+model, just try to represent our weight of the model into a
+
+00:17:35.140 --> 00:17:39.640
+lower precision. And we all know that model is all about our
+
+00:17:39.640 --> 00:17:42.240
+weights. Right. And because of that, size of the model will
+
+00:17:42.240 --> 00:17:46.720
+increase or size of the model will decrease. And again, so
+
+00:17:46.720 --> 00:17:49.620
+if model size is big, so obviously I will not be able to do
+
+00:17:49.620 --> 00:17:53.100
+an inferencing on a small devices, a small compute devices.
+
+00:17:53.100 --> 00:17:55.820
+Now keeping that in the mind. So what we try to do, so we
+
+00:17:55.820 --> 00:17:59.120
+try to represent those weights. Technically, that is a
+
+00:17:59.120 --> 00:18:03.380
+number right into a lower precision. So maybe if something
+
+00:18:03.380 --> 00:18:07.480
+is available into a like a FP32, so we try to represent it
+
+00:18:07.480 --> 00:18:13.320
+on a INT8 or maybe on a INT4 so that my entire inferencing
+
+00:18:13.320 --> 00:18:16.500
+is going to be very, very fast and I can host that model in
+
+00:18:16.500 --> 00:18:20.460
+a very small devices. Now, what is the difference between
+
+00:18:20.460 --> 00:18:25.620
+dynamic and static quantization? So basically when I talk
+
+00:18:25.620 --> 00:18:29.400
+about quantization, I think we all know, just trying to like
+
+00:18:29.400 --> 00:18:33.240
+represent this entire model into a lower precision, right?
+
+00:18:33.280 --> 00:18:36.500
+This is something called quantization. Now, so again, inside
+
+00:18:36.500 --> 00:18:39.800
+the quantization, we have like a static quantization and we
+
+00:18:39.800 --> 00:18:42.880
+have a dynamic quantization. So basically when we talk about
+
+00:18:42.880 --> 00:18:46.340
+a static quantization, static means as static, names suggest
+
+00:18:46.340 --> 00:18:49.760
+that something fixed. Dynamic means something which is not
+
+00:18:49.760 --> 00:18:53.840
+fixed over here. So. So in terms of a static quantization so
+
+00:18:53.840 --> 00:18:58.600
+we always try to fix the scale per tensors and in case of a
+
+00:18:58.600 --> 00:19:02.560
+dynamic we are not doing that right. So here in terms of a
+
+00:19:02.560 --> 00:19:06.380
+dynamic we try to quantize a weight but activations are
+
+00:19:06.380 --> 00:19:09.420
+quantized on the fly. Activation functions are basically
+
+00:19:09.420 --> 00:19:13.720
+quantized on the fly. We are not fixing like a precision of
+
+00:19:13.720 --> 00:19:16.520
+that activation of functions. So that is something called as
+
+00:19:16.520 --> 00:19:20.220
+dynamic and static quantization. One where like things are
+
+00:19:20.220 --> 00:19:23.220
+fixed one where things are not fixed. Now knowledge
+
+00:19:23.220 --> 00:19:27.840
+distillation in LLMs. So how does knowledge distillation
+
+00:19:27.840 --> 00:19:31.840
+works in a large language model. Now so what is the meaning
+
+00:19:31.840 --> 00:19:34.540
+of a knowledge distillation by the way. So we will be having
+
+00:19:34.540 --> 00:19:37.600
+a model. So let us suppose we have a teacher model and we
+
+00:19:37.600 --> 00:19:40.900
+have a student model right. So obviously teacher model is
+
+00:19:40.900 --> 00:19:44.480
+nothing but a big model and you must have seen that when
+
+00:19:44.480 --> 00:19:48.180
+DeepSeek came into a market. So we have started saying and
+
+00:19:48.180 --> 00:19:51.220
+we have started hearing this word called as distillized
+
+00:19:51.220 --> 00:19:54.680
+model. Generally with respect to our DeepSeek people said
+
+00:19:54.680 --> 00:19:57.000
+that okay fine. So it is a distilled model and because of
+
+00:19:57.000 --> 00:19:59.580
+this distillation of the model. So it is costing them very
+
+00:19:59.580 --> 00:20:02.480
+very less. But yeah at the same point of a time this
+
+00:20:02.480 --> 00:20:05.980
+DeepSeek model on a benchmarking wise it is performing
+
+00:20:05.980 --> 00:20:09.020
+almost closer to the parent model or it is performing closer
+
+00:20:09.020 --> 00:20:12.660
+to a teacher model. So what is the meaning of this knowledge
+
+00:20:12.660 --> 00:20:17.660
+distillation in general. So like I said there will be a
+
+00:20:17.660 --> 00:20:20.280
+teacher model and let us suppose teacher model is a big
+
+00:20:20.280 --> 00:20:24.460
+model. And there will be a student model. Now what student
+
+00:20:24.460 --> 00:20:27.840
+model will try to do. So basically a student model will try
+
+00:20:27.840 --> 00:20:32.840
+to mimic a teacher model. Yeah. Teacher model. How. So
+
+00:20:32.840 --> 00:20:36.600
+basically teacher model is going to generate probability for
+
+00:20:36.600 --> 00:20:40.800
+all kind of inferencing. Yeah. And basically a student will
+
+00:20:40.800 --> 00:20:44.760
+be trained not just on a ground truth label but on a
+
+00:20:44.760 --> 00:20:48.820
+teacher's probability distributions so that it will be
+
+00:20:48.820 --> 00:20:51.980
+pretty much accurate. And it will be closer to the teacher
+
+00:20:51.980 --> 00:20:54.960
+closer to the learning of the teacher and that is something
+
+00:20:54.960 --> 00:20:57.760
+called as a distillation of the model. And nowadays many
+
+00:20:57.760 --> 00:21:00.600
+model you will be able to find out. So where people are not
+
+00:21:00.600 --> 00:21:03.220
+training any kind of a model from a scratch what they are
+
+00:21:03.220 --> 00:21:05.600
+trying to do. So they are trying to create a distilled
+
+00:21:05.600 --> 00:21:09.440
+version of the model. So again you must have heard about a
+
+00:21:09.440 --> 00:21:13.500
+distilled bird right distilled bird from a bird. So
+
+00:21:13.500 --> 00:21:17.540
+basically like a thought process wise you can say that that
+
+00:21:17.540 --> 00:21:20.720
+instead of giving a student just a word. A final answer
+
+00:21:20.720 --> 00:21:24.760
+teacher also shares the thought process and that is
+
+00:21:24.760 --> 00:21:28.000
+something called a distillation of the model. Now there is a
+
+00:21:28.000 --> 00:21:30.800
+concept called as model pruning. Now what is the meaning of
+
+00:21:30.800 --> 00:21:33.360
+that. So basically pruning is nothing but removing something
+
+00:21:33.360 --> 00:21:37.660
+in a decision tree. So again a random forest also a decision
+
+00:21:37.660 --> 00:21:40.460
+tree also. We must have heard about that pruning right
+
+00:21:40.460 --> 00:21:43.460
+pruning of the branches pruning of the tree. So pruning
+
+00:21:43.460 --> 00:21:46.120
+simply means that that removing a redundant weights or
+
+00:21:46.120 --> 00:21:48.620
+neurons from the model that is something called as like a
+
+00:21:48.620 --> 00:21:54.220
+model. Pruning basically so maybe I can try to remove the
+
+00:21:54.220 --> 00:21:56.740
+whole layer that is also called as a pruning and removing
+
+00:21:56.740 --> 00:22:02.380
+the whole layer out of it or maybe I can try to remove some
+
+00:22:02.380 --> 00:22:07.380
+of the weights randomly that is also called as a pruning. So
+
+00:22:07.380 --> 00:22:10.440
+basically removing the weights means what making it zero or
+
+00:22:10.440 --> 00:22:14.360
+deactivating it. So here in terms of our pruning it will end
+
+00:22:14.360 --> 00:22:17.020
+up reducing the size because that is a benefit of pruning by
+
+00:22:17.020 --> 00:22:20.900
+the way. So yeah. It will end up. Like a removing or it will
+
+00:22:20.900 --> 00:22:24.840
+end up reducing the size of the whole model and it will try
+
+00:22:24.840 --> 00:22:29.140
+to make inferencing faster without losing much of the
+
+00:22:29.140 --> 00:22:31.680
+information. That is an advantage generally we try to get
+
+00:22:31.680 --> 00:22:33.960
+with respect to a pruning and this is one of the way again
+
+00:22:33.960 --> 00:22:37.540
+to optimize the inferencing. Now what is the purpose of
+
+00:22:37.540 --> 00:22:43.740
+model what is the purpose of model comparison technique. So
+
+00:22:43.740 --> 00:22:49.980
+purpose of model comparison technique. Again this comparison
+
+00:22:49.980 --> 00:22:53.920
+depends this comparison depends upon the follow up question
+
+00:22:53.920 --> 00:22:56.620
+that what what we are comparing so are we comparing like
+
+00:22:56.620 --> 00:23:01.320
+inferencing are we trying to compare the knowledge are we
+
+00:23:01.320 --> 00:23:04.240
+trying to again in terms of our knowledge so coding based
+
+00:23:04.240 --> 00:23:06.340
+knowledge are we trying to compare or general purpose
+
+00:23:06.340 --> 00:23:09.960
+knowledge we are trying to compare or mathematics solving
+
+00:23:09.960 --> 00:23:13.020
+mathematics based knowledge we are trying to compare. So
+
+00:23:13.020 --> 00:23:16.280
+again compare wise when we someone say that. that what is
+
+00:23:16.280 --> 00:23:19.140
+the purpose of model comparison? Unless and until people are
+
+00:23:19.140 --> 00:23:21.580
+not asking the follow-up questions, it's not pretty much
+
+00:23:21.580 --> 00:23:24.200
+clear to me. So here, let's suppose I'm trying to do a
+
+00:23:24.200 --> 00:23:27.840
+comparison just in terms of inferencing, right? Just in
+
+00:23:27.840 --> 00:23:30.660
+terms of inferencing. That, okay, one model can work maybe
+
+00:23:30.660 --> 00:23:34.500
+on a low compute, or maybe edge devices, and one model can
+
+00:23:34.500 --> 00:23:40.260
+work on a GPU or CPU. So size comparison is the very first
+
+00:23:40.260 --> 00:23:43.620
+part. Number of parameter comparison is the second part that
+
+00:23:43.620 --> 00:23:47.360
+we try to do. And then like experts comparison is the
+
+00:23:47.360 --> 00:23:51.520
+another part that we try to do. A purpose is simple, right?
+
+00:23:53.140 --> 00:23:56.540
+Okay, sorry, it's not a comparison, right? Sorry, I just
+
+00:23:56.540 --> 00:24:00.380
+read it like in a different way. What is the purpose of
+
+00:24:00.380 --> 00:24:04.940
+model? My bad. Yeah, compression. Okay, compression means
+
+00:24:04.940 --> 00:24:09.480
+basically like reducing the, I thought that it's a
+
+00:24:09.480 --> 00:24:13.140
+comparison. No, it's a compression, right? Fine. Compression
+
+00:24:13.140 --> 00:24:16.680
+means reducing the size. Obviously. So the goal of model,
+
+00:24:16.760 --> 00:24:19.980
+what is the purpose of model compression technique? So model
+
+00:24:19.980 --> 00:24:22.740
+compression technique says that, okay, fine, so we'll try to
+
+00:24:22.740 --> 00:24:25.300
+make a model smaller. We'll try to make a model faster.
+
+00:24:25.520 --> 00:24:28.540
+We'll try to make a model cheaper, right? That is a meaning
+
+00:24:28.540 --> 00:24:31.200
+of the compression. If we are talking about the compression
+
+00:24:31.200 --> 00:24:34.580
+of the model. So in terms of compression, what can be done?
+
+00:24:34.720 --> 00:24:37.960
+First part is quantization. Yeah, quantization I can do.
+
+00:24:38.220 --> 00:24:41.820
+What is the second technique? I can do a pruning. Even with
+
+00:24:41.820 --> 00:24:44.460
+the help of pruning, I can compress the model. Third part is
+
+00:24:44.460 --> 00:24:47.040
+what? Distillization right from a teacher model. If I'm
+
+00:24:47.040 --> 00:24:51.120
+deriving the student model, fourth part is our fourth way,
+
+00:24:51.320 --> 00:24:55.000
+which I'm able to remember is basically lower and
+
+00:24:55.000 --> 00:24:57.880
+factorization is another way by which I can do the
+
+00:24:57.880 --> 00:25:03.000
+compression of the model. So quantization generally we can
+
+00:25:03.000 --> 00:25:06.080
+take a name. So quantization if someone is going to ask you
+
+00:25:06.080 --> 00:25:10.920
+a question that how to like a compress the model or what are
+
+00:25:10.920 --> 00:25:13.840
+what not technique that you can try to use to compress the
+
+00:25:13.840 --> 00:25:17.640
+model. So first quantization comes in my mind. Second
+
+00:25:17.640 --> 00:25:20.760
+pruning is something which comes in my mind. Third is a
+
+00:25:20.760 --> 00:25:24.040
+distillization teacher-student model. So that comes in my
+
+00:25:24.040 --> 00:25:27.940
+mind in general. These are the three technique which comes
+
+00:25:27.940 --> 00:25:32.120
+in my mind and here what is the purpose? The purpose is that
+
+00:25:32.120 --> 00:25:36.720
+try to make model faster. Try to make model run into a very
+
+00:25:36.720 --> 00:25:41.940
+very low compute and here so with a low compute or maybe
+
+00:25:41.940 --> 00:25:45.940
+even if I'm using a high compute. So make a model capable
+
+00:25:45.940 --> 00:25:50.080
+enough to serve a millions of queries because if model will
+
+00:25:50.080 --> 00:25:53.980
+be having a light weights so obviously even with the high
+
+00:25:53.980 --> 00:25:56.220
+compute it will be able to serve more and more number of
+
+00:25:56.220 --> 00:25:59.340
+queries. If model will be having a very very high weights so
+
+00:25:59.340 --> 00:26:02.620
+even with a very high compute it will be able to serve very
+
+00:26:02.620 --> 00:26:05.860
+less number of queries but yeah compression technique wise
+
+00:26:05.860 --> 00:26:10.200
+my bad I was thinking about the comparison but yeah so the
+
+00:26:10.200 --> 00:26:13.200
+other three like a technique I can try to like a name in
+
+00:26:13.200 --> 00:26:18.100
+general quantization pruning and distillization. Now how
+
+00:26:18.100 --> 00:26:24.740
+does a speculative decoding work? So again I will have to
+
+00:26:24.740 --> 00:26:28.060
+check with this one not able to recall this speculative
+
+00:26:28.060 --> 00:26:32.080
+decoding this particular word. So we will have to check with
+
+00:26:32.080 --> 00:26:37.980
+internet or maybe URI. Explain the concept of models serving
+
+00:26:37.980 --> 00:26:39.020
+optimization.
+
+00:26:41.740 --> 00:26:45.320
+So explain the concept of model serving and serving
+
+00:26:45.320 --> 00:26:50.780
+optimization. So basically whenever we talk about a model
+
+00:26:50.780 --> 00:26:53.800
+serving right serving means where we are trying to bring a
+
+00:26:53.800 --> 00:26:59.200
+model into a production production. So here how we will be
+
+00:26:59.200 --> 00:27:02.920
+able to optimize that model serving so that it will be able
+
+00:27:02.920 --> 00:27:08.800
+to take care of multiple queries at a time or it will not.
+
+00:27:09.020 --> 00:27:13.560
+End up occupying a lot of a compute. Yeah a lot of a
+
+00:27:13.560 --> 00:27:18.400
+compute. So how we will be able to do that. So one way is
+
+00:27:18.400 --> 00:27:22.440
+which which I am able to recall from the previous discussion
+
+00:27:22.440 --> 00:27:26.100
+itself is a quantization. So go with a quantized model or
+
+00:27:26.100 --> 00:27:31.160
+maybe do a pruning or maybe try to do some sort of you can
+
+00:27:31.160 --> 00:27:35.140
+say a distillation. So try to use that in that way you will
+
+00:27:35.140 --> 00:27:39.440
+be able to serve a model and that model will be able to do a
+
+00:27:39.440 --> 00:27:42.440
+inferencing with the low compute. That is that is one of the
+
+00:27:42.440 --> 00:27:47.120
+way another way is basically a catching. So instead of
+
+00:27:47.120 --> 00:27:50.540
+hitting my model for the same query again and again and
+
+00:27:50.540 --> 00:27:54.200
+again what we can do. We can try to catch it right. We can
+
+00:27:54.200 --> 00:27:57.000
+try to catch it. Maybe we can try to implement a Redis layer
+
+00:27:57.000 --> 00:28:00.800
+on a server side so that directly it will not hit my model
+
+00:28:00.800 --> 00:28:03.280
+instead of doing that what it will do so it will try to
+
+00:28:03.280 --> 00:28:05.600
+respond back from a catching again. This is a technique
+
+00:28:05.600 --> 00:28:08.600
+which all of us are using by the way. Yeah. Every one of us
+
+00:28:08.600 --> 00:28:10.840
+are using basically this kind of a technique. So where we
+
+00:28:10.840 --> 00:28:15.580
+try to catch your like a repetitively asked question and we
+
+00:28:15.580 --> 00:28:19.420
+try to give an answer based out of those catch itself so
+
+00:28:19.420 --> 00:28:22.520
+that we don't have to go and generate again and again and
+
+00:28:22.520 --> 00:28:25.880
+again. Yeah. From a hardware side there is something called
+
+00:28:25.880 --> 00:28:29.120
+as hardware optimization and inside that you will be able to
+
+00:28:29.120 --> 00:28:33.120
+find out something called as a GPU partitioning. Yeah. GPU
+
+00:28:33.120 --> 00:28:36.540
+partitioning. So basically with the help of GPU
+
+00:28:36.540 --> 00:28:40.400
+partitioning. You will be able to achieve again optimization
+
+00:28:40.400 --> 00:28:43.640
+in terms of serving a models especially if I'm talking about
+
+00:28:43.640 --> 00:28:46.560
+a little model serving not simple machine learning model
+
+00:28:46.560 --> 00:28:52.060
+serving and here. So again so if I'm able to do a GPU
+
+00:28:52.060 --> 00:28:55.020
+partitioning so my inferencing is going to be faster.
+
+00:28:55.640 --> 00:28:58.780
+Basically I'm just trying to like divide the inferencing
+
+00:28:58.780 --> 00:29:01.920
+into a different different segment of the GPU. So in this
+
+00:29:01.920 --> 00:29:04.160
+way you will be able to achieve a low latency high
+
+00:29:04.160 --> 00:29:06.840
+throughput and obviously you will be able to achieve a cost
+
+00:29:06.840 --> 00:29:10.360
+efficiency. Now for these two questions. So please check
+
+00:29:10.360 --> 00:29:13.480
+with the internet. I'm not able to recall these words. One
+
+00:29:13.480 --> 00:29:16.120
+is a checkpointing is something which I'm able to recall and
+
+00:29:16.120 --> 00:29:18.760
+we all are using it on a regular basis. But yeah, what is
+
+00:29:18.760 --> 00:29:21.160
+the meaning of gradient checkpointing? I'd like don't know
+
+00:29:21.160 --> 00:29:25.260
+and how does a speculative decoding works again. I'm not
+
+00:29:25.260 --> 00:29:28.560
+aware about it. So this particular word or maybe I'm not
+
+00:29:28.560 --> 00:29:33.580
+able to recall this one. Now next is a question RIG right
+
+00:29:33.580 --> 00:29:37.960
+retrieval augmented generation. Now so here the question
+
+00:29:37.960 --> 00:29:41.940
+says that that design RIG system with 1 million document any
+
+00:29:41.940 --> 00:29:44.920
+idea guys. I think we have done a lot of RIG right in our
+
+00:29:44.920 --> 00:29:48.840
+classes. So any idea how we can design a system for 1
+
+00:29:48.840 --> 00:29:53.380
+million document by the way? Yes means we have to store
+
+00:29:53.380 --> 00:29:56.080
+let's suppose like a 1 million of document inside our
+
+00:29:56.080 --> 00:29:59.460
+database and then we have to do a similarity search. How you
+
+00:29:59.460 --> 00:30:00.480
+can do it any idea?
+
+00:30:07.340 --> 00:30:11.060
+Yes any any idea how we can design like 1 million document.
+
+00:30:11.080 --> 00:30:13.980
+1 million 1 million looks not a big number by the way, but
+
+00:30:13.980 --> 00:30:17.360
+yeah, let's say it's a very very big number. So how we can
+
+00:30:17.360 --> 00:30:18.720
+do it any
+
+00:30:39.840 --> 00:30:40.380
+idea guys.
+
+00:30:55.450 --> 00:30:58.410
+Yeah, I think we all know RIG system right how we can design
+
+00:30:58.410 --> 00:31:01.770
+the RIG system in general. Yeah,
+
+00:31:04.720 --> 00:31:07.860
+so RIG system means what so whenever we are receiving a data
+
+00:31:07.860 --> 00:31:11.300
+so just do one thing. Let's suppose it's a very very huge
+
+00:31:11.300 --> 00:31:14.020
+amount of data. So we try to divide those data into a
+
+00:31:14.020 --> 00:31:16.700
+smaller smaller chunks chunk size is something that we used
+
+00:31:16.700 --> 00:31:19.940
+to decide then convert those. So there will be an overlap
+
+00:31:19.940 --> 00:31:22.780
+between the chunks right. So that will be able to understand
+
+00:31:22.780 --> 00:31:25.480
+relationship in a better way. And then we try to you know
+
+00:31:25.480 --> 00:31:29.780
+store those chunks into our vector databases after
+
+00:31:29.780 --> 00:31:33.500
+converting those chunks in a embedding right again. So if
+
+00:31:33.500 --> 00:31:35.940
+I'll talk about embedding we try to take a different
+
+00:31:35.940 --> 00:31:39.100
+different embedding models which eventually produce a
+
+00:31:39.100 --> 00:31:42.760
+different kind of a dimensions right. But yeah for one kind
+
+00:31:42.760 --> 00:31:46.220
+of application or operation I should always choose one kind
+
+00:31:46.220 --> 00:31:49.540
+of embedding. But here the question is. There is one million
+
+00:31:49.540 --> 00:31:53.320
+document. So looks like we are looking for RIG system which
+
+00:31:53.320 --> 00:31:58.500
+can works on very very huge number of the documents. So then
+
+00:31:58.500 --> 00:32:00.520
+what we should do. I know you're saying checking embedding
+
+00:32:00.520 --> 00:32:03.360
+and storing. Yeah, that's a common thing that we do all the
+
+00:32:03.360 --> 00:32:07.200
+time. We know will depend on use case to decide what type of
+
+00:32:07.200 --> 00:32:11.440
+check strategy embedding and vector. Yes, generally will be
+
+00:32:11.440 --> 00:32:16.080
+dependent on that. So someone is saying microservices and
+
+00:32:16.080 --> 00:32:20.420
+event driven deploy in a Kubernetes. Okay, Kubernetes but
+
+00:32:20.420 --> 00:32:23.160
+see Kubernetes will comes into a picture from an infra
+
+00:32:23.160 --> 00:32:29.240
+management right from an infra management side. But let's
+
+00:32:29.240 --> 00:32:32.440
+talk about the talk about this answer with respect to the
+
+00:32:32.440 --> 00:32:37.640
+RIG core entities. RIG core entities is what first convert
+
+00:32:37.640 --> 00:32:40.940
+those data into a chunks convert those chunks into the
+
+00:32:40.940 --> 00:32:45.980
+embeddings and then choose a proper vector DB where you will
+
+00:32:45.980 --> 00:32:52.390
+be able to store this information. So how you will design it
+
+00:32:52.390 --> 00:32:54.810
+guys. This is an interesting question by the way.
+
+00:33:02.120 --> 00:33:05.480
+Yeah, and again you have to go for even a query. So I mean
+
+00:33:05.480 --> 00:33:09.260
+like when I say that this is an interesting question. So
+
+00:33:09.260 --> 00:33:12.740
+obviously I have to go ahead with the queries as well. Right
+
+00:33:12.740 --> 00:33:16.140
+queries means retrieval because it's not just about storing
+
+00:33:16.140 --> 00:33:21.400
+something. It's also about querying something. Yes,
+
+00:33:21.400 --> 00:33:21.860
+everyone.
+
+00:33:34.080 --> 00:33:37.580
+So any any thought on this how we can like initiate this
+
+00:33:37.580 --> 00:33:44.050
+design. Starting from a storing till acquiring a data CQRS
+
+00:33:44.050 --> 00:33:45.490
+design pattern. Okay,
+
+00:33:51.580 --> 00:33:56.580
+let's talk about it a little bit. So I have my thoughts.
+
+00:33:56.720 --> 00:33:58.720
+I'll be sharing this thoughts with all of you.
+
+00:34:02.030 --> 00:34:05.810
+Yeah, so now here
+
+00:34:07.250 --> 00:34:14.310
+so we have a technically 1 million. We have basically a data
+
+00:34:14.310 --> 00:34:16.870
+and it says that that okay. We have a 1 million documents
+
+00:34:16.870 --> 00:34:20.670
+fine and we have to design basically RIGs. System for this
+
+00:34:20.670 --> 00:34:25.740
+production. So 1 million 1 million document
+
+00:34:29.510 --> 00:34:38.260
+based RIG system design.
+
+00:34:41.880 --> 00:34:45.380
+Okay, so this is the question that we have. So now what I
+
+00:34:45.380 --> 00:34:49.880
+will do first of all, I will try to maybe divide this entire
+
+00:34:49.880 --> 00:34:55.340
+data set into a chunk. So if I have 1 million 1 million
+
+00:34:55.340 --> 00:35:00.920
+source or 1 million raw document. Raw data, let's suppose.
+
+00:35:01.260 --> 00:35:04.880
+So if I'm trying to divide this entire data into a chunk, so
+
+00:35:04.880 --> 00:35:10.660
+maybe I will end up creating a 3 million to 5 million chunk.
+
+00:35:12.480 --> 00:35:15.300
+Chunks in general right depends upon my chunk size. That's
+
+00:35:15.300 --> 00:35:17.980
+the reason. So I have I'm keeping it as a 3 million to 5
+
+00:35:17.980 --> 00:35:21.100
+million. So I will end up dividing my data into a 1 million
+
+00:35:21.100 --> 00:35:25.880
+3 million to 5 million chunk size. Then I have to design a
+
+00:35:25.880 --> 00:35:30.360
+pipeline. So where? So here it will be able to create
+
+00:35:30.360 --> 00:35:33.580
+basically after checking pipeline will start from the
+
+00:35:33.580 --> 00:35:38.140
+checking. So it will try to basically divide this data into
+
+00:35:38.140 --> 00:35:40.660
+a chunks. It will be able to convert those data into
+
+00:35:40.660 --> 00:35:43.860
+embeddings and it will be able to store those embeddings. We
+
+00:35:43.860 --> 00:35:47.760
+have to select basically a search criteria that whenever we
+
+00:35:47.760 --> 00:35:50.660
+are going to do the matching. So how it will be able to
+
+00:35:50.660 --> 00:35:52.920
+match. So basically based on the cosine similarity or based
+
+00:35:52.920 --> 00:35:55.680
+on something different, it will be able to match and
+
+00:35:55.680 --> 00:35:59.240
+whenever we are sending the query for like, this one. So
+
+00:35:59.240 --> 00:36:04.840
+here corpus wise, I have 1 million raw data. Yeah, 1 million
+
+00:36:04.840 --> 00:36:11.740
+raw data. So in general, if I'm saying that that okay, token
+
+00:36:11.740 --> 00:36:18.640
+length, right? So one token length is maybe like a 2000 2K
+
+00:36:18.640 --> 00:36:23.160
+sorry 2K I can write over here. So if my token size is
+
+00:36:23.160 --> 00:36:27.100
+around 2K, so in general I will be able to end up creating a
+
+00:36:27.100 --> 00:36:30.160
+3 million to 5 million. Chunks based on the overlap, right?
+
+00:36:30.200 --> 00:36:35.000
+So maybe we can say that that my overlap size is maybe a 200
+
+00:36:35.000 --> 00:36:39.500
+to 300. Yeah, so 200 300 if my one token length is going to
+
+00:36:39.500 --> 00:36:43.460
+be 2K. So maybe I'm going to create 200 to 300 K of a
+
+00:36:43.460 --> 00:36:50.320
+overlap between those a data set and here in that situation
+
+00:36:50.320 --> 00:36:55.460
+if I have to design the architecture of this entire thing.
+
+00:36:55.540 --> 00:37:00.680
+So let me design that architecture. So in a very first
+
+00:37:00.680 --> 00:37:01.160
+layer.
+
+00:37:04.320 --> 00:37:08.240
+Let me draw something like there
+
+00:37:11.400 --> 00:37:13.200
+will be user
+
+00:37:21.110 --> 00:37:22.270
+now
+
+00:37:25.150 --> 00:37:29.350
+user interface. When I say user it simply means that I'm
+
+00:37:29.350 --> 00:37:35.230
+talking about the client or slash. Client now client is
+
+00:37:35.230 --> 00:37:39.330
+going to fire some sort of a query now what it will do. So
+
+00:37:39.330 --> 00:37:43.470
+it will try to hit my retrieval. Services retrieval
+
+00:37:46.000 --> 00:37:54.850
+retrieval services and retrieval services means what. So it
+
+00:37:54.850 --> 00:38:01.860
+will go and hit my vector DB now vector DB wise. I can try
+
+00:38:01.860 --> 00:38:03.240
+to rely upon a quadrant
+
+00:38:06.960 --> 00:38:11.600
+Baviot or maybe chroma DB or something like that. So vector
+
+00:38:11.600 --> 00:38:14.780
+DB wise this is something which I have stored over here now.
+
+00:38:14.880 --> 00:38:18.440
+So once retrieval service will be activated and let's
+
+00:38:18.440 --> 00:38:22.120
+suppose user has fired a query. Right from a user side. So
+
+00:38:22.120 --> 00:38:24.740
+we are able to get the query. Let's suppose I have already
+
+00:38:24.740 --> 00:38:27.320
+stored it. So storage part is sorted. So storage part is not
+
+00:38:27.320 --> 00:38:29.920
+a big deal. I can try to use any of this embedding model and
+
+00:38:29.920 --> 00:38:32.520
+then I can try to store it. And let's imagine that my
+
+00:38:32.520 --> 00:38:35.980
+storage part is just one time storage. Right. So one time I
+
+00:38:35.980 --> 00:38:39.140
+am getting this 1 million document and I'm converting this 1
+
+00:38:39.140 --> 00:38:41.520
+million document into a chunks and then I'm trying to store
+
+00:38:41.520 --> 00:38:45.840
+it into a vector DB. So one pipeline will be focusing on the
+
+00:38:45.840 --> 00:38:50.640
+storing a data. Storing a data which is just a one time.
+
+00:38:50.660 --> 00:38:54.240
+Game. So now again and again so user will go for the query.
+
+00:38:54.320 --> 00:38:57.220
+So whenever user will go for the query. So basically it will
+
+00:38:57.220 --> 00:38:59.760
+try to invoke let's suppose a retrieval services retrieval
+
+00:38:59.760 --> 00:39:04.400
+services means what so based on the query of the user based
+
+00:39:05.680 --> 00:39:08.200
+on the query of the user. It will try to hit the vector
+
+00:39:08.200 --> 00:39:11.780
+database. Now whatever vector DB that we have used over here
+
+00:39:11.780 --> 00:39:16.980
+at the time of storage. So once it will hit the vector DB it
+
+00:39:16.980 --> 00:39:21.940
+will try to basically fetch the data based on maybe. A
+
+00:39:21.940 --> 00:39:25.340
+cosine similarity. Let's say yeah. So based on similarity
+
+00:39:25.340 --> 00:39:32.370
+search similarity search then on top of this what we can try
+
+00:39:32.370 --> 00:39:35.970
+to do. So we can try to implement a re-ranker. I believe we
+
+00:39:35.970 --> 00:39:38.350
+talked about the re-ranker so many times. One of the famous
+
+00:39:38.350 --> 00:39:43.600
+re-ranker is a Kohira re-ranker re-ranker. Now what this re
+
+00:39:43.600 --> 00:39:47.220
+-ranker does by the way. So vector DB. So here in terms of
+
+00:39:47.220 --> 00:39:50.480
+this retrieval services. So this will try to extract a data
+
+00:39:50.480 --> 00:39:53.040
+from the vector DB based on the similarity search or
+
+00:39:53.040 --> 00:39:57.160
+similarity match. Now here we are always trying to call a re
+
+00:39:57.160 --> 00:40:00.560
+-ranker or Kohira kind of a re-ranker which provides your
+
+00:40:00.560 --> 00:40:03.860
+API kind of a services or maybe our own re-ranker model. We
+
+00:40:03.860 --> 00:40:07.920
+can try to call and whatever let's suppose it is trying to
+
+00:40:07.920 --> 00:40:11.100
+retrieve a K document K means let's suppose key top hundred
+
+00:40:11.100 --> 00:40:14.340
+document. It is trying to retrieve what this re-ranker will
+
+00:40:14.340 --> 00:40:17.240
+do. So again this re-ranker will try to understand my query
+
+00:40:17.240 --> 00:40:22.900
+and the responses that I'm able to get and again it will try
+
+00:40:22.900 --> 00:40:27.760
+to. Basically rearrange all of these answers or it will try
+
+00:40:27.760 --> 00:40:31.080
+to give a rank one two three four and so on to all of this
+
+00:40:31.080 --> 00:40:35.700
+top K hundred extraction that we are trying to do. Now once
+
+00:40:35.700 --> 00:40:38.940
+this will be done once this re-ranking is done once we are
+
+00:40:38.940 --> 00:40:42.300
+able to give a rank one two three four and so on. Now what
+
+00:40:42.300 --> 00:40:48.540
+it will do so it will try to select this result and then it
+
+00:40:48.540 --> 00:40:53.580
+will try to basically combine query. Plus.
+
+00:40:57.400 --> 00:41:01.260
+Reranked data and then it is going to send this particular
+
+00:41:01.260 --> 00:41:06.900
+data to my LLMs basically. LLMs right because this is what
+
+00:41:06.900 --> 00:41:10.740
+RAG means so RAG always try to like send a query plus the
+
+00:41:10.740 --> 00:41:15.080
+extracted data and then it is going to send to the LLMs. Now
+
+00:41:15.080 --> 00:41:19.180
+on top of this LLMs we try to implement a guardrails
+
+00:41:21.520 --> 00:41:25.540
+guardrails so that it should not expose some of the internal
+
+00:41:25.540 --> 00:41:28.640
+information. Or information which I don't want right
+
+00:41:28.640 --> 00:41:32.140
+internal information or information that I don't want and
+
+00:41:32.140 --> 00:41:35.720
+here so when we are talking about LLMs right in general so
+
+00:41:35.720 --> 00:41:37.780
+we are talking about the LLMs. So in case of vanilla RAG
+
+00:41:37.780 --> 00:41:41.740
+obviously we are sending a data to the LLMs directly but if
+
+00:41:41.740 --> 00:41:44.820
+I'll talk about a agentic RAG right because there are
+
+00:41:44.820 --> 00:41:47.780
+different kind of RAG that you can design one is a vanilla
+
+00:41:47.780 --> 00:41:51.440
+RAG and one is a agentic RAG. So if I'm talking about a
+
+00:41:51.440 --> 00:41:54.420
+vanilla RAG then query plus re-ranked data will go inside
+
+00:41:54.420 --> 00:41:56.740
+the LLMs directly. But let's see. Let's suppose if I'm
+
+00:41:56.740 --> 00:42:01.780
+talking about maybe if I'm talking about maybe agentic kind
+
+00:42:01.780 --> 00:42:07.340
+of RAG so there is a possibility that I will not send a data
+
+00:42:07.340 --> 00:42:10.900
+directly to the LLMs. So yes LLM will be involved over here
+
+00:42:10.900 --> 00:42:15.880
+but maybe I can try to call a different different kind of a
+
+00:42:15.880 --> 00:42:20.460
+tool over here depends upon the task which I'm able to
+
+00:42:20.460 --> 00:42:24.280
+perform in this particular places right. So we all know that
+
+00:42:24.280 --> 00:42:27.240
+what is the meaning of a tool calling. So here if I'll talk
+
+00:42:27.240 --> 00:42:31.020
+about a tool calling so maybe my multiple agent so agent one
+
+00:42:31.020 --> 00:42:33.940
+using a tool number one agent number two using a tool number
+
+00:42:33.940 --> 00:42:36.260
+two and agent number three. So these are the agents which
+
+00:42:36.260 --> 00:42:39.580
+will be involved and agents will be eventually calling a
+
+00:42:39.580 --> 00:42:41.940
+tools. We can even call a tool or function independently.
+
+00:42:42.160 --> 00:42:45.160
+That's completely fine. But yeah so there will be an agents
+
+00:42:45.160 --> 00:42:48.340
+and we all know that that agents always understands a prompt
+
+00:42:48.340 --> 00:42:51.900
+right. So basically it try to hit your LLMs at the end of
+
+00:42:51.900 --> 00:42:55.660
+the day. So with agents we can attach a tools or without a
+
+00:42:55.660 --> 00:42:59.140
+tools. So we are going to call it and then we are going to
+
+00:42:59.140 --> 00:43:03.480
+get a data and whatever data that we will try to get. So
+
+00:43:03.480 --> 00:43:08.120
+we'll try to go through a guardrails so that it is not going
+
+00:43:08.120 --> 00:43:11.080
+to expose my internal information which I don't want or
+
+00:43:11.080 --> 00:43:14.040
+maybe some sort of a policy implementation. We can try to do
+
+00:43:14.040 --> 00:43:17.060
+or maybe some sort of a tone implementation. We can try to
+
+00:43:17.060 --> 00:43:20.560
+do over here and then I will be able to get the final
+
+00:43:20.560 --> 00:43:26.300
+output. So if I am following just a vanilla RAG. Approach
+
+00:43:26.300 --> 00:43:29.440
+then only elements will be involved. If I'm not following if
+
+00:43:29.440 --> 00:43:33.080
+I am following a agentic RAG approach in that case some of
+
+00:43:33.080 --> 00:43:37.120
+the tools or some of the agents will be involved and this
+
+00:43:37.120 --> 00:43:39.820
+agent we can try to give it to some of the tasks that okay.
+
+00:43:40.220 --> 00:43:44.220
+So don't just try to fetch me a result based on the LLM
+
+00:43:44.220 --> 00:43:47.620
+summarization also try to call this particular function or
+
+00:43:47.620 --> 00:43:50.860
+maybe this particular instance and then give me the result.
+
+00:43:51.000 --> 00:43:53.340
+For example I'll just try to give you a very simple example
+
+00:43:53.340 --> 00:43:56.660
+over here. Let's suppose. I'm working into a medical
+
+00:43:56.660 --> 00:44:00.920
+industry right. So what I have done I have basically 1
+
+00:44:00.920 --> 00:44:04.760
+million document. So okay I have chucked it and then I have
+
+00:44:04.760 --> 00:44:07.060
+converted those document into embeddings and I have stored
+
+00:44:07.060 --> 00:44:11.940
+it into a vector db. So this one layer is done now. So user
+
+00:44:11.940 --> 00:44:14.420
+will come and who is trying to do some sort of a research
+
+00:44:14.420 --> 00:44:18.140
+right. Some sort of a research now the user requirement is
+
+00:44:18.140 --> 00:44:24.240
+very simple. So user is looking for a data from my storage
+
+00:44:24.240 --> 00:44:27.760
+right. That's completely fine. But the user is also
+
+00:44:27.760 --> 00:44:32.880
+expecting a data right. User is also expecting a data if
+
+00:44:32.880 --> 00:44:35.520
+there is some latest research which has happened and which
+
+00:44:35.520 --> 00:44:39.440
+is available over the internet. So obviously this RAG
+
+00:44:39.440 --> 00:44:43.160
+approach or let's suppose RAG plus LLM approach this RAG
+
+00:44:43.160 --> 00:44:45.300
+approach right. So till this point forget about the agent
+
+00:44:45.300 --> 00:44:49.640
+and tools over here. So here RAG will be able to retrieve
+
+00:44:49.640 --> 00:44:52.940
+our data from my vector databases it will be able to do a re
+
+00:44:52.940 --> 00:44:55.800
+-ranking and it will be able to pass it to the LLMs. I will
+
+00:44:55.800 --> 00:44:58.540
+be able to implement even a guardrails and I will be even
+
+00:44:58.540 --> 00:45:02.240
+able to get the output. But that was not a requirement. The
+
+00:45:02.240 --> 00:45:04.740
+requirement was very simple. Requirement was that okay give
+
+00:45:04.740 --> 00:45:09.940
+me a detail from the storage. That's completely fine in a
+
+00:45:09.940 --> 00:45:14.240
+structured manner. But also try to go to an internet and try
+
+00:45:14.240 --> 00:45:18.760
+to search that if some more informations are available or
+
+00:45:18.760 --> 00:45:22.660
+some latest informations are available or not which is maybe
+
+00:45:22.660 --> 00:45:27.200
+not available inside. In my databases. So in this case your
+
+00:45:27.200 --> 00:45:30.520
+tool will come into a picture. So maybe I can try to call a
+
+00:45:30.520 --> 00:45:33.560
+surfer API over here which technically a Google search which
+
+00:45:33.560 --> 00:45:36.460
+does a Google search right. So I can try to create an agent
+
+00:45:36.460 --> 00:45:39.040
+and I will say that that you are a smart intelligent agent.
+
+00:45:39.180 --> 00:45:42.440
+So who can look into the query and then you can you have a
+
+00:45:42.440 --> 00:45:45.300
+tool access a Google search tool access. So you can go to
+
+00:45:45.300 --> 00:45:48.880
+the internet and then based on the query or based on this
+
+00:45:48.880 --> 00:45:51.780
+this entire information. So try to go to the internet and
+
+00:45:51.780 --> 00:45:55.100
+then try to fetch information. And then send it to the LM
+
+00:45:55.100 --> 00:45:57.900
+for the summarization something like that right. So in that
+
+00:45:57.900 --> 00:46:01.080
+case my user will be able to get an output. But this time
+
+00:46:01.080 --> 00:46:05.720
+not just from a storage but even from the internet right.
+
+00:46:05.840 --> 00:46:09.420
+Our latest real time access it will be able to get that RIG
+
+00:46:09.420 --> 00:46:12.380
+approach will be much better. That RIG approach will be
+
+00:46:12.380 --> 00:46:14.840
+always much better as compared to just a vanilla RIG
+
+00:46:14.840 --> 00:46:18.940
+approach. So this is again one of the approach we always try
+
+00:46:18.940 --> 00:46:22.900
+to follow. So this is nothing big or nothing different. It's
+
+00:46:22.900 --> 00:46:25.820
+the same pipeline. We are just trying to attach one more
+
+00:46:25.820 --> 00:46:28.680
+component called as agent and I believe in my classes. We
+
+00:46:28.680 --> 00:46:31.100
+are already talking about the agent how to create the agent
+
+00:46:31.100 --> 00:46:33.640
+and we have already discussed about the vanilla RIG. So
+
+00:46:33.640 --> 00:46:37.340
+without agent how we can try to create the RIG and soon in
+
+00:46:37.340 --> 00:46:40.380
+your this generative AI class certification bootcamp class.
+
+00:46:40.620 --> 00:46:44.360
+I'm going to talk about how to add this one more layer
+
+00:46:44.360 --> 00:46:47.680
+agentic layers basically by using any of the existing
+
+00:46:47.680 --> 00:46:50.620
+framework. Maybe a Lanchen maybe a Lama indexes maybe a crew
+
+00:46:50.620 --> 00:46:54.440
+AI and how to make it even more powerful. And if I can add
+
+00:46:54.440 --> 00:46:57.880
+one agent I can add hundreds of agent as simple as that. So
+
+00:46:57.880 --> 00:47:02.660
+this is the total design that we try to follow in general
+
+00:47:02.660 --> 00:47:07.500
+with the RIG system. Is it making sense guys to all of us.
+
+00:47:07.640 --> 00:47:10.960
+Yeah. So there will be two pipeline. So if anyone is going
+
+00:47:10.960 --> 00:47:13.360
+to ask you so always say that okay fine there will be two
+
+00:47:13.360 --> 00:47:15.500
+pipeline. So there will be one time pipeline and there will
+
+00:47:15.500 --> 00:47:20.720
+be pipeline which is going to serve the end user. So yeah
+
+00:47:20.720 --> 00:47:27.820
+fine. And again so RIG without like agentic and RIG with
+
+00:47:27.820 --> 00:47:30.760
+agentic. So again inside RIG you will be able to find out
+
+00:47:30.760 --> 00:47:34.800
+two different approach and agentic is nothing but. Just
+
+00:47:34.800 --> 00:47:41.240
+giving an access of some tool based on my requirement. Meta
+
+00:47:41.240 --> 00:47:44.680
+tagging is passed and queries. Yes that also comes into a
+
+00:47:44.680 --> 00:47:47.060
+picture. No doubt about it now.
+
+00:47:49.140 --> 00:47:52.480
+So what is the difference different checking strategy we try
+
+00:47:52.480 --> 00:47:56.440
+to follow inside RIG. So any idea guys what is a different
+
+00:47:56.440 --> 00:47:58.620
+checking strategy because now we are talking about RIG
+
+00:47:58.620 --> 00:48:01.140
+right. So now in a question number one we have seen that
+
+00:48:01.140 --> 00:48:04.680
+okay we have to do a checking. Now what kind of a different
+
+00:48:04.680 --> 00:48:07.540
+different checking that we try to do. So checking wise there
+
+00:48:07.540 --> 00:48:09.920
+is something called as fixed length checking. We all
+
+00:48:09.920 --> 00:48:11.920
+understand the meaning of checking. So there is something
+
+00:48:11.920 --> 00:48:15.100
+called as fixed length checking. There is something called
+
+00:48:15.100 --> 00:48:19.400
+as semantic checking. Basically there is something called as
+
+00:48:19.400 --> 00:48:23.880
+dynamic windowing in terms of a checking. There is something
+
+00:48:23.880 --> 00:48:27.280
+called as document specific or document type specific
+
+00:48:27.280 --> 00:48:30.200
+checking. There is something called as query biased
+
+00:48:30.200 --> 00:48:32.200
+checking. So these are the different different kind of a
+
+00:48:32.200 --> 00:48:36.440
+checking strategy. We try to follow inside my RIG system.
+
+00:48:36.900 --> 00:48:43.820
+Now so implement a hybrid search in RIG. What is what is the
+
+00:48:43.820 --> 00:48:49.840
+meaning of this hybrid search. Yeah I think we talk about a
+
+00:48:49.840 --> 00:48:52.560
+similarity search right. We have already talked about it. We
+
+00:48:52.560 --> 00:48:55.660
+talked about a similarity search or we talked about inner
+
+00:48:55.660 --> 00:48:59.000
+product IP by the way. What is the meaning of a hybrid
+
+00:48:59.000 --> 00:49:05.940
+search. Yeah BM 25 plus so best matching 25 plus a cosine
+
+00:49:05.940 --> 00:49:08.140
+similarity. So if you are going to combine it it is
+
+00:49:08.140 --> 00:49:11.000
+technically called as hybrid search at the end of the day.
+
+00:49:11.100 --> 00:49:14.100
+Yeah now what is the difference between dense and sparse
+
+00:49:14.100 --> 00:49:16.980
+retrieval. Yes any idea guys what is the difference between
+
+00:49:16.980 --> 00:49:19.120
+dense and sparse. I believe we all understand meaning of
+
+00:49:19.120 --> 00:49:24.420
+dense and sparse. Dense means non non non zero entities. And
+
+00:49:24.420 --> 00:49:27.320
+the sparse means lot of non zero entities. What is the
+
+00:49:27.320 --> 00:49:29.820
+difference between this dense and sparse retrieval.
+
+00:49:33.270 --> 00:49:37.710
+So meaning of dense and sparse we all understands. What is
+
+00:49:37.710 --> 00:49:39.970
+what is the meaning of this dense versus sparse retrieval.
+
+00:49:44.060 --> 00:49:44.500
+Yes
+
+00:49:48.940 --> 00:49:52.200
+again let us let us reframe this question in other way
+
+00:49:52.200 --> 00:49:57.220
+right. So how we will be able to get a dense data in what
+
+00:49:57.220 --> 00:50:00.300
+cases. And in what cases we will be able to get a sparse
+
+00:50:00.300 --> 00:50:03.280
+data. I believe we have discussed a lot even with respect to
+
+00:50:03.280 --> 00:50:05.580
+this one. So dense versus sparse.
+
+00:50:26.020 --> 00:50:30.780
+Yes so depends upon what embedding technique used. Yeah so
+
+00:50:30.780 --> 00:50:34.880
+basically this dense data and sparse data depends upon the
+
+00:50:34.880 --> 00:50:36.880
+embedding technique that we are going to use. Let's suppose
+
+00:50:36.880 --> 00:50:41.520
+if I am using a TF IDF kind of approach or let's suppose if
+
+00:50:41.520 --> 00:50:45.580
+I am trying to use one hot encoding kind of approach in
+
+00:50:45.580 --> 00:50:48.120
+terms of converting my data into a numerical space. So
+
+00:50:48.120 --> 00:50:51.380
+obviously I will end up creating the sparse data right
+
+00:50:51.380 --> 00:50:54.720
+sparse data. And if I am trying to use some sort of
+
+00:50:54.720 --> 00:50:57.880
+embedding models then I will end up creating a dense data
+
+00:50:57.880 --> 00:51:03.860
+right. Dense data means non-zero data. Data means all the
+
+00:51:03.860 --> 00:51:07.160
+data which will be available it will be non-zero and in case
+
+00:51:07.160 --> 00:51:09.860
+of sparse it will be zeros. Lot of zeros you will be able to
+
+00:51:09.860 --> 00:51:13.220
+find out simple one hot encoding lot of zeros right. I will
+
+00:51:13.220 --> 00:51:18.840
+be able to find out. Now so whenever we are trying. So yeah
+
+00:51:18.840 --> 00:51:22.100
+this is technically a difference between dense and dense.
+
+00:51:22.120 --> 00:51:25.260
+Sparse right in terms of even a retrieval. So if we are
+
+00:51:25.260 --> 00:51:28.540
+trying to use a hybrid approach so where we can try to call
+
+00:51:28.540 --> 00:51:32.380
+a BM 25 best matching 25 and if we are calling a cosine
+
+00:51:32.380 --> 00:51:35.740
+similarity. So cosine similarity generally works on a dense
+
+00:51:35.740 --> 00:51:40.460
+data and this BM 25 if I am talking about so that works on
+
+00:51:40.460 --> 00:51:44.180
+the sparse data and technically it's called as hybrid search
+
+00:51:44.180 --> 00:51:47.640
+as per the previous question. Right. So that is something
+
+00:51:47.640 --> 00:51:51.640
+that we can try to use it for a dense and sparse. How do you
+
+00:51:51.640 --> 00:51:56.340
+implement. A re-ranking in RAG system. Yeah any any idea. I
+
+00:51:56.340 --> 00:51:58.940
+think re-ranker we have already discussed Kohira re-ranker
+
+00:51:58.940 --> 00:52:03.840
+or BGE re-ranker basically right. And we all understand the
+
+00:52:03.840 --> 00:52:07.680
+meaning of a re-ranker as well. How do you implement it
+
+00:52:07.680 --> 00:52:10.580
+again as per this diagram. So whenever we are trying to do
+
+00:52:10.580 --> 00:52:14.380
+like a search I will be able to get a top K retrieval top
+
+00:52:14.380 --> 00:52:17.740
+hundred let's suppose here I'm going to get it on top of
+
+00:52:17.740 --> 00:52:20.320
+this I will just try to call the re-ranker and it is again
+
+00:52:20.320 --> 00:52:23.780
+going to rearrange. Because this top K I will be able to get
+
+00:52:23.780 --> 00:52:27.620
+based on the similarity match maybe a hybrid maybe just a BM
+
+00:52:27.620 --> 00:52:31.580
+25 maybe just a cosine similarity maybe just a dot product
+
+00:52:31.580 --> 00:52:34.880
+right based out of that. So I will be able to get the top
+
+00:52:34.880 --> 00:52:39.180
+like a hundred or something. Now I just try to call the re
+
+00:52:39.180 --> 00:52:44.720
+-ranker over here and just rearrange the entire data set. So
+
+00:52:44.720 --> 00:52:48.920
+I'm not just relying on the distances but also I'm trying to
+
+00:52:48.920 --> 00:52:52.700
+call a model. So which understands the semantics of the data
+
+00:52:52.700 --> 00:53:00.260
+set in a better manner. Now so next question says that that
+
+00:53:00.260 --> 00:53:03.000
+what is the best practice for a vector database selection.
+
+00:53:03.480 --> 00:53:06.120
+Yeah this is also a good question because we have multiple
+
+00:53:06.120 --> 00:53:08.660
+vector database like we have a Facebook AI similarity
+
+00:53:08.660 --> 00:53:14.340
+search. We have basically a quadrant we have like a Google
+
+00:53:14.340 --> 00:53:19.340
+Chroma DB we have a variant so many different different kind
+
+00:53:19.340 --> 00:53:23.440
+of databases we have. So what are the best practices that we
+
+00:53:23.440 --> 00:53:29.000
+try to use to select a database. So first of all a type of
+
+00:53:29.000 --> 00:53:33.280
+the indexes it is going to select or suggest basically based
+
+00:53:33.280 --> 00:53:38.120
+on the index type. We try to select a vector DB by the way.
+
+00:53:38.220 --> 00:53:42.500
+Now almost everyone is supporting all kind of indexes. Now
+
+00:53:42.500 --> 00:53:46.960
+the second part is metadata filtering. So how capable my
+
+00:53:46.960 --> 00:53:51.820
+vector DB is not in terms of you know. Finding out the
+
+00:53:51.820 --> 00:53:55.020
+distances but also in terms of filtering out the meta
+
+00:53:55.020 --> 00:53:59.360
+information because that is the place where we can do a lot
+
+00:53:59.360 --> 00:54:04.340
+of optimization. Right. If and again this is another
+
+00:54:04.340 --> 00:54:08.040
+criteria of selecting my vector DB that whether my DB is
+
+00:54:08.040 --> 00:54:11.240
+suggest or DB is helping me out with respect to a metadata
+
+00:54:11.240 --> 00:54:15.180
+filtration or not. What kind of indexing type it is going to
+
+00:54:15.180 --> 00:54:19.700
+give it to me. What kind of search it is going to give it to
+
+00:54:19.700 --> 00:54:23.400
+me. If it is a hybrid. It's well and good. I would say
+
+00:54:23.400 --> 00:54:28.120
+right. What kind of a compression it is allowing me
+
+00:54:28.120 --> 00:54:31.140
+basically compression of the data. It is allowing me means
+
+00:54:31.140 --> 00:54:34.740
+converting my data maybe from a 32 bit to a 16 bit or maybe
+
+00:54:34.740 --> 00:54:37.860
+to an 8 bit. That is that is possible right. Quantization is
+
+00:54:37.860 --> 00:54:41.120
+possible even inside the vector database so that without
+
+00:54:41.120 --> 00:54:44.620
+consuming a lot of space I will be able to store more and
+
+00:54:44.620 --> 00:54:49.640
+more data set. So these are the core criteria you all will
+
+00:54:49.640 --> 00:54:53.760
+be able to find out in terms. Of selecting any vector DB or
+
+00:54:53.760 --> 00:54:58.300
+even in terms of doing a comparison apart from the
+
+00:54:58.300 --> 00:55:02.060
+implementation side because let's suppose if I'm talking
+
+00:55:02.060 --> 00:55:05.460
+about a Facebook as similarity search. So obviously I will
+
+00:55:05.460 --> 00:55:09.960
+not if I'm if I'm looking for maybe a platform so which is
+
+00:55:09.960 --> 00:55:14.220
+going to provide me this Facebook as similarity search in a
+
+00:55:14.220 --> 00:55:19.140
+serverless mode or maybe in a like a self-served mode. It's
+
+00:55:19.140 --> 00:55:22.740
+not possible. Right. So I will be I will be having a kind of
+
+00:55:22.740 --> 00:55:26.220
+overhead on me that I have to host this database. I have to
+
+00:55:26.220 --> 00:55:29.640
+maintain it. I have to manage it. Whereas if I'll talk about
+
+00:55:29.640 --> 00:55:33.600
+a quadrant if I'll talk about maybe a chroma DB right pine
+
+00:55:33.600 --> 00:55:37.500
+cone or maybe a baby yet they are already giving me a
+
+00:55:37.500 --> 00:55:42.920
+complete hosting services. So apart from this core criteria.
+
+00:55:43.100 --> 00:55:47.780
+So even we try to select or deselect vector DB based on the
+
+00:55:47.780 --> 00:55:51.580
+ease of use. So ease of use is a second criteria because
+
+00:55:51.580 --> 00:55:55.040
+that will be only one time implementation. Even if I have to
+
+00:55:55.040 --> 00:55:58.400
+host my database on my platform just a one time game. But
+
+00:55:58.400 --> 00:56:03.440
+yes if the team size is small I will be looking for ease of
+
+00:56:03.440 --> 00:56:06.740
+use. I don't want to you know set up my own database and I
+
+00:56:06.740 --> 00:56:09.600
+don't want to maintain it for a very very long time.
+
+00:56:10.180 --> 00:56:15.400
+Basically. So these are the selection criteria. How do you
+
+00:56:15.400 --> 00:56:21.400
+handle a metadata filtration in RIG. OK. So first of all
+
+00:56:21.400 --> 00:56:23.800
+let's try to understand what is metadata. So metadata is
+
+00:56:23.800 --> 00:56:26.900
+nothing but information about the original data itself. Now
+
+00:56:26.900 --> 00:56:29.460
+whenever we are trying to store some data into a vector DB.
+
+00:56:29.660 --> 00:56:32.720
+So we try to attach basically a document ID in general.
+
+00:56:32.840 --> 00:56:35.960
+Right. OK. This is coming from this particular document so
+
+00:56:35.960 --> 00:56:38.780
+that I can like maintain the relationship between because
+
+00:56:38.780 --> 00:56:42.020
+one document if we are doing a chucking. So I will end up
+
+00:56:42.020 --> 00:56:44.960
+dividing one document into multiple chucks. So one is a
+
+00:56:44.960 --> 00:56:48.280
+document ID as a metadata. We try to store. Second is a
+
+00:56:48.280 --> 00:56:52.940
+chuck ID. So we try to give a chucking ID as well that one
+
+00:56:52.940 --> 00:56:56.080
+two three four five six from a document one then from a
+
+00:56:56.080 --> 00:56:58.080
+document to one two three four five six once again. So
+
+00:56:58.080 --> 00:57:01.560
+chucking ID. I can try to store it as a metadata title of
+
+00:57:01.560 --> 00:57:05.280
+the document. I can try to store as a metadata or maybe like
+
+00:57:05.280 --> 00:57:09.320
+a author. Right. Even like an author we can try to store it
+
+00:57:09.320 --> 00:57:13.280
+created at what time this was created. Maybe language we can
+
+00:57:13.280 --> 00:57:15.920
+try to store as a metadata. Maybe we can try to create some
+
+00:57:15.920 --> 00:57:18.460
+custom tags with respect to some domain or with respect to
+
+00:57:18.460 --> 00:57:23.220
+some team. We can try to treat as a metadata source URL or
+
+00:57:23.220 --> 00:57:27.200
+like a source location can be treated as a metadata. So when
+
+00:57:27.200 --> 00:57:31.100
+we talk about a metadata it can be anything and it depends
+
+00:57:31.100 --> 00:57:33.940
+upon me because at the end of the day metadata is key value
+
+00:57:33.940 --> 00:57:37.560
+kind of a pair. Right. And it's completely up to me that
+
+00:57:37.560 --> 00:57:40.880
+what I will be considering as a meta information for a
+
+00:57:40.880 --> 00:57:44.640
+particular data and this is something that we try to decide
+
+00:57:44.640 --> 00:57:49.380
+when we try to decide to store the data. This this first
+
+00:57:49.380 --> 00:57:52.340
+layer. Right. So whenever we decide that okay fine so now we
+
+00:57:52.340 --> 00:57:55.320
+have to store the data. So we even try to talk about the
+
+00:57:55.320 --> 00:57:59.180
+meta data. We always even talk about the meta information
+
+00:57:59.180 --> 00:58:02.060
+that okay I'm storing it. So let's try to store maybe a
+
+00:58:02.060 --> 00:58:05.200
+document ID maybe a chuck ID maybe a author name maybe a
+
+00:58:05.200 --> 00:58:08.060
+path or URL maybe some custom tag we can try to give maybe
+
+00:58:08.060 --> 00:58:10.900
+some language tag we can try to give. And that is something
+
+00:58:10.900 --> 00:58:15.060
+that we try to store in a meta data which is going to help
+
+00:58:15.060 --> 00:58:18.840
+me out in terms of doing a filtration. Right. So document
+
+00:58:18.840 --> 00:58:22.060
+one maybe chuck hundred. If I'm going to send a query
+
+00:58:22.060 --> 00:58:25.000
+directly it will be able to bring the data directly for me.
+
+00:58:25.160 --> 00:58:28.000
+I don't have to go for even a matching or similarity search
+
+00:58:28.000 --> 00:58:31.540
+over there. And this is where this metadata filtration is
+
+00:58:31.540 --> 00:58:36.000
+going to help me out in terms of getting a data in a easiest
+
+00:58:36.000 --> 00:58:42.540
+possible manner. So now next question says that that yeah.
+
+00:58:42.820 --> 00:58:47.100
+What is the purpose of query expansion in RIG. Any idea guys
+
+00:58:47.100 --> 00:58:49.440
+query expansion. What is what is like a query expansion.
+
+00:58:53.630 --> 00:58:57.220
+Yes. Any idea.
+
+00:59:16.270 --> 00:59:16.750
+Yes.
+
+00:59:23.990 --> 00:59:27.970
+So query expansion is nothing but just one like a term. You
+
+00:59:27.970 --> 00:59:30.770
+will be able to find out in a world of RIG not just in a
+
+00:59:30.770 --> 00:59:34.170
+world of RIG everywhere you will be able to find out. So
+
+00:59:34.170 --> 00:59:38.610
+basically the goal of this query expansion is reduce misses
+
+00:59:38.610 --> 00:59:43.190
+from wrongdoing mismatches. Right. So that is something
+
+00:59:43.190 --> 00:59:49.130
+called as a query expansion. For example. So let's suppose
+
+00:59:49.130 --> 00:59:54.430
+by chunk sizes. Let's suppose 2000 K. Yeah. My chunk size is
+
+00:59:54.430 --> 00:59:58.570
+basically 2000 K means 2000 like a token or 2000 number of
+
+00:59:58.570 --> 01:00:02.710
+words. I'm trying to keep in one of the chunks and
+
+01:00:02.710 --> 01:00:06.050
+eventually I'm converting that into a embeddings vector
+
+01:00:06.050 --> 01:00:09.430
+space right vector space of 1536 or something. I'm trying to
+
+01:00:09.430 --> 01:00:14.510
+convert. Now we are trying to send a query. Because RIG
+
+01:00:14.510 --> 01:00:18.430
+works on a query right RIG works on a query. We are going to
+
+01:00:18.430 --> 01:00:21.270
+send the query. It is going to do some sort of a match maybe
+
+01:00:21.270 --> 01:00:24.210
+a hybrid maybe a similarity any kind of a matches. It is
+
+01:00:24.210 --> 01:00:27.430
+going to perform and then it will try to retrieve the top K
+
+01:00:27.430 --> 01:00:33.310
+document for me. Now let's suppose if my query is right. So
+
+01:00:33.310 --> 01:00:39.270
+if my query is basically a very very small maybe my query is
+
+01:00:39.270 --> 01:00:45.870
+having a 10 words or maybe like a. 8 to 10 words and my one
+
+01:00:45.870 --> 01:00:51.710
+chuck size was 2000 words right now and there is also a
+
+01:00:51.710 --> 01:00:58.230
+possibility that my query is not holding the exact semantics
+
+01:00:58.230 --> 01:01:02.430
+or exact or meaning of like something which I'm trying to
+
+01:01:02.430 --> 01:01:06.270
+ask. So in that case you will end up getting a wrong
+
+01:01:06.270 --> 01:01:09.690
+retrieval or maybe you will end up getting a retrieval which
+
+01:01:09.690 --> 01:01:13.590
+is not going to be correct. Maybe even 90 percent. 80
+
+01:01:13.590 --> 01:01:16.770
+percent maybe like a 40 percent or maybe like a 50 percent
+
+01:01:16.770 --> 01:01:20.170
+with 50 percent match you will be able to extract it. So in
+
+01:01:20.170 --> 01:01:23.790
+that case in RIG what we do we try to expand our query
+
+01:01:23.790 --> 01:01:28.430
+itself. We try to make our query better. So see here I'm not
+
+01:01:28.430 --> 01:01:31.690
+talking about the data that we are storing or even a
+
+01:01:31.690 --> 01:01:34.610
+matching here. We are talking about the entry point itself.
+
+01:01:34.870 --> 01:01:40.130
+So let's suppose if user is asking a query that what is RIG
+
+01:01:40.130 --> 01:01:42.950
+right something like that. What is RIG. It's a very small
+
+01:01:42.950 --> 01:01:46.290
+query. It's a very short query and I have a millions of
+
+01:01:46.290 --> 01:01:50.190
+document available with respect to RIG. My system will be
+
+01:01:50.190 --> 01:01:53.070
+confused and obviously it is going to give me a result based
+
+01:01:53.070 --> 01:01:56.110
+on the nearest matching right based on the nearest matching
+
+01:01:56.110 --> 01:01:59.330
+is going to give me the result. But if I'm looking for a
+
+01:01:59.330 --> 01:02:05.210
+best of a best matching. So in that case with my query what
+
+01:02:05.210 --> 01:02:08.430
+I can do I can try to design my system that let's try to
+
+01:02:08.430 --> 01:02:12.090
+send something additional. Yeah something additional. So
+
+01:02:12.090 --> 01:02:15.730
+let's suppose if someone has asked that what is RIG right.
+
+01:02:16.010 --> 01:02:22.010
+Maybe I can try to attach that how or what is RIG maybe with
+
+01:02:22.010 --> 01:02:26.130
+respect to or how we can try to implement the RIG maybe with
+
+01:02:26.130 --> 01:02:30.430
+respect to health care domain something like that. So here
+
+01:02:30.430 --> 01:02:33.830
+automatically I'm trying to attach something. So in general
+
+01:02:33.830 --> 01:02:36.410
+what we do we try to attach some of the product code or
+
+01:02:36.410 --> 01:02:40.270
+maybe we try to attach some of the scenario so that my query
+
+01:02:40.270 --> 01:02:43.170
+will be expanded. And whenever it will go and it will try to
+
+01:02:43.170 --> 01:02:45.610
+match it will retrieve the data. It will be a good
+
+01:02:45.610 --> 01:02:49.430
+retrieval. So that is also a kind of engineering we try to
+
+01:02:49.430 --> 01:02:51.990
+do and that kind of engineering is called as query
+
+01:02:51.990 --> 01:02:57.070
+expansion. So don't just rely on the storage because storage
+
+01:02:57.070 --> 01:03:00.930
+is not all about like a story is not going to give you a
+
+01:03:00.930 --> 01:03:04.510
+guarantee that I'll always give you the best result. No it
+
+01:03:04.510 --> 01:03:07.690
+also depends upon the query because matching always happens
+
+01:03:07.690 --> 01:03:12.890
+between query and your storage. As simple as that. So my
+
+01:03:12.890 --> 01:03:15.510
+story is supposed to be very very good but even my query is
+
+01:03:15.510 --> 01:03:19.070
+supposed to be very very good if I'm looking for a best
+
+01:03:19.070 --> 01:03:24.370
+output from my RIG retrieval system. Now there is a question
+
+01:03:24.370 --> 01:03:29.110
+called as what is how do you implement a multi-hop reasoning
+
+01:03:29.110 --> 01:03:33.490
+multi-hop reasoning in a RIG any idea.
+
+01:03:36.410 --> 01:03:41.170
+So what is the meaning of by the way of this multi-hop. Any
+
+01:03:41.170 --> 01:03:47.080
+idea guys to see in terms of RIG when we say multi-hop it
+
+01:03:47.080 --> 01:03:50.940
+simply means that that retrieving information not from one
+
+01:03:50.940 --> 01:03:53.580
+document multi-hop means not from one document but from the
+
+01:03:53.580 --> 01:03:56.100
+multiple document that is actual meaning of a multi-hop over
+
+01:03:56.100 --> 01:03:58.980
+here. So here question simply says that that how do you
+
+01:03:58.980 --> 01:04:02.360
+implement a kind of RIG system. So where it will go and it
+
+01:04:02.360 --> 01:04:05.740
+will try to search from the multiple document not just from
+
+01:04:05.740 --> 01:04:07.380
+one single document.
+
+01:04:12.040 --> 01:04:17.640
+Yeah. So here. Here what do we do in terms of like because
+
+01:04:17.640 --> 01:04:20.780
+let's suppose if I'm trying to like build a RIG so obviously
+
+01:04:20.780 --> 01:04:23.500
+it will go it will try to do a matching and there is a very
+
+01:04:23.500 --> 01:04:26.320
+high possibility that it will just go and it will do a
+
+01:04:26.320 --> 01:04:29.700
+matching with respect to maybe only one document and its
+
+01:04:29.700 --> 01:04:32.840
+chunks right one document because one document means like
+
+01:04:32.840 --> 01:04:37.020
+and its respective chunk and then I will be able to get the
+
+01:04:37.020 --> 01:04:41.700
+answer. Right. So what we can do so we can try to maybe
+
+01:04:41.700 --> 01:04:44.760
+follow our decomposition approach. So where we can try to
+
+01:04:44.760 --> 01:04:50.900
+you know divide my questions into a sub questions. This is
+
+01:04:50.900 --> 01:04:54.560
+one of the approach we try to follow. So basically we try to
+
+01:04:54.560 --> 01:04:57.440
+take a help of LLM. Let's suppose if user is asking question
+
+01:04:57.440 --> 01:05:01.960
+I will not send it for the match like the regular RIG I will
+
+01:05:01.960 --> 01:05:04.400
+not send it for the match what I will do I'll try to take a
+
+01:05:04.400 --> 01:05:08.280
+help of LLMs and I will ask LLM that okay this is the query.
+
+01:05:08.460 --> 01:05:13.780
+Now can you try to regenerate five more query out of it. So
+
+01:05:13.780 --> 01:05:16.740
+basically five more sub question out of the original
+
+01:05:16.740 --> 01:05:20.640
+question. Can you please try to generate it because LLM
+
+01:05:20.640 --> 01:05:24.960
+understands your English language or your NLP in a better
+
+01:05:24.960 --> 01:05:27.880
+manner. It understands your question in a better manner. So
+
+01:05:27.880 --> 01:05:31.600
+I can simply go and ask my LLMs that okay just try to you
+
+01:05:31.600 --> 01:05:36.020
+know give me five related questions and then I will try to
+
+01:05:36.020 --> 01:05:38.680
+send those five related question and I will try to do five
+
+01:05:38.680 --> 01:05:41.340
+question matching with all the documents. So there is a very
+
+01:05:41.340 --> 01:05:43.440
+high possibility that it will try to match with the
+
+01:05:43.440 --> 01:05:44.840
+document. Different different different different document
+
+01:05:44.840 --> 01:05:48.860
+because I have just changed the type of the question itself
+
+01:05:48.860 --> 01:05:51.320
+and there is something called as multi-hop reasoning. So
+
+01:05:51.320 --> 01:05:53.940
+multi-hop reasoning we can try to achieve with the help of
+
+01:05:53.940 --> 01:05:58.660
+decomposition is one of the way where we decomposes our
+
+01:05:58.660 --> 01:06:03.260
+question into a sub query and then we try to send for the
+
+01:06:03.260 --> 01:06:09.180
+answer. Reframing the original prompt original not prompt I
+
+01:06:09.180 --> 01:06:12.920
+would say question a user question. Because prompt will be
+
+01:06:12.920 --> 01:06:14.360
+like a different question. And prompt will be in a different
+
+01:06:14.360 --> 01:06:17.340
+context. Yeah generally you can say it is a prompt. We try
+
+01:06:17.340 --> 01:06:19.040
+to do a prompting right. So we keep on saying it is a
+
+01:06:19.040 --> 01:06:23.220
+prompt. But prompt generally we try to say with respect to
+
+01:06:23.220 --> 01:06:27.740
+asking directly something to our LLMs. So whenever it is
+
+01:06:27.740 --> 01:06:31.700
+here let us call it as a query. It will be prompt but yeah
+
+01:06:31.700 --> 01:06:35.080
+let us call it as a query with respect to RAG system and
+
+01:06:35.080 --> 01:06:37.880
+from one query I am going to generate maybe five sub query
+
+01:06:37.880 --> 01:06:42.840
+and then I am sending it. What are the challenges of RAG in
+
+01:06:42.840 --> 01:06:46.860
+a production? Okay lot of challenges right. Not just one
+
+01:06:46.860 --> 01:06:54.100
+that we try to face with respect to a RAG like this one. The
+
+01:06:54.100 --> 01:06:57.280
+very first challenge that we face all the time is that is
+
+01:06:57.280 --> 01:07:00.600
+something called as content drifting. Content drifting means
+
+01:07:00.600 --> 01:07:05.260
+so basically we are like we have some sort of old embeddings
+
+01:07:05.260 --> 01:07:09.100
+available inside my vector databases. And yes people are
+
+01:07:09.100 --> 01:07:12.140
+trying to interact. So this is something called as content
+
+01:07:12.140 --> 01:07:14.980
+drifting. So we have to keep our database we have to keep
+
+01:07:14.980 --> 01:07:19.320
+our vector db updated with the latest knowledge. If we are
+
+01:07:19.320 --> 01:07:22.960
+not doing it then obviously system will not be able to give
+
+01:07:22.960 --> 01:07:26.240
+me a proper answer. For example let us suppose there is a
+
+01:07:26.240 --> 01:07:31.760
+company and HR policies will keep on changing. Just like H1B
+
+01:07:31.760 --> 01:07:34.920
+visa policy which has changed yesterday. I think we all are
+
+01:07:34.920 --> 01:07:37.940
+aware about it. And it has created a lot of chaos over the
+
+01:07:37.940 --> 01:07:42.280
+internet. So when since yesterday like evening I believe
+
+01:07:42.280 --> 01:07:45.960
+whenever I am trying to open up my LinkedIn. I can see only
+
+01:07:45.960 --> 01:07:49.620
+that post like I can see the post with respect to like just
+
+01:07:49.620 --> 01:07:54.160
+H1B visa. So let us take that example right. So let us
+
+01:07:54.160 --> 01:07:56.220
+suppose some policies are changing rapidly.
+
+01:07:59.580 --> 01:08:03.240
+Now like if I am not updating my databases. So obviously my
+
+01:08:03.240 --> 01:08:05.560
+system will be able to give me an answer. With respect to
+
+01:08:05.560 --> 01:08:08.640
+the previous one. And technically that is called as content
+
+01:08:08.640 --> 01:08:13.520
+drifting. So we have to build a pipeline where whatever
+
+01:08:13.520 --> 01:08:17.140
+latest information that our system is generating. Our domain
+
+01:08:17.140 --> 01:08:20.440
+is generating or our processes is generating. It should get
+
+01:08:20.440 --> 01:08:25.140
+into a RAG right. We have to design that pipeline in a very
+
+01:08:25.140 --> 01:08:29.760
+first place. Basically so that I will be able to avoid the
+
+01:08:29.760 --> 01:08:33.180
+content drifting. This is one of the solution right. The
+
+01:08:33.180 --> 01:08:37.440
+second challenges that we try to face in general is a
+
+01:08:37.440 --> 01:08:43.780
+latency right. So latency or you can say like whenever I am
+
+01:08:43.780 --> 01:08:47.960
+trying to search some query. And we have a lot of document
+
+01:08:47.960 --> 01:08:50.580
+available. A millions of document which is available inside
+
+01:08:50.580 --> 01:08:54.360
+my databases. So in that case obviously it will go and it
+
+01:08:54.360 --> 01:08:57.860
+will try to do a search with all of those millions of
+
+01:08:57.860 --> 01:09:02.060
+documentation. This is again one of the big problem. And as
+
+01:09:02.060 --> 01:09:05.800
+your data will grow your problem will keep on growing. Now
+
+01:09:05.800 --> 01:09:08.340
+to avoid it again there are multiple approaches we can try
+
+01:09:08.340 --> 01:09:11.280
+to follow. One of the best approach is meta filtering right.
+
+01:09:11.340 --> 01:09:14.080
+So try to attach some sort of a meta information as well. So
+
+01:09:14.080 --> 01:09:22.140
+that you are going to reduce the search window basically. So
+
+01:09:22.140 --> 01:09:24.360
+instead of searching all the document now it will try to
+
+01:09:24.360 --> 01:09:27.440
+search may be a part of the document not all the documents.
+
+01:09:27.740 --> 01:09:31.520
+So that is one of the things that we face. And we try to
+
+01:09:31.520 --> 01:09:37.200
+handle it again before this question. So as we talked about
+
+01:09:37.200 --> 01:09:42.560
+like a multi hope. So basically my retrieval not just
+
+01:09:42.560 --> 01:09:47.360
+depends upon a storage. It also depends upon the questions
+
+01:09:47.360 --> 01:09:51.120
+right question that someone is going to ask. So again we can
+
+01:09:51.120 --> 01:09:54.860
+try to use a multi hoping to avoid or to make my questions
+
+01:09:54.860 --> 01:10:00.380
+better or to get a more robust result basically. So these
+
+01:10:00.380 --> 01:10:03.820
+are some of the things that we faces on a regular basis
+
+01:10:03.820 --> 01:10:07.260
+apart from selecting a proper databases selecting a proper
+
+01:10:07.260 --> 01:10:11.820
+checking size selecting a proper overlap size. Again those
+
+01:10:11.820 --> 01:10:14.280
+are the problems right. It's not like these are not a
+
+01:10:14.280 --> 01:10:17.980
+problems selecting a proper vector databases. So these are
+
+01:10:17.980 --> 01:10:20.880
+also a problems right. These are also a problem that we try
+
+01:10:20.880 --> 01:10:24.820
+to face inside a production in general. Now next question
+
+01:10:24.820 --> 01:10:30.120
+says that that how do you evaluate RAG. Pipeline performance
+
+01:10:30.120 --> 01:10:34.300
+or RAG system performance right. So how you are going to do
+
+01:10:34.300 --> 01:10:42.460
+the evaluation. So evaluation depends upon the process that
+
+01:10:42.460 --> 01:10:46.440
+we are trying to follow. For example so if we are trying to
+
+01:10:46.440 --> 01:10:50.440
+do a retrieval right. If we are trying to do a retrieval. So
+
+01:10:50.440 --> 01:10:55.080
+in terms of finding out the performance of my retrieval
+
+01:10:55.080 --> 01:10:59.300
+system there is something called as top K hit rate. That we
+
+01:10:59.300 --> 01:11:03.020
+try to calculate right or we try to calculate basically a
+
+01:11:03.020 --> 01:11:08.360
+ranking a quality in terms of evaluating my retrieval right.
+
+01:11:08.700 --> 01:11:13.520
+In terms of giving a answer. So we try to check or we try to
+
+01:11:13.520 --> 01:11:16.680
+like a check a F1 score. We try to check our faithfulness
+
+01:11:16.680 --> 01:11:21.900
+basically. So these are the criteria we try to follow in
+
+01:11:21.900 --> 01:11:25.760
+general. Again there are different different kind of
+
+01:11:25.760 --> 01:11:29.680
+approach we try to follow. But yeah these are the general
+
+01:11:29.680 --> 01:11:32.440
+approach which I am able to recall. I am able to remember so
+
+01:11:32.440 --> 01:11:37.840
+far. What is the difference between RAG and a fine tuning. I
+
+01:11:37.840 --> 01:11:40.120
+think we all know the answer for this one. What is the
+
+01:11:40.120 --> 01:11:42.920
+difference between RAG. RAG means store the data whenever
+
+01:11:42.920 --> 01:11:46.000
+you are going to give a query. First it will go and match
+
+01:11:46.000 --> 01:11:49.200
+with RAG retrieve it send to the LMS. That's RAG approach
+
+01:11:49.200 --> 01:11:52.960
+fine tuning means take a pre-trained weight right. Take a
+
+01:11:52.960 --> 01:11:56.780
+model so which is a big one is a good one always right. But
+
+01:11:56.780 --> 01:12:00.540
+you can take any of the models. And then you can try to
+
+01:12:00.540 --> 01:12:04.600
+train it to change the weights. So again change the weights
+
+01:12:04.600 --> 01:12:07.520
+means you can try to change full weights. That is something
+
+01:12:07.520 --> 01:12:10.480
+called as full fine tuning. You can try to change partial
+
+01:12:10.480 --> 01:12:13.940
+weights. That is something called as prefet right. Prefet
+
+01:12:13.940 --> 01:12:17.480
+means parameter efficient fine tuning. You can try to go
+
+01:12:17.480 --> 01:12:21.460
+ahead with that and then you can try to update maybe partial
+
+01:12:21.460 --> 01:12:24.060
+weights. So that is the difference between fine tuning and
+
+01:12:24.060 --> 01:12:27.020
+RAG. So in case of fine tuning we will end up changing the
+
+01:12:27.020 --> 01:12:30.260
+actual weights of the model. In case of RAG no weights will
+
+01:12:30.260 --> 01:12:33.440
+be involved. No weight changes will be involved. No training
+
+01:12:33.440 --> 01:12:35.560
+pipeline will be involved. In case of fine tuning training
+
+01:12:35.560 --> 01:12:38.860
+pipeline will be involved. In case of RAG no training
+
+01:12:38.860 --> 01:12:42.720
+pipeline at all basically right. Where we have to use fine
+
+01:12:42.720 --> 01:12:45.420
+tuning by the way and where we have to use RAG. So wherever
+
+01:12:45.420 --> 01:12:48.560
+my data set is changing frequently I should not go ahead
+
+01:12:48.560 --> 01:12:51.540
+with the fine tuning. I should go ahead with the RAG. And
+
+01:12:51.540 --> 01:12:55.100
+wherever my data set is not changing frequently in that case
+
+01:12:55.100 --> 01:12:57.840
+I can try to go ahead with the fine tuning. tuning. In most
+
+01:12:57.840 --> 01:13:00.980
+of the cases we go ahead with the hybrid approach, RAG plus
+
+01:13:00.980 --> 01:13:06.160
+fine tuning, both the things so that I can balance out. How
+
+01:13:06.160 --> 01:13:12.320
+do you implement iterative retrieval? Any idea what is the
+
+01:13:12.320 --> 01:13:15.440
+meaning of the iterative, I think we all understand the
+
+01:13:15.440 --> 01:13:19.960
+meaning of iterative keyword. Any idea what is the meaning
+
+01:13:19.960 --> 01:13:21.860
+of this iterative by the way,
+
+01:13:25.570 --> 01:13:30.790
+iterative retrieval. Basically iterative retrieval says that
+
+01:13:30.790 --> 01:13:35.530
+keep on retrieving it, like a loop, keep on retrieving it
+
+01:13:35.530 --> 01:13:39.670
+unless and until I am not able to get the good result. That
+
+01:13:39.670 --> 01:13:45.650
+is something called as iterative retrieval,
+
+01:13:45.730 --> 01:13:48.110
+so keep on retrieving it unless and until I am not able to
+
+01:13:48.110 --> 01:13:51.470
+get the good result. So keep on trying by the way, keep on
+
+01:13:51.470 --> 01:13:55.970
+trying this one. So basically what we try to do, so we try
+
+01:13:55.970 --> 01:13:58.150
+to retrieve a k. We try to retrieve a k. We check the scores
+
+01:13:58.150 --> 01:14:02.430
+and again if the scores is not as per my benchmark, then
+
+01:14:02.430 --> 01:14:04.710
+again I will retrieve, then again I will retrieve, then
+
+01:14:04.710 --> 01:14:07.130
+again I will retrieve. That is technically called as
+
+01:14:07.130 --> 01:14:09.570
+iterative retrieval. This is again one of the approach we
+
+01:14:09.570 --> 01:14:13.410
+try to follow in some of the RAG pipeline. What are the best
+
+01:14:13.410 --> 01:14:19.250
+practices for RAG prompt engineering? Prompt engineering was
+
+01:14:19.250 --> 01:14:23.170
+whenever we are asking a query, so how we should frame our
+
+01:14:23.170 --> 01:14:25.770
+query because it will become a prompt, a good prompt
+
+01:14:25.770 --> 01:14:30.050
+basically. So here whenever we are trying to like write a
+
+01:14:30.050 --> 01:14:37.120
+query, I can define a query maybe with examples that is
+
+01:14:37.120 --> 01:14:40.380
+always advisable, not just in case of RAG, but in case of
+
+01:14:40.380 --> 01:14:45.080
+even a general prompting. So we try to, we have to basically
+
+01:14:45.080 --> 01:14:48.500
+phrase our queries in such a way that it should cover the
+
+01:14:48.500 --> 01:14:53.820
+entire context or the data that we are trying to fetch out
+
+01:14:53.820 --> 01:14:57.620
+of my vector data basis. It should be very simple. It should
+
+01:14:57.620 --> 01:15:02.860
+be like entity rich. It should be like a proper, with
+
+01:15:02.860 --> 01:15:06.600
+example you can say, maybe you can say that it should come
+
+01:15:06.600 --> 01:15:11.120
+with basically a few short prompting. So where you are
+
+01:15:11.120 --> 01:15:14.140
+giving some examples and then you are trying to ask, then it
+
+01:15:14.140 --> 01:15:17.300
+will be able to give you the better result. It will do a
+
+01:15:17.300 --> 01:15:21.800
+less hallucination. So that's one of the technique that we
+
+01:15:21.800 --> 01:15:26.220
+can try to apply. Next question says that how do you handle
+
+01:15:26.220 --> 01:15:30.420
+a RAG system? Scalability. Scalability comes from a multiple
+
+01:15:30.420 --> 01:15:33.720
+things, not just from one single things I would say. So
+
+01:15:33.720 --> 01:15:37.760
+let's suppose if I'm talking about scalability in terms of
+
+01:15:37.760 --> 01:15:42.740
+throughput or latency. So let's suppose if my system is
+
+01:15:42.740 --> 01:15:46.680
+taking five seconds of time for one retrieval, I have to
+
+01:15:46.680 --> 01:15:50.140
+reduce it to maybe a one second. I have to like bring it
+
+01:15:50.140 --> 01:15:56.260
+down. So again I have to work on my embedding model. A size.
+
+01:15:56.260 --> 01:16:01.820
+A chucking and my matching strategy or similarity or search
+
+01:16:01.820 --> 01:16:05.140
+strategy that we are trying to do. I can even try to go
+
+01:16:05.140 --> 01:16:07.460
+ahead with the catching. There is something called as KV
+
+01:16:07.460 --> 01:16:09.860
+catching, key value catching. So we can try to go ahead with
+
+01:16:09.860 --> 01:16:12.360
+that. And in that way I will be able to make it more
+
+01:16:12.360 --> 01:16:15.280
+scalable in just in terms of throughput and latency I'm
+
+01:16:15.280 --> 01:16:21.820
+talking about. Second obviously it depends upon my entire, I
+
+01:16:21.820 --> 01:16:25.380
+would say a hardware configuration, like how I'm trying to.
+
+01:16:25.760 --> 01:16:30.140
+Okay. Make up or how I'm trying to like build my entire
+
+01:16:30.140 --> 01:16:32.880
+system. So which will be able to handle maybe a thousands of
+
+01:16:32.880 --> 01:16:36.360
+query in a particular second in a single hit. So over there
+
+01:16:36.360 --> 01:16:39.040
+your hardware scalability comes into a picture. So over
+
+01:16:39.040 --> 01:16:43.940
+there your Kubernetes based solution comes into a picture.
+
+01:16:44.000 --> 01:16:48.740
+So where you can try to set a system on a auto scale. So
+
+01:16:48.740 --> 01:16:50.600
+there will be a default hardware configuration and then
+
+01:16:50.600 --> 01:16:53.620
+there will be a auto scaling. So whenever there will be a
+
+01:16:53.620 --> 01:16:57.100
+more hits system will auto scale. And whenever there will be
+
+01:16:57.100 --> 01:17:00.940
+like a small or less hits system will try to downgrade
+
+01:17:00.940 --> 01:17:03.960
+itself. So this is something that we can try to achieve from
+
+01:17:03.960 --> 01:17:09.380
+a hardware side or maybe from a system side. So from a
+
+01:17:09.380 --> 01:17:12.720
+throughput latency side, we can try to achieve a scalability
+
+01:17:12.720 --> 01:17:16.960
+from a system side. We can try to achieve a scalability from
+
+01:17:16.960 --> 01:17:20.100
+an indexing strategy side. So again we can try to achieve a
+
+01:17:20.100 --> 01:17:24.960
+scalability from a question side, query side, or maybe a day
+
+01:17:24.960 --> 01:17:26.280
+to day operation side. Okay. So from that we can try to
+
+01:17:26.280 --> 01:17:30.220
+achieve the scalability. So scalability is again, it's a
+
+01:17:30.220 --> 01:17:35.540
+broader term and it can be done from a multiple sides. In
+
+01:17:35.540 --> 01:17:38.940
+the general, we try to achieve it with respect to a
+
+01:17:38.940 --> 01:17:41.700
+throughput latency and then with respect to a hardware.
+
+01:17:41.980 --> 01:17:44.240
+Again throughput latency is somewhere related to all the
+
+01:17:44.240 --> 01:17:49.460
+other parts as well. Now there is a question on a system
+
+01:17:49.460 --> 01:17:51.720
+design. So this is about the RAG.
+
+01:18:09.170 --> 01:18:12.990
+Yeah. So now it's a system design 15.9. 15 question,
+
+01:18:13.310 --> 01:18:17.690
+advanced implementation, 15 question, architecture and
+
+01:18:17.690 --> 01:18:25.250
+design. Oh, this will be interesting. Then leadership and
+
+01:18:25.250 --> 01:18:26.010
+strategy question.
+
+01:18:47.040 --> 01:18:52.000
+Okay. So many questions we have. I don't think that anyone
+
+01:18:52.000 --> 01:18:57.680
+will cross this limit. The kind of questions we have. So
+
+01:18:57.680 --> 01:19:02.380
+even someone will go for an interview and if you have done
+
+01:19:02.380 --> 01:19:05.840
+the preparation, one by one, one by one. Right everyone?
+
+01:19:05.840 --> 01:19:09.740
+What is your feeling? What is your thought? Even in past,
+
+01:19:09.880 --> 01:19:13.340
+right? So I have another bundle of this interview question
+
+01:19:13.340 --> 01:19:16.020
+and I have a feedback even for those interview questions.
+
+01:19:16.260 --> 01:19:18.960
+People were saying that the question that we have prepared
+
+01:19:18.960 --> 01:19:23.220
+inside the class, the previous interview bootcamp for this
+
+01:19:23.220 --> 01:19:26.800
+generative AI, this is I think second bootcamp in last like
+
+01:19:26.800 --> 01:19:32.080
+a six to 10 month we have launched. So in the previous
+
+01:19:32.080 --> 01:19:36.020
+generative AI bootcamp for this interview creation. Even the
+
+01:19:36.020 --> 01:19:40.280
+last question set was very good. Yeah. So our CIS is asking
+
+01:19:40.280 --> 01:19:44.740
+me a question. What is our KV catching? Okay. Uh, in terms
+
+01:19:44.740 --> 01:19:47.580
+of RIG, right? You're talking about, so I'm assuming that in
+
+01:19:47.580 --> 01:19:50.120
+terms of RIG you're talking about because in terms of even a
+
+01:19:50.120 --> 01:19:53.520
+transformer architecture, these concepts comes into a
+
+01:19:53.520 --> 01:19:59.040
+picture. So here, uh, KV catching, if I'll talk about in
+
+01:19:59.040 --> 01:20:03.760
+terms of RIG, so KV means key and a value, right? Key and a
+
+01:20:03.760 --> 01:20:06.300
+value. And what is the key? KV catching means storing it
+
+01:20:06.300 --> 01:20:10.380
+somewhere near to the system so that it will be able to find
+
+01:20:10.380 --> 01:20:14.240
+it easily. And, uh, again, so we are going to store it into
+
+01:20:14.240 --> 01:20:18.140
+a kind of a hardware. So where it's compute or it's
+
+01:20:18.140 --> 01:20:22.200
+processing power will be too high. That is, that is, uh, so
+
+01:20:22.200 --> 01:20:25.880
+I can, I can try to store maybe a key and a value into some
+
+01:20:25.880 --> 01:20:30.640
+sort of a Redis, I would say, right into a Redis, uh, key
+
+01:20:30.640 --> 01:20:35.740
+and a value means query and the answer that it is able to
+
+01:20:35.740 --> 01:20:41.100
+retrieve. So that is something called as KV question and
+
+01:20:41.100 --> 01:20:43.480
+retrieval from the RIGs, retrieval from your vector
+
+01:20:43.480 --> 01:20:46.780
+database. And let's suppose if I'm storing it into a Redis
+
+01:20:46.780 --> 01:20:50.060
+system, so Redis is basically in memory database. In memory
+
+01:20:50.060 --> 01:20:54.800
+database means it is going to occupy just a RAM space, not
+
+01:20:54.800 --> 01:20:58.180
+your hard disk basically. So in that way it will be very,
+
+01:20:58.260 --> 01:21:03.420
+very fast. And if I'm going to store maybe a last copy. Or
+
+01:21:03.420 --> 01:21:07.240
+maybe a frequently asked question and its responses into a
+
+01:21:07.240 --> 01:21:10.080
+Redis, then obviously my system will be faster. So that is
+
+01:21:10.080 --> 01:21:12.520
+something called as KV catching, key and value catching.
+
+01:21:28.180 --> 01:21:32.040
+Okay. RIG is done. Now let's see, shall
+
+01:21:43.440 --> 01:21:46.160
+we discuss guys, couple of more questions. I can see like,
+
+01:21:46.200 --> 01:21:50.700
+uh, we have a very less interested people. So can we discuss
+
+01:21:50.700 --> 01:21:53.600
+a couple of more questions or shall we discuss it in the
+
+01:21:53.600 --> 01:21:58.800
+next session? Yeah. I can see participation is very less
+
+01:21:58.800 --> 01:22:00.920
+like, uh. For especially for this particular batch
+
+01:22:00.920 --> 01:22:03.700
+participation is very less. I don't know. Maybe like, uh,
+
+01:22:03.760 --> 01:22:06.840
+people are afraid about these questions. Maybe you have not
+
+01:22:06.840 --> 01:22:09.740
+gone through these questions. There can be like a lot of
+
+01:22:09.740 --> 01:22:10.480
+reasons for that.
+
+01:22:14.600 --> 01:22:18.060
+Yeah. So sure. Discuss more. No, I will discuss. See, I,
+
+01:22:18.160 --> 01:22:21.660
+anyhow, I'm going to discuss 200, uh, the only matter of
+
+01:22:21.660 --> 01:22:24.160
+fact is that, that I will discuss all the question in one
+
+01:22:24.160 --> 01:22:29.940
+day or all the question in upcoming days. That's a, uh, like
+
+01:22:29.940 --> 01:22:33.140
+a matter of fact. But yeah. Anyhow, I, from my side, I will
+
+01:22:33.140 --> 01:22:36.200
+discuss all the questions means I'll, I'll try to give the
+
+01:22:36.200 --> 01:22:40.180
+answer of all those question. It's it's kind of a fun for
+
+01:22:40.180 --> 01:22:42.940
+me. So it again, like, you know, uh, because of this
+
+01:22:42.940 --> 01:22:46.540
+question and answer, I used to recall a lot of my own
+
+01:22:46.540 --> 01:22:47.120
+concepts.
+
+01:22:54.520 --> 01:22:56.980
+So let me, shall we discuss someone is saying next session,
+
+01:22:57.140 --> 01:22:59.300
+someone is saying, uh, cover the system design questions
+
+01:22:59.300 --> 01:23:02.280
+too. I'll cover anyhow. Right.
+
+01:23:06.680 --> 01:23:11.600
+Yeah. So next time we, uh, will be better. We need time to
+
+01:23:11.600 --> 01:23:14.960
+digest. Okay. So give some time to revise the concept better
+
+01:23:14.960 --> 01:23:17.840
+in next session. That's the reason. So I told you 10 days
+
+01:23:17.840 --> 01:23:23.320
+back, if you remember that, uh, at least once, right. See
+
+01:23:23.320 --> 01:23:25.780
+take a help of chat GPT, whatever you want. It's completely
+
+01:23:25.780 --> 01:23:30.040
+fine. Right. But at least if you will see this, this
+
+01:23:30.040 --> 01:23:32.240
+interview question is not like, uh, you should know
+
+01:23:32.240 --> 01:23:34.540
+everything at a time and then you should go out with an
+
+01:23:34.540 --> 01:23:37.300
+interview question. No, not like that. So see how interview
+
+01:23:37.300 --> 01:23:39.980
+questions works. It's like go with the multiple iterations.
+
+01:23:40.200 --> 01:23:43.180
+Go with the multiple revision. Okay. So for example, if you
+
+01:23:43.180 --> 01:23:46.320
+are going to search an answer of this question, back to my
+
+01:23:46.320 --> 01:23:48.480
+just search, search, read, search, read, search, read. Don't
+
+01:23:48.480 --> 01:23:50.440
+try to remember anything. And if, even if you're not able to
+
+01:23:50.440 --> 01:23:53.260
+remember, that's completely fine. Then when you will come to
+
+01:23:53.260 --> 01:23:55.760
+the class again, we will be having a discussion, a fruitful
+
+01:23:55.760 --> 01:23:58.540
+discussion. I'll give some answer. You will contradict. You
+
+01:23:58.540 --> 01:24:00.940
+will say that, no, what will happen if this, which is not
+
+01:24:00.940 --> 01:24:03.100
+happening as of now, right. Which is not happening in a chat
+
+01:24:03.100 --> 01:24:06.400
+as you can see. Uh, so you will ask some cross question on
+
+01:24:06.400 --> 01:24:09.620
+top of that, and then I will try to contradict. So in this
+
+01:24:09.620 --> 01:24:12.020
+way, if we are like initiated. We are initiating a
+
+01:24:12.020 --> 01:24:15.060
+discussion. So obviously we will be able to remember it for
+
+01:24:15.060 --> 01:24:18.780
+a very, very long time, right. We'll be able to remember it
+
+01:24:18.780 --> 01:24:21.700
+for a very, very long time. And this is, I think, a
+
+01:24:21.700 --> 01:24:25.660
+required, right. This is how we will be able to understand
+
+01:24:25.660 --> 01:24:28.920
+and remember the concept and the questions each and
+
+01:24:28.920 --> 01:24:30.740
+everything. And this is how everything will be on my
+
+01:24:30.740 --> 01:24:33.960
+fingertips. And this is how I can go to any interviews and
+
+01:24:33.960 --> 01:24:38.500
+crack it. Yeah. So it's not just a one time job. It's not
+
+01:24:38.500 --> 01:24:40.900
+just a one time job. It's like something which you should do
+
+01:24:40.900 --> 01:24:43.880
+it repeatedly. Right. That, okay. What is the answer of this
+
+01:24:43.880 --> 01:24:47.540
+question? Maybe before going for a bed, I will just pick 10
+
+01:24:47.540 --> 01:24:51.280
+questions, right. And I will try to answer to those 10
+
+01:24:51.280 --> 01:24:57.520
+questions. Simple. Uh, sorry, I was in holiday catching up
+
+01:24:57.520 --> 01:25:00.220
+now extensively using a URI, which is far better than a chat
+
+01:25:00.220 --> 01:25:03.900
+GPT. Actually URI is chat GPT. So it's, I can't say it's a
+
+01:25:03.900 --> 01:25:08.340
+better, it's I, but yeah, I can claim that it's not less
+
+01:25:08.340 --> 01:25:12.080
+than, uh, something that you are paying for. In terms of
+
+01:25:12.080 --> 01:25:16.300
+chat GPT, because it's the same system, right? It's the same
+
+01:25:16.300 --> 01:25:18.460
+model. We have not developed even a single model. We have
+
+01:25:18.460 --> 01:25:22.740
+not even fine tuned it, uh, just to make our like a user,
+
+01:25:22.880 --> 01:25:27.200
+uh, just to give a better experience to my user. I have just
+
+01:25:27.200 --> 01:25:31.440
+like, uh, created this URI platform. That's it. Can we get
+
+01:25:31.440 --> 01:25:34.320
+an answer to this question in your version too? I think I'm
+
+01:25:34.320 --> 01:25:39.220
+giving an answer to this question in my version. Yeah. Yeah.
+
+01:25:40.580 --> 01:25:44.820
+Give some time to revise the concept. Okay. So now guys try
+
+01:25:44.820 --> 01:25:48.140
+to be a little bit serious and, uh, let's do one thing,
+
+01:25:48.160 --> 01:25:52.620
+right? Let's do one thing. So till 80 number question I have
+
+01:25:52.620 --> 01:25:55.780
+discussed now in your own way, try to do some sort of a
+
+01:25:55.780 --> 01:25:58.680
+investigation, right? In your own way, try to do some sort
+
+01:25:58.680 --> 01:26:02.400
+of investigation at least till 80 you all will be able to do
+
+01:26:02.400 --> 01:26:07.580
+an investigation, uh, easily, right? And then just try to
+
+01:26:07.580 --> 01:26:11.040
+search. Even if you are not able to understand, I'm okay
+
+01:26:11.040 --> 01:26:15.880
+with it, but I want you to search from 81 number questions
+
+01:26:15.880 --> 01:26:19.040
+and then in our next session onwards, I'll start discussing
+
+01:26:19.040 --> 01:26:23.380
+these questions. So I believe with this, this speed, uh, it
+
+01:26:23.380 --> 01:26:26.120
+will take, so yesterday I was able to discuss 50. Today I've
+
+01:26:26.120 --> 01:26:29.280
+been able to discuss 30. So total 80, let's suppose I will
+
+01:26:29.280 --> 01:26:33.660
+be able to discuss 80 more question next week. So there is a
+
+01:26:33.660 --> 01:26:37.340
+very high chance that, that by next week we will be able to
+
+01:26:37.340 --> 01:26:41.040
+cover this two. 100 question. If there won't be any kind of
+
+01:26:41.040 --> 01:26:44.460
+a discussion from your side, otherwise it will take another
+
+01:26:44.460 --> 01:26:48.540
+two week of time for me to finish this 200 questions will
+
+01:26:48.540 --> 01:26:51.220
+class review on weekend. What do you suggest guys? Shall we
+
+01:26:51.220 --> 01:26:53.720
+do it in a weekend? Like this time you are okay with it or
+
+01:26:53.720 --> 01:26:56.540
+like a Monday, Tuesday, the original time of this batch.
+
+01:26:57.120 --> 01:26:59.960
+Yeah. What do, what is your suggestion? Shall we do it
+
+01:26:59.960 --> 01:27:04.660
+Monday? Yeah. Monday, Tuesday. Fine. Let's, let's do a
+
+01:27:04.660 --> 01:27:06.540
+discussion tomorrow and the day after tomorrow as well,
+
+01:27:06.640 --> 01:27:08.720
+which is the original time. Okay. I'll put a message in a
+
+01:27:08.720 --> 01:27:12.040
+group, right? That we had this discussion till 80 number
+
+01:27:12.040 --> 01:27:15.600
+question. So I will start from 81 number by the way, and I
+
+01:27:15.600 --> 01:27:18.180
+believe this document is already available to all of you,
+
+01:27:18.220 --> 01:27:21.500
+right? So I'll start from 81 number question Monday and
+
+01:27:21.500 --> 01:27:23.940
+Tuesday means we have a discussion tomorrow and we have a
+
+01:27:23.940 --> 01:27:26.800
+discussion even day after tomorrow, both the days we have a
+
+01:27:26.800 --> 01:27:30.200
+discussion because I think it will take two days of time,
+
+01:27:30.320 --> 01:27:34.100
+maybe more than two days. If I'm getting a good, you know,
+
+01:27:34.100 --> 01:27:37.500
+discussions with all of, if, if I'm getting a, like a, uh,
+
+01:27:37.600 --> 01:27:40.620
+questions from your side, then it will take more time and
+
+01:27:40.620 --> 01:27:45.480
+which I want, right? But in this given situation, so people
+
+01:27:45.480 --> 01:27:49.480
+are not asking me a question, so I can just give my answer
+
+01:27:49.480 --> 01:27:53.740
+and then move on. What time tomorrow? Same class timing.
+
+01:27:54.240 --> 01:27:56.800
+Yeah. Class timing. So what is, what is the class timing we
+
+01:27:56.800 --> 01:27:57.140
+have guys?
+
+01:28:01.360 --> 01:28:06.180
+Yeah. In a PM, right? What is the class timing? Hope you
+
+01:28:06.180 --> 01:28:06.340
+remember.
+
+01:28:09.530 --> 01:28:12.650
+So basically 7 PM IST is a class timing, right? We have.
+
+01:28:12.910 --> 01:28:15.790
+Yeah. So 7 PM IST, we'll, we'll start the discussion, the
+
+01:28:15.790 --> 01:28:19.550
+original timing of the class, Monday, Tuesday, better give
+
+01:28:19.550 --> 01:28:22.810
+one week of time, uh, as people are saying, let's have a
+
+01:28:22.810 --> 01:28:25.810
+discussion tomorrow. So discuss it. See one week is not
+
+01:28:25.810 --> 01:28:28.430
+going to make any kind of a changes. Technically you don't
+
+01:28:28.430 --> 01:28:31.770
+need one week of time. You need just five to six hour of
+
+01:28:31.770 --> 01:28:35.990
+time. Yeah. And I believe, uh, starting from today till
+
+01:28:35.990 --> 01:28:40.890
+tomorrow, we have more than 24, 25 hour of time. Yeah. We
+
+01:28:40.890 --> 01:28:43.270
+have 25 hour of time. So that is, I think more than enough,
+
+01:28:43.390 --> 01:28:46.190
+uh, today is Sunday. So maybe you can spend some two, three
+
+01:28:46.190 --> 01:28:48.510
+hours and then tomorrow you can try to spend two, three
+
+01:28:48.510 --> 01:28:51.230
+hours. Uh, you will be able to go through most of the
+
+01:28:51.230 --> 01:28:55.270
+questions. Yeah. Fine guys. So we have our discussion
+
+01:28:55.270 --> 01:29:00.710
+tomorrow. Uh, same class timing, 7 PM IST and agenda is
+
+01:29:00.710 --> 01:29:07.230
+going to be question number 81 and then 82 and 83 and then
+
+01:29:07.230 --> 01:29:09.610
+so on. So we'll try to cover maybe 30, 40 questions
+
+01:29:09.610 --> 01:29:13.750
+tomorrow. Uh, 30, 40 questions we'll try to cover. Okay. So
+
+01:29:13.750 --> 01:29:16.170
+the design is the next part as you can see, right? So where,
+
+01:29:16.290 --> 01:29:19.470
+uh, these questions are a little bit lengthy as, as we will
+
+01:29:19.470 --> 01:29:24.410
+go down, right? So, uh, yeah, lengthiness of the question
+
+01:29:24.410 --> 01:29:27.730
+will keep on increasing. It will be more on our practical
+
+01:29:27.730 --> 01:29:29.910
+side of it, that how to implement this, how to implement
+
+01:29:29.910 --> 01:29:32.510
+that, uh, what will happen if you are going to face this
+
+01:29:32.510 --> 01:29:35.290
+kind of a situation based basically based on the real time
+
+01:29:35.290 --> 01:29:38.450
+scenario, this question has been designed and framed. So
+
+01:29:38.450 --> 01:29:42.270
+I'll try to give an answer of those. Yeah. So fine. Uh,
+
+01:29:42.410 --> 01:29:43.730
+thank you everyone for joining. I'll see you in the next
+
+01:29:43.730 --> 01:29:46.750
+part. Let's join tomorrow and, uh, let's start our
+
+01:29:46.750 --> 01:29:50.790
+discussion from 81 number question with that. Thank you
+
+01:29:50.790 --> 01:29:52.170
+everyone. Take care. Thanks.
+
