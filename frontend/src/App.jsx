@@ -54,7 +54,7 @@ function App() {
     }
 
     try {
-      const response = await fetch('http://localhost:8000/query', {
+      const response = await fetch('http://15.206.18.247:8000/query', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question: userQuestion })
