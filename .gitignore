@@ -15,6 +15,17 @@ backend/db/
 frontend/node_modules/
 frontend/dist/
 
+# Python
+backend/__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Railway (not needed in repo)
+railway.json
+Dockerfile.railway
+.railwayignore
+
 # IDE
 .vscode/
 .idea/

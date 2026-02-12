@@ -6,7 +6,7 @@ function App() {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: "Hello! I'm your AI Tutor 🎓\n\nAsk me anything about GenAI, and I'll explain it just like Sudhanshu Sir would!",
+      content: "Hello! I'm your AI Tutor 🎓\n\nAsk me anything about GenAI, and I'll explain it just like Andrew Ng would!",
       sources: []
     }
   ])
@@ -136,12 +136,12 @@ function App() {
               <div className="absolute inset-0 bg-gradient-to-r from-teal-400 to-cyan-400 rounded-full blur-xl opacity-40 group-hover:opacity-60 transition-opacity"></div>
               <img
                 src="/tutor.jpg"
-                alt="Shudhansu Sir"
+                alt="Andrew Ng"
                 className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full border-3 border-teal-400/60 shadow-2xl object-cover ring-4 ring-teal-500/20 group-hover:scale-105 transition-transform"
               />
             </div>
             <h1 className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-teal-300 via-cyan-300 to-teal-300 bg-clip-text text-transparent drop-shadow-lg">
-              Learn GenAI With Sudhanshu Sir
+              Learn GenAI With Andrew Ng
             </h1>
           </div>
           <div className="flex justify-center">
