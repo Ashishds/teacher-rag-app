@@ -21,11 +21,6 @@ backend/__pycache__/
 *.pyc
 *.pyo
 
-# Railway (not needed in repo)
-railway.json
-Dockerfile.railway
-.railwayignore
-
 # IDE
 .vscode/
 .idea/
